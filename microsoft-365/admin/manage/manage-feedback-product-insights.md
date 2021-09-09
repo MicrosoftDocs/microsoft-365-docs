@@ -30,11 +30,9 @@ We use NPS surveys and feedback from your end-users to provide you with insights
 
 <!--See location of users who have submitted feedback-->
 - See what operating system or platform they're using
-- Filter on date, survey, product, platform and search using keywords
+- Filter on product, platform and search using keywords
 - See end-user comments on the top products and issues
 - Export feedback and survey information to a CSV file for further investigation
-- See contact information for user who submitted the feedback
-- Separate feedback by end-users or administrators
 
 ## Before you begin
 
@@ -43,7 +41,7 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 ## Survey insights
 
 1. In the admin center, go to the **Health** > **Product feedback** > **NPS survey insights**.
-2. From the **NPS survey insights** page, navigate on the page to see survey insights for your organization.
+2. From the **NPS survey insights** page, navigate on the page to see survey insights related to NPS for your organization.
 
 :::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 Nps survey insights":::
 
@@ -57,11 +55,13 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 
 **Feedback volume by month** shows the total number of NPS feedback response volume by month.
 
-:::image type="content" source="../../media/prosight-charts area.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+:::image type="content" source="../../media/prosight-charts-area.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
 ### Top topic filters
 
 Topics are machine learning models that help analyze comments, phrases and verbatims of the NPS survey feedback, providing access to the most common themes at a top level. The Top topic filters display the top 5 topics with the most volume of verbatim feedback.
+
+ttf2
 
 > [!NOTE]
 > We only publish an intelligent topic after it meets a minimum quality bar set in partnership with subject matter experts. Precision and recall metrics are used to determine the same.
@@ -131,6 +131,5 @@ You can filter by Channels, Products, Platforms and Feedback.
 
 **Feedback types**- Filter option for this section is set only to NPS feedback type.
 
-:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
 
-### Choose columns
+:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
