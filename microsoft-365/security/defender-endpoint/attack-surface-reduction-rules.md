@@ -94,9 +94,11 @@ The following table lists the supported operating systems for rules that are  cu
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y <br> version 1803 or later | Y | Y |
 | **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** <br> Semi-Annual Channel |
+
 ## Supported configuration management systems
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
+
 |Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager | Group Policy | PowerShell |
 |---|:---:|:---:|:---:|:---:|:---:|
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) |  Y  |   Y <br> MEM OMA-URI |   |   |   Y |
@@ -114,7 +116,8 @@ Links to information about configuration management system versions referenced i
 |[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |  Y |   |   |   |   |
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) |  Y |   |  Y <br> CB 1802 <br> |   |   |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |  Y |   |  Y <br> CB 1710 <br> |   |   |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) |  Y |   |   Y <br>  CB 1802 |   |   ||  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) |  Y |   |   Y <br>  CB 1802 |   |   |
+| **Rule name** | **Intune** | **Microsoft Endpoint Manager** | **Microsoft Endpoint Configuration Manager**  | **Group Policy** | **PowerShell** |
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
