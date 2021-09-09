@@ -149,7 +149,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 1. Request SOC admin to turn on troubleshooting mode on the device. 
 
-2. To disable RTP for this scenario, you must first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
+2. To disable RTP for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
 3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device. 
 
@@ -165,7 +165,7 @@ When a legitimate third-party application (for example, FileZilla) is detected a
 
 1. Request SOC admin to turn on troubleshooting mode for the device. 
 
-2. To turn off PUA detections, you must first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
+2. To turn off PUA detections, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
 3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device.
 
