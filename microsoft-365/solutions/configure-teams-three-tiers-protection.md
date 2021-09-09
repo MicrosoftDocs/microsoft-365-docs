@@ -93,7 +93,7 @@ By default, both owners and members of the team can share files and folders with
 
 If you need to collaborate with people outside your organization, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
 
-Teams guest sharing is off by default, though sharing for Office 365 groups (where team membership is stored) and SharePoint is on. We turn Teams sharing on in the baseline tier, and you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
+Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
 
 The sensitivity label only affects guest sharing for the team. Guest sharing settings for the associated SharePoint site are controlled separately, and we have you align the two settings for both the sensitive and highly sensitive tiers.
 
