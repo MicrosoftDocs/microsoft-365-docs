@@ -40,7 +40,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
-| Forms|MicrosoftForms||
+| Forms|MicrosoftForms|
 | Information barriers|InformationBarrierPolicyApplication|
 | Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
 | Microsoft Teams|MicrosoftTeams|
