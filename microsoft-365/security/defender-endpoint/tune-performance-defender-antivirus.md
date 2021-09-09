@@ -44,7 +44,7 @@ The high-level process for running performance analyzer involves the following s
 
 ## Using performance analyzer
 
-To start recording system events, open Powershell in administrative mode and perform the following steps:
+To start recording system events, open PowerShell in administrative mode and perform the following steps:
 
 1. Run the following command to start the recording:
 
@@ -73,7 +73,7 @@ Based on the query, the user will be able to view data for scan counts, duration
 
 ### Additional functionality: exporting and converting to CSV and JSON
 
-The results of the perfomance analyzer can also be exported and converted to a CSV or JSON file.
+The results of the performance analyzer can also be exported and converted to a CSV or JSON file.
 For examples that describe the process of "export" and "convert" through sample codes, see below.
 
 #### For CSV
