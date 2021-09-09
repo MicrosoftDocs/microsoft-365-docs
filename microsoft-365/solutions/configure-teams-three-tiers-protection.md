@@ -50,6 +50,7 @@ The following table summarizes the configurations for each tier. Use these confi
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|
 |Private channels|Owners and members can create private channels|Owners and members can create private channels|Only owners can create private channels|Only owners can create private channels|
+|Shared channels|Owners and members can create shared channels|Owners and members can create shared channels|Only owners can create shared channels|Only owners can create shared channels|
 |Site-level guest access|**New and existing guests** (default).|**New and existing guests** (default).|**New and existing guests** or **Only people in your organization** depending on team needs.|**New and existing guests** or **Only people in your organization** depending on team needs.|
 |Site sharing settings|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Only site owners can share files, folders, and the site**.<br>Access requests **Off**.|
 |Site-level unmanaged device access|**Full access from desktop apps, mobile apps, and the web** (default).|**Full access from desktop apps, mobile apps, and the web** (default).|**Allow limited, web-only access**.|**Block access**.|
@@ -89,17 +90,24 @@ While teams do not have a read-only permission option, the SharePoint site does.
 
 By default, both owners and members of the team can share files and folders with people outside the team. This may include people outside your organization, if you have allowed guest sharing. In all three tiers, we update the default sharing link type to help avoid accidental oversharing. In the highly sensitive tier, we restrict such sharing to team owners only.
 
-## Guest sharing
+## Sharing with people outside your organization
 
-If you need to collaborate with people outside your organization, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
+If you need to share Teams content with people outside your organization, there are two options:
 
-Teams guest sharing is off by default, though sharing for Office 365 groups (where team membership is stored) and SharePoint is on. We turn Teams sharing on in the baseline tier, and you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
+- **Guest sharing** - Guest sharing uses Azure AD B2B collaboration which allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
+- **Shared channels** - Shared channels uses Azure AD B2B direct connect which allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared channels in Teams by using their own work or school account. No guest account is created in your organization.
 
-The sensitivity label only affects guest sharing for the team. Guest sharing settings for the associated SharePoint site are controlled separately, and we have you align the two settings for both the sensitive and highly sensitive tiers.
+Both guest sharing and shared channels are useful depending on the situation. See [Plan external collaboration](plan-external-collaboration.md) for details on each and how to decide which to use for a given scenario.
 
-In the highly sensitive tier, we configure the sensitivity label to encrypt files to which it is applied. If you need guests to have access to these files, you must give them permissions when you create the label.
+If you plan to use guest sharing, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
+
+Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label. Shared channels are on by default, but require setting up cross-organizational relationships for each organization you want to collaborate with. See [Collaborate with external participants in a channel](collaborate-teams-direct-connect.md) for details.
+
+In the highly sensitive tier, we configure the sensitivity label to encrypt files to which it is applied. If you need guests to have access to these files, you must give them permissions when you create the label. External participants in shared channels can't be given permissions to sensitivity labels and can't access content encrypted by a sensitivity label.
 
 We highly recommend that you leave guest sharing on for the baseline tier and for the sensitive or highly sensitive tiers if you need to collaborate with people outside your organization. The guest sharing features in Microsoft 365 provide a much more secure and governable sharing experience than sending files as attachments in email messages. It also reduces the risk of shadow IT where users use ungoverned consumer products to share with legitimate external collaborators.
+
+If you regularly collaborate with other organizations that use Azure AD, shared channels may be a good option. Shared channels appear seamlessly in the other organization's Teams client and allow external participants to use their regular user account for their organization rather than having to login in separately using a guest account.
 
 See the following references to create a secure and productive guest sharing environment for your organization:
 
