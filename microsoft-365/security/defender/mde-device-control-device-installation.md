@@ -213,7 +213,7 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 	
       :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
        
-      Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to ‘Devices by connections’ to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well: 
+    Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to ‘Devices by connections’ to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well: 
 
     - “Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)” -> PCI\CC_0C03 
     - “USB Root Hub (USB 3.0)” -> USB\ROOT_HUB30 
