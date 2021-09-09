@@ -238,7 +238,7 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
--It will also output the percentage of sites onboarded
+- It will also output the percentage of sites onboarded.
 
 ## Get details about DEPs you use with multiple workloads
 
