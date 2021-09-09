@@ -37,8 +37,8 @@ The high-level process for running performance analyzer involves the following s
 
 1. Run performance analyzer to collect a performance recording of Microsoft Defender Antivirus events on the endpoint.
 
-> [!NOTE]
-> Performance of Microsoft Defender Antivirus events of the type **Microsoft-Antimalware-Engine** are recorded through the performance analyzer.
+   > [!NOTE]
+   > Performance of Microsoft Defender Antivirus events of the type **Microsoft-Antimalware-Engine** are recorded through the performance analyzer.
 
 2. Analyze the scan results using different recording reports.
 
@@ -48,12 +48,14 @@ To start recording system events, open Powershell in administrative mode and per
 
 1. Run the following command to start the recording:
 
-`New-MpPerformanceRecording -RecordTo <recording.etl>`
+   `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
- where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender](/powershell/module/defender).
+    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
+
 3. Press **ENTER** to stop and save recording, or **Ctrl+C** to cancel recording.
+
 4. Analyze the results using the performance analyzer’s `Get-MpPerformanceReport`parameter. For example, on executing the command `Get-MpPerformanceReport -Path <recording.etl> -TopFiles 3 -TopScansPerFile 10`, the user is provided with a list of top-ten scans for the top 3 files affecting performance. 
 
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
