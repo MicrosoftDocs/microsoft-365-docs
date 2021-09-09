@@ -30,7 +30,7 @@ MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirec
 In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements: 
  
 - Delegated Admin Privileges (DAP) for the MSP 
-- At least one Microsoft 365 Business Premium license 
+- At least one Microsoft 365 Business Premium or Microsoft 365 E3 license 
 - Fewer than 500 licensed users  
 
 ## Requirements for enabling device management   
@@ -42,7 +42,7 @@ To view customer tenant devices on the device management pages, a MSP must: �
 
 ## Requirements for enabling user management 
 
-For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium.   
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3.   
 
 ## Requirements for enabling threat management 
 

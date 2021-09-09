@@ -72,15 +72,20 @@ rbacGroupIds|List of strings|RBAC device group ID's where the indicator is expos
 
 The indicator action types supported by the API are:
 
-- AlertAndBlock
-- Allow
-- Audit
+- Allowed
 - Alert
+- AlertAndBlock
+- Audit
+- Block
+- BlockAndRemediate
 - Warn
-- BlockExecution
-- BlockRemdiation
 
-The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert).
+The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert). For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
+
+The Allowed, Warn, Block, and BlockAndRemediate IoC response actions are in public preview. For more information on the public preview, see [Public Preview: Custom file IoC enhancements and API schema update - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
+
+
+
 
 > [!Note]
 >
