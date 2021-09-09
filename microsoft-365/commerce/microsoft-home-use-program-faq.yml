@@ -45,6 +45,7 @@ sections:
           - Macao, Russia and Venezuela: This offer is not available in these markets.
           - China and Hong Kong: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
           - Japan: Microsoft 365 Family is not available.
+          - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
           
       - question: |
           How does an organization qualify for HUP discounts?
@@ -59,7 +60,7 @@ sections:
       - question: |
           Why do I have to create an Azure Active Directory (AAD) account to use the Home Use Program/ Microsoft Store for Business?
         answer: |
-          To update and modernize the Home Use Program to a broader range of license and product benefits, we needed to change the way we fulfill HUP. Microsoft Store for Business is used for eligibility validation and to assign HUP benefits, and for that it relies on AAD to connect information from VSLC and to validate the email domains your organization's employees are on. For more information, see [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
+          To update and modernize the Home Use Program to a broader range of license and product benefits, we needed to change the way we fulfill HUP. Microsoft Store for Business is used for eligibility validation and to assign HUP benefits, and for that it relies on AAD to connect information from VLSC and to validate the email domains your organization's employees are on. For more information, see [To sign up for Azure AD accounts through Office 365 for Business](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome).
           
       - question: |
           How do I become the assigned IT Admin of a managed tenant?
@@ -72,9 +73,7 @@ sections:
           What resources are available to help promote the Home Use Program benefit to employees?
         answer: |
           Use the resources located on the [Home Use Program](https://www.microsoft.com/home-use-program/resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Home Use Program.
-          
-          You can access onboarding materials in several languages at [HUP Material for Customers](https://microsofteur.sharepoint.com/teams/HUPMaterial). Select a language to begin downloading the files. The file contains assets that you can use to help educate your employees about the program and promote it internally in your company.
-          
+         
       - question: |
           What are the steps for an eligible employee to make a Microsoft Home Use Program purchase?
         answer: |
@@ -116,10 +115,30 @@ sections:
           - Installing Office
           - Signing in to Office
 
+      - question: |
+          Why should my company participate in the Home Use Program?
+        answer: |
+          The Home Use Program helps your company maximize the return on their Microsoft investment. Benefits to participating in the program include: 
+
+          - Reducing the need for IT training 
+          - Lowering help desk and training costs 
+          - Allowing employees to get familiar with Microsoft 365 at home 
+          - Increasing software proficiency, which can increase productivity 
+      
+      - question: |
+          How does the Microsoft Home Use Program benefit employees?
+        answer: |
+          When employees purchase Microsoft 365 products at a significant discount, they’re able to use the same software at home that they use at the office. This helps boost their productivity, improve their skills, and enhance job satisfaction.
+      
+      - question: |
+          What happens when an employee leaves the company?
+        answer: |
+          For employees who qualify for the Microsoft 365 subscription offer and have purchased through the program, the discounted price applies for as long as the employee’s subscription remains active, regardless of their employment status with your organization. However, their commercial use rights end once their employment ends. For employees who qualified for Office 2019 software offers, they must uninstall Office software purchased through Home Use Program once the employee leaves the company. 
+
 additionalContent: |
 
   ## Related content
-    [Microsoft 365 subscriptions](https://www.microsoft.com/home-use-program/). (link page)\
+    [Home Use Program FAQs](https://www.microsoft.com/home-use-program/frequently-asked-questions). (article)\
     [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)\
     [Microsoft Store for Business Admin support](/microsoft-store/) (link page)\
     [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=2139192) (link page)\

@@ -996,6 +996,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/reports-in-security-and-compliance.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
@@ -4073,6 +4078,11 @@
     {
       "source_path": "microsoft-365/security/defender/latest-attack-campaigns.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/threat-analytics",
+      "redirect_document_id": false
+    },
+	{
+      "source_path": "microsoft-365/security/defender-endpoint/contact-support-usgov.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/contact-support",
       "redirect_document_id": false
     },
     {
