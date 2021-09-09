@@ -59,7 +59,7 @@ To start recording system events, open Powershell in administrative mode and per
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
 
 > [!NOTE]
-> When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", please run the following command 
+> When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command 
 > to stop the existing trace with the new command: **wpr -stop .\existing-trace.etl -instancename MSFT_MpPerformanceRecording** 
 
 ### Performance tuning data and information
