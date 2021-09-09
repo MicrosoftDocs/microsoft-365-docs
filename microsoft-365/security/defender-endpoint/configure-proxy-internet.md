@@ -34,7 +34,7 @@ The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to re
 The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
 
 > [!TIP]
-> For organizations that use forward proxies as a gateway to the Internet, you can use network protection to investigate behind a proxy. For more information, see [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
+> For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings and can only discover a proxy server by using the following discovery methods:
 
@@ -55,7 +55,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy to allow only Defender for Endpoint sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
+Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
 > When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
@@ -67,7 +67,7 @@ Configure a registry-based static proxy to allow only Defender for Endpoint sens
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
-The static proxy is configurable through Group Policy (GP). The group policy can be found under:
+The static proxy is also configurable through Group Policy (GP). The group policy can be found under:
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
