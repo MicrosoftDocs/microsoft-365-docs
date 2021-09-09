@@ -58,6 +58,10 @@ To start recording system events, open Powershell in administrative mode and per
 
 For more information on command-line parameters and options, see the [New-MpPerformanceRecording](#new-mpperformancerecording) and [Get-MpPerformanceReport](#get-mpperformancereport).
 
+> [!NOTE]
+> When running a recording, if you get the error "Cannot start performance recording because Windows Performance Recorder is already recording", run the following command
+> to stop the existing trace with the new command: ** wpr -cancel -instancename MSFT_MpPerformanceRecording**
+
 ### Performance tuning data and information
 
 Based on the query, the user will be able to view data for scan counts, duration (total/min/average/max/median), path, process, and reason for scan. The image below shows sample output for a simple query of the top 10 files for scan impact. 
