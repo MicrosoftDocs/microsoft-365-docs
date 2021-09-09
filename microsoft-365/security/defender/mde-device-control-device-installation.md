@@ -193,22 +193,27 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
 1. Configure **Prevent installation of devices using drivers that match these device setup classes**.
 
-    a. Open Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (and later) & Profile: Device control.
-    :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="edit profile":::
+    - Open Endpoint security > Attack surface reduction > Create Policy > Platform: Windows 10 (and later) & Profile: Device control.
+	
+      :::image type="content" source="../../media/devicepolicy-editprofile.png" alt-text="edit profile":::
     
 2. Plug in a USB, device and you will see following error message:
-    :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="error message":::
+
+      :::image type="content" source="../../media/devicepolicy-errormsg.png" alt-text="error message":::
 
 3. Enable **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria**.
 
-    a. **only support OMA-URI for now**: Devices > Configuration profiles > Create profile > Platform: Windows 10 (and later) & Profile: Custom
-        :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="edit row":::
+    - **only support OMA-URI for now**: Devices > Configuration profiles > Create profile > Platform: Windows 10 (and later) & Profile: Custom
+	
+      :::image type="content" source="../../media/devicepolicy-editrow.png" alt-text="edit row":::
 
-4. Enable and add allowed USB Instance ID – **Allow installation of devices that match any of these device IDs**
-    a. Update the step 1 Device control profile
-        :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
+4. Enable and add allowed USB Instance ID – **Allow installation of devices that match any of these device IDs**.
+
+    - Update the step 1 Device control profile
+	
+      :::image type="content" source="../../media/devicepolicy-devicecontrol.png" alt-text="devicecontrol":::
        
-     Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to ‘Devices by connections’ to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well: 
+      Adding PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST; USB\ROOT_HUB30; USB\ROOT_HUB20; USB\USB20_HUB on above screen capture is because it's not enough to enable only a single hardware ID to enable a single USB thumb-drive. You have to ensure all the USB devices that preceding the target one aren't blocked (allowed) as well. You can open Device Manager and change view to ‘Devices by connections’ to see the way devices are installed in the PnP tree. In Our case the following devices has to be allowed so the target USB thumb-drive could be allowed as well: 
 
     - “Intel(R) USB 3.0 eXtensible Host Controller – 1.0 (Microsoft)” -> PCI\CC_0C03 
     - “USB Root Hub (USB 3.0)” -> USB\ROOT_HUB30 
@@ -218,14 +223,15 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
 
     > [!NOTE]
     > Some device in the system have several layers of connectivity to define their installation on the system. USB thumb-drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic Device IDs that are commonly used in systems and could provide a good start to build an ‘Allow list’ in such cases. See below for the list:
-
-    PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (for USB Root Hubs)/ USB\USB20_HUB (for Generic USB Hubs)/ 
-
-    Specifically for desktop machines, it's important to list all the USB devices that your keyboards and mice are connected through in the above list. Failing to do so could block a user from accessing its machine through HID devices. 
-
-    Different PC manufacturers sometimes have different ways to nest USB devices in the PnP tree, but in general this is how it's done. 
+    >
+    > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (for USB Root Hubs)/ USB\USB20_HUB (for Generic USB Hubs)/ 
+    >
+    > Specifically for desktop machines, it's important to list all the USB devices that your keyboards and mice are connected through in the above list. Failing to do so could block a user from accessing its machine through HID devices. 
+    >
+    > Different PC manufacturers sometimes have different ways to nest USB devices in the PnP tree, but in general this is how it's done. 
 
 5. Plug in the allowed USB again. You’ll see that it's now allowed and available.
+
     :::image type="content" source="../../media/devicepolicy-removedrive.png" alt-text="remove drive":::
 
 #### Deploying and managing policy via Group Policy
