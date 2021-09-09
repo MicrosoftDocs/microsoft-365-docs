@@ -597,10 +597,10 @@ In the **View data by Email \> Malware** and **Chart breakdown by Detection Tech
 - **File reputation**
 - **Anti-malware engine**<sup>\*</sup>: Detection from anti-malware engines.
 - **Anti-malware policy file type block**: These are email messages filtered out due to the type of malicious file identified in the message.
-- **URL malicious reputation**
-- **URL detonation**
-- **URL detonation reputation**
-- **Campaign**
+- **URL malicious reputation**<sup>\*</sup>
+- **URL detonation**<sup>\*</sup>
+- **URL detonation reputation**<sup>\*</sup>
+- **Campaign**<sup>\*</sup>
 
 In the details table below the chart, the following information is available:
 
