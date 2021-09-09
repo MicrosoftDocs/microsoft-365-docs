@@ -106,7 +106,7 @@ If you want to install an application but receive an error message that Microsof
 
 4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
 
-5. Launch an elevated PowerShell command prompt, and toggle RTP off. 
+5. Launch an elevated PowerShell command prompt, and toggle off RTP. 
 
     - Run `get-mppreference` to check RTP status.
     - Run `set–mppreference` to turn off RTP Run. 
@@ -127,15 +127,15 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 5. If `DisableLocalAdminMerge` is enabled on the device:  
 
-- Request SOC admin to turn on troubleshooting mode for the device.
-
-- You'll get a Windows Security notification once the troubleshooting mode starts.
+    - Request SOC admin to turn on troubleshooting mode for the device.
+    
+    - You'll get a Windows Security notification once the troubleshooting mode starts.
 
 6. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands: 
 
     - Set-mppreference -ExclusionPath C:\DB\DataFiles 
     
-    - Set-mppreference –ExclusionExtension .dbx 
+    - Set-mppreference –ExclusionExtension.dbx 
     
     - Set-mppreference –ExclusionProcess C:\DB\Bin\Convertdb.exe 
 
@@ -145,7 +145,7 @@ For more information on Set-MpPreference cmdlet configuration preferences for Wi
 
 ### Scenario 3: Application taking longer to perform an action
 
-When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, do the following: 
+When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, follow the steps below. 
 
 1. Request SOC admin to turn on troubleshooting mode on the device. 
 
