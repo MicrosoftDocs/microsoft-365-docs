@@ -29,10 +29,10 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features (in alphabetical order) that are supported by the unified audit log.
 
-|Microsoft 365 service or feature |Record types|
+| Microsoft 365 service or feature |Record types|
 |:---------|:---------|
-|Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
-|Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
+| Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
+| Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Content explorer|LabelContentExplorer|
 | Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
 | Defender for Endpoint|DLPEndpoint|
@@ -40,7 +40,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
-|Forms|MicrosoftForms||
+| Forms|MicrosoftForms||
 | Information barriers|InformationBarrierPolicyApplication|
 | Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
 | Microsoft Teams|MicrosoftTeams|
@@ -62,13 +62,13 @@ Why a unified audit log? Because you can search the audit log for activities per
 
 For more information about the operations that are audited in each of the services listed in the previous table, see the [Audited activities](#audited-activities) section in this article.
 
-The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For more information, see:
+The previous table also identifies the record type value to use to search the audit log for activities in the corresponding service using the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell or by using a PowerShell script. Some services have multiple record types for different types of activities within the same service. For a more complete list of auditing record types, see [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
+
+ For more information about using PowerShell to search the audit log, see:
 
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog)
 
 - [Use a PowerShell script to search the audit log](audit-log-search-script.md)
-
-- [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 
 ## Before you search the audit log
 
