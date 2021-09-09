@@ -29,7 +29,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 Why a unified audit log? Because you can search the audit log for activities performed in different Microsoft 365 services. The following table lists the Microsoft 365 services and features (in alphabetical order) that are supported by the unified audit log.
 
-| Microsoft 365 service or feature |Record types|
+| Microsoft 365 service or feature | Record types|
 |:---------|:---------|
 | Azure Active Directory|AzureActiveDirectory, AzureActiveDirectoryAccountLogon, AzureActiveDirectoryStsLogon |
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
