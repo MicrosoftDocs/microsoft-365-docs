@@ -44,6 +44,23 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### Communication compliance
 - [Communication compliance feature reference](communication-compliance-feature-reference.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
 
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) has been updated with quarterly review content updates for certifications and statements of applicability:
+  - Architecture
+  - Audit logging
+  - Encryption and key management
+  - Identity and access management
+  - Microsoft 365 access management
+  - Network security
+  - Privacy
+  - Resiliency and continuity
+  - Risk management
+  - Security development and operation
+  - Security monitoring
+  - Supplier management
+  - Vulnerability management
+
 ### Data Loss Prevention
 
 - [Data loss prevention policy reference](dlp-policy-reference.md). Added a new policy reference page to assist you in creating policies.
