@@ -26,7 +26,7 @@ Consider an email conversation that has been going on for a while. In most cases
 
 Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. It then analyzes all emails in the review set to determine whether an email message has unique content or if the chain (parent messages) is wholly contained in the final email. Email messages are divided into four inclusive values:
 
-- **Inclusive**: An inclusive email is the the final email message in an email thread and contains all previous history of that email thread.
+- **Inclusive**: An inclusive email is the final email message in an email thread and contains all the previous history of that email thread.
 
 - **Inclusive minus**: An email messaage is designated as Inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclisive minus value to determine which specific emails message within the thread has associated attachments. 
 
