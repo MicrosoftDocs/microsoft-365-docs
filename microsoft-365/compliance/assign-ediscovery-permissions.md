@@ -17,7 +17,9 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft 365 compliance center."
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Assign eDiscovery permissions in the Microsoft 365 compliance center
@@ -49,9 +51,9 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   
 ## Assign eDiscovery permissions
 
-1. Go to <https://compliance.microsoft.com> and sign in using an account that can assign permissions.
+1. Go to  <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using an account that can assign permissions.
   
-2. In the left pane of the Microsoft 365 compliance center, select **Permissions**.
+2. In the left pane, select **Permissions**.
 
 3. On the **Permissions & Roles** page, under **Compliance center**, click **Roles**.
 
@@ -166,7 +168,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
 
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators.
 
