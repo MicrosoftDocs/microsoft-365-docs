@@ -17,7 +17,6 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - remotework
-ms.custom: admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
