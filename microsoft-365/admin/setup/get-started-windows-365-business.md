@@ -102,7 +102,7 @@ On their Windows 365 home page, users see the Cloud PCs they have access to in t
 Users can select **Open in browser** to open their Cloud PC.
 
 > [!NOTE]  
-> Mobile devices aren’t currently supported to use browser to open the Cloud PC. Remote Desktop app is supported.
+> Mobile devices aren’t currently supported for using a browser to open Cloud PC. The Remote Desktop app is supported.
 
 #### User actions
 
