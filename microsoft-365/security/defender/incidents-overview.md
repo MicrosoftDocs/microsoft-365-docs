@@ -178,7 +178,7 @@ For more information about SecOps across Microsoft's products, see these resourc
 
 ## Next steps
 
-Use the listed steps based on your experience level and role on your security team.
+Use the listed steps based on your experience level or role on your security team.
 
 ### Experience level
 
