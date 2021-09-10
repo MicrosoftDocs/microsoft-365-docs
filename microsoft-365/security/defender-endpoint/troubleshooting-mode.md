@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
 
-- Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility issues.
+- Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
     - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
 
@@ -61,13 +61,13 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Operational logs from during troubleshooting mode will also be collected.
 
-    - All the above logs and snapshots will be collected and will be available to collect using the **Collect investigation package** feature on the device page.
+    - All the above logs and snapshots will be collected and will be available for an admin to collect using the **Collect investigation package** feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
 
 - Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations will become read-only again and will revert back to how it was before setting the troubleshooting mode on.
 
 - It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
 
-- You'll be informed when the troubleshooting mode begins, a warning that it will end soon, and when the troubleshooting mode ends by a notification.
+- Notification will be sent to the end user when the troubleshooting mode begins and when the troubleshooting mode ends. A warning will also be sent notifying that it will end soon.
 
 - The beginning and ending of troubleshooting mode will be identified in the **Device Timeline** on the device page.
 
@@ -77,8 +77,6 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 
 ## Enable the troubleshooting mode
-
-[Need updated steps. Couldn't figure out the details from the small images.]
 
 1. In Microsoft 365 Defender, go to the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**.
 
@@ -151,7 +149,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 2. To disable RTP for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
-3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device. 
+3. Once tamper protection is disabled, log in to the device. 
 
 4. Launch an elevated PowerShell command prompt. 
 
@@ -167,7 +165,7 @@ When a legitimate third-party application (for example, FileZilla) is detected a
 
 2. To turn off PUA detections, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
 
-3. Once tamper protection is disabled, turn on troubleshooting mode. Now log in to the device.
+3. Once tamper protection is disabled, log in to the device.
 
 4. Launch an elevated PowerShell command prompt.  
 
