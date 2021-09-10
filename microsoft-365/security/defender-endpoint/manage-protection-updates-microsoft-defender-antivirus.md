@@ -57,7 +57,7 @@ There are five locations where you can specify where an endpoint should obtain u
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Network file share](#unc-share)
-- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn2)]<sup></sup>
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
 
   (<a id="fn1">1</a>) Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source. This helps you control which updates from the official WU server are approved for the enterprise, and also help proxy and save network traffic to the official Windows UPdates network.
 
