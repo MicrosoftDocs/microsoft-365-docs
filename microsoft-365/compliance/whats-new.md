@@ -46,7 +46,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance & service assurance
 
-- [Service assurance](https://docs.microsoft.com/en-us/compliance/) has been updated with quarterly review content updates for certifications and statements of applicability:
+- [Service assurance](/compliance/) has been updated with quarterly review content updates for certifications and statements of applicability:
   - Architecture
   - Audit logging
   - Encryption and key management

@@ -65,6 +65,8 @@
     - name: Setup and administration
       items:
 
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
         
