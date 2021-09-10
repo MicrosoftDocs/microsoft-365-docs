@@ -53,6 +53,7 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 3. Click **Submit**.
 
     The portal sends an email to the email address that you supply. The email will look something like the following:
+
     ![Screenshot of email received when you submit a request through the delist portal.](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. Click the confirmation link in the email sent to you by the delisting portal.
@@ -67,3 +68,7 @@ where  _IP address_ is the IP address of the computer on which the mail server r
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
 See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.
+
+## More information
+
+The delisting form for **Outlook.com, the consumer service** can be found [here](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Be sure to read the [FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) first for *submission* direction.

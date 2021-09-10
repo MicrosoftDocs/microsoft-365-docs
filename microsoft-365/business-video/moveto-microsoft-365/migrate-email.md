@@ -58,7 +58,7 @@ The migration process takes several steps and can take from several hours to a c
 1. Navigate to the [APIs page](https://console.developers.google.com/apis/library). 
 1. In the search bar, enter **Gmail API**.
 1. Select it and then choose **Enable**.
-1. Repeat this process for Google Calendar API and Contacts API. 
+1. Repeat this process for Google Calendar API, People API, and Contacts API. 
 
 ### Grant access to the service account
 

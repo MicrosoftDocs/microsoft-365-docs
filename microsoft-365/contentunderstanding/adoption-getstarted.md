@@ -24,7 +24,7 @@ Think of the intelligent content services available in SharePoint Syntex as havi
 - **Content processing:** Automate capture, ingestion, and categorization of content and streamline content-centric processes using Power Automate. Learn more about [content processing](form-processing-overview.md).
 - **Content compliance:** Control and manage content to improve security and governance with integration to Microsoft Information Protection.
 
-With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case:
+With new AI services and capabilities, you can build content understanding and classification apps directly into the content management flow using SharePoint Syntex. There are two different ways of understanding your content. The model type you use is based on file format and use case.
 
 | Form processing | Document understanding |
 |:-------|:-------|
@@ -63,7 +63,7 @@ Use the [example scenarios and use cases](adoption-scenarios.md) to prompt ideas
 
 ## Identify roles & responsibilities
 
-Determine who in your organization will build and manage the models? The following roles might be involved:
+Determine who in your organization will build and manage the models. The following roles might be involved.
 
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
@@ -142,3 +142,5 @@ To get ready for implementing SharePoint Syntex, you need to:
 ## See also
 
 [Scenarios and use cases for SharePoint Syntex](adoption-scenarios.md)
+
+[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)

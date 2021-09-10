@@ -76,7 +76,7 @@ Here are the ways you can manage your incidents:
 
 - Edit the incident name
 
-  Change the utomatically assigned name based on your security team best practices.
+  Change the automatically assigned name based on your security team best practices.
   
 - Add incident tags
 
