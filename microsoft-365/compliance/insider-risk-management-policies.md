@@ -184,7 +184,7 @@ When cumulative exfiltration detection is enabled for data theft or data leak po
 
 To learn more about the User activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity).
 
-## Policy health (preview)
+## Policy health
 
 The policy health status gives you insights into potential issues with your insider risk management policies. The Status column on the Policies tab can alert you to policies issues that may prevent user activity from being reported or why the number of activity alerts is unusual. The policy health status can also confirm that the policy is healthy and doesn't need attention or configuration changes.
 
