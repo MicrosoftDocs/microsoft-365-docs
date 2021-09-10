@@ -61,5 +61,4 @@ The streaming API is constantly being expanded to support more event types. Lear
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | N/A |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | N/A |
 
-## Streaming API tables
 
