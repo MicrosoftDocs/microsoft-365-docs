@@ -12,6 +12,7 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
@@ -242,7 +243,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 
@@ -271,7 +272,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.
     
-    It's always best to confirm a user's URL for their OneDrive account, which you can do with the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    It's always best to confirm a user's URL for their OneDrive account, which you can do with the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 

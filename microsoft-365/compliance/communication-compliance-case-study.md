@@ -8,6 +8,7 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
@@ -16,6 +17,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - remotework
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -66,7 +68,7 @@ They must also confirm that users included in communication compliance policies 
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
-1. IT administrators sign in to the **Microsoft 365 admin center** <https://admin.microsoft.com> and navigate to **Microsoft 365 admin center** > **Billing** > **Licenses**.
+1. IT administrators sign in to the Microsoft 365 admin center <https://admin.microsoft.com> and go to Microsoft 365 admin center > **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">**Licenses**</a>.
 
 2. Here they confirm that they have one of the [license options](communication-compliance-configure.md#subscriptions-and-licensing) that includes support for communication compliance.
 
@@ -111,7 +113,7 @@ The quickest way to access the solution is to sign in directly to the **Communic
 
 ### Starting from the Microsoft 365 compliance center
 
-Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the **Microsoft 365 compliance center** [(https://compliance.microsoft.com)](https://compliance.microsoft.com). After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
+Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
 
 ![Compliance center.](../media/communication-compliance-case-center.png)
 
@@ -123,7 +125,7 @@ Contoso IT administrators and compliance specialists could also choose to access
 
 ### Starting from the Microsoft 365 admin center
 
-To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Compliance**.
+To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
@@ -161,7 +163,7 @@ Contoso compliance specialists want to add all users to the communication policy
 
 They need to create a new group to include all Contoso users, so they take the following steps:
 
-1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
+1. Contoso IT administrators IT sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to Microsoft 365 admin center > **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.
 
     ![Groups.](../media/communication-compliance-case-all-employees.png)
