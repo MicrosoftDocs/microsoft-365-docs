@@ -8,22 +8,22 @@
       href: compliance-quick-tasks.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Cross solution features
-      items:
-        - name: Device Onboarding
-          items: 
-          - name: Device Onboarding tools and methods for Windows 10 devices
-            href: dlp-configure-endpoints.md
-          - name: Onboard Windows 10 devices via Group Policy
-            href: dlp-configure-endpoints-gp.md
-          - name: Onboard Windows 10 devices using Mobile Device Management tools
-            href: dlp-configure-endpoints-mdm.md
-          - name: Onboard Windows 10 devices using Configuration Manager
-            href: dlp-configure-endpoints-sccm.md
-          - name: Onboard Windows 10 devices using a local script
-            href: dlp-configure-endpoints-script.md
-          - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-            href: dlp-configure-endpoints-vdi.md
+- name: Cross solution features
+  items:
+    - name: Device Onboarding
+      items: 
+        - name: Device Onboarding tools and methods for Windows 10 devices
+          href: dlp-configure-endpoints.md
+        - name: Onboard Windows 10 devices via Group Policy
+          href: dlp-configure-endpoints-gp.md
+        - name: Onboard Windows 10 devices using Mobile Device Management tools
+          href: dlp-configure-endpoints-mdm.md
+        - name: Onboard Windows 10 devices using Configuration Manager
+          href: dlp-configure-endpoints-sccm.md
+        - name: Onboard Windows 10 devices using a local script
+          href: dlp-configure-endpoints-script.md
+        - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+          href: dlp-configure-endpoints-vdi.md
     - name: Microsoft 365 compliance center
       href: microsoft-365-compliance-center.md
     - name: Permissions in the Microsoft 365 compliance center
