@@ -21,7 +21,9 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 # Onboard non-persistent virtual desktop infrastructure devices
 
 **Applies to:**
+
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 - Virtual desktop infrastructure (VDI) devices
 
@@ -30,14 +32,14 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 ## Onboard VDI devices
 
-Microsoft 365 Endpoint data loss prevention supports non-persistent virtual desktop infrastructure (VDI) session onboarding.
+Microsoft 365 supports non-persistent virtual desktop infrastructure (VDI) session onboarding.
 
 > [!NOTE]
 > To onboard non-persistent VDI sessions, VDI devices must be on Windows 10 1809 or higher.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to  Microsoft 365 Endpoint data loss prevention prior to the actual provisioning.
+- Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
 VDI devices can appear in the Microsoft 365 Compliance center as either:
@@ -49,7 +51,7 @@ Note that in this case, the *same* device name must be configured when the sessi
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
 > [!WARNING]
-> For environments where there are low resource configurations, the VDI boot procedure might slow the Microsoft 365 Endpoint data loss prevention onboarding.
+> For environments where there are low resource configurations, the VDI boot procedure might slow the device onboarding process.
 
 1. Open the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) that you downloaded from the service onboarding wizard.
 
@@ -115,7 +117,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 Endpoint data loss prevention sensor. For more information, see [Offboard devices using a local script](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 

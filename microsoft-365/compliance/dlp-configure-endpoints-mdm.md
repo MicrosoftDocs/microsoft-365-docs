@@ -22,6 +22,7 @@ description: Use Mobile Device Management tools to deploy the configuration pack
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
 

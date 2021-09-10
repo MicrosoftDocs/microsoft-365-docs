@@ -23,8 +23,9 @@ description: Use a local script to deploy the configuration package on devices s
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-You can also manually onboard individual devices to Microsoft 365 Endpoint data loss prevention. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
+You can also manually onboard individual devices to Microsoft 365. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
 > This script has been optimized for use on up to 10 devices.

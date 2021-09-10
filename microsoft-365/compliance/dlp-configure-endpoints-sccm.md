@@ -22,7 +22,8 @@ description: Use Configuration Manager to deploy the configuration package on de
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- System Center 2012 R2 Configuration Manager
+- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [System Center 2012 R2 Configuration Manager](/mem/configmgr/core/misc/online-documentation)
 
 ### Onboard devices using System Center Configuration Manager
 
@@ -165,7 +166,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the devices in your network.
 
-2. Checking that the devices are compliant with the Microsoft 365 Endpoint data loss prevention service (this ensures the device can complete the onboarding process and can continue to report data to the service).
+2. Checking that the devices are compliant with the Microsoft 365 device onboarding service (this ensures the device can complete the onboarding process and can continue to report data to the service).
 
 ### Confirm the configuration package has been correctly deployed
 
@@ -186,7 +187,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 
 > [!NOTE]
-> This procedure and registry entry applies to Endpoint DLP as well as Advanced Threat Protection.
+> This procedure and registry entry applies to Endpoint DLP as well as Defender for Endpoint.
 
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted devices.
 
