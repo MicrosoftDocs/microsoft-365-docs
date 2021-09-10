@@ -49,7 +49,7 @@ This preview is enabled for customers who meet these requirements:
 
   For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
 
-- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which includes Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
+- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
 
 - Any role with Service Health Dashboard level permissions can access Exchange Online Monitoring. For more information, see [How to check Microsoft 365 service health](view-service-health.md).
 
