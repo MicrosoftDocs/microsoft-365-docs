@@ -95,16 +95,21 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 2. Run the following PowerShell cmdlets:
 
    ```powershell
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   # For Windows Server 2016
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
+   # For Windows Server 2019
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
-
+   The above Windows Defender install requires a restart. 
+   
    When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:
 
    ```powershell
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
