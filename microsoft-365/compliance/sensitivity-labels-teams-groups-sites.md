@@ -317,13 +317,13 @@ You can also change and apply a label from this page:
 The following apps and services support sensitivity labels configured for sites and group settings:
 
 - Admin centers:
-
+    
+    Unlike user apps that filter sensitivity labels according to publishing policies, the following admin centers display all sensitivity labels for your tenant:
+    
   - SharePoint admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
-    
-    Unlike user apps that filter sensitivity labels according to publishing policies, the admin centers display all sensitivity labels for your tenant.
 
 - User apps and services:
 
