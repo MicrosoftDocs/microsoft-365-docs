@@ -30,7 +30,7 @@ Email threading parses each email and deconstructs it to individual messages; ea
 
 - **Inclusive minus**: An email message is designated as inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the inclusive minus value to determine which specific email message within the thread has associated attachments. 
 
-- **Inclusive copy**: An email message is considered an Inclusive copy if it is an exact copy of an inclusive/inclusive minus email. 
+- **Inclusive copy**: An email message is considered an inclusive copy if it is an exact copy of an inclusive/inclusive minus email. 
 
 - **None**: The content of this email is wholly contained in at least one email that is marked as inclusive/inclusive minus.
 
