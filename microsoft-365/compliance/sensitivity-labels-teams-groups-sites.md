@@ -317,9 +317,7 @@ You can also change and apply a label from this page:
 The following apps and services support sensitivity labels configured for sites and group settings:
 
 - Admin centers:
-    
-    Unlike user apps that filter sensitivity labels according to publishing policies, the following admin centers display all sensitivity labels for your tenant:
-    
+
   - SharePoint admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
@@ -333,6 +331,9 @@ The following apps and services support sensitivity labels configured for sites 
   - Forms
   - Stream
   - Planner 
+
+> [!NOTE]
+> When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, when you use user apps that filter sensitivity labels according to publishing policies, you might see only a subset of all sensitivity labels.
 
 The following apps and services don't currently support sensitivity labels configured for sites and group settings:
 
