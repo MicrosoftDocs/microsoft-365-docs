@@ -48,7 +48,7 @@ To make your trained model available for others to use:
 
     You can only add or remove availability to the specific sites to which you already have access.
 
-4. Select the sites where you want the model to be available for other users to apply.
+4. Select the sites where you want the model to be available for other users to apply, and then select **Save**.
 
 ## Discover other trained models
 
