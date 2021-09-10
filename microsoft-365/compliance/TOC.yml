@@ -455,6 +455,8 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
+            - name: YouTube (preview)
+              href: archive-youtube-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
