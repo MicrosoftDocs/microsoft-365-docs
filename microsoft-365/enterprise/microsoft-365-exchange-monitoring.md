@@ -43,13 +43,13 @@ With the **Exchange Online** monitoring page, you can see whether the Exchange O
 
 ## Requirements
 
-This preview is enabled for customers who meet these requirements: 
+This preview is enabled for customers who meet these requirements:
 
 - Your organization needs to have a license count of at least 5,000 from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
 
   For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
 
-- Your organization needs to have at least 50 monthly active Exchange Online users.
+- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
 
 - Any role with Service Health Dashboard level permissions can access Exchange Online Monitoring. For more information, see [How to check Microsoft 365 service health](view-service-health.md).
 
