@@ -28,7 +28,7 @@ Email threading parses each email and deconstructs it to individual messages; ea
 
 - **Inclusive**: An inclusive email is the final email message in an email thread and contains all the previous history of that email thread.
 
-- **Inclusive minus**: An email messaage is designated as Inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclisive minus value to determine which specific emails message within the thread has associated attachments. 
+- **Inclusive minus**: An email message is designated as inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the inclusive minus value to determine which specific email message within the thread has associated attachments. 
 
 - **Inclusive copy**: An email message is considered an Inclusive copy if it is an exact copy of an inclusive/inclusive minus email. 
 
