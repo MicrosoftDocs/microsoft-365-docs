@@ -1,7 +1,7 @@
 ---
-title: Supported Microsoft 365 Defender event types in streaming API
-description: Learn which advanced hunting event types the streaming API supports
-keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
+title: Microsoft 365 Defender event types supported in Event Streaming API
+description: Learn which hunting event types (tables) are supported by the streaming API
+keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Supported Microsoft 365 Defender event types in streaming API
+# Supported Microsoft 365 Defender event types in event streaming API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -28,15 +28,16 @@ ms.technology: mde
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 
-The streaming API is constantly being expanded to support more event types. Learn which table is currently in public preview or generally available. 
+The Event Streaming API is constantly being expanded to support more event types. Learn which Hunting tables are generally available, currently in public preview, or not yet supported. 
+**New - Email event types/tables are now GA**
 
-## Advanced hunting tables
+## Hunting tables support status in Event Streaming API
 
 | Table name | Status |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | ? |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Not yet supported |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -52,13 +53,12 @@ The streaming API is constantly being expanded to support more event types. Lear
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | GA |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | GA |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | GA |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Public preview |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Public preview |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Public preview|
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Public preview |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | ? |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |?|
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | ? |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | ? |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Not yet supported |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |Not yet supported|
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Not yet supported |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Not yet supported |
 
-## Streaming API tables
