@@ -52,10 +52,10 @@ You can also manually navigate to the event area that corresponds to the feature
 
 2. Type **event viewer** in the Start menu and open **Event Viewer**.
 
-3. Select **Action** > **Import Custom View...**
+3. Select **Action** \> **Import Custom View...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animation highlighting Import custom view on the left of the Even viewer window](images/events-import.gif)
+   > ![Animation highlighting Import custom view on the left of the Even viewer window.](images/events-import.gif)
 
 4. Navigate to where you extracted the XML file for the custom view you want and select it.
 
@@ -70,7 +70,7 @@ You can also manually navigate to the event area that corresponds to the feature
 2. On the left panel, under **Actions**, select **Create Custom View...**
 
    > [!div class="mx-imgBorder"]
-   > ![Animation highlighting the create custom view option on the Event viewer window](images/events-create.gif)
+   > ![Animation highlighting the create custom view option on the Event viewer window.](images/events-create.gif)
 
 3. Go to the XML tab and select **Edit query manually**. You'll see a warning that you can't edit the query using the **Filter** tab if you use the XML option. Select **Yes**.
 
@@ -141,7 +141,7 @@ You can access these events in Windows Event viewer:
 2. Expand **Applications and Services Logs > Microsoft > Windows** and then go to the folder listed under **Provider/source** in the table below.
 3. Double-click on the sub item to see events. Scroll through the events to find the one you're looking.
 
-   ![Animation showing using Event Viewer](images/event-viewer.gif)
+   ![Animation showing using Event Viewer.](images/event-viewer.gif)
 
 <br>
 

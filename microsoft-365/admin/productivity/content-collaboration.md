@@ -105,7 +105,7 @@ We also provide you with information that helps you gain visibility into how you
 
 ### Creating files in OneDrive or SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Chart that shows number of people who create files in OneDrive or SharePoint":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="Chart that shows number of people who create files in OneDrive or SharePoint.":::
 
 1. **Header:** Highlights the percentage of people active on Microsoft 365 Office applications who create files on OneDrive or SharePoint.
 2. **Body:** Provides information about the value of content creation in OneDrive and SharePoint.

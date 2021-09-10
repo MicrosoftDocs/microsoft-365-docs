@@ -49,7 +49,7 @@ These steps outline the typical workflow when a Microsoft engineer starts a Cust
 
 5. After a Microsoft Support manager approves the request, Customer Lockbox sends the designated approver at the organization an email notification about the pending access request from Microsoft.
 
-    ![Example of a Customer Lockbox email notification](../media/CustomerLockbox1.png)
+    ![Example of a Customer Lockbox email notification.](../media/CustomerLockbox1.png)
 
    Anyone who is assigned the [Customer Lockbox access approver](/office365/admin/add-users/about-admin-roles) admin role in Microsoft 365 admin center can approve Customer Lockbox requests.
 
@@ -75,7 +75,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 3. Select **Security & Privacy** > **Customer Lockbox** > **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
 
-    ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox.](../media/CustomerLockbox4.png)
 
 ## Approve or deny a Customer Lockbox request
 
@@ -83,19 +83,19 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 2. Choose **Support > Customer Lockbox Requests**.
 
-    ![Click Support, then click Customer Lockbox Requests](../media/CustomerLockbox5.png)
+    ![Click Support, then click Customer Lockbox Requests.](../media/CustomerLockbox5.png)
 
     A list of Customer Lockbox requests displays.
 
-    ![List of Customer Lockbox requests](../media/CustomerLockbox6.png)
+    ![List of Customer Lockbox requests.](../media/CustomerLockbox6.png)
 
 3. Select a Customer Lockbox request, and then choose **Approve** or **Deny**.
 
-    ![Approve Customer Lockbox requests](../media/CustomerLockbox7.png)
+    ![Approve Customer Lockbox requests.](../media/CustomerLockbox7.png)
 
     A confirmation message about the approval of the Customer Lockbox request displays.
 
-    ![Deny Customer Lockbox requests](../media/CustomerLockbox8.png)
+    ![Deny Customer Lockbox requests.](../media/CustomerLockbox8.png)
 
 > [!NOTE]
 > Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, see [Set-AccessToCustomerDataRequest](/powershell/module/exchange/set-accesstocustomerdatarequest).
@@ -116,7 +116,7 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
     The **Audit log search** page displays.
 
-    ![Audit log search page](../media/auditlogsearch1.png)
+    ![Audit log search page.](../media/auditlogsearch1.png)
   
 4. Configure the following search criteria:
 
@@ -156,7 +156,7 @@ When a person in your organization approves or denies a Customer Lockbox request
 
 The following screenshot shows an example of an audit log record that corresponds to an approved Customer Lockbox request. If a Customer Lockbox request was denied, then the value of **ApprovalDecision** parameter would be **Deny**.
 
-![Audit record for an approved Customer Lockbox request](../media/CustomerLockbox9.png)
+![Audit record for an approved Customer Lockbox request.](../media/CustomerLockbox9.png)
 
 > [!TIP]
 > To display more detailed information in an audit record, click **More information**.

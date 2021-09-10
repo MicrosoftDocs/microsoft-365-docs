@@ -15,7 +15,7 @@ audience: Admin
 
 These topics describe the steps you'll need to take in your organization to prepare for enrollment, including checking that your environment meets key prerequisites, configuring networks, setting up certificates, and preparing your apps for inclusion in the service. Once you have run the readiness assessment tools, you can complete the other steps in any order or in parallel. Depending on your environment, some of the steps might not be relevant to you.
 
-![Suggested sequence of steps to get ready for enrollment, listed in this article](../../media/mmd-getready-sequence.png)
+![Suggested sequence of steps to get ready for enrollment, listed in this article.](../../media/mmd-getready-sequence.png)
 
 1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
 2. Run [readiness assessment tools](readiness-assessment-tool.md).

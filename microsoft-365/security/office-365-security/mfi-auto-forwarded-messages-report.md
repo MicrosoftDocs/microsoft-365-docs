@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages that are automatically forwarded from your organization to recipients in external domains.
 
-![Auto-forwarded messages widget in the Security & Compliance Center](../../media/mfi-auto-forwarded-messages.png)
+![Auto-forwarded messages widget in the Security & Compliance Center.](../../media/mfi-auto-forwarded-messages.png)
 
 ## Auto-forwarded messages details
 
@@ -47,7 +47,7 @@ When you click the number of messages in the widget, a flyout pane appears that 
   - **New users (last week)**
   - A link to the [Forwarding modifications report](mfi-new-users-forwarding-email.md#forwarding-modifications-report) for more details.
 
-![Details flyout for the Auto-forwarded messages report in the Security & Compliance Center](../../media/mfi-auto-forwarded-messages-details.png)
+![Details flyout for the Auto-forwarded messages report in the Security & Compliance Center.](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## Insights
 

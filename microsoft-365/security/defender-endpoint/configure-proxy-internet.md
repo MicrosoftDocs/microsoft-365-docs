@@ -70,13 +70,13 @@ The static proxy is configurable through Group Policy (GP). The group policy can
 
   Set it to **Enabled** and select **Disable Authenticated Proxy usage**.
 
-  ![Image of Group Policy setting1](images/atp-gpo-proxy1.png)
+  ![Image of Group Policy setting1.](images/atp-gpo-proxy1.png)
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
 
   Configure the proxy
 
-  ![Image of Group Policy setting2](images/atp-gpo-proxy2.png)
+  ![Image of Group Policy setting2.](images/atp-gpo-proxy2.png)
 
   The policy sets two registry values, `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD, under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
 
@@ -130,7 +130,7 @@ The following downloadable spreadsheet lists the services and their associated U
 **** 
 |Spreadsheet of domains list|Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
@@ -175,7 +175,7 @@ Please see the following guidance to eliminate the wildcard (*) requirement for 
 
 4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (please refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-    ![Image of administrator in Windows PowerShell](images/admin-powershell.png)
+    ![Image of administrator in Windows PowerShell.](images/admin-powershell.png)
 
 The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.com, and \*.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace and can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
 

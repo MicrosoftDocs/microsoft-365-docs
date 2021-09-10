@@ -90,15 +90,15 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
 
 2. Go to the top bar and select **Stop and Quarantine File**.
 
-   ![Image of stop and quarantine file action](images/atp-stop-quarantine-file.png)
+   ![Image of stop and quarantine file action.](images/atp-stop-quarantine-file.png)
 
 3. Specify a reason, then select **Confirm**.
 
-   ![Image of stop and quarantine file modal window](images/atp-stop-quarantine.png)
+   ![Image of stop and quarantine file modal window.](images/atp-stop-quarantine.png)
 
    The Action center shows the submission information:
 
-   ![Image of stop and quarantine file action center](images/atp-stopnquarantine-file.png)
+   ![Image of stop and quarantine file action center.](images/atp-stopnquarantine-file.png)
 
    - **Submission time** - Shows when the action was submitted.
    - **Success** - Shows the number of devices where the file has been stopped and quarantined.
@@ -111,7 +111,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, wher
 
 When the file is being removed from a device, the following notification is shown:
 
-![Image of notification on device user](images/atp-notification-file.png)
+![Image of notification on device user.](images/atp-notification-file.png)
 
 In the device timeline, a new event is added for each device where a file was stopped and quarantined.
 
@@ -147,7 +147,7 @@ Selecting **Download file** from the response actions allows you to download a l
 
 By default, you should be able to download files that are in quarantine.
 
-![Image of download file action](images/atp-download-file-action.png)
+![Image of download file action.](images/atp-download-file-action.png)
 
 ### Download quarantined files
 
@@ -159,7 +159,7 @@ Having this setting turned on can help security teams examine potentially bad fi
 
 #### Backing up quarantined files
 
-Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-delivered-protection).
+Users may be prompted to provide explicit consent before backing up the quarantined file, depending on your [sample submission configuration](enable-cloud-protection-microsoft-defender-antivirus.md#use-group-policy-to-turn-on-cloud-protection).
 
 This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
 
@@ -228,7 +228,7 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, such as submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information](images/action-center-details.png)
+![Image of action center with information.](images/action-center-details.png)
 
 ## Deep analysis
 
@@ -269,7 +269,7 @@ You can also submit a sample through the [Microsoft Security Center Portal](http
 
 2. In the **Deep analysis** tab of the file view, select **Submit**.
 
-   ![You can only submit PE files in the file details section](images/submit-file.png)
+   ![You can only submit PE files in the file details section.](images/submit-file.png)
 
    > [!NOTE]
    > Only PE files are supported, including _.exe_ and _.dll_ files.
@@ -293,7 +293,7 @@ The details provided can help you investigate if there are indications of a pote
 1. Select the file you submitted for deep analysis.
 2. Select the **Deep analysis** tab. If there are any previous reports, the report summary will appear in this tab.
 
-    ![The deep analysis report shows detailed information across a number of categories](images/analysis-results-nothing500.png)
+    ![The deep analysis report shows detailed information across a number of categories.](images/analysis-results-nothing500.png)
 
 #### Troubleshoot deep analysis
 
@@ -324,3 +324,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)

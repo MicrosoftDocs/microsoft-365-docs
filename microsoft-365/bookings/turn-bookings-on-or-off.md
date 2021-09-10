@@ -55,13 +55,9 @@ Admins can require employees in their organization to opt-in before their availa
 
 When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
 
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
-
 ## Block social sharing options
 
 Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
-
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
 
 ## Allow only selected users to create Bookings calendars
 

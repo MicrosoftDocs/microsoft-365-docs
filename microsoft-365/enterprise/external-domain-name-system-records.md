@@ -27,7 +27,7 @@ description: A reference list of external Domain Name System records to use when
 
 # External Domain Name System records for Office 365
 
-![Domain](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+![Domain.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
 **Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) for your domain in Office 365.
 

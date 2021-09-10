@@ -28,7 +28,7 @@ On the tasks tab, you are expected to provide the paths to your test scripts whi
 
 ## Set script path
 
-![Image of test task](Media/testtask.png)
+![Image of test task.](Media/testtask.png)
 
 Sample of how to provide the relative path on a folder structure is below:
 

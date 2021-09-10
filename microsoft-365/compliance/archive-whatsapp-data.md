@@ -24,7 +24,7 @@ After WhatsApp data is stored in user mailboxes, you can apply Microsoft 365 com
 
 The following overview explains the process of using a connector to archive WhatsApp data in Microsoft 365.
 
-![WhatsApp archiving workflow](../media/WhatsAppConnectorWorkflow.png)
+![WhatsApp archiving workflow.](../media/WhatsAppConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a WhatsApp Archiver connector. For more information, see [WhatsApp Archiver](https://www.telemessage.com/office365-activation-for-whatsapp-archiver).
 
