@@ -24,7 +24,7 @@ Consider an email conversation that has been going on for a while. In most cases
 
 ## What does email threading do?
 
-Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. It then analyzes all emails in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final email. Email messages are divided into four inclusive values:
+Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. It then analyzes all emails in the review set to determine whether an email message has unique content or if the chain (parent messages) is wholly contained in the final email. Email messages are divided into four inclusive values:
 
 - **Inclusive**: An inclusive email is the the final email message in an email thread and contains all previous history of that email thread.
 
