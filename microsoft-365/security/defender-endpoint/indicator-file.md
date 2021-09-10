@@ -74,7 +74,7 @@ One of the options when taking [response actions on a file](respond-file-alert
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
-## Private Preview: Alerting on file blocking actions
+## Public Preview: Alerting on file blocking actions
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -102,7 +102,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >
 > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
-## Private Preview: Advanced hunting capabilities
+## Public Preview: Advanced hunting capabilities
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
