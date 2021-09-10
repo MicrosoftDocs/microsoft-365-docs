@@ -1,0 +1,78 @@
+### YamlMime:Hub
+
+title: Microsoft Viva # < 60 chars
+summary: Get started with this employee experience platform that brings together communications, knowledge, learning, resources, and insights. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft Viva # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Get started with this employee experience platform that brings together communications, knowledge, learning, resources, and insights. # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: m365 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.technology: viva
+  ms.topic: hub-page # Required
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/02/2021 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Microsoft Viva blog
+      itemType: whats-new
+      url: https://techcommunity.microsoft.com/t5/microsoft-viva-blog/bg-p/MicrosoftVivaBlog
+    # Card
+    - title: Introducing Microsoft Viva
+      itemType: overview
+      url: https://www.microsoft.com/microsoft-viva/overview
+    # Card
+    - title: Microsoft Viva setup steps
+      itemType: video
+      url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-P97FRm0LZ3Y6xQrlpkW4r
+
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 4 sections
+  sections:
+    - items:
+        # Card
+        - title: Microsoft Viva Topics
+          links:
+            - text: Get started
+              url: /microsoft-365/knowledge/
+            - text: Setup
+              url: /microsoft-365/knowledge/set-up-topic-experiences
+            - text: Learning path - Get started with Microsoft Viva Topics
+              url: /learn/paths/m365-viva-topics/
+            - text: Viva Topics resource center
+              url: https://resources.techcommunity.microsoft.com/viva-topics/
+            - text: End user help & training
+              url: https://support.microsoft.com/en-us/office/understanding-viva-topics-5bef3020-2679-4045-81cb-bcbc37218332
+        # Card
+        - title: Microsoft Viva Insights
+          links:
+            - text: Get started
+              url: /insights/viva-teams-app
+            - text: Learning path - Discover Microsoft Viva Insights
+              url: /learn/modules/workplace-analytics-discover/
+        # Card
+        - title: Microsoft Viva Connections
+          links:
+            - text: Get started
+              url: /sharepoint/viva-connections
+            - text: End user help & training
+              url: https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b
+        # Card
+        - title: Microsoft Viva Learning
+          links:
+            - text: Get started
+              url: /microsoft-365/learning/
+            - text: Setup
+              url: /microsoft-365/learning/set-up-teams-admin-center
+            - text: End user help & training
+              url: https://support.microsoft.com/en-us/office/viva-learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a

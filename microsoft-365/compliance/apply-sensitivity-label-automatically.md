@@ -266,12 +266,12 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
 
     ![Choose locations page auto-labelingwizard.](../media/locations-auto-labeling-wizard.png)
-
-    To specify individual OneDrive accounts: The URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-
-    For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    To verify the syntax for your tenant and identify OneDrive URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    
+    To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+    
+    For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`. However, numbers or GUIDs can be appended when conflicts are detected.
+    
+    It's always best to confirm a user's URL for their OneDrive account, which you can do with the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 

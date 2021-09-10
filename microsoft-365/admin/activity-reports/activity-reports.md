@@ -54,7 +54,9 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker-end
 
-2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard.](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs.
+
+   :::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## Who can see reports
 
@@ -68,8 +70,10 @@ People who have the following permissions:
     
 - Skype for Business admins
 
-- Global reader
-    
+- Global reader (with no user details)
+
+- Usage Summary Reports reader (with no user details)
+
 - Reports reader
 
 - Teams Service Administrator
@@ -142,7 +146,7 @@ You can't generate a report where you enter a user's account and then get a list
 
 There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.  
   
-## Hide user details in the reports
+## Show user details in the reports
 
 By default, user details will be hidden for all reports.
   
@@ -152,6 +156,9 @@ Your user list will look like this:
 
 
 If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
 
@@ -159,6 +166,16 @@ If you want to unhide user-level information when you're generating your reports
   
 3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
   
+
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
+
+2. Select **Reports**. 
+  
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
+  
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
 
   
 ## What happens to usage data when a user account is closed?

@@ -95,6 +95,10 @@ The additional tabs for an incident are:
 
   All the supported events and suspicious entities in the alerts in the incident.
 
+- Graph (Preview)
+
+  A visual representation of the attack that connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
+
 Here's the relationship between an incident and its data and the tabs of an incident in the Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="The relationship of an incident and its data to the tabs of an incident in the Microsoft 365 Defender portal.":::
@@ -112,15 +116,15 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected (the **Summary** tab).
+   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
 
-   1. Begin analyzing the alerts to understand their origin, scope, and severity (the **Alerts** tab).
+   1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
 
-   1. As needed, gather information on impacted devices, users, and mailboxes (the **Devices**, **Users**, and **Mailboxes** tabs).
+   1. As needed, gather information on impacted devices, users, and mailboxes with the **Devices**, **Users**, and **Mailboxes** tabs.
 
-   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) (the **Investigations** tab).
+   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.
    
-   1. As needed, use information in the data set for the incident for more information (the **Evidence and Response** tab).
+   1. As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab.
 
 2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
 

@@ -1,5 +1,5 @@
 ---
-title: "Scoped Certified application installation and configuration guide"
+title: "Microsoft 365 support integration with ServiceNow configuration guide"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -18,7 +18,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# ­­­Scoped Certified application installation and configuration guide
+# Microsoft 365 support integration with ServiceNow configuration guide
 
 [Overview](#overview) 
 
@@ -84,7 +84,7 @@ Before setting up any configuration for Microsoft 365 support integration, revie
 
 **Question #2** If you have multiple tenants, do you plan to use a single tenant integrated with your ServiceNow environment for Microsoft 365 support integration?
 
-This table identifies features available to you depending on the answers to these questions and the links to the specific instructions for how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+Depending on your answers to the questions above, this table tells you what features are available and how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 |Question #1 Answer|Question #2 Answer|What features are available?|Configuration Steps|
 |--- |--- |--- |--- |
@@ -105,11 +105,11 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     1. Go to the App registrations page and create a new application.
 
-        Select **Accounts in this organizational directory only ({TenantName} only – Single tenant**.
+        Select **Accounts in this organizational directory only ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Add redirect URL: `https://&lt;your-servicenow-instance&gt;.service-now.com/oauth\_redirect.do`.
+    1. Add redirect URL: `https://{your-servicenow-instance}.service-now.com/oauth_redirect.do`.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -117,13 +117,13 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
 2. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider in ServiceNow.
 
-    1. Go to **System OAuth** > **Application Registry**.
-
     1. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
 
-     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
-    1. Create a new application with the values following values by selecting [Connect to a third party OAuth Provider](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Go to **System OAuth** > **Application Registry**.
+
+    1. Create a new application with the values following values by selecting **Connect to a third party OAuth Provider**.
 
     - Client ID: The Client ID of the application created in step \#1
 
@@ -131,19 +131,19 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     - Default Grant type: Client Credentials
 
-    - Token URL: `https://login.microsoftonline.com/{M365\_Tenant\_Name}/oauth2/token`
+    - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Redirect URL:
+    - Redirect URL: https://{service-now-instance-name}.service-now.com/auth_redirect.do
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 3. \[The person who is a ServiceNow admin\] Set up Inbound OAuth Provider.
-
-    1. Go to **System OAuth** > **Application Registry**.
 
     1. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, application Description automatically generated":::
+
+    1. Go to **System OAuth** > **Application Registry**.
 
     1. Create a new application by selecting **Create an OAuth API endpoint for external clients**. Name the inbound OAuth provider and leave other fields at their defaults.
 
@@ -157,7 +157,7 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s IPs of Microsoft 365 support integration
 
 If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing the IP addresses below for both inbound and outbound API access.
 
@@ -206,39 +206,39 @@ These steps are required to set up the integration between your ServiceNow insta
 
 5. \[The person who is a ServiceNow admin\] Set up Inbound OAuth Provider.
 
-- Uncheck **Skip current step**.
+    - Uncheck **Skip current step**.
 
-- Uncheck **External OIDC Auth Token**.
+    - Uncheck **External OIDC Auth Token**.
 
-- Select OAuth Client created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#3 and select **Next**.
+    - Select OAuth Client created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#3 and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 6. \[The person who is a ServiceNow admin\] Set up inbound call integration user.
 
-- Uncheck **Skip current step**.
+    - Uncheck **Skip current step**.
 
-- Select the integration user created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#4 and select **Next**.
+    - Select the integration user created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#4 and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 7. \[The person who is a ServiceNow admin\] Set up Repository ID.
 
-Specify the repository ID, and then select **Next**.
+    Specify the repository ID, and then select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 8. \[The person who is a ServiceNow admin\] Set up Application settings.
 
-Select the following settings, and then select **Next**.
+    Select the following settings, and then select **Next**.
 
-- SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants, otherwise uncheck it.
+    - SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants, otherwise uncheck it.
 
-- Microsoft 365 admin email: The email of Microsoft 365 admin user who is contacted when Microsoft 365 support cases are created.
+    - Microsoft 365 admin email: The email of Microsoft 365 admin user who is contacted when Microsoft 365 support cases are created.
 
-- Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
+    - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 9. \[The person who is Helpdesk Admin or Service Request Admin in Microsoft 365 tenants\] Complete Integration.
 
@@ -246,7 +246,7 @@ Select the following settings, and then select **Next**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com/) > **Settings** > **Settings** > **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com/) > **Settings** > **Org settings** > **Organization profiles**.
 
     1. Set up support integration settings:
 
@@ -256,21 +256,21 @@ Select the following settings, and then select **Next**.
 
         1. In the tab **Repositories**, select **Add a repository** to create a new repository with the following settings:
 
-        - Repository: The **Repository ID** value from page Step - 6 Complete the integration.
+            - Repository: The **Repository ID** value from page Step - 6 Complete the integration.
 
-        - Endpoint: The **Endpoint** value from page Step - 6 Complete the integration.
+            - Endpoint: The **Endpoint** value from page Step - 6 Complete the integration.
 
-        - Authentication type: Select **Basic Auth**.
+            - Authentication type: Select **Basic Auth**.
 
-        - Client ID: The **Client ID** value from page Step - 6 Complete the integration.
+            - Client ID: The **Client ID** value from page Step - 6 Complete the integration.
 
-        - Client secret: The secret of the inbound OAuth provider that was created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#3.
+            - Client secret: The secret of the inbound OAuth provider that was created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#3.
 
-        - Refresh token expiry: 864000
+            - Refresh token expiry: 864000
 
-        - Rest username: The **User Name** value from page Step - 6 Complete the integration.
+            - Rest username: The **User Name** value from page Step - 6 Complete the integration.
 
-        - Rest user password: The password of the integration user that was created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#4.
+            - Rest user password: The password of the integration user that was created in [Prerequisites (Basic Authentication)](#prerequisites-basic-authentication) step \#4.
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image19.png" alt-text="Graphical user interface, application Description automatically generate":::
 
@@ -278,24 +278,24 @@ Select the following settings, and then select **Next**.
 
     1. Select **Next** to complete the integration.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="Graphical user interface, application, website Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image20.png" alt-text="Graphical user interface, application, website Description automatically generated":::
 
 10. \[The person who is a ServiceNow admin\] Enable Microsoft 365 support integration for an existing user.
 
-Microsoft 365 support integration is enabled only for the user with one of these roles:
+    Microsoft 365 support integration is enabled only for the user with one of these roles:
 
-- [x\_mioms\_m365\_assis.insights\_user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.insights\_user
 
-- [x\_mioms\_m365\_assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.administrator
 
-> [!NOTE]
-> The user with the role x\_mioms\_m365\_assis.insights\_user role can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator can also open a case with Microsoft 365 support.
+    > [!NOTE]
+    > The user with the role x\_mioms\_m365\_assis.insights\_user role can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator can also open a case with Microsoft 365 support.
 
-11. \[Optional\] \[The person who is a ServiceNow admin\] Link Microsoft 365 Admin account.
+11. \[Optional\] \[The user with role x_mioms_m365_assis.administrator\] Link Microsoft 365 Admin account.
 
-If any user has the role x\_mioms\_m365\_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
+    If any user has the role x\_mioms\_m365\_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
 
- :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 ## Set up Microsoft 365 support integration with AAD OAuth Token
 
@@ -309,11 +309,11 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     1. Go to the **App registrations** page and create a new application.
 
-        Select **Accounts in this organizational directory only ({TenantName} only – Single tenant**.
+        Select **Accounts in this organizational directory only ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Add redirect URL: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Add redirect URL: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -325,7 +325,7 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     1. Go to **App registrations** and create a new application.
 
-        Select **Accounts in this organizational directory only ({TenantName} only – Single tenant**.
+        Select **Accounts in this organizational directory only ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -336,7 +336,8 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
     1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials.
 
     1. Go to the **App registrations** page and create a new application.
-    1. Select **Accounts in this organizational directory only ({TenantName} only – Single tenant**.
+        
+        Select **Accounts in this organizational directory only ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -344,13 +345,13 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
 4. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider in ServiceNow.
 
+    1. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
+
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
+
     1. Go to **System OAuth** > **Application Registry**.
 
-    2. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
-
-    3. Create a new application with the values below by selecting [Connect to a third party OAuth Provider](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Create a new application with the values below by selecting **Connect to a third party OAuth Provider**.
 
         - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
@@ -358,48 +359,48 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
         - Default Grant type: Client Credentials.
 
-        - Token URL: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+        - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
         - Redirect URL:
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
+            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-5. \[The person who is a ServiceNow admin\] Configure OIDC provider in ServiceNow, refer to the [online documentation](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html), otherwise go to step 7.
-
-    1. Go to **System OAuth** > **Application Registry**.
+5. \[The person who is a ServiceNow admin\] Configure OIDC provider in ServiceNow, refer to the [online documentation](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
     1. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
+
+    1. Go to **System OAuth** > **Application Registry**.
 
     1. Select **New** > **Create new Open ID Connect Provider**.
 
     1. In **OAuth OIDC Provider Configuration**, select **Search** and create a new OIDC provider configuration under “oidc\_provider\_configuration.list” with these values:
 
-    - OIDC Provider: Contoso Azure
+        - OIDC Provider: Contoso Azure
 
-    - OIDC Metadata URL: `https://login.microsoftonline.com/{tenant\_name}/.well-known/openid-configuration`
+        - OIDC Metadata URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+        - UserClaim: **appId**
 
-    - User Field: **User ID**
+        - User Field: **User ID**
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image24.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
     1. Create a new application by selecting **Configure an OIDC provider to verify ID tokens** with these values:
 
-    - Name: contoso\_application\_inbound\_api
+        - Name: contoso\_application\_inbound\_api
 
-    - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
+        - Client ID: The Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
-    - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
+        - Client Secret: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
-    - OAuth OIDC Provider Configuration: The OIDC provider created in the last step.
+        - OAuth OIDC Provider Configuration: The OIDC provider created in the last step.
 
-    - Redirect URL:  
-        `https://{service\_now\_instance}.service-now.com/oauth\_redirect.do`
+        - Redirect URL:  
+            `https://{service-now-instance-name}.service-now.com/oauth_redirect.do`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Graphical user interface, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 6. \[The person who is a ServiceNow admin\] Create Integration Users.
 
@@ -407,7 +408,7 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image26.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-### \[Optional\] Allow the service’s Ips of Microsoft 365 support integration
+### \[Optional\] Allow the service’s IPs of Microsoft 365 support integration
 
 If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing these IP addresses for both inbound and outbound API access:
 
@@ -435,24 +436,24 @@ These steps are necessary to set up the integration between your ServiceNow inst
 
 1. \[The person who is a ServiceNow admin\] Switch the scope to Microsoft 365 support integration.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
 
 2. \[The person who is a ServiceNow admin\] Go to Microsoft 365 support > **Setup** to open the integration flow.
 
-> [!NOTE]
-> If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table's cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes** > **Can read** is checked for the table oauth\_entity.
+    > [!NOTE]
+    > If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table's cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes** > **Can read** is checked for the table oauth\_entity.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 3. \[The person who is a ServiceNow admin\] Select **Agree** to agree to the consent.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 4. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider.
 
-Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#4 and select **Next**.
+    Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#4 and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 5. \[The person who is a ServiceNow admin\] Set up Inbound OAuth Provider.
 
@@ -462,7 +463,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Select the OAuth Client created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step 5, and then select **Next**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 6. \[The person who is a ServiceNow admin\] Set up Inbound Call Integration User.
 
@@ -470,7 +471,7 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Input the Client ID of the application that was created at [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3 and select **Next**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 7. \[The person who is a ServiceNow admin\] Set up the Repository ID.
 
@@ -496,54 +497,54 @@ Select OAuth profile for Outbound OAuth Provider created at [Prerequisites (AAD 
 
     1. Check the following information to make sure it's correct.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image17.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image40.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com) > **Settings** > **Settings** > **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com) > **Settings** > **Org settings** > **Organization profiles**.
 
     1. Set up support integration settings.
 
-        1. On the **basic information** tab, select **Service Now** as the internal support tool, and type **Outbound App ID** as the value of Application ID on the Step - 6 Complete page, which was created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
+        1. On the **basic information** tab, select **Service Now** as the internal support tool, and type **Outbound App ID** as the value of Application ID on the Step - 6 Complete the integration page, which was created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following information:
+        1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following information:
 
-    - Repository: Use the **Repository ID** value from the Step - 6 Complete the integration page.
+            - Repository: Use the **Repository ID** value from the Step - 6 Complete the integration page.
 
-    - Endpoint: The **Endpoint** value from the Step - 6 Complete the integration page.
+            - Endpoint: The **Endpoint** value from the Step - 6 Complete the integration page.
 
-    - Authentication type: Select **AAD Auth**.
+            - Authentication type: Select **AAD Auth**.
 
-    - Client Id: The **Client ID** value on the Step - 6 Complete the integration page, which is the Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
+            - Client Id: The **Client ID** value on the Step - 6 Complete the integration page, which is the Client ID of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#2.
 
-    - Rest username: The **User Name** value on the Step - 6 Complete the integration page, which is the **Client ID** of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
+            - Rest username: The **User Name** value on the Step - 6 Complete the integration page, which is the **Client ID** of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
 
-    - Rest user password: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
+            - Rest user password: The App Secret of the application created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#3.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="Graphical user interface, application Description automatically generated":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image31.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-    1. Go back and select the button to save the integration.
+        1. Go back and select the button to save the integration.
 
     1. Select **Next** to complete the integration.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Graphical user interface, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image32.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 10. \[The person who is a ServiceNow admin\] Enable Microsoft 365 support integration for an existing user.
 
-Microsoft 365 support integration is enabled only for users with the following roles:
+    Microsoft 365 support integration is enabled only for users with the following roles:
 
-- [x\_mioms\_m365\_assis.insights\_user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.insights\_user
 
-- [x\_mioms\_m365\_assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.administrator
 
-> [!NOTE]
-> The user with the role x\_mioms\_m365\_assis.insights\_user can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator also can open a case with Microsoft 365 support.
+    > [!NOTE]
+    > The user with the role x\_mioms\_m365\_assis.insights\_user can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator also can open a case with Microsoft 365 support.
 
-11. **\[Optional\] \[The person who is a ServiceNow admin\] Link Microsoft 365 Admin account**
+11. **\[Optional\] \[The user with role x_mioms_m365_assis.administrator\] Link Microsoft 365 Admin account**
 
-If any user has the role “x\_mioms\_m365\_assis.administrator” and they're using different Microsoft 365 accounts to manage Microsoft support cases, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
+    If any user has the role “x\_mioms\_m365\_assis.administrator” and they're using different Microsoft 365 accounts to manage Microsoft support cases, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 ## Set up Microsoft 365 support integration for Insights ONLY
 
@@ -557,11 +558,11 @@ These prerequisite steps are necessary to set up Microsoft 365 support integrati
 
     1. Go to the **App registrations** page and create a new application.
 
-    1. Select **Accounts in this organizational directory only ({TenantName} only – Single tenant**.
+        Select **Accounts in this organizational directory only ({microsoft-365-tenant-name} only – Single tenant**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Add redirect URL: `https://&lt;your-servicenow-instance&gt;.service-now.com/auth\_redirect.do`
+    1. Add redirect URL: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -569,25 +570,25 @@ These prerequisite steps are necessary to set up Microsoft 365 support integrati
 
 1. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider in ServiceNow.
 
-    1. Go to **System OAuth** > **Application Registry**.
-
     1. If the scope is not set to **Global**, open **Settings** > **Developer** > **Applications** to switch to **Global**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
-    1. Create a new application with the values below by selecting [Connect to a third party OAuth Provider](https://dev77417.service-now.com/wizard_view.do?sys_action=sysverb_wizard_ans&WIZARD:action=follow&wiz_referring_url=oauth_entity_list.do?sys_id=-1@99@sys_target=oauth_entity@99@sysparm_fixed_query=@99@sysparm_group_sort=@99@sysparm_parent=2c7cab53d7232100f20bc8170e61036b@99@sysparm_query=type%3dclient%5eORtype%3doauth_provider@99@sysparm_target=@99@sysparm_view=&wiz_collection_key=&wiz_collectionID=&wiz_collection=&wiz_collection_related_field=&wiz_view=&wiz_action=sysverb_new&sys_id=79ce2f53d7232100f20bc8170e610361&sysparm_query=type=client%5eORtype=oauth_provider&sysparm_target=&sys_target=oauth_entity).
+    1. Go to **System OAuth** > **Application Registry**.
 
-    - Client ID: The **Client ID** of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
+    1. Create a new application with the values below by selecting **Connect to a third party OAuth Provider**.
 
-    - Client Secret: The App Secret of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
+        - Client ID: The **Client ID** of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
 
-    - Default Grant type: Client Credentials
+        - Client Secret: The App Secret of the application created in [Prerequisites (Insights ONLY)](#prerequisites-insights-only) step \#1
 
-    - Token URL: `https://login.microsoftonline.com/{M365\_Tenan\_Name}/oauth2/token`
+        - Default Grant type: Client Credentials
 
-    - Redirect URL: `https://{ServiceNow\_Istance\_Name}.service-now.com/oauth\_redirect.do`
+        - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
+        - Redirect URL: `https://{servicenow-instance-name}.service-now.com/oauth_redirect.do`
+
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 ### Set up Microsoft 365 support integration
 
@@ -597,24 +598,24 @@ The following steps are needed to set up the integration between your ServiceNow
 
 1. \[The person who is a ServiceNow admin\] Switch the scope to Microsoft 365 support integration.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
 
 2. \[The person who is a ServiceNow admin\] Go to Microsoft 365 support > **Setup** to open the integration flow.
 
-> [!NOTE]
-> If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table's cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes** > **Can read** is checked for the table oauth\_entity.
+    > [!NOTE]
+    > If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table's cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes** > **Can read** is checked for the table oauth\_entity.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 3. \[The person who is a ServiceNow admin\] Select **Agree** to agree to the consent.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 4. \[The person who is a ServiceNow admin\] Set up Outbound OAuth Provider.
 
-Select OAuth profile for Outbound OAuth Provider and select **Next**.
+    Select OAuth profile for Outbound OAuth Provider and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 5. \[The person who is a ServiceNow admin\] Skip Inbound OAuth Provider.
 
@@ -630,9 +631,9 @@ Select OAuth profile for Outbound OAuth Provider and select **Next**.
 
 7. \[The person who is a ServiceNow admin\] Set up Repository ID.
 
-Specify the repository ID and select **Next**.
+    Specify the repository ID and select **Next**.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 8. \[The person who is a ServiceNow admin\] Set up Application Settings.
 
@@ -652,7 +653,7 @@ Specify the repository ID and select **Next**.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image35.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com) > **Settings** > **Settings** > **Organization profiles**.
+    1. Go to Microsoft 365 [Admin Portal](https://admin.microsoft.com) > **Settings** > **Org settings** > **Organization profiles**.
 
         1. Set up support integration settings with the information shown in setup flow.
 
@@ -662,19 +663,19 @@ Specify the repository ID and select **Next**.
 
         1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following information:
 
-        - Repository: The **Repository ID** value from the Step - 6 Complete the integration page.
+            - Repository: The **Repository ID** value from the Step - 6 Complete the integration page.
 
-        - Endpoint: The **Endpoint** value from the Step - 6 Complete the integration page.
+            - Endpoint: The **Endpoint** value from the Step - 6 Complete the integration page.
 
-        - Authentication type: Select **AAD Auth**.
+            - Authentication type: Select **AAD Auth**.
 
-        - Client ID: A random value, such as **ignored**.
+            - Client ID: A random value, such as **ignored**.
 
-        - Rest username: A random value, such as **ignored**.
+            - Rest username: A random value, such as **ignored**.
 
-        - Rest user password: A random value, such as **ignored**.
+            - Rest user password: A random value, such as **ignored**.
 
-            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="Graphical user interface, application Description automatically generated":::
+                :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image36.png" alt-text="Graphical user interface, application Description automatically generated":::
 
         1. Go back and select the button to save the integration.
 
@@ -684,20 +685,14 @@ Specify the repository ID and select **Next**.
 
 10. \[The person who is a ServiceNow admin\] Enable Microsoft 365 support integration for an existing user.
 
-Microsoft 365 support integration is enabled only for these user roles:
+    Microsoft 365 support integration is enabled only for these user roles:
 
-- [x\_mioms\_m365\_assis.insights\_user](https://ven01306.service-now.com/sys_user_role.do?sys_id=802b2adfdb4cac507c80230bd3961911&sysparm_record_target=sys_user_role&sysparm_record_row=2&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.insights\_user
 
-- [x\_mioms\_m365\_assis.administrator](https://ven01306.service-now.com/sys_user_role.do?sys_id=4b25c9fb1b7784507ddd4227cc4bcb3a&sysparm_record_target=sys_user_role&sysparm_record_row=1&sysparm_record_rows=2&sysparm_record_list=nameSTARTSWITHx_mioms_m365%5EORDERBYname)
+    - x\_mioms\_m365\_assis.administrator
 
-> [!NOTE] 
-> The user with the role x\_mioms\_m365\_assis.insights\_user can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator also can open a case with Microsoft 365 support.
-
-11. \[Optional\] \[The person who is a ServiceNow admin\] Link Microsoft 365 Admin account.
-
-If any user has the role “x\_mioms\_m365\_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft support case, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
-
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    > [!NOTE] 
+    > The user with the role x_mioms_m365_assis.insights_user can see Service Health Incidents, Recommended Solutions. The user with the role x_mioms_m365_assis.administrator also can open a case with Microsoft 365 support. With Insights ONLY, no one should be assigned the role x_mioms_m365_assis.administrator.
 
 ## Testing the configuration
 
@@ -711,7 +706,7 @@ Here are the steps to test the configuration of Microsoft 365 support integratio
 
 3. Focus on **Microsoft 365 support** tab, and select **Microsoft 365 Insights** to determine if the recommended solutions were retrieved successfully.
 
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="Graphical user interface, application, website Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="Graphical user interface, application, website Description automatically generated":::
 
 ##  Troubleshooting
 

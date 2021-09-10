@@ -76,7 +76,7 @@ We understand previewing and downloading email are sensitive activities, and so 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
 > [!NOTE]
-> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto protection (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
+> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
 1. Open the Microsoft 365 Defender portal <https://security.microsoft.com> and sign in using your work or school account for Office 365.
 
