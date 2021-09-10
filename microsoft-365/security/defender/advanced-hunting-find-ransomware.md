@@ -250,12 +250,12 @@ By default, the query result lists only devices that have more than two types of
 - 
 - ## Additional ransomware resources
 
-Key industry information from Microsoft:
+Key information from Microsoft:
 
+- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Human-operated ransomware](human-operated-ransomware.md)
-
+- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-
 - **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365:
@@ -265,23 +265,22 @@ Microsoft 365:
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 
-Microsoft Cloud App Security:
-
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
-
 Microsoft Azure:
 
+- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
 Microsoft Security team blog posts:
 
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
-
-
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.
