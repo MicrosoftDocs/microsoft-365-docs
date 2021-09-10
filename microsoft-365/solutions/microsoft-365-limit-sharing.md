@@ -16,7 +16,7 @@ search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
-ms.custom: 
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
@@ -54,15 +54,15 @@ If you want to limit sharing in a Microsoft 365 group or Microsoft Teams team, i
 If you want to prevent guest access in Teams, you can turn off guest sharing in the Teams admin center.
 
 To turn off guest sharing for Teams
-1. In the Teams admin center, expand **Org-wide settings**, and then click **Guest access**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2066851" target="_blank">Teams admin center</a>, expand **Org-wide settings**, and then click **Guest access**.
 2. Turn off **Allow guest access in Teams**.
 3. Click **Save**.
 
 If you want to prevent guest access in Microsoft 365 Groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
 
 To turn off guest sharing in Microsoft 365 Groups
-1. In the Microsoft 365 admin center, click **Settings**, and then click **Org Settings**.
-2. On the **Services** tab, click **Microsoft 365 Groups**.
+1. In the Microsoft 365 admin center, click **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>.
+2. Click **Microsoft 365 Groups**.
 3. Clear the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes.
 4. Click **Save changes**.
 
