@@ -40,7 +40,7 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The **Sensor health** tab provides general operating system information, divided into three cards that display the following device attributes:
+- The **Sensor health & OS** tab provides general operating system information, divided into three cards that display the following device attributes:
 
   - [Sensor health](#sensor-health)
   - [OS systems and platforms](#os-systems-and-platforms)
@@ -54,7 +54,7 @@ The Device health and compliance dashboard is structured in two tabs:
   - [Antivirus platform version](#antivirus-platform-version)
   - [Recent antivirus scan results](#recent-antivirus-scan-results)
 
-### Sensor health tab
+### Sensor health & OS tab
 
 Each of the three cards on the **Sensor health & OS** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
@@ -100,7 +100,7 @@ The Windows 10 version trend graph can help you quickly determine whether your o
 
 ### Microsoft Defender Antivirus health tab  
 
-The Antivirus health tab contains five cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining three cards report about Microsoft Defender Antivirus _engine versions_,  _security intelligence versions_, and _platform versions_ reported in your organization.
+The Microsoft Defender Antivirus health tab contains five cards that report on several aspects of Microsoft Defender Antivirus in your organization. Two cards, _mode_ and _scan results_, report about Microsoft Defender Antivirus functions. The remaining three cards report about Microsoft Defender Antivirus _engine versions_,  _security intelligence versions_, and _platform versions_ reported in your organization.
 
 #### Card functionality
 
