@@ -73,11 +73,10 @@ The following table lists the supported operating systems for rules that are  cu
 >
 > - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
-> - \* All rules support file and folder exclusions, unless stated otherwise.
 
 | Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server <br> Semi-Annual Channel |
 |---|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 (Semi-Annual Channel) or later |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> version 1803 or later |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y <br> version 1809 or later | Y | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> version 1803 or later | Y | Y |
@@ -144,7 +143,7 @@ Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
-AH action type:
+Advanced hunting action type:
 
 ### Block Adobe Reader from creating child processes
 
@@ -158,7 +157,7 @@ Configuration Manager name: Not yet available
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
@@ -175,7 +174,7 @@ Configuration Manager name: `Block Office application from creating child proces
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
@@ -195,7 +194,7 @@ Configuration Manager name: `Block credential stealing from the Windows local se
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
@@ -213,7 +212,7 @@ Microsoft Endpoint Manager name: `Block executable content from email client and
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
@@ -248,7 +247,7 @@ Configuration Manager name: `Block executable files from running unless they mee
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
@@ -265,7 +264,7 @@ Configuration Manager name: `Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
@@ -282,7 +281,7 @@ Configuration Manager name: `Block JavaScript or VBScript from launching downloa
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
@@ -299,7 +298,7 @@ SCCM name: `Block Office applications from creating executable content`
 
 GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
@@ -320,7 +319,7 @@ Configuration Manager name: `Block Office applications from injecting code into 
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
@@ -340,7 +339,7 @@ Configuration Manager name: Not available
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
@@ -360,7 +359,7 @@ Configuration Manager name: Not available
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
@@ -378,7 +377,7 @@ Configuration Manager name: Not applicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
@@ -393,7 +392,7 @@ Configuration Manager name: `Block untrusted and unsigned processes that run fro
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
@@ -417,7 +416,7 @@ Configuration Manager name: `Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
@@ -441,7 +440,7 @@ Configuration Manager name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-AH action type:
+Advanced hunting action type:
 
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
