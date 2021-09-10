@@ -51,6 +51,8 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 
 To use form processing, you also need AI Builder credits. If you have 300 or more licensed users, an allocation of AI Builder credits is provided each month.
 
+For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
+
 ## To set up SharePoint Syntex
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
