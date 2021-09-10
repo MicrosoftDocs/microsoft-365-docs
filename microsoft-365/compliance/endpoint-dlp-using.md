@@ -80,9 +80,13 @@ You can use auto-quarantine to prevent an endless chain of DLP notifications for
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
-### Browser and domain restrictions
+### Browser and domain restrictions to sensitive data
 
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
+
+#### Unallowed browsers
+
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
 #### Service domains
 
@@ -95,17 +99,30 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-#### Unallowed browsers
+### Additional settings for endpoint DLP
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+#### Business justification in policy tips
 
-### Business justification in policy tips
+You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. You can choose from one the following options:
+- **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
+- **Only show default options**: Users can only select a built-in justification.
+- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end user policy tip notification. 
 
-- By default, users can select either a built-in justification, or enter their own text.
-- Users can only select a built-in justification.
-- Users can only enter their own justification.
+##### Customizing the options in the drop-down menu
+
+You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
+
+
+|Option |default text  |
+|---------|---------|
+|option 1    | **This is part of an established business workflow**  or you can enter customized text        |
+|option 2  |**My manager has approved this action** or you can enter customized text         |
+|option 3   |**Urgent access required; I'll notify my manager separately** or you can enter customized text          |
+|Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
+|option 5    |**Other** or you can enter customized text         |
+
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### Always audit file activity for devices
 
@@ -337,6 +354,10 @@ The message reads:
 8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
 
 9. Check Activity explorer for the event.
+
+### Scenario 5: Configure a policy to use the customized business justification
+
+
 
 ## See also
 
