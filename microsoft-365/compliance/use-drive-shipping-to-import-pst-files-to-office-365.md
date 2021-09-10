@@ -42,7 +42,7 @@ Here are the steps required to use drive shipping to import PST files to Microso
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
   
 > [!IMPORTANT]
-> You have to perform Step 1 once to down load the import tool. After you perform these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
+> You have to perform Step 1 once to download the import tool. After you have performed these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
   
 For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files). 
   
