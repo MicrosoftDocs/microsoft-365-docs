@@ -314,7 +314,7 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, when you use user apps that filter sensitivity labels according to publishing policies, you might see only a subset of all sensitivity labels.
+When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
