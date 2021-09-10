@@ -10,7 +10,7 @@
       href: microsoft-365-solution-catalog.md
     - name: Cross solution features
       items:
-        - name: Device Onboarding tools and methods for Windows 10 devices
+        - name: Device Onboarding
           items: 
           - name: Device Onboarding tools and methods for Windows 10 devices
             href: dlp-configure-endpoints.md
