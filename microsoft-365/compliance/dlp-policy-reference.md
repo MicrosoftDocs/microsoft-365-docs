@@ -267,6 +267,10 @@ The available context options change depending on which location you choose. If 
 
 - Content contains
 - Content is shared from Microsoft 365
+- Sender is (Preview)
+- Sender domain is (Preview)
+- Recipient domain is (Preview)
+- Recipient is (Preview)
 
 ##### Conditions Devices supports
 
@@ -432,7 +436,7 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tips popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
+When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
 
 For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
 
@@ -453,8 +457,9 @@ The user notifications and policy tips configuration options vary depending on t
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
-- You can enable/disable **Notifying users in Office 365 service with a policy tip.
-    - email notifications to the user who sen, shared, or last modified the content
+
+- You can enable/disable **Notifying users in Office 365 service** with a policy tip.
+    - email notifications to the user who sent, shared, or last modified the content
     OR
     - notify specific people
 
@@ -466,6 +471,41 @@ If you selected Devices only, you will get all the same options that are availab
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
 
+You can customize the title and body of text with using these parameters. The body text supports these:
+
+|common name  |parameter  |example
+|---------|---------|---------|
+|file name     |%%FileName%% | Contoso doc 1 |
+|process name     |%%ProcessName%% | Word |
+|policy name     |%%PolicyName%%| Contoso highly confidential |
+|action | %%AppliedActions%% | pasting document content from the clipboard to another app |
+
+**%%AppliedActions%%** substitutes these values into the message body:
+
+
+|action common name |value substituted in for %%AppliedActions%% parameter |
+|---------|---------|
+|copy to removeable storage    |*writing to removable storage*         |
+|copy to network share     |*writing to a network share*         |
+|print     |*printing*         |
+|paste from clipboard  |*pasting from the clipboard*         |
+|copy via bluetooth   |*transferring via Bluetooth*         |
+|open with an unallowed app     |*opening with this app*         |
+|copy to a remote desktop (RDP)     |*transferring to remote desktop*         |
+|uploading to an unallowed website     |*uploading to this site*         |
+|accessing the item via an unallowed browser     |*opening with this browser*         |
+
+Using this customized text
+
+*%%AppliedActions%% File name %%FileName%% via %%ProcessName%% is not allowed by your organization. Click  'Allow' if you want to bypass the policy %%PolicyName%%* 
+
+produces this text in the customized notification:
+
+*pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE is not allowed by your organization. Click 'Allow' button if you want to bypass the policy Contoso highly confidential*
+ 
+
+
+
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
 
@@ -474,9 +514,6 @@ If you selected Devices only, you will get all the same options that are availab
 
 To learn more about user notification and policy tip configuration and use, including how to customize the notification and tip text, see 
 - [Send email notifications and show policy tips for DLP policies](use-notifications-and-policy-tips.md#send-email-notifications-and-show-policy-tips-for-dlp-policies)
-- [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
-
-
   
 <!--The email can notify the person who sent, shared, or last modified the content and, for site content, the primary site collection administrator and document owner. In addition, you can add or remove whomever you choose from the email notification.
   
