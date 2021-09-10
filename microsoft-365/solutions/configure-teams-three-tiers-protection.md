@@ -94,10 +94,7 @@ By default, both owners and members of the team can share files and folders with
 
 If you need to share Teams content with people outside your organization, there are two options:
 
-- **Guest sharing** - Guest sharing uses Azure AD B2B collaboration which allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
-- **Shared channels** - Shared channels uses Azure AD B2B direct connect which allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared channels in Teams by using their own work or school account. No guest account is created in your organization.
-
-Both guest sharing and shared channels are useful depending on the situation. See [Plan external collaboration](plan-external-collaboration.md) for details on each and how to decide which to use for a given scenario.
+Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
 
 If you plan to use guest sharing, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
 

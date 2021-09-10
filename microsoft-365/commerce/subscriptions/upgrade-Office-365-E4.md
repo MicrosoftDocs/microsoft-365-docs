@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - customer-email
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to upgrade from an Office 365 E4 subscription."
 ms.date: 08/14/2020
@@ -31,7 +32,7 @@ This article steps you through the process of upgrading from an Office 365 E4 to
 
 ## What are my options for how to upgrade?
 
-The easiest way to upgrade your plan is to use the **Upgrade** tab in the Microsoft 365 admin center. However, using the **Upgrade** tab isn’t supported in all situations. If your scenario isn’t supported, you might be able to upgrade plans manually.
+The easiest way to upgrade your plan is to use the **Upgrade** tab in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. However, using the **Upgrade** tab isn’t supported in all situations. If your scenario isn’t supported, you might be able to upgrade plans manually.
 
 ## What is the Upgrade tab?
 
@@ -122,7 +123,7 @@ Before moving on to the next step, it’s important to make sure that all the se
 
 ### Step 3: Reassign licenses to users
 
-You can use the Microsoft 365 admin center to reassign licenses for up to 20 users at a time. To learn how, see [Move users to a different subscription](move-users-different-subscription.md).
+You can use the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to reassign licenses for up to 20 users at a time. To learn how, see [Move users to a different subscription](move-users-different-subscription.md).
 
 > [!TIP]
 > If you have a lot of users, you can [use Office 365 PowerShell to assign user licenses in bulk](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
