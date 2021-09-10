@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: "Use a retention policy to efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
@@ -62,7 +63,7 @@ When you have more than one retention policy, and when you also use retention la
 
 ### Retention policy for Teams locations
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
@@ -117,7 +118,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -164,7 +165,7 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 

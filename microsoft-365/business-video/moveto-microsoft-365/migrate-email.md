@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -82,7 +83,7 @@ The migration process takes several steps and can take from several hours to a c
     Domain verification usually takes just a few minutes, but it can take up to 48 hours.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. In the **Microsoft 365 admin center**, in the left nav, select **Show all**, **Settings**, **Domains**, and then **Add domain**. 
+1. In the Microsoft 365 admin center, in the left nav, select **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and then **Add domain**. 
 1. Enter the subdomain you previously created, then select **Use this domain**. 
 1. To connect the domain, select **Continue**. 
 1. Scroll down and take note of the MX records, CNAME records, and TXT records. 
@@ -94,7 +95,7 @@ The migration process takes several steps and can take from several hours to a c
 
     It may take some time for these changes to take effect.  
 
-1. Return to where you left off in **Microsoft 365 admin center**, and select **Continue**. 
+1. Return to where you left off in Microsoft 365 admin center, and select **Continue**. 
 
 Your domain is now set up.  
 
@@ -113,7 +114,7 @@ Before migration can begin, you need to create email aliases for your users with
 
 Once you’ve finished, you’re ready to migrate. 
 
-1. In the left nav of the **Microsoft 365 admin center**, scroll down to **Admin centers**,and select **Exchange**. 
+1. In the left nav of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, scroll down to **Admin centers**,and select **Exchange**. 
 1. Under **recipients**, choose **migration**, select **New**, **Migrate to Exchange Online**, choose **G Suite migration**, and then **Next**. 
 1. Create a CSV file with a list of the mailboxes you want to migrate. Make sure the file follows this format: 
 
