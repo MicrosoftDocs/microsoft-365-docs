@@ -8,6 +8,18 @@
       href: compliance-quick-tasks.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 compliance center
+      href: microsoft-365-compliance-center.md
+    - name: Permissions in the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Redirecting users to the Microsoft 365 compliance center
+      href: microsoft-365-compliance-center-redirection.md
+    - name: Use your free Azure Active Directory subscription
+      href: use-your-free-azure-ad-subscription-in-office-365.md
+    - name: Plan for security and compliance in Office 365
+      href: plan-for-security-and-compliance.md
+    - name: Compliance extensibility
+      href: compliance-extensibility.md
 - name: Cross solution features
   items:
     - name: Device Onboarding
@@ -24,18 +36,6 @@
           href: dlp-configure-endpoints-script.md
         - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
           href: dlp-configure-endpoints-vdi.md
-    - name: Microsoft 365 compliance center
-      href: microsoft-365-compliance-center.md
-    - name: Permissions in the Microsoft 365 compliance center
-      href: microsoft-365-compliance-center-permissions.md
-    - name: Redirecting users to the Microsoft 365 compliance center
-      href: microsoft-365-compliance-center-redirection.md
-    - name: Use your free Azure Active Directory subscription
-      href: use-your-free-azure-ad-subscription-in-office-365.md
-    - name: Plan for security and compliance in Office 365
-      href: plan-for-security-and-compliance.md
-    - name: Compliance extensibility
-      href: compliance-extensibility.md
 - name: Manage insider risks
   items:
     - name: Microsoft 365 insider risk solutions
