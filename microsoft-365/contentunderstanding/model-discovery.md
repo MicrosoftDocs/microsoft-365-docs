@@ -32,6 +32,9 @@ To make your trained model available for others to use:
 
 2. On the **Model settings** panel, in the **Sites where this model is available** section, select **Edit**.
 
+*Chuck, let's add note here that or to section header that different options are available depending on whether you are an admin or non-admin.*
+*admins can disable showing anywhere, enable to show everywhere, or make available only to specific sites. users can only add/remove availability to specific sites they already have access to. we can add screens for both personas*
+
 3. On the **Select the sites where this model is available** panel, select where you want the model to be available for other users to apply.
 
     ![Screenshot of the Select the sites where this model is available panel showing the options of where you want the model to be available for others.](../media/content-understanding/select-sites.png)
