@@ -36,6 +36,22 @@ Microsoft 365 Reports in the admin center is not supported for GCC High and DoD 
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
 2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+
+## Show user details in the reports
+
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+  
+Your user list will look like this:
+  
+![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+  
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
+
+2. Select **Reports**. 
+  
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes. 
   
 ## Interpret the SharePoint site usage report
 
