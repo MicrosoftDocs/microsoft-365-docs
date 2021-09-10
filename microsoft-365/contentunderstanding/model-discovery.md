@@ -44,7 +44,7 @@ To make your trained model available for others to use:
 
     If you are *not* an administrator, you will see this view.
 
-    ![Screenshot of the Select the sites where this model is available panel showing the options for end users with only a few available sites.](../media/content-understanding/select-sites-user.png)
+    ![Screenshot of the Select the sites where this model is available panel showing the options for end users with only a few available sites.](../media/content-understanding/select-site-user.png)
 
     You can only add or remove availability to the specific sites to which you already have access.
 
