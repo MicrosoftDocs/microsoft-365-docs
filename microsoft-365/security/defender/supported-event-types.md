@@ -36,7 +36,7 @@ The streaming API is constantly being expanded to support more event types. Lear
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | ? |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | N/A |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -56,9 +56,10 @@ The streaming API is constantly being expanded to support more event types. Lear
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Public preview |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Public preview|
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Public preview |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | ? |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |?|
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | ? |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | ? |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | N/A |
+| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |N/A|
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | N/A |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | N/A |
 
 ## Streaming API tables
+
