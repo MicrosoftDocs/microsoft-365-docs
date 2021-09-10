@@ -58,16 +58,19 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
-DeviceTvmSoftwareVulnerabilities
+let DeviceWithHighAlerts = AlertInfo
+| where Severity == "High"
+| project Timestamp, AlertId, Title, ServiceSource, Severity
+| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId
-| join kind =inner(DeviceAlertEvents) on DeviceId  
-| summarize NumOfVulnerabilities=any(NumOfVulnerabilities),
-DeviceName=any(DeviceName) by DeviceId, AlertId
-| project DeviceName, NumOfVulnerabilities, AlertId  
-| order by NumOfVulnerabilities desc
+DeviceName=any(DeviceName) by DeviceId;
+DeviceWithCriticalCve
+| join kind=inner DeviceWithHighAlerts on DeviceId
+| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
 ```
 
 ## Related topics

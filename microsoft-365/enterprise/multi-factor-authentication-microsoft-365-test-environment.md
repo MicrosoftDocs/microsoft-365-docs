@@ -2,8 +2,8 @@
 title: Microsoft 365 for enterprise test environment multi-factor authentication
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/12/2019
 audience: ITPro
@@ -33,7 +33,7 @@ Setting up multi-factor authentication for an account in your Microsoft 365 for 
 - [Phase 2: Enable and test multi-factor authentication for the User 2 account](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
 - [Phase 3: Enable and test multi-factor authentication with a conditional access policy](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

@@ -50,7 +50,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
-   ![Approve or reject an action](../../media/air-actioncenter-itemselected.png)
+   ![Approve or reject an action.](../../media/air-actioncenter-itemselected.png)
 
 4. Review the information in the flyout pane, and then take one of the following steps:
    - Select **Open investigation page** to view more details about the investigation.

@@ -49,7 +49,7 @@ A **role group** is a set of roles that lets people do their jobs in the Microso
 
 The Microsoft 365 Defender portal includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
 
-![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram showing relationship of role groups to roles and members.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## Roles and role groups in the Microsoft 365 Defender portal
 
@@ -59,7 +59,7 @@ The following types of roles and role groups are available in **Permissions & ro
 
 - **Email & collaboration roles**: These are the same role groups that are available in the Security & Compliance Center, but you can manage them directly in the Microsoft 365 Defender portal. The permissions that you assign here are specific to the Microsoft 365 Defender portal, the Microsoft 365 compliance center, and the Security & Compliance Center, and don't cover all of the permissions that are needed in other Microsoft 365 workloads.
 
-![Permissions & roles page in the Microsoft 365 Defender portal](../../media/m365-sc-permissions-and-roles-page.png)
+![Permissions & roles page in the Microsoft 365 Defender portal.](../../media/m365-sc-permissions-and-roles-page.png)
 
 ### Azure AD roles in the Microsoft 365 Defender portal
 
@@ -67,7 +67,7 @@ When you go **Email & collaboration roles** \> **Permissions & roles** \> **Azur
 
 When you select a role, a details flyout that contains the description of the role and the user assignments appears. But to manage those assignments, you need to click **Manage members in Azure AD** in the details flyout.
 
-![Link to manage permissions in Azure Active Directory](../../media/permissions-manage-in-azure-ad-link.png)
+![Link to manage permissions in Azure Active Directory.](../../media/permissions-manage-in-azure-ad-link.png)
 
 For more information, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
@@ -98,7 +98,7 @@ For complete information about these role groups, see [Permissions in the Securi
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration roles** \> **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
 
-2. In the **Permissions** page that opens, select the role group that you want to modify from the list. You can click on the **Name** column header to sort the list by name, or you can click **Search** ![Search icon](../../media/m365-cc-sc-search-icon.png) to find the role group.
+2. In the **Permissions** page that opens, select the role group that you want to modify from the list. You can click on the **Name** column header to sort the list by name, or you can click **Search** ![Search icon.](../../media/m365-cc-sc-search-icon.png) to find the role group.
 
 3. In the role group details flyout that appears, click **Edit** in the **Members** section.
 
@@ -108,11 +108,11 @@ For complete information about these role groups, see [Permissions in the Securi
 
 5. In the **Choose members** flyout that appears, do one of the following steps:
 
-   - Click **Add**. In the list of users that appears, select one or more users. Or, you can click **Search** ![Search icon](../../media/m365-cc-sc-search-icon.png) to find and select users.
+   - Click **Add**. In the list of users that appears, select one or more users. Or, you can click **Search** ![Search icon.](../../media/m365-cc-sc-search-icon.png) to find and select users.
 
      When you've selected the users that you want to add, click **Add**.
 
-   - Click **Remove**. Select one or more of the existing members. Or, you can click **Search** ![Search icon](../../media/m365-cc-sc-search-icon.png) to find and select members.
+   - Click **Remove**. Select one or more of the existing members. Or, you can click **Search** ![Search icon.](../../media/m365-cc-sc-search-icon.png) to find and select members.
 
      When you've selected the users that you want to remove, click **Remove**.
 

@@ -33,6 +33,13 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+## August 2021
+- (Preview) Microsoft Defender for Office 365 data available in advanced hunting
+<br>New columns in email tables can provide more insight into email-based threats for more thorough investigations using advanced hunting. You can now include the `AuthenticationDetails` column in [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` in [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md), and `ThreatTypes` and `DetectionMethods` in [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md) tables. 
+
+- (Preview) Incident graph
+
+  A new **Graph** tab on the **Summary** tab of an incident shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
 
 ## July 2021
 - [Professional services catalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Enhance the detection, investigation, and threat intelligence capabilities of the platform with supported partner connections.
@@ -53,7 +60,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## March 2021
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in `AppFileEvents`.
 ## February 2021
-- (Preview) The enhanced [Microsoft 365 security center (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](./overview-security-center.md).
+- (Preview) The enhanced [Microsoft 365 Defender portal (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](./overview-security-center.md).
 
 ## September 2020
 - [IdentityDirectoryEvents table](advanced-hunting-identitydirectoryevents-table.md) <br> Find events involving an on-premises domain controller running Active Directory (AD). This [advanced hunting](advanced-hunting-overview.md) schema table covers a range of identity-related events and system events on the domain controller.

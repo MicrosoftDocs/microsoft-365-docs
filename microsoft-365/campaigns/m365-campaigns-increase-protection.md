@@ -279,7 +279,7 @@ You can use activity alerts to track admin and user activities and detect malwar
 
 The following figure shows the default policies that are included with Microsoft 365.
 
-![Default alert policies included with Microsoft 365](../media/alertpolicies.png)
+![Default alert policies included with Microsoft 365.](../media/alertpolicies.png)
 
 ## Disable or manage calendar sharing
 

@@ -62,7 +62,7 @@ If auditing is not turned on for your organization, you can turn it on in the Mi
 
    If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
-   ![Banner on Audit page](../media/AuditingBanner.png)
+   ![Banner on Audit page.](../media/AuditingBanner.png)
 
 3. Click the **Start recording user and admin activity** banner.
 

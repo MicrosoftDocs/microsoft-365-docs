@@ -28,7 +28,7 @@ Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) 
 For more information about Windows 365, see [What is Windows 365?](/windows-365/overview) For a list of Windows 365 requirements, see [Requirements for Windows 365](/windows-365/requirements).
 
 > [!IMPORTANT]
-> You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Microsoft 365 Lighthouse. You can't provision from within Microsoft 365Lighthouse.
+> You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
 Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and on-premises network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the on-premises network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 

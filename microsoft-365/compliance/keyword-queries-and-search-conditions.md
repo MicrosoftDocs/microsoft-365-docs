@@ -56,7 +56,7 @@ The following table lists email message properties that can be searched by using
 |---|---|---|---|
 |AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
 |Bcc|The Bcc field of an email message.<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|All examples return messages with Pilar Pinilla included in the Bcc field.|
-|Category|The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). The possible values are: <ul><li>blue<li></li>green<li></li>orange<li></li>purple<li></li>red<li></li>yellow</li></ul>|`category:"Red Category"`|Messages that have been assigned the red category in the source mailboxes.|
+|Category|The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). The possible values are: <ul><li>blue<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|Messages that have been assigned the red category in the source mailboxes.|
 |Cc|The Cc field of an email message.<sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|In both examples, messages with Pilar Pinilla specified in the Cc field.|
 |Folderid|The folder ID (GUID) of a specific mailbox folder. If you use this property, be sure to search the mailbox that the specified folder is located in. Only the specified folder will be searched. Any subfolders in the folder won't be searched. To search subfolders, you need to use the Folderid property for the subfolder you want to search. <p> For more information about searching for the Folderid property and using a script to obtain the folder IDs for a specific mailbox, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|The first example returns all items in the specified mailbox folder. The second example returns all items in the specified mailbox folder that were sent or received by garthf@contoso.com.|
 |From|The sender of an email message.<sup>1</sup>|`from:pilarp@contoso.com` <p> `from:contoso.com`|Messages sent by the specified user or sent from a specified domain.|
@@ -322,7 +322,7 @@ Keep the following in mind when using search conditions.
 
 - As previously explained, some condition properties allow you to type multiple values (separated by semi-colons). Each value is logically connected by the **OR** operator, and results in the query `(filetype=docx) OR (filetype=pptx) OR (filetype=xlsx)`. The following illustration shows an example of a condition with multiple values.
 
-    ![One condition with multiple values](../media/SearchConditions1.png)
+    ![One condition with multiple values.](../media/SearchConditions1.png)
 
   > [!NOTE]
   > You can't add multiple conditions (by clicking **Add condition** for the same property. Instead, you have to provide multiple values for the condition (separated by semi-colons), as shown in the previous example.
@@ -337,7 +337,7 @@ This example returns documents on SharePoint and OneDrive for Business sites tha
 
 **GUI**:
 
-![First example of search conditions](../media/SearchConditions2.png)
+![First example of search conditions.](../media/SearchConditions2.png)
 
 **Search query syntax**:
 
@@ -355,7 +355,7 @@ This example returns email items or documents that contain the keyword "report",
 
 **GUI**:
 
-![Second example of search conditions](../media/SearchConditions3.png)
+![Second example of search conditions.](../media/SearchConditions3.png)
 
 **Search query syntax**:
 
@@ -371,7 +371,7 @@ This example returns email messages or calendar meetings that were sent between 
 
 **GUI**:
 
-![Third example of search conditions](../media/SearchConditions4.png)
+![Third example of search conditions.](../media/SearchConditions4.png)
 
 **Search query syntax**:
 
@@ -424,7 +424,7 @@ As previously explained, you can use the  `SharedWithUsersOWSUser` property so s
 
 Documents must be explicitly shared with a specific user to be returned in search results when using the  `SharedWithUsersOWSUser` property. For example, when a person shares a document in their OneDrive account, they have the option to share it with anyone (inside or outside the organization), share it only with people inside the organization, or share it with a specific person. Here's a screenshot of the **Share** window in OneDrive, that shows the three sharing options.
 
-![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property.](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
 
 Only documents that are shared by using the third option (shared with **Specific people**) will be returned by a search query that uses the  `SharedWithUsersOWSUser` property.
 

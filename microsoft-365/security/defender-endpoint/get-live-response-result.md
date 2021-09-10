@@ -23,7 +23,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-#  Get live response results
+# Get live response results
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -74,7 +74,8 @@ started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-|Application|Machine.LiveResponse|Run live response on a specific machine|
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
 |Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request
@@ -106,10 +107,10 @@ need to run live response again.
 
 |Property|Description|
 |---|---|
-|name|Executed script name|
+|script_name|Executed script name|
 |exit_code|Executed script exit code|
 |script_output|Executed script standard output|
-|script_error|Executed script standard error output|
+|script_errors|Executed script standard error output|
 
 ## Example
 
@@ -144,7 +145,7 @@ Content-type: application/json
     "exit_code": 0,
     "script_output": "Transcript started, output file is C:\\ProgramData\\Microsoft\\Windows Defender Advanced Threat Protection\\Temp\\PSScriptOutputs\\PSScript_Transcript_{TRANSCRIPT_ID}.txt
 C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
-    "script_error":""
+    "script_errors":""
 }
 ```
 

@@ -43,6 +43,8 @@ For the latest Ignite presentations for communication compliance, see the follow
 
 For a quick overview of communication compliance, see the [Detect workplace harassment and respond with Communication Compliance in Microsoft 365](https://youtu.be/z33ji7a7Zho) video on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
 
+Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
+
 ## Scenarios for communication compliance
 
 Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:
@@ -67,7 +69,7 @@ Communication compliance in Microsoft 365 offers several important features to h
 - Flexible remediation workflows
 - Actionable insights
 
-![Communication compliance home page](../media/communication-compliance-home.png)
+![Communication compliance home page.](../media/communication-compliance-home.png)
 
 ### Intelligent customizable templates
 
@@ -91,6 +93,7 @@ Built-in remediation workflows allow you to quickly identify and take action on 
 - **User history**: Historical view of all user message remediation activities, such as past notifications and escalations for policy matches, now provides reviewers with more context during the remediation workflow process. First-time or repeat instances of policy matches for users are now archived and easily viewable.
 - **Pattern detected notification**: Many harassing and bullying actions take place over time and involve reoccurring instances of the same behavior by a user. The new pattern detected notification displayed in alert details helps raise attention to these alerts and this type of behavior.
 - **Translation**: Quickly investigate message details in eight languages using translate support in the remediation workflow. Messages in other languages are automatically converted to the display language of the reviewer.
+- **Attachment detection**: Scan, detect, and investigate linked content (Modern attachments) from OneDrive and Microsoft Teams that match policy classifiers and conditions for Microsoft Teams messages. Attachment content is automatically extracted to a text file for detailed review and action.
 
 ### Actionable insights
 
@@ -118,7 +121,7 @@ Communication compliance helps you address common pain points associated with co
 
 Identifying and resolving compliance issues with communication compliance in Microsoft 365 uses the following workflow:
 
-![Communication compliance workflow](../media/communication-compliance-workflow.png)
+![Communication compliance workflow.](../media/communication-compliance-workflow.png)
 
 ### Configure
 

@@ -161,7 +161,7 @@ Although the main purpose of retention labels is to retain or delete content, yo
   
 For example, you can create and apply a retention label named "Review later" with no actions, and then use that label to find that content later.
   
-![Label settings to classify-only](../media/retention-label-retentionoff.png)
+![Label settings to classify-only.](../media/retention-label-retentionoff.png)
 
 #### Using a retention label as a condition in a DLP policy
 
@@ -177,7 +177,7 @@ When you publish retention labels, they're included in a **retention label polic
 
 2. Retention label policies specify the locations to publish the retention labels. The same location can be included in multiple retention label policies.
 
-![How retention labels can be added to label policies that specify locations](../media/retention-labels-and-policies.png)
+![How retention labels can be added to label policies that specify locations.](../media/retention-labels-and-policies.png)
 
 You can also create one or more **auto-apply retention label policies**, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
@@ -193,7 +193,7 @@ Different types of retention labels can be published to different locations, dep
    
 In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
   
-Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete contain from these locations, use retention policies instead.
+Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -233,7 +233,7 @@ After retention labels are applied to content, either by users or auto-applied, 
 
 When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Retention label condition](../media/retention-label-condition.png)
+![Retention label condition.](../media/retention-label-condition.png)
 
 
 ## Compare capabilities for retention policies and retention labels
@@ -247,7 +247,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention applied automatically | Yes | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers| No | Yes |
 |Retention applied manually | No | Yes |
-|UI presence for end users | No | Yes |
+|End user interaction | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
@@ -289,11 +289,13 @@ There are a few more factors that determine when an item will be permanently del
 Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker for conflicts, from top to bottom. If the outcome is determined by the first level because there are no further conflicts, there's no need to progress to the next level, and so on.
 
 > [!IMPORTANT]
-> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
+> If you are using retention labels: Before applying the principles to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
-![Diagram of the principles of retention](../media/principles-of-retention.png)
+![Diagram of the principles of retention.](../media/principles-of-retention.png)
 
 Before explaining each principle in more detail, it's important to understand the difference between the retention period for the item vs. the specified retention period in the retention policy or retention label. That's because although the default configuration is to start the retention period when an item is created, so that the end of the retention period is fixed for the item, files also support the configuration to start the retention period from when the file is last modified. With this alternative configuration, every time the file is modified, the start of the retention period is reset, which extends the end of the retention period for the item. Retention labels also support starting the retention period when labeled and at the start of an event.
+
+To apply the principles in action with a series of Yes and No questions, you can also use the [retention flowchart](retention-flowchart.md).
 
 Explanation for the four different principles:
   

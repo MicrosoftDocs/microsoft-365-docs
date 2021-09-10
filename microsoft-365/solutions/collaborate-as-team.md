@@ -38,7 +38,7 @@ Sharing in Microsoft 365 is governed at its highest level by the [B2B external c
 
 Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
@@ -59,7 +59,7 @@ Teams has a master on/off switch for guest access and a variety of settings avai
 
 Check to ensure that guest access is enabled in Teams and make any adjustment to the guest settings based on your business needs. Keep in mind that these settings affect all teams.
 
-![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle-on.png)
+![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
 
 To set Teams guest access settings
 
@@ -79,7 +79,7 @@ Once Teams guest access is turned on, you can optionally control guest access to
 
 Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for guest access in Teams to work.
 
-![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center.](../media/office-365-groups-guest-settings.png)
 
 To set Microsoft 365 Groups guest settings
 
@@ -98,7 +98,7 @@ The organization-level settings determine what settings are available for indivi
 
 If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization-level sharing settings
@@ -121,7 +121,7 @@ Choose any one of the following link-types which will be selected by default whe
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
 - **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
-![Screenshot of SharePoint organization-level files and folders sharing settings](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 To set the SharePoint organization-level default link settings
@@ -148,7 +148,7 @@ We'll invite users later. Next, it's important to check the site-level sharing s
 
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this team. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this team, then make sure the site-level sharing settings are set to **New and existing guests**.
 
-![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
@@ -172,6 +172,9 @@ To invite guests to a team
 3. Click **Edit guest information**.
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
+
+> [!NOTE]
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
 
 ## See also
 

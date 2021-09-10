@@ -41,7 +41,7 @@ To close a case:
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
-   ![Access the case information flyout page in an Advanced eDiscovery case](..\media\AeDSelectCaseInformation.png) 
+   ![Access the case information flyout page in an Advanced eDiscovery case.](..\media\AeDSelectCaseInformation.png) 
 
 3. At the bottom of the **Case Information** flyout page, click **Actions**, and then click **Close case**.
 

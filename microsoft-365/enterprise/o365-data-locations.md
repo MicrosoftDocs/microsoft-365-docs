@@ -81,7 +81,7 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 ### What services support Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive and SharePoint Online. Microsoft is investigating Multi-Geo for other Microsoft 365 services.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
 ### What are the exceptions for Intune data locations?
 

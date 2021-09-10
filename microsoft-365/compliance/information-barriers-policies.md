@@ -24,7 +24,7 @@ With information barriers, you can define policies that are designed to prevent 
 This article describes how to plan, define, implement, and manage information barrier policies. Several steps are involved, and the work flow is divided into several parts. Make sure to read through the [prerequisites](#prerequisites) and the entire process before you begin defining (or editing) information barrier policies.
 
 > [!TIP]
-> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) and a [downloadable Excel workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) to help you plan and define your information barrier policies.
+> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) to help you plan and define your information barrier policies.
 
 ## Concepts of information barrier policies
 
@@ -88,12 +88,12 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
 
       > [!div class="mx-imgBorder"]
-      > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+      > ![image.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
 When all the prerequisites are met, proceed to the next section.
 
 > [!TIP]
-> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).<p>In addition, a downloadable Excel workbook is available to help you plan and define your segments and policies (and create your PowerShell cmdlets). [Get the workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).
 
 ## Part 1: Segment users
 

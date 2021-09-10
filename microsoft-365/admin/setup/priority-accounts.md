@@ -11,7 +11,9 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkMAC
 description: "Monitor failed and delayed emailed messages sent to or from accounts who have high business impact."
 ---
 

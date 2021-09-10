@@ -41,7 +41,7 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 In each of the tiers, we have the option of sharing with people outside your organization. For the sensitive and highly sensitive tiers, we will have the option to turn guest sharing off at the team level by using sensitivity labels. But the organization-level guest sharing setting must be turned on for guest sharing to work at all in Teams.
 
-![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle-on.png)
+![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
 
 To set Teams guest access settings
 

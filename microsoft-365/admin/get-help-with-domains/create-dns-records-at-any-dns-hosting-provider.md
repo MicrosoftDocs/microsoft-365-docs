@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 ---
 
 # Add DNS records to connect your domain
@@ -39,7 +40,7 @@ If you don't add a domain, people in your organization will use the onmicrosoft.
 
 First, you need to prove you own the domain you want to add to Microsoft 365.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and select **Show all** > **Settings** > **Domains**.
+1. Sign in to the Microsoft 365 admin center and select **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 2. In a new browser tab or window, sign in to your DNS hosting provider, and then find where you manage your DNS settings (e.g., Zone File Settings, Manage Domains, Domain Manager, DNS Manager).
 3. Go to your provider's DNS Manager page, and add the TXT record indicated in the admin center to your domain.
 
@@ -59,7 +60,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
 
 If your registrar doesn't support adding TXT records, you can verify by adding an MX record.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/) and select **Show all** > **Settings** > **Domains**.
+1. Sign in to the Microsoft 365 admin center and select **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 2. In a new browser tab or window, sign in to your DNS hosting provider, and then find where you manage your DNS settings (e.g., Zone File Settings, Manage Domains, Domain Manager, DNS Manager).
 3. Go to your provider's DNS Manager page, and add the MX record indicated in the admin center to your domain.
 

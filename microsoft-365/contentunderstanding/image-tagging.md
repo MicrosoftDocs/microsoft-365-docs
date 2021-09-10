@@ -49,4 +49,4 @@ To turn image tagging on or off
 
 6. Click **Save**.
 
-    ![Screenshot of image tagging control](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![Screenshot of image tagging control.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)

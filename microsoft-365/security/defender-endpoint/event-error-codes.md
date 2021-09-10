@@ -43,7 +43,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
 2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
-   You can also access the log by expanding **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE** and click on **Operational**.
+   You can also access the log by expanding **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **SENSE** and click on **Operational**.
 
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
@@ -146,8 +146,10 @@ For example, if devices aren't appearing in the **Devices list**, you might need
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-eventerrorcodes-belowfoldlink)
 
-## Related topics
-
+## See also
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-onboarding.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Understand the analyzer HTML report](analyzer-report.md)

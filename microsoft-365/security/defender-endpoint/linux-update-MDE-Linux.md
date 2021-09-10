@@ -114,7 +114,7 @@ Type "`:wq`" w/o the double quotes.
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="update Defender for Endpoint on Linux":::
+:::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="update Defender for Endpoint on Linux.":::
 
 To inspect cron job runs:
 

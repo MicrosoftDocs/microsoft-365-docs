@@ -1,7 +1,7 @@
 ---
 title: Switch to Microsoft Defender for Endpoint - Prepare
-description: This is phase 1, Prepare, for migrating to Microsoft Defender for Endpoint.
-keywords: migration, Microsoft Defender for Endpoint, edr
+description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
+keywords: migration, Microsoft Defender for Endpoint, best practice
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 06/14/2021
+ms.date: 08/16/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -31,7 +31,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Phase 1: Prepare](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
+| ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
 |--|--|--|
 |*You are here!*| | |
 
@@ -107,12 +107,12 @@ To enable communication between your devices and Defender for Endpoint, configur
 
 | Capabilities  | Operating System | Resources |
 |:--|:--|:--|
-| [Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 or later](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configure machine proxy and internet connectivity settings](configure-proxy-internet.md) |
-| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-| EDR  | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   | [Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)  |
-| [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 or later](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-| Antivirus | macOS:<p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) | [Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
-| Antivirus | Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS, or higher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 | [Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
+| [Endpoint detection and response](overview-endpoint-detection-response.md) (EDR) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)  | [Configure machine proxy and internet connectivity settings](configure-proxy-internet.md) |
+| EDR | [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
+| EDR  | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)   | [Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)  |
+| [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) | [Windows 10](/windows/release-health/release-information) <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) | [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md) |
+| Antivirus | macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave) | [Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections) |
+| Antivirus | Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## Next step
 

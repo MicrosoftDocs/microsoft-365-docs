@@ -29,7 +29,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-The following features are generally available (GA) in the latest release of Microsoft Defender for Endpoint as well as security features in Windows 10 and Windows Server.
+The following features are generally available (GA) in the latest release of Microsoft Defender for Endpoint and security features in Windows 10 and Windows Server.
 
 For more information on preview features, see [Preview features](preview.md).
 
@@ -38,8 +38,14 @@ For more information on preview features, see [Preview features](preview.md).
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
 > ```https
-> /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
+> https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## August 2021
+
+- [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md) <br/>Defender for Endpoint Plan 1 (preview) is an endpoint protection solution that includes next-generation protection, attack surface reduction, centralized management and reporting, and APIs. Defender for Endpoint Plan 1 (preview) is a new offering for customers who want to try our endpoint protection capabilities, have Microsoft 365 E3, and do not yet have Microsoft 365 E5. 
+
+   To learn more, see [Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md). Existing [Defender for Endpoint](microsoft-defender-endpoint.md) capabilities will be known as Defender for Endpoint Plan 2. 
 
 ## June 2021
 
@@ -55,6 +61,13 @@ For more information on preview features, see [Preview features](preview.md).
    > Standard discovery will be the default mode for all customers starting July 19, 2021. You can choose to retain the basic mode through the settings page.
 
 - [Device group definitions](/microsoft-365/security/defender-endpoint/machine-groups) can now include multiple values for each condition. You can set multiple tags, device names, and domains to the definition of a single device group.
+
+- [Mobile Application management support](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> This enhancement enables Microsoft Defender for Endpoint protect an organization’s data within a managed application when Intune is being used to manage mobile applications. For more information about mobile application management, see [this documentation](/microsoft-365/mem/intune/apps/mam-faq).
+
+- [Microsoft Tunnel VPN integration](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN capabilities is now integrated with Microsoft Defender for Endpoint app for Android. This unification enables organizations to offer a simplified end user experience with one security app – offering both mobile threat defense and the ability to access on-prem resources from their mobile device, while security and IT teams are able to maintain the same admin experiences they are familiar with.
+
+- [Jailbreak detection on iOS](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios) <br> Jailbreak detection capability in Microsoft Defender for Endpoint on iOS is now generally available. This adds to the phishing protection that already exists.  For more information, see [Setup Conditional Access Policy based on device risk signals](/microsoft-365/security/defender-endpoint/ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+
 
 ## March 2021
 - [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*.
@@ -85,7 +98,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) <br> Microsoft Defender for Endpoint now adds support for Linux. Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
-- [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform right from the within the portal.
+- [Attack simulators in the evaluation lab](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint has partnered with various threat simulation platforms to give you convenient access to test the capabilities of the platform within the portal.
 
 ## April 2020
 
@@ -95,7 +108,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint on macOS brings the next-generation protection to Mac devices. Core components of the unified endpoint security platform will now be available for Mac devices, including [endpoint detection and response](microsoft-defender-endpoint-mac.md).
 
-- [Threat & Vulnerability Management application and application version end-of-life information](tvm-security-recommendation.md) <BR>Applications and application versions which have reached their end-of-life are tagged or labeled as such so you are aware that they will no longer be supported, and can take action to either uninstall or replace. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
+- [Threat & Vulnerability Management application and application version end-of-life information](tvm-security-recommendation.md) <BR>Applications and application versions that have reached their end-of-life are tagged or labeled as such so that you are aware they will no longer be supported. You can then take action to either uninstall or replace such applications. Doing so will help lessen the risks related to various vulnerability exposures due to unpatched applications.
 
 - [Threat & Vulnerability Management Advanced Hunting Schemas](advanced-hunting-schema-reference.md) <BR>Use the Threat & Vulnerability Management tables in the Advanced hunting schema to query about software inventory, vulnerability knowledgebase, security configuration assessment, and security configuration knowledgebase.
 
@@ -111,13 +124,13 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Connected Azure AD applications](connected-applications.md)<br> The Connected applications page provides information about the Azure AD applications connected to Microsoft Defender for Endpoint in your organization.
 
-- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test and send requests for any available Microsoft Defender for Endpoint API endpoint.
+- [API Explorer](api-explorer.md)<br> The API explorer makes it easy to construct and perform API queries, test, and send requests for any available Microsoft Defender for Endpoint API endpoint.
 
 ## September 2019
 
-- [Tamper Protection settings using Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> You can now turn Tamper Protection on (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
+- [Tamper Protection settings using Intune](prevent-changes-to-security-settings-with-tamper-protection.md) <br/> You can now turn on Tamper Protection (or off) for your organization in the Microsoft 365 Device Management Portal (Intune).
 
-- [Live response](live-response.md) <BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real-time.
+- [Live response](live-response.md) <BR> Get instantaneous access to a device using a remote shell connection. Do in-depth investigative work and take immediate response actions to promptly contain identified threats - real time.
 
 - [Evaluation lab](evaluation-lab.md) <BR> The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the complexities of device and environment configuration so that you can
  focus on evaluating the capabilities of the platform, running simulations, and seeing the prevention, detection, and remediation features in action.
@@ -134,7 +147,7 @@ For more information on preview features, see [Preview features](preview.md).
 
 - [Threat protection reports](threat-protection-reports.md)<BR>The threat protection report provides high-level information about alerts generated in your organization.
 
-- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and additional context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides additional layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
+- [Microsoft Threat Experts](microsoft-threat-experts.md)<BR> Microsoft Threat Experts is the new managed threat hunting service in Microsoft Defender for Endpoint that provides proactive hunting, prioritization, and more context and insights that further empower security operations centers (SOCs) to identify and respond to threats quickly and accurately. It provides another layer of expertise and optics that Microsoft customers can utilize to augment security operation capabilities as part of Microsoft 365.
 
 - [Indicators](ti-indicator.md) <BR> APIs for indicators are now generally available.
 

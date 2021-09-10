@@ -24,7 +24,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
-![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ In order to get access to the content explorer tab, an account must be assigned 
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
 > [!IMPORTANT]
-> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 > 
 ### Required permissions to access items in content explorer
 
@@ -72,7 +72,7 @@ The account you use to access content explorer must be in one or both of the rol
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
-A Global admin, Compliance admin, or Data admin can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
+A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
 ## Content explorer
 
@@ -106,14 +106,14 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 ### Export
 The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
 
-![data classification export control](../media/data_classification_export_control.png)
+![data classification export control.](../media/data_classification_export_control.png)
 
 
 ### Search
 
 When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
-![content explorer search tool](../media/data_classification_search_tool.png)
+![content explorer search tool.](../media/data_classification_search_tool.png)
 
 
 The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 

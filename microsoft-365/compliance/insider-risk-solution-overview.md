@@ -22,24 +22,24 @@ ms.collection:
 
 Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks:
 
-![Insider risk threats](../media/ir-solution-threats.png)
+![Insider risk threats.](../media/ir-solution-threats.png)
 
 Microsoft 365 risk prevention features are designed and built-in to our insider risk products and solutions. These solutions work together and use advanced service and 3rd-party indicators to help you quickly identify, triage, and act on risk activity. Most solutions offer a comprehensive detection, alert, and remediation workflow for your data analysts and investigators to use to quickly act on and minimize these risks.
 
 | Risk icon | Risks | Communication compliance | Insider risk management | Information barriers | Privileged access management |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
-| ![Data spillage icon](../media/ir-risk-data-spillage.png)| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| ![Confidentiality violations icon](../media/ir-risk-confidentiality-violations.png)| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
-| ![IP theft icon](../media/ir-risk-ip-theft.png)| IP theft | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
-| ![Workplace violence icon](../media/ir-risk-workplace-violence.png)| Workplace violence | ![Supported](../media/check-mark.png) |  |  |  |
-| ![Fraud/thief icon](../media/ir-risk-fraud.png)| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| ![Policy violations icon](../media/ir-risk-policy-violations.png)| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
-| ![Insider trading/handshake icon](../media/ir-risk-insider-trading.png)| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
-| ![Conflicts of interest icon](../media/ir-risk-conflicts-of-interest.png)| Conflicts of interest | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  |
-| ![Sensitive data leaks/devices icon](../media/ir-risk-sensitive-data-leaks.png)| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
-| ![Workplace harassment/people icon](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
-| ![Security violations icon](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
-| ![Regulatory compliance violations icon](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| ![Data spillage icon.](../media/ir-risk-data-spillage.png)| Data spillage | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Confidentiality violations icon.](../media/ir-risk-confidentiality-violations.png)| Confidentiality violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| ![IP theft icon.](../media/ir-risk-ip-theft.png)| IP theft | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
+| ![Workplace violence icon.](../media/ir-risk-workplace-violence.png)| Workplace violence | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Fraud/thief icon.](../media/ir-risk-fraud.png)| Fraud | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Policy violations icon.](../media/ir-risk-policy-violations.png)| Policy violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |
+| ![Insider trading/handshake icon.](../media/ir-risk-insider-trading.png)| Insider trading | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Conflicts of interest icon.](../media/ir-risk-conflicts-of-interest.png)| Conflicts of interest | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |  |
+| ![Sensitive data leaks/devices icon.](../media/ir-risk-sensitive-data-leaks.png)| Sensitive data leaks | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |  |
+| ![Workplace harassment/people icon.](../media/ir-risk-workplace-harassment.png)| Workplace harassment | ![Supported](../media/check-mark.png) |  |  |  |
+| ![Security violations icon.](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
+| ![Regulatory compliance violations icon.](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
 
 ## Microsoft 365 insider risk solutions
 
@@ -114,7 +114,7 @@ Privileged access management is available in the following subscriptions:
 
 To help protect your organization against insider risks, set up and deploy the following Microsoft 365 solutions:
 
-![Insider risk solution defense-in-depth](../media/ir-solution-defense-in-depth.png)
+![Insider risk solution defense-in-depth.](../media/ir-solution-defense-in-depth.png)
 
 1. Configure and create [communication compliance policies](communication-compliance-solution-overview.md).
 2. Configure and create [insider risk management policies](insider-risk-management-solution-overview.md).
@@ -127,7 +127,7 @@ To help you plan an integrated strategy for implementing Microsoft 365 insider r
 
 | Item | Description |
 |:-----|:------------|
-|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Updated October 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk management</li><li>Third-party data ingestion</li>|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Updated October 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk management</li><li>Third-party data ingestion</li>|
 
 ## Training
 

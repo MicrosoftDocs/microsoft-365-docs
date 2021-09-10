@@ -31,7 +31,7 @@ To export documents from a review set:
 
    The Export tool displays the flyout page with the settings to configure the export. Some options are selected by default, but you can change these. See the following section for descriptions of the export options that you can configure.
 
-   ![Configuration options for exporting items from a review set](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
+   ![Configuration options for exporting items from a review set.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
 3. After you configure the export, click **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 
@@ -71,6 +71,8 @@ Use the following options to configure the export. Not all options are allowed f
   - Text files: This option includes the extracted text versions of native files in the export.
   
   - Replace redacted natives with converted PDFs: If redacted PDF files are generated during review, these files are available for export. You can choose to export only the native files that were redacted (by not selecting this option) or you can select this option to export the PDF files that contain the actual redactions.
+
+  - Conversation PDFs instead of individual chat messages: Select this checkbox to export chat conversations in a PDF file. All chat messages from the same conversation are exported in the same PDF file. If you leave this checkbox unselected, each unique message in a chat conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files.
 
 The following sections describe the folder structure for loose files and condensed directory structure options. Exports are partitioned into ZIP files with a maximum size of uncompressed content of 75 GB. If the export size is less than 75 GB, the export will consist of a summary file and a single ZIP file. For exports larger than 75 GB of uncompressed data, multiple ZIP files will be created. Once downloaded, the ZIP files can be uncompressed into a single location to recreate the full export.
 

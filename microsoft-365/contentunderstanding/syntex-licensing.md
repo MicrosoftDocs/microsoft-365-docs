@@ -17,18 +17,19 @@ description: "Learn about licensing for SharePoint Syntex"
 
 # Licensing for SharePoint Syntex
 
-To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each Syntex user must have a license. If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No models, content or metadata will be deleted and site permissions will not be changed.
+To use SharePoint Syntex, your organization must have a subscription to SharePoint Syntex, and each Syntex user must have a license. If you cancel your SharePoint Syntex subscription at a future date (or your trial expires), users will no longer be able to create, publish, or run document understanding or form processing models. Additionally, term store reports, SKOS taxonomy import, and Content type push will no longer be available. No models, content, or metadata will be deleted and site permissions will not be changed.
  
 ## Tasks requiring a license
  
 The following tasks require a SharePoint Syntex license for the user performing them:
  
-- Uploading content to a document library that has an associated document understanding model
-- Manually running a document understanding model
-- Creating a form processing model via the entry point in a SharePoint library
-- Uploading content to a library where a form processing model has been applied
-- Viewing the metadata extracted from files using a document understanding or forms processing model
- 
+- Applying a document understanding model to a library. (Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.)
+- Creating a form processing model via the entry point in a library
+- Uploading content to a library where a document understanding or form processing model has been applied
+- Running a document understanding model on-demand
+- Viewing the metadata extracted from files using a document understanding or forms processing model. (Users must be licensed to access and use metadata associated with processed files, regardless of where the files are moved.)
+- Use premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
+
 Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.
  
 ## Cost of running models

@@ -19,7 +19,7 @@ ms.custom:
 - okr_SMB
 - commerce_licensing
 search.appverid: MET150
-ms.date: 03/17/2021
+ms.date: 08/27/2021
 ---
 # Manage licenses for devices
 

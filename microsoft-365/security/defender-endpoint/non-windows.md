@@ -62,7 +62,6 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 >The following capabilities are not currently supported on macOS endpoints:
 >- Data loss prevention
 >- Live response
->- SIEM
 
 
 ## Microsoft Defender for Endpoint on Linux

@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
@@ -20,13 +20,13 @@ ms.date: 06/15/2021
 
 # Common mistakes to avoid when defining exclusions
 
-You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions. 
+You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions.
 
 Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## Excluding certain trusted items
 
-Certain files, file types, folders, or processes should not be excluded from scanning even though you trust them to be not malicious. 
+Certain files, file types, folders, or processes should not be excluded from scanning even though you trust them to be not malicious.
 
 Do not define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
 - Folder locations
@@ -37,7 +37,7 @@ Do not define exclusions for the folder locations, file extensions, and processe
 
 In general, do not define exclusions for the following folder locations:
 
-`%systemdrive%` 
+`%systemdrive%`
 
 `C:`
 
@@ -47,13 +47,13 @@ In general, do not define exclusions for the following folder locations:
 
 `%ProgramFiles%\Java`
 
-`C:\Program Files\Java` 
+`C:\Program Files\Java`
 
-`%ProgramFiles%\Contoso\` 
+`%ProgramFiles%\Contoso\`
 
-`C:\Program Files\Contoso\` 
+`C:\Program Files\Contoso\`
 
-`%ProgramFiles(x86)%\Contoso\` 
+`%ProgramFiles(x86)%\Contoso\`
 
 `C:\Program Files (x86)\Contoso\`
 
@@ -67,7 +67,7 @@ In general, do not define exclusions for the following folder locations:
 
 `C:\Users\*`
 
-`C:\Users\<UserProfileName>\AppData\Local\Temp\` **Note the following exception for SharePoint**: Do exclude 
+`C:\Users\<UserProfileName>\AppData\Local\Temp\` **Note the following exception for SharePoint**: Do exclude
 `C:\Users\ServiceAccount\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
 
 `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\` **Note the following exception for SharePoint**: Do exclude `C:\Users\Default\AppData\Local\Temp` when you use [file-level antivirus protection in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9).
@@ -107,7 +107,7 @@ In general, do not define exclusions for the following file extensions:
 
 `.cmd`
 
-`.com` 
+`.com`
 
 `.cpl`
 
@@ -173,79 +173,79 @@ In general, do not define exclusions for the following file extensions:
 
 `.zip`
 
-### Processes 
+### Processes
 
 In general, do not define exclusions for the following processes:
 
-`AcroRd32.exe`  
+`AcroRd32.exe`
 
-`bitsadmin.exe`  
+`bitsadmin.exe`
 
-`excel.exe`  
+`excel.exe`
 
-`iexplore.exe`  
+`iexplore.exe`
 
-`java.exe`  
+`java.exe`
 
-`outlook.exe`  
+`outlook.exe`
 
-`psexec.exe`  
+`psexec.exe`
 
-`powerpnt.exe`  
+`powerpnt.exe`
 
-`powershell.exe`  
+`powershell.exe`
 
 `schtasks.exe`
 
-`svchost.exe` 
+`svchost.exe`
 
-`wmic.exe`  
+`wmic.exe`
 
-`winword.exe`  
+`winword.exe`
 
-`wuauclt.exe`  
+`wuauclt.exe`
 
-`addinprocess.exe`  
+`addinprocess.exe`
 
-`addinprocess32.exe`  
+`addinprocess32.exe`
 
-`addinutil.exe`  
+`addinutil.exe`
 
-`bash.exe`  
+`bash.exe`
 
-`bginfo.exe` 
+`bginfo.exe`
 
-`cdb.exe`  
+`cdb.exe`
 
-`csi.exe`  
+`csi.exe`
 
-`dbghost.exe`  
+`dbghost.exe`
 
-`dbgsvc.exe`  
+`dbgsvc.exe`
 
 `dnx.exe`
 
 `dotnet.exe`
 
-`fsi.exe`  
+`fsi.exe`
 
-`fsiAnyCpu.exe`  
+`fsiAnyCpu.exe`
 
-`kd.exe`  
+`kd.exe`
 
-`ntkd.exe`  
+`ntkd.exe`
 
-`lxssmanager.dll`  
+`lxssmanager.dll`
 
-`msbuild.exe` 
+`msbuild.exe`
 
-`mshta.exe`  
+`mshta.exe`
 
-`ntsd.exe`  
+`ntsd.exe`
 
-`rcsi.exe`  
+`rcsi.exe`
 
-`system.management.automation.dll`  
+`system.management.automation.dll`
 
 `windbg.exe`
 
@@ -265,4 +265,3 @@ Do not use a single exclusion list to define exclusions for multiple server work
 Microsoft Defender Antivirus Service runs in system context using the LocalSystem account, which means it gets information from the system environment variable, and not from the user environment variable. Use of environment variables as a wildcard in exclusion lists is limited to system variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account. Therefore, do not use user environment variables as wildcards when adding Microsoft Defender Antivirus folder and process exclusions. See the table under [System environment variables](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) for a complete list of system environment variables.
 
 See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
-

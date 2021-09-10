@@ -61,7 +61,7 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
 3. On the **Automate content understanding** page, click **Get started** to walk through the setup process. <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![Begin setup.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
@@ -71,14 +71,14 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    > [!div class="mx-imgBorder"]
-   > ![Configure form processing site options](../media/content-understanding/admin-configforms.png)
+   > ![Configure form processing site options.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library. 
     
     If you have multiple Power Platform environments configured, you can choose which one you want to use with for form processing. (This option will not appear if you only have one environment.)
 
-    ![Configure form processing Power Platform options](../media/content-understanding/setup-power-platform-env.png)
+    ![Configure form processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
@@ -93,7 +93,7 @@ For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing]
     1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
-       > ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![Create content center.](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Select **Next**.
 
@@ -118,7 +118,7 @@ To assign licenses:
 4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
-    > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![SharePoint Syntex licenses in the Microsoft 365 admin center.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Click **Save changes**.
 
