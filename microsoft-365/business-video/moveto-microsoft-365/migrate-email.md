@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to migrate email, contacts and calendar from Google Workspace to Microsoft 365 for business."
+description: "Learn how to migrate email, contacts, and calendar from Google Workspace to Microsoft 365 for business."
 ---
 
 # Migrate business email and calendar from Google Workspace
@@ -38,7 +38,7 @@ The migration process takes several steps and can take from several hours to a c
 
 1. Using a Chrome browser, sign into your Google Workspace admin console at [admin.google.com](https://admin.google.com). 
 1. In a new tab or window, navigate to the [Service Accounts](https://console.developers.google.com/iam-admin/serviceaccounts) page. 
-1. Select **Create project**, name the project and choose **Create**. 
+1. Select **Create project**, name the project, and choose **Create**. 
 1. Select **Create service account**, enter a name, choose **Create** and then **Done**. 
 1. Open the **Actions** menu, select **Edit**, and take note of the Unique ID. You’ll need this ID later in the process. 
 1. Open the **Show domain-wide delegation** section. 
@@ -64,7 +64,7 @@ The migration process takes several steps and can take from several hours to a c
 ### Grant access to the service account
 
 1. Return to the Google Workspace admin console. 
-1. Select **Security**, scroll down and open **API controls**. 
+1. Select **Security**, scroll down, and open **API controls**. 
 1. Scroll down and select **Manage Domain-wide Delegation**.
 1. Select **Add new** and enter the Client ID you made note of earlier.
 1. Then enter the OAuth scopes for Google APIs. These are available at [aka.ms/GoogleWorkspaceMigration](/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) in step 5 and are:
