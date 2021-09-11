@@ -55,9 +55,13 @@ Global administrators can revert this change for their tenant and show identifia
   
 ## Interpret the SharePoint site usage report
 
-You can view the site usage in the SharePoint report by choosing the **Site usage** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint site usage report.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
+You can view the site usage in the SharePoint report by choosing the **Site usage** tab.
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint site usage report - choose columns.](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
+![Microsoft 365 reports - Microsoft SharePoint site usage report.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
+
+Select **Choose columns** to add or remove columns from the report.
+
+![SharePoint site usage report - choose columns.](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   
