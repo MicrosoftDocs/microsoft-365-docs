@@ -26,7 +26,7 @@ description: "Get the SharePoint site usage report to know how many files users 
 
 # Microsoft 365 Reports in the admin center - SharePoint site usage
 
-As a Microsoft 365 admin, the **Reports** dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. For example, you can get a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites. 
+As a Microsoft 365 admin, the **Reports** dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. For example, you can get a high-level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites. 
   
 > [!NOTE]
 > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.
@@ -72,7 +72,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Site owner  |The username of the primary owner of the site.   |
 |Site owner principal name  |The email address of the owner of the site. |
 |Last activity date (UTC)  | The date of the last time file activity was detected or a page was viewed on the site.  |
-|Site sensitivity label id  | The sensitivity label on the site.  |
+|Site sensitivity label ID  | The sensitivity label on the site.  |
 |External sharing  | The external sharable settings on the site.  |
 |Unmanaged device policy  | The site access policy for unmanaged devices.  |
 |Geo location  | The Geo location of the site.  |
