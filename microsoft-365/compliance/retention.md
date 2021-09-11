@@ -281,11 +281,13 @@ When you create a retention policy or retention label policy, you must choose be
 
 - An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running a daily query against the attributes that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
     
-    Example: Emails for the Executive group require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the Azure AD attribute job title that corresponds to the Executive group. When new users join or leave this group, there's no need to reconfigure the retention policy because the adaptive scope automatically picks up changes in the group membership.
+    Example: Emails and OneDrive documents for the Executive group require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the Azure AD attribute job title that corresponds to the Executive group, and select the Exchange email and OneDrive accounts locations for the policy. There's no need to specify email addresses or OneDrive URLs for these users because the adaptive scope automatically retrieves these values. When new users join this group, there's no need to reconfigure the retention policy because these changes are automatically picked up for the retention policy.
 
 - A **static scope** doesn't use queries and is limited in configuration to either all instances for the selected location, including specific instances, or excluding specific instances. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
     
-    Example: Emails for the Executive group require a longer retention period than standard users. You create a retention policy with a static scope that includes the email address of the Executive group. The group membership is retrieved when the policy is created so when new users join or leave this group, you must reconfigure the retention policy to add or remove the users.
+    Example: Emails for the Executive group require a longer retention period than standard users. You create a retention policy with a static scope that selects the Exchange email and OneDrive accounts locations for the policy. For the Exchange email location, you include the email address of the Executive group. For the OneDrive accounts locations, you specify individual OneDrive URLs for each executive. For email, the group membership is retrieved when the policy is created so when new users join this group, you must reconfigure the retention policy to add the new email addresses. For OneDrive accounts, each time new users joins the Executives group, or their UPN changes, you must update the policy with the new or changed URLs.
+    
+    OneDrive URLs are particularly challenging to reliably specify as includes or excludes because by default, these URLs aren't created until the user accesses their OneDrive for the first time. And if a user's UPN changes, which you might not know about, their OneDrive URL automatically changes.
 
 Advantages of using adaptive scopes:
 
