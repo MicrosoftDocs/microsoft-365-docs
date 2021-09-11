@@ -45,7 +45,7 @@ The migration process takes several steps and can take from several hours to a c
 1. Select **Enable G Suite Domain-wide Delegation**, enter a product name for the consent screen, and choose **Save**. 
 
     > [!NOTE]
-> The product name is not used by the migration process, but is needed to save in the dialog.     
+    > The product name is not used by the migration process, but is needed to save in the dialog.     
 
 1. Open the **Actions** menu again and select **Create key**. 
 1. Choose **JSON**, then **Create**. 
