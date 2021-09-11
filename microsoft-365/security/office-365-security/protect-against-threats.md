@@ -168,11 +168,11 @@ For more information about the recommended settings for anti-spam, see [EOP anti
      - **Message actions** section:
        - **Spam**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
        - **High confidence spam**: Select **Quarantine message**.
-       - **Phishing**:  Select **Quarantine message**.
+       - **Phishing**: Select **Quarantine message**.
        - **High confidence phishing**: Verify **Quarantine messages** is selected.
        - **Bulk**: Verify **Move message to Junk Email folder** is selected (Standard) or select **Quarantine message** (Strict).
 
-      For each message action where you select **Quarantine message**, a **Select quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by mailbox intelligence protection.
+       For each action where you select **Quarantine message**, a **Select quarantine policy** box appears where you select the [quarantine policy](quarantine-policies.md) that applies to messages that are quarantined by anti-spam protection.
 
      - **Retain spam in quarantine for this many days**: Verify the value **30** days.
      - **Enable spam safety tips**: Verify this setting is selected (turned on).
@@ -319,10 +319,10 @@ To learn more about alert policies, see [Alert policies in the Microsoft 365 com
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
 >
->- [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
->- [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
->- [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+> - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+> - [Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
+> - [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
 
 ## Post-setup tasks and next steps
 

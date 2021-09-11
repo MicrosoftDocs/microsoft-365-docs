@@ -54,14 +54,15 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Impersonated domain protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
 |Mailbox intelligence protection in Defender for Office 365|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
 |**Anti-malware policies**||||
-|Malware in email messages.||||
+|Email messages with attachments that are quarantined as malware.||||
+|**Safe Attachments in Defender for Office 365**||||
+|Safe Attachments policies that quarantine email messages with malicious attachments as malware.||||
+|Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.|||||
 |**Mail flow rules (transport rules)**||||
 |Mail flow rules that quarantine email messages.||||
-|**Safe Attachments policies in Defender for Office 365**||||
-|Safe Attachments policies that quarantine email messages.||||
 |
 
-_Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined. Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+_Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
 
 You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -71,16 +72,14 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Original message recipients can *release* quarantined spam messages directly from these notifications. Original message recipients can *review* quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. By default, original message recipients can *release* quarantined spam messages directly from these notifications. By default, original message recipients can *review* quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - By default, messages that were quarantined for high confidence phishing, malware, or by mail flow rules are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
-
-- You can only release a message and report it as a false positive (not junk) once.
 
 ## View your quarantined messages
 
 > [!NOTE]
-> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the message type](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
+> Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 2. On the **Quarantine** page, you can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
@@ -169,7 +168,7 @@ To take action on the message, see the next section.
 ### Take action on quarantined email
 
 > [!NOTE]
-> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the message type](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
+> Your ability to take action on quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)). This section describes all available actions.
 
 After you select a quarantined message from the list, the following actions are available in the details flyout:
 

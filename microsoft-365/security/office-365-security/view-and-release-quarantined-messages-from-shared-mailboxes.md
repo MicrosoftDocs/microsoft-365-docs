@@ -42,7 +42,7 @@ Regardless of the method, users can avoid confusion by including the **Recipient
 
 ## Things to keep in mind
 
-- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on the quarantine reason. Default quarantine policies enforce the historical capabilities that allow recipients to view and act on messages. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined (for supported features). Default quarantine policies enforce the historical capabilities that allow recipients to view and act on messages. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
 
 - The first user to act on the quarantined message decides the fate of the message for everyone who uses the shared mailbox. For example, if a shared mailbox is accessed by 10 users, and a user decides to delete the quarantine message, the message is deleted for all 10 users. Likewise, if a user decides to release the message, it's released to the shared mailbox and is accessible by all other users of the shared mailbox.
 
