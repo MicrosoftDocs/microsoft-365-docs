@@ -6,6 +6,7 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -37,7 +38,7 @@ After you [set up SharePoint Syntex](set-up-content-understanding.md), you can c
 
 To turn image tagging on or off
 
-1. In the Microsoft 365 admin center, click **Setup**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
 2. Under **Organizational knowledge**, click **Automate content understanding**.
 

@@ -9,9 +9,11 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
-ms.custom: Adopt
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: 
+- Adopt
+- admindeeplinkMAC
 search.appverid:
 localization_priority: Normal
 description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
@@ -34,7 +36,7 @@ You can get the trial version from one of the following sources:
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-    2. Go to **Billing** > **Purchase Services**.
+    2. Go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase Services**</a>.
     3. Scroll down to the **Add-Ons** section.
     4. On the SharePoint Syntex tile, select **Details**.
     5. Select **Get free trial**.
