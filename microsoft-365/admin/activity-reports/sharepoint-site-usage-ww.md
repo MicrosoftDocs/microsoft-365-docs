@@ -68,24 +68,24 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
-|Site URL  <br/> |The full URL of the site. <br/> |
-|Deleted  <br/> |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  <br/> |
-|Site owner  <br/> |The username of the primary owner of the site.   <br/> |
-|Site owner principal name  <br/> |The email address of the owner of the site. <br/> |
-|Last activity date (UTC)  <br/> | The date of the last time file activity was detected or a page was viewed on the site.  <br/> |
-|Site sensitivity label id  <br/> | The sensitivity label on the site.  <br/> |
-|External sharing  <br/> | The external sharable settings on the site.  <br/> |
-|Unmanaged device policy  <br/> | The site access policy for unmanaged devices.  <br/> |
-|Geo location  <br/> | The Geo location of the site.  <br/> |
-|Files  <br/> |The number of files on the site. <br/>|
-|Active files  <br/> | The number of active files on the site.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  <br/> |
-|Storage used (MB)  <br/> |The amount of storage currently being used on the site.  <br/>|
-|Storage allocated (MB)  <br/> |The maximum amount of storage allocated for the site.  <br/>|
-|Page views  <br/> |The number of times pages were viewed on the site.  <br/>|
-|Pages visited  <br/> |The number of unique pages that were visited on the site.  <br/>|
-|Anonymous link count  <br/> |The number of times documents or folders are shared using "Anyone with the link" on the site.  <br/>|
-|Company link count  <br/> |The number of times documents or folders are shared using "People in org with the link" on the site.  <br/>|
-|Secure link for guest count  <br/> |The number of times documents or folders are shared using "specific people" on the site.  <br/>|
-|Secure link for member count  <br/> |The number of times documents or folders are shared using "specific people" on the site.  <br/>|
-|Root Web Template  <br/> |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
-|||
+|Site URL  |The full URL of the site. |
+|Deleted  |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  |
+|Site owner  |The username of the primary owner of the site.   |
+|Site owner principal name  |The email address of the owner of the site. |
+|Last activity date (UTC)  | The date of the last time file activity was detected or a page was viewed on the site.  |
+|Site sensitivity label id  | The sensitivity label on the site.  |
+|External sharing  | The external sharable settings on the site.  |
+|Unmanaged device policy  | The site access policy for unmanaged devices.  |
+|Geo location  | The Geo location of the site.  |
+|Files  |The number of files on the site. |
+|Active files  | The number of active files on the site.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files on the site.  |
+|Storage used (MB)  |The amount of storage currently being used on the site.  |
+|Storage allocated (MB)  |The maximum amount of storage allocated for the site.  |
+|Page views  |The number of times pages were viewed on the site.  |
+|Pages visited  |The number of unique pages that were visited on the site.  |
+|Anonymous link count  |The number of times documents or folders are shared using "Anyone with the link" on the site.  |
+|Company link count  |The number of times documents or folders are shared using "People in org with the link" on the site.  |
+|Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
+|Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
+|Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+
