@@ -54,6 +54,8 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
+The attributes for users are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
+
 A single policy for retention can have one or many adaptive scopes.
 
 #### To configure an adaptive scope
@@ -83,13 +85,15 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     Select **Add attribute** to use any combination of attributes that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes.
     
-    Alternatively, you can select **Advanced query builder** to write your own queries:
+    Alternatively, you can select **Advanced query builder** to specify your own queries:
     
     - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
     
         ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
+    
+    You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
 
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
@@ -106,6 +110,32 @@ To confirm the current membership and membership changes for an adaptive scope:
 
 > [!TIP]
 > Use the [policy lookup](retention.md#policy-lookup) option to help you identify the policies that are currently assigned to specific users, sites, and Microsoft 365 groups.
+
+#### Validating advanced queries
+
+You can manually validate advanced queries by using PowerShell (for users and groups queries) and SharePoint search (for SharePoint sites and OneDrive accounts).
+
+To run a query for users and groups:
+
+1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
+2. Specify your OPATH query using [Get-Recipient](/powershell/module/exchange/get-recipient) (for users) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) (for groups) with the *-Filter* parameter, and then the OPATH query specified for the adaptive scope. If you copied the query from the simple query builder, enclose it in double quotes.
+    
+    For example:
+    
+    ````PowerShell
+    Get-Recipient -Filter "Department -eq Sales" -ResultSize unlimited
+    ````
+
+3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the Azure AD or Exchange administrator.
+ 
+To run a query for SharePoint or OneDrive sites:
+
+1. Using a global admin account or an account that has the SharePoint admin role, go to the [SharePoint admin center](https://admin.microsoft.com/sharepoint?page=home&modern=true).
+
+2. Specify your KQL query by using the search bar at the top.
+
+3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the SharePoint administrator.
 
 ### Configuration information for static scopes
 
@@ -156,7 +186,7 @@ For detailed information about what's included and excluded when you configure r
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist on the final page of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the retention policy can't be created until the validation check passes. If you see this message, go back in the configuration process to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts to include or exclude, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
 For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
@@ -165,11 +195,11 @@ Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `h
 However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 > [!NOTE]
-> When you specify individual OneDrive accounts to include or exclude, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
+> When you specify individual OneDrive accounts, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
 > 
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify here.
 > 
-> Because of the challenges of reliably specifying URLs for individual users to include or exclude, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) are better suited for this purpose.
+> Because of the challenges of reliably specifying URLs for individual users to include or exclude, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) that have the scope type of user are better suited for this purpose.
 
 ### Configuration information for Microsoft 365 Groups
 
