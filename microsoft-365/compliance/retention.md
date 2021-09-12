@@ -303,7 +303,7 @@ Advantages of using static scopes:
 
 - Simpler configuration if you want all instances automatically selected for a workload.
     
-    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your includes and excludes, adaptive policies can be simpler to configure and much easier to maintain.
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
 
 - The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope. 
 
