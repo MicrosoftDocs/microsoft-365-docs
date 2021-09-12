@@ -508,7 +508,7 @@
         - name: Create retention policies
           href: create-retention-policies.md
         - name: Use retention labels for exceptions
-          href: create-retention-policies.md
+          href: create-retention-labels-information-governance.md
         - name: Archive mailbox data
           items: 
             - name: Enable archive mailboxes

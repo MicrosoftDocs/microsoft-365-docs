@@ -50,9 +50,15 @@ Make sure you have [created the retention labels](file-plan-manager.md#create-re
 
 Publish retention labels so that they can be applied by users in apps, such as SharePoint and Outlook.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    Don't immediately see **Records management**? First select **Show all**. 
+    - If you are using records management:
+        - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
+    
+    - If you are using information governance:
+        - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
+    
+    Don't immediately see your option? First select **Show all**. 
 
 2. Follow the prompts to create the retention label policy. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
     
