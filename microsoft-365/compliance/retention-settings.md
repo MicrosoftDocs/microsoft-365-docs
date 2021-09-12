@@ -119,7 +119,7 @@ To run a query for users and groups:
 
 1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Specify your OPATH query using [Get-Recipient](/powershell/module/exchange/get-recipient) (for users) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) (for groups) with the *-Filter* parameter, and then the OPATH query specified for the adaptive scope. If you copied the query from the simple query builder, enclose it in double quotes.
+2. Specify your OPATH query using [Get-Recipient](/powershell/module/exchange/get-recipient) (for users) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) (for groups) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes.
     
     For example:
     
@@ -127,7 +127,7 @@ To run a query for users and groups:
     Get-Recipient -Filter "Department -eq Sales" -ResultSize unlimited
     ````
 
-3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the Azure AD or Exchange administrator.
+3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
 To run a query for SharePoint or OneDrive sites:
 
@@ -135,7 +135,7 @@ To run a query for SharePoint or OneDrive sites:
 
 2. Specify your KQL query by using the search bar at the top.
 
-3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the SharePoint administrator.
+3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the administrator for SharePoint.
 
 ### Configuration information for static scopes
 
