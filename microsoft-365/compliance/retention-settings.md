@@ -50,7 +50,7 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 
 | Adaptive scope type | Attributes or properties supported |
 |:-----|:-----|
-|**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
+|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
@@ -167,7 +167,7 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Locations
 
-Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange mail and SharePoint sites.
+Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites.
 
 ### Configuration information for Exchange email and Exchange public folders
 
