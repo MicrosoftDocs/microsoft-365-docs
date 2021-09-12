@@ -54,7 +54,7 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
-The property names for sites are based on SharePoint managed properties, and the attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
+The property names for sites are based on SharePoint site managed properties, and the attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
