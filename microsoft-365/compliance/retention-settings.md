@@ -44,17 +44,17 @@ Use the following information to help you configure the type of scope that you c
 ### Configuration information for adaptive scopes
 
 > [!NOTE]
-> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced.
+> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced and can be used if adaptive scopes don't meet your business requirements.
 
-When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes:
+When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
-| Adaptive scope type | Attributes supported |
+The attributes for users and groups are from [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties), and the attributes for sites are from SharePoint managed properties.
+
+| Adaptive scope type | Attributes or properties supported |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
-
-The attributes for users are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties).
 
 A single policy for retention can have one or many adaptive scopes.
 
@@ -72,7 +72,7 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
-2. Follow the prompts in the configuration to first select the type of scope, and then select the attributes you want to use to build the dynamic membership, and type in the attribute values.
+2. Follow the prompts in the configuration to first select the type of scope, and then select the attributes or properties you want to use to build the dynamic membership, and type in the attribute or property values.
     
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
     
@@ -83,7 +83,7 @@ Before you configure your adaptive scope, use the previous section to identify w
     > [!IMPORTANT]
     > Because the query doesn't run immediately, there's no validation that you typed in the value correctly.
     
-    Select **Add attribute** to use any combination of attributes that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes.
+    Select **Add attribute** (for users and groups) or **Add property** (for sites) to use any combination of attributes or properties that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes or properties.
     
     Alternatively, you can select **Advanced query builder** to specify your own queries:
     
@@ -91,7 +91,7 @@ Before you configure your adaptive scope, use the previous section to identify w
     
         ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
     
-    - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with creating these queries because you've used them to [specify keywords or searchable properties to auto-apply retention labels](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties). If not, review the guidance and examples provided for that configuration.
+    - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
 
