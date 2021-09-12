@@ -48,13 +48,13 @@ Use the following information to help you configure the type of scope that you c
 
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
-The attributes for users and groups are from [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties), and the attributes for sites are from SharePoint managed properties.
-
 | Adaptive scope type | Attributes or properties supported |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange mail <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
 |**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+
+The attributes for users and groups are from [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties), and the properties for sites are from SharePoint managed properties.
 
 A single policy for retention can have one or many adaptive scopes.
 
