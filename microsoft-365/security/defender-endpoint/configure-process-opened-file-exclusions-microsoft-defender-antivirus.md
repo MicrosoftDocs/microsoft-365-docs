@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
@@ -26,16 +26,20 @@ manager: dansimp
 
 You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
-This article describes how to configure exclusion lists. 
+This article describes how to configure exclusion lists.
 
 ## Examples of exclusions
 
-|Exclusion | Example |
-|---|---|
-|Any file on the machine that is opened by any process with a specific file name | Specifying `test.exe` would exclude files opened by: <br/>`c:\sample\test.exe`<br/>`d:\internal\files\test.exe` |  
-|Any file on the machine that is opened by any process under a specific folder | Specifying `c:\test\sample\*` would exclude files opened by:<br/>`c:\test\sample\test.exe`<br/>`c:\test\sample\test2.exe`<br/>`c:\test\sample\utility.exe` | 
-|Any file on the machine that is opened by a specific process in a specific folder | Specifying `c:\test\process.exe` would exclude files only opened by `c:\test\process.exe` |
+<br>
 
+****
+
+|Exclusion|Example|
+|---|---|
+|Any file on the machine that is opened by any process with a specific file name|Specifying `test.exe` would exclude files opened by: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
+|Any file on the machine that is opened by any process under a specific folder|Specifying `c:\test\sample\*` would exclude files opened by: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
+|Any file on the machine that is opened by a specific process in a specific folder|Specifying `c:\test\process.exe` would exclude files only opened by `c:\test\process.exe`|
+|
 
 When you add a process to the process exclusion list, Microsoft Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -67,13 +71,12 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus > Exclusions**.
+3. Expand the tree to **Windows components \> Microsoft Defender Antivirus \> Exclusions**.
 
 4. Double-click **Process Exclusions** and add the exclusions:
-
     1. Set the option to **Enabled**.
     2. Under the **Options** section, click **Show...**.
-    3. Enter each process on its own line under the **Value name** column. See the example table for the different types of process exclusions.  Enter **0** in the **Value** column for all processes.
+    3. Enter each process on its own line under the **Value name** column. See the example table for the different types of process exclusions. Enter **0** in the **Value** column for all processes.
 
 5. Click **OK**.
 
@@ -87,16 +90,21 @@ The format for the cmdlets is:
 <cmdlet> -ExclusionProcess "<item>"
 ```
 
-The following are allowed as the \<cmdlet>:
+The following are allowed as the \<cmdlet\>:
 
-|Configuration action | PowerShell cmdlet |
+<br>
+
+****
+
+|Configuration action|PowerShell cmdlet|
 |---|---|
-|Create or overwrite the list | `Set-MpPreference` |
-|Add to the list | `Add-MpPreference` |
-|Remove items from the list | `Remove-MpPreference` |
+|Create or overwrite the list|`Set-MpPreference`|
+|Add to the list|`Add-MpPreference`|
+|Remove items from the list|`Remove-MpPreference`|
+|
 
->[!IMPORTANT]
->If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
+> [!IMPORTANT]
+> If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
 
 For example, the following code snippet would cause Microsoft Defender AV scans to exclude any file that is opened by the specified process:
 
@@ -130,10 +138,15 @@ In particular, you cannot use the question mark (`?`) wildcard, and the asterisk
 
 The following table describes how the wildcards can be used in the process exclusion list:
 
-|Wildcard | Example use | Example matches |
-|:---|:---|:---|
-|`*` (asterisk) <br/><br/> Replaces any number of characters | `C:\MyData\*` | Any file opened by `C:\MyData\file.exe` |
-|Environment variables <br/><br/> The defined variable is populated as a path when the exclusion is evaluated | `%ALLUSERSPROFILE%\CustomLogFiles\file.exe` | Any file opened by `C:\ProgramData\CustomLogFiles\file.exe` |
+<br>
+
+****
+
+|Wildcard|Example use|Example matches|
+|---|---|---|
+|`*` (asterisk) <p> Replaces any number of characters|`C:\MyData\*`|Any file opened by `C:\MyData\file.exe`|
+|Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Any file opened by `C:\ProgramData\CustomLogFiles\file.exe`|
+|
 
 ## Review the list of exclusions
 
@@ -154,7 +167,6 @@ MpCmdRun.exe -CheckExclusion -path <path>
 
 > [!NOTE]
 > Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
-
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 

@@ -195,6 +195,9 @@
           href: microsoft-365-service-health.md
         - name: Exchange Online monitoring
           href: microsoft-365-exchange-monitoring.md
+          items:
+            - name: Mailbox utilization service alerts
+              href: microsoft-365-mailbox-utilization-service-alerts.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants

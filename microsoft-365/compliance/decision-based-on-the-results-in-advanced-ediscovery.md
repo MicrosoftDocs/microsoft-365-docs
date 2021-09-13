@@ -25,7 +25,7 @@ In the Relevance module in Advanced eDiscovery, the Decide tab provides addition
   
 ## Using the Decide tab
 
-![Relevance Decide](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
+![Relevance Decide.](../media/f32fed89-f3b5-404a-90c7-ea25d2eb58a9.png)
   
 This tab includes the following components:
   

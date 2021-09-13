@@ -69,14 +69,20 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/rhel/`.
 
-    Use the following table to help guide you in locating the package: 
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-    |     Distro & version    |     Package    |
+    Use the following table to help guide you in locating the package:
+
+    <br>
+
+    ****
+
+    |Distro & version|Package|
     |---|---|
-    |     For RHEL 8.0-8.5    |     https://packages.microsoft.com/rhel/8/prod/    |
-    |     For RHEL 7.2-7.9    |     https://packages.microsoft.com/rhel/7/prod/    |
+    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
@@ -84,19 +90,19 @@ In order to preview new features and provide early feedback, it is recommended t
     > In case of Oracle Linux, replace *[distro]* with "rhel".
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
     ```
 
     For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
     Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/rhel/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -113,18 +119,18 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/sles/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/sles/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/[distro]/[version]/[channel].repo
+    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
     For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/sles/12/prod.repo
+    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -147,18 +153,18 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/[distro]/`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/[distro]/[version]/[channel].list
+    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
     For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    curl -o microsoft.list https://packages.microsoft.com/ubuntu/18.04/prod.list
+    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
     ```
 
 - Install the repository configuration:
@@ -264,8 +270,8 @@ In order to preview new features and provide early feedback, it is recommended t
     ```
 
     ```Output
-    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
+    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
     ```
 
     ```bash
@@ -280,7 +286,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
@@ -341,7 +347,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
     > mdatp health --field definitions_status
     > ```
     >
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 

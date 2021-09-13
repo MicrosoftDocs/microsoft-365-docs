@@ -26,7 +26,7 @@ description: "Overview of how to share your business files."
 
 You need to share files with clients, customers, partners, suppliers, and other people in your business. How do you share files so that everyone can find, open, and edit them?
 
-|![Securely share](../media/securely-share-file.png)<br/>[Share a file with someone outside of your company](#share-a-file-with-someone-outside-of-your-company)|![Collaborate with a client](../media/share-and-collab-with-partner.png) <br/>[Share and collaborate with a client or business partner](#share-and-collaborate-with-a-client-or-business-partner) | ![Share inside your org](../media/share-inside-your-org.png) <br/>[Share inside your business](#share-inside-your-business) |
+|![Securely share.](../media/securely-share-file.png)<br/>[Share a file with someone outside of your company](#share-a-file-with-someone-outside-of-your-company)|![Collaborate with a client](../media/share-and-collab-with-partner.png) <br/>[Share and collaborate with a client or business partner](#share-and-collaborate-with-a-client-or-business-partner) | ![Share inside your org](../media/share-inside-your-org.png) <br/>[Share inside your business](#share-inside-your-business) |
 |--|--|--|
 
 Download an infographic to get a quick overview of ways to share your business files. 

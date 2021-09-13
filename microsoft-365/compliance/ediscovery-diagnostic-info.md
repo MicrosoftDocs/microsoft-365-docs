@@ -72,13 +72,13 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Show all > eDiscovery > Advanced**.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **eDiscovery > Advanced**.
 
 2. Select a case and then click the **Settings** tab.
 
 3. Under **Case Information**, click **Select**.
 
-4. On the flyout page, click **Copy diagnostic information** to copy the info to the clipboard.
+4. On the flyout page, click **Actions** > **Copy support information** to copy the information to the clipboard.
 
 5. Open a text file (in Notepad) and then paste the information in the text file.
 

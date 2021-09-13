@@ -44,7 +44,7 @@ Admin contacts are required when you [submit a Support request](../service-descr
 
 4. Select an **Area of focus** and enter the info for the contact. 
 
-    ![the list of areas of focus, such as Other, Apps, and Security](../../media/areaoffocus.png)
+    ![the list of areas of focus, such as Other, Apps, and Security.](../../media/areaoffocus.png)
 
 5. Repeat for each area of focus.
 

@@ -1,6 +1,6 @@
 ---
 title: Enable the evaluation environment for Microsoft Defender for Office 365 in your production environment
-description: Steps to activate Microsoft Defender for Office365 evaluation, with trial licenses, MX record handling, & auditing of accepted domains and inbound connections.
+description: Steps to activate Microsoft Defender for Office 365 evaluation, with trial licenses, MX record handling, & auditing of accepted domains and inbound connections.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,7 +32,7 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
 - [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)

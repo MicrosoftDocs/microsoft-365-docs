@@ -45,7 +45,7 @@ This article applies to Microsoft 365 Business Premium.
     
     You can always use the **Reset default settings** link to return to the default setting. 
     
-    ![Screenshot of Create a policy with Application management for Android selected](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
+    ![Screenshot of Create a policy with Application management for Android selected.](../../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
 6. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups that get these settings \> **Select**.
     

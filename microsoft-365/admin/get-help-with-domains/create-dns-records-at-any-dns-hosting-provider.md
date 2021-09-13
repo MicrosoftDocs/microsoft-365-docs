@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 ---
 
 # Add DNS records to connect your domain

@@ -30,7 +30,7 @@ The Content search tool in the Microsoft 365 compliance center doesn't provide a
 
 ## Before you run a targeted collection
 
-- You have to be a member of the eDiscovery Manager role group in Security & Compliance Center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 - You also have to be assigned the Mail Recipients role in your Exchange Online organization. This is required to run the **Get-MailboxFolderStatistics** cmdlet, which is included in the script. By default, the Mail Recipients role is assigned to the Organization Management and Recipient Management role groups in Exchange Online. For more information about assigning permissions in Exchange Online, see [Manage role group members](/exchange/manage-role-group-members-exchange-2013-help). You could also create a custom role group, assign the Mail Recipients role to it, and then add the members who need to run the script in Step 1. For more information, see [Manage role groups](/Exchange/permissions-exo/role-groups).
 
@@ -70,7 +70,7 @@ To display a list of mailbox folders or site documentlink (path) names:
    #########################################################################################################
    # This PowerShell script will prompt you for:                                #
    #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   #      Online and who is an eDiscovery Manager in the Microsoft 365 compliance center.            #
    # The script will then:                                            #
    #    * If an email address is supplied: list the folders for the target mailbox.            #
    #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -87,7 +87,7 @@ To display a list of mailbox folders or site documentlink (path) names:
    #########################################################################################################
    # Collect the target email address or SharePoint Url
    $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   # Authenticate with Exchange Online and the Microsoft 365 compliance center (Exchange Online Protection - EOP)
    if ($addressOrSite.IndexOf("@") -ige 0)
    {
       # List the folder Ids for the target mailbox
@@ -197,7 +197,7 @@ If you're getting mailbox folder IDs, the script connects to Exchange Online Pow
 
 Here's an example of the output returned by the script for mailbox folders.
 
-![Example of the  list of mailbox folders and folder IDs returned by the script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Example of the  list of mailbox folders and folder IDs returned by the script.](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
 
 The example in Step 2 shows the query used to search the Purges subfolder in the user's Recoverable Items folder.
 
@@ -207,7 +207,7 @@ If you're getting the path of the **documentlink** property from SharePoint or O
 
 Here's an example of the output returned by the script for site folders.
 
-![Example of the list of documentlink names for site folders returned by the script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Example of the list of documentlink names for site folders returned by the script.](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
 
 ## Step 2: Use a folder ID or documentlink to perform a targeted collection
 
@@ -221,7 +221,7 @@ After you've run the script to collect a list of folder IDs or document links fo
 
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
 
-    ![Paste the folderid or documentlink in to the keyword box of the search query](../media/FolderIDSearchQuery.png)
+    ![Paste the folderid or documentlink in to the keyword box of the search query.](../media/FolderIDSearchQuery.png)
     > [!IMPORTANT]
     > documentlink searches require the use of a trailing  `asterisk '/*'`.  
 

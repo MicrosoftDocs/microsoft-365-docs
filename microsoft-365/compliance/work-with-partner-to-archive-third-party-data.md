@@ -41,7 +41,7 @@ Here's an overview of the process and the steps necessary to work with a Microso
 
 The following illustration and description explain how the third-party data import process works when working with a partner.
 
-![How the third-party data import process works](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
+![How the third-party data import process works.](../media/5d4cf8e9-b4cc-4547-90c8-d12d04a9f0e7.png)
 
 1. Customer works with their partner of choice to configure a connector that will extract items from the third-party data source and then import those items to Microsoft 365.
 
@@ -537,7 +537,7 @@ Here are the steps to access and accept the request to register the connector:
 
    The following dialog box is displayed. You can expand the carets to review the permissions that will be assigned to the connector.
 
-   ![The permissions request dialog is displayed](../media/O365-ThirdPartyDataConnector-OptIn1.png)
+   ![The permissions request dialog is displayed.](../media/O365-ThirdPartyDataConnector-OptIn1.png)
 
 2. Click **Accept**.
 

@@ -33,7 +33,7 @@ Alert policies let you categorize the alerts that are triggered by a policy, app
 
 Here's a quick overview of how alert policies work and the alerts that are triggers when user or admin activity matches the conditions of an alert policy.
 
-![Overview of how alert policies work](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
+![Overview of how alert policies work.](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
 1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the Microsoft 365 compliance center or the Microsoft 365 Defender portal. You can also create alert policies by using the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) cmdlet in Security & Compliance Center PowerShell.
 
@@ -58,13 +58,13 @@ To view and create alert policies:
 
 Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternatively, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
 
-![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies](../media/LaunchAlertPoliciesMCC.png)
+![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies.](../media/LaunchAlertPoliciesMCC.png)
 
 ### Microsoft 365 Defender portal
 
 Go to <https://security.microsoft.com> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
 
-![In the Defender portal, select Policies & rules under Email & collaboration, and then select Alert policy to view and create alert policies](../media/LaunchAlertPoliciesDefenderPortal.png)
+![In the Defender portal, select Policies & rules under Email & collaboration, and then select Alert policy to view and create alert policies.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
 > [!NOTE]
 > You have to be assigned the View-Only Manage Alerts role to view alert policies in the compliance center or Defender portal. You have to be assigned the Manage Alerts role to create and edit alert policies. For more information, see [Permissions in the security and compliance center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
@@ -82,7 +82,7 @@ You can also define user tags as a condition of an alert policy. This results in
 
 - **When the alert is triggered**. You can configure a setting that defines how often an activity can occur before an alert is triggered. This allows you to set up a policy to generate an alert every time an activity matches the policy conditions, when a certain threshold is exceeded, or when the occurrence of the activity the alert is tracking becomes unusual for your organization.
 
-    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization](../media/howalertsaretriggered.png)
+    ![Configure how alerts are triggered, based on when the activity occurs, a threshold, or unusual activity for your organization.](../media/howalertsaretriggered.png)
 
     If you select the setting based on unusual activity, Microsoft establishes a baseline value that defines the normal frequency for the selected activity. It takes up to seven days to establish this baseline, during which alerts won't be generated. After the baseline is established, an alert is triggered when the frequency of the activity tracked by the alert policy greatly exceeds the baseline value. For auditing-related activities (such as file and folder activities), you can establish a baseline based on a single user or based on all users in your organization; for malware-related activities, you can establish a baseline based on a single malware family, a single recipient, or all messages in your organization.
 
@@ -172,13 +172,13 @@ To view alerts:
 
  Go to <https://compliance.microsoft.com> and then select **Alerts**. Alternatively, you can go directly to <https://compliance.microsoft.com/compliancealerts>.
 
-![In the Microsoft 365 compliance center, select Alerts](../media/ViewAlertsMCC.png)
+![In the Microsoft 365 compliance center, select Alerts.](../media/ViewAlertsMCC.png)
 
 ### Microsoft 365 Defender portal
 
 Go to <https://security.microsoft.com> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
 
-![In the Microsoft 365 Defender portal, select Incidents & alerts and then select Alerts](../media/ViewAlertsDefenderPortal.png)
+![In the Microsoft 365 Defender portal, select Incidents & alerts and then select Alerts.](../media/ViewAlertsDefenderPortal.png)
 
 You can use the following filters to view a subset of all the alerts on the **Alerts** page.
 
@@ -219,7 +219,7 @@ When events that match the same alert policy occur within the aggregation interv
 
 The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
 
-![Example of alert aggregation](../media/AggregatedAlertExample.png)
+![Example of alert aggregation.](../media/AggregatedAlertExample.png)
 
 Keep the following things in mind about alert aggregation:
 
@@ -247,29 +247,29 @@ To see which category a default alert policy is assigned to, see the table in [D
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Audit Logs|||||||
 |Case Management|||||||
-|Compliance Administrator|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|
+|Compliance Administrator|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||![Check mark.](../media/checkmark.png)||![Check mark.](../media/checkmark.png)|
 |Compliance Search|||||||
 |Device Management|||||||
 |Disposition Management|||||||
-|DLP Compliance Management||![Check mark](../media/checkmark.png)|||||
+|DLP Compliance Management||![Check mark.](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
-|Manage Alerts||||||![Check mark](../media/checkmark.png)|
-|Organization Configuration||||||![Check mark](../media/checkmark.png)|
+|Manage Alerts||||||![Check mark.](../media/checkmark.png)|
+|Organization Configuration||||||![Check mark.](../media/checkmark.png)|
 |Preview|||||||
-|Record Management|![Check mark](../media/checkmark.png)||||||
-|Retention Management|![Check mark](../media/checkmark.png)||||||
+|Record Management|![Check mark.](../media/checkmark.png)||||||
+|Retention Management|![Check mark.](../media/checkmark.png)||||||
 |Review|||||||
 |RMS Decrypt|||||||
-|Role Management||||![Check mark](../media/checkmark.png)|||
+|Role Management||||![Check mark.](../media/checkmark.png)|||
 |Search And Purge|||||||
-|Security Administrator||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
-|Security Reader||![Check mark](../media/checkmark.png)||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)
+|Security Administrator||![Check mark.](../media/checkmark.png)||![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|
+|Security Reader||![Check mark.](../media/checkmark.png)||![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)
 |Service Assurance View|||||||
 |Supervisory Review Administrator|||||||
 |View-Only Audit Logs|||||||
 |View-Only Device Management|||||||
-|View-Only DLP Compliance Management||![Check mark](../media/checkmark.png)|||||
+|View-Only DLP Compliance Management||![Check mark.](../media/checkmark.png)|||||
 |View-Only Manage Alerts||||||![Check mark](../media/checkmark.png)|
 |View-Only Recipients|||![Check mark](../media/checkmark.png)||||
 |View-Only Record Management|![Check mark](../media/checkmark.png)||||||
@@ -323,11 +323,11 @@ Organizations that have Microsoft Cloud App Security as part of an Enterprise Mo
 
 To display only Cloud App Security alerts in the compliance center or the Defender portal, use the **Source** filter and select **Cloud App Security**.
 
-![Use the Source filter to display only Cloud App Security alerts](../media/FilterCASAlerts.png)
+![Use the Source filter to display only Cloud App Security alerts.](../media/FilterCASAlerts.png)
 
 Similar to an alert triggered by an alert policy in the compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](/cloud-app-security/monitor-alerts).
 
-![Alert details contain links to the Cloud App Security portal](../media/CASAlertDetail.png)
+![Alert details contain links to the Cloud App Security portal.](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
 > Changing the status of a Cloud App Security alert in the compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.

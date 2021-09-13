@@ -24,7 +24,7 @@ After BlackBerry data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a data connector to archive BlackBerry data in Microsoft 365.
 
-![Archiving workflow for BlackBerry data from 17a-4](../media/BlackBerryDataParserConnectorWorkflow.png)
+![Archiving workflow for BlackBerry data from 17a-4.](../media/BlackBerryDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the BlackBerry DataParser.
 
