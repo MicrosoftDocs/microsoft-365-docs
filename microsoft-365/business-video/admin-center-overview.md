@@ -15,6 +15,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -28,13 +29,13 @@ description: "Use either simplified view in Microsoft 365 to manage common tasks
 - [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
 - [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
 
-The Microsoft 365 admin center has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
 ## Watch: The admin center in simplified view
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
-With the Microsoft 365 admin center, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
+With the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
 Sign in to Office.com with your work account, and select the app launcher.
 
@@ -56,7 +57,7 @@ If you need assistance, select **Help & support**. Search for topic you want hel
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
-The Microsoft 365 admin center is where you manage your business in the cloud. You can complete such tasks as adding and removing users, changing licenses, and resetting passwords.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is where you manage your business in the cloud. You can complete such tasks as adding and removing users, changing licenses, and resetting passwords.
 
 Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in this article.
 
@@ -85,7 +86,6 @@ By default, the person who signs up for and buys an Microsoft 365 for business s
 If you get the message "**You don't have permission to access this page or perform this action**," you aren't an admin.
 
 ### Who has admin permissions in my business?
-<a name="bkmk_admin"> </a>
 
 When looking for your admin to reset your password, delete an account, or do other tasks, here's who you should contact:
 
@@ -102,7 +102,7 @@ If you have no idea who to contact at your work or school for help, try asking t
 
 ## Turn on Targeted release
 
-1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** \> **Organization profile**.
+1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
 
 2. Go to the **Release preferences** card, and then select **Edit**.
 
@@ -134,7 +134,7 @@ You can also give feedback from outside of the admin center on our UserVoice for
 
 ### What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?
 
-The Microsoft 365 admin center is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Azure Active Directory. You can find the specialist workspaces from the navigation pane in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> is the common entry point for all teams and roles managing Microsoft 365. The experience, information, and controls are tailored and customizable for each admin and role. Additionally, specialist workspaces allow for deep, granular control. These specialist workspaces include SharePoint, Teams &amp; Skype, Exchange, Security, Compliance, Device Management, and Azure Active Directory. You can find the specialist workspaces from the navigation pane in the Microsoft 365 admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339).
 
 ### What language options are available the Admin Center?
 
