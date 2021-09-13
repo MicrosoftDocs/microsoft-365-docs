@@ -33,7 +33,7 @@ You can easily update the payment method for your Microsoft 365 Business subscri
 
 ## Before you begin
 
-You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Try it!
 
