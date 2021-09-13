@@ -44,9 +44,9 @@ The global admin for your organization has full permissions to create and edit r
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     
-    Don't immediately see the Information governance solution? First select **Show all**. 
+    Don't immediately see the **Information governance** solution? First select **Show all**. 
 
-2. Follow the prompts to create the retention label. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
+2. Follow the prompts to create the retention label. Be careful what name you choose, because this can't be changed after the label is saved.
     
     For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
 
