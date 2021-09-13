@@ -1,10 +1,10 @@
-- name: Microsoft Defender for business
+- name: Microsoft Defender for Business
   expanded: true
   items:
   - name: Overview
     expanded: true
     items:
-    - name: What is Defender for business?
+    - name: What is Defender for Business?
       href: mdb-overview.md
     - name: Compare plans for small and midsized businesses
       href: compare-mdb-m365bp.md
@@ -14,19 +14,19 @@
     items:
     - name: Review the requirements
       href: mdb-requirements.md
-    - name: Get Microsoft Defender for business
+    - name: Get Microsoft Defender for Business
       href: get-defender-business.md
     - name: Assign roles and permissions
       href: mdb-roles-permissions.md
-    - name: Choose where to manage Defender for business
+    - name: Choose where to manage Defender for Business
       href: mdb-choose-portal.md
     - name: Onboard devices 
       href: mdb-onboard-devices.md
     - name: View or edit device policies
       href: mdb-view-edit-device-policies.md
-    - name: Understand configuration settings
+    - name: Understand your configuration settings
       href: mdb-configuration-settings.md
-  - name: Get started
+  - name: Get started using Defender for Business
     href: mdb-get-started.md
     expanded: true
     items: 
