@@ -27,9 +27,9 @@ As part of your governance information strategy to retain what you need and dele
 
 Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), retention labels apply to individual items, such as a SharePoint document or an email message.
 
-Because of the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), you can use retention labels to supplement a retention policy for specific SharePoint, OneDrive, or Exchange items that need to be retained longer, or deleted sooner than the specified settings in the retention policy.
+Because of the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), you can use retention labels to supplement a retention policy for specific SharePoint, OneDrive, or Exchange items that need to be retained longer, or deleted sooner than the specified settings in a retention policy for the same location.
 
-For more information about the differences between retention policies and retention labels, see [Compare capabilities for retention policies and retention labels](retention.md#compare-capabilities-for-retention-policies-and-retention-label).
+Retention labels also support more capabilities than you can configure with retention policies. For more information, see [Compare capabilities for retention policies and retention labels](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 
 Use the following information to help you create retention labels to supplement retention policies as part of your information governance strategy.
 
