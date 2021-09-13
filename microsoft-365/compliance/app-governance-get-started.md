@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkMAC
 localization_priority: Priority
 search.appverid: 
 - MOE150
@@ -136,7 +137,7 @@ For additional information about each role, see [Administrator role permissions]
 
 If you did not participate in private preview and would like to cancel your trial of app governance, you can communicate with your CXE contact, or use these steps:
 
-1. In the Microsoft 365 admin center, navigate to **Billing** > **Your products**.
+1. In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. Navigate to the app governance trial, click the three dots, and select **Cancel subscription**.
 1. In the resulting fly-out pane, provide a reason for cancellation, any additional feedback, and select **Cancel subscription**.
 1. Select **Cancel subscription** in the resulting pop up screen. Your trial is cancelled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).

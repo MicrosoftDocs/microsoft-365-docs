@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -33,7 +34,7 @@ A company-wide email signature appears on every email sent by people in your org
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, select **Exchange**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
 1. Select **Mail flow**.
 1. Select **Add +**, and then select **Apply disclaimers**.
 1. On the **New rule** page:
