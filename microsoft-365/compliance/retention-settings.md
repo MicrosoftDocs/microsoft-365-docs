@@ -134,7 +134,7 @@ To run a query for users and groups:
  
 To run a query for SharePoint or OneDrive sites:
 
-1. Using a global admin account or an account that has the SharePoint admin role, go to the [SharePoint admin center](https://admin.microsoft.com/sharepoint?page=home&modern=true).
+1. Using a global admin account or an account that has the SharePoint admin role, go to `https://<your_tenant>.sharepoint.com/search`.
 
 2. Use the search bar to specify your KQL query.
 
