@@ -12,6 +12,7 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
@@ -118,7 +119,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-As you move through the wizard, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
+As you move through the configuration, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps.](../media/sensitivity-labels-conditions.png)
 
@@ -242,7 +243,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 
@@ -255,9 +256,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
 
-3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
+3. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
 
-    ![New policy wizard for auto-labeling.](../media/auto-labeling-wizard.png)
+    ![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
 
 4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
@@ -265,13 +266,20 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
 
-    ![Choose locations page auto-labelingwizard.](../media/locations-auto-labeling-wizard.png)
-
-    To specify individual OneDrive accounts: The URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-
-    For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    To verify the syntax for your tenant and identify OneDrive URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
+    
+    To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
+    
+    For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
+    
+    Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+    
+    However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    
+    > [!NOTE]
+    > When you specify individual OneDrive accounts, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
+    > 
+    > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify here.
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
@@ -308,9 +316,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**:
 
-    ![Test out the policy auto-labeling wizard.](../media/simulation-mode-auto-labeling-wizard.png)
+    ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
+11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 

@@ -21,7 +21,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=22154037)
@@ -40,6 +39,7 @@ This article describes how to specify from where updates should be downloaded (t
 > Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update and starting Monday, October 21, 2019, all security intelligence updates will be SHA-2 signed exclusively. Your devices must be updated to support SHA-2 in order to update your security intelligence. To learn more, see [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
 <a id="fallback-order"></a>
+
 ## Fallback order
 
 Typically, you configure endpoints to individually download updates from a primary source followed by other sources in order of priority, based on your network configuration. Updates are obtained from sources in the order you specify. If a source is not available, the next source in the list is used immediately.
@@ -54,10 +54,14 @@ The older the updates on an endpoint, the larger the download will be. However, 
 There are five locations where you can specify where an endpoint should obtain updates:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Network file share](#unc-share)
-- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
+
+  (<a id="fn1">1</a>) Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source. This helps you control which updates from the official WU server are approved for the enterprise, and also help proxy and save network traffic to the official Windows UPdates network.
+
+  (<a id="fn1">2</a>) Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.
 
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads.
 
@@ -163,20 +167,21 @@ For example, suppose that Contoso has hired Fabrikam to manage their security so
 > Microsoft does not test third-party solutions for managing Microsoft Defender Antivirus.
 
 <a id="unc-share"></a>
+
 ## Create a UNC share for security intelligence updates
 
 Set up a network file share (UNC/mapped drive) to download security intelligence updates from the MMPC site by using a scheduled task.
 
 1. On the system on which you want to provision the share and download the updates, create a folder to which you will save the script.
 
-    ```DOS
+    ```console
     Start, CMD (Run as admin)
     MD C:\Tool\PS-Scripts\
     ```
 
 2. Create the folder to which you will save the signature updates.
 
-    ```DOS
+    ```console
     MD C:\Temp\TempSigs\x64
     MD C:\Temp\TempSigs\x86
     ```
@@ -193,12 +198,12 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 8. Use the command line to set up the scheduled task.
 
-    > [!NOTE]
-    > There are two types of updates: full and delta.
+   > [!NOTE]
+   > There are two types of updates: full and delta.
 
    - For x64 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -208,7 +213,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x64 full:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -218,7 +223,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x86 delta:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -228,7 +233,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    - For x86 full:
 
-       ```DOS
+       ```powershell
        Powershell (Run as admin)
 
        C:\Tool\PS-Scripts\
@@ -236,8 +241,9 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
        ".\SignatureDownloadCustomTask.ps1 -action create -arch x86 -isDelta $false -destDir C:\Temp\TempSigs\x86 -scriptPath C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1 -daysInterval 1"
        ```
 
-    > [!NOTE]
-    > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+   > [!NOTE]
+   > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+
 9. Run each task manually and verify that you have data (mpam-d.exe, mpam-fe.exe, and nis_full.exe) in the following folders (you might have chosen different locations):
 
    - C:\Temp\TempSigs\x86
@@ -245,7 +251,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
    If the scheduled task fails, run the following commands:
 
-    ```DOS
+    ```console
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $False -destDir C:\Temp\TempSigs\x64"
 
     C:\windows\system32\windowspowershell\v1.0\powershell.exe -NoProfile -executionpolicy allsigned -command "&\"C:\Tool\PS-Scripts\SignatureDownloadCustomTask.ps1\" -action run -arch x64 -isDelta $True -destDir C:\Temp\TempSigs\x64"
@@ -258,7 +264,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > [!NOTE]
     > Issues could also be due to execution policy.
 
-10. Create a share pointing to C:\Temp\TempSigs (e.g. \\server\updates).
+10. Create a share pointing to C:\Temp\TempSigs (e.g., \\server\updates).
 
     > [!NOTE]
     > At a minimum, authenticated users must have "Read" access.

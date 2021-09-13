@@ -17,11 +17,11 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
+description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ---
 
 # What's new in the Microsoft 365 admin center
@@ -50,7 +50,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Microsoft 365 admin center search
 
-You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
 
 :::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
 
