@@ -1,13 +1,13 @@
 ---
-title: Overview of Microsoft Defender for business
-description: Learn about Microsoft Defender for business, including setup, getting started, and how to use the services
+title: Overview of Microsoft Defender for Business
+description: Learn about Microsoft Defender for Business, including setup, getting started, and how to use the services
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/27/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,19 +15,19 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Overview of Microsoft Defender for business
+# Overview of Microsoft Defender for Business
 
-Microsoft Defender for business is a security solution designed to help protect the devices and data your business uses. With Microsoft Defender for business, you can configure your threat protection solution, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
+Microsoft Defender for Business is a security solution designed to help protect the devices and data your business uses. With Microsoft Defender for Business, you can configure your threat protection solution, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
 
 This guide is intended to:
 
-- Provide you with an overview of Microsoft Defender for business so you know what’s included and how it works.
+- Provide you with an overview of Microsoft Defender for Business so you know what’s included and how it works.
 - Walk through setting up and configuring your threat protection capabilities.
 - Help you get started using your threat protection solution.
 
-## What's included in Microsoft Defender for business?
+## What's included in Microsoft Defender for Business?
 
-The following table summarizes the features and capabilities available in Microsoft Defender for business and includes links to learn more.
+The following table summarizes the features and capabilities available in Microsoft Defender for Business and includes links to learn more.<br/><br/>
 
 | Capability | Description |
 |---|---|
@@ -38,22 +38,22 @@ The following table summarizes the features and capabilities available in Micros
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
 | Threat intelligence capabilities include indicators of compromise and threat analytics.  |
 | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Reports](#reporting) <br/>- [Simplified setup experience](#simplified-setup-experience) <br/>- [Role-based access control](#role-based-access-control) |
-| [Cross-platform support](#cross-platform-support) | Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
+| [Cross-platform support](#cross-platform-support) | Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for Business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. See [APIs](#apis). |
 
-The following sections provide more details about what's included in Microsoft Defender for business.
+The following sections provide more details about what's included in Microsoft Defender for Business.
 
 ## Threat and vulnerability management
 
 Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment. TVM includes a dashboard that highlights potential threats and features to configure. 
 
-Security recommendations are provided to help you set up Microsoft Defender for business correctly. Potential security issues are called to your attention so you can address them right away. 
+Security recommendations are provided to help you set up Microsoft Defender for Business correctly. Potential security issues are called to your attention so you can address them right away. 
 
 To learn more, see [Threat and vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
 
 ## Next-generation protection
 
-Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for business includes:
+Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for Business includes:
 
 - Behavior-based, heuristic, and real-time antivirus protection. Files or processes that have suspicious attributes or exhibit malicious behaviors are stopped in their tracks, and are analyzed immediately.
 - Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
@@ -113,7 +113,7 @@ To learn more, see [Protect your network](../defender-endpoint/network-protectio
 
 ### Network firewall
 
-With network firewall protection, you can set rules that determine which network traffic is permitted to flow to or from your organization’s devices. With your network firewall and advanced security that you get with Microsoft Defender for business, you can:
+With network firewall protection, you can set rules that determine which network traffic is permitted to flow to or from your organization’s devices. With your network firewall and advanced security that you get with Microsoft Defender for Business, you can:
 
 - Reduce the risk of network security threats
 - Safeguard sensitive data and intellectual property
@@ -123,7 +123,7 @@ To learn more, see [Windows Defender Firewall with advanced security](/windows/s
 
 ## Endpoint detection and response
 
-Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for business includes these EDR capabilities:
+Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for Business includes these EDR capabilities:
 
 - [Behavioral-based detection](#behavioral-based-detection)
 - [Manual response actions](#manual-response-actions)
@@ -137,7 +137,7 @@ To learn more, see [Behavioral blocking and containment](../defender-endpoint/be
 
 ### Manual response actions
 
-Microsoft Defender for business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
+Microsoft Defender for Business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
 
 The following table the manual response actions that are available in your plan.
 
@@ -197,7 +197,7 @@ To learn more, see [Track and respond to emerging threats with threat analytics]
 
 ## Centralized management and reporting
 
-Microsoft Defender for business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#simplified-setup-experience). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for business.
+Microsoft Defender for Business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#simplified-setup-experience). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for Business.
 
 ### Reporting
 
@@ -208,15 +208,15 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 - The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
 - The **Reports** section includes reports that show threats detected and their status. 
 
-To learn more, see [Getting started with Microsoft Defender for business](mdb-get-started.md).
+To learn more, see [Getting started with Microsoft Defender for Business](mdb-get-started.md).
 
 ### Simplified setup experience
 
-When it comes to setting up and configuring Microsoft Defender for business, you can choose from several options, as listed in the following table:
+When it comes to setting up and configuring Microsoft Defender for Business, you can choose from several options, as listed in the following table:
 
 | Method | Description |
 |:---|:---|
-| The simplified experience in the Microsoft 365 Defender portal (recommended) | Microsoft Defender for business is designed to save you time and effort with a streamlined experience in the Microsoft 365 Defender portal. Microsoft Defender for business includes default policies that protect your devices as soon as those devices are onboarded. The default policy settings are based on best practices and are designed to help you be productive while working more securely. And you're not limited to the default settings; you can keep your default settings, or make changes to suit your business needs. To learn more, see [Set up and configure Microsoft Defender for business](mdb-setup-configuration.md). |
+| The simplified experience in the Microsoft 365 Defender portal (recommended) | Microsoft Defender for Business is designed to save you time and effort with a streamlined experience in the Microsoft 365 Defender portal. Microsoft Defender for Business includes default policies that protect your devices as soon as those devices are onboarded. The default policy settings are based on best practices and are designed to help you be productive while working more securely. And you're not limited to the default settings; you can keep your default settings, or make changes to suit your business needs. To learn more, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md). |
 | Microsoft Endpoint Manager (which includes Intune) | Microsoft Intune is a cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM). Intune enables you to control how your company’s devices are used, including mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune). | 
 
 To learn more, see [Setup and configuration](mdb-setup-configuration.md).
@@ -231,7 +231,7 @@ To learn more, see [Manage portal access using role-based access control](../def
 
 People often use various devices and operating systems at work. For example, many companies use computers running Windows, macOS, or Linux, and mobile devices running iOS or Android OS. 
 
-Initially, Microsoft Defender for business supports Windows 10 devices only; however, we are planning to support other operating systems in the future. 
+Initially, Microsoft Defender for Business supports Windows 10 devices only; however, we are planning to support other operating systems in the future. 
 
 To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/microsoft-defender-endpoint.md).
 
@@ -243,9 +243,9 @@ To learn more, see [Defender for Endpoint APIs](../defender-endpoint/management-
 
 ## Next steps
 
-Now that you have an overview of Microsoft Defender for business, your next steps include:
+Now that you have an overview of Microsoft Defender for Business, your next steps include:
 
-- [Setting up and configuring Microsoft Defender for business](mdb-setup-configuration.md)
+- [Setting up and configuring Microsoft Defender for Business](mdb-setup-configuration.md)
 
-- [Getting started with Microsoft Defender for business](mdb-get-started.md)
+- [Getting started with Microsoft Defender for Business](mdb-get-started.md)
 
