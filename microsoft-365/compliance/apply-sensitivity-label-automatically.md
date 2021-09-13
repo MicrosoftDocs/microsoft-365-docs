@@ -12,6 +12,7 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
@@ -242,7 +243,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 ### Creating an auto-labeling policy
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 

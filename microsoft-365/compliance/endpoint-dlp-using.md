@@ -355,10 +355,6 @@ The message reads:
 
 9. Check Activity explorer for the event.
 
-### Scenario 5: Configure a policy to use the customized business justification
-
-
-
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)

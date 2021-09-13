@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: "Use mailbox utilization service alerts to monitor mailboxes on hold that are reaching their mailbox quota."
@@ -22,7 +23,7 @@ description: "Use mailbox utilization service alerts to monitor mailboxes on hol
 
 We've released a new Exchange Online service alert that informs you of mailboxes that are on hold that are at risk of reaching or exceeding their quota. These service alerts provide visibility to the number of mailboxes in your organization that may require admin intervention.
 
-These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > **Service health** > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service alert.
+These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service alert.
 
 ![Mailbox utilization service alert](../media/MailboxUtilizationServiceAlert.png)
 
