@@ -8,7 +8,7 @@ author: chrfox
 manager: laurawi
 ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
@@ -33,7 +33,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 ## Onboard devices using Group Policy
 
-1. Open the GP configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Open the [Compliance center](https://compliance.microsoft.com).
 
 2. In the navigation pane, select **Settings** > **Device Onboarding**.
 
@@ -56,7 +56,6 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 11. Go to the **Actions** tab and click **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the file name and location of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
 
 12. Click **OK** and close any open GPMC windows.
-
 
 ## Offboard devices using Group Policy
 For security reasons, the package used to offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
