@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: "Learn how to automate Content Search tasks like creating searches and running reports via PowerShell scripts in the Security & Compliance Center in Office 365."
+description: "Learn how to automate Content Search tasks like creating searches and running reports using Security & Compliance Center PowerShell."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Create, report on, and delete multiple Content Searches
 
- Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, the Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
+ Quickly creating and reporting discovery searches is often an important step in eDiscovery and investigations when you're trying to learn about the underlying data, and the richness and quality of your searches. To help you do this, Security & Compliance Center PowerShell offers a set of cmdlets to automate time-consuming Content Search tasks. These scripts provide a quick and easy way to create a number of searches, and then run reports of the estimated search results that can help you determine the quantity of data in question. You can also use the scripts to create different versions of searches to compare the results each one produces. These scripts can help you to quickly and efficiently identify and cull your data.
 
 ## Before you create a Content Search
 
-- You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the scripts that are described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the scripts that are described in this topic.
 
 - To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](/onedrive/list-onedrive-urls).
 
@@ -175,7 +175,7 @@ To run the script:
 
    The script displays the progress of creating and running the searches. When the script is complete, it returns to the prompt.
 
-   ![Sample output from running the script to create multiple compliance searches](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Sample output from running the script to create multiple compliance searches.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## Step 4: Run the script to report the search estimates
 
@@ -250,7 +250,7 @@ After you create the searches, the next step is to run a script that displays a 
 
    The script displays the progress of creating and running the searches. When the script is complete, the report is displayed.
 
-   ![Run the search report to display the estimates for the search group](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![Run the search report to display the estimates for the search group.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > If the same mailbox or site is specified as a content location in more than one search in a search group, the total results estimate in the report (for both the number of items and the total size) might include results for the same items. That's because the same email message or document will be counted more than once if it matches the query for different searches in the search group.
@@ -285,4 +285,4 @@ Because you might be creating a lot of searches, this last script just makes it 
 
    The script displays the name of each search that's deleted.
 
-   ![Run the script to delete the searches in the search group](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Run the script to delete the searches in the search group.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

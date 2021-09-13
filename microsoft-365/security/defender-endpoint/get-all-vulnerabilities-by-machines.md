@@ -36,7 +36,9 @@ Retrieves a list of all the vulnerabilities affecting the organization per [mach
 
 - If the vulnerability has a fixing KB, it will appear in the response.
 - Supports [OData V4 queries](https://www.odata.org/documentation/).
-- The OData ```$filter``` is supported on all properties.
+- The OData's `$filter` query is supported on: `id`, `cveId`, `machineId`, `fixingKbId`, `productName`, `productVersion`, `severity`, and `productVendor` properties.
+<br>```$stop``` with max value of 10,000 
+<br>```$skip```
 
 > [!TIP]
 > This is great API for [Power BI integration](api-power-bi.md).

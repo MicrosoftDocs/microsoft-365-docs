@@ -44,14 +44,12 @@ To see device configuration reports, the account must have view reports permissi
 
 Make sure that the Windows 10 devices that you plan on deploying Printer Protection to meet these requirements.
 
-1. Join the Insider Program.
-
 1. The following Windows Updates are installed.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - For Windows 2004 or later
 
-1. If you're planning to deploy policy via Group Policy, the device must be MDATP joined; if you're planning to deploy policy via MEM, the device must be Intune joined.
+2. If you're planning to deploy policy via Group Policy, the device must be onboarded to Microsoft Defender for Endpoint joined; if you're planning to deploy policy via Microsoft Endpoint Manager, the device must be joined by using Microsoft Intune.
 
 ## Deploy Device Control Printer Protection policy
 
@@ -85,7 +83,7 @@ For Intune, currently Device Control Printer Protection supports OMA-URI only.
 
 The CSP support string with `<enabled/>`:
 
-:::image type="content" source="../../media/customeditrow.png" alt-text="custom edit row":::
+:::image type="content" source="../../media/customeditrow.png" alt-text="custom edit row.":::
 
 ### Scenario 2: Allow specific approved USB printers using Intune
 
@@ -99,7 +97,7 @@ The CSP support string with `<enabled/>`:
 
 The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872">`:
 
-:::image type="content" source="../../media/editrow.png" alt-text="edit row":::
+:::image type="content" source="../../media/editrow.png" alt-text="edit row.":::
 
 ## Deploy policy via Group Policy
 
@@ -115,7 +113,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
   User Configuration \> Administrative Templates \> Control Panel \> Printers: Enable Device control Printing Restrictions
 
-:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="enable device printing restrictions":::
+:::image type="content" source="../../media/enable-device-ctrl-printing-restrictions.png" alt-text="enable device printing restrictions.":::
 
 ### Scenario 2: Allow specific approved USB printers using Group Policy
 
@@ -127,7 +125,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
   User Configuration \> Administrative Templates \> Control Panel \> Printers: List of Approved USB-connected print devices
 
-:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="list of approved usb connected print devices":::
+:::image type="content" source="../../media/list-of-approved-connected-print-devices.png" alt-text="list of approved usb connected print devices.":::
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
@@ -145,4 +143,37 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
- :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting":::
+ :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
+ 
+ You can use the PnP event to find the USB printer used in the organization:
+ 
+```kusto
+//find the USB Printer VID/PID
+DeviceEvents
+| where ActionType == "PnpDeviceConnected"
+| extend parsed=parse_json(AdditionalFields)
+| extend DeviceDescription = tostring(parsed.DeviceDescription) 
+| extend PrinterDeviceId = tostring(parsed.DeviceId) 
+| extend VID_PID_Array = split(split(PrinterDeviceId, "\\")[1], "&")
+| extend VID_PID = replace_string(strcat(VID_PID_Array[0], '/', VID_PID_Array[1]), 'VID_', '')
+| extend VID_PID = replace_string(VID_PID, 'PID_', '')
+| extend ClassId = tostring(parsed.ClassId) 
+| extend VendorIds = tostring(parsed.VendorIds) 
+| where DeviceDescription == 'USB Printing Support'
+| project Timestamp , DeviceId, DeviceName, ActionType, DeviceDescription, VID_PID, ClassId, PrinterDeviceId, VendorIds, parsed
+| order by Timestamp desc
+```
+
+ :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="advanced hunting":::
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 

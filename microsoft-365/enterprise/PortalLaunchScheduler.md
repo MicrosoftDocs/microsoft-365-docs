@@ -35,16 +35,16 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 > [!NOTE]
 >
-> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021
-> - The PowerShell version of this tool is available today
-> - This feature can only be used on modern SharePoint communication sites
-> - You must have site owner permissions for the site to customize and schedule the launch of a portal
-> - Launches must be scheduled at least seven days in advance and each wave can last one to seven days
-> - The number of waves required is automatically determined by the expected number of users
-> - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy
-> - At the end of the launch, all users with permissions to the site will be able to access the new site
-> - If your organization is using [Viva Connections](/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched
-> - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans
+> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021.
+> - The PowerShell version of this tool is available today.
+> - This feature can only be used on modern SharePoint communication sites.
+> - You must have site owner permissions for the site to customize and schedule the launch of a portal.
+> - Launches must be scheduled at least seven days in advance and each wave can last one to seven days.
+> - The number of waves required is automatically determined by the expected number of users.
+> - Before scheduling a portal launch, the [Page Diagnostics for SharePoint tool](https://aka.ms/perftool) must be run to verify that the home page of the site is healthy.
+> - At the end of the launch, all users with permissions to the site will be able to access the new site.
+> - If your organization is using [Viva Connections](/SharePoint/viva-connections), users may see your organization's icon in the Microsoft Teams app bar, however when the icon is selected users will not be able to access the portal until their wave has launched.
+> - This feature is not available for Office 365 Germany, Office 365 operated by 21Vianet (China), or Microsoft 365 US Government plans.
 
 ## Understand the differences between Portal launch scheduler options:
 
@@ -70,15 +70,15 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
    **Option 1**: The first few times you edit and republish changes to your home page - or up until home page version 3.0 - you will be prompted to use the Portal launch scheduler tool. Select **Schedule launch** to move forward with scheduling. Or select **Republish** to republish your page edits without scheduling the launch.
 
-   ![Image of the prompt to use the portal launch scheduler when republishing the home page](../media/portal-launch-republish-2.png)
+   ![Image of the prompt to use the portal launch scheduler when republishing the home page.](../media/portal-launch-republish-2.png)
 
    **Option 2**: At any time, you can navigate to the SharePoint communication site home page, select **Settings** and then **Schedule site launch** to schedule your portal’s launch.
 
-   ![Image of the Settings pane with Schedule a site launch highlighted](../media/portal-launch-settings-2.png)
+   ![Image of the Settings pane with Schedule a site launch highlighted.](../media/portal-launch-settings-2.png)
 
 3. Next, confirm the portal’s health score and make improvements to the portal if needed using the [Page Diagnostics for SharePoint](https://aka.ms/perftool) tool until your portal receives a **Healthy** score. Then, select **Next**.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-panel-2.png)
+   ![Image of the Portal launch scheduler tool.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
@@ -110,12 +110,12 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
 7. Determine who needs to view the site right away and enter their information into the **Users exempt from waves** field. These users are excluded from waves and will not be redirected before, during, or after the launch.
 
-    > [!NOTE]
-    > Up to 50 distinct users or security groups max can be used for the entire launch. Each launch is independent of each other, so if you schedule a launch on another portal, then you could use up to 50 users/security groups for that launch. Additionally, you can use up to 20 distinct users or security groups per wave. 
-    >
-    > The portal launch scheduler supports security groups and mail enabled security groups. 
 
-8. Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
+    >[!NOTE]
+    > Up to 50 distinct users or security groups max can be added. Use security groups when you need more than 50 individuals to get access to the portal before the waves start launching. 
+
+8.	Confirm portal launch details and select **Schedule**. Once the launch has been scheduled, any changes to the SharePoint portal home page will need to receive a healthy diagnostic result before the portal launch will resume.
+
 
 ### Launch a portal with over 100k users
 
@@ -130,17 +130,17 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 
 **Follow these steps:**
 
-1. Go to <https://admin.microsoft.com>.
-2. Ensure you are using the new admin center preview
-3. On the left navigational pane, select **Support**, and then select **New Service Request**
+1. As an administrator , click the following link which will populate a help query in the admin center. 
 
-   This will activate the **Need Help?** pane on the right-hand side of your screen.
+[Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. For **Briefly describe your issue**, enter "Launch SharePoint Portal with 100k users"</br>
-5. Then, select **Contact Support**
-6. Under **Description**, enter "Launch SharePoint Portal with 100k users"
-7. Fill out the remaining information, and then select **Contact me**
-8. After the ticket has been created, ensure you provide the support agent with the following information:
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**. 
+
+3. Under **Description**, enter "Launch SharePoint Portal with 100k users". 
+
+4. Fill out the remaining info, and select **Contact me**.
+
+5. After the ticket has been created, ensure you provide the support agent with the following information:
    - Portal URL's
    - Number of users expected
    - Estimated launch schedule
@@ -161,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch.](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 
@@ -176,7 +176,9 @@ The SharePoint Portal launch scheduler tool was originally only available via [S
 1. [Download the latest SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251).
 
     > [!NOTE]
-    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell." <br>On the Download Center page, select your language and then click the Download button. You'll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system). After the file downloads, run it and follow the steps in the Setup Wizard.
+    > If you installed a previous version of the SharePoint Online Management Shell, go to Add or remove programs and uninstall "SharePoint Online Management Shell."
+    > 
+    > On the Download Center page, select your language and then click the Download button. You'll be asked to choose between downloading a x64 and x86 .msi file. Download the x64 file if you're running the 64-bit version of Windows or the x86 file if you're running the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system). After the file downloads, run it and follow the steps in the Setup Wizard.
 
 2. Connect to SharePoint as a [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) in Microsoft 365. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 

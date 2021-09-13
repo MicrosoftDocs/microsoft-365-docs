@@ -31,11 +31,11 @@ The topic center is created during Viva Topics setup. After setup completes, an 
 1. In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.
 2. On the **Services** tab, select **Topic Experiences**.
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png)
+    ![Connect people to knowledge.](../media/admin-org-knowledge-options-completed.png)
 
 3. Select the **Topic center** tab. Under **Site address** is a link to your topic center.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png)
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png)
 
 ## Home page
 
@@ -49,11 +49,11 @@ On the topic center home page, you can see the topics in your organization to wh
 
 - Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?** These are topics in which your connection to the topic has been suggested through AI. For example, you might be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
 
-   ![Suggested connections](../media/knowledge-management/my-topics.png)
+   ![Suggested connections.](../media/knowledge-management/my-topics.png)
 
 - Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
 
-   ![Confirmed topics](../media/knowledge-management/my-topics-confirmed.png)
+   ![Confirmed topics.](../media/knowledge-management/my-topics-confirmed.png)
 
 Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection. For example, they can provide more information about their connection to the topic.
 

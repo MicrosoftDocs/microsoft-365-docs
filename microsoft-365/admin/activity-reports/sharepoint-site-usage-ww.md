@@ -36,12 +36,28 @@ Microsoft 365 Reports in the admin center is not supported for GCC High and DoD 
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
 2. From the dashboard homepage, click on the **View more** button on the SharePoint card.
+
+## Show user details in the reports
+
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+  
+Your user list will look like this:
+  
+![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+  
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
+
+2. Select **Reports**. 
+  
+3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes. 
   
 ## Interpret the SharePoint site usage report
 
 You can view the site usage in the SharePoint report by choosing the **Site usage** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint site usage report.](../../media/d1cb6200-e81c-460b-9d05-53f4bd7cf5ee.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint site usage report - choose columns](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint site usage report - choose columns.](../../media/71ac3195-c494-40c1-9346-a858125ef6df.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

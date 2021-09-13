@@ -7,6 +7,7 @@ author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
+ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -44,13 +45,33 @@ View the [full list of templates](compliance-manager-templates-list.md) availabl
 
 ### Purchase premium template licenses
 
-Template licenses can be purchased in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan. You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+Template licenses can be obtained by one or more of these methods, depending on your Compliance Manager licensing agreement. Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
 
-Once your purchase has been finalized, the templates should become available in your tenant within 48 hours.
+**Commercial and GCC Moderate**
+
+Commercial and GCC Moderate accounts can purchase template licenses in the admin center ([learn more about subscriptions, licenses, and billing](/microsoft-365/commerce/)). Select the quantity of licenses you wish to purchase and your payment plan.
+
+Purchase links:
+
+- [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/46E9BF2A-3C8D-4A69-A7E7-3DA04687636D)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/3129986d-5f4b-413b-a34b-b706db5a7669)
+
+You may also acquire licenses through your participation in the [Cloud Solution Provider program](https://partner.microsoft.com/membership/cloud-solution-provider) or [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
+
+**GCC High and DOD accounts**
+
+GCC High and DOD accounts must purchase template licenses through [volume licensing](https://www.microsoft.com/licensing/licensing-programs/licensing-programs).
 
 ### Try out premium templates
 
 To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
+
+To start a trial, choose the appropriate link for your organization:
+
+- [Commercial](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/e320704d-b7c9-4012-b6a6-0a2679790360)
+- [GCC Moderate](https://admin.microsoft.com/Adminportal/Home?#/catalog/offer-details/compliance-manager-premium-assessment-add-on/87ed2908-0a8d-430a-9635-558ed42b581f)
+- [GCC High](https://portal.office365.us/SubscriptionDetails?OfferId=e14362d7-2c11-4a43-9c92-59f1b499b96a)
+- [DOD](https://portal.apps.mil/Commerce/Trial.aspx?OfferId=17e28290-7de6-41a9-af30-f6497396ab2e)
 
 #### Active and inactive templates
 
@@ -61,7 +82,7 @@ Templates will display an activation status as either active or inactive:
 
 If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
 
-You may also try premium templates on a trial basis. Trial licenses are good for up to 25 templates for 30 days. Once your trial begins, the templates should become available in your tenant within 48 hours. Trials can be activated through the Microsoft 365 admin center.
+You may also try premium templates on a trial basis. Trial licenses are good for up to 25 templates for 30 days. Once your trial begins, the templates should become available in your tenant within 48 hours. Trials can be activated through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 #### Activated templates counter
 
@@ -134,7 +155,7 @@ The **Actions** tab is required.  It designates improvement actions managed by y
 
 - **actionScore**: In this required field, provide a numeric score value for your action. The value must be a whole number ranging from 1 to 99; it cannot be 0, null, or blank. The higher the number, the greater its value toward improving your compliance posture. The image below demonstrates how Compliance Manager scores controls:
 
-  ![Compliance Manager controls point values](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
+  ![Compliance Manager controls point values.](../media/compliance-score-action-scoring.png "Compliance Manager controls point values")
 
 - **actionDescriptionTitle**: This is the title of the description and is required. This description title allows you to have the same action in multiple templates and surface a different description in each template.  This field helps you clarify what template the description is referencing. In most cases, you can put the name of the template you're creating in this field.
 

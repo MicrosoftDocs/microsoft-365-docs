@@ -66,7 +66,7 @@ productDirectory:
           text: Plan and deploy a Teams voice solution
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+        - url: /MicrosoftTeams/cloud-voice-landing-page
           text: Microsoft telephony solutions
     # Card
     - title: Collaborate with your team
@@ -263,6 +263,19 @@ additionalContent:
             - text: More Project >
               url: /Project
         # Card
+        - title: Microsoft Viva
+          links:
+            - text: Microsoft Viva Topics
+              url: /microsoft-365/knowledge/
+            - text: Microsoft Viva Insights
+              url: /insights/viva-teams-app
+            - text: Microsoft Viva Connections
+              url: /sharepoint/viva-connections
+            - text: Microsoft Viva Learning
+              url: /microsoft-365/learning/
+            - text: More Microsoft Viva >
+              url: /microsoft-365/viva/
+        # Card
         - title: More apps and services
           links:
             - text: Microsoft Bookings
@@ -273,15 +286,9 @@ additionalContent:
               url: /stream/
             - text: Yammer
               url: /yammer/yammer-landing-page
-        # Card
-        - title: Skype for Business
-          links:
-            - text: IT Pro documentation
+            - text: Skype for Business
               url: /skypeforbusiness
-        # Card
-        - title: Office Online Server
-          links:
-            - text: Get started
+            - text: Office Online Server
               url: /officeonlineserver
     - title: Related guidance and resources
       items:

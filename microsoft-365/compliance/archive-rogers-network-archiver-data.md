@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive Rogers Network data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
-# Set up a connector to archive Rogers Network data (preview)
+# Set up a connector to archive Rogers Network data
 
 Use the TeleMessage connector in the Microsoft 365 compliance center to import and archive SMS and MMS data from the Rogers mobile network. After you set up and configure a [Rogers Network Archiver connector](https://www.telemessage.com/mobile-archiver/network-archiver/rogers/), it connects to your organization's Rogers mobile network, and imports SMS and MMS data to mailboxes in Microsoft 365.
 
@@ -24,7 +24,7 @@ After data from the Rogers mobile network is stored in user mailboxes, you can a
 
 The following overview explains the process of using a connector to archive Rogers SMS and MMS data in Microsoft 365.
 
-![Rogers Network archiving workflow](../media/RogersNetworkConnectorWorkflow.png)
+![Rogers Network archiving workflow.](../media/RogersNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Rogers Network Archiver connector. For more information, see [Activating the TeleMessage Rogers Network Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-the-rogers-network-archiver/).
 
@@ -47,6 +47,8 @@ The following overview explains the process of using a connector to archive Roge
 - Obtain the Rogers account and billing contact details for your organization so that you can complete the onboarding forms and order the message archiving service from Rogers.
 
 - The user who creates a Rogers Network Archiver connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+
+- This data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Create a Rogers Network Archiver connector
 

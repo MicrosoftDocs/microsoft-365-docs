@@ -17,6 +17,7 @@ ms.custom:
 - Lean
 - MSStore_Link
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -38,19 +39,19 @@ To use room or equipment mailboxes, open Outlook from your computer or sign in t
     
 2. On the **Home** tab, choose **New Items** \> **Meeting**.<br/>![To schedule a meeting, on the Home tab, in the New group, choose New Items, and then Meeting.](../../media/ffd575a8-1036-4d67-b839-73941fc60276.png)<br/>Or, from your Calendar, just select **New Meeting**.
     
-3. In the To field, type the name of the conference room or equipment you want to reserve, in addition to any attendees you'd like to invite.<br/>Or, select **To** then double-click the conference room or equipment from the list. Then select **OK**.<br/>![Reserve room mailbox in Outlook](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
+3. In the To field, type the name of the conference room or equipment you want to reserve, in addition to any attendees you'd like to invite.<br/>Or, select **To** then double-click the conference room or equipment from the list. Then select **OK**.<br/>![Reserve room mailbox in Outlook.](../../media/4588c806-9fb9-46c9-b2d8-34caa943e28e.png)
   
 4. In the **Subject** line, type the purpose of the reservation or meeting. 
     
 5. Change the **Location** value or leave as is. 
     
-6. Change the **Start time** and **End time**. Or, select **All day event**. To make the meeting or reservation repeat, select **Recurrence** at the top.<br/>![Reserve meeting time](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
+6. Change the **Start time** and **End time**. Or, select **All day event**. To make the meeting or reservation repeat, select **Recurrence** at the top.<br/>![Reserve meeting time.](../../media/4b72a0a6-4da2-449e-909e-85ea79f78e2c.png)
   
 7. Type a message describing the purpose and attach any files if needed.
     
 8. To allow others to join online or call in to the meeting, select **Skype Meeting**.
     
-9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.<br/> ![Check if room equipment available](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>TIP: In the scheduling calendar, blue means the room or equipment is reserved, or busy. Select the white, or free, area on the calendar. 
+9. To make sure the room, equipment, and people you've invited are available, select **Scheduling Assistant** at the top. Then select an available time in the calendar.<br/> ![Check if room equipment available.](../../media/eb0097c6-4263-4b63-bfca-f7c03ad99b4f.png)<br/>TIP: In the scheduling calendar, blue means the room or equipment is reserved, or busy. Select the white, or free, area on the calendar. 
   
 10. When finished, select **Send**.
     
@@ -62,7 +63,7 @@ To set up a room or equipment mailbox, go to the <a href="https://go.microsoft.c
   
 2. Select **Add**.
     
-3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Microsoft 365](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
+3. Fill out the room or equipment fields:<br/>![Add a room mailbox in Microsoft 365.](../../media/114d49e3-976e-40ef-b0af-2b0f5c85f15e.png)<br/>
   
   - **Room** or **Equipment**: the type of mailbox you'd like to create.
     
@@ -101,7 +102,7 @@ Open the meeting you scheduled in Outlook and then remove the room or equipment 
   
 ### Does a room mailbox or equipment mailbox need a product license?
 
-No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox.
+No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox, in case the resource mailbox needs to have a size bigger than 50 GB, or, in case some features are needed (Retention policies from Security and Compliance, or, Hold from Exchange Online), or, in case the resource mailbox doesn't need an Online Archive attached to it.
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 

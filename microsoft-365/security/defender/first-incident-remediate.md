@@ -62,7 +62,7 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal."::: 
  
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
 
@@ -79,13 +79,13 @@ Playbooks use Power Automate to create custom robotic process automation flows t
 
 Here's an example.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
  
 Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
 
 ## Next step
 
-[![Step 3: Learn how to perform a post-incident review of an incident](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+[![Step 3: Learn how to perform a post-incident review of an incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Learn how to [perform a post-incident review of an incident](first-incident-post.md).
 

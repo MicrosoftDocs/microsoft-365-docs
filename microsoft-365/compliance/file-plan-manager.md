@@ -49,7 +49,7 @@ In the Microsoft 365 compliance center, go to **Solutions** > **Records manageme
 
 If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
-![File plan page](../media/compliance-file-plan.png)
+![File plan page.](../media/compliance-file-plan.png)
 
 ## Navigating your file plan
 
@@ -102,11 +102,11 @@ To get you started, there are some out-of-box values for the following file plan
 
 Example of file plan descriptors when you create or edit a retention label:
 
-![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
+![File plan descriptors when you create or edit a retention label.](../media/file-plan-descriptors.png)
 
 When you select **Choose** for each of these optional descriptors, you can select one of the out-of-box values, or create your own and then select it. For example: 
 
-![Create new file plan descriptor for provision/citation](../media/file-plan-descriptors-create.png)
+![Create new file plan descriptor for provision/citation.](../media/file-plan-descriptors-create.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
@@ -114,11 +114,11 @@ From your file plan, you can export the details of all retention labels into a .
 
 To export all retention labels: On the **File plan** page, click **Export**:
 
-![Option to export file plan](../media/compliance-file-plan-export-labels.png)
+![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
 A *.csv file that contains all existing retention labels opens. For example:
 
-![CSV file showing all retention labels](../media/file-plan-csv-file.png)
+![CSV file showing all retention labels.](../media/file-plan-csv-file.png)
 
 ## Import retention labels into your file plan
 
@@ -126,13 +126,13 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
 
 1. On the **File plan** page, click **Import** to use the **Fill out and import your file plan** page:
 
-   ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
+   ![Option to import file plan.](../media/compliance-file-plan-import-labels.png)
 
-   ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
+   ![Option to download a blank file plan template.](../media/file-plan-blank-template-option.png)
 
 2. Download a blank template as instructed:
 
-   ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
+   ![Blank file plan template opens in Excel.](../media/file-plan-blank-template.png)
 
 3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, some values have a maximum length:
     
@@ -165,13 +165,13 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
 
    Here's an example of the template containing the information about retention labels.
 
-   ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
+   ![File plan template with information filled in.](../media/file-plan-filled-out-template.png)
 
 4. Under step 3 on the **Fill out and import your file plan** page, click **Browse for files** to upload the filled-out template, and then select **Next**.
 
    File plan uploads the file and validates the entries, displaying the import statistics.
 
-   ![File plan import statistics](../media/file-plan-import-statistics.png)
+   ![File plan import statistics.](../media/file-plan-import-statistics.png)
 
 5. Depending on the validation results:
     

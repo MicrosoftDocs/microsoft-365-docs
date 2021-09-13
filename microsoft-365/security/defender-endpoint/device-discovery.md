@@ -86,7 +86,7 @@ You can now use a new filter in the device inventory list called Onboarding stat
 - Unsupported: The endpoint was discovered in the network but is not supported by Microsoft Defender for Endpoint.
 - Insufficient info: The system could not determine the supportability of the device. Enabling standard discovery on more devices in the network can enrich the discovered attributes.
 
-![Image of device inventory dashboard](images/2b62255cd3a9dd42f3219e437b956fb9.png)
+![Image of device inventory dashboard.](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.
@@ -96,14 +96,14 @@ You can now use a new filter in the device inventory list called Onboarding stat
 Vulnerabilities and risks on your devices as well as other discovered unmanaged devices in the network are part of the current TVM flows under "Security Recommendations" and represented in entity pages across the portal.
 Search for "SSH" related security recommendations to find SSH vulnerabilities that are related for unmanaged and managed devices.
 
-![Image of security recommendations dashboard](images/1156c82ffadd356ce329d1cf551e806c.png)
+![Image of security recommendations dashboard.](images/1156c82ffadd356ce329d1cf551e806c.png)
 
 ## Use Advanced Hunting on discovered devices
 
 You can use Advanced Hunting queries to gain visibility on discovered devices.
 Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
 
-![Image of advanced hunting use](images/f48ba1779eddee9872f167453c24e5c9.png)
+![Image of advanced hunting use.](images/f48ba1779eddee9872f167453c24e5c9.png)
 
 Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 

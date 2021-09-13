@@ -76,7 +76,7 @@ After a retention policy is configured for chat and channel messages, the paths 
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Teams chat and channel messages](../media/teamsretentionlifecycle.png)
+![Diagram of retention flow for Teams chat and channel messages.](../media/teamsretentionlifecycle.png)
 
 For the two paths in the diagram:
 

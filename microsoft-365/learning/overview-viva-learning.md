@@ -1,10 +1,10 @@
 ---
-title: "Overview of Microsoft Viva Learning (Preview)"
+title: Overview of Microsoft Viva Learning (Preview)
 ms.author: daisyfeller
 author: daisyfeller
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 05/12/2021
+ms.date: 
 audience: admin
 ms.topic: article
 ms.service: 
@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn about Microsoft Viva Learning (Preview) in your Microsoft 365 environment."
+description: Learn about Microsoft Viva Learning (Preview) in your Microsoft 365 environment.
 ---
 
 # Overview of Microsoft Viva Learning (Preview) 

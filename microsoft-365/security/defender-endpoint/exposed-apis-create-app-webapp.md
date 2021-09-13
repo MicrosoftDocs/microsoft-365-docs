@@ -47,22 +47,22 @@ This article explains how to create an Azure AD application, get an access token
 
 1. Log on to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
+4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
 
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission](images/add-permission.png)
+   ![add permission.](images/add-permission.png)
 
-   - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   ![app permission](images/application-permissions.png)
+   ![app permission.](images/application-permissions.png)
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -75,18 +75,18 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Grant permissions](images/grant-consent.png)
+    ![Grant permissions.](images/grant-consent.png)
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id.](images/app-and-tenant-ids.png)
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -196,7 +196,7 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation.](images/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
