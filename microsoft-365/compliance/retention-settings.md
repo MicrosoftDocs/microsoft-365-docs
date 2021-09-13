@@ -122,7 +122,7 @@ To run a query for users and groups:
 
 1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Specify your OPATH query using [Get-Recipient](/powershell/module/exchange/get-recipient) (for users) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) (for groups) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
+2. Specify your [OPATH query]/powershell/exchange/filter-properties) using [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
     
     For example:
     
@@ -136,7 +136,7 @@ To run a query for SharePoint or OneDrive sites:
 
 1. Using a global admin account or an account that has the SharePoint admin role, go to the [SharePoint admin center](https://admin.microsoft.com/sharepoint?page=home&modern=true).
 
-2. Specify your KQL query by using the search bar at the top.
+2. Use the search bar to specify your KQL query.
 
 3. Verify that the search results match the expected site URLs for your adaptive scope. If they don't, check your query and the URLs with the relevant administrator for SharePoint.
 
