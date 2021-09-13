@@ -1,13 +1,13 @@
 ---
-title: Choose where to manage Microsoft Defender for business
-description: See how to set up and configure Microsoft Defender for business
+title: Choose where to manage Microsoft Defender for Business
+description: See how to set up and configure Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 When it comes to configuring your security features on your company’s devices, you can choose from one of two portals: the Microsoft 365 Defender Portal and the Microsoft Endpoint Manager admin center. 
 
-When you begin to use Microsoft Defender for business, you will be asked which portal you want to use. You'll be asked only once. We recommend using the Microsoft 365 Defender portal. The following table describes each portal:
+When you begin to use Microsoft Defender for Business, you will be asked which portal you want to use. You'll be asked only once. We recommend using the Microsoft 365 Defender portal. The following table describes each portal:
 
 | Portal  | Description  |
 |---------|---------|
@@ -28,11 +28,11 @@ When you begin to use Microsoft Defender for business, you will be asked which p
 
 
 > [!TIP]
-> We recommend using the Microsoft 365 Defender portal and its wizard-like experience for using and managing Defender for business. 
+> We recommend using the Microsoft 365 Defender portal and its wizard-like experience for using and managing Defender for Business. 
 
 ## Why we recommend using the Microsoft 365 Defender portal to manage your security solution
 
-Microsoft Defender for business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices.
+Microsoft Defender for Business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices.
 
 ## What if you change your mind?
 
@@ -40,4 +40,4 @@ If you have chosen a portal and change your mind later, contact support. They'll
 
 ## Next step
 
-- [Onboard devices to Microsoft Defender for business](mdb-onboard-devices.md)
+- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
