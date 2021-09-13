@@ -16,6 +16,7 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -32,7 +33,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, choose **Setup**.
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. Under **Get your custom domain set up**, select **View**.
 1. Choose **Manage**, and then **Add domain**.
 1. Enter the new domain name that you want to add, and then select **Next**.
@@ -44,7 +45,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 To receive email at your new domain, you'll need to add a new email alias for each user:
 
-1. Select **Users**, **Active users**, and then select the user who will be assigned the new alias.
+1. Select **Users**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the user who will be assigned the new alias.
 1. Choose **Manage email aliases**, and then **Add an alias**.
 1. Enter the username, and then choose the new domain from the drop-down list.
 1. Select **Save changes**, and then close the window.
