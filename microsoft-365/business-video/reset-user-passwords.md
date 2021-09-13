@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -32,7 +33,7 @@ In Microsoft 365 for business, you can reset passwords for users. You can also l
 ## Try it!
 
 1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
-1. In the Microsoft 365 admin center, select **Users**,  **Active users**, and then select the key icon next to the user who requested the reset.
+1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
 1. Select **Auto-generate password** to have a random password automatically created.
 1. Select **Reset**.
 1. Select the **Send password in email** check box.

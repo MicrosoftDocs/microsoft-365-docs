@@ -29,7 +29,7 @@ Use the Office 365 Import service and drive shipping to bulk-import PST files to
   
 Here are the steps required to use drive shipping to import PST files to Microsoft 365 mailboxes:
   
-[Step 1: Download the secure storage key and PST Import tool](#step-1-download-the-secure-storage-key-and-pst-import-tool)
+[Step 1: Download the PST Import tool](#step-1-download-the-pst-import-tool)
 
 [Step 2: Copy the PST files to the hard drive](#step-2-copy-the-pst-files-to-the-hard-drive)
 
@@ -42,7 +42,7 @@ Here are the steps required to use drive shipping to import PST files to Microso
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
   
 > [!IMPORTANT]
-> You have to perform Step 1 once to down load the secure storage key and the import tool. After you perform these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
+> You have to perform Step 1 once to download the import tool. After you have performed these steps, follow Step 2 through Step 6 each time you want to ship a hard drive to Microsoft. 
   
 For frequently asked questions about using drive shipping to import PST files to Office 365, see [FAQs for using drive shipping to import PST files](./faqimporting-pst-files-to-office-365.yml#using-drive-shipping-to-import-pst-files). 
   
@@ -86,7 +86,7 @@ For frequently asked questions about using drive shipping to import PST files to
     
 - The hard drive that you ship to Microsoft may cross international borders. In this case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the identified Microsoft data center. This helps to ensure that it reaches Microsoft in a timely manner.
     
-- This procedure involves copying and saving a secure storage key and a BitLocker encryption key. Be sure to take precautions to protect these keys like you would protect passwords or other security-related information. For example, you might save them to a password-protected Microsoft Word document or save them to an encrypted USB drive. See the [More information](#more-information) section for an example of these keys. 
+- This procedure involves copying and saving a BitLocker encryption key. Be sure to take precautions to protect these keys like you would protect passwords or other security-related information. For example, you might save them to a password-protected Microsoft Word document or save them to an encrypted USB drive. See the [More information](#more-information) section for an example of these keys. 
     
 - After PST files are imported to a Microsoft 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the [More information](#more-information) section for suggestions about managing the retention hold. 
     
@@ -105,9 +105,9 @@ For frequently asked questions about using drive shipping to import PST files to
     
     See [Step 3: Create the PST Import mapping file](#step-3-create-the-pst-import-mapping-file) for more information. 
 
-## Step 1: Download the secure storage key and PST Import tool
+## Step 1: Download the PST Import tool
 
-The first step is to download the secure storage key and the tool and that you use in Step 2 to copy PST files to the hard drive.
+The first step is to download the tool and that you use in Step 2 to copy PST files to the hard drive.
   
 > [!IMPORTANT]
 > You have to use Azure Import/Export tool version 1 (WAimportExportV1) to successfully import PST files by using the drive shipping method. Version 2 of the Azure Import/Export tool isn't supported and using it will result in incorrectly preparing the hard drive for the import job. Be sure to download the Azure Import/Export tool from the Microsoft 365 compliance center by following the procedures in this step. 
@@ -127,13 +127,9 @@ The first step is to download the secure storage key and the tool and that you u
     
     ![Click Ship hard drives to one of our physical locations to create a drive shipping import job.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
-6. On the **Import data** page, do the following two things: 
+6. On the **Import data** page, do the following:     
     
-    ![Copy the secure storage key and download the Azure Import Export tool on the Import data page.](../media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
-  
-    a. In step 2, click **Show the secure storage key**. After the storage key is displayed, click **Copy to clipboard** and then paste it and save it to a file so you can access it later.
-    
-    b. In step 3, **Download the Azure Import/Export tool** to download and install the Azure Import/Export (version 1) tool.
+    **Download the Azure Import/Export tool** to download and install the Azure Import/Export (version 1) tool.
     
     - In the pop-up window, click **Save** \> **Save as** to save the WaImportExportV1.zip file to a folder on your local computer. 
     
