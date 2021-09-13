@@ -116,7 +116,7 @@ To confirm the current membership and membership changes for an adaptive scope:
 
 #### Validating advanced queries
 
-You can manually validate advanced queries by using PowerShell or SharePoint search:
+You can manually validate advanced queries by using PowerShell and SharePoint search:
 - Use PowerShell for the scope types **Users** and **Microsoft 365 Groups**
 - Use SharePoint search for the scope type **SharePoint sites**
 
@@ -124,7 +124,7 @@ To run a query using PowerShell:
 
 1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Specify your [OPATH query]/powershell/exchange/filter-properties) using [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
+2. Specify your [OPATH query](/powershell/exchange/filter-properties) using [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
     
     For example:
     
