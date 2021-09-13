@@ -1,13 +1,13 @@
 ---
-title: Onboard devices to Microsoft Defender for business
-description: Understand your configuration settings in Microsoft Defender for business
+title: Onboard devices to Microsoft Defender for Business
+description: Understand your configuration settings in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/15/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,29 +15,29 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Onboard devices to Microsoft Defender for business
+# Onboard devices to Microsoft Defender for Business
 
-Microsoft Defender for business is designed with the busy small business in mind. With preconfigured policies and settings that are based on industry best practices, Microsoft Defender for business helps protect your company’s devices as soon as they are onboarded. 
+Microsoft Defender for Business is designed with the busy small business in mind. With preconfigured policies and settings that are based on industry best practices, Microsoft Defender for Business helps protect your company’s devices as soon as they are onboarded. 
 
 The process of onboarding devices consists of the following steps:
 
-1. [Confirm that you have Microsoft Defender for business](#confirm-that-you-have-microsoft-defender-for-business).
+1. [Confirm that you have Microsoft Defender for Business](#confirm-that-you-have-microsoft-defender-for-business).
 2. [Join devices to Azure Active Directory](#join-a-device-to-azure-ad) (Azure AD).
 3. [Enroll devices in Microsoft Endpoint Manager](#enroll-a-device-in-microsoft-endpoint-manager).
-4. [Onboard devices to Microsoft Defender for business](#onboard-devices-to-microsoft-defender-for-business).
+4. [Onboard devices to Microsoft Defender for Business](#onboard-devices-to-microsoft-defender-for-business).
 5. [Run a detection test](#run-a-detection-test).
 
-## Confirm that you have Microsoft Defender for business
+## Confirm that you have Microsoft Defender for Business
 
 > [!IMPORTANT]
 > You must be a Billing Admin or Global Admin to perform this task.
 
 1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), and sign in.
 
-2. Go to Billing > Licenses. Confirm that you have Microsoft Defender for business. 
+2. Go to Billing > Licenses. Confirm that you have Microsoft Defender for Business. 
 
    > [!TIP]
-   > You might see **Microsoft Defender for Endpoint - SMB** listed. This subscription is Microsoft Defender for business.
+   > You might see **Microsoft Defender for Endpoint - SMB** listed. This subscription is Microsoft Defender for Business.
 
 ## Join a device to Azure AD
 
@@ -72,7 +72,7 @@ The process of onboarding devices consists of the following steps:
 
 2. Choose **Devices**, and then choose **Enrollment status**. If any devices failed to enroll, you will see them listed here.
 
-## Onboard devices to Microsoft Defender for business
+## Onboard devices to Microsoft Defender for Business
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -114,7 +114,7 @@ The process of onboarding devices consists of the following steps:
    4. In the Command Prompt window, type the location of the script file that you saved in step 7b. For example, if you saved it to the Desktop, you’d type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`.
    5. Press the Enter key, or select **OK**.
 
-Soon after the script runs, the device is onboarded to Microsoft Defender for business. You can [run a detection test](#run-a-detection-test) to confirm.
+Soon after the script runs, the device is onboarded to Microsoft Defender for Business. You can [run a detection test](#run-a-detection-test) to confirm.
 
 ## Run a detection test
 
@@ -136,6 +136,6 @@ See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
 ## Next steps
 
-- [Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 
-- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md)
