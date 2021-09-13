@@ -119,4 +119,4 @@ Additional syntax help:
 
 - perf_benchmark.tar.gz
 
-  Description: The performance test reports. You will see this only if you are passing the performance parameter.
+  Description: The performance test reports. You will see this only if you are using the performance parameter.
