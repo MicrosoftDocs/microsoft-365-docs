@@ -126,7 +126,7 @@ If you have already turned on this setting during the preview period, no further
 
 2. From the navigation pane, select **Settings** > **Co-authoring for files with sensitivity files**.
 
-2. On the **Co-authoring for files with sensitivity labels ** page, read the summary description, prerequisites, what to expect, and the warning that you can't turn off this setting after you've turned it on.
+2. On the **Co-authoring for files with sensitivity labels** page, read the summary description, prerequisites, what to expect, and the warning that you can't turn off this setting after you've turned it on.
     
     Then select **Turn on co-authoring for files with sensitivity labels**, and **Apply**:
     
