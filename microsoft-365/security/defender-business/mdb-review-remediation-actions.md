@@ -1,5 +1,5 @@
 ---
-title: Review remediation actions in Microsoft Defender for business
+title: Review remediation actions in Microsoft Defender for Business
 description: View remediations that were taken automatically or that are awaiting approval in the Action center
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 07/14/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -33,7 +33,7 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 ## Remediation actions
 
-Microsoft Defender for business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
+Microsoft Defender for Business includes several remediation actions. These actions include manual response actions, actions following automated investigation, and live response actions.
 
 The following table lists remediation actions that are available:
 
@@ -45,6 +45,6 @@ The following table lists remediation actions that are available:
 
 ## Next steps
 
-- [Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
 
-- [Manage devices in Microsoft Defender for business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
