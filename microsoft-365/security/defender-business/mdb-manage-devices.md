@@ -1,13 +1,13 @@
 ---
-title: Manage devices in Microsoft Defender for business
-description: Learn how to manage devices in Microsoft Defender for business
+title: Manage devices in Microsoft Defender for Business
+description: Learn how to manage devices in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 07/15/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,17 +15,17 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Manage devices in Microsoft Defender for business
+# Manage devices in Microsoft Defender for Business
 
-In Microsoft Defender for business, you can manage devices as follows:
+In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
 - [Add or remove devices from a policy](#add-or-remove-devices-from-a-group)
-- [Offboard a device from Defender for business](#offboard-a-device)
+- [Offboard a device from Defender for Business](#offboard-a-device)
 
 > [!NOTE]
-> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for business. For more information, see [Why we recommend using the Microsoft 365 Defender portal to manage your security solution](mdb-choose-portal.md#why-we-recommend-using-the-microsoft-365-defender-portal-to-manage-your-security-solution).
+> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for Business. For more information, see [Why we recommend using the Microsoft 365 Defender portal to manage your security solution](mdb-choose-portal.md#why-we-recommend-using-the-microsoft-365-defender-portal-to-manage-your-security-solution).
 
 ## View the list of onboarded devices
 
@@ -101,6 +101,6 @@ Policies are applied to devices through device groups. You can edit a policy to 
 
 ## Next steps
 
-- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md).
+- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md).
 
-- [Respond to and mitigate threats in Microsoft Defender for business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
