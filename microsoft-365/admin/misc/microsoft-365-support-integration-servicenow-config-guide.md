@@ -505,7 +505,7 @@ These steps are necessary to set up the integration between your ServiceNow inst
 
         1. On the **basic information** tab, select **Service Now** as the internal support tool, and type **Outbound App ID** as the value of Application ID on the Step - 6 Complete the integration page, which was created in [Prerequisites (AAD OAuth Token)](#prerequisites-aad-oauth-token) step \#1.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+            :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
         1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following information:
 
@@ -645,7 +645,7 @@ The following steps are needed to set up the integration between your ServiceNow
 
     - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
 9. \[The person who is Helpdesk Admin or Service Request Admin in Microsoft 365 tenants\] Complete Integration.
 
