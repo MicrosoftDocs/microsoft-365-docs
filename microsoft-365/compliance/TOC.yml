@@ -24,6 +24,8 @@
   items:
     - name: Device Onboarding
       items: 
+        - name: Onboard devices for information protection solutions
+          href: cross-solution-ip-device-onboarding.md
         - name: Device Onboarding tools and methods for Windows 10 devices
           href: dlp-configure-endpoints.md
         - name: Onboard Windows 10 devices via Group Policy
