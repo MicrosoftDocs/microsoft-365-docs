@@ -120,6 +120,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 > [!div class="mx-imgBorder"]
 > ![New Attachment submission example.](../../media/submission-file-flyout.png)
 
+> [!NOTE]
+> If you are trying to submit a message with an email attachment that was replaced by a "Malware Alert Text.txt" file, you will need to submit the original message from Quarantine. For more information on Quarantine and how to release messages with malware false positives, see [Take action on quarantined email](manage-quarantined-messages-and-files.md).
+
 ## View admin submissions to Microsoft
 
 1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
