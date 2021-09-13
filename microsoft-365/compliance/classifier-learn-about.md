@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
@@ -100,7 +101,7 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Discrimination**: detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 
 > [!IMPORTANT]
-> The Discrimination trainable classifier is only available as public preview to customers whose Microsoft 365 tenants are homed in North America data centers. To see where your Microsoft 365 tenant is homed open the Microsoft 365 Admin center and navigate to **Settings** > **Org settings** > **Organizational profile** > **Data location**. 
+> The Discrimination trainable classifier is only available as public preview to customers whose Microsoft 365 tenants are homed in North America data centers. To see where your Microsoft 365 tenant is homed open the Microsoft 365 admin center and navigate to **Settings** > **Org settings** > [**Organization profile** tab](https://go.microsoft.com/fwlink/p/?linkid=2067339) > **Data location**. 
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 

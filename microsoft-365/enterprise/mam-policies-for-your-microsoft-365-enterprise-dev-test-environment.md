@@ -45,7 +45,7 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 In this phase, you create a device compliance policy for Windows 10 devices. This phase uses Microsoft Intune and the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to add a group, and create a compliance policy.
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), and sign in to your Microsoft 365 test lab subscription with your global administrator account. Select the **Endpoint Manager** admin center. The [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) opens.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com), sign in to your Microsoft 365 test lab subscription with your global administrator account, and select the <a href="https://go.microsoft.com/fwlink/?linkid=2109431" target="_blank">Endpoint Manager admin center</a>.
 
     If a message similar to **You haven't enabled device management yet** message is shown, then select Intune as the MDM authority. For the specific steps, see [Set the mobile device management authority](/mem/intune/fundamentals/mdm-authority-set).
 
