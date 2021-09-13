@@ -1,13 +1,13 @@
 ---
-title: Configuration settings in Microsoft Defender for business
-description: Understand your configuration settings in Microsoft Defender for business
+title: Configuration settings in Microsoft Defender for Business
+description: Understand your configuration settings in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/13/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,11 +15,11 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Configuration settings in Microsoft Defender for business
+# Configuration settings in Microsoft Defender for Business
 
-This article describes configuration settings for Microsoft Defender for business. Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
+This article describes configuration settings for Microsoft Defender for Business. Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
 
-The following table lists your settings and options:
+The following table lists your settings and options:<br/><br/>
 
 | Setting | Description |
 |:---|:---|
@@ -35,7 +35,7 @@ The following table lists your settings and options:
 | Time of day to run a scheduled scan | Select a time to run your regularly scheduled antivirus scans to run. |
 | Use low performance | Turn this setting on to limit the device memory and resources that are used during scheduled scans. |
 | **User experience**   |
-| Allow users to access the Windows Security app | Turn this on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for business, but they will be able to run a quick scan if need be, or view any detected threats. |
+| Allow users to access the Windows Security app | Turn this on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for Business, but they will be able to run a quick scan if need be, or view any detected threats. |
 | **Antivirus exclusions** | *In general, you should not need to define exclusions.* Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behaviors and typical management files. [Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md). |
 | Process exclusions | Exclude files that are opened by specific processes from Microsoft Defender Antivirus scans. [Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). |
 | File and extension exclusions | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. [Learn more about file and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
@@ -43,8 +43,8 @@ The following table lists your settings and options:
 
 ## Next step
 
-- [Get started with Microsoft Defender for business](mdb-get-started.md)
+- [Get started with Microsoft Defender for Business](mdb-get-started.md)
 
 - [Review the setup and configuration process](mdb-setup-configuration.md)
 
-- [View or edit device policies in Microsoft Defender for business](mdb-view-edit-device-policies.md)
+- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md)
