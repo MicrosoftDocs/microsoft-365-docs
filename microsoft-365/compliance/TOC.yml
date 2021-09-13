@@ -20,7 +20,7 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
-- name: Cross solution features
+- name: Cross-solution features
   items:
     - name: Device Onboarding
       items: 
