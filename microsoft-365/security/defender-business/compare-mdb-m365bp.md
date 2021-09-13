@@ -1,13 +1,13 @@
 ---
-title: Compare Microsoft Defender for business to Microsoft 365 Business Premium
-description: Understand the differences between Defender for business and Microsoft 365 Business Premium. Knowing what's included in each plan can help you make an informed decision for your company.
+title: Compare Microsoft Defender for Business to Microsoft 365 Business Premium
+description: Understand the differences between Defender for Business and Microsoft 365 Business Premium. Knowing what's included in each plan can help you make an informed decision for your company.
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 07/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: dforbiz
 localization_priority: Normal
@@ -15,20 +15,20 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# Compare Microsoft Defender for business to Microsoft 365 Business Premium
+# Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
-As you probably already know, Microsoft offers various cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection and device management capabilities. 
+As you probably already know, Microsoft offers various cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection for email and content, and device management capabilities.
 
-**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for business**. If you want to see how Microsoft 365 Business Premium compares to Microsoft Defender for business, this article summarizes important features and capabilities of these two plans. 
+**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for business**. If you want to see how Microsoft 365 Business Premium compares to Microsoft Defender for Business, this article summarizes important features and capabilities of these two plans. 
 
 > [!NOTE]
-> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see the following resources:
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see the following resources:
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-<br/>
+<br/><br/>
 
-| Feature/Capability | [Microsoft Defender for business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
+| Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
 | Email protection | Yes (for non-Microsoft 365 email) | Yes (for Microsoft 365 email) |
 | Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
@@ -45,9 +45,9 @@ As you probably already know, Microsoft offers various cloud solutions and servi
 
 ## Next steps
 
-- [Get a more detailed overview of Microsoft Defender for business](mdb-overview.md)
+- [Get a more detailed overview of Microsoft Defender for Business](mdb-overview.md)
 
-- [Set up and configure Microsoft Defender for business](mdb-setup-configuration.md)
+- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 
-- [Get started with Microsoft Defender for business](mdb-get-started.md)
+- [Get started using Microsoft Defender for Business](mdb-get-started.md)
  
