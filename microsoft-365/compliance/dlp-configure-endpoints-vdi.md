@@ -53,7 +53,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 > [!WARNING]
 > For environments where there are low resource configurations, the VDI boot procedure might slow the device onboarding process.
 
-1. Open the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) that you downloaded from the service onboarding wizard.
+1. Get the VDI configuration package .zip file (*DeviceCompliancePackage.zip*) from [Microsoft Compliance center](https://compliance.microsoft.com).
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Onboarding**.
 
