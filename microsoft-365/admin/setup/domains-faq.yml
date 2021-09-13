@@ -145,7 +145,7 @@ sections:
           ::: moniker-end
           
           > [!NOTE]
-          > Changing the default domain does not impact the user logon or access to applications or services. Only if you change a UPN will any saved links to the user's OneDrive (such as desktop shortcuts or browser favorites) no longer work and will need to be updated.
+          > Changing the default domain does not impact user credentials or their access to applications or services. Changing the domain that a user is associated with will impact mail, online storage, and login credentials.
           
       - question: Can I add custom subdomains or multiple domains to Microsoft 365?
         answer: |
