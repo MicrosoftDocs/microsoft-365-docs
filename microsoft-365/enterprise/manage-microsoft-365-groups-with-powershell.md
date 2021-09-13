@@ -12,6 +12,7 @@ f1.keywords:
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
+ - admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -145,7 +146,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## Change the display name of the Microsoft 365 Group
 
-The display name specifies the name of the Microsoft 365 Group. You can see this name in your exchange admin center or Microsoft 365 admin center. You can edit the display name of the group or assign a display name to an existing Microsoft 365 Group by running the Set-UnifiedGroup command:
+The display name specifies the name of the Microsoft 365 Group. You can see this name in your exchange admin center or <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can edit the display name of the group or assign a display name to an existing Microsoft 365 Group by running the Set-UnifiedGroup command:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
