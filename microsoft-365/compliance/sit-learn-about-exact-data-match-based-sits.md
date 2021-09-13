@@ -1,5 +1,5 @@
 ---
-title: "Create custom sensitive information types with Exact Data Match"
+title: "Learn about exact data match based sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,9 +15,11 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Learn how to create custom sensitive information types with Exact Data Match based classification.
+description: Learn about exact data match based sensitive information types.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Create custom sensitive information types with Exact Data Match based classification
+# Learn about exact data match based sensitive information types
+
+
 
