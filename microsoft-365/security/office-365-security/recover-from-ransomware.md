@@ -142,7 +142,7 @@ You can report phishing messages that contain ransomware by using one of several
 Key information from Microsoft:
 
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
-- [Human-operated ransomware](human-operated-ransomware.md)
+- [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
 - **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
@@ -160,7 +160,7 @@ Microsoft 365 Defender:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
-- [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
+- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
