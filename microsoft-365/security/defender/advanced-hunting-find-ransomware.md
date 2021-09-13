@@ -247,8 +247,8 @@ By default, the query result lists only devices that have more than two types of
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
-- 
-- ## Additional ransomware resources
+
+## Additional ransomware resources
 
 Key information from Microsoft:
 
