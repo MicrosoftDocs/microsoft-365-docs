@@ -52,11 +52,11 @@ The global admin for your organization has full permissions to create and edit r
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
 
-4. Repeat these steps to create more labels.
+4. Repeat these steps to create any more retention labels that you need for different retention settings.
 
-To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any eligible settings.
+To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention label configuration that lets you change the label descriptions and any eligible settings.
 
-Some settings can't be changed after the label is created and saved, which include:
+Most settings can't be changed after the label is created and saved, which include:
 - The retention label name and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 
 ## Next steps
