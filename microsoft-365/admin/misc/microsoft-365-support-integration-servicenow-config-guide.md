@@ -133,7 +133,7 @@ Some prerequisites are necessary to set up the Microsoft 365 support integration
 
     - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-    - Redirect URL: https://{service-now-instance-name}.service-now.com/auth_redirect.do
+    - Redirect URL: `https://{service-now-instance-name}.service-now.com/auth_redirect.do`
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -313,7 +313,7 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    1. Add redirect URL: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`
+    1. Add redirect URL: `https://{your-servicenow-instance}.service-now.com/auth_redirect.do`.
 
         :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -361,7 +361,7 @@ These prerequisite steps are necessary to set up the Microsoft 365 support integ
 
         - Token URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/oauth2/token`
 
-        - Redirect URL:
+        - Redirect URL: `https://{service-now-instance-name}.service-now.com/auth_redirect.do`
 
             :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image6.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -481,15 +481,15 @@ These steps are necessary to set up the integration between your ServiceNow inst
 
 8. \[The person who is a ServiceNow admin\] Set up Application Settings.
 
-    Select these settings:
+    Select the following settings, and then select **Next**.
 
-    1. SSO with Microsoft 365: Check the box if the ServiceNow instance is setup SSO with Microsoft 365 tenants; otherwise uncheck it.
+    - SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants, otherwise uncheck it.
 
-    1. Microsoft 365 admin email: The email of Microsoft 365 admin user to be contacted when Microsoft 365 support cases are created.
+    - Microsoft 365 admin email: The email of Microsoft 365 admin user who is contacted when Microsoft 365 support cases are created.
 
-    1. Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
+    - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you're ready to move forward officially with Microsoft 365 support integration, uncheck the box.
 
-        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
     1. Select **Next**.
 
