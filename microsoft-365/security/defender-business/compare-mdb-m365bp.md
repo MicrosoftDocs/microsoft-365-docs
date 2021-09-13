@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 As you probably already know, Microsoft offers various cloud solutions and services, including several different plans for small and midsized businesses like yours. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) offers advanced cyberthreat protection for email and content, and device management capabilities.
 
-**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for business**. If you want to see how Microsoft 365 Business Premium compares to Microsoft Defender for Business, this article summarizes important features and capabilities of these two plans. 
+**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business**. If you want to see how Microsoft 365 Business Premium compares to Microsoft Defender for Business, this article summarizes important features and capabilities of these two plans. 
 
 > [!NOTE]
 > This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see the following resources:
