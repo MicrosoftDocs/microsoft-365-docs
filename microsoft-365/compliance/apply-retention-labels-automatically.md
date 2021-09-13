@@ -66,9 +66,15 @@ Make sure you have [created the retention labels](file-plan-manager.md#create-re
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Records management** > **Label policies** tab > **Auto-apply a label**
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    Don't immediately see **Records management**? First select **Show all**. 
+    - If you are using records management:
+        - **Solutions** > **Records management** > > **Label policies** tab > **Auto-apply a label**
+    
+    - If you are using information governance:
+        - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply a label**
+    
+    Don't immediately see your solution? First select **Show all**.
 
 2. Follow the prompts to create the auto-labeling policy. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
     

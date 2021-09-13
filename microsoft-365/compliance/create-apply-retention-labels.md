@@ -58,7 +58,7 @@ Publish retention labels so that they can be applied by users in apps, such as S
     - If you are using information governance:
         - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution? First select **Show all**. 
 
 2. Follow the prompts to create the retention label policy. Be careful what name you choose for the policy, because this can't be changed after the policy is saved.
     
