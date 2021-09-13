@@ -116,9 +116,11 @@ To confirm the current membership and membership changes for an adaptive scope:
 
 #### Validating advanced queries
 
-You can manually validate advanced queries by using PowerShell (for users and groups queries) and SharePoint search (for SharePoint sites and OneDrive accounts).
+You can manually validate advanced queries by using PowerShell or SharePoint search:
+- Use PowerShell for the scope types **Users** and **Microsoft 365 Groups**
+- Use SharePoint search for the scope type **SharePoint sites**
 
-To run a query for users and groups:
+To run a query using PowerShell:
 
 1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -132,7 +134,7 @@ To run a query for users and groups:
 
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
-To run a query for SharePoint or OneDrive sites:
+To run a query using SharePoint search:
 
 1. Using a global admin account or an account that has the SharePoint admin role, go to `https://<your_tenant>.sharepoint.com/search`.
 
