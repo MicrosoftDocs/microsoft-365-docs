@@ -1,13 +1,13 @@
 ---
-title: View or edit device policies in Microsoft Defender for business
-description: See how to set up and configure Microsoft Defender for business
+title: View or edit device policies in Microsoft Defender for Business
+description: See how to set up and configure Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/07/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,11 +15,11 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ---
 
-# View or edit device policies in Microsoft Defender for business
+# View or edit device policies in Microsoft Defender for Business
 
-Microsoft Defender for business was designed to simplify setup, configuration, and management. Your Microsoft Defender for business plan comes with default policies that are based on Microsoft’s recommendations for security and productivity. You can view and edit your default policies, and you can define new policies. You can also change the order of priority for policies that you create. 
+Microsoft Defender for Business was designed to simplify setup, configuration, and management. Your Microsoft Defender for Business plan comes with default policies that are based on Microsoft’s recommendations for security and productivity. You can view and edit your default policies, and you can define new policies. You can also change the order of priority for policies that you create. 
 
-The following sections provide more information about your security policies in Microsoft Defender for business:
+The following sections provide more information about your security policies in Microsoft Defender for Business:
 
 - [View your policies](#view-your-policies)
 - [Define a new policy](#define-a-new-policy)
@@ -96,7 +96,7 @@ The following sections provide more information about your security policies in 
 
 ## What about policy order?
 
-Microsoft Defender for business includes predefined policies to help ensure the devices your employees use are protected. You can add new policies as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies.
+Microsoft Defender for Business includes predefined policies to help ensure the devices your employees use are protected. You can add new policies as well. For example, suppose that you want to apply certain settings to some devices, and different settings to other devices. You can do that by adding policies.
 
 As you define policies, you’ll notice that an order of priority is assigned. You can edit the order of priority for the policies that you define, but you cannot change the order of priority for default policies. For example, suppose that for your Windows client devices, you have three next-generation protection policies. In this case, your default policy is number 3 in priority. You can change the order of your policies that are numbered 1 and 2, but the default policy will remain number 3 in your list. 
 
@@ -104,6 +104,6 @@ As you define policies, you’ll notice that an order of priority is assigned. Y
 
 ## Next steps
 
-- [Get started using Defender for business](mdb-get-started.md)
+- [Get started using Defender for Business](mdb-get-started.md)
 
 - [Manage devices](mdb-manage-devices.md)
