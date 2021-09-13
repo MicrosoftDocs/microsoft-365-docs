@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_purchase
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -34,7 +35,7 @@ As you add new users, you will need to purchase more Microsoft 365 licenses for 
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, choose **Billing**, **Your Products**, then select your subscription.
+1. In the Microsoft 365 admin center, choose **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your Products**</a>, and then select your subscription.
 1. Choose **Buy licenses**.
 1. Enter the number of licenses you want to buy.
 1. Select **Save**.

@@ -24,7 +24,7 @@ After XIP source data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive the XIP source data in Microsoft 365.
 
-![Archiving workflow for XIP source data](../media/XIPConnectorWorkflow.png)
+![Archiving workflow for XIP source data.](../media/XIPConnectorWorkflow.png)
 
 1. Your organization works with the XIP source to set up and configure an XIP site.
 

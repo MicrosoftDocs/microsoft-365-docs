@@ -114,7 +114,7 @@ A panel will open where you can select the priority and add additional details s
 
 To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com) under **Endpoints** > **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
-![Image of web content filtering category lookup results](../../media/web-content-filtering-category-lookup.png)
+![Image of web content filtering category lookup results.](../../media/web-content-filtering-category-lookup.png)
 
 ## Web content filtering cards and details
 
@@ -126,25 +126,25 @@ This card lists the parent web content categories with the largest increase or d
 
 In the first 30 days of using this feature, your organization might not have enough data to display this information.
 
-![Image of web activity by category card](images/web-activity-by-category600.png)
+![Image of web activity by category card.](images/web-activity-by-category600.png)
 
 ### Web content filtering  summary card
 
 This card displays the distribution of blocked access attempts across the different parent web content categories. Select one of the colored bars to view more information about a specific parent web category.
 
-![Image of web content filtering summary card](images/web-content-filtering-summary.png)
+![Image of web content filtering summary card.](images/web-content-filtering-summary.png)
 
 ### Web activity summary card
 
 This card displays the total number of requests for web content in all URLs.
 
-![Image of web activity summary card](images/web-activity-summary.png)
+![Image of web activity summary card.](images/web-activity-summary.png)
 
 ### View card details
 
 You can access the **Report details** for each card by selecting a table row or colored bar from the chart in the card. The report details page for each card contains extensive statistical data about web content categories, website domains, and device groups.
 
-![Image of web protection report details](images/web-protection-report-details.png)
+![Image of web protection report details.](images/web-protection-report-details.png)
 
 - **Web categories**: Lists the web content categories that have had access attempts in your organization. Select a specific category to open a summary flyout.
 

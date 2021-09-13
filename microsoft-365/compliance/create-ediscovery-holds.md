@@ -13,6 +13,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
@@ -35,9 +36,9 @@ When you create a hold, you have the following options to scope the content that
 
 To create an eDiscovery hold that's associated with a Core eDiscovery case:
   
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane, click **Show all**, and then click **eDiscovery > Core**.
 
 3. On the **Core eDiscovery** page, click the name of the case that you want to create the hold in.
 
@@ -49,7 +50,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 7. On the **Choose locations** wizard page, choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
-    ![Choose the content locations to place on hold](../media/eDiscoveryHoldLocations.png)
+    ![Choose the content locations to place on hold.](../media/eDiscoveryHoldLocations.png)
   
    1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for a Microsoft Team, Office 365 Group, and Yammer Group. For more information about the application data that is preserved when a mailbox is placed on hold, see [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
 
@@ -64,7 +65,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 9. To create a query-based hold using keywords or conditions, complete the following steps. To preserve all content in the specified content locations, click **Next**.
 
-    ![Create a query-based hold with keyword and conditions](../media/eDiscoveryHoldQuery.png)
+    ![Create a query-based hold with keyword and conditions.](../media/eDiscoveryHoldQuery.png)
   
     1. In the box under **Keywords**, type a query to preserve only the content that matches the query criteria. You can specify keywords, email message properties, or site properties, such as file names. You can also use more complex queries that use a Boolean operator, such as **AND**, **OR**, or **NOT**.
 
@@ -88,7 +89,7 @@ Keep the following things in mind when you place a query-based eDiscovery hold o
 
 After you create an eDiscovery hold, information about the new hold is displayed on the flyout page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify the amount of content related to the case is being preserved.
   
-![Hold statistics](../media/eDiscoveryHoldStatistics.png)
+![Hold statistics.](../media/eDiscoveryHoldStatistics.png)
   
 Keep the following things in mind about eDiscovery hold statistics:
   
@@ -172,7 +173,7 @@ Keep the following things in mind when placing both Teams and Office 365 Groups 
   
 - When a user's mailbox is searched, any Team or Office 365 Group that the user is a member of won't be searched. Similarly, when you place a Team or Office 365 Group on eDiscovery hold, only the group mailbox and group site are placed on hold. The mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them to the eDiscovery hold. So if you have  to place a Team or Office 365 Group on hold for a legal reason, consider adding the mailboxes and OneDrive accounts of team or group members on the same hold.
 
-- To get a list of the members of a Team or Office 365 Group, you can view the properties on the **Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+- To get a list of the members of a Team or Office 365 Group, you can view the properties on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

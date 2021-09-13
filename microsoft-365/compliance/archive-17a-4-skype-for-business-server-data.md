@@ -24,7 +24,7 @@ After Skype for Business Server data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a data connector to archive Skype for Business Server data in Microsoft 365.
 
-![Archiving workflow for Skype for Business Server data from 17a-4](../media/SkypeServerDataParserConnectorWorkflow.png)
+![Archiving workflow for Skype for Business Server data from 17a-4.](../media/SkypeServerDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Skype for Business Server DataParser.
 

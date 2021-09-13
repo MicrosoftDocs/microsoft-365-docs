@@ -25,7 +25,7 @@ After data is imported to user mailboxes in Microsoft 365, you can apply Microso
 
 CellTrust's SL2 platform captures communication data from multiple sources. SL2 data sources are either Person-to-Person (P2P) or Application-to-Person (A2P). The process described in this article pertains only to P2P data sources. For all P2P data sources, at least one party in the collaboration is an SL2 user who is subscribed to the SL2 service. The following overview explains the process of using the CellTrust SL2 Data Connector in Microsoft 365.
 
-![Archiving workflow for CellTrust SL2 service](../media/CellTrustSL2ConnectorWorkflow.png)
+![Archiving workflow for CellTrust SL2 service.](../media/CellTrustSL2ConnectorWorkflow.png)
 
 1. SL2 users send and receive data to and from SL2 services in Microsoft Azure.
 
@@ -43,6 +43,8 @@ CellTrust's SL2 platform captures communication data from multiple sources. SL2 
 
 - The user who creates the CellTrust SL2 data connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to a role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
+- This data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+
 ## Step 1: Create a CellTrust SL2 connector
 
 The first step is to create a data connector in the Microsoft 365 compliance center.
@@ -51,7 +53,7 @@ The first step is to create a data connector in the Microsoft 365 compliance cen
 
 2. On the **Overview** tab, click **Filter** and select **By CellTrust**, and then apply the filter.
 
-   ![Configure filter to display CellTrust connectors](../media/DataConnectorsFilter.png)
+   ![Configure filter to display CellTrust connectors.](../media/DataConnectorsFilter.png)
 
 3. Click **CellTrust SL2 (preview**).
 
@@ -77,7 +79,7 @@ The next step is to sign into an administrator account for your CellTrust SL2 do
 
 3. Enable the business units you wish to archive. Selecting the domain will not automatically select the OUs. You must enable each OU separately to archive it.
 
-   ![Enable OUs to archive](../media/EnableCellTrustOUs.png)
+   ![Enable OUs to archive.](../media/EnableCellTrustOUs.png)
 
 4. When you're finished with your selections, close the browser window and return to the wizard page in Microsoft 365 compliance center. After a few seconds, the wizard automatically advances to the next step of mapping users.
 

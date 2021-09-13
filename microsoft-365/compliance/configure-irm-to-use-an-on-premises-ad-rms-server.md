@@ -163,4 +163,4 @@ To verify that you have successfully imported the TPD and enabled IRM, do the fo
 
 - Use the **Test-IRMConfiguration** cmdlet to test IRM functionality. For details, see "Example 1" in [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration).
 
-- Compose a new message in Outlook on the web and IRM-protect it by selecting **Set permissions** option from the extended menu (![More Options Icon](../media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Compose a new message in Outlook on the web and IRM-protect it by selecting **Set permissions** option from the extended menu (![More Options Icon.](../media/ITPro-EAC-MoreOptionsIcon.gif)).

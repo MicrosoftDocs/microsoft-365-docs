@@ -196,7 +196,7 @@ Write-Host "Getting the URL for each user's OneDrive for Business site." -foregr
 $AdminUrl = "https://$mySiteDomain-admin.sharepoint.com"
 $mySiteUrlRoot = "https://$mySiteDomain-my.sharepoint.com"
 $urls = @()
-foreach($emailAddress in $emailAddresses)
+foreach($emailAddress in $finallist)
 {
 try
 {

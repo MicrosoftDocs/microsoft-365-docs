@@ -20,7 +20,7 @@ description: "Learn how to set up privacy management for your organization, set 
 
 # Get started with privacy management (preview)
 
-In this article: learn how to set up **access to privacy management** for your organization, how to **get started** with evaluating your data, and how to handle important **settings**.
+Privacy management is currently available in public preview. Learn how to set up access for your organization and get started with evaluating your data.
 
 ## Who can access privacy management
 

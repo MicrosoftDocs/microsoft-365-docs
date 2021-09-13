@@ -58,7 +58,7 @@ The name of your user (here 'Alex') will appear under Eligible assignments on th
 
 ***Step 2***. Create the required second (elevated) permission group for additional tasks and assign eligibility.
 
-Using [Privileged Access groups])https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organisational practices and needs.
+Using [Privileged Access groups](/azure/active-directory/privileged-identity-management/groups-features) we can now create our own custom groups and combine permissions or increase granularity where required to meet your organisational practices and needs.
 
 ### Create a role group requiring the permissions we need.
 

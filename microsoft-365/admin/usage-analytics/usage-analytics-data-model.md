@@ -104,9 +104,9 @@ This table contains data about each user who had an activity in any of the servi
 |ODB_FileSynched  <br/> |Number of files this user synchronized on any OneDrive for Business.  <br/> |
 |ODB_FileSharedInternally  <br/> |Number of files this user shared internally from any OneDrive for Business, or with users within groups (that might include external users).  <br/> |
 |ODB_FileSharedExternally  <br/> |Number of files this user shared externally from any OneDrive for Business.  <br/> |
-|ODB_AccessByOwner  <br/> |Number of files the user interacted with that reside on their own OneDrive for Business.  <br/> |
-|ODB_AccessOthers  <br/> |Number of files this user interacted with which reside on another user's OneDrive for Business.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Number of files with this user interacted on any group site.  <br/> |
+|ODB_AccessedByOwner  <br/> |Number of sites the user interacted with that reside on their own OneDrive for Business.  <br/> |
+|ODB_AccessedByOthers  <br/> |Number of sites this user interacted with which reside on another user's OneDrive for Business.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Number of files this user interacted with on any group site.  <br/> |
 |SPO_GroupFileSynched  <br/> |Number of files this user synchronized on any group site.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Number of files this user shared externally from any group site.  <br/> |
@@ -273,7 +273,17 @@ This table provides data about how Microsoft 365 Groups is used across the organ
 |YAM_LikedActivities  <br/> |Number of Yammer like activities.  <br/> |
 |YAM_PostedActivties  <br/> |Number of Yammer post activities.  <br/> |
 |YAM_ReadActivites  <br/> |Number of Yammer read activities.  <br/> |
-   
+
+### Data table - Tenant Office Licenses
+
+This table provides month-over-month summary data about the license assignment for users. 
+  
+|**Column name**|**Column description**|
+|:-----|:-----|
+|LicenseName  <br/> |Name of the license.  <br/> |
+|AssignedCount  <br/> |Number of assigned licenses.  <br/> |
+|Timeframe  <br/> |Month value.  <br/> |
+
 ### Data table - Tenant Office Activation
 
 The table provides data about the number of Office subscription activations across the service plans, for example, Microsoft 365 Apps for enterprises, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).

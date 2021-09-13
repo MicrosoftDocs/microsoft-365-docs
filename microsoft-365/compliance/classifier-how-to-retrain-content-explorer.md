@@ -83,11 +83,11 @@ To understand more about the overall workflow of retraining a classifier, see [P
 9. Open **Trainable classifiers**.
 10. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
-![classifier in retraining status](../media/classifier-retraining.png)
+![classifier in retraining status.](../media/classifier-retraining.png)
 
 11. Once retraining completes, choose the classifier to open the retraining overview.
 
-![classifier retraining results overview](../media/classifier-retraining-overview.png)
+![classifier retraining results overview.](../media/classifier-retraining-overview.png)
 
 12. Review the recommended action, and the prediction comparisons of the retrained and currently published versions of the classifier.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.

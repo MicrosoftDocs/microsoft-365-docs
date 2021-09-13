@@ -50,7 +50,8 @@ You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows 
 After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2). For more information, see [Supported features available in Azure Defender](/azure/security-center/security-center-services). 
+> Unlike user licenses, these licenses are not to be assigned to any user or object. They are required to be in the tenant for compliance.
 
 ### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
 
@@ -170,7 +171,7 @@ Support for Windows Server provides deeper insight into server activities, cover
 
     1. Confirm  that a recent event containing the passive mode event is found:
 
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+       ![Image of passive mode verification result.](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Microsoft Defender AV is installed:
 
@@ -255,7 +256,7 @@ To offboard the Windows server, you can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma.png)
+    ![Image of Microsoft Monitoring Agent Properties.](images/atp-mma.png)
 
 #### Run a PowerShell command to remove the configuration
 
@@ -265,7 +266,7 @@ To offboard the Windows server, you can use either of the following methods:
 
    1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
 
-      ![Image of Windows server onboarding](images/atp-server-offboarding-workspaceid.png)
+      ![Image of Windows server onboarding.](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
@@ -322,29 +323,29 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 
 - Create a Group Policy Folder named "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders.":::
 
     **This will add a new folder on every server that gets the GPO applied, called MMA, and will be stored in c:\windows. This will contain the installation files for the MMA, prerequisites, and install script.**
 
 - Create a Group Policy Files preference for each of the files stored in Net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1.":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd.":::
 
 For the two KBs (one for Windows Server 2008R2/Windows 7 and the other for Windows Server 2012 R2) repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
-:::image type="content" source="images/targeteditor.png" alt-text="target editor":::
+:::image type="content" source="images/targeteditor.png" alt-text="target editor.":::
 
 - For Windows Server 2008 R2 you need (and it will only copy down) Windows6.1-BJ3080149-x64.msu
 - For Windows Server 2012 R2 you need (and it will only copy down) Windows8.1-BJ3080149-x64.msu
 
 Once this is done, you'll need to create a start-up script policy:
 
-:::image type="content" source="images/startupprops.png" alt-text="start up properties":::
+:::image type="content" source="images/startupprops.png" alt-text="start up properties.":::
 
 The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
@@ -354,13 +355,13 @@ This could be done in two phases. First create **the files and the folder in** G
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
-:::image type="content" source="images/schtask.png" alt-text="schedule task":::
+:::image type="content" source="images/schtask.png" alt-text="schedule task.":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="new task properties":::
+:::image type="content" source="images/newtaskprops.png" alt-text="new task properties.":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="deploy mma download props":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="deploy mma download props.":::
 
-:::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
+:::image type="content" source="images/tasksch.png" alt-text="task scheduler.":::
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 

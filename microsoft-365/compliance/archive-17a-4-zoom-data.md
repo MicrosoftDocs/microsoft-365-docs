@@ -24,7 +24,7 @@ After Zoom data is stored in user mailboxes, you can apply Microsoft 365 complia
 
 The following overview explains the process of using a data connector to archive Zoom data in Microsoft 365.
 
-![Archiving workflow for Zoom data from 17a-4](../media/ZoomDataParserConnectorWorkflow.png)
+![Archiving workflow for Zoom data from 17a-4.](../media/ZoomDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the Zoom DataParser.
 

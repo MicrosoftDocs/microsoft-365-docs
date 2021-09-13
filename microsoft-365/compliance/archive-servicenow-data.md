@@ -24,7 +24,7 @@ After ServiceNow data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive the ServiceNow data in Microsoft 365.
 
-![Archiving workflow for ServiceNow data](../media/ServiceNowConnectorWorkflow.png)
+![Archiving workflow for ServiceNow data.](../media/ServiceNowConnectorWorkflow.png)
 
 1. Your organization works with ServiceNow to set up and configure a ServiceNow site.
 

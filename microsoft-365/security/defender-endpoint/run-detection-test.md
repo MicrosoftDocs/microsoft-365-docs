@@ -50,7 +50,7 @@ Run the following PowerShell script on a newly onboarded device to verify that i
 
    1. Right-click **Command Prompt** and select **Run as administrator**.
 
-      ![Window Start menu pointing to Run as administrator](images/run-as-admin.png)
+      ![Window Start menu pointing to Run as administrator.](images/run-as-admin.png)
 
 3. At the prompt, copy and run the following command:
 

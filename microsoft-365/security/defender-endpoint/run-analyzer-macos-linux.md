@@ -60,7 +60,7 @@ ms.technology: m365d
 
 Example:
 
-![Image of command line example](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+![Image of command line example.](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 Additional syntax help:
 

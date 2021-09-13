@@ -198,7 +198,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page](../../media/custom-detection-details.png)<br>
+![Custom detection rule details page.](../../media/custom-detection-details.png)<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:

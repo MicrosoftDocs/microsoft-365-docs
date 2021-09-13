@@ -28,7 +28,7 @@ TLGs help you quickly learn about Microsoft products. They're great for situatio
   
 TLGs also create representative environments for development and testing of applications, also known as dev/test environments.
   
-![Test Lab Guides in the Microsoft Cloud](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
+![Test Lab Guides in the Microsoft Cloud.](../media/24ad0d1b-3274-40fb-972a-b8188b7268d1.png)
   
 ## Microsoft 365 dev/test environment
 

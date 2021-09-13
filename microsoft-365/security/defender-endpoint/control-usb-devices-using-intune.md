@@ -80,7 +80,7 @@ To prevent malware infections or data loss, an organization may restrict USB dri
 
 All of the above controls can be set through the Intune [Administrative Templates](/intune/administrative-templates-windows). The relevant policies are located here in the Intune Administrator Templates:
 
-![screenshot of list of Admin Templates](images/admintemplates.png)
+![screenshot of list of Admin Templates.](images/admintemplates.png)
 
 > [!NOTE]
 > Using Intune, you can apply device configuration policies to Azure AD user and/or device groups.
@@ -103,11 +103,11 @@ To enforce the policy for already installed devices, apply the prevent policies 
 
 When configuring the allow device installation policy, you must allow all parent attributes as well. You can view the parents of a device by opening Device Manager and view by connection.
 
-![Devices by connection](images/devicesbyconnection.png)
+![Devices by connection.](images/devicesbyconnection.png)
 
 In this example, the following classes needed to be added: HID, Keyboard, and {36fc9e60-c465-11cf-8056-444553540000}. See [Microsoft-provided USB drivers](/windows-hardware/drivers/usbcon/supported-usb-classes) for more information.
 
-![Device host controller](images/devicehostcontroller.jpg)
+![Device host controller.](images/devicehostcontroller.jpg)
 
 If you want to restrict to certain devices, remove the device setup class of the peripheral that you want to limit. Then add the device ID that you want to add. Device ID is based on the vendor ID and product ID values for a device. For information on device ID formats, see [Standard USB Identifiers](/windows-hardware/drivers/install/standard-usb-identifiers).
 
@@ -134,11 +134,11 @@ To prevent installation of devices that match any of these device IDs:
 
 1. [Look up device ID](#look-up-device-id) for devices that you want Windows to prevent from installing.
 
-   ![Look up vendor or product ID](images/lookup-vendor-product-id.png)
+   ![Look up vendor or product ID.](images/lookup-vendor-product-id.png)
 
 2. Enable **Prevent installation of devices that match any of these device IDs** and add the vendor or product IDs to the list.
 
-    ![Add vendor ID to prevent list](images/add-vendor-id-to-prevent-list.png)
+    ![Add vendor ID to prevent list.](images/add-vendor-id-to-prevent-list.png)
 
 #### Look up device ID
 
@@ -170,7 +170,7 @@ To prevent installation of particular classes of devices:
 2. Enable **Prevent installation of devices using drivers that match these device setup classes** and add the class GUID to the list.
 
     > [!div class="mx-imgBorder"]
-    > ![Add device setup class to prevent list](images/Add-device-setup-class-to-prevent-list.png)
+    > ![Add device setup class to prevent list.](images/Add-device-setup-class-to-prevent-list.png)
 
 ### Block installation and usage of removable storage
 
@@ -179,7 +179,7 @@ To prevent installation of particular classes of devices:
 2. Click **Devices** \> **Configuration Profiles** \> **Create profile**.
 
     > [!div class="mx-imgBorder"]
-    > ![Create device configuration profile](images/create-device-configuration-profile.png)
+    > ![Create device configuration profile.](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
    - Name: Type a name for the profile
@@ -188,13 +188,13 @@ To prevent installation of particular classes of devices:
    - Profile type: Device restrictions
 
    > [!div class="mx-imgBorder"]
-   > ![Create profile](images/create-profile.png)
+   > ![Create profile.](images/create-profile.png)
 
 4. Click **Configure** \> **General**.
 
 5. For **Removable storage** and **USB connection (mobile only)**, choose **Block**. **Removable storage** includes USB drives, whereas **USB connection (mobile only)** excludes USB charging but includes other USB connections on mobile devices only.
 
-   ![General settings](images/general-settings.png)
+   ![General settings.](images/general-settings.png)
 
 6. Click **OK** to close **General** settings and **Device restrictions**.
 
@@ -231,7 +231,7 @@ You can prevent installation of the prohibited peripherals with matching device 
 Using Intune, you can limit the services that can use Bluetooth through the ["Bluetooth allowed services"](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide). The default state of "Bluetooth allowed services" settings means everything is allowed.  As soon as a service is added, that becomes the allowed list. If the customer adds the Keyboards and Mice values, and doesn't add the file transfer GUIDs, file transfer should be blocked.
 
 > [!div class="mx-imgBorder"]
-> ![screenshot of Bluetooth settings page](images/bluetooth.png)
+> ![screenshot of Bluetooth settings page.](images/bluetooth.png)
 
 ## Prevent threats from removable storage
 
@@ -291,20 +291,20 @@ These settings require [enabling real-time protection](/microsoft-365/security/d
 
 2. Click **Devices** \> **Windows** \> **Configuration Policies** \> **Create profile**.
 
-    ![Create device configuration profile](images/create-device-configuration-profile.png)
+    ![Create device configuration profile.](images/create-device-configuration-profile.png)
 
 3. Use the following settings:
    - Platform: Windows 10 and later
    - Profile type: Device restrictions
 
    > [!div class="mx-imgBorder"]
-   > ![Create endpoint protection profile](images/create-endpoint-protection-profile.png)
+   > ![Create endpoint protection profile.](images/create-endpoint-protection-profile.png)
 
 4. Click **Create**.
 
 5. For **Unsigned and untrusted processes that run from USB**, choose **Block**.
 
-   ![Block untrusted processes](images/block-untrusted-processes.png)
+   ![Block untrusted processes.](images/block-untrusted-processes.png)
 
 6. Click **OK** to close settings and **Device restrictions**.
 

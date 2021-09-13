@@ -68,13 +68,13 @@ The first step is to prepare the report for downloading to your computer exporti
   
 2. On the **Actions** menu at the bottom of the search flyout page, click **Export report**.
 
-   ![Export report option in Actions menu](../media/ActionMenuExportReport.png)
+   ![Export report option in Actions menu.](../media/ActionMenuExportReport.png)
 
    The **Export report** flyout page is displayed. The export report options available to export information about the search depend on whether search results are located in mailboxes or sites or a combination of both.
   
 3. Under **Output options**, choose one of the following options:
   
-   ![Export output options](../media/ExportOutputOptions.png)
+   ![Export output options.](../media/ExportOutputOptions.png)
 
     - **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**. This option only exports information about indexed items.
   
@@ -117,7 +117,7 @@ The next step is to download the report from the Azure Storage area to your loca
 
 6. In the **eDiscovery Export Tool**, do the following:
 
-   ![eDiscovery Export Tool](../media/eDiscoveryExportTool.png)
+   ![eDiscovery Export Tool.](../media/eDiscoveryExportTool.png)
 
    1. Paste the export key that you copied in step 3 in the appropriate box.
   

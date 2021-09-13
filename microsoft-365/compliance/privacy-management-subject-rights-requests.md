@@ -15,14 +15,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "The subject rights request solution in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
+description: "The subject rights request area in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
 ---
 
 # Manage subject rights requests in privacy management (preview)
-
-In this article: learn about how to use the subject rights request solution to **find personal data** in your environment, **collaborate on reviews**, create **reports**, and **automate** key tasks.
-
-## Purpose of subject rights requests
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
 

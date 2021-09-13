@@ -35,7 +35,7 @@ This article describes the process of setting up Microsoft 365. Anybody with Mic
 
 The following diagram describes how admins set up Microsoft 365.
 
-![Steps to set up Microsoft 365](../media/M365-democracy-SetUpProcess.png)
+![Steps to set up Microsoft 365.](../media/M365-democracy-SetUpProcess.png)
 
 For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup, [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
@@ -47,7 +47,7 @@ For all organizations, bump up security protection by: [protecting admin account
 
 Users will need to take a few minutes to set up devices to work with this environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them to get started when they sign in with their Microsoft 365 credentials.
 
-![User device setup process](../media/m365-democracy-user-device-setup.png)
+![User device setup process.](../media/m365-democracy-user-device-setup.png)
   
 To set up user devices:
 

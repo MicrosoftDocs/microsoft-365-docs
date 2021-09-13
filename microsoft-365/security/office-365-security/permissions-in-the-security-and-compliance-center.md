@@ -35,7 +35,7 @@ The Security & Compliance Center lets you grant permissions to people who perfor
 
 Permissions in the Security & Compliance Center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Security & Compliance Center will be very similar. It's important to remember, however, that Exchange role groups and Security & Compliance Center role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. There's a list of Security & Compliance Center role groups below.
 
-![Permissions page in the Security & Compliance Center](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Permissions page in the Security & Compliance Center.](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## Relationship of members, roles, and role groups
 
@@ -45,7 +45,7 @@ A **role group** is a set of roles that lets people do their jobs across the Sec
 
 The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
 
-![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram showing relationship of role groups to roles and members.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
 ## Role groups in the Security & Compliance Center
 

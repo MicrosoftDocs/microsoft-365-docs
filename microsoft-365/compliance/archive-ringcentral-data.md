@@ -24,7 +24,7 @@ After RingCentral data is stored in user mailboxes, you can apply Microsoft 365 
 
 The following overview explains the process of using a connector to archive the RingCentral data in Microsoft 365.
 
-![Archiving workflow for RingCentral data](../media/RingCentralConnectorWorkflow.png)
+![Archiving workflow for RingCentral data.](../media/RingCentralConnectorWorkflow.png)
 
 1. Your organization works with RingCentral to set up and configure a RingCentral site.
 

@@ -24,7 +24,7 @@ description: Learn how to find resources for Microsoft Viva Topics.
 </br>
 
 
-Viva Topics is an Microsoft 365 service that helps organizations to transform information to knowledge.
+Viva Topics is a Microsoft 365 service that helps organizations to transform information to knowledge.
 
 The resources on this page are designed to get you started with learning about and using Viva Topics in your organization.
 
@@ -41,10 +41,9 @@ The resources in this section help you learn more about what Viva Topics is and 
 |See resources in the Microsoft Tech Community Resource Center|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## Adoption
 
-Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems: 
+Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems. 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
@@ -73,6 +72,12 @@ The resources in this section help your users learn how to use and manage topics
 |Understand why topics might differ to different users|[Viva Topics security trimming](topic-experiences-security-trimming.md)|
 |Learn how to prevent specific topics from being identified and viewed|[Restrict access to topics](restrict-access-to-topics.md)|
 
+## Provide us feedback
 
+Provide feedback about your experience with Viva Topics directly to Microsoft.
+
+| If you're looking for this information: | Go to this resource: |
+|:-----|:-----|
+|How to provide feedback about Viva Topics|[Provide us feedback](topic-experiences-overview.md#provide-us-feedback)|
 
 

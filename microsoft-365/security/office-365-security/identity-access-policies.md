@@ -37,11 +37,11 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-[![Common policies for configuring identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[![Common policies for configuring identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Here's a one-page PDF summary with links to the individual policies:
 
-[![Thumb image for Identity and device protection for Microsoft 365 handout](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Thumb image for Identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 The rest of this article describes how to configure these policies.
 
@@ -72,7 +72,7 @@ A recommended practice is to create an Azure AD group for Conditional Access exc
 
 Here's an example of group assignment and exclusions for requiring MFA.
 
-![Example group assignment and exclusions for MFA policies](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![Example group assignment and exclusions for MFA policies.](../../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 Here are the results:
 
@@ -90,7 +90,7 @@ Be careful when applying higher levels of protection to groups and users. For ex
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
-![Example of creating a Microsoft 365 group](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
+![Example of creating a Microsoft 365 group.](../../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 ## Require MFA based on sign-in risk
 
@@ -448,6 +448,6 @@ To require compliance for all devices:
 
 ## Next step
 
-[![Step 3: Policies for guest and external users](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
+[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)
