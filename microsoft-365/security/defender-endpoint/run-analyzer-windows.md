@@ -15,119 +15,131 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
 ---
 
-#  Run the client analyzer on Windows
+# Run the client analyzer on Windows
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 
-1.  Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the
-    Windows machine you need to investigate.
+1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
 
-2.  Extract the contents of MDEClientAnalyzer.zip on the machine.
+2. Extract the contents of MDEClientAnalyzer.zip on the machine.
 
-3.  Open an elevated command line:
+3. Open an elevated command line:
     1. Go to **Start** and type **cmd**.
     2. Right-click **Command prompt** and select **Run as administrator**.
 
-4.  Enter the following command and press **Enter**:
+4. Enter the following command and press **Enter**:
 
-```
-HardDrivePath\MDEClientAnalyzer.cmd
-```
+   ```dos
+   HardDrivePath\MDEClientAnalyzer.cmd
+   ```
 
-**Replace HardDrivePath with the path to which the tool was extracted to, for example:**
+   **Replace HardDrivePath with the path to which the tool was extracted to, for example:**
 
-`C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd`
+   ```dos
+   C:\Work\tools\MDATPClientAnalyzer\MDEClientAnalyzer.cmd
+   ```
 
-In addition to the above, there is also an option to [collect the analyzer
-support logs using live
-response.](troubleshoot-collect-support-log.md).
+In addition to the above, there is also an option to [collect the analyzer support logs using live response.](troubleshoot-collect-support-log.md).
 
-> [!NOTE]  
-> On windows 10, Windows Server 2019 or later OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs. <br> <br> 
+> [!NOTE]
+> On windows 10, Windows Server 2019 or later OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
+>
 > On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
 ## Result package contents on Windows
 
-> [!NOTE]    
+> [!NOTE]
 > The exact files captured may change depending on factors such as:
-> -   The version of windows on which the analyzer is run.
-> -   Event log channel availability on the machine.
-> -   The start state of the EDR sensor (Sense is stopped if machine is not yet
-    onboarded).
->-   If an advanced troubleshooting parameter was used with the analyzer command.
+>
+> - The version of windows on which the analyzer is run.
+> - Event log channel availability on the machine.
+> - The start state of the EDR sensor (Sense is stopped if machine is not yet onboarded).
+> - If an advanced troubleshooting parameter was used with the analyzer command.
 
-By default, the unpacked MDEClientAnalyzerResult.zip file will contain the
-following items.
+By default, the unpacked MDEClientAnalyzerResult.zip file will contain the following items.
 
--   MDEClientAnalyzer.htm \| This is the main HTML output file, which will
-    contain the findings and guidance that the analyzer script run on the
-    machine can produce.
+- MDEClientAnalyzer.htm
 
--   SystemInfoLogs [Folder]
+  This is the main HTML output file, which will contain the findings and guidance that the analyzer script run on the machine can produce.
 
-    -   AddRemovePrograms.csv <br> Description:  List of installed software
-        collected from registry.
+- SystemInfoLogs \[Folder\]
+  - AddRemovePrograms.csv
 
-    -   AddRemoveProgramsWOW64.csv <br> Description:  List of x86 installed software on  x64 OS software collected from registry.
+    Description: List of x86 installed software on  x64 OS software collected from registry.
 
-    -   CertValidate.log <br> Description:  Detailed result from certificate
-        revocation executed by calling into
-        [CertUtil](/windows-server/administration/windows-commands/certutil).
+  - AddRemoveProgramsWOW64.csv
 
-    -   dsregcmd.txt <br> Description:  Output from running
-        [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd).
-        This provides details about the Azure AD status of the machine.
+    Description: List of x86 installed software on x64 OS software collected from registry.
 
-    -   IFEO.txt <br> Description:  Output of [Image File Execution
-        Options](/previous-versions/windows/desktop/xperf/image-file-execution-options)
-        configured on the machine
+    - CertValidate.log
 
-    -   MDEClientAnalyzer.txt <br> Description:  This is verbose text file showing
-        with details of the analyzer script execution.
+      Description: Detailed result from certificate revocation executed by calling into [CertUtil](/windows-server/administration/windows-commands/certutil).
 
-    -   MDEClientAnalyzer.xml <br> Description:  XML format containing the analyzer
-        script findings.
+    - dsregcmd.txt
 
-    -   RegOnboardedInfoCurrent.Json <br> Description:  The onboarded machine
-        information gathered in JSON format from the registry.
+      Description: Output from running [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). This provides details about the Azure AD status of the machine.
 
-    -   RegOnboardingInfoPolicy.Json <br> Description:  The onboarding policy
-        configuration gathered in JSON format from the registry.
+    - IFEO.txt
 
-    -   SCHANNEL.txt <br> Description:  Details about [SCHANNEL
-        configuration](/windows-server/security/tls/manage-tls)
-        applied to the machine such gathered from registry.
+      Description: Output of [Image File Execution Options](/previous-versions/windows/desktop/xperf/image-file-execution-options) configured on the machine
 
-    -   SessionManager.txt <br> Description:  Session Manager specific settings
-        gather from registry.
+    - MDEClientAnalyzer.txt
 
-    -   SSL_00010002.txt <br> Description:  Details about [SSL
-        configuration](/windows-server/security/tls/manage-tls)
-        applied to the machine gathered from registry.
+      Description: This is verbose text file showing with details of the analyzer script execution.
 
--   EventLogs [Folder]
+    - MDEClientAnalyzer.xml
 
-    -   utc.evtx <br> Description:  Export of DiagTrack event log
+      Description: XML format containing the analyzer script findings.
 
-    -   senseIR.evtx <br> Description:  Export of the Automated Investigation event
-        log
+    - RegOnboardedInfoCurrent.Json
 
-    -   sense.evtx <br> Description:  Export of the Sensor main event log
+      Description: The onboarded machine information gathered in JSON format from the registry.
 
-    -   OperationsManager.evtx <br> Description:  Export of the Microsoft
-        Monitoring Agent event log
+  - RegOnboardingInfoPolicy.Json
 
+    Description: The onboarding policy configuration gathered in JSON format from the registry.
+
+    - SCHANNEL.txt
+
+      Description: Details about [SCHANNEL configuration](/windows-server/security/tls/manage-tls) applied to the machine such gathered from registry.
+
+    - SessionManager.txt
+
+      Description: Session Manager specific settings gather from registry.
+
+    - SSL_00010002.txt
+
+      Description: Details about [SSL configuration](/windows-server/security/tls/manage-tls) applied to the machine gathered from registry.
+
+- EventLogs [Folder]
+
+  - utc.evtx
+
+    Description: Export of DiagTrack event log
+
+  - senseIR.evtx
+
+    Description: Export of the Automated Investigation event log
+
+  - sense.evtx
+
+    Description: Export of the Sensor main event log
+
+  - OperationsManager.evtx
+
+    Description: Export of the Microsoft Monitoring Agent event log
 
 ## See also
+
 - [Client analyzer overview](overview-client-analyzer.md)
 - [Download and run the client analyzer](download-client-analyzer.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
