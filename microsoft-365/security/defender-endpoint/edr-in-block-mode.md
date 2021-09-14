@@ -72,10 +72,6 @@ The following image shows an instance of unwanted software that was detected and
 
 ## Requirements for EDR in block mode
 
-<br>
-
-****
-
 |Requirement|Details|
 |---|---|
 |Permissions|You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md).|
@@ -85,7 +81,6 @@ The following image shows an instance of unwanted software that was detected and
 |Cloud-delivered protection|Microsoft Defender Antivirus must be configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).|
 |Microsoft Defender Antivirus platform|Devices must be up to date. To confirm, using PowerShell, run the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. <p> To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).|
 |Microsoft Defender Antivirus engine|Devices must be up to date. To confirm, using PowerShell, run the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet as an administrator. In the **AMEngineVersion** line, you should see **1.1.16700.2** or above. <p> To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).|
-|
 
 > [!IMPORTANT]
 > To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your [exclusions are configured](configure-exclusions-microsoft-defender-antivirus.md). EDR in block mode respects exclusions that are defined for Microsoft Defender Antivirus, but not [indicators](manage-indicators.md) that are defined for Microsoft Defender for Endpoint.
@@ -124,15 +119,12 @@ For more information, see [Microsoft Defender Antivirus compatibility](microsoft
 
 To confirm whether Microsoft Defender Antivirus is running in active or passive mode, you can use Command Prompt or PowerShell on a device running Windows.
 
-<br>
-
-****
+<br/><br/>
 
 |Method|Procedure|
 |---|---|
 |PowerShell|<ol><li>Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results.</li><li>Type `Get-MpComputerStatus`.</li><li>In the list of results, in the **AMRunningMode** row, look for one of the following values:<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> To learn more, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
 |Command Prompt|<ol><li>Select the Start menu, begin typing `Command Prompt`, and then open Windows Command Prompt in the results.</li><li>Type `sc query windefend`.</li><li>In the list of results, in the **STATE** row, confirm that the service is running.</li></ol>|
-|
 
 ### How do I confirm that EDR in block mode is turned on with Microsoft Defender Antivirus in passive mode?
 
