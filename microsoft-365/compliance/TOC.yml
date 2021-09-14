@@ -174,7 +174,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Enable co-authoring for documents encrypted by sensitivity labels (preview)
+        - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
@@ -329,7 +329,7 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
-            - name: Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+            - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
