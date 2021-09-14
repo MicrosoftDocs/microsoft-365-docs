@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft 365 Compliance trial"
+title: "About the Microsoft Compliance trial"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,10 +13,10 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft 365 Compliance free trials."
+description: "About the Microsoft Compliance free trials."
 ---
 
-# About the free trial for Microsoft 365 Compliance
+# About the free trial for Microsoft Compliance
 
 Microsoft compliance products protect your organization from internal threats rising from inappropriate permissions on files and emails, and ensures compliance with regulatory and policy requirements.
 
@@ -32,7 +32,7 @@ You can sign-up for a trial in the Microsoft compliance center using the Trials 
 
 ## Licensing
 
-As part of the trial setup, the Microsoft 365 E5 compliance licenses are automatically applied to the organization. The licenses are active for the first 90 days.
+As part of the trial setup, the Microsoft E5 compliance licenses are automatically applied to the organization. The licenses are active for the first 90 days.
 
 ## Permissions
 
@@ -63,8 +63,9 @@ Wondering what you can experience in your free trial? A Microsoft compliance tri
 
     Application governance is an add-on for Microsoft Cloud App Security that monitors OAuth apps running in your Microsoft 365 tenant for excessive permissions and inappropriate access to files and email. [Learn more](app-governance-manage-app-governance.md)
 -->
+
 - **Audit**
-   
+
     Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. [Learn more](advanced-audit.md)
 
 - **Compliance Manager**
@@ -92,6 +93,7 @@ Wondering what you can experience in your free trial? A Microsoft compliance tri
 
     Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](privacy-management.md)
 -->
+
 - **Records Management**
 
     Use integrated Records Management features to  automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition. [Learn more](records-management.md)
