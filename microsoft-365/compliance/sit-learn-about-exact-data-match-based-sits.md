@@ -53,9 +53,27 @@ EDM-based classification enables you to create custom sensitive information type
 >
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
-## How exact data match sensitive information types work
+
+
+## What's different in an EDM SIT
+
+other concepts and terminology that you need to know
+
+### DLP policies that use EDM SITs must be based on a pre-existing SIT baSED DLP policy
+
+Creating an EDM based SIT is the first step.  The EDM SIT must be used in a DLP policy in order for items that the SIT is looking to identify to be monitored/protected by DLP.
+
+### You supply your own schema and data
+
+bullet list of steps you do this and message 'so you are responsible for security/encryption of your data'
+
+concept - hashing
+concept - salt 
+
+## How matching works
 
 <!-- condense these paragraphs down to one para or a single diagram -->
+
 
 EDM finds matches by comparing content it finds against a table of sensitive data that you define. The match testing is done using a combination of traditional rules and patterns to ensure that the matched data is an actual instance of data you want to find and protect.
 
@@ -65,7 +83,16 @@ With EDM you generate a table of hashes of all the values of the sensitive data 
 Since cryptographic operations are computationally expensive and sensitive data tables often contain millions of rows, in order to make the process efficient  when you define an EDM-based sensitive information type you fi rst select a standard sensitive information type that will detect potential candidates to be an EDM match (for example, one or more numerical or text patterns). You can optionally define additional rules in the EDM type according to your business needs such as matching values in multiple columns or requiring additional evidence.  
 Once a match to the standard sensitive information type is found in a document or email in your organization, the value that produced the match is hashed, and compared against all the hashed values in the sensitive information table you uploaded. If a row is found that matches that value, the hashes in the other columns for that row in your table are used to find strings in the text surrounding the original match that meet the rules defined for additional evidence in your EDM sensitive information type.   
 For example, let’s say your sensitive information table includes a row for a person named John Rodriguez  , born on 2/14/1980, and with a social security number of 432-45-6788, and an Account ID   of ABC19838372. When you upload your sensitive data to the cloud, you do it after processing the table so it only contains non-reversible hashes of the data. When later an email is sent that includes the text shown below  , an EDM-based sensitive information type looking for matches in the sensitive data table and requiring additional evidence for date of birth or for last name identifies any matches to the pattern corresponding to the SSN. When a match is found in the form of the 432-45-6788   value, this value is stripped of delimiters (the dashes), hashed and compared against the hashes in the SSN column of the table you uploaded, and when a match to this hash is found in the row corresponding to John Rodriguez, the hashes for this patient’s last name, Account number and date of birth will be compared to the hashes of text around the offending SSN, and when matches are found to the values in those columns this will be flagged as an instance of a match to the EDM sensitive information type.  
-  
+ 
+![how edm works diagram from Enrique](../media/how-edm-works-1.png)
+
+ 
 Figure: How EDM matches sensitive information in content
 The database of   sensitive information type you can upload for each EDM-based sensitive information type can contain up to 100 million rows of data and can be refreshed daily. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. You can use EDM-based classification with policies, such as data loss prevention policies, sensitivity labeling or Microsoft Cloud App Security file policies.
 
+
+
+
+
+
+   
