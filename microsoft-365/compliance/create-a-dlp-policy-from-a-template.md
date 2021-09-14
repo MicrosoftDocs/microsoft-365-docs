@@ -80,12 +80,8 @@ You can also choose the Custom template, which has no default rules, and configu
 
 10. Choose **Next**.
 
-11. On the **Protection actions** page if you want, you can customize the policy tip notifications and notification emails. Enable **When content matches the policy conditions, show policy tips to users and sen them an email notification**, then choose **Customize the tip and email**.
-1. c
-1. 
-1. 
-1. 
-1. hoose **Next**.
+11. On the **Protection actions** page if you want, you can customize the policy tip notifications and notification emails. Enable **When content matches the policy conditions, show policy tips to users and send them an email notification**, then choose **Customize the tip and email**.
+12. Choose **Next**.
 
 
 <!--    In this example, the U.S. PII Data template includes two predefined rules:

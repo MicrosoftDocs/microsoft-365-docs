@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - commerce_subscriptions
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -37,7 +38,7 @@ As your users change roles, they may need features that aren't available in thei
 
 ### Add a new subscription
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Billing**, and then **Purchase services**.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a>.
 1. Choose the subscription you would like to add, and then select **Buy**.
 1. Choose how you want to pay and the number of licenses you need, and then select **Check out now**.
 1. Review your order, and then choose **Next**.
@@ -45,13 +46,13 @@ As your users change roles, they may need features that aren't available in thei
 
 ### Change the license assigned to a user
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the name of the user, and then select **Licenses and app**s.
 1. Under **Licenses**, you'll see your new subscription. Select the check box next to the new subscription, and clear the check box next to the old subscription.
 1. Select **Save changes**. The license for the new subscription is now assigned to this user.
 
 ### Remove an unused license
 
-1. In the Microsoft 365 admin center, select **Billing**, and then **Products & services**.
+1. In the Microsoft 365 admin center, select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. Select the subscription you want to change, and then select **Add/remove licenses**.
 1. Use the down arrow to reduce the number of licenses for this subscription, and then select **Submit change**. You now have the right number of licenses for your users.

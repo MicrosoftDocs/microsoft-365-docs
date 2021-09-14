@@ -70,6 +70,7 @@ ms.custom: api
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
 |lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours.|
 |osPlatform|String|Operating system platform.|
+|onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded" and "offboarded".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
 |version|String|Operating system Version.|
 |osBuild|Nullable long|Operating system build number.|
