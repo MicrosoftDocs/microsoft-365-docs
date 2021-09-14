@@ -21,7 +21,7 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 5. Protect information
 
-Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](protect-against-ransomware-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
+Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
 To provide additional protection of your ransomable information in your Microsoft 365 tenant:
 
@@ -99,7 +99,7 @@ Additionally, for the protection of ransomable information in your Microsoft 365
 
 Here is the ransomware protection for your tenant for steps 1-5.
 
-![Ransomware protection for your Microsoft 365 tenant after Step 5](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step5.png)
+![Ransomware protection for your Microsoft 365 tenant after Step 5](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
 ## Additional ransomware resources
 
@@ -126,7 +126,7 @@ Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

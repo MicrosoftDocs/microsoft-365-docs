@@ -68,10 +68,10 @@ As you implement these protections, perform change management for the following:
 
 Here is the ransomware protection for your tenant for steps 1-4.
 
-![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step4.png)
+![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step4.png)
 
 ## Next step
 
-[![Step 5 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step5.png)](protect-against-ransomware-microsoft-365-step5.md)
+[![Step 5 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step5.png)](ransomware-protection-microsoft-365-information5.md)
 
-Continue with [Step 5](protect-against-ransomware-microsoft-365-step4.md) to protect information in your Microsoft 365 tenant. 
+Continue with [Step 5](ransomware-protection-microsoft-365-information5.md) to protect information in your Microsoft 365 tenant. 

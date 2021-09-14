@@ -55,7 +55,7 @@ Use these best practices:
 
 ## Impact on users and change management
 
-Users in your organization must be made aware of:
+You must make the users in your organization aware of:
 
 - The new requirements for stronger passwords.
 - The changes in sign-in processes, such as the required use of MFA and the MFA secondary authentication method registration.
@@ -66,10 +66,10 @@ Users in your organization must be made aware of:
 
 Here is the ransomware protection for your tenant for steps 1-3.
 
-![Ransomware protection for your Microsoft 365 tenant after Step 3](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step3.png)
+![Ransomware protection for your Microsoft 365 tenant after Step 3](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step3.png)
 
 ## Next step
 
-[![Step 4 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step4.png)](protect-against-ransomware-microsoft-365-step4.md)
+[![Step 4 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step4.png)](ransomware-protection-microsoft-365-devices.md)
 
-Continue with [Step 4](protect-against-ransomware-microsoft-365-step4.md) to protect devices (endpoints) in your Microsoft 365 tenant. 
+Continue with [Step 4](ransomware-protection-microsoft-365-devices.md) to protect devices (endpoints) in your Microsoft 365 tenant. 

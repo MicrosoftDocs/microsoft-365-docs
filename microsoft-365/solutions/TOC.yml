@@ -80,17 +80,17 @@
     - name: Deploy ransomware protection for your Microsoft 365 tenant
       items:
       - name: Overview   
-        href: protect-against-ransomware-microsoft-365.md
+        href: ransomware-protection-microsoft-365.md
       - name: Step 1. Configure security baselines
-        href: protect-against-ransomware-microsoft-365-step1.md
+        href: ransomware-protection-microsoft-365-security-baselines.md
       - name: Step 2. Deploy attack detection and response
-        href: protect-against-ransomware-microsoft-365-step2.md
+        href: ransomware-protection-microsoft-365-attack-detection-response.md
       - name: Step 3. Protect identities
-        href: protect-against-ransomware-microsoft-365-step3.md
+        href: ransomware-protection-microsoft-365-identities.md
       - name: Step 4. Protect devices
-        href: protect-against-ransomware-microsoft-365-step4.md
+        href: ransomware-protection-microsoft-365-devices.md
       - name: Step 5. Protect information
-        href: protect-against-ransomware-microsoft-365-step5.md
+        href: ransomware-protection-microsoft-365-information.md
     - name: Deploy information protection for data privacy regulations
       items:
       - name: Overview

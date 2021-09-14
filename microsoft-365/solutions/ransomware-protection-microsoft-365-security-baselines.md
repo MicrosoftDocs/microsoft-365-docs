@@ -27,7 +27,7 @@ As a first step to counter ransomware attackers, you must configure the followin
 - [Exchange email management](#exchange-email-management-baseline)
 - [Additional baselines for Windows devices and client software](#additional-baselines)
 
-These baselines contain configuration settings and rules that are well-known by attackers. The absence of these baselines are quickly noticed and commonly exploited.
+These baselines contain configuration settings and rules that are well-known by attackers, the absence of which are quickly noticed and commonly exploited.
 
 ## Microsoft 365 security baseline
 
@@ -76,11 +76,11 @@ Additionally, Exchange email baseline settings can block incoming email and prev
 
 Here is the ransomware protection for your tenant after this step.
 
-![Ransomware protection for your Microsoft 365 tenant after Step 1](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-architecture-step1.png)
+![Ransomware protection for your Microsoft 365 tenant after Step 1](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step1.png)
 
 
 ## Next step
 
-[![Step 2 for ransomware protection with Microsoft 365](../media/protect-against-ransomware-microsoft-365/protect-against-ransomware-microsoft-365-step2.png)](protect-against-ransomware-microsoft-365-step2.md)
+[![Step 2 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step2.png)](ransomware-protection-microsoft-365-attack-detection-response.md)
 
-Continue with [Step 2](protect-against-ransomware-microsoft-365-step2.md) to deploy attack detection and response capabilities for your Microsoft 365 tenant.
+Continue with [Step 2](ransomware-protection-microsoft-365-attack-detection-response.md) to deploy attack detection and response capabilities for your Microsoft 365 tenant.
