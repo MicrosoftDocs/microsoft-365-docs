@@ -297,15 +297,15 @@ This detection identifies that an App consented to high privilege scope, created
 
 **MITRE IDs**: T1137, T1114
 
-This detection identifies App consented to high privilege scope, creates suspicious inbox rule, and made high volume of importance mail read activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to read high importance email from your organization through Graph API.  
+This detection identifies that an App consented to high privilege scope, creates suspicious inbox rule and made a high volume of important mail read activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to read high importance email from your organization through Graph API.  
 
 **TP or FP?**
 
-- **TP**: If you’re able to confirm that high volume of importance email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
 
   **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
 
-- **FP**: If you’re able to confirm app has performed high volume of importance email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
+- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
 
   **Recommended Action**: Dismiss the alert  
 
