@@ -50,7 +50,7 @@ You'll need to complete the following general steps to successfully onboard serv
 
 ![Illustration of onboarding flow for Windows Servers and Windows 10 devices](images/server-onboarding-tools-methods.png)
 
-**Windows Server 2012 R2 and Windows Server 2016**
+**Windows Server 2012 R2 and Windows Server 2016 (Preview)**
 - Download installation and onboarding packages
 - Install application
 - Follow the onboarding steps for the corresponding tool
@@ -60,7 +60,7 @@ You'll need to complete the following general steps to successfully onboard serv
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
 
-### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016
+### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview
 Previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA). 
 
 The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with the following major improvements:
@@ -87,12 +87,13 @@ The following specifics apply to the new unified solution package:
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, please refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is generally recommended to not enable the user interface nor require user interaction on any managed server.
 - [Connectivity requirements](configure-proxy-internet.md) match those for Windows Server 2019. Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019 and Windows 10, does not support this gateway.
 - Not all Attack Surface Reduction rules are available on all operating systems. Please review [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
-- To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection), additional configuration is required: 
-    -- Set-MpPreference -EnableNetworkProtection Enabled
-    -- Set-MpPreference -AllowNetworkProtectionOnWinServer 1
-    -- Set-MpPreference -AllowNetworkProtectionDownLevel 1
-    -- Set-MpPreference -AllowDatagramProcessingOnWinServer 1
-  In addition, on machines with a high volume of network traffic, performance testing in your environment is highly recommended.
+- To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection), additional configuration is required:   
+    -- Set-MpPreference -EnableNetworkProtection Enabled  
+    -- Set-MpPreference -AllowNetworkProtectionOnWinServer 1  
+    -- Set-MpPreference -AllowNetworkProtectionDownLevel 1  
+    -- Set-MpPreference -AllowDatagramProcessingOnWinServer 1  
+  In addition, on machines with a high volume of network traffic, performance testing in your environment is highly recommended before enabling this capability broadly. You may need to account for additional resource consumption.
+ - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update KB4645768 released as part of the October 12th patch Tuesday.
 
 ## Integration with Azure Defender
 Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as an Azure Defender customer. 
