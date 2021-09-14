@@ -290,3 +290,28 @@ This detection identifies that an App consented to high privilege scope, created
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
 1. Review any SharePoint or OneDrive search activities done by the app.
+
+### App made high volume of importance mail read and created inbox rule
+
+**Severity**: Medium  
+
+**MITRE IDs**: T1137, T1114
+
+This detection identifies App consented to high privilege scope, creates suspicious inbox rule, and made high volume of importance mail read activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to read high importance email from your organization through Graph API.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that high volume of importance email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+
+  **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
+
+- **FP**: If you’re able to confirm app has performed high volume of importance email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
+
+  **Recommended Action**: Dismiss the alert  
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. Review the scopes granted by the app.  
+1. Review any inbox rule action created by the app.  
+1. Review any high importance email read activity done by the app.  
