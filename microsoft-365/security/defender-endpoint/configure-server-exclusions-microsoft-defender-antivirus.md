@@ -28,22 +28,23 @@ ms.date: 08/17/2021
 
 ## Summary
 
-This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later. 
+This article provides an overview of exclusions for Microsoft Defender Antivirus on Windows Server 2016 or later.
 
-Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, exclusions for operating system files and server roles happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary. 
+Because Microsoft Defender Antivirus is built into Windows Server 2016 and later, exclusions for operating system files and server roles happen automatically. However, you can define custom exclusions. You can also opt out of automatic exclusions if necessary.
 
-This article includes the following sections: <br/><br/>
+This article includes the following sections:
 
+<br/><br/>
 
-| Section  | Description  |
-|---------|---------|
-| [Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)  | Describes the two main types of automatic exclusions and includes a detailed list of automatic exclusions |
-| [Opting out of automatic exclusions](#opting-out-of-automatic-exclusions) | Includes important considerations and procedures describing how to opt out of automatic exclusions   |
-| [Defining custom exclusions](#defining-custom-exclusions) | Provides links to how-to information for defining custom exclusions |
-
+|Section|Description|
+|---|---|
+|[Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)|Describes the two main types of automatic exclusions and includes a detailed list of automatic exclusions|
+|[Opting out of automatic exclusions](#opting-out-of-automatic-exclusions)|Includes important considerations and procedures describing how to opt out of automatic exclusions|
+|[Defining custom exclusions](#defining-custom-exclusions)|Provides links to how-to information for defining custom exclusions|
 
 > [!IMPORTANT]
 > Keep the following points in mind:
+>
 > - Custom exclusions take precedence over automatic exclusions.
 > - Automatic exclusions only apply to Real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
 > - Custom and duplicate exclusions do not conflict with automatic exclusions.
@@ -59,9 +60,9 @@ On Windows Server 2016 or later, you should not need to define the following exc
 - Operating system files
 - Server roles and any files that are added through server roles
 
-Because Microsoft Defender Antivirus is built in, it does not require exclusions for operating system files on Windows Server 2016 or later. In addition, when you run Windows Server 2016 or later and install a role, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role. 
+Because Microsoft Defender Antivirus is built in, it does not require exclusions for operating system files on Windows Server 2016 or later. In addition, when you run Windows Server 2016 or later and install a role, Microsoft Defender Antivirus includes automatic exclusions for the server role and any files that are added while installing the role.
 
-Operating system exclusions and server role exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md). 
+Operating system exclusions and server role exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
 Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012 or Windows Server 2012 R2.
 
@@ -158,11 +159,13 @@ This section lists the default exclusions for all roles in Windows Server 2016 a
 
 The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-| Exclusion type | Specifics |
-|:---|:---|
-| File types |  `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` |
-| Folders |  `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` |
-| Processes | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
+<br><br/>
+
+|Exclusion type|Specifics|
+|---|---|
+|File types|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
+|Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
+|Processes|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
 
 ##### SYSVOL files
 
@@ -328,9 +331,9 @@ You can disable the automatic exclusion lists with Group Policy, PowerShell cmdl
 
 2. In the **Group Policy Management Editor** go to **Computer configuration**, and then select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Exclusions**.
 
-4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then select **OK**. 
+4. Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**. Then select **OK**.
 
 ### Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server
 
@@ -354,6 +357,7 @@ DisableAutoExclusions
 ```
 
 See the following for more information and allowed parameters:
+
 - [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 ## Defining custom exclusions

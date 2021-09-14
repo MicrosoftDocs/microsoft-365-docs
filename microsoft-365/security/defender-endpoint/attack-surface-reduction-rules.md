@@ -1,7 +1,7 @@
 ---
 title: Attack surface reduction rules
 description: Lists details about attack surface reduction rules on a per-rule basis.
-keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description 
+keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -20,7 +20,7 @@ ms.topic: article
 
 # Attack surface reduction rules
 
-This article provides information about attack reduction rules:  
+This article provides information about attack reduction rules:
 
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
@@ -39,49 +39,51 @@ The following table lists attack surface reduction rules in alphabetical order. 
 >
 > - \* All rules support file and folder exclusions, unless stated otherwise.
 
-| Rule name |  Windows&nbsp;10 | Windows&nbsp;Server 2019 | Windows&nbsp;Server | Windows&nbsp;Server 2016 | Windows&nbsp;Server 2012 R2 |
+|Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|Windows&nbsp;Server 2016|Windows&nbsp;Server 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> version 1803 (Semi-Annual Channel) or later |  |  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> version 1809 or later | ![supported](images/checkmark.png) | ![supported](images/checkmark.png)  <br><br> |  |  |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later| ![supported](images/checkmark.png) | ![supported](images/checkmark.png) <br><br> version 1903 (build 18362) or later |  |  |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br>  |  |  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) <br><br> version 1803 or later | ![supported](images/checkmark.png) <br><br> | ![supported](images/checkmark.png) <br><br> |  |  |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later |  |  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |  |  |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |  |  |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | Y version 1903 (build 18362) or later| Y | Y <br><br> version 1903 (build 18362) or later |  |  |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 or later | Y <br><br> | Y <br><br>  |  |  |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
 | **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
 
 ## Supported configuration management systems
 
 Links to information about configuration management system versions referenced in this table are listed below this table.
 
-|Rule name | Intune | Microsoft Endpoint Manager | Microsoft Endpoint Configuration Manager | Group Policy | PowerShell |
+|Rule name | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | ![supported](images/checkmark.png) <br><br>  |  ![supported](images/checkmark.png) <br><br> MEM OMA-URI |   |   |  ![supported](images/checkmark.png) <br><br> |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) |   |   |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | ![supported](images/checkmark.png)  |   |  ![supported](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | ![supported](images/checkmark.png) |  | ![supported](images/checkmark.png) <br><br> CB 1710 | ![supported](images/checkmark.png) |   |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1802 |   |   |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | ![supported](images/checkmark.png) |   |  ![supported](images/checkmark.png)  <br><br> CB 1710 |   |   |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ![supported](images/checkmark.png) |   |  ![supported](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | ![supported](images/checkmark.png) <br><br> |  | ![supported](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | ![supported](images/checkmark.png) |  |  ![supported](images/checkmark.png) <br><br> CB 1710 |   |   |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | ![supported](images/checkmark.png) |  | ![supported](images/checkmark.png) <br><br>  CB 1710 |   |   |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  |  |  |   |   |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | ![supported](images/checkmark.png) |   |   |   |   |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1802 <br><br> |   |   |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | ![supported](images/checkmark.png) |   | ![supported](images/checkmark.png) <br><br> CB 1710 <br><br> |   |   |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | ![supported](images/checkmark.png) |   |  ![supported](images/checkmark.png) <br><br>  CB 1802 |   |   |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  |  Y <br><br> MEM OMA-URI |   | Y |  Y  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y  |   | Y | Y  |  Y |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y  |   | Y <br><br> CB 1710 | Y | Y |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y   |   |  Y <br><br> CB 1802 | Y | Y |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y  |  | Y <br><br> CB 1710 | Y | Y |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y  |   | Y <br><br> CB 1802 |  Y |  Y |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y  |   |  Y  <br><br> CB 1710 |  Y |  Y |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y  |   |  Y <br><br> CB 1710 | Y |  Y |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y |  | Y <br><br> CB 1710 <br><br> | Y | Y |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes) | Y  |  |  Y <br><br> CB 1710 | Y | Y |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y  |  | Y <br><br>  CB 1710 |  Y | Y |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  |  |  | Y  | Y  |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y |   |   |  Y | Y  |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y  |   | Y <br><br> CB 1802 <br><br> | Y  |  Y |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y  |   | Y <br><br> CB 1710 <br><br> |  Y |  Y |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y  |   |  Y <br><br>  CB 1802 |  Y | Y  |
 | **Rule name** | **Intune** | **Microsoft Endpoint Manager** | **Microsoft Endpoint Configuration Manager** | **Group Policy** | **PowerShell** |
+
+(<a id="fn1">1</a>) You can configure attack surface reduction rules on a per-rule basis by using any rule's GUID.
 
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
@@ -96,7 +98,7 @@ This rule prevents an application from writing a vulnerable signed driver to dis
 
 The **Block abuse of exploited vulnerable signed drivers** rule does not block a driver already existing on the system from being loaded.
 
->[!NOTE]
+> [!NOTE]
 >
 > You can configure this rule using MEM OMA-URI. See [MEM OMA-URI](enable-attack-surface-reduction.md#mem) for configuring custom rules.
 >
@@ -107,6 +109,10 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
+<!-- Hide this intro with no subsequent list items
+Advanced hunting action type:
+-->
 
 ### Block Adobe Reader from creating child processes
 
@@ -120,6 +126,11 @@ Configuration Manager name: Not yet available
 
 GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
+Advanced hunting action type:
+
+- AsrAdobeReaderChildProcessAudited
+- AsrAdobeReaderChildProcessBlocked
+
 ### Block all Office applications from creating child processes
 
 This rule blocks Office apps from creating child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access.
@@ -132,6 +143,11 @@ Configuration Manager name: `Block Office application from creating child proces
 
 GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
+Advanced hunting action type:
+
+- AsrOfficeChildProcessAudited
+- AsrOfficeChildProcessBlocked
+
 ### Block credential stealing from the Windows local security authority subsystem
 
 This rule helps prevent credential stealing by locking down Local Security Authority Subsystem Service (LSASS).
@@ -139,13 +155,18 @@ This rule helps prevent credential stealing by locking down Local Security Autho
 LSASS authenticates users who sign in on a Windows computer. Microsoft Defender Credential Guard in Windows 10 normally prevents attempts to extract credentials from LSASS. However, some organizations can't enable Credential Guard on all of their computers because of compatibility issues with custom smartcard drivers or other programs that load into the Local Security Authority (LSA). In these cases, attackers can use hack tools like Mimikatz to scrape cleartext passwords and NTLM hashes from LSASS.
 
 > [!NOTE]
-> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is NO need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+> In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 
 Configuration Manager name: `Block credential stealing from the Windows local security authority subsystem`
 
 GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
+
+Advanced hunting action type:
+
+- AsrLsassCredentialTheftAudited
+- AsrLsassCredentialTheftBlocked
 
 ### Block executable content from email client and webmail
 
@@ -159,6 +180,11 @@ Intune name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) drop
 Microsoft Endpoint Manager name: `Block executable content from email client and webmail`
 
 GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
+
+Advanced hunting action type:
+
+- AsrExecutableEmailContentAudited
+- AsrExecutableEmailContentBlocked
 
 > [!NOTE]
 > The rule **Block executable content from email client and webmail** has the following alternative descriptions, depending on which application you use:
@@ -190,6 +216,11 @@ Configuration Manager name: `Block executable files from running unless they mee
 
 GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 
+Advanced hunting action type:
+
+- AsrUntrustedExecutableAudited
+- AsrUntrustedExecutableBlocked
+
 ### Block execution of potentially obfuscated scripts
 
 This rule detects suspicious properties within an obfuscated script.
@@ -201,6 +232,11 @@ Intune name: `Obfuscated js/vbs/ps/macro code`
 Configuration Manager name: `Block execution of potentially obfuscated scripts`
 
 GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
+
+Advanced hunting action type:
+
+- AsrObfuscatedScriptAudited
+- AsrObfuscatedScriptBlocked
 
 ### Block JavaScript or VBScript from launching downloaded executable content
 
@@ -214,6 +250,11 @@ Configuration Manager name: `Block JavaScript or VBScript from launching downloa
 
 GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 
+Advanced hunting action type:
+
+- AsrScriptExecutableDownloadAudited
+- AsrScriptExecutableDownloadBlocked
+
 ### Block Office applications from creating executable content
 
 This rule prevents Office apps, including Word, Excel, and PowerPoint, from creating potentially malicious executable content, by blocking malicious code from being written to disk.
@@ -225,6 +266,11 @@ Intune name: `Office apps/macros creating executable content`
 SCCM name: `Block Office applications from creating executable content`
 
 GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
+
+Advanced hunting action type:
+
+- AsrExecutableOfficeContentAudited
+- AsrExecutableOfficeContentBlocked
 
 ### Block Office applications from injecting code into other processes
 
@@ -242,6 +288,11 @@ Configuration Manager name: `Block Office applications from injecting code into 
 
 GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 
+Advanced hunting action type:
+
+- AsrOfficeProcessInjectionAudited
+- AsrOfficeProcessInjectionBlocked
+
 ### Block Office communication application from creating child processes
 
 This rule prevents Outlook from creating child processes, while still allowing legitimate Outlook functions.
@@ -256,6 +307,11 @@ Intune name: `Process creation from Office communication products (beta)`
 Configuration Manager name: Not available
 
 GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
+
+Advanced hunting action type:
+
+- AsrOfficeCommAppChildProcessAudited
+- AsrOfficeCommAppChildProcessBlocked
 
 ### Block persistence through WMI event subscription
 
@@ -272,6 +328,11 @@ Configuration Manager name: Not available
 
 GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
+Advanced hunting action type:
+
+- AsrPersistenceThroughWmiAudited
+- AsrPersistenceThroughWmiBlocked
+
 ### Block process creations originating from PSExec and WMI commands
 
 This rule blocks processes created through [PsExec](/sysinternals/downloads/psexec) and [WMI](/windows/win32/wmisdk/about-wmi) from running. Both PsExec and WMI can remotely execute code, so there is a risk of malware abusing this functionality for command and control purposes, or to spread an infection throughout an organization's network.
@@ -285,6 +346,11 @@ Configuration Manager name: Not applicable
 
 GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 
+Advanced hunting action type:
+
+- AsrPsexecWmiChildProcessAudited
+- AsrPsexecWmiChildProcessBlocked
+
 ### Block untrusted and unsigned processes that run from USB
 
 With this rule, admins can prevent unsigned or untrusted executable files from running from USB removable drives, including SD cards. Blocked file types include executable files (such as .exe, .dll, or .scr)
@@ -294,6 +360,11 @@ Intune name: `Untrusted and unsigned processes that run from USB`
 Configuration Manager name: `Block untrusted and unsigned processes that run from USB`
 
 GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
+
+Advanced hunting action type:
+
+- AsrUntrustedUsbProcessAudited
+- AsrUntrustedUsbProcessBlocked
 
 ### Block Win32 API calls from Office macros
 
@@ -314,6 +385,11 @@ Configuration Manager name: `Block Win32 API calls from Office macros`
 
 GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
+Advanced hunting action type:
+
+- AsrOfficeMacroWin32ApiCallsAudited
+- AsrOfficeMacroWin32ApiCallsBlocked
+
 ### Use advanced protection against ransomware
 
 This rule provides an extra layer of protection against ransomware. It uses both client and cloud heuristics to determine whether a file resembles ransomware. This rule does not block files that have one or more of the following characteristics:
@@ -332,3 +408,8 @@ Intune name: `Advanced ransomware protection`
 Configuration Manager name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
+
+Advanced hunting action type:
+
+- AsrRansomwareAudited
+- AsrRansomwareBlocked

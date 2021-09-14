@@ -15,6 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -154,7 +155,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 
 ### Open an online request
 
-Save time by starting your service request online. In the Microsoft 365 admin center, choose **Support** \> **New service request**.
+Save time by starting your service request online. In the 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### Call support
 
@@ -216,7 +217,7 @@ To view feature availability across Office 365 plans, see [Office 365 Service De
 
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Office 365 operated by 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

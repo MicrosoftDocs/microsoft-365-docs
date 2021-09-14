@@ -31,7 +31,7 @@ description: This article describes how to use Azure to create a disaster-recove
   
 Use this article with the following solution model: **SharePoint Disaster Recovery in Microsoft Azure**.
   
-[![SharePoint disaster-recovery process to Azure](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
+[![SharePoint disaster-recovery process to Azure.](../media/SP-DR-Azure.png)](https://go.microsoft.com/fwlink/p/?LinkId=392555)
   
  [PDF](https://go.microsoft.com/fwlink/p/?LinkId=392555) |  [Visio](https://go.microsoft.com/fwlink/p/?LinkId=392554)
   
@@ -77,7 +77,7 @@ The following figure illustrates these three elements.
   
 **Figure: Elements of a warm standby solution in Azure**
 
-![Elements of a SharePoint warm standby solution in Azure](../media/AZarch-AZWarmStndby.png)
+![Elements of a SharePoint warm standby solution in Azure.](../media/AZarch-AZWarmStndby.png)
   
 SQL Server log shipping with Distributed File System Replication (DFSR) is used to copy database backups and transaction logs to the recovery farm in Azure: 
   
@@ -151,7 +151,7 @@ The following figure illustrates a disaster recovery solution from an on-premise
   
 **Figure: Topology and key elements of a production farm and a warm standby recovery farm**
 
-![Topology of a SharePoint farm and a warm standby recovery farm](../media/AZarch-AZWarmStndby.png)
+![Topology of a SharePoint farm and a warm standby recovery farm.](../media/AZarch-AZWarmStndby.png)
   
 In this diagram:
   
@@ -181,7 +181,7 @@ The following figure shows an Azure failover environment in which the file share
   
 **Figure: Cold standby recovery farm with running virtual machines**
 
-![Elements of a SharePoint cold standby solution in Azure](../media/AZarch-AZColdStndby.png)
+![Elements of a SharePoint cold standby solution in Azure.](../media/AZarch-AZColdStndby.png)
   
 After failover to a cold standby environment, all virtual machines are started, and the method to achieve high availability of the database servers must be configured, such as SQL Server AlwaysOn availability groups.
   
@@ -268,7 +268,7 @@ This phase includes deploying both Windows Server Active Directory and DNS to th
   
 **Figure: Hybrid Active Directory domain configuration**
 
-![Two virtual machines deployed to the Azure virtual network and the SharePoint Farm subnet are replica domain controllers and DNS servers](../media/AZarch-HyADdomainConfig.png)
+![Two virtual machines deployed to the Azure virtual network and the SharePoint Farm subnet are replica domain controllers and DNS servers.](../media/AZarch-HyADdomainConfig.png)
   
 In the illustration, two virtual machines are deployed to the same subnet. These virtual machines are each hosting two roles: Active Directory and DNS.
   

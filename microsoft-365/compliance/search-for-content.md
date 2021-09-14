@@ -67,7 +67,7 @@ Content search is easy to use, but it's also a powerful tool. Behind-the-scenes,
 
 ## Use scripts for advanced scenarios
 
-Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and fast to use PowerShell commands in the Security & Compliance Center. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
+Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and faster to use commands in Security & Compliance Center PowerShell. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
 
 - [Search specific mailbox and site folders](use-content-search-for-targeted-collections.md) (called a  *targeted collection) when you're confident that items responsive to a case are located in that folder
 

@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft 365 compliance center to help you learn the many details about Content search."
 ---
 
@@ -40,21 +41,21 @@ Keep the following things in mind when using the keyword list to create a search
 
     **Incorrect**
 
-    ![The incorrect way to format a keyword list (by pasting the list into the keyword box)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![The incorrect way to format a keyword list (by pasting the list into the keyword box).](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
 
     **Correct**
 
-    ![The correct way to format a keyword list (by selecting checkbox and then pasting list)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![The correct way to format a keyword list (by selecting checkbox and then pasting list).](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
 
 - You can also prepare a list of keywords or keyword phrases in an Excel file or a plain text file, and then copy and paste your list into the keyword list. To do this, you have to select the **Show keyword list** check box. Then, click the first row in the keyword list and paste your list. Each line from the Excel or text file is pasted into separate row in the keyword list.
 
 - After you create a query using the keyword list, it's a good idea to verify the search query syntax to make the search query is what you intended. In the search query that's displayed under **Query** in the details pane, the keywords are separated by the text **(c:s)**. This indicates that the keywords are connected by a logical operator similar in functionality to the **OR** operator. Similarly, if your search query includes conditions, the keywords and the conditions are separated by the text **(c:c)**. This indicates that the keywords are connected to the conditions with a logical operator similar in functionality to the **AND** operator. Here's an example of the search query (displayed in the Details pane) that results when using the keyword list and a condition.
 
-    ![Example of the query that's created when using the keyword list and a condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Example of the query that's created when using the keyword list and a condition.](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
 
 - When you run a content search, Microsoft 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
 
-- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause.
+- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search.](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause.
 
 ## Partially indexed items
 
@@ -91,7 +92,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
 - When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or a Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
 
-- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
@@ -128,7 +129,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   In the search results, meeting summaries are identified as **Meeting** in the **Type field**, and call summaries are identified as **Call**. Also, conversations that are part of a Teams channel and 1xN chats are identified as **IM** in the **Type** field.
 
-  ![Teams meetings, calls, and 1xN chats are identified in the Type field](../media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams meetings, calls, and 1xN chats are identified in the Type field.](../media/O365-ContentSearch-Teams-MessageKind.png)
 
    For more information, see [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
@@ -142,11 +143,11 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   **Card content in Teams**
 
-  ![Card content in Teams channel message](../media/CardContentTeams.png)
+  ![Card content in Teams channel message.](../media/CardContentTeams.png)
 
   **Card content in search results**
 
-  ![Same card content in the results of a Content search](../media/CardContentEdiscoverySearchResults.png)
+  ![Same card content in the results of a Content search.](../media/CardContentEdiscoverySearchResults.png)
 
   > [!NOTE]
   > To display images from card content in search results at this time (such as the checkmarks in the previous screenshot), you have to be signed into Teams (at https://teams.microsoft.com) in a different tab in the same browser session that you use to view the search results. Otherwise, image placeholders are displayed.
@@ -155,7 +156,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.
 
-    ![Use kind:microsoftteams in the Keywords box](../media/O365-ContentSearch-Teams-Keywords.png)
+    ![Use kind:microsoftteams in the Keywords box.](../media/O365-ContentSearch-Teams-Keywords.png)
 
   - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`.
 
@@ -176,15 +177,15 @@ You can use the **ItemClass** email property or the **Type** search condition to
 
     For example, you can use the following search query to return Yammer messages and Yammer praise items:
 
-    ![Use the ItemClass property to search for Yammer items](../media/YammerContentSearch1.png)
+    ![Use the ItemClass property to search for Yammer items.](../media/YammerContentSearch1.png)
 
   - Alternatively, you can use the **Type** email condition and select **Yammer messages** to return Yammer items. For example, the following search query will return all Yammer conversation items that contain the keyword "confidential".
 
-    ![Use the Type condition card to search for Yammer conversation items](../media/YammerContentSearch2.png)
+    ![Use the Type condition card to search for Yammer conversation items.](../media/YammerContentSearch2.png)
 
 ## Searching inactive mailboxes
 
-You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
+You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses.](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
 
 Here are a few things to keep in mind when searching inactive mailboxes.
 

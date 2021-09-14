@@ -37,7 +37,7 @@ To help reduce the chance of exceeding this limit, the storage quota for the Rec
 
 When the storage quota for the Recoverable Items folder in the primary mailbox of a mailbox on hold is close to reaching its limit, you can do the following things:
 
-- **Enable the archive mailbox and turn on auto-expanding archiving.** You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 110 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes in the Security & Compliance Center](enable-archive-mailboxes.md) and [Enable unlimited archiving in Office 365](enable-unlimited-archiving.md).
+- **Enable the archive mailbox and turn on auto-expanding archiving.** You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 110 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).
 
     > [!NOTE]
     > After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved to the Recoverable Items folder in the archive mailbox. See [Step 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) for instructions. Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this may happen after you enable the archive mailbox.
@@ -91,15 +91,15 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
 
 ### Use the EAC to create a retention policy
 
-1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif).
+1. In the EAC, go to **Compliance management** \> **Retention policies**, and then click **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
 
 2. On the **New retention policy** page, under **Name**, type a name that describes the purpose of the retention policy; for example, **MRM Policy for Mailboxes on Hold**.
 
-3. Under **Retention tags**, click **Add** ![Add Icon](../media/ITPro-EAC-AddIcon.gif).
+3. Under **Retention tags**, click **Add** ![Add Icon.](../media/ITPro-EAC-AddIcon.gif).
 
 4. In the list of retention tags, select the Recoverable Items RPT that you created in Step 1, and then click **Add**.
 
-    ![Select the custom Recoverable Items retention tag](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
+    ![Select the custom Recoverable Items retention tag.](../media/eb49866b-bdef-4fcd-a6d9-01607c01249b.png)
 
 5. Select additional retention tags to add to the retention policy. For example, you might want to add the same tags that are included in the Default MRM Policy.
 
@@ -109,7 +109,7 @@ You can use the EAC or Exchange Online PowerShell to create a retention policy.
 
     Notice that the retention tags linked to the retention policy are displayed in the details pane.
 
-    ![Retention tags linked to the retention policy are displayed in the details pane](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
+    ![Retention tags linked to the retention policy are displayed in the details pane.](../media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
 
 ### Use Exchange Online PowerShell to create a retention policy
 
@@ -134,7 +134,7 @@ The last step is to apply the new retention policy that you created in Step 2 to
 
 1. Go to **Recipients** > **Mailboxes**.
 
-2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. In the list view, select the mailbox you want to apply the retention policy to, and then click **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
 
 3. On the **User Mailbox** page, click **Mailbox features**.
 

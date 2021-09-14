@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-audit
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
@@ -23,15 +24,15 @@ description: "This article describes how to set up Advanced Audit so you can per
 
 # Set up Advanced Audit in Microsoft 365
 
-If your organization has a subscription and end user licensing that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
+If your organization has a subscription and end-user licensing that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
 
-![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
+![Workflow to set up Advanced Audit.](../media/AdvancedAuditWorkflow.png)
 
 ## Step 1: Set up Advanced Audit for users
 
 Advanced Audit features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users. To verify that the Advanced Auditing app is assigned to users, perform the following steps for each user:
 
-1. In the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal), go to **Users** > **Active users**, and select a user.
+1. In the Microsoft 365 admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and select a user.
 
 2. On the user properties flyout page, click **Licenses and apps**.
 

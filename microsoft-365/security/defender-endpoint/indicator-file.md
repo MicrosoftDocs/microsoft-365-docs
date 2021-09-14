@@ -74,7 +74,7 @@ One of the options when taking [response actions on a file](respond-file-alert
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
-## Private Preview: Alerting on file blocking actions
+## Public Preview: Alerting on file blocking actions
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -91,21 +91,18 @@ Choose if to Generate an alert on the file block event and define the alerts set
 - Description
 - Recommended actions
 
-![Alert settings for file indicators](images/indicators-generate-alert.png)
+![Alert settings for file indicators.](images/indicators-generate-alert.png)
 
 > [!IMPORTANT]
 >
->- Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
+> - Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
+> - If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
+> - In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
+> - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
 >
->- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
->
->- In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
->
->- If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
->
->   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
+> For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
-## Private Preview: Advanced hunting capabilities
+## Public Preview: Advanced hunting capabilities
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -129,7 +126,7 @@ Files:
 
 Certificates:
 
-- EUS:Win32/CustomCertEnterpriseBlock!cl  
+- EUS:Win32/CustomCertEnterpriseBlock!cl
 
 The response action activity can also be viewable in the device timeline.
 
@@ -153,13 +150,18 @@ Threat and vulnerability management's block vulnerable application features uses
 
 ### Examples
 
-|Component|Component enforcement|File indicator Action|Result
+<br>
+
+****
+
+|Component|Component enforcement|File indicator Action|Result|
 |---|---|---|---|
-|Attack surface reduction file path exclusion|Allow|Block|Block
-|Attack surface reduction rule|Block|Allow|Allow
-|Windows Defender Application Control|Allow|Block|Allow
-|Windows Defender Application Control|Block|Allow|Block
-|Microsoft Defender Antivirus exclusion|Allow|Block|Allow
+|Attack surface reduction file path exclusion|Allow|Block|Block|
+|Attack surface reduction rule|Block|Allow|Allow|
+|Windows Defender Application Control|Allow|Block|Allow|
+|Windows Defender Application Control|Block|Allow|Block|
+|Microsoft Defender Antivirus exclusion|Allow|Block|Allow|
+|
 
 ## See also
 
