@@ -35,7 +35,7 @@ ms.prod: m365-security
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP makes every effort to identify and silently drop messages from dubious sources without generating an NDR. But, based on the sheer volume email flowing through the service, there's always the possibility that EOP will unintentionally send backscatter.
 
-Backscatterer.org maintains a block list (also known as a DNS block list or DNSBL) of email servers that were responsible for sending backscatter, and EOP servers might appear on this list. But, we don't try to remove ourselves from the Backscatterer.org block list because (by their own admission) their list isn't a list of spammers.
+Backscatterer.org maintains a blocklist (also known as a DNS blocklist or DNSBL) of email servers that were responsible for sending backscatter, and EOP servers might appear on this list. But, we don't try to remove ourselves from the Backscatterer.org blocklist because (by their own admission) their list isn't a list of spammers.
 
 > [!TIP]
 > The Backscatterer.org website (<http://www.backscatterer.org/?target=usage>) recommends using their service in Safe mode instead of Reject mode, because large email services almost always send some backscatter.
