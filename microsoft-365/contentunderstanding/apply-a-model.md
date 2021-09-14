@@ -70,9 +70,9 @@ After applying the model to the document library, you can begin uploading docume
 
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
 
-## Apply the model to files and folders already in the document library
+## Apply the model to files and folder content already in the document library
 
-While an applied model processes all files and folders uploaded to the document library after it is applied, you can also do the following to run the model on files and folders that already exist in the document library prior to the model being applied:
+While an applied model processes all files and folder content uploaded to the document library after it is applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
 
 1. In your document library, select the files and folders that you want to be processed by your model.
 
@@ -100,6 +100,7 @@ The **When a file is classified by a content understanding model** trigger can t
 
 
 ## See Also
+
 [Create a classifier](create-a-classifier.md)
 
 [Create an extractor](create-an-extractor.md)
