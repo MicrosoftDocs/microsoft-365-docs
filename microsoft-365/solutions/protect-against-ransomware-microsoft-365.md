@@ -41,7 +41,7 @@ The security of your Microsoft cloud services is a partnership between you and M
 - Microsoft cloud services are built on a foundation of trust and security. Microsoft provides you security controls and capabilities to help you protect your data and applications.
 - You own your data and identities and the responsibility for protecting them, the security of your on-premises resources, and the security of cloud components you control.
 
-By combining these responsibilities, we can provide the best protection against a ransomware attack.
+By combining these capabilities and responsibilities, we can provide the best protection against a ransomware attack.
 
 ## Ransomware mitigation and recovery capabilities provided with Microsoft 365
 
@@ -203,7 +203,7 @@ For Windows 10 devices:
 
 Deploying additional security features and implementing requirements and security policies for your Microsoft 365 tenant can impact your users. 
 
-For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available from the attacker's compromised user account and targeting them in the subsequent attack.
+For example, you may impose a new security policy that requires users to create new teams for specific uses with a list of user accounts as members, instead of more easily creating a team for all users in the organization. This can help prevent a ransomware attacker from exploring teams that are not available to the attacker's compromised user account and targeting the resources of that team in the subsequent attack.
 
 This foundation solution will identify when new configurations or recommended security policies can impact your users so you can perform the required change management.
 
@@ -240,17 +240,18 @@ Microsoft 365 Defender:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
-Microsoft Cloud App Security:
-
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
-
 Microsoft Azure:
 
-- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware.md)
+- [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
 - [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 
@@ -265,3 +266,4 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
+
