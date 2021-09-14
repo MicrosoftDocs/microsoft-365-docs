@@ -50,9 +50,7 @@ The process of migrating to Defender for Endpoint can be divided into three phas
 
 In this migration guide, we focus on [next-generation protection](microsoft-defender-antivirus-in-windows-10.md) and [endpoint detection and response](overview-endpoint-detection-response.md) capabilities as a starting point for moving to Defender for Endpoint. However, Defender for Endpoint includes much more than antivirus and endpoint protection. Defender for Endpoint is a unified platform for preventative protection, post-breach detection, automated investigation, and response. The following table summarizes features and capabilities in Defender for Endpoint.
 
-<br>
-
-****
+<br/><br/>
 
 |Feature/Capability|Description|
 |---|---|
@@ -64,7 +62,6 @@ In this migration guide, we focus on [next-generation protection](microsoft-defe
 |[Behavioral blocking and containment](behavioral-blocking-containment.md)|Behavioral blocking and containment capabilities help identify and stop threats, based on their behaviors and process trees even when the threat has started execution.|
 |[Automated investigation and remediation](automated-investigations.md)|Automated investigation and response capabilities examine alerts and take immediate remediation action to resolve breaches.|
 |[Threat hunting service](microsoft-threat-experts.md) (Microsoft Threat Experts)|Threat hunting services provide security operations teams with expert level monitoring and analysis, and to help ensure that critical threats aren't missed.|
-|
 
 **Want to learn more? See [Defender for Endpoint](microsoft-defender-endpoint.md).**
 
