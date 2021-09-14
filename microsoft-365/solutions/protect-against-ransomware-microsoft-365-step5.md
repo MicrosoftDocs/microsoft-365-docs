@@ -21,17 +21,17 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 5. Protect information
 
-Because ransomware attackers will also look at your on-premises data on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](protect-against-ransomware-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
+Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](protect-against-ransomware-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
 To provide additional protection of your ransomable information in your Microsoft 365 tenant:
 
-- Locate your ransomable information
-- Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities)
-- Protect your ransomable information
+- Locate your ransomable information.
+- Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
+- Protect your ransomable information.
 
 ## Locate your ransomable information
 
-The first task is to identify the types and locations of ransomable information in your tenant, which can include the following types:
+The first task is to [identify the types and locations](/microsoft-365/compliance/information-protection#know-your-data) of ransomable information in your tenant, which can include the following types:
 
 - Sensitive
 - Proprietary or intellectual property
@@ -53,7 +53,7 @@ For each type of ransomable information, determine the following:
 
 Using strict permissions within your Microsoft 365 tenant is the "only those that need to know" principle for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
 
-While it is easier to create file storage locations or Teams with broad permissions (such as the default of everyone in your organization), for ransomable information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
+While it is easier to create file storage locations or teams with broad access (such as the default of everyone in your organization), for ransomable information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
 
 Once a ransomware attacker has infiltrated your tenant, they try to escalate their privileges by compromising the credentials of user accounts with wider scope of permissions across your tenant, such as administrator role accounts or user accounts that have access to ransomable information. 
 
@@ -103,12 +103,12 @@ Here is the ransomware protection for your tenant for steps 1-5.
 
 ## Additional ransomware resources
 
-Starting point for ransomware protection across Microsoft products is here: [https://aka.ms/ransomware](https://aka.ms/ransomware)
+Key information from Microsoft:
 
-Key industry information:
-
+- [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
+- [Human-operated ransomware](/security/compass/human-operated-ransomware)
+- [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-
 - **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
 
 Microsoft 365:
@@ -122,14 +122,21 @@ Microsoft 365 Defender:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 
+Microsoft Cloud App Security:
+
+-  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+
 Microsoft Azure:
 
-- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
+- [Backup and restore plan to protect against ransomware](backup-plan-to-protect-against-ransomware.md)
+- [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
 Microsoft Security team blog posts:
 
+- [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.
@@ -140,5 +147,3 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-
-

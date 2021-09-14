@@ -25,25 +25,27 @@ Use the following sections to protect your organization from credential compromi
 
 ## Increase sign-in security
 
-First, use these password best practices:
+Use [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) for user accounts in Azure Active Directory (Azure AD).
 
-- Block known weak and custom passwords with Azure Active Dorectory (Azure AD) Password Protection.
-- Extend blocking of known weak and custom passwords to your on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection.
-- Allow your users to change their own passwords with Self-Service Password Reset (SSPR).
+During the transition to passwordless authentication, use these best practices for user accounts that still use password authentication:
+
+- Block known weak and custom passwords with [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad).
+- Extend blocking of known weak and custom passwords to your [on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+- Allow your users to change their own passwords with [Self-Service Password Reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks).
 
 Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services. 
 
 For user sign-ins, these policies include:
 
-- Requiring MFA for priority accounts (in the short term) and eventually all user accounts.
-- Requiring high-risk users to use MFA.
-- Requiring high-risk users to change their passwords.
+- Requiring MFA for priority accounts (immediately) and eventually all user accounts.
+- Requiring high-risk sign-ins to use MFA.
+- Requiring high-risk users with high-risk sign-ins to change their passwords.
 
 ## Prevent privilege escalation
 
 Use these best practices:
 
-- Implement the principle of least-privilege and maintain credential hygiene. 
+- Implement the principle of [least-privilege](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) and use password protection as described in [Increase sign-in security](#increase-sign-in-security) for those user accounts that still use passwords for their sign-ins. 
 - Avoid the use of domain-wide, admin-level service accounts. 
 - Restrict local administrative privileges to limit installation of Remote Access Trojans (RATs) and other unwanted applications.
 - Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.

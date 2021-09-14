@@ -21,7 +21,7 @@ description: Step through protecting your Microsoft 365 resources from ransomwar
 
 # Step 4. Protect devices
 
-To help protect devices against the initial access part of an attack:
+To help protect devices against the initial access part of a ransomware attack:
 
 - Deploy [Intune](/mem/intune/fundamentals/what-is-intune) as a mobile device management (MDM) and mobile application management (MAM) provider for your devices and enroll your organization-owned devices.
 - Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and device health and compliance requirements.
@@ -29,6 +29,8 @@ To help protect devices against the initial access part of an attack:
 - Configure [site and download checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) and [app and file checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) in Microsoft Defender SmartScreen to block or warn.
 - Enable [Microsoft Defender Antivirus scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) of downloaded files and attachments.
 - Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft 365 Defender.
+
+## Windows 10 devices
 
 To help protect against the lateral movement part of an attack from a Windows 10 device:
 
