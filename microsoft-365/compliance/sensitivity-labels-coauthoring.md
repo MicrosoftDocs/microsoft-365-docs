@@ -25,7 +25,7 @@ Without this setting enabled for your tenant, users must check out an encrypted 
 
 In addition, enabling this functionality results in the [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality being supported for these labeled and encrypted files.
 
-To read the initial release announcement, see the blog post [Announcing co-authoring on Microsoft Information Protection-encrypted documents and labeling updates](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+To read the release announcement, see the blog post [Co-authoring on Microsoft Information Protection encrypted documents is now generally available](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/2693718).
 
 ## Metadata changes for sensitivity labels
 
@@ -77,7 +77,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
     - **Azure Information Protection unified labeling client and scanner:**
-        - Minimum version 2.12.62.0 that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
+        - Minimum version [2.12.62.0](/information-protection/rms-client/unifiedlabelingclient-version-release-history#version-212620) that you can install from the [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **OneDrive sync app for Windows or macOS:**
         - Minimum version of 19.002.0121.0008
