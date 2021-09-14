@@ -38,4 +38,4 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 Backscatterer.org maintains a block list (also known as a DNS block list or DNSBL) of email servers that were responsible for sending backscatter, and EOP servers might appear on this list. But, we don't try to remove ourselves from the Backscatterer.org block list because it isn't a list of spammers (by their own admission).
 
 > [!TIP]
-> The Backscatter.org website (<http://www.backscatterer.org/?target=usage>) recommends using their service to check incoming email in Safe mode instead of Reject mode (large email services almost always send some backscatter).
+> The Backscatterer.org website (<http://www.backscatterer.org/?target=usage>) recommends using their service to check incoming email in Safe mode instead of Reject mode (large email services almost always send some backscatter).
