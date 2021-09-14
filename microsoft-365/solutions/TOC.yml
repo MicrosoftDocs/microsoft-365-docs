@@ -71,12 +71,6 @@
             href: create-secure-guest-sharing-environment.md
         - name: External sharing reference
           href: microsoft-365-guest-settings.md    
-    - name: Deploy threat protection across Microsoft 365
-      items:
-      - name: Overview   
-        href: deploy-threat-protection.md
-      - name: Steps to deploy threat protection
-        href: deploy-threat-protection-configure.md
     - name: Deploy ransomware protection for your Microsoft 365 tenant
       items:
       - name: Overview   
