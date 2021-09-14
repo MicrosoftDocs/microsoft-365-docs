@@ -2,6 +2,8 @@
   href: index.yml
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
+- name: Compliance trials
+  href: compliance-easy-trials.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
