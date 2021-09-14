@@ -26,7 +26,7 @@ Ransomware is a type of extortion attack that destroys or encrypts files and fol
 
 Once the attack is complete, an attacker demands money from victims in exchange for the deleted files, decryption keys for encrypted files, or a promise not to release sensitive data to the dark web or the public internet. Human-operated ransomware can also be used to shut down critical machines or processes, such as those needed for industrial production, bringing normal business operations to a halt until the ransom is paid and the damage is corrected, or the organization remediates the damage themselves.
 
-A human-operated ransomware attack can be catastrophic to businesses of all sizes and is difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom incident.
+A human-operated ransomware attack can be catastrophic to businesses of all sizes and is difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware, human-operated ransomware can continue to threaten businesses operations after the initial ransom request.
 
 >[!Note]
 >A ransomware attack on a Microsoft 365 tenant assumes that the attacker has valid user account credentials for a tenant and has access to all of the files and resources that are permitted to the user account. An attacker without any valid user account credentials would have to decrypt the data at rest that has been encrypted by Microsoft 365 default and enhanced encryption. For more information, see [Encryption and key management overview](/compliance/assurance/assurance-encryption). 

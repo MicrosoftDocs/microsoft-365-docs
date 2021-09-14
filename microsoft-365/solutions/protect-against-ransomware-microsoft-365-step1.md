@@ -27,7 +27,7 @@ As a first step to counter ransomware attackers, you must configure the followin
 - [Exchange email management](#exchange-email-management-baseline)
 - [Additional baselines for Windows devices and client software](#additional-baselines)
 
-These baselines contain configuration settings and rules that are well-known by attackers. The absence of these baselines are quickly noticed and commonly exploited by cyber attackers.
+These baselines contain configuration settings and rules that are well-known by attackers. The absence of these baselines are quickly noticed and commonly exploited.
 
 ## Microsoft 365 security baseline
 
