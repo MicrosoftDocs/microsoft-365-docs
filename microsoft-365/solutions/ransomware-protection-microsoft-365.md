@@ -128,7 +128,7 @@ The steps in this solution are:
 2. [Deploy attack detection and response](ransomware-protection-microsoft-365-attack-detection-response.md)
 3. [Protect identities](ransomware-protection-microsoft-365-identities.md)
 4. [Protect devices](ransomware-protection-microsoft-365-devices.md)
-5. [Protect information](ransomware-protection-microsoft-365-information5.md)
+5. [Protect information](ransomware-protection-microsoft-365-information.md)
 
 Here are the five steps of the solution deployed for your Microsoft 365 tenant.
 
@@ -215,7 +215,7 @@ Use these steps to deploy comprehensive protection for your Microsoft 365 tenant
 2. [Deploy attack detection and response](ransomware-protection-microsoft-365-attack-detection-response.md)
 3. [Protect identities](ransomware-protection-microsoft-365-identities.md)
 4. [Protect devices](ransomware-protection-microsoft-365-devices.md)
-5. [Protect information](ransomware-protection-microsoft-365-information5.md)
+5. [Protect information](ransomware-protection-microsoft-365-information.md)
 
 [![Step 1 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step1.png)](ransomware-protection-microsoft-365-security-baselines.md)
 

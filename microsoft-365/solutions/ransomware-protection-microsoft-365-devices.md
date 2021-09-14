@@ -72,6 +72,6 @@ Here is the ransomware protection for your tenant for steps 1-4.
 
 ## Next step
 
-[![Step 5 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step5.png)](ransomware-protection-microsoft-365-information5.md)
+[![Step 5 for ransomware protection with Microsoft 365](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-step5.png)](ransomware-protection-microsoft-365-information.md)
 
-Continue with [Step 5](ransomware-protection-microsoft-365-information5.md) to protect information in your Microsoft 365 tenant. 
+Continue with [Step 5](ransomware-protection-microsoft-365-information.md) to protect information in your Microsoft 365 tenant. 
