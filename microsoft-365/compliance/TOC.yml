@@ -329,7 +329,7 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
-            - name: Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+            - name: Migrate Exchange Online data loss prevention policies to Compliance center
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
