@@ -84,8 +84,6 @@ Linux
 >The following capabilities are not currently supported on Linux endpoints:
 >- Data loss prevention
 >- Live response
->- SIEM
-
 
 
 ## Microsoft Defender for Endpoint on Android
