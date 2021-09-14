@@ -29,19 +29,18 @@ To begin using the app governance add-on to Microsoft Cloud App Security, you ne
 
 ## Step 2: Sign up for free trial of app governance
 
-For new Microsoft 365 customers:
-
-1. At the top of this page, select the **Free Account** button.
-1. Under **Try Microsoft 365 for business** select **Try 1 month free**.
-1. Complete the steps for the sign-up.
-1. Continue with the steps for existing Microsoft 365 customers.
-
 For existing Microsoft 365 customers:
 
 1. Navigate to the [sign up page for the free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc). 
 1. Complete the steps to add app governance. Sign-up is simple, as shown in the following graphic.
 
-:::image type="content" source="../media/manage-app-protection-governance/app-governance-signup2.gif" alt-text="Simple steps to add app governance to your account.":::
+:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
+
+If you are not already a Microsoft 365 customer, you can sign up for a free trial:
+
+1. At the top of this page, select the **Free Account** button.
+1. Under **Try Microsoft 365 for business** select **Try 1 month free**.
+1. Complete the steps for the sign-up.
 
 ## Step 3: Add integration with MCAS
 
@@ -111,9 +110,6 @@ One of the following administrator roles is required to see app governance pages
 - Security Administrator
 - Security Operator
 - Security Reader (read-only)
-
-> [!NOTE]
-> Only a Global Admin can activate the app governance free trial.
 
 Here are the capabilities for each role.
 
