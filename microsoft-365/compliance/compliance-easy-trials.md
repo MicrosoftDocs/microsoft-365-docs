@@ -18,9 +18,9 @@ description: "About the Microsoft Compliance free trials."
 
 # About the free trial for Microsoft Compliance
 
-Microsoft compliance products protect your organization from internal threats rising from inappropriate permissions on files and emails, and ensures compliance with regulatory and policy requirements.
+Microsoft compliance products protect your organization from internal threats rising from inappropriate permissions on files and emails, and ensure compliance with regulatory and policy requirements.
 
-A Microsoft E5 compliance trial is the easiest way to try the capabilities of Microsoft compliance products, and setting it up only takes a couple of clicks. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+A Microsoft E5 compliance trial is the easiest way to try the capabilities of Microsoft compliance products, and setting it up only takes a couple of clicks. After the trial set up is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
@@ -28,11 +28,11 @@ See the [terms and conditions](terms-conditions.md) for the Microsoft 365 free t
 
 ## Set up a Compliance trial
 
-You can sign-up for a trial in the Microsoft compliance center using the Trials link in the left navigation pane.
+You can sign up for a trial in the Microsoft compliance center using the Trials link in the left navigation pane.
 
 ## Licensing
 
-As part of the trial setup, the Microsoft E5 compliance licenses are automatically applied to the organization. The licenses are active for the first 90 days.
+As part of the trial set up, the Microsoft E5 compliance licenses are automatically applied to the organization. The licenses are active for the first 90 days.
 
 ## Permissions
 
