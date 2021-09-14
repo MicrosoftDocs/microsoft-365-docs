@@ -53,22 +53,18 @@ EDM-based classification enables you to create custom sensitive information type
 >
 > This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
-
-
 ## What's different in an EDM SIT
 
-other concepts and terminology that you need to know
-
-### DLP policies that use EDM SITs must be based on a pre-existing SIT baSED DLP policy
-
-Creating an EDM based SIT is the first step.  The EDM SIT must be used in a DLP policy in order for items that the SIT is looking to identify to be monitored/protected by DLP.
+When you work with EDM SITs, it's helpful to understand a few concepts that are unique to them.  
 
 ### You supply your own schema and data
 
-bullet list of steps you do this and message 'so you are responsible for security/encryption of your data'
+[Microsoft 365 comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary data values that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.
 
-concept - hashing
-concept - salt 
+### Primary elements
+
+When you create and EDM SIT, you define a primary element field in the schema. Primary fields are the elements for which all your content will be scanned, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the secondary elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
+
 
 ## How matching works
 
@@ -92,7 +88,7 @@ The database of   sensitive information type you can upload for each EDM-based s
 
 
 
-
+## See also
 
 
    
