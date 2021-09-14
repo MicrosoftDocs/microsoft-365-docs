@@ -112,23 +112,26 @@ You must enable device monitoring and onboard your endpoints before you can moni
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).
+If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. <!--Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).-->
 
 ### Onboarding devices
 
-In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
+In this deployment scenario, you'll onboard devices that have not been onboarded yet.
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
+
+   > [!NOTE]
+   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
 2. Open the Compliance Center settings page and choose **Onboard devices**.
 
    > [!div class="mx-imgBorder"]
    > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-   > [!NOTE]
-   > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
+3. Choose **Device management** to open the **Devices** list. 
 
-3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+> [!NOTE]
+> If you have previously deployed Microsoft Defender for Endpoint, all the devices that were onboarded during that process will be listed in the **Devices** list. There is no need to onboard them again.
 
 4. Choose **Onboarding** to begin the onboarding process.
 
@@ -142,14 +145,14 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
     - Onboard Windows 10 machines using a local script
     - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
 
-Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
+Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
 > [!NOTE]
 > This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### With devices onboarded into Microsoft Defender for Endpoint
+<!--### With devices onboarded into Microsoft Defender for Endpoint
 
-In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Microsoft 365 information protection solution to expand coverage.
+In this scenario, Microsoft Defender for Endpoint is already deployed and there are devices reporting in. All these devices will appear in the managed devices list. You can continue to onboard new devices into Microsoft 365 information protection solution to expand coverage.
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 
@@ -168,10 +171,10 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
     - Onboard Windows 10 machines using a local script
     - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
 
-Once done and endpoint is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
+Once a device is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
 
 > [!NOTE]
->This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+>This experience is under license enforcement. Without the required license, data will not be visible or accessible.-->
 
 ## See also
 
