@@ -23,7 +23,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
-ms.date: 04/26/2021
+ms.date: 09/16/2021
 ---
 
 # Assign licenses to users
@@ -34,6 +34,9 @@ You can assign licenses to users on either the **Active users** page, or on the 
 > As an admin, you can't assign or unassign licenses for a self-service purchase subscription bought by a user in your organization. You can [take over a self-service purchase subscription](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription), and then assign or unassign licenses.
 
 [Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
+
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
 

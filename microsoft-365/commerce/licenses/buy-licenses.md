@@ -21,12 +21,15 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 04/07/2021
+ms.date: 09/16/2021
 ---
 
 # Buy or remove licenses
 
 You can buy more licenses or reduce the number of licenses for your subscriptions by using the following steps.
+
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
 
