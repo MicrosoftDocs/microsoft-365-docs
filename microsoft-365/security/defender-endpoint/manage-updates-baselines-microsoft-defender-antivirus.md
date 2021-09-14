@@ -513,7 +513,7 @@ During the technical support (only) phase, commercially reasonable support incid
 
 ### Platform version included with Windows 10 releases
 
-The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:
+The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:<br/><br/>
 
 |Windows 10 release  |Platform version  |Engine version |Support phase |
 |:---|:---|:---|:---|
