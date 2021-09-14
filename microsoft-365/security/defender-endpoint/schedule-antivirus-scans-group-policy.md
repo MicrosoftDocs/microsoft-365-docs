@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 09/13/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
@@ -37,6 +37,9 @@ This article describes how to configure scheduled scans using Group Policy. To l
 4. Repeat steps 1-4 for each setting you want to configure.
 
 5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
+
+> [!NOTE]
+> When configuring scheduled scans, the setting **Start the scheduled scan only when computer is on but not in use**, which is enabled by default, can impact the expected scheduled time by requiring the machine to be idle first.
 
 > [!TIP]
 > See the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
