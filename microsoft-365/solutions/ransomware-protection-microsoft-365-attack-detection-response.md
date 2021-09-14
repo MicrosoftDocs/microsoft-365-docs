@@ -72,6 +72,8 @@ The following tools use Microsoft 365 Defender and its portal (https://security.
 
 Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident so that your security analysts can more quickly detect, investigate, and remediate the phases of a ransomware attack.
 
+To get started, [set up a trial environment](/microsoft-365/security/defender/eval-overview) so you can evaluate the features and capabilities of Microsoft 365 Defender.
+
 ## Resulting configuration
 
 Here is the ransomware protection for your tenant for steps 1 and 2.

@@ -29,6 +29,10 @@ To provide additional protection of your ransomable information in your Microsof
 - Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
 - Protect your ransomable information.
 
+>[!Note]
+>For detailed deployment guidance for information protection in a Microsoft 365 tenant, see [Deploy information protection for data privacy regulations](information-protection-deploy.md). Although intended for data privacy regulations, much of the guidance also applies to ransomware protection.
+>
+
 ## Locate your ransomable information
 
 The first task is to [identify the types and locations](/microsoft-365/compliance/information-protection#know-your-data) of ransomable information in your tenant, which can include the following types:
@@ -71,7 +75,7 @@ You can ensure strict permissions in your tenant with these steps:
 3. Perform change management for your users so that future locations for ransomable information are created and maintained with strict permissions.
 4. Audit and monitor the locations for ransomable information to ensure that broad permissions aren't being granted.
 
-An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
+See [Set up secure collaboration with Microsoft 365 and Microsoft Teams](setup-secure-collaboration-with-teams.md) for detailed guidance. An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## Protect your ransomable information
 
