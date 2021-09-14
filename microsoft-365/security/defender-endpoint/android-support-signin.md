@@ -147,7 +147,7 @@ Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, a
 If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide **in-app feedback** along with **diagnostic data**. Our team can then investigate the logs to provide the right solution. Users can follow these steps to do the same:
 1.	Open the **MDE application** on your device and click on the **profile icon** in the top-left corner.
 
-    ![Click on profile icon.](images/selectprofileicon1.jpeg)
+    ![Click on profile icon.](images/select-profile-icon-1.jpg)
 
 2.	Select “Help & feedback”.
 
@@ -156,11 +156,11 @@ If a user faces an issue which is not already addressed in the above sections or
 
 3.	Select “Send feedback to Microsoft”.
 
-    ![Select send feedback to Microsoft](images/sendfeedbacktomicrosoft3.jpeg)
+    ![Select send feedback to Microsoft](images/send-feedback-to-microsoft-3.jpg)
 
 4.	Choose from the given options. To report an issue, select “I want to report an issue”.
 
-    ![Report an issue](images/reportissue4.jpeg)
+    ![Report an issue](images/report-issue-4.jpg)
 
 5.	Provide details of the issue that you are facing and check “Send diagnostic data”. We recommend checking “Include your email address” so that the team can reach back to you with a solution or a follow-up.
 

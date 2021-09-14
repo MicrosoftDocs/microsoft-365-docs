@@ -32,7 +32,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -67,9 +67,8 @@ Additional syntax help:
 **-h** \# Help<br>
 \# Show help message
 
-**-p** \# Performance<br>
-\# Planned parameter that is not yet implemented.<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand.
+**performance** \# Performance<br>
+\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
 
 **-o** \# Output<br>
 \# Specify the destination path for the result file
@@ -117,3 +116,7 @@ Additional syntax help:
 - Auditd_info.txt
 
   Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+
+- perf_benchmark.tar.gz
+
+  Description: The performance test reports. You will see this only if you are using the performance parameter.
