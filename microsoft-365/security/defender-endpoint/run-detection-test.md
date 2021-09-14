@@ -13,14 +13,14 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
 
-# Run a detection test on a newly onboarded Microsoft Defender for Endpoint device 
+# Run a detection test on a newly onboarded Microsoft Defender for Endpoint device
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,14 +36,15 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Onboarding devices is the method of adding devices to the Microsoft Defender for Endpoint service. It allows devices to report signals to the service.  
+Onboarding devices is the method of adding devices to the Microsoft Defender for Endpoint service. It allows devices to report signals to the service.
 
-Verifying that a device has been successfully added to the service is an important step in the entire deployment process. 
+Verifying that a device has been successfully added to the service is an important step in the entire deployment process.
 
 ## Verify onboarding using a detection test
+
 Run the following PowerShell script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.
 
-1. Create a folder:  'C:\test-MDATP-test'.
+1. Create a folder: 'C:\test-MDATP-test'.
 2. Open an elevated command-line prompt on the device and run the script:
 
    1. Go to **Start** and type **cmd**.
@@ -61,6 +62,7 @@ Run the following PowerShell script on a newly onboarded device to verify that i
 The Command Prompt window will close automatically. If successful, the detection test will be marked as completed and a new alert will appear in the portal for the onboarded device in approximately 10 minutes.
 
 ## Related topics
+
 - [Onboard Windows 10 devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)

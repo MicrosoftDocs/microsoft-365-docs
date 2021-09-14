@@ -11,7 +11,7 @@ localization_priority: Normal
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: asr
 ms.topic: article
@@ -54,7 +54,7 @@ With advanced hunting you can shape the queries to your liking, so that you can 
 
 An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past six months, in the Microsoft 365 Defender, by going to the Machines list, select a given machine, and then click on the Timeline tab.
 
-Pictured below is a screenshot of the Timeline view of these events on a given endpoint.  From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
+Pictured below is a screenshot of the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender timeline.":::
 
@@ -98,7 +98,7 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 ASR rule events can be viewed within the Windows Defender log.
 
-To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
+To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr.":::
 
