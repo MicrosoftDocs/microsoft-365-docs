@@ -36,56 +36,43 @@ ms.technology: mde
 
 Based on the version of Configuration Manager you're running, the following client operating systems can be onboarded:
 
-#### Configuration Manager version 1910 and prior
+- **Configuration Manager version 1910 and prior**:
+  - Clients computers running Windows 10
+- **Configuration Manager version 2002 and later**:
 
-- Clients computers running Windows 10 
+  Starting in Configuration Manager version 2002, you can onboard the following operating systems:
 
-#### Configuration Manager version 2002 and later
+  - Windows 8.1
+  - Windows 10
+  - Windows Server 2012 R2
+  - Windows Server 2016
+  - Windows Server 2016, version 1803 or later
+  - Windows Server 2019
 
-Starting in Configuration Manager version 2002, you can onboard the following operating systems:
-
-- Windows 8.1
-- Windows 10
-- Windows Server 2012 R2
-- Windows Server 2016
-- Windows Server 2016, version 1803 or later
-- Windows Server 2019
-
->[!NOTE]
->For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
-
-
+> [!NOTE]
+> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
 
 ### Onboard devices using System Center Configuration Manager
 
 
-[![Image of the PDF showing the various deployment paths](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
+[![Image of the PDF showing the various deployment paths.](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
-
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint. 
-
+Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
-    
-    1. Select Windows 10 as the operating system.
-
-    1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
-    
-    1. Select **Download package**, and save the .zip file.
+    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
+    2. Select Windows 10 as the operating system.
+    3. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
+    4. Select **Download package**, and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *WindowsDefenderATPOnboardingScript.cmd*.
 
 3. Deploy the package by following the steps in the [Packages and Programs in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) article.
 
-    a. Choose a predefined device collection to deploy the package to.
+   Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
 > Defender for Endpoint doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
-
-> [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
 >
 > Note that it's possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
@@ -164,6 +151,10 @@ Enable the feature in audit mode for at least 30 days. After this period, review
 
 For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
+## Run a detection test to verify onboarding
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
+
+
 ## Offboard devices using Configuration Manager
 
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package, you will be notified of the packages expiry date and it will also be included in the package name.
@@ -177,9 +168,8 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** >  **Offboarding**.
+    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
     1. Select Windows 10 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Select **Download package**, and save the .zip file.
@@ -215,7 +205,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
-    ![Configuration Manager showing successful deployment with no errors](images/sccm-deployment.png)
+    ![Configuration Manager showing successful deployment with no errors.](images/sccm-deployment.png)
 
 ### Check that the devices are compliant with the Microsoft Defender for Endpoint service
 

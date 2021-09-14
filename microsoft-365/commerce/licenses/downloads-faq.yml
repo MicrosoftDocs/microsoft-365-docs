@@ -4,14 +4,12 @@ metadata:
   ms.author: cmcatee
   author: cmcatee-MSFT
   manager: scotv
-  ms.reviewer: 
-  - Rani Chegondi
-  - Armando Valenzuela
+  ms.reviewer: racheg, armanv
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: article
-  ms.service: bookings
-  ms.custom: commerce_licensing
+  ms.service: o365-administration
+  ms.custom: commerce_vl
   localization_priority: Normal
   description: "Frequently asked questions about Microsoft 365 admin center downloads."
     
@@ -28,7 +26,8 @@ sections:
 
           You can find the system requirements for each product by signing into the admin center and going to **Your products** > **Downloads** page > **Product description**. 
 
-          **Note** Not all products require a product key.
+          > [!NOTE]
+          > Not all products require a product key.
 
       - question: |
           What products can I download from the admin center?
@@ -86,7 +85,8 @@ sections:
           1. Select **Volume Licensing**, and then select the product or **View downloads**.
           2. Under **Download**, select the **Language** and **Operating System Type**.
           
-          **Note** Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+          > [!NOTE]
+          > Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
 
       - question: |
           What are EXE and ISO files?
@@ -96,7 +96,8 @@ sections:
             - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.
             - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.
           
-          **Note** Not all products are available in all languages and in all formats.
+          > [!NOTE]
+          > Not all products are available in all languages and in all formats.
 
       - question: |
           How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
@@ -110,7 +111,8 @@ sections:
         answer: |
           If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
           
-          **Note** This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+          > [!NOTE]
+          > This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
 
       - question: |
           How do I get support for downloaded products?

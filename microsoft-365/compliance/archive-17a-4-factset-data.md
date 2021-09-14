@@ -24,7 +24,7 @@ After FactSet data is stored in user mailboxes, you can apply Microsoft 365 comp
 
 The following overview explains the process of using a data connector to archive FactSet data in Microsoft 365.
 
-![Archiving workflow for FactSet data from 17a-4](../media/FactSetDataParserConnectorWorkflow.png)
+![Archiving workflow for FactSet data from 17a-4.](../media/FactSetDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the FactSet DataParser.
 

@@ -38,7 +38,7 @@ ms.custom: api
 Retrieves a collection of Alerts.
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
-<br>```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category``` properties.
+<br>```$filter``` on: ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```id```, ```asssignedTo```, ```detectionSource```, ```lastEventTime```, ```status```, ```severity``` and ```category``` properties.
 <br>```$top``` with max value of 10,000 
 <br>```$skip```
 <br>```$expand``` of ```evidence```

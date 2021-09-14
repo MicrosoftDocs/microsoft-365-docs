@@ -195,6 +195,9 @@
           href: microsoft-365-service-health.md
         - name: Exchange Online monitoring
           href: microsoft-365-exchange-monitoring.md
+          items:
+            - name: Mailbox utilization service alerts
+              href: microsoft-365-mailbox-utilization-service-alerts.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
@@ -713,6 +716,9 @@
       href: /compliance/assurance/assurance-developing-your-ebcm-plan
     - name: Service incident mitigation scenarios
       href: /compliance/assurance/assurance-microsoft-365-mitigations
+
+- name: Navigation guide
+  href: ../microsoft-365-docs-navigation-guide.md?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
 
 - name: Microsoft 365 for Business
   href: ../admin/index.yml

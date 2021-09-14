@@ -54,7 +54,11 @@ Runs a sequence of live response commands on a device
 
 4.  RunScript command timeouts after 10 minutes.
 
-5.  When a live response command fails all followed actions will not be
+5.  Live response commands cannot be queued up and can only be executed one at a time. 
+
+6.  If the machine that you are trying to run this API call is in an RBAC device group that does not have an automated remediation level assigned to it, you'll need to at least enable the minimum Remediation Level for a given Device Group.
+
+7.  Multiple live response commands can be run on a single API call. However, when a live response command fails all the subsequent actions will not be
     executed.
 
 ## Minimum Requirements
@@ -116,7 +120,7 @@ POST https://api.securitycenter.microsoft.com/API/machines/{machine_id}/runliver
 
 ## Response
 
-- If successful, this method returns 200, Ok.
+- If successful, this method returns 201 Created.
 
   Action entity. If machine with the specified ID was not found - 404 Not Found.
 

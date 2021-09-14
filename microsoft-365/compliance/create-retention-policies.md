@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: "Use a retention policy to efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
@@ -62,25 +63,25 @@ When you have more than one retention policy, and when you also use retention la
 
 ### Retention policy for Teams locations
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
-2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
+2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
 3. For the **Choose locations to apply the policy** page, select any or all of the locations for Teams:
     - **Teams channel message**: Messages from standard channel chats and standard channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
     - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
-    - **Teams private channel messages**: Messages from private channel chats and private channel meetings. This option is currently rolling out in preview and if you don't see it displayed, try again in a few days.
+    - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
     
    By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the **Edit** options to configure a retention policy for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
     
     - For group chat messages and private channel messages, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
     - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+4. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
-5. Complete the wizard to save your settings.
+5. Complete the configuration to save your settings.
 
 For guidance when to use retention policies for Teams and understand the end user experience, see [Manage retention policies for Microsoft Teams](/microsoftteams/retention-policies) from the Teams documentation.
 
@@ -117,7 +118,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -134,11 +135,11 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
     - If you leave the default at **All**, Azure B2B guest users are not included. 
     - If you select **Edit** for the **Included** column, you can apply a retention policy to external users if you know their account.
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+4. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content. 
     
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
-5. Complete the wizard to save your settings.
+5. Complete the configuration to save your settings.
 
 For more information about how retention policies work for Yammer, see [Learn about retention for Yammer](retention-policies-yammer.md).
 
@@ -164,9 +165,9 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
-2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
+2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
 3. For the **Choose locations to apply the policy** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](#a-policy-with-specific-inclusions-or-exclusions).
 
@@ -176,11 +177,11 @@ Use the following instructions for retention policies that apply to any of these
     - [Microsoft 365 Groups](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
-4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+4. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
-5. Complete the wizard to save your settings.
+5. Complete the configuration to save your settings.
 
 #### Configuration information for Exchange email and Exchange public folders
 
@@ -192,7 +193,7 @@ Additionally, resource mailboxes and Microsoft 365 group mailboxes are not suppo
 
 If you do choose recipients to include or exclude, you can select distribution groups and email-enabled security groups. Behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, an existing retention policy isn't automatically updated.
 
-For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
+For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 
@@ -200,15 +201,22 @@ The **Exchange public folders** location applies retention settings to all publi
 
 When you choose the **SharePoint sites** location, the retention policy can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
-Although the retention policy is applied at the site level, only documents have retention settings applied to them. For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+Although the retention policy is applied at the site level, only documents have retention settings applied to them. For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
-When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the wizard. If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
+When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the configuration process won't create the retention policy until the validation check passes. If you see this message, go back in the configuration to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts to include or exclude, the URL has the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+To specify individual OneDrive accounts to include or exclude, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
 
-For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
 
-To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
+
+However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+
+> [!NOTE]
+> When you specify individual OneDrive accounts to include or exclude, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
+> 
+> Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify here.
 
 ### Configuration information for Microsoft 365 Groups
 
@@ -227,7 +235,7 @@ To return to the default value of both the mailbox and SharePoint site for the s
 
 Unlike other locations, you can't toggle the status of the Skype location on to automatically include all users. Instead, when you turn on that location, you must then select the **Edit** option to manually choose the users whose conversations you want to retain:
 
-![Edit Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Edit Skype location for retention policies.](../media/skype-location-retention-policies.png)
 
 After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
@@ -265,7 +273,7 @@ Examples:
 
 At the end of the retention period, you choose whether you want the content to be permanently deleted:
 
-![Retention settings page](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
 ### Deleting content that's older than a specific age
 

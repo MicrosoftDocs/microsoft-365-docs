@@ -24,7 +24,7 @@ After the TeleMessage Enterprise Number Archiver connector data is stored in use
 
 The following overview explains the process of using a connector to archive Enterprise Network data in Microsoft 365.
 
-![Enterprise Number archiving workflow](../media/EnterpriseNumberConnectorWorkflow.png)
+![Enterprise Number archiving workflow.](../media/EnterpriseNumberConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up an Enterprise Number Archiver connector. For more details refer to [here](https://www.telemessage.com/office365-activation-for-enterprise-number-archiver/).
 

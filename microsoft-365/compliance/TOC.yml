@@ -103,37 +103,45 @@
     - name: Sensitive information types
       items: 
         - name: Learn about sensitive information types
-          href: sensitive-information-type-learn-about.md
-        - name: Sensitive information type entity definitions 
-          href: sensitive-information-type-entity-definitions.md
-        - name: What the DLP functions look for
-          href: what-the-dlp-functions-look-for.md
-        - name: Customize a built-in sensitive information type
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: Create custom sensitive information types with exact data match
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
-          href: sit-edm-wizard.md
-        - name: Modify exact data match schema to use configurable match
-          href: sit-modify-edm-schema-configurable-match.md
-        - name: Create notifications for exact data match activities (preview)
-          href: sit-edm-notifications-activities.md  
-        - name: Get started with custom sensitive information types - Compliance Center
-          href: create-a-custom-sensitive-information-type.md
-        - name: Create a custom sensitive information type - PowerShell
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: Remove a custom sensitive information type - PowerShell
-          href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
-        - name: Modify a custom sensitive information type - PowerShell
-          href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
-        - name: Custom sensitive information type filters reference
-          href: sit-custom-sit-filters.md
-        - name: Create a keyword dictionary
-          href: create-a-keyword-dictionary.md
-        - name: Modify a keyword dictionary
-          href: sit-modify-keyword-dictionary.md
-        - name: Document Fingerprinting
-          href: document-fingerprinting.md
+          items:
+          - name: Learn about sensitive information types
+            href: sensitive-information-type-learn-about.md
+          - name: Document Fingerprinting
+            href: document-fingerprinting.md
+        - name: Get started with sensitive information type
+          items:
+          - name: Get started with custom sensitive information types - Compliance Center
+            href: create-a-custom-sensitive-information-type.md
+        - name: Use sensitive information types
+          items:
+          - name: Customize a built-in sensitive information type
+            href: customize-a-built-in-sensitive-information-type.md
+          - name: Create custom sensitive information types with exact data match
+            href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+          - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
+            href: sit-edm-wizard.md
+          - name: Modify exact data match schema to use configurable match
+            href: sit-modify-edm-schema-configurable-match.md
+          - name: Create notifications for exact data match activities (preview)
+            href: sit-edm-notifications-activities.md
+          - name: Create a custom sensitive information type - PowerShell
+            href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+          - name: Remove a custom sensitive information type - PowerShell
+            href: sit-remove-a-custom-sensitive-information-type-in-powershell.md
+          - name: Modify a custom sensitive information type - PowerShell
+            href: sit-modify-a-custom-sensitive-information-type-in-powershell.md
+          - name: Create a keyword dictionary
+            href: create-a-keyword-dictionary.md
+          - name: Modify a keyword dictionary
+            href: sit-modify-keyword-dictionary.md
+        - name: Sensitive information type reference
+          items:
+          - name: Sensitive information type entity definitions 
+            href: sensitive-information-type-entity-definitions.md
+          - name: What the DLP functions look for
+            href: what-the-dlp-functions-look-for.md
+          - name: Custom sensitive information type filters reference
+            href: sit-custom-sit-filters.md
     - name: Trainable classifiers
       items: 
         - name: Learn about trainable classifiers
@@ -152,8 +160,6 @@
           href: data-classification-activity-explorer.md
         - name: Labeling actions reported in Activity explorer
           href: data-classification-activity-explorer-available-events.md
-        - name: Data classification release notes
-          href: data-classification-pub-preview-relnotes.md
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
@@ -170,7 +176,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Enable co-authoring for documents encrypted by sensitivity labels (preview)
+        - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
@@ -263,6 +269,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Data loss prevention policy reference
+            href: dlp-policy-reference.md 
         - name: Get started with DLP
           items:
           - name: Get started with the default DLP policy
@@ -323,6 +331,8 @@
               href: dlp-use-policies-non-microsoft-cloud-apps.md
             - name: DLP policy conditions and exceptions
               href: dlp-conditions-and-exceptions.md
+            - name: Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+              href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
 - name: Manage information governance
@@ -335,6 +345,8 @@
           items:
             - name: Retention policies and labels
               href: retention.md
+            - name: Retention flowchart
+              href: retention-flowchart.md
             - name: Retention for SharePoint and OneDrive
               href: retention-policies-sharepoint.md
             - name: Retention for Microsoft Teams
@@ -453,6 +465,8 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
+            - name: YouTube (preview)
+              href: archive-youtube-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage data connectors
@@ -467,6 +481,8 @@
               href: archive-enterprise-number-data.md
             - name: O2 Telefonica SMS and Voice Network Archiver
               href: archive-o2-network-data.md
+            - name: Rogers Network Archiver
+              href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
             - name: Telegram Archiver
@@ -507,6 +523,8 @@
               href: archive-17a-4-refinitiv-messenger-data.md
             - name: ServiceNow DataParser 
               href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser
+              href: archive-17a-4-skype-for-business-server-data.md
             - name: Slack DataParser 
               href: archive-17a-4-slack-data.md
             - name: SQL DataParser 
@@ -613,6 +631,8 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Configure search permissions filtering
+            href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: View statistics for search results
@@ -627,8 +647,6 @@
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Configure permissions filtering for content search
-            href: permissions-filtering-for-content-search.md
           - name: Troubleshoot common eDiscovery issues
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
@@ -651,6 +669,8 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
+          - name: Troubleshoot common eDiscovery issues
+            href: ediscovery-troubleshooting-common-issues.md
           - name: Change the size of PST files when exporting search results
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
@@ -659,8 +679,6 @@
             href: check-your-content-search-query-for-errors.md
           - name: Use Microsoft Edge to download search results
             href: configure-edge-to-export-search-results.md
-          - name: Bulk edit multiple content searches
-            href: bulk-edit-content-searches.md
           - name: Search for eDiscovery activities in the audit log
             href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: Content search PowerShell scripts
@@ -693,16 +711,16 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Content stored in mailboxes for eDiscovery
-            href: what-is-stored-in-exo-mailbox.md
-          - name: Preview eDiscovery search results
-            href: preview-ediscovery-search-results.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
+          - name: Content stored in mailboxes for eDiscovery
+            href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Preview eDiscovery search results
+            href: preview-ediscovery-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
@@ -861,24 +879,24 @@
               href: document-metadata-fields-in-advanced-ediscovery.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
-            - name: Conversation review sets
-              href: conversation-review-sets.md
-            - name: CJK language support
-              href: ediscovery-cjk-support.md
             - name: Assign eDiscovery permissions
               href: assign-ediscovery-permissions.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md
-            - name: Configure search permissions filtering
-              href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Configure search permissions filtering
+              href: permissions-filtering-for-content-search.md
             - name: Content stored in mailboxes for eDiscovery
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
             - name: Troubleshoot eDiscovery hold errors
               href: hold-distribution-errors.md
+            - name: Conversation review sets
+              href: conversation-review-sets.md
+            - name: CJK language support
+              href: ediscovery-cjk-support.md
             - name: Collect eDiscovery diagnostic information
               href: ediscovery-diagnostic-info.md
             - name: Search for eDiscovery activities in the audit log
@@ -985,6 +1003,10 @@
       href: privacy-management.md
     - name: Get started with privacy management
       href: privacy-management-setup.md
+    - name: Set user permissions in privacy management
+      href: privacy-management-permissions.md
+    - name: Manage privacy management settings
+      href: privacy-management-settings.md
     - name: Find and visualize personal data in privacy management
       href: privacy-management-data-profile.md
     - name: Create and manage policies in privacy management

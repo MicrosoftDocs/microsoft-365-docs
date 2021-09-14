@@ -37,6 +37,7 @@ Retrieves the statistics for the given IP.
 
 ## Limitations
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+2. Maximum Value for Lookbackhours is 720 Hours(30days).
 
 ## Permissions
 
@@ -75,7 +76,7 @@ Empty
 
 ## Response
 
-If successful and ip exists - 200 OK with statistical data in the body. IP do not exist - 404 Not Found.
+If successful and ip exists - 200 OK with statistical data in the body. IP is valid but does not exist - organizationPrevalence 0, IP is invalid - HTTP 400.
 
 ## Example
 

@@ -32,7 +32,7 @@ This section describes the statistics that are available for draft collections. 
 
 This section displays a graphical summary of the estimated items returned by the collection. This indicates the number of items that match the search criteria of the collection. This information gives you an idea about the estimated number of items returned by the collection.
 
-![Collection estimates for a draft collection](../media/AeDCollectionEstimates.png)
+![Collection estimates for a draft collection.](../media/AeDCollectionEstimates.png)
 
 - **Estimated items by locations**: The total number of estimated items returned by the collection. The specific number of items located in mailboxes and located in sites is also displayed.
 
@@ -74,7 +74,7 @@ This section describes the statistics that are available after you commit a coll
 
 After you commit a collection to a review set, the following tabs are displayed on the flyout page of the committed connection. Each of these tabs contains different types of information about the collection.
 
-![Tabs on flyout page of committed collection](../media/CommittedCollectionFlyoutPage.png)
+![Tabs on flyout page of committed collection.](../media/CommittedCollectionFlyoutPage.png)
 
 ### Collection contents
 

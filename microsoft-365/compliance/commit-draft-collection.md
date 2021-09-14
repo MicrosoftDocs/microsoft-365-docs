@@ -26,7 +26,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
 1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, and then select the **Collections** tab to display a list of the collections in the case.
 
-   ![List of collections in a case](../media/CommitDraftCollections1.png)
+   ![List of collections in a case.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
    > A value of `Estimated` in the **Status** column identifies the draft collections that can be added to a review set. A status of `Committed` indicates that a collection has already been added to a review set.

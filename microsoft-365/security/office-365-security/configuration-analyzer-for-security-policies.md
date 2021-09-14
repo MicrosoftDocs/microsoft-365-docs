@@ -1,20 +1,20 @@
 ---
 title: Configuration analyzer for security policies
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.reviewer: 
-ms.date: 
+ms.reviewer:
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.technology: mdo
@@ -62,13 +62,13 @@ The Standard and Strict policy setting values that are used as baselines are des
   For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
   > [!NOTE]
-  >  
+  >
   > - Adding users to the corresponding Azure Active Directory role gives users the required permissions in the Microsoft 365 Defender portal _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   > - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
-In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Templated policies** section \> **Configuration analyzer**.
+In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section.
 
 The **Configuration analyzer** page has three main tabs:
 
@@ -80,7 +80,7 @@ The **Configuration analyzer** page has three main tabs:
 
 By default, the configuration analyzer opens on the **Standard recommendations** tab. You can switch to the **Strict recommendations** tab. The settings, layout, and actions are the same on both tabs.
 
-![Settings and recommendations view in the Configuration analyzer](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Settings and recommendations view in the Configuration analyzer.](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 The first section of the tab displays the number of settings in each type of policy that need improvement as compared to Standard or Strict protection. The types of policies are:
 
@@ -143,4 +143,4 @@ To export the results to a .csv file, click **Export**.
 
 To filter the results by a specific **Modified by**, **Setting name**, or **Type** value, use the **Search** box.
 
-![Configuration drift analysis and history view in the Configuration analyzer](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Configuration drift analysis and history view in the Configuration analyzer.](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

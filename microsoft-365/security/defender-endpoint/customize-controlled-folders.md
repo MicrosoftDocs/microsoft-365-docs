@@ -66,9 +66,9 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3. In your **Group Policy Management Editor**, go to **Computer configuration** > **Policies** > **Administrative templates**.
+3. In your **Group Policy Management Editor**, go to **Computer configuration** \> **Policies** \> **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**. <br/>**NOTE**: On older versions of Windows, you might see **Windows Defender Antivirus** instead of **Microsoft Defender Antivirus**.
 
 5. Double-click **Configured protected folders**, and then set the option to **Enabled**. Select **Show**, and specify each folder that you want to protect.
 
@@ -85,7 +85,7 @@ You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobil
     ```
 3. Repeat step 2 for each folder that you want to protect. Folders that are protected are visible in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="PowerShell window with cmdlet shown":::
+   :::image type="content" source="images/cfa-allow-folder-ps.png" alt-text="PowerShell window with cmdlet shown.":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list and not `Set-MpPreference`. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
@@ -115,7 +115,7 @@ An allowed application or service only has write access to a controlled folder a
 
 4. Select **Add an allowed app** and follow the prompts to add apps.
 
-   :::image type="content" source="images/cfa-allow-app.png" alt-text="Add an allowed app button":::
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Add an allowed app button.":::
 
 ### Use Group Policy to allow specific apps
 
@@ -123,7 +123,7 @@ An allowed application or service only has write access to a controlled folder a
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Controlled folder access**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Controlled folder access**.
 
 4. Double-click the **Configure allowed applications** setting and set the option to **Enabled**. Select **Show** and enter each app.
 
@@ -144,7 +144,7 @@ An allowed application or service only has write access to a controlled folder a
 
    Continue to use `Add-MpPreference -ControlledFolderAccessAllowedApplications` to add more apps to the list. Apps added using this cmdlet will appear in the Windows Security app.
 
-   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet to allow an app":::
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="PowerShell cmdlet to allow an app.":::
 
 > [!IMPORTANT]
 > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.

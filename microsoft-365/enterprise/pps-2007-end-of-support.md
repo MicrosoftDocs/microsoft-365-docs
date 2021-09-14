@@ -1,7 +1,7 @@
 ---
 title: "PerformancePoint Server 2007 end of support roadmap"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual

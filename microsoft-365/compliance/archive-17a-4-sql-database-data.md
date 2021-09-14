@@ -24,7 +24,7 @@ After SQL data is stored in user mailboxes, you can apply Microsoft 365 complian
 
 The following overview explains the process of using a data connector to archive SQL data in Microsoft 365.
 
-![Archiving workflow for SQL data from 17a-4](../media/SQLDatabaseDataParserConnectorWorkflow.png)
+![Archiving workflow for SQL data from 17a-4.](../media/SQLDatabaseDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the SQL DataParser.
 

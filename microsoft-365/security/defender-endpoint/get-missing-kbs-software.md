@@ -12,7 +12,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -36,10 +36,10 @@ Retrieves missing KBs (security updates) by software ID
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |   Permission   |   Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |Software.Read.All |   'Read Threat and Vulnerability Management Software information'
-Delegated (work or school account) | Software.Read |   'Read Threat and Vulnerability Management Software information'
+Application|Software.Read.All|'Read Threat and Vulnerability Management Software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management Software information'
 
 ## HTTP request
 
@@ -51,7 +51,7 @@ GET /api/Software/{Id}/getmissingkbs
 
 Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
 

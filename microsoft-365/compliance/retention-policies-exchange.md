@@ -56,7 +56,7 @@ After retention settings are applied to Exchange content, the paths the content 
 
 When the retention settings are to retain and delete:
 
-![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
+![Diagram of retention flow in email and public folders.](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **If the item is modified or permanently deleted** by the user (either SHIFT+DELETE or deleted from Deleted Items) during the retention period: The item is moved (or copied, in the case of edit) to the Recoverable Items folder. There, a timer job runs periodically and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days.
 
@@ -82,7 +82,7 @@ Retention policies for Exchange, unlike retention policies for the other Microso
 
 If a retention label is applied to an email message, the name of that label and corresponding expiry date is always displayed, and will replace the name and date from any retention policy applied to the mailbox.
 
-Remember, in this context, the expiry date is when users can expect the email message to automatically move to the Recoverable Items folder (if not already there). The email will be retained there for compliance purposes if it is subject to a retention policy to retain it, or it is under an eDiscovery hold for legal or investigative reasons.
+Remember, in this context, the expiry date for when an email will be deleted is when users can expect the email message to automatically move to the Recoverable Items folder (if not already there). Emails in the Recoverable Items folder will not be permanently deleted but remain there for compliance purposes if they are subject to any retention settings to retain it, or they are under an eDiscovery hold for legal or investigative reasons.
 
 ## When a user leaves the organization 
 

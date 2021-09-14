@@ -19,7 +19,8 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to use the Import service in the Security & Compliance Center to bulk-import email data (PST files) to user mailboxes.
+- admindeeplinkMAC
+description: Learn how to use the Import service in the Microsoft 365 compliance center to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Overview of importing your organization's PST files
@@ -27,11 +28,11 @@ description: Learn how to use the Import service in the Security & Compliance Ce
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
-You can use the Import service in the Security & Compliance Center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
+You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
-- **Network upload** ![Cloud upload](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your organization.
+- **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your organization.
 
-- **Drive shipping** ![Hard disk](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the data to mailboxes in your organization.
+- **Drive shipping** ![Hard disk.](../media/e72b76f3-1f73-4296-b749-c325d95d9ef6.png) - Copy the PST files to a BitLocker-encrypted hard drive and then physically ship the drive to Microsoft. When Microsoft receives the hard drive, data center personnel upload the data to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the data to mailboxes in your organization.
 
 ## Step-by-step instructions
 
@@ -45,9 +46,9 @@ See one of the following topics for detailed, step-by-step instructions for bulk
 
 Here's an illustration and description of the complete PST import process. The illustration shows the primary workflow and highlights the differences between the network upload and drive shipping methods.
 
-![Workflow of PST import process](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
+![Workflow of PST import process.](../media/76997b69-67d7-433a-a0ca-9389f85a36a1.png)
 
-1. **Download the PST import tools and key to private Azure Storage location** - The first step is to download the tool and access key used to upload the PST files or copy them to a hard drive. You obtain these from the **Import** page in the Security & Compliance Center. The key provides you (or Microsoft data center personnel in the case of drive shipping) with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files to Microsoft 365 doesn't require your organization to have a separate Azure subscription.
+1. **Download the PST import tools and key to private Azure Storage location** - The first step is to download the tool and access key used to upload the PST files or copy them to a hard drive. You obtain these from the **Import** page in the Microsoft 365 compliance center. The key provides you (or Microsoft data center personnel in the case of drive shipping) with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files to Microsoft 365 doesn't require your organization to have a separate Azure subscription.
 
 2. **Upload or copy the PST files** - The next step depends on whether you're using network upload or drive shipping to import PST files. In both cases, you'll use the tool and secure storage key that you obtained in the previous step.
 
@@ -57,9 +58,9 @@ Here's an illustration and description of the complete PST import process. The i
 
     - **Drive shipping:** The WAImportExport.exe tool (downloaded in step 1) is used to copy your PST files to the hard drive. This tool encrypts the hard drive with BitLocker and then copies the PSTs to the hard drive. Like network upload, the PST files that you want to copy to the hard drive have to be located in a file share or file server in your organization.
 
-3. **Create a PST import mapping file** - After the PST files have been uploaded to the Azure Storage location or copied to a hard drive, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to (and a PST file can be imported to a user's primary mailbox or their archive mailbox). The Office 365 Import service will use the information to import the PST files.
+3. **Create a PST import mapping file** - After the PST files have been uploaded to the Azure Storage location or copied to a hard drive, the next step is to create a comma-separated value (CSV) file that specifies which user mailboxes the PST files will be imported to (and a PST file can be imported to a user's primary mailbox or their archive mailbox). [Download a copy of the PST Import mapping file](https://go.microsoft.com/fwlink/p/?LinkId=544717). The Office 365 Import service will use the information to import the PST files.
 
-4. **Create a PST import job** - The next step is to create a PST import job on the **Import PST files** page in the Security & Compliance Center and submit the PST import mapping file created in the previous step. For network upload (because the PST files have been uploaded to Azure) Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file.
+4. **Create a PST import job** - The next step is to create a PST import job on the **Import PST files** page in the Microsoft 365 compliance center and submit the PST import mapping file created in the previous step. For network upload (because the PST files have been uploaded to Azure) Microsoft 365 analyzes the data in the PST files and then gives you an opportunity to set filters that control what data actually gets imported to the mailboxes specified in the PST import mapping file.
 
     For drive shipping, a few other things happen at this point in the process.
 
@@ -76,7 +77,7 @@ Here's an illustration and description of the complete PST import process. The i
 
 5. **Filter the PST data that will be imported to mailboxes** - After the import job is created (and after the PST files from a drive shipping job are uploaded to the Azure Storage location) Microsoft 365 analyzes the data in the PST files (safely and securely) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
 
-6. **Start the PST import job** - After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the he Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Security & Compliance Center. When the import job is finished, the status for the job is set to **Complete**.
+6. **Start the PST import job** - After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the he Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Microsoft 365 compliance center. When the import job is finished, the status for the job is set to **Complete**.
 
 ## Why import email data to Microsoft 365?
 
@@ -94,7 +95,7 @@ Here's an illustration and description of the complete PST import process. The i
 
   - Use [eDiscovery cases](./get-started-core-ediscovery.md) to manage your organization's legal investigations
 
-  - Use [retention policies](retention.md) in the Security & Compliance Center to control how long mailbox content is retained, and then delete content after the retention period expires.
+  - Use [retention policies](retention.md) in the Microsoft 365 compliance center to control how long mailbox content is retained, and then delete content after the retention period expires.
 
   - Use [Communication compliance policies](communication-compliance.md) to examine messages to make sure they are compliant with message standards and add a classification type.
 
@@ -128,7 +129,7 @@ Here are some frequently asked questions about using the Office 365 Import servi
 
 You have to be assigned the Mailbox Import Export role in Exchange Online to import PST files to Microsoft 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-Additionally, to create import jobs in the Security & Compliance Center, one of the following must be true:
+Additionally, to create import jobs in the Microsoft 365 compliance center, one of the following must be true:
 
 - You have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
 
@@ -147,7 +148,7 @@ Network upload is currently available in these regions: United States, Canada, B
 
 Using network upload to import PST files is free.
 
-This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Microsoft 365 admin center. Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
+This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
 
 #### What version of the PST file format is supported for importing to Office 365?
 
@@ -157,9 +158,9 @@ Additionally, PST files from Outlook 2007 and later versions can be imported to 
 
 #### After I upload my PST files to the Azure Storage area, how long are they kept in Azure before they're deleted?
 
-When you use the network upload method to import PST files, you upload them to an Azure blob container named `ingestiondata`. If there are no import jobs in progress on the **Import PST files** page in the Security & Compliance Center), then all PST files in the `ingestiondata` container in Azure are deleted 30 days after the most recent import job was created in the Security & Compliance Center. That also means you have to create a new import job in the Security & Compliance Center (described in Step 5 in the network upload instructions) within 30 days of uploading PST files to Azure.
+When you use the network upload method to import PST files, you upload them to an Azure blob container named `ingestiondata`. If there are no import jobs in progress on the **Import PST files** page in the Microsoft 365 compliance center), then all PST files in the `ingestiondata` container in Azure are deleted 30 days after the most recent import job was created in the Microsoft 365 compliance center. That also means you have to create a new import job in the Microsoft 365 compliance center (described in Step 5 in the network upload instructions) within 30 days of uploading PST files to Azure.
 
-This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Security & Compliance Center. Although an import job might still be listed on the **Import PST files** page in the Security & Compliance Center, the list of PST files might be empty when you view the details of older import jobs.
+This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Microsoft 365 compliance center. Although an import job might still be listed on the **Import PST files** page in the Microsoft 365 compliance center, the list of PST files might be empty when you view the details of older import jobs.
 
 #### How long does it take to import a PST file to a mailbox using network upload?
 
@@ -203,7 +204,7 @@ No, you can't import PST files to public folders.
 
 You have to be assigned the Mailbox Import Export role to import PST files to Microsoft 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself or other users as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
-Additionally, to create import jobs in the Security & Compliance Center, one of the following must be true:
+Additionally, to create import jobs in the Microsoft 365 compliance center, one of the following must be true:
 
 - You have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
 
@@ -216,7 +217,7 @@ Additionally, to create import jobs in the Security & Compliance Center, one of 
 
 #### Where is drive shipping available?
 
-Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Drive shipping will be available in more regions soon.
+Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and South Africa. Drive shipping will be available in more regions soon.
 
 > [!NOTE]
 > At this time, drive shipping to import PST files is not available in Germany and Switzerland. This FAQ will be updated when drive shipping is available in these countries.
@@ -256,9 +257,9 @@ If different PST files are imported to different target mailboxes, the import pr
 
 #### After Microsoft uploads my PST files to Azure, how long are they kept in Azure before they're deleted?
 
-All PST files in the Azure Storage location for your organization (in blob container named `ingestiondata`), are deleted 30 days after the most recent import job was created on the **Import PST files** page in the Security & Compliance Center.
+All PST files in the Azure Storage location for your organization (in blob container named `ingestiondata`), are deleted 30 days after the most recent import job was created on the **Import PST files** page in the Microsoft 365 compliance center.
 
-This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Security & Compliance Center. Although an import job might still be listed on the **Import PST files** page in the Security & Compliance Center, the list of PST files might be empty when you view the details of older import jobs.
+This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Microsoft 365 compliance center. Although an import job might still be listed on the **Import PST files** page in the Microsoft 365 compliance center, the list of PST files might be empty when you view the details of older import jobs.
 
 #### What version of the PST file format is supported for importing to Microsoft 365?
 

@@ -52,11 +52,11 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Files & emails** is selected for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
 2. Then, on the **Choose protection settings for files and emails** page, make sure you select **Encrypt files and emails**
     
-    ![Sensitivity label protection options for files and emails](../media/protection-options-sensitivity-label.png)
+    ![Sensitivity label protection options for files and emails.](../media/protection-options-sensitivity-label.png)
 
 4.  On the **Encryption** page of the wizard, select one of the following options:
     
@@ -66,7 +66,7 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
         
-        ![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
+        ![Sensitivity label options for encryption.](../media/encrytion-options-sensitivity-label.png)
         
         Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
 
@@ -121,7 +121,7 @@ Alternatively, if you have a sensitivity label named **Business Contracts**, and
 
 Choosing whether to assign permissions now or let users assign permissions:
 
-![Option to add user or admin defined permissions](../media/sensitivity-label-user-or-admin-defined-permissions.png)
+![Option to add user or admin defined permissions.](../media/sensitivity-label-user-or-admin-defined-permissions.png)
 
 ## Assign permissions now
 
@@ -133,7 +133,7 @@ Use the following options to control who can access email or documents to which 
 
 Settings for access control for encrypted content:
 
-![Settings for admin defined permissions](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
+![Settings for admin defined permissions.](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### Rights Management use license for offline access
 
@@ -155,7 +155,7 @@ You can grant permissions to specific people so that only they can interact with
 
 Assigning permissions:
 
-![Options to assign permissions to users](../media/Sensitivity-Assign-permissions-settings.png)
+![Options to assign permissions to users.](../media/Sensitivity-Assign-permissions-settings.png)
 
 #### Add users or groups
 
@@ -198,13 +198,13 @@ When you choose which permissions to allow for those users or groups, you can se
 
 For more information to help you select the appropriate permissions, see [Usage rights and descriptions](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Options to choose preset or custom permissions](../media/Sensitivity-Choose-permissions-settings.png)
+![Options to choose preset or custom permissions.](../media/Sensitivity-Choose-permissions-settings.png)
 
 Note that the same label can grant different permissions to different users. For example, a single label can assign some users as Reviewer and a different user as Co-author, as shown in the following screenshot.
 
 To do this, add users or groups, assign them permissions, and save those settings. Then repeat these steps, adding users and assigning them permissions, saving the settings each time. You can repeat this configuration as often as necessary, to define different permissions for different users.
 
-![Different users with different permissions](../media/Sensitivity-Multiple-users-permissions.png)
+![Different users with different permissions.](../media/Sensitivity-Multiple-users-permissions.png)
 
 #### Rights Management issuer (user applying the sensitivity label) always has Full Control
 
@@ -259,13 +259,13 @@ A sensitivity label that lets users assign permissions must be applied to conten
 
 Configuring the user-assigned permissions:
 
-![Encryption settings for user-defined permissions](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
+![Encryption settings for user-defined permissions.](../media/sensitivity-encryption-settings-for-user-defined-permissions.png)
 
 ### Outlook restrictions
 
 In Outlook, when a user applies a sensitivity label that lets them assign permissions to a message, you can choose the **Do Not Forward option** or **Encrypt-Only**. The user will see the label name and description at the top of the message, which indicates the content's being protected. Unlike Word, PowerPoint, and Excel (see the [next section](#word-powerpoint-and-excel-permissions)), users aren't prompted to select specific permissions.
 
-![Sensitivity label applied to message in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
+![Sensitivity label applied to message in Outlook.](../media/sensitivity-label-outlook-protection-applied.png)
 
 When either of these options are applied to an email, the email is encrypted and recipients must be authenticated. Then, the recipients automatically have restricted usage rights:
 
@@ -289,7 +289,7 @@ For example, with the Azure Information Protection unified labeling client, user
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
 - Set an expiration date, after which the selected users cannot access the content. For more information, see the above section [Rights Management use license for offline access](#rights-management-use-license-for-offline-access).
 
-![Options for user to protect with custom permissions](../media/sensitivity-aip-custom-permissions-dialog.png)
+![Options for user to protect with custom permissions.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
 For built-in labeling, users see the same dialog box if they select the following:
 
@@ -301,7 +301,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 For each example that follows, do the configuration from the **Encryption** page of the wizard when **Configure encryption settings** is selected:
 
-![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
+![Apply encryption option in the sensitivity label wizard.](../media/apply-encryption-option.png)
 
 ### Example 1: Label that applies Do Not Forward to send an encrypted email to a Gmail account
 

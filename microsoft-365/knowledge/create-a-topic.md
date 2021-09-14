@@ -40,11 +40,11 @@ You can create a new topic from two locations:
 
 - Topic center home page: Any licensed user with the **Who can create or edit topics** permission (contributors) can create a new topic from the topic center by selecting the **New** menu and select **Topic page**. 
 
-    ![New topic from topic center](../media/knowledge-management/new-topic.png)  
+    ![New topic from topic center.](../media/knowledge-management/new-topic.png)  
 
 - Manage topics page:  Any licensed user who has **Who can manage topics** permission (knowledge managers) can create a new topic from the Manage topics page in the Topic Center by selecting **New topic page**. 
 
-    ![New topic from manage topics](../media/knowledge-management/new-topic-topic-center.png)  
+    ![New topic from manage topics.](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### To create a new topic:
 
@@ -52,23 +52,23 @@ You can create a new topic from two locations:
 
 2.  In the **Name this topic** section, type the name of the new topic.
 
-    ![Name this topic](../media/knowledge-management/k-new-topic-page.png)  
+    ![Name this topic.](../media/knowledge-management/k-new-topic-page.png)  
 
 3. In the **Alternate Names** section, type any other names that the topic might be referred to. 
 
-    ![Alternate names](../media/knowledge-management/alt-names.png)  
+    ![Alternate names.](../media/knowledge-management/alt-names.png)  
 
 4. In the **Description** section, type a couple of sentences that describe the topic. 
 
-    ![Description of the topic](../media/knowledge-management/description.png)
+    ![Description of the topic.](../media/knowledge-management/description.png)
 
 4. In the **Pinned people** section, you can "pin" a person to show them as having a connection to the topic (for example, an owner of a connected resource). Begin by typing their name or email address in the **add a new user** box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the **Remove from list** icon on the user card. You can also drag the person to another place in the list.
  
-    ![Pinned people](../media/knowledge-management/pinned-people.png)
+    ![Pinned people.](../media/knowledge-management/pinned-people.png)
 
 5. In the **Pinned files and pages** section, you can add or "pin" a file or SharePoint site page that is associated to the topic.
 
-   ![Pinned files and pages](../media/knowledge-management/pinned-files-and-pages.png)
+   ![Pinned files and pages.](../media/knowledge-management/pinned-files-and-pages.png)
  
     To add a new file, select **Add**, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.
 
@@ -80,35 +80,35 @@ You can create a new topic from two locations:
 
 6.  The **Related sites** section shows sites that have information about the topic. 
 
-    ![Related sites section](../media/knowledge-management/related-sites.png)
+    ![Related sites section.](../media/knowledge-management/related-sites.png)
 
     You can add a related site by selecting **Add** and then either searching for the site, or selecting it from your list of Frequent or Recent sites.
     
-    ![Select site](../media/knowledge-management/sites.png)
+    ![Select site.](../media/knowledge-management/sites.png)
 
 7. The **Related topics** section shows connections that exist between topics. You can add a connection to a different topic by selecting the **Connect to a related topic** button, and then typing the name of the related topic, and selecting it from the search results. 
 
-   ![Related topics](../media/knowledge-management/related-topic.png)  
+   ![Related topics.](../media/knowledge-management/related-topic.png)  
 
     You can then give a description of how the topics are related, and select **Update**.
 
-   ![Related topics description](../media/knowledge-management/related-topics-update.png) 
+   ![Related topics description.](../media/knowledge-management/related-topics-update.png) 
 
    The related topic you added will display as a connected topic.
 
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png) 
+   ![Related topics connected.](../media/knowledge-management/related-topics-final.png) 
 
    To remove a related topic, select the topic you want to remove, then select the **Remove topic** icon.
  
-   ![Remove related topic](../media/knowledge-management/remove-related.png)  
+   ![Remove related topic.](../media/knowledge-management/remove-related.png)  
 
    Then select **Remove**.
 
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png) 
+   ![Confirm remove.](../media/knowledge-management/remove-related-confirm.png) 
 
 8. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
 
-   ![Canvas icon](../media/knowledge-management/webpart-library.png) 
+   ![Canvas icon.](../media/knowledge-management/webpart-library.png) 
 
 9. Select **Publish** to save your changes. 
 

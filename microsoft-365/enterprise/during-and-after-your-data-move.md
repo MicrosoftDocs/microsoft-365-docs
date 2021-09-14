@@ -61,7 +61,7 @@ Some users open a shared mail folder from another mailbox (that the user has rea
 
 When SharePoint Online is moved, data for the following services is also moved:
   
-- One Drive for Business
+- OneDrive for Business
     
 - Microsoft 365 Video services
     

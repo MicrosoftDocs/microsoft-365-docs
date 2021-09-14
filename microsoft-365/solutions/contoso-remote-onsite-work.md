@@ -31,7 +31,7 @@ Contoso also updated the configuration of VPN clients installed on laptops, tabl
 
 Here is the resulting configuration with VPN devices installed in the Paris headquarters and each of the satellite offices. 
 
-![Contoso's VPN infrastructure](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
+![Contoso's VPN infrastructure.](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
 A remote worker with the installed VPN client uses DNS to find the regionally closest office and connects to the VPN device installed there. With split tunneling, traffic to Microsoft 365 Optimize endpoints gets sent directly to the regionally closest Microsoft 365 network location. All other traffic gets sent over the VPN connection to the VPN device.
 
@@ -63,7 +63,7 @@ This means some of the installs and updates for roaming device will be done over
 
 Here is the resulting infrastructure.
 
-![Contoso's installs and updates infrastructure](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Contoso's installs and updates infrastructure.](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
 Install and update behavior is determined by making the computer accounts of devices a member of one of these groups:
 
