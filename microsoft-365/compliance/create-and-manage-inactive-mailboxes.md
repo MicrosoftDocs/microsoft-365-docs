@@ -19,6 +19,7 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: "Retain the contents of deleted mailboxes by using the inactive mailboxes feature in Microsoft 365."
 ---
 
@@ -60,7 +61,7 @@ For step-by-step procedures for placing a mailbox on Litigation Hold or applying
   
 ### Step 2: Delete the mailbox
 
-After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the Microsoft 365 admin center. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
+After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
   
 > [!NOTE]
 > You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
@@ -69,9 +70,9 @@ After the mailbox is placed on hold or a retention policy is applied to it, the 
 
 To view a list of the inactive mailboxes in your organization:
 
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Information governance > Retention**.
+2. In the left navigation pane, click **Show all**, and then click **Information governance** > **Retention**.
 
    ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
 

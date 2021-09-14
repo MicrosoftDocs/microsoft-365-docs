@@ -19,6 +19,7 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Learn how to use the Import service in the Microsoft 365 compliance center to bulk-import email data (PST files) to user mailboxes.
 ---
 
@@ -27,7 +28,7 @@ description: Learn how to use the Import service in the Microsoft 365 compliance
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
-You can use the Import service in the Microsoft 365 compliance center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
+You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
 - **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your organization.
 
@@ -147,7 +148,7 @@ Network upload is currently available in these regions: United States, Canada, B
 
 Using network upload to import PST files is free.
 
-This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Microsoft 365 admin center. Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
+This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
 
 #### What version of the PST file format is supported for importing to Office 365?
 

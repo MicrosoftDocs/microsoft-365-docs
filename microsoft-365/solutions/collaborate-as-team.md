@@ -14,6 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkMAC
 localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
@@ -103,7 +104,7 @@ If you want to allow file and folder sharing with unauthenticated people, choose
 
 To set SharePoint organization-level sharing settings
 
-1. In the Microsoft 365 admin center, in the left navigation pane, under **Admin centers**, click **SharePoint**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, click **SharePoint**.
 2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then click **Sharing**.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
 4. If you made changes, click **Save**.
