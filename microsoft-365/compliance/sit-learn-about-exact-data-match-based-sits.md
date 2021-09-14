@@ -67,7 +67,7 @@ When you create and EDM SIT, you define a primary element field in the schema. P
 
 
 ## How matching works
-
+ <!--TODD BEGIN HERE-->
 <!-- condense these paragraphs down to one para or a single diagram -->
 
 
@@ -76,7 +76,7 @@ EDM finds matches by comparing content it finds against a table of sensitive dat
 
 At its core, EDM works by comparing strings in your documents and emails against values in a table of sensitive data you provide to find out if the values in your content are present in the table. But the comparison is not done directly, since a direct comparison would require that you upload to the cloud a table with all the sensitive data you want to detect, which might be undesirable or impractical. The comparison is instead done by comparing one-way hashes. A cryptographic hash is a string of text that is uniquely derived from a given input text, and from which the original text cannot be derived (i.e. it is a one-way, non-reversible function ). Hashes are constructed so that if the hashes of two strings match each other, it is extremely improbable that the two strings are different. 
 With EDM you generate a table of hashes of all the values of the sensitive data you want to detect, and upload only the hash table to the cloud service so relevant values in your content can be hashed and compared against the values in your table, since if there’s a match between the hash obtained from your document and a hash taken from the sensitive data table it would indicate that the original text in the document matches the original sensitive data that was used to generate the value in the hash table. 
-Since cryptographic operations are computationally expensive and sensitive data tables often contain millions of rows, in order to make the process efficient  when you define an EDM-based sensitive information type you fi rst select a standard sensitive information type that will detect potential candidates to be an EDM match (for example, one or more numerical or text patterns). You can optionally define additional rules in the EDM type according to your business needs such as matching values in multiple columns or requiring additional evidence.  
+Since cryptographic operations are computationally expensive and sensitive data tables often contain millions of rows, in order to make the process efficient  when you define an EDM-based sensitive information type you first select a standard sensitive information type that will detect potential candidates to be an EDM match (for example, one or more numerical or text patterns). You can optionally define additional rules in the EDM type according to your business needs such as matching values in multiple columns or requiring additional evidence.  
 Once a match to the standard sensitive information type is found in a document or email in your organization, the value that produced the match is hashed, and compared against all the hashed values in the sensitive information table you uploaded. If a row is found that matches that value, the hashes in the other columns for that row in your table are used to find strings in the text surrounding the original match that meet the rules defined for additional evidence in your EDM sensitive information type.   
 For example, let’s say your sensitive information table includes a row for a person named John Rodriguez  , born on 2/14/1980, and with a social security number of 432-45-6788, and an Account ID   of ABC19838372. When you upload your sensitive data to the cloud, you do it after processing the table so it only contains non-reversible hashes of the data. When later an email is sent that includes the text shown below  , an EDM-based sensitive information type looking for matches in the sensitive data table and requiring additional evidence for date of birth or for last name identifies any matches to the pattern corresponding to the SSN. When a match is found in the form of the 432-45-6788   value, this value is stripped of delimiters (the dashes), hashed and compared against the hashes in the SSN column of the table you uploaded, and when a match to this hash is found in the row corresponding to John Rodriguez, the hashes for this patient’s last name, Account number and date of birth will be compared to the hashes of text around the offending SSN, and when matches are found to the values in those columns this will be flagged as an instance of a match to the EDM sensitive information type.  
  
@@ -86,7 +86,7 @@ For example, let’s say your sensitive information table includes a row for a p
 Figure: How EDM matches sensitive information in content
 The database of   sensitive information type you can upload for each EDM-based sensitive information type can contain up to 100 million rows of data and can be refreshed daily. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. You can use EDM-based classification with policies, such as data loss prevention policies, sensitivity labeling or Microsoft Cloud App Security file policies.
 
-
+<!--TODD END HERE-->
 
 ## See also
 
