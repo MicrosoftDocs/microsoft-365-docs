@@ -77,8 +77,7 @@ following items.
     -   AddRemovePrograms.csv <br> Description:  List of installed software
         collected from registry.
 
--   AddRemoveProgramsWOW64.csv <br> Description:  List of x86 installed software on
-    x64 OS software collected from registry.
+    -   AddRemoveProgramsWOW64.csv <br> Description:  List of x86 installed software on  x64 OS software collected from registry.
 
     -   CertValidate.log <br> Description:  Detailed result from certificate
         revocation executed by calling into
