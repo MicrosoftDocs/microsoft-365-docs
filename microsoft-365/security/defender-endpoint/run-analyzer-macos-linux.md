@@ -67,9 +67,8 @@ Additional syntax help:
 **-h** \# Help<br>
 \# Show help message
 
-**-p** \# Performance<br>
-\# Planned parameter that is not yet implemented.<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand.
+**performance** \# Performance<br>
+\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
 
 **-o** \# Output<br>
 \# Specify the destination path for the result file
@@ -117,3 +116,7 @@ Additional syntax help:
 - Auditd_info.txt
 
   Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+
+- perf_benchmark.tar.gz
+
+  Description: The performance test reports. You will see this only if you are using the performance parameter.
