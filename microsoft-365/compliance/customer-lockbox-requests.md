@@ -16,6 +16,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
+ms.custom: admindeeplinkMAC
 description: "Learn about Customer Lockbox requests that allow you to control how a Microsoft support engineer can access your data when you run into an issue."
 ---
 
@@ -71,9 +72,9 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 1. Using a work or school account that has either the global administrator or the **Customer Lockbox access approver** role assigned, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in.
 
-2. Choose **Settings > Org Settings**.
+2. Choose **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & Privacy**</a>.
 
-3. Select **Security & Privacy** > **Customer Lockbox** > **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
+3. Select **Customer Lockbox** > **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
 
     ![Require approval for Customer Lockbox.](../media/CustomerLockbox4.png)
 
@@ -108,7 +109,7 @@ Audit records that correspond to the Customer Lockbox requests are logged in the
 
 Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging. For more information, see [Search the audit log in the Security & Compliance Center](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Once you've completed setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
 
-1. Go to [https://protection.office.com](https://protection.office.com).
+1. Go to [Security & compliance](https://protection.office.com).
   
 2. Sign in using your work or school account.
 
@@ -215,7 +216,7 @@ Global administrators and anyone assigned the Customer Lockbox access approver a
 
 #### How do I opt in to Customer Lockbox?
 
-A global administrator can enable and configure Customer Lockbox in the Microsoft 365 or Microsoft 365 admin center.
+A global administrator can enable and configure Customer Lockbox in the Microsoft 365 or <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 #### If I approve a Customer Lockbox request, what can the engineer do and how will I know what the Microsoft engineer did?
 
@@ -223,7 +224,7 @@ After you approve a Customer Lockbox request, the Microsoft engineer granted the
 
 #### How do I know that Microsoft follows the approval process?
 
-You can cross-reference the email approval notifications sent to admins and approvers in your organization with the Customer Lockbox request history in the Microsoft 365 admin center.
+You can cross-reference the email approval notifications sent to admins and approvers in your organization with the Customer Lockbox request history in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 Customer Lockbox is included in the latest [SOC 1 SSAE 16 audit report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports). For more details, you can find the latest reports in the [Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=91592749-e86a-43ac-801e-121382614681&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC%20%2F%20SSAE%2016%20Reports).
 
@@ -241,7 +242,7 @@ Currently, the maximum period for the access permissions granted to the Microsof
 
 #### How can I get a history of all Customer Lockbox requests?
 
-All Customer Lockbox requests are viewed in the Microsoft 365 admin center.
+All Customer Lockbox requests are viewed in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 #### How do I correlate the content access requests with the related audit logs?
 

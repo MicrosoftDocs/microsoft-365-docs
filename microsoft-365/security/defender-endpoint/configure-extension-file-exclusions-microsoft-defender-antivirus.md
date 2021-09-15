@@ -14,6 +14,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.date: 09/14/2021
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -45,11 +46,8 @@ To exclude certain files from Microsoft Defender Antivirus scans, you modify you
 >
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-The following table lists some examples of exclusions based on file extension and folder location.
-
-<br>
-
-****
+The following table lists some examples of exclusions based on file extension and folder location. 
+<br/><br/>
 
 |Exclusion|Examples|Exclusion list|
 |---|---|---|
@@ -57,7 +55,6 @@ The following table lists some examples of exclusions based on file extension an
 |Any file under a specific folder|All files under the `c:\test\sample` folder|File and folder exclusions|
 |A specific file in a specific folder|The file `c:\sample\sample.test` only|File and folder exclusions|
 |A specific process|The executable file `c:\test\process.exe`|File and folder exclusions|
-|
 
 ## Characteristics of exclusion lists
 
@@ -135,26 +132,20 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 <br>
 
-****
-
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
 |Create or overwrite the list|`Set-MpPreference`|
 |Add to the list|`Add-MpPreference`|
 |Remove item from the list|`Remove-MpPreference`|
-|
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
 <br>
 
-****
-
 |Exclusion type|PowerShell parameter|
 |---|---|
 |All files with a specified file extension|`-ExclusionExtension`|
 |All files under a folder (including files in subdirectories), or a specific file|`-ExclusionPath`|
-|
 
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
@@ -200,19 +191,17 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
-
+> - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
+    
 The following table describes how the wildcards can be used and provides some examples.
 
-<br>
-
-****
+<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
 |`*` (asterisk) <p> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <p> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders and `C:\Serv\Secondary\Allowed\Backup` and its subfolders|
 |`?` (question mark)  <p> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <p> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders|
 |Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated.|`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
-|
 
 > [!IMPORTANT]
 > If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
@@ -225,12 +214,8 @@ The following table describes how the wildcards can be used and provides some ex
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables.
-
-<br>
-
-****
-
+The following table lists and describes the system account environment variables.<br/><br/>
+    
 |This system environment variable...|Redirects to this|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -273,7 +258,7 @@ The following table lists and describes the system account environment variables
 |`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`|
 |`%ALLUSERSPROFILE%\Microsoft\Windows\Templates`|`C:\ProgramData\Microsoft\Windows\Templates`|
 |`%ALLUSERSPROFILE%\Start Menu`|`C:\ProgramData\Start Menu`|
-|`%ALLUSERSPROFILE%\Start Menu\Programs`|C:\ProgramData\Start Menu\Programs|
+|`%ALLUSERSPROFILE%\Start Menu\Programs`| `C:\ProgramData\Start Menu\Programs`|
 |`%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Start Menu\Programs\Administrative Tools`|
 |`%ALLUSERSPROFILE%\Templates`|`C:\ProgramData\Templates`|
 |`%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates`|
@@ -293,7 +278,6 @@ The following table lists and describes the system account environment variables
 |`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
 |`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
 |`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
-|
 
 ## Review the list of exclusions
 

@@ -130,19 +130,19 @@
             href: ../defender-identity/notifications.md
     - name: Investigate and respond to threats
       items: 
-       - name: Incidents
+       - name: Respond to incidents
          items: 
               - name: Overview
                 href: incidents-overview.md
-              - name: Prioritize
+              - name: Prioritize incidents
                 href: incident-queue.md
-              - name: Manage
+              - name: Manage incidents
                 href: manage-incidents.md
-              - name: Investigate
+              - name: Investigate incidents
                 href: investigate-incidents.md
-              - name: Incident alerts
+              - name: Investigate alerts
                 href: investigate-alerts.md    
-              - name: Incident users 
+              - name: Investigate users 
                 href: investigate-users.md                  
               - name: Respond to your first incident
                 items: 
@@ -164,15 +164,9 @@
                       href: first-incident-path-identity.md
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
-              - name: Email notifications
+              - name: Get incident email notifications
                 href: get-incident-notifications.md
-       - name: Threat analytics
-         items:
-              - name: Track and respond to emerging threats
-                href: threat-analytics.md
-              - name: Understand the analyst report
-                href: threat-analytics-analyst-reports.md
-       - name: Automated investigation and response
+       - name: Manage automated investigation and response
          items: 
               - name: Overview
                 href: m365d-autoir.md
@@ -188,9 +182,9 @@
                 href: m365d-autoir-results.md
               - name: Address false positives and negatives
                 href: m365d-autoir-report-false-positives-negatives.md   
-       - name: Advanced hunting
+       - name: Search for threats with advanced hunting
          items: 
-             - name: Advanced hunting overview
+             - name: Overview
                href: advanced-hunting-overview.md
              - name: Learn, train, & get examples
                items: 
@@ -212,7 +206,7 @@
                href: advanced-hunting-query-results.md
              - name: Take action on query results
                href: advanced-hunting-take-action.md
-             - name: Go hunt
+             - name: Quickly investigate with go hunt
                href: advanced-hunting-go-hunt.md
              - name: Optimize & handle errors
                items: 
@@ -300,15 +294,21 @@
                   href: custom-detections-overview.md
                 - name: Create & manage detection rules
                   href: custom-detection-rules.md
-       - name: Microsoft Threat Experts
+       - name: Track and respond to emerging threats
          items:
-              - name: Microsoft Threat Experts overview
+              - name: Threat analytics overview
+                href: threat-analytics.md
+              - name: Understand the analyst report
+                href: threat-analytics-analyst-reports.md
+       - name: Collaborate with Microsoft Threat Experts
+         items:
+              - name: Overview
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
-       - name: Integrate Microsoft 365 Defender into your security operations
+       - name: SecOps integration for Microsoft 365 Defender
          items: 
-          - name: Introduction
+          - name: Overview
             href: integrate-microsoft-365-defender-secops.md
           - name: Step 1. Operations readiness
             href: integrate-microsoft-365-defender-secops-plan.md
@@ -322,7 +322,7 @@
             href: integrate-microsoft-365-defender-secops-use-cases.md
           - name: Step 6. SOC maintenance tasks
             href: integrate-microsoft-365-defender-secops-tasks.md
-       - name: Use Power Automate
+       - name: Use Power Automate to triage threats
          href: use-power-automate.md
     - name: How-to guides
       items: 
@@ -389,6 +389,8 @@
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
+                    - name: Supported event types
+                      href: supported-event-types.md  
                     - name: Configure your Event hub
                       href: configure-event-hub.md
                 - name: Advanced Hunting API

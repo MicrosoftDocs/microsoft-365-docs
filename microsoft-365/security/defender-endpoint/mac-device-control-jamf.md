@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -37,23 +37,23 @@ This document contains examples of device control policies that you can customiz
 The following example restricts access to all removable media. Note the `none` permission that is applied at the top level of the policy, meaning that all file operations will be prohibited.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>none</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>none</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -62,23 +62,23 @@ The following example restricts access to all removable media. Note the `none` p
 The following example configures all removable media to be read-only. Note the `read` permission that is applied at the top level of the policy, meaning that all write and execute operations will be disallowed.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
-                <string>read</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
+                <string>read</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -87,24 +87,24 @@ The following example configures all removable media to be read-only. Note the `
 The following example shows how program execution from removable media can be disallowed. Note the `read` and `write` permissions that are applied at the top level of the policy.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
-                <string>write</string> 
-            </array> 
-        </dict> 
-    </dict> 
-</dict> 
+                <string>write</string>
+            </array>
+        </dict>
+    </dict>
+</dict>
 </plist>
 ```
 
@@ -113,43 +113,43 @@ The following example shows how program execution from removable media can be di
 The following example restricts all devices from specific vendors (in this case identified by `fff0` and `4525`). All other devices will be unrestricted, since the permission defined at the top level of the policy lists all possible permissions (read, write, and execute).
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
-                <string>execute</string> 
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-                <key>4525</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array>                         
-                        <string>none</string> 
-                    </array> 
-                </dict> 
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+                <string>execute</string>
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+                <key>4525</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>none</string>
+                    </array>
+                </dict>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 ## Restrict specific devices identified by vendor ID, product ID, and serial number
@@ -157,61 +157,61 @@ The following example restricts all devices from specific vendors (in this case 
 The following example restricts two specific devices, identified by vendor ID `fff0`, product ID `1000`, and serial numbers `04ZSSMHI2O7WBVOA` and `04ZSSMHI2O7WBVOB`. At all other levels of the policy the permissions include all possible values (read, write, and execute), meaning that all other devices will be unrestricted.
 
 ```xml
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>deviceControl</key> 
-    <dict> 
-        <key>removableMediaPolicy</key> 
-        <dict> 
-            <key>enforcementLevel</key> 
-            <string>block</string> 
-            <key>permission</key> 
-            <array> 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>deviceControl</key>
+    <dict>
+        <key>removableMediaPolicy</key>
+        <dict>
+            <key>enforcementLevel</key>
+            <string>block</string>
+            <key>permission</key>
+            <array>
                 <string>read</string>
                 <string>write</string>
                 <string>execute</string>
-            </array> 
-            <key>vendors</key> 
-            <dict> 
-                <key>fff0</key> 
-                <dict> 
-                    <key>permission</key> 
-                    <array> 
-                        <string>read</string> 
+            </array>
+            <key>vendors</key>
+            <dict>
+                <key>fff0</key>
+                <dict>
+                    <key>permission</key>
+                    <array>
+                        <string>read</string>
                         <string>write</string>
-                        <string>execute</string> 
-                    </array> 
-                    <key>products</key> 
-                    <dict> 
-                        <key>1000</key> 
-                        <dict> 
-                            <key>permission</key> 
-                            <array> 
-                                <string>read</string> 
+                        <string>execute</string>
+                    </array>
+                    <key>products</key>
+                    <dict>
+                        <key>1000</key>
+                        <dict>
+                            <key>permission</key>
+                            <array>
+                                <string>read</string>
                                 <string>write</string>
                                 <string>execute</string>
-                            </array> 
-                            <key>serialNumbers</key> 
-                            <dict> 
-                                <key>04ZSSMHI2O7WBVOA</key> 
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
+                            </array>
+                            <key>serialNumbers</key>
+                            <dict>
+                                <key>04ZSSMHI2O7WBVOA</key>
+                                <array>
+                                  <string>none</string>
+                                </array>
                                 <key>04ZSSMHI2O7WBVOB</key>
-                                <array> 
-                                  <string>none</string> 
-                                </array> 
-                            </dict> 
-                        </dict> 
-                    </dict> 
+                                <array>
+                                  <string>none</string>
+                                </array>
+                            </dict>
+                        </dict>
+                    </dict>
                 </dict>
-            </dict> 
-        </dict> 
-    </dict> 
-</dict> 
-</plist> 
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>
 ```
 
 ## Related topics

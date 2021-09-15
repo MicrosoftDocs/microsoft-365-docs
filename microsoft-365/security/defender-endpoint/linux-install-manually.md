@@ -271,7 +271,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/cofig/ubuntu/18.04/prod bionic main
+    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
     ```
 
     ```bash
