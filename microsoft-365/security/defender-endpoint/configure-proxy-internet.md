@@ -97,8 +97,8 @@ Configure the static proxy using the Group Policy found here:
 
 2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-> [!div class="mx-imgBorder"]
-> ![Proxy server for Microsoft defender Antivirus](images/proxy-server-mdav.png)
+[!div class="mx-imgBorder"]
+![Proxy server for Microsoft defender Antivirus](images/proxy-server-mdav.png)
 
 3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
@@ -118,7 +118,7 @@ Configure the static proxy using the Group Policy found here:
 >
 > If required, you can use **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define proxy auto-config (.pac)** for connecting to the network if you need to set up advanced configurations with multiple proxies, Use **Administrative Templates > Windows Components > Microsoft Defender Antivirus > Define addresses** to bypass proxy server to prevent Microsoft Defender Antivirus from using a proxy server for those destinations. 
 >
-> You can also use PowerShell with the [Set-MpPreference](https://aka.ms/set-mppreference?view=windowsserver2019-ps) cmdlet to configure these options: 
+> You can also use PowerShell with the `Set-MpPreference` cmdlet to configure these options: 
 >
 > - ProxyBypass 
 > - ProxyPacUrl 
