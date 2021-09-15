@@ -132,7 +132,7 @@ When you use the **Active users** page to assign licenses, you assign users lice
 5. Under **Licenses**, select the box for the license(s) that you want the selected users to have.\
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Deselect the boxes for the services that you don't want the users to have.
 6. At the bottom of the pane, select **Save changes**.  
-    You might have to buy additional licneses if you don't have enough licenses for everyone.
+    You might have to buy additional licenses if you don't have enough licenses for everyone.
 
 
 > [!NOTE]
