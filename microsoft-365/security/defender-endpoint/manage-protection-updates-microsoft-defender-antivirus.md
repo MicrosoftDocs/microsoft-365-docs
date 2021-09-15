@@ -54,10 +54,14 @@ The older the updates on an endpoint, the larger the download will be. However, 
 There are five locations where you can specify where an endpoint should obtain updates:
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) (Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source)
+- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Network file share](#unc-share)
-- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) (Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.)
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>
+
+  (<a id="fn1">1</a>) Intune Internal Definition Update Server - If you use SCCM/SUP to get definition updates for Microsoft Defender Antivirus, and need to access Windows Update on blocked on client devices, you can transition to co-management and offload the endpoint protection workload to Intune. In the AntiMalware policy configured in Intune there is an option for 'internal definition update server' which can be configured to use on-premises WSUS as the update source. This helps you control which updates from the official WU server are approved for the enterprise, and also help proxy and save network traffic to the official Windows UPdates network.
+
+  (<a id="fn1">2</a>) Your policy and registry might have this listed as Microsoft Malware Protection Center (MMPC) security intelligence, its former name.
 
 To ensure the best level of protection, Microsoft Update allows for rapid releases, which means smaller downloads on a frequent basis. The Windows Server Update Service, Microsoft Endpoint Configuration Manager, and Microsoft security intelligence updates sources deliver less frequent updates. Thus, the delta can be larger, resulting in larger downloads.
 
@@ -68,9 +72,7 @@ To ensure the best level of protection, Microsoft Update allows for rapid releas
 
 Each source has typical scenarios that depend on how your network is configured, in addition to how often they publish updates, as described in the following table:
 
-<br>
-
-****
+<br/><br/>
 
 |Location|Sample scenario|
 |---|---|
@@ -79,7 +81,6 @@ Each source has typical scenarios that depend on how your network is configured,
 |File share|You have non-Internet-connected devices (such as VMs). You can use your Internet-connected VM host to download the updates to a network share, from which the VMs can obtain the updates. See the [VDI deployment guide](deployment-vdi-microsoft-defender-antivirus.md) for how file shares can be used in virtual desktop infrastructure (VDI) environments.|
 |Microsoft Endpoint Manager|You are using Microsoft Endpoint Manager to update your endpoints.|
 |Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware (formerly referred to as MMPC)|[Make sure your devices are updated to support SHA-2](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus). Microsoft Defender Antivirus Security intelligence updates are delivered through Windows Update, and starting Monday October 21, 2019 security intelligence updates will be SHA-2 signed exclusively. <br/>Download the latest protection updates because of a recent infection or to help provision a strong, base image for [VDI deployment](deployment-vdi-microsoft-defender-antivirus.md). This option should generally be used only as a final fallback source, and not the primary source. It will only be used if updates cannot be downloaded from Windows Server Update Service or Microsoft Update for [a specified number of days](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date).|
-|
 
 You can manage the order in which update sources are used with Group Policy, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and WMI.
 

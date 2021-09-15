@@ -34,7 +34,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus**.
+2. Choose **Endpoint security** \> **Antivirus**.
 
 3. Select an antivirus profile. (If you don't have one yet, or if you want to create a new profile, see [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure).
 
@@ -46,26 +46,25 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
     - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
     - **Zero tolerance**: Blocks all unknown executables.
 
-6. Choose **Review + save**, and then choose **Save**. 
+6. Choose **Review + save**, and then choose **Save**.
 
 > [!TIP]
 > Need some help? See the following resources:
+>
 > - [Configure Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Add endpoint protection settings in Intune](/mem/intune/protect/endpoint-protection-configure)
-  
 
 ## Use Group Policy to specify the level of cloud protection
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
-3.  In the **Group Policy Management Editor** go to **Computer Configuration** > **Administrative templates**.
+3. In the **Group Policy Management Editor** go to **Computer Configuration** \> **Administrative templates**.
 
-4.  Expand the tree to **Windows Components** > **Microsoft Defender Antivirus** > **MpEngine**.
+4. Expand the tree to **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 
-5.  Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
-
+5. Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
     - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **Moderate blocking level** provides moderate only for high confidence detections
     - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
