@@ -40,6 +40,17 @@ The table can have up to:
 Once the data has been exported in one of the supported formats, you can proceed with the creation of an EDM schema, before hashing and uploading your sensitive data. 
  <!-- TODD STOP HERE-->
 
+<!-- TODD START HERE, WORK THESE CONCEPTS INTO THIS ARTICLE-->
+Defining your EDM Sensitive type
+When defining your EDM sensitive type, one of the most critical decisions is which fields are going to be used as primary fields. Secondary fields in your EDM Sensitive information types do not need to follow any pattern since they will be compared against all the text surrounding matches to the primary fields in your documents.  After you have decided which fields you will be using as primary fields in your sensitive information types, you will be configuring those same fields as searchable columns in your EDM Schema, and you will be picking or creating a sensitive information type that will be used to identify potential matches in your content to compare against the values in those searchable columns. 
+The following rules of thumb will help you decide which columns you should use as primary fields: 
+•	If you must detect sensitive data based on the presence of a single value matching a field in your sensitive data table, regardless of the presence of any other sensitive data surrounding it, that column must be defined as a primary element for an EDM type. 
+•	If multiple combinations of different fields in your sensitive data table must be detected in content, identify the columns that are common to most such combinations and designate them as primary elements and combinations of the other fields as secondary elements.
+•	As an exception to the rule above, if a column you want to use as a primary field does not follow a detectable pattern (e.g. it could be any text string) or follows detectable patterns that would be present somewhere in a large percentage of documents or emails, try to choose other better structured columns as primary elements. 
+For example, if you have the columns full name, Date of Birth and, account number and Social Security Number, even if the first and last names are the columns that will be common to the different combinations of data you want to detect, such strings don’t follow easily identifiable patterns and may be difficult to define as a sensitive information type (some names might not even start with uppercase, they may be formed by two, three or more words and may even contain numbers or other non-alphabetical characters). Date of birth can be more easily identified, but since every email and most documents will contain at least one date it is also not a good candidate. Social security numbers and account numbers are good candidates for use as primary field, so among these you should choose the one that is common to most combinations of data you want to find. 
+
+<!--TODD STOP HERE, WORK THESE CONCEPTS INTO THIS ARTICLE-->
+
 1. [Saving sensitive data in .csv or .tsv format](#save-sensitive-data-in-csv-or-tsv-format)
 
 ## Save sensitive data in .csv, .tsv or pipe-separated format

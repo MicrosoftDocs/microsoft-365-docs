@@ -288,3 +288,126 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 > [!NOTE]
 > If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
+
+<!-- START WORK THIS IN SOMEHOW-->
+Ensure your sensitive data table doesn’t have formatting issues. 
+Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
+You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
+EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
+If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tools to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value (e.g. the person’s name Tom O’Neil or the city 's‑Gravenhage (which starts with an apostrophe character), you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
+<!-- END WORK THIS IN SOMEHOW-->
+
+
+<!-- PUBLISHED SIT EMD WIZARD ARTICLE-->
+
+# Use the Exact Data Match Schema and Sensitive Information Type Wizard
+
+[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
+
+This wizard can be used instead of the:
+
+- [Define the schema for your database of sensitive information](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#define-the-schema-for-your-database-of-sensitive-information)
+- [Set up a pattern (rule package)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#set-up-a-rule-package)
+
+steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-1-set-up-edm-based-classification).
+
+## Pre-requisites
+
+1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
+
+2. Perform the steps in [Save sensitive data in .csv or .tsv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
+
+## Use the exact data match schema and sensitive information type pattern wizard
+
+1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
+
+2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
+
+![EDM schema creation wizard configuration flyout.](../media/edm-schema-wizard-1.png)
+
+3. Fill in an appropriate **Name** and **Description**.
+
+4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+
+5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
+
+> [!IMPORTANT]
+> At least one, but no more than five of your schema fields must be designated as searchable.
+
+6. Choose **Save**. Your schema will now be listed.
+
+7. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
+
+8. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
+
+9. Choose **Next** and choose **Create pattern**.
+
+10. Choose the **Confidence level** and **Primary element**.  To learn more about configuring a pattern, see [Create a custom sensitive information type in the Compliance Center](create-a-custom-sensitive-information-type.md)
+
+11.  Choose the **Primary element's sensitive info type** to associate it with. See [Sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) to learn more about the available sensitive information types.
+
+12. Choose **Done**.
+
+13. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
+
+13. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
+
+14. Choose **Next** and fill in a **Name** and **Description for admins**.
+
+15. Review and choose **Submit**.
+
+You can delete or edit the sensitive information type pattern by selecting it which surfaces the edit and delete controls.
+
+> [!IMPORTANT]
+> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
+
+## Post creation steps
+
+After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
+
+After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
+
+1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
+2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
+3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
+4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
+5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference. 
+
+### Troubleshooting
+
+If you don't find any matches, try the following:
+- Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Check that the examples you entered in the item are present in your sensitive information table and that the ignored delimiters are correct.
+- **Test** the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. 
+  -  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
+  -  If the **Test** function does not detect any content at all, check if the SIT you selected includes requirements for additional keywords or other validations. For the built-in SITs, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) to verify what the minimum requirements are for matching each type.
+<!-- END PUBLISHED SIT EDM WIZARD ARTICLE-->
+
+
+<!--TODD START HERE THIS BELONGS IN THE SCHEMA ARTICLE-->
+Working with specific types of data
+Since each value in a column in your sensitive information table that’s used as a primary element in EDM will have to be compared against any string matching the patterns used in the sensitive information type used as the base for the EDM type, it is critical that you use patterns that will minimize the number of unnecessary matches. For example one could be tempted to use a sensitive information type based on the regular expression \b\w*\b (which would match every individual word or number in any document or email) would easily cause the service to be overloaded with matches and be unable to detect true matches. Using more precise patterns that match specifically the types of data that need to be detected is necessary so such situation is avoided. 
+Below are recommendations for identifying the right configuration for some common types of data. 
+Email addresses can be easy to identify, but they are so common in content (e.g. in emails) that they may cause significant load in the system if used as a primary field, so it is recommended that they are only used as secondary evidence. If they must be used as primary evidence, it is recommended defining a custom sensitive information type which uses logic to exclude their use as From or To fields in emails, and to exclude those with your company’s email address if appropriate to reduce the number of unnecessary strings that need to be matched against the EDM table. 
+Phone numbers: phone numbers can often be expressed in many different formats, including or excluding country prefixes, area codes and separators. To reduce the false negatives while keeping load to a minimum it is recommended that you use them only as secondary elements, exclude all likely separators (e.g. parenthesis and dashes) and that you only include in your sensitive data table the part that will be always present when expressing the phone number. For example, if your phone numbers are formed of a country and area code and a local number, only include the local number in the sensitive information table. Even though this could cause incorrect matches if the number is detected on its own, it is generally very unlikely this would occur in the presence of a match to the primary field for the same person plus matches for that person to other secondary fields you defined for your EDM type. The same considerations apply to street addresses, including only the most common part of the address (e.g. street name and number) should be sufficient for positive identification and should reduce false negatives. 
+Persons names: in general, persons names should be separated into first, last and middle names if possible, since they will often be expressed in varying order in content. Don’t use person’s names as primary elements if using a sensitive information type based on a regular expression as the classification element for this EDM type, since they are very difficult to distinguish from common words, which could lead to excess processing load. The ability to use Named Entity Recognition as a classification element for an Exact Data Match sensitive information type is currently in preview and can be used as an alternative if persons’ names must be used as primary elements in the sensitive information type.
+If you must use a column as a primary element that is very hard to identify via a specific pattern (e.g. project codenames) or could generate lots of matches to be processed (e.g. six digit numbers), you can do so if you also include keywords in the sensitive information type you use as the classification element for your EDM type. E.g. if using project codenames that may be regular words, you can use the word “project” and variations of it as additional evidence required in close proximity to the project name regular expression-based pattern in the sensitive type used as the classification element for your EDM type. Alternative, consider using a sensitive type based on a regular dictionary as the classification element for your EDM sensitive information type. 
+When trying to match numeric strings, specify the allowed ranges of numbers (e.g. number of digits or starting digits, if known). If you need to match a relatively flexible range of numbers (e.g. any seven to eleven digit number) you can use keywords in the base SIT to reduce the number of matches (e.g. if trying to match account numbers consisting of 7-11 digits, add the words “account”, “customer”, “acct.”, etc. to the SIT as required additional evidence to reduce the likelihood of unnecessary matches that could cause exceeding the limits of matches to be processed by EDM). 
+If a field you need to use as a primary element follows a very simple pattern that might cause large numbers of matches (e.g. account numbers consisting of five digit numbers) and you can’t add the presence of keywords as additional evidence in the sensitive information type, you can alternative require a minimum number of presences of that pattern as part of the base sensitive information type. For example, you could use a custom sensitive information type defined in the following way to detect at least 29 other five-digit numbers surrounding a potential five-digit number to match against EDM:
+                           <Entity id="98703510-18b3-43d4-961f-15317594beb7"
+                                   patternsProximity="300"
+                                   recommendedConfidence="85"
+                                   relaxProximity="false">
+                                         <Pattern confidenceLevel="85"
+                                                  proximity="300">
+                                                       <IdMatch idRef="MRN"/>
+                                                       <Match idRef="30 AccountNrs"
+                                                              minCount="30"
+                                                              proximity="3000"
+                                                              uniqueResults="true"/>
+                                         </Pattern>
+                           </Entity>
+                           <Regex id="30 AccountNrs">\d{5}</Regex>
+In some cases you might have to identify certain account or record identification numbers that for historical reasons don’t follow a standardized pattern. For example “Medical Record Numbers” can often be composed of many different permutations of letters and numbers even within the same organization. Even though it might be hard at first to identify a pattern in such cases, closer inspection often allows narrowing down a pattern that describes all the valid values without causing an excessive number of invalid matches. For example, it might be detected that “all MRNs are at least seven characters in length, have at least two numerical digits in them, and if they have any letters in them they start with one”. Creating a regular expression based on such criteria should allow you to minimize unnecessary matches while capturing all the desired values, and further analysis might allow increased precision by defining separate patterns that describe different formats.
+
+<!--TODD STOP HERE, THIS BELONGS IN THE SCHEMA ARTICLE-->
