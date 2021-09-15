@@ -93,8 +93,6 @@ In the Security Portal, create a custom role group that contains the permissions
 
    :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
 
-4. PIM a second time into higher elevated role, after a short delay you should now be able to [remediate malicious delivered email](remediate-malicious-email-delivered-office-365.md) without issue.
-
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
 
 <!--A-->
