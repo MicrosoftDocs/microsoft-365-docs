@@ -62,7 +62,7 @@ The global admin for your organization has full permissions to create and manage
 
     - If **Groups & sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups, and sites for Teams and SharePoint. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
-    For information about the **Azure Purview assets (preview)** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+    For information about the **Schematized data assets** scope, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
 
 4. Follow the prompts in the wizard for the label settings.
 
