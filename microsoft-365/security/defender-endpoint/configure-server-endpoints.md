@@ -122,6 +122,10 @@ The installer package will check if the following components have already been i
 
 Verify that Microsoft Defender Antivirus is installed, is active and up to date. The minimum version is **4.18.2106.6**. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623).
 
+**Update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
+
+To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, please reference [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
+
 ### Download installation and onboarding packages 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
