@@ -57,12 +57,11 @@ For more information about onboarding methods, see the following articles:
 [Onboard previous versions of Windows](onboard-downlevel.md)
 
 - Offline devices in the same network of Azure Log Analytics
-  -  Configure MMA to point to:
-     - Azure Log Analytics IP as a proxy
-     - Defender for Endpoint workspace key & ID
+  - Configure MMA to point to:
+    - Azure Log Analytics IP as a proxy
+    - Defender for Endpoint workspace key & ID
 
 ## Azure virtual machines
-- Configure and enable [Azure Log Analytics workspace](/azure/azure-monitor/platform/gateway)
 
     - Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
       - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
@@ -70,7 +69,6 @@ For more information about onboarding methods, see the following articles:
     - Offline Azure VMs in the same network of OMS Gateway
       - Configure Azure Log Analytics IP as a proxy
       - Azure Log Analytics Workspace Key & ID
-
     - Azure Defender
       - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
       - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
