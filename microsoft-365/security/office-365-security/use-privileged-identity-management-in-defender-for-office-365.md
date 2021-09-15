@@ -87,8 +87,9 @@ In the Security Portal, create a custom role group that contains the permissions
 ## Test your configuration of PIM with Defender for Office 365
 
 1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
-2. [Activate the Security Reader role in PIM](/azure/active-directory/privileged-identity-management/pim-how-to-activate-role), this should be the day to day level of access needed to [hunt for threats in O365.](threat-hunting-in-threat-explorer.md)
-3. If you try to perform remediation actions like purge email using Threat Explorer, you get an error stating you need additional permissions.
+2. Navigate to PIM, where the user can activate their day to day security reader role.
+3. If you try to purge an email using Threat Explorer, you get an error stating you need additional permissions.
+4. PIM a second time into the more elevated role, after a short delay you should now be able to purge emails without issue.
 
    :::image type="content" source="../../media/pim-mdo-add-the-search-and-purge-role-assignment-to-this-pim-role.PNG" alt-text="If the user we added (Alex) through the Security Reader PIM role tries to delete a suspicious email he'll get a message saying 'You need the Search and Purge role to take action on this email. Contact your administrator to get the role assignment or add the email to an incident.":::
 

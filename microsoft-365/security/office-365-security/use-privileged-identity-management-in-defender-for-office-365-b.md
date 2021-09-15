@@ -33,7 +33,7 @@ Privileged Identity Management (PIM) is an Azure feature that, once set up, give
 
 By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
-In this example we will configure "Alex", a member of our security team who will have zero standing access within Office 365, but can elevate to both a role required for normal day to day operations, and then also to a higher level of privilege when less frequent but sensitive operations, such as purging email is required.
+In this example we will configure "Alex", a member of our security team who will have zero standing access within Office 365, but can elevate to both a role required for normal day to day operations, such as [Threat Hunting](threat-hunting-in-threat-explorer.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
 > This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day to day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
@@ -101,7 +101,7 @@ In the Security Portal, create a custom role group that contains the permissions
 
 ## Test your configuration of PIM with Defender for Office 365
 
-1. Login with the test user, who will have zero administrative access.
+1. Login with the test user (Alex), who will should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
 2. Navigate to PIM, where the user can activate their day to day security reader role.
 3. If you try to purge an email using Threat Explorer, you get an error stating you need additional permissions.
 4. PIM a second time into the more elevated role, after a short delay you should now be able to purge emails without issue.
