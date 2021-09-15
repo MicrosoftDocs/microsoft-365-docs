@@ -15,8 +15,8 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 
-description: Step through protecting your Microsoft 365 resources from ransomware attacks.
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+description: Use controlled folder access, MIP, DLP, and Microsoft Cloud App Security to protect your Microsoft 365 ransomable data.
 ---
 
 # Step 5. Protect information
@@ -55,7 +55,7 @@ For each type of ransomable information, determine the following:
 
 ## Implement strict permissions for locations with ransomable information
 
-Using strict permissions within your Microsoft 365 tenant is the "only those that need to know" principle for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
+Using strict permissions within your Microsoft 365 tenant is the principle of least privilege for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
 
 While it is easier to create file storage locations or teams with broad access (such as the default of everyone in your organization), for ransomable information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
 

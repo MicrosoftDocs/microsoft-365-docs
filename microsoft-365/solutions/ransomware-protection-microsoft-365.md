@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: 
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 

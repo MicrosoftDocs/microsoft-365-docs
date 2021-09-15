@@ -15,8 +15,8 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: 
-description: Step through protecting your Microsoft 365 resources from ransomware attacks.
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+description: Use security baselines to protect your Microsoft 365 resources from ransomware attacks.
 ---
 
 # Step 1. Configure security baselines
