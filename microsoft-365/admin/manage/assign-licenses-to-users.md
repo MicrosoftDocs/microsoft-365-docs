@@ -177,7 +177,7 @@ You can invite guest users to collaborate with your organization in the Azure Ac
 > [!IMPORTANT]
 > You must be a Global admin to do these steps.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory admin center</a>
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory admin center</a>.
 
 2. In the navigation pane, select **Users**.
 
