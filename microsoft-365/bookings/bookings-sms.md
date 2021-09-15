@@ -20,7 +20,7 @@ The SMS notifications will include the Teams meeting link for virtual booking ap
 
 Attendees, customers or partners need a valid United States or Canada phone number before they can receive SMS notifications.
 
-# Configure SMS notification in Microsoft Bookings
+## Configure SMS notification in Microsoft Bookings
 
 > [!IMPORTANT]
 > Microsoft Bookings will have unlimited SMS notifications for customers with Bookings licenses until Feb 28, 2022. As we get closer to the end of the promotion period we will provide additional details on licensing requirements. FOr more info on Bookings licensing, see [Bookings licensing](https://docs.microsoft.com/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-).  
