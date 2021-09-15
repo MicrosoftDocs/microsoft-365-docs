@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft Compliance trial"
+title: "About the Microsoft 365 compliance trial"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,34 +13,34 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft Compliance free trials."
+description: "About the Microsoft 365 compliance free trials."
 ---
 
-# About the free trial for Microsoft Compliance
+# About the free trial for Microsoft 365 compliance
 
-Microsoft compliance products protect your organization from internal threats rising from inappropriate permissions on files and emails, and ensures compliance with regulatory and policy requirements.
+Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails helps your organization to comply with regulatory and policy requirements.
 
-A Microsoft E5 compliance trial is the easiest way to try the capabilities of Microsoft compliance products, and setting it up only takes a couple of clicks. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft 365 compliance solutions trial is the easiest way to try the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for the Microsoft 365 free trial.
+See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance free trials.
 
-## Set up a Compliance trial
+## Set up a compliance trial
 
-You can sign-up for a trial in the Microsoft compliance center using the Trials link in the left navigation pane.
+You can sign up for a trial in the Microsoft compliance center using the Trials link in the left navigation pane.
 
 ## Licensing
 
-As part of the trial setup, the Microsoft E5 compliance licenses are automatically applied to the organization. The licenses are active for the first 90 days.
+As part of the trial setup, the Microsoft E5 compliance licenses are automatically applied to your organization. The licenses are active for the first 90 days.
 
 ## Permissions
 
-To start or end the trial, you need to be a member of the Global Administrator or Security Administrator roles in Azure Active Directory. For details, see About admin roles.
+To start or end the trial, you need to be a member of the Global Administrator or Security Administrator roles in Azure Active Directory. For details, see [About admin roles](/admin/add-users/about-admin-roles.md).
 
 ## Additional information
 
-After you enroll in the trial, it might take up to 2 hours for the changes and updates to be available. And, admins must log out and log back in to see the changes.
+After you enroll in the trial, it might take up to 2 hours for the changes and updates to be available. And, admins must sign out and sign back in to see the changes.
 
 You can extend the trial within the last 15 days of the trial period. You are limited to a maximum of two trial periods. If you do not extend by the time your trial period ends, you must wait at least 30 days before signing up for a second trial.
 
@@ -56,7 +56,7 @@ The Microsoft Compliance free trial is gradually rolling out to existing custome
 
 ## Learn more about compliance
 
-Wondering what you can experience in your free trial? A Microsoft compliance trial includes the following:
+Wondering what you can experience in your free trial? A Microsoft compliance trial includes:
 
 <!--
 - **application governance**
@@ -86,7 +86,7 @@ Wondering what you can experience in your free trial? A Microsoft compliance tri
 
 - **Insider Risk Management**
 
-    Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an an investigation. [Learn more](insider-risk-management-solution-overview.md)
+    Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for risk signals, then take remediation actions such as promoting user education or initiating an investigation. [Learn more](insider-risk-management-solution-overview.md)
 
 <!--
 - **privacy management**
