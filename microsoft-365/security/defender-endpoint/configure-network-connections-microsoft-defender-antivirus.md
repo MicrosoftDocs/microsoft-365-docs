@@ -50,9 +50,7 @@ The table in this section lists the services and their associated website addres
 
 Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you might need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
 
-<br>
-
-****
+<br/><br/>
 
 |Service and description|URL|
 |---|---|
