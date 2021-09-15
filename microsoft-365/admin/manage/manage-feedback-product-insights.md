@@ -121,14 +121,6 @@ You can export raw data for further analysis using the Export to CSV functionali
 
 ### Filters
 
-You can filter by Channels, Products, Platforms and Feedback.
-
-**Channels**
-
-**Products**
-
-**Platforms**
-
-**Feedback types**- Filter option for this section is set only to NPS feedback type.
+You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types** (set only to NPS feedback types).
 
 :::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
