@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
-description: Use Windows Intune as an MDA and MAM provider and WIndows 10 security features to protect your Microsoft 365 resources from ransomware attacks.
+description: Use Windows Intune as an MDA and MAM provider and Windows 10 security features to protect your Microsoft 365 resources from ransomware attacks.
 ---
 
 # Step 4. Protect devices
