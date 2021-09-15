@@ -167,7 +167,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 |:-------|:-----|:-------|:-------|
 |Azure AD Password Protection|Block passwords from a common list and custom entries.|Cloud or on-premises user account password determination.|Microsoft 365 E3 or Microsoft 365 E5|
 |MFA enforced with Conditional Access|Require MFA based on the properties of user sign-ins with Conditional Access policies.|Credential compromise and access.|Microsoft 365 E3 or Microsoft 365 E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of user sign-ins with Azure AD Identity protection.|Credential compromise and access.|Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of user sign-ins with Azure AD Identity protection |Credential compromise and access.|Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
 |
 
 ### 4. Devices
@@ -176,7 +176,7 @@ For device and app management:
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft Intune | Manage devices and the applications that run on them. | Device or app compromise and access. | Microsoft 365 E3 or E5 |
+| Microsoft Intune | Manage devices and the applications that run on them  | Device or app compromise and access. | Microsoft 365 E3 or E5 |
 |  |  |  |  |
 
 For Windows 10 devices:
@@ -193,10 +193,10 @@ For Windows 10 devices:
 
 | Capability or feature | Description | Helps... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Controlled folder access | Protects your data by checking apps against a list of known, trusted apps. | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Information Protection | Enables sensitivity labels to be applied to information that is ransomable. | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from sharing it inappropriately. | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance. | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Controlled folder access | Protects your data by checking apps against a list of known, trusted apps | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Information Protection | Enables sensitivity labels to be applied to information that is ransomable | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from sharing it inappropriately | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
+| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
 ## Impact on users and change management
