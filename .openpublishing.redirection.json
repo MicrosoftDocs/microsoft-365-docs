@@ -4517,12 +4517,12 @@
     },
     {
       "source_path": "microsoft-365/solutions/deploy-threat-protection.md",
-      "redirect_url": "/security/defender/eval-overview",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/solutions/deploy-threat-protection-configure.md",
-      "redirect_url": "/security/defender/eval-overview",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
       "redirect_document_id": false
     },
     {
