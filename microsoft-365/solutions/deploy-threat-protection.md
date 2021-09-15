@@ -55,7 +55,7 @@ Watch this video for an overview of the deployment process.
 <br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vsI7]
 
-The following table describes the various solutions/capabilities to configure and what they do.
+The following table describes the various solutions/capabilities to configure and what they do.<br/><br/>
 
 |Step |Solution/capabilities  |Description  |
 |--|---------|---------|
