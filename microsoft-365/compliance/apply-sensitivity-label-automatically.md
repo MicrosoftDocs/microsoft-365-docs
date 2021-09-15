@@ -57,8 +57,8 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for SharePoint and OneDrive:
     
     - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
-    - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
-    - Currently, attachments to list items aren't supported and won't be auto-labeled.
+        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
+        - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
     - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
@@ -67,8 +67,8 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for Exchange:
     
     - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
-    - For PDF files, if the label applies encryption, these files are encrypted when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-    - For these Office files, Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported. If the label applies encryption, these files are encrypted.
+        - For PDF files, if the label applies encryption, these files are encrypted when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - For these Office files, Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported. If the label applies encryption, these files are encrypted.
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions:
