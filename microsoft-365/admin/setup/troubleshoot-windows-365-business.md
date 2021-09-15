@@ -42,6 +42,14 @@ Make sure **Users may join devices to Azure AD** is set to **All**.
 4. If **Users may join devices to Azure AD** isn't set to **All**, select **All**, then select **Save**.
 5. Go to [Step 2. Verify that the Windows 365 BPRT Permanent User system account is active](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
+Make sure that **Maximum number of devices per user** is high enough so that the Cloud PCs you are trying to setup can be assigned to the designated users.
+
+1. Sign in to the Microsoft Azure portal at https://portal.azure.com/.
+2. Under **Manage Azure Active Directory**, select **View**.
+3. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
+4. For **Maximum number of devices per user**, enter the value.
+5. If you made any changes, select **Save**.
+
 ## Step 2. Verify that the Windows 365 BPRT Permanent User system account is active
 
 The first time a Windows 365 license is assigned in your organization, a system account called **Windows 365 BPRT Permanent User** is automatically created in Azure AD. 
@@ -53,7 +61,7 @@ To make sure the Windows 365 BPRT Permanent User system account is active in Azu
 2. In the left nav, under **Manage**, select **Users**.
 3. In the search box, type **Windows 365 BPRT Permanent User**, then press **Enter**.
 4. If the Windows 365 BPRT Permanent User system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
-5. If the Windows 365 BPRT Permanent User system account is missing or if any changes were made to it, login to windows365.microsoft.com with any account that has a Windows 365 Business license assigned. A new Windows 365 BPRT Permanent User will be generated in 12 hours. After the token has regenerated, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
+5. If the Windows 365 BPRT Permanent User system account is missing or if any changes were made to it (for example, password reset, property change, assign or un-assign a license, and so on), please login to windows365.microsoft.com with any account that has a Windows 365 Business license assigned after 12 hours. A new Windows 365 BPRT Permanent User will be generated. After the token has regenerated, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ## Step 3. Verify that device-based MFA is turned off
 
