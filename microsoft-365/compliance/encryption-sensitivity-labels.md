@@ -397,7 +397,9 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If you share encrypted documents with people outside your organization, you might need to create guest accounts and modify Conditional Access policies. For more information, see [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
+- When authorized users open encrypted content in their Office apps, they see the label name and description in a yellow message bar at the top of the document. This message bar is designed to inform users that the document is restricted, who is authorized to open the document, and their usage rights for that document. When permissions extend to people outside your organization, carefully review the label names and descriptions that will be visible in this message bar when the document is opened.
+
+- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web.  Or, for Windows and Mac, you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and users have the [required minimum versions](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) of Word, Excel, and PowerPoint. If this isn't the case, and the file is already open:
 
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
   - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
