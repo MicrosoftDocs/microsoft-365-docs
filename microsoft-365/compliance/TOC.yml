@@ -106,6 +106,8 @@
           items:
           - name: Learn about sensitive information types
             href: sensitive-information-type-learn-about.md
+          - name: Learn about exact data match based sensitive information types
+            href: sit-learn-about-exact-data-match-based-sits.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
         - name: Get started with sensitive information type
