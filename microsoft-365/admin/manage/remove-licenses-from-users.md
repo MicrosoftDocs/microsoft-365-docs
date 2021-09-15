@@ -52,19 +52,22 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ::: moniker range="o365-germany"
 
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
 2. Select the product for which you want to unassign licenses.
+
 3. Select the users for which you want to unassign licenses.
+
 4. Select **Unassign licenses**.
+
 5. In the **Unassign licenses** box, select **Unassign**.
 
 ## Use the Active users page to unassign licenses
@@ -81,18 +84,20 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ::: moniker range="o365-germany"
 
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 2. Select the row of the user that you want to unassign a license for.
+
 3. In the right pane, select **Licenses and Apps**.
+
 4. Expand the **Licenses** section, clear the boxes for the licenses that you want to unassign, then select **Save changes**.
 
 ### Unassign licenses from multiple users
@@ -105,19 +110,22 @@ When you use the **Active users** page to unassign licenses, you unassign produc
 
 ::: moniker range="o365-germany"
 
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 2. Select the circles next to the names of the users who you want to unassign licenses for.
+
 3. At the top, select **Manage product licenses**.
+
 4. In the **Manage product licenses** pane, select **Unassign all** > **Save changes**.
+
 5. At the bottom of the pane, select **Done**.  
 
 ## What happens to a user's data when you remove their license?
