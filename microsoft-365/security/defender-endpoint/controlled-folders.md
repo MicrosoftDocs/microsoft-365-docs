@@ -110,16 +110,13 @@ You can review the Windows event log to see events that are created when control
 
 The following table shows events related to controlled folder access:
 
-<br>
-
-****
+<br/><br/>
 
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
 |1124|Audited controlled folder access event|
 |1123|Blocked controlled folder access event|
-|
 
 ## View or change the list of protected folders
 
