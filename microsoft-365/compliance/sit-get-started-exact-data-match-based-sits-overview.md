@@ -21,6 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with exact data match based sensitive information types
 
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available for use in data loss prevention policies, eDiscovery and certain content governance tasks is a multi-phase process. This article outlines the workflow and links to the procedures for each of the phases
+
 ## Required licenses and permissions
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -31,6 +33,8 @@ EDM-based classification is included in these subscriptions
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft E5/A5 Information Protection and Governance
+
+See the [data loss prevention service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business) for complete licensing information
 
 ## Portal links for your subscription
 
@@ -44,6 +48,7 @@ EDM-based classification is included in these subscriptions
 
 |Phase|What's needed|
 |---|---|
+|
 |[Part 1: Set up EDM-based classification](#part-1-set-up-edm-based-classification)<br/><br/>(As needed)<br/>- [Edit the database schema](#editing-the-schema-for-edm-based-classification) <br/>- [Remove the schema](#removing-the-schema-for-edm-based-classification)|- Read access to the sensitive data<br/>- Database schema in XML format (example provided)<br/>- Rule package in XML format (example provided)<br/>- Admin permissions to the Security & Compliance Center (using PowerShell)|
 |[Part 2: Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(As needed)<br/>[Refresh the data](#refreshing-your-sensitive-information-database)|- Custom security group and user account<br/>- Local admin access to machine with EDM Upload Agent<br/>- Read access to the sensitive data<br/>- Process and schedule for refreshing the data|
 |[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled|
