@@ -58,9 +58,7 @@ Need help? See your solution provider's documentation.
 
 Need help updating your organization's devices? See the following resources:
 
-<br>
-
-****
+<br/><br/>
 
 |OS|Resource|
 |---|---|
@@ -69,7 +67,6 @@ Need help updating your organization's devices? See the following resources:
 |iOS|[Update your iPhone, iPad, or iPod touch](https://support.apple.com/HT204204)|
 |Android|[Check & update your Android version](https://support.google.com/android/answer/7680439)|
 |Linux|[Linux 101: Updating Your System](https://www.linux.com/training-tutorials/linux-101-updating-your-system)|
-|||
 
 ## Get Microsoft Defender for Endpoint
 
@@ -110,9 +107,7 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 
 To enable communication between your devices and Defender for Endpoint, configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems and capabilities:
 
-<br>
-
-****
+<br/><br/>
 
 |Capabilities|Operating System|Resources|
 |---|---|---|
@@ -122,7 +117,6 @@ To enable communication between your devices and Defender for Endpoint, configur
 |[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
-||||
 
 ## Next step
 
