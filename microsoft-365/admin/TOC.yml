@@ -8,6 +8,8 @@
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Plan your setup of Microsoft 365 for business
+          href: setup/plan-your-setup.md
         - name: Sign up for Microsoft 365 Business Premium
           items:
            - name: Sign up
@@ -19,7 +21,7 @@
            - name: Sign up for Microsoft 365 Business Standard
              href: ../admin/simplified-signup/signup-business-standard.md
            - name: Set up Microsoft 365 Business Standard
-             href: ../admin/simplified-signup/signup-business-standard.md
+             href: ../admin/setup/setup-business-standard.md
            - name: Invite users to Microsoft 365 Business Standard
              href: ../admin/simplified-signup/admin-invite-business-standard.md
            - name: Accept email invitation to Microsoft 365 Business Standard
@@ -28,8 +30,6 @@
              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
            - name: Migrate data to my Microsoft 365 Business Standard subscription
              href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Plan your setup
-          href: setup/plan-your-setup.md
         - name: Plan for Windows 365 Business
           items:
            - name: Get started with Windows 365 Business and Cloud PCs
@@ -38,7 +38,7 @@
              href: setup/windows-365-business-sizing.md
            - name: Troubleshoot Windows 365 Cloud PC setup issues
              href: setup/troubleshoot-windows-365-business.md
-        - name: Set up your organization with the guided setup
+        - name: Set up your Microsoft 365 for business organization
           items:
            - name: Microsoft 365 Business Basic
              href: setup/setup-business-basic.md
