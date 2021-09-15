@@ -95,4 +95,6 @@ In the Security Portal, create a custom role group that contains the permissions
 
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
 
+*Our thanks to Customer Engineer Ben Harris for access to the blog post and resources used for this content.*
+
 <!--A-->
