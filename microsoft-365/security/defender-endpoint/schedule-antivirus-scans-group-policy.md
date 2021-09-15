@@ -41,7 +41,7 @@ This article describes how to configure scheduled scans using Group Policy. To l
 > [!NOTE]
 > When configuring scheduled scans, the setting **Start the scheduled scan only when computer is on but not in use**, which is enabled by default, can impact the expected scheduled time by requiring the machine to be idle first.
 >
-> For weekly scans, the default on Windows 10 and later is to scan during automatic maintenance when the machine is idle. The default behavior on Windows Server is to scan outside of automatic maintenance. To change this behavior, modify the settings by disabling **ScanOnlyIfIdle**, and then define a schedule.
+> For weekly scans, default behavior on Windows Server is to scan outside of automatic maintenance when the machine is idle. The default on Windows 10 and later is to scan during automatic maintenance when the machine is idle. To change this behavior, modify the settings by disabling **ScanOnlyIfIdle**, and then define a schedule.
 
 For more information, see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
