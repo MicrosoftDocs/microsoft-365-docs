@@ -92,14 +92,11 @@ Microsoft 365 Defender unifies alerts, incidents, automated investigation and re
 
 [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Microsoft Defender for Office 365 features and capabilities that are included in Microsoft 365 E5:
 
-<br>
-
-****
+<br/><br/>
 
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
 |---|---|
 |[Safe Attachments](../security/office-365-security/safe-attachments.md) <p> [Safe Links](../security/office-365-security/safe-links.md) <p> [Safe Documents](../security/office-365-security/safe-docs.md) <p> [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md) <p> [Anti-phishing protection in Microsoft 365](../security/office-365-security/anti-phishing-protection.md)|[Threat Trackers](../security/office-365-security/threat-trackers.md) <p> [Threat Explorer](../security/office-365-security/threat-explorer.md) <p> [Automated investigation and response](../security/office-365-security/office-365-air.md) <p> [Attack simulation training](../security/office-365-security/attack-simulation-training.md)|
-|
 
 With Microsoft Defender for Office 365, people across your organization can communicate and collaborate more securely, with threat protection for their email content and Office documents.
 
@@ -182,16 +179,13 @@ The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsof
 
 Microsoft 365 provides the following resources to help inform users in your organization:
 
-<br>
-
-****
+<br/><br/>
 
 |Concept|Resources|
 |---|---|
 |Microsoft 365|[Customizable learning pathways](/office365/customlearning/) <p> These resources can help you put together training for end users in your organization|
 |Microsoft 365 security|[Learning module: Secure your organization with built-in, intelligent security from Microsoft 365](/learn/modules/security-with-microsoft-365) <p> This module enables you to describe how Microsoft 365 security features work together and to articulate the benefits of these security features.|
 |Multi-factor authentication|[Two-step verification: What is the additional verification page?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p> This article helps end users understand what multi-factor authentication is and why it's being used at your organization.|
-|
 
 In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
 
