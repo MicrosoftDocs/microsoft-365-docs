@@ -86,6 +86,9 @@ For example, let’s say your sensitive information table includes a row for a p
 Figure: How EDM matches sensitive information in content
 The database of   sensitive information type you can upload for each EDM-based sensitive information type can contain up to 100 million rows of data and can be refreshed daily. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. You can use EDM-based classification with policies, such as data loss prevention policies, sensitivity labeling or Microsoft Cloud App Security file policies.
 
+Since this data is, by definition, extremely sensitive, you want to ensure it is securely managed, and you may even have concerns about providing it to Microsoft in readable form. The way EDM works enables you to configure your tenant to detect the sensitive data without having to provide it with a copy of the sensitive data, by using a technique called hashing. Hashing consists of transforming data in a non-reversible form from which the original data can't be interpreted, but that allows making comparisons to identify if two strings are identical. I.e. if two strings are identical, their respective hashes will be identical, while if two strings are different, it is extremely unlikely that their hashes will be identical. 
+When your sensitive data is hashed, it is thus transformed into a format that can't be converted back into the original readable form, so when you provide Microsoft with a hashed copy of your sensitive data, Microsoft can't see your original sensitive data, but the service can still use the hashes you provided to identify strings in documents that are identical to the original data by hashing each string and comparing it to the hashed copy you provided. 
+
 <!--TODD END HERE-->
 
 ## See also
