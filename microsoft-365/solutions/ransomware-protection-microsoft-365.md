@@ -49,7 +49,7 @@ A ransomware attacker that has infiltrated a Microsoft 365 tenant can hold your 
 
 - Deleting files or email
 - Encrypting files in place
-- Copying files outside the tenant (data exfiltration)
+- Copying files outside your tenant (data exfiltration)
 
 However, Microsoft 365 online services have many built-in capabilities and controls to protect customer data from ransomware attacks. The following sections provide a summary. For more details about how Microsoft protects customer data, [Malware and ransomware protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection).
 
