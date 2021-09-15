@@ -45,7 +45,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
 1. Go to <https://admin.microsoft.com> and sign in.
 
-2. In the navigation pane of the admin center, click **Users > Active users**.
+2. In the navigation pane of the admin center, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 3. Select the user that you want to place on Litigation hold.
 

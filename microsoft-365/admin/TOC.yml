@@ -323,6 +323,8 @@
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
              href: usage-analytics/usage-analytics-errors.md
+         - name: Microsoft 365 support integration with ServiceNow configuration guide
+           href: manage/microsoft-365-servicenow-support-integration.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization

@@ -68,7 +68,7 @@ So in the previous example, 7% of the total size of mailbox items are from parti
 
 ## Working with partially indexed items
 
-In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
+In cases when you need to examine partially indexed items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
   
 ![Choose the second or third option to export partially indexed items.](../media/PartiallyIndexedItemsExportOptions.png)
   
