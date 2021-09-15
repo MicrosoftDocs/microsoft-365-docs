@@ -37,17 +37,17 @@ If while trying to take an action during a live response session, you encounter 
 1. Copy the following script code snippet and save it as a PS1 file:
 
     ```powershell
-    $copied_file_path=$args[0] 
+    $copied_file_path=$args[0]
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
-        
+
     if ($action){
          Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Succesfully"
     }
-    
+
     else{
         Write-Output "Error occoured while trying to copy a file, details:"
         Write-Output  $error[0].exception.message
- 
+
     }
     ```
 

@@ -51,7 +51,7 @@ Some actions require certain permissions. The following table describes what act
 ****
 
 |Permission|PE files|Non-PE files|
-|:---------------------|:------:|:----------:|
+|---|:---:|:---:|
 |View data|X|X|
 |Alerts investigation|&#x2611;|X|
 |Live response basic|X|X|
@@ -155,7 +155,7 @@ Files that have been quarantined by Microsoft Defender Antivirus or your securit
 
 The location depends on your organization's geo settings (either EU, UK, or US). A quarantined file will only be collected once per organization. Learn more about Microsoft's data protection from the Service Trust Portal at https://aka.ms/STP.
 
-Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn this setting off, go to **Settings** > **Endpoints** > **Advanced features** > **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
+Having this setting turned on can help security teams examine potentially bad files and investigate incidents quickly and in a less risky way. However, if you need to turn this setting off, go to **Settings** \> **Endpoints** \> **Advanced features** \> **Download quarantined files** to adjust the setting. [Learn more about advanced features](advanced-features.md)
 
 #### Backing up quarantined files
 
@@ -163,13 +163,14 @@ Users may be prompted to provide explicit consent before backing up the quaranti
 
 This feature will not work if sample submission is turned off. If automatic sample submission is set to request permission from the user, only samples that the user agrees to send will be collected.
 
->[!IMPORTANT]
->Download quarantined file requirements:
->- Your organization uses Microsoft Defender Antivirus in active mode 
->- Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
->- Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
->- Sample submission is turned on
->- Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019
+> [!IMPORTANT]
+> Download quarantined file requirements:
+>
+> - Your organization uses Microsoft Defender Antivirus in active mode
+> - Antivirus engine version is 1.1.17300.4 or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
+> - Cloud–based protection is enabled. See [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+> - Sample submission is turned on
+> - Devices have Windows 10 version 1703 or later, or Windows server 2016 or 2019
 
 ### Collect files
 
@@ -209,7 +210,7 @@ See [manage indicators](manage-indicators.md) for more details on blocking and r
 
 To stop blocking a file, remove the indicator. You can do so via the **Edit Indicator** action on the file's profile page. This action will be visible in the same position as the **Add Indicator** action, before you added the indicator.
 
-You can also edit indicators from  the **Settings** page, under **Rules** > **Indicators**. Indicators are listed in this area by their file's hash.
+You can also edit indicators from  the **Settings** page, under **Rules** \> **Indicators**. Indicators are listed in this area by their file's hash.
 
 ## Consult a threat expert
 
@@ -244,8 +245,6 @@ The deep analysis summary includes a list of observed *behaviors*, some of which
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
 Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
-
-<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
