@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Export source data for exact data match based sensitive information type
 
-<!-- TODD START HERE, COLLAPSE THIS DOWN, COMPARE IT TO THE THE STEPS UNDER ## Save sensitive data in .csv, .tsv or pipe-separated format-->
+<!-- TODD START HERE, COLLAPSE THIS DOWN, COMPARE IT TO THE THE STEPS UNDER ## Save sensitive data in .csv, .tsv or pipe-separated format, ELIMINATE DUPLICATION-->
 The sensitive data table is a text file containing rows of values against which you will be comparing content in your documents to identify sensitive data. These values might be personally identifiable information for your customers, product records or any other sensitive data that you have in text form in some data source and whose presence you want to detect in content in your organization to take actions such as protecting it or blocking sharing with external persons. 
 
 You must first obtain a copy of the sensitive data in a format that's useable to EDM.
