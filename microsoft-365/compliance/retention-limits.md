@@ -28,7 +28,7 @@ When you use [retention policies and retention label policies](retention.md#rete
 
 ## Maximum number of retention labels per tenant
 
-A maximum of 1,000 retention labels is supported per tenant.
+A maximum of 1,000 retention labels are supported per tenant.
 
 ## Maximum number of policies per tenant
 
