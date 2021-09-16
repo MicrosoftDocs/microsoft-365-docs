@@ -92,5 +92,5 @@ The following table lists the attributes that you can use with information barri
 ## Resources
 
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-- [Troubleshooting information barriers](information-barriers-troubleshooting.md)
+- [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [Information barriers](information-barriers.md)
