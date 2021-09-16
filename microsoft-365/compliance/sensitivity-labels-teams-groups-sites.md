@@ -350,7 +350,7 @@ The following apps and services don't currently support sensitivity labels confi
 
 ## Classic Azure AD group classification
 
-Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites after you enable sensitivity labels for containers. However, existing groups and sites that support sensitivity labels still display the old classification values until you convert them to use sensitivity labels.
+Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites after you enable sensitivity labels for containers. For customers who have MIPLabel enabled, but existing group has legacy classification label set and admin has not migrated to sensitivity label yet, applications do not display any label. 
 
 As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
