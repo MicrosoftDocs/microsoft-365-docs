@@ -4533,32 +4533,32 @@
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-gp.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding-gp",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-mdm.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding-mdm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-sccm.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding-sccm",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-script.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding-script",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-vdi.md",
       "redirect_url": "microsoft-365/compliance/device-onboarding-vdi",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {  
       "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
