@@ -117,7 +117,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](dlp-configure-endpoints-script.md#offboard-devices-using-a-local-script).
+1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
@@ -141,8 +141,8 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 ## Related topics
 
-- [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
+- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 devices using a local script](device-onboarding-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

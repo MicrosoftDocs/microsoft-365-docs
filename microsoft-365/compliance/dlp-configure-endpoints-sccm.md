@@ -199,9 +199,9 @@ Value: “1”
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
+- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 devices using a local script](device-onboarding-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
