@@ -58,10 +58,10 @@ Use these tools to detect and respond to the following common threats from ranso
 
    - Microsoft Cloud App Security
 
-- Data exfiltration
+- Data exfiltration, deletion, or updloading
 
    - Microsoft Defender for Office 365
-   - Microsoft Cloud App Security
+   - Microsoft Cloud App Security with [anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
 
 The following tools use Microsoft 365 Defender and its portal (https://security.microsoft.com) as a common threat collection and analysis point:
 
