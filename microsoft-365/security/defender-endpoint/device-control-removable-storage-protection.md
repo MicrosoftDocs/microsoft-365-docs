@@ -93,9 +93,7 @@ Device control removable storage protection in Microsoft Defender for Endpoint p
 
 Microsoft Defender for Endpoint Device Control Removable Storage Protection allows you to restrict the removable storage access based on the properties described in the table below:
 
-<br>
-
-****
+<br/><br/>
 
 |Property Name|Applicable Policies|Applies to Operating Systems|Description|
 |---|---|---|---|
@@ -107,4 +105,3 @@ Microsoft Defender for Endpoint Device Control Removable Storage Protection allo
 |Friendly Name|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows|A string attached to the device, for example, Generic Flash Disk USB Device|
 |Vendor ID / Product ID|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows <p> macOS|Vendor ID is the four-digit vendor code that the USB committee assigns to the vendor. Product ID is the four-digit product code that the vendor assigns to the device; Support wildcard.|
 |Serial NumberId|[Removable storage Access Control](device-control-removable-storage-access-control.md)|Windows <p> macOS |For example, <SerialNumberId>002324B534BCB431B000058A</SerialNumberId>|
-|
