@@ -5,7 +5,7 @@
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|Planned|N/A|
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
 |CORTANA|N/A|N/A|N/A|N/A|Planned|
-|EXCEL|✔|Planned|Planned|Planned|N/A|
+|EXCEL|✔|✔|✔|✔|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|Planned|Planned|N/A|N/A|N/A|
@@ -15,8 +15,8 @@
 |OFFICE MOBILE|✔|Planned|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|Planned|
 |ONEDRIVE|✔|✔|✔|✔|Planned|
-|ONENOTE|✔|Planned|Planned|Planned|Planned|
-|OUTLOOK|✔|✔|Planned|Planned|Planned|
+|ONENOTE|✔|✔|✔|✔|✔|
+|OUTLOOK|✔|✔|Planned|✔|Planned|
 |PLANNER|Planned|Planned|N/A|N/A|N/A|
 |POWER APPS|Planned|Planned|N/A|N/A|Planned|
 |POWER AUTOMATE|Planned|Planned|N/A|N/A|N/A|
