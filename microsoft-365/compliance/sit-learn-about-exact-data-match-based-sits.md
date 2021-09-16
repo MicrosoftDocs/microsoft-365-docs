@@ -57,6 +57,32 @@ EDM-based classification enables you to create custom sensitive information type
 
 When you work with EDM SITs, it's helpful to understand a few concepts that are unique to them.  
 
+### Schema
+
+The schema is an xml file that defines:
+
+- The name of the Microsoft 365 data store where the all the EDM SIT files will be stored. 
+- The field names that your sensitive information source table contains. There is a 1:1 mapping of schema field name to sensitive information source table column name.
+- Which fields are searchable.
+- The primary field.
+- Any search modifying parameters, called *configurable match*, like ignoring delimiters and case.
+
+### Sensitive information source table
+
+The sensitive source table that contains the sensitive information values that the EDM SIT will look for. It is made up of columns and roes. The column headers are the field names, the rows are an instance of data and each cell contains the values for that instance for that field.
+
+Here's a simple example of a sensitive information source table.
+
+|First Name  |Last Name  |Date of Birth  |
+|---------|---------|---------|
+|Isaiah   |Langer  | 05-05-1960 |
+|Ana   |Bowman         |11-24-1971 |
+|Oscar   |Ward         |02-12-1998 |
+
+
+### Rule package
+
+
 ### You supply your own schema and data
 
 [Microsoft 365 comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary data values that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.

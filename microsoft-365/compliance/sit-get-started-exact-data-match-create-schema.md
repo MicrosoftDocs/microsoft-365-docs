@@ -21,6 +21,9 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
+
+
+
 If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
 
 > [!NOTE]
