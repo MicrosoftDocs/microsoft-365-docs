@@ -310,9 +310,11 @@ You can also change and apply a label from this page:
 
 2. Select the **Policies** tab, and then select **Edit** for the **Sensitivity** setting.
 
-3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site, and then select **Save**.
+3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site. Unlike user apps, where sensitivity labels can be assigned to specific users, the admin center displays all sensitivity labels for your tenant. After you've chosen a label, select **Save**.
 
 ## Support for sensitivity labels
+
+When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
@@ -321,7 +323,7 @@ The following apps and services support sensitivity labels configured for sites 
   - SharePoint admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
-  - Microsoft 365 compliance center, Microsoft 365 security center, Security & Compliance Center
+  - Microsoft 365 compliance center
 
 - User apps and services:
 
@@ -445,6 +447,6 @@ If these containers have Azure AD classification values applied to them, the con
 
 See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
-For more information on managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).
-
 This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
+
+For more information about managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).

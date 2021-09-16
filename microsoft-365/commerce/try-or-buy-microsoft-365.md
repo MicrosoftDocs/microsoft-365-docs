@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: GEA150 
 description: "Sign up for a free 30-day trial for Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business."
 ms.date: 08/07/2020
@@ -103,7 +104,7 @@ period ends, go to the Microsoft 365 admin center and [turn off Recurring billi
 
 If you already have a Microsoft 365 for business subscription, you can use the Microsoft 365 admin center to try a different subscription.
 
-When you add a subscription through the Microsoft 365 admin center, the new
+When you add a subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>], the new
 subscription is associated with the same organization (domain namespace)
 as your existing subscription. This association makes it easier to move users in
 your organization between subscriptions, or to assign them a license for
@@ -121,7 +122,7 @@ the additional products they need.
 
 If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.
 
-When you buy another subscription through the admin center, the new
+When you buy another subscription through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, the new
 subscription is associated with the same organization (domain name
 space) as your existing subscription. This makes it easier to move users
 in your organization between subscriptions or assign them a license for

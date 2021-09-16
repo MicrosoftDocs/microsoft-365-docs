@@ -13,7 +13,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/13/2020
+ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -43,27 +43,31 @@ To configure these settings:
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
-3. Expand the tree to **Windows components > Microsoft Defender Antivirus** and then the **Location** specified in the table below.
+3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** and then the **Location** specified in the table of settings (in this article).
 
 4. Double-click the policy **Setting** as specified in the table below, and set the option to your desired configuration. Click **OK**, and repeat for any other settings.
 
 5. Deploy the Group Policy Object as usual.
 
-Location|Setting|Article
----|---|---|---
-MAPS|Configure local setting override for reporting to Microsoft MAPS|[Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-Quarantine|Configure local setting override for the removal of items from Quarantine folder|[Configure remediation for scans](configure-remediation-microsoft-defender-antivirus.md)
-Real-time protection|Configure local setting override for monitoring file and program activity on your computer|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
-Real-time protection|Configure local setting override for monitoring for incoming and outgoing file activity|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
-Real-time protection|Configure local setting override for scanning all downloaded files and attachments|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
-Real-time protection|Configure local setting override for turn on behavior monitoring|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
-Real-time protection|Configure local setting override to turn on real-time protection|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md)
-Remediation|Configure local setting override for the time of day to run a scheduled full scan to complete remediation|[Configure remediation for scans](configure-remediation-microsoft-defender-antivirus.md)
-Scan|Configure local setting override for maximum percentage of CPU utilization|[Configure and run scans](run-scan-microsoft-defender-antivirus.md)
-Scan|Configure local setting override for schedule scan day|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Scan|Configure local setting override for scheduled quick scan time|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Scan|Configure local setting override for scheduled scan time|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-Scan|Configure local setting override for the scan type to use for a scheduled scan|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
+## Table of settings
+
+<br/><br/>
+
+| Location | Setting | Article |
+|---|---|---|---|
+| MAPS |Configure local setting override for reporting to Microsoft MAPS|[Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| Quarantine|Configure local setting override for the removal of items from Quarantine folder|[Configure remediation for scans](configure-remediation-microsoft-defender-antivirus.md) |
+| Real-time protection|Configure local setting override for monitoring file and program activity on your computer|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Real-time protection|Configure local setting override for monitoring for incoming and outgoing file activity | [Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Real-time protection|Configure local setting override for scanning all downloaded files and attachments|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Real-time protection|Configure local setting override for turn on behavior monitoring|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Real-time protection|Configure local setting override to turn on real-time protection|[Enable and configure Microsoft Defender Antivirus always-on protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md) |
+| Remediation|Configure local setting override for the time of day to run a scheduled full scan to complete remediation|[Configure remediation for scans](configure-remediation-microsoft-defender-antivirus.md) |
+| Scan|Configure local setting override for maximum percentage of CPU utilization|[Configure and run scans](run-scan-microsoft-defender-antivirus.md) |
+| Scan|Configure local setting override for schedule scan day|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Scan|Configure local setting override for scheduled quick scan time|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Scan|Configure local setting override for scheduled scan time|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
+| Scan|Configure local setting override for the scan type to use for a scheduled scan|[Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 
 <a id="merge-lists"></a>
 
