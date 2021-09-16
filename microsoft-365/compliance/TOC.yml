@@ -76,12 +76,12 @@
           href: information-barriers-solution-overview.md 
         - name: Learn about information barriers
           href: information-barriers.md
-        - name: Define information barrier policies
+        - name: Get started with information barriers
           href: information-barriers-policies.md
-        - name: Attributes for information barrier policies
-          href: information-barriers-attributes.md
-        - name: Edit information barrier policies
+        - name: Manage information barriers
           href: information-barriers-edit-segments-policies.md
+        - name: Information barriers attributes
+          href: information-barriers-attributes.md
     - name: Privileged access management
       items:
         - name: Overview
