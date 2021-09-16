@@ -4559,6 +4559,8 @@
       "source_path": "microsoft-365/compliance/dlp-configure-endpoints-vdi.md",
       "redirect_url": "/compliance/device-onboarding-vdi",
       "redirect_document_id": true
+    },
+    {  
       "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
       "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
       "redirect_document_id": false
