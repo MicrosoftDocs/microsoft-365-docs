@@ -1,6 +1,6 @@
 ---
-title: "Define information barrier policies"
-description: Learn how to define policies for information barriers in Microsoft Teams.
+title: "Get started with information barriers"
+description: Learn how to get started with information barriers.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,7 +17,7 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Define information barrier policies
+# Get started with information barriers
 
 With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other, or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. To learn more, see [Information barriers](information-barriers.md).
 
@@ -46,7 +46,7 @@ When you define policies for information barriers, you'll work with user account
 | [Part 2: Define information barrier policies](#part-2-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 | [Part 3: Apply information barrier policies](#part-3-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | (As needed) [Edit a segment or a policy](information-barriers-edit-segments-policies.md) | - Edit a segment<br/>- Edit or remove a policy<br/>- Rerun the policy application<br/>- View policy status |
-| (As needed) [Troubleshooting](information-barriers-troubleshooting.md)| - Take action when things are not working as expected|
+| (As needed) [Troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)| - Take action when things are not working as expected|
 
 ## Prerequisites
 
@@ -263,7 +263,7 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 
 Resources are available to help you manage your information barrier policies.
 
-- If something goes wrong with information barriers, see [Troubleshooting information barriers](information-barriers-troubleshooting.md).
+- If something goes wrong with information barriers, see [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 - To stop policies from being applied, see [Stop a policy application](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 - To remove an information barrier policy, see [Remove a policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 - To make changes to segments or policies, see [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md).
