@@ -80,8 +80,6 @@
           href: information-barriers-policies.md
         - name: Attributes for information barrier policies
           href: information-barriers-attributes.md
-        - name: Troubleshooting information barriers
-          href: information-barriers-troubleshooting.md
         - name: Edit information barrier policies
           href: information-barriers-edit-segments-policies.md
     - name: Privileged access management

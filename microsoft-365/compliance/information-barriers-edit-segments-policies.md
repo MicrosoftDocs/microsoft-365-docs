@@ -16,7 +16,7 @@ f1.keywords:
 
 # Manage information barrier policies
 
-After you have [defined information barrier policies](information-barriers-policies.md), you might need to make changes to those policies or to your user segments, as part of [troubleshooting](information-barriers-troubleshooting.md) or as regular maintenance. Use this article as a guide.
+After you have [defined information barrier policies](information-barriers-policies.md), you might need to make changes to those policies or to your user segments, as part of [troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) or as regular maintenance. Use this article as a guide.
 
 ## What do you want to do?
 
@@ -29,7 +29,7 @@ After you have [defined information barrier policies](information-barriers-polic
 | [Remove a policy](#remove-a-policy) | Remove an information barrier policy when you no longer need a particular policy in place. |
 | [Stop a policy application](#stop-a-policy-application) | Take this action when you want to stop the process of applying information barrier policies.<br/> Stopping a policy application is not instant, and it does not undo policies that are already applied to users. |
 | [Define policies for information barriers](information-barriers-policies.md) | Define an information barrier policy when you do not already have such policies in place, and you must restrict or limit communications between specific groups of users. |
-| [Troubleshooting information barriers](information-barriers-troubleshooting.md) | Refer to this article when you run into unexpected issues with information barriers. |
+| [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | Refer to this article when you run into unexpected issues with information barriers. |
 
 > [!IMPORTANT]
 > To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- Global Administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<br><br>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Make sure to [connect to the Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
@@ -165,4 +165,4 @@ After you have started applying information barrier policies, if you want to sto
 - [Learn more about information barriers in SharePoint Online](/sharepoint/information-barriers)
 - [Learn more about information barriers in OneDrive](/onedrive/information-barriers)
 - [Attributes for information barrier policies](information-barriers-attributes.md)
-- [Troubleshooting information barriers](information-barriers-troubleshooting.md)
+- [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
