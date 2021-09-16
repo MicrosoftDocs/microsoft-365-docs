@@ -332,7 +332,7 @@
        href: backscatter-messages-and-eop.md
      - name: Bulk complaint level (BCL)
        href: bulk-complaint-level-values.md
-     - name: End-user spam notifications
+     - name: Quarantine notifications
        href: use-spam-notifications-to-release-and-report-quarantined-messages.md
      - name: Outbound delivery pools
        href: high-risk-delivery-pool-for-outbound-messages.md

@@ -64,15 +64,13 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 
 _Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
 
-You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+You view and manage your quarantined messages in the Microsoft 365 Defender portal or (if an admin has set this up) quarantine notifications from quarantine policies.
 
 ## What do you need to know before you begin?
 
 - To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
-
-- Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. By default, original message recipients can *release* quarantined spam messages directly from these notifications. By default, original message recipients can *review* quarantined phishing messages (not high confidence phishing messages) directly from these notifications. For more information, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 - By default, messages that were quarantined for high confidence phishing, malware, or by mail flow rules are only available to admins, and aren't visible to users. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 

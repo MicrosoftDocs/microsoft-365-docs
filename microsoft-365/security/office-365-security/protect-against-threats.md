@@ -179,10 +179,6 @@ For more information about the recommended settings for anti-spam, see [EOP anti
      - **Enable zero-hour auto purge (ZAP)**: Verify this setting is selected (turned on).
        - **Enable for phishing messages**: Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing).
        - **Enable for spam messages**:  Verify this setting is selected (turned on). For more information, see [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam).
-     - **Notifications** section:
-       - Select **Enable end-user spam notifications**.
-         - **Send end-user spam notifications every (days)**: Verify the value **3** days.
-         - **Language**: Verify the value **Default** or select a language.
 
      When you're finished, click **Save**.
 

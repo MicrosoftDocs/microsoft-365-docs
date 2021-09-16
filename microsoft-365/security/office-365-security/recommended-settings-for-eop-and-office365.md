@@ -77,8 +77,6 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <p> _PhishZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable ZAP for spam messages <p> _SpamZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
-|**Enable end-user spam notifications** <p> _EnableEndUserSpamNotifications_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|**Send end-user spam notifications every (days)** <p> _EndUserSpamNotificationFrequency_|3 days|3 days|3 days||
 |**Allow & block list**|||||
 |Allowed senders <p> _AllowedSenders_|None|None|None||
 |Allowed sender domains <p> _AllowedSenderDomains_|None|None|None|Adding domains to the allowed senders list is a very bad idea. Attackers would be able to send you email that would otherwise be filtered out. <p> Use the [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [Tenant Allow/Block List](tenant-allow-block-list.md) to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|

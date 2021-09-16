@@ -188,7 +188,8 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **Enable ZAP for phishing messages**: By default, ZAP is enabled for phishing detections, but you can disable it by clearing the checkbox.
      - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the checkbox.
 
-   - **Enable end-user spam notifications**: For more information, see the [Configure end-user spam notifications](#configure-end-user-spam-notifications) section later in this article.
+   > [!NOTE]
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies that contain information about quarantined messages for all supported protection features (not just anti-spam policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
 
    When you're finished, click **Next**.
 
@@ -309,38 +310,6 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
    Click ![Increase priority icon.](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
 4. When you're finished, click **Close** in the policy details flyout.
-
-### Configure end-user spam notifications
-
-> [!NOTE]
-> End-user spam notifications are not supported for groups.
-
-When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
-
-You can also customize the sender's display name, disclaimer text in different languages, and the company logo that's used in the notifications. For instructions, see [Configure global quarantine notification settings in the Microsoft 365 Defender portal](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
-
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
-
-2. On the **Anti-spam policies** page, select an anti-spam policy from the list by clicking on the name:
-   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
-   - The default policy named **Anti-spam inbound policy (Default)**.
-
-3. In the policy details flyout that appears, click **Edit** in the **Actions** section. In the **Actions** flyout that appears, configure the following settings:
-
-   - **Enable end-user spam notifications**: Select the checkbox to enable notifications or clear the checkbox to disable notifications. When you select the checkbox, the following additional settings appear:
-
-     - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
-
-       There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC.
-
-       > [!NOTE]
-       > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This might give the appearance of multiple notifications within the same day.
-
-     - **Language**: Click the drop down an select an available language from the list. The default value is **Default**, which means English.
-
-   When you're finished, click **Save**.
-
-4. Back on the policy details flyout, click **Close**.
 
 ## Use the Microsoft 365 Defender portal to remove custom anti-spam policies
 
