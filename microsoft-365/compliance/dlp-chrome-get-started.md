@@ -35,7 +35,7 @@ To use Microsoft Compliance Extension, the device must be onboarded into endpoin
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+- [Onboarding tools and methods for Windows 10 devices](device-onboarding.md)
 - [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
@@ -89,7 +89,7 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 1. Use the procedures in these topics to onboard your devices:
     1. [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-    1. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+    1. [Onboarding tools and methods for Windows 10 devices](device-onboarding.md)
     1. [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
 
 ### Basic Setup Single Machine Selfhost

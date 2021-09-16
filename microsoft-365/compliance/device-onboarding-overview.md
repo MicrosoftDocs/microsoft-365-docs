@@ -164,7 +164,7 @@ In this scenario, Microsoft Defender for Endpoint is already deployed and there 
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
 
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints.md). This link takes you to a landing page where you can access Microsoft 365 information protection device onboarding procedures that match the deployment package you selected in step 5:
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/device-onboarding.md). This link takes you to a landing page where you can access Microsoft 365 information protection device onboarding procedures that match the deployment package you selected in step 5:
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools

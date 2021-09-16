@@ -41,7 +41,7 @@ activity |description  | supported policy actions|
 
 ## Deployment process
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
-2. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+2. [Onboarding tools and methods for Windows 10 devices](device-onboarding.md)
 3. [Install the extension on your Windows 10 devices](dlp-chrome-get-started.md)
 4. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
 

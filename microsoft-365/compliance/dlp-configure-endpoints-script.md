@@ -30,7 +30,7 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 > [!IMPORTANT]
 > This script has been optimized for use on up to 10 devices.
 >
-> To deploy at scale, use [other deployment options](dlp-configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md).
+> To deploy at scale, use [other deployment options](device-onboarding.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md).
 
 ## Onboard devices
  
