@@ -4519,6 +4519,11 @@
       "source_path": "microsoft-365/enterprise/isolation-in-microsoft-365-search.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
+      "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 title: Set preferences for Microsoft Defender for Endpoint on Mac
-description: Configure MMicrosoft Defender for Endpoint on Mac in enterprise organizations.
+description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -78,6 +78,22 @@ Specify whether to enable real-time protection, which scans files as they are ac
 |**Possible values**|true (default) <p> false|
 |||
 
+#### Run a Scan after definitions are updated
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|scanAfterDefinitionUpdate|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.41.10 or higher.|
+|||
+
 #### Enable / disable passive mode
 
 Specify whether the antivirus engine runs in passive mode. Passive mode has the following implications:
@@ -100,7 +116,7 @@ Specify whether the antivirus engine runs in passive mode. Passive mode has the 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Microsoft Defender for Endpoint version 100.67.60 or higher.|
 |||
-
+  
 #### Exclusion merge policy
 
 Specify the merge policy for exclusions. This can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
@@ -688,6 +704,10 @@ The following configuration profile (or, in case of JAMF, a property list that c
                 <dict>
                     <key>enableRealTimeProtection</key>
                     <true/>
+                    <key>passiveMode</key>
+                    <false/>
+                    <key>ScanAfterDefinitionUpdate</key>
+                    <false/>
                     <key>threatTypeSettings</key>
                     <array>
                         <dict>
@@ -735,6 +755,8 @@ The following templates contain entries for all settings described in this docum
         <key>enableRealTimeProtection</key>
         <true/>
         <key>passiveMode</key>
+        <false/>
+        <key>ScanAfterDefinitionUpdate</key>
         <false/>
         <key>maximumOnDemandScanThreads</key>
         <integer>1</integer>
