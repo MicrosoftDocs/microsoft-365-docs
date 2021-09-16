@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
@@ -57,7 +57,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
    ![Image of Azure Licensing page.](images/atp-licensing-azure-portal.png)
 
-1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
+1. Alternately, in the admin center, navigate to **Billing** \> **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
@@ -106,7 +106,7 @@ Configure a registry-based static proxy to allow only Microsoft Defender for End
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
-3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
    ![Image of Group Policy configuration.](images/atp-gpo-proxy1.png)
 
@@ -192,8 +192,7 @@ You can find the Azure IP ranges in [Azure IP Ranges and Service Tags - Public C
 
 > [!NOTE]
 > As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
-
-> [!NOTE]
+>
 > If you are a US Government customer, please see the corresponding section in the [Defender for Endpoint for US Government](gov.md#service-backend-ip-ranges) page.
 
 ## Next step

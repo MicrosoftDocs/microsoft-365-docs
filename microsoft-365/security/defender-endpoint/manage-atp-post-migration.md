@@ -36,12 +36,10 @@ After you have moved from your previous endpoint protection and antivirus soluti
 
 The following table lists various tools/methods you can use, with links to learn more.
 
-<br>
-
-****
+<br/><br/>
 
 |Tool/Method|Description|
-|---------|---------|
+|---|---|
 |**[Threat and vulnerability management dashboard insights](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** in the [Microsoft 365 Defender](https://security.microsoft.com/) portal|The threat & vulnerability management dashboard provides actionable information that your security operations team can use to reduce exposure and improve your organization's security posture. <p> See [Threat & vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) and [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use).|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)**  (recommended)|Microsoft Intune (Intune), a component of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), focuses on mobile device management (MDM) and mobile application management (MAM). With Intune, you control how your organization's devices are used, including mobile phones, tablets, and laptops. You can also configure specific policies to control applications. <p> See [Manage Microsoft Defender for Endpoint using Intune](manage-atp-post-migration-intune.md).|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft Endpoint Manager (Configuration Manager), formerly known as System Center Configuration Manager, is a component of [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). Configuration Manager is a powerful tool to manage your users, devices, and software. <p> See [Manage Microsoft Defender for Endpoint with Configuration Manager](manage-atp-post-migration-configuration-manager.md).|

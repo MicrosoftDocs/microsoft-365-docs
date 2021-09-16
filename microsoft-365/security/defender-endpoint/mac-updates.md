@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -68,8 +68,12 @@ The `Current` channel contains the most stable version of the product.
 > - `Preview` was named `External` (Insider Slow)
 > - `Current` was named `Production`
 
->[!TIP]
->In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
+> [!TIP]
+> In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -79,8 +83,8 @@ The `Current` channel contains the most stable version of the product.
 |**Possible values**|Beta <p> Preview <p> Current|
 |||
 
->[!WARNING]
->This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:
+> [!WARNING]
+> This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
@@ -90,6 +94,10 @@ The `Current` channel contains the most stable version of the product.
 
 Change how often MAU searches for updates.
 
+<br>
+
+****
+
 |Section|Value|
 |---|---|
 |**Domain**|`com.microsoft.autoupdate2`|
@@ -97,10 +105,15 @@ Change how often MAU searches for updates.
 |**Data type**|Integer|
 |**Default value**|720 (minutes)|
 |**Comment**|This value is set in minutes.|
+|||
 
 ### Change how MAU interacts with updates
 
 Change how MAU searches for updates.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -109,10 +122,15 @@ Change how MAU searches for updates.
 |**Data type**|String|
 |**Possible values**|Manual <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|Note that AutomaticDownload will do a download and install silently if possible.|
+|||
 
 ### Change whether the "Check for Updates" button is enabled
 
 Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -120,10 +138,15 @@ Change whether local users will be able to click the "Check for Updates" option 
 |**Key**|EnableCheckForUpdatesButton|
 |**Data type**|Boolean|
 |**Possible values**|True (default) <p> False|
+|||
 
 ### Disable Insider checkbox
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -131,10 +154,15 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 |**Key**|DisableInsiderCheckbox|
 |**Data type**|Boolean|
 |**Possible values**|False (default) <p> True|
+|||
 
 ### Limit the telemetry that is sent from MAU
 
 Set to false to send minimal heartbeat data, no application usage, and no environment details.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -142,6 +170,7 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 |**Key**|SendAllTelemetryEnabled|
 |**Data type**|Boolean|
 |**Possible values**|True (default) <p> False|
+|||
 
 ## Example configuration profile
 

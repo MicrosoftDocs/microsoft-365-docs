@@ -13,17 +13,17 @@ description: "Change the color theme of your booking page in the Microsoft Booki
 
 # Customize and publish your booking page
 
-The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you.
+The Booking Page is where you set up what your external facing booking page will look like. Once you customize and publish your booking page, people will use it to book appointments with you.
 
-To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so customers can start booking appointments with you.
+To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-2. In the navigation pane, select **Booking page**.
+2. In the navigation pane, select **Settings** -> **Booking page**.
 
 The section below gives you information about setting up your bookings page and how to publish your page.
 
-- **Booking page status** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
+- **Configure booking page** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
 
     The internal Booking Page looks like this:
 

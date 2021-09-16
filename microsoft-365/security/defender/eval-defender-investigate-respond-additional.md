@@ -76,7 +76,7 @@ Here are the ways you can manage your incidents:
 
 - Edit the incident name
 
-  Change the utomatically assigned name based on your security team best practices.
+  Change the automatically assigned name based on your security team best practices.
   
 - Add incident tags
 
@@ -148,7 +148,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
     b. Join the test device to the test domain.
 
-    c. [Turn on Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Turn on Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). If you are having trouble enabling Windows Defender Antivirus, see [this troubleshooting topic](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
     d. [Onboard to Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 

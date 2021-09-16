@@ -78,9 +78,13 @@ If you've tested the feature with the demo site and with audit mode, and network
 
 See [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## Exclude website from network protection scope
+## Add exclusions
+The current exclusion options are:
 
-To allow the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
+1.	Setting up a custom allow indicator.
+2.	Using IP exclusions: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+
 
 ## Collect diagnostic data for file submissions
 
