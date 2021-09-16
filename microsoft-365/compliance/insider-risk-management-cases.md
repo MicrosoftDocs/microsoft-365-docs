@@ -79,14 +79,14 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 - **Manager name**: The name of the user's manager.
 - **Manager email**: The email alias of the user's manager.
 
+![Insider risk management case details.](../media/insider-risk-case-details.png)
+
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
 - **Policy matches**: The name of the insider risk management policy associated with the match alerts for user activity.
 - **Status**: Status of the alert.
 - **Severity**: Severity of the alert.
 - **Time detected**: The time that has passed since the alert was generated.
-
-![Insider risk management case details.](../media/insider-risk-case-details.png)
 
 ### Alerts
 
@@ -118,13 +118,12 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 ![Insider risk management user activity.](../media/insider-risk-user-activities.png)
 
 1. **Time filters**: By default, the last six months of alerts confirmed in the case are displayed in the User activity chart. You can easily filter the chart view by selecting the *6 Months*, *3 Months*, or *1 Month* tabs on the bubble chart.
-2. **Activity filter**: Filters out activities having a risk score less than 15 (unless in a sequence) or filter only for activities that are part of a sequence to help focus reviews on the riskiest activities.
-3. **Risk alert activity and details**: Risk activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and bubble size is proportional to the number of risk activities for the category. Select a bubble to display the details for each risk activity. Details include:
+2. **Risk alert activity and details**: Risk activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and bubble size is proportional to the number of risk activities for the category. Select a bubble to display the details for each risk activity. Details include:
     - **Date** of the risk activity.
     - The **risk activity category**. For example, *Email(s) with attachments sent outside the organization* or *File(s) downloaded from SharePoint Online*.
     - **Risk score** for the alert. This score is the numerical score for the alert risk severity level.
     - Number of events associated with the alert. Links to each file or email associated with the risk activity are also available.
-4. **Risk sequence (preview)**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
+3. **Risk sequence (preview)**: The chronological order of risky activities is an important aspect of risk investigation and identifying these related activities is an important part of evaluating overall risk for your organization. Alert activities that are related are displayed with connecting lines to highlight that these activities are associated with a larger risk area. This view of activities can help investigators literally 'connect the dots' for risk activities that could have been viewed as isolated or one-off events. Select any bubble in the sequence to display details for all the associated risk activities. Details include:
 
     - **Name** of the sequence.
     - **Date** or **Date range** of the sequence.
@@ -132,9 +131,9 @@ The **User activity** tab is one of the most powerful tools for internal risk an
     - **Number of events associated with each alert in the sequence**. Links to each file or email associated with each risk activity are also available.
     - **Show activities in sequence**. Displays sequence as a highlight line on the bubble chart and expands the alert details to display all related alerts in the sequence.
 
-5. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
-6. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
-7. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
+4. **Risk activity legend**: Across the bottom of the user activity chart, a color-coded legend helps you quickly determine risk category for each alert.
+5. **Risk activity chronology**: The full chronology of all risk alerts associated with the case are listed, including all the details available in the corresponding alert bubble.
+6. **Case actions**: Options for resolving the case are on the case action toolbar. You can resolve a case, send an email notice to the user, or escalate the case for a data or user investigation.
 
 ### Activity explorer (preview)
 
