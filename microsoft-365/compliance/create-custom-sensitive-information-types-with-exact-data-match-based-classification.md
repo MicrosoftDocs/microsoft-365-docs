@@ -132,7 +132,7 @@ These locations are support EDM sensitive information types:
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
 - Server-side auto-labeling policies - available for commercial cloud customers and government cloud customers
-<!-- - Client side auto-labeling policies - available for government cloud customers -->  
+- Client side auto-labeling policies - available for government cloud customers  
 
 #### To create a DLP policy with EDM
 
