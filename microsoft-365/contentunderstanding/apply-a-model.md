@@ -64,8 +64,6 @@ To apply your model to to a SharePoint document library:
 
 9. Select **View model details** to see information about a model, such as a description of the model, who published the model, and if the model applies retention or sensitivity labels to the files it classifies.
 
-    ![Active models pane.](../media/content-understanding/applied-models.png) 
-
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
