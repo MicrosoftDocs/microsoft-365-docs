@@ -33,7 +33,7 @@ You can access Intune settings at the Microsoft Endpoint Manager [admin center](
 
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices. If you have an existing Autopilot deployment profile, the "Convert all targeted devices to Autopilot" setting must be set to "No" for the managed desktop readiness test for Autopilot to succeed.
 
 **Not ready**
 
