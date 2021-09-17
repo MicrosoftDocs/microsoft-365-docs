@@ -1,5 +1,5 @@
 ---
-title: "Create the schema for exact data match based sensitive information types"
+title: "Create the schema and rule package for exact data match based sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Create the schema for exact data match based sensitive information 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Create the schema for exact data match based sensitive information types
+# Create the schema and rule package for exact data match based sensitive information types
 
 
 
