@@ -66,6 +66,7 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
    ```powershell
    Get-CaseHoldPolicy -Identity "policyname" -DistributionDetail | Select -ExpandProperty DistributionResults
    ```
+
 ![DistributionResults](https://user-images.githubusercontent.com/16720329/133842143-40e4d6c7-c579-49c5-8434-8048ea497610.png)
 
 ## Error: PolicySyncTimeout
@@ -82,6 +83,8 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
 
+Also in the Case hold UI you can also redeploy the policy using the Retry button.
+
 ## Error: PolicyNotifyError
 
 If you see this error in the **ResultCode: PolicyNotifyError** and the following error message, a datacenter issue interrupted the policy sync.
@@ -95,6 +98,8 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
    ```powershell
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
+
+Also in the Case hold UI you can also redeploy the policy using the Retry button.
 
 ## Error: InternalError
 
@@ -142,11 +147,13 @@ If you see this error in the **ResultCode: SiteOutOfQuota** and the following er
 
 Add more storage to the site (or ask an admin to add more storage) to the site collection. To learn more about how to manage the storage quotas for a site, see [Manage site collection storage limits](/sharepoint/manage-site-collection-storage-limits).
 
-After more quota has been added to the site the policy will need to be redeployed.
+After more storage quota has been added to the site the policy will need to be redeployed.
 
    ```powershell
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
+
+Also in the Case hold UI you can also redeploy the policy using the Retry button.
 
 ## Error: RecipientTypeNotAllowed
 
@@ -191,6 +198,8 @@ Correct the SMTP address on the Endpoint property and redeploy the policy. To le
 ```powershell
 Set-CaseHoldPolicy "policyname" -RetryDistribution
 ```
+
+Also in the Case hold UI you can also redeploy the policy using the Retry button.
 
 ## More information
 
