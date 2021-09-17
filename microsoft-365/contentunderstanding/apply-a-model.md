@@ -56,11 +56,13 @@ To apply your model to to a SharePoint document library:
 
 6. On the model home page, in the **Where the model is applied** section, you should see the name of the SharePoint site listed.
 
-7. Go to your document library and make sure you are in the model's document library view. Notice that if you select the information button next to the document library name, a message notes that the document library has a model applied to it.
+7. Go to your document library and make sure you are in the model's document library view. Select **Automate** > **View document understanding models**.
 
-    ![Information view.](../media/content-understanding/info-du.png) 
+    On the **Review models and apply new ones** page, select the **Applied** tab to see the models that have been applied to your library.
 
-    You can the select **View active models** to see details about any models that are applied to the document library.
+    ![Screenshot showing the Applied tab selected and the applied models.](../media/content-understanding/applied-models.png) 
+
+    Select **View model details** to see information about the model, such as description, extractors, and other settings.
 
 8. In the **Active models** pane, you can see the models that are applied to the document library. Select a model to see more details about it, such as a description of the model, who published the model, and if the model applies a retention label to the files it classifies.
 
