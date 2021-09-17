@@ -46,13 +46,13 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
   **Correct**
 
     ```powershell
-    Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation "User1", "User2", "User3", "User4", "User5"
     ```
 
    **Incorrect**
 
     ```powershell
-    $users = {$user1, $user2, $user3, $user4, $user5}
+    $users = "User1", "User2", "User3", "User4", "User5"
     ForEach($user in $users)
     {
         Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation $user
@@ -69,7 +69,7 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
 
 ## Error: PolicySyncTimeout
 
-If you see this error in the ResultCode: PolicySyncTimeout and the following error message, check the LastResultTime to see if has been longer than 2 hours the sync has reached the timeout.
+If you see this error in the **ResultCode: PolicySyncTimeout** and the following error message, check the LastResultTime to see if has been longer than 2 hours the sync has reached the timeout.
 
 > It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.
 
@@ -83,7 +83,7 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
 
 ## Error: PolicyNotifyError
 
-If you see this error in the ResultCode: PolicyNotifyError and the following error message, a datacenter issue interrupted the policy sync.
+If you see this error in the **ResultCode: PolicyNotifyError** and the following error message, a datacenter issue interrupted the policy sync.
 
 > Policy cannot be deployed to the content source due to a temporary Office 365 datacenter issue. The current policy is not applied to any content in the source, so there's no impact from the blocked deployment. To fix this issue, please try redeploying the policy.
 
@@ -97,7 +97,7 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
 
 ## Error: InternalError
 
-If you see this error in the ResultCode: InternalError and the following error message, the issue has to be resolved by Microsoft.
+If you see this error in the **ResultCode: InternalError** and the following error message, the issue has to be resolved by Microsoft.
 
 > Policy deployment has been interrupted by an unexpected Office 365 datacenter issue. Please contact Microsoft support to fix the deployment issue.
 
@@ -107,7 +107,7 @@ Contact Microsoft support with the policy Name and the information from the outp
 
 ## Error: FailedToOpenContainer
 
-If you see this error in the ResultCode: FailedToOpenContainer and the following error message when putting custodians and data sources on hold, use the resolution steps to troubleshoot the issue.
+If you see this error in the **ResultCode: FailedToOpenContainer** and the following error message when putting custodians and data sources on hold, use the resolution steps to troubleshoot the issue.
 
 > The mailbox or SharePoint site may not exist.  If this is incorrect, please contact Microsoft support.  Otherwise, please remove it from this policy.
 
@@ -123,7 +123,7 @@ If you see this error in the ResultCode: FailedToOpenContainer and the following
 
 ## Error: SiteInReadonlyOrNotAccessible
 
-If you see this error in the ResultCode: SiteInReadonlyOrNotAccessible and the following error message, the SharePoint site has been found to be in read only mode.
+If you see this error in the **ResultCode: SiteInReadonlyOrNotAccessible** and the following error message, the SharePoint site has been found to be in read only mode.
 
 > The SharePoint site is read-only or not accessible. Please contact the site administrator to make the site writable, and then redeploy this policy.
 
@@ -133,7 +133,7 @@ Unlock the site (or ask an admin to unlock it) to resolve this issue. To learn m
 
 ## Error: SiteOutOfQuota
 
-If you see this error in the ResultCode: SiteOutOfQuota and the following error message, the SharePoint site has reached it's storage quota.
+If you see this error in the **ResultCode: SiteOutOfQuota** and the following error message, the SharePoint site has reached it's storage quota.
 
 > The SharePoint site does not have enough quota. Please allocate more quota to the site collection, and then redeploy this policy.
 
@@ -149,7 +149,7 @@ After more quota has been added to the site the policy will need to be redeploye
 
 ## Error: RecipientTypeNotAllowed
 
-If you see this error in the ResultCode: RecipientTypeNotAllowed and the following error message, an Exchange location that is a mailbox is on the policy.
+If you see this error in the **ResultCode: RecipientTypeNotAllowed** and the following error message, an Exchange location that is a mailbox is on the policy.
 
 The Recipient Type is not allowed for holds.
 
@@ -165,7 +165,7 @@ Set-CaseHoldPolicy "policyname" -RemoveExchangeLocation "non-mailbox user"
 
 ## Error: MultipleInactiveRecipients
 
-If you see this error message in ResultCode: MultipleInactiveRecipients and the following error message, more than one inactive mailboxes have been found and the sync is now broken on those mailboxes.
+If you see this error message in **ResultCode: MultipleInactiveRecipient** and the following error message, more than one inactive mailboxes have been found and the sync is now broken on those mailboxes.
 
 > We can't identify this user with the existing identifiers. The link between this user and the policy is broken. This usually happens for user whose status have changed from active to inactive after this policy was created. Regardless of the broken link, this user is still on hold if you didn't see any errors the first time you created this hold policy. To fix this issue, update the user identifier in this policy. Some possible candidates we identified are 'matching mailboxes'. For more information, see 'https://go.microsoft.com/fwlink/?linkid=2148779'.
 
@@ -179,7 +179,7 @@ Set-CaseHoldPolicy "policyname" -AddExchangeLocation ".<SMTP address>"
 
 ## Error: ActiveDirectorySyncError
 
-If you see this error message on ResultCode: ActiveDirectorySyncError and the following error message, a duplicate SMTP address have been found on one or more objects in Azure AD.
+If you see this error message on **ResultCode: ActiveDirectorySyncError** and the following error message, a duplicate SMTP address have been found on one or more objects in Azure AD.
 
 > An error occurred when applying a hold on a user due to AAD.
 
