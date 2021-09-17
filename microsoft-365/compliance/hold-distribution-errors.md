@@ -66,6 +66,7 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
    ```powershell
    Get-CaseHoldPolicy -Identity "policyname" -DistributionDetail | Select -ExpandProperty DistributionResults
    ```
+![DistributionResults](https://user-images.githubusercontent.com/16720329/133842143-40e4d6c7-c579-49c5-8434-8048ea497610.png)
 
 ## Error: PolicySyncTimeout
 
