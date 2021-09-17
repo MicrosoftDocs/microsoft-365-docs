@@ -85,6 +85,8 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
 
 Also in the Case hold UI you can also redeploy the policy using the Retry button.
 
+![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
+
 ## Error: PolicyNotifyError
 
 If you see this error in the **ResultCode: PolicyNotifyError** and the following error message, a datacenter issue interrupted the policy sync.
@@ -100,6 +102,8 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
    ```
 
 Also in the Case hold UI you can also redeploy the policy using the Retry button.
+
+![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
 
 ## Error: InternalError
 
@@ -155,6 +159,8 @@ After more storage quota has been added to the site the policy will need to be r
 
 Also in the Case hold UI you can also redeploy the policy using the Retry button.
 
+![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
+
 ## Error: RecipientTypeNotAllowed
 
 If you see this error in the **ResultCode: RecipientTypeNotAllowed** and the following error message, an Exchange location that is a mailbox is on the policy.
@@ -200,6 +206,8 @@ Set-CaseHoldPolicy "policyname" -RetryDistribution
 ```
 
 Also in the Case hold UI you can also redeploy the policy using the Retry button.
+
+![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
 
 ## More information
 
