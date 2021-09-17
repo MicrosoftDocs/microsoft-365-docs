@@ -106,7 +106,7 @@ You’ll need to register to the ‘Microsoft Insider’ program to get the late
 builds. This program streamlines engineering collaboration within the Microsoft
 ecosystem by enabling the distribution of content.
 
--   To register, go to <http://aka.ms/wipsettings> and approve registration
+-   To register, go to <https://aka.ms/wipsettings> and approve registration
 
 -   Link your account.
 
@@ -146,6 +146,6 @@ ecosystem by enabling the distribution of content.
 
 >[!Note]
 > Offboarding will [disable Tamper
-Protection](prevent-changes-to-security-settings-with-tamper-protection.MD#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) if it is enabled.
+Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
 
 
