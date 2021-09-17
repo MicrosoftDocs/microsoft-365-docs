@@ -71,7 +71,7 @@ Ensure you fulfill the following requirements:
 | <https://enterpriseregistration.windows.net> | Used for Azure AD registration as part of the MDE security settings management workflow                                                                                                                                                                         |
 | <https://login.microsoftonline.com>          | Used for Azure AD registration as part of the MDE security settings management workflow                                                                                                                                                                         |
 | <https://device.login.microsoftonline.com>   | Used for Azure AD device registration and authentication as part of the MDE security settings management workflow **Note:** If your organization is using proxy servers that intercept SSL traffic, ensure this endpoint is excluded from TLS break-and-inspect |
-| \*.dm.microsoft.com** **                     | Collection of endpoints used for enrollment, check-in, reporting for MDE security settings management policy payloads                                                                                                                                 
+| \*.dm.microsoft.com                  | Collection of endpoints used for enrollment, check-in, reporting for MDE security settings management policy payloads                                                                                                                                 
 
 ## Enable security settings management in Microsoft Endpoint Manager through Microsoft Defender for Endpoint
 
