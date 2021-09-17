@@ -62,7 +62,7 @@ The schema is an xml file that defines:
 - The name of the schema, later referred to as the *DataStore*. 
 - The field names that your sensitive information source table contains. There is a 1:1 mapping of schema field name to sensitive information source table column name.
 - Which fields are searchable.
-- Any search modifying parameters, called *configurable match*, like ignoring delimiters and case.
+- Any search modifying parameters, called *configurable match*, like ignoring delimiters and case in searched values.
 
 ### Sensitive information source table
 
@@ -89,7 +89,7 @@ Proximity – Number of characters between primary and supporting element
 
 ### You supply your own schema and data
 
-[Microsoft 365 comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary data values that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.
+[Microsoft 365 comes with more than 200 SITS](sensitive-information-type-entity-definitions.md) with predefined schemas, regex patterns, keywords and confidence levels. With EDM SITs, you are responsible for defining the schema as well as primary and secondary fields that identify sensitive items. Because the schema and primary and secondary data values are highly sensitive, you'll be encrypting them via a [hash](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes) function that includes a randomly generated or self-supplied [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) value. Those hashed values are then uploaded to the service, so your sensitive data is never in the open.
 
 ### Primary elements
 

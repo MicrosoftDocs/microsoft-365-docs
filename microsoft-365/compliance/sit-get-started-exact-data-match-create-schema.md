@@ -21,13 +21,131 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema and rule package for exact data match based sensitive information types
 
+You can create the schema and rule package by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or the [Create the schema and rule package manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
+If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
+- [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
+- [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
+<!--When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.-->
 
 > [!NOTE]
 > The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
+
+A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to ten different EDM schemas in a Microsoft 365 tenant. 
+
+## Use the Exact Data Match Schema and Sensitive Information Type Wizard
+
+You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
+
+<!--This wizard can be used instead of the:-->
+<!--- [Define the schema for your database of sensitive information](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#define-the-schema-for-your-database-of-sensitive-information)
+- [Set up a pattern (rule package)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#set-up-a-rule-package)-->
+
+## Pre-requisites
+
+<!--1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).-->
+
+- Perform the steps in [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type).
+
+## Use the exact data match schema and sensitive information type pattern wizard
+
+1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
+
+2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
+
+![EDM schema creation wizard configuration flyout.](../media/edm-schema-wizard-1.png)
+
+3. Fill in an appropriate **Name** and **Description**.
+
+4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Using the caseInsensitive and ignoredDelimiters fields](#using-the-caseinsensitive-and-ignoreddelimiters-fields). 
+
+5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
+
+> [!IMPORTANT]
+> At least one, but no more than five of your schema fields must be designated as searchable.
+
+6. Choose **Save**. Your schema will now be listed.
+
+7. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
+
+8. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
+
+9. Choose **Next** and choose **Create pattern**.
+
+10. Choose the **Confidence level** and **Primary element**.  To learn more about confidence levels, see [Fundamental parts of a sensitive information type](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type).
+
+11.  Choose the **Primary element's sensitive info type** to associate it with. See [Sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) to learn more about the available sensitive information types.
+
+12. Choose **Done**.
+
+13. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
+
+13. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
+
+14. Choose **Next** and fill in a **Name** and **Description for admins**.
+
+15. Review and choose **Submit**.
+
+You can delete or edit the sensitive information type pattern by selecting it which surfaces the edit and delete controls.
+
+> [!IMPORTANT]
+> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
+
+## Post creation steps
+
+After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to hash and upload your sensitive information table. See ADD LINK TO HASH AND UPLOAD ARTICLE before you can use the EDM custom sensitive information type.
+
+## Create exact data match schema and rule package manually
+
+### Using the caseInsensitive and ignoredDelimiters fields
+
+The following schema XML sample makes use of the *caseInsensitive* and the *ignoredDelimiters* fields.
+
+When you include the *caseInsensitive* field set to the value of `true` in your schema definition, EDM will not exclude an item based on case differences. For example EDM will see the values **FOO-1234** and **fOo-1234** as being identical for the `PatientID` field .
+
+When you include the *ignoredDelimiters* field with supported characters,  EDM will ignore those characters. So EDM will see the values **FOO-1234** and **FOO#1234** as being identical for the `PatienID` field. 
+
+In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type.
+
+> [!IMPORTANT]
+> If you configure *spaces* to be ignored, this will only be effective for primary field columns and for which a sensitive information type that can detect multi-word strings is defined. Otherwise the comparison will be made against each individual word in the content being analyzed.
+
+The *ignoredDelimiters* flag supports any non-alphanumeric character, here are some examples:
+
+- \.
+- \-
+- \/
+- \_
+- \*
+- \^
+- \#
+- \!
+- \?
+- \[
+- \]
+- \{
+- \}
+- \\
+- \~
+- \;
+
+The `ignoredDelimiters` flag doesn't support:
+
+- characters 0-9
+- A-Z
+- a-z
+- \"
+- \,
+
+> [!IMPORTANT]
+> When defining your EDM sensitive information type, *ignoreDelimiters* will not affect how the Classification sensitive information type associated with the primary element in an EDM pattern identifies content in an item. So if you configure *ignoreDelimiters* for a searchable field you need to make sure the sensitive information type used for a primary element based on that field will pick strings both with and without those characters present.
+
+
+
+
 
 1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
 
@@ -56,40 +174,7 @@ If for business or technical reasons, you prefer not to use PowerShell or comman
       </EdmSchema>
       ```
 
-##### Configurable match using the caseInsensitive and ignoredDelimiters fields
-
-The above XML sample makes use of the `caseInsensitive` and the `ignoredDelimiters` fields.
-
-When you include the ***caseInsensitive*** field set to the value of `true` in your schema definition, EDM will not exclude an item based on case differences for `PatientID` field. So EDM will see, `PatientID` **FOO-1234** and **fOo-1234** as being identical.
-
-When you include the ***ignoredDelimiters*** field with supported characters,  EDM will ignore those characters in the `PatientID`. So EDM will see, `PatientID` **FOO-1234** and `PatientID` **FOO#1234** as being identical. The `ignoredDelimiters` flag supports any non-alphanumeric character, here are some examples:
-
-- \.
-- \-
-- \/
-- \_
-- \*
-- \^
-- \#
-- \!
-- \?
-- \[
-- \]
-- \{
-- \}
-- \\
-- \~
-- \;
-
-The `ignoredDelimiters` flag doesn't support:
-
-- characters 0-9
-- A-Z
-- a-z
-- \"
-- \,
-
-In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type.
+ 4:30 9/17 - READING ENRIQUE'S 3-CREATE-MODIFY-EDM-SCHEMA-DOCX
 
 1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -307,78 +392,9 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 
 <!-- PUBLISHED SIT EMD WIZARD ARTICLE-->
 
-# Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
-[Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
 
-This wizard can be used instead of the:
 
-- [Define the schema for your database of sensitive information](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#define-the-schema-for-your-database-of-sensitive-information)
-- [Set up a pattern (rule package)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#set-up-a-rule-package)
-
-steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-1-set-up-edm-based-classification).
-
-## Pre-requisites
-
-1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).
-
-2. Perform the steps in [Save sensitive data in .csv or .tsv format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format).
-
-## Use the exact data match schema and sensitive information type pattern wizard
-
-1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
-
-2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
-
-![EDM schema creation wizard configuration flyout.](../media/edm-schema-wizard-1.png)
-
-3. Fill in an appropriate **Name** and **Description**.
-
-4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
-
-5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
-
-> [!IMPORTANT]
-> At least one, but no more than five of your schema fields must be designated as searchable.
-
-6. Choose **Save**. Your schema will now be listed.
-
-7. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
-
-8. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
-
-9. Choose **Next** and choose **Create pattern**.
-
-10. Choose the **Confidence level** and **Primary element**.  To learn more about configuring a pattern, see [Create a custom sensitive information type in the Compliance Center](create-a-custom-sensitive-information-type.md)
-
-11.  Choose the **Primary element's sensitive info type** to associate it with. See [Sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) to learn more about the available sensitive information types.
-
-12. Choose **Done**.
-
-13. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
-
-13. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
-
-14. Choose **Next** and fill in a **Name** and **Description for admins**.
-
-15. Review and choose **Submit**.
-
-You can delete or edit the sensitive information type pattern by selecting it which surfaces the edit and delete controls.
-
-> [!IMPORTANT]
-> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
-
-## Post creation steps
-
-After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to perform the steps in [Part 2: Hash and upload the sensitive data](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#part-2-hash-and-upload-the-sensitive-data) before you can use the EDM custom sensitive information type.
-
-After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
-
-1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
-2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
-3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
-4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
-5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference. 
 
 ### Troubleshooting
 

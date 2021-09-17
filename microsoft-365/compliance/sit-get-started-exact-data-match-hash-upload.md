@@ -18,6 +18,14 @@ search.appverid:
 description: Get started creating exact data match based sensitive information types.
 ms.custom: seo-marvel-apr2020
 ---
+<!--After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
+
+1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
+2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
+3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
+4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
+5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference.  -->
+
 
 # Get started with exact data match based sensitive information types
 
