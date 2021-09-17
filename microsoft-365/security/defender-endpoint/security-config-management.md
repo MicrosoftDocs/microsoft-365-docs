@@ -66,7 +66,7 @@ Ensure you fulfill the following requirements:
 - In addition, the following endpoints require **outbound** connectivity from
     the devices. A brief description for each endpoint is listed below. 
 
-| **Internet Endpoint **                       | **Description of Use **                                                                                                                                                                                                                                         |
+| Internet Endpoint                      | Description of Use                                                                                                                                                                                                                                        |
 |----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <https://enterpriseregistration.windows.net> | Used for Azure AD registration as part of the MDE security settings management workflow                                                                                                                                                                         |
 | <https://login.microsoftonline.com>          | Used for Azure AD registration as part of the MDE security settings management workflow                                                                                                                                                                         |
