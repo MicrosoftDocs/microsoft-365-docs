@@ -253,6 +253,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > [!NOTE]
       > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
+<!-- FOR CHRIS move this to USE
 #### Removing the schema for EDM-based classification
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
@@ -292,7 +293,10 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 > [!NOTE]
 > If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
-<!-- START WORK THIS IN SOMEHOW-->
+ FOR CHRIS MOVE THIS TO USE END-->
+
+
+<!-- FOR CHRIS START WORK THIS IN SOMEHOW-->
 Ensure your sensitive data table doesn’t have formatting issues. 
 Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
 You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:

@@ -21,14 +21,12 @@ ms.custom: seo-marvel-apr2020
 
 # Learn about exact data match based sensitive information types
 
-[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
+[Sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared, to help in locating relevant data in eDiscovery, and to apply governance actions to certain types of information. You define a custom sensitive information type (SIT) based on:
 
 - patterns
 - keyword evidence such as *employee*, *badge*, or *ID*
 - character proximity to evidence in a particular pattern
 - confidence levels
-
-Such custom sensitive information types meet business needs for many organizations.
 
 But what if you wanted a custom sensitive information type (SIT) that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM) based classification, you can create a custom sensitive information type that is designed to:
 
@@ -61,10 +59,9 @@ When you work with EDM SITs, it's helpful to understand a few concepts that are 
 
 The schema is an xml file that defines:
 
-- The name of the Microsoft 365 data store where the all the EDM SIT files will be stored. 
+- The name of the schema, later referred to as the *DataStore*. 
 - The field names that your sensitive information source table contains. There is a 1:1 mapping of schema field name to sensitive information source table column name.
 - Which fields are searchable.
-- The primary field.
 - Any search modifying parameters, called *configurable match*, like ignoring delimiters and case.
 
 ### Sensitive information source table
@@ -82,6 +79,13 @@ Here's a simple example of a sensitive information source table.
 
 ### Rule package
 
+Every SIT has a rule package. You use the rule package in an EDM SIT to define:
+
+- Matches, which specify the field that will be the primary element to be used in exact lookup. It can be a regular expression with or without a checksum validation, a keyword list, a keyword dictionary, or a function.
+- Classification, which specifies the sensitive type match that triggers EDM lookup.
+- Supporting element which are elements that, when found provide supporting evidence that help increase the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+- Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. See, [Fundamental parts of a sensitive information type](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type) for more on confidence levels.
+Proximity – Number of characters between primary and supporting element
 
 ### You supply your own schema and data
 
@@ -89,7 +93,7 @@ Here's a simple example of a sensitive information source table.
 
 ### Primary elements
 
-When you create and EDM SIT, you define a primary element field in the schema. Primary fields are the elements for which all your content will be scanned, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the secondary elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
+When you create and EDM SIT, you define a primary element field in the rule package. Primary fields are the elements for which all your content will be scanned, and that need to follow a defined pattern in order to be identified. When the primary element is found in scanned items, EDM will then look for the secondary or supporting elements, which don't need to follow a pattern, and their proximity to the primary element. EDM requires that the primary element be first discoverable through an existing SIT. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of the available SITs. You'll have to find one of those that detects the class you want your EDM SIT to detect. For example, if your EDM SIT schema has U.S. social security number as the primary element, when you create your EDM schema, you'd associated it with the [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT.
 
 
 ## How matching works

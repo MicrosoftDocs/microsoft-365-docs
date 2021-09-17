@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 
 
-#### Refreshing your sensitive information database
+#### Refreshing your sensitive information database <!-- This goes into USE-->
 
 You can refresh your sensitive information database daily, and the EDM Upload Tool can reindex the sensitive data and then reupload the indexed data.
 
@@ -43,11 +43,14 @@ You can refresh your sensitive information database daily, and the EDM Upload To
    |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
-#### Example PowerShell script for Task Scheduler
+#### Example PowerShell script for Task Scheduler 
+<!-- this goes into USE-->
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:
 
 ##### To schedule hashing and upload in a combined step
+
+<!--USE-->
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -83,7 +86,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 ```
 
 #### To schedule hashing and upload as separate steps
-
+ <!-- USE-->
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
 \# Assuming current user is also the user context to run the task
@@ -123,6 +126,8 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 ```
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
+
+<!-- goes under the get started umbrella-->
 
 These locations are support EDM sensitive information types:
 
