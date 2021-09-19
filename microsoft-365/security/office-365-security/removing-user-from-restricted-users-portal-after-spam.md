@@ -44,7 +44,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. Too go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -64,7 +64,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** > **Review** > **Restricted users**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Restricted users**.
 
 2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 
