@@ -34,9 +34,6 @@ For information about governing your data, see [Microsoft Information Governance
 
 ## Know your data
 
-> [!NOTE]
-> For information about classifying and labeling data in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
-
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
 
 |Capability|What problems does it solve?|Get started|
@@ -44,6 +41,7 @@ To understand your data landscape and identify important data across your hybrid
 |[Sensitive information types](sensitive-information-type-learn-about.md)| Identifies sensitive data by using built-in or custom regular expressions or a function. Corroborative evidence includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Trainable classifiers](classifier-learn-about.md)| Identifies sensitive data by using examples of the data you're interested in rather than identifying elements in the item (pattern matching). You can use built-in classifiers or train a classifier with your own content.| [Get started with trainable classifiers](classifier-get-started-with.md) |
 |[Data classification](data-classification-overview.md) | A graphical identification of items in your organization that have a sensitivity label, a retention label, or have been classified. You can also use this information to gain insights into the actions that your users are taking on these items. | [Get started with content explorer](data-classification-content-explorer.md) <p> [Get started with activity explorer](data-classification-activity-explorer.md) |
+|[Azure Purview](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to any content in Azure Purview assets, such as Azure Blob Storage, Azure Files, Azure Data Lake Storage, and multi-cloud data sources. | [Automatically label your data in Azure Purview](/azure/purview/create-sensitivity-label.md) |
 
 ## Protect your data
 
