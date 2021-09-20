@@ -138,20 +138,6 @@ For more information, see [Configure device proxy and Internet connectivity sett
 >
 > When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
 
-### Service backend IP ranges
-
-If your network devices don't support DNS-based rules, use IP ranges instead.
-
-Defender for Endpoint for US Government customers is built in the Azure US Government environment, deployed in the following regions:
-
-- AzureCloud.usgovtexas
-- AzureCloud.usgovvirginia
-
-You can find the Azure IP ranges in [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
-
-> [!NOTE]
-> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
-
 ## API
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
