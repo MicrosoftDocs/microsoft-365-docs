@@ -74,7 +74,7 @@ Web content filtering policies specify which site categories are blocked on whic
 Policies can be deployed to block any of the following parent or child categories:
 
 <details>
-<summary>**Adult content**</summary>
+<summary>Adult content</summary>
 
 **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted. Example: `https://realvoodoos.com` 
 
@@ -93,7 +93,7 @@ Policies can be deployed to block any of the following parent or child categorie
 </details>
 
 <details>
-<summary>**High bandwidth**</summary>
+<summary>High bandwidth</summary>
 
 **Download sites**: Sites whose primary function is to allow users to download media content or programs, such as PC programs. Example: `https://download.com`
 
@@ -106,7 +106,7 @@ Policies can be deployed to block any of the following parent or child categorie
 </details>
 
 <details>
-<summary>**Legal liability**</summary>
+<summary>Legal liability</summary>
 
 **Child abuse images**: Sites that include child abuse images or pornography. 
 
@@ -129,7 +129,7 @@ Policies can be deployed to block any of the following parent or child categorie
 </details>
 
 <details>
-<summary>**Leisure**</summary>
+<summary>Leisure</summary>
 
 **Chat**: Sites that are primarily web-based chat rooms. Example: `http://lingr.com`
 
@@ -146,7 +146,7 @@ Policies can be deployed to block any of the following parent or child categorie
 </details>
 
 <details>
-<summary>**Uncategorized**</summary>
+<summary>Uncategorized</summary>
 
 **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
 
