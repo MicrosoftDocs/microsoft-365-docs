@@ -13,21 +13,24 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
+ROBOTS: NOINDEX,NOFOLOW
 description: "Admins can learn how to create policies to block active content in Office documents"
 ---
 
-# Manage active content in Office documents for IT admins
+# Manage active content in Office documents
 
-Office documents can be automatically refreshed, updated or executed when they contain active content. Macros, ActiveX, and Office add-ins are examples of active content. When used appropriately, active content is powerful and useful, but can pose a threat when misused as Attackers can use active content to deliver malware. IT admins can set policies for security settings within their organization to limit the use of active content to specific sets of users, or to disable entirely.
+> [!NOTE]
+> The features that are described in this article are in Preview, aren't available to everyone, and are subject to change.
 
-Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at **File** \> **Options** \> **Trust Center**.
+Office documents can be automatically refreshed, updated, or executed when they contain _active content_. Examples of active content are macros, ActiveX controls, and Office add-ins. Active content can provide powerful and useful functionality to users, but attackers can also use active content to deliver malware.
 
-> [!IMPORTANT]
-> Starting in MONTH YEAR, policies blocking active content set by IT admins (Group policy or Cloud policy) will now be enforced on trusted documents. Previously, end users could create a trusted documents which would allow active content to run even when an IT Admin had set policy blocking the active content. Moving forward, IT Admin deployed policies will take precedence. Your users may run into issues using active content in trusted documents if the IT Admin has implemented policies to block active content.
+Admins can create organization policies (group policies or cloud policies) that limit the use of active content to specific sets of users, or to disable active content entirely. Users can configure their own security and privacy settings in the Office Trust Center in their Office apps at **File** \> **Options** \> **Trust Center**.
+
+Previously, when users identified documents as trusted documents, their selection would allow active content to run, even if an admin configured policies to block active content in Office documents. Now, policies set by admins take precedence over user identification of trusted documents. This change in behavior might cause issues for users.
 
 The updated Trust Center logic is described in the following diagram:
 
-![A flow chart showing the Trust Center behavior for active content in Office documents](../media/office-trust-center-flow.png)
+![A flow chart showing the Trust Center behavior for active content in Office documents.](../media/office-trust-center-flow.png)
 
 1. A user opens an Office document that contains active content.
 
@@ -57,11 +60,11 @@ The updated Trust Center logic is described in the following diagram:
 
 ## What is a trusted document?
 
-Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls and other types of active content in the document. The document will not open in Protected View or Application Guard. When users open a Trusted Document, and all active content will be enabled. Even if the document contains new active content or updates to existing active content, users won't receive any security prompts the next time they open the document.
+Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
-If an admin blocks active content by using a policy, or if end-users set a Trust Center setting that blocks active content, the the active content will remain blocked.
+If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the the active content will remain blocked.
 
 For more information, see the following articles:
 
@@ -75,8 +78,8 @@ Admins have many ways to configure Office in an organization. For example:
 
 - **Office cloud policy service**: Set up a user-based policy that applies to a user on any device accessing files in Office apps with their Azure AD account. See the steps for [creating an Office cloud policy configuration](/DeployOffice/overview-office-cloud-policy-service) in the [Office Cloud Policy Service](https://config.office.com/officeSettings/officePolicies).
 - **Office policies in Intune**: Use the Intune Settings catalog or Administrative templates to deploy HKCU policies to Windows 10 PCs: In the [MEM admin center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/configurationProfiles) under **Devices** \> **Configuration Profiles**.
-| - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
-| - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
+  - ***Administrative Templates***: See instructions to use Windows 10 templates to configure [Administrative Templates](/mem/intune/configuration/administrative-templates-windows).
+  - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
 - **Group policy**: Use your on-premise Active Directory to deploy group policy objects (GPOs) to users and computers. To create a GPO for this setting, download the latest [Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
 ## Admin options for restricting active content
