@@ -95,7 +95,7 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes|
 
-\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Compliance center.
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the compliance center. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -254,7 +254,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     ![Auto-labeling tab.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
 
