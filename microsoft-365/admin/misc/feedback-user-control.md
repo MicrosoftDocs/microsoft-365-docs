@@ -28,8 +28,8 @@ In this topic, you'll find information on what types of feedback exist, how we c
 
 As an admin, you can manage the feedback signal for your organization. We’re introducing a new set of policy settings to help you manage user feedback collection within the Microsoft 365 applications for your organization. These policy settings will help you target Azure Active Directory groups and configure the feedback collection experience for your organization. User feedback goes directly to our engineers and helps us shape the future of Microsoft products and services for all our users. You can learn more about these policy settings, which applications they apply to, and best practices at [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
-> [!IMPORTANT]
-> We recommend that you confirm feedback is submitted from a source you trust. Make sure user names or user IDs match actual users in your organization.
+<!--> [!IMPORTANT]
+> We recommend that you confirm feedback is submitted from a source you trust. Make sure user names or user IDs match actual users in your organization.-->
 
 ## Feedback types
 
