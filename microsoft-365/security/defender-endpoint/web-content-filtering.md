@@ -157,7 +157,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 ### Create a policy
 
-To add a new policy:
+To add a new policy, follow these steps:
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
 
@@ -178,7 +178,7 @@ To add a new policy:
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
 
-To define a custom indicator:
+To define a custom indicator, follow these steps:
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Indicators** > **URL/Domain** > **Add Item**.
 
