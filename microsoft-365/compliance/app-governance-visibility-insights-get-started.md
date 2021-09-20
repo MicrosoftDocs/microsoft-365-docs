@@ -57,7 +57,7 @@ One of the primary value points for app governance is the ability to quickly vie
     - Unverified Publisher
     - App only
     - New apps
-1. Select the name of an app to view details. You can select multiple apps to save them as a saved query by placing a check mark to the left of the app name. Selecting an app name opens a detail pane on the right as show in the following graphic.
+1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as show in the following graphic.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="Image showing the details pane for a selected app.":::
 
