@@ -60,7 +60,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker-end
     
-3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
+3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. The chooses the email address, but you can edit it if needed.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
@@ -70,13 +70,13 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
    ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
+6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
 
    ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
-You have a shared mailbox and it includes a shared calendar. Now go on to the next step: block sign-in for the shared mailbox account.
+You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
 
 ## Which permissions should you use?
 
