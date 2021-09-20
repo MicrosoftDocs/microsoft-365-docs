@@ -109,10 +109,6 @@ Set-Content -Path ".\Schemafile.xml" -Value $Schema.EdmSchemaXML
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ``` 
 
-## Post creation steps
-
-After you have used the wizard to create your EDM schema and pattern (rule package) files, you still have to hash and upload the schema, and sensitive information source table. See [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) and create a policy that uses the EDM SIT.
-
 ## Create exact data match schema and rule package manually
 
 ### Using the caseInsensitive and ignoredDelimiters fields
@@ -285,14 +281,20 @@ When you set up your rule package, make sure to correctly reference your .csv or
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
+## Post creation steps
 
-
-
+After you have created your EDM schema and pattern (rule package) files, you need to hash and upload the schema and sensitive information source table. See,
+ 
+1. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types),
+2. [CREATE SIT](sit-get-started-exact-data-match-create-sit.md#create-sit)
+3. LINK TO USE EDM BASED CLASSIFICATION WITH YOUR MICROSOFT 365 CLOUD SERVICES.
 
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
 
 
-NEXT STEP LINK TO HASH AND UPLOAD ARTICLE
+## Next step
+
+-  [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
 
 
 
