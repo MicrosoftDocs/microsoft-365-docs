@@ -71,7 +71,118 @@ From the left-hand navigation menu, select **Settings** > **Endpoints** > **Gene
 
 Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** > **Endpoints** > **Web content filtering** (under **Rules**).
 
-Use the filter to locate policies that contain certain blocked categories or are applied to specific device groups.
+Policies can be deployed to block any of the following parent or child categories:
+
+<details>
+<summary>**Adult content**</summary>
+
+**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted. 
+e.g. https://realvoodoos.com 
+
+**Gambling**: Online gambling and sites that promote gambling skills and practice. 
+e.g. https://bet365.com 
+
+**Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials. 
+e.g. https://bn.org.uk 
+
+**Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually-oriented material is also listed here. 
+e.g. https://playboy.com 
+
+**Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters. 
+e.g. https://tradesexualhealth.com 
+
+**Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic. 
+e.g. http://morticom.com 
+
+**Violence**: Sites that display or promote content related to violence against humans or animals. 
+e.g. https://newgrounds.com 
+
+</details>
+
+<details>
+<summary>**High bandwidth**</summary>
+
+**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as PC programs. 
+e.g. https://download.com 
+
+**Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects. 
+e.g. https://instagram.com 
+
+**Peer-to-peer**: Sites that host P2P software or facilitate the sharing of files using P2P software. 
+e.g. https://utorrent.com 
+
+**Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.  
+e.g. https://youtube.com 
+  
+</details>
+
+<details>
+<summary>**Legal liability**</summary>
+
+**Child abuse images**: Sites that include child abuse images or pornography. 
+e.g. N/A 
+
+**Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities. 
+e.g. http://fakepassport.info 
+
+**Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.  
+e.g. http://mirror-h.org 
+
+**Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice. 
+e.g. http://kkk.com 
+
+**Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse,or sell related paraphernalia. 
+e.g. http://drug-testing-detox.com 
+
+**Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft. 
+e.g. N/A 
+
+**School cheating**: Sites related to plagiarism or school cheating. 
+e.g. N/A 
+
+**Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users. 
+e.g. N/A 
+
+**Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. 
+e.g. http://smith-wesson.com 
+
+</details>
+
+<details>
+<summary>**Leisure**</summary>
+
+**Chat**: Sites that are primarily web-based chat rooms. 
+e.g. http://lingr.com 
+
+**Games**: Sites relating to video / computer games, including sites that promote gaming throuhg hosting online services or information related to gaming. 
+e.g. http://xbox.com 
+
+**Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging. 
+e.g. http://aim.com 
+
+**Professional network**: Sites that provide professional networking services. 
+e.g. http://linkedin.com 
+
+**Social networking**: Sites that provide social networking services. 
+e.g. http://facebook.com 
+
+**Web-based email**: Sites offering web based mail services. 
+e.g. http://gmail.com 
+  
+</details>
+
+<details>
+<summary>**Uncategorized**</summary>
+
+**Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category. 
+e.g. N/A 
+
+**Parked domains**: Sites that have no content or are parked for later use. 
+e.g. N/A 
+  
+**Note**: Uncategorized contains only the above two categories and does not include all other sites outside of these categories.
+  
+</details>
 
 ### Create a policy
 
