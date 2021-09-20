@@ -44,7 +44,7 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, F1, F3 or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
+          Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, F1, F3, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
 
       - question: |
           Can I use Bookings in my own Web site?
