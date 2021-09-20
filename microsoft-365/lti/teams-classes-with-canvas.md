@@ -30,15 +30,15 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 
 ## Grant admin consent
 
-Prior to managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup. You need to be a Global Administrator to perform these steps.
+Before managing the Microsoft Teams integration within Instructure Canvas, it's important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup. You need to be a Global Administrator to perform these steps.
 
 1. Navigate to Azure Active Directory.
 
-2. Open Enterprise applications and select the **Microsoft-Teams-Sync-for-Canvas** application.
+2. Open Enterprise applications, and then select the **Microsoft-Teams-Sync-for-Canvas** application.
 
-3. Select **Permissions** and then choose **Grant admin consent**.
+3. Select **Permissions**, and then select **Grant admin consent**.
 
-4. Agree with the permissions the application requires and grant consent.
+4. Agree with the permissions that the application requires, and then grant consent.
 
 ## Microsoft Office 365 admin
 
