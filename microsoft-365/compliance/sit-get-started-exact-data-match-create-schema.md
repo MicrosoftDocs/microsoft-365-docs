@@ -270,117 +270,12 @@ When you set up your rule package, make sure to correctly reference your .csv or
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
 
 
-NEXT STEP HASH AND UPLOAD
+NEXT STEP LINK TO HASH AND UPLOAD ARTICLE
 
-Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field. Consider the following ExactMatch item:
 
-```xml
-<ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
-      <Pattern confidenceLevel="65">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-      </Pattern>
-      <Pattern confidenceLevel="75">
-        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-        <Any minMatches ="3" maxMatches ="100">
-          <match matches="PatientID" />
-          <match matches="MRN"/>
-          <match matches="FirstName"/>
-          <match matches="LastName"/>
-          <match matches="Phone"/>
-          <match matches="DOB"/>
-        </Any>
-      </Pattern>
-    </ExactMatch>
-```
-
-In this example, note that:
-
-- The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
-
-- The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
-
-- The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
-
-> [!NOTE]
-> It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
 After you have imported your rule package with your EDM sensitive info type and have imported your sensitive data table, you can test your newly created type by using the **Test** function in the EDM wizard in the compliance center. See [Use the Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) for instructions on using this functionality.
 
-#### Editing the schema for EDM-based classification
-
-If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
-
-> [!TIP]
-> You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md).
-
-1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
-
-2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
-3. To update your database schema, run the following cmdlets, one at a time:
-
-      ```powershell
-      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-      ```
-
-      You will be prompted to confirm, as follows:
-
-      > Confirm
-      >
-      > Are you sure you want to perform this action?
-      >
-      > EDM Schema for the data store 'patientrecords' will be updated.
-      >
-      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
-
-      > [!TIP]
-      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
-
-      > [!NOTE]
-      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
-
-<!-- FOR CHRIS move this to USE
-#### Removing the schema for EDM-based classification
-
-(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
-
-1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
-
-2. Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:
-
-      ```powershell
-      Remove-DlpEdmSchema -Identity patientrecords
-      ```
-
-      You will be prompted to confirm:
-
-      > Confirm
-      >
-      > Are you sure you want to perform this action?
-      >
-      > EDM Schema for the data store 'patientrecords' will be removed.
-      >
-      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
-
-      > [!TIP]
-      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
-
- upload it.
-
-The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.
-
-If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant. This requires that your clear text sensitive data files are on that computer for hashing.
-
-If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload. In this scenario, you will need the EDMUploadAgent on both computers.
-
-> [!IMPORTANT]
-> If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, you ***must*** download the schema for this procedure.
-
-> [!NOTE]
-> If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
-
- FOR CHRIS MOVE THIS TO USE END-->
 
 
 <!-- FOR CHRIS START WORK THIS IN SOMEHOW-->
@@ -389,7 +284,7 @@ Before you hash and upload your sensitive data, do a search to validate the pres
 You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
 EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
 If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tools to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value (e.g. the person’s name Tom O’Neil or the city 's‑Gravenhage (which starts with an apostrophe character), you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
-<!-- END WORK THIS IN SOMEHOW-->
+<!-- FOR CHRIS END WORK THIS IN SOMEHOW-->
 
 
 <!-- PUBLISHED SIT EMD WIZARD ARTICLE-->
