@@ -108,6 +108,13 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
  FOR CHRIS MOVE THIS TO USE END-->
 
+<!-- CHRIS MOVE THIS TO USE MANAGE EDM FILES
+
+> [!TIP]
+> You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md). -->
+
+==========
+
 # Get started with exact data match based sensitive information types
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available for use in data loss prevention policies, eDiscovery and certain content governance tasks is a multi-phase process. This article outlines the workflow and links to the procedures for each of the phases

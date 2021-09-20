@@ -91,9 +91,27 @@ You can delete or edit the sensitive information type pattern by selecting it wh
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
 
+## Export of the EDM schema file in XML format
+
+If you created the EDM Schema in the EDM Schema wizard, you must export the EDM Schema file in XML format.  
+
+1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+2. To export the EDM schema file use this cmdlet:
+
+```powershell
+$Schema = Get-DlpEdmSchema -Identity "[your EDM Schema name]"
+Set-Content -Path ".\Schemafile.xml" -Value $Schema.EdmSchemaXML
+```
+3. If you used the Exact Data Match schema wizard to create your schema and didn’t export the schema as a file in XML format, use the EDM Upload Agent to download the schema use this cmdlet:
+
+```powershell
+EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
+``` 
+
 ## Post creation steps
 
-After you have used this wizard to create your EDM schema and pattern (rule package) files, you still have to hash and upload your sensitive information table. See ADD LINK TO HASH AND UPLOAD ARTICLE before you can use the EDM custom sensitive information type.
+After you have used the wizard to create your EDM schema and pattern (rule package) files, you still have to hash and upload the schema, and sensitive information source table. See [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) and create a policy that uses the EDM SIT.
 
 ## Create exact data match schema and rule package manually
 
@@ -266,6 +284,10 @@ When you set up your rule package, make sure to correctly reference your .csv or
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
+
+
+
+
 
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
 

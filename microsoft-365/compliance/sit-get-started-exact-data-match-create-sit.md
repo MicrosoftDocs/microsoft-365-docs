@@ -19,7 +19,7 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
-# Get started with exact data match based sensitive information types
+# CREATE SIT
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available for use in data loss prevention policies, eDiscovery and certain content governance tasks is a multi-phase process. This article outlines the workflow and links to the procedures for each of the phases
 

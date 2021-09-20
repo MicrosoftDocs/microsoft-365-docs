@@ -19,20 +19,18 @@ description: Hash and upload the sensitive information source table for exact da
 ms.custom: seo-marvel-apr2020
 ---
 
-
-
 # Hash and upload the sensitive information source table for exact data match sensitive information types
-
-
 
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
 
-<!-- CHRIS MOVE THIS TO USE MANAGE EDM FILES
+## Pre-requisites
 
-> [!TIP]
-> You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md). -->
+1. Perform the steps in [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
+2. Perform the steps in [Create the schema and rule package for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-and-rule-package-for-exact-data-match-based-sensitive-information-types) to create the schema and rule package files.
 
-### Part 2: Hash and upload the sensitive data
+- Export the schema and rule package files in XML format. 
+
+### Hash and upload the sensitive data
 
 In this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to hash with salt value the sensitive data, and upload it.
 
