@@ -38,8 +38,8 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 
 ### Pre-requisites
 
-1. **Verify MDE-Intune connector is enabled** : On the [unified security console](https://security.microsoft.com), go to **Settings** -> **Endpoints** -> **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
-2. **Verify MDE-Intune connector is enabled on the Intune portal** : In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** and ensure that the "Connection status" is enabled.
+1. **Verify that the connector is enabled** : On the [unified security console](https://security.microsoft.com), go to **Settings** -> **Endpoints** -> **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
+2. **Veerify that the connector is enabled on the Intune portal** : In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** and ensure that the "Connection status" is enabled.
 
 Follow the beloww steps to setup app protection policies with Microsoft Defender for Endpoint:
 
