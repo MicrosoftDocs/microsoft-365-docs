@@ -76,43 +76,32 @@ Policies can be deployed to block any of the following parent or child categorie
 <details>
 <summary>**Adult content**</summary>
 
-**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted. 
-e.g. https://realvoodoos.com 
+**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted. Example: `https://realvoodoos.com` 
 
-**Gambling**: Online gambling and sites that promote gambling skills and practice. 
-e.g. https://bet365.com 
+**Gambling**: Online gambling and sites that promote gambling skills and practice. Example: `https://bet365.com` 
 
-**Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials. 
-e.g. https://bn.org.uk 
+**Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials. Example: `https://bn.org.uk` 
 
-**Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually-oriented material is also listed here. 
-e.g. https://playboy.com 
+**Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here. Example: `https://playboy.com` 
 
-**Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters. 
-e.g. https://tradesexualhealth.com 
+**Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters. Example: `https://tradesexualhealth.com` 
 
-**Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic. 
-e.g. http://morticom.com 
+**Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic. Example: `http://morticom.com` 
 
-**Violence**: Sites that display or promote content related to violence against humans or animals. 
-e.g. https://newgrounds.com 
+**Violence**: Sites that display or promote content related to violence against humans or animals. Example: `https://newgrounds.com`
 
 </details>
 
 <details>
 <summary>**High bandwidth**</summary>
 
-**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as PC programs. 
-e.g. https://download.com 
+**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as PC programs. Example: `https://download.com`
 
-**Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects. 
-e.g. https://instagram.com 
+**Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects. Example: `https://instagram.com` 
 
-**Peer-to-peer**: Sites that host P2P software or facilitate the sharing of files using P2P software. 
-e.g. https://utorrent.com 
+**Peer-to-peer**: Sites that host P2P software or facilitate the sharing of files using P2P software. Example: `https://utorrent.com`
 
-**Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.  
-e.g. https://youtube.com 
+**Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media. Example: `https://youtube.com` 
   
 </details>
 
@@ -120,65 +109,48 @@ e.g. https://youtube.com
 <summary>**Legal liability**</summary>
 
 **Child abuse images**: Sites that include child abuse images or pornography. 
-e.g. N/A 
 
-**Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities. 
-e.g. http://fakepassport.info 
+**Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities. Example: `http://fakepassport.info`
 
-**Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.  
-e.g. http://mirror-h.org 
+**Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked. Example: `http://mirror-h.org`
 
-**Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice. 
-e.g. http://kkk.com 
+**Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice. Example: `http://kkk.com` 
 
-**Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse,or sell related paraphernalia. 
-e.g. http://drug-testing-detox.com 
+**Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia. Example: `http://drug-testing-detox.com`
 
-**Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft. 
-e.g. N/A 
+**Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.
 
 **School cheating**: Sites related to plagiarism or school cheating. 
-e.g. N/A 
 
-**Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users. 
-e.g. N/A 
+**Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.
 
-**Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. 
-e.g. http://smith-wesson.com 
+**Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. Example: `http://smith-wesson.com`
 
 </details>
 
 <details>
 <summary>**Leisure**</summary>
 
-**Chat**: Sites that are primarily web-based chat rooms. 
-e.g. http://lingr.com 
+**Chat**: Sites that are primarily web-based chat rooms. Example: `http://lingr.com`
 
-**Games**: Sites relating to video / computer games, including sites that promote gaming throuhg hosting online services or information related to gaming. 
-e.g. http://xbox.com 
+**Games**: Sites relating to video / computer games, including sites that promote gaming through hosting online services or information related to gaming. Example: `http://xbox.com`
 
-**Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging. 
-e.g. http://aim.com 
+**Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging. Example: `http://aim.com`
 
-**Professional network**: Sites that provide professional networking services. 
-e.g. http://linkedin.com 
+**Professional network**: Sites that provide professional networking services. Example: `http://linkedin.com` 
 
-**Social networking**: Sites that provide social networking services. 
-e.g. http://facebook.com 
+**Social networking**: Sites that provide social networking services. Example: `http://facebook.com` 
 
-**Web-based email**: Sites offering web based mail services. 
-e.g. http://gmail.com 
+**Web-based email**: Sites offering web-based mail services. Example: `http://gmail.com` 
   
 </details>
 
 <details>
 <summary>**Uncategorized**</summary>
 
-**Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category. 
-e.g. N/A 
+**Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
 
-**Parked domains**: Sites that have no content or are parked for later use. 
-e.g. N/A 
+**Parked domains**: Sites that have no content or are parked for later use.
   
 **Note**: Uncategorized contains only the above two categories and does not include all other sites outside of these categories.
   
@@ -219,7 +191,7 @@ If you encounter a domain that has been incorrectly categorized, you can dispute
 
 To dispute the category of a domain, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
-A panel will open where you can select the priority and add additional details such as the suggested category for re-categorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+A panel will open where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
 ### URL category lookup
 
@@ -275,7 +247,7 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 - Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the Domains report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
 
-
+## See also
 
 - [Web protection overview](web-protection-overview.md)
 - [Web threat protection](web-threat-protection.md)
