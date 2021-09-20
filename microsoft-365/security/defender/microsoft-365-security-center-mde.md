@@ -35,7 +35,7 @@ ms.collection:
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> ![Image of what moved to where](../../media/mde-m3d-security-center.png)
+> ![Image of what moved to where.](../../media/mde-m3d-security-center.png)
 
 | Microsoft Defender Security Center | Microsoft 365 Defender |
 |---------|---------|
@@ -124,7 +124,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about incidents](incidents-overview.md)
 - [Learn more about managing alerts](investigate-alerts.md)
 
-![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
+![The Alerts and Actions quick launch bar.](../../media/converge-1-alerts-and-actions.png)
 
 ### Hunting
 
@@ -155,13 +155,13 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 View and manage the security of endpoints in your organization. If you've used the Microsoft Defender Security Center, it will look familiar.
 
-![The Endpoints quick launch bar](../../media/converge-2-endpoints.png)
+![The Endpoints quick launch bar.](../../media/converge-2-endpoints.png)
 
 ### Access and reports
 
 View reports, change your settings, and modify user roles.
 
-![The Access and Reporting quicklaunch bar](../../media/converge-4-access-and-reporting-new.png)
+![The Access and Reporting quicklaunch bar.](../../media/converge-4-access-and-reporting-new.png)
 
 ### SIEM API connections
 

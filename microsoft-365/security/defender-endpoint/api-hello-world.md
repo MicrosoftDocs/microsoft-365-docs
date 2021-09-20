@@ -38,34 +38,37 @@ ms.custom: api
 ## Get Alerts using a simple PowerShell script
 
 ### How long it takes to go through this example?
+
 It only takes 5 minutes done in two steps:
+
 - Application registration
 - Use examples: only requires copy/paste of a short PowerShell script
 
 ### Do I need a permission to connect?
+
 For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.
 
 ### Step 1 - Create an App in Azure Active Directory
 
 1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
 4. Allow your Application to access Defender for Endpoint and assign it **'Read all alerts'** permission:
 
-   - On your application page, click **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
+   - On your application page, click **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection1](images/add-permission.png)
+   ![Image of API access and API selection1.](images/add-permission.png)
 
-   - Choose **Application permissions** > **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection2](images/application-permissions.png)
+   ![Image of API access and API selection2.](images/application-permissions.png)
 
    **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
@@ -79,7 +82,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    - **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions](images/grant-consent.png)
+   ![Image of Grant permissions.](images/grant-consent.png)
 
 6. Add a secret to the application.
 
@@ -87,13 +90,13 @@ For the Application registration stage, you must have a **Global administrator**
 
     **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id.](images/app-and-tenant-ids.png)
 
 Done! You have successfully registered an application!
 
@@ -131,7 +134,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the Alert.Read.All role.
 
-  ![Image jwt.ms](images/api-jwt-ms.png)
+  ![Image jwt.ms.](images/api-jwt-ms.png)
 
 ### Lets get the Alerts!
 

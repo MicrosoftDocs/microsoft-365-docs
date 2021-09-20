@@ -1,7 +1,7 @@
 ---
 title: Cancel machine action API
 description: Learn how to cancel an already launched machine action
-keywords: apis, graph api, 
+keywords: apis, graph api,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,9 +15,9 @@ author: mjcaparas
 localization_priority: normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -57,13 +57,11 @@ started](apis-intro.md).
 |Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collect forensics <br>Isolate machine<br>Restrict code execution<br>  Scan machine<br>  Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
 |Delegated (work or school account)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collect forensics<br> Isolate machine<br>  Restrict code execution<br> Scan machine<br>Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
 
-
 ## HTTP request
 
+```http
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
-POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
-```
-
 
 ## Request headers
 

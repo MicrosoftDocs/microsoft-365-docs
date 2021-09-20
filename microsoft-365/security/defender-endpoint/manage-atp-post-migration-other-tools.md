@@ -46,7 +46,7 @@ You can manage some Microsoft Defender Antivirus settings on devices with [Power
 
 ## Configure Microsoft Defender for Endpoint with PowerShell
 
-You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.
+You can use PowerShell to manage Microsoft Defender Antivirus, exploit protection, and your attack surface reduction rules.<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
@@ -69,7 +69,7 @@ WMI is a scripting interface that allows you to retrieve, modify, and update set
 
 ## Configure Microsoft Defender for Endpoint with Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
-On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
+On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|

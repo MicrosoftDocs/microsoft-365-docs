@@ -127,8 +127,8 @@ If an inactive mailbox has an archive mailbox, you can also restore it to the ar
 
   **Folder hierarchy in the target mailbox when the TargetRootFolder parameter isn't used**
 
-  ![Screenshot when TargetRootFolder parameter isn't used](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
+  ![Screenshot when TargetRootFolder parameter isn't used.](../media/76a759af-f483-4d1c-8cc7-243435b5562e.png)
 
   **Folder hierarchy in the target mailbox when the TargetRootFolder parameter is used**
 
-  ![Screenshot when TargetRootFolder parameter is used](../media/300da592-7323-48db-b8a4-07012259d113.png)
+  ![Screenshot when TargetRootFolder parameter is used.](../media/300da592-7323-48db-b8a4-07012259d113.png)

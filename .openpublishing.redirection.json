@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
+      "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/help-users-connect-to-microsoft-365-business.md",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
@@ -98,11 +103,6 @@
     {
       "source_path": "microsoft-365/business/security-features.md",
       "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/business/index.yml",
-      "redirect_url": "/microsoft-365/admin/index",
       "redirect_document_id": false
     },
     {
@@ -993,6 +993,11 @@
     {
       "source_path": "microsoft-365/compliance/bulk-edit-content-searches.md",
       "redirect_url": "/microsoft-365/compliance/content-search",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/reports-in-security-and-compliance.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
       "redirect_document_id": false
     },
     {
@@ -4075,6 +4080,11 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/threat-analytics",
       "redirect_document_id": false
     },
+	{
+      "source_path": "microsoft-365/security/defender-endpoint/contact-support-usgov.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/contact-support",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/security/defender/onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/onboard",
@@ -4506,14 +4516,24 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/solutions/deploy-threat-protection.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/deploy-threat-protection-configure.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/isolation-in-microsoft-365-search.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/device-control-report.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/machine-reports",
-      "redirect_document_id": true
+      "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
+      "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
+      "redirect_document_id": false
     }
   ]
 }

@@ -12,7 +12,7 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ---
@@ -64,26 +64,26 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open **Endpoint Security**.
 
-2. Go to **Attack Surface Reduction** > **Policy**.
+2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** > **Create**.
+3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** \> **Create**.
 
-4.  Name the policy and add a description. Select **Next**.
+4. Name the policy and add a description. Select **Next**.
 
-5.  Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
+5. Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
 
-6.  Select **List of additional folders that need to be protected** and add the folders that need to be protected.
+6. Select **List of additional folders that need to be protected** and add the folders that need to be protected.
 
-7.  Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
+7. Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
 
-8.  Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
+8. Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
 
-9.  Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
+9. Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
 
-10.  Select **Next** to save each open blade and then **Create**.
+10. Select **Next** to save each open blade and then **Create**.
 
-   > [!NOTE]
-   > Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
+    > [!NOTE]
+    > Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
 ## Mobile Device Management (MDM)
 
@@ -91,13 +91,14 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
 
 ## Microsoft Endpoint Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**.
+1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
-2. Select **Home** > **Create Exploit Guard Policy**.
+2. Select **Home** \> **Create Exploit Guard Policy**.
 
 3. Enter a name and a description, select **Controlled folder access**, and select **Next**.
 
 4. Choose whether block or audit changes, allow other apps, or add other folders, and select **Next**.
+
    > [!NOTE]
    > Wilcard is supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
@@ -118,9 +119,9 @@ Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/wi
    - **Disable (Default)** - The Controlled folder access feature won't work. All apps can make changes to files in protected folders.
    - **Audit Mode** - Changes will be allowed if a malicious or suspicious app attempts to make a change to a file in a protected folder. However, it will be recorded in the Windows event log where you can assess the impact on your organization.
    - **Block disk modification only** - Attempts by untrusted apps to write to disk sectors will be logged in Windows Event log. These logs can be found in **Applications and Services Logs** \> Microsoft \> Windows \> Windows Defender \> Operational \> ID 1123.
-   - **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** > **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Attempts to modify or delete files in protected folders won't be recorded.
+   - **Audit disk modification only** - Only attempts to write to protected disk sectors will be recorded in the Windows event log (under **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational** \> **ID 1124**). Attempts to modify or delete files in protected folders won't be recorded.
 
-      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down](../../media/cfa-gp-enable.png)
+      ![Screenshot of the group policy option Enabled and Audit Mode selected in the drop-down.](../../media/cfa-gp-enable.png)
 
 > [!IMPORTANT]
 > To fully enable controlled folder access, you must set the Group Policy option to **Enabled** and select **Block** in the options drop-down menu.

@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
@@ -45,7 +46,7 @@ Additionally:
 
 - By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Security group for records manager** to select and then enable a mail-enabled security group that contains the administrator accounts.
     
-    Microsoft 365 groups and security groups that aren't mail-enabled doesn't support this feature and wouldn't be displayed in the list to select. If you need to create a new mail-enabled security group, use the link to the Microsoft 365 admin center to create the new group. 
+    Microsoft 365 groups and security groups that aren't mail-enabled doesn't support this feature and wouldn't be displayed in the list to select. If you need to create a new mail-enabled security group, use the link to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to create the new group. 
     
     > [!IMPORTANT]
     > After you have enabled the group, you can't change it in the compliance center. See the next section for how to enable a different group by using PowerShell.
@@ -97,18 +98,18 @@ A disposition review can include content in Exchange mailboxes, SharePoint sites
 
 Administrators can see an overview of all pending dispositions in the **Overview** tab. Reviewers see only their items pending disposition. For example:
 
-![Pending dispositions in Records management overview](../media/dispositions-overview.png)
+![Pending dispositions in Records management overview.](../media/dispositions-overview.png)
 
 When you select the **View all pending dispositions**, you're taken to the **Disposition** page. For example:
 
-![Dispositions page in Microsoft 365 compliance center](../media/disposition-tab.png)
+![Dispositions page in Microsoft 365 compliance center.](../media/disposition-tab.png)
 
 
 ### Workflow for a disposition review
 
 The following diagram shows the basic workflow for a disposition review (single-stage) when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be automatically applied to content.
   
-![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Chart showing flow of how disposition works.](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
 
 ### How to configure a retention label for disposition review
 
@@ -116,11 +117,11 @@ Triggering a disposition review at the end of the retention period is a configur
 
 From the **Define retention settings** page for a retention label:
 
-![Retention settings for a label](../media/disposition-review-option.png)
+![Retention settings for a label.](../media/disposition-review-option.png)
  
 After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
-![Specifying disposition reviewers](../media/disposition-reviewers.png) 
+![Specifying disposition reviewers.](../media/disposition-reviewers.png) 
 
 Select **Add a stage**, and name your stage for identification purposes. Then specify the reviewers for that stage.
 
@@ -135,7 +136,7 @@ Within each individual stage of disposition, any of the users you specify for th
 
 During the configuration phase, for each stage specified, you can rename it, reorder it, or remove it by selecting the Stage actions option (**...**): 
 
-![Stage actions for disposition reviews](../media/stage-actions-disposition-review.png)
+![Stage actions for disposition reviews.](../media/stage-actions-disposition-review.png)
 
 However, you can't reorder or remove a stage after you have created the retention label.
 
@@ -145,13 +146,13 @@ After you have specified your reviewers, remember to grant them the **Dispositio
 
 Example default email notification sent to a reviewer:
 
-![Email notification example with default text when an item is ready for disposition review](../media/disposition-review-email.png)
+![Email notification example with default text when an item is ready for disposition review.](../media/disposition-review-email.png)
 
 You can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
 From any of the Disposition pages in the compliance center, select **Records management settings**:  
 
-![Records management settings](../media/record-management-settings.png)
+![Records management settings.](../media/record-management-settings.png)
 
 Then select the **Disposition notifications** tab, and specify whether you want to use just the default email message, or add your own text to the default message. Your custom text is added to the email instructions after the information about the retention label and before the next steps instructions.
 
@@ -169,11 +170,11 @@ Select **Save** to save any changes.
 
 When a reviewer is notified by email that content is ready to review, they can click a link in the email that takes them directly to the **Disposition** page from **Records management** in the Microsoft 365 compliance center. There, the reviewers can see how many items for each retention label are waiting disposition with the **Type** displaying **Pending disposition**. They then select a retention label, and **Open in new window** to see all content with that label:
 
-![Open in new window for disposition review](../media/open-in-new-window.png)
+![Open in new window for disposition review.](../media/open-in-new-window.png)
 
 From the **Pending dispositions** page, they see all pending dispositions for that label. When one or more items are selected, they can use the mini-preview pane and the **Source**, **Details**, and **History** tab to inspect the content before taking action on it:
 
-![Disposition options](../media/retention-disposition-options.png)
+![Disposition options.](../media/retention-disposition-options.png)
 
 If you use the horizontal scroll bar, or close the min-review pane, you see more columns that include the expiry date and the name of the disposition review stage.
 
@@ -205,7 +206,7 @@ Use the **Disposition** tab from the **Records management** page to identify:
 
 These items display **Records Disposed** in the **Type** column. For example:
 
-![Items that were disposed of without a disposition review](../media/records-disposed2.png)
+![Items that were disposed of without a disposition review.](../media/records-disposed2.png)
 
 > [!NOTE]
 > This functionality uses information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.

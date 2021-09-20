@@ -35,7 +35,7 @@ Microsoft Managed Desktop provides its service to enterprise customers and prope
 
 ## Microsoft Managed Desktop data process and storage
 
-Microsoft Managed Desktop relies on data from multiple Microsoft products and services to provide its service to enterprise customers. To accomplish the goal of protecting and maintaining enrolled devices, we process and copy data from these services to Microsoft Managed Desktop. When we process data, we follow the documented directions you provide, as referenced in the Online Services Terms and Microsoft Privacy Statement. When we process data, we follow the documented directions you provide, as referenced in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft Managed Desktop’s processor duties include ensuring appropriate confidentiality, security, and resilience. Microsoft Managed Desktop employs additional privacy and security measures to ensure proper handling of personal identifiable data. 
+Microsoft Managed Desktop relies on data from multiple Microsoft products and services to provide its service to enterprise customers. To accomplish the goal of protecting and maintaining enrolled devices, we process and copy data from these services to Microsoft Managed Desktop.  When we process data, we follow the documented directions you provide, as referenced in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft Managed Desktop’s processor duties include ensuring appropriate confidentiality, security, and resilience. Microsoft Managed Desktop employs additional privacy and security measures to ensure proper handling of personal identifiable data. 
 
 
 ## Microsoft Managed Desktop data storage and staff location
@@ -44,7 +44,7 @@ Microsoft Managed Desktop stores its data in the Azure data centers in the Unite
 
 Microsoft Managed Desktop Engineering Operations and Security Operations teams are located in the United States and India. 
 
-## Microsoft Windows 10 diagnostic data
+### Microsoft Windows 10 diagnostic data
 
 Microsoft Managed Desktop uses [Windows 10 Enhanced diagnostic data](/windows/privacy/windows-diagnostic-data) to keep Windows secure, up to date, troubleshoot problems, and make product improvements. The enhanced diagnostic data setting includes more detailed information about the devices enrolled in Microsoft Managed Desktop and their settings, capabilities, and device health. When enhanced diagnostic data is selected, data, including required diagnostic data, are collected. See [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection) for more information about the Windows 10 diagnostic data setting and data collection.
 
@@ -54,21 +54,21 @@ Microsoft Managed Desktop only processes and stores system-level data from Windo
 
 For more information about the diagnostic data collection of Microsoft Windows 10, see the [Where we store and process personal data](https://privacy.microsoft.com/privacystatement#mainwherewestoreandprocessdatamodule) section of the Microsoft Privacy Statement.
 
-## Microsoft Windows Update for Business
+### Microsoft Windows Update for Business
 Microsoft Windows Update for Business uses data from Windows diagnostics to analyze update status and failures. Microsoft Managed Desktop leverages this data and uses it to mitigate and resolve problems to ensure that all registered devices are up to date based on a predefined update cadence.
 
-## Microsoft Azure Active Directory
+### Microsoft Azure Active Directory
 Identifying data used by Microsoft Managed Desktop is stored by Azure Active Directory (Azure AD) in a geographical location based on the location provided by the organization when subscribing to Microsoft online services, such as Microsoft Apps for enterprise and Azure. Identifying data used by Microsoft Managed Desktop is stored by Azure AD in a geographical location based on the location provided by the organization when subscribing to Microsoft online services such as Microsoft Apps for enterprise and Azure. For more information on where your Azure AD data is located, see [Azure Active Directory - Where is your data located?](https://msit.powerbi.com/view?r=eyJrIjoiODdjOWViZDctMWRhZS00ODUzLWI4MmQtNWM5NjBkZTBkNjFlIiwidCI6IjcyZjk4OGJmLTg2ZjEtNDFhZi05MWFiLTJkN2NkMDExZGI0NyIsImMiOjV9)
 
-## Microsoft Intune
+### Microsoft Intune
 Microsoft Intune collects, processes, and shares data to Microsoft Managed Desktop to support business operations and services. See [Data collection in Intune](/mem/intune/protect/privacy-data-collect) for more information about the data collected in Intune. 
 
 For more information on Microsoft Intune data locations, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations). Intune respects the storage location selections made by the administrator for customer data.
 
-## Microsoft Defender for Endpoint
+### Microsoft Defender for Endpoint
 Microsoft Defender for Endpoint collects and stores information for devices enrolled in Microsoft Managed Desktop for administration, tracking, and reporting purposes. Information collected includes file data (such as file names, size, and hashes), process data (running processes, hashes), registry data, network connection data, and device details (such as device identifiers, device names, and the operating system version). See [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) for more information on Microsoft Defender for Endpoint’s data collection and storage locations. 
 
-## Microsoft 365 Apps for enterprise 
+### Microsoft 365 Apps for enterprise 
 Microsoft 365 Apps for enterprise collects and shares data with Microsoft Managed Desktop to ensure those apps are up to date with the latest version based on predefined update channels managed by Microsoft Managed Desktop. See [Microsoft Defender for Endpoint data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy#what-data-does-microsoft-defender-atp-collect) for more information on Microsoft 365 Apps's data collection and storage locations.
 
 ## Major data change notification
@@ -77,11 +77,10 @@ Microsoft Managed Desktop follows a change control process as outlined in our se
 ## Compliance
 Microsoft Managed Desktop has undergone external audits and obtained a comprehensive set of compliance offerings. You can find more information in Microsoft Managed Desktop [Compliance](/microsoft-365/managed-desktop/intro/compliance). Audit reports are available for download at the Microsoft [Service Trust Portal](https://aka.ms/stp), which serves as a central repository for Microsoft Enterprise Online Services. (Microsoft Managed Desktop is listed within these documents under the category “Monitoring and Management.”)
 
-## Data Subject Rights
-
+### Data subject requests
 Microsoft Managed Desktop follows GDPR and CCPA privacy regulations, which give data subjects specific rights to their personal data. These rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. For more information about Data Subject Requests (DSRs) generally, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
-To exercise Data Subject Rights (DSRs) on data collected by the Microsoft Managed Desktop case management system, see the following:
+To exercise data subject requests on data collected by the Microsoft Managed Desktop case management system, see the following:
 
 - Data from Microsoft Defender for Endpoint alerts: Your security administrator can request deletion or extraction of personal data related to Microsoft Defender for Endpoint alerts by submitting a report request at the [Admin Portal](https://aka.ms/memadmin). In the request, select request type **Change request**, category **Security**, and subcategory **Other**. Provide the relevant device names in the request description.
 - Data from Microsoft Managed Desktop support requests: Your IT administrator can request deletion or extraction of personal data related support requests by submitting a report request at the [Admin Portal](https://aka.ms/memadmin). In the request, select request type **Change request**, category **Security**, and subcategory **Other**. Provide the relevant device names or user names in the request description.

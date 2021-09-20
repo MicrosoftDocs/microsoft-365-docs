@@ -85,7 +85,7 @@ For information about audit records for MailItemsAccessed activities, see [Use A
 
 To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
-![Searching for MailItemsAccessed actions in the audit log search tool](../media/AdvAudit_MailItemsAccessed.png)
+![Searching for MailItemsAccessed actions in the audit log search tool.](../media/AdvAudit_MailItemsAccessed.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
@@ -103,7 +103,7 @@ Investigators can use the Send event to identify email sent from a compromised a
 
 To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
-![Searching for Sent message actions in the audit log search tool](../media/AdvAudit_SentMessage.png)
+![Searching for Sent message actions in the audit log search tool.](../media/AdvAudit_SentMessage.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
@@ -125,7 +125,7 @@ Investigators can use the SearchQueryInitiatedExchange event to determine if an 
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
-![Searching for Performed email search actions in the audit log search tool](../media/AdvAudit_SearchExchange.png)
+![Searching for Performed email search actions in the audit log search tool.](../media/AdvAudit_SearchExchange.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
@@ -148,7 +148,7 @@ Investigators can use the SearchQueryInitiatedSharePoint event to determine if a
 
 To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
-![Searching for Performed SharePoint search actions in the audit log search tool](../media/AdvAudit_SearchSharePoint.png)
+![Searching for Performed SharePoint search actions in the audit log search tool.](../media/AdvAudit_SearchSharePoint.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 

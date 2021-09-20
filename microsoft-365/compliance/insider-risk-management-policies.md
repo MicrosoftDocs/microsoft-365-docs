@@ -31,7 +31,7 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 - **Actions taken on alerts**: The total number of alerts that were confirmed or dismissed for the last 365 days.
 - **Policy alert effectiveness**: The percentage determined by total confirmed alerts divided by total actions taken on alerts (which is the sum of alerts that were confirmed or dismissed over the past year).
 
-![Insider risk management policy dashboard](../media/insider-risk-policy-dashboard.png)
+![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
 ## Policy recommendations from analytics (preview)
 
@@ -67,7 +67,7 @@ When creating or modifying DLP policies for use with insider risk management pol
 
 - Make sure the **Incident reports** rule setting in the DLP policy used for this insider risk management template is configured for *High* severity level alerts. The *High* severity level is the triggering events and insider risk management alerts won't be generated from rules in DLP policies with the **Incident reports** field set at *Low* or *Medium*.
 
-    ![DLP policy alert setting](../media/insider-risk-DLP-policy-high-severity.png)
+    ![DLP policy alert setting.](../media/insider-risk-DLP-policy-high-severity.png)
 
      > [!NOTE]
      > When creating a new DLP policy using the built-in templates, you'll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
@@ -178,13 +178,13 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks by disgruntled users
 
 > [!NOTE]
-> Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected.
+> Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.
 
 When cumulative exfiltration detection is enabled for data theft or data leak policies, insights from cumulative exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
 
 To learn more about the User activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity).
 
-## Policy health (preview)
+## Policy health
 
 The policy health status gives you insights into potential issues with your insider risk management policies. The Status column on the Policies tab can alert you to policies issues that may prevent user activity from being reported or why the number of activity alerts is unusual. The policy health status can also confirm that the policy is healthy and doesn't need attention or configuration changes.
 
@@ -203,7 +203,7 @@ To quickly view the health status for a policy, navigate the Policy tab and the 
 
 For more details about any recommendations or warnings, select a policy on the **Policy** tab to open the policy details card. More information about the recommendations and warnings, including guidance on how to address these issues, will be displayed in the Notifications section of the details card.
 
-![Insider risk management policy health](../media/insider-risk-policy-health.png)
+![Insider risk management policy health.](../media/insider-risk-policy-health.png)
 
 ### Notification messages
 
