@@ -41,7 +41,7 @@ There are some apps that stop functioning when an active VPN is detected. You ca
 
 By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
-While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN directly from the Defender for Endpoint app or by following the steps below:
+While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable the VPN directly from the Defender for Endpoint app or using the following steps:
 
 1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
 1. Click or tap the "i" button for Microsoft Defender for Endpoint.
@@ -101,5 +101,5 @@ For details about data collected and privacy, see [Privacy Information - Microso
 
 ## Issues during app updates from the app store
 
-If you observing issues during apps updates through the app store (either auto-updates or manual updates), a device restart might be required. If the device restart does not resolve the issue, you can disable the Defender VPN and perform the app update and also send us an in-app feedback to report this issue.
+If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
 
