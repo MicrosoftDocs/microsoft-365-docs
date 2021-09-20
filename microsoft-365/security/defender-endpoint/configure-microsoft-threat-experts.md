@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## Before you begin
 
@@ -48,15 +48,15 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 2. Click **Apply**.
 
-    ![Image of Microsoft Threat Experts settings](images/mte-collaboratewithmte.png)
+    ![Image of Microsoft Threat Experts settings.](images/mte-collaboratewithmte.png)
 
 3. Enter your name and email address so that Microsoft can get back to you on your application.
 
-    ![Image of Microsoft Threat Experts application](images/mte-apply.png)
+    ![Image of Microsoft Threat Experts application.](images/mte-apply.png)
 
 4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
 
-    ![Image of Microsoft Threat Experts application confirmation](images/mte-applicationconfirmation.png)
+    ![Image of Microsoft Threat Experts application confirmation.](images/mte-applicationconfirmation.png)
 
 When accepted, you will receive a welcome email and you will see the **Apply** button change to a toggle that is "on". In case you want to take yourself out of the Targeted Attack Notifications service, slide the toggle "off" and click **Save preferences** at the bottom of the page.
 
@@ -101,15 +101,15 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 
 2. From the upper right-hand menu, click the **?** icon. Then, select **Consult a threat expert**.
 
-    ![Image of Microsoft Threat Experts Experts on Demand from the menu](images/mte-eod-menu.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu.](images/mte-eod-menu.png)
 
     A flyout screen opens. The following screen shows when you are on a trial subscription.
 
-    ![Image of Microsoft Threat Experts Experts on Demand screen](images/mte-eod.png)
+    ![Image of Microsoft Threat Experts Experts on Demand screen.](images/mte-eod.png)
 
     The following screen shows when you are on a full Microsoft Threat Experts - Experts on-Demand subscription.
 
-    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen](images/mte-eod-fullsubscription.png)
+    ![Image of Microsoft Threat Experts Experts on Demand full subscription screen.](images/mte-eod-fullsubscription.png)
 
     The **Inquiry topic** field is pre-populated with the link to the relevant page for your investigation request. For example, a link to the incident, alert, or device details page that you were at when you made the request.
 
@@ -150,7 +150,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - I received a targeted attack notification from Microsoft Threat Experts. What data can you provide to us that we can pass on to our incident response team?
 
   > [!NOTE]
-  > Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, the experts can seamlessly transition the investigation to Microsoft Cybersecurity Solutions Group (CSG)'s  Detection and Response Team (DART) services, when necessary. You can also opt to engage with your own incident response team to address issues that requires an incident response.
+  > Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don’t have your own incident response team and would like Microsoft’s help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
 
 ## Scenario
 

@@ -27,7 +27,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -42,6 +42,12 @@ Returns information about all remediation activities.
 [Learn more about remediation activities](tvm-remediation.md).
 
 **URL:** GET: /api/remediationTasks
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```createdon``` and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Permissions
 
@@ -49,7 +55,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|RemediationTask.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|RemediationTasks.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account)|RemediationTask.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties
@@ -107,7 +113,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
             "requesterEmail": "user1@contoso.com",
             "status": "Active",
             "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
-            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ",
+            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
             "relatedComponent": "Microsoft Silverlight",
             "targetDevices": 18511,
             "rbacGroupNames": [

@@ -22,7 +22,7 @@ description: "Learn about settings interactions between Microsoft 365 Groups and
 
 Some settings for Microsoft 365 Groups and SharePoint in Microsoft 365, particularly related to sharing and group and team site creation, overlap with each other. This article provides descriptions of these interactions and best practices for how to work with these settings.
 
-![Venn diagram of SharePoint, Yammer, and groups features](../media/groups-sharepoint-venn.png)
+![Venn diagram of SharePoint, Yammer, and groups features.](../media/groups-sharepoint-venn.png)
 
 ## The effects of SharePoint settings on Microsoft 365 groups
 

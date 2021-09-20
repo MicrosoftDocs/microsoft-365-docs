@@ -18,13 +18,13 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-#  Microsoft Defender for Endpoint on Android - Privacy information
+# Microsoft Defender for Endpoint on Android - Privacy information
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint on Android collects information from your configured Android devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint for Android secure, up-to-date, performing as expected, and to support the service.
 
@@ -36,10 +36,7 @@ For more information on most common privacy questions about Microsoft Defender f
 
 ## Required Data
 
-Required data consists of data that is necessary to make Defender for Endpoint
-for Android work as expected. This data is essential to the operation of the
-service and can include data related to the end user, organization, device, and
-apps. Here's a list of the types of data being collected:
+Required data consists of data that is necessary to make Defender for Endpoint for Android work as expected. This data is essential to the operation of the service and can include data related to the end user, organization, device, and apps. Here's a list of the types of data being collected:
 
 ### App information
 
@@ -80,10 +77,7 @@ The following information is collected only for Microsoft Defender for Endpoint 
 
 ## Optional Data
 
-Optional data includes diagnostic data and feedback data. Optional diagnostic
-data is additional data that helps us make product improvements and provides
-enhanced information to help us detect, diagnose, and fix issues. Optional
-diagnostic data includes:
+Optional data includes diagnostic data and feedback data. Optional diagnostic data is additional data that helps us make product improvements and provides enhanced information to help us detect, diagnose, and fix issues. Optional diagnostic data includes:
 
 - App, CPU, and network usage.
 - State of the device from the app perspective, including scan status, scan timings, app permissions granted, and upgrade status.

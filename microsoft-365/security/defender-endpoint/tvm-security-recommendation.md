@@ -29,7 +29,7 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
@@ -85,9 +85,9 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 Useful icons also quickly call your attention to:
 
-- ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
-- ![red bug](images/tvm_bug_icon.png) associated public exploits
-- ![light bulb](images/tvm_insight_icon.png) recommendation insights
+- ![arrow hitting a target.](images/tvm_alert_icon.png) possible active alerts
+- ![red bug.](images/tvm_bug_icon.png) associated public exploits
+- ![light bulb.](images/tvm_insight_icon.png) recommendation insights
 
 ### Explore security recommendation options
 

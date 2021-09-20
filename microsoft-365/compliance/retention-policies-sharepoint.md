@@ -78,7 +78,7 @@ After retention settings are assigned to content in a OneDrive account or ShareP
 
 When the retention settings are to retain and delete:
 
-![Diagram of content lifecycle in SharePoint and OneDrive](../media/Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagram of content lifecycle in SharePoint and OneDrive.](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 1. **If the content is modified or deleted** during the retention period, a copy of the original content as it existed when the retention settings were assigned is created in the Preservation Hold library. There, the timer job identifies items whose retention period has expired. Those items are moved to the second-stage Recycle Bin, where they're permanently deleted at the end of 93 days. The second-stage Recycle Bin is not visible to end users (only the first-stage Recycle Bin is), but site collection admins can view and restore content from there.
 

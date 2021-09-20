@@ -31,7 +31,7 @@ ms.technology: mde
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configserver-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
 Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console.
 
@@ -50,7 +50,8 @@ You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows 
 After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2). For more information, see [Supported features available in Azure Defender](/azure/security-center/security-center-services). 
+> Unlike user licenses, these licenses are not to be assigned to any user or object. They are required to be in the tenant for compliance.
 
 ### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
 
@@ -65,8 +66,6 @@ In general, you'll need to take the following steps:
   3. Install and configure MMA for the server to report sensor data to Defender for Endpoint.
   4. Configure and update System Center Endpoint Protection clients.
 
-> [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 #### Before you begin
 
@@ -94,7 +93,7 @@ For Windows Server 2008 R2 SP1 and Windows Server 2012 R2: [Configure and update
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603).
 
 2. Using the Workspace ID and Workspace key obtained in the previous procedure, choose any of the following installation methods to install the agent on the Windows server:
-    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). 
+    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
     On the **Agent Setup Options** page, choose **Connect the agent to Azure Log Analytics (OMS)**.
     - [Install the agent using the command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure the agent using a script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
@@ -115,7 +114,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ### Option 2: Onboard Windows servers through Azure Security Center
 
-In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+In the Microsoft 365 Defender navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
 1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system.
 
@@ -172,7 +171,7 @@ Support for Windows Server provides deeper insight into server activities, cover
 
     1. Confirm  that a recent event containing the passive mode event is found:
 
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+       ![Image of passive mode verification result.](images/atp-verify-passive-mode.png)
 
 3. Run the following command to check if Microsoft Defender AV is installed:
 
@@ -195,9 +194,9 @@ The following capabilities are included in this integration:
     > [!NOTE]
     > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
-- Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers.  In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
+- Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers. In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
 
-- Server investigation -  Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
+- Server investigation - Azure Defender customers can access Microsoft 365 Defender to perform detailed investigation to uncover the scope of a potential breach.
 
 > [!IMPORTANT]
 >
@@ -217,6 +216,10 @@ The following steps are required to enable this integration:
 - Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie).
 
 - [Configure the SCEP client Cloud Protection Service membership](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) to the **Advanced** setting.
+
+## Run a detection test to verify onboarding
+
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard Windows servers
 
@@ -253,17 +256,17 @@ To offboard the Windows server, you can use either of the following methods:
 
 2. Select the Defender for Endpoint workspace, and click **Remove**.
 
-    ![Image of Microsoft Monitoring Agent Properties](images/atp-mma.png)
+    ![Image of Microsoft Monitoring Agent Properties.](images/atp-mma.png)
 
 #### Run a PowerShell command to remove the configuration
 
 1. Get your Workspace ID:
 
-   1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+   1. In the Microsoft 365 Defender navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
    1. Select **Windows Server 2008 R2 SP1, 2012 R2 and 2016** as the operating system and get your Workspace ID:
 
-      ![Image of Windows server onboarding](images/atp-server-offboarding-workspaceid.png)
+      ![Image of Windows server onboarding.](images/atp-server-offboarding-workspaceid.png)
 
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
@@ -301,9 +304,9 @@ To offboard the Windows server, you can use either of the following methods:
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 ```dos
-@echo off 
+@echo off
 cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (
 exit
 ) ELSE (
 wusa.exe c:\Windows\MMA\Windows6.1-KB123456-x86.msu /quiet /norestart
@@ -320,29 +323,29 @@ Create a new group policy specifically for onboarding devices such as "Microsoft
 
 - Create a Group Policy Folder named "c:\windows\MMA"
 
-     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders":::
+     :::image type="content" source="images/grppolicyconfig1.png" alt-text="folders.":::
 
     **This will add a new folder on every server that gets the GPO applied, called MMA, and will be stored in c:\windows. This will contain the installation files for the MMA, prerequisites, and install script.**
 
 - Create a Group Policy Files preference for each of the files stored in Net logon.
 
-     :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1":::
+     :::image type="content" source="images/grppolicyconfig2.png" alt-text="group policy image1.":::
 
 It copies the files from DOMAIN\NETLOGON\MMA\filename to
 C:\windows\MMA\filename - **so the installation files are local to the server**:
 
-:::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd":::
+:::image type="content" source="images/deploymma.png" alt-text="deploy mma cmd.":::
 
 For the two KBs (one for Windows Server 2008R2/Windows 7 and the other for Windows Server 2012 R2) repeat the process but create item level targeting on the COMMON tab, so the file only gets copied to the appropriate platform/Operating system version in scope:
 
-:::image type="content" source="images/targeteditor.png" alt-text="target editor":::
+:::image type="content" source="images/targeteditor.png" alt-text="target editor.":::
 
 - For Windows Server 2008 R2 you need (and it will only copy down) Windows6.1-BJ3080149-x64.msu
 - For Windows Server 2012 R2 you need (and it will only copy down) Windows8.1-BJ3080149-x64.msu
 
 Once this is done, you'll need to create a start-up script policy:
 
-:::image type="content" source="images/startupprops.png" alt-text="start up properties":::
+:::image type="content" source="images/startupprops.png" alt-text="start up properties.":::
 
 The name of the file to run here is c:\windows\MMA\DeployMMA.cmd.
 Once the server is restarted as part of the start-up process it will install the Update for customer experience and diagnostic telemetry KB, and then install the MMA Agent, while setting the Workspace ID and Key, and the server will be onboarded.
@@ -352,20 +355,20 @@ This could be done in two phases. First create **the files and the folder in** G
 
 As the Script has an exit method and wont re-run if the MMA is installed, you could also use a daily scheduled task to achieve the same result. Similar to a Configuration Manager compliance policy it will check daily to ensure the MMA is present.
 
-:::image type="content" source="images/schtask.png" alt-text="schedule task":::
+:::image type="content" source="images/schtask.png" alt-text="schedule task.":::
 
-:::image type="content" source="images/newtaskprops.png" alt-text="new task properties":::
+:::image type="content" source="images/newtaskprops.png" alt-text="new task properties.":::
 
-:::image type="content" source="images/deploymmadowmload.png" alt-text="deploy mma download props":::
+:::image type="content" source="images/deploymmadowmload.png" alt-text="deploy mma download props.":::
 
-:::image type="content" source="images/tasksch.png" alt-text="task scheduler":::
+:::image type="content" source="images/tasksch.png" alt-text="task scheduler.":::
 
 As mentioned in the onboarding documentation for Server specifically around Server 2008 R2 please see below:
 
 For Windows Server 2008 R2 PS1, ensure that you fulfill the following requirements:
 
 - Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2

@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
 
-![Email & collaboration reports page in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
+![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-reports.png)
 
 > [!NOTE]
 >
@@ -59,7 +59,7 @@ Client side and network latency are not included.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
 
-![Mail latency report widget on the Email & collaboration reports page](../../media/mail-latency-report-widget.png)
+![Mail latency report widget on the Email & collaboration reports page.](../../media/mail-latency-report-widget.png)
 
 On the **Mail latency report** page, the following tabs are available on the **Mail latency report** page:
 
@@ -74,7 +74,7 @@ Regardless of the tab you select, the chart shows messages organized into the fo
 
 When you hover over a category in the chart, you can see a breakdown of the latency in each category.
 
-![50th percentiles view of the Mail latency report](../../media/mail-latency-report-50th-percentile-view.png)
+![50th percentiles view of the Mail latency report.](../../media/mail-latency-report-50th-percentile-view.png)
 
 If you click **Filter**, you can filter both the chart and the details table by the following values:
 
@@ -103,7 +103,7 @@ The **URL threat protection report** provides summary and trend views for threat
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![URL protection report widget on the Email & collaboration reports page](../../media/url-protection-report-widget.png)
+![URL protection report widget on the Email & collaboration reports page.](../../media/url-protection-report-widget.png)
 
 The available views on the **URL threat protection** report page are described in the following sections.
 
@@ -112,7 +112,7 @@ The available views on the **URL threat protection** report page are described i
 
 ### View data by URL click protection action
 
-![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![URL click protection action view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
@@ -146,7 +146,7 @@ The details table below the chart provides the following near-real-time view of 
 
 ### View data by URL click by application
 
-![URL click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![URL click by application view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
@@ -228,4 +228,4 @@ If you are not seeing data in your Defender for Office 365 reports, double-check
 
 [Smart reports and insights in the Microsoft 365 Defender portal](reports-and-insights-in-security-and-compliance.md)
 
-[Role permissions (Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)

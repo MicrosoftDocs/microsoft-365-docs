@@ -36,9 +36,9 @@ To set a geo location into SPO mode, connect to the geo location you want to set
 1.    Open your SharePoint Online Management Shell 
 2.    Connect-SPOService -URL "https://$tenantGeo-admin.sharepoint.com" -Credential $credential
 3.    Set-SPOMultiGeoExperience</br></br>
-![Set-SPOMultiGeoExperience](../media/Set-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Set-SPO-MultiGeo.jpg)
 4.    This operation usually takes about an hour while we perform various publish backs in the service and re-stamp your tenant. After at least 1 hour, please perform a Get-SPOMultiGeoExperience.  This will show you whether this geo location is in SPO mode.</br></br>
-![Set-SPOMultiGeoExperience](../media/Get-SPO-MultiGeo.jpg)
+![Set-SPOMultiGeoExperience.](../media/Get-SPO-MultiGeo.jpg)
 
  
  

@@ -6,14 +6,13 @@
 |AZURE ADMIN|N/A|N/A|N/A|N/A|N/A|
 |COMPANY PORTAL|✔|✔|✔|N/A|✔|
 |CORTANA|N/A|N/A|N/A|N/A|✔|
-|DELVE|✔|✔|N/A|N/A|N/A|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|
 |KAIZALA|✔|✔|N/A|N/A|N/A|
 |MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
 |OFFICE 365 ADMIN|✔|N/A|N/A|N/A|N/A|
-|OFFICE LENS|✔|✔|N/A|N/A|✔|
+|OFFICE LENS|✔|✔|N/A|N/A|N/A|
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
 |ONEDRIVE|✔|✔|✔|✔|✔|

@@ -24,7 +24,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -33,6 +33,13 @@ ms.custom: api
 ## API description
 Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).
 
+> [!IMPORTANT]
+>
+> - These actions are only available for devices on Windows 10, version  1703 or later.
+
+## Limitations
+
+Rate limitations for this API are 2 calls per minute and 120 calls per hour. 
 
 ## Permissions
 
@@ -40,7 +47,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Machine.CollectForensics|'Collect forensics'
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
 Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 
 > [!NOTE]
@@ -67,7 +75,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a very short time and should be used immediately for downloading the package to a local storage.
+If successful, this method returns 200, Ok response code with object that holds the link to the package in the "value" parameter. This link is valid for a very short time and should be used immediately for downloading the package to a local storage. If the machine action for the collection exists but is not complete, this returns 404 Not Found.
 
 ## Example
 

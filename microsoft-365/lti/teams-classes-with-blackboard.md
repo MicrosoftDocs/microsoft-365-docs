@@ -56,7 +56,7 @@ The Microsoft Teams classes integration is available for **Ultra Course View cou
 
 - Have Blackboard Learn Ultra Learn SaaS with Ultra Base Navigation enabled
 
-  ![an example of the feature is enabled in courses](media/feature-availability.png)
+  ![an example of the feature is enabled in courses.](media/feature-availability.png)
 
 - Enable LTI for use in courses.
 
@@ -157,7 +157,7 @@ If you choose to approve the Blackboard Learn Ultra Teams Classes Azure app befo
 
 You'll see a permissions window that explains you're giving permission to Blackboard Learn Ultra to access Microsoft Teams.
 
-![the permissions window for Microsoft and Blackboard](media/permissions1.png)
+![the permissions window for Microsoft and Blackboard.](media/permissions1.png)
 
 ### After Configuring the LTI Applications
 
@@ -174,5 +174,3 @@ You'll see a permissions window that explains you're giving permission to Blackb
    - If consent hasn’t been approved, follow the steps described to generate the URL for consent and send it to the Microsoft 365 Global Admin for approval.
 
 5. Once you've confirmation of approval, select **Retry** to confirm, and then select **Submit**.
-
-   ![A dialog that indicates your access has been blocked](media/blocked-access.png)

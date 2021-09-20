@@ -41,7 +41,7 @@ In the snapshot below, there are two OS releases against which the CPU utilizati
 Customers can now use the functionality to determine if their application's CPU utilization is impacted by OS updates and specifically which processes have regressed from their previous execution.
 
 
-![CPU regression analysis](Media/cpu-regression-analysis.jpg)
+![CPU regression analysis.](Media/cpu-regression-analysis.jpg)
 
 ### Relevant Process Identification ###
 

@@ -1,6 +1,6 @@
 ---
 title: Create an Application to access Microsoft Defender for Endpoint without a user
-ms.reviewer: 
+ms.reviewer:
 description: Learn how to design a web app to get programmatic access to  Microsoft Defender for Endpoint without a user.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -26,7 +26,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -34,10 +34,10 @@ ms.custom: api
 
 This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
-
 Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you'll need to take the following steps to use the APIs:
+
 - Create a **multi-tenant** Azure AD application.
 - Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
@@ -49,9 +49,9 @@ The following steps will guide you how to create an Azure AD application, get an
 
 1. Sign in to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form:
 
@@ -61,53 +61,50 @@ The following steps will guide you how to create an Azure AD application, get an
 
    - Redirect URI - type: Web, URI: https://portal.azure.com
 
-   ![Image of Microsoft Azure partner application registration](images/atp-api-new-app-partner.png)
-
+   ![Image of Microsoft Azure partner application registration.](images/atp-api-new-app-partner.png)
 
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it with the minimal set of permissions required to complete the integration.
 
-   - On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
+   - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
 
    - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission](images/add-permission.png)
-   
-   ### Request API permissions
+     ![add permission.](images/add-permission.png)
 
-   To determine which permission you need, review the **Permissions** section in the API you are interested to call. For instance:
+### Request API permissions
 
-   - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-   
-   - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
+To determine which permission you need, review the **Permissions** section in the API you are interested to call. For instance:
 
-   In the following example we will use **'Read all alerts'** permission:
+- To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
+- To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
 
-   Choose **Application permissions** > **Alert.Read.All** > select on **Add permissions**
+In the following example we will use **'Read all alerts'** permission:
 
-   ![app permissions](images/application-permissions.png)
+1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
+   ![app permissions.](images/application-permissions.png)
 
-5. Select **Grant consent**
+2. Select **Grant consent**
 
    - **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions](images/grant-consent.png)
+   ![Image of Grant permissions.](images/grant-consent.png)
 
-6. Add a secret to the application.
+3. Add a secret to the application.
 
    - Select **Certificates & secrets**, add description to the secret and select **Add**.
 
     **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
-7. Write down your application ID:
+4. Write down your application ID:
 
    - On your application page, go to **Overview** and copy the following information:
 
-   ![Image of created app id](images/app-id.png)
+   ![Image of created app id.](images/app-id.png)
 
-8. Add the application to your customer's tenant.
+5. Add the application to your customer's tenant.
 
    You need your application to be approved in each customer tenant where you intend to use it. This is because your application interacts with Microsoft Defender for Endpoint application on behalf of your customer.
 
@@ -123,12 +120,11 @@ The following steps will guide you how to create an Azure AD application, get an
 
    After clicking on the consent link, sign in with the Global Administrator of the customer's tenant and consent the application.
 
-   ![Image of consent](images/app-consent-partner.png)
+   ![Image of consent.](images/app-consent-partner.png)
 
    In addition, you will need to ask your customer for their tenant ID and save it for future use when acquiring the token.
 
-- **Done!** You have successfully registered an application!
-- See examples below for token acquisition and validation.
+6. **Done!** You have successfully registered an application! See examples below for token acquisition and validation.
 
 ## Get an access token example
 
@@ -177,7 +173,7 @@ return $token
     ```console
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
 
     const string authority = "https://login.microsoftonline.com";
     const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
@@ -222,7 +218,7 @@ Sanity check to make sure you got a correct token:
 - In the screenshot below, you can see a decoded token acquired from an Application with multiple permissions to  Microsoft Defender for Endpoint:
 - The "tid" claim is the tenant ID the token belongs to.
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation.](images/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

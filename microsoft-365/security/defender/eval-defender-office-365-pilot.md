@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment, promote the evaluation to live in production, learn how to evaluate Defender 
+title: Pilot Microsoft Defender for Office 365, use the evaluation in your production environment 
 description: Steps to pilot your Evaluation with groups of active and existing users in order to properly test the features of Microsoft Defender for Office 365.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -31,7 +31,7 @@ This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
 
-![Steps for creating the pilot for Microsoft Defender for Office 365](../../media/defender/m365-defender-office-pilot.png)
+![Steps for creating the pilot for Microsoft Defender for Office 365.](../../media/defender/m365-defender-office-pilot.png)
 
 - [Step 1: Create pilot groups](#step-1-create-pilot-groups)
 - [Step 2: Configure protection](#step-2-configure-protection)
@@ -90,7 +90,7 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 3. On the Policy & Rules dashboard, click *Threat Policies*.
 
-:::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a":::
+:::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a.":::
 
 4. From the Microsoft 365 Defender portal, expand Threat Management from the navigation menu and then select Policy from the submenu.
 5. On the Policy dashboard, click *Preset security policies*.

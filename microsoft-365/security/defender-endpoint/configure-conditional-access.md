@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 This section guides you through all the steps you need to take to properly implement Conditional Access.
 
@@ -63,21 +63,21 @@ Take the following steps to enable Conditional Access:
 
 ### Step 1: Turn on the Microsoft Intune connection
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Advanced features** > **Microsoft Intune connection**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced features** \> **Microsoft Intune connection**.
 2. Toggle the Microsoft Intune setting to **On**.
 3. Click **Save preferences**.
 
 ### Step 2: Turn on the Defender for Endpoint integration in Intune
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Device compliance** > **Microsoft Defender ATP**.
+2. Select **Device compliance** \> **Microsoft Defender ATP**.
 3. Set **Connect Windows 10.0.15063+ devices to Microsoft Defender Advanced Threat Protection** to **On**.
 4. Click **Save**.
 
 ### Step 3: Create the compliance policy in Intune
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Select **Device compliance** > **Policies** > **Create policy**.
+2. Select **Device compliance** \> **Policies** \> **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
 5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
@@ -92,23 +92,23 @@ Take the following steps to enable Conditional Access:
 ### Step 4: Assign the policy
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Select **Device compliance** > **Policies**> select your Microsoft Defender for Endpoint compliance policy.
+2. Select **Device compliance** \> **Policies**> select your Microsoft Defender for Endpoint compliance policy.
 3. Select **Assignments**.
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
 ### Step 5: Create an Azure AD Conditional Access policy
 
-1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** > **Conditional Access** > **New policy**.
+1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** \> **Conditional Access** \> **New policy**.
 2. Enter a policy **Name**, and select **Users and groups**. Use the Include or Exclude options to add your groups for the policy, and select **Done**.
 3. Select **Cloud apps**, and choose which apps to protect. For example, choose **Select apps**, and select **Office 365 SharePoint Online** and **Office 365 Exchange Online**. Select **Done** to save your changes.
 
-4. Select **Conditions** > **Client apps** to apply the policy to apps and browsers. For example, select **Yes**, and then enable **Browser** and **Mobile apps and desktop clients**. Select **Done** to save your changes.
+4. Select **Conditions** \> **Client apps** to apply the policy to apps and browsers. For example, select **Yes**, and then enable **Browser** and **Mobile apps and desktop clients**. Select **Done** to save your changes.
 
-5. Select **Grant** to apply Conditional Access based on device compliance. For example, select **Grant access** > **Require device to be marked as compliant**. Choose **Select** to save your changes.
+5. Select **Grant** to apply Conditional Access based on device compliance. For example, select **Grant access** \> **Require device to be marked as compliant**. Choose **Select** to save your changes.
 
 6. Select **Enable policy**, and then **Create** to save your changes.
 
 For more information, see [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)

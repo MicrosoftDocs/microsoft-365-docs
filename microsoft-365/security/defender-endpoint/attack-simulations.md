@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-abovefoldlink)
 
 > [!TIP]
 >
@@ -45,21 +45,21 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Endpoints** > **Evaluation & tutorials** > **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
+1. In **Endpoints** \> **Evaluation & tutorials** \> **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
    - **Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and device learning detection of malicious memory activity.
    - **Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** > **Tutorials & simulations**. You can choose to download the file or script on the test device but it's not mandatory.
+3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** \> **Tutorials & simulations**. You can choose to download the file or script on the test device but it's not mandatory.
 
 4. Run the simulation file or script on the test device as instructed in the walkthrough document.
 
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 >
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-attacksimulations-belowfoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-attacksimulations-belowfoldlink)
 
 ## Related topics
 

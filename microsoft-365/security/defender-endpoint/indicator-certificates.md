@@ -1,6 +1,6 @@
 ---
 title: Create indicators based on certificates
-ms.reviewer: 
+ms.reviewer:
 description: Create indicators based on certificates that define the detection, prevention, and exclusion of entities.
 keywords: ioc, certificate, certificates, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
 search.product: eADQiWindows 10XVcnh
@@ -47,9 +47,9 @@ It's important to understand the following requirements prior to creating indica
 
 > [!IMPORTANT]
 >
-> - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft.  Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
->- The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.
->- Microsoft signed certificates cannot be blocked.
+> - A valid leaf certificate is a signing certificate that has a valid certification path and must be chained to the Root Certificate Authority (CA) trusted by Microsoft. Alternatively, a custom (self-signed) certificate can be used as long as it's trusted by the client (Root CA certificate is installed under the Local Machine 'Trusted Root Certification Authorities').
+> - The children or parent of the allow/block certificate IOCs are not included in the allow/block IoC functionality, only leaf certificates are supported.
+> - Microsoft signed certificates cannot be blocked.
 
 ## Create an indicator for certificates from the settings page:
 

@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Learn about common commands used in live response and see examples on how they are typically used.
 
@@ -100,7 +100,7 @@ getfile c:\Users\user\Desktop\work.txt
 getfile c:\Users\user\Desktop\work.txt -auto
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > The following file types **cannot** be downloaded using this command from within Live Response:
 >
@@ -206,7 +206,7 @@ run script.ps1
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
 
->[!NOTE]
+> [!NOTE]
 >
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).

@@ -50,9 +50,9 @@ For more information about the different permissions you can give to users in th
 
 1. Open the Security & Compliance Center at <https://protection.office.com> and then go to **Permissions**. To go directly to the **Permissions** tab, open <https://protection.office.com/permissions>.
 
-2. From the list of role groups, choose the role group, and then click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
+2. From the list of role groups, choose the role group, and then click **Edit** ![Edit icon.](../../media/O365-MDM-CreatePolicy-EditIcon.gif).
 
-3. In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
+3. In the role group's properties page under **Members**, click **Add**![Add Icon.](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.
 
 4. When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.
 

@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## Overview
 
@@ -35,7 +35,7 @@ Today's threat landscape is overrun by [fileless malware](/windows/security/thre
 
 Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Behavioral blocking and containment.":::
 
 Behavioral blocking and containment capabilities work with multiple components and features of Defender for Endpoint to stop attacks immediately and prevent attacks from progressing.
 
@@ -49,7 +49,7 @@ With these capabilities, more threats can be prevented or blocked, even if they 
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" alt-text="Example of an alert through behavioral blocking and containment" source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
+:::image type="content" alt-text="Example of an alert through behavioral blocking and containment." source="images/blocked-behav-alert.png" lightbox="images/blocked-behav-alert.png":::
 
 ## Components of behavioral blocking and containment
 
@@ -92,7 +92,7 @@ Behavior-based device learning models in Defender for Endpoint caught and stoppe
 
 While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft 365 Defender portal":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Initial access alert in the Microsoft 365 Defender portal.":::
 
 This example shows how behavior-based device learning models in the cloud add new layers of protection against attacks, even after they have started running.
 
@@ -100,13 +100,13 @@ This example shows how behavior-based device learning models in the cloud add ne
 
 As described in the recent blog post, [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection), in January 2020, Defender for Endpoint detected a privilege escalation activity on a device in an organization. An alert called "Possible privilege escalation using NTLM relay" was triggered.
 
-:::image type="content" alt-text="NTLM alert for Juicy Potato malware" source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
+:::image type="content" alt-text="NTLM alert for Juicy Potato malware." source="images/NTLMalertjuicypotato.png" lightbox="images/NTLMalertjuicypotato.png":::
 
 The threat turned out to be malware; it was a new, not-seen-before variant of a notorious hacking tool called Juicy Potato, which is used by attackers to get privilege escalation on a device.
 
 Minutes after the alert was triggered, the file was analyzed, and confirmed to be malicious. Its process was stopped and blocked, as shown in the following image:
 
-:::image type="content" alt-text="Artifact blocked" source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
+:::image type="content" alt-text="Artifact blocked." source="images/Artifactblockedjuicypotato.png" lightbox="images/Artifactblockedjuicypotato.png":::
 
 A few minutes after the artifact was blocked, multiple instances of the same file were blocked on the same device, preventing more attackers or other malware from deploying on the device.
 

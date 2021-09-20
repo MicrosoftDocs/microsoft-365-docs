@@ -27,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic provides troubleshooting information to help you address issues that may arise as you use Microsoft Defender for Endpoint on iOS.
 
@@ -41,17 +41,17 @@ There are some apps that stop functioning when an active VPN is detected. You ca
 
 By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
-While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
+While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable the VPN directly from the Defender for Endpoint app or using the following steps:
 
 1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
 1. Click or tap the "i" button for Microsoft Defender for Endpoint.
 1. Toggle off **Connect On Demand** to disable VPN.
 
     > [!div class="mx-imgBorder"]
-    > ![VPN config connect on demand](images/ios-vpn-config.png)
+    > ![VPN config connect on demand.](images/ios-vpn-config.png)
 
 > [!NOTE]
-> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
+> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and Enable Web Protection.
 
 ## Co-existence with multiple VPN profiles
 
@@ -77,7 +77,7 @@ In addition, it is critical for Microsoft Defender for Endpoint to be up to date
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
+Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/support/report-unsafe-site) page to report a website that could be a phishing site.
 
 ## Malicious site detected
 
@@ -86,9 +86,20 @@ Microsoft Defender for Endpoint protects you against phishing or other web-based
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
 > [!div class="mx-imgBorder"]
-> ![Image of site reported as unsafe notification](images/ios-phish-alert.png)
+> ![Image of site reported as unsafe notification.](images/ios-phish-alert.png)
+
+## Device not seen on the Defender for Endpoint console after onboarding.
+
+After onboarding, it takes few hours for device to show up in the Device inventory in the Defender for Endpoint security console. Also, ensure that device is registered correctly with Azure Active Directory and device has internet connectivity. For successful onboarding, the device has to be registered via Microsoft Authenticator or Intune Company Portal and the user needs to sign-in using the same account with which device is registered with Azure AD.
+
+> [!NOTE]
+> Sometimes, the device name is not consistent with that in Microsoft Endpoint Manager (Intune) console. The device name in Defender for Endpoint console is of the format <username_iPhone/iPad model>. You can also use Azure AD device ID to identify the device in the Defender for Endpoint console.
 
 ## Data and Privacy
 
 For details about data collected and privacy, see [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## Issues during app updates from the app store
+
+If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
 

@@ -30,7 +30,7 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 ## Use advanced hunting to find devices with vulnerabilities
 
@@ -58,16 +58,19 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ```kusto
 // Search for devices with High active alerts or Critical CVE public exploit
-DeviceTvmSoftwareVulnerabilities
+let DeviceWithHighAlerts = AlertInfo
+| where Severity == "High"
+| project Timestamp, AlertId, Title, ServiceSource, Severity
+| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
 | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
 | where IsExploitAvailable == 1 and CvssScore >= 7
 | summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId
-| join kind =inner(DeviceAlertEvents) on DeviceId  
-| summarize NumOfVulnerabilities=any(NumOfVulnerabilities),
-DeviceName=any(DeviceName) by DeviceId, AlertId
-| project DeviceName, NumOfVulnerabilities, AlertId  
-| order by NumOfVulnerabilities desc
+DeviceName=any(DeviceName) by DeviceId;
+DeviceWithCriticalCve
+| join kind=inner DeviceWithHighAlerts on DeviceId
+| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
 ```
 
 ## Related topics

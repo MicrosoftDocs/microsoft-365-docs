@@ -67,11 +67,11 @@ The left navigation, or quick launch bar, will look familiar. However, there are
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image of Microsoft 365 Defender converged experience":::
+:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Image of Microsoft 365 Defender converged experience.":::
 
 Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image of Defender for Office 365":::
+:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Image of Defender for Office 365.":::
 
 ### Incidents and alerts
 
@@ -80,7 +80,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![The Alerts and Actions quick launch bar](../../media/converge-1-alerts-and-actions.png)
+![The Alerts and Actions quick launch bar.](../../media/converge-1-alerts-and-actions.png)
 
 ### Hunting
 

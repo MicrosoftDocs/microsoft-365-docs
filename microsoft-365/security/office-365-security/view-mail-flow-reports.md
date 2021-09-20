@@ -38,7 +38,7 @@ In addition to the mail flow reports that are available in the [Mail flow dashbo
 
 If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://protection.office.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.
 
-![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![Reports dashboard in the Security & Compliance Center.](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## Connector report
 
@@ -46,7 +46,7 @@ The **Connector report** shows mail flow activity on the [inbound and outbound c
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Connector report**. To go directly to the report, open <https://protection.office.com/reportv2?id=ConnectorReport>.
 
-![Connector report widget in the Reports dashboard](../../media/connector-report-widget.png)
+![Connector report widget in the Reports dashboard.](../../media/connector-report-widget.png)
 
 ### Report view for the Connector report
 
@@ -61,7 +61,7 @@ The following charts are available in report view:
 
   To isolate the data in the chart, use the **Show data for** control to select one of these options or **All mail flow**.
 
-  ![View data by mail flow in the Connector report](../../media/connector-report-view-data-by-mail-flow.png)
+  ![View data by mail flow in the Connector report.](../../media/connector-report-view-data-by-mail-flow.png)
 
 - **View data by: TLS usage**: This chart shows the percentage of Transport Layer Security (TLS) version usage for mail flow.
 
@@ -72,7 +72,7 @@ The following charts are available in report view:
   - **To the internet without a connector**
   - A specific connector that you've configured.
 
-  ![View data by TLS usage in the Connector report](../../media/connector-report-view-data-by-tls-usage.png)
+  ![View data by TLS usage in the Connector report.](../../media/connector-report-view-data-by-tls-usage.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
@@ -100,7 +100,7 @@ The **Exchange transport rule report** shows the effect of mail flow rules (also
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://protection.office.com/reportv2?id=ETRRuleReport>.
 
-![Exchange transport rule widget in the Reports dashboard](../../media/transport-rule-report-widget.png)
+![Exchange transport rule widget in the Reports dashboard.](../../media/transport-rule-report-widget.png)
 
 ### Report view for the Exchange transport rule report
 
@@ -128,7 +128,7 @@ If you click **Filters** in a report view, you can modify the results with the f
 - Direction values
 - Severity values
 
-![Report view in the Exchange transport rule report](../../media/transport-rule-report-report-view.png)
+![Report view in the Exchange transport rule report.](../../media/transport-rule-report-report-view.png)
 
 ### Details table view for the Exchange transport rule report
 
@@ -169,7 +169,7 @@ The **Forwarding report** shows your organization's automatically forwarded mess
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Forwarding report**. To go directly to the report, open <https://protection.office.com/reportv2?id=MailFlowForwarding>.
 
-![Forwarding report widget in the Reports dashboard](../../media/forwarding-report-widget.png)
+![Forwarding report widget in the Reports dashboard.](../../media/forwarding-report-widget.png)
 
 ### Report view for the Forwarding report
 
@@ -180,18 +180,18 @@ The following charts are available in the report view:
   - **Transport rule**: Also known as [mail flow rules](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
   - **Mailbox rule**: Also known as [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
 
-  ![Forwarding methods view in the Forwarding report](../../media/forwarding-report-forwarding-methods.png)
+  ![Forwarding methods view in the Forwarding report.](../../media/forwarding-report-forwarding-methods.png)
 
 - **Show data for: Forwarding domains**: This view shows the recipient domains that are the destinations for forwarding.
 
-  ![Forwarding domains view in the Forwarding report](../../media/forwarding-report-forwarding-domains.png)
+  ![Forwarding domains view in the Forwarding report.](../../media/forwarding-report-forwarding-domains.png)
 
 - **Show data for: Forwarders**: The following forwarders are shown:
 
   - **Transport rule**
   - The mailbox that contains the forwarding Inbox rule.
 
-  ![Forwarders view in the Forwarding report](../../media/forwarding-report-forwarders.png)
+  ![Forwarders view in the Forwarding report.](../../media/forwarding-report-forwarders.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
@@ -216,7 +216,7 @@ To go back to the reports view, click **View report**.
 The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
 
-![Mailflow status report widget in the Reports dashboard](../../media/mail-flow-status-report-widget.png)
+![Mailflow status report widget in the Reports dashboard.](../../media/mail-flow-status-report-widget.png)
 
 ### Type view for the Mailflow status report
 
@@ -265,7 +265,7 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Type view in the Mailflow status report](../../media/mail-flow-status-report-type-view.png)
+![Type view in the Mailflow status report.](../../media/mail-flow-status-report-type-view.png)
 
 ### Direction view for the Mailflow status report
 
@@ -285,7 +285,7 @@ For the detail view, you can only export data for one day. So, if you want to ex
 
 Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
 
-![Direction view in the Mailflow status report](../../media/mail-flow-status-report-direction-view.png)
+![Direction view in the Mailflow status report.](../../media/mail-flow-status-report-direction-view.png)
 
 ### Funnel view for the Mailflow status report
 
@@ -355,7 +355,7 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
- ![Funnel view in the Mailflow status report](../../media/mail-flow-status-report-funnel-view.png)
+ ![Funnel view in the Mailflow status report.](../../media/mail-flow-status-report-funnel-view.png)
 
 ### Tech view for the Mailflow status report
 
@@ -416,7 +416,7 @@ Under **Date**, choose a range, and then click **Apply**. Data for the current f
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, then multiple .csv files will be created.
 
- ![Tech view in the Mailflow status report](../../media/mail-flow-status-report-Tech-view.png)
+ ![Tech view in the Mailflow status report.](../../media/mail-flow-status-report-Tech-view.png)
 
 ## Sent and received email report
 
@@ -428,7 +428,7 @@ The aggregate view and the detail view of the report allow for 90 days of filter
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Sent and received email**. To go directly to the report, open <https://protection.office.com/reportv2?id=SentAndReceivedMailATP>.
 
-![Sent and received email widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png)
+![Sent and received email widget in the Reports dashboard.](../../media/sent-and-received-email-report-widget.png)
 
 ### Report view for the Sent and received email report
 
@@ -445,11 +445,11 @@ The following charts are available in the report view:
 
   When you hover over a day (data point) in the chart, you can see details for that day.
 
-  ![Type view in the Sent and received email report](../../media/sent-and-received-email-report-type-view.png)
+  ![Type view in the Sent and received email report.](../../media/sent-and-received-email-report-type-view.png)
 
 - **Break down by: Direction**: The chart shows **Total**, **Inbound**, and **Outbound** data. When you hover over a day (data point) in the chart, you can see details for that day.
 
-  ![Direction view in the Sent and received email report](../../media/sent-and-received-email-report-direction-view.png)
+  ![Direction view in the Sent and received email report.](../../media/sent-and-received-email-report-direction-view.png)
 
 - **Drill down by** \> **Malware (anti-malware)**: This selection takes you to the [Malware detections report](view-email-security-reports.md#malware-detections-report).
 
@@ -486,7 +486,7 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
 
-![Top senders and recipients widget in the Reports dashboard](../../media/top-senders-and-recipients-widget.png)
+![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
 
 ### Report view for the Top senders and recipient report
 
@@ -504,7 +504,7 @@ When you hover over a wedge in the pie chart, you can see a count of messages se
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
-![Pie chart in Report view in the Top senders and recipients report](../../media/top-senders-and-recipients-report-view.png)
+![Pie chart in Report view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
 
 ### Details table view for the Top senders and recipient report
 

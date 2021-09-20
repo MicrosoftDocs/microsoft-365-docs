@@ -136,7 +136,7 @@
        href: tenant-wide-setup-for-increased-security.md
      - name: Preset security policies
        href: preset-security-policies.md
-     - name: Configuration analyzer for preset security policies
+     - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
      - name: Attack Simulator in Defender for Office 365
        href: attack-simulator.md
@@ -168,7 +168,7 @@
          href: manage-tenant-allows.md
        - name: Modify and remove entries in the Tenant Allow/Block List
          href: modify-remove-entries-tenant-allow-block.md
-     - name: Message trace in the Security & Compliance Center
+     - name: Message trace
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
        href: report-junk-email-messages-to-microsoft.md
@@ -182,6 +182,8 @@
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
      - name: Zero-hour auto purge - protection against spam and malware
        href: zero-hour-auto-purge.md
+     - name: Control automatic external email forwarding
+       href: external-email-forwarding.md
    - name: Detect
      items: 
      - name: Threat Explorer for Defender for Office 365
@@ -250,7 +252,7 @@
        href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Top domain mail flow status insight
        href: mfi-domain-mail-flow-status-insight.md
-     - name: Use Admin Submission
+     - name: Manage submissions
        href: admin-submission.md
      - name: Use mail flow rules to see what users are reporting to Microsoft
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft

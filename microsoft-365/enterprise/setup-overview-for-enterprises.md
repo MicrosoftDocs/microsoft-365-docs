@@ -1,7 +1,7 @@
 ---
 title: "Deploy Microsoft 365 Enterprise for your organization"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/19/2019
 audience: ITPro

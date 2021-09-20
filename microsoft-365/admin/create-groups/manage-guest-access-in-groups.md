@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -42,17 +43,17 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 ## Manage groups guest access
 
-If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.
+If you want to enable or disable guest access in groups, you can do so in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 
-1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select **Microsoft 365 groups**.
+1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Microsoft 365 Groups**</a>.
   
 2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
 ## Add guests to a Microsoft 365 group from the admin center
 
-If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center. (Groups with dynamic membership must be [managed in Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
+If the guest already exists in your directory, you can add them to your groups from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a>. (Groups with dynamic membership must be [managed in Azure Active Directory](/azure/active-directory/enterprise-users/groups-create-rule).)
   
-1. In the admin center, go to the **Groups** > **Groups** page.
+1. In the admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
   
 2. Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
   

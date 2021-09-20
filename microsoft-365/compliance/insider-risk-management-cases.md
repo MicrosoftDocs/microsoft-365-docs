@@ -45,7 +45,7 @@ The case queue lists all active and closed cases for your organization, in addit
 - **Case last updated**: The time that has passed since there has been an added case note or change in the case state.
 - **Last updated by**: The name of the insider risk management analyst or investigator that last updated the case.
 
-![Insider risk management Cases dashboard](../media/insider-risk-cases-dashboard.png)
+![Insider risk management Cases dashboard.](../media/insider-risk-cases-dashboard.png)
 
 Use the **Search** control to search case names for specific text and use the case filter to sort cases by the following attributes:
 
@@ -79,14 +79,14 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 - **Manager name**: The name of the user's manager.
 - **Manager email**: The email alias of the user's manager.
 
+![Insider risk management case details.](../media/insider-risk-case-details.png)
+
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
 - **Policy matches**: The name of the insider risk management policy associated with the match alerts for user activity.
 - **Status**: Status of the alert.
 - **Severity**: Severity of the alert.
 - **Time detected**: The time that has passed since the alert was generated.
-
-![Insider risk management case details](../media/insider-risk-case-details.png)
 
 ### Alerts
 
@@ -115,7 +115,7 @@ Use the filter control to filter alerts by several attributes, including:
 
 The **User activity** tab is one of the most powerful tools for internal risk analysis and investigation for cases in the insider risk management solution. This tab is structured to enable quick review of a case, including a historical timeline of all alerts, alert details, the current risk score for the user in the case, the sequence of risk events, and controls to take effective action to contain the risks in the case.
 
-![Insider risk management user activity](../media/insider-risk-user-activities.png)
+![Insider risk management user activity.](../media/insider-risk-user-activities.png)
 
 1. **Time filters**: By default, the last six months of alerts confirmed in the case are displayed in the User activity chart. You can easily filter the chart view by selecting the *6 Months*, *3 Months*, or *1 Month* tabs on the bubble chart.
 2. **Risk alert activity and details**: Risk activities are visually displayed as colored bubbles in the User activity chart. Bubbles are created for different categories of risk and bubble size is proportional to the number of risk activities for the category. Select a bubble to display the details for each risk activity. Details include:
@@ -142,15 +142,15 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
-For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer-preview) article.
+For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer) article.
 
 ### Content explorer
 
-The **Content explorer** tab allows risk analysts and investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
+The **Content explorer** tab allows risk investigators to review copies of all individual files and email messages associated with risk alerts. For example, if an alert is created when a user downloads hundreds of files from SharePoint Online and the activity triggers a policy alert, all the downloaded files for the alert are captured and copied to the insider risk management case from original storage sources.
 
 The Content explorer is a powerful tool with basic and advanced search and filtering features. To learn more about using the Content explorer, see [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
-![Insider risk management case Content explorer](../media/insider-risk-content-explorer.png)
+![Insider risk management case Content explorer.](../media/insider-risk-content-explorer.png)
 
 ### Case notes
 

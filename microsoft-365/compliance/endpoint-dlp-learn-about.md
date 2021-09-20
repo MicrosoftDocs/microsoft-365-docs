@@ -25,16 +25,16 @@ description: "Microsoft 365 Endpoint data loss prevention extends monitoring of 
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10.
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10 devices.
 
-|Activity |Description  | Auditable/restictable|
+|Activity |Description  | Auditable/restrictable|
 |---------|---------|---------|
 |upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an being an unallowed browser, the upload activity will be blocked and the user is redirected to use Edge Chromium. Edge Chromium will then either allow or block the upload or access based on the DLP policy configuration         |auditable and restrictable|
 |copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.         | auditable and restrictable|
@@ -81,7 +81,7 @@ There are a few extra concepts that you need to be aware of before you dig into 
 Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft 365 compliance solutions like Endpoint DLP and [Insider Risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
 
 > [!div class="mx-imgBorder"]
-> ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 Onboarding and offboarding are handled via scripts you download from the Device management center. The center has custom scripts for each of these deployment methods:
 
@@ -92,31 +92,31 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 - VDI onboarding scripts for non-persistent machines
 
 > [!div class="mx-imgBorder"]
-> ![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![device onboarding page.](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
 If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
 
 > [!div class="mx-imgBorder"]
-> ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
+> ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### Viewing Endpoint DLP data
 
 You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
 
 > [!div class="mx-imgBorder"]
-> ![Alert info](../media/Alert-info-1.png)
+> ![Alert info.](../media/Alert-info-1.png)
 
 You can also view details of the associated event with rich metadata in the same dashboard
 
 > [!div class="mx-imgBorder"]
-> ![event info](../media/Event-info-1.png)
+> ![event info.](../media/Event-info-1.png)
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
 > [!div class="mx-imgBorder"]
-> ![endpoint dlp events in activity explorer](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![endpoint dlp events in activity explorer.](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 Endpoint DLP collects extensive information on audited activity.
 
@@ -148,7 +148,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - removable media device serial number
 
 > [!div class="mx-imgBorder"]
-> ![copy to usb activity attributes](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![copy to usb activity attributes.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## Next steps
 

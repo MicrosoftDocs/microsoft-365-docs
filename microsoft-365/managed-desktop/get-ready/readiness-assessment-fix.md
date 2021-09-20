@@ -33,7 +33,7 @@ You can access Intune settings at the Microsoft Endpoint Manager [admin center](
 
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices. If you have an existing Autopilot deployment profile, the "Convert all targeted devices to Autopilot" setting must be set to "No" for the managed desktop readiness test for Autopilot to succeed.
 
 **Not ready**
 
@@ -228,13 +228,9 @@ You can ask your Microsoft account representative for a query in Microsoft Endpo
 
 Microsoft Managed Desktop requires Windows Hello for Business to be enabled.
 
-**Not ready**
-
-Windows Hello for Business is disabled. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advisory**
 
-Windows Hello for Business is not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello for Business is either disabled or not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### Windows 10 update rings

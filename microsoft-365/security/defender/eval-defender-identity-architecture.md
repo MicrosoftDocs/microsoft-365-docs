@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and the technical framework for Microsoft Defender for Identity, architecture diagram, MDI
+title: Review architecture requirements and the technical framework for Microsoft Defender for Identity
 description: The technical diagram for Microsoft Defender for Identity in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -41,7 +41,7 @@ Defender for Identity protects your on-premises Active Directory users and/or us
 
 The following diagram illustrates the baseline architecture for Defender for Identity. 
 
-![Architecture for Microsoft Defender for Identity](../../media/defender/m365-defender-identity-architecture.png)
+![Architecture for Microsoft Defender for Identity.](../../media/defender/m365-defender-identity-architecture.png)
 
 In this illustration:
 - Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.
@@ -71,7 +71,7 @@ The following table identified key concepts that are important to understand whe
 | Network Name Resolution    |  Network Name Resolution (NNR) is a component of MDI functionality which captures activities based on network traffic, Windows events, ETW, etc. and correlates this raw data to the relevant computers involved in each activity.       | [What is Network Name Resolution?](/defender-for-identity/nnr-policy)      |
 | Reports    | Defender for Identity reports allow you to schedule or immediately generate and download reports that provide system and entity status information.  You can create reports about system health, security alerts, and potential lateral movement paths detected in your environment.   | [Microsoft Defender for Identity Reports ](/defender-for-identity/reports)       |
 | Role groups    | Defender for Identity offers role-based groups and delegated access to safeguard data according to your organization's specific security and compliance needs which includes Administrators, Users and Viewers.        |  [Microsoft Defender for Identity role groups](/defender-for-identity/role-groups)       |
-| Administrative portal    |  In addition to the Microsoft 365 Security Center, the Defender for Identity portal cab be used to monitor and respond to suspicious activity.      | [Working with the Microsoft Defender for Identity portal](/defender-for-identity/workspace-portal)        |
+| Administrative portal    |  In addition to the Microsoft 365 Defender portal, the Defender for Identity portal cab be used to monitor and respond to suspicious activity.      | [Working with the Microsoft Defender for Identity portal](/defender-for-identity/workspace-portal)        |
 | Microsoft Cloud App Security integration   | Microsoft Cloud App Security integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises   | Microsoft Defender for Identity integration  |
 | | | |
 

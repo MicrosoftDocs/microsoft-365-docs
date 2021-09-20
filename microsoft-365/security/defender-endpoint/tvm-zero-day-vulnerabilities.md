@@ -30,7 +30,7 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
@@ -45,7 +45,7 @@ Once a zero-day vulnerability has been found, information about it will be conve
 
 ### Threat and vulnerability management dashboard
 
-Look for recommendations with a zero-day tag in the “Top security recommendations” card.
+Look for recommendations with a zero-day tag in the "Top security recommendations" card.
 
 ![Top recommendations with a zero-day tag.](images/tvm-zero-day-top-security-recommendations.png)
 
@@ -57,9 +57,9 @@ Find top software with the zero-day tag in the "Top vulnerable software" card.
 
 Look for the named zero-day vulnerability along with a description and details.
 
-- If this vulnerability has a CVE-ID assigned, you’ll see the zero-day label next to the CVE name.
+- If this vulnerability has a CVE-ID assigned, you'll see the zero-day label next to the CVE name.
 
-- If this vulnerability has no CVE-ID assigned, you'll find it under an internal, temporary name that looks like “TVM-XXXX-XXXX”. The name will be updated once an official CVE-ID has been assigned, but the previous internal name will still be searchable and found in the side-panel.
+- If this vulnerability has no CVE-ID assigned, you'll find it under an internal, temporary name that looks like "TVM-XXXX-XXXX". The name will be updated once an official CVE-ID has been assigned, but the previous internal name will still be searchable and found in the side-panel.
 
 :::image type="content" alt-text="Zero day example for CVE-2020-17087 in weaknesses page." source="images/tvm-zero-day-weakness-name.png" lightbox="images/tvm-zero-day-weakness-name.png":::
 
@@ -71,7 +71,7 @@ Look for software with the zero-day tag. Filter by the "zero day" tag to only se
 
 ### Software page
 
-Look for a zero-day tag for each software that has been affected by the zero–day vulnerability.
+Look for a zero-day tag for each software that has been affected by the zero-day vulnerability.
 
 :::image type="content" alt-text="Zero day example for Windows Server 2016 software page." source="images/tvm-zero-day-software-page.png" lightbox="images/tvm-zero-day-software-page.png":::
 
@@ -89,7 +89,7 @@ Go to the security recommendation page and select a recommendation with a zero-d
 
 There will be a link to mitigation options and workarounds if they are available. Workarounds may help reduce the risk posed by this zero-day vulnerability until a patch or security update can be deployed.
 
-Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. You won't be able to select a due date, since there's no specific action to perform. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose “update.”
+Open remediation options and choose the attention type. An "attention required" remediation option is recommended for the zero-day vulnerabilities, since an update hasn't been released yet. You won't be able to select a due date, since there's no specific action to perform. If there are older vulnerabilities for this software you wish to remediation, you can override the "attention required" remediation option and choose "update."
 
 ![Zero day flyout example of Windows Server 2016 in the security recommendations page.](images/tvm-zero-day-recommendation-flyout400.png)
 
@@ -99,7 +99,7 @@ Go to the threat and vulnerability management [Remediation](tvm-remediation.md) 
 
 ## Patching zero-day vulnerabilities
 
-When a patch is released for the zero-day, the recommendation will be changed to “Update” and a blue label next to it that says “New security update for zero day.” It will no longer consider as a zero-day, the zero-day tag will be removed from all pages.
+When a patch is released for the zero-day, the recommendation will be changed to "Update" and a blue label next to it that says "New security update for zero day." It will no longer consider as a zero-day, the zero-day tag will be removed from all pages.
 
 ![Recommendation for "Update Microsoft Windows 10" with new patch label.](images/tvm-zero-day-patch.jpg)
 
