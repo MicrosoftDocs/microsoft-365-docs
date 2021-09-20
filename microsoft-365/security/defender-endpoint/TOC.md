@@ -48,6 +48,7 @@
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
+#### [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
 #### [Onboard Windows 10 devices]()
 ##### [Onboarding tools and methods](configure-endpoints.md)
 ##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
@@ -55,7 +56,6 @@
 ##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
 ##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
 #### [Onboard Windows servers](configure-server-endpoints.md)
 
