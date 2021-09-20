@@ -28,8 +28,6 @@ ms.custom: api
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
@@ -42,10 +40,11 @@ Offboard device from Defender for Endpoint.
 
 - Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
-[!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
->[!Note]
+> [!NOTE]
 > This API is supported on Windows 10, version 1703 and later, or Windows Server 2019 and later.
+>
 > This API is not supported on MacOS or Linux devices.
 
 ## Permissions
@@ -53,7 +52,7 @@ Offboard device from Defender for Endpoint.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
 
 Permission type|Permission|Permission display name
-:---|:---|:---
+---|---|---
 Application|Machine.Offboard|'Offboard machine'
 Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 
@@ -72,7 +71,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ## Request headers
 
 Name|Type|Description
-:---|:---|:---
+---|---|---
 Authorization|String|Bearer {token}. **Required**.
 Content-Type|string|application/json. **Required**.
 
@@ -81,7 +80,7 @@ Content-Type|string|application/json. **Required**.
 In the request body, supply a JSON object with the following parameters:
 
 Parameter|Type|Description
-:---|:---|:---
+---|---|---
 Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
