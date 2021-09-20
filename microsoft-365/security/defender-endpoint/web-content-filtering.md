@@ -51,7 +51,7 @@ Summarizing the benefits:
 Before trying out this feature, make sure you meet the following requirements:
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
-- Access to Microsoft 365 Defender portal (https://security.microsoft.com).
+- Access to Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 - Devices running Windows 10 Anniversary Update (version 1607) or later with the latest MoCAMP update.
 - Windows Defender SmartScreen and Network Protection enabled.
 
