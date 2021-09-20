@@ -79,14 +79,14 @@ The **Case overview** tab summarizes the case details for risk analysts and inve
 - **Manager name**: The name of the user's manager.
 - **Manager email**: The email alias of the user's manager.
 
+![Insider risk management case details.](../media/insider-risk-case-details.png)
+
 The **Case overview** tab also includes an **Alerts** section that includes the following information about policy match alerts associated with the case:
 
 - **Policy matches**: The name of the insider risk management policy associated with the match alerts for user activity.
 - **Status**: Status of the alert.
 - **Severity**: Severity of the alert.
 - **Time detected**: The time that has passed since the alert was generated.
-
-![Insider risk management case details.](../media/insider-risk-case-details.png)
 
 ### Alerts
 
@@ -142,7 +142,7 @@ The **User activity** tab is one of the most powerful tools for internal risk an
 
 The **Activity explorer** tab allows risk analysts and investigators to review activity details associated with risk alerts. For example, as part of the case management actions, investigators and analysts may need to review all the risk activities associated with the case for more details. With the **Activity explorer**, reviewers can quickly review a timeline of detected risky activity and identify and filter all risk activities associated with alerts.
 
-For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer-preview) article.
+For more information about the Activity explorer, see the [Insider risk management alerts](insider-risk-management-activities.md#activity-explorer) article.
 
 ### Content explorer
 

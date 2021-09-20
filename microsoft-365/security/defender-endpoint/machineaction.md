@@ -70,7 +70,7 @@ ms.technology: mde
 |cancellationComment|String|Comment that was written when canceling the action.|
 |status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".|
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
-|machineId|String|Name of the [machine](machine.md) on which the action was executed.|
+|computerDnsName|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
 |cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was canceled.|
 |lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
