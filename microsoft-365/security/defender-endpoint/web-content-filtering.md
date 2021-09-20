@@ -28,8 +28,7 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > **Web content filtering is currently in public preview**<br>
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities.
-> For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
+> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
 
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
@@ -61,7 +60,7 @@ The blocking experience for third-party supported browsers is provided by Networ
 
 ## Data handling
 
-Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third-parties, including our data providers.
+Data is stored in the region that was selected as part of your [Microsoft Defender for Endpoint data handling settings](data-storage-privacy.md). Your data will not leave the data center in that region. In addition, your data will not be shared with any third parties, including our data providers.
 
 ## Turn on web content filtering
 
@@ -95,11 +94,11 @@ Policies can be deployed to block any of the following parent or child categorie
 <details>
 <summary>High bandwidth</summary>
 
-**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as PC programs.
+**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.
 
 **Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.
 
-**Peer-to-peer**: Sites that host P2P software or facilitate the sharing of files using P2P software.
+**Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.
 
 **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.
   
@@ -133,7 +132,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 **Chat**: Sites that are primarily web-based chat rooms.
 
-**Games**: Sites relating to video / computer games, including sites that promote gaming through hosting online services or information related to gaming.
+**Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.
 
 **Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.
 
@@ -152,7 +151,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 **Parked domains**: Sites that have no content or are parked for later use.
   
-**Note**: Uncategorized contains only the above two categories and does not include all other sites outside of these categories.
+**NOTE**: Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
   
 </details>
 
@@ -160,7 +159,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 To add a new policy:
 
-1. Select **Add policy** on the **Web content filtering** page in **Settings**.
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
 
 2. Specify a name.
 
@@ -168,7 +167,7 @@ To add a new policy:
 
 4. Specify the policy scope. Select the device groups to specify where to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
 
-5. Review the summary and save the policy. The policy refresh may take up to 2 hours to apply to your selected devices.
+5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
 > [!NOTE]
 > - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
@@ -179,7 +178,9 @@ To add a new policy:
 
 It's possible to override the blocked category in web content filtering to allow a single site by creating a custom indicator policy. The custom indicator policy will supersede the web content filtering policy when it's applied to the device group in question.
 
-1. Create a custom indicator in the Microsoft 365 Defender portal by going to **Settings** > **Endpoints** > **Indicators** > **URL/Domain** > **Add Item**.
+To define a custom indicator:
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Indicators** > **URL/Domain** > **Add Item**.
 
 2. Enter the domain of the site.
 
@@ -195,7 +196,7 @@ A panel will open where you can select the priority and add more details such as
 
 ### URL category lookup
 
-To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (https://security.microsoft.com) under **Endpoints** > **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) under **Endpoints** > **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
 ![Image of web content filtering category lookup results.](../../media/web-content-filtering-category-lookup.png)
 
