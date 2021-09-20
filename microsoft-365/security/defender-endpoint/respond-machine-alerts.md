@@ -52,7 +52,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later.
+> - These response actions are only available for devices on Windows 10, version  1703 or later and Windows Server 2019.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -107,7 +107,7 @@ The package contains the following folders:
 ****
 
 |Folder|Description|
-|:---|:---------|
+|---|---|
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Network connections|This folder contains a set of data points related to the connectivity information which can help in identifying connectivity to suspicious URLs, attacker's command and control (C&C) infrastructure, any lateral movement, or remote connections. <ul><li>ActiveNetConnections.txt: Displays protocol statistics and current TCP/IP network connections. Provides the ability to look for suspicious connectivity made by a process.</li><li>Arp.txt: Displays the current address resolution protocol (ARP) cache tables for all interfaces. ARP cache can reveal additional hosts on a network that have been compromised or suspicious systems on the network that might have been used to run an internal attack.</il><li>DnsCache.txt: Displays the contents of the DNS client resolver cache, which includes both entries preloaded from the local Hosts file and any recently obtained resource records for name queries resolved by the computer. This can help in identifying suspicious connections.</li><li>IpConfig.txt: Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or logical interfaces, such as dial-up connections.</li><li>FirewallExecutionLog.txt and pfirewall.log</li></ul>|
@@ -177,8 +177,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 > [!IMPORTANT]
 >
-> - Full isolation is available for devices on Windows 10, version 1703.
-> - Selective isolation is available for devices on Windows 10, version 1709 or later.
+> - Full isolation is available for devices on Windows 10, version 1703 and Windows Server 2019.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later and Windows Server 2019.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
@@ -220,7 +220,8 @@ All other related details are also shown, for example, submission date/time, sub
 
 ![Image of action center with information.](images/action-center-details.png)
 
-## Related topic
+## See also
 
 - [Take response actions on a file](respond-file-alerts.md)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

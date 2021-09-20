@@ -20,10 +20,6 @@ description: "Learn about the overview and data profile in privacy management an
 
 # Find and visualize personal data in privacy management (preview)
 
-In this article: learn about the features of the **overview** and **data profile** pages and how they can give insights into your data.
-
-## Purpose of the overview and data profile
-
 Microsoft 365 privacy management provides you with capabilities to find and visualize the personal data in your environment. The solution automates discovery of personal data assets in Exchange, SharePoint, OneDrive, and Teams, and provides dashboards that give key insights into the data. Your privacy administrators can act upon these insights to strengthen your organization's approach to privacy and reduce risk.
 
 ### Overview page

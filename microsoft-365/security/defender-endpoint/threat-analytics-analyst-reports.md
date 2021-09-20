@@ -70,7 +70,7 @@ While you can use the **Mitigations** tab to assess your security posture agains
 
 ## Understand how each threat can be detected
 
-The analyst report also provides the detections from Microsoft Defender for Endpoint antivirus and _endpoint detection and response_ (EDR) capabilities.
+The analyst report also provides the detections from Microsoft Defender Antivirus and _endpoint detection and response_ (EDR) capabilities.
 
 ### Antivirus detections
 

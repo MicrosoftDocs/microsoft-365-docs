@@ -13,14 +13,14 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro 
+# Enroll Microsoft Defender for Endpoint on macOS devices into Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,6 @@ This article will guide you on two methods:
 - [Method 2:  Prestage Enrollments](#enrollment-method-2-prestage-enrollments)
 
 For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/casper-suite/administrator-guide/About_Computer_Enrollment.html).
-
 
 ## Enrollment Method 1: Enrollment Invitations
 
@@ -87,7 +86,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     ![Image of Jamf Pro enrollment1.](images/jamfpro-ca-certificate.png)
 
-2. Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile. 
+2. Once CA certificate is installed, return to the browser window and select **Continue** and install the MDM profile.
 
     ![Image of Jamf Pro enrollment2.](images/jamfpro-install-mdm-profile.png)
 
@@ -95,7 +94,7 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     ![Image of Jamf Pro enrollment3.](images/jamfpro-download.png)
 
-4. Select **Continue** to proceed with the MDM Profile installation. 
+4. Select **Continue** to proceed with the MDM Profile installation.
 
     ![Image of Jamf Pro enrollment4.](images/jamfpro-install-mdm.png)
 
@@ -103,6 +102,6 @@ For a complete list, see [About Computer Enrollment](https://docs.jamf.com/9.9/c
 
     ![Image of Jamf Pro enrollment5.](images/jamfpro-mdm-unverified.png)
 
-6. Select **Continue**  to complete the configuration. 
+6. Select **Continue**  to complete the configuration.
 
     ![Image of Jamf Pro enrollment6.](images/jamfpro-mdm-profile.png)

@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
-ms.date: 05/26/2021
+ms.date: 09/14/2021
 ms.topic: how-to
 ---
 
@@ -48,10 +48,6 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 
 ### Settings and locations
 
-<br>
-
-****
-
 |Policy item and location|Default setting (if not configured)|PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class|
 |---|---|---|
 |Email scanning <p> **Scan** \> **Turn on e-mail scanning**<p>See [Email scanning limitations](#email-scanning-limitations) (in this article)|Disabled|`-DisableEmailScanning`|
@@ -65,7 +61,6 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 |Specify the maximum CPU load (as a percentage) during a scan. <p> **Scan** \> **Specify the maximum percentage of CPU utilization during a scan**|50|`-ScanAvgCPULoadFactor` <p>**NOTE**: The maximum CPU load is not a hard limit, but is guidance for the scanning engine to not exceed the maximum on average. Manually run scans will ignore this setting and run without any CPU limits.|
 |Specify the maximum size (in kilobytes) of archive files that should be scanned. <p> **Scan** \> **Specify the maximum size of archive files to be scanned**|No limit|Not available <p>The default value of 0 applies no limit|
 |Configure low CPU priority for scheduled scans <p> **Scan** \> **Configure low CPU priority for scheduled scans**|Disabled|Not available|
-|
 
 > [!NOTE]
 > If real-time protection is turned on, files are scanned before they are accessed and executed. The scanning scope includes all files, including files on mounted removable media, such as USB drives. If the device performing the scan has real-time protection or on-access protection turned on, the scan will also include network shares.

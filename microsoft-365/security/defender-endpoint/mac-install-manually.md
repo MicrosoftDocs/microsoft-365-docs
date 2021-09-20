@@ -107,7 +107,7 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences2.](images/big-sur-install-4.png)
 
-7. Open **System Preferences** > **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender ATP** and **Microsoft Defender ATP Endpoint Security Extension**.
+7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender ATP** and **Microsoft Defender ATP Endpoint Security Extension**.
 
     ![Full disk access.](images/big-sur-install-5.png)
 
@@ -143,7 +143,7 @@ To complete this process, you must have admin privileges on the device.
 > [!CAUTION]
 > macOS 10.15 (Catalina) contains new security and privacy enhancements. Beginning with this version, by default, applications are not able to access certain locations on disk (such as Documents, Downloads, Desktop, etc.) without explicit consent. In the absence of this consent, Microsoft Defender for Endpoint is not able to fully protect your device.
 
-1. To grant consent, open **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
+1. To grant consent, open **System Preferences** \> **Security & Privacy** \> **Privacy** \> **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
 
 2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 

@@ -55,7 +55,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
   - Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions _and_ permissions for other features in Microsoft 365. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
-  - <sup>\*</sup> Members of the **Quarantine Administrator** role group also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) in order to do quarantine procedures in Exchange Online PowerShell.
+  - <sup>\*</sup> Members of the **Quarantine Administrator** role group in **Email & collaboration** roles in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) to do quarantine procedures in Exchange Online PowerShell.
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
   - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).

@@ -19,17 +19,17 @@ This appointment level information can be used to visualize the customer activit
 
 ## See four months of Booking activity
 
-1. On the Bookings calendar dashboard, select **Export more data as TSV**.
+1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
-:::image type="content" source="../media/bookings-activities.png" alt-text="Screenshot: 4 months of Bookings activity":::
+1. On the Bookings home page, select **Export**.
+
+1. On the **Export recent data** page, select your date range and select **Export**.
 
 1. Save the file with a new name, and specify .xls or xlsx format.
 
 1. Open the file to see the four month view of your Bookings calendar.
 
 1. Choose the date for your report and select **Export**.
-
-:::image type="content" source="../media/bookings-reporting-dates.png" alt-text="Screenshot: Pick a time range and export data to TSV file.":::
 
 1. The downloaded report contains a new set of fields in addition to the existing fields.
 

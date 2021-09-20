@@ -50,7 +50,8 @@ You can onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, and Windows 
 After completing the onboarding steps using any of the provided options, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
 > [!NOTE]
-> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2), see [Supported features available in Azure Defender](/azure/security-center/security-center-services).
+> Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1), or through Microsoft Endpoint Manager (Option 3). Alternatively, an Azure Defender for Servers license is required, per node, in order to onboard a Windows server through Azure Security Center (Option 2). For more information, see [Supported features available in Azure Defender](/azure/security-center/security-center-services). 
+> Unlike user licenses, these licenses are not to be assigned to any user or object. They are required to be in the tenant for compliance.
 
 ### Option 1: Onboard by installing and configuring Microsoft Monitoring Agent (MMA)
 
