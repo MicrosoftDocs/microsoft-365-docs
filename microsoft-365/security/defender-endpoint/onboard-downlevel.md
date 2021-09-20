@@ -33,7 +33,6 @@ ms.technology: mde
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
 
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
@@ -47,6 +46,7 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
+
 > [!IMPORTANT]
 > This step is required only if your organization uses System Center Endpoint Protection (SCEP).
 
@@ -54,7 +54,7 @@ Defender for Endpoint integrates with System Center Endpoint Protection to provi
 
 The following steps are required to enable this integration:
 
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 - Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Allow connections to the Microsoft Defender Antivirus cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
@@ -65,7 +65,7 @@ The following steps are required to enable this integration:
 Review the following details to verify minimum system requirements:
 
 - Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
   > [!NOTE]
   > Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 
@@ -107,6 +107,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Defender for Endpoint service URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 ## Run a detection test to verify onboarding
+
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard client endpoints

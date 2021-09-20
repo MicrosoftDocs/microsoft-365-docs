@@ -56,30 +56,6 @@ Microsoft Azure|Deploy Microsoft Antimalware for Azure in the [Azure portal, by 
 
 3. <span id="fn3" />Configuration of features and protection, including configuring product and protection updates, are further described in the [Configure Microsoft Defender Antivirus features](configure-notifications-microsoft-defender-antivirus.md) section in this library. [(Return to table)](#ref2)
 
-[Endpoint Protection point site system role]: /configmgr/protect/deploy-use/endpoint-protection-site-role
-[default and customized antimalware policies]:  /configmgr/protect/deploy-use/endpoint-antimalware-policies
-[client management]:  /configmgr/core/clients/manage/manage-clients
-[enable Endpoint Protection with custom client settings]:  /configmgr/protect/deploy-use/endpoint-protection-configure-client
-[Configuration Manager Monitoring workspace]:  /configmgr/protect/deploy-use/monitor-endpoint-protection
-[email alerts]:  /configmgr/protect/deploy-use/endpoint-configure-alerts
-[Deploy the Microsoft Intune client to endpoints]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune
-[custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection
- [custom Intune policy]:  /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#configure-microsoft-intune-endpoint-protection
-[manage tasks]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#choose-management-tasks-for-endpoint-protection
-[Monitor endpoint protection in the Microsoft Intune administration console]: /intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune#monitor-endpoint-protection
-[Set method of the MSFT_MpPreference class]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
-[Update method of the MSFT_MpSignature class]:  /previous-versions/windows/desktop/defender/set-msft-mppreference
-[MSFT_MpComputerStatus]:  /previous-versions/windows/desktop/defender/msft-mpcomputerstatus
-[Windows Defender WMIv2 Provider]: /previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal
-[Set-MpPreference]:  https://technet.microsoft.com/itpro/powershell/windows/defender/set-mppreference.md
-[Update-MpSignature]: /powershell/module/defender/update-mpsignature
-[Get- cmdlets available in the Defender module]: /powershell/module/defender/
-[Configure update options for Microsoft Defender Antivirus]: manage-updates-baselines-microsoft-defender-antivirus.md
-[Configure Windows Defender features]: configure-microsoft-defender-antivirus-features.md
-[Group Policies to determine if any settings or policies are not applied]: /previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771389(v=ws.11)
-[Possibly infected devices]: /azure/active-directory/active-directory-reporting-sign-ins-from-possibly-infected-devices
-[Microsoft Defender Antivirus events]: troubleshoot-microsoft-defender-antivirus.md
-
 ## In this section
 
 Topic | Description
