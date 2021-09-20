@@ -119,7 +119,7 @@ From the **Define retention settings** page for a retention label:
 
 ![Retention settings for a label.](../media/disposition-review-option.png)
  
-After you select this **Trigger a disposition review** option, on the next page of the wizard, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
+After you select this **Trigger a disposition review** option, on the next page of the configuration, you specify how many consecutive stages of disposition you want and the disposition reviewers for each stage:
 
 ![Specifying disposition reviewers.](../media/disposition-reviewers.png) 
 
