@@ -38,10 +38,10 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 
 ### Pre-requisites
 
-1. **Verify that the connector is enabled** : On the [unified security console](https://security.microsoft.com), go to **Settings** -> **Endpoints** -> **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
-2. **Veerify that the connector is enabled on the Intune portal** : In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** -> **Microsoft Defender for Endpoint** and ensure that the "Connection status" is enabled.
+1. **Verify that the connector is enabled**. <br> On the [unified security console](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
+2. **Veerify that the connector is enabled on the Intune portal**. <br> In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
 
-Follow the beloww steps to setup app protection policies with Microsoft Defender for Endpoint:
+Use the following steps to setup app protection policies with Microsoft Defender for Endpoint:
 
 1. Set up the connection from your Microsoft Endpoint Manager tenant to Microsoft Defender for Endpoint. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Tenant Administration** \> **Connectors and tokens** \> **Microsoft Defender for Endpoint** (under Cross platform) or **Endpoint Security** \> **Microsoft Defender for Endpoint** (under Setup) and turn on the toggles under **App Protection Policy Settings for iOS**.
 1. Select **Save**. You should see **Connection status** is now set to **Enabled**.
@@ -50,7 +50,7 @@ Follow the beloww steps to setup app protection policies with Microsoft Defender
 1. Under **Conditional launch** \> **Device conditions**, you will find the setting **Max allowed device threat level**. This needs to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**. You may see an informational dialog to make sure you have your connector set up prior to this setting taking effect. If your connector is already set up, you may ignore this dialog.
 1. Finish with Assignments and save your policy.
 
-For more details on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
+For more information on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
 
 ## Deploy Microsoft Defender for Endpoint for MAM or on unenrolled devices
 
