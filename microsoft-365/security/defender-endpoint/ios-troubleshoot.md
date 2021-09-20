@@ -101,5 +101,5 @@ For details about data collected and privacy, see [Privacy Information - Microso
 
 ## Issues during app updates from the app store
 
-In case, you are observing issues during apps updates through the app store (either auto-updates or manual updates), a device restart might be required. If device restart does not resolve the issue, you can disable the Defender VPN and perform the app update and also send us an in-app feedback to report this issue.
+If you observing issues during apps updates through the app store (either auto-updates or manual updates), a device restart might be required. If the device restart does not resolve the issue, you can disable the Defender VPN and perform the app update and also send us an in-app feedback to report this issue.
 
