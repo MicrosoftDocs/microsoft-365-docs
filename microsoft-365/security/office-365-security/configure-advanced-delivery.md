@@ -41,7 +41,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
 - Specifically for third-party phishing simulations:
   - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered. The admin submissions experience will show these messages as a simulated threat.
   - When a user reports a phishing simulation message using the [Report Phishing add-in for Outlook](enable-the-report-message-add-in.md), the system will not generate an alert, investigation, or incident. The message will also show up on the User reported messages tab of the submissions page.
-  - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. Note: URLs will still be wrapped but will not be blocked.
+  - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
 <sup>\*</sup> You can't bypass malware filtering or ZAP for malware.
@@ -102,18 +102,27 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
    - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries.
 
      > [!NOTE]
-     > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message OR a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor. 
+     > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor. 
 
    - **Sending IP**: Expand this setting and enter at least one valid IPv4 address by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries. Valid values are:
      - Single IP: For example, 192.168.1.1.
      - IP range: For example, 192.168.0.1-192.168.0.254.
      - CIDR IP: For example, 192.168.0.1/25.
-   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). Note: These URLs will still be wrapped but will not be blocked at time of click.
+   - **Simulation URLs to allow**: Expand this setting and optionally enter specific URLs that are part of your phishing simulation campaign that should not be blocked or detonated by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. You can add up to 10 entries. For the URL syntax format, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list). These URLs are wrapped but not blocked at time of click.
 
    To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    > [!NOTE]
-   > You must specify at least one **Domain** (either **MAIL FROM** address, P1 sender, envelope sender, OR DKIM domain) and at least one **Sending IP** to configure a third-party phishing simulation in Advanced Delivery. You may optionally include **Simulation URLs to allow** to ensure URLs present in simulation messages are not blocked. You may specify up to 10 entries for each field. There must be a match on at least one **Domain** and one **Sending IP** but no association between values is maintained.
+   > To configure a third-party phishing simulation in Advanced Delivery, you need to provie the following information:
+   > 
+   > - At least one **Domain** from either of the following sources:
+   >   - The `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender).
+   >   - The DKIM domain.
+   > - At least one **Sending IP**.
+   > 
+   > You may optionally include **Simulation URLs to allow** to ensure that URLs in simulation messages are not blocked.
+   > You may specify up to 10 entries for each field.
+   > There must be a match on at least one **Domain** and one **Sending IP**, but no association between values is maintained.
 
 4. When you're finished, do one of the following steps:
    - **First time**: Click **Add**, and then click **Close**.
