@@ -44,27 +44,27 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker range="o365-worldwide"
 
-2. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
+2. In the admin center, go to the **Teams & Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
     
-3. On the **Shared mailboxes** page, select **+ Add a mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
+3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Select **Add**. It may take a few minutes before you can add members.
+4. Select **Save changes**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
