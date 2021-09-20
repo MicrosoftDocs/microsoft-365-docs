@@ -31,9 +31,6 @@ If you are not familiar with EDM based SITS or there implementation, you should 
 
 <!--When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.-->
 
-> [!NOTE]
-> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
-
 A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to ten different EDM schemas in a Microsoft 365 tenant. 
 
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
@@ -108,7 +105,9 @@ When you include the *caseInsensitive* field set to the value of `true` in your 
 
 When you include the *ignoredDelimiters* field with supported characters,  EDM will ignore those characters. So EDM will see the values **FOO-1234** and **FOO#1234** as being identical for the `PatienID` field. 
 
-In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type.
+In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, EDM would see **FOO-1234** and **fOo#1234** as  identical and classify the item as a patient record sensitive information type. 
+
+Both these parameters are used on a per field basis.
 
 > [!IMPORTANT]
 > If you configure *spaces* to be ignored, this will only be effective for primary field columns and for which a sensitive information type that can detect multi-word strings is defined. Otherwise the comparison will be made against each individual word in the content being analyzed.
@@ -143,16 +142,15 @@ The `ignoredDelimiters` flag doesn't support:
 > [!IMPORTANT]
 > When defining your EDM sensitive information type, *ignoreDelimiters* will not affect how the Classification sensitive information type associated with the primary element in an EDM pattern identifies content in an item. So if you configure *ignoreDelimiters* for a searchable field you need to make sure the sensitive information type used for a primary element based on that field will pick strings both with and without those characters present.
 
+> [!IMPORTANT]
+> The number of columns in your sensitive information source table and the number of fields in your schema must match, order doesn't matter.
 
-
-
-
-1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
+1. Define the schema in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the sensitive information source table, there is a line that uses the syntax:
 
       `\<Field name="" searchable=""/\>`.
 
       - Use column names for *Field name* values.
-      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. At least one field must be searchable.
+      - Use *searchable="true"* for the fields that you want to be searchable and primary fields up to a maximum of 5 fields. At least one field must be searchable.
 
       As an example, the following XML file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
 
@@ -174,8 +172,6 @@ The `ignoredDelimiters` flag doesn't support:
       </EdmSchema>
       ```
 
- 4:30 9/17 - READING ENRIQUE'S 3-CREATE-MODIFY-EDM-SCHEMA-DOCX
-
 1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 2. To upload the database schema, run the following cmdlets, one at a time:
@@ -196,30 +192,33 @@ The `ignoredDelimiters` flag doesn't support:
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
 > [!TIP]
-> If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml
+> If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
-#### Set up a rule package
+## Create a rule package manually
 
 1. Create a rule package in XML format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.)
 
-      When you set up your rule package, make sure to correctly reference your .csv or .tsv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
+When you set up your rule package, make sure to correctly reference your .csv or .tsv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields need to be customized to create your EDM sensitive type:
 
-      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
+- **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
 
-      - **Datastore**: This field specifies EDM lookup data store to be used. You provide a data source name of a configured EDM Schema.
+- **Datastore**: This field specifies EDM lookup data store to be used. You provide the data source name of the configured EDM Schema.
 
-      - **idMatch**: This field points to the primary element for EDM.
-        - Matches: Specifies the field to be used in exact lookup. You provide a searchable field name in EDM Schema for the DataStore.
-        - Classification: This field specifies the sensitive type match that triggers EDM lookup. You can provide the Name or GUID of an existing built-in or custom sensitive information type. Be aware that any string that matches the sensitive information type provided will be hashed and compared to every entry in the sensitive information table. In order to avoid causing performance issues, if you use a custom sensitive information type as the Classification element in EDM, avoid using one that will match a large percentage of content (such as "any number" or "any five-letter word") by adding supporting keywords or including formatting in the definition of the custom classification sensitive information type.
+- **idMatch**: This field points to the primary element for EDM.
+- **Matches**: Specifies the field to be used in exact lookup. You provide a searchable field name in EDM Schema for the DataStore.
+- **Classification**: This field specifies the sensitive information type match that triggers EDM lookup. You can use the name or GUID of an existing built-in or custom sensitive information type. 
+        
+> [!NOTE]
+> Be aware that any string that matches the SIT provided will be hashed and compared to every entry in the sensitive information source table. To avoid performance issues if you choose a custom SIT for the classification element, don't use one that will match a large percentage of content. For example one that matches "any number" or "any five-letter word". You can differentiate it by adding supporting keywords or including formatting in the definition of the custom classification SIT.
 
-      - **Match:** This field points to additional evidence found in proximity of idMatch.
-        - Matches: You provide any field name in EDM Schema for DataStore.
-      - **Resource:** This section specifies the name and description for sensitive type in multiple locales.
-        - idRef: You provide GUID for ExactMatch ID.
-        - Name & descriptions: customize as required.
+- **Match**: This field points to additional evidence found in proximity of idMatch.
+- **Matches**: You provide any field name in EDM Schema for DataStore.
+- **Resource idRef:** This section specifies the name and description for sensitive type in multiple locales
+    - You provide GUID for ExactMatch ID.
+    - **Name** & **description**: customize as required.
 
       ```xml
       <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -269,6 +268,9 @@ The `ignoredDelimiters` flag doesn't support:
       ```
 
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
+
+
+NEXT STEP HASH AND UPLOAD
 
 Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field. Consider the following ExactMatch item:
 
