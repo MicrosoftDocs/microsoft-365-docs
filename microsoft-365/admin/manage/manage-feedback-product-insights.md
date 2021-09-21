@@ -121,7 +121,7 @@ You can export raw data for further analysis using the Export to CSV functionali
 
 ### Filters
 
-You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types** (set only to NPS feedback types).
+You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types**.
 
 **Channels** are a way for organizations to select how often they get feature updates for Office. Learn more at [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel
 
@@ -129,6 +129,6 @@ Feedback can be submitted on various **Platforms** like Android, iOS, Mac, and W
 
 The majority of Microsoft 365 for business **Products** can be found under this filter. Use this filter to select the products that have had feedback submitted.
 
-Use **Feedback Types** to filter different types of feedback that we collect. We collect in-app feedback and in-app surveys. Learn more at [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md).
+Use **Feedback Types** (set only to NPS feedback types) to filter feedback that we collect.
 
 :::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
