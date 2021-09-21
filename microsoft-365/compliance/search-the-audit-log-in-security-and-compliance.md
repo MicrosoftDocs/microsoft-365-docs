@@ -404,9 +404,22 @@ Click one of the following links to go to a specific table.
         [Information barriers activities](#information-barriers-activities)
     :::column-end:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
+        [Disposition review activities](#disposition-review-activities)
     :::column-end:::
 :::row-end:::
+
+:::row:::
+    :::column:::
+        [Exchange admin activities](#exchange-admin-audit-log)
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+    :::column:::
+        
+    :::column-end:::
+:::row-end:::
+
 
 ### File and page activities
 
@@ -979,6 +992,8 @@ The following table lists events that result from labeling activities for ShareP
 
 ### Retention policy and retention label activities
 
+The following table describes the configuration activities for [retention policies and retention labels](retention.md) when they were created, reconfigured, or deleted.
+
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
@@ -1026,6 +1041,18 @@ The following table lists the activities in information barriers that are logged
 | Added segments to a site | SegmentsAdded | A SharePoint, global administrator, or site owner added one or more information barriers segments to a site. |
 | Changed segments of a site | SegmentsChanged | A SharePoint or global administrator changed one or more information barriers segments for a site. |
 | Removed segments from a site | SegmentsRemoved | A SharePoint or global administrator removed one or more information barriers segments from a site. |
+||||
+
+### Disposition review activities
+
+The following table lists the activities a disposition reviewer took when an item reached the end of its configured retention period. For more information, see [Viewing and disposing of content](disposition.md#viewing-and-disposing-of-content).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Approved disposal|ApproveDisposal|A disposition reviewer approved the disposition of the item to move it to the next disposition stage. If the item was in the only or final stage of disposition review, the disposition approval marked the item as eligible for permanent deletion.|
+|Extended retention period|ExtendRetentiond|A disposition reviewer extended the retention period of the item.|
+|Relabeled item|RelabelItem|A disposition reviewer relabeled the retention label.|
+|Added reviewers|AddReviewer|A disposition reviewer added one or more other users to the current disposition review stage.|
 ||||
 
 ### Exchange admin audit log
