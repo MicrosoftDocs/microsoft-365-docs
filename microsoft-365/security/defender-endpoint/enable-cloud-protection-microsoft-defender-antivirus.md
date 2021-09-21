@@ -110,11 +110,10 @@ Set-MpPreference -SubmitSamplesConsent SendAllSamples
 
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/). [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender) also has more information specifically on [-SubmitSamplesConsent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent).
 
-> [!NOTE]
-> You can also set **-SubmitSamplesConsent** to `SendSafeSamples` (the default setting), `NeverSend`, or `AlwaysPrompt`. The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will still prompt and require additional confirmation.
-
-> [!WARNING]
-> Setting **-SubmitSamplesConsent** to `NeverSend` or `AlwaysPrompt` will lower the protection level of the device. In addition, setting it to `NeverSend` means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
+> [!IMPORTANT]
+> You can set **-SubmitSamplesConsent** to `SendSafeSamples` (the default, recommended setting), `NeverSend`, or `AlwaysPrompt`. 
+> The `SendSafeSamples` setting means that most samples will be sent automatically. Files that are likely to contain personal information will result in a prompt to continue and will require confirmation.
+> The `NeverSend` and `AlwaysPrompt` settings lower the protection level of the device. Furthermore, the `NeverSend` setting means that the [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) feature of Microsoft Defender for Endpoint won't work.
 
 ## Use Windows Management Instruction (WMI) to turn on cloud protection
 
