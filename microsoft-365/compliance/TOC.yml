@@ -2,6 +2,8 @@
   href: index.yml
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
+- name: Compliance trials
+  href: compliance-easy-trials.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -74,14 +76,12 @@
           href: information-barriers-solution-overview.md 
         - name: Learn about information barriers
           href: information-barriers.md
-        - name: Define information barrier policies
+        - name: Get started with information barriers
           href: information-barriers-policies.md
-        - name: Attributes for information barrier policies
-          href: information-barriers-attributes.md
-        - name: Troubleshooting information barriers
-          href: information-barriers-troubleshooting.md
-        - name: Edit information barrier policies
+        - name: Manage information barriers
           href: information-barriers-edit-segments-policies.md
+        - name: Information barriers attributes
+          href: information-barriers-attributes.md
     - name: Privileged access management
       items:
         - name: Overview

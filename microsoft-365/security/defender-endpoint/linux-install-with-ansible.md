@@ -163,10 +163,10 @@ Create a subtask or role files that contribute to a playbook or task.
 
   - name: Add  Microsoft yum repository for MDATP
     yum_repository:
-      name: packages-microsoft-com-prod-[channel]
+      name: packages-microsoft-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/config/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/ 
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"

@@ -27,7 +27,6 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Defender for Endpoint supports third-party applications to help enhance the detection, investigation, and threat intelligence capabilities of the platform.
@@ -112,7 +111,7 @@ Logo|Partner name|Description
 
 ## SIEM integration
 
-Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.  For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information, see [Enable SIEM integration](enable-siem-integration.md).
 
 ## Ticketing and IT service management
 
@@ -134,7 +133,7 @@ External alerts can be pushed to Defender for Endpoint. These alerts are shown s
 
 You can use threat-intelligence from providers and aggregators to maintain and use indicators of compromise (IOCs).
 
-Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts.  You can also use prevention and automated response capabilities to block execution and take remediation actions when there's a match.
+Defender for Endpoint allows you to integrate with these solutions and act on IoCs by correlating rich telemetry to create alerts. You can also use prevention and automated response capabilities to block execution and take remediation actions when there's a match.
 
 Defender for Endpoint currently supports IOC matching and remediation for file and network indicators. Blocking is supported for file indicators.
 
