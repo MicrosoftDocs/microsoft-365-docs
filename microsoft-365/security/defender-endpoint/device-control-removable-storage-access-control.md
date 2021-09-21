@@ -27,18 +27,17 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
-<br>
+<br><br/>
 
-****
-
-| Privilege | Permission |
-|:---|:---|
-| Access | Read, Write, Execute |
-| Action Mode | Audit, Allow, Prevent |
-| CSP Support | Yes |
-| GPO Support | Yes |
-| User-based Support | Yes |
-| Machine-based Support | Yes |
+|Privilege|Permission|
+|---|---|
+|Access|Read, Write, Execute|
+|Action Mode|Audit, Allow, Prevent|
+|CSP Support|Yes|
+|GPO Support|Yes|
+|User-based Support|Yes|
+|Machine-based Support|Yes|
+|
 
 ## Prepare your endpoints
 
@@ -46,9 +45,9 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
-- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets)
+- **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-:::image type="content" source="images/powershell.png" alt-text="The PowerShell interface":::
+:::image type="content" source="images/powershell.png" alt-text="The PowerShell interface.":::
 
 > [!NOTE]
 > None of Windows Security components need to be active as you can run Removable Storage Access Control independent of Windows Security status.
@@ -57,28 +56,31 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 You can use the following properties to create a removable storage group:
 
-#### Removable Storage Group
-|Property Name  |Description  |Options  |
-|---------|---------|---------|
-|**GroupId**     |   [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.      |         |
-|**DescriptorIdList**     |  List the device properties you want to use to cover in the group. For each device property, see [Device Properties](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true) for more detail.​       |  - **PrimaryId**​: RemovableMediaDevices, CdRomDevices, WpdDevices</br> - **DeviceId​** </br>- **HardwareId​**</br>- **InstancePathId**​: InstancePathId is a string that uniquely identifies the device in the system, for example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*</br>- **FriendlyNameId​**</br>- **SerialNumberId​**</br>- **VID​**</br>- **PID​**</br>- **VID_PID**</br> 0751_55E0: match this exact VID/PID pair </br>_55E0: match any media with PID=55E0 </br>0751_: match any media with VID=0751 |
-|**MatchType**     |    When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.     |  **MatchAll**: </br>​Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values.​ </br> </br>**MatchAny**:</br> ​The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value.​       |
-||||
+### Removable Storage Group
 
-#### Access Control Policy
+<br/><br/>
 
-|Property Name  |Description  |Options  |
-|---------|---------|---------|
-|PolicyRuleId​     |     [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.    |         |
-|IncludedIdList     | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.        |    The Group ID/GUID must be used at this instance.​ </br> ​The following example shows the usage of GroupID:​ </br> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>​`    |
-|ExcludedIDList     | The group(s) that the policy will not be applied to.        |    The Group ID/GUID must be used at this instance.     |
-|Entry Id     |  One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.​       |         |
-|Type|Defines the action for the removable storage groups in IncludedIDList.​ </br>- Enforcement: Allow or Deny​ </br>- Audit: AuditAllowed or AuditDenied​|- Allow​ </br>- Deny​</br> - AuditAllowed: Defines notification and event when access is allowed​</br>- AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.​ </br></br> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**.​|
-|Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine.​||
-|ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry.​||
-|Options|Defines whether to display notification or not​|**0-4**: When Type Allow or Deny is selected.</br>​</br>0: nothing​</br>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification.​ </br> </br>When Type **AuditAllowed** or **AuditDenied** is selected:​</br>0: nothing​</br>1: show notification​</br>2: send event​</br>3: show notification and send event​|
-|AccessMask|Defines the access.​|**1-7**:​ </br></br>1: Read​</br>2: Write​</br>3: Read and Write​</br>4: Execute​</br>5: Read and Execute​</br>6: Write and Execute​</br>7: Read and Write and Execute​|
-||||
+|Property Name|Description|Options|
+|---|---|---|
+|**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.||
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId​**</li><li>**SerialNumberId​**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: match this exact VID/PID pair</li><li>55E0: match any media with PID=55E0 </li><li>0751: match any media with VID=0751</li></ul></li></ul>|
+|**MatchType**|When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.|**MatchAll**: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
+
+### Access Control Policy
+
+<br/><br/>
+
+|Property Name|Description|Options|
+|---|---|---|
+|PolicyRuleId |[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.||
+|IncludedIdList|The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
+|ExcludedIDList|The group(s) that the policy will not be applied to.|The Group ID/GUID must be used at this instance.|
+|Entry Id|One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.||
+|Type|Defines the action for the removable storage groups in IncludedIDList. <ul><li>Enforcement: Allow or Deny </li><li>Audit: AuditAllowed or AuditDenied</ul></li> | <ul><li>Allow</li><li>Deny </li><li>AuditAllowed: Defines notification and event when access is allowed​</li><li>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.</li></ul> <p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
+|Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. ||
+|ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. ||
+|Options|Defines whether to display notification or not |**0-4**: When Type Allow or Deny is selected. <ul><li>0: nothing</li><li>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. </li></ul> <p> When Type **AuditAllowed** or **AuditDenied** is selected: <ul><li>0: nothing​</li><li>1: show notification​</li><li>2: send event</li><li>3: show notification and send event </li></ul>|
+|AccessMask|Defines the access. |**1-7**: <ol><li>Read​</li><li>Write​</li><li>Read and Write​</li><li>Execute​</li><li>Read and Execute</li><li>Write and Execute </li><li>Read and Write and Execute</li></ol> |
 
 ## Common Removable Storage Access Control scenarios
 
@@ -126,7 +128,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     The following image illustrates the example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices":::
+    :::image type="content" source="images/prevent-write-access-allow-usb.png" alt-text="The screen displaying the configuration settings that allow specific approved USBs on devices.":::
 
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
@@ -134,7 +136,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
-    :::image type="content" source="images/usage-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute":::
+    :::image type="content" source="images/usage-sid-property.png" alt-text="The screen displaying a code that indicates usage of the SID property attribute.":::
 
 3. Save both rule and group XML files on the network share folder and put the network share folder path into the Group Policy setting: **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Device Control**: **'Define device control policy groups'** and **'Define device control policy rules'**.
 
@@ -142,7 +144,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
    - The target machine must be able to access the network share to have the policy. However, once the policy is read, the network share connection is no longer required, even after machine reboot.
 
-    :::image type="content" source="images/device-control.png" alt-text="The Device Control screen":::
+    :::image type="content" source="images/device-control.png" alt-text="The Device Control screen.":::
 
 ## Deploying and managing policy via Intune OMA-URI
 
@@ -162,7 +164,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
 ### Deploying policy via OMA-URI
 
-**Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
+Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 and later & Profile: Custom**
 
 1. For each Group, create an OMA-URI rule:
     - OMA-URI:
@@ -175,12 +177,12 @@ For policy deployment in Intune, the account must have permissions to create, ed
 
     - Data Type: String (XML file)
 
-      :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type":::
+      :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type.":::
 
 2. For each policy, also create an OMA-URI:
     - OMA-URI:
 
-      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bFA6BE102-0784-4A2A-B010-A0BEBEBF68E1%7d/RuleData`
+      `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
 
       For example, for the **Block Write and Execute Access but allow approved USBs** rule in the sample, the link must be:
 
@@ -194,14 +196,14 @@ This capability (in Microsoft Endpoint Manager admin center (<https://endpoint.m
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
-The Microsoft 365 security portal shows removable storage blocked by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
+The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 for E5 reporting
 
 ```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == &quot;RemovableStoragePolicyTriggered&quot;
+| where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
 | extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
 | extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
@@ -215,12 +217,11 @@ DeviceEvents
 | extend MediaProductId = tostring(parsed.ProductId) 
 | extend MediaVendorId = tostring(parsed.VendorId) 
 | extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-| extend MediaVolume = tostring(parsed.Volume) 
-| project Timestamp, DeviceId, DeviceName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber, MediaVolume
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
 | order by Timestamp desc
 ```
 
-:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage":::
+:::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
 ## Frequently asked questions
 
@@ -233,6 +234,8 @@ We've validated one USB group with 100,000 media - up to 7 MB in size. The polic
 The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
 Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+
+If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 

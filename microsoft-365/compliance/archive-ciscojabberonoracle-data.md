@@ -24,7 +24,7 @@ After Cisco Jabber on Oracle data is stored in user mailboxes, you can apply Mic
 
 The following overview explains the process of using a connector to archive the Cisco Jabber on Oracle data in Microsoft 365.
 
-![Archiving workflow for Cisco Jabber on Oracle data](../media/CiscoJabberOnOracleConnectorWorkflow.png)
+![Archiving workflow for Cisco Jabber on Oracle data.](../media/CiscoJabberOnOracleConnectorWorkflow.png)
 
 1. Your organization works with Cisco Jabber on Oracle to set up and configure a Cisco Jabber on Oracle site.
 

@@ -24,7 +24,7 @@ After Bloomberg Message data is stored in user mailboxes, you can apply Microsof
 
 The following overview explains the process of using a connector to archive Bloomberg Message data in Microsoft 365.
 
-![Bloomberg Message import and archive process](../media/BloombergMessageArchiving.png)
+![Bloomberg Message import and archive process.](../media/BloombergMessageArchiving.png)
 
 1. Your organization works with Bloomberg to set up a Bloomberg SFTP site. You'll also work with Bloomberg to configure Bloomberg Message to copy email messages to the Bloomberg SFTP site.
 
@@ -86,11 +86,11 @@ The first step is to obtain a copy of the PGP and SSH public keys. You use these
 
 5. On the **Add credentials for content source** page, click **I want to use PGP and SSH public keys provided by Microsoft**.
 
-   ![Select the option to use public keys](../media/BloombergMessagePublicKeysOption.png)
+   ![Select the option to use public keys.](../media/BloombergMessagePublicKeysOption.png)
 
 6. Under step 1, click the **Download SSH key**, **Download PGP key**, and **Download IP address** links to save a copy of each file to your local computer.
 
-   ![Links to download public keys and IP address](../media/BloombergMessagePublicKeyDownloadLinks.png)
+   ![Links to download public keys and IP address.](../media/BloombergMessagePublicKeyDownloadLinks.png)
 
    These files contain the following items that are used to configure the Bloomberg SFTP site in Step 2:
 
@@ -174,7 +174,7 @@ To obtain the IP address:
 
 6. Under step 1, click **Download IP address** to save a copy of the IP address file to your local computer.
 
-   ![Download the IP address](../media/BloombergMessageConnectorIPAddress.png)
+   ![Download the IP address.](../media/BloombergMessageConnectorIPAddress.png)
 
 7. Click **Cancel** to close the wizard. You come back to this wizard in Step 2 to create the connector.
 
@@ -194,7 +194,7 @@ After your Bloomberg SFTP site is configured, the next step is to create a Bloom
 
 5. On the **Add credentials for content source** page, click **I want to use PGP and SSH private keys**.
 
-   ![Select the option to use private keys](../media/BloombergMessagePrivateKeysOption.png)
+   ![Select the option to use private keys.](../media/BloombergMessagePrivateKeysOption.png)
 
 6. Under Step 3, enter the required information in the following boxes and then click **Validate connection**.
 

@@ -35,7 +35,7 @@ After a search associated with a Core eDiscovery case is successfully run, you c
 
 5. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
 
-   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+   ![Export results option in Actions menu.](../media/ActionMenuExportResults.png)
 
    The workflow to export the results of a search associated with a Core eDiscovery case is that same as exporting the search results for a search on the **Content search** page. For step-by-step instructions, see [Export content search results](export-search-results.md).
 
@@ -46,7 +46,7 @@ After a search associated with a Core eDiscovery case is successfully run, you c
   
 6. Click the **Exports** tab in the case to display the list of export jobs.
   
-   ![Export jobs on the Export tab in Core eDiscovery case](../media/CoreeDiscoveryExport.png)
+   ![Export jobs on the Export tab in Core eDiscovery case.](../media/CoreeDiscoveryExport.png)
 
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
 

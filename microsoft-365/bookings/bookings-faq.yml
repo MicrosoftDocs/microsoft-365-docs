@@ -29,7 +29,7 @@ sections:
       - question: |
           Who has access to Microsoft Bookings?
         answer: |
-          Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
+          Bookings is available and active by default for Microsoft 365 Business Premium, Microsoft 365 Business Standard, F1, F3, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
 
       - question: |
           Will my customers see my personal or business calendar?
@@ -44,7 +44,7 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
+          Anyone who is licensed for Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3, E5, F1, F3, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
 
       - question: |
           Can I use Bookings in my own Web site?
@@ -130,7 +130,7 @@ sections:
         answer: |
           Bookings is available with the following subscriptions: 
           - Office 365: A3, A5, E3, E5, F1, F3
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Premium. 
+          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. 
           You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
           
           A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.

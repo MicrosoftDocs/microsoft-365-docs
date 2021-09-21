@@ -24,7 +24,7 @@ After Reuters FX data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive Reuters FX data in Microsoft 365.
 
-![Archiving workflow for Reuters FX data](../media/ReutersFXConnectorWorkflow.png)
+![Archiving workflow for Reuters FX data.](../media/ReutersFXConnectorWorkflow.png)
 
 1. Your organization works with Reuters FX to set up and configure a Reuters FX site.
 

@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft Viva Learning (Preview) in the Teams admin center"
+title: Set up Microsoft Viva Learning (Preview) in the Teams admin center
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: None
-description: "Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center."
+description: Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center.
 ---
 
 # Set up Microsoft Viva Learning (Preview) in the Teams admin center
@@ -53,11 +53,11 @@ Users who have been enabled for Public Preview testing — by enabling the [poli
 
 1. Users must select their profile image > **About** > **Public Preview**.
 
-    ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+    ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
 
 2. Users must accept the Public Preview terms and conditions.
 
-    ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+    ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
 
 3. Users can now find Viva Learning (Preview) in the Teams app store and start using it.
 
@@ -96,11 +96,11 @@ The Teams admin installs Viva Learning (Preview) and applies permission policies
 
     1. Users must select their profile image > **About** > **Public Preview**.
    
-        ![Upper navigation in the Teams application showing user's profile](../media/learning/learning-app-select-profile-teams.png)
+        ![Upper navigation in the Teams application showing user's profile.](../media/learning/learning-app-select-profile-teams.png)
     
     2. Users must accept the **Public preview** terms and conditions.
 
-        ![Switch to public preview build](../media/learning/learning-app-switch-to-public-preview.png)
+        ![Switch to public preview build.](../media/learning/learning-app-switch-to-public-preview.png)
  
 3. For organizations that have restrictive policies and need to enable Viva Learning (Preview), follow the process in the next section.
 

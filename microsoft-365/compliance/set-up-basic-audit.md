@@ -27,7 +27,7 @@ Basic Audit in Microsoft 365 lets you search for audit records for activities pe
 
 This article discusses the following steps necessary to set up Basic Audit.
 
-![Steps to set up Basic Audit](../media/BasicAuditingWorkflow.png)
+![Steps to set up Basic Audit.](../media/BasicAuditingWorkflow.png)
 
 These steps include ensuring the proper organizational subscriptions and user licensing required to generate and preserve audit records and assigning permissions to team members of your security operations, IT, compliance, and legal teams so that can search the audit log.
 
@@ -47,7 +47,7 @@ Admins and members of investigation teams must be assigned the View-Only Audit L
 
 The following screenshot shows the two audit-related roles assigned to the Organization Management role group in the Exchange admin center.
 
-![Audit roles assigned to role group in Exchange Online](../media/EACAuditRoles.png)
+![Audit roles assigned to role group in Exchange Online.](../media/EACAuditRoles.png)
 
 ## Step 3: Search the audit log
 
@@ -59,7 +59,7 @@ Now you're ready to search the audit log in the Microsoft 365 compliance center.
 
 3. On the **Audit** page, configure the search using the following conditions on the **Search** tab. 
 
-   ![Configuration settings for audit log search](../media/AuditLogSearchToolMCCCallouts.png)
+   ![Configuration settings for audit log search.](../media/AuditLogSearchToolMCCCallouts.png)
 
    1. **Date and time range**. Select a date and time range to display the events that occurred within that period. The date and time are presented in local time. The last seven days are selected by default.
   

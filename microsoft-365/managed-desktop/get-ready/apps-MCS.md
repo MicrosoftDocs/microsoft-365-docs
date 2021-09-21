@@ -36,7 +36,7 @@ To work with MCS app packaging, **you must provide these elements**:
 
 Start the packaging process by uploading the app information to the Microsoft Managed Desktop portal. The packaging team reviews new submissions every Thursday. After review and packaging, the packaged apps are delivered the following Friday. Up to five apps per week can be packaged to start but the service can scale to meet your needs.
 
-![calendar showing app inflow on a Thursday (the 21st in this example), media validation the next day, packaging on the following Monday (the 25th), and app delivery on the subsequent Friday (the 29th)](../../media/MCS-cal.png)
+![calendar showing app inflow on a Thursday (the 21st in this example), media validation the next day, packaging on the following Monday (the 25th), and app delivery on the subsequent Friday (the 29th).](../../media/MCS-cal.png)
 
 You'll be notified once the app has been delivered. At that point, you have 21 days to perform acceptance testing and approve the work in the Microsoft Managed Desktop portal. If discover some problem with the app during your acceptance testing, reject the app in the Microsoft Managed Desktop portal and you will be connected via email with an MCS packager to understand and resolve the issue.
 

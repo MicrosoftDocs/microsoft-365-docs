@@ -55,7 +55,7 @@ Check for duplicate users or distribution list with the same user ID.
 
 An eDiscovery or content search may yield the following error: `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
-![Search-specific location fails error screenshot](../media/edisc-tshoot-specific-location-search-fails.png)
+![Search-specific location fails error screenshot.](../media/edisc-tshoot-specific-location-search-fails.png)
 
 ### Resolution
 
@@ -75,7 +75,7 @@ If you receive this error, we recommend that you verify the locations that faile
 
 ## Error/issue: File not found
 
-When running an eDiscovery search that includes SharePoint Online and One Drive For Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file can't be found on the site or if the index is out of date. Here's the text of an actual error (with emphasis added).
+When running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations, you may receive the error `File Not Found` although the file is located on the site. This error will be in the export warnings and errors.csv or skipped items.csv. This may occur if the file can't be found on the site or if the index is out of date. Here's the text of an actual error (with emphasis added).
 
 > 28.06.2019 10:02:19_FailedToExportItem_Failed to download content. Additional diagnostic info : Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Failed to download from content 6ea52149-91cd-4965-b5bb-82ca6a3ec9be of type Document. Correlation Id: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***File Not Found***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse()
 --- End of inner exception stack trace ---
@@ -88,17 +88,16 @@ When running an eDiscovery search that includes SharePoint Online and One Drive 
 
 ## Error/issue: This file wasn't exported because it doesn't exist anymore. The file was included in the count of estimated search results because it's still listed in the index. The file will eventually be removed from the index, and won't cause an error in the future.
 
-You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
+You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. eDiscovery relies on the SPO index to identify the file locations. If the file was deleted but the SPO index was not yet updated this error may occur.
 
 ### Resolution 
+
 Open the SPO location and verify that this file indeed is not there.
 Suggested solution is to manually reindex the site, or wait until the site reindexes by the automatic background process.
 
-
 ## Error/issue: This search result was not downloaded as it is a folder or other artifact that can't be downloaded by itself, any items inside the folder or library will be downloaded.
 
-You may see that error when running an eDiscovery search that includes SharePoint Online and One Drive For Business locations. It means that we were going to try to export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
-
+You may see that error when running an eDiscovery search that includes SharePoint Online and OneDrive for Business locations. It means that we were going to try and export the item reported in the index, but it turned out to be a folder so we did not export it. As mentioned in the error, we don't export folder items but we do export their contents.
 
 ## Error/issue: Search fails because recipient is not found
 
@@ -115,6 +114,16 @@ An eDiscovery search fails with error the `recipient not found`. This error may 
    ```
 
 3. There should be a mail user object for the user question. If nothing is returned, investigate the user object. Contact Microsoft Support if the object can't be synced.
+
+## Issue/Error: Search fails with error CS007
+
+When performing a Content search or a search associated with a Core eDiscovery case, a transient error occurs and the search fails with a CS007 error.
+
+### Resolution
+
+1. Update the search and reduce the complexity of the search query.  For example, a wildcard search may return too many results for the system to process, which causes a CS007 error.
+
+2. Rerun the updated search.
 
 ## Error/issue: Exporting search results is slow
 
@@ -156,7 +165,7 @@ When exporting search results from Core eDiscovery or Content search in the Micr
 
 When running an eDiscovery search, if the search continually fails with error similar to "Internal server error (500) occurred", you may need rerun the search only on specific mailbox locations.
 
-![Internal server error 500 screenshot](../media/edisc-tshoot-error-500.png)
+![Internal server error 500 screenshot.](../media/edisc-tshoot-error-500.png)
 
 ### Resolution
 

@@ -24,7 +24,7 @@ After Signal Archiver connector data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a connector to archive  Signal communication data in Microsoft 365.
 
-![Signal communications archiving workflow](../media/SignalConnectorWorkflow.png)
+![Signal communications archiving workflow.](../media/SignalConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Signal Archiver connector. For more information, see [Activating the TeleMessage Signal Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/).
 

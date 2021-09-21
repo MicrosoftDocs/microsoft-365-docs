@@ -69,14 +69,20 @@ In order to preview new features and provide early feedback, it is recommended t
     ```bash
     sudo yum install yum-utils
     ```
+
 - Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-    Use the following table to help guide you in locating the package: 
+    Use the following table to help guide you in locating the package:
 
-    |     Distro & version    |     Package    |
+    <br>
+
+    ****
+
+    |Distro & version|Package|
     |---|---|
-    |     For RHEL 8.0-8.5    |     https://packages.microsoft.com/config/rhel/8/prod/    |
-    |     For RHEL 7.2-7.9    |     https://packages.microsoft.com/config/rhel/7/prod/    |
+    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
+    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
+    |
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
@@ -265,7 +271,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
     ```Output
     deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/cofig/ubuntu/18.04/prod bionic main
+    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
     ```
 
     ```bash
@@ -280,7 +286,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:

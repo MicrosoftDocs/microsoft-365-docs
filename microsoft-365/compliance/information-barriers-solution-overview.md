@@ -33,7 +33,7 @@ Information barriers are supported in Microsoft Teams, SharePoint Online, and On
 
 Use the following steps to configure information barriers for your organization:
 
-![Insider risk solution information barriers steps](../media/ir-solution-ib-steps.png)
+![Insider risk solution information barriers steps.](../media/ir-solution-ib-steps.png)
 
 1. Learn about [information barriers](information-barriers.md) in Microsoft 365
 2. Configure [prerequisites and permissions](information-barriers-policies.md#prerequisites)
