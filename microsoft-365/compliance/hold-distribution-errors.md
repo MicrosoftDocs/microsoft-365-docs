@@ -171,36 +171,6 @@ If the above cmdlet shows the SMTP address is not a valid mailbox, remove it fro
 Set-CaseHoldPolicy "policyname" -RemoveExchangeLocation "non-mailbox user"
 ```
 
-## Error: MultipleInactiveRecipients
-
-If you see this error message in **ResultCode: MultipleInactiveRecipient** and the following error message, more than one inactive mailboxes have been found and the sync is now broken on those mailboxes.
-
-> We can't identify this user with the existing identifiers. The link between this user and the policy is broken. This usually happens for user whose status have changed from active to inactive after this policy was created. Regardless of the broken link, this user is still on hold if you didn't see any errors the first time you created this hold policy. To fix this issue, update the user identifier in this policy. Some possible candidates we identified are 'matching mailboxes'. For more information, see 'https://go.microsoft.com/fwlink/?linkid=2148779'.
-
-### Resolution
-
-Correct the mailboxes on the policy by adding in the inactive mailbox on the policy.
-
-```powershell
-Set-CaseHoldPolicy "policyname" -AddExchangeLocation ".<SMTP address>"
-```
-
-## Error: ActiveDirectorySyncError
-
-If you see this error message on **ResultCode: ActiveDirectorySyncError** and the following error message, a duplicate SMTP address have been found on one or more objects in Azure AD.
-
-> An error occurred when applying a hold on a user due to AAD.
-
-### Resolution
-
-Correct the SMTP address on the Endpoint property and redeploy the policy. To learn more about manage users in Azure Active Directory, see [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
-
-```powershell
-Set-CaseHoldPolicy "policyname" -RetryDistribution
-```
-
-Also in the Case hold UI you can also redeploy the policy using the Retry button.
-
 ## More information
 
 The guidance about updating hold policies for multiple users in the "Recommended practices" section results from the fact that the system blocks simultaneous updates to a hold policy. That means when an updated hold policy is applied to new content locations and the hold policy is in a pending state, additional content locations can't be added to the hold policy. Here are some things to keep in mind to help you mitigate this issue:
