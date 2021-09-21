@@ -20,6 +20,9 @@ f1.keywords: NOCSH
 
 On this tab, you will upload a single zip package containing your binaries, dependencies and scripts used to run your test suite.
 
+    > [!NOTE]
+    > The size of the zip package should be between a minimum of 10 MB and a maximum of 2 GB.
+
 ## Upload package zip file
 
 ![Upload your binaries.](Media/AddBinaries.png)
