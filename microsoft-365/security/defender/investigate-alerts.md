@@ -44,7 +44,7 @@ By default, the alerts queue in the Microsoft 365 Defender portal displays the n
 
 From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can specify a subset of the alerts. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter-main.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal.":::
 
 You can filter alerts according to these criteria:
 
