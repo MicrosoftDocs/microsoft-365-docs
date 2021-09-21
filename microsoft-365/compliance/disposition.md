@@ -65,7 +65,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### Enable auditing
 
-Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md). 
 
 ## Disposition reviews
 
