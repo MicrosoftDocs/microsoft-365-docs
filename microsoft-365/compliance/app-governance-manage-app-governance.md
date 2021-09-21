@@ -20,8 +20,6 @@ description: "Implement Microsoft app governance capabilities to govern your app
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-[![Sign up for the free trial of app governance](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
-
 > [!NOTE]
 > To sign up for app governance, see [Get started with app governance (in preview)](app-governance-get-started.md).
 
