@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "You must be an admin for a business subscription to get admin help or online or phone support in Microsoft 365 Business Premium."
+description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
 # Get support
 
-## Watch: Get help or support 
+## Watch: Get help or support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -42,11 +42,14 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. (For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
+2. On the bottom right side of the page, select **Help & support**.
+3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
+4. If the results don't help, at the bottom, select **Contact Support**.
+5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
 
-1. If the results don't help, select **Contact support**.
-
-1. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
+    > [!NOTE]
+    > If you bought your subscription through a partner, you first see the contact information for that partner. Alternatively, select **New Microsoft service request** at the bottom of the pane.
 
 ## Phone support
 
@@ -155,7 +158,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 
 ### Open an online request
 
-Save time by starting your service request online. In the 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
+Save time by starting your service request online. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### Call support
 
@@ -174,19 +177,14 @@ With Office 365 you can designate several types of administrators who serve diff
 The administrator is:
 
 - Responsible for service administration and account maintenance.
-
 - The primary contact that sets up and supports each service user.
-
 - Authorized to submit service requests to 21Vianet.
 
 The administrator's role is to:
 
 - Provide user account setup and configuration to allow users access to the services.
-
 - Address client connectivity, client software, and mobility installation issues.
-
 - Address service availability issues within the customer's organizational span of control.
-
 - Use self-service support resources to resolve support issues.
 
 The administrator is expected to provide initial assistance for the customer's users. However, if the administrator is unable to resolve issues with the help of self-service support resources, he or she should [Contact support](#contact-support).
@@ -196,17 +194,11 @@ The administrator is expected to provide initial assistance for the customer's u
 21Vianet's support role is to:
 
 - Troubleshoot and provide technical guidance for customer issues and escalations.
-
 - Gather and validate information related to specific service requests.
-
 - Provide issue coordination and resolution management.
-
 - Maintain communication with the administrators to help ensure that issues are addressed on an ongoing basis.
-
 - Provide assistance with licensing, invoicing, and subscription inquiries.
-
 - Provide assistance with purchasing and trial inquiries.
-
 - Continually gather customer feedback on how to improve the service through surveys.
 
 ## Feature availability
@@ -240,8 +232,8 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 | Region | Phone number | Hours |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Germany | 0800&nbsp;589&nbsp;2330 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin</li><li>English: Mon-Fri 9-5 Berlin</li></ul>Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul>Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
-| All other markets within the European Economic Area | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>English: Mon-Fri 9-5 Berlin (UTC +1)</li></ul>Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul>Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
+| Germany | 0800&nbsp;589&nbsp;2330 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin</li><li>English: Mon-Fri 9-5 Berlin</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
+| All other markets within the European Economic Area | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>English: Mon-Fri 9-5 Berlin (UTC +1)</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
 
 ## Let our community help
 
