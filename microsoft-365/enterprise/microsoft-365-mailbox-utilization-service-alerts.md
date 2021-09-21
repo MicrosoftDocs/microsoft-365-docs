@@ -1,8 +1,8 @@
 ---
 title: "Mailbox utilization service alerts"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 
 audience: Admin
 ms.topic: article
