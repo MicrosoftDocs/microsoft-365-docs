@@ -25,13 +25,12 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 # Get support
 
+::: moniker range="o365-worldwide"
 ## Watch: Get help or support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
-
-::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
 > You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
@@ -97,15 +96,10 @@ Assistance for billing and subscription management issues is available online or
 Here are some examples of billing and subscription management issues:
 
 - Signing up for a trial or purchasing a subscription
-
 - Converting from a trial subscription to a paid subscription
-
 - Understanding the bill
-
 - Renewing a subscription
-
 - Adding or removing licenses
-
 - Canceling a paid subscription
 
 ## Technical support
@@ -114,8 +108,8 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 | Support category | Examples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation and setup | Exchange Online  <ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation and setup</li></ul> |
-| Configuration | Service configuration issues  <ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
+| Installation and setup | Exchange Online<ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul><br /> SharePoint Online<ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul><br />Skype for Business Online<ul><li>Installation and creating contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation and setup</li></ul> |
+| Configuration | Service configuration issues<ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
 
 > [!NOTE]
 > You can learn how to contact technical support here: [Contact support](#contact-support).
@@ -127,8 +121,8 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 | Severity level | Operations and support description | Examples |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sev A (Critical) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Widespread problems sending or receiving mail.</li><li>SharePoint site down.</li> <li>All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.</li></ul> |
-| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li> <li>Setting is impossible from EAC (Exchange admin center) but possible in Windows PowerShell.</li></ul> |
+| Sev A (Critical) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Widespread problems sending or receiving mail.</li><li>SharePoint site down.</li><li>All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.</li></ul> |
+| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li><li>Setting is impossible from EAC (Exchange admin center) but possible in Windows PowerShell.</li></ul> |
 | Sev C (Non-critical) | The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists. | <ul><li>How to set user password that never expires.</li> <li>User can't delete contact information in Exchange Online.</li></ul> |
 
 ## Technical support initial response times
@@ -137,7 +131,7 @@ Initial response time is based on the severity levels described above. 21Vianet 
 
 | Security level <sup>1</sup> | 21Vianet customer support team Initial response | Customer responsibility |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sev A <sup>2</sup>  (Critical) | Initial Response: 1 hour or less; Follow up: continues effort until problem resolution. | Provide solid business impact statement (see the severity A description and examples above); Allocate resource to ensure continues collaboration with 21Vianet customer support agent for the joint investigation and necessary communication; Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
+| Sev A <sup>2</sup>  (Critical) | Initial Response: 1 hour or less.<br />Follow up: continues effort until problem resolution. | Provide solid business impact statement (see the severity A description and examples above); Allocate resource to ensure continues collaboration with 21Vianet customer support agent for the joint investigation and necessary communication; Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 | Sev B (High) | Initial Response: 1 business day or less. | Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 | Sev C (Medium) | Initial Response: 3 business day or less. | Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 
