@@ -44,39 +44,39 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker range="o365-worldwide"
 
-2. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
+2. In the admin center, go to the **Teams & Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
     
-3. On the **Shared mailboxes** page, select **+ Add a mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
+3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. The chooses the email address, but you can edit it if needed.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Select **Add**. It may take a few minutes before you can add members.
+4. Select **Save changes**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
    ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
+6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
 
    ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
-You have a shared mailbox and it includes a shared calendar. Now go on to the next step: block sign-in for the shared mailbox account.
+You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
 
 ## Which permissions should you use?
 
