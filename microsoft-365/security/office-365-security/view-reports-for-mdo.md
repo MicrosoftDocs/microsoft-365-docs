@@ -37,7 +37,9 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ### View reports
 
-Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
+1. Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
+
+1. Choose the report you want to view, and then select **View details**.  
 
 ![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-reports.png)
 
