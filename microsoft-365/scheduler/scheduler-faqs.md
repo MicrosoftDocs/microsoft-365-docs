@@ -9,6 +9,7 @@ ms.service: scheduler
 localization_priority: Normal
 description: "Scheduler for Microsoft 365 FAQs"
 ---
+
 # Scheduler for Microsoft 365 FAQs
 
 **Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</br>
@@ -32,29 +33,25 @@ Outlook doesn't need to be open in the background. All you need to do is send Co
 Scheduler uses Scheduling Intelligence (AI) augmented with human assistants. If AI models generate a need for support in the natural language of communication with Cortana, the meeting request escalates to a human for review and completion.
 
 **Question:** Who are the humans that review escalated requests? </br>
-Scheduler assistants are Microsoft Supplier Security and Privacy Assurance (SSPA) certified for personal and highly confidential information. 
+Scheduler assistants are Microsoft Supplier Security and Privacy Assurance (SSPA) certified for personal and highly confidential information.
 
 **Question:** What can SSPA Assistants view?</br>
-Scheduler and the SSPA Assistants can view  the emails that are addressed to Cortana. In a threaded email exchange, only the emails that include Cortana’s email address will be processed, not the previous emails in the thread before Cortana was added.   
+Scheduler and the SSPA Assistants can view  the emails that are addressed to Cortana. In a threaded email exchange, only the emails that include Cortana’s email address will be processed, not the previous emails in the thread before Cortana was added.
 
-**Question:** Is customer data retained in the Scheduler’s Data Flow?​ </br>
+**Question:** Is customer data retained in the Scheduler's Data Flow? </br>
 Scheduler stores all customer content within the tenant boundaries and retains data in accordance with GDPR guidelines, Microsoft 365 Trust & Privacy policies, and tenant email policies.
 
-**Question:** How does Scheduler process the free/busy data of internal attendees?​ </br>
-Scheduler’s automation uses the *findMeetingTimes* service to identify times that are mutually available for attendees and the organizer. This service powers other Outlook experiences such as *Suggested Times* in the Outlook meeting form. Free/busy attendee information is not consumed explicitly as free/busy blocks.​ 
+**Question:** How does Scheduler process the free/busy data of internal attendees? </br>
+Scheduler's automation uses the *findMeetingTimes* service to identify times that are mutually available for attendees and the organizer. This service powers other Outlook experiences such as *Suggested Times* in the Outlook meeting form. Free/busy attendee information is not consumed explicitly as free/busy blocks.
 
 **Question:** Is Scheduler GDPR Compliant? </br>
 Yes.
 
 **Question:** Who has access to the Cortana mailbox? </br>
-Scheduler processes meeting requests and associated emails that are sent to your tenant’s Cortana mailbox. Microsoft does not have any other access to the Cortana mailbox except through Lockbox approval at the request of the tenant admin.  
+Scheduler processes meeting requests and associated emails that are sent to your tenant’s Cortana mailbox. Microsoft does not have any other access to the Cortana mailbox except through Lockbox approval at the request of the tenant admin.
 
 **Question:** Is customer data used for training AI models?</br>
-No customer content from Scheduler for Microsoft 365 can be used for data training sets. All customer content resides in the customer tenant. ​ 
+No customer content from Scheduler for Microsoft 365 can be used for data training sets. All customer content resides in the customer tenant.
 
 **Question:** Will Scheduler process encrypted mail?</br>
-No, encrypted mail will be rejected by the Scheduler workflow. 
-
-
-
-
+No, encrypted mail will be rejected by the Scheduler workflow.

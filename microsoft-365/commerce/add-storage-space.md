@@ -19,6 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- AdminTemplateSet
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ms.date: 04/02/2021
@@ -41,7 +42,7 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
 
-   ![Storage bar on the Active sites page](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
+   ![Storage bar on the Active sites page.](/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
    > [!NOTE]
    > The storage used doesn't include changes made within the last 24-48 hours.
@@ -82,6 +83,8 @@ Office 365 Extra File Storage is available for the following subscriptions:
 - Office 365 Enterprise E3
 - Office 365 Enterprise E4
 - Office 365 Enterprise E5
+- Office 365 A3 (faculty)
+- Office 365 A5 (faculty)
 - Office for the web with SharePoint Plan 1
 - Office for the web with SharePoint Plan 2
 - SharePoint Online Plan 1

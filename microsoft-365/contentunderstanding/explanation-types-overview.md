@@ -1,5 +1,5 @@
 ---
-title: "Explanation types in Microsoft SharePoint Syntex"
+title: Explanation types in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: "Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex."
+description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
 ---
 
 # Explanation types in Microsoft SharePoint Syntex
@@ -37,17 +37,17 @@ While not a requirement, you can achieve better success with your explanation if
 
 If case sensitivity is a requirement in identifying your label, using the phrase list type allows you to specify it in your explanation by selecting the **Only exact capitalization** checkbox.
 
-![Case sensitivity](../media/content-understanding/case-sensitivity.png)
+![Case sensitivity.](../media/content-understanding/case-sensitivity.png)
 
 A phrase type is especially useful when you create an explanation that identifies and extracts information in different formats, such as dates, phone numbers, and credit card numbers. For example, a date can be displayed in many different formats (1/1/2020, 1-1-2020, 01/01/20, 01/01/2020, or Jan 1,2020). Defining a phrase list makes your explanation more efficient by capturing any possible variations in the data that you're trying to identify and extract.
 
 For the *phone number* example, you extract the phone number for each referring doctor from all Medical Referral documents that the model identifies. When you create the explanation, type the different formats a phone number might display in your document so that you're able to capture possible variations.
 
-![Phone number phrase patterns](../media/content-understanding/pattern-list.png)
+![Phone number phrase patterns.](../media/content-understanding/pattern-list.png)
 
 For this example, in **Advanced Settings** select the **Any digit from 0-9** checkbox to recognize each "0" value used in your phrase list to be any digit from 0 through 9.
 
-![Any digit from 0-9](../media/content-understanding/digit-identity.png)
+![Any digit from 0-9.](../media/content-understanding/digit-identity.png)
 
 Similarly, if you create a phrase list that includes text characters, select the **Any letter from a-z** checkbox to recognize each "a" character used in the phrase list to be any character from "a" to "z".
 
@@ -56,14 +56,14 @@ For example, if you create a **Date** phrase list and you want to make sure that
 - Add *aaa 0, 0000* and *aaa 00, 0000* to your phrase list.
 - Make sure that **Any letter from a-z** is also selected.
 
-![Any letter from a-z](../media/content-understanding/any-letter.png)
+![Any letter from a-z.](../media/content-understanding/any-letter.png)
 
 If you have capitalization requirements in your phrase list, you can select the **Only exact capitalization** checkbox. For the date example, if you require the first letter of the month to be capitalized, you need to:
 
 - Add *Aaa 0, 0000* and *Aaa 00, 0000* to your phrase list.
 - Make sure that **Only exact capitalization** is also selected.
 
-![Only exact capitalization](../media/content-understanding/exact-caps.png)
+![Only exact capitalization.](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
 > Instead of manually creating a phrase list explanation, use the [explanation library](explanation-types-overview.md#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
@@ -132,7 +132,7 @@ Redmond, WA 98034<br>
 
 Use the proximity explanation to define how far away the phone number explanation is to better identify the street address number in your documents.
 
-![Proximity explanation](../media/content-understanding/proximity.png)
+![Proximity explanation.](../media/content-understanding/proximity.png)
 
 #### What are tokens?
 
@@ -168,7 +168,7 @@ There are three tokens in *(mobile)*:
 
 Configure the proximity setting to have a range of 0 through 3.
 
-![Proximity example](../media/content-understanding/proximity-example.png)
+![Proximity example.](../media/content-understanding/proximity-example.png)
 
 ## Configure where phrases occur in the document
 
@@ -176,7 +176,7 @@ When you create an explanation, by default the entire document is searched for t
 
 Referring to our Medical Referral document example, the *referring doctor* is always mentioned in the first paragraph of the document. With the **Where these phrases occur** setting, in this example you can configure your explanation to search for this label only in the beginning section of the document, or any other location in which it might occur.
 
-![Where these phrases occur setting](../media/content-understanding/phrase-location.png)
+![Where these phrases occur setting.](../media/content-understanding/phrase-location.png)
 
 You can choose the following options for this setting:
 
@@ -184,23 +184,23 @@ You can choose the following options for this setting:
 
 - Beginning of the file:  The document is searched from the beginning to the phrase location.
 
-   ![Beginning of file](../media/content-understanding/beginning-of-file.png)
+   ![Beginning of file.](../media/content-understanding/beginning-of-file.png)
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **End position** value will update to show the number of tokens your selected area includes. You can update the **End position** value as well to adjust the selected area.
 
-   ![Beginning of file position box](../media/content-understanding/beginning-box.png)
+   ![Beginning of file position box.](../media/content-understanding/beginning-box.png)
 
 - End of the file: The document is searched from the end to the phrase location.
 
-   ![End of file](../media/content-understanding/end-of-file.png)
+   ![End of file.](../media/content-understanding/end-of-file.png)
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. The **Starting position** value will update to show the number of tokens your selected area includes. You can update the Starting position value as well to adjust the selected area.
 
-   ![End of file end box](../media/content-understanding/end-box.png)
+   ![End of file end box.](../media/content-understanding/end-box.png)
 
 - Custom range: The document is searched within a specified range for the phrase location.
 
-   ![Custom range](../media/content-understanding/custom-file.png)
+   ![Custom range.](../media/content-understanding/custom-file.png)
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a **Start** and an **End** position. These values represent the number of tokens from the beginning of the document. While you can manually enter in these values, it's easier to manually adjust the select box in the viewer.
 
@@ -210,7 +210,7 @@ While you can manually add various phrase list values for your explanation, it c
 
 For example, instead of manually adding all the variations for *date*, you can use the phrase list template for *date* because it already includes many phrase lists values:
 
-![Explanation library](../media/content-understanding/explanation-template.png)
+![Explanation library.](../media/content-understanding/explanation-template.png)
 
 The explanation library includes commonly used *phrase list* explanations, including:
 
@@ -249,28 +249,28 @@ In addition, the explanation library includes three automatic template types tha
 
 To give you an example of how automatic templates work, in the following example file, we'll use the Before label explanation template to help give the model more information to get a more accurate match.
 
-![Example file](../media/content-understanding/before-label.png)
+![Example file.](../media/content-understanding/before-label.png)
 
 When you select the Before label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
 
-![Before label template](../media/content-understanding/before-label-explanation.png)
+![Before label template.](../media/content-understanding/before-label-explanation.png)
 
 You can select **Add** to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
 
-![Add the label](../media/content-understanding/before-label-add.png)
+![Add the label.](../media/content-understanding/before-label-add.png)
 
 #### To use a template from the explanation library
 
 1. From the **Explanations** section of your model's **Train** page, select **New**, then select **From a template**.
 
-   ![Add Before Label](../media/content-understanding/from-template.png)
+   ![Add Before Label.](../media/content-understanding/from-template.png)
 
 2.  On the **Explanation templates** page, select the explanation you want to use, then select **Add**.
 
-    ![Select a template](../media/content-understanding/phone-template.png)
+    ![Select a template.](../media/content-understanding/phone-template.png)
 
 3. The information for the template you selected displays on the **Create an explanation** page. If needed, edit the explanation name and add or remove items from the phrase list.
 
-    ![Edit template](../media/content-understanding/phone-template-live.png)
+    ![Edit template.](../media/content-understanding/phone-template-live.png)
 
 4. When finished, select **Save**.

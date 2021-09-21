@@ -19,9 +19,13 @@ description: Learn how to manage contracts using a Microsoft 365 solution of Sha
 
 # Manage contracts using a Microsoft 365 solution
 
-This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even if this solution doesn't suit your business needs as a whole, parts of it can be adopted in your planning to create a custom contract management solution.
+This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
-*This content set documents a Microsoft 365 solution developed by Thomas Molbach with the Modern Work Solution Strategy Team at Microsoft.*
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+
+</br>
 
 ## Identify the business problem
 
@@ -62,10 +66,10 @@ This contract management solution guidance includes four components of Microsoft
       ![Example of a contract.](../media/content-understanding/contract.png)
 
 3. In Microsoft Teams, all stakeholders are members of a secure Teams channel in which all contracts in the document library are visible for approval or rejection. By using Teams functionality, all stakeholders are notified when new contracts need to be reviewed.
- 
-4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approve, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This process can be extended to write directly to a third-party financial application for payment.
 
-5.	When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
+4. By using Power Automate, contracts are moved through the approval process in the Teams channel. When a member approves a contract, the contract status is changed to approved, all members are notified through a Teams post, and a line item is created to show that the contract is ready for payout. This process can be extended to write directly to a third-party financial application for payment.
+
+5. When a member rejects a contract, the status is changed to rejected, and all members are notified through a Teams post.
 
 6. The end result of this solution is an automated business process for your organization. Employees can easily use the custom tile view in Teams to initiate and monitor the approval workflow of your documents. 
 
@@ -75,9 +79,15 @@ This contract management solution guidance includes four components of Microsoft
 
 This solution relies on the following functionality, all available as part of a Microsoft 365 Enterprise (E1, E3, E5, F3) or Business (Basic, Standard, or Premium) license:
 
--	Microsoft SharePoint Syntex
--	Microsoft Teams
--	Power Automate
+- Microsoft SharePoint Syntex
+- Microsoft Teams
+- Power Automate
+
+### Learn how to use SharePoint Syntex
+
+New to SharePoint Syntex? Learn how to use SharePoint Syntex to manage content using AI.
+
+The [Get started with SharePoint Syntex](/learn/paths/syntex-get-started) learning path will teach how you can use document understanding and form processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
 
 ## Create the solution
 
@@ -85,4 +95,4 @@ The next sections will go into detail about how to configure your contracts mana
 
 - [Step 1. Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
 - [Step 2. Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
-- [Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+- [Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)

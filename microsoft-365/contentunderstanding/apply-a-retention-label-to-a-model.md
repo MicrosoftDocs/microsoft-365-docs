@@ -1,8 +1,9 @@
 ---
-title: "Apply a retention label to a model"
-ms.author: efrene
-author: efrene
+title: Apply a retention label to a model in SharePoint Syntex
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Normal
-description: "This article discusses how to apply a retention label to a model in SharePoint Syntex"
+description: Learn how to apply a retention label to a model in SharePoint Syntex.
 ---
 
 # Apply a retention label to a model in SharePoint Syntex
@@ -36,7 +37,7 @@ You can apply a pre-existing retention label to your model through your model se
 
 1. From the model home page, select **Model settings**.</br>
 2. In **Model settings**, in the **Security and compliance** section, select the **Retention label** menu to see a list of retention labels that are available for your to apply to the model.</br>
- ![Retention label menu](../media/content-understanding/retention-labels-menu.png)</br> 
+ ![Retention label menu.](../media/content-understanding/retention-labels-menu.png)</br> 
 3. Select the retention label you want to apply to the model, and then select **Save**.</br>
 
 After applying the retention label to your model, you are able to apply it to a:
@@ -49,7 +50,7 @@ If your document understanding model has already been applied to a document libr
 
 1. On your model home page, in the **Libraries with this model** section, select the document library to which you want to apply the retention label update. </br> 
 2. Select **Sync**. </br>
- ![Sync model](../media/content-understanding/sync-model.png)</br> 
+ ![Sync model.](../media/content-understanding/sync-model.png)</br> 
 
 
 After applying the update and syncing it to your model, you can confirm that it has been applied by doing the following:
@@ -78,7 +79,7 @@ You can either apply a retention label to a form processing model when you are c
 2. In <b>Advanced settings</b>, in the <b>Retention label</b> section, select the menu and then select the retention label you want to apply to the model.</b>
 
  
-     ![Add to a new form processing model](../media/content-understanding/retention-label-forms.png)</br>
+     ![Add to a new form processing model.](../media/content-understanding/retention-label-forms.png)</br>
 
 3.  After you've completed your remaining model settings, select <b>Create</b> to build your model.
 
@@ -96,11 +97,11 @@ You can add a retention label to an existing form processing model that you own 
 
 1. In your document library to which the form processing model is applied, select the <b>Automate</b> menu, select <b>AI Builder</b>, then select <b>View form processing model details</b>.
 
-   ![Automate menu](../media/content-understanding/automate-menu.png)</br>
+   ![Automate menu.](../media/content-understanding/automate-menu.png)</br>
 
 2. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.
 
-     ![Add to an existing form processing model](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Add to an existing form processing model.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 #### To add a retention label to an existing form processing model in the active model settings
 
@@ -108,11 +109,11 @@ You can add a retention label to an existing form processing model that you own 
 
 1. In the SharePoint document library in which the model is applied, select the <b>View active models</b> icon, and then select <b>View active models</b>.</b>
 
-   ![View active models](../media/content-understanding/info-du.png)</br> 
+   ![View active models.](../media/content-understanding/info-du.png)</br> 
 
 2. In <b>Active models</b>, select the form processing model to which you want to apply the retention label.
 
-     ![Model details](../media/content-understanding/retention-label-model-details.png)</br> 
+     ![Model details.](../media/content-understanding/retention-label-model-details.png)</br> 
 
 
 3. In the model details, in the <b>Retention Label</b> section, select the retention label you want to apply.  Then select <b>Save</b>.

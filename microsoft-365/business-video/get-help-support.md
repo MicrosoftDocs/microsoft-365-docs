@@ -14,6 +14,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -40,15 +42,11 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. (For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. (For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
-2. Select the **Need help?** button.
+1. If the results don't help, select **Contact support**.
 
-3. In the **Need help?** pane, tell us what you need help with, and then press **Enter**.
-
-4. If the results don't help, select **Contact support**.
-
-5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
+1. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
 
 ## Phone support
 
@@ -157,7 +155,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 
 ### Open an online request
 
-Save time by starting your service request online. In the Microsoft 365 admin center, choose **Support** \> **New service request**.
+Save time by starting your service request online. In the 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### Call support
 
@@ -219,7 +217,7 @@ To view feature availability across Office 365 plans, see [Office 365 Service De
 
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Office 365 operated by 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 

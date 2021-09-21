@@ -20,6 +20,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
+- AdminTemplateSet
 search.appverid:
 - MET150
 ROBOTS: NOINDEX

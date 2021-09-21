@@ -20,6 +20,7 @@ ms.custom:
 - MSStore_Link
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -75,8 +76,6 @@ Follow these steps to add, set up, or continue setting up a domain.
 7. If you chose to *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
 
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
-    
-    Check our list of [host-specific instructions](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) to find your host and follow the steps to add all the records you need. 
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -134,4 +133,3 @@ If you have a website that you use with your business, it will keep working wher
 [Domains FAQ](domains-faq.yml) (article)\
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)\
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Set up your domain](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)

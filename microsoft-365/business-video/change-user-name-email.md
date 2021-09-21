@@ -15,6 +15,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -35,7 +37,7 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ### Change a user's display name
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage contact information**.
 1. Change the display name, and select **Save changes**.
@@ -44,14 +46,14 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ### Add an email alias
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage email aliases**.
 1. Enter the new alias, verify the domain, and select **Save changes**.
 
 ### Change a username
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage username**.
 1. Enter the new username, verify the domain, and select **Save changes**.

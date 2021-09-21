@@ -1,7 +1,7 @@
 ---
 title: "Network requests in Office for Mac"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/9/2018
 audience: ITPro

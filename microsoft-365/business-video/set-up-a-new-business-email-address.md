@@ -50,7 +50,7 @@ Buy a new domain name for your email address and set up the email addresses with
 
 Use a domain name you already own whether you're using it for a website address or an email address at another provider. 
 
-## Try it!
+## Give it a try!
  
 1. Sign into the website that hosts your domain. Click a button to verify automatically or update the domain manually. 
 1. Customize the email address or leave it as is. 

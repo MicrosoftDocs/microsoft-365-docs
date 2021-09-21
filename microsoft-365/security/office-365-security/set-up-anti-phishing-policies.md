@@ -46,11 +46,11 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
 |---|:---:|:---:|
-|Automatically created default policy|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Create custom policies|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Common policy settings<sup>\*</sup>|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|Spoof settings|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
-|First contact safety tip|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
+|Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Create custom policies|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Common policy settings<sup>\*</sup>|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|Spoof settings|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
+|First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Impersonation settings||![Check mark](../../media/checkmark.png)|
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
 |
@@ -171,7 +171,7 @@ The following impersonation settings are only available in anti-phishing policie
 
   > [!NOTE]
   >
-  > - In each anti-phishing policy, you can specify a maximum of 60 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 60. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+  > - In each anti-phishing policy, you can specify a maximum of 350 protected users (sender email addresses). You can't specify the same protected user in multiple policies. So, regardless of how many policies apply to a recipient, the maximum number of protected users (sender email addresses) for each individual recipient is 350. For more information about policy priority and how policy processing stops after the first policy is applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
   > - User impersonation protection does not work if the sender and recipient have previously communicated via email. If the sender and recipient have never communicated via email, the message will be identified as an impersonation attempt.
 
   By default, no sender email addresses are configured for impersonation protection in **Users to protect**. Therefore, by default, no sender email addresses are covered by impersonation protection, either in the default policy or in custom policies.
@@ -217,7 +217,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 
-- **Add trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is approximately 1000 entries.
+- **Add trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is 1024 entries.
 
 ### Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365
 

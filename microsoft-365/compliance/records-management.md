@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365solution-mig
 - m365initiative-compliance
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.custom:
@@ -65,11 +65,11 @@ By using retention labels to declare records, you can implement a single and con
 
 ### Compare restrictions for what actions are allowed or blocked
 
-Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record. 
+Use the following table to identify what restrictions are placed on content as a result of applying a standard retention label, and retention labels that mark content as a record or regulatory record.
 
 A standard retention label has retention settings and actions but doesn't mark content as a record or a regulatory record.
 
->[!NOTE] 
+> [!NOTE]
 > For completeness, the table includes columns for a locked and unlocked record, which is applicable to SharePoint and OneDrive, but not Exchange. The ability to lock and unlock a record uses [record versioning](record-versioning.md) that isn't supported for Exchange items. So for all Exchange items that are marked as a record, the behavior maps to the **Record - locked** column, and the **Record - unlocked column** is not relevant.
 
 
@@ -90,20 +90,21 @@ Footnotes:
 <sup>1</sup>
 Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
 
-When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted. 
+When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
 <sup>2</sup>
 Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
 
->[!IMPORTANT] 
-> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label. 
+> [!IMPORTANT]
+> The most important difference for a regulatory record is that after it is applied to content, nobody, not even a global administrator, can remove the label.
 >
 > Retention labels configured for regulatory records also have the following admin restrictions:
+>
 > - The retention period can't be made shorter after the label is saved, only extended.
-> - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md). 
+> - These labels aren't supported by auto-labeling policies, and must be applied by using [retention label policies](create-apply-retention-labels.md).
 >
 > In addition, a regulatory label can't be applied to a document that's checked out in SharePoint.
-> 
+>
 > Because of the restrictions and irreversible actions, make sure you really do need to use regulatory records before you select this option for your retention labels. To help prevent accidental configuration, this option is not available by default but must first be enabled by using PowerShell. Instructions are included in [Declare records by using retention labels](declare-records.md).
 
 ## Configuration guidance

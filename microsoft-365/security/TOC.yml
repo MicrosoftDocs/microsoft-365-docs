@@ -35,7 +35,7 @@
     - name: Microsoft Defender for Endpoint
       href: ./defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
-      href: https://docs.microsoft.com/defender-for-identity
+      href: /defender-for-identity
     - name: Microsoft 365 for Enterprise
       href: ../enterprise/index.yml
     - name: Microsoft 365 for Business

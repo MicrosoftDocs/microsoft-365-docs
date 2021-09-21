@@ -21,7 +21,7 @@ The SharePoint Online (and SharePoint 2016 and later on-premises) REST service s
 
 ## HTTP request
 
-```
+```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
 ## URI Parameters
@@ -57,14 +57,14 @@ None
 
 #### Sample request
 
-```
+```JSON
 {
-	"__metadata": {
-		"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
-	},
-	"TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
-	"TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
-	"TargetUniqueId": "e6cff8b7-c90c-4564-b5b8-033449090932"
+    "__metadata": {
+        "type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"
+    },
+    "TargetSiteId": "f686e63b-aba7-48e5-97c7-68c4c1df292f",
+    "TargetWebId": "66d6b64d-6f88-4dd9-b3db-47e6f00c53e8",
+    "TargetUniqueId": "e6cff8b7-c90c-4564-b5b8-033449090932"
 }
 ```
 

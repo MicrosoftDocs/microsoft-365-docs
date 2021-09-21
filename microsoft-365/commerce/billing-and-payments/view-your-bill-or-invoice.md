@@ -21,6 +21,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -76,6 +77,12 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 
 ::: moniker-end
 
+> [!NOTE]
+> 
+> Microsoft 365 services do not provide payment receipts.
+> For credit card payments, please use the invoice and credit card billing statement to match your payment.
+
+
 ## Receive a copy of your billing statement in email
 
 You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
@@ -100,5 +107,5 @@ If you have a balance and would like to pay it, you can do that online. To learn
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md) (article) \
 [Manage payment methods](manage-payment-methods.md) (article) \
-[Billing information for Microsoft 365 for business in Mexico](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (article) \
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

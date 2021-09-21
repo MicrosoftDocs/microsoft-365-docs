@@ -135,22 +135,22 @@ This section defines how the "Contractor" will display on the card, and uses the
 
 ```JSON
                         {
-	                        "elmType": "div",
-	                        "txtContent": "Contractor",
-	                        "style": {
-	                          "color": "#767676",
-	                          "font-size": "12px",
-	                          "margin-bottom": "2px"
-	                        }
-	                      },
-	                      {
-	                        "elmType": "div",
-	                        "style": {
-	                          "margin-bottom": "12px",
-	                          "font-size": "14px"
-	                        },
-	                        "txtContent": "[$Contractor]"
-	                      },
+                          "elmType": "div",
+                          "txtContent": "Contractor",
+                          "style": {
+                            "color": "#767676",
+                            "font-size": "12px",
+                            "margin-bottom": "2px"
+                          }
+                        },
+                        {
+                          "elmType": "div",
+                          "style": {
+                            "margin-bottom": "12px",
+                            "font-size": "14px"
+                          },
+                          "txtContent": "[$Contractor]"
+                        },
 ```
 
 ### Fee amount
@@ -203,4 +203,4 @@ This section defines how "Classification" will display on the card, and uses the
 
 ## Next step
 
-[Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+[Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)

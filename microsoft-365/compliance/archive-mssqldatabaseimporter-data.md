@@ -24,7 +24,7 @@ After content from MS SQL Database stored in user mailboxes, you can apply Micro
 
 The following overview explains the process of using a connector to archive MS SQL data in Microsoft 365.
 
-![Archiving workflow for MS SQL data](../media/MSSQLDatabaseConnectorWorkflow.png)
+![Archiving workflow for MS SQL data.](../media/MSSQLDatabaseConnectorWorkflow.png)
 
 1. Your organization works with an MS SQL Database provider to set up and configure an MS SQL Database site.
 
@@ -42,7 +42,7 @@ The following overview explains the process of using a connector to archive MS S
 
 ## Step 1: Set up the MS SQL Database Importer connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft365 compliance center and create a connector for the MS SQL Database.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the MS SQL Database.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** > **MS SQL Database Importer**.
 

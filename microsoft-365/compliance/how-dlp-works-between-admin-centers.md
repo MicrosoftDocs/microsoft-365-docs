@@ -30,7 +30,7 @@ In Microsoft 365, you can create a data loss prevention (DLP) policy in two diff
     
 DLP polices created in these admin centers work side by side - this topic explains how.
   
-![DLP pages in Security and Compliance Center and Exchange admin center](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![DLP pages in Security and Compliance Center and Exchange admin center.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## How DLP in the Security & Compliance Center works with DLP and mail flow rules in the Exchange admin center
 
@@ -42,7 +42,7 @@ This means that:
   
 - Messages that are blocked by Exchange mail flow rules won't get scanned by DLP rules created in the Security & Compliance Center.
 
-- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP will not be scanned by DLP
+- Messages that are quarantined by Exchange mail flow rules or any other filters run before DLP will not be scanned by DLP.
     
 - If an Exchange mail flow rule modifies a message in a way that causes it to match a DLP policy in the Security & Compliance Center - such as adding external users - then the DLP rules will detect this and enforce the policy as needed.
     

@@ -39,7 +39,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can view the groups activities in the Yammer report by choosing the **Groups activity** tab.<br/>![Microsoft 365 reports - Microsoft Yammer groups activity report.](../../media/3afdafe5-9269-402e-8264-c7695ceb227d.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer groups activity report - choose columns](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer groups activity report - choose columns.](../../media/54744932-34fe-48c3-9779-1d10c3f05be1.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

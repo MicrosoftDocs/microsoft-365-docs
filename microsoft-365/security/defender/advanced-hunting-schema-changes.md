@@ -50,22 +50,22 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Column name | Original value name | New value name | Reason for change
 |--|--|--|--|
-| `DetectionSource` | MCAS |	Microsoft Cloud App Security | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp|	EDR| Rebranding |
-| `DetectionSource` | WindowsDefenderAv	| Antivirus | Rebranding |
-| `DetectionSource` | WindowsDefenderSmartScreen | 	SmartScreen | Rebranding |
-| `DetectionSource` | CustomerTI |	Custom TI | Rebranding |
-| `DetectionSource` | OfficeATP	| Microsoft Defender for Office 365 | Rebranding |
-| `DetectionSource` | MTP	| Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |	Microsoft Defender for Identity | Rebranding |
-| `DetectionSource` | CustomDetection	| Custom detection | Rebranding |
+| `DetectionSource` | MCAS | Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
+| `DetectionSource` | CustomerTI | Custom TI | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | Rebranding |
+| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP | Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | CustomDetection | Custom detection | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Automated investigation | Rebranding |
-| `DetectionSource` | ThreatExperts	| Microsoft Threat Experts | Rebranding |
+| `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | 3rd party TI | 3rd Party sensors | Rebranding |
-| `ServiceSource` | Microsoft Defender ATP|	Microsoft Defender for Endpoint | Rebranding |
-|`ServiceSource` |Microsoft Threat Protection	| Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | Office 365 ATP	|Microsoft Defender for Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP	|Microsoft Defender for Identity | Rebranding |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Office 365 ATP |Microsoft Defender for Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource` is available in the [AlertInfo](advanced-hunting-alertinfo-table.md) table. `ServiceSource` is available in the [AlertEvidence](advanced-hunting-alertevidence-table.md) and [AlertInfo](advanced-hunting-alertinfo-table.md) tables. 
 

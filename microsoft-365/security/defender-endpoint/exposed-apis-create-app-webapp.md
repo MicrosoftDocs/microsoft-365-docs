@@ -26,7 +26,7 @@ ms.custom: api
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,7 +36,7 @@ This page describes how to create an application to get programmatic access to D
 
 Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In general, you’ll need to take the following steps to use the APIs:
+In general, you'll need to take the following steps to use the APIs:
 - Create an Azure Active Directory (Azure AD) application.
 - Get an access token using this application.
 - Use the token to access Defender for Endpoint API.
@@ -47,22 +47,22 @@ This article explains how to create an Azure AD application, get an access token
 
 1. Log on to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**. 
+2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
-4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
+4. To enable your app to access Defender for Endpoint and assign it **'Read all alerts'** permission, on your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** >, type **WindowsDefenderATP**, and then select **WindowsDefenderATP**.
 
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission](images/add-permission.png)
+   ![add permission.](images/add-permission.png)
 
-   - Select **Application permissions** > **Alert.Read.All**, and then select **Add permissions**.
+   - Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   ![app permission](images/application-permissions.png)
+   ![app permission.](images/application-permissions.png)
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -75,18 +75,18 @@ This article explains how to create an Azure AD application, get an access token
      > [!NOTE]
      > Every time you add a permission, you must select **Grant consent** for the new permission to take effect.
 
-    ![Grant permissions](images/grant-consent.png)
+    ![Grant permissions.](images/grant-consent.png)
 
 6. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, and then select **Add**.
 
     > [!NOTE]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve this value after you leave.
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id.](images/app-and-tenant-ids.png)
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -196,7 +196,7 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-![Image of token validation](images/webapp-decoded-token.png)
+![Image of token validation.](images/webapp-decoded-token.png)
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

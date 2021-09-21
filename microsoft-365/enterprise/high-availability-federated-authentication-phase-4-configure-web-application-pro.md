@@ -1,7 +1,7 @@
 ---
 title: "High availability federated authentication Phase 4 Configure web application proxies"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/25/2019
 audience: ITPro
@@ -151,7 +151,7 @@ Here is the configuration resulting from the successful completion of this phase
   
 **Phase 4: The Internet-facing load balancer and web application proxy servers for your high availability federated authentication infrastructure in Azure**
 
-![Phase 4 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the web application proxy servers](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
+![Phase 4 of the high availability Microsoft 365 federated authentication infrastructure in Azure with the web application proxy servers.](../media/7e03183f-3b3b-4cbe-9028-89cc3f195a63.png)
   
 ## Next step
 

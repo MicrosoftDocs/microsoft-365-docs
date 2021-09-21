@@ -1,6 +1,6 @@
 ---
-title: "Define information barrier policies"
-description: Learn how to define policies for information barriers in Microsoft Teams.
+title: "Get started with information barriers"
+description: Learn how to get started with information barriers.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -17,14 +17,14 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ---
 
-# Define information barrier policies
+# Get started with information barriers
 
 With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other, or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. To learn more, see [Information barriers](information-barriers.md).
 
 This article describes how to plan, define, implement, and manage information barrier policies. Several steps are involved, and the work flow is divided into several parts. Make sure to read through the [prerequisites](#prerequisites) and the entire process before you begin defining (or editing) information barrier policies.
 
 > [!TIP]
-> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) and a [downloadable Excel workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) to help you plan and define your information barrier policies.
+> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) to help you plan and define your information barrier policies.
 
 ## Concepts of information barrier policies
 
@@ -33,8 +33,8 @@ When you define policies for information barriers, you'll work with user account
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
 - Segments are sets of users that are defined in the Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
-    - "Block" policies prevent one segment from communicating with another segment.
-    - "Allow" policies allow one segment to communicate with only certain other segments.
+  - "Block" policies prevent one segment from communicating with another segment.
+  - "Allow" policies allow one segment to communicate with only certain other segments.
 - Policy application is done after all information barrier policies are defined, and you are ready to apply them in your organization.
 
 ## The work flow at a glance
@@ -46,7 +46,7 @@ When you define policies for information barriers, you'll work with user account
 | [Part 2: Define information barrier policies](#part-2-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 | [Part 3: Apply information barrier policies](#part-3-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
 | (As needed) [Edit a segment or a policy](information-barriers-edit-segments-policies.md) | - Edit a segment<br/>- Edit or remove a policy<br/>- Rerun the policy application<br/>- View policy status |
-| (As needed) [Troubleshooting](information-barriers-troubleshooting.md)| - Take action when things are not working as expected|
+| (As needed) [Troubleshooting](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)| - Take action when things are not working as expected|
 
 ## Prerequisites
 
@@ -65,36 +65,35 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
-    - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [Install the Azure PowerShell module](/powershell/azure/install-az-ps?view=azps-2.3.2)
+- PowerShell - Currently, information barrier policies are defined and managed in Security & Compliance Center PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure Active Directory PowerShell module.
+  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)
 
-- Admin consent for information barriers in Microsoft Teams -  When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
+- Admin consent for information barriers in Microsoft Teams - When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
 
-   1. Pre-requisite: Install Azure PowerShell from [Install Azure PowerShell](/powershell/azure/install-az-ps).
+   1. Pre-requisite: [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
    1. When prompted, sign in using your work or school account for Office 365.
 
    1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
-      
-      > [!div class="mx-imgBorder"]
-      > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
+      > [!div class="mx-imgBorder"]
+      > ![image.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
 When all the prerequisites are met, proceed to the next section.
 
 > [!TIP]
-> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).<p>In addition, a downloadable Excel workbook is available to help you plan and define your segments and policies (and create your PowerShell cmdlets). [Get the workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).
 
 ## Part 1: Segment users
 
@@ -264,7 +263,7 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 
 Resources are available to help you manage your information barrier policies.
 
-- If something goes wrong with information barriers, see [Troubleshooting information barriers](information-barriers-troubleshooting.md).
+- If something goes wrong with information barriers, see [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 - To stop policies from being applied, see [Stop a policy application](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 - To remove an information barrier policy, see [Remove a policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 - To make changes to segments or policies, see [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md).
