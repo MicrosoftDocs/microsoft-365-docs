@@ -27,7 +27,8 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and in today's threat landscape Microsoft 365 is an ever increasing [target for sophisticated attacks](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).
+
 
 The steps in this article will give you the best chance to recover data and stop the internal spread of infection. Before you get started, consider the following items:
 
@@ -39,9 +40,13 @@ The steps in this article will give you the best chance to recover data and stop
 
 - It's important for you respond quickly to the attack and its consequences. The longer you wait, the less likely it is that you can recover the affected data.
 
-## Step 1: Verify your backups
+## Step 1: Verify your third-party backups
 
-If you have offline backups, you can probably restore the encrypted data **after** you've removed the ransomware payload (malware) from your environment.
+The Microsoft 365 compliance suite of tools are designed to meet your organizations [legal and regulatory standards](https://docs.microsoft.com/en-us/microsoft-365/compliance/?view=o365-worldwide) which is why as a best practice, we [recommend](https://www.microsoft.com/en-us/servicesagreement) that you regularly backup your Microsoft 365 Content and Data using Third-Party Apps and Services.
+
+In order to ensure you have the ability to restore your data, it's important to regularly test your backups and validate they can be restored in the event of an attack. In the case of an actual attack, these restorations should not be completed until **after** you've removed the ransomware payload (malware) from your environment and **after** you have verified there is no unauthorized access in your Microsoft 365 environments.
+
+To ensure your backups were not also affected by ransomware, the third-party service should be air gapped from your environments.
 
 If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
