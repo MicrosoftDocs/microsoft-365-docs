@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to buy new Microsoft 365 for business licenses."
-ms.date: 05/11/2021
+ms.date: 09/16/2021
 ---
 
 # Buy Microsoft 365 licenses
@@ -32,6 +32,9 @@ ms.date: 05/11/2021
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
 As you add new users, you will need to purchase more Microsoft 365 licenses for those users.
+
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Try it!
 
