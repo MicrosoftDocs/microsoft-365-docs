@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-description: "Learn about feedback your users can send to Microsoft about Microsoft products."
+description: "Learn about Microsoft code of conduct for the feedback you provide."
 ---
 
 # Microsoft Feedback Code of Conduct
