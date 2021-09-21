@@ -2,7 +2,7 @@
 title: "Exchange Online monitoring for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
