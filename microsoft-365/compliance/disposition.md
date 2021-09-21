@@ -46,7 +46,7 @@ Additionally:
 
 - By default, each person that accesses the **Disposition** page sees only items that they are assigned to review. For a records management administrator to see all items assigned to all users, and all retention labels that are configured for disposition review: Navigate to **Records management settings** > **General** > **Security group for records manager** to select and then enable a mail-enabled security group that contains the administrator accounts.
     
-    Microsoft 365 groups and security groups that aren't mail-enabled don't support this feature and aren't displayed in the list to select. If you need to create a new mail-enabled security group, use the link to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to create the new group. 
+    Microsoft 365 groups and security groups that aren't mail-enabled don't support this feature and don't display in the list to select. If you need to create a new mail-enabled security group, use the link to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to create the new group. 
     
     > [!IMPORTANT]
     > After you have enabled the group, you can't change it in the compliance center. See the next section for how to enable a different group by using PowerShell.
@@ -191,7 +191,7 @@ As you can see from the example shown, the actions supported are:
     - When this action is selected, the user is prompted to specify and add other users for review.
     
     > [!NOTE]
-    > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they won't be able to participate in the disposition review.
+    > This action doesn't automatically grant the [required permissions](#permissions-for-disposition) to the users who are added. If they don't have these permissions, they can't participate in the disposition review.
 
 Each action taken has a corresponding audit event in the [Disposition review activities](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities) auditing activities group.
 
