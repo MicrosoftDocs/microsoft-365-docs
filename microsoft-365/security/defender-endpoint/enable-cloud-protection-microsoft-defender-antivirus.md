@@ -139,8 +139,8 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
 
-> [!NOTE]
-> If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
+   > [!NOTE]
+   > If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.
 
 ## See also
 
