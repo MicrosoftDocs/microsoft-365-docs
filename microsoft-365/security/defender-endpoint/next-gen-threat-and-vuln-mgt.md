@@ -26,7 +26,6 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Effectively identifying, assessing, and remediating endpoint weaknesses is pivotal in running a healthy security program and reducing organizational risk. Threat and vulnerability management serves as an infrastructure for reducing organizational exposure, hardening endpoint surface area, and increasing organizational resilience.
@@ -35,7 +34,7 @@ Discover vulnerabilities and misconfigurations in real time with sensors, and wi
 
 Watch this video for a quick overview of threat and vulnerability management.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mLsn]
 
 ## Bridging the workflow gaps
 
@@ -74,18 +73,23 @@ Threat and vulnerability management allows security administrators and IT admini
 
 Watch this video for a comprehensive walk-through of threat and vulnerability management.
 
->[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
+> [!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
 ## Navigation pane
 
-Area | Description
-:---|:---
-**Dashboard**   | Get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data.
-[**Security recommendations**](tvm-security-recommendation.md) | See the list of security recommendations and related threat information. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Defender for Endpoint.
-[**Remediation**](tvm-remediation.md) | See remediation activities you've created and recommendation exceptions.
-[**Software inventory**](tvm-software-inventory.md) | See the list of vulnerable software in your organization, along with weakness and threat information.
-[**Weaknesses**](tvm-weaknesses.md) | See the list of common vulnerabilities and exposures (CVEs) in your organization.
-[**Event timeline**](threat-and-vuln-mgt-event-timeline.md) | View events that may impact your organization's risk.
+<br>
+
+****
+
+|Area|Description|
+|---|---|
+|**Dashboard**|Get a high-level view of the organization exposure score, Microsoft Secure Score for Devices, device exposure distribution, top security recommendations, top vulnerable software, top remediation activities, and top exposed device data.|
+|[**Security recommendations**](tvm-security-recommendation.md)|See the list of security recommendations and related threat information. When you select an item from the list, a flyout panel opens with vulnerability details, a link to open the software page, and remediation and exception options. You can also open a ticket in Intune if your devices are joined through Azure Active Directory and you've enabled your Intune connections in Defender for Endpoint.|
+|[**Remediation**](tvm-remediation.md)|See remediation activities you've created and recommendation exceptions.|
+|[**Software inventory**](tvm-software-inventory.md)|See the list of vulnerable software in your organization, along with weakness and threat information.|
+|[**Weaknesses**](tvm-weaknesses.md)|See the list of common vulnerabilities and exposures (CVEs) in your organization.|
+|[**Event timeline**](threat-and-vuln-mgt-event-timeline.md)|View events that may impact your organization's risk.|
+|||
 
 ## APIs
 

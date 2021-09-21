@@ -3,7 +3,8 @@ title: Microsoft Report Message and Report Phishing Add-In license terms
 description: Describes the Microsoft Report Message and Report Phishing Add-In license terms
 keywords: microsoft, report, phishing, security, scam, hack, license, terms, application, use, installation, service, feedback
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
+ms.technology: mdo
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -36,7 +37,7 @@ If you comply with these license terms, you have the rights below. By using the 
 1. **INSTALLATION AND USE RIGHTS**
 
     1. **General.** You may install and use any number of copies of the software.
-    1. **Third Party Software.** The software may include third party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third party applications are for your information only.
+    1. **Third Party Software.** The software may include third-party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third-party applications are for your information only.
     1. **Microsoft Services Agreement.** Some features of the software provide access to, or rely on, online services. The use of those services (but not the software) is governed by the separate terms and privacy policies in the Microsoft Services Agreement at <https://www.microsoft.com/servicesagreement/>. Please read them. The services may not be available in all regions.
 
 2. **DATA COLLECTION.** The software may collect information about you and your use of the software and send that to Microsoft. Microsoft may use this information to provide services and improve Microsoft’s products and services. Your opt-out rights, if any, are described in the product documentation. Some features in the software may enable collection of data from users of your applications that access or use the software.
@@ -45,7 +46,7 @@ If you comply with these license terms, you have the rights below. By using the 
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;
-    1. reverse engineer, decompile or disassemble the software;
+    1. reverse engineer, decompile, or disassemble the software;
     1. remove, minimize, block, or modify any notices of Microsoft or its suppliers in the software;
     1. use the software for commercial, non-profit, or revenue-generating activities;
     1. use the software in any way that is against the law or to create or propagate malware; or
@@ -70,7 +71,7 @@ If you comply with these license terms, you have the rights below. By using the 
     *In English (no further French translation provided in this section):* For example, if you acquired the software in one of the below regions, or mandatory country law applies, then the following provisions apply to you:
 
     1. **Australia.** You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
-    1. **Canada.** If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
+    1. **Canada.** If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you reconnect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
     1. **Germany and Austria.**
         1. **Warranty.** The properly licensed software will perform substantially as described in any Microsoft materials that accompany the software. However, Microsoft gives no contractual guarantee in relation to the licensed software.
         1. **Limitation of Liability.** In case of intentional conduct, gross negligence, claims based on the Product Liability Act, as well as, in case of death or personal or physical injury, Microsoft is liable according to the statutory law.
@@ -81,9 +82,9 @@ If you comply with these license terms, you have the rights below. By using the 
 
     *En Français*: **EXONÉRATION DE GARANTIE.** Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 
-12. *In English:* **LIMITATION ON AND EXCLUSION OF DAMAGES.** If you have any basis for recovering damages despite the preceding disclaimer of warranty, you can recover from Microsoft and its suppliers only direct damages up to U.S. $5.00. You cannot recover any other damages, including consequential, lost profits, special, indirect or incidental damages.
+12. *In English:* **LIMITATION ON AND EXCLUSION OF DAMAGES.** If you have any basis for recovering damages despite the preceding disclaimer of warranty, you can recover from Microsoft and its suppliers only direct damages up to U.S. $5.00. You cannot recover any other damages, including consequential, lost profits, special, indirect, or incidental damages.
 
-    This limitation applies to (a) anything related to the software, services, content (including code) on third party Internet sites, or third party applications; and (b) claims for breach of contract, warranty, guarantee, or condition; strict liability, negligence, or other tort; or any other claim; in each case to the extent permitted by applicable law.
+    This limitation applies to (a) anything related to the software, services, content (including code) on third-party Internet sites, or third-party applications; and (b) claims for breach of contract, warranty, guarantee, or condition; strict liability, negligence, or other tort; or any other claim; in each case to the extent permitted by applicable law.
 
     It also applies even if Microsoft knew or should have known about the possibility of the damages. The above limitation or exclusion may not apply to you because your state, province, or country may not allow the exclusion or limitation of incidental, consequential, or other damages.
 

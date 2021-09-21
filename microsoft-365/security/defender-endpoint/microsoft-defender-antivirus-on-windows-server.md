@@ -123,16 +123,13 @@ To get updated antimalware security intelligence, you must have the Windows Upda
 
 By default, Windows Update does not download and install updates automatically on Windows Server 2019 or Windows Server 2016. You can change this configuration by using one of the following methods:
 
-<br>
-
-****
+<br/><br/>
 
 |Method|Description|
 |---|---|
 |**Windows Update** in Control Panel|**Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p> **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.|
 |**Group Policy**|You can set up and manage Windows Update by using the settings available in Group Policy, in the following path: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**|
 |The **AUOptions** registry key|The following two values allow Windows Update to automatically download and install Security intelligence updates: <p> **4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p> **3** - **Download updates but let me choose whether to install them**. This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.|
-|
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 

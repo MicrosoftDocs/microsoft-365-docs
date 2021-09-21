@@ -8,7 +8,8 @@ manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
+ms.prod: m365-security
+ms.technology: mdo
 localization_priority: Normal
 search.appverid:
 ms.collection:
