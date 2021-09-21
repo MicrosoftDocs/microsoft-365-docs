@@ -67,11 +67,11 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
    Get-CaseHoldPolicy -Identity "policyname" -DistributionDetail | Select -ExpandProperty DistributionResults
    ```
 
-![DistributionResults](https://user-images.githubusercontent.com/16720329/133842143-40e4d6c7-c579-49c5-8434-8048ea497610.png)
+   ![DistributionResults](../media/HoldDistributionResults.png)
 
 ## Error: PolicySyncTimeout
 
-If you see this error in the **ResultCode: PolicySyncTimeout** and the following error message, check the LastResultTime to see if has been longer than 2 hours the sync has reached the timeout.
+If you see this error in the **ResultCode: PolicySyncTimeout** and the following error message, check the LastResultTime to see if it has been longer than two hours since the sync has reached the timeout.
 
 > It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.
 
@@ -83,9 +83,9 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
 
-Also in the Case hold UI you can also redeploy the policy using the Retry button.
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
 
-![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
+![Retry button on CaseHold](../media/RetryCaseHold.png)
 
 ## Error: PolicyNotifyError
 
@@ -101,9 +101,9 @@ Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** wil
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
 
-Also in the Case hold UI you can also redeploy the policy using the Retry button.
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
 
-![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
+![Retry button on CaseHold](../media/RetryCaseHold.png)
 
 ## Error: InternalError
 
@@ -113,12 +113,13 @@ If you see this error in the **ResultCode: InternalError** and the following err
 
 ### Resolution
 
-Contact Microsoft support with the following information:
-Policy name
-Workload
-Result Code
-Result Message
-Additional Diagnostics
+Contact Microsoft Support with the following information:
+
+- Policy name
+- Microsoft 365 service or feature
+- Result code
+- Result message
+- Additional diagnostics
 
 ## Error: FailedToOpenContainer
 
@@ -138,7 +139,7 @@ If you see this error in the **ResultCode: FailedToOpenContainer** and the follo
 
 ## Error: SiteInReadonlyOrNotAccessible
 
-If you see this error in the **ResultCode: SiteInReadonlyOrNotAccessible** and the following error message, the SharePoint site has been found to be in read only mode.
+If you see this error in the **ResultCode: SiteInReadonlyOrNotAccessible** and the following error message, the SharePoint site is in read-only mode.
 
 > The SharePoint site is read-only or not accessible. Please contact the site administrator to make the site writable, and then redeploy this policy.
 
@@ -148,7 +149,7 @@ Unlock the site (or ask an admin to unlock it) to resolve this issue. To learn m
 
 ## Error: SiteOutOfQuota
 
-If you see this error in the **ResultCode: SiteOutOfQuota** and the following error message, the SharePoint site has reached it's storage quota.
+If you see this error in the **ResultCode: SiteOutOfQuota** and the following error message, the SharePoint site has reached its storage quota.
 
 > The SharePoint site does not have enough quota. Please allocate more quota to the site collection, and then redeploy this policy.
 
@@ -162,15 +163,15 @@ After more storage quota has been added to the site the policy will need to be r
    Set-CaseHoldPolicy "policyname" -RetryDistribution
    ```
 
-Also in the Case hold UI you can also redeploy the policy using the Retry button.
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
 
-![Retry button on CaseHold](https://user-images.githubusercontent.com/16720329/133844750-02acd3dc-c414-4b93-a5ca-486346b9d32d.png)
+![Retry button on CaseHold](../media/RetryCaseHold.png)
 
 ## Error: RecipientTypeNotAllowed
 
-If you see this error in the **ResultCode: RecipientTypeNotAllowed** and the following error message, an Exchange location that is a mailbox is on the policy.
+If you see this error in the **ResultCode: RecipientTypeNotAllowed** and the following error message, an Exchange location that is a mailbox is assigned to the policy.
 
-The Recipient Type is not allowed for holds.
+> The Recipient Type is not allowed for holds.
 
 ### Resolution
 
