@@ -60,7 +60,7 @@ Use these tools to detect and respond to the following common threats from ranso
 
    - Microsoft Cloud App Security
 
-- Data exfiltration, deletion, or updloading
+- Data exfiltration, deletion, or uploading
 
    - Microsoft Defender for Office 365
    - Microsoft Cloud App Security with [anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
