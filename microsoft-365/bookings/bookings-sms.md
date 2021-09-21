@@ -31,7 +31,16 @@ You can configure SMS notification in Bookings in a couple of ways:
 
 - In the Booking app in Teams, navigate to **Settings** > **Appointment type** > **Add appointment type** and select **Send them text messages**.
 
-You can track the key data on SMS notification usage in your organization in the Teams admin center.
+## Tracking and metrics for SMS notifications
+
+> [!NOTE]
+> You need to be a Teams admin to see Teams and Bookings data on the Teams admin center.
+
+You can track key data on SMS notifications usage in your organization in the Teams admin center. Usage reports includes data such as time and date sent, origin number, message type, event type and delivery status. You can use SMS notification telemetry during the promotional period to help forecast and budget for SMS notifications after March 1, 2022.
+
+1. On the Teams admin center, **Virtual Visits SMS notifications**.
+
+2. On the Analytics & Reports page, select SMS notifications usage.
 
 Related content
 
