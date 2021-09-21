@@ -56,7 +56,7 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 You can use the following properties to create a removable storage group:
 
 > [!NOTE]
-> Comments using XML comment notation \<!-- COMMENT --\> can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
 
 ### Removable Storage Group
 
