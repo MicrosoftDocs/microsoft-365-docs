@@ -107,13 +107,18 @@ Also in the Case hold UI you can also redeploy the policy using the Retry button
 
 ## Error: InternalError
 
-If you see this error in the **ResultCode: InternalError** and the following error message, the issue has to be resolved by Microsoft.
+If you see this error in the **ResultCode: InternalError** and the following error message, this issue has to be resolved by Microsoft.
 
 > Policy deployment has been interrupted by an unexpected Office 365 datacenter issue. Please contact Microsoft support to fix the deployment issue.
 
 ### Resolution
 
-Contact Microsoft support with the policy Name and the information from the output of the DistributionResults, where the InternalError has been found.
+Contact Microsoft support with the following information:
+Policy name
+Workload
+Result Code
+Result Message
+Additional Diagnostics
 
 ## Error: FailedToOpenContainer
 
