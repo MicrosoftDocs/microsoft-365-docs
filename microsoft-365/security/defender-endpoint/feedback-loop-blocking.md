@@ -17,6 +17,7 @@ ms.custom:
   - edr
 ms.collection: 
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Feedback-loop blocking
