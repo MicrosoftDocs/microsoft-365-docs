@@ -7,7 +7,6 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
