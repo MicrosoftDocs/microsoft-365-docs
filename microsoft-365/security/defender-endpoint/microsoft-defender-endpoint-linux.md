@@ -48,6 +48,7 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 > [!NOTE]
 > Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
 
+
 ### Installation instructions
 
 There are several methods and deployment tools that you can use to install and configure Microsoft Defender for Endpoint on Linux.
