@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with exact data match based sensitive information types
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available for use in data loss prevention policies, eDiscovery and certain content governance tasks is a multi-phase process. This article outlines the workflow and links to the procedures for each of the phases
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. The can be used in data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
 
 ## Before you begin
 
@@ -59,7 +59,7 @@ See the [data loss prevention service description](/office365/servicedescription
 |Phase|What's needed|
 |---|---|
 |[Phase 1: Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
-|[Phase 2: Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Custom security group and user account (for manually created schema) <br/>- Local admin access to machine with EDM Upload Agent (for manually created schema)|
-|[Phase 3: Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|place holder|
-|[Phase 4: Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)|place holder text|
-
+|[Phase 2: Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Access to the sensitive information type wizard in the Microsoft 365 admin center </br>- access to [Microsoft 365 admin center via Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) |
+|[Phase 3: Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|- Custom security group and user account </br>- **Hash and upload from one computer**: local admin access to a computer with direct internet access and to host the EDM Upload Agent </br>- **Hash and upload from separate computers**: local admin access to a computer with direct internet access and host the EDM Upload Agent for the upload and local admin access to a secure computer to host the EDM Upload Agent to hash the sensitive information source table </br>- Read access to the sensitive information source table file </br> the schema file |
+|[Phase 4: Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) |- Access to the Microsoft 365 Compliance Center |
+|[Phase 5: Configure services and test EDM SIT](sit-get-started-exact-data-match-configure-services.md#configure-services)| - Microsoft 365 subscription with data loss prevention (DLP)

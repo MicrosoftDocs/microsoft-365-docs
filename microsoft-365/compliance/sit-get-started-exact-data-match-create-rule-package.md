@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 
 # Create exact data match sensitive information type/rule package
-======
+
 from schema article, this article is rule package only
 
 
