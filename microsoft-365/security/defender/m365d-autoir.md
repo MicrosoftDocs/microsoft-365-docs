@@ -103,7 +103,7 @@ Use this learning module from Microsoft Learn to understand how Microsoft 365 De
 
 |Training:|Automate self-healing with Microsoft 365 Defender|
 |---|---|
-|![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, saving you time for other investigation activities. <p> 11 min - 5 Units |
+|![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/modules/defender-self-healing/)

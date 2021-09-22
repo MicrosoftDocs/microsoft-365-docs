@@ -178,7 +178,7 @@ For more information about SecOps across Microsoft's products, see these resourc
 
 ## Training for security analysts
 
-Use this learning module from Microsoft Learn to understand how to use Microsoft 365 Defender to manage to incidents and alerts.
+Use this learning module from Microsoft Learn to understand how to use Microsoft 365 Defender to manage incidents and alerts.
 
 |Training:|Investigate incidents with Microsoft 365 Defender|
 |---|---|
