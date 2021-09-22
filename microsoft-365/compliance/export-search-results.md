@@ -38,19 +38,17 @@ Exporting the results of a Content search involves preparing the results, and th
   
   - Latest version of Windows (32-bit or 64-bit)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7 or higher
   
-- You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
+- You have to use Microsoft Edge <sup>2</sup> browser to run the eDiscovery Export Tool<sup>1</sup>:
 
-  - Microsoft Edge <sup>2</sup>
-  
-    OR
-
-  - Microsoft Internet Explorer 10 and later versions
+ 
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
+    > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
   > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>3</sup>  Beginning August 17, 2021, Microsoft 365 apps and services will no longer support Internet Explorer 11 (IE11) and users may have a degraded experience, or be unable to connect to, those apps and services. These apps and services will phase out over weeks and months to ensure a smooth end of support, with each app and service phasing out on independent schedules., please see article - https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
+
   
 - The eDiscovery Export Tool that you use in Step 2 to download search results doesn't support automation (by using a script or running cmdlets). We highly recommended that you don't automate the preparation process in Step 1 or the download process in Step 2. If you automate either of these processes, Microsoft Support will not provide assistance if you run into issues.
 
