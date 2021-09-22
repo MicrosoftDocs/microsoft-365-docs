@@ -1,6 +1,6 @@
 ---
-title: "Communication compliance with SEIM solutions"
-description: "Learn about communication compliance integration with SEIM solutions."
+title: "Communication compliance with SIEM solutions"
+description: "Learn about communication compliance integration with SIEM solutions."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ---
 
-# Communication compliance with SEIM solutions
+# Communication compliance with SIEM solutions
 
 [Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
