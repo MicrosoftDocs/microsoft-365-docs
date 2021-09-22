@@ -149,9 +149,9 @@ sections:
           > Outlook desktop client does not support PDF encryption.
           
       - question: |
-          Are OneDrive for Business attachments supported?
+          Are SharePoint Online or OneDrive for Business attachments supported?
         answer: |
-          Not yet. OneDrive for Business attachments are not supported and end-users can't encrypt a mail that contains a cloud OneDrive for Business attachment.
+          Not yet. SharePoint Online or OneDrive for Business attachments are not supported and end-users can encrypt a mail but not the cloud attachments.
 
       - question: |
           What email clients support preview of encrypted attachments in protected emails?
@@ -243,7 +243,12 @@ sections:
           Is delegated access supported with opening encrypted messages? Even if a delegate has full access to another user's mailbox?
         answer: |
           Delegated access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows does not support delegated access.
-          
+
+      - question: |
+          How long do I have access to the mail in the OME portal?
+        answer: |
+          You can login to the OME portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
+
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
         answer: |
