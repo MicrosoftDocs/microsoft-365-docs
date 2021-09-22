@@ -51,9 +51,9 @@ For example, if you have the columns full name, Date of Birth and, account numbe
 
 <!--TODD STOP HERE, WORK THESE CONCEPTS INTO THIS ARTICLE-->
 
-1. [Saving sensitive data in .csv or .tsv format](#save-sensitive-data-in-csv-or-tsv-format)
-
 ## Save sensitive data in .csv, .tsv or pipe-separated format
+
+1. [Saving sensitive data in .csv or .tsv format](#save-sensitive-data-in-csv-or-tsv-format)
 
 1. Identify the sensitive information you want to use. Export the data to an app, such as Microsoft Excel, and save the file in a text file. The file can be saved in .csv (comma-separated values), .tsv (tab-separated values), or pipe-separated (|) format. The .tsv format is recommended in cases where your data values may included commas, such as street addresses.
 The data file can include a maximum of:

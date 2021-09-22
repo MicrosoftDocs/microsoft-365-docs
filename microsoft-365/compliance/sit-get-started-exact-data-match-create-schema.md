@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-You can create the schema and rule package by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or the [Create the schema and rule package manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create the schema and EDM SIT by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or the [Create the schema and rule package manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
