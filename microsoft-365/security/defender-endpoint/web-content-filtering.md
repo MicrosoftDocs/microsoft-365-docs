@@ -39,20 +39,25 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see the prerequisites section.
 
-Summarizing the benefits:
+## Benefits of web content filtering
 
-- Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away
-- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac)
-- Your security team can access web reports in the same central location, with visibility over actual blocks and web usage
+- Users are prevented from accessing websites in blocked categories, whether they're browsing on-premises or away.
+
+- Your security team can conveniently deploy policies to groups of users using device groups defined in [Microsoft Defender for Endpoint role-based access control settings](/microsoft-365/security/defender-endpoint/rbac).
+
+- Your security team can access web reports in the same central location, with visibility over actual blocks and web usage.
 
 ## Prerequisites
 
 Before trying out this feature, make sure you meet the following requirements:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
-- Access to Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
-- Devices running Windows 10 Anniversary Update (version 1607) or later with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
-- Windows Defender SmartScreen and Network Protection enabled.
+- Your subscription includes one of the following: Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security add-on, or the Microsoft Defender for Endpoint standalone license. 
+
+- You have access to Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
+- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+
+- Windows Defender SmartScreen and Network Protection are enabled on your organization's devices.
 
 ## Data handling
 
