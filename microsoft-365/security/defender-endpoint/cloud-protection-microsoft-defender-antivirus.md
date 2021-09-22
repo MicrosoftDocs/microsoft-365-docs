@@ -14,7 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/26/2021
+ms.date: 09/21/2021
 ---
 
 # Cloud protection and Microsoft Defender Antivirus
@@ -25,6 +25,8 @@ ms.date: 08/26/2021
 - Microsoft Defender Antivirus
 
 Next-generation technologies in Microsoft Defender Antivirus provide near-instant, automated protection against new and emerging threats. To identify new threats dynamically, next-generation technologies work with large sets of interconnected data in the Microsoft Intelligent Security Graph and powerful artificial intelligence (AI) systems driven by advanced machine learning models. Cloud protection works together with Microsoft Defender Antivirus to deliver accurate, real-time, and intelligent protection. 
+
+[:::image type="content" source="mde-cloud-protection.png" alt-text="Diagram showing how cloud protection works together with Microsoft Defender Antivirus":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > We recommend keeping cloud protection turned on. To learn more, see [Why cloud protection should be enabled for Microsoft Defender Antivirus](why-cloud-protection-should-be-on-mdav.md). 
