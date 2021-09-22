@@ -55,9 +55,8 @@ See the [data loss prevention service description](/office365/servicedescription
 
 |Phase|What's needed|
 |---|---|
-|
-|[Part 1: Set up EDM-based classification](#part-1-set-up-edm-based-classification)<br/><br/>(As needed)<br/>- [Edit the database schema](#editing-the-schema-for-edm-based-classification) <br/>- [Remove the schema](#removing-the-schema-for-edm-based-classification)|- Read access to the sensitive data<br/>- Database schema in XML format (example provided)<br/>- Rule package in XML format (example provided)<br/>- Admin permissions to the Security & Compliance Center (using PowerShell)|
-|[Part 2: Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(As needed)<br/>[Refresh the data](#refreshing-your-sensitive-information-database)|- Custom security group and user account<br/>- Local admin access to machine with EDM Upload Agent<br/>- Read access to the sensitive data<br/>- Process and schedule for refreshing the data|
+|[Phase 1: Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
+|[Phase 2: Create the schema and rule package for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-and-rule-package-for-exact-data-match-based-sensitive-information-types)|- Custom security group and user account (for manually created schema) <br/>- Local admin access to machine with EDM Upload Agent (for manually created schema)|
 |[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled|
 
 ### Part 1: Set up EDM-based classification
