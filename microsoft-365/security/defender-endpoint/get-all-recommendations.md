@@ -42,7 +42,7 @@ Retrieves a list of all security recommendations affecting the organization.
 
 Returns information about all security recommendations affecting the organization.
 
-*URL:** GET: /api/recommendations
+*URL:* GET:/api/recommendations
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
 <br>OData supported operators:
 <br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
