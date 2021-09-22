@@ -4539,6 +4539,11 @@
       "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/download-existing-reports.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
+      "redirect_document_id": false
     }
   ]
 }
