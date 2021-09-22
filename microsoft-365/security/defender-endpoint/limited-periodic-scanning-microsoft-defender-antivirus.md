@@ -18,7 +18,6 @@ ms.technology: mde
 ---
 
 
-
 # Use limited periodic scanning in Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
