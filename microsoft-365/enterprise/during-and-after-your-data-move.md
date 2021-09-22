@@ -3,7 +3,7 @@ title: "During and after your data move"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,7 +12,6 @@ search.appverid:
 - MET150
 localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
-
 f1.keywords:
 - NOCSH
 description: "Data moves are back-end operations that occur when Microsoft moves services and associated data for your tenant to a new datacenter geo."
