@@ -1,5 +1,5 @@
 ---
-title: "Get started with DLP policies that use exact data match based sensitive information types"
+title: "Create exact data match sensitive information type/rule package"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Get started creating exact data match based sensitive information t
 ms.custom: seo-marvel-apr2020
 ---
 
-# Get started with DLP policies that use EDM SIT
+# Create exact data match sensitive information type/rule package
 
 Configuring services to use your EDM Sensitive information type
 The following services support EDM sensitive information types:

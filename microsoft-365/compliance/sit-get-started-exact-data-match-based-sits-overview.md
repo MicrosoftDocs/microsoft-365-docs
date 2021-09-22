@@ -56,8 +56,9 @@ See the [data loss prevention service description](/office365/servicedescription
 |Phase|What's needed|
 |---|---|
 |[Phase 1: Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)|- Read access to the sensitive data|
-|[Phase 2: Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-and-rule-package-for-exact-data-match-based-sensitive-information-types)|- Custom security group and user account (for manually created schema) <br/>- Local admin access to machine with EDM Upload Agent (for manually created schema)|
-|[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services)|- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled|
+|[Phase 2: Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)|- Custom security group and user account (for manually created schema) <br/>- Local admin access to machine with EDM Upload Agent (for manually created schema)|
+|[Phase 3: Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)|place holder|
+|
 
 ### Part 1: Set up EDM-based classification
 
