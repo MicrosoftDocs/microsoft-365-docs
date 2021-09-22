@@ -57,7 +57,7 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Email messages with attachments that are quarantined as malware.||||
 |**Safe Attachments in Defender for Office 365**||||
 |Safe Attachments policies that quarantine email messages with malicious attachments as malware.||||
-|Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.|||||
+|Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.||||
 |**Mail flow rules (transport rules)**||||
 |Mail flow rules that quarantine email messages.||||
 |
