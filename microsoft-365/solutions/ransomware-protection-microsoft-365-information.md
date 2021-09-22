@@ -21,7 +21,7 @@ description: Use controlled folder access, MIP, DLP, and Microsoft Cloud App Sec
 
 # Step 5. Protect information
 
-Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and the Preservation Hold library](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
+Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and Files Restore](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
 To provide additional protection of your sensitive information in your Microsoft 365 tenant:
 
