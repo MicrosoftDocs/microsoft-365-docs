@@ -41,9 +41,13 @@ If your organization has Microsoft 365 E5 or Microsoft Defender for Office 365 P
 
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-- You need to be assigned permissions in Azure Active Directory before you can do the procedures in this article. Please note that role assignment through Microsoft 365 Defender portal for the below mentioned roles is currently unsupported. Specifically, you need to be a member of **Organization Management**, **Security Administrator**, or one of the following roles:
-  - **Attack Simulation Administrators**: Create and managed all aspects of attack simulation campaigns.
-  - **Attack Payload Author**: Create attack payloads that an admin can initiate later.
+- You need to be assigned permissions in **Azure Active Directory** before you can do the procedures in this article. Specifically, you need to be a member of one of the following roles:
+  - **Organization Management**
+  - **Security Administrator**
+  - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
+  - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
+
+  <sup>\*</sup> Adding users to this role in the Microsoft 365 Defender portal is currently unsupported.
 
   For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md) or [About admin roles](../../admin/add-users/about-admin-roles.md).
 
