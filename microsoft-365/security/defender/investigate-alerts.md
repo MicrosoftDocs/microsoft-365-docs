@@ -56,26 +56,6 @@ You can filter alerts according to these criteria:
 - Policy
 - Impacted assets
 
-## Roles required to investigate alerts
-
-You’ll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
-
-- For Azure Active Directory (Azure AD) global roles:
-
-   - Global administrator
-
-   - Security administrator
-
-   - Security Operator
-
-   - Global Reader
-
-   - Security Reader
-
-- A [custom role](/microsoft-365/security/defender/custom-roles)
-
-For more information, see [Manage access to Microsoft 365 Defender data](m365d-permissions.md).
-
 ## Analyze an alert
 
 To see the main alert page, select the name of the alert. Here's an example.
