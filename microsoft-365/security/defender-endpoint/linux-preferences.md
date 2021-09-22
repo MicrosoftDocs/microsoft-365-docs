@@ -98,7 +98,7 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
   
-#### Run a Scan after definitions are updated
+#### Run a scan after definitions are updated
 
 Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
 
