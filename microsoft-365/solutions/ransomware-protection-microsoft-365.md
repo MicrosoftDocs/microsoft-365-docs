@@ -77,7 +77,7 @@ Files in SharePoint and OneDrive for Business are protected by:
 
    A complete self-service recovery solution for SharePoint and OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
 
-   To minimize the burden on your security and IT helpdesk staff, train your users on [retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
+   To minimize the burden on your security and IT helpdesk staff, train your users on [Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436).
 
 
 For OneDrive and SharePoint files, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.

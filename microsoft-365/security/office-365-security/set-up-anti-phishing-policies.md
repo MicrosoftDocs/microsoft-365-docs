@@ -115,6 +115,8 @@ The following spoof settings are available in anti-phishing policies in EOP and 
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+
 ### Unauthenticated sender
 
 The unauthenticated sender notifications are part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies in EOP and Defender for Office 365 as described in the previous section. The following settings are available only when spoof intelligence is turned on:
@@ -195,6 +197,9 @@ The following impersonation settings are only available in anti-phishing policie
     - [Quarantine in Microsoft 365](quarantine-email-messages.md)
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
+
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that are quarantined by user impersonation or domain impersonation protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+
   - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
   - **Delete the message before it's delivered**: Silently deletes the entire message, including all attachments.
 
@@ -213,7 +218,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Don't apply any action**: Note that this value has the same result as turning on **Mailbox intelligence** but turning off **Enable intelligence impersonation protection**.
   - **Redirect message to other email addresses**
   - **Move message to the recipients' Junk Email folders**
-  - **Quarantine the message**
+  - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 
