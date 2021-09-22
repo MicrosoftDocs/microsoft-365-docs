@@ -29,7 +29,7 @@ ms.technology: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time.  
+Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
 ## What do you need to know before you begin?
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Operational logs from during troubleshooting mode will also be collected.
 
-    - All the above logs and snapshots will be collected and will be available for an admin to collect using the **Collect investigation package** feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
+    - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
 
 - Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations will become read-only again and will revert back to how it was before setting the troubleshooting mode on.
 
@@ -119,25 +119,19 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 2. Run ProcMon during the CPU spike for around 5 minutes, and then review the ProcMon log for clues. 
 
-3. Once RCA is determined, turn on troubleshooting mode. 
+3. Once root cause is determined, turn on troubleshooting mode. 
 
 4. Log in to the machine and launch an elevated PowerShell command prompt. 
 
-5. If `DisableLocalAdminMerge` is enabled on the device:  
+5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned below are examples only): 
 
-    - Request SOC admin to turn on troubleshooting mode for the device.
+    - Set-mppreference -ExclusionPath (for example, C:\DB\DataFiles) 
     
-    - You'll get a Windows Security notification once the troubleshooting mode starts.
-
-6. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands: 
-
-    - Set-mppreference -ExclusionPath C:\DB\DataFiles 
+    - Set-mppreference –ExclusionExtension (for example, .dbx) 
     
-    - Set-mppreference –ExclusionExtension.dbx 
-    
-    - Set-mppreference –ExclusionProcess C:\DB\Bin\Convertdb.exe 
+    - Set-mppreference –ExclusionProcess (for example, C:\DB\Bin\Convertdb.exe) 
 
-7. After adding the exclusion, check to see if the CPU usage has dropped. 
+6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
 For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
 
