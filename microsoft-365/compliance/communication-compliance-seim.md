@@ -32,31 +32,35 @@ All communication compliance policy matches are captured in the Microsoft 365 un
 
 **Example of audit log entry for an Offensive Language policy template match:**
 
-    RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
-    RecordType: ComplianceSupervisionExchange
-    CreationDate: 7/7/2021 5:30:11 AM
-    UserIds: user1@contoso.onmicrosoft.com
-    Operations: SupervisionRuleMatch
-    AuditData: {"CreationTime":"2021-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
-    ResultIndex: 24
-    ResultCount: 48
-    Identity: 44e98a7e-57fd-4f89-79b8-08d941084a35
-    IsValid: True
-    ObjectState: Unchanged
+```xml
+RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
+RecordType: ComplianceSupervisionExchange
+CreationDate: 7/7/2021 5:30:11 AM
+UserIds: user1@contoso.onmicrosoft.com
+Operations: SupervisionRuleMatch
+AuditData: {"CreationTime":"2021-07-07T05:30:11","Id":"44e98a7e-57fd-4f89-79b8-08d941084a35","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<HE1P190MB04600526C0524C75E5750C5AC61A9@HE1P190MB0460.EURP190.PROD.OUTLOOK.COM\>","UserId":"user1@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"53be0bf4-75ee-4315-b65d-17d63bdd53ae","SRPolicyName":"Adult images","SRRuleMatchDetails":\[\]}}
+ResultIndex: 24
+ResultCount: 48
+Identity: 44e98a7e-57fd-4f89-79b8-08d941084a35
+IsValid: True
+ObjectState: Unchanged
+```
 
 **Example of an audit log entry for a policy with custom keyword match (custom sensitive information type):**
 
-    RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
-    RecordType: ComplianceSupervisionExchange
-    CreationDate: 7/6/2021 9:50:12 PM
-    UserIds: user2@contoso.onmicrosoft.com
-    Operations: SupervisionRuleMatch
-    AuditData: {"CreationTime":"2021-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
-    ResultIndex: 46
-    ResultCount: 48
-    Identity: 5c61aae5-26fc-4c8e-0791-08d940c8086f
-    IsValid: True
-    ObjectState: Unchanged
+```xml
+RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
+RecordType: ComplianceSupervisionExchange
+CreationDate: 7/6/2021 9:50:12 PM
+UserIds: user2@contoso.onmicrosoft.com
+Operations: SupervisionRuleMatch
+AuditData: {"CreationTime":"2021-07-06T21:50:12","Id":"5c61aae5-26fc-4c8e-0791-08d940c8086f","Operation":"SupervisionRuleMatch","OrganizationId":"338397e6\-697e-4dbe-a66b-2ea3497ef15c","RecordType":68,"ResultStatus":"{\\"ItemClass\\":\\"IPM.Note\\",\\"CcsiResults\\":\\"public\\"}","UserKey":"SupervisionStoreDeliveryAgent","UserType":0,"Version":1,"Workload":"Exchange","ObjectId":"\<20210706174831.24375086.807067@sailthru.com\>","UserId":"user2@contoso.onmicrosoft.com","IsPolicyHit":true,"SRPolicyMatchDetails":{"SRPolicyId":"a97cf128-c0fc-42a1-88e3-fd3b88af9941","SRPolicyName":"Insiders","SRRuleMatchDetails":\[{"SRCategoryName":"New insiders lexicon"}\]}}
+ResultIndex: 46
+ResultCount: 48
+Identity: 5c61aae5-26fc-4c8e-0791-08d940c8086f
+IsValid: True
+ObjectState: Unchanged
+```
 
 >[!NOTE]
 >Currently, there may be up to a 24h delay between the time a policy match is recorded in the Microsoft 365 unified audit log and the time in which you can investigate policy matches in communication compliance.
@@ -127,6 +131,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## Resources
 
-- [Communication compliance auditing](communication-compliance-feature-refernce.md#audit)
+- [Communication compliance auditing](communication-compliance-feature-reference.md#audit)
 - [Advanced Audit in Microsoft 365](advanced-audit.md)
 - [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference)
