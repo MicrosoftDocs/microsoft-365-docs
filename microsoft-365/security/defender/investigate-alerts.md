@@ -58,7 +58,7 @@ You can filter alerts according to these criteria:
 
 ## Role group membership for Defender for Office 365 alerts
 
-Your user account will need to be a member of the Organization Management and either the Compliance Administrator or Compliance Data Administrator role groups to access Microsoft Defender for Office 365 alerts.
+Your user account needs to be a member of the Organization Management and either the Compliance Administrator or Compliance Data Administrator role groups to access Microsoft Defender for Office 365 alerts.
 
 For more information, see [Manage access to Microsoft 365 Defender data](m365d-permissions.md).
 
