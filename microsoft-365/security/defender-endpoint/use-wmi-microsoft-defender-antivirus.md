@@ -17,6 +17,7 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
+ms.collection: m365-security-compliance
 ---
 
 # Use Windows Management Instrumentation (WMI) to configure and manage Microsoft Defender Antivirus

@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 09/21/2021
+ms.collection: m365-security-compliance
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus
