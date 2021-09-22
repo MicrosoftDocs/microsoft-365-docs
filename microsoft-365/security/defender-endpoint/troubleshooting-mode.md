@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
     - Operational logs from during troubleshooting mode will also be collected.
 
-    - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
+    - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
 
 - Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations will become read-only again and will revert back to how it was before setting the troubleshooting mode on.
 
