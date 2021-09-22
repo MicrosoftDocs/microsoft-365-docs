@@ -15,7 +15,6 @@ localization_priority: Normal
 ms.custom: 
   - next-gen
   - edr
-ms.collection: 
 ms.technology: mde
 ms.collection: m365-security-compliance
 ---
