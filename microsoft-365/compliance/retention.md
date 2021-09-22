@@ -418,6 +418,9 @@ Retention actions that are logged as auditing events are available only for rete
 - When a labeled item in SharePoint, OneDrive, or Exchange is marked as a record or regulatory record, and it is permanently deleted:
     - From **File and page activities**, select **Deleted file marked as a record**
 
+- When a disposition reviewer takes action for a item that's reached the end of its retention period:
+    -  From **Disposition review activities**, select **Approved disposal**, **Extended retention period**, **Relabeled item**, or **Added reviewers**
+
 ## PowerShell cmdlets for retention policies and retention labels
 
 To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell). Then, use any of the following cmdlets:

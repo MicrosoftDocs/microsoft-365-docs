@@ -27,7 +27,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
-<br><br/>
+<br/><br/>
 
 |Privilege|Permission|
 |---|---|
@@ -37,7 +37,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |GPO Support|Yes|
 |User-based Support|Yes|
 |Machine-based Support|Yes|
-|
 
 ## Prepare your endpoints
 
@@ -56,6 +55,9 @@ Deploy Removable Storage Access Control on Windows 10 devices that have antimalw
 
 You can use the following properties to create a removable storage group:
 
+> [!NOTE]
+> Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
+
 ### Removable Storage Group
 
 <br/><br/>
@@ -70,17 +72,17 @@ You can use the following properties to create a removable storage group:
 
 <br/><br/>
 
-|Property Name|Description|Options|
+| Property Name | Description | Options |
 |---|---|---|
-|PolicyRuleId |[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting.||
-|IncludedIdList|The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>`|
-|ExcludedIDList|The group(s) that the policy will not be applied to.|The Group ID/GUID must be used at this instance.|
-|Entry Id|One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.||
-|Type|Defines the action for the removable storage groups in IncludedIDList. <ul><li>Enforcement: Allow or Deny </li><li>Audit: AuditAllowed or AuditDenied</ul></li> | <ul><li>Allow</li><li>Deny </li><li>AuditAllowed: Defines notification and event when access is allowed​</li><li>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.</li></ul> <p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
-|Sid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. ||
-|ComputerSid|Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. ||
-|Options|Defines whether to display notification or not |**0-4**: When Type Allow or Deny is selected. <ul><li>0: nothing</li><li>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. </li></ul> <p> When Type **AuditAllowed** or **AuditDenied** is selected: <ul><li>0: nothing​</li><li>1: show notification​</li><li>2: send event</li><li>3: show notification and send event </li></ul>|
-|AccessMask|Defines the access. |**1-7**: <ol><li>Read​</li><li>Write​</li><li>Read and Write​</li><li>Execute​</li><li>Read and Execute</li><li>Write and Execute </li><li>Read and Write and Execute</li></ol> |
+| **PolicyRuleId** | [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the policy and will be used in the reporting and troubleshooting. | |
+| **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
+| **ExcludedIDList** | The group(s) that the policy will not be applied to. | The Group ID/GUID must be used at this instance. |
+| **Entry Id** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| |
+| **Type** | Defines the action for the removable storage groups in IncludedIDList. <ul><li>Enforcement: Allow or Deny </li><li>Audit: AuditAllowed or AuditDenied</ul></li> | <ul><li>Allow</li><li>Deny </li><li>AuditAllowed: Defines notification and event when access is allowed​</li><li>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.</li></ul> <p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
+| **Sid** | Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. |  |
+| **ComputerSid** | Local computer Sid or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. |  |
+| **Options** | Defines whether to display notification or not |**0-4**: When Type Allow or Deny is selected. <ul><li>0: nothing</li><li>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. </li></ul> <p> When Type **AuditAllowed** or **AuditDenied** is selected: <ul><li>0: nothing​</li><li>1: show notification​</li><li>2: send event</li><li>3: show notification and send event </li></ul>|
+|AccessMask|Defines the access. | **1-7**: <ol><li>Read​</li><li>Write​</li><li>Read and Write​</li><li>Execute​</li><li>Read and Execute</li><li>Write and Execute </li><li>Read and Write and Execute</li></ol> |
 
 ## Common Removable Storage Access Control scenarios
 
@@ -89,28 +91,32 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 ### Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs
 
 1. Create groups
+
     1. Group 1: Any removable storage and CD/DVD. An example of a removable storage and CD/DVD is: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     2. Group 2: Approved USBs based on device properties. An example for this use case is:
     Instance ID - Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-    > [!NOTE]
-    > You have to replace `&` with `&amp;` in the value.
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value.
 
 2. Create policy
+
     1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ### Scenario 2: Audit Write and Execute access to all but block specific unapproved USBs
 
 1. Create groups
+
     1. Group 1: Any removable storage and CD/DVD. An example for this use case is:
     Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     2. Group 2: Unapproved USBs based on device properties, for example, Vendor ID / Product ID, Friendly Name – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
-    > [!NOTE]
-    > You have to replace `&` with `&amp;` in the value.
+    > [!TIP]
+    > Replace `&` with `&amp;` in the value.
 
 2. Create policy
+
     1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** in the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
@@ -167,6 +173,7 @@ For policy deployment in Intune, the account must have permissions to create, ed
 Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> **Devices** \> **Configuration profiles** \> **Create profile** \> **Platform: Windows 10 and later & Profile: Custom**
 
 1. For each Group, create an OMA-URI rule:
+
     - OMA-URI:
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b**GroupGUID**%7d/GroupData`
@@ -180,6 +187,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       :::image type="content" source="images/xml-data-type-string.png" alt-text="The xml file for the STRING data type.":::
 
 2. For each policy, also create an OMA-URI:
+
     - OMA-URI:
 
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7b**PolicyRuleGUID**%7d/RuleData`
