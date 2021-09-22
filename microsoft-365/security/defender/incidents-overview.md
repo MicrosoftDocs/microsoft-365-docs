@@ -176,6 +176,17 @@ For more information about SecOps across Microsoft's products, see these resourc
 - [Best practices](/security/compass/security-operations)
 - [Videos and slides](/security/compass/security-operations-videos-and-decks)
 
+## Training for security analysts
+
+Use this learning module from Microsoft Learn to understand how to use Microsoft 365 Defender to manage incidents and alerts.
+
+|Training:|Investigate incidents with Microsoft 365 Defender|
+|---|---|
+|![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
+
+> [!div class="nextstepaction"]
+> [Start >](/learn/modules/defender-investigate-incidents/)
+
 ## Next steps
 
 Use the listed steps based on your experience level or role on your security team.
