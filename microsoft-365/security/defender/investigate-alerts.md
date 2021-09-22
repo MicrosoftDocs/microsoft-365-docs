@@ -56,11 +56,29 @@ You can filter alerts according to these criteria:
 - Policy
 - Impacted assets
 
-## Role group membership for Defender for Office 365 alerts
+## Required roles for Defender for Office 365 alerts
 
-Your user account needs to be a member of the Organization Management and either the Compliance Administrator or Compliance Data Administrator role groups to access Microsoft Defender for Office 365 alerts.
+You’ll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
 
-For more information, see [Manage access to Microsoft 365 Defender data](m365d-permissions.md).
+- For Azure Active Directory (Azure AD) global roles:
+
+   - Global administrator
+
+   - Security administrator
+
+   - Security Operator
+
+   - Global Reader
+
+   - Security Reader
+
+- Office 365 Security & Compliance Role Groups
+
+   - Compliance Administrator
+
+   - Organization Management 
+
+- A [custom role](custom-roles.md)
 
 ## Analyze an alert
 
