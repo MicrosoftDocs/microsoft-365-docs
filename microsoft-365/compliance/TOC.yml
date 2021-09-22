@@ -40,8 +40,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
-        - name: Communication compliance with SEIM solutions 
-          href: communication-compliance-seim.md
+        - name: Communication compliance with SIEM solutions 
+          href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
