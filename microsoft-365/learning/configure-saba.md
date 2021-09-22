@@ -43,7 +43,7 @@ Post the required configuration details on your M365 admin center under th
 
 <!-- image 3-->
 
-Please note:  For Saba Cloud integration, only sabacloud.com domain in Client's Host URL is whitelisted, if you have domain other than this, please raise support ticket for whitelisting your domain name.
+Please note:  For Saba Cloud integration, only sabacloud.com domain in Client's Host URL is allowed, if you have domain other than this, please raise support ticket for allowing your domain name.
 
 Data residency: Tenant metadata is stored centrally in our data stores & not stored in geo specific data stores.
 

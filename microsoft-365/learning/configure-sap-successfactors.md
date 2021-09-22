@@ -27,25 +27,25 @@ System Administration > Configuration > System Configuration > PARTNER_EXTRACT
 
 The following parameters need to fill by the admin in PARTNER_EXTRACT configuration. The admin should have details for the same. To edit the partner extract configuration in SF, the admin should have “Edit System Configuration” workflow permission in SF.
 
-#customer notification email for all job status
+customer notification email for all job status
 
 defaultJob.email=
 
-# Partner1 
+**Partner1**
 
-# PartnerID maximum length is 10 characters. This can be your LMS tenant id 
+PartnerID maximum length is 10 characters. This can be your LMS tenant id 
 
 partners1.partnerID=
 
-# EncryptionKey is PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK 
+ EncryptionKey is PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK 
 
 partners1.encryptionKey=
 
-# KeyOwner maps to User-ID of public key 
+KeyOwner maps to User-ID of public key 
 
 partners1.keyOwner=
 
-# enabled can be "false" or "true". Set true to enable the partner extract 
+enabled can be "false" or "true". Set true to enable the partner extract 
 
 partners1.enabled=
 
