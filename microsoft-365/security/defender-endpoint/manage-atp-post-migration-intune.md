@@ -56,9 +56,7 @@ This article describes how to find your Microsoft Defender for Endpoint settings
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Intune. You don't have to configure everything all at once; choose a task, read the corresponding resources, and then proceed.
 
-<br>
-
-****
+<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
@@ -77,7 +75,6 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure Microsoft Defender Credential Guard** to protect against credential theft attacks|For Windows 10, Windows Server 2016, and Windows Server 2019, see [Endpoint protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard) <p> For Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1, and Windows Server 2012 R2, see [Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Versions 1 and 2](https://www.microsoft.com/download/details.aspx?id=36036)|
 |**Configure Microsoft Defender Application Control** to choose whether to audit or trust apps on your organization's devices <p> *Microsoft Defender Application Control is also referred to as [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).*|[Deploy Microsoft Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <p> [Endpoint protection: Microsoft Defender Application Control](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <p> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
 |**Configure device control and USB peripherals access** to help prevent threats in unauthorized peripherals from compromising your devices|[Control USB devices and other removable media using Microsoft Defender for Endpoint and Intune](/windows/security/threat-protection/device-control/control-usb-devices-using-intune)|
-|||
 
 ## Configure your Microsoft 365 Defender portal
 

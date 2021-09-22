@@ -64,7 +64,11 @@ additionalContent:
         - title: Microsoft Viva Connections
           links:
             - text: Get started
-              url: /sharepoint/viva-connections
+              url: /sharepoint/viva-connections-overview
+            - text: Setup
+              url: /sharepoint/guide-to-setting-up-viva-connections
+            - text: Extensibility 
+              url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: End user help & training
               url: https://support.microsoft.com/en-us/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b
         # Card

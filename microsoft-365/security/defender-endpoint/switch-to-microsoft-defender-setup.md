@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/13/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -49,15 +49,12 @@ On certain versions of Windows, Microsoft Defender Antivirus was likely uninstal
 
 As you're making the switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. The following table describes what to do on your Windows clients and servers.
 
-<br>
-
-****
+<br/><br/>
 
 |Endpoint type|What to do|
 |---|---|
 |Windows clients (such as endpoints running Windows 10)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <p> Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <p> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <p> Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <p> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
 |Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. Here's why: <p> On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <p> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <ul><li>[Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)</li><li>[Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)</li><li>[Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)</li></ul>|
-|
 
 > [!TIP]
 > To learn more about Microsoft Defender Antivirus states with non-Microsoft antivirus protection, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
@@ -95,16 +92,21 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 2. Run the following PowerShell cmdlets:
 
    ```powershell
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   # For Windows Server 2016
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
+   # For Windows Server 2019
+   Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
-
+   Then restart the device. 
+   
    When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:
 
    ```powershell
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features
-   c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
+   c:\windows\sysnative\cmd.exe /c Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
 
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
@@ -141,9 +143,7 @@ Currently, you cannot run Microsoft Defender Antivirus in passive mode on Window
 
 You can use one of several methods to confirm the state of Microsoft Defender Antivirus, as described in the following table:
 
-<br>
-
-****
+<br><br/>
 
 |Method|Procedure|
 |---|---|
@@ -151,7 +151,6 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 |Task Manager|<ol><li>On a Windows device, open the Task Manager app.</li><li>Select the **Details** tab.</li><li>Look for **MsMpEng.exe** in the list.</li></ol>|
 |Windows PowerShell <p> (To confirm that Microsoft Defender Antivirus is running)|<ol><li>On a Windows device, open Windows PowerShell.</li><li>Run the following PowerShell cmdlet: `Get-Process`.</li><li>Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.</li></ol>|
 |Windows PowerShell <p> (To confirm that antivirus protection is in place)|You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus). <ol><li>On a Windows device, open Windows PowerShell.</li><li>Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`.</li><li>Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint.</li></ol>|
-|
 
 > [!TIP]
 > [Learn more about Microsoft Defender Antivirus states](microsoft-defender-antivirus-compatibility.md#more-details-about-microsoft-defender-antivirus-states).
@@ -160,9 +159,7 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:
 
-<br>
-
-****
+<br/><br/>
 
 |Method|What to do|
 |---|---|
@@ -170,7 +167,6 @@ This step of the migration process involves configuring Microsoft Defender Antiv
 |Microsoft Endpoint Configuration Manager|See [Create and deploy antimalware policies for Endpoint Protection in Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies). <p> When you create and configure your antimalware policies, make sure to review the [real-time protection settings](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) and [enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md).
 |Control Panel in Windows|Follow the guidance here: [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows). (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)|
 |[Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) <p> or <p> [Group Policy Management Console](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|<ol><li>Go to **Computer configuration** \> **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus**.</li><li>Look for a policy called **Turn off Microsoft Defender Antivirus**.</li><li>Choose **Edit policy setting**, and make sure that policy is disabled. This action enables Microsoft Defender Antivirus. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)</li></ol>|
-|
 
 > [!TIP]
 > You can deploy the policies before your organization's devices are onboarded.
@@ -184,23 +180,18 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 
 The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
 
-<br>
-
-****
+<br><br/>
 
 |OS|Exclusions|
 |---|---|
 |Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](/windows/release-health/release-information)) <p> Windows 10, version 1703 or 1709 with [KB4493441](https://support.microsoft.com/help/4493441) installed <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p> [Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **NOTE**: Monitoring Host Temporary Files 6\45 can be different numbered subfolders. <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
-|
 
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 During this step of the setup process, you add your existing solution to the Microsoft Defender Antivirus exclusion list. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table:
 
-<br>
-
-****
+<br><br/>
 
 |Method|What to do|
 |---|---|
@@ -209,7 +200,6 @@ During this step of the setup process, you add your existing solution to the Mic
 |[Group Policy Object](/previous-versions/windows/desktop/Policy/group-policy-objects)|<ol><li> On your Group Policy management computer, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and then select **Edit**.</li><li>In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.</li><li>Expand the tree to **Windows components \> Microsoft Defender Antivirus \> Exclusions**. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)</li><li>Double-click the **Path Exclusions** setting and add the exclusions.<ul><li>Set the option to **Enabled**.</li><li>Under the **Options** section, select **Show...**.</li><li>Specify each folder on its own line under the **Value name** column.</li><li>If you specify a file, make sure to enter a fully qualified path to the file, including the drive letter, folder path, filename, and extension. Enter **0** in the **Value** column.</li></ul></li><li>Select **OK**.</li><li>Double-click the **Extension Exclusions** setting and add the exclusions.<ul><li>Set the option to **Enabled**.</li><li>Under the **Options** section, select **Show...**.</li><li>Enter each file extension on its own line under the **Value name** column. Enter **0** in the **Value** column.</li></ul></li><li>Select **OK**.</li></ul>|
 |Local group policy object|<ol><li>On the endpoint or device, open the Local Group Policy Editor.</li><li>Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Exclusions**. (You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.)</li><li>Specify your path and process exclusions.</li></ol>|
 |Registry key|<ol><li>Export the following registry key: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\exclusions`.</li><li>Import the registry key. Here are two examples:<ul><li>Local path: `regedit.exe /s c:\temp\ MDAV_Exclusion.reg`</li><li>Network share: `regedit.exe /s \\FileServer\ShareName\MDAV_Exclusion.reg`</li></ul></li></ol>|
-|
 
 ### Keep the following points about exclusions in mind
 
@@ -226,16 +216,13 @@ Keep the following points in mind:
 
 Device groups, device collections, and organizational units enable your security team to manage and assign security policies efficiently and effectively. The following table describes each of these groups and how to configure them. Your organization might not use all three collection types.
 
-<br>
-
-****
+<br/><br/>
 
 |Collection type|What to do|
 |---|---|
 |[Device groups](/microsoft-365/security/defender-endpoint/machine-groups) (formerly called *machine groups*) enable your security operations team to configure security capabilities, such as automated investigation and remediation. <p> Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed. <p> Device groups are created in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).|<ol><li>Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>).</li><li>In the navigation pane on the left, choose **Settings** \> **Endpoints** \> **Permissions** \> **Device groups**.</li><li>Choose **+ Add device group**</li><li>Specify a name and description for the device group.</li><li>In the **Automation level** list, select an option. (We recommend **Full - remediate threats automatically**.) To learn more about the various automation levels, see [How threats are remediated](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).</li><li>Specify conditions for a matching rule to determine which devices belong to the device group. For example, you can choose a domain, OS versions, or even use [device tags](/microsoft-365/security/defender-endpoint/machine-tags).</li><li>On the **User access** tab, specify roles that should have access to the devices that are included in the device group.</li><li>Choose **Done**.</li></ol>|
 |[Device collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. <p> Device collections are created by using [Configuration Manager](/mem/configmgr/).|Follow the steps in [Create a collection](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).|
 |[Organizational units](/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. <p> You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. <p> Organizational units are defined in [Azure Active Directory Domain Services](/azure/active-directory-domain-services).|Follow the steps in [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/create-ou).|
-|
 
 ## Next step
 
