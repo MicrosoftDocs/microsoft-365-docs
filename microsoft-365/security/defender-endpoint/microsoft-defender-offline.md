@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan

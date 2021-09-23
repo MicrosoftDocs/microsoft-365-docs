@@ -14,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: m365-security-compliance
 ---
 
 # View attack surface reduction events
