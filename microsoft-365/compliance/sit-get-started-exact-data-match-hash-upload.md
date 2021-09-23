@@ -104,7 +104,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 4. Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group. Your tenant information is extracted from the user account to make the connection.
 
-   OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
+   OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema, you have to download it for use in this procedures. Run this command in a Command Prompt window:
 
    ```dos
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
