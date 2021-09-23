@@ -15,8 +15,8 @@ description: Use REST API to create a request to classify a whole folder using a
 
 # Create folder classification request
 
-Creates a request to classify a whole folder during off-peak hours using the applied document understanding model (see [example](rest-createfolderclassificationrequest.md#examples)).
-This can be used to classify a whole document library by creating a work item for the root folder of it.
+Creates a request to classify a whole folder during off-peak hours by using the applied document understanding model. (For more information, see [example](rest-createfolderclassificationrequest.md#examples).)
+This API can be used to classify a whole document library by creating a work item for its root folder.
 
 ## HTTP request
 
@@ -47,20 +47,20 @@ None
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the folder to classify is located. This can be omitted when TargetWebId has a value.  |
 |TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
 |TargetServerRelativeUrl|string|The server relative URL of the folder to classify is located. This can be omitted when TargetUniqueId has a value.|
-|IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item. |
+|IsFolder|boolean|The flag that indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item. |
 
 ## Responses
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|201 Created| |The response is customized. In the case of failure, it could still return 201 Created. The caller should further check the response body to determine the exact result.|
+|201 Created| |The response is customized. If there is failure, it could still return 201 Created. The caller should further check the response body to determine the exact result.|
 
 ## Response body
 
 | Name   | Type  | Description|
 |--------|-------|------------|
 |StatusCode |int |The HTTP status code. If it’s not 200 or 201, the API should have failed.|
-|ErrorMessage |string |The error message which tells what's wrong when apply the model to the document library.|
+|ErrorMessage |string |The error message that tells what's wrong when apply the model to the document library.|
 
 ## Examples
 
