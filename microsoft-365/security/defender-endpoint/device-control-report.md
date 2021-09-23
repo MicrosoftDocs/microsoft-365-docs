@@ -13,6 +13,7 @@ ms.topic: article
 manager: dansimp
 audience: ITPro
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 # Protect your organization's data with device control
 
