@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 description: "Learn about registration numbers and under-review notifications when you buy Microsoft products or services."
-ms.date: 03/17/2021
+ms.date: 09/21/2021
 ---
 
 # About registration numbers and under review notifications
