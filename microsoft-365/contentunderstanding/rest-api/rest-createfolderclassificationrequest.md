@@ -15,7 +15,7 @@ description: Use REST API to create a request to classify a whole folder using a
 
 # Create folder classification request
 
-Creates a request to classify a whole folder during offpeak hours using the applied document understanding model (see [example](rest-createfolderclassificationrequest.md#examples)).
+Creates a request to classify a whole folder during off-peak hours using the applied document understanding model (see [example](rest-createfolderclassificationrequest.md#examples)).
 This can be used to classify a whole document library by creating a work item for the root folder of it.
 
 ## HTTP request
@@ -23,6 +23,7 @@ This can be used to classify a whole document library by creating a work item fo
 ```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
+
 ## URI Parameters
 
 None
@@ -46,7 +47,7 @@ None
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the folder to classify is located. This can be omitted when TargetWebId has a value.  |
 |TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
 |TargetServerRelativeUrl|string|The server relative URL of the folder to classify is located. This can be omitted when TargetUniqueId has a value.|
-|IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classificatin work item..|
+|IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item..|
 
 ## Responses
 
@@ -82,6 +83,7 @@ None
 #### Sample response
 
 **Status code:** 201
+
 ```JSON
 {
     "ErrorMessage":  null,
