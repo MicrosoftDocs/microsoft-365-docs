@@ -72,7 +72,7 @@ Tiles on this page include:
 
 - **Details**: The core details about the request, including its deadline and request date, its description, and the related privacy regulation.
 - **Progress**: A timeline indicating completed steps and any tasks yet to be finished.
-- **Data estimate summary**: An overview of the data evaluated in your search. To learn more about this information, see View and edit search queries.
+- Stats about your current progress stage. This tile may show information like a data estimate summary, how many items were found in your search and their locations in Microsoft 365, or the status of your exports.
 - **Priority items to review**: If applicable, this will show information about important items that privacy management has detected for you, including confidential information already bearing a Microsoft sensitivity label, or items with data about multiple individuals that may require redaction. Priority items can be found under Data collected by filtering by the “Priority Types” column.
 
 ### Monitor progress and complete requests
@@ -112,7 +112,7 @@ When you have performed the necessary actions to resolve your subject rights req
 
 ### View and edit search queries
 
-To see detailed information about the data search behind a subject rights request, select **View search query details** from the data estimate summary card. This opens a pane summarizing the query and showing further details about what was found.
+To see detailed information about the data search behind a subject rights request, select **View search query details**. This opens a pane summarizing the query and showing further details about what was found.
 
 You will have the option here to **Preview search results** to see what type of content will be returned for this query. If you determine that you would like to change the properties of this search, and you have not begun the Retrieve Data phase, you can use the **Edit search query** option. This wizard offers the ability to change or add properties for data subject identification, your search filters and conditions, and the locations in which to look for data (including Exchange, SharePoint, OneDrive, and/or Teams). Use these options to reach your desired level of specificity. You can review the final version of your new query before hitting **Save**.
 

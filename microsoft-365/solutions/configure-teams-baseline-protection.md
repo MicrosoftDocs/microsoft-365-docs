@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
 recommendations: false
 description: "Learn how to deploy teams with a baseline level of protection."
 ---
@@ -48,7 +49,7 @@ To set Teams guest access settings
 1. Log in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
 2. In the left navigation, click **Show all**.
 3. Under **Admin centers**, click **Teams**.
-4. In the Teams admin center, in the left navigation, expand **Org-wide settings** and click **Guest access**.
+4. In the Teams admin center, in the left navigation, expand **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>.
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
 
