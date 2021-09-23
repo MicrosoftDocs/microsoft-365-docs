@@ -77,6 +77,12 @@ None
 #### Sample response
 
 **Status code:** 201
+```JSON
+{
+    "ErrorMessage":  null,
+    "StatusCode":  201
+}
+```
 
 ```JSON
 {

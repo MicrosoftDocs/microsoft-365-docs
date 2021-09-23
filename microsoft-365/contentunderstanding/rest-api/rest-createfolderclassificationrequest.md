@@ -49,6 +49,7 @@ None
 |TargetServerRelativeUrl|string|The server relative URL of the folder to classify is located. This can be omitted when TargetUniqueId has a value.|
 |IsFolder|boolean|The flag that indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item. |
 
+
 ## Responses
 
 | Name   | Type  | Description|
@@ -65,6 +66,7 @@ None
 ## Examples
 
 ### Enqueue a request to classify a whole folder of ID "e6cff8b7-c90c-4564-b5b8-033449090932"
+
 
 #### Sample request
 
