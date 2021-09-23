@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-description: "Learn how to use and configure SMS notifications for clients, customers and partners in Bookings."
+description: "Learn how to configure SMS text notifications for clients, customers and partners in Microsoft Bookings."
 ---
 
 # Configure SMS text notifications and reminders in Microsoft Bookings
