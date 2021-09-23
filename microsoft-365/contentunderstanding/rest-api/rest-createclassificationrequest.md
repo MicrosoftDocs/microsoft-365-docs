@@ -48,7 +48,7 @@ None
 |TargetWebId|guid|The ID of the web where the file to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the file to classify is located. This can be omitted when TargetWebId has a value.  |
 |TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
-|TargetServerRelativeUrl|string|The server relative URL of the fileto classify is located. This can be omitted when TargetUniqueId has a value.|
+|TargetServerRelativeUrl|string|The server relative URL of the file to classify is located. This can be omitted when TargetUniqueId has a value.|
 
 ## Responses
 
