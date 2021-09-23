@@ -175,7 +175,7 @@ To add a new policy, follow these steps:
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
 > - Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
 
-## End user experience
+## End-user experience
 
 The blocking experience for third-party supported browsers is provided by Network Protection, which provides a system-level message notifying the user of a blocked connection. For a more user-friendly, in-browser experience, consider using Microsoft Edge.
 
