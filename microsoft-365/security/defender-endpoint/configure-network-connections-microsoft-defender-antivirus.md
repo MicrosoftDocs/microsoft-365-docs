@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
