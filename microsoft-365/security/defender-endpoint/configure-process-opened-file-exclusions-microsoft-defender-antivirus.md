@@ -15,6 +15,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure exclusions for files opened by processes

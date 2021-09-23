@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure the cloud block timeout period
