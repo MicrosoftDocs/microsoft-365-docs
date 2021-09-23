@@ -16,6 +16,7 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Deploy, manage, and report on Microsoft Defender Antivirus
