@@ -16,6 +16,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
+ms.collection: M365-security-compliance
 ---
 
 # Run antivirus scan API

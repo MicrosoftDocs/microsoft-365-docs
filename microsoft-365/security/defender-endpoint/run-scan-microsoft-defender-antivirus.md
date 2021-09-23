@@ -16,6 +16,7 @@ ms.date: 06/10/2021
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Configure and run on-demand Microsoft Defender Antivirus scans
