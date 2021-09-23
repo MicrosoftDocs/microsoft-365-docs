@@ -16,6 +16,7 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date

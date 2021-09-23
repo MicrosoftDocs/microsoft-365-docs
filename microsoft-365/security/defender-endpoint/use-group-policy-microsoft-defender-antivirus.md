@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
+ms.collection: m365-security-compliance
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus
