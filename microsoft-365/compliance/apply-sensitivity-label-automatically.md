@@ -47,34 +47,34 @@ There are two different methods for automatically applying a sensitivity label t
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
 - **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy.
+    
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
+    
+    Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
 
-  You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
+    For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
+    
+    Specific to auto-labeling for SharePoint and OneDrive:
+    
+    - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
+        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
+        - Currently, attachments to list items aren't supported and won't be auto-labeled.
+    - Maximum of 25,000 automatically labeled files in your tenant per day.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
 
-  Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
-
-  For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
-
-  Specific to auto-labeling for SharePoint and OneDrive:
-
-  - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
-    - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
-    - Currently, attachments to list items aren't supported and won't be auto-labeled.
-  - Maximum of 25,000 automatically labeled files in your tenant per day.
-  - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
-  - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
-  - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
-
-  Specific to auto-labeling for Exchange:
-
-  - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments (Word, Excel, and PowerPoint files) are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
-    - For PDF files, if the label applies encryption, these files are encrypted when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-    - For these Office files, Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls). If the label applies encryption, these files are encrypted.
-  - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
-  - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
-  - Incoming email is labeled when there is a match with your auto-labeling conditions:
+    Specific to auto-labeling for Exchange:
+    
+    - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
+        - For PDF files, if the label applies encryption, these files are encrypted by using [Office 365 Message Encryption (OME)](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they are encrypted by using [Office 365 Message Encryption (OME)](ome.md).
+    - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
+    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
+    - Incoming email is labeled when there is a match with your auto-labeling conditions:
     - If the label is configured for [encryption](encryption-sensitivity-labels.md), that encryption isn't applied.
     - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that this can result in the names of people outside your organization.
-  - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email. There currently isn't a way to set a Rights Manager owner for all incoming email messages that are automatically encrypted.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email. There currently isn't a way to set a Rights Manager owner for all incoming email messages that are automatically encrypted.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -95,7 +95,7 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes|
 
-\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Compliance center.
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the compliance center. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -254,7 +254,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     ![Auto-labeling tab.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 3. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
 
@@ -268,18 +268,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
-    To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-    
-    For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`.
-    
-    Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-    
-    However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
-    
-    > [!NOTE]
-    > When you specify individual OneDrive accounts, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
-    > 
-    > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify here.
+    To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
