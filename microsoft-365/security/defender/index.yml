@@ -129,5 +129,5 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Microsoft 365 Defender APIs (preview)
+          - text: Microsoft 365 Defender APIs
             url: api-overview.md
