@@ -43,7 +43,7 @@ Using this method of onboarding, the device is seamlessly registered to Azure Ac
 
 In general, you'll need to take the following steps:
 
-- Ensure your fulfill the requirements
+- Ensure you fulfill the requirements
 - Enable security settings management in Microsoft Endpoint Manager through Microsoft Defender for Endpoint
 - Onboard devices
 - Identify onboarded devices
@@ -55,7 +55,7 @@ After fulfilling the onboarding steps in Microsoft Defender for Endpoint, you ca
 ## Before you begin
 Ensure you fulfill the following requirements:
 
-- Supported clients are Windows 10 with insider build version
+- Supported clients are Windows 11, starting with insider build version 22454
     (10.8040.22454.1000), Windows Server 2012 R2, Windows Server 2016. 
 
 - Ensure machines are fully up to date. 
@@ -75,6 +75,9 @@ Ensure you fulfill the following requirements:
 
 ## Enable security settings management in Microsoft Endpoint Manager through Microsoft Defender for Endpoint
 
+**Steps**
+1. In the [Microsoft 365 Defender portal](https://security.microsoft.com/) navigation pane, select **Settings** > **Endpoint** > **Advanced Features**
+2. Enable **Security setting management** for required OS platforms
 
 ## Onboard devices
 
@@ -85,7 +88,7 @@ Ensure you fulfill the following requirements:
 1. Machines must be fully up to date with the latest CU (cumulative update)
     before installing.
 
-2.  The test environment must meet connectivity requirements as specified above.
+2.  The environment must meet connectivity requirements as specified above.
 
 3.  On Windows Server 2016, ensure Defender Antivirus is installed and on
     the latest (4.18.2106.6 or newer) version.
@@ -100,7 +103,7 @@ Ensure you fulfill the following requirements:
 3.  In the **Deployment method** field, select **the script suitable for your
     intended deployment.** 
 
-### Onboard Windows 10 devices
+### Onboard Windows 11 devices
 
 You’ll need to register to the ‘Microsoft Insider’ program to get the latest
 builds. This program streamlines engineering collaboration within the Microsoft
@@ -112,7 +115,7 @@ ecosystem by enabling the distribution of content.
 
 -   In ‘Insider Settings’ select **Dev Channel**.
 
-    -   Windows 10 with insider build version (10.8040.22454.1000)
+    -   Windows 11 with insider build version 22454 (10.8040.22454.1000) or newer.
 
 -   Confirm your registration.
 
@@ -136,8 +139,7 @@ ecosystem by enabling the distribution of content.
 
 
 ## Offboard devices
-1.  In the Microsoft Defender Security Center navigation pane, select **Settings > Device management > Offboarding**. Select Windows Server 2012 R2 and 2016
-    (Preview). 
+1.  In the Microsoft Defender Security Center navigation pane, select **Settings > Device management > Offboarding**. Select your Operating System. 
 
 2.  Download then run the offboarding script. 
 
