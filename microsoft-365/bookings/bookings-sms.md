@@ -42,7 +42,7 @@ You can track key data on SMS notifications usage in your organization in the Te
 
 2. On the **Analytics & Reports** page, select SMS notifications usage.
 
-:::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
+    :::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
 
 Related content
 
