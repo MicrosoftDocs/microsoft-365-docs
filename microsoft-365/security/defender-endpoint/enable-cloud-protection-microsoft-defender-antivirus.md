@@ -15,6 +15,7 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Turn on cloud protection in Microsoft Defender Antivirus
