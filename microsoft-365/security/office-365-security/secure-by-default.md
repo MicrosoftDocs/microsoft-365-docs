@@ -49,13 +49,14 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - Allowed sender lists or allowed domain lists (anti-spam policies)
 - Outlook Safe Senders
 - IP Allow List (connection filtering)
+- Exchange mail flow rules (also known as transport rules)
 
 More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 > [!NOTE]
 > We have deprecated the **Move message to Junk Email folder** action for a **High confidence phishing email** verdict in EOP anti-spam policies. Anti-spam policies that use this action for high confidence phishing messages will be converted to **Quarantine message**. The **Redirect message to email address** action for high confidence phishing messages is unaffected.
 
-Secure by default is not a setting that can be turned on or off, but is the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phishing messages should be quarantined. Only admins can manage messages that are quarantined as malware or high confidence phishing, and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
+Secure by default is not a setting that can be turned on or off, but is the way our filtering works out of the box to keep potentially dangerous or unwanted messages out of your mailboxes. Malware and high confidence phishing messages should be quarantined. By default, only admins can manage messages that are quarantined as malware or high confidence phishing, and they can also report false positives to Microsoft from there. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
 ## More on why we're doing this
 
@@ -68,11 +69,6 @@ We also determined that the allowed sender and allowed domain lists in anti-spam
 To put it another way: as a security service, we're acting on your behalf to prevent your users from being compromised.
 
 ## Exceptions
-
-> [!NOTE]
-> In August 2021, secure by default will be extended to Exchange mail flow rules (also known as transport rules). If you use mail flow rules to allow third-party phishing simulations or unfiltered delivery to security operation mailboxes, you eventually need to eliminate these rules and switch to using the [advanced delivery policy](configure-advanced-delivery.md) _when the feature is available to you_.
-
-The only override that allows high confidence phishing message to bypass filtering is mail flow rules. To use mail flow rules to bypass filtering, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 You should only consider using overrides in the following scenarios:
 

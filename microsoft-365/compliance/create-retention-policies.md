@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+ms.custom: admindeeplinkMAC
 description: "Use a retention policy to efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
@@ -62,7 +63,7 @@ When you have more than one retention policy, and when you also use retention la
 
 ### Retention policy for Teams locations
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
@@ -117,7 +118,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -164,7 +165,7 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, select **Policies** > **Retention**.
 
 2. Select **New retention policy** to start the Create retention policy configuration, and name your new retention policy.
 
@@ -204,13 +205,7 @@ Although the retention policy is applied at the site level, only documents have 
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist at the end of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the configuration process won't create the retention policy until the validation check passes. If you see this message, go back in the configuration to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts to include or exclude, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+To specify individual OneDrive accounts to include or exclude, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 > [!NOTE]
 > When you specify individual OneDrive accounts to include or exclude, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.

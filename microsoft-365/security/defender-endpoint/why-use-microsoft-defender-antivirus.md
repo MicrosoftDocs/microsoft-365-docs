@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint

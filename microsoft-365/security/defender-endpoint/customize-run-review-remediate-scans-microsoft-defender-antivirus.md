@@ -16,6 +16,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation

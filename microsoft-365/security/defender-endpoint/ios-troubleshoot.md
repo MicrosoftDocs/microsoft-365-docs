@@ -41,7 +41,7 @@ There are some apps that stop functioning when an active VPN is detected. You ca
 
 By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
-While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
+While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable the VPN directly from the Defender for Endpoint app or using the following steps:
 
 1. On your iOS device, open the **Settings** app, click or tap **General** and then **VPN**.
 1. Click or tap the "i" button for Microsoft Defender for Endpoint.
@@ -51,7 +51,7 @@ While enabled by default, there might be some cases that require you to disable 
     > ![VPN config connect on demand.](images/ios-vpn-config.png)
 
 > [!NOTE]
-> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and click or tap **Start VPN**.
+> Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and Enable Web Protection.
 
 ## Co-existence with multiple VPN profiles
 
@@ -77,7 +77,7 @@ In addition, it is critical for Microsoft Defender for Endpoint to be up to date
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
+Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/support/report-unsafe-site) page to report a website that could be a phishing site.
 
 ## Malicious site detected
 
@@ -98,4 +98,12 @@ After onboarding, it takes few hours for device to show up in the Device invento
 ## Data and Privacy
 
 For details about data collected and privacy, see [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## Issues on supervised devices with content filter profile installed
+
+There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in interet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
+
+## Issues during app updates from the app store
+
+If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
 
