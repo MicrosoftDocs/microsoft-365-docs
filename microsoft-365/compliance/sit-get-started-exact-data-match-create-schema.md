@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-You can create the schema and EDM SIT by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or the [Create the schema manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create the schema and EDM SIT by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or [manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
@@ -29,23 +29,19 @@ If you are not familiar with EDM based SITS or there implementation, you should 
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-<!--When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.-->
-
 A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to ten different EDM schemas in a Microsoft 365 tenant. 
 
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
-You can use this wizard to create your schema files to help simplify the process.
+You can use this wizard to help simplify the schema file creation process.
 
 ## Pre-requisites
-
-<!--1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).-->
 
 - Perform the steps in [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type).
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 
-1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
+1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches** > **EDM schemas**.
 
 2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
 
@@ -53,21 +49,27 @@ You can use this wizard to create your schema files to help simplify the process
 
 3. Fill in an appropriate **Name** and **Description**.
 
-4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior. To learn more about configuring EDM to ignore case or delimiters, see [Using the caseInsensitive and ignoredDelimiters fields](#using-the-caseinsensitive-and-ignoreddelimiters-fields). 
+4. Choose **Ignore delimiters and punctuation for all schema fields** if you want that behavior for the entire schema. To learn more about configuring EDM to ignore case or delimiters, see [Using the caseInsensitive and ignoredDelimiters fields](#using-the-caseinsensitive-and-ignoreddelimiters-fields) for more details on this feature. 
 
-5. Fill in your desired values for your **Schema field #1** and add more fields as needed. 
+5. Fill in your desired values for your **Schema field #1** and add more fields as needed. Each schema field must be identical to the column headers in your sensitive information source file.
+
+6. If you want, set values for:
+    1. **Field is searchable**
+    1. **Field is case-insensitive**
+    1. **Choose delimiters and punctuation to ignore for this field**
+    1. **Enter custom delimiters and punctuation for this field**
 
 > [!IMPORTANT]
 > At least one, but no more than five of your schema fields must be designated as searchable.
 
-6. Choose **Save**. Your schema will now be listed.
+6. Choose **Save**. Your schema will now be listed and available for use.
 
 > [!IMPORTANT]
 > If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
 
 ## Export of the EDM schema file in XML format
 
-If you created the EDM Schema in the EDM Schema wizard, you must export the EDM Schema file in XML format.  
+If you created the EDM Schema in the EDM Schema wizard, you must export the EDM Schema file in XML format. You'll need it in the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) phase.
 
 1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
