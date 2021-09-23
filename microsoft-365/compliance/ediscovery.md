@@ -125,12 +125,14 @@ The following sections show the minimum subscription requirements for Content se
 
 - Microsoft 365 E1 subscription
 - Microsoft 365 G1 subscription
+- Microsoft 365 F1 or F3 subscription, or F5 Security add-on
 - Office 365 Education A1 subscription
 
 ### Core eDiscovery
 
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A3 or Office 365 Education A3 subscription
 
 ### Advanced eDiscovery
@@ -141,6 +143,7 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 G5 subscription
 - Microsoft 365 G5 subscription with G5 Compliance add-on
 - Microsoft 365 G5 subscription with G5 eDiscovery and Audit add-on
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A5 or Office 365 Education A5 subscription
 
 ## Get started with eDiscovery
