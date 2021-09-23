@@ -34,7 +34,7 @@ None
 |--------|-------|
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
-|x-requestdigest|The appropriate digest for current site|
+|x-requestdigest|The appropriate digest for current site.|
 
 ## Request body
 
@@ -47,7 +47,7 @@ None
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the folder to classify is located. This can be omitted when TargetWebId has a value.  |
 |TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
 |TargetServerRelativeUrl|string|The server relative URL of the folder to classify is located. This can be omitted when TargetUniqueId has a value.|
-|IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item..|
+|IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classification work item. |
 
 ## Responses
 
@@ -90,6 +90,7 @@ None
     "StatusCode":  201
 }
 ```
+
 ## See also
 
 [Syntex document understanding model REST API](syntex-model-rest-api.md)
