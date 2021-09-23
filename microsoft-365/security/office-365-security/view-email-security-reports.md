@@ -1,20 +1,20 @@
 ---
 title: View email security reports
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
@@ -31,13 +31,62 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports in the Microsoft 365 Defender portal. For more information, see [View Defender for Office 365 reports](view-reports-for-mdo.md#view-and-download-reports).
+A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
 
 > [!NOTE]
 >
 > Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
 > Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+## View and download reports
+
+### View reports
+
+1. In the Microsoft 365 defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.
+
+   To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
+
+2. Find the report that you want, and then click **View details**.
+
+### Schedule reports
+
+1. On the page of the report, click **Create schedule**.
+2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
+3. On the **Set preferences** page, configure the following settings:
+   - **Frequency**: Select one of the following values:
+     - **Weekly** (default)
+     - **Monthly**
+   - **Start date**: When generation of the report begins. The default value is today.
+   - **Expiry date**: When generation of the report ends. The default value is one year from today.
+
+   When you're finished, click **Next**.
+
+4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add and remove others.
+
+   When you're finished, click **Next**.
+
+5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
+
+   When you're finished, click **Submit**.
+
+To manage scheduled reports that you've already created, do the following steps:
+
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
+
+   To go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
+
+2. On the **Manage schedules** page, find and select the scheduled report.
+
+3. In the details flyout that opens, you can click **Delete schedule** to delete the scheduled report, or **Edit schedule** to edit the scheduled report.
+
+### Download reports
+
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
+
+   To go directly to the **Managed schedules** page, use <https://security.microsoft.com/ReportsForDownload>.
+
+2. On the **Reports for download** page, find and select the report you want to download.
 
 ## Compromised users report
 
@@ -245,9 +294,29 @@ The **Mailflow** view shows you how Microsoft's email threat protection features
 
 ![Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view.png)
 
+The aggregate view and details table view allow for 90 days of filtering.
+
 The information in the diagram is color-coded by **EOP** or **Defender for Office 365** technologies.
 
-If you hover over a horizontal band in the diagram, you'll see the number of related messages (**Total email**, **Edge block**, **Processed**, why the message was blocked, etc.). For most of the elements that explain why the message was blocked (for example, **Phishing block**), additional information about why the message was blocked and the number of affected messages is available if you click on the element as shown in the following screenshot:
+The diagram is organized into the following horizontal bands:
+
+- **Total email** band: This value is always shown first.
+- **Edge block** and **Processed** band:
+  - **Edge block**: Messages that are filtered at the edge and identified as Edge Protection.
+  - **Processed**: Messages that are handled by the filtering stack.
+- Outcomes band:
+  - **Rule Block**: Messages that are processed by Exchange mail flow rules (transport rules).
+  - **Malware block**: Messages that are identified as malware by various filters.<sup>\*</sup>
+  - **Phish block**: Messages identified as phish during processing by various filters.<sup>\*</sup>
+  - **Spam block**: Messages identified as spam during processing by various filters.<sup>\*</sup>
+  - **Impersonation block**: Messages detected as user impersonation or domain impersonation in Defender for Office 365.<sup>\*</sup>
+  - **Detonation block**: Messages detected during file or URL detonation by Safe Attachments policies or Safe Links policies in Defender for Office 365.<sup>\*</sup>
+  - **ZAP removed**: Messages that are removed by zero-hour auto purge (ZAP).<sup>\*</sup>
+  - **Delivered**: Messages delivered to users due to an allow.<sup>\*</sup>
+
+If you hover over a horizontal band in the diagram, you'll see the number of related messages.
+
+<sup>\*</sup> If you click on this element, the diagram is expanded to show further details. For a description of each element in the expanded nodes, see [Detection technologies](/office/office-365-management-api/office-365-management-activity-api-schema#detection-technologies).
 
 ![Phishing block details in Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view-details.png)
 
@@ -264,6 +333,8 @@ The details table below the diagram shows the following information:
 - **ZAP removed**
 - **Messages where not threats were detected**
 
+If you select a row in the details table, a further breakdown of the email counts is shown in the details flyout that appears.
+
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)** **Start date** and **End date**.
@@ -274,6 +345,19 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 Back on the main report page, you can click **Show trends** to see trend graphs in the **Mailflow trends** flyout that appears.
 
 ![Mailflow trends flyout in Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
+
+#### Export from Mailflow view
+
+If you click **Export** on the main report page, an **Export conditions** flyout appears where you can configure the following settings:
+
+- **Options**: Select one of the following values:
+  - **Summary (with data for the last 90 days at most)**
+  - **Details (with data for the last 30 days)**
+- **Date (UTC)** **Start time** and **End time** (dates).
+
+When you're finished configuring the filters, click **Apply**. Data is exported to a .csv file and is available on the **Reports for download** page as described [earlier in this article](#download-reports).
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
 
 ## Malware detections report
 
@@ -343,7 +427,7 @@ For more information about composite authentication result codes, see [Anti-spam
 
 The **Submissions** report shows information about items that admins have reported to Microsoft for analysis. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days. 
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days.
 
 ![Submissions widget on the Email & collaboration reports page.](../../media/submissions-report-widget.png)
 
