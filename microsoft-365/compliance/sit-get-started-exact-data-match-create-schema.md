@@ -53,7 +53,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 5. Fill in your desired values for your **Schema field #1** and add more fields as needed. Each schema field must be identical to the column headers in your sensitive information source file.
 
-6. If you want, set values for:
+6. If you want, set the per field values for:
     1. **Field is searchable**
     1. **Field is case-insensitive**
     1. **Choose delimiters and punctuation to ignore for this field**
@@ -69,7 +69,7 @@ You can use this wizard to help simplify the schema file creation process.
 
 ## Export of the EDM schema file in XML format
 
-If you created the EDM Schema in the EDM Schema wizard, you must export the EDM Schema file in XML format. You'll need it in the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) phase.
+If you created the EDM schema in the EDM schema wizard, you must export the EDM schema file in XML format. You'll need it in the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) phase.
 
 1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -79,13 +79,16 @@ If you created the EDM Schema in the EDM Schema wizard, you must export the EDM 
 $Schema = Get-DlpEdmSchema -Identity "[your EDM Schema name]"
 Set-Content -Path ".\Schemafile.xml" -Value $Schema.EdmSchemaXML
 ```
-3. If you used the Exact Data Match schema wizard to create your schema and didn’t export the schema as a file in XML format, use the EDM Upload Agent to download the schema use this cmdlet:
+
+<!--3. If you used the Exact Data Match schema wizard to create your schema and didn’t export the schema as a file in XML format, use the EDM Upload Agent to download the schema use this cmdlet:
 
 ```powershell
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
-``` 
+``` -->
 
-## Create exact data match schema and rule package manually
+3. Save this file for later use.
+
+## Create exact data match schema manually and upload
 
 ### Using the caseInsensitive and ignoredDelimiters fields
 
@@ -162,9 +165,9 @@ The `ignoredDelimiters` flag doesn't support:
       </EdmSchema>
       ```
 
-1. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+2. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
-2. To upload the database schema, run the following cmdlets, one at a time:
+3. To upload the database schema, run the following cmdlets, one at a time:
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
