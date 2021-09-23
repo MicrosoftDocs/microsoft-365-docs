@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +28,7 @@ description: "Microsoft 365 group members get a group email and shared workspace
 
 # Compare groups
 
-In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
 - **Microsoft 365 groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 - **Distribution groups** are used for sending email notifications to a group of people.

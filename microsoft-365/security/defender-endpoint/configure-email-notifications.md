@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-emailconfig-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 You can configure Defender for Endpoint to send email notifications to specified recipients for new alerts. This feature enables you to identify a group of individuals who will immediately be informed and can act on alerts based on their severity.
 
@@ -45,7 +45,7 @@ The email notification includes basic information about the alert and a link to 
 You can create rules that determine the devices and alert severities to send email notifications for and the notification recipients.
 
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **General** > **Email notifications**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Email notifications**.
 
 2. Click **Add item**.
 

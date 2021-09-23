@@ -38,18 +38,23 @@ None
 
 ## Request body
 
+## Request body
+
 |Name    |Type   |Description |
 |--------|-------|------------|
 |_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
-|TargetSiteId|guid|The id of the site where the file to classify is located.|
-|TargetWebId|guid|The id of the web where the file to classify is located.|
-|TargetUniqueId|guid|The id of the file to classify.|
+|TargetSiteId|guid|The id of the site where the file to classify is located. This can be omitted when TargetSiteUrl has a value. |
+|TargetSiteUrl|string|The full URL of the site where the file to classify is located. This can be omitted when TargeSiteId has a value.|
+|TargetWebId|guid|The id of the web where the file to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
+|TargetWebServerRelativeUrl|string|The server relative URL of the web where the file to classify is located. This can be omitted when TargetWebId has a value.  |
+|TargetUniqueId|guid|The id of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
+|TargetServerRelativeUrl|string|The server relative URL of the fileto classify is located. This can be omitted when TargetUniqueId has a value.|
 
 ## Responses
 
 | Name   | Type  | Description|
 |--------|-------|------------|
-|201 Created| |Success|
+|201 Created| |The response is customized. In the case of failure, it could still return 201 Created. The caller should further check the response body to determine the exact result.|
 
 ## Examples
 
@@ -71,6 +76,12 @@ None
 #### Sample response
 
 **Status code:** 201
+```JSON
+{
+    "ErrorMessage":  null,
+    "StatusCode":  201
+}
+```
 
 ## See also
 

@@ -20,32 +20,37 @@ ms.technology: mde
 
 # Deploy Defender for Endpoint on Linux with Chef
 
-Before you begin:
+Before you begin: Install unzip if it's not already installed.
 
-- Install unzip if it’s not already installed. 
-The Chef components are already installed and a Chef repository exists (chef generate repo <reponame>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.
+The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.
 
-You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that is in your chef repository:</br>
-`chef generate cookbook mdatp`
+You can create a new cookbook in your existing repository by running the following command from inside the cookbooks folder that is in your chef repository:
 
-This command will create a new folder structure for the new cookbook called mdatp.  You can also use an existing cookbook if you already have one you’d like to use to add the MDE deployment into.
+```bash
+chef generate cookbook mdatp
+```
+
+This command will create a new folder structure for the new cookbook called mdatp. You can also use an existing cookbook if you already have one you'd like to use to add the MDE deployment into.
 After the cookbook is created, create a files folder inside the cookbook folder that just got created:
 
-`mkdir mdatp/files`
+```bash
+mkdir mdatp/files
+```
 
 Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft Defender Security Center portal to this new files folder.
 
 On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is created when the cookbook was generated. Use your preferred text editor (like vi or nano) to add the following instructions to the end of the default.rb file:
--	include_recipe '::onboard_mdatp'
+
+- include_recipe '::onboard_mdatp'
 - include_recipe '::install_mdatp'
 
 Then save and close the default.rb file.
+
 Next create a new recipe file named install_mdatp.rb in the recipes folder and add this text to the file:
 
 ```powershell
-
-#Add Microsoft Defender   
-Repo  
+#Add Microsoft Defender
+Repo
 case node['platform_family']
 when 'debian'
  apt_repository 'MDAPRepo' do
@@ -59,12 +64,12 @@ when 'debian'
    repo_name          'microsoft-prod'
    components         ['main']
    trusted            true
-   uri                "https://packages.microsoft.com/ubuntu/20.04/prod"
+   uri                "https://packages.microsoft.com/config/ubuntu/20.04/prod"
  end
  apt_package "mdatp"
 when 'rhel'
  yum_repository 'microsoft-prod' do
-   baseurl            "https://packages.microsoft.com/rhel/7/prod/"
+   baseurl            "https://packages.microsoft.com/config/rhel/7/prod/"
    description        "Microsoft Defender for Endpoint"
    enabled            true
    gpgcheck           true
@@ -78,11 +83,10 @@ when 'rhel'
 end
 ```
 
-You’ll need to modify the version number, distribution, and repo name to match the version you’re deploying to and the channel you’d like to deploy.
-Next you should create an onboard_mdatp.rb file in the mdatp/recipies folder.  Add the following text to that file:
+You'll need to modify the version number, distribution, and repo name to match the version you're deploying to and the channel you'd like to deploy.
+Next you should create an onboard_mdatp.rb file in the mdatp/recipies folder. Add the following text to that file:
 
 ```powershell
-
 #Create MDATP Directory
 mdatp = "/etc/opt/microsoft/mdatp"
 zip_path = "/path/to/chef-repo/cookbooks/mdatp/files/WindowsDefenderATPOnboardingPackage.zip"
@@ -106,8 +110,8 @@ end
 
 Make sure to update the path name to the location of the onboarding file.
 To test deploy it on the Chef workstation, just run ``sudo chef-client -z -o mdatp``.
-After your deployment you should consider creating and deploying a configuration file to the servers based on  [Set preferences for Microsoft Defender for Endpoint on Linux](/linux-preferences.md).  
-After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package.  Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
+After your deployment you should consider creating and deploying a configuration file to the servers based on [Set preferences for Microsoft Defender for Endpoint on Linux](/linux-preferences.md).
+After you've created and tested your configuration file, you can place it into the cookbook/mdatp/files folder where you also placed the onboarding package. Then you can create a settings_mdatp.rb file in the mdatp/recipies folder and add this text:
 
 ```powershell
 #Copy the configuration file
@@ -133,7 +137,7 @@ when 'debian'
    action :remove
  end
 when 'rhel'
- if node['platform_version'] <= 8 
+ if node['platform_version'] <= 8
 then
     yum_package "mdatp" do
       action :remove
@@ -145,4 +149,3 @@ then
  end
 end
 ```
-

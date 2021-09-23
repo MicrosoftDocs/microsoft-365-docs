@@ -44,7 +44,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. Too go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -64,7 +64,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** > **Review** > **Restricted users**.
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Restricted users**.
 
 2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 
@@ -81,7 +81,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 6. Click **Yes** to confirm the change.
 
    > [!NOTE]
-   > It might take up to 24 hours for all restrictions to be removed from the user.
+   > It might take up to 1 hour for all restrictions to be removed from the user.
 
 ## Verify the alert settings for restricted users
 
@@ -95,10 +95,10 @@ The default alert policy named **User restricted from sending email** will autom
 2. On the **Alert policy** page, find and select the alert named **User restricted from sending email**. You can sort the policies by name, or use the **Search box** to find the policy.
 
 3. In the **User restricted from sending email** flyout that appears, verify or configure the following settings:
-   - **Status**: Verify the alert is turned on ![Toggle on](../../media/scc-toggle-on.png).
+   - **Status**: Verify the alert is turned on ![Toggle on.](../../media/scc-toggle-on.png).
    - **Email recipients**: Click **Edit** and verify or configure the following settings in the **Edit recipients** flyout that appears:
      - **Send email notifications**: Verify this is selected (**On**).
-     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
+     - **Email recipients**: The default value is **TenantAdmins** (meaning, **Global admin** members). To add more recipients, click in a blank area of the box. A list of recipients will appear, and you can start typing a name to filter and select a recipient. You can remove an existing recipient from the box by clicking ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to their name.
      - **Daily notification limit**: The default value is **No limit** but you can select a limit for the maximum number of notifications per day.
 
      When you're finished, click **Save**.

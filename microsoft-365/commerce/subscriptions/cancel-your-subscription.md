@@ -19,7 +19,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "If you have fewer than 25 user licenses, you can cancel your Microsoft 365 for business trial or paid subscription in the admin center."
-ms.date: 04/08/2021
+ms.date: 09/16/2021
 ---
 
 # Cancel your subscription
@@ -32,7 +32,9 @@ ms.date: 04/08/2021
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
 
 > [!NOTE]
-> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one of them will not impact the purchased licenses or services inside the other subscriptions.
+> 
+> - If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one of them will not impact the purchased licenses or services inside the other subscriptions.
+> - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Before you begin
 
@@ -45,14 +47,6 @@ If you added your own domain name to use with your subscription, you must remove
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
-3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
-4. Select **Save**.
-
-Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
-
-> [!NOTE]
-> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
 ::: moniker-end
 
@@ -65,14 +59,19 @@ Your subscription now appears in a **Disabled** state, and has reduced functiona
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+
 ::: moniker-end
 
-2. Select the **Products** tab.
-3. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
-4. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
-5. Select **Save**.
+2. Find the subscription that you want to cancel. Select the three dots (more actions), then select **Cancel subscription**.
 
-Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md).
+3. In the **Cancel subscription** pane, choose a reason why you're canceling. Optionally, provide any feedback.
+
+4. Select **Save**.
+
+Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
+
+> [!NOTE]
+> If you explicitly delete a subscription, then it skips the Expired and Disabled stages and the SharePoint Online data and content, including OneDrive, is deleted immediately.
 
 ## What happens when you cancel a subscription
 

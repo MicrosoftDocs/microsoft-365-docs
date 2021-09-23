@@ -33,12 +33,12 @@ ms.technology: mde
 - Windows 8.1 Pro
 - Windows 8.1 Enterprise
 
-
->Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevel-abovefoldlink).
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
 Defender for Endpoint extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
 To onboard down-level Windows client endpoints to Defender for Endpoint, you'll need to:
+
 - Configure and update System Center Endpoint Protection clients.
 - Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Defender for Endpoint as instructed below.
 
@@ -46,24 +46,28 @@ To onboard down-level Windows client endpoints to Defender for Endpoint, you'll 
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
+
 > [!IMPORTANT]
 > This step is required only if your organization uses System Center Endpoint Protection (SCEP).
 
-Defender for Endpoint integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware. 
+Defender for Endpoint integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
-The following steps are required to enable this integration: 
-- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie) 
+The following steps are required to enable this integration:
+
+- Install the [January 2017 anti-malware platform update for Endpoint Protection clients](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 - Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Allow connections to the Microsoft Defender Antivirus cloud](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus#allow-connections-to-the-microsoft-defender-antivirus-cloud)
 
 ## Install and configure Microsoft Monitoring Agent (MMA) to report sensor data to Microsoft Defender for Endpoint
 
 ### Before you begin
+
 Review the following details to verify minimum system requirements:
+
 - Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
-  
+
   > [!NOTE]
-  > Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro. 
+  > Only applicable for Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
@@ -75,8 +79,6 @@ Review the following details to verify minimum system requirements:
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in your environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).
 
-
-
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
 2. Obtain the workspace ID:
@@ -85,8 +87,10 @@ Review the following details to verify minimum system requirements:
    - Copy the workspace ID and workspace key
 
 3. Using the Workspace ID and Workspace key choose any of the following installation methods to install the agent:
-    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard). <br>
+    - [Manually install the agent using setup](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard).
+
       On the **Agent Setup Options** page, select **Connect the agent to Azure Log Analytics (OMS)**
+
     - [Install the agent using the command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line).
     - [Configure the agent using a script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation).
 
@@ -98,11 +102,16 @@ Review the following details to verify minimum system requirements:
 Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ### Configure proxy and Internet connectivity settings
- 
+
 - Each Windows endpoint must be able to connect to the Internet using HTTPS. This connection can be direct, using a proxy, or through the [OMS Gateway](/azure/log-analytics/log-analytics-oms-gateway).
 - If a proxy or firewall is blocking all traffic by default and allowing only specific domains through or HTTPS scanning (SSL inspection) is enabled, make sure that you [enable access to Defender for Endpoint service URLs](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
-## Offboard client endpoints
-To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint. 
+## Run a detection test to verify onboarding
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink).
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
+
+## Offboard client endpoints
+
+To offboard, you can uninstall the MMA agent from the endpoint or detach it from reporting to your Defender for Endpoint workspace. After offboarding the agent, the endpoint will no longer send sensor data to Defender for Endpoint.
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevele-belowfoldlink)

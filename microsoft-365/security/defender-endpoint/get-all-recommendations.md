@@ -27,7 +27,7 @@ ms.custom: api
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,36 +37,51 @@ ms.custom: api
 
 Retrieves a list of all security recommendations affecting the organization.
 
+
+## API description
+
+Returns information about all security recommendations affecting the organization.
+
+*URL:* GET:/api/recommendations
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |	Permission	|	Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |	SecurityRecommendation.Read.All |	'Read Threat and Vulnerability Management security recommendation information'
-Delegated (work or school account) | SecurityRecommendation.Read |	'Read Threat and Vulnerability Management security recommendation information'
+Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Delegated (work or school account)|SecurityRecommendation.Read |'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request
-```
+
+```http
 GET /api/recommendations
 ```
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
+
 Empty
 
 ## Response
-If successful, this method returns 200 OK with the list of security recommendations in the body.
 
+If successful, this method returns 200 OK with the list of security recommendations in the body.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 
@@ -74,10 +89,9 @@ Here is an example of the request.
 GET https://api.securitycenter.microsoft.com/api/recommendations
 ```
 
-**Response**
+### Response
 
 Here is an example of the response.
-
 
 ```json
 {
@@ -111,11 +125,12 @@ Here is an example of the response.
             "nonProductivityImpactedAssets": 0,
             "relatedComponent": "Windows 10"
         }
-		...
+        ...
      ]
 }
 ```
+
 ## See also
+
 - [Risk-based Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Threat & Vulnerability security recommendation](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
-

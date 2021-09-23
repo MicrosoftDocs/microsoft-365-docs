@@ -41,7 +41,7 @@ To turn off *Anyone* links for your organization
 1. In the SharePoint admin center, in the left navigation, click **Sharing**.
 2. Set the SharePoint external sharing settings to **New and existing guests**.
 
-   ![Screenshot of organization level SharePoint site external sharing settings](../media/sharepoint-organization-external-sharing-controls-new-users.png)
+   ![Screenshot of organization level SharePoint site external sharing settings.](../media/sharepoint-organization-external-sharing-controls-new-users.png)
 
 3. Click **Save**.
 
@@ -51,7 +51,7 @@ To turn off *Anyone* links for a site
 3. In the ribbon, click **Sharing**.
 4. Ensure that sharing is set to **New and existing guests**.
 
-   ![Screenshot of site level SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+   ![Screenshot of site level SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 5. If you made changes, click **Save**.
 
@@ -71,7 +71,7 @@ To set up a domain allow or deny list
 3. Click **Add domains**.
 4. Select whether you want to block domains, type the domains, and click **OK**.
 
-   ![Screenshot of SharePoint limit external sharing by domain setting](../media/sharepoint-sharing-block-domain.png)
+   ![Screenshot of SharePoint limit external sharing by domain setting.](../media/sharepoint-sharing-block-domain.png)
 
 5. Click **Save**.
 
@@ -87,7 +87,7 @@ To limit external sharing to members of a security group
 
 3. Select **Allow only users in specific security groups to share externally**, and then select **Manage security groups**.
 
-    ![Screenshot of Manage security groups panel](/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Screenshot of Manage security groups panel.](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. In the **Add a security group** box, enter a name for a security group. The security group box appears.
 

@@ -2,8 +2,8 @@
 title: "Learn about app threat detection and remediation"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -53,7 +53,7 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
 Here's a summary of the integration.
 
-![The integration of app governance with Azure AD and Microsoft Cloud App Security](..\media\manage-app-protection-governance\mapg-integration.png)
+![The integration of app governance with Azure AD and Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
 
 Additionally, app governance sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 

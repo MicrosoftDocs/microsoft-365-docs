@@ -32,7 +32,7 @@ This section describes the statistics that are available for draft collections. 
 
 This section displays a graphical summary of the estimated items returned by the collection. This indicates the number of items that match the search criteria of the collection. This information gives you an idea about the estimated number of items returned by the collection.
 
-![Collection estimates for a draft collection](../media/AeDCollectionEstimates.png)
+![Collection estimates for a draft collection.](../media/AeDCollectionEstimates.png)
 
 - **Estimated items by locations**: The total number of estimated items returned by the collection. The specific number of items located in mailboxes and located in sites is also displayed.
 
@@ -74,7 +74,7 @@ This section describes the statistics that are available after you commit a coll
 
 After you commit a collection to a review set, the following tabs are displayed on the flyout page of the committed connection. Each of these tabs contains different types of information about the collection.
 
-![Tabs on flyout page of committed collection](../media/CommittedCollectionFlyoutPage.png)
+![Tabs on flyout page of committed collection.](../media/CommittedCollectionFlyoutPage.png)
 
 ### Collection contents
 
@@ -101,7 +101,7 @@ The **Indexing** section on the **Summary** tab of a committed review set contai
 
 **New indexed items**. The number of items that were newly indexed before they were added to the review set. An example of a newly indexed item are child items that are extracted from a parent item then indexed before they're added to the review set. Also, items that aren't located in custodial data sources and non-custodial content locations listed on the **Data sources** tab in the case are indexed before they're added to the review. For example, newly indexed items would include items collected from additional locations.
 
-**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This would partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
+**Updated indexed items**. The number of partially indexed items that were successfully indexed and added to the review set. This statistic indicates the partially indexed items from custodial and non-custodial content locations **Data sources** tab that were successfully indexed when the collection was committed to the review set.
 
 **Indexing errors**. The number of partially indexed items that couldn't be indexed before they were added to the review set. These items might require error remediation.
 
