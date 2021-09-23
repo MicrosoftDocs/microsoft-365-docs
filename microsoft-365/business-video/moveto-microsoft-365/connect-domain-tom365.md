@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -38,7 +39,7 @@ First you will need to delete existing DNS records from Google, then we can add 
 1. Scroll down to **Synthetic records**, open **Google Workspace**, select **Delete**, then **Delete** again.
 1. Scroll down to **Custom resource records** and delete any existing DNS records that appear, including any you may have created previously for Microsoft 365.
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com).
-1. In the left nav, choose, **Show all**, **Settings**, **Domains**.
+1. In the left nav, choose, **Show all** > **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
 1. Then choose your default domain.
 1. Select **Continue setup**, then, to connect your domain, choose  **Continue**.
 1. Scroll down to view the DNS records that need to be copied to Google.
@@ -47,6 +48,6 @@ First you will need to delete existing DNS records from Google, then we can add 
 1. In the **Data** field, paste the record you copied.
 1. Then select **Add**.
 1. Repeat the process for CNAME and TXT records and add the values in the Google DNS management page.
-1. Return to the Microsoft 365 Admin center and select **Continue**.
+1. Return to the Microsoft 365 admin center and select **Continue**.
 
     Your domain setup is complete.

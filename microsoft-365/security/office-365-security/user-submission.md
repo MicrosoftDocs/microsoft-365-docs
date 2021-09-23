@@ -83,7 +83,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 
-   - **Microsoft Outlook Report Message button** \> **On** ![Toggle on](../../media/scc-toggle-on.png): Select this option if you use the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
+   - **Microsoft Outlook Report Message button** \> **On** ![Toggle on.](../../media/scc-toggle-on.png): Select this option if you use the Report Message add-in, the Report Phishing add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
      - **Send the reported messages to**: Select one of the following options:
        - **Microsoft**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
        - **Microsoft and my organization's mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. User submissions will go to both Microsoft for analysis and to the custom mailbox for your admin or security operations team to analyze.
@@ -115,7 +115,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
           > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
 
-   - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
+   - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**

@@ -34,7 +34,7 @@ ms.custom: FPFN
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-![Definition of false positive and negatives in Defender for Endpoint](images/false-positives-overview.png)
+![Definition of false positive and negatives in Defender for Endpoint.](images/false-positives-overview.png)
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center), your security operations can take steps to address them by using the following process:
 
@@ -46,7 +46,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
-![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
+![Steps to address false positives and negatives.](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
@@ -69,16 +69,13 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 4. Depending on the alert status, take the steps described in the following table:
 
-<br>
-
-****
+<br/>
 
 |Alert status|What to do|
 |---|---|
 |The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
 |The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
 |The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
-|||
 
 ### Classify an alert
 
@@ -161,7 +158,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
-> ![Quarantine file](images/autoir-quarantine-file-1.png)
+> ![Quarantine file.](images/autoir-quarantine-file-1.png)
 
 1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
@@ -255,7 +252,7 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, create "a
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-![Indicator types diagram](images/false-positives-indicators.png)
+![Indicator types diagram.](images/false-positives-indicators.png)
 
 #### Indicators for files
 

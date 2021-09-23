@@ -37,7 +37,7 @@ Here is the configuration, with placeholder names for each server.
   
 **A high availability federated authentication for Microsoft 365 infrastructure in Azure**
 
-![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![The final configuration of the high availability Microsoft 365 federated authentication infrastructure in Azure.](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 All of the virtual machines are in a single cross-premises Azure virtual network (VNet). 
   

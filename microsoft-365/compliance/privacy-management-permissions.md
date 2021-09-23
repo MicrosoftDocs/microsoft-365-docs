@@ -20,8 +20,6 @@ description: "Learn how to set up privacy management permissions and assign user
 
 # Set user permissions and assign roles in privacy management (preview)
 
-In this article: learn how to set **permissions** and assign users to **role groups** and **roles**.
-
 To give members of your organization permissions to use privacy management, assign them to the appropriate role groups in the Microsoft 365 compliance center. Note that roles specific to privacy management will not appear in Azure Active Directory.
 
 ## Sign in and set permissions

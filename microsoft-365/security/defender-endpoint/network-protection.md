@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
+ms.collection: M365-security-compliance
 ---
 
 # Protect your network

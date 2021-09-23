@@ -161,7 +161,7 @@ Although the main purpose of retention labels is to retain or delete content, yo
   
 For example, you can create and apply a retention label named "Review later" with no actions, and then use that label to find that content later.
   
-![Label settings to classify-only](../media/retention-label-retentionoff.png)
+![Label settings to classify-only.](../media/retention-label-retentionoff.png)
 
 #### Using a retention label as a condition in a DLP policy
 
@@ -177,7 +177,7 @@ When you publish retention labels, they're included in a **retention label polic
 
 2. Retention label policies specify the locations to publish the retention labels. The same location can be included in multiple retention label policies.
 
-![How retention labels can be added to label policies that specify locations](../media/retention-labels-and-policies.png)
+![How retention labels can be added to label policies that specify locations.](../media/retention-labels-and-policies.png)
 
 You can also create one or more **auto-apply retention label policies**, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
@@ -233,7 +233,7 @@ After retention labels are applied to content, either by users or auto-applied, 
 
 When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Retention label condition](../media/retention-label-condition.png)
+![Retention label condition.](../media/retention-label-condition.png)
 
 
 ## Compare capabilities for retention policies and retention labels
@@ -291,7 +291,7 @@ Use the following flow to understand the retention and deletion outcomes for a s
 > [!IMPORTANT]
 > If you are using retention labels: Before applying the principles to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
-![Diagram of the principles of retention](../media/principles-of-retention.png)
+![Diagram of the principles of retention.](../media/principles-of-retention.png)
 
 Before explaining each principle in more detail, it's important to understand the difference between the retention period for the item vs. the specified retention period in the retention policy or retention label. That's because although the default configuration is to start the retention period when an item is created, so that the end of the retention period is fixed for the item, files also support the configuration to start the retention period from when the file is last modified. With this alternative configuration, every time the file is modified, the start of the retention period is reset, which extends the end of the retention period for the item. Retention labels also support starting the retention period when labeled and at the start of an event.
 
@@ -417,6 +417,9 @@ Retention actions that are logged as auditing events are available only for rete
 
 - When a labeled item in SharePoint, OneDrive, or Exchange is marked as a record or regulatory record, and it is permanently deleted:
     - From **File and page activities**, select **Deleted file marked as a record**
+
+- When a disposition reviewer takes action for a item that's reached the end of its retention period:
+    -  From **Disposition review activities**, select **Approved disposal**, **Extended retention period**, **Relabeled item**, or **Added reviewers**
 
 ## PowerShell cmdlets for retention policies and retention labels
 

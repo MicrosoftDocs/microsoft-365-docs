@@ -38,7 +38,7 @@ There are two status indicators on the tile that provide information on the numb
 
 Clicking any of the groups directs you to **Devices list**, filtered according to your choice.
 
-![Screenshot of Devices with sensor issues tile](images/atp-devices-with-sensor-issues-tile.png)
+![Screenshot of Devices with sensor issues tile.](images/atp-devices-with-sensor-issues-tile.png)
 
 On **Devices list**, you can filter the health state list by the following status:
 
@@ -53,7 +53,7 @@ You can also download the entire list in CSV format using the **Export** feature
 > [!NOTE]
 > Export the list in CSV format to display the unfiltered data. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
-![Screenshot of Devices list page](images/atp-devices-list-page.png)
+![Screenshot of Devices list page.](images/atp-devices-list-page.png)
 
 You can view the device details when you click on a misconfigured or inactive device.
 

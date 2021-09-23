@@ -43,7 +43,7 @@ You can apply retention labels to content automatically when that content contai
 
 The processes to automatically apply a retention label based on these conditions:
 
-![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+![Diagram of roles and tasks for auto-apply labels.](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
 Use the following instructions for the two admin steps.
 
@@ -149,7 +149,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
-![Policy templates with sensitive information types](../media/sensitive-info-configuration.png)
+![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
 To learn more about the sensitivity information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md). Currently, [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
 
@@ -169,7 +169,7 @@ To consider when using sensitive information types to auto-apply retention label
 
 You can auto-apply labels to content by using a query that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators such as AND, OR, and NOT.
 
-![Query editor](../media/new-retention-query-editor.png)
+![Query editor.](../media/new-retention-query-editor.png)
 
 For more information about the query syntax that uses Keyword Query Language (KQL), see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
@@ -254,7 +254,7 @@ Most of the time, meeting recordings are saved to OneDrive. But for channel meet
 
 When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
 
-![Choose trainable classifier](../media/retention-label-classifers.png)
+![Choose trainable classifier.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
@@ -274,7 +274,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied to all existing content that matches the conditions.
   
-![Diagram of when auto-apply labels take effect](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagram of when auto-apply labels take effect.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
 If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 

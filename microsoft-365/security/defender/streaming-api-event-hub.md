@@ -64,7 +64,7 @@ Once the Event Hub namespace is created you will need to:
 
    To get your **Event Hub resource ID**, go to your Azure Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   ![Image of Event Hub resource Id1](../defender-endpoint/images/event-hub-resource-id.png)
+   ![Image of Event Hub resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. Choose the events you want to stream and click **Save**.
 
@@ -108,7 +108,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of Event Hub resource Id2](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image of Event Hub resource Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
 

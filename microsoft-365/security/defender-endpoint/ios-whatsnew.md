@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
 ---
 
@@ -29,6 +29,11 @@ ms.technology: mde
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## 1.1.20240103
+- Device Health card - Device Health card notifies end-users about any pending software updates.
+- Usability enhancements - End-users can now disable the Defender for Endpoint VPN from the MSDefender app itself. Prior to this update, end-users had to disable VPN only from the Settings app.
+- Bug fixes.
 
 ## 1.1.20020101
 - UX Enhancements - Microsoft Defender for Endpoint has a new look.

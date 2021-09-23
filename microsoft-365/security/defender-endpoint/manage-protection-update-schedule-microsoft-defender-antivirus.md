@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Manage the schedule for when protection updates should be downloaded and applied
@@ -39,7 +40,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 ## Use Configuration Manager to schedule protection updates
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Security intelligence updates** section.
 
@@ -62,7 +63,7 @@ You can also randomize the times when each endpoint checks and downloads protect
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Intelligence Updates** and configure the following settings:
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Intelligence Updates** and configure the following settings:
 
     1. Double-click the **Specify the day of the week to check for security intelligence updates** setting and set the option to **Enabled**. Enter the day of the week to check for updates. Click **OK**.
     2. Double-click the **Specify the interval to check for security intelligence updates** setting and set the option to **Enabled**. Enter the number of hours between updates. Click **OK**.

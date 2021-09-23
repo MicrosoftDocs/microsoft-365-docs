@@ -54,7 +54,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 Campaign Views is available in the Microsoft 365 Defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
-![Campaigns overview in the Microsoft 365 Defender portal](../../media/campaigns-overview.png)
+![Campaigns overview in the Microsoft 365 Defender portal.](../../media/campaigns-overview.png)
 
 You can also get to Campaign Views from:
 
@@ -108,7 +108,7 @@ The **Campaign origin** tab shows the message sources on a map of the world.
 
 At the top of the **Campaign** page, there are several filter and query settings to help you find and isolate specific campaigns.
 
-![Campaign filters](../../media/campaign-filters-and-settings.png)
+![Campaign filters.](../../media/campaign-filters-and-settings.png)
 
 The most basic filtering that you can do is the start date/time and the end date/time.
 
@@ -187,7 +187,7 @@ At the top of the campaign details view, the following campaign information is a
 - Start date/time and end data/time filters for the campaign flow as described in the next section.
 - An interactive timeline of campaign activity: The timeline shows activity over the entire lifetime of the campaign. You can hover over the data points in the graph to see the amount of detected messages.
 
-![Campaign information](../../media/campaign-details-campaign-info.png)
+![Campaign information.](../../media/campaign-details-campaign-info.png)
 
 ### Campaign flow
 
@@ -196,7 +196,7 @@ In the middle of the campaign details view, important details about the campaign
 > [!TIP]
 > The information that's displayed in the flow diagram is controlled by the date range filter in the timeline as described in the previous section.
 
-![Campaign details that don't contain user URL clicks](../../media/campaign-details-no-recipient-actions.png)
+![Campaign details that don't contain user URL clicks.](../../media/campaign-details-no-recipient-actions.png)
 
 If you hover over a horizontal band in the diagram, you'll see the number of related messages (for example, messages from a particular source IP, messages from the source IP using the specified sender domain, etc.).
 
@@ -221,7 +221,7 @@ The diagram contains the following information:
   |**Tenant Block**<sup>\*\*</sup>|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
-  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in your anti-spam policy.|
+  |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](configure-your-spam-filter-policies.md).|
   |
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.

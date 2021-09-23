@@ -31,8 +31,8 @@ If you have feedback or suggestions that would help us improve the Microsoft Def
 
 1. Microsoft Defender for Endpoint portal (securitycenter.windows.com):
 
-    ![Image of smiley feedback icon](images/3e2db5015cd4f47436b4765b2303f4f5.png)
+    ![Image of smiley feedback icon.](images/3e2db5015cd4f47436b4765b2303f4f5.png)
 
 2. Microsoft 365 Defender portal (security.microsoft.com):
 
-    ![Image of give feedback button](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)
+    ![Image of give feedback button.](images/1d5b3c010b4b5c0e9d5eb43f71fa95e3.png)

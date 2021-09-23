@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: "Learn to manage Microsoft 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
+description: "Learn to manage Microsoft 365 Groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
 ---
 
 # Manage a group in the Microsoft 365 admin center
@@ -81,7 +81,7 @@ This option is great if you want to have a company email address such as info@co
 Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
  
  ```powershell
-`Get-AzureADMSDeletedGroup`
+Get-AzureADMSDeletedGroup
 ```
 
 Take note of the object ID of the group, or groups, that you want to permanently delete.
@@ -92,7 +92,7 @@ Take note of the object ID of the group, or groups, that you want to permanently
 To purge the group run this command in PowerShell:
 
 ```powershell
-`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
 To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
@@ -101,12 +101,12 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 
 [Create a Microsoft 365 group](create-groups.md)
 
-[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Manage guest access to Microsoft 365 Groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[Choose the domain to use when creating Microsoft 365 groups](../../solutions/choose-domain-to-create-groups.md)
+[Choose the domain to use when creating Microsoft 365 Groups](../../solutions/choose-domain-to-create-groups.md)
 
 [Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

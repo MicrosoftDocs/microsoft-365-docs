@@ -6,6 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
+ms.custom: admindeeplinkMAC
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
@@ -22,7 +23,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** \> **Org Settings** and select **Bookings**.
+2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
@@ -43,7 +44,7 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 You can disable Bookings for individual users.
 
-1. Go to the Microsoft 365 admin center, then select **Users** \> **Active users**.
+1. Go to the Microsoft 365 admin center, then select **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 1. Select the desired user, then select **Licenses and Apps**.
 
@@ -51,17 +52,13 @@ You can disable Bookings for individual users.
 
 ## Require staff approvals before sharing free/busy information
 
-Admins can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
+Admins can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page. This setting is available in the Microsoft 365 admin center under **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> \> **Bookings**.
 
 When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
 
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
-
 ## Block social sharing options
 
-Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
-
-This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
+Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> \> **Bookings**.
 
 ## Allow only selected users to create Bookings calendars
 

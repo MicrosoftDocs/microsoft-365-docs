@@ -31,7 +31,7 @@ When collaborating with Microsoft support professionals, you may be asked to use
 
 Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and their description:
 
-![Image of client analyzer parameters in command line](images/d89a1c04cf8441e4df72005879871bd0.png)
+![Image of client analyzer parameters in command line.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
 > When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) to collect Microsoft Defender Antivirus related support logs.
@@ -67,7 +67,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 
 The analyzer and all the above scenario flags can be initiated remotely by running 'RemoteMDEClientAnalyzer.cmd', which is also bundled into the analyzer toolset:
 
-![Image of commandline with analyzer information](images/57cab9d82d08f672a92bf9e748ac9572.png)
+![Image of commandline with analyzer information.](images/57cab9d82d08f672a92bf9e748ac9572.png)
 
 > [!NOTE]
 >
