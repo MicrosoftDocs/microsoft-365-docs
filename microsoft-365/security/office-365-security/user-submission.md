@@ -110,6 +110,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
      - **User reporting experience section**
        - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
        - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
+       -  **Only display when user reports phishing** : Check this option if you want to display the message only when an email is reporeted as phish, if not checked messages will be shown for any kind of reports.
 
        As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
@@ -117,6 +118,10 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
+
+- **Microsoft Outlook Report Message button** 
+
+Enable this feature if you want to let end users report a message from the user quarantine.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**
 
