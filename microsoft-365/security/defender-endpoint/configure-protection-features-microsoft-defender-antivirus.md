@@ -15,6 +15,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure behavioral, heuristic, and real-time protection

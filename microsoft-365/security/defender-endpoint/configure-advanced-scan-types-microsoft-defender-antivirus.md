@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ms.topic: how-to
 ---
 
