@@ -51,7 +51,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 ### Schedule reports
 
-1. On the page of the report, click **Create schedule**.
+1. On the main page of the report, click **Create schedule**.
 2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
 3. On the **Set preferences** page, configure the following settings:
    - **Frequency**: Select one of the following values:
@@ -62,7 +62,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
    When you're finished, click **Next**.
 
-4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add and remove others.
+4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
 
    When you're finished, click **Next**.
 
@@ -70,15 +70,36 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
    When you're finished, click **Submit**.
 
+#### Managed existing scheduled reports
+
 To manage scheduled reports that you've already created, do the following steps:
 
-1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
 
    To go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
 
-2. On the **Manage schedules** page, find and select the scheduled report.
+2. On the **Manage schedules** page, the following details for scheduled reports are shown:
+   - **Schedule start date**
+   - **Schedule name**
+   - **Report type**
+   - **Frequency**
+   - **Last sent**
 
-3. In the details flyout that opens, you can click **Delete schedule** to delete the scheduled report, or **Edit schedule** to edit the scheduled report.
+   Find the existing scheduled report that you want to modify.
+
+3. After you select the scheduled report do any of the following actions in the details flyout that opens:
+   - **Edit name**: Click this button, change the name of the report in the flyout that appears, and then click **Save**.
+   - **Delete schedule**: Click this button, read the warning that appears (previous reports will no longer be available for download), and then click **Save**.
+   - **Schedule details** section: Click **Edit preferences** to change the following settings:
+     - **Frequency**: **Weekly** or **Monthly**
+     - **Start date**
+     - **Expiry date**
+
+     When you're finished, click **Save**.
+
+   - **Recipients** section: Click **Edit recipients** to add or remove recipients for the scheduled report. When you're finished, click **Save**
+
+   When you're finished, click **Close**.
 
 ### Download reports
 
@@ -353,9 +374,9 @@ If you click **Export** on the main report page, an **Export conditions** flyout
 - **Options**: Select one of the following values:
   - **Summary (with data for the last 90 days at most)**
   - **Details (with data for the last 30 days)**
-- **Date (UTC)** **Start time** and **End time** (dates).
+- **Date (UTC)**: **Start time** and **End time** (dates).
 
-When you're finished configuring the filters, click **Apply**. Data is exported to a .csv file and is available on the **Reports for download** page as described [earlier in this article](#download-reports).
+When you're finished configuring the filters, click **Apply**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection from now on.
 
 Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
 
