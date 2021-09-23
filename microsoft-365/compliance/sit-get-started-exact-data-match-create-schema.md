@@ -90,6 +90,11 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 ## Create exact data match schema manually and upload
 
+In the schema file, configure an entry for each column in the sensitive information source table, using the syntax: 
+
+```xml
+<Field name="FieldName" searchable="true/false" caseInsensitive="true/false" ignoredDelimiters="delimiter characters" />
+```
 ### Using the caseInsensitive and ignoredDelimiters fields
 
 The following schema XML sample makes use of the *caseInsensitive* and the *ignoredDelimiters* fields.
@@ -164,6 +169,8 @@ The `ignoredDelimiters` flag doesn't support:
             </DataStore>
       </EdmSchema>
       ```
+
+Once you have created the EDM schema file in XML formate, you have to upload it to the cloud service. 
 
 2. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
