@@ -112,4 +112,4 @@ With this learning path from Microsoft Learn, you can understand Microsoft 365 D
 
 
 ## See also
-- [Deploy threat protection capabilities across Microsoft 365 E5](/microsoft-365/solutions/deploy-threat-protection)
+- [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)

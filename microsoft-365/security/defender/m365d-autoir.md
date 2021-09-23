@@ -97,6 +97,16 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
+## Training for security analysts
+
+Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.
+
+|Training:|Automate self-healing with Microsoft 365 Defender|
+|---|---|
+|![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
+
+> [!div class="nextstepaction"]
+> [Start >](/learn/modules/defender-self-healing/)
 
 ## Next steps
 
