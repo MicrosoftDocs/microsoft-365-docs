@@ -43,11 +43,11 @@ None
 |Name    |Type   |Description |
 |--------|-------|------------|
 |_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
-|TargetSiteId|guid|The id of the site where the file to classify is located. This can be omitted when TargetSiteUrl has a value. |
+|TargetSiteId|guid|The ID of the site where the file to classify is located. This can be omitted when TargetSiteUrl has a value. |
 |TargetSiteUrl|string|The full URL of the site where the file to classify is located. This can be omitted when TargeSiteId has a value.|
-|TargetWebId|guid|The id of the web where the file to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
+|TargetWebId|guid|The ID of the web where the file to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the file to classify is located. This can be omitted when TargetWebId has a value.  |
-|TargetUniqueId|guid|The id of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
+|TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
 |TargetServerRelativeUrl|string|The server relative URL of the fileto classify is located. This can be omitted when TargetUniqueId has a value.|
 
 ## Responses
@@ -58,7 +58,7 @@ None
 
 ## Examples
 
-### Enqueue a request to classify a file of id "e6cff8b7-c90c-4564-b5b8-033449090932"
+### Enqueue a request to classify a file of ID "e6cff8b7-c90c-4564-b5b8-033449090932"
 
 #### Sample request
 

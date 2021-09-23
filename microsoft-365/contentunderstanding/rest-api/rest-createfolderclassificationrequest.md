@@ -40,11 +40,11 @@ None
 |Name    |Type   |Description |
 |--------|-------|------------|
 |_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
-|TargetSiteId|guid|The id of the site where the folder to classify is located. This can be omitted when TargetSiteUrl has a value. |
+|TargetSiteId|guid|The ID of the site where the folder to classify is located. This can be omitted when TargetSiteUrl has a value. |
 |TargetSiteUrl|string|The full URL of the site where the folder to classify is located. This can be omitted when TargeSiteId has a value.|
-|TargetWebId|guid|The id of the web where the folder to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
+|TargetWebId|guid|The ID of the web where the folder to classify is located. This can be omitted when TargetWebServerRelativeUrl has a value. |
 |TargetWebServerRelativeUrl|string|The server relative URL of the web where the folder to classify is located. This can be omitted when TargetWebId has a value.  |
-|TargetUniqueId|guid|The id of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
+|TargetUniqueId|guid|The ID of the folder to classify. This can be omitted when TargetServerRelativeUrl has a value. |
 |TargetServerRelativeUrl|string|The server relative URL of the folder to classify is located. This can be omitted when TargetUniqueId has a value.|
 |IsFolder|boolean|The flag which indicates if what will be classified is a folder. Always set this to true for creating a folder classificatin work item..|
 
@@ -63,7 +63,7 @@ None
 
 ## Examples
 
-### Enqueue a request to classify a whole folder of id "e6cff8b7-c90c-4564-b5b8-033449090932"
+### Enqueue a request to classify a whole folder of ID "e6cff8b7-c90c-4564-b5b8-033449090932"
 
 #### Sample request
 
