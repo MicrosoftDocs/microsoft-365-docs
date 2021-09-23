@@ -99,6 +99,10 @@ After onboarding, it takes few hours for device to show up in the Device invento
 
 For details about data collected and privacy, see [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
 
+## Issues on supervised devices with content filter profile installed
+
+There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in interet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
+
 ## Issues during app updates from the app store
 
 If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
