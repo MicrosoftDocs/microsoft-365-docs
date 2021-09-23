@@ -17,6 +17,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Troubleshoot attack surface reduction rules
