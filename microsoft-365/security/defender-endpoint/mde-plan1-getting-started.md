@@ -13,6 +13,7 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
+ms.collection: M365-security-compliance
 ---
 
 # Get started with Microsoft Defender for Endpoint Plan 1 (preview)
@@ -50,7 +51,7 @@ The card provides you with information at a glance, along with a link or button 
 
 ### Navigation bar makes it easy to find alerts, the Action center, and more
 
-The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.
+The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.<br/><br/>
 
 | Navigation bar item | Description |
 |:---|:---|

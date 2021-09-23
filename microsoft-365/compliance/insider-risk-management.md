@@ -60,6 +60,10 @@ Insider risk analytics enables you to conduct an evaluation of potential insider
 
 To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics-preview).
 
+## Get started with recommended actions (preview)
+
+Whether you're setting up insider risk management for the first time or getting started with creating new policies, the new [recommended actions](insider-risk-management-configure.md#recommended-actions-preview) experience can help you get the most out of insider risk management capabilities. Recommended actions include setting up permissions, choosing policy indicators, creating a policy, and more.
+
 ## Workflow
 
 The insider risk management workflow helps you identify, investigate, and take action to address internal risks in your organization. With focused policy templates, comprehensive activity signaling across the Microsoft 365 service, and alert and case management tools, you can use actionable insights to quickly identify and act on risky behavior.

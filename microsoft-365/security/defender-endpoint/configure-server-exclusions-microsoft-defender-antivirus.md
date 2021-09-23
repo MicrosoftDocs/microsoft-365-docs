@@ -16,6 +16,7 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
@@ -34,16 +35,13 @@ Because Microsoft Defender Antivirus is built into Windows Server 2016 and later
 
 This article includes the following sections:
 
-<br>
-
-****
+<br/><br/>
 
 |Section|Description|
 |---|---|
 |[Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)|Describes the two main types of automatic exclusions and includes a detailed list of automatic exclusions|
 |[Opting out of automatic exclusions](#opting-out-of-automatic-exclusions)|Includes important considerations and procedures describing how to opt out of automatic exclusions|
 |[Defining custom exclusions](#defining-custom-exclusions)|Provides links to how-to information for defining custom exclusions|
-|
 
 > [!IMPORTANT]
 > Keep the following points in mind:
@@ -162,16 +160,13 @@ This section lists the default exclusions for all roles in Windows Server 2016 a
 
 The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-<br>
-
-****
+<br><br/>
 
 |Exclusion type|Specifics|
 |---|---|
 |File types|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |Processes|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-|
 
 ##### SYSVOL files
 

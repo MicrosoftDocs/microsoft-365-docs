@@ -12,10 +12,10 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Deploy and enable Microsoft Defender Antivirus
