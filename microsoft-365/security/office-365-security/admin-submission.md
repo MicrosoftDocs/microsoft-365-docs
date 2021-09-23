@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: siosulli
 author: siosulli
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
@@ -119,6 +118,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 > [!div class="mx-imgBorder"]
 > ![New Attachment submission example.](../../media/submission-file-flyout.png)
+
+> [!NOTE]
+> If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 ## View admin submissions to Microsoft
 

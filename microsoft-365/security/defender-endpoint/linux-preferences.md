@@ -97,6 +97,23 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+  
+#### Run a scan after definitions are updated
+
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanAfterDefinitionUpdate|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version 101.41.51 or higher.|
+|
+  
 
 #### Exclusion merge policy
 
@@ -467,6 +484,7 @@ The following configuration profile contains entries for all settings described 
       "enableRealTimeProtection":true,
       "maximumOnDemandScanThreads":1,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

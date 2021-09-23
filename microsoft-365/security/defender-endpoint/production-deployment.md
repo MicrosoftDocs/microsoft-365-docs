@@ -13,7 +13,7 @@ author: mjcaparas
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
@@ -57,7 +57,7 @@ Checking for the license state and whether it got properly provisioned, can be d
 
    ![Image of Azure Licensing page.](images/atp-licensing-azure-portal.png)
 
-1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
+1. Alternately, in the admin center, navigate to **Billing** \> **Subscriptions**.
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
@@ -106,7 +106,7 @@ Configure a registry-based static proxy to allow only Microsoft Defender for End
 
 1. Open the Group Policy Management Console.
 2. Create a policy or edit an existing policy based off the organizational practices.
-3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
    ![Image of Group Policy configuration.](images/atp-gpo-proxy1.png)
 
@@ -173,28 +173,6 @@ The following downloadable spreadsheet lists the services and their associated U
 |---|---|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
-
-### Microsoft Defender for Endpoint service backend IP ranges
-
-If your network devices don't support DNS-based rules, use IP ranges instead.
-
-Defender for Endpoint is built in Azure cloud, deployed in the following regions:
-
-- AzureCloud.eastus
-- AzureCloud.eastus2
-- AzureCloud.westcentralus
-- AzureCloud.northeurope
-- AzureCloud.westeurope
-- AzureCloud.uksouth
-- AzureCloud.ukwest
-
-You can find the Azure IP ranges in [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
-
-> [!NOTE]
-> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
-
-> [!NOTE]
-> If you are a US Government customer, please see the corresponding section in the [Defender for Endpoint for US Government](gov.md#service-backend-ip-ranges) page.
 
 ## Next step
 

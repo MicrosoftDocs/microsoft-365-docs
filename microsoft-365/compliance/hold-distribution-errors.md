@@ -46,64 +46,84 @@ To reduce the number of errors related to eDiscovery holds, we recommend the fol
   **Correct**
 
     ```powershell
-    Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation {$user1, $user2, $user3, $user4, $user5}
+    Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation "User1", "User2", "User3", "User4", "User5"
     ```
 
    **Incorrect**
 
     ```powershell
-    $users = {$user1, $user2, $user3, $user4, $user5}
+    $users = "User1", "User2", "User3", "User4", "User5"
     ForEach($user in $users)
     {
-        Set-CaseHoldPolicy -Identity <policyname> -AddExchangeLocation $user
+        Set-CaseHoldPolicy -Identity "policyname" -AddExchangeLocation $user
     }
     ```
 
    In the previous incorrect example, the cmdlet is run five separate times to complete the task. For more information about the recommended practices for adding users to a hold policy, see the [More information](#more-information) section.
 
-- Before contacting Microsoft Support about eDiscovery hold issues, follow the steps in the [Error/issue: Holds don't sync](#errorissue-holds-dont-sync) section to retry the hold distribution. This process often resolves temporary issues including, internal server errors.
+- Before contacting Microsoft Support about eDiscovery hold issues, check into what is causing the policy to fail by checking into the DistributionResults, based on the ResultCode:
 
-## Error/issue: Holds don't sync
+   ```powershell
+   Get-CaseHoldPolicy -Identity "policyname" -DistributionDetail | Select -ExpandProperty DistributionResults
+   ```
 
-If you see one the following error messages when putting custodians and data sources on hold, use the resolution steps to troubleshoot the issue.
+   ![DistributionResults](../media/HoldDistributionResults.png)
 
-> Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.
+## Error: PolicySyncTimeout
+
+If you see this error in the **ResultCode: PolicySyncTimeout** and the following error message, check the LastResultTime to see if it has been longer than two hours since the sync has reached the timeout.
+
+> It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.
+
+### Resolution
+
+Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** will resolve the issue.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
+
+![Retry button on CaseHold](../media/RetryCaseHold.png)
+
+## Error: PolicyNotifyError
+
+If you see this error in the **ResultCode: PolicyNotifyError** and the following error message, a datacenter issue interrupted the policy sync.
 
 > Policy cannot be deployed to the content source due to a temporary Office 365 datacenter issue. The current policy is not applied to any content in the source, so there's no impact from the blocked deployment. To fix this issue, please try redeploying the policy.
 
-> Sorry, we could not perform the requested changes to policy due to a transient internal server error. Please try again in 30 minutes.
+### Resolution
+
+Running the **Set-CaseHoldPolicy -Identity "policyname" -RetryDistribution** will resolve the issue.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
+
+![Retry button on CaseHold](../media/RetryCaseHold.png)
+
+## Error: InternalError
+
+If you see this error in the **ResultCode: InternalError** and the following error message, this issue has to be resolved by Microsoft.
+
+> Policy deployment has been interrupted by an unexpected Office 365 datacenter issue. Please contact Microsoft support to fix the deployment issue.
 
 ### Resolution
 
-1. Connect to [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command for an eDiscovery hold:
+Contact Microsoft Support with the following information:
 
-   ```powershell
-   Get-CaseHoldPolicy <policyname> -DistributionDetail | FL
-   ```
+- Policy name
+- Microsoft 365 service or feature
+- Result code
+- Result message
+- Additional diagnostics
 
-2. Examine the value in the *DistributionDetail* parameter. Look for errors like the following:
+## Error: FailedToOpenContainer
 
-   > Error: Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.
-
-3. Try running the **Set-CaseHoldPolicy -RetryDistribution** command on the hold policy in question; for example:
-
-   ```powershell
-   Set-CaseHoldPolicy <policyname> -RetryDistribution
-   ```
-
-## Error: The SharePoint site is read-only or not accessible
-
-If you see the following error message when putting custodians and data sources on hold, it means that your organization's [global admin or SharePoint admin](/sharepoint/sharepoint-admin-role) has locked the site. A locked site blocks eDiscovery from placing a hold on the site.
-
-> The SharePoint site is read-only or not accessible. Please contact the site administrator to make the site writable, and then redeploy this policy.
-
-### Resolution
-
-Unlock the site (or ask an admin to unlock it) to resolve this issue. To learn more about how to change the lock state for a site, see [Lock and unlock sites](/sharepoint/manage-lock-status).
-
-## Error: The mailbox or SharePoint site may not exist
-
-If you see the following error message when putting custodians and data sources on hold, use the resolution steps to troubleshoot the issue.
+If you see this error in the **ResultCode: FailedToOpenContainer** and the following error message when putting custodians and data sources on hold, use the resolution steps to troubleshoot the issue.
 
 > The mailbox or SharePoint site may not exist.  If this is incorrect, please contact Microsoft support.  Otherwise, please remove it from this policy.
 
@@ -114,6 +134,54 @@ If you see the following error message when putting custodians and data sources 
 - Run the [Get-SPOSite](/powershell/module/sharepoint-online/get-sposite) cmdlet in SharePoint Online PowerShell to check if the site exists in your organization.
 
 - Check to see if the site URL has changed.
+
+- Remove the mailbox or site from the policy, if the object doesn't exist.
+
+## Error: SiteInReadonlyOrNotAccessible
+
+If you see this error in the **ResultCode: SiteInReadonlyOrNotAccessible** and the following error message, the SharePoint site is in read-only mode.
+
+> The SharePoint site is read-only or not accessible. Please contact the site administrator to make the site writable, and then redeploy this policy.
+
+### Resolution
+
+Unlock the site (or ask an admin to unlock it) to resolve this issue. To learn more about how to change the lock state for a site, see [Lock and unlock sites](/sharepoint/manage-lock-status).
+
+## Error: SiteOutOfQuota
+
+If you see this error in the **ResultCode: SiteOutOfQuota** and the following error message, the SharePoint site has reached its storage quota.
+
+> The SharePoint site does not have enough quota. Please allocate more quota to the site collection, and then redeploy this policy.
+
+### Resolution
+
+Add more storage to the site (or ask an admin to add more storage) to the site collection. To learn more about how to manage the storage quotas for a site, see [Manage site collection storage limits](/sharepoint/manage-site-collection-storage-limits).
+
+After more storage quota has been added to the site the policy will need to be redeployed.
+
+   ```powershell
+   Set-CaseHoldPolicy "policyname" -RetryDistribution
+   ```
+
+Also in the case hold page in the Microsoft 365 compliance center, you can redeploy the policy by clicking **Retry**.
+
+![Retry button on CaseHold](../media/RetryCaseHold.png)
+
+## Error: RecipientTypeNotAllowed
+
+If you see this error in the **ResultCode: RecipientTypeNotAllowed** and the following error message, an Exchange location that is a mailbox is assigned to the policy.
+
+> The Recipient Type is not allowed for holds.
+
+### Resolution
+
+Run the [Get-Recipient](/powershell/module/exchange/get-recipient) in Exchange Online PowerShell to check if the address in the Endpoint is a valid mailbox.
+
+If the above cmdlet shows the SMTP address is not a valid mailbox, remove it from the policy.
+
+```powershell
+Set-CaseHoldPolicy "policyname" -RemoveExchangeLocation "non-mailbox user"
+```
 
 ## More information
 

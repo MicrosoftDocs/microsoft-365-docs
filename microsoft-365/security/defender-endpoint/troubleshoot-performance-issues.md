@@ -16,6 +16,7 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Troubleshoot performance issues related to real-time protection
