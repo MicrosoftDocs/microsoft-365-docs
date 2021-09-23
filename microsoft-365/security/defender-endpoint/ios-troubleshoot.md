@@ -101,7 +101,7 @@ For details about data collected and privacy, see [Privacy Information - Microso
 
 ## Issues on supervised devices with content filter profile installed
 
-There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in interet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. Please check back around December'2021.
+There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in interet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
 
 ## Issues during app updates from the app store
 
