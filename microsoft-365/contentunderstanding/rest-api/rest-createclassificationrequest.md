@@ -24,6 +24,7 @@ The SharePoint Online (and SharePoint 2016 and later on-premises) REST service s
 ```http
 POST /_api/machinelearning/workItems HTTP/1.1
 ```
+
 ## URI Parameters
 
 None
@@ -76,6 +77,7 @@ None
 #### Sample response
 
 **Status code:** 201
+
 ```JSON
 {
     "ErrorMessage":  null,
