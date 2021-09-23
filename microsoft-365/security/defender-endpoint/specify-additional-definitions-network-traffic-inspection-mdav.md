@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Specify additional definition sets for network traffic inspection
