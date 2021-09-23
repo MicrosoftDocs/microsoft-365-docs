@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance

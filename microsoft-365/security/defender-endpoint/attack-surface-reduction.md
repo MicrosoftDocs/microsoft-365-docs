@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Use attack surface reduction rules to prevent malware infection

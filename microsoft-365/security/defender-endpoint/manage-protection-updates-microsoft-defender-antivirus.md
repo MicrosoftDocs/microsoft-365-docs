@@ -15,6 +15,7 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates

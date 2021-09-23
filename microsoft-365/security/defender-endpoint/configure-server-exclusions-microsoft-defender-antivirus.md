@@ -16,6 +16,7 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.date: 08/17/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
