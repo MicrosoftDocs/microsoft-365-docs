@@ -31,8 +31,10 @@
       href: set-language-time-zones.md
   - name: Get the Bookings app
     href: get-bookings-app.md
-  - name: Bookings app and virtual visits in Microsoft Teams
+  - name: Manage the Bookings app in Microsoft Teams
     href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+  - name: Virtual visits with Microsoft Teams and the Bookings app
+    href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
   - name: Comparison chart - web app versus Teams app
     href: comparison-chart.md
   - name: Delete a booking calendar
