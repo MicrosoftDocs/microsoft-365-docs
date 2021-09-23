@@ -23,7 +23,7 @@ Attendees, customers or partners need a valid United States or Canada phone numb
 ## Configure SMS notification in Microsoft Bookings
 
 > [!IMPORTANT]
-> Microsoft Bookings will have unlimited SMS notifications for customers with Bookings licenses until Feb 28, 2022. As we get closer to the end of the promotion period we will provide additional details on licensing requirements. FOr more info on Bookings licensing, see [Bookings licensing](https://docs.microsoft.com/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-).  
+> Microsoft Bookings will have unlimited SMS notifications for customers with Bookings licenses until Feb 28, 2022. As we get closer to the end of the promotion period, we will provide additional details on licensing requirements. For more info on Bookings licensing, see [Bookings licensing](https://docs.microsoft.com/microsoft-365/bookings/bookings-faq?view=o365-worldwide#who-has-access-to-microsoft-bookings-).  
 
 You can configure SMS notification in Bookings in a couple of ways:
 
@@ -40,7 +40,9 @@ You can track key data on SMS notifications usage in your organization in the Te
 
 1. On the Teams admin center, **Virtual Visits SMS notifications**.
 
-2. On the Analytics & Reports page, select SMS notifications usage.
+2. On the **Analytics & Reports** page, select SMS notifications usage.
+
+:::image type="content" source="../media/analytics-reporting.png" alt-text="Screenshot: SMS text notifications Analytics and reporting page in the Teams admin center":::
 
 Related content
 
