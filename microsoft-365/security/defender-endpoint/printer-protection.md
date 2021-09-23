@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Device Control Printer Protection
