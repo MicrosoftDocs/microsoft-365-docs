@@ -31,6 +31,8 @@
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Publish and discover a model
+          href: model-discovery.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
         - name: Apply a sensitivity label 
