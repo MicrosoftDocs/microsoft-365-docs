@@ -280,7 +280,7 @@ You can select **Add** to create an explanation from the template.  As you add m
 
 #### Save a template to the explanation library
 
-You can create a new explanation or modify an existing explanation and save it as a template to be used with other models.
+You can save an explanation as a template to make it available in the explanation library to be used with other models.
 
 1. On the **Explanations** section of your model's **Train** page:
 
