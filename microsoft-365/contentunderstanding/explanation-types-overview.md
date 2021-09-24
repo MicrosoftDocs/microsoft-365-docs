@@ -298,4 +298,4 @@ You can save an explanation as a template to make it available in the explanatio
 
    c. Select **Save**.
 
-
+    ![Screenshot of the Save explanation template page.](../media/content-understanding/save-explanation-template.png)
