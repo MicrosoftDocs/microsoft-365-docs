@@ -33,7 +33,7 @@ You can access Intune settings at the Microsoft Endpoint Manager [admin center](
 
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices. If you have an existing Autopilot deployment profile, the "Convert all targeted devices to Autopilot" setting must be set to "No" for the managed desktop readiness test for Autopilot to succeed.
 
 **Not ready**
 
@@ -99,13 +99,9 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
-**Not ready**
-
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Change the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
-
 **Advisory**
 
-Make sure that any compliance policies you have don't target any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that applies all users. Microsoft Managed Desktop also includes compliance policies that will apply to your Microsoft Managed Desktop devices. Review all of the compliance policies created by your organization that apply to Microsoft Managed Desktop devices to ensure there are no conflicts. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
@@ -115,7 +111,7 @@ Intune Device Configuration profiles in your Azure AD organization must not targ
 
 **Not ready**
 
-You have at least one configuration profile that targets all users, all devices, or both. Reset the profile to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration profile that applies to all users, all devices, or both. Reset the profile to apply to a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 
@@ -232,13 +228,9 @@ You can ask your Microsoft account representative for a query in Microsoft Endpo
 
 Microsoft Managed Desktop requires Windows Hello for Business to be enabled.
 
-**Not ready**
-
-Windows Hello for Business is disabled. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advisory**
 
-Windows Hello for Business is not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello for Business is either disabled or not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### Windows 10 update rings

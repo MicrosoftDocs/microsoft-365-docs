@@ -27,10 +27,12 @@
           href: rename-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
-        - name: Apply a model
+        - name: Apply a document understanding model
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Publish and discover a model
+          href: model-discovery.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
         - name: Apply a sensitivity label 
@@ -59,12 +61,14 @@
               href: solution-manage-contracts-step1.md
             - name: Step 2. Use Microsoft Teams
               href: solution-manage-contracts-step2.md
-            - name: Step 3. Power Automate
+            - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
 
     - name: Setup and administration
       items:
 
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
         
@@ -98,8 +102,10 @@
           href: rest-api/rest-updatemodelsettings-method.md        
         - name: BatchDelete
           href: rest-api/rest-batchdelete-method.md
-        - name: Create classification request
+        - name: Create file classification request
           href: rest-api/rest-createclassificationrequest.md
+        - name: Create folder classification request
+          href: rest-api/rest-createfolderclassificationrequest.md
 
 
 

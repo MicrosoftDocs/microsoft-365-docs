@@ -19,7 +19,7 @@ ms.collection:
 
 # Get started with insider risk management settings
 
-Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control policy components for the following areas:
+Insider risk management settings apply to all insider risk management policies, regardless of the template you choose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management pages. These settings control policy components for the following areas:
 
 - Privacy
 - Indicators
@@ -39,9 +39,13 @@ Before you get started and create insider risk management policies, it's importa
 Protecting the privacy of users that have policy matches is important and can help promote objectivity in data investigation and analysis reviews for insider risk alerts. For users with an insider risk policy match, you can choose one of the following settings:
 
 - **Show anonymized versions of usernames**: Names of users are anonymized to prevent admins, data investigators, and reviewers from seeing who is associated with policy alerts. For example, a user 'Grace Taylor' would appear with a randomized pseudonym such as 'AnonIS8-988' in all areas of the insider risk management experience. Choosing this setting anonymizes all users with current and past policy matches and applies to all policies. User profile information in the insider risk alert and case details will not be available when this option is chosen. However, usernames are displayed when adding new users to existing policies or when assigning users to new policies. If you choose to turn off this setting, usernames will be displayed for all users that have current or past policy matches.
+
+    >[!IMPORTANT]
+    >To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
+
 - **Do not show anonymized versions of usernames**: Usernames are displayed for all current and past policy matches for alerts and cases. User profile information (the name, title, alias, and organization or department) is displayed for the user for all insider risk management alerts and cases.
 
-![Insider risk management privacy settings](../media/insider-risk-settings-privacy.png)
+![Insider risk management privacy settings.](../media/insider-risk-settings-privacy.png)
 
 ## Indicators
 
@@ -55,7 +59,7 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Microsoft Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher and you must first onboard devices to the compliance center. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section in this article.
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activities involving all file types, excluding executable (.exe) and dynamic link library (.dll) file activity. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher and you must first onboard devices to the compliance center. Device indicators also include browser signal detection to help your organization detect and act on exfiltration signals for non-executable files viewed, copied, shared, or printed in Microsoft Edge and Google Chrome. For more information on configuring devices for integration with insider risk, see the following [Enable device indicators and onboard devices](insider-risk-management-settings.md#OnboardDevices) section in this article. For more information about browser signal detection, see [Learn about and configure insider risk management browser signal detection (preview)](insider-risk-management-browser-support.md).
 - **Security policy violation indicator (preview)**: These include indicators from Microsoft Defender for Endpoint related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Defender for Endpoint license and insider risk integration enabled. For more information on configuring Defender for Endpoint for insider risk management integration, see [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Physical access indicators (preview)**: These include policy indicators for physical access to sensitive assets. For example, attempted access to a restricted area in your physical badging system logs can be shared with insider risk management policies. To receive these types of alerts in insider risk management, you must have priority physical assets enabled in insider risk management and the [Physical badging data connector](import-physical-badging-data.md) configured. To learn more about configuring physical access, see the [Priority physical access section](#priority-physical-assets-preview) in this article.
 - **Microsoft Cloud App Security indicators (preview)**: These include policy indicators from shared alerts from Cloud App Security. Automatically enabled anomaly detection in Cloud App Security immediately starts detecting and collating results, targeting numerous behavioral anomalies across your users and the machines and devices connected to your network. To include these activities in insider risk management policy alerts, select one or more indicators in this section. To learn more about Cloud App Security analytics and anomaly detection, see [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
@@ -141,7 +145,7 @@ When creating a policy in the policy wizard, you can configure how the daily num
 
 For example, you decide to enable SharePoint indicators in the insider risk policy settings and to set custom thresholds for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
 
-![Insider risk management custom indicator settings](../media/insider-risk-custom-indicators.png)
+![Insider risk management custom indicator settings.](../media/insider-risk-custom-indicators.png)
 
 For the first daily event level, you set the threshold at *10 or more events per day* for a lower impact to the risk score for the events, *20 or more events per day* for a medium impact to the risk score for the events, and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
 
@@ -157,7 +161,7 @@ Policy timeframes allow you to define past and future review periods that are tr
 - **Activation window**: Available for all policy templates, the *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Activation window* to 30 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy, and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
 
-![Insider risk management timeframe settings](../media/insider-risk-settings-timeframes.png)
+![Insider risk management timeframe settings.](../media/insider-risk-settings-timeframes.png)
 
 ## Intelligent detections
 
@@ -218,7 +222,10 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 ## Export alerts (preview)
 
-Insider risk management alert information is exportable to security information and event management (SIEM) services via the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information.
+Insider risk management alert information is exportable to security information and event management (SIEM) services via the [Office 365 Management Activity API schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. Alert information is exported and available every 60 minutes via the Office 365 Management Activity APIs.
+
+>[!IMPORTANT]
+>To maintain referential integrity for users who have insider risk alerts or cases in Microsoft 365 or other systems, anonymization of usernames isn't preserved for exported alerts. Exported alerts will display usernames for each alert.
 
 To use the APIs to review insider risk alert information:
 
@@ -226,7 +233,7 @@ To use the APIs to review insider risk alert information:
 2. Filter the common Office 365 audit activities by *SecurityComplianceAlerts*.
 3. Filter *SecurityComplianceAlerts* by the *InsiderRiskManagement* category.
 
-![Insider risk management export alert settings](../media/insider-risk-settings-export.png)
+![Insider risk management export alert settings.](../media/insider-risk-settings-export.png)
 
 Alert information contains information from the security and compliance alert schema and the Office 365 Management Activity API common schema.
 
@@ -261,9 +268,11 @@ The following fields and values are exported for insider risk management alerts 
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
 
-![Insider risk management priority user group settings](../media/insider-risk-settings-priority-users.png)
+![Insider risk management priority user group settings.](../media/insider-risk-settings-priority-users.png)
 
-For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Using the policy wizard and the *Data leaks by priority users* policy template, you create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
+Instead of being open to review by all analysts and investigators, Priority users groups may also need to restrict review activities to specific users or insider risk role groups. You can choose to assign individual users and role groups to review users, alerts, cases, and reports for each priority user group. Priority user groups can have review permissions assigned to the built-in *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups, one or more of these role groups, or to a custom selection of users.
+
+For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Additionally, this priority user group should not have users, alerts, cases, and reports associated with group visible to all the default insider risk management admins, analysts, and investigators. In **Settings**, you create the *Confidential Project Users* priority users group and assign two users as reviewer that can view data related to the groups. Using the policy wizard and the *Data leaks by priority users* policy template, you create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
 
 ### Create a priority user group
 
@@ -272,16 +281,18 @@ To create a new priority user group, you'll use setting controls in the **Inside
 Complete the following steps to create a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
-3. On the **Priority user groups** tab, select **Create priority user group** to start the group creation wizard.
-4. On the **Define group** page, complete the following fields:
+2. Select the **Priority user groups (preview)** page.
+3. On the **Priority user groups (preview)** page, select **Create priority user group** to start the group creation wizard.
+4. On the **Name and describe** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
 5. Select **Next** to continue.
 6. On the **Choose members** page, select **Choose members** to search and select which mail-enabled user accounts are included in the group or select the **Select all** checkbox to add all users in your organization to the group. Select **Add** to continue or **Cancel** to close without adding any users to the group.
 7. Select **Next** to continue.
-8. On the **Review** page, review the settings you've chosen for the priority user group. Select **Edit** to change any of the group values or select **Submit** to create and activate the priority user group.
-9. On the confirmation page, select **Done** to exit the wizard.
+8. On the **Choose who can view this group** page, you must define who can review users, alerts, cases, and reports for the priority user group. At least one user or insider risk management role group must be assigned. Select **Choose users and role groups** and select the users or insider risk management role groups you want to assign to the priority user group. Select **Add** to assign the selected users or role groups to the group.
+9. Select Next to continue.
+10. On the **Review** page, review the settings you've chosen for the priority user group. Select the **Edit** links to change any of the group values or select **Submit** to create and activate the priority user group.
+11. On the confirmation page, select **Done** to exit the wizard.
 
 ### Update a priority user group
 
@@ -290,12 +301,14 @@ To update an existing priority user group, you'll use setting controls in the **
 Complete the following steps to edit a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
+2. Select the **Priority user groups (preview)** page.
 3. Select the priority user group you want to edit and select **Edit group**.
-4. On the **Define group** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
+4. On the **Name and describe** page, update the Description field if needed. You can't update the name of the priority user group. Select **Next** to continue.
 5. On the **Choose members** page, add new members to the group using the **Choose members** control. To remove a user from the group, select the 'X' next to the user you wish to remove. Select **Next** to continue.
-6. On the **Review** page, review the update settings you've chosen for the priority user group. Select **Edit** to change any of the group values or select **Submit** to update the priority user group.
-7. On the confirmation page, select **Done** to exit the wizard.
+6. On the **Choose who can view this group** page, add or remove users or role groups that can review users, alerts, cases, and reports for the priority user group.
+7. Select **Next** to continue.
+8. On the **Review** page, review the update settings you've chosen for the priority user group. Select the **Edit** links to change any of the group values or select **Submit** to update the priority user group.
+9. On the confirmation page, select **Done** to exit the wizard.
 
 ### Delete a priority user group
 
@@ -307,7 +320,7 @@ To delete an existing priority user group, you'll use setting controls in the **
 Complete the following steps to delete a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
-2. Select the **Priority user groups** tab
+2. Select the **Priority user groups (preview)** page.
 3. Select the priority user group you want to edit and select **Delete** from the dashboard menu.
 4. On the **Delete** dialog, select **Yes** to delete the priority user group or select **Cancel** to return to the dashboard.
 
@@ -321,7 +334,7 @@ For example, your organization has a badging system for users that monitors and 
 
 You choose to enable the Physical badging data connector in Microsoft 365 to import access information from your physical badging system and specify priority physical assets in insider risk management. By importing information from your badging system and correlating physical access information with other risk activities identified in insider risk management, you notice that one of the users on the project is accessing the project offices after normal working hours and is also exporting large amounts of data to a personal cloud storage service from their normal work area. This physical access activity associated with the online activity may point to possible data theft and compliance investigators and analysts can take appropriate actions as dictated by the circumstances for this user.
 
-![Insider risk management priority physical assets](../media/insider-risk-settings-priority-assets.png)
+![Insider risk management priority physical assets.](../media/insider-risk-settings-priority-assets.png)
 
 ### Configure priority physical assets
 
@@ -338,7 +351,7 @@ Complete the following steps to configure priority physical assets:
 3. On the **Priority physical assets** page, you can either manually add the physical asset IDs you want to monitor for the asset events imported by the Physical badging connector or import a .csv file of all physical assets IDs imported by the Physical badging connector:
     a) To manually add physical assets IDs, choose **Add priority physical assets**, enter a physical asset ID, then select **Add**. Enter other physical asset IDs and then select **Add priority physical assets** to save all the assets entered.
     b) To add a list of physical asset IDs from a .csv file, choose **Import priority physical assets**. From the file explorer dialog, select the .csv file you wish to import, then select **Open**. The physical asset IDs from the .csv files are added to the list.
-4. Navigate to the **Policy indicators** tab in Settings.
+4. Navigate to the **Policy indicators** page in **Settings**.
 5. On the **Policy indicators** page, navigate to the **Physical access indicators** section and select the checkbox for **Physical access after termination or failed access to sensitive asset**.
 6. Select **Save** to configure and exit.
 
@@ -363,7 +376,7 @@ Customers with Microsoft 365 subscriptions that include insider risk management 
 
 The following Power Automate templates are provided to customers to support process automation for insider risk management users and cases:
 
-- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the users page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Users dashboard**.
+- **Notify users when they're added to an insider risk policy**: This template is for organizations that have internal policies, privacy, or regulatory requirements that users must be notified when they are subject to insider risk management policies. When this flow is configured and selected for a user in the **Users** page, users and their managers are sent an email message when the user is added to an insider risk management policy. This template also supports updating a SharePoint list hosted on a SharePoint site to help track notification message details like date/time and the message recipient. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Users dashboard**.
 - **Request information from HR or business about a user in an insider risk case**: When acting on a case, insider risk analysts and investigators may need to consult with HR or other stakeholders to understand the context of the case activities. When this flow is configured and selected for a case, analysts and investigators send an email message to HR and business stakeholders configured for this flow. Each recipient is sent a message with pre-configured or customizable response options. When recipients select a response option, the response is recorded as a case note and includes recipient and date/time information. If you've chosen to anonymize users in **Privacy settings**, flows created from this template will not function as intended so that user privacy is maintained. Power Automate flows using this template are available on the **Cases dashboard**.
 - **Notify manager when a user has an insider risk alert**: Some organizations may need to have immediate management notification when a user has an insider risk management alert. When this flow is configured and selected, the manager for the case user is sent an email message with the following information about all case alerts:
     - Applicable policy for the alert
@@ -391,8 +404,6 @@ Complete the following steps to create a Power Automate flow from a recommended 
 
 > [!IMPORTANT]
 > If other users in your organization need access to the flow, the flow must be shared.
-
-![Insider risk management power automate flows](../media/insider-risk-settings-power-automate-flows.png)
 
 ### Create a custom Power Automate flow for insider risk management
 
@@ -467,11 +478,11 @@ For more information on how to use teams and channels in Microsoft Teams, see [O
 Enabling Microsoft Teams support for cases is quick and easy to configure. To enable Microsoft Teams for insider risk management, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
-2. Select the **Microsoft Teams** tab.
+2. Select the **Microsoft Teams** page.
 3. Enable Microsoft Teams integration for insider risk management.
 4. Select **Save** to configure and exit.
 
-![Insider risk management Microsoft Teams](../media/insider-risk-settings-teams.png)
+![Insider risk management Microsoft Teams.](../media/insider-risk-settings-teams.png)
 
 ### Create a Microsoft Teams team for existing cases
 
@@ -492,7 +503,7 @@ Depending on the number of users assigned to insider risk management role groups
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. Analytics scans offer the following advantages for your organization:
 
-- Easy to configure: To get started with analytics scans, you can select Run scan when prompted by the analytics recommendation or go to Insider risk settings > Analytics tab and enable analytics.
+- Easy to configure: To get started with analytics scans, you can select Run scan when prompted by the analytics recommendation or go to **Insider risk settings** > **Analytics** and enable analytics.
 - Minimal privacy requirements: Scan results and insights are returned as anonymized user activity, individual user names are not identifiable by reviewers.
 - Understand potential risks through consolidated insights: Scan results can help you quickly identify potential risk areas for your users and which policy would be best to help mitigate these risks.
 
@@ -509,20 +520,20 @@ Analytics insights from scans are based on the same risk activity signals used b
 
 ### Enable analytics and start your scan
 
-To enable insider risk analytics, you must be a member of the Insider Risk Management, Insider Risk Management Admin or Microsoft 365 Global admin role group.
+To enable insider risk analytics, you must be a member of the *Insider Risk Management*, *Insider Risk Management Admin*, or *Microsoft 365 Global admin* role group.
 Complete the following steps to enable insider risk analytics:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 24 hours before insights are available as reports for review.
 
-![Insider risk management analytics settings](../media/insider-risk-settings-analytics-enable.png)
+![Insider risk management analytics settings.](../media/insider-risk-settings-analytics-enable.png)
 
 ### Viewing analytics insights and creating new policies
 
 After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics (preview)** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
-![Insider risk management analytics report ready card](../media/insider-risk-analytics-ready-card.png)
+![Insider risk management analytics report ready card.](../media/insider-risk-analytics-ready-card.png)
 
 For completed scans, you'll see the potential risks discovered in your organization and insights and recommendations to address these risks. Identified risks and specific insights are included in reports grouped by area, the total number of users with identified risks, the percentage of these users with potentially risky activities, and a recommended insider risk policy to help mitigate these risks. The reports include:
 
@@ -530,11 +541,11 @@ For completed scans, you'll see the potential risks discovered in your organizat
 - **Data theft insights**: Activities for departing users or users with deleted Azure Active Directory accounts that may include risky sharing of information outside your organization or data theft by users with malicious intent.
 - **Top exfiltration insights**: Activities by all users that may include sharing data outside of your organization.
 
-![Insider risk management analytics overview report](../media/insider-risk-analytics-overview.png)
+![Insider risk management analytics overview report.](../media/insider-risk-analytics-overview.png)
 
 To display more information for an insight, select **View details** to display the details pane for the insight. The details pane includes the complete insight results, an insider risk policy recommendation, and the **Create policy** button to quickly help you create the recommended policy. Selecting Create policy takes you to the policy wizard and automatically selects the recommended policy template related to the insight. For example, if the analytics insight is for *Data leak* activity, the *General data leaks* policy template will be pre-selected in the policy wizard for you.
 
-![Insider risk management analytics details report](../media/insider-risk-analytics-details.png)
+![Insider risk management analytics details report.](../media/insider-risk-analytics-details.png)
 
 ### Turn off analytics
 
@@ -545,3 +556,16 @@ Complete the following steps to turn off insider risk analytics:
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Insider risk settings** > **Analytics** page.
 3. On the **Analytics** page, turn off **Scan your tenant's user activity to identify potential insider risks**.
+
+## Admin notifications
+
+Admin notifications automatically send an email notification to users included in the *Insider Risk Management*, *Insider Risk Management Analysts*, and *Insider Risk Management Investigators* role groups when the first alert is generated for a new policy. This is enabled by default for all organizations and policies are checked every 24 hours for first-time alerts. Notifications are not sent for any alerts that occur in policies after the first alert.
+
+If you prefer to disable admin notifications, complete the following steps:
+
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** > **Insider risk settings**.
+2. Select the **Admin notifications** page.
+3. Clear the **Send a notification email when the first alert is generated for a new policy** checkbox.
+4. Select **Save** to configure and exit.
+
+![Insider risk management admin notifications settings.](../media/insider-risk-admin-notifications.png)

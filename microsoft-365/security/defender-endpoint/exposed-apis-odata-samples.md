@@ -26,7 +26,7 @@ ms.custom: api
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,7 +39,7 @@ Not all properties are filterable.
 ## Properties that support $filter
 
 - [Alert](alerts.md): `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId`, `status`, `severity` and `category`.
-- [Machine](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `RiskScore` and `RbacGroupId`.
+- [Machine](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `onboardingStatus`, `RiskScore` and `RbacGroupId`.
 - [MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor` and `CreationDateTimeUtc`.
 - [Indicator](ti-indicator.md): `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `severity` and `action`.
 
@@ -90,7 +90,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {
@@ -120,8 +120,8 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
                     "registryHive": null,
                     "registryValueType": null,
                     "registryValue": null,
-                    "accountName": "eranb",
-                    "domainName": "MIDDLEEAST",
+                    "accountName": "name",
+                    "domainName": "DOMAIN",
                     "userSid": "S-1-5-21-11111607-1111760036-109187956-75141",
                     "aadUserId": "11118379-2a59-1111-ac3c-a51eb4a3c627",
                     "userPrincipalName": "temp123@microsoft.com",
@@ -234,7 +234,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
             ],
             "relatedUser": {
                 "userName": "temp123",
-                "domainName": "MIDDLEEAST"
+                "domainName": "DOMAIN"
             },
             "comments": [
                 {

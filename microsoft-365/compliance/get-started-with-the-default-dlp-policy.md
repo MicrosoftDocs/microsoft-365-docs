@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 8/10/2017
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -27,7 +27,7 @@ Before you even create your first data loss prevention (DLP) policy, DLP is help
   
 You can use this widget to quickly view when and how much sensitive information was shared, and then refine the default DLP policy in just a click or two. You can also edit the default DLP policy at any time because it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section. 
   
-![Widget named Further protect shared content](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
+![Widget named Further protect shared content.](../media/2bae6dbc-cc92-4f35-b54c-c36e60226b5b.png)
   
 ## View the report and refine the default DLP policy
 
@@ -55,7 +55,7 @@ For more information on incident reports or restricting access, see [Data loss p
   
 If you want to change these options later, you can edit the default DLP policy at any time - see the next section.
   
-![Settings for widget named Further protect shared content](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![Settings for widget named Further protect shared content.](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## Edit the default DLP policy
 
@@ -63,7 +63,7 @@ This policy is named **Default DLP policy** and appears under **Data loss preven
   
 This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. You can also turn off or delete the policy, so that your users no longer receive policy tips or email notifications.
   
-![DLP policy named Default DLP policy](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![DLP policy named Default DLP policy.](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## When the widget does and does not appear
 

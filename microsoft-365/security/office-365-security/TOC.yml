@@ -34,6 +34,8 @@
          href: office-365-air.md
        - name: How automated investigation and response works
          href: automated-investigation-response-office.md
+       - name: Email analysis in investigations
+         href: email-analysis-investigations.md
        - name: Remediation actions
          href: air-remediation-actions.md
        - name: Anti-malware protection
@@ -134,7 +136,7 @@
        href: tenant-wide-setup-for-increased-security.md
      - name: Preset security policies
        href: preset-security-policies.md
-     - name: Configuration analyzer for preset security policies
+     - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
      - name: Attack Simulator in Defender for Office 365
        href: attack-simulator.md
@@ -156,9 +158,17 @@
        href: air-custom-reporting.md
      - name: Advanced Spam Filter (ASF) settings
        href: advanced-spam-filtering-asf-options.md
-     - name: Manage the Tenant Allow/Block List
-       href: tenant-allow-block-list.md
-     - name: Message trace in the Security & Compliance Center
+     - name: Tenant Allow/Block List
+       items:
+       - name: Manage the Tenant Allow/Block List
+         href: tenant-allow-block-list.md
+       - name: Add blocks in the Tenant Allow/Block List
+         href: manage-tenant-blocks.md
+       - name: Add allows in the Tenant Allow/Block List
+         href: manage-tenant-allows.md
+       - name: Modify and remove entries in the Tenant Allow/Block List
+         href: modify-remove-entries-tenant-allow-block.md
+     - name: Message trace
        href: message-trace-scc.md
      - name: Report messages and files to Microsoft
        href: report-junk-email-messages-to-microsoft.md
@@ -172,6 +182,8 @@
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
      - name: Zero-hour auto purge - protection against spam and malware
        href: zero-hour-auto-purge.md
+     - name: Control automatic external email forwarding
+       href: external-email-forwarding.md
    - name: Detect
      items: 
      - name: Threat Explorer for Defender for Office 365
@@ -184,7 +196,7 @@
          href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
-     - name: View alerts
+     - name: Alert policies
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md
@@ -240,7 +252,7 @@
        href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
      - name: Top domain mail flow status insight
        href: mfi-domain-mail-flow-status-insight.md
-     - name: Use Admin Submission
+     - name: Manage submissions
        href: admin-submission.md
      - name: Use mail flow rules to see what users are reporting to Microsoft
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
@@ -276,6 +288,8 @@
        href: mfi-slow-mail-flow-rules-insight.md
      - name: Manage quarantined messages and files as an admin
        href: manage-quarantined-messages-and-files.md
+     - name: Quarantine policies
+       href: quarantine-policies.md  
      - name: Remove blocked users from the Restricted Users portal
        href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list
@@ -318,7 +332,7 @@
        href: backscatter-messages-and-eop.md
      - name: Bulk complaint level (BCL)
        href: bulk-complaint-level-values.md
-     - name: End-user spam notifications
+     - name: Quarantine notifications
        href: use-spam-notifications-to-release-and-report-quarantined-messages.md
      - name: Outbound delivery pools
        href: high-risk-delivery-pool-for-outbound-messages.md

@@ -2,7 +2,7 @@
 title: Evaluate Microsoft Defender for Office 365
 description: Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages.
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, Microsoft Defender for Endpoint
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
@@ -12,10 +12,10 @@ audience: ITPro
 ms.topic: article
 
 localization_priority: Normal
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
-ms.collection: 
+ms.collection:
   - M365-security-compliance
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
@@ -36,7 +36,7 @@ The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation e
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com>. You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 > [!NOTE]
-> If you're in the Microsoft 365 Defender portal (<https://security.microsoft.com>), you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Others** section \> **Evaluation mode**.
+> If you're in the Microsoft 365 Defender portal (<https://security.microsoft.com>), you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Evaluation mode** in the **Others** section.
 
 ## How the evaluation works
 

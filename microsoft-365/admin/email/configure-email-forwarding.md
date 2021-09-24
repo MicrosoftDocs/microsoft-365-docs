@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -43,6 +44,8 @@ Before you set up email forwarding, note the following:
 - Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
 
 You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
+
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> **[Active users](https://go.microsoft.com/fwlink/p/?linkid=834822)** page.
 
@@ -109,4 +112,7 @@ You must be an Exchange administrator or Global administrator in Microsoft 365 t
 
 [Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)\
 [Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (article)\
-[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (article)\
+[Control automatic external email forwarding in Microsoft 365](/microsoft-365/security/office-365-security/external-email-forwarding) (article)
+
+

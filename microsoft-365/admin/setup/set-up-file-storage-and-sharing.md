@@ -21,6 +21,8 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -49,7 +51,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 Both OneDrive and team sites provide anywhere access for you and your employees.
   
-![A diagram that shows how Microsoft 365 products can use OneDrive or Team sites](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
+![A diagram that shows how Microsoft 365 products can use OneDrive or Team sites.](../../media/7493131e-665f-4dbd-9a60-f5612aea7e42.png)
   
 Here are recommendations for what to store in each location when you use OneDrive and team sites together:<br/>
 
@@ -72,13 +74,13 @@ Employees can also share OneDrive files and folders. If an employee is away or l
   
 Here's how each person on your team can set up OneDrive and share files.
 
-1. Go to the <a href="https://admin.mirosoft.com/ " target="_blank">Microsoft 365 admin center</a>, and sign in with your user name and password.
+1. Go to the <a href="https://admin.microsoft.com/ " target="_blank">Microsoft 365 admin center</a>, and sign in with your user name and password.
 
 2. From the App launcher, select **OneDrive**.
 
 3. In OneDrive, team members can store their own business-related files. You can share either individual files, or a whole folder. Pick a file or folder, right-click, and then choose **Share**.
 
-    ![Sharing a folder](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
+    ![Sharing a folder.](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
 4. On the **Send Link** page, leave the default selection **Anyone with the link can view and edit**.﻿
 
@@ -90,11 +92,11 @@ Here's how each person on your team can set up OneDrive and share files.
   
 5. When you're done entering who you want to share with, select **Send**. The email is immediately sent to the people you invite.
 
-    ![Share a link, showing list of names](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
+    ![Share a link, showing list of names.](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
 6. Here's what the email looks like. 
 
-    ![Email with link to share OneDrive folder](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
+    ![Email with link to share OneDrive folder.](../../media/750c92e1-f14f-404c-a6a3-2095e26c680c.png)
   
 ### Upload files to a team site for online collaboration
 
@@ -135,15 +137,15 @@ Here's how to synchronize files on your team site with your desktop:
   
 4. If you then get a **Set up OneDrive** prompt, sign in with your work or school account.
 
-    ![OneDrive setup screen](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
+    ![OneDrive setup screen.](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
 5. If you haven't yet synced your OneDrive, you might see a **This is your OneDrive folder** screen. Check the path under **Your OneDrive folder is here**. Choose **Change Location** if you want to use a different path, and then select **Next**.
 
-    ![Change your local folder at this screen](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
+    ![Change your local folder at this screen.](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
 6. The files in your team sites will appear in the left pane of File Explorer under the name of your organization. The files in OneDrive will appear under "OneDrive - \<Name of Organization\>"
 
-    ![See what's been sync'd in your local folder](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
+    ![See what's been sync'd in your local folder.](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
 7. Test the synchronization by opening a file in the team's folder on your computer. Make a change, and then choose **Save**.
 

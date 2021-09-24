@@ -30,11 +30,11 @@ Electronic discovery, or eDiscovery, is the process of identifying and deliverin
 
 Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscovery, and Advanced eDiscovery.
 
-![Key capabilities of Microsoft 365 eDiscovery tools](..\media\m365-ediscovery-solution-graphic.png)
+![Key capabilities of Microsoft 365 eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
 
 - **Content search**. Use use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to local computer.
 
-- **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search enabling you to create eDiscovery cases and eDiscovery managers who can only access the case their members of. Core eDiscovery lets you associate searches and exports with a case and allows you to place an eDiscovery hold on content locations relevant to the case.
+- **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. eDiscovery managers can only access the cases of which they are members. Core eDiscovery also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
 
 - **Advanced eDiscovery**. The Advanced eDiscovery tool builds on the existing case management, preservation, search, and export capabilities in Core eDiscovery. Advanced eDiscovery provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians and the legal hold notification workflow to communicate with custodians involved in a case. It allows you to collect and copy data from the live service into review sets, when you can filter, search, and tag content to cull non-relevant content from further review so your workflow can identify and focus on content that's most relevant. Advanced eDiscovery provides analytics and machine learning-based predictive coding models to further narrow to scope of your investigation to the most relevant content.
 
@@ -44,34 +44,34 @@ The following table compares the key capabilities available in Content search, C
 
 |Capability|Content search|Core eDiscovery|Advanced eDiscovery|
 |:------|:-------------|:-------------|:-------------|
-|Search for content|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Keyword queries and search conditions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Search statistics|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Export search results|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Role-based permissions|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Case management||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Place content locations on legal hold||![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Custodian management|||![Supported](../media/check-mark.png)|
-|Legal hold notifications|||![Supported](../media/check-mark.png)|
-|Advanced indexing|||![Supported](../media/check-mark.png)|
-|Error remediation|||![Supported](../media/check-mark.png)|
-|Review sets|||![Supported](../media/check-mark.png)|
-|Support for cloud attachments and SharePoint versions|||![Supported](../media/check-mark.png)|
-|Optical character recognition|||![Supported](../media/check-mark.png)|
-|Conversation threading|||![Supported](../media/check-mark.png)|
-|Collection statistics and reports|||![Supported](../media/check-mark.png)|
-|Review set filtering|||![Supported](../media/check-mark.png)|
-|Tagging|||![Supported](../media/check-mark.png)|
-|Analytics|||![Supported](../media/check-mark.png)|
-|Predictive coding models|||![Supported](../media/check-mark.png)|
-|Computed document metadata|||![Supported](../media/check-mark.png)|
-|Transparency of long-running jobs|||![Supported](../media/check-mark.png)|
-|Export to customer-owned Azure Storage location|||![Supported](../media/check-mark.png)|
+|Search for content|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Keyword queries and search conditions|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Search statistics|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Export search results|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Role-based permissions|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Case management||![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Place content locations on legal hold||![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Custodian management|||![Supported.](../media/check-mark.png)|
+|Legal hold notifications|||![Supported.](../media/check-mark.png)|
+|Advanced indexing|||![Supported.](../media/check-mark.png)|
+|Error remediation|||![Supported.](../media/check-mark.png)|
+|Review sets|||![Supported.](../media/check-mark.png)|
+|Support for cloud attachments and SharePoint versions|||![Supported.](../media/check-mark.png)|
+|Optical character recognition|||![Supported.](../media/check-mark.png)|
+|Conversation threading|||![Supported.](../media/check-mark.png)|
+|Collection statistics and reports|||![Supported.](../media/check-mark.png)|
+|Review set filtering|||![Supported.](../media/check-mark.png)|
+|Tagging|||![Supported.](../media/check-mark.png)|
+|Analytics|||![Supported.](../media/check-mark.png)|
+|Predictive coding models|||![Supported.](../media/check-mark.png)|
+|Computed document metadata|||![Supported.](../media/check-mark.png)|
+|Transparency of long-running jobs|||![Supported.](../media/check-mark.png)|
+|Export to customer-owned Azure Storage location|||![Supported.](../media/check-mark.png)|
 |||||
 
 Here's description of each eDiscovery capability.
 
-- **Search for content**. Search for content that's stored in Exchange mailboxes, One Drive for Business accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Yammer Teams. This includes content generated by other Microsoft 365 apps that store data in mailboxes and sites.
+- **Search for content**. Search for content that's stored in Exchange mailboxes, OneDrive for Business accounts, SharePoint sites, Microsoft Teams, Microsoft 365 Groups, and Yammer Teams. This includes content generated by other Microsoft 365 apps that store data in mailboxes and sites.
 
 - **Keyword queries and search conditions**. Create KQL keyword search queries to search for content that match query criteria. You can also include conditions to narrow the scope of your search.
 
@@ -99,7 +99,7 @@ Here's description of each eDiscovery capability.
 
 - **Optical character recognition (OCR)**. When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 
-- **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you have the option to collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back and forth conversation.
+- **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you can collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back and forth conversation.
 
 - **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items that were extracted from their parent items and added as separate items to the review set.
 
@@ -125,12 +125,14 @@ The following sections show the minimum subscription requirements for Content se
 
 - Microsoft 365 E1 subscription
 - Microsoft 365 G1 subscription
+- Microsoft 365 F1 or F3 subscription, or F5 Security add-on
 - Office 365 Education A1 subscription
 
 ### Core eDiscovery
 
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A3 or Office 365 Education A3 subscription
 
 ### Advanced eDiscovery
@@ -141,6 +143,7 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 G5 subscription
 - Microsoft 365 G5 subscription with G5 Compliance add-on
 - Microsoft 365 G5 subscription with G5 eDiscovery and Audit add-on
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A5 or Office 365 Education A5 subscription
 
 ## Get started with eDiscovery

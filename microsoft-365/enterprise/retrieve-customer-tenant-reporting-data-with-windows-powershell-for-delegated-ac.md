@@ -1,7 +1,7 @@
 ---
 title: "Retrieve customer tenant reporting data with Windows PowerShell for DAP partners"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article

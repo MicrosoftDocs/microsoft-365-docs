@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Use built-in Basic Mobility and Security to remove information from enrolled devices."
@@ -44,7 +45,7 @@ Mobile devices can store sensitive organizational information and provide access
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility and Secruity mobile device management option.":::
 
 3. Select **Manage devices**.
 
