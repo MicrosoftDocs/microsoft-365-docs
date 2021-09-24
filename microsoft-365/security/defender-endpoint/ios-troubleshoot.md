@@ -39,7 +39,7 @@ This topic provides troubleshooting information to help you address issues that 
 ## Apps don't work when VPN is turned on
 There are some apps that stop functioning when an active VPN is detected. You can disable the VPN during the time you are using such apps. 
 
-By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
+By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Defender for Endpoint on iOS uses a VPN in order to provide this protection. Note that this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
 While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable the VPN directly from the Defender for Endpoint app or using the following steps:
 
@@ -53,7 +53,7 @@ While enabled by default, there might be some cases that require you to disable 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and Enable Web Protection.
 
-## Co-existence with multiple VPN profiles
+## Coexistence with multiple VPN profiles
 
 Apple iOS does not support multiple **device-wide** VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint VPN can co-exist with other VPNs that are config
 
 ## Battery consumption
 
-In the Settings app, iOS only shows battery usage of apps that are visible to the user for a specific duration of time. The battery usage by apps shown on the screen are only for that time duration and is computed by iOS based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app go through this check and that causes the battery usage of Microsoft Defender for Endpoint to be computed inaccurately. The actual battery consumption of Microsoft Defender for Endpoint is much less than what is shown on the Battery Settings page on the device.
+In the Settings app, iOS only shows battery usage of apps that are visible to the user for a specific duration of time. The battery usage by apps shown on the screen is only for that time duration and is computed by iOS based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app go through this check and that causes the battery usage of Microsoft Defender for Endpoint to be computed inaccurately. The actual battery consumption of Microsoft Defender for Endpoint is much less than what is shown on the Battery Settings page on the device.
 
 On an average, per-day battery usage by Microsoft Defender for Endpoint running on the background is **approximately 8.81% of overall battery consumed in that day**. This metric is reported by Apple based on actual usage of Microsoft Defender for Endpoint on end-user devices and due to reasons mentioned above can also be accounted to other apps that have network activity.
 
@@ -77,7 +77,7 @@ In addition, it is critical for Microsoft Defender for Endpoint to be up to date
 
 ## Report unsafe site
 
-Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/support/report-unsafe-site) page to report a website that could be a phishing site.
+Phishing websites impersonate trustworthy websites for obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/support/report-unsafe-site) page to report a website that could be a phishing site.
 
 ## Malicious site detected
 
