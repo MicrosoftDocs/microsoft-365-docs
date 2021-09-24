@@ -42,7 +42,7 @@ The steps in this article will give you the best chance to recover data and stop
 
 ## Step 1: Verify your third-party backups
 
-The Microsoft 365 compliance suite of tools are designed to meet your organizations [legal and regulatory standards](/microsoft-365/compliance/) which is why as a best practice, we [recommend](https://www.microsoft.com/servicesagreement) that you regularly backup your Microsoft 365 Content and Data using Third-Party Apps and Services.
+The Microsoft 365 compliance suite of tools is designed to meet your organization's [legal and regulatory standards](/microsoft-365/compliance/) which is why as a best practice, we [recommend](https://www.microsoft.com/servicesagreement) that you regularly back up your Microsoft 365 content and data using third-party apps and services.
 
 In order to ensure you have the ability to restore your data, it's important to regularly test your backups and validate they can be restored in the event of an attack. In the case of an actual attack, these restorations should not be completed until **after** you've removed the ransomware payload (malware) from your environment and **after** you have verified there is no unauthorized access in your Microsoft 365 environments.
 
