@@ -34,7 +34,7 @@ Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscove
 
 - **Content search**. Use use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to local computer.
 
-- **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search enabling you to create eDiscovery cases and eDiscovery managers who can only access the case their members of. Core eDiscovery lets you associate searches and exports with a case and allows you to place an eDiscovery hold on content locations relevant to the case.
+- **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. eDiscovery managers can only access the cases of which they are members. Core eDiscovery also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
 
 - **Advanced eDiscovery**. The Advanced eDiscovery tool builds on the existing case management, preservation, search, and export capabilities in Core eDiscovery. Advanced eDiscovery provides an end-to-end workflow to identify, preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It lets legal teams manage custodians and the legal hold notification workflow to communicate with custodians involved in a case. It allows you to collect and copy data from the live service into review sets, when you can filter, search, and tag content to cull non-relevant content from further review so your workflow can identify and focus on content that's most relevant. Advanced eDiscovery provides analytics and machine learning-based predictive coding models to further narrow to scope of your investigation to the most relevant content.
 
@@ -99,7 +99,7 @@ Here's description of each eDiscovery capability.
 
 - **Optical character recognition (OCR)**. When content is added to a review set, OCR functionality extracts text from images, and includes the image text with the content that's added to a review set. This lets you search for image text when you query the content in the review set.
 
-- **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you have the option to collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back and forth conversation.
+- **Conversation threading**. When chat messages from Teams and Yammer conversations are added to a review set, you can collect the entire conversation thread. This means that the entire chat conversation that contains items that match the collection criteria is added to the review set. This lets you review chat items in the context of the back and forth conversation.
 
 - **Collection statistics and reports**. After you create a draft collection or commit a commit a collection to a review set, you can view a rich set of statistics on the retrieved items, such as the content locations that contain the most items that matched the search criteria and the number of items returned by the search query. You can also preview a subset of the results. Additionally, this includes the number of child items that were extracted from their parent items and added as separate items to the review set.
 
@@ -125,12 +125,14 @@ The following sections show the minimum subscription requirements for Content se
 
 - Microsoft 365 E1 subscription
 - Microsoft 365 G1 subscription
+- Microsoft 365 F1 or F3 subscription, or F5 Security add-on
 - Office 365 Education A1 subscription
 
 ### Core eDiscovery
 
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A3 or Office 365 Education A3 subscription
 
 ### Advanced eDiscovery
@@ -141,6 +143,7 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 G5 subscription
 - Microsoft 365 G5 subscription with G5 Compliance add-on
 - Microsoft 365 G5 subscription with G5 eDiscovery and Audit add-on
+- Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A5 or Office 365 Education A5 subscription
 
 ## Get started with eDiscovery

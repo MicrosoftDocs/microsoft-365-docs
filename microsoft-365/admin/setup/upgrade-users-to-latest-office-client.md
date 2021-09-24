@@ -10,7 +10,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Adm_O365
-- Adm_TOC
+
 search.appverid:
 - BCS160
 - MET150

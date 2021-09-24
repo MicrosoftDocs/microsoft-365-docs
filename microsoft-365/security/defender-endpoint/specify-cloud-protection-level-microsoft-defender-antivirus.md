@@ -16,6 +16,7 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Specify the cloud protection level
