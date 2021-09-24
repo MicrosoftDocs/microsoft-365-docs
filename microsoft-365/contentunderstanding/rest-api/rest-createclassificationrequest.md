@@ -39,8 +39,6 @@ None
 
 ## Request body
 
-## Request body
-
 |Name    |Type   |Description |
 |--------|-------|------------|
 |_metadata|string |Set the object meta on the SPO. Always use the value: {"type": "Microsoft.Office.Server.ContentCenter.SPMachineLearningWorkItemEntityData"}. |
