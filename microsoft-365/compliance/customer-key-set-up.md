@@ -47,7 +47,7 @@ You'll complete most of these tasks by remotely connecting to Azure PowerShell. 
  
 - [Register Azure subscriptions to use a mandatory retention period](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
-  Registration can take from one to five business days.
+  This registration process will take five business days to complete.
 
 - [Create a premium Azure Key Vault in each subscription](#create-a-premium-azure-key-vault-in-each-subscription)
 
@@ -106,7 +106,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
 ### Register Azure subscriptions to use a mandatory retention period
 
-The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. This process can take from one to five business days. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel".
+The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. This process will take five business days to complete. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel".
   
 Before contacting the Microsoft 365 team, you must do the following steps for each Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) module installed before you start.
   
