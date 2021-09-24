@@ -48,6 +48,23 @@ If you do not want to expose your clear text sensitive information source table 
 > [!NOTE]
 > If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
+#### Best practices
+
+Separate the processes of hashing and uploading the sensitive data so you can more easily isolate any issues in the process.
+ 
+Once in production, keep the two steps separate in most cases. Performing the hashing process on an isolated computer and then transferring the file for upload to an internet-facing computer ensures the actual data is never available in clear text form in a computer that could have been compromised due to its connection to the Internet.
+
+
+#### Ensure your sensitive data table doesn’t have formatting issues. 
+
+Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
+You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
+
+```powershell
+EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
+```
+If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tool to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value, for example the person’s name Tom O’Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
+
 #### Prerequisites
 
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group

@@ -21,11 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-from schema article, this article is rule package only
-
-
-
-You can create the EDM SIT by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or create the rule package manually  [Create the schema and rule package manually](#create-exact-data-match-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create the exact data match (EDM) sensitive information type (SIT) by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) in teh Compliance center or create the rule package XML file manually  [Create the schema and rule package manually](#create-exact-data-match-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
@@ -33,21 +29,28 @@ If you are not familiar with EDM based SITS or there implementation, you should 
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-<!--When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.-->
-
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
 You can use this wizard to create your sensitive information type (SIT) files to help simplify the process.
 
-<!--This wizard can be used instead of the:-->
-<!--
-- [Set up a pattern (rule package)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#set-up-a-rule-package)-->
+An EDM Sensitive Information type is composed of one or more patterns. Each pattern describes a combination of evidence (fields from the schema) that will be used to identify sensitive content in a document or email. 
 
 ## Pre-requisites
 
-<!--1. Familiarize yourself with the steps to create a custom sensitive information type with EDM [work flow at a glance](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance).-->
+Perform the steps in:
 
-- Perform the steps in [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type).
+1. [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
+2. [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+3. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
+
+- Whether you will be creating an EDM sensitive information type using the Wizard or the rule package XML file via PowerShell, you must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles in Office 365](/office365/admin/add-users/about-admin-roles).
+- Identify one of the built in SITs to use as the Primary elements sensitive information type.
+    - If none of the built-in sensitive info types will match the data in the column you selected you will have to create a custom sensitive info type that does.
+    - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters. 
+    - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table. 
+See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types). 
+     
+
 
 ## Use the exact data match schema and sensitive information type pattern wizard
 
@@ -55,17 +58,22 @@ You can use this wizard to create your sensitive information type (SIT) files to
 
 2. Choose **EDM sensitive info types** and **Create EDM sensitive info type** to open the sensitive info type configuration wizard.
 
-3. Choose **Choose an existing EDM schema** and choose the schema you created in steps 2-6 from the list.
+3. Choose **Choose an existing EDM schema** and choose the schema you created in [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types).
 
 4. Choose **Next** and choose **Create pattern**.
 
-5. Choose the **Confidence level** and **Primary element**.  To learn more about confidence levels, see [Fundamental parts of a sensitive information type](sensitive-information-type-learn-about.md#fundamental-parts-of-a-sensitive-information-type).
+5. Choose the **Confidence level** and **Primary element**.  To learn more about confidence levels, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types).
 
-6.  Choose the **Primary element's sensitive info type** to associate it with. See [Sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) to learn more about the available sensitive information types.
+6.  Choose the **Primary element's sensitive info type** to associate it with to define what text in the document will be compared with all the values in the primary element field. See [Sensitive Information Type Entity Definitions](sensitive-information-type-entity-definitions.md) to learn more about the available sensitive information types.
 
-7. Choose **Done**.
+> [!IMPORTANT]
+> Select a sensitive information type that closely matches the format of the content you want to find. Selecting a sensitive information type that matches unnecessary content, like one that matches all text strings, or all numbers can cause excessive load in the system which could result in sensitive information being missed. See the Best Practices section in the Introduction to Exact Data Matching article in this documentation for recommendations in selecting a sensitive information type to use here. 
 
-8. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type
+7. Choose your **Supporting elements** and match options.
+
+7. Choose **Done** and **Next**.
+
+8. Choose your desired **Confidence level and character proximity**.  This will be the default value for the whole EDM sensitive info type.
 
 9. Choose **Create pattern** if you want to create additional patterns for your EDM sensitive info type.
 
@@ -80,9 +88,15 @@ You can delete or edit the sensitive information type pattern by selecting it wh
 
 ## Create a rule package manually
 
+This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft 365 using Compliance center PowerShell cmdlets.
+
+> [!NOTE]
+> There’s a limit of 10 rule packages in a Microsoft 365 tenant. Since a rule package can contain an arbitrary number of sensitive information types, you can avoid creating a new rule package each time you want to define a new sensitive information type using this method, instead export an existing rule package and add your sensitive information types to the XML before re- uploading it. 
+
+
 1. Create a rule package in XML format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.)
 
-When you set up your rule package, make sure to correctly reference your .csv or .tsv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields need to be customized to create your EDM sensitive type:
+When you set up your rule package, make sure to correctly reference your .csv, .tsv, or pipe (|) delimited sensitive information source table file and **edm.xml** schema file. You can copy, modify, and use our example. In this sample xml the following fields need to be customized to create your EDM sensitive type:
 
 - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
 
@@ -148,45 +162,10 @@ When you set up your rule package, make sure to correctly reference your .csv or
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-## Post creation steps
-
-After you have created your EDM schema and pattern (rule package) files, you need to hash and upload the schema and sensitive information source table. See,
- 
-1. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types),
-2. [CREATE SIT](sit-get-started-exact-data-match-create-sit.md#create-sit)
-3. LINK TO USE EDM BASED CLASSIFICATION WITH YOUR MICROSOFT 365 CLOUD SERVICES.
-
-At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
-
+> [!NOTE]
+> The syntax of the rule package file is the same as for other sensitive information types. For complete details on the syntax of the rule package file and for additional configuration options, and for instructions on modifying and deleting sensitive information types using PowerShell, [Create a custom sensitive information type using PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell).
 
 ## Next step
 
--  [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
+-  [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
 
-
-
-After you have imported your rule package with your EDM sensitive info type and have imported your sensitive data table, you can test your newly created type by using the **Test** function in the EDM wizard in the compliance center. See [Use the Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) for instructions on using this functionality.
-
-
-
-<!-- FOR CHRIS START WORK THIS IN SOMEHOW-->
-Ensure your sensitive data table doesn’t have formatting issues. 
-Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
-You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
-EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
-If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tools to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value (e.g. the person’s name Tom O’Neil or the city 's‑Gravenhage (which starts with an apostrophe character), you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
-<!-- FOR CHRIS END WORK THIS IN SOMEHOW-->
-
-
-<!-- PUBLISHED SIT EMD WIZARD ARTICLE-->
-
-
-### Troubleshooting
-
-If you don't find any matches, try the following:
-- Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
-- Check that the examples you entered in the item are present in your sensitive information table and that the ignored delimiters are correct.
-- **Test** the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. 
-  -  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
-  -  If the **Test** function does not detect any content at all, check if the SIT you selected includes requirements for additional keywords or other validations. For the built-in SITs, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) to verify what the minimum requirements are for matching each type.
-<!-- END PUBLISHED SIT EDM WIZARD ARTICLE-->
