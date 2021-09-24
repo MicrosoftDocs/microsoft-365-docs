@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
 localization_priority: Priority
-description: Use REST API to create a request to classify a whole folder using a trained document understanding model.
+description: Use REST API to create a request to classify an entire folder using a trained document understanding model.
 ---
 
 # Create folder classification request

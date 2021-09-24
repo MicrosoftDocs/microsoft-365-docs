@@ -1,5 +1,5 @@
 ---
-title: Create classification request
+title: Create file classification request
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,7 +13,7 @@ localization_priority: Priority
 description: Use REST API to create a request to classify one or more files using a trained document understanding model.
 ---
 
-# Create classification request
+# Create file classification request
 
 Creates a request to classify one or more files using the applied document understanding model. (For more information, see [example](rest-createclassificationrequest.md#examples).)
 
@@ -36,8 +36,6 @@ None
 |Accept|application/json;odata=verbose|
 |Content-Type|application/json;odata=verbose;charset=utf-8|
 |x-requestdigest|The appropriate digest for current site|
-
-## Request body
 
 ## Request body
 
