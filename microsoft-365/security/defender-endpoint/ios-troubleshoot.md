@@ -107,3 +107,16 @@ There is an issue on supervised devices with Defender for Endpoint content filte
 
 If you observe issues when the app is updated through the app store (either auto-updates or manual updates), you might need to restart the device. If that doesn't resolve the issue, you can disable the Defender VPN and perform the app update. You can also provide an in-app feedback to report this issue.
 
+## Send in-app feedback
+
+If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide in-app feedback along with diagnostic data. Our team will then investigate the logs to provide the right solution. Users can follow these steps to do the same:
+
+  - Open MSDefender app on the iOS/iPadOS device
+  - Tap on Menu (profile icon) on the top left corner.
+  - Tap "Send Feedback"
+  - Choose from the given options. To report an issue, select “I don't like something”.
+  - Provide details of the issue that you are facing and check “Send diagnostic data”. We recommend checking “Include your email address” so that the team can reach back to you with a solution or a follow-up.
+  - Tap on “Submit” to successfully send the feedback.
+
+
+
