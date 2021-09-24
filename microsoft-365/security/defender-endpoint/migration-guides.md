@@ -31,9 +31,7 @@ ms.technology: mde
 
 If you're considering moving to Defender for Endpoint, we have guidance to help. In the following table, review the scenarios. Select the scenario that best represents your situation, and see the recommended guidance.
 
-<br>
-
-****
+<br/><br/>
 
 |Scenario|Guidance|
 |---|---|
