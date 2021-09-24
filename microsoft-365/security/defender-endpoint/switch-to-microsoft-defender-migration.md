@@ -40,11 +40,13 @@ The process of migrating to Defender for Endpoint can be divided into three phas
 
 ![MDE migration process.](images/phase-diagrams/migration-phases.png)
 
+<br/><br/>
+
 |Phase|Description|
 |--|--|
-|[Prepare for your migration](switch-to-microsoft-defender-prepare.md)|During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md): <ol><li>Update your organization's devices.</li><li>Get Defender for Endpoint.</li><li>Plan roles and permissions, and grant access to the Microsoft 365 Defender portal.</li><li>Configure your device proxy and internet settings to enable communication between your organization's devices and Defender for Endpoint.</li></ol>|
-|[Set up Defender for Endpoint](switch-to-microsoft-defender-setup.md)|During [the **Setup** phase](switch-to-microsoft-defender-setup.md): <ol><li>Enable/reinstall Microsoft Defender Antivirus, and set it to passive mode.</li><li> Configure Defender for Endpoint.</li><li>Add Defender for Endpoint to the exclusion list for your existing solution.</li><li>Add your existing solution to the exclusion list for Microsoft Defender Antivirus.</li><li>Set up your device groups, collections, and organizational units.</li><li>Configure your antimalware policies and real-time protection settings.</li></ol>|
-|[Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md)|During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md): <ol><li>Onboard your devices to Defender for Endpoint.</li><li>Run a detection test.</li><li>Confirm that Microsoft Defender Antivirus is running in passive mode.</li><li>Get updates for Microsoft Defender Antivirus.</li><li>Uninstall your existing endpoint protection solution.</li><li>Make sure that Defender for Endpoint working correctly.</li></ol>|
+|[Prepare for your migration](switch-to-microsoft-defender-prepare.md)|During [the **Prepare** phase](switch-to-microsoft-defender-prepare.md): <br/>- Update your organization's devices.<br/>- Get Defender for Endpoint.<br/>- Plan roles and permissions, and grant access to the Microsoft 365 Defender portal.<br/>- Configure your device proxy and internet settings to enable communication between your organization's devices and Defender for Endpoint. |
+|[Set up Defender for Endpoint](switch-to-microsoft-defender-setup.md)|During [the **Setup** phase](switch-to-microsoft-defender-setup.md): <br/>- Enable/reinstall Microsoft Defender Antivirus, and set it to passive mode.<br/>- Configure Defender for Endpoint.<br/>- Add Defender for Endpoint to the exclusion list for your existing solution.<br/>- Add your existing solution to the exclusion list for Microsoft Defender Antivirus.<br/>- Set up your device groups, collections, and organizational units.<br/>- Configure your antimalware policies and real-time protection settings.|
+|[Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md)|During [the **Onboard** phase](switch-to-microsoft-defender-onboard.md): <br/>- Onboard your devices to Defender for Endpoint.<br/>- Run a detection test.<br/>- Confirm that Microsoft Defender Antivirus is running in passive mode.<br/>- Get updates for Microsoft Defender Antivirus.<br/>- Uninstall your existing endpoint protection solution.<br/>- Make sure that Defender for Endpoint working correctly.|
 
 ## What's included in Microsoft Defender for Endpoint?
 
