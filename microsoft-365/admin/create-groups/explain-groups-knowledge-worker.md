@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 search.appverid:
 - MET150
 description: "Learn about how to explain Microsoft 365 Groups to your users."

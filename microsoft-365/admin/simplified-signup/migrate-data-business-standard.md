@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- Adm_TOC
+
 ms.custom: 
 - AdminSurgePortfolio
 description: "Migrate your Outlook, OneDrive and Teams data to Microsoft 365 Business Standard"
