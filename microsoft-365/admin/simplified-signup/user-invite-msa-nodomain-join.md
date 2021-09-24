@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 description: "Accept an email invitation to join a Microsoft 365 Business Standard organization using an Outlook, Yahoo, Gmail or other account."
