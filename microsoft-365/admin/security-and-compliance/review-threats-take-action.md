@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: "Learn how to review and manage threats detected by Microsoft Defender Antivirus on your Windows 10 devices." 

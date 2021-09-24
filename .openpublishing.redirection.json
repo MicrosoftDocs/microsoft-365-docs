@@ -4536,6 +4536,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/ediscovery-troubleshooting-common-issues.md",
+      "redirect_url": "/office365/troubleshoot/ediscovery/resolve-ediscovery-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/hold-distribution-errors.md",
+      "redirect_url": "/office365/troubleshoot/holds/resolve-ediscovery-hold-issues",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
       "redirect_document_id": false
