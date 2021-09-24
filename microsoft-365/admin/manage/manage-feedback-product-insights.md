@@ -17,7 +17,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Manage feedback your users can send to Microsoft about Microsoft products."
+description: "Use Net promoter scores (NPS) from your end users to see how they feel about Microsoft products and services."
 ---
 
 # Microsoft product NPS feedback and insights for your organization
@@ -131,4 +131,4 @@ The majority of Microsoft 365 for business **Products** can be found under this 
 
 Use **Feedback Types** (set only to NPS feedback types) to filter feedback that we collect.
 
-:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 survey insights":::
+:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 NPS survey insights filters":::
