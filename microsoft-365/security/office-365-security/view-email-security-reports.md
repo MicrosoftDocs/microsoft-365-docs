@@ -39,76 +39,6 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
-## View and download reports
-
-### View reports
-
-1. In the Microsoft 365 defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**.
-
-   To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
-
-2. Find the report that you want, and then click **View details**.
-
-### Schedule reports
-
-1. On the main page of the report, click **Create schedule**.
-2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
-3. On the **Set preferences** page, configure the following settings:
-   - **Frequency**: Select one of the following values:
-     - **Weekly** (default)
-     - **Monthly**
-   - **Start date**: When generation of the report begins. The default value is today.
-   - **Expiry date**: When generation of the report ends. The default value is one year from today.
-
-   When you're finished, click **Next**.
-
-4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
-
-   When you're finished, click **Next**.
-
-5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
-
-   When you're finished, click **Submit**.
-
-#### Managed existing scheduled reports
-
-To manage scheduled reports that you've already created, do the following steps:
-
-1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
-
-   To go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
-
-2. On the **Manage schedules** page, the following details for scheduled reports are shown:
-   - **Schedule start date**
-   - **Schedule name**
-   - **Report type**
-   - **Frequency**
-   - **Last sent**
-
-   Find the existing scheduled report that you want to modify.
-
-3. After you select the scheduled report do any of the following actions in the details flyout that opens:
-   - **Edit name**: Click this button, change the name of the report in the flyout that appears, and then click **Save**.
-   - **Delete schedule**: Click this button, read the warning that appears (previous reports will no longer be available for download), and then click **Save**.
-   - **Schedule details** section: Click **Edit preferences** to change the following settings:
-     - **Frequency**: **Weekly** or **Monthly**
-     - **Start date**
-     - **Expiry date**
-
-     When you're finished, click **Save**.
-
-   - **Recipients** section: Click **Edit recipients** to add or remove recipients for the scheduled report. When you're finished, click **Save**
-
-   When you're finished, click **Close**.
-
-### Download reports
-
-1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
-
-   To go directly to the **Managed schedules** page, use <https://security.microsoft.com/ReportsForDownload>.
-
-2. On the **Reports for download** page, find and select the report you want to download.
-
 ## Compromised users report
 
 > [!NOTE]
@@ -139,6 +69,8 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Activity**: **Restricted** or **Suspicious**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ![Report view in the Compromised users report.](../../media/compromised-users-report-activity-view.png)
 
@@ -180,6 +112,8 @@ You can filter both the chart and the details table by clicking **Filter** and s
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+
 ### Chart breakdown by Severity
 
 ![Severity view for Exchange Transport rules in the Exchange transport rule report.](../../media/transport-rule-report-etr-severity-view.png)
@@ -208,6 +142,8 @@ You can filter both the chart and the details table by clicking **Filter** and s
 - **Severity**: **High severity**, **Medium severity**, and **Low severity**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ## Forwarding report
 
@@ -267,11 +203,7 @@ Back on the main report page, if you click **Choose a category for more details*
 - **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 - **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
-#### Export from Type view
-
-For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
-
-Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ### Direction view for the Mailflow status report
 
@@ -303,11 +235,7 @@ Back on the main report page, if you click **Choose a category for more details*
 - **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 - **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
-#### Export from Direction view
-
-For the detail view, you can only export data for one day. So, if you want to export data for 7 days, you need to do 7 different export actions.
-
-Each exported .csv file is limited to 150,000 rows. If the data for that day contains more than 150,000 rows, then multiple .csv files will be created.
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** buttons are available.
 
 ### Mailflow view for the Mailflow status report
 
@@ -367,18 +295,7 @@ Back on the main report page, you can click **Show trends** to see trend graphs 
 
 ![Mailflow trends flyout in Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view-show-trends.png)
 
-#### Export from Mailflow view
-
-If you click **Export** on the main report page, an **Export conditions** flyout appears where you can configure the following settings:
-
-- **Options**: Select one of the following values:
-  - **Summary (with data for the last 90 days at most)**
-  - **Details (with data for the last 30 days)**
-- **Date (UTC)**: **Start time** and **End time** (dates).
-
-When you're finished configuring the filters, click **Apply**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection from now on.
-
-Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
 
 ## Malware detections report
 
@@ -444,6 +361,8 @@ The details table below the graph shows the following information:
 
 For more information about composite authentication result codes, see [Anti-spam message headers in Microsoft 365](anti-spam-message-headers.md).
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+
 ## Submissions report
 
 The **Submissions** report shows information about items that admins have reported to Microsoft for analysis. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
@@ -479,6 +398,8 @@ You can filter both the chart and the details table by clicking **Filter** and s
   - **Completed**
 
 The details table below the graph shows the same information and has the same **Group** or **Customize columns** options as on the **Submitted for analysis** tab at **Email & collaboration** \> **Submissions**. For more information, see [View admin submissions to Microsoft](admin-submission.md#view-admin-submissions-to-microsoft).
+
+On the main report page, the **[Export](#export-report)** button is available.
 
 ![Submissions report page in the Microsoft 365 Defender portal.](../../media/submissions-report-page.png)
 
@@ -602,6 +523,8 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+
 ### View data by Email \> Spam and Chart breakdown by Detection Technology
 
 ![Detection technology view for spam in the Threat protection status report.](../../media/threat-protection-status-report-spam-detection-tech-view.png)
@@ -650,6 +573,8 @@ If you click **Filter**, the following filters are available:
 - **Recipients**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
@@ -701,6 +626,8 @@ If you click **Filter**, the following filters are available:
 - **Recipients**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ### Chart breakdown by Policy type
 
@@ -769,6 +696,8 @@ If you click **Filter**, the following filters are available:
 <sup>\*</sup> Defender for Office 365 only
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ### Chart breakdown by Delivery status
 
@@ -841,6 +770,8 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
+
 ### View data by Content \> Malware
 
 ![Content malware view in the Threat protection status report.](../../media/threat-protection-status-report-content-malware-view.png)
@@ -863,6 +794,8 @@ If you click **Filter**, the following filters are available:
 - **Detection**: **Anti-malware engine** or **File detonation**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ### View data by System override and Chart breakdown by Reason
 
@@ -907,6 +840,8 @@ If you click **Filter**, the following filters are available:
 - **Recipients**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
 
 ### View data by System override and Chart breakdown by Delivery location
 
@@ -963,6 +898,8 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
+
 ## Top malware report
 
 The **Top malware** report shows the various kinds of malware that was detected by [anti-malware protection in EOP](anti-malware-protection.md).
@@ -979,6 +916,8 @@ On the **Top malware report** page, a larger version of the pie chart is display
 - **Count**
 
 If you click **Filter**, you can specify a date range with **Start date** and **End date**.
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ![Top malware report view.](../../media/top-malware-report-view.png)
 
@@ -1042,6 +981,8 @@ To submit a message to Microsoft for analysis, select the message entry from the
 - **Report spam**'
 - **Trigger investigation** (Defender for Office 365)
 
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** button is available.
+
 ## What permissions are needed to view these reports?
 
 In order to view and use the reports described in this article, you need to be a member of one of the following role groups in the Microsoft 365 Defender portal:
@@ -1057,7 +998,111 @@ For more information, see [Permissions in the Microsoft 365 Defender portal](per
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats](protect-against-threats.md).
+If you are not seeing data in your reports, check the filters that you're using and double-check that your policies are set up correctly. To learn more, see [Protect against threats](protect-against-threats.md).
+
+## Schedule report
+
+1. On the main report page, click ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **Create schedule**.
+2. The **Create scheduled report** wizard opens. On the **Name scheduled report** page, review or customize the **Name** value, and then click **Next**.
+3. On the **Set preferences** page, configure the following settings:
+   - **Frequency**: Select one of the following values:
+     - **Weekly** (default)
+     - **Monthly**
+   - **Start date**: When generation of the report begins. The default value is today.
+   - **Expiry date**: When generation of the report ends. The default value is one year from today.
+
+   When you're finished, click **Next**.
+
+4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
+
+   When you're finished, click **Next**.
+
+5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
+
+   When you're finished, click **Submit**.
+
+### Managed existing scheduled reports
+
+To manage scheduled reports that you've already created, do the following steps:
+
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
+
+   To go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
+
+2. On the **Manage schedules** page, the following information is shown for each scheduled report:
+   - **Schedule start date**
+   - **Schedule name**
+   - **Report type**
+   - **Frequency**
+   - **Last sent**
+
+   Find the existing scheduled report that you want to modify.
+
+3. After you select the scheduled report do any of the following actions in the details flyout that opens:
+   - **Edit name**: Click this button, change the name of the report in the flyout that appears, and then click **Save**.
+   - **Delete schedule**: Click this button, read the warning that appears (previous reports will no longer be available for download), and then click **Save**.
+   - **Schedule details** section: Click **Edit preferences** to change the following settings:
+     - **Frequency**: **Weekly** or **Monthly**
+     - **Start date**
+     - **Expiry date**
+
+     When you're finished, click **Save**.
+
+   - **Recipients** section: Click **Edit recipients** to add or remove recipients for the scheduled report. When you're finished, click **Save**
+
+   When you're finished, click **Close**.
+
+## Request report
+
+1. On the main report page, click ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **Request report**.
+2. The **Create on-demand report** wizard opens. On the **Name on-demand report** page, review or customize the **Name** value, and then click **Next**.
+3. On the **Set preferences** page, review or configure the following settings:
+   - **Start date**: When generation of the report begins. The default value is one month ago.
+   - **Expiry date**: When generation of the report ends. The default value is today.
+
+   When you're finished, click **Next**.
+
+4. On the **Recipients** page, choose recipients for the report. The default value is your email address, but you can add others.
+
+   When you're finished, click **Next**.
+
+5. On the **Review** page, review your selections. You can click the **Back** button or the **Edit** link in the respective sections to make changes.
+
+   When you're finished, click **Submit**.
+
+6. After the report has been successfully created, you're taken to the **New on-demand report created** page, where you can click **Create another report** or **Done**.
+
+   The report is also available on the **Reports for download** page as described in the next section.
+
+### Download reports
+
+1. In the Microsoft 365 Defender portal, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
+
+   To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
+
+2. On the **Reports for download** page, the following information is shown for each available report:
+   - **Start date**
+   - **Name**
+   - **Report type**
+   - **Last sent**
+   - **Direction**
+
+   Find and select the report you want to download.
+
+## Export report
+
+1. On the main report page, click ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** (if that link is available).
+
+If you click  on the main report page, an **Export conditions** flyout appears where you can configure the following settings:
+
+- **Select a view to export**: Select one of the following values:
+  - **Summary**: Data is available for the last 90 days.
+  - **Details**: Data is available for the last 30 days.
+- **Date (UTC)**: **Start date** and **End date**.
+
+When you're finished configuring the filters, click **Export**. In the dialog that opens, you can choose to open the file, save the file, or remember the selection.
+
+Each exported .csv file is limited to 150,000 rows. If the data contains more than 150,000 rows, multiple .csv files are created.
 
 ## Related topics
 
