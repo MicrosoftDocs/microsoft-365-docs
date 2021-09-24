@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 09/23/2020
 ms.reviewer: chventou
 ---
 
@@ -60,7 +60,7 @@ You can use PowerShell to manage Microsoft Defender Antivirus, exploit protectio
 
 ## Configure Microsoft Defender for Endpoint with Windows Management Instrumentation (WMI)
 
-WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](/windows/win32/wmisdk/using-wmi).
+WMI is a scripting interface that allows you to retrieve, modify, and update settings. To learn more, see [Using WMI](/windows/win32/wmisdk/using-wmi).<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
@@ -69,11 +69,9 @@ WMI is a scripting interface that allows you to retrieve, modify, and update set
 
 ## Configure Microsoft Defender for Endpoint with Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)
 
-On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.<br/><br/>
+On an individual device, you can run a scan, start diagnostic tracing, check for security intelligence updates, and more using the mpcmdrun.exe command-line tool. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 
-|Task|Resources to learn more|
-|---|---|
-|**Manage Microsoft Defender Antivirus**|[Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus)|
+To learn more, see [Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
 
 ## Configure your Microsoft 365 Defender portal
 

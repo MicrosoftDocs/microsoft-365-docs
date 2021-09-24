@@ -41,9 +41,7 @@ You can use Group Policy Objects in Azure Active Directory Domain Services to ma
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.
 
-<br>
-
-****
+<br/><br/>
 
 |Task|Resources to learn more|
 |---|---|
@@ -56,7 +54,6 @@ The following table lists various tasks you can perform to configure Microsoft D
 |**Configure Microsoft Defender SmartScreen** to protect against malicious sites and files on the internet.|[Configure Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings using Group Policy](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
 |**Configure encryption and BitLocker** to protect information on your organization's devices running Windows|[BitLocker Group Policy settings](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |**Configure Microsoft Defender Credential Guard** to protect against credential theft attacks|[Enable Windows Defender Credential Guard by using Group Policy](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
-|||
 
 ## Configure your Microsoft 365 Defender portal
 
