@@ -46,7 +46,7 @@ The Microsoft 365 compliance suite of tools is designed to meet your organizatio
 
 In order to ensure you have the ability to restore your data, it's important to regularly test your backups and validate they can be restored in the event of an attack. In the case of an actual attack, these restorations should not be completed until **after** you've removed the ransomware payload (malware) from your environment and **after** you have verified there is no unauthorized access in your Microsoft 365 environments.
 
-To ensure your backups were not also affected by ransomware, the third-party service should be air gapped from your environments.
+To ensure your backups were not also affected by ransomware, the third-party service should be air-gapped from your environments.
 
 If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
