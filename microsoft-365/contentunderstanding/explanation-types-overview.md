@@ -283,12 +283,14 @@ You can select **Add** to create an explanation from the template.  As you add m
 You can create a new explanation or modify an existing explanation and save it as a template to be used with other models.
 
 1. On the **Explanations** section of your model's **Train** page:
+
    a. From the list of explanations, select the one you want to save as a template.
    b. Select **Save as template**.
 
     ![Screenshot of the Explanations section showing the Save as template option.](../media/content-understanding/explanation-save-as-template.png)
 
 2. On the **Save explanation template** page:
+
    a. In the **Name** section, rename the explanation if needed.
    b. In the **Description** section, add a description to let others know how to use the explanation.
    c. Select **Save**.
