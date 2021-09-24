@@ -83,7 +83,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 |---|---|
 |Windows 10 <p> Windows Server 2019 <p> Windows Server, version 1803, or later <p> Windows Server 2016 <p> Windows Server 2012 R2|See [Run a detection test](run-detection-test.md). <p> Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
 |macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <p> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
-|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|<ol><li>Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.</li><li>Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.</li><li>Run the following command to list any detected threats: `mdatp threat list`.</li></ol> <p> For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|<br/>- Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/>- Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/>- Run the following command to list any detected threats: `mdatp threat list`. <p> For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
@@ -93,10 +93,10 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 |Method|What to do|
 |---|---|
-|Command Prompt|<ol><li>On a Windows device, open Command Prompt.</li><li>Type `sc query windefend`, and then press Enter.</li><li>Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.</li></ol>|
-|PowerShell|<ol><li>On a Windows device, open Windows PowerShell as an administrator.</li><li>Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`.</li></ol> <p> Review the results. You should see **Passive mode**.|
-|Windows Security app|<ol><li>On a Windows device, open the Windows Security app.</li><li>Select **Virus & threat protection**.</li><li>Under **Who's protecting me?** select **Manage providers**.</li><li>On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.</li></ol>|
-|Task Manager|<ol><li>On a Windows device, open the Task Manager app.</li><li>Select the **Details** tab.</li><li>Look for **MsMpEng.exe** in the list.</li></ol>|
+|Command Prompt|<br/>- On a Windows device, open Command Prompt.<br/>- Type `sc query windefend`, and then press Enter.<br/>- Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.|
+|PowerShell|<br/>- On a Windows device, open Windows PowerShell as an administrator.<br/>- Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <p> Review the results. You should see **Passive mode**.|
+|Windows Security app|<br/>- On a Windows device, open the Windows Security app.<br/>- Select **Virus & threat protection**.<br/>- Under **Who's protecting me?** select **Manage providers**.<br/>- On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.|
+|Task Manager|<br/>- On a Windows device, open the Task Manager app.<br/>- Select the **Details** tab.<br/>- Look for **MsMpEng.exe** in the list.|
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
