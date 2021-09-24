@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom: AdminSurgePortfolio
 description: "Remove groups or policies to turn off Basic Mobility and Security."
 ---
