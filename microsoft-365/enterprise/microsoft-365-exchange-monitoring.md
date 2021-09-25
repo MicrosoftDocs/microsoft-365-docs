@@ -72,7 +72,7 @@ With Exchange Online monitoring supports the following scenarios:
    >[!Note]
    > Active user count is measured by a single activity, for example, when a user reads an email. It only accounts for the last 30 minutes of activity.
 
-- **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. 
+- **App connectivity**: Estimated connectivity is based on the percentage of successful, synthetic connections between your organization's devices and Exchange Online, and may include issues outside of Microsoft's control. To learn more, see [Microsoft 365 Connectivity Optics](microsoft-365-connectivity-optics.md).
 
 - **Basic Authentication and Modern Authentication**: The number of users successfully validated in the Exchange Online service.
 
@@ -88,8 +88,6 @@ With Exchange Online priority account monitoring, you can view the health for th
 
 - Exchange licensing
 
-- Mail delivery
-
 - Mailbox storage
 
 - Message limit
@@ -102,13 +100,11 @@ With Exchange Online priority account monitoring, you can view the health for th
 
 The Exchange licensing scenario checks if the priority account is not able to log in due to invalid license issues, which can be addressed by the tenant admin.
 
-The mail delivery scenario checks for delayed or non-delivered emails for priority accounts. The Microsoft 365 admin center provides a deep link to the Exchange admin center to follow the message trace. Exchange Admin Center role permissions may be required to edit thresholds. For more information, see [Email issues for priority accounts report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report). 
-
 The remaining five scenarios above check if your priority account’s mailbox is close to reaching or has reached the limits described in [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-storage-limits).
 
-For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example.
+For these scenarios, you can see active and resolved advisories and incidents affecting your priority accounts. Identifiable information for the priority accounts will be displayed in the advisory or incident details along with recommendations. Here is an example from the page at **Health > Service health > Exchange Online**.
 
-:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-scenario-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
+:::image type="content" source="../media/microsoft-365-exchange-monitoring/exchange-priority-accounts-example.png" alt-text="Example of active and resolved advisories and incidents affecting your priority accounts":::
 
 In the affected account pane, the **Status** column has these values:
 
@@ -140,13 +136,13 @@ There are two ways you can provide feedback:
 
 First, make sure you've enabled the new admin center on the **Home** page of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-Then make sure you meet both of the following requirements: 
+Then make sure you meet both of the following requirements:
 
-- Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Your organization needs to have a license count of at least 5,000, from one or a combination of these products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5.
 
-- Your organization needs to have at least 50 monthly active Exchange Online users.
+- Your organization needs to have at least 50 monthly active users for one or more core Microsoft 365 services, which include Microsoft Teams, OneDrive for Business, SharePoint Online, Exchange Online, and Office apps.
 
-If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users, Exchange Online monitoring won't be enabled until these requirements are met.
+If the license count for your organization falls below 5,000 users and the monthly active users falls below 50 users in the core services, Exchange Online monitoring won't be enabled until these requirements are met.
 
 #### 2. The active user count in the dashboard for each client appears to be low. We have a lot of active licenses assigned to users. What does this mean?
 
