@@ -185,3 +185,5 @@ Monitoring focuses on service metadata and user content is not monitored.
 - [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
 
 - [Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
+
+- [Service alerts for mailbox utilization in Exchange Online monitoring](microsoft-365-mailbox-utilization-service-alerts.md)
