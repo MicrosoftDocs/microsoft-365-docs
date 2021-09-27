@@ -243,7 +243,6 @@ You can also [search the Microsoft 365 for business community forums](https://go
 
 ::: moniker-end
 
-
 ## Related content
 
 [Find docs and training](find-help-answers.md) (article)\
