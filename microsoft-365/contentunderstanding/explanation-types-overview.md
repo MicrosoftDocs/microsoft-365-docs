@@ -135,7 +135,7 @@ Use the proximity explanation to define how far away the phone number explanatio
 ![Proximity explanation.](../media/content-understanding/proximity.png)
 
 > [!NOTE]
-> Currently, regular expressions can’t be used with the proximity explanation type.
+> Regular expressions currently can’t be used with the proximity explanation type.
 
 #### What are tokens?
 
@@ -283,7 +283,7 @@ You can select **Add** to create an explanation from the template.  As you add m
 You can save an explanation as a template to make it available in the explanation library of a content center to be used with other models. The template will include the basic and advanced settings for the explanation, with the exception of the option to state where the phrases appear in a document.
 
 > [!NOTE]
-> Only phrase list and regular expression explanations can be saved as a templete.
+> Only phrase list and regular expression explanations can be saved as a template.
 
 1. On the **Explanations** section of your model's **Train** page:
 
