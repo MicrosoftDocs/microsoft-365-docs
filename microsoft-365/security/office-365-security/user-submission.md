@@ -119,7 +119,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
 
-   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report a message from the user quarantine.
+   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report messages from quarantine.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**
 
