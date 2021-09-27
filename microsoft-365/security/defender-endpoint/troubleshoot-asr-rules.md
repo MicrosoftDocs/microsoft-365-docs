@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Report and troubleshoot Microsoft Defender for ATP ASR Rules

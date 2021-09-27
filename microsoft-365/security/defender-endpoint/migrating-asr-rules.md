@@ -15,6 +15,7 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Migrating from a third-party HIPS to ASR rules
