@@ -39,7 +39,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" alt-text="Image of sign in failed error Unexpected error." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" alt-text="Image of sign-in failed error Unexpected error." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -60,7 +60,7 @@ from Google Play Store and try again
 
 **Sign in failed:** *Invalid license, please contact administrator*
 
-:::image type="content" alt-text="Image of sign in failed  please contact administrator." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" alt-text="Image of sign-in failed  please contact administrator." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, please contact administrator*
 
