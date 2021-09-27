@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/02/2021
+ms.collection: m365-security-compliance
 ---
 
 # Detect and block potentially unwanted applications
