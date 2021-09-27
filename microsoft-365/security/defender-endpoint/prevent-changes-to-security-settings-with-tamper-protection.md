@@ -16,7 +16,8 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.date: 07/27/2021
+ms.date: 09/23/2021
+ms.collection: M365-security-compliance
 ---
 
 # Protect security settings with tamper protection
