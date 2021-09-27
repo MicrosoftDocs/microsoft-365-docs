@@ -15,6 +15,7 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Troubleshoot network protection

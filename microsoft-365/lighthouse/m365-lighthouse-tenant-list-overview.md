@@ -40,6 +40,7 @@ The following table shows the different status messages and their meaning.<br><b
 | Ineligible, DAP | Delegated Admin Privileges (DAP) setup is required. |
 | Ineligible, user count | Tenant has more users than allowed. |
 | Ineligible, license | Tenant does not have required license. |
+| Ineligible, contract type | A Cloud Solution Provider (CSP) contract is required. |
 | Inactive | Tenant is no longer active. |
 
 Once you inactivate a tenant, you can't take action on the tenant while Lighthouse completes the inactivation process. It may take up to 48 hours for inactivation to complete.

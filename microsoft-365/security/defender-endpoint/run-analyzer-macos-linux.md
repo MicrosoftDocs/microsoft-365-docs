@@ -32,7 +32,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '029296D437BA97B5563D0C75DD874F8F51C563B2B5AC16745619F4DB2E064C85'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '973725417D136B7B17AF4B301F1E99BA21D7F4A7DF88036DC5A731A4B768A8B2'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
@@ -47,16 +47,27 @@ ms.technology: m365d
 
 ## Running the analyzer using a terminal or SSH scenario
 
-1. Open a terminal or SSH into the relevant machine.
+Open a terminal or SSH into the relevant machine and run the following commands:
 
-2. Run `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. Run `./mde_support_tool.sh -d` to generate the result archive file.
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
+
+4. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> In addition, the tool currently requires Python version 3 or later to be installed.
+> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - In addition, the tool currently requires Python version 3 or later to be installed.
+> 
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
+> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Example:
 
@@ -67,9 +78,8 @@ Additional syntax help:
 **-h** \# Help<br>
 \# Show help message
 
-**-p** \# Performance<br>
-\# Planned parameter that is not yet implemented.<br>
-\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand.
+**performance** \# Performance<br>
+\# Collects extensive tracing for analysis of a performance issue that can be reproduced on demand. Using `--length=<seconds>` to specify the duration of the benchmark.
 
 **-o** \# Output<br>
 \# Specify the destination path for the result file
@@ -117,3 +127,7 @@ Additional syntax help:
 - Auditd_info.txt
 
   Description: details on auditd service and related components for [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS
+
+- perf_benchmark.tar.gz
+
+  Description: The performance test reports. You will see this only if you are using the performance parameter.

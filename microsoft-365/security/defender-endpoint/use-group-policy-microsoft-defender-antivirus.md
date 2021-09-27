@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
+ms.collection: m365-security-compliance
 ---
 
 # Use Group Policy settings to configure and manage Microsoft Defender Antivirus
@@ -50,7 +51,7 @@ In general, you can use the following procedure to configure or change Microsoft
 The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable). 
 
 > [!TIP]
-> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure refer to the spreadsheet when you edit Group Policy Objects.
+> [Download the Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/101451). This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 May 2020 Update (2004). You can configure refer to the spreadsheet when you edit Group Policy Objects.<br/><br/>
 
 | Location | Setting | Article |
 |:---|:---|:---|
@@ -91,9 +92,9 @@ The following table in this topic lists the Group Policy settings available in W
 | Remediation | Specify the time of day to run a scheduled full scan to complete remediation | [Configure scheduled Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Reporting | Turn off enhanced notifications | [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
 | Root | Turn off Microsoft Defender Antivirus | Not used (This setting must be set to **Not configured** to ensure any installed third-party antivirus apps work correctly)
-| Root | Define addresses to bypass proxy server | Not used |
-| Root | Define proxy autoconfig (.pac) for connecting to the network | Not used |
-| Root | Define proxy server for connecting to the network | Not used |
+| Root | Define addresses to bypass proxy server | [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Root | Define proxy autoconfig (.pac) for connecting to the network | [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
+| Root | Define proxy server for connecting to the network | [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus) |
 | Root | Configure local administrator merge behavior for lists | [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Root | Allow antimalware service to start up with normal priority | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Root | Allow antimalware service to remain running always | [Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md) |

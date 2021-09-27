@@ -33,7 +33,7 @@ Prior to this new capability, only the content of an email message protected by 
 Microsoft eDiscovery tools support items encrypted with Microsoft encryption technologies. These technologies are Azure Rights Management and Microsoft Information Protection (specifically sensitivity labels). For more information about Microsoft encryption technologies, see [Encryption](encryption.md). Content encrypted by third-party encryption technologies isn't supported. For example, previewing or exporting content encrypted with non-Microsoft technologies isn't supported.
 
 > [!NOTE]
-> The decryption of email messages encrypted with Office 365 Message Encryption (OME) is not supported by Microsoft eDiscovery tools.
+> The decryption of email messages sent with an [Office 365 Message Encryption (OME) custom branding template](add-your-organization-brand-to-encrypted-messages.md) is not supported by Microsoft eDiscovery tools. When using an OME custom branding template, email messages are delivered to the OME portal instead of the recipient's mailbox. Therefore, you won't be able to use eDiscovery tools to search for OME-encrypted messages because those messages are never received by the recipient's mailbox.
 
 ## eDiscovery activities that support encrypted items
 
@@ -81,3 +81,15 @@ In both these scenarios, email messages with encrypted file attachments can be r
 You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in Advanced eDiscovery.
 
 This role is assigned by default to the eDiscovery Manager role group on the **Permissions** page in the Microsoft 365 compliance center. For more information about the RMS Decrypt role, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#rms-decrypt).
+
+### Decrypting RMS-protected email messages and encrypted file attachments using Content search or Core eDiscovery
+
+Any rights-protected (RMS-protected) email messages included in the results of a Content search will be decrypted when you export them. Additionally, any file that's encrypted with a [Microsoft encryption technology](encryption.md) and is attached to an email message that's included in the search results will be decrypted when it's exported. This decryption capability is enabled by default for members of the eDiscovery Manager role group. This is because the RMS Decrypt management role is assigned to this role group by default. Keep the following things in mind when exporting encrypted email messages and attachments:
+  
+- As previously explained, to decrypt RMS-protected messages when you export them, you have to export the search results as individual messages. If you export search results to a PST file, RMS-protected messages remain encrypted.
+
+- Messages that are decrypted are identified in the **ResultsLog** report. This report contains a column named **Decode Status**, and a value of **Decoded** identifies the messages that were decrypted.
+
+- In addition to decrypting file attachments when exporting search results, you can also preview the decrypted file when previewing search results. You can only view the rights-protected email message after you export it.
+
+- If you need to prevent someone from decrypting RMS-protect messages and encrypted file attachments, you have to create a custom role group (by copying the built-in eDiscovery Manager role group) and then remove the RMS Decrypt management role from the custom role group. Then add the person who you don't want to decrypt messages as a member of the custom role group.

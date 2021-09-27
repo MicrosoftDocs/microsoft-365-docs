@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: 
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus notifications that appear on endpoints

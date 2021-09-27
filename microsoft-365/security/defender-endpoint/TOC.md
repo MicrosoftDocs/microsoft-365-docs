@@ -353,9 +353,9 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-##### [Control USB devices and other removable media](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
 ##### [Device Control Reports](device-control-report.md)
 

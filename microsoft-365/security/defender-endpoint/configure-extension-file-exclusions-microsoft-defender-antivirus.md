@@ -14,7 +14,8 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 08/27/2021
+ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -46,11 +47,8 @@ To exclude certain files from Microsoft Defender Antivirus scans, you modify you
 >
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-The following table lists some examples of exclusions based on file extension and folder location.
-
-<br>
-
-****
+The following table lists some examples of exclusions based on file extension and folder location. 
+<br/><br/>
 
 |Exclusion|Examples|Exclusion list|
 |---|---|---|
@@ -198,7 +196,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
     
 The following table describes how the wildcards can be used and provides some examples.
 
-<br>
+<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -217,8 +215,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables.
-
+The following table lists and describes the system account environment variables.<br/><br/>
     
 |This system environment variable...|Redirects to this|
 |---|---|

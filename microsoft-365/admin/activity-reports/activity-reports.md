@@ -148,21 +148,35 @@ There are circumstances where new users show up as **unknown**. This is usually 
   
 ## Show user details in the reports
 
-Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+By default, user details will be hidden for all reports.
   
 Your user list will look like this:
-  
+ 
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+
   
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
+
+2. Select **Org Settings** and choose **Services** . 
+  
+3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
+  
+
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
 
 2. Select **Reports**. 
   
-3. Uncheck the statement **In all reports, display de-identified names for users, groups, and sites**, and then save your changes.  
+3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+
   
 ## What happens to usage data when a user account is closed?
 

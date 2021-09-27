@@ -7,12 +7,13 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
+ms.collection: M365-security-compliance
 ---
 
 # Overview of Microsoft Defender for Endpoint Plan 1 (preview)

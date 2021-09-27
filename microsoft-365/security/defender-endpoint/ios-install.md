@@ -149,17 +149,6 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-1. Next, for enhanced Anti-phishing capabilities, you can deploy a custom profile on the supervised iOS devices. Follow the steps below:
-    - Download the config profile from [https://aka.ms/mdatpiossupervisedprofile](https://aka.ms/mdatpiossupervisedprofile)
-    - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
-
-    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
-    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.
-    - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
-
 ## Next Steps
 
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
