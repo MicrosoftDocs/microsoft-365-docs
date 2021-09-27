@@ -84,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
+        - name: Information barriers & Microsoft 365 services
+          items:
+            - name: Microsoft Teams and information barriers
+              href: /microsoftteams/information-barriers-in-teams?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json 
+            - name: OneDrive and information barriers
+              href: /onedrive/information-barriers?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json
+            - name: SharePoint and information barriers
+              href: /sharepoint/information-barriers?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json
     - name: Privileged access management
       items:
         - name: Overview
