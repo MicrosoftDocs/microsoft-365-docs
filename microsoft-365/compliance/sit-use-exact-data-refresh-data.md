@@ -21,23 +21,12 @@ ms.custom: seo-marvel-apr2020
 
 # Refresh your sensitive information source table file 
 
-
-<!--CHRIS MOVE THIS TO USE After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
-
-1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
-2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
-3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
-4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
-5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference.  -->
-
-## Refreshing your sensitive information table source file 
-
 You can refresh your sensitive information database twice in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 
 1. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv, .tsv format or pipe (|) delimited format. Keep the same file name and location you used when you previously hashed and uploaded the file. See, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 
       > [!NOTE]
-      > If there are no changes to the structure (field names) of the sensitive information source table file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly. See, 
+      > If there are no changes to the structure (field names) of the sensitive information source table file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly. See, [Manage your exact data match schema](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) for the steps to edit or remove a schema. See, [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) for the steps to edit or remove your EDM SIT/rule package.
 
 2. Use the procedures in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) to upload your sensitive information table source file.
 
@@ -49,11 +38,11 @@ You can refresh your sensitive information database twice in every 24 hour perio
    |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
-#### Example PowerShell script for Task Scheduler 
+### Example PowerShell script for Task Scheduler 
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:
 
-##### To schedule hashing and upload in a combined step
+#### Schedule hashing and upload in a combined step
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -88,8 +77,8 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### To schedule hashing and upload as separate steps
- <!-- USE-->
+#### Schedule hashing and upload as separate steps
+
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
 \# Assuming current user is also the user context to run the task
@@ -127,5 +116,3 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
-
-At this point, you are ready to use EDM-based classification with your Microsoft cloud services. For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).

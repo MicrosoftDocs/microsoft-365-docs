@@ -31,6 +31,39 @@ ms.custom: seo-marvel-apr2020
 
 
 ===
+Editing the schema for EDM-based classification
+If you want to make changes to your EDM schema, such as changing which fields are used for EDM-based classification, follow these steps:
+1.	Edit your edm.xml file (this is the file discussed in the Define the schema section of this article).
+2.	Connect to the Security & Compliance center using the procedures in Connect to Security & Compliance Center PowerShell.
+3.	To update your database schema, run the following cmdlets, one at a time:
+$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+You will be prompted to confirm, as follows:
+Confirm
+Are you sure you want to perform this action?
+EDM Schema for the data store 'patientrecords' will be updated.
+[Y] Yes [A] Yes to All [N] No [L] No to All [?] Help (default is "Y"):
+Note
+It can take between 10-60 minutes to update the EDMSchema with additions or modifications. The update must complete before you execute steps that use the additions.
+Removing a schema for EDM-based classification
+If you want to remove a schema you configured for EDM-based classification, follow these steps:
+1.	Connect to the Security & Compliance center using the procedures in Connect to Security & Compliance Center PowerShell.
+2.	Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:
+Remove-DlpEdmSchema -Identity patientrecords
+You will be prompted to confirm:
+Confirm
+Are you sure you want to perform this action?
+EDM Schema for the data store 'patientrecords' will be removed.
+[Y] Yes [A] Yes to All [N] No [L] No to All [?] Help (default is "Y"):
+Related articles
+•	Create a custom sensitive information type with Exact Data Match based classification
+•	Sensitive information type-entity definitions
+•	Custom sensitive information types
+•	Learn about data loss prevention
+•	Microsoft Cloud App Security
+•	New-DlpEdmSchema
+
+
 
 <!-- FOR CHRIS MOVE THIS TO USE #### Editing the schema for EDM-based classification
 
