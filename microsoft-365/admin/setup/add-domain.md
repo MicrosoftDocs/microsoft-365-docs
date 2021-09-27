@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
 - Adm_O365
-
+- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - SaRA
