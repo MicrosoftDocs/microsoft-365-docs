@@ -223,13 +223,15 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
+Simulation mode supports up to 1,000,000 matched files. If more than this number of files are matched from an auto-labeling policy, you can't turn on the policy to apply the labels. In this case, you must reconfigure the auto-labeling policy so that fewer files are matched, and re-run simulation. This maximum of 1,000,000 matched files applies to simulation mode only and not to an auto-labeling policy that's already turned on to apply sensitivity labels.
+
 Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
 2. Run the policy in simulation mode, which can take 12 hours to complete. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
-3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
+3. Review the results, and if necessary, refine your policy. For example, you might need to edit the policy rules to reduce false positives, or remove some sites so that the number of matched files doesn't exceed 1,000,000. Rerun simulation mode and wait for it to complete again.
 
 4. Repeat step 3 as needed.
 
@@ -240,6 +242,7 @@ The simulated deployment runs like the WhatIf parameter for PowerShell. You see 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
+
 
 ### Creating an auto-labeling policy
 
@@ -382,7 +385,7 @@ The recent enhancements for auto-labeling policies for OneDrive and SharePoint h
 
 - When you specify individual sites in an auto-labeling policy, up to 100 sites are now supported instead of 10 sites.
 
-- Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
+- Maximum of 1,000,000 matched files per auto-labeling policy in simulation mode. If more than this number of files are matched during simulation, you won't be able to turn on the policy. Reconfigure the auto-labeling policy to match a fewer number of files, and rerun simulation.
 
 - Simulation improvements:
   - Running the auto-labeling policy in simulation mode completes within 12 hours instead of up to 48 hours.
