@@ -25,7 +25,7 @@
 |PROJECT|N/A|N/A|N/A|Planned|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT ADMIN|N/A|N/A|N/A|Planned|N/A|
-|SHAREPOINT|Planned|Planned|N/A|N/A|N/A|
+|SHAREPOINT|Planned|N/A|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|Planned|
 |STREAM|Planned|Planned|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|Planned|
