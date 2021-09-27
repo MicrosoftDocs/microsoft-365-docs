@@ -26,8 +26,7 @@ Microsoft Managed Desktop requires the following settings in your Azure AD organ
 
 If you set restrictions that interact with these settings, make sure to exclude the Azure Active Directory **Modern Workplace Service Accounts**. For example, if you have a conditional access policy that prevents guest accounts from accessing the Intune portal, exclude the **Modern Workplace Service Accounts** group from this policy.
 
-For more information, see [Enable B2B external collaboration and manage who can invite guests](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings
-).
+For more information, see [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings).
 
 ## Unlicensed Intune admin
 
