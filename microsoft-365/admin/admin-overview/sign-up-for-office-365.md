@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos

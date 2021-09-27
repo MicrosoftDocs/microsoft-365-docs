@@ -13,7 +13,7 @@ monikerRange: 'o365-worldwide'
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
