@@ -631,6 +631,8 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Use the KQL editor to build search queries
+            href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
@@ -707,6 +709,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Use the KQL editor to build search queries
+            href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
@@ -800,6 +804,8 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
+            - name: Use the KQL editor to build search queries
+              href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
         - name: Manage review sets
