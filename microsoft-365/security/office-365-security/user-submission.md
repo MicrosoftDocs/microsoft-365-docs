@@ -110,7 +110,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
      - **User reporting experience section**
        - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
        - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
-       -  **Only display when user reports phishing** : Check this option if you want to display the message only when an email is reporeted as phish, if not checked messages will be shown for any kind of reports.
+       -  **Only display when user reports phishing**: Check this option if you want to display the message only when an email is reported as phish. If not, checked messages will be shown for any kind of report.
 
        As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
