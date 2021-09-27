@@ -152,7 +152,7 @@ If a user faces an issue which is not already addressed in the above sections or
 
 2.	Select “Help & feedback”.
 
-    :::image type="content" alt-text="Select help and feedback." source="images/selecthelpandfeedback2.pn":::
+    :::image type="content" alt-text="Select help and feedback." source="images/selecthelpandfeedback2.png":::
 
 3.	Select “Send feedback to Microsoft”.
 
