@@ -232,7 +232,7 @@ sections:
           
           - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
           
-          - We don't support assignment through an email-enabled security group, as Outlook and  Azure Information Protection unified labeling clients require the user to have full access permissions and have automapping enabled. Automapping is enabled by default for Exchange Online.
+          - We don't support assignment through an email-enabled security group, because Outlook and Azure Information Protection unified labeling clients require the user to have full access permissions and have automapping enabled. Automapping is enabled by default for Exchange Online.
           
           **To assign a user to the shared mailbox**
           
