@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: o365-administration
 ms.collection: 
 - Adm_O365
-
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 localization_priority: Priority
 search.appverid:

@@ -142,7 +142,7 @@ With retention labels, you can:
     - Specific keywords that match a query you create.
     - Pattern matches for a trainable classifier.
 
-- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items except calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and for email items.
 
 - **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
