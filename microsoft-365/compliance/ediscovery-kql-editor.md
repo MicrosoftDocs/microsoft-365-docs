@@ -42,7 +42,7 @@ When you create or edit an eDiscovery search, the option to display and use the 
 
 ### KQL editor in Advanced eDiscovery
 
-![KQL editor in Content search and Core eDiscovery](../media/KQLEditorAdvanced.png)
+![KQL editor in Advanced eDiscovery](../media/KQLEditorAdvanced.png)
 
 ## Using the KQL editor
 
