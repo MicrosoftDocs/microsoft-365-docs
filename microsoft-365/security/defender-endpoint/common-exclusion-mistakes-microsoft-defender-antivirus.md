@@ -15,7 +15,8 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
 ---
 
 # Common mistakes to avoid when defining exclusions
