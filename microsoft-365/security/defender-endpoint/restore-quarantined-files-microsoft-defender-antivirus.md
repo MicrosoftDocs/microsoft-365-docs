@@ -11,11 +11,12 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/20/2020
+ms.date: 09/23/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Restore quarantined files in Microsoft Defender Antivirus

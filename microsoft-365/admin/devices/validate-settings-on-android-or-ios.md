@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
