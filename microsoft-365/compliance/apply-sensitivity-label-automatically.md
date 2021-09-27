@@ -385,7 +385,7 @@ The recent enhancements for auto-labeling policies for OneDrive and SharePoint h
 
 - When you specify individual sites in an auto-labeling policy, up to 100 sites are now supported instead of 10 sites.
 
-- Maximum of 1,000,000 matched files per auto-labeling policy in simulation mode, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
+- Maximum of 1,000,000 matched files per auto-labeling policy in simulation mode. If more than this number of files are matched during simulation, you won't be able to turn on the policy. Reconfigure the auto-labeling policy to match a fewer number of files, and rerun simulation.
 
 - Simulation improvements:
   - Running the auto-labeling policy in simulation mode completes within 12 hours instead of up to 48 hours.
