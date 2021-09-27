@@ -30,7 +30,7 @@ This article provides information about attack reduction rules:
   - GUIDs
   - Configuration management system rule names
 
-## Public Preview: Supported operating systems
+## Public preview: Supported operating systems
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
