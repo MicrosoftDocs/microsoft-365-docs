@@ -280,7 +280,10 @@ You can select **Add** to create an explanation from the template.  As you add m
 
 #### To save a template to the explanation library
 
-You can save an explanation as a template to make it available in the explanation library to be used with other models.
+You can save an explanation as a template to make it available in the explanation library of a content center to be used with other models. The template will include the basic and advanced settings for the explanation, with the exception of the option to state where the phrases appear in a document.
+
+> [!NOTE]
+> Only phrase list and regular expression explanations can be saved as a templete.
 
 1. On the **Explanations** section of your model's **Train** page:
 
