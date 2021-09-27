@@ -1,5 +1,5 @@
 ---
-title: "Get started with exact data match based sensitive information types"
+title: "Manage your exact data match schema"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,10 +15,10 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Get started creating exact data match based sensitive information types.
+description: Learn how to edit or remove your exact data match schema.
 ms.custom: seo-marvel-apr2020
 ---
-
+# Manage your exact data match schema
 
 <!--CHRIS MOVE THIS TO USE After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
 
@@ -179,7 +179,7 @@ If you want your changes to occur without confirmation, in Step 2, use this cmdl
 
 ==========
 
-# Get started with exact data match based sensitive information types
+ Get started with exact data match based sensitive information types
 
 Creating and making an exact data match (EDM) based sensitive information type (SIT) available for use in data loss prevention policies, eDiscovery and certain content governance tasks is a multi-phase process. This article outlines the workflow and links to the procedures for each of the phases
 

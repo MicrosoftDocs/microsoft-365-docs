@@ -30,18 +30,18 @@ ms.custom: seo-marvel-apr2020
 4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
 5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference.  -->
 
-## Refreshing your sensitive information database 
+## Refreshing your sensitive information table source file 
 
-You can refresh your sensitive information database daily, and the EDM Upload Tool can reindex the sensitive data and then reupload the indexed data.
+You can refresh your sensitive information database twice in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 
-1. Determine your process and frequency (daily or weekly) for refreshing the database of sensitive information.
-
-2. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv or .tsv format. Keep the same file name and location you used when you followed the steps described in [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data).
+1. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv, .tsv format or pipe (|) delimited format. Keep the same file name and location you used when you previously hashed and uploaded the file. See, [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) for details on exporting your sensitive data and getting it into the correct format.
 
       > [!NOTE]
-      > If there are no changes to the structure (field names) of the .csv or .tsv file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly.
+      > If there are no changes to the structure (field names) of the sensitive information source table file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly. See, 
 
-3. Use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
+2. Use the procedures in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) to upload your sensitive information table source file.
+
+2. You can use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate the [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types) procedure. You can schedule tasks using several methods:
 
    |Method|What to do|
    |---|---|
@@ -50,13 +50,10 @@ You can refresh your sensitive information database daily, and the EDM Upload To
    |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
 #### Example PowerShell script for Task Scheduler 
-<!-- this goes into USE-->
 
 This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:
 
 ##### To schedule hashing and upload in a combined step
-
-<!--USE-->
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
