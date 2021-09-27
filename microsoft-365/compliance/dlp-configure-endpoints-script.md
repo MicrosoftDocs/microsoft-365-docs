@@ -49,7 +49,7 @@ You can also manually onboard individual devices to Microsoft 365 Endpoint data 
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 
@@ -90,7 +90,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 
 ## Monitor device configuration
-You can follow the different verification steps in the [Troubleshoot onboarding issues]((https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) to verify that the script completed successfully and the agent is running.
+You can follow the different verification steps in the [Troubleshoot onboarding issues]((/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) to verify that the script completed successfully and the agent is running.
 
 Monitoring can also be done directly on the portal, or by using the different deployment tools.
 

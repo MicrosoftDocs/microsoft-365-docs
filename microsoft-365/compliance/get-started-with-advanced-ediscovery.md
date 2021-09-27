@@ -27,7 +27,7 @@ Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve
 
 This article discusses the following steps necessary to set up Advanced eDiscovery.
 
-![Steps to set up Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+![Steps to set up Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
 
 This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases.
 
@@ -37,11 +37,11 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
+To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to <https://protection.office.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
+1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
 
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
 

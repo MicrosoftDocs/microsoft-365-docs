@@ -17,6 +17,8 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkTEAMS
+recommendations: false
 description: "Learn how to deploy teams with a baseline level of protection."
 ---
 
@@ -32,22 +34,22 @@ We also recommend turning on basic Defender for Office 365 features to guard aga
 
 |Option|Information|
 |:------|:-----------|
-|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md)<br>[Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
+|Safe Attachments for SPO, OneDrive and Teams|[Safe Attachments](../security/office-365-security/safe-attachments.md) <p> [Defender for Office 365 - SharePoint, OneDrive, and Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |Safe Documents|[Safe Documents in Microsoft Defender for Office 365](../security/office-365-security/safe-docs.md)|
-|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md)<br>[Safe Links](../security/office-365-security/safe-links.md)|
+|Safe Links for Teams|[Office 365 Safe Links in Teams](../security/office-365-security/safe-links.md) <p> [Safe Links](../security/office-365-security/safe-links.md)|
 
 ## Teams guest sharing
 
 In each of the tiers, we have the option of sharing with people outside your organization. For the sensitive and highly sensitive tiers, we will have the option to turn guest sharing off at the team level by using sensitivity labels. But the organization-level guest sharing setting must be turned on for guest sharing to work at all in Teams.
 
-![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle-on.png)
+![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
 
 To set Teams guest access settings
 
 1. Log in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
 2. In the left navigation, click **Show all**.
 3. Under **Admin centers**, click **Teams**.
-4. In the Teams admin center, in the left navigation, expand **Org-wide settings** and click **Guest access**.
+4. In the Teams admin center, in the left navigation, expand **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>.
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
 
@@ -91,7 +93,7 @@ Microsoft 365 offers additional methods for securing your content. Consider if t
 
 - Have guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
 - Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/data-loss-prevention-policies.md) to set policies around accessing sensitive information.
+- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
 
 ## See Also
 

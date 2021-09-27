@@ -43,7 +43,7 @@ When searching a large number of mailboxes, the search is distributed across tho
 
 Restarting the search will often result in similar errors on different servers. Instead of restarting the search, click the **Retry** button that is displayed at the top of the search results page.
 
-![Click the Retry button to resolve content location errors](../media/retrycontentsearch3.png)
+![Click the Retry button to resolve content location errors.](../media/retrycontentsearch3.png)
 
 This will result in the retrying the search only for the mailboxes that failed. When you retry the search, the other results that were successfully returned are retained.
 
@@ -55,7 +55,7 @@ Here are some additional causes of content location errors and some tips to help
 
 - The search query might be retrieving too much content from the mailbox. If possible, try to narrow the scope of the search by using keywords, date ranges, and search conditions.
 
-- Too many keywords or keyword phrases when you create a search query using the [keywords list](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches). When you run a search query that uses the keywords list, the service essentially runs a separate search for each row in the keyword list so that statistics can be generated. If you're using the keywords list in search queries, minimize the number of rows in the keyword list or divide the number keywords into smaller lists and create a different search for each keyword list.
+- Too many keywords or keyword phrases when you create a search query using the [keywords list](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches). When you run a search query that uses the keywords list, the service essentially runs a separate search for each row in the keyword list so that statistics can be generated. If you're using the keywords list in search queries, minimize the number of rows in the keyword list or divide the number keywords into smaller lists and create a different search for each keyword list.
 
   > [!NOTE]
   > To help reduce issues caused by large keyword lists, you're now limited to a maximum of 20 rows in the keyword list of a search query.

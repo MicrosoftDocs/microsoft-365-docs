@@ -43,10 +43,8 @@ You can get this information from your hardware vendor, or you can use the [Get-
 
 When you add devices, you also need to add them to a Profile. A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.
   
-## Related articles
+## Related content
 
-[Microsoft 365 for business documentation and resources](../../business/index.yml)
+[Microsoft 365 for business documentation and resources](../../index.yml)
   
-[Get started with Microsoft 365 for business](../../business/microsoft-365-business-overview.md)
-  
-[Manage Microsoft 365 for business](../../business/manage.md)
+[Get started with Microsoft 365 for business](../../business-video/what-is-microsoft-365.md)

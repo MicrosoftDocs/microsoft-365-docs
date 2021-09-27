@@ -24,7 +24,7 @@ description: "Activity explorer rounds out the functionality of the data classif
 
 The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed and made available in the Activity explorer UI. 
 
-![placeholder screenshot overview activity explorer](../media/data-classification-activity-explorer-1.png)
+![placeholder screenshot overview activity explorer.](../media/data-classification-activity-explorer-1.png)
 
 There are over 30 different filters available for use, some are:
 
@@ -100,7 +100,7 @@ Activity explorer also gathers **DLP policy matches** events from Exchange Onlin
 - copied to network share
 - accessed by unallowed app 
 
-The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention](dlp-learn-about-dlp.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.

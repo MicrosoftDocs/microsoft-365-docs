@@ -1,10 +1,10 @@
 ---
-title: "Step 6: Train remote workers and address usage feedback"
+title: "Step 6: Train your workers and address usage feedback"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -19,9 +19,9 @@ ms.custom:
 description: Train your users and ensure that issues are dealt with quickly.
 ---
 
-# Step 6: Train remote workers and address usage feedback
+# Step 6: Train your workers and address usage feedback
 
-Train your remote workers on:
+Train your hybrid workers on:
 
 - Proper sign-in procedures using MFA, including registering an additional verification method.
 - The use of devices and how endpoint management policies can be used to block access for non-compliant or unmanaged devices.
@@ -33,15 +33,15 @@ Train your remote workers on:
 
 This training should include hands-on exercises so that your workers can experience these capabilities and their results.
 
-Create a forum for your remote workers to ask questions or get issues addressed, such as a team or a Yammer group.
+Create a forum for your workers to ask questions or get issues addressed, such as a team or a Yammer group.
 
 In the weeks after training:
 
-- Quickly address remote worker feedback in your forum and adjust your remote worker policies and configurations as needed.
+- Quickly address worker feedback in your forum and adjust your worker policies and configurations as needed.
 - Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with your expectations of user adoption.
 
 Then, retrain your users as needed.
 
 ## Results of Step 6
 
-Your remote workers are trained and there is a responsive and open forum for them to provide feedback and post issues with remote access and productivity apps.
+Your hybrid workers are trained and there is a responsive and open forum for them to provide feedback and post issues with security, compliance, remote access, and productivity apps.

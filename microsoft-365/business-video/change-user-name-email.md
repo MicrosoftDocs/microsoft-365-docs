@@ -15,15 +15,19 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to change a user's name or email address."
+description: "Learn how to change a user's name or email address by changing a display name, alias, or email address."
 ---
 
 # Change a user's name or email address
+
+## Watch: Change a user's name or email address
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -33,7 +37,7 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ### Change a user's display name
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage contact information**.
 1. Change the display name, and select **Save changes**.
@@ -42,14 +46,14 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ### Add an email alias
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage email aliases**.
 1. Enter the new alias, verify the domain, and select **Save changes**.
 
 ### Change a username
 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the user from the list of active users.
 1. Select **Manage username**.
 1. Enter the new username, verify the domain, and select **Save changes**.
@@ -58,6 +62,6 @@ Occasionally, you may need to change a user's name or email address. You can do 
 
 ## Related content
 
-[Give mailbox permissions to another user](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) (article)
-[Convert a user mailbox to a shared mailbox](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) (article)
-[User email settings](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (article)
+[Give mailbox permissions to another user](../admin/add-users/give-mailbox-permissions-to-another-user.md) (article)\
+[Convert a user mailbox to a shared mailbox](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (article)\
+[User email settings](../admin/email/office-365-user-email-settings.md) (article)

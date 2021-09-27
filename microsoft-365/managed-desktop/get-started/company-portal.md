@@ -33,7 +33,7 @@ This topic provides info on how to:
 - Verify active sync between Intune and Microsoft Store for Business 
 
 ## Step 2 - Assign Company Portal to your users
-Following your enrollment in Microsoft Managed Desktop, Microsoft Managed Desktop Operations will automatically deploy Company Portal to your tenant and install the app on Microsoft Managed Desktop devices in your organization.
+Following your enrollment in Microsoft Managed Desktop, we will automatically deploy Company Portal to your tenant and install the app on Microsoft Managed Desktop devices in your organization.
 
 ## Step 3 - Communicate change to your users
 As the IT administrator for your organization, it’s important to let your users know how to use Company Portal in your organization. Microsoft Managed Desktop recommends:
@@ -42,11 +42,14 @@ As the IT administrator for your organization, it’s important to let your user
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
-3. [Assign licenses](assign-licenses.md)
-4. Deploy Intune Company Portal (this topic)
-5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Set up devices](set-up-devices.md)
-7. [Get your users ready to use devices](get-started-devices.md)
-8. [Deploy apps](deploy-apps.md)
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign Intune Company Portal (this article).
+1. [Assign licenses](assign-licenses.md).
+1. [Deploy apps](deploy-apps.md).
+1. [Set up devices](set-up-devices.md)
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).

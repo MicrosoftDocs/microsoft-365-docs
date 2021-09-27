@@ -14,6 +14,7 @@ ms.collection:
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Groups services interactions"
 ---
 
@@ -74,18 +75,23 @@ SharePoint sites are created with Owner, Member and Visitor security groups, wit
 End users can create groups from several of the services within Microsoft 365, and in others they can only share with a group.
 
 The following services allow creation of groups by end users:
- 	 	 	 	 	 	 
-Outlook	Planner	Project for the web	SharePoint	Stream	Microsoft Teams	Yammer
 
-**Restriction of group creation**
+- Outlook
+- Planner
+- Project for the web
+- SharePoint
+- Stream
+- Microsoft Teams
+- Yammer
+
+#### Restriction of group creation
 
 A common approach to control sprawl of teams is to limit which users can create them. This can only be done by limiting the creation of groups. Doing this impacts the ability to create groups from other services where that may be necessary for end-user. Microsoft 365 Groups does not support the ability to restrict the creation of groups from some apps or services while allowing it from others.
 
 The experience of group creation restriction varies between apps and services:
 
-
 |App or service|Experience|
-|:-------------|:---------|
+|---|---|
 |Outlook|**New group** option is removed from New menu in people page|
 |Planner|**New plan** explains that group creation has been turned off and offers to add the plan to an existing group|
 |Project for the web and Roadmap|**Create group** menu explains that group creation is restricted and suggests using an existing group.|
@@ -98,14 +104,14 @@ The experience of group creation restriction varies between apps and services:
 
 See the Groups in Microsoft 365 poster for information about different types of groups, how these are created and managed, and a few governance recommendations.
 
-[![Thumb image for groups infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
+[![Thumb image for groups infographic.](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf)
 
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
 The following table provides an overview of Microsoft 365 Groups interactions with various services:
 
 |Product|Features|Does the service<br>exist without a group?|Can the service<br>create a group?|Does deleting the<br>instance delete the group?|
-|:---|:---|:---|:---|:---|
+|---|---|---|---|---|
 |Azure AD|Membership, Group controls, Guests|Yes|Yes|Yes|
 |Exchange|Calendar, mailbox|Yes|Yes|Yes|
 |Forms|Form|Yes|No|No|

@@ -16,7 +16,7 @@ description: "Admins can set up a connector to import and archive XIP source dat
 
 # Set up a connector to archive XIP source data
 
-Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by the Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user's mailbox in Microsoft 365.
+Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from the XIP source platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [XIP](https://globanet.com/xip/) connector that allows using an XIP file to import items to Microsoft 365. An XIP file is similar to a ZIP file, but allows for a digital signature to be used. The digital signature is verified by Veritas Merge 1 before the XIP source file is extracted. The connector converts the content from the XIP source file to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After XIP source data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels, and communication compliance. Using an XIP connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -24,7 +24,7 @@ After XIP source data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive the XIP source data in Microsoft 365.
 
-![Archiving workflow for XIP source data](../media/XIPConnectorWorkflow.png)
+![Archiving workflow for XIP source data.](../media/XIPConnectorWorkflow.png)
 
 1. Your organization works with the XIP source to set up and configure an XIP site.
 
@@ -42,7 +42,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the XIP connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft365 compliance center and create a connector for the XIP source data.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the XIP source data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **XIP**.
 

@@ -15,12 +15,14 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to add another domain to your subscription."
+description: "Your organization might need multiple domains so customers can find you. Learn how to add another domain to your subscription."
 ---
 
 # Add another domain
@@ -31,7 +33,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, choose **Setup**.
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 1. Under **Get your custom domain set up**, select **View**.
 1. Choose **Manage**, and then **Add domain**.
 1. Enter the new domain name that you want to add, and then select **Next**.
@@ -43,7 +45,7 @@ Your company might need multiple domain names for different purposes. For exampl
 
 To receive email at your new domain, you'll need to add a new email alias for each user:
 
-1. Select **Users**, **Active users**, and then select the user who will be assigned the new alias.
+1. Select **Users**, <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the user who will be assigned the new alias.
 1. Choose **Manage email aliases**, and then **Add an alias**.
 1. Enter the username, and then choose the new domain from the drop-down list.
 1. Select **Save changes**, and then close the window.
@@ -51,7 +53,7 @@ To receive email at your new domain, you'll need to add a new email alias for ea
 
 ## Related content
 
-[Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) (article)
-[Add DNS records to connect your domain](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (article)
-[Change nameservers to set up Microsoft 365 with any domain registrar](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) (article)
-[Domains FAQ](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) (article)
+[Add a domain to Microsoft 365](../admin/setup/add-domain.md) (article)\
+[Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)\
+[Domains FAQ](../admin/setup/domains-faq.yml) (article)

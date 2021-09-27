@@ -24,7 +24,7 @@ After text-delimited data is stored in user mailboxes, you can apply Microsoft 3
 
 The following overview explains the process of using a connector to archive text-delimited source information in Microsoft 365.
 
-![Archiving workflow for text-delimited data](../media/TextDelimitedConnectorWorkflow.png)
+![Archiving workflow for text-delimited data.](../media/TextDelimitedConnectorWorkflow.png)
 
 1. Your organization works with the text-delimited source to set up and configure a text-delimited site.
 

@@ -43,7 +43,7 @@ Explore the following list of error messages to get help with the most common is
   
  **Cause:** When you [opt in to seeing data in the template app](enable-usage-analytics.md) from the Microsoft 365 admin center, the Microsoft 365 system starts generating historical usage data for your organization. Depending on the size of your tenant, this step could take anywhere between 2 hours to 48 hours. 
   
- **To fix this:** Just be patient, but if the message does not change to **Your data is ready** after 3 days, [contact Microsoft 365 for business support](../contact-support-for-business-products.md).
+ **To fix this:** Just be patient, but if the message does not change to **Your data is ready** after 3 days, [contact Microsoft 365 for business support](../../business-video/get-help-support.md).
   
 ## We are unable to process your request at this time. We are still preparing the data for your organization
 
@@ -53,7 +53,7 @@ Explore the following list of error messages to get help with the most common is
   
  **Cause:** When you [opt in to seeing data in the template app](enable-usage-analytics.md) from the admin center, the Microsoft 365 system starts generating historical usage data for your organization. Depending on the size of your tenant, this step could take anywhere between two hours to 48 hours. 
   
- **To fix this:** Just be patient, but if the message does not change to **Your data is ready** even 3 days since initiation, [contact Microsoft 365 for business support](../contact-support-for-business-products.md).
+ **To fix this:** Just be patient, but if the message does not change to **Your data is ready** even 3 days since initiation, [contact Microsoft 365 for business support](../../business-video/get-help-support.md).
   
 ## The tenant ID you provided is not in the correct format
 

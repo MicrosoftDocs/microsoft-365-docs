@@ -8,6 +8,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +16,7 @@ ms.date: 09/17/2018
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Manage event-based forced updates
@@ -34,7 +36,7 @@ You can use Microsoft Endpoint Configuration Manager, Group Policy, PowerShell c
 
 ### Use Configuration Manager to check for protection updates before running a scan
 
-1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** > **Endpoint Protection** > **Antimalware Policies**)
+1. On your Microsoft Endpoint Manager console, open the antimalware policy you want to change (click **Assets and Compliance** in the navigation pane on the left, then expand the tree to **Overview** \> **Endpoint Protection** \> **Antimalware Policies**)
 
 2. Go to the **Scheduled scans** section and set **Check for the latest security intelligence updates before running a scan** to **Yes**.
 
@@ -50,7 +52,7 @@ You can use Microsoft Endpoint Configuration Manager, Group Policy, PowerShell c
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 5. Double-click **Check for the latest virus and spyware definitions before running a scheduled scan** and set the option to **Enabled**.
 
@@ -86,9 +88,9 @@ You can use Group Policy to force Microsoft Defender Antivirus to check and down
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
-5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**. 
+5. Double-click **Check for the latest virus and spyware definitions on startup** and set the option to **Enabled**.
 
 6. Click **OK**.
 
@@ -102,7 +104,7 @@ You can also use Group Policy, PowerShell, or WMI to configure Microsoft Defende
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 5. Double-click **Initiate security intelligence update on startup** and set the option to **Enabled**.
 
@@ -144,12 +146,12 @@ If you have enabled cloud-delivered protection, Microsoft Defender AV will send 
 
 3. Click **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 5. Double-click **Allow real-time security intelligence updates based on reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
 
 6. **Allow notifications to disable definitions-based reports to Microsoft MAPS** and set the option to **Enabled**. Then click **OK**.
-    
+
 > [!NOTE]
 > **Allow notifications to disable definitions based reports** enables Microsoft MAPS to disable those definitions known to cause false-positive reports. You must configure your computer to join Microsoft MAPS for this function to work.
 

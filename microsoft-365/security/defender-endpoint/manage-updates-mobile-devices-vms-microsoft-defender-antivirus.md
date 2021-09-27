@@ -8,12 +8,14 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Manage updates for mobile devices and virtual machines (VMs)
@@ -39,7 +41,7 @@ The following articles may also be useful in these situations:
 
 ## Opt in to Microsoft Update on mobile computers without a WSUS connection
 
-You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection. 
+You can use Microsoft Update to keep Security intelligence on mobile devices running Microsoft Defender Antivirus up to date when they are not connected to the corporate network or don't otherwise have a WSUS connection.
 
 This means that protection updates can be delivered to devices (via Microsoft Update) even if you have set WSUS to override Microsoft Update.
 
@@ -57,10 +59,9 @@ You can opt in to Microsoft Update on the mobile device in one of the following 
 
 3. Select **Policies** then **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates**.
 
 5. Set **Allow security intelligence updates from Microsoft Update** to **Enabled**, and then select  **OK**.
-
 
 ### Use a VBScript to opt in to Microsoft Update
 
@@ -78,17 +79,17 @@ You can opt in to Microsoft Update on the mobile device in one of the following 
 
 ## Prevent Security intelligence updates when running on battery power
 
-You can configure Microsoft Defender Antivirus to only download protection updates when the PC is connected to a wired power source. 
+You can configure Microsoft Defender Antivirus to only download protection updates when the PC is connected to a wired power source.
 
 ### Use Group Policy to prevent security intelligence updates on battery power
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), choose the Group Policy Object you want to configure, and open it for editing.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), choose the Group Policy Object you want to configure, and open it for editing.
 
-2.  In the **Group Policy Management Editor** go to **Computer configuration**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**.
 
-3.  Select **Policies** then **Administrative templates**.
+3. Select **Policies** then **Administrative templates**.
 
-4.  Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Signature Updates**, and then set **Allow security intelligence updates when running on battery power** to **Disabled**. Then select **OK**. 
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Signature Updates**, and then set **Allow security intelligence updates when running on battery power** to **Disabled**. Then select **OK**.
 
 This action prevents protection updates from downloading when the PC is on battery power.
 

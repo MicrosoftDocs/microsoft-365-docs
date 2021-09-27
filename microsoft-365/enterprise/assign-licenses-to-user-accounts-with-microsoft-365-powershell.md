@@ -1,7 +1,7 @@
 ---
 title: "Assign Microsoft 365 licenses to user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/23/2020
 audience: Admin
@@ -53,7 +53,7 @@ Next, list the license plans for your tenant with this command.
 Get-AzureADSubscribedSku | Select SkuPartNumber
 ```
 
-Next, get the sign-in name of the account to which you want add a license, also known as the user principal name (UPN).
+Next, get the sign-in name of the account to which you want to add a license, also known as the user principal name (UPN).
 
 Next, ensure that the user account has a usage location assigned.
 
@@ -82,6 +82,8 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 
 ## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+
+Please note that we will begin to deprecate this module when the functionality of this module is available in the newer [Azure Active Directory PowerShell for Graph](/powershell/azuread/v2/azureactivedirectory) module. We advise customers who are creating new PowerShell scripts to use the newer module instead of this module.
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -186,10 +188,6 @@ $subscriptionTo="<SKU part number of the new subscription>"
 # Unassign
 $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicense
 $licenses = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
-$license.SkuId = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
-$licenses.AddLicenses = $license
-Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
-$licenses.AddLicenses = @()
 $licenses.RemoveLicenses =  (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $subscriptionFrom -EQ).SkuID
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $licenses
 # Assign

@@ -16,13 +16,29 @@ audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
 ---
 
 # What's new in Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## 101.39.98 (30.121062.13998.0)
+
+- Performance improvements & bug fixes
+
+## 101.34.27 (30.121052.13427.0)
+
+- Performance improvements & bug fixes
+
+## 101.29.64 (30.121042.12964.0)
+
+- Starting with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
+- `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+  - `--sort`: sorts the output descending by total number of files scanned
+  - `--top N`: displays the top N results (only works if `--sort` is also specified)
+- Performance improvements & bug fixes
 
 ## 101.25.72 (30.121022.12563.0)
 

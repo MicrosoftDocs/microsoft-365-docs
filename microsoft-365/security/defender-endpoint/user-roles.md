@@ -1,6 +1,6 @@
 ---
 title: Create and manage roles for role-based access control
-description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft Defender Security Center
+description: Create roles and define the permissions assigned to the role as part of the role-based access control implementation in the Microsoft 365 Defender
 keywords: user roles, roles, access rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,17 +26,17 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-roles-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## Create roles and assign the role to an Azure Active Directory group
 
-The following steps guide you on how to create roles in Microsoft Defender Security Center. It assumes that you have already created Azure Active Directory user groups.
+The following steps guide you on how to create roles in Microsoft 365 Defender. It assumes that you have already created Azure Active Directory user groups.
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with a Security administrator or Global administrator role assigned.
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with a Security administrator or Global administrator role assigned.
 
-2. In the navigation pane, select **Settings > Roles**.
+2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 
 3. Select **Add item**.
 
@@ -75,10 +75,10 @@ The following steps guide you on how to create roles in Microsoft Defender Secur
 
 - **Live response capabilities**
     - **Basic** commands:
-        - Start a live response session
-        - Perform read only live response commands on remote device (excluding file copy and execution
-    - **Advanced** commands:
+        - Start a live-response session
+        - Perform read-only live-response commands on remote device (excluding file copy and execution)
         - Download a file from the remote device via live response
+    - **Advanced** commands:
         - Download PE and non-PE files from the file page
         - Upload a file to the remote device
         - View a script from the files library
@@ -88,9 +88,9 @@ For more information on the available commands, see [Investigate devices using L
   
 ## Edit roles
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
 
-2. In the navigation pane, select **Settings > Roles**.
+2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 
 3. Select the role you'd like to edit.
 
@@ -102,9 +102,9 @@ For more information on the available commands, see [Investigate devices using L
 
 ## Delete roles
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com/) using account with Security administrator or Global administrator role assigned.
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
 
-2. In the navigation pane, select **Settings > Roles**.
+2. In the navigation pane, select **Settings** > **Endpoints** > **Roles** (under **Permissions**).
 
 3. Select the role you'd like to delete.
 

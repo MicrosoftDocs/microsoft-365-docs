@@ -19,7 +19,8 @@ ms.date: 04/16/2020
 ms.technology: mde
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices
+# Onboarding non-persistent virtual desktop infrastructure devices
+
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,16 +30,15 @@ ms.technology: mde
 - Virtual desktop infrastructure (VDI) devices
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configvdi-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
 ## Onboard non-persistent virtual desktop infrastructure (VDI) devices
 
-Defender for Endpoint supports non-persistent VDI session onboarding. 
-
+Defender for Endpoint supports non-persistent VDI session onboarding.
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
+- Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
 VDI devices can appear in Defender for Endpoint portal as either:
@@ -52,72 +52,52 @@ VDI devices can appear in Defender for Endpoint portal as either:
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
->[!WARNING]
-> For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding. 
-
+> [!WARNING]
+> For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding.
 
 ### For Windows 10 or Windows Server 2019
 
-1.  Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Defender Security Center](https://securitycenter.windows.com/):
+1. Open the VDI configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from the [Microsoft 365 Defender portal](https://security.microsoft.com/):
+   1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
+   2. Select Windows 10 as the operating system.
+   3. In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
+   4. Click **Download package** and save the .zip file.
 
-    1.  In the navigation pane, select **Settings** > **Onboarding**.
+2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+    1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.
+    2. If you're implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
 
-    1. Select Windows 10 as the operating system.
-
-    1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
-
-    1. Click **Download package** and save the .zip file.
-
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
-
-    1. If you are not implementing a single entry for each device, copy WindowsDefenderATPOnboardingScript.cmd.
-
-    1. If you are implementing a single entry for each device, copy both Onboard-NonPersistentMachine.ps1 and WindowsDefenderATPOnboardingScript.cmd.
-    
     > [!NOTE]
     > If you don't see the `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` folder, it might be hidden. You'll need to choose the **Show hidden files and folders** option from File Explorer.
 
-3. Open a Local Group Policy Editor window and navigate to **Computer Configuration** > **Windows Settings** > **Scripts** > **Startup**.
+3. Open a Local Group Policy Editor window and navigate to **Computer Configuration** \> **Windows Settings** \> **Scripts** \> **Startup**.
 
    > [!NOTE]
    > Domain Group Policy may also be used for onboarding non-persistent VDI devices.
 
 4. Depending on the method you'd like to implement, follow the appropriate steps:
+    - For single entry for each device:
 
-   - For single entry for each device:
-   
-     Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There is no need to specify the other file, as it will be triggered automatically.
-   
-   - For multiple entries for each device:
-   
-     Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
+         Select the **PowerShell Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to onboarding PowerShell script `Onboard-NonPersistentMachine.ps1`. There's no need to specify the other file, as it will be triggered automatically.
+
+    - For multiple entries for each device:
+
+         Select the **Scripts** tab, then click **Add** (Windows Explorer will open directly in the path where you copied the onboarding script earlier). Navigate to the onboarding bash script `WindowsDefenderATPOnboardingScript.cmd`.
 
 5. Test your solution:
-
    1. Create a pool with one device.
-      
-   1. Logon to device.
-      
-   1. Logoff from device.
-
-   1. Logon to device with another user.
-      
-   1. Depending on the method you'd like to implement, follow the appropriate steps:
-   
-      - For single entry for each device: 
-    
-        Check only one entry in Microsoft Defender Security Center.
-
-      - For multiple entries for each device: 
-       
-        Check multiple entries in Microsoft Defender Security Center.
+   2. Log on to device.
+   3. Log off from device.
+   4. Log on to device with another user.
+   5. Depending on the method you'd like to implement, follow the appropriate steps:
+      - For single entry for each device: Check only one entry in Microsoft 365 Defender portal.
+      - For multiple entries for each device: Check multiple entries in Microsoft 365 Defender portal.
 
 6. Click **Devices list** on the Navigation pane.
 
 7. Use the search function by entering the device name and select **Device** as search type.
 
-
-## For downlevel SKUs
+## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
@@ -135,26 +115,27 @@ The following steps will guide you through onboarding VDI devices and will highl
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 
-2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016). 
-
-
+2. Follow the [server onboarding process](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
-As a best practice, we recommend using offline servicing tools to patch golden/master images.<br>
+
+As a best practice, we recommend using offline servicing tools to patch golden/master images.
+
 For example, you can use the below commands to install an update while the image remains offline:
 
 ```console
-DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing" 
+DISM /Mount-image /ImageFile:"D:\Win10-1909.vhdx" /index:1 /MountDir:"C:\Temp\OfflineServicing"
 DISM /Image:"C:\Temp\OfflineServicing" /Add-Package /Packagepath:"C:\temp\patch\windows10.0-kb4541338-x64.msu"
 DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
-For more information on DISM commands and offline servicing, please refer to the articles below:
-- [Modify a Windows image using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
-- [DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Reduce the Size of the Component Store in an Offline Windows Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+For more information on DISM commands and offline servicing, refer to the articles below:
 
-If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
+- [Modify a Windows image using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
+- [Reduce the Size of the Component Store in an Offline Windows Image](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+
+If offline servicing isn't a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
 1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Defender for Endpoint sensor. For more information, see [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script).
 
@@ -172,13 +153,14 @@ If offline servicing is not a viable option for your non-persistent VDI environm
     PsExec.exe -s cmd.exe
     cd "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Cyber"
     del *.* /f /s /q
-    REG DELETE “HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
+    REG DELETE "HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection" /v senseGuid /f
     exit
     ```
 
-5. Re-seal the golden/master image as you normally would.
+5. Reseal the golden/master image as you normally would.
 
 ## Related topics
+
 - [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)

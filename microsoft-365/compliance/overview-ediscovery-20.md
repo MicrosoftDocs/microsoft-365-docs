@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 # Overview of Microsoft 365 Advanced eDiscovery
 
-The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
+The Advanced eDiscovery solution in Microsoft 365 builds on the existing Microsoft eDiscovery and analytics capabilities. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, analyze, review, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
 ## Advanced eDiscovery capabilities
 
@@ -32,7 +32,7 @@ Advanced eDiscovery can help your organization respond to legal matters or inter
 
 The following sections describe how these Advanced eDiscovery capabilities can help your organization.
 
-![Advanced eDiscovery capabilities](../media/advanced-ediscovery-capabilities.png)
+![Advanced eDiscovery capabilities.](../media/advanced-ediscovery-capabilities.png)
 
 ### Discover and collect data in-place
 
@@ -66,7 +66,7 @@ Additional machine learning capabilities can further refine and identify relevan
 
 The built-in workflow of Advanced eDiscovery in Microsoft 365 aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM).
 
-![The Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
+![The Electronic Discovery Reference Model (EDRM).](../media/EDRMv1.png)
 
 (Image source courtesy of edrm.net. The source image was made available under Creative Commons Attribution 3.0 Unported License.)
 
@@ -100,15 +100,23 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
   - Microsoft 365 Education A5 or Office 365 Education A5 subscription
 
-   If you don't have an existing Microsoft 365 E5 plan and want to try Advanced eDiscovery, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
+   If you don't have an existing Microsoft 365 E5 plan and want to try Advanced eDiscovery, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
 
 - **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
 
-  - Microsoft 365: Users must be assigned a Microsoft 365 E5 license, an E5 Compliance add-on license, or an E5 eDiscovery and Audit add-on license. Microsoft 365 Education users must be assigned an A5 license.
+  - Microsoft 365: Users must be assigned one of the following:
+  
+    - Microsoft 365 E5 license, an E5 Compliance add-on license, or an E5 eDiscovery and Audit add-on
+
+    - Microsoft 365 Frontline users must be assigned an F5 Compliance or F5 Security & Compliance add-on
+
+    - Microsoft 365 Education users must be assigned an A5 license
 
   - Office 365: Users must be assigned an Office 365 E5 or Office 365 Education A5 license.
 
-   For information about how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
+For information about licensing, download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+
+For information about how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 > [!NOTE]
 > Users only need an E5 or A5 license (or the appropriate add-on license) to be added as custodians to an Advanced eDiscovery case. IT admins, eDiscovery managers, lawyers, paralegals, or investigators who use Advanced eDiscovery to manage cases and review case data don't need an E5, A5, or add-on license.
@@ -117,7 +125,7 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 There are two quick and easy steps to get started with Advanced eDiscovery.
 
-![Workflow getting started with Advanced eDiscovery](../media/get-started-AeD.png)
+![Workflow getting started with Advanced eDiscovery.](../media/get-started-AeD.png)
 
 |Steps  |Description  |
 |:---------|:---------|
@@ -129,10 +137,14 @@ There are two quick and easy steps to get started with Advanced eDiscovery.
 
 Here's an Advanced eDiscovery architecture diagram that shows the end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [EDRM](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
 
-[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Model poster: Advanced eDiscovery Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Download as a PDF file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
 [Download as a Visio file](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+
+## Training
+
+Training your IT administrators, eDiscovery managers, and compliance investigation teams in the basics for Advanced eDiscovery can help your organization get started more quickly using Microsoft 365 eDiscovery tools. Microsoft 365 provides the following resource to help these users in your organization getting started with eDiscovery: [Describe the eDiscovery and audit capabilities of Microsoft 365](/learn/modules/describe-ediscovery-capabilities-of-microsoft-365).

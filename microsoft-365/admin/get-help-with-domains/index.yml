@@ -13,6 +13,7 @@ metadata:
   ms.date: 03/25/2021 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
+  ms.collection: Adm_TOC
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -49,7 +50,7 @@ landingContent:
           - text: Pilot Microsoft 365 from my custom domain
             url: https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain   
    # Card
-  - title: Host-specific instructions
+  - title: Nameserver & DNS Records
     linkLists:
       - linkListType: how-to-guide
         links:

@@ -29,6 +29,7 @@ ms.technology: m365d
 
 **Applies to:**
 - Microsoft 365 Defender
+- Microsoft Defender for Endpoint
 
 
 

@@ -16,6 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
+recommendations: false
 description: "Learn to choose the domain to use when creating Microsoft 365 groups by configuring email address policies using PowerShell."
 ---
 
@@ -113,10 +114,10 @@ There are a few more things to know:
     
 - A maximum limit of 100 email address policies can be configured for an organization.
     
-## Related articles
+## Related content
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (article)
 
-[Create your collaboration governance plan](collaboration-governance-first.md)
+[Create your collaboration governance plan](collaboration-governance-first.md) (article)
 
-[Create an Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md)
+[Create an Microsoft 365 group in the admin center](../admin/create-groups/create-groups.md) (article)

@@ -19,13 +19,13 @@ To make the most of Viva Topics, you want to have as much content as possible in
 
 To plan for Viva Topics, you need to:
 
-![Migrate, connect, modernize, secure, and identify steps for onboarding to knowledge management](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migrate, connect, modernize, secure, and identify steps for onboarding to Viva Topics.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrate content to SharePoint](#1-migrate-content-to-microsoft-365)
     - Topic indexing only includes content on SharePoint sites.
       - Where possible, migrate valuable content into SharePoint Online from external sources.
       - Prioritize content sources with high potential for tacit knowledge.
-      - Highlight the benefits of knowledge management to encourage users to move content from OneDrive to SharePoint sites.
+      - Highlight the benefits of Viva Topics to encourage users to move content from OneDrive to SharePoint sites.
 
 2. [Connect information to Microsoft Graph](#2-connect-information-to-microsoft-graph)
     - In the future, external content can be brought into the knowledge graph and become available.
@@ -100,7 +100,7 @@ Good permissions management is critical here. And good permissions management is
 
 In addition to permissions, you can also control the scope of what is discoverable through topics. You are always in control of what is indexed.
 
-Administrators can configure indexing in the Microsoft 365 Admin Center. When you set up [Knowledge Management](set-up-topic-experiences.md), you can:
+Administrators can configure indexing in the Microsoft 365 Admin Center. When you set up [Viva Topics](set-up-topic-experiences.md), you can:
 
 - Allow discovery across all SharePoint sites or specify sites to include or exclude as topic sources.
 - Where you have sensitive terms, you can also exclude topics by name. For example, if you have the name of a sensitive project, where you don't want a highlight or card to appear, irrespective of the user's permissions, you can exclude that project name.

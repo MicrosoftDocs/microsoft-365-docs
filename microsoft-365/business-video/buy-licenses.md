@@ -2,9 +2,10 @@
 title: "Buy new licenses"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +16,15 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- commerce_purchase
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: "Learn how to buy new Microsoft 365 for business licenses."
+ms.date: 09/16/2021
 ---
 
 # Buy Microsoft 365 licenses
@@ -29,9 +33,12 @@ description: "Learn how to buy new Microsoft 365 for business licenses."
 
 As you add new users, you will need to purchase more Microsoft 365 licenses for those users.
 
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
+
 ## Try it!
 
-1. In the Microsoft 365 admin center, choose **Billing**, **Your Products**, then select your subscription.
+1. In the Microsoft 365 admin center, choose **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your Products**</a>, and then select your subscription.
 1. Choose **Buy licenses**.
 1. Enter the number of licenses you want to buy.
 1. Select **Save**.

@@ -23,6 +23,8 @@ description: "Learn how to move your files to OneDrive."
 ---
 # Move files to OneDrive
 
+## Watch: Move your files to OneDrive for Business
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
 After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your existing work files to OneDrive for Business. OneDrive is a good place to store personal work files or sensitive business files that you want to control access to.

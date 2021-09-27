@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
+ms.custom: api
 ---
 
 # Raw Data Streaming API
@@ -25,24 +26,23 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
-## Stream Advanced Hunting events to Event Hubs and/or Azure storage account.
+## Stream Advanced Hunting events to Event Hubs and/or Azure storage account
 
-Defender for Endpoint supports streaming all the events available through [Advanced Hunting](advanced-hunting-overview.md) to an [Event Hubs](https://docs.microsoft.com/azure/event-hubs/) and/or [Azure storage account](https://docs.microsoft.com/azure/event-hubs/).
+Microsoft Defender for Endpoint supports streaming events available through [Advanced Hunting](../defender/advanced-hunting-overview.md) to an [Event Hubs](/azure/event-hubs/) and/or [Azure storage account](/azure/storage/common/storage-account-overview).
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
-
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r4ga]
 
 ## In this section
 
-Topic | Description
+Topic|Description
 :---|:---
-[Stream Microsoft Defender for Endpoint events to Azure Event Hubs](raw-data-export-event-hub.md)| Learn about enabling the streaming API in your tenant and configure Defender for Endpoint to stream [Advanced Hunting](advanced-hunting-overview.md) to Event Hubs.
-[Stream Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)| Learn about enabling the streaming API in your tenant and configure Defender for Endpoint to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
-
+[Stream Microsoft Defender for Endpoint events to Azure Event Hubs](raw-data-export-event-hub.md)|Learn about enabling the streaming API in your tenant and configure Defender for Endpoint to stream [Advanced Hunting](advanced-hunting-overview.md) to Event Hubs.
+[Stream Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)|Learn about enabling the streaming API in your tenant and configure Defender for Endpoint to stream [Advanced Hunting](advanced-hunting-overview.md) to your Azure storage account.
 
 ## Related topics
+
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
-- [Azure Event Hubs documentation](https://docs.microsoft.com/azure/event-hubs/)
-- [Azure Storage Account documentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs documentation](/azure/event-hubs/)
+- [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)

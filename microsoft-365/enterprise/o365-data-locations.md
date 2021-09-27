@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
@@ -14,6 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Determine where your Microsoft 365 customer data is stored worldwide"
 ---
@@ -24,7 +25,7 @@ The tables below shows where customer data is stored at-rest for Microsoft 365 s
 
 If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information. 
 
-Customers should view tenant specific data location information in your Microsoft 365 Admin Center in **Settings | Org settings | Organization Profile | Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition. 
+Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition. 
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
@@ -81,7 +82,7 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 ### What services support Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive and SharePoint Online. Microsoft is investigating Multi-Geo for other Microsoft 365 services.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
 ### What are the exceptions for Intune data locations?
 
@@ -808,7 +809,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Workplace Analytics | United States |
 </p></details>
 
-## Bosnia
+## Bosnia and Herzegovina
 <details><summary>Click to expand</summary><p>
 
 | Service | Location |

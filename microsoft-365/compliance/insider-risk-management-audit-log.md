@@ -18,7 +18,7 @@ ms.collection: m365-security-compliance
 
 The insider risk management audit log enables you to stay informed on the actions that were taken on insider risk management features. This log allows independent review of the actions taken by users assigned to one or more insider risk management role groups. The insider risk management audit log is automatically enabled in your organization and cannot be disabled.
 
-![Insider risk management audit log](../media/insider-risk-audit-log.png)
+![Insider risk management audit log.](../media/insider-risk-audit-log.png)
 
 The audit log is automatically and immediately updated whenever monitored activities occur and the log retains information about the activity for 180 days (about six months). After 180 days, the data for the activity is permanently deleted from the log.
 
@@ -33,8 +33,8 @@ Areas included in activity monitoring include:
 
 To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
 
->[!NOTE]
->The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
+> [!NOTE]
+> The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
 
 ## View activity in the insider risk audit log
 

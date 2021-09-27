@@ -35,7 +35,7 @@ The Security & Compliance Center lets you grant permissions to people who perfor
 
 Permissions in the Security & Compliance Center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange, granting permissions in the Security & Compliance Center will be very similar. It's important to remember, however, that Exchange role groups and Security & Compliance Center role groups don't share membership or permissions. While both have an Organization Management role group, they aren't the same. The permissions they grant, and the members of the role groups, are different. There's a list of Security & Compliance Center role groups below.
 
-![Permissions page in the Security & Compliance Center](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
+![Permissions page in the Security & Compliance Center.](../../media/992c20ca-e82e-497c-9c8d-6fab212deb80.png)
 
 ## Relationship of members, roles, and role groups
 
@@ -45,9 +45,9 @@ A **role group** is a set of roles that lets people do their jobs across the Sec
 
 The Security & Compliance Center includes default role groups for the most common tasks and functions that you'll need to assign people to. We recommend simply adding individual users as **members** to the default role groups.
 
-![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
+![Diagram showing relationship of role groups to roles and members.](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## Permissions needed to use features in the Security & Compliance Center
+## Role groups in the Security & Compliance Center
 
 The following table lists the default role groups that are available in the Security & Compliance Center, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a compliance task, add them to the appropriate Security & Compliance Center role group.
 
@@ -58,7 +58,7 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 > [!NOTE]
 > To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
 
-<br><br>
+<br>
 
 ****
 
@@ -90,9 +90,9 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**Quarantine Administrator**|Members can access all Quarantine actions. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)|Quarantine|
 |**Records Management**|Members can configure all aspects of records management, including retention labels and disposition reviews.|Disposition Management <p> RecordManagement <p> Retention Management|
 |**Reviewer**|Members can access review sets in [Advanced eDiscovery](../../compliance/overview-ediscovery-20.md) cases. Members of this role group can see and open the list of cases on the **eDiscovery > Advanced** page in the Microsoft 365 compliance center that they're members of. After the user accesses an Advanced eDiscovery case, they can select **Review sets** to access case data. This role doesn't allow the user to preview the results of a collection search that's associated with the case or do other search or case management tasks. Members of this role group can only access the data in a review set.|Review|
-|**Security Administrator**|Members have access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Administrator role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Administrator role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services. <p> This role group includes all of the read-only permissions of the Security reader role, plus a number of additional administrative permissions for the same services: Azure Information Protection, Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center.|Audit Logs <p> Device Management <p> DLP Compliance Management <p> IB Compliance Management <p> Manage Alerts <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
+|**Security Administrator**|Members have access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Administrator role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Administrator role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services. <p> This role group includes all of the read-only permissions of the Security reader role, plus a number of additional administrative permissions for the same services: Azure Information Protection, Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center.|Audit Logs <p> Device Management <p> DLP Compliance Management <p> IB Compliance Management <p> Manage Alerts <p> Quarantine <p> Security Administrator <p> Sensitivity Label Administrator <p> Tag Contributor <p> Tag Manager <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Security Operator**|Members can manage security alerts, and also view reports and settings of security features.|Compliance Search <p> Manage Alerts <p> Security Reader <p> Tag Contributor <p> Tag Reader <p> View-Only Audit Logs <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
-|**Security Reader**|Members have read-only access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Reader role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Reader role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services.|Security Reader <p> Sensitivity Label Reader <p> Tag Reader <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
+|**Security Reader**|Members have read-only access to a number of security features of Identity Protection Center, Privileged Identity Management, Monitor Microsoft 365 Service Health, and Security & Compliance Center. <p> By default, this role group may not appear to have any members. However, the Security Reader role from Azure Active Directory is assigned to this role group. Therefore, this role group inherits the capabilities and membership of the Security Reader role from Azure Active Directory. <p> To manage permissions centrally, add and remove group members in the Azure Active Directory admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). If you edit this role group in the Security & Compliance Center (membership or roles), those changes apply only to the Security & Compliance Center and not to any other services.|Security Reader <p> Sensitivity Label Reader <p> Tag Reader <p> View-Only Device Management <p> View-Only DLP Compliance Management <p> View-Only IB Compliance Management <p> View-Only Manage Alerts|
 |**Service Assurance User**|Members can access the Service assurance section in the Security & Compliance Center. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Microsoft 365. It also provides independent third-party audit reports on Microsoft 365. For more information, see [Service assurance in the Security & Compliance Center](../../compliance/service-assurance.md).|Service Assurance View|
 |**Supervisory Review**|Members can create and manage the policies that define which communications are subject to review in an organization. For more information, see [Configure communication compliance policies for your organization](../../compliance/communication-compliance-configure.md).|Supervisory Review Administrator|
 |
@@ -106,8 +106,6 @@ The following table lists the available roles and the role groups that they're a
 
 Note that the following roles aren't assigned to the Organization Management role group by default:
 
-- Attack Simulator Admin
-- Attack Simulator Payload Author
 - Communication
 - Communication Compliance Admin
 - Communication Compliance Analysis
@@ -136,14 +134,12 @@ Note that the following roles aren't assigned to the Organization Management rol
 - RMS Decrypt
 - Supervisory Review Administrator
 
-<br><br>
+<br>
 
 ****
 
 |Role|Description|Default role group assignments|
 |---|---|---|
-|**Attack Simulator Admin**|Used to create and manage all aspects of attack simulation campaigns.||
-|**Attack Simulator Payload Author**|Used to create and manage attack payloads that can be deployed by attack simulator administrator.||
 |**Audit Logs**|Turn on and configure auditing for the organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <p> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Communication Compliance <p> Communication Compliance Investigators <p> Compliance Administrator <p>eDiscovery Manager <p> Insider Risk Management <p> Insider Risk Management Admins <p> Insider Risk Management Analysts <p> Insider Risk Management Investigators <p> Organization Management|
 |**Communication**|Manage all communications with the custodians identified in an Advanced eDiscovery case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgment of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|eDiscovery Manager|

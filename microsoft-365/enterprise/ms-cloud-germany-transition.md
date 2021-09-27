@@ -3,7 +3,6 @@ title: "Migration from Microsoft Cloud Deutschland to Office 365 services in the
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,6 +16,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand the migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
@@ -26,7 +26,7 @@ description: "Summary: Understand the migration from Microsoft Cloud Germany (Mi
 > [!NOTE]
 > This article only applies to eligible Microsoft Cloud Deutschland customers.
 
-In August 2018, Microsoft announced our intention to deliver the complete Microsoft cloud – Azure, Office 365, Dynamics 365, and Power Platform – from new cloud regions in Germany to better enable the digital transformation of our customers. In August 2019, we announced we are now in the process of opening of the new cloud regions in Germany. We have since announced the availability of Azure, Office 365, Dynamics 365, and Power Platform.
+In August 2018, Microsoft announced our intention to deliver the complete Microsoft cloud — Azure, Office 365, Dynamics 365, and Power Platform — from new cloud regions in Germany to better enable the digital transformation of our customers. In August 2019, we announced we are now in the process of opening of the new cloud regions in Germany. We have since announced the availability of Azure, Office 365, Dynamics 365, and Power Platform.
 
 The new regions are designed to address the evolving needs of German customers with greater flexibly, the latest intelligent cloud services, and full connectivity to our Microsoft 365 services cloud network as well as customer data residency within Germany.
 
@@ -45,7 +45,6 @@ The following services will be migrated as part of the Microsoft-driven approach
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive for Business
-
 - Skype for Business Online\*\*
 - Office 365 Groups
 - Dynamics 365 / Power Platform\*\*\*
@@ -60,9 +59,9 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 This figure shows the ten phases of migration to the new German datacenters.
 
-![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="The ten phases of migration to the new Germany datacenters." source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-These phases start when you [opt-in for migration](./ms-cloud-germany-migration-opt-in.md). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
+These phases start when you [opt-in for migration](./ms-cloud-germany-migration-opt-in.md). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
 Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
 
@@ -93,9 +92,12 @@ After the final cutover of Azure AD to the worldwide service, it is expected all
 
 ## Moving to the new German datacenter regions
 
-Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform services. The first step is to [opt-in to a Microsoft-led migration](./ms-cloud-germany-migration-opt-in.md) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the Microsoft 365 admin center when this has happened. However, if you prefer to start the process now, you can [opt-in](./ms-cloud-germany-migration-opt-in.md) directly in Microsoft 365 admin center today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
+Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform services. The first step is to [opt-in to a Microsoft-led migration](./ms-cloud-germany-migration-opt-in.md) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> when this has happened. However, if you prefer to start the process now, you can [opt-in](./ms-cloud-germany-migration-opt-in.md) directly in <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
 
 As a result of the migration, core customer data and subscriptions are moved to the new German datacenter regions.
+
+> [!NOTE]
+> This article includes guidance for the migration of Office 365 services only. If you are running additional Azure workloads in Microsoft Cloud Deutschland, see the [Migration guidance for Azure Germany](/azure/germany/germany-migration-main).
 
 ## How to prepare for migration to Office 365 services in the new German datacenter regions
 
@@ -114,7 +116,9 @@ Review the following Frequently Asked Questions section.
 
 ### Is migration required?
 
-Microsoft offers Office 365 tenant migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions at no additional charge. While we do strongly recommend that you opt-in to migrate to the new German datacenter regions, we will continue to provide the necessary security updates to the Microsoft Cloud Deutschland region.
+Microsoft offered Office 365 tenant migration from Microsoft Cloud Deutschland to Office 365 services in the new German datacenter regions at no additional charge. All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated. No further customers will be migrated through the automated process. Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
+
+We will continue to provide the necessary security updates to the Microsoft Cloud Deutschland region until service closure. 
 
 Office 365 services in the new German datacenter regions:
 
@@ -180,7 +184,7 @@ There are currently 39 services available as part of Office 365 services in the 
 30. Microsoft Forms
 31. Power Automate for Office 365
 32. Power Virtual Agents for Office 365
-33. PowerApps for Office 365
+33. Power Apps for Office 365
 34. Microsoft Bookings
 35. To-Do
 36. Whiteboard
@@ -194,15 +198,11 @@ There are currently 39 services available as part of Office 365 services in the 
 
 If you are an Azure customer only, you can begin [migrating](/azure/germany/germany-migration-main) your Azure resources to another region today. 
 
-If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process to ensure successful migration AzureAD before you begin the self-directed Azure migration. You must complete the Azure migration before the service closure in order to maintain your Azure workloads with your AzureAD, and Office 365 organization.
+If you have Azure with Office 365, Dynamics 365, or Power BI, you must follow the migration process for Office 365 services first to ensure the successful migration of Azure AD before you could begin the self-directed Azure migration. You must complete the Azure migration before finalizing your tenant migration to maintain your Azure workloads with your Azure AD and Office 365 organization. Refer to [Migration phases actions and impacts for the migration from Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md) for additional details.
 
-**Office 365**
+**Office 365, Dynamics 365, and Power BI**
 
-[Opt-in](./ms-cloud-germany-migration-opt-in.md) to the Microsoft-driven migration today. When we are ready to start your migration, we will inform you through the Message center in the Microsoft 365 admin center.
-
-**Dynamics 365 and Power BI**
-
-Opt-in to the Microsoft-driven migration for [Dynamics 365 Customer Engagement](/dynamics365/get-started/migrate-data-german-region) and [Power BI](/power-bi/admin/service-admin-migrate-data-germany) today. When we are ready to start your migration, we will inform you through the Message center in the Microsoft 365 admin center.
+All eligible Microsoft Cloud Germany (Microsoft Cloud Deutschland) customers have now been migrated. No further customers will be migrated through the automated process. Any remaining Microsoft Cloud Germany subscriptions and tenants will be deactivated and deprovisioned in September 2021 as part of service closure activities.
 
 ### Will the price change for the Office 365 services that I use?
 
@@ -296,7 +296,7 @@ The migration is designed to have minimal impact to end users/customers.
 
 ### Which customers are affected by the Azure Active Directory migration? 
 
-All customers of Office365 depend on Azure Active Directory to authenticate and store critical service components needed for operation of Microsoft hosted services. 
+All customers of Office 365 depend on Azure Active Directory to authenticate and store critical service components needed for operation of Microsoft hosted services. 
 
 
 ### What are the impacts of the Azure Active Directory Migration?

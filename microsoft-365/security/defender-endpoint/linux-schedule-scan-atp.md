@@ -20,7 +20,7 @@ ms.technology: mde
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
-To run a scan for Linux, see [Supported Commands](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
+To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
 
@@ -30,82 +30,106 @@ Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to b
 > To get a list of all the time zones, run the following command:
 > `timedatectl list-timezones`<br>
 > Examples for timezones:
+>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
 ## To set the Cron job
+
 Use the following commands:
 
-**To backup crontab entries**
+### Backup crontab entries
 
-`sudo crontab -l > /var/tmp/cron_backup_200919.dat`
+```bash
+sudo crontab -l > /var/tmp/cron_backup_200919.dat
+```
 
 > [!NOTE]
 > Where 200919 == YRMMDD
 
 > [!TIP]
-> Do this before you edit or remove. <br>
+> Do this before you edit or remove.
 
-To edit the crontab, and add a new job as a root user: <br>
-`sudo crontab -e`
+To edit the crontab, and add a new job as a root user:
+
+```bash
+sudo crontab -e
+```
 
 > [!NOTE]
 > The default editor is VIM.
 
 You might see:
 
+```outbou
 0 * * * * /etc/opt/microsoft/mdatp/logrorate.sh
+```
 
-Press “Insert”
+Press "Insert"
 
 Add the following entries:
 
+```bash
 CRON_TZ=America/Los_Angeles
 
 0 2 * * sat /bin/mdatp scan quick > ~/mdatp_cron_job.log
+```
 
 > [!NOTE]
->In this example, we have  set it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC –8).
+> In this example, we have  set it to 00 minutes, 2 a.m. (hour in 24 hour format), any day of the month, any month, on Saturdays. Meaning it will run Saturdays at 2:00 a.m. Pacific (UTC -8).
 
-Press “Esc”
+Press "Esc"
 
-Type “:wq” without the double quotes.
+Type "`:wq`" without the double quotes.
 
 > [!NOTE]
 > w == write, q == quit
 
 To view your cron jobs, type `sudo crontab -l`
 
-:::image type="content" source="/microsoft-365/security/defender-endpoint/images/linux-mdatp-1" alt-text="linux mdatp":::
+:::image type="content" source="../../media/linux-mdatp-1.png" alt-text="linux mdatp.":::
 
-**To inspect cron job runs**
+#### To inspect cron job runs
 
-`sudo grep mdatp /var/log/cron`
+```bash
+sudo grep mdatp /var/log/cron
+```
 
-**To inspect the mdatp_cron_job.log**
+#### To inspect the mdatp_cron_job.log*
 
-`sudo nano mdatp_cron_job.log`
+```bash
+sudo nano mdatp_cron_job.log
+```
 
 ## For those who use Ansible, Chef, or Puppet
 
 Use the following commands:
+
 ### To set cron jobs in Ansible
 
-`cron – Manage cron.d and crontab entries`
+```bash
+cron - Manage cron.d and crontab entries
 
 See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.
 
 ### To set crontabs in Chef
-`cron resource`
 
-See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.
+```bash
+cron resource
+```bash
+
+```
+See <https://docs.chef.io/resources/cron/> for more information.
 
 ### To set cron jobs in Puppet
-Resource Type: cron
 
-See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.
+```bash
+Resource Type: cron
+```
+
+See <https://puppet.com/docs/puppet/5.5/types/cron.html> for more information.
 
 Automating with Puppet: Cron jobs and scheduled tasks
 
@@ -113,56 +137,74 @@ See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](h
 
 ## Additional information
 
-**To get help with crontab**
+### To get help with crontab
 
-`man crontab`
+```bash
+man crontab
+```
 
-**To get a list of crontab file of the current user**
+### To get a list of crontab file of the current user
 
-`crontab -l`
+```bash
+crontab -l
+```
 
-**To get a list of crontab file of another user**
+### To get a list of crontab file of another user
 
-`crontab -u username -l`
+```bash
+crontab -u username -l
+```
 
-**To backup crontab entries**
+### To backup crontab entries
 
-`crontab -l > /var/tmp/cron_backup.dat`
+```bash
+crontab -l > /var/tmp/cron_backup.dat
+```
 
 > [!TIP]
-> Do this before you edit or remove. <br>
+> Do this before you edit or remove.
 
-**To restore crontab entries**
+### To restore crontab entries
 
-`crontab /var/tmp/cron_backup.dat`
+```bash
+crontab /var/tmp/cron_backup.dat
+```
 
-**To edit the crontab and add a new job as a root user**
+### To edit the crontab and add a new job as a root user
 
-`sudo crontab -e`
+```bash
+sudo crontab -e
+```
 
-**To edit the crontab and add a new job**
+### To edit the crontab and add a new job
 
-`crontab -e`
+```bash
+crontab -e
+```
 
-**To edit other user’s crontab entries**
+### To edit other user's crontab entries
 
-`crontab -u username -e`
+```bash
+crontab -u username -e
+```
 
-**To remove all crontab entries**
+### To remove all crontab entries
 
-`crontab -r`
+```bash
+crontab -r
+```
 
-**To remove other user’s crontab entries**
+### To remove other user's crontab entries
 
-`crontab -u username -r`
+```bash
+crontab -u username -r
+```
 
-**Explanation**
+### Explanation
 
-+—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
-| +————- hour (values: 0 – 23) (special characters: , – * /) <br>
-| | +———- day of month (values: 1 – 31) (special characters: , – * / L W C)  <br>
-| | | +——- month (values: 1 – 12) (special characters: ,- * / )  <br>
-| | | | +—- day of week (values: 0 – 6) (Sunday=0 or 7) (special characters: , – * / L W C) <br>
++—————- minute (values: 0 - 59) (special characters: , - * /)  <br>
+| +————- hour (values: 0 - 23) (special characters: , - * /) <br>
+| | +———- day of month (values: 1 - 31) (special characters: , - * / L W C)  <br>
+| | | +——- month (values: 1 - 12) (special characters: ,- * / )  <br>
+| | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , - * / L W C) <br>
 | | | | |*****command to be executed
-
-

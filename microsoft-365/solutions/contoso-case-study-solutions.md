@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
@@ -27,7 +27,7 @@ First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md),
 
 Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
-- [COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md)
+- [COVID-19 response and infrastructure for hybrid work](contoso-remote-onsite-work.md)
 
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 

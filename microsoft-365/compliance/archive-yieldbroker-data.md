@@ -24,7 +24,7 @@ After Yieldbroker is stored in user mailboxes, you can apply Microsoft 365 compl
 
 The following overview explains the process of using a connector to archive the Yieldbroker data in Microsoft 365.
 
-![Archiving workflow for Yieldbroker data](../media/YieldbrokerConnectorWorkflow.png)
+![Archiving workflow for Yieldbroker data.](../media/YieldbrokerConnectorWorkflow.png)
 
 1. Your organization works with the Yieldbroker to set up and configure a Yieldbroker site.
 

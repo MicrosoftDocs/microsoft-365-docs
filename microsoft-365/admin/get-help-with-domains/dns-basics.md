@@ -12,10 +12,12 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -23,7 +25,7 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: "Learn about domains and their associated DNS records to help you manage your domains."
+description: "The domain name system maps computer hostnames to IP addresses and understanding DNS and domain registrar basics can help you manage domains."
 ---
 
 # DNS basics
@@ -33,6 +35,8 @@ description: "Learn about domains and their associated DNS records to help you m
 ::: moniker range="o365-worldwide"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -41,6 +45,8 @@ Domain names, like contoso.com, are managed by using a worldwide system of domai
 ::: moniker range="o365-germany"
 
 Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
+
+## Watch: Domains & DNS: An overview
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -183,13 +189,19 @@ You can use your domain name in Microsoft 365 with your email, public website, a
 
 There are a number of DNS records required for Microsoft 365 to work with your domain. In addition to setting up your domain's MX record so email will be sent to Microsoft 365, there are records to help with tasks like making sure Outlook can automatically connect to the right Exchange server, setting up instant messaging, and helping to prevent spam email.
   
-You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
+You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Microsoft 365 admin center</a>. 
   
 Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Microsoft 365, what their function is, and example values. Check out [External Domain Name System records for Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
-## How can I learn more?
+## Next steps
 
 Check out one of the following: 
   
 - Not sure where your domain is registered? [Get help finding your domain registrar.](find-your-domain-registrar.md)
 - Find out [why you have to complete the wizard steps](../setup/add-domain.md) before you can use your domain with Microsoft 365.
+
+## Related content
+
+[Domains FAQ](../setup/domains-faq.yml) (article)\
+[Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
+[Manage domains](index.yml) (link page)

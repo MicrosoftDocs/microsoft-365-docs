@@ -39,10 +39,10 @@ It’s difficult to know where to go if you don’t know where you are. Meeting 
 
 For step-by-step guidance to get started with Compliance Manager, see [Get started with Compliance Manager](compliance-manager-setup.md).
 
->[!IMPORTANT]
->Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
+> [!IMPORTANT]
+> Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
 >
->Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
+> Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
 >
 > - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
 > - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)
@@ -143,7 +143,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](dlp-learn-about-dlp.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
 For step-by-step guidance to configure DLP policies, [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 

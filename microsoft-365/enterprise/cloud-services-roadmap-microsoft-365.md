@@ -2,8 +2,8 @@
 title: Cloud services roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -40,7 +40,7 @@ To deploy your cloud services:
 To manage your cloud services: 
 
 - [Check your service health](view-service-health.md)
-- [Understand your support options](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- [Understand your support options](../business-video/get-help-support.md)
 - Administer your cloud services
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)

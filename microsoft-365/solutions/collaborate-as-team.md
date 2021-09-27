@@ -14,8 +14,11 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkMAC
+- admindeeplinkTEAMS
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
@@ -37,7 +40,7 @@ Sharing in Microsoft 365 is governed at its highest level by the [B2B external c
 
 Check the B2B external collaboration settings settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
@@ -45,7 +48,7 @@ To set external collaboration settings
 2. In the left navigation pane, click **Azure Active Directory**.
 3. Click **External identities**.
 4. On the **Get started** screen, in the left navigation pane, click **External collaboration settings**.
-5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
+5. Ensure that **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** is selected.
 6. If you made changes, click **Save**.
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
@@ -58,14 +61,14 @@ Teams has a master on/off switch for guest access and a variety of settings avai
 
 Check to ensure that guest access is enabled in Teams and make any adjustment to the guest settings based on your business needs. Keep in mind that these settings affect all teams.
 
-![Screenshot of Teams guest access toggle](../media/teams-guest-access-toggle-on.png)
+![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle-on.png)
 
 To set Teams guest access settings
 
 1. Log in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
 2. In the left navigation pane, click **Show all**.
 3. Under **Admin centers**, click **Teams**.
-4. In the Teams admin center, in the left navigation pane, expand **Org-wide settings** and click **Guest access**.
+4. In the Teams admin center, in the left navigation pane select **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>.
 5. Ensure that **Allow guest access in Teams** is set to **On**.
 6. Make any desired changes to the additional guest settings, and then click **Save**.
 
@@ -78,7 +81,7 @@ Once Teams guest access is turned on, you can optionally control guest access to
 
 Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for guest access in Teams to work.
 
-![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center.](../media/office-365-groups-guest-settings.png)
 
 To set Microsoft 365 Groups guest settings
 
@@ -97,12 +100,12 @@ The organization-level settings determine what settings are available for indivi
 
 If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization-level sharing settings
 
-1. In the Microsoft 365 admin center, in the left navigation pane, under **Admin centers**, click **SharePoint**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, click **SharePoint**.
 2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then click **Sharing**.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
 4. If you made changes, click **Save**.
@@ -120,7 +123,7 @@ Choose any one of the following link-types which will be selected by default whe
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
 - **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
-![Screenshot of SharePoint organization-level files and folders sharing settings](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 To set the SharePoint organization-level default link settings
@@ -147,7 +150,7 @@ We'll invite users later. Next, it's important to check the site-level sharing s
 
 Check the site-level sharing settings to make sure that they allow the type of access that you want for this team. For example, if you set the organization-level settings to **Anyone**, but you want all guests to authenticate for this team, then make sure the site-level sharing settings are set to **New and existing guests**.
 
-![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
@@ -171,6 +174,9 @@ To invite guests to a team
 3. Click **Edit guest information**.
 4. Type the guest's full name and click the check mark.
 5. Click **Add**, and then click **Close**.
+
+> [!NOTE]
+> Guests with a work or school account can only be invited by using their User Principal Name (UPN) (for example, adele@contoso.com). Inviting guests by using EAS ID, or other email formats, is not supported.
 
 ## See also
 

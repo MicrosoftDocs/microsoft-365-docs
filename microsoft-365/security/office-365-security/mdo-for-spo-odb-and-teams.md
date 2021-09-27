@@ -34,7 +34,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in [Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md) provides an additional layer of protection for files that have already been scanned at upload time by the [common virus detection engine in Microsoft 365](virus-detection-in-spo.md). Safe Attachments for SharePoint, OneDrive, and Microsoft Teams helps detect and block existing files that are identified as malicious in team sites and document libraries.
+Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in [Microsoft Defender for Office 365](whats-new-in-defender-for-office-365.md) provides an additional layer of protection for files that have already been scanned asynchronously by the [common virus detection engine in Microsoft 365](virus-detection-in-spo.md). Safe Attachments for SharePoint, OneDrive, and Microsoft Teams helps detect and block existing files that are identified as malicious in team sites and document libraries.
 
 Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
@@ -42,17 +42,17 @@ Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by
 
 When Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, the file is locked using direct integration with the file stores. The following image shows an example of a malicious file detected in a library.
 
-![Files in OneDrive for Business with one detected as malicious](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Files in OneDrive for Business with one detected as malicious.](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete the blocked file.
 
 Here's an example of what a blocked file looks like on a mobile device:
 
-![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app.](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 By default, people can download a blocked file. Here's what downloading a blocked file looks like on a mobile device:
 
-![Downloading a blocked file in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Downloading a blocked file in OneDrive for Business.](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePoint Online admins can prevent people from downloading malicious files. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
@@ -60,9 +60,9 @@ To learn more about the user experience when a file has been detected as malicio
 
 ## View information about malicious files detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-Files that are identified as malicious by Microsoft Defender for Office 365 will show up in [reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) and in [Explorer (and real-time detections)](threat-explorer.md).
+Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams will show up in [reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) and in [Explorer (and real-time detections)](threat-explorer.md).
 
-As of May 2018, when a file is identified as malicious by Microsoft Defender for Office 365, the file is also available in quarantine. For more information, see [Use the Security & Compliance Center to manage quarantined files](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files).
+When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## Keep these points in mind
 

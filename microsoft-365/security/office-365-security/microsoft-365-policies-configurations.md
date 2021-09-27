@@ -79,7 +79,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
 - **Highly regulated**: Some organizations may have a small amount of data that is highly classified, constitutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
-![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Security cone - All customers > Some customers > Specific customers. Broad application to specific application.](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
@@ -87,7 +87,7 @@ It's important to use consistent levels of protection across your data, identiti
 
 The **Identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![Thumb image for Identity and device protection for Microsoft 365 poster](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+[![Thumb image for Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
 
 Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
@@ -125,7 +125,7 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 
 Here are the components of identity and device access, including Intune and Azure AD objects, settings, and subservices.
 
-![Components of identity and device access](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+![Components of identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### Microsoft Intune
 
@@ -151,7 +151,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 ### Windows 10 and Microsoft 365 Apps for enterprise
 
-Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced security and compliance tools.
+Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
 ## Applying these capabilities across the three tiers of protection
 

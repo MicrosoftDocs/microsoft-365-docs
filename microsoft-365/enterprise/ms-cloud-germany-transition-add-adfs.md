@@ -23,7 +23,7 @@ description: "Summary: Active Directory Federation Services (AD FS) migration st
 # AD FS migration steps for the migration from Microsoft Cloud Deutschland
 
 This configuration change needs to be applied any time before phase 2 is starting.
-Once phase 2 is completed the configuration change will work and you are able to sign in via Office 365 Global endpoints such as `https://portal.office.com`. If you are implementing the configuration change before phase 2, the Office 365 Global endpoints will _not yet work_ but the new relying party trust is still part of your Active Directory Federation Services (AD FS) configuration.
+Once phase 2 is completed the configuration change will work and you are able to sign in via Office 365 Global endpoints such as `https://admin.microsoft.com`. If you are implementing the configuration change before phase 2, the Office 365 Global endpoints will _not yet work_ but the new relying party trust is still part of your Active Directory Federation Services (AD FS) configuration.
 
 Customers who use federated authentication with Active Directory Federation Services (AD FS) shouldn't make changes to issuer URIs that are used for all authentications with on-premises Active Directory Domain Services (AD DS) during migration. Changing issuer URIs will lead to authentication failures for users in the domain. Issuer URIs can be changed directly in AD FS or when a domain is converted from _managed_ to _federated_ and vice-versa. We recommend that you do not add, remove, or convert a federated domain in the Azure AD tenant that has been migrated. Issuer URIs can be changed after the migration is fully complete.
 

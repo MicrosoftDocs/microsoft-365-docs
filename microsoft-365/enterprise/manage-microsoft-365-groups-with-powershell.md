@@ -12,6 +12,7 @@ f1.keywords:
 ms.custom: 
  - Adm_O365
  - seo-marvel-apr2020
+ - admindeeplinkMAC
 search.appverid:
 - MET150
 - MOE150
@@ -34,11 +35,11 @@ This article provides the steps for doing common management tasks for Groups in 
 
 When users [create or edit a group in Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), you can show them a link to your organization's usage guidelines. For example, if you require a specific prefix or suffix to be added to a group name.
 
-Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. Once you run the AAD cmdlet, user's will see the link to your guidelines when they create or edit a group in Outlook.
+Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. Once you run the AAD cmdlet, users will see the link to your guidelines when they create or edit a group in Outlook.
 
-![Create a new group with usage guidelines link](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
+![Create a new group with usage guidelines link.](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
-![Click Group usage guidelines to see your organizations Office 365 groups guidelines](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
+![Click Group usage guidelines to see your organizations Office 365 groups guidelines.](../media/d0d54ace-f0ec-4946-b2de-50ce23f17765.png)
 
 ## Allow users to Send as the Microsoft 365 Group
 <a name="BK_LinkToGuideLines"> </a>
@@ -104,7 +105,7 @@ Check out [Using PowerShell with Exchange Online](/powershell/exchange/exchange-
 
 Once these settings are enabled, the group owner will be able to choose a classification from the drop down menu in Outlook on the Web and Outlook, and save it from the **Edit** group page.
 
-![Choose Microsoft 365 Group classification](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
+![Choose Microsoft 365 Group classification.](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
 ## Hide Microsoft 365 Groups from the global address list.
 <a name="BKMK_CreateClassification"> </a>
@@ -145,7 +146,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## Change the display name of the Microsoft 365 Group
 
-The display name specifies the name of the Microsoft 365 Group. You can see this name in your exchange admin center or Microsoft 365 admin center. You can edit the display name of the group or assign a display name to an existing Microsoft 365 Group by running the Set-UnifiedGroup command:
+The display name specifies the name of the Microsoft 365 Group. You can see this name in your exchange admin center or <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can edit the display name of the group or assign a display name to an existing Microsoft 365 Group by running the Set-UnifiedGroup command:
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"

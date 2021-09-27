@@ -43,25 +43,23 @@ Complete the following steps to create a case and add members. The user who crea
 
    The new case is created and the **Settings** tab in the new case is displayed.
 
-6. In the **Access & permissions** tile on the **Settings** tab, click **Select**, and then click **Update**.
+6. In the **Access & permissions** tile on the **Settings** tab, click **Select**.
 
-7. Click **Update**.
+7. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
 
-8. On the **Manage this case** flyout page, under **Manage members**, click **Add** to add members to the case.
+8. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
 
-9. In the list of people, select the check box next to the names of the people that you want to add to the case. As previously explained, be sure that the people you add to the case have been assigned the appropriate eDiscovery permissions.
+9. After you've selected the people to add as members of the case, click **Add**.
 
-10. After you've selected the people to add as members of the case, click **Add**.
+10. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
 
-11. In the **Manage this case** flyout page, click **Save** to save the new list of case members.
-
-12. Click the **Home** tab to go to the case home page.
+11. Click the **Home** tab to go to the case home page.
 
 ## Manage the workflow
 
 To get you started using Advanced eDiscovery, here's a basic workflow that aligns with [common eDiscovery practices](advanced-ediscovery-edrm.md). In each of these steps, we'll also highlight some extended Advanced eDiscovery functionality that you can explore.
 
-![Advanced eDiscovery workflow](../media/AeDWorkflow.png)
+![Advanced eDiscovery workflow.](../media/AeDWorkflow.png)
 
 1. **[Add custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case**. The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Additionally, you can add data sources that aren't associated with a specific user but may be relevant to the case.
 
@@ -107,7 +105,7 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
 Here's an architecture diagram that shows the Advanced eDiscovery end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
 
-[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Model poster: Advanced eDiscovery Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
