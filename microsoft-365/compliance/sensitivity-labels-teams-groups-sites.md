@@ -177,13 +177,15 @@ To learn more about how these settings work, see [Change the default link type f
 These additional settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: The available values are:
-    - **SpecificPeople**
-    - **Organization**
-    - **Anyone**
+    - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
+    - **Organization**: Sets the default sharing link for the site to the "organization" link or company shareable link
+    - **Anyone**: Sets the default sharing link for the site to an Anonymous Access or Anyone link
 
 - **DefaultShareLinkPermission**:  The available values are:
-    - **View**
-    - **Edit**
+    - **View**: Sets the default link permission for the site to "view" permissions
+    - **Edit**: Sets the default link permission for the site to "edit" permissions
+
+These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
 
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
