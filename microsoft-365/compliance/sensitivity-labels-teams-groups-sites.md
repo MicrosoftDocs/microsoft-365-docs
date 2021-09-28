@@ -168,6 +168,51 @@ Known limitations for this preview:
     - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
+## Configure settings for the default sharing link for a site by using PowerShell advanced settings
+
+In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site, and the sharing link permissions.
+
+To learn more about how these settings work, see [Change the default link type for a site](/sharepoint/change-default-sharing-link).
+
+These additional settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+- **DefaultSharingScope**: The available values are:
+    - **SpecificPeople**
+    - **Organization**
+    - **Anyone**
+
+- **DefaultShareLinkPermission**:  The available values are:
+    - **View**
+    - **Edit**
+
+PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+- To set the sharing link type to SpecificPeople:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
+    ````
+
+- To set the sharing link permissions to Edit:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings@{DefaultShareLinkPermission="Edit"}
+    ````
+
+#### PowerShell tips for specifying the advanced settings
+
+Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. To find the GUID:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+To remove either of these advanced settings from a label policy, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+
+
 ## Sensitivity label management
 
 Use the following guidance for when you create, modify, or delete sensitivity labels that are configured for sites and groups.
