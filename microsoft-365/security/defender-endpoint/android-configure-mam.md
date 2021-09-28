@@ -10,6 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: shthota
 author: shthota
+manager: dansimp
 localization_priority: Normal
 audience: ITPro
 ms.collection:
