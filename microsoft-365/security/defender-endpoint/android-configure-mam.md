@@ -41,7 +41,7 @@ To manage apps using in both the above configurations customers should use Intun
 
 ## Admin prerequisites
 
-**1. Validate if Microsoft Defender for Endpoint-Intune connector is enabled**
+**1. Validate that the Microsoft Defender for Endpoint-Intune connector is enabled**
 
   a. Go to security.microsoft.com. 
   
@@ -72,37 +72,35 @@ Block access or wipe data of a managed app based on Microsoft Defender for Endpo
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM). With this capability, you can use Microsoft Defender for Endpoint to protect managed apps.
 
-### Step 1: Create a policy
+1. Create a policy
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
 
 ![Image of policy creation](images/create-policy.png)
 
-### Step 2: Add apps
+2. Add apps
 
-**2.1 Choose how you wnat to apply this policy to apps on different devices.** Then add at least one app.
-
+a. Choose how you want to apply this policy to apps on different devices. Then add at least one app.<br>
 Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also chooseto target your policy to apps on devices of any management state.
 Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management. Companies can use app protection policies with or without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
-**2.2 Select Apps**
-
+b. Select Apps.<br>
 A managed app is an app that has app protection policies applied to it, and can be managed by Intune. Any app that has been integrated with the [Intune SDK](/mem/intune/developer/app-sdk) or wrapped by the [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) can be managed using Intune app protection Policies. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) that have been built using these tools and are available for public use.
 
 *Example: Outlook as a managed app*
 
 ![Image Outlook as managed app](images/managed-app.png)
 
-### Step 3: Set sign-in security requirements for your protection policy
+3. Set sign-in security requirements for your protection policy.
 
-Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
+  Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
 
-![Image of conditional launch](images/conditional-launch.png)
+  ![Image of conditional launch](images/conditional-launch.png)
 
-### Step 4: Assign user groups for whom the policy needs to be applied
+4. Assign user groups for whom the policy needs to be applied.
 
-Select **Included groups**. Then add the relevant groups. 
+  Select **Included groups**. Then add the relevant groups. 
 
-![Image of assigments](images/assignment.png)
+  ![Image of assigments](images/assignment.png)
 
 
 ## End user prerequisites
@@ -117,7 +115,7 @@ Select **Included groups**. Then add the relevant groups.
 
 2. Select **Continue**. A screen is presented which recommends downloading and setting up of Microsoft Defender for Endpoint Android app.
 
-3. Selects **Download**. You will be redirected to the app store (Google play). 
+3. Select **Download**. You will be redirected to the app store (Google play). 
 
 4.  Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
