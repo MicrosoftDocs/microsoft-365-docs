@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - Adm_TOC
 ms.topic: article
 search.appverid: 
   - MOE150

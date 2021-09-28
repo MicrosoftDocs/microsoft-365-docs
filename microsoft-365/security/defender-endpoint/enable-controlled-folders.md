@@ -15,6 +15,7 @@ ms.author: dansimp
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Enable controlled folder access
