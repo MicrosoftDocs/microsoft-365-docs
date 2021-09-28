@@ -37,7 +37,7 @@ Admins, have your account details ready when you call.
 ## Phone support numbers by country
 
 If your support phone number isn't listed above, use the tabs below to find the number for your country or region.
-### [A-D](#tab/athroughd)
+## [A-D](#tab/athroughd)
 
 :::row:::
    :::column::: 
@@ -87,7 +87,6 @@ Cape Verde
 Cayman Islands  
    :::column-end:::
    :::column:::
-      **Column 3** 
 Central African Republic  
 Chad  
 Chile  
@@ -238,7 +237,7 @@ Dominican Republic
 
 ### Dominican Republic  
 
-### [E-L](#tab/ethroughl)
+## [E-L](#tab/ethroughl)
 
 :::row:::
    :::column:::
@@ -444,7 +443,7 @@ Luxembourg
 
 ### Luxembourg  
 
-### [M-R](#tab/mthroughr)
+## [M-R](#tab/mthroughr)
 
 :::row:::
    :::column:::
@@ -617,7 +616,7 @@ Rwanda
 
 ### Rwanda  
 
-### [S-Z](#tab/sthroughz)
+## [S-Z](#tab/sthroughz)
 
 :::row:::
    :::column:::
