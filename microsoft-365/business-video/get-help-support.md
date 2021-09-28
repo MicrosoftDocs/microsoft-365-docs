@@ -27,6 +27,7 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 # Get support
 
 ::: moniker range="o365-worldwide"
+
 ## Watch: Get help or support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
@@ -71,6 +72,12 @@ Admins, have your account details ready when you call.
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## Small business support with Business Assist
+
+Get the most out of your subscription with expert advice from small business specialists.
+
+Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. To learn more, see [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -235,7 +242,6 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end
-
 
 ## Related content
 

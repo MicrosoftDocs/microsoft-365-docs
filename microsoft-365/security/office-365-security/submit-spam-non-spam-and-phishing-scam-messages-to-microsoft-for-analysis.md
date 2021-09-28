@@ -2,8 +2,8 @@
 title: Manually submit messages to Microsoft for analysis
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro
