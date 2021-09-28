@@ -55,7 +55,7 @@ To manage apps using in both the above configurations customers should use Intun
 
 ![Image of Defender for Endpoint-Intune connector in Intune](images/validate-intune-connector.png)
 
-**2. Enable Microsoft Defender for Endpoint**(Mobile) Connector for App Protection Policy (APP)
+**2. Enable Microsoft Defender for Endpoint** (Mobile) Connector for App Protection Policy (APP)
   Configure the connector on Intune Microsoft Endpoint Manager for App protection policies:
   
   a. Go to **Tenant Administration > Connectors and Tokens > Microsoft Defender for Endpoint**.
