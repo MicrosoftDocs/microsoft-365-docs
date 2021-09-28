@@ -81,10 +81,15 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 
 11. Review and choose **Submit**.
 
-You can delete or edit the sensitive information type pattern by selecting it which surfaces the edit and delete controls.
+### Edit or delete the sensitive information type pattern
 
-> [!IMPORTANT]
-> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
+1. Open **Compliance center** > **Data classification** > **Exact data matches**.
+
+2. Choose **EDM sensitive info types**.
+
+3. Choose the EDM SIT you want to edit.
+
+4. Choose **Edit EDM sensitive info type** or **Delete EDM sensitive info type** from the flyout.
 
 ## Create a rule package manually
 

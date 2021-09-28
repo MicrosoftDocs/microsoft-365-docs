@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
 
-## Editing the schema for EDM-based classification
+## Editing the schema for EDM-based classification manually
 
 If you want to make changes to your EDM schema, for example the **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
 
@@ -54,7 +54,7 @@ If you want to make changes to your EDM schema, for example the **edm.xml** file
       > [!NOTE]
       > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.-->
 
-## Removing the schema for EDM-based classification
+## Removing the schema for EDM-based classification manually
 
 If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
@@ -78,3 +78,16 @@ If you want to remove the schema you're using for EDM-based classification, foll
 
       > [!TIP]
       >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+
+### Edit or delete the EDM schema with the wizard
+
+1. Open **Compliance center** > **Data classification** > **Exact data matches**.
+
+2. Choose **EDM schemas**.
+
+3. Choose the EDM SIT you want to edit.
+
+4. Choose **Edit EDM schema** or **Delete EDM schema** from the flyout.
+
+> [!IMPORTANT]
+> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
