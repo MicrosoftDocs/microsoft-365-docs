@@ -22,8 +22,6 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 # Support contacts by country
 
-## Phone support numbers by country
-
 Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
 Technical support is provided in English 24 hours a day, 7 days a week.\
 Admins, have your account details ready when you call.
@@ -36,504 +34,506 @@ Admins, have your account details ready when you call.
 - **In Canada, call 1 800 865 9408.**
 - **In the United Kingdom, call 0800 032 6417.**
 
+## Phone support numbers by country
+
 If your support phone number isn't listed above, use the tabs below to find the number for your country or region.
-## [A-D](#tab/athroughd)
+### [A-D](#tab/athroughd)
 
-## Afghanistan  
+### Afghanistan  
 
-## Aland Islands  
+### Aland Islands  
 
-## Albania  
+### Albania  
 
-## Algeria  
+### Algeria  
 
-## American Samoa  
+### American Samoa  
 
-## Andorra  
+### Andorra  
 
-## Angola  
+### Angola  
 
-## Anguilla  
+### Anguilla  
 
-## Antigua and Barbuda  
+### Antigua and Barbuda  
 
-## Argentina  
+### Argentina  
 
-## Armenia  
+### Armenia  
 
-## Aruba  
+### Aruba  
 
-## Ascension  
+### Ascension  
 
-## Australia  
+### Australia  
 
-## Austria  
+### Austria  
 
-## Azerbaijan  
+### Azerbaijan  
 
-## Bahamas  
+### Bahamas  
 
-## Bahrain  
+### Bahrain  
 
-## Bangladesh  
+### Bangladesh  
 
-## Barbados  
+### Barbados  
 
-## Belarus  
+### Belarus  
 
-## Belgium  
+### Belgium  
 
-## Belize  
+### Belize  
 
-## Benin  
+### Benin  
 
-## Bermuda  
+### Bermuda  
 
-## Bhutan  
+### Bhutan  
 
-## Bolivia  
+### Bolivia  
 
-## Bonaire  
+### Bonaire  
 
-## Bosnia and Herzegovina  
+### Bosnia and Herzegovina  
 
-## Botswana  
+### Botswana  
 
-## Bouvet Island  
+### Bouvet Island  
 
-## Brazil  
+### Brazil  
 
-## British Virgin Islands  
+### British Virgin Islands  
 
-## Brunei  
+### Brunei  
 
-## Bulgaria  
+### Bulgaria  
 
-## Burkina Faso  
+### Burkina Faso  
 
-## Burundi  
+### Burundi  
 
-## Cambodia  
+### Cambodia  
 
-## Cameroon  
+### Cameroon  
 
-## Canada  
+### Canada  
 
-## Cape Verde  
+### Cape Verde  
 
-## Cayman Islands  
+### Cayman Islands  
 
-## Central African Republic  
+### Central African Republic  
 
-## Chad  
+### Chad  
 
-## Chile  
+### Chile  
 
-## China PRC  
+### China PRC  
 
-## Christmas Island  
+### Christmas Island  
 
-## Cocos Keeling Islands  
+### Cocos Keeling Islands  
 
-## Colombia  
+### Colombia  
 
-## Comoros  
+### Comoros  
 
-## Congo  
+### Congo  
 
-## Congo DRC  
+### Congo DRC  
 
-## Cook Islands  
+### Cook Islands  
 
-## Costa Rica  
+### Costa Rica  
 
-## Cote Divoire  
+### Cote Divoire  
 
-## Croatia  
+### Croatia  
 
-## Curacao  
+### Curacao  
 
-## Cyprus  
+### Cyprus  
 
-## Czech Republic  
+### Czech Republic  
 
-## Denmark  
+### Denmark  
 
-## Djibouti  
+### Djibouti  
 
-## Dominica  
+### Dominica  
 
-## Dominican Republic  
+### Dominican Republic  
 
-## [E-L](#tab/ethroughl)
+### [E-L](#tab/ethroughl)
 
-## Ecuador  
+### Ecuador  
 
-## Egypt  
+### Egypt  
 
-## El Salvador  
+### El Salvador  
 
-## Equatorial Guinea  
+### Equatorial Guinea  
 
-## Eritrea  
+### Eritrea  
 
-## Estonia  
+### Estonia  
 
-## Ethiopia  
+### Ethiopia  
 
-## Falkland Islands  
+### Falkland Islands  
 
-## Faroe Islands  
+### Faroe Islands  
 
-## Fiji  
+### Fiji  
 
-## Finland  
+### Finland  
 
-## France  
+### France  
 
-## French Guiana  
+### French Guiana  
 
-## French Polynesia  
+### French Polynesia  
 
-## French Southern Territories  
+### French Southern Territories  
 
-## Gabon  
+### Gabon  
 
-## Gambia  
+### Gambia  
 
-## Georgia  
+### Georgia  
 
-## Germany  
+### Germany  
 
-## Ghana  
+### Ghana  
 
-## Gibraltar  
+### Gibraltar  
 
-## Greece  
+### Greece  
 
-## Greenland  
+### Greenland  
 
-## Grenada  
+### Grenada  
 
-## Guadeloupe  
+### Guadeloupe  
 
-## Guam  
+### Guam  
 
-## Guatemala  
+### Guatemala  
 
-## Guernsey  
+### Guernsey  
 
-## Guinea  
+### Guinea  
 
-## Guinea Bissau  
+### Guinea Bissau  
 
-## Guyana  
+### Guyana  
 
-## Haiti  
+### Haiti  
 
-## Heard Island and Mcdonald Islands  
+### Heard Island and Mcdonald Islands  
 
-## Honduras  
+### Honduras  
 
-## Hong Kong SAR  
+### Hong Kong SAR  
 
-## Hungary  
+### Hungary  
 
-## Iceland  
+### Iceland  
 
-## India  
+### India  
 
-## Indonesia  
+### Indonesia  
 
-## Iraq  
+### Iraq  
 
-## Ireland  
+### Ireland  
 
-## Isle Of Man  
+### Isle Of Man  
 
-## Israel  
+### Israel  
 
-## Italy  
+### Italy  
 
-## Jamaica  
+### Jamaica  
 
-## Jan Mayen  
+### Jan Mayen  
 
-## Japan  
+### Japan  
 
-## Jersey  
+### Jersey  
 
-## Jordan  
+### Jordan  
 
-## Kazakhstan  
+### Kazakhstan  
 
-## Kenya  
+### Kenya  
 
-## Kiribati  
+### Kiribati  
 
-## Korea  
+### Korea  
 
-## Kosovo  
+### Kosovo  
 
-## Kuwait  
+### Kuwait  
 
-## Kyrgyzstan  
+### Kyrgyzstan  
 
-## Laos  
+### Laos  
 
-## Latvia  
+### Latvia  
 
-## Lebanon  
+### Lebanon  
 
-## Lesotho  
+### Lesotho  
 
-## Liberia  
+### Liberia  
 
-## Libya  
+### Libya  
 
-## Liechtenstein  
+### Liechtenstein  
 
-## Lithuania  
+### Lithuania  
 
-## Luxembourg  
+### Luxembourg  
 
-## [M-R](#tab/mthroughr)
+### [M-R](#tab/mthroughr)
 
-## Macau SAR  
+### Macau SAR  
 
-## Macedonia  
+### Macedonia  
 
-## Madagascar  
+### Madagascar  
 
-## Malawi  
+### Malawi  
 
-## Malaysia  
+### Malaysia  
 
-## Maldives  
+### Maldives  
 
-## Mali  
+### Mali  
 
-## Malta  
+### Malta  
 
-## Marshall Islands  
+### Marshall Islands  
 
-## Martinique  
+### Martinique  
 
-## Mauritania  
+### Mauritania  
 
-## Mauritius  
+### Mauritius  
 
-## Mayotte  
+### Mayotte  
 
-## Mexico  
+### Mexico  
 
-## Micronesia  
+### Micronesia  
 
-## Moldova  
+### Moldova  
 
-## Monaco  
+### Monaco  
 
-## Mongolia  
+### Mongolia  
 
-## Montenegro  
+### Montenegro  
 
-## Montserrat  
+### Montserrat  
 
-## Morocco  
+### Morocco  
 
-## Mozambique  
+### Mozambique  
 
-## Myanmar  
+### Myanmar  
 
-## Namibia  
+### Namibia  
 
-## Nauru  
+### Nauru  
 
-## Nepal  
+### Nepal  
 
-## Netherlands  
+### Netherlands  
 
-## New Caledonia  
+### New Caledonia  
 
-## New Zealand  
+### New Zealand  
 
-## Nicaragua  
+### Nicaragua  
 
-## Niger  
+### Niger  
 
-## Nigeria  
+### Nigeria  
 
-## Niue  
+### Niue  
 
-## Norfolk Island  
+### Norfolk Island  
 
-## Northern Mariana Islands  
+### Northern Mariana Islands  
 
-## Norway  
+### Norway  
 
-## Oman  
+### Oman  
 
-## Pakistan  
+### Pakistan  
 
-## Palau  
+### Palau  
 
-## Palestinian Authority  
+### Palestinian Authority  
 
-## Panama  
+### Panama  
 
-## Papua New Guinea  
+### Papua New Guinea  
 
-## Paraguay  
+### Paraguay  
 
-## Peru  
+### Peru  
 
-## Philippines  
+### Philippines  
 
-## Pitcairn Islands  
+### Pitcairn Islands  
 
-## Poland  
+### Poland  
 
-## Portugal  
+### Portugal  
 
-## Puerto Rico  
+### Puerto Rico  
 
-## Qatar  
+### Qatar  
 
-## Reunion  
+### Reunion  
 
-## Romania  
+### Romania  
 
-## Russia  
+### Russia  
 
-## Rwanda  
+### Rwanda  
 
-## [S-Z](#tab/sthroughz)
+### [S-Z](#tab/sthroughz)
 
-## Saba  
+### Saba  
 
-## Saint Barthelemy  
+### Saint Barthelemy  
 
-## Saint Lucia  
+### Saint Lucia  
 
-## Saint Martin  
+### Saint Martin  
 
-## Saint Pierre and Miquelon  
+### Saint Pierre and Miquelon  
 
-## Saint Vincent and the Grenadines  
+### Saint Vincent and the Grenadines  
 
-## Samoa  
+### Samoa  
 
-## San Marino  
+### San Marino  
 
-## Sao Tome and Principe  
+### Sao Tome and Principe  
 
-## Saudi Arabia  
+### Saudi Arabia  
 
-## Senegal  
+### Senegal  
 
-## Serbia  
+### Serbia  
 
-## Seychelles  
+### Seychelles  
 
-## Sierra Leone  
+### Sierra Leone  
 
-## Singapore  
+### Singapore  
 
-## Sint Eustatius  
+### Sint Eustatius  
 
-## Sint Maarten  
+### Sint Maarten  
 
-## Slovakia  
+### Slovakia  
 
-## Slovenia  
+### Slovenia  
 
-## Solomon Islands  
+### Solomon Islands  
 
-## Somalia  
+### Somalia  
 
-## South Africa  
+### South Africa  
 
-## South Georgia and South Sandwich Islands  
+### South Georgia and South Sandwich Islands  
 
-## South Sudan  
+### South Sudan  
 
-## Spain  
+### Spain  
 
-## Sri Lanka  
+### Sri Lanka  
 
-## St Helena  
+### St Helena  
 
-## St Kitts Nevis  
+### St Kitts Nevis  
 
-## Suriname  
+### Suriname  
 
-## Svalbard  
+### Svalbard  
 
-## Swaziland  
+### Swaziland  
 
-## Sweden  
+### Sweden  
 
-## Switzerland  
+### Switzerland  
 
-## Taiwan  
+### Taiwan  
 
-## Tajikistan  
+### Tajikistan  
 
-## Tanzania  
+### Tanzania  
 
-## Thailand  
+### Thailand  
 
-## Timor Leste  
+### Timor Leste  
 
-## Togo  
+### Togo  
 
-## Tokelau  
+### Tokelau  
 
-## Tonga  
+### Tonga  
 
-## Trinidad and Tobago  
+### Trinidad and Tobago  
 
-## Tristan Da Cunha  
+### Tristan Da Cunha  
 
-## Tunisia  
+### Tunisia  
 
-## Turkey  
+### Turkey  
 
-## Turkmenistan  
+### Turkmenistan  
 
-## Turks and Caicos Islands  
+### Turks and Caicos Islands  
 
-## Tuvalu  
+### Tuvalu  
 
-## Uganda  
+### Uganda  
 
-## Ukraine  
+### Ukraine  
 
-## United Arab Emirates  
+### United Arab Emirates  
 
-## United Kingdom  
+### United Kingdom  
 
-## United States  
+### United States  
 
-## Uruguay  
+### Uruguay  
 
-## Uzbekistan  
+### Uzbekistan  
 
-## Vanuatu  
+### Vanuatu  
 
-## Vatican City  
+### Vatican City  
 
-## Venezuela  
+### Venezuela  
 
-## Vietnam  
+### Vietnam  
 
-## Virgin Islands  
+### Virgin Islands  
 
-## Wallis and Futuna  
+### Wallis and Futuna  
 
-## Yemen  
+### Yemen  
 
-## Zambia  
+### Zambia  
 
-## Zimbabwe  
+### Zimbabwe  
 ---
