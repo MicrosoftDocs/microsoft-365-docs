@@ -66,19 +66,20 @@ To manage apps using in both the above configurations customers should use Intun
 
   ![App settings](images/app-settings.png)
 
-## Create App Protection Policy to block access or wipe data of a managed app, based on Microsoft Defender for Endpoint risk signals
+## Block access or wipe data of a managed app based on Microsoft Defender for Endpoint risk signals by creating an app protection policy
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM). With this capability, you can use Microsoft Defender for Endpoint to protect managed apps.
 
-1. **Create a policy:** App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
+### Step 1: Create a policy
+App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
 
 ![Image of policy creation](images/create-policy.png)
 
-**Add Apps:**
+### Step 2: Add apps
 
 **2.1 Choose how you wnat to apply this policy to apps on different devices.** Then add at least one app.
 
-Use this option to specify whether this policy applies to Unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can choose option to target your policy to apps on devices of any management state also.
+Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also chooseto target your policy to apps on devices of any management state.
 Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management. Companies can use app protection policies with or without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
 **2.2 Select Apps**
@@ -89,13 +90,13 @@ A managed app is an app that has app protection policies applied to it, and can 
 
 ![Image Outlook as managed app](images/managed-app.png)
 
-**3. Conditional launch:** Set sign-in security requirements for your protection policy.
+### Step 3: Set sign-in security requirements for your protection policy** 
 
-Select **Setting “Max allowed device threat level”** in Device Conditions and enter a Value. Then select  **Action  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
+Select **Setting Max allowed device threat level** in Device Conditions and enter a Value. Then select  **Action  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
 
 ![Image of conditional launch](images/conditional-launch.png)
 
-**3. Assignments:** Assign user groups for whom the policy needs to be applied.
+### Step 4: Assign user groups for whom the policy needs to be applied:** .
 
 ![Image of assigments](images/assignment.png)
 
@@ -106,7 +107,7 @@ Select **Setting “Max allowed device threat level”** in Device Conditions an
     
 - Users have the required licenses for Managed app and has the app installed
 
-**End user onboarding to managed app will initiate Microsoft Defender for Endpoint mobile installation & activation**
+### End user onboarding to managed app will initiate Microsoft Defender for Endpoint mobile installation & activation**
 
 1. Sign in to a managed application, for example, Outlook. The device is registered and the application protection policy is synchronized to the device. The application protection policy recognizes the device's health state.  
 
