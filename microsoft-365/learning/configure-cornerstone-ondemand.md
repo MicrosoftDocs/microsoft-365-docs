@@ -22,7 +22,7 @@ description: "Learn how to configure Cornerstone OnDemand as a learning content 
 
 1. Log in to your Cornerstone Portal, navigate to the Edge Marketplace, and search for Microsoft Viva Learning.  
     <!--image 1-->
-2. Select the Microsoft Viva Learning tile.  
+2. Select the Microsoft Viva Learning tile
     <!--image 2-->
 3. Select **install**.
     <!--image 3-->
