@@ -68,7 +68,7 @@ This feature independence allows you to (for example) allow automatic forwarding
 
 ## How to find users that are automatically forwarding
 
-You can see information about users that are automatically forwarding messages to external recipients in the **Auto-forwarded messages** report for cloud-based accounts. For on-premises users that automatically forward from their on-premises email system through Microsot 365, you need to create a mail flow rule to track these users. For instructions on how to create a mail flow rule, see [Use the EAC to create a mail flow rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
+You can see information about users that are automatically forwarding messages to external recipients in the [Auto forwarded messages report](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) for cloud-based accounts. For on-premises users that automatically forward from their on-premises email system through Microsot 365, you need to create a mail flow rule to track these users. For instructions on how to create a mail flow rule, see [Use the EAC to create a mail flow rule](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#use-the-eac-to-create-a-mail-flow-rule).
 
 The following information is required to create the mail flow rule in the Exchange admin center (EAC):
 
