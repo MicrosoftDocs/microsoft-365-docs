@@ -12,7 +12,17 @@
         - name: Set up in the Teams admin center
           href: set-up-teams-admin-center.md
         - name: Configure learning content sources
-          href: content-sources-365-admin-center.md
+          items:
+            - name: Configure learning content sources overview
+              href: content-sources-365-admin-center.md
+            - name: Cornerstone Ondemand
+              href: configure-cornerstone-ondemand.md
+            - name: Saba
+              href: configure-saba.md
+            - name: SAP SuccessFactors
+              href: configure-sap-successfactors.md
+            - name: Udemy
+              href: configure-udemy.md
         - name: Configure SharePoint as a content source
           href: configure-sharepoint-content-source.md
 
