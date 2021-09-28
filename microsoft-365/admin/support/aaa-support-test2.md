@@ -40,8 +40,7 @@ If your support phone number isn't listed above, use the tabs below to find the 
 ### [A-D](#tab/athroughd)
 
 :::row:::
-   :::column:::
-      **Column 1**  
+   :::column::: 
 Afghanistan  
 Aland Islands  
 Albania  
@@ -63,11 +62,8 @@ Bahrain
 Bangladesh  
 Barbados  
 Belarus  
-
    :::column-end:::
    :::column:::
-      **Column 2**  
-
 Belgium  
 Belize  
 Benin  
@@ -89,11 +85,9 @@ Cameroon
 Canada  
 Cape Verde  
 Cayman Islands  
-
    :::column-end:::
    :::column:::
       **Column 3** 
-
 Central African Republic  
 Chad  
 Chile  
@@ -248,8 +242,6 @@ Dominican Republic
 
 :::row:::
    :::column:::
-      **Column 1**  
-
 Ecuador  
 Egypt  
 El Salvador  
@@ -270,11 +262,9 @@ Gambia
 Georgia  
 Germany  
 Ghana  
+Gibraltar  
    :::column-end:::
    :::column:::
-      **Column 2**  
-
-Gibraltar  
 Greece  
 Greenland  
 Grenada  
@@ -295,12 +285,10 @@ India
 Indonesia  
 Iraq  
 Ireland  
-   :::column-end:::
-   :::column:::
-      **Column 3**  
-
 Isle Of Man  
 Israel  
+   :::column-end:::
+   :::column:::
 Italy  
 Jamaica  
 Jan Mayen  
@@ -323,7 +311,6 @@ Libya
 Liechtenstein  
 Lithuania  
 Luxembourg  
-
    :::column-end:::
 :::row-end:::
 
@@ -461,8 +448,6 @@ Luxembourg
 
 :::row:::
    :::column:::
-      **Column 1**  
-
 Macau SAR  
 Macedonia  
 Madagascar  
@@ -480,11 +465,9 @@ Mexico
 Micronesia  
 Moldova  
 Monaco  
-
+Mongolia  
    :::column-end:::
    :::column:::
-      **Column 2**  
-Mongolia  
 Montenegro  
 Montserrat  
 Morocco  
@@ -501,13 +484,10 @@ Niger
 Nigeria  
 Niue  
 Norfolk Island  
-
-   :::column-end:::
-   :::column:::
-      **Column 3**  
-
 Northern Mariana Islands  
 Norway  
+   :::column-end:::
+   :::column:::
 Oman  
 Pakistan  
 Palau  
@@ -641,8 +621,6 @@ Rwanda
 
 :::row:::
    :::column:::
-      **Column 1**  
-
 Saba  
 Saint Barthelemy  
 Saint Lucia  
@@ -663,12 +641,9 @@ Sint Maarten
 Slovakia  
 Slovenia  
 Solomon Islands  
-
+Somalia  
    :::column-end:::
    :::column:::
-      **Column 2**  
-
-Somalia  
 South Africa  
 South Georgia and South Sandwich Islands  
 South Sudan  
@@ -688,13 +663,10 @@ Thailand
 Timor Leste  
 Togo  
 Tokelau  
-
-   :::column-end:::
-   :::column:::
-      **Column 3**  
-
 Tonga  
 Trinidad and Tobago  
+   :::column-end:::
+   :::column:::
 Tristan Da Cunha  
 Tunisia  
 Turkey  
@@ -717,7 +689,6 @@ Wallis and Futuna
 Yemen  
 Zambia  
 Zimbabwe  
-
    :::column-end:::
 :::row-end:::
 
