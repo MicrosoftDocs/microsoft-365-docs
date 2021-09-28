@@ -64,7 +64,7 @@ Barbados
 Belarus  
    :::column-end:::
    :::column:::
-Belgium  
+[Belgium](#belgium)  
 Belize  
 Benin  
 Bermuda  
@@ -113,6 +113,21 @@ Dominican Republic
 
 ### Afghanistan  
 
+#### Phone number
+
++92 21 111 674 357  
+Select option 3
+
+#### Hours
+##### Billing Support:
+
+English: Mon-Fri 10 AM-6 PM
+
+#### Technical Support:
+
+English: 24 hours a day, 7 days a week  
+International call charges apply
+
 ### Aland Islands  
 
 ### Albania  
@@ -154,6 +169,25 @@ Dominican Republic
 ### Belarus  
 
 ### Belgium  
+
+#### Phone number
+
+0800 81174
+
+#### Hours
+
+##### Billing Support:
+
+Dutch: Mon-Fri 9 AM-5 PM  
+French: Mon-Fri 9 AM-5 PM  
+English: Mon-Fri 9 AM-5 PM
+
+##### Technical Support:
+
+French: Mon-Fri 8 AM-9 PM  
+English: 24 hours a day, 7 days a week  
+Alternative Phone Number: 02 200 88 84  
+Local call charges apply
 
 ### Belize  
 
@@ -236,6 +270,23 @@ Dominican Republic
 ### Dominica  
 
 ### Dominican Republic  
+
+#### Phone number
+
+1 800 751 3455  
+Select option 4  
+Enter code 7007
+
+#### Hours
+##### Billing Support:
+
+Spanish: Mon-Fri 9 AM-5 PM
+
+##### Technical Support:
+
+Spanish: 24 hours a day, 7 days a week  
+Alternative Phone Number: 1 809 200 8794  
+(Cellular toll-free)
 
 ## [E-L](#tab/ethroughl)
 
