@@ -96,19 +96,19 @@ Save the text file as a JavaScript file with the extension .js, for example dela
   
 Once you've finished writing delayLoadImages.js, you can add the contents of the file to a master page in SharePoint Online. You do this by adding a script link to the header in the master page. Once it's in a master page, the JavaScript will be applied to all pages in your SharePoint Online site that use that master page layout. Alternatively, if you intend to only use this on one page of your site, use the script editor Web Part to embed the JavaScript into the page. See these topics for more information:
   
-- [How to: Apply a master page to a site in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+- [How to: Apply a master page to a site in SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
 
-- [How to: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+- [How to: Create a page layout in SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)
 
 ### Example: Referencing the JavaScript delayLoadImages.js file from a master page in SharePoint Online
   
 In order for this to work, you also need to reference jQuery in the master page. In the following example, you can see in the initial page load that there is only one image loaded but there are several more on the page.
   
-![Screenshot showing one image loaded on page](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
+![Screenshot showing one image loaded on page.](../media/3d177ddb-67e5-43a7-b327-c9f9566ca937.png)
   
 The following screenshot shows the rest of the images that are downloaded after they scroll into view.
   
-![Screenshot showing several images loaded on page](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
+![Screenshot showing several images loaded on page.](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
 Delaying image loading by using JavaScript can be an effective technique in increasing performance; however, if the technique is applied on a public website then search engines are not able to crawl the images in the same way they would crawl a regularly formed image. This can affect rankings on search engines because metadata on the image itself is not really there until the page loads. Search engine crawlers only read the HTML and therefore will not see the images as content on the page. Images are one of the factors used to rank pages in search results. One way to work around this is to use introductory text for your images.
   
@@ -120,6 +120,6 @@ Don't miss the article and code sample on [JavaScript injection](https://go.micr
 
 [Supported browsers in Office 2013 and Microsoft 365 Apps for enterprise](https://support.office.com/article/57342811-0dc4-4316-b773-20082ced8a82)
   
-[How to: Apply a master page to a site in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525627)
+[How to: Apply a master page to a site in SharePoint 2013](/sharepoint/dev/general-development/how-to-apply-a-master-page-to-a-site-in-sharepoint)
   
-[How to: Create a page layout in SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=525628)
+[How to: Create a page layout in SharePoint 2013](/sharepoint/dev/general-development/how-to-create-a-page-layout-in-sharepoint)

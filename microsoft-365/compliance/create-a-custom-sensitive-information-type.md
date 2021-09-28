@@ -1,5 +1,5 @@
 ---
-title: "Create a custom sensitive information type in the Security & Compliance Center"
+title: "Get started with custom sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -8,27 +8,184 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
-localization_priority: Priority
+ms.date: 
+localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
+description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
-<!-- rename md file to match the display name -->
-# Create a custom sensitive information type in the Security & Compliance Center
+# Get started with custom sensitive information types
 
-Read this article to create a custom sensitive information type in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
+If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
+
+The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
+
+There are two ways to create a new sensitive information type:
+
+- [from scratch where you fully define all elements](#create-a-custom-sensitive-information-type)
+- [copy and modify an existing sensitive information type](#copy-and-modify-a-sensitive-information-type)
+
+
+## Before you begin
+
+- You should be familiar with sensitive information types and what they are composed of. See, [Learn about sensitive information types](sensitive-information-type-learn-about.md). It is critical to understand the roles of:
+    - [regular expressions](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - Microsoft 365 sensitive information types uses the Boost.RegEx 5.1.3 engine
+    - keyword lists - you can create your own as you define your sensitive information type or choose from existing keyword lists
+    - [keyword dictionary](create-a-keyword-dictionary.md)
+    - [functions](what-the-dlp-functions-look-for.md)
+    - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+ 
+- You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](/office365/admin/add-users/about-admin-roles) in Office 365.
+
+- Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+
+
+> [!IMPORTANT]
+> Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
+
+## Create a custom sensitive information type
+
+Use this procedure to create a new sensitive information type that you fully define. 
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.
+2. Fill in values for **Name** and **Description** and choose **Next**.
+3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
+4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [More information on regular expression validators](#more-information-on-regular-expression-validators).
+6. Fill in a value for **Character proximity**.
+7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. Supporting elements can have their own **Character proximity** configuration. 
+8. (Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
+9. Choose **Create**.
+10. Choose **Next**.
+11. Choose the **recommended confidence level** for this sensitive information type.
+12. Check your setting and choose **Submit**.
+
+> [!IMPORTANT]
+> Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
+
+13. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you created.
+
+## Test a sensitive information type
+
+You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a policy.
+
+1. Prepare two files, like a Word document. One with content that matches the elements you specified in your sensitive information type and one that doesn't match.
+2. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list to open the details pane and choose **Test**.
+3. Upload a file and choose **Test**.
+4. On the **Matches results** page, review the results and choose **Finish**.
+
+## Modify custom sensitive information types in the Compliance Center
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
+2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and [**additional checks**](#more-information-on-additional-checks) or edit/remove the existing ones.
+
+## Remove custom sensitive information types in the Compliance Center 
+
+> [!NOTE]
+> You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
+
+> [!IMPORTANT]
+> Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.
+2. In the fly-out that opens, choose **Delete**.
+
+## Copy and modify a sensitive information type
+
+Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
+2. In the flyout, choose **Copy**.
+3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
+4. Fill in values for **Name** and **Description** and choose **Next**.
+5. Choose your sensitive information type copy and choose **Edit**. 
+6. Give your new sensitive information type a new **Name** and **Description**.
+7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+9. Fill in a value for **Character proximity**.
+10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
+11. Choose **Create**.
+12. Choose **Next**.
+13. Choose the **recommended confidence level** for this sensitive information type.
+14. Check your setting and choose **Submit**.
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
+## More information on regular expression validators
+
+### Checksum validator
+
+If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
+
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 
+Mod value = Sum % 9
+If Mod value == digit 8
+    Account number is valid
+If Mod value != digit 8
+    Account number is invalid
+
+1. Define the primary element with this regular expression:
+
+   ```console
+   \d{8}
+   ```
+
+2. Then add the checksum validator.
+3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
+
 > [!NOTE]
-> Microsoft 365 Information Protection now  supports in preview double byte character set languages for:
+> If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
+
+![screenshot of configured checksum validator.](../media/checksum-validator.png)
+
+### Date validator
+
+If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format.
+
+1. Define the primary element with this regular expression:
+
+   ```console
+   \d{9}
+   ```
+
+2. Then add the date validator.
+3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
+
+![screenshot of configured date validator.](../media/date-validator.png)
+
+### Functional processors as validators
+
+You can use function processors for some of the most commonly used SITs as validators. This allows you to define your own regular expression while ensuring they pass the additional checks required by the SIT. For example, Func_India_Aadhar will ensure that the custom regular expression defined by you passes the validation logic required for Indian Aadhar card. For more information on DLP functions that can be used as validators, see [What the DLP functions look for](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for). 
+
+### Luhn check validator
+
+You can use the Luhn check validator if you have a custom Sensitive information type that includes a regular expression which should pass the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
+
+## More information on additional checks
+
+Here are the definitions and some examples for the available additional checks.
+
+**Exclude specific matches**: This check lets you define keywords to exclude when detecting matches for the pattern you are editing. For example, you might exclude test credit card numbers like '4111111111111111' so that they're not matched as a valid number.
+
+**Starts or doesn't start with characters**: This check lets you define the characters that the matched items must or must not start with. For example, if you want the pattern to detect only credit card numbers that start with 41, 42, or 43, select **Starts with** and add 41, 42, and 43 to the list, separated by commas. 
+
+**Ends or doesn't end with characters**: This check lets you define the characters that the matched items must or must not end with. For example, if your Employee ID number cannot end with 0 or 1, select **Doesn't end with** and add 0 and 1 to the list, separated by commas.
+
+**Exclude duplicate characters**: This check lets you ignore matches in which all the digits are the same. For example, if the six digit employee ID number cannot have all the digits be the same, you can select **Exclude duplicate characters** to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, and 000000 from the list of valid matches for the employee ID.
+
+**Include or exclude prefixes**: This check lets you define the keywords that must or must not be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you **Exclude** the prefix **GUID:**, any entity that's preceded by **GUID:** won't be considered a match.
+
+**Include or exclude suffixes** This check lets you define the keywords that must or must not be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you **Exclude** the suffix **:GUID**, any text that's followed by **:GUID** won't be matched.
+
+
+> [!NOTE]
+> Microsoft 365 Information Protection supports double byte character set languages for:
 > - Chinese (simplified)
 > - Chinese (traditional)
 > - Korean
@@ -36,149 +193,16 @@ You can also create custom sensitive information types by using PowerShell and E
 >
 >This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
 
-## Before you begin
-
-> [!NOTE]
-> You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.
-
-- Your organization must have a subscription, such as Office 365 Enterprise, that includes Data Loss Prevention (DLP). See [Messaging Policy and Compliance ServiceDescription](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
-
-- Custom sensitive information types require familiarity with regular expressions (RegEx). For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
-
-  Microsoft Customer Service & Support can't assist with creating custom classifications or regular expression patterns. Support engineers can provide limited support for the feature, such as, providing sample regular expression patterns for testing purposes, or assisting with troubleshooting an existing regular expression pattern that's not triggering as expected, but can't provide assurances that any custom content-matching development will fulfill your requirements or obligations.
-
-- DLP uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
-
-## Create custom sensitive information types in the Security & Compliance Center
-
-In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
-
-The settings are fairly self-evident, and are explained on the associate page of the wizard:
-
-- **Name**
-
-- **Description**
-
-- **Proximity**
-
-- **Confidence level**
-
-- **Primary pattern element** (keywords, regular expression, or dictionary)
-
-- Optional **Supporting pattern elements** (keywords, regular expression, or dictionary) and a corresponding **Minimum cost** value.
-
-Here's a scenario: You want a custom sensitive information type that detects 9-digit employee numbers in content, along with the keywords "employee" "ID" and "badge". To create this custom sensitive information type, do the following steps:
-
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and click **Create**.
-
-    ![Location of Sensitive info types and Create button](../media/scc-cust-sens-info-type-new.png)
-
-2. In the **Choose a name and description** page that opens, enter the following values:
-
-  - **Name**: Employee ID.
-
-  - **Description**: Detect nine-digit Contoso employee ID numbers.
-
-    ![Name and description page](../media/scc-cust-sens-info-type-new-name-desc.png)
-
-    When you're finished, click **Next**.
-
-3. In the **Requirements for matching** page that opens, click **Add an element** configure the following settings:
-
-    - **Detect content containing**:
- 
-      a. Click **Any of these** and select **Regular expression**.
-
-      b. In the regular expression box, enter `(\s)(\d{9})(\s)` (nine-digit numbers surrounded by white space).
-  
-    - **Supporting elements**: Click **Add supporting elements** and select **Contains this keyword list**.
-
-    - In the **Contains this keyword list** area that appears, configure the following settings:
-
-      - **Keyword list**: Enter the following value: employee,ID,badge.
-
-      - **Minimum count**: Leave the default value 1.
-
-    - Leave the default **Confidence level** value 60. 
-
-    - Leave the default **Character proximity** value 300.
-
-    ![Requirements for matching page](../media/scc-cust-sens-info-type-new-reqs.png)
-
-    When you're finished, click **Next**.
-
-4. On the **Review and finalize** page that opens, review the settings and click **Finish**.
-
-    ![Review and finalize page](../media/scc-cust-sens-info-type-new-review.png)
-
-5. The next page encourages you to test the new custom sensitive information type by clicking **Yes**. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center). To test the rule later, click **No**.
-
-    ![Test recommendation page](../media/scc-cust-sens-info-type-new-test.png)
-
-### How do you know this worked?
-
-To verify that you've successfully created a new sensitive information type, do any of the following steps:
-
-  - Go to **Classifications** \> **Sensitive info types** and verify the new custom sensitive information type is listed.
-
-  - Test the new custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
-
-## Modify custom sensitive information types in the Security & Compliance Center
-
-**Notes**:
-<!-- check to see if this note contradicts the guidance in "customize a built in sensitive information type customize-a-built-in-sensitive-information-type it sure seems like it does-->
-- You can only modify custom sensitive information types; you can't modify built-in sensitive information types. But you can use PowerShell to export built-in custom sensitive information types, customize them, and import them as custom sensitive information types. For more information, see [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
-
-- You can only modify custom sensitive information types that you created in the UI. If you used the [PowerShell procedure](create-a-custom-sensitive-information-type-in-scc-powershell.md) to import a custom sensitive information type rule package, you'll get an error.
-
-In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**, select the custom sensitive information type that you want to modify, and then click **Edit**.
-
-  ![Location of Sensitive info types and Edit button](../media/scc-cust-sens-info-type-edit.png)
-
-The same options are available here as when you created the custom sensitive information type in the Security & Compliance Center. For more information, see [Create custom sensitive information types in the Security & Compliance Center](#create-custom-sensitive-information-types-in-the-security--compliance-center).
-
-### How do you know this worked?
-
-To verify that you've successfully modified a sensitive information type, do any of the following steps:
-
-  - Go to **Classifications** \> **Sensitive info types** to verify the properties of the modified custom sensitive information type. 
-
-  - Test the modified custom sensitive information type. For more information, see [Test custom sensitive information types in the Security & Compliance Center](#test-custom-sensitive-information-types-in-the-security--compliance-center).
-
-## Remove custom sensitive information types in the Security & Compliance Center 
-
-**Notes**:
-
-- You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
-
-- Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
-
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types** and select one or more custom sensitive information types that you want to remove.
-
-2. In the fly-out that opens, click **Delete** (or **Delete sensitive info types** if you selected more than one).
-
-    ![Location of Sensitive info types and Delete button](../media/scc-cust-sens-info-type-delete.png)
-
-3. In the warning message that appears, click **Yes**.
-
-### How do you know this worked?
-
-To verify that you've successfully removed a custom sensitive information type, go to **Classifications** \> **Sensitive info types** to verify the custom sensitive information type is no longer listed.
-
-## Test custom sensitive information types in the Security & Compliance Center
-
-1. In the Security & Compliance Center, go to **Classifications** \> **Sensitive info types**.
-
-2. Select one or more custom sensitive information types to test. In the fly-out that opens, click **Test type** (or **Test sensitive info types** if you selected more than one).
-
-    ![Location of Sensitive info types and Test type button](../media/scc-cust-sens-info-type-test.png)
-
-3. On the **Upload file to test** page that opens, upload a document to test by dragging and dropping a file or by clicking **Browse** and selecting a file.
-
-    ![Upload file to test page](../media/scc-cust-sens-info-type-test-upload.png)
-
-4. Click the **Test** button to test the document for pattern matches in the file.
-
-5. On the **Match results** page, click **Finish**.
-
-    ![Match results](../media/scc-cust-sens-info-type-test-results.png)
+> [!TIP]
+> To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
+> - For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
+>
+> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), it is recommended to create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only. 
+> - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the it you should create two keyword lists. 
+>     1. Highly confidential
+>     2. 機密性が高い, 机密的document and 机密的 document
+>
+> While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>
+> We recommend using a string match instead of a word match in a keyword list.

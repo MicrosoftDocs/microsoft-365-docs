@@ -43,7 +43,7 @@ To assist customers with these goals, Office 365 IP prefixes that are advertised
 |SharePoint Online\*  <br/> |12076:5020  <br/> |SharePoint Online  <br/> |
 |Skype for Business\*  <br/> |12076:5030  <br/> |Skype for Business Online & Microsoft Teams services  <br/> |
 |Other Office 365 services\*  <br/> |12076:5100  <br/> |Includes Azure Active Directory (Authentication and Directory Synchronization scenarios) as well as Office 365 Portal services  <br/> |
-|\* The scope of service scenarios included in ExpressRoute is documented in the [Office 365 endpoints](https://aka.ms/o365endpoints) article.  <br/> \*\*Additional services and BGP community values may be added in the future. [See the current list of BGP Communities](https://azure.microsoft.com/documentation/articles/expressroute-routing/).  <br/> |
+|\* The scope of service scenarios included in ExpressRoute is documented in the [Office 365 endpoints](./urls-and-ip-address-ranges.md) article.  <br/> \*\*Additional services and BGP community values may be added in the future. [See the current list of BGP Communities](/azure/expressroute/expressroute-routing).  <br/> |
 
 ## What are the most common scenarios for using BGP communities?
 
@@ -100,7 +100,7 @@ Customers who choose to take advantage of BGP communities to influence how Expre
 
 - In addition to using the Microsoft assigned BGP communities, customers may choose to assign their own BGP communities to Office 365 IP prefixes learned through Azure ExpressRoute to influence internal routing. A popular use case is assigning a location based BGP community to all routes learned through each given ExpressRoute peering location and then using that information downstream in the customer network to coordinate the shortest or most preferred network path into Microsoft's network. The use of customer assigned BGP communities with ExpressRoute for Office 365 scenarios is outside of scope of Microsoft control or visibility.
 
-Here's a short link you can use to come back: [https://aka.ms/bgpexpressroute365](https://aka.ms/bgpexpressroute365).
+Here's a short link you can use to come back: [https://aka.ms/bgpexpressroute365]().
   
 ## Related Topics
 
@@ -122,7 +122,7 @@ Here's a short link you can use to come back: [https://aka.ms/bgpexpressroute365
   
 [Implementing ExpressRoute for Office 365](implementing-expressroute.md)
   
-[Support for BGP communities](https://azure.microsoft.com/documentation/articles/expressroute-routing/)
+[Support for BGP communities](/azure/expressroute/expressroute-routing)
   
 [Office 365 performance tuning using baselines and performance history](performance-tuning-using-baselines-and-history.md)
   

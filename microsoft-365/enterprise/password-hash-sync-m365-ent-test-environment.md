@@ -2,8 +2,8 @@
 title: "Password hash synchronization for your Microsoft 365 test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 05/26/2020
 audience: ITPro
@@ -29,7 +29,7 @@ Many organizations use Azure AD Connect and password hash synchronization to syn
 
 This article describes how you can add password hash synchronization to your Microsoft 365 test environment, which results in this configuration:
   
-![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
   
 Setting up this test environment involves three phases:
 - [Phase 1: Create the Microsoft 365 simulated enterprise test environment](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
@@ -43,7 +43,7 @@ Setting up this test environment involves three phases:
 
 Follow the instructions in [simulated enterprise base configuration for Microsoft 365](simulated-ent-base-configuration-microsoft-365-enterprise.md). Your resulting configuration looks like this:
   
-![The simulated enterprise base configuration](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
+![The simulated enterprise base configuration.](../media/password-hash-sync-m365-ent-test-environment/Phase1.png)
   
 This configuration consists of:
   
@@ -60,7 +60,7 @@ Next, add the **testlab.<*your public domain*>** domain to your Microsoft 365 tr
 
 Your resulting configuration looks like this:
   
-![The registration of your testlab domain name](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![The registration of your testlab domain name.](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
 This configuration consists of:
 
@@ -127,7 +127,7 @@ Notice that although User1 has domain administrator permissions for the TESTLAB 
 
 Your resulting configuration looks like this:
 
-![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
 This configuration consists of: 
   
@@ -145,4 +145,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

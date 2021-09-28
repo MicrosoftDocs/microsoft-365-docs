@@ -31,7 +31,7 @@ When you set up the new Office 365 Message Encryption capabilities, users in you
   
 ### To manage whether recipients can use social IDs to sign in to the OME portal
   
-1. [Connect to Exchange Online Using Remote PowerShell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEConfiguration cmdlet with the SocialIdSignIn parameter as follows:
 
@@ -57,12 +57,12 @@ If the recipient of a message encrypted by OME doesn't use Outlook, regardless o
   
 ### To manage whether OME generates one-time pass codes
   
-1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-OMEConfiguration cmdlet with the OTPEnabled parameter:
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
    ```
 
    For example, to disable one-time pass codes:
@@ -83,7 +83,7 @@ As an administrator, you can manage whether to display this button to end users.
   
 ### To manage whether the Encrypt button appears in Outlook on the web
   
-1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-IRMConfiguration cmdlet with the -SimplifiedClientAccessEnabled parameter:
 
@@ -113,7 +113,7 @@ For more information, and for a view of the client experience, see [View encrypt
   
 ### To manage whether iOS mail app users can view messages protected by Office 365 Message Encryption
   
-1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-ActiveSyncOrganizations cmdlet with the AllowRMSSupportForUnenlightenedApps parameter:
 
@@ -146,11 +146,11 @@ Regardless of whether you set up service-side decryption of attachments, users c
   
 If you choose not to allow decrypted email attachments, which is the default, users receive a message that states that they don't have the rights to view the attachment.
   
-For more information about how Microsoft 365 implements encryption for emails and email attachments with the Encrypt-Only option, see [Encrypt-Only option for emails.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+For more information about how Microsoft 365 implements encryption for emails and email attachments with the Encrypt-Only option, see [Encrypt-Only option for emails.](/azure/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
   
 ### To manage whether email attachments are decrypted on download from a web browser
   
-1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the Set-IRMConfiguration cmdlet with the DecryptAttachmentForEncryptOnly parameter:
 
@@ -176,7 +176,7 @@ You can use custom branding templates to force recipients to receive a wrapper m
 
 ### Use a custom template to force all external recipients to use the OME Portal and for encrypted email
 
-1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Use a work or school account that has global administrator permissions in your organization and start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Run the New-TransportRule cmdlet:
 
@@ -210,11 +210,11 @@ For detailed information about how you can customize OME for your organization, 
   
 ## Disable the new capabilities for OME
 
-We hope it doesn't come to it, but if you need to, disabling the new capabilities for OME is very straightforward. First, you'll need to remove any mail flow rules you've created that use the new OME capabilities. For information about removing mail flow rules, see [Manage mail flow rules](https://technet.microsoft.com/library/jj657505%28v=exchg.150%29.aspx). Then, complete these steps in Exchange Online PowerShell.
+We hope it doesn't come to it, but if you need to, disabling the new capabilities for OME is very straightforward. First, you'll need to remove any mail flow rules you've created that use the new OME capabilities. For information about removing mail flow rules, see [Manage mail flow rules](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). Then, complete these steps in Exchange Online PowerShell.
   
 ### To disable the new capabilities for OME
   
-1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. If you enabled the **Encrypt** button in Outlook on the web, disable it by running the Set-IRMConfiguration cmdlet with the SimplifiedClientAccessEnabled parameter. Otherwise, skip this step.
 

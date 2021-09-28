@@ -21,7 +21,7 @@ description: Instructions to create and publish retention labels so you can then
 
 # Create retention labels and apply them in apps
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).
@@ -36,7 +36,7 @@ Making retention labels available to people in your organization so that they ca
 
 2. Publish the retention labels by using a retention label policy.
   
-![Diagram of roles and tasks for labels](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+![Diagram of roles and tasks for labels.](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
 Use the following instructions for the two admin steps.
 
@@ -103,12 +103,12 @@ If you publish retention labels to Exchange, it can take up to seven days for th
 
 For example:
   
-![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
+![Diagram of when manual labels take effect.](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
+If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Run the following command:
     
@@ -120,7 +120,7 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using PowerShell, you can see when this process last ran and therefore identify when it will run again.
   
-1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Run these commands.
     
@@ -172,9 +172,9 @@ Use the following sections to understand how to apply retention labels.
 
 To label an item in the Outlook desktop client, select the item. On the **Home** tab on the ribbon, click **Assign Policy**, and then choose the retention label. 
   
-![Assign Policy button](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+![Assign Policy button.](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
   
-You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. 
+You can also right-click an item, click **Assign Policy** in the context menu, and then choose the retention label. When you select multiple items, you can use this method to assign the same retention label to multiple items at once.
 
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email has a retention label applied that has an associated retention period, you can see at a glance when the email expires.
 
@@ -200,28 +200,28 @@ When labels are applied that aren't standard retention labels but mark items as 
 
 #### Applying retention labels in Outlook on the web
 
-To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. 
+To label an item in Outlook on the web, right-click the item \> **Assign policy** \> choose the retention label. Unlike Outlook desktop, you can't use this method if you multi-select items.
   
-![Assign policy menu in Outlook on the web](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
+![Assign policy menu in Outlook on the web.](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
 After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email is classified and has an associated retention period, you can know at a glance when the email will expire.
   
-![Label assigned to email in Outlook on the web](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
+![Label assigned to email in Outlook on the web.](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
 As with the desktop version of Outlook on the web, you can also apply retention labels to folders. Right-click the folder, select **Assign policy**, and change **Use parent folder policy** to the retention label you want to use as that folder's default retention label.
 
 #### Applying retention labels in OneDrive and SharePoint
 
-To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
+To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon.](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
   
 You can also apply a retention label to a folder or document set, and you can set a [default retention label for a document library](#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
-![Apply label list for an item in SharePoint](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
+![Apply label list for an item in SharePoint.](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
 After a retention label is applied to an item, you can view it in the details pane when that item's selected.
   
-![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
-  
+![Applied label shown in Details pane.](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
+
 For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
 
 
@@ -232,10 +232,6 @@ When you publish retention labels to Microsoft 365 groups ([formerly Office 365 
 To retain content for a Microsoft 365 group, use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
-  
-First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
-
-Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 
@@ -247,7 +243,7 @@ For a document library, the default label configuration is done on the **Library
   
 For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
   
-![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
+![Apply label option on library Settings page.](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
 
 #### Label behavior when you use a default label for SharePoint
 
@@ -275,7 +271,7 @@ For example, you can create a rule that applies a specific retention label to al
   
 To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advanced Options** \> **Rules Wizard** \> **apply retention policy**.
   
-![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
+![Rules wizard with option to apply retention policies.](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
 
 Although the UI refers to retention policies, it's your retention labels that display here and can be selected, not your retention policies.
 
@@ -287,6 +283,14 @@ Some settings can't be changed after the label or policy is created and saved, w
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
+### Deleting retention labels
+
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+
+However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
+
 ## Locking the policy to prevent changes
 
 If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
@@ -296,5 +300,5 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
 - [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](automate-event-driven-retention.md)
+- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
 - [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)

@@ -35,7 +35,7 @@ The following table highlights a few differences between the internet and Azure 
 |**Differences in network planning**|**Internet network connection**|**ExpressRoute network connection**|
 |:-----|:-----|:-----|
 | Access to required internet services, including;  <br/>  DNS name resolution  <br/>  Certificate revocation verification  <br/>  Content Delivery Networks (CDNs)  <br/> |Yes  <br/> |Requests to Microsoft owned DNS and/or CDN infrastructure may use the ExpressRoute network.  <br/> |
-| Access to Office 365 services, including;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office in a browser  <br/>  Office 365 Portal and Authentication  <br/> |Yes, all applications and features  <br/> |Yes, [specific applications and features](https://aka.ms/o365endpoints) <br/> |
+| Access to Office 365 services, including;  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  Office in a browser  <br/>  Office 365 Portal and Authentication  <br/> |Yes, all applications and features  <br/> |Yes, [specific applications and features](./urls-and-ip-address-ranges.md) <br/> |
 |On-premises security at perimeter.  <br/> |Yes  <br/> |Yes  <br/> |
 |High availability planning.  <br/> |Failover to an alternate internet network connection  <br/> |Failover to an alternate ExpressRoute connection  <br/> |
 |Direct connection with a predictable network profile.  <br/> |No  <br/> |Yes  <br/> |
@@ -47,7 +47,7 @@ Expand the titles below for more network planning guidance. We've also recorded 
 
 If you're using an existing Azure ExpressRoute circuit and would like to add Office 365 connectivity over this circuit, you should look at the number of circuits, egress locations, and size of the circuits to ensure they'll meet the needs of your Office 365 usage. Most customers require additional bandwidth and many require additional circuits.
   
-To enable access to Office 365 over your existing Azure ExpressRoute circuits, [configure the route filters](https://docs.microsoft.com/azure/expressroute/how-to-routefilter-portal) to ensure the Office 365 services are accessible.
+To enable access to Office 365 over your existing Azure ExpressRoute circuits, [configure the route filters](/azure/expressroute/how-to-routefilter-portal) to ensure the Office 365 services are accessible.
   
 The Azure ExpressRoute subscription is customer-centric, meaning subscriptions are tied to customers. As a customer, you can have multiple Azure ExpressRoute circuits and can access many Microsoft cloud resources over those circuits. For example, you can choose to access an Azure hosted virtual machine, an Office 365 test tenant, and an Office 365 production tenant over a pair of redundant Azure ExpressRoute circuits.
   
@@ -71,13 +71,13 @@ To find the right level of bandwidth, the best mechanism is to test your existin
   
 Once you have an estimated baseline that includes all network applications, pilot Office 365 with a small group that comprises the different profiles of people in your organization to determine actual usage, and use the two measurements to estimate the amount of bandwidth you'll require for each office location. If there are any latency or TCP congestion issues found in your testing, you may need to move the egress closer to the people using Office 365 or remove intensive network scanning such as SSL decryption/inspection.
   
-All of our recommendations on what type of network processing is recommended applies to both ExpressRoute and Internet circuits. The same is true for the rest of the guidance on our [performance tuning site](https://aka.ms/tune).
+All of our recommendations on what type of network processing is recommended applies to both ExpressRoute and Internet circuits. The same is true for the rest of the guidance on our [performance tuning site](./network-planning-and-performance.md).
   
 ## Applying security controls to Azure ExpressRoute for Office 365 scenarios
 
 Securing Azure ExpressRoute connectivity starts with the same principles as securing Internet connectivity. Many customers choose to deploy network and perimeter controls along the ExpressRoute path connecting their on-premises network to Office 365 and other Microsoft clouds. These controls may include firewalls, application proxies, data leakage prevention, intrusion detection, intrusion prevention systems, and so on. In many cases customers apply different levels of controls to traffic initiated from on-premises going to Microsoft, versus traffic initiated from Microsoft going to customer on-premises network, versus traffic initiated from on-premises going to a general Internet destination.
   
-Here's a few examples of integrating security with the [ExpressRoute connectivity model](https://docs.microsoft.com/azure/expressroute/expressroute-connectivity-models) you choose to deploy.
+Here's a few examples of integrating security with the [ExpressRoute connectivity model](/azure/expressroute/expressroute-connectivity-models) you choose to deploy.
 
 |**ExpressRoute integration option**|**Network security perimeter model**|
 |:-----|:-----|
@@ -122,9 +122,9 @@ Outside of your network, Office 365, ExpressRoute, and your ExpressRoute provide
   
 ### Service Availability
   
-- Office 365 services are covered by well-defined [service level agreements](https://technet.microsoft.com/library/office-365-service-level-agreement.aspx), which include uptime and availability metrics for individual services. One reason Office 365 can maintain such high service availability levels is the ability for individual components to seamlessly failover between the many Microsoft datacenters, using the global Microsoft network. This failover extends from the datacenter and network to the multiple Internet egress points, and enables failover seamlessly from the perspective of the people using the service.
+- Office 365 services are covered by well-defined [service level agreements](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement), which include uptime and availability metrics for individual services. One reason Office 365 can maintain such high service availability levels is the ability for individual components to seamlessly failover between the many Microsoft datacenters, using the global Microsoft network. This failover extends from the datacenter and network to the multiple Internet egress points, and enables failover seamlessly from the perspective of the people using the service.
 
-- ExpressRoute [provides a 99.9% availability SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) on individual dedicated circuits between the Microsoft Network Edge and the ExpressRoute provider or partner infrastructure. These service levels are applied at the ExpressRoute circuit level, which consists of [two independent interconnects](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) between the redundant Microsoft equipment and the network provider equipment in each peering location.
+- ExpressRoute [provides a 99.9% availability SLA](https://azure.microsoft.com/support/legal/sla/expressroute/v1_0/) on individual dedicated circuits between the Microsoft Network Edge and the ExpressRoute provider or partner infrastructure. These service levels are applied at the ExpressRoute circuit level, which consists of [two independent interconnects](/azure/expressroute/expressroute-introduction) between the redundant Microsoft equipment and the network provider equipment in each peering location.
 
 ### Provider Availability
   
@@ -177,16 +177,16 @@ If Woodgrove was unable to have multiple Azure ExpressRoute circuits per region,
   
 Leveraging the internet as a backup configuration isn't recommended. This breaks Woodgrove's reliability principle, resulting in an inconsistent experience using the connection. Additionally, manual configuration would be required to failover considering the BGP advertisements that have been configured, NAT configuration, DNS configuration, and the proxy configuration. This added failover complexity increases the time to recover and decreases their ability to diagnose and troubleshoot the steps involved.
   
-Still have questions about how to plan for and implement traffic management or Azure ExpressRoute? Read the rest of our [network and performance guidance](https://aka.ms/tune) or the [Azure ExpressRoute FAQ](https://azure.microsoft.com/documentation/articles/expressroute-faqs/).
+Still have questions about how to plan for and implement traffic management or Azure ExpressRoute? Read the rest of our [network and performance guidance](./network-planning-and-performance.md) or the [Azure ExpressRoute FAQ](/azure/expressroute/expressroute-faqs).
   
 ## Working with Azure ExpressRoute providers
 <a name="BKMK_high-availability"> </a>
 
-Choose the locations of your circuits based on your bandwidth, latency, security, and high availability planning. Once you know the optimal locations you'd like to place circuits [review the current list of providers by region](https://azure.microsoft.com/documentation/articles/expressroute-locations/).
+Choose the locations of your circuits based on your bandwidth, latency, security, and high availability planning. Once you know the optimal locations you'd like to place circuits [review the current list of providers by region](/azure/expressroute/expressroute-locations).
   
 Work with your provider or providers to select the best connectivity options, point-to-point, multi-point, or hosted. Remember, you can mix and match the connectivity options so long as the bandwidth and other redundant components support your routing and high availability design.
   
-Here's a short link you can use to come back: [https://aka.ms/planningexpressroute365](https://aka.ms/planningexpressroute365)
+Here's a short link you can use to come back: [https://aka.ms/planningexpressroute365]()
   
 ## Related Topics
 <a name="BKMK_high-availability"> </a>

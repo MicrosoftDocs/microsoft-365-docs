@@ -1,28 +1,34 @@
 ---
-title: "Anti-spam message headers"
-f1.keywords:
-- NOCSH
+title: Anti-spam message headers
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection: 
-- M365-security-compliance
-- m365initiative-defender-office365
-description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+description: Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Anti-spam message headers in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In all Microsoft 365 organizations, Exchange Online Protection (EOP) scans all incoming messages for spam, malware, and other threats. The results of these scans are added to the following header fields in messages:
 
@@ -64,7 +70,7 @@ The individual fields and values are described in the following table.
 |`LANG`|The language in which the message was written, as specified by the country code (for example, ru_RU for Russian).|
 |`PTR:[ReverseDNS]`|The PTR record (also known as the reverse DNS lookup) of the source IP address.|
 |`SCL`|The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam. For more information, see [Spam confidence level (SCL)](spam-confidence-levels.md).|
-|`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.1: Default value. The message contains some or all of the following elements: a phishing URL, other phishing content, or was marked as phishing by on-premises Exchange.</li><li>9.11: [Intra-org or self-to-self spoofing](anti-spoofing-protection.md#different-types-of-spoofing). The safety tip for intra-org spoofing will be added to the message.</li><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or a protected user that's specified in an anti-phishing policy in Microsoft Defender for office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li><li>9.21: [Cross-domain spoofing](anti-spoofing-protection.md#different-types-of-spoofing). The message failed anti-spoofing checks. The sender's email domain in the From header does not authenticate and is an external domain. Used in combination with [composite authentication](#authentication-results-message-header-fields).</li><li>9.22: Same as 9.21, except that the user has a safe sender that was overridden.</li><li>9.23: Same as 9.22, except that the organization has an allowed sender or domain that was overridden.</li><li>9.24: Same as 9.23, except that the user has an Exchange mail flow rule (also known as a transport rule) that was overridden.</li></ul>|
+|`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or [a protected user that's specified in an anti-phishing policy](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Microsoft Defender for Office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li></ul>|
 |`SFV:BLK`|Filtering was skipped and the message was blocked because it was sent from an address in a user's Blocked Senders list. <p> For more information about how admins can manage a user's Blocked Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Spam filtering marked the message as non-spam and the message was sent to the intended recipients.|
 |`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
@@ -148,7 +154,7 @@ The following table describes the fields and possible values for each email auth
 |`action`|Indicates the action taken by the spam filter based on the results of the DMARC check. For example: <ul><li>**oreject** or **o.reject**: Stands for override reject. In this case Microsoft 365 uses this action when it receives a message that fails the DMARC check from a domain whose DMARC TXT record has a policy of p=reject. Instead of deleting or rejecting the message, Microsoft 365 marks the message as spam. For more information on why Microsoft 365 is configured this way, see [How Microsoft 365 handles inbound email that fails DMARC](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc).</li><li>**pct.quarantine**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to quarantine, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**pct.reject**: Indicates that a percentage less than 100% of messages that do not pass DMARC will be delivered anyway. This means that the message failed DMARC and the policy was set to reject, but the pct field was not set to 100% and the system randomly determined not to apply the DMARC action, as per the specified domain's policy.</li><li>**permerror**: A permanent error occurred during DMARC evaluation, such as encountering an incorrectly formed DMARC TXT record in DNS. Attempting to resend this message isn't likely to end with a different result. Instead, you may need to contact the domain's owner in order to resolve the issue.</li><li>**temperror**: A temporary error occurred during DMARC evaluation. You may be able to request that the sender resend the message later in order to process the email properly.</li></ul>|
 |`compauth`|Composite authentication result. Used by Microsoft 365 to combine multiple types of authentication such as SPF, DKIM, DMARC, or any other part of the message to determine whether or not the message is authenticated. Uses the From: domain as the basis of evaluation.|
 |`dkim`|Describes the results of the DKIM check for the message. Possible values include: <ul><li>**pass**: Indicates the DKIM check for the message passed.</li><li>**fail (reason)**: Indicates the DKIM check for the message failed and why. For example, if the message was not signed or the signature was not verified.</li><li>**none**: Indicates that the message was not signed. This may or may not indicate that the domain has a DKIM record or the DKIM record does not evaluate to a result, only that this message was not signed.</li></ul>|
-|`dmarc`|Describes the results of the DMARC check for the message. Possible values include: <ul><li>**pass**: Indicates the DMARC check for the message passed.</li><li>**fail**: Indicates the DMARC check for the message failed.</li><li>**bestguesspass**: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed. This is because the domain in the `5321.MailFrom` address (also known as the MAIL FROM address, P1 sender, or envelope sender) matches the domain in the `5322.From` address (also known as the From address or P2 sender).</li><li>**none**: Indicates that no DMARC TXT record exists for the sending domain in DNS.|
+|`dmarc`|Describes the results of the DMARC check for the message. Possible values include: <ul><li>**pass**: Indicates the DMARC check for the message passed.</li><li>**fail**: Indicates the DMARC check for the message failed.</li><li>**bestguesspass**: Indicates that no DMARC TXT record for the domain exists, but if one had existed, the DMARC check for the message would have passed.</li><li>**none**: Indicates that no DMARC TXT record exists for the sending domain in DNS.|
 |`header.d`|Domain identified in the DKIM signature if any. This is the domain that's queried for the public key.|
 |`header.from`|The domain of the `5322.From` address in the email message header (also known as the From address or P2 sender). Recipient see the From address in email clients.|
 |`reason`|The reason the composite authentication passed or failed. The value is a 3-digit code. For example: <ul><li>**000**: The message failed explicit authentication (`compauth=fail`). For example, the message received a DMARC fail with an action of quarantine or reject.</li><li>**001**: The message failed implicit authentication (`compauth=fail`). This means that the sending domain did not have email authentication records published, or if they did, they had a weaker failure policy (SPF soft fail or neutral, DMARC policy of `p=none`).</li><li>**002**: The organization has a policy for the sender/domain pair that is explicitly prohibited from sending spoofed email. This setting is manually set by an admin.</li><li>**010**: The message failed DMARC with an action of reject or quarantine, and the sending domain is one of your organization's accepted-domains (this is part of self-to-self, or intra-org, spoofing).</li><li>**1xx** or **7xx**: The message passed authentication (`compauth=pass`). The last two digits are internal codes used by Microsoft 365.</li><li>**2xx**: The message soft-passed implicit authentication (`compauth=softpass`). The last two digits are internal codes used by Microsoft 365.</li><li>**3xx**: The message was not checked for composite authentication (`compauth=none`).</li><li>**4xx** or **9xx**: The message bypassed composite authentication (`compauth=none`). The last two digits are internal codes used by Microsoft 365.</li><li>**6xx**: The message failed implicit email authentication, and the sending domain is one of your organization's accepted domains (this is part of self-to-self or intra-org spoofing).</li></ul>|

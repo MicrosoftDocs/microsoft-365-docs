@@ -2,14 +2,13 @@
 title: "Set up anti-phishing protection"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -32,16 +31,13 @@ Phishing is a malicious attack where an email looks like it was sent from a fami
 
 ## Try it!
 
-1. In the admin center at [https://admin.microsoft.com](https://admin.microsoft.com), select **Security**, **Threat Management**, **Policy**, then **ATP Anti-phishing**.
+1. In the admin center at [https://admin.microsoft.com](https://admin.microsoft.com), select **Security**, **Policies & rules**, **Threat Policies**, then **Anti-phishing**.
 1. Select **Default Policy** to refine it.
-1. In the **Impersonation** section, select **Edit**.
-1. Go to **Add domains to protect** and select the toggle to automatically include the domains you own.
-1. Go to **Actions**, open the drop-down **If email is sent by an impersonated user**, and choose the action you want.
-
-    Open the drop-down **If email is sent by an impersonated domain** and choose the action you want.
-1. Select **Turn on impersonation safety tips**. Choose whether tips should be provided to users when the system detects impersonated users, domains, or unusual characters. Select **Save**.
-1. Select **Mailbox intelligence** and verify that it's turned on. This allows your email to be more efficient by learning usage patterns.
+1. In the **Phishing threshold & protection** section, select **Edit protection settings**.
+1. Choose **Enable domains to protect** and select **Include the domains you own** and **Include custom domain**, then select **Manage custom domain(s)** to add a domain.
 1. Choose **Add trusted senders and domains**. Here you can add email addresses or domains that shouldn't be classified as an impersonation.
-1. Choose **Review your settings**, make sure everything is correct, select **Save**, then **Close**.
+1. Choose **Enable Mailbox intelligence** and **Enable Intelligence for impersonation protection** to enable enhanced impersonation results based on each user's individual sender map.
+1. Select **Enable Spoof intelligence** to choose how you want to filter email from senders who are spoofing domains.
+1. Select **Save**, then **Close**.
 
     Your organization now has better protection from phishing threats.

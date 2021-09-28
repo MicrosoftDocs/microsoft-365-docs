@@ -1,29 +1,34 @@
 ---
 title: Create team sites - Political campaign dev environment
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 05/21/2018
 audience: ITPro
 ms.topic: article
-ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
-ms.service: O365-seccomp
+ms.collection:
+  - Ent_O365
+  - Strat_O365_Enterprise
+
 localization_priority: Priority
 search.appverid:
-- MET150
+  - MET150
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Summary: Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment."
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Create team sites in a political campaign dev/test environment
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+
+- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
  **Summary:** Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment.
 
@@ -37,43 +42,46 @@ First, follow the instructions in [Configure groups and users for a political ca
 
 In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.
 
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the Microsoft 365 admin center (<https://admin.microsoft.com>) with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. From the **Microsoft Office Home** tab, click the **Admin** tile.
+2. From the **Home** page where you start, click **Show all**. In the **Admin centers** section that appears, click **Compliance**.
 
-3. From the new **Microsoft 365 admin center** tab of your browser, click **Admin centers > Security & Compliance**.
+3. From the **Home** page of the Microsoft 365 compliance center, go to the **Solutions** section \> **Information protection**. To go directly to the **Information protection** page, use <https://compliance.microsoft.com//informationprotection>.
 
-4. From the new **Home - Security & Compliance** tab of your browser, click **Classifications > Labels**.
+4. On the **Information protection** page, verify that the **Label** tag is selected, and then click  ![Create a label icon.](../../media/m365-cc-sc-create-icon.png) **Create a label**.
 
-5. From the **Home > Labels** pane, click **Create a label**.
+5. The **New sensitivity label** wizard opens. On the **Name & description** step, enter the following values:
+   - **Name**: Type **Internal**.
+   - **Display name**
+   - **Description for users**
 
-6. On the **Name your label** pane, type **Internal**, and then click **Next**.
+   When you're finished, click **Next**.
 
-7. On the **Label settings** pane, click **Next**.
+6. On the **Label settings** pane, click **Next**.
 
-8. On the **Review your settings** pane, click **Create this label**, and then click **Close**.
+7. On the **Review your settings** pane, click **Create this label**, and then click **Close**.
 
-9. Repeat steps 5-8 for these additional labels:
+8. Repeat steps 5-8 for these additional labels:
 
    - Private
    - Sensitive
    - Highly Confidential
 
-10. From the **Home > Labels** pane, click **Publish labels**.
+9. From the **Home > Labels** pane, click **Publish labels**.
 
-11. On the **Choose labels to publish** pane, click **Choose labels to publish**.
+10. On the **Choose labels to publish** pane, click **Choose labels to publish**.
 
-12. On the **Choose labels** pane, click **Add** and select all four labels.
+11. On the **Choose labels** pane, click **Add** and select all four labels.
 
-13. Click **Done**.
+12. Click **Done**.
 
-14. On the **Choose labels to publish** pane, click **Next**.
+13. On the **Choose labels to publish** pane, click **Next**.
 
-15. On the **Choose locations** pane, click **Next**.
+14. On the **Choose locations** pane, click **Next**.
 
-16. On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.
+15. On the **Name your policy** pane, type **Campaign** in **Name**, and then click **Next**.
 
-17. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
+16. On the **Review your settings** pane, click **Publish labels**, and then click **Close**.
 
 ## Phase 3: Create your SharePoint Online team sites
 
@@ -361,7 +369,7 @@ Next, configure a DLP policy that blocks users when they share a document on a S
 
 20. In the **Review your settings** pane, click **Create**, and then click **Close**.
 
-Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center](/information-protection/deploy-use/activate-office365).
 
 Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:
 
@@ -407,7 +415,7 @@ Next, configure Azure Information Protection with a new scoped policy and sub-la
 
 You are now ready to begin creating documents in these four sites and test access to them with various user accounts.
 
-To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
+To protect a document with Azure Information Protection and this new label, you must [install the Azure Information Protection client](/information-protection/rms-client/install-client-app) on a test machine, install Office from the admin center, and then sign in from Microsoft Word with an account in the **Senior and strategic staff** group of your trial subscription.
 
 ## See Also
 
@@ -415,6 +423,6 @@ To protect a document with Azure Information Protection and this new label, you 
 
 [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
 
-[Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Cloud adoption Test Lab Guides (TLGs)](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
+[Microsoft 365 solution and architecture center](../../solutions/index.yml)

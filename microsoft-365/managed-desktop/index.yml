@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Managed Desktop documentation # < 60 chars
-summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way gives users a secure and productive device experience that IT pros can trust. # < 160 chars
+summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way that gives users a secure and productive device experience that IT pros can trust. # < 160 chars
 
 metadata:
   title: Microsoft Managed Desktop documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -24,9 +24,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft Managed Desktop?
-            url: /microsoft-365/managed-desktop/intro/
+            url: ./intro/index.md
           - text: Service description
-            url: /microsoft-365/managed-desktop/service-description
+            url: ./service-description/index.md
       - linkListType: get-started
         links:
           - text: Get ready
@@ -34,7 +34,7 @@ landingContent:
           - text: Get started
             url: get-started/index.md
           - text: Working with Microsoft Managed Desktop
-            url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+            url: ./working-with-managed-desktop/index.md
   
   # Card (optional)
   - title: Articles and blog posts
@@ -69,7 +69,3 @@ landingContent:
             url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
           - text: The Shiproom / Lloyds Banking Group / Episode 25 - Leadership amid rapid transformation
             url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-            
-
-
-

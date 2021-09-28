@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to set device security policies and access rules."
@@ -24,7 +25,7 @@ description: "Use Basic Mobility and Security to set device security policies an
 
 You can manage and secure mobile devices when they're connected to your Microsoft 365 organization by using Basic Mobility and Security. Mobile devices like smartphones and tablets that are used to access work email, calendar, contacts, and documents play a big part in making sure that employees get their work done anytime, from anywhere. So it’s critical that you help protect your organization's information when people use devices. You can use Basic Mobility and Security to set device security policies and access rules, and to wipe mobile devices if they’re lost or stolen.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Basic Mobility and Security Setup":::
+:::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Basic Mobility and Security Setup.":::
 
 ## What types of devices can you manage?
 
@@ -44,7 +45,7 @@ Here's a summary of the steps:
 
 **Step 3:** Create device policies and apply them to groups of users. When you do this, your users get an enrollment message on their device, and when they've completed enrollment, their devices are restricted by the policies you've set up for them. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md). 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings":::
+:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Security and Mobility policy settings.":::
 
 ## Device management tasks
 
@@ -52,14 +53,11 @@ After you've got Basic Mobility and Security set up and your users have enrolled
 
 ## Other ways to manage devices and apps
 
-If you just need mobile app management (MAM), perhaps for people updating work projects on their own devices, Intune provides another option besides enrolling and managing devices. An Intune subscription allows you to set up MAM policies by using the Azure portal, even if people's devices aren't enrolled in Intune. For more info, see [App protection policies overview](https://go.microsoft.com/fwlink/?LinkId=2132517).
+If you just need mobile app management (MAM), perhaps for people updating work projects on their own devices, Intune provides another option besides enrolling and managing devices. An Intune subscription allows you to set up MAM policies by using the Azure portal, even if people's devices aren't enrolled in Intune. For more info, see [App protection policies overview](/mem/intune/apps/app-protection-policy).
 
-## Related topics
+## Related content
 
-[Set up Basic Mobility and Security](set-up.md)
-
-[Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md)
-
-[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md)
-
-[Get details about devices managed by Basic Mobility and Security](get-details-about-managed-devices.md)
+[Set up Basic Mobility and Security](set-up.md) (article)\
+[Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
+[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)\
+[Get details about devices managed by Basic Mobility and Security](get-details-about-managed-devices.md) (article)

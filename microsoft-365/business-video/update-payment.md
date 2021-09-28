@@ -2,14 +2,13 @@
 title: "Update your payment method"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -24,11 +23,17 @@ search.appverid:
 description: "Learn how to update your payment method for Microsoft 365 for business."
 ---
 
-# Update yor payment method for your subscription
+# Update the payment method for your subscription
+
+## Watch: Update your payment method
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
 You can easily update the payment method for your Microsoft 365 Business subscription. You can change details such as the credit card used, the name, or the address.
+
+## Before you begin
+
+You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Try it!
 

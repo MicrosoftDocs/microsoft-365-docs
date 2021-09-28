@@ -1,7 +1,7 @@
 ---
 title: "Active user in Microsoft 365 usage reports"
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -28,7 +28,7 @@ An active user of Microsoft 365 products for [Microsoft 365 usage analytics](usa
   
 |**Product**|**Definition of an active user**|**Notes**|
 |:-----|:-----|:-----|
-|Exchange Online  <br/> |Any user who has read or sent an email.  <br/> |No calendar information is represented, this will be added in an upcoming update.  <br/> |
+|Exchange Online  <br/> |Any user who has performed any of the following actions: Mark as read, send messages, create appointments, send meeting requests, accept (as tentative) or decline meeting requests, cancel meetings.  <br/> |No calendar information is represented, this will be added in an upcoming update.  <br/> |
 |SharePoint Online  <br/> |Any user who has interacted with a file by creating, modifying, viewing, deleting, sharing internally or externally, or synchronizing to clients on any site or viewed a page on any site.  <br/> |The active user metric for SharePoint Online in the Microsoft 365 Usage Analytics template app only reflect users who did file activity against a SharePoint Team site or a Group site. The template app will be updated to synchronize the definition to the same as that on the usage reports in the admin center.  <br/> |
 |OneDrive for Business  <br/> |Any user who has interacted with a file by creating, modifying, viewing, deleting, sharing internally or externally, or synchronizing to clients.  <br/> ||
 |Yammer  <br/> |Any user who has read, posted, or liked a message on Yammer.  <br/> ||

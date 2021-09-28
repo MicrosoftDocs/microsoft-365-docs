@@ -1,29 +1,35 @@
 ---
-title: "How EOP validates the From address to prevent phishing"
-f1.keywords:
-- NOCSH
+title: How EOP validates the From address to prevent phishing
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- OWC150
-- MET150
+search.appverid: 
+  - OWC150
+  - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
-ms.collection:
-- M365-security-compliance
-description: "Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing."
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the types of email addresses that are accepted or rejected by Exchange Online Protection (EOP) and Outlook.com to help prevent phishing.
 ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # How EOP validates the From address to prevent phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Phishing attacks are a constant threat to any email organization. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Exchange Online Protection (EOP) and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this article. This enforcement was enabled in November 2017.
 
@@ -31,7 +37,7 @@ Phishing attacks are a constant threat to any email organization. In addition to
 
 - If you regularly receive email from organizations that have malformed From addresses as described in this article, encourage these organizations to update their email servers to comply with modern security standards.
 
-- The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
+- The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](/archive/blogs/tzink/what-do-we-mean-when-we-refer-to-the-sender-of-an-email).
 
 ## An overview of email message standards
 

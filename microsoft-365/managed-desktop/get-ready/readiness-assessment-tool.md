@@ -1,6 +1,6 @@
 ---
-title: Readiness assessment tool
-description:  Explains the checks the tool runs and the meaning of the results
+title: Readiness assessment tools
+description:  Explains the two tools, the checks they run, and the meaning of the results
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
@@ -9,15 +9,22 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
-# Readiness assessment tool
+# Readiness assessment tools
 
-For the smoothest possible experience when you enroll in Microsoft Managed Desktop, there are a number of settings and other parameters you must set ahead of time. You can use this tool to check those settings and receive detailed steps for fixing any that aren't right.
+For the smoothest possible experience when you enroll in Microsoft Managed Desktop, there are settings and other parameters you must set ahead of time, and certain device and network requirements to meet. One tool, accessed through the Microsoft Managed Desktop Admin portal, checks management-related settings. Another tool, which is downloadable, checks individual device requirements and network settings. You can use these tools to check those settings and receive detailed steps for fixing any that aren't right.
 
-The tool checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form.  You can choose to delete the data we collect.
+## Downloadable readiness assessment checker for devices and network
 
-Anyone with at least the Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multifactor authentication](readiness-assessment-fix.md#multifactor-authentication) require additional permissions.
+For details about using the downloadable readiness assessment checker, see [Downloadable readiness assessment checker](readiness-assessment-downloadable.md).
+
+## Online readiness assessment tool for management settings
+
+The [online tool](https://aka.ms/mmdart) checks settings in Microsoft Endpoint Manager (specifically, Microsoft Intune), Azure Active Directory (Azure AD), and Microsoft 365 to ensure they will work with Microsoft Managed Desktop. Microsoft Managed Desktop retains the data associated with these checks for 12 months after the last time you run a check in your Azure AD organization (tenant). After 12 months, we retain it in de-identified form. You can choose to delete the data we collect.
+
+Anyone with at least the Global Reader or Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multifactor authentication](readiness-assessment-fix.md#multifactor-authentication) require additional permissions.
  
 The assessment tool checks these items:
 
@@ -78,3 +85,17 @@ For each check, the tool will report one of four possible results:
 ## After enrollment
 
 After you've completed enrollment in Microsoft Managed Desktop, remember to go back and adjust certain Intune and Azure AD settings. For details, see [Adjust settings after enrollment](../get-started/conditional-access.md).
+
+## Steps to get ready for Microsoft Managed Desktop
+
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Run readiness assessment tools (this article).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review [prerequisites for guest accounts](guest-accounts.md).
+1. Check [network configuration](network.md).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. [Prepare apps](apps.md).
+1. [Prepare mapped drives](mapped-drives.md).
+1. [Prepare printing resources](printing.md).
+1. Address [device names](address-device-names.md).

@@ -2,20 +2,20 @@
 title: "What is an admin in Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -39,7 +39,7 @@ Here's how to change a user role to an administrator role:
 
 1. While signed into Microsoft 365, select the app launcher. If you see the Admin button, then you're an admin.
 1. Select **Admin** to go to the Microsoft 365 admin center.
-1. In the left navigation pane, select **Users**, then **Active users**.
+1. In the left navigation pane, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select the person who you want to make an admin. The user's details appear in the right dialog box.
 1. Choose **Manage roles**.
 1. Clear the **User (no administrator access)** check box, and then select one of the admin roles. To learn more about a role, hover over the exclamation mark (!) and read the tool tip. To give the user the same role as  yours, select **Global administrator**.
@@ -51,7 +51,7 @@ You can also create a dedicated admin account for an IT person or service:
 
 1. While signed into Microsoft 365, select the app launcher.
 1. Select **Admin** to go to the Microsoft 365 admin center.
-1. In the left navigation pane, select **Users**, then **Active users**.
+1. In the left navigation pane, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Select **Add a user**.
 1. Enter the user's **First name** and **Last name**, **Display name**, and **Username**, and then select **Next**.
 1. Choose **Create user without product license**. This adds a new user, but you don't have to pay for a monthly subscription. Select **Next**.

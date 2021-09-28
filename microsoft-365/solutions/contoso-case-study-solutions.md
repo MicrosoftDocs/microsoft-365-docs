@@ -4,7 +4,7 @@ author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
@@ -27,10 +27,10 @@ First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md),
 
 Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
-- [COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md)
+- [COVID-19 response and infrastructure for hybrid work](contoso-remote-onsite-work.md)
 
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 
-- [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](/MicrosoftTeams/voice-case-study-overview)
 
 - [Configure an offensive language policy for Microsoft Teams, Exchange, and Yammer communications](../compliance/communication-compliance-case-study.md)

@@ -24,14 +24,14 @@ description: "How to activate and use the Rights Management service with Microso
 You must activate the Rights Management service (RMS) before you can use the Information Rights Management (IRM) features of Microsoft 365 applications and services. After you activate RMS, your organization can start to protect important documents and emails by using Azure RMS. This information protection solution can protect all file types and integrates with client applications like Excel, Microsoft Word, and others, Exchange Online and SharePoint Online, and servers such as Microsoft Exchange and Microsoft SharePoint.
   
 > [!TIP]
-> If you're not sure whether you need Rights Management, check whether your organization has one or more of [these business problems or requirements](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management). 
+> If you're not sure whether you need Rights Management, check whether your organization has one or more of [these business problems or requirements](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management). 
   
 Use these links for more information about RMS:
   
-- To learn more about RMS, see [What is Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms).
+- To learn more about RMS, see [What is Azure Rights Management](/rights-management/understand-explore/what-is-azure-rms).
 
-- If you're new to RMS, see [Overview of Azure Rights Management](https://docs.microsoft.com/rights-management/understand-explore/azure-rights-management).
+- If you're new to RMS, see [Overview of Azure Rights Management](/rights-management/understand-explore/azure-rights-management).
 
-- For an overview of the deployment steps see the [Azure Rights Management deployment road map](https://docs.microsoft.com/rights-management/plan-design/deployment-roadmap).
+- For an overview of the deployment steps see the [Azure Rights Management deployment road map](/rights-management/plan-design/deployment-roadmap).
 
-- For instructions about activating RMS for Microsoft 365, see [Activating the protection service from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+- For instructions about activating RMS for Microsoft 365, see [Activating the protection service from Azure Information Protection](/azure/information-protection/activate-service).

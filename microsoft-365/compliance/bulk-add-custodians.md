@@ -29,7 +29,7 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 3. On the **Import custodians** flyout page, click **Download a blank template** to download a custodian template CSV file.
 
-   ![Download a CSV template from Import custodians flyout page](../media/ImportCustodians1.png)
+   ![Download a CSV template from Import custodians flyout page.](../media/ImportCustodians1.png)
 
 4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for information about the required properties in the CSV file.
 
@@ -48,10 +48,13 @@ After you download the CSV custodian template, you can add custodians and their 
 |**Custodian contactEmail**     |The custodian's UPN email address. For example, sarad@contoso.onmicrosoft.com.           |
 |**Exchange Enabled** | TRUE/FALSE value to include or not include the custodian's mailbox.      |
 |**OneDrive Enabled** | TRUE/FALSE value to include or not included the custodian's OneDrive for Business account. |
-|**Is OnHold**        | TRUE/FALSE value to indicate whether to place the custodian data sources on hold.       |
+|**Is OnHold**        | TRUE/FALSE value to indicate whether to place the custodian data sources on hold. <sup>1</sup>     |
 |**Workload1 Type**         |String value indicating the type of data source to associate with the custodian. Possible values include: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
 |**Workload1 Location**     | Depending on your workload type, this would be the location of the data source. For example, the email address for an Exchange mailbox or the URL for a SharePoint site. |
 |||
+
+> [!NOTE]
+> <sup>1</sup> You can place a maximum of 1,000 mailboxes and 100 sites on hold by using the custodian import process and CSV file. You can use this process to add more than 1,000 custodians to a case, but the hold limits still apply. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 
 Here's an example of a CSV file with custodian information:<br/><br/>
 

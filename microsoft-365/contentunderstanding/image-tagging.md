@@ -6,8 +6,11 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.custom: admindeeplinkMAC
 search.appverid: 
-ms.collection: enabler-strategic
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Learn about image tagging in SharePoint Syntex'
@@ -35,7 +38,7 @@ After you [set up SharePoint Syntex](set-up-content-understanding.md), you can c
 
 To turn image tagging on or off
 
-1. In the Microsoft 365 admin center, click **Setup**.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 
 2. Under **Organizational knowledge**, click **Automate content understanding**.
 
@@ -47,4 +50,4 @@ To turn image tagging on or off
 
 6. Click **Save**.
 
-    ![Screenshot of image tagging control](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+    ![Screenshot of image tagging control.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)

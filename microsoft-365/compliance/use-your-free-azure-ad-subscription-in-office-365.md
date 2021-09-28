@@ -16,7 +16,9 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription."
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Use your free Azure Active Directory subscription
@@ -43,8 +45,8 @@ Use a private browsing session (not a regular session) to access the Azure porta
 
 ## More information
 
-- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+- A free Azure Active Directory subscription does not include the Sign-ins activity report. To record sign-in activity (which can be useful in a data breach), you need an Azure Active Directory Premium subscription. For more information, see [How long does Azure AD store the data?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-- You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> **Azure Active Directory**.
+- You can also access the **Azure Active Directory** admin center from the Microsoft 365 admin center. In the left navigation pane of the Microsoft 365 admin center, click **Admin centers** \> [**Azure Active Directory**](https://go.microsoft.com/fwlink/p/?linkid=2067268).
 
-- For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
+- For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](/azure/active-directory/active-directory-administer).

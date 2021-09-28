@@ -1,29 +1,35 @@
 ---
-title: "What&apos;s the difference between junk email and bulk email?"
-f1.keywords:
-- NOCSH
+title: What&apos;s the difference between junk email and bulk email?
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
+
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: 
+  - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP)."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # What's the difference between junk email and bulk email in EOP?
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, customers sometimes ask: "what's the difference between junk email and bulk email?" This topic explains the difference and describes the controls that are available in EOP.
 
@@ -45,6 +51,6 @@ Anti-spam polices have a default BCL threshold that's used to identify bulk emai
 
 - [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-- [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)
+- [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
 Another option that's easy to overlook: if a user complains about receiving bulk email, but the messages are from reputable senders that pass spam filtering in EOP, have the user check for a unsubscribe option in the bulk email message.

@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
@@ -17,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Curacao
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 +1 377 302 1308

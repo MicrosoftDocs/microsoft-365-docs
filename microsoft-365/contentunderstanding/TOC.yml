@@ -17,30 +17,59 @@
           href: create-a-content-center.md
         - name: Create a classifier
           href: create-a-classifier.md
+        - name: Duplicate a model
+          href: duplicate-a-model.md
+        - name: Rename a model
+          href: rename-a-model.md
         - name: Create an extractor
           href: create-an-extractor.md
+        - name: Rename an extractor
+          href: rename-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
-        - name: Apply a model
+        - name: Apply a document understanding model
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Publish and discover a model
+          href: model-discovery.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
+        - name: Apply a sensitivity label 
+          href: apply-a-sensitivity-label-to-a-model.md
         - name: Model usage analytics
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
           href: leverage-term-store-taxonomy.md
+        - name: SharePoint Syntex accessibility mode
+          href: accessibility-mode.md
     
     - name: Adoption
       items:
         - name: Get started with adoption
           href: adoption-getstarted.md
+        - name: Scenarios and use cases
+          href: adoption-scenarios.md 
+        - name: Run a trial
+          href: trial-syntex.md 
+
+        - name: Manage contracts in Microsoft 365
+          items:
+            - name: Overview
+              href: solution-manage-contracts-in-microsoft-365.md 
+            - name: Step 1. Use SharePoint Syntex
+              href: solution-manage-contracts-step1.md
+            - name: Step 2. Use Microsoft Teams
+              href: solution-manage-contracts-step2.md
+            - name: Step 3. Use Power Automate
+              href: solution-manage-contracts-step3.md
 
     - name: Setup and administration
       items:
 
-        - name: Set up content understanding
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
+        - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
         
     - name: Content services
@@ -54,8 +83,30 @@
           href: push-content-type-to-hub.md
         - name: Term store reports
           href: term-store-analytics.md
-        
-        
+     
+    - name: REST API
+      items:
+        - name: Overview
+          href: rest-api/syntex-model-rest-api.md
+        - name: Create model
+          href: rest-api/rest-createmodel-method.md
+        - name: GetByUniqueId
+          href: rest-api/rest-getbyuniqueid-method.md
+        - name: GetByTitle
+          href: rest-api/rest-getbytitle-method.md
+        - name: Apply model
+          href: rest-api/rest-applymodel-method.md
+        - name: Get model and library information
+          href: rest-api/rest-getmodelandlibraryinfo.md
+        - name: UpdateModelSettings
+          href: rest-api/rest-updatemodelsettings-method.md        
+        - name: BatchDelete
+          href: rest-api/rest-batchdelete-method.md
+        - name: Create file classification request
+          href: rest-api/rest-createclassificationrequest.md
+        - name: Create folder classification request
+          href: rest-api/rest-createfolderclassificationrequest.md
+
 
 
 

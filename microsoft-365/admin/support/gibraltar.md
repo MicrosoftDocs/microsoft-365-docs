@@ -8,7 +8,6 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: AdminSurgePortfolio
 ms.collection: Adm_Support
 localization_priority: Normal
 description: Learn how to contact support for your country or region.
@@ -17,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Gibraltar
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 +1 312 843 5151

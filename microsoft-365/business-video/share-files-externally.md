@@ -2,14 +2,13 @@
 title: "Easily share files outside your business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -20,10 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to easily share your business files externally."
+description: "Learn how to use an Anyone link in Microsoft 365 to easily share your business files externally."
 ---
 
 # Easily share files externally
+
+## Watch: Share files with an Anyone link
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

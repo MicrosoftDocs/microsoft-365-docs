@@ -2,8 +2,8 @@
 title: "Device list CSV-file"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -43,11 +43,8 @@ You can get this information from your hardware vendor, or you can use the [Get-
 
 When you add devices, you also need to add them to a Profile. A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.
   
-## Related articles
+## Related content
 
-[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](../../index.yml)
   
-[Get started with Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
-  
-[Manage Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/manage)
-  
+[Get started with Microsoft 365 for business](../../business-video/what-is-microsoft-365.md)

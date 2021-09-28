@@ -13,6 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: "Microsoft 365 service health status"
@@ -26,7 +27,7 @@ This information includes network issues that affect all of our software as serv
 
 _There might be delays in the updates to this page. We are updating it manually while we build a more automated solution._
 
-When we detect significant issues within Microsoft's global network or with internet connectivity between our customers and Microsoft's network, we will post that information here. We recommend that customers continue to use the Microsoft 365 admin center Service Health dashboard to understand the impact of any significant network issues on their tenant, as we provide much more detailed and targeted information there.
+When we detect significant issues within Microsoft's global network or with internet connectivity between our customers and Microsoft's network, we will post that information here. We recommend that customers continue to use the Microsoft 365 admin center <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service Health dashboard</a> to understand the impact of any significant network issues on their tenant, as we provide much more detailed and targeted information there.
 
 ## Current network issues
 
@@ -39,5 +40,5 @@ When we detect significant issues within Microsoft's global network or with inte
 Use these resources to improve your network utilization for Microsoft services.
 
 - [Optimize Microsoft 365 connectivity for remote users using VPN split tunneling](microsoft-365-vpn-split-tunnel.md)
-- [Microsoft 365 principles of network connectivity](https://aka.ms/pnc)
-- [Working remotely using Azure Networking services](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Microsoft 365 principles of network connectivity](./microsoft-365-network-connectivity-principles.md)
+- [Working remotely using Azure Networking services](/azure/networking/working-remotely-support)

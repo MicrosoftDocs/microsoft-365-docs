@@ -2,8 +2,8 @@
 title: "Azure AD Identity Protection for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/10/2019
 audience: ITPro
@@ -28,7 +28,7 @@ Setting up Azure AD Identity Protection in your Microsoft 365 for enterprise tes
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2: Use Azure AD Identity Protection](#phase-2-use-azure-ad-identity-protection)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
@@ -54,7 +54,7 @@ If you want to test Azure AD Identity Protection in a simulated enterprise, foll
 
 Under **Protect**, select various polices to see how to configure them. If you create and activate a policy, make sure that it's not blocking access for all users, or you might not be able to sign in. To prevent this, exclude specific user accounts, such as global admins.
 
-For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
+For further testing and experimentation, see [Simulating risk events](/azure/active-directory/active-directory-identityprotection-playbook).
 
 ## Next step
 
@@ -68,4 +68,4 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](/microsoft-365-enterprise/)

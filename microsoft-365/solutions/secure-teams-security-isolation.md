@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 
@@ -35,18 +36,23 @@ The elements of configuration for a team with security isolation are:
     - Encrypts documents to which the label is applied
 
 > [!IMPORTANT]
-> Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) before you proceed with the steps in this article.
+> Be sure you have enabled [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) before you proceed with the steps in this article.
 
 Watch this video for an overview of the deployment process.
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a>
-For a 2-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
+For a 1-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
 
-[![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Microsoft Teams with security isolation poster.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
+
+Try this configuration in your own test lab environment with [these instructions](team-security-isolation-dev-test.md).
+
+See how the Contoso Corporation used an isolated team for a top-secret project in [this case study](contoso-team-for-top-secret-project.md).
 
 ## Initial protections
 
@@ -61,8 +67,8 @@ Depending on the nature of your business, you may or may not want to enable gues
 
 For details about sharing with guests securely, see the following resources:
 
-- [Limit accidental exposure to files when sharing with people outside your organization](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Create a secure guest sharing environment](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limit accidental exposure to files when sharing with people outside your organization](./share-limit-accidental-exposure.md)
+- [Create a secure guest sharing environment](./create-secure-guest-sharing-environment.md)
 
 To allow or block guest sharing, we use a combination of a sensitivity label for the team and site-level sharing controls for the associated SharePoint site, both discussed later.
 
@@ -89,7 +95,7 @@ To restrict private channel creation
 2. On the **Settings** tab, expand **Member permissions**.
 3. Clear the **Allow members to create private channels** check box.
 
-You can also use [teams policies](https://docs.microsoft.com/MicrosoftTeams/teams-policies) to control who can create private channels.
+You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
 
 ## Create a sensitivity label
 
@@ -102,7 +108,7 @@ To create a sensitivity label
 1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
 2. Under **Solutions**, click **Information protection**.
 3. Click **Create a label**.
-4. Give the label a name. We suggest **Sensitive**, but you can choose a different name if that one is already in use.
+4. Give the label a name. We suggest naming it after the team that you'll be using it with.
 5. Add a display name and description, and then click **Next**.
 6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
 7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
@@ -185,7 +191,7 @@ To update site settings
 
 #### Private channels
 
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet with the following parameters to update the guest sharing settings:
+If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet with the following parameters to update the guest sharing settings:
 
 - `-SharingCapability Disabled` to turn off guest sharing (it's on by default)
 - `-DefaultSharingLinkType Internal` to change the default sharing link to *Specific people*
@@ -220,10 +226,10 @@ To add users to the site
 
 Microsoft 365 offers additional methods for securing your content. Consider if the following options would help improve security for your organization.
 
-- Have your guests agree to a [terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configure a [session timeout policy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
-- Create [sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) and use [data loss protection](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) to set policies around accessing sensitive information.
-- Use [Azure Active Directory access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.
+- Have your guests agree to a [terms of use](/azure/active-directory/conditional-access/terms-of-use).
+- Configure a [session timeout policy](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) for guests.
+- Create [sensitive information types](../compliance/sensitive-information-type-learn-about.md) and use [data loss protection](../compliance/dlp-learn-about-dlp.md) to set policies around accessing sensitive information.
+- Use [Azure Active Directory access](/azure/active-directory/governance/access-reviews-overview) reviews to periodically review team access and membership.
 
 ## Drive user adoption for team members
 
@@ -257,4 +263,4 @@ Retrain your users as needed.
 
 ## See also
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

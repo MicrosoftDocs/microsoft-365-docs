@@ -1,9 +1,9 @@
 ---
 title: "Windows 10 Enterprise deployment for Contoso"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -66,7 +66,7 @@ To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso im
 
 Here is Contoso’s in-place upgrade and ongoing updates deployment architecture.
 
-![Contoso’s Windows 10 Enterprise deployment infrastructure](../media/contoso-win10/contoso-win10-fig1.png)
+![Contoso’s Windows 10 Enterprise deployment infrastructure.](../media/contoso-win10/contoso-win10-fig1.png)
 
 This infrastructure consists of:
 
@@ -82,7 +82,7 @@ Learn how Contoso is leveraging its Configuration Manager infrastructure to [dep
 
 ## See also
 
-[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
+[Windows 10 Enterprise](/windows/deployment/)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 

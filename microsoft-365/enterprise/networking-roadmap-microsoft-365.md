@@ -2,8 +2,8 @@
 title: "Networking roadmap for Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -40,7 +40,7 @@ In the planning phase of your networking implementation:
 In the deployment phase of your networking implementation:
 
 - [Ensure your enterprise network is optimized for Microsoft 365 connectivity](set-up-network-for-microsoft-365.md)
-- [Add the DNS domains for your organization](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
+- [Add the DNS domains for your organization](../admin/setup/add-domain.md)
 - [Optimize your connectivity to Microsoft 365 endpoints](microsoft-365-ip-web-service.md)
 - [Optimize connectivity for remote workers](microsoft-365-vpn-split-tunnel.md)
 - If needed, [configure ExpressRoute](azure-expressroute.md)
@@ -61,7 +61,7 @@ If you are a network equipment vendor, join the [Microsoft 365 Networking Partne
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network devices and Internet connections](contoso-networking.md) for Microsoft 365 cloud services.
 
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation.](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

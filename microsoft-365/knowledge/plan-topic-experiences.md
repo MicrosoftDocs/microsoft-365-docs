@@ -1,5 +1,5 @@
 ---
-title: "Plan topic experiences in Microsoft 365"
+title: "Plan for Microsoft Viva Topics"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,41 +9,48 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to plan for topic experiences in Microsoft 365"
+description: "Learn how to plan for Plan for Microsoft Viva Topics"
 ---
 
-# Plan topic experiences in Microsoft 365
+# Plan for Microsoft Viva Topics
 
-You're in control of how topics are experienced in your organization. Your planning decisions for topic experiences ensures that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
+You're in control of how topics are experienced in your organization. Your planning decisions for Topics ensures that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
 
 In this article we'll examine these planning decisions:
 
-- Which SharePoint sites you want to crawl for topics.
+- Which SharePoint sites you want to crawl for topics
 - Which topics, if any, you want to exclude from topic experiences
-- Which users you want to make topics visible to.
-- Which users you want to give permissions to manage topics in the topic center.
-- Which users you want to give permissions to create or edit topics in the topic center.
-- What name you want to give your topic center.
+- Which users you want to make topics visible to
+- Which users you want to give permissions to manage topics in the topic center
+- Which users you want to give permissions to create or edit topics in the topic center
+- What name you want to give your topic center
 
-Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Topic experiences security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
+Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
+
+To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
+Keep in mind that Viva Topics needs access to the sites and files that your users use every day. Deploying Viva Topics in a test or development environment may not yield useful results.
 
 ## Requirements
 
-You must be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up topic experiences.
+You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
-All users who are going to use topic experiences require a **Topic Experiences** license. Assigning licenses is covered in [Set up topic experiences](set-up-topic-experiences.md).
+All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
 
 ## Topic discovery
 
-The topic discovery settings specify which SharePoint sites are used as sources for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+The topic discovery settings specify which SharePoint sites are used as sources for topics. This includes both classic and modern sites, as well as sites associated with Microsoft Teams and Microsoft 365 Groups. OneDrive sites are not included.
 
-When you set up topic experiences, you can choose from the following options:
+You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+
+When you set up Topics, you can choose from the following options:
 
 - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
 - **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery. 
 - **Only selected sites**: Only the sites that you specify. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
+
+We recommend selecting enough sites to include at least 20,000 documents to get the best results from Viva Topics.
 
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
@@ -53,13 +60,22 @@ You can copy the .csv template below:
 Site name,URL
 ```
 
-We don't recommend choosing **No sites** because it prevents topics from being automatically created or updated. However, you can choose this option if you want to set up topic experiences and then add sites later.
+We don't recommend choosing **No sites** because it prevents topics from being automatically created or updated. However, you can choose this option if you want to set up Topics and then add sites later.
 
 We recommend you create a process for users or knowledge managers to request individual sites be removed from topic discovery if needed in your organization.
+
+### Multi-geo
+
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
+
+All processing and storage of content is done in the central location.
 
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
+
+> [!Note] 
+> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
 
 *Manage topics*
 
@@ -75,7 +91,7 @@ We recommend that you allow everyone in your organization to create and edit top
 
 If you want to limit creating and editing topics to specific people or groups, create a security group for them and specify it during the setup process.
 
-You can choose to not allow anyone to contribute to topics, however this is not recommended. Knowledge managers will still be able to edit and create topics.
+You can choose to not allow anyone to contribute to topics, however this is not recommended. Knowledge managers will still be able to edit and create topics if you choose this option.
 
 *Topic viewers*
 
@@ -87,7 +103,7 @@ When setting up topic viewers, you can choose from:
 - **Only selected people or security groups**
 - **No one**
 
-We recommend **Everyone in my organization**, but if you're doing a pilot you may want to choose only selected people or security groups. You can also choose **No one** if you want to set up topic experiences, but not allow people to see topics yet. (Knowledge managers will still have access to allow them view the topics and help with the decision to make topic experiences broadly available.)
+We recommend **Everyone in my organization**, but if you're doing a pilot you may want to choose only selected people or security groups. You can also choose **No one** if you want to set up Topics, but not allow people to see topics yet. (Knowledge managers will still have access to allow them view the topics and help with the decision to make Topics broadly available.)
 
 ## Knowledge rules
 
@@ -103,7 +119,7 @@ The .csv file must contain the following parameters:
     - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
 - **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 
-    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template.](../media/exclude-topics-csv.png) 
 
 You can copy the csv template below:
 
@@ -113,7 +129,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## Administration
 
-When you set up topic experiences, as part of the setup process, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center. You can only have one topic center.
+When you set up Topics, as part of the setup process, a topic center is automatically created. Think about what you want to name the topic center and what you want the URL to be. You can set both the name and URL as part of the setup process, and you can change the name (but not URL) later in the Microsoft 365 admin center. You can only have one topic center.
 
 ## Setup checklist
 

@@ -2,20 +2,20 @@
 title: "Add a user to Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -26,13 +26,15 @@ description: "Learn how to add users in Microsoft 365 for business."
 
 # Add a new user
 
+## Watch: Add a user
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 When a new person joins your company, you need to add them to your Microsoft 365 Business Premium subscription as a new user.
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, go to **User management**, and select Add user.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to **User management**, and select Add user.
 1. Enter the new user's **First name** and **Last name**. The **Display name** is filled in automatically, but you can change it.
 1. Enter a **Username**. This will be the new user's email address. If you have more than one domain, select the correct domain from the drop-down list.
 1. To have a password created automatically, select **Auto-generate password**.
@@ -42,4 +44,4 @@ When a new person joins your company, you need to add them to your Microsoft 365
 1. If you want the user to be an administrator, expand **Role**s, clear the **User (no administrator access)** check box, and select an admin role from the list. For more information about admin roles and how to set them up, see [What is an admin](what-is-admin.md)?
 1. Under **Profile info**, enter details about the user's job, department, office, and so on. (You or the new user can always add this information later.) Select **Next**.
 1. Review the user details. If you need to purchase an additional license for this user, you will see a notification on the review page. Select **Finish adding**, and then select **Close**.
-1. Verify that the user has been created successfully: in the Microsoft 365 admin center, in the left navigation pane, select**Users**, then **Active users**. The new user should be listed, along with their assigned license.
+1. Verify that the user has been created successfully: in the Microsoft 365 admin center, in the left navigation pane, select**Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>. The new user should be listed, along with their assigned license.

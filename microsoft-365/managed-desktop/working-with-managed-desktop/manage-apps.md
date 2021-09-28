@@ -7,6 +7,8 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ms.localizationpriority: normal
 ms.date: 01/18/2019
 ms.collection: M365-modern-desktop

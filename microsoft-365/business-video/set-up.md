@@ -2,20 +2,20 @@
 title: "Set up Microsoft 365 Business Premium subscription"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -29,7 +29,7 @@ description: "Learn how to set up Microsoft 365 Business Premium."
 
 ## Try it!
 
-1. Sign in to the Microsoft 365 admin center, and select  **Go to setup**. The setup wizard will start.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and select  **Go to setup**. The setup wizard will start.
 2.  On the  **Install your Office apps**  page, you can choose to install Office apps on your computer, or select  **Continue**.
 3.  On the  **Your domain is your business identity**  page, enter the domain name for your business and then select  **Use this domain**. If you use a common registrar like WordPress or GoDaddy, your records will be added automatically on this page.
 4. On the  **Verify your domain**  page, select  **Verify** to verify ownership of your domain, and then sign in to your domain registrar account. To let Microsoft add a TXT record for account verification, select  **Confirm**.

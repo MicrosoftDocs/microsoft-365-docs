@@ -33,16 +33,16 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 Begin by using administrator accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 
-Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
+Protect your administrator accounts with multi-factor authentication and conditional access. For more information, see [Protecting administrator accounts](../security/office-365-security/identity-access-prerequisites.md#protecting-administrator-accounts). 
 
 Next, configure privileged access management in Office 365. Privileged access management allows granular access control over privileged admin tasks in Office 365. It can help protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
 - [Overview of privileged access management](privileged-access-management-overview.md)
 - [Configure privileged access management](privileged-access-management-configuration.md)
 
-Another top recommendation is to use workstations specifically configured for administrative work. These are dedicated devices that are only used for administrative tasks. See [Securing privileged access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Another top recommendation is to use workstations specifically configured for administrative work. These are dedicated devices that are only used for administrative tasks. See [Securing privileged access](/windows-server/identity/securing-privileged-access/securing-privileged-access).
 
-Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant. See [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
+Finally, you can mitigate the impact of inadvertent lack of administrative access by creating two or more emergency access accounts in your tenant. See [Manage emergency access accounts in Azure AD](/azure/active-directory/users-groups-roles/directory-emergency-access). 
 
 ## Step 3: Configure recommended identity and device access policies
 Multi-factor authentication (MFA) and conditional access policies are powerful tools for mitigating against compromised accounts and unauthorized access. We recommend implementing a set of policies that have been tested together. For more information, including deployment steps, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
@@ -54,13 +54,11 @@ Multi-factor authentication (MFA) and conditional access policies are powerful t
 - Intune device compliance
 - Azure AD Identity Protection
 
-Implementing Intune device compliance requires device enrollment. Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment. See [Enroll devices for management in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+Implementing Intune device compliance requires device enrollment. Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment. See [Enroll devices for management in Intune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## Step 4: Configure SharePoint device access policies
 
 Microsoft recommends you protect content in SharePoint sites with sensitive and highly-regulated content with device access controls. For more information, see [Policy recommendations for securing SharePoint sites and files](../security/office-365-security/sharepoint-file-access-policies.md).
 
 
-
-    
 

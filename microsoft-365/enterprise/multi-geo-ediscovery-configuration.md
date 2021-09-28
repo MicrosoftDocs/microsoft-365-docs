@@ -17,7 +17,7 @@ description: Learn how to use the Region parameter to configure eDiscovery for u
 
 # Microsoft 365 Multi-Geo eDiscovery configuration
 
-[Advanced eDiscovery capabilities](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20) allow a multi-geo eDiscovery administrator to search all of the geos without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the central location of the multi-geo tenant. 
+[Advanced eDiscovery capabilities](../compliance/overview-ediscovery-20.md) allow a multi-geo eDiscovery administrator to search all of the geos without needing to utilize a "Region" security filter. Data is exported to the Azure instance of the central location of the multi-geo tenant. 
 
 Without advanced eDiscovery capabilities, an eDiscovery manager or administrator of a multi-geo tenant will be able to conduct eDiscovery only in the central location of that tenant. To support the ability to conduct eDiscovery for satellite locations, a new compliance security filter parameter named "Region" is available via PowerShell. This parameter can be used by tenants whose central location is in North America, Europe, or Asia Pacific. Advanced eDiscovery is recommended for tenants whose central location is not in North America, Europe, or Asia Pacific and who need to perform eDiscovery across satellite geo locations. 
 
@@ -32,7 +32,7 @@ When the eDiscovery Manager or Administrator role is set for a particular satell
 
 To set the Compliance Security Filter for a Region:
 
-1. [Connect to Microsoft 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [Connect to Microsoft 365 Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
 2. Use the following syntax:
 
@@ -46,4 +46,4 @@ To set the Compliance Security Filter for a Region:
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-See the [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
+See the [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) article for additional parameters and syntax.
