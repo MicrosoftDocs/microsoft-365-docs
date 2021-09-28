@@ -213,7 +213,7 @@ To remove either of these advanced settings from a label policy, use the same Ad
 
 ````powershell
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
-
+````
 
 ## Sensitivity label management
 
