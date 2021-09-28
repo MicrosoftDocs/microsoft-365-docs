@@ -189,17 +189,17 @@ These two settings and values are the equivalent of the parameters *DefaultShari
 
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
-To set the sharing link type to SpecificPeople:
+- To set the sharing link type to SpecificPeople:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
+    ````
 
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-````
-
-To set the sharing link permissions to Edit:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-````
+- To set the sharing link permissions to Edit:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings@{DefaultShareLinkPermission="Edit"}
+    ````
 
 #### PowerShell tips for specifying the advanced settings
 
