@@ -1,7 +1,7 @@
 ---
 title: Turn on protocol recognition for Microsoft Defender Antivirus
 description: Turn on protocol recognition for Microsoft Defender Antivirus.
-keywords: Microsoft Defender Antivirus, antimalware, security, defender, protocol recognition 
+keywords: Microsoft Defender Antivirus, antimalware, security, defender, protocol recognition
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
@@ -11,7 +11,7 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 05/07/2021
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
@@ -19,7 +19,7 @@ ms.topic: article
 ms.collection: m365-security-compliance
 ---
 
-# Turn on protocol recognition 
+# Turn on protocol recognition
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,9 +33,9 @@ This policy setting allows you to configure protocol recognition for network pro
 
 1. On your Group Policy management endpoint, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Network Inspection System**. 
+2. Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Network Inspection System**.
 
-3. Select **protocol recognition**. By default, this policy is enabled. If set **Not configured**, definition retirement is enabled. 
+3. Select **protocol recognition**. By default, this policy is enabled. If set **Not configured**, definition retirement is enabled.
 
 4. To edit the policy, select the **edit policy setting** link.
 
@@ -44,12 +44,10 @@ This policy setting allows you to configure protocol recognition for network pro
 6. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics). 
-  
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).
+
 ## Related articles
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
- 
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-
 - [How to create and deploy antimalware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
