@@ -1,6 +1,6 @@
 ---
-title: Configure Microsoft Defender for Endpoint on Android features
-description: Describes how to configure Microsoft Defender for Endpoint on Android
+title: Configure Microsoft Defender for Endpoint risk signals using app protection policy (MAM)
+description: Describes how to configure Microsoft Defender for Endpoint risk signals using app protection policy
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Configure Microsoft Defender for Endpoint risk signals in app protection policy (MAM)
+# Configure Microsoft Defender for Endpoint risk signals using app protection policy (MAM)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 
 1. **Create a policy:** App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
     
-        ![Create policy](images/create-policy.png)
+![Image of policy creation](images/create-policy.png)
 
     **Add Apps:**
 
