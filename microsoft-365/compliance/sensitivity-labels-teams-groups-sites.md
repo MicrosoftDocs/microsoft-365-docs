@@ -209,7 +209,7 @@ Although you can specify the sensitivity label by its name, we recommend using t
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-To remove either of these advanced settings from a label policy, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
+To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
 
 ````powershell
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
