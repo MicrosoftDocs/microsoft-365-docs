@@ -262,9 +262,9 @@ Georgia
 Germany  
 Ghana  
 Gibraltar  
+Greece  
    :::column-end:::
    :::column:::
-Greece  
 Greenland  
 Grenada  
 Guadeloupe  
@@ -286,9 +286,9 @@ Iraq
 Ireland  
 Isle Of Man  
 Israel  
+Italy  
    :::column-end:::
    :::column:::
-Italy  
 Jamaica  
 Jan Mayen  
 Japan  
@@ -641,9 +641,9 @@ Slovakia
 Slovenia  
 Solomon Islands  
 Somalia  
+South Africa  
    :::column-end:::
    :::column:::
-South Africa  
 South Georgia and South Sandwich Islands  
 South Sudan  
 Spain  
@@ -664,10 +664,10 @@ Togo
 Tokelau  
 Tonga  
 Trinidad and Tobago  
-   :::column-end:::
-   :::column:::
 Tristan Da Cunha  
 Tunisia  
+   :::column-end:::
+   :::column:::
 Turkey  
 Turkmenistan  
 Turks and Caicos Islands  
