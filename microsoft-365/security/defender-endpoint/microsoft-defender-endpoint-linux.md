@@ -163,6 +163,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
 
+## Common Applications to Microsoft Defender for Endpoint can impact
+
+Workloads from certain applications can experience performance issues when MDE is installed. These include applications for developer scenarios like Jenkins, and database workloads like OracleDB and Postgres. If experiencing performance degradation, consider setting exclusions for trusted applications, keeping [Common Exclusion Mistakes for Microsoft Defender](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) in mind. 
+
 ## Resources
 
 - For more information about logging, uninstalling, or other topics, see [Resources](linux-resources.md).
