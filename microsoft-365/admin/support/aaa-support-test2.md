@@ -41,7 +41,7 @@ If your support phone number isn't listed above, use the tabs below to find the 
 
 :::row:::
    :::column::: 
-Afghanistan  
+[Afghanistan](#afghanistan)  
 Aland Islands  
 Albania  
 Algeria  
@@ -716,9 +716,9 @@ Tokelau
 Tonga  
 Trinidad and Tobago  
 Tristan Da Cunha  
-Tunisia  
    :::column-end:::
    :::column:::
+Tunisia  
 Turkey  
 Turkmenistan  
 Turks and Caicos Islands  
