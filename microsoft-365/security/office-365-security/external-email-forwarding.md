@@ -72,7 +72,7 @@ You can see information about users that are automatically forwarding messages t
 
 The following information is required to create the mail flow rule in the Exchange admin center (EAC):
 
-- **Apply this rule if** (condition): A **message header** \> **matches these text patterns**. Note you might need to click **More options** to see this option.
+- **Apply this rule if** (condition): **A message header** \> **matches these text patterns**. Note you might need to click **More options** to see this option.
   - **Header name**: `X-MS-Exchange-Inbox-Rules-Loop`
   - **Header value**: `.`
 
@@ -80,7 +80,7 @@ The following information is required to create the mail flow rule in the Exchan
 
   This condition will match any value for the header.
 
-- (Optional) **Do the following** (action): You can configure an optional action. For example, add a header field and value to the message, but this action is not required.
+- (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
 - Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the mail flow report to get details of users that are forwarding.
 
 ## Blocked email forwarding messages
