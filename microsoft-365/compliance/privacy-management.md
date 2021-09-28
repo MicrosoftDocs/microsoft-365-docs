@@ -78,7 +78,7 @@ Privacy management does not collect data beyond what is already collected in Mic
 
 ## How privacy management identifies items with personal data
 
-Privacy management utilizes the capabilities of Microsoft 365 to help you identify and tag sensitive items. This is done through the use of [sensitive information types (SIT)](sensitive-information-type-learn-about.md), trainable [classifiers](classifier-learn-about.md), and auto and manual application of [sensitivity labels](sensitivity-labels.md).
+Privacy management utilizes the capabilities of Microsoft 365 to help you identify and tag sensitive items. This is done through the use of [sensitive information types (SIT)](sensitive-information-type-learn-about.md) and the application of [sensitivity labels](sensitivity-labels.md).
 
 Sensitive information types (SIT) are the data types supported by Microsoft data classification. For example, these data types include personal information about individuals such as their name, address, or Social Security number.
 
