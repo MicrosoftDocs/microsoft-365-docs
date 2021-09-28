@@ -70,7 +70,7 @@ By default your mailboxes get encrypted using Microsoft-managed keys. When you a
 
 - If the mailbox is already encrypted using Microsoft-managed keys, the service rewraps the mailbox using the new mailbox DEP as long as a user or a system operation accesses the mailbox data.
 
-- If the mailbox is not yet encrypted using default encryption, then the service marks the mailbox for a move. The encryption takes place once the move is complete. Mailbox moves are governed based on priorities set for all of Microsoft 365. For more information, see, [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service). If the mailboxes aren't encrypted within the specified time, contact Microsoft.
+- If the mailbox is not yet encrypted using default encryption, then the service marks the mailbox for a move. The encryption takes place once the move is complete. Mailbox moves are governed based on priorities set for all of Microsoft 365. For more information, see, [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service). If the mailboxes aren't encrypted within the specified time, contact Microsoft.
 
 Later, you can either refresh the DEP or assign a different DEP to the mailbox as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses to be assigned a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 
@@ -90,11 +90,11 @@ The key hierarchy used for DEPs that encrypt data for multiple Microsoft 365 wor
 
 #### Encryption ciphers used to encrypt keys for Exchange Online and Skype for Business
 
-![Encryption ciphers for Exchange Online Customer Key](../media/customerkeyencryptionhierarchiesexchangeskype.png)
+![Encryption ciphers for Exchange Online Customer Key.](../media/customerkeyencryptionhierarchiesexchangeskype.png)
 
 #### Encryption ciphers used to encrypt keys for SharePoint Online, OneDrive for Business, and Teams files
 
-![Encryption ciphers for SharePoint Online Customer Key](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
+![Encryption ciphers for SharePoint Online Customer Key.](../media/customerkeyencryptionhierarchiessharepointonedriveteamsfiles.png)
 
 ## Related articles
 

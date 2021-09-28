@@ -42,9 +42,18 @@ Make sure **Users may join devices to Azure AD** is set to **All**.
 4. If **Users may join devices to Azure AD** isn't set to **All**, select **All**, then select **Save**.
 5. Go to [Step 2. Verify that the Windows 365 BPRT Permanent User system account is active](#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
+Make sure that **Maximum number of devices per user** is high enough so that the Cloud PCs you are trying to setup can be assigned to the designated users.
+
+1. Sign in to the Microsoft Azure portal at https://portal.azure.com/.
+2. Under **Manage Azure Active Directory**, select **View**.
+3. In the left nav, under **Manage**, select **Devices**, then select **Device settings**.
+4. For **Maximum number of devices per user**, enter the value.
+5. If you made any changes, select **Save**.
+
 ## Step 2. Verify that the Windows 365 BPRT Permanent User system account is active
 
-The first time a Windows 365 license is assigned in your organization, a system account called **Windows 365 BPRT Permanent User** is automatically created in Azure AD. Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete this system account, you must open a new support request to have it restored.
+The first time a Windows 365 license is assigned in your organization, a system account called **Windows 365 BPRT Permanent User** is automatically created in Azure AD. 
+Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is modified or deleted, the setup will fail. This system account ensures a smooth setup process and doesn't have any write capabilities or access to your organization beyond the scoped service capabilities of Windows 365 Business. If you delete or modify this system account you must login to windows365.microsoft.com with any account that has a Windows 365 Business license and wait 12 hours for the token to refresh.
 
 To make sure the Windows 365 BPRT Permanent User system account is active in Azure AD, use the following steps.
 
@@ -52,7 +61,7 @@ To make sure the Windows 365 BPRT Permanent User system account is active in Azu
 2. In the left nav, under **Manage**, select **Users**.
 3. In the search box, type **Windows 365 BPRT Permanent User**, then press **Enter**.
 4. If the Windows 365 BPRT Permanent User system account is present, go to [Step 3. Verify that device-based MFA is turned off](#step-3-verify-that-device-based-mfa-is-turned-off).
-5. If the Windows 365 BPRT Permanent User system account is missing, in the left nav, select **New support request** to open a support ticket. After the support ticket is closed, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
+5. If the Windows 365 BPRT Permanent User system account is missing or if any changes were made to it (for example, password reset, property change, assign or un-assign a license, and so on), please login to windows365.microsoft.com with any account that has a Windows 365 Business license assigned after 12 hours. A new Windows 365 BPRT Permanent User will be generated. After the token has regenerated, go directly to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ## Step 3. Verify that device-based MFA is turned off
 
@@ -119,107 +128,14 @@ If you don’t plan to use Microsoft Intune for your Cloud PC management, you mu
 > [!IMPORTANT]
 > If you’re not the MDM administrator, don’t use either of the following procedures without first consulting with your IT admin. Only follow these procedures if Cloud PCs aren’t being set up. Any configuration changes could impact your management environment. If you need help, [contact Intune support](/mem/get-support).
 
-#### Option 1. Use the Azure AD portal to turn off automatic Intune enrollment
+#### Use the Azure AD portal to turn off automatic Intune enrollment
 
 1. In the Azure portal, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=516942" target="_blank">Azure Active Directory Overview</a> page.
 2. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, then select **Microsoft Intune**.
-3. On the **Configure** page, next to MDM user scope, select **None**, then select **Save**.
+3. On the **Configure** page, you will see one of two things. If you have an Azure AD Premium subscription, select **None** next to MDM user scope, then select **Save**. If you do not have an Azure AD Premium subscription, select **Disable**.
 4. In the left nav, under **Manage**, select **Mobility (MDM and MAM)**, select **Microsoft Intune Enrollment**, then repeat step 3.
 5. Go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
-#### Option 2: Use Microsoft Graph to turn off automatic Intune enrollment
-
-If you can’t use the Microsoft Azure admin portal to configure **Mobility (MDM and MAM)** as instructed in [Option 1. Use the Azure AD portal to turn off automatic Intune enrollment](#option-1-use-the-azure-ad-portal-to-turn-off-automatic-intune-enrollment), you see a warning that says, "Automatic MDM enrollment is available only for Azure AD Premium subscribers." In this case, you must use Microsoft Graph to turn off MDM policies in your environment.
-
-1. Go to Graph Explorer at <a href="https://go.microsoft.com/fwlink/p/?linkid=2170005">https://developer.microsoft.com/graph/graph-explorer</a>.
-2. Under **Graph Explorer**, select **Sign in to Graph Explorer**, and sign in with your Global admin account.
-3. If you see the **Permissions requested** dialog box, select **Accept**.
-4. Next to your account name, select the **More actions** button (the three dots), then select **Select permissions**.
-5. In the **Permissions** pane, expand **Policy**, select **Policy.Read.All** and **Policy.ReadWrite.MobilityManagement**, then select **Consent**.
-6. If you see the **Permissions requested** dialog box, select the **Consent on behalf of your organization** check box, then select **Accept**.
-7. Expand **Policy** again, verify that the **Status** column for **Policy.Read.All** and **Policy.ReadWrite.MobilityManagement** says **Consented**, then close the **Permissions** pane.
-8. From the first drop-down list, select **GET**.
-9. In the text box, enter the following string, then select **Run query**:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`  
-    This query retrieves the list of device management policies in your organization.
-    The results in the **Response preview** pane should look similar to the following code snippet:
-
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "all",
-                "complianceUrl": null,
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": null,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": null
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    }
-    ```
-10. If the `"appliesTo"` value is **none** for all listed policies, go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs). Otherwise, continue to step 11.
-11. In the first drop-down list, select **PATCH**.
-12. In the text box, enter the following string:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/0000000a-0000-0000-c000-000000000000`
-13. In the **Request body** section, enter the following code snippet, then select **Run query**:
-    ```
-    {
-        "appliesTo": "none"
-    }
-    ```
-14. In text box, enter the following string:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/d4ebce55-015a-49b5-a083-c84d1797ae8c`
-15. In the **Request body** section, leave the code snippet you entered in step 13, then select **Run query**.
-16. In the first drop-down list, select **GET**.
-17. Clear any text in the **Request body** section.
-18. In the text box, enter the following string, then select **Run query**:  
-    `https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies`
-
-    The results in the **Response view** pane should look similar to the following code snippet.
-    ```
-    {
-        "@odata.context": "https://graph.microsoft.com/beta/$metadata#mobilityManagementPolicies",
-        "value": [
-            {
-                "id": "0000000a-0000-0000-c000-000000000000",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction=Compliance",
-                "description": "Device Management Policy for Microsoft Intune",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc”,
-                "displayName": "Microsoft Intune",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            },
-            {
-                "id": "d4ebce55-015a-49b5-a083-c84d1797ae8c",
-                "appliesTo": "none",
-                "complianceUrl": "https://portal.manage.microsoft.com/?portalAction",
-                "description": "Device Management Policy for Microsoft Intune Enrollment",
-                "discoveryUrl": "https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc",
-                "displayName": "Microsoft Intune Enrollment",
-                "isValid": true,
-                "termsOfUseUrl": "https://portal.manage.microsoft.com/TermsofUse.aspx"
-            }
-        ]
-    } 
-    ```
-
-    The `"appliesTo"` values for all policies are now set to **none**. This query verifies that the scope has successfully changed for device management policies in your organization.
-19. Go to [Step 6. Reset your Cloud PCs](#step-6-reset-your-cloud-pcs).
 
 ## Step 6. Reset your Cloud PCs
 

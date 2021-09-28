@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management 
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -119,4 +120,4 @@ At this point you should be able to see the policy **Enable automatic MDM enroll
 
 [Synchronize domain users to Microsoft 365](manage-domain-users.md) (article)\
 [Create a group in the admin center](../create-groups/create-groups.md) (article)\
-[Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (article)
+[Tutorial: Configure hybrid Azure Active Directory join for managed domains](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (article)

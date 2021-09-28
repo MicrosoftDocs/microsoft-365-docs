@@ -88,7 +88,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 > - Each record is approximately 1 KB of data. You should take this into account when choosing the correct pageSize parameter for you.
 > - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
-> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 
 <br>
 
@@ -336,7 +336,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response) (which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device) the delta export JSON response API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
 
 > [!NOTE]
-> It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week.  Unlike the other Assessments JSON response APIs, the "delta export" is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the "delta" API call).
+> It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week. Unlike the other Assessments JSON response APIs, the "delta export" is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the "delta" API call).
 
 #### 3.1.1 Limitations
 
@@ -372,7 +372,7 @@ Each returned record contains all the data from the full export software vulnera
 > [!NOTE]
 >
 > - Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
-> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 
 <br>
 

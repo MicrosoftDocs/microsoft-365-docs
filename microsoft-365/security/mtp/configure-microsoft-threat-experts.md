@@ -44,15 +44,15 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
 2. Select **Apply**.
 
-    ![Image of Microsoft Threat Experts settings](../../media/mte/mte-collaboratewithmte.png)
+    ![Image of Microsoft Threat Experts settings.](../../media/mte/mte-collaboratewithmte.png)
 
 3. Enter your name and email address so that Microsoft can contact you about your application.
 
-    ![Image of Microsoft Threat Experts application](../../media/mte/mte-apply.png)
+    ![Image of Microsoft Threat Experts application.](../../media/mte/mte-apply.png)
 
 4. Read the [privacy statement](https://privacy.microsoft.com/en-us/privacystatement), then select **Submit** when you're done. You'll receive a welcome email once your application is approved.
 
-    ![Image of Microsoft Threat Experts application confirmation](../../media/mte/mte-applicationconfirmation.png)
+    ![Image of Microsoft Threat Experts application confirmation.](../../media/mte/mte-applicationconfirmation.png)
 
 5. After you receive your welcome email, you'll automatically start receiving targeted attack notifications.
 
@@ -97,13 +97,13 @@ You can contact Microsoft Threat Experts from inside the Microsoft 365 Defender 
 
 2. From the top menu, select **? Consult a threat expert**.
 
-    ![Image of Microsoft Threat Experts Experts on Demand from the menu](../../media/mte/incidents-action-mte-highlighted.png)
+    ![Image of Microsoft Threat Experts Experts on Demand from the menu.](../../media/mte/incidents-action-mte-highlighted.png)
 
     A flyout screen will open.
 
     The header will indicate if you are on a trial subscription, or a full Microsoft Threat Experts - Experts on-Demand subscription.
 
-    ![Image of Microsoft Threat Experts Experts on Demand trial subscription screen](../../media/mte/mte-trial.png)
+    ![Image of Microsoft Threat Experts Experts on Demand trial subscription screen.](../../media/mte/mte-trial.png)
 
     The **Investigation topic** field will already be populated with the link to the relevant page for your request.
 

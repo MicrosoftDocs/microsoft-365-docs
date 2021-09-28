@@ -102,8 +102,8 @@ To turn **Allow or block** files on:
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced features** \> **Allow or block file**.
 
 1. Toggle the setting between **On** and **Off**.
-
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature":::
+ 
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature.":::
 
 1. Select **Save preferences** at the bottom of the page.
 

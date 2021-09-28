@@ -86,7 +86,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Policies** section \> **Safe Links**.
 
-2. On the **Safe Links** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create**.
+2. On the **Safe Links** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
 3. The **New Safe Links policy** wizard opens. On the **Name your policy** page, configure the following settings:
 
@@ -100,7 +100,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
    - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
@@ -115,14 +115,14 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
      - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to enable real-time scanning of links in email messages. If you turn this setting on the following setting is available:
        - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
      - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
-   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams.
+   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
    - **Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
    - **Do not allow users to click through to original URL**: Select this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
    - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.
 
      In the box, type the URL or value that you want, and then click **Add**. Repeat this step as many times as necessary.
 
-     To remove an existing entry, click ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
+     To remove an existing entry, click ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry.
 
      For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
@@ -174,8 +174,8 @@ To enable or disable a policy or set the policy priority order, see the followin
 2. On the **Safe Links** page, select a policy from the list by clicking on the name.
 
 3. At the top of the policy details flyout that appears, you'll see one of the following values:
-   - **Policy off**: To turn on the policy, click ![Turn on icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
-   - **Policy on**: To turn off the policy, click ![Turn off icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
 
@@ -203,7 +203,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
    - The policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
    - If you have three or more policies, the policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
-   Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
+   Click ![Increase priority icon.](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
 4. When you're finished, click **Close** in the policy details flyout.
 
@@ -211,7 +211,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
 
-2. On the **Safe Links** page, select a policy from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+2. On the **Safe Links** page, select a policy from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon.](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
 3. In the confirmation dialog that appears, click **Yes**.
 

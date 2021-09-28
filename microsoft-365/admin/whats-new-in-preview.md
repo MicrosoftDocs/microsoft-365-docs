@@ -17,11 +17,11 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
+description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ---
 
 # What's new in the Microsoft 365 admin center
@@ -50,7 +50,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Microsoft 365 admin center search
 
-You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
 
 :::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
 
@@ -171,7 +171,7 @@ Priority accounts are only available to organizations that meet both of the foll
 - Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
 - At least 10,000 licenses and at least 50 monthly active Exchange Online users.
 
-![Setup page for the feature: Monitor your most important accounts](../media/MAC-WN-PriorityAccounts.png)
+![Setup page for the feature: Monitor your most important accounts.](../media/MAC-WN-PriorityAccounts.png)
 
 There are two ways to get started:
 
@@ -270,7 +270,7 @@ There has been a lot of work done in the subscriptions management to make the pa
 
 Domain management can be complicated, and we've released a new feature to make that easier. Go to Settings > Domains and then select a domain to get more information about your domain and the domain's health.
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Domains details page for contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Domains details page for contoso.com.":::
 
 ### Docs, training, and videos (July 2020)
 
@@ -335,7 +335,7 @@ Just this month, we released a new site on docs.microsoft.com called the [Micros
 
 Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
-![Roles page with the Intune pivot selected](../media/MAC-WN-IntuneRoles.png)
+![Roles page with the Intune pivot selected.](../media/MAC-WN-IntuneRoles.png)
 
 ### Sync Message Center posts to Planner
 
@@ -413,7 +413,7 @@ We received a lot of feedback from admins about the how hard it is to assign lic
 
 With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
-![Microsoft Teams home page card](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teams home page card.](../media/MAC-WN-TeamsCard.PNG)
 
 ### Customize your organization's SharePoint mobile app theme
 
@@ -457,7 +457,7 @@ We received a lot of feedback from partners and admins about the challenges of m
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
 2. In the organization switcher, select the org you want to manage.
-![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted](../media/MAC-OrgSwitcherSelected.png)
+![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted.](../media/MAC-OrgSwitcherSelected.png)
 
 That's literally it!!!
 

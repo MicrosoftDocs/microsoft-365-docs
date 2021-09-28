@@ -54,7 +54,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](images/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -64,11 +64,11 @@ For the Application registration stage, you must have a **Global administrator**
 
    - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection1](images/add-permission.png)
+   ![Image of API access and API selection1.](images/add-permission.png)
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection2](images/application-permissions.png)
+   ![Image of API access and API selection2.](images/application-permissions.png)
 
    **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
@@ -82,7 +82,7 @@ For the Application registration stage, you must have a **Global administrator**
 
    - **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
-   ![Image of Grant permissions](images/grant-consent.png)
+   ![Image of Grant permissions.](images/grant-consent.png)
 
 6. Add a secret to the application.
 
@@ -90,13 +90,13 @@ For the Application registration stage, you must have a **Global administrator**
 
     **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    ![Image of create app key](images/webapp-create-key2.png)
+    ![Image of create app key.](images/webapp-create-key2.png)
 
 7. Write down your application ID and your tenant ID:
 
    - On your application page, go to **Overview** and copy the following:
 
-   ![Image of created app id](images/app-and-tenant-ids.png)
+   ![Image of created app id.](images/app-and-tenant-ids.png)
 
 Done! You have successfully registered an application!
 
@@ -134,7 +134,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the Alert.Read.All role.
 
-  ![Image jwt.ms](images/api-jwt-ms.png)
+  ![Image jwt.ms.](images/api-jwt-ms.png)
 
 ### Lets get the Alerts!
 

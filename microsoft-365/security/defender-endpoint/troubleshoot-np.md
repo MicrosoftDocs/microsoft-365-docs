@@ -15,6 +15,7 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Troubleshoot network protection
@@ -78,9 +79,13 @@ If you've tested the feature with the demo site and with audit mode, and network
 
 See [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## Exclude website from network protection scope
+## Add exclusions
+The current exclusion options are:
 
-To allow the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
+1.	Setting up a custom allow indicator.
+2.	Using IP exclusions: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+
 
 ## Collect diagnostic data for file submissions
 
@@ -105,13 +110,13 @@ When you report a problem with network protection, you are asked to collect and 
 Due to the environment where network protection runs, Microsoft is unable to see your operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve connectivity issues with network protection, configure one of the following registry keys so that network protection becomes aware of the proxy configuration:
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
 ---OR---
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
 You can configure the registry key by using PowerShell, Microsoft Endpoint Manager, or Group Policy. Here are some resources to help:

@@ -24,7 +24,7 @@ After Workplace data is stored in user mailboxes, you can apply Microsoft 365 co
 
 The following overview explains the process of using a connector to archive Workplace data in Microsoft 365.
 
-![Archiving workflow for Workplace from Facebook data](../media/WorkplaceConnectorWorkflow.png)
+![Archiving workflow for Workplace from Facebook data.](../media/WorkplaceConnectorWorkflow.png)
 
 1. Your organization works with Workplace from Facebook to set up and configure a Workplace site.
 

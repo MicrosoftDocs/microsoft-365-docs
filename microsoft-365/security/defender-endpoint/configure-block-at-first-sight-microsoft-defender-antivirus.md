@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.date: 07/29/2021
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Turn on block at first sight
@@ -44,7 +45,7 @@ When Microsoft Defender Antivirus encounters a suspicious but undetected file, i
 
 Microsoft Defender Antivirus uses multiple detection and prevention technologies to deliver accurate, intelligent, and real-time protection.
 
-![List of Microsoft Defender AV engines](images/microsoft-defender-atp-next-generation-protection-engines.png)
+![List of Microsoft Defender AV engines.](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
 > To learn more, see [(Blog) Get to know the advanced technologies at the core of Microsoft Defender for Endpoint next-generation protection](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
@@ -77,7 +78,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Time extension for file scanning by the cloud**: 50
    - **Prompt users before sample submission**: Send all data without prompting
 
-   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight":::
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune config block at first sight.":::
 
 4. Save your settings.
 
@@ -102,7 +103,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
    - **Cloud-delivered protection level**: High
    - **Defender Cloud Extended Timeout in Seconds**: 50
 
-   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager":::
+   :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
 
 4. Apply the Microsoft Defender Antivirus profile to a group, such as **All users**, **All devices**, or **All users and devices**.
 

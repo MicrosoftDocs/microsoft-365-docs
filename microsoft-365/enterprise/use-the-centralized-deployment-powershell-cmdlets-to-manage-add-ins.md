@@ -44,7 +44,7 @@ Before you can use the Centralized Deployment cmdlets, you need to sign in.
   Connect-OrganizationAddInService
   ```
 
-3. In the **Enter Credentials** page, enter your Microsoft 365 global admin credentials. Alternately, you can enter your credentials directly into the cmdlet. 
+3. In the **Enter Credentials** page, enter your Microsoft 365 **User Admin**, or **Global admin** credentials. Alternately, you can enter your credentials directly into the cmdlet. 
     
     Run the following cmdlet specifying your company admin credentials as a PSCredential object.
     

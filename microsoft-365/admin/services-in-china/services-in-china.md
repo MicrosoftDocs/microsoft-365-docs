@@ -39,7 +39,7 @@ Microsoft does not operate the service itself. 21Vianet operates, provides and m
   
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
   
-![Scan this QR code to follow us on WeChat](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
+![Scan this QR code to follow us on WeChat.](../../media/9bbbdf3b-b3ab-4355-82a0-37a84d70735b.png)
   
  **About services in Office 365 operated by 21Vianet**
   

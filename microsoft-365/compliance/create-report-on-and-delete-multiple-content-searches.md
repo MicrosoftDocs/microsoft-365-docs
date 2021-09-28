@@ -175,7 +175,7 @@ To run the script:
 
    The script displays the progress of creating and running the searches. When the script is complete, it returns to the prompt.
 
-   ![Sample output from running the script to create multiple compliance searches](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
+   ![Sample output from running the script to create multiple compliance searches.](../media/37d59b0d-5f89-4dbc-9e2d-0e88e2ed7b4c.png)
 
 ## Step 4: Run the script to report the search estimates
 
@@ -250,7 +250,7 @@ After you create the searches, the next step is to run a script that displays a 
 
    The script displays the progress of creating and running the searches. When the script is complete, the report is displayed.
 
-   ![Run the search report to display the estimates for the search group](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
+   ![Run the search report to display the estimates for the search group.](../media/3b5f2595-71d5-4a14-9214-fad156c981f8.png)
 
 > [!NOTE]
 > If the same mailbox or site is specified as a content location in more than one search in a search group, the total results estimate in the report (for both the number of items and the total size) might include results for the same items. That's because the same email message or document will be counted more than once if it matches the query for different searches in the search group.
@@ -285,4 +285,4 @@ Because you might be creating a lot of searches, this last script just makes it 
 
    The script displays the name of each search that's deleted.
 
-   ![Run the script to delete the searches in the search group](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)
+   ![Run the script to delete the searches in the search group.](../media/9d97b9d6-a539-4d9b-a4e4-e99989144ec7.png)

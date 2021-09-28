@@ -62,7 +62,7 @@ An Assessment is made of several components, which are:
 
   Here's an example of three Microsoft-managed controls in the **Security** control family from an Assessment of Office 365 and the GDPR.
 
-  ![Details of Microsoft-managed controls in the Compliance Manager](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
+  ![Details of Microsoft-managed controls in the Compliance Manager.](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
 
   1. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
@@ -94,8 +94,8 @@ The following table describes each Compliance Manager permission and what it all
 
 |Permission|Compliance Manager Reader|Compliance Manager Contributor|Compliance Manager Assessor|Compliance Manager Administrator|Portal Admin|
 |---|:---:|:---:|:---:|:---:|:---:|
-|**Read data** - Users can read but not edit data.|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
-|**Edit data** - Users can edit all fields, except the Test Result and Test Date fields.||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
+|**Read data** - Users can read but not edit data.|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|
+|**Edit data** - Users can edit all fields, except the Test Result and Test Date fields.||![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|
 |**Edit test results** - Users can edit the Test Result and Test Date fields.|||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**Manage assessments** - Users can create, archive, and delete Assessments.||||![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.|||||![Check mark](../media/checkmark.png)|
@@ -105,7 +105,7 @@ The following table describes each Compliance Manager permission and what it all
 
 On the Dashboard, Compliance Manager displays a total score for Office 365 assessments in the upper right-hand corner of the tile. This is the overall total Compliance Score for the Assessment, and is the accumulation of points received for each control assessment that has been marked as Implemented and Tested in the Assessment. When adding an Assessment, you will see that the Compliance Score is already on the way towards completion because the points for the Microsoft-managed controls that have been implemented by Microsoft and tested by independent third parties are already applied.
 
-![Compliance Manager Dashboard - Total Compliance Score](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
+![Compliance Manager Dashboard - Total Compliance Score.](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
 
 The remaining points come from the successful customer control assessment, from the implementation and testing of the customer-managed controls, each of which has a specific value that contributes to the overall compliance score.
 
@@ -113,11 +113,11 @@ Each Assessment displays a risk-based Compliance Score to help you assess the le
 
 For example, the User Access Management assessment control shown below has a very high severity risk ranking, and displays an assigned value of 10.
 
-![Compliance Manager - Assessment control high severity - score 10](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
+![Compliance Manager - Assessment control high severity - score 10.](../media/174ecb2c-aaed-436e-9950-74da7dadf5db.png)
 
 By comparison, the Information Backup assessment control shown below has a lower severity risk ranking, and displays an assigned value of 3.
 
-![Compliance Manager - Assessment control low severity - score 3](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
+![Compliance Manager - Assessment control low severity - score 3.](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
 
 The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
 
@@ -135,17 +135,17 @@ Most importantly, the Compliance Score can help you prioritize which controls to
 
 For example, in the image below we see that the Office 365 - GDPR Assessment is currently 46% assessed, with 51 of 111 control assessments completed for a Total Compliance score of 289 out of a possible 600.
 
-![Compliance Manager - Assessment Summary](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
+![Compliance Manager - Assessment Summary.](../media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
 
 Within the assessment GDPR control 7.5.5 is related to 5 other controls (7.4.1, 7.4.3, 7.4.4, 7.4.8, and 7.4.9) each with a moderate to high severity risk rating score of 6 or 8). Using the assessment filter, we have selected all of these controls, making them visible in the assessment view, and can see below that none of them have been assessed.
 
-![Compliance Manager - Assessment View - Filter controls, none assessed](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40.
+![Compliance Manager - Assessment View - Filter controls, none assessed.](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40.
 
-![Compliance Manager Assessment View - control results synced](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
+![Compliance Manager Assessment View - control results synced.](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
 
 This confirmation update dialog box will appear if you are about to change the Implementation Status of a related control in a way that will impact the other related controls.
 
-![Compliance Manager Assessment - related controls update confirmation dialog box](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
+![Compliance Manager Assessment - related controls update confirmation dialog box.](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
 
 > [!NOTE]
 > Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status.
@@ -161,7 +161,7 @@ Assessments in Compliance Manager are based on the shared responsibility model f
 
 As shown in the Office 365 GDPR Assessment below, Microsoft and customers are each responsible for performing a variety of Actions that are designed to satisfy the requirements of the standard or regulation being assessed. To rationalize and understand the required. Actions across a variety of standards and regulations, Compliance Manager treats all standards and regulations as if they were control frameworks. Thus, the Actions performed by Microsoft and by customers for each Assessment involve the implementation and validation of various controls.
 
-![Compliance Manager - GDPR Assessment](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
+![Compliance Manager - GDPR Assessment.](../media/123f8126-85b8-4baa-9c4e-c6295cf4a5ca.png)
 
 Here's the basic workflow for a typical Action:
 
@@ -197,7 +197,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
 
 - The external drivers for the control
 
-![Compliance Manager - Compliance Score Methodology](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
+![Compliance Manager - Compliance Score Methodology.](../media/e48764c4-828e-44b0-8636-fb3c352f2bac.png)
 
 ### Essence of the control
 
@@ -317,23 +317,23 @@ As previous explained, one key advantage of using groups is that when two differ
 
 As an example of this, consider these two related assessment controls, each having to do with encryption of data on public networks, control 6.10.1.2 in the Office 365 — GDPR assessment, and control SC-13 in the Office 365 — NIST 800-53 assessment. These are related assessment controls, in two different assessments, both in the Default Group. Initially, neither assessment has completed any customer control assessments, as is displayed on the Compliance Manager Dashboard that shows these two Assessments.
 
-![Compliance Manager Dashboard — grouped assessments — before](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
+![Compliance Manager Dashboard — grouped assessments — before.](../media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
 
 By clicking the **Office 365 — GDPR** assessment, and using the filter controls to view GDPR control 6.10.1.2, we see that NIST 800-53 control SC-13 is listed as a related control.
 
-![Compliance Manager Assessment — shared controls](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Compliance Manager Assessment — shared controls.](../media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
 
 Here we show the completion of the implementation and testing of GDPR control 6.10.1.2.
 
-![Compliance Manager Assessment control GDPR 6.10.1.2 — passed](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
+![Compliance Manager Assessment control GDPR 6.10.1.2 — passed.](../media/ee9e83b6-9d51-4b3b-85eb-96bec0fef2e1.png)
 
 By navigating to the related control in the grouped assessment, we see that NIST 800-53 SC-13 has also been marked as completed with the same date and time, with no additional implementation or testing effort.
 
-![Compliance Manager assessment — NIST 800-53 SC(13) completed](../media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Compliance Manager assessment — NIST 800-53 SC(13) completed.](../media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
 
 Back at the Dashboard, we can see that each assessment has one control assessment completed and that the total Compliance Score for each assessment has increased by 8 (the compliance score value of that shared control).
 
-![Compliance Manager Dashboard — grouped assessment progress synchronization](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Compliance Manager Dashboard — grouped assessment progress synchronization.](../media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## Administrative functions
 
@@ -346,7 +346,7 @@ There are specific administrative functions that are only available to the tenan
 
 Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**.
 
-![STP Admin menu — Settings selected](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
+![STP Admin menu — Settings selected.](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
 
 To add or remove users from Compliance Manager roles.
 
@@ -362,11 +362,11 @@ To add or remove users from Compliance Manager roles.
 
 6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users.
 
-   ![Compliance Manager — provision roles — add users](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
+   ![Compliance Manager — provision roles — add users.](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
 
 7. To remove users from this role, select the user(s) and click **Delete**.
 
-   ![Compliance Manager — Provision Roles — remove user](../media/17004def-604f-471d-a54d-f678fcc01c1e.png)
+   ![Compliance Manager — Provision Roles — remove user.](../media/17004def-604f-471d-a54d-f678fcc01c1e.png)
 
 ## User Privacy settings
 
@@ -380,7 +380,7 @@ Certain regulations require that an organization must be able to delete user his
 
 - [Delete user data history](#delete-user-data-history)
 
-![Compliance Manager Admin — User Privacy Settings functions](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+![Compliance Manager Admin — User Privacy Settings functions.](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
 
 ### Search for a user
 
@@ -458,13 +458,13 @@ This sets control action items to 'unassigned' for all action items assigned to 
 
 Compliance Manager provides you with tools to assign, track, and record compliance and assessment-related activities, and to help your organization cross team barriers to achieve your organization's compliance goals.
 
-![Compliance Manager Dashboard — top menu — updated Admin menu](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
+![Compliance Manager Dashboard — top menu — updated Admin menu.](../media/134d7577-cd70-4124-bcfd-d3feb248952b.png)
 
 ## Accessing Compliance Manager
 
 You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
 
-![Compliance Manager — Accessing Compliance Manager from STP menu](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
+![Compliance Manager — Accessing Compliance Manager from STP menu.](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
 
 1. Go to [https://servicetrust.microsoft.com](https://servicetrust.microsoft.com/).
 
@@ -476,15 +476,15 @@ You access Compliance Manager from the Service Trust Portal. Anyone with a Micro
 
    To get you started, we've added the following Assessments by default:
 
-   ![The default Assessments in Compliance Manager](../media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
+   ![The default Assessments in Compliance Manager.](../media/8c59b45a-706a-4362-a7ba-2cb782931bf7.png)
 
-5. Click ![Help icon in Compliance Manager](../media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Help** to take a short tour of Compliance Manager.
+5. Click ![Help icon in Compliance Manager.](../media/c1b3092f-6ac7-43ab-b1c4-63a54598450c.png) **Help** to take a short tour of Compliance Manager.
 
 ## Viewing action items
 
 Compliance Manager provides a convenient view of all your assigned control assessment action items, enabling you to quickly and easily take action on them. You can view all action items or select the action items that correspond with a specific certification by clicking the tab associated with that assessment. For instance, in the image below, the GDPR tab has been selected, showing controls that related to the GDPR assessment.
 
-![Compliance Manager — Action Items list multiple tabs GDPR selected](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
+![Compliance Manager — Action Items list multiple tabs GDPR selected.](../media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
 
 To view your action items:
 
@@ -498,7 +498,7 @@ To view your action items:
 
 To add an Assessment to Compliance Manager:
 
-1. In the Compliance Manager dashboard, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add Assessment**.
+1. In the Compliance Manager dashboard, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add Assessment**.
 
 2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
 
@@ -518,7 +518,7 @@ To add an Assessment to Compliance Manager:
 
 6. Click the **Actions** menu to view your assigned action items, rename the assessment group, export the assessment report, or archive the assessment.
 
-   ![Compliance Manager — Assessment Tile](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
+   ![Compliance Manager — Assessment Tile.](../media/abf35c11-9757-45c1-aa14-91178f67a18c.png)
 
 ## Copying information from existing Assessments
 
@@ -538,7 +538,7 @@ Similarly, information from shared customer-managed controls within the same Ass
 
 1. Locate the Assessment Tile corresponding to the assessment you wish to view, then click the assessment name to open it and view the Microsoft and customer-managed controls associated with the Assessment, along with a list of the cloud services that are in-scope for the Assessment. Here's an example of the Assessment for Office 365 and GDPR.
 
-   ![Compliance Manager Assessment View — fullscreen with callouts](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
+   ![Compliance Manager Assessment View — fullscreen with callouts.](../media/169a02eb-e805-412d-b9e7-89561aa7ad1d.png)
 
 2. This section shows the Assessment summary information, including the name of the Assessment Grouping, Product, Assessment name, number of Assess controls
 
@@ -558,19 +558,19 @@ The creator of an Assessment is initially the only Assessment User. For each cus
 
 Here's a list of tasks that you can perform using the workflow features of Compliance Manager.
 
-![Compliance manager assessment workflow with callouts](../media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
+![Compliance manager assessment workflow with callouts.](../media/9e5ae34d-b55e-4452-a021-e0e5b10218f5.png)
 
 1. **Use the Filter Options to find specific assessment controls** - Compliance Manager provides **Filter Options**, giving you highly granular selection criteria for displaying assessment controls, helping you to precisely target specific areas of your compliance efforts.
 
-   Click the funnel icon on the right-hand side of the page to show or hide the **Filter Options** controls. These controls allow you to specify filter criteria, and only the assessment controls that fit those criteria will be displayed below. ![Compliance Manager Assessments filter controls](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+   Click the funnel icon on the right-hand side of the page to show or hide the **Filter Options** controls. These controls allow you to specify filter criteria, and only the assessment controls that fit those criteria will be displayed below. ![Compliance Manager Assessments filter controls.](../media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
 
    - **Articles** - filters on the article name and returns the assessment controls associated to that article. For instance, typing in "Article (5)" returns a selection list of articles whose name includes that string, i.e. Article (5)(1)(a), Article (5)(1)(b), Article (5)(1)(c), etc. Selecting Article (5)(1)(c) will return the controls associated with Article (5)(1)(c). This is multiselect field that uses an OR operator with multiple values — for instance, if you select Article (5)(1)(a) and then add Article (5)(1)(c), the filter will return controls associated with either Article (5)(1)(a) or Article (5)(1)(c).
 
-     ![Compliance Manager Assessment view — Filter on Article Name](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
+     ![Compliance Manager Assessment view — Filter on Article Name.](../media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
 
    - **Controls** - returns the list of controls whose names fit the filter, i.e. typing in 7.3 returns a selection list of items like 7.3.1, 7.3.4, 7.3.5, etc. This is multiselect field that uses an OR operator with multiple values — for instance, if you select 7.3.1 and then add 7.3.4, the filter returns controls associated with either 7.3.1 or 7.3.4.
 
-     ![Compliance Manager Assessment view — filter control multiselect](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
+     ![Compliance Manager Assessment view — filter control multiselect.](../media/c4fc25e8-2376-4f2d-b605-f9c3d90413bf.png)
 
    - **Assigned Users** - returns the list of controls who are assigned to the selected user.
 
@@ -580,7 +580,7 @@ Here's a list of tasks that you can perform using the workflow features of Compl
 
    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below.
 
-   ![Compliance Manager Assessment view - Filter Article results](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
+   ![Compliance Manager Assessment view - Filter Article results.](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
 
 2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below.
 
@@ -665,17 +665,17 @@ When viewing an archived assessment, none of the normally editable controls (i.e
 
 ## Using search
 
-![Service Trust Portal - Search Input field](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Service Trust Portal - Search Input field.](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
 
 Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
 
 By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
 
-![Service Trust Portal - Search on Documents with filter applied](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
 Click on the Compliance Manager link to display Search results for Compliance Manager assessment controls. The listed search results show the date the assessment was created, the name of the assessment grouping, the applicable cloud service, and whether the controls are Microsoft or Customer Managed.
 
-![Service Trust Portal - Search on Compliance Manager Controls](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Search on Compliance Manager Controls.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least twelve months after publishing or until a new version of document becomes available.
@@ -684,7 +684,7 @@ Click on the Compliance Manager link to display Search results for Compliance Ma
 
 Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice.
 
-![Service Trust Portal - Localized content options](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Localized content options.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## Change log for Customer-Managed Controls
 

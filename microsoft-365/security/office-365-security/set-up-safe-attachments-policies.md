@@ -81,7 +81,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
 
 1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
 
-2. On the **Safe Attachments** page, click ![Create icon](../../media/m365-cc-sc-create-icon.png) **Create**.
+2. On the **Safe Attachments** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
 
 3. The policy wizard opens. On the **Name your policy** page, configure the following settings:
    - **Name**: Enter a unique, descriptive name for the policy.
@@ -94,7 +94,7 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
    - **Groups**: The specified distribution groups, mail-enabled security groups, or Microsoft 365 Groups in your organization.
    - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
 
-   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+   Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, enter an asterisk (\*) by itself to see all available values.
 
@@ -114,6 +114,10 @@ Creating a custom Safe Attachments policy in the Microsoft 365 Defender portal c
      - **Dynamic Delivery (Preview feature)**
 
      These values are explained in [Safe Attachments policy settings](safe-attachments.md#safe-attachments-policy-settings).
+
+   - **Quarantine policy**: Select the quarantine policy that applies to messages that are quarantined by Safe Attachments (**Block**, **Replace**, or **Dynamic Delivery**). Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+
+     A blank value means the default quarantine policy is used (AdminOnlyAccessPolicy for email detections by Safe Attachments). When you later edit the Safe Attachments policy or view the settings, the default quarantine policy name is shown.
 
    - **Redirect messages with detected attachments**: If you select **Enable redirect**, you can specify an email address in the **Send messages that contain blocked, monitored, or replaced attachments to the specified email address** box to send messages that contain malware attachments for analysis and investigation.
 
@@ -157,8 +161,8 @@ To enable or disable a policy or set the policy priority order, see the followin
 2. On the **Safe Attachments** page, select a policy from the list by clicking on the name.
 
 3. At the top of the policy details flyout that appears, you'll see one of the following values:
-   - **Policy off**: To turn on the policy, click ![Turn on icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
-   - **Policy on**: To turn off the policy, click ![Turn off icon](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
+   - **Policy off**: To turn on the policy, click ![Turn on icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn on** .
+   - **Policy on**: To turn off the policy, click ![Turn off icon.](../../media/m365-cc-sc-turn-on-off-icon.png) **Turn off**.
 
 4. In the confirmation dialog that appears, click **Turn on** or **Turn off**.
 
@@ -187,7 +191,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
    - The policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** option available.
    - If you have three or more policies, the policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** options available.
 
-   Click ![Increase priority icon](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
+   Click ![Increase priority icon.](../../media/m365-cc-sc-increase-icon.png) **Increase priority** or ![Decrease priority icon](../../media/m365-cc-sc-decrease-icon.png) **Decrease priority** to change the **Priority** value.
 
 4. When you're finished, click **Close** in the policy details flyout.
 
@@ -197,7 +201,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 2. On the **Safe Attachments** page, select a custom policy from the list by clicking on the name of the policy.
 
-3. At the top of the policy details flyout that appears, click ![More actions icon](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
+3. At the top of the policy details flyout that appears, click ![More actions icon.](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 
 4. In the confirmation dialog that appears, click **Yes**.
 
@@ -233,12 +237,13 @@ Creating a Safe Attachments policy in PowerShell is a two-step process:
 To create a safe attachment policy, use this syntax:
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 This example creates a safe attachment policy named Contoso All with the following values:
 
 - Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).
+- The default [quarantine policy](quarantine-policies.md) is used (AdminOnlyAccessPolicy), because we aren't using the _QuarantineTag_ parameter.
 - Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.
 - If Safe Attachments scanning isn't available or encounters errors, don't deliver the message (we aren't using the _ActionOnError_ parameter, and the default value is `$true`).
 
@@ -247,6 +252,9 @@ New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -Redi
 ```
 
 For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
+
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a safe attachment policy, see [Use PowerShell to specify the quarantine policy in Safe Attachments policies](quarantine-policies.md#safe-attachments-policies-in-powershell).
 
 #### Step 2: Use PowerShell to create a safe attachment rule
 
@@ -336,6 +344,9 @@ Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 For detailed syntax and parameter information, see [Set-SafeAttachmentPolicy](/powershell/module/exchange/set-safeattachmentpolicy).
+
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a safe attachment policy, see [Use PowerShell to specify the quarantine policy in Safe Attachments policies](quarantine-policies.md#safe-attachments-policies-in-powershell).
 
 ### Use PowerShell to modify safe attachment rules
 

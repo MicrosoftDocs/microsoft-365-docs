@@ -53,7 +53,7 @@ Automation is a crucial part of implementing and maintaining a Zero Trust enviro
 
 Next, organizations can use the [Microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender to determine your current security posture and consider recommendations on how to improve it. The higher the score is, the more security recommendations and improvement actions have been taken by the organization. Secure Score recommendations can be taken across different products and allow organizations to raise their scores even higher. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Example of Microsoft Secure Score in the Microsoft security center":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Example of Microsoft Secure Score in the Microsoft security center.":::
  
 ## Step 3. Assess your organization’s vulnerability exposure
 
@@ -61,7 +61,7 @@ Preventing incidents can help streamline security operations efforts to focus on
 
 To check your software patching progress, visit the [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) page in Defender for Endpoint, which you can access from Microsoft 365 Defender through the **More resources** tab.
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Example of the Threat and Vulnerability page in the Microsoft security center"::: 
+:::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Example of the Threat and Vulnerability page in the Microsoft security center."::: 
  
 ## 4. Understand emerging threats
 
@@ -81,7 +81,7 @@ Make time in your schedule to regularly check the [Threat Analytics](threat-anal
 
 ## Next step
 
-[![Step 1: Learn how to triage and analyze incidents](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+[![Step 1: Learn how to triage and analyze incidents.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
 Learn how to [triage and analyze incidents](first-incident-analyze.md).
 

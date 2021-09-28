@@ -27,7 +27,7 @@ Advanced eDiscovery in Microsoft 365 provides an end-to-end workflow to preserve
 
 This article discusses the following steps necessary to set up Advanced eDiscovery.
 
-![Steps to set up Advanced eDiscovery](../media/set-up-advanced-ediscovery.png)
+![Steps to set up Advanced eDiscovery.](../media/set-up-advanced-ediscovery.png)
 
 This includes ensuring the proper licensing required to access Advanced eDiscovery and add custodians to cases, and assigning permissions to your legal and investigation team so they can access and manage cases.
 

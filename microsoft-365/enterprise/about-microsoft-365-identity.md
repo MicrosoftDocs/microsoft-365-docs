@@ -59,7 +59,7 @@ A cloud-only identity uses user accounts that exist only in Azure AD. Cloud-only
 
 Here are the basic components of cloud-only identity.
 
-![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Basic components of cloud-only identity.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Both on-premises and remote (online) users use their Azure AD user accounts and passwords to access Microsoft 365 cloud services. Azure AD authenticates user credentials based on its stored user accounts and passwords.
 
@@ -76,7 +76,7 @@ When you implement hybrid identity, your on-premises AD DS is the authoritative 
 
 Here are the components of hybrid identity.
 
-![Components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Components of hybrid identity.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 The Azure AD tenant has a copy of the AD DS accounts. In this configuration, both on-premises and remote users accessing Microsoft 365 cloud services authenticate against Azure AD.
 

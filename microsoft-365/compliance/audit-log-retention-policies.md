@@ -54,7 +54,7 @@ Advanced Audit in Microsoft 365 provides a default audit log retention policy fo
 
 4. Click **Create audit retention policy**, and then complete the following fields on the flyout page:
 
-   ![New audit retention policy flyout page](../media/CreateAuditLogRetentionPolicy.png)
+   ![New audit retention policy flyout page.](../media/CreateAuditLogRetentionPolicy.png)
 
    1. **Policy name:** The name of the audit log retention policy. This name must be unique in your organization, and it can't be change after the policy is created.
 
@@ -82,7 +82,7 @@ Audit log retention policies are listed on the **Audit retention policies** tab 
 
 Audit log retention policies are listed in the dashboard. One advantage of viewing policies in the dashboard is that you can click the **Priority** column to list the policies in the priority in which they are applied. As previously explained, a lower value indicates a higher priority.
 
-![Priority column in the Audit retention policies dashboard](../media/AuditLogRetentionDashboardPriority.png)
+![Priority column in the Audit retention policies dashboard.](../media/AuditLogRetentionDashboardPriority.png)
 
 You can also select a policy to display its settings on the flyout page.
 
@@ -101,7 +101,7 @@ To edit a policy, select it to display the flyout page. You can modify one or mo
 
 ### Delete policies in the dashboard
 
-To delete a policy, click the **Delete** ![Delete icon](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
+To delete a policy, click the **Delete** ![Delete icon.](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg) icon and then confirm that you want to delete the policy. The policy is removed from the dashboard, but it might take up to 30 minutes for the policy to be removed from your organization.
 
 ## Create and manage audit log retention policies in PowerShell
 

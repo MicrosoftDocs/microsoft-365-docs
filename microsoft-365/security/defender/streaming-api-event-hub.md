@@ -64,9 +64,11 @@ Once the Event Hub namespace is created you will need to:
 
    To get your **Event Hub resource ID**, go to your Azure Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   ![Image of Event Hub resource Id1](../defender-endpoint/images/event-hub-resource-id.png)
+   ![Image of Event Hub resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. Choose the events you want to stream and click **Save**.
+8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
+
+9. Choose the events you want to stream and click **Save**.
 
 ## The schema of the events in Azure Event Hub
 
@@ -108,12 +110,13 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of Event Hub resource Id2](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image of Event Hub resource Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
+- [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hub documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

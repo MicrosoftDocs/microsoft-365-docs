@@ -35,15 +35,15 @@ During and after an automated investigation, remediation actions for threat dete
 
 We are pleased to announce a new, unified Action center ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center))!
 
-:::image type="content" source="images/mde-action-center-unified.png" alt-text="Action center in Microsoft 365 security center":::
+:::image type="content" source="images/mde-action-center-unified.png" alt-text="Action center in Microsoft 365 security center.":::
 
 The following table compares the new, unified Action center to the previous Action center.
 
-|The new, unified Action center|The previous Action center|
-|---|---|
-|Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Lists pending and completed actions for devices <br> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) only)|
-|Is located at:<br/><https://security.microsoft.com/action-center>|Is located at:<br/><https://securitycenter.windows.com/action-center>|
-|In the Microsoft 365 security center, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center":::|In the Microsoft Defender Security Center, choose **Automated investigations** \> **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center":::|
+|The new, unified Action center  |The previous Action center  |
+|---------|---------|
+|Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Lists pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) only)   |
+|Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
+| In the Microsoft 365 security center, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center."::: | In the Microsoft Defender Security Center, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center.":::  |
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience.
 
@@ -72,7 +72,7 @@ When you visit the Action center, you see two tabs: **Pending actions** and **Hi
 
 You can customize, sort, filter, and export data in the Action center.
 
-:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columns and filters in the Action center":::
+:::image type="content" source="images/new-action-center-columnsfilters.png" alt-text="Columns and filters in the Action center.":::
 
 - Select a column heading to sort items in ascending or descending order.
 - Use the time period filter to view data for the past day, week, 30 days, or 6 months.
