@@ -174,7 +174,7 @@ In addition to the label settings for sites and groups that you can configure fr
 
 To learn more about how these settings work, see [Change the default link type for a site](/sharepoint/change-default-sharing-link).
 
-These additional settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+These additional label settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: The available values are:
     - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
