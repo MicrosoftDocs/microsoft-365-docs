@@ -113,17 +113,16 @@ Dominican Republic
 
 ### Afghanistan  
 
-#### Phone number
+**Phone number**
 
 +92 21 111 674 357  
 Select option 3
 
-#### Hours
-##### Billing Support:
+**Billing Support hours:**
 
 English: Mon-Fri 10 AM-6 PM
 
-#### Technical Support:
+**Technical Support hours:**
 
 English: 24 hours a day, 7 days a week  
 International call charges apply
@@ -170,19 +169,17 @@ International call charges apply
 
 ### Belgium  
 
-#### Phone number
+**Phone number**
 
 0800 81174
 
-#### Hours
-
-##### Billing Support:
+**Billing Support hours:**
 
 Dutch: Mon-Fri 9 AM-5 PM  
 French: Mon-Fri 9 AM-5 PM  
 English: Mon-Fri 9 AM-5 PM
 
-##### Technical Support:
+**Technical Support hours:**
 
 French: Mon-Fri 8 AM-9 PM  
 English: 24 hours a day, 7 days a week  
