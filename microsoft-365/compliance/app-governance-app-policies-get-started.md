@@ -59,6 +59,19 @@ You can also:
 - Export the policy list to a comma-separated value (CSV) file. For example, you could open the CVS file in Microsoft Excel and sort the policies by **Severity** and then **Number of Total Alerts**.
 - Search the policy list.
 
+## Edit an existing policy
+
+1. In the app governance portal, select the **Policies** tab.
+1. Select the policy you want to edit. A panel will open on the right side with the details of the existing policy.
+1. Select **Edit**.
+1. You cannot change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
+1. Choose whether you want to continue with the existing policy settings or customize them. Select **No. I want to customize the policy** to make changes. Select **Next**.
+1. Choose whether this policy will apply to all apps or to apps you specify in the list. Select **Add apps** to add more apps to the list if applying the policy to specific apps. Select **Next**.
+1. Choose whether to modify the existing conditions of the policy. If you choose to modify the conditions, select **Edit conditions**. Select **Next**.
+1. Choose whether to disable the app if it triggers the policy conditions. Select **Next**.
+1. Set the policy status to Audit, Active, or Inactive. Select **Next**.
+1. Review your setting choices for the policy and if everything is the way you want it, select **Submit**.
+
 ## Next step
 
 [Create an app policy.](app-governance-app-policies-create.md)

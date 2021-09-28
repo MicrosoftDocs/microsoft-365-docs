@@ -69,13 +69,13 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 4. Depending on the alert status, take the steps described in the following table:
 
-<br/>
+<br/><br/>
 
-|Alert status|What to do|
-|---|---|
-|The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
-|The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
-|The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
+   |Alert status|What to do|
+   |---|---|
+   |The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
+   |The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
+   |The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
 
 ### Classify an alert
 
@@ -171,6 +171,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
 1. Open an elevated command-line prompt on the device:
+
    1. Go to **Start** and type _cmd_.
    2. Right-click **Command prompt** and select **Run as administrator**.
 
@@ -372,6 +373,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 4. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
 
 5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
+
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
 
