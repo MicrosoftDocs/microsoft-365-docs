@@ -40,11 +40,13 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open [Azure Active directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Open the Azure Active Directory portal at <https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview>.
 
-2. Navigate to **Enterprise Applications** and select **Audit logs**.
+2. Go to **Enterprise Applications** \> **Audit logs**.
 
-3. Search (all activities and all users) and enter the  date and then click **Apply**.
+   To go directly to the **Audit logs** page, use <https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Audit/menuId/>.
+
+3. Search (all activities and all users) and enter the date and then click **Apply**.
 
 4. In this case, an audit event will also be logged with a Category of "ApplicationManagement", Activity Type of "Consent to application", and Status Reason of "Risky application detected".
 
