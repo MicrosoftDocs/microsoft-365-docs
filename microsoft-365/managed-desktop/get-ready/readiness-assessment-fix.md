@@ -275,9 +275,9 @@ Enterprise State Roaming should be enabled.
 
 Make sure that Enterprise State Roaming is enabled for **All** or for **Selected** groups. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
 
-### Guest invite settings
+### Guest invitation settings
 
-Microsoft Managed Desktop recommends adjusting guest invite settings, as the default setting allows all users and guests in your directory to invite guests.
+Microsoft Managed Desktop recommends adjusting guest invitation settings, since the default setting allows all users and guests in your directory to invite guests.
 
 **Advisory**
 
