@@ -20,54 +20,9 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage your exact data match schema
 
-<!--CHRIS MOVE THIS TO USE After verifying that your sensitive information table has correctly been uploaded, you can test that it's working properly.
+## Editing the schema for EDM-based classification
 
-1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
-2. Select your EDM SIT from the list and then select **Test** in the flyout pane. 
-3. Upload an item that contains data you want to detect, for example create an item that contains some of the data in your sensitive information table. If you used the configurable match feature in your schema to define ignored delimiters, make sure the item includes examples with and without those delimiters.
-4. After the file has been uploaded and scanned, check for matches to your EDM SIT.
-5. If the **Test** function in the SIT detects a match, check that it is not trimming it or extracting it incorrectly. For example by extracting only a substring of the full string it is supposed to detect, or picking up only the first word in a multi-word string, or including extra symbols or characters in the extraction. See [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference) for the regular expression language reference.  -->
-
-
-
-===
-Editing the schema for EDM-based classification
-If you want to make changes to your EDM schema, such as changing which fields are used for EDM-based classification, follow these steps:
-1.	Edit your edm.xml file (this is the file discussed in the Define the schema section of this article).
-2.	Connect to the Security & Compliance center using the procedures in Connect to Security & Compliance Center PowerShell.
-3.	To update your database schema, run the following cmdlets, one at a time:
-$edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-You will be prompted to confirm, as follows:
-Confirm
-Are you sure you want to perform this action?
-EDM Schema for the data store 'patientrecords' will be updated.
-[Y] Yes [A] Yes to All [N] No [L] No to All [?] Help (default is "Y"):
-Note
-It can take between 10-60 minutes to update the EDMSchema with additions or modifications. The update must complete before you execute steps that use the additions.
-Removing a schema for EDM-based classification
-If you want to remove a schema you configured for EDM-based classification, follow these steps:
-1.	Connect to the Security & Compliance center using the procedures in Connect to Security & Compliance Center PowerShell.
-2.	Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:
-Remove-DlpEdmSchema -Identity patientrecords
-You will be prompted to confirm:
-Confirm
-Are you sure you want to perform this action?
-EDM Schema for the data store 'patientrecords' will be removed.
-[Y] Yes [A] Yes to All [N] No [L] No to All [?] Help (default is "Y"):
-Related articles
-•	Create a custom sensitive information type with Exact Data Match based classification
-•	Sensitive information type-entity definitions
-•	Custom sensitive information types
-•	Learn about data loss prevention
-•	Microsoft Cloud App Security
-•	New-DlpEdmSchema
-
-
-
-<!-- FOR CHRIS MOVE THIS TO USE #### Editing the schema for EDM-based classification
-
-If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
+If you want to make changes to your EDM schema, for example the **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
 
 > [!TIP]
 > You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md).
@@ -99,8 +54,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > [!NOTE]
       > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.-->
 
-<!-- FOR CHRIS move this to USE
-#### Removing the schema for EDM-based classification
+## Removing the schema for EDM-based classification
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
