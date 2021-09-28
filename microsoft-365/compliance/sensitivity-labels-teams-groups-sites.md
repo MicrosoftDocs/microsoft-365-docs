@@ -168,7 +168,7 @@ Known limitations for this preview:
     - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
-## Configure settings for the default sharing link for a site by using PowerShell advanced settings
+### Configure settings for the default sharing link for a site by using PowerShell advanced settings
 
 In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site, and the sharing link permissions.
 
