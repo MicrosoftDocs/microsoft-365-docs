@@ -77,7 +77,7 @@ When you choose to **include only specific users and groups** you can either:
 
   ![User filtering in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-user-targeting.png)
 
-- **Import from CSV** allows you to import a predefined set of users for this simulation.
+- **Import from CSV** allows you to import a predefined set of users for this simulation. The CSV file should contain one email address per line.
 
 ## Assigning training
 
