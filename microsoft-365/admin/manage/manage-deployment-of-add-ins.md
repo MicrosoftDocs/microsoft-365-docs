@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
