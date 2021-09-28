@@ -2,8 +2,8 @@
 title: Mail flow intelligence
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting

@@ -26,10 +26,6 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> [!IMPORTANT]
-> **Web content filtering is currently in public preview**<br>
-> This preview version is provided without a service level agreement, and it's not recommended for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Microsoft Defender for Endpoint preview features](preview.md).
-
 > [!TIP]
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
@@ -65,11 +61,11 @@ Data is stored in the region that was selected as part of your [Microsoft Defend
 
 ## Turn on web content filtering
 
-From the left-hand navigation menu, select **Settings** > **Endpoints** > **General** > **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
+From the left-hand navigation menu, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**. Scroll down until you see the entry for **Web content filtering**. Switch the toggle to **On** and **Save preferences**.
 
 ### Configure web content filtering policies
 
-Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** > **Endpoints** > **Web content filtering** (under **Rules**).
+Web content filtering policies specify which site categories are blocked on which device groups. To manage the policies, go to **Settings** \> **Endpoints** \> **Web content filtering** (under **Rules**).
 
 Policies can be deployed to block any of the following parent or child categories:
 
@@ -171,9 +167,10 @@ To add a new policy, follow these steps:
 5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
 
 > [!NOTE]
+>
 > - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
 > - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
-> - Blocking the "Uncategorized" category may lead to unexpected and undesired results.  
+> - Blocking the "Uncategorized" category may lead to unexpected and undesired results.
 
 ## End-user experience
 
@@ -185,29 +182,29 @@ It's possible to override the blocked category in web content filtering to allow
 
 To define a custom indicator, follow these steps:
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Indicators** > **URL/Domain** > **Add Item**.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Settings** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
 
 2. Enter the domain of the site.
 
-3. Set the policy action to **Allow**.  
+3. Set the policy action to **Allow**.
 
 ### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal. 
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the portal.
 
-To dispute the category of a domain, navigate to **Reports** > **Web protection** > **Web Content Filtering Details** > **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
+To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
 A panel will open where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
 ### URL category lookup
 
-To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) under **Endpoints** > **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
+To determine the category of a website, you can use the URL search function available on the Microsoft 365 Defender portal (<https://security.microsoft.com>) under **Endpoints** \> **Search**. In the URL search results, the web content filtering category appears under **URL/Domain details**. Administrators can also dispute the category of the domain directly from this page, as shown in the following image. If the category result is not shown, the URL is not currently assigned to an existing web content filtering category.
 
 ![Image of web content filtering category lookup results.](../../media/web-content-filtering-category-lookup.png)
 
 ## Web content filtering cards and details
 
-Select **Reports** > **Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
+Select **Reports** \> **Web protection** to view cards with information about web content filtering and web threat protection. The following cards provide summary information about web content filtering.
 
 ### Web activity by category
 
@@ -245,11 +242,7 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 ### Known issues and limitations
 
-- Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** > **Systeminfo** > **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
-
-- Unassigned devices will have incorrect data shown within the report. In the **Report details** > **Device groups** pivot, you might see a row with a blank Device Group field. This group contains your unassigned devices before they get put into your specified group. The report for this row might not contain an accurate count of devices or access counts.
-
-- Web Content Filtering reports are currently limited to showing the top 5000 records. For example, the Domains report will only show a maximum of the top 5000 domains for a given filter query, if applicable. 
+Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
 ## See also
 
