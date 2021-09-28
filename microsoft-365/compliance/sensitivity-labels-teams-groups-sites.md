@@ -69,7 +69,7 @@ If you haven't yet enabled sensitivity labels for containers, do the following s
 
 ## How to configure groups and site settings
 
-After sensitivity labels are enabled for containers as described in the previous section, you can then configure protection settings for groups and sites in the sensitivity labeling wizard. Until sensitivity labels are enabled for containers, the settings are visible in the wizard but you can't configure them.
+After sensitivity labels are enabled for containers as described in the previous section, you can then configure protection settings for groups and sites in the sensitivity labeling configuration. Until sensitivity labels are enabled for containers, the settings are visible but you can't configure them.
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
@@ -112,7 +112,7 @@ After sensitivity labels are enabled for containers as described in the previous
             
             Examples for this label configuration:
             
-             - You choose an authentication context that is configured to require [multi-factor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
+             - You choose an authentication context that is configured to require [multifactor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
              
              - You choose an authentication context that is configured for [terms of use (ToU) policies](/azure/active-directory/conditional-access/terms-of-use). This label is then applied to a SharePoint site that contains items that require a terms of use acceptance for legal or compliance reasons. As a result, when users attempt to access a document in this site, they see a terms of use document that they must accept before they can access the original document.
 
@@ -127,7 +127,7 @@ If you don't configure the dependent conditional access policy for SharePoint as
 
 For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
 
-Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
+Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label configuration that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
 
 ##### More information about the dependencies for the authentication context option
 
