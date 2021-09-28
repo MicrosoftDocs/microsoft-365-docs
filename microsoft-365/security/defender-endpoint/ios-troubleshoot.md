@@ -55,7 +55,7 @@ While enabled by default, there might be some cases that require you to disable 
 
 ## Coexistence with multiple VPN profiles
 
-Apple iOS does not support multiple **device-wide** VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time.
+Apple iOS does not support multiple **device-wide** VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time. If you need to use another VPN on the device, you can disable Defender for Endpoint VPN while you are using the other VPN.
 
 Microsoft Defender for Endpoint VPN can co-exist with other VPNs that are configured as *per-app* or *"Personal"*.
 
