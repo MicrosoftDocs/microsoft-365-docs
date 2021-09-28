@@ -65,6 +65,8 @@ additionalContent:
           links:
             - text: Get started
               url: /sharepoint/viva-connections-overview
+            - text: Setup
+              url: /sharepoint/guide-to-setting-up-viva-connections
             - text: Extensibility 
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: End user help & training

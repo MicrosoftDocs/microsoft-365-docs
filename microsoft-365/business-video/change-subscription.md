@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jmueller
+ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,6 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to move users to a different subscription when you need new features."
+ms.date: 09/16/2021
 ---
 
 # Move users to different subscriptions
@@ -33,6 +34,9 @@ description: "Learn how to move users to a different subscription when you need 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 As your users change roles, they may need features that aren't available in their current Microsoft 365 Business Premium subscription. When this happens, you can add a new subscription that includes those features, and assign licenses to the people who need them.
+
+> [!NOTE]
+> For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
 
 ## Try it!
 

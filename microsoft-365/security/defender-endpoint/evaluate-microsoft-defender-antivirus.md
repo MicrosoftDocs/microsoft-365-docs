@@ -15,6 +15,7 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Evaluate Microsoft Defender Antivirus

@@ -106,8 +106,6 @@ The following table lists the available roles and the role groups that they're a
 
 Note that the following roles aren't assigned to the Organization Management role group by default:
 
-- Attack Simulator Admin
-- Attack Simulator Payload Author
 - Communication
 - Communication Compliance Admin
 - Communication Compliance Analysis
@@ -142,8 +140,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 
 |Role|Description|Default role group assignments|
 |---|---|---|
-|**Attack Simulator Admin**|Used to create and manage all aspects of attack simulation campaigns.||
-|**Attack Simulator Payload Author**|Used to create and manage attack payloads that can be deployed by attack simulator administrator.||
 |**Audit Logs**|Turn on and configure auditing for the organization, view the organization's audit reports, and then export these reports to a file.|Organization Management <p> Security Administrator|
 |**Case Management**|Create, edit, delete, and control access to eDiscovery cases.|Communication Compliance <p> Communication Compliance Investigators <p> Compliance Administrator <p>eDiscovery Manager <p> Insider Risk Management <p> Insider Risk Management Admins <p> Insider Risk Management Analysts <p> Insider Risk Management Investigators <p> Organization Management|
 |**Communication**|Manage all communications with the custodians identified in an Advanced eDiscovery case.  Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgment of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.|eDiscovery Manager|
