@@ -198,7 +198,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Def
 To set the sharing link permissions to Edit:
 
 ````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings@{DefaultShareLinkPermission="Edit"}
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
 ````
 
 #### PowerShell tips for specifying the advanced settings
