@@ -22,7 +22,8 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 # Support contacts by country
 
-# [A-D](#tab/athroughd)
+## Lorem impsum dolor sit
+## [A-D](#tab/athroughd)
 
 ## Afghanistan  
 
@@ -150,8 +151,7 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 ## Dominican Republic  
 
-
-# [E-L](#tab/ethroughl)
+## [E-L](#tab/ethroughl)
 
 ## Ecuador  
 
@@ -283,7 +283,7 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 ## Luxembourg  
 
-# [M-R](#tab/mthroughr)
+## [M-R](#tab/mthroughr)
 
 ## Macau SAR  
 
@@ -393,7 +393,7 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 
 ## Rwanda  
 
-# [S-Z](#tab/sthroughz)
+## [S-Z](#tab/sthroughz)
 
 ## Saba  
 
