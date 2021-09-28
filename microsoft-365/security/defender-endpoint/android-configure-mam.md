@@ -43,28 +43,28 @@ To manage apps using in both the above configurations customers should use Intun
 
 **1. Validate that the Microsoft Defender for Endpoint-Intune connector is enabled**
 
-    a. Go to security.microsoft.com. 
+  a. Go to security.microsoft.com. 
 
-    b. Select  **Settings > Endpoints> Advanced   Features > Microsoft Intune Connection** is turned on.
+  b. Select  **Settings > Endpoints> Advanced   Features > Microsoft Intune Connection** is turned on.
 
-    c. If the connection is not turned on, select the toggle to turn it on and then select **Save Preferences**.
+  c. If the connection is not turned on, select the toggle to turn it on and then select **Save Preferences**.
 
-    ![Image of Defender for Endpoint -Intune connector](images/enable-intune-connection.png)
+  ![Image of Defender for Endpoint -Intune connector](images/enable-intune-connection.png)
 
-    d. Go to **Microsoft Endpoint Manager (Intune)** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
+  d. Go to **Microsoft Endpoint Manager (Intune)** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
-    ![Image of Defender for Endpoint-Intune connector in Intune](images/validate-intune-connector.png)
+  ![Image of Defender for Endpoint-Intune connector in Intune](images/validate-intune-connector.png)
 
 **2. Enable Microsoft Defender for Endpoint** (Mobile) Connector for App Protection Policy (APP)
     Configure the connector on Intune Microsoft Endpoint Manager for App protection policies:
 
-    a. Go to **Tenant Administration > Connectors and Tokens > Microsoft Defender for Endpoint**.
+  a. Go to **Tenant Administration > Connectors and Tokens > Microsoft Defender for Endpoint**.
 
-    b. Turn on the toggles for the app protection policy for Android and iOS (as seen in the following screenshot).
+  b. Turn on the toggles for the app protection policy for Android and iOS (as seen in the following screenshot).
 
-    c. Select **Save**.
+  c. Select **Save**.
 
-    ![App settings](images/app-settings.png)
+  ![App settings](images/app-settings.png)
 
 ## Create an app protection policy
 
@@ -80,12 +80,10 @@ App protection policies (APP) are rules that ensure an organization's data remai
 2. Add apps
 
   a. Choose how you want to apply this policy to apps on different devices. Then add at least one app.
-  
   Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also chooseto target your policy to apps on devices of any management state.
   Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management. Companies can use app protection policies with or without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
-  b. Select Apps.
-  
+  b. Select Apps
   A managed app is an app that has app protection policies applied to it, and can be managed by Intune. Any app that has been integrated with the [Intune SDK](/mem/intune/developer/app-sdk) or wrapped by the [Intune App Wrapping Tool](/mem/intune/developer/apps-prepare-mobile-application-management) can be managed using Intune app protection Policies. See the official list of [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps) that have been built using these tools and are available for public use.
 
   *Example: Outlook as a managed app*
@@ -98,7 +96,6 @@ App protection policies (APP) are rules that ensure an organization's data remai
    ![Image of conditional launch](images/conditional-launch.png)
 
 4. Assign user groups for whom the policy needs to be applied.
-
   Select **Included groups**. Then add the relevant groups. 
 
   ![Image of assigments](images/assignment.png)
