@@ -66,7 +66,9 @@ To manage apps using in both the above configurations customers should use Intun
 
   ![App settings](images/app-settings.png)
 
-## Block access or wipe data of a managed app based on Microsoft Defender for Endpoint risk signals by creating an app protection policy
+## Create an app protection policy
+
+Block access or wipe data of a managed app based on Microsoft Defender for Endpoint risk signals by creating an app protection policy.
 
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM). With this capability, you can use Microsoft Defender for Endpoint to protect managed apps.
 
@@ -90,13 +92,15 @@ A managed app is an app that has app protection policies applied to it, and can 
 
 ![Image Outlook as managed app](images/managed-app.png)
 
-### Step 3: Set sign-in security requirements for your protection policy** 
+### Step 3: Set sign-in security requirements for your protection policy
 
-Select **Setting Max allowed device threat level** in Device Conditions and enter a Value. Then select  **Action  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
+Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint (Mobile) shares this Device Threat Level.
 
 ![Image of conditional launch](images/conditional-launch.png)
 
-### Step 4: Assign user groups for whom the policy needs to be applied:** .
+### Step 4: Assign user groups for whom the policy needs to be applied
+
+Select **Included groups**. Then add the relevant groups. 
 
 ![Image of assigments](images/assignment.png)
 
@@ -105,9 +109,9 @@ Select **Setting Max allowed device threat level** in Device Conditions and ente
 - The broker app needs to be installed
     - Android: Intune Company Portal
     
-- Users have the required licenses for Managed app and has the app installed
+- Users have the required licenses for the managed app and has the app installed
 
-### End user onboarding to managed app will initiate Microsoft Defender for Endpoint mobile installation & activation**
+### End user onboarding 
 
 1. Sign in to a managed application, for example, Outlook. The device is registered and the application protection policy is synchronized to the device. The application protection policy recognizes the device's health state.  
 
