@@ -58,6 +58,7 @@ Enable network protection by using any of these methods:
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
 - [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
 - [Group Policy](#group-policy)
+- [System Center Configuration Manager (SCCM)](#system-center-configuration-manager-sccm)
 
 ### PowerShell
 
@@ -131,6 +132,18 @@ Confirm network protection is enabled on a local computer by using Registry edit
    - 0=Off
    - 1=On
    - 2=Audit
+
+### System Center Configuration Manager (SCCM)
+
+1. To enable network protection, open the SCCM console.
+
+2. Go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**. 
+
+3. Right-click **Windows Defender Exploit Guard**. 
+
+4. Click **Create Exploit Guard Policy**. This opens **MDEG-NP - Audit mode**. 
+
+5. Under **Enable Exploit Guard components**, turn on **Network Protection**.  
 
 ## See also
 
