@@ -152,7 +152,6 @@ Lesotho
 Liberia  
    :::column-end:::
    :::column:::
-      **Column 3**  
 Libya  
 Liechtenstein  
 Lithuania  
@@ -217,7 +216,6 @@ Saint Lucia
 Saint Martin  
    :::column-end:::
    :::column:::
-      **Column 4**  
 Saint Pierre and Miquelon  
 Saint Vincent and the Grenadines  
 Samoa  
@@ -283,21 +281,24 @@ Zimbabwe
 
 ## Afghanistan  
 
-### Phone number
+:::row:::
+   :::column:::
+**Phone number**
 
 +92 21 111 674 357  
 Select option 3
-
-### Hours
-#### Billing Support:
+   :::column-end:::
+   :::column:::
+**Billing Support hours:**
 
 English: Mon-Fri 10 AM-6 PM
 
-### Technical Support:
+**Technical Support hours:**
 
 English: 24 hours a day, 7 days a week  
 International call charges apply
-
+   :::column-end:::
+:::row-end:::
 
 ## Aland Islands  
 
@@ -341,24 +342,27 @@ International call charges apply
 
 ## Belgium  
 
-### Phone number
+::row:::
+   :::column:::
+**Phone number**
 
 0800 81174
 
-### Hours
-
-#### Billing Support:
+**Billing Support hours:**
 
 Dutch: Mon-Fri 9 AM-5 PM  
 French: Mon-Fri 9 AM-5 PM  
 English: Mon-Fri 9 AM-5 PM
-
-#### Technical Support:
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
 
 French: Mon-Fri 8 AM-9 PM  
 English: 24 hours a day, 7 days a week  
 Alternative Phone Number: 02 200 88 84  
 Local call charges apply
+   :::column-end:::
+:::row-end:::
 
 ## Belize  
 
@@ -442,22 +446,26 @@ Local call charges apply
 
 ## Dominican Republic  
 
-### Phone number
+:::row:::
+   :::column:::
+**Phone number**
 
 1 800 751 3455  
 Select option 4  
 Enter code 7007
-
-### Hours
-#### Billing Support:
+   :::column-end:::
+   :::column:::
+**Billing Support hours:**
 
 Spanish: Mon-Fri 9 AM-5 PM
 
-#### Technical Support:
+**Technical Support hours:**
 
 Spanish: 24 hours a day, 7 days a week  
 Alternative Phone Number: 1 809 200 8794  
 (Cellular toll-free)
+   :::column-end:::
+:::row-end:::
 
 ## Ecuador  
 
