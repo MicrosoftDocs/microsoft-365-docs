@@ -124,7 +124,7 @@ The `ignoredDelimiters` flag doesn't support:
 
 ## Related articles
 
-- [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Custom sensitive information types](./sensitive-information-type-learn-about.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)

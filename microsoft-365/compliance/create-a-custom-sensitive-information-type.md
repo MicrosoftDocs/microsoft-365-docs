@@ -115,7 +115,7 @@ Use this procedure to create a new sensitive information type that is based on a
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## More information on regular expression validators
 

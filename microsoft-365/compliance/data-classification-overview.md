@@ -34,7 +34,7 @@ You also manage these features on the data classification page:
 
 - [trainable classifiers](classifier-learn-about.md)
 - [sensitive information types](sensitive-information-type-learn-about.md)
-- [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 

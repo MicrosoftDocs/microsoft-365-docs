@@ -214,7 +214,7 @@ At this point, you have set up EDM-based classification. The next step is to has
 ### Troubleshooting
 
 If you don't find any matches, try the following:
-- Confirm that your sensitive data was uploaded correctly using the commands explained in [the guidance for uploading your sensitive data using the EDM tool](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Confirm that your sensitive information source table was uploaded correctly. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types).
 - Check that the examples you entered in the item are present in your sensitive information table and that the ignored delimiters are correct.
 - **Test** the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. 
   -  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
