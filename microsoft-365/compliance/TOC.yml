@@ -84,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
+        - name: Information barriers & Microsoft 365 services
+          items:
+            - name: Microsoft Teams and information barriers
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+            - name: OneDrive and information barriers
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint and information barriers
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Privileged access management
       items:
         - name: Overview
@@ -545,10 +553,10 @@
       items: 
         - name: Enable archive mailboxes
           href: enable-archive-mailboxes.md
-        - name: Overview of unlimited archiving
-          href: unlimited-archiving.md
-        - name: Enable unlimited archiving
-          href: enable-unlimited-archiving.md
+        - name: Overview of auto-expanding archiving
+          href: autoexpanding-archiving.md
+        - name: Enable auto-expanding archiving
+          href: enable-autoexpanding-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
