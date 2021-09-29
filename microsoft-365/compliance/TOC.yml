@@ -147,7 +147,7 @@
           - name: Manage your exact data match schema
             href: sit-use-exact-data-manage-schema.md
           - name: Refresh your sensitive information source table file
-            href: sit-use-exact-data-refresh.md
+            href: sit-use-exact-data-refresh-data.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
