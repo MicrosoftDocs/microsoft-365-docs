@@ -553,10 +553,10 @@
       items: 
         - name: Enable archive mailboxes
           href: enable-archive-mailboxes.md
-        - name: Overview of unlimited archiving
-          href: unlimited-archiving.md
-        - name: Enable unlimited archiving
-          href: enable-unlimited-archiving.md
+        - name: Overview of auto-expanding archiving
+          href: autoexpanding-archiving.md
+        - name: Enable auto-expanding archiving
+          href: enable-autoexpanding-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
