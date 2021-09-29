@@ -166,7 +166,7 @@ Lesotho
 Liberia  
    :::column-end:::
    :::column:::
-Libya  
+[Libya](#libya)  
 Liechtenstein  
 Lithuania  
 Luxembourg  
@@ -420,6 +420,26 @@ Local call charges apply
 
 ## Central African Republic  
 
+:::row:::
+   :::column:::
+**Phone number**
+
++1 312 843 5147
+
+**Billing Support hours:**
+
+French: Mon-Fri 9 AM-5 PM  
+English: Mon-Fri 9 AM-5 PM
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
+
+French: Mon-Fri 8 AM-9 PM  
+English: 24 hours a day, 7 days a week  
+International call charges apply
+   :::column-end:::
+:::row-end:::
+
 ## Chad  
 
 ## Chile  
@@ -604,6 +624,30 @@ Alternative Phone Number: 1 809 200 8794
 ## Liberia  
 
 ## Libya  
+
+:::row:::
+   :::column:::
+**Phone number**
+
++965 2243 1071  
+Select option 2  
+Select option 9  
+Enter code 7701
+
+**Billing Support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM  
+English: Mon-Fri 9 AM-5 PM
+
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM  
+English: 24 hours a day, 7 days a week  
+International call charges apply
+   :::column-end:::
+:::row-end:::
 
 ## Liechtenstein  
 

@@ -86,7 +86,7 @@ Cape Verde
 Cayman Islands  
    :::column-end:::
    :::column:::
-Central African Republic  
+[Central African Republic](#central-african-republic)  
 Chad  
 Chile  
 China PRC  
@@ -237,6 +237,26 @@ Local call charges apply
 
 ### Central African Republic  
 
+:::row:::
+   :::column:::
+**Phone number**
+
++1 312 843 5147
+
+**Billing Support hours:**
+
+French: Mon-Fri 9 AM-5 PM  
+English: Mon-Fri 9 AM-5 PM
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
+
+French: Mon-Fri 8 AM-9 PM  
+English: 24 hours a day, 7 days a week  
+International call charges apply
+   :::column-end:::
+:::row-end:::
+
 ### Chad  
 
 ### Chile  
@@ -365,7 +385,7 @@ Latvia
 Lebanon  
 Lesotho  
 Liberia  
-Libya  
+[Libya](#libya)  
 Liechtenstein  
 Lithuania  
 Luxembourg  
@@ -495,6 +515,30 @@ Luxembourg
 ### Liberia  
 
 ### Libya  
+
+:::row:::
+   :::column:::
+**Phone number**
+
++965 2243 1071  
+Select option 2  
+Select option 9  
+Enter code 7701
+
+**Billing Support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM  
+English: Mon-Fri 9 AM-5 PM
+
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM  
+English: 24 hours a day, 7 days a week  
+International call charges apply
+   :::column-end:::
+:::row-end:::
 
 ### Liechtenstein  
 
@@ -683,7 +727,7 @@ Saba
 Saint Barthelemy  
 Saint Lucia  
 Saint Martin  
-Saint Pierre and Miquelon  
+[Saint Pierre and Miquelon  ](#saint-pierre-and-miquelon)
 Saint Vincent and the Grenadines  
 Samoa  
 San Marino  
@@ -759,6 +803,26 @@ Zimbabwe
 ### Saint Martin  
 
 ### Saint Pierre and Miquelon  
+
+:::row:::
+   :::column:::
+**Phone number**
+
++1 312 843 5147
+
+**Billing Support hours:**
+
+French: Mon-Fri 6 AM-2 PM  
+English: Mon-Fri 6 AM-2 PM
+   :::column-end:::
+   :::column:::
+**Technical Support hours:**
+
+French: Mon-Fri 5 AM-6 PM  
+English: 24 hours a day, 7 days a week  
+International call charges apply
+   :::column-end:::
+:::row-end:::
 
 ### Saint Vincent and the Grenadines  
 
