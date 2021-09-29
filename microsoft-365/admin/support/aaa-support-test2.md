@@ -34,8 +34,6 @@ Admins, have your account details ready when you call.
 - **In Canada, call 1 800 865 9408.**
 - **In the United Kingdom, call 0800 032 6417.**
 
-## Phone support numbers by country
-
 If your support phone number isn't listed above, use the tabs below to find the number for your country or region.
 ## [A-D](#tab/athroughd)
 
