@@ -30,6 +30,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - External sharing from SharePoint sites
 - Access from unmanaged devices
 - Authentication contexts (in preview)
+- Default sharing link for a SharePoint site (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
