@@ -279,7 +279,7 @@ To enable information barriers in SharePoint and OneDrive, follow the guidance a
 Modes can help strengthen access, sharing, and membership of a Microsoft 365 resource based on the resource's IB mode. Modes are supported on Microsoft 365 Groups, Microsoft Teams, OneDrive, and SharePoint sites and are automatically enabled in your new or existing IB configuration.
 
 >[!IMPORTANT]
->If you’ve enabled information barriers in your tenant before October 15, 2021, additional steps aren't needed. If you are onboarding information barriers in your tenant after October 15, 2021, you'll need to set IB modes on all existing Microsoft 365 groups connected to Microsoft Teams to bring the groups into to information barriers compliance.
+>If you've enabled information barriers in your tenant before October 15, 2021, additional steps aren't needed. If you are onboarding information barriers in your tenant after October 15, 2021, you'll need to set IB modes on all existing Microsoft 365 groups connected to Microsoft Teams to bring the groups into information barriers compliance.
 
 The following IB modes are supported on Microsoft 365 resources:
 
