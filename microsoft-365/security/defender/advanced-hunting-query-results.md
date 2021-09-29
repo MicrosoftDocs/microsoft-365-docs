@@ -124,21 +124,20 @@ After running a query, select **Export** to save the results to local file. Your
 To quickly inspect a record in your query results, select the corresponding row to open the **Inspect record** panel. The panel provides the following information based on the selected record:
 
 - **Assets** — summarized view of the main assets (mailboxes, devices, and users) found in the record, enriched with available information, such as risk and exposure levels
-- **Process tree** — generated for records with process information and enriched using available contextual information; in general, queries that return more columns can result in richer process trees.
 - **All details** — all the values from the columns in the record  
 
-![Image of selected record with panel for inspecting the record.](../../media/mtp-ah/inspect-record.png)
+![Image of selected record with panel for inspecting the record.](../../media/results-inspect-record.png)
 
 To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
 ## Tweak your queries from the results
-Right-click a value in the result set to quickly enhance your query. You can use the options to:
+Select the three dots to the right of any column in the **Inspect record** panel. You can use the options to:
 
 - Explicitly look for the selected value (`==`)
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
 
-![Image of advanced hunting result set.](../../media/advanced-hunting-results-filter.png)
+![Image of advanced hunting result set.](../../media/work-with-query-tweak-query.png)
 
 ## Filter the query results
 The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
