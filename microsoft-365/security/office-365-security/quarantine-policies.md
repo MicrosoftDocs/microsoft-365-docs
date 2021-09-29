@@ -14,16 +14,12 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Quarantine policies
-
-> [!NOTE]
-> The features that are described in this article are currently in Preview, aren't available to everyone, and are subject to change.
 
 Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined.
 
