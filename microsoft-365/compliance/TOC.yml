@@ -87,11 +87,11 @@
         - name: Information barriers & Microsoft 365 services
           items:
             - name: Microsoft Teams and information barriers
-              href: /microsoftteams/information-barriers-in-teams?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json 
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
             - name: OneDrive and information barriers
-              href: /onedrive/information-barriers?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
             - name: SharePoint and information barriers
-              href: /sharepoint/information-barriers?toc=/compliance/toc.json&bc=/compliance/breadcrumb/toc.json
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Privileged access management
       items:
         - name: Overview
