@@ -24,7 +24,7 @@ With information barriers, you can define policies that are designed to prevent 
 This article describes how to configure information barrier policies. Several steps are involved, so make sure you review entire process before you begin configuring information barrier policies.
 
 > [!TIP]
-> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) to help you plan and define your information barrier policies.
+> This article includes an [example scenario](#example-scenario-contosos-departments-segments-and-policies) to help you plan and define your information barrier policies.
 
 ## Concepts
 
@@ -45,8 +45,8 @@ When you define policies for information barriers, you'll work with user account
 | **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
 | **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
 | **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
-| **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure information barriers for SharePoint and OneDrive |
-| **Step 6**: [Information barriers modes (optional)](#information-barriers-modes-preview) | - Update information barrier modes if applicable |
+| **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure information barriers for SharePoint and OneDrive |
+| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes-preview) | - Update information barrier modes if applicable |
 
 ## Step 1: Make sure prerequisites are met
 
@@ -93,7 +93,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 When all the prerequisites are met, proceed to the next step.
 
 > [!TIP]
-> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).
+> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-scenario-contosos-departments-segments-and-policies).
 
 ## Step 2: Segment users in your organization
 
@@ -137,7 +137,7 @@ Defining segments does not affect users; it just sets the stage for information 
     > [!IMPORTANT]
     > **Make sure that your segments do not overlap**. Each user who will be affected by information barriers should belong to one (and only one) segment. No user should belong to two or more segments. (See [Example: Contoso's defined segments](#contosos-defined-segments) in this article.)
 
-After you have defined your segments, proceed to [define information barrier policies](#part-2-define-information-barrier-policies).
+After you have defined your segments, proceed to [define information barrier policies](#step-3-define-information-barrier-policies).
 
 ### Using "equals" and "not equals" in segment definitions
 
@@ -200,7 +200,7 @@ For example, suppose you want to block communications between Segment A and Segm
 3. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to allow a segment to communicate only with one other segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - (After all your policies are defined) [Apply information barrier policies](#part-3-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
 
 ### Scenario 2: Allow a segment to communicate only with one other segment
 
@@ -221,7 +221,7 @@ For example, suppose you want to block communications between Segment A and Segm
 2. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to block communications between segments](#scenario-1-block-communications-between-segments) 
-   - (After all your policies are defined) [Apply information barrier policies](#part-3-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
 
 ## Step 4: Apply information barrier policies
 
