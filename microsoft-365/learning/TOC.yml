@@ -23,6 +23,8 @@
               href: configure-sap-successfactors.md
             - name: Udemy
               href: configure-udemy.md
+            - name: Skillsoft
+              href: configure-skillsoft.md
         - name: Configure SharePoint as a content source
           href: configure-sharepoint-content-source.md
 
