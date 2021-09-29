@@ -17,6 +17,9 @@ description: "Create and grade assignments, build and curate course content, and
 
 # Integrate Microsoft OneDrive LTI with Canvas
 
+> [!IMPORTANT]
+> Some information relates to a pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 
 ## Recommended browser settings

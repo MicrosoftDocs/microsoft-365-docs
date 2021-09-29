@@ -2,8 +2,8 @@
 title: "Learn about app policies"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -25,24 +25,6 @@ Microsoft app governance detects anomalous app behavior in your Microsoft 365 te
 These policies for app and user patterns and behaviors can protect your users from using non-compliant or malicious apps and limit the access of risky apps to your tenant data.
 
 See [Administrator roles](app-governance-get-started.md#administrator-roles) for information on which roles can modify policies.
-
-<!--
-How app policies are the method by which MAPG detects app anomolies resulting in detection (alerts) and remediation (manual or automatic) 
-
-
-CFA #2 Scenario 1: As an admin, I can quickly set up policies to govern M365 apps in my tenant using MAPG out-of-the-box templates
-CFA #2 Scenario 2: As an admin, I can create customized policies to govern M365 apps in my tenant to meet my organizations requirements.
-CFA #2 Scenario 3: As an admin or policy reviewer, I can view all policies created in my environment and quickly see which policies have associated alerts. 
-CFA #2 Scenario 4: As an admin, I can adjust policies efficiently to meet changing needs.
-
-App policy templates
-
-- Basic info
-- Policy settings and conditions
-- Actions
-- Status
-
---> 
 
 ## Next step
 

@@ -37,6 +37,9 @@ The `EmailEvents` table in the [advanced hunting](advanced-hunting-overview.md) 
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
@@ -73,6 +76,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelAction` | string | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
 | `UserLevelPolicy` | string | End-user mailbox policy that triggered the action taken on the email |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `AuthenticationDetails` | string | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
 
 ## Related topics
 

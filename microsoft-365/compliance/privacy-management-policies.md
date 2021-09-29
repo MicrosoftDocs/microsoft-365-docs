@@ -20,10 +20,6 @@ description: "Learn how to create and manage policies for handling your organiza
 
 # Create and manage policies in privacy management (preview)
 
-In this article: learn how to build and customize **policies** for handling personal data, get **alerts** about policy matches, and remediate **issues**.
-
-## Purpose of policies
-
 Policies allow you to define the types of privacy risks to look out for in your company’s Microsoft 365 data and establish the preferred outcomes for scenarios where matches are found. Your organization can work from the resulting alerts to review any matching data and remediate issues, all from within the privacy management solution.
 
 Privacy management provides templates to give you an easy start on policy building and allows you to fine-tune your approach through extensive customization options. The key scenarios covered by privacy management’s templates include the following:
@@ -45,7 +41,7 @@ Privacy management can help you detect and handle situations in which data that 
 Transferring data across departments or regional borders can increase the risk of data exposure, for example if it’s sent via unencrypted emails or to unauthorized recipients. Such actions can have regulatory impact or may go against established practices for privacy. Using the data transfer template to create privacy management policies can spot and help limit such transfers.
 
 > [!NOTE]
-> During public preview, some tenants running data transfer policies to detect transfers across regions may encounter synchronization issues that impact visibility into policy matches in Exchange and Teams data. We recommend focusing on SharePoint and OneDrive data while previewing this policy type. An update for this issue is expected in fall 2021.
+> During public preview, some tenants running data transfer policies to detect transfers across regions may encounter synchronization issues that impact visibility into policy matches in Exchange and Teams data. We recommend focusing on SharePoint and OneDrive data while previewing this policy type.
 
 ### Data minimization
 
@@ -98,7 +94,7 @@ When setting up a custom policy, you will be asked to select which types of data
   - U.S. Patriot Act Enhanced
   - U.S. Personally Identifiable Information (PII) Data Enhanced
   - U.S. State Breach Notification Laws Enhanced
-- **Individual sensitive info types**: By choosing specific sensitive information types yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data of to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
+- **Individual sensitive info types**: By choosing specific sensitive information types yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
 
 If you use pre-set classification groups, you cannot also select individual types or create your own groups. For the most flexibility, choose individual sensitive info types. To utilize the most common standards, choose from the classification groups.
 
@@ -112,7 +108,7 @@ With email notifications, users receive direct notifications about policy matche
 
 Notifications can be enabled for individual policies during custom policy creation or when editing any policy. Use the Outcomes section to define what happens when a policy match is detected, including the option to enable these notifications, and set how often you want these digests to be delivered.
 
-Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see Configure settings under [Get started with privacy management](privacy-management-setup.md#configure-settings).
+Email notification capability is controlled at a global level within Settings. It is enabled by default. Turning this setting off will stop all emails even if specific notifications have been configured at an individual policy level. For more information, see [Manage privacy management settings](privacy-management-settings.md).
 
 ## View policy details
 

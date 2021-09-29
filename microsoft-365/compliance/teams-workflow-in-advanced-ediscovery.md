@@ -16,7 +16,7 @@ ms.collection: M365-security-compliance
 description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in Advanced eDiscovery."
 ---
 
-# Advanced eDiscovery workflow for content in Microsoft Teams using large cases
+# Advanced eDiscovery workflow for content in Microsoft Teams using large cases (preview)
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
@@ -64,7 +64,7 @@ To create a large case:
 
    The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a large case.
 
-   ![Large case option on the New eDiscovery case page](..\media\AeDLargeCases1.png)
+   ![Large case option on the New eDiscovery case page.](..\media\AeDLargeCases1.png)
 
 4. After naming the case, select the **Large case** option, and then click **Save** to create the large case.
 
@@ -82,7 +82,7 @@ To add custodians to a case and preserve custodial data sources:
 
 4. Expand each custodian to view the primary data sources that have been automatically associated to the custodian, and to select other locations to associate to the custodian.
 
-   ![Custodian data sources](..\media\TeamsCustodialDataLocations1.png)
+   ![Custodian data sources.](..\media\TeamsCustodialDataLocations1.png)
 
 5. Follow these guidelines to add custodial data sources for Teams content. Click **Edit** to add a data location.
 
@@ -151,11 +151,11 @@ To create a collection of Teams content:
 
    To help ensure the most comprehensive collection of Teams chat conversations (including 1:1, group, channel, and private chats) use the **Type** condition and select the **Instant messages** option. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your investigation. Here's a screenshot of a sample query using the **Type** and **Date** options:
 
-   ![Query to collect Teams content](..\media\TeamsConditionsQueryType.png)
+   ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
 
 9. On the **Save draft or collect** wizard page, do one of the following depending on whether you want to create a draft collection or commit the collection to a review set.
 
-   ![Save draft collection or commit collection](..\media\TeamsDraftCommitCollection.png)
+   ![Save draft collection or commit collection.](..\media\TeamsDraftCommitCollection.png)
 
    1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
 
@@ -193,7 +193,7 @@ The following table describes how the different types of Teams chat content are 
 
 Use the **Group** control in the command bar of a review set to view Teams content grouped by family or conversation.
 
-![Group control in command bar](..\media\TeamsGroupControl.png)
+![Group control in command bar.](..\media\TeamsGroupControl.png)
 
 - Select **Group family attachments** to view Teams content grouped by family. Each transcript file is displayed on a line in the list of review set items. Attachments are nested under the item.
 
@@ -210,11 +210,11 @@ The following screenshots show an example of conversation in the Teams client an
 
 ##### Conversation in Teams client
 
-![Conversation shown in the transcript file in the review set](..\media\TeamsClient1.png)
+![Conversation shown in the transcript file in the review set.](..\media\TeamsClient1.png)
 
 ##### Conversation in transcript file
 
-![Same conversation shown in Teams client](..\media\TeamsTranscript1.png)
+![Same conversation shown in Teams client.](..\media\TeamsTranscript1.png)
 
 ### Transcript conversation threading
 
@@ -284,7 +284,7 @@ Here are some tips and best practices for viewing Teams content in a review set.
 
 - Use the **Customize columns** control in the command bar to add and organize columns to optimize the review of Teams content.
 
-  ![Use the Edit column flyout page to add, remove, and organize columns](..\media\EditReviewSetColumns.png)
+  ![Use the Edit column flyout page to add, remove, and organize columns.](..\media\EditReviewSetColumns.png)
 
    You can add and remove columns that are useful for Teams content. You can also sequence the order of columns by dragging and dropping them in the **Edit column** flyout page. You can also sort on columns to group Teams content with similar values for the column you sort on.
 

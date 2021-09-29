@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -109,11 +110,11 @@ To save the email messages, calendar, tasks, and contacts of the former employee
   
 3. Select **Open &amp; Export** \> **Import/Export**.
 
-    ![Import/Export command in the Backstage view](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Export command in the Backstage view.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Select **Export to a file**, and then select **Next**.
 
-    ![Export to a file option in the Import and Export Wizard](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Export to a file option in the Import and Export Wizard.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Select **Outlook Data File (.pst)**, and then select **Next**.
 
@@ -122,7 +123,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
     > [!NOTE]
     > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps.
   
-    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Select **Next**.
 
@@ -159,7 +160,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 2. Select **Import from another program or file**, and then select **Next**.
 
-    ![Import and Export Wizard](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Import and Export Wizard.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Select **Outlook Data File (.pst)**, and select **Next**.
 
@@ -179,10 +180,14 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 > The steps remain the same for accessing an existing user's OneDrive and email data.
 
 > [!TIP]
-> If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
+> If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders.
 
 ## Related content
 
-[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)\
-[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)\
+[Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)
+
+[Restore a deleted OneDrive](/onedrive/restore-deleted-onedrive) (article)
+
 [OneDrive retention and deletion](/onedrive/retention-and-deletion) (article)
+
+[Share OneDrive files and folders](https://support.microsoft.com/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07)

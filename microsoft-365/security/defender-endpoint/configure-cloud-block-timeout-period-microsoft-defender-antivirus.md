@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure the cloud block timeout period
@@ -58,7 +59,7 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 
 3. In the **Group Policy Management Editor**, go to **Computer configuration**, and then select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **MpEngine**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 
 4. Double-click **Configure extended cloud check** and ensure the option is enabled. 
 

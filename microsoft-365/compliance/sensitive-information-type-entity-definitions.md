@@ -3383,7 +3383,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Pattern
 
-Detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, and diner cards.
+Detects cards from all major brands worldwide, including Visa, MasterCard, Discover Card, JCB, American Express, gift cards, diner's cards, Rupay and China UnionPay.
 
 ### Checksum
 
@@ -3642,6 +3642,11 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - no do cartao
 - no. do cartão
 - no. do cartao
+- rupay
+- union pay
+- unionpay
+- diner's
+- diners
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3671,6 +3676,9 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - カードの名義
 - デビット カード
 - デビットカード
+- 中国银联
+- 银联
+
 
 
 ## Croatia driver's license number
@@ -8479,6 +8487,230 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - áfa szám
 
 
+## India Driver's License Number
+
+### Format
+
+15 character alphanumeric pattern
+
+### Pattern
+
+15 letters or digits:
+- two letters indicating state code
+- optional space or dash
+- two digits indicating city code
+- optional space or dash
+- four digits indicating year of issue
+- optional space or dash
+- seven digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_india_driving_license` finds content that matches the pattern.
+- A keyword from `Keywords_eu_driver's_license_number_common` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_india_driving_license` finds content that matches the pattern.
+
+
+```xml
+      <!-- India Driver's License Number -->
+        <Entity id="680788a3-53b6-455a-b891-c38cd76dc917" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+          <Pattern confidenceLevel="85">
+            <IdMatch idRef="Regex_india_driving_license" />
+            <Match idRef="Keywords_eu_driver's_license_number_common" />
+          </Pattern>
+          <Pattern confidenceLevel="75">
+            <IdMatch idRef="Regex_india_driving_license" />
+            </Pattern>
+        </Entity>
+```
+
+### Keywords
+
+#### Keywords_eu_driver's_license_number_common
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- driver licence
+- driver licences
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- drivers licences
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- driver's lics
+- driver's license
+- driver's licenses
+- driver's licence
+- driver's licences
+- dl#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- driver license#
+- driver licenses#
+- driver licences#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- driver's lics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
+- driving licence 
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv license
+- driv licenses
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
+- driving licence
+- driving licences
+- driving permit
+- dl no
+- dlno
+- dl number
+
+
+
+## India GST Number
+
+### Format
+
+15 character alphanumeric pattern
+
+### Pattern
+
+15 letters or digits:
+- two digits representing valid state code
+- an optional space or dash
+- ten characters representing Permanent Account Number (PAN) 
+- one letter or digit
+- an optional space or dash
+- one letter 'z' or 'Z'
+- an optional space or dash
+- one check digit
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_india_gst_number` finds content that matches the pattern.
+- A keyword from `Keyword_india_gst_number` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_india_gst_number` finds content that matches the pattern.
+
+
+```xml
+    <!-- India GST number  -->
+      <Entity id="9f5a721c-2fd2-446a-a27e-0c02fbe4630c" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_india_gst_number" />
+          <Match idRef="Keyword_india_gst_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_india_gst_number" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_india_gst_number
+
+- gst
+- gstin
+- goods and services tax
+- goods and service tax
+
+
 ## India permanent account number (PAN)
 
 ### Format
@@ -8556,7 +8788,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - The function Func_india_aadhaar finds content that matches the pattern.
 - A keyword from Keyword_india_aadhar is found.
 - The checksum passes.
--
+
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 
 - The function Func_india_aadhaar finds content that matches the pattern.
@@ -8583,6 +8815,60 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - uid
 - आधार
 - uidai
+
+
+## India Voter Id Card
+
+### Format
+
+10 character alphanumeric pattern
+
+### Pattern
+
+10 letters or digits:
+- three letters
+- seven digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_india_voter_id_card` finds content that matches the pattern.
+- A keyword from `Keyword_india_voter_id_card` is found.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_india_voter_id_card` finds content that matches the pattern.
+
+
+```xml
+      <!-- India Voter Id Card  -->
+        <Entity id="646d643f-5228-4408-acc8-f2e81a6df897" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+           <Pattern confidenceLevel="75">
+             <IdMatch idRef="Regex_india_voter_id_card" />
+             <Match idRef="Keyword_india_voter_id_card" />
+            </Pattern>
+           <Pattern confidenceLevel="65">
+              <IdMatch idRef="Regex_india_voter_id_card" />
+            </Pattern>
+        </Entity>
+```
+
+### Keywords
+
+#### Keyword_india_voter_id_card
+
+- voter
+- voterid
+- votercard
+- voteridcard
+- electoral photo identity card
+- EPIC
+- ECI
+- election commmision
+
 
 ## Indonesia identity card (KTP) number
 
@@ -8846,7 +9132,7 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - No keyword from Keyword_ipaddress is found.
 
 ```xml
-    <!-- IP Address -->
+    <!-- IP Address --> 
     <Entity id="1daa4ad5-e2dd-4ca4-a788-54722c09efb2" patternsProximity="300" recommendedConfidence="85">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Regex_ipv6_address" />
@@ -8878,6 +9164,101 @@ For IPv6, a DLP policy has high confidence that it's detected this type of sensi
 - ip addresses
 - internet protocol
 - IP-כתובת ה
+
+
+## IP Address v4
+
+### Format
+
+Complex pattern that accounts for formatted (periods) and unformatted (no periods) versions of the IPv4 addresses
+
+### Pattern
+
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_ipv4_address` finds content that matches the pattern.
+- A keyword from `Keyword_ipaddress` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_ipv4_address` finds content that matches the pattern.
+
+
+```xml
+      <!-- IP Address v4--> 
+      <Entity id="a7dd5e5f-e7f9-4626-a2c6-86a8cb6830d2" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv4_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv4_address" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_ipaddress
+
+- IP (case sensitive)
+- ip address
+- ip addresses
+- internet protocol
+- IP-כתובת ה
+
+
+## IP Address v6
+
+### Format
+
+Complex pattern that accounts for formatted IPv6 numbers (which include colons)
+
+### Pattern
+
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
+- A keyword from `Keyword_ipaddress` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_ipv6_address` finds content that matches the pattern.
+
+
+```xml
+      <!-- IP Address v6-->
+      <Entity id="3f691089-7413-4926-ab3b-3c5ea8a1c17e" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_ipv6_address" />
+          <Match idRef="Keyword_ipaddress" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ipv6_address" />
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keyword_ipaddress
+
+- IP (case sensitive)
+- ip address
+- ip addresses
+- internet protocol
+- IP-כתובת ה
+
 
 ## Ireland driver's license number
 

@@ -27,9 +27,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 - Windows 10
 
-Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows 10 and included with Microsoft 365 Business Premium.  
+Microsoft Defender Antivirus protects tenants, users, and devices from software threats including viruses, malware, and spyware. It's robust, ongoing protection that's built into Windows 10 and included with Microsoft 365 Business Premium and Microsoft&nbsp;365&nbsp;E3.  
   
-To access the Threat management page in Microsoft 365 Lighthouse, select **Threat Management** in the left navigation pane to view your tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
+To access the Threat management page in Microsoft 365 Lighthouse, select **Threat Management** in the left navigation pane to view your customer tenants' security posture against threats. You'll see tenants, users, and devices that require your attention and recommendations that will help you reduce risk.  
   
 ## Overview tab  
   

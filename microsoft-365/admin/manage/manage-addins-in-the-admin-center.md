@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -51,7 +52,7 @@ You can also delete an add-in that was deployed.
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
 
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
 
 2. Select the deployed add-in.
 
@@ -66,7 +67,8 @@ Post deployment, admins can also manage user access to add-ins.
 1. In the admin center, go to the **Settings** > **Services & add-ins** page.
 
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps . If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+
 
 2. Select the deployed add-in.
 
@@ -86,7 +88,8 @@ As an organization you may wish to prevent the download of new Office add-ins fr
 1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
     > [!NOTE]
-    > The admin center is getting updated to deployment experience with Integrated Apps. If you don't see the above steps, go to Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+
     
 3. Select **User owned apps and services**.
     
@@ -133,7 +136,7 @@ After you deploy an add-in, your end users can start using it in their Office ap
   
 If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
-![Office ribbon with Search Citations](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
+![Office ribbon with Search Citations.](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   
 If the deployed add-in doesn't support add-in commands or if you want to view all deployed add-ins, you can view them via **My Add-ins**. 
   
@@ -145,13 +148,13 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
     
 3. Double-click the add-in you deployed earlier (in this example, **Citations**).
 
-    ![Admin Managed tab of the Office Add-ins page](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
+    ![Admin Managed tab of the Office Add-ins page.](../../media/fd36ba81-9882-40f0-9fce-74f991aa97d5.png)
   
 ### In Outlook
 
 1. On the **Home** ribbon, select **Get Add-ins**.
 
-    ![Store button in Outlook](../../media/getaddinsicon.png)
+    ![Store button in Outlook.](../../media/getaddinsicon.png)
   
 2. Select **Admin-managed** in the left nav. 
 

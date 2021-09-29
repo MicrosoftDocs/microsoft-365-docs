@@ -24,7 +24,7 @@ After Reuters Eikon data is stored in user mailboxes, you can apply Microsoft 36
 
 The following overview explains the process of using a connector to archive Reuters Eikon data in Microsoft 365.
 
-![Archiving workflow for Reuters Eikon data](../media/ReutersEikonConnectorWorkflow.png)
+![Archiving workflow for Reuters Eikon data.](../media/ReutersEikonConnectorWorkflow.png)
 
 1. Your organization works with Reuters Eikon to set up and configure a Reuters Eikon site.
 
