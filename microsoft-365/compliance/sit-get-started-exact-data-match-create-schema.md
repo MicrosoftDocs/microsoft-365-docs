@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create the schema for exact data match based sensitive information types
 
-You can create the schema and EDM SIT by using the [Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) or [manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-and-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
@@ -196,31 +196,6 @@ Once you have created the EDM schema file in XML formate, you have to upload it 
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
-
-## Post creation steps
-
-After you have created your EDM schema and pattern (rule package) files, you need to hash and upload the schema and sensitive information source table. See,
- 
-1. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types),
-2. [CREATE SIT](sit-get-started-exact-data-match-create-sit.md#create-sit)
-3. LINK TO USE EDM BASED CLASSIFICATION WITH YOUR MICROSOFT 365 CLOUD SERVICES.
-
-At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
-
-
-## Next step
-
-
-### Troubleshooting
-
-If you don't find any matches, try the following:
-- Confirm that your sensitive information source table was uploaded correctly. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types).
-- Check that the examples you entered in the item are present in your sensitive information table and that the ignored delimiters are correct.
-- **Test** the SIT you used when you configured the primary element in each of your patterns. This will confirm that the SIT is able to match the examples in the item. 
-  -  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
-  -  If the **Test** function does not detect any content at all, check if the SIT you selected includes requirements for additional keywords or other validations. For the built-in SITs, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) to verify what the minimum requirements are for matching each type.
-<!-- END PUBLISHED SIT EDM WIZARD ARTICLE-->
-
 
 <!--TODD START HERE THIS BELONGS IN THE SCHEMA ARTICLE-->
 Working with specific types of data

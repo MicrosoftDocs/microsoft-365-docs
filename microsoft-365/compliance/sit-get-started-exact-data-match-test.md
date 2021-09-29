@@ -42,7 +42,7 @@ After your EDM SIT has been created and an hour after verifying that your sensit
 Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]” -TexttoClassify “[your own text to scan for matches]” 
 ```
 
->[!NOTE] When you create a or edit an EDM sensitive information type, or the base SIT on which an EDM type is based, all new content and content that’s modified after the changes to the SITs will be crawled for text that matches the new definitions, but preexisting content won’t be crawled until modified or reindexed. 
+> [!NOTE] When you create a or edit an EDM sensitive information type, or the base SIT on which an EDM type is based, all new content and content that’s modified after the changes to the SITs will be crawled for text that matches the new definitions, but preexisting content won’t be crawled until modified or reindexed. 
 
 To force re-crawling of existing content in a SharePoint site or library or in OneDrive, follow the instructions in [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
