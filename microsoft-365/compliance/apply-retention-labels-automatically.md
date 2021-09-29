@@ -253,12 +253,12 @@ ProgID:Media AND ProgID:Meeting
 
 Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
 
-##### Identify items that have a sensitivity label
+##### Identify files and emails that have a sensitivity label
 
-To identify items that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
+To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
 
 ```
-ProgID:InformationProtectionLabelId<GUID>
+InformationProtectionLabelId<GUID>
 ```
 
 To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
@@ -266,7 +266,6 @@ To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmd
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
-
 
 #### Auto-apply labels to content by using trainable classifiers
 
