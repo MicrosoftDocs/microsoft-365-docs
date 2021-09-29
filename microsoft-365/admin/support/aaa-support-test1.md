@@ -1,5 +1,5 @@
 ---
-title: "Support contacts by country"
+title: "Support contacts by country - big columns view"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee

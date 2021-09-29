@@ -1,5 +1,5 @@
 ---
-title: "Support contacts by country"
+title: "Support contacts by country - sections view"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
