@@ -82,7 +82,8 @@ This computer must have direct access to your Microsoft 365 tenant.
 > [!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 
-> [!TIP] Optionally, you can run a validation against your sensitive information source table file to check it for errors before uploading by running:
+> [!TIP] 
+>Optionally, you can run a validation against your sensitive information source table file to check it for errors before uploading by running:
 >
 > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
