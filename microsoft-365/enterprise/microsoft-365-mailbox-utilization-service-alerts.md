@@ -1,8 +1,8 @@
 ---
 title: "Mailbox utilization service alerts"
-ms.author: markjjo
-author: markjjo
-manager: laurawi
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
 ms.date: 
 audience: Admin
 ms.topic: article
@@ -25,17 +25,17 @@ We've released a new Exchange Online service alert that informs you of mailboxes
 
 These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. Here's an example of a mailbox utilization service alert.
 
-![Mailbox utilization service alert](../media/MailboxUtilizationServiceAlert.png)
+:::image type="content" alt-text="Mailbox utilization service alert." source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
 To display a list of mailboxes that are nearing their storage quota (called the *mailbox usage report*), click the highlighted link in the following screenshot. This link is displayed in the service alert.
 
-![Link to mailbox usage report](../media/LinkToMailboxUsageReport.png)
+:::image type="content" alt-text="Link to mailbox usage report." source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 Alternatively, the direct URL to the mailbox usage report is <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>.
 
 ## What do these service alerts indicate?
 
-The service alerts for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-unlimited-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service alerts, then users might not be able to send or receive email messages or meeting invites.
+The service alerts for mailbox utilization inform admins about mailboxes on hold that are nearing the mailbox storage quota. The type of holds that that can be placed on mailboxes include Litigation holds, eDiscovery hold, and Microsoft 365 retention policies (that are configured to retain data). When a mailbox is on hold, users (or automated processes) can't permanently remove data from their mailbox. Instead, admins must configure MRM retention policies in Exchange Online (inline with their organization's compliance policies related to data retention) to move data from a user's primary mailbox to their archive mailbox. If not and a mailbox on a hold reaches a critical or warning state, admins have to [enable archive mailboxes](../compliance/enable-archive-mailboxes.md) and [enable auto-expanding archiving](../compliance/enable-autoexpanding-archiving.md) and then make sure that the retention period for the archive policy assigned to the mailbox (that moves email from the primary mailbox to the archive mailbox) is short enough. If nothing is done to resolve the quota issues that are identified by the mailbox utilization service alerts, then users might not be able to send or receive email messages or meeting invites.
 
 A service alert for mailbox utilization contains tables about the number of mailboxes that are nearing their quota. The following sections describe the information in these tables and the action admins can take to help ensure these mailboxes don't exceed their quota.
 

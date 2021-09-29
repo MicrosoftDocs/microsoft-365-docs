@@ -134,6 +134,9 @@ Use the proximity explanation to define how far away the phone number explanatio
 
 ![Proximity explanation.](../media/content-understanding/proximity.png)
 
+> [!NOTE]
+> Currently, regular expressions can’t be used with the proximity explanation type.
+
 #### What are tokens?
 
 To use the proximity explanation type, you need to understand what a token is. The number of tokens is how the proximity explanation measures distance from one explanation to another. A token is a continuous span (not including spaces or punctuation) of letters and numbers.

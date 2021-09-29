@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-- M365-subscription-management 
+- M365-subscription-management
+- Adm_TOC 
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -22,7 +23,7 @@ description: "Provide your users with up-to-date news headlines about your indus
 # Manage Industry news
 
 > [!NOTE] 
-> Bing news & Industry updates are available in English-only markets at this time.
+> Bing news & Industry updates are available only for en-US at this time.
 
 To provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization. You can also enable a daily Industry Updates email, and manage settings for the Bing homepage and Microsoft Edge new tab page.
 

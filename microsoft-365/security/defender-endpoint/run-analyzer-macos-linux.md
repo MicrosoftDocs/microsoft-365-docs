@@ -47,16 +47,27 @@ ms.technology: m365d
 
 ## Running the analyzer using a terminal or SSH scenario
 
-1. Open a terminal or SSH into the relevant machine.
+Open a terminal or SSH into the relevant machine and run the following commands:
 
-2. Run `wget --quiet -O XMDEClientAnalyzer.zip* <https://aka.ms/XMDEClientAnalyzer> *&& unzip -q XMDEClientAnalyzer.zip && cd XMDEClientAnalyzer && chmod +x mde_support_tool.sh"`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
 
-3. Run `./mde_support_tool.sh -d` to generate the result archive file.
+2. `unzip -q XMDEClientAnalyzer.zip`
+
+3. `cd XMDEClientAnalyzer`
+
+4. `chmod +x mde_support_tool.sh"`
+
+3. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
+
+4. To collect actual diagnostic package and generate the result archive file run again as root: `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
->
-> In addition, the tool currently requires Python version 3 or later to be installed.
+> - For Linux, the analyzer requires 'lxml' to produce the result output. If not installed, the analyzer will try to fetch it from the official repository for python packages below: <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> 
+> - In addition, the tool currently requires Python version 3 or later to be installed.
+> 
+> - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example:
+> `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
 Example:
 

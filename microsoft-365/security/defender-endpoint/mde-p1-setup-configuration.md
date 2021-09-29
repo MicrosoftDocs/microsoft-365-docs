@@ -13,6 +13,7 @@ ms.technology: mdep1
 localization_priority: Normal
 ms.reviewer: inbadian
 f1.keywords: NOCSH
+ms.collection: M365-security-compliance
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
