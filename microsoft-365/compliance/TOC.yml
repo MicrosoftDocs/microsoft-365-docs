@@ -114,12 +114,22 @@
           items:
           - name: Get started with custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
+          - name: Get started with Get started with exact data match based sensitive information types
+            href: sit-get-started-exact-data-match-based-sits-overview.md
+          - name: Export source data for exact data match based sensitive information type
+            href: sit-get-started-exact-data-match-export-data.md
+          - name: Create the schema for exact data match based sensitive information types
+            href: sit-get-started-exact-data-match-create-schema.md
+          - name: Hash and upload the sensitive information source table for exact data match sensitive information types
+            href: sit-get-started-exact-data-match-hash-upload.md
+          - name: Create exact data match sensitive information type/rule package
+            href: sit-get-started-exact-data-match-create-rule-package.md
+          - name: Test an exact data match sensitive information type
+            href: sit-get-started-exact-data-match-test.md  
         - name: Use sensitive information types
           items:
           - name: Customize a built-in sensitive information type
             href: customize-a-built-in-sensitive-information-type.md
-          - name: Use the Exact Data Match Schema and Sensitive Information Type Wizard
-            href: sit-edm-wizard.md
           - name: Modify exact data match schema to use configurable match
             href: sit-modify-edm-schema-configurable-match.md
           - name: Create notifications for exact data match activities (preview)
@@ -134,6 +144,10 @@
             href: create-a-keyword-dictionary.md
           - name: Modify a keyword dictionary
             href: sit-modify-keyword-dictionary.md
+          - name: Manage your exact data match schema
+            href: sit-use-exact-data-manage-schema.md
+          - name: Refresh your sensitive information source table file
+            href: sit-use-exact-data-refresh.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
