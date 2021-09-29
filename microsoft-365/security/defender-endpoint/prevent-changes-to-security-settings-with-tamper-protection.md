@@ -309,7 +309,7 @@ Yes. The alert is shown in [https://security.microsoft.com](https://security.mic
 
 Your security operations team can also use hunting queries, such as the following example:
 
-`DeviceAlertEvents|where Title == "Tamper Protection bypass"`
+`AlertInfo|where Title == "Tamper Protection bypass"`
 
 [View information about tampering attempts](#view-information-about-tampering-attempts).
 
