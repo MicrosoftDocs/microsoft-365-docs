@@ -80,7 +80,9 @@ Here's an example of the list of related alerts for an incident.
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
-![Example of advanced hunting and a query](../../media/advanced-hunting.png)<br>
+![Example of advanced hunting and a query](../../media/ah-query-example-new.png)<br>
+
+
 
 Microsoft 365 Defender cross-product features include: 
 
