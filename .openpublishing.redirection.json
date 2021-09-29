@@ -4556,8 +4556,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+      "source_path": "microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
       "redirect_url": "/compliance/sit-learn-about-exact-data-match",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/sit-edm-wizard.md",
+      "redirect_url": "/compliance/sit-get-started-exact-data-match-create-schema",
       "redirect_document_id": false
     }
   ]
