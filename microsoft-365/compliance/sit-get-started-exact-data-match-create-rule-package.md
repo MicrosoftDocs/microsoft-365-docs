@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create exact data match sensitive information type/rule package
 
-You can create the exact data match (EDM) sensitive information type (SIT) by using the [Use the Exact Data Match Schema and Sensitive Information Type Wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-wizard) in the Compliance center or create the rule package XML file manually  [Create the schema and rule package manually](#create-exact-data-match-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
+You can create the exact data match (EDM) sensitive information type (SIT) by using the  in the Compliance center or create the rule package XML file manually  [Create the schema and rule package manually](#create-exact-data-match-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
 If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
 
@@ -29,7 +29,7 @@ If you are not familiar with EDM based SITS or there implementation, you should 
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-## Use the Exact Data Match Schema and Sensitive Information Type Wizard
+## Use the EDM schema and SIT wizard
 
 You can use this wizard to create your sensitive information type (SIT) files to help simplify the process.
 
@@ -52,7 +52,7 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
      
 
 
-## Use the exact data match schema and sensitive information type pattern wizard
+### Use the exact data match schema and sensitive information type pattern wizard
 
 1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.
 
