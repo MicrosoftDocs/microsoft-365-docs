@@ -147,7 +147,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 > [!IMPORTANT]
 > For emails, it's not supported to scope an auto-apply retention label policy configured for sensitive information to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
 > 
-> If you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are selected.
+> If you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are included and not mailboxes from Microsoft 365 groups.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
