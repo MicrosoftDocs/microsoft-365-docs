@@ -21,7 +21,7 @@ description: "Learn how to configure SAP SuccessFactors as a learning content so
 
 This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. The steps below need to be completed by your SuccessFactors admin in the SuccessFactors portal.
 
-The admin who's going to enable this feature must have access to the SuccessFactors Learning administrator application. the admin should have required workflows to edit the PARTNER_EXTRACT configuration, which is you can get to by going to **System Administration** > **Configuration** > **System Configuration** > PARTNER_EXTRACT.
+The admin who's going to enable this feature must have access to the SuccessFactors Learning administrator application. the admin should have required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
 
 The following parameters need to fill by the admin in PARTNER_EXTRACT configuration. The admin should have details for the same. To edit the partner extract configuration in SF, the admin should have “Edit System Configuration” workflow permission in SF.
 
