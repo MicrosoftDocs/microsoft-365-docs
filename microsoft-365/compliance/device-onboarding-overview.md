@@ -26,27 +26,20 @@ description: "Set up Windows 10 devices for Microsoft 365 information protection
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and Microsoft 365 Insider risk require that Windows 10 devices be onboarded into the service so that they can send monitoring data to the services.
+Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 devices be onboarded into the service so that they can send monitoring data to the services.
  
 Microsoft 365 Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
 
-Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information about the Microsoft 365 Insider Risk offering, see [Insider risk management in Microsoft 365](/microsoft-365/compliance/insider-risk-management-solution-overview?view=o365-worldwide)
+Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
 
 ## Before you begin
 
 ### SKU/subscriptions licensing
 
-Before you get started, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. To access and use information protection functionality, you must have one of these subscriptions or add-ons.
-
-- Microsoft 365 E5
-- Microsoft 365 A5 (EDU)
-- Microsoft 365 E5 compliance
-- Microsoft 365 A5 compliance
-- Microsoft 365 E5 information protection and governance
-- Microsoft 365 A5 information protection and governance
+Before you get started, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons.
 
 ### Permissions
 
@@ -100,7 +93,7 @@ Make sure that the Windows 10 devices that you need to onboard meet these requir
    - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Install Microsoft Chromium Edge browser on the endpoint device to enforce policy actions for the upload to cloud activity. See, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. Install the Microsoft Edge or the Google Chrome browser on the endpoint device to enforce policy actions for the upload to cloud activity. For more information see, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
 
@@ -178,9 +171,7 @@ Once a device is onboarded, it should be visible under the **Devices** table and
 
 ## See also
 
-- [Insider risk management in Microsoft 365](insider-risk-management-solution-overview.md#insider-risk-management-in-microsoft-365)
 - [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
-- [Plan for insider risk management](insider-risk-management-plan.md#plan-for-insider-risk-management)
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
