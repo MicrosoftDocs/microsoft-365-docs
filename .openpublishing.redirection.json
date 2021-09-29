@@ -4560,6 +4560,11 @@
       "redirect_url": "microsoft-365/compliance/device-onboarding-vdi",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
+      "redirect_document_id": false
+    },
     {  
       "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
       "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
