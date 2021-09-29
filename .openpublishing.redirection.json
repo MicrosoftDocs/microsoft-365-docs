@@ -4546,6 +4546,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/unlimited-archiving.md",
+      "redirect_url": "/microsoft-365/compliance/autoexpanding-archiving",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/enable-unlimited-archiving.md",
+      "redirect_url": "/microsoft-365/compliance/enable-autoexpanding-archiving",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
       "redirect_document_id": false

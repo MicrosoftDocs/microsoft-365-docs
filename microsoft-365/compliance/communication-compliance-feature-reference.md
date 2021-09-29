@@ -382,7 +382,7 @@ For communication compliance policies, the following alert policy values are con
 |**Alert policy trigger**|**Default value**|
 |:-----|:-----|
 | Aggregation | Simple aggregation |
-| Threshold | Minimum: 3 activities <br> Maximum: 2,147,483,647 activities |
+| Threshold | Minimum: 4 activities <br> Maximum: 2,147,483,647 activities |
 | Window | Minimum: 60 minutes <br> Maximum: 10,000 minutes |
 
 > [!NOTE]
