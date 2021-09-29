@@ -19,69 +19,73 @@ description: "Learn how to configure SAP SuccessFactors as a learning content so
 
 # Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning (Preview)
 
-This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. The steps below need to be completed by your SuccessFactors admin in the SuccessFactors portal.
+This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. First you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in your M365 Admin Center.
 
-The admin who's going to enable this feature must have access to the SuccessFactors Learning administrator application. the admin should have required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
+## Configure in the SuccessFactors portal
 
-The following parameters need to fill by the admin in PARTNER_EXTRACT configuration. The admin should have details for the same. To edit the partner extract configuration in SF, the admin should have “Edit System Configuration” workflow permission in SF.
+1. The admin who's going to enable this feature must have access to the SuccessFactors Learning administrator application. the admin should have required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
+2. You need to use the PGP tool to generate the PGP key (Public key, Private Key, Private Key Passphrase) of your preferred size. While generating the PGP key, you can select RSA algorithm, which is recommended. GNUPG tool is one of the PGP keys generation tools that you can use.  
+3. You'll need to fill in the following parameters in the PARTNER_EXTRACT configuration. To edit the partner extract configuration in SuccessFactors, you'll need “Edit System Configuration” workflow permission in SuccessFactors.
 
-customer notification email for all job status
-
+```
+#customer notification email for all job status
 defaultJob.email=
 
-**Partner1**
-
-PartnerID maximum length is 10 characters. This can be your LMS tenant id 
-
+#Partner1
+#PartnerID maximum length is 10 characters. This can be your LMS tenant ID. 
 partners1.partnerID=
 
- EncryptionKey is PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK 
-
+#EncryptionKey is the PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK 
 partners1.encryptionKey=
 
-KeyOwner maps to User-ID of public key 
-
+#KeyOwner maps to the User-ID of public key 
 partners1.keyOwner=
 
-enabled can be "false" or "true". Set true to enable the partner extract 
-
+#enabled can be "false" or "true". Set it to "true" to enable the partner extract. 
 partners1.enabled=
+```
 
-Graphical user interface, text, application
+![Image of the PARTNER_EXTRACT configuration settings filled in](media/sap-1.png)
 
-Description automatically generated
+Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in your M365 Admin Center.
 
-Once the above changes are done on the SF portal, the below configuration details need to be filled in by the tenant admin on the M365 admin portal -
+## Configure in the M365 Admin Center
 
-Navigate to admin.microsoft.com.
+1. Navigate to your [M365 Admin Center](https://admin.microsoft.com).
+2. Navigate to **Settings** > **Org settings**. Then search for Viva Learning (Preview) and enable SAP SuccessFactors from the options.
+3. Fill in the configuration details.
 
-Navigate to Settings -> Org settings -> Search for Viva Learning (Preview) and enable SAP SuccessFactors from the options.
+### Configuration details
 
-Fill in the below required config details -  
+![Image of the configuration details filled in in the M365 Admin Center](media/sap-2.png)
 
-Display Name: Please enter the desired display name for SAP SuccessFactors carousel.
+**Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
-SFTP Host URL: Please navigate to LMS Admin Application > System Administration > Configuration > System Configuration > CONNECTORS and get the value of ‘connector.ftp.server’ property.
+**SFTP Host URL**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **CONNECTORS**. Get the value of the `connector.ftp.server` property.
 
-User Name: The LMS admin has to navigate to LMS Admin Application > System Administration > Configuration > System Configuration > CONNECTORS and get the value of ‘connector.ftp.userID’ property.
+**User Name**: Follow the same steps you followed for the SFTP Host URL. Get the value of the `connector.ftp.userID` property.
 
-Password: Please enter your password. For any help required, please check with LMS application owner to get the password.
+**Password**: Enter your password. Check with your LMS application owner for help retrieving your password.
 
-Folder Path: Please navigate to LMS Admin Application > System Administration > Configuration > System Configuration > PARTNER_EXTRACT   and get the value of ‘defaultFtp.path’ property.
+**Folder Path**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**. Get the value of the `defaultFtp.path` property.
 
-Client’s Host URL: This is BizX domain URL. You can get this from BizX login URL. For example, if the BizX login URL is “https://pmsalesdemo8.successfactors.com/sf/start/#/login” then the host URL is “pmsalesdemo8.successfactors.com”.  
+**Client’s Host URL**: This is the BizX domain URL. You can get this from your BizX login URL. For example, if your BizX login URL is “organization.successfactors.com/sf/start/#/login” then the host URL is “organization.successfactors.com”.
 
-Client’s Learning Destination URL: You can get this from learning domain module URL. For example, if the learning domain URL is “https://sfcpart000094.scdemo.successfactors.com/learning/...” then the Learning Destination URL is “sfcpart000094.scdemo.successfactors.com”.
+**Client’s Learning Destination URL**: You can get this from the learning domain module URL. For example, if the learning domain URL is “organization.scdemo.successfactors.com/learning/...” then the Learning Destination URL is “organization.scdemo.successfactors.com”.
 
-PGP Key:
+**PGP Private Key**: PGP private key for decryption, which is the entire section between BEGIN PGP PRIVATE KEY BLOCK and END PGP PRIVATE KEY BLOCK. You'll need to copy the key exactly as it's been generated; don't remove new line characters.
 
-You need to use the PGP tool to generate the keys. While generating the PGP key you can select RSA algorithm which is recommended. GNUPG tool is one of the PGP keys generation tools that you can use.
+**PGP Private Key Passphrase**: You'll need to get this value from your IT admin or the team that provides your PGP key.
 
-PGP Private Key: PGP private key for decryption, which is the entire section between BEGIN PGP PRIVATE KEY BLOCK and END PGP PRIVATE KEY BLOCK.
-Please get this value from your IT team or team who provides the PGP key.
+**Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
 
-PGP Private Key Passphrase: Please get this value from your IT team or team who provides the PGP key.
+![Image of the steps to find your company ID](media/sap-3.png)
 
-Please note: Data residency: Tenant metadata is stored centrally in our data stores & are not stored in geo specific data stores.
+>[!Note]
+> SuccessFactors courses will start appearing in the Viva Learning app within 7 days of successful setup.
 
-Roles & Permissions: Today, all the users within an organization will be able to discover all the tenant specific courses but they will only be able to access/ consume the courses that they have access to. User specific content discovery (based on roles & permissions) is part of our future roadmap.
+>[!Note]
+> Tenant metadata is stored centrally in our data stores, not in geo-specific data stores.
+
+>[!Note]
+> All users within an organization will be able to discover all the tenant-specific courses, but they'll only be able to access and consume courses that they have access to. User specific content discovery is planned for future releases.
