@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-items-that-have-a-sensitivity-label).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -252,6 +252,20 @@ ProgID:Media AND ProgID:Meeting
 ```
 
 Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
+
+##### Identify items that have a sensitivity label
+
+To identify items that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
+
+```
+ProgID:InformationProtectionLabelId<GUID>
+```
+
+To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 
 #### Auto-apply labels to content by using trainable classifiers
