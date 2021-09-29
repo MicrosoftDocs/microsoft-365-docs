@@ -145,7 +145,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!IMPORTANT]
-> For emails, it's not supported to scope an auto-apply retention policy configured for sensitive information to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
+> For emails, it's not supported to scope an auto-apply retention label policy configured for sensitive information to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
 > 
 > If you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are selected.
 
@@ -166,6 +166,8 @@ For more information about these options, see the following guidance from the DL
 To consider when using sensitive information types to auto-apply retention labels:
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
+
+- For emails, you can't select specific recipients to include or exclude; only the **All recipients** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups. 
 
 #### Auto-apply labels to content with keywords or searchable properties
 
