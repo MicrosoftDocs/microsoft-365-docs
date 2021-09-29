@@ -36,9 +36,9 @@ The **Mailbox usage report** provides information about users with a user mailbo
 
 ## Interpret the mailbox usage report
 
-You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts. 
+You can get a view into your organization's **Mailbox usage** by looking at the **Mailbox**, **Storage** and **Quota** charts.
   
-![Mailbox usage report.](../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png)
+:::image type="content" alt-text="Mailbox usage report." source="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png" lightbox="../../media/9f610e91-cbc1-4e59-b824-7b1ddd84b738.png":::
 
 |Item|Description|
 |:-----|:-----|
