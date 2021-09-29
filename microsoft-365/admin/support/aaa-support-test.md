@@ -287,12 +287,12 @@ Zimbabwe
 
 +92 21 111 674 357  
 Select option 3
-   :::column-end:::
-   :::column:::
+
 **Billing Support hours:**
 
 English: Mon-Fri 10 AM-6 PM
-
+   :::column-end:::
+   :::column:::
 **Technical Support hours:**
 
 English: 24 hours a day, 7 days a week  
@@ -342,7 +342,7 @@ International call charges apply
 
 ## Belgium  
 
-::row:::
+:::row:::
    :::column:::
 **Phone number**
 
@@ -453,12 +453,12 @@ Local call charges apply
 1 800 751 3455  
 Select option 4  
 Enter code 7007
-   :::column-end:::
-   :::column:::
+
 **Billing Support hours:**
 
 Spanish: Mon-Fri 9 AM-5 PM
-
+   :::column-end:::
+   :::column:::
 **Technical Support hours:**
 
 Spanish: 24 hours a day, 7 days a week  

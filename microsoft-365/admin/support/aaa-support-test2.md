@@ -119,12 +119,12 @@ Dominican Republic
 
 +92 21 111 674 357  
 Select option 3
-   :::column-end:::
-   :::column:::
+
 **Billing Support hours:**
 
 English: Mon-Fri 10 AM-6 PM
-
+   :::column-end:::
+   :::column:::
 **Technical Support hours:**
 
 English: 24 hours a day, 7 days a week  
