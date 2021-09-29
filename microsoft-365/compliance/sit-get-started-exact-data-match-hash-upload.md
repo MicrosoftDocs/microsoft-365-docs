@@ -23,12 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 This article shows you how to hash and upload your sensitive information source table.
 
-## Before you begin
-
-1. Perform the steps in [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
-2. Perform the steps in [Create and upload the schema and rule package for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-and-rule-package-for-exact-data-match-based-sensitive-information-types) to create the schema and rule package files.
-
-### Hash and upload the sensitive information source table
+## Hash and upload the sensitive information source table
 
 In this phase you:
 
@@ -48,14 +43,13 @@ If you do not want to expose your clear text sensitive information source table 
 > [!NOTE]
 > If your organization has set up [Customer Key for Microsoft 365 at the tenant level](customer-key-overview.md), Exact data match will make use of its encryption functionality automatically. This is available only to E5 licensed tenants in the Commercial cloud.
 
-#### Best practices
+### Best practices
 
 Separate the processes of hashing and uploading the sensitive data so you can more easily isolate any issues in the process.
  
 Once in production, keep the two steps separate in most cases. Performing the hashing process on an isolated computer and then transferring the file for upload to an internet-facing computer ensures the actual data is never available in clear text form in a computer that could have been compromised due to its connection to the Internet.
 
-
-#### Ensure your sensitive data table doesn’t have formatting issues. 
+### Ensure your sensitive data table doesn’t have formatting issues. 
 
 Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
 You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
@@ -65,7 +59,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
 ```
 If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tool to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value, for example the person’s name Tom O’Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
 
-#### Prerequisites
+### Prerequisites
 
 - a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group
 - a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 <!--4.7.2 un comment this around 9/29-->for running the EDMUploadAgent
@@ -77,18 +71,16 @@ If the tool indicates a mismatch in number of columns it might be due to the pre
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](sit-get-started-exact-data-match-based-sits-overview.md#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
-#### Hash and upload from one computer
+### Hash and upload from one computer
 
 This computer must have direct access to your Microsoft 365 tenant.
 
 > [!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
->
-
 
 > [!TIP] Optionally, you can run a validation against your sensitive information source table file to check it for errors before uploading by running:
 >
@@ -155,7 +147,7 @@ This command will automatically add a randomly generated salt value to the hash 
 > [!TIP]
 > If you want to be notified once the uploaded sensitive data is ready to use, follow the procedures in [Create notifications for exact data match activities](sit-edm-notifications-activities.md#create-notifications-for-exact-data-match-activities).
 
-#### Separate Hash and upload
+### Separate Hash and upload
 
 Perform the hash on a computer in a secure environment. You must have the **EDMUploadAgent** installed on both computers.
 
