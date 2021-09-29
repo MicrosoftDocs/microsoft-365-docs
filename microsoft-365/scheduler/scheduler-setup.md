@@ -75,7 +75,7 @@ After running this "set" command on the Cortana Scheduler assistant mailbox, a n
 To verify the Scheduler assistant mailbox has been created
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain | fl DeleteNonCalendarItems
+Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
 The result should be “false”.
@@ -83,7 +83,7 @@ The result should be “false”.
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity cortana$domain | fl *type*
+Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 The result should be
