@@ -141,7 +141,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 3. Right-click **Windows Defender Exploit Guard**. 
 
-4. Click **Create Exploit Guard Policy**. This opens **MDEG-NP - Audit mode**. 
+4. Select **Create Exploit Guard Policy**. This opens **MDEG-NP - Audit mode**. 
 
 5. Under **Enable Exploit Guard components**, turn on **Network Protection**.  
 
