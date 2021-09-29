@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections

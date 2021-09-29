@@ -115,7 +115,7 @@ Creating a custom Safe Links policy in the Microsoft 365 Defender portal creates
      - **Apply real-time URL scanning for suspicious links and links that point to files**: Select this option to enable real-time scanning of links in email messages. If you turn this setting on the following setting is available:
        - **Wait for URL scanning to complete before delivering the message**: Select this option to wait for real-time URL scanning to complete before delivering the message.
      - **Apply Safe Links to email messages sent within the organization**: Select this option to apply the Safe Links policy to messages between internal senders and internal recipients.
-   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams.
+   - **Select the action for unknown or potentially malicious URLs within Microsoft Teams**: Select **On** to enable Safe Links protection for links in Teams. Note that this setting might take up to 24 hours to take effect.
    - **Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
    - **Do not allow users to click through to original URL**: Select this option to block users from clicking through to the original URL in [warning pages](safe-links.md#warning-pages-from-safe-links).
    - **Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.

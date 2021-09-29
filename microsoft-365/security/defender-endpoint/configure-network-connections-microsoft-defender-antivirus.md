@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 06/17/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
@@ -110,3 +111,8 @@ You'll also see a detection under **Quarantined threats** in the **Scan history*
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
    The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## See also
+
+- [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)

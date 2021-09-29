@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -31,8 +31,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
->[!NOTE]
+> [!NOTE]
 > Configuration score is now part of threat and vulnerability management as Microsoft Secure Score for Devices.
 
 Your score for devices is visible in the [threat and vulnerability management dashboard](tvm-dashboard-insights.md) of the Microsoft 365 Defender portal. A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks. It reflects the collective security configuration state of your devices across the following categories:
@@ -51,8 +50,7 @@ Forward Microsoft Defender for Endpoint signals, giving Microsoft Secure Score v
 
 Changes might take up to a few hours to reflect in the dashboard.
 
-
-1. In the navigation pane, go to **Settings** > **Endpoints** > **General** > **Advanced features** 
+1. In the navigation pane, go to **Settings** \> **Endpoints** \> **General** \> **Advanced features**
 
 2. Scroll down to **Microsoft Secure Score** and toggle the setting to **On**.
 
@@ -60,7 +58,7 @@ Changes might take up to a few hours to reflect in the dashboard.
 
 ## How it works
 
->[!NOTE]
+> [!NOTE]
 > Microsoft Secure Score for Devices currently supports configurations set via Group Policy. Due to the current partial Intune support, configurations which might have been set through Intune might show up as misconfigured. Contact your IT Administrator to verify the actual configuration status in case your organization is using Intune for secure configuration management.
 
 The data in the Microsoft Secure Score for Devices card is the product of meticulous and ongoing vulnerability discovery process. It is aggregated with configuration discovery assessments that continuously:
@@ -94,16 +92,18 @@ Improve your security configuration by remediating issues from the security reco
 
 7. Review the **Microsoft Secure Score for Devices** card again on the dashboard. The number of security controls recommendations will decrease. When you select **Security controls** to go back to the **Security recommendations** page, the item that you've addressed won't be listed there anymore. Your Microsoft Secure Score for Devices should increase.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >To boost your vulnerability assessment detection rates, download the following mandatory security updates and deploy them in your network:
->- 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
->- RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
->- RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
->- RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
 >
->To download the security updates:
->1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
->2. Key-in the security update KB number that you need to download, then click **Search**.  
+> - 19H1 customers | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+> - RS5 customers | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+> - RS4 customers | [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+> - RS3 customers | [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+>
+> To download the security updates:
+>
+> 1. Go to [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/home.aspx).
+> 2. Key-in the security update KB number that you need to download, then click **Search**.
 
 ## Related topics
 

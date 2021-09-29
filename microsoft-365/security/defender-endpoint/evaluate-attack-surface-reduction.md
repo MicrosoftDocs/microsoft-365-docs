@@ -14,6 +14,7 @@ ms.author: v-jweston
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Evaluate attack surface reduction rules

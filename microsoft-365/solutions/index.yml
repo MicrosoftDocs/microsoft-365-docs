@@ -32,8 +32,8 @@ landingContent:
             url: empower-people-to-work-remotely.md
           - text: Set up secure collaboration with Microsoft 365
             url: setup-secure-collaboration-with-teams.md
-          - text: Deploy threat protection across Microsoft 365 
-            url: deploy-threat-protection.md
+          - text: Deploy ransomware protection 
+            url: ransomware-protection-microsoft-365.md
           - text: Deploy information protection for data privacy regulations 
             url: information-protection-deploy.md
           - text: Microsoft 365 for smaller businesses and campaigns
