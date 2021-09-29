@@ -187,7 +187,7 @@ You can view the list of existing custom detection rules, check their previous r
 
 ### View existing rules
 
-To view all existing custom detection rules, navigate to **Hunting** > **Custom detections**. The page lists all the rules with the following run information:
+To view all existing custom detection rules, navigate to **Hunting** > **Custom detection rules**. The page lists all the rules with the following run information:
 
 - **Last run**—when a rule was last run to check for query matches and generate alerts
 - **Last run status**—whether a rule ran successfully
@@ -196,9 +196,9 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 ### View rule details, modify rule, and run rule
 
-To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
+To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page.](../../media/custom-detection-details.png)<br>
+![Custom detection rule details page.](../../media/custom-detect-rules-view.png)<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:
