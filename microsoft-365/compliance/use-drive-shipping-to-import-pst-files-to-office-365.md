@@ -439,7 +439,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 - Drive shipping is an effective way to import large amounts of archival messaging data to Microsoft 365 to take advantage of the compliance features that are available to your organization. After archival data is imported to user mailboxes, you can:
 
-  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users more mailbox storage space for the data. 
+  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users more mailbox storage space for the data. 
 
   - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data. 
 
