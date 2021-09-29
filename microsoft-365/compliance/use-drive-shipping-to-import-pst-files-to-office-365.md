@@ -366,13 +366,13 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
   
 6. Do one of the following:
 
-    a. To trim the data that you import, click **Yes, I want to filter it before importing**.
+   1. To trim the data that you import, click **Yes, I want to filter it before importing**.
 
-    For detailed step-by-step instructions about filtering the data in the PST files and then starting the import job, see [Filter data when importing PST files to Office 365](filter-data-when-importing-pst-files.md).
+      For detailed step-by-step instructions about filtering the data in the PST files and then starting the import job, see [Filter data when importing PST files to Office 365](filter-data-when-importing-pst-files.md).
 
-    Or
+      Or
 
-    b. To import all data in the PST files, click **No, I want to import everything,** and click **Next**.
+   1. To import all data in the PST files, click **No, I want to import everything,** and click **Next**.
 
 7. If you chose to import all the data, click **Import data** to start the import job. 
 
