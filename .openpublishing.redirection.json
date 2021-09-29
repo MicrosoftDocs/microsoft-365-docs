@@ -4554,6 +4554,11 @@
       "source_path": "microsoft-365/compliance/download-existing-reports.md",
       "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+      "redirect_url": "/compliance/sit-learn-about-exact-data-match",
+      "redirect_document_id": false
     }
   ]
 }
