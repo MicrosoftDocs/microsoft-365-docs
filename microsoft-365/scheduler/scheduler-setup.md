@@ -45,7 +45,7 @@ Use the Microsoft 365 admin center to create a user mailbox. A 30-day retention 
 Use the name Cortana in your mailbox’s primary SMTP address. Names such as `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`, or `Cortana.Scheduler@yourdomain.com` are recommended.
 
 ```PowerShell
-$domain="yourdomain.com  "
+$domain="yourdomain.com"
 $tenantAdmin="<tenantadmin>@$domain"
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
