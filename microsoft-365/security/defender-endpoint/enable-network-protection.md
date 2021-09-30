@@ -14,6 +14,7 @@ ms.author: deniseb
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Turn on network protection
@@ -35,19 +36,19 @@ ms.technology: mde
 
 Check if network protection has been enabled on a local device by using Registry editor.
 
-1. Select the **Start** button in the task bar and type **regedit** to open Registry editor
+1. Select the **Start** button in the task bar and type **regedit** to open Registry editor.
 
-2. Choose **HKEY_LOCAL_MACHINE** from the side menu
+2. Choose **HKEY_LOCAL_MACHINE** from the side menu.
 
-3. Navigate through the nested menus to **SOFTWARE** > **Policies** > **Microsoft** > **Windows Defender** > **Windows Defender Exploit Guard** > **Network Protection**
+3. Navigate through the nested menus to **SOFTWARE** \> **Policies** \> **Microsoft** \> **Windows Defender** \> **Windows Defender Exploit Guard** \> **Network Protection**.
 
-4. Select **EnableNetworkProtection** to see the current state of network protection on the device
+4. Select **EnableNetworkProtection** to see the current state of network protection on the device:
 
    - 0, or **Off**
    - 1, or **On**
    - 2, or **Audit** mode
 
-    ![Network Protection registry key](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    ![Network Protection registry key.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
 
 ## Enable network protection
 
@@ -60,7 +61,7 @@ Enable network protection by using any of these methods:
 
 ### PowerShell
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -81,11 +82,19 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 ### Microsoft Endpoint Manager (formerly Intune)
 
-1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com)
+1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
-2. Create or edit an [endpoint protection configuration profile](/mem/intune/protect/endpoint-protection-configure)
+2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. Under **Configuration Settings** in the profile flow, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit only**
+3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
+
+4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
+
+5. In the **Configuration settings** section, go to **Microsoft Defender Exploit Guard** > **Network filtering** > **Network protection** > **Enable** or **Audit**. Select **Next**.
+
+6. Select the appropriate **Scope tags**, **Assignments**, and **Applicability rules** as required by your organization. Admins can set more requirements.
+
+7. Review all the information, and then select **Create**.
 
 ### Group Policy
 
@@ -99,14 +108,14 @@ Use the following procedure to enable network protection on domain-joined comput
 
 2. In the **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Windows Defender Exploit Guard** > **Network protection**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Windows Defender Exploit Guard** \> **Network protection**.
 
    > [!NOTE]
    > On older versions of Windows, the group policy path may say "Windows Defender Antivirus" instead of "Microsoft Defender Antivirus."
 
 4. Double-click the **Prevent users and apps from accessing dangerous websites** setting and set the option to **Enabled**. In the options section, you must specify one of the following options:
-    - **Block** - Users can't access malicious IP addresses and domains
-    - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains
+    - **Block** - Users can't access malicious IP addresses and domains.
+    - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains.
     - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
 > [!IMPORTANT]
@@ -126,5 +135,9 @@ Confirm network protection is enabled on a local computer by using Registry edit
 ## See also
 
 - [Network protection](network-protection.md)
+
+- [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
 - [Evaluate network protection](evaluate-network-protection.md)
+
 - [Troubleshoot network protection](troubleshoot-np.md)

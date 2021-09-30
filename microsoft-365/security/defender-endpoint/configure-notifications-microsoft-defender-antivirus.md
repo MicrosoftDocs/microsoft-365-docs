@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 06/16/2021
 ms.reviewer: 
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus notifications that appear on endpoints
@@ -33,7 +34,7 @@ If you're part of your organization's security team, you can configure how notif
 You can configure the display of additional notifications, such as recent threat detection summaries, in the [Windows Security app](microsoft-defender-security-center-antivirus.md) and with Group Policy.
 
 > [!NOTE]
-> In Windows 10, version 1607 the feature was called **Enhanced notifications** and was configured under **Windows Settings** > **Update & security** > **Windows Defender**. In Group Policy settings for all versions of Windows 10, the notification feature is called **Enhanced notifications**.
+> In Windows 10, version 1607 the feature was called **Enhanced notifications** and was configured under **Windows Settings** \> **Update & security** \> **Windows Defender**. In Group Policy settings for all versions of Windows 10, the notification feature is called **Enhanced notifications**.
 
 ### Use Group Policy to disable additional notifications
 
@@ -45,7 +46,7 @@ You can configure the display of additional notifications, such as recent threat
 
 4. Select **Administrative templates**.
 
-5. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > Reporting**.
+5. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** > Reporting**.
 
 6. Double-click **Turn off enhanced notifications**, and set the option to **Enabled**. Then select **OK**. This will prevent additional notifications from appearing.
 
@@ -85,7 +86,7 @@ To add custom contact information to endpoint notifications, see [Customize the 
 
 3. In the **Group Policy Management Editor** go to **Computer configuration** and then select **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Client interface**. 
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Client interface**. 
 
 5. Double-click **Suppress all notifications** and set the option to **Enabled**. 
 
@@ -101,7 +102,7 @@ To add custom contact information to endpoint notifications, see [Customize the 
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Client interface**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Client interface**.
 
 5. Double-click **Suppresses reboot notifications** and set the option to **Enabled**. 
 

@@ -50,9 +50,11 @@ All audit records generated in other services that aren't covered by the default
 
 You can also specify how long to retain audit records that match the policy and a priority level so that specific policies will take priority over other policies. Also note that any custom audit log retention policy will take precedence over the default audit retention policy in case you need retain Exchange, SharePoint, or Azure Active Directory audit records for less than a year (or for 10 years) for some or all users in your organization. For more information, see [Manage audit log retention policies](audit-log-retention-policies.md).
 
-## Access to crucial events for investigations
+## Advanced Audit events
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.  Advanced Auditing provides the following crucial events:
+Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.  In addition to the crucial events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered crucial events and require an [appropriate Advanced Audit license](auditing-solutions-overview.md#licensing-requirements) to be logged.
+
+Advanced Auditing provides the following crucial events:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -61,6 +63,8 @@ Advanced Audit helps organizations to conduct forensic and compliance investigat
 - [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
 - [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+- [Other Advanced Audit events in Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
 
 > [!NOTE]
 > <sup>*</sup> At this time, this event isn't available in Office 365 and Microsoft 365 Government GCC High and DoD environments.
@@ -81,7 +85,7 @@ For information about audit records for MailItemsAccessed activities, see [Use A
 
 To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
-![Searching for MailItemsAccessed actions in the audit log search tool](../media/AdvAudit_MailItemsAccessed.png)
+![Searching for MailItemsAccessed actions in the audit log search tool.](../media/AdvAudit_MailItemsAccessed.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
@@ -99,7 +103,7 @@ Investigators can use the Send event to identify email sent from a compromised a
 
 To search for Send audit records, you can search for the **Sent message** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center.
 
-![Searching for Sent message actions in the audit log search tool](../media/AdvAudit_SentMessage.png)
+![Searching for Sent message actions in the audit log search tool.](../media/AdvAudit_SentMessage.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
@@ -121,12 +125,12 @@ Investigators can use the SearchQueryInitiatedExchange event to determine if an 
 
 To search for SearchQueryInitiatedExchange audit records, you can search for the **Performed email search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
-![Searching for Performed email search actions in the audit log search tool](../media/AdvAudit_SearchExchange.png)
+![Searching for Performed email search actions in the audit log search tool.](../media/AdvAudit_SearchExchange.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Advanced Audit](set-up-advanced-audit.md#step-2-enable-crucial-events).
+> You must enable SearchQueryInitiatedExchange to be logged so you can search for this event in the audit log. For instructions, see [Set up Advanced Audit](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
 
 ### SearchQueryInitiatedSharePoint
 
@@ -144,12 +148,24 @@ Investigators can use the SearchQueryInitiatedSharePoint event to determine if a
 
 To search for SearchQueryInitiatedSharePoint audit records, you can search for the **Performed SharePoint search** activity in the **Search activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the compliance center.
 
-![Searching for Performed SharePoint search actions in the audit log search tool](../media/AdvAudit_SearchSharePoint.png)
+![Searching for Performed SharePoint search actions in the audit log search tool.](../media/AdvAudit_SearchSharePoint.png)
 
 You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell.
 
 > [!NOTE]
-> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Advanced Audit](set-up-advanced-audit.md#step-2-enable-crucial-events).
+> You must enable SearchQueryInitiatedSharePoint to be logged so you can search for this event in the audit log. For instructions, see [Set up Advanced Audit](set-up-advanced-audit.md#step-2-enable-advanced-audit-events).
+
+### Other Advanced Audit events in Microsoft 365
+
+In addition to the crucial events in Exchange Online and SharePoint Online, there are crucial events in other Microsoft 365 services that are logged when users are assigned the appropriate Advanced Audit licensing. The following Microsoft 365 services provide crucial events. Clink the corresponding link to go to an article that identifies and describes these events.
+
+- [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
+
+- [Microsoft Stream](/stream/audit-logs#actions-logged-in-stream)
+
+- [Microsoft Teams](/microsoftteams/audit-log-events#teams-activities)
+
+- [Yammer](search-the-audit-log-in-security-and-compliance.md#yammer-activities)
 
 ## High-bandwidth access to the Office 365 Management Activity API
 

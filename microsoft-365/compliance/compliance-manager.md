@@ -44,7 +44,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 Your Compliance Manager dashboard shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of what your Compliance Manager dashboard will look like:
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+![Compliance Manager - dashboard.](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ## Understanding your compliance score
 

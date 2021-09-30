@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
 ---
 
@@ -32,6 +32,15 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+
+## 101.40.84 (20.121071.14084.0)
+
+- M1 chip native support
+- Performance improvements & bug fixes
+
+## 101.37.97 (20.121062.13797.0)
+
+- Performance improvements & bug fixes
 
 ## 101.34.28 (20.121061.13428.0)
 

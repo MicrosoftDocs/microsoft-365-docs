@@ -1,7 +1,7 @@
 ---
 title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud offerings"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: conceptual
@@ -135,7 +135,7 @@ The following table describes how you can combine multiple Microsoft cloud offer
    
 An easy way to add subscriptions to your organization for Microsoft SaaS-based services is through the admin center:
   
-1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with your global administrator account.
+1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) with your **User Admin**, or **Global admin** account.
     
 2. From the left navigation of the **Admin center** home page, click **Billing**, and then **Purchase services**.
     
@@ -145,7 +145,7 @@ The admin center assigns the organization and Azure AD tenant of your Microsoft 
   
 To add an Azure subscription with the same organization and Azure AD tenant as your Microsoft 365 subscription:
   
-1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 global administrator account.
+1. Sign in to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) with your Microsoft 365 **Azure AD DC admin**, or **Global admin** account.
     
 2. In the left navigation, click **Subscriptions**, and then click **Add**.
     

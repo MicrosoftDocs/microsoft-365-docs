@@ -14,6 +14,7 @@ metadata:
   - M365-subscription-management 
   - Adm_O365
   - Adm_NonTOC
+  - Adm_TOC  
   ms.custom: AdminSurgePortfolio
   search.appverid:
   - BCS160
@@ -63,11 +64,8 @@ sections:
       - question: |
           Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins? 
         answer: |
-          Yes. Centralized Deployment provides admins the flexibility to choose one of three deployment methods for Outlook add-ins during add-in deployment:
-          
-          **Fixed (Default)** 
-          The add-in is deployed automatically to the assigned users, and they cannot remove it.
-           
+          Yes. Centralized Deployment provides admins the flexibility to choose one of two deployment methods for Outlook add-ins during add-in deployment:
+                   
           **Available**
           Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
            

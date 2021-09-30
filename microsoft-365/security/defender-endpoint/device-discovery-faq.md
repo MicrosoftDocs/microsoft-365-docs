@@ -38,7 +38,7 @@ Find answers to frequently asked questions (FAQs) about device discovery.
 This mode allows every Microsoft Defender for Endpoint onboarded device to collect network data and discover neighboring devices. Onboarded endpoints passively collect events in the network and extract device information from them. No network traffic will be initiated. Onboarded endpoints will simply extract data from every network traffic that is seen by an onboarded device. This data used to list unmanaged devices in your network.
 
 ## Can I disable Basic discovery?
-You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. 
+You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. Note that SenseNDR.exe will still be running on the onboarded devices regardless discovery is turned off. 
 
 ## What is Standard discovery mode?
  In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
@@ -51,18 +51,18 @@ Yes, you can apply filters exclude unmanaged devices from the device inventory l
 
 
 ## Which onboarded devices can perform discovery?
- Onboarded devices running on Windows 10 version 1809 or later can perform discovery.
+ Onboarded devices running on Windows 10 version 1809 or later can perform discovery. Servers cannot perform discovery at this point.
 
 ## What happens if my onboarded devices is connected to my home network, or to public access point?
- The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. By correlating network identifiers across all tenant's clients, events are differentiated between ones that were received from private networks and corporate networks. For example, if the majority of the devices in the network report that they are connected to the same network name, with the same default gateway and DHCP server address, it can be assumed that this network is likely a corporate network. Private network devices will not be listed in the inventory and will not be actively probed.
+ The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. By correlating network identifiers across all tenant's clients, events are differentiated between ones that were received from private networks and corporate networks. For example, if the majority of the devices in the organization report that they are connected to the same network name, with the same default gateway and DHCP server address, it can be assumed that this network is likely a corporate network. Private network devices will not be listed in the inventory and will not be actively probed.
 
 ## What protocols are you capturing and analyzing?
  By default, all onboarded devices running on Windows 10 version 1809 or later are capturing and analyzing the following protocols:
-ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (headers), UDP (headers), WSD
+ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
 
 ## Which protocols do you use for active probing in Standard discovery?
  When a device is configured to run Standard discovery, exposed services are being probed by using the following protocols:
-ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync
+ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL, RPC, mDNS, DHCP, AFP, CrestonCIP, IphoneSync, WinRM, VNC, SLP
 
 ## How can I exclude targets from being probed with Standard discovery?
  If there are devices on your network which should not be actively probed, you can also define a list of exclusions to prevent them from being scanned. The configuration is available in the device discovery settings page.
@@ -75,7 +75,7 @@ ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPN
 
 ## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
  The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
-`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`
+`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
 
 
 ## What is the amount of traffic being generated by the Standard discovery active probe?
@@ -100,7 +100,7 @@ When considering Standard discovery, you may be wondering about the implication
 As opposed to malicious activity, which would typically scan the entire network from a small number of compromised devices, Microsoft Defender for Endpoint’s Standard discovery probing is initiated from all onboarded Windows devices making the activity benign and non-anomalous. The probing is centrally managed from the cloud to balance the probing attempt between all the supported onboarded devices in the network.  
 
 ### Active probing generates negligible amount of extra traffic
-Unmanaged devices would typically get probed no more than once in a three-week period and generate less than 50KB of traffic. Malicious activity usually includes high repetitive probing attempts and in some cases data exfiltration that generates a significant amount of network traffic that can be identified an anomaly by network monitoring tools. 
+Unmanaged devices would typically get probed no more than once in a three-week period and generate less than 50KB of traffic. Malicious activity usually includes high repetitive probing attempts and in some cases data exfiltration that generates a significant amount of network traffic that can be identified as an anomaly by network monitoring tools. 
 
 ### Your Windows device already runs active discovery
 Active discovery capabilities have always been embedded in the Windows operating system, to find nearby devices, endpoints, and printers, for easier "plug and play" experiences and file sharing between endpoints in the network. Similar functionality is implemented in mobile devices, network equipment and inventory applications just to name a few.  

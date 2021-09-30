@@ -1,7 +1,7 @@
 ---
 title: "Plan for third-party SSL certificates for Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.date: 05/15/2019

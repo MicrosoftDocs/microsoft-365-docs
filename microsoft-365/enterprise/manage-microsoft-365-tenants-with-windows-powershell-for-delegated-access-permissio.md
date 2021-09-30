@@ -1,7 +1,7 @@
 ---
 title: "Manage Microsoft 365 tenants with Windows PowerShell for DAP partners"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -61,7 +61,7 @@ Get-MsolPartnerContract -DomainName <domainname.onmicrosoft.com> | Select-Object
 
 ### List all domains for a tenant
 
-To get all domains for any one customer tenant, run this command. Replace  _<customer TenantId value>_ with the actual value.
+To get all domains for any one customer tenant, run this command. Replace  _\<customer TenantId value>_ with the actual value.
 
 ```powershell
 Get-MsolDomain -TenantId <customer TenantId value>
@@ -79,7 +79,7 @@ $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.Tenan
 
 ### Get all users for a tenant
 
-This will display the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _<customer TenantId value>_ with the actual value.
+This will display the **UserPrincipalName**, the **DisplayName**, and the **isLicensed** status for all users for a particular tenant. Replace _\<customer TenantId value>_ with the actual value.
 
 ```powershell
 Get-MsolUser -TenantID <customer TenantId value>
@@ -87,7 +87,7 @@ Get-MsolUser -TenantID <customer TenantId value>
 
 ### Get all details about a user
 
-If you want to see all the properties of a particular user, run this command. Replace  _<customer TenantId value>_ and _<user principal name value>_ with the actual values.
+If you want to see all the properties of a particular user, run this command. Replace  _\<customer TenantId value>_ and _\<user principal name value>_ with the actual values.
 
 ```powershell
 Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user principal name value>

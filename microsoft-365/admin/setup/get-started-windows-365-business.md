@@ -33,9 +33,12 @@ This article is for people who plan to buy and set up Windows 365 Business for t
 > [!NOTE]  
 > Before starting, make sure that your [Azure AD device settings](/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) for **Users may join devices to Azure AD** are set to **All**.
 
-   ![Users may join devices to Azure AD settings](../../media/deschutes/azure-device-settings.png)
+   ![Users may join devices to Azure AD settings.](../../media/deschutes/azure-device-settings.png)
 ## Prerequisites
-There are no prerequisites to set up Windows 365 Business.
+There are no licensing prerequisites to set up Windows 365 Business.
+
+For the best onboarding experience, please refer to the [setup troubleshooting guide](troubleshoot-windows-365-business.md) to make sure your environment preferences are optimized for Windows 365 Business. 
+
 ## Buy subscriptions
 
 There are two different ways in which you can buy Windows 365 Business subscriptions for your users:
@@ -44,6 +47,7 @@ There are two different ways in which you can buy Windows 365 Business subscript
 - Microsoft 365 admin center
 
 After you buy a subscription, you can use the Microsoft 365 admin center to assign licenses to users in your organization.
+
 ### Buy subscriptions through the Windows 365 products site
 
 If you don't already have a Microsoft 365 subscription, you can buy your Windows 365 Business subscriptions on the [Windows 365 products site](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Use the following steps to buy a Windows 365 Business subscription through the Windows 365 products page.
@@ -53,6 +57,13 @@ If you don't already have a Microsoft 365 subscription, you can buy your Windows
 3. On the **Thank you for choosing Windows 365 Business** page, follow the steps to set up your account.
 4. In **step 5 - Confirmation details**, if you are ready to assign licenses to users, select **Get started** to go to your Windows 365 home page at https://windows365.microsoft.com.
 5. On the Windows 365 home page, in the **Quick actions** section, select **Manage your organization**. This takes you to the Microsoft 365 admin center where you can assign licenses to users.
+
+Users without the Global or Billing admin roles can use self-service purchase to buy a subscription for Windows 365 Business directly from the [Windows 365 Business products site](https://www.microsoft.com/windows-365/business?rtc=1). A user who buys a subscription this way is granted a limited view of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), where they can assign licenses for that subscription to other users in their organization. Assigning a license to another user automatically creates a Windows 365 Business Cloud PC for them, which can be accessed from the [Windows 365 home page](https://windows365.microsoft.com/).
+
+> [!NOTE]
+> Self-service purchase isn’t available in India or for government or education customers.
+
+To learn more about self-service purchase, see the [Self-service purchase FAQ](../../commerce/subscriptions/self-service-purchase-faq.yml).
 
 ### Buy a subscription through the Microsoft admin center
 
@@ -71,7 +82,7 @@ Whether you purchased your subscriptions through the Windows 365 products site, 
 You can assign different Windows 365 Business license types to a user, based on the users business need. See [Windows 365 Business sizing options](windows-365-business-sizing.md)  for guidance on which license type might be suitable for your users.
 
 > [!IMPORTANT]
-> The first time a Windows 365 license is assigned on your tenant, a system account called "CloudPCBPRT" is automatically created in Azure Active Directory. Do not delete this account. If the system account is deleted, the setup might fail. This system account ensures a smooth set up process, and doesn't have any write capabilities or access to your tenant beyond the scoped service capabilities of Windows 365 Business. If you delete this user, file a ticket through Support Central.
+> The first time a Windows 365 license is assigned on your tenant, a system account called **Windows 365 BPRT Permanent User** is automatically created in Azure Active Directory. Do not delete this account or make any changes to it (such as changing the name or UPN). If the system account is deleted, the setup might fail. This system account ensures a smooth set up process, and doesn't have any write capabilities or access to your tenant beyond the scoped service capabilities of Windows 365 Business. If you delete this user, follow these [troubleshooting steps](/microsoft-365/admin/setup/troubleshoot-windows-365-business?#step-2-verify-that-the-windows-365-bprt-permanent-user-system-account-is-active).
 
 ## Get your users started with Cloud PC
 
@@ -86,18 +97,18 @@ Users can navigate to **https://windows365.microsoft.com** to access their Cloud
 
 On their Windows 365 home page, users see the Cloud PCs they have access to in the **Your Cloud PCs** section.
 
-![Windows 365 home](../../media/deschutes/cloudpc-home.png)
+![Windows 365 home.](../../media/deschutes/cloudpc-home.png)
 
 Users can select **Open in browser** to open their Cloud PC.
 
 > [!NOTE]  
-> Mobile devices aren’t currently supported.
+> Mobile devices aren’t currently supported for using a browser to open Cloud PC. The Remote Desktop app is supported.
 
 #### User actions
 
 While on the Windows 365 home page, users can perform actions on their Cloud PCs by selecting the gear icon on a Cloud PC card.
 
-![Card menu](../../media/deschutes/cloudpc-gear.png)
+![Card menu.](../../media/deschutes/cloudpc-gear.png)
 
 - **Restart**: Restarts the Cloud PC.
 
@@ -133,7 +144,7 @@ To set up their Remote Desktop client, users follow these steps:
 1. On the **Windows 365 home page**, select the **Microsoft Remote Desktop apps** icon (under the home icon).
 2. On the **Microsoft Remote Desktop apps** page, download and install the Remote Desktop app you need.
 
-   ![Remote desktop clients](../../media/deschutes/remote-desktop-apps.png)
+   ![Remote desktop clients.](../../media/deschutes/remote-desktop-apps.png)
 
 For a list of clients by operating system, see [Remote Desktop clients](/windows-server/remote/remote-desktop-services/clients/remote-desktop-clients).
 
@@ -148,7 +159,7 @@ All Windows 365 Business users have local administrator privileges on their Clou
 
 ## Management through Intune
 
-Windows 365 Business does not enroll Cloud PCs to [Intune](/mem/intune/fundamentals/what-is-intune) as part of the provisioning process. If the organization and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
+If the organization and users are properly licensed, Cloud PCs can be enrolled to Intune using the same procedure for [enrolling Windows 10 machines to Intune](/mem/intune/user-help/enroll-windows-10-device).
 
 ## Sending outbound email messages using port 25 is not supported
 

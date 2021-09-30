@@ -26,6 +26,8 @@ Microsoft Managed Desktop requires the following settings in your Azure AD organ
 
 If you set restrictions that interact with these settings, make sure to exclude the Azure Active Directory **Modern Workplace Service Accounts**. For example, if you have a conditional access policy that prevents guest accounts from accessing the Intune portal, exclude the **Modern Workplace Service Accounts** group from this policy.
 
+For more information, see [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings).
+
 ## Unlicensed Intune admin
 
 The **Allow access to unlicensed admins** setting must be enabled. Without this setting enabled, errors can occur when we try to access your Azure AD organization for service. You can safely enable this setting without worrying about security implications, since the scope of access is defined by the roles assigned to users, including our operations staff.
@@ -41,14 +43,16 @@ To enable this setting, follow these steps:
 
 For more information, see [Unlicensed admins in Microsoft Intune](/mem/intune/fundamentals/unlicensed-admins).
 
-## Steps to get ready
+## Steps to get ready for Microsoft Managed Desktop
 
 1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
-2. Use [readiness assessment tools](readiness-assessment-tool.md).
-3. [Prerequisites for guest accounts](guest-accounts.md) (This article)
-4. [Network configuration for Microsoft Managed Desktop](network.md)
-5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
-6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
-7. [Apps in Microsoft Managed Desktop](apps.md)
-8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
-9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)
+2. Run [readiness assessment tools](readiness-assessment-tool.md).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review prerequisites for guest accounts (this article).
+1. Check [network configuration](network.md).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. [Prepare apps](apps.md).
+1. [Prepare mapped drives](mapped-drives.md).
+1. [Prepare printing resources](printing.md).
+1. Address [device names](address-device-names.md).

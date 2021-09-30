@@ -31,7 +31,7 @@ ms.prod: m365-security
 > [!NOTE]
 >
 > Some of the features described in this article are in Preview, are subject to change, and are not available in all organizations.
-> 
+>
 > If your organization does not have the spoof features as described in this article, see the older spoof management experience at [Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
@@ -62,7 +62,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this article.
 
-- The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, and 500 entries for file hashes.
+- The Tenant Allow/Block List allows a maximum of 500 entries for senders, 500 entries for URLs, 500 entries for file hashes, and 1024 entries for spoofing (spoofed senders).
 
 - The maximum number of characters for each entry is:
   - File hashes = 64
@@ -145,7 +145,7 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
    - **Files**: You can group the results by **Action**.
    - **Spoofing**: You can group the results by **Action** or **Spoof type**.
 
-   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon](../../media/m365-cc-sc-close-icon.png) **Clear search**.
+   Click **Search**, enter all or part of a value, and then press ENTER to find a specific value. When you're finished, click ![Clear search icon.](../../media/m365-cc-sc-close-icon.png) **Clear search**.
 
    Click **Filter** to filter the results. The values that are available in **Filter** flyout that appears depend on the tab you selected:
 
@@ -237,7 +237,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
   For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.
 
-- Subpaths are not implied.
+- Subpaths are not implied for allows.
 
   For example, `contoso.com` does not include `contoso.com/a`.
 

@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -85,9 +85,9 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 Useful icons also quickly call your attention to:
 
-- ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
-- ![red bug](images/tvm_bug_icon.png) associated public exploits
-- ![light bulb](images/tvm_insight_icon.png) recommendation insights
+- ![arrow hitting a target.](images/tvm_alert_icon.png) possible active alerts
+- ![red bug.](images/tvm_bug_icon.png) associated public exploits
+- ![light bulb.](images/tvm_insight_icon.png) recommendation insights
 
 ### Explore security recommendation options
 
@@ -103,8 +103,8 @@ From the flyout, you can choose any of the following options:
 
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
->[!NOTE]
->When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+> [!NOTE]
+> When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 
@@ -132,7 +132,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 ### How to create an exception
 
-Select a security recommendation you would like create an exception for, and then select **Exception options**.  
+Select a security recommendation you would like create an exception for, and then select **Exception options**.
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 

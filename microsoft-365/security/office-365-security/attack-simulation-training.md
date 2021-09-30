@@ -27,7 +27,7 @@ To launch a simulated phishing attack, open the Microsoft 365 Defender portal (<
 
 Under **Simulations**, select **+ Launch a simulation**.
 
-![Launch a simulation button in the Microsoft 365 Defender portal](../../media/attack-sim-preview-launch.png)
+![Launch a simulation button in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-launch.png)
 
 > [!NOTE]
 > At any point during simulation creation, you can save and close to continue configuring the simulation at a later time.
@@ -45,7 +45,7 @@ Select from 4 different techniques, curated from the [MITRE ATT&CK® framework](
 > [!TIP]
 > Clicking on **View details** within the description of each technique will display further information and the simulation steps for the technique.
 >
-> ![Simulation steps for credential harvest within attack simulation training in the Microsoft 365 Defender portal](../../media/attack-sim-preview-sim-steps.png)
+> ![Simulation steps for credential harvest within attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-sim-steps.png)
 
 After you've selected the technique and clicked on **Next**, give your simulation a name and optionally a description.
 
@@ -55,13 +55,14 @@ Next, you'll need to either select a payload from the pre-existing payload catal
 
 Payloads have a number of data points to help you choose:
 
+- **Language** displays the language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate** counts how many people clicked this payload.
 - **Predicted compromise rate** predicts the percentage of people that will get compromised by this payload based on historical data for the payload across Microsoft Defender for Office 365 customers.
 - **Simulations launched** counts the number of times this payload was used in other simulations.
 - **Complexity**, available through **filters**, is calculated based on the number of indicators within the payload that clue targets in on it being an attack. More indicators lead to lower complexity.
 - **Source**, available through **filters**, indicates whether the payload was created on your tenant or is a part of Microsoft's pre-existing payload catalog (global).
 
-![Selected payload within attack simulation training in the Microsoft 365 Defender portal](../../media/attack-sim-preview-select-payload.png)
+![Selected payload within attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-select-payload.png)
 
 Select a payload from the list to see a preview of the payload with additional information about it.
 
@@ -75,9 +76,9 @@ When you choose to **include only specific users and groups** you can either:
 
 - **Add users**, which allows you to leverage search for your tenant, as well as advanced search and filtering capabilities, like targeting users who haven't been targeted by a simulation in the last 3 months.
 
-  ![User filtering in attack simulation training in the Microsoft 365 Defender portal](../../media/attack-sim-preview-user-targeting.png)
+  ![User filtering in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-user-targeting.png)
 
-- **Import from CSV** allows you to import a predefined set of users for this simulation.
+- **Import from CSV** allows you to import a predefined set of users for this simulation. The CSV file should contain one email address per line.
 
 ## Assigning training
 
@@ -90,7 +91,7 @@ Select the **training due date** to make sure employees finish their training in
 > [!NOTE]
 > If you choose to select courses and modules yourself, you'll still be able to see the recommended content as well as all available courses and modules.
 >
-> ![Adding recommended training within attack simulation training in the Microsoft 365 Defender portal](../../media/attack-sim-preview-add-training.png)
+> ![Adding recommended training within attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-add-training.png)
 
 In the next steps you'll need to **Add trainings** if you opted to select it yourself, and customize your training landing page. You'll be able to preview the training landing page, as well as change the header and body of it.
 

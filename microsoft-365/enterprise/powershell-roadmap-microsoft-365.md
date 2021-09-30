@@ -2,8 +2,8 @@
 title: PowerShell roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/19/2019
 audience: ITPro
