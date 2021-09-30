@@ -110,7 +110,7 @@ If your support phone number isn't listed above, use the tabs below to find the 
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 +92 21 111 674 357\
 Select option 3
@@ -171,7 +171,7 @@ International call charges apply
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 0800 81174
 
@@ -235,7 +235,7 @@ Local call charges apply
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 +1 312 843 5147
 
@@ -295,7 +295,7 @@ International call charges apply
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 1 800 751 3455\
 Select option 4\
@@ -513,7 +513,7 @@ Alternative Phone Number: 1 809 200 8794\
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 +965 2243 1071\
 Select option 2\
@@ -800,7 +800,7 @@ International call charges apply
 
 :::row:::
    :::column:::
-**Phone number**
+**Phone number:**
 
 +1 312 843 5147
 
