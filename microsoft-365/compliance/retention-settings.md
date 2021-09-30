@@ -183,6 +183,14 @@ For detailed information about which mailbox items are included and excluded whe
 
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
 
+#### Exceptions for auto-apply policies configured for sensitive information types
+
+When you configure an auto-apply policy that uses sensitive information types and select the **Exchange email** location:
+
+- Microsoft 365 group mailboxes are included.
+
+- All mailboxes are automatically included, even if you configure an adaptive scope to identify specific mailboxes. If you've chosen a static policy scope, you won't be able to specify recipients to include or exclude.
+
 ### Configuration information for SharePoint sites and OneDrive accounts
 
 When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
@@ -223,6 +231,12 @@ To change the default because you want the retention policy to apply to either j
 - `Group:SharePoint` for just SharePoint sites that are connected to the group.
 
 To return to the default value of both the mailbox and SharePoint site for the selected Microsoft 365 groups, specify `Group:Exchange,SharePoint`.
+
+#### Exceptions for auto-apply policies configured for sensitive information types
+
+When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Groups** location:
+
+- Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
 
 ### Configuration information for Skype for Business
 
