@@ -11,7 +11,7 @@ description: "Setting up Scheduler for Microsoft 365."
 ---
 # Setting up Scheduler for Microsoft 365
 
-Tenant admins need to setup a Scheduler assistant mailbox and obtain Scheduler licenses for meeting organizers to enable the Scheduler for Microsoft 365 service. 
+Tenant admins need to set up a Scheduler assistant mailbox and obtain Scheduler licenses for meeting organizers to enable the Scheduler for Microsoft 365 service. 
 
 ## Licensing
 
