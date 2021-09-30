@@ -149,6 +149,9 @@ This capability adds an extra layer of security protection against potential imp
 
 The first contact safety tip also replaces the need to create mail flow rules (also known as transport rules) that add the header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value **Enable** to messages (although this capability is still available).
 
+> [!NOTE]
+> If the message has multiple recipients, whether the tip is shown and to whom is based on a majority model. If the majority of recipients have never or don't often receive messages from the sender, then the affected recipients will receive the **Some people who received this message...** tip. If you're concerned that this behavior exposes the communication habits of one recipient to another, you should not enable the first contact safety tip and continue to use mail flow rules instead.
+
 ## Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365
 
 This section describes the policy settings that are only available in anti-phishing policies in Defender for Office 365.
