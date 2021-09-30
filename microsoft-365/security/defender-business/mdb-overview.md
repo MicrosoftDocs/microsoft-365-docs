@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 09/30/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -31,12 +31,12 @@ The following table summarizes the features and capabilities available in Micros
 
 | Capability | Description |
 |---|---|
-| Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
+| Threat & vulnerability management (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
 | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
-| Threat intelligence capabilities include indicators of compromise and threat analytics.  |
+| Threat intelligence (TI) | TI capabilities include indicators of compromise and threat analytics.  |
 | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Reports](#reporting) <br/>- [Simplified setup experience](#simplified-setup-experience) <br/>- [Role-based access control](#role-based-access-control) |
 | [Cross-platform support](#cross-platform-support) | Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for Business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. See [APIs](#apis). |
