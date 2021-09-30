@@ -9,10 +9,13 @@ audience: Admin
 ms.topic: reference
 ms.date: 09/30/2021
 ms.prod: m365-security
-ms.technology: dforbiz
+ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
+  ms.collection: 
+  - SMB
+  - M365-security-compliance
 ---
 
 # Compare Microsoft Defender for Business to Microsoft 365 Business Premium

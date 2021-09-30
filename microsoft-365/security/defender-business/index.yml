@@ -8,7 +8,9 @@ metadata:
   ms.prod: 365-security
   ms.technology: mdb
   ms.topic: landing-page
-  ms.collection: SMB
+  ms.collection: 
+  - SMB
+  - M365-security-compliance
   author: denisebmsft
   ms.author: deniseb
   ms.date: 09/13/2021

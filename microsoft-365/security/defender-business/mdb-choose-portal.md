@@ -13,6 +13,9 @@ ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
+ms.collection: 
+- SMB
+- M365-security-compliance
 ---
 
 # Choose where to manage your policies and settings
