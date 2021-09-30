@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
 ---
 
@@ -48,9 +48,10 @@ Based on the version of Configuration Manager you're running, the following clie
   - Windows Server 2016
   - Windows Server 2016, version 1803 or later
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
+> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022, see, [Onboard Windows servers](configure-server-endpoints.md).
 
 ### Onboard devices using System Center Configuration Manager
 
