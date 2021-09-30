@@ -16,6 +16,8 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -43,18 +45,20 @@ If you're a user, you don't have the permissions to set your password to never e
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 
-1. In the admin center, go to the **Settings** \> **Org Settings**.
-
-2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
- If you aren't a global admin, you won't see the Security and privacy option.
+1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a>.
+ 
+    If you aren't a global admin, you won't see the Security and privacy option.
   
-3. Select **Password expiration policy**.
+1. Select **Password expiration policy**.
   
-4. If you don't want users to have to change passwords, uncheck the box next to **Set user passwords to expire after a number of days**.
+1. If you don't want users to have to change passwords, uncheck the box next to **Set user passwords to expire after a number of days**.
   
-5. Type how often passwords should expire. Choose a number of days from 14 to 730.
+1. Type how often passwords should expire. Choose a number of days from 14 to 730.
   
 6. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
+
+> [!NOTE]
+> Password expiration notifications are no longer supported in the Office 365 portal or any Office apps except Outlook when using Basic Authentication. Outlook with Modern Authentication does not support Password Expiry Notifications.
   
 ## Important things you need to know about the password expiration feature
   
@@ -80,9 +84,10 @@ You can set more password policies and restrictions in Azure active directory. C
 
 The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required; the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
 
-To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## Related content
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+
 [Reset passwords](../add-users/reset-passwords.md) (article)

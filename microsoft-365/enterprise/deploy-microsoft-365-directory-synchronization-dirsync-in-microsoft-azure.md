@@ -1,7 +1,7 @@
 ---
 title: "Deploy Microsoft 365 Directory Synchronization in Microsoft Azure"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/05/2018
 audience: ITPro
@@ -41,7 +41,7 @@ This solution requires connectivity between your on-premises network and your Az
 
 The following diagram shows Azure AD Connect running on a virtual machine in Azure (the directory sync server) that synchronizes an on-premises AD DS forest to a Microsoft 365 subscription.
   
-![Azure AD Connect tool on a virtual machine in Azure synchronizing on-premises accounts to the Azure AD tenant of a Microsoft 365 subscription with traffic flow](../media/CP-DirSyncOverview.png)
+![Azure AD Connect tool on a virtual machine in Azure synchronizing on-premises accounts to the Azure AD tenant of a Microsoft 365 subscription with traffic flow.](../media/CP-DirSyncOverview.png)
   
 In the diagram, there are two networks connected by a site-to-site VPN or ExpressRoute connection. There is an on-premises network where AD DS domain controllers are located, and there is an Azure virtual network with a directory sync server, which is a virtual machine running [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). There are two main traffic flows originating from the directory sync server:
   
@@ -123,7 +123,7 @@ To create and configure the Azure virtual network, complete [Phase 1: Prepare yo
   
 This is your resulting configuration.
   
-![Phase 1 of the directory sync server for Microsoft 365 hosted in Azure](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Phase 1 of the directory sync server for Microsoft 365 hosted in Azure.](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 This figure shows an on-premises network connected to an Azure virtual network through a site-to-site VPN or ExpressRoute connection.
   
@@ -145,7 +145,7 @@ For Azure AD Connect to gain access to Internet resources, you must configure th
   
 This is your resulting configuration.
   
-![Phase 2 of the directory sync server for Microsoft 365 hosted in Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Phase 2 of the directory sync server for Microsoft 365 hosted in Azure.](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 This figure shows the directory sync server virtual machine in the cross-premises Azure virtual network.
   
@@ -162,7 +162,7 @@ Complete the following procedure:
   
 This is your resulting configuration.
   
-![Phase 3 of the directory sync server for Microsoft 365 hosted in Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Phase 3 of the directory sync server for Microsoft 365 hosted in Azure.](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 This figure shows the directory sync server with Azure AD Connect in the cross-premises Azure virtual network.
   
@@ -172,8 +172,7 @@ Azure AD Connect adds accounts to your Microsoft 365 subscription from the on-pr
   
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin**.
     
-2. In the left navigation, click **Users > Active users**.
-    
+2. In the left navigation, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 3. In the list of user accounts, select the check box next to the user you want to activate.
     
 4. On the page for the user, click **Edit** for **Product licenses**.

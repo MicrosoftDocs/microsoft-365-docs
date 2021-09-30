@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -53,33 +54,35 @@ When you change your domain's email to come to Microsoft 365, by updating your d
   
 ## Change your email address to use your custom domain using the Microsoft 365 admin center
 
-You must have a global admin account to perform these steps. 
+You must be a global admin to perform these steps.
 
 ::: moniker range="o365-worldwide"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
-   
+
 ::: moniker range="o365-germany"
-    
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>. 
-    
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>. 
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank"> https://portal.partner.microsoftonline.cn</a>.
 
-::: moniker-end 
+::: moniker-end
 
-2. Go to the **Setup** > **Domains** page. 
+2. Go to the **Setup** > **Domains** page.
 
 3. On the **Domains** page, select **Add domain**.
-    
-4. Follow the steps to confirm that you own your domain and to change your email address.
-    
-You'll be guided to get everything set up correctly with your domain in Microsoft 365.
+
+4. Follow the steps to confirm that you own your domain. You'll be guided to get everything set up correctly with your domain in Microsoft 365.
+
+5. Go to **Users** > **Active users**.
+
+6. Select a user to edit their username and change it to the domain you just added.
 
 > [!NOTE]
 > If you are not using an Exchange license, you cannot use the domain to send or receive emails from the Microsoft 365 tenant.

@@ -21,9 +21,7 @@ description: "Learn how to configure SharePoint as a learning content source for
 # Configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)
 
 > [!NOTE]
-> This feature is not yet available in product preview. 
-
-
+> This feature is not yet available in product preview.
 
 <!---
 
@@ -49,11 +47,11 @@ Content deletion from your organization’s repository is not currently supporte
 
 To remove unintentionally surfaced content, follow these steps:
 
-1.	To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
-	 
+1. To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
+
      ![Document library page in SharePoint showing Show actions option with Manage access highligted.](../media/learning/learning-sharepoint-permissions2.png)
 
-2.	Delete the original document within the document library.
+2. Delete the original document within the document library.
 
 For more information, see [Sharing and permissions in the SharePoint modern experience](/sharepoint/modern-experience-sharing-permissions). 
 
@@ -67,17 +65,17 @@ You must be a Microsoft 365 global administrator, SharePoint administrator, or k
 
 To configure SharePoint as a learning content sources in for Viva Learning (Preview), follow these steps:
 
-1.	In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
+1. In the left navigation of the Microsoft 365 admin center, go to **Settings** > **Org settings**.
  
-2.	On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
+2. On the **Org settings** page, on the **Services** tab, select **Viva Learning (Preview)**.
 
      ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/learning-sharepoint-configure1.png)
 
-3.	On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
+3. On the **Viva Learning (Preview)** panel, under SharePoint, provides the site URL to the SharePoint site where you want Viva Learning (Preview) to create a centralized repository.
 
      ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/learning-sharepoint-configure2.png)
 
-4.	A SharePoint list is created automatically within the provided SharePoint site.
+4. A SharePoint list is created automatically within the provided SharePoint site.
 
      ![Newly created SharePoint list within the SharePoint site.](../media/learning/learning-sharepoint-configure3.png)
 
@@ -110,7 +108,7 @@ To improve overall discovery and search relevance of the content, we recommend a
 
 To add a **Description** column to the document library page, follow these steps:
 
-1.	On the **Documents** page, select **Add column**.
+1. On the **Documents** page, select **Add column**.
 
 2. Select the **Show actions** option, and then select **Single line of text**.
 
@@ -131,11 +129,11 @@ Knowledge admins can access their organization’s Learning App Content Reposito
 1. In Viva Learning (Preview), select **More options** (**...**), and then select **Settings**.
 
      ![SharePoint library page showing the More options and Settings option.](../media/learning/learning-sharepoint-library-1.png)
-	 
+  
 2. Under **Settings**, select **Permissions**.
 
      ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
 3. Select **Check access** to connect to your organization’s centralized library.
-	 
+
 --->

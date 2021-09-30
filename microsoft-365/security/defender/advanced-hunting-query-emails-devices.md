@@ -230,7 +230,7 @@ EmailAttachmentInfo
 | join (
 //Check devices for any activity involving the attachments
 DeviceFileEvents
-| project FileName, SHA256
+| project FileName, SHA256, DeviceName, DeviceId
 ) on SHA256
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```

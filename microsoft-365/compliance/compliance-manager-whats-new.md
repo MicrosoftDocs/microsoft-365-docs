@@ -20,6 +20,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## July 2021
+
+We added the capability to create assessments for products other than Microsoft 365, based on new universal versions of our templates. To learn more, start with [Working with assessment templates](compliance-manager-templates.md).
+
 ## May 2021
 
 ### New assessment templates

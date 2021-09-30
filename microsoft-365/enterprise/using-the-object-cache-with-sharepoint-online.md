@@ -31,7 +31,7 @@ There is significant negative impact of relying on the object cache in SharePoin
 
 When SharePoint Server 2013 is hosted on-premises, the customer has private front-end web servers that host the object cache. This means the cache is dedicated to one customer and is only limited by how much memory is available and allocated to the object cache. Because only one customer is served in the on-premises scenario the front-end web servers typically have users making requests to the same sites over and over. This means that the cache gets full quickly and remains full of the list query results and SharePoint objects that your users are requesting on a regular basis.
   
-![Shows traffic and load to on-premises front-end web servers](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
+![Shows traffic and load to on-premises front-end web servers.](../media/a0d38b36-4909-4abb-8d4e-4930814bb3de.png)
   
 As a result, the second time a user visits a page, the page load time improves. After a minimum of four loads of the same page, the page is cached on all of the front-end web servers.
   
@@ -39,7 +39,7 @@ In contrast, in SharePoint Online there are many more servers but also many more
   
 In the following figure, each dot represents a page that a user is requesting and where it cached. Different colors represent different customers making shared use of the SaaS infrastructure.
   
-![Shows the results of object caching in SharePoint Online](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
+![Shows the results of object caching in SharePoint Online.](../media/25d04011-ef83-4cb7-9e04-a6ed490f63c3.png)
   
 As you can see from the diagram, the chances of any given user hitting a server with the cached version of their page are slim. Also, due to the large throughput and fact that the servers are shared between many sites, the cache doesn't last long since there is only so much space for caching available.
   

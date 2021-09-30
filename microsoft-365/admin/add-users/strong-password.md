@@ -41,7 +41,7 @@ You must also connect to Microsoft 365 with PowerShell.
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn of strong password requirements for specific users with this command:
+3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
     Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
@@ -54,6 +54,6 @@ You must also connect to Microsoft 365 with PowerShell.
 
 [How to connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-[More information on PowerShell MsolUser commands](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
+[More information on PowerShell MsolUser commands](/powershell/azure/active-directory/install-adv2)
 
 [More information on password policy](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)

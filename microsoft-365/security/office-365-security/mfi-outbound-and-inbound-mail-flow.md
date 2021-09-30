@@ -2,8 +2,8 @@
 title: Outbound and inbound mail flow insight in the Mail flow dashboard
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro
@@ -29,7 +29,7 @@ The **Outbound and inbound mail flow** insight in the [Mail flow dashboard](mail
 
 The widget displays the TLS encryption that's used for the connection when messages are delivered to and from your organization. The connections that are established with other email services are encrypted by TLS when TLS is offered by both sides. The widget offers a snapshot of the last week of mail flow.
 
-![Outbound and inbound mail flow widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+![Outbound and inbound mail flow widget in the Mail flow dashboard in the Security & Compliance Center.](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
 The information in the widget is related to connectors and TLS message protection in Microsoft 365. For more information, see these topics:
 
@@ -41,7 +41,7 @@ The information in the widget is related to connectors and TLS message protectio
 
 When you click **View Details** on the widget, the **Message protected in transit (by TLS)** flyout shows you the TLS protection for messages entering and leaving your organization.
 
-![Messages protected in transit (by TLS) flyout that appears after you click View details on the Outbound and inbound email widget](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
+![Messages protected in transit (by TLS) flyout that appears after you click View details on the Outbound and inbound email widget.](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
 Currently, TLS 1.2 is the most secure version of TLS that's offered by Microsoft 365. Often, you'll need to know the TLS encryption that's being used for compliance audits. You probably don't have a direct relationship with most of the source and destination email servers (you don't own them, and neither does Microsoft), so you don't have many options to improve the TLS encryption that's used by those servers.
 

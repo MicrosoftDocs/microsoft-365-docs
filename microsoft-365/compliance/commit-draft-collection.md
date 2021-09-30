@@ -26,7 +26,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
 1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, and then select the **Collections** tab to display a list of the collections in the case.
 
-   ![List of collections in a case](../media/CommitDraftCollections1.png)
+   ![List of collections in a case.](../media/CommitDraftCollections1.png)
 
    > [!TIP]
    > A value of `Estimated` in the **Status** column identifies the draft collections that can be added to a review set. A status of `Committed` indicates that a collection has already been added to a review set.
@@ -41,7 +41,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
    1. Select **Collect items and add to review set**.
 
-   2. Decide whether to add the collection to a new review set (which is created after you submit the collection) or to an existing review set. Complete this section based on your decision.
+   2. Decide whether to add the collection to a new review set (which is created after you submit the collection) or add it to an existing review set. Complete this section based on your decision.
 
    3. Configure the additional collection settings:
 
@@ -49,7 +49,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
        - **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means that the target file of a modern attachment or linked file is added to the review set.
 
-       - **SharePoint versions**: Select this option to enable the collection of all version of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
+       - **SharePoint versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
    4. Configure the settings to define the scale of the collection to add to the review set:
 
@@ -68,6 +68,8 @@ When you're satisfied with the items you've collected in a draft collection and 
 ## What happens after you commit a draft collection
 
 When you commit a draft collection to a review set, the following things happen:
+
+- If you created a new review set to commit the collection to, the review set is created and displayed on the **Review sets** tab in the case. The status of the new review set is **Ready**. This status value means the review set has been created; it doesn't mean that the collection has been added to the review set. The status of adding items in the collection to the review set is displayed on the **Collections** tab.
 
 - The collection search query is run again. This means the actual search results copied to the review set may be different than the estimated results that were returned when the collection search was last run.
 

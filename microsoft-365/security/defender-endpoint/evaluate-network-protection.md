@@ -14,6 +14,7 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Evaluate network protection
@@ -46,24 +47,31 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 1. Open Internet Explorer, Google Chrome, or any other browser of your choice.
 
-1. Go to [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
+2. Go to [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
 The network connection will be allowed and a test message will be displayed.
 
-![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
+
+> [!NOTE]
+> Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
 
 ## Review network protection events in Windows Event Viewer
 
 To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
 
 | Event ID | Provide/Source | Description |
-|-|-|-|
-|5007 | Windows Defender (Operational) | Event when settings are changed |
-|1125 | Windows Defender (Operational) | Event when a network connection is audited |
-|1126 | Windows Defender (Operational) | Event when a network connection is blocked |
+|---|---|---|
+| 5007 | Windows Defender (Operational) | Event when settings are changed |
+| 1125 | Windows Defender (Operational) | Event when a network connection is audited |
+| 1126 | Windows Defender (Operational) | Event when a network connection is blocked |
 
 ## See also
 
-* [Network protection](network-protection.md)
-* [Enable network protection](enable-network-protection.md)
-* [Troubleshoot network protection](troubleshoot-np.md)
+- [Network protection](network-protection.md)
+
+- [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
+
+- [Enable network protection](enable-network-protection.md)
+
+- [Troubleshoot network protection](troubleshoot-np.md)

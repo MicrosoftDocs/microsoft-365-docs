@@ -17,7 +17,9 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Learn about the new Office 365 Message Encryption capabilities that enable protected email communication with people inside and outside your organization.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Set up new Message Encryption capabilities
@@ -67,21 +69,21 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
-     ```
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **Example**:
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Microsoft 365 tenant.
+   - For sender and recipient, use the email address of any user in your Microsoft 365 tenant.
 
      Your results should be similar to:
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
@@ -118,7 +120,7 @@ For steps on creating mail flow rules for OME, see [Define mail flow rules to en
 
 To update existing rules to use the new OME capabilities:
 
-1. In the Microsoft 365 admin center, go to **Admin centers > Exchange**.
+1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Admin centers > Exchange**.
 2. In the Exchange admin center, go to **Mail flow > Rules**.
 3. For each rule, in **Do the following**:
     - Select **Modify the message security**.

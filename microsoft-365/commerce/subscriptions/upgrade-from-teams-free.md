@@ -62,7 +62,7 @@ Use the underlying work or school account that you recovered and your new admin 
 
 Now that you have a new Microsoft 365 for business subscription, you can assign licenses to the existing users in your Microsoft Teams Free organization.
 
-1. In the admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
+1. In the admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 2. Select the users to whom you want to assign Microsoft 365 for business licenses, then select **Manage product licenses**.
 3. In the **Manage product licenses** pane, select **Replace existing license assignments**.
 4. In the **Replace existing products** pane, find the Microsoft 365 for business product that you bought, and switch the toggle to **On**.

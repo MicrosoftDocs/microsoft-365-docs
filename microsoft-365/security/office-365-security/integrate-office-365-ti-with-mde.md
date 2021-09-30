@@ -43,7 +43,7 @@ In this example, you can see that the recipients of the detected email message h
 
 - Your organization must have Microsoft Defender for Office 365 (or Office 365 E5) and Microsoft Defender for Endpoint.
 
-- You must be a global administrator or have a security administrator role (such as Security Administrator) assigned in Microsoft 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+- You must have either the global administrator or security administrator role assigned in Microsoft 365. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
 - You must have access to [Explorer (or real-time detections)](threat-explorer.md).
 
@@ -51,23 +51,25 @@ In this example, you can see that the recipients of the detected email message h
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
-1. As a global administrator or a security administrator, open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and go to **Email & collaboration** \> **Explorer**. To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. On the **Explorer** page, in the upper right corner of the screen, click **MDE Settings**.
+2. Go to **Email & collaboration** \> **Explorer**. 
 
-3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on](../../media/scc-toggle-on.png)) and then click ![Close icon](../../media/m365-cc-sc-close-icon.png) **Close**.
+3. On the **Explorer** page, in the upper right corner of the screen, select **MDE Settings**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection":::
+3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on.](../../media/scc-toggle-on.png)) and then select **Close**.
 
-4. Back in the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection.":::
+
+4. In the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
 
 5. On the **Endpoints** page that opens, choose **Advanced features**.
 
-6. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on](../../media/scc-toggle-on.png)).
+6. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on.](../../media/scc-toggle-on.png)).
 
-   When you're finished, click **Save preferences**.
+   When you're finished, select **Save preferences**.
 
-## Related articles
+## See also
 
 [Threat investigation and response capabilities in Office 365](office-365-ti.md)
 

@@ -34,6 +34,8 @@
          href: office-365-air.md
        - name: How automated investigation and response works
          href: automated-investigation-response-office.md
+       - name: Email analysis in investigations
+         href: email-analysis-investigations.md
        - name: Remediation actions
          href: air-remediation-actions.md
        - name: Anti-malware protection
@@ -56,8 +58,6 @@
          href: office-365-ti.md
        - name: Office 365 Security Incident Response
          href: office365-security-incident-response-overview.md
-       - name: Mail flow insights in the Security & Compliance Center
-         href: mail-flow-insights-v2.md
        - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
    - name: Deploy
@@ -134,7 +134,7 @@
        href: tenant-wide-setup-for-increased-security.md
      - name: Preset security policies
        href: preset-security-policies.md
-     - name: Configuration analyzer for preset security policies
+     - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
      - name: Attack Simulator in Defender for Office 365
        href: attack-simulator.md
@@ -156,14 +156,18 @@
        href: air-custom-reporting.md
      - name: Advanced Spam Filter (ASF) settings
        href: advanced-spam-filtering-asf-options.md
-     - name: Manage the Tenant Allow/Block List
-       href: tenant-allow-block-list.md
-     - name: Message trace in the Security & Compliance Center
+     - name: Tenant Allow/Block List
+       items:
+       - name: Manage the Tenant Allow/Block List
+         href: tenant-allow-block-list.md
+       - name: Add blocks in the Tenant Allow/Block List
+         href: manage-tenant-blocks.md
+       - name: Add allows in the Tenant Allow/Block List
+         href: manage-tenant-allows.md
+       - name: Modify and remove entries in the Tenant Allow/Block List
+         href: modify-remove-entries-tenant-allow-block.md
+     - name: Message trace
        href: message-trace-scc.md
-     - name: Report messages and files to Microsoft
-       href: report-junk-email-messages-to-microsoft.md
-     - name: Enable the Report Message and the Report Phishing add-ins
-       href: enable-the-report-message-add-in.md
      - name: Use mail flow rules to block messages with executable attachments
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
      - name: Use mail flow rules to filter bulk mail
@@ -172,6 +176,8 @@
        href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
      - name: Zero-hour auto purge - protection against spam and malware
        href: zero-hour-auto-purge.md
+     - name: Control automatic external email forwarding
+       href: external-email-forwarding.md
    - name: Detect
      items: 
      - name: Threat Explorer for Defender for Office 365
@@ -184,12 +190,10 @@
          href: real-time-detections.md
      - name: Use Threat Trackers
        href: threat-trackers.md
-     - name: View alerts
+     - name: Alert policies
        href: ../../compliance/alert-policies.md
      - name: Smart reports and insights in the Security & Compliance Center
        href: reports-and-insights-in-security-and-compliance.md
-     - name: Report false positives and false negatives in Outlook
-       href: report-false-positives-and-false-negatives.md
      - name: Mail flow rules (transport rules)
        href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
      - name: Run an administrator role group report
@@ -204,48 +208,66 @@
        href: investigate-malicious-email-that-was-delivered.md
      - name: View details and results of an automated investigation
        href: air-view-investigation-results.md
-     - name: View Defender for Office 365 reports
-       href: view-reports-for-mdo.md 
-     - name: View email security reports
-       href: view-email-security-reports.md
-     - name: View mail flow reports
-       href: view-mail-flow-reports.md
      - name: View the admin audit log
        href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
-     - name: Reporting and message trace in standalone EOP
-       href: reporting-and-message-trace-in-exchange-online-protection.md
-     - name: Auto-forwarded messages insight
-       href: mfi-auto-forwarded-messages-report.md
      - name: Impersonation insight
        href: impersonation-insight.md
-     - name: Mail flow map
-       href: mfi-mail-flow-map-report.md
-     - name: Manually submit messages to Microsoft
-       href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-     - name: New domains being forwarded email insight
-       href: mfi-new-domains-being-forwarded-email.md
-     - name: New users forwarding email insight
-       href: mfi-new-users-forwarding-email.md
-     - name: Non-accepted domain report
-       href: mfi-non-accepted-domain-report.md
-     - name: Non-delivery report
-       href: mfi-non-delivery-report.md
-     - name: Outbound and inbound mail flow insight
-       href: mfi-outbound-and-inbound-mail-flow.md
-     - name: SMTP Auth clients insight and report
-       href: mfi-smtp-auth-clients-report.md
      - name: Spoof intelligence insight
        href: learn-about-spoof-intelligence.md
-     - name: Submit malware and non-malware to Microsoft
-       href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-     - name: Top domain mail flow status insight
-       href: mfi-domain-mail-flow-status-insight.md
-     - name: Use Admin Submission
-       href: admin-submission.md
-     - name: Use mail flow rules to see what users are reporting to Microsoft
-       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-     - name: Queues insight
-       href: mfi-queue-alerts-and-queues.md
+     - name: Reports in EOP and Defender for Office 365
+       items:
+         - name: Reports in EOP and Defender for Office 365
+           href: reporting-and-message-trace-in-exchange-online-protection.md
+         - name: View email security reports
+           href: view-email-security-reports.md
+         - name: View Defender for Office 365 reports
+           href: view-reports-for-mdo.md 
+         - name: View mail flow reports in the Security & Compliance Center
+           href: view-mail-flow-reports.md
+     - name: Mail flow insights in the Security & Compliance Center
+       items:
+         - name: Mail flow insights in the Security & Compliance Center
+           href: mail-flow-insights-v2.md
+         - name: Auto-forwarded messages insight
+           href: mfi-auto-forwarded-messages-report.md
+         - name: Fix possible mail loop insight
+           href: mfi-mail-loop-insight.md
+         - name: Fix slow mail flow rules insight
+           href: mfi-slow-mail-flow-rules-insight.md
+         - name: Mail flow map
+           href: mfi-mail-flow-map-report.md
+         - name: New domains being forwarded email insight
+           href: mfi-new-domains-being-forwarded-email.md
+         - name: New users forwarding email insight
+           href: mfi-new-users-forwarding-email.md
+         - name: Non-accepted domain report
+           href: mfi-non-accepted-domain-report.md
+         - name: Non-delivery report
+           href: mfi-non-delivery-report.md
+         - name: Outbound and inbound mail flow insight
+           href: mfi-outbound-and-inbound-mail-flow.md
+         - name: Queues insight
+           href: mfi-queue-alerts-and-queues.md
+         - name: SMTP Auth clients insight and report
+           href: mfi-smtp-auth-clients-report.md
+         - name: Top domain mail flow status insight
+           href: mfi-domain-mail-flow-status-insight.md
+     - name: Report messages and files to Microsoft
+       items:
+         - name: Report messages and files to Microsoft
+           href: report-junk-email-messages-to-microsoft.md
+         - name: Admin submissions
+           href: admin-submission.md
+         - name: Enable the Report Message and the Report Phishing add-ins
+           href: enable-the-report-message-add-in.md
+         - name: Report false positives and false negatives in Outlook
+           href: report-false-positives-and-false-negatives.md
+         - name: Manually submit messages to Microsoft
+           href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+         - name: Use mail flow rules to see what users are reporting to Microsoft
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
+         - name: Submit malware and non-malware to Microsoft
+           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
    - name: Respond
      items: 
      - name: Detect and address compromised user accounts quickly
@@ -270,12 +292,10 @@
        href: tuning-anti-phishing.md
      - name: Find and release quarantined messages as a user
        href: find-and-release-quarantined-messages-as-a-user.md
-     - name: Fix possible mail loop insight
-       href: mfi-mail-loop-insight.md
-     - name: Fix slow mail flow rules insight
-       href: mfi-slow-mail-flow-rules-insight.md
      - name: Manage quarantined messages and files as an admin
        href: manage-quarantined-messages-and-files.md
+     - name: Quarantine policies
+       href: quarantine-policies.md  
      - name: Remove blocked users from the Restricted Users portal
        href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list
@@ -318,7 +338,7 @@
        href: backscatter-messages-and-eop.md
      - name: Bulk complaint level (BCL)
        href: bulk-complaint-level-values.md
-     - name: End-user spam notifications
+     - name: Quarantine notifications
        href: use-spam-notifications-to-release-and-report-quarantined-messages.md
      - name: Outbound delivery pools
        href: high-risk-delivery-pool-for-outbound-messages.md

@@ -24,7 +24,7 @@ After FX Connect data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive the FX Connect information in Microsoft 365.
 
-![Archiving workflow for FX Connect data](../media/FXConnectConnectorWorkflow.png)
+![Archiving workflow for FX Connect data.](../media/FXConnectConnectorWorkflow.png)
 
 1. Your organization works with FX Connect to set up and configure an FX Connect site.
 

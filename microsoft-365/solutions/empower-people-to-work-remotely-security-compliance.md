@@ -36,19 +36,19 @@ Remote work needs these elements of security and compliance:
 
 Here are the features of Microsoft 365 that provide security and compliance services for hybrid workers.
 
-![Use these Microsoft 365 services to stay secure and compliant](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+![Use these Microsoft 365 services to stay secure and compliant.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## Security
 
 Protect your applications and data with these security features of Microsoft 365.
 
-| Capability or feature | Why I need it | Licensing |
-|:-------|:-----|:-------|
-| Microsoft Defender for Office 365 | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures. | Microsoft 365 E3 or E5 |
-| Malware protection | ‎Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <br><br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 or E5 |
-| Microsoft Defender for Endpoint | Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
-| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack. | Microsoft 365 E5 or individual Cloud App Security licenses |
-| Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
+|Capability or feature|Why I need it|Licensing|
+|---|---|---|
+|Microsoft Defender for Office 365|Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <p> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures.|Microsoft 365 E3 or E5|
+|Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> Exchange Online Protection (EOP) secures cloud mailboxes.|Microsoft 365 E3 or E5|
+|Microsoft Defender for Endpoint|Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats.|Microsoft 365 E5|
+|Cloud App Security|Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack.|Microsoft 365 E5 or individual Cloud App Security licenses|
+|Azure AD Identity Protection|Automate detection and remediation of identity-based risks. <p>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
 ||||
 
 You first step should be to learn about and use [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score).
@@ -61,17 +61,17 @@ For information about security across Microsoft 365, see [Microsoft 365 security
 
 Comply with internal policies or regulatory requirements with these compliance features of Microsoft 365.
 
-| Capability or feature | Why I need it | Licensing |
-|:-------|:-----|:-------|
-| Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 or E5 |
-| Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 or E5 |
-| Conditional Access App Control | Prevent sensitive data from being downloaded to users' personal devices. | Microsoft 365 E3 or E5 |
-| Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 or E5 |
-| Office message encryption (OME) | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 or E5 |
-| Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 or E5 |
-| Compliance Manager | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 compliance center. | Microsoft 365 E3 or E5 |
-| Communication Compliance  | Detect, capture, and take remediation actions for inappropriate messages in your organization. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
-| Insider Risk Management |  Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device. | Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons |
+|Capability or feature|Why I need it|Licensing|
+|---|---|---|
+|Sensitivity labels|Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites.|Microsoft 365 E3 or E5|
+|Data Loss Protection (DLP)|Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally.|Microsoft 365 E3 or E5|
+|Conditional Access App Control|Prevent sensitive data from being downloaded to users' personal devices.|Microsoft 365 E3 or E5|
+|Data retention labels and policies|Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations.|Microsoft 365 E3 or E5|
+|Office message encryption (OME)|Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers.|Microsoft 365 E3 or E5|
+|Compliance Manager|Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal.|Microsoft 365 E3 or E5|
+|Compliance Manager|See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 compliance center.|Microsoft 365 E3 or E5|
+|Communication Compliance|Detect, capture, and take remediation actions for inappropriate messages in your organization.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
+|Insider Risk Management|Detect, investigate, and act on malicious and inadvertent risks in your organization. Microsoft 365 can detect these kinds of risks even when a worker is using an unmanaged device.|Microsoft 365 E5 or Microsoft 365 E3 with the Compliance or Insider Risk Management add-ons|
 ||||
 
 See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
@@ -90,6 +90,6 @@ For your hybrid workers, you have implemented:
 
 ## Next step
 
-[![Step 4: Manage your devices, PCs, and other endpoints](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
+[![Step 4: Manage your devices, PCs, and other endpoints.](../media/empower-people-to-work-remotely/remote-workers-step-grid-4.png)](empower-people-to-work-remotely-manage-endpoints.md)
 
 Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.

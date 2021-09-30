@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 search.appverid:
 - BCS160
 - MET150
@@ -22,6 +22,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: "Create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without typing each recipient's name."
 ---
 
