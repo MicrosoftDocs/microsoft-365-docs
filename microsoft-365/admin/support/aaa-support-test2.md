@@ -745,7 +745,7 @@ International call charges apply
 [South Sudan](#south-sudan)\
 [Spain](#spain)\
 [Sri Lanka](#sri-lanka)\
-[St Helena](#st-Helena)\
+[St Helena](#st-helena)\
 [St Kitts Nevis](#st-kitts-nevis)\
 [Suriname](#suriname)\
 [Svalbard](#svalbard)\
