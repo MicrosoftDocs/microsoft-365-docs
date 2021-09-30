@@ -46,7 +46,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Example of an Audit log entry for a policy with custom keyword match (custom sensitive information type):**
+**Example of a Microsoft 365 Audit log entry for a policy with custom keyword match (custom sensitive information type):**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
