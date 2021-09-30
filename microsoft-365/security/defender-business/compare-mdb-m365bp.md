@@ -43,12 +43,11 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 
-
 ## Next steps
 
 - [Get a more detailed overview of Microsoft Defender for Business](mdb-overview.md)
 
-- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
+- [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
  
