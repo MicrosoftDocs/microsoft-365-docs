@@ -39,17 +39,17 @@ If your support phone number isn't listed above, use the list on the right to fi
    :::column:::
 **Phone number**
 
-+92 21 111 674 357  
++92 21 111 674 357\
 Select option 3
 
-**Billing Support hours:**
+**Billing support hours:**
 
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Technical support hours:**
 
-English: 24 hours a day, 7 days a week  
+English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::
@@ -102,18 +102,18 @@ International call charges apply
 
 0800 81174
 
-**Billing Support hours:**
+**Billing support hours:**
 
-Dutch: Mon-Fri 9 AM-5 PM  
-French: Mon-Fri 9 AM-5 PM  
+Dutch: Mon-Fri 9 AM-5 PM\
+French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Technical support hours:**
 
-French: Mon-Fri 8 AM-9 PM  
-English: 24 hours a day, 7 days a week  
-Alternative Phone Number: 02 200 88 84  
+French: Mon-Fri 8 AM-9 PM\
+English: 24 hours a day, 7 days a week\
+Alternative Phone Number: 02 200 88 84\
 Local call charges apply
    :::column-end:::
 :::row-end:::
@@ -166,16 +166,16 @@ Local call charges apply
 
 +1 312 843 5147
 
-**Billing Support hours:**
+**Billing support hours:**
 
-French: Mon-Fri 9 AM-5 PM  
+French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Technical support hours:**
 
-French: Mon-Fri 8 AM-9 PM  
-English: 24 hours a day, 7 days a week  
+French: Mon-Fri 8 AM-9 PM\
+English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::
@@ -224,19 +224,16 @@ International call charges apply
    :::column:::
 **Phone number**
 
-1 800 751 3455  
-Select option 4  
+1 800 751 3455\
+Select option 4\
 Enter code 7007
-
-**Billing Support hours:**
-
-Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Billing support hours:**
 
-Spanish: 24 hours a day, 7 days a week  
-Alternative Phone Number: 1 809 200 8794  
+Spanish: Mon-Fri 9 AM-5 PM\
+Spanish: 24 hours a day, 7 days a week\
+Alternative Phone Number: 1 809 200 8794\
 (Cellular toll-free)
    :::column-end:::
 :::row-end:::
@@ -369,22 +366,21 @@ Alternative Phone Number: 1 809 200 8794
    :::column:::
 **Phone number**
 
-+965 2243 1071  
-Select option 2  
-Select option 9  
++965 2243 1071\
+Select option 2\
+Select option 9\
 Enter code 7701
 
-**Billing Support hours:**
+**Billing support hours:**
 
-Arabic: Sun-Thu 9 AM-5 PM  
+Arabic: Sun-Thu 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
-
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Technical support hours:**
 
-Arabic: Sun-Thu 9 AM-5 PM  
-English: 24 hours a day, 7 days a week  
+Arabic: Sun-Thu 9 AM-5 PM\
+English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::
@@ -519,16 +515,16 @@ International call charges apply
 
 +1 312 843 5147
 
-**Billing Support hours:**
+**Billing support hours:**
 
-French: Mon-Fri 6 AM-2 PM  
+French: Mon-Fri 6 AM-2 PM\
 English: Mon-Fri 6 AM-2 PM
    :::column-end:::
    :::column:::
-**Technical Support hours:**
+**Technical support hours:**
 
-French: Mon-Fri 5 AM-6 PM  
-English: 24 hours a day, 7 days a week  
+French: Mon-Fri 5 AM-6 PM\
+English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::

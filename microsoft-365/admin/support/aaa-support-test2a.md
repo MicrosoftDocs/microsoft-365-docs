@@ -516,9 +516,9 @@ Alternative Phone Number: 1 809 200 8794\
    :::column:::
 **Phone number**
 
-+965 2243 1071  
-Select option 2  
-Select option 9  
++965 2243 1071\
+Select option 2\
+Select option 9\
 Enter code 7701
 
 **Billing support hours:**
