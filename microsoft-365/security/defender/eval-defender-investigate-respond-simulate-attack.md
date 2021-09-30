@@ -89,13 +89,13 @@ For each simulation or tutorial:
 
 ## Simulate an attack with an isolated domain controller and client device (optional)
 
-In this optional incident response exercise, you'll simulate an attack on an isolated Active Directory Domain Services (AD DS) domain controller and Windows 10 device using a PowerShell script and then investigate, remediate, and resolve the incident.
+In this optional incident response exercise, you'll simulate an attack on an isolated Active Directory Domain Services (AD DS) domain controller and Windows device using a PowerShell script and then investigate, remediate, and resolve the incident.
 
 First, you need to add endpoints to your pilot environment.
 
 ### Add pilot environment endpoints
 
-First, you need to add an isolated AD DS domain controller and a Windows 10 device to your pilot environment.
+First, you need to add an isolated AD DS domain controller and a Windows device to your pilot environment.
 
 1. Verify your pilot environment tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
@@ -136,7 +136,7 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 To run the attack scenario simulation:
 
-1. Ensure that your pilot environment includes the isolated AD DS domain controller and Windows 10 device.
+1. Ensure that your pilot environment includes the isolated AD DS domain controller and Windows device.
 
 2. Sign in to the test device with the test user account.
 
