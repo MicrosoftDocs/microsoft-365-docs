@@ -34,12 +34,13 @@ Microsoft 365 Endpoint DLP allows you to monitor Windows 10 devices and detect w
 
 Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
+Device onboarding is shared across Microsoft 365 and Microsoft Defender for Endpoint (MDE). If you've already onboarded devices to MDE, they will appear in the managed devices list and no further steps are necessary to onboard those specific devices. Onboarding devices in Compliance center also onboards them into MDE.
 
 ## Before you begin
 
 ### SKU/subscriptions licensing
 
-Before you get started, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons.
+Check the licensing requirements for your solution.
 
 ### Permissions
 
@@ -77,15 +78,14 @@ Make sure that the Windows 10 devices that you need to onboard meet these requir
    > [!NOTE]
    > None of Windows Security components need to be active, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
 
-3. The following Windows Updates are installed for devices that will be monitored with Endpoint DLP.
+3. The following Windows Updates are installed for devices that will be monitored.
 
    > [!NOTE]
    > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
-
-   - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
-   - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
-   - For Windows 10 2004 - KB4568831, KB4577063
-   - For devices running Office 2016 (and not any other Office version) - KB4577063
+    > - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
+    > - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
+    > - For Windows 10 2004 - KB4568831, KB4577063
+    > - 
 
 4. All devices must be one of these:
 
@@ -93,11 +93,11 @@ Make sure that the Windows 10 devices that you need to onboard meet these requir
    - [Hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
    - [AAD registered](/azure/active-directory/user-help/user-help-register-device-on-network)
 
-5. Install the Microsoft Edge or the Google Chrome browser on the endpoint device to enforce policy actions for the upload to cloud activity. For more information see, [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+5. For devices running Office 2016 (and not any other Office version) - KB4577063
 
-6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
+6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
 
-7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md).
+7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for devices](endpoint-dlp-configure-proxy.md).
 
 ## Onboarding devices into device management
 
@@ -140,8 +140,8 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
 Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
-> [!NOTE]
-> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+<!--> [!NOTE]
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.-->
 
 <!--### With devices onboarded into Microsoft Defender for Endpoint
 

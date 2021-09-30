@@ -211,3 +211,7 @@ To learn more about Microsoft 365 DLP, see:
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+
+## Licensing and Subscriptions
+
+See the [licensing requirements for Information Protection](office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.

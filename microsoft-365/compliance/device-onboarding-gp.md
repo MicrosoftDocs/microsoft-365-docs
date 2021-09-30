@@ -23,7 +23,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 - Group Policy
 
 > [!NOTE]
