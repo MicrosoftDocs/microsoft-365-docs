@@ -13,9 +13,9 @@ ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
-  ms.collection: 
-  - SMB
-  - M365-security-compliance
+ms.collection: 
+- SMB
+- M365-security-compliance
 ---
 
 # Compare Microsoft Defender for Business to Microsoft 365 Business Premium
