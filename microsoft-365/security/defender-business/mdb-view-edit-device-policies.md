@@ -27,7 +27,7 @@ The following sections provide more information about your security policies in 
 - [View your policies](#view-your-policies)
 - [Define a new policy](#define-a-new-policy)
 - [Edit an existing policy](#edit-an-existing-policy)
-- [Learn more about policy order](#learn-more-about-policy-order)
+- [Learn more about policy order](#what-about-policy-order)
 
 ## View your policies
 
