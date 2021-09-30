@@ -63,7 +63,7 @@ ObjectState: Unchanged
 ```
 
 >[!NOTE]
->Currently, there may be up to a 24h delay between the time a policy match is recorded in the Microsoft 365 Audit and the time in which you can investigate policy matches in communication compliance.
+> Currently, there may be up to a 24-hour delay between the time a policy match is recorded in the Microsoft 365 Audit and the time in which you can investigate policy matches in communication compliance.
 
 ## Configure communication compliance and Azure Sentinel integration
 
