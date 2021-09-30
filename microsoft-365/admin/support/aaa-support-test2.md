@@ -11,12 +11,9 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 search.appverid:
-- BCS160
 - MET150
-- MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
@@ -721,75 +718,76 @@ Rwanda
 ## [S-Z](#tab/sthroughz)
 
 :::row:::
+ :::row:::
    :::column:::
-Saba  
-Saint Barthelemy  
-Saint Lucia  
-Saint Martin  
-[Saint Pierre and Miquelon ](#saint-pierre-and-miquelon)  
-Saint Vincent and the Grenadines  
-Samoa  
-San Marino  
-Sao Tome and Principe  
-Saudi Arabia  
-Senegal  
-Serbia  
-Seychelles  
-Sierra Leone  
-Singapore  
-Sint Eustatius  
-Sint Maarten  
-Slovakia  
-Slovenia  
-Solomon Islands  
-Somalia  
-South Africa  
+[Saba](#Saba)  
+[Saint Barthelemy](#Saint-Barthelemy)  
+[Saint Lucia](#Saint-Lucia)  
+[Saint Martin](#Saint-Martin)  
+[Saint Pierre and Miquelon](#Saint-Pierre-and-Miquelon)  
+[Saint Vincent and the Grenadines](#Saint-Vincent-and-the-Grenadines)  
+[Samoa](#Samoa)  
+[San Marino](#San-Marino)  
+[Sao Tome and Principe](#Sao-Tome-and-Principe)  
+[Saudi Arabia](#Saudi-Arabia)  
+[Senegal](#Senegal)  
+[Serbia](#Serbia)  
+[Seychelles](#Seychelles)  
+[Sierra Leone](#Sierra-Leone)  
+[Singapore](#Singapore)  
+[Sint Eustatius](#Sint-Eustatius)  
+[Sint Maarten](#Sint-Maarten)  
+[Slovakia](#Slovakia)  
+[Slovenia](#Slovenia)  
+[Solomon Islands](#Solomon-Islands)  
+[Somalia](#Somalia)  
+[South Africa](#South-Africa)  
    :::column-end:::
    :::column:::
-South Georgia and South Sandwich Islands  
-South Sudan  
-Spain  
-Sri Lanka  
-St Helena  
-St Kitts Nevis  
-Suriname  
-Svalbard  
-Swaziland  
-Sweden  
-Switzerland  
-Taiwan  
-Tajikistan  
-Tanzania  
-Thailand  
-Timor Leste  
-Togo  
-Tokelau  
-Tonga  
-Trinidad and Tobago  
-Tristan Da Cunha  
+[South Georgia and South Sandwich Islands](#South-Georgia-and-South-Sandwich-Islands)  
+[South Sudan](#South-Sudan)  
+[Spain](#Spain)  
+[Sri Lanka](#Sri-Lanka)  
+[St Helena](#St-Helena)  
+[St Kitts Nevis](#St-Kitts-Nevis)  
+[Suriname](#Suriname)  
+[Svalbard](#Svalbard)  
+[Swaziland](#Swaziland)  
+[Sweden](#Sweden)  
+[Switzerland](#Switzerland)  
+[Taiwan](#Taiwan)  
+[Tajikistan](#Tajikistan)  
+[Tanzania](#Tanzania)  
+[Thailand](#Thailand)  
+[Timor Leste](#Timor-Leste)  
+[Togo](#Togo)  
+[Tokelau](#Tokelau)  
+[Tonga](#Tonga)  
+[Trinidad and Tobago](#Trinidad-and-Tobago)  
+[Tristan Da Cunha](#Tristan-Da-Cunha)  
    :::column-end:::
    :::column:::
-Tunisia  
-Turkey  
-Turkmenistan  
-Turks and Caicos Islands  
-Tuvalu  
-Uganda  
-Ukraine  
-United Arab Emirates  
-United Kingdom  
-United States  
-Uruguay  
-Uzbekistan  
-Vanuatu  
-Vatican City  
-Venezuela  
-Vietnam  
-Virgin Islands  
-Wallis and Futuna  
-Yemen  
-Zambia  
-Zimbabwe  
+[Tunisia](#Tunisia)  
+[Turkey](#Turkey)  
+[Turkmenistan](#Turkmenistan)  
+[Turks and Caicos Islands](#Turks-and-Caicos-Islands)  
+[Tuvalu](#Tuvalu)  
+[Uganda](#Uganda)  
+[Ukraine](#Ukraine)  
+[United Arab Emirates](#United-Arab-Emirates)  
+[United Kingdom](#United-Kingdom)  
+[United States](#United-States)  
+[Uruguay](#Uruguay)  
+[Uzbekistan](#Uzbekistan)  
+[Vanuatu](#Vanuatu)  
+[Vatican City](#Vatican-City)  
+[Venezuela](#Venezuela)  
+[Vietnam](#Vietnam)  
+[Virgin Islands](#Virgin-Islands)  
+[Wallis and Futuna](#Wallis-and-Futuna)  
+[Yemen](#Yemen)  
+[Zambia](#Zambia)  
+[Zimbabwe](#Zimbabwe)  
    :::column-end:::
 :::row-end:::
 

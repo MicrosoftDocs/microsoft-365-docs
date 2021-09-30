@@ -11,12 +11,9 @@ ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 search.appverid:
-- BCS160
 - MET150
-- MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
@@ -33,7 +30,6 @@ Admins, have your account details ready when you call.
 - **In Australia, call 1 800 197 503.**
 - **In Canada, call 1 800 865 9408.**
 - **In the United Kingdom, call 0800 032 6417.**
-
 
 If your support phone number isn't listed above, use the list on the right to find the number for your country or region.
 
