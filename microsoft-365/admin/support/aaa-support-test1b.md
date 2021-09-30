@@ -168,7 +168,7 @@ If your support phone number isn't listed above, use the list below to find the 
 [Libya](#libya)\
 [Liechtenstein](#liechtenstein)\
 [Lithuania](#lithuania)\
-[Luxembourg](#luxembourg)
+[Luxembourg](#luxembourg)\
 [Macau SAR](#macau-sar)\
 [Macedonia](#macedonia)\
 [Madagascar](#madagascar)\
