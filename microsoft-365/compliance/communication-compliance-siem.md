@@ -83,7 +83,7 @@ When you're using the Azure Sentinel to aggregate communication compliance polic
     | where OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" and UserId == "User1@Contoso.com"
     | sort by TimeGenerated*
 
-For more information about the Audit logs for Office 365 collected by Azure Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
+For more information about the Microsoft 365 Audit logs for Office 365 collected by Azure Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## Configure communication compliance and Splunk integration
 
