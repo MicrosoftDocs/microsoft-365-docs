@@ -58,9 +58,9 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
-> When using this option on Windows 10 or Windows Server 2019, it is recommended to have the following (or later) build and cumulative update rollup:
+> When using this option on Windows 10 or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
 >
-> - Windows 10, version 1809 or Windows Server 2019 - <https://support.microsoft.com/kb/5001384>
+> - Windows 10, version 1809 or Windows Server 2019, or Windows Server 2022  - <https://support.microsoft.com/kb/5001384>
 > - Windows 10, version 1909 - <https://support.microsoft.com/kb/4601380>
 > - Windows 10, version 2004 - <https://support.microsoft.com/kb/4601382>
 > - Windows 10, version 20H2 - <https://support.microsoft.com/kb/4601382>

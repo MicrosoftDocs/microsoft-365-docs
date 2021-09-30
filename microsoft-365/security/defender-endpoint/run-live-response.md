@@ -77,6 +77,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows Server 2019 - Only applicable for Public preview**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**
 
 ## Permissions
 
