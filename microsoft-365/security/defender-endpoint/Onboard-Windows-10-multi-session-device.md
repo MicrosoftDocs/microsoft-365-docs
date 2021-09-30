@@ -15,6 +15,7 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Onboard Windows 10 multi-session devices in Azure Virtual Desktop

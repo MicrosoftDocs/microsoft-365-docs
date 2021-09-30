@@ -16,6 +16,7 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Troubleshoot performance issues related to real-time protection
@@ -53,6 +54,10 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 
 `Per-process counts:ProcessImageName: smsswd.exe, TotalTime: 6597, Count: 1406, MaxTime: 609, MaxTimeFile: \Device\HarddiskVolume3\_SMSTaskSequence\Packages\WQ1008E9\Files\FramePkg.exe, EstimatedImpact: 65%`
 
+<br>
+
+****
+
 |Field name|Description|
 |---|---|
 |ProcessImageName|Process image name|
@@ -61,6 +66,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log**, you can find the estimated performance impact 
 |MaxTime|The duration in milliseconds in the longest single scan of a file accessed by this process|
 |MaxTimeFile|The path of the file accessed by this process for which the longest scan of `MaxTime` duration was recorded|
 |EstimatedImpact|The percentage of time spent in scans for files accessed by this process out of the period in which this process experienced scan activity|
+|
 
 If the performance impact is high, try adding the process to the Path/Process exclusions by following the steps in [Configure and validate exclusions for Microsoft Defender Antivirus scans](collect-diagnostic-data.md).
 
@@ -182,8 +188,8 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![in-file.](images/wpr-infile.png)
 
-    >[!WARNING]
-    >If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**.
+    > [!WARNING]
+    > If your Windows Server has 64 GB of RAM or more, use the custom measurement `Microsoft Defender for Endpoint analysis for large servers` instead of `Microsoft Defender for Endpoint analysis`. Otherwise, your system could consume a high amount of non-paged pool memory or buffers which can lead to system instability. You can choose which profiles to add by expanding **Resource Analysis**.
     This custom profile provides the necessary context for in-depth performance analysis.
 
 8. To use the custom measurement Microsoft Defender for Endpoint verbose analysis profile in the WPR UI:
@@ -258,7 +264,7 @@ The command-line tool *wpr.exe* is part of the operating system starting with Wi
 5. Reproduce the issue.
 
     > [!TIP]
-    > Keep the data collection no to more than five minutes.  Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
+    > Keep the data collection no to more than five minutes. Depending on the scenario, two to three minutes is a good range since a lot of data is being collected.
 
 6. At the elevated prompt, run the following command to stop the performance trace, making sure to provide information about the problem and how you reproduced the issue:
 

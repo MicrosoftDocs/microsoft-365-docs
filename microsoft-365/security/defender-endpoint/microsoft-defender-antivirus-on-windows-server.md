@@ -15,6 +15,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
+ms.collection: M365-security-compliance
 ---
 
 # Microsoft Defender Antivirus on Windows Server

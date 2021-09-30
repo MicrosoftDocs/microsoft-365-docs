@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -117,6 +117,7 @@ To enable communication between your devices and Defender for Endpoint, configur
 |[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p> Windows Server 2022 <p> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
 |Antivirus|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |Antivirus|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
+
 
 ## Next step
 

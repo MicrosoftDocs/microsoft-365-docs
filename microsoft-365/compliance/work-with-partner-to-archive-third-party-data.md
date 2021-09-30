@@ -470,7 +470,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
  **Complete these tasks in the Microsoft 365 admin center**
 
-1. Create a user account and assign it an Exchange Online Plan 2 license; see [Add users to Microsoft 365](../admin/add-users/add-users.md). A Plan 2 license is required to place the mailbox on Litigation Hold or enable an archive mailbox that has an unlimited storage quota.
+1. Create a user account and assign it an Exchange Online Plan 2 license; see [Add users to Microsoft 365](../admin/add-users/add-users.md). A Plan 2 license is required to place the mailbox on Litigation Hold or enable an archive mailbox that has a storage quota up to 1.5 TB.
 
 2. Add the user account for the third-party data mailbox to the **Exchange administrator** admin role in Microsoft 365; see [Assign admin roles in Microsoft 365](../admin/add-users/assign-admin-roles.md).
 
@@ -489,7 +489,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
 3. Enable the following compliance-related features for the third-party data mailbox:
 
-    - Enable the archive mailbox; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md). This lets you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox. This provides you with unlimited storage for third-party data.
+    - Enable the archive mailbox; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md). This lets you free-up storage space in the primary mailbox by setting up an archive policy that moves third-party data items to the archive mailbox. This provides you with up to 1.5 TB of storage for third-party data.
 
     - Place the third-party data mailbox on Litigation Hold. You can also apply a Microsoft 365 retention policy in the security and compliance center. Placing this mailbox on hold retains third-party data items (indefinitely or for a specified duration) and prevent them from being purged from the mailbox. See one of the following topics:
 
@@ -503,7 +503,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
 
 The next step is to configure user mailboxes to support third-party data. Complete these tasks by using the Exchange admin center or by using the corresponding Windows PowerShell cmdlets.
 
-1. Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).
+1. Enable the archive mailbox for each user; see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
 2. Place user mailboxes on Litigation Hold or apply a Microsoft 365 retention policy; see one of the following topics:
 

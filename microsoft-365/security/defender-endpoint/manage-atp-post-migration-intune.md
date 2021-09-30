@@ -18,7 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 07/29/2021
+ms.date: 09/23/2021
 ms.reviewer: chventou
 ---
 
