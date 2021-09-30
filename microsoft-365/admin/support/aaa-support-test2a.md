@@ -727,7 +727,7 @@ Saba
 Saint Barthelemy  
 Saint Lucia  
 Saint Martin  
-[Saint Pierre and Miquelon  ](#saint-pierre-and-miquelon)
+[Saint Pierre and Miquelon  ](#saint-pierre-and-miquelon)  
 Saint Vincent and the Grenadines  
 Samoa  
 San Marino  
