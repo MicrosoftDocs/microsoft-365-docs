@@ -19,14 +19,9 @@ f1.keywords: NOCSH
 
 Microsoft offers a wide variety cloud solutions and services, including several different plans for small and midsized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes device management and threat protection capabilities, along with several other productivity features, like Office apps. You can use this article to see how Microsoft 365 Business Premium compares to Microsoft Defender for Business.
 
-**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business**.  
+**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business**. Microsoft Defender for Business is a standalone security solution for small and mid-sized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic, Standard, or Premium), consider adding Microsoft Defender for Business to get additional threat protection capabilities.  
 
-> [!NOTE]
-> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see the following resources:
-> - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
-> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
-
-<br/><br/>
+## Comparing Microsoft Defender for Business to Microsoft 365 Business Premium
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
@@ -41,6 +36,12 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | No |
 | Centralized management and reporting | Yes. You can onboard Windows 10 devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), or choose to manage devices in Microsoft Endpoint Manager ([https://admin.microsoft.com](https://admin.microsoft.com)). | Yes. You can manage Windows 10 devices in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). Devices must be onboarded in Microsoft Endpoint Manager. |
 | [APIs](../defender-endpoint/apis-intro.md) <br/>(enables you to integrate with custom apps or reporting solutions)  | Yes | Yes |
+
+> [!NOTE]
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see the following resources:
+> - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
+> - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+
 
 
 ## Next steps
