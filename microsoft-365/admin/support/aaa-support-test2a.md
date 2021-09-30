@@ -43,67 +43,67 @@ If your support phone number isn't listed above, use the sections below to find 
 [Algeria](#algeria)\
 [American Samoa](#american-samoa)\
 [Andorra](#andorra)\
-[Angola](#Angola)\
-[Anguilla](#Anguilla)\
-[Antigua and Barbuda](#Antigua-and-Barbuda)\
-[Argentina](#Argentina)\
-[Armenia](#Armenia)\
-[Aruba](#Aruba)\
-[Ascension](#Ascension)\
-[Australia](#Australia)\
-[Austria](#Austria)\
-[Azerbaijan](#Azerbaijan)\
-[Bahamas](#Bahamas)\
-[Bahrain](#Bahrain)\
-[Bangladesh](#Bangladesh)\
-[Barbados](#Barbados)\
-[Belarus](#Belarus)\
+[Angola](#angola)\
+[Anguilla](#anguilla)\
+[Antigua and Barbuda](#antigua-and-barbuda)\
+[Argentina](#argentina)\
+[Armenia](#armenia)\
+[Aruba](#aruba)\
+[Ascension](#ascension)\
+[Australia](#australia)\
+[Austria](#austria)\
+[Azerbaijan](#azerbaijan)\
+[Bahamas](#bahamas)\
+[Bahrain](#bahrain)\
+[Bangladesh](#bangladesh)\
+[Barbados](#barbados)\
+[Belarus](#belarus)
    :::column-end:::
    :::column:::
 [Belgium](#belgium)\
-[Belize](#Belize)\
-[Benin](#Benin)\
-[Bermuda](#Bermuda)\
-[Bhutan](#Bhutan)\
-[Bolivia](#Bolivia)\
-[Bonaire](#Bonaire)\
-[Bosnia and Herzegovina](#Bosnia-and-Herzegovina)\
-[Botswana](#Botswana)\
-[Bouvet Island](#Bouvet-Island)\
-[Brazil](#Brazil)\
-[British Virgin Islands](#British-Virgin-Islands)\
-[Brunei](#Brunei)\
-[Bulgaria](#Bulgaria)\
-[Burkina Faso](#Burkina-Faso)\
-[Burundi](#Burundi)\
-[Cambodia](#Cambodia)\
-[Cameroon](#Cameroon)\
-[Canada](#Canada)\
-[Cape Verde](#Cape-Verde)\
-[Cayman Islands](#Cayman-Islands)\
+[Belize](#belize)\
+[Benin](#benin)\
+[Bermuda](#bermuda)\
+[Bhutan](#bhutan)\
+[Bolivia](#bolivia)\
+[Bonaire](#bonaire)\
+[Bosnia and Herzegovina](#bosnia-and-herzegovina)\
+[Botswana](#botswana)\
+[Bouvet Island](#bouvet-island)\
+[Brazil](#brazil)\
+[British Virgin Islands](#british-virgin-islands)\
+[Brunei](#brunei)\
+[Bulgaria](#bulgaria)\
+[Burkina Faso](#burkina-faso)\
+[Burundi](#burundi)\
+[Cambodia](#cambodia)\
+[Cameroon](#cameroon)\
+[Canada](#canada)\
+[Cape Verde](#cape-verde)\
+[Cayman Islands](#cayman-islands)
    :::column-end:::
    :::column:::
 [Central African Republic](#central-african-republic)\
-[Chad](#Chad)\
-[Chile](#Chile)\
-[China PRC](#China-PRC)\
-[Christmas Island](#Christmas-Island)\
-[Cocos Keeling Islands](#Cocos-Keeling-Islands)\
-[Colombia](#Colombia)\
-[Comoros](#Comoros)\
-[Congo](#Congo)\
-[Congo DRC](#Congo-DRC)\
-[Cook Islands](#Cook-Islands)\
-[Costa Rica](#Costa-Rica)\
-[Cote Divoire](#Cote-Divoire)\
-[Croatia](#Croatia)\
-[Curacao](#Curacao)\
-[Cyprus](#Cyprus)\
-[Czech Republic](#Czech-Republic)\
-[Denmark](#Denmark)\
-[Djibouti](#Djibouti)\
-[Dominica](#Dominica)\
-[Dominican Republic](#Dominican-Republic)\
+[Chad](#chad)\
+[Chile](#chile)\
+[China PRC](#china-prc)\
+[Christmas Island](#christmas-island)\
+[Cocos Keeling Islands](#cocos-keeling-islands)\
+[Colombia](#colombia)\
+[Comoros](#comoros)\
+[Congo](#congo)\
+[Congo DRC](#congo-drc)\
+[Cook Islands](#cook-islands)\
+[Costa Rica](#costa-rica)\
+[Cote Divoire](#cote-divoire)\
+[Croatia](#croatia)\
+[Curacao](#curacao)\
+[Cyprus](#cyprus)\
+[Czech Republic](#czech-republic)\
+[Denmark](#denmark)\
+[Djibouti](#djibouti)\
+[Dominica](#dominica)\
+[Dominican Republic](#dominican-republic)
    :::column-end:::
 :::row-end:::
 
@@ -317,75 +317,75 @@ Alternative Phone Number: 1 809 200 8794
 
 :::row:::
    :::column:::
-[Ecuador](#Ecuador)  
-[Egypt](#Egypt)  
-[El Salvador](#El-Salvador)  
-[Equatorial Guinea](#Equatorial-Guinea)  
-[Eritrea](#Eritrea)  
-[Estonia](#Estonia)  
-[Ethiopia](#Ethiopia)  
-[Falkland Islands](#Falkland-Islands)  
-[Faroe Islands](#Faroe-Islands)  
-[Fiji](#Fiji)  
-[Finland](#Finland)  
-[France](#France)  
-[French Guiana](#French-Guiana)  
-[French Polynesia](#French-Polynesia)  
-[French Southern Territories](#French-Southern-Territories)  
-[Gabon](#Gabon)  
-[Gambia](#Gambia)  
-[Georgia](#Georgia)  
-[Germany](#Germany)  
-[Ghana](#Ghana)  
-[Gibraltar](#Gibraltar)  
-[Greece](#Greece)  
+[Ecuador](#ecuador)\
+[Egypt](#egypt)\
+[El Salvador](#el-salvador)\
+[Equatorial Guinea](#equatorial-guinea)\
+[Eritrea](#eritrea)\
+[Estonia](#estonia)\
+[Ethiopia](#ethiopia)\
+[Falkland Islands](#falkland-islands)\
+[Faroe Islands](#faroe-islands)\
+[Fiji](#fiji)\
+[Finland](#finland)\
+[France](#france)\
+[French Guiana](#french-guiana)\
+[French Polynesia](#french-polynesia)\
+[French Southern Territories](#french-southern-territories)\
+[Gabon](#gabon)\
+[Gambia](#gambia)\
+[Georgia](#georgia)\
+[Germany](#germany)\
+[Ghana](#ghana)\
+[Gibraltar](#gibraltar)\
+[Greece](#greece)
    :::column-end:::
    :::column:::
-[Greenland](#Greenland)  
-[Grenada](#Grenada)  
-[Guadeloupe](#Guadeloupe)  
-[Guam](#Guam)  
-[Guatemala](#Guatemala)  
-[Guernsey](#Guernsey)  
-[Guinea](#Guinea)  
-[Guinea Bissau](#Guinea-Bissau)  
-[Guyana](#Guyana)  
-[Haiti](#Haiti)  
-[Heard Island and Mcdonald Islands](#Heard-Island-and-Mcdonald-Islands)  
-[Honduras](#Honduras)  
-[Hong Kong SAR](#Hong-Kong-SAR)  
-[Hungary](#Hungary)  
-[Iceland](#Iceland)  
-[India](#India)  
-[Indonesia](#Indonesia)  
-[Iraq](#Iraq)  
-[Ireland](#Ireland)  
-[Isle Of Man](#Isle-Of-Man)  
-[Israel](#Israel)  
-[Italy](#Italy)  
+[Greenland](#greenland)\
+[Grenada](#grenada)\
+[Guadeloupe](#guadeloupe)\
+[Guam](#guam)\
+[Guatemala](#guatemala)\
+[Guernsey](#guernsey)\
+[Guinea](#guinea)\
+[Guinea Bissau](#guinea-bissau)\
+[Guyana](#guyana)\
+[Haiti](#haiti)\
+[Heard Island and Mcdonald Islands](#heard-island-and-mcdonald-islands)\
+[Honduras](#honduras)\
+[Hong Kong SAR](#hong-kong-sar)\
+[Hungary](#hungary)\
+[Iceland](#iceland)\
+[India](#india)\
+[Indonesia](#indonesia)\
+[Iraq](#iraq)\
+[Ireland](#ireland)\
+[Isle of Man](#isle-of-man)\
+[Israel](#israel)\
+[Italy](#italy)
    :::column-end:::
    :::column:::
-[Jamaica](#Jamaica)  
-[Jan Mayen](#Jan-Mayen)  
-[Japan](#Japan)  
-[Jersey](#Jersey)  
-[Jordan](#Jordan)  
-[Kazakhstan](#Kazakhstan)  
-[Kenya](#Kenya)  
-[Kiribati](#Kiribati)  
-[Korea](#Korea)  
-[Kosovo](#Kosovo)  
-[Kuwait](#Kuwait)  
-[Kyrgyzstan](#Kyrgyzstan)  
-[Laos](#Laos)  
-[Latvia](#Latvia)  
-[Lebanon](#Lebanon)  
-[Lesotho](#Lesotho)  
-[Liberia](#Liberia)  
-[Libya](#Libya)  
-[Liechtenstein](#Liechtenstein)  
-[Lithuania](#Lithuania)  
-[Luxembourg](#Luxembourg)  
+[Jamaica](#jamaica)\
+[Jan Mayen](#jan-mayen)\
+[Japan](#japan)\
+[Jersey](#jersey)\
+[Jordan](#jordan)\
+[Kazakhstan](#kazakhstan)\
+[Kenya](#kenya)\
+[Kiribati](#kiribati)\
+[Korea](#korea)\
+[Kosovo](#kosovo)\
+[Kuwait](#kuwait)\
+[Kyrgyzstan](#kyrgyzstan)\
+[Laos](#laos)\
+[Latvia](#latvia)\
+[Lebanon](#lebanon)\
+[Lesotho](#lesotho)\
+[Liberia](#liberia)\
+[Libya](#libya)\
+[Liechtenstein](#liechtenstein)\
+[Lithuania](#lithuania)\
+[Luxembourg](#luxembourg)
    :::column-end:::
 :::row-end:::
 
@@ -547,64 +547,64 @@ International call charges apply
 
 :::row:::
    :::column:::
-[Macau SAR](#Macau-SAR)  
-[Macedonia](#Macedonia)  
-[Madagascar](#Madagascar)  
-[Malawi](#Malawi)  
-[Malaysia](#Malaysia)  
-[Maldives](#Maldives)  
-[Mali](#Mali)  
-[Malta](#Malta)  
-[Marshall Islands](#Marshall-Islands)  
-[Martinique](#Martinique)  
-[Mauritania](#Mauritania)  
-[Mauritius](#Mauritius)  
-[Mayotte](#Mayotte)  
-[Mexico](#Mexico)  
-[Micronesia](#Micronesia)  
-[Moldova](#Moldova)  
-[Monaco](#Monaco)  
-[Mongolia](#Mongolia)  
+[Macau SAR](#macau-sar)\
+[Macedonia](#macedonia)\
+[Madagascar](#madagascar)\
+[Malawi](#malawi)\
+[Malaysia](#malaysia)\
+[Maldives](#maldives)\
+[Mali](#mali)\
+[Malta](#malta)\
+[Marshall Islands](#marshall-islands)\
+[Martinique](#martinique)\
+[Mauritania](#mauritania)\
+[Mauritius](#mauritius)\
+[Mayotte](#mayotte)\
+[Mexico](#mexico)\
+[Micronesia](#micronesia)\
+[Moldova](#moldova)\
+[Monaco](#monaco)\
+[Mongolia](#mongolia)
    :::column-end:::
    :::column:::
-[Montenegro](#Montenegro)  
-[Montserrat](#Montserrat)  
-[Morocco](#Morocco)  
-[Mozambique](#Mozambique)  
-[Myanmar](#Myanmar)  
-[Namibia](#Namibia)  
-[Nauru](#Nauru)  
-[Nepal](#Nepal)  
-[Netherlands](#Netherlands)  
-[New Caledonia](#New-Caledonia)  
-[New Zealand](#New-Zealand)  
-[Nicaragua](#Nicaragua)  
-[Niger](#Niger)  
-[Nigeria](#Nigeria)  
-[Niue](#Niue)  
-[Norfolk Island](#Norfolk-Island)  
-[Northern Mariana Islands](#Northern-Mariana-Islands)  
-[Norway](#Norway)  
+[Montenegro](#montenegro)\
+[Montserrat](#montserrat)\
+[Morocco](#morocco)\
+[Mozambique](#mozambique)\
+[Myanmar](#myanmar)\
+[Namibia](#namibia)\
+[Nauru](#nauru)\
+[Nepal](#nepal)\
+[Netherlands](#netherlands)\
+[New Caledonia](#new-caledonia)\
+[New Zealand](#new-zealand)\
+[Nicaragua](#nicaragua)\
+[Niger](#niger)\
+[Nigeria](#nigeria)\
+[Niue](#niue)\
+[Norfolk Island](#norfolk-island)\
+[Northern Mariana Islands](#northern-mariana-islands)\
+[Norway](#norway)
    :::column-end:::
    :::column:::
-[Oman](#Oman)  
-[Pakistan](#Pakistan)  
-[Palau](#Palau)  
-[Palestinian Authority](#Palestinian-Authority)  
-[Panama](#Panama)  
-[Papua New Guinea](#Papua-New-Guinea)  
-[Paraguay](#Paraguay)  
-[Peru](#Peru)  
-[Philippines](#Philippines)  
-[Pitcairn Islands](#Pitcairn-Islands)  
-[Poland](#Poland)  
-[Portugal](#Portugal)  
-[Puerto Rico](#Puerto-Rico)  
-[Qatar](#Qatar)  
-[Reunion](#Reunion)  
-[Romania](#Romania)  
-[Russia](#Russia)  
-[Rwanda](#Rwanda)  
+[Oman](#oman)\
+[Pakistan](#pakistan)\
+[Palau](#palau)\
+[Palestinian Authority](#palestinian-authority)\
+[Panama](#panama)\
+[Papua New Guinea](#papua-new-guinea)\
+[Paraguay](#paraguay)\
+[Peru](#peru)\
+[Philippines](#philippines)\
+[Pitcairn Islands](#pitcairn-islands)\
+[Poland](#poland)\
+[Portugal](#portugal)\
+[Puerto Rico](#puerto-rico)\
+[Qatar](#qatar)\
+[Reunion](#reunion)\
+[Romania](#romania)\
+[Russia](#russia)\
+[Rwanda](#rwanda)
    :::column-end:::
 :::row-end:::
 
@@ -720,74 +720,74 @@ International call charges apply
 
 :::row:::
    :::column:::
-[Saba](#Saba)  
-[Saint Barthelemy](#Saint-Barthelemy)  
-[Saint Lucia](#Saint-Lucia)  
-[Saint Martin](#Saint-Martin)  
-[Saint Pierre and Miquelon](#Saint-Pierre-and-Miquelon)  
-[Saint Vincent and the Grenadines](#Saint-Vincent-and-the-Grenadines)  
-[Samoa](#Samoa)  
-[San Marino](#San-Marino)  
-[Sao Tome and Principe](#Sao-Tome-and-Principe)  
-[Saudi Arabia](#Saudi-Arabia)  
-[Senegal](#Senegal)  
-[Serbia](#Serbia)  
-[Seychelles](#Seychelles)  
-[Sierra Leone](#Sierra-Leone)  
-[Singapore](#Singapore)  
-[Sint Eustatius](#Sint-Eustatius)  
-[Sint Maarten](#Sint-Maarten)  
-[Slovakia](#Slovakia)  
-[Slovenia](#Slovenia)  
-[Solomon Islands](#Solomon-Islands)  
-[Somalia](#Somalia)  
-[South Africa](#South-Africa)  
+[Saba](#saba)\
+[Saint Barthelemy](#saint-barthelemy)\
+[Saint Lucia](#saint-lucia)\
+[Saint Martin](#saint-martin)\
+[Saint Pierre and Miquelon](#saint-pierre-and-miquelon)\
+[Saint Vincent and the Grenadines](#saint-vincent-and-the-grenadines)\
+[Samoa](#samoa)\
+[San Marino](#san-marino)\
+[Sao Tome and Principe](#sao-tome-and-principe)\
+[Saudi Arabia](#saudi-arabia)\
+[Senegal](#senegal)\
+[Serbia](#serbia)\
+[Seychelles](#seychelles)\
+[Sierra Leone](#sierra-leone)\
+[Singapore](#singapore)\
+[Sint Eustatius](#sint-eustatius)\
+[Sint Maarten](#sint-maarten)\
+[Slovakia](#slovakia)\
+[Slovenia](#slovenia)\
+[Solomon Islands](#solomon-islands)\
+[Somalia](#somalia)\
+[South Africa](#south-africa)
    :::column-end:::
    :::column:::
-[South Georgia and South Sandwich Islands](#South-Georgia-and-South-Sandwich-Islands)  
-[South Sudan](#South-Sudan)  
-[Spain](#Spain)  
-[Sri Lanka](#Sri-Lanka)  
-[St Helena](#St-Helena)  
-[St Kitts Nevis](#St-Kitts-Nevis)  
-[Suriname](#Suriname)  
-[Svalbard](#Svalbard)  
-[Swaziland](#Swaziland)  
-[Sweden](#Sweden)  
-[Switzerland](#Switzerland)  
-[Taiwan](#Taiwan)  
-[Tajikistan](#Tajikistan)  
-[Tanzania](#Tanzania)  
-[Thailand](#Thailand)  
-[Timor Leste](#Timor-Leste)  
-[Togo](#Togo)  
-[Tokelau](#Tokelau)  
-[Tonga](#Tonga)  
-[Trinidad and Tobago](#Trinidad-and-Tobago)  
-[Tristan Da Cunha](#Tristan-Da-Cunha)  
+[South Georgia and South Sandwich Islands](#south-georgia-and-south-sandwich-islands)\
+[South Sudan](#south-sudan)\
+[Spain](#spain)\
+[Sri Lanka](#sri-lanka)\
+[St Helena](#st-Helena)\
+[St Kitts Nevis](#st-kitts-nevis)\
+[Suriname](#suriname)\
+[Svalbard](#svalbard)\
+[Swaziland](#swaziland)\
+[Sweden](#sweden)\
+[Switzerland](#switzerland)\
+[Taiwan](#taiwan)\
+[Tajikistan](#tajikistan)\
+[Tanzania](#tanzania)\
+[Thailand](#thailand)\
+[Timor Leste](#timor-leste)\
+[Togo](#togo)\
+[Tokelau](#tokelau)\
+[Tonga](#tonga)\
+[Trinidad and Tobago](#trinidad-and-tobago)\
+[Tristan Da Cunha](#tristan-da-cunha)
    :::column-end:::
    :::column:::
-[Tunisia](#Tunisia)  
-[Turkey](#Turkey)  
-[Turkmenistan](#Turkmenistan)  
-[Turks and Caicos Islands](#Turks-and-Caicos-Islands)  
-[Tuvalu](#Tuvalu)  
-[Uganda](#Uganda)  
-[Ukraine](#Ukraine)  
-[United Arab Emirates](#United-Arab-Emirates)  
-[United Kingdom](#United-Kingdom)  
-[United States](#United-States)  
-[Uruguay](#Uruguay)  
-[Uzbekistan](#Uzbekistan)  
-[Vanuatu](#Vanuatu)  
-[Vatican City](#Vatican-City)  
-[Venezuela](#Venezuela)  
-[Vietnam](#Vietnam)  
-[Virgin Islands](#Virgin-Islands)  
-[Wallis and Futuna](#Wallis-and-Futuna)  
-[Yemen](#Yemen)  
-[Zambia](#Zambia)  
-[Zimbabwe](#Zimbabwe)  
+[Tunisia](#tunisia)\
+[Turkey](#turkey)\
+[Turkmenistan](#turkmenistan)\
+[Turks and Caicos Islands](#turks-and-caicos-islands)\
+[Tuvalu](#tuvalu)\
+[Uganda](#uganda)\
+[Ukraine](#ukraine)\
+[United Arab Emirates](#united-arab-emirates)\
+[United Kingdom](#united-kingdom)\
+[United States](#united-states)\
+[Uruguay](#uruguay)\
+[Uzbekistan](#uzbekistan)\
+[Vanuatu](#vanuatu)\
+[Vatican City](#vatican-city)\
+[Venezuela](#venezuela)\
+[Vietnam](#vietnam)\
+[Virgin Islands](#virgin-islands)\
+[Wallis and Futuna](#wallis-and-futuna)\
+[Yemen](#yemen)\
+[Zambia](#zambia)\
+[Zimbabwe](#zimbabwe)
    :::column-end:::
 :::row-end:::
 
