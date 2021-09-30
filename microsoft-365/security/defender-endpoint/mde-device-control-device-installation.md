@@ -35,7 +35,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |GPO Support|Yes|
 |User-based Support|No|
 |Machine-based Support|Yes|
-|||
 
 ## Prepare your endpoints
 
@@ -222,7 +221,7 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
     :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="device control":::
 
     > [!NOTE]
-    > Some devices in the system have several layers of connectivity to define their installation on the system. USB thumb drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic device IDs that are commonly used in systems and could provide a good start to build an ‘Allow list’ in such cases. The following is one example (it is not always the same for all USBs; you need to understand the PnP tree of the device you want to manage through the Device Manager):
+    > Some devices in the system have several layers of connectivity to define their installation on the system. USB thumb drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic device IDs that are commonly used in systems and could provide a good start to build an "Allow list" in such cases. The following is one example (it is not always the same for all USBs; you need to understand the PnP tree of the device you want to manage through the Device Manager):
     >
     > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (for USB Root Hubs)/ USB\USB20_HUB (for Generic USB Hubs)/ 
     >
