@@ -50,7 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `IsAdminOperation` | string | Indicates whether the activity was performed by an administrator |
 | `DeviceType` | string | Type of device based on purpose and functionality, such as "Network device", "Workstation", "Server", "Mobile", "Gaming console", or "Printer" | 
-| `OSPlatform` | string | Platform of the operating system running on the device. This column indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7... |
+| `OSPlatform` | string | Platform of the operating system running on the device. This column indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7.. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
 | `IsAnonymousProxy` | string | Indicates whether the IP address belongs to a known anonymous proxy |
 | `CountryCode` | string | Two-letter code indicating the country where the client IP address is geolocated |
