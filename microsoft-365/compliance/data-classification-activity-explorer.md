@@ -22,7 +22,7 @@ description: "Activity explorer rounds out the functionality of the data classif
 
 # Get started with activity explorer
 
-The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed and made available in the Activity explorer UI. Activity Explorer reports on up to 30 days worth of data.
+The [data classification overview](data-classification-overview.md) and [content explorer](data-classification-content-explorer.md) tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view of activities on your labeled content. The activity information is collected from the Microsoft 365 unified audit logs, transformed, and made available in the Activity explorer UI. Activity explorer reports on up to 30 days worth of data.
 
 ![placeholder screenshot overview activity explorer.](../media/data-classification-activity-explorer-1.png)
 
