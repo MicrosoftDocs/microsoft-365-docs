@@ -57,9 +57,7 @@ If your support phone number isn't listed above, use the list below to find the 
 [Bahrain](#bahrain)\
 [Bangladesh](#bangladesh)\
 [Barbados](#barbados)\
-[Belarus](#belarus)
-   :::column-end:::
-   :::column:::
+[Belarus](#belarus)\
 [Belgium](#belgium)\
 [Belize](#belize)\
 [Benin](#benin)\
