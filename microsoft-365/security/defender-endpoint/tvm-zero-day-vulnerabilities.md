@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: article
@@ -40,7 +40,7 @@ Threat and vulnerability management will only display zero-day vulnerabilities i
 
 Once a zero-day vulnerability has been found, information about it will be conveyed through the following experiences in the Microsoft 365 Defender portal.
 
->[!NOTE]
+> [!NOTE]
 > 0-day vulnerability capability is currently available only for Windows products.
 
 ### Threat and vulnerability management dashboard

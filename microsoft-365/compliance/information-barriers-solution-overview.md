@@ -36,10 +36,10 @@ Use the following steps to configure information barriers for your organization:
 ![Insider risk solution information barriers steps.](../media/ir-solution-ib-steps.png)
 
 1. Learn about [information barriers](information-barriers.md) in Microsoft 365
-2. Configure [prerequisites and permissions](information-barriers-policies.md#prerequisites)
-3. Segment [users in your organization](information-barriers-policies.md#part-1-segment-users)
-4. Create and configure [information barrier policies](information-barriers-policies.md#part-2-define-information-barrier-policies)
-5. Apply [information barrier policies](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+2. Configure [prerequisites and permissions](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
+3. Segment [users in your organization](information-barriers-policies.md#step-2-segment-users-in-your-organization)
+4. Create and configure [information barrier policies](information-barriers-policies.md#step-3-define-information-barrier-policies)
+5. Apply [information barrier policies](information-barriers-policies.md#step-4-apply-information-barrier-policies)
 
 ## More information about information barriers
 

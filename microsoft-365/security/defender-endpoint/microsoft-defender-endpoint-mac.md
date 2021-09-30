@@ -82,7 +82,7 @@ The three most recent major releases of macOS are supported.
 
 Beta versions of macOS are not supported.
 
-Support for macOS devices with M1 chip-based processors is currently in preview.
+Support for macOS devices with M1 chip-based processors is officially supported since version 101.40.84 of the agent.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
