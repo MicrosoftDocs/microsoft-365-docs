@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
+ms.collection: m365-security-compliance
 ---
 
 # Enable attack surface reduction rules

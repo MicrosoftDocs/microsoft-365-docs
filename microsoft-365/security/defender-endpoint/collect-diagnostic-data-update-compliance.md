@@ -16,6 +16,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Collect update compliance diagnostic data for Microsoft Defender Antivirus assessment

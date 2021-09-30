@@ -14,6 +14,7 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Host firewall reporting in Microsoft Defender for Endpoint
