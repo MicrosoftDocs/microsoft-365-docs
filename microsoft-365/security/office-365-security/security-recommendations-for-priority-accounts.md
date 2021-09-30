@@ -125,7 +125,7 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 - Using strong passwords
 - Protecting devices
-- Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
+- Enabling security features on Windows and Mac PCs (for unmanaged devices)
 
 ## See also
 
