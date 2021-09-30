@@ -11,11 +11,12 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 06/10/2021
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
+ms.collection: m365-security-compliance
 ---
 
 # Turn on definition retirement
@@ -32,9 +33,9 @@ You can configure definition retirement using Group Policy. Definition retiremen
 
 1. On your Group Policy management endpoint, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Network Inspection System**. 
+2. Go to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Network Inspection System**.
 
-3. Select **Turn on definition retirement**. By default, this policy is enabled. If set **Not configured**, definition retirement is enabled. 
+3. Select **Turn on definition retirement**. By default, this policy is enabled. If set **Not configured**, definition retirement is enabled.
 
 4. To edit the policy, select the **edit policy setting** link.
 
@@ -43,5 +44,4 @@ You can configure definition retirement using Group Policy. Definition retiremen
 6. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics). 
-  
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).

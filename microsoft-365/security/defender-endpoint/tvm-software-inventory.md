@@ -44,8 +44,8 @@ Access the Software inventory page by selecting **Software inventory** from the 
 
 View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
->[!NOTE]
->If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
+> [!NOTE]
+> If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
 
 ## Software inventory overview
 

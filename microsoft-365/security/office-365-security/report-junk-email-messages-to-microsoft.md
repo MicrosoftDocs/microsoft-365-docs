@@ -2,7 +2,7 @@
 title: Report spam, non-spam, and phishing messages to Microsoft
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 ms.date: 
@@ -44,8 +44,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 |[Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Learn how to create a mail flow rule (also known as a transport rule) that notifies you when users report messages to Microsoft for analysis.|
 |[Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use the Microsoft Security Intelligence site to submit attachments and other files.|
 |
-
-If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from Quarantine in the Microsoft 365 Defender portal. For details, see [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).
 
 > [!NOTE]
 > Data from submissions to Microsoft resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters.

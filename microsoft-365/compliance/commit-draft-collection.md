@@ -49,7 +49,7 @@ When you're satisfied with the items you've collected in a draft collection and 
 
        - **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means that the target file of a modern attachment or linked file is added to the review set.
 
-       - **SharePoint versions**: Select this option to enable the collection of all version of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
+       - **SharePoint versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
    4. Configure the settings to define the scale of the collection to add to the review set:
 

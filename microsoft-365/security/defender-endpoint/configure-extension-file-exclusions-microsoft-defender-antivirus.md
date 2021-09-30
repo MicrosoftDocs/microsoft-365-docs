@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate exclusions based on file extension and folder location

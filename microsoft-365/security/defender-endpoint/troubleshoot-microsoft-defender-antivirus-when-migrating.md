@@ -15,6 +15,7 @@ ms.date: 09/11/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution

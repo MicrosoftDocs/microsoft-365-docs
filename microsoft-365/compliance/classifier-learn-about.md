@@ -52,7 +52,7 @@ Both built-in classifiers and trainable classifiers are available as a condition
 Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Classifiers only work with items that are not encrypted and are in English.
+> Classifiers only work with items that are not encrypted.
 
 ## Types of classifiers
 
@@ -110,6 +110,16 @@ These appear in the **Microsoft 365 compliance center** > **Data classification*
 > [!IMPORTANT]
 > Please note the offensive language, harassment, profanity, discrimination, and threat classifiers only work with searchable text and are not an exhaustive or complete list of terms or language across these areas. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While classifiers may assist your organization in detecting these areas, classifiers are not intended to provide your organization's sole means of detecting or addressing the use of such language. Your organization, not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, scanning, blocking, removal, and retention of any content identified by a pre-trained classifier, including compliance with local privacy and other applicable laws. Microsoft encourages consulting with legal counsel before deployment and use.
 
+Pre-trained classifiers can scan content in these languages:
+
+•	Chinese (Simplified)
+•	English
+•	French
+•	German
+•	Italian
+•	Japanese
+•	Portuguese
+•	Spanish
 
 ### Custom classifiers
 

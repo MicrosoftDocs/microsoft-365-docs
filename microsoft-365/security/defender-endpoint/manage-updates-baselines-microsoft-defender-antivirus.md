@@ -17,6 +17,7 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 09/08/2021
+ms.collection: M365-security-compliance
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
