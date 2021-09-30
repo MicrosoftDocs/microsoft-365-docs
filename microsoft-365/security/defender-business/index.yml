@@ -43,11 +43,11 @@ landingContent:
             url: get-defender-business.md
           - text: Assign roles and permissions
             url: mdb-roles-permissions.md
-          - text: Choose your portal
-            url: mdb-choose-portal.md
+          - text: Set up email notifications
+            url: mdb-email-notifications.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
-          - text: View or edit device policies
+          - text: Configure security settings
             url: mdb-view-edit-device-policies.md
 
   # Card
