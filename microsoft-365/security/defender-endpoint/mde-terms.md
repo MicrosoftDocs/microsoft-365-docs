@@ -9,8 +9,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: sunasing
-author: sunasing
+ms.author: macapara
+author: mjcapara
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -25,7 +25,7 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
+Depending on the operating system the following software license terms apply in relation to Microsoft Defender for Endpoint. 
 
 #### [Mobile](#tab/mobile/)
 MICROSOFT SOFTWARE LICENSE TERMS : MICROSOFT DEFENDER FOR ENDPOINT
