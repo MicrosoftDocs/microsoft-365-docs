@@ -87,7 +87,7 @@ For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-
 
 In order for Microsoft Defender Antivirus to run in passive mode, endpoints must meet the following requirements:
 
-- Operating system: Windows 10 or later; Windows Server, version 1803, or newer; or Windows Server 2019, or Windows Server   2022
+- Operating system: Windows 10 or later; Windows Server, version 1803, or newer; or Windows Server 2019, or Windows Server 2022
 - Microsoft Defender Antivirus must be installed
 - Another non-Microsoft antivirus/antimalware product must be installed and used as the primary antivirus solution
 - Endpoints must be onboarded to Defender for Endpoint
