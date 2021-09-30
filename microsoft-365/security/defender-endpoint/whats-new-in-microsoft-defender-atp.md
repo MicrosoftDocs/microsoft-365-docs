@@ -54,6 +54,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## October 2021
+
+- Windows 11 support added to Microsoft Defender for Endpoint and Microsoft 365 Defender.
 
 ## August 2021
 
