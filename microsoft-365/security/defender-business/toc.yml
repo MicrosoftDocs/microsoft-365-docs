@@ -34,7 +34,7 @@
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
       - name: Respond to and mitigate threats
-        href: mdb-respond-mitigate-threatmd
+        href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
       - name: Manage devices
