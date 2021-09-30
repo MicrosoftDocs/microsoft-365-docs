@@ -47,7 +47,7 @@ Call-out | Description
 1 | Devices are on-boarded through one of the supported management tools. 
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
 3 | Managed devices are joined and/or enrolled in Azure Active Directory.
-4 | Domain-joined Windows 10 devices are synchronized to Azure Active Directory using Azure Active Directory Connect.
+4 | Domain-joined Windows devices are synchronized to Azure Active Directory using Azure Active Directory Connect.
 5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft 365 Defender.
 
 ## Understand key concepts
