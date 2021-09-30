@@ -90,7 +90,7 @@ The following sections provide more information about your security policies in 
 
 7. On the **Configuration settings** tab, review and if need be, edit the settings for your policy, and then choose **Next**.
 
-   For more information about the individual settings, see [Configuration settings for next-generation protection](#understand-configuration-settings-for-next-generation-protection).
+   For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-configuration-settings.md).
 
 8. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
