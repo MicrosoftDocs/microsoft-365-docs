@@ -46,7 +46,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 |-------------|-----------|-------------|
 | `DeviceId` | string | Unique identifier for the machine in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
-| `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
+| `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7.. |
 | `OSVersion` | string | Version of the operating system running on the machine |
 | `OSArchitecture` | string | Architecture of the operating system running on the machine |
 | `SoftwareVendor` | string | Name of the software vendor |
