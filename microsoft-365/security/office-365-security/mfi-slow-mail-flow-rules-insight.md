@@ -2,8 +2,8 @@
 title: Fix slow mail flow rules insight
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro

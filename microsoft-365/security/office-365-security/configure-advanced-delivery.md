@@ -313,7 +313,7 @@ For detailed syntax and parameter information, see [New-PhishSimOverridePolicy](
 Use the following syntax:
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs <Domain1>,<Domain2>,...<DomainN> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
 ```
 
 Regardless of the Name value you specify, the rule name will be _PhishSimOverrideRule_\<GUID\> where \<GUID\> is a unique GUID value (for example, a0eae53e-d755-4a42-9320-b9c6b55c5011).
@@ -327,7 +327,7 @@ A valid IP address entry is one of the following values:
 This example creates the phishing simulation override rule with the specified settings.
 
 ```powershell
-New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -SenderDomainIs fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
+New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains fabrikam.com,wingtiptoys.com -SenderIpRanges 192.168.1.55
 ```
 
 For detailed syntax and parameter information, see [New-PhishSimOverrideRule](/powershell/module/exchange/new-phishsimoverriderule).
@@ -337,7 +337,7 @@ For detailed syntax and parameter information, see [New-PhishSimOverrideRule](/p
 Use the following syntax:
 
 ```powershell
-New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URLN>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
+New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
 For details about the URL syntax, see [URL syntax for the Tenant Allow/Block List](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list).
@@ -490,4 +490,3 @@ Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery –
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
-
