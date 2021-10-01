@@ -135,15 +135,40 @@ Confirm network protection is enabled on a local computer by using Registry edit
 
 ### Microsoft Endpoint Configuration Manager
 
-1. Open the Configuration Manager.
+1. Open the Configuration Manager console.
 
 2. Go to **Assets and Compliance** > **Endpoint Protection** > **Windows Defender Exploit Guard**. 
 
-3. The **Create Exploit Guard Policy** flyout opens.
+3. Select **Create Exploit Guard Policy** from the ribbon to create a new policy.
+   - To edit an existing policy, select the policy, then select **Properties** from either the ribbon or the right-click menu. Edit the **Configure network protection** option from the **Network Protection** tab.  
 
-4. Select **General**.  
+4. On the **General** page, specify a name for the new policy and verify the **Network protection** option is enabled. 
 
-5. Under **Enable Exploit Guard components**, select the checkbox next to **Network protection**.  
+5. On the **Network protection** page, select one of the following settings for the **Configure network protection** option:
+   - **Block**
+   - **Audit**
+   - **Disabled**
+   
+6. Complete the rest of the steps, and save the policy. 
+7. From the ribbon, select **Deploy** to deploy the policy to a collection.
+
+> [!IMPORTANT]
+> Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->
+> The following PowerShell script can be run under SYSTEM context to remove these settings:<!--CMADO9907132-->
+> ```powershell
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject.AttackSurfaceReductionRules = $null
+> $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
+> $defenderObject.EnableControlledFolderAccess = $null
+> $defenderObject.ControlledFolderAccessAllowedApplications = $null
+> $defenderObject.ControlledFolderAccessProtectedFolders = $null
+> $defenderObject.EnableNetworkProtection = $null
+> $defenderObject.Put()
+>
+> $exploitGuardObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_ExploitGuard02" -Filter "InstanceID='ExploitGuard' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $exploitGuardObject.ExploitProtectionSettings = $null
+> $exploitGuardObject.Put()
+>```  
 
 ## See also
 
