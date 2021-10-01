@@ -39,6 +39,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
 - Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
+- Windows 11 Enterprise E5 or A5
 - Enterprise Mobility + Security (EMS) E5 or A5 
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
