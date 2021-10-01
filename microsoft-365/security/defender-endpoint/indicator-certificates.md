@@ -41,7 +41,7 @@ It's important to understand the following requirements prior to creating indica
 
 - This feature is available if your organization uses Windows Defender Antivirus and Cloud-based protection is enabled. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - The Antimalware client version must be  4.18.1901.x or later.
-- Supported on machines on Windows 10, version 1703 or later, Windows server 2016 and 2019.
+- Supported on machines on Windows 10, version 1703 or later, Windows server 2016, 2019, and Windows Server 2022.
 - The virus and threat protection definitions must be up to date.
 - This feature currently supports entering .CER or .PEM file extensions.
 
