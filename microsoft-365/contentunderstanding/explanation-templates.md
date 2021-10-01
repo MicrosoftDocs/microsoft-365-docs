@@ -47,7 +47,7 @@ The explanation library includes commonly used *phrase list* explanations, inclu
 
 The explanation library also includes commonly used *regular expression* explanations, including:
 
-- 6 to 17 digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
+- 6-digit to to 17-digit numbers: Matches any number from 6 to 17 digits long. US bank account numbers fit this pattern.
 - Email address: Matches a common type of email address like meganb@contoso.com.
 - US taxpayer ID number: Matches a three-digit number starting with 9 followed by a 6 digit number starting with 7 or 8.
 - Web address (URL): Matches the format of a web address, starting with http:// or https://.
