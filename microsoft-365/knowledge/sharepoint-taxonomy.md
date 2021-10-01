@@ -64,6 +64,8 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 3. On the term page, select the **Usage settings** tab.
 
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/taxonomy-single-term-03.png)
+
 4. In the **Create topic from this term** section, select **Request topic**.
 
 **--Insert screenshots from final UX--**
