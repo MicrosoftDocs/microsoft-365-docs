@@ -278,28 +278,47 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 #### Auto-apply labels to cloud attachments
 
+Cloud attachments are a sharing mechanism that uses embedded links to files that are stored in the cloud and support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not:
+- Attached copies of a file
+- The URL to a file in the cloud
+
 > [!NOTE]
 > This option is in preview and subject to change.
+> 
+> During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts that retains items for one day, starting the retention period when the content was last modified.
 
 Applicable to SharePoint, OneDrive, and Microsoft 365 Groups locations only:
 
-When you choose the option to apply a label to cloud attachments (embedded links to files that users share in Outlook emails and Teams messages), for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to that copy. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments that users share in Outlook emails and Teams messages, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to that copy. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library.
 
-The cloud attachments supported are files stored in SharePoint and OneDrive. When you configure the locations for this option, select:
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. Cloud attachments shared outside Teams or Outlook aren't supported. 
+
+For Teams, cloud attachments shared in chat messages, private channels, and meeting invites are supported. Currently, cloud attachments shared in standard channels aren't supported.
+
+Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Drafts aren't supported.
+
+When you configure the locations for this option, select:
 
 - **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. 
 - **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
-- **OneDrive accounts** for shared files stored in users' OneDrive. 
+- **OneDrive accounts** for shared files stored in users' OneDrive.
 
 You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- Only newly shared cloud attachments will be auto-labeled.
+- Only newly shared cloud attachments will be auto-labeled and retained.
 
-- If you replace the retention label for an auto-apply policy, the replacement label is applied to new versions only and files previously labeled as older versions of the file aren't updated with the new label.
+- Cloud attachments shared outside Teams and Outlook aren't supported.
+
+- The following items aren't supported as cloud attachments that can be retained:
+    - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages
+    - Files shared by users who don't have access to those files
+    - Files that are deleted before the cloud attachment is sent
+    - Files that are shared by guests or users outside your organization
+    - Empty files
 
 > [!TIP]
 > Because cloud attachments are shared in Exchange emails and Teams messages, consider using a retention label that's configured for the same retention period as retention policies for these workloads, and configure the label retention setting **Start the retention period based on**: to be **When items were labeled**. 
