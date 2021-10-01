@@ -21,11 +21,11 @@ ms.technology: mdo
 
 Microsoft offers a robust payload catalog for various social engineering techniques to pair with your attack simulation training. However, you might want to create custom payloads that will work better for your organization. This article describes how to create a payload in Attack simulation training in Microsoft Defender for Office 365.
 
-You can create a payload by clicking on **Create a payload** in either the [dedicated **Payloads** tab](https://security.microsoft.com/attacksimulator?viewid=payload) or within the [simulation creation wizard](attack-simulation-training.md#selecting-a-payload).
+You can create a payload by clicking on **Create a payload** in either the [dedicated **Payloads** tab](https://security.microsoft.com/attacksimulator?viewid=payload) or within the [simulation creation wizard](attack-simulation-training.md#select-a-payload).
 
 The first step in the wizard will have you select a payload type. **Currently, only email is available**.
 
-Next, select an associated technique. See more details on techniques at [Selecting a social engineering technique](attack-simulation-training.md#selecting-a-social-engineering-technique).
+Next, select an associated technique. See more details on techniques at [Selecting a social engineering technique](attack-simulation-training.md#select-a-social-engineering-technique).
 
 In the next step name your payload. Optionally, you can give it a description.
 
