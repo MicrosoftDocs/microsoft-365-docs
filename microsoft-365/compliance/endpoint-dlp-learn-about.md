@@ -154,7 +154,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1. [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+1. [Get started with device onboarding](device-onboarding-overview.md#get-started-with-device-onboarding)
 2. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
