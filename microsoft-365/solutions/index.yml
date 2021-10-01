@@ -74,8 +74,6 @@ landingContent:
         links:
           - text: Plan and deploy a Teams Voice solution
             url: deploy-voice.md
-          - text: Manage contracts for your business
-            url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
       - linkListType: overview
         links:
           - text: Organizational communication
