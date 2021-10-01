@@ -5,6 +5,7 @@ keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation,
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
 localization_priority: Normal
