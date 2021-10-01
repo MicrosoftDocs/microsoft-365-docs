@@ -10,6 +10,7 @@ ms.topic: article
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
+- Adm_TOC
 ms.service: o365-administration
 ms.custom: admindeeplinkMAC
 localization_priority: Normal

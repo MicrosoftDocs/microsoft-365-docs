@@ -135,7 +135,7 @@ A: Several options are available to target users:
 
 - Include all users (currently available to organizations with less than 40,000 users).
 - Choose specific users.
-- Select users from a CSV file.
+- Select users from a CSV file (one email address per line).
 - Azure AD group-based targeting.
 
 We've found that campaigns where the targeted users are identified by Azure AD groups are generally easier to manage.

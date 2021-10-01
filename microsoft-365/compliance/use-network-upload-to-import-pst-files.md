@@ -311,7 +311,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
 
-  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users additional mailbox storage space to store the data that you imported.
+  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
   - Placing mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data that you imported.
 
