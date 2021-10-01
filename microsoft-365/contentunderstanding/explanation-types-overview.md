@@ -66,7 +66,7 @@ If you have capitalization requirements in your phrase list, you can select the 
 ![Only exact capitalization.](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Instead of manually creating a phrase list explanation, use the [explanation library](explanation-types-overview.md#use-explanation-templates) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
+> Instead of manually creating a phrase list explanation, use the [explanation library](explanation-templates.md) to use phrase list templates for a common phrase list, such as *date*, *phone number*, or *credit card number*.
 
 ## Regular expression
 
