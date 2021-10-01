@@ -181,7 +181,7 @@ There's a single internal mailbox and device required for this simulation. You'l
       > [!NOTE]
       > See the next step for filtering options to limit data return.
 
-      ![Example of the advanced hunting query results.](../../media/mtp/fig19.png)
+      ![Example of the advanced hunting query results.](../../media/IR-AH-1.png)
 
         > [!NOTE]
         > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.
@@ -195,7 +195,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
    1. Click the resulting rows from the query so you can inspect the record.
 
-      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected.](../../media/mtp/fig21.png)
+      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected.](../../media/IR-AH-2.png)
 
 4. Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this simulation, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add "| where **AttachmentCount > 0** and **EmailDirection** == **"Inbound""**
 
@@ -253,7 +253,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 1. On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**.
 
-   ![Example of where you can click create detection rule in the the advanced hunting page.](../../media/mtp/fig22.png)
+   ![Example of where you can click create detection rule in the the advanced hunting page.](../../media/IR-AH-3.png)
 
    > [!NOTE]
    > If you click **Create detection rule** and you have syntax errors in your query, your detection rule won't be saved. Double-check your query to ensure there's no errors.
