@@ -104,7 +104,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## How retention works with cloud attachments
 
-Cloud attachments are embedded links to files that users share in Outlook emails and Teams messages. When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), the retention label is applied to a copy of the shared file, which is stored in the Preservation Holds library. If the original file is modified and shared again, a new copy of the file as a new version is saved and labeled in the Preservation Hold library.
+Cloud attachments are embedded links to files that users share, and these can be retained and deleted when your users share them in Outlook emails and Teams messages. When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), the retention label is applied to a copy of the shared file, which is stored in the Preservation Holds library. If the original file is modified and shared again, a new copy of the file as a new version is saved and labeled in the Preservation Hold library.
 
 In this scenario, because the retention label is not applied to the original file, the labeled file is never modified or deleted by a user. The labeled file remains in the Preservation Hold library until the timer job identifies that its retention period has expired. If the retention settings are configured to delete items, the file is then moved to the second-stage Recycle Bin, where it's permanently deleted at the end of 93 days:
 
