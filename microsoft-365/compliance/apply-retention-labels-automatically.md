@@ -293,9 +293,7 @@ When you choose the option to apply a retention label to cloud attachments that 
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. Cloud attachments shared outside Teams or Outlook aren't supported.
-
-For Teams, cloud attachments shared in chat messages, private channels, and meeting invites are supported but cloud attachments shared in standard channels aren't currently supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, standard and private channels, and meeting invites are supported. Cloud attachments shared outside Teams or Outlook aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Drafts aren't supported.
 
