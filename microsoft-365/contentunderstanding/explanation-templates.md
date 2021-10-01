@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 localization_priority: Priority
-description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
+description: Learn more about how to use and save explanation templates in Microsoft SharePoint Syntex.
 ---
 
 # Use explanation templates in Microsoft SharePoint Syntex
@@ -27,7 +27,7 @@ The explanation library includes commonly used *phrase list* explanations, inclu
 
 - Date: Calendar dates, all formats. Includes text and numbers (for example, "Dec 9, 2020").
 - Date (numeric): Calendar dates, all formats. Includes numbers (for example, 1-11-2020).
-- Time: 12 and 24 hour formats.
+- Time: 12-hour and 24-hour formats.
 - Number: Positive and negative numbers up to two decimals.
 - Percentage: A list of patterns representing a percentage. For example, 1%, 11%, 100%, or 11.11%.
 - Phone number: Common US and International formats. For example, 000 000 0000, 000-000-0000, (000)000-0000, or (000) 000-0000.
@@ -62,11 +62,11 @@ To give you an example of how automatic templates work, in the following example
 
 ![Example file.](../media/content-understanding/before-label.png)
 
-When you select the Before label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the words that are identified in the first example file is "As of".
+When you select the Before label explanation template, it will look for the first set of words that appear before the label in your example files. In the example, the set of words that are identified in the first example file is "As of".
 
 ![Before label template.](../media/content-understanding/before-label-explanation.png)
 
-You can select **Add** to create an explanation from the template.  As you add more example files, additional words will be identified and added to the phrase list.
+You can select **Add** to create an explanation from the template. As you add more example files, additional words will be identified and added to the phrase list.
 
 ![Add the label.](../media/content-understanding/before-label-add.png)
 
