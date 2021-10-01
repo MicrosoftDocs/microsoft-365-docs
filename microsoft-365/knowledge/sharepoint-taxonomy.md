@@ -56,25 +56,25 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 1. In the SharePoint admin center, in the left navigation, select **Term store**.
 
-    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/taxonomy-single-term-01.png) 
+    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-01.png) 
 
 2. On the **Term store** page, search for and select the term you want to use.
 
-    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/taxonomy-single-term-02.png)
+    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-02.png)
 
 3. On the term page, select the **Usage settings** tab.
 
-    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/taxonomy-single-term-03.png)
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-03.png)
 
 4. In the **Create topic from this term** section, select **Request topic**.
 
-    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/taxonomy-single-term-03.png)
+    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-03.png)
 
 ### Request multiple terms in a term set
 
 1. In the SharePoint admin center, in the left navigation, select **Term store**.
 
-    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/taxonomy-multi-term-01.png) 
+    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-01.png) 
 
 2. On the **Term store** page, search for and select the term set you want to use.
 
