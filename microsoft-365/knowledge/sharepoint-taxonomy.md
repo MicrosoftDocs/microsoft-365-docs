@@ -78,7 +78,7 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 2. On the **Term store** page, search for and select the term set you want to use.
 
-
+    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-02.png)
 
 3. On the term page, select the **Usage settings** tab.
 
