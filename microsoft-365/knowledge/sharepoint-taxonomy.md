@@ -60,7 +60,7 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 3. On the term page, select the **Usage settings** tab.
 
-4. In the **Request topic from this term** section, select **Request topic**.
+4. In the **Create topic from this term** section, select **Request topic**.
 
 **--Insert screenshots from final UX--**
 
