@@ -1,6 +1,6 @@
 ---
 title: "Onboard Windows multi-session devices in Azure Virtual Desktop"
-description: "Read more in this article about Onboarding Windows 10 multi-session devices in Azure Virtual Desktop"
+description: "Read more in this article about Onboarding Windows multi-session devices in Azure Virtual Desktop"
 keywords: Azure Virtual Desktop, WVD, microsoft defender, endpoint, onboard
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -17,7 +17,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ---
 
-# Onboard Windows0 multi-session devices in Azure Virtual Desktop
+# Onboard Windows multi-session devices in Azure Virtual Desktop
 
 6 minutes to read
 
