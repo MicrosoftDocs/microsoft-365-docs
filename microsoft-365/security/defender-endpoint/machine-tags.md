@@ -26,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in **Devices list** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
 
@@ -36,7 +36,7 @@ You can add tags on devices using the following ways:
 - Setting a registry key value
 
 > [!NOTE]
-> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.  
+> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
 To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).
 
@@ -61,8 +61,9 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
->[!NOTE]
-> Filtering might not work on tag names that contain parenthesis.<br>
+> [!NOTE]
+> Filtering might not work on tag names that contain parenthesis.
+>
 > When you create a new tag, a list of existing tags are displayed. The list only shows tags created through the portal. Existing tags created from client devices will not be displayed.
 
 You can also delete tags from this view.
@@ -71,17 +72,18 @@ You can also delete tags from this view.
 
 ## Add device tags by setting a registry key value
 
->[!NOTE]
+> [!NOTE]
 > Applicable only on the following devices:
->- Windows 10, version 1709 or later
->- Windows Server, version 1803 or later
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 10, version 1709 or later
+> - Windows Server, version 1803 or later
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > The maximum number of characters that can be set in a tag is 200.
 
 Devices with similar tags can be handy when you need to apply contextual action on a specific list of devices.
@@ -92,7 +94,7 @@ Use the following registry key entry to add a tag on a device:
 - Registry key value (REG_SZ): `Group`
 - Registry key data: `Name of the tag you want to set`
 
->[!NOTE]
->The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
-> 
+> [!NOTE]
+> The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
+>
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.

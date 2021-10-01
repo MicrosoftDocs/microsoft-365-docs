@@ -34,7 +34,7 @@ To create a large case:
 
    The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a large case. Choose this case type if you need to collect a large amount of content in a short period of time.
 
-   ![Large case option on the New eDiscovery case page](..\media\AeDLargeCases1.png)
+   ![Large case option on the New eDiscovery case page.](..\media\AeDLargeCases1.png)
 
 4. After naming the case, select the **Large case** option, and then click **Save** to create the large case.
 
@@ -54,7 +54,13 @@ Here's a list of other benefits of large cases in Advanced eDiscovery workflow.
 
 Additionally, the new large case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab and in a flyout pane that persists of every tab in the case.
 
-![Large case statistics in Advanced eDiscovery user interface](..\media\LargeCaseUI.png)
+![Large case statistics in Advanced eDiscovery user interface.](..\media\LargeCaseUI.png)
+
+## Known issues
+
+- The option to export content as **Loose files and PSTs** is not currently supported in large cases (the option is greyed out). This export option for large cases will be supported soon. For more information about exporting content, see [Export documents from a review set in Advanced eDiscovery](export-documents-from-review-set.md).
+
+- The Advanced indexing that occurs when you add custodians and non-custodial data source to a case is not currently supported in large cases. The indexing job is created, but it doesn't complete. Advanced indexing in large cases will be supported soon. For more information about Advanced indexing, see [Advanced indexing of custodian data](indexing-custodian-data.md).
 
 ## Frequently asked questions
 

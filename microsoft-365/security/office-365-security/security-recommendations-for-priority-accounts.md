@@ -31,7 +31,7 @@ For attackers, ordinary phishing attacks that cast a random net for ordinary or 
 
 Microsoft 365 and Microsoft Defender for Office 365 contain several key features that provide additional layers of security for your priority accounts. This article describes these capabilities and how to use them.
 
-![Summary of the security recommendations in icon form](../../media/security-recommendations-for-priority-users.png)
+![Summary of the security recommendations in icon form.](../../media/security-recommendations-for-priority-users.png)
 
 <br>
 
@@ -39,11 +39,11 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 
 |Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[Increase sign-in security for priority accounts](#increase-sign-in-security-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Use Strict preset security policies for priority accounts](#use-strict-preset-security-policies-for-priority-accounts)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Increase sign-in security for priority accounts](#increase-sign-in-security-for-priority-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Use Strict preset security policies for priority accounts](#use-strict-preset-security-policies-for-priority-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Apply user tags to priority accounts](#apply-user-tags-to-priority-accounts)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Monitor priority accounts in alerts, reports, and detections](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|[Train users](#train-users)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Train users](#train-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 > [!NOTE]
@@ -125,7 +125,7 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 - Using strong passwords
 - Protecting devices
-- Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
+- Enabling security features on Windows and Mac PCs (for unmanaged devices)
 
 ## See also
 

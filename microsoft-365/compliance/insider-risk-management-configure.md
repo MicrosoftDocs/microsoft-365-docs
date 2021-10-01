@@ -45,6 +45,33 @@ Users included in insider risk management policies must be assigned one of the l
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
+## Recommended actions (preview)
+
+Recommended actions can help your organization quickly get started and to get the most out of insider risk management capabilities. Included on the **Overview** page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
+
+![Insider risk management recommended actions.](../media/insider-risk-recommended-actions.png)
+
+The following recommendations are available to help you get started with or maximize your insider risk management configuration:
+
+- **Turn on auditing**: When turned on, user and admin activity in your organization is recorded to the Microsoft 365 audit log. Insider risk policies and analytics scans use this log to detect risk activities.
+- **Get permissions to user risk management**: The level of access you have to insider risk management features depends on which role group you were assigned. To access and configure recommended actions, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Admins* role groups.
+- **Choose policy indicators**: Indicators are essentially the user activities you want to detect and investigate. You can choose indicators to track activity across several Microsoft 365 locations and services.
+- **Scan for potential insider risks**: Run an analytics scan to discover potential insider risks occurring in your org. After evaluating results, review recommended policies to set up.
+- **Assign permissions to others**: If there are additional team members who will be responsible for managing insider risk features, you'll need to assign them to the appropriate role groups.
+- **Create your first policy**: To receive alerts on potentially risky activities, you must set up policies based on predefined templates that define the user activities you want to detect and investigate.
+- **Review user whose activity is being scored**: The **Users dashboard** allows you to view users whose activity is currently being assigned risk scores, regardless of whether that activity met the threshold to generate an alert.
+- **Review alerts**: After a triggering event occurs for a user, policies start assigning risk scores to detected activity. If a risk score meets a policy's thresholds, you'll see an alert containing a detailed breakdown of all activity being scored for that user.
+- **Investigate a case**: Cases are manually created from alerts when further investigation is needed to identify potential insider risks. Each case is scoped to a single user and multiple alerts for the user can be added to an existing case or to a new case.
+
+Each recommended action included in this experience has four attributes:
+
+- **Action**: The name and description of the recommended action.
+- **Status**: The status of the recommended action. Values are *Not started*, *In progress*, *Saved for later*, or *Completed*.
+- **Required or optional**: Whether the recommended action is required or optional for insider risk management features to function as expected.
+- **Estimated time to complete**: Estimated time to complete the recommended action in minutes.
+
+Select a recommendation from the list to get started with configuring insider risk management. Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.   Each recommended action is automatically marked as complete when configured or you'll need to manually select the action as complete when configured.
+
 ## Step 1: Enable permissions for insider risk management
 
 > [!IMPORTANT]
@@ -52,15 +79,18 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 There are four roles groups used to configure permissions to manage insider risk management features. To continue with these configuration steps, your tenant administrators must first assign you to the **Insider Risk Management** or **Insider Risk Management Admin** role group. To access and manage insider risk management features after initial configuration, users must be a member of at least one insider risk management role group.
 
-Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of insider risk management features. To view the **Permissions** tab in the Office 365 Security & Compliance Center and manage role groups, you need to be assigned to the *Organization Management* role group or need to be assigned the *Role Management* role. Choose from these role group options when configuring insider risk management:
+>[!IMPORTANT]
+>Make sure you always have at least one user in the **Insider Risk Management** or **Insider Risk Management Admin** role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+
+Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of insider risk management features. To view the **Permissions** tab in the Microsoft 365 compliance center and manage role groups, you need to be assigned to the *Organization Management* role group or need to be assigned the *Role Management* role. Choose from these role group options when configuring insider risk management:
 
 | **Role group** | **Role permissions** |
 | :------------- | :------------------- |
-| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings.|
-| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to separate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings. |
+| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***.|
+| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to separate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***. |
 | **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access and view all insider risk management alerts, cases, analytics insights, and notices templates. They cannot access the insider risk Content explorer. |
 | **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content explorer for all cases. |
-| **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. |
+| **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. Users in this role group cannot access and use the recommended actions (preview) feature.|
 
 > [!NOTE]
 > These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -83,9 +113,11 @@ Complete the following steps to add users to an insider risk management role gro
 
 7. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
 
-## Step 2: Enable the Microsoft 365 audit log
+## Step 2: Enable the Microsoft 365 audit log (optional)
 
 Insider risk management uses Microsoft 365 audit logs for user insights and activities identified in policies and analytics insights. The Microsoft 365 audit logs are a summary of all activities within your organization and insider risk management policies may use these activities for generating policy insights.
+
+Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
 For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 

@@ -36,9 +36,7 @@ You can enable calendar sharing for all users in your organization in the Micros
   
 ## Enable calendar sharing using the Microsoft 365 admin center
 
-1. In the admin center, go to **Settings** \> **Org Settings**.
-
-2. On the **Services** tab, select **Calendar**.
+1. In the admin center, go to **Settings** \> **Org settings**, and on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, select **Calendar**.
   
 3. On the **Calendar** page, choose whether you want to let users share their calendars with people outside of your organization who have Microsoft 365 or Exchange. Choose whether you want to allow anonymous users (users without credentials) to access calendars via an email invitation.
 

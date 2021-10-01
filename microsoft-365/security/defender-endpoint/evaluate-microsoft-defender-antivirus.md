@@ -12,9 +12,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 09/03/2018
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Evaluate Microsoft Defender Antivirus
@@ -28,11 +29,12 @@ ms.technology: mde
 
 Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
 
->[!TIP]
+> [!TIP]
 >You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
->- Cloud-delivered protection
->- Fast learning (including Block at first sight)
->- Potentially unwanted application blocking
+>
+> - Cloud-delivered protection
+> - Fast learning (including Block at first sight)
+> - Potentially unwanted application blocking
 
 It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
 

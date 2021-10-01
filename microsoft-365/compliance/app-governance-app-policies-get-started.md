@@ -2,8 +2,8 @@
 title: "Get started with app policies"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -22,9 +22,9 @@ description: "Get started with Learn about app policies."
 
 App policies for Microsoft app governance are the way that you can implement more proactive or reactive conditions to create alerts or automatic remediation for your specific needs for app compliance in your organization.
 
-To see the list of current app policies, go to **Microsoft 365 Compliance Center > App protection & governance > Policies**.
+To see the list of current app policies, go to **Microsoft 365 Compliance Center > App governance > Policies**.
 
-![The MAPG policies summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-policies.png)
+![The MAPG policies summary page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-policies.png)
 
 ## What’s available on the app policies dashboard
 
@@ -58,6 +58,19 @@ You can also:
 - Create a new policy. You can start with an app usage policy or a permissions policy.
 - Export the policy list to a comma-separated value (CSV) file. For example, you could open the CVS file in Microsoft Excel and sort the policies by **Severity** and then **Number of Total Alerts**.
 - Search the policy list.
+
+## Edit an existing policy
+
+1. In the app governance portal, select the **Policies** tab.
+1. Select the policy you want to edit. A panel will open on the right side with the details of the existing policy.
+1. Select **Edit**.
+1. You cannot change the name of the policy once created, but you can change the description and policy severity. Select **Next**.
+1. Choose whether you want to continue with the existing policy settings or customize them. Select **No. I want to customize the policy** to make changes. Select **Next**.
+1. Choose whether this policy will apply to all apps or to apps you specify in the list. Select **Add apps** to add more apps to the list if applying the policy to specific apps. Select **Next**.
+1. Choose whether to modify the existing conditions of the policy. If you choose to modify the conditions, select **Edit conditions**. Select **Next**.
+1. Choose whether to disable the app if it triggers the policy conditions. Select **Next**.
+1. Set the policy status to Audit, Active, or Inactive. Select **Next**.
+1. Review your setting choices for the policy and if everything is the way you want it, select **Submit**.
 
 ## Next step
 

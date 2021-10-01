@@ -1,5 +1,5 @@
 ---
-title: Review architecture requirements and the structure for Microsoft Cloud App Security, plan the configuration and design by knowing the framework of Cloud App Security in Microsoft 365 Defender
+title: Review architecture requirements and the structure for Microsoft Cloud App Security
 description: Microsoft Cloud App Security technical diagrams explain the architecture in Microsoft 365 Defender, which will help you build a pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,7 +40,7 @@ Microsoft Cloud App Security is a Cloud Access Security Broker (CASB). CASBs act
 
 Without Cloud App Security, cloud apps that are used by your organization are unmanaged and unprotected, as illustrated.
 
-![Architecture for Microsoft Cloud App Security](../../media/defender/m365-defender-mcas-architecture-a.png)
+![Architecture for Microsoft Cloud App Security.](../../media/defender/m365-defender-mcas-architecture-a.png)
 
 In the illustration:
 - The use of cloud apps by an organization is unmonitored and unprotected. 
@@ -50,17 +50,17 @@ In the illustration:
 
 The first step to managing the use of cloud apps is to discover which cloud apps are used by your organization. This next diagram illustrates how cloud discovery works with Cloud App Security.
 
-![Architecture for Microsoft Cloud App Security - Cloud discovery](../../media/defender/m365-defender-mcas-architecture-b.png)
+![Architecture for Microsoft Cloud App Security - Cloud discovery.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
-- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 devices. 
+- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices. 
 - B. For coverage on all devices connected to a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Cloud App Security for analysis.
 
 #### Managing cloud apps
 
 After you discover cloud apps and analyze the behavior of how these are used by your organization, you can begin managing cloud apps that you choose. 
 
-![Architecture for Microsoft Cloud App Security - Managing cloud apps](../../media/defender/m365-defender-mcas-architecture-c.png)
+![Architecture for Microsoft Cloud App Security - Managing cloud apps.](../../media/defender/m365-defender-mcas-architecture-c.png)
 
 In this illustration:
 - Some apps are sanctioned for use. This is a simple way of beginning to manage apps.
@@ -71,7 +71,7 @@ In this illustration:
 
 Microsoft Cloud App Security serves as a reverse proxy, providing proxy access to sanctioned cloud apps. This allows Cloud App Security to apply session controls that you configure. 
 
-![Architecture for Microsoft Cloud App Security - Proxy access session control](../../media/defender/m365-defender-mcas-architecture-d.png)
+![Architecture for Microsoft Cloud App Security - Proxy access session control.](../../media/defender/m365-defender-mcas-architecture-d.png)
 
 In this illustration:
 - Access to sanctioned cloud apps from users and devices in your organization is routed through Cloud App Security.
@@ -84,7 +84,7 @@ Session controls allow you to apply parameters to how cloud apps are used by you
 
 You might already have SaaS apps added to your Azure AD tenant to enforce multi-factor authentication and other conditional access policies. Microsoft Cloud App Security natively integrates with Azure AD. All you have to do is configure a policy in Azure AD to use Conditional Access App Control in Cloud App Security. This routes network traffic for these managed SaaS apps through Cloud App Security as a proxy, which allows Cloud App Security to monitor this traffic and to apply session controls. 
 
-![Architecture for Microsoft Cloud App Security - SaaS apps](../../media/defender/m365-defender-mcas-architecture-e.png)
+![Architecture for Microsoft Cloud App Security - SaaS apps.](../../media/defender/m365-defender-mcas-architecture-e.png)
 
 In this illustration:
 - SaaS apps are integrated with the Azure AD tenant. This allows Azure AD to enforce conditional access policies, including multi-factor authentication.
@@ -99,7 +99,7 @@ Cloud App Security provides powerful protection on its own. However, when combin
 
 It's worth repeating this illustration from the overview to this Microsoft 365 Defender evaluation and pilot guide. 
 
-![How Microsoft 365 Defender stops a chain of threats](../../media/defender/m365-defender-eval-threat-chain.png)
+![How Microsoft 365 Defender stops a chain of threats.](../../media/defender/m365-defender-eval-threat-chain.png)
 
 Focusing on the right side of this illustration, Microsoft Cloud App Security notices anomalous behavior like impossible-travel, credential access, and unusual download, file share, or mail forwarding activity and reports these to the security team. Consequently, Cloud App Security helps prevent lateral movement by hackers and exfiltration of sensitive data. Microsoft 356 Defender correlates the signals from all the components to provide the full attack story.
 
@@ -123,7 +123,7 @@ The following table identified key concepts that are important to understand whe
 
 To discover cloud apps used in your environment, you can do one or both of the following:
 
-- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 11 and Windows 10 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
 
 These options are included in [Step 2. Enable the evaluation environment](eval-defender-mcas-enable-eval.md). 

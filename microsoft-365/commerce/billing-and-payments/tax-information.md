@@ -83,6 +83,7 @@ Businesses in the following countries can provide their VAT number or local equi
 - Sweden
 - Switzerland
 - Taiwan
+- Thailand
 - Turkey
 - United Arab Emirates
 - United Kingdom

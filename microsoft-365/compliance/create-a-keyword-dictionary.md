@@ -68,7 +68,7 @@ Remove-Item $rawFile
 
 The keywords for your dictionary could come from various sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. Use the **Security & Compliance Center** ([https://protection.office.com](https://protection.office.com)) or connect to  **Security &amp; Compliance Center PowerShell**.
+1. Use the **Compliance Center** ([https://compliance.microsoft.com](https://compliance.microsoft.com)) or connect to  **Security &amp; Compliance Center PowerShell**.
     
 2. **Define or load your keywords from your intended source**. The wizard and the cmdlet both accept a comma-separated list of keywords to create a custom keyword dictionary, so this step will vary slightly depending on where your keywords come from. Once loaded, they're encoded and converted to a byte array before they're imported.
     
@@ -78,7 +78,7 @@ The keywords for your dictionary could come from various sources, most commonly 
 
 Use the following steps to create and import keywords for a custom dictionary:
 
-1. Connect to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)).
+1. Connect to the Compliance Center ([https://compliance.microsoft.com](https://compliance.microsoft.com)).
 
 2. Navigate to **Classifications > Sensitive info types**.
 
@@ -180,11 +180,14 @@ Paste the identity into your custom sensitive information type's XML and upload 
 
 > [!TIP]
 > To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
->
-> For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
->
+> - For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
+
+> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), it is recommended to create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only. 
+> - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the it you should create two keyword lists. 
+>     1. Highly confidential
+>     2. 機密性が高い, 机密的document and 机密的 document
+>     
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
->
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > We recommend using a string match instead of a word match in a keyword list.

@@ -9,13 +9,14 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: denisebmsft
-ms.author: deniseb
+author: jweston-1
+ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Use attack surface reduction rules to prevent malware infection
@@ -43,7 +44,7 @@ For more information about configuring attack surface reduction rules, see [Enab
 
 You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [threat and vulnerability management](/windows/security/threat-protection/#tvm).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="Security reco for attack surface reduction rule":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="Security reco for attack surface reduction rule.":::
 
 In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 

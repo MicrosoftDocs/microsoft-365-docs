@@ -45,6 +45,7 @@ The following table lists the limits for holds associated with an Advanced eDisc
 
 | Description of limit | Limit |
 |:-----|:-----|
+|Maximum number of case holds for an organization. This limit includes the combined total of holds in Core eDiscovery and Advanced eDiscovery cases. <br/> |10,000  <br/> |
 |Maximum number of mailboxes in a single case hold. This limit includes the combined total of user mailboxes, and the mailboxes associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups. <br/> |1,000  <br/> |
 |Maximum number of sites in a single case hold. This limit includes the combined total of OneDrive for Business sites, SharePoint sites, and the sites associated with Microsoft 365 Groups, Microsoft Teams, and Yammer Groups.  <br/> |100  <br/> |
 
@@ -55,10 +56,9 @@ The following table lists the indexing limits in Advanced eDiscovery.
 | Description of limit | Limit |
 |:-----|:-----|
 |Maximum number of characters extracted from a single file.  <br/> |10 million<sup>1</sup> <br/> |
-|Maximum size of a single file.   <br/> |100 MB<sup>1</sup> <br/> |
+|Maximum size of a single file.   <br/> |150 MB<sup>1</sup> <br/> |
 |Maximum depth of embedded items in a document.  <br/> |25<sup>1</sup> <br/> |
-|Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/> 
-|Maximum number of indexing jobs per organization per day. <br/> |10<sup>6</sup> <br/>|  
+|Maximum size of files processed by Optical Character Recognition (OCR).  <br/> |24 MB<sup>1</sup> <br/>  
 |||
 
 ## Search limits
@@ -140,4 +140,3 @@ The limits described in this section are related to exporting documents out of a
 >
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
 >
-> <sup>6</sup> Indexing limits per organization per day. As a workaround, you can select multiple custodians on the **Data sources** tab in a case and then click **Update index** to avoid creating a separate index job for each custodian. 

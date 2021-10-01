@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint on Linux using Ansible. A successful deployment requires the completion of all of the following tasks:
 
@@ -72,7 +72,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot](images/portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux-2.png)
 
 4. From a command prompt, verify that you have the file. Extract the contents of the archive:
 
@@ -133,12 +133,12 @@ Create a subtask or role files that contribute to a playbook or task.
     > [!WARNING]
     > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+    Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with “rhel”.
+    > In case of Oracle Linux, replace *[distro]* with "rhel".
 
   ```bash
   - name: Add Microsoft APT key
@@ -149,7 +149,7 @@ Create a subtask or role files that contribute to a playbook or task.
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -163,10 +163,10 @@ Create a subtask or role files that contribute to a playbook or task.
 
   - name: Add  Microsoft yum repository for MDATP
     yum_repository:
-      name: packages-microsoft-com-prod-[channel]
+      name: packages-microsoft-[channel]
       description: Microsoft Defender for Endpoint
       file: microsoft-[channel]
-      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
+      baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/ 
       gpgcheck: yes
       enabled: Yes
     when: ansible_os_family == "RedHat"

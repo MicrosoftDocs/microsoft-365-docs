@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -28,7 +28,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 The potentially unwanted application (PUA) protection feature in Defender for Endpoint on Linux can detect and block PUA files on endpoints in your network.
 
@@ -50,8 +50,8 @@ PUA protection in Defender for Endpoint on Linux can be configured in one of the
 - **Audit**: PUA files are reported in the product logs, but not in Microsoft 365 Defender. No record of the infection is stored in the threat history and no action is taken by the product.
 - **Block**: PUA files are reported in the product logs and in Microsoft 365 Defender. A record of the infection is stored in the threat history and action is taken by the product.
 
->[!WARNING]
->By default, PUA protection is configured in **Audit** mode.
+> [!WARNING]
+> By default, PUA protection is configured in **Audit** mode.
 
 You can configure how PUA files are handled from the command line or from the management console.
 

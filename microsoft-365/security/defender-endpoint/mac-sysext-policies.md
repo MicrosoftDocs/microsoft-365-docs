@@ -29,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 In alignment with macOS evolution, we are preparing a Microsoft Defender for Endpoint on macOS update that leverages system extensions instead of kernel extensions. This update will only be applicable to macOS Catalina (10.15.4) and newer versions of macOS.
 
@@ -49,26 +49,26 @@ To approve the system extensions, create the following payload:
     - **com.microsoft.wdav.epsext**
     - **com.microsoft.wdav.netext**
 
-    ![Approved system extensions screenshot](images/mac-approved-system-extensions.png)
+    ![Approved system extensions screenshot.](images/mac-approved-system-extensions.png)
 
 ### Privacy Preferences Policy Control
 
 Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender for Endpoint Endpoint Security Extension. This policy is a pre-requisite for running the extension on your device.
 
-1. Select **Options** > **Privacy Preferences Policy Control**.
+1. Select **Options** \> **Privacy Preferences Policy Control**.
 2. Use `com.microsoft.wdav.epsext` as the **Identifier** and `Bundle ID` as **Bundle type**.
 3. Set Code Requirement to `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 4. Set **App or service** to **SystemPolicyAllFiles** and access to **Allow**.
 
-    ![Privacy Preferences Policy Control](images/mac-system-extension-privacy.png)
+    ![Privacy Preferences Policy Control.](images/mac-system-extension-privacy.png)
 
 ### Network Extension Policy
 
 As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
->[!NOTE]
->JAMF doesn't have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint on macOS installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
->As such, the following steps provide a workaround that involve signing the configuration profile.
+> [!NOTE]
+> JAMF doesn't have built-in support for content filtering policies, which are a pre-requisite for enabling the network extensions that Microsoft Defender for Endpoint on macOS installs on the device. Furthermore, JAMF sometimes changes the content of the policies being deployed.
+> As such, the following steps provide a workaround that involve signing the configuration profile.
 
 1. Save the following content to your device as `com.microsoft.network-extension.mobileconfig` using a text editor:
 
@@ -173,17 +173,22 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
 
 To approve the system extensions:
 
-1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create Profile**.
+1. In Intune, open **Manage** \> **Device configuration**. Select **Manage** \> **Profiles** \> **Create Profile**.
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**. Select **Create**.
 3. In the `Basics` tab, give a name to this new profile.
 4. In the `Configuration settings` tab, add the following entries in the `Allowed system extensions` section:
 
-    Bundle identifier         | Team identifier
-    --------------------------|----------------
-    com.microsoft.wdav.epsext | UBF8T346G9
-    com.microsoft.wdav.netext | UBF8T346G9
+   <br>
 
-    ![System configuration profiles screenshot](images/mac-system-extension-intune2.png)
+   ****
+
+   |Bundle identifier|Team identifier|
+   |---|---|
+   |com.microsoft.wdav.epsext|UBF8T346G9|
+   |com.microsoft.wdav.netext|UBF8T346G9|
+   |||
+
+   ![System configuration profiles screenshot.](images/mac-system-extension-intune2.png)
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
@@ -300,12 +305,12 @@ sysext.xml: OK
 
 To deploy this custom configuration profile:
 
-1. In Intune, open **Manage** > **Device configuration**. Select **Manage** > **Profiles** > **Create profile**.
+1. In Intune, open **Manage** \> **Device configuration**. Select **Manage** \> **Profiles** \> **Create profile**.
 2. Choose a name for the profile. Change **Platform=macOS** and **Profile type=Custom**. Select **Configure**.
 3. Open the configuration profile and upload **sysext.xml**. This file was created in the preceding step.
 4. Select **OK**.
 
-    ![System extension in Intune screenshot](images/mac-system-extension-intune.png)
+    ![System extension in Intune screenshot.](images/mac-system-extension-intune.png)
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.

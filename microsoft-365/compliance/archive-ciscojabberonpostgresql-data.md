@@ -27,7 +27,7 @@ After Cisco Jabber on PostgreSQL data is stored in user mailboxes, you can apply
 
 The following overview explains the process of using a connector to archive the Cisco Jabber on PostgreSQL data in Microsoft 365.
 
-![Archiving workflow for Cisco Jabber on PostgreSQL data](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
+![Archiving workflow for Cisco Jabber on PostgreSQL data.](../media/CiscoJabberonPostgreSQLConnectorWorkflow.png)
 
 1. Your organization works with Cisco Jabber on PostgreSQL to set up and configure a Cisco Jabber on PostgreSQL site.
 

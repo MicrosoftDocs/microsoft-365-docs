@@ -13,7 +13,7 @@ author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -29,7 +29,7 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersecurity weaknesses identified in your organization are mapped to actionable security recommendations and prioritized by their impact. Prioritized recommendations help shorten the time to mitigate or remediate vulnerabilities and drive compliance.
 
@@ -85,9 +85,9 @@ The color of the **Exposed devices** graph changes as the trend changes. If the 
 
 Useful icons also quickly call your attention to:
 
-- ![arrow hitting a target](images/tvm_alert_icon.png) possible active alerts
-- ![red bug](images/tvm_bug_icon.png) associated public exploits
-- ![light bulb](images/tvm_insight_icon.png) recommendation insights
+- ![arrow hitting a target.](images/tvm_alert_icon.png) possible active alerts
+- ![red bug.](images/tvm_bug_icon.png) associated public exploits
+- ![light bulb.](images/tvm_insight_icon.png) recommendation insights
 
 ### Explore security recommendation options
 
@@ -103,8 +103,8 @@ From the flyout, you can choose any of the following options:
 
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
->[!NOTE]
->When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+> [!NOTE]
+> When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 
@@ -132,7 +132,7 @@ When an exception is created for a recommendation, the recommendation is no long
 
 ### How to create an exception
 
-Select a security recommendation you would like create an exception for, and then select **Exception options**.  
+Select a security recommendation you would like create an exception for, and then select **Exception options**.
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
