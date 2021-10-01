@@ -180,14 +180,16 @@ You can also create one or more **auto-apply retention label policies**, each wi
 
 #### Retention label policies and locations
 
-Different types of retention labels can be published to different locations, depending on what the retention label does.
+Retention labels can be published to different locations, depending on what the retention label does.
   
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 |Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange, SharePoint, OneDrive  <br/> |
 |Auto-applied based on keywords or a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-   
+|Auto-applied to cloud attachments  <br/> |SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+
+
 In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
   
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
