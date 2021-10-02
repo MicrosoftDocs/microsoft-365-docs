@@ -19,7 +19,6 @@ ms.collection: m365-security-compliance
 ---
 
 
-
 # Use limited periodic scanning in Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]

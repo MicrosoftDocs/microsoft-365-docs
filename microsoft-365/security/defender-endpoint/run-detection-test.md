@@ -29,7 +29,8 @@ ms.technology: mde
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, version 1803
-- Windows Server, 2019
+- Windows Server 2019
+- Windows Server 2022
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
