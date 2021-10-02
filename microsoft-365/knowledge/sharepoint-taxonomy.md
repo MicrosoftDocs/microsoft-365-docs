@@ -84,15 +84,15 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
     ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-03.png)
 
-4. In the **Request topics from terms** section, select **Get started**.
+4. In the **Create topics from terms** section, select **Get started**.
 
     ![Screenshot showing the Request topics from terms section in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-new-set.png)
 
-   If you’ve raised requests in the past, the option that appears is **Request terms for creation**.
+   If you’ve raised requests in the past, the option that appears is **Create terms for creation**.
 
     ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-existing-set.png)
 
-    1. On the **Select terms for creating topics** panel, the hierarchy of terms within this term set is available for selection.
+    1. On the **Select terms to create topics** page, the hierarchy of terms within this term set is available for selection.
 
         ![Screenshot showing the Select terms for creating topics panel in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04a.png)
 
@@ -102,9 +102,7 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 5. After you select the terms for which you want to create topics, select **Submit**.
 
-Viva Topics creates the request and queues it to be processed. Viva Topics evaluates the terms and their associated resources and creates new topics or merges with existing topics. After the initial request, the topic will be created within 24 hours.
-
-**--Insert screenshots from final UX--**
+    Viva Topics creates the request and queues it to be processed. Viva Topics evaluates the terms and their associated resources and creates new topics or merges with existing topics. After the initial request, the topic will be created within 24 hours.
 
 ## View the status of the topic creation request
 
