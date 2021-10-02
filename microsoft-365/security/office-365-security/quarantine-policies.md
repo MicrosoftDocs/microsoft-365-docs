@@ -330,7 +330,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
    **Note**: When you create a new policy, a blank **Apply quarantine policy** value indicates the default quarantine policy for that action is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the previous table.
 
-   ![Quarantine policy selections in an anti-spam policy.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![Quarantine policy selections in an anti-phishing policy.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Full instructions for creating and modifying anti-phishing polices are available in the following topics:
 
