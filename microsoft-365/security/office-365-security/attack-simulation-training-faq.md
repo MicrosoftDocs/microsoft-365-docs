@@ -25,7 +25,7 @@ ms.prod: m365-security
 
 # Attack simulation training deployment considerations and FAQ
 
-Attack simulation training is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291). Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
+Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
 
 For more information about getting started with Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -37,7 +37,7 @@ While the whole simulation creation and scheduling experience has been designed 
 
 A URL reputation service might identify one or more of the URLs that are used by Attack simulation training as unsafe. Google Safe Browsing in Google Chrome blocks some of the simulated phishing URLs with a **Deceptive site ahead** message. While we work with many URL reputation vendors to always allow our simulation URLs, we don't always have full coverage.
 
-![Deceptive site ahead warning in Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Deceptive site ahead warning in Google Chrome.](../../media/attack-sim-training-chrome-deceptive-site-message.png)
 
 Note that this issue does not affect Microsoft Edge.
 
@@ -94,11 +94,11 @@ Every simulation campaign has a lifecycle. When first created, the simulation is
 
 While a simulation is in the **Scheduled** state, the simulation reports will be mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
 
-![Reporting in the Scheduled state.](../../media/attack-sim-empty-reporting.png)
+![Reporting in the Scheduled state.](../../media/attack-sim-training-empty-reporting.png)
 
 Once the simulation enters the **In progress** stage, you will notice information starting to trickle into the reporting:
 
-![Reporting in the In progress state.](../../media/attack-sim-in-progress.png)
+![Reporting in the In progress state.](../../media/attack-sim-training-in-progress.png)
 
 It can take up to 30 minutes for the individual simulation reports to update after the transition to the **In progress** state. The report data continues to build until the simulation reaches the **Completed** state. Reporting updates occur at the following intervals:
 
@@ -150,7 +150,7 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 5 localized payloads available. We've noticed than any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
+A: Currently, there are 5 localized payloads available. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
@@ -164,7 +164,7 @@ Note that the configuration change might take up to 30 minutes to synchronize ac
 
 A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option will send a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
-![Send a test button on the Review simulation page.](../../media/attack-sim-review-simulation-page.png)
+![Send a test button on the Review simulation page.](../../media/attack-sim-training-review-simulation-page.png)
 
 ### Q: Can I target users that belong to a different tenant as part of the same simulation campaign?
 

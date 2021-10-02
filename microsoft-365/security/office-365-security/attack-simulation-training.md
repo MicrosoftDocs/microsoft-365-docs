@@ -27,7 +27,7 @@ To launch a simulated phishing attack, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training**.
 
-   To go directly to the **Attack simulation training**, use <https://security.microsoft.com/attacksimulator> and switch to the **[Simulations](https://security.microsoft.com/attacksimulator?viewid=simulations)** tab.
+   To go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator> and switch to the **[Simulations](https://security.microsoft.com/attacksimulator?viewid=simulations)** tab.
 
 2. On the **Attack simulation training** page, select the **Simulations** tab.
 
@@ -38,7 +38,7 @@ To launch a simulated phishing attack, do the following steps:
 4. A 7-page simulation creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
-> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later.
+> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
 
 ## Select a social engineering technique
 
@@ -108,7 +108,9 @@ If you select a payload from the list, details about the payload are shown in a 
 
 ![Payload details flyout in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-details.png)
 
-If you'd like to create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [create a payload for attack simulation training](attack-simulation-training-payloads.md).
+If you select a payload from the list, a ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
+
+To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create a payload for attack simulation training](attack-simulation-training-payloads.md).
 
 When you're finished, click **Next**.
 
@@ -154,26 +156,123 @@ When you're finished, click **Next**.
 
 ## Assign training
 
-On the **Assign training** page, we recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks.
+On the **Assign training** page, you can assign trainings for the simulation. We recommend that you assign training for each simulation, as employees who go through training are less susceptible to similar attacks. The following settings are available:
 
-You can either choose to have training assigned for you or select training courses and modules yourself.
+- **Select training content preference**: Choose one of the following options:
+  - **Microsoft training experience**: This is the default value that has the following associated options to configure:
+    - Select one of the following options:
+      - **Assign training for me**: This is the default and recommended value. We assign training based on a user's previous simulation and training results, and you can review the selections in the next steps of the wizard.
+      - **Select training courses and modules myself**: If you select this value, you'll still be able to see the recommended content as well as all available courses and modules in the next step of the wizard.
+    - **Due date**: Choose one of the following values:
+      - **30 days after simulation ends**: This is the default value.
+      - **15 days after simulation ends**
+      - **7 days after simulation ends**
+  - **Redirect to a custom URL**: This value has the following associated options to configure:
+    - **Custom training URL** (required)
+    - **Custom training name** (required)
+    - **Custom training description**
+    - **Custom training duration (in minutes)**: The default value is 0, which means there is no specified duration for the training.
+    - **Due date**: Choose one of the following values:
+      - **30 days after simulation ends**: This is the default value.
+      - **15 days after simulation ends**
+      - **7 days after simulation ends**
+  - **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
 
-Select the **training due date** to make sure employees finish their training in a timely manner.
+![Add recommended training on the Training assignment page in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-add-training.png)
+
+### Training assignment
 
 > [!NOTE]
-> If you choose to select courses and modules yourself, you'll still be able to see the recommended content as well as all available courses and modules.
->
-> ![Adding recommended training within attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-preview-add-training.png)
+> The **Training assignment** page is available only if you selected **Microsoft training experience** and **Select training courses and modules myself** on the previous page.
 
-In the next steps you'll need to **Add trainings** if you opted to select it yourself, and customize your training landing page. You'll be able to preview the training landing page, as well as change the header and body of it.
+On the **Training assignment** page, select the trainings that you want to add to the simulation.
 
-## Launch details and review
+On the main page, existing custom trainings are shown. These trainings are created if you selected **Redirect to a custom URL** on the previous page and and filled out the required information, even if you changed your mind and selected **Microsoft training experience** and **Select training courses and modules myself** to arrive here. The following information is shown for existing custom trainings:
 
-Now that everything is configured, you can launch this simulation immediately or schedule it for a later date. You will also need to choose when to end this simulation. We will stop capturing interaction with this simulation past the selected time.
+- **Training name**
+- **Source**: The value is **Tenant** (custom).
+- **Duration (mins)**
+- **Assign to**: Select **All users** or one or more of the following values:
+  - **Clicked payload**
+  - **Compromised**: This is the default value.
 
-**Enable region aware timezone delivery** to deliver simulated attack messages to your employees during their working hours based on their region.
+If you don't want to use the custom training that's shown, click ![Delete icon.](../../media/m365-cc-sc-search-icon.png) **Delete**.
 
-Once you're done, click on **Next** and review the details of your simulation. Click on **Edit** on any of the parts to go back and change any details that need changing. Once done, click **Submit**.
+To assign trainings, click ![Add trainings icon.](../../media/m365-cc-sc-create-icon.png) **Add trainings**.
+
+On the **Add training** flyout that appears, you can select the trainings to use on the following tabs that are available:
+
+- **Recommended**: Shows the recommended built-in trainings based on the simulation configuration. These are the same trainings that would have been assigned if you selected **Assign training for me** on the previous page.
+- **All trainings**: Shows all built-in trainings that are available.
+
+The following information is shown for each training:
+
+- **Training name**
+- **Source**: The value is **Global**.
+- **Duration (mins)**
+- **Preview**: Click the **Preview** button to see the training.
+
+In the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box, you can type part of the training name and press Enter to filter the results.
+
+Select all trainings that you want to include, and then click **Add**.
+
+When you're finished, click **Next**.
+
+### Landing page
+
+On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+
+- **Select landing page preference**: The available values are:
+  - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
+    - **Select landing page layout**: Select one of the available templates.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file.
+    - **Add payload indicators to email**: Select this setting to help users learn how to identify phishing messages.
+
+    You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
+
+  - **Use a custom URL**: If you select this value, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
+  - **Create your own landing page**: This value has the following associated options to configure:
+    - **Add payload indicators to email**: Select this setting to help users learn how to identify phishing messages.
+    - Page content: Two tabs are available:
+      - **Text**: In the editing area, you can enter and format text, as well tags and templates that you can add and use. The following settings are available:
+        - **Dynamic tag**: Select from the following tags:
+          - **Username**
+          - **Email sender name**
+          - **Sender email address**
+          - **Email subject**
+          - **Email content**
+        - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
+    - **Code**: You can view and modify the HTML code directly.
+
+    You can preview the results by clicking the **Open preview panel** button in the middle of the page.
+
+When you're finished, click **Next**.
 
 > [!NOTE]
 > Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
+
+## Launch details
+
+On the **Launch details** page, you choose when to launch the simulation and when to end the simulation. We'll stop capturing interaction with this simulation after the end date you specify.
+
+The following settings are available:
+
+- Choose one of the following values:
+  - **Launch this simulation as soon as I'm done**
+  - **Schedule this simulation to be launched later**: This value has the following associated options to configure:
+    - **Select launch date**
+    - **Select launch time**
+- **Configure number of days to end simulation after**: The default value is 2.
+- **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+
+When you're finished, click **Next**.
+
+## Review simulation
+
+On the **Review simulation** page, you can review the details of your simulation.
+
+Click the ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
+
+You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
+
+When you're finished, click **Submit**.
