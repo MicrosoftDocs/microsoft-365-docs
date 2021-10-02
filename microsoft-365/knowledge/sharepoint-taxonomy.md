@@ -84,12 +84,20 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
     ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-03.png)
 
-4. In the **Request topics from terms** section, select **Get started**. If you’ve raised requests in the past, the option that appears is **Request terms for creation**.
+4. In the **Request topics from terms** section, select **Get started**.
 
-    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04.png)
+    ![Screenshot showing the Request topics from terms section in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-new-set.png)
+
+   If you’ve raised requests in the past, the option that appears is **Request terms for creation**.
+
+    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-existing-set.png)
 
     1. On the **Select terms for creating topics** panel, the hierarchy of terms within this term set is available for selection.
+
+        ![Screenshot showing the Select terms for creating topics panel in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04a.png)
+
     2. To select specific terms, select each term individually.
+
     3. You can also select all immediate children of a node in the hierarchy. 
 
 5. After you select the terms for which you want to create topics, select **Submit**.
