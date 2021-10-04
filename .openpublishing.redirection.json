@@ -4566,17 +4566,17 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "/microsoft-365/admin/setup/get-started-windows-365-business.md",
+      "source_path": "microsoft-365/admin/setup/get-started-windows-365-business.md",
       "redirect_url": "/windows-365/business/get-started-windows-365-business",
       "redirect_document_id": false
     },
     {
-      "source_path": "/microsoft-365/admin/setup/troubleshoot-windows-365-business",
+      "source_path": "microsoft-365/admin/setup/troubleshoot-windows-365-business",
       "redirect_url": "/windows-365/business/troubleshoot-windows-365-business",
       "redirect_document_id": false
     },
     {
-      "source_path": "/microsoft-365/admin/setup/windows-365-business-sizing.md",
+      "source_path": "microsoft-365/admin/setup/windows-365-business-sizing.md",
       "redirect_url": "/windows-365/business/windows-365-business-sizing",
       "redirect_document_id": false
     } 
