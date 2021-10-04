@@ -46,7 +46,8 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. When endpoints running Windows are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus solution. To learn more, see [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint).
 
 As you're making the switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. The following table describes what to do on your Windows clients and servers.
-<br/><br/>
+</br> </br>
+
 |Endpoint type|What to do|
 |---|---|
 |Windows clients (such as endpoints running Windows 10 and Windows 11)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <p> Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <p> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <p> Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <p> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
