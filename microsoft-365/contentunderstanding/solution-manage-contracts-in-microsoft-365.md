@@ -8,9 +8,9 @@ audience: admin
 ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
-ms.collection: 
-    m365solution-managecontracts
-    m365solution-overview
+ms.collection:
+- m365solution-managecontracts
+- m365solution-overview
 search.appverid: 
 localization_priority: None
 ROBOTS: 

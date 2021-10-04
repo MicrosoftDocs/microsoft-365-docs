@@ -15,8 +15,8 @@ ms.date: 09/03/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
-
 
 
 # Use limited periodic scanning in Microsoft Defender Antivirus

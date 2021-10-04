@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
 ms.date: 04/13/2021
@@ -60,7 +61,7 @@ The partner contacts you and gives you a chance to learn more about them. If you
 
 After you find a partner and decide to work with them, they send you an email invitation.
 
-1. In the email, select the link to go to the Microsoft 365 admin center.
+1. In the email, select the link to go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. On the **Accept agreement & authorize partner** page, select the link for the **Microsoft Customer Agreement**, and read the document.
 3. Check the box to acknowledge that you read the agreement.
 4. Select **Accept & Authorize**.

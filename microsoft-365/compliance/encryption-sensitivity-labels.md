@@ -58,7 +58,7 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     ![Sensitivity label protection options for files and emails.](../media/protection-options-sensitivity-label.png)
 
-4.  On the **Encryption** page of the wizard, select one of the following options:
+4.  On the **Encryption** page, select one of the following options:
     
     - **Remove encryption if the file is encrypted**: This option is supported by the Azure Information Protection unified labeling client only. When you select this option and use built-in labeling, the label might not display in apps, or display and not make any encryption changes.
         
@@ -110,7 +110,7 @@ Documents that are already encrypted and then added as attachments always preser
 
 ## Configure encryption settings
 
-When you select **Configure encryption settings** on the **Encryption** page of the wizard to create or edit a sensitivity label, choose one of the following options:
+When you select **Configure encryption settings** on the **Encryption** page to create or edit a sensitivity label, choose one of the following options:
 
 - **Assign permissions now**, so that you can determine exactly which users get which permissions to content that has the label applied. For more information, see the next section [Assign permissions now](#assign-permissions-now).
 - **Let users assign permissions** when your users apply the label to content. With this option, you can allow people in your organization some flexibility that they might need to collaborate and get their work done. For more information, see the [Let users assign permissions](#let-users-assign-permissions) section on this page.
@@ -299,7 +299,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 ## Example configurations for the encryption settings
 
-For each example that follows, do the configuration from the **Encryption** page of the wizard when **Configure encryption settings** is selected:
+For each example that follows, do the configuration from the **Encryption** page when **Configure encryption settings** is selected:
 
 ![Apply encryption option in the sensitivity label wizard.](../media/apply-encryption-option.png)
 
@@ -315,7 +315,7 @@ Your users type the Gmail email address in the **To** box.  Then, they select th
 
 3. If selected, clear the checkbox: **In Word, PowerPoint, and Excel, prompt users to specify permissions**.
 
-4. Select **Next** and complete the wizard.
+4. Select **Next** and complete the configuration.
 
 ### Example 2: Label that restricts read-only permission to all users in another organization
 
@@ -339,7 +339,7 @@ This label is not suitable for emails.
 
 8. Back on the **Assign Permissions** pane, select **Save**.
 
-9. On the **Encryption** page, select **Next** and complete the wizard.
+9. On the **Encryption** page, select **Next** and complete the configuration.
 
 ### Example 3: Add external users to an existing label that encrypts content
 
@@ -359,7 +359,7 @@ The new users that you add will be able open documents and emails that have alre
 
 7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
 
-8. On the **Encryption** page, select **Next** and complete the wizard.
+8. On the **Encryption** page, select **Next** and complete the configuration.
 
 ### Example 4: Label that encrypts content but doesn't restrict who can access it
 
@@ -383,7 +383,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 
-8. On the **Encryption** page, select **Next** and complete the wizard.
+8. On the **Encryption** page, select **Next** and complete the configuration.
 
 ## Considerations for encrypted content
 
@@ -397,12 +397,14 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If you share encrypted documents with people outside your organization, you might need to create guest accounts and modify Conditional Access policies. For more information, see [Sharing encrypted documents with external users](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
 
-- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web. If this isn't the case, and the file is already open:
+- When authorized users open encrypted documents in their Office apps, they see the label name and description in a yellow message bar at the top of their app. When the encryption permissions extend to people outside your organization, carefully review the label names and descriptions that will be visible in this message bar when the document is opened.
+
+- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web.  Or, for Windows and Mac, you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and users have the [required minimum versions](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) of Word, Excel, and PowerPoint. If this isn't the case, and the file is already open:
 
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
   - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
 
-- The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps (Windows, Mac, Android, and iOS) is disabled for encrypted files. Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
+- The [AutoSave](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) functionality in Office apps for iOS and Android is disabled for encrypted files. This functionality is also disabled for encrypted files on Windows and Mac if you haven't [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md). Users see a message that the file has restricted permissions that must be removed before AutoSave can be turned on.
 
 - Encrypted files might take longer to open in Office apps (Windows, Mac, Android, and iOS).
 

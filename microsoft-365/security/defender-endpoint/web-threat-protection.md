@@ -51,7 +51,7 @@ The following procedure describes how to configure web threat protection using t
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
  
-2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
+2. Choose **Endpoint security** \> **Attack surface reduction**, and then choose **+ Create policy**.
 
 3. Select a platform, such as **Windows 10 and later**, select the **Web protection** profile, and then choose **Create**. 
 

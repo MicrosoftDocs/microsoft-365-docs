@@ -96,6 +96,37 @@ Keep the following in mind about partially indexed items:
   |Export indexed and partially indexed items  <br/> |Exported<br/> |Exported (included with the indexed items that are exported)<br/>  |Exported (as partially indexed items)<br/>|
   ||||
   
+## Workaround for using a date range to exclude partially indexed items
+
+In Content search and Core eDiscovery, you can't use a date range to exclude partially indexed items from being returned by a search query. In other words, partially indexed items that fall outside of a date range are still included as partially indexed items in the search statistics and when you export partially indexed items. In Advanced eDiscovery, you can exclude partially indexed items by using a date range in a search query.
+
+As a workaround for this limitation, we recommend the following procedure.
+
+1. Create and run a search using a search query that meets your requirements and returns the desired results.
+
+2. Export the results of the search from step 1, but don't include partially indexed items in the export. To do this, you would select the **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.<sup>1</sup>
+
+   ![Export output options.](../media/ExportOutputOptions.png)
+
+3. Create and run a second search that uses the same search query (and searches the same locations) that you used in step 1. Append the following clause to the original query by using the **AND** operator:
+
+   ```text
+   ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
+   ```
+  
+   Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
+
+4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.
+
+   > [!NOTE]
+   > <sup>1</sup> The output of step 2 results in exporting indexed items only.<br/>
+   > <sup>2</sup> The condition used in step 3 identifies only items with indexing errors that fall within the specified date range. It doesn't return any items that are fully indexed. This means the items exported in step 4 only include unindexed items that fall within the date range. The export doesn't include indexed items. As a result, the combined output of step 2 and step 4 contains all indexed and unindexed items that fall within the specified date range.
+
+Use the second search that you created in step 3 and the corresponding export to view and gain understanding about the partially indexed items that match your original search query. The export from the second search also includes all partially indexed items that were exported so that you can review them if necessary.
+
+> [!TIP]
+> In the previous procedure, you can export the actual search results or only export a report.
+
 ## Indexing limits for messages
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in an eDiscovery search in Microsoft 365.
@@ -122,7 +153,7 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 
 - If a partially indexed item is included in the search results because it matched the search query criteria, then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
 
-- Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a very large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
+- Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
 
 - Files that are encrypted with [Microsoft encryption technologies](encryption.md) and are attached to an email message that matches the criteria of a search can be previewed and will be decrypted when exported. At this time, files that are encrypted with Microsoft encryption technologies (and stored in SharePoint or OneDrive for Business) are partially indexed.
 

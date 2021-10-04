@@ -7,7 +7,6 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
@@ -19,9 +18,6 @@ ms.prod: m365-security
 # Admin review for reported messages
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. This document is provided for evaluation and exploration purposes only.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
