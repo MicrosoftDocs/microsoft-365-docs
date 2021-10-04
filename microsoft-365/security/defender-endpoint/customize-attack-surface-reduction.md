@@ -41,6 +41,7 @@ You can set attack surface reduction rules for devices running any of the follow
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 -  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- Windows Server 2022
 
 You can use Group Policy, PowerShell, and Mobile Device Management (MDM) configuration service providers (CSP) to configure these settings.
 

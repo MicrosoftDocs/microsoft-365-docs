@@ -29,6 +29,7 @@ ms.technology: mde
 - Windows Server Semi-Annual Channel
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
+- Windows Server 2022
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -85,7 +86,7 @@ If you have previously onboarded your servers using MMA, follow the guidance pro
 #### Known issues and limitations
 The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 - Please ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019. 
-- Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019 and Windows 10, does not support this gateway.
+- Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
 - On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, please refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is generally recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
 - Not all Attack Surface Reduction rules are available on all operating systems. Please review [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
 - To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection), additional configuration is required:   
@@ -173,14 +174,18 @@ The `/quiet` switch suppresses all notifications.
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode.
 >
 > For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+
+Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
 ### Install Microsoft Defender For Endpoint using a script
 
 You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
 
-## Windows Server Semi-Annual Channel and Windows Server 2019
+## Windows Server Semi-Annual Channel and Windows Server 2019 and Windows Server 2022
 
-The onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 
 
 ### Download package
@@ -207,6 +212,8 @@ The onboarding package for Windows Server 2019 through Microsoft Endpoint Manage
        - Value: 1
 
     2. Run the following PowerShell command to verify that the passive mode was configured:
+    > [!NOTE]
+    > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
        ```PowerShell
        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
@@ -229,7 +236,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 ## Offboard Windows servers
 
-You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 - [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

@@ -84,6 +84,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 >
 > - Windows Server 2019
+> - Windows Server 2022
 > - Windows Server, version 1803 (core-only mode)
 > - Windows Server 2016 (see the following section, [Are you using Windows Server 2016?](#are-you-using-windows-server-2012-r2-or-windows-server-2016)
 
@@ -96,7 +97,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   # For Windows Server 2019
+   # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
    Then restart the device. 
@@ -156,7 +157,7 @@ The specific exclusions to configure will depend on which version of Windows you
 
 |OS |Exclusions |
 |--|--|
-|Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](/windows/release-health/release-information))<br/>Windows 10, version 1703 or 1709 with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
+|Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](/windows/release-health/release-information))<br/>Windows 10, version 1703 or 1709 with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/> Windows Server 2022 <br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/>[Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803) |`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/>  |
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/>**NOTE**: Monitoring Host Temporary Files 6\45 can be different numbered subfolders. <br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus

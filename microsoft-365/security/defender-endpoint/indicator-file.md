@@ -47,7 +47,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, and  Windows Server 2012 R2.
+- Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
     
    >[!NOTE]
     >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 

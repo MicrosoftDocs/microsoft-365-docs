@@ -78,6 +78,9 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
+#### [Application license terms](mde-terms-windows.md)
+
+
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
@@ -117,7 +120,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
+##### [Application license terms](mde-terms-mac.md)
 
 #### [Microsoft Defender for Endpoint on iOS]()
 ##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
@@ -179,6 +182,9 @@
 
 ##### [Troubleshoot]()
 ###### [Troubleshoot issues](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
+
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
