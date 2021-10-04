@@ -166,7 +166,7 @@
 ##### [Troubleshoot]()
 ###### [Troubleshoot issues](android-support-signin.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms.md) 
+##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 
 ### [Troubleshoot onboarding issues]()
