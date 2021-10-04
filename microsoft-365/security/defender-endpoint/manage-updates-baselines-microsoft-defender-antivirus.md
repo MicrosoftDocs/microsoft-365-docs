@@ -512,6 +512,9 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
+> [!NOTE]
+> If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
+
 ### Platform version included with Windows 10 releases
 
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:<br/><br/>
@@ -528,9 +531,6 @@ The below table provides the Microsoft Defender Antivirus platform and engine ve
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Technical upgrade support (only) |
 
 For Windows 10 release information, see the [Windows lifecycle fact sheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
-
-> [!NOTE]
-> If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
