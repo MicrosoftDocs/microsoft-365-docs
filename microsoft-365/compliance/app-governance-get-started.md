@@ -76,27 +76,13 @@ To verify the integration with MCAS is active, look for the app governance polic
 Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft Cloud App Security
-- Microsoft 365 E5
-- Microsoft 365 E5 Compliance
-- Microsoft 365 E5 Developer (without Windows and Audio Conferencing)
-- Microsoft 365 E5 Information Protection and Governance
-- Microsoft 365 E5 Security
-- Microsoft 365 E5 with Calling Minutes
-- Microsoft 365 E5 without Audio Conferencing
-- Microsoft 365 A5 Compliance for faculty
-- Microsoft 365 A5 Compliance for students
-- Microsoft 365 A5 for faculty
-- Microsoft 365 A5 for students
-- Microsoft 365 A5 Information Protection and Governance for faculty
-- Microsoft 365 A5 Information Protection and Governance for students
-- Microsoft 365 A5 Security for faculty
-- Microsoft 365 A5 Security for students
-- Microsoft 365 A5 student use benefits
-- Microsoft 365 A5 with Calling Minutes for Faculty
-- Microsoft 365 A5 with Calling Minutes for Students
-- Microsoft 365 A5 without Audio Conferencing for faculty
-- Microsoft 365 A5 without Audio Conferencing for students
-- Microsoft 365 A5 without Audio Conferencing for students use benefit
+- Microsoft 365 E5/A5
+- Microsoft 365 E5/A5 Compliance
+- Microsoft 365 E5/A5 Information Protection and Governance
+- Microsoft 365 E5/A5 Security
+- Microsoft 365 F5 Compliance add-on
+- Microsoft 365 F5 Security + Compliance add-on
+
 
 ### Administrator roles
 

@@ -58,12 +58,12 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 ## Safe Attachments file types report
 
 > [!NOTE]
-> The **Safe Attachments file types report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Safe Attachments message disposition report
 
 > [!NOTE]
-> The **Safe Attachments message disposition report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Mail latency report
 
@@ -106,6 +106,8 @@ In the details table below the chart, the following information is available:
 - **Percentiles**: **50**, **90**, or **99**
 - **Message count**
 - **Overall latency**
+
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
 
 ## Threat protection status report
 
@@ -158,6 +160,8 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
+
 ### View data by URL click by application
 
 ![URL click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
@@ -189,6 +193,8 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**
 - **App**
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
 
 ## Additional reports to view
 

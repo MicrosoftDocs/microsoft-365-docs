@@ -263,7 +263,7 @@ Before you create indicators for files, make sure the following requirements are
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - The [Block or allow feature is turned on](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### Indicators for IP addresses, URLs, or domains
@@ -286,7 +286,7 @@ Before you create indicators for application certificates, make sure the followi
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - Virus and threat protection definitions are up to date
 
 > [!TIP]
