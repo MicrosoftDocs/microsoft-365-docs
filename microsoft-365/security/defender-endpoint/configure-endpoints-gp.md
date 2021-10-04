@@ -235,8 +235,11 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
 
 1. After you choose the GP, or create a new one, edit the GP.
+
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
-:::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder.":::
