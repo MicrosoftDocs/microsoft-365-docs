@@ -135,9 +135,10 @@ To manage an alert, select the alert in the alerts queue on its row to see a **M
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary pane for an alert in the Microsoft 365 Defender portal.":::
 
-The **Manage alert** pane allows you to specify:
+The **Manage alert** pane allows you to view or specify:
 
 - The alert status (New, Resolved, In progress).
+- The user account that has been assigned the alert
 - The alert's classification  (Not set, True alert, False Alert).
 - For the classification as a true alert, the type of threat for the alert in **Determination** field.
 - A comment on the alert.
