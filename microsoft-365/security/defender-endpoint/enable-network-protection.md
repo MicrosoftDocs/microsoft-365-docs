@@ -30,7 +30,7 @@ ms.collection: m365-security-compliance
 
 [Network protection](network-protection.md) helps to prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the internet. You can [audit network protection](evaluate-network-protection.md) in a test environment to view which apps would be blocked before you enable it.
 
-[Learn more about network filtering configuration options](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
+[Learn more about network filtering configuration options.](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
 ## Check if network protection is enabled
 
@@ -48,7 +48,7 @@ Check if network protection has been enabled on a local device by using Registry
    - 1, or **On**
    - 2, or **Audit** mode
 
-    ![Network Protection registry key.](../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png)
+    :::image type="content" alt-text="Network Protection registry key." source="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png" lightbox="../../media/95341270-b738b280-08d3-11eb-84a0-16abb140c9fd.png":::
 
 ## Enable network protection
 
@@ -63,6 +63,7 @@ Enable network protection by using any of these methods:
 ### PowerShell
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+
 2. Enter the following cmdlet:
 
     ```PowerShell
@@ -119,8 +120,8 @@ Use the following procedure to enable network protection on domain-joined comput
     - **Disable (Default)** - The Network protection feature won't work. Users won't be blocked from accessing malicious domains.
     - **Audit Mode** - If a user visits a malicious IP address or domain, an event will be recorded in the Windows event log. However, the user won't be blocked from visiting the address.
 
-> [!IMPORTANT]
-> To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
+   > [!IMPORTANT]
+   > To fully enable network protection, you must set the Group Policy option to **Enabled** and also select **Block** in the options drop-down menu.
 
 Confirm network protection is enabled on a local computer by using Registry editor:
 
@@ -150,11 +151,13 @@ Confirm network protection is enabled on a local computer by using Registry edit
    - **Disabled**
    
 6. Complete the rest of the steps, and save the policy. 
+
 7. From the ribbon, select **Deploy** to deploy the policy to a collection.
 
 > [!IMPORTANT]
 > Once you deploy an Exploit Guard policy from Configuration Manager, the Exploit Guard settings will not be removed from the clients if you remove the deployment. `Delete not supported` is recorded in the Configuration Manager client's ExploitGuardHandler.log if you remove the client's Exploit Guard deployment. <!--CMADO8538577-->
 > The following PowerShell script can be run under SYSTEM context to remove these settings:<!--CMADO9907132-->
+>
 > ```powershell
 > $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
 > $defenderObject.AttackSurfaceReductionRules = $null
