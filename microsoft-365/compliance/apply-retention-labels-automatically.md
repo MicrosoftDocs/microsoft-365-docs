@@ -285,11 +285,9 @@ To consider when using trainable classifiers to auto-apply retention labels:
 > 
 > During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts and configure this retention policy to retains items for one day, starting the retention period when the content was last modified.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not:
-- Attached copies of a file
-- A URL text link to a file
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. For more information, see **Identify cloud attachments in Outlook and Teams to support retention in Microsoft 365 Compliance**.
 
-When you choose the option to apply a retention label to cloud attachments that users share in Outlook emails and Teams messages, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -323,7 +321,7 @@ To consider when auto-applying retention labels to cloud attachments:
 
 ## How long it takes for retention labels to take effect
 
-When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied:
+When you auto-apply retention labels based on sensitive information, keywords or searchable properties, or trainable classifiers, it can take up to seven days for the retention labels to be applied:
   
 ![Diagram of when auto-apply labels take effect.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
