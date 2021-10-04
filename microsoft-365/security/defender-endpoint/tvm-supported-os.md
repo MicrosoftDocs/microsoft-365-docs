@@ -40,27 +40,23 @@ Before you begin, ensure that you meet the following operating system or platfor
 
 In the following table, "Yes" indicates that a threat and vulnerability management capability is supported for the OS or platform on that row.
 
-<br>
-
-****
-
-|Supported OS or platform|OS vulnerabilities|Software product vulnerabilities|OS configuration assessment|Security controls configuration assessment|Software product |configuration assessment|
-|---|---|---|---|---|---|
-|Windows 7|Yes|Not supported|Not supported|Not supported|Not supported|
-|Windows 8.1|Yes|Yes|Yes|Yes|Yes|
-|Windows 10, versions 1607-1703|Yes|Not supported|Not supported|Not supported|Not supported|
-|Windows 10, version 1709 or later|Yes|Yes|Yes|Yes|Yes|
-|Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes|
-|Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes|
-|Windows Server 2016|Yes|Yes|Yes|Yes|Yes|
-|Windows Server 2019|Yes|Yes|Yes|Yes|Yes|
-|macOS 10.14 "Mojave" and above|Yes|Yes|Yes|Yes|Yes|
-|Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes|
-|CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes|
-|Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes|
-|Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes|
-|SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes|
-|
+Supported OS or platform|OS vulnerabilities|Software product vulnerabilities|OS configuration assessment|Security controls configuration assessment|Software product configuration assessment
+:---|:---|:---|:---|:---|:---
+Windows 7|Yes|Not supported|Not supported|Not supported|Not supported
+Windows 8.1|Yes|Yes|Yes|Yes|Yes
+Windows 10, versions 1607-1703|Yes|Not supported|Not supported|Not supported|Not supported
+Windows 10, version 1709 or later|Yes|Yes|Yes|Yes|Yes
+Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
+Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
+Windows Server 2016|Yes|Yes|Yes|Yes|Yes
+Windows Server 2019|Yes|Yes|Yes|Yes|Yes
+Windows Server 2022|Yes|Yes|Yes|Yes|Yes
+macOS 10.14 "Mojave" and above|Yes|Yes|Yes|Yes|Yes 
+Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
+CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
+Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
+Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
+SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.
