@@ -49,7 +49,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Data connectors
 
-- [Archiving third-party data in Microsoft 365](archiving-third-party-data#data-connectors-in-the-us-government-cloud) data connectors from CellTrust and 17a-4 LLC now available in GCC organizations in the US Government cloud
+- [Archiving third-party data in Microsoft 365](archiving-third-party-data#data-connectors-in-the-us-government-cloud.md) data connectors from CellTrust and 17a-4 LLC now available in GCC organizations in the US Government cloud
 - [Set up a connector to archive YouTube data](archive-youtube-data.md) provides new guidance for this feature in public preview.
 
 ### eDiscovery
@@ -60,7 +60,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Retention and records management
 - [Multi-staged disposition review](disposition.md) is now generally available (GA), with new [auditing events](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Multi-staged disposition review lets you specify up to five consecutive stages of disposition review for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
-- Private channels for [Teams retention policies](create-retention-policies#retention-policy-for-teams-locations) is now generally available (GA).
+- Private channels for [Teams retention policies](create-retention-policies#retention-policy-for-teams-locations.md) is now generally available (GA).
 
 ### Sensitivity labels
 - [Co-authoring and AutoSave](sensitivity-labels-coauthoring.md) is now generally available (GA) for Windows (minimum version of 2107 from Current Channel or Monthly Enterprise Channel) and macOS (minimum version of 16.51).
