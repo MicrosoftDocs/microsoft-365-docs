@@ -122,11 +122,11 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Or, you can automatically apply retention labels to newly shared [cloud attachments](#auto-apply-labels-to-cloud-attachments).
+Or, you can automatically apply retention labels to newly shared [cloud attachments](#auto-apply-labels-to-cloud-attachments), that are sometimes also referred to as "modern attachments".
 
-When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.  
+When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
 
-To items for Exchange:
+Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -135,7 +135,7 @@ To items for Exchange:
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-To items for SharePoint and OneDrive:
+SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -291,7 +291,7 @@ Cloud attachments, sometimes also known as modern attachments, are a sharing mec
 
 Applicable to SharePoint, OneDrive, and Microsoft 365 Groups locations only:
 
-When you choose the option to apply a retention label to cloud attachments that users share in Outlook emails and Teams messages, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to that copy. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments that users share in Outlook emails and Teams messages, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to that copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
@@ -343,7 +343,7 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 For auto-apply retention label policies that are configured for sensitive information, keywords or searchable properties, or a match for trainable classifiers: When a retention label from the policy is already applied to content, a change in configuration to the selected label and policy will be automatically applied to this content in addition to content that's newly identified.
 
-For auto-apply retention label policies that are configured for cloud attachments: Because this policy applies to newly shared files rather than existing files, a change in configuration to the selected label and policy will be automatically applied new content only.
+For auto-apply retention label policies that are configured for cloud attachments: Because this policy applies to newly shared files rather than existing files, a change in configuration to the selected label and policy will be automatically applied to newly shared content only.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
