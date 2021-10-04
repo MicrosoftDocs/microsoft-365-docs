@@ -15,7 +15,8 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 08/17/2021
+ms.date: 09/17/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus exclusions on Windows Server
@@ -34,16 +35,13 @@ Because Microsoft Defender Antivirus is built into Windows Server 2016 and later
 
 This article includes the following sections:
 
-<br>
-
-****
+<br/><br/>
 
 |Section|Description|
 |---|---|
 |[Automatic exclusions on Windows Server 2016 or later](#automatic-exclusions-on-windows-server-2016-or-later)|Describes the two main types of automatic exclusions and includes a detailed list of automatic exclusions|
 |[Opting out of automatic exclusions](#opting-out-of-automatic-exclusions)|Includes important considerations and procedures describing how to opt out of automatic exclusions|
 |[Defining custom exclusions](#defining-custom-exclusions)|Provides links to how-to information for defining custom exclusions|
-|
 
 > [!IMPORTANT]
 > Keep the following points in mind:
@@ -75,7 +73,7 @@ The following sections contain the exclusions that are delivered with automatic 
 
 #### Default exclusions for all roles
 
-This section lists the default exclusions for all roles in Windows Server 2016 and Windows Server 2019.
+This section lists the default exclusions for all roles in Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 
 > [!NOTE]
 > The default locations could be different than what's listed in this article.
@@ -162,16 +160,13 @@ This section lists the default exclusions for all roles in Windows Server 2016 a
 
 The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.
 
-<br>
-
-****
+<br><br/>
 
 |Exclusion type|Specifics|
 |---|---|
 |File types|`*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs`|
 |Folders|`%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks`|
 |Processes|`%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe`|
-|
 
 ##### SYSVOL files
 
@@ -325,13 +320,13 @@ This section lists the folder exclusions that are delivered automatically when y
 In Windows Server 2016 and later, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature. If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates. But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and later. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
 > [!WARNING]
-> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016 and Windows Server 2019 roles.
+> Opting out of automatic exclusions may adversely impact performance, or result in data corruption. The exclusions that are delivered automatically are optimized for Windows Server 2016, Windows Server 2019, and Windows Server 2022 roles.
 
 Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL folders to another drive or path that is *different from the original path*, you must add exclusions manually. See [Configure the list of exclusions based on folder name or file extension](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension).
 
 You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.
 
-### Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019
+### Use Group Policy to disable the auto-exclusions list on Windows Server 2016, Windows Server 2019, and Windows Server 2022
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Right-click the Group Policy Object you want to configure, and then select **Edit**.
 

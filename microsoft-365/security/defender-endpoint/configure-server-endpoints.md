@@ -136,9 +136,9 @@ You can onboard Windows Server 2012 R2 and Windows Server 2016 by using Microsof
 
 After completing the onboarding steps, you'll need to [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients).
 
-## Windows Server (SAC) version 1803, Windows Server 2019, and Windows Server 2019 Core edition
+## Windows Server (SAC) version 1803, Windows Server 2019, Windows Server 2022, and Windows Server 2019 Core edition
 
-You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windows Server 2019 Core edition by using the following deployment methods:
+You can onboard Windows Server (SAC) version 1803 or Windows Server 2019, or Windows Server 2022, or Windows Server 2019 Core edition by using the following deployment methods:
 
 - [Local script](configure-endpoints-script.md)
 - [Group Policy](configure-endpoints-gp.md)
@@ -148,7 +148,7 @@ You can onboard Windows Server (SAC) version 1803, Windows Server 2019, or Windo
 
 > [!NOTE]
 >
-> - The Onboarding package for Windows Server 2019 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
@@ -192,7 +192,7 @@ The following capabilities are included in this integration:
 - Automated onboarding - Defender for Endpoint sensor is automatically enabled on Windows Servers that are onboarded to Azure Defender. For more information on Azure Defender onboarding, see [Use the integrated Microsoft Defender for Endpoint license](/azure/security-center/security-center-wdatp).
 
     > [!NOTE]
-    > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support [Windows Server 2019 and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+    > The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
 
 - Windows servers monitored by Azure Defender will also be available in Defender for Endpoint - Azure Defender seamlessly connects to the Defender for Endpoint tenant, providing a single view across clients and servers. In addition, Defender for Endpoint alerts will be available in the Azure Defender console.
 
@@ -223,7 +223,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 ## Offboard Windows servers
 
-You can offboard Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+You can offboard Windows Server (SAC), Windows Server 2019, Windows Server 2022, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 - [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)

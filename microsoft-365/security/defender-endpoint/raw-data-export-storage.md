@@ -47,7 +47,7 @@ ms.custom: api
 
 5. Choose **Forward events to Azure Storage**.
 
-6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) > properties tab > copy the text under **Storage account resource ID**:
+6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
 
    ![Image of event hub resource ID1.](images/storage-account-resource-id.png)
 
@@ -55,19 +55,19 @@ ms.custom: api
 
 ## The schema of the events in the Storage account
 
-- A blob container will be created for each event type: 
+- A blob container will be created for each event type:
 
   ![Image of event hub resource ID2.](images/storage-account-event-schema.png)
 
-- The schema of each row in a blob is the following JSON: 
+- The schema of each row in a blob is the following JSON:
 
-  ```
+  ```json
   {
           "time": "<The time WDATP received the event>"
           "tenantId": "<Your tenant ID>"
           "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
           "properties": { <WDATP Advanced Hunting event as Json> }
-  }               
+  }
   ```
 
 - Each blob contains multiple rows.
@@ -84,19 +84,20 @@ In order to get the data types for our events properties do the following:
 
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
 
-2. Run the following query to get the data types mapping for each event: 
+2. Run the following query to get the data types mapping for each event:
 
    ```
    {EventType}
    | getschema
-   | project ColumnName, ColumnType 
+   | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event: 
+- Here is an example for Device Info event:
 
   ![Image of event hub resource ID3.](images/machine-info-datatype-example.png)
 
 ## Related topics
+
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)

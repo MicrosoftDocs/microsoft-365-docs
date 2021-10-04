@@ -15,6 +15,7 @@ ms.author: v-lsaldanha
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Migrating from a third-party HIPS to ASR rules
@@ -23,7 +24,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 
 ## Scenarios when migrating from a third-party HIPS product to ASR rules
 
-### Block creation of specific files and registry keys
+### Block creation of specific files
 
 - **Applies to**- All processes
 - **Operation**- File Creation
@@ -31,7 +32,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Attack Surface Reduction rules**- ASR rules block the attack techniques and not the Indicators of Compromise (IOC). Blocking a specific file extension isn't always useful, as it doesn't prevent a device from compromise. It only partially thwarts an attack until attackers create a new type of extension for the payload.
 - **Other recommended features**- Having Microsoft Defender AV enabled, along with Cloud Protection and Behavior Analysis is highly recommended. We recommend that you use other prevention, such as the ASR rule "Use advanced protection against ransomware". This provides a greater level of protection against ransomware attacks. Furthermore, many of these registry keys are monitored by Microsoft Defender for Endpoint, such as ASEP techniques, which will trigger specific alerts. The registry keys used require a minimum of Local Admin or Trusted Installer privileges can be modified. Using a locked down environment, with minimum administrative accounts or rights, is recommended. Other system configurations can be enabled, including "Disable SeDebug for non-required roles" that are part of our wider security recommendations.
 
-### Block creation of specific files and registry keys
+### Block creation of specific registry keys
 
 - **Applies to**- All Processes
 - **Processes**- N/A
@@ -67,17 +68,16 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office communication apps (Outlook, Skype, and Teams) from launching child processes: "Block Office communication application from creating child processes", GUID "26190899-1602-49e8-8b27-eb1d0a1ce869".
 - **Other recommended features**- We recommend enabling PowerShell constrained language mode to minimize the attack surface from PowerShell.
 
+### Block Office Apps from launching child processes
 
-### Block Office Apps from launching child processes and from creating executable content
-
-- **Applies to**- Office  
+- **Applies to**- Office
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
 - **Operation**- Process Execution
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- powershell.exe, cmd.exe, wscript.exe, mshta.exe, EQNEDT32.EXE, regsrv32.exe
 - **Attack Surface Reduction rules**- ASR rules have a built-in rule to prevent Office apps from launching child processes: "Block all Office applications from creating child processes", GUID "d4f940ab-401b-4efc-aadc-ad5f3c50688a".
 - **Other recommended features**- N/A
-    
-### Block Office Apps from launching child processes and from creating executable content
+
+### Block Office Apps from creating executable content
 
 - **Applies to**- Office
 - **Processes**- winword.exe, powerpnt.exe, excel.exe
@@ -103,16 +103,14 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Attack Surface Reduction rules**- ASR rules allow blocking Adobe Reader from launching child processes. The rule name is "Block Adobe Reader from creating child processes", GUID "7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c".
 - **Other recommended features**- N/A
 
-
 ### Block download or creation of executable content
 
-- **Applies to**- CertUtil: Block download or creation of executable 
+- **Applies to**- CertUtil: Block download or creation of executable
 - **Processes**- certutil.exe
 - **Operation**- File Creation
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- *.exe
 - **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're a part of Microsoft Defender Antivirus protection.
 - **Other recommended features**- Microsoft Defender AV prevents CertUtil from creating or downloading executable content.
-
 
 ### Block processes from stopping critical System components
 
@@ -131,7 +129,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- tor.exe, bittorrent.exe, cmd.exe, powershell.exe, and more
 - **Attack Surface Reduction rules**- Overall, ASR rules aren't designed to function as an Application manager.
 - **Other recommended features**- To prevent users from launching specific processes or programs, it's recommended to use Windows Defender Application Control. Microsoft Defender for Endpoint File and Cert indicators, can be used in an Incident Response scenario (shouldn't be seen as an application control mechanism).
-    
+
 ### Block unauthorized changes to Microsoft Defender Antivirus configurations
 
 - **Applies to**- All Processes

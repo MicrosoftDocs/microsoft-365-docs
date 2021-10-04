@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
 ---
 
@@ -48,16 +48,14 @@ Based on the version of Configuration Manager you're running, the following clie
   - Windows Server 2016
   - Windows Server 2016, version 1803 or later
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
+> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022, see, [Onboard Windows servers](configure-server-endpoints.md).
 
 ### Onboard devices using System Center Configuration Manager
 
-
-[![Image of the PDF showing the various deployment paths.](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
-
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.

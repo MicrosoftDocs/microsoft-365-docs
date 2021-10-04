@@ -93,6 +93,7 @@ Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/45
 Windows 10, version 1709|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147) <p> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](images/svg/check-no.svg) <p> Note: Won't be supported
 Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows Server 2022 |![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -108,7 +109,7 @@ iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg
 > [!NOTE]
 > Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 >
-> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
+> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) or  Windows Server 2022 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 ### OS versions when using Azure Defender for Servers
 
@@ -117,6 +118,7 @@ The following OS versions are supported when using [Azure Defender for Servers](
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
 Windows Server 2019|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -137,20 +139,6 @@ For more information, see [Configure device proxy and Internet connectivity sett
 > The spreadsheet contains commercial URLs as well, make sure you check the "US Gov" tabs.
 >
 > When filtering, look for the records labeled as "US Gov" and your specific cloud under the geography column.
-
-### Service backend IP ranges
-
-If your network devices don't support DNS-based rules, use IP ranges instead.
-
-Defender for Endpoint for US Government customers is built in the Azure US Government environment, deployed in the following regions:
-
-- AzureCloud.usgovtexas
-- AzureCloud.usgovvirginia
-
-You can find the Azure IP ranges in [Azure IP Ranges and Service Tags - US Government Cloud](https://www.microsoft.com/download/details.aspx?id=57063).
-
-> [!NOTE]
-> As a cloud-based solution, the IP address ranges can change. It's recommended you move to DNS-based rules.
 
 ## API
 
@@ -184,7 +172,7 @@ These are the known gaps:
 |Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
 |Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Integrations: Microsoft Defender for Identity|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) Rolling out|
+|Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
 |

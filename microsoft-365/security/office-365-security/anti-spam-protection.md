@@ -53,7 +53,7 @@ The anti-spam settings in EOP are made of the following technologies:
 
 - **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](configure-the-connection-filter-policy.md).
 
-- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, and you can configure the end-user notification options for messages that were quarantined instead of delivered. For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Spam filtering (content filtering)**: EOP uses the spam filtering verdicts **Spam**, **High confidence spam**, **Bulk email**, **Phishing email** and **High confidence phishing email** to classify messages. You can configure the actions to take based on these verdicts, you can configure the end-user notification options for messages that were quarantined instead of delivered, and you can configure what users are allowed to do to quarantined messages using [quarantine policies](quarantine-policies.md). For more information, see [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
   > By default, spam filtering is configured to send messages that were marked as spam to the recipient's Junk Email folder. However, in hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure two mail flow rules (also known as transport rules) in your on-premises Exchange organization to recognize the EOP spam headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
@@ -64,11 +64,11 @@ The anti-spam settings in EOP are made of the following technologies:
 
 ## Manage errors in spam filtering
 
-It's possible that good messages can be identified as spam (also known as false positives), or that spam can be delivered to the Inbox. You can use the suggestions in the following sections to find out what happened and help prevent it from happening in the future.
+It's possible that good messages can be identified as spam (also known as false positives), or that spam can be delivered to the Inbox (also known as false negatives). You can use the suggestions in the following sections to find out what happened and help prevent it from happening in the future.
 
 Here are some best practices that apply to either scenario:
 
-- Always submit misclassified messages to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- Always report misclassified messages to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - **Examine the anti-spam message headers**: These values will tell you why a message was marked as spam, or why it skipped spam filtering. For more information, see [Anti-spam message headers](anti-spam-message-headers.md).
 

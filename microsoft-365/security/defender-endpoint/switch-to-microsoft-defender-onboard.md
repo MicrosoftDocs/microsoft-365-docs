@@ -12,14 +12,14 @@ author: denisebmsft
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365solution-migratetomdatp
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
 ms.custom: migrationguides
 ms.topic: article
-ms.date: 08/16/2021
+ms.date: 09/23/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -33,23 +33,22 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 |--|--|--|
 || |*You are here!* |
 
-
 **Welcome to Phase 3 of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
 3. [Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints](#confirm-that-microsoft-defender-antivirus-is-in-passive-mode-on-your-endpoints).
 4. [Get updates for Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
-5. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution). 
+5. [Uninstall your non-Microsoft solution](#uninstall-your-non-microsoft-solution).
 6. [Make sure Defender for Endpoint is working correctly](#make-sure-defender-for-endpoint-is-working-correctly).
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Choose **Settings** > **Endpoints** > **Onboarding** (under **Device management**). 
+2. Choose **Settings** \> **Endpoints** \> **Onboarding** (under **Device management**).
 
-3. In the **Select operating system to start onboarding process** list, select an operating system. 
+3. In the **Select operating system to start onboarding process** list, select an operating system.
 
 4. Under **Deployment method**, select an option. Follow the links and prompts to onboard your organization's devices. Need help? See [Onboarding methods](#onboarding-methods) (in this article).
 
@@ -57,39 +56,46 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 > If something goes wrong while onboarding, see [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md). That article describes how to resolve onboarding issues and common errors on endpoints.
 
 ### Onboarding methods
- 
+
 Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
 
-|Operating systems  |Methods  |
-|---------|---------|
-| Windows 10     | [Group Policy](configure-endpoints-gp.md)<br/>[Configuration Manager](configure-endpoints-sccm.md)<br/>[Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br/>[Local script](configure-endpoints-script.md)<br/><br/>**NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.         |
-| Windows 8.1 Enterprise <br/>Windows 8.1 Pro <br/>Windows 7 SP1 Enterprise <br/>Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md)<br/><br/>**NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).        |
-| Windows Server 2019 and later <br/>Windows Server 2019 core edition <br/>Windows Server version 1803, and later | [Local script](configure-endpoints-script.md) <br/>[Group Policy](configure-endpoints-gp.md) <br/>[Configuration Manager](configure-endpoints-sccm.md) <br/>[System Center Configuration Manager](configure-endpoints-sccm.md) <br/>[VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md) <br/><br/>**NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.    |
-| Windows Server 2016 <br/>Windows Server 2012 R2 <br/>Windows Server 2008 R2 SP1  | [Microsoft 365 Defender portal](configure-server-endpoints.md)<br/>[Azure Defender](/azure/security-center/security-center-wdatp) |
-| macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave) | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
-| iOS | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
-| Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2 | [Onboard non-Windows devices](configure-endpoints-non-windows.md)  |
+<br/><br/>
+
+|Operating systems|Methods|
+|---|---|
+|Windows 10|[Group Policy](configure-endpoints-gp.md) <br/><br/> [Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [Mobile Device Management (Intune)](configure-endpoints-mdm.md) <br/><br/> [Local script](configure-endpoints-script.md) <br/><br/> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.|
+|Windows 8.1 Enterprise <br/><br/> Windows 8.1 Pro <br/><br/> Windows 7 SP1 Enterprise <br/><br/> Windows 7 SP1 Pro|[Microsoft Monitoring Agent](onboard-downlevel.md) <br/><br/> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).|
+|Windows Server 2019 and later <br/><br/> Windows Server 2019 core edition <br/><br/> Windows Server version 1803, and later|[Local script](configure-endpoints-script.md) <br/><br/> [Group Policy](configure-endpoints-gp.md) <br/><br/> [Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [System Center Configuration Manager](configure-endpoints-sccm.md) <br/><br/> [VDI onboarding scripts for non-persistent devices](configure-endpoints-vdi.md) <br/><br/> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.|
+|Windows Server 2016 <br/><br/> Windows Server 2012 R2 <br/><br/> Windows Server 2008 R2 SP1|[Microsoft 365 Defender portal](configure-server-endpoints.md) <br/><br/> [Azure Defender](/azure/security-center/security-center-wdatp)|
+|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Onboard non-Windows devices](configure-endpoints-non-windows.md)|
+|iOS|[Onboard non-Windows devices](configure-endpoints-non-windows.md)|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|[Onboard non-Windows devices](configure-endpoints-non-windows.md)|
 
 ## Run a detection test
 
 To verify that your onboarded devices are properly connected to Defender for Endpoint, you can run a detection test.
 
-|Operating system  |Guidance  |
-|---------|---------|
-| Windows 10 <br/> Windows Server 2019<br/> Windows Server, version 1803, or later<br/> Windows Server 2016<br/> Windows Server 2012 R2  | See [Run a detection test](run-detection-test.md). <br/><br/>Visit the Defender for Endpoint demo scenarios site ([https://demo.wd.microsoft.com](https://demo.wd.microsoft.com)) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.    |
-| macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)    | Download and use the DIY app at [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy). <br/><br/>For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).        |
-| Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2 | 1. Run the following command, and look for a result of **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/> 2. Open a Terminal window, and run the following command: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/> 3. Run the following command to list any detected threats: <br/>`mdatp threat list`. <br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). |
+<br/><br/>
+
+|Operating system|Guidance|
+|---|---|
+|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows Server, version 1803, or later <p> Windows Server 2016 <p> Windows Server 2012 R2|See [Run a detection test](run-detection-test.md). <p> Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
+|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <p> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|<ol><li>Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.</li><li>Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.</li><li>Run the following command to list any detected threats: `mdatp threat list`.</li></ol> <p> For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
 Now that your endpoints have been onboarded to Defender for Endpoint, your next step is to make sure Microsoft Defender Antivirus is running in passive mode. You can use one of several methods, as described in the following table:
 
-| Method  | What to do  |
-|:-------|:-------|
-|Command Prompt     | 1. On a Windows device, open Command Prompt. <br/> 2. Type `sc query windefend`, and then press Enter. <br/> 3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.         |
-| PowerShell     | 1. On a Windows device, open Windows PowerShell as an administrator. <br/> 2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`. <br/> Review the results. You should see **Passive mode**.  |
-| Windows Security app | 1. On a Windows device, open the Windows Security app. <br/>2. Select **Virus & threat protection**.<br/>3. Under **Who's protecting me?** select **Manage providers**. <br/>4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**. |
-| Task Manager | 1. On a Windows device, open the Task Manager app. <br/>2. Select the **Details** tab.<br/>3. Look for **MsMpEng.exe** in the list. |
+<br/><br/>
+
+|Method|What to do|
+|---|---|
+|Command Prompt|1. On a Windows device, open Command Prompt.<br/><br/>2. Type `sc query windefend`, and then press Enter.<br/><br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.|
+|PowerShell|1. On a Windows device, open Windows PowerShell as an administrator.<br/><br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`. <br/><br/>3. Review the results. You should see **Passive mode**.|
+|Windows Security app|1. On a Windows device, open the Windows Security app.<br/><br/>2. Select **Virus & threat protection**.<br/><br/>3. Under **Who's protecting me?** select **Manage providers**. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.|
+|Task Manager|1. On a Windows device, open the Task Manager app.<br/><br/>2. Select the **Details** tab. Look for **MsMpEng.exe** in the list.|
 
 > [!NOTE]
 > You might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus* in some versions of Windows.
@@ -97,9 +103,10 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 ### Set Microsoft Defender Antivirus on Windows Server to passive mode manually
 
-To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, follow these steps:
+To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, or Windows Server 2022, follow these steps:
 
-1. Open Registry Editor, and then navigate to <br/>
+1. Open Registry Editor, and then navigate to:
+
    `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 
 2. Edit (or create) a DWORD entry called **ForceDefenderPassiveMode**, and specify the following settings:
@@ -108,9 +115,10 @@ To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1
 
 > [!NOTE]
 > You can use other methods to set the registry key, such as the following:
->- [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
->- [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
->- [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
+>
+> - [Group Policy Preference](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn581922(v=ws.11))
+> - [Local Group Policy Object tool](/windows/security/threat-protection/security-compliance-toolkit-10#what-is-the-local-group-policy-object-lgpo-tool)
+> - [A package in Configuration Manager](/mem/configmgr/apps/deploy-use/packages-and-programs)
 
 ### Start Microsoft Defender Antivirus on Windows Server 2016
 
@@ -131,12 +139,12 @@ To get your updates, follow the guidance in [Manage Microsoft Defender Antivirus
 
 If at this point you have:
 
-- Onboarded your organization's devices to Defender for Endpoint, and 
-- Microsoft Defender Antivirus is installed and enabled, 
+- Onboarded your organization's devices to Defender for Endpoint, and
+- Microsoft Defender Antivirus is installed and enabled,
 
 Then your next step is to uninstall your non-Microsoft antivirus, antimalware, and endpoint protection solution. When you uninstall your non-Microsoft solution, Microsoft Defender Antivirus switches from passive mode to active mode. In most cases, this happens automatically.
 
-To get help with uninstalling your non-Microsoft solution, contact their technical support team. 
+To get help with uninstalling your non-Microsoft solution, contact their technical support team.
 
 ## Make sure Defender for Endpoint is working correctly
 
@@ -148,7 +156,7 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! 
+**Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
 
-- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+- [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 - [Manage Defender for Endpoint, post migration](manage-atp-post-migration.md).

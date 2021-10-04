@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Microsoft Defender Antivirus in the Windows Security app
