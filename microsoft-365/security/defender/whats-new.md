@@ -46,7 +46,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. You can see the availability and status of event types in the [Supported Microsoft 365 Defender event types in streaming API](supported-event-types.md).
 - (GA) Microsoft Defender for Office 365 data available in advanced hunting is now generally available.
-- (Preview) Assign incidents to user accounts <br> You can assign an incident, and all the alerts associated with it, to a user account from **Assign to:** on the **Manage incident** pane of an incident.
+- (Preview) Assign incidents and alerts to user accounts <br> You can assign an incident, and all the alerts associated with it, to a user account from **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
 
 
 ## August 2021
