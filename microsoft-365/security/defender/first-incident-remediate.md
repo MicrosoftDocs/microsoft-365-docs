@@ -46,7 +46,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 
 ## Actions on files
 
-- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
+- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 11 or Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
 - **Add indicators to block or allow file** - Prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. This operation will prevent the file from being read, written, or executed on devices in your organization.
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 

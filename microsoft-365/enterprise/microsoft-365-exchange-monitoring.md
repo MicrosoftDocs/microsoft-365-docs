@@ -65,7 +65,6 @@ With Exchange Online monitoring supports the following scenarios:
   - Native mail clients of iOS and Android
   - Outlook Mobile app in iOS and Android
   - Outlook Mac client
-  - Open Outlook on the web
 
    For these clients, you can see the number of active users in the last 30 minutes based on users reading an email, along with number of incidents and advisories in the dashboard. This data is compared to the same interval for the previous week to see if there's an issue.
 
