@@ -122,7 +122,11 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Use the following table to identify when retention labels can be automatically applied to items for Exchange:
+Or, you can automatically apply retention labels to newly shared [cloud attachments](#auto-apply-labels-to-cloud-attachments).
+
+When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.  
+
+To items for Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -131,7 +135,7 @@ Use the following table to identify when retention labels can be automatically a
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Use the following table to identify when retention labels can be automatically applied to items for SharePoint and OneDrive:
+To items for SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -141,8 +145,6 @@ Use the following table to identify when retention labels can be automatically a
 |Trainable classifiers| Yes | Yes (last six months only) |
 
 Additionally, SharePoint items that are in draft or that have never been published aren't supported for this scenario.
-
-Or, you can automatically apply retention labels to newly shared [cloud attachments](#auto-apply-labels-to-cloud-attachments).
 
 #### Auto-apply labels to content with specific types of sensitive information
 
