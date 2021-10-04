@@ -310,11 +310,11 @@ To consider when auto-applying retention labels to cloud attachments:
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 
 - The following items aren't supported as cloud attachments that can be retained:
-    - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages
-    - Files shared by users who don't have access to those files
-    - Files that are deleted before the cloud attachment is sent
-    - Files that are shared by guests or users outside your organization
-    - Empty files
+    - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
+    - Files shared by users who don't have access to those files.
+    - Files that are deleted before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available.
+    - Files that are shared by guests or users outside your organization.
+    - Empty files.
 
 > [!TIP]
 > Because cloud attachments are shared in Exchange emails and Teams messages, consider using a retention label that's configured for the same retention period as retention policies for these workloads, and configure the label retention setting **Start the retention period based on**: to be **When items were labeled**. 
