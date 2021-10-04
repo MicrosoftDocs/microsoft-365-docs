@@ -309,7 +309,7 @@ You will need to create separate retention policies if you want to retain or del
 
 To consider when auto-applying retention labels to cloud attachments:
 
-- Only newly shared cloud attachments will be auto-labeled and retained.
+- Only newly shared cloud attachments will be auto-labeled for retention.
 
 - Cloud attachments shared outside Teams and Outlook aren't supported.
 
