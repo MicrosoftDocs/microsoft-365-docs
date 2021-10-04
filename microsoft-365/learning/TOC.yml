@@ -25,6 +25,8 @@
               href: configure-udemy.md
             - name: Skillsoft
               href: configure-skillsoft.md
+            - name: Go1
+              href: configure-go1.md
         - name: Configure SharePoint as a content source
           href: configure-sharepoint-content-source.md
 
