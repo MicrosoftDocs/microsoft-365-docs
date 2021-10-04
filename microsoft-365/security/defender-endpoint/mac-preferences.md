@@ -2,8 +2,6 @@
 title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
