@@ -54,7 +54,7 @@ The installation failed because a downgrade between these versions is not suppor
 ## MDATP install log missing or not updated
 
 In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.
-You can verify that an installation happened and analyze possible errors by querying macOS logs (this is helpful in MDM deployment, when there is no client UI). We recommend that you use a narrow time window to run a query and filter by the logging process name, as there will be a huge amount of information.
+You can verify that an installation happened and analyze possible errors by querying macOS logs (helpful in MDM deployment, when there is no client UI). We recommend that you use a narrow time window to run a query and filter by the logging process name, as there will be a huge amount of information.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log
