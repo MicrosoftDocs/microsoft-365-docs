@@ -47,6 +47,7 @@ A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy 
 - Teams status messages
 - User and signal information for Exchange Online
 - Exchange Online mailboxes that aren't already encrypted by mailbox DEPs
+- Unified Audit log storage
 - Microsoft Information Protection:
 
   - Exact data match (EDM) data, including data file schemas, rule packages, and the salts used to hash the sensitive data. For EDM and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.
