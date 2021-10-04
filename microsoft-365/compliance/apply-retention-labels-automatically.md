@@ -278,14 +278,14 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 #### Auto-apply labels to cloud attachments
 
-Cloud attachments are a sharing mechanism that uses embedded links to files that are stored in the cloud and support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not:
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not:
 - Attached copies of a file
 - The URL to a file in the cloud
 
 > [!NOTE]
-> This option is in preview and subject to change.
+> This option is gradually rolling out in preview and subject to change.
 > 
-> During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts that retains items for one day, starting the retention period when the content was last modified.
+> During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts and configure this retention policy to retains items for one day, starting the retention period when the content was last modified.
 
 Applicable to SharePoint, OneDrive, and Microsoft 365 Groups locations only:
 
