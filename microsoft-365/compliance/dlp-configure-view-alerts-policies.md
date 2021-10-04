@@ -123,7 +123,7 @@ happens because of a user activity.
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for single-event alert configuration options." border="false":::
 
-Microsoft employs methods to prevent a flood of emails to our customers. To this effect, all user activities which violate the same DLP rule on the same workload within a 1 minute time window will be clubbed under the same alert. The 1 minute aggregation time window is applicable for the following configurations : 
+We employ methods to prevent a flood of emails to our customers. To this effect, all user activities which violate the same DLP rule on the same workload within a one-minute time window will be clubbed under the same alert. The one minute aggregation time window is applicable for the following configurations: 
 - An E5 or G5 subscription
 - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
     - Office 365 Advanced Threat Protection Plan 2
