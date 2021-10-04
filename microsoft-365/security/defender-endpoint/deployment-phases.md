@@ -2,7 +2,6 @@
 title: Deployment phases
 description: Learn how to deploy Microsoft Defender for Endpoint by preparing, setting up, and onboarding endpoints to that service
 keywords: deploy, prepare, setup, onboard, phase, deployment, deploying, adoption, configuring
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -49,7 +48,7 @@ Each section corresponds to a separate article in this solution.
 |---|---|
 |[Phase 1: Prepare](prepare-deployment.md)|Learn about what you need to consider when deploying Defender for Endpoint such as stakeholder approvals, environment considerations, access permissions, and adoption order of capabilities.|
 |[Phase 2: Setup](production-deployment.md)|Get guidance on the initial steps you need to take so that you can access the portal such as validating licensing, completing the set up wizard, and network configuration.|
-|[Phase 3: Onboard](onboarding.md)|Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities.|
+|[Phase 3: Onboard]()|Learn how to make use of deployment rings, supported onboarding tools based on the type of endpoint, and configuring available capabilities.|
 |
 
 After you've completed this guide, you'll be set up with the right access permissions, your endpoints will be onboarded and reporting sensor data to the service, and capabilities such as next-generation protection and attack surface reduction will be in place.
@@ -94,5 +93,5 @@ The following are out of scope of this deployment guide:
 
 - [Phase 1: Prepare](prepare-deployment.md)
 - [Phase 2: Set up](production-deployment.md)
-- [Phase 3: Onboard](onboarding.md)
+- [Phase 3: Onboard]()
 - [Plan deployment](deployment-strategy.md)
