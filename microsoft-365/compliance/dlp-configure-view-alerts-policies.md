@@ -130,7 +130,7 @@ We employ methods to prevent a flood of emails to our customers. To this effect,
     - Microsoft 365 E5 Compliance
     - Microsoft 365 eDiscovery and Audit add-on license
  
-For organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription, the aggregation time window is 15 minutes
+For organizations that have an E1, F1, or G1 subscription or an E3 or G3 subscription, the aggregation time window is 15 minutes.
 
 ## DLP alert management dashboard
 
