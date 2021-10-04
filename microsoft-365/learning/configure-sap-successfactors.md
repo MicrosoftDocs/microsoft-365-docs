@@ -19,7 +19,7 @@ description: "Learn how to configure SAP SuccessFactors as a learning content so
 
 # Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning (Preview)
 
-This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. First you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in your M365 Admin Center.
+This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. First you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in your Microsoft 365 Admin Center.
 
 ## Configure in the SuccessFactors portal
 
@@ -47,17 +47,17 @@ partners1.enabled=
 
 ![Image of the PARTNER_EXTRACT configuration settings filled in](media/sap-1.png)
 
-Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in your M365 Admin Center.
+Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in your Microsoft 365 Admin Center.
 
-## Configure in the M365 Admin Center
+## Configure in the Microsoft 365 admin center
 
-1. Navigate to your [M365 Admin Center](https://admin.microsoft.com).
+1. Navigate to your [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Navigate to **Settings** > **Org settings**. Then search for Viva Learning (Preview) and enable SAP SuccessFactors from the options.
 3. Fill in the configuration details.
 
 ### Configuration details
 
-![Image of the configuration details filled in in the M365 Admin Center](media/sap-2.png)
+![Image of the configuration details filled in in the Microsoft 365 admin center](media/sap-2.png)
 
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
@@ -65,7 +65,7 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 **User Name**: Follow the same steps you followed for the SFTP Host URL. Get the value of the `connector.ftp.userID` property.
 
-**Password**: Enter your password. Check with your LMS application owner for help retrieving your password.
+**Password**: Enter your password. Check with your LMS application owner for help with retrieving your password.
 
 **Folder Path**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**. Get the value of the `defaultFtp.path` property.
 

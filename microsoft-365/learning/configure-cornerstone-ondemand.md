@@ -38,7 +38,7 @@ description: "Learn how to configure Cornerstone OnDemand as a learning content 
     <!--image 4-->
 5. Choose **Configure Now**.
     <!--image 5-->
-6. See the required configuration details and post the details on your M365 admin center under the Cornerstone OnDemand learning source option.  
+6. See the required configuration details and post the details on your Microsoft 365 admin center under the Cornerstone OnDemand learning source option.  
     <!--image 6-->
 
 <!--Note : Snapshots are temporary, we will have final snapshots from CSOD team once they create Viva Learning tile in CSOD portal.-->

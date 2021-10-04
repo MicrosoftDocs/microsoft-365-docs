@@ -20,14 +20,14 @@ description: Learn how to configure learning content sources for Microsoft Viva 
 # Configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center
 
 > [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released.
 
 The administrators for the Microsoft 365 admin center—either by themselves or by assigning the knowledge admin role to selected individuals in your organization—can manage settings related to Viva Learning (Preview) and can configure the learning content sources.
 
 The administrator selects which other learning content sources (for example, SharePoint or supported third-party content provider sources) will be available to users of Viva Learning (Preview). The admin then configures those sources to make sure the content is available for search and discovery and can be browsed by the employees who use Viva Learning (Preview).
 
 > [!NOTE]
->  Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. This configured learning is subject to the separate license, privacy and service terms between your organization and the third party, and not the Viva Learning (Preview) terms. Before selecting this type of learning, verify you have an agreement in place for your organization and users.
+> Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. This configured learning is subject to the separate license, privacy and service terms between your organization and the third party, and not the Viva Learning (Preview) terms. Before selecting this type of learning, verify you have an agreement in place for your organization and users.
 
 ## Assign the knowledge admin role (Optional)
 
@@ -43,12 +43,12 @@ To add a knowledge admin for Viva Learning (Preview), follow these steps:
 1. In the left navigation of the Microsoft 365 admin center, go to **Roles**.
 
 2. On the **Roles** page, on the **Azure AD** tab, select **Knowledge Administrator**.
- 
+
 3. On the **Knowledge Administrator** panel, select **Assigned admins**, and then select **Add**.
 
      ![Roles page in the Microsoft 365 admin center showing the Knowledge Administrator panel to add a user.](../media/learning/learning-add-knowledge-admin-1.png)
 
-3. On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
+4. On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
 
      ![Roles page in the Microsoft 365 admin center showing the Add admins panel to add a user.](../media/learning/learning-add-knowledge-admin-2.png)
 
@@ -101,13 +101,13 @@ The set of available connected learning providers might change at any time. More
 
 For Viva Learning (Preview), users who have Skillsoft enabled and choose to view Skillsoft content will land on a Percipio page that asks them to input your organization's Percipio site name. After users input your organization's site name, they will be directed to page to sign in to your organization's Percipio site. Users will sign in by using their existing credentials and see the content they originally selected. Users will be asked to input the Percipio site name only once, until their browser cache is cleared. To streamline this experience for your users, we recommend including your Percipio site name in internal communications you send about Viva Learning (Preview).
 
-This is intended to be a temporary experience for preview, and we are working with Skillsoft to enable tenant-specific integration for general availability, which will bypass the step that requires users to provide your organization's Percipio site name. 
+This is intended to be a temporary experience for preview, and we are working with Skillsoft to enable tenant-specific integration for general availability, which will bypass the step that requires users to provide your organization's Percipio site name.
 
 ### Details on Microsoft substrate  
 
 For data that you copy to Viva Learning (Preview) from a non-Microsoft service (learning provider or learning management system), you are not able to directly extract, correct, or delete that data in Viva Learning (Preview). We refresh the data you import from non-Microsoft providers promptly to reflect changes and deletions in the non-Microsoft source data.
 
-You need to work with the supplier of the non-Microsoft service to access, correct, delete or extract data under the license, service, or privacy terms of the non-Microsoft service. The changes made there will be reflected in the data processed for your use in Viva Learning (Preview) upon completion of the data update cycles of the non-Microsoft service and Viva Learning (Preview). If you turn off the connection between Viva Learning (Preview) and a non-Microsoft service, all data you had previously imported from that service will be deleted. 
+You need to work with the supplier of the non-Microsoft service to access, correct, delete or extract data under the license, service, or privacy terms of the non-Microsoft service. The changes made there will be reflected in the data processed for your use in Viva Learning (Preview) upon completion of the data update cycles of the non-Microsoft service and Viva Learning (Preview). If you turn off the connection between Viva Learning (Preview) and a non-Microsoft service, all data you had previously imported from that service will be deleted.
 
 ## Next step
 
