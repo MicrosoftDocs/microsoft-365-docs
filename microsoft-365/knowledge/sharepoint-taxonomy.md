@@ -131,19 +131,26 @@ In the term store, you can view the status of requests by:
 
 3. In the **Create topic from this term** section, view the status of the request.
 
+    ![Screenshot showing the Create topic from this term page and the request status in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-single-term-03.png)
+
 **--Insert screenshots from final UX--**
 
 ### View the status for multiple terms in a term set
 
 1. On the **Term store** page, search for and select the term set for which you want to view the status.
+
 2. On the term page, select the **Usage settings** tab.
 
     In the **Create topics from terms** section, you can see the total number of requests, how many are linked to topics, and how many were declined.
 
 3. Select **View all requests**.
+
 4. On the **All requested terms for topic creation** panel, view the status of the term requests.
+
 5. If you have many requests, select **Load more** to keep loading additional items.
+
 6. To review requests that are in a particular state, use the filter option on the **Status** column.
+
 
 **--Insert screenshots from final UX--**
 
