@@ -110,7 +110,7 @@ In this scenario, because the retention label is not applied to the original fil
 
 ![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention_diagram_of_retention_flow_cloud-attachments.png)
 
-The copy that's stored in the Preservation Holds library is typically created within an hour from the cloud attachment being shared.
+The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
 
 ## How retention works with OneNote content
 
