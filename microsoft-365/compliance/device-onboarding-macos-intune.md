@@ -61,9 +61,14 @@ Onboarding a macOS device into Microsoft 365 Compliance solutions is a three pha
 
 7. Choose **Next**
 
-8. Assign **Intune** CHECK THIS WITH HENRY, IT DOESN'T MAKE SENSE on the **Assignments** tab and choose **Next**.
+8. Assign your **Intune** managed macOS devices on the **Assignments** tab and choose **Next**.
 
 9. Review your setting and choose **Create**.
+
+1. Repeat steps 2-7 for the:
+    1. **fulldisk.mobileconfig** file
+    1. **com.microsoft.autoupdate2.xml** file - for the **channel name** string 
+    1. MDE preferences **com.microsoft.wdav.xml** file
 
 10. Open **Devices** > **Configuration profiles**, you should see your created profile there.
 
