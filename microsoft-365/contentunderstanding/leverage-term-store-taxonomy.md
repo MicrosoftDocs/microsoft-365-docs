@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Use term store taxonomy when creating an extractor in your document understanding model in Microsoft SharePoint Syntex.
 ---
 
