@@ -1,5 +1,5 @@
 ---
-title: "Plan for Microsoft Viva Topics"
+title: Plan for Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,8 +8,8 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to plan for Plan for Microsoft Viva Topics"
+localization_priority: medium
+description: Learn how to plan for Microsoft Viva Topics.
 ---
 
 # Plan for Microsoft Viva Topics

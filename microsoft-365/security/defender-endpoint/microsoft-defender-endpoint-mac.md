@@ -82,7 +82,7 @@ The three most recent major releases of macOS are supported.
 
 Beta versions of macOS are not supported.
 
-Support for macOS devices with M1 chip-based processors is officially supported since version 101.40.84 of the agent.
+Support for macOS devices with M1 chip-based processors has been officially supported since version 101.40.84 of the agent.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -94,11 +94,16 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
+- Windows 11
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
 > Eligible licensed users may use Microsoft Defender for Endpoint on up to five concurrent devices.
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP). When purchased via a CSP, it does not require Microsoft Volume Licensing offers listed.
+
+### Configuring Exclusions
+
+When adding exclusions to Microsoft Defender, you should be mindful of [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### Network connections
 
