@@ -38,9 +38,10 @@ The link to incident feature lets you select advanced hunting query results to a
 1. In the advanced hunting query page, first enter your query in the query field provided then select **Run query** to get your results.
 
     ![Image showing query page](../../media/link-to-incident-1.png)
-1. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
+2. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
+
     ![Image showing link to incident button](../../media/link-to-incident-1b.png)
-1. 	In the Alert details section, select **Create new incident** to group the selected records to a new incident:
+3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group the selected records to a new incident:
 
  
     ![Image showing event details showing create new incident](../../media/link-to-incident-3-create-new.png)	
@@ -49,18 +50,18 @@ The link to incident feature lets you select advanced hunting query results to a
 
     ![Image showing event details showing link to existing](../../media/link-to-incident-3-link-to-existing.png)
 4. For either selection, provide the following details, then select **Next**:
-      - Alert title - provide a descriptive title for the results that your incident responders can understand. This will become the alert title
-      - Severity - Choose the severity applicable to the alert.
-      - Category - [INSERT SAMPLE CATEGORIES]
-      - Description - [INSERT SAMPLE DESCRIPTIONS]
-      - Recommended actions - Provide remediation actions
+      - Alert title - provide a descriptive title for the results that your incident responders can understand. This becomes the alert title.
+      - Severity - Choose the severity applicable to the group of alerts.
+      - Category - Choose the appropriate threat category for the alerts.
+      - Description - Give a helpful description for the grouped alerts.
+      - Recommended actions - Provide remediation actions.
 
-1. In the Impacted entities section, select the main affected or impacted entity. Only the possible entities based on the query results appear on this section. For example, in the example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
+5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear on this section. In our example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
      ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
-1. Select **Next**.
-1. Review the details you have provided in the Summary section.
+6. Select **Next**.
+7. Review the details you have provided in the Summary section.
      ![Image showing summary](../../media/link-to-incident-5-summary.png) 
-1. Select **Done** to convert the selected events to individual alerts, which are all related to an incident.
+8. Select **Done**.
 
 ## View linked records in the incident
 
@@ -69,12 +70,12 @@ You can select the incident name to view the incident that the events are linked
 
 In our example, the four alerts, representing the four selected events, were linked successfully to a new incident. 
 
-In the alert page, you can find the complete information on the event or events in timeline view (if available) and query results view.
+In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and query results view.
      ![Image showing alert story](../../media/link-to-incident-7-alert-story.png) 
 
 ![Image showing inspect record](../../media/link-to-incident-7-inspect-record.png) 
 
 ## Filter for events added using advanced hunting
-You can view the new alerts from hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
+You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
 
 ![Image showing event details showing link to existing](../../media/link-to-incident-8-filter.png) 
