@@ -1,6 +1,6 @@
 ---
-title: "Microsoft SharePoint Syntex adoption: Get started"
-description: "Learn how to use and implement SharePoint Syntex in your organization to help you solve your business problems."
+title: Microsoft SharePoint Syntex adoption: Get started
+description: Learn how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -13,7 +13,7 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
+localization_priority: medium
 ---
 
 # Microsoft SharePoint Syntex adoption: Get started
