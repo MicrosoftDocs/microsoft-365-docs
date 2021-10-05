@@ -2,8 +2,6 @@
 title: How to Deploy Defender for Endpoint on Linux with Chef
 description: Learn how to deploy Defender for Endpoint on Linux with Chef
 keywords: microsoft, defender, atp, linux, scans, antivirus, microsoft defender for endpoint (linux)
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
