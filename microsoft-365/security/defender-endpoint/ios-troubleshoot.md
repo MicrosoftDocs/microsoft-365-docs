@@ -2,8 +2,6 @@
 title: Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS
 description: Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, troubleshoot, faq, how to
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -101,7 +99,7 @@ For details about data collected and privacy, see [Privacy Information - Microso
 
 ## Issues on supervised devices with content filter profile installed
 
-There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in interet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
+There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in internet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
 
 ## Issues during app updates from the app store
 
@@ -109,7 +107,7 @@ If you observe issues when the app is updated through the app store (either auto
 
 ## Send in-app feedback
 
-If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide in-app feedback along with diagnostic data. Our team will then investigate the logs to provide the right solution. Users can use the following steps to send feeback:
+If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide in-app feedback along with diagnostic data. Our team will then investigate the logs to provide the right solution. Users can use the following steps to send feedback:
 
   - Open MSDefender app on the iOS/iPadOS device.
   - Tap on Menu (profile icon) on the top-left corner.
