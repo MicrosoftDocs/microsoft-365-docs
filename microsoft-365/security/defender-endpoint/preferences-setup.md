@@ -2,8 +2,6 @@
 title: Configure Microsoft Defender Security Center settings
 description: Use the settings page to configure general settings, permissions, apis, and rules.
 keywords: settings, general settings, permissions, apis, rules
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

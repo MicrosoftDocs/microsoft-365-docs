@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-viva-topics
 ms.service: 
 search.appverid: 
-localization_priority: Normal
+localization_priority: medium
 description: Learn how to create a new topic in Microsoft Viva Topics.
 
 ---
