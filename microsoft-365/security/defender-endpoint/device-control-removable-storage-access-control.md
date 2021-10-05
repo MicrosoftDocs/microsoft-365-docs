@@ -201,7 +201,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability is availabile at Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> Endpoint Security \> Attack Surface Reduction \> Create Policy \> Platform: Windows 10 and later & Profile: Device Control).
+This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
