@@ -10,7 +10,7 @@ metadata:
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e

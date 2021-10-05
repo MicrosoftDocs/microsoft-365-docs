@@ -7,7 +7,7 @@ audience: Admin
 ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - M365-identity-device-management

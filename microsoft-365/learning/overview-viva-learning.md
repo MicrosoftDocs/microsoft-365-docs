@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: null
 description: Learn about Microsoft Viva Learning (Preview) in your Microsoft 365 environment.
 ---
 
