@@ -99,4 +99,4 @@ description: "Gather the values/information you need to create DNS records to co
 
 [Domains FAQ](../setup/domains-faq.yml) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)
