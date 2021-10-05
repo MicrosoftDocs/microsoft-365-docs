@@ -7,7 +7,6 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-
 localization_priority: Normal
 ms.collection:
   - M365-security-compliance
@@ -19,9 +18,6 @@ ms.prod: m365-security
 # Admin review for reported messages
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. This document is provided for evaluation and exploration purposes only.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -54,7 +50,7 @@ You will only be able to mark and notify users of review results if the message 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.
 
    > [!div class="mx-imgBorder"]
-   > ![Send messages from portal](../../media/admin-review-send-message-from-portal.png)
+   > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
 
 The reported message will be marked as either false positive or false negative, and an email will be automatically sent from within the portal notifying the user who reported the message.
 
@@ -72,6 +68,6 @@ The reported message will be marked as either false positive or false negative, 
     - Footer
 
     > [!div class="mx-imgBorder"]
-    > ![Customize messages send to users](../../media/admin-review-customize-message.png)
+    > ![Customize messages send to users.](../../media/admin-review-customize-message.png)
 
 4. When you're finished, click **Save**. To clear these values, click **Discard** on the User submissions page.

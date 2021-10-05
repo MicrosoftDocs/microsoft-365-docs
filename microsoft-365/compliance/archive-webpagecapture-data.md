@@ -24,7 +24,7 @@ After webpage content is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive webpage content in Microsoft 365.
 
-![Archiving workflow for webpage data](../media/WebPageCaptureConnectorWorkflow.png)
+![Archiving workflow for webpage data.](../media/WebPageCaptureConnectorWorkflow.png)
 
 1. Your organization works with the webpage source to set up and configure a Webpage Capture site.
 

@@ -25,7 +25,7 @@ To set the language and time zone for the booking calendar:
 
 1. Log into Microsoft 365 and select the Outlook tile on the landing page (as shown in the screenshot below) or in the Microsoft 365 App Launcher.
 
-   ![Image of Outlook tile on Microsoft 365 landing page](../media/bookings-outlook-tile.png)
+   ![Image of Outlook tile on Microsoft 365 landing page.](../media/bookings-outlook-tile.png)
 
 1. After Outlook opens, select the **gear icon** in the upper, right-hand corner of the screen to open your personal and account settings, then search for “time zone” in the **Settings** panel search box. The panel will update to show your current personal language and time zone settings for this account. As noted above, this setting also controls the language and time zone of the booking calendar.
 
@@ -39,8 +39,8 @@ To set the language and time zone for the booking calendar:
 
 1. In the navigation pane, select **Booking page** and select **Change language and time zone settings**.
 
-   ![Screenshot: Change language and time zone settings link](../media/bookings-region-language-timezone-settings.png)
+   ![Screenshot: Change language and time zone settings link.](../media/bookings-region-language-timezone-settings.png)
 
 1. Select your language and current time zone and choose OK.
 
-   ![Screenshot: Language and time zone settings](../media/bookings-region-timezone-settings.png)
+   ![Screenshot: Language and time zone settings.](../media/bookings-region-timezone-settings.png)

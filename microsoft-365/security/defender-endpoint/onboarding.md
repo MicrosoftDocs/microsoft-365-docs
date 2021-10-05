@@ -2,7 +2,6 @@
 title: Onboard to the Microsoft Defender for Endpoint service
 description: Learn how to onboard endpoints to Microsoft Defender for Endpoint service
 keywords: microsoft defender for endpoint, onboard, deploy
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -34,7 +33,7 @@ Learn about the various phases of deploying Microsoft Defender for Endpoint and 
 
 Deploying Defender for Endpoint is a three-phase process:
 
-|[![deployment phase - prepare](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Phase 1: Prepare](prepare-deployment.md)|[![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Phase 2: Setup](production-deployment.md)|![deployment phase - onboard](images/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
+|[![deployment phase - prepare.](images/phase-diagrams/prepare.png)](prepare-deployment.md) <br> [Phase 1: Prepare](prepare-deployment.md)|[![deployment phase - setup](images/phase-diagrams/setup.png)](production-deployment.md) <br> [Phase 2: Setup](production-deployment.md)|![deployment phase - onboard](images/phase-diagrams/onboard.png) <br> Phase 3: Onboard|
 |---|---|---|
 |||*You are here!*|
 

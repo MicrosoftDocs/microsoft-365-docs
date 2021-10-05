@@ -2,7 +2,6 @@
 title: Create an onboarding or offboarding notification rule
 description: Get a notification when a local onboarding or offboarding script is used.
 keywords: onboarding, offboarding, local, script, notification, rule
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -40,7 +39,7 @@ Create a notification rule so that when a local onboarding or offboarding script
 
 You'll need to have access to:
 
-- Microsoft Flow (Flow Plan 1 at a minimum). For more information, see [Flow pricing page](https://flow.microsoft.com/pricing/).
+- Power Automate (Per-user plan at a minimum). For more information, see [Power Automate pricing page](https://flow.microsoft.com/pricing/).
 - Azure Table or SharePoint List or Library / SQL DB.
 
 ## Create the notification flow
@@ -49,18 +48,18 @@ You'll need to have access to:
 
 2. Navigate to **My flows > New > Scheduled - from blank**.
 
-    ![Image of flow](images/new-flow.png)
+    ![Image of flow.](images/new-flow.png)
 
 3. Build a scheduled flow.
    1. Enter a flow name.
    2. Specify the start and time.
    3. Specify the frequency. For example, every 5 minutes.
 
-    ![Image of the notification flow](images/build-flow.png)
+    ![Image of the notification flow.](images/build-flow.png)
 
 4. Select the + button to add a new action. The new action will be an HTTP request to the Defender for Endpoint security center device(s) API. You can also replace it with the out-of-the-box "WDATP Connector" (action: "Machines - Get list of machines").
 
-    ![Image of recurrence and add action](images/recurrence-add.png)
+    ![Image of recurrence and add action.](images/recurrence-add.png)
 
 5. Enter the following HTTP fields:
 
@@ -73,20 +72,20 @@ You'll need to have access to:
    - Credential Type: Select "Secret".
    - Secret: Sign-in to https://portal.azure.com and navigate to **Azure Active Directory > App Registrations** and get the Tenant ID value.
 
-    ![Image of the HTTP conditions](images/http-conditions.png)
+    ![Image of the HTTP conditions.](images/http-conditions.png)
 
 6. Add a new step by selecting **Add new action** then search for **Data Operations** and select
 **Parse JSON**.
 
-    ![Image of data operations](images/data-operations.png)
+    ![Image of data operations.](images/data-operations.png)
 
 7. Add Body in the **Content** field.
 
-    ![Image of parse JSON](images/parse-json.png)
+    ![Image of parse JSON.](images/parse-json.png)
 
 8. Select the **Use sample payload to generate schema** link.
 
-    ![Image of parse json with payload](images/parse-json-schema.png)
+    ![Image of parse json with payload.](images/parse-json-schema.png)
 
 9. Copy and paste the following JSON snippet:
 
@@ -175,22 +174,22 @@ You'll need to have access to:
     - If yes, no notification will be triggered
     - If no, will register the new onboarded device(s) in the SharePoint list and a notification will be sent to the Defender for Endpoint admin
 
-    ![Image of apply to each](images/flow-apply.png)
+    ![Image of apply to each.](images/flow-apply.png)
 
-    ![Image of apply to each  with get items](images/apply-to-each.png)
+    ![Image of apply to each  with get items.](images/apply-to-each.png)
 
 11. Under **Condition**, add the following expression: "length(body('Get_items')?['value'])" and set the condition to equal to 0.
 
-    ![Image of apply to each condition](images/apply-to-each-value.png)
-    ![Image of condition1](images/conditions-2.png)
-    ![Image of condition2](images/condition3.png)
-    ![Image of send email](images/send-email.png)
+    ![Image of apply to each condition.](images/apply-to-each-value.png)
+    ![Image of condition1.](images/conditions-2.png)
+    ![Image of condition2.](images/condition3.png)
+    ![Image of send email.](images/send-email.png)
 
 ## Alert notification
 
 The following image is an example of an email notification.
 
-![Image of email notification](images/alert-notification.png)
+![Image of email notification.](images/alert-notification.png)
 
 ## Tips
 

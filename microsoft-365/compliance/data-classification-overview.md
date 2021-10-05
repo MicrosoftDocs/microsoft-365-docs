@@ -48,8 +48,6 @@ Data classification will scan your sensitive content and labeled content before 
 
 ## Prerequisites
 
-A number of different subscriptions support Endpoint DLP. To see licensing options for Endpoint DLP see [Information Protection licensing for guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
-
 ### Permissions
 
  In order to get access to the data classification page, an account must be assigned membership in any one of these roles or role groups.
@@ -62,7 +60,7 @@ A number of different subscriptions support Endpoint DLP. To see licensing optio
 - Compliance data administrator
 
 > [!NOTE]
-> As a best practice, always use the role with least privilege to grant access to Microsoft 365 Data Classification.
+> As a best practice, always use the role with least privilege to grant access to Microsoft 365 data classification.
 
 ## Sensitive information types used most in your content
 
@@ -70,14 +68,14 @@ Microsoft 365 comes with many definitions of sensitive information types, such a
 
 The sensitive information type card shows the top sensitive information types that have been found and labeled across your organization.
 
-![top sensitive information types](../media/data-classification-sens-info-types-card.png)
+![top sensitive information types.](../media/data-classification-sens-info-types-card.png)
 
 To find out how many items are in any given classification category, hover over the bar for the category.
 
-![top sensitive information types hover detail](../media/data-classification-sens-info-types-hover.png)
+![top sensitive information types hover detail.](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
+> If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
 >- [Get started with retention policies and retention labels](get-started-with-retention.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
@@ -86,8 +84,8 @@ To find out how many items are in any given classification category, hover over 
 
 When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:
 
-- a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes
-- the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
+- A tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes.
+- The presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption. With end point protection enabled you can even prevent an item from leaving your organizational control.
 
 For more information on sensitivity labels, see: [Learn about sensitivity labels](sensitivity-labels.md)
 
@@ -95,7 +93,7 @@ Sensitivity labels must be enabled for files that are in SharePoint and OneDrive
 
 The sensitivity label card shows the number of items (email or document) by sensitivity level.
 
-![breakdown of content by sensitivity label classification placeholder screenshot](../media/data-classification-top-sensitivity-labels-applied.png)
+![breakdown of content by sensitivity label classification placeholder screenshot.](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
 > If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with sensitivity labels, see:
@@ -103,11 +101,11 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 ## Top retention labels applied to content
 
-Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information, see [Learn about retention policies and retention labels](retention.md).
+Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how long an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information, see [Learn about retention policies and retention labels](retention.md).
 
 The top applied retention labels card shows you how many items have a given retention label.
 
-![top applied retention labels placeholder screenshot](../media/data-classification-top-retention-labels-applied.png)
+![top applied retention labels placeholder screenshot.](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
@@ -128,6 +126,24 @@ The point of the data classification reporting is to provide visibility into the
 > [!NOTE]
 > If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied. To get started with sensitivity labels, see:
 >- [Sensitivity labels](sensitivity-labels.md)
+
+## Public preview release notes 
+
+> [!NOTE]
+> **Exchange mailbox count**:
+>You will notice a small tool tip appear when you drill into Exchange mailboxes. This is to call out the fact that the aggregate count displayed for sensitive information type, sensitivity label and retention label may not exactly match the number of items that you will find inside the mailbox. This is because the drill-down into the folder fetches the live view of content, which is classified, while the aggregated count is calculated.Information the user should notice even if skimming
+
+> [!NOTE]
+> **Rendering of encrypted documents**:
+>SharePoint, Exchange, and OneDrive files that are encrypted don't render in the content explorer. This is a sensitive issue that requires a balance between the need to see file contents in content explorer and the need to keep the contents encrypted. With the permissions granted by **Content Explorer List Viewer**, and **Content Explorer Content Viewer** role groups, you will see a list view of the files, the file  metadata, and a link you can use to access the content via the web client.Information the user should notice even if skimming
+
+> [!NOTE]
+> **Supported characters in retention label names in SharePoint search**:
+>SharePoint search doesn't support retention label names with `-`, or `_` in them. For example, `Label-MIP` and `Label_MIP` aren't supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
+
+> [!NOTE]
+> **OneDrive remains in preview**:
+>Thanks for your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We'll continue to showcase OneDrive in preview until all fixes are in place. We appreciate your continued support.
 
 ## See also
 

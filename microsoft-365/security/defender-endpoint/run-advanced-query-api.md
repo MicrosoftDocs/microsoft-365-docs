@@ -1,6 +1,6 @@
 ---
 title: Advanced Hunting API
-ms.reviewer: 
+ms.reviewer:
 description: Learn to use the advanced hunting API to run advanced queries on Microsoft Defender for Endpoint. Find out about limitations and see an example.
 keywords: apis, supported apis, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
@@ -44,7 +44,9 @@ ms.custom: api
 
 4. The maximal execution time of a single request is 10 minutes.
 
-5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
+5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
+
+6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
 
 ## Permissions
 
@@ -98,7 +100,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId

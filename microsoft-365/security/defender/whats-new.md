@@ -27,15 +27,43 @@ ms.technology: m365d
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-The following features are generally available (GA) in the latest release of Microsoft 365 Defender.
+The following features are in preview or generally available (GA) in the latest release of Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+For more information on what's new with other Microsoft Defender security products see:
+
+- [What's new in Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
+- [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
+- [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+
+
+## September 2021
+- (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. You can see the availability and status of event types in the [Supported Microsoft 365 Defender event types in streaming API](supported-event-types.md).
+- (GA) Microsoft Defender for Office 365 data available in advanced hunting is now generally available.
+- (Preview) Assign incidents and alerts to user accounts <br> You can assign an incident, and all the alerts associated with it, to a user account from **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
+
+
+## August 2021
+- (Preview) Microsoft Defender for Office 365 data available in advanced hunting
+<br>New columns in email tables can provide more insight into email-based threats for more thorough investigations using advanced hunting. You can now include the `AuthenticationDetails` column in [EmailEvents](./advanced-hunting-emailevents-table.md), `FileSize` in [EmailAttachmentInfo](./advanced-hunting-emailattachmentinfo-table.md), and `ThreatTypes` and `DetectionMethods` in [EmailPostDeliveryEvents](./advanced-hunting-emailpostdeliveryevents-table.md) tables. 
+
+- (Preview) Incident graph <br>  A new **Graph** tab on the **Summary** tab of an incident shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went.
+
 ## July 2021
 - [Professional services catalog](https://sip.security.microsoft.com/interoperability/professional_services)<br>Enhance the detection, investigation, and threat intelligence capabilities of the platform with supported partner connections.
+
+## June 2021
+- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-per-threat-tags)<br> Threat tags help you focus on specific threat categories and review the most relevant reports.
+- (Preview) [Streaming API](../defender-endpoint/raw-data-export.md)<br> Microsoft 365 Defender supports streaming all the events available through Advanced Hunting to an Event Hubs and/or Azure storage account.
+- (Preview) [Take action in advanced hunting](advanced-hunting-take-action.md)<br> Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).
+- (Preview) [In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)<br> Get information about advanced hunting schema tables directly in the security center. In addition to table and column descriptions, this reference includes supported event types (`ActionType` values) and sample queries.
+- (Preview) [DeviceFromIP() function](advanced-hunting-devicefromip-function.md)<br> Get information about which devices have been assigned a specific IP address or addresses at a given time range.
     
 
 ## May 2021
@@ -54,30 +82,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in `AppFileEvents`.
 ## February 2021
 - (Preview) The enhanced [Microsoft 365 Defender portal (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](./overview-security-center.md).
-
-## September 2020
-- [IdentityDirectoryEvents table](advanced-hunting-identitydirectoryevents-table.md) <br> Find events involving an on-premises domain controller running Active Directory (AD). This [advanced hunting](advanced-hunting-overview.md) schema table covers a range of identity-related events and system events on the domain controller.
-- [AssignedIPAddresses() function](advanced-hunting-assignedipaddresses-function.md) <br> Use this function in your advanced hunting queries to quickly obtain the latest IP addresses assigned to a device or the most recent IP addresses from a specific time.
-
-## July 2020
-- [FileProfile() function](advanced-hunting-fileprofile-function.md) <br> Use this function in your advanced hunting queries to enrich results with comprehensive file information.
-- [Identity and app tables](advanced-hunting-schema-tables.md)<br> Get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.
-- [Go hunt](advanced-hunting-go-hunt.md)<br> Quickly pivot from investigating an incident to inspecting a specific event, a user, a device, or other entity types on advanced hunting.
-
-## June 2020
-- Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.
-- [EmailPostDeliveryEvents schema table](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporate information about post-delivery actions taken on email messages in your advanced hunting queries.
-- [Inspect records in advanced hunting](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Quickly inspect records in your query results with the new details panel.
-
-## May 2020
-- [Custom detections](custom-detections-overview.md) <br> Use advanced hunting queries to create custom detection rules that automatically monitor for and respond to security events and system states.
-
-## February 2020
-- [Incidents](incidents-overview.md) <br> Know exactly where an attack started and other details to help you see the extent of the attack.
-- [Automated investigation and response](m365d-autoir.md) <br> AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents.
-- [Advanced hunting enhancements](advanced-hunting-overview.md) <br> Proactively hunt for threats across the modern workspace with Kusto Query Language and a security-optimized schema.
-
-## March 2019
-- Advanced hunting <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
-- [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
-- [Reports](overview-security-center.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
+- **[(Preview) Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 

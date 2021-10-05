@@ -53,7 +53,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type | Permission | Permission display name
 :---|:---|:---
-Application | Alerts.ReadWrite.All | 'Read and write all alerts'
+Application | Alert.ReadWrite.All | 'Read and write all alerts'
 Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 
 > [!NOTE]

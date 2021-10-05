@@ -47,7 +47,7 @@ This insight will be displayed if the network insights service detects that the 
 This insight is abbreviated as "Egress" in some summary views.
 
 > [!div class="mx-imgBorder"]
-> ![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> ![Backhauled network egress.](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### What does this mean?
 
@@ -82,7 +82,7 @@ This insight will be displayed if the network insights service detects that a si
 This insight is abbreviated as "Peers" in some summary views.
 
 > [!div class="mx-imgBorder"]
-> ![Relative network performance](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> ![Relative network performance.](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### What does this mean?
 
@@ -99,7 +99,7 @@ This insight will be displayed if the network insights service detects that user
 This insight is abbreviated as "Routing" in some summary views.
 
 > [!div class="mx-imgBorder"]
-> ![Non-optimal EXO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> ![Non-optimal EXO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### What does this mean?
 
@@ -116,7 +116,7 @@ This insight will be displayed if the network insights service detects that user
 This insight is abbreviated as "Afd" in some summary views.
 
 > [!div class="mx-imgBorder"]
-> ![Non-optimal SPO front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> ![Non-optimal SPO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### What does this mean?
 

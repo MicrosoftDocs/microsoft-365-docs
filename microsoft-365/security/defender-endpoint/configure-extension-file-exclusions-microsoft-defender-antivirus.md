@@ -12,8 +12,10 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
+ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -23,13 +25,13 @@ manager: dansimp
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you shouldn't need to apply exclusions**. If you do need to apply exclusions, you can choose from several different kinds: 
+You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you shouldn't need to apply exclusions**. If you do need to apply exclusions, you can choose from several different kinds:
 
 - Exclusions based on file extensions and folder locations (described in this article)
-- [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) 
+- [Exclusions for files that are opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. 
+> Microsoft Defender Antivirus exclusions don't apply to other Microsoft Defender for Endpoint capabilities, including [endpoint detection and response (EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response), [attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction), and [controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
 > To exclude files broadly, add them to the Microsoft Defender for Endpoint [custom indicators](/microsoft-365/security/defender-endpoint/manage-indicators).
 
 ## Before you begin...
@@ -45,19 +47,19 @@ To exclude certain files from Microsoft Defender Antivirus scans, you modify you
 >
 > Automatic exclusions apply only to Windows Server 2016 and later. These exclusions are not visible in the Windows Security app and in PowerShell.
 
-The following table lists some examples of exclusions based on file extension and folder location. <br/><br/>
+The following table lists some examples of exclusions based on file extension and folder location. 
+<br/><br/>
 
-| Exclusion | Examples | Exclusion list |
-|:---|:---|:---|
-|Any file with a specific extension | All files with the specified extension, anywhere on the machine. <p> Valid syntax: `.test` and `test`  | Extension exclusions |
-|Any file under a specific folder | All files under the `c:\test\sample` folder | File and folder exclusions |
-| A specific file in a specific folder | The file `c:\sample\sample.test` only | File and folder exclusions |
-| A specific process | The executable file `c:\test\process.exe` | File and folder exclusions |
+|Exclusion|Examples|Exclusion list|
+|---|---|---|
+|Any file with a specific extension|All files with the specified extension, anywhere on the machine. <p> Valid syntax: `.test` and `test`|Extension exclusions|
+|Any file under a specific folder|All files under the `c:\test\sample` folder|File and folder exclusions|
+|A specific file in a specific folder|The file `c:\sample\sample.test` only|File and folder exclusions|
+|A specific process|The executable file `c:\test\process.exe`|File and folder exclusions|
 
 ## Characteristics of exclusion lists
 
 - Folder exclusions apply to all files and folders under that folder, unless the subfolder is a reparse point. Reparse point subfolders must be excluded separately.
-
 - File extensions apply to any file name with the defined extension if a path or folder is not defined.
 
 ## Important notes about exclusions based on file extensions and folder locations
@@ -80,10 +82,9 @@ You can choose from several methods to define exclusions for Microsoft Defender 
 
 ### Use Intune to configure file name, folder, or file extension exclusions
 
-See the following articles:   
+See the following articles:
 
 - [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure)
-
 - [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### Use Configuration Manager to configure file name, folder, or file extension exclusions
@@ -92,17 +93,16 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 
 ### Use Group Policy to configure folder or file extension exclusions
 
->[!NOTE]
->If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder are excluded.
+> [!NOTE]
+> If you specify a fully qualified path to a file, then only that file is excluded. If a folder is defined in the exclusion, then all files and subdirectories under that folder are excluded.
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
 
 2. In the **Group Policy Management Editor** go to **Computer configuration** and select **Administrative templates**.
 
-3. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.
+3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Exclusions**.
 
 4. Open the **Path Exclusions** setting for editing, and add your exclusions.
-
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
@@ -111,10 +111,9 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
 5. Choose **OK**.
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
-
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
-    3. Enter each file extension on its own line under the **Value name** column.  Enter **0** in the **Value** column.
+    3. Enter each file extension on its own line under the **Value name** columnEnter **0** in the **Value** column.
 
 7. Choose **OK**.
 
@@ -132,18 +131,22 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-| Configuration action | PowerShell cmdlet |
+<br>
+
+|Configuration action|PowerShell cmdlet|
 |:---|:---|
-|Create or overwrite the list | `Set-MpPreference` |
-|Add to the list | `Add-MpPreference` |
-|Remove item from the list | `Remove-MpPreference` |
+|Create or overwrite the list|`Set-MpPreference`|
+|Add to the list|`Add-MpPreference`|
+|Remove item from the list|`Remove-MpPreference`|
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-| Exclusion type | PowerShell parameter |
-|:---|:---|
-| All files with a specified file extension | `-ExclusionExtension` |
-| All files under a folder (including files in subdirectories), or a specific file | `-ExclusionPath` |
+<br>
+
+|Exclusion type|PowerShell parameter|
+|---|---|
+|All files with a specified file extension|`-ExclusionExtension`|
+|All files under a folder (including files in subdirectories), or a specific file|`-ExclusionPath`|
 
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
@@ -185,107 +188,112 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 
 > [!IMPORTANT]
 > There are key limitations and usage scenarios for these wildcards:
+>
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
-
+> - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
+    
 The following table describes how the wildcards can be used and provides some examples.
 
-| Wildcard  | Examples  |
-|:---------|:---------|
-| `*` (asterisk) <p> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <p> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders and `C:\Serv\Secondary\Allowed\Backup` and its subfolders     |
-| `?` (question mark)  <p> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.   | `C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <p> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders          |
-| Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated.          |`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
-        
+<br/><br/>
+
+|Wildcard|Examples|
+|---|---|
+|`*` (asterisk) <p> In **file name and file extension inclusions**, the asterisk replaces any number of characters, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the asterisk replaces a single folder. Use multiple `*` with folder slashes `\` to indicate multiple nested folders. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` includes any file in `C:\somepath\Archives\Data` and its subfolders, and `C:\somepath\Authorized\Data` and its subfolders <p> `C:\Serv\*\*\Backup` includes any file in `C:\Serv\Primary\Denied\Backup` and its subfolders and `C:\Serv\Secondary\Allowed\Backup` and its subfolders|
+|`?` (question mark)  <p> In **file name and file extension inclusions**, the question mark replaces a single character, and only applies to files in the last folder defined in the argument. <p> In **folder exclusions**, the question mark replaces a single character in a folder name. After matching the number of wild carded and named folders, all subfolders are also included.|`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` includes any file in `C:\somepath\P\Data` and its subfolders  <p> `C:\somepath\test0?\Data` would include any file in `C:\somepath\test01\Data` and its subfolders|
+|Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated.|`%ALLUSERSPROFILE%\CustomLogFiles` would include `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
 > [!IMPORTANT]
 > If you mix a file exclusion argument with a folder exclusion argument, the rules will stop at the file argument match in the matched folder, and will not look for file matches in any subfolders.
+>
 > For example, you can exclude all files that start with "date" in the folders `c:\data\final\marked` and `c:\data\review\marked` by using the rule argument `c:\data\*\marked\date*`.
+>
 > This argument, however, will not match any files in subfolders under `c:\data\final\marked` or `c:\data\review\marked`.
 
 <a id="review"></a>
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables. 
-
-| This system environment variable... | Redirects to this |
-|:--|:--|
-| `%APPDATA%`| `C:\Users\UserName.DomainName\AppData\Roaming` |
-| `%APPDATA%\Microsoft\Internet Explorer\Quick Launch` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch` |
-| `%APPDATA%\Microsoft\Windows\Start Menu` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu` |
-| `%APPDATA%\Microsoft\Windows\Start Menu\Programs` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs` |
-| `%LOCALAPPDATA%` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
-| `%ProgramData%` | `C:\ProgramData` |
-| `%ProgramFiles%` | `C:\Program Files` |
-| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
-| `%ProgramFiles%\Windows Sidebar\Gadgets` | `C:\Program Files\Windows Sidebar\Gadgets` |
-| `%ProgramFiles%\Common Files` | `C:\Program Files\Common Files` |
-| `%ProgramFiles(x86)%` | `C:\Program Files (x86)` |
-| `%ProgramFiles(x86)%\Common Files` | `C:\Program Files (x86)\Common Files` |
-| `%SystemDrive%` | `C:` |
-| `%SystemDrive%\Program Files` | `C:\Program Files` |
-| `%SystemDrive%\Program Files (x86)` | `C:\Program Files (x86)` |
-| `%SystemDrive%\Users` | `C:\Users` |
-| `%SystemDrive%\Users\Public` | `C:\Users\Public` |
-| `%SystemRoot%` | `C:\Windows` |
-| `%windir%` | `C:\Windows` |
-| `%windir%\Fonts` | `C:\Windows\Fonts` |
-| `%windir%\Resources` | `C:\Windows\Resources` |
-| `%windir%\resources\0409` | `C:\Windows\resources\0409` |
-| `%windir%\system32` | `C:\Windows\System32` |
-| `%ALLUSERSPROFILE%` | `C:\ProgramData` |
-| `%ALLUSERSPROFILE%\Application Data` | `C:\ProgramData\Application Data` |
-| `%ALLUSERSPROFILE%\Documents` | `C:\ProgramData\Documents` |
-| `%ALLUSERSPROFILE%\Documents\My Music\Sample Music` | `C:\ProgramData\Documents\My Music\Sample Music` |
-| `%ALLUSERSPROFILE%\Documents\My Music` | `C:\ProgramData\Documents\My Music` |
-| `%ALLUSERSPROFILE%\Documents\My Pictures` | `C:\ProgramData\Documents\My Pictures` |
-| `%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures` | `C:\ProgramData\Documents\My Pictures\Sample Pictures` |
-| `%ALLUSERSPROFILE%\Documents\My Videos` | `C:\ProgramData\Documents\My Videos` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore` | `C:\ProgramData\Microsoft\Windows\DeviceMetadataStore` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer` | `C:\ProgramData\Microsoft\Windows\GameExplorer` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones` | `C:\ProgramData\Microsoft\Windows\Ringtones` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu` | `C:\ProgramData\Microsoft\Windows\Start Menu` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp` | `C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp` |
-| `%ALLUSERSPROFILE%\Microsoft\Windows\Templates` | `C:\ProgramData\Microsoft\Windows\Templates` |
-| `%ALLUSERSPROFILE%\Start Menu` | `C:\ProgramData\Start Menu` |
-| `%ALLUSERSPROFILE%\Start Menu\Programs` | C:\ProgramData\Start Menu\Programs |
-| `%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools` | `C:\ProgramData\Start Menu\Programs\Administrative Tools` | 
-| `%ALLUSERSPROFILE%\Templates` | `C:\ProgramData\Templates` |
-| `%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates` |
-| `%LOCALAPPDATA%\Microsoft\Windows\History` | `C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History` |
-| `%PUBLIC%` | `C:\Users\Public` |
-| `%PUBLIC%\AccountPictures` | `C:\Users\Public\AccountPictures` |
-| `%PUBLIC%\Desktop` | `C:\Users\Public\Desktop` |
-| `%PUBLIC%\Documents` | `C:\Users\Public\Documents` |
-| `%PUBLIC%\Downloads` | `C:\Users\Public\Downloads` |
-| `%PUBLIC%\Music\Sample Music` | `C:\Users\Public\Music\Sample Music` |
-| `%PUBLIC%\Music\Sample Playlists` | `C:\Users\Public\Music\Sample Playlists` |
-| `%PUBLIC%\Pictures\Sample Pictures` | `C:\Users\Public\Pictures\Sample Pictures` |
-| `%PUBLIC%\RecordedTV.library-ms` | `C:\Users\Public\RecordedTV.library-ms` |
-| `%PUBLIC%\Videos` | `C:\Users\Public\Videos` |
-| `%PUBLIC%\Videos\Sample Videos` | `C:\Users\Public\Videos\Sample Videos` | 
-| `%USERPROFILE%` | `C:\Windows\System32\config\systemprofile` |
-| `%USERPROFILE%\AppData\Local` | `C:\Windows\System32\config\systemprofile\AppData\Local` |
-| `%USERPROFILE%\AppData\LocalLow` | `C:\Windows\System32\config\systemprofile\AppData\LocalLow` |
-| `%USERPROFILE%\AppData\Roaming` | `C:\Windows\System32\config\systemprofile\AppData\Roaming` |
-
+The following table lists and describes the system account environment variables.<br/><br/>
+    
+|This system environment variable...|Redirects to this|
+|---|---|
+|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
+|`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
+|`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
+|`%LOCALAPPDATA%`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%ProgramData%`|`C:\ProgramData`|
+|`%ProgramFiles%`|`C:\Program Files`|
+|`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|
+|`%ProgramFiles%\Windows Sidebar\Gadgets`|`C:\Program Files\Windows Sidebar\Gadgets`|
+|`%ProgramFiles%\Common Files`|`C:\Program Files\Common Files`|
+|`%ProgramFiles(x86)%`|`C:\Program Files (x86)`|
+|`%ProgramFiles(x86)%\Common Files`|`C:\Program Files (x86)\Common Files`|
+|`%SystemDrive%`|`C:`|
+|`%SystemDrive%\Program Files`|`C:\Program Files`|
+|`%SystemDrive%\Program Files (x86)`|`C:\Program Files (x86)`|
+|`%SystemDrive%\Users`|`C:\Users`|
+|`%SystemDrive%\Users\Public`|`C:\Users\Public`|
+|`%SystemRoot%`|`C:\Windows`|
+|`%windir%`|`C:\Windows`|
+|`%windir%\Fonts`|`C:\Windows\Fonts`|
+|`%windir%\Resources`|`C:\Windows\Resources`|
+|`%windir%\resources\0409`|`C:\Windows\resources\0409`|
+|`%windir%\system32`|`C:\Windows\System32`|
+|`%ALLUSERSPROFILE%`|`C:\ProgramData`|
+|`%ALLUSERSPROFILE%\Application Data`|`C:\ProgramData\Application Data`|
+|`%ALLUSERSPROFILE%\Documents`|`C:\ProgramData\Documents`|
+|`%ALLUSERSPROFILE%\Documents\My Music\Sample Music`|`C:\ProgramData\Documents\My Music\Sample Music`|
+|`%ALLUSERSPROFILE%\Documents\My Music`|`C:\ProgramData\Documents\My Music`|
+|`%ALLUSERSPROFILE%\Documents\My Pictures`|`C:\ProgramData\Documents\My Pictures`|
+|`%ALLUSERSPROFILE%\Documents\My Pictures\Sample Pictures`|`C:\ProgramData\Documents\My Pictures\Sample Pictures`|
+|`%ALLUSERSPROFILE%\Documents\My Videos`|`C:\ProgramData\Documents\My Videos`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore`|`C:\ProgramData\Microsoft\Windows\DeviceMetadataStore`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer`|`C:\ProgramData\Microsoft\Windows\GameExplorer`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Ringtones`|`C:\ProgramData\Microsoft\Windows\Ringtones`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu`|`C:\ProgramData\Microsoft\Windows\Start Menu`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp`|`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp`|
+|`%ALLUSERSPROFILE%\Microsoft\Windows\Templates`|`C:\ProgramData\Microsoft\Windows\Templates`|
+|`%ALLUSERSPROFILE%\Start Menu`|`C:\ProgramData\Start Menu`|
+|`%ALLUSERSPROFILE%\Start Menu\Programs`| `C:\ProgramData\Start Menu\Programs`|
+|`%ALLUSERSPROFILE%\Start Menu\Programs\Administrative Tools`|`C:\ProgramData\Start Menu\Programs\Administrative Tools`|
+|`%ALLUSERSPROFILE%\Templates`|`C:\ProgramData\Templates`|
+|`%LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\ConnectedSearch\Templates`|
+|`%LOCALAPPDATA%\Microsoft\Windows\History`|`C:\Windows\System32\config\systemprofile\AppData\Local\Microsoft\Windows\History`|
+|`%PUBLIC%`|`C:\Users\Public`|
+|`%PUBLIC%\AccountPictures`|`C:\Users\Public\AccountPictures`|
+|`%PUBLIC%\Desktop`|`C:\Users\Public\Desktop`|
+|`%PUBLIC%\Documents`|`C:\Users\Public\Documents`|
+|`%PUBLIC%\Downloads`|`C:\Users\Public\Downloads`|
+|`%PUBLIC%\Music\Sample Music`|`C:\Users\Public\Music\Sample Music`|
+|`%PUBLIC%\Music\Sample Playlists`|`C:\Users\Public\Music\Sample Playlists`|
+|`%PUBLIC%\Pictures\Sample Pictures`|`C:\Users\Public\Pictures\Sample Pictures`|
+|`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
+|`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
+|`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
+|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
 
 ## Review the list of exclusions
 
 You can retrieve the items in the exclusion list using one of the following methods:
+
 - [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
 - [Windows Security app](microsoft-defender-security-center-antivirus.md)
 
->[!IMPORTANT]
->Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+> [!IMPORTANT]
+> Exclusion list changes made with Group Policy **will show** in the lists in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 >
->Changes made in the Windows Security app **will not show** in the Group Policy lists.
+> Changes made in the Windows Security app **will not show** in the Group Policy lists.
 
 If you use PowerShell, you can retrieve the list in two ways:
 
@@ -303,8 +311,8 @@ cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
->[!NOTE]
->Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+> [!NOTE]
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
@@ -316,7 +324,7 @@ Get-MpPreference
 
 In the following example, the items contained in the `ExclusionExtension` list are highlighted:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output for Get-MpPreference":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output for Get-MpPreference.":::
 
 For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
@@ -332,7 +340,7 @@ $WDAVprefs.ExclusionPath
 
 In the following example, the list is split into new lines for each use of the `Add-MpPreference` cmdlet:
 
-:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output showing only the entries in the exclusion list":::
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output showing only the entries in the exclusion list.":::
 
 For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
 
@@ -368,9 +376,6 @@ You can also copy the string into a blank text file and attempt to save it with 
 ## See also
 
 - [Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
-
 - [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-
 - [Configure Microsoft Defender Antivirus exclusions on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-
 - [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)

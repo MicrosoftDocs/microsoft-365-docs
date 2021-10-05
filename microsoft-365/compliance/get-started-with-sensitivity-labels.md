@@ -41,13 +41,13 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 The basic flow for deploying and applying sensitivity labels:
 
-![Diagram showing workflow for sensitivity labels](../media/Sensitivity-label-flow.png)
+![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
 
 ## Subscription and licensing requirements for sensitivity labels
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For sensitivity labels, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF or Excel download.
+To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For sensitivity labels, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF download for feature-level licensing requirements.
 
 ## Permissions required to create and manage sensitivity labels
 
@@ -66,7 +66,7 @@ A successful strategy to deploy sensitivity labels for an organization is to cre
 
 Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
-You'll find additional general deployment guidance in the downloadable Data Loss Prevention and Microsoft Information Protection Deployment Acceleration Guide. For more information, see the blog post, [Microsoft 365 Information Protection and Compliance Deployment Acceleration Guides](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404).
+You'll find additional general deployment guidance and best practices in the [Deployment Acceleration Guide for Microsoft Information Protection and Data Loss Prevention](https://microsoft.github.io/ComplianceCxE/dag/mip-dlp/), one of the resources from the [Customer Acceleration Team (CAT)](https://microsoft.github.io/ComplianceCxE/) site.
 
 ## Common scenarios for sensitivity labels
 

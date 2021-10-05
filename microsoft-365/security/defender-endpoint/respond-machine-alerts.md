@@ -41,7 +41,7 @@ Response actions run along the top of a specific device page and include:
 - Consult a threat expert
 - Action center
 
-[![Image of response actions](images/response-actions.png)](images/response-actions.png#lightbox)
+[![Image of response actions.](images/response-actions.png)](images/response-actions.png#lightbox)
 
  You can find device pages from any of the following views:
 
@@ -52,7 +52,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -94,11 +94,11 @@ Alternate way:
 
 1. Select **Action center** from the response actions section of the device page.
 
-    ![Image of action center button](images/action-center-package-collection.png)
+    ![Image of action center button.](images/action-center-package-collection.png)
 
 2. In the Action center fly-out, select **Package collection package available** to download the zip file.
 
-    ![Image of download package button](images/collect-package.png)
+    ![Image of download package button.](images/collect-package.png)
 
 The package contains the following folders:
 
@@ -107,7 +107,7 @@ The package contains the following folders:
 ****
 
 |Folder|Description|
-|:---|:---------|
+|---|---|
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
 |Network connections|This folder contains a set of data points related to the connectivity information which can help in identifying connectivity to suspicious URLs, attacker's command and control (C&C) infrastructure, any lateral movement, or remote connections. <ul><li>ActiveNetConnections.txt: Displays protocol statistics and current TCP/IP network connections. Provides the ability to look for suspicious connectivity made by a process.</li><li>Arp.txt: Displays the current address resolution protocol (ARP) cache tables for all interfaces. ARP cache can reveal additional hosts on a network that have been compromised or suspicious systems on the network that might have been used to run an internal attack.</il><li>DnsCache.txt: Displays the contents of the DNS client resolver cache, which includes both entries preloaded from the local Hosts file and any recently obtained resource records for name queries resolved by the computer. This can help in identifying suspicious connections.</li><li>IpConfig.txt: Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or logical interfaces, such as dial-up connections.</li><li>FirewallExecutionLog.txt and pfirewall.log</li></ul>|
@@ -135,7 +135,7 @@ As part of the investigation or response process, you can remotely initiate an a
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
-![Image of notification to select quick scan or full scan and add comment](images/run-antivirus.png)
+![Image of notification to select quick scan or full scan and add comment.](images/run-antivirus.png)
 
 The Action center will show the scan information and the device timeline will include a new event, reflecting that a scan action was submitted on the device. Microsoft Defender AV alerts will reflect any detections that surfaced during the scan.
 
@@ -163,13 +163,13 @@ To restrict an application from running, a code integrity policy is applied that
 
 Once you have selected **Restrict app execution** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of app restriction notification](images/restrict-app-execution.png)
+![Image of app restriction notification.](images/restrict-app-execution.png)
 
 ### Notification on device user
 
 When an app is restricted, the following notification is displayed to inform the user that an app is being restricted from running:
 
-![Image of app restriction](images/atp-app-restriction.png)
+![Image of app restriction.](images/atp-app-restriction.png)
 
 ## Isolate devices from the network
 
@@ -177,8 +177,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 > [!IMPORTANT]
 >
-> - Full isolation is available for devices on Windows 10, version 1703.
-> - Selective isolation is available for devices on Windows 10, version 1709 or later.
+> - Full isolation is available for devices on Windows 10, version 1703, Windows Server 2019, and Windows Server 2022.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later, Windows Server 2019, and Windows Server 2022.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
@@ -190,7 +190,7 @@ On Windows 10, version 1709 or later, you'll have additional control over the ne
 
 Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
 
-![Image of isolate device](images/isolate-device.png)
+![Image of isolate device.](images/isolate-device.png)
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
@@ -199,7 +199,7 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 When a device is being isolated, the following notification is displayed to inform the user that the device is being isolated from the network:
 
-![Image of no network connection](images/atp-notification-isolate.png)
+![Image of no network connection.](images/atp-notification-isolate.png)
 
 ## Consult a threat expert
 
@@ -218,9 +218,10 @@ The **Action center** provides information on actions that were taken on a devic
 
 All other related details are also shown, for example, submission date/time, submitting user, and if the action succeeded or failed.
 
-![Image of action center with information](images/action-center-details.png)
+![Image of action center with information.](images/action-center-details.png)
 
-## Related topic
+## See also
 
 - [Take response actions on a file](respond-file-alerts.md)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

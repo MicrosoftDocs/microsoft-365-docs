@@ -1,6 +1,6 @@
 ---
 title: Email analysis in investigations for Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
@@ -8,15 +8,15 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
-search.appverid: 
+search.appverid:
 - MET150
 - MOE150
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 description: See how email analysis in investigations work in Microsoft Defender for Office 365.
-ms.custom: 
+ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
@@ -37,8 +37,8 @@ The automated investigation’s email analysis identifies email clusters using a
 
 - The email analysis creates queries (clusters) of emails using attributes from the original email – sender values (IP address, sending domain) and contents (subject, cluster ID) in order to find emails that are related.
 - If analysis of the original email’s URLs and files identifies that some are malicious (that is, malware or phish), then it will also create queries or clusters of emails containing the malicious URL or file.
-- Email clustering analysis counts the threats associated with the matching emails in the cluster to determine whether the emails are malicious, suspicious, or have no clear threats. If the cluster of emails matching the query has a sufficient amount of spam, normal phish, high confidence phish or malware threats, the email cluster gets that threat type applied to it. 
-- The email clustering analysis also checks the latest delivery location of the original email and emails in the email clusters to help identify if the emails potentially still need removal or have already been remediated or prevented. This analysis is important because attackers morph malicious content plus security policies and protection may vary between mailboxes. This capability leads to situations where malicious content may still sit in mailboxes, even though one or more malicious emails has been detected and removed by Zero-hour Auto Protection (ZAP).
+- Email clustering analysis counts the threats associated with the matching emails in the cluster to determine whether the emails are malicious, suspicious, or have no clear threats. If the cluster of emails matching the query has a sufficient amount of spam, normal phish, high confidence phish or malware threats, the email cluster gets that threat type applied to it.
+- The email clustering analysis also checks the latest delivery location of the original email and emails in the email clusters to help identify if the emails potentially still need removal or have already been remediated or prevented. This analysis is important because attackers morph malicious content plus security policies and protection may vary between mailboxes. This capability leads to situations where malicious content may still sit in mailboxes, even though one or more malicious emails has been detected and removed by zero-hour auto purge (ZAP).
 - Email clusters that are considered malicious due to malware, high confidence phish, malicious files, or malicious URLs threats will get a pending action to soft delete the emails when there are still in the cloud mailbox (inbox or junk folder). If malicious emails or email clusters are only "Not In Mailbox" (blocked, quarantined, failed, soft deleted, etc.) or "On-premises/External" with none in the cloud mailbox, then no pending action will be set up to remove them.
 - If any of the email clusters are determined to be malicious, then the threat identified by the cluster will get applied back to the original email involved in the investigation. This behavior is similar to a security operations analyst using email hunting results to determine the verdict of an original email based on matching emails. This result ensures that regardless of whether an original email’s URLs, files, or source email indicators are detected or not, the system can identify malicious emails that are potentially evading detection through personalization, morphing, evasion, or other attacker techniques.
 - In the user compromise investigation, additional email clusters are created to identify potential email issues created by the mailbox. This process includes a clean email cluster (good emails from user, potential data exfiltration, and potential command/control emails), suspicious email clusters (emails containing spam or normal phish) and malicious email clusters (emails containing malware or high confidence phish). These email clusters provide security operations analysts data to determine what other problems may need to be addressed from a compromise,and visibility on which emails may have triggered the original alerts (for example, phish/spam that triggered user sending restrictions)
@@ -49,7 +49,7 @@ Here are additional enhancements to email analysis in investigations.
 
 ## AIR investigation ignores advanced delivery items (SecOps mailbox and PhishEDU messages)
 
-During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simpler and easier to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation. 
+During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simpler and easier to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation.
 
 >[!Note]
 >When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
@@ -57,11 +57,11 @@ During the email clustering analysis, all clustering queries will ignore securit
 
 ## AIR updates pending email action status
 
-The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions. This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation. For example, security operations manual hunting and remediation may clean up emails included in an investigation. Likewise, deletion actions approved in parallel investigations or Zero-hour Auto Protection (ZAP) automatic quarantine actions may have removed emails. In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters. 
+The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions. This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation. For example, security operations manual hunting and remediation may clean up emails included in an investigation. Likewise, deletion actions approved in parallel investigations or Zero-hour auto purge (ZAP) automatic quarantine actions may have removed emails. In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters.
 
-To ensure investigation actions are up to date, any investigation that has pending actions will periodically re-run the email analysis queries to update the email locations and threats. 
+To ensure investigation actions are up to date, any investigation that has pending actions will periodically re-run the email analysis queries to update the email locations and threats.
 
-- When the email cluster data changes, it will update the threat and latest delivery location counts. 
+- When the email cluster data changes, it will update the threat and latest delivery location counts.
 - If emails or email cluster with pending actions no longer are in the mailbox, then the pending action will be canceled, and the malicious email/cluster considered remediated.
 - Once all the investigation’s threats have been remediated or canceled as noted above, then the investigation will transition to a remediated state and the original alert resolved.
 
@@ -69,7 +69,7 @@ To ensure investigation actions are up to date, any investigation that has pendi
 
 Email-based evidence in the Evidence and Response tab for an incident now displays the following information.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Example of email analysis information in Evidence and Response" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Example of email analysis information in Evidence and Response." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 
 From the numbered callouts in the figure:
 
@@ -86,7 +86,7 @@ From the numbered callouts in the figure:
 
 For email or email clusters in the **Entities** tab of an incident, **Prevented** means that there was no malicious emails in the mailbox for this item (mail or cluster). Here is an example.
 
-:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Example of a prevented email" lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
+:::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png" alt-text="Example of a prevented email." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example-prevented.png":::
 
 In this example, the email is malicious but not in a mailbox.
 

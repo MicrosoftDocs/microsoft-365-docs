@@ -36,8 +36,9 @@ Retrieves a collection of [Machines](machine.md) that have communicated with  Mi
 
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
-The OData's `$filter` query is supported on: `computerDnsName`, `lastSeen`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
-
+The OData's `$filter` query is supported on: `computerDnsName`, `id`, `version`, `deviceValue`, `aadDeviceId`, `machineTags`, `lastSeen`,`exposureLevel`, `onboardingStatus`, `lastIpAddress`, `healthStatus`, `osPlatform`, `riskScore` and `rbacGroupId`.
+<br>```$stop``` with max value of 10,000 
+<br>```$skip```
 See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-samples.md)
 
 ## Limitations

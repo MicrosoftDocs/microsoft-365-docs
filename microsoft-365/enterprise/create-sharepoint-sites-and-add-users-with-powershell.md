@@ -1,7 +1,7 @@
 ---
 title: "Create SharePoint Online sites and add users with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page

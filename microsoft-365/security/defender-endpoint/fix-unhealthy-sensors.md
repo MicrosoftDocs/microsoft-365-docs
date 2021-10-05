@@ -88,3 +88,9 @@ If you took corrective actions and the device status is still misconfigured, [op
 
 ## See also
 - [Check sensor health state in Microsoft Defender for Endpoint](check-sensor-status.md)
+- [Client analyzer overview](overview-client-analyzer.md)
+- [Download and run the client analyzer](download-client-analyzer.md)
+- [Run the client analyzer on Windows](run-analyzer-windows.md)
+- [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+- [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+

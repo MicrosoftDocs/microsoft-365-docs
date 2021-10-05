@@ -61,6 +61,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows Server 2019 - Only applicable for Public preview**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**
+       
 
 - **Enable live response from the advanced settings page**.
 
@@ -80,7 +83,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   You'll receive the following error:
 
-  ![Image of error message](images/live-response-error.png)
+  ![Image of error message.](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional).
 
@@ -137,15 +140,19 @@ Depending on the role that's been granted to you, you can run basic or advanced 
 
 The following commands are available for user roles that are granted the ability to run **basic** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
 
+<br>
+
+****
+
 |Command|Description|
-|---|---|---|
+|---|---|
 |`cd`|Changes the current directory.|
 |`cls`|Clears the console screen.|
 |`connect`|Initiates a live response session to the device.|
 |`connections`|Shows all the active connections.|
 |`dir`|Shows a list of files and subdirectories in a directory.|
 |`drivers`|Shows all drivers installed on the device.|
-|`fg <command ID>`|Place the specified job in the foreground in the foreground, making it the current job. <br> NOTE: fg takes a "command ID" available from jobs, not a PID|
+|`fg <command ID>`|Place the specified job in the foreground in the foreground, making it the current job. <p> **NOTE**: fg takes a "command ID" available from jobs, not a PID|
 |`fileinfo`|Get information about a file.|
 |`findfile`|Locates files by a given name on the device.|
 |`getfile <file_path>`|Downloads a file.|
@@ -157,10 +164,15 @@ The following commands are available for user roles that are granted the ability
 |`scheduledtasks`|Shows all scheduled tasks on the device.|
 |`services`|Shows all services on the device.|
 |`trace`|Sets the terminal's logging mode to debug.|
+|
 
 ### Advanced commands
 
 The following commands are available for user roles that are granted the ability to run **advanced** live response commands. For more information on role assignments, see [Create and manage roles](user-roles.md).
+
+<br>
+
+****
 
 |Command|Description|
 |---|---|
@@ -168,8 +180,9 @@ The following commands are available for user roles that are granted the ability
 |`run`|Runs a PowerShell script from the library on the device.|
 |`library`|Lists files that were uploaded to the live response library.|
 |`putfile`|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
-|`remediate`|Remediates an entity on the device. The remediation action will vary depending on the entity type:<br>- File: delete<br>- Process: stop, delete image file<br>- Service: stop, delete image file<br>- Registry entry: delete<br>- Scheduled task: remove<br>- Startup folder item: delete file <br> NOTE: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command.
+|`remediate`|Remediates an entity on the device. The remediation action will vary depending on the entity type: <ul><li>File: delete</li><li>Process: stop, delete image file</li><li>Service: stop, delete image file</li><li>Registry entry: delete</li><li>Scheduled task: remove</li><li>Startup folder item: delete file</li></ul> <p> **NOTE**: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command.
 |`undo`|Restores an entity that was remediated.|
+|
 
 ## Use live response commands
 
@@ -198,10 +211,15 @@ To enable your security operations team to continue investigating an impacted de
 
 Here are some examples:
 
+<br>
+
+****
+
 |Command|What it does|
 |---|---|
 |`getfile "C:\windows\some_file.exe" &`|Starts downloading a file named *some_file.exe* in the background.|
 |`fg 1234`|Returns a download with command ID *1234* to the foreground.|
+|
 
 ### Put a file in the library
 

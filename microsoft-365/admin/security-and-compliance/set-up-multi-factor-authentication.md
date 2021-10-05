@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -40,6 +41,14 @@ Based on your understanding of [multifactor authentication (MFA) and its support
 - If you have legacy per-user MFA turned on, [Turn off legacy per-user MFA](#turn-off-legacy-per-user-mfa).
 - If you have Office 2013 clients on Windows devices, [turn on Modern Authentication for Office 2013 clients](./enable-modern-authentication.md).
 - Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with Azure AD Multifactor Authentication and third-party VPN solutions](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
+
+### Turn off legacy per-user MFA
+
+If you have previously turned on per-user MFA, you must turn it off before enabling Security defaults.
+
+1. In the Microsoft 365 admin center, in the left nav choose **Users** \> **Active users**.
+1. On the **Active users** page, choose **Multi-factor authentication**.
+1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
 
 ## Turn Security defaults on or off
 
@@ -81,14 +90,15 @@ For more information about the Azure AD P1 and P2, see [Azure Active Directory p
 For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription before August 2017, it is likely that you will need to turn on Modern Authentication in order to get features like Multifactor Authentication to work in Windows clients like Outlook.
 
 
-1. In the Microsoft 365 admin center, in the left nav choose **Settings** \> **Org settings**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav choose **Settings** \> **Org settings**.
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
+
 
 ### Turn off legacy per-user MFA
 
 If you have previously turned on per-user MFA, you must turn it off before enabling Security defaults.
 
-1. In the Microsoft 365 admin center, in the left nav choose **Users** \> **Active users**.
+1. In the Microsoft 365 admin center, in the left nav choose **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. On the **Active users** page, choose **Multi-factor authentication**.
 1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Disabled**.
 
@@ -101,5 +111,8 @@ If you have previously turned on per-user MFA, you must turn it off before enabl
 
 ## Related content
 
-[Turn on multifactor authentication](../../business-video/turn-on-mfa.md) (video)\
-[Turn on multifactor authentication for your phone](../../business-video/set-up-mfa.md) (video)
+
+[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
+
+[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)
+

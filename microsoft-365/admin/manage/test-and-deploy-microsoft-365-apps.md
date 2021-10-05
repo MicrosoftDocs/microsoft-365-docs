@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: 
+ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
@@ -55,7 +55,7 @@ You can manage testing and deployment of purchased and licensed Microsoft 365 Ap
 
 You can find, test, and fully deploy published apps that don't already appear in the list on the Integrated apps page. By purchasing and licensing the apps from the admin center, you can add Microsoft and Microsoft partner apps to your list from a single location.
 
-1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps**.
+1. In the admin center, in the left nav, choose **Settings**, and then choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**Integrated apps**</a>.
 
 2. Select **Get apps** to get a view of the apps.
 
@@ -160,17 +160,17 @@ The deployment of add-in is currently supported to the majority of groups suppor
 
 In the following example, Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in. 
 
-![Diagram of sales department](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagram of sales department.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### Find out if a group contains nested groups
 
 The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. If you enter the group name within the **To** field of an email and then select the group name when it resolves, it will show you if it contains users or nested groups. In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
 
-![Members tab of Outlook contact card](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Members tab of Outlook contact card.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the <b>Membership</b> tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
 
-![Membership tab of the Outlook contact card](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Membership tab of the Outlook contact card.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 Note that you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations). 
 

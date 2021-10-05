@@ -13,10 +13,12 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +29,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 # Deploy add-ins in the admin center
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization by using the Centralized Deployment feature in the Microsoft 365 admin center. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
+Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
 
 For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
@@ -129,6 +131,6 @@ Updates for add-ins happen as follows:
 
 [Manage add-ins in the admin center](manage-addins-in-the-admin-center.md) (article)\
 [Build your first Word task pane add-in](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (article\
-[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\ 
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\  
+[Minors and acquiring add-ins from the store](minors-and-acquiring-addins-from-the-store.md) (article)\
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\
 [Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)

@@ -54,7 +54,7 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 
 - [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Connect G-Workspace](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
 - [Connect Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Connect Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
@@ -70,17 +70,17 @@ When you select a location for the DLP policy, turn on the **Microsoft Cloud App
 - To select a specific app or instance, select **Choose instance**.
 - If you don't select an instance, the policy uses all connected apps in your Microsoft Cloud App Security tenant.
 
-   ![Locations to apply the policy](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
+   ![Locations to apply the policy.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
-   ![Box-US and Box-General](../media/2-dlp-non-microsoft-cloud-app-box.png)
+   ![Box-US and Box-General.](../media/2-dlp-non-microsoft-cloud-app-box.png)
 
 You can choose various actions for every supported non-Microsoft cloud app. For every app, there are different possible actions (depends on the cloud app API).
 
-![Create rule](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
+![Create rule.](../media/3-dlp-non-microsoft-cloud-app-create-rule.png)
 
 When you create a rule in the DLP policy, you can select an action for non-Microsoft cloud apps. To restrict third-party apps, select **Restrict Third Party Apps**.
 
-![Restrict third-party apps](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
+![Restrict third-party apps.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
 > DLP policies applied to non-Microsoft apps use Microsoft Cloud App Security. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Cloud App Security.

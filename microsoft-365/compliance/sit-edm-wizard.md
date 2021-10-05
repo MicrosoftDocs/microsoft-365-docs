@@ -42,7 +42,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
 
-![EDM schema creation wizard configuration flyout](../media/edm-schema-wizard-1.png)
+![EDM schema creation wizard configuration flyout.](../media/edm-schema-wizard-1.png)
 
 3. Fill in an appropriate **Name** and **Description**.
 

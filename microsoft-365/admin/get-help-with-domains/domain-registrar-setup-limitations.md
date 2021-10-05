@@ -12,7 +12,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
@@ -41,19 +41,19 @@ For DNSMadeEasy accounts, the domain you added was purchased from a separate dom
 
 ## Create DNS records at easyDNS for Microsoft
 
-SRV Records are currently NOT available under all easyDNS service packages. You may need to upgrade to a higher service level with easyDNS to add SRV records which are required for Skype for Business.
+SRV Records are currently not available under any easyDNS service package. You may need to upgrade to a higher service level with easyDNS to add SRV records which are required for Teams.
 
 ## Create DNS records at Freenom for Microsoft
 
-The Freenom website doesn't support SRV records, which means that several Skype for Business Online and Outlook Web App features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider.
+The Freenom website doesn't support adding SRV records, which means that several Teams and Email features won't work. No matter which Microsoft plan you use, there are significant service limitations, and you may want to switch to a different DNS hosting provider.
 
 ## Create DNS records at MyDomain for Microsoft
 
-The MyDomain website doesn't support SRV records, which means several Skype for Business Online and Outlook Web App features won't work. No matter which Microsoft plan you use, if you manage your DNS records at MyDomain, there are significant service limitations, and you might want to switch to a different DNS hosting provider.
+The MyDomain website doesn't support SRV records, which means several Teams and Email features won't work. No matter which Microsoft plan you use, if you manage your DNS records at MyDomain, there are significant service limitations, and you might want to switch to a different DNS hosting provider.
 
 ## Create DNS records for Microsoft using Windows-based DNS
 
-Go to the page that has the DNS records for your domain. If you're working in Windows Server 2008, go to Start &gt; Run. If you're working in Windows Server 2012, press the Windows key and r. Type **dnsmgmnt.msc**, and then select **OK**. In DNS Manager, expand &lt;DNS server name&gt; &gt; **Forward Lookup Zones**. Select your domain. You're now ready to create the DNS records.
+Go to the page that has the DNS records for your domain. If you're working in Windows Server 2008, go to **Start**, **Run**. If you're working in Windows Server 2012, press the **Windows key** and **r**. Type **dnsmgmnt.msc**, and then select **OK**. In DNS Manager, expand **DNS server name**,  **Forward Lookup Zones**. Select your domain. You're now ready to create the DNS records.
 
 ## Create DNS records when your domain is managed by Google (eNom)
 

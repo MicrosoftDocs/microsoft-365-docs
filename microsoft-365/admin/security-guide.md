@@ -25,6 +25,6 @@ description: "Learn about security threats your business faces and easy ways you
 
 The links for PowerPoint and PDF below can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
-![Image for secure your small business info graphic](../media/smbthreatprotectioninfographic-thumbnail.png)
+![Image for secure your small business info graphic.](../media/smbthreatprotectioninfographic-thumbnail.png)
 
 [PDF](downloads/smbthreatprotection-infographic.pdf) | [PowerPoint](downloads/smbthreatprotection-infographic.pptx)

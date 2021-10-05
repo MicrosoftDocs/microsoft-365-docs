@@ -1,9 +1,9 @@
 ---
 title: "Example of broad deployment for the latest releases"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 07/21/2020
 audience: ITPro
@@ -98,7 +98,7 @@ Ongoing updates process:
 
 Here are the products, their channels, and the deployment groups used by this example organization. 
 
-![Deployment groups for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Deployment groups for broad deployment of the latest releases.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## See also
 
