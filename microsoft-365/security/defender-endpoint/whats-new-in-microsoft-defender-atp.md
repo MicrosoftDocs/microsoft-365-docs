@@ -54,6 +54,13 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## October 2021
+
+- Windows 11 support added to Microsoft Defender for Endpoint and Microsoft 365 Defender.
+
+## September 2021
+
+- [Web content filtering](web-content-filtering.md) <br/>As part of web protection capabilities in Microsoft Defender for Endpoint, web content filtering enables your organization's security team to track and regulate access to websites based on their content categories. Categories include adult content, high bandwidth, legal liability, leisure, and uncategorized. Although many websites that fall into one or more of these categories might not be malicious, they could be problematic because of compliance regulations, bandwidth usage, or other concerns. [Learn more about web content filtering](web-content-filtering.md).
 
 ## August 2021
 
@@ -90,7 +97,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 
 ## March 2021
-- [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, and Windows Server 2019 by using a method called *tenant attach*.
+- [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
 
 
 ## January 2021

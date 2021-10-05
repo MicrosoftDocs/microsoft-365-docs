@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-
+- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - MSStore_Link
@@ -32,7 +32,10 @@ description: "Sign in with your Microsoft 365 admin account to reset passwords f
 
 # Reset passwords
 
-This article explains how to reset passwords for yourself and for your users when you have an Microsoft 365 for business subscription.
+This article explains how to reset passwords for yourself and for your users when you have a Microsoft 365 for business subscription.
+
+> [!NOTE]
+> You can also set up self-service password reset for your users so they can reset their own passwords. To learn more, see [Let users reset their own passwords](let-users-reset-passwords.md).
 
 ## Before you begin
 
@@ -60,7 +63,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Let users reset their own passwords
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. Less work for you! To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
 
 ## Reset my admin password
 

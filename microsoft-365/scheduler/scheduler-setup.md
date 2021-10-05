@@ -11,7 +11,7 @@ description: "Setting up Scheduler for Microsoft 365."
 ---
 # Setting up Scheduler for Microsoft 365
 
-Tenant admins need to setup a Scheduler assistant mailbox and obtain Scheduler licenses for meeting organizers to enable the Scheduler for Microsoft 365 service. 
+Tenant admins need to set up a Scheduler assistant mailbox and obtain Scheduler licenses for meeting organizers to enable the Scheduler for Microsoft 365 service. 
 
 ## Licensing
 
@@ -45,7 +45,7 @@ Use the Microsoft 365 admin center to create a user mailbox. A 30-day retention 
 Use the name Cortana in your mailbox’s primary SMTP address. Names such as `Cortana@yourdomain.com`, `CortanaScheduler@contoso.com`, or `Cortana.Scheduler@yourdomain.com` are recommended.
 
 ```PowerShell
-$domain="yourdomain.com  "
+$domain="yourdomain.com"
 $tenantAdmin="<tenantadmin>@$domain"
 Import-Module ExchangeOnlineManagement
 Connect-ExchangeOnline -UserPrincipalName $tenantAdmin
@@ -75,7 +75,7 @@ After running this "set" command on the Cortana Scheduler assistant mailbox, a n
 To verify the Scheduler assistant mailbox has been created
 
 ```PowerShell
-Get-CalendarProcessing cortana$domain <cortana>@microsoft.com   | fl DeleteNonCalendarItems`
+Get-CalendarProcessing cortana@$domain | fl DeleteNonCalendarItems
 ```
 
 The result should be “false”.
@@ -83,7 +83,7 @@ The result should be “false”.
 <br>
 
 ```PowerShell
-Get-Mailbox -Identity <cortana>@microsoft.com$domain -Organization microsoft.com$domain | fl *type*
+Get-Mailbox -Identity cortana@$domain | fl *type*
 ```
 
 The result should be

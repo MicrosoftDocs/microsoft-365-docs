@@ -144,8 +144,10 @@ Additionally, SharePoint items that are in draft or that have never been publish
 
 #### Auto-apply labels to content with specific types of sensitive information
 
-> [!WARNING]
-> This configuration currently has a known limitation where all unlabeled emails always have the selected retention label applied when there is a match for your chosen sensitive information types. For example, even if you scope your auto-apply policy to specific users, or select locations other than Exchange for the policy, the label is always applied to unlabeled emails when there is a match.
+> [!IMPORTANT]
+> For emails that you auto-apply by identifying sensitive information, it's not supported to scope the policy to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
+> 
+> Also specific to this policy configuration, if you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are included and not mailboxes from Microsoft 365 groups.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
@@ -164,6 +166,8 @@ For more information about these options, see the following guidance from the DL
 To consider when using sensitive information types to auto-apply retention labels:
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
+
+- For emails, you can't select specific recipients to include or exclude; only the **All recipients** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups. 
 
 #### Auto-apply labels to content with keywords or searchable properties
 

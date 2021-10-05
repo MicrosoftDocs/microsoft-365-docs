@@ -142,7 +142,7 @@ With retention labels, you can:
     - Specific keywords that match a query you create.
     - Pattern matches for a trainable classifier.
 
-- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items except calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and for email items.
 
 - **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
@@ -185,11 +185,10 @@ Different types of retention labels can be published to different locations, dep
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange, SharePoint, OneDrive  <br/> |
+|Auto-applied based on keywords or a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
    
-In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
-  
+
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
