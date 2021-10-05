@@ -1,7 +1,6 @@
 ---
 title: Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint
 description: Run the detection test script on a device recently onboarded to the Microsoft Defender for Endpoint service to verify that it is properly added.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -25,6 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
+- Windows 11
 - Supported Windows 10 versions
 - Windows Server 2012 R2
 - Windows Server 2016
@@ -63,6 +63,6 @@ The Command Prompt window will close automatically. If successful, the detection
 
 ## Related topics
 
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding)
