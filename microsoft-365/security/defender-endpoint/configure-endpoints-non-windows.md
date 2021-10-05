@@ -61,7 +61,7 @@ You'll need to take the following steps to onboard non-Windows devices:
 For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint.
  1. In the navigation pane, select ***Settings** \> **Offboard** \> **Select Operating System to start the offboarding Process**
 
-You can also Offboard non-windows devices by disabling the third party integration.Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://securitycenter.windows.com/interoperability/partners). 
+You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://securitycenter.windows.com/interoperability/partners). 
 
 ## Related topics
 
