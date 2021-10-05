@@ -48,14 +48,14 @@
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
-#### [Onboard Windows 10 devices]()
+#### [Onboard Windows devices]()
 ##### [Onboarding tools and methods](configure-endpoints.md)
 ##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+##### [Onboard Windows multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard Windows servers](configure-server-endpoints.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
@@ -327,9 +327,6 @@
 ##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
