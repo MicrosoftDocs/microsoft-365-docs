@@ -283,6 +283,14 @@ Microsoft Managed Desktop recommends adjusting guest invitation settings, since 
 
 **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
+### Guest user access
+
+Microsoft Managed Desktop recommends adjusting guest user access, since the default setting allows all guest users in your directory to have the same access as members.
+
+**Advisory**
+
+**Guest users have limited access to properties and memberships of directory objects** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
+
 ### Licenses
 
 A number of licenses are required to use Microsoft Managed Desktop.
