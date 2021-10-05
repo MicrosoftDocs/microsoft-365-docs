@@ -56,7 +56,7 @@ The link to incident feature lets you select advanced hunting query results to a
       - Description - Give a helpful description for the grouped alerts.
       - Recommended actions - Provide remediation actions.
 
-5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear on this section. In our example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
+5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
      ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
 6. Select **Next**.
 7. Review the details you have provided in the Summary section.
@@ -73,6 +73,7 @@ In our example, the four alerts, representing the four selected events, were lin
 In each of the alert pages, you can find the complete information on the event or events in timeline view (if available) and query results view.
      ![Image showing alert story](../../media/link-to-incident-7-alert-story.png) 
 
+You can also select the event to open the **Inspect record** pane.
 ![Image showing inspect record](../../media/link-to-incident-7-inspect-record.png) 
 
 ## Filter for events added using advanced hunting
