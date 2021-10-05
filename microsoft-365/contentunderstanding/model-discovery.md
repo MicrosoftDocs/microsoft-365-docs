@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+localization_priority: medium
 description: Learn how to make trained model available to others and how to apply other trained models in Microsoft SharePoint Syntex.
 ---
 
