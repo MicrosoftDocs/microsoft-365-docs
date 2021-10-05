@@ -40,7 +40,7 @@ The device must have been made by one of these manufacturers:
 
 The device must have this software preinstalled:
 
-- *Windows 10 or Windows 11: Enterprise, Pro, or Pro Workstation edition
+- **\***Windows 10 or Windows 11: Enterprise, Pro, or Pro Workstation edition
 - the 64-bit version of Microsoft 365 Apps for enterprise 
 - All applicable device drivers
 
@@ -58,7 +58,7 @@ For more about these capabilities and the technologies related to them that the 
 
 > [!NOTE]
 >- ARM processors are not supported.
->- *Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
+>- **\***Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
 
 Devices should meet or exceed following limits for storage and memory:
 
