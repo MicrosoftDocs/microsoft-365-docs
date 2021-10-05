@@ -42,7 +42,7 @@ When you create user accounts in PowerShell, certain account properties are alwa
 >[!Note]
 >[Learn how to create user accounts](../admin/add-users/add-users.md) by using the Microsoft 365 admin center.
 > 
-> For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
+> For a list of additional resources, see [Manage users and groups](../admin).
 >   
 
 ## Use the Azure Active Directory PowerShell for Graph module

@@ -31,7 +31,7 @@ You can easily assign roles to user accounts by using PowerShell for Microsoft 3
 >[!Note]
 >Learn how to  [assign admin roles](../admin/add-users/assign-admin-roles.md) to user accounts with the Microsoft 365 admin center.
 >
->For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
+>For a list of additional resources, see [Manage users and groups](../admin).
 >
 
 ## Use the Azure Active Directory PowerShell for Graph module
