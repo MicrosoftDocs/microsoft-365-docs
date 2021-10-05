@@ -55,7 +55,7 @@
 ##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows multi-session devices in Windows Virtual Desktop](onboard-windows-10-multi-session-device.md)
+##### [Onboard Windows multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard Windows servers](configure-server-endpoints.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
