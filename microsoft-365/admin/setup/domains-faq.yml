@@ -221,7 +221,7 @@ sections:
           
       - question: How do I verify my nonprofit or education status?
         answer: |
-          1. Select **Setup** in the [admin center](./admin) to start the wizard. (Be sure to sign in to Microsoft 365 first.) 
+          1. Select **Setup** in the [admin center](/admin) to start the wizard. (Be sure to sign in to Microsoft 365 first.) 
               
           2. To become the admin for your school, select the  **Become an admin** option in Microsoft 365. 
               

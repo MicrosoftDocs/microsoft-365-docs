@@ -27,7 +27,7 @@ description: "Learn how to manage Microsoft 365 user accounts."
 
 # Manage Microsoft 365 user accounts
 
-You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](../admin), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
+You can manage Microsoft 365 user accounts in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md), in Active Directory Domain Services (AD DS), or in the Azure Active Directory (Azure AD) admin portal. 
 
 As soon as you purchase Microsoft 365, the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and PowerShell can be used to manage accounts. When managing cloud identities, every person in your organization has a separate user account name and password. If you want to integrate with your on-premises infrastructure and have user accounts synchronized with Microsoft 365, you can use Azure AD Connect to provide synchronization of identities and passwords for single sign-on (SSO) functionality.
   
@@ -73,6 +73,6 @@ The following table lists the different account management tools.
   
 ## See also
 
-[Microsoft 365 admin center](../admin)
+[Microsoft 365 admin center](/admin)
 
 [PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

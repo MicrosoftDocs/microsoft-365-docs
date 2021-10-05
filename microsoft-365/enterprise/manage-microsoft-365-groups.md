@@ -28,7 +28,7 @@ description: "Learn about how to manage Microsoft 365 groups."
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](../admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Azure Active Directory (Azure AD) admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
+You can manage Microsoft 365 groups in several different ways, depending on your configuration. You can manage user accounts in the [Microsoft 365 admin center](/admin), PowerShell, in Active Directory Domain Services (AD DS), or in the [Azure Active Directory (Azure AD) admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal). 
 
 ## Plan for where and how you will manage your groups
 
@@ -38,7 +38,7 @@ Where and how you can manage your user accounts depends on the identity model yo
 
 You create and manage groups with:
 
-- [The Microsoft 365 admin center](../admin)
+- [The Microsoft 365 admin center](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     
@@ -48,7 +48,7 @@ AD DS groups are synchronized with Microsoft 365 from AD DS, so you must use on-
 
 You can also create and manage Azure AD groups that are separate from AD DS groups but can contain users and groups from AD DS. In this case, you can use:
 
-- [The Microsoft 365 admin center](../admin)
+- [The Microsoft 365 admin center](/admin)
 - [PowerShell](maintain-group-membership-with-microsoft-365-powershell.md)
 - [Azure AD admin center](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
