@@ -21,13 +21,25 @@ ms.technology: mdo
 
 In Attack simulation training in Microsoft Defender for Office Plan 2 or Microsoft 365 E5, Microsoft provides insights from the outcomes of simulations and trainings that your users experienced. These insights help to keep you informed on the threat readiness progress of your users, as well as recommended next steps to better prepare your users for future attacks.
 
-Insights from Attack simulation training are available on the **Overview** tab. To go there, open the Microsoft 365 Defender portal at <https://security.microsoft.com/>, and then go to **Email & collaboration** \> **Attack simulation training**. To go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator>.
+Insights from Attack simulation training are available on the **Overview** tab. To go there, open the Microsoft 365 Defender portal at <https://security.microsoft.com/>, and then go to **Email & collaboration** \> **Attack simulation training** and verify that the **Overview** tab is selected (it's the default). To go directly to the **Overview** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator>.
 
-The rest of this article describes the information that's available on the **Overview** tab (the default tag) of Attack simulation training.
+The rest of this article describes the information that's available on the **Overview** tab of Attack simulation training.
+
+## Recent simulations
+
+The **Recent simulations** card on the **Overview** tab shows the last three simulations that you've created or run in your organization.
+
+You can select a simulation to view details.
+
+Selecting **View all simulations** takes you to the **Simulations** tab.
+
+Selecting **Launch a simulation** is the same action as clicking ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation** on the **Simulations** tab as described in [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+
+![Recent simulations card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-recent-simulations-card.png)
 
 ## Behavior impact on compromise rate
 
-On the default **Overview** tab, the **Behavior impact on compromise rate** card shows how your users responded to your simulations as compared to the historical data in Microsoft 365. You can use these insights to track progress in users threat readiness by running multiple simulations against the same groups of users.
+The **Behavior impact on compromise rate** card on the **Overview** tab shows how your users responded to your simulations as compared to the historical data in Microsoft 365. You can use these insights to track progress in users threat readiness by running multiple simulations against the same groups of users.
 
 The chart shows the following information:
 
@@ -36,15 +48,56 @@ The chart shows the following information:
 - **x users less susceptible to phishing**: The difference between the actual number of users compromised by the simulated attack and the predicted compromise rate. This number of users is less likely to be compromised by similar attacks in the future.
 - **x% better than predicted rate**: Indicates how users did overall in contrast with the predicted compromise rate.
 
-<sup>\*</sup> If you hover over a data point in the graph, the actual percentage values are shown.
+<sup>\*</sup> If you hover over a data point in the chart, the actual percentage values are shown.
 
 ![Behavior impact on compromise rate card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-behavior-impact-card.png)
 
-To see a more detailed report, click **View simulations and training efficacy report**. This report is explained in the next section.
+To see a more detailed report, click **View simulations and training efficacy report**. This report is explained [later in this article](#training-efficacy-tab-for-the-attack-simulation-report).
+
+## Simulation coverage
+
+The **Simulation coverage** card on the **Overview** tab shows the percentage of users in your organization who've received a simulation (**Simulated users**) vs. those who haven't received a simulation (**Non-simulated users**). You can hover over a section in the chart to see the actual number of users in each category.
+
+Selecting **Launch simulation for non-simulated users** starts the simulation creation wizard where the users who didn't receive the simulation are automatically selected on the **Target user** page. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
+
+Selecting **View simulation coverage report** takes you to the [User coverage tab for the Attack simulation report](#user-coverage-tab-for-the-attack-simulation-report)
+
+![Simulation coverage card on the Overview tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulation-coverage-card.png)
+
+## Training completion
+
+The **Training completion** card on the **Overview** tab organizes the percentages of users who received trainings based on the results of simulations into the following categories:
+
+- **Completed**
+- **In progress**
+- **Incomplete**
+
+You can hover over a section in the chart to see the actual number of users in each category.
+
+Selecting **View training completion report** takes you to the [Training completion tab for the Attack simulation report](#training-completion-tab-for-the-attack-simulation-report).
+
+## Repeat offenders
+
+The **Repeat offenders** card on the **Overview** tab shows the information about repeat offenders. A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+
+The chart organizes repeat offender data by [simulation type](attack-simulation-training.md#select-a-social-engineering-technique):
+
+- **All**
+- **Malware attachment**
+- **Link to malware**
+- **Credential harvest**
+- **Link in attachments**
+- **Drive-by URL**
+
+Selecting **View repeat offender report** takes you to the [Repeat offenders tab for the Attack simulation report](#repeat-offenders-tab-for-the-attack-simulation-report).
+
+## Recommendations
+
+The **Recommendations** card on the **Overview** tab has links to recommended actions. If you 
 
 ## Attack simulation report
 
-To get to the to the **Attack simulation report**, click the **View simulations and training efficacy report** link in the **Behavior impact on compromise rate** card on the **Overview** tab. To go directly to the report, use <https://security.microsoft.com/attacksimulationreport>
+You can open the **Attack simulation report** from the **Overview** tab by clicking on the **View ... report** buttons that are available in many of the cards that are described in this article. To go directly to the report, use <https://security.microsoft.com/attacksimulationreport>
 
 ### Training efficacy tab for the Attack simulation report
 
@@ -52,9 +105,9 @@ On the **Attack simulation report** page, the **Training efficacy** tab is selec
 
 ![Training efficacy tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-training-efficacy-view.png)
 
-The chart shows the **Predicted compromise rate** and **Actual compromised rate**. If you hover over a section in the graph, the actual percentage values for are shown.
+The chart shows the **Predicted compromise rate** and **Actual compromised rate**. If you hover over a section in the chart, the actual percentage values for are shown.
 
-The details table below the graph shows the following information:
+The details table below the chart shows the following information:
 
 - **Simulation name**
 - **Simulation technique**
@@ -76,9 +129,9 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 ![User coverage tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-user-coverage-view.png)
 
-On the **User coverage** tab, the chart shows the **Simulated users** and **Non-simulated users**. If you hover over a data point in the graph, the actual values are shown.
+On the **User coverage** tab, the chart shows the **Simulated users** and **Non-simulated users**. If you hover over a data point in the chart, the actual values are shown.
 
-The details table below the graph shows the following information:
+The details table below the chart shows the following information:
 
 - **Username**
 - **Email address**
@@ -100,9 +153,9 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 ![Training completion tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-training-completion-view.png)
 
-On the **Training completion** tab, the chart shows the number of **Completed**, **In progress**, and **Incomplete** simulations. If you hover over a section in the graph, the actual values are shown.
+On the **Training completion** tab, the chart shows the number of **Completed**, **In progress**, and **Incomplete** simulations. If you hover over a section in the chart, the actual values are shown.
 
-The details table below the graph shows the following information:
+The details table below the chart shows the following information:
 
 - **Username**
 - **Email address**
@@ -133,7 +186,9 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 ![Repeat offenders tab in the Attack simulation report in the Microsoft 365 Defender portal.](../../media/attack-sim-report-repeat-offenders-view.png)
 
-On the **Repeat offenders** tab, the chart shows the number of simulations by simulation type:
+A _repeat offender_ is a user who was compromised by consecutive simulations. The default number of consecutive simulations is two, but you can change the value on the **Settings** tab of Attack simulation training at <https://security.microsoft.com/attacksimulator?viewid=setting>.
+
+On the **Repeat offenders** tab, the chart organizes repeat offender data by [simulation type](attack-simulation-training.md#select-a-social-engineering-technique):
 
 - **All**
 - **Credential harvest**
@@ -142,9 +197,9 @@ On the **Repeat offenders** tab, the chart shows the number of simulations by si
 - **Link to malware**
 - **Drive-by URL**
 
-If you hover over a data point in the graph, the actual values are shown.
+If you hover over a data point in the chart, the actual values are shown.
 
-The details table below the graph shows the following information:
+The details table below the chart shows the following information:
 
 - **User**
 - **Repeat count**
