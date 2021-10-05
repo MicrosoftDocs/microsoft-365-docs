@@ -210,31 +210,31 @@ More complex examples:
 
 The following query for SharePoint identifies Word documents or Excel spreadsheets when those files contain the keywords **password**, **passwords**, or **pw**:
 
-```Keyword query language
+```
 (password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
 ```
 
 The following query for Exchange identifies any Word document or PDF that contains the word **nda** or the phrase **non disclosure agreement** when those documents are attached to an email:
 
-```Keyword query language
+```
 (nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
 ```
 
 The following query for SharePoint identifies documents that contain a credit card number: 
 
-```Keyword query language
+```
 sensitivetype:"credit card number"
 ```
 
 The following query contains some typical keywords to help identify documents or emails that contain legal content:
 
-```Keyword query language
+```
 ACP OR (Attorney Client Privilege*) OR (AC Privilege)
 ```
 
 The following query contains typical keywords to help identify documents or emails for human resources: 
 
-```Keyword query language
+```
 (resume AND staff AND employee AND salary AND recruitment AND candidate)
 ```
 
@@ -247,7 +247,7 @@ Note that this final example uses the best practice of always including  operato
 
 To identify Microsoft Teams meeting recordings that are stored in users' OneDrive accounts or in SharePoint, specify the following for the **Keyword query editor**:
 
-```Keyword query language
+```
 ProgID:Media AND ProgID:Meeting
 ```
 
@@ -257,7 +257,7 @@ Most of the time, meeting recordings are saved to OneDrive. But for channel meet
 
 To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
 
-```Keyword query language
+```
 InformationProtectionLabelId<GUID>
 ```
 
