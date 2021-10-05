@@ -46,6 +46,8 @@ When a group is restored, the following content is restored:
 
 - Yammer group and group content (If the Microsoft 365 group was created from Yammer)
 
+- Power BI [Classic workspace](/power-bi/collaborate-share/service-create-workspaces)
+
 > [!NOTE]
 > This article describes restoring only Microsoft 365 groups. All other groups cannot be restored once deleted.
 
