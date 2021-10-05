@@ -2,7 +2,6 @@
 title: Deploy Microsoft Defender for Endpoint in rings
 description: Learn how to deploy Microsoft Defender for Endpoint in rings
 keywords: deploy, rings, evaluate, pilot, insider fast, insider slow, setup, onboard, phase, deployment, deploying, adoption, configuring
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
