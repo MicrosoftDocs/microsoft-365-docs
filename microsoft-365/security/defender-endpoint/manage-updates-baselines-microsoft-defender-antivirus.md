@@ -79,7 +79,7 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
 <summary> September-2021 (Platform: 4.18.2109.6| Engine: 1.1.18600.4)</summary>
 
