@@ -109,14 +109,14 @@ When you apply a retention policy to a location that includes OneNote content, b
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, versions that get copied to the Preservation Hold library exist as a separate item. If the retention settings are configured to delete at the end of the retention period:
+When a document with versions is subject to retention settings to retain that content, it is copied as a single file to the Preservation Hold library, and this file contains its full version history. If the retention settings are configured to delete at the end of the retention period:
 
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
 - If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
 > [!NOTE]
-> The retained versions of these SharePoint and OneDrive documents are not searchable by eDiscovery tools.
+> Only the most recent version of the retained file is searchable by eDiscovery tools. For more information, see the [Query-based holds placed on sites](create-ediscovery-holds.md#query-based-holds-placed-on-sites) section from the eDiscovery documentation.
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 
