@@ -9,7 +9,7 @@ ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
