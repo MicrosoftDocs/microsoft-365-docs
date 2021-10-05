@@ -97,7 +97,7 @@ Security intelligence update version: update
 - Improvements to process-based exclusions
 - Enhancements to harden Microsoft Defender Antivirus against loading malicious DLLs
 - Added trusted installer bypass for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
-- Implemented support for configuring per-rule [ASR exclusions](enable-attack-surface-reduction.md)
+- Implemented support for configuring per-rule [attack surface reduction rule exclusions](enable-attack-surface-reduction.md)
 
 ### Known Issues
 No known issues
