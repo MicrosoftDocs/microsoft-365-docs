@@ -45,7 +45,7 @@ However, directory synchronization requires planning and preparation to ensure t
 Follow these steps in order for the best results.
 
 > [!NOTE]
-> Non ASCII characters does not sync for any attributes on the AD DS user account
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
 
 ## 1. Directory cleanup tasks
 
