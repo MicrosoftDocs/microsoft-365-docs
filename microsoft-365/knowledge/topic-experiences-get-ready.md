@@ -1,6 +1,6 @@
 ---
-title: "Get your environment ready for Microsoft Viva Topics"
-description: "Get your environment ready so you can provide as much content as possible for your users with Microsoft Viva Topics."
+title: Get your environment ready for Microsoft Viva Topics
+description: Get your environment ready so you can provide as much content as possible for your users with Microsoft Viva Topics.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
+localization_priority: medium
 
 ---
 

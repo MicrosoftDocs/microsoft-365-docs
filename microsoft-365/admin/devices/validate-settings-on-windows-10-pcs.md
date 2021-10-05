@@ -57,5 +57,5 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
   
 ## Related content
 
-[Microsoft 365 for business documentation and resources](./index.yml)\
+[Microsoft 365 for business documentation and resources](/admin)\
 [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
