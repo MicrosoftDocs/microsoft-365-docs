@@ -55,8 +55,6 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### eDiscovery
 
 - [Use the KQL editor to build search queries](ediscovery-kql-editor.md) public preview of a new way to create search queries in Content search, Core eDiscovery, and Advanced eDiscovery; the KQL editor provides autocompletion for supported searchable properties and conditions and displays lists of supported values for standard properties and conditions; the KQL editor also provides error detection and suggestions for fixes of potential errors in search queries
-- [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md#decryption-limitations-with-email-attachments) new section on decryption limitations and workarounds for email attachments
-- Partially indexed items in eDiscovery (updated; added new section with procedure to exclude unindexed items that fall outside of a date range when exporting search results; this is a workaround to a limitation in Content search and Core eDiscovery where you can't exclude partially indexed items by date range)
 
 ### Retention and records management
 - [Multi-staged disposition review](disposition.md) is now generally available (GA), with new [auditing events](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Multi-staged disposition review lets you specify up to five consecutive stages of disposition review for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
