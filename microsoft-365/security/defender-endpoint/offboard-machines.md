@@ -1,9 +1,7 @@
 ---
 title: Offboard devices from the Microsoft Defender for Endpoint service
-description: Onboard Windows 10 devices, servers, non-Windows devices from the Microsoft Defender for Endpoint service
+description: Onboard Windows devices, servers, non-Windows devices from the Microsoft Defender for Endpoint service
 keywords: offboarding, Microsoft Defender for Endpoint offboarding, offboarding
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -48,7 +46,7 @@ Follow the corresponding instructions depending on your preferred deployment met
 >
 > To view only active devices, you can filter by [health state](machines-view-overview.md#health-state), [device tags](machine-tags.md) or [machine groups](machine-groups.md).
 
-## Offboard Windows 10 devices
+## Offboard Windows devices
 
 - [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [Offboard devices using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
