@@ -46,6 +46,8 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. You can see the availability and status of event types in the [Supported Microsoft 365 Defender event types in streaming API](supported-event-types.md).
 - (GA) Microsoft Defender for Office 365 data available in advanced hunting is now generally available.
+- (Preview) Assign incidents and alerts to user accounts <br> You can assign an incident, and all the alerts associated with it, to a user account from **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
+
 
 ## August 2021
 - (Preview) Microsoft Defender for Office 365 data available in advanced hunting
@@ -77,7 +79,7 @@ For more information on what's new with other Microsoft Defender security produc
  Threat analytics helps you respond to and minimize the impact of active attacks. You can also learn about attack attempts blocked by Microsoft 365 Defender solutions and take preventive actions that mitigate the risk of further exposure and increase resiliency. As part of the unified security experience, threat analytics is now available for Microsoft Defender for Endpoint and Microsoft Defender for Office E5 license holders.
 
 ## March 2021
-- [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in `AppFileEvents`.
+- [CloudAppEvents table](advanced-hunting-cloudappevents-table.md) <br>Find information about events in various cloud apps and services covered by Microsoft Cloud App Security. This table also includes information previously available in the `AppFileEvents` table.
 ## February 2021
 - (Preview) The enhanced [Microsoft 365 Defender portal (https://security.microsoft.com)](https://security.microsoft.com) is now available in public preview. This new experience brings Defender for Endpoint and Defender for Office 365 to the center. [Learn more about what's changed](./overview-security-center.md).
 - **[(Preview) Microsoft 365 Defender APIs](api-overview.md)** - The top-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables. 
