@@ -1,5 +1,5 @@
 ---
-title: Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+title: Onboard macOS devices into Microsoft 365 overview
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+description: 
 ---
 
-# Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+# Onboard macOS devices into Microsoft 365 overview
 
 Preparing your devices for onboarding is required to ensure the device is configured to send telemetry and receive policy updates from your organization.
 
@@ -31,46 +31,19 @@ Preparing your devices for onboarding is required to ensure the device is config
 
 ## Before you begin
 
-- Make sure your macOS devices are onboarded into Intune
-- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
+If you're using Microsoft Intune, you must have the device MDM Enrolled. Otherwise, settings will not be applied successfully. 
+
+For more information on enabling MDM with Microsoft Intune, see [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
+
+- Your macOS devices must already be managed through Intune or JAMF Pro. To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Install the v93+ Edge browser on your macOS devices 
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Microsoft 365 Compliance solutions is a three phase process.
 
-1. [Create system configuration profiles](#create-system-configuration-profiles)
-1. [Enable kernel and system extensions](#enable-kernel-and-system-extensions)
-1. [Deploy the Microsoft DLP enforcement package](#deploy-the-microsoft-dlp-enforcement-package)
 
-### Create system configuration profiles
 
-1. Download all the configuration files from ***HENRY TO PROVIDE LINK AND FILE NAME ASAP***
 
-2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles** 
-
-3. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Custom**
-
-4. Choose **Create**
-
-5. Choose a name for the profile, like *Endpoint DLP for macOS*. Choose **Next**.
-
-6. Choose the **accessibilty.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
-
-7. Choose **Next**
-
-8. Assign **Intune** CHECK THIS WITH HENRY, IT DOESN'T MAKE SENSE on the **Assignments** tab and choose **Next**.
-
-9. Review your setting and choose **Create**.
-
-10. Open **Devices** > **Configuration profiles**, you should see your created profile there.
-
-### Enable kernel and system extensions
-text
-
-### Deploy the Microsoft DLP enforcement package
 
 Follow the instructions from [Intune](/intune/advanced-threat-protection).
 
