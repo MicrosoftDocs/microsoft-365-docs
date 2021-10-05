@@ -3,8 +3,6 @@ title: Microsoft Defender for Endpoint on Android
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, installation, deploy, uninstallation, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
