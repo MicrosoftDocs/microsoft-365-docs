@@ -598,7 +598,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection tecchnology**
+- **Detection technology**
 - **Delivery Status**
 - **Sender IP**
 - **Tags**

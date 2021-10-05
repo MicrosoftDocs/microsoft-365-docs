@@ -64,4 +64,4 @@ Read the walkthrough document provided with each attack scenario. Each document 
 ## Related topics
 
 - [Onboard devices](onboard-configure.md)
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)
