@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/work-with-customers",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/email",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
       "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
       "redirect_document_id": false
