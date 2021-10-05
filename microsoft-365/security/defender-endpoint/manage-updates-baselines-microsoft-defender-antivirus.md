@@ -101,8 +101,7 @@ Security intelligence update version: update
 ### Known Issues
 No known issues
 <br/>
-<br/>
-<details>
+</details><details>
 <summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
