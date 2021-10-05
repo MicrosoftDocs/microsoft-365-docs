@@ -155,10 +155,15 @@ In the term store, you can view the status of requests by:
 
     ![Screenshot showing the Load more option in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-05.png)
 
-6. To review requests that are in a particular state, use the filter option on the **Status** column.
+6. To review requests that are in a particular state, on the **Status** column, select **Filter by**.
+
+    ![Screenshot showing the Status and Filter by option in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-06a.png)
+
+     Select the status you want to filter by: **Declined**, **Success**, or **Requested**.
+
+    ![Screenshot showing the Filter by status options in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-06b.png)
 
 
-**--Insert screenshots from final UX--**
 
 <!---
 
