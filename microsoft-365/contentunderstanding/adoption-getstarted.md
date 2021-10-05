@@ -1,5 +1,5 @@
 ---
-title: Microsoft SharePoint Syntex adoption: Get started
+title: "Microsoft SharePoint Syntex adoption: Get started"
 description: Learn how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 ms.author: samanro
 author: samanro
@@ -71,7 +71,7 @@ Determine who in your organization will build and manage the models. The followi
 | Configure form processing | Configure Dataverse environment for form processing | Gather use cases | Gather business use cases |
 | Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
 
-Knowledge manager, Business Process Owner and Content model owner create sample models and champion adoption in the organization.
+Knowledge manager, Business Process Owner, and Content model owner create sample models and champion adoption in the organization.
 Others who may be involved: Compliance admin, Taxonomy managers.
 
 Where will they build and apply the models? Are there existing processes or repositories that could be enhanced?
