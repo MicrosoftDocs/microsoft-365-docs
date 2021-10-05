@@ -110,6 +110,8 @@ In this scenario, because the retention label is not applied to the original fil
 
 ![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention_diagram_of_retention_flow_cloud-attachments.png)
 
+The copy that's stored in the Preservation Holds library is typically created within an hour from the cloud attachment being shared.
+
 ## How retention works with OneNote content
 
 When you apply a retention policy to a location that includes OneNote content, behind the scenes, the different OneNote sections are individual files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
