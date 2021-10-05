@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-viva-topics
-localization_priority: None
+localization_priority: medium
 description: Learn about how to find topics in Viva Topics by using SharePoint taxonomy.
 ---
 # Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics
@@ -84,11 +84,11 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
     ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-03.png)
 
-4. In the **Create topics from terms** section, select **Get started**.
+4. In the **Create topics from terms** section, select **Get started**. If you’ve raised requests in the past, the option that appears is **Create terms for creation**.
 
     ![Screenshot showing the Request topics from terms section in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-new-set.png)
 
-   If you’ve raised requests in the past, the option that appears is **Create terms for creation**.
+    In the **Create topic from terms** section, select **Request topics**.
 
     ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-existing-set.png)
 
