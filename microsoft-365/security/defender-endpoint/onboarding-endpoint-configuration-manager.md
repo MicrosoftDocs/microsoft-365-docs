@@ -2,7 +2,6 @@
 title: Onboarding using Microsoft Endpoint Configuration Manager
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
 keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -56,7 +55,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 
 ### Collection creation
 
-To onboard Windows 10 devices with Microsoft Endpoint Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
+To onboard Windows devices with Microsoft Endpoint Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
 
 Onboarding using tools such as Group policy or manual method does not install any agent on the system.
 
@@ -102,8 +101,7 @@ Follow the steps below to onboard endpoints using Microsoft Endpoint Configurati
 
     ![Image of Microsoft Endpoint Configuration Manager wizard9.](images/configmgr-confirm.png)
 
-After completing this task, you now have a device collection with all the Windows 10 endpoints in the environment.
-
+After completing this task, you now have a device collection with all the Windows endpoints in the environment.
 
 ## Step 2: Configure Microsoft Defender for Endpoint capabilities
 
@@ -115,10 +113,10 @@ This section guides you in configuring the following capabilities using Microsof
 
 ### Endpoint detection and response
 
-#### Windows 10
+#### Windows 10 and Windows 11
 
 From within the Microsoft 365 Defender portal it is possible to download the '.onboarding' policy that can be used to create the policy in System Center Configuration
-Manager and deploy that policy to Windows 10 devices.
+Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
 1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
@@ -243,7 +241,7 @@ needs on how Antivirus is configured.
 
     ![Image of next generation protection pane10.](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Target the new antimalware policy to your Windows 10 collection and click **OK**.
+4. Target the new antimalware policy to your Windows collection and click **OK**.
 
      ![Image of next generation protection pane11.](images/configmgr-select-collection.png)
 
@@ -281,7 +279,7 @@ To set ASR rules in Audit mode:
 
     ![Image of Microsoft Endpoint Configuration Manager console4.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Target the policy to the newly created Windows 10 collection and click **OK**.
+7. Target the policy to the newly created Windows collection and click **OK**.
 
     ![Image of Microsoft Endpoint Configuration Manager console5.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -331,7 +329,8 @@ See [Optimize ASR rule deployment and detections](/microsoft-365/security/defend
 
     ![A screenshot Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Select the policy to the newly created Windows 10 collection and choose **OK**.
+
+7. Select the policy to the newly created Windows collection and choose **OK**.
 
     ![A screenshot Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -361,7 +360,9 @@ After completing this task, you now have successfully configured Network Protect
 
     ![A screenshot of Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Target the policy to the newly created Windows 10 collection and click **OK**.
+
+7. Target the policy to the newly created Windows collection and click **OK**.
+
 
     ![A screenshot of Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

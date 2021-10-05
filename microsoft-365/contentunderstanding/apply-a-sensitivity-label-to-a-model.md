@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+localization_priority: medium
 description: Learn how to apply a sensitivity label to a model in SharePoint Syntex.
 ---
 

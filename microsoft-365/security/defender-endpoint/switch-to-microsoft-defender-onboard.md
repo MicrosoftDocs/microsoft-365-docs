@@ -2,8 +2,6 @@
 title: Switch to Microsoft Defender for Endpoint - Onboard
 description: Make the switch to Microsoft Defender for Endpoint. Onboard devices and then uninstall your non-Microsoft solution.
 keywords: migration, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -81,9 +79,10 @@ To verify that your onboarded devices are properly connected to Defender for End
 
 |Operating system|Guidance|
 |---|---|
-|Windows 10 <br/><br/> Windows Server 2019 <br/><br/> Windows Server, version 1803, or later <br/><br/> Windows Server 2016 <br/><br/> Windows Server 2012 R2|See [Run a detection test](run-detection-test.md). <br/><br/> Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
-|macOS:<br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS, or higher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2|1. Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Run the following command to list any detected threats: `mdatp threat list`. <br/><br/> For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+|Windows 10 <p> Windows Server 2019 <p> <p> Windows Server 2022 <p>Windows Server, version 1803, or later <p> Windows Server 2016 <p> Windows Server 2012 R2|See [Run a detection test](run-detection-test.md). <p> Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
+|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <p> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
+|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|<ol><li>Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.</li><li>Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.</li><li>Run the following command to list any detected threats: `mdatp threat list`.</li></ol> <p> For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
+
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
@@ -104,7 +103,7 @@ Now that your endpoints have been onboarded to Defender for Endpoint, your next 
 
 ### Set Microsoft Defender Antivirus on Windows Server to passive mode manually
 
-To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, follow these steps:
+To set Microsoft Defender Antivirus to passive mode on Windows Server, version 1803 or newer, or Windows Server 2019, or Windows Server 2022, follow these steps:
 
 1. Open Registry Editor, and then navigate to:
 
