@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -253,6 +253,19 @@ ProgID:Media AND ProgID:Meeting
 
 Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
 
+##### Identify files and emails that have a sensitivity label
+
+To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
+
+```
+InformationProtectionLabelId<GUID>
+```
+
+To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### Auto-apply labels to content by using trainable classifiers
 
@@ -286,9 +299,9 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 2. Run the following command:
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## Updating retention labels and their policies
 

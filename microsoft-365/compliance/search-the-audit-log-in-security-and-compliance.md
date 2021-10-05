@@ -38,14 +38,14 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Communication compliance|ComplianceSuperVisionExchange|
 | Content explorer|LabelContentExplorer|
 | Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint|
+| Defender for Endpoint|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
 | Dynamics 365|CRM|
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 | Forms|MicrosoftForms|
 | Information barriers|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
+| Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive for Business|OneDrive|
