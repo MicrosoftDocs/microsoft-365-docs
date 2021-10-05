@@ -8,7 +8,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: 
-localization_priority: None
+localization_priority: medium
 description: Learn how to search for topics in Microsoft Viva Topics.
 ---
 
