@@ -25,6 +25,9 @@ Multi-Geo capabilities in Teams enables Teams chat data to be stored at rest in 
 
 Teams uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL is not set or is invalid, data is stored in the tenant's central location.
 
+> [!NOTE]
+> Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
+
 ## User chat
 
 User chat includes one-to-one, one-to-many, and private meeting messages.

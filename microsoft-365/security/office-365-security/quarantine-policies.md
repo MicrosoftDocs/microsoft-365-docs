@@ -14,16 +14,12 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
 # Quarantine policies
-
-> [!NOTE]
-> The features that are described in this article are currently in Preview, aren't available to everyone, and are subject to change.
 
 Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined.
 
@@ -334,7 +330,7 @@ Spoof intelligence is available in EOP and Defender for Office 365. User imperso
 
    **Note**: When you create a new policy, a blank **Apply quarantine policy** value indicates the default quarantine policy for that action is used. When you later edit the policy, the blank values are replaced by the actual default quarantine policy names as described in the previous table.
 
-   ![Quarantine policy selections in an anti-spam policy.](../../media/quarantine-tags-in-anti-phishing-policies.png)
+   ![Quarantine policy selections in an anti-phishing policy.](../../media/quarantine-tags-in-anti-phishing-policies.png)
 
 Full instructions for creating and modifying anti-phishing polices are available in the following topics:
 
