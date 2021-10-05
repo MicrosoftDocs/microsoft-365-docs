@@ -58,12 +58,12 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 ## Safe Attachments file types report
 
 > [!NOTE]
-> The **Safe Attachments file types report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Safe Attachments message disposition report
 
 > [!NOTE]
-> The **Safe Attachments message disposition report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Mail latency report
 
@@ -107,26 +107,28 @@ In the details table below the chart, the following information is available:
 - **Message count**
 - **Overall latency**
 
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
+
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
-## URL threat protection report
+## URL protection report
 
-The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
 ![URL protection report widget on the Email & collaboration reports page.](../../media/url-protection-report-widget.png)
 
-The available views on the **URL threat protection** report page are described in the following sections.
+The available views on the **URL protection** report page are described in the following sections.
 
 > [!NOTE]
 > This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the charts is not available in real time here, but the data in the details table is, so you may see a slight discrepancy between the two. The charts are refreshed once every four hours and contain data for the last 90 days.
 
 ### View data by URL click protection action
 
-![URL click protection action view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![URL click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
@@ -158,9 +160,11 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
+
 ### View data by URL click by application
 
-![URL click by application view in the URL threat protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![URL click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
@@ -189,6 +193,8 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**
 - **App**
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
 
 ## Additional reports to view
 

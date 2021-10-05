@@ -1,8 +1,7 @@
 ---
-title: "Onboard Windows 10 multi-session devices in Azure Virtual Desktop"
-description: "Read more in this article about Onboarding Windows 10 multi-session devices in Azure Virtual Desktop"
+title: "Onboard Windows multi-session devices in Azure Virtual Desktop"
+description: "Read more in this article about Onboarding Windows multi-session devices in Azure Virtual Desktop"
 keywords: Azure Virtual Desktop, WVD, microsoft defender, endpoint, onboard
-search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,15 +14,16 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
-# Onboard Windows 10 multi-session devices in Azure Virtual Desktop
+# Onboard Windows multi-session devices in Azure Virtual Desktop
 
 6 minutes to read
 
 Applies to:
 
-- Windows 10 multi-session running on Azure Virtual Desktop (AVD)
+- Windows multi-session running on Azure Virtual Desktop (AVD)
 
 Microsoft Defender for Endpoint supports monitoring both VDI and Azure Virtual Desktop sessions. Depending on your organization's needs, you might need to implement VDI or Azure Virtual Desktop sessions to help your employees access corporate data and apps from an unmanaged device, remote location, or similar scenario. With Microsoft Defender for Endpoint, you can monitor these virtual machines for anomalous activity.
 
@@ -70,7 +70,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
     1. In the Microsoft 365 Defender portal navigation pane, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
-    1. Select Windows 10 as the operating system.
+    1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select VDI onboarding scripts for non-persistent endpoints.
     1. Click **Download package** and save the .zip file.
 
@@ -102,7 +102,7 @@ This scenario uses a centrally located script and runs it using a domain-based g
 
 If you plan to manage your machines using a management tool, you can onboard devices with Microsoft Endpoint Configuration Manager.
 
-For more information, see [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
+For more information, see [Onboard Windows devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
 > If you plan to use [Attack Surface reduction Rules](attack-surface-reduction-rules.md), note that the rule "[Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)" should not be used, because that rule is incompatible with management through Microsoft Endpoint Configuration Manager. The rule blocks WMI commands that the Configuration Manager client uses to function correctly.
@@ -151,7 +151,7 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 #### Licensing requirements
 
-Note on licensing: When using Windows 10 Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Azure Defender.
+Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Azure Defender.
 Licensing requirements for Microsoft Defender for endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 #### Related Links
