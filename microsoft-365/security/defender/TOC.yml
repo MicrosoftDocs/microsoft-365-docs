@@ -22,6 +22,8 @@
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
       - name: Preview features
         href: preview.md
+      - name: Training resources
+        href: microsoft-365-defender-training-resources.md
       - name: Troubleshoot issues
         href: ./troubleshoot.md
       - name: Industry tests
