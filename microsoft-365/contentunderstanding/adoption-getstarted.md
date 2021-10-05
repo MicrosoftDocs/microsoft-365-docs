@@ -13,7 +13,7 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
-localization_priority: medium
+ms.localizationpriority:  medium
 ---
 
 # Microsoft SharePoint Syntex adoption: Get started

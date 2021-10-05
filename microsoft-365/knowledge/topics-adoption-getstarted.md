@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
-localization_priority: medium
+ms.localizationpriority:  medium
 ---
 
 # Get started driving adoption of Microsoft Viva Topics

@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:

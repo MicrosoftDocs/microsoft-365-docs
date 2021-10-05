@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 ms.custom: admindeeplinkTEAMS
-localization_priority: None
+ms.localizationpriority: null
 description: Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center.
 ---
 

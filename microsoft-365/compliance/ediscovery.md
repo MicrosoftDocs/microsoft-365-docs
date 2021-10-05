@@ -14,7 +14,7 @@ ms.collection:
 - m365solution-ediscovery
 - m365initiative-compliance
 - m365solution-overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
