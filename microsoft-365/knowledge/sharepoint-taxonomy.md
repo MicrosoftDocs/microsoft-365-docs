@@ -171,9 +171,12 @@ In the term store, you can view the status of requests by:
 
 After Viva Topics processes a request and creates a topic, you can see a topic card when you hover over a term name in the list of requests for the term set.
 
+    ![Screenshot showing a topic card and the the of requests for the term set.](../media/knowledge-management/taxonomy-identify-topics-requests-panel.png)
+
 Also, if you go to individual terms, and select the **Usage settings** tab, the **Create topic from this term** section shows a topic card when you hover over the name.
 
-**--Insert screenshot from final UX - topic card on hover--**
+    ![Screenshot showing the usage settings tab and a topic card when you hover over a name.](../media/knowledge-management/taxonomy-identify-topics-single-term.png)
+
 
 Topic pages also indicate that the taxonomy is one of the sources for the topic.
 
