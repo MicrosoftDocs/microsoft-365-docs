@@ -9,7 +9,7 @@ ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+localization_priority: medium
 ROBOTS: 
 description: Learn how to use Power Automate to create your flow to process your contracts by using a Microsoft 365 solution.
 ---
