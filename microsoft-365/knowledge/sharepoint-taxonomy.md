@@ -127,6 +127,8 @@ In the term store, you can view the status of requests by:
 
 2. On the term page, select the **Usage settings** tab.
 
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-single-term-02.png)
+
 3. In the **Create topic from this term** section, view the status of the request.
 
 **--Insert screenshots from final UX--**
