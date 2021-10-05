@@ -1,7 +1,7 @@
 ---
 title: "Create DNS records at Cloudflare for Microsoft"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: scotv
@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
