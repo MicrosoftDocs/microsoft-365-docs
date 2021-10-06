@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -21,7 +21,9 @@ description: Use Microsoft 365 Defender and its security signal sources to prote
 
 # Step 2. Deploy attack detection and response
 
-Enable, configure, and use these tools for ransomware attack detection and response.
+As a strongly recommended first step for ransomware attack detection and response in your Microsoft 365 tenant, [set up a trial environment](/microsoft-365/security/defender/eval-overview) to evaluate the features and capabilities of Microsoft 365 Defender.
+
+For additional information, see these resources.
 
 | Feature | Description | Where to start | How to use it for detection and response |
 |:-------|:-----|:-------|:-------|
@@ -58,7 +60,7 @@ Use these tools to detect and respond to the following common threats from ranso
 
    - Microsoft Cloud App Security
 
-- Data exfiltration, deletion, or updloading
+- Data exfiltration, deletion, or uploading
 
    - Microsoft Defender for Office 365
    - Microsoft Cloud App Security with [anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
@@ -71,8 +73,6 @@ The following tools use Microsoft 365 Defender and its portal (https://security.
 - Microsoft Cloud App Security
 
 Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident so that your security analysts can more quickly detect, investigate, and remediate the phases of a ransomware attack.
-
-You can [set up a trial environment](/microsoft-365/security/defender/eval-overview) to evaluate the features and capabilities of Microsoft 365 Defender.
 
 ## Resulting configuration
 

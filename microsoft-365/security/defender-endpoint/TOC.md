@@ -48,14 +48,14 @@
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
 #### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
 #### [Onboard previous versions of Windows](onboard-downlevel.md)
-#### [Onboard Windows 10 devices]()
+#### [Onboard Windows devices]()
 ##### [Onboarding tools and methods](configure-endpoints.md)
 ##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
 ##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ##### [Onboard devices using a local script](configure-endpoints-script.md)
 ##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+##### [Onboard Windows multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 #### [Onboard Windows servers](configure-server-endpoints.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
@@ -63,6 +63,9 @@
 #### [Run simulated attacks on devices](attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+
+#### [Application license terms](mde-terms-windows.md)
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -103,7 +106,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
+##### [Application license terms](mde-terms-mac.md)
 
 #### [Microsoft Defender for Endpoint on iOS]()
 ##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
@@ -165,6 +168,9 @@
 
 ##### [Troubleshoot]()
 ###### [Troubleshoot issues](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
+
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
@@ -322,9 +328,6 @@
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
-
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
 ##### [Exploit protection evaluation](evaluate-exploit-protection.md)
@@ -353,8 +356,6 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-
-##### [Control USB devices and other removable media](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
 ##### [Device Installation](mde-device-control-device-installation.md)

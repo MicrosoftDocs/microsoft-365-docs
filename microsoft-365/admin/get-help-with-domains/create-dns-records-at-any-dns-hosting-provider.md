@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -175,4 +175,4 @@ To add these values, create a single string, separating the values with spaces a
 
 [Change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)

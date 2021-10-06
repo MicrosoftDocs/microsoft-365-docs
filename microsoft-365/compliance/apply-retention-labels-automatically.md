@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -39,7 +39,7 @@ Auto-applying retention labels are powerful because:
 You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -144,8 +144,10 @@ Additionally, SharePoint items that are in draft or that have never been publish
 
 #### Auto-apply labels to content with specific types of sensitive information
 
-> [!WARNING]
-> This configuration currently has a known limitation where all unlabeled emails always have the selected retention label applied when there is a match for your chosen sensitive information types. For example, even if you scope your auto-apply policy to specific users, or select locations other than Exchange for the policy, the label is always applied to unlabeled emails when there is a match.
+> [!IMPORTANT]
+> For emails that you auto-apply by identifying sensitive information, it's not supported to scope the policy to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
+> 
+> Also specific to this policy configuration, if you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are included and not mailboxes from Microsoft 365 groups.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
@@ -164,6 +166,8 @@ For more information about these options, see the following guidance from the DL
 To consider when using sensitive information types to auto-apply retention labels:
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.
+
+- For emails, you can't select specific recipients to include or exclude; only the **All recipients** setting is supported and for this configuration only, it includes mailboxes from Microsoft 365 groups. 
 
 #### Auto-apply labels to content with keywords or searchable properties
 
@@ -249,6 +253,19 @@ ProgID:Media AND ProgID:Meeting
 
 Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
 
+##### Identify files and emails that have a sensitivity label
+
+To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### Auto-apply labels to content by using trainable classifiers
 
@@ -282,9 +299,9 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 2. Run the following command:
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## Updating retention labels and their policies
 

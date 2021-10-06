@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -14,7 +14,8 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 09/21/2021
+ms.collection: m365-security-compliance
 ---
 
 # Why cloud protection should be enabled for Microsoft Defender Antivirus
@@ -25,6 +26,8 @@ ms.date: 08/31/2021
 - Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus cloud protection helps protect against malware on your endpoints and across your network. We recommend keeping cloud protection turned on, because certain security features and capabilities in Microsoft Defender for Endpoint only work when cloud protection is enabled. 
+
+[:::image type="content" source="images/mde-cloud-protection.png" alt-text="Diagram showing things that depend on cloud protection":::](enable-cloud-protection-microsoft-defender-antivirus.md)
 
 The following table summarizes the features and capabilities that depend on cloud protection: <br/><br/>
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -52,7 +52,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later and Windows Server 2019.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -177,8 +177,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 > [!IMPORTANT]
 >
-> - Full isolation is available for devices on Windows 10, version 1703 and Windows Server 2019.
-> - Selective isolation is available for devices on Windows 10, version 1709 or later and Windows Server 2019.
+> - Full isolation is available for devices on Windows 10, version 1703, Windows Server 2019, and Windows Server 2022.
+> - Selective isolation is available for devices on Windows 10, version 1709 or later, Windows Server 2019, and Windows Server 2022.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
