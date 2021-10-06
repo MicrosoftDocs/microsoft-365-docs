@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to create templates for assessments in Microsoft Compliance Manager. Create and modify templates using a formatted Excel file."
+description: "Understand how to work with Excel data for assessment templates in Microsoft Compliance Manager."
 ---
 
 # Format assessment template data in Excel for Microsoft Compliance Manager
