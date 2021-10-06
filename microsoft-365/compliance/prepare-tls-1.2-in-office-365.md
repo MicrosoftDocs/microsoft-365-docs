@@ -3,7 +3,7 @@ title: Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 description: How to prepare to use TLS 1.2 for all client-server and browser-server combinations in Office 365 and Office 365 GCC after support for TLS 1.0 and 1.1 is disabled.
 author: kccross  
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro

@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -102,7 +102,6 @@ Follow the steps below to onboard endpoints using Microsoft Endpoint Configurati
     ![Image of Microsoft Endpoint Configuration Manager wizard9.](images/configmgr-confirm.png)
 
 After completing this task, you now have a device collection with all the Windows endpoints in the environment.
-
 
 ## Step 2: Configure Microsoft Defender for Endpoint capabilities
 
@@ -330,6 +329,7 @@ See [Optimize ASR rule deployment and detections](/microsoft-365/security/defend
 
     ![A screenshot Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
     ![A screenshot Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -360,7 +360,9 @@ After completing this task, you now have successfully configured Network Protect
 
     ![A screenshot of Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. Target the policy to the newly created Windows collection and click **OK**.
+
 
     ![A screenshot of Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
