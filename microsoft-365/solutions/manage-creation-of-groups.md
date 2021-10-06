@@ -99,7 +99,7 @@ Replace *\<GroupName\>* with the name of the group that you created. For example
 
 Save the file as GroupCreators.ps1.
 
-In the PowerShell window, navigate to the location where you saved the file (type "CD <FileLocation>").
+In the PowerShell window, navigate to the location where you saved the file (type "CD \<FileLocation\>").
 
 Run the script by typing:
 
