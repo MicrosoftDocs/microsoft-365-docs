@@ -48,11 +48,6 @@ The Event Streaming API is constantly being expanded to support more event types
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | Not yet supported |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | Not yet supported  |
-| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | Not yet supported |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Not yet supported |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Not yet supported |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
