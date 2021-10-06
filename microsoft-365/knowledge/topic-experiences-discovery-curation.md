@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Overview of how topics are discovered in Viva Topics.
 ---
 
