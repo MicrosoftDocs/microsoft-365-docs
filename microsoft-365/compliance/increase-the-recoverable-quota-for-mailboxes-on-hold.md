@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150

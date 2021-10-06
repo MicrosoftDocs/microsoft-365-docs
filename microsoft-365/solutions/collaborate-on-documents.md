@@ -14,7 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: "In this article, you'll learn how to collaborate with guests on a document in SharePoint and OneDrive."

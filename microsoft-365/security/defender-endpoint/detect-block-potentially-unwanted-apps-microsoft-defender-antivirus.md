@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen

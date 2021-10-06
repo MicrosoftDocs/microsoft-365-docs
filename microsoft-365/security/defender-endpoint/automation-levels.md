@@ -12,7 +12,7 @@ ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
 ms.date: 10/22/2020
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
