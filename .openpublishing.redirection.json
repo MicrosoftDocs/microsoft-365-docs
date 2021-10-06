@@ -1,37 +1,37 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-365/admin/work-with-customers",
+      "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/devices",
+      "source_path": "microsoft-365/admin/devices/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/manage",
+      "source_path": "microsoft-365/admin/manage/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/get-help-with-domains",
+      "source_path": "microsoft-365/admin/get-help-with-domains/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/email",
+      "source_path": "microsoft-365/admin/email/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup",
+      "source_path": "microsoft-365/admin/setup/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/add-users",
+      "source_path": "microsoft-365/admin/add-users/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
