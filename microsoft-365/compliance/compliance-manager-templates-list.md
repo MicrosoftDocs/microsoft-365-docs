@@ -41,7 +41,7 @@ To review the templates available to your organization, go to your **Assessment 
 One or more of these templates will be available based on your licensing agreement. The Data Protection Baseline template is included for all users.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [European Union GDPR](/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
+- [European Union GDPR](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 and 5
 
