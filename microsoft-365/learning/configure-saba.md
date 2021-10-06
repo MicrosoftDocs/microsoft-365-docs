@@ -1,5 +1,5 @@
 ---
-title: "Configure Saba as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure Saba as a learning content source for Microsoft Viva Learning"
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -13,11 +13,11 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: Medium
-description: "Learn how to configure Saba as a learning content source for Microsoft Viva Learning (Preview)."
+localization_priority: medium
+description: "Learn how to configure Saba as a learning content source for Microsoft Viva Learning."
 ---
 
-# Configure Saba as a learning content source for Microsoft Viva Learning (Preview)
+# Configure Saba as a learning content source for Microsoft Viva Learning
 
 This article will show you how to configure Saba as a third-party content source for Microsoft Viva Learning. You'll need to be a Saba System Admin or Super User to perform these steps.
 

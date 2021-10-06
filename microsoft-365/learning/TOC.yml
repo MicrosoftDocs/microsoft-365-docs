@@ -1,11 +1,12 @@
-    - name: Microsoft Viva Learning (Preview) 
+    - name: Microsoft Viva Learning
       href: index.md   
 
-    - name: Get started with Viva Learning (Preview)
+    - name: Get started with Viva Learning
       items:    
-        - name: Overview of Viva Learning (Preview)
+        - name: Overview of Viva Learning
           href: overview-viva-learning.md 
-           
+        - name: Understand terms and conditions
+          href: terms-and-conditions.md
 
     - name: Setup and administration
       items:

@@ -1,5 +1,5 @@
 ---
-title: "Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning"
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -13,11 +13,11 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: Medium
-description: "Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning (Preview)."
+localization_priority: medium
+description: "Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning."
 ---
 
-# Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning (Preview)
+# Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning
 
 This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. First you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in your Microsoft 365 Admin Center.
 
@@ -55,7 +55,7 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 ## Configure in the Microsoft 365 admin center
 
 1. Navigate to your [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Navigate to **Settings** > **Org settings**. Then search for Viva Learning (Preview) and enable SAP SuccessFactors from the options.
+2. Navigate to **Settings** > **Org settings**. Then search for Viva Learning and enable SAP SuccessFactors from the options.
 3. Fill in the configuration details.
 
 ### Configuration details

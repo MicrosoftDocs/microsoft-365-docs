@@ -1,5 +1,5 @@
 ---
-title: "Configure Udemy as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure Udemy as a learning content source for Microsoft Viva Learning"
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -13,11 +13,11 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: Medium
-description: "Learn how to configure Udemy as a learning content source for Microsoft Viva Learning (Preview)."
+localization_priority: medium
+description: "Learn how to configure Udemy as a learning content source for Microsoft Viva Learning."
 ---
 
-# Configure Udemy as a learning content source for Microsoft Viva Learning (Preview)
+# Configure Udemy as a learning content source for Microsoft Viva Learning
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Udemy content and any associated services are subject to Udemy’s privacy and service terms.
@@ -44,7 +44,7 @@ launch a course through their LMS/LXP to automatically be enrolled in Udemy.<!--
 After you have received the required configuration details from Udemy portal through above steps, the tenant admin needs to configure Udemy as a learning source in M365 admin portal by following the steps below.
 
 1. Navigate to the [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Navigate to **Settings**, then **Org settings**. Search for Viva Learning (Preview) and enable Udemy from the options.
+2. Navigate to **Settings**, then **Org settings**. Search for Viva Learning and enable Udemy from the options.
 3. Fill in required configuration details below.
     1. **Client’s Host URL** This is API endpoint URL gathered from Udemy portal in step 6.
     2. **Organization ID** This is the ACCOUNT_ID gathered from Udemy portal in step 6.

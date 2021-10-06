@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft Viva Learning (Preview) in the Teams admin center
+title: Set up Microsoft Viva Learning in the Teams admin center
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 ms.custom: admindeeplinkTEAMS
-ms.localizationpriority: null
+ms.localizationpriority: medium
 description: Learn how to configure Microsoft Viva Learning (Preview) in the Teams admin center.
 ---
 

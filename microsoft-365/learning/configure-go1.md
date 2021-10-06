@@ -1,5 +1,5 @@
 ---
-title: "Configure Go1 as a learning content source for Microsoft Viva Learning (Preview)"
+title: "Configure Go1 as a learning content source for Microsoft Viva Learning"
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -13,11 +13,11 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: Medium
-description: "Learn how to configure Go1 as a learning content source for Microsoft Viva Learning (Preview)."
+localization_priority: medium
+description: "Learn how to configure Go1 as a learning content source for Microsoft Viva Learning."
 ---
 
-# Configure Go1 as a learning content source for Microsoft Viva Learning (Preview)
+# Configure Go1 as a learning content source for Microsoft Viva Learning
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Go1 content and any associated services are subject to Go1’s privacy and service terms.
