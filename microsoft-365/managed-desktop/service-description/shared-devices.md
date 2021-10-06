@@ -13,7 +13,7 @@ ms.topic: article
 
 # Shared devices
 
-Microsoft Managed Desktop allows you to register devices in "shared device mode," similar to the shared device mode offered by [Azure Active Directory](/azure/active-directory/develop/msal-shared-devices). Devices in this mode are optimized for situations where users aren't tied down to a single desk and are frequently changing devices, typically frontline workers such as bank tellers or nursing staff. You can apply any of the Microsoft Managed Desktop [profiles](profiles.md) to devices in this mode. Devices registered in this mode have some important differences:
+Microsoft Managed Desktop allows you to register devices in "shared device mode," similar to the shared device mode offered by [Microsoft Intune](/mem/intune/configuration/shared-user-device-settings). Devices in this mode are optimized for situations where users aren't tied down to a single desk and are frequently changing devices, typically frontline workers such as bank tellers or nursing staff. You can apply any of the Microsoft Managed Desktop [profiles](profiles.md) to devices in this mode. Devices registered in this mode have some important differences:
 
 - [Device storage](#device-storage) is optimized for shared users.
 - [Inactive accounts](#deletion-of-inactive-accounts) are deleted.
@@ -85,7 +85,7 @@ In shared device mode, you can have only one [device profile](profiles.md) on a 
 
 ### Apps and policies assigned to users
 
-On shared devices, you should assign any apps or policies that you are managing yourself to *device groups*, not user groups. Doing this ensures that each user has a more consistent experience.
+On shared devices, you should assign any apps or policies that you are managing yourself to *device groups*, not user groups. Doing this ensures that each user has a more consistent experience. The exception is [Company Portal](#deploying-apps-with-company-portal).
 
 ## Limitations of shared device mode
 
@@ -104,7 +104,7 @@ When Universal print installs a printer for a single user on a shared device tha
 Each Microsoft Intune device has a primary user, which gets assigned when a device is set up by Autopilot. But when devices are shared, Intune requires that the primary user be removed.
 
 > [!IMPORTANT]
-> While shared device mode is in public preview, be sure to remove the primary user by following these steps: sign in to the Microsoft Endpoint Manager admin center, select **Devices**>**All devices**, select a device, then select **Properties**>**Change primary user**. {AND THEN DO WHAT?}
+> While shared device mode is in public preview, be sure to remove the primary user by following these steps: sign in to the Microsoft Endpoint Manager admin center, select **Devices**>**All devices**, select a device, then select **Properties**>**Remove primary user**, and delete the user listed there.
 
 ### Deploying apps with Company Portal
 Some apps probably don't need to be present on all devices, so you might prefer that users only install those apps when they need them from [Company Portal](/mem/intune/user-help/install-apps-cpapp-windows). Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md), but you should be aware of some limitations in this feature in this public preview:
@@ -113,8 +113,11 @@ Some apps probably don't need to be present on all devices, so you might prefer 
 - Devices cannot have a [primary user](#primary-user).
 - To uninstall an app that a user installed through Company Portal, you must uninstall the app from all users on that device.
 
+> [!CAUTION]
+> Company Portal doesn't support applications assigned to device groups as available. 
+
 ### Redeployment of Microsoft 365 Apps for enterprise
-During public preview, users will have to contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device. {WHY WOUDL THIS HAPPEN SINCE THEY'RE SUPPOSED TO ALREADY BE THERE? LIKE IF THEY ACCIDENTALLY GET DELETED OR SOMETHING?} 
+During public preview, if Microsoft 365 Apps need to be redeployed, users will have to contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device.
 
 ### Microsoft Teams
 When a user starts Teams for the first time, they'll be prompted to update the app before they can use it. Once they allow the update, Teams will keep itself updated in the background.
