@@ -70,7 +70,7 @@ If the portal dashboard and other sections show an error message such as "Data c
 
 ![Image of data currently isn't available.](images/atp-data-not-available.png)
 
-You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
+You'll need to allow the `security.windows.com` and all subdomains under it on your web browser. For example, `*.security.windows.com`.
 
 ## Portal communication issues
 
