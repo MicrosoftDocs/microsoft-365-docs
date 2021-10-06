@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ---
 
-# Onboarding tools and methods for Windows devices
+# Onboarding tools and methods for Windows devices in Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

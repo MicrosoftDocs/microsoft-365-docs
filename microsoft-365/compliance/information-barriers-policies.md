@@ -11,7 +11,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020

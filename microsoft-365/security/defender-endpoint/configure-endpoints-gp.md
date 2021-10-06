@@ -2,15 +2,13 @@
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -122,7 +120,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 ### Update endpoint protection configuration
 
-After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019, or Windows Server 2022 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
+After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019, Windows 11, or Windows Server 2022 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
 
 All policies are located under `Computer Configuration\Policies\Administrative Templates`.
 
@@ -252,8 +250,11 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
 
 1. After you choose the GP, or create a new one, edit the GP.
+
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
-:::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder.":::

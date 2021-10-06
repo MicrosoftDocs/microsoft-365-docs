@@ -8,7 +8,7 @@ manager: chrisda
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398

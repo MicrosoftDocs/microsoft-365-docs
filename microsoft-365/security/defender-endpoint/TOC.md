@@ -58,7 +58,7 @@
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
 
 
-##### [Onboard Windows 10, and Windows Servers]()
+##### [Onboard Windows devices and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, and 2019](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
@@ -341,9 +341,6 @@
 ##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)

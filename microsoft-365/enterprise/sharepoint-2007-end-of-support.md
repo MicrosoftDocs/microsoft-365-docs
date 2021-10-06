@@ -17,7 +17,7 @@ ms.custom:
 - 'AppDefToBDC'
 - seo-marvel-apr2020
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content

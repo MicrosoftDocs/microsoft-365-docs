@@ -2,15 +2,13 @@
 title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -124,8 +122,8 @@ Enable the feature in audit mode for at least 30 days. After this period, review
 For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
 ## Run a detection test to verify onboarding
-After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard devices using Configuration Manager
 
@@ -142,7 +140,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
-    1. Select Windows 10 as the operating system.
+    1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Select **Download package**, and save the .zip file.
 

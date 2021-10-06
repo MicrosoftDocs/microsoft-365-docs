@@ -2,15 +2,13 @@
 title: Onboard Windows devices using Mobile Device Management tools
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -70,7 +68,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
 
-   1. Select Windows 10 as the operating system.
+   1. Select Windows 10 or Windows 11 as the operating system.
 
    1. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
 

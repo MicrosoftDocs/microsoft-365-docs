@@ -2,15 +2,13 @@
 title: Onboard devices and configure Microsoft Defender for Endpoint capabilities
 description: Onboard Windows 10 devices, servers, non-Windows devices and learn how to run a detection test.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -60,8 +58,8 @@ The following table lists the available tools based on the endpoint that you nee
 | **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
 | **macOS**    | [Local scripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
-| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
-| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)               |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)            | 
 
 
 The following table lists the available tools based on the endpoint that you need to onboard.
@@ -92,21 +90,3 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 |Next-generation protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |Tamper Protection     |        Y   |    Y     |     Y    |    Y    |    Y   |
 |Web Protection     |       Y   |    Y     |     Y    |    Y    |    Y   |
-|||||||
-|**Detection**     |         |         |         |||
-|Advanced Hunting     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Custom file indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Custom network indicators     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|EDR Block & Passive Mode     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Sense detection sensor     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Endpoint & network device discovery     |      Y   |    N     |     N    |    N    |    N   |
-|||||||
-|**Response**     |         |         |         |||
-|Automated Investigation & Response (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Device response capabilities: isolation, collect investigation package, run AV scan     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|File response capabilities: collect file, deep analysis, block file, stop, and quarantine processes     |      Y   |    Y     |     Y    |    Y    |    Y   |
-|Live Response    |      Y   |    Y     |     Y    |    Y    |    Y   |
-
-(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
-
-Windows 7, 8.1, and Windows Server 2008 R2 includes support for AV and Sense detection sensor.
