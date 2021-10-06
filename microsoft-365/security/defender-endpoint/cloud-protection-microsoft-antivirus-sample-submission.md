@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -15,6 +15,7 @@ ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
 ms.date: 08/31/2021
+ms.collection: M365-security-compliance
 ---
 
 # Cloud protection and sample submission in Microsoft Defender Antivirus

@@ -7,14 +7,15 @@ ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 09/14/2021
+ms.date: 10/05/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate exclusions based on file extension and folder location
@@ -130,7 +131,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -140,7 +141,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -214,7 +215,8 @@ The following table describes how the wildcards can be used and provides some ex
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables.<br/><br/>
+The following table lists and describes the system account environment variables.
+    <br/><br/>
     
 |This system environment variable...|Redirects to this|
 |---|---|
@@ -274,10 +276,10 @@ The following table lists and describes the system account environment variables
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
-|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Users\UserName`|
+|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
 
 ## Review the list of exclusions
 

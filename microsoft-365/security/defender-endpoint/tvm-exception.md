@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -29,10 +29,9 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. If your organization has device groups, you will be able to scope the exception to specific device groups. Exceptions can either be created for selected device groups, or for all device groups past and present.  
+As an alternative to a remediation request when a recommendation is not relevant at the moment, you can create exceptions for recommendations. If your organization has device groups, you will be able to scope the exception to specific device groups. Exceptions can either be created for selected device groups, or for all device groups past and present.
 
 When an exception is created for a recommendation, the recommendation will not be active until the end of the exception duration. The recommendation state will change to **Full exception** or **Partial exception** (by device group).
 
@@ -44,7 +43,7 @@ Only users with "exceptions handling" permissions can manage exceptions (includi
 
 ## Create an exception
 
-Select a security recommendation you would like create an exception for, and then select **Exception options** and fill out the form.  
+Select a security recommendation you would like create an exception for, and then select **Exception options** and fill out the form.
 
 ![Showing where the button for "exception options" is location in a security recommendation flyout.](images/tvm-exception-options.png)
 
@@ -58,7 +57,7 @@ Apply the exception to all current device groups or choose specific device group
 
 If you have filtered by device group on any of the threat and vulnerability management pages, only your filtered device groups will appear as options.
 
-This is the button to filter by device group on any of the threat and vulnerability management pages: 
+This is the button to filter by device group on any of the threat and vulnerability management pages:
 
 ![Showing selected device groups filter.](images/tvm-selected-device-groups.png)
 

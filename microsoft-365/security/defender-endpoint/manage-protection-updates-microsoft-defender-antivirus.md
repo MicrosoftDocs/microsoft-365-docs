@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -15,6 +15,7 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Manage the sources for Microsoft Defender Antivirus protection updates

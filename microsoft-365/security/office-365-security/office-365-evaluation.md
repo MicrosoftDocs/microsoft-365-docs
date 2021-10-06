@@ -11,7 +11,7 @@ ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150

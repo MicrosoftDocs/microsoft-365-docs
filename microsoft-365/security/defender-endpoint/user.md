@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -32,8 +32,7 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-Method|Return Type |Description
-:---|:---|:---
-[List User related alerts](get-user-related-alerts.md) | [alert](alerts.md) collection |  List all the alerts that are associated with a [user](user.md).
-[List User related devices](get-user-related-machines.md) | [machine](machine.md) collection | List all the devices that were logged on by a [user](user.md).
+Method|Return Type|Description
+---|---|---
+[List User related alerts](get-user-related-alerts.md)|[alert](alerts.md) collection|List all the alerts that are associated with a [user](user.md).
+[List User related devices](get-user-related-machines.md)|[machine](machine.md) collection|List all the devices that were logged on by a [user](user.md).

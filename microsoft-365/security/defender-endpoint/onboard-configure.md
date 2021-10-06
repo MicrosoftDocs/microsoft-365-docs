@@ -1,16 +1,14 @@
 ---
 title: Onboard devices to the Microsoft Defender for Endpoint service
-description: Onboard Windows 10 devices, servers, non-Windows devices and learn how to run a detection test.
+description: Onboard Windows devices, servers, non-Windows devices and learn how to run a detection test.
 keywords: onboarding, Microsoft Defender for Endpoint onboarding, sccm, group policy, mdm, local script, detection test
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,7 +56,7 @@ The following table lists the available tools based on the endpoint that you nee
 Topic|Description
 :---|:---
 [Onboard previous versions of Windows](onboard-downlevel.md)|Onboard Windows 7 and Windows 8.1 devices to Defender for Endpoint.
-[Onboard Windows 10 devices](configure-endpoints.md)|You'll need to onboard devices for it to report to the Defender for Endpoint service. Learn about the tools and methods you can use to configure devices in your enterprise.
+[Onboard Windows devices](configure-endpoints.md)|You'll need to onboard devices for it to report to the Defender for Endpoint service. Learn about the tools and methods you can use to configure devices in your enterprise.
 [Onboard servers](configure-server-endpoints.md)|Onboard Windows Server 2008 R2 SP1, Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC) version 1803 and later, Windows Server 2019 and later, and Windows Server 2019 core edition to Defender for Endpoint.
 [Onboard non-Windows devices](configure-endpoints-non-windows.md)|Defender for Endpoint provides a centralized security operations experience for Windows as well as non-Windows platforms. You'll be able to see alerts from various supported operating systems (OS) in Microsoft Defender Security Center and better protect your organization's network. This experience leverages on a third-party security products' sensor data.
 [Run a detection test on a newly onboarded device](run-detection-test.md)|Run a script on a newly onboarded device to verify that it is properly reporting to the Defender for Endpoint service.

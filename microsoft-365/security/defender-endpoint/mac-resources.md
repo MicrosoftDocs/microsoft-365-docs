@@ -2,15 +2,13 @@
 title: Resources for Microsoft Defender for Endpoint on Mac
 description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -104,7 +102,10 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuration|Turn off PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuration|Turn on audit mode for PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|Configuration|Turn on/off passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Configuration|Turn on/off antivirus passive mode|`mdatp config passive-mode --value [enabled/disabled]`|
+|Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
