@@ -120,9 +120,6 @@ Irrespective of how the versions are stored, if the retention settings are confi
 
 - If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
-> [!NOTE]
-> Only the most recent version of the retained file is searchable by eDiscovery tools. For more information, see the [Query-based holds placed on sites](create-ediscovery-holds.md#query-based-holds-placed-on-sites) section from the eDiscovery documentation.
-
 For items that are subject to a retention policy (or an eDiscovery hold), the versioning limits for the document library are ignored until the retention period of the document is reached (or the eDiscovery hold is released). In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
 
 That's not the case for retention labels when the content isn't subject to a retention policy (or an eDiscovery hold). Instead, the versioning limits are honored so that older versions are automatically deleted to accommodate new versions, but users are still prevented from deleting versions.
