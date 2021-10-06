@@ -156,7 +156,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
 
 ## Adding role groups as members of eDiscovery cases
 
-You can role groups as members of Core eDiscovery and Advanced eDiscovery cases so that members of the role groups can access and perform tasks in the assigned cases. The roles assigned to the role group define what members of the role group can do. Then adding a role group as a member of the case lets members access and perform those tasks in a specific case. For more information about adding role groups as members of cases, see:
+You can add role groups as members of Core eDiscovery and Advanced eDiscovery cases so that members of the role groups can access and perform tasks in the assigned cases. The roles assigned to the role group define what members of the role group can do. Then adding a role group as a member of the case lets members access and perform those tasks in a specific case. For more information about adding role groups as members of cases, see:
 
 - [Get started with Core eDiscovery](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
 
