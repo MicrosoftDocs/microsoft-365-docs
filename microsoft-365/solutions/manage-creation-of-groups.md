@@ -128,8 +128,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 if($GroupName)
 {
   $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-}
- else {
+} else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
 Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy
