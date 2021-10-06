@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-lsaldanha
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

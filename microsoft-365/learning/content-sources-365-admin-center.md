@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: null
 description: Learn how to configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center.
 ---
 

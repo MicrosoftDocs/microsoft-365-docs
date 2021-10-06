@@ -11,7 +11,7 @@ ms.service: o365-administration
 ms.collection: 
 - M365-subscription-management
 - Adm_TOC
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

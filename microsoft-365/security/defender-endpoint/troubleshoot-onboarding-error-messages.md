@@ -2,15 +2,13 @@
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender for Endpoint.
 keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -72,7 +70,7 @@ If the portal dashboard and other sections show an error message such as "Data c
 
 ![Image of data currently isn't available.](images/atp-data-not-available.png)
 
-You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
+You'll need to allow the `security.windows.com` and all subdomains under it on your web browser. For example, `*.security.windows.com`.
 
 ## Portal communication issues
 

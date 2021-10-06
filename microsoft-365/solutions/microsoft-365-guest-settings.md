@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---

@@ -2,7 +2,7 @@
 title: Information barriers in Microsoft 365
 description: Learn how to configure information barriers in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
