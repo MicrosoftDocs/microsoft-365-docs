@@ -10,7 +10,7 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkMAC
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150

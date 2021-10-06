@@ -7,7 +7,7 @@ ms.date: 12/3/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 522d5cec-4e1b-4cc3-937f-293570717bc6

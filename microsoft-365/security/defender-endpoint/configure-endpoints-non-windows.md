@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -64,7 +64,7 @@ You can also offboard non-Windows devices by disabling the third-party integrati
 
 ## Related topics
 
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Troubleshooting Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
