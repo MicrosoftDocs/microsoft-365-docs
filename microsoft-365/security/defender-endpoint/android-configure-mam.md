@@ -71,7 +71,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   ![App settings](images/app-settings.png)
 
-  - **Create an app protection policy**
+ - **Create an app protection policy**
 
   Block access or wipe data of a managed app based on Microsoft Defender for Endpoint risk signals by creating an app protection policy.
 
