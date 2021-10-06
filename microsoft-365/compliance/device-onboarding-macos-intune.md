@@ -48,10 +48,22 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 ### Get the device onboarding package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
 1. For **Select operating system to start onboarding process** choose **macOS**
+ 
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+ 
 1. Choose **Download onboarding package**
-1. Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *DeviceOnboardingScript.cmd*. OR IS IT MDEONBOARDING.XML ASK HENRY
+ 
+1. Extract the contents of the device onboarding package. In the **Intune** folder you should see these files:
+    - accessibility.mobileconfig
+    - com.microsoft.autoupdate2.xml
+    - com.microsoft.wdav.xml
+    - fulldisk.mobileconfig
+    - kext.mobileconfig
+    - netfilter.mobileconfig
+    - notif.mobileconfig
+    - sysext.mobileconfig 
 
 ### Create system configuration profiles
 
@@ -72,26 +84,21 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 
 7. Choose **Next**
 
-8. Assign your **Intune** managed macOS devices on the **Assignments** tab and choose **Next**.
+8. CHOOSE GROUP HERE Assign your **Intune** managed macOS devices on the **Assignments** tab and choose **Next**.
 
-9. Review your setting and choose **Create**.
+9. Review your setting and choose **Create**. this equals deploy
 
 1. Repeat steps 2-7 for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
-        1. set **channel name** = string use HENRY TO PROVIDE
     1. MDE preferences **com.microsoft.wdav.xml** file
-        1. set `SystemExtensions` = `enabled`
-        1. set `DataLossPrevention` = `enabled`
-        1. set EDR preferences `Group IDs` = `DLP_Enable`
         1. set Antivirus engine `passive mode` = `true` or `false`. GET HENRY TO EXPLAIN THIS IT MAKES NO SENSE
     1. **netfilter.mobileconfig**
     1. **notif.mobileconfig**
-    1. the *DeviceComplianceOnboardingPackage.zip*
 
 10. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
+go into th e MEM UI and check the status HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
 
 ### Enable kernel extension
 
@@ -109,6 +116,9 @@ HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
 1. In the **Configuration settings** tab expand **Kernel Extensions**
 
 1. Set the **Team identifier** = **UBF8T346G9**
+1. assign to group
+
+1. done/create/next
 
 ### Enable system extension
 
@@ -128,7 +138,11 @@ HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
     1. set **com.microsoft.wdav.netext** = **UBF8T346G9**
 
 
-### Deploy the Microsoft DLP enforcement package
+1. assign to group
+
+1. done/create/next
+
+### Deploy the Microsoft DLP installation package
 
 Follow the instructions from [Intune](/intune/advanced-threat-protection).
 
