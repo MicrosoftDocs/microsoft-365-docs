@@ -258,7 +258,7 @@ Most of the time, meeting recordings are saved to OneDrive. But for channel meet
 To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
 
 ```
-InformationProtectionLabelId<GUID>
+InformationProtectionLabelId:<GUID>
 ```
 
 To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
