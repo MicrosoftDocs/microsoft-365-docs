@@ -111,9 +111,6 @@ Versioning is a feature of all document lists and libraries in SharePoint and On
   
 When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in October 2021. Currently rolling out to tenants, all versions of the file are retained in a single file in the Preservation Hold library, and only the most recent version of the file is searchable by eDiscovery tools. Before the change, versions were copied to the Preservation Hold library as separate files and all versions are searchable by eDiscovery tools.
 
-> [!NOTE]
-> This change of behavior for how versions are stored in the Preservation Hold library is rolling out now, and this note will be updated when the rollout is complete.
-
 Irrespective of how the versions are stored, if the retention settings are configured to delete at the end of the retention period:
 
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
