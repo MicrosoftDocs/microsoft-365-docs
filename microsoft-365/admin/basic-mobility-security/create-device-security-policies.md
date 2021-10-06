@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 description: "Use Basic Mobility and Security to create device policies that protect your organization information."
@@ -45,7 +46,7 @@ Before you can start, make sure you have activated and set up Basic Mobility and
 
 2. Select **Create a policy**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security policy settings":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security policy settings.":::
 
 3. On the **Policy settings** page, specify the requirements you want applied to mobile devices in your organization.
 
@@ -88,7 +89,7 @@ To help secure your organization information, you should block app access to Mic
 2. Select **Manage organization-wide device access settings**.
 3. To block unsupported devices, choose **Block** under **If a device isn't supported by Basic Mobility and Security for Microsoft 365**, and then select **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access option.":::
 
 ## Step 5: Choose security groups to be excluded from conditional access checks
 
@@ -98,7 +99,7 @@ If you want to exclude some people from conditional access checks on their mobil
 
 2. Select **Manage organization-wide device access settings**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security create a policy option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Basic Mobility and Security create a policy option.":::
 
 3. Select **Add** to add the security group that has users you want to exclude from having blocked access to Microsoft 365. When a user has been added to this list, they can access Microsoft 365 email when they are using an unsupported device.
 
@@ -108,7 +109,7 @@ If you want to exclude some people from conditional access checks on their mobil
 
 6. On the **Organization-wide device access settings** panel, choose **Save**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Basic Mobility and Security allow access option":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="Basic Mobility and Security allow access option.":::
 
 ## What is the impact of security policies on different device types?
 

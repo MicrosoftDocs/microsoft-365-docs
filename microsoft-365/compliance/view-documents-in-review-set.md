@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -48,9 +48,9 @@ The Text viewer provides a view of the extracted text of a file. It ignores any 
 - Search hit highlighting that will highlight terms within the document as well as the scrollbar
 - Diff view provides a comparison view that highlights textual differences when viewing Near Duplicate documents
 
-![Text view](../media/Reviewimage4.png)
+![Text view.](../media/Reviewimage4.png)
 
-![Diff view](../media/Reviewimage5.png)
+![Diff view.](../media/Reviewimage5.png)
 
 ## Annotate view
 
@@ -67,7 +67,7 @@ The Annotate view provides features that allow users to apply markup on a docume
 - Rotate – user can rotate document clockwise
 - Search – user can search within a document and navigate to the various hits within the document
 
-  ![Annotate view](../media/Reviewimage1.png)
+  ![Annotate view.](../media/Reviewimage1.png)
 
 ## Dashboard View
 

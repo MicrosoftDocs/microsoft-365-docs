@@ -8,28 +8,31 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "You must be an admin for a business subscription to get admin help or online or phone support in Microsoft 365 Business Premium."
+description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
 # Get support
 
-## Watch: Get help or support 
+::: moniker range="o365-worldwide"
+
+## Watch: Get help or support
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
-
-::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
 > You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
@@ -40,15 +43,14 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. (For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. For more information, see [Who has admin permissions in my business?](admin-center-overview.md#who-has-admin-permissions-in-my-business).
+2. On the bottom right side of the page, select **Help & support**.
+3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
+4. If the results don't help, at the bottom, select **Contact Support**.
+5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Contact support** pane.
 
-2. Select the **Need help?** button.
-
-3. In the **Need help?** pane, tell us what you need help with, and then press **Enter**.
-
-4. If the results don't help, select **Contact support**.
-
-5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
+    > [!NOTE]
+    > If you bought your subscription through a partner, you first see the contact information for that partner. Alternatively, select **New Microsoft service request** at the bottom of the pane.
 
 ## Phone support
 
@@ -70,6 +72,12 @@ Admins, have your account details ready when you call.
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
+
+## Small business support with Business Assist
+
+Get the most out of your subscription with expert advice from small business specialists.
+
+Business Assist for Microsoft 365 is designed for small businesses to give you and your employees around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. To learn more, see [Business Assist](../admin/misc/business-assist.md).
 
 ::: moniker-end
 
@@ -96,15 +104,10 @@ Assistance for billing and subscription management issues is available online or
 Here are some examples of billing and subscription management issues:
 
 - Signing up for a trial or purchasing a subscription
-
 - Converting from a trial subscription to a paid subscription
-
 - Understanding the bill
-
 - Renewing a subscription
-
 - Adding or removing licenses
-
 - Canceling a paid subscription
 
 ## Technical support
@@ -113,8 +116,8 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 | Support category | Examples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation and setup | Exchange Online  <ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation and setup</li></ul> |
-| Configuration | Service configuration issues  <ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
+| Installation and setup | Exchange Online<ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul><br /> SharePoint Online<ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul><br />Skype for Business Online<ul><li>Installation and creating contacts</li></ul><br />Microsoft 365 Apps for enterprise<ul><li>Installation and setup</li></ul> |
+| Configuration | Service configuration issues<ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
 
 > [!NOTE]
 > You can learn how to contact technical support here: [Contact support](#contact-support).
@@ -126,8 +129,8 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 | Severity level | Operations and support description | Examples |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sev A (Critical) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Widespread problems sending or receiving mail.</li><li>SharePoint site down.</li> <li>All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.</li></ul> |
-| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li> <li>Setting is impossible from EAC (Exchange admin center) but possible in Windows PowerShell.</li></ul> |
+| Sev A (Critical) | One or more services aren't accessible or are unusable. Production, operations, or deployment deadlines are severely affected, or there will be a severe impact on production or profitability. Multiple users or services are affected. | <ul><li>Widespread problems sending or receiving mail.</li><li>SharePoint site down.</li><li>All users can't send instant messages, join or schedule Skype for Business Meetings, or make Skype for Business calls.</li></ul> |
+| Sev B (High) | The service is usable but in an impaired fashion. The situation has moderate business impact and can be dealt with during business hours. A single user, customer, or service is partially affected. | <ul><li>Send button in Outlook is garbled.</li><li>Setting is impossible from EAC (Exchange admin center) but possible in Windows PowerShell.</li></ul> |
 | Sev C (Non-critical) | The situation has minimal business impact. The issue is important but does not have a significant current service or productivity impact for the customer. A single user is experiencing partial disruption, but an acceptable workaround exists. | <ul><li>How to set user password that never expires.</li> <li>User can't delete contact information in Exchange Online.</li></ul> |
 
 ## Technical support initial response times
@@ -136,7 +139,7 @@ Initial response time is based on the severity levels described above. 21Vianet 
 
 | Security level <sup>1</sup> | 21Vianet customer support team Initial response | Customer responsibility |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sev A <sup>2</sup>  (Critical) | Initial Response: 1 hour or less; Follow up: continues effort until problem resolution. | Provide solid business impact statement (see the severity A description and examples above); Allocate resource to ensure continues collaboration with 21Vianet customer support agent for the joint investigation and necessary communication; Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
+| Sev A <sup>2</sup>  (Critical) | Initial Response: 1 hour or less.<br />Follow up: continues effort until problem resolution. | Provide solid business impact statement (see the severity A description and examples above); Allocate resource to ensure continues collaboration with 21Vianet customer support agent for the joint investigation and necessary communication; Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 | Sev B (High) | Initial Response: 1 business day or less. | Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 | Sev C (Medium) | Initial Response: 3 business day or less. | Provide accurate contact information and ensure reliable communication throughout the service request lifecycle. |
 
@@ -157,7 +160,7 @@ Severity B/C: 9:00 ~24:00 (Beijing Time) a day, 365 days.
 
 ### Open an online request
 
-Save time by starting your service request online. In the Microsoft 365 admin center, choose **Support** \> **New service request**.
+Save time by starting your service request online. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Support** \> **New service request**.
 
 ### Call support
 
@@ -176,19 +179,14 @@ With Office 365 you can designate several types of administrators who serve diff
 The administrator is:
 
 - Responsible for service administration and account maintenance.
-
 - The primary contact that sets up and supports each service user.
-
 - Authorized to submit service requests to 21Vianet.
 
 The administrator's role is to:
 
 - Provide user account setup and configuration to allow users access to the services.
-
 - Address client connectivity, client software, and mobility installation issues.
-
 - Address service availability issues within the customer's organizational span of control.
-
 - Use self-service support resources to resolve support issues.
 
 The administrator is expected to provide initial assistance for the customer's users. However, if the administrator is unable to resolve issues with the help of self-service support resources, he or she should [Contact support](#contact-support).
@@ -198,17 +196,11 @@ The administrator is expected to provide initial assistance for the customer's u
 21Vianet's support role is to:
 
 - Troubleshoot and provide technical guidance for customer issues and escalations.
-
 - Gather and validate information related to specific service requests.
-
 - Provide issue coordination and resolution management.
-
 - Maintain communication with the administrators to help ensure that issues are addressed on an ongoing basis.
-
 - Provide assistance with licensing, invoicing, and subscription inquiries.
-
 - Provide assistance with purchasing and trial inquiries.
-
 - Continually gather customer feedback on how to improve the service through surveys.
 
 ## Feature availability
@@ -219,7 +211,7 @@ To view feature availability across Office 365 plans, see [Office 365 Service De
 
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Office 365 operated by 21Vianet.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 
@@ -242,15 +234,14 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 | Region | Phone number | Hours |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Germany | 0800&nbsp;589&nbsp;2330 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin</li><li>English: Mon-Fri 9-5 Berlin</li></ul>Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul>Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
-| All other markets within the European Economic Area | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>English: Mon-Fri 9-5 Berlin (UTC +1)</li></ul>Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul>Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
+| Germany | 0800&nbsp;589&nbsp;2330 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin</li><li>English: Mon-Fri 9-5 Berlin</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
+| All other markets within the European Economic Area | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>English: Mon-Fri 9-5 Berlin (UTC +1)</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
 
 ## Let our community help
 
 You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end
-
 
 ## Related content
 

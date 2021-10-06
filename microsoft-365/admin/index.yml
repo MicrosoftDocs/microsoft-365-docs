@@ -14,8 +14,9 @@ metadata:
   author: kwekua #Required; your GitHub user alias, with correct capitalization.
   ms.author: kwekua #Required; microsoft alias of author; optional team alias.
   ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
+  ms.collection: Adm_TOC
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -45,7 +46,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
       summary: Sign up and set up Microsoft 365.
-      url: setup/index.yml
+      url: /admin
     # Card
     - title: Migrate data
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
@@ -78,11 +79,11 @@ additionalContent:
         # Card
         - title: Users and groups
           summary: Manage passwords, add and remove users, set up and manage groups, manage guest access, and assign user licenses. 
-          url: add-users/index.yml
+          url: /admin
         # Card
         - title: Email and calendars
           summary: Manage email settings, distribution groups, and security settings, and set up shared mailboxes.
-          url: email/index.yml
+          url: /admin
         # Card
         - title: Domains
           summary: Learn about domains, set up and manage domains, and update DNS records.
@@ -90,7 +91,7 @@ additionalContent:
         # Card
         - title: Your data and service
           summary: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps.
-          url: manage/index.yml
+          url: /admin
         # Card
         - title: Subscriptions and billing
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
@@ -102,7 +103,7 @@ additionalContent:
         # Card
         - title: Work with customers
           summary: Share documents and use Teams to collaborate and meet.
-          url:  work-with-customers/index.yml
+          url:  /admin
         # Card
         - title: Troubleshoot
           summary: Access resources to help you troubleshoot and fix problems with your Office products or services.

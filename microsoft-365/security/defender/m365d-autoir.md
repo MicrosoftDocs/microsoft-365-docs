@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md), your security operations team receives an alert within the Microsoft 365 security center whenever a malicious or suspicious activity or artifact is detected. Given the seemingly never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
+If your organization is using [Microsoft 365 Defender](microsoft-365-defender.md), your security operations team receives an alert within the Microsoft 365 Defender portal whenever a malicious or suspicious activity or artifact is detected. Given the seemingly never-ending flow of threats that can come in, security teams often face the challenge of addressing the high volume of alerts. Fortunately, Microsoft 365 Defender includes automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively.
 
 This article provides an overview of AIR and includes links to next steps and additional resources.
 
@@ -97,6 +97,16 @@ In Microsoft 365 Defender, each automated investigation correlates signals acros
 
 To view investigations, go to the **Incidents** page. Select an incident, and then select the **Investigations** tab. To learn more, see [Details and results of an automated investigation](m365d-autoir-results.md).
 
+## Training for security analysts
+
+Use this learning module from Microsoft Learn to understand how Microsoft 365 Defender uses automated self-healing for incident investigation and response.
+
+|Training:|Automate self-healing with Microsoft 365 Defender|
+|---|---|
+|![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)| Microsoft 365 Defender uses AI to automate remediation for incidents, helping your security operations team address threats more efficiently and effectively. <p> 11 min - 5 Units |
+
+> [!div class="nextstepaction"]
+> [Start >](/learn/modules/defender-self-healing/)
 
 ## Next steps
 

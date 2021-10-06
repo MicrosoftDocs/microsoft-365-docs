@@ -8,13 +8,15 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- AdminTemplateSet
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -33,7 +35,7 @@ If a hacker gains access to a user's mailbox, they can auto-forward the user's e
 
 ## Try it!
 
-1. From the Microsoft 365 admin center, select **Exchange**, **mail flow**, and on the **rules** tab, select the plus sign and choose **create a new rule**.
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**, **mail flow**, and on the **rules** tab, select the plus sign and choose **create a new rule**.
 1. Select **More options**. Name your new rule.
 1. Then open the drop-down for **apply this rule if**, select **the sender**, and then **is external internal**.
 1. Select **Inside the organization**, and then **OK**.

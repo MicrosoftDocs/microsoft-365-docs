@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -19,6 +19,8 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- AdminTemplateSet
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -28,13 +30,21 @@ description: "Follow the steps in this solution to remove a former employee from
 
 # Overview: Remove a former employee and secure data
 
-A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365, the steps you should take to secure your data, and how to allow other employees to access the data.
-
-:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Overview steps for removing a former employee":::
+A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these user's can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
 
 ## Before you begin
 
 You need to be a global administrator to complete the steps in this solution.
+
+To complete the steps in this series, you use these Microsoft 365 capabilities and features.
+
+|Product or component|Capability or feature|
+|---|---|
+|Microsoft 365 admin center|Convert mailbox, forward email, revoke access, remove user |
+|Exchange admin center|Block user, block access to email, wipe device |
+|OneDrive and SharePoint |Give access to other users |
+|Outlook|Import pst files, add mailbox |
+|Active Directory|Remove users in hybrid environments |
 
 ## Solution: Remove a former employee
 

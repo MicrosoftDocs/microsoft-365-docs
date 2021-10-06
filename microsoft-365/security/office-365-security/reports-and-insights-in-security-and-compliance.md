@@ -2,13 +2,13 @@
 title: Smart reports, insights - Microsoft 365 Security & Compliance Center
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -36,7 +36,7 @@ If you are part of your organization's Microsoft for 365 for business security t
 
 Monitoring capabilities available in the Security & Compliance Center include smart reports and insights that enable your compliance and security admins to focus on high-priority issues, such as security attacks or increased suspicious activity. In a dashboard, smart reports and insights resemble the following image:
 
-![The Reports dashboard in the Security & Compliance Center](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
+![The Reports dashboard in the Security & Compliance Center.](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
 In addition to highlighting problem areas, smart reports and insights include recommendations and links to view and explore data and also take quick actions. For example, if your organization suddenly has a high number of email messages being marked as spam by end users, you might be advised to revisit your anti-spam policies to ensure the right level of protection is in place.
 

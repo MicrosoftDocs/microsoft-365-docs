@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -22,9 +22,6 @@ ms.custom: seo-marvel-apr2020
 # Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
 [Creating a custom sensitive information type with Exact Data Match (EDM) based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)  involves many steps.  You can use this wizard to create your schema and sensitive information type (SIT) pattern (rule package) files to help simplify the process.
-
-> [!NOTE]
-> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
 
 This wizard can be used instead of the:
 
@@ -45,7 +42,7 @@ steps in [Part 1: Set up EDM-based classification](create-custom-sensitive-infor
 
 2. Choose **Create EDM schema** to open the schema wizard configuration flyout.
 
-![EDM schema creation wizard configuration flyout](../media/edm-schema-wizard-1.png)
+![EDM schema creation wizard configuration flyout.](../media/edm-schema-wizard-1.png)
 
 3. Fill in an appropriate **Name** and **Description**.
 

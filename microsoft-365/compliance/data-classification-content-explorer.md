@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -24,7 +24,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
-![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
 
 ## Prerequisites
 
@@ -52,6 +52,9 @@ In order to get access to the content explorer tab, an account must be assigned 
 > [!IMPORTANT]
 > Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
+> [!IMPORTANT]
+> Only Global admins can manage or assign permissions to other users in the Compliance Center. For more details, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+> 
 ### Required permissions to access items in content explorer
 
 Access to content explorer is highly restricted because it lets you read the contents of scanned files.
@@ -59,7 +62,7 @@ Access to content explorer is highly restricted because it lets you read the con
 > [!IMPORTANT]
 > These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
 
-There are two roles that grant access to content explorer and it is granted using the [Microsoft Security & Compliance Center](https://protection.office.com/permissions):
+There are two roles that grant access to content explorer and it is granted using the [Compliance Center](https://compliance.microsoft.com/permissions):
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -69,7 +72,7 @@ The account you use to access content explorer must be in one or both of the rol
 
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
-A Global admin, Compliance admin, or Data admin can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
+A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
 ## Content explorer
 
@@ -103,14 +106,14 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 ### Export
 The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
 
-![data classification export control](../media/data_classification_export_control.png)
+![data classification export control.](../media/data_classification_export_control.png)
 
 
 ### Search
 
 When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
-![content explorer search tool](../media/data_classification_search_tool.png)
+![content explorer search tool.](../media/data_classification_search_tool.png)
 
 
 The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 

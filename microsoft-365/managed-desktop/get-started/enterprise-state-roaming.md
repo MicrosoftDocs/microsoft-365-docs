@@ -4,7 +4,7 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -16,6 +16,9 @@ ms.topic: article
 [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview) lets users securely synchronize user and application settings data to the cloud. This means they'll have the same experience no matter which Windows device they sign into. For example, if you replace one of their Microsoft Managed Desktop devices with a new one, it will look and behave exactly the same as the last one. Enterprise State Roaming is an optional feature for the Microsoft Managed Desktop service that you can configure for your users and isn't included or managed as part of Microsoft Managed Desktop.
 
 To enable Enterprise State Roaming, follow the steps in [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
+
+>[!NOTE]
+>If you enable Enterprise State Roaming, your preferred language list will overwrite the language selected during device setup. Although users can fix this easily, it could cause an inconsistent localization experience initially. Determine if Enterprise State Roaming is right for your users before setting up devices.
 
 ## Steps to get started with Microsoft Managed Desktop
 

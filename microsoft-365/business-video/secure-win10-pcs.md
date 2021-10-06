@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -30,7 +31,7 @@ description: "Learn how to set up Windows 10 protection policies with Microsoft 
 
 After you set up device protection in Microsoft 365 Business, follow these steps to protect your Windows 10 computers.
 
-1. In the Microsoft 365 admin center, choose  **Setup**.
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
 2. Under  **Secure your Windows computers** , select  **View**.
 3. Review the information on the  **Secure your Windows 10 computers**  page so that you understand the policies and how they affect your users.
 4. Select  **Get started**.

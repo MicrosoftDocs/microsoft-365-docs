@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 search.appverid:
 - BCS160
 - MET150
@@ -22,6 +22,7 @@ description: "Learn what a domain is and how you can buy a domain or use the def
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 

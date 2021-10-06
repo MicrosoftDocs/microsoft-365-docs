@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -36,7 +36,7 @@ If unsupported characters are found in your query, a warning message is displaye
 
 Here's an example of the warning message that's displayed after you click **Check query for typos** for the search query in the previous screenshot. Note the original query used smart quotes and lowercase Boolean operators.
   
-![A warning message is displayed with a suggested revision for your query](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![A warning message is displayed with a suggested revision for your query.](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## How to prevent unsupported characters in your search queries
 

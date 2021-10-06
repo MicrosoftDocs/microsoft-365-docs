@@ -1,15 +1,15 @@
 ---
 title: "Summary of Microsoft 365 for enterprise security for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -54,7 +54,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Rather than assign the global admin role to everyday user accounts, Contoso created three dedicated global administrator accounts with strong passwords. The accounts are protected by Azure AD Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM is only available with Microsoft 365 E5.*
 
-  Signing in with a global administrator account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
+  Signing in with a **Azure AD DC admin**, or **Global admin** account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
 
   Contoso security administrators assigned lesser admin roles to accounts that are appropriate to that IT worker's job function.
 
@@ -64,7 +64,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   MFA adds an additional layer of protection to the sign-in process. It requires users to acknowledge a phone call, text message, or app notification on their smart phone after correctly entering their password. With MFA, Azure AD user accounts are protected against unauthorized sign-in, even if an account password is compromised.
 
-   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all global administrator accounts.
+   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all **Azure AD DC admin**, or **Global admin** accounts.
    - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives.
 
 - Safer device and application access with Conditional Access policies

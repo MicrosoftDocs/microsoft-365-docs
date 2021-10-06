@@ -14,7 +14,7 @@ metadata:
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 06/08/2021 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -60,13 +60,15 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
       links:
+        - url: /sharepoint/corporate-communications-overview
+          text: Organizational communications 
         - url: /MicrosoftTeams/quick-start-meetings-live-events
           text: Meetings and live events in Microsoft Teams
         - url: solutions/deploy-voice.md
           text: Plan and deploy a Teams voice solution
         - url: /MicrosoftTeams/business-voice/whats-business-voice
           text: Microsoft 365 Business Voice
-        - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+        - url: /MicrosoftTeams/cloud-voice-landing-page
           text: Microsoft telephony solutions
     # Card
     - title: Collaborate with your team
@@ -189,7 +191,7 @@ additionalContent:
             - text: Microsoft 365 admin center
               url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: business/index.yml
+              url: admin/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
             - text: Microsoft 365 compliance
@@ -263,6 +265,19 @@ additionalContent:
             - text: More Project >
               url: /Project
         # Card
+        - title: Microsoft Viva
+          links:
+            - text: Microsoft Viva Topics
+              url: /microsoft-365/knowledge/
+            - text: Microsoft Viva Insights
+              url: /insights/viva-teams-app
+            - text: Microsoft Viva Connections
+              url: /sharepoint/viva-connections
+            - text: Microsoft Viva Learning
+              url: /microsoft-365/learning/
+            - text: More Microsoft Viva >
+              url: /microsoft-365/viva/
+        # Card
         - title: More apps and services
           links:
             - text: Microsoft Bookings
@@ -273,15 +288,9 @@ additionalContent:
               url: /stream/
             - text: Yammer
               url: /yammer/yammer-landing-page
-        # Card
-        - title: Skype for Business
-          links:
-            - text: IT Pro documentation
+            - text: Skype for Business
               url: /skypeforbusiness
-        # Card
-        - title: Office Online Server
-          links:
-            - text: Get started
+            - text: Office Online Server
               url: /officeonlineserver
     - title: Related guidance and resources
       items:

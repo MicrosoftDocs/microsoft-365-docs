@@ -1,17 +1,15 @@
 ---
 title: Create indicators for files
-ms.reviewer: 
+ms.reviewer:
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,11 +22,12 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 Prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. If you know a potentially malicious portable executable (PE) file, you can block it. This operation will prevent it from being read, written, or executed on devices in your organization.
 
@@ -46,7 +45,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Supported on devices with Windows 10, version 1703 or later, Windows Server 2016 and 2019.
+- Supported on devices with Windows 11, Windows 10 version 1703 or later, Windows Server 2016, 2019, and Windows Server 2022.
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
@@ -54,9 +53,9 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 ## Create an indicator for files from the settings page
 
-1. In the navigation pane, select **Settings > Indicators**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
-2. Select the **File hash** tab.
+2. Select the **File hashes** tab.
 
 3. Select **Add indicator**.
 
@@ -73,45 +72,94 @@ One of the options when taking [response actions on a file](respond-file-alert
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
->[!IMPORTANT]
->- Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
-> 
->- If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group. 
->   In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device’s group, then for a device, the policy in the device group will win. 
->   
->- If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
->
->   For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp)
+## Public Preview: Alerting on file blocking actions
 
-## Policy conflict handling  
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The current supported actions for file IOC are allow, audit and block and remediate.
+After choosing to block a file, you can choose whether triggering an alert is needed. In this way you will be able to control the number of alerts getting to your security operations teams and make sure only required alerts are raised.
+In Microsoft 365 Defender, go to Settings > Endpoints > Indicators > add new File hash
+Choose to Block and remediate the file
+Choose if to Generate an alert on the file block event and define the alerts settings:
+
+- The alert title
+- The alert severity
+- Category
+- Description
+- Recommended actions
+
+![Alert settings for file indicators.](images/indicators-generate-alert.png)
+
+> [!IMPORTANT]
+>
+> - Typically, file blocks are enforced and removed within a couple of minutes, but can take upwards of 30 minutes.
+> - If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure hash will be applied. An SHA-256 file hash IoC policy will win over an SHA-1 file hash IoC policy, which will win over an MD5 file hash IoC policy if the hash types define the same file. This is always true regardless of the device group.
+> - In all other cases, if conflicting file IoC policies with the same enforcement target are applied to all devices and to the device's group, then for a device, the policy in the device group will win.
+> - If the EnableFileHashComputation group policy is disabled, the blocking accuracy of the file IoC is reduced. However, enabling `EnableFileHashComputation` may impact device performance. For example, copying large files from a network share onto your local device, especially over a VPN connection, might have an effect on device performance.
+>
+> For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
+
+## Public Preview: Advanced hunting capabilities
+
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+You can query the response action activity in advance hunting. Below is a sample advance hunting query:
+
+```console
+search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEvents, DeviceNetworkEvents, DeviceImageLoadEvents, DeviceLogonEvents)
+Timestamp > ago(30d)
+| where AdditionalFields contains "EUS:Win32/CustomEnterpriseBlock!cl"
+```
+
+For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
+
+Below are additional thread names which can be used in the sample query from above:
+
+Files:
+
+- EUS:Win32/CustomEnterpriseBlock!cl
+- EUS:Win32/CustomEnterpriseNoAlertBlock!cl
+
+Certificates:
+
+- EUS:Win32/CustomCertEnterpriseBlock!cl
+
+The response action activity can also be viewable in the device timeline.
+
+## Policy conflict handling
 
 Cert and File IoC policy handling conflict will follow the below order:
 
 - If the file is not allowed by Windows Defender Application Control and AppLocker enforce mode policy/policies, then **Block**
-
 - Else if the file is allowed by the Microsoft Defender Antivirus exclusion, then **Allow**
-
 - Else if the file is blocked or warned by a block or warn file IoC, then **Block/Warn**
-
 - Else if the file is allowed by an allow file IoC policy, then **Allow**
-
-- Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**  
-
+- Else if the file is blocked by ASR rules, CFA, AV, SmartScreen, then **Block**
 - Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure (meaning longer) hash will be applied. For example, an SHA-256 file hash IoC policy will win over an MD5 file hash IoC policy if both hash types define the same file.
+
+> [!WARNING]
+> Policy conflict handling for files and certs differ from policy conflict handling for domains/URLs/IP addresses.
 
 Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
 
 ### Examples
 
-|Component |Component enforcement |File indicator Action |Result
-|--|--|--|--|
-|Attack surface reduction file path exclusion |Allow |Block |Block
-|Attack surface reduction rule |Block |Allow |Allow
-|Windows Defender Application Control |Allow |Block |Allow |
-|Windows Defender Application Control |Block |Allow |Block
-|Microsoft Defender Antivirus exclusion |Allow |Block |Allow
+<br>
+
+****
+
+|Component|Component enforcement|File indicator Action|Result|
+|---|---|---|---|
+|Attack surface reduction file path exclusion|Allow|Block|Block|
+|Attack surface reduction rule|Block|Allow|Allow|
+|Windows Defender Application Control|Allow|Block|Allow|
+|Windows Defender Application Control|Block|Allow|Block|
+|Microsoft Defender Antivirus exclusion|Allow|Block|Allow|
+|
 
 ## See also
 

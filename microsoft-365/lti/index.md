@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
-localization_priority: None
+ms.localizationpriority: null
 description: "Learn about Learning Tools Interoperability (LTI) Office apps in M365, and how they will help educators when integrating Office apps into their Learning Management System (LMS)."
 ---
 
@@ -58,7 +58,7 @@ The Microsoft OneDrive LTI App allows you to:
 - Integrate Office 365 files with your course modules.
 - Use your Microsoft account for single sign-on with your LMS.
 
-For configuration steps, see [Use Microsoft OneDrive LTI with Canvas](use-onedrive-with-lms.md).
+For configuration steps, see [Integrate Microsoft OneDrive LTI with Canvas](onedrive-lti.md).
 
 ## Teams LTI apps
 

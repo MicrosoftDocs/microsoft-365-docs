@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom: 
   - seo-marvel-apr2020

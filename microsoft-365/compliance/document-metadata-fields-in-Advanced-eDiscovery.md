@@ -5,16 +5,16 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance 
-search.appverid: 
+ms.localizationpriority: medium
+ms.collection: M365-security-compliance
+search.appverid:
 - MOE150
 - MET150
-ms.assetid: 
+ms.assetid:
 
 description: "This article defines the metadata fields for documents in a review set in a case in Advanced eDiscovery in Microsoft 365."
 ---
@@ -34,31 +34,35 @@ The following table lists the metadata fields for documents in a review set in a
 > [!NOTE]
 > The **Keywords** field in [review set search](./review-set-search.md) uses Keyword Query Language (KQL). The fields listed in the **Searchable field name** column can be used in the **Keywords** field in a review set search to form complex queries without you having to use the query builder. For more information about KQL, see [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-|**Field name** and **Display field name**|**Searchable field name**|**Exported field name**|**Description**|
-|:-----|:-----|:-----|:-----|
+<br>
+
+****
+
+|Field name and Display field name|Searchable field name|Exported field name|Description|
+|---|---|---|---|
 |Attachment Content Id|AttachmentContentId||Attachment content Id of the item.|
 |Attorney client privilege score|AttorneyClientPrivilegeScore||Attorney-client privilege model content score.|
 |Author|Author|Doc_authors|Author from the document metadata.|
-|BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress>**.|
-|CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress>**.|
+|BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress\>**.|
+|CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress\>**.|
 |Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
-|Conversation Body|Conversation Body||Conversation body of the item.|
-|Conversation Topic|Conversation Topic||Conversation topic of the item.|
-|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message.|
+|Conversation Body|ConversationBody||Conversation body of the item.|
+|Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Conversation index from the message.|
+|Conversation Name||ConversationName|Name of the channel in Teams. The format of the name depends on the type of channel: <br>Teams channel chats and private channel chats: \<Name of team, name of channel\> <br>Teams 1:1 and group chats: Display name and email address of all chat participants<br>Yammer community: Community name + first 120 chars of a post<br>Yammer private: Sender name and email address + first 120 chars of a message|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
+|Conversation Topic|ConversationTopic||Conversation topic of the item.|
+|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br> Teams 1:1 and group chats and all Yammer conversations: **Group** for<br>Teams channels and private channels: **Channel**|
+|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the Teams chat transcript includes an edited message
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
-|Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
-|Date|Date|Date|Date is a computed field that depends on the file type.<br /><br />Email: Sent date<br />Email attachments: Last modified date of the document;if not available, the parent's Sent date<br />Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br />SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br />Non-Office 365 documents: Last modified date<br />Meetings: Meeting start date<br />VoiceMail: Sent date<br />IM: Sent date|
-|Other paths|Dedupedcompoundpath|Deduped_compound_path|List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash).|
-|Other custodians|DedupedCustodians|Deduped_custodians|List of custodians of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
-|Other file IDs|DedupedFileIds|Deduped_file_IDs|List of file IDs of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
+|Date|Date|Date|Date is a computed field that depends on the file type.<p>Email: Sent date<br>Email attachments: Last modified date of the document;if not available, the parent's Sent date<br>Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br>SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br>Non-Office 365 documents: Last modified date<br>Meetings: Meeting start date<br>VoiceMail: Sent date<br>IM: Sent date<br>Teams: Sent date|
 |Document comments|DocComments|Doc_comments|Comments from the document metadata.|
 |Document company||Doc_company|Company from the document metadata.|
+|Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |DocIndex*|||The index in the family. **-1** or **0** means it is the root.|
 |Document keywords||Doc_keywords|Keywords from the document metadata.|
 |Document modified by||Doc_modified_by|Last modified date by from document metadata.|
@@ -85,15 +89,15 @@ The following table lists the metadata fields for documents in a review set in a
 |||Extracted_text_path|The path to the extracted text file in the export.|
 |ExtractedTextLength*||Extracted_text_length|Number of characters in the extracted text.|
 |FamilyDuplicateSet*||Family_duplicate_set|Numeric identifier for families that are exact duplicates of each other (same content and all the same attachments).|
-|Family ID|FamilyId|Family_ID|Groups together all items for email. This includes the message and all attachments and extracted items.|
+|Family ID|FamilyId|Family_ID|Groups together attachments and extracted items from email and chats with its parent item. This includes the chat or email and all attachments and extracted items.|
 |Family Size||Family_size|Number of documents in the family.|
-|File class|FileClass|File_class|For content from SharePoint and OneDrive: **Document**; for content from Exchange: **Email** or **Attachment**.|
+|File class|FileClass|File_class|For content from SharePoint and OneDrive: **Document**. <br>For content from Exchange: **Email** or **Attachment**. <br>For content from Teams or Yammer: **Conversations**.|
 |File ID|FileId|File_ID|Document identifier unique within the case.|
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
-|Group Id|Group Id|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
-|Has attachment|HasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
+|Group Id|GroupId|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
+|Has attachment|EmailHasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
 |Immutable ID||Immutable_ID|This Id is used to uniquely identify a document within a review set. This field can't be used in a review set search and the Id can't be used to access a document in its native location.|
@@ -101,21 +105,21 @@ The following table lists the metadata fields for documents in a review set in a
 |In Reply To Id||In_reply_to_ID|In reply to Id from the message.|
 |InputFileExtension||Original_file_extension|The original file extension of the file.|
 |InputFileID||Input_file_ID|The file ID of the top level item in the review set. For an attachment, this ID will be the ID of the parent. This can be used to group families together.|
-|Is modern attachment| IsModernAttachment|  |This file is a modern attachment or linked file.|
-|Is from document version | IsFromDocumentVersion |  |Current document is from a different version of another document.|
-|Is email attachment | IsEmailAttachment|  |This item is from an email attachment that shows up as an attached item to the message.|
-|Is inline attachment| IsInlineAttachment|  |This was attached inline and shows up in the body of the message.|
+|Is modern attachment|IsModernAttachment||This file is a modern attachment or linked file.|
+|Is from document version|IsFromDocumentVersion||Current document is from a different version of another document.|
+|Is email attachment|IsEmailAttachment||This item is from an email attachment that shows up as an attached item to the message.|
+|Is inline attachment|IsInlineAttachment||This was attached inline and shows up in the body of the message.|
 |Is Representative|IsRepresentative|Is_representative|One document in every set of exact duplicates is marked as representative.|
 |Item class|ItemClass|Item_class|Item class supplied by exchange server; for example, **IPM.Note**|
 |Last modified date|LastModifiedDate|Doc_date_modified|Last modified date from document metadata.|
 |Load ID|LoadId|Load_ID|The Id of the load set in which the item was added to a review set.|
-|Location|Location|Location|String that indicates the type of location that documents were sourced from.<br /><br />**Imported Data** - Non-Office 365 data<br />**Teams** - Microsoft Teams<br />**Exchange** - Exchange mailboxes<br />**SharePoint** - SharePoint sites<br />**OneDrive** - OneDrive accounts|
+|Location|Location|Location|String that indicates the type of location that documents were sourced from.<p>**Imported Data** - Non-Office 365 data<br>**Teams** - Microsoft Teams<br>**Exchange** - Exchange mailboxes<br>**SharePoint** - SharePoint sites<br>**OneDrive** - OneDrive accounts|
 |Location name|LocationName|Location_name|String that identifies the source of the item. For exchange, this will be the SMTP address of the mailbox; for SharePoint and OneDrive, the URL for the site collection.|
 |||Marked_as_pivot|This file is the pivot in a near duplicate set.|
 |Marked as representative|MarkAsRepresentative||One document from each set of exact duplicates is marked as representatives.|
 |Meeting End Date|MeetingEndDate|Meeting_end_date|Meeting end date for meetings.|
 |Meeting Start Date|MeetingStartDate|Meeting_start_date|Meeting start date for meetings.|
-|Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<br /><br />contacts <br />docs <br />email <br />externaldata <br />faxes <br />im <br />journals <br />meetings <br />microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br />notes <br />posts <br />rssfeeds <br />tasks <br />voicemail**| 
+|Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<p>contacts <br>docs <br>email <br>externaldata <br>faxes <br>im <br>journals <br>meetings <br>microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br>notes <br>posts <br>rssfeeds <br>tasks <br>voicemail**|
 |Modern Attachment Parent Id||ModernAttachment_ParentId|The Immutable Id of the document's parent.|
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
@@ -129,6 +133,9 @@ The following table lists the metadata fields for documents in a review set in a
 |O365 date created||O365_date_created|Created date from SharePoint.|
 |O365 date modified||O365_date_modified|Last modified date from SharePoint.|
 |O365 modified by||O365_modified_by|Modified by from SharePoint.|
+|Other custodians|DedupedCustodians|Deduped_custodians|List of custodians of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
+|Other file IDs|DedupedFileIds|Deduped_file_IDs|List of file IDs of documents that are exact duplicates (for email, based on content; for documents, based on hash).|
+|Other paths|Dedupedcompoundpath|Deduped_compound_path|List of compound paths of documents that are exact duplicates (email: based on content, documents: based on hash).|
 |Parent ID|ParentId|Parent_ID|Id of the item's parent.|
 |ParentNode||Parent_node|The closest preceding email message in the email thread.|
 |Participant domains|ParticipantDomains|Email_participant_domains|List of all domains of participants of a message.|
@@ -151,7 +158,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Sender|Sender|Email_sender|Sender (From) field for message types. Format is **DisplayName \<SmtpAddress>**.|
 |Sender/Author|SenderAuthor||Calculated field comprised of the sender or author of the item.|
 |Sender domain|SenderDomain|Email_sender_domain|Domain of the sender.|
-|Sent|Sent|Email_date_sent|Sent date of the message.|
+|Sent|Sent|Email_date_sent|Sent date of the message.<br>Chats: Beginning date from the transcript|
 |Set Order: Inclusive First|SetOrderInclusivesFirst|Set_order_inclusives_first|Sorting field - email and attachments: counter-chronological; documents: pivot first then by descending similarity score.|
 |Set ID||Set_ID|Documents of similar content (ND_set) or email within the same email thread (Email_set) share the same Set_ID.|
 |SimilarityPercent||Similarity_percent|Indicates how similar a document is to the pivot of the near duplicate set.|
@@ -159,8 +166,9 @@ The following table lists the metadata fields for documents in a review set in a
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle||Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
+|Teams Channel Name|TeamsChannel|Channel_Name|Name of the channel in Microsoft Teams.|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
-|Title|Title|Doc_title|Title from the document metadata.|
+|Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
 |Unique in email set|UniqueInEmailSet||**False** if there's a duplicate of the attachment in its email set.|
 |Version Group ID||Version_Group_Id|Groups together the different versions of the same document.|

@@ -2,7 +2,7 @@
 title: Privileged access management in Microsoft 365
 description: Learn how to configure insider risk capabilities across Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -26,7 +26,7 @@ Having standing access by some users to sensitive information or critical networ
 
 Use the following steps to configure privileged access management for your organization:
 
-![Insider risk solution privileged access management steps](../media/ir-solution-pam-steps.png)
+![Insider risk solution privileged access management steps.](../media/ir-solution-pam-steps.png)
 
 1. Learn about [privileged access management](privileged-access-management-overview.md) in Microsoft 365
 2. Create an [approver's group](privileged-access-management-configuration.md#step-1-create-an-approvers-group)

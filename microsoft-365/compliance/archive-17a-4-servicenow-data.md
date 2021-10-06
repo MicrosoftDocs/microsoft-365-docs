@@ -9,12 +9,12 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Learn how to set up and use a 17a-4 ServiceNow DataParser connector to import and archive ServiceNow data in Microsoft 365."
 ---
 
-# Set up a connector to archive ServiceNow data (preview)
+# Set up a connector to archive data from ServiceNow
 
 Use the [ServiceNow DataParser](https://www.17a-4.com/dataparser/) from 17a-4 LLC to import and archive data from ServiceNow to user mailboxes in your Microsoft 365 organization. The DataParser includes a ServiceNow connector that's configured to capture items from a third-party data source and import those items to Microsoft 365. The ServiceNow DataParser connector converts ServiceNow data to an email message format and then imports those items to user mailboxes in Microsoft 365.
 
@@ -24,7 +24,7 @@ After ServiceNow data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a data connector to archive ServiceNow data in Microsoft 365.
 
-![Archiving workflow for ServiceNow data from 17a-4](../media/ServiceNowDataParserConnectorWorkflow.png)
+![Archiving workflow for ServiceNow data from 17a-4.](../media/ServiceNowDataParserConnectorWorkflow.png)
 
 1. Your organization works with 17a-4 to set up and configure the ServiceNow DataParser.
 
@@ -39,6 +39,8 @@ The following overview explains the process of using a data connector to archive
 - Create a DataParser account for Microsoft connectors. To do this, contact [17a-4 LLC](https://www.17a-4.com/contact/). You need to sign into this account when you create the connector in Step 1.
 
 - The user who creates the ServiceNow DataParser connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to a role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+
+- This data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Set up a ServiceNow DataParser connector
 

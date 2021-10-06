@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -35,7 +35,7 @@ ms.technology: m365d
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also find queries shared publicly on GitHub. These queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
-![Image of shared queries](../../media/advanced-hunting-shared-queries.png)
+![Image of shared queries.](../../media/advanced-hunting-shared-queries.png)
 
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization. 
@@ -46,7 +46,7 @@ You can save a new or existing query so that it is only accessible to you or sha
     
 3. Enter a name for the query. 
 
-   ![Image of saving a query](../../media/advanced-hunting-save-query.png)
+   ![Image of saving a query.](../../media/advanced-hunting-save-query.png)
 
 4. Select the folder where you'd like to save the query.
     - **Shared queries** — shared to all users your organization
@@ -57,7 +57,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 ## Delete or rename a query
 1. Right-click on a query you want to rename or delete.
 
-    ![Image of delete query](../../media/advanced_hunting_delete_rename.png)
+    ![Image of delete query.](../../media/advanced_hunting_delete_rename.png)
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 

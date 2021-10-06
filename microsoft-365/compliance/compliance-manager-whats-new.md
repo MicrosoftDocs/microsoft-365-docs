@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -19,6 +19,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 # What's new in Microsoft Compliance Manager
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+## July 2021
+
+We added the capability to create assessments for products other than Microsoft 365, based on new universal versions of our templates. To learn more, start with [Working with assessment templates](compliance-manager-templates.md).
 
 ## May 2021
 

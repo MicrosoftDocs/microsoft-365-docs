@@ -7,7 +7,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -16,7 +16,7 @@ search.appverid:
 description: "Release notes for support for double byte character sets."
 ---
 
-# Support for double byte character set release notes (preview)
+# Support for double byte character set release notes
 
  Microsoft 365 Information Protection now supports double byte character set languages for:
 

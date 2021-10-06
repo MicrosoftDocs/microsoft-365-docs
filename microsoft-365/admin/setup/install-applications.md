@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: landing-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -21,6 +21,7 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 description: "Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices."
 ---
 

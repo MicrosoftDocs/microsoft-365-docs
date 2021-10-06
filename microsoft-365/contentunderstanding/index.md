@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn how to find resources for Microsoft SharePoint Syntex.
 ---
 
@@ -34,6 +34,9 @@ The resources on this page are designed to get you started with learning about a
 ## Get started
 
 The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
+
+> [!NOTE]
+> You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|

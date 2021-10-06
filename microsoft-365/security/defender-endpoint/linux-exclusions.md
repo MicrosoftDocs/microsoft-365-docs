@@ -2,18 +2,16 @@
 title: Configure and validate exclusions for Microsoft Defender for Endpoint on Linux
 description: Provide and validate exclusions for Microsoft Defender for Endpoint on Linux. Exclusions can be set for files, folders, and processes.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, exclusions, scans, antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
@@ -28,7 +26,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
@@ -46,22 +44,22 @@ Exclusions can be useful to avoid incorrect detections on files or software that
 
 The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
 
-Exclusion | Definition | Examples
+Exclusion|Definition|Examples
 ---|---|---
-File extension | All files with the extension, anywhere on the device | `.test`
-File | A specific file identified by the full path | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
-Folder | All files under the specified folder (recursively) | `/var/log/`<br/>`/var/*/`
-Process | A specific process (specified either by the full path or file name) and all files opened by it | `/bin/cat`<br/>`cat`<br/>`c?t`
+File extension|All files with the extension, anywhere on the device|`.test`
+File|A specific file identified by the full path|`/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Folder|All files under the specified folder (recursively)|`/var/log/`<br/>`/var/*/`
+Process|A specific process (specified either by the full path or file name) and all files opened by it|`/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > The paths above must be hard links, not symbolic links, in order to be successfully excluded. You can check if a path is a symbolic link by running `file <path-name>`.
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard | Description | Example | Matches | Does not match
+Wildcard|Description|Example|Matches|Does not match
 ---|---|---|---|---
-\* |	Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
-? | Matches any single character | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
+\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/\*/\*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
+?|Matches any single character|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
 
 ## How to configure the list of exclusions
 
@@ -87,6 +85,7 @@ Examples:
     ```bash
     mdatp exclusion extension add --name .txt
     ```
+
     ```Output
     Extension exclusion configured successfully
     ```
@@ -96,6 +95,7 @@ Examples:
     ```bash
     mdatp exclusion file add --path /var/log/dummy.log
     ```
+
     ```Output
     File exclusion configured successfully
     ```
@@ -105,6 +105,18 @@ Examples:
     ```bash
     mdatp exclusion folder add --path /var/log/
     ```
+
+    ```Output
+    Folder exclusion configured successfully
+    ```
+
+- Add an exclusion for a second folder:
+
+    ```bash
+    mdatp exclusion folder add --path /var/log/
+    mdatp exclusion folder add --path /other/folder
+    ```
+
     ```Output
     Folder exclusion configured successfully
     ```
@@ -117,10 +129,11 @@ Examples:
 
     > [!NOTE]
     > This will only exclude paths one level below */var/*, but not folders which are more deeply nested; for example, */var/this-subfolder/but-not-this-subfolder*.
-    
+
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+
     > [!NOTE]
     > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
 
@@ -133,7 +146,19 @@ Examples:
     ```bash
     mdatp exclusion process add --name cat
     ```
-    ```Output    
+
+    ```Output
+    Process exclusion configured successfully
+    ```
+
+- Add an exclusion for a second process:
+
+    ```bash
+    mdatp exclusion process add --name cat
+    mdatp exclusion process add --name dog
+    ```
+
+    ```Output
     Process exclusion configured successfully
     ```
 

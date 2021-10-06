@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -46,7 +46,7 @@ After you run an eDiscovery search, the total number and size of partially index
 
 To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example, there are 1,629,904 (146.46 GB) fully indexed items and 10,025 (10.27 GB) partially indexed items.
   
-![Example of search statistics showing partially indexed items](../media/PartiallyIndexedItemsTest.png)
+![Example of search statistics showing partially indexed items.](../media/PartiallyIndexedItemsTest.png)
   
 You can determine the percentage of partially indexed items by using the following calculations.
   
@@ -68,9 +68,9 @@ So in the previous example, 7% of the total size of mailbox items are from parti
 
 ## Working with partially indexed items
 
-In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
+In cases when you need to examine partially indexed items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
   
-![Choose the second or third option to export partially indexed items](../media/PartiallyIndexedItemsExportOptions.png)
+![Choose the second or third option to export partially indexed items.](../media/PartiallyIndexedItemsExportOptions.png)
   
 When you export eDiscovery search results or a search report using one of these options, the export includes a report named Unindexed Items.csv. This report includes most of the same information as the ResultsLog.csv file; however, the Unindexed Items.csv file also includes two fields related to partially indexed items: **Error Tags** and **Error Properties**. These fields contain information about the indexing error for each partially indexed item. Using the information in these two fields can help you determine whether or not the indexing error for a particular impacts your investigation. If it does, you can perform a targeted search and retrieve and export specific email messages and SharePoint or OneDrive documents so that you can examine them to determine if they're relevant to your investigation. For step-by-step instructions, see [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 
@@ -118,7 +118,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -169,7 +169,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
 Here's an example fo the output returned by the script.
   
-![Example of output from script that generates a report on your organization's exposure to partially indexed email items](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
 > Note the following:

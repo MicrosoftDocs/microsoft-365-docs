@@ -1,6 +1,6 @@
 ---
 title: Custom roles for role-based access control
-description: Learn how to manage custom roles in Microsoft 365 security center
+description: Learn how to manage custom roles in the Microsoft 365 Defender portal
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC, roles-based access, custom roles-based access, roles-based auth, RBAC in MDO, roles, rolegroups, permissions inheritance, fine-grained permissions
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -39,9 +39,9 @@ Access to Microsoft 365 Defender can be managed collectively by using [Global ro
 
 If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.  
 
-For example, a Custom role created through Microsoft Defender for Endpoint would allow access to the relevant product data, including Endpoint data within the Microsoft 365 security center. Similarly, a Custom role created through Microsoft Defender for Office 365 would allow access to the relevant product data, including Email & collaboration data within the Microsoft 365 security center.
+For example, a Custom role created through Microsoft Defender for Endpoint would allow access to the relevant product data, including Endpoint data within the Microsoft 365 Defender portal. Similarly, a Custom role created through Microsoft Defender for Office 365 would allow access to the relevant product data, including Email & collaboration data within the Microsoft 365 Defender portal.
 
-Users with existing Custom roles may access data in the Microsoft 365 security center according to their existing workload permissions with no additional configuration required.
+Users with existing Custom roles may access data in the Microsoft 365 Defender portal according to their existing workload permissions with no additional configuration required.
 
 ## Create and manage custom roles
 Custom roles and permissions can be created and individually managed through each of the following security portals: 
@@ -53,15 +53,15 @@ Custom roles and permissions can be created and individually managed through eac
 Each custom role created through an individual portal allows access to the data of the relevant product portal. For example, a custom role created through Microsoft Defender for Endpoint will only allow access to Defender for Endpoint data.
 
 > [!TIP]
-> Permissions and roles can also be accessed through the Microsoft 365 security center by selecting Permissions & roles from the navigation pane. Access to Microsoft Cloud App Security (MCAS) is managed through the MCAS portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Cloud App Security](/cloud-app-security/manage-admins)
+> Permissions and roles can also be accessed through the Microsoft 365 Defender portal by selecting Permissions & roles from the navigation pane. Access to Microsoft Cloud App Security (MCAS) is managed through the MCAS portal and controls access to Microsoft Defender for Identity as well.  See [Microsoft Cloud App Security](/cloud-app-security/manage-admins)
 
 > [!NOTE]
-> Custom roles created in Microsoft Cloud App Security have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Cloud App Security roles are not able to access Microsoft Cloud App Security data through the Microsoft 365 security center.
+> Custom roles created in Microsoft Cloud App Security have access to Microsoft Defender for Identity data as well. Users with User group admin, or App/instance admin Microsoft Cloud App Security roles are not able to access Microsoft Cloud App Security data through the Microsoft 365 Defender portal.
 
-## Manage permissions and roles in the Microsoft 365 security center
-Permissions and roles can also be managed in the Microsoft 365 security center:
+## Manage permissions and roles in the Microsoft 365 Defender portal
+Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
-1. Sign in to the Microsoft 365 security center at security.microsoft.com.
+1. Sign in to the Microsoft 365 Defender portal at security.microsoft.com.
 2. In the navigation pane, select **Permissions & roles**.
 3. Under the **Permissions** header, select **Roles**.
 

@@ -11,13 +11,14 @@ ms.topic: article
 f1_keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices

@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -55,19 +55,19 @@ All DLP reports can show data from the most recent four-month time period. The m
   
 You can find these reports in the Security &amp; Compliance Center \> **Reports** \> **Dashboard**.
   
-![DLP policy matches report](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## View the justification submitted by a user for an override
 
 If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.
   
-![Justification field in details of the DLP false positive and override report](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Justification field in details of the DLP false positive and override report.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## Take action on insights and recommendations
 
 Reports can show insights and recommendations where you can click the red warning icon to see details about potential issues and take possible remedial action.
   
-![Clicking an insights icon to see details and actions to take](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Clicking an insights icon to see details and actions to take.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## Permissions for DLP reports
 

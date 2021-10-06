@@ -9,7 +9,7 @@ audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
@@ -56,7 +56,7 @@ Please see the onboarding user guide for more information or contact our team at
 
 **Q: Can Test Base support our automated tests?**
 
-Yes, Test Base supports automated tests however, we do not support manual tests at this time due to service capabilities.
+**A:** Yes, Test Base supports automated tests, however, we do not support manual tests at this time due to service capabilities.
 
 **Q: What languages and frameworks of automated tests do you support?**
 
@@ -74,11 +74,11 @@ You will also need to provide (upload) the dependent binaries of the required fr
 
 For Out-of-box (OOB) tests, you can specify whether a reboot is needed for the _Install script._
 
-![Reboot picture](Media/reboot.png)
+![Reboot picture.](Media/reboot.png)
 
 While for functional tests, you can specify whether a reboot is required for each script that is added.
 
-![How to select functional tests](Media/functionalreboot.png)
+![How to select functional tests.](Media/functionalreboot.png)
 
 **Q: What Windows versions do you support?**
 

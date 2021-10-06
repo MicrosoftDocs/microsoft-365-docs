@@ -11,13 +11,14 @@ ms.topic: article
 f1_keywords:
 - 'MACBillingBillsPaymentsBillingProfiles'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn how billing profiles support invoices."
 ms.date: 04/02/2021 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -44,4 +44,4 @@ When you sign up for Microsoft 365 Business Premium, you get all the same produc
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated hackers. 
 
-For full details, see [Microsoft 365 Business content](../business/index.yml).
+For full details, see [Microsoft 365 Business content](../admin/index.yml).

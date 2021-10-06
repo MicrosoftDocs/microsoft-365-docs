@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Use the Content search eDiscovery tool in the Microsoft 365 compliance center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 ---
 
@@ -36,8 +36,6 @@ The first step is to starting using the Content search tool to choose content lo
 - [View keyword statistics](view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary
 
 - [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Microsoft 365
-
-- [Bulk edit](bulk-edit-content-searches.md) the query and content locations for multiple searches
 
 - [Retry a Content search](retry-failed-content-search.md) to resolve a content location error
 
@@ -69,7 +67,7 @@ Content search is easy to use, but it's also a powerful tool. Behind-the-scenes,
 
 ## Use scripts for advanced scenarios
 
-Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and fast to use PowerShell commands in the Security & Compliance Center. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
+Sometimes you have to perform more advanced, complex, and repetitive content search tasks. In these cases, it's easier and faster to use commands in Security & Compliance Center PowerShell. To help make this easier, we've created a number of Security & Compliance Center PowerShell scripts to help you complete complex content search-related tasks.
 
 - [Search specific mailbox and site folders](use-content-search-for-targeted-collections.md) (called a  *targeted collection) when you're confident that items responsive to a case are located in that folder
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -25,7 +25,7 @@ With hybrid workers, you need to support a growing number of personal devices. E
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
-![The components of endpoint management for Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![The components of endpoint management for Microsoft 365.](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## Microsoft Intune
 
@@ -88,6 +88,6 @@ You are using the suite of Endpoint Manager features and capabilities to manage 
 
 ## Next step
 
-[![Step 5: Deploy remote worker productivity apps and services](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![Step 5: Deploy remote worker productivity apps and services.](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 Continue with [Step 5](empower-people-to-work-remotely-teams-productivity-apps.md) to get your hybrid workers using Microsoft 365 productivity apps such as Microsoft Teams.

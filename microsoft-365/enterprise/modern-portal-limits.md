@@ -7,7 +7,7 @@ ms.date: 10/9/2019
 audience: Admin
 ms.topic: interactive-tutorial
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_Enterprise
 - SPO_Content
@@ -18,7 +18,7 @@ ms.custom:
  - seo-marvel-apr2020
 search.appverid:
 - MET150
-description: Learn about performance recommendations for modern sites in SharePoint Online, such as limiting calls to Sharepoint and external endpoints.
+description: Learn about performance recommendations for modern sites in SharePoint Online, such as limiting calls to SharePoint and external endpoints.
 ---
 
 # SharePoint Online modern portal site limits

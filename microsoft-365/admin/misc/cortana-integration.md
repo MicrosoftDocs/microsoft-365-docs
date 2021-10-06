@@ -8,11 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: 
+- AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -167,7 +170,7 @@ Here are the two ways to think of how Cortana works in your enterprise:
 
 Turn off Cortana access to your organization's Microsoft hosted data
 
-1. In the Microsoft 365 admin center, select **Settings** > **Org Settings** and select **Cortana**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Settings** > **Org Settings** and select **Cortana**.
 
 2. Unselect the checkbox for **Allow Cortana in Windows 10 (version 1909 and earlier), and the Cortana app on iOS and Android, to access Microsoft-hosted data on behalf of people in your organization** to disable Cortana connected experiences.
 

@@ -4,7 +4,7 @@ description:  This article lists the device specifications used in Microsoft Man
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
@@ -12,7 +12,11 @@ ms.topic: article
 
 # Microsoft Managed Desktop product lifecycle
 
-Microsoft Managed Desktop benefits users assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+> [!NOTE]
+> As of September 18, 2021, this product lifecycle for Microsoft Managed Desktop will no longer apply. None of the requirements listed here will apply to devices in the service. Only the [hardware requirements](device-requirements.md) will be relevant. 
+
+
+Microsoft Managed Desktop benefits users by assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site.
  
 This article details the lifecycle of devices as they are added and removed from the approved catalog. 
 
@@ -56,7 +60,7 @@ This table shows example dates for theoretical *devices*:
 
 The product lifecycle starts when a manufacturer publicly releases the product:
 
-![lifecycle timeline showing release and evaluation period](../../media/non-dark3-edits.PNG)
+![lifecycle timeline showing release and evaluation period.](../../media/non-dark3-edits.PNG)
 
 During this stage, the Microsoft Managed Desktop engineering team does their evaluation and certification of a product. The team evaluates things like reliability and performance with Windows, compliance with a hardware baseline, market sentiment, and inventory and channel readiness, among other things. This process typically takes approximately six weeks.
   
@@ -69,7 +73,7 @@ At the end of this phase, Microsoft Managed Desktop adds the product to the [app
 
 This period is the core of product availability:
 
-![lifecycle timeline showing primary availability](../../media/non-dark4-edits.PNG)
+![lifecycle timeline showing primary availability.](../../media/non-dark4-edits.PNG)
 
 Any device enrolled during this period receives the full three years of support from Microsoft Managed Desktop (as shown by the blue timeline). This period lasts until an end date set to 24 months from the general availability date.
 
@@ -82,7 +86,7 @@ The product grace period is a three-year period following primary availability. 
 If you've recently bought approved devices prior to enrolling with Microsoft Managed Desktop, you can still enroll them, but you won't receive a full three years of management. Instead, they'll fall out of compliance on the retirement date, regardless of when they were enrolled. Behind the scenes, Microsoft Managed Desktop will treat these devices as if they were enrolled on the last day of primary availability. In this illustration, you can see this scenario by noting that both the blue and green device end on the same day, despite their one-year difference in enrollment:
 
 
-![lifecycle timeline showing grace period](../../media/non-dark2-edits.PNG)
+![lifecycle timeline showing grace period.](../../media/non-dark2-edits.PNG)
 
 The Fabrikam Laptop example from the previous table illustrates this situation: 
 

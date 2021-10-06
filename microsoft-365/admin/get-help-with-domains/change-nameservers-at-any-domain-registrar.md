@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -148,7 +149,7 @@ For example, here are some additional steps that might be required for email and
 
 - Move all email addresses that use your domain to Microsoft 365 before you change your NS records.
 
-- Want to add a domain that's currently used with a website address, like www.fourthcoffee.com? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
+- Want to add a domain that's currently used with a website address, like `https://www.fourthcoffee.com`? You can take below steps while you add the domain to keep its website hosted where the site is hosted now so people can still get to the website after you change the domain's NS records to point to Microsoft 365.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
@@ -189,4 +190,4 @@ After the nameserver records are updated to point to Microsoft, your domain setu
 
 [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)

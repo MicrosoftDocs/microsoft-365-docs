@@ -9,17 +9,19 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_signup
+- AdminTemplateSet
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
