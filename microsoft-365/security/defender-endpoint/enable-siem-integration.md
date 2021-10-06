@@ -85,7 +85,7 @@ You can now proceed with configuring your SIEM solution or connecting to the det
 
 ## Integrate Microsoft Defender for Endpoint with IBM QRadar
 
-You can configure IBM QRadar to collect detections from Microsoft Defender for Endpoint. For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
+You can configure IBM QRadar to collect detections from Microsoft Defender for Endpoint. For more information, see [IBM Knowledge Center](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide).
 
 ## See also
 
