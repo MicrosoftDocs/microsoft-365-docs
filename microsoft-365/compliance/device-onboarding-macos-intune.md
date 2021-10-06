@@ -1,5 +1,5 @@
 ---
-title: Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+title: Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+description: Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 ---
 
-# Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+# Onboard macOS devices into Microsoft 365 Compliance solutions using Intune
 
-Preparing your devices for onboarding is required to ensure the device is configured to send telemetry and receive policy updates from your organization.
+You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
 
 **Applies to:**
 
@@ -28,15 +28,16 @@ Preparing your devices for onboarding is required to ensure the device is config
 
 <!-- DON'T KNOW IF THIS IS NEEDED You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.-->
 
-
 ## Before you begin
 
-- Make sure your macOS devices are onboarded into Intune
-- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
+- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
+- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home)
+- This supports macOS version Catalina 10.15 and higher
+<!--- Edge browser v93 and higher installed.-->
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Microsoft 365 Compliance solutions is a five phase process.
+Onboarding a macOS device into Compliance solutions is a five phase process.
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Create system configuration profiles](#create-system-configuration-profiles)

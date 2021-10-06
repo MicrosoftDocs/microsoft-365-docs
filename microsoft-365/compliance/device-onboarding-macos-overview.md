@@ -19,7 +19,9 @@ description:
 
 # Onboard macOS devices into Microsoft 365 overview
 
-Preparing your devices for onboarding is required to ensure the device is configured to send telemetry and receive policy updates from your organization.
+
+
+
 
 **Applies to:**
 
@@ -27,6 +29,22 @@ Preparing your devices for onboarding is required to ensure the device is config
 <!--- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)-->
 
 <!-- DON'T KNOW IF THIS IS NEEDED You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.-->
+
+We support 
+Following are supported actions: 
+
+Copy to a USB removable media – when enforced, this action blocks, warns or audits the copying or moving of protected files from an endpoint device to USB removable media 
+
+Copy to network shares – when enforced, this action blocks, warns, or audits the copying or moving of protected files from an endpoint device to any network share 
+
+Print – when enforced, this action blocks, warns, or audits when protected files are printed from an endpoint device 
+
+Copy to clipboard – when enforced, this action blocks, warns, or audits data in protected file that is being copied to a clipboard on an endpoint device 
+
+Upload to cloud – this action blocks, warns, or audits when protected files are prevented from or allowed to be uploaded to cloud services based on the allow/unallowed domains list in global settings. When this action is set to warn or block, other browsers (defined on unallowed browsers list under Global settings) are blocked from accessing the file. 
+
+Accessed by unallowed apps – when enforced, this action prevents applications that are on the unallowed apps list (as defined in Global settings) from accessing protected files on an endpoint device. Sample scenarios 
+
 
 
 ## Before you begin
