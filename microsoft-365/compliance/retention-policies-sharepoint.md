@@ -109,7 +109,12 @@ When you apply a retention policy to a location that includes OneNote content, b
 
 Versioning is a feature of all document lists and libraries in SharePoint and OneDrive. By default, versioning retains a minimum of 500 major versions, although you can increase this limit. For more information, see [Enable and configure versioning for a list or library](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37) and [How versioning works in lists and libraries](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247).
   
-When a document with versions is subject to retention settings to retain that content, all versions of the file are retained in a single file within the Preservation Hold library. If the retention settings are configured to delete at the end of the retention period:
+When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in October 2021. Before the change, versions were copied to the Preservation Hold library as separate files and all versions are searchable by eDiscovery tools. After the change, all versions of the file are retained in a single file within the Preservation Hold library, and only the most recent version of the file is searchable by eDiscovery tools.
+
+> [!NOTE]
+> This change of behavior for how versions are stored in the Preservation Hold library is rolling out now, and this note will be updated when the rollout is complete.
+
+Irrespective of how the versions are stored, if the retention settings are configured to delete at the end of the retention period:
 
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
