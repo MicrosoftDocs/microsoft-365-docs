@@ -26,8 +26,8 @@ The [online tool](https://aka.ms/mmdart) checks settings in Microsoft Endpoint M
 
 Anyone with at least the Global Reader or Intune Administrator role will be able to run this tool, but two of the checks ([Conditional access policies](readiness-assessment-fix.md#conditional-access-policies) and [Multifactor authentication](readiness-assessment-fix.md#multifactor-authentication) require additional permissions.
 
-> [!NOTE]  
-> The online readiness assessment tool is not available to run for tenants that have already been enrolled in the Microsoft Managed Desktop service.
+> [!IMPORTANT]  
+> The online readiness assessment tool helps you check your readiness to enroll in Microsoft Managed Desktop for the first time. If your organization is already enrolled in Microsoft Managed Desktop, don't use this tool.
 
 The assessment tool checks these items:
 
