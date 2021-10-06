@@ -9,7 +9,7 @@ ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MED150

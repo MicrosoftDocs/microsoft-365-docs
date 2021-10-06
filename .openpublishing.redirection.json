@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/admin/work-with-customers/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/devices/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/manage/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/email/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/add-users/index.yml",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business/prepare-for-office-client-deployment.md",
       "redirect_url": "/microsoft-365/admin/misc/prepare-for-office-client-deployment",
       "redirect_document_id": false
@@ -1108,12 +1143,12 @@
     {
       "source_path": "microsoft-365/admin/manage/manage.md",
       "redirect_url": "index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/email/email.md",
       "redirect_url": "index",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/admin-overview/index.md",

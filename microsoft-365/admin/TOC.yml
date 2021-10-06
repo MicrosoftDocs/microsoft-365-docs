@@ -2,7 +2,6 @@
   href: index.yml
   items: 
     - name: Get started
-      href: setup/index.yml
       items: 
         - name: Sign up
           href: admin-overview/sign-up-for-office-365.md
@@ -103,7 +102,6 @@
         - name: Azure Information Protection support
           href: services-in-china/parity-between-azure-information-protection.md      
     - name: Manage users, groups, and passwords
-      href: add-users/index.yml
       items: 
         - name: Users
           items:
@@ -180,7 +178,6 @@
            - name: Set the password expiration policy
              href: manage/set-password-expiration-policy.md
     - name: Manage email and calendars
-      href: email/index.yml
       items: 
         - name: About user email settings
           href: email/office-365-user-email-settings.md
@@ -217,7 +214,6 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
@@ -240,7 +236,6 @@
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
-      href: manage/index.yml
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
@@ -348,7 +343,6 @@
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
-      href: devices/index.yml
       items:
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
@@ -421,7 +415,6 @@
             - name: Troubleshoot
               href: basic-mobility-security/troubleshoot.md
     - name: Work with customers
-      href: work-with-customers/index.yml
       items: 
         - name: Share sites and files with guest users
           href: manage/share-sites-with-external-users.md

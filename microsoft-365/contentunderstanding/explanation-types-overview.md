@@ -11,7 +11,7 @@ search.appverid:
 ms.collection:
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn more about phrase list, regular expression, and proximity explanation types in Microsoft SharePoint Syntex.
 ---
 
