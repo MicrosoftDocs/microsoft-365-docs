@@ -9,7 +9,7 @@ manager: dansimp
 ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150

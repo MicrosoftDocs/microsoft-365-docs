@@ -9,7 +9,7 @@ ms.date: 10/11/2018
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP

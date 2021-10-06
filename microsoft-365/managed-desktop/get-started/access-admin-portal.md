@@ -7,7 +7,7 @@ ms.author: jaimeo
 author: jaimeo
 ms.topic: article
 audience: ITPro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ---

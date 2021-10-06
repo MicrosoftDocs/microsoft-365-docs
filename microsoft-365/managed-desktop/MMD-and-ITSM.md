@@ -7,7 +7,7 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ---
 
 # Microsoft Managed Desktop and ITIL
