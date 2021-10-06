@@ -78,17 +78,17 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 
 4. Choose **Create**
 
-5. Choose a name for the profile, like *Endpoint DLP for macOS*. Choose **Next**.
+5. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
-6. Choose the **accessibilty.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+6. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
 
 7. Choose **Next**
 
-8. CHOOSE GROUP HERE Assign your **Intune** managed macOS devices on the **Assignments** tab and choose **Next**.
+8. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-9. Review your setting and choose **Create**. this equals deploy
+9. Review your settings and choose **Create** to deploy the configuration.
 
-1. Repeat steps 2-7 for the:
+10. Repeat steps 2-7 for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
     1. MDE preferences **com.microsoft.wdav.xml** file
@@ -96,9 +96,9 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
     1. **netfilter.mobileconfig**
     1. **notif.mobileconfig**
 
-10. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+11. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-go into th e MEM UI and check the status HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
+12. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Enable kernel extension
 
@@ -115,14 +115,18 @@ go into th e MEM UI and check the status HENRY, THEN WHAT, HOW DO CUSTOMERS DEPL
 
 1. In the **Configuration settings** tab expand **Kernel Extensions**
 
-1. Set the **Team identifier** = **UBF8T346G9**
-1. assign to group
+1. Set the **Team identifier** to **UBF8T346G9**
 
-1. done/create/next
+> [!IMPORTANT]
+> Leave **Allow user overrides** set to **Not configured**. 
+
+1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+
+1. Choose **Next** to deploy the configuration.
 
 ### Enable system extension
 
-1.  In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
+1. In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
 
 1. Choose:
     1. **Platform = macOS**
@@ -134,13 +138,18 @@ go into th e MEM UI and check the status HENRY, THEN WHAT, HOW DO CUSTOMERS DEPL
 1. In the **Basics** tab, give this new profile a name.
 
 1. In the **Configuration settings** tab expand **System Extensions**
-    1. set **com.microsoft.wdav.epsext** = **UBF8T346G9**
-    1. set **com.microsoft.wdav.netext** = **UBF8T346G9**
+
+1. Under **Bundle identifier** and **Team identifier**, set these values
+
+|Bundle identifier  |Team identifier  |
+|---------|---------|
+|**com.microsoft.wdav.epsext**|**UBF8T346G9**|
+|**com.microsoft.wdav.netext**|**UBF8T346G9**|
 
 
-1. assign to group
+1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-1. done/create/next
+1. Choose **Next**.
 
 ### Deploy the Microsoft DLP installation package
 
