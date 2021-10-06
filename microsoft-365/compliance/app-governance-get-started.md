@@ -59,11 +59,12 @@ To enable app governance sync with Cloud App Security, follow these steps:
 1. Under **Threat Protection**, select **App Governance**.
 1. Select **Enable App Governance integration**, and then select **Save**.
 
-To verify the integration with MCAS is active, look for the app governance policies listed below to appear in MCAS. The new policies might take few minutes to appear once integration is enabled.
+To verify the integration with MCAS is active, look for additional actions to review the configuration after successfully enabling the integration. 
 
-- Microsoft 365 OAuth app Reputation
-- Microsoft 365 OAuth Phishing Detection
-- Microsoft 365 OAuth App Governance
+- Review App Governance widget in MCAS dashboard
+- Review newly generated App Governance alerts in MCAS alerts
+- Review MCAS Microsoft 365 OAuth policies in App Governance policy list
+- Review newly generated  MCAS Microsoft 365 OAuth alerts  in App Governance alerts
 
 ## Licensing and administrator role prerequisites
 
