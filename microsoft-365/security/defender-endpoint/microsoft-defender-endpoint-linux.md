@@ -68,8 +68,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
-  - Red Hat Enterprise Linux 7.2 or higher
-  - CentOS 7.2 or higher
+  - Red Hat Enterprise Linux 6.7 or higher 
+  - CentOS 6.7 or higher 
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
@@ -77,6 +77,26 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
+
+    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
+       - For 6.7: 2.6.32-573.* 
+       - For 6.8: 2.6.32-642.* 
+       - For 6.9: 2.6.32-696.* 
+       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+       
+  
+    | Table of versions |  |  |
+|---|---|---|
+| 2.6.32-754.2.1.el6.x86_64  | 2.6.32-754.17.1.el6.x86_64  | 2.6.32-754.29.1.el6.x86_64  |
+| 2.6.32-754.3.5.el6.x86_64  | 2.6.32-754.18.2.el6.x86_64  | 2.6.32-754.29.2.el6.x86_64  |
+| 2.6.32-754.6.3.el6.x86_64  | 2.6.32-754.22.1.el6.x86_64  | 2.6.32-754.30.2.el6.x86_64  |
+| 2.6.32-754.9.1.el6.x86_64  | 2.6.32-754.23.1.el6.x86_64  | 2.6.32-754.33.1.el6.x86_64  |
+| 2.6.32-754.10.1.el6.x86_64  | 2.6.32-754.24.2.el6.x86_64  | 2.6.32-754.35.1.el6.x86_64  |
+| 2.6.32-754.11.1.el6.x86_64  | 2.6.32-754.24.3.el6.x86_64  | 2.6.32-754.39.1.el6.x86_64  |
+| 2.6.32-754.12.1.el6.x86_64  | 2.6.32-754.25.1.el6.x86_64  | 2.6.32-754.41.2.el6.x86_64  |
+| 2.6.32-754.14.2.el6.x86_64  | 2.6.32-754.27.1.el6.x86_64  |   |
+| 2.6.32-754.15.3.el6.x86_64  | 2.6.32-754.28.1.el6.x86_64  |   |
 
 - Minimum kernel version 3.10.0-327
 

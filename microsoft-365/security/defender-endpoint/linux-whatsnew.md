@@ -22,6 +22,10 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.45.13 
+
+- Starting with this version, we are bringing Microsoft Defender for Endpoint support to RHEL6-based distros. Support includes RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+
 ## 101.39.98 (30.121062.13998.0)
 
 - Performance improvements & bug fixes

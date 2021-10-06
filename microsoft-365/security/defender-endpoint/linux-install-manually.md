@@ -78,9 +78,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
     |Distro & version|Package|
     |---|---|
-    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod/>|
-    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod/>|
-    |
+    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod.repo>|
+    | For RHEL 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/prod.repo>
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
