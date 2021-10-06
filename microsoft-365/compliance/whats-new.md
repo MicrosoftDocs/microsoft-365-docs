@@ -53,10 +53,10 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance offerings
 
-- [Multi-Tier Cloud Security (MTCS)](regulatory/offering-mtcs-singapore.md) Standard for Singapore updates for Dynamics 365 coverage
-- [Payment Card Industry (PCI)](regulatory/offering-pci-dss.md) Data Security Standard (DSS) updates for SharePoint Online coverage
-- [U.S. Section 508](regulatory/offering-section-508-vpats.md) new client software guidance
-- [Web Content Accessibility Guidelines](regulatory/offering-wcag-2-1.md) new client software guidance
+- [Multi-Tier Cloud Security (MTCS)](./regulatory/offering-mtcs-singapore.md) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](./regulatory/offering-pci-dss.md) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](./regulatory/offering-section-508-vpats.md) new client software guidance
+- [Web Content Accessibility Guidelines](./regulatory/offering-wcag-2-1.md) new client software guidance
 
 ### Compliance & service assurance
 
@@ -76,9 +76,9 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### Information barriers
 
 - [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes-preview) new preview feature for information barriers modes
-- [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams.md) new preview feature for information barriers modes
-- [Information barriers with OneDrive](/onedrive/information-barriers.md) new preview feature for information barriers modes
-- [Information barriers with SharePoint Online](/sharepoint/information-barriers.md) new preview feature for information barriers modes
+- [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams) new preview feature for information barriers modes
+- [Information barriers with OneDrive](/onedrive/information-barriers) new preview feature for information barriers modes
+- [Information barriers with SharePoint Online](/sharepoint/information-barriers) new preview feature for information barriers modes
 
 ### Insider risk management
 
