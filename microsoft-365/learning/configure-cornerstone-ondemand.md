@@ -13,12 +13,15 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+localization_priority: Medium
 description: "Learn how to configure Cornerstone OnDemand as a learning content source for Microsoft Viva Learning (Preview)."
 
 ---
 
 # Configure Cornerstone OnDemand as a learning content source for Microsoft Viva Learning (Preview)
+
+>[!NOTE]
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Cornerstone OnDemand content and any associated services are subject to Cornerstone OnDemand’s privacy and service terms.
 
 1. Log in to your Cornerstone Portal, navigate to the Edge Marketplace, and search for Microsoft Viva Learning.  
     <!--image 1-->

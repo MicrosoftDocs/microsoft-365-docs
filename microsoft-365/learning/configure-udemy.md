@@ -13,11 +13,14 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+localization_priority: Medium
 description: "Learn how to configure Udemy as a learning content source for Microsoft Viva Learning (Preview)."
 ---
 
 # Configure Udemy as a learning content source for Microsoft Viva Learning (Preview)
+
+>[!NOTE]
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Udemy content and any associated services are subject to Udemy’s privacy and service terms.
 
 Follow these steps to enable the APIs in your Udemy Business environment and generate client credentials for your LMS/LXP application to access them.
 

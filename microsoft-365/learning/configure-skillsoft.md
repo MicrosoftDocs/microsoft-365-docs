@@ -13,11 +13,14 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+localization_priority: Medium
 description: "Learn how to configure Skillsoft as a learning content source for Microsoft Viva Learning (Preview)."
 ---
 
 # Configure Skillsoft as a learning content source for Microsoft Viva Learning (Preview)
+
+>[!NOTE]
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Skillsoft content and any associated services are subject to Skillsoft’s privacy and service terms.
 
 This article will show you how to configure Skillsoft as a learning content resource for Microsoft Viva Learning (Preview).
 

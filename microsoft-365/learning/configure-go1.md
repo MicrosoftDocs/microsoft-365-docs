@@ -13,11 +13,14 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+localization_priority: Medium
 description: "Learn how to configure Go1 as a learning content source for Microsoft Viva Learning (Preview)."
 ---
 
 # Configure Go1 as a learning content source for Microsoft Viva Learning (Preview)
+
+>[!NOTE]
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Go1 content and any associated services are subject to Go1’s privacy and service terms.
 
 Go1 provides access to thousands of courses from top content providers. [Learn more about Go1](https://www.go1.com/go1-microsoft-viva). Follow these steps so add Go1 as a content source in Viva Learning.
 

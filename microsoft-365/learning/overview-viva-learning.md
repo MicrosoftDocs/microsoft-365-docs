@@ -1,7 +1,7 @@
 ---
 title: Overview of Microsoft Viva Learning (Preview)
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-ms.localizationpriority: null
+ms.localizationpriority: Medium
 description: Learn about Microsoft Viva Learning (Preview) in your Microsoft 365 environment.
 ---
 
@@ -67,7 +67,3 @@ When you’re ready to set up and configure Viva Learning (Preview) in your Micr
 - Use the Microsoft Teams admin center to [manage Viva Learning (Preview) across your organization](set-up-teams-admin-center.md).
 - Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).
 - Use the SharePoint admin center to [manage and store your own learning content](configure-sharepoint-content-source.md).
-
-
-
-

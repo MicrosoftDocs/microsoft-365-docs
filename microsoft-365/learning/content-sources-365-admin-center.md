@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-ms.localizationpriority: null
+ms.localizationpriority: Medium
 description: Learn how to configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center.
 ---
 
@@ -25,6 +25,9 @@ description: Learn how to configure learning content sources for Microsoft Viva 
 The administrators for the Microsoft 365 admin center—either by themselves or by assigning the knowledge admin role to selected individuals in your organization—can manage settings related to Viva Learning (Preview) and can configure the learning content sources.
 
 The administrator selects which other learning content sources (for example, SharePoint or supported third-party content provider sources) will be available to users of Viva Learning (Preview). The admin then configures those sources to make sure the content is available for search and discovery and can be browsed by the employees who use Viva Learning (Preview).
+
+>[!NOTE]
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Content and any associated services are subject to the content provider's privacy and service terms.
 
 > [!NOTE]
 > Users sign in to non-Microsoft and LinkedIn Learning Pro learnings in a browser or embedded viewer. This configured learning is subject to the separate license, privacy and service terms between your organization and the third party, and not the Viva Learning (Preview) terms. Before selecting this type of learning, verify you have an agreement in place for your organization and users.
