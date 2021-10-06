@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -36,6 +36,7 @@ Set attack surface reduction rules for devices running any of the following edit
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 > [!WARNING]
 > Enabling attack service reduction rules on Windows Server 2016 might lead to unexpected results, and impact server performance. We do not recommend enabling or deploying attack surface reduction rules to unsupported platforms.

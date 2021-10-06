@@ -2,15 +2,13 @@
 title: Troubleshoot Microsoft Defender for Endpoint onboarding issues
 description: Troubleshoot issues that might arise during the onboarding of devices or to the Microsoft Defender for Endpoint service.
 keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -114,9 +112,9 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 
 |Error Code Hex|Error Code Dec|Error Description|OMA-URI|Possible cause and troubleshooting steps|
 |:---:|---|---|---|---|
-|0x87D1FDE8|-2016281112|Remediation failed|Onboarding <p> Offboarding|**Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <p> **Troubleshooting steps:** <p> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+|0x87D1FDE8|-2016281112|Remediation failed|Onboarding <p> Offboarding|**Possible cause:** Onboarding or offboarding failed on a wrong blob: wrong signature or missing PreviousOrgIds fields. <p> **Troubleshooting steps:** <p> Check the event IDs in the [View agent onboarding errors in the device event log](#view-agent-onboarding-errors-in-the-device-event-log) section. <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||Onboarding <p> Offboarding <p> SampleSharing|**Possible cause:** Microsoft Defender for Endpoint Policy registry key does not exist or the OMA DM client doesn't have permissions to write to it. <p> **Troubleshooting steps:** Ensure that the following registry key exists: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <p> If it doesn't exist, open an elevated command and add the key.|
-||||SenseIsRunning <p> OnboardingState <p> OrgId|**Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <p> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
+||||SenseIsRunning <p> OnboardingState <p> OrgId|**Possible cause:** An attempt to remediate by read-only property. Onboarding has failed. <p> **Troubleshooting steps:** Check the troubleshooting steps in [Troubleshoot onboarding issues on the device](#troubleshoot-onboarding-issues-on-the-device). <p> Check the MDM event logs in the following table or follow the instructions in [Diagnose MDM failures in Windows](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).|
 ||||All|**Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU. <p> Currently supported platforms: <p> Enterprise, Education, and Professional.<p> Server is not supported.|
 |0x87D101A9|-2016345687|SyncML(425): The requested command failed because the sender does not have adequate access control permissions (ACL) on the recipient.|All|**Possible cause:** Attempt to deploy Microsoft Defender for Endpoint on non-supported SKU/Platform, particularly Holographic SKU.<p> Currently supported platforms: <p> Enterprise, Education, and Professional.|
 |
@@ -213,13 +211,13 @@ There are additional components on the device that the Microsoft Defender for En
 
 ### Ensure the diagnostic data service is enabled
 
-If the devices aren't reporting correctly, you might need to check that the Windows 10 diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
+If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
 First, you should check that the service is set to start automatically when Windows starts, then you should check that the service is currently running (and start it if it isn't).
 
 ### Ensure the service is set to start
 
-**Use the command line to check the Windows 10 diagnostic data service startup type**:
+**Use the command line to check the Windows diagnostic data service startup type**:
 
 1. Open an elevated command-line prompt on the device:
 
@@ -239,7 +237,7 @@ First, you should check that the service is set to start automatically when Wind
 
    If the `START_TYPE` is not set to `AUTO_START`, then you'll need to set the service to automatically start.
 
-**Use the command line to set the Windows 10 diagnostic data service to automatically start:**
+**Use the command line to set the Windows diagnostic data service to automatically start:**
 
 1. Open an elevated command-line prompt on the device:
 
@@ -357,12 +355,13 @@ The steps below provide guidance for the following scenario:
 - In this scenario, the SENSE service will not start automatically even though onboarding package was deployed
 
 > [!NOTE]
-> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions:
->
-> - Windows 10, version 1809 or Windows Server 2019 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384).
-> - Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396).
-> - Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391).
->
+> User Logon after OOBE is no longer required for SENSE service to start on the following or more recent Windows versions: 
+> Windows 10, version 1809 or Windows Server 2019, or Windows Server 2022 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). 
+> Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396). 
+> Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391). 
+
+
+> [!NOTE]
 > The following steps are only relevant when using Microsoft Endpoint Configuration Manager. For more details about onboarding using Microsoft Endpoint Configuration Manager, see [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Create an application in Microsoft Endpoint Configuration Manager.

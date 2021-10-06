@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: M365-security-compliance
 search.appverid: 
