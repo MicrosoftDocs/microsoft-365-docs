@@ -151,6 +151,10 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 
 1. Choose **Next** to deploy the configuration.
 
+
+LEFT OFF HERE 10/6
+
+
 ### Deploy the Microsoft DLP installation package
 
 Follow the instructions from [Intune](/intune/advanced-threat-protection).
