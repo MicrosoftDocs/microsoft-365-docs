@@ -36,11 +36,21 @@ Preparing your devices for onboarding is required to ensure the device is config
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Microsoft 365 Compliance solutions is a three phase process.
+Onboarding a macOS device into Microsoft 365 Compliance solutions is a five phase process.
 
+1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Create system configuration profiles](#create-system-configuration-profiles)
-1. [Enable kernel and system extensions](#enable-kernel-and-system-extensions)
+1. [Enable kernel extension](#enable-kernel-extension)
+1. [Enable system extension](#enable-system-extension)
 1. [Deploy the Microsoft DLP enforcement package](#deploy-the-microsoft-dlp-enforcement-package)
+
+### Get the device onboarding package
+
+1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+1. For **Select operating system to start onboarding process** choose **macOS**
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+1. Choose **Download onboarding package**
+1. Extract the contents of the configuration package to a location on the device you want to onboard (for example, the Desktop). You should have a file named *DeviceOnboardingScript.cmd*. OR IS IT MDEONBOARDING.XML ASK HENRY
 
 ### Create system configuration profiles
 
@@ -67,13 +77,55 @@ Onboarding a macOS device into Microsoft 365 Compliance solutions is a three pha
 
 1. Repeat steps 2-7 for the:
     1. **fulldisk.mobileconfig** file
-    1. **com.microsoft.autoupdate2.xml** file - for the **channel name** string 
+    1. **com.microsoft.autoupdate2.xml** file
+        1. set **channel name** = string use HENRY TO PROVIDE
     1. MDE preferences **com.microsoft.wdav.xml** file
+        1. set `SystemExtensions` = `enabled`
+        1. set `DataLossPrevention` = `enabled`
+        1. set EDR preferences `Group IDs` = `DLP_Enable`
+        1. set Antivirus engine `passive mode` = `true` or `false`. GET HENRY TO EXPLAIN THIS IT MAKES NO SENSE
+    1. **netfilter.mobileconfig**
+    1. **notif.mobileconfig**
+    1. the *DeviceComplianceOnboardingPackage.zip*
 
-10. Open **Devices** > **Configuration profiles**, you should see your created profile there.
+10. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-### Enable kernel and system extensions
-text
+HENRY, THEN WHAT, HOW DO CUSTOMERS DEPLOY
+
+### Enable kernel extension
+
+1.  In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
+
+1. Choose:
+    1. **Platform = macOS**
+    1. **Profile type = Templates**
+    1. **Template name = Extensions**
+
+1. Choose **Create**
+
+1. In the **Basics** tab, give this new profile a name.
+
+1. In the **Configuration settings** tab expand **Kernel Extensions**
+
+1. Set the **Team identifier** = **UBF8T346G9**
+
+### Enable system extension
+
+1.  In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
+
+1. Choose:
+    1. **Platform = macOS**
+    1. **Profile type = Templates**
+    1. **Template name = Extensions**
+
+1. Choose **Create**
+
+1. In the **Basics** tab, give this new profile a name.
+
+1. In the **Configuration settings** tab expand **System Extensions**
+    1. set **com.microsoft.wdav.epsext** = **UBF8T346G9**
+    1. set **com.microsoft.wdav.netext** = **UBF8T346G9**
+
 
 ### Deploy the Microsoft DLP enforcement package
 
