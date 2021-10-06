@@ -90,3 +90,6 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 |Next-generation protection     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |Tamper Protection     |        Y   |    Y     |     Y    |    Y    |    Y   |
 |Web Protection     |       Y   |    Y     |     Y    |    Y    |    Y   |
+
+
+(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
