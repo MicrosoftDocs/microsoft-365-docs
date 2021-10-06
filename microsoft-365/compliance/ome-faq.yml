@@ -191,7 +191,7 @@ sections:
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
-          Yes. Microsoft 365 compliance features can discover all encrypted email messages. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
+          Yes, most messages protected by OME are discoverable. OME protected mail that you receive from another Microsoft 365 organization that has custom branding applied through a mail flow rule is undiscoverable by your eDiscovery service. In other words, if the mail isn't accessible through the user's mailbox, but rather, surfaced only through a link to the OME portal, the mail isn't searchable. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
 
       - question: |
           Can I remove encryption from email?
