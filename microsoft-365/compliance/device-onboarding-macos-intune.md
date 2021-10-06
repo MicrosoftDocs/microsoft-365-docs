@@ -149,7 +149,7 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 
 1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-1. Choose **Next**.
+1. Choose **Next** to deploy the configuration.
 
 ### Deploy the Microsoft DLP installation package
 
