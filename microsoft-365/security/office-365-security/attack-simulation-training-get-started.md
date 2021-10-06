@@ -23,7 +23,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Get started using Attack simulation training
+# Get started using Attack simulation training in Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

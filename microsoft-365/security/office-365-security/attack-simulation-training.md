@@ -27,15 +27,15 @@ To launch a simulated phishing attack, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training**.
 
-   To go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator> and switch to the **[Simulations](https://security.microsoft.com/attacksimulator?viewid=simulations)** tab.
+   To go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations> or use <https://security.microsoft.com/attacksimulator> and select the **Simulations** tab.
 
 2. On the **Attack simulation training** page, select the **Simulations** tab.
 
 3. On the **Simulations** tab, select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation**.
 
-   ![Launch a simulation button on the Simulations tab on the Attack simulation training page in the Microsoft 365 Defender portal.](../../media/attack-sim-training-launch.png)
+   ![Launch a simulation button on the Simulations tab on the Attack simulation training page in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-launch.png)
 
-4. A 7-page simulation creation wizard opens. The rest of this article describes the pages and the settings they contain.
+4. The simulation creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
 > At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
@@ -52,7 +52,7 @@ On the **Select technique** page, select an available social engineering techniq
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
-![Details flyout for the credential harvest technique on the Select technique flyout.](../../media/attack-sim-training-sim-steps.png)
+![Details flyout for the credential harvest technique on the Select technique flyout.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
 
 When you're finished, click **Next**.
 
@@ -89,28 +89,28 @@ If you click **Filter**, the following filters are available:
   - **Global**
   - **Tenant**
   - **All**
-- **Language**: Valid values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
+- **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
 - **Add tag(s)**
-- **Filter by theme**: Valid values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
-- **Filter by brand**: Valid values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
-- **Filter by event**: Valid values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
-- **Current event**: Valid values are **Yes** or **No**.
-- **Controversial**: Valid values are **Yes** or **No**.
+- **Filter by theme**: The available values are: **Account activation**, **Account verification**, **Billing**, **Clean up mail**, **Document received**, **Expense**, **Fax**, **Finance report**, **Incoming messages**, **Invoice**, **Items received**, **Login alert**, **Mail received**, **Password**, **Payment**, **Payroll**, **Personalized offer**, **Quarantine**, **Remote work**, **Review message**, **Security update**, **Service suspended**, **Signature required**, **Upgrade mailbox storage Verify mailbox**, **Voicemail**, and **Other**.
+- **Filter by brand**: The available values are: **American Express**, **Capital One**, **DHL**, **DocuSign**, **Dropbox**, **Facebook**, **First American**, **Microsoft**, **Netflix**, **Scotiabank**, **SendGrid**, **Stewart Title**, **Tesco**, **Wells Fargo**, **Syrinx Cloud**, and **Other**.
+- **Filter by industry**: The available values are: **Banking**, **Business services**, **Consumer services**, **Education**, **Energy**, **Construction**, **Consulting**, **Financial services**, **Government**, **Hospitality**, **Insurance**, **Legal**, **Courier services**, **IT**, **Healthcare**, **Manufacturing**, **Retail**, **Telecom**, **Real estate**, and **Other**.
+- **Current event**: The available values are **Yes** or **No**.
+- **Controversial**: The available values are **Yes** or **No**.
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-![Select payload page in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-select-payload.png)
+![Select payload page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload.png)
 
 If you select a payload from the list, details about the payload are shown in a flyout:
 
 - The **Overview** contains an example and other details about the payload.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
-![Payload details flyout in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-payload-details.png)
+![Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload-details.png)
 
 If you select a payload from the list, a ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
-To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create a payload for attack simulation training](attack-simulation-training-payloads.md).
+To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md).
 
 When you're finished, click **Next**.
 
@@ -140,7 +140,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
         - Select **All Title**
         - Select existing Title values.
 
-      ![User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-user-targeting.png)
+      ![User filtering on the Target users page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-target-users-filter-by-category.png)
 
       After you identify your criteria, the affected users are shown in the **User list** section that appears, where you can select some or all of the discovered recipients.
 
@@ -178,7 +178,7 @@ On the **Assign training** page, you can assign trainings for the simulation. We
       - **7 days after simulation ends**
   - **No training**: If you select this value, the only option on the page is the **Next** button that takes you to the [**Landing page**](#landing-page) page.
 
-![Add recommended training on the Training assignment page in attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-add-training.png)
+![Add recommended training on the Training assignment page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-assign-training-add-recommended-training.png)
 
 ### Training assignment
 
@@ -234,7 +234,7 @@ On the **Landing page** page, you configure the web page that user are taken to 
   - **Create your own landing page**: This value has the following associated options to configure:
     - **Add payload indicators to email**: Select this setting to help users learn how to identify phishing messages.
     - Page content: Two tabs are available:
-      - **Text**: In the editing area, you can enter and format text, as well tags and templates that you can add and use. The following settings are available:
+      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
           - **Username**
           - **Email sender name**
@@ -276,3 +276,5 @@ Click the ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
 When you're finished, click **Submit**.
+
+![Review simulation page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-review-simulation.png)
