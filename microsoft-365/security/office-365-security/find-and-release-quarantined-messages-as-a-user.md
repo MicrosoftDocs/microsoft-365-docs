@@ -9,7 +9,7 @@ ms.date:
 audience: Consumer/IW
 ms.topic: how-to
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
   - MEW150

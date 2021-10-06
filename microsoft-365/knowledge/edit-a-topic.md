@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-topics
 ms.service: 
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn how to edit an existing topic in Microsoft Viva Topics.
 
 ---

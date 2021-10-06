@@ -12,7 +12,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn about how to use Viva Topics in your organization.
 ---
 
