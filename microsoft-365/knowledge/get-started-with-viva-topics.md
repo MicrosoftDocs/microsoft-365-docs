@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: 
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn about new ways to discover and explore information in Microsoft Viva Topics.
 ---
 
