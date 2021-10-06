@@ -115,9 +115,6 @@ When a document with versions is subject to retention settings to retain that co
 
 - If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
-> [!NOTE]
-> The retained versions of these SharePoint and OneDrive documents are not searchable by eDiscovery tools.
-
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 
 For items that are subject to a retention policy (or an eDiscovery hold), the versioning limits for the document library are ignored until the retention period of the document is reached (or the eDiscovery hold is released). In this scenario, old versions are not automatically purged and users are prevented from deleting versions.
