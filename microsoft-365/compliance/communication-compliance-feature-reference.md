@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -382,8 +382,8 @@ For communication compliance policies, the following alert policy values are con
 |**Alert policy trigger**|**Default value**|
 |:-----|:-----|
 | Aggregation | Simple aggregation |
-| Threshold | Minimum: 3 activities <br> Maximum: 2,147,483,647 activities |
-| Window | Minimum: 60 minutes <br> Maximum: 10,000 minutes |
+| Threshold | Default: 4 activities <br> Minimum: 3 activities <br> Maximum: 2,147,483,647 activities |
+| Window | Default: 60 minutes <br> Minimum: 60 minutes <br> Maximum: 10,000 minutes |
 
 > [!NOTE]
 > The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.

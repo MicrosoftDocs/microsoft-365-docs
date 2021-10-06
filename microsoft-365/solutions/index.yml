@@ -15,7 +15,7 @@ metadata:
   manager: bcarter
   audience: ITPro
   ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -68,12 +68,22 @@ landingContent:
             url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 
   # Card
-  - title: Teamwork and collaboration solution guides
+  - title: Meetings and communications solution guides
     linkLists:
       - linkListType: deploy
         links:
           - text: Plan and deploy a Teams Voice solution
             url: deploy-voice.md
+      - linkListType: overview
+        links:
+          - text: Organizational communication
+            url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Teamwork and collaboration solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
           - text: Manage contracts for your business
             url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
       - linkListType: overview
