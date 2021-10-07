@@ -80,7 +80,7 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 
 ## Supported capabilities for Windows devices
 
-|Operating System  |Windows 10  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019|Windows Server 1803+|
+|Operating System  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |Windows Server 2016<sup>[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803+|
 |---------|---------|---------|---------|---------|---------|
 |**Prevention**    |         |         |         |         |         |
 |Attack Surface Reduction rules     |    Y     |   Y      |    Y     |    Y     |    Y     |
