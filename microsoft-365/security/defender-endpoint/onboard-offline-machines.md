@@ -61,14 +61,14 @@ For more information about onboarding methods, see the following articles:
 
 ## Azure virtual machines
 
-    - Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
-      - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
-    - Offline Azure VMs in the same network of OMS Gateway
-      - Configure Azure Log Analytics IP as a proxy
-      - Azure Log Analytics Workspace Key & ID
-    - Azure Defender
-      - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
-      - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+- Setup Azure Log Analytics Gateway (formerly known as OMS Gateway) to act as proxy or hub:
+    - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Install and configure Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) point to Defender for Endpoint Workspace key & ID
+- Offline Azure VMs in the same network of OMS Gateway
+    - Configure Azure Log Analytics IP as a proxy
+    - Azure Log Analytics Workspace Key & ID
+- Azure Defender
+    - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 
-        For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
+    For more information, see [Working with security policies](/azure/security-center/tutorial-security-policy).
