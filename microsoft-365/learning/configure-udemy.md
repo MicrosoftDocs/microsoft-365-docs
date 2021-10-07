@@ -38,7 +38,7 @@ Follow these steps to enable the APIs in your Udemy Business environment and gen
 
     ![Image of the LMS/LXP integrations page.](media/udemy-3.png)
 
-4. Once you've saved, your client ID and client secret will be generated and you can copy them from the screen. You can now access the APIs using the provided client credentials.
+4. Once you've saved, your Client ID and Client Secret will be generated and you can copy them from the screen. You can now access the APIs using the provided client credentials.
 
     ![Image of the generated client ID and secret.](media/udemy-4.png)
 
@@ -62,9 +62,10 @@ After you've received the required configuration details from Udemy portal by us
 
 3. Fill in the following required configuration details:
 
-- **Client’s Host URL** This is API endpoint URL gathered from Udemy portal in step 6.
-- **Organization ID** This is the ACCOUNT_ID gathered from Udemy portal in step 6.
-- **Client ID** This is the Client ID gathered from Udemy portal in step 4.
--**Client secret** This is the Client secret gathered from Udemy portal in step 4.
+    - **Client’s Host URL**: This is API endpoint URL gathered from Udemy portal in step 6.
+    - **Organization ID**: This is the ACCOUNT_ID gathered from Udemy portal in step 6.
+    - **Client ID**: This is the Client ID gathered from Udemy portal in step 4.
+    - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.
+
       ![Image of filled in configuration details.](media/udemy-8.png)
 

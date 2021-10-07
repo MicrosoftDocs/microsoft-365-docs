@@ -35,14 +35,14 @@ This article shows you how to configure Cornerstone OnDemand as a third-party le
 
 3. Select **Install**. Make sure you've selected the following API permissions before installing:
 
-- **Data Exporter API - training core**: Required for catalog sync
-- **Data Exporter API - training type core**: Required for catalog sync
-- **Data Exporter API - training provider core**: Required for catalog sync
-- **Data Exporter API - training local core**: Required for catalog sync
-- **Data Exporter API - culture core**: Required for catalog sync
-- **Data Exporter API - transcript core**: Required for assignment sync
-- **Data Exporter API - users core**: Required for user sync
-- **Data Exporter API - training availability by user core**: Required for permissions sync
+    - **Data Exporter API - training core**: Required for catalog sync
+    - **Data Exporter API - training type core**: Required for catalog sync
+    - **Data Exporter API - training provider core**: Required for catalog sync
+    - **Data Exporter API - training local core**: Required for catalog sync
+    - **Data Exporter API - culture core**: Required for catalog sync
+    - **Data Exporter API - transcript core**: Required for assignment sync
+    - **Data Exporter API - users core**: Required for user sync
+    - **Data Exporter API - training availability by user core**: Required for permissions sync
 
     <!--image 3-->
 

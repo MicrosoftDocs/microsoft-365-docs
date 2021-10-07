@@ -55,9 +55,9 @@ First, you'll need to follow these steps to create an app in your Go1 Portal. Th
 
 9. Copy the following values:
 
- - **Client's Host URL:** This is your Go1 Portal URL. It will look like "https://mycompany.mygo1.com".
- - **Client ID:** You can find your ID in your Go1 Portal under the **Integrations/Developer** menu options.
- - **Secret:** You can find your Secret in your Go1 Portal under the **Integrations/Developer** menu options.
+    - **Client's Host URL:** This is your Go1 Portal URL. It will look like "https://mycompany.mygo1.com".
+    - **Client ID:** You can find your ID in your Go1 Portal under the **Integrations/Developer** menu options.
+    - **Secret:** You can find your Secret in your Go1 Portal under the **Integrations/Developer** menu options.
 
 ## Complete configuration in the Microsoft 365 admin center
 
