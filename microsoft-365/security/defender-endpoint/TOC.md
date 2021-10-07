@@ -59,13 +59,13 @@
 
 
 ##### [Onboard Windows devices and Windows Servers]()
-###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, and 2019](configure-server-endpoints.md)
+###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
 ###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
 ###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 ###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 ###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 ###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
+###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
 
 
 

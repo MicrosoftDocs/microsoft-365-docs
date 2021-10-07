@@ -24,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 - Microsoft Defender for Endpoint
-- Azure Defenders
+- Azure Defender
 
 Microsoft Defender for Endpoint can integrate with Azure Defender to provide a comprehensive Windows server protection solution. With this integration, Azure Defender can use the power of Defender for Endpoint to provide improved threat detection for Windows Servers.
 
