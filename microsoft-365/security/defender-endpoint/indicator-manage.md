@@ -66,7 +66,7 @@ recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 category|String|Category of the alert. Examples include: Execution and credential access. **Optional**
 mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique.
-GenerateAlert|String|Whether the alert should be genererated or not. Possible Values are: True or False. **Optional**
+GenerateAlert|String|Whether the alert should be generated or not. Possible Values are: True or False. **Optional**
 
 
 
