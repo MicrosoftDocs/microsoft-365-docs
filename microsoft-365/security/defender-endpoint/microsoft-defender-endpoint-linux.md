@@ -68,8 +68,10 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
-  - Red Hat Enterprise Linux 6.7 or higher 
+  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 7.2 or higher 
   - CentOS 6.7 or higher 
+  - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
