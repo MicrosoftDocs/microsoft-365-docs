@@ -79,7 +79,12 @@ If your organization is using a non-Microsoft antivirus/antimalware solution tog
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
-### Why run Microsoft Defender Antivirus in passive mode?
+> [!IMPORTANT]
+> Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2012 R2, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
+>
+> In Windows 8.1, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
+>
+> Windows Defender is also offered for [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although it does not provide enterprise-level management.
 
 Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. You can benefit from running Microsoft Defender Antivirus alongside another antivirus solution.
 

@@ -144,15 +144,14 @@ You can use PowerShell to confirm that EDR in block mode is turned on with Micro
 If Microsoft Defender Antivirus is running in active mode or passive mode, EDR in block mode is supported of the following versions of Windows:
 
 - Windows 10 (all releases)
-- Windows Server, version 1803 or newer
-- Windows Server 2019
+- Windows Server, version 1803 or newer 
 - Windows Server 2022
+- Windows Server 2019 
+- Windows Server 2016
+- Windows Server 2012 R2
 
-#### What about Windows Server 2016?
-
-If Windows Server 2016 has Microsoft Defender Antivirus running in active mode, and the endpoint is onboarded to Defender for Endpoint, then EDR in block mode is technically supported. However, EDR in block mode is intended to be extra protection when Microsoft Defender Antivirus is not the primary antivirus solution on an endpoint. In those cases, Microsoft Defender Antivirus runs in passive mode.
-
-Currently, running Microsoft Defender Antivirus in passive mode is not supported on Windows Server 2016. To learn more, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server) and [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+>[!NOTE]
+>Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
 
 ### How much time does it take for EDR in block mode to be disabled?
 
