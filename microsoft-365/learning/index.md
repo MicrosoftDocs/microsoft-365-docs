@@ -41,8 +41,3 @@ The resources in this section help the admin in your organization to set up and 
 |Learn how to set up and configure Viva Learning|[Set up Microsoft Viva Learning](set-up-teams-admin-center.md)|
 |Learn how to configure learning content sources|[Configure learning content sources](content-sources-365-admin-center.md)|
 |Learn how to add your own learning content|[Configure SharePoint as a content source](configure-sharepoint-content-source.md)|
-
-
-
-
-
