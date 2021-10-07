@@ -8,7 +8,7 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about automatically redirecting Office 365 Security and Compliance center users to the Microsoft 365 compliance center..
 ms.collection: M365-security-compliance
 ---

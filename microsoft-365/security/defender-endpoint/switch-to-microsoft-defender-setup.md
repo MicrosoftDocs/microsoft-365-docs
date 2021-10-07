@@ -2,8 +2,6 @@
 title: Switch to Microsoft Defender for Endpoint - Setup
 description: Make the switch to Defender for Endpoint. Review the setup process, which includes installing Microsoft Defender Antivirus.
 keywords: migration, Microsoft Defender for Endpoint, antivirus, passive mode, setup process
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -48,12 +46,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. When endpoints running Windows are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus solution. To learn more, see [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-with-defender-for-endpoint).
 
 As you're making the switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. The following table describes what to do on your Windows clients and servers.
-
-<br/><br/>
+</br> </br>
 
 |Endpoint type|What to do|
 |---|---|
-|Windows clients (such as endpoints running Windows 10)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <br/><br/> Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <br/><br/> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
+|Windows clients (such as endpoints running Windows 10 and Windows 11)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <p> Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <p> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <p> Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <p> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
 |Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)|
 
 > [!TIP]
@@ -84,6 +81,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 > The following procedure applies only to endpoints or devices that are running the following versions of Windows:
 >
 > - Windows Server 2019
+> - Windows Server 2022
 > - Windows Server, version 1803 (core-only mode)
 > - Windows Server 2016 (see the following section, [Are you using Windows Server 2016?](#are-you-using-windows-server-2016))
 
@@ -96,7 +94,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Features
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    Dism /online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   # For Windows Server 2019
+   # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
    Then restart the device. 
@@ -184,8 +182,9 @@ The specific exclusions to configure will depend on which version of Windows you
 
 |OS|Exclusions|
 |---|---|
-|Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) or later (See [Windows 10 release information](/windows/release-health/release-information)) <br/><br/> Windows 10, version 1703 or 1709 with [KB4493441](https://support.microsoft.com/help/4493441) installed <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/> [Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <br/><br/> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
-|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <br/><br/> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <br/><br/> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <br/><br/> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <br/><br/> **NOTE**: Monitoring Host Temporary Files 6\45 can be different numbered subfolders. <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <br/><br/> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+|Windows 10, [version 1803](/windows/release-health/status-windows-10-1803) or Windows 11 (See [Windows 10 release information](/windows/release-health/release-information)) <p> Windows 10, version 1703 or 1709 with [KB4493441](https://support.microsoft.com/help/4493441) installed <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019), Windows Server 2022 <p> [Windows Server, version 1803](/windows-server/get-started/whats-new-in-windows-server-1803)|`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe` <p> `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`|
+|[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe` <p> **NOTE**: Monitoring Host Temporary Files 6\45 can be different numbered subfolders. <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe` <p> `C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe`|
+
 
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 

@@ -11,7 +11,7 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
@@ -75,7 +75,7 @@ The following image shows an instance of unwanted software that was detected and
 |Requirement|Details|
 |---|---|
 |Permissions|You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md).|
-|Operating system|Devices must be running one of the following versions of Windows: <ul><li>Windows 10 (all releases)</li><li>Windows Server, version 1803 or newer</li><li>Windows Server 2019</li><li>Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)</li></ul>|
+|Operating system|Devices must be running one of the following versions of Windows: <ul><li>Windows 10 (all releases)</li><li>Windows Server, version 1803 or newer</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)</li></ul>|
 |Microsoft Defender for Endpoint|Devices must be onboarded to Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).|
 |Microsoft Defender Antivirus|Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
 |Cloud-delivered protection|Microsoft Defender Antivirus must be configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).|
@@ -108,7 +108,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 ### What is the difference between active and passive mode?
 
-For endpoints running Windows 10, Windows Server, version 1803 or later, or Windows Server 2019, when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
+For endpoints running Windows 10, Windows Server, version 1803 or later, Windows Server 2019, or Windows Server 2022 when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
 
 > [!NOTE]
 > Microsoft Defender Antivirus can run in passive mode only when the device is onboarded to Microsoft Defender for Endpoint.
@@ -146,6 +146,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows 10 (all releases)
 - Windows Server, version 1803 or newer
 - Windows Server 2019
+- Windows Server 2022
 
 #### What about Windows Server 2016?
 

@@ -2,7 +2,7 @@
 title: Privileged access management in Microsoft 365
 description: Learn how to configure insider risk capabilities across Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:

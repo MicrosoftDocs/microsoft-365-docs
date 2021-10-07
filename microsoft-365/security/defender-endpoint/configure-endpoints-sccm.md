@@ -1,25 +1,23 @@
 ---
-title: Onboard Windows 10 devices using Configuration Manager
+title: Onboard Windows devices using Configuration Manager
 description: Use Configuration Manager to deploy the configuration package on devices so that devices are onboarded to the service.
 keywords: onboard devices using sccm, device management, configure Microsoft Defender for Endpoint devices
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 02/07/2020
+ms.date: 09/22/2021
 ms.technology: mde
 ---
 
-# Onboard the Windows 10 devices using Configuration Manager
+# Onboard the Windows devices using Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,13 +42,15 @@ Based on the version of Configuration Manager you're running, the following clie
 
   - Windows 8.1
   - Windows 10
+  - Windows 11
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server 2016, version 1803 or later
   - Windows Server 2019
+  - Windows Server 2022
 
 > [!NOTE]
-> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019, see, [Onboard Windows servers](configure-server-endpoints.md).
+> For more information on how to onboard Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022, see, [Onboard Windows servers](configure-server-endpoints.md).
 
 ### Onboard devices using System Center Configuration Manager
 
@@ -58,7 +58,7 @@ Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-
 
 1. Open the Configuration Manager configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
-    2. Select Windows 10 as the operating system.
+    2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     4. Select **Download package**, and save the .zip file.
 
@@ -149,8 +149,8 @@ Enable the feature in audit mode for at least 30 days. After this period, review
 For more information, see [Evaluate controlled folder access](evaluate-controlled-folder-access.md).
 
 ## Run a detection test to verify onboarding
-After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
+After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
 ## Offboard devices using Configuration Manager
 
@@ -167,7 +167,7 @@ If you use Microsoft Endpoint Manager current branch, see [Create an offboarding
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \>  **Offboarding**.
-    1. Select Windows 10 as the operating system.
+    1. Select Windows 10 or Windows 11 as the operating system.
     1. In the **Deployment method** field, select **System Center Configuration Manager 2012/2012 R2/1511/1602**.
     1. Select **Download package**, and save the .zip file.
 
@@ -222,9 +222,9 @@ For more information, see [Introduction to compliance settings in System Center 
 
 ## Related topics
 
-- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

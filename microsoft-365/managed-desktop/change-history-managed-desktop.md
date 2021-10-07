@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ---
 
 # Change history for Microsoft Managed Desktop documentation

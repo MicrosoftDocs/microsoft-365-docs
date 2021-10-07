@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -33,6 +33,7 @@ Microsoft Defender Antivirus is automatically installed on endpoints running the
 - Windows Server 2016
 - Windows Server, version 1803, or later
 - Windows Server 2019
+- Windows Server 2022
 
 What happens when another non-Microsoft antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) together with your antivirus protection.
 
@@ -48,8 +49,9 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 |---|---|---|---|
 |Windows 10|Microsoft Defender Antivirus|Active mode|
 |Windows 10|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
-|Windows Server 2016 <br/><br/> Windows Server, version 1803, or newer <br/><br/> Windows Server 2019|Microsoft Defender Antivirus|Active mode|
-|Windows Server 2016 <br/><br/> Windows Server, version 1803, or newer <br/><br/> Windows Server 2019|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
+|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
+
 
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Microsoft Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
 
@@ -66,11 +68,11 @@ If your organization is using a non-Microsoft antivirus/antimalware solution tog
 |---|---|---|---|
 |Windows 10 or later|Microsoft Defender Antivirus|Active mode|
 |Windows 10 or later|A non-Microsoft antivirus/antimalware solution|Passive mode (happens automatically)|
-|Windows Server 2016 <br/><br/> Windows Server, version 1803, or newer <br/><br/> Windows Server 2019|Microsoft Defender Antivirus|Active mode|
-|Windows Server, version 1803, or newer <br/><br/> Windows Server 2019|A non-Microsoft antivirus/antimalware solution|Passive mode (set manually) <sup>[[2](#fn2)]<sup></sup>|
+|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
+|Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Passive mode (set manually) <sup>[[2](#fn2)]<sup></sup>|
 |Windows Server 2016|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[3](#fn3)]</sup>|
 
-(<a id="fn2">2</a>)  On Windows Server, version 1803, or newer, or Windows Server 2019, when you install a non-Microsoft antivirus product, set Microsoft Defender Antivirus to passive mode manually. You can use the **ForceDefenderPassiveMode** registry key to perform this task. To use the registry key, navigate to `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`, and set or create a DWORD entry called `ForceDefenderPassiveMode`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base. For more information, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+(<a id="fn2">2</a>)  On Windows Server, version 1803, or newer, or Windows Server 2019, or Windows Server 2022, when you install a non-Microsoft antivirus product, set Microsoft Defender Antivirus to passive mode manually. You can use the **ForceDefenderPassiveMode** registry key to perform this task. To use the registry key, navigate to `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`, and set or create a DWORD entry called `ForceDefenderPassiveMode`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base. For more information, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 (<a id="fn3">3</a>)  On Windows Server 2016, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Windows Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
 
@@ -87,7 +89,7 @@ For example, [Endpoint detection and response (EDR) in block mode](edr-in-block-
 
 In order for Microsoft Defender Antivirus to run in passive mode, endpoints must meet the following requirements:
 
-- Operating system: Windows 10 or later; Windows Server, version 1803, or newer; or Windows Server 2019
+- Operating system: Windows 10 or later; Windows Server, version 1803, or newer; or Windows Server 2019, or Windows Server 2022
 - Microsoft Defender Antivirus must be installed
 - Another non-Microsoft antivirus/antimalware product must be installed and used as the primary antivirus solution
 - Endpoints must be onboarded to Defender for Endpoint

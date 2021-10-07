@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -55,6 +55,7 @@ Next, you'll need to either select a payload from the pre-existing payload catal
 
 Payloads have a number of data points to help you choose:
 
+- **Language** displays the language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate** counts how many people clicked this payload.
 - **Predicted compromise rate** predicts the percentage of people that will get compromised by this payload based on historical data for the payload across Microsoft Defender for Office 365 customers.
 - **Simulations launched** counts the number of times this payload was used in other simulations.

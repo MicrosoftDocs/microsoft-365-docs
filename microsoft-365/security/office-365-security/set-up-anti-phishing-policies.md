@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.date: 
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection: 
   - M365-security-compliance
@@ -148,6 +148,9 @@ The **Show first contact safety tip** settings is available in EOP and Defender 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
 The first contact safety tip also replaces the need to create mail flow rules (also known as transport rules) that add the header named **X-MS-Exchange-EnableFirstContactSafetyTip** with the value **Enable** to messages (although this capability is still available).
+
+> [!NOTE]
+> If the message has multiple recipients, whether the tip is shown and to whom is based on a majority model. If the majority of recipients have never or don't often receive messages from the sender, then the affected recipients will receive the **Some people who received this message...** tip. If you're concerned that this behavior exposes the communication habits of one recipient to another, you should not enable the first contact safety tip and continue to use mail flow rules instead.
 
 ## Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365
 
