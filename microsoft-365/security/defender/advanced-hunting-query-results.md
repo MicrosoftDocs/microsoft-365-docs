@@ -66,24 +66,9 @@ AlertInfo
 ```
 When rendering the results, a column chart displays each severity value as a separate column:
 
-![Image of advanced hunting query results displayed as a column chart.](../../media/advanced-hunting-column-chart.jpg)
+![Image of advanced hunting query results displayed as a column chart.](../../media/advanced-hunting-column-chart-new.png)
 *Query results for alerts by severity displayed as a column chart*
 
-#### Alert severity by operating system
-You could also use the `summarize` operator to prepare results for charting values from multiple fields. For example, you might want to understand how alert severities are distributed across operating systems (OS). 
-
-The query below uses a `join` operator to pull in OS information from the `DeviceInfo` table, and then uses `summarize` to count values in both the `OSPlatform` and `Severity` columns:
-
-```kusto
-AlertInfo
-| join AlertEvidence on AlertId
-| join DeviceInfo on DeviceId
-| summarize Count = count() by OSPlatform, Severity 
-```
-These results are best visualized using a stacked column chart:
-
-![Image of advanced hunting query results displayed as a stacked chart.](../../media/advanced-hunting-stacked-chart.jpg)
-*Query results for alerts by OS and severity displayed as a stacked chart*
 
 #### Phishing emails across top ten sender domains
 If you're dealing with a list of values that isn’t finite, you can use the `Top` operator to chart only the values with the most instances. For example, to get the top ten sender domains with the most phishing emails, use the query below:
@@ -96,7 +81,7 @@ EmailEvents
 ```
 Use the pie chart view to effectively show distribution across the top domains:
 
-![Image of advanced hunting query results displayed as a pie chart.](../../media/advanced-hunting-pie-chart.jpg)
+![Image of advanced hunting query results displayed as a pie chart.](../../media/advanced-hunting-pie-chart-new.png)
 *Pie chart showing distribution of phishing emails across top sender domains*
 
 #### File activities over time
@@ -139,14 +124,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 
 ![Image of advanced hunting result set.](../../media/work-with-query-tweak-query.png)
 
-## Filter the query results
-The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
 
-Refine your query by selecting the `+` or `-` buttons on the values that you want to include or exclude and then selecting **Run query**.
-
-![Image of advanced hunting filter.](../../media/advanced-hunting-filter.png)
-
-Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
 
 >[!NOTE]
 >Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
