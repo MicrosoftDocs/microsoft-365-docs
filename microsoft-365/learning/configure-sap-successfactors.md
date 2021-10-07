@@ -55,7 +55,7 @@ partners1.enabled=
 
 ![Image of the PARTNER_EXTRACT configuration settings filled in.](media/sap-1.png)
 
-Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in your Microsoft 365 Admin Center.
+Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
 ## Configure the Microsoft 365 admin center
 
