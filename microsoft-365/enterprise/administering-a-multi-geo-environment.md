@@ -13,7 +13,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Admins can learn about how to administer SharePoint and OneDrive services in a multi-geo environment.
 ---
 

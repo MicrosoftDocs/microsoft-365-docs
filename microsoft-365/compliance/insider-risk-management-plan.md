@@ -2,7 +2,7 @@
 title: Plan for insider risk management
 description: Learn how to plan for using insider risk management policies in your organization.
 keywords: Microsoft 365, insider risk, risk management, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
