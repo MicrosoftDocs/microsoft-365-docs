@@ -66,7 +66,12 @@ recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**
 category|String|Category of the alert. Examples include: Execution and credential access. **Optional**
 mitretechniques|String|MITRE techniques code/id (comma separated). For more information, see [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** It is recommended to add a value in category when a MITRE technique.
+GenerateAlert|String|Whether the alert should be genererated or not. Possible Values are: True or False. **Optional**
 
+
+
+> [!NOTE]
+> Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.
 For more information, see [Microsoft Defender for Endpoint alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 ## See also
