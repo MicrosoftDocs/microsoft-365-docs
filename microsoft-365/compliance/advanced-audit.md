@@ -22,10 +22,10 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 
 # Advanced Audit in Microsoft 365
 
-The [unified auditing functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft 365 compliance center and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
+The [Audit functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events (by using Audit log search in the Microsoft 365 compliance center and the Office 365 Management Activity API) that help determine scope of compromise, and faster access to Office 365 Management Activity API.
 
 > [!NOTE]
-> Advanced Audit is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. A Microsoft 365 E5/A5/G5 Compliance or E5/A5/G5 eDiscovery and Audit add-on license should be assigned to users for Advanced Audit features such as long-term retention of audit logs and access to crucial Advanced Audit events for investigations. For more information about licensing, see:<br/>- [Advanced Audit licensing requirements](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Advanced Audit is available for organizations with an Office 365 E5/A5/G5 or Microsoft 365 Enterprise E5/A5/G5 subscription. A Microsoft 365 E5/A5/G5 Compliance or E5/A5/G5 eDiscovery and Audit add-on license should be assigned to users for Advanced Audit features such as long-term retention of audit logs and the generation of Advanced Audit events for investigations. For more information about licensing, see:<br/>- [Advanced Audit licensing requirements](auditing-solutions-overview.md#licensing-requirements)<br/>- [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 This article provides an overview of Advanced Audit capabilities and shows you how to set up users for Advanced Audit.
 
@@ -52,9 +52,9 @@ You can also specify how long to retain audit records that match the policy and 
 
 ## Advanced Audit events
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These crucial events can help you investigate possible breaches and determine the scope of compromise.  In addition to the crucial events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered crucial events and require an [appropriate Advanced Audit license](auditing-solutions-overview.md#licensing-requirements) to be logged.
+Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These events can help you investigate possible breaches and determine the scope of compromise.  In addition to these events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered crucial events and require an [appropriate Advanced Audit license](auditing-solutions-overview.md#licensing-requirements) to start being generated for users with the Advanced Audit license.
 
-Advanced Auditing provides the following crucial events:
+Advanced Auditing provides the following events:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -71,9 +71,9 @@ Advanced Auditing provides the following crucial events:
 
 ### MailItemsAccessed
 
-The MailItemsAccessed event is a mailbox auditing action and is triggered when mail data is accessed by mail protocols and mail clients. The MailItemsAccessed action can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there is no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
+The MailItemsAccessed event is a mailbox auditing action and is triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there is no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
 
-The MailItemsAccessed mailbox action replaces MessageBind in mailbox auditing logging in Exchange Online and provides these improvements:
+The MailItemsAccessed event replaces MessageBind in mailbox auditing logging in Exchange Online and provides these improvements:
 
 - MessageBind was only configurable for AuditAdmin user logon type; it did not apply to delegate or owner actions. MailItemsAccessed applies to all logon types.
 
@@ -157,7 +157,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSha
 
 ### Other Advanced Audit events in Microsoft 365
 
-In addition to the crucial events in Exchange Online and SharePoint Online, there are crucial events in other Microsoft 365 services that are logged when users are assigned the appropriate Advanced Audit licensing. The following Microsoft 365 services provide crucial events. Clink the corresponding link to go to an article that identifies and describes these events.
+In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Advanced Audit licensing. The following Microsoft 365 services provide these events. Clink the corresponding link to go to an article that identifies and describes these events.
 
 - [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
 
@@ -183,17 +183,13 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 To benefit from user-level Advanced Audit capabilities, a user needs to be assigned an E5/A5/G5 license. There are some capabilities that will check for the appropriate license to expose the feature for the user. For example, if you're trying to retain the audit records for a user who isn't assigned the appropriate license for longer than 90 days, the system will return an error message.
 
-**My organization has an E5/A5/G5 subscription, do I need to do anything to get access to audit records for crucial events?**
+**My organization has an E5/A5/G5 subscription, do I need to do anything to get access to audit records for Advanced Audit events?**
 
-For eligible customers and users assigned the appropriate E5/A5/G5 license, there is no action needed to generate access to crucial auditing events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article).
+For eligible customers and users assigned the appropriate E5/A5/G5 license, there is no action needed to get access to Advanced Audit events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article). Note that Advanced Audit events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned. 
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
 Yes. As long as audit records are generated for users with the appropriate license, you'll be able to access these records via the Office 365 Management Activity API.
-
-**Does higher bandwidth mean better latency or higher SLA?**
-
-At this time, high bandwidth provides a better pipeline, especially for organizations with a high volume of auditing signals and significant consumption patterns. More bandwidth can lead to better latency. But there isn't an SLA associated with high bandwidth. Standard latencies are documented, and these latencies don't change with the release of Advanced Audit.
 
 **What happens to my organization's audit log data if I create a 10-year audit log retention policy when the feature was released to general availability but before the required add-on license was made available?**
 
