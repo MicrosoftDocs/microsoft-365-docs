@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -58,8 +58,9 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
 
 > [!NOTE]
-> When using this option on Windows 10 or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
+> When using this option on Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
 >
+> - Windows 11
 > - Windows 10, version 1809 or Windows Server 2019, or Windows Server 2022  - <https://support.microsoft.com/kb/5001384>
 > - Windows 10, version 1909 - <https://support.microsoft.com/kb/4601380>
 > - Windows 10, version 2004 - <https://support.microsoft.com/kb/4601382>
@@ -97,7 +98,7 @@ Configure the static proxy using the Group Policy found here:
 
 2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft defender Antivirus.":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft Defender Antivirus.":::
 
 3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
@@ -170,9 +171,9 @@ If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the 
 In your firewall, open all the URLs where the geography column is WW. For rows where the geography column is not WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
-> settings-win.data.microsoft.com is only needed if you have Windows 10 devices running version 1803 or earlier.<br>
+> settings-win.data.microsoft.com is only needed if you have Windows devices running version 1803 or earlier.<br>
 >
-> URLs that include v20 in them are only needed if you have Windows 10 devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows 10 device running version 1803 or later and onboarded to US Data Storage region.
+> URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
 > If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
@@ -269,5 +270,5 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 - [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

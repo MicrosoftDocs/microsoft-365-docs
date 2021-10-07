@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150s
 description: Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP).
