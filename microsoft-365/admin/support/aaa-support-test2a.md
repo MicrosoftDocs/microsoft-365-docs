@@ -20,7 +20,8 @@ description: "Learn how to get online or phone support for your Microsoft 365 fo
 # Support contacts by country
 
 Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
-Technical support is provided in English 24 hours a day, 7 days a week.\
+Technical support is provided in English 24 hours a day, 7 days a week.
+
 Admins, have your account details ready when you call.
 
 > [!NOTE]
@@ -32,6 +33,8 @@ Admins, have your account details ready when you call.
 - **In the United Kingdom, call 0800 032 6417.**
 
 If your support phone number isn't listed above, use the sections below to find the number for your country or region.
+
+Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#s---z)
 
 ## A - D
 
