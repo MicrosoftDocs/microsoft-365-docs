@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: Admin
 ms.topic: hub-page
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MET150
