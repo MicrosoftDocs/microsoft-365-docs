@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Viva Topics security and privacy"
+title: Security and privacy in Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,11 +8,11 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to plan for Microsoft Viva Topics security and privacy"
+ms.localizationpriority:  medium
+description: Learn how to plan for security and privacy in Microsoft Viva Topics.
 ---
 
-# Microsoft Viva Topics security and privacy
+# Security and privacy in Microsoft Viva Topics
 
 Topics uses existing content security features in Microsoft 365, along with administrative controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and Topics admin settings that determine what a given user can see in topics.
 

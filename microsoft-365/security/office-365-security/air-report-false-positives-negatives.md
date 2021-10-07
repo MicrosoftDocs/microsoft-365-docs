@@ -12,7 +12,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to apply a published a model to a SharePoint document library in Microsoft SharePoint Syntex.
 ---
 

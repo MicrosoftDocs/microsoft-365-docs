@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
@@ -598,7 +598,7 @@ In the details table below the chart, the following information is available:
 - **Subject**
 - **Sender**
 - **Recipients**
-- **Detection tecchnology**
+- **Detection technology**
 - **Delivery Status**
 - **Sender IP**
 - **Tags**

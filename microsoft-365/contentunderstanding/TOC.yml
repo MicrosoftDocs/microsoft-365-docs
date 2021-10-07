@@ -27,6 +27,8 @@
           href: rename-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
+        - name: Use explanation templates 
+          href: explanation-templates.md
         - name: Apply a document understanding model
           href: apply-a-model.md
         - name: Create a form processing model 
