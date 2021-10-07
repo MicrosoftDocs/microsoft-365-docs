@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/05/2021
+ms.date: 10/07/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -94,9 +94,7 @@ Security intelligence update version: update
 
 ### What's new
 - New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
-- Resolved AppCompat issues faster with improved escalation processes
-- Enhancements to harden Microsoft Defender Antivirus against loading malicious DLLs
-- Added trusted installer bypass for [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- Improvements to Microsoft Defender update gradual rollout process
 
 ### Known Issues
 No known issues
