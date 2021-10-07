@@ -9,7 +9,7 @@ ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - M365-security-compliance

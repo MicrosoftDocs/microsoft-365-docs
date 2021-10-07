@@ -11,7 +11,7 @@ search.appverid:
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn about the topic center in Microsoft Viva Topics.
 ---
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db

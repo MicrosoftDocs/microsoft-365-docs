@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,13 +58,9 @@ You'll need to take the following steps to onboard non-Windows devices:
 
 ## Offboard non-Windows devices
 
-1. Follow the third party's documentation to disconnect the third-party solution from Microsoft Defender for Endpoint.
+For macOS and Linux devices, you can choose to offboard through Microsoft Defender for Endpoint. In the navigation pane, select **Settings** \> **Offboard** \> **Select Operating System to start the offboarding Process**.
 
-2. Remove permissions for the third-party solution in your Azure AD tenant.
-   1. Sign in to the [Azure portal](https://portal.azure.com).
-   2. Select **Azure Active Directory > Enterprise Applications**.
-   3. Select the application you'd like to offboard.
-   4. Select the **Delete** button.
+You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://securitycenter.windows.com/interoperability/partners). 
 
 ## Related topics
 

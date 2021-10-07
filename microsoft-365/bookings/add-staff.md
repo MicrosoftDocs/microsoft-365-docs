@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 

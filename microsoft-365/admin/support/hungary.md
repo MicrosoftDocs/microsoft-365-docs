@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
 
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---

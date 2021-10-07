@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MED150
