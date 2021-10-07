@@ -108,4 +108,4 @@ After onboarding the devices, you'll then need to configure the other capabiliti
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
 >[!NOTE]
->Windows 7, 8.1, Windows Server 2008 R2 includes support for AV and System Center Endpoint Protection (SCEP).
+>Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
