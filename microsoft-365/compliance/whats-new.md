@@ -40,8 +40,8 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### App governance
 
-- [Streamlined app governance get started information](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) has a changed workflow and added new links to public preview signup
-- [New detection alerts definition](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
+- [Streamlined app governance get started information](app-governance-get-started.md) has a changed workflow and added new links to public preview signup
+- [New detection alerts definition](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
 
 ### Auditing
 
@@ -53,10 +53,10 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance offerings
 
-- [Multi-Tier Cloud Security (MTCS)](./regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
-- [Payment Card Industry (PCI)](./regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
-- [U.S. Section 508](./regulatory/offering-section-508-vpats) new client software guidance
-- [Web Content Accessibility Guidelines](./regulatory/offering-wcag-2-1) new client software guidance
+- [Multi-Tier Cloud Security (MTCS)](regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](regulatory/offering-section-508-vpats) new client software guidance
+- [Web Content Accessibility Guidelines](regulatory/offering-wcag-2-1) new client software guidance
 
 ### Compliance & service assurance
 
