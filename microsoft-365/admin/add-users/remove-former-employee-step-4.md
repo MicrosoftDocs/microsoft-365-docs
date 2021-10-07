@@ -42,7 +42,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
 
 2. Select a user.
 
-3. In the user properties page, select **OneDrive**. Under **Get access to files**, select **Create link to files**.
+3. On the user properties page, select **OneDrive**. Under **Get access to files**, select **Create link to files**.
 
 4. Select the link to open the file location. Download the files to your computer, or select **Move to** or **Copy to** to move or copy them to your own OneDrive or to a shared library.
 
