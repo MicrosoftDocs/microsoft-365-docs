@@ -12,7 +12,7 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkMAC
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: "Set up SharePoint Syntex"
 ---
 

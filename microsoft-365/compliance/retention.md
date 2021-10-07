@@ -9,11 +9,10 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
-- m365solution-mig
 - m365initiative-compliance
 search.appverid: 
 - MOE150
@@ -143,7 +142,7 @@ With retention labels, you can:
     - Specific keywords that match a query you create.
     - Pattern matches for a trainable classifier.
 
-- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items except calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and for email items.
 
 - **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
@@ -152,8 +151,6 @@ With retention labels, you can:
 Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to mark items as a record. When this happens and the content remains in Microsoft 365, the label places further restrictions on the content that might be needed for regulatory reasons. For more information, see [Compare restrictions for what actions are allowed or blocked](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
-
-There is no limit to the number of retention labels that are supported for a tenant. However, 10,000 is the maximum number of policies that are supported for a tenant and these include the policies that apply the labels (retention label policies and auto-apply retention policies), as well as retention policies.
 
 #### Classifying content without applying any actions
 
@@ -188,11 +185,10 @@ Different types of retention labels can be published to different locations, dep
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange, SharePoint, OneDrive  <br/> |
+|Auto-applied based on keywords or a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
    
-In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
-  
+
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
@@ -417,6 +413,9 @@ Retention actions that are logged as auditing events are available only for rete
 
 - When a labeled item in SharePoint, OneDrive, or Exchange is marked as a record or regulatory record, and it is permanently deleted:
     - From **File and page activities**, select **Deleted file marked as a record**
+
+- When a disposition reviewer takes action for a item that's reached the end of its retention period:
+    -  From **Disposition review activities**, select **Approved disposal**, **Extended retention period**, **Relabeled item**, or **Added reviewers**
 
 ## PowerShell cmdlets for retention policies and retention labels
 

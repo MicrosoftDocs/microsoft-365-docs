@@ -10,7 +10,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.ArchivingHelp'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -27,7 +27,7 @@ description: "Learn how to use the compliance center to enable archive mailboxes
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, users can access and store messages in their archive mailboxes by using Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App). Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
 > [!NOTE]
-> The auto-expanding archiving feature in Microsoft 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Microsoft 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving](unlimited-archiving.md).
+> The auto-expanding archiving feature in Microsoft 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Microsoft 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
 
 ## Get the necessary permissions
 

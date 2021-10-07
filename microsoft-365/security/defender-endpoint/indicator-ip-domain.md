@@ -3,15 +3,13 @@ title: Create indicators for IPs and URLs/domains
 ms.reviewer:
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
 keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,7 +45,7 @@ It's important to understand the following prerequisites prior to creating indic
 
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later.
-- Supported on machines on Windows 10, version 1709 or later.
+- Supported on machines on Windows 10, version 1709 or later, or Windows 11.
 - Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender > Settings > Endpoints > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -16,6 +16,7 @@ ms.date: 09/03/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Deploy, manage, and report on Microsoft Defender Antivirus

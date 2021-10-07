@@ -8,13 +8,14 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure behavioral, heuristic, and real-time protection

@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 06/04/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure Microsoft Defender Antivirus features

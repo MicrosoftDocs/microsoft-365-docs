@@ -40,6 +40,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
+        - name: Communication compliance with SIEM solutions 
+          href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
@@ -82,6 +84,14 @@
           href: information-barriers-edit-segments-policies.md
         - name: Information barriers attributes
           href: information-barriers-attributes.md
+        - name: Information barriers & Microsoft 365 services
+          items:
+            - name: Microsoft Teams and information barriers
+              href: /microsoftteams/information-barriers-in-teams?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json 
+            - name: OneDrive and information barriers
+              href: /onedrive/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
+            - name: SharePoint and information barriers
+              href: /sharepoint/information-barriers?toc=/microsoft-365/compliance/toc.json&bc=/microsoft-365/breadcrumb/toc.json
     - name: Privileged access management
       items:
         - name: Overview
@@ -463,7 +473,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (preview)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
@@ -543,10 +553,10 @@
       items: 
         - name: Enable archive mailboxes
           href: enable-archive-mailboxes.md
-        - name: Overview of unlimited archiving
-          href: unlimited-archiving.md
-        - name: Enable unlimited archiving
-          href: enable-unlimited-archiving.md
+        - name: Overview of auto-expanding archiving
+          href: autoexpanding-archiving.md
+        - name: Enable auto-expanding archiving
+          href: enable-autoexpanding-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
@@ -629,6 +639,8 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Use the KQL editor to build search queries (preview)
+            href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
@@ -645,8 +657,6 @@
             href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Troubleshoot common eDiscovery issues
-            href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
@@ -667,8 +677,6 @@
             href: de-duplication-in-ediscovery-search-results.md
           - name: Decryption in eDiscovery tools
             href: ediscovery-decryption.md
-          - name: Troubleshoot common eDiscovery issues
-            href: ediscovery-troubleshooting-common-issues.md
           - name: Change the size of PST files when exporting search results
             href: change-the-size-of-pst-files-when-exporting-results.md
           - name: Disable reports when you export search results
@@ -709,6 +717,8 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
+          - name: Use the KQL editor to build search queries (preview)
+            href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
           - name: Configure search permissions filtering
@@ -735,10 +745,6 @@
             href: ediscovery-decryption.md
           - name: Collect eDiscovery diagnostic information
             href: ediscovery-diagnostic-info.md 
-          - name: Troubleshoot eDiscovery hold errors
-            href: hold-distribution-errors.md
-          - name: Troubleshoot common eDiscovery issues
-            href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
@@ -806,6 +812,8 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
+            - name: Use the KQL editor to build search queries (preview)
+              href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
         - name: Manage review sets
@@ -889,8 +897,6 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Decryption in eDiscovery tools
               href: ediscovery-decryption.md
-            - name: Troubleshoot eDiscovery hold errors
-              href: hold-distribution-errors.md
             - name: Conversation review sets
               href: conversation-review-sets.md
             - name: CJK language support
@@ -913,8 +919,6 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-    - name: Troubleshoot eDiscovery hold errors
-      href: hold-distribution-errors.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
@@ -975,8 +979,16 @@
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
-        - name: Working with assessment templates
+        - name: Learn about assessment templates
           href: compliance-manager-templates.md
+        - name: Create assessment templates
+          href: compliance-manager-templates-create.md
+        - name: Extend assessment templates
+          href: compliance-manager-templates-extend.md
+        - name: Modify assessment templates
+          href: compliance-manager-templates-modify.md
+        - name: Format template data in Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions
