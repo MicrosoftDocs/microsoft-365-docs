@@ -127,7 +127,7 @@ Debug log files (apart from the 'mdatp diagnostic create' bundle)
 
 /var/log/messages 
 
-semanage fcontext –l > selinux.log 
+semanage fcontext -l > selinux.log 
 ```
  
 
