@@ -1,5 +1,5 @@
 ---
-title: "Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning"
+title: Configure SAP SuccessFactors as a learning source for Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -14,21 +14,26 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
-description: "Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning."
+description: Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning.
 ---
 
-# Configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning
+# Configure SAP SuccessFactors as a learning source for Microsoft Viva Learning
 
-This article will teach you how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning. First you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in your Microsoft 365 Admin Center.
+This article shows you how to configure SAP SuccessFactors as a third-party content source for Microsoft Viva Learning. First, you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in the Microsoft 365 admin center.
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. SAP SuccessFactors content and any associated services are subject to the SAP SuccessFactors privacy and service terms.
 
-## Configure in the SuccessFactors portal
+## Configure the SuccessFactors portal
 
-1. The admin who's going to enable this feature must have access to the SuccessFactors Learning administrator application. the admin should have required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
-2. You need to use the PGP tool to generate the PGP key (Public key, Private Key, Private Key Passphrase) of your preferred size. While generating the PGP key, you can select RSA algorithm, which is recommended. GNUPG tool is one of the PGP keys generation tools that you can use.  
-3. You'll need to fill in the following parameters in the PARTNER_EXTRACT configuration. To edit the partner extract configuration in SuccessFactors, you'll need “Edit System Configuration” workflow permission in SuccessFactors.
+>[!Note]
+> The admin who enables this feature must have access to the SuccessFactors Learning administrator application.
+
+1. Obtain the required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
+
+2. Use the PGP tool to generate the PGP key (Public key, Private Key, Private Key Passphrase) of your preferred size. While generating the PGP key, you can select RSA algorithm, which is recommended. GNUPG tool is one of the PGP keys generation tools that you can use.
+
+3. Fill in the following parameters in the PARTNER_EXTRACT configuration. To edit the partner extract configuration in SuccessFactors, you'll need **Edit System Configuration** workflow permission in SuccessFactors.
 
 ```
 #customer notification email for all job status
@@ -48,19 +53,21 @@ partners1.keyOwner=
 partners1.enabled=
 ```
 
-![Image of the PARTNER_EXTRACT configuration settings filled in](media/sap-1.png)
+![Image of the PARTNER_EXTRACT configuration settings filled in.](media/sap-1.png)
 
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in your Microsoft 365 Admin Center.
 
-## Configure in the Microsoft 365 admin center
+## Configure the Microsoft 365 admin center
 
 1. Navigate to your [Microsoft 365 admin center](https://admin.microsoft.com).
-2. Navigate to **Settings** > **Org settings**. Then search for Viva Learning and enable SAP SuccessFactors from the options.
+
+2. Navigate to **Settings** > **Org settings**. Search for *Viva Learning* and enable SAP SuccessFactors from the options.
+
 3. Fill in the configuration details.
 
 ### Configuration details
 
-![Image of the configuration details filled in in the Microsoft 365 admin center](media/sap-2.png)
+![Image of the configuration details filled in in the Microsoft 365 admin center.](media/sap-2.png)
 
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
@@ -82,13 +89,14 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
 
-![Image of the steps to find your company ID](media/sap-3.png)
+![Image of the steps to find your company ID.](media/sap-3.png)
 
 >[!Note]
-> SuccessFactors courses will start appearing in the Viva Learning app within 7 days of successful setup.
-
->[!Note]
-> Tenant metadata is stored centrally in our data stores, not in geo-specific data stores.
+> SuccessFactors courses will start appearing in Viva Learning within 7 days of successful setup.
 
 >[!Note]
 > All users within an organization will be able to discover all the tenant-specific courses, but they'll only be able to access and consume courses that they have access to. User specific content discovery is planned for future releases.
+
+## Data residency
+
+Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.

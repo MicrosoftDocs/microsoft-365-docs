@@ -1,10 +1,10 @@
 ---
-title: "Configure Saba as a learning content source for Microsoft Viva Learning"
+title: Configure Saba as a learning source for Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 9/21/2021
+ms.date: 10/07/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -14,45 +14,49 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
-description: "Learn how to configure Saba as a learning content source for Microsoft Viva Learning."
+description: Learn how to configure Saba as a learning content source for Microsoft Viva Learning.
 ---
 
-# Configure Saba as a learning content source for Microsoft Viva Learning
+# Configure Saba as a learning source for Microsoft Viva Learning
 
-This article will show you how to configure Saba as a third-party content source for Microsoft Viva Learning. You'll need to be a Saba System Admin or Super User to perform these steps.
+This article shows you how to configure Saba as a third-party learning content source for Microsoft Viva Learning. You must be a Saba System Admin or Super User to perform these steps.
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba’s privacy and service terms.
 
 ## Client’s Host URL
 
-This is your primary Saba Cloud URL (for example "org".sabacloud.com). If your API dashboard URL is org-api.sabacloud.com, your Host URL will be org.sabacloud.com. The API Dashboard URL can be found by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
+1. Identify your primary Saba Cloud URL (for example "org".sabacloud.com). If your API dashboard URL is org-api.sabacloud.com, your Host URL will be org.sabacloud.com.
 
-![Image of the API dashboard](media/saba-1.png)
+2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
+
+![Image of the API dashboard.](media/saba-1.png)
 
 ## Client ID and Client Secret
 
-In the same screen where you got the host URL, copy the Client ID and secret if they've already been generated. If  the Client secret isn't there yet, select the **GENERATE** button to generate it.
+1. On the same screen where you got the host URL, copy the Client ID and Client Secret if they've already been generated.
 
-![Image of the button to generate the Client secret](media/saba-2.png)
+2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
 
-## Username and Password
+![Image of the button to generate the Client secret.](media/saba-2.png)
 
-Provide the username and password of an administrative account for Microsoft Viva to use to pull Courses, Completions, and related information from Saba Cloud via REST API. This account should ideally be a Super user. If they aren't a super user, they must at least have “Learning Admin - Catalog Builder” and “Human Capital Admin” roles (or equivalent custom security roles) in Saba.
+## Username and password
+
+Provide the username and password of an administrative account for Microsoft Viva to use to pull courses, completions, and related information from the Saba Cloud via REST API. This account should ideally be a Super User. If the account isn't a Super User, it must at least have **Learning Admin - Catalog Builder** and **Human Capital Admin** roles (or equivalent custom security roles) in Saba.
 
 ## Last steps
 
-Post the required configuration details on your Microsoft 365 admin center under the Saba Cloud learning source option.  
+Post the required configuration details in the Microsoft 365 admin center under the Saba Cloud learning source option.  
 
-![Image of where you post configuration details in the admin center](media/saba-3.png)
+![Image of where you post configuration details in the admin center.](media/saba-3.png)
 
 > [!Note]
-> For Saba Cloud integration, you need to have a sabacloud.com domain in your Host URL. If you have a different domain name, you'll need to raise a support ticket for allowing your domain name.
+> For Saba Cloud integration, you need to have a sabacloud.com domain in your Host URL. If you have a different domain name, you'll need to raise a support ticket to allow your domain name.
 
 ## Data residency
 
-Tenant metadata is stored centrally in our data stores & not stored in geo-specific data stores.
+Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
 
-## Roles & Permissions
+## Roles and permissions
 
-Currently, all the users within an organization will be able to discover all the tenant-specific courses. However, they'll only be able to access and consume the courses that they have access to. User-specific content discovery (based on roles & permissions) is planned to be rolled out in the future.
+Currently, all the users within an organization will be able to discover all the tenant-specific courses. However, they'll only be able to use the courses that they have access to. User-specific content discovery (based on roles and permissions) is planned to be rolled out in the future.
