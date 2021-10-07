@@ -271,7 +271,7 @@ When you're finished, click **Next**.
 
 On the **Review simulation** page, you can review the details of your simulation.
 
-Click the ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
+Click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a test** button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
