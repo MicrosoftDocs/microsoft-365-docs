@@ -75,6 +75,8 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 - Devices will have a troubleshooting mode active tag in Device Inventory.
 
+> [!NOTE]
+> Policy management changes will be applied to the machine when it is actively in Troubleshooting mode. However, the changes will not take effect until the Troubleshooting mode expires. Additionally, Microsoft Defender Antivirus Platform updates will not be applied during Troubleshooting mode. The updates will be applied once Troubleshooting mode ends with a Windows update.
 
 ## Enable the troubleshooting mode
 
@@ -133,7 +135,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
-For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
+For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=o365-worldwide). 
 
 ### Scenario 3: Application taking longer to perform an action
 
