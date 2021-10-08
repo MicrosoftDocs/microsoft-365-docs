@@ -21,7 +21,7 @@ description: Understand which terms and conditions apply when you're using Viva 
 
 Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms.
 
-- Microsoft Learn content is subject to terms available [here](/en-us/legal/termsofuse) or at a successor location.
+- Microsoft Learn content is subject to terms available [here](/legal/termsofuse) or at a successor location.
 
 - Microsoft 365 Trainings content is subject to terms available [here](https://www.microsoft.com/legal/terms-of-use) or at a successor location.
 

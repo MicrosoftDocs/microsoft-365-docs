@@ -17,17 +17,17 @@
             - name: Configure learning content sources overview
               href: content-sources-365-admin-center.md
             - name: Cornerstone Ondemand
-              href: configure-cornerstone-ondemand.md
+              href: configure-cornerstone-content-source.md
             - name: Saba
-              href: configure-saba.md
+              href: configure-saba-content-source.md
             - name: SAP SuccessFactors
-              href: configure-sap-successfactors.md
+              href: configure-successfactors-content-source.md
             - name: Udemy
-              href: configure-udemy.md
+              href: configure-udemy-content-source.md
             - name: Skillsoft
-              href: configure-skillsoft.md
+              href: configure-skillsoft-content-source.md
             - name: Go1
-              href: configure-go1.md
+              href: configure-go1-content-source.md
         - name: Configure SharePoint as a content source
           href: configure-sharepoint-content-source.md
 

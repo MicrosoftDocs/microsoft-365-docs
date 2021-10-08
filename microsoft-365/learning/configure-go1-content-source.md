@@ -19,8 +19,7 @@ description: Learn how to configure Go1 as a learning content source for Microso
 
 # Configure Go1 as a learning source for Microsoft Viva Learning
 
-
-This article shows you how to configure Go1 as a third-party learning content source in Viva Learning. 
+This article shows you how to configure Go1 as a third-party learning content source in Viva Learning.
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Go1 content and any associated services are subject to Go1’s privacy and service terms.
@@ -63,4 +62,4 @@ First, you'll need to follow these steps to create an app in your Go1 Portal. Th
 
 Copy and paste the values that you've retrieved from your Go1 Portal into the Go1 setup screen in the Microsoft 365 admin center.
 
-Learn more about [how to create a private developer's app for Go1]().
+Learn more about [how to create a private developer's app for Go1](https://help.go1.com/en/articles/4642648-integrate-with-the-go1-api).

@@ -68,4 +68,3 @@ After you've received the required configuration details from Udemy portal by us
     - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.
 
       ![Image of filled in configuration details.](media/udemy-8.png)
-
