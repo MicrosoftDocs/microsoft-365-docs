@@ -298,6 +298,8 @@ To consider when using trainable classifiers to auto-apply retention labels:
 > 
 > During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts and configure this retention policy to retains items for one day, starting the retention period when the content was last modified.
 
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
+
 Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. For more information, see **Identify cloud attachments in Outlook and Teams to support retention in Microsoft 365 Compliance**.
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
@@ -330,7 +332,7 @@ To consider when auto-applying retention labels to cloud attachments:
     - Empty files.
 
 > [!TIP]
-> Because cloud attachments are shared in Exchange emails and Teams messages, consider using a retention label that's configured for the same retention period as retention policies for these workloads, and configure the label retention setting **Start the retention period based on**: to be **When items were labeled**. 
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete settings as your retention policies for Exchange and Teams. In addition, configure the label retention setting **Start the retention period based on** to be **When items were labeled**.
 
 ## How long it takes for retention labels to take effect
 
