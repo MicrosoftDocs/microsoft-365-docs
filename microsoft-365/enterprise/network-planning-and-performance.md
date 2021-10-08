@@ -7,7 +7,7 @@ ms.date: 8/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_O365_Enterprise
 f1.keywords:
 - CSH
