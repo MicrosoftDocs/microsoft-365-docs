@@ -111,7 +111,7 @@ This detection identifies an OAuth app that was found to have bad URL reputation
 
 ### Encoded app name with suspicious consent scopes
 
-**Severity:** Medium
+**Severity**: Medium
 
 **Description**: This detection identifies OAuth apps with characters, such as Unicode or encoded characters, requested for suspicious consent scopes and that accessed users mail folders through the Graph API. This alert can indicate an attempt to camouflage a malicious app as a known and trusted app so that adversaries can mislead the users into consenting to the malicious app.
 
@@ -161,8 +161,6 @@ Follow the tutorial on how to [investigate risky OAuth apps](/cloud-app-security
 ### App with unusual display name and unusual TLD in Reply domain  
 
 **Severity**: Medium  
-
-**Description**
 
 This detection identifies app with unusual display name and redirect to suspicious reply domain with an unusual Top-level domain (TLD) through Graph API. This can indicate an attempt to camouflage a malicious or risky app as a known and trusted app so that adversaries can mislead the users into consenting to their malicious or risky app.  
 
