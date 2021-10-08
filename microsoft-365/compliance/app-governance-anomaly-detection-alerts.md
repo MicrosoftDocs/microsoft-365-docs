@@ -59,6 +59,56 @@ Use the following general guidelines when investigating any type of alert to gai
 
 This section describes alerts indicating that a malicious app may be attempting to maintain their foothold in your organization.  
 
+### App created recently has low consent rate 
+
+**Severity**: Low 
+
+This detection identifies an OAuth app that was created recently and found to have low consent rate. This can indicate a malicious or risky app that lure users in illicit consent grants. 
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app is delivered from an unknown source, then a true positive is indicated.
+
+  **Recommended action**: Review the display name, Reply URLs and domains of the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. If you suspect that an app is suspicious, we recommend that you investigate the app’s name and reply domain in different app stores. When checking app stores, focus on the following types of apps:
+   - Apps that have been created recently
+   - App with unusual display name
+   - Apps with a suspicious Reply domain
+1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
+
+### App with Bad URL Reputation
+
+**Severity**: Medium 
+
+This detection identifies an OAuth app that was found to have bad URL reputation.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that the OAuth app is delivered from an unknown source and redirects to a suspicious URL, then a true positive is indicated.
+
+  **Recommended action**: Review the Reply URLs, domains and scopes requested by the app. Based on your investigation you can choose to ban access to this app. Review the level of permission requested by this app and which users have granted access.
+
+- **FP**: If after investigation, you can confirm that the app has a legitimate business use in the organization.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. If you suspect that an app is suspicious, we recommend that you investigate the app’s name and reply domain in different app stores. When checking app stores, focus on the following types of apps:
+   - Apps that have been created recently
+   - App with unusual display name
+   - Apps with a suspicious Reply domain 
+1. If you still suspect that an app is suspicious, you can research the app display name and reply domain.
+
 ### Encoded app name with suspicious consent scopes
 
 **Severity:** Medium
@@ -139,6 +189,56 @@ If you still suspect that an app is suspicious, you can research the app display
 ## Persistence alerts
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
+
+### App made anomalous Graph calls to Exchange workload post certificate update or addition of new credentials
+
+**Severity**: Medium
+
+**MITRE ID**: T1098.001, T1114
+
+This detection triggers an alert when a Line of Business (LOB) app updated certificate/secrets or added new credentials and within few days post certificate update or addition of new credentials, observed unusual activities or high-volume usage to Exchange workload through Graph API using Machine learning algorithm.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that unusual activities/high volume usage to Exchange workload was performed by the LOB app through Graph API  
+
+  **Recommend action**: Temporarily disable the app and reset the password and then re-enable the app.
+
+- **FP**: If you can confirm that no unusual activities were performed by LOB app or app is intended to do unusually high volume of graph calls.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by this app.
+1. Review the scopes granted by the app.
+1. Review the user activity associated with this app.
+
+### App with suspicious OAuth scope was flagged high-risk by Machine Learning model, made graph calls to read email and created Inbox Rule
+
+**Severity**: Medium 
+
+**MITRE ID**: T1137.005, T1114 
+
+This detection identifies an OAuth App which was flagged high-risk by Machine Learning model that consented to suspicious scopes, creates a suspicious inbox rule, and then accessed users mail folders and messages through the Graph API. Inbox rules, such as forwarding all or specific emails to another email account, and Graph calls to access emails and send to another email account, may be an attempt to exfiltrate information from your organization.
+
+**TP or FP?**
+
+- **TP**: If you can confirm that inbox rule was created by an OAuth third-party app with suspicious scopes delivered from an unknown source, then a true positive is detected.
+
+  **Recommended action**: Disable and remove the app, reset the password, and remove the inbox rule.
+
+Follow the tutorial on how to Reset a password using Azure Active Directory and follow the tutorial on how to remove the inbox rule.
+
+- **FP**: If you can confirm that app created an inbox rule to a new or personal external email account for legitimate reasons.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.
+1. Review the scopes granted by the app.
+1. Review the inbox rule action and condition created by the app.
 
 ### App with Suspicious OAuth scope made graph calls to read email and created Inbox Rule  
 
@@ -315,3 +415,29 @@ This detection identifies that an App consented to high privilege scope, creates
 1. Review the scopes granted by the app.  
 1. Review any inbox rule action created by the app.  
 1. Review any high importance email read activity done by the app.  
+
+## Discovery alerts
+
+### App performed Drive Enumeration
+
+**Severity**: Medium
+
+**MITRE ID**: T1087
+
+This detection identifies an OAuth app that was detected by Machine Learning model performing enumeration on OneDrive files using Graph API.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that unusual activities/usage to OneDrive was performed by the LOB app through Graph API.
+
+  **Recommended action**: Disable and remove the app and reset the password.
+
+- **FP**: If you can confirm that no unusual activities were performed by app.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by this app.
+1. Review the scopes granted by the app.
+1. Review the user activity associated with this app.
