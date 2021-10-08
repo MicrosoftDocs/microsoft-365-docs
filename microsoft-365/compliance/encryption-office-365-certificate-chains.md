@@ -146,7 +146,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Subject** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
 | --- | --- |
 | **Serial Number** | 82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00 |
-| **Public Key Length** | RSA 4096 bit) |
+| **Public Key Length** | RSA 4096 bit |
 | **Signature Algorithm** | sha256WithRSAEncryption |
 | **Validity Not Before** | Jun  4 11:04:38 2015 UTC |
 | **Validity Not After** | Jun  4 11:04:38 2035 UTC |
