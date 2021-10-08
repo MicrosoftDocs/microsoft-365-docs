@@ -40,12 +40,29 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### App governance
 
-- [Streamlined app governance get started information](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) has a changed workflow and added new links to public preview signup
-- [New detection alerts definition](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
+- [Streamlined app governance get started information](app-governance-get-started.md) has a changed workflow and added new links to public preview signup
+- [New detection alerts definition](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
 
 ### Auditing
 
 - [Turn auditing on or off](turn-audit-log-search-on-or-off.md) added new section about how changes to the auditing status in an organization are themselves audited; this means that audit records are logged when auditing is turned on or turned off; you can search the Exchange admin audit log for these audit records
+
+### Communication compliance
+
+- [Communication compliance with SIEM solutions](communication-compliance-siem.md) guidance for communication compliance integration with SIEM solutions)
+
+### Compliance offerings
+
+- [Multi-Tier Cloud Security (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](/compliance/regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](/compliance/regulatory/offering-section-508-vpats) new client software guidance
+- [Web Content Accessibility Guidelines](/compliance/regulatory/offering-wcag-2-1) new client software guidance
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) quarterly review content updates for certifications and statements of applicability
+  - Data-bearing device destruction
+  - DDOS attacks
 
 ### Data connectors
 
@@ -55,6 +72,19 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### eDiscovery
 
 - [Use the KQL editor to build search queries](ediscovery-kql-editor.md) public preview of a new way to create search queries in Content search, Core eDiscovery, and Advanced eDiscovery; the KQL editor provides autocompletion for supported searchable properties and conditions and displays lists of supported values for standard properties and conditions; the KQL editor also provides error detection and suggestions for fixes of potential errors in search queries
+
+### Information barriers
+
+- [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes-preview) new preview feature for information barriers modes
+- [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams) new preview feature for information barriers modes
+- [Information barriers with OneDrive](/onedrive/information-barriers) new preview feature for information barriers modes
+- [Information barriers with SharePoint Online](/sharepoint/information-barriers) new preview feature for information barriers modes
+
+### Insider risk management
+
+- [Get started with insider risk management](insider-risk-management-configure.md#recommended-actions-preview) new preview feature for getting started recommended actions
+- [Investigate insider risk activities](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) new 'Get help managing your insider risk alert queue' guidance section
+- [Get started with insider risk management settings](insider-risk-management-settings.md#admin-notifications) new Admin notifications settings preview feature
 
 ### Retention and records management
 - [Multi-staged disposition review](disposition.md) is now generally available (GA), with new [auditing events](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Multi-staged disposition review lets you specify up to five consecutive stages of disposition review for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
