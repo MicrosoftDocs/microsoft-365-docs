@@ -30,7 +30,7 @@ This article shows you how to configure Saba as a third-party learning content s
 
 2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
 
-![Image of the API dashboard.](media/saba-1.png)
+![Image of the API dashboard.](../media/learning/saba-1.png)
 
 ## Client ID and Client Secret
 
@@ -38,7 +38,7 @@ This article shows you how to configure Saba as a third-party learning content s
 
 2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
 
-![Image of the button to generate the Client secret.](media/saba-2.png)
+    ![Image of the button to generate the Client secret.](../media/learning/saba-2.png)
 
 ## Username and password
 
@@ -48,7 +48,7 @@ Provide the username and password of an administrative account for Microsoft Viv
 
 Post the required configuration details in the Microsoft 365 admin center under the Saba Cloud learning source option.  
 
-![Image of where you post configuration details in the admin center.](media/saba-3.png)
+![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)
 
 > [!Note]
 > For Saba Cloud integration, you need to have a sabacloud.com domain in your Host URL. If you have a different domain name, you'll need to raise a support ticket to allow your domain name.

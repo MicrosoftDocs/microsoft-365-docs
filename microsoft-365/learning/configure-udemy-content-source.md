@@ -28,29 +28,29 @@ Follow these steps to enable the APIs in your Udemy Business environment and gen
 
 1. Navigate to **Manage**, then **Settings**, then **API**. Check the status of your APIs. If they are disabled, you can contact support to have them enabled or follow the steps below to enable them.
 
-    ![Image of the API settings.](media/udemy-1.png)
+    ![Image of the API settings.](../media/learning/udemy-1.png)
 
 2. If the APIs are disabled, navigate to **LMS/LXP integrations**, then **Start Set-up**, then **Other**.
 
-    ![Image of the Start Set Up > Other page.](media/udemy-2.png)
+    ![Image of the Start Set Up > Other page.](../media/learning/udemy-2.png)
 
 3. In the following screen, type in the name of your custom LMS/LXP or third-party application. Then, turn ON/OFF auto-enrollment option and select **Save**. The auto enrollment option allows users that launch a course through their LMS/LXP to automatically be enrolled in Udemy.<!--daisy ask if this needs to be on-->
 
-    ![Image of the LMS/LXP integrations page.](media/udemy-3.png)
+    ![Image of the LMS/LXP integrations page.](../media/learning/udemy-3.png)
 
 4. Once you've saved, your Client ID and Client Secret will be generated and you can copy them from the screen. You can now access the APIs using the provided client credentials.
 
-    ![Image of the generated client ID and secret.](media/udemy-4.png)
+    ![Image of the generated client ID and secret.](../media/learning/udemy-4.png)
 
 5. To access the API endpoints, you need to have your ACCOUNT_ID and endpoint URL. You can access this information and also try out the APIs by navigating to **Manage**, then **Settings**, then **API**. Once you’ve enabled the APIs, you should see the status of the APIs as "Enabled". Select the API documentation link.
 
-    ![Image of the API page.](media/udemy-5.png)
+    ![Image of the API page.](../media/learning/udemy-5.png)
 
 6. Get the API endpoint URL and ACCOUNT_ID from the overview page. Navigate to the supported methods to try out an API call. You're now all set to make calls to the Udemy Business APIs.
 
-    ![Image of the Supported methods page.](media/udemy-6.png)
+    ![Image of the Supported methods page.](../media/learning/udemy-6.png)
 
-    ![Image of the API call page where you can try it out.](media/udemy-7.png)
+    ![Image of the API call page where you can try it out.](../media/learning/udemy-7.png)
 
 ## Configure the Microsoft 365 admin center
 
@@ -67,4 +67,4 @@ After you've received the required configuration details from Udemy portal by us
     - **Client ID**: This is the Client ID gathered from Udemy portal in step 4.
     - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.
 
-      ![Image of filled in configuration details.](media/udemy-8.png)
+      ![Image of filled in configuration details.](../media/learning/udemy-8.png)

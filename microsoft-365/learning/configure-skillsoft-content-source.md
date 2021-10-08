@@ -36,6 +36,6 @@ You'll need to reach out to your Skillsoft account team to enable Viva Learning 
 
 3. Fill in the configuration details you got from your Skillsoft account team.
 
-    ![Image of Organization ID and Service Account Key entered.](media/skillsoft-1.png)
+    ![Image of Organization ID and Service Account Key entered.](../media/learning/skillsoft-1.png)
 
 4. Select **Save** to save the configuration details and complete the setup process.

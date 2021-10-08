@@ -36,17 +36,17 @@ First, you'll need to follow these steps to create an app in your Go1 Portal. Th
 
 3. Select **Developers**.
 
-    ![Image of the Developers option in the Integrations menu.](media/go1-1.png)
+    ![Image of the Developers option in the Integrations menu.](../media/learning/go1-1.png)
 
 4. Select the **Create App** button.
 
-    ![Image of the Create App button.](media/go1-2.png)
+    ![Image of the Create App button.](../media/learning/go1-2.png)
 
 5. Enter a name for the app, for example, "My-go1-viva-integration".
 
 6. Enter a call back URL, for example, "Mycompany.mygo1.com".
 
-    ![Image of the field where you enter the name and callback URL.](media/go1-3.png)
+    ![Image of the field where you enter the name and callback URL.](../media/learning/go1-3.png)
 
 7. Save the information you entered.
 
