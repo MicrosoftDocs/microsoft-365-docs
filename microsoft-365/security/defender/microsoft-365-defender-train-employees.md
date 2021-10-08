@@ -1,7 +1,7 @@
 ---
-title: Training resources for Microsoft 365 Defender
+title: Train employees for Microsoft 365 Defender
 description: Get a list of training resources for Microsoft 365 Defender
-keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response
+keywords: videos, self-help, self-study, ramp-up, instruction, courses
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -24,7 +24,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Training resources for Microsoft 365 Defender
+# Train employees for Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -62,22 +62,22 @@ For self-study, ramp up, onboarding, training
 
 Table/list:
 
-Responding to your first incident
-https://docs.microsoft.com/en-us/microsoft-365/security/defender/first-incident-overview?view=o365-worldwide
-Attack simulation in the eval guide
-https://docs.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide
+| Source | Resource |
+|:-------|:-----|
+| Microsoft 365 Defender documentation | |
+|  | [Responding to your first incident](https://docs.microsoft.com/en-us/microsoft-365/security/defender/first-incident-overview?view=o365-worldwide) |
+|  | [Attack simulation in the eval guide](https://docs.microsoft.com/en-us/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-worldwide) |
+| Microsoft 365 Defender portal learning hub | Microsoft 365 Defender section contains Short & sweet video series- Classifying alerts and incidents |
+| MS Learn modules |  |
+| ![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg) | [Investigate incidents with Microsoft 365 Defender](https://docs.microsoft.com/en-us/learn/modules/defender-investigate-incidents/) - 27 min, 6 Units  |
+| ![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg) | [Automate self-healing with Microsoft 365 Defender](https://docs.microsoft.com/en-us/learn/modules/defender-self-healing/) - 11 min, 5 Units |
+|||
 
-Microsoft 365 Defender portal learning hub
-Microsoft 365 Defender section
-Short & sweet video series- Classifying alerts and incidents
 
-MS Learn
-“Investigate incidents with Microsoft 365 Defender” module
-https://docs.microsoft.com/en-us/learn/modules/defender-investigate-incidents/
-27 min, 6 Units
-“Automate self-healing with Microsoft 365 Defender” module
-https://docs.microsoft.com/en-us/learn/modules/defender-self-healing/
-11 min, 5 Units
+
+
+
+
 
 ### Advanced hunting
 
