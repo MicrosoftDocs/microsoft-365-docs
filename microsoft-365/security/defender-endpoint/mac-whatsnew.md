@@ -2,21 +2,19 @@
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
-ms.topic: conceptual
+ms.topic: reference
 ms.technology: mde
 ---
 
@@ -32,6 +30,20 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > On macOS 11 (Big Sur), Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [this page](mac-sysext-policies.md).
+
+## 101.41.10 (20.121072.14110.0)
+
+- Added new switches to the command-line tool:
+  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
+  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
+  - Control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Changing the product log level now requires elevation
+- Performance improvements & bug fixes
+
+## 101.40.84 (20.121071.14084.0)
+
+- M1 chip native support
+- Performance improvements & bug fixes
 
 ## 101.37.97 (20.121062.13797.0)
 

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive Signal communications data in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
@@ -24,7 +24,7 @@ After Signal Archiver connector data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a connector to archive  Signal communication data in Microsoft 365.
 
-![Signal communications archiving workflow](../media/SignalConnectorWorkflow.png)
+![Signal communications archiving workflow.](../media/SignalConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a Signal Archiver connector. For more information, see [Activating the TeleMessage Signal Archiver for Microsoft 365](https://www.telemessage.com/microsoft-365-activation-for-signal-archiver/).
 

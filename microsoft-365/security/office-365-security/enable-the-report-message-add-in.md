@@ -2,13 +2,13 @@
 title: Enable the Report Message or the Report Phishing add-ins
 f1.keywords:
   - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
@@ -79,7 +79,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 2. Click **GET IT NOW**.
 
-   ![Report Message - Get It Now](../../media/ReportMessageGETITNOW.png)
+   ![Report Message - Get It Now.](../../media/ReportMessageGETITNOW.png)
 
 3. In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.
 
@@ -90,12 +90,12 @@ After the add-in is installed and enabled, you'll see the following icons:
 - In Outlook, the icon looks like this:
 
   > [!div class="mx-imgBorder"]
-  > ![Report Message add-in icon for Outlook](../../media/OutlookReportMessageIcon.png)
+  > ![Report Message add-in icon for Outlook.](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook on the web, the icon looks like this:
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook on the web Report Message add-in icon](../../media/owa-report-message-icon.png)
+  > ![Outlook on the web Report Message add-in icon.](../../media/owa-report-message-icon.png)
 
 ### Get the Report Message add-in for your organization
 
@@ -106,17 +106,17 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
-   ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Services and add-ins page in the Microsoft 365 admin center.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
 
 4. On the next page, click **Choose from the Store**.
 
-   ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
+   ![Deploy a new add-in page.](../../media/NewAddInScreen2.png)
 
-5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Message** and then click **Add**.
+5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find **Report Message** and then click **Add**.
 
-   ![Select add-in search results](../../media/NewAddInScreen3.png)
+   ![Select add-in search results.](../../media/NewAddInScreen3.png)
 
 6. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 
@@ -132,29 +132,29 @@ After the add-in is installed and enabled, you'll see the following icons:
      - **Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.
      - **Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.
 
-   ![Configure add-in page](../../media/configure-add-in.png)
+   ![Configure add-in page.](../../media/configure-add-in.png)
 
    When you're finished, click **Deploy**.
 
 8. In the **Deploy Report Message** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
 
-   ![Deploy Report Message page](../../media/deploy-report-message-page.png)
+   ![Deploy Report Message page.](../../media/deploy-report-message-page.png)
 
 9. On the **Announce add-in** page that appears, review the information, and then click **Close**.
 
-   ![Announce add-in page](../../media/announce-add-in-page.png)
+   ![Announce add-in page.](../../media/announce-add-in-page.png)
 
 ## Review or edit settings for the Report Message add-in
 
 1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
 
-   ![Services and Add-Ins page in the new Microsoft 365 Admin Center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Services and Add-Ins page in the new Microsoft 365 Admin Center.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. Find and select the **Report Message** add-in.
 
 3. In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization. When you're finished, click **Save**.
 
-   ![Settings for the Report Message add-in](../../media/EditReportMessageAddIn.png)
+   ![Settings for the Report Message add-in.](../../media/EditReportMessageAddIn.png)
 
 ## Get the Report Phishing add-in
 
@@ -172,12 +172,12 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  ![Report Phishing add-in icon for Outlook](../../media/Outlook-ReportPhishing.png)
+  ![Report Phishing add-in icon for Outlook.](../../media/Outlook-ReportPhishing.png)
 
 - In Outlook on the web, the icon looks like this:
 
   > [!div class="mx-imgBorder"]
-  > ![Outlook on the web Report Phishing add-in icon](../../media/OWA-ReportPhishing.png)
+  > ![Outlook on the web Report Phishing add-in icon.](../../media/OWA-ReportPhishing.png)
 
 ### Get the Report Phishing add-in for your organization
 
@@ -188,15 +188,15 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
-   ![Services and add-ins page in the Microsoft 365 admin center](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![Services and add-ins page in the Microsoft 365 admin center.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 3. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
 
 4. On the next page, click **Choose from the Store**.
 
-   ![Deploy a new add-in page](../../media/NewAddInScreen2.png)
+   ![Deploy a new add-in page.](../../media/NewAddInScreen2.png)
 
-5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
+5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
 
 6. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
 

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -140,7 +140,7 @@ If you still suspect that an app is suspicious, you can research the app display
 
 This section describes alerts indicating that a malicious actor may be attempting to maintain their foothold in your organization.
 
-### App with Suspicious OAuth scope creates Inbox Rule  
+### App with Suspicious OAuth scope made graph calls to read email and created Inbox Rule  
 
 **Severity**: Medium
 
@@ -265,3 +265,53 @@ This detection identifies App consented to high privilege scope, creates suspici
 1. Review the scopes granted by the app.
 1. Review any inbox rule action created by the app.
 1. Review any email search activities done by the app.
+
+### App made OneDrive / SharePoint search activities and created inbox rule  
+
+**Severity**: Medium
+
+**MITRE ID’s**: T1137, T1213
+
+This detection identifies that an App consented to high privilege scope, created a suspicious inbox rule, and made unusual SharePoint or OneDrive search activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to search and collect specific data from SharePoint or OneDrive from your organization through Graph API.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm any specific data from SharePoint or OneDrive search and collection done through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+
+  **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
+
+- **FP**: If you’re able to confirm app has performed specific data from SharePoint or OneDrive search and collection through Graph API by an OAuth app and created an inbox rule to a new or personal external email account for legitimate reasons.  
+
+  **Recommended Action**: Dismiss the alert  
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. Review the scopes granted by the app.  
+1. Review any inbox rule action created by the app.  
+1. Review any SharePoint or OneDrive search activities done by the app.
+
+### App made high volume of importance mail read and created inbox rule
+
+**Severity**: Medium  
+
+**MITRE IDs**: T1137, T1114
+
+This detection identifies that an App consented to high privilege scope, creates suspicious inbox rule and made a high volume of important mail read activities through Graph API. This can indicate an attempted breach of your organization, such as adversaries attempting to read high importance email from your organization through Graph API.  
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that high volume of important email read through Graph API by an OAuth app with high privilege scope, and the app is delivered from unknown source.  
+
+  **Recommended Action**:  Disable and remove the App, reset the password, and remove the inbox rule.  
+
+- **FP**: If you’re able to confirm app has performed high volume of important email read through Graph API and created an inbox rule to a new or personal external email account for legitimate reasons.  
+
+  **Recommended Action**: Dismiss the alert  
+
+**Understand the scope of the breach**
+
+1. Review all activities done by the app.  
+1. Review the scopes granted by the app.  
+1. Review any inbox rule action created by the app.  
+1. Review any high importance email read activity done by the app.  

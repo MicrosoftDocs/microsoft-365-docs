@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -22,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: "View device policies and actions by signing in to Microsoft 365 for business with global admin credentials."
+description: "View device policies and actions by signing in to Microsoft 365 for business."
 ---
 
 # View and manage policies and devices
@@ -36,7 +37,7 @@ This article applies to Microsoft 365 Business Premium.
 
     On this page, you can create, edit, change target group, or delete a policy.
 
-    ![Screenshot of the Policies page](../../media/devicepolicies.png)
+    ![Screenshot of the Policies page.](../../media/devicepolicies.png)
   
 ## View and manage devices
 
@@ -44,5 +45,5 @@ This article applies to Microsoft 365 Business Premium.
     
     On this page, you can select one or more devices and remove company data. For Windows 10 devices that you have set device protections settings for, you can also choose to reset the device to factory settings.
   
-   ![Manage devices page](../../media/devicesmanage.png)
+   ![Manage devices page.](../../media/devicesmanage.png)
 

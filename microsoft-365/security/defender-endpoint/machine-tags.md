@@ -2,15 +2,13 @@
 title: Create and manage device tags
 description: Use device tags to group devices to capture context and enable dynamic list creation as part of an incident
 keywords: tags, device tags, device groups, groups, remediation, level, rules, aad group, role, assign, rank
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,7 +34,7 @@ You can add tags on devices using the following ways:
 - Setting a registry key value
 
 > [!NOTE]
-> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.  
+> There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
 To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).
 
@@ -61,8 +59,9 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 Tags are added to the device view and will also be reflected on the **Devices list** view. You can then use the **Tags** filter to see the relevant list of devices.
 
->[!NOTE]
-> Filtering might not work on tag names that contain parenthesis.<br>
+> [!NOTE]
+> Filtering might not work on tag names that contain parenthesis.
+>
 > When you create a new tag, a list of existing tags are displayed. The list only shows tags created through the portal. Existing tags created from client devices will not be displayed.
 
 You can also delete tags from this view.
@@ -71,17 +70,19 @@ You can also delete tags from this view.
 
 ## Add device tags by setting a registry key value
 
->[!NOTE]
+> [!NOTE]
 > Applicable only on the following devices:
->- Windows 10, version 1709 or later
->- Windows Server, version 1803 or later
->- Windows Server 2016
->- Windows Server 2012 R2
->- Windows Server 2008 R2 SP1
->- Windows 8.1
->- Windows 7 SP1
+>
+> - Windows 11
+> - Windows 10, version 1709 or later
+> - Windows Server, version 1803 or later
+> - Windows Server 2016
+> - Windows Server 2012 R2
+> - Windows Server 2008 R2 SP1
+> - Windows 8.1
+> - Windows 7 SP1
 
-> [!NOTE] 
+> [!NOTE]
 > The maximum number of characters that can be set in a tag is 200.
 
 Devices with similar tags can be handy when you need to apply contextual action on a specific list of devices.
@@ -92,7 +93,7 @@ Use the following registry key entry to add a tag on a device:
 - Registry key value (REG_SZ): `Group`
 - Registry key data: `Name of the tag you want to set`
 
->[!NOTE]
->The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
-> 
+> [!NOTE]
+> The device tag is part of the device information report that's generated once a day. As an alternative, you may choose to restart the endpoint that would transfer a new device information report.
+>
 > If you need to remove a tag that was added using the above Registry key, clear the contents of the Registry key data instead of removing the 'Group' key.

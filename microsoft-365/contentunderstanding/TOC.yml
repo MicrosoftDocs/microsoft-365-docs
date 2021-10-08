@@ -27,10 +27,14 @@
           href: rename-an-extractor.md
         - name: Explanation types 
           href: explanation-types-overview.md
-        - name: Apply a model
+        - name: Use explanation templates 
+          href: explanation-templates.md
+        - name: Apply a document understanding model
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Publish and discover a model
+          href: model-discovery.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
         - name: Apply a sensitivity label 
@@ -65,6 +69,8 @@
     - name: Setup and administration
       items:
 
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
         
@@ -80,26 +86,8 @@
         - name: Term store reports
           href: term-store-analytics.md
      
-    - name: REST API
-      items:
-        - name: Overview
-          href: rest-api/syntex-model-rest-api.md
-        - name: Create model
-          href: rest-api/rest-createmodel-method.md
-        - name: GetByUniqueId
-          href: rest-api/rest-getbyuniqueid-method.md
-        - name: GetByTitle
-          href: rest-api/rest-getbytitle-method.md
-        - name: Apply model
-          href: rest-api/rest-applymodel-method.md
-        - name: Get model and library information
-          href: rest-api/rest-getmodelandlibraryinfo.md
-        - name: UpdateModelSettings
-          href: rest-api/rest-updatemodelsettings-method.md        
-        - name: BatchDelete
-          href: rest-api/rest-batchdelete-method.md
-        - name: Create classification request
-          href: rest-api/rest-createclassificationrequest.md
+    - name: Extensibility
+      href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
 
 

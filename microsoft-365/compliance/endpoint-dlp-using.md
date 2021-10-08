@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -36,7 +36,7 @@ Or
 - If you want to exclude noisy file paths from monitoring
 
   > [!div class="mx-imgBorder"]
-  > ![DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### File path exclusions
 
@@ -80,9 +80,13 @@ You can use auto-quarantine to prevent an endless chain of DLP notifications for
 
 Prevent people from transferring files protected by your policies via specific Bluetooth apps.
 
-### Browser and domain restrictions
+### Browser and domain restrictions to sensitive data
 
 Restrict sensitive files that match your policies from being shared with unrestricted cloud service domains.
+
+#### Unallowed browsers
+
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
 #### Service domains
 
@@ -95,17 +99,30 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
-#### Unallowed browsers
+### Additional settings for endpoint DLP
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+#### Business justification in policy tips
 
-### Business justification in policy tips
+You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. This is a global setting. You can choose from one the following options:
 
-You can control how users interact with the business justification option in DLP policy tip notifications. This option appears when users perform an activity that's protected by the **Block with override** setting in a DLP policy. You can choose from one the following options:
+- **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
+- **Only show default options**: Users can only select a built-in justification.
+- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end user policy tip notification. 
 
-- By default, users can select either a built-in justification, or enter their own text.
-- Users can only select a built-in justification.
-- Users can only enter their own justification.
+##### Customizing the options in the drop-down menu
+
+You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
+
+
+|Option |default text  |
+|---------|---------|
+|option 1    | **This is part of an established business workflow**  or you can enter customized text        |
+|option 2  |**My manager has approved this action** or you can enter customized text         |
+|option 3   |**Urgent access required; I'll notify my manager separately** or you can enter customized text          |
+|Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
+|option 5    |**Other** or you can enter customized text         |
+
+<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### Always audit file activity for devices
 
@@ -187,7 +204,7 @@ These scenarios require that you already have devices onboarded and reporting in
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 
    > [!div class="mx-imgBorder"]
-   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   > ![turn-on-incident-reports.](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
    
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 
@@ -212,7 +229,7 @@ These scenarios require that you already have devices onboarded and reporting in
 5. Scroll down to the **Audit or restrict activities on Windows device** section and for each activity set the corresponding action to  **Block with override**.
 
    > [!div class="mx-imgBorder"]
-   > ![set block with override action](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   > ![set block with override action.](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
    
 6. Choose **Save**.
 
@@ -225,7 +242,7 @@ These scenarios require that you already have devices onboarded and reporting in
    You'll see a popup like this on the client device:
 
    > [!div class="mx-imgBorder"]
-   > ![endpoint dlp client blocked override notification](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > ![endpoint dlp client blocked override notification.](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. Check Activity explorer for the event.
 
@@ -322,7 +339,7 @@ will leave a .txt file that contains this message
 
 4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
 
-![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined](../media/auto-quarantine-user-notification-toast.png)
+![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined.](../media/auto-quarantine-user-notification-toast.png)
 
 The message reads:
 

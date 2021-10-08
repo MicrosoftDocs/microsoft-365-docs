@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -45,7 +45,7 @@ Watch this short overview of Azure Sentinel integration with Microsoft 365 Defen
 
 Here's how it works.
 
-:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="The flow and sharing of incident data between Microsoft 365 Defender and Azure Sentinel":::
+:::image type="content" source="../../media/microsoft-365-defender-integration-with-azure-sentinel/microsoft-365-defender-integration-with-azure-sentinel.png" alt-text="The flow and sharing of incident data between Microsoft 365 Defender and Azure Sentinel.":::
 
 ## Next steps
 

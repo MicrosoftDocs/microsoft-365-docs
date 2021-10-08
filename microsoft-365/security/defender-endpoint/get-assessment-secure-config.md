@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -82,7 +82,7 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 > [!NOTE]
 >
-> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 > - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
 
 <br>

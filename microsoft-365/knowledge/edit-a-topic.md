@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-topics
 ms.service: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to edit an existing topic in Microsoft Viva Topics.
 
 ---
@@ -99,7 +99,7 @@ Knowledge managers can also edit topics directly from the **Manage topics** page
 
 8. The **Suggested sites** section shows the sites that AI suggests to be associated to the topic. 
 
-   ![Screenshot of Suggested sites section](../media/knowledge-management/suggested-sites-section.png)  
+   ![Screenshot of Suggested sites section.](../media/knowledge-management/suggested-sites-section.png)  
 
     You can change a suggested site to a pinned site by selecting the pinned icon.
 

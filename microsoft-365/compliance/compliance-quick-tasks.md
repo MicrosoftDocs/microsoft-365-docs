@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
 

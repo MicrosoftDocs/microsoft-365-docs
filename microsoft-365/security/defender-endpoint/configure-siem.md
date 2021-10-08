@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -30,10 +30,11 @@ ms.technology: mde
 
 ## Pull detections using security information and events management (SIEM) tools
 
->[!NOTE]
->- [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
->- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
->-The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+> [!NOTE]
+>
+> - [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
+> - [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+> -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 Defender for Endpoint supports security information and event management (SIEM) tools to pull detections. Defender for Endpoint exposes alerts through an HTTPS endpoint hosted in Azure. The endpoint can be configured to pull detections from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for an AAD application that represents the specific SIEM connector installed in your environment.
 
@@ -48,7 +49,7 @@ To use either of these supported SIEM tools, you'll need to:
 
 - [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
 - Configure the supported SIEM tool:
-     - [Configure Micro Focus ArcSight to pull Defender for Endpoint detections](configure-arcsight.md)
-     - Configure IBM QRadar to pull Defender for Endpoint detections For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
+  - [Configure Micro Focus ArcSight to pull Defender for Endpoint detections](configure-arcsight.md)
+  - Configure IBM QRadar to pull Defender for Endpoint detections For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
 
 For more information on the list of fields exposed in the Detection API, see [Defender for Endpoint Detection fields](api-portal-mapping.md).

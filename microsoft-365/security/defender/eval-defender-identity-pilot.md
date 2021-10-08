@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -33,7 +33,7 @@ This article is [Step 3 of 3](eval-defender-identity-overview.md) in the process
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for identity. Note that the recommendations don't include setting up a pilot group. The best practice is to go ahead and install the sensor on all of your servers running Active Directory Domain Services (AD DS) and Active Directory Federated Services (AD FS).
 
-![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment](../../media/defender/m365-defender-identity-pilot-steps.png)
+![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment.](../../media/defender/m365-defender-identity-pilot-steps.png)
 
 The following table describes the steps in the illustration.
 

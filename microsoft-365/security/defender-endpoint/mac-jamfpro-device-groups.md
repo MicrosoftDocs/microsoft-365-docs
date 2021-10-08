@@ -2,15 +2,13 @@
 title: Set up device groups in Jamf Pro
 description: Learn how to set up device groups in Jamf Pro for Microsoft Defender for Endpoint on macOS
 keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -36,15 +34,15 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 2. Select **New**. 
 
-    ![Image of Jamf Pro1](images/jamf-pro-static-group.png)
+    ![Image of Jamf Pro1.](images/jamf-pro-static-group.png)
 
 3. Provide a display name and select **Save**.
 
-    ![Image of Jamf Pro2](images/jamfpro-machine-group.png)
+    ![Image of Jamf Pro2.](images/jamfpro-machine-group.png)
 
 4. Now you will see the **Contoso's Machine Group** under **Static Computer Groups**.
 
-    ![Image of Jamf Pro3](images/contoso-machine-group.png)
+    ![Image of Jamf Pro3.](images/contoso-machine-group.png)
 
 ## Next step
 - [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)

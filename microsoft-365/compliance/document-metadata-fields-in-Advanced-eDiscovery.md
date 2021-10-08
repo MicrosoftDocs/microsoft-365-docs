@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -48,13 +48,13 @@ The following table lists the metadata fields for documents in a review set in a
 |Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
-|Conversation Body|Conversation Body||Conversation body of the item.|
+|Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Name||ConversationName|Name of the channel in Teams. The format of the name depends on the type of channel: <br>Teams channel chats and private channel chats: \<Name of team, name of channel\> <br>Teams 1:1 and group chats: Display name and email address of all chat participants<br>Yammer community: Community name + first 120 chars of a post<br>Yammer private: Sender name and email address + first 120 chars of a message|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
-|Conversation Topic|Conversation Topic||Conversation topic of the item.|
+|Conversation Topic|ConversationTopic||Conversation topic of the item.|
 |Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br> Teams 1:1 and group chats and all Yammer conversations: **Group** for<br>Teams channels and private channels: **Channel**|
 |Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the Teams chat transcript includes an edited message
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
@@ -96,7 +96,7 @@ The following table lists the metadata fields for documents in a review set in a
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
-|Group Id|Group Id|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
+|Group Id|GroupId|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
 |Has attachment|EmailHasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|

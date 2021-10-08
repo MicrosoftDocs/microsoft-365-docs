@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: "Learn how to add licenses to your Microsoft 365 subscription purchased through the third-party partner, recognized by Microsoft."
-ms.date: 04/07/2021
+ms.date: 08/27/2021
 ---
 
 # Add licenses to a subscription purchased through the Volume Licensing Service Center

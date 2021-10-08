@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -121,7 +121,7 @@ Your report will also be customized based on your role.
 
 The table below shows which roles have access to which sections of the report. Other roles within your organization (not listed in the table below) may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
 
-![MCCA - roles](../media/compliance-manager-mcca-roles.png "MCCA roles")
+![MCCA - roles.](../media/compliance-manager-mcca-roles.png "MCCA roles")
 
 Exceptions:
 1. Users won't be able to generate report for IP apart from “Use IRM for Exchange Online” section.
@@ -134,7 +134,7 @@ Exceptions:
 
 The **Solutions Summary** section of the report gives an overview of improvement actions that your organization can take in Compliance Manager to help improve your compliance posture.
 
-![MCCA - solutions summary](../media/compliance-manager-mcca-solutions.png "MCCA Solutions Summary screen")
+![MCCA - solutions summary.](../media/compliance-manager-mcca-solutions.png "MCCA Solutions Summary screen")
 
 MCCA evaluates your current configurations against the recommended improvement actions in Compliance Manager. Any improvement action identified by the MCCA tool as needing attention will be listed in this section.
 

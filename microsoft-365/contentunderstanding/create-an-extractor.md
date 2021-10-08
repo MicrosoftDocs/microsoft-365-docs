@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn how to create an extractor in Microsoft SharePoint Syntex.
 ---
 
@@ -49,7 +49,7 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
 2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
 3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
 
-    ![Advanced settings](../media/content-understanding/select-service-start-date.png) 
+    ![Advanced settings.](../media/content-understanding/select-service-start-date.png) 
 
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 

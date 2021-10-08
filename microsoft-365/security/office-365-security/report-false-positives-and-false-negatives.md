@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
@@ -54,9 +54,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
 
-   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   ![Report Message - More actions.](../../media/report-message-more-actions.png)
 
-   ![Report Message - Junk and Phishing](../../media/report-message-junk-phishing.png)
+   ![Report Message - Junk and Phishing.](../../media/report-message-junk-phishing.png)
 
 2. The selected messages will be sent to Microsoft for analysis and:
    - Moved to the Junk Email folder if they were reported as spam.
@@ -66,9 +66,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**.
 
-   ![Report Message - More actions](../../media/report-message-more-actions.png)
+   ![Report Message - More actions.](../../media/report-message-more-actions.png)
 
-   ![Report Message - Not junk](../../media/report-message-not-junk.png)
+   ![Report Message - Not junk.](../../media/report-message-not-junk.png)
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 

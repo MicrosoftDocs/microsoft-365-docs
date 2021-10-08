@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -43,7 +43,7 @@ On the top navigation you can:
 - Navigate between pages
 - Apply filters
 
-![Image of incidents queue](images/atp-incident-queue.png)
+![Image of incidents queue.](images/atp-incident-queue.png)
 
 ## Sort and filter the incidents queue
 You can apply the following filters to limit the list of incidents and get a more focused view.

@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -49,7 +49,7 @@ To review accounts with these roles, [view Permissions in the Microsoft 365 Defe
 > This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality
-Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
+Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/roles/permissions-reference). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
 [Automated investigation and remediation](m365d-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you must have certain roles assigned in Microsoft 365. To learn more, see [Action center permissions](m365d-action-center.md#required-permissions-for-action-center-tasks).
@@ -64,6 +64,6 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 
 ## Related topics
 - [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
-- [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](/cloud-app-security/manage-admins)

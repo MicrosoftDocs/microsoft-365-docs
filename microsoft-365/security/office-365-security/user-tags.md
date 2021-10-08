@@ -9,7 +9,7 @@ ms.date: 04/21/2021
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -74,7 +74,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page, click ![Create tag icon](../../media/m365-cc-sc-create-icon.png) **Create tag**.
+2. On the **User tags** page, click ![Create tag icon.](../../media/m365-cc-sc-create-icon.png) **Create tag**.
 
 3. The **Create tag** wizard opens in a new flyout. On the **Define tag** page, configure the following settings:
    - **Name**: Enter a unique, descriptive name for the tag. This is the value that you'll see and use. Note that you can't rename a tag after you create it.
@@ -83,16 +83,16 @@ To see how user tags are part of the strategy to help protect high-impact user a
    When you're finished, click **Next**.
 
 4. On the **Assign members** page, do either of the following steps:
-   - Click ![Add members icon](../../media/m365-cc-sc-create-icon.png) **Add members**. In the fly out that appears, do any of the following steps to add individual users or groups:
+   - Click ![Add members icon.](../../media/m365-cc-sc-create-icon.png) **Add members**. In the fly out that appears, do any of the following steps to add individual users or groups:
      - Click in the box and scroll through the list to select a user or group.
      - Click in the box and start typing to filter the list and select a user or group.
      - To add additional values, click in an empty area in the box.
-     - To remove individual entries, click ![Remove entry icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry in the box.
-     - To remove all entries, click ![Remove entry icon](../../media/m365-cc-sc-remove-selection-icon.png) on the **Selected nn users and nn groups** item below the box.
+     - To remove individual entries, click ![Remove entry icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the entry in the box.
+     - To remove all entries, click ![Remove entry icon.](../../media/m365-cc-sc-remove-selection-icon.png) on the **Selected nn users and nn groups** item below the box.
 
      When you're finished, click **Add**.
 
-     Back on the **Assign members** page, you can also remove entries by clicking ![Delete icon](../../media/m365-cc-sc-delete-icon.png) next to the entry.
+     Back on the **Assign members** page, you can also remove entries by clicking ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) next to the entry.
 
    - Click **Import** to select a text file that contains the email addresses of the users or groups. Be sure the text file contains one entry per line.
 
@@ -119,7 +119,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page, select the user tag from the list, and then click ![Edit tag icon](../../media/m365-cc-sc-edit-icon.png) **Edit tag**.
+2. On the **User tags** page, select the user tag from the list, and then click ![Edit tag icon.](../../media/m365-cc-sc-edit-icon.png) **Edit tag**.
 
 3. In the details flyout that appears, the same wizard and settings are available as described in the [Use the Microsoft 365 Defender portal to create user tags](#use-the-microsoft-365-defender-portal-to-create-user-tags) section earlier in this article.
 
@@ -135,6 +135,6 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 1. In the Microsoft 365 Defender portal, go to **Settings** \> **Email & collaboration** \> **User tags**.
 
-2. On the **User tags** page, select the user tag from the list, and then click ![Delete tag icon](../../media/m365-cc-sc-delete-icon.png) **Delete tag**.
+2. On the **User tags** page, select the user tag from the list, and then click ![Delete tag icon.](../../media/m365-cc-sc-delete-icon.png) **Delete tag**.
 
 3. Read the warning in the confirmation dialog that appears, and then click **Yes, remove**.

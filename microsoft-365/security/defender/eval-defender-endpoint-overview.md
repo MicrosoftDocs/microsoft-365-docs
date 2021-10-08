@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -35,7 +35,7 @@ This article outlines the process to enable and pilot Microsoft Defender for End
 
 Use the following steps to enable and pilot Microsoft Defender for Endpoint.
 
-![Steps for adding Microsoft Defender for Endpoint to the Defender evaluation environment](../../media/defender/m365-defender-endpoint-eval-steps.png)
+![Steps for adding Microsoft Defender for Endpoint to the Defender evaluation environment.](../../media/defender/m365-defender-endpoint-eval-steps.png)
 
 
 The following table describes the steps in the illustration.

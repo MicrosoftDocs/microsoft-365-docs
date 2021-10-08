@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -43,7 +43,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
 2. In the log list, under **Log Summary**, scroll until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to
    open the log.
 
-   You can also access the log by expanding **Applications and Services Logs** > **Microsoft** > **Windows** > **SENSE** and click on **Operational**.
+   You can also access the log by expanding **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **SENSE** and click on **Operational**.
 
    > [!NOTE]
    > SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint.
@@ -78,7 +78,7 @@ For example, if devices aren't appearing in the **Devices list**, you might need
    |26|Microsoft Defender for Endpoint service failed to set the onboarding status in the registry. Failure code: `variable`.|The device didn't onboard correctly. <p> It will report to the portal, however the service may not appear as registered in SCCM or the registry.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md).|
    |27|Microsoft Defender for Endpoint service failed to enable SENSE aware mode in Microsoft Defender Antivirus. Onboarding process failed. Failure code: `variable`.|Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Defender for Endpoint.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md). <p> Ensure real-time antimalware protection is running properly.|
    |28|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service registration failed. Failure code: `variable`.|An error occurred with the Windows telemetry service.|[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy). <p> Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md).|
-   |29|Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3|This event occurs when the system can&#39;t read the offboarding parameters.|Ensure the device has Internet access, then run the entire offboarding process again. Ensure the offboarding package hasn't expired.|
+   |29|Failed to read the offboarding parameters. Error type: %1, Error code: %2, Description: %3|This event occurs when the system can't read the offboarding parameters.|Ensure the device has Internet access, then run the entire offboarding process again. Ensure the offboarding package hasn't expired.|
    |30|Microsoft Defender for Endpoint service failed to disable SENSE aware mode in Microsoft Defender Antivirus. Failure code: `variable`.|Normally, Microsoft Defender Antivirus will enter a special passive state if another real-time antimalware product is running properly on the device, and the device is reporting to Defender for Endpoint.|Check that the onboarding settings and scripts were deployed properly. Try to redeploy the configuration packages. <p> See [Onboard Windows 10 devices](configure-endpoints.md). <p> Ensure real-time antimalware protection is running properly.|
    |31|Microsoft Defender for Endpoint Connected User Experiences and Telemetry service unregistration failed. Failure code: `variable`.|An error occurred with the Windows telemetry service during onboarding. The offboarding process continues.|[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled).|
    |32|Microsoft Defender for Endpoint service failed to request to stop itself after offboarding process. Failure code: %1|An error occurred during offboarding.|Reboot the device.|

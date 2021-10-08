@@ -11,11 +11,12 @@ f1_keywords:
 - 'O365E_M365SetupBanner'
 - 'BCS365_M365SetupBanner'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -78,7 +79,7 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
 
-![Screenshot of the Add new users page in the wizard](../../media/addnewuserspage.png)
+![Screenshot of the Add new users page in the wizard.](../../media/addnewuserspage.png)
 
 1. If your Microsoft 365 Business Premium subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 

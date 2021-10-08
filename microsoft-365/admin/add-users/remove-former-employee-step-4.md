@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -110,11 +110,11 @@ To save the email messages, calendar, tasks, and contacts of the former employee
   
 3. Select **Open &amp; Export** \> **Import/Export**.
 
-    ![Import/Export command in the Backstage view](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Export command in the Backstage view.](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Select **Export to a file**, and then select **Next**.
 
-    ![Export to a file option in the Import and Export Wizard](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Export to a file option in the Import and Export Wizard.](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Select **Outlook Data File (.pst)**, and then select **Next**.
 
@@ -123,7 +123,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
     > [!NOTE]
     > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps.
   
-    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked.](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Select **Next**.
 
@@ -160,7 +160,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 2. Select **Import from another program or file**, and then select **Next**.
 
-    ![Import and Export Wizard](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Import and Export Wizard.](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Select **Outlook Data File (.pst)**, and select **Next**.
 

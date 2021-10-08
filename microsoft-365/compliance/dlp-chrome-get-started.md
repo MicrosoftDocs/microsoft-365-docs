@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -249,7 +249,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### Known Issues and Limitations
 

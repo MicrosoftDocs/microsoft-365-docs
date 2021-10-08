@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -34,7 +34,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a collection of alerts related to a given domain address.
+Retrieves the exposure score for each machine group.
 
 ## Permissions
 

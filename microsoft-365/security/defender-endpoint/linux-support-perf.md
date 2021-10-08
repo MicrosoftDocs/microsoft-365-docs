@@ -2,15 +2,13 @@
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, performance
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 mms.collection: 
@@ -46,6 +44,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```bash
     mdatp config real-time-protection --value disabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -60,6 +59,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     > This feature is available in version 100.90.70 or newer.
 
     This feature is enabled by default on the `Dogfood` and `InsiderFast` channels. If you're using a different update channel, this feature can be enabled from the command line:
+
     ```bash
     mdatp config real-time-protection-statistics --value enabled
     ```
@@ -75,6 +75,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```bash
     mdatp config real-time-protection --value enabled
     ```
+
     ```Output
     Configuration property updated
     ```
@@ -95,6 +96,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
     ```bash
     wget -c https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/linux/diagnostic/high_cpu_parser.py
     ```
+
     The output of this command should be similar to the following:
 
     ```Output
@@ -137,7 +139,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     To improve the performance of Defender for Endpoint on Linux, locate the one with the highest number under the `Total files scanned` row and add an exclusion for it. For more information, see [Configure and validate exclusions for Defender for Endpoint on Linux](linux-exclusions.md).
 
-    >[!NOTE]
+    > [!NOTE]
     > The application stores statistics in memory and only keeps track of file activity since it was started and real-time protection was enabled. Processes that were launched before or during periods when real time protection was off are not counted. Additionally, only events which triggered scans are counted.
 
 5. Configure Microsoft Defender for Endpoint on Linux with exclusions for the processes or disk locations that contribute to the performance issues and re-enable real-time protection.
@@ -145,4 +147,5 @@ The following steps can be used to troubleshoot and mitigate these issues:
     For more information, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
 ## See also
+
 - [Investigate agent health issues](health-status.md)

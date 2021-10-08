@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
@@ -28,7 +28,7 @@ Implement Microsoft Information Protection (MIP) to help you discover, classify,
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
-![Image of how MIP helps you discover, classify, and protect sensitive data](../media/powered-by-intelligent-platform.png)
+![Image of how MIP helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
@@ -78,4 +78,4 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 ## Licensing requirements
 
-License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section from the Microsoft 365 licensing documentation, and download the related PDF or Excel.
+License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section from the Microsoft 365 licensing documentation, and download the [related PDF document](https://go.microsoft.com/fwlink/?linkid=2139145)for feature-level licensing requirements.

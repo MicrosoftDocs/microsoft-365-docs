@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - M365-privacy-management
@@ -19,10 +19,6 @@ description: "Learn about the overview and data profile in privacy management an
 ---
 
 # Find and visualize personal data in privacy management (preview)
-
-In this article: learn about the features of the **overview** and **data profile** pages and how they can give insights into your data.
-
-## Purpose of the overview and data profile
 
 Microsoft 365 privacy management provides you with capabilities to find and visualize the personal data in your environment. The solution automates discovery of personal data assets in Exchange, SharePoint, OneDrive, and Teams, and provides dashboards that give key insights into the data. Your privacy administrators can act upon these insights to strengthen your organization's approach to privacy and reduce risk.
 
@@ -42,7 +38,7 @@ The overview page consists of three main sections. Tiles at the top of the page 
 
 #### Policy matches over past 7 days
 
-When policies are set within privacy management, your data will be evaluated for certain conditions that might present privacy risks. Policy matches indicate data discoveries that may need further review or remediation. This card shows the count of any policy matches that have occurred within the last seven days. Matches will be surfaced here whether policies are on or are running in testing mode, so that you can see the results of all your active policies. Clicking this tile will take you to a filtered view of the Policies page of privacy management, showing the policies that have had a match occur within the past seven days.
+When policies are set within privacy management, your data will be evaluated for certain conditions that might present privacy risks. Policy matches indicate data discoveries that may need further review or remediation. This tile shows the count of any policy matches that have occurred within the last seven days. Matches will be surfaced here whether policies are on or are running in testing mode, so that you can see the results of all your active policies. Clicking this tile will take you to a filtered view of the Policies page of privacy management, showing the policies that have had a match occur within the past seven days.
 
 #### Items with personal data
 
@@ -124,18 +120,18 @@ This map view helps you visualize your volume of subject rights requests by the 
 
 ### Personal data type instances detected in Microsoft 365
 
-This card helps you visualize how much personal data exists in your Microsoft 365 environment and how that data is distributed across Exchange, OneDrive, SharePoint, and Teams.
+This tile helps you visualize how much personal data exists in your Microsoft 365 environment and how that data is distributed across Exchange, OneDrive, SharePoint, and Teams.
 
-The bar graph shows the approximate aggregate count of unique personal data type instances found within your content. Examples of data types may include things like credit card numbers and social security numbers. Therefore, a discovered file that contains three credit card numbers and one social security number would contain two unique personal data types and four instances. The lower person of this card shows the unique personal data types within each Microsoft 365 location. It provides a view into the diversity of personal data types detected in your organization’s content.
+The bar graph shows the approximate aggregate count of unique personal data type instances found within your content. Examples of data types may include things like credit card numbers and social security numbers. Therefore, a discovered file that contains three credit card numbers and one social security number would contain two unique personal data types and four instances. The lower portion of this tile shows the unique personal data types within each Microsoft 365 location. It provides a view into the diversity of personal data types detected in your organization’s content.
 
 ### Top personal data types across your organization
 
-This card provides a snapshot of the top personal data types detected in your environment, along with information on how many items contain that personal data type and in what locations.
+This tile provides a snapshot of the top personal data types detected in your environment, along with information on how many items contain that personal data type and in what locations.
 
 ### Personal data by region
 
-For multi-geo environments, this card regionally aggregates personal data type instances found within your content, based on the regions in which this content is hosted. For single-region organizations, this card will show one dot representing your Microsoft 365 service location. Hovering over dots on the map will show the approximate count of personal data type instances discovered in that region.
+For multi-geo environments, this tile regionally aggregates personal data type instances found within your content, based on the regions in which this content is hosted. For single-region organizations, this tile will show one dot representing your Microsoft 365 service location. Hovering over dots on the map will show the approximate count of personal data type instances discovered in that region.
 
 ### Exploring content
 
-Selecting **Explore** on any data profile card will open the content explorer. At this time, you cannot search for a specific content item, and you will not see Teams data in this view. This means that numbers within the content explorer may not match the numbers shown on the data profile page, since the data profile page does include Teams content. Privacy administrators who want further insights into their privacy data may do so here based on personal data type (sensitive information type) or by location (Exchange, OneDrive, or SharePoint).
+Selecting **Explore** on any data profile tile will open the content explorer. At this time, you cannot search for a specific content item, and you will not see Teams data in this view. This means that numbers within the content explorer may not match the numbers shown on the data profile page, since the data profile page does include Teams content. Privacy administrators who want further insights into their privacy data may do so here based on personal data type (sensitive information type) or by location (Exchange, OneDrive, or SharePoint).

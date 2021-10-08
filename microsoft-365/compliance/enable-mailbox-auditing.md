@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -34,7 +34,7 @@ Here are some benefits of mailbox auditing on by default:
 > [!NOTE]
 >
 > - The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this article can help you.
-> - By default, only mailbox audit events for E5 users are available in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
+> - By default, only mailbox audit events for E5 users are available in audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this article.
 
 ## Verify mailbox auditing on by default is turned on
 
@@ -61,9 +61,9 @@ The following table shows the mailbox types that are currently supported by mail
 
 |Mailbox type|Supported|
 |---|:---:|
-|User mailboxes|![Check mark](../media/checkmark.png)|
-|Shared mailboxes|![Check mark](../media/checkmark.png)|
-|Microsoft 365 Group mailboxes|![Check mark](../media/checkmark.png)|
+|User mailboxes|![Check mark.](../media/checkmark.png)|
+|Shared mailboxes|![Check mark.](../media/checkmark.png)|
+|Microsoft 365 Group mailboxes|![Check mark.](../media/checkmark.png)|
 |Resource mailboxes||
 |Public folder mailboxes||
 |
@@ -87,7 +87,7 @@ Logon types classify the user that did the audited actions on the mailbox. The f
 
 The following table describes the mailbox actions that are available in mailbox audit logging for user mailboxes and shared mailboxes.
 
-- A check mark (![Check mark](../media/checkmark.png)) indicates the mailbox action can be logged for the logon type (not all actions are available for all logon types).
+- A check mark (![Check mark.](../media/checkmark.png)) indicates the mailbox action can be logged for the logon type (not all actions are available for all logon types).
 - An asterisk ( <sup>\*</sup> ) after the check mark indicates the mailbox action is logged by default for the logon type.
 - Remember, an admin with Full Access permission to a mailbox is considered a delegate.
 
@@ -98,29 +98,29 @@ The following table describes the mailbox actions that are available in mailbox 
 |Mailbox action|Description|Admin|Delegate|Owner|
 |---|---|:---:|:---:|:---:|
 |**AddFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
-|**ApplyRecord**|An item is labeled as a record.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**Copy**|A message was copied to another folder.|![Check mark](../media/checkmark.png)|||
-|**Create**|An item was created in the Calendar, Contacts, Notes, or Tasks folder in the mailbox (for example, a new meeting request is created). Creating, sending, or receiving a message isn't audited. Also, creating a mailbox folder is not audited.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)|
-|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Note**: Audit records for folder bind actions performed by delegates are consolidated. One audit record is generated for individual folder access within a 24-hour period.|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
-|**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**ApplyRecord**|An item is labeled as a record.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|
+|**Copy**|A message was copied to another folder.|![Check mark.](../media/checkmark.png)|||
+|**Create**|An item was created in the Calendar, Contacts, Notes, or Tasks folder in the mailbox (for example, a new meeting request is created). Creating, sending, or receiving a message isn't audited. Also, creating a mailbox folder is not audited.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)|
+|**FolderBind**|A mailbox folder was accessed. This action is also logged when the admin or delegate opens the mailbox. <br/><br/> **Note**: Audit records for folder bind actions performed by delegates are consolidated. One audit record is generated for individual folder access within a 24-hour period.|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|The user signed into their mailbox.|||![Check mark](../media/checkmark.png)|
-|**MailItemsAccessed**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> Mail data is accessed by mail protocols and clients.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> Mail data is accessed by mail protocols and clients.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**Note**: This value is available only for E3 users (users without E5 or E5 Compliance add-on subscriptions). <p> A message was viewed in the preview pane or opened by an admin.|![Check mark](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
-|**Move**|A message was moved to another folder.|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
-|**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**RecordDelete**|An item that's labeled as a record was soft-deleted (moved to the Recoverable Items folder). Items labeled as records can't be permanently deleted (purged from the Recoverable Items folder).|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
+|**Move**|A message was moved to another folder.|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
+|**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**RecordDelete**|An item that's labeled as a record was soft-deleted (moved to the Recoverable Items folder). Items labeled as records can't be permanently deleted (purged from the Recoverable Items folder).|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
 |**RemoveFolderPermissions**|Although this value is accepted as a mailbox action, it's already included in the **UpdateFolderPermissions** action and isn't audited separately. In other words, don't use this value.||||
 |**SearchQueryInitiated**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> A person uses Outlook (Windows, Mac, iOS, Android, or Outlook on the web) or the Mail app for Windows 10 to search for items in a mailbox.|||![Check mark](../media/checkmark.png)|
-|**Send**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> The user sends an email message, replies to an email message, or forwards an email message.|![Check mark](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
-|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
-|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**Update**|A message or any of its properties was changed.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateCalendarDelegation**|A calendar delegation was assigned to a mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|![Check mark](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateComplianceTag**|A different retention label is applied to a mail item (an item can only have one retention label assigned to it).|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
-|**UpdateFolderPermissions**|A folder permission was changed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**UpdateInboxRules**|An inbox rule was added, removed, or changed. Inbox rules are used to process messages in the user's Inbox based on the specified conditions and take actions when the conditions of a rule are met, such as moving a message to a specified folder or deleting a message.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**Send**|**Note**: This value is available only for E5 or E5 Compliance add-on subscription users. For more information, see [Set up Advanced Audit in Microsoft 365](set-up-advanced-audit.md). <p> The user sends an email message, replies to an email message, or forwards an email message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**SendAs**|A message was sent using the SendAs permission. This means another user sent the message as though it came from the mailbox owner.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
+|**SendOnBehalf**|A message was sent using the SendOnBehalf permission. This means another user sent the message on behalf of the mailbox owner. The message indicates to the recipient who the message was sent on behalf of and who actually sent the message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|A message or any of its properties was changed.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|A calendar delegation was assigned to a mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|![Check mark.](../media/checkmark.png)<sup>\*</sup>||![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateComplianceTag**|A different retention label is applied to a mail item (an item can only have one retention label assigned to it).|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|
+|**UpdateFolderPermissions**|A folder permission was changed. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**UpdateInboxRules**|An inbox rule was added, removed, or changed. Inbox rules are used to process messages in the user's Inbox based on the specified conditions and take actions when the conditions of a rule are met, such as moving a message to a specified folder or deleting a message.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |
 
 > [!IMPORTANT]
@@ -141,12 +141,12 @@ Remember, an admin with Full Access permission to a Microsoft 365 Group mailbox 
 |Mailbox action|Description|Admin|Delegate|Owner|
 |---|---|:---:|:---:|:---:|
 |**Create**|Creation of a calendar Item. Creating, sending, or receiving a message isn't audited.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
-|**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**HardDelete**|A message was purged from the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|A message was deleted and moved to the Deleted Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|A message was sent using the SendAs permission.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|A message was sent using the SendOnBehalf permission.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>||
-|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
-|**Update**|A message or any of its property was changed.|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**SoftDelete**|A message was permanently deleted or deleted from the Deleted Items folder. Soft-deleted items are moved to the Recoverable Items folder.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
+|**Update**|A message or any of its property was changed.|![Check mark.](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|![Check mark](../media/checkmark.png)<sup>\*</sup>|
 |
 
 ### Verify that default mailbox actions are being logged for each logon type
@@ -328,11 +328,11 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 ## More information
 
-- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
+- Although mailbox audit logging on by default is enabled for all organizations, only users with E5 licenses will return mailbox audit log events in [audit log searches in the Microsoft 365 compliance center](search-the-audit-log-in-security-and-compliance.md) or via the [Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) **by default**.
 
   To retrieve mailbox audit log entries for users without E5 licenses, you can:
 
-  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API.
+  - Manually enable mailbox auditing on individual mailboxes (run the command, `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`). After you do this, you can use audit log searches in the Microsoft 365 compliance center or via the Office 365 Management Activity API.
 
     > [!NOTE]
     > If mailbox auditing already appears to be enabled on the mailbox, but your searches return no results, change the value of the _AuditEnabled_ parameter to `$false` and then back to `$true`.

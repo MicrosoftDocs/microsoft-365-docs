@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how to manage topics in the topic center in Microsoft Viva Topics.
 
 ---
@@ -113,7 +113,7 @@ Note that you can still choose to reject a confirmed topic. To do this, go to th
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be listed on the **Published** tab. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-   ![Manage Topics](../media/knowledge-management/manage-topics-new.png)
+   ![Manage Topics.](../media/knowledge-management/manage-topics-new.png)
 
 ## Removed topics
 

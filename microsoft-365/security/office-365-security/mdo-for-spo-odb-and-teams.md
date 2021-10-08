@@ -9,7 +9,7 @@ audience: Admin
 ms.date: 
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -42,17 +42,17 @@ Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by
 
 When Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled and identifies a file as malicious, the file is locked using direct integration with the file stores. The following image shows an example of a malicious file detected in a library.
 
-![Files in OneDrive for Business with one detected as malicious](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+![Files in OneDrive for Business with one detected as malicious.](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
 Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete the blocked file.
 
 Here's an example of what a blocked file looks like on a mobile device:
 
-![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app.](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
 By default, people can download a blocked file. Here's what downloading a blocked file looks like on a mobile device:
 
-![Downloading a blocked file in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+![Downloading a blocked file in OneDrive for Business.](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
 SharePoint Online admins can prevent people from downloading malicious files. For instructions, see [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 
@@ -62,7 +62,7 @@ To learn more about the user experience when a file has been detected as malicio
 
 Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams will show up in [reports for Microsoft Defender for Office 365](view-reports-for-mdo.md) and in [Explorer (and real-time detections)](threat-explorer.md).
 
-As of May 2018, when a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine. For more information, see [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
+When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## Keep these points in mind
 

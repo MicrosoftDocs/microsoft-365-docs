@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -42,6 +42,12 @@ Returns information about all remediation activities.
 [Learn more about remediation activities](tvm-remediation.md).
 
 **URL:** GET: /api/remediationTasks
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```createdon``` and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Permissions
 
@@ -107,7 +113,7 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
             "requesterEmail": "user1@contoso.com",
             "status": "Active",
             "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
-            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ",
+            "description": "Update Silverlight to a later version  to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
             "relatedComponent": "Microsoft Silverlight",
             "targetDevices": 18511,
             "rbacGroupNames": [

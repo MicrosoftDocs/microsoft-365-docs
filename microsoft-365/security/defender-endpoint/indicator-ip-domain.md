@@ -3,15 +3,13 @@ title: Create indicators for IPs and URLs/domains
 ms.reviewer:
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
 keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,8 +45,12 @@ It's important to understand the following prerequisites prior to creating indic
 
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
-- Supported on machines on Windows 10, version 1709 or later. 
-- Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender > Settings > Endpoints > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+- Supported on machines on Windows 10, version 1709 or later, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, and Windows Server 2022.
+   
+    >[!NOTE]
+    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+
+- Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]
@@ -67,16 +69,17 @@ It's important to understand the following prerequisites prior to creating indic
 >
 > There may be up to 2 hours of latency (usually less) between the time the action is taken, and the URL and IP being blocked.
 
-
 When using the warn mode, you can configure the following controls:
 
-**Bypass ability**
+**Bypass ability**:
+
 - Allow button in Edge
 - Allow button on toast (Non-Microsoft browsers)
 - Bypass duration parameter on the indicator
-- Bypass enforcement across Microsoft and Non-Microsoft browsers 
+- Bypass enforcement across Microsoft and Non-Microsoft browsers
 
-**Redirect URL** 
+**Redirect URL**:
+
 - Redirect URL parameter on the indicator
 - Redirect URL in Edge
 - Redirect URL on toast (Non-Microsoft browsers)
@@ -85,7 +88,7 @@ For more information, see [Govern apps discovered by Microsoft Defender for Endp
 
 ## Create an indicator for IPs, URLs, or domains from the settings page
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Indicators** (under **Rules**).
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
 2. Select the **IP addresses or URLs/Domains** tab.
 

@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -15,6 +15,7 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Troubleshoot network protection
@@ -28,8 +29,7 @@ ms.topic: how-to
 > [!TIP]
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
 
-
-When you use [Network protection](network-protection.md) you may encounter issues, such as:
+This article provides troubleshooting information for [network protection](network-protection.md), in cases, such as:
 
 - Network protection blocks a website that is safe (false positive)
 - Network protection fails to block a suspicious or known malicious website (false negative)
@@ -45,7 +45,8 @@ There are four steps to troubleshooting these problems:
 
 Network protection will only work on devices with the following conditions:
 
->[!div class="checklist"]
+> [!div class="checklist"]
+>
 > - Endpoints are running Windows 10 Pro or Enterprise edition, version 1709 or higher.
 > - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [See what happens when you are using a non-Microsoft antivirus solution](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 > - [Real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) is enabled.
@@ -65,7 +66,7 @@ You can enable network protection in audit mode and then visit a website that we
 2. Perform the connection activity that is causing an issue (for example, attempt to visit the site, or connect to the IP address you do or don't want to block).
 
 3. [Review the network protection event logs](network-protection.md#review-network-protection-events-in-windows-event-viewer) to see if the feature would have blocked the connection if it had been set to **Enabled**.
-   
+
    If network protection is not blocking a connection that you are expecting it should block, enable the feature.
 
    ```PowerShell
@@ -78,9 +79,13 @@ If you've tested the feature with the demo site and with audit mode, and network
 
 See [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
-## Exclude website from network protection scope
+## Add exclusions
+The current exclusion options are:
 
-To allow the website that is being blocked (false positive), add its URL to the [list of trusted sites](https://blogs.msdn.microsoft.com/asiatech/2014/08/19/how-to-add-web-sites-to-trusted-sites-via-gpo-from-dc-installed-ie10-or-higher-ie-version/). Web resources from this list bypass the network protection check.
+1.	Setting up a custom allow indicator.
+2.	Using IP exclusions: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
+
 
 ## Collect diagnostic data for file submissions
 
@@ -98,24 +103,24 @@ When you report a problem with network protection, you are asked to collect and 
    mpcmdrun -getfiles
    ```
 
-3. Attach the file to the submission form. By default, diagnostic logs are saved at `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`. 
+3. Attach the file to the submission form. By default, diagnostic logs are saved at `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.
 
 ## Resolve connectivity issues with network protection (for E5 customers)
 
 Due to the environment where network protection runs, Microsoft is unable to see your operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve connectivity issues with network protection, configure one of the following registry keys so that network protection becomes aware of the proxy configuration:
 
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+Set-MpPreference -ProxyServer <proxy IP address: Port>
 ```
 
 ---OR---
 
-
 ```powershell
-reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+Set-MpPreference -ProxyPacUrl <Proxy PAC url>
 ```
 
 You can configure the registry key by using PowerShell, Microsoft Endpoint Manager, or Group Policy. Here are some resources to help:
+
 - [Working with Registry Keys](/powershell/scripting/samples/working-with-registry-keys)
 - [Configure custom client settings for Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
 - [Use Group Policy settings to manage Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
@@ -123,6 +128,7 @@ You can configure the registry key by using PowerShell, Microsoft Endpoint Manag
 ## See also
 
 - [Network protection](network-protection.md)
+- [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 - [Evaluate network protection](evaluate-network-protection.md)
 - [Enable network protection](enable-network-protection.md)
 - [Address false positives/negatives in Defender for Endpoint](defender-endpoint-false-positives-negatives.md)

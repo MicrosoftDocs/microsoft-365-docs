@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,7 +17,9 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft 365 compliance center."
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Assign eDiscovery permissions in the Microsoft 365 compliance center
@@ -26,9 +28,9 @@ If you want people to use any of the [eDiscovery-related tools](ediscovery.md) i
   
 The primary eDiscovery-related role group in Microsoft 365 compliance center is called **eDiscovery Manager**. There are two subgroups within this role group.
   
-- **eDiscovery Managers** - An eDiscovery Manager can use eDiscovery search tools to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage cases in Core eDiscovery and Advanced eDiscovery, add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
+- **eDiscovery Manager** - An eDiscovery Manager can use eDiscovery search tools to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage cases in Core eDiscovery and Advanced eDiscovery, add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
   
-- **eDiscovery Administrators** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can:
+- **eDiscovery Administrator** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can:
   
   - Access all cases that are listed on the **Core eDiscovery** and **Advanced eDiscovery** pages in the Microsoft 365 compliance center.
 
@@ -51,7 +53,7 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
 
 1. Go to <https://compliance.microsoft.com> and sign in using an account that can assign permissions.
   
-2. In the left pane of the Microsoft 365 compliance center, select **Permissions**.
+2. In the left pane, select **Permissions**.
 
 3. On the **Permissions & Roles** page, under **Compliance center**, click **Roles**.
 
@@ -59,9 +61,9 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   
 5. On the **eDiscovery Manager** flyout page, do one of the following based on the eDiscovery permissions that you want to assign.
   
-    **To make a user an eDiscovery Manager:** Next to **eDiscovery Manager**, select **Edit**. On the **Choose eDiscovery Manager** wizard page, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Manager** wizard page, select **Save** to save the changes to the eDiscovery Manager membership.
+    **To make a user an eDiscovery Manager:** Next to **eDiscovery Manager**, select **Edit**. On the **Choose eDiscovery Manager** wizard page, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an eDiscovery manager, and then select **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Manager** wizard page, select **Save** to save the changes to the eDiscovery Manager membership.
   
-    **To make a user an eDiscovery Administrator:** Next to **eDiscovery Administrator**, select **Edit**. On the **Choose eDiscovery Administrator** page, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Administrator** wizard page, select **Save** to save the changes to the eDiscovery Administrator membership.
+    **To make a user an eDiscovery Administrator:** Next to **eDiscovery Administrator**, select **Edit**. On the **Choose eDiscovery Administrator** page, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **Add**. Select the user (or users) you want to add as an **eDiscovery Administrator**, and then  **Add**. When you're finished adding users, select **Done**. Then, on the **Editing Choose eDiscovery Administrator** wizard page, select **Save** to save the changes to the eDiscovery Administrator membership.
   
 > [!NOTE]
 > You can also use the **Add-eDiscoveryCaseAdmin** cmdlet to make a user an eDiscovery Administrator. However, the user must be assigned the Case Management role before you can use this cmdlet to make them an eDiscovery Administrator. For more information, see [Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin). 
@@ -74,14 +76,14 @@ The following table lists the eDiscovery-related RBAC roles in the Microsoft 365
   
 | Role | Compliance Administrator | eDiscovery Manager & Administrator | Organization Management | Reviewer |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|Case Management <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
-|Communication <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Compliance Search <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
-|Custodian <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Review <br/>  | <br/> |![Check mark](../media/checkmark.png) <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> |
+|Case Management <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
+|Communication <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Compliance Search <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Export <br/> | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |
+|Preview <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Review <br/>  | <br/> |![Check mark.](../media/checkmark.png) <br/> | <br/> |![Check mark](../media/checkmark.png) <br/> |
 |RMS Decrypt <br/>  ||![Check mark](../media/checkmark.png) <br/> |||
 |Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/checkmark.png)           <br/> | <br/> |
 ||||
@@ -152,6 +154,30 @@ This role lets users view rights-protected email messages when previewing search
 
 This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md).
 
+## Adding role groups as members of eDiscovery cases
+
+You can add role groups as members of Core eDiscovery and Advanced eDiscovery cases so that members of the role groups can access and perform tasks in the assigned cases. The roles assigned to the role group define what members of the role group can do. Then adding a role group as a member of the case lets members access and perform those tasks in a specific case. For more information about adding role groups as members of cases, see:
+
+- [Get started with Core eDiscovery](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+
+- [Add or remove members from an Advanced eDiscovery case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
+
+With this in mind, it's important to know that if a role is added or removed from a role group, then that role group will be automatically removed as a member of any case the role group is a member of. The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+
+Before you add or remove roles to a role group that may be a member of an eDiscovery case, you can run the following commands in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to get a list of cases the role group is a member of. After you update the role group, you add the role group back as a member of those cases.
+
+### Get a list of role groups assigned to Core eDiscovery cases
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group"
+```
+
+### Get a list of role groups assigned to Advanced eDiscovery cases
+
+```powershell
+Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
+```
+
 ## More information
 
 - **Why create an eDiscovery Administrator?** As previously explained, an eDiscovery Administrator is member of the eDiscovery Manager role group who can view and access all eDiscovery cases in your organization. This ability to access all the eDiscovery cases has two important purposes:
@@ -166,7 +192,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
 
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators.
 

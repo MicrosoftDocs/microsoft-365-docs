@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,10 +25,10 @@ ms.technology: m365d
 
 # Experience Microsoft Defender for Endpoint (MDE) through simulated attacks
 
->[!TIP]
+> [!TIP]
 >
->- Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
->- Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
+> - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 You might want to experience Defender for Endpoint before you onboard more than a few devices to the service. To do this, you can run controlled attack simulations on a few test devices. After running the simulated attacks, you can review how Defender for Endpoint surfaces malicious activity and explore how it enables an efficient response.
 
@@ -40,7 +40,7 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Help** > **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
+1. In **Help** \> **Simulations & tutorials**, select which of the available attack scenarios you would like to simulate:
 
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
 
@@ -50,13 +50,12 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Download the simulation file or copy the simulation script by navigating to **Help** > **Simulations & tutorials**. You can choose to download the file or script on the test device but it's not mandatory.
+3. Download the simulation file or copy the simulation script by navigating to **Help** \> **Simulations & tutorials**. You can choose to download the file or script on the test device but it's not mandatory.
 
 4. Run the simulation file or script on the test device as instructed in the walkthrough document.
 
 > [!NOTE]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
->
 
 ## ALTERNATE TOPIC TEXT
 
@@ -75,26 +74,27 @@ You can also use [Advanced hunting](advanced-hunting-overview.md) to query data 
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://securitycenter.windows.com/tutorials). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
->[!NOTE]
->The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
+> [!NOTE]
+> The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
 
 1. Connect to your device and run an attack simulation by selecting **Connect**.
 
-    ![Image of the connect button for test devices](images/test-machine-table.png)
+    ![Image of the connect button for test devices.](images/test-machine-table.png)
 
 2. Save the RDP file and launch it by selecting **Connect**.
 
-    ![Image of remote desktop connection](images/remote-connection.png)
+    ![Image of remote desktop connection.](images/remote-connection.png)
 
-    >[!NOTE]
-    >If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
-    > ![Image of reset password](images/reset-password-test-machine.png)
+    > [!NOTE]
+    > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
+    >
+    > ![Image of reset password.](images/reset-password-test-machine.png)
     >
     > The device will change it's state to "Executing password reset", then you'll be presented with your new password in a few minutes.
 
 3. Enter the password that was displayed during the device creation step.
 
-   ![Image of window to enter credentials](images/enter-password.png)
+   ![Image of window to enter credentials.](images/enter-password.png)
 
 4. Run Do-it-yourself attack simulations on the device.
 
@@ -104,24 +104,24 @@ If you chose to install any of the supported threat simulators during the lab se
 
 Running threat simulations using third-party platforms is a good way to evaluate Microsoft Defender for Endpoint capabilities within the confines of a lab environment.
 
->[!NOTE]
+> [!NOTE]
+> Before you can run simulations, ensure the following requirements are met:
 >
->Before you can run simulations, ensure the following requirements are met:
-
->- Devices must be added to the evaluation lab
->- Threat simulators must be installed in the evaluation lab
+> - Devices must be added to the evaluation lab
+> - Threat simulators must be installed in the evaluation lab
 
 1. From the portal select **Create simulation**.
 
 2. Select a threat simulator.
 
-    ![Image of threat simulator selection](images/select-simulator.png)
+    ![Image of threat simulator selection.](images/select-simulator.png)
 
 3. Choose a simulation or look through the simulation gallery to browse through the available simulations.
 
-    You can get to the simulation gallery from:
-    - The main evaluation dashboard in the **Simulations overview** tile or
-    - By navigating from the navigation pane **Evaluation and tutorials** > **Simulation & tutorials**, then select **Simulations catalog**.
+   You can get to the simulation gallery from:
+
+   - The main evaluation dashboard in the **Simulations overview** tile or
+   - By navigating from the navigation pane **Evaluation and tutorials** \> **Simulation & tutorials**, then select **Simulations catalog**.
 
 4. Select the devices where you'd like to run the simulation on.
 
@@ -129,8 +129,7 @@ Running threat simulations using third-party platforms is a good way to evaluate
 
 6. View the progress of a simulation by selecting the **Simulations** tab. View the simulation state, active alerts, and other details.
 
-    ![Image of simulations tab](images/simulations-tab.png)
-<br>
+    ![Image of simulations tab.](images/simulations-tab.png)
 
 After running your simulations, we encourage you to walk through the lab progress bar and explore **Microsoft Defender for Endpoint triggered an automated investigation and remediation**. Check out the evidence collected and analyzed by the feature.
 

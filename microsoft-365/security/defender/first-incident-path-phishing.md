@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -34,25 +34,25 @@ Microsoft 365 Defender can help detect malicious attachments delivered via email
 
 For example, an analyst was assigned a multi-stage incident.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Example of a multi-stage incident"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Example of a multi-stage incident."::: 
 
 In the **Alerts** tab of the incident, alerts from Defender for Office 365 and Microsoft Cloud App Security are displayed. The analyst can drill down into the Defender for Office 365 alerts by selecting the email messages alerts. The details of the alert are displayed on the side pane.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Example of an email alert":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Example of an email alert.":::
  
 By scrolling down further, more information is displayed, showing the malicious files and user that was impacted.
 
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Example of user and file impact of an email alert":::
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-impact.png" alt-text="Example of user and file impact of an email alert.":::
   
 Selecting **Open alert page** takes you to the specific alert where various information can be viewed in greater detail by selecting the link. The actual email message can be viewed by selecting **View messages in Explorer** toward the bottom of the panel.
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Example of the details of an alert"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-event-explorer.png" alt-text="Example of the details of an alert."::: 
 
 This takes the analyst to the Threat Management page where the email Subject, Recipient, Sender, and other information are displayed. **ZAP** under **Special Actions** tells the analyst that the Zero-hour auto purge feature was implemented. ZAP automatically detects and removes malicious and spam messages from mailboxes across the organization. For more information, see [Zero-hour auto purge (ZAP) in Exchange Online](../office-365-security/zero-hour-auto-purge.md).
 
 Other actions can be taken on specific messages by selecting **Actions**. 
  
-:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Example of the other actions can be taken on email messages"::: 
+:::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-actions.png" alt-text="Example of the other actions can be taken on email messages."::: 
 
 ## Next step
 

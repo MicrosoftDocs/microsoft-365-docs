@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -81,7 +81,7 @@ There are a few extra concepts that you need to be aware of before you dig into 
 Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft 365 compliance solutions like Endpoint DLP and [Insider Risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
 
 > [!div class="mx-imgBorder"]
-> ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
 Onboarding and offboarding are handled via scripts you download from the Device management center. The center has custom scripts for each of these deployment methods:
 
@@ -92,31 +92,31 @@ Onboarding and offboarding are handled via scripts you download from the Device 
 - VDI onboarding scripts for non-persistent machines
 
 > [!div class="mx-imgBorder"]
-> ![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+> ![device onboarding page.](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
  Use the procedures in [Getting started with Microsoft 365 Endpoint DLP](endpoint-dlp-getting-started.md) to onboard devices.
 
 If you have onboarded devices through [Microsoft Defender for Endpoint](/windows/security/threat-protection/), those devices will automatically show up in the list of devices.
 
 > [!div class="mx-imgBorder"]
-> ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
+> ![managed devices list.](../media/endpoint-dlp-learn-about-2-device-list.png)
 
 ### Viewing Endpoint DLP data
 
 You can view alerts related to DLP policies enforced on endpoint devices by going to the [DLP Alerts Management Dashboard](dlp-configure-view-alerts-policies.md).
 
 > [!div class="mx-imgBorder"]
-> ![Alert info](../media/Alert-info-1.png)
+> ![Alert info.](../media/Alert-info-1.png)
 
 You can also view details of the associated event with rich metadata in the same dashboard
 
 > [!div class="mx-imgBorder"]
-> ![event info](../media/Event-info-1.png)
+> ![event info.](../media/Event-info-1.png)
 
 Once a device is onboarded, information about audited activities flows into Activity explorer even before you configure and deploy any DLP policies that have devices as a location.
 
 > [!div class="mx-imgBorder"]
-> ![endpoint dlp events in activity explorer](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+> ![endpoint dlp events in activity explorer.](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
 
 Endpoint DLP collects extensive information on audited activity.
 
@@ -148,7 +148,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - removable media device serial number
 
 > [!div class="mx-imgBorder"]
-> ![copy to usb activity attributes](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+> ![copy to usb activity attributes.](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
 
 ## Next steps
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - M365-privacy-management
@@ -19,10 +19,6 @@ description: "Learn how to create and manage policies for handling your organiza
 ---
 
 # Create and manage policies in privacy management (preview)
-
-In this article: learn how to build and customize **policies** for handling personal data, get **alerts** about policy matches, and remediate **issues**.
-
-## Purpose of policies
 
 Policies allow you to define the types of privacy risks to look out for in your company’s Microsoft 365 data and establish the preferred outcomes for scenarios where matches are found. Your organization can work from the resulting alerts to review any matching data and remediate issues, all from within the privacy management solution.
 
@@ -98,7 +94,7 @@ When setting up a custom policy, you will be asked to select which types of data
   - U.S. Patriot Act Enhanced
   - U.S. Personally Identifiable Information (PII) Data Enhanced
   - U.S. State Breach Notification Laws Enhanced
-- **Individual sensitive info types**: By choosing specific sensitive information types yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data of to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
+- **Individual sensitive info types**: By choosing specific sensitive information types yourself, like Social Security numbers or driver’s license information, you can customize your own group or groups of data to look out for. This wizard allows you to select from the complete list of sensitive information types within privacy management. Each information type has its own properties. Use the info button beside any of them for details and notes about recommended settings. If you create more than one group, the wizard lets you apply Boolean operators to relate them and define their order of operations.
 
 If you use pre-set classification groups, you cannot also select individual types or create your own groups. For the most flexibility, choose individual sensitive info types. To utilize the most common standards, choose from the classification groups.
 

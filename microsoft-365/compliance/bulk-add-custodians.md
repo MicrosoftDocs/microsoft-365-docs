@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -29,7 +29,7 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 3. On the **Import custodians** flyout page, click **Download a blank template** to download a custodian template CSV file.
 
-   ![Download a CSV template from Import custodians flyout page](../media/ImportCustodians1.png)
+   ![Download a CSV template from Import custodians flyout page.](../media/ImportCustodians1.png)
 
 4. Add the custodial information to the CSV file and save it to your local computer. See the [Custodian CSV file](#custodian-csv-file) section for information about the required properties in the CSV file.
 

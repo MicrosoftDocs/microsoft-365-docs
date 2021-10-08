@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.date: 09/30/2020
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -60,7 +60,7 @@ There are two types of managed authentication:
 
 With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Azure AD so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Azure AD. 
 
-![Password hash synchronization (PHS)](../media/plan-for-directory-synchronization/phs-authentication.png)
+![Password hash synchronization (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
 
 When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The user passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected.
   
@@ -70,7 +70,7 @@ See [choosing the right authentication method](/azure/active-directory/hybrid/ch
 
 PTA provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your AD DS. With PTA, you synchronize AD DS user accounts with Microsoft 365 and manage your users on-premises. 
 
-![Pass-through authentication (PTA)](../media/plan-for-directory-synchronization/pta-authentication.png)
+![Pass-through authentication (PTA).](../media/plan-for-directory-synchronization/pta-authentication.png)
 
 PTA allows your users to sign in to both on-premises and Microsoft 365 resources and applications using their on-premises account and password. This configuration validates users passwords directly against your on-premises AD DS without storing password hashes in Azure AD. 
 

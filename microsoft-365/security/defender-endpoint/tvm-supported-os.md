@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -50,6 +50,7 @@ Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
 Windows Server 2019|Yes|Yes|Yes|Yes|Yes
+Windows Server 2022|Yes|Yes|Yes|Yes|Yes
 macOS 10.14 "Mojave" and above|Yes|Yes|Yes|Yes|Yes 
 Red Hat Enterprise Linux 7.2 or higher (\* See "Important" notice below)|Yes|Yes|Yes|Yes|Yes
 CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes

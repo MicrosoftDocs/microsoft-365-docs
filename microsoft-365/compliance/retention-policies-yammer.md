@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -73,7 +73,7 @@ After a retention policy is configured for Yammer messages, the paths the conten
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Yammer messages](../media/yammerretentionlifecycle.png)
+![Diagram of retention flow for Yammer messages.](../media/yammerretentionlifecycle.png)
 
 For the two paths in the diagram:
 

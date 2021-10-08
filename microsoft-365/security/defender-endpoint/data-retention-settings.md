@@ -2,15 +2,13 @@
 title: Verify data storage location and update data retention settings
 description: Verify data storage location and update data retention settings for Microsoft Defender for Endpoint
 keywords: data, storage, settings, retention, update
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -37,14 +35,14 @@ After completing the onboarding, you can verify your selection in the data reten
 During the [Set up phase](production-deployment.md), you would have selected the location to store your data. 
 
 
-You can verify the data location by navigating to **Settings** > **Endpoints** > **Data retention** (under **General**).
+You can verify the data location by navigating to **Settings** \> **Endpoints** \> **Data retention** (under **General**).
 
 
 ## Update data retention settings
 
 You can update the data retention settings. By default, the retention period is 180 days. 
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Data retention** (under **General**).
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Data retention** (under **General**).
 
 2. Select the data retention duration from the drop-down list.
 

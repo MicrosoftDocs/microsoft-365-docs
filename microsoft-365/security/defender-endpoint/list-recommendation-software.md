@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
@@ -41,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|SecurityRecommendation.Read.All|'Read Threat and Vulnerability Management security recommendation information'
+Application|Software.Read.All|'Read Threat and Vulnerability Management Software information'
 Delegated (work or school account)|SecurityRecommendation.Read|'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request

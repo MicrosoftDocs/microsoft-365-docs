@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
@@ -51,7 +51,7 @@ It's a great time to explore your options and prepare a migration plan. You can:
 
 Here are the three paths you can take to avoid the end of support for Exchange Server 2010.
 
-![Exchange Server 2010 upgrade paths](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
+![Exchange Server 2010 upgrade paths.](../media/exchange-2010-end-of-support/exchange-2010-end-of-support-options.png)
 
 The following sections explore each option in more detail.
 
@@ -218,7 +218,7 @@ Use the following resources to help with your migration:
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![End of support for Office 2010 clients and servers and Windows 7 poster](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster illustrates the various paths you can take to respond to Office 2010 client and server products and Windows 7 reaching end of support, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
 

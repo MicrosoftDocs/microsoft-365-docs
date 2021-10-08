@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
@@ -49,7 +49,7 @@ You can also manually onboard individual devices to Microsoft 365 Endpoint data 
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
@@ -79,7 +79,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 8.  Right-click **Command prompt** and select **Run as administrator**.
 
-    ![Window Start menu pointing to Run as administrator](../media/dlp-run-as-admin.png)
+    ![Window Start menu pointing to Run as administrator.](../media/dlp-run-as-admin.png)
 
 9.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*
 

@@ -11,12 +11,12 @@ ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: 
   - next-gen
   - edr
-ms.collection: 
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Feedback-loop blocking
