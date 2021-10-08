@@ -33,10 +33,10 @@ This article provides an overview of Advanced Audit capabilities and shows you h
 
 Advanced Audit retains all Exchange, SharePoint, and Azure Active Directory audit records for one year. This is accomplished by a default audit log retention policy that retains any audit record that contains the value of **Exchange**, **SharePoint**, or **AzureActiveDirectory** for the **Workload** property (which indicates the service in which the activity occurred) for one year. Retaining audit records for longer periods can help with on-going forensic or compliance investigations. For more information, see the "Default audit log retention policy" section in [Manage audit log retention policies](audit-log-retention-policies.md#default-audit-log-retention-policy).
 
-In addition to the one year retention capabilities of Advanced Audit, we have also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
+In addition to the one-year retention capabilities of Advanced Audit, we have also released the capability to retain audit logs for 10 years. The 10-year retention of audit logs helps support long running investigations and respond to regulatory, legal, and internal obligations.
 
 > [!NOTE]
-> Retaining audit logs for 10 years will require an additional per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period. This policy is not retroactive and can't retain audit logs that were generated before the the 10-year audit log retention policy was created. For more information, see the [FAQs for Advanced Audit](#faqs-for-advanced-audit) section in this article.
+> Retaining audit logs for 10 years will require an additional per-user add-on license. After this license is assigned to a user and an appropriate 10-year audit log retention policy is set for that user, audit logs covered by that policy will start to be retained for the 10-year period. This policy is not retroactive and can't retain audit logs that were generated before the 10-year audit log retention policy was created. For more information, see the [FAQs for Advanced Audit](#faqs-for-advanced-audit) section in this article.
 
 ### Audit log retention policies
 
@@ -52,9 +52,9 @@ You can also specify how long to retain audit records that match the policy and 
 
 ## Advanced Audit events
 
-Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to crucial events such as when mail items were accessed, or when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These events can help you investigate possible breaches and determine the scope of compromise.  In addition to these events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered crucial events and require an [appropriate Advanced Audit license](auditing-solutions-overview.md#licensing-requirements) to start being generated for users with the Advanced Audit license.
+Advanced Audit helps organizations to conduct forensic and compliance investigations by providing access to important events such as when mail items were accessed, when mail items were replied to and forwarded, and when and what a user searched for in Exchange Online and SharePoint Online. These events can help you investigate possible breaches and determine the scope of compromise. In addition to these events in Exchange and SharePoint, there are events in other Microsoft 365 services that are considered important events and require that users are assigned the [appropriate Advanced Audit license](auditing-solutions-overview.md#licensing-requirements). Users must be assigned an Advanced Audit license so that audit logs will be generated when users perform these events.
 
-Advanced Auditing provides the following events:
+Advanced Audit provides the following events:
 
 - [MailItemsAccessed](#mailitemsaccessed)
 
@@ -157,7 +157,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSha
 
 ### Other Advanced Audit events in Microsoft 365
 
-In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Advanced Audit licensing. The following Microsoft 365 services provide these events. Clink the corresponding link to go to an article that identifies and describes these events.
+In addition to the events in Exchange Online and SharePoint Online, there are events in other Microsoft 365 services that are logged when users are assigned the appropriate Advanced Audit licensing. The following Microsoft 365 services provide Advanced Audit events. Select the corresponding link to go to an article that identifies and describes these events.
 
 - [Microsoft Forms](search-the-audit-log-in-security-and-compliance.md#microsoft-forms-activities)
 
@@ -173,7 +173,7 @@ Organizations that access auditing logs through the Office 365 Management Activi
 
 With the release of Advanced Audit, we're moving from a publisher-level limit to a tenant-level limit. The result is that each organization will get their own fully allocated bandwidth quota to access their auditing data. The bandwidth is not a static, predefined limit but is modeled on a combination of factors including the number of seats in the organization and that E5/A5/G5 organizations will get more bandwidth than non-E5/A5/G5 organizations.
 
-All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5/A5/G5 organizations will get about twice as much bandwidth as non-E5/A5/G5 organizations. There will also be cap on the maximum bandwidth to protect the health of the service.
+All organizations are initially allocated a baseline of 2,000 requests per minute. This limit will dynamically increase depending on an organization's seat count and their licensing subscription. E5/A5/G5 organizations will get about twice as much bandwidth as non-E5/A5/G5 organizations. There will also be a cap on the maximum bandwidth to protect the health of the service.
 
 For more information, see the "API throttling" section in [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
@@ -185,7 +185,7 @@ To benefit from user-level Advanced Audit capabilities, a user needs to be assig
 
 **My organization has an E5/A5/G5 subscription, do I need to do anything to get access to audit records for Advanced Audit events?**
 
-For eligible customers and users assigned the appropriate E5/A5/G5 license, there is no action needed to get access to Advanced Audit events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article). Note that Advanced Audit events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned. 
+For eligible customers and users assigned the appropriate E5/A5/G5 license, there is no action needed to get access to Advanced Audit events, except for enabling the SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint events (as previously described in this article). Advanced Audit events will only be generated for users with E5/A5/G5 licenses once those licenses have been assigned.
 
 **Are the new events in Advanced Audit available in the Office 365 Management Activity API?**
 
