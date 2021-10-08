@@ -83,8 +83,8 @@ All our updates contain
 <details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
-&ensp;Security intelligence update version: **1.349.22.0**<br/>
-&ensp;Released: **October 5th, 2021**<br/>
+&ensp;Security intelligence update version: **1.351.7.0**<br/>
+&ensp;Released: **October 7th, 2021**<br/>
 &ensp;Platform: **4.18.2109.6**<br/>
 &ensp;Engine: **1.1.18600.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
