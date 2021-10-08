@@ -89,7 +89,7 @@ For self-study, ramp up, onboarding, training
 |  | [Get expert training on advanced hunting](advanced-hunting-expert-training.md) |
 |  | [Hunt for ransomware](advanced-hunting-find-ransomware.md) |
 | Microsoft Learn module: |  |
-| ![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg) | [Locate threats using advanced hunting with Microsoft 365 Defender](https://docs.microsoft.com/learn/modules/defender-advanced-hunting/) - 30 min, 6 Units |
+| ![Locate threats using advanced hunting training icon.](../../media/microsoft-365-defender-train-employees/m365-defender-locate-threats.svg) | [Locate threats using advanced hunting with Microsoft 365 Defender](https://docs.microsoft.com/learn/modules/defender-advanced-hunting/) - 30 min, 6 Units |
 |||
 
 
