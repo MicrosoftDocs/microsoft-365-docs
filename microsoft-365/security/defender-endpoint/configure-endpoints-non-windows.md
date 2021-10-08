@@ -63,7 +63,6 @@ For macOS and Linux devices, you can choose to offboard through Microsoft Defend
 You can also offboard non-Windows devices by disabling the third-party integration. Enable coverage for devices running non-Windows platforms by [integrating third-party solutions](https://securitycenter.windows.com/interoperability/partners). 
 
 ## Related topics
-
 - [Onboard Windows devices](configure-endpoints.md)
 - [Onboard servers](configure-server-endpoints.md)
 - [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
