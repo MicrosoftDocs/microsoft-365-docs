@@ -52,7 +52,7 @@ Because Microsoft wants to keep our customers secure by default, some tenants ov
 - Exchange mail flow rules (also known as transport rules)
 
 > [!NOTE]
-> In case, a third party spam filter exists or MX record is not point to EOP, tenant overrides are applied.
+> If a third-party spam filter exists or the MX record does not point to EOP, tenant overrides are applied.
 
 More information on these overrides can be found in [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
