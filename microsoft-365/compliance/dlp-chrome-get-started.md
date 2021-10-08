@@ -110,7 +110,7 @@ This is the recommended method.
 
 Use this setup method for organization-wide deployments.
 
-##### Enabling Required Registry Key via Microsoft Endpoint Manager
+##### Enabling Required Registry Value via Microsoft Endpoint Manager
 
 1. Create a PowerShell script with the following contents:
 
