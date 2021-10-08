@@ -8,7 +8,7 @@ audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.date: 04/21/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365solutions
 f1.keywords: NOCSH

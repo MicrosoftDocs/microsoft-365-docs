@@ -10,7 +10,7 @@ ms.service:
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: enabler-strategic
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how security is used to view topics in Viva Topics.
 ---
 

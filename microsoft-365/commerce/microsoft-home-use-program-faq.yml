@@ -8,7 +8,7 @@ metadata:
   audience: Admin
   ms.topic: reference
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: 
   - M365-subscription-management
   - Adm_O365
@@ -96,9 +96,9 @@ sections:
           For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](/microsoft-store/)
           
       - question: |
-          Why am I not seeing an option to purchase Visio Professional 2019 and/or Project Professional 2019?
+          Why am I not seeing an option to purchase Visio Professional 2021 and/or Project Professional 2021?
         answer: |
-          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2019 and/or Project Professional 2019, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer’s Home Use Program administrator to ask about these additional benefits.
+          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2021 and/or Project Professional 2021, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer’s Home Use Program administrator to ask about these additional benefits.
 
       - question: |
           What if my employees have questions about this program or need support with purchasing and installation?
