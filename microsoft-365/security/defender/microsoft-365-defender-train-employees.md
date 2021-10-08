@@ -68,8 +68,8 @@ For self-study, ramp up, onboarding, training
 | Source | Resource |
 |:-------|:-----|
 | Microsoft 365 Defender documentation: | |
-|  | [Responding to your first incident](https://docs.microsoft.com/microsoft-365/security/defender/first-incident-overview) |
-|  | [Attack simulation in the eval guide](https://docs.microsoft.com/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack) |
+|  | [Responding to your first incident](first-incident-overview.md) |
+|  | [Attack simulation in the eval guide](eval-defender-investigate-respond-simulate-attack.md) |
 | Microsoft 365 Defender section of the [Microsoft 365 Defender portal learning hub](https://security.microsoft.com/learning) | [Classifying alerts and incidents video](https://aka.ms/InvestigatingAlertsinDefenderforOffice365) |
 | Microsoft Learn modules: |  |
 | ![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg) | [Investigate incidents with Microsoft 365 Defender](https://docs.microsoft.com/learn/modules/defender-investigate-incidents/) - 27 min, 6 Units  |
