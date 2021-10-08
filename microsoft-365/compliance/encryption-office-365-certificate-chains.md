@@ -141,19 +141,19 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### **DST Root CA X3**
+### **ISRG Root X1*
 
-| **Subject** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
+| **Subject** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
 | --- | --- |
-| **Serial Number** | 44:AF:B0:80:D6:A3:27:BA:89:30:39:86:2E:F8:40:6B |
-| **Public Key Length** | RSA 2048 bits (e 65537) |
-| **Signature Algorithm** | sha1RSA |
-| **Validity Not Before** | Sep 30 21:12:19 2000 UTC |
-| **Validity Not After** | Sep 30 14:01:15 2021 UTC |
-| **Subject Key Identifier** | c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
-| **Thumbprint (SHA-1)** | DAC9024F54D8F6DF94935FB1732638CA6AD77C13 |
-| **Thumbprint (SHA-256)** | 0687260331A72403D909F105E69BCF0D32E1BD2493FFC6D9206D11BCD6770739 |
-| **Pin (SHA-256)** | Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys= |
+| **Serial Number** | 82:10:cf:b0:d2:40:e3:59:44:63:e0:bb:63:82:8b:00 |
+| **Public Key Length** | RSA 4096 bit) |
+| **Signature Algorithm** | sha256WithRSAEncryption |
+| **Validity Not Before** | Jun  4 11:04:38 2015 UTC |
+| **Validity Not After** | Jun  4 11:04:38 2035 UTC |
+| **Subject Key Identifier** | 79:B4:59:E6:7B:B6:E5:E4:01:73:80:08:88:C8:1A:58:F6:E9:9B:6E |
+| **Thumbprint (SHA-1)** | CABD2A79A1076A31F21D253635CB039D4329A5E8 |
+| **Thumbprint (SHA-256)** | 96BCEC06264976F37460779ACF28C5A7CFE8A3C0AAE11A8FFCEE05C0BDDF08C6 |
+| **Pin (SHA-256)** | 0b9fa5a59eed715c26c1020c711b4f6ec42d58b0015e14337a39dad301c5afc3 |
 
 ### **Entrust Root Certification Authority - G2**
 
