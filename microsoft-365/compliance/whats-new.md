@@ -53,10 +53,10 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance offerings
 
-- [Multi-Tier Cloud Security (MTCS)](regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
-- [Payment Card Industry (PCI)](regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
-- [U.S. Section 508](regulatory/offering-section-508-vpats) new client software guidance
-- [Web Content Accessibility Guidelines](regulatory/offering-wcag-2-1) new client software guidance
+- [Multi-Tier Cloud Security (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](/compliance/regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](/compliance/regulatory/offering-section-508-vpats) new client software guidance
+- [Web Content Accessibility Guidelines](/compliance/regulatory/offering-wcag-2-1) new client software guidance
 
 ### Compliance & service assurance
 
