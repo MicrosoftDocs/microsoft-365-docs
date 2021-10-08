@@ -10,7 +10,7 @@ ms.topic: overview
 f1_keywords: 
   - '197503'
 ms.date: 09/08/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - Strat_O365_IP
   - M365-security-compliance

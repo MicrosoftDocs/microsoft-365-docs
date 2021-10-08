@@ -9,12 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.date: 10/05/2021
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -200,7 +201,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability (in Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> Devices \> Configuration profiles \> Create profile \> Platform: Windows 10 and later & Profile: Device Control) is not yet available.
+This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 

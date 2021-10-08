@@ -11,7 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150

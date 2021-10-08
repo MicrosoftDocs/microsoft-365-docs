@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -83,6 +83,7 @@ The following OS versions are supported:
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
+Windows 11|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 21H1 and above|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 20H2 (with [KB4586853](https://support.microsoft.com/help/4586853))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 2004 (with [KB4586853](https://support.microsoft.com/help/4586853))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -92,8 +93,8 @@ Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/45
 Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 1709|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147) <p> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](images/svg/check-no.svg) <p> Note: Won't be supported
 Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported
+Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows Server 2022 |![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -109,7 +110,7 @@ iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg
 > [!NOTE]
 > Where a patch is specified, it must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 >
-> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) or  Windows Server 2022 using [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
+> Trying to onboard Windows devices older than Windows 10 or Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839))|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) or  Windows Server 2022 using [Microsoft Monitoring Agent](configure-server-endpoints.md)? You'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 ### OS versions when using Azure Defender for Servers
 
@@ -117,8 +118,8 @@ The following OS versions are supported when using [Azure Defender for Servers](
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
-Windows Server 2019|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows Server 2019|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
@@ -153,7 +154,6 @@ Instead of the public URIs listed in our [API documentation](apis-intro.md), you
 |Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
 |SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
-|
 
 ## Feature parity with commercial
 
@@ -170,9 +170,5 @@ These are the known gaps:
 |Network discovery|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
-|Integrations: Microsoft Cloud App Security|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Integrations: Microsoft Defender for Identity|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Integrations: Microsoft Endpoint DLP|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
 |Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
-|
