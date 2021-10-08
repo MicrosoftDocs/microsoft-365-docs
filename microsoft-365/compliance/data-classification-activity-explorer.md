@@ -69,6 +69,7 @@ Every account that accesses and uses data classification must have a license ass
 
 - Compliance administrator
 - Security administrator
+- Security Reader
 
 ## Activity types
 
