@@ -37,7 +37,6 @@ After you add these records at Cloudflare, your domain will be set up to work wi
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Change your domain's nameserver (NS) records
-<a name="BKMK_Nameservers"> </a>
 
 > [!IMPORTANT]
 > You must perform this procedure at the domain registrar where you purchased and registered your domain. 
@@ -66,7 +65,6 @@ To change your domain's name servers at your domain registrar's website yourself
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 ## Add a TXT record for verification
-<a name="BKMK_verify"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -100,22 +98,15 @@ When Microsoft finds the correct TXT record, your domain is verified.
 
     
 2. On the **Domains** page, select the domain that you are verifying. 
-    
-    
   
 3. On the **Setup** page, select **Start setup**.
     
-    
-  
-4. On the **Verify domain** page, select **Verify**.
-    
-    
+4. On the **Verify domain** page, select **Verify**.  
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="BKMK_add_MX"> </a>
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
   
@@ -123,7 +114,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
   
 3. On the **Overview** page for your domain, select **DNS**.
 
-  
 4. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
     
     | Type | Name | Mail server | Priority | TTL |

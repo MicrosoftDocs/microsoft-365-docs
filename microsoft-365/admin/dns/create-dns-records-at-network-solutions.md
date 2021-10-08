@@ -44,13 +44,10 @@ These are the main records to add. Follow the steps below or [watch the video](h
     
 After you add these records at Network Solutions, your domain will be set up to work with Microsoft services.
   
-
-  
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add a TXT record for verification
-<a name="BKMK_verify"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -60,45 +57,43 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 Follow the steps below or [watch the video (start at 0:47)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
-    
-    > [!IMPORTANT]
-    > Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list. 
   
-    ![Choose Manage My Domain Names and log in to Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
-  
-2. Select the check box next to the name of the domain that you are modifying.
+1. On the landing page, select **Domain Names**.
+
+1. Select the the check box next to the domain that you want to modify.
     
     ![Select the check box for your domain](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+1. Under **Actions**, select the three dots > **Manager**.
     
     ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
     
     (You may have to scroll down.)
     
     ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scroll down to the **Text (TXT Records)** section, and then select **Edit TXT Records**.
+1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
     
     ![Select Edit TXT Records](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+
+1. Under **Type**, select **TXT** from the drop-down list.
   
-6. In the boxes for the new record, type or copy and paste the values in the following table.
+1. In the boxes for the new record, type or copy and paste the values in the following table.
     
-    |**Host**|**TTL**|**Text**|
+    |**Host**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)   |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    |
        
     ![Type or paste values in the boxes for the new record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. Select **Continue**.
+1. Select **ADD**.
     
     ![Select Continue](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. Select **Save Changes**.
-    
-    ![Select Save Changes](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
+> [!NOTE]
+> Select **Classic View** in the upper right to view the TXT record you created.   
   
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -106,66 +101,56 @@ Now that you've added the record at your domain registrar's site, you'll go back
   
 When Microsoft finds the correct TXT record, your domain is verified.
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the **Domains** page, select the domain that you are verifying. 
+2. On the Domains page, select the domain that you're verifying. 
     
-    
-  
 3. On the **Setup** page, select **Start setup**.
-    
-    
   
 4. On the **Verify domain** page, select **Verify**.
-    
-    
-  
+
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="BKMK_add_MX"> </a>
 
 Follow the steps below or [watch the video (start at 3:51)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
-    
-    > [!IMPORTANT]
-    > Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list. 
   
-    ![Choose Manage My Domain Names and log in to Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
-  
-2. Select the check box next to the name of the domain that you are modifying.
+1. On the landing page, select **Domain Names**.
+
+1. Select the the check box next to the domain that you want to modify.
     
     ![Select the check box for your domain](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Select **Edit DNS**.
+1. Under **Actions**, select the three dots > **Manager**.
     
     ![Select Edit DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. Select **Manage Advanced DNS Records**.
+1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
     
-    (You may have to scroll down.)
+    (You might have to scroll down.)
     
     ![Select Manage Advanced DNS Records](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scroll down to the **Mail Servers (MX Records)** section, and then select **Edit MX Records**.
+1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
     
-    ![Select Edit MX Records](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
+    ![Select Edit TXT Records](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
+
+1. Under **Type**, select **MX** from the drop-down list.
   
-6. In the boxes for the new record, type or copy and paste the values from the following table.
+1. In the boxes for the new record, type or copy and paste the values from the following table.
     
-    |**Priority**|**TTL**|**Mail Server**|
-    |:-----|:-----|:-----|
-    |10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
-       
-    ![Type or paste values in the boxes for the new record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
+    **Refers to** |**Mail server**|**Priority**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    | @ | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 3600  <br/> |  
   
-7. Select **Continue**.
+1. Select **Continue**.
     
     ![Select Continue](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. Select **Save Changes**.
+1. Select **Save Changes**.
     
     ![Select Save Changes](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
@@ -182,7 +167,6 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.micr
     ![Select Save Changes](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
 ## Add the CNAME records that are required for Microsoft
-<a name="BKMK_add_CNAME"> </a>
 
 Follow the steps below or [watch the video (start at 4:43)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
@@ -232,7 +216,6 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.micr
     ![Select Save Changes](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
 ## Add a TXT record for SPF to help prevent email spam
-<a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
@@ -281,7 +264,6 @@ Follow the steps below or [watch the video (start at 5:35)](https://support.micr
     ![Select Save Changes](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
 ## Add the two SRV records that are required for Microsoft
-<a name="BKMK_add_SRV"> </a>
 
 Follow the steps below or [watch the video (start at 6:18)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   

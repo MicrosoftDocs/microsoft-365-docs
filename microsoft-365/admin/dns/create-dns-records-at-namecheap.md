@@ -36,7 +36,6 @@ After you add these records at Namecheap, your domain will be set up to work wit
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add a TXT record for verification
-<a name="BKMK_verify"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -49,11 +48,11 @@ Follow the steps below.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.
+3. On the Domain List page, select the domain you want to edit, and then select **Manage**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -90,28 +89,18 @@ Follow the steps below.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
   
-When Microsoft finds the correct TXT record, your domain is verified.
+When Microsoft finds the correct TXT record, your domain is verified. To verify the record:
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the **Domains** page, select the domain that you are verifying. 
-    
-    
+2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
   
-3. On the **Setup** page, select **Start setup**.
+3. On the **Verify domain** page, select **Verify**.
     
-    
-  
-4. On the **Verify domain** page, select **Verify**.
-    
-    
-  
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-
   
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="BKMK_add_MX"> </a>
 
 Follow the steps below.
   
@@ -119,11 +108,11 @@ Follow the steps below.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.
+3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -169,7 +158,6 @@ Follow the steps below.
 
   
 ## Add the six CNAME records that are required for Microsoft
-<a name="BKMK_add_CNAME"> </a>
 
 Follow the steps below.
   
@@ -177,11 +165,11 @@ Follow the steps below.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. On the **Domain List** page, find the name of the domain that you want to edit, and then select **Manage**.
+3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -220,7 +208,6 @@ Follow the steps below.
 
   
 ## Add a TXT record for SPF to help prevent email spam
-<a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
@@ -229,11 +216,11 @@ Follow the steps below.
   
 1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to Sign in and Continue.
     
-2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. On the **Domain List** page, find the name of the domain that you want to edit and then select **Manage**.
+3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -267,17 +254,16 @@ Follow the steps below.
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
 ## Add the two SRV records that are required for Microsoft
-<a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to sign in.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. On the **Landing** page, under **Account**, choose **Domain List** from the drop-down list. 
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. On the **Domain List** page, find the name of the domain that you want to edit and then select **Manage**.
+3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   

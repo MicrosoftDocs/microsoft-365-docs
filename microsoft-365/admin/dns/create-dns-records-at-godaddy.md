@@ -37,7 +37,6 @@ After you add these records at GoDaddy, your domain will be set up to work with 
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## Add a TXT record for verification
-<a name="BKMK_verify"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
 
@@ -75,25 +74,17 @@ Now that you've added the record at your domain registrar's site, you'll go back
 When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
     
-2. On the **Domains** page, select the domain that you are verifying. 
-    
-    
+2. On the **Domains** page, select the domain that you are verifying.  
   
 3. On the **Setup** page, select **Start setup**.
 
-
-
 4. On the **Verify domain** page, select **Verify**.
-
-
 
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="BKMK_add_MX"> </a>
 
 Follow the steps below.
 
@@ -124,7 +115,6 @@ Follow the steps below.
 6. Select **Save**.
 
 ## Add the CNAME records that are required for Microsoft
-<a name="BKMK_add_CNAME"> </a>
 
 Follow the steps below.
 
@@ -159,12 +149,9 @@ Follow the steps below.
     |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
     |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hour  <br/> |
 
-
-
 6. Repeat these steps to add the next CNAME record until you have created all six of the CNAME records.
 
 ## Add a TXT record for SPF to help prevent email spam
-<a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.
@@ -199,9 +186,7 @@ Follow the steps below.
 
 6. Select **Save**.
 
-
 ## Add the two SRV records that are required for Microsoft
-<a name="BKMK_add_SRV"> </a>
 
 Follow the steps below.
 
