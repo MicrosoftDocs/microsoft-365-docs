@@ -29,7 +29,7 @@ Customers should view tenant specific data location information in your Microsof
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
-Find information about the contractual commitments for the storage location of customer data at rest in the [Online Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
+Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA).
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
