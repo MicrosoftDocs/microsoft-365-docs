@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
@@ -150,7 +150,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.<sup>1,2</sup> <p> You enter the text later in the **Prefix subject line with this text** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
      |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <p> You specify the recipients later in the **Redirect to this email address** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
      |**Delete message**: Silently deletes the entire message, including all attachments.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)||![Check mark](../../media/checkmark.png)|
-     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box.|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
+     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <p> You specify how long the message should be held in quarantine later in the **Quarantine** box. <p> You specify the [quarantine policy](quarantine-policies.md) that applies to quarantined messages for the spam filter verdict in the **Select a policy** box that appears. For more information, see [Quarantine policies](quarantine-policies.md).<sup>3</sup>|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)<sup>\*</sup>|![Check mark](../../media/checkmark.png)|
      |**No action**|||||![Check mark](../../media/checkmark.png)|
      |
 
@@ -159,9 +159,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
+     >
+     > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
-
      - [Quarantined messages in EOP](quarantine-email-messages.md)
      - [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
      - [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md)
@@ -187,7 +188,8 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **Enable ZAP for phishing messages**: By default, ZAP is enabled for phishing detections, but you can disable it by clearing the checkbox.
      - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the checkbox.
 
-   - **Enable end-user spam notifications**: For more information, see the [Configure end-user spam notifications](#configure-end-user-spam-notifications) section later in this article.
+   > [!NOTE]
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies that contain information about quarantined messages for all supported protection features (not just anti-spam policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
 
    When you're finished, click **Next**.
 
@@ -309,36 +311,6 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 4. When you're finished, click **Close** in the policy details flyout.
 
-### Configure end-user spam notifications
-
-> [!NOTE]
-> End-user spam notifications are not supported for groups.
-
-When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
-
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
-
-2. On the **Anti-spam policies** page, select an anti-spam policy from the list by clicking on the name:
-   - A custom policy that you created where the value in the **Type** column is **Custom anti-spam policy**.
-   - The default policy named **Anti-spam inbound policy (Default)**.
-
-3. In the policy details flyout that appears, click **Edit** in the **Actions** section. In the **Actions** flyout that appears, configure the following settings:
-
-   - **Enable end-user spam notifications**: Select the checkbox to enable notifications or clear the checkbox to disable notifications. When you select the checkbox, the following additional settings appear:
-
-     - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
-
-       There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC.
-
-       > [!NOTE]
-       > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This might give the appearance of multiple notifications within the same day.
-
-     - **Language**: Click the drop down an select an available language from the list. The default value is **Default**, which means English.
-
-   When you're finished, click **Save**.
-
-4. Back on the policy details flyout, click **Close**.
-
 ## Use the Microsoft 365 Defender portal to remove custom anti-spam policies
 
 When you use the Microsoft 365 Defender portal to remove a custom anti-spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default anti-spam policy.
@@ -362,7 +334,6 @@ In Exchange Online PowerShell or standalone EOP PowerShell, the difference betwe
 The following anti-spam policy settings are only available in PowerShell:
 
 - The _MarkAsSpamBulkMail_ parameter that's `On` by default. The effects of this setting were explained in the [Use the Microsoft 365 Defender portal to create anti-spam policies](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) section earlier in this article.
-
 - The following settings for end-user spam quarantine notifications:
   - The _DownloadLink_ parameter that shows or hides the link to the Junk Email Reporting Tool for Outlook.
   - The _EndUserSpamNotificationCustomSubject_ parameter that you can use to customize the subject line of the notification.
@@ -393,7 +364,7 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 
 This example creates a spam filter policy named Contoso Executives with the following settings:
 
-- Quarantine messages when the spam filtering verdict is spam or high confidence spam.
+- Quarantine messages when the spam filtering verdict is spam or high confidence spam, and use the default [quarantine policy](quarantine-policies.md) for the quarantined messages (we aren't using the _SpamQuarantineTag_ or _HighConfidenceSpamQuarantineTag_ parameters).
 - BCL 7, 8, or 9 triggers the action for a bulk email spam filtering verdict.
 
 ```PowerShell
@@ -401,6 +372,9 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
+
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
 
 #### Step 2: Use PowerShell to create a spam filter rule
 
@@ -495,6 +469,9 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
 For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy).
+
+> [!NOTE]
+> For detailed instructions to specify the [quarantine policy](quarantine-policies.md) to use in a spam filter policy, see [Use PowerShell to specify the quarantine policy in anti-spam policies](quarantine-policies.md#anti-spam-policies-in-powershell).
 
 ### Use PowerShell to modify spam filter rules
 

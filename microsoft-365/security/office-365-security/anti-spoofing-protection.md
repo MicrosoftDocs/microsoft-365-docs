@@ -19,7 +19,7 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.technology: mdo
 ms.prod: m365-security

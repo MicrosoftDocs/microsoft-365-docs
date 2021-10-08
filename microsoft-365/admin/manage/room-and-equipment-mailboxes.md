@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom:
 - Lean
 - MSStore_Link
@@ -119,7 +119,7 @@ No, you don't need someone to accept or decline requests. You can decide whether
   
 ### Does a room mailbox or equipment mailbox need a product license?
 
-No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox, in case the resource mailbox needs to have a size bigger than 50 GB, or, in case some features are needed (Retention policies from Security and Compliance, or, Hold from Exchange Online), or, in case the resource mailbox doesn't need an Online Archive attached to it.
+No. While most people in your organization need a license to use Microsoft 365, you don't need to assign a license to a room mailbox or equipment mailbox, in case the resource mailbox doesn't need to have a size bigger than 50 GB, or, in case some features aren't needed (Retention policies from Security and Compliance, or, Hold from Exchange Online), or, in case the resource mailbox doesn't need an Online Archive attached to it.
   
 ### Do I need an owner in charge of booking the rooms or equipment?
 

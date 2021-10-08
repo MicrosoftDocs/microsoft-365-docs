@@ -8,7 +8,7 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
@@ -16,6 +16,7 @@ ms.custom: nextgen
 ms.date: 03/16/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure remediation for Microsoft Defender Antivirus detections
@@ -43,9 +44,7 @@ You can also use the [`Set-MpPreference` PowerShell cmdlet](/powershell/module/d
 
 5. Select **OK**.
 
-<br>
-
-****
+<br/><br/>
 
 |Location|Setting|Description|Default setting (if not configured)|
 |---|---|---|---|
@@ -55,7 +54,6 @@ You can also use the [`Set-MpPreference` PowerShell cmdlet](/powershell/module/d
 |Quarantine|Configure removal of items from Quarantine folder|Specify how many days items should be kept in quarantine before being removed|90 days|
 |Threats|Specify threat alert levels at which default action should not be taken when detected|Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored)|Not applicable|
 |Threats|Specify threats upon which default action should not be taken when detected|Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored|Not applicable|
-|
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.

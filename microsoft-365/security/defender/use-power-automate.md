@@ -59,6 +59,6 @@ This video also describes how to connect power automate to MCAS.
 
 ## Related information
 
-- [Integrate Power Automate with Microsoft Cloud App Security](https://aka.ms/flow-integration)
+- [Integrate Power Automate with Microsoft Cloud App Security](/cloud-app-security/flow-integration)
 
-- [Microsoft Power Automate documentation](https://aka.ms/power-automate-docs)
+- [Microsoft Power Automate documentation](/power-automate)

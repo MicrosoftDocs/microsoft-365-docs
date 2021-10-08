@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - M365-privacy-management
@@ -34,17 +34,9 @@ Policies in privacy management allow you to set parameters for evaluating potent
 
 Integrate Microsoft Teams capabilities with privacy management to enhance collaboration with stakeholders. Every time a subject rights request is created, an associated team will be created. Users can be added to a team from the request’s Collaborators tab. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
-## Power Automate flows  
-
-Use Power Automate flows to automatically manage privacy-related processes and tasks. You can create flows in the Settings section using built-in privacy management templates, or use the Power Automate console to create custom flows. To learn more about Power Automate, see the [Power Automate](/power-automate/) documentation.
-
 ## Data matching  
 
 Use this section to upload data schemas that describe attributes of your data subjects, which will help identify the correct data subject when searching for personal data within your Microsoft 365 environment. Schemas and rule packages are created and uploaded in XML format. Under Personal data upload, you can also submit personal data that matches a provided schema. You can create and upload your own file or choose to upload personal data from Azure. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
-
-## Data retention periods  
-
-For subject rights requests, choose how long you want to retain the collected data and the reports you have generated. You can select between 30 or 90 days after the request is closed. To learn more about subject rights requests, see [Manage subject rights requests](privacy-management-subject-rights-requests.md).
 
 ## Data review tags  
 

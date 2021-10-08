@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -30,7 +30,7 @@ ms.technology: mde
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Advanced features**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features**.
 
     :::image type="content" source="../../media/atp-preview-features-new.png" alt-text="settings and preview experience image.":::
 

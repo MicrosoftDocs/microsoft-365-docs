@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -34,7 +34,7 @@ In the next step name your payload. Optionally, you can give it a description.
 
 ## Configure payload
 
-Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
+Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. You can select a language in which the payload will be configured. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
 
 > [!TIP]
 > You can choose an internal email for your payload's sender, which will make the payload appear as coming from another employee of the company. This will increase susceptibility to the payload and will help educate employees on the risk of internal threats.

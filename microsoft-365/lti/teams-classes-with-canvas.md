@@ -10,7 +10,7 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Integrate Microsoft Teams classes with Canvas"
 ---
@@ -28,9 +28,19 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
 > - You will have to turn off School Data Sync (SDS) before using the Class Teams LTI in order to avoid duplication of groups.
 
-## Microsoft Office 365 Admin
+## Grant admin consent
 
-Prior to managing the Microsoft Teams integration within Instructure Canvas, it is important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup.
+Before managing the Microsoft Teams integration within Instructure Canvas, it's important to have Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app approved by your institution’s Microsoft Office 365 admin in your Microsoft Azure tenant before completing the Canvas admin setup. You need to be a Global Administrator to perform these steps.
+
+1. Navigate to Azure Active Directory.
+
+2. Open Enterprise applications, and then select the **Microsoft-Teams-Sync-for-Canvas** application.
+
+3. Select **Permissions**, and then select **Grant admin consent**.
+
+4. Agree with the permissions that the application requires, and then grant consent.
+
+## Microsoft Office 365 admin
 
 1. Sign in to Canvas.
 

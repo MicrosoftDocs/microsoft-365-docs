@@ -7,7 +7,7 @@ ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -43,6 +43,9 @@ For more information about the advantages of using directory synchronization, se
 However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
 Follow these steps in order for the best results.
+
+> [!NOTE]
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
 
 ## 1. Directory cleanup tasks
 
