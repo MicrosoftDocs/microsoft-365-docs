@@ -343,6 +343,10 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+        - name: Troubleshoot DLP
+          items:
+            - name: Troubleshooting data loss prevention (DLP) policy tips
+              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
 - name: Manage information governance
   items: 
     - name: Govern your data
