@@ -44,7 +44,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Enable kernel extension](#enable-kernel-extension)
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the DLP installation package](#deploy-the-microsoft-dlp-enforcement-package)
+1. [Deploy the Microsoft DLP installation package](#deploy-the-microsoft-dlp-installation-package)
 
 ### Get the device onboarding package
 
