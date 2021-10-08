@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -48,17 +48,11 @@ The Event Streaming API is constantly being expanded to support more event types
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | GA |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | GA  |
-| **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | GA |
-| **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | GA |
-| **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | GA |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Not yet supported |
-| **[IdentityInfo](advanced-hunting-identityinfo-table.md)** |Not yet supported|
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Not yet supported |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Not yet supported |
 

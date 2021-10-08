@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: article
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 - M365-security-compliance

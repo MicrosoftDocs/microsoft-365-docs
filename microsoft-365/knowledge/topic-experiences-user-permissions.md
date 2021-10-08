@@ -8,7 +8,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn how to administer topic permissions in Microsoft Viva Topics.
 ---
 
