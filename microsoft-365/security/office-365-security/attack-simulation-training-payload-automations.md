@@ -16,4 +16,4 @@ ms.technology: mdo
 
 # Payload automations for Attack simulation training
 
-In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365, payload automations (also known as _payload harvesting_) use real-world information from phishing messages that were reported as phishing by users in your organization. Although the numbers of these messages are likely low in your organization, payload automations use rules to mimic these phishing messages and send harmless versions of them as simulations to targeted users.
+In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365, payload automations (also known as _payload harvesting_) use information from real-world phishing messages that were reported by users in your organization. Although the numbers of these messages are likely low in your organization, payload automations use rules to mimic these phishing messages and send harmless versions of them as simulations to targeted users.
