@@ -9,7 +9,7 @@ ms.date:
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
   - M365-security-compliance
 search.appverid: 
@@ -45,7 +45,7 @@ Permissions in the Microsoft 365 Defender portal are based on the role-based acc
 
 A **role** grants the permissions to do a set of tasks.
 
-A **role group** is a set of roles that lets people do their jobs in the Microsoft 365 Defender portal. For example, the Attack Simulator Administrators role group includes the Attack Simulator Admin role to create and manage all aspects of attack simulation training.
+A **role group** is a set of roles that lets people do their jobs in the Microsoft 365 Defender portal.
 
 The Microsoft 365 Defender portal includes default role groups for the most common tasks and functions that you'll need to assign. Generally, we recommend simply adding individual users as **members** to the default role groups.
 

@@ -8,13 +8,14 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.date: 07/29/2021
 manager: dansimp
 ms.custom: nextgen
+ms.collection: M365-security-compliance
 ---
 
 # Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy
@@ -48,15 +49,12 @@ To enable and configure always-on protection:
 
    1. In the **Microsoft Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
 
-      <br>
-
-      ****
+      <br/><br/>
 
       |Setting|Default setting|
       |---|---|
       |Allow antimalware service to start up with normal priority <p> You can lower the priority of the Microsoft Defender Antivirus engine. Lowering the priority might be useful in cases where you want to have as lean a startup process as possible; however, taking this action could affect endpoint protection. Proceed with caution.|Enabled
       |Allow antimalware service to remain running always <p> If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. Disabling protection updates reduces endpoint protection.|Disabled|
-      |
 
    2. Configure the setting as appropriate, and select **OK**.
 
@@ -81,26 +79,18 @@ To enable and configure always-on protection:
       ![Microsoft Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
 
    2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
-
-
-      <br>
-
-      ****
+      <br/><br/>
 
       |Setting|Default setting|
       |---|---|
       |Turn on heuristics <p> Heuristic protection will disable or block suspicious activity immediately before the Microsoft Defender Antivirus engine is asked to detect the activity.|Enabled|
-      |
+
 
    3. Configure the setting as appropriate, and select **OK**.
 
 6. Close **Local Group Policy Editor**.
 
 ### Real-time protection policy settings
-
-<br>
-
-****
 
 |Setting|Default setting|
 |---|---|
@@ -116,7 +106,6 @@ To enable and configure always-on protection:
 |Configure local setting override to turn on real-time protection <p> Configure a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
 |Configure local setting override for monitoring for incoming and outgoing file activity <p> Configure a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy. If you enable this setting, the local preference setting will take priority over Group Policy. If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.|Enabled|
 |Configure monitoring for incoming and outgoing file and program activity <p> Specify whether monitoring should occur on incoming, outgoing, both, or neither direction. This action is relevant for Windows Server installations where you have defined specific servers or Server Roles that see large amounts of file changes in only one direction and you want to improve network performance. Fully updated endpoints (and servers) on a network will see little performance impact irrespective of the number or direction of file changes.|Enabled (both directions)|
-|
 
 ## Disable real-time protection in Group Policy
 

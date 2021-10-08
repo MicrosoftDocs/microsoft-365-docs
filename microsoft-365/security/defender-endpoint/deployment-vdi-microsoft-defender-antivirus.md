@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -15,6 +15,7 @@ ms.date: 08/31/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment

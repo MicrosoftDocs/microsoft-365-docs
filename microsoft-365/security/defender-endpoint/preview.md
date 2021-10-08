@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -48,7 +48,7 @@ When working with features in public preview, these features:
 - Are fully supported by Microsoft.
 - May only be available in selected geographic regions or cloud environments. For example, the feature may not exist in the government cloud.
 - Individual features in preview may have more usage and support restrictions. If so, this information is typically noted in the feature documentation.
-- The preview versions are provided with a standard support level, and can be used for production environments. 
+- The preview versions are provided with a standard support level, and can be used for production environments.
 
 ## Turn on preview features
 
@@ -56,9 +56,9 @@ You'll have access to upcoming features that you can provide feedback on to help
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Advanced features** > **Preview features**.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Advanced features** \> **Preview features**.
 
 2. Toggle the setting between **On** and **Off** and select **Save preferences**.
 
 > [!TIP]
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)  
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-preview-belowfoldlink)

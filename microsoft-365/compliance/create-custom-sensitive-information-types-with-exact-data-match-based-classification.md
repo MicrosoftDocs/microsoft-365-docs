@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -103,9 +103,6 @@ The data file can include a maximum of:
 #### Define the schema for your database of sensitive information
 
 If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
-
-> [!NOTE]
-> The Exact Data Match Schema and Sensitive Information Type Wizard is only available for the World Wide and GCC clouds only.
 
 1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
 
@@ -444,7 +441,7 @@ This computer must have direct access to your Microsoft 365 tenant.
    Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5**
 
    The default format for the sensitive data file is comma-separated values. You can specify a tab-separated file by indicating the "{Tab}" option with the /ColumnSeparator parameter, or you can specify a pipe-separated file by indicating the "|" option.
-   If your sensitive information table has some incorrectly formatted values, but you want to import the remaining data while ignoring invalid rows anyway, you can use the /AllowedBadLinesPercentage parameter in the command. The example above specifies a five percent threshold. This means that the tool will hash and upload the sensitive information table even if up to five percent of the rows are invalid. The default value for this setting is one percent. 
+   If your sensitive information table has some incorrectly formatted values, but you want to import the remaining data while ignoring invalid rows anyway, you can use the /AllowedBadLinesPercentage parameter in the command. The example above specifies a five percent threshold. This means that the tool will hash and upload the sensitive information table even if up to five percent of the rows are invalid. In versions of the tool that support this parameter the default threshold is zero percent so any erroneous lines will cause an error. 
    This command will automatically add a randomly generated salt value to the hash for greater security. Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command. This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.
 
 6. Check the upload status by running this command:
@@ -624,7 +621,7 @@ These locations are support EDM sensitive information types:
 - DLP for SharePoint (files)
 - Microsoft Cloud App Security DLP policies
 - Server-side auto-labeling policies - available for commercial cloud customers and government cloud customers
-<!-- - Client side auto-labeling policies - available for government cloud customers -->  
+- Client side auto-labeling policies - available for government cloud customers  
 
 #### To create a DLP policy with EDM
 

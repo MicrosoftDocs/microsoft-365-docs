@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-smandalika
 author: v-smandalika
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -93,7 +93,7 @@ For examples that describe the process of "export" and "convert" through sample 
 Microsoft Defender Antivirus performance analyzer has the following prerequisites:
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
-- Platform Version: 4.18.2108.X+
+- Platform Version: 4.18.2108.7+
 - PowerShell Version: PowerShell Version 5.1
 
 ## PowerShell reference

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -237,7 +237,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
   For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.
 
-- Subpaths are not implied.
+- Subpaths are not implied for allows.
 
   For example, `contoso.com` does not include `contoso.com/a`.
 

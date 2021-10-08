@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,6 +36,19 @@ ms.custom: api
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 Retrieves a list of all security recommendations affecting the organization.
+
+
+## API description
+
+Returns information about all security recommendations affecting the organization.
+
+*URL:* GET:/api/recommendations
+<br>Supports [OData V4 queries](https://www.odata.org/documentation/).
+<br>OData supported operators:
+<br>```$filter``` on:  ```id```, ```productName```, ```vendor```, ```recommendedVersion```, ```recommendationCategory```, ```subCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, and ```status``` properties.
+<br>```$top``` with max value of 10,000.
+<br>```$skip```.
+<br>See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md).
 
 ## Permissions
 

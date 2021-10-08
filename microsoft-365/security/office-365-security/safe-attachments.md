@@ -9,7 +9,7 @@ audience: Admin
 ms.date: 
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -71,10 +71,12 @@ This section describes the settings in Safe Attachments policies:
   |---|---|---|
   |**Off**|Attachments aren't scanned for malware by Safe Attachments. Messages are still scanned for malware by [anti-malware protection in EOP](anti-malware-protection.md).|Turn scanning off for selected recipients. <p> Prevent unnecessary delays in routing internal mail. <p> **This option is not recommended for most users. You should only use this option to turn off Safe Attachments scanning for recipients who only receive messages from trusted senders.**|
   |**Monitor**|Delivers messages with attachments and then tracks what happens with detected malware. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|See where detected malware goes in your organization.|
-  |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not users) can review, release, or delete the messages. <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
-  |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages are [quarantined](manage-quarantined-messages-and-files.md) where only admins (not users) can review, release, or delete the messages. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
-  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files. <p> Enable recipients to preview attachments in safe mode while scanning is taking place.|
+  |**Block**|Prevents messages with detected malware attachments from being delivered. <p> Messages are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <p> Automatically blocks future instances of the messages and attachments. <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Protects your organization from repeated attacks using the same malware attachments. <p> This is the default value, and the recommended value in Standard and Strict [preset security policies](preset-security-policies.md).|
+  |**Replace**|Removes detected malware attachments. <p> Notifies recipients that attachments have been removed. <p>  Messages that contain malicious attachments are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <p> Delivery of safe messages might be delayed due to Safe Attachments scanning.|Raise visibility to recipients that attachments were removed because of detected malware.|
+  |**Dynamic Delivery**|Delivers messages immediately, but replaces attachments with placeholders until Safe Attachments scanning is complete. <p> Messages that contain malicious attachments are quarantined. By default, only admins (not users) can review, release, or delete the messages.<sup>\*</sup> <p> For details, see the [Dynamic Delivery in Safe Attachments policies](#dynamic-delivery-in-safe-attachments-policies) section later in this article.|Avoid message delays while protecting recipients from malicious files.|
   |
+
+  <sup>\*</sup> Admins can create and assign _quarantine policies_ in Safe Attachments policies that define what users are allowed to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
 
 - **Redirect attachment on detection: Enable redirect** and **Send the attachment to the following email address**: For **Block**, **Monitor**, or **Replace** actions, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
@@ -100,7 +102,7 @@ This section describes the settings in Safe Attachments policies:
 
 The Dynamic Delivery action in Safe Attachments policies seeks to eliminate any email delivery delays that might be caused by Safe Attachments scanning. The body of the email message is delivered to the recipient with a placeholder for each attachment. The placeholder remains until the attachment is found to be safe, and then the attachment becomes available to open or download.
 
-If an attachment is found to be malicious, the message is quarantined. Only admins (not users) can review, release, or delete messages that were quarantined by Safe Attachments scanning. For more information, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+If an attachment is found to be malicious, the message is quarantined.
 
 Most PDFs and Office documents can be previewed in safe mode while Safe Attachments scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, the recipients will see a placeholder for the attachment until Safe Attachments scanning is complete.
 

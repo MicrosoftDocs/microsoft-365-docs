@@ -13,7 +13,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Find information about moving a OneDrive site to a different geo location, including how to schedule site moves and communicating expectations to users.
 ---
 

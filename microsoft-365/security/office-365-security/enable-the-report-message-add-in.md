@@ -2,13 +2,13 @@
 title: Enable the Report Message or the Report Phishing add-ins
 f1.keywords:
   - NOCSH
-ms.author: siosulli
+ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150

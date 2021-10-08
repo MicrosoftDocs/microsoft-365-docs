@@ -1,13 +1,13 @@
 ---
 title: Microsoft Defender Antivirus on Windows Server
-description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019.
+description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
@@ -15,6 +15,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 08/05/2021
+ms.collection: M365-security-compliance
 ---
 
 # Microsoft Defender Antivirus on Windows Server
@@ -28,10 +29,12 @@ ms.date: 08/05/2021
 Microsoft Defender Antivirus is available on the following editions/versions of Windows Server:
 
 - Windows Server 2019
+- Windows Server 2022
 - Windows Server, version  1803 or later
-- Windows Server 2016.
+- Windows Server 2016
+- Windows Server 2012 R2 (Requires Microsoft Defender for Endpoint)
 
-In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-in-windows-10.md), there are a few key differences on Windows Server:
+In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md), there are a few key differences on Windows Server:
 
 - On Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 
@@ -55,6 +58,11 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 
 If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
 
+
+
+>[!NOTE]
+>This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+
 ### Turn on the GUI using the Add Roles and Features Wizard
 
 1. See [Install roles, role services, and features by using the add Roles and Features Wizard](/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard), and use the **Add Roles and Features Wizard**.
@@ -65,7 +73,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
    ![Add roles and feature wizard showing the GUI for Windows Defender option.](images/server-add-gui.png)
 
-   In Windows Server 2019, the **Add Roles and Feature Wizard** is similar.
+   In Windows Server 2019 and Windows Server 2022, the **Add Roles and Feature Wizard** is similar.
 
 ### Turn on the GUI using PowerShell
 
@@ -121,18 +129,15 @@ The `sc query` command returns information about the Microsoft Defender Antiviru
 
 To get updated antimalware security intelligence, you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Microsoft Defender Antivirus Security intelligence are approved for the computers you manage.
 
-By default, Windows Update does not download and install updates automatically on Windows Server 2019 or Windows Server 2016. You can change this configuration by using one of the following methods:
+By default, Windows Update does not download and install updates automatically on Windows Server 2019 or Windows Server 2022, or Windows Server 2016. You can change this configuration by using one of the following methods:
 
-<br>
-
-****
+<br/><br/>
 
 |Method|Description|
 |---|---|
 |**Windows Update** in Control Panel|**Install updates automatically** results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p> **Download updates but let me choose whether to install them** allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.|
 |**Group Policy**|You can set up and manage Windows Update by using the settings available in Group Policy, in the following path: **Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates**|
 |The **AUOptions** registry key|The following two values allow Windows Update to automatically download and install Security intelligence updates: <p> **4** - **Install updates automatically**. This value results in all updates being automatically installed, including Windows Defender Security intelligence updates. <p> **3** - **Download updates but let me choose whether to install them**. This value allows Windows Defender to download and install Security intelligence updates automatically, but other updates are not automatically installed.|
-|
 
 To ensure that protection from malware is maintained, we recommend that you enable the following services:
 
@@ -172,15 +177,19 @@ To enable automatic sample submission, start a Windows PowerShell console as an 
 
 |Setting|Description|
 |---|---|
-|**0** - **Always prompt**|The Microsoft Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Microsoft Defender Antivirus, but is not recommended for installations on Windows Server 2016 or 2019 without a GUI.|
+|**0** - **Always prompt**|The Microsoft Defender Antivirus service prompts you to confirm submission of all required files. This is the default setting for Microsoft Defender Antivirus, but is not recommended for installations on Windows Server 2016 or 2019, or Windows Server 2022 without a GUI.|
 |**1**  - **Send safe samples automatically**|The Microsoft Defender Antivirus service sends all files marked as "safe" and prompts for the remainder of the files.|
 |**2** - **Never send**|The Microsoft Defender Antivirus service does not prompt and does not send any files.|
 |**3** - **Send all samples automatically**|The Microsoft Defender Antivirus service sends all files without a prompt for confirmation.|
 |
 
+>[!NOTE]
+>This option is not available for Windows Server 2012 R2. 
+
+
 ## Configure automatic exclusions
 
-To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Microsoft Defender Antivirus on Windows Server 2016 or 2019.
+To help ensure security and performance, certain exclusions are automatically added based on the roles and features you install when using Microsoft Defender Antivirus on Windows Server 2016 or 2019, or Windows Server 2022.
 
 See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md).
 
@@ -188,21 +197,20 @@ See [Configure exclusions in Microsoft Defender Antivirus on Windows Server](con
 
 If you are using a non-Microsoft antivirus product as your primary antivirus solution on Windows Server, you must set Microsoft Defender Antivirus to passive mode or disabled mode.
 
-- On Windows Server, version 1803 or newer, or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode. See the following sections:
-  - [Set Microsoft Defender Antivirus to passive mode using a registry key](#set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key)
-  - [Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard](#disable-microsoft-defender-antivirus-using-the-remove-roles-and-features-wizard)
-  - [Turn off the Microsoft Defender Antivirus user interface using PowerShell](#turn-off-the-microsoft-defender-antivirus-user-interface-using-powershell)
+For more information, see [Install Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md#install-microsoft-defender-antivirus-on-windows-server).
 
-- On Windows Server 2016, Microsoft Defender Antivirus is not supported alongside a non-Microsoft antivirus/antimalware product. In these cases, you must set Microsoft Defender Antivirus to disabled mode. See [Uninstalling or disabling Microsoft Defender Antivirus on Windows Server 2016](#uninstalling-or-disabling-microsoft-defender-antivirus-on-windows-server-2016)
 
 ### Set Microsoft Defender Antivirus to passive mode using a registry key
 
-If you are using Windows Server, version 1803 or Windows Server 2019, you can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
-
+You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - Name: `ForceDefenderPassiveMode`
 - Type: `REG_DWORD`
 - Value: `1`
+
+
+
+
 
 ### Disable Microsoft Defender Antivirus using the Remove Roles and Features wizard
 
@@ -222,9 +230,10 @@ To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell c
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
-### Uninstalling or disabling Microsoft Defender Antivirus on Windows Server 2016
+### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-If you are using Windows Server 2016 with a non-Microsoft antimalware/antivirus product, you'll need to either disable or uninstall Microsoft Defender Antivirus. You can use one of several methods:
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+
 
 <br>
 
@@ -238,7 +247,8 @@ If you are using Windows Server 2016 with a non-Microsoft antimalware/antivirus 
 |Uninstall Microsoft Defender Antivirus using PowerShell|Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender`|
 |
 
-## See also
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+## See also
+- [Install Microsoft Defender Antivirus on Windows Server]()
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md)

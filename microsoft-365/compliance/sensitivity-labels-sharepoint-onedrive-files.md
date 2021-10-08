@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.date:
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -99,9 +99,9 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 - For an encrypted document that grants edit permissions to a user, copying can't be blocked in the web versions of the Office apps.
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
-
+    
     > [!NOTE]
-    > Co-authoring is now supported in preview. For more information, see [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
+    > Co-authoring is now supported for Windows and macOS. For more information, see [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md).
 
 - If an admin changes settings for a published label that's already applied to files downloaded to users' sync client, users might be unable to save changes they make to the file in their OneDrive Sync folder. This scenario applies to files that are labeled with encryption, and also when the label change is from a label that didn't apply encryption to a label that does apply encryption. Users see a [red circle with a white cross icon error](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3), and they are asked to save new changes as a separate copy. Instead, they can close and reopen the file, or use Office for the web.
 

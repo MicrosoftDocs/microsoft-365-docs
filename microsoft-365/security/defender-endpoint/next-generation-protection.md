@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Priority
+ms.localizationpriority: high
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -15,6 +15,7 @@ ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Next-generation protection overview
@@ -40,5 +41,5 @@ Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microso
 
 For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
 
-> [!Note]  
+> [!NOTE]
 > Configuration and management is largely the same in Windows Server as in Windows clients. However, there are some differences. To learn more, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).

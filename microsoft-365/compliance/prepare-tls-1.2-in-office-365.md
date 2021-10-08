@@ -3,7 +3,7 @@ title: Preparing for TLS 1.2 in Office 365 and Office 365 GCC
 description: How to prepare to use TLS 1.2 for all client-server and browser-server combinations in Office 365 and Office 365 GCC after support for TLS 1.0 and 1.1 is disabled.
 author: kccross  
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro
@@ -32,6 +32,9 @@ After you upgrade to TLS 1.2, make sure that the cipher suites you're using are 
 We have already begun deprecation of TLS 1.0 and 1.1 as of January 2020. Any clients, devices, or services that connect to Office 365 through TLS 1.0 or 1.1 in our DoD or GCC High instances are unsupported. For our commercial customers of Office 365, deprecation of TLS 1.0 and 1.1 will begin October 15, 2020 and rollout will continue over the following weeks and months.
 
 We recommend that all client-server and browser-server combinations use TLS 1.2 (or a later version) in order to maintain connection to Office 365 services. You might have to update certain client-server and browser-server combinations.
+
+  > [!NOTE]
+  > For SMTP Inbound mail flow, after deprecation of TLS 1.0 and 1.1, we will accept only TLS 1.2 connection. However, we will continue accepting SMTP Connection which is unencrypted without any TLS. Although we do not recommend email transmission without any encryption. 
 
 You'll need to update applications that call Microsoft 365 APIs over TLS 1.0 or TLS 1.1 to use TLS 1.2. .NET 4.5 defaults to TLS 1.1. To update your .NET configuration, see [How to enable Transport Layer Security (TLS) 1.2 on clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 

@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -176,23 +176,39 @@ For more information about SecOps across Microsoft's products, see these resourc
 - [Best practices](/security/compass/security-operations)
 - [Videos and slides](/security/compass/security-operations-videos-and-decks)
 
+## Training for security analysts
+
+Use this learning module from Microsoft Learn to understand how to use Microsoft 365 Defender to manage incidents and alerts.
+
+|Training:|Investigate incidents with Microsoft 365 Defender|
+|---|---|
+|![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg)| Microsoft 365 Defender unifies threat data from multiple services and uses AI to combine them into incidents and alerts. Learn how to minimize the time between an incident and its management for subsequent response and resolution. <p> 27 min - 6 Units |
+
+> [!div class="nextstepaction"]
+> [Start >](/learn/modules/defender-investigate-incidents/)
+
 ## Next steps
 
-**If you are new** to security analysis and incident response:
+Use the listed steps based on your experience level or role on your security team.
 
-- See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack.
+### Experience level
 
-**If you have experience** with security analysis and incident response:
+Follow this table for your level of experience with security analysis and incident response.
 
-- Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here, you can:
+| Level | Steps |
+|:-------|:-----|
+| **New** | <ol><li> See the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review in the Microsoft 365 Defender portal with an example attack. </li><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.</li></ol> |
+| **Experienced** | <ol><li> Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: </li> <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li><li> Perform [investigations](investigate-incidents.md) of incidents. </li></ul> </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li>  Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
 
-  - See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. 
 
-  - [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow.
+### Security team role
 
-  - Perform [investigations](investigate-incidents.md) of incidents.
+Follow this table based on your security team role.
 
-- See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md).
-
-- See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks.
+| Role | Steps |
+|:-------|:-----|
+| Incident responder (Tier 1) | Get started with the incident queue from the **Incidents** page of the Microsoft 365 Defender portal. From here you can: <ul><li> See which incidents should be [prioritized](incident-queue.md) based on severity and other factors. </li><li> [Manage incidents](manage-incidents.md), which includes renaming, assigning, classifying, and adding tags and comments based on your incident management workflow. </li></ul> |
+| Security investigator or analyst (Tier 2) | <ol><li> Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. </li></ol> |
+| Advanced security analyst or threat hunter (Tier 3) | <ol><li>Perform [investigations](investigate-incidents.md) of incidents from the **Incidents** page of the Microsoft 365 Defender portal. </li><li> Track and respond to emerging threats with [threat analytics](threat-analytics.md). </li><li> Proactively hunt for threats with [advanced threat hunting](advanced-hunting-overview.md). </li><li> See these [incident response playbooks](/security/compass/incident-response-playbooks) for detailed guidance for phishing, password spray, and app consent grant attacks. |
+| SOC manager | See how to [integrate Microsoft 365 Defender into your Security Operations Center (SOC)](integrate-microsoft-365-defender-secops.md). |
 
