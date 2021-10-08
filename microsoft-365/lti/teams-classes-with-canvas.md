@@ -27,7 +27,7 @@ Microsoft Teams classes is a Learning Tools Interoperability (LTI) app that help
 > - Your tenant must have an Microsoft Education license (A1 or higher).
 > - Only a single Microsoft tenant can be used for mapping users between Canvas and Microsoft.
 > - Your tenant must have an exact match between a Canvas field (email, Unique User ID, SIS ID, or Integration ID) and a field in AAD (User Principal Name (UPN), Primary Email Address (Mail), or Email Alias (mailNickname)).
-> - If you use SDS to create classes and groups, we recommend disabling the Team Creation Option in SDS and performing a [Group Cleanup](https://docs.microsoft.com/en-us/schooldatasync/group-cleanup) to avoid duplication of classes. SDS can still be used to sync organization and user data.
+> - If you use SDS to create classes and groups, we recommend disabling the Team Creation Option in SDS and performing a [Group Cleanup](/schooldatasync/group-cleanup) to avoid duplication of classes. SDS can still be used to sync organization and user data.
 
 
 ## Enable the Microsoft Teams app in Canvas
@@ -63,7 +63,8 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
 9. To approve access for Canvas’s **Microsoft-Teams-Sync-for-Canvas** Azure app, select the **Grant tenant access** link. You'll be redirected to the Microsoft Identity Platform Admin Consent Endpoint.
 
    ![permissions.](media/permissions.png)
-> [!NOTE] This step must be performed by a Microsoft tenant admin that can approve apps.
+> [!NOTE] 
+> This step must be performed by a Microsoft tenant admin that can approve apps.
 
 10. Select **Accept**.
 
