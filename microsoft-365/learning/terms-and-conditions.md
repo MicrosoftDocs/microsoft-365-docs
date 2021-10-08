@@ -25,7 +25,7 @@ Content accessible through Viva Learning is subject to terms other than the Micr
 
 - Microsoft 365 Trainings content is subject to terms available [here](https://www.microsoft.com/legal/terms-of-use) or at a successor location.
 
-- LinkedIn Learning content is subject to LinkedIn’s User Agreement available [here](https://www.linkedin.com/legal/user-agreement) or at a successor location and Privacy Policy available [here](https://www.linkedin.com/legal/privacy-policy) or at a successor location.
+- LinkedIn Learning content is subject to LinkedIn’s User Agreement (available [here](https://www.linkedin.com/legal/user-agreement) or at a successor location) and Privacy Policy (available [here](https://www.linkedin.com/legal/privacy-policy) or at a successor location).
 
 - Non-Microsoft third-party content and any associated services are subject to the content provider’s privacy and service terms.
 
