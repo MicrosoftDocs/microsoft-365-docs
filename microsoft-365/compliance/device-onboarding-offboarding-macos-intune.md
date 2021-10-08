@@ -1,5 +1,5 @@
 ---
-title: Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
+description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 ---
 
-# Onboard macOS devices into Microsoft 365 Compliance solutions using Intune
+# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune
 
 You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
 
@@ -37,13 +37,14 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions is a five phase process.
+Onboarding a macOS device into Compliance solutions is a six phase process.
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Enable kernel extension](#enable-kernel-extension)
 1. [Enable system extension](#enable-system-extension)
-1. [Deploy the Microsoft DLP enforcement package](#deploy-the-microsoft-dlp-enforcement-package)
+1. [Get the installation package](#get-the-installation-package)
+1. [Deploy the DLP installation package](#deploy-the-microsoft-dlp-enforcement-package)
 
 ### Get the device onboarding package
 
@@ -151,47 +152,36 @@ Onboarding a macOS device into Compliance solutions is a five phase process.
 
 1. Choose **Next** to deploy the configuration.
 
+### Get the installation package
+
+1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
+1. For **Select operating system to start onboarding process** choose **macOS**
+ 
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+ 
+1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
+
+> [!IMPORTANT]
+> Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
+ 
+
 ### Deploy the Microsoft DLP installation package
 
-Follow the instructions from [Intune](/intune/advanced-threat-protection).
+1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format.
 
-> [!NOTE]
-> - The **Health Status for onboarded devices** policy uses read-only properties and can't be remediated.
+## Offboard macOS devices using Intune
 
-## Offboard and monitor devices using Mobile Device Management tools
+1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+2. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 
-> [!NOTE]
-> Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
+1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/).
+3. Open **Properties** and **Assignments**
 
-2. In the navigation pane, select **Settings** > **Device onboarding** > **Offboarding**.
-
-3. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
-    
-4. Click **Download package**, and save the .zip file.
-
-5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
-
-6. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
-
-      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
-      Date type: String      
-      Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
-
-For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
-
-> [!NOTE]
-> The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
+4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
-## Related topics
-- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Onboard Windows 10 devices using a local script](device-onboarding-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
-- [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
