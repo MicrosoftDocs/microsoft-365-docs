@@ -476,7 +476,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
-   This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:
+   This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt \<saltvalue\>** option:
 
    - .EdmHash
    - .EdmSalt
