@@ -428,13 +428,13 @@ This computer must have direct access to your Microsoft 365 tenant.
 
    OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
    ```
 
 5. To hash and upload the sensitive data, run the following command in Command Prompt window:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"] /AllowedBadLinesPercentage [value]
    ```
 
@@ -448,7 +448,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 6. Check the upload status by running this command:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>
    ```
 
@@ -462,19 +462,19 @@ Perform the hash on a computer in a secure environment.
 
 OPTIONAL: If you used the Exact Data Match schema and sensitive information type wizard to create your schema and pattern files, run the following command in a Command Prompt window:
 
-```dos
+```console
 EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
 ````
 
 1. Run the following command in Command Prompt windows:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
    For example:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
    ```
 
@@ -487,19 +487,19 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    To upload the hashed data, run the following command in Windows Command Prompt:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>
    ```
 
    For example:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
    ```
 
    To verify that your sensitive data has been uploaded, run the following command in Command Prompt window:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetDataStore
    ```
 
@@ -507,7 +507,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
    If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:
 
-   ```dos
+   ```console
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
