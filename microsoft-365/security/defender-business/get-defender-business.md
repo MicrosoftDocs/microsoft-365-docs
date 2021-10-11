@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/30/2021
+ms.date: 10/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -36,7 +36,7 @@ To find a solution provider in your area, take the following steps:
 
 1. Go to the Microsoft Solution Providers page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
-2. In the search box, fill in your location and company size. In the Search for products, services, skills, industries box, put `Microsoft 365`, and then select **Go**.
+2. In the search box, fill in your location and company size. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
 
 3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
