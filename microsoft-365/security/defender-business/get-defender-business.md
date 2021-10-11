@@ -57,6 +57,4 @@ If you prefer to get Microsoft Defender for Business directly, keep in mind that
 
 ## Next steps
 
-- [Assign roles and permissions](mdb-roles-permissions.md)
-
-- [Choose where to manage your policies and settings](mdb-choose-portal.md)
+- [See the setup and configuration process for Microsoft Defender for Business](mdb-setup-configuration.md)
