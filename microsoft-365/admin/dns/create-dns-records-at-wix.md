@@ -36,11 +36,13 @@ These are the main records to add.
     
 - [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
     
-- [Add the five CNAME records that are required for Microsoft](#add-the-five-cname-records-that-are-required-for-microsoft).
+- [Add the CNAME record required for Microsoft](#add-the-cname-record-required-for-microsoft).
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam).
     
-- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft).
+- [Advanced option: Skype for Business](#advanced-option-skype-for-business).
+
+- [Advanced option: Intune and Mobile Device Management for Microsoft 365](#advanced-option-intune-and-mobile-device-management-for-microsoft-365).
     
 After you add these records at Wix, your domain will be set up to work with Microsoft services.
   
@@ -75,9 +77,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.
-  
-When Microsoft finds the correct TXT record, your domain is verified. To verify the TXT record in Microsoft 365 admin center:
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified. 
+
+To verify the TXT record in Microsoft 365 admin center:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -89,51 +91,45 @@ When Microsoft finds the correct TXT record, your domain is verified. To verify 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-
   
 ## Add an MX record so email for your domain will come to Microsoft
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
-2. Select **Domains** > **...**, and then select **Edit MX records** from the dropdown list. 
+1. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
     
-3. Select **Other** from the dropdown list. 
+1. Under **MX (Mail exchange)**, select **Edit MX Records**. 
+
+1. Choose **Other** from the drop-down list, and select **+ Add record**.
     
-4. In the boxes for the new record, type or copy and paste the values from the following table:
+1. In the boxes for the new record, type or copy and paste the values from the following table:
     
    | Host Name | Points to | Priority | TTL |
    |:-----|:-----|:-----|:-----|
    |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
    
-5. If there are any other MX records listed, delete each of them. 
+1. If there are any other MX records listed, delete each of them. 
     
 6. Select **Save**.
     
-## Add the five CNAME records that are required for Microsoft
+## Add the CNAME record required for Microsoft
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
-    
-3. Select **Other** from the dropdown list. 
 
-3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for each CNAME record. 
+3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record. 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table:
     
    | Host Name | Value | TTL |
    |:-----|:-----|:-----|
    |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
-   |sip  <br/> |sipdir.online.lync.com  <br/> |1 Hour <br/> |
-   |lyncdiscover  <br/> |webdir.online.lync.com   <br/> |1 Hour  <br/> |
-   |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 Hour <br/> |
-   |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 Hour  <br/> |
    
-5. Select **Save** after you add each new row. 
+5. Select **Save**. 
     
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-	
 ## Add a TXT record for SPF to help prevent email spam
 
 > [!IMPORTANT]
@@ -143,38 +139,85 @@ When Microsoft finds the correct TXT record, your domain is verified. To verify 
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
     
-3. Select **+ Add Record** in the **SPF** row of the DNS editor. 
+3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
+
+   **Note**: Wix provides an SPF row in the DNS editor. Ignore that row and use the **TXT (Text)** row to enter the SPF values below. 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table:
     
    | Host Name | Value | TTL |
    |:-----|:-----|:-----|
-   |[leave this blank]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.<br/> |TXT  <br/> | 1 Hour |
+   |[leave this blank]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.<br/> | 1 Hour |
    
 5. Select **Save**. 
     
 6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
-    
-	
-## Add the two SRV records that are required for Microsoft
+
+## Advanced option: Skype for Business
+
+Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+
+### Add the two required SRV records
 
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
-2. On the **My Domains** page, in the **Advanced** area, select the **Edit DNS** button. 
+1. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
     
-3. Select **+ Add another** in the **SRV** row of the DNS editor. 
-    
-4. In the boxes for the new record, type or copy and paste the values from the following table:
+1. Select **+ Add Record** in the **SRV** row of the DNS editor. 
+ 
+1. In the boxes for the new record, type or copy and paste the values from the first row in following table:
     
    | Service | Protocol | Name | Weight | Port | Target | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
    |sip  |tls  |Automatically populated |1  |443   |sipdir.online.lync.com |100 |1 Hour |
    |sipfed|tcp |Automatically populated|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
-5. Select **Save**. 
+1. Select **Save**. 
+  
+1. To add the other SRV record:
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+   Select **+ Add another** in the **SRV** row of the DNS editor, and select **Save** to add that record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+### Add the two required CNAME records 
+
+1. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor, and enter the values from the first row in the following table. 
+    
+   |**Type**|**Host**|**Value**|**TTL**|
+   |:-----|:-----|:-----|:-----|
+   |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
+   |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
+  
+1. Select **Save**.
+  
+1. Using the preceding two steps and the values from the second row in the table, add the other CNAME record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## Advanced option: Intune and Mobile Device Management for Microsoft 365
+
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+
+### Add the two required CNAME records
+
+1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
+    
+2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
+
+3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor, and enter the values from the first row in the following table. 
+    
+    |**Type**|**Host**|**Value**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
+  
+1. Select **Save**.
+  
+1. Using the preceding two steps and the values from the second row in the table, add the other CNAME record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   

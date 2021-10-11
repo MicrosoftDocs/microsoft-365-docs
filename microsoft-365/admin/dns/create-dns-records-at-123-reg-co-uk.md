@@ -30,8 +30,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
   
 If 123-reg.co.uk is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
-After you add these records at 123-reg.co.uk, your domain will be set up to work with Microsoft services.
-  
+After you add these records at 123-reg.co.uk, your domain will be set up to work with Microsoft services. 
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -69,7 +68,6 @@ Now that you've added the record at your domain registrar's site, you'll go back
 When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
     
 2. On the **Domains** page, select the domain that you are verifying. 
     
@@ -108,7 +106,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     ![Select Delete (the trash can icon)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
-## Add the six CNAME records that are required for Microsoft
+## Add the CNAME record required for Microsoft
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
@@ -118,7 +116,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
     
-5. Add the first of the six CNAME records.
+5. Add the CNAME record.
     
     In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -127,22 +125,12 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
 6. Select **Add**.
     
     ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
-  
-7. Add the other five CNAME records.
-    
-    In the **Advanced DNS** section, create a record using the values from the next row in the table, and then again select **Add** to complete that record. 
-    
-    Repeat this process until you have created all six CNAME records.
     
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -170,8 +158,12 @@ When Microsoft finds the correct TXT record, your domain is verified.
 6. Select **Add**.
     
     ![Select Add](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
-  
-## Add the two SRV records that are required for Microsoft
+
+## Advanced option: Skype for Business
+
+Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+
+### Add the two required SRV records
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
@@ -183,7 +175,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 5. Add the first of the two SRV records:
     
-    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+   In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.
     
     (Choose the **Type** value from the drop-down list.) 
     
@@ -205,4 +197,66 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+### Add the two required CNAME records 
+    
+1. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+    
+1. Add the first CNAME record.
+    
+    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+    
+    (Choose the **Type** value from the drop-down list.) 
+    
+    |**Type**|**Host**|**Value**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+   
+    ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+  
+1. Select **Add**.
+    
+    ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+  
+1. Using the preceding three steps and the values from the second row in the table, add the other CNAME record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## Advanced option: Intune and Mobile Device Management for Microsoft 365
+
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+
+### Add the two required CNAME records
+
+1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+    
+2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+    
+3. Choose **DNS** from the **Select action** drop-down list. 
+    
+4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+  
+7. Add the first CNAME record.
+    
+    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+    
+    (Choose the **Type** value from the drop-down list.) 
+    
+    |**Type**|**Host**|**Value**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+   
+    ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+  
+1. Select **Add**.
+    
+    ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
+  
+1. Using the preceding three steps and the values from the second row in the table, add the other CNAME record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
