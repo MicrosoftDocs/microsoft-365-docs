@@ -27,7 +27,7 @@ As a preview customer, you likely have assistance in setting up Microsoft Defend
 Before you begin your setup and configuration process, make sure to review the following articles:
 
 - [Microsoft Defender for Business requirements](mdb-requirements.md)
-- [Get Microsoft Defender for Business](get-defender-business.md)
+- [How to get Microsoft Defender for Business](get-defender-business.md)
 
 ## The setup and configuration process at a glance
 
