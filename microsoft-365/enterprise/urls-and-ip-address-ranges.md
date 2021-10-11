@@ -41,7 +41,7 @@ Start with [Managing Office 365 endpoints](managing-office-365-endpoints.md) to 
 
 Endpoint data below lists requirements for connectivity from a user's machine to Office 365. For detail on IP addresses used for network connections from Microsoft into a customer network, sometimes called hybrid or inbound network connections, see [Additional endpoints](additional-office365-ip-addresses-and-urls.md) for more information.
 
-The endpoints are grouped into four service areas. The first three service areas can be independently selected for connectivity. The fourth service area is a common dependency (called Microsoft 365 Common and Office) and must always have network connectivity.
+The endpoints are grouped into four service areas representing the three primary workloads and a set of common resources. The groups may be used to associate traffic flows with a particular application, however given that features often consume endpoints across multiple workloads, these groups cannot effectively be used to restrict access.
 
 Data columns shown are:
 
