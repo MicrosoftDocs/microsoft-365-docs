@@ -22,6 +22,13 @@ ms.collection:
 
 As a preview customer, you likely have assistance in setting up Microsoft Defender for Business for your company. However, you can do the setup and configuration process yourself as well. Use this article as a guide.
 
+## Before you begin
+
+Before you begin your setup and configuration process, make sure to review the following articles:
+
+- [Microsoft Defender for Business requirements](mdb-requirements.md)
+- [Get Microsoft Defender for Business](get-defender-business.md)
+
 ## The setup and configuration process at a glance <br/><br/>
 
 | Step  | Article | Description  |

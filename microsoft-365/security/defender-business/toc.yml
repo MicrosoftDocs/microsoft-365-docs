@@ -8,14 +8,14 @@
         href: mdb-overview.md
       - name: Compare plans for small and midsized businesses
         href: compare-mdb-m365bp.md
+      - name: Requirements
+        href: mdb-requirements.md
+      - name: How to get Microsoft Defender for Business
+        href: get-defender-business.md
     - name: Setup and configuration
       items:
       - name: Setup and configuration
         href: mdb-setup-configuration.md
-      - name: Review the requirements
-        href: mdb-requirements.md
-      - name: Get Microsoft Defender for Business
-        href: get-defender-business.md
       - name: Assign roles and permissions
         href: mdb-roles-permissions.md
       - name: Set up email notifications
