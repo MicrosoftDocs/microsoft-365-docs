@@ -44,13 +44,13 @@ These instructions apply to the new unified solution and installer package of Mi
 
 To facilitate upgrades when Microsoft Endpoint Configuration Manager or Azure Defender are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
 
-1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL)
-2. Remove System Center Endpoint Protection client if installed
-3. Download and install (Windows Server 2012 R2) [prerequisites](configure-server-endpoints.md#prerequisites) if required
-4. Install Microsoft Defender for Endpoint
+1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL).
+2. Remove System Center Endpoint Protection client if installed.
+3. Download and install (Windows Server 2012 R2) [prerequisites](configure-server-endpoints.md#prerequisites) if required.
+4. Install Microsoft Defender for Endpoint.
 5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com).
 
-To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
+To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
 
 EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
