@@ -36,6 +36,8 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Desktop licensing
 
+<br />
+
 ****
 
 |GCC|GCC High|DoD|
@@ -47,6 +49,8 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Server licensing
 
+<br />
+
 ****
 
 |GCC|GCC High|DoD|
@@ -57,6 +61,8 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 ## Portal URLs
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
+
+<br />
 
 ****
 
@@ -72,7 +78,9 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 The following OS versions are supported:
 
-***
+<br />
+
+****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -113,7 +121,9 @@ iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg
 
 The following OS versions are supported when using [Azure Defender for Servers](/azure/security-center/security-center-wdatp):
 
-***
+<br />
+
+****
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -144,6 +154,8 @@ For more information, see [Configure device proxy and Internet connectivity sett
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
+<br />
+
 ****
 
 |Endpoint type|GCC|GCC High & DoD|
@@ -157,6 +169,8 @@ Instead of the public URIs listed in our [API documentation](apis-intro.md), you
 Defender for Endpoint for US Government customers doesn't have complete parity with the commercial offering. While our goal is to deliver all commercial features and functionality to our US Government customers, there are some capabilities not yet available we want to highlight.
 
 These are the known gaps:
+
+<br />
 
 ****
 
