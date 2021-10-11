@@ -20,7 +20,7 @@ description: Learn how to get Microsoft Viva Learning and manage it in the Teams
 
 # Set up Microsoft Viva Learning
 
-Viva learning comes Pre-installed in Teams. Learn how to [Manage your apps in the Microsoft Teams admin center](microsoftteams/manage-apps).
+Viva learning comes Pre-installed in Teams. Learn how to [Manage your apps in the Microsoft Teams admin center](/microsoftteams/manage-apps).
 
 If you're using Viva Learning in a preview tenant, learn how to [Set up Viva Learning (Preview) in the Microsoft Teams admin center](set-up-teams-admin-center-preview.md).
 
