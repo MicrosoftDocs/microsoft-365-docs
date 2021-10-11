@@ -55,7 +55,7 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
       * **SIS User ID** is the ID value that is populated from the Student Information System (SIS) and is viewable on the user's profile page.
       * **Integration ID** is only populated via SIS imports and is viewable on the user's profile page. Typically, this unique identifier is provided by the institution and used in account trusts or consortia situations to identify users across multiple accounts.
 
-   * The **Suffix** field is optional and lets you specify a domain when there isn't an exact mapping between Canvas attributes and Microsoft AAD fields. For example, if your Canvas email is 'name@example.edu' while the UPN in Microsoft AAD is 'name', you can match users by entering '@example.edu' in the suffix field.. Note that the domain should be entered in this field with the preceding @.
+   * The **Suffix** field is optional and lets you specify a domain when there isn't an exact mapping between Canvas attributes and Microsoft AAD fields. For example, if your Canvas email is 'name@example.edu' while the UPN in Microsoft AAD is 'name', you can match users by entering '@example.edu' in the suffix field. The domain should be entered in this field with the preceding @.
    * The Active Directory Lookup Attribute is the field in AAD to which Canvas attributes are matched. Select in between UPN, primary email address, or the email alias.
 
 8. Select **Update Settings**.
@@ -70,7 +70,7 @@ To begin the integration, you need to enable the app in Canvas by enabling the d
 
 ## Integrate Teams classes LTI in Canvas
 
-After enabling enabling the sync and approving the Azure app, the Canvas admin can now add the Teams classes LTI app to the Canvas environment so it will appear in the navigation of the Canvas user interface.
+After enabling the sync and approving the Azure app, the Canvas admin can now add the Teams classes LTI app to the Canvas environment so it will appear in the navigation of the Canvas user interface.
 
 **To add the Teams classes LTI app to the Canvas environment**
 
