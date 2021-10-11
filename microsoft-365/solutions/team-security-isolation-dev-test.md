@@ -9,7 +9,7 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -22,7 +22,7 @@ description: Configure the security and infrastructure that allows your employee
 
 This article provides step-by-step instructions to create a [team with security isolation](secure-teams-security-isolation.md) in a dev/test environment.
 
-![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![Configuration for the Company Strategy isolated team.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 Use this dev/test environment to experiment and fine-tune settings for your specific needs before deploying this type of team in production.
 
@@ -197,7 +197,7 @@ If you sign in as a member of the Company Strategy group, you will see **Company
 
 Here is the resulting configuration for the Company Strategy team.
 
-![Configuration for the Company Strategy isolated team](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
+![Configuration for the Company Strategy isolated team.](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
 ## Next step
 

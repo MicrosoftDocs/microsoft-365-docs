@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Learn how to set up and use a connector in the Microsoft 365 compliance center to import and archive data from Skype for Business to Microsoft 365."
 ---
@@ -24,7 +24,7 @@ After Skype for Business data is stored in user mailboxes, you can apply Microso
 
 The following overview explains the process of using a connector to archive the Skype for Business data in Microsoft 365.
 
-![Archiving workflow for Skype for Business data](../media/SkypeforBusinessConnectorWorkflow.png)
+![Archiving workflow for Skype for Business data.](../media/SkypeforBusinessConnectorWorkflow.png)
 
 1. Your organization works with Skype for Business to set up and configure a Skype for Business site.
 

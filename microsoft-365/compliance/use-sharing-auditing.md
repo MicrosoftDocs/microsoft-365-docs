@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -89,7 +89,7 @@ A common requirement for administrators is creating a list of all resources that
   
 ### Step 1: Search for sharing events and export the results to a CSV file
 
-The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
 1. Go to <https://compliance.microsoft.com>.
 
@@ -101,7 +101,7 @@ The first step is to search the audit log for sharing events. For more informati
 
 4. Under **Activities**, click **Sharing and access request activities** to search for sharing-related events. 
 
-    ![Under Activities, select Sharing and access request activities](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![Under Activities, select Sharing and access request activities.](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5. Select a date and time range to find the sharing events that occurred within that period. 
 

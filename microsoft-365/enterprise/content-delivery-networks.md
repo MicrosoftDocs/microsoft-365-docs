@@ -7,7 +7,7 @@ ms.date: 07/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -32,7 +32,7 @@ CDNs help keep Office 365 fast and reliable for end users. Cloud services like O
 
 A CDN is a geographically distributed network consisting of proxy and file servers in datacenters connected by high-speed backbone networks. CDNs are used to reduce latency and load times for a specified set of files and objects in a web site or service. A CDN may have many thousands of endpoints for optimal servicing of incoming requests from any location.
 
-CDNs are commonly used to provide faster downloads of generic content for a web site or service such as javascript files, icons and images, and can also provide private access to user content such as files in SharePoint Online document libraries, streaming media files, and custom code.
+CDNs are commonly used to provide faster downloads of generic content for a web site or service such as Javascript files, icons and images, and can also provide private access to user content such as files in SharePoint Online document libraries, streaming media files, and custom code.
 
 CDNs are used by most enterprise cloud services. Cloud services like Office 365 have millions of customers downloading a mix of proprietary content (such as emails) and generic content (such as icons) at one time. It's more efficient to put images everyone uses, like icons, as close to the user's computer as possible. It isn't practical for every cloud service to build CDN datacenters that store this generic content in every metropolitan area, or even in every major Internet hub around the world, so some of these CDNs are shared.
 
@@ -55,9 +55,9 @@ The built-in Office 365 Content Delivery Network (CDN) allows Office 365 adminis
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both.
 
-![Office 365 CDN conceptual diagram](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
+![Office 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.svg "Office 365 CDN conceptual diagram")
 
-Content in **public** origins within the Office 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as javascript files, scripts, icons and images. The Office 365 CDN is used by default for downloading generic resource assets like the Office 365 client applications from a public origin.
+Content in **public** origins within the Office 365 CDN is accessible anonymously, and can be accessed by anyone who has URLs to hosted assets. Because access to content in public origins is anonymous, you should only use them to cache non-sensitive generic content such as Javascript files, scripts, icons and images. The Office 365 CDN is used by default for downloading generic resource assets like the Office 365 client applications from a public origin.
 
 **Private** origins within the Office 365 CDN provide private access to user content such as SharePoint Online document libraries, sites and proprietary images. Access to content in private origins is secured with dynamically generated tokens so it can only be accessed by users with permissions to the original document library or storage location. Private origins in the Office 365 CDN can only be used for SharePoint Online content, and you can only access assets through redirection from your SharePoint Online tenant.
 
@@ -124,7 +124,7 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 
 |CDN  |Company  |Usage  |Link  |
 |---------|---------|---------|---------|
-|Office 365 CDN     |Akamai         |Generic assets in public origins, SharePoint user content in private origins         |[Use the Office 365 content delivery network with SharePoint Online](use-microsoft-365-cdn-with-spo.md)         |
+|Office 365 CDN     |Microsoft Azure         |Generic assets in public origins, SharePoint user content in private origins         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Azure CDN     |Microsoft         |Custom code, SharePoint Framework solutions         |[Microsoft Azure CDN](https://azure.microsoft.com/documentation/services/cdn/)         |
 |Microsoft Ajax CDN (read only)     |Microsoft         |Common libraries for Ajax, jQuery, ASP.NET, Bootstrap, Knockout.js etc.         |[Microsoft Ajax CDN](/aspnet/ajax/cdn/overview)         |
 
@@ -132,17 +132,17 @@ The CDNs in use by Office 365 are always subject to change and in many cases the
 
 There are many factors involved in measuring specific differences in performance between data downloaded directly from Office 365 and data downloaded from a specific CDN, such as your location relative to your tenant and to the nearest CDN endpoint, the number of assets on a page that are served by the CDN, and transient changes in network latency and bandwidth. However, a simple A/B test can help to show the difference in download time for a specific file.
 
-The following screen shots illustrate the difference in download speed between the native file location in Office 365 and the same file hosted on the [Microsoft Ajax Content Delivery Network](/aspnet/ajax/cdn/overview). These screen shots are from the **Network** tab in the Internet Explorer 11 developer tools. These screen shots show the latency on the popular library jQuery. To bring up this screen, in Internet Explorer, press **F12** and select the **Network** tab which is symbolized with a Wi-Fi icon.
+The following screenshots illustrate the difference in download speed between the native file location in Office 365 and the same file hosted on the [Microsoft Ajax Content Delivery Network](/aspnet/ajax/cdn/overview). These screenshots are from the **Network** tab in the Internet Explorer 11 developer tools. These screenshots show the latency on the popular library jQuery. To bring up this screen, in Internet Explorer, press **F12** and select the **Network** tab which is symbolized with a Wi-Fi icon.
   
-![Screenshot of F12 Network](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
+![Screenshot of F12 Network.](../media/930541fd-af9b-434a-ae18-7bda867be128.png)
   
-This screen shot shows the library uploaded to the master page gallery on the SharePoint Online site itself. The time it took to upload the library is 1.51 seconds.
+This screenshot shows the library uploaded to the master page gallery on the SharePoint Online site itself. The time it took to upload the library is 1.51 seconds.
   
-![Screenshot of load time 1.51s](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
+![Screenshot of load time 1.51s.](../media/64225c79-fa53-480f-81cd-0d351674320e.png)
   
-The second screen shot shows the same file delivered by Microsoft's CDN. This time the latency is around 496 milliseconds. This is a large improvement and shows that a whole second is shaved off the total time to download the object.
+The second screenshot shows the same file delivered by Microsoft's CDN. This time the latency is around 496 milliseconds. This is a large improvement and shows that a whole second is shaved off the total time to download the object.
   
-![Screenshot of load times in 469 ms](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
+![Screenshot of load times in 469 ms.](../media/6a553cc3-25a0-42c1-aae7-4aebbc2eb4c3.png)
 
 ## Is my data safe?
 

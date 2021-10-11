@@ -2,13 +2,13 @@
 title: Mail flow intelligence
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
@@ -75,8 +75,8 @@ Typically, this error means Microsoft 365 encountered a connection error when it
     1. In the EAC, go to **Mail flow** \> **Connectors**.
 
     2. Select the connector with the **From** value **Office 365** and the **To** value **Your organization's email server** and do one of the following steps:
-       - Delete the connector by clicking **Delete** ![Remove icon](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
-       - Disable the connector by clicking **Edit** ![Edit icon](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) and clearing **Turn it on**.
+       - Delete the connector by clicking **Delete** ![Remove icon.](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - Disable the connector by clicking **Edit** ![Edit icon.](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) and clearing **Turn it on**.
 
   - Change the accepted domain in Microsoft 365 that's associated with your on-premises email environment from **Internal Relay** to **Authoritative**. For instructions, see [Manage accepted domains in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 

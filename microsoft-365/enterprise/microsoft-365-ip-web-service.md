@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
@@ -126,7 +126,7 @@ This URI returns the latest version of the specified Office 365 service instance
 }
 ```
 
-Example 3 request URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Example 3 request URI: <https://endpoints.office.com/version/Worldwide?Format=CSV&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows output in CSV format. Example result:
 
@@ -135,7 +135,7 @@ instance,latest
 Worldwide,2018063000
 ```
 
-Example 4 request URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&amp;ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
+Example 4 request URI: <https://endpoints.office.com/version/Worldwide?AllVersions=true&ClientRequestId=b10c5ed1-bad1-445f-b386-b919946339a7>
 
 This URI shows all prior versions that have been published for the Office 365 worldwide service instance. Example result:
 
@@ -601,7 +601,7 @@ Updates to the parameters or results for these web service methods may be requir
 
 You can use a few different methods to get email notifications when changes to the IP addresses and URLs are published to the web service.
 
-- To use a Microsoft Flow solution, see [Use Microsoft Flow to receive an email for changes to Office 365 IP Addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
+- To use a Power Automate solution, see [Use Power Automate to receive an email for changes to Office 365 IP Addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - To deploy an Azure Logic App using an ARM template, see [Office 365 Update Notification (v1.1)](https://aka.ms/ipurlws-updates-template).
 - To write your own notification script using PowerShell, see [Send-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 

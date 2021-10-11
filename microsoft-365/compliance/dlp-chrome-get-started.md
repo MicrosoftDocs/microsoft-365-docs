@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -110,7 +110,7 @@ This is the recommended method.
 
 Use this setup method for organization-wide deployments.
 
-##### Enabling Required Registry Key via Microsoft Endpoint Manager
+##### Enabling Required Registry Value via Microsoft Endpoint Manager
 
 1. Create a PowerShell script with the following contents:
 
@@ -125,7 +125,7 @@ Use this setup method for organization-wide deployments.
 4. Browse to the location of the script created when prompted.
 
 5. Select the following settings:
-    1. Run this script using the logged-on credentials: YES
+    1. Run this script using the logged-on credentials: NO
     1. Enforce script signature check: NO
     1. Run script in 64-bit PowerShell Host: YES
 
@@ -249,7 +249,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### Known Issues and Limitations
 

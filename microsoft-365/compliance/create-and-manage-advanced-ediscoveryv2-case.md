@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - m365solution-aed
@@ -59,7 +59,7 @@ Complete the following steps to create a case and add members. The user who crea
 
 To get you started using Advanced eDiscovery, here's a basic workflow that aligns with [common eDiscovery practices](advanced-ediscovery-edrm.md). In each of these steps, we'll also highlight some extended Advanced eDiscovery functionality that you can explore.
 
-![Advanced eDiscovery workflow](../media/AeDWorkflow.png)
+![Advanced eDiscovery workflow.](../media/AeDWorkflow.png)
 
 1. **[Add custodians](add-custodians-to-case.md) and [non-custodial data sources](non-custodial-data-sources.md) to the case**. The first step after creating a case is to add custodians. A *custodian* is a person having administrative control of a document or electronic file that may be relevant to the case. Additionally, you can add data sources that aren't associated with a specific user but may be relevant to the case.
 
@@ -105,7 +105,7 @@ To get you started using Advanced eDiscovery, here's a basic workflow that align
 
 Here's an architecture diagram that shows the Advanced eDiscovery end-to-end workflow in a single-geo environment and in a multi-geo environment, and the end-to-end data flow that's aligned with the [Electronic Discovery Reference Model](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model).
 
-[![Model poster: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Model poster: Advanced eDiscovery Architecture in Microsoft 365.](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [View as an image](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 

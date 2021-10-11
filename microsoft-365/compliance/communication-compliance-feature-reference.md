@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -29,9 +29,6 @@ search.appverid:
 
 You create communication compliance policies for Microsoft 365 organizations in the Microsoft 365 compliance center. Communication compliance policies define which communications and users are subject to review in your organization, define which custom conditions the communications must meet, and specify who should do reviews. Users assigned the *Communication Compliance Admin* role can set up policies, and anyone who has this role assigned can access the **Communication compliance** page and global settings in the Microsoft 365 compliance center. If needed, you can export the history of modifications to a policy to a .csv (comma-separated values) file that also includes the status of alerts pending review, escalated items, and resolved items. Policies can't be renamed and can be deleted when no longer needed.
 
-> [!NOTE]
-> Supervision policies created in the Security & Compliance Center for Office 365 subscriptions cannot migrate to Microsoft 365. If you're migrating from an Office 365 subscription to a Microsoft 365 subscription, you'll need to create new communication compliance polices to replace existing Supervision policies.
-
 ## Policy templates
 
 Policy templates are pre-defined policy settings that you can use to quickly create policies to address common compliance scenarios. Each of these templates has differences in conditions and scope, and all templates use the same types of scanning signals. You can choose from the following policy templates:
@@ -45,7 +42,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 Communications are scanned every 24 hours from the time policies are created. For example, if you create an offensive language policy at 11:00 AM, the policy will gather communication compliance signals every 24 hours at 11:00 AM daily. Editing a policy doesn't change this time. To view the last scan date and time for a policy, navigate to the *Last policy scan* column on the **Policy** page. After creating a new policy, it may take up to 24 hours to view the first policy scan date and time. The date and time of the last scan are converted to the time zone of your local system.
 
-## Pausing a policy (preview)
+## Pause a policy (preview)
 
 After you've created a communication compliance policy, the policy may be temporarily paused if needed. Pausing a policy may be used for testing or troubleshooting policy matches, or for optimizing policy conditions. Instead of deleting a policy in these circumstances, pausing a policy also preserves existing policy alerts and messages for ongoing investigations and reviews. Pausing a policy prevents inspection and alert generation for all user message conditions defined in the policy for the time the policy is paused. To pause or restart a policy, users must be a member of the *Communication Compliance Admin* role group.
 
@@ -61,6 +58,36 @@ The policy status for paused policies may indicate several states:
 - **Error in pausing**: An error has been encountered when pausing the policy. For the error stack trace, hover your mouse over the *Error in pausing* status in the Status column on the Policy page.
 
 To resume a policy, navigate to the **Policy** page, select a policy, and then select **Resume policy** from the actions toolbar. On the **Resume policy** pane, confirm you'd like to resume the policy by selecting **Resume**. In some cases, it may take up to 24 hours for a policy to be resumed. Once the policy is resumed, alerts for messages matching the policy will be created and will be available for investigation, review, and remediation.
+
+## Copy a policy (preview)
+
+For organizations with existing communication compliance policies, there may be scenarios when creating a new policy from an existing policy may be helpful. Copying a policy creates an exact duplicate of an existing policy, including all in-scope users, all assigned reviewers, and all policy conditions. Some scenarios may include:
+
+- **Policy storage limit reached**: Active communication compliance policies have message storage limits. When the storage limit for a policy is reached, the policy is automatically deactivated. Organizations that need to continue to detect, capture, and act on inappropriate messages covered by the deactivated policy can quickly create a new policy with an identical configuration.
+- **Detect and review inappropriate messages for different groups of users**: Some organizations may prefer to create multiple policies with the same configuration but include different in-scope users and different reviewers for each policy.
+- **Similar policies with small changes**: For policies with complex configurations or conditions, it may save time to create a new policy from a similar policy.
+
+To copy a policy, users must be a member of the *Communication Compliance* or *Communication Compliance Admin* role groups. After a new policy is created from an existing policy, it may take up to 24 hours to view messages that match the new policy configuration.
+
+To copy a policy and create a new policy, complete the following steps:
+
+1. Select the policy you want to copy.
+2. Select **Copy policy** command bar button on the command bar, or select **Copy policy** from the action menu for the policy.
+3. In the **Copy policy** pane, you can accept the default name for the policy in the **Policy name** field or rename the policy. The policy name for the new policy cannot be the same as an existing active or deactivated policy. Complete the **Description** field as needed.
+4. If you don't need further customization of the policy, select **Copy policy** to complete the process. If you need to update the configuration of the new policy, select **Customize policy**. This starts the policy wizard to help you update and customize the new policy.
+
+## Storage limit notification (preview)
+
+Each communication compliance policy has a storage limit size of 100-GB or 1 million messages, whichever is reached first. As the policy approaches these limits, notification emails are automatically sent to users assigned to the *Communication Compliance* or *Communication Compliance Admin* role groups. Notifications messages are sent when the storage size or message count reach 80, 90, and 95 percent of the limit. When the policy limit is reached, the policy is automatically deactivated, and the policy stops processing messages for alerts.
+
+>[!IMPORTANT]
+>If a policy is deactivated due to reaching the storage and message limits, be sure to evaluate how to manage the deactivated policy. If you delete the policy, all messages, associated attachments, and message alerts will be permanently deleted. If you need to maintain these items for future use, do not delete the deactivated policy.
+
+To manage policies approaching the storage and message limits, consider making a copy of the policy to maintain coverage continuity or take the following actions to help minimize current policy storage size and message counts:
+
+- Consider reducing the number of users assigned to the policy. Removing users from the policy or creating different policies for different groups of users can help slow the growth of policy size and total messages.
+- Examine the policy for excessive false positive alerts. Consider adding exceptions or changes to the policy conditions to ignore common false positive alerts.
+- If a policy has reached the storage or message limits and has been deactivated, make a copy of the policy  to continue to detect and take action for the same conditions and users.
 
 ## Permissions
 
@@ -121,7 +148,23 @@ Adding groups and distribution lists to communication compliance policies are pa
 
 With communication compliance policies, you can choose to scan messages in one or more of the following communication platforms as a group or as standalone sources. Communications captured across these platforms are retained for seven years for each policy by default, even if users leave your organization and their mailboxes are deleted.
 
-- **Microsoft Teams**: Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
+- **Microsoft Teams**: Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
+
+    For private chat and private channels, communication compliance policies support Modern attachment scanning. Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+
+    Modern attachment scanning is supported for the following file types:
+
+    - Microsoft Word (.docx)
+    - Microsoft Excel (.xlsx)
+    - Microsoft PowerPoint (.pptx)
+    - Text (.txt)
+    - Portable Document Format (.pdf)
+
+    Extracted text for Modern attachments is included with the associated message on the **Pending** alerts dashboard for a policy. The extracted text for an attachment is named as the attachment file name (and format extension) and the .txt extension. For example, the extracted text for an attachment named *ContosoBusinessPlan.docx* would appear as *ContosoBusinessPlan.docx.txt* in the **Pending** alerts dashboard for a policy.
+
+    Select the extracted attachment text to view the details in the *Source*, *Plain text*, or *Annotate* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You also have the option to download the attachment for review outside of the communication compliance review process.
+
+    Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
     - **For Teams chat communications:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the communication compliance policy. This setting is for one-to-one or one-to-many user/chat relationships.
     - **For Teams Channel communications:** Assign every Microsoft Teams channel or Microsoft 365 group you want to scan that contains a specific user to the communication compliance policy. If you add the same user to other Microsoft Teams channels or Microsoft 365 groups, be sure to add these new channels and groups to the communication compliance policy. If any member of the channel is a supervised user within a policy and the *Inbound* direction is configured in a policy, all messages sent within the channel are subject to review and potential policy matches (even for users in the channel that aren't explicitly supervised). For example, User A is the owner or a member of a channel. User B and User C are members of the same channel and use language that is matched to the offensive language policy that supervises only User A. User B and User C create policy matches for conversations within the channel even though they aren't directly supervised in the offensive language policy. Teams conversations between User B and User C that are outside of the channel that includes User A would not be subject to the offensive language policy that includes User A. To exclude channel members from supervision when other members of the channel are explicitly supervised, turn off the *Inbound* communication direction setting in the applicable communication compliance policy.
@@ -204,7 +247,7 @@ For information about trainable classifiers in Microsoft 365, see [Getting start
 
 Configure built-in or custom communication compliance policies to scan and identify printed or handwritten text from images that may be inappropriate in your organization. Integrated [Azure Cognitive Services and optical scanning support](/azure/cognitive-services/computer-vision/overview-ocr) for identifying text in images help analysts and investigators detect and act on instances where inappropriate conduct may be missed in communications that is primarily non-textual.
 
-You can enable optical character recognition (OCR) in new policies from templates, custom policies, or update existing policies to expand support for processing embedded images and attachments. When enabled in a policy created from a policy template, automatic scanning is supported for embedded or attached images in email and Microsoft Teams chat messages. For custom policies, one or more conditional settings associated with keywords, built-in classifiers, or sensitive info types must be configured in the policy to enable the selection of OCR scanning.
+You can enable optical character recognition (OCR) in new policies from templates, custom policies, or update existing policies to expand support for processing embedded images and attachments. When enabled in a policy created from a policy template, automatic scanning is supported for embedded or attached images in email and Microsoft Teams chat messages. For images embedded in document files, OCR scanning isn't supported. For custom policies, one or more conditional settings associated with keywords, built-in classifiers, or sensitive info types must be configured in the policy to enable the selection of OCR scanning.
 
 Images from 50 KB to 4 MB in the following image formats are scanned and processed:
 
@@ -252,7 +295,7 @@ Each word you enter and separate with a comma is applied separately (only one wo
 > *confidential* <br>
 > *insider trading*
 
-To scan both email messages and attachments for the same keywords, create a [data loss prevention policy](create-test-tune-dlp-policy.md) with a [custom keyword dictionary](create-a-keyword-dictionary.md) for the terms you wish to scan in messages. This policy configuration identifies defined keywords that appear in either the email message **OR** in the email attachment. Using the standard conditional policy settings (*Message contains any of these words* and *Attachment contains any of these words*) to identify terms in messages and in attachments requires the terms to be present in **BOTH** the message and the attachment.
+To scan both email messages and attachments for the same keywords, create a [custom keyword dictionary](create-a-keyword-dictionary.md) for the terms you wish to scan in messages. This policy configuration identifies defined keywords that appear in either the email message **OR** in the email attachment. Using the standard conditional policy settings (*Message contains any of these words* and *Attachment contains any of these words*) to identify terms in messages and in attachments requires the terms to be present in **BOTH** the message and the attachment.
 
 #### Enter multiple conditions
 
@@ -332,30 +375,30 @@ Communication compliance filters allow you to filter and sort alert messages for
 
 ## Alert policies
 
-After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy.
+After you configure a policy, a corresponding alert policy is automatically created and alerts are generated for messages that match conditions defined in the policy. It may take up to 24 hours after creating a policy start to receive alerts from activity indicators. By default, all policy matches alert triggers are assigned a severity level of medium in the associated alert policy. Alerts are generated for a communication compliance policy once the aggregation trigger threshold level is met in the associated alert policy.
 
 For communication compliance policies, the following alert policy values are configured by default:
 
 |**Alert policy trigger**|**Default value**|
 |:-----|:-----|
 | Aggregation | Simple aggregation |
-| Threshold | 4 activities |
-| Window | 60 minutes |
+| Threshold | Default: 4 activities <br> Minimum: 3 activities <br> Maximum: 2,147,483,647 activities |
+| Window | Default: 60 minutes <br> Minimum: 60 minutes <br> Maximum: 10,000 minutes |
 
 > [!NOTE]
 > The alert policy threshold trigger settings for activities supports a minimum value of 3 or higher for communication compliance policies.
 
-You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Security & Compliance Center.
+You can change the default settings for triggers on number of activities, period for the activities, and for specific users in alert policies on the **Alert policies** page in the Microsoft 365 compliance center.
 
 ### Change the severity level for an alert policy
 
 If you'd like to change the severity level assigned in an alert policy for a specific communication compliance policy, complete the following steps:
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Policies**.
 
-3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page in the **Office 365 Security & Compliance center**.
+3. Select **Office 365 alert** on the **Policies** page to open the **Alerts policies** page.
 
 4. Select the checkbox for the communication compliance policy you want to update, then select **Edit policy**.
 
@@ -374,7 +417,7 @@ Customers with Microsoft 365 subscriptions that include communication compliance
 > [!IMPORTANT]
 > Are you receiving prompts for additional license validation when testing Power Automate flows? Your organization may not have received service updates for this preview feature yet. Updates are being deployed and all organizations with Microsoft 365 subscriptions that include communication compliance should have license support for flows created from the recommended Power Automate templates by October 30, 2020.
 
-![Communication compliance Power Automate](../media/communication-compliance-power-automate.png)
+![Communication compliance Power Automate.](../media/communication-compliance-power-automate.png)
 
 The following Power Automate template is provided to customers to support process automation for communication compliance alerts:
 
@@ -441,9 +484,11 @@ Complete the following steps to delete a Power Automate flow:
 
 ## Reports
 
-The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing.
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
 
-![Communication compliance reports dashboard](../media/communication-compliance-reports-dashboard.png)
+For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for reports, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
+
+![Communication compliance reports dashboard.](../media/communication-compliance-reports-dashboard.png)
 
 The **Reports dashboard** contains the following report widgets and detailed reports links:
 
@@ -509,7 +554,7 @@ The **Reports dashboard** contains the following report widgets and detailed rep
 In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 > [!IMPORTANT]
-> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
+> Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log). When activities trigger events that are captured in the Microsoft 365 Audit log, it may take up to 48 hours before these events can be viewed in communication compliance policies.
 
 To view communication compliance policy update activities, select the **Export policy updates** control on the main page for any policy. You must be assigned the *Global Admin* or *Communication Compliance Admin* roles to export update activities. This action generates an audit file in the .csv format that contains the following information:
 
@@ -549,7 +594,7 @@ This example returns activities that match your current communication compliance
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch
 ```
 
-Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 50-GB limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
+Communication compliance policy matches are stored in a supervision mailbox for each policy. In some cases, you may need to check the size of your supervision mailbox for a policy to make sure you aren't approaching the current 100-GB storage size or 1 million message limit. If the mailbox limit is reached, policy matches aren't captured and you'll need to create a new policy (with the same settings) to continue to capture matches for the same activities.
 
 To check the size of a supervision mailbox for a policy, complete the following steps:
 

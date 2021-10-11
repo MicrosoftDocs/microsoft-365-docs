@@ -3,15 +3,13 @@ title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Defender for Endpoint on Linux using Puppet. A successful deployment requires the completion of all of the following tasks:
 
@@ -46,13 +44,13 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft Defender Security Center:
+Download the onboarding package from Microsoft 365 Defender portal:
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center screenshot](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux-2.png)
 
 4. From a command prompt, verify that you have the file. 
 
@@ -107,7 +105,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.
+Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/[distro]/`.
 
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -128,7 +126,7 @@ $version = undef
     case $::osfamily {
         'Debian' : {
             apt::source { 'microsoftpackages' :
-                location => "https://packages.microsoft.com/${distro}/${version}/prod",
+                location => "https://packages.microsoft.com/config/${distro}/${version}/prod",
                 release  => $channel,
                 repos    => 'main',
                 key      => {
@@ -139,7 +137,7 @@ $version = undef
         }
         'RedHat' : {
             yumrepo { 'microsoftpackages' :
-                baseurl  => "https://packages.microsoft.com/${distro}/${version}/${channel}",
+                baseurl  => "https://packages.microsoft.com/config/${distro}/${version}/${channel}",
                 descr    => "packages-microsoft-com-prod-${channel}",
                 enabled  => 1,
                 gpgcheck => 1,

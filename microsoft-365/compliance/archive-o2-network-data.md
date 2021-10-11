@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive SMS and MMS data from the O2 mobile network in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
@@ -24,7 +24,7 @@ After SMS messages and voice calls are stored in user mailboxes, you can apply M
 
 The following overview explains the process of using a connector to archive O2 Network data in Microsoft 365.
 
-![O2 Network archiving workflow](../media/O2NetworkConnectorWorkflow.png)
+![O2 Network archiving workflow.](../media/O2NetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage and O2 to set up an O2 Network connector. For more information, see [O2 Network Archiver](https://www.telemessage.com/office365-activation-for-o2-network-archiver).
 

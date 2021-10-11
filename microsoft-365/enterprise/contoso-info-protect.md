@@ -1,15 +1,15 @@
 ---
 title: "Information protection for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -78,7 +78,7 @@ As part of their rollout of Exchange Online and SharePoint, Contoso configured t
 
 Here's resulting set of Contoso policies for information protection.
 
-![Device, Exchange Online, and SharePoint Conditional Access policies](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+![Device, Exchange Online, and SharePoint Conditional Access policies.](../media/contoso-info-protect/contoso-info-protect-fig1.png)
 
 >[!Note]
 >Contoso also configured additional Conditional Access policies for identity and sign-in. See [Identity for the Contoso Corporation](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
@@ -105,7 +105,7 @@ The following table maps Contoso data levels to information protection features 
 
 Here's the resulting Contoso information-protection configuration.
 
-![Contoso's resulting information protection configuration](../media/contoso-info-protect/contoso-info-protect-fig2.png)
+![Contoso's resulting information protection configuration.](../media/contoso-info-protect/contoso-info-protect-fig2.png)
 
 ## Next step
 

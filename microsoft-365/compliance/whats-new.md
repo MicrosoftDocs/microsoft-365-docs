@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -36,11 +36,187 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## September 2021
+
+### App governance
+
+- [Streamlined app governance get started information](app-governance-get-started.md) has a changed workflow and added new links to public preview signup
+- [New detection alerts definition](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
+
+### Auditing
+
+- [Turn auditing on or off](turn-audit-log-search-on-or-off.md) added new section about how changes to the auditing status in an organization are themselves audited; this means that audit records are logged when auditing is turned on or turned off; you can search the Exchange admin audit log for these audit records
+
+### Communication compliance
+
+- [Communication compliance with SIEM solutions](communication-compliance-siem.md) guidance for communication compliance integration with SIEM solutions)
+
+### Compliance offerings
+
+- [Multi-Tier Cloud Security (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](/compliance/regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](/compliance/regulatory/offering-section-508-vpats) new client software guidance
+- [Web Content Accessibility Guidelines](/compliance/regulatory/offering-wcag-2-1) new client software guidance
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) quarterly review content updates for certifications and statements of applicability
+  - Data-bearing device destruction
+  - DDOS attacks
+
+### Data connectors
+
+- [Archiving third-party data in Microsoft 365](archiving-third-party-data.md#data-connectors-in-the-us-government-cloud) data connectors from CellTrust and 17a-4 LLC now available in GCC organizations in the US Government cloud
+- [Set up a connector to archive YouTube data](archive-youtube-data.md) provides new guidance for this feature in public preview.
+
+### eDiscovery
+
+- [Use the KQL editor to build search queries](ediscovery-kql-editor.md) public preview of a new way to create search queries in Content search, Core eDiscovery, and Advanced eDiscovery; the KQL editor provides autocompletion for supported searchable properties and conditions and displays lists of supported values for standard properties and conditions; the KQL editor also provides error detection and suggestions for fixes of potential errors in search queries
+
+### Information barriers
+
+- [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes-preview) new preview feature for information barriers modes
+- [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams) new preview feature for information barriers modes
+- [Information barriers with OneDrive](/onedrive/information-barriers) new preview feature for information barriers modes
+- [Information barriers with SharePoint Online](/sharepoint/information-barriers) new preview feature for information barriers modes
+
+### Insider risk management
+
+- [Get started with insider risk management](insider-risk-management-configure.md#recommended-actions-preview) new preview feature for getting started recommended actions
+- [Investigate insider risk activities](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) new 'Get help managing your insider risk alert queue' guidance section
+- [Get started with insider risk management settings](insider-risk-management-settings.md#admin-notifications) new Admin notifications settings preview feature
+
+### Retention and records management
+- [Multi-staged disposition review](disposition.md) is now generally available (GA), with new [auditing events](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Multi-staged disposition review lets you specify up to five consecutive stages of disposition review for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
+- Private channels for [Teams retention policies](create-retention-policies.md#retention-policy-for-teams-locations) is now generally available (GA).
+
+### Sensitivity labels
+- [Co-authoring and AutoSave](sensitivity-labels-coauthoring.md) is now generally available (GA) for Windows (minimum version of 2107 from Current Channel or Monthly Enterprise Channel) and macOS (minimum version of 16.51).
+- Rolling out for Office apps that use built-in labels: The default label setting now supports existing documents as well as new documents. This change in behavior provides parity with the Azure Information Protection unified labeling client. For more information about the rollout per app and minimum versions, see the [capabilities table](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) for Word, Excel, and PowerPoint.
+- Container labels now support [default sharing link settings by using PowerShell advanced settings](sensitivity-labels-teams-groups-sites.md#configure-settings-for-the-default-sharing-link-for-a-site-by-using-powershell-advanced-settings).
+- The [capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) that list the minimum supported versions for built-in labeling now have versions for Current Channel, the Monthly Enterprise Channel, and the Semi-Annual Enterprise Channel.
+
+## August 2021
+
+### App governance
+- [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md#collection-alerts). New entries were added to describe additional alert insights now available in app governance.
+
+### Communication compliance
+- [Communication compliance feature reference](communication-compliance-feature-reference.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) has been updated with quarterly review content updates for certifications and statements of applicability:
+  - Architecture
+  - Audit logging
+  - Encryption and key management
+  - Identity and access management
+  - Microsoft 365 access management
+  - Network security
+  - Privacy
+  - Resiliency and continuity
+  - Risk management
+  - Security development and operation
+  - Security monitoring
+  - Supplier management
+  - Vulnerability management
+
+### Data Loss Prevention
+
+- [Data loss prevention policy reference](dlp-policy-reference.md). Added a new policy reference page to assist you in creating policies.
+
+### Insider risk management
+- [Learn about and configure insider risk management browser signal detection](insider-risk-management-browser-support.md). Preview feature for configuring browser signal detection for Edge and Chrome browsers.
+
+### Retention and records management
+- [Flowchart to determine when an item will be retained or permanently deleted](retention-flowchart.md) to supplement the concepts and examples for the principles of retention.
+
+### Sensitivity labels
+- [Enhancements to auto-labeling policies](apply-sensitivity-label-automatically.md#recent-enhancements-for-auto-labeling-policies) that include higher supported numbers for sites and policies, support for all OneDrive and SharePoint sites and the ability to select available SharePoint sites instead of having to enter each site by URL, and simulation improvements.
+- Auto-labeling in Office apps as a sensitivity label setting now [supports Exact Data Match (EDM)](apply-sensitivity-label-automatically.md#custom-sensitive-information-types-with-exact-data-match).
+- Default labels are now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-default-label-policy).
+- Auditing events for Outlook on the web that [surface in activity explorer](data-classification-activity-explorer-available-events.md) are now fully rolled out, which means that user activity for built-in labels is now available for all Office apps across all platform.
+- The [supported capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) have a new footnote for Windows to clarify that the minimum versions are for the Current Channel, and a tip to more easily compare older versions that omit leading zeros against newer versions.
+
+## July 2021
+
+### Advanced eDiscovery
+
+- [Advanced eDiscovery workflow for content in Microsoft Teams using large cases](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
+- [Use large cases in Advanced eDiscovery](advanced-ediscovery-large-cases.md) added a preview of new large case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
+
+### App governance
+
+- The [app governance add-on for Microsoft Cloud App Security](app-governance-manage-app-governance.md) (MCAS) has gone into public preview. App governance provides monitoring of OAUth-based apps in your M365 tenant and generates alerts for activity that might represent malware or inappropriate levels of permissions.
+
+### Compliance offerings
+
+- [Compliance offerings](/compliance/regulatory/offering-home) changes focusing on applicable service coverage and updates to align more closely with the [Azure offerings](/azure/compliance) for applicable regulations.
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) (updated; quarterly review content updates for certifications and statements of applicability)
+    - Cloud background checks
+    - Employee transfer & termination
+    - Governance
+    - Human resources
+    - Incident management
+    - Pre-employment screening
+    - Security incident management (SIM)
+    - SIM – Containment, eradication, and recovery
+    - SIM – Detection & analysis
+    - SIM – Post-incident reporting
+    - SIM – Preparation
+    - Tenant isolation
+
+### Data classification
+
+- [Learn about data classification](data-classification-overview.md). Updated for GA release of discrimination trainable classifier.
+
+### Data loss prevention
+
+- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md) added updated guidance on Always audit file activity for devices.
+- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md) updated for GA release.
+- [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) updated for GA release.
+- [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md) updated for GA release.
+- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md) updated for GA release and MIP-MCAS integration.
+
+### Insider risk management
+
+- [Investigate insider risk management activities](insider-risk-management-activities.md) added content updates for new User activity reports and new dismiss multiple alerts preview features.
+- [Get started with insider risk management settings](insider-risk-management-settings.md) added content updates for new RBAC functionality to choose reviewers for priority user groups preview feature.
+
+### Privacy management
+
+- Microsoft [privacy management](privacy-management.md) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
+
+### Retention and records management
+- In preview: [Retention policies for Teams](create-retention-policies.md#retention-policy-for-teams-locations) now supports private channels as a new Teams location when you create or edit a retention policy
+- Instructions for [importing a file plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) are updated to include regulatory records and dependencies are now listed for each entry
+
+### Sensitive information types
+
+The following pages were added:
+
+- [Custom sensitive information type filters reference](sit-custom-sit-filters.md)
+- [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
+- [Remove a custom sensitive information type using PowerShell](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
+
+### Sensitivity labels
+- Trainable classifiers are now generally available (GA) for [auto-labeling in Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows and the web (Office Online)
+- Mandatory labeling is now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
+- For [co-authoring for files encrypted with sensitivity labels]( sensitivity-labels-coauthoring.md): Rolling out support for DLP policies that use sensitivity labels as conditions and unencrypted attachments for emails
+- Auditing events for Outlook is now available for macOS, iOS, and Android, and rolling out for Outlook on the web
+
 ## June 2021
 
 ### Customer Key
 
 - [Service encryption with Customer Key](customer-key-overview.md) (Customer Key tenant level DEPs now encrypt sensitivity label configuration for Microsoft Information Protection.)
+
+### Data connectors
+
+- We have released [17 new data connectors in partnership with 17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) and [one new connector in partnership with CellTrust](archiving-third-party-data.md#celltrust-data-connectors). We have also released additional data connectors in partnership with [Veritas](archiving-third-party-data.md#veritas-data-connectors) and [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). To date, this makes a total of 65 available data connectors to import and archive third-party data to Microsoft 365.
 
 ### eDiscovery
 
@@ -53,7 +229,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 - The sensitivity label policy wizard now supports [Outlook-specific options for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) as an easier configuration than the (still supported) PowerShell advanced settings.
 - Support for [dynamic markings with variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) is now rolling out for Word, Excel, and PowerPoint on the web
 - For [auto-labeling policies](apply-sensitivity-label-automatically.md) for Exchange, if the label is configured for encryption, that encryption isn't applied. Additionally for Exchange auto-labeling policies, you can now configure exceptions and the following new conditions: subject, recipient address, or sender address matches patterns; recipient address contains words; sender domain is, recipient is a member of; sender is.
-- When you use sensitivity labels with teams, groups, and sites, you can use Set-SPOTenant with the BlockSendLabelMismatchEmail parameter  to prevent the automatically generated email when the audit event **Detected document sensitivity mismatch** is logged.  For more information, see [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities ).
+- When you use sensitivity labels with teams, groups, and sites, you can use Set-SPOTenant with the BlockSendLabelMismatchEmail parameter  to prevent the automatically generated email when the audit event **Detected document sensitivity mismatch** is logged.  For more information, see [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities).
 - The [authentication context setting](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) is now fully rolled out in preview for sensitivity labels. Additionally, this configuration is now supported by Microsoft Teams.
 - Files that are labeled and encrypted by a service principle name (such as Microsoft Cloud App Security) and then uploaded to SharePoint and OneDrive can now be opened in Office for the web when you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 - [Co-authoring and AutoSave](sensitivity-labels-coauthoring.md) is no longer restricted to test tenants and now supported in production when you use version 2105: June 18 for Windows, and version 16.50+ for macOS. Note that this feature is still not supported by iOS and Android, and remains in preview.
@@ -113,176 +289,3 @@ Outlook releases and updates:
 - [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is rolling out to the remaining platforms.
 - [Dynamic markings with all variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) are supported across all Outlook clients.
 
-## March 2021
-
-Here are a few of the changes to Microsoft 365 compliance solutions and content for the month of March.
-
-### Advanced eDiscovery
-
-- **Advanced eDiscovery collections** now supports the [new collections tool and workflow](/microsoft-365/compliance/collections-overview). Other new topics include [create a draft collection](/microsoft-365/compliance/create-draft-collection), [commit a draft collection to a review set](/microsoft-365/compliance/commit-draft-collection), and [collection statistics and reports](/microsoft-365/compliance/collection-statistics-reports).
-- **Export documents** in a review set to an [Azure Storage](/microsoft-365/compliance/download-export-jobs) account.
-- **Predictive coding module for Advanced eDiscovery**. First look at the new [predictive coding](/microsoft-365/compliance/predictive-coding-overview) functionality that replaces the retired Relevance module.
-
-### Data classification
-
-- **Data classification explorer**. [Get started](/microsoft-365/compliance/data-classification-activity-explorer) with data classification explorer.
-
-### Data connectors
-
-- **Private keys**. Support for private keys has been added to [Bloomberg Message](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) data, [ICE Chat](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) data, and [Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) data connectors.
-
-### Data loss prevention
-
-- **Microsoft Teams support**. Data loss prevention support extended to [Microsoft Teams](/microsoft-365/compliance/dlp-teams-default-policy).
-- **Microsoft Compliance extension**. Get started with the [Microsoft Compliance extension](/microsoft-365/compliance/dlp-chrome-get-started).
-
-### Encryption
-
-- **Customer Key for Microsoft 365**. [Overview of the Customer Key](/microsoft-365/compliance/customer-key-tenant-level) for Microsoft 365 at the tenant level (public preview).
-- **Double Key Encryption**. Learn more about [enabling support for labeled and protected documents](/microsoft-365/compliance/double-key-encryption) in SharePoint and OneDrive for Business.
-
-### Insider risk management
-
-The following insider risk management feature updates were released for public preview in March:
-
-- New analytics feature for identifying risks before creating insider risk policies
-- New risk activity sequence detection support and management
-- New cumulative exfiltration detection support
-- New in-app policy health reporting and recommendation support
-- New auditing log feature and reporting
-- Enhancements to the policy creation wizard
-- Content explorer updates
-- New user management process/support (add/remove users from policies)
-- New support for AAD integration (departing user policy support)
-- Updated domain support in policies (REGEX)
-- Policy template enhancements and improvements
-
-The following topics were updated or added to support these new features:
-
-- [Learn about insider risk management](/microsoft-365/compliance/insider-risk-management)
-- [Plan for insider risk management](/microsoft-365/compliance/insider-risk-management-plan)
-- [Get started with insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings)
-- [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure)
-- [Create and manage insider risk policies](/microsoft-365/compliance/insider-risk-management-policies)
-- [Investigate insider risk alerts](/microsoft-365/compliance/insider-risk-management-alerts)
-- [Take action on insider risk cases](/microsoft-365/compliance/insider-risk-management-cases)
-- [Review activities with the insider risk audit log](/microsoft-365/compliance/insider-risk-management-audit-log)
-- [Review data with the insider risk content explorer](/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Manage the workflow with the Users Dashboard](/microsoft-365/compliance/insider-risk-management-users)
-
-### Records management
-
-- **File plan improvements**. An update to [file plan](file-plan-manager.md) removes or improves the previous length restrictions for import.
-- **Delete retention labels for records**. A preview release supports the ability to [delete retention labels](create-apply-retention-labels.md#deleting-retention-labels) that mark items as records.
-
-### Sensitive information types
-
-Content was added or updated in the following topics:
-
-- [Get started with custom sensitive information type](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Create custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Create notifications for exact data match activities](/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Sensitive Information Type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [Create a Custom Sensitive Information Type using PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Create a keyword dictionary](/microsoft-365/compliance/create-a-keyword-dictionary)
-
-### Sensitivity labels
-
-- **DoD support**. Support for US government tenants with DoD environments.
-- **Encrypt-Only for Outlook**. Encryption options for Outlook now include Encrypt-Only when you select [Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions).
-- **Enforcing built-in labels in Office apps**. Updated [guidance](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client) how to enforce built-in labels in Office apps when you have the Azure Information Protection unified labeling client installed.
-
-## February 2021
-
-Here are a few of the changes to Microsoft 365 compliance solutions and content for the month of February.
-
-### Auditing
-
-- **Manage audit log retention policies**. Learn more about the new [Audit retention policies dashboard](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1).
-- **Search the audit log**. [Use PowerShell script to search the audit log](/microsoft-365/compliance/audit-log-search-script).
-
-### Data Classification Content Explorer
-
-Content was added or updated in the following topics:
-
-- [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer)
-- [Data classification release notes](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
-
-### Data loss prevention
-
-Content was added or updated in the following topics:
-
-- [Learn about Endpoint DLP](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Send email notifications and show policy tips for DLP policies](/microsoft-365/compliance/use-notifications-and-policy-tips)
-- [Learn about the Microsoft 365 data loss prevention on-premises scanner](/microsoft-365/compliance/dlp-on-premises-scanner-learn)
-- [Get started with the data loss prevention on-premises scanner](/microsoft-365/compliance/dlp-on-premises-scanner-get-started)
-- [Create a DLP policy to protect documents with FCI or other properties](/microsoft-365/compliance/protect-documents-that-have-fci-or-other-properties)
-- [Using Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-using)
-- [Get started with Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-getting-started)
-
-### eDiscovery
-
-Content was added or updated in the following topics:
-
-- [Decryption in Microsoft 365 eDiscovery tools](/microsoft-365/compliance/ediscovery-decryption)
-- [Keyword queries and search conditions](/microsoft-365/compliance/keyword-queries-and-search-conditions#limitations-for-searching-sensitive-data-types)
-- [Retirement of the Relevance module in Advanced eDiscovery](/microsoft-365/compliance/relevance-module-retirement)
-- [Use a script to add users to a hold in a Core eDiscovery case](/microsoft-365/compliance/use-a-script-to-add-users-to-a-hold-in-ediscovery)
-
-### Encryption
-
-Content was added or updated in the following topics:
-
-#### Azure Rights Management Service (RMS)
-
-- [Customer-managed encryption features](/microsoft-365/compliance/office-365-customer-managed-encryption-features)
-- [Exchange Online mail encryption with AD RMS](/microsoft-365/compliance/information-rights-management-in-exchange-online). Support for this service has been deprecated. You can no longer use AD RMS in an Exchange hybrid environment. Instead, migrate to Azure RMS.
-
-#### Customer Key
-
-- [Customer Key for Microsoft 365 at the tenant level](/microsoft-365/compliance/customer-key-tenant-level)
-- [Overview of security and compliance](/microsoftteams/security-compliance-overview)
-
-#### Information Rights Management (IRM)
-
-- [Apply Information Rights Management (IRM) to a list or library](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). These national clouds do not support this setting:
-  - Microsoft Cloud for US Government
-  - Microsoft Cloud Germany
-  - Azure and Microsoft 365 operated by 21Vianet in China)
-- [Configure IRM to use an on-premises AD RMS server](/microsoft-365/compliance/configure-irm-to-use-an-on-premises-ad-rms-server). Support for this service in an Exchange hybrid environment has been deprecated.
-
-### Sensitive Information Types
-
-Content was added or updated in the following topics:
-
-- [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Create a custom sensitive information type using PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Create a custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Sensitive information type entity definitions](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-
-### Sensitivity labels
-
-Content was added or updated in the following topics:
-
-- **SharePoint external sharing**. For [container labels](sensitivity-labels-teams-groups-sites.md) the option for external sharing from SharePoint sites is now released as generally available. Additionally, the Microsoft 365 admin center and Planner now support applying these sensitivity labels. 
-- **Co-authoring and AutoSave**. Support for [co-authoring and AutoSave](sensitivity-labels-coauthoring.md) for encrypted files is released as preview for testing in non-production tenants.
-
-## January 2021
-
-### Support for card content in Teams
-
-The following Microsoft 365 compliance solutions now support the detection of [card content](/microsoftteams/platform/task-modules-and-cards/what-are-cards) generated through apps in Teams messages:
-
-- **Core and Advanced eDiscovery**. Card content can now be [placed on hold](create-ediscovery-holds.md#preserve-card-content) or included in [searches](/microsoftteams/ediscovery-investigation#search-for-card-content) (applies to content search as well).
-- **Audit**. Card activity is now [recorded to the audit log](/microsoftteams/audit-log-events#teams-activities).
-- **Retention policies**. Can now use retention policies to [retain and delete card content](retention-policies-teams.md#whats-included-for-retention-and-deletion).
-
-### Information governance and records management
-
-[New assessment](retention-regulatory-requirements.md#new-zealand-public-records-act) to address using information governance and records management to help meet compliance obligations for the New Zealand Public Records Act.
-
-### Sensitivity labels
-
-- Sensitivity labels are now supported for US Government tenants (GCC and GCC-H).
-- New [automatic labeling](sensitivity-labels-office-apps.md) support for macOS.

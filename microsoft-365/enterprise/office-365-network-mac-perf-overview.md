@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ description: "Overview of network connectivity in the Microsoft 365 Admin Center
 The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant.
 
 > [!div class="mx-imgBorder"]
-> ![Network connectivity test tool](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> ![Network connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 **Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Network connectivity**.
 
 > [!div class="mx-imgBorder"]
-> ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -89,7 +89,7 @@ Complex enterprises with multiple office locations and non-trivial network perim
 ## Enterprise network connectivity challenges
 
 > [!div class="mx-imgBorder"]
-> ![Customer network to cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> ![Customer network to cloud.](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 Many enterprises have network perimeter configurations which have grown over time and are primarily designed to accommodate employee Internet web site access where most web sites are not known in advance and are untrusted. The prevailing and necessary focus is avoiding malware and phishing attacks from these unknown web sites. This network configuration strategy, while helpful for security purposes, can lead to degradation of Microsoft 365 user performance and user experience.
 
@@ -108,17 +108,17 @@ Microsoft has existing network measurements from several Office desktop and web 
 By default, approximate location information associated with the network measurements identify the city where client devices are located. The network assessment at each location is shown with color and the relative number of users at each location is represented by the size of the circle.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights overview map](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> ![Network insights overview map.](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 The overview page also shows the network assessment for the customer as a weighted average across all office locations.
 
 > [!div class="mx-imgBorder"]
-> ![Network assessment](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Network assessment.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 You can view a table view of the locations where they can be filtered, sorted, and edited in the **Locations** tab. Locations with specific recommendations may also include an estimated potential latency improvement. This is calculated by taking the median latency of your organization users at the location and subtracting the median latency for all organizations in the same city.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights locations](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> ![Network insights locations.](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## Remote worker assessment and user connection metrics
 
@@ -133,7 +133,7 @@ Locations are auto classified as onsite or remote, however, you have the option 
 Selecting an office location opens a location-specific summary page showing details of the network egress that has been identified from measurements for that office location.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights details by location](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> ![Network insights details by location.](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 A map of the perimeter network for your organization users at the location is shown with some or all of these elements:
 
@@ -155,7 +155,7 @@ Location names can be customized when adding a new location or editing an existi
 The details tab on the office location page shows the specific measurement results that were used to come up with any insights, recommendations, and the network assessment. This is provided so that network engineers can validate the recommendations and factor in any constraints or specifics in their environment. You will also find the estimated number of users for collected samples at that office locations as well as the remote workers in that city.
 
 > [!div class="mx-imgBorder"]
-> ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> ![Location-specific details.](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## Sharing network assessment data with Microsoft
 
@@ -172,7 +172,7 @@ In the CSV file, a discovered city location shows in the userEntered column as b
 1. Click the **Import** button just above the locations list. The **Import office locations** flyout will appear.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import message](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > ![CSV import message.](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they will not be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it will be updated when you import the CSV. You cannot change the address of a discovered city.
 
@@ -191,12 +191,12 @@ In the CSV file, a discovered city location shows in the userEntered column as b
 1. The file will be automatically validated. If there are validation errors, you will see the error message: _There are some errors in the import file. Review the errors, correct the import file, and then try again._ Click the link **Open error details** for a list of specific field validation errors.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import error message](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > ![CSV import error message.](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. If there are no errors in the file, you will see the message: _The report is ready. Found x locations to add and x locations to update._ Click the **Import** button to upload the CSV.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import ready message](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## FAQ
 

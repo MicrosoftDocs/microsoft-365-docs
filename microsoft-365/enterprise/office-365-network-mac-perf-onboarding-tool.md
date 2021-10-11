@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -24,7 +24,7 @@ The Microsoft 365 network connectivity test tool is located at <https://connecti
 > It is important to sign in to your Microsoft 365 tenant as all test reports are shared with your administrator and uploaded to the tenant while you are signed in.
 
 > [!div class="mx-imgBorder"]
-> ![Connectivity test tool](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+> ![Connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 
 >[!NOTE]
 >The network connectivity test tool supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -55,7 +55,7 @@ There are two parts to the Microsoft 365 network connectivity test: the web site
 You will be prompted to download the advanced client test application from the web site after the web browser tests have completed. Open and run the file when prompted.
 
 > [!div class="mx-imgBorder"]
-> ![Advanced tests client application](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+> ![Advanced tests client application.](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
 
 ### Start the advanced tests client application
 
@@ -82,26 +82,26 @@ Test reports (excluding any personal identification) are shared with Microsoft e
 You can choose users to share your report with. Being able to choose is enabled by default, but it can be disabled by your administrator.
 
 > [!div class="mx-imgBorder"]
-> ![Sharing a link to your test results with a user](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
+> ![Sharing a link to your test results with a user.](../media/m365-mac-perf/m365-mac-perf-share-to-user.png)
 
 ### Sharing with anyone using a ReportID link
 
 You can share your test report with anyone by providing access to a ReportID link. This link generates a URL that you can send to someone so that they can bring up the test report without signing in. This sharing is disabled by default and must be enabled by your administrator.
 
 > [!div class="mx-imgBorder"]
-> ![Sharing a link to your test results](../media/m365-mac-perf/m365-mac-perf-share-link.png)
+> ![Sharing a link to your test results.](../media/m365-mac-perf/m365-mac-perf-share-link.png)
 
 ## Network Connectivity Test Results
 
 The results are shown in the **Summary** and **Details** tabs. The summary tab shows a map of the detected network perimeter and a comparison of the network assessment to other Office 365 customers nearby. It also allows for sharing of the test report. Here's what the summary results view looks like:
 
 > [!div class="mx-imgBorder"]
-> ![Network connectivity test tool summary results](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
+> ![Network connectivity test tool summary results.](../media/m365-mac-perf/m365-mac-perf-summary-page.png)
 
 Here is an example of the details tab output that the tool shows. On the details tab we show a green circle check mark if the result was compared favorably to a threshold. We show a red triangle exclamation point if the result exceeded a threshold indicating a network insight. The following sections describe each of the details tab results rows and explain the thresholds used for network insights.
 
 > [!div class="mx-imgBorder"]
-> ![Network connectivity test tool example test results](../media/m365-mac-perf/m365-mac-perf-all-details.png)
+> ![Network connectivity test tool example test results.](../media/m365-mac-perf/m365-mac-perf-all-details.png)
 
 ### Your location information
 
@@ -236,14 +236,14 @@ This section shows the results of an ICMP traceroute to the Exchange Online serv
 When you are signed in you can review previous reports that you have run. You can also share them or delete them from the list.
 
 > [!div class="mx-imgBorder"]
-> ![Reports](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+> ![Reports.](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## Network health status
 
 This shows any significant health issues with Microsoft's global network, which might impact Microsoft 365 customers.
 
 > [!div class="mx-imgBorder"]
-> ![Network health status](../media/m365-mac-perf/m365-mac-perf-status-page.png)
+> ![Network health status.](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
 ## FAQ
 

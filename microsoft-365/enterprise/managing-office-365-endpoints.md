@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -106,11 +106,11 @@ For more information, see [Office 365 IP Address and URL Web Service](microsoft-
 
 The Office 365 IP Address and URL Web Service provides an RSS feed that you can subscribe to in Outlook. There are links to the RSS URLs on each of the Office 365 service instance-specific pages for the IP addresses and URLs. For more information, see [Office 365 IP Address and URL Web Service](microsoft-365-ip-web-service.md).
 
-### Change notification and approval review using Microsoft Flow
+### Change notification and approval review using Power Automate
 
-We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Microsoft Flow to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
+We understand that you might still require manual processing for network endpoint changes that come through each month. You can use Power Automate to create a flow that notifies you by email and optionally runs an approval process for changes when Office 365 network endpoints have changes. Once review is completed, you can have the flow automatically email the changes to your firewall and proxy server management team.
 
-For information about a Microsoft Flow sample and template, see [Use Microsoft Flow to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
+For information about a Power Automate sample and template, see [Use Power Automate to receive an email for changes to Office 365 IP addresses and URLs](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/td-p/240651).
   
 <a name="FAQ"> </a>
 ## Office 365 network endpoints FAQ

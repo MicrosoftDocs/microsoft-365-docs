@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 mms.collection: 
@@ -36,6 +36,9 @@ The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overv
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Date and time when the event was recorded |
@@ -52,6 +55,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ThreatNames` | string | Detection name for malware or other threats found |
 | `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `FileSize` | string | Size of the file in bytes |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

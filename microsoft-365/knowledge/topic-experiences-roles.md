@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Viva Topics roles"
-ms.author: efrene
-author: efrene
+title: Roles in Microsoft Viva Topics
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -12,11 +12,11 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: None
-description: "Learn about user roles in Viva Topics."
+ms.localizationpriority:  medium
+description: Learn about user roles in Viva Topics.
 ---
 
-# Microsoft Viva Topics roles 
+# Roles in Microsoft Viva Topics
 
 When you use Viva Topics in your Microsoft 365 environment, your users can have the following roles:
 
@@ -49,9 +49,9 @@ To create and edit a topic, the user must:
 
 ## Knowledge managers
 
-Knowledge managers are users who manage topics in your organization.  Topic management is done through the Manage Topics page in the topic center, and it's only visible to Knowledge managers.
+Knowledge managers are users who manage topics in your organization.  Topic management is done through the **Manage topics** page in the topic center, and it's only visible to knowledge managers.
 
-In the Manage Topics page, knowledge managers can do the following tasks:
+On the **Manage topics** page, knowledge managers can do the following tasks:
 
 - View AI-suggested topics.
 - Review topics to confirm that they're valid.

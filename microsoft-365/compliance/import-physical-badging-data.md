@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
@@ -214,11 +214,11 @@ After you create the physical badging connector and push your physical badging d
 
 2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
-   ![Status flyout page for physical badging connector](..\media\PhysicalBadgingStatusFlyout.png)
+   ![Status flyout page for physical badging connector.](..\media\PhysicalBadgingStatusFlyout.png)
 
 3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud.
 
-   ![Physical badging connector log file displays number rows from JSON file that were uploaded](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![Physical badging connector log file displays number rows from JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
 
    The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
@@ -254,7 +254,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   ![Action settings to create a new scheduled task for the physical badging connector script](..\media\SchedulePhysicalBadgingScript1.png)
+   ![Action settings to create a new scheduled task for the physical badging connector script.](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
@@ -270,7 +270,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    The new task is displayed in the Task Scheduler Library.
 
-   ![The new task is displayed in the Task Scheduler Library](..\media\SchedulePhysicalBadgingScript2.png)
+   ![The new task is displayed in the Task Scheduler Library.](..\media\SchedulePhysicalBadgingScript2.png)
 
 The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 

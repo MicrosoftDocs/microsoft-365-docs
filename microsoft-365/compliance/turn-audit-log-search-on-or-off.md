@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -24,9 +24,9 @@ description: How to turn on or off the Audit log search feature in the Microsoft
 
 # Turn auditing on or off
 
-Audit logging is turned on by default for Microsoft 365 and Office 365 enterprise organizations. When auditing in the Microsoft 365 compliance center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days, and up to one year depending on the license assigned to users. However, your organization may have reasons for not wanting to record and retain audit log data. In those cases, a global admin may decide to turn off auditing in Microsoft 365.
+Audit logging will be turned on by default for Microsoft 365 and Office 365 enterprise organizations. However, when setting up a new Microsoft 365 or Office 365 organization, you should verify the auditing status for your organization. For instructions, see the [Verify the auditing status for your organization](#verify-the-auditing-status-for-your-organization) section in this article. 
 
-When setting up a new Microsoft 365 or Office 365 organization, you can verify the auditing status for your organization. For instructions, see the [Verify the auditing status for your organization](#verify-the-auditing-status-for-your-organization) section in this article.
+When auditing in the Microsoft 365 compliance center is turned on, user and admin activity from your organization is recorded in the audit log and retained for 90 days, and up to one year depending on the license assigned to users. However, your organization may have reasons for not wanting to record and retain audit log data. In those cases, a global admin may decide to turn off auditing in Microsoft 365.
 
 > [!IMPORTANT]
 > If you turn off auditing in Microsoft 365, you can't use the Office 365 Management Activity API or Azure Sentinel to access auditing data for your organization. Turning off auditing by following the steps in this article means that no results will be returned when you search the audit log using the Microsoft 365 compliance center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that audit logs won't be available through the Office 365 Management Activity API or Azure Sentinel.
@@ -62,7 +62,7 @@ If auditing is not turned on for your organization, you can turn it on in the Mi
 
    If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
 
-   ![Banner on Audit page](../media/AuditingBanner.png)
+   ![Banner on Audit page.](../media/AuditingBanner.png)
 
 3. Click the **Start recording user and admin activity** banner.
 
@@ -105,3 +105,29 @@ You have to use Exchange Online PowerShell to turn off auditing.
     - Go to the **Audit** page in the Microsoft 365 compliance center.
 
       If auditing is not turned on for your organization, a banner is displayed prompting you start recording user and admin activity.
+
+## Audit records when auditing status is changed
+
+Changes to the auditing status in your organization are themselves audited. This means that audit records are logged when auditing is turned on or turned off. You can search the Exchange admin audit log for these audit records.
+
+To search the Exchange admin audit log for audit records that are generated when turning auditing on or off, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
+
+```powershell
+Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
+```
+
+Audit records for these events contain information about when the auditing status was changed, the admin who changed it, and the IP address of the computer that was used to make the change. The following screenshots show audit records that correspond to changing the auditing status in your organization.
+
+### Audit record for turning on auditing
+
+![Audit record for turning on auditing](../media/AuditStatusAuditingEnabled.png)
+
+The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned on in the compliance center or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet.
+
+### Audit record for turning off auditing
+
+![Audit record for turning off auditing](../media/AuditStatusAuditingDisabled.png)
+
+The value of `Confirm` is not included in the *CmdletParameters* property. This indicates that unified audit logging was turned off by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** command.
+
+For more information about searching the Exchange admin audit log, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).

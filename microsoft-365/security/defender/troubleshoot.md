@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -46,7 +46,7 @@ For more information, see [Microsoft Defender for Identity integration](/cloud-a
 
 ## Where is the settings page for turning on the service?
 
-To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).
+To turn on Microsoft 365 Defender, access **Settings** from the navigation pane in the Microsoft 365 Defender portal. This navigation item is visible only if you have the [prerequisite permissions and licenses](m365d-enable.md#check-license-eligibility-and-required-permissions).
 
 ## How do I create an exception for my file/URL?
 

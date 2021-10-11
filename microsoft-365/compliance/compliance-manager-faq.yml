@@ -3,13 +3,13 @@ metadata:
   title: "Microsoft Compliance Manager FAQ"
   f1.keywords:
   - NOCSH
-  ms.author: chvukosw
-  author: chvukosw
+  ms.author: v-jgriffee
+  author: jmgriffee
   manager: laurawi
   audience: Admin
   ms.topic: article
   ms.service: O365-seccomp
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-security-compliance
   search.appverid: 
   - MOE150
@@ -45,7 +45,7 @@ sections:
           
           If you used Compliance Manager in the Service Trust Portal, all of your organization’s data now exists in Compliance Manager in the Microsoft 365 compliance center at https://compliance.microsoft.com/compliancemanager. There’s nothing you need to do to resume your Compliance Manager work in its new location, other than to update any bookmarks you have to its previous location. All of your assessments and other data have been brought over for you.
           
-          Note that Compliance Manager (preview) is no longer accessible in the Service Trust Portal, and all links to it will redirect you to its new location in the Microsoft 365 compliance center. Compliance Manager (classic) remains in the Service Trust Portal, though its use is discouraged.
+          Note that Compliance Manager (preview) is no longer accessible in the Service Trust Portal, and all links to it will redirect you to its new location in the Microsoft 365 compliance center.
           
           Everything you used to do in previous versions of Compliance Manager, such as completing actions (now called “improvement actions”) and creating assessments, can be done in the new Compliance Manager. We’ve added over 150 new assessment templates and improved the template creation process. We'll add more enhancements in future releases.
           
@@ -86,9 +86,3 @@ sections:
         answer: |
           While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
 
-      - question: |
-          What’s happening to Compliance Manager (classic) in the Service Trust Portal?
-        answer: |
-          The classic version of Compliance Manager, which resides in the Microsoft Service Trust Portal, will soon be retired. A Microsoft 365 Message Center notice will go out at least 60 days before the final retirement of Compliance Manager (classic). Customers who are managing their compliance activities in Compliance Manager (classic) will need to move their data, including assessments and controls, over to the new Compliance Manager solution in the Microsoft 365 compliance center. Customer data will not automatically transfer over to Compliance Manager in the Microsoft 365 compliance center when Compliance Manager (classic) is retired.
-          
-          To learn how you can quickly set up the new Compliance Manager, read our [Compliance Manager quickstart](compliance-manager-quickstart.md) guide.

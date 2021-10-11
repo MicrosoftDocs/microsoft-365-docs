@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Protecting access to customer data when a Managed Service Provider (MSP) has delegated access permissions to its tenants is a cybersecurity priority. Microsoft 365 Lighthouse comes with both required and optional capabilities to help you configure Microsoft 365 Lighthouse portal security.
+Protecting access to customer data when a Managed Service Provider (MSP) has delegated access permissions to its tenants is a cybersecurity priority. Microsoft 365 Lighthouse comes with both required and optional capabilities to help you configure Lighthouse portal security.
 
 ## Set up multifactor authentication (MFA)
 
@@ -31,17 +31,17 @@ As mentioned in the blog post [Your Pa$$word doesn't matter](https://techcommun
 
 > "Your password doesn't matter, but MFA does. Based on our studies, your account is more than 99.9% less likely to be compromised if you use MFA."
 
-When users access Microsoft 365 Lighthouse for the first time, they'll be prompted to set up MFA if their Microsoft 365 account doesn't already have it configured. Users won't be able to access Microsoft 365 Lighthouse until the required MFA setup step is completed. To learn more about authentication methods, see [Set up your Microsoft 365 sign-in for multifactor authentication](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+When users access Lighthouse for the first time, they'll be prompted to set up MFA if their Microsoft 365 account doesn't already have it configured. Users won't be able to access Lighthouse until the required MFA setup step is completed. To learn more about authentication methods, see [Set up your Microsoft 365 sign-in for multifactor authentication](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 ## Set up roles to manage customer tenants
 
-Access to customer tenant data and settings in Microsoft 365 Lighthouse is restricted to the Admin Agent and Helpdesk Agent roles from the Cloud Solutions Provider (CSP) program.
+Access to customer tenant data and settings in Lighthouse is restricted to the Admin Agent and Helpdesk Agent roles from the Cloud Solutions Provider (CSP) program.
 
 You can check which users in the partner tenant have the Admin Agent and Helpdesk Agent roles by reviewing the security group memberships on the [Azure AD – All Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page. To learn how to assign CSP program roles and other permissions to users, see [Assign roles and permissions to users](/partner-center/permissions-overview). As an MSP, if you don't already have delegated access privileges to customer tenants, learn how to get them in the article [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
 
-The following table lists the different Microsoft 365 Lighthouse pages and the permissions required to view and act on customer tenant data and settings for the Admin Agent and Helpdesk Agent roles.<br><br>
+The following table lists the different Lighthouse pages and the permissions required to view and act on customer tenant data and settings for the Admin Agent and Helpdesk Agent roles.<br><br>
 
-| Microsoft 365 Lighthouse page | Admin Agent permissions | Helpdesk Agent permissions |
+| Lighthouse page | Admin Agent permissions | Helpdesk Agent permissions |
 |--|--|--|
 | Home | <ul><li>View all</li></ul> | <ul><li>View all</li></ul> |
 | Tenants | <ul><li>View all</li><li>Update customer contacts and website</li><li>View and apply deployment plans</li></ul> | <ul><li>View all</li><li>Update customer contacts and website</li><li>View deployment plans</li></ul> |
@@ -79,8 +79,8 @@ The following table lists partner tenant roles and their associated permissions.
 
 | Partner tenant roles | Permissions within partner tenant |
 |--|--|
-| Global Administrator of partner tenant | <ul><li>Sign up for Microsoft 365 Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>View customer tenants on the Tenants page.\*</li><li>Activate and inactivate a tenant.\*</li><li>Update customer contacts and website.\*</li><li>Create, update, and delete tags.\*</li><li>Assign and remove tags from a customer tenant.\*</li></ul> |
-| Administrator of partner tenant with at least one<br> Azure AD role assigned with the following property set:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).) | <ul><li>Create Microsoft 365 Lighthouse service requests.</li></ul> |
+| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>View customer tenants on the Tenants page.\*</li><li>Activate and inactivate a tenant.\*</li><li>Update customer contacts and website.\*</li><li>Create, update, and delete tags.\*</li><li>Assign and remove tags from a customer tenant.\*</li></ul> |
+| Administrator of partner tenant with at least one<br> Azure AD role assigned with the following property set:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).) | <ul><li>Create Lighthouse service requests.</li></ul> |
 
 > [!NOTE]
 > Currently, to take the actions marked with * in the table, the Global Administrator must assume the Admin Agent role.

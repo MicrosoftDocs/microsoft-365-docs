@@ -1,12 +1,12 @@
 ---
 title: "Create Microsoft 365 user accounts with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -42,7 +42,7 @@ When you create user accounts in PowerShell, certain account properties are alwa
 >[!Note]
 >[Learn how to create user accounts](../admin/add-users/add-users.md) by using the Microsoft 365 admin center.
 > 
-> For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
+> For a list of additional resources, see [Manage users and groups](/admin).
 >   
 
 ## Use the Azure Active Directory PowerShell for Graph module

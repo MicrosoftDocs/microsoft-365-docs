@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -40,7 +40,7 @@ You can create up to 400 aliases for a user. No additional fees or licenses are 
   
 ## Add email aliases to a user
 
-You must have [admin permissions](../add-users/about-admin-roles.md) to do this. 
+You must have Global Admin rights to add email aliases to a user.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 

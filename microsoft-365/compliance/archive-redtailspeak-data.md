@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive Red tail Speak data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
@@ -24,7 +24,7 @@ After Redtail Speak data is stored in user mailboxes, you can apply Microsoft 36
 
 The following overview explains the process of using a connector to archive the Redtail Speak data in Microsoft 365.
 
-![Archiving workflow for Redtail Speak data](../media/RedtailSpeakConnectorWorkflow.png)
+![Archiving workflow for Redtail Speak data.](../media/RedtailSpeakConnectorWorkflow.png)
 
 1. Your organization works with Redtail Speak to set up and configure an SMTP gateway where messages are forwarded from Redtail Speak to your organization's SFTP server on a daily basis.
 

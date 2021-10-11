@@ -3,15 +3,13 @@ title: Troubleshoot installation issues for Microsoft Defender for Endpoint on L
 ms.reviewer:
 description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,14 +27,14 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 ## Verify if installation succeeded
 
 An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
 ```bash
- sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
+ sudo journalctl --no-pager|grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -55,13 +53,18 @@ Also check the [Client configuration](linux-install-manually.md#client-configura
 
 Please mind that the package you are installing is matching the host distribution and version.
 
-| package                       | distribution                             |
-|-------------------------------|------------------------------------------|
-| mdatp-rhel8.Linux.x86_64.rpm  | Oracle, RHEL and CentOS 8.x              |
-| mdatp-sles12.Linux.x86_64.rpm | SuSE Linux Enterprise Server 12.x        |
-| mdatp-sles15.Linux.x86_64.rpm | SuSE Linux Enterprise Server 15.x        |
-| mdatp.Linux.x86_64.rpm        | Oracle, RHEL and CentOS 7.x              |
-| mdatp.Linux.x86_64.deb        | Debian and Ubuntu 16.04, 18.04 and 20.04 |
+<br>
+
+****
+
+|package|distribution|
+|---|---|
+|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL and CentOS 8.x|
+|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
+|mdatp.Linux.x86_64.rpm|Oracle, RHEL and CentOS 7.x|
+|mdatp.Linux.x86_64.deb|Debian and Ubuntu 16.04, 18.04 and 20.04|
+|
 
 For [manual deployment](linux-install-manually.md), make sure the correct distro and version had been chosen.
 
@@ -93,7 +96,7 @@ systemctl status mdatp
     id "mdatp"
     ```
 
-    If there’s no output, run
+    If there's no output, run
 
     ```bash
     sudo useradd --system --no-create-home --user-group --shell /usr/sbin/nologin mdatp
@@ -119,7 +122,7 @@ systemctl status mdatp
     distributions and `/usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES.
 Then rerun step 2.
 
-4. If the above steps don’t work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
+4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
 
 5. If `/opt` directory is a symbolic link, create a bind mount for `/opt/microsoft`.
@@ -154,7 +157,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
 
     Currently supported file systems for on-access activity are listed [here](microsoft-defender-endpoint-linux.md#system-requirements). Any files outside these file systems won't be scanned.
 
-## Command-line tool “mdatp” isn't working
+## Command-line tool "mdatp" isn't working
 
 1. If running the command-line tool `mdatp` gives an error `command not found`, run the following command:
 

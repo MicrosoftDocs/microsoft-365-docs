@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -102,11 +102,11 @@ To get you started, there are some out-of-box values for the following file plan
 
 Example of file plan descriptors when you create or edit a retention label:
 
-![File plan descriptors when you create or edit a retention label](../media/file-plan-descriptors.png)
+![File plan descriptors when you create or edit a retention label.](../media/file-plan-descriptors.png)
 
 When you select **Choose** for each of these optional descriptors, you can select one of the out-of-box values, or create your own and then select it. For example: 
 
-![Create new file plan descriptor for provision/citation](../media/file-plan-descriptors-create.png)
+![Create new file plan descriptor for provision/citation.](../media/file-plan-descriptors-create.png)
 
 ## Export all retention labels to analyze or enable offline reviews
 
@@ -114,11 +114,11 @@ From your file plan, you can export the details of all retention labels into a .
 
 To export all retention labels: On the **File plan** page, click **Export**:
 
-![Option to export file plan](../media/compliance-file-plan-export-labels.png)
+![Option to export file plan.](../media/compliance-file-plan-export-labels.png)
 
 A *.csv file that contains all existing retention labels opens. For example:
 
-![CSV file showing all retention labels](../media/file-plan-csv-file.png)
+![CSV file showing all retention labels.](../media/file-plan-csv-file.png)
 
 ## Import retention labels into your file plan
 
@@ -135,17 +135,17 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
     
    An example of label information added to the template:
 
-   ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
+   ![File plan template with information filled in.](../media/file-plan-filled-out-template.png)
 
-4. Select **Browse for files** to upload the filled-out template.
+4. Select **Upload a file** to upload the filled-out template.
     
-   File plan uploads the file and validates the entries, displaying the import statistics.
+   File plan uploads the file and validates the entries.
 
 5. Depending on the validation results:
     
     - If validation fails: Note the row number and column name to correct in the import file. Correct the errors in the file and save it, and then repeat step 4.
     
-    - If validation passes: The entries are successfully converted into retention labels. You can select the Close icon for the pane to return to the **File plan** page, where you must manually select **Refresh** to see your new labels. Or, select **Click here** to close and pane and automatically refresh the **File plan** page.
+    - If validation passes: You see **You successfully imported a file plan** and the entries are successfully converted into retention labels. Select **Done** to close the pane and automatically refresh the **File plan** page to display your new labels.
 
 You can now publish your new retention labels, or auto-apply them. You can do both from the **Label policies** tab, and then select **Publish labels**, or **Auto-apply a label**.
 

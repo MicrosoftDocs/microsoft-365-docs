@@ -2,13 +2,13 @@
 title: Fix possible mail loop insight
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom: 
   - seo-marvel-apr2020
@@ -36,7 +36,7 @@ The **Fix possible mail loop** insight in the **Recommended for you** area of th
 
 This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).
 
-![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard](../../media/mfi-fix-possible-mail-loop.png)
+![Fix slow mail flow rules insight in the Recommended for you area of the Mail flow dashboard.](../../media/mfi-fix-possible-mail-loop.png)
 
 When you click **View details** on the widget, a flyout appears with more information:
 
@@ -46,7 +46,7 @@ When you click **View details** on the widget, a flyout appears with more inform
 - **MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.
 - **Loop reason** and **How to fix**: We'll identify the most common mail loop scenarios and provide recommended actions to fix the loop.
 
-![Details flyout that appears after clicking View details on the Fix possible mail loop insight](../../media/mfi-fix-possible-mail-loop-details.png)
+![Details flyout that appears after clicking View details on the Fix possible mail loop insight.](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## See also
 

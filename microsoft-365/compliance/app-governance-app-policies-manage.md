@@ -2,14 +2,14 @@
 title: "Manage app policies"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -38,7 +38,7 @@ Here's an example of a process for managing an existing policy:
 1. If the behavior is not expected, go back to step 1.
 1. If the behavior is expected, edit the policy and change its status to active (if needed).
 
-![The manage app policy workflow](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
+![The manage app policy workflow.](../media/manage-app-protection-governance/mapg-manage-policy-process.png)
 
 ## Editing an app policy configuration
 

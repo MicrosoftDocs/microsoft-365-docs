@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Viva Topics overview"
+title: Microsoft Viva Topics overview
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,8 +12,8 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: None
-description: "Overview of Viva Topics."
+ms.localizationpriority:  medium
+description: Learn about how to use Viva Topics in your organization.
 ---
 
 # Microsoft Viva Topics overview 
@@ -129,7 +129,7 @@ Admin controls in the Microsoft 365 admin center allow you to manage Viva Topics
 
 For more information about admin controls, see [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md).
 
-## Topic curation & feedback
+## Topic curation and suggestions
 
 AI will continually work to provide you suggestions to improve your topics as changes occur in your environment. 
 
@@ -138,6 +138,22 @@ Users with edit or create topics permissions can make updates to topic pages dir
 Users that you allow access to see topics in their daily work might be asked if the topic was useful to them. The system looks at these responses and uses them to improve the topic highlight, and help determine what's shown on topic summaries and in topic details.
 
 For more information, see [Topic discovery and curation](./topic-experiences-discovery-curation.md).
+
+## Provide us feedback
+
+At Microsoft we take feedback from our customers very seriously. The feedback you provide for Viva Topics will be used to troubleshoot, fix bugs, enhance existing features, and develop new ones. 
+
+You can send feedback to Microsoft directly from a topic page, and from the **Manage topics** and **My topics** pages. Look for this button in the lower-right corner of the page.
+
+   ![Screenshot showing the Feedback button.](../media/knowledge-management/feedback-icon.png)
+
+On the **Send Feedback to Microsoft** page, let us know if you like something, if you don't like something, or if you have a suggestion.
+
+   ![Screenshot showing the Send Feedback to Microsoft page.](../media/knowledge-management/feedback-page.png)
+
+When you submit feedback, we ask that you not include sensitive information, such as phone numbers, addresses, or highly personal stories. Instead, please provide information on the specific issue you are experiencing with Viva Topics or your experience in general with Viva Topics. This will help us maintain your privacy as we review and take action based on your feedback.
+
+Thank you for taking the time to share your thoughts with us. Your perspective helps us improve our existing features and develop new ones.
 
 ## See also
 

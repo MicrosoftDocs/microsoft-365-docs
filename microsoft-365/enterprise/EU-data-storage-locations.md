@@ -1,12 +1,12 @@
 ﻿---
 title: "Data locations for the European Union"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
