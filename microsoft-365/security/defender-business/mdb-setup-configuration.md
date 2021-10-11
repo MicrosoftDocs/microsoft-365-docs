@@ -39,8 +39,3 @@ Before you begin your setup and configuration process, make sure to review the f
 | 4 | [View and edit your security settings](mdb-view-edit-device-policies.md)     | You can manage your company's security settings through device policies. Default policies are included in Microsoft Defender for Business; however, you can edit those policies or define new policies to suit your company's needs. See [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md).         |
 | 5 | [Get started using Microsoft Defender for Business](mdb-get-started.md)     | After you have completed steps 1-6, you're ready to get started using Microsoft Defender for Business. See [Get started with Microsoft Defender for Business](mdb-get-started.md).        |
  
-## See also
-
-- [Review the requirements](mdb-requirements.md)
-
-- [Get a detailed overview of Microsoft Defender for Business](mdb-overview.md)
