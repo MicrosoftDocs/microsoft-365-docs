@@ -38,7 +38,8 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 <br />
 
-|
+****
+
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft 365 GCC G5|Microsoft 365 E5 for GCC High|Microsoft 365 G5 for DOD|
@@ -57,6 +58,7 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 |---|---|---|
 |Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
 |Azure Defender for Servers|Azure Defender for Servers - Government|Azure Defender for Servers - Government|
+|
 
 ## Portal URLs
 
@@ -71,6 +73,7 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 |GCC|<https://gcc.securitycenter.microsoft.us>|
 |GCC High|<https://securitycenter.microsoft.us>|
 |DoD|<https://securitycenter.microsoft.us>|
+|
 
 ## Endpoint versions
 
@@ -109,6 +112,7 @@ Linux|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](
 macOS|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Android|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
 iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
+|
 
 > [!NOTE]
 > <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
@@ -132,6 +136,7 @@ Windows Server 2019|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-ye
 Windows Server 2016|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+|
 
 ## Required connectivity settings
 
@@ -163,6 +168,7 @@ Instead of the public URIs listed in our [API documentation](apis-intro.md), you
 |Login|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Defender for Endpoint API|`https://api-gcc.securitycenter.microsoft.us`|`https://api-gov.securitycenter.microsoft.us`|
 |SIEM|`https://wdatp-alertexporter-us.gcc.securitycenter.windows.us`|`https://wdatp-alertexporter-us.securitycenter.windows.us`|
+|
 
 ## Feature parity with commercial
 
@@ -181,3 +187,4 @@ These are the known gaps:
 |Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
 |Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <br /> ![No](images/svg/check-no.svg) Power Automate: In development|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
+|
