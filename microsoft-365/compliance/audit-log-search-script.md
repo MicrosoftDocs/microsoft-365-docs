@@ -51,7 +51,7 @@ When there are situations where you need to manually retrieve auditing data for 
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-The first step is to connect to Exchange Online PowerShell. You can connect using modern authentication or with multi-factor authentication (MFA). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+The first step is to connect to Exchange Online PowerShell. You can connect using modern authentication or with multifactor authentication (MFA). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Modify and run the script to retrieve audit records
 
