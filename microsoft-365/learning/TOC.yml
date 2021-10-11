@@ -10,8 +10,10 @@
 
     - name: Setup and administration
       items:
-        - name: Set up in the Teams admin center
-          href: set-up-teams-admin-center.md
+        - name: Set up Viva Learning
+          href: set-up-viva-learning.md
+        - name: Set up in the Teams admin center (Preview)
+          href: set-up-teams-admin-center-preview.md
         - name: Configure learning content sources
           items:
             - name: Configure learning content sources overview
