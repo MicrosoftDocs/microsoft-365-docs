@@ -128,9 +128,6 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 
 ## Azure Defender scenarios
 
-### You're using Azure Defender. The Microsoft Monitoring Agent (MMA) and/or Microsoft Antimalware for Azure (SCEP) are installed and you want to upgrade.
-If you're using Azure Defender, you can leverage the automated upgrade process when this enters public preview around the first quarter of 2022. See [Protect your endpoints with Security Center's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration) for updates. 
-
 ## Group Policy configuration
 For configuration using Group Policy, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**. 
 
