@@ -1,5 +1,5 @@
 ---
-title: Configure Udemy as a learning csource for Microsoft Viva Learning
+title: Configure Udemy as a content csource for Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -17,7 +17,7 @@ localization_priority: medium
 description: Learn how to configure Udemy as a learning content source for Microsoft Viva Learning.
 ---
 
-# Configure Udemy as a learning source for Microsoft Viva Learning
+# Configure Udemy as a content source for Microsoft Viva Learning
 
 This article shows you how to configure Udemy as a third-party learning content source for Microsoft Viva Learning. 
 

@@ -1,5 +1,5 @@
 ---
-title: Configure Cornerstone OnDemand as a learning source for Microsoft Viva Learning
+title: Configure Cornerstone OnDemand as a content source for Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -18,7 +18,7 @@ description: Learn how to configure Cornerstone OnDemand as a learning content s
 
 ---
 
-# Configure Cornerstone OnDemand as a learning source for Microsoft Viva Learning
+# Configure Cornerstone OnDemand as a content source for Microsoft Viva Learning
 
 This article shows you how to configure Cornerstone OnDemand as a third-party learning content source in Viva Learning.
 
