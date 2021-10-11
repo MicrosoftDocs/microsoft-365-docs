@@ -1,7 +1,7 @@
 ---
-title: Configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
-ms.author: chucked
-author: chuckedmonson
+title: Manage learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
+ms.author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn how to configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center.
 ---
 
-# Configure learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
+# Manage learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
 
 The administrators for the Microsoft 365 admin center—either by themselves or by assigning the knowledge admin role to selected individuals in your organization—can manage settings related to Viva Learning and can configure the learning content sources.
 
@@ -93,10 +93,6 @@ For non-Microsoft content (except free LinkedIn content), ensure your organizati
 
 To enable or disable a learning content source, select the check box next to the source. If a source is enabled, a check mark will be visible.
 
-## Third-party content providers
-
-The set of available connected learning providers might change at any time. More providers will join as the program grows. Available providers might also choose to discontinue their connection with Viva Learning
-
 ### Skillsoft as a content source  
 
 For Viva Learning, users who have Skillsoft enabled and choose to view Skillsoft content will land on a Percipio page that asks them to input your organization's Percipio site name. After users input your organization's site name, they will be directed to page to sign in to your organization's Percipio site. Users will sign in by using their existing credentials and see the content they originally selected. Users will be asked to input the Percipio site name only once, until their browser cache is cleared. To streamline this experience for your users, we recommend including your Percipio site name in internal communications you send about Viva Learning.
@@ -111,4 +107,4 @@ You need to work with the supplier of the non-Microsoft service to access, corre
 
 ## Next step
 
-[Configure SharePoint as a learning content source for Microsoft Viva Learning](configure-sharepoint-content-source.md)
+[Add SharePoint as a content source for Microsoft Viva Learning](configure-sharepoint-content-source.md)
