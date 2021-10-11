@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: denisebmsft
@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 09/08/2021
+ms.date: 10/07/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -79,8 +79,27 @@ All our updates contain
 - performance improvements;
 - serviceability improvements; and
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
-<br/>
+<br/><br/>
 <details>
+<summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
+
+&ensp;Security intelligence update version: **1.351.7.0**<br/>
+&ensp;Released: **October 7th, 2021**<br/>
+&ensp;Platform: **4.18.2109.6**<br/>
+&ensp;Engine: **1.1.18600.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18600.4
+Security intelligence update version: update
+
+### What's new
+- New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
+- Improvements to Microsoft Defender update gradual rollout process
+
+### Known Issues
+No known issues
+<br/>
+</details><details>
 <summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
@@ -118,14 +137,19 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
+<details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
 &ensp;Security intelligence update version: **1.343.17.0**<br/>
 &ensp;Released: **June 28, 2021**<br/>
 &ensp;Platform: **4.18.2106.5**<br/>
 &ensp;Engine: **1.1.18300.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - New controls for managing the gradual rollout process of Microsoft Defender updates. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -136,12 +160,7 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
-<details>
+</details><details>
 <summary> May-2021 (Platform: 4.18.2105.4 | Engine: 1.1.18200.4)</summary>
 
 &ensp;Security intelligence update version: **1.341.8.0**<br/>
@@ -512,6 +531,9 @@ Platform and engine updates are provided on a monthly cadence. To be fully suppo
 
 During the technical support (only) phase, commercially reasonable support incidents will be provided through Microsoft Customer Service & Support and Microsoft's managed support offerings (such as Premier Support). If a support incident requires escalation to development for further guidance, requires a non-security update, or requires a security update, customers will be asked to upgrade to the latest platform version or an intermediate update (*).
 
+> [!NOTE]
+> If you are manually deploying Microsoft Defender Antivirus Platform Update, or if you are using a script or a non-Microsoft management product to deploy Microsoft Defender Antivirus Platform Update, make sure that version `4.18.2001.10` is installed from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=4.18.2001.10) before the latest version of Platform Update (N-2) is installed.
+
 ### Platform version included with Windows 10 releases
 
 The below table provides the Microsoft Defender Antivirus platform and engine versions that are shipped with the latest Windows 10 releases:<br/><br/>
@@ -531,11 +553,25 @@ For Windows 10 release information, see the [Windows lifecycle fact sheet](https
 
 ## Updates for Deployment Image Servicing and Management (DISM)
 
-We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022 and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
+We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Windows Server 2019, Windows Server 2022, and Windows Server 2016 OS installation images with the latest antivirus and antimalware updates. Keeping your OS installation images up to date helps avoid a gap in protection.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2110.01</summary>
+
+&ensp;Package version: **1.1.2110.01**<br/>
+&ensp;Platform version: **4.18.2109.6**<br/>
+&ensp;Engine version: **1.1.18500.10**<br/>
+&ensp;Signature version: **1.349.2103.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2109.01</summary>
 
 &ensp;Package version: **1.1.2109.01**<br/>

@@ -2,8 +2,6 @@
 title: Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe
 description: Learn how to manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, WMI, MPCmdRun.exe, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -36,7 +34,7 @@ ms.reviewer: chventou
 > We recommend using [Microsoft Endpoint Manager](/mem) to manage your organization's threat protection features for devices (also referred to as endpoints). Endpoint Manager includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction).
 >
 > - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
-> - [Co-manage Microsoft Defender for Endpoint on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
+> - [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 > - [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)
 
 You can manage some Microsoft Defender Antivirus settings on devices with [PowerShell](#configure-microsoft-defender-for-endpoint-with-powershell),  [Windows Management Instrumentation](#configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi) (WMI), and the [Microsoft Malware Protection Command Line Utility](#configure-microsoft-defender-for-endpoint-with-microsoft-malware-protection-command-line-utility-mpcmdrunexe) (MPCmdRun.exe). For example, you can manage some Microsoft Defender Antivirus settings. And, in some cases, you can customize your attack surface reduction rules and exploit protection settings.

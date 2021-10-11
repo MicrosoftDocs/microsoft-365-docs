@@ -7,7 +7,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -29,7 +29,6 @@ ms.prod: m365-security
 
 Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and in today's threat landscape Microsoft 365 is an ever-increasing [target for sophisticated attacks](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).
 
-
 The steps in this article will give you the best chance to recover data and stop the internal spread of infection. Before you get started, consider the following items:
 
 - There's no guarantee that paying the ransom will return access to your files. In fact, paying the ransom can make you a target for more ransomware.
@@ -40,13 +39,9 @@ The steps in this article will give you the best chance to recover data and stop
 
 - It's important for you respond quickly to the attack and its consequences. The longer you wait, the less likely it is that you can recover the affected data.
 
-## Step 1: Verify your third-party backups
+## Step 1: Verify your backups
 
-The Microsoft 365 compliance suite of tools is designed to meet your organization's [legal and regulatory standards](/microsoft-365/compliance/) which is why as a best practice, we [recommend](https://www.microsoft.com/servicesagreement) that you regularly back up your Microsoft 365 content and data using third-party apps and services.
-
-In order to ensure you have the ability to restore your data, it is important to regularly test your backups and validate they can be restored in the event of an attack. In the case of an actual attack, these restorations should not be completed until **after** you've removed the ransomware payload (malware) from your environment and **after** you have verified there is no unauthorized access in your Microsoft 365 environments.
-
-To ensure your backups were not also affected by ransomware, the third-party service should be air-gapped from your environments.
+If you have offline backups, you can probably restore the encrypted data **after** you've removed the ransomware payload (malware) from your environment and **after** you've verified that there's no unauthorized access in your Microsoft 365 environments.
 
 If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
@@ -155,6 +150,7 @@ Key information from Microsoft:
 Microsoft 365:
 
 - [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
@@ -166,6 +162,7 @@ Microsoft 365 Defender:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)

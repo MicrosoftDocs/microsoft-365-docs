@@ -343,6 +343,16 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
+        - name: Troubleshoot DLP
+          items:
+            - name: Troubleshooting DLP policy tips
+              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
+            - name: Changes to a DLP policy don't take effect in Outlook 2013 in Office 365
+              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
+            - name: DLP policy tips in Compliance center don't work in OWA/Outlook
+              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
+            - name: How to troubleshoot DLP policy tips in Exchange Online Protection in Office 365
+              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -473,7 +483,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (preview)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
@@ -639,7 +649,7 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries
+          - name: Use the KQL editor to build search queries (preview)
             href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
@@ -717,7 +727,7 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries
+          - name: Use the KQL editor to build search queries (preview)
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
@@ -812,7 +822,7 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
-            - name: Use the KQL editor to build search queries
+            - name: Use the KQL editor to build search queries (preview)
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
@@ -979,8 +989,16 @@
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
-        - name: Working with assessment templates
+        - name: Learn about assessment templates
           href: compliance-manager-templates.md
+        - name: Create assessment templates
+          href: compliance-manager-templates-create.md
+        - name: Extend assessment templates
+          href: compliance-manager-templates-extend.md
+        - name: Modify assessment templates
+          href: compliance-manager-templates-modify.md
+        - name: Format template data in Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions

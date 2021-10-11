@@ -8,7 +8,7 @@ manager: laurawi
 ms.date: 08/20/2021
 audience: Admin
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - Ent_O365
   - Strat_O365_IP
