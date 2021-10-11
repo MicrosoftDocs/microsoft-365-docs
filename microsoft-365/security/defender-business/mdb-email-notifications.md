@@ -23,13 +23,15 @@ Email notifications are not the only way your security team can find out about n
 
 Typically, email notifications are set up during the initial setup and configuration process for Microsoft Defender for Business:
 
+[SCREENSHOT OF WELCOME SCREEN WITH SETUP STEPS]
+
 1. Assign user permissions
 2. Set up email notifications (*We are here!*)
 3. Onboard and configure devices   
 
 ## Set up email notifications
 
-[SCREENSHOT OF WELCOME SCREEN WITH SETUP STEPS]
+[SCREENSHOT OF EMAIL NOTIFICATION SETUP SCREEN]
 
 To set up email notifications, specify a user's email address and the type of notification they should receive. You can choose from:
 
