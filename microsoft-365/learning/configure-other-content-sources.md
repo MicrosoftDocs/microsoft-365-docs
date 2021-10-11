@@ -24,7 +24,6 @@ A growing set of learning content providers and library management systems are a
 
 Third-party content sources are not enabled by default. To enable these sources, you will need to [add them in the Microsoft 365 admin center](content-sources-365-admin-center.md#configure-settings-for-the-learning-content-sources) and follow the specific instructions shown in the following table.
 
-<br>
 |Content provider  |Configuration instructions  |
 |---------|---------|
 |Cornerstone OnDemand |[Configure Cornerstone OnDemand as a content source](configure-cornerstone-content-source.md)         |
