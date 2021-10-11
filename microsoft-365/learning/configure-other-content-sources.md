@@ -20,10 +20,11 @@ description: Learn how to configure other providers as a learning content source
 
 # Add other content providers for Microsoft Viva Learning
 
-A growing set of learning content providers and library management systems are available through Viva Learning. This set might change at any time, as more providers join or change their status with the program. 
+A growing set of learning content providers and library management systems are available through Viva Learning. This set might change at any time as more providers join or change their status with the program. 
 
 Third-party content sources are not enabled by default. To enable these sources, you will need to follow the specific instructions shown in the following table.
 
+<br>
 |Content provider  |Configuration instructions  |
 |---------|---------|
 |Cornerstone OnDemand |[Configure Cornerstone OnDemand as a content source](configure-cornerstone-content-source.md)         |
