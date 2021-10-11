@@ -36,8 +36,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Desktop licensing
 
-<br>
-
 ****
 
 |GCC|GCC High|DoD|
@@ -49,8 +47,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 ### Server licensing
 
-<br />
-
 ****
 
 |GCC|GCC High|DoD|
@@ -61,8 +57,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 ## Portal URLs
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
-
-<br />
 
 ****
 
@@ -88,8 +82,8 @@ Windows 10, version 1909 (with [KB4586819](https://support.microsoft.com/help/45
 Windows 10, version 1903 (with [KB4586819](https://support.microsoft.com/help/4586819)<sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 1809 (with [KB4586839](https://support.microsoft.com/help/4586839)<sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows 10, version 1803 (with [KB4598245](https://support.microsoft.com/help/4598245)<sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 10, version 1709|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<sup>1</sup> <p> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](images/svg/check-no.svg) <p> Note: Won't be supported
-Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported|![No](images/svg/check-no.svg) <p> Note: Won't be supported
+Windows 10, version 1709|![No.](images/svg/check-no.svg) <br /> Note: Won't be supported|![Yes](images/svg/check-yes.svg) With [KB4499147](https://support.microsoft.com/help/4499147)<sup>1</sup> <br /> Note: [Deprecated](/lifecycle/announcements/revised-end-of-service-windows-10-1709), please upgrade|![No](images/svg/check-no.svg) <br /> Note: Won't be supported
+Windows 10, version 1703 and earlier|![No.](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported|![No](images/svg/check-no.svg) <br /> Note: Won't be supported
 Windows Server 2022|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2019 (with [KB4586839](https://support.microsoft.com/help/4586839)<sup>1</sup>)|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2016 (Modern)<sup>2</sup>|![Yes.](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview|![Yes](images/svg/check-yes.svg) <br /> Public preview
@@ -107,11 +101,11 @@ Android|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no
 iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
 
 > [!NOTE]
-> <sup>1</sup>The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
+> <sup>1</sup> The patch must be deployed prior to device onboarding in order to configure Defender for Endpoint to the correct environment.
 >
-> <sup>2</sup>Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
+> <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 >
-> <sup>3</sup>When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
+> <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
 
 ### OS versions when using Azure Defender for Servers
 
@@ -170,6 +164,6 @@ These are the known gaps:
 |---|:---:|:---:|:---:|
 |Network discovery|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <p> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
-|Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <p> ![No](images/svg/check-no.svg) Power Automate: In development|
+|Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
+|Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Azure Logic Apps <br /> ![No](images/svg/check-no.svg) Power Automate: In development|
 |Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
