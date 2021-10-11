@@ -146,3 +146,7 @@ Knowledge admins can access their organization’s Learning App Content Reposito
      ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
 3. Select **Check access** to connect to your organization’s centralized library.
+
+## Next step
+
+[Add other content providers for Microsoft Viva Learning](configure-other-content-sources.md)
