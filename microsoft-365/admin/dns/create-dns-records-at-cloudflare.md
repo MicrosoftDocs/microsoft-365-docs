@@ -27,12 +27,29 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 # Create DNS records at Cloudflare for Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
-  
+
+>[!IMPORTANT] This registrar is automatically verified and set up through a service called Domain Connect. The steps that follow replace the manual steps later in this article. 
+
+To use Domain Connect to verify and set up your Cloudflare hosted domain with Microsoft 365:
+
+1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
+
+1. Select the three dots (more actions) >  choose **Start setup**.
+
+1. On the **How do you want to connect your domain?** page, select **Continue**.   
+
+1. On the **Add DNS records** page, select **Add DNS records**.
+
+1. On the Cloudflare login page, sign in to your account, and select **Authorize**.
+    
+    This completes your domain setup for Microsoft 365. 
+
+## Create DNS records with manual setup
+
 If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
 After you add these records at Cloudflare, your domain will be set up to work with Microsoft 365 services.
-  
-  
+
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -73,30 +90,27 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
   
-2. On the **Home** page, select the domain that you want to update. 
+1. On the **Home** page, select the domain that you want to update. 
   
-3. On the **Overview** page for your domain, select **DNS**.
+1. On the **Overview** page for your domain, select **DNS**.
 
   
-4. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
+1. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
     
     | Type | Name | Automatic TTL | Content |
     |:-----|:-----|:-----|:----|
-    |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |
-  
+    |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |
     
-5. Select **Save**.
+1. Select **Save**.
   
-  
-9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and search for the record.
-  
-When Microsoft finds the correct TXT record, your domain is verified.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and search for the record. When Microsoft finds the correct TXT record, your domain is verified.
+
+To verify your domain in Microsoft 365:
   
 1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-    
+  
 2. On the **Domains** page, select the domain that you are verifying. 
   
 3. On the **Setup** page, select **Start setup**.
@@ -120,30 +134,25 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 minutes  <br/> |
    
-
-  
 5. Select **Save**.
   
-9. If there are any other MX records listed in the **MX Records** section, delete them by selecting the **Delete (X)** icon. 
+6. If there are any other MX records listed in the **MX Records** section, delete them by selecting the **Delete (X)** icon. 
   
-10. In the confirmation dialog box, select **Delete** to confirm your changes. 
+7. In the confirmation dialog box, select **Delete** to confirm your changes. 
 
   
-## Add the Six CNAME records that are required for Microsoft
-<a name="BKMK_add_CNAME"> </a>
+## Add the CNAME record required for Microsoft
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
-    
-  
+      
 2. On the **Home** page, select the domain that you want to update. 
   
 3. On the **Overview** page for your domain, select **DNS**.
 
-  
-4. Add the first of the five CNAME records.
+4. Add CNAME record.
     
-    On the **DNS management** page, click **Add record**, and then select the values from the following table.
-    
+    On the **DNS management** page, select **Add record**, and then add the values from the following table.
+
     
     | Type | Name | Target | TTL |
     |:-----|:-----|:-----|:-----|
@@ -153,45 +162,36 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |30 minutes  <br/> |
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
-    
   
 5. Select the **DNS Traffic** icon (change orange cloud to grey) to bypass the Cloudflare servers.
   
 6. Select **Save**.
   
 7. Add each of the other five CNAME records.
-
     
 ## Add a TXT record for SPF to help prevent email spam
-<a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
   
-1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
-    
+1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.  
   
 2. On the **Home** page, select the domain that you want to update. 
   
 3. On the **Overview** page for your domain, select **DNS**.
 
-  
 4. On the **DNS management** page, click **Add record**, and then select the values from the following table.  
     
     | Type | Name | TTL | Content |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.   |
-
  
 5. Select **Save**.
-    
-
   
 ## Add the two SRV records that are required for Microsoft
-<a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Please keep in mind that Cloudflare is responsible for making this functionality available. In case you see discrepancies between the steps below and the current Cloudflare GUI (Graphical User Interface), please leverage the [Cloudflare Community](https://community.cloudflare.com/). 
+> Keep in mind that Cloudflare is responsible for making this functionality available. In case you see discrepancies between the steps below and the current Cloudflare GUI (Graphical User Interface), leverage the [Cloudflare Community](https://community.cloudflare.com/). 
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
       
@@ -207,14 +207,125 @@ When Microsoft finds the correct TXT record, your domain is verified.
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |Use your *domain_name*; for example, contoso.com  |30 minutes | 100|1 |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|Use your *domain_name*; for example, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
-
   
 5. Select **Save**.
 
-  
 6. Add the other SRV record by choosing the values from the second row of the table. 
-
-    
+ 
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+## Advanced option: Skype for Business
+
+Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+
+### Add the two required SRV records
+
+> [!IMPORTANT]
+> Keep in mind that Cloudflare is responsible for making this functionality available. In case you see discrepancies between the steps below and the current Cloudflare GUI (Graphical User Interface), leverage the [Cloudflare Community](https://community.cloudflare.com/). 
+
+1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
+      
+2. On the **Home** page, select the domain that you want to update. 
+  
+3. On the **Overview** page for your domain, select **DNS**.
+  
+4. Add the first of the two SRV records.
+
+    On the **DNS management** page, click **Add record**, and then select the values from the first row of the following table.
+        
+    | Type | Service | Protocol | Name | TTL | Priority | Weight | Port | Target |
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    |SRV|_sip |TLS |Use your *domain_name*; for example, contoso.com  |30 minutes | 100|1 |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Use your *domain_name*; for example, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
+  
+5. Select **Save**.
+
+6. Add the other SRV record by choosing the values from the second row of the table. 
+ 
+> [!NOTE]
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+### Add the two required CNAME records 
+  
+1. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
+    
+    ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+  
+1. In the **Type** drop-down, select **CNAME**.
+    
+    > [!NOTE]
+    > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**. 
+  
+    ![Namecheap-BP-Configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
+  
+1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
+    
+    |**Type**|**Host**|**Value**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+       
+    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
+  
+1. Select the **Save Changes** (check mark) control. 
+    
+    ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
+  
+1. Using the preceding four steps and the values from the second row in the table, add the other CNAME record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+  
+## Advanced option: Intune and Mobile Device Management for Microsoft 365
+
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+
+### Add the two required CNAME records
+
+1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to sign in.
+    
+    ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
+  
+2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
+    
+    ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
+  
+3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
+    
+    ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
+  
+4. Select **Advanced DNS**.
+    
+    ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
+  
+5. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
+    
+    ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
+  
+6. In the **Type** drop-down, select **CNAME Record**.
+    
+    > [!NOTE]
+    > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**. 
+  
+    ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
+  
+7. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
+    
+    |**Type**|**Host**|**Value**|**TTL**|
+    |:-----|:-----|:-----|:-----|
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+       
+    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
+  
+8. Select the **Save Changes** (check mark) control. 
+    
+    ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
+  
+9. Using the preceding four steps and the values from the second row in the table, add the other CNAME record.
+    
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
   

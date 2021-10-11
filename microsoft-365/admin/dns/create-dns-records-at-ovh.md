@@ -40,16 +40,14 @@ These are the main records to add.
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
+- [Add the two SRV records required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
 After you add these records at OVH, your domain will be set up to work with Microsoft services.
 
-  
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add a TXT record for verification
-<a name="bkmk_txt"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -95,22 +93,15 @@ When Microsoft finds the correct TXT record, your domain is verified.
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
 2. On the **Domains** page, select the domain that you are verifying. 
-    
-    
   
 3. On the **Setup** page, select **Start setup**.
     
-    
-  
 4. On the **Verify domain** page, select **Verify**.
     
-    
-  
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="bkmk_mx"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
@@ -158,7 +149,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
 10. Select **Confirm**.
     
 ## Add the CNAME records that are required for Microsoft
-<a name="bkmk_cname"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
@@ -205,7 +195,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
     For each record, type or copy and paste the values from the next row of the table above into the boxes for that record.
     
 ## Add a TXT record for SPF to help prevent email spam
-<a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
@@ -245,7 +234,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
     ![OVH Add TXT record for SPF and Confirm](../../media/649eefeb-3227-49e3-98a0-1ce19c42fa54.png)
   
 ## Add the two SRV records that are required for Microsoft
-<a name="bkmk_srv"> </a>
 
 1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
