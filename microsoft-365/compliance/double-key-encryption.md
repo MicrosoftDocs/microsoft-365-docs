@@ -22,7 +22,8 @@ ms.collection:
 > *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
->
+
+
 > *Service description for: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
@@ -564,3 +565,15 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner).
 
 If you don't migrate content, your HYOK protected content will remain unaffected.
+
+## Other Deployment Options
+
+We realize that for some customers in highly regulated industries, this standard reference implementation using software based keys may not be sufficient to meet their enhanced compliance obligations and needs.
+We have partnered with various third-party Hardware Security Module (HSM) vendors to bring support for enhanced key management options to the Double Key Encryption Service:
+
+ - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.) 
+
+- [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption) 
+
+Please reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions. 
+
