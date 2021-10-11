@@ -22,7 +22,7 @@ description: Learn how to configure other providers as a learning content source
 
 A growing set of learning content providers and library management systems are available through Viva Learning. This set might change at any time as more providers join or change their status with the program. 
 
-Third-party content sources are not enabled by default. To enable these sources, you will need to follow the specific instructions shown in the following table.
+Third-party content sources are not enabled by default. To enable these sources, you will need to [add them in the Microsoft 365 admin center](content-sources-365-admin-center.md#configure-settings-for-the-learning-content-sources) and follow the specific instructions shown in the following table.
 
 <br>
 |Content provider  |Configuration instructions  |
