@@ -1,7 +1,7 @@
 ---
 title: Introduction to Microsoft Viva Learning
-ms.author: chucked
-author: chuckedmonson
+ms.author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 
