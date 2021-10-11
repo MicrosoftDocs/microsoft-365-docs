@@ -61,6 +61,6 @@ The knowledge admin should be moderately technical and have existing SharePoint 
 
 When you’re ready to set up and configure Viva Learning in your Microsoft 365 environment:
 
-- Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-teams-admin-center.md).
+- Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-viva-learning.md).
 - Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).
 - Use the SharePoint admin center to [manage and store your own learning content](configure-sharepoint-content-source.md).
