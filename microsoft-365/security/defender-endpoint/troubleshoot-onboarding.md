@@ -227,7 +227,7 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
@@ -247,21 +247,19 @@ First, you should check that the service is set to start automatically when Wind
 
 2. Enter the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc config diagtrack start=auto
    ```
 
 3. A success message is displayed. Verify the change by entering the following command, and press **Enter**:
 
-   ```text
+   ```console
    sc qc diagtrack
    ```
 
-4. Start the service.
+4. Start the service. In the command prompt, type the following command and press **Enter**:
 
-   a. In the command prompt, type the following command and press **Enter**:
-
-   ```text
+   ```console
    sc start diagtrack
    ```
 
@@ -299,7 +297,7 @@ If the verification fails and your environment is using a proxy to connect to th
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> The `disableAntiSpyware` setting is discontinued and will be ignored on all client devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
+> The `disableAntiSpyware` setting is discontinued and will be ignored on all Windows 10 devices, as of the August 2020 (version 4.18.2007.8) update to Microsoft Defender Antivirus.
 
 - After clearing the policy, run the onboarding steps again.
 
@@ -315,12 +313,13 @@ If the verification fails and your environment is using a proxy to connect to th
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 
-## Troubleshoot onboarding issues on a server
+## Troubleshoot onboarding issues 
 
 > [!NOTE]
 > The following troubleshooting guidance is only applicable for Windows Server 2016 and lower.
 
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
+
 
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
