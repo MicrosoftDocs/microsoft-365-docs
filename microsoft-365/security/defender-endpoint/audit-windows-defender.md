@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -15,7 +15,8 @@ ms.reviewer:
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 06/02/2021
+ms.date: 09/22/2021
+ms.collection: M365-security-compliance
 ---
 
 # Test attack surface reduction in Microsoft Defender for Endpoint

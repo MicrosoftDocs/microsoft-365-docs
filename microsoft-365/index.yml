@@ -14,7 +14,7 @@ metadata:
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 06/08/2021 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -60,6 +60,8 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
       links:
+        - url: /sharepoint/corporate-communications-overview
+          text: Organizational communications 
         - url: /MicrosoftTeams/quick-start-meetings-live-events
           text: Meetings and live events in Microsoft Teams
         - url: solutions/deploy-voice.md

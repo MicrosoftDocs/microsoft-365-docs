@@ -2,14 +2,13 @@
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
 keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
-search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
+ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -39,7 +38,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
 
-You can add Windows 10 or Windows Server 2019 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
@@ -101,7 +100,7 @@ After the lab setup process is complete, you can add devices and run simulations
 
 ## Add devices
 
-When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10 or Windows Server 2019 devices.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices.
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
 
@@ -130,7 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10 or Windows Server 2019.
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022.
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
 

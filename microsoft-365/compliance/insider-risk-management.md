@@ -2,7 +2,7 @@
 title: Learn about insider risk management
 description: Learn how to help minimize risk in your organization with insider risk management in Microsoft 365.
 keywords: Microsoft 365, insider risk, risk management, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -59,6 +59,10 @@ Insider risk management is centered around the following principles:
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
 
 To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics-preview).
+
+## Get started with recommended actions (preview)
+
+Whether you're setting up insider risk management for the first time or getting started with creating new policies, the new [recommended actions](insider-risk-management-configure.md#recommended-actions-preview) experience can help you get the most out of insider risk management capabilities. Recommended actions include setting up permissions, choosing policy indicators, creating a policy, and more.
 
 ## Workflow
 

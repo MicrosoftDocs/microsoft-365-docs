@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -14,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: m365-security-compliance
 ---
 
 # View attack surface reduction events

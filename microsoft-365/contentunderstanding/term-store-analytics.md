@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: Priority
+ms.localizationpriority: high
 
 
 ---
