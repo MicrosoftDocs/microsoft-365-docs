@@ -79,11 +79,9 @@ The following table lists partner tenant roles and their associated permissions.
 
 | Partner tenant roles | Permissions within partner tenant |
 |--|--|
-| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>View customer tenants on the Tenants page.\*</li><li>Activate and inactivate a tenant.\*</li><li>Update customer contacts and website.\*</li><li>Create, update, and delete tags.\*</li><li>Assign and remove tags from a customer tenant.\*</li></ul> |
+| Global Administrator of partner tenant | <ul><li>Sign up for Lighthouse in the Microsoft 365 admin center.</li><li>Accept partner contract amendments during the first-run experience.</li><li>View customer tenants on the Tenants page.</li><li>Activate and inactivate a tenant.</li><li>Update customer contacts and website.</li><li>Create, update, and delete tags.</li><li>Assign and remove tags from a customer tenant.</li></ul> |
 | Administrator of partner tenant with at least one<br> Azure AD role assigned with the following property set:<br> **microsoft.office365.supportTickets/allEntities/allTasks**<br> (For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).) | <ul><li>Create Lighthouse service requests.</li></ul> |
 
-> [!NOTE]
-> Currently, to take the actions marked with * in the table, the Global Administrator must assume the Admin Agent role.
 
 ## Related content
 
