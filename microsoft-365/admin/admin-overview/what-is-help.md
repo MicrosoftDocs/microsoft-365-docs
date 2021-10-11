@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -40,7 +40,7 @@ If you're an admin, <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" 
 
 Help is integrated throughout the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">admin center</a>, so it's right there when you need it. At the top of many pages, you'll find inline help text that provides an informational overview of the task at hand, as well as links to articles that let you quickly find official documentation for more in-depth learning.
 
-![Groups page showing inline help and links to articles](../../media/integrated-help.png)
+![Groups page showing inline help and links to articles.](../../media/integrated-help.png)
 
 ## Modern self-help powered by AI
 
@@ -48,7 +48,7 @@ To open our modern self-help experience that’s powered by artificial intellige
 
 Or, for those times when you don't quite know how to get something done in your specific situation, use the Support Assistant. Currently, this experience is available only in English. To turn on Support Assistant, just use the toggle at the top of the **Need Help** pane. The Support Assistant provides a conversational interface to help you. After you enter your query, the chatbot asks clarifying questions to get you to the right answer for your specific situation. Think of it as your virtual helper to discover solutions and complete tasks.
 
-![Modern self-help](../../media/help-options.png)
+![Modern self-help.](../../media/help-options.png)
 
 Of course, sometimes questions are best answered by humans. If our modern self-help doesn't have the answer, you always have the option to contact our support agents.
 

@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -23,7 +23,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are six default baseline configurations that come standard with Microsoft 365 Lighthouse:
+Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are six default baseline configurations that come standard with Lighthouse:
 
 - Require MFA for admins
 - Require MFA for end users

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -34,16 +34,16 @@ ms.prod: m365-security
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, verify that the **Senders** tab is selected, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Block**.
+2. On the **Tenant Allow/Block List** page, verify that the **Senders** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
 3. In the **Block senders** flyout that appears, configure the following settings:
    - **Sender email addresses or domains**: Enter one sender (email address or domain) per line, up to a maximum of 20.
    - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
+     - Verify the setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
 
        or
 
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on.](../../media/scc-toggle-on.png).
    - **Optional note**: Enter descriptive text for the entries.
 
 4. When you're finished, click **Add**.
@@ -52,16 +52,16 @@ ms.prod: m365-security
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Block**.
+2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
 3. In the **Block URLs** flyout that appears, configure the following settings:
    - **Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20. For details about the syntax for URL entries, see the URL syntax section in [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
    - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
+     - Verify the setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
 
        or
 
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on.](../../media/scc-toggle-on.png).
    - **Optional note**: Enter descriptive text for the entries.
 
 4. When you're finished, click **Add**.
@@ -70,16 +70,16 @@ ms.prod: m365-security
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Block**.
+2. On the **Tenant Allow/Block List** page, select the **Files** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Block**.
 
 3. In the **Block files** flyout that appears, configure the following settings:
    - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
    - **Never expire**: Do one of the following steps:
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
+     - Verify the setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)) and use the **Remove on** box to specify the expiration date for the entries.
 
      or
 
-     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/scc-toggle-on.png).
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on.](../../media/scc-toggle-on.png).
    - **Optional note**: Enter descriptive text for the entries.
 
 4. When you're finished, click **Add**.
@@ -95,7 +95,7 @@ ms.prod: m365-security
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
-2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon](../../media/m365-cc-sc-create-icon.png) **Add**.
+2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
 
 3. In the **Add new domain pairs** flyout that appears, configure the following settings:
    - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).

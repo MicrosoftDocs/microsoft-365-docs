@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -55,7 +55,7 @@ All policies for retention and with any configuration support Preservation Lock.
 
 2. Find the name of the policy that you want to lock by running [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). For example:
     
-   ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![List of retention policies in PowerShell.](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
 3. To place a Preservation Lock on your policy, run the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the name of the policy, and the *RestrictiveRetention* parameter set to true:
     
@@ -65,11 +65,11 @@ All policies for retention and with any configuration support Preservation Lock.
     
     For example:
     
-    ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    ![RestrictiveRetention parameter in PowerShell.](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
      When prompted, read and acknowledge the restrictions that come with this configuration by entering **Y**:
     
-   ![Prompt to confirm that you want to lock a retention policy in PowerShell](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![Prompt to confirm that you want to lock a retention policy in PowerShell.](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 A Preservation Lock is now placed on the policy. To confirm, run `Get-RetentionCompliancePolicy` again, but specify the policy name and display the policy parameters:
 
@@ -79,7 +79,7 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 You should see **RestrictiveRetention** is set to **True**. For example:
 
-![Locked policy with all parameters shown in PowerShell](../media/retention-policy-preservation-lock-locked-policy.PNG)
+![Locked policy with all parameters shown in PowerShell.](../media/retention-policy-preservation-lock-locked-policy.PNG)
 
 ## See also
 

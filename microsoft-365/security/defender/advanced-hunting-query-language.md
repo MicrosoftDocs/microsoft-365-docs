@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -112,7 +112,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 Select **Run query** to see the results. Use the expand icon at the top right of the query editor to focus on your hunting query and the results. 
 
-![Image of the Expand control in the advanced hunting query editor](../../media/advanced-hunting-expand.png)
+![Image of the Expand control in the advanced hunting query editor.](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
 >You can view query results as charts and quickly adjust filters. For guidance, [read about working with query results](advanced-hunting-query-results.md)
@@ -162,13 +162,13 @@ You can use the query editor to experiment with multiple queries. To use multipl
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-![Image of the query editor with multiple queries](../../media/mtp-ah/ah-multi-query.png)
+![Image of the query editor with multiple queries.](../../media/mtp-ah/ah-multi-query.png)
 
 ## Use sample queries
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.
 
-![Image of advanced hunting window](../../media/advanced-hunting-get-started.png)
+![Image of advanced hunting window.](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
 >Apart from the basic query samples, you can also access [shared queries](advanced-hunting-shared-queries.md) for specific threat hunting scenarios. Explore the shared queries on the left side of the page or the [GitHub query repository](https://aka.ms/hunting-queries).

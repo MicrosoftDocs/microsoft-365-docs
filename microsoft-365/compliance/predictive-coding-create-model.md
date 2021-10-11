@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
@@ -36,7 +36,7 @@ To review the predictive coding workflow, see [Learn about predictive coding in 
 
 2. Open a review set and then click **Analytics** > **Manage predictive coding (preview)**.
 
-   ![Click the Analyze dropdown menu in review set to go to the Predictive coding page](..\media\ManagePredictiveCoding.png)
+   ![Click the Analyze dropdown menu in review set to go to the Predictive coding page.](..\media\ManagePredictiveCoding.png)
 
 3. On the **Predictive coding models (preview)** page, click **New model**.
 

@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -46,7 +46,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 
 ## Actions on files
 
-- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
+- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 11 or Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
 - **Add indicators to block or allow file** - Prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. This operation will prevent the file from being read, written, or executed on devices in your organization.
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 
@@ -62,7 +62,7 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
 8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal"::: 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal."::: 
  
 Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
 
@@ -79,13 +79,13 @@ Playbooks use Power Automate to create custom robotic process automation flows t
 
 Here's an example.
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
  
 Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
 
 ## Next step
 
-[![Step 3: Learn how to perform a post-incident review of an incident](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
+[![Step 3: Learn how to perform a post-incident review of an incident.](../../media/first-incident-overview/first-incident-path-step3.png)](first-incident-post.md)
 
 Learn how to [perform a post-incident review of an incident](first-incident-post.md).
 

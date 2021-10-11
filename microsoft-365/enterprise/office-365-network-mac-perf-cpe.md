@@ -7,7 +7,7 @@ ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -60,7 +60,7 @@ Application experience data (reflected through network quality metrics) is colle
 
 Enabling informed network routing requires multiple steps, some of which will need to be performed within the configuration interface of your SD-WAN solution. Consult your SD-WAN solution vendor for guidance on how to initiate the process of enabling informed network routing within the SD-WAN solution before proceeding with configuration in the Microsoft 365 admin center.
 
-Once you are ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary global administrator permissions.
+Once you are ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary **User Admin**, or **Global admin** permissions.
 
 >[!IMPORTANT]
 >In order to provide the necessary tenant-level applications permissions consent for the selected SD-WAN solution to access the informed network routing data sharing channel, you must perform the following steps as a global administrator.
@@ -90,7 +90,7 @@ Select **Next**.
 
 ### Step 4: Grant permissions to the SD-WAN solution
 
-This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You will be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires global administrator role permissions.
+This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You will be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Azure AD DC admin**, or **Global admin** role permissions.
 
 Select the **Give permission to this application** link and follow the Azure AD requests.
 

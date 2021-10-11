@@ -2,7 +2,7 @@
 title: Communication compliance in Microsoft 365
 description: Learn how to configure communication compliance in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -26,7 +26,7 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 Use the following steps to configure communication compliance for your organization:
 
-![Insider risk solution communication compliance steps](../media/ir-solution-cc-steps.png)
+![Insider risk solution communication compliance steps.](../media/ir-solution-cc-steps.png)
 
 1. Learn about [communication compliance](communication-compliance.md) in Microsoft 365
 2. Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#subscriptions-and-licensing)

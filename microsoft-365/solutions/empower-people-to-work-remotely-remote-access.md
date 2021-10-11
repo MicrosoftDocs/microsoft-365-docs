@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -34,7 +34,7 @@ Here are the primary configurations for remote access:
 
 See this flowchart for the remote access configuration options discussed in this article.
 
-![Remote access configuration flowchart](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
+![Remote access configuration flowchart.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
 
 With remote access connections, you can also use [Remote Desktop](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) to connect your users to an on-premises PC. For example, a remote worker can use Remote Desktop to connect to the PC in their office from their Windows, iOS, or Android device. Once they are remotely connected, they can use it as if they were sitting in front of it.
 
@@ -44,7 +44,7 @@ If your remote workers are using a traditional VPN client to obtain remote acces
 
 Without split tunneling, all of your remote work traffic gets sent across the VPN connection, where it must be forwarded to your organization’s edge devices, get processed, and then sent on the Internet.
 
-![Network traffic from VPN clients without tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
+![Network traffic from VPN clients without tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-before-tunneling.png)
 
 Microsoft 365 traffic must take an indirect route through your organization, which could be forwarded to a Microsoft network entry point far away from the VPN client’s physical location. This indirect path adds latency to the network traffic and decreases overall performance.
 
@@ -54,7 +54,7 @@ To optimize access to Microsoft 365 cloud resources, configure your split tunnel
 
 Here is the resulting traffic flow, in which most of the traffic to Microsoft 365 cloud apps bypass the VPN connection.
 
-![Network traffic from VPN clients with tunneling](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
+![Network traffic from VPN clients with tunneling.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
 This allows the VPN client to send and receive crucial Microsoft 365 cloud service traffic directly over the Internet and to the nearest entry point into the Microsoft network.
 
@@ -66,7 +66,7 @@ If your remote workers are not using a traditional VPN client and your on-premis
 
 Here are the components of Azure AD Application Proxy.
 
-![Components of Azure AD Application Proxy](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
+![Components of Azure AD Application Proxy.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
 For more information, see this [overview of Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy).
 
@@ -79,7 +79,7 @@ If your remote workers are not using a traditional VPN client and you have apps 
 
 A P2S VPN connection creates a secure connection from a remote worker’s device to your organization network through an Azure virtual network.
 
-![Components of Azure P2S VPN](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
+![Components of Azure P2S VPN.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-p2s-vpn.png)
 
 For more information, see this [overview of P2S VPN](/azure/vpn-gateway/point-to-site-about).
 
@@ -90,7 +90,7 @@ For more information, see this [overview of P2S VPN](/azure/vpn-gateway/point-to
 
 To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization network.
 
-![Components of Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Components of Azure Windows Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
 For more information, see this [overview of Windows Virtual Desktop](/azure/virtual-desktop/overview).
 
@@ -101,7 +101,7 @@ For more information, see this [overview of Windows Virtual Desktop](/azure/virt
 
 If you are using Remote Desktop Services (RDS) to allow employees to connect into Windows-based computers on your on-premises network, you should use a Microsoft Remote Desktop Services gateway in your edge network. The gateway uses Transport Layer Security (TLS) to encrypt traffic and prevents the on-premises computer hosting RDS from being directly exposed to the Internet.
 
-![Remote Desktop Services connections with the Remote Desktop Services Gateway](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+![Remote Desktop Services connections with the Remote Desktop Services Gateway.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
 See [this article](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/) for more information.
 
@@ -125,6 +125,6 @@ After deployment of a remote access solution for your remote workers:
 
 ## Next step
 
-[![Step 3: Deploy Microsoft 365 security and compliance services](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+[![Step 3: Deploy Microsoft 365 security and compliance services.](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
 
 Continue with [Step 3](empower-people-to-work-remotely-security-compliance.md) to deploy Microsoft 365 security and compliance services to protect your apps, data, and devices.

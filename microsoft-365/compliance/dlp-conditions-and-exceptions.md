@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -50,6 +50,7 @@ The tables in the following sections describe the conditions and exceptions that
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
+|The sender is a member of |_FromMemberOf_ <br/> _ExceptIfFromMemberOf_|Addresses|Messages that are sent by a member of the specified distribution group, mail-enabled security group, or Microsoft 365 group.|
 |Sender IP address is|condition: *SenderIPRanges*<br/> exception: *ExceptIfSenderIPRanges*|IPAddressRanges|Messages where the sender's IP address matches the specified IP address, or falls within the specified IP address range.|
 |Sender address contains words|condition: *FromAddressContainsWords* <br/> exception: *ExceptIfFromAddressContainsWords*|Words|Messages that contain the specified words in the sender's email address.|
 |Sender address matches patterns|condition: *FromAddressMatchesPatterns* <br/> exception: *ExceptFromAddressMatchesPatterns*|Patterns|Messages where the sender's email address contains text patterns that match the specified regular expressions.|
@@ -72,6 +73,8 @@ The tables in the following sections describe the conditions and exceptions that
 |Recipient address contains words|condition: *AnyOfRecipientAddressContainsWords* <br/> exception: *ExceptIfAnyOfRecipientAddressContainsWords*|Words|Messages that contain the specified words in the recipient's email address. <br/>**Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Recipient address matches patterns|condition: *AnyOfRecipientAddressMatchesPatterns* <br/> exception: *ExceptIfAnyOfRecipientAddressMatchesPatterns*|Patterns|Messages where a recipient's email address contains text patterns that match the specified regular expressions. <br/> **Note**: This condition doesn't consider messages that are sent to recipient proxy addresses. It only matches messages that are sent to the recipient's primary email address.|
 |Sent to member of|condition: *SentToMemberOf* <br/> exception: *ExceptIfSentToMemberOf*|Addresses|Messages that contain recipients who are members of the specified distribution group, mail-enabled security group, or Microsoft 365 group. The group can be in the **To**, **Cc**, or **Bcc** fields of the message.|
+|The recipient's specified properties include any of these words |_RecipientADAttributeContainsWords_ <br/> _ExceptIfRecipientADAttributeContainsWords_|First property: `ADAttribute` <p> Second property: `Words`|Messages where the specified Active Directory attribute of a recipient contains any of the specified words. <p> Note that the **Country** attribute requires the two-letter country code value (for example, DE for Germany).|
+|The recipient's specified properties match these text patterns |_RecipientADAttributeMatchesPatterns_ <br/> _ExceptIfRecipientADAttributeMatchesPatterns_|First property: `ADAttribute` <p> Second property: `Patterns`|Messages where the specified Active Directory attribute of a recipient contains text patterns that match the specified regular expressions.|
 |
 
 ### Message subject or body

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
@@ -45,13 +45,13 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
 1. Go to <https://admin.microsoft.com> and sign in.
 
-2. In the navigation pane of the admin center, click **Users > Active users**.
+2. In the navigation pane of the admin center, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 3. Select the user that you want to place on Litigation hold.
 
 4. On the properties flyout page, click the **Mail** tab, and then under **More actions**, click **Manage litigation hold**.
 
-   ![Click Manage litigation hold on the Mail tab of user properties flyout page](../media/M365AdminCenterLitHold1.png)
+   ![Click Manage litigation hold on the Mail tab of user properties flyout page.](../media/M365AdminCenterLitHold1.png)
 
 5. On the **Manage litigation hold** flyout page, select the **Turn on litigation hold** checkbox and then enter the following optional information:
 
@@ -97,7 +97,7 @@ When a mailbox is placed on Litigation hold, items in the Purges subfolder are p
 
 The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-![Litigation hold life cycle](../media/LitigationHoldLifeCycle.png)
+![Litigation hold life cycle.](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.

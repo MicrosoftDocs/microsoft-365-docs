@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -40,7 +40,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 You can get a view into your user's Microsoft 365 Apps activity by looking at the **Users** and **Platform** charts.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Apps usage report](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
+> ![Microsoft 365 Apps usage report.](../../media/0bcf67e6-a6e4-4109-a215-369f9f20ad84.png)
 
 |Item|Description|
  |:-----|:-----|

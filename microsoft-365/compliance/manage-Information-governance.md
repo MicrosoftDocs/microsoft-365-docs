@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -23,7 +23,7 @@ description: "Implement Microsoft Information Governance capabilities to govern 
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
-![Govern your data - information governance and records management](../media/information-governance-records-management.png)
+![Govern your data - information governance and records management.](../media/information-governance-records-management.png)
 
 Looking to protect your data? See [Microsoft Information Protection in Microsoft 365](information-protection.md).
 

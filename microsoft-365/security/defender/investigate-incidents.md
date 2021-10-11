@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -45,11 +45,11 @@ Before diving into the details, take a look at the properties and summary of the
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Example of selecting an incident from the check mark column.":::
 
 When you do, a summary pane opens with key information about the incident, such as severity, to whom it is assigned, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Example of the summary pane for an incident.":::
 
 From here, you can select **Open incident page**. This opens the main page for the incident where you'll find more summary information and tabs for alerts, devices, users, investigations, and evidence.
 
@@ -84,7 +84,7 @@ On the **Alerts** tab, you can view the alert queue for alerts related to the in
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="Example of an Alerts page for an incident.":::
 
 By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident. 
 
@@ -92,7 +92,7 @@ You can see the events of the alert, which other triggered alerts caused the cur
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-alert-example.png" alt-text="Example of an alert details page within an incident.":::
 
 The incident alert page has these sections:
 
@@ -114,11 +114,11 @@ Learn how to use the alert queue and alert pages in [investigate alerts](investi
 
 The **Devices** tab lists all the devices related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Example of a Devices page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices.png" alt-text="Example of a Devices page for an incident.":::
 
 You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Microsoft Defender for Endpoints device inventory. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Microsoft Defender for Endpoints":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Microsoft Defender for Endpoints.":::
 
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 
@@ -129,7 +129,7 @@ From the device page, you can gather additional information about the device, su
 
 The **Users** tab lists all the users that have been identified to be part of or related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Example of a Users page for an incident.":::
 
 You can select the check mark for a user to see details of the user account threat, exposure, and contact information. Select the user name to see additional user account details.
 
@@ -140,7 +140,7 @@ Learn how to view additional user information and manage the users of an inciden
 
 The **Mailboxes** tab lists all the mailboxes that have been identified to be part of or related to the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Example of a Mailboxes page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-mailboxes.png" alt-text="Example of a Mailboxes page for an incident.":::
 
 You can select the check mark for a mailbox to see a list of active alerts. Select the mailbox name to see additional mailbox details on the Explorer page for Microsoft Defender for Office 365.
 
@@ -148,7 +148,7 @@ You can select the check mark for a mailbox to see a list of active alerts. Sele
 
 The **Investigations** tab lists all the [automated investigations](m365d-autoir.md) triggered by alerts in this incident. Automated investigations will perform remediation actions or wait for analyst approval of actions, depending on how you configured your automated investigations to run in Microsoft Defender for Endpoint and Defender for Office 365.
 
-:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Example of an Investigations page for an incident.":::
 
 Select an investigation to navigate to its details page for full information on the investigation and remediation status. If there are any actions pending for approval as part of the investigation, they will appear in the **Pending actions history** tab. Take action as part of incident remediation.
 
@@ -166,11 +166,31 @@ For more information, see [Automated investigation and response in Microsoft 365
 
 The **Evidence and Response** tab shows all the supported events and suspicious entities in the alerts in the incident. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Example of an Evidence and Response page for an incident":::
+:::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="Example of an Evidence and Response page for an incident.":::
 
 Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
+
+## Graph (Preview)
+
+The **Graph** tab shows the full scope of the attack, how the attack spread through your network over time, where it started, and how far the attacker went. It connects the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes. 
+
+From the **Graph** tab, you can:
+
+1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
+
+
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Example of playing the alerts and nodes on the Graph page":::
+ 
+
+2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Example of an entity pane on the Graph page":::
+
+3. Highlight the alerts based on the entity to which they are related.
+ 
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Example of an alert highlight on the Graph page":::
 
 ## Next steps
 

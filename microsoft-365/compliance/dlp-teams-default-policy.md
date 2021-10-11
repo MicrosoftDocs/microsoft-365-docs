@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -42,7 +42,7 @@ Admins can view this policy in the [Compliance center](https://compliance.micros
 
 
 > [!div class="mx-imgBorder"]
-> ![default Teams DLP policy](../media/default-teams-dlp-policy.png)
+> ![default Teams DLP policy.](../media/default-teams-dlp-policy.png)
 
 ## Edit or delete the default policy
 

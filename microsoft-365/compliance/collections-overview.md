@@ -10,7 +10,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -39,7 +39,7 @@ With the release of collections in an Advanced eDiscovery, the **Searches** tab 
 
 To get started using collections in Advanced eDiscovery, here's a basic workflow and descriptions of each step in the process.
 
-![Collections workflow in Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![Collections workflow in Advanced eDiscovery.](../media/CollectionsWorkflow.png)
 
 1. **Create and run a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case. For more information, see [Create a draft collection](create-draft-collection.md).
 

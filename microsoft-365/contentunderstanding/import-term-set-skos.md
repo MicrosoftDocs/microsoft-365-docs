@@ -10,7 +10,7 @@ ms.topic: article
 ms.service: 
 ms.collection: enabler-strategic
 search.appverid: 
-localization_priority: Priority
+ms.localizationpriority: high
 
 ---
 

@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -30,7 +30,7 @@ These controls are within following solution areas:
 - Office message encryption (OME)
 - Teams and sites access controls
 
-![Key services to protect personal information subject to data privacy regulation](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
+![Key services to protect personal information subject to data privacy regulation.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
 > This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](../compliance/index.yml).
@@ -84,7 +84,7 @@ For information on other information protection capabilities outside of Microsof
 Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
 
 > [!div class="mx-imgBorder"]
-> ![Sensitivity labels in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> ![Sensitivity labels in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### Prerequisites for sensitivity labels
 
@@ -155,7 +155,7 @@ When you're ready to start protecting your organization's data with sensitivity 
 
 Once you publish sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
 
-![Sensitivity label deployment flow in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
+![Sensitivity label deployment flow in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 For data privacy, you manually apply a sensitivity label with encryption and other rules to email or content containing sensitive personal information.
 
@@ -210,12 +210,12 @@ For example, you can identify any document containing a credit card number that'
 You can also monitor and protect sensitive items in the locally-installed versions of Excel, PowerPoint, and Word, which include the ability to identify sensitive items and apply DLP policies. DLP provides continuous monitoring when people share content from these Office apps.
 
 > [!div class="mx-imgBorder"]
-> ![Supported workloads for DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> ![Supported workloads for DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 This figure shows an example of DLP protecting personal data.
 
 > [!div class="mx-imgBorder"]
-> ![Example of protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> ![Example of protecting personal data using DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP is used to identify a document or email containing a health record and then automatically blocks access to that document or blocks the email from being sent. DLP then notifies the recipient with a policy tip and sends an alert to the end-user and admin.
 
@@ -249,11 +249,11 @@ Although sensitivity labels can’t be used in DLP policy conditions, certain pr
 DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
 
 > [!div class="mx-imgBorder"]
-> ![DLP policy configuration in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 Here is an example DLP policy for awareness of GDPR.
 
-![Example DLP policy for awareness of GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
 See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.
 
@@ -261,7 +261,7 @@ See [this article](../compliance/create-test-tune-dlp-policy.md) for more inform
 
 The following table lists three configurations of increasing protection using DLP.
 
-![Protection levels of data privacy with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Protection levels of data privacy with DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
 The first configuration, Awareness, can be used as a starting point and minimum level of protection to address compliance needs for data privacy regulations.
 
@@ -282,7 +282,7 @@ Sensitivity labels can work together with DLP to provide data privacy in a highl
 Once these elements are determined, you can use sensitive information types, your sensitivity labeling taxonomy, and DLP policies together. This figure shows an example.
 
 > [!div class="mx-imgBorder"]
-> ![Example of sensitivity labels working with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> ![Example of sensitivity labels working with DLP.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -44,7 +44,7 @@ Each alert provides the following information:
 - Malicious URL or URL in the custom indicator list
 - Recommended actions for responders
 
-![Image of an alert related to web threat protection](images/wtp-alert.png)
+![Image of an alert related to web threat protection.](images/wtp-alert.png)
 
 > [!NOTE]
 > To reduce the volume of alerts, Microsoft Defender for Endpoint consolidates web threat detections for the same domain on the same device each day to a single alert. Only one alert is generated and counted into the [web protection report](web-protection-monitoring.md).
@@ -57,7 +57,7 @@ You can dive deeper by selecting the URL or domain of the website in the alert. 
 - Incidents and alerts related to the website
 - How frequent the website was seen in events in your organization
 
-    ![Image of the domain or URL entity details page](images/wtp-website-details.png)
+    ![Image of the domain or URL entity details page.](images/wtp-website-details.png)
 
 [Learn more about URL or domain entity pages](investigate-domain.md)
 
@@ -71,10 +71,10 @@ You can also check the device that attempted to access a blocked URL. Selecting 
 
 With web protection in Microsoft Defender for Endpoint, your end users will be prevented from visiting malicious or unwanted websites using Microsoft Edge or other browsers. Because blocking is performed by [network protection](network-protection.md), they will see a generic error from the web browser. They will also see a notification from Windows.
 
-![Image of Microsoft Edge showing a 403 error and the Windows notification](images/wtp-browser-blocking-page.png)
+![Image of Microsoft Edge showing a 403 error and the Windows notification.](images/wtp-browser-blocking-page.png)
 *Web threat blocked on Microsoft Edge*
 
-![Image of Chrome web browser showing a secure connection warning and the Windows notification](images/wtp-chrome-browser-blocking-page.png)
+![Image of Chrome web browser showing a secure connection warning and the Windows notification.](images/wtp-chrome-browser-blocking-page.png)
 *Web threat blocked on Chrome*
 
 ## Related topics

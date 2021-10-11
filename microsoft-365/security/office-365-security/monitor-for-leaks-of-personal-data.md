@@ -14,7 +14,7 @@ ms.collection:
   - GDPR
   - M365-security-compliance
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn about three tools you can use to monitor for leaks of personal data.
@@ -28,13 +28,13 @@ ms.prod: m365-security
 
 There are many tools that can be used to monitor the use and transport of personal data. This topic describes three tools that work well.
 
-![Tools to monitor the use and transport of personal data](../../media/Monitor-for-leaks-of-personal-data-image1.png)
+![Tools to monitor the use and transport of personal data.](../../media/Monitor-for-leaks-of-personal-data-image1.png)
 
 In the illustration:
 
 - Start with Microsoft 365 data loss prevention reports for monitoring personal data in SharePoint Online, OneDrive for Business, and email in transit. These reports provide the greatest level of detail for monitoring personal data. However, these reports don't include all services in Office 365.
 
-- Next, use alert policies and the audit log to monitor activity across services. Set up ongoing monitoring or search the audit log to investigate an incident. The audit log works across services—Sway, Power BI, eDiscovery, Dynamics 365, Microsoft Flow, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
+- Next, use alert policies and the audit log to monitor activity across services. Set up ongoing monitoring or search the audit log to investigate an incident. The audit log works across services—Sway, Power BI, eDiscovery, Dynamics 365, Power Automate, Microsoft Teams, Admin activity, OneDrive for Business, SharePoint Online, mail in transit, and mailboxes at rest. Skype conversations are included in mailboxes at rest.
 
 - Finally, Use Microsoft Cloud App Security to monitor files with sensitive data in other SaaS providers. Coming soon is the ability to use sensitive information types and unified labels across Azure Information Protection and Office with Cloud App Security. You can set up policies that apply to all of your SaaS apps or specific apps (like Box). Cloud App Security doesn't discover files in Exchange Online, including files attached to email.
 
@@ -57,7 +57,7 @@ DLP reports are in the Microsoft 365 compliance center. Go to **Reports** \> **O
 
 For more information, see [View the reports for data loss prevention](../../compliance/view-the-dlp-reports.md).
 
-![Report showing DLP policy matches](../../media/Monitor-for-leaks-of-personal-data-image2.png)
+![Report showing DLP policy matches.](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
 ## Audit log and alert policies
 
@@ -93,7 +93,7 @@ To better understand your cloud environment, the Cloud App Security investigate 
 
 For examples, the following illustration demonstrates two Cloud App Security policies that can help with GDPR.
 
-![Example Cloud App Security policies](../../media/Monitor-for-leaks-of-personal-data-image3.png)
+![Example Cloud App Security policies.](../../media/Monitor-for-leaks-of-personal-data-image3.png)
 
 The first policy alerts when files with a predefined PII attribute or custom expression that you choose is shared outside the organization from the SaaS apps that you choose.
 
@@ -111,7 +111,7 @@ If you haven't yet started to use Cloud App Security, begin by starting it up. T
 > [!NOTE]
 > Be sure to enable 'Automatically scan files for Azure Information Protection classification labels' (in General settings) when getting started with Cloud App Security or before you assign labels. After setup, Cloud App Security does not scan existing files again until they are modified.
 
-![Dashboard showing information about alerts](../../media/Monitor-for-leaks-of-personal-data-image4.png)
+![Dashboard showing information about alerts.](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 More information:
 

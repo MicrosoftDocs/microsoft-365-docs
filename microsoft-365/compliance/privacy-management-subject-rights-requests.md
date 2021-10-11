@@ -8,21 +8,17 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - M365-privacy-management
 search.appverid: 
 - MOE150
 - MET150
-description: "The subject rights request solution in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
+description: "The subject rights request area in Microsoft privacy management helps you find personal data and collaborate on reviewing content and creating reports."
 ---
 
 # Manage subject rights requests in privacy management (preview)
-
-In this article: learn about how to use the subject rights request solution to **find personal data** in your environment, **collaborate on reviews**, create **reports**, and **automate** key tasks.
-
-## Purpose of subject rights requests
 
 Privacy management provides powerful subject rights requests capabilities to help you handle requests from people seeking to manage their personal data within your organization. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. Privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among your organization’s data in Exchange, SharePoint, OneDrive, and Teams.
 
@@ -76,7 +72,7 @@ Tiles on this page include:
 
 - **Details**: The core details about the request, including its deadline and request date, its description, and the related privacy regulation.
 - **Progress**: A timeline indicating completed steps and any tasks yet to be finished.
-- **Data estimate summary**: An overview of the data evaluated in your search. To learn more about this information, see View and edit search queries.
+- Stats about your current progress stage. This tile may show information like a data estimate summary, how many items were found in your search and their locations in Microsoft 365, or the status of your exports.
 - **Priority items to review**: If applicable, this will show information about important items that privacy management has detected for you, including confidential information already bearing a Microsoft sensitivity label, or items with data about multiple individuals that may require redaction. Priority items can be found under Data collected by filtering by the “Priority Types” column.
 
 ### Monitor progress and complete requests
@@ -101,7 +97,7 @@ At this stage, your contributors should review the findings under the Data colle
 
 - Choose whether to include the identified items in your summaries and/or exports. If a reported match is not required in the export or report, select the option to "Exclude." If the content appears to be a false positive, you can choose "Not a match" to both exclude the file from your final reports and flag the item as something that should not have been picked up by the request. To set an item's status, use the action menu (vertical ellipses) beside its name and select your desired choice. If prompted, add a note for internal reference to explain your decision. Notes are required when excluding files.
 - Use the **Apply tags** option to help you identify items that need attention. The available tags include options provided by the system, for instance tagging an item for follow-up, and may include custom tags as defined under Settings.
-- Use **Annotate** to create inline mark-ups or redactions on a selected file. For example, if you need to include a file for an individual that also contains the personal information of others, you can use **Area redaction** (under the Drawing button in the command bar) to black out all information that does not pertain to the person who made the request. When your edits are complete, select Include to add the redacted file to the request. Note that annotation creates a copy of the file, so that nothing in the original file is altered and will remain in its original location. The copy is stored in your Azure blob and will remain for the duration of your stated data retention period. For more information, see [Data retention](#data-retention) below.
+- Use **Annotate** to create inline mark-ups or redactions on a selected file. For example, if you need to include a file for an individual that also contains the personal information of others, you can use **Area redaction** (under the Drawing button in the command bar) to black out all information that does not pertain to the person who made the request. When your edits are complete, select Include to add the redacted file to the request. Note that annotation creates a copy of the file, so that nothing in the original file is altered and will remain in its original location. The copy is stored in your Azure blob.
 - To review notes on an item, select it and go to the File Notes tab. You can also use the Add file note option to create a new comment. To review or add notes at an overall case level, go to the main Notes tab above and use **Add case note**. These notes will be visible to users working on the request, but will not be included in the final report or otherwise shared with the data subject.
 
 When all items have been reviewed and their statuses set, select **Complete review** to open a flyover pane where you can review a summary of the data and add any relevant notes. These notes are for internal record keeping and aren’t shared with the data subject. Select Complete review again to move on to the next stage. Summaries of your decisions will be provided later under the Reports tab.
@@ -116,15 +112,11 @@ When you have performed the necessary actions to resolve your subject rights req
 
 ### View and edit search queries
 
-To see detailed information about the data search behind a subject rights request, select **View search query details** from the data estimate summary card. This opens a pane summarizing the query and showing further details about what was found.
+To see detailed information about the data search behind a subject rights request, select **View search query details**. This opens a pane summarizing the query and showing further details about what was found.
 
 You will have the option here to **Preview search results** to see what type of content will be returned for this query. If you determine that you would like to change the properties of this search, and you have not begun the Retrieve Data phase, you can use the **Edit search query** option. This wizard offers the ability to change or add properties for data subject identification, your search filters and conditions, and the locations in which to look for data (including Exchange, SharePoint, OneDrive, and/or Teams). Use these options to reach your desired level of specificity. You can review the final version of your new query before hitting **Save**.
 
 When you finish editing your search query, a new search will run to replace your previous search results. This resets your status in the Progress section to the first step, **Data estimate**. The new search may take up to 60 minutes to complete. Once it’s done, you’ll see updated results on the request’s details page.
-
-### Data retention
-
-Reports generated through this tool and the associated data, such as annotated files saved in Azure, are stored for a specified length of time. This duration is defined at a global level through **Settings** in the **Data retention periods** section, which allow you to choose between 30 and 90 days. To learn more, see [Get started with privacy management](privacy-management-setup.md).
 
 ## Collaborate on requests with Teams
 

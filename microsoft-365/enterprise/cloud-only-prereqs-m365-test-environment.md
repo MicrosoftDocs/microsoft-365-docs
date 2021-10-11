@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -40,7 +40,7 @@ There are eight phases to setting up this test environment:
 Follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
 Here is the resulting configuration.
 
-![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The lightweight Microsoft 3656 Enterprise test environment.](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
 ## Phase 2: Configure named locations
 

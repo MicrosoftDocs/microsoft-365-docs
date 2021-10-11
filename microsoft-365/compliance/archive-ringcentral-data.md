@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive RingCentral data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, eDiscovery, and retention policies to manage third-party data."
 ---
@@ -24,7 +24,7 @@ After RingCentral data is stored in user mailboxes, you can apply Microsoft 365 
 
 The following overview explains the process of using a connector to archive the RingCentral data in Microsoft 365.
 
-![Archiving workflow for RingCentral data](../media/RingCentralConnectorWorkflow.png)
+![Archiving workflow for RingCentral data.](../media/RingCentralConnectorWorkflow.png)
 
 1. Your organization works with RingCentral to set up and configure a RingCentral site.
 

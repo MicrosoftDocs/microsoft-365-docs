@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -34,14 +34,14 @@ In the next step name your payload. Optionally, you can give it a description.
 
 ## Configure payload
 
-Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
+Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. You can select a language in which the payload will be configured. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
 
 > [!TIP]
 > You can choose an internal email for your payload's sender, which will make the payload appear as coming from another employee of the company. This will increase susceptibility to the payload and will help educate employees on the risk of internal threats.
 
 A rich text editor is available to create your payload. You can also import an email that you've created beforehand. As you create the body of the email, take advantage of the **dynamic tags** to personalize the email to your targets. Click **Phishing link** to add the previously selected phishing URL into the body of the message.
 
-![Phishing link and dynamic tags highlighted in payload creation for Microsoft Defender for Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Phishing link and dynamic tags highlighted in payload creation for Microsoft Defender for Office 365.](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > To save time, toggle on the option to **replace all links in the email message with the phishing link**.
@@ -54,7 +54,7 @@ Indicators will help employees going through the attack simulation understand th
 
 Select an indicator you'd like to use from the drop-down list. This list is curated to contain the most common clues that appear in phishing email messages. Once selected, make sure the indicator placement is set to **From the body of the email** and click on **Select text**. Highlight the portion of your payload where this indicator appears and click **Select**.
 
-![Highlighted text in message body to add to an indicator in attack simulation training](../../media/attack-sim-preview-select-text.png)
+![Highlighted text in message body to add to an indicator in attack simulation training.](../../media/attack-sim-preview-select-text.png)
 
 Add a custom description to describe the indicator and click within the indicator preview frame to see a preview of your indicator. Once done, click **Add**. Repeat these steps until you've covered all indicators in your payload.
 

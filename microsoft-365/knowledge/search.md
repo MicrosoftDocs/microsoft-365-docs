@@ -8,7 +8,7 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how to search for topics in Microsoft Viva Topics.
 ---
 
@@ -28,7 +28,7 @@ The topic answer will display:
 - Suggested or Pinned people: People suggested by AI or pinned to the topic by a person
 - Suggested or Pinned resources: Files, pages, or sites either suggested by AI or pinned to the topic by a person. 
 
-   ![Topic in Search](../media/knowledge-management/search-topic-answer.png) 
+   ![Topic in Search.](../media/knowledge-management/search-topic-answer.png) 
 
 The topic page can display in the search results even if the topic answer card doesn't appear.
 

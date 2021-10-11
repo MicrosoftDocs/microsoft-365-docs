@@ -6,15 +6,16 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/11/2021
+ms.date: 08/31/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Deployment guide for Microsoft Defender Antivirus in a virtual desktop infrastructure (VDI) environment
@@ -25,7 +26,7 @@ ms.technology: mde
 
 In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-See [Windows Virtual Desktop Documentation](/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
+See [Azure Virtual Desktop Documentation](/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
 
 For Azure-based virtual machines, see [Install Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
 
@@ -60,7 +61,7 @@ In Windows 10, version 1903, we introduced the shared security intelligence feat
 
 3. Click **Administrative templates**.
 
-4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
+4. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 5. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.
 
@@ -106,7 +107,7 @@ Security intelligence packages are typically published once every three to four 
 
 1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task...** on the side panel.
 
-2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Select **New...** > **Daily**, and select **OK**.
+2. Enter the name as **Security intelligence unpacker**. Go to the **Trigger** tab. Select **New...** \> **Daily**, and select **OK**.
 
 3. Go to the **Actions** tab. Select **New...** Enter **PowerShell** in the **Program/Script** field. Enter `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` in the **Add arguments** field. Select **OK**.
 
@@ -148,7 +149,7 @@ See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) f
 
 You can specify the type of scan that should be performed during a scheduled scan. Quick scans are the preferred approach as they are designed to look in all places where malware needs to reside to be active. The following procedure describes how to set up quick scans using Group Policy.
 
-1. In your Group Policy Editor, go to **Administrative templates** > **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
+1. In your Group Policy Editor, go to **Administrative templates** \> **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Select **Specify the scan type to use for a scheduled scan** and then edit the policy setting.
 
@@ -162,7 +163,7 @@ You can specify the type of scan that should be performed during a scheduled sca
 
 Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist across multiple sessions. In order to minimize this problem, you can lock down the Microsoft Defender Antivirus user interface. The following procedure describes how to suppress notifications with Group Policy.
 
-1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Client Interface**.
+1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
 
 2. Select **Suppress all notifications** and then edit the policy settings.
 
@@ -186,7 +187,7 @@ Disabling a scan after an update will prevent a scan from occurring after receiv
 > [!IMPORTANT]
 > Running scans after an update will help ensure your VMs are protected with the latest Security intelligence updates. Disabling this option will reduce the protection level of your VMs and should only be used when first creating or deploying the base image.
 
-1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Security Intelligence Updates**.
+1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 2. Select **Turn on scan after security intelligence update** and then edit the policy setting.
 
@@ -200,7 +201,7 @@ This policy prevents a scan from running immediately after an update.
 
 ## Scan VMs that have been offline
 
-1. In your Group Policy Editor, go to to **Windows components** > **Microsoft Defender Antivirus** > **Scan**.
+1. In your Group Policy Editor, go to to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Select **Turn on catch-up quick scan** and then edit the policy setting.
 
@@ -214,7 +215,7 @@ This policy forces a scan if the VM has missed two or more consecutive scheduled
 
 ## Enable headless UI mode
 
-1. In your Group Policy Editor, go to **Windows components** > **Microsoft Defender Antivirus** > **Client Interface**.
+1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Client Interface**.
 
 2. Select **Enable headless UI mode** and edit the policy.
 

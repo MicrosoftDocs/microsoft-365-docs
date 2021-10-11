@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive SMS, MMS, and voice calls from Android mobile phones. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
@@ -24,7 +24,7 @@ After data from Android mobile phones is stored in user mailboxes, you can apply
 
 The following overview explains the process of using a connector to archive Android mobile data in Microsoft 365.
 
-![Android Archiver connector workflow](../media/AndroidArchiverConnectorWorkflow.png)
+![Android Archiver connector workflow.](../media/AndroidArchiverConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up an Android Archiver connector. For more information, see [Android Archiver](https://www.telemessage.com/office365-activation-for-android-archiver/).
 

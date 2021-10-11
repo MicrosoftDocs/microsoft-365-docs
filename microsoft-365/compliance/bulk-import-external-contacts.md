@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
@@ -116,9 +116,9 @@ After you run the command in Step 2, the external contacts are created, but they
     
 4. To verify that the properties were added to the contacts: 
     
-1. In the EAC, go to **Recipients** \> **Contacts**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Contacts**.
     
-2. Click a contact and then click **Edit** ![Edit icon](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
+2. Click a contact and then click **Edit** ![Edit icon.](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) to display the contact's properties. 
     
 That's it! Users can see the contacts and the additional information in the address book Outlook and Outlook on the web.
   

@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
@@ -28,7 +28,7 @@ The following section describes the capabilities, recommends best practices, and
 
 Groups can be created by end-users from multiple end-points including Outlook, SharePoint, Teams, and other environments.
 
-![image desc](../media/04.png)
+![image desc.](../media/04.png)
 
 We highly recommend self-service to empower group owners and help users get their work done more easily. Limiting group and team creation can slow users productivity because many Microsoft 365 services require that groups be created for the service to function.
 

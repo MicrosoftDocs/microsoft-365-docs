@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -45,7 +45,7 @@ While constructing queries, use the built-in schema reference to quickly get the
 
 To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
 
-![Image showing how to access in-portal schema reference](images/ah-reference.png)
+![Image showing how to access in-portal schema reference.](images/ah-reference.png)
 
 ## Learn the schema tables
 

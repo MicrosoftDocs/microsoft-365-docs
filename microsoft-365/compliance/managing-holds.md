@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -17,9 +17,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 description: Learn how to place holds on custodians and their data sources to preserve relevant content for your Advanced eDiscovery case.
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+- seo-marvel-mar2020
+- admindeeplinkMAC
 ---
 
 # Manage holds in Advanced eDiscovery
@@ -50,7 +51,7 @@ When you create a hold, you have the following options to scope the content that
 
 To create a non-custodial hold for an Advanced eDiscovery case:
 
-1. In the Microsoft 365 compliance center, click **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, click **eDiscovery > Advanced** to display the list of cases in your organization.
   
 2. Click **Open** next to the case that you want to create the holds in.
   
@@ -133,7 +134,7 @@ Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold 
 
  - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place an Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you the need to place an Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in Advanced eDiscovery). If the Microsoft 365 Group or Microsoft Team is not attributable to a single custodian, consider adding the source to a non-custodial hold. 
  
- - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the Home > Groups page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+ - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
    ```powershell
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

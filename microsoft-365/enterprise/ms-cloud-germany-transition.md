@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -16,6 +16,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: Understand the migration from Microsoft Cloud Germany (Microsoft Cloud Deutschland) to Office 365 services in the new German datacenter region."
 ---
@@ -58,9 +59,9 @@ Office 365 Video is being retired on March 1, 2021. If you choose to migrate you
 
 This figure shows the ten phases of migration to the new German datacenters.
 
-:::image type="content" alt-text="The ten phases of migration to the new Germany datacenters" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
+:::image type="content" alt-text="The ten phases of migration to the new Germany datacenters." source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
-These phases start when you [opt-in for migration](./ms-cloud-germany-migration-opt-in.md). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the Microsoft 365 admin center during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
+These phases start when you [opt-in for migration](./ms-cloud-germany-migration-opt-in.md). Most of the migration phases are executed as back-end service operations with minimal customer interaction required and are executed one phase after the other. The start for additional customer-led tasks and overall migration status will be communicated through the Message center of the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> during the migration process. Example of tasks may include customer-managed DNS updates, reconfiguration of hybrid setup for Exchange hybrid customers, or Azure migration.
 
 Migration does not immediately begin when opt-in occurs. Your organization is added to the list of tenants that are scheduled for later migration. You can begin the pre-work phases now as these are critical to ensure successful migration and usage upon completion:
 
@@ -91,7 +92,7 @@ After the final cutover of Azure AD to the worldwide service, it is expected all
 
 ## Moving to the new German datacenter regions
 
-Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform services. The first step is to [opt-in to a Microsoft-led migration](./ms-cloud-germany-migration-opt-in.md) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the Microsoft 365 admin center when this has happened. However, if you prefer to start the process now, you can [opt-in](./ms-cloud-germany-migration-opt-in.md) directly in Microsoft 365 admin center today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
+Existing Microsoft Cloud Deutschland customers can now begin to migrate their Office 365, Dynamics 365 Customer Engagement, and Power Platform services. The first step is to [opt-in to a Microsoft-led migration](./ms-cloud-germany-migration-opt-in.md) to our new German datacenter regions. When you renew your subscription, you automatically opt-in for a Microsoft-assisted migration. Microsoft will notify customer tenant administrators with e-mail and in the Message center of the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> when this has happened. However, if you prefer to start the process now, you can [opt-in](./ms-cloud-germany-migration-opt-in.md) directly in <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> today. Migrations are expected to begin in early 2021 and will be completed by October 29, 2021. 
 
 As a result of the migration, core customer data and subscriptions are moved to the new German datacenter regions.
 

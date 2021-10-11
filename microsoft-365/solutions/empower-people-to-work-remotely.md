@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -33,7 +33,7 @@ Hybrid workers can work on-site or remotely in a combination of locations. Allow
 
 Microsoft 365 has the capabilities to empower your hybrid workers to work either on-site or remotely.
 
-![Empower your hybrid workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
+![Empower your hybrid workers with Microsoft 365.](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 > [!NOTE]
 > If you are new to Microsoft 365, see [these resources](https://www.microsoft.com/microsoft-365).
@@ -73,7 +73,7 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
-![The basic infrastructure for hybrid workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![The basic infrastructure for hybrid workers with Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 To enable the capabilities of Microsoft 365 for your hybrid workers, use these Microsoft 365 features.
 
@@ -81,7 +81,7 @@ To enable the capabilities of Microsoft 365 for your hybrid workers, use these M
 |---|---|---|
 |MFA enforced with security defaults|Protect against compromised identities and devices by requiring a second form of authentication for sign-ins. Security defaults requires MFA for all user accounts.|Microsoft 365 E3 or E5|
 |MFA enforced with Conditional Access|Require MFA based on the properties of the sign-in with Conditional Access policies.|Microsoft 365 E3 or E5|
-|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Microsoft Defender for Identity.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
+|MFA enforced with risk-based Conditional Access|Require MFA based on the risk of the user sign-in with Azure AD Identity Protection.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
 |Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
 |Azure AD Application Proxy|Provide secure remote access for web-based applications hosted on intranet servers.|Requires separate paid Azure subscription|
 |Azure Point-to-Site VPN|Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.|Requires separate paid Azure subscription|
@@ -100,7 +100,7 @@ For security and compliance criteria, see [Deploy security and compliance for re
 <a name="poster"></a>
 For a 2-page summary of this solution, see the [Empower hybrid workers poster](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf).
 
-[![Empower hybrid workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
+[![Empower hybrid workers poster.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
 You can also download this poster in [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) format and print it on letter, legal, or tabloid (11 x 17) size paper.
 
@@ -123,6 +123,6 @@ Use these steps to secure and optimize access to your organization's servers and
 5. [Deploy hybrid worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train your workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![The steps to set up your infrastructure for hybrid work with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![The steps to set up your infrastructure for hybrid work with Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 To see how a fictional but representative multi-national organization set up its infrastructure for hybrid work, see [Contoso's COVID-19 response and infrastructure for hybrid work](contoso-remote-onsite-work.md).

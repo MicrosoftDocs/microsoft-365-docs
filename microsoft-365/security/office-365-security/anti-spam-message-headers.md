@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
@@ -70,7 +70,7 @@ The individual fields and values are described in the following table.
 |`LANG`|The language in which the message was written, as specified by the country code (for example, ru_RU for Russian).|
 |`PTR:[ReverseDNS]`|The PTR record (also known as the reverse DNS lookup) of the source IP address.|
 |`SCL`|The spam confidence level (SCL) of the message. A higher value indicates the message is more likely to be spam. For more information, see [Spam confidence level (SCL)](spam-confidence-levels.md).|
-|`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or [a protected user that's specified in an anti-phishing policy](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Microsoft Defender for office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li></ul>|
+|`SFTY`|The message was identified as phishing and will also be marked with one of the following values: <ul><li>9.19: Domain impersonation. The sending domain is attempting to [impersonate a protected domain](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). The safety tip for domain impersonation is added to the message (if it's enabled).</li><li>9.20: User impersonation. The sending user is attempting to impersonate a user in the recipient's organization, or [a protected user that's specified in an anti-phishing policy](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Microsoft Defender for Office 365. The safety tip for user impersonation is added to the message (if it's enabled).</li></ul>|
 |`SFV:BLK`|Filtering was skipped and the message was blocked because it was sent from an address in a user's Blocked Senders list. <p> For more information about how admins can manage a user's Blocked Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:NSPM`|Spam filtering marked the message as non-spam and the message was sent to the intended recipients.|
 |`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|

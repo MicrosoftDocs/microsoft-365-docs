@@ -1,6 +1,6 @@
 ---
-title: List software version distribution 
-description: Retrieves a list of your organization's software version distribution 
+title: List software version distribution
+description: Retrieves a list of your organization's software version distribution
 keywords: apis, graph api, supported apis, get, software version distribution, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dolmont
 author: DulceMontemayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
 ---
 
-# List software version distribution 
+# List software version distribution
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Retrieves a list of your organization's software version distribution. 
+Retrieves a list of your organization's software version distribution.
 
 ## Permissions
 
@@ -61,7 +61,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK with a list of software distributions data in the body. 
+If successful, this method returns 200 OK with a list of software distributions data in the body.
 
 ## Example
 

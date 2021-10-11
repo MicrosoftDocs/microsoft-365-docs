@@ -8,23 +8,24 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: admindeeplinkMAC
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: "Set up SharePoint Syntex"
 ---
 
 # Set up SharePoint Syntex
 
-Admins can use the Microsoft 365 admin center to set up [Microsoft SharePoint Syntex](index.md). 
+Admins can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to set up [Microsoft SharePoint Syntex](index.md). 
 
 Consider the following before you start:
 
 - In which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - What will you name your default content center?
 
-You can change your settings after initial setup in the Microsoft 365 admin center.
+You can change your settings after initial setup in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make the following decisions:
 
@@ -36,7 +37,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 > [!NOTE]
 > You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up SharePoint Syntex.
 
-As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the Microsoft 365 Admin Center.
+As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 If you plan to use a custom Power Platform environment, you must [install the *AI Builder for Project Cortex* app in this environment](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) and [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to it before you can create form processing models.
 
@@ -50,16 +51,18 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
 
 To use form processing, you also need AI Builder credits. If you have 300 or more licensed users, an allocation of AI Builder credits is provided each month.
 
+For details about SharePoint Syntex licensing, see [SharePoint Syntex licensing](syntex-licensing.md)
+
 ## To set up SharePoint Syntex
 
-1. In the Microsoft 365 admin center, select **Setup**, and then view the **Files and content** section.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
 2. In the **Files and content** section, select **Automate content understanding**. Note that your current AI Builder credit availability is shown in the **At a glance** section.<br/>
 
 3. On the **Automate content understanding** page, click **Get started** to walk through the setup process. <br/>
 
     > [!div class="mx-imgBorder"]
-    > ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > ![Begin setup.](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
@@ -69,14 +72,14 @@ To use form processing, you also need AI Builder credits. If you have 300 or mor
       - **No SharePoint libraries** if you don't want to make it available to any sites (you can change this after setup).
 
    > [!div class="mx-imgBorder"]
-   > ![Configure form processing site options](../media/content-understanding/admin-configforms.png)
+   > ![Configure form processing site options.](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Removing a site after it has been included does not affect existing models applied to the libraries in that site or the ability to apply document understanding models to a library. 
     
     If you have multiple Power Platform environments configured, you can choose which one you want to use with for form processing. (This option will not appear if you only have one environment.)
 
-    ![Configure form processing Power Platform options](../media/content-understanding/setup-power-platform-env.png)
+    ![Configure form processing Power Platform options.](../media/content-understanding/setup-power-platform-env.png)
 
     For **Power Platform environment**, you can select:
     - **Use the default environment** to use your default Power Platform environment.
@@ -91,7 +94,7 @@ To use form processing, you also need AI Builder credits. If you have 300 or mor
     1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
-       > ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
+       > ![Create content center.](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        Select **Next**.
 
@@ -107,7 +110,7 @@ Once you have configured SharePoint Syntex, you must assign licenses for the use
 
 To assign licenses:
 
-1. In the Microsoft 365 admin center, under **Users**, click **Active users**.
+1. In the Microsoft 365 admin center, under **Users**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 2. Select the users that you want to license, and choose **Manage product licenses**.
 
@@ -116,7 +119,7 @@ To assign licenses:
 4. Select **Show apps for  SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
-    > ![SharePoint Syntex licenses in the Microsoft 365 admin center](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > ![SharePoint Syntex licenses in the Microsoft 365 admin center.](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. Click **Save changes**.
 

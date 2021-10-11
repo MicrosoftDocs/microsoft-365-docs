@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 search.appverid:
@@ -80,17 +80,17 @@ The new alerts will begin firing, and triggering the AIR investigations in your 
 
   - **Email messages containing malware removed after delivery** AND **Email messages containing malicious file removed after delivery**
 
-  ![Alert pairs for new and existing alerts](../media/DefenderAlerts.png)
+  ![Alert pairs for new and existing alerts.](../media/DefenderAlerts.png)
 
    For more information about managing these alert pairs, see the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.
 
 - **AIR Investigations**: Alerts will be correlated into a single AIR Investigation, with one of the alerts classified as "triggering" and the other as "repeated".
 
-  ![Alert pairs in AIR Investigations](../media/AIRAlerts.png)
+  ![Alert pairs in AIR Investigations.](../media/AIRAlerts.png)
 
 - **Incidents**: Both alerts will correlate into the same Incident
 
-  ![Alert pairs in Incidents](../media/IncidentsAlerts.png)
+  ![Alert pairs in Incidents.](../media/IncidentsAlerts.png)
 
 ## What you need to do to prepare for these changes
 

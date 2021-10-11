@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -39,6 +39,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
 - Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
+- Windows 11 Enterprise E5 or A5
 - Enterprise Mobility + Security (EMS) E5 or A5 
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
@@ -54,7 +55,7 @@ For more information, [view the Microsoft 365 Enterprise service plans](https://
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
 
 >[!NOTE]
-> You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information. If you encounter access problems, contact a global admin.
+> You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](/azure/active-directory/roles/permissions-reference) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).

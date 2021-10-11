@@ -4,7 +4,7 @@ description:  This article lists the technologies and apps used in Microsoft Man
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -59,7 +59,7 @@ Microsoft Defender Tamper Protection | Windows Tamper Protection is used to prev
 Microsoft Defender Antivirus Behavior-based, heuristic, and real-time antivirus protection | Always on scanning for file and process threats which may not be detected as malware. For more information, see [Microsoft Defender Antivirus Behavior-based, heuristic, and real-time antivirus protection](../../security/defender-endpoint/microsoft-defender-antivirus-in-windows-10.md).
 Microsoft Defender Antivirus Cloud-delivered Protection | Provides dynamic near-instant, automated protection against new and emerging threats. For more information, see [Microsoft Defender Antivirus Cloud-delivered Protection](/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus).
 Microsoft Defender "Block at first sight" | Provides detection and blocking of new malware when Windows detects a suspicious or unknown file. For more information, see [Microsoft Defender Block at first sight](/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus).
-Microsoft Defender AV Potentially Unwanted Applications | Potentially unwanted applications is used to block apps that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. For more information, see [Microsoft Defender AV Potentially Unwanted Applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+Microsoft Defender Antivirus Potentially Unwanted Applications | Potentially unwanted applications is used to block apps that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. For more information, see [Microsoft Defender Antivirus Potentially Unwanted Applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 Windows Defender Firewall with Advanced Security | Host-based, two-way network traffic filtering for a device, Windows Defender Firewall blocks unauthorized network traffic flowing into or out of the local device. For more information, see [Windows Defender Firewall with Advanced Security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 User Account Control | User Account Control switches to the Secure Desktop when a task or action requires the administrator account-type access. Microsoft Managed Desktop users are assigned Standard user access at enrollment. For more information, see [User Account Control](/windows/security/identity-protection/user-account-control/how-user-account-control-works).
 

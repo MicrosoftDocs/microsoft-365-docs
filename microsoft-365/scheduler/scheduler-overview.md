@@ -6,7 +6,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Overview of Scheduler for Microsoft 365."
 ---
 
@@ -50,7 +50,7 @@ After a user sends a meeting request to Cortana, the Scheduler service:
 
 ## Pricing and licensing
 
-Learn more:  [Scheduler for Microsoft 365 licensing](https://wwww.microsoft.com/microsoft-365/meeting-scheduler-pricing)
+Learn more:  [Scheduler for Microsoft 365 licensing](https://www.microsoft.com/microsoft-365/meeting-scheduler-pricing)
 
 >[Note: 
 >Meeting attendees do not need a Scheduler or Microsoft 365 license. <br>The Scheduler assistant mailbox does not require a Microsoft 365 or a Scheduler license.

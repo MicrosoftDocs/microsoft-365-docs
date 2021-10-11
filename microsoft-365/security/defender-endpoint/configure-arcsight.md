@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -33,8 +33,8 @@ You'll need to install and configure some files and tools to use Micro Focus Arc
 
 > [!NOTE]
 >
->- [Defender for Endpoint Alert](alerts.md) is composed from one or more detections
->- [Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+> - [Defender for Endpoint Alert](alerts.md) is composed from one or more detections
+> - [Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
 
 ## Before you begin
 
@@ -50,6 +50,7 @@ This section guides you in getting the necessary information to set and use the 
   - OAuth 2.0 Client secret
 
 - Have the following configuration files ready:
+- 
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
@@ -80,7 +81,6 @@ The following steps assume that you have completed all the required steps in [Be
 3. Open File Explorer and locate the two configuration files you saved when you enabled the SIEM integration feature. Put the two files in the FlexConnector installation location, for example:
 
    - WDATP-connector.jsonparser.properties: C:\\*folder_location*\current\user\agent\flexagent\
-
    - WDATP-connector.properties: C:\\*folder_location*\current\user\agent\flexagent\
 
    > [!NOTE]
@@ -99,7 +99,7 @@ The following steps assume that you have completed all the required steps in [Be
    |Field|Value|
    |---|---|
    |Configuration File|Type in the name of the client property file. The name must match the file provided in the .zip that you downloaded. <p> For example, if the configuration file in "flexagent" directory is named "WDATP-Connector.jsonparser.properties", you must type "WDATP-Connector" as the name of the client property file.|
-   |Events URL|Depending on the location of your datacenter, select either the EU or the US URL: <ul><li>**For EU**:  `https://<i></i>wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**For US**: `https://<i></i>wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**For UK**: `https://<i></i>wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
+   |Events URL|Depending on the location of your datacenter, select either the EU, the US, or the UK URL: <ul><li>**For EU**:  `https://wdatp-alertexporter-eu.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**For US**: `https://wdatp-alertexporter-us.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li><li>**For UK**: `https://wdatp-alertexporter-uk.windows.com/api/alerts/?sinceTimeUtc=$START_AT_TIME`</li></ul>|
    |Authentication Type|OAuth 2|
    |OAuth 2 Client Properties file|Browse to the location of the *wdatp-connector.properties* file. The name must match the file provided in the .zip that you downloaded.|
    |Refresh Token|You can obtain a refresh token in two ways: by generating a refresh token from the **SIEM settings** page or using the restutil tool. <p> For more information on generating a refresh token from the **Preferences setup** , see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md). <p> **Get your refresh token using the restutil tool**: <ol><li>Open a command prompt. Navigate to C:\\*folder\_location*\current\bin where *folder\_location* represents the location where you installed the tool.</li><li>Type: `arcsight restutil token -config` from the bin directory. For example: **arcsight restutil boxtoken -proxy proxy.location.hp.com:8080**. A Web browser window will open.</li><li>Type in your credentials then click on the password field to let the page redirect. In the login prompt, enter your credentials.</li><li>A refresh token is shown in the command prompt.</li><li>Copy and paste it into the **Refresh Token** field.|
@@ -107,9 +107,9 @@ The following steps assume that you have completed all the required steps in [Be
 
 7. A browser window is opened by the connector. Login with your application credentials. After you log in, you'll be asked to give permission to your OAuth2 Client. You must give permission to your OAuth 2 Client so that the connector configuration can authenticate.
 
-   If the <code>redirect_uri</code> is a https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirect_uri is a https.
+   If the `redirect_uri` is an https URL, you'll be redirected to a URL on the local host. You'll see a page that requests for you to trust the certificate supplied by the connector running on the local host. You'll need to trust this certificate if the redirect_uri is a https.
 
-   If however you specify a http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
+   If however you specify an http URL for the redirect_uri, you do not need to provide consent in trusting the certificate.
 
 8. Continue with the connector setup by returning to the Micro Focus ArcSight Connector Setup window.
 
@@ -155,7 +155,7 @@ The following steps assume that you have completed all the required steps in [Be
 
 8. Login to the Micro Focus ArcSight console.
 
-9. Navigate to **Active channel set** > **New Condition** > **Device** > **Device Product**.
+9. Navigate to **Active channel set** \> **New Condition** \> **Device** \> **Device Product**.
 
 10. Set **Device Product = Microsoft Defender ATP**. When you've verified that events are flowing to the tool, stop the process again and go to Windows Services and start the ArcSight FlexConnector REST.
 
@@ -176,9 +176,12 @@ Defender for Endpoint detections will appear as discrete events, with "Microsoft
 1. Stop the process by clicking Ctrl + C on the Connector window. Click **Y** when asked "Terminate batch job Y/N?".
 
 2. Navigate to the folder where you stored the WDATP-connector.properties file and edit it to add the following value:
+
    `reauthenticate=true`.
 
-3. Restart the connector by running the following command: `arcsight.bat connectors`.
+3. Restart the connector by running the following command:
+
+   `arcsight.bat connectors`.
 
    A browser window appears. Allow it to run, it should disappear, and the connector should now be running.
 

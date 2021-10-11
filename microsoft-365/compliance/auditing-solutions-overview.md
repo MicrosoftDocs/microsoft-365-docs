@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -29,7 +29,7 @@ Microsoft 365 auditing solutions provide an integrated solution to help organiza
 
 Microsoft 365 provides two auditing solutions: Basic Audit and Advanced Audit.
 
-![Key capabilities of Basic Audit and Advanced Audit](..\media\AuditingSolutionsComparison.png)
+![Key capabilities of Basic Audit and Advanced Audit.](..\media\AuditingSolutionsComparison.png)
 
 ### Basic Audit
 
@@ -39,7 +39,7 @@ Basic Audit provides with you with the ability to log and search for audited act
 - **Thousands of searchable audit events**. You can search for a wide-range of audited activities that occur is most of the Microsoft 365 services in your organization. For a partial list of the activities you can search for, see [Audited activities](search-the-audit-log-in-security-and-compliance.md#audited-activities). For a list of the services and features that support audited activities, see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).
 - **Audit search tool in the Microsoft 365 compliance center**. Use the Audit log search tool in the Microsoft 365 compliance center to search for audit records. You can search for specific activities, for activities performed by specific users, and activities that occurred with a date range. Here's a screenshot of the Audit search tool in the compliance center.
 
-   ![Audit log search tool in the Microsoft 365 compliance center](../media/AuditLogSearchToolMCC.png)
+   ![Audit log search tool in the Microsoft 365 compliance center.](../media/AuditLogSearchToolMCC.png)
 
 - **Search-UnifiedAuditLog cmdlet**. You can also use the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell (the underlying cmdlet for the search tool) to search for audit events or to use in a script. For more information, see:
 
@@ -72,14 +72,14 @@ The following table compares the key capabilities available in Basic Audit and A
 
 |Capability|Basic Audit|Advanced Audit|
 |:------|:-------------|:-------------|
-|Enabled by default|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Thousands of searchable audit events|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Audit search tool in the Microsoft 365 compliance center|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Search-UnifiedAuditLog cmdlet|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Export audit records to CSV file|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|Access to audit logs via Office 365 Management Activity API <sup>1</sup>|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)</sup>|
-|90-day audit log retention|![Supported](../media/check-mark.png)|![Supported](../media/check-mark.png)|
-|1-year audit log retention||![Supported](../media/check-mark.png)|
+|Enabled by default|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Thousands of searchable audit events|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Audit search tool in the Microsoft 365 compliance center|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Search-UnifiedAuditLog cmdlet|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Export audit records to CSV file|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|Access to audit logs via Office 365 Management Activity API <sup>1</sup>|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)</sup>|
+|90-day audit log retention|![Supported.](../media/check-mark.png)|![Supported.](../media/check-mark.png)|
+|1-year audit log retention||![Supported.](../media/check-mark.png)|
 |10-year audit log retention <sup>2</sup>||![Supported](../media/check-mark.png)|
 |Audit log retention policies||![Supported](../media/check-mark.png)|
 |High-value, crucial events||![Supported](../media/check-mark.png)|
@@ -98,6 +98,7 @@ The following sections identify the licensing requirements for Basic Audit and A
 - Microsoft 365 Education A3 subscription
 - Microsoft 365 Government G3 subscription
 - Microsoft 365 Government G1 subscription
+- Microsoft 365 Frontline F1 or F3 subscription, or F5 Security add-on
 - Office 365 Enterprise E3 subscription
 - Office 365 Enterprise E1 subscription
 - Office 365 Education A1 subscription
@@ -114,6 +115,7 @@ The following sections identify the licensing requirements for Basic Audit and A
 - Microsoft 365 Government G5 subscription
 - Microsoft 365 Government G5 subscription + the Microsoft 365 G5 Compliance add-on
 - Microsoft 365 Government G5 subscription + the Microsoft 365 G5 eDiscovery and Audit add-on
+- Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on
 - Office 365 Enterprise E5 subscription
 - Office 365 Education A5 subscription
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
@@ -126,7 +128,7 @@ To get started using the auditing solutions in Microsoft 365, see the following 
 
 The first step is to set up Basic Audit and then start running audit log searches.
 
-![Workflow to set up Basic Audit](../media/BasicAuditingWorkflow.png)
+![Workflow to set up Basic Audit.](../media/BasicAuditingWorkflow.png)
 
 1. Verify that your organization has a subscription that supports Basic Audit and if applicable, a subscription that supports Advanced Audit.
 
@@ -140,7 +142,7 @@ For more detailed instructions, see [Set up Basic Audit](set-up-basic-audit.md).
 
 If your organization has a subscription that supports Advanced Audit, perform the following steps to set up and use the additional capabilities in Advanced Audit.
 
-![Workflow to set up Advanced Audit](../media/AdvancedAuditWorkflow.png)
+![Workflow to set up Advanced Audit.](../media/AdvancedAuditWorkflow.png)
 
 1. Set up Advanced Audit for users. This step consists of the following tasks:
 
