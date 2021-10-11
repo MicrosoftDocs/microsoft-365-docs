@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
@@ -46,4 +46,4 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 |
 
 > [!NOTE]
-> Data from submissions to Microsoft resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters.
+> Data from submissions to Microsoft resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters. The submission is considered feedback to help improve the filters and is kept for a period of 30 days. After which, it is deleted.

@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"

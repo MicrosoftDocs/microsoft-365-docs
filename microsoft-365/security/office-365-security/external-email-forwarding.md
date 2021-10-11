@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
@@ -81,7 +81,9 @@ The following information is required to create the mail flow rule in the Exchan
   This condition will match any value for the header.
 
 - (Optional) **Do the following** (action): You can configure an optional action. For example, you can use the action **Modify the message properties** \> **set a message header**, with the header name **X-Forwarded** and the value **True**. But, configuring an action is not required.
-- Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the mail flow report to get details of users that are forwarding.
+- Set **Audit this rue with severity level** to the value **Low**, **Medium**, or **High**. This setting allows you to use the [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report) to get details of users that are forwarding.
+
+![Mail flow rule properties in the EAC for a rule to identify forwarded messages.](../../media/mail-flow-rule-for-forwarded-messages.png)
 
 ## Blocked email forwarding messages
 

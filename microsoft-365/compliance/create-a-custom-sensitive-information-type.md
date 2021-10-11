@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -51,7 +51,7 @@ There are two ways to create a new sensitive information type:
 
 Use this procedure to create a new sensitive information type that you fully define. 
 
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create sensitive info type**.
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.

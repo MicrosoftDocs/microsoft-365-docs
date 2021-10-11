@@ -14,7 +14,7 @@ ms.collection:
   - GDPR
   - M365-security-compliance
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn about three tools you can use to monitor for leaks of personal data.
