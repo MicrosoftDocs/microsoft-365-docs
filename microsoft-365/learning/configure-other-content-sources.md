@@ -1,5 +1,5 @@
 ---
-title: Configure other content providers for Microsoft Viva Learning
+title: Add other content providers for Microsoft Viva Learning
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -18,7 +18,7 @@ description: Learn how to configure other providers as a learning content source
 
 ---
 
-# Configure other content providers for Microsoft Viva Learning
+# Add other content providers for Microsoft Viva Learning
 
 A growing set of learning content providers and library management systems are available through Viva Learning. This set might change at any time, as more providers join or change their status with the program. 
 

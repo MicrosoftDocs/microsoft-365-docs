@@ -1,7 +1,7 @@
 ---
-title: Configure SharePoint as a learning content source for Microsoft Viva Learning
-ms.author: chucked
-author: chuckedmonson
+title: Add SharePoint as a learning content source for Microsoft Viva Learning
+ms.author: daisyfeller
+author: daisyfeller
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 
@@ -14,11 +14,11 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
-description: Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning.
+description: Learn how to add SharePoint as a learning content source for Microsoft Viva Learning.
 
 ---
 
-# Configure SharePoint as a learning content source for Microsoft Viva Learning
+# Add SharePoint as a content source for Microsoft Viva Learning
 
 You can configure SharePoint as a learning content source to make your organization's own content available in Viva Learning.
 
