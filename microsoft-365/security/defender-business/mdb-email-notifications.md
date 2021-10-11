@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/30/2021
+ms.date: 10/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -17,6 +17,10 @@ f1.keywords: NOCSH
 
 # Set up email notifications
 
-You can set up email notifications so that as alerts are triggered or new vulnerabilities are discovered, people on your security team will be aware. 
+Set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
 
-MORE TO COME
+Email notifications are not the only way your security team can find out about new alerts or vulnerabilities. Whenever your security team signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Email notifications are an additional way to keep your security team informed, in real time.
+
+## Set up email notifications
+
+Typically, email notifications are set up during the initial setup and configuration process for Microsoft Defender for Business. 

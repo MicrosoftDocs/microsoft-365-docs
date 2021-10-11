@@ -36,8 +36,4 @@ The following table describes the roles you can assign in Microsoft Defender for
 
 ## Next steps
 
-- [Choose where to manage your policies and settings](mdb-choose-portal.md)
-
-- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
-
-- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md)
+- [Set up email notifications](mdb-email-notifications.md)
