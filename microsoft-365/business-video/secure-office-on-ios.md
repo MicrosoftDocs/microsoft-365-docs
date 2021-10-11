@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -31,7 +32,7 @@ You can set up a user access policy that requires mobile users to enter a PIN or
 
 ## Try it!
 
-1. Sign in to the Microsoft 365 admin center.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 1. Under **Policies**, choose **Add policy**.
 1. In the **Add policy** pane, enter a name under **Policy name**, and choose the policy type that you want under **Policy type**.
 1. Turn on **Manage how users access Office files on mobile devices**, and then make sure the following three settings are turned on:

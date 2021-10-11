@@ -7,13 +7,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about governing access in Microsoft 365 groups, Teams, and SharePoint."
 ---
 

@@ -7,7 +7,7 @@ ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -61,7 +61,7 @@ Considerations to note:
 
 - As the tenant is transitioned to Office 365 services, its Germany-specific subscriptions and licenses are standardized with new Office 365 services offerings. Corresponding Office 365 services subscriptions are purchased for the transferred Germany subscriptions. Users who have Germany licenses will be assigned Office 365 services licenses. Upon completion, legacy Germany subscriptions are canceled and removed from the current Office 365 services tenant.
 
-- After migration of the individual workloads, additional functionality is made available through the Office 365 services (such as Microsoft Planner and Microsoft Flow) because of the new Office 365 services subscriptions. If appropriate for your organization, the tenant or licensing administrator can disable new service plans as you plan for change management to introduce the new services. For guidance on how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
+- After migration of the individual workloads, additional functionality is made available through the Office 365 services (such as Microsoft Planner and Power Automate) because of the new Office 365 services subscriptions. If appropriate for your organization, the tenant or licensing administrator can disable new service plans as you plan for change management to introduce the new services. For guidance on how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
 
 ## Exchange Online
 
@@ -70,6 +70,12 @@ Considerations to note:
 - Mailboxes are migrated as a backend process. Users in your organization may be in either Microsoft Cloud Deutschland or the German region during the transition and are part of the same Exchange organization (in the same global address list).
 
 - Users of the Outlook Web App who access the service by using a URL where their mailbox does not reside will see an extra authentication prompt. For example, if the user's mailbox is in the Office 365 services and the user's Outlook Web App connection uses the legacy endpoint `outlook.office.de`, the user will first authenticate to `login.microsoftonline.de`, and then to `login.microsoftonline.com`. When migration is complete, the user can access the new URL (`https://outlook.office365.com`), and they'll see only the single, expected sign-in request. 
+
+## SharePoint Online
+
+In SharePoint Online and OneDrive for Business, you can share items via Outlook. After pressing the Outlook button, a shareable link is created and pushed into a new message in the Outlook Web App.
+
+Sharing items in SharePoint Online and OneDrive for Business via Outlook no longer works after the migration of SharePoint Online has been completed. We recognize this is a known issue. However, since this Outlook feature is in the path of deprecation, fixing the issue is not planned until the deprecation is rolled out.
 
 ## Office Services
 

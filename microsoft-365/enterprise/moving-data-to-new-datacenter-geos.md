@@ -7,7 +7,7 @@ ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
@@ -65,8 +65,10 @@ Data moves to the new datacenter geo are completed at no additional cost to the 
  
 [How to request your data move](request-your-data-move.md)
     
-[Data move general FAQ](data-move-faq.md)
+[Data move general FAQ](data-move-faq.yml)
   
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   
 [Azure services by region](https://azure.microsoft.com/regions/)
+
+[Teams experience in a Microsoft 365 Multi-Geo-enabled tenancy](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

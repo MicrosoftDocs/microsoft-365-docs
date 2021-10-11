@@ -9,7 +9,7 @@ ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
@@ -27,8 +27,8 @@ The following certificate information applies to **all DOD and GCC High customer
 
 Last updated: **10/16/2020**
 
->[!NOTE]
->For certificate information that applies to **worldwide customers**, see [Microsoft 365 encryption chains](encryption-office-365-certificate-chains.md).
+> [!NOTE]
+> For certificate information that applies to **worldwide customers**, see [Microsoft 365 encryption chains](encryption-office-365-certificate-chains.md).
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** |
 | --- | --- | --- | --- | --- |

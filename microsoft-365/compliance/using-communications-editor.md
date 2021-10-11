@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -36,11 +36,15 @@ You can use email merge fields by selecting the **Merge field** icons on the top
 
 ### List of merge field variables
 
-| Field name                  | Field details |
-| :------------------- | :------------------- |
-| Display Name  | The custodian's first and last name. | 
-| Acknowledgment Link | A customized link to record each custodian's acknowledgment.|                 |
-| Portal Link     | A customized link for the custodian's Compliance Portal.|                |
-| Issuing Officer                   | The email address of the specified issuing officer.|                   |
-| Issuing Date                   | The date that the notice was issued (UTC).              |
-|||
+<br>
+
+****
+
+|Field name|Field details|
+|---|---|
+|Display Name|The custodian's first and last name.|
+|Acknowledgment Link|A customized link to record each custodian's acknowledgment.|
+|Portal Link|A customized link for the custodian's Compliance Portal.|
+|Issuing Officer|The email address of the specified issuing officer.|
+|Issuing Date|The date that the notice was issued (UTC).|
+|

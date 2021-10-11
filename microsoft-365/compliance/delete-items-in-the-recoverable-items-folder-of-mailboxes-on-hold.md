@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -23,8 +23,8 @@ ms.custom: seo-marvel-apr2020
 # Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
 
 The Recoverable Items folder for an Exchange Online mailbox exists to protect from accidental or malicious deletions. It's also used to store items that are retained and accessed by compliance features, such as holds and eDiscovery searches. However, in some situations organizations might have data that's been unintentionally retained in the Recoverable Items folder that they must delete. For example, a user might unknowingly send or forward an email message that contains sensitive information or information that may have serious business consequences. Even if the message is permanently deleted, it might be retained indefinitely because a legal hold has been placed on the mailbox. This scenario is known as *data spillage* because data has been unintentionally *spilled* into Office 365. In these situations, you can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on hold with one of the different hold features in Office 365. These types of holds include Litigation Holds, In-Place Holds, eDiscovery holds, and retention policies created in the security and compliance center in Office 365 or Microsoft 365.
-  
- This article explains how admins can delete items from the Recoverable Items folder for cloud-based mailboxes that are on hold. This procedure involves disabling access to the mailbox and disabling single item recovery, disabling the Managed Folder Assistant from processing the mailbox, temporarily removing the hold, deleting items from the Recoverable Items folder, and then reverting the mailbox to its previous configuration. Here's the process:
+
+This article explains how admins can delete items from the Recoverable Items folder for cloud-based mailboxes that are on hold. This procedure involves disabling access to the mailbox and disabling single item recovery, disabling the Managed Folder Assistant from processing the mailbox, temporarily removing the hold, deleting items from the Recoverable Items folder, and then reverting the mailbox to its previous configuration. Here's the process:
   
 [Step 1: Collect information about the mailbox](#step-1-collect-information-about-the-mailbox)
 
@@ -43,7 +43,7 @@ The Recoverable Items folder for an Exchange Online mailbox exists to protect fr
   
 ## Before you delete items
 
-- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](./assign-ediscovery-permissions.md).
+- To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
 
 - The procedure described in this article isn't supported for inactive mailboxes. That's because you can't reapply a hold (or retention policy) to an inactive mailbox after you remove it. When you remove a hold from an inactive mailbox, it's changed to a normal soft-deleted mailbox and will be permanently deleted from your organization after it's processed by the Managed Folder Assistant.
 
@@ -85,7 +85,7 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-Mailbox <username> | FL LitigationHoldEnabled,InPlaceHolds
     ```
 
-   > [!TIP]
+    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line.
   
 5. Run the following command to get information about any organization-wide retention policies. 
@@ -94,9 +94,9 @@ Additionally, you need to get the mailbox client access settings so you can temp
     Get-OrganizationConfig | FL InPlaceHolds
     ```
 
-   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3.
+   If your organization has any organization-wide retention policies, you'll have to exclude the mailbox from these policies in Step 3. It may take up to 24 hours to replicate the change.
 
-   > [!TIP]
+    > [!TIP]
     > If there are too many values in the  *InPlaceHolds*  property and not all of them are displayed, you can run the  `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` command to display each value on a separate line. 
   
 6. Run the following command to determine if a delay hold is applied to the mailbox.
@@ -143,7 +143,7 @@ Perform the following steps in Exchange Online PowerShell.
     Set-CASMailbox <username> -EwsEnabled $false -ActiveSyncEnabled $false -MAPIEnabled $false -OWAEnabled $false -ImapEnabled $false -PopEnabled $false
     ```
 
-   > [!NOTE]
+    > [!NOTE]
     > It might take up to 60 minutes to disable all client access methods to the mailbox. Note that disabling these access methods won't disconnect the mailbox owner if they are currently signed in. If the owner isn't signed in, they won't be able to access their mailbox after these access methods are disabled.
   
 2. Run the following command to increase the deleted item retention period the maximum of 30 days. This assumes that the current setting is less than 30 days.
@@ -158,7 +158,7 @@ Perform the following steps in Exchange Online PowerShell.
     Set-Mailbox <username> -SingleItemRecoveryEnabled $false
     ```
 
-   > [!NOTE]
+    > [!NOTE]
     > It might take up to 60 minutes to disable single item recovery. Don't delete items in the Recoverable Items folder until this period has elapsed. 
   
 4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock is not applied to the mailbox. 
@@ -203,7 +203,7 @@ Run the following command in [Security & Compliance Center PowerShell](/powershe
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the retention policy, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
+After you identify the retention policy, go to the **Information governance** > **Retention** page in the Microsoft 365 compliance center, edit the retention policy that you identified in the previous step, and remove the mailbox from the list of recipients that are included in the retention policy.
   
 ### Organization-wide retention policies
   
@@ -213,7 +213,7 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Microsoft 365 compliance center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. It may take up to 24 hours to replicate the change.
 
 ### Retention labels
 
@@ -383,15 +383,15 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     **Retention policies applied to specific mailboxes**
 
-    Use the Security & Compliance Center to add the mailbox back to the retention policy. Go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
+    Use the Microsoft 365 compliance center to add the mailbox back to the retention policy. Go to the **Information governance** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
     **Organization-wide Retention policies**
 
-    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Security & Compliance Center to remove the mailbox from the list of excluded users. Go to the **Information governance** > **Retention** page in the Security & Compliance Center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
+    If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Microsoft 365 compliance center to remove the mailbox from the list of excluded users. Go to the **Information governance** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
 
     **eDiscovery case holds**
 
-    Use the Security & Compliance Center to add the mailbox back the hold that's associated with an eDiscovery case. Go to the **eDiscovery** > **eDiscovery** page, open the case, and add the mailbox back to the hold. 
+    Use the Microsoft 365 compliance center to add the mailbox back the hold that's associated with an eDiscovery case. Go to the **eDiscovery** > **Core** page, open the case, and add the mailbox back to the hold. 
 
 5. Run the following command to allow the Managed Folder Assistant to process the mailbox again. As previously stated, we recommend that you wait 24 hours after reapplying a hold or retention policy (and verifying that it's in place) before you re-enable the Managed Folder Assistant.
 
@@ -419,6 +419,6 @@ As previously explained, you have to remove all holds and retention policies fro
 |:-----|:-----|:-----|
 |Litigation Hold  <br/> | `True` <br/> |The  *LitigationHoldEnabled*  property is set to  `True`.  <br/> |
 |In-Place Hold  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |The  *InPlaceHolds*  property contains the GUID of the In-Place Hold that's placed on the mailbox. You can tell this is an In-Place Hold because the GUID doesn't start with a prefix.  <br/> You can use the  `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` command in Exchange Online PowerShell to get information about the In-Place Hold on the mailbox.  <br/> |
-| Retention policies in the Security & Compliance Center applied to specific mailboxes  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> or  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |When you run the **Get-Mailbox** cmdlet, the  *InPlaceHolds*  property also contains GUIDs of retention policies applied to the mailbox. You can identify retention policies because the GUID starts with the  `mbx` prefix. If the GUID of the retention policy starts with the  `skp` prefix, that indicates that the retention policy is applied to Skype for Business conversations.  <br/> To identity the retention policy that's applied to the mailbox, run the following command in Security & Compliance Center PowerShell: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Be sure to remove the  `mbx` or  `skp` prefix when you run this command.  <br/> |
-|Organization-wide retention policies in the Security & Compliance Center  <br/> |No value  <br/> or  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indicates that the mailbox is excluded from an organization-wide policy)  <br/> |Even if the  *InPlaceHolds*  property is empty when you run the **Get-Mailbox** cmdlet, there still might be one or more organization-wide retention policies applied to the mailbox.  <br/> To verify this, you can run the  `Get-OrganizationConfig | FL InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide retention policies. The GUID for organization-wide retention policies applied to Exchange mailboxes starts with the  `mbx` prefix; for example,  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> To identity the organization-wide retention policy that's applied to the mailbox, run the following command in Security & Compliance Center PowerShell: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>If a mailbox is excluded from an organization-wide retention policy, the GUID for the retention policy is displayed in the  *InPlaceHolds*  property of the user's mailbox when you run the **Get-Mailbox** cmdlet; it's identified by the prefix  `-mbx`; for example,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|eDiscovery case hold in the Security & Compliance Center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |The  *InPlaceHolds*  property also contains the GUID of any hold associated with an eDiscovery case in the Security & Compliance Center that might be placed on the mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/> You can use the  `Get-CaseHoldPolicy` cmdlet in Security & Compliance Center PowerShell to get information about the eDiscovery case that the hold on the mailbox is associated with. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the mailbox. Be sure to remove the  `UniH` prefix when you run this command.  <br/><br/> To identity the eDiscovery case that the hold on the mailbox is associated with, run the following commands:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+| Retention policies in the Microsoft 365 compliance center applied to specific mailboxes  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> or  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |When you run the **Get-Mailbox** cmdlet, the  *InPlaceHolds*  property also contains GUIDs of retention policies applied to the mailbox. You can identify retention policies because the GUID starts with the  `mbx` prefix. If the GUID of the retention policy starts with the  `skp` prefix, that indicates that the retention policy is applied to Skype for Business conversations.  <br/> To identity the retention policy that's applied to the mailbox, run the following command in Security & Compliance Center PowerShell: <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>Be sure to remove the  `mbx` or  `skp` prefix when you run this command.  <br/> |
+|Organization-wide retention policies in the Microsoft 365 compliance center  <br/> |No value  <br/> or  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696` (indicates that the mailbox is excluded from an organization-wide policy)  <br/> |Even if the  *InPlaceHolds*  property is empty when you run the **Get-Mailbox** cmdlet, there still might be one or more organization-wide retention policies applied to the mailbox.  <br/> To verify this, you can run the  `Get-OrganizationConfig | FL InPlaceHolds` command in Exchange Online PowerShell to get a list of the GUIDs for organization-wide retention policies. The GUID for organization-wide retention policies applied to Exchange mailboxes starts with the  `mbx` prefix; for example,  `mbxa3056bb15562480fadb46ce523ff7b02`.  <br/> To identity the organization-wide retention policy that's applied to the mailbox, run the following command in Security & Compliance Center PowerShell: <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>If a mailbox is excluded from an organization-wide retention policy, the GUID for the retention policy is displayed in the  *InPlaceHolds*  property of the user's mailbox when you run the **Get-Mailbox** cmdlet; it's identified by the prefix  `-mbx`; for example,  `-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|eDiscovery case hold in the Microsoft 365 compliance center  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |The  *InPlaceHolds*  property also contains the GUID of any hold associated with an eDiscovery case in the Microsoft 365 compliance center that might be placed on the mailbox. You can tell this is an eDiscovery case hold because the GUID starts with the  `UniH` prefix.  <br/> You can use the  `Get-CaseHoldPolicy` cmdlet in Security & Compliance Center PowerShell to get information about the eDiscovery case that the hold on the mailbox is associated with. For example, you can run the command  `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` to display the name of the case hold that's on the mailbox. Be sure to remove the  `UniH` prefix when you run this command.  <br/><br/> To identity the eDiscovery case that the hold on the mailbox is associated with, run the following commands:<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`

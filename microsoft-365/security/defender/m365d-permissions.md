@@ -1,5 +1,5 @@
 ---
-title: Manage access to Microsoft 365 Defender data in the Microsoft 365 security center
+title: Manage access to Microsoft 365 Defender data in the Microsoft 365 Defender portal
 description: Learn how to manage permissions to data in Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, MCAS, Cloud App Security, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,15 +41,15 @@ Accounts assigned the following **Global Azure Active Directory (AD) roles** can
 - Global Reader
 - Security Reader
 
-To review accounts with these roles, [view Permissions in the Microsoft 365 security center](https://security.microsoft.com/permissions).
+To review accounts with these roles, [view Permissions in the Microsoft 365 Defender portal](https://security.microsoft.com/permissions).
 
 **Custom role** access is a new capability in Microsoft 365 Defender and allows you to manage access to specific data, tasks, and capabilities in Microsoft Defender 365. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
 
-> ![NOTE]
+> [!NOTE]
 > This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality
-Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
+Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/roles/permissions-reference). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
 [Automated investigation and remediation](m365d-autoir-actions.md) can take action on emails, forwarding rules, files, persistence mechanisms, and other artifacts found during investigations. To approve or reject pending actions that require explicit approval, you must have certain roles assigned in Microsoft 365. To learn more, see [Action center permissions](m365d-action-center.md#required-permissions-for-action-center-tasks).
@@ -64,6 +64,6 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 
 ## Related topics
 - [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
-- [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Cloud App Security roles](/cloud-app-security/manage-admins)

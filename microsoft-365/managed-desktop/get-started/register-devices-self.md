@@ -6,7 +6,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -19,6 +19,8 @@ Microsoft Managed Desktop can work with brand-new devices or you can reuse devic
 
 > [!NOTE]
 > Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
+
+
 
 ## Prepare to register brand-new devices
 
@@ -43,11 +45,10 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](/mem/autopilot/add-devices#device-identification).
 
-1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
-
+1. Open a PowerShell prompt with administrative rights.
+2. Run `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
 
 #### Flash drive method
 
@@ -61,9 +62,8 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 8. Run `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 
->[!IMPORTANT]
->Do not power on the device you are registering again until you've completed registration for it. 
-
+> [!IMPORTANT]
+> Do not power on the device you are registering again until you've completed registration for it. 
 
 ### Merge hash data
 
@@ -71,16 +71,16 @@ You'll need to have the data in the CSV files combined into a single file to com
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
+> [!NOTE]
+> Extra columns are not supported. Quotes are not supported. Only ANSI-format text files can be used (not Unicode). Headers are case-sensitive. Editing the file in Excel and saving it as a CSV file will not generate a usable file due to these requirements. Be sure to preserve any leading zeroes in the device serial numbers.
 
 ### Register devices by using the Admin Portal
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
-<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
-
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Follow these steps:
 
@@ -109,7 +109,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Hardware hash not valid | The hardware hash you provided for this device was not formatted correctly. Double-check the hardware hash and then resubmit. |
 | Device already registered | This device is already registered to your organization. No further action required. |
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
-| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
+| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: \<requestId\> |
 
 ### Check the image
 
@@ -119,7 +119,7 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 
 ### Autopilot group tag
 
-When you use the Admin portal to register devices, we automatically assign the **Microsoft365Managed_Autopilot** Autopilot Group Tag.
+When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md#register-devices-by-using-partner-center).
 The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device

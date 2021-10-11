@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
-- M365-subscription-management 
+ms.localizationpriority: medium
+ms.collection:
+- M365-subscription-management
 - Adm_O365
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -31,15 +32,17 @@ To let your users reset their own passwords without having to contact you each t
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** and then **Security & privacy**.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a>.
 1. Under **Let your people reset their own passwords**, select**Azure AD admin center**.
 1. In the left navigation pane, select **Users**, and then on the **Users - all users** page, select **Password reset**.
 1. Select **All** to enable self-service password reset, and then select **Save**.
 
 The next time a user signs in to their account, they're asked for their user ID and password. They select **Next**, and then choose whether to authenticate with their phone, email, or both. They enter the code they receive, select **Verify**, and then select **Finish**. When they're done, they can reset their own password.
 
-## Related content 
+## Related content
 
-[Set the password expiration policy for your organization](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) (article)
-[Set an individual user's password to never expire](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) (article)
-[Turn off strong password requirements for users](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) (article)
+[Set the password expiration policy for your organization](/microsoft-365/admin/manage/set-password-expiration-policy) (article)
+
+[Set an individual user's password to never expire](/microsoft-365/admin/add-users/set-password-to-never-expire) (article)
+
+[Turn off strong password requirements for users](/microsoft-365/admin/add-users/strong-password) (article)

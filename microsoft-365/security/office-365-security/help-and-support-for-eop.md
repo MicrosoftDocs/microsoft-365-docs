@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 ms.technology: mdo
@@ -33,7 +33,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md)
+[Contact support for business products - Admin Help](../../business-video/get-help-support.md)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 

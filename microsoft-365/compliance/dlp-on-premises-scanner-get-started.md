@@ -1,17 +1,17 @@
 ---
-title: "Get started with Microsoft 365 data loss prevention on-premises scanner (preview)"
+title: "Get started with Microsoft 365 data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -21,7 +21,7 @@ search.appverid:
 description: "Set up Microsoft 365 data loss prevention on-premises scanner"
 ---
 
-# Get started with the data loss prevention on-premises scanner (preview)
+# Get started with the data loss prevention on-premises scanner
 
 This article walks you through the prerequisites and configuration for the Microsoft 365 data loss prevention on-premises scanner.
 
@@ -29,7 +29,7 @@ This article walks you through the prerequisites and configuration for the Micro
 
 ### SKU/subscriptions licensing
 
-Before you get started with DLP on-premises scanner, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. To participate in the preview the admin account that sets up the DLP rules must be assigned one of the following licenses:
+Before you get started with DLP on-premises scanner, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1) and any add-ons. The admin account that sets up the DLP rules must be assigned one of the following licenses:
 
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
@@ -61,7 +61,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
     1. Network discovery jobs configuration is an optional step. You can skip it and define specific repositories to be scanned in your content scan job.
     2. You must create content scan job and specify the repositories that host files that need to be evaluated by the DLP engine.
     3. Enable DLP rules in the created Content scan job, and set the **Enforce** option to **Off**, unless you want to proceed directly to the DLP enforcement stage.
-3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes that run the public preview version.
+3. Verify that you content scan job is assigned to the right cluster. If you still did not create a content scan job create a new one and assign it to the cluster that contains the scanner nodes.
 
 4. Connect to the [Azure Information Protection extension in Azure portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) and add your repositories to the content scan job that will perform the scan.
 
@@ -77,7 +77,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
-    1. When specifying the locations, you can use either exclusion or inclusion list. During public preview you cannot set both of them. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
+    1. When specifying the locations, you can use either exclusion or inclusion list. You can either define that the rule is relevant only to paths matching one of the patterns listed in inclusion list or, all files, except the files matching the pattern listed in inclusion list. No local paths are supported. Here are some examples of valid paths:
       - \\\server\share
       - \\\server\share\folder1\subfolderabc
       - \*\\folder1
@@ -110,19 +110,19 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
 
-3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). During the public preview the DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) PowerShell 
+3. Open the [Audit log in the Compliance center](https://security.microsoft.com/auditlogsearch). The DLP rule matches are available in Audit log UI or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell 
 
 
 ## Next steps
 Now that you have deployed a test policy for DLP on-premises locations and can view the activity data in Activity explorer, you are ready to move on to your next step where you create DLP policies that protect your sensitive items.
 
-- [Using DLP on-premises (preview)](dlp-on-premises-scanner-use.md)
+- [Using DLP on-premises](dlp-on-premises-scanner-use.md)
 
 ## See also
 
-- [Learn about DLP on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
-- [Use DLP on-premises scanner (preview)](dlp-on-premises-scanner-use.md)
-- [Overview of data loss prevention](data-loss-prevention-policies.md)
+- [Learn about DLP on-premises scanner](dlp-on-premises-scanner-learn.md)
+- [Use DLP on-premises scanner](dlp-on-premises-scanner-use.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

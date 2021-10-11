@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -31,7 +31,7 @@ description: "Set up online meetings with Microsoft Teams."
 
 Meetings in Microsoft Teams include audio, video, and sharing. And because they're online, you'll always have a meeting space (without needing a room or projector!), even if your staff is geographically distributed or working remotely. Microsoft Teams meetings are a great way to come together with your staff both inside and outside of your organization. You don’t need to be a member of your organization or even have an account to join a meeting. You can schedule and run online meetings using Microsoft Teams. During a meeting, you can share your screen, share files, assign tasks, and more. Political campaigns can include staff, volunteers, and guests outside your organization in the meeting. Small firms or practices can meet with their staff, or meet with clients or partners over Microsoft Teams.
 
-[![An illustration of two users in a meeting](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![An illustration of two users in a meeting.](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2078712) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) to get a quick overview of how to join or host an online meeting with Microsoft Teams.
 

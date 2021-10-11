@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -36,6 +36,6 @@ The latest versions of the following clients and platforms support conditional a
 
 ## Supported PowerShell modules
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)

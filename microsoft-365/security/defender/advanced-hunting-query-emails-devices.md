@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -96,6 +96,90 @@ DeviceInfo
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
 
+
+### Get file event information
+
+Use the following query to get information on file related events. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### Get network event information
+
+Use the following query to get information on network related events.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### Get device agent version information
+
+Use the following query to get the version of the agent running on a device.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### Example query for macOS devices
+
+Use the following example query to see all devices running macOS with a version older than Catalina.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### Get device status info
+
+Use the following query to get status of a device. In the following example, the query checks to see if the device is onboarded.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
 ## Hunting scenarios
 
 ### List logon activities of users that received emails that were not zapped successfully
@@ -146,7 +230,7 @@ EmailAttachmentInfo
 | join (
 //Check devices for any activity involving the attachments
 DeviceFileEvents
-| project FileName, SHA256
+| project FileName, SHA256, DeviceName, DeviceId
 ) on SHA256
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```

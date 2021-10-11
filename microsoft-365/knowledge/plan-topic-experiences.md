@@ -1,5 +1,5 @@
 ---
-title: "Plan for Microsoft Viva Topics"
+title: Plan for Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,8 +8,8 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to plan for Plan for Microsoft Viva Topics"
+ms.localizationpriority:  medium
+description: Learn how to plan for Microsoft Viva Topics.
 ---
 
 # Plan for Microsoft Viva Topics
@@ -27,6 +27,10 @@ In this article we'll examine these planning decisions:
 
 Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
+To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+
+Keep in mind that Viva Topics needs access to the sites and files that your users use every day. Deploying Viva Topics in a test or development environment may not yield useful results.
+
 ## Requirements
 
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
@@ -35,7 +39,9 @@ All users who are going to use Topics require a **Topic Experiences** license. A
 
 ## Topic discovery
 
-The topic discovery settings specify which SharePoint sites are used as sources for topics. You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
+The topic discovery settings specify which SharePoint sites are used as sources for topics. This includes both classic and modern sites, as well as sites associated with Microsoft Teams and Microsoft 365 Groups. OneDrive sites are not included.
+
+You can choose to include all SharePoint sites, a specific list of sites, or no sites. We recommend that you choose all sites so that topic experiences can discover a large number of good topics for your users.
 
 When you set up Topics, you can choose from the following options:
 
@@ -43,6 +49,8 @@ When you set up Topics, you can choose from the following options:
 - **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery. 
 - **Only selected sites**: Only the sites that you specify. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
+
+We recommend selecting enough sites to include at least 20,000 documents to get the best results from Viva Topics.
 
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
@@ -111,7 +119,7 @@ The .csv file must contain the following parameters:
     - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
 - **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 
-    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template.](../media/exclude-topics-csv.png) 
 
 You can copy the csv template below:
 

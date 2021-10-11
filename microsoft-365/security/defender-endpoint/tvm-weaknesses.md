@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -28,28 +28,28 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Threat and vulnerability management uses the same signals in Defender for Endpoint's endpoint protection to scan and detect vulnerabilities.
 
 The **Weaknesses** page lists the software vulnerabilities your devices are exposed to by listing the Common Vulnerabilities and Exposures (CVE) ID. You can also view the severity, Common Vulnerability Scoring System (CVSS) rating, prevalence in your organization, corresponding breach, threat insights, and more.
 
->[!NOTE]
->If there is no official CVE-ID assigned to a vulnerability, the vulnerability name is assigned by threat and vulnerability management.
+> [!NOTE]
+> If there is no official CVE-ID assigned to a vulnerability, the vulnerability name is assigned by threat and vulnerability management.
 
->[!TIP]
->To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
+> [!TIP]
+> To get emails about new vulnerability events, see [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
 
 ## Navigate to the Weaknesses page
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the threat and vulnerability management navigation menu in the [Microsoft Defender Security Center](portal-overview.md)
+- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal] (portal-overview.md)
 - Global search
 
 ### Navigation menu
 
-Go to the threat and vulnerability management navigation menu and select **Weaknesses** to open the list of CVEs.
+Go to the **Vulnerability management** navigation menu and select **Weaknesses** to open the list of CVEs.
 
 ### Vulnerabilities in global search
 
@@ -70,13 +70,13 @@ Remediate the vulnerabilities in exposed devices to reduce the risk to your asse
 
 View any related breach and threat insights in the **Threat** column when the icons are colored red.
 
- >[!NOTE]
- > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).  
+ > [!NOTE]
+ > Always prioritize recommendations that are associated with ongoing threats. These recommendations are marked with the threat insight icon ![Simple drawing of a red bug.](images/tvm_bug_icon.png) and breach insight icon ![Simple drawing of an arrow hitting a target.](images/tvm_alert_icon.png).
 
 The breach insights icon is highlighted if there's a vulnerability found in your organization.
 ![Example of a breach insights text that could show up when hovering over icon. This one says "possible active alert is associated with this recommendation.](images/tvm-breach-insights.png)
 
-The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there's a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.  
+The threat insights icon is highlighted if there are associated exploits in the vulnerability found in your organization. Hovering over the icon shows whether the threat is a part of an exploit kit, or connected to specific advanced persistent campaigns or activity groups. When available, there's a link to a Threat Analytics report with zero-day exploitation news, disclosures, or related security advisories.
 
 ![Threat insights text that that could show up when hovering over icon. This one has multiple bullet points and linked text.](images/tvm-threat-insights.png)
 
@@ -95,7 +95,7 @@ CVEs for software that isn't currently supported by threat & vulnerability manag
 
 Exposed device information will not be available for CVEs with unsupported software. Filter by unsupported software by selecting the "Not available" option in the "Exposed devices" section.
 
- ![Exposed devices filter.](images/tvm-exposed-devices-filter.png)
+:::image type="content" alt-text="Exposed devices filter." source="images/tvm-exposed-devices-filter.png":::
 
 ## View Common Vulnerabilities and Exposures (CVE) entries in other places
 
@@ -106,7 +106,9 @@ Exposed device information will not be available for CVEs with unsupported softw
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
 2. Select the software you want to investigate to go to a drilldown page.
+
 3. Select the **Discovered vulnerabilities** tab.
+
 4. Select the vulnerability you want to investigate for more information on vulnerability details
 
     ![Windows Server 2019 drill down overview.](images/windows-server-drilldown.png)
@@ -115,15 +117,17 @@ Exposed device information will not be available for CVEs with unsupported softw
 
 View related weaknesses information in the device page.
 
-1. Go to the Microsoft Defender Security Center navigation menu bar, then select the device icon. The **Devices list** page opens.
-2. In the **Devices list** page, select the device name that you want to investigate.
+1. Go to the Microsoft 365 Defender navigation menu bar, then select the device icon. The **Device inventory** page opens.
+
+2. In the **Device inventory** page, select the device name that you want to investigate.
 
     ![Device list with selected device to investigate.](images/tvm_machinetoinvestigate.png)
 
 3. The device page will open with details and response options for the device you want to investigate.
+
 4. Select **Discovered vulnerabilities**.
 
-    ![Device page with details and response options.](images/tvm-discovered-vulnerabilities.png)
+   :::image type="content" alt-text="Device page with details and response options." source="images/tvm-discovered-vulnerabilities.png" lightbox="images/tvm-discovered-vulnerabilities.png":::
 
 5. Select the vulnerability that you want to investigate to open up a flyout panel with the CVE details, such as: vulnerability description, threat insights, and detection logic.
 
@@ -131,9 +135,9 @@ View related weaknesses information in the device page.
 
 Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. The new section is called "Detection Logic" (in any discovered vulnerability in the device page) and shows the detection logic and source.
 
-The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we’ll only attach this CVE to the Windows Server 2019 devices with the DNS capability enabled in their OS.
+The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 or Windows Server 2022 has vulnerability in its DNS component. With this new capability, we'll only attach this CVE to the Windows Server 2019 and Windows Server 2022 devices with the DNS capability enabled in their OS.
 
-![Detection Logic example which lists the software detected on the device and the KBs.](images/tvm-cve-detection-logic.png)
+:::image type="content" alt-text="Detection Logic example which lists the software detected on the device and the KBs." source="images/tvm-cve-detection-logic.png":::
 
 ## Report inaccuracy
 

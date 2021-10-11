@@ -3,12 +3,12 @@ title: Custom reporting solutions with automated investigation and response
 keywords: SIEM, API, AIR, autoIR, Microsoft Defender for Endpoint, automated investigation, integration, custom report
 f1.keywords: 
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 - MOE150

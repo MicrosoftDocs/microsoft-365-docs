@@ -2,13 +2,13 @@
 title: "Microsoft Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -53,13 +53,13 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 
 When you're comfortable managing assessments in Compliance Manager, you can work with templates to modify a Compliance Manager assessment with your own actions and controls. You can also create your own custom assessment. Custom assessments are helpful for:
 
-- Managing compliance for non-Microsoft 365 products such as third-party apps and  services, on-premises applications, and other assets.
+- Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets.
 - Managing your own custom or business-specific compliance controls.
 
 You can also set up automated testing of all or a subset of improvement actions. Visit the links below to understand more advanced functionality in Compliance Manager:
 
-- [Extend a Compliance Manager assessment by adding your own controls and improvement actions](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
-- [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
+- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
+- [Create your own custom template](compliance-manager-templates-create.md)
+- [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
 - [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

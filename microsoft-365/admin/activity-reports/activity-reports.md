@@ -8,27 +8,29 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: "Get a periodic report of how people in your organization are using Microsoft 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
+description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
 ---
 
 # Microsoft 365 Reports in the admin center
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
-Watch this video for on overview: on how you can use the reports:
+## Watch: Act on a usage report in Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -52,7 +54,9 @@ Watch this video for on overview: on how you can use the reports:
 
 ::: moniker-end
 
-2. Click on the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs. <br/>![The Usage dashboard](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Click the **View more** button from the at-a-glance activity card for a service (such as email or OneDrive) to see the report detail page. In there different reports for the service are provided in tabs.
+
+   :::image type="content" alt-text="The Usage dashboard." source="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png" lightbox="../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png":::
 
 ## Who can see reports
 
@@ -66,8 +70,10 @@ People who have the following permissions:
     
 - Skype for Business admins
 
-- Global reader
-    
+- Global reader (with no user details)
+
+- Usage Summary Reports reader (with no user details)
+
 - Reports reader
 
 - Teams Service Administrator
@@ -83,52 +89,30 @@ Depending on your subscription, here are the available reports.
 - [Microsoft browser usage](browser-usage-report.md) 
   
 - [Email activity](email-activity-ww.md)
-
-- [Email activity for US Government](email-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
 - [Office activations](microsoft-office-activations-ww.md)
 
-- [Office activations for US Government](microsoft-office-activations.md)
-
 - [Active Users](active-users-ww.md)
-
-- [Active Users for US Government](active-users.md)
   
 - [Email apps usage](email-apps-usage-ww.md)
 
-- [Email apps usage for US Government](email-apps-usage.md)
-
 - [Forms activity](forms-activity-ww.md)
 
-- [Forms activity for US Government](forms-activity.md)
-
 - [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
-  
-- [Dynamics 365 Customer Voice activity for US Government](forms-pro-activity.md)
 
 - [Microsoft 365 groups](office-365-groups-ww.md)
-
-- [Microsoft 365 groups for US Government](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
 
-- [OneDrive for Business user activity for US Government](onedrive-for-business-activity.md)
-
 - [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
-
-- [OneDrive for Business usage for US Government](onedrive-for-business-usage.md)
 
 - [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
   
 - [SharePoint site usage](sharepoint-site-usage-ww.md)
-
-- [SharePoint site usage for US Government](sharepoint-site-usage.md)
   
 - [SharePoint activity](sharepoint-activity-ww.md)
-
-- [SharePoint activity for US Government](sharepoint-activity.md)
   
 - [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -140,23 +124,13 @@ Depending on your subscription, here are the available reports.
 
 - [Yammer activity](yammer-activity-report-ww.md)
 
-- [Yammer activity for US Government](yammer-activity-report.md)
-
 - [Yammer device usage](yammer-device-usage-report-ww.md)
-
-- [Yammer device usage for US Government](yammer-device-usage-report.md)
 
 - [Yammer groups activity report](yammer-groups-activity-report-ww.md)
 
-- [Yammer groups activity report for US Government](yammer-groups-activity-report.md)
-
 - [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
 
-- [Microsoft Teams user activity for US Government](microsoft-teams-user-activity.md)
-
 - [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
-
-- [Microsoft Teams device usage for US Government](microsoft-teams-device-usage.md)
 
 ## How to view licensing information
 
@@ -172,21 +146,37 @@ You can't generate a report where you enter a user's account and then get a list
 
 There are circumstances where new users show up as **unknown**. This is usually due to occasional delays in creating user profiles.  
   
-## Hide user details in the reports
+## Show user details in the reports
 
-If you want to hide user level information when you're generating your reports, you can quickly make that change in the admin center.
+By default, user details will be hidden for all reports.
+  
+Your user list will look like this:
+ 
+![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+
+
+If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+
+Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
+
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
 
+2. Select **Org Settings** and choose **Services** . 
+  
+3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
+  
+
+Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
+  
+1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
+
 2. Select **Reports**. 
   
-3. In the **Reports** pane, select the options you want, and then save your changes.
+3. Uncheck the statement **Display concealed user, group, and site names in all reports**, and then save your changes.  
   
-Your user list will look like this:
-  
-![Reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
-  
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the Microsoft 365 usage reports in [Microsoft Graph](/graph/api/resources/report?view=graph-rest-1.0) and [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-worldwide) and [the usage reports in Microsoft Teams Admin center](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference). Showing identifiable user information is a logged event in the Microsoft 365 compliance center audit log.   
+
   
 ## What happens to usage data when a user account is closed?
 
@@ -194,6 +184,8 @@ Whenever you close a user's account, Microsoft will delete that user's usage dat
   
 However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).
   
-## Related articles
+## Related content
 
-[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)
+[Reports in the Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (article)\
+[Microsoft 365 usage analytics](../usage-analytics/usage-analytics.md) (article)\
+[Customize the reports in Microsoft 365 usage analytics](../usage-analytics/customize-reports.md) (article)

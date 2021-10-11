@@ -14,8 +14,9 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
+recommendations: false
 description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
@@ -75,7 +76,7 @@ To create an Azure AD terms of use
 2. Navigate to [Terms of use](https://aka.ms/catou).
 3. Click **New terms**.
 
-   ![Screenshot of Azure AD new terms of use settings](../media/azure-ad-guest-terms-of-use.png)
+   ![Screenshot of Azure AD new terms of use settings.](../media/azure-ad-guest-terms-of-use.png)
 
 4. Type a **Name** and **Display name**.
 6. For **Terms of use document**, browse to the pdf file that you created and select it.
@@ -126,11 +127,11 @@ To set up a guest access review
 9. Select a start date and duration.
 10. For **End**, choose **Never**, and then click **Next: Settings**.
 
-    ![Screenshot of Azure AD access review tab](../media/azure-ad-create-access-review.png)
+    ![Screenshot of Azure AD access review tab.](../media/azure-ad-create-access-review.png)
 
 11. On the **Settings** tab, review the settings for compliance with your business rules.
 
-    ![Screenshot of Azure AD access review settings tab](../media/azure-ad-create-access-review-settings.png)
+    ![Screenshot of Azure AD access review settings tab.](../media/azure-ad-create-access-review-settings.png)
 
 12. Click **Next: Review + Create**.
 13. Type a **Review name** and review the settings.
@@ -164,7 +165,7 @@ To restrict guests to web-only access for Groups and Teams:
 10. On the **Conditions** blade, click **Client apps**.
 11. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
 
-    ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Screenshot of Azure AD conditional access client apps settings.](../media/azure-ad-conditional-access-client-mobile.png)
 
 12. Click **Done**.
 13. Under **Access controls**, click **Grant**.
@@ -251,7 +252,7 @@ With the policy in place, when a user types "Project Saturn" into a document, th
 
 ## Create a DLP policy to remove guest access to highly sensitive files
 
-You can use [data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
+You can use [data loss prevention (DLP)](../compliance/dlp-learn-about-dlp.md) to prevent unwanted guest sharing of sensitive content. Data loss prevention can take action based on a file's sensitivity label and remove guest access.
 
 To create a DLP rule
 
@@ -270,7 +271,7 @@ To create a DLP rule
 10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
 11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people outside your organization** option.
 
-      ![Screenshot of DLP rule action options](../media/dlp-remove-guest-access-sensitive-files.png)
+      ![Screenshot of DLP rule action options.](../media/dlp-remove-guest-access-sensitive-files.png)
 
 12. Click **Save** and then click **Next**.
 13. Choose your test options and click **Next**.

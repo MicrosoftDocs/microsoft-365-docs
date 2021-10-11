@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -25,13 +26,15 @@ description: "Learn how to create a company-wide email signature."
 
 # Create a company-wide email signature
 
+## Watch: Create a company-wide email signature
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 
 A company-wide email signature appears on every email sent by people in your organization. You can use it to display important details, like your company contact information or a legal disclaimer. 
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, select **Exchange**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
 1. Select **Mail flow**.
 1. Select **Add +**, and then select **Apply disclaimers**.
 1. On the **New rule** page:

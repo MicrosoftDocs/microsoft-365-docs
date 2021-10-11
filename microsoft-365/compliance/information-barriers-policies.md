@@ -1,6 +1,6 @@
 ---
-title: "Define information barrier policies"
-description: Learn how to define policies for information barriers in Microsoft Teams.
+title: "Get started with information barriers"
+description: Learn how to get started with information barriers.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -11,94 +11,93 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ---
 
-# Define information barrier policies
+# Get started with information barriers
 
-With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other, or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. To learn more, see [Information barriers](information-barriers.md).
+With information barriers, you can define policies that are designed to prevent certain segments of users from communicating with each other or allow specific segments to communicate only with certain other segments. Information barrier policies can help your organization maintain compliance with relevant industry standards and regulations, and avoid potential conflicts of interest. For more information, see [Learn about information barriers](information-barriers.md).
 
-This article describes how to plan, define, implement, and manage information barrier policies. Several steps are involved, and the work flow is divided into several parts. Make sure to read through the [prerequisites](#prerequisites) and the entire process before you begin defining (or editing) information barrier policies.
+This article describes how to configure information barrier policies. Several steps are involved, so make sure you review entire process before you begin configuring information barrier policies.
 
 > [!TIP]
-> This article includes an [example scenario](#example-contosos-departments-segments-and-policies) and a [downloadable Excel workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) to help you plan and define your information barrier policies.
+> This article includes an [example scenario](#example-scenario-contosos-departments-segments-and-policies) to help you plan and define your information barrier policies.
 
-## Concepts of information barrier policies
+## Concepts
 
-When you define policies for information barriers, you'll work with user account attributes, segments, "block" and/or "allow" policies, and policy application.
+When you define policies for information barriers, you'll work with user account attributes, segments, 'block' and/or 'allow' policies, and policy application.
 
-- User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
-- Segments are sets of users that are defined in the Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
+- User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details.
+- Segments are sets of users that are defined in the Microsoft 365 compliance center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).)
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
-    - "Block" policies prevent one segment from communicating with another segment.
-    - "Allow" policies allow one segment to communicate with only certain other segments.
+  - *Block* policies prevent one segment from communicating with another segment.
+  - *Allow* policies allow one segment to communicate with only certain other segments.
 - Policy application is done after all information barrier policies are defined, and you are ready to apply them in your organization.
 
-## The work flow at a glance
+## Configuration at a glance
 
-| Phase | What's involved |
-|:--------|:------------------|
-| [Make sure prerequisites are met](#prerequisites) | - Verify that you have the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions)<br/>- Verify that your directory includes data for segmenting users<br/>- Enable scoped directory search for Microsoft Teams<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place<br/>- Use PowerShell (examples are provided)<br/>- Provide admin consent for Microsoft Teams (steps are included) |
-| [Part 1: Segment users in your organization](#part-1-segment-users) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
-| [Part 2: Define information barrier policies](#part-2-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
-| [Part 3: Apply information barrier policies](#part-3-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
-| (As needed) [Edit a segment or a policy](information-barriers-edit-segments-policies.md) | - Edit a segment<br/>- Edit or remove a policy<br/>- Rerun the policy application<br/>- View policy status |
-| (As needed) [Troubleshooting](information-barriers-troubleshooting.md)| - Take action when things are not working as expected|
+| **Steps** | **What's involved** |
+|:------|:----------------|
+| **Step 1**: [Make sure prerequisites are met](#step-1-make-sure-prerequisites-are-met) | - Verify that you have the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions)<br/>- Verify that your directory includes data for segmenting users<br/>- Enable scoped directory search for Microsoft Teams<br/>- Make sure audit logging is turned on<br/>- Make sure no Exchange address book policies are in place<br/>- Use PowerShell (examples are provided)<br/>- Provide admin consent for Microsoft Teams (steps are included) |
+| **Step 2**: [Segment users in your organization](#step-2-segment-users-in-your-organization) | - Determine what policies are needed<br/>- Make a list of segments to define<br/>- Identify which attributes to use<br/>- Define segments in terms of policy filters |
+| **Step 3**: [Define information barrier policies](#step-3-define-information-barrier-policies) | - Define your policies (do not apply yet)<br/>- Choose from two kinds (block or allow) |
+| **Step 4**: [Apply information barrier policies](#step-4-apply-information-barrier-policies) | - Set policies to active status<br/>- Run the policy application<br/>- View policy status |
+| **Step 5**: [Configuration for information barriers on SharePoint and OneDrive (optional)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - Configure information barriers for SharePoint and OneDrive |
+| **Step 6**: [Information barriers modes (optional)](#step-6-information-barriers-modes-preview) | - Update information barrier modes if applicable |
 
-## Prerequisites
+## Step 1: Make sure prerequisites are met
 
-In addition to the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions), make sure that the following requirements are met:
+In addition to the [required licenses and permissions](information-barriers.md#required-licenses-and-permissions), make sure that the following requirements are met before configuring information barriers:
 
-- Directory data - Make sure that your organization's structure is reflected in directory data. To take this action, make sure that user account attributes, such as group membership, department name, etc. are populated correctly in Azure Active Directory (or Exchange Online). To learn more, see the following resources:
+- **Directory data**: Make sure that your organization's structure is reflected in directory data. To take this action, make sure that user account attributes, such as group membership, department name, etc. are populated correctly in Azure Active Directory (or Exchange Online). To learn more, see the following resources:
   - [Attributes for information barrier policies](information-barriers-attributes.md)
   - [Add or update a user's profile information using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- Scoped directory search - Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
+- **Scoped directory search**: Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
 
-- EXO license - IB policies work only if the target users have been assigned an EXO license.
+- **Exchange Online licenses**: Information barriers policies work only if the target users have been assigned an Exchange Online license.
 
-- Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend you enable auditing before you begin to define segments or policies. To learn more, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
+- **Verify audit logging is enabled**: In order to look up the status of a policy application, audit logging must be turned on. Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step. For more information, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-- No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
+- **No address book policies**: Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
-    - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [Install the Azure PowerShell module](/powershell/azure/install-az-ps?view=azps-2.3.2)
+- **Manage using PowerShell**: Currently, information barrier policies are defined and managed in Security & Compliance Center PowerShell. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure Active Directory PowerShell module.
+  - [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
+  - [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2)
 
-- Admin consent for information barriers in Microsoft Teams -  When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
+- **Admin consent for information barriers in Microsoft Teams**: When your IB policies are in place, they can remove non-IB compliance users from Groups (i.e. Teams channels, which are based on groups). This configuration helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams.
 
-   1. Pre-requisite: Install Azure PowerShell from [Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+   1. Prerequisite: [Install Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
 
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Connect-AzAccount -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzAccount -Tenant "Contoso.onmicrosoft.com"
+      Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzureADServicePrincipal -Filter "appid eq '$($appid)'"
+      if ($sp -eq $null) { New-AzureADServicePrincipal -AppId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
    1. When prompted, sign in using your work or school account for Office 365.
 
    1. In the **Permissions requested** dialog box, review the information, and then choose **Accept**. The permissions requested by the App is given below.
-      
+
       > [!div class="mx-imgBorder"]
-      > ![image](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+      > ![image.](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
 
-
-When all the prerequisites are met, proceed to the next section.
+When all the prerequisites are met, proceed to the next step.
 
 > [!TIP]
-> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-contosos-departments-segments-and-policies).<p>In addition, a downloadable Excel workbook is available to help you plan and define your segments and policies (and create your PowerShell cmdlets). [Get the workbook](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> To help you prepare your plan, an example scenario is included in this article. [See Contoso's departments, segments, and policies](#example-scenario-contosos-departments-segments-and-policies).
 
-## Part 1: Segment users
+## Step 2: Segment users in your organization
 
-During this phase, you determine what information barrier policies are needed, make a list of segments to define, and then define your segments.
+During this step, you determine what information barrier policies are needed, make a list of segments to define, and then define your segments.
 
 ### Determine what policies are needed
 
@@ -138,7 +137,7 @@ Defining segments does not affect users; it just sets the stage for information 
     > [!IMPORTANT]
     > **Make sure that your segments do not overlap**. Each user who will be affected by information barriers should belong to one (and only one) segment. No user should belong to two or more segments. (See [Example: Contoso's defined segments](#contosos-defined-segments) in this article.)
 
-After you have defined your segments, proceed to [define information barrier policies](#part-2-define-information-barrier-policies).
+After you have defined your segments, proceed to [define information barrier policies](#step-3-define-information-barrier-policies).
 
 ### Using "equals" and "not equals" in segment definitions
 
@@ -166,7 +165,7 @@ In addition to defining segments using "equals" or "not equals", you can define 
 > [!TIP]
 > If possible, use segment definitions that include "-eq" or "-ne". Try not to define complex segment definitions.
 
-## Part 2: Define information barrier policies
+## Step 3: Define information barrier policies
 
 Determine whether you need to prevent communications between certain segments, or limit communications to certain segments. Ideally, you'll use the minimum number of policies to ensure your organization is compliant with legal and industry requirements.
 
@@ -201,7 +200,7 @@ For example, suppose you want to block communications between Segment A and Segm
 3. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to allow a segment to communicate only with one other segment](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment) 
-   - (After all your policies are defined) [Apply information barrier policies](#part-3-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
 
 ### Scenario 2: Allow a segment to communicate only with one other segment
 
@@ -222,9 +221,9 @@ For example, suppose you want to block communications between Segment A and Segm
 2. Proceed to one of the following actions:
 
    - (If needed) [Define a policy to block communications between segments](#scenario-1-block-communications-between-segments) 
-   - (After all your policies are defined) [Apply information barrier policies](#part-3-apply-information-barrier-policies)
+   - (After all your policies are defined) [Apply information barrier policies](#step-4-apply-information-barrier-policies)
 
-## Part 3: Apply information barrier policies
+## Step 4: Apply information barrier policies
 
 Information barrier policies are not in effect until you set them to active status, and then apply the policies.
 
@@ -246,7 +245,7 @@ Information barrier policies are not in effect until you set them to active stat
 
     After you run `Start-InformationBarrierPoliciesApplication`, allow 30 minutes for the system to start applying the policies. The system applies policies user by user. The system processes about 5,000 user accounts per hour.
 
-## View status of user accounts, segments, policies, or policy application
+### View status of user accounts, segments, policies, or policy application
 
 With PowerShell, you can view status of user accounts, segments, policies, and policy application, as listed in the following table.
 
@@ -260,18 +259,46 @@ With PowerShell, you can view status of user accounts, segments, policies, and p
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
-## What if I need to remove or change policies?
+### What if I need to remove or change policies?
 
 Resources are available to help you manage your information barrier policies.
 
-- If something goes wrong with information barriers, see [Troubleshooting information barriers](information-barriers-troubleshooting.md).
+- If something goes wrong with information barriers, see [Troubleshooting information barriers](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting).
 - To stop policies from being applied, see [Stop a policy application](information-barriers-edit-segments-policies.md#stop-a-policy-application).
 - To remove an information barrier policy, see [Remove a policy](information-barriers-edit-segments-policies.md#remove-a-policy).
 - To make changes to segments or policies, see [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md).
 
-## Example: Contoso's departments, segments, and policies
+## Step 5: Configuration for information barriers on SharePoint and OneDrive
 
-To see how an organization might approach defining segments and policies, consider the following example.
+If you're configuring information barriers for SharePoint and OneDrive, you'll need to enable information barriers on these services. You'll also need to enable information barriers on these services if you're configuring information barriers for Microsoft Teams. When a Microsoft Teams team is created, a SharePoint site is automatically created and associated with Microsoft Teams for the files experience. Information barrier policies aren't honored on this SharePoint site and files by default.
+
+To enable information barriers in SharePoint and OneDrive, follow the guidance and steps in the [Use information barriers with SharePoint](/sharepoint/information-barriers) article.
+
+## Step 6: Information barriers modes (preview)
+
+Modes can help strengthen access, sharing, and membership of a Microsoft 365 resource based on the resource's IB mode. Modes are supported on Microsoft 365 Groups, Microsoft Teams, OneDrive, and SharePoint sites and are automatically enabled in your new or existing IB configuration.
+
+>[!IMPORTANT]
+>If you've enabled information barriers in your tenant before October 15, 2021, additional steps aren't needed. If you are onboarding information barriers in your tenant after October 15, 2021, you'll need to set IB modes on all existing Microsoft 365 groups connected to Microsoft Teams to bring the groups into information barriers compliance.
+
+The following IB modes are supported on Microsoft 365 resources:
+
+| **Mode** | **Description** | **Example** |
+|:-----|:------------|:--------|
+| **Open** | There aren't any IB policies or segments associated with the Microsoft 365 resource. Anyone can be invited to be a member of the resource. | A team site created for picnic event for your organization. |
+| **Owner Moderated** | The IB policy of the Microsoft 365 resource is determined from the resource owner's IB policy. The resource owners can invite any user to the resource based on their IB policies. This mode is useful when your company wants to allow collaboration among incompatible segment users that are moderated by the owner. Only the resource owner can add new members per their IB policy. | The VP of the HR want to collaborate with the VPs of Sales and Research. A new SharePoint site that is set with IB mode *Owner Moderated* to add both Sales and Research segment users to the same site. It is the responsibility of the owner to ensure appropriate members are added to the resource. |
+| **Implicit** | The IB policy or segments of the Microsoft 365 resource is inherited from the resource members IB policy. The owner can add members as long as they are compatible with the existing members of the resource. This is the default IB mode for Microsoft Teams. | The Sales segment user creates a Microsoft Teams team to collaborate with other compatible segments in the organization. |
+| **Explicit** | The IB policy of the Microsoft 365 resource is per the segments associated with the resource. The resource owner or SharePoint administrator has the ability to manage the segments on the resource.  | A site created only for Sales segment members to collaborate by associating the Sales segment with the site.   |
+
+For more information about information barrier modes and how they are configured across services, see the following articles:
+
+- [Information barriers modes and Microsoft Teams](/microsoftteams/information-barriers-in-teams)
+- [Information barriers modes and OneDrive](/onedrive/information-barriers)
+- [Information barriers modes and SharePoint](/sharepoint/information-barriers)
+
+## Example scenario: Contoso's departments, segments, and policies
+
+To see how an organization might approach defining segments and policies, consider the following example scenario.
 
 ### Contoso's departments and plan
 

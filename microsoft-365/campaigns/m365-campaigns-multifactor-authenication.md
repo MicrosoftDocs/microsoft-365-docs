@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -26,7 +26,7 @@ search.appverid:
 description: "Set up multifactor authentication."
 ---
 
-# Set up multifactor authentication
+# Set up multifactor authentication on your mobile device
 
 Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
 

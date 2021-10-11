@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Adm_O365
@@ -68,6 +68,6 @@ You can track progress instantly:
 
 - Double-click an item to open it, and update the order's progress.
 
-## Related topics
+## Related content
 
 [Create a list from the Lists app](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

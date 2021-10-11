@@ -8,13 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
@@ -40,7 +39,7 @@ As Microsoft 365 admin, the **Reports** dashboard shows you data on the usage of
 
 You can view the activities in the Yammer report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft Yammer activity report.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer activity report - choose columns](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer activity report - choose columns.](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

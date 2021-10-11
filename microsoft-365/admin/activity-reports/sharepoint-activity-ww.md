@@ -8,13 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
@@ -41,7 +40,7 @@ For example, you can understand the activity of every user licensed to use Share
 
 You can view the activities in the SharePoint report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft SharePoint activity report.](../../media/5a0a96f-0e4f-4fb9-8baa-3262275b3d1f.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint activity report - choose columns](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint activity report - choose columns.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,6 +19,7 @@ search.appverid:
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: "Retain the contents of deleted mailboxes by using the inactive mailboxes feature in Microsoft 365."
 ---
 
@@ -56,11 +57,11 @@ For step-by-step procedures for placing a mailbox on Litigation Hold or applying
 - [Learn about retention policies and retention labels](retention.md)
 
 > [!NOTE]
-> For Litigation Holds and retention policies, you can create an indefinite hold or on a time-based hold. In an indefinite hold, the contents of the inactive mailbox will be retained forever, or until the hold is removed or until the hold duration is changed. After the hold or retention policy is removed (assuming that the mailbox was deleted more than 30 days ago), the inactive mailbox will be marked for permanent deletion and the contents of the mailbox will no longer be retained or discoverable. In a time-based hold or retention policy, you specify the duration of the hold. This duration is on a per-item basis and is calculated from the date a mailbox item was received or created. After the hold expires for a mailbox item, and that item moved to or is located in the Recoverable Items folder in the inactive mailbox, the item is permanently deleted (purged) from the inactive mailbox after the deleted item retention period expires.
+> For Litigation Holds and retention policies, you can create an indefinite hold or on a time-based hold. In an indefinite hold, the contents of the inactive mailbox will be retained forever, or until the hold is removed or until the hold duration is changed. After the hold or retention policy is removed (assuming that the mailbox was deleted more than 183 days ago), the inactive mailbox will be marked for permanent deletion and the contents of the mailbox will no longer be retained or discoverable. In a time-based hold or retention policy, you specify the duration of the hold. This duration is on a per-item basis and is calculated from the date a mailbox item was received or created. After the hold expires for a mailbox item, and that item moved to or is located in the Recoverable Items folder in the inactive mailbox, the item is permanently deleted (purged) from the inactive mailbox after the deleted item retention period expires. 
   
 ### Step 2: Delete the mailbox
 
-After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the Microsoft 365 admin center. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
+After the mailbox is placed on hold or a retention policy is applied to it, the next step is to delete the mailbox. The best way to delete a mailbox is to delete the corresponding user account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
   
 > [!NOTE]
 > You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
@@ -69,19 +70,19 @@ After the mailbox is placed on hold or a retention policy is applied to it, the 
 
 To view a list of the inactive mailboxes in your organization:
 
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for an Global administrator or a Compliance administrator account in your organization.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Information governance > Retention**.
+2. In the left navigation pane, click **Show all**, and then click **Information governance** > **Retention**.
 
-   ![Click the Inactive Mailbox button on the Retention page](../media/MCCInactiveMailboxes1.png)
+   ![Click the Inactive Mailbox button on the Retention page.](../media/MCCInactiveMailboxes1.png)
 
 3. On the **Retention** page, click **Inactive mailbox** to display a list of inactive mailboxes.
 
 4. Select an inactive mailbox to display a flyout page with information about the inactive mailbox.
 
-   ![The flyout page displays details about the inactive mailbox](../media/MCCInactiveMailboxes2.png)  
+   ![The flyout page displays details about the inactive mailbox.](../media/MCCInactiveMailboxes2.png)  
 
-You can click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
+You can click ![Export search results icon.](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Export** to view or download a CSV file that contains additional information about the inactive mailboxes in your organization.
 
 Alternatively, you can run the following command in Exchange Online PowerShell to display the list of inactive mailboxes.
 
@@ -100,7 +101,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
   
 ## Search and export the contents of an inactive mailbox
 
-You can access the contents of the inactive mailbox by using the Content Search tool in the Security & Compliance Center. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
+You can access the contents of the inactive mailbox by using the Content Search tool in the Microsoft 365 compliance center. When you search an inactive mailbox, you can create a keyword search query to search for specific items or you can return the entire contents of the inactive mailbox. You can preview the search results or export the search results to an Outlook Data (PST) file or as individual email messages. For step-by-step procedures for searching mailboxes and exporting search results, see the following topics:
   
 - [Content search](content-search.md)
 
@@ -128,4 +129,4 @@ If another employee takes on the job responsibilities of a former employee, or i
   
 ## Delete an inactive mailbox
 
-If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold or removing the retention policy applied to the inactive mailbox. If the mailbox was deleted more than 30 days ago, the mailbox will be marked for permanent deletion after you remove the hold, and the mailbox will become non-recoverable. If the mailbox was deleted within the last 30 days, you can still recover the mailbox after removing the hold or retention policy. For step-by-step procedures for removing a hold or a retention policy to permanently delete an inactive mailbox, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+If you no longer need to retain the contents of an inactive mailbox, you can permanently delete the inactive mailbox by removing the hold or removing the retention policy applied to the inactive mailbox. The mailbox will be retained for 183 days after you remove the hold or retention policy. After 183 days, the mailbox will be marked for permanent deletion, and the mailbox will become non-recoverable. If the inactive mailbox was deleted within the last 183 days, you can still recover it. For step-by-step procedures for removing a hold or a retention policy to permanently delete an inactive mailbox, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).

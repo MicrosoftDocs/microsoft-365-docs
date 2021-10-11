@@ -1,5 +1,5 @@
 ---
-title: Onboarding tools and methods for Windows 10 devices
+title: Onboarding methods and tools for Windows 10 devices
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:

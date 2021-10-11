@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -15,6 +15,9 @@ ms.technology: mdo
 ---
 
 # Create a custom payload for Attack simulation training
+
+**Applies to**
+ [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 Microsoft offers a robust payload catalog for various social engineering techniques to pair with your attack simulation training. However, you might want to create custom payloads that will work better for your organization. This article describes how to create a payload in Attack simulation training in Microsoft Defender for Office 365.
 
@@ -26,16 +29,19 @@ Next, select an associated technique. See more details on techniques at [Selecti
 
 In the next step name your payload. Optionally, you can give it a description.
 
+> [!NOTE]
+> Certain trademarks, logos, symbols, insignias and other source identifiers receive heighted protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
+
 ## Configure payload
 
-Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
+Now it's time to build your payload. Input the sender's name, email address, and the email's subject in the **Sender details** section. You can select a language in which the payload will be configured. Pick a phishing URL from the provided list. This URL will later be embedded into the body of the message.
 
 > [!TIP]
 > You can choose an internal email for your payload's sender, which will make the payload appear as coming from another employee of the company. This will increase susceptibility to the payload and will help educate employees on the risk of internal threats.
 
 A rich text editor is available to create your payload. You can also import an email that you've created beforehand. As you create the body of the email, take advantage of the **dynamic tags** to personalize the email to your targets. Click **Phishing link** to add the previously selected phishing URL into the body of the message.
 
-![Phishing link and dynamic tags highlighted in payload creation for Microsoft Defender for Office 365](../../media/attack-sim-preview-payload-email-body.png)
+![Phishing link and dynamic tags highlighted in payload creation for Microsoft Defender for Office 365.](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > To save time, toggle on the option to **replace all links in the email message with the phishing link**.
@@ -48,7 +54,7 @@ Indicators will help employees going through the attack simulation understand th
 
 Select an indicator you'd like to use from the drop-down list. This list is curated to contain the most common clues that appear in phishing email messages. Once selected, make sure the indicator placement is set to **From the body of the email** and click on **Select text**. Highlight the portion of your payload where this indicator appears and click **Select**.
 
-![Highlighted text in message body to add to an indicator in attack simulation training](../../media/attack-sim-preview-select-text.png)
+![Highlighted text in message body to add to an indicator in attack simulation training.](../../media/attack-sim-preview-select-text.png)
 
 Add a custom description to describe the indicator and click within the indicator preview frame to see a preview of your indicator. Once done, click **Add**. Repeat these steps until you've covered all indicators in your payload.
 

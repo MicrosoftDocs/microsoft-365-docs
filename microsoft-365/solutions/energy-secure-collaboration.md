@@ -10,13 +10,13 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 description: Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations.
 ms.custom: seo-marvel-jun2020
 ---
 
 # Key Compliance and Security Considerations for the Energy Industry
-![Illustration metaphor for a global view of various industries using the cloud](../media/solution-arch-center/MSC17_global_016.png)
+![Illustration metaphor for a global view of various industries using the cloud.](../media/solution-arch-center/MSC17_global_016.png)
 ## Introduction
 The energy industry provides society with fuel and critical infrastructure that people rely on every day. In order to ensure the reliability of infrastructure related to bulk power systems, regulatory authorities impose strict standards on energy industry organizations. These regulatory standards relate not only to the generation and transmission of power, but also to the data and communications that are critical to the day to day operations of energy companies. 
 
@@ -33,7 +33,7 @@ Regulatory standards that are recommended for consideration by energy organizati
 - Azure and Azure Government have each been granted a FedRAMP High P-ATO (Provisional Authorization to Operate), which represents the highest level of FedRAMP authorization. 
 
 For information about Microsoft cloud services and FedRAMP, see the following resources:
-- [Microsoft FedRAMP overview](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
+- [Microsoft FedRAMP overview](/compliance/regulatory/offering-FedRAMP)
 - [Office 365 FedRAMP reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

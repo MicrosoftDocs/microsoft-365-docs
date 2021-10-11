@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -55,7 +55,7 @@ To learn more about Office update channels, see [Overview of update channels for
 
 2. Select **Microsoft Defender Application Guard** under Windows Features and  select **OK**. Enabling the Application Guard feature will prompt a system reboot. You can choose to reboot now or after step 3.
 
-   ![Windows Features dialog box showing AG](../../media/ag03-deploy.png)
+   ![Windows Features dialog box showing AG.](../../media/ag03-deploy.png)
 
    The feature can also be enabled by running the following PowerShell command as administrator:
 
@@ -65,7 +65,7 @@ To learn more about Office update channels, see [Overview of update channels for
 
 3. Search for **Microsoft Defender Application Guard in Managed Mode**, a group policy in **Computer Configuration\\Administrative Templates\\Windows Components\\Microsoft Defender Application Guard**. Turn on this policy by setting the value under Options as **2** or **3**, and then selecting **OK** or **Apply**.
 
-   ![Turn on AG in Managed Mode](../../media/ag04-deploy.png)
+   ![Turn on AG in Managed Mode.](../../media/ag04-deploy.png)
 
    Instead, you can set the corresponding CSP policy:
 
@@ -84,15 +84,15 @@ device:
 
 1. Open **Settings** from the Start menu.
 
-   ![Start menu](../../media/ag05-diagnostic.png)
+   ![Start menu.](../../media/ag05-diagnostic.png)
 
 2. On **Windows Settings**, select **Privacy**.
 
-   ![Windows Settings menu](../../media/ag06-diagnostic.png)
+   ![Windows Settings menu.](../../media/ag06-diagnostic.png)
 
 3. Under Privacy, select **Diagnostics & feedback** and select **Optional diagnostic data**.
 
-   ![Diagnostics and feedback menu](../../media/ag07a-diagnostic.png)
+   ![Diagnostics and feedback menu.](../../media/ag07a-diagnostic.png)
 
 For more on configuring Windows diagnostic settings, refer to [Configuring Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
 
@@ -104,22 +104,21 @@ To confirm that Application Guard for Office is enabled, launch Word, Excel, or 
 
 When you first open an untrusted file, you may see an Office splash screen like the following example. It might be displayed for some time while Application Guard for Office is being activated and the file is being opened. Subsequent openings of untrusted files should be faster.
 
-![Office app splash screen](../../media/ag08-confirm.png)
+![Office app splash screen.](../../media/ag08-confirm.png)
 
 Upon being opened, the file should display a few visual indicators that the file was opened inside Application Guard for Office:
 
 * A callout in the ribbon
 
-  ![Doc file showing small App Guard note](../../media/ag09-confirm.png)
+  ![Doc file showing small App Guard note.](../../media/ag09-confirm.png)
 
 * The application icon with a shield in the taskbar
 
-  ![Icon in taskbar](../../media/ag12-limitations.png)
+  ![Icon in taskbar.](../../media/ag12-limitations.png)
 
 ## Configure Application Guard for Office
 
 Office supports the following policies to enable you to configure the capabilities of Application Guard for Office. These policies can be configured through Group policies or through the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
-See configuration set by your administrator by reviewing group policy settings in  **User Configuration\\Administrative Templates\\Microsoft Office 2016\\Security Settings\\Trust Center\\Application Guard**.
 
 
 > [!NOTE]
@@ -198,7 +197,7 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
 
 * Application Guard for Office is a protected mode that isolates untrusted documents so that they can't access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access will fail and produce a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document.
 
-  ![Dialog box saying To help you keep safe, this feature is not available](../../media/ag10-limitations.png)
+  ![Dialog box saying To help you keep safe, this feature is not available.](../../media/ag10-limitations.png)
 
   > [!NOTE]
   > Advise users to only remove protection if they trust the file and its source or where it came from.
@@ -233,6 +232,9 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 ## Known issues
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
-* Pasting rich text format (RTF) content or images in Office documents opened with Application Guard isn't supported at this time.
-* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types of Information Rights Management (IRM), CSV, or HTML.
+* The default setting for copy-paste protection policy is to enable clipboard access to text only.
+* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that have Microsoft Information Protection sensitivity labels using encryption (confidential or highly confidential).
+* CSV and HTML files are not supported at this time.
+* Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
 * Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).
+* Please see [Frequently asked questions - Microsoft Defender Application Guard for additional information.](/windows/security/threat-protection/microsoft-defender-application-guard/faq-md-app-guard) 

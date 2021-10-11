@@ -1,12 +1,12 @@
 ---
 title: Top scoring in industry tests - Microsoft 365 Defender
-ms.reviewer: 
+ms.reviewer:
 description: View the latest scores and analysis of Microsoft 365 Defender. It consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
-keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
+keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Windows 11 Microsoft Defender Antivirus, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -34,17 +34,17 @@ Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endp
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
-Core to MITRE’s testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE’s simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded defenders’ visibility beyond the endpoint with Microsoft 365 Defender.
+Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded defenders' visibility beyond the endpoint with Microsoft 365 Defender.
 
 - ATT&CK-based evaluation of Microsoft 365 Defender - May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
+ Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
 ## Next generation protection
 
 [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) consistently performs highly in independent tests, displaying how it's a top choice in the antivirus market. Keep in mind, these tests only provide results for antivirus and don't test for additional security protections.
 
-Microsoft Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the [Microsoft Defender for Endpoint Windows 10 security stack](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) that addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). That's because Microsoft Defender Antivirus and other [endpoint protection platform (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) capabilities in Defender for Endpoint detect and stop malware at first sight. They use [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), behavioral analysis, and other advanced technologies.
+Microsoft Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the [Microsoft Defender for Endpoint Windows security stack](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) that addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). That's because Microsoft Defender Antivirus and other [endpoint protection platform (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) capabilities in Defender for Endpoint detect and stop malware at first sight. They use [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), behavioral analysis, and other advanced technologies.
 
 ### AV-TEST: Protection score of 6.0/6.0 in the latest test
 
@@ -74,7 +74,7 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 - Business Security Test 2020 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- Business Security Test 2019 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Business Security Test 2019 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - Business Security Test 2019 (March - June): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 

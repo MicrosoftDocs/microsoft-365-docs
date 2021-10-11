@@ -9,6 +9,8 @@ ms.custom: ""
 ms.topic: conceptual
 author: "samanro"
 ms.author: "samanro"
+manager: pamgreen
+ms.collection: Adm_TOC
 ---
 # Microsoft 365 docs navigation guide
 
@@ -20,7 +22,7 @@ The Microsoft 365 hub page can be found at [https://aka.ms/microsoft365docs](./i
 
 You can always navigate back to this page by selecting **Microsoft 365** from the header at the top of every page within the Microsoft 365 technical documentation set:
 
-![Microsoft 365 in header](media/m365-header-cursor.png)
+![Microsoft 365 in header.](media/m365-header-cursor.png)
 
 ## Offline documentation
 
@@ -28,37 +30,37 @@ If you would like to view the Microsoft 365 documentation on an offline system, 
 
 If you'd like to create a PDF, select the **Download PDF** link found at the bottom of every table of contents.
 
-![Download PDF](media/m365-download-pdf-cursor.png)
+![Download PDF.](media/m365-download-pdf-cursor.png)
 
 ## TOC search 
 On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
 
-![Use filter box](media/m365-filter-by-title.png)
+![Use filter box.](media/m365-filter-by-title.png)
 
 ## Version filter
 The Microsoft 365 technical documentation provides content for additional products, including Office 365 Germany and Office 365 operated by 21 Vianet (China). Features can vary between these versions, and as such, sometimes the content itself can vary.
 
 You can use the version filter to ensure that you are seeing content for the appropriate version of Microsoft 365:
 
-![Microsoft 365 version filter](media/m365-version-filter.png)
+![Microsoft 365 version filter.](media/m365-version-filter.png)
 
 ## Breadcrumbs
 
 Breadcrumbs can be found below the header and above the table of contents, and indicate where the current article is located in the table of contents.  Not only does this help set the context to what type of content you're reading, but it also allows you to navigate back up the table of contents tree:
 
-![Microsoft 365 breadcrumbs](media/m365-breadcrumb.png)
+![Microsoft 365 breadcrumbs.](media/m365-breadcrumb.png)
 
 ## Article section navigation
 
 The right-hand navigation pane allows you to quickly navigate to sections within an article, as well as identify your location within the article.  
 
-![Right-hand navigation](media/m365-article-sections.png)
+![Right-hand navigation.](media/m365-article-sections.png)
 
 ## Submit docs feedback
 
 If you find something wrong within an article, you can submit feedback to the SQL Content team for that article by scrolling down to the bottom of the page and selecting **Content feedback**.
 
-![Git Issue content feedback](media/m365-article-feedback.png)
+![Git Issue content feedback.](media/m365-article-feedback.png)
 
 ## Contribute to Microsoft 365 documentation
 

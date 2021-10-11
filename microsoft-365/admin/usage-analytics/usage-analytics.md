@@ -8,12 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
@@ -22,8 +24,6 @@ description: "Get an overview of how your organization is adopting Microsoft 365
 ---
 
 # Microsoft 365 usage analytics
-
-## Overview of Microsoft 365 usage analytics
 
 Use Microsoft 365 usage analytics within Power BI to gain insights on how your organization is adopting the various services within Microsoft 365. You can visualize and analyze Microsoft 365 usage data, create custom reports and share the insights within your organization. You can also gain insights into how specific regions or departments are using Microsoft 365.
   
@@ -55,7 +55,7 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 - **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Yammer, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
 
-- **Collaboration** &ndash; See how people in your organization use OneDrive and SharePoint to store documents and collaborate with each other, and how these trends evolve month over month. You can also see how many documents are shared internally or externally and how many SharePoint sites or OneDrive accounts are actively being used, broken out by owners and other collaborators.
+- **Collaboration** &ndash; See how people in your organization use OneDrive and SharePoint to store documents and collaborate with each other, and how these trends evolve month over month. You can also see how many users shared documents internally or externally and how many users used SharePoint sites or OneDrive accounts, broken out by owners and other collaborators.
 
 - **Storage** &ndash; Use this report to track cloud storage for mailboxes, OneDrive, and SharePoint sites.
 
@@ -75,7 +75,7 @@ This report contains a separate report for each Microsoft 365 service, including
 
 ## User activity
 
-User activity reports are available for certain individual services. These reports provide user-level detail usage data joined with Active Directory attributes. In addition, the Department Adoption report lets you slice by Active Directory attributes so that you can see active users across all individual services. All metrics are aggregated for the latest complete month.
+User activity reports are available for certain individual services. These reports provide user-level detail usage data joined with Active Directory attributes. In addition, the Department Adoption report lets you slice by Active Directory attributes so that you can see active users across all individual services. All metrics are aggregated for the latest complete month. To view the content date, navigate to the table page and select UserActivity table where the value under TimeFrame provides the reporting period. 
 
 ## FAQ
 
@@ -84,6 +84,9 @@ User activity reports are available for certain individual services. These repor
 It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
 To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### Is the Usage Summary Reports Reader role enough to view the usage analytics?
+
+The Usage Summary Reports Reader role only allows access to tenant level aggregates in Microsoft 365 usage analytics.  We recommend the Reports Reader or Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but is not necessarily an IT administrator.
 
 ### Who can connect to Microsoft 365 usage analytics?
 
@@ -99,7 +102,7 @@ In addition to customizing the reports from the Power BI web interface, users ca
 
 ### How can I get the pbit file that this dashboard is associated with?
 
-You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit).
+You can access to the pbit file from the [Microsoft Download center](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit). 
 
 ### Who can view the dashboards and reports?
 
@@ -195,7 +198,7 @@ This is currently not on the roadmap.
 
 ### I have a specific question about the data I'm seeing for my organization. Who can I reach out to?
 
-You can use the feedback button in the admin center activity overview page, or you can open a [support case](../contact-support-for-business-products.md) to get help with the template app. 
+You can use the feedback button in the admin center activity overview page, or you can open a [support case](../../business-video/get-help-support.md) to get help with the template app. 
 
 ### How can partners access the data?
 
@@ -204,3 +207,9 @@ If a partner has delegated admin rights, he or she can connect to the template a
 ### Can I hide identifiable information such as user, group, and site names in reports?
 
 Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-collected-data-anonymous).
+
+## Related content
+
+[Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)\
+[Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)\
+[Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)

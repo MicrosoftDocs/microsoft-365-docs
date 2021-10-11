@@ -9,7 +9,7 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -27,7 +27,7 @@ First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md),
 
 Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
-- [COVID-19 response and infrastructure for remote and onsite work](contoso-remote-onsite-work.md)
+- [COVID-19 response and infrastructure for hybrid work](contoso-remote-onsite-work.md)
 
 - [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
 

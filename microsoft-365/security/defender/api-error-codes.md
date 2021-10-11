@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -57,7 +57,7 @@ DisabledFeature | Forbidden (403) | Tenant feature is not enabled.
 DisallowedOperation | Forbidden (403) | \<the disallowed operation and the reason\>.
 NotFound | Not Found (404) | General Not Found error message.
 ResourceNotFound | Not Found (404) | Resource \<the requested resource\> was not found.
-InternalServerError | Internal Server Error (500) | *Note: No error message,  retry the operation or contact Microsoft if it does not get resolved*
+InternalServerError | Internal Server Error (500) | *Note: No error message,  retry the operation or [contact Microsoft](/microsoft-365/business-video/get-help-support) if it does not get resolved*
 
 ## Examples
 

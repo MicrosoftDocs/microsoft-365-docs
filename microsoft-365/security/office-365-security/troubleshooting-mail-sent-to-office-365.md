@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: troubleshooting
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059

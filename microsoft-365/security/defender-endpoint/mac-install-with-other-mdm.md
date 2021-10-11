@@ -2,15 +2,13 @@
 title: Deployment with a different Mobile Device Management (MDM) system for Microsoft Defender for Endpoint on Mac
 description: Install Microsoft Defender for Endpoint on Mac on other management solutions.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: mavel
 author: maximvelichko
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
  
 ## Prerequisites and system requirements
 
@@ -64,7 +62,7 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 ### Package
 
 Configure deployment of a [required application package](mac-install-with-jamf.md), 
-with the installation package (wdav.pkg) downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
+with the installation package (wdav.pkg) downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
@@ -74,7 +72,7 @@ Set up [a system configuration profile](mac-install-with-jamf.md).
 
 Your MDM solution may call it something like "Custom Settings Profile", as Microsoft Defender for Endpoint on macOS is not part of macOS.
 
-Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft Defender Security Center](mac-install-with-jamf.md).
+Use the property list, jamf/WindowsDefenderATPOnboarding.plist, which can be extracted from an onboarding package downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 Your system may support an arbitrary property list in XML format. You can upload the jamf/WindowsDefenderATPOnboarding.plist file as-is in that case.
 Alternatively, it may require you to convert the property list to a different format first.
 
@@ -112,7 +110,7 @@ Grant Full Disk Access to the following components:
 
 ### Network extension policy
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 - Filter type: Plugin
 - Plugin bundle identifier: `com.microsoft.wdav`

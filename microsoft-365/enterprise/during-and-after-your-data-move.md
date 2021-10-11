@@ -3,16 +3,15 @@ title: "During and after your data move"
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/10/2019
+ms.date: 09/22/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 ms.collection: SPO_Content
 search.appverid:
 - MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
-
 f1.keywords:
 - NOCSH
 description: "Data moves are back-end operations that occur when Microsoft moves services and associated data for your tenant to a new datacenter geo."
@@ -61,7 +60,7 @@ Some users open a shared mail folder from another mailbox (that the user has rea
 
 When SharePoint Online is moved, data for the following services is also moved:
   
-- One Drive for Business
+- OneDrive for Business
     
 - Microsoft 365 Video services
     
@@ -99,14 +98,17 @@ The following search features are affected:
     
 - Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
 
+As part of the migration, the default region will change and all new content will be stored at rest in the new default region. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
+
 ## Microsoft Teams
 
-In addition to Exchange Online, SharePoint Online, and OneDrive for Business, Microsoft will migrate Teams chat service data to the local datacenter.
+### Files tab
 
-- Teams chat messages, including private messages and channel messages.
-- Teams images used in chats.
+After the migration is complete the Files tab may take additional time (up to 7 seconds) to fully load when the user first attempts to use it. 
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, chat history, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries.
+### Read-only period
+
+Teams chat services moves each thread individually.  The thread is locked in a read-only state during the move, which lasts a few seconds per thread.  Threads remain accessible during the migration.
 
 ## Skype for Business
 
@@ -116,7 +118,7 @@ Skype for Business moves are no longer available.  [Skype for Business Online wi
  
 [How to request your data move](request-your-data-move.md)
     
-[Data move general FAQ](data-move-faq.md)
+[Data move general FAQ](data-move-faq.yml)
   
 [New datacenter geos for Microsoft Dynamics CRM Online](/power-platform/admin/new-datacenter-regions)
   

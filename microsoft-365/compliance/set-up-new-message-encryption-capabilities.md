@@ -9,15 +9,17 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
-search.appverid: 
+ms.localizationpriority: high
+search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
-ms.collection: 
+ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Learn about the new Office 365 Message Encryption capabilities that enable protected email communication with people inside and outside your organization.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkMAC
 ---
 
 # Set up new Message Encryption capabilities
@@ -34,13 +36,13 @@ The only prerequisite for using the new OME capabilities is that [Azure Rights M
 
 Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](/azure/information-protection/activate-service) for more information.
 
->[!IMPORTANT]
->If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use the new OME capabilities. OME is not compatible with AD RMS.  
+> [!IMPORTANT]
+> If you use Active Directory Rights Management service (AD RMS) with Exchange Online, you need to [migrate to Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) before you can use the new OME capabilities. OME is not compatible with AD RMS.
 
 For more information, see:
 
 - [What subscriptions do I need to use the new OME capabilities?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-) to check whether your subscription plan includes Azure Information Protection (which includes Azure RMS functionality).
-- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) for information about purchasing an eligible subscription.  
+- [Azure Information Protection](https://azure.microsoft.com/services/information-protection/) for information about purchasing an eligible subscription.
 
 ### Manually activating Azure Rights Management
 
@@ -58,7 +60,7 @@ There are many reasons, for example compliance requirements, that may necessitat
 ## Verify new OME configuration in Exchange Online PowerShell
 
 You can verify that your Microsoft 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
-  
+
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Microsoft 365 tenant.
 
 2. Run the Get-IRMConfiguration cmdlet.
@@ -67,21 +69,21 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
 
 3. Run the Test-IRMConfiguration cmdlet using the following syntax:
 
-     ```powershell
-     Test-IRMConfiguration [-Sender <email address >]
-     ```  
+   ```powershell
+   Test-IRMConfiguration [-Sender <email address> -Recipient <email address>]
+   ```
 
    **Example**:
 
-     ```powershell
-     Test-IRMConfiguration -Sender securityadmin@contoso.com
-     ```
+   ```powershell
+   Test-IRMConfiguration -Sender securityadmin@contoso.com -Recipient securityadmin@contoso.com
+   ```
 
-     - Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Microsoft 365 tenant.
+   - For sender and recipient, use the email address of any user in your Microsoft 365 tenant.
 
      Your results should be similar to:
 
-     ```text
+     ```console
      Results : Acquiring RMS Templates ...
                 - PASS: RMS Templates acquired.  Templates available: Contoso  - Confidential View Only, Contoso  - Confidential, Do Not
             Forward.
@@ -109,16 +111,16 @@ You can verify that your Microsoft 365 tenant is properly configured to use the 
 
 If there are previously configured mail flow rules to encrypt email in your organization, you need to update the existing rules to use the new OME capabilities. For new deployments, you need to create new mail flow rules.
 
->[!IMPORTANT]
->If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new seamless OME experience.
+> [!IMPORTANT]
+> If you do not update existing mail flow rules, your users will continue to receive encrypted mail that uses the previous HTML attachment format, instead of the new seamless OME experience.
 
 Mail flow rules determine under what conditions email messages should be encrypted, as well as conditions for removing that encryption. When you set an action for a rule, any messages that match the rule conditions are encrypted when they're sent.
-  
+
 For steps on creating mail flow rules for OME, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
 To update existing rules to use the new OME capabilities:
 
-1. In the Microsoft 365 admin center, go to **Admin centers > Exchange**.
+1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Admin centers > Exchange**.
 2. In the Exchange admin center, go to **Mail flow > Rules**.
 3. For each rule, in **Do the following**:
     - Select **Modify the message security**.

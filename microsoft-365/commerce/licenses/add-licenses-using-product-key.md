@@ -5,23 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
 ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
-ROBOTS: NOINDEX
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to add licenses to or extend your subscription with a product key."
+ROBOTS: NOINDEX
+ms.date: 04/07/2021
 ---
 
 # Add licenses to or extend a subscription paid for using a product key
