@@ -33,7 +33,7 @@ This guide provides information about investigating and remediating app governan
 - Defense Evasion
 - Credential Access
 - Discovery
-- Later Movement
+- Lateral Movement
 - Collection
 - Exfiltration
 - Impact
