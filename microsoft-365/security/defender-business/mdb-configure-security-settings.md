@@ -23,4 +23,4 @@ ms.collection:
 After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. You can choose from two main options:
 
 - Use the simplified configuration process in Microsoft Defender for Business (recommended); or 
-- Use Micrsoft Endpoint Manager (MEM)
+- Use Microsoft Endpoint Manager (MEM)
