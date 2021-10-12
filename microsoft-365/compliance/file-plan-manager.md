@@ -182,6 +182,6 @@ Use the following information to help you fill out the downloaded template to im
 
 ## Next steps
 
-For more information about creating and editing retention labels and their policies, see the following guidance:
+For more information about creating, editing, and applying retention labels, see the following two scenarios:
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
