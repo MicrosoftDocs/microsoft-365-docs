@@ -40,13 +40,13 @@ If you are not familiar with DLP at all, you should familiarize yourself with th
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
 Your macOS devices must already be managed through Intune or JAMF Pro. 
-- To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - Install the v93+ Edge browser on your macOS devices 
 
 ## Licensing guidance
 
-see [Microsoft 365 licensing guidance for information protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ## Supported actions 
 
