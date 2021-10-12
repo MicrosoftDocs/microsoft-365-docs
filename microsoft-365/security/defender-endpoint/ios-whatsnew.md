@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: sunasing
 author: sunasing
-localization_priority: normal
+ms.localizationpriority: medium
 manager: sunasing
 audience: ITPro
 ms.collection: 

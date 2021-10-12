@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -78,18 +78,13 @@ Microsoft Defender for Endpoint supports a variety of endpoints that you can onb
 
 The following table shows the supported endpoints and the corresponding tool you can use to onboard devices to the service.
 
-<br>
-
-****
-
-|Endpoint|Deployment tool|
-|---|---|
-|**Windows**|[Local script (up to 10 devices)](configure-endpoints-script.md) <p> **NOTE**: If you want to deploy more than 10 devices in a production environment, use the Group Policy method instead or the other supported tools listed below. <p> [Group Policy](configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <p> [VDI scripts](configure-endpoints-vdi.md) <p> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)|
-|**macOS**|[Local script](mac-install-manually.md) <p> [Microsoft Endpoint Manager](mac-install-with-intune.md) <p> [JAMF Pro](mac-install-with-jamf.md) <p> [Mobile Device Management](mac-install-with-other-mdm.md)|
-|**Linux Server**|[Local script](linux-install-manually.md) <p> [Puppet](linux-install-with-puppet.md) <p> [Ansible](linux-install-with-ansible.md)|
-|**iOS**|[App-based](ios-install.md)|
-|**Android**|[Microsoft Endpoint Manager](android-intune.md)|
-|
+| Endpoint     | Deployment tool                       |
+|--------------|------------------------------------------|
+| **Windows**  |  [Local script (up to 10 devices)](configure-endpoints-script.md) <br> NOTE: If you want to deploy more than 10 devices in a production environment, use the Group Policy method instead or the other supported tools listed below.<br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md) <br> [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)  |
+| **macOS**    | [Local script](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md) |
+| **Linux Server** | [Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
+| **iOS**      | [Microsoft Endpoint Manager](ios-install.md)                                |
+| **Android**  | [Microsoft Endpoint Manager](android-intune.md)               |
 
 ### Full deployment
 

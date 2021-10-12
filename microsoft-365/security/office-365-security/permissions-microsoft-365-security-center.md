@@ -9,7 +9,7 @@ ms.date:
 ms.audience: Admin
 ms.topic: article
 audience: Admin
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
   - M365-security-compliance
 search.appverid: 

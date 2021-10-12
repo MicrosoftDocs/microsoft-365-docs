@@ -9,7 +9,7 @@ ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
@@ -395,4 +395,4 @@ Although DKIM is designed to help prevent spoofing, DKIM works better with SPF a
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Use DMARC to validate email](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
