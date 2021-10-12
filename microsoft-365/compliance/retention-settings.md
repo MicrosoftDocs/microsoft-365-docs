@@ -39,7 +39,7 @@ For overview information about policies for retention and how retention works in
 
 If you are unfamiliar with adaptive and static scopes, and to help you choose which scope to use when you configure a policy for retention, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). 
 
-Use the following information to help you configure [adaptive scopes](#configuration-information-for-adaptive-scopes) or [static scopes](#configuration-information-for-static-scopes).
+Use the following information to help you configure [adaptive scopes](#configuration-information-for-adaptive-scopes) or [static scopes](#configuration-information-forstatic-scopes).
 
 ### Configuration information for adaptive scopes
 
