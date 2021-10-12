@@ -1,5 +1,5 @@
 ---
-title: Choose where to manage Microsoft Defender for Business
+title: The simplified configuration process in Microsoft Defender for Business
 description: See how to set up and configure Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Choose where to manage your policies and settings
+# The simplified configuration process in Microsoft Defender for Business
 
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
 - The simplified configuration process in Microsoft Defender for Business; or 
