@@ -20,10 +20,10 @@ ms.collection:
 
 # Get started using Microsoft Defender for Business
 
-After your setup and configuration process is complete for your company, the best way to get started using Microsoft Defender for Business is by visiting your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and signing in with your user account for Microsoft 365. 
-
 > [!TIP]
 > If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
+After your setup and configuration process is complete for your company, the best way to get started using Microsoft Defender for Business is by visiting your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and signing in with your user account for Microsoft 365. 
 
 The following sections describe the kinds of things you can do in the Microsoft 365 Defender portal.
 
