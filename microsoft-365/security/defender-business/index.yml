@@ -71,5 +71,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Choosing a portal
+            url: mdb-choose-portal.md
           - text: Configuration settings
             url: mdb-configuration-settings.md
