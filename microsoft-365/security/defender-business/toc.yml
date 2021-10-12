@@ -22,7 +22,7 @@
       - name: Onboard devices 
         href: mdb-onboard-devices.md
       - name: Configure your security settings
-        href: mdb-view-edit-device-policies.md
+        href: mdb-configure-security-settings.md
     - name: Get started using Defender for Business
       items: 
       - name: Navigate the portal
@@ -33,8 +33,12 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
+    - name: Manage settings and devices
+      items: 
       - name: Manage devices
         href: mdb-manage-devices.md
+      - name: View and edit device policies
+        href: mdb-view-edit-device-policies.md
     - name: Reference information
       items: 
       - name: Choosing your setup experience
