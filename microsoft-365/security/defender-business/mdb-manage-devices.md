@@ -28,7 +28,7 @@ In Microsoft Defender for Business, you can manage devices as follows:
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
 > [!NOTE]
-> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for Business. For more information, see [Why we recommend using the Microsoft 365 Defender portal to manage your security solution](mdb-choose-portal.md#why-we-recommend-using-the-microsoft-365-defender-portal-to-manage-your-security-solution).
+> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for Business. For more information, see [Why we recommend using the simplified configuration experience](mdb-choose-portal.md#why-we-recommend-using-the-simplified-configuration-experience).
 
 ## View the list of onboarded devices
 
