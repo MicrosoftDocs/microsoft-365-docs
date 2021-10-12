@@ -13,7 +13,7 @@ metadata:
   - M365-security-compliance
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 09/30/2021
+  ms.date: 10/12/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -29,25 +29,25 @@ landingContent:
             url: mdb-overview.md
           - text: Compare plans for small and midsized businesses
             url: compare-mdb-m365bp.md
+          - text: Requirements
+            url: mdb-requirements.md
+          - text: How to get Defender for Business
+            url: get-defender-business.md
 
   # Card
   - title: Set up
     linkLists:
       - linkListType: deploy
         links:
-          - text: Review the process
+          - text: Review the setup process
             url: mdb-setup-configuration.md
-          - text: View the requirements
-            url: mdb-requirements.md
-          - text: Get Defender for Business
-            url: get-defender-business.md
           - text: Assign roles and permissions
             url: mdb-roles-permissions.md
           - text: Set up email notifications
             url: mdb-email-notifications.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
-          - text: Configure security settings
+          - text: View and edit your security settings
             url: mdb-view-edit-device-policies.md
 
   # Card
