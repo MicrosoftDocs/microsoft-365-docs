@@ -14,7 +14,7 @@
         href: get-defender-business.md
     - name: Setup and configuration
       items:
-      - name: Setup and configuration
+      - name: Process overview
         href: mdb-setup-configuration.md
       - name: Assign roles and permissions
         href: mdb-roles-permissions.md
