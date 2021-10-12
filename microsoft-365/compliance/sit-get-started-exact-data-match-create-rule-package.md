@@ -173,4 +173,3 @@ When you set up your rule package, make sure to correctly reference your .csv, .
 ## Next step
 
 -  [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
-
