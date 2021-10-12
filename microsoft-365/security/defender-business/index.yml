@@ -67,19 +67,6 @@ landingContent:
             url: mdb-manage-devices.md
 
   # Card
-  - title: How do I ...?
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: View and manage incidents
-            url: mdb-view-manage-incidents.md
-          - text: Respond to threats
-            url: mdb-respond-mitigate-threats.md
-          - text: Review remediation actions
-            url: mdb-review-remediation-actions.md
-          - text: Manage devices
-            url: mdb-manage-devices.md
-   # Card
   - title: Reference
     linkLists:
       - linkListType: reference
