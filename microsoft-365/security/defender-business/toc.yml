@@ -15,12 +15,12 @@
       items:
       - name: Process overview
         href: mdb-setup-configuration.md
+      - name: Choose which portal to use
+        href: mdb-choose-portal.md
       - name: Assign roles and permissions
         href: mdb-roles-permissions.md
       - name: Set up email notifications
         href: mdb-email-notifications.md
-      - name: Choose which portal to use
-        href: mdb-choose-portal.md
       - name: Onboard devices 
         href: mdb-onboard-devices.md
       - name: Configure your security settings
