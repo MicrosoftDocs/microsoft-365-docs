@@ -26,7 +26,7 @@ Microsoft Defender for Business is designed with the busy small and midsized bus
 
 Are you already using Microsoft Endpoint Manager (MEM) to manage your company's devices and security settings?
 
-- If not, skip to [Onboarding methods in the Microsoft 365 Defender portal](#onboarding-methods-in-the-microsoft-365-defender-portal)
+- If you are not already using MEM, skip to [Onboarding methods in the Microsoft 365 Defender portal](#onboarding-methods-in-the-microsoft-365-defender-portal).
 - If you are already using MEM, choose between [automatic onboarding](#automatic-onboarding) or [manual onboarding](#manual-onboarding) in MEM.
 
 ### Automatic onboarding
