@@ -57,15 +57,30 @@ landingContent:
         links:
           - text: Navigate the portal
             url: mdb-get-started.md
+
+  # Card
+  - title: Use
+    linkLists:
+      - linkListType: how-to-guide
+        links:
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
           - text: Respond to and mitigate threats
             url: mdb-respond-mitigate-threats.md
           - text: Review remediation actions
             url: mdb-review-remediation-actions.md
+
+
+  # Card
+  - title: Manage
+    linkLists:
+      - linkListType: how-to-guide
+        links:
           - text: Manage devices
             url: mdb-manage-devices.md
-
+          - text: view and edit security policies and settings
+            url: mdb-view-edit-device-policies.md
+ 
   # Card
   - title: Reference
     linkLists:
