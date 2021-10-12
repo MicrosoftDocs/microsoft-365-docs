@@ -79,18 +79,16 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified. 
 
-To verify the TXT record in Microsoft 365 admin center:
+To verify the record in Microsoft 365:
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the **Domains** page, select the domain that you are verifying. 
+2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
   
-3. On the **Setup** page, select **Start setup**.
-   
-4. On the **Verify domain** page, select **Verify**.
+3. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Add an MX record so email for your domain will come to Microsoft
 
@@ -211,8 +209,8 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 hr  <br/> |
+    |CNAME  <br/> |enterpriseregistration <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
   
 1. Select **Save**.
   

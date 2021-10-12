@@ -28,7 +28,9 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
->[!IMPORTANT] This registrar is automatically verified and set up through a service called Domain Connect. The steps that follow replace the manual steps later in this article. 
+If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+
+>[!IMPORTANT] This registrar is automatically verified and set up for Microsoft 365 through a service called Domain Connect. These steps for automatic verification replace the steps for manual verification and setup later in this article. 
 
 To use Domain Connect to verify and set up your Cloudflare hosted domain with Microsoft 365:
 
@@ -44,16 +46,14 @@ To use Domain Connect to verify and set up your Cloudflare hosted domain with Mi
     
     This completes your domain setup for Microsoft 365. 
 
-## Create DNS records with manual setup
+## Create DNS records with manual setup (Not recommended)
 
-If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
-  
 After you add these records at Cloudflare, your domain will be set up to work with Microsoft 365 services.
 
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Change your domain's nameserver (NS) records
+### Change your domain's nameserver (NS) records
 
 > [!IMPORTANT]
 > You must perform this procedure at the domain registrar where you purchased and registered your domain. 
@@ -81,7 +81,7 @@ To change your domain's name servers at your domain registrar's website yourself
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
-## Add a TXT record for verification
+### Add a TXT record for verification
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -106,21 +106,19 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and search for the record. When Microsoft finds the correct TXT record, your domain is verified.
-
-To verify your domain in Microsoft 365:
   
-1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+To verify the record in Microsoft 365:
   
-2. On the **Domains** page, select the domain that you are verifying. 
-  
-3. On the **Setup** page, select **Start setup**.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-4. On the **Verify domain** page, select **Verify**.  
+2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
   
+3. On the **Verify domain** page, select **Verify**.
+    
 > [!NOTE]
->  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-  
-## Add an MX record so email for your domain will come to Microsoft
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+    
+### Add an MX record so email for your domain will come to Microsoft
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
   
@@ -140,8 +138,7 @@ To verify your domain in Microsoft 365:
   
 7. In the confirmation dialog box, select **Delete** to confirm your changes. 
 
-  
-## Add the CNAME record required for Microsoft
+### Add the CNAME record required for Microsoft
 
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
       
@@ -156,11 +153,7 @@ To verify your domain in Microsoft 365:
     
     | Type | Name | Target | TTL |
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 minutes  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |30 minutes  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |30 minutes  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |30 minutes  <br/> |
+    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |> |
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
   
 5. Select the **DNS Traffic** icon (change orange cloud to grey) to bypass the Cloudflare servers.
@@ -169,7 +162,7 @@ To verify your domain in Microsoft 365:
   
 7. Add each of the other five CNAME records.
     
-## Add a TXT record for SPF to help prevent email spam
+### Add a TXT record for SPF to help prevent email spam
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
@@ -188,33 +181,6 @@ To verify your domain in Microsoft 365:
  
 5. Select **Save**.
   
-## Add the two SRV records that are required for Microsoft
-
-> [!IMPORTANT]
-> Keep in mind that Cloudflare is responsible for making this functionality available. In case you see discrepancies between the steps below and the current Cloudflare GUI (Graphical User Interface), leverage the [Cloudflare Community](https://community.cloudflare.com/). 
-
-1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
-      
-2. On the **Home** page, select the domain that you want to update. 
-  
-3. On the **Overview** page for your domain, select **DNS**.
-  
-4. Add the first of the two SRV records.
-
-    On the **DNS management** page, click **Add record**, and then select the values from the first row of the following table.
-        
-    | Type | Service | Protocol | Name | TTL | Priority | Weight | Port | Target |
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Use your *domain_name*; for example, contoso.com  |30 minutes | 100|1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Use your *domain_name*; for example, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
-  
-5. Select **Save**.
-
-6. Add the other SRV record by choosing the values from the second row of the table. 
- 
-> [!NOTE]
->  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
-
 ## Advanced option: Skype for Business
 
 Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
@@ -246,18 +212,14 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
 
-### Add the two required CNAME records 
+### Add the two required CNAME records
   
 1. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
-    
-    ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 1. In the **Type** drop-down, select **CNAME**.
     
     > [!NOTE]
     > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**. 
-  
-    ![Namecheap-BP-Configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
   
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
     
@@ -265,12 +227,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-       
-    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
 1. Select the **Save Changes** (check mark) control. 
-    
-    ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
 1. Using the preceding four steps and the values from the second row in the table, add the other CNAME record.
     
@@ -284,31 +242,19 @@ This service helps you secure and remotely manage mobile devices that connect to
 ### Add the two required CNAME records
 
 1. To get started, go to your domains page at Namecheap by using [this link](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). You'll be prompted to sign in.
-    
-    ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
 2. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
-    
-    ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
 3. On the **Domain List** page, select the domain that you want to edit, and then select **Manage**.
-    
-    ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
 4. Select **Advanced DNS**.
-    
-    ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
-    
-    ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. In the **Type** drop-down, select **CNAME Record**.
     
     > [!NOTE]
     > The **Type** drop-down automatically appears when you select **ADD NEW RECORD**. 
-  
-    ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
 7. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
     
@@ -316,12 +262,8 @@ This service helps you secure and remotely manage mobile devices that connect to
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-       
-    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
 8. Select the **Save Changes** (check mark) control. 
-    
-    ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
 9. Using the preceding four steps and the values from the second row in the table, add the other CNAME record.
     

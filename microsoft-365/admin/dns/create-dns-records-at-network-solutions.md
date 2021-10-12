@@ -40,7 +40,9 @@ These are the main records to add. Follow the steps below or [watch the video](h
     
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [Add the two SRV records that are required for Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
+- [Advanced option: Skype for Business](#advanced-option-skype-for-business)
+
+- [Advanced option: Intune and Mobile Device Management for Microsoft 365](#advanced-option-intune-and-mobile-device-management-for-microsoft-365)
     
 After you add these records at Network Solutions, your domain will be set up to work with Microsoft services.
   
@@ -100,17 +102,15 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.micr
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified.
 
 To verify the record in Microsoft 365:
-
+  
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying. 
-    
-3. On the **Setup** page, select **Start setup**.
+2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
   
-4. On the **Verify domain** page, select **Verify**.
-
+3. On the **Verify domain** page, select **Verify**.
+    
 > [!NOTE]
->  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Add an MX record so email for your domain will come to Microsoft
 
@@ -194,7 +194,7 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.micr
 
 1. Under **Type**, select **CNAME** from the drop-down list.
   
-6. In the boxes for the four new records, type or copy and paste the values from the following table.
+6. In the boxes for the CNAME record, type or copy and paste the values from the following table.
     
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
     |:-----|:-----|:-----|:-----|
@@ -306,10 +306,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Type**|**Host**|**Value**|**TTL**|
+    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |sip  <br/> |3600  <br/> |(No setting)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |(No setting)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
@@ -342,10 +342,10 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**Type**|**Host**|**Value**|**TTL**|
+    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value canNOT end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value canNOT end with a period (.)** <br/> |3600  <br/> |
+    |enterpriseregistration  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseregistration.windows.net  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   

@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at 1&1 IONOS for Microsoft"
+title: "Create DNS records at IONOS by 1&1 for Microsoft"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,15 +24,42 @@ ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 1&1 IONOS for Microsoft."
 ---
 
-# Create DNS records at 1&1 IONOS for Microsoft
+# Create DNS records at IONOS by 1&1 for Microsoft
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
+
+If IONOS by 1&1 is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+
+>[!IMPORTANT] This registrar is automatically verified and set up for Microsoft 365 through a service called Domain Connect. These steps for automatic verification replace the steps for manual verification and setup later in this article. 
+
+To use Domain Connect to verify and set up your IONOS by 1&1 hosted domain with Microsoft 365:
+
+1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
+
+1. Select the three dots (more actions) > choose **Start setup**.
+
+1. On the **How do you want to connect your domain?** page, select **Continue**.   
+
+1. On the **Add DNS records** page, select **Add DNS records**.
+
+1. On the IONOS by 1&1 login page, sign in to your account.
+
+1. Select **Connect**, and then select **Allow**.
+    
+    This completes your domain setup for Microsoft 365. 
+
+## Create DNS records with manual setup (Not recommended)
+
+After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
+
+> [!NOTE]
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 > [!CAUTION]
-> Note that 1&1 IONOS doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at 1&1 IONOS. > If despite this [service limitation](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) you choose to manage your own Microsoft DNS records at 1&1 IONOS, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on. 
+> Note that IONOS by 1&1 doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS by 1&1. 
+> If despite this [service limitation](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) you choose to manage your own Microsoft DNS records at IONOS by 1&1, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on. 
   
-After you add these records at 1&1 IONOS, your domain will be set up to work with Microsoft services.
-  
+After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -46,7 +73,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 Follow the steps below or [watch the video (start at 0:42)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 2. Select **Manage domains**.
     
@@ -73,21 +100,18 @@ Follow the steps below or [watch the video (start at 0:42)](https://docs.microso
     
 10. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
-  
-When Microsoft finds the correct TXT record, your domain is verified.
-  
-1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record. When Microsoft finds the correct TXT record, your domain is verified.
 
+To verify the record in Microsoft 365:
+  
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the **Domains** page, select the domain that you are verifying. 
-    
-3. On the **Setup** page, select **Start setup**.
-    
-4. On the **Verify domain** page, select **Verify**.
+2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+  
+3. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Add an MX record so email for your domain will come to Microsoft
 <a name="BKMK_add_MX"> </a>

@@ -63,9 +63,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 7. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record.
-  
-When Microsoft finds the correct TXT record, your domain is verified.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is verified.
   
 1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -246,8 +244,8 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
