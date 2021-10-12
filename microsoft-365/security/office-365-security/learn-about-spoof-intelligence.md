@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MOE150
   - MET150

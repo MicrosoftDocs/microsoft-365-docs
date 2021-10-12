@@ -9,12 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
+ms.date: 10/05/2021
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -65,7 +66,7 @@ You can use the following properties to create a removable storage group:
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|[GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier), a unique ID, represents the group and will be used in the policy.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId​**</li><li>**SerialNumberId​**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: match this exact VID/PID pair</li><li>55E0: match any media with PID=55E0 </li><li>0751: match any media with VID=0751</li></ul></li></ul>|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId​**</li><li>**SerialNumberId​**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: match this exact VID/PID pair</li><li>55E0: match any media with PID=55E0 </li><li>0751: match any media with VID=0751</li></ul></li></ul>|
 |**MatchType**|When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.|**MatchAll**: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
 
 ### Access Control Policy
@@ -200,7 +201,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
 ## Deploying and managing policy by using Intune user interface
 
-This capability (in Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> Devices \> Configuration profiles \> Create profile \> Platform: Windows 10 and later & Profile: Device Control) is not yet available.
+This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 

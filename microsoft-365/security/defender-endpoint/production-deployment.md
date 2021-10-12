@@ -2,15 +2,13 @@
 title: Set up Microsoft Defender for Endpoint deployment
 description: Learn how to set up the deployment for Microsoft Defender for Endpoint
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -158,8 +156,8 @@ Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well as
 
 ### Proxy Service URLs
 
-URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later devices. For example, `us-v20.events.data.microsoft.com` is only
-needed if the device is on Windows 10, version 1803 or later.
+URLs that include v20 in them are only needed if you have Windows 10, version 1803 or Windows 11 devices. For example, `us-v20.events.data.microsoft.com` is only
+needed if the device is on Windows 10, version 1803 or Windows 11.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 

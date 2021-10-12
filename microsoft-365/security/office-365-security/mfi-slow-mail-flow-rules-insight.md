@@ -2,14 +2,14 @@
 title: Fix slow mail flow rules insight
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom: 
   - seo-marvel-apr2020

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
