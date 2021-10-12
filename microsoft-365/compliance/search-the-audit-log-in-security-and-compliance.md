@@ -413,10 +413,10 @@ Click one of the following links to go to a specific table.
         [Communication compliance activities](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
+        [Report activities](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
 
@@ -1021,7 +1021,7 @@ The following table lists the activities in Briefing email that are logged in th
 - [Configure Briefing email](/Briefing/be-admin)
 
 |**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
 |Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
 ||||
@@ -1068,6 +1068,15 @@ The following table lists communication compliance activities that are logged in
 |Policy update|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|A communication compliance administrator has performed a policy update.|
 |Policy match|SupervisionRuleMatch|A user has sent a message that matches a policy's condition.|
 |Tag applied to message(s)|SupervisoryReviewTag|Tags are applied to messages or messages are resolved.|
+||||
+
+### Report activities
+
+The following table lists the activities for usage reports that are logged in the Microsoft 365 audit log.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated usage report privacy settings|UpdateUsageReportsPrivacySetting|Admin updated privacy settings for usage reports. |
 ||||
 
 ### Exchange admin audit log
