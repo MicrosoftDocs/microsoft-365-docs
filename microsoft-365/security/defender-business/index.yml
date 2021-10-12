@@ -85,7 +85,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Choosing your setup experience
+          - text: The simplified configuration process
             url: mdb-choose-portal.md
           - text: Configuration settings
             url: mdb-configuration-settings.md
