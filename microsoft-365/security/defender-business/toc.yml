@@ -1,6 +1,5 @@
 - name: Microsoft Defender for Business
   href: index.yml
-  expanded: true
   items: 
     - name: Overview
       items:
