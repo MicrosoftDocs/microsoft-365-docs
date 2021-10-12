@@ -110,7 +110,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 **Endpoint security policy**
 1. Select **Endpoint Security** \> **Attack surface reduction**. Choose an existing ASR rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
-2. In the **Configuration settings** pane, select select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
+2. In the **Configuration settings** pane, select **Attack Surface Reduction** and then select the desired setting for each ASR rule.
 
 3. Under **List of additional folders that need to be protected**, **List of apps that have access to protected folders**, and **Exclude files and paths from attack surface reduction rules**, enter individual files and folders. You can also select **Import** to import a CSV file that contains files and folders to exclude from ASR rules. Each line in the CSV file should be formatted as follows:
 
