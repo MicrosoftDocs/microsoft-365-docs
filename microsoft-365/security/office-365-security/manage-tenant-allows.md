@@ -38,7 +38,7 @@ Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defen
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to mark the sender, file, or URL as false positive. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the network message ID or uploading the email file. 
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
@@ -53,12 +53,12 @@ Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defen
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
-**Notes**:
-
-- Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
-- When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
-- Entries for spoofed senders never expire.
-- Spoof supports both allow and block. URL supports only allow.
+> [!NOTE]
+> 
+> - Only the _combination_ of the spoofed user _and_ the sending infrastructure as defined in the domain pair is specifically allowed or blocked from spoofing.
+> - When you configure an allow or block entry for a domain pair, messages from that domain pair no longer appear in the spoof intelligence insight.
+> - Entries for spoofed senders never expire.
+> - Spoof supports both allow and block. URL supports only allow.
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
 
