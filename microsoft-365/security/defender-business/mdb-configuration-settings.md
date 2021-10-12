@@ -1,5 +1,5 @@
 ---
-title: Configuration settings in Microsoft Defender for Business
+title: Understand the configuration settings in Microsoft Defender for Business
 description: Understand your configuration settings in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Configuration settings in Microsoft Defender for Business
+# Understand the configuration settings in Microsoft Defender for Business
 
 This article describes configuration settings for Microsoft Defender for Business. 
 
