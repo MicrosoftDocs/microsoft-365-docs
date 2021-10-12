@@ -311,6 +311,12 @@
                 href: dlp-configure-endpoints-script.md
               - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
                 href: dlp-configure-endpoints-vdi.md
+          - name: Onboard macOS devices into Microsoft 365 overview (preview)
+            href: device-onboarding-macos-overview.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+            href: device-onboarding-offboarding-macos-intune.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+            href: device-onboarding-offboarding-macos-jamfpro.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
