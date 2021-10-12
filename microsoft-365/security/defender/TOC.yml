@@ -22,8 +22,6 @@
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
       - name: Preview features
         href: preview.md
-      - name: Train employees
-        href: microsoft-365-defender-train-employees.md
       - name: Troubleshoot issues
         href: ./troubleshoot.md
       - name: Industry tests
@@ -334,6 +332,9 @@
          href: eval-overview.md
        - name: Turn on FAQ
          href: m365d-enable-faq.md
+
+    - name: Train employees
+      href: microsoft-365-defender-train-employees.md
 
 
     - name: Reference
