@@ -98,6 +98,17 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
     
+    One of the advantages of using the advanced query builder is a wider choice of query operators:
+    - **and**
+    - **or**
+    - **not**
+    - **eq** (equals)
+    - **ne** (not equals)
+    - **lt** (less than)
+    - **gt** (greater than)
+    - **like** (string comparison
+    - **notlike** (string comparison
+    
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
 
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
