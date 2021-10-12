@@ -416,7 +416,7 @@ Click one of the following links to go to a specific table.
         [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
     :::column:::
-        
+        [Reports activities](#reports-activities)
     :::column-end:::
 :::row-end:::
 
@@ -1096,6 +1096,15 @@ Here are some tips for searching for Exchange admin activities when searching th
   - [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog)
 
    Keep in mind that the same Exchange admin activities are logged in both the Exchange admin audit log and audit log.
+
+### Reports activities
+
+The following table lists the activities in Reeports that are logged in the Microsoft 365 audit log. 
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated usage report privacy settings|UpdateUsageReportsPrivacySetting|Admin Updated usage report privacy settings. |
+||||
 
 ## Frequently asked questions
 
