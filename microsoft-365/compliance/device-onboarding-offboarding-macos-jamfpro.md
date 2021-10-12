@@ -38,14 +38,10 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions is a six phase process.
+Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
-1. [Create configuration profiles](#create-configuration-profiles)
-1. [Enable kernel extension](#enable-kernel-extension)
-1. [Enable system extension](#enable-system-extension)
-1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the Microsoft DLP installation package](#deploy-the-microsoft-dlp-installation-package)
+1. 
 
 ### Get the device onboarding package
 
@@ -59,7 +55,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
  
 1. Extract the contents of the device onboarding package. In the **JAMF** folder you should see the *DeviceComplainceOnboarding.plist* file.
 
-### Create a JAMF Pro configuration profile
+### Create a JAMF Pro configuration profile for the onboarding package
 
 1. Create a JAMF Pro configuration file using the *DeviceComplianceOnboarding.plist* file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP onboarding for macOS`
@@ -91,9 +87,9 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. Create a JAMF Pro configuration file using the *DeviceComplianceOnboarding.plist* file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
     - Description: leave this blank
-    - Category: `none` - this is the default
-    - Distribution method: `install automatically` - this is the default
-    - Level: `computer level` - this is the default
+    - Category: `none`
+    - Distribution method: `install automatically`
+    - Level: `computer level`
 
 1. On the **Application & Custom Settings** tab, choose **External Applications**, choose **Add** and choose **Custom Schema** for the preference domain. Use this value:
     - Preference domain: `com.microsoft.wdav`
@@ -102,125 +98,146 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 1. Choose **Save**.
 
-1. Under **Preference Domain Properties**
+1. Under **Preference Domain Properties** choose these settings
+    - Features > Use System Extensions: `enabled` - required for network extensions on Catalina
+    - EDR preferences > Use Data Loss Prevention: `enabled`
+    - Group IDs: `enabled`
+    - Antivirus engine > Passive mode: `true|false` HENRY MUST PROVIDE CLARIFICATION HERE
 
-LEFT OFF HERE
+1. Choose the **Scope** tab.
 
+1. Choose the groups to deploy this configuration profile to.
 
+1. Choose **Save**. 
 
+### Create and deploy a configuration profile for notification settings
 
+Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+    - Name: `MDATP MDAV notification settings`
+    - Description: `macOS 10.15 (Catalina) or newer
+    - Category: `none`
+    - Distribution method: `install automatically`
+    - Level: `computer level`
 
-2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles** 
+1. Choose the **Notifications** tab, and choose **Add** to configure these settings
+    - Bundle ID: `com.microsoft.wdav.tray`
+    - Critical Alerts: `disable`
+    - Notifications: `enable`
+    - Banner alert type: `include` and `temporary`
+    - Notifications on lock screen: `hide`
+    - Notifications in Notification center: `display`
+    - Badge app icon: `display`
 
-3. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Custom**
+1. Choose **Add**, scroll down to **New Notification Settings**
+    - Bundle ID: `com.microsoft.autoupdate2`
+    - Critical Alerts: `disable`
+    - Notifications: `enable`
+    - Banner alert type: `include` and `temporary`
+    - Notifications on lock screen: `hide`
+	- Notifications in Notification Center: `display`
+    - Badge app icon: `display`
 
-4. Choose **Create**
+### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
-5. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+1. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+    - Name: `MDATP MDAV MAU settings`
+    - Description: `Microsoft AutoUPdate settings for MDATP for macOS`
+    - Category: `none`
+    - Distribution method: `install automatically`
+    - Level: `computer level`
 
-6. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+1. In **Application & Custom Settings** choose **Upload** and **Add**.
 
-7. Choose **Next**
+1. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
 
-8. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+1. Choose the *DeviceComplianceOnboarding.plist* file.
 
-9. Review your settings and choose **Create** to deploy the configuration.
+1. Choose **Save**.
 
-10. Repeat steps 2-7 for the:
-    1. **fulldisk.mobileconfig** file
-    1. **com.microsoft.autoupdate2.xml** file
-    1. MDE preferences **com.microsoft.wdav.xml** file
-        1. set Antivirus engine `passive mode` = `true` or `false`. GET HENRY TO EXPLAIN THIS IT MAKES NO SENSE
-    1. **netfilter.mobileconfig**
-    1. **notif.mobileconfig**
+1. Choose the **Scope** tab.
 
-11. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. Choose the target computers.
 
-12. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+1. Choose **Save**.
 
-### Enable kernel extension
-
-1.  In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
-
-1. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Extensions**
-
-1. Choose **Create**
-
-1. In the **Basics** tab, give this new profile a name.
-
-1. In the **Configuration settings** tab expand **Kernel Extensions**
-
-1. Set the **Team identifier** to **UBF8T346G9**
-
-> [!IMPORTANT]
-> Leave **Allow user overrides** set to **Not configured**. 
-
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
-
-1. Choose **Next** to deploy the configuration.
-
-### Enable system extension
-
-1. In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
-
-1. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Extensions**
-
-1. Choose **Create**
-
-1. In the **Basics** tab, give this new profile a name.
-
-1. In the **Configuration settings** tab expand **System Extensions**
-
-1. Under **Bundle identifier** and **Team identifier**, set these values
-
-|Bundle identifier  |Team identifier  |
-|---------|---------|
-|**com.microsoft.wdav.epsext**|**UBF8T346G9**|
-|**com.microsoft.wdav.netext**|**UBF8T346G9**|
+1. Choose **Done**.
 
 
-1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+### Create and deploy a configuration profile for Grant full disk access
 
-1. Choose **Next** to deploy the configuration.
+1. Download the **fulldisk.mobileconfig** file HENRY TO PROVIDE LINK
 
-### Get the installation package
+1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
-1. For **Select operating system to start onboarding process** choose **macOS**
- 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
-1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
+### Create and deploy a configuration profile for Kernel extension
 
-> [!IMPORTANT]
-> Before you can deploy the *wdav.pkg.* package via Intune, it must be reformatted using the *Intune App Wrapping Tools for Mac* into the *wdav.pkg.intunemac* format.
- 
+1. Download the **kext.mobileconfig** file HENRY TO PROVIDE LINK
 
-### Deploy the Microsoft DLP installation package
+1. Upload the **kext.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format.
+### Create and deploy a configuration profile for System extensions
 
-## Offboard macOS devices using Intune
+1. Create a JAMF Pro configuration file using the procedures in [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+    - Name: `MDATP MDAV System Extensions`
+    - Description: `MDATP system extensions`
+    - Category: `none`
+    - Distribution method: `install automatically`
+    - Level: `computer level`
 
-1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
+1. In **System extentions** profile, enter these values:
+    - Display Name: `Microsoft Corp. System Extensions`
+    - System Extenstion Types: `Allowed System Extensions`
+    - Team Identifier: `UBF8T346G9`
+    - Allowed System Extensions: `com.microsoft.wdav.epsext`, and `com.microsoft.wdav.netext`
 
-2. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
+1. Choose the **Scope** tab.
 
-1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
+1. Choose the target computers.
 
-3. Open **Properties** and **Assignments**
+1. Choose **Save**.
 
-4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+1. Choose **Done**.
+
+### Configure Network extension
+
+1.	Download **netfilter.mobileconfig** HENRY TO PROVIDE LINK
+
+2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+
+### Grant accessibility access to DLP
+
+1. Download **accessibility.mobileconfig** HENRY TO PROVIDE LINK
+
+2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+
+### Deploy Microsoft DLP enforcement package
+
+Follow the procedures in 
+
+NO PROCEDURES PROVIDED
+
+
+### Check the macOS device 
+
+1. Restart the macOS device.
+
+1. Open **System Preferences** > **Profiles**.
+
+1. You should see:
+    - Accessiblity
+    - Full Disk Access
+    - Kernel Extension Profile
+    - MAU
+    - MDATP Onboarding
+    - MDE Preferences
+    - Management profile
+    - Network filter
+    - Notifications
+    - System extension profile
+
+## Offboard macOS devices using JAMF Pro
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
