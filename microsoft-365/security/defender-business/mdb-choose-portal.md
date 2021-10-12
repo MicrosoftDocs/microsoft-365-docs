@@ -21,10 +21,8 @@ ms.collection:
 # The simplified configuration process in Microsoft Defender for Business
 
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
-- The simplified configuration process in Microsoft Defender for Business; or 
+- The simplified configuration process in Microsoft Defender for Business (recommended); or 
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
-
-**We recommend using the simplified configuration process in Microsoft Defender for Business**, even if you are already using MEM. The simplified configuration process is streamlined especially for small and midsized businesses and is designed to protect your company's devices from day one.
 
 The following table describes each experience:
 
@@ -35,6 +33,7 @@ The following table describes each experience:
 |The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/><br/>*Recommended*    | The Microsoft 365 Defender portal is where your security team will perform tasks, such as: <br/>- View and manage incidents<br/>- Respond to and mitigate threats<br/>- View reports<br/>- Review pending or completed actions <br/><br/> This portal is your one-stop shop for your company's security settings and threat protection capabilities. Plus, you get a simplified experience to help you get started quickly and efficiently. The simplified configuration experience includes default security settings and policies that help you protect your company's devices from day one. And, you can edit your settings or define new policies to suit your company's needs.       |
 |The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) <br/><br/>*Endpoint Manager now includes Microsoft Intune*     | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. Many enterprise organizations use Intune to manage devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).       |
 
+**We recommend using the simplified configuration process in Microsoft Defender for Business**, even if you are already using MEM. The simplified configuration process is streamlined especially for small and midsized businesses and is designed to protect your company's devices from day one.
 
 ## Why we recommend using the simplified configuration experience
 
