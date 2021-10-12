@@ -79,7 +79,7 @@ landingContent:
         links:
           - text: Manage devices
             url: mdb-manage-devices.md
-          - text: view and edit security policies and settings
+          - text: View and edit security policies and settings
             url: mdb-view-edit-device-policies.md
  
   # Card
