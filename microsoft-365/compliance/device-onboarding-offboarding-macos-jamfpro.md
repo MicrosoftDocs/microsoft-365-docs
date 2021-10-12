@@ -102,7 +102,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
     - Features > Use System Extensions: `enabled` - required for network extensions on Catalina
     - EDR preferences > Use Data Loss Prevention: `enabled`
     - Group IDs: `enabled`
-    - Antivirus engine > Passive mode: `true|false` HENRY MUST PROVIDE CLARIFICATION HERE
+    - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
 
