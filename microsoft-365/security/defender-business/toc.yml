@@ -15,8 +15,6 @@
       items:
       - name: Process overview
         href: mdb-setup-configuration.md
-      - name: Choose which portal to use
-        href: mdb-choose-portal.md
       - name: Assign roles and permissions
         href: mdb-roles-permissions.md
       - name: Set up email notifications
@@ -25,8 +23,6 @@
         href: mdb-onboard-devices.md
       - name: Configure your security settings
         href: mdb-view-edit-device-policies.md
-      - name: Understand your configuration settings
-        href: mdb-configuration-settings.md
     - name: Get started using Defender for Business
       items: 
       - name: Navigate the portal
@@ -39,3 +35,10 @@
         href: mdb-review-remediation-actions.md
       - name: Manage devices
         href: mdb-manage-devices.md
+    - name: Reference information
+      items: 
+      - name: Choosing which portal to use
+        href: mdb-choose-portal.md
+      - name: Understanding configuration settings
+        href: mdb-configuration-settings.md
+
