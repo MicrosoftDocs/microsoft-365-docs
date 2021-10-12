@@ -48,9 +48,5 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 
 ## Next steps
 
-- [Get a more detailed overview of Microsoft Defender for Business](mdb-overview.md)
-
-- [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-
-- [Get started using Microsoft Defender for Business](mdb-get-started.md)
- 
+- [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
+- [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) 
