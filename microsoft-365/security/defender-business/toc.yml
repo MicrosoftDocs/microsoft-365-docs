@@ -24,9 +24,9 @@
       - name: Configure your security settings
         href: mdb-configure-security-settings.md
     - name: Get started using Defender for Business
+      href: mdb-get-started.md
+    - name: Use Microsoft Defender for Business
       items: 
-      - name: Navigate the portal
-        href: mdb-get-started.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
       - name: Respond to and mitigate threats
@@ -35,10 +35,10 @@
         href: mdb-review-remediation-actions.md
     - name: Manage settings and devices
       items: 
-      - name: Manage devices
-        href: mdb-manage-devices.md
       - name: View and edit device policies
         href: mdb-view-edit-device-policies.md
+      - name: Manage devices
+        href: mdb-manage-devices.md
     - name: Reference information
       items: 
       - name: Choosing your setup experience
