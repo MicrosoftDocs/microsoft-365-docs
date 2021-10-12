@@ -116,7 +116,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
    `C:\folder`, `%ProgramFiles%\folder\file`, `C:\path`
 
-4. Select **Next** on the three configuration panes. Then select **Create** if you're creating a new policy or **Save** if you're editing an existing one.
+4. Select **Next** on the three configuration panes, then select **Create** if you're creating a new policy or **Save** if you're editing an existing policy.
 
 ## MEM
 
