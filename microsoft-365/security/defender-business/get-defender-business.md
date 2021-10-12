@@ -27,13 +27,12 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 
 - Sign up for the preview program
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
-- [Get Microsoft Defender for Business on your own](#get-microsoft-defender-for-business-on-your-own) by signing up for the preview program or by purchasing a subscription
+- [Get Microsoft Defender for Business on your own](#get-microsoft-defender-for-business-on-your-own)
 
-> [!TIP]
-> If you decide to purchase Microsoft Defender for Business through a solution provider, that provider can help you with your setup and configuration process.
 
 ## Sign up for the preview program
 
+If 
 
 
 ## Work with a Microsoft Solution Provider
