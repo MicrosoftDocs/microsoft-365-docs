@@ -45,4 +45,4 @@ If you have chosen a portal and change your mind later, contact support. They'll
 
 ## Next step
 
-- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
