@@ -37,7 +37,7 @@
         href: mdb-manage-devices.md
     - name: Reference information
       items: 
-      - name: Choosing which portal to use
+      - name: Choosing your setup experience
         href: mdb-choose-portal.md
       - name: Understanding configuration settings
         href: mdb-configuration-settings.md
