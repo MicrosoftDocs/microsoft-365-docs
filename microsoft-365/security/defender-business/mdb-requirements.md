@@ -27,7 +27,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 | Requirement | Description |
 |:---|:---|
-| Subscription and licensing | - Microsoft Defender for Business (preview)<br/>- Azure Active Directory (Azure AD) (included with any Microsoft 365 subscription, including Microsoft Defender for Business)  |
+| Subscription and licensing | - Microsoft Defender for Business (currently in preview!)<br/>- Azure Active Directory (Azure AD) (included with any Microsoft 365 subscription, including Microsoft Defender for Business)  |
 | Permissions  | Permissions are assigned through roles in Azure AD <br/>- To activate your subscription, you must have the Billing Admin or Global Admin role assigned<br/>- To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Admin, or Global Admin role assigned in Azure AD |
 | User accounts | - User accounts created <br/>- Microsoft Defender for Business licenses assigned <br/> (See [Add users and assign licenses](../../admin/add-users/add-users.md)) |
 | Browser requirements | At least one of the following browsers: <br/>- Microsoft Edge <br/>- Internet Explorer version 11 <br/>- Google Chrome |
