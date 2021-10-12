@@ -42,6 +42,14 @@ Within this 10,000 policies limit, there are also some limits on the maximum num
 
 Although retention policies for Microsoft Teams and Yammer use mailboxes to store data for retention purposes, the maximum number of policies for Exchange Online exclude retention policies for Teams and Yammer.
 
+## Maximums for adaptive policy scopes
+
+There is no limit to the number of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) that you can add to a policy for retention, but there are some limits for each adaptive scope:
+
+- Total query size: 10,000 characters
+- Total attributes or properties: 200
+- Total nested conditions: 3 levels
+
 ## Maximum number of items per policy
 
 > [!IMPORTANT]
