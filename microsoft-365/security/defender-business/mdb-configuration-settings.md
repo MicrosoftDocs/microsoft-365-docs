@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/30/2021
+ms.date: 10/12/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -20,7 +20,11 @@ ms.collection:
 
 # Configuration settings in Microsoft Defender for Business
 
-This article describes configuration settings for Microsoft Defender for Business. Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
+This article describes configuration settings for Microsoft Defender for Business. 
+
+## Next-generation protection
+
+Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
 
 The following table lists your settings and options:<br/><br/>
 
@@ -44,10 +48,17 @@ The following table lists your settings and options:<br/><br/>
 | File and extension exclusions | Exclude specific files or files with specific extensions from Microsoft Defender Antivirus scans. [Learn more about file and extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 | File and folder exclusions | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. [Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 
-## Next step
+## Firewall
 
-- [Get started with Microsoft Defender for Business](mdb-get-started.md)
+Firewall description
 
-- [Review the setup and configuration process](mdb-setup-configuration.md)
+| Setting | Description |
+|--|--|
+| <setting> | <description> |
 
-- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md)
+## See also
+
+[Visit the Microsoft 365 Defender portal](mdb-get-started.md)
+
+[Compare plans for small and midsized businesses](compare-mdb-m365bp.md)
+
