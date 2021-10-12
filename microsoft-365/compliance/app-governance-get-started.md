@@ -19,7 +19,7 @@ description: "Get started with app governance capabilities to govern your apps."
 
 # Get started with app governance (in preview)
 
-[![Sign up for the free trial of app governance](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc)
+[![Sign up for the free trial of app governance](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
 To begin using the app governance add-on to Microsoft Cloud App Security, you need to take three steps:
 
@@ -32,7 +32,7 @@ To begin using the app governance add-on to Microsoft Cloud App Security, you ne
 
 For existing Microsoft 365 customers:
 
-1. Navigate to the [sign up page for the free trial](https://admin.microsoft.com/Commerce/Trial.aspx?OfferId=20be85b6-b196-402c-82b4-36b4e72862dc).
+1. Navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial).
 1. Complete the steps to add app governance. Sign-up is simple, as shown in the following graphic.
 
 <!--
