@@ -144,6 +144,8 @@
          href: attack-simulation-training.md
        - name: Create custom payloads for Attack simulation training
          href: attack-simulation-training-payloads.md
+       - name: Simulation automations in Attack simulation training
+         href: attack-simulation-training-simulation-automations.md
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
        - name: Insights and reporting in Attack simulation training

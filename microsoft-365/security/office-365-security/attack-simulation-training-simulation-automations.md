@@ -1,46 +1,53 @@
 ---
-title: Simulate a phishing attack with Microsoft Defender for Office 365
+title: Simulation automations for Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
+description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
 
-# Simulate a phishing attack in Defender for Office 365
+# Simulation automations for Attack simulation training
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Attack simulation training in Microsoft Defender for Office 365 Plan 2 or Microsoft 365 E5 lets you run benign cyberattack simulations in your organization. These simulations test your security policies and practices, as well as train your employees to increase their awareness and decrease their susceptibility to attacks. This article walks you through creating a simulated phishing attack using Attack simulation training.
-
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-To launch a simulated phishing attack, do the following steps:
+To create a simulation automation, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulation automations** tab.
 
-   To go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+   To go directly to the **Simulation automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
 
-2. On the **Simulations** tab, select ![Launch a simulation icon.](../../media/m365-cc-sc-create-icon.png) **Launch a simulation**.
+2. On the **Simulation automations** tab, select ![Create simulation icon.](../../media/m365-cc-sc-create-icon.png) **Create simulation**.
 
-   ![Launch a simulation button on the Simulations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-launch.png)
+   ![Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
 
-3. The simulation creation wizard opens. The rest of this article describes the pages and the settings they contain.
+3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
 > [!NOTE]
-> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.
+> At any point during the simulation creation wizard, you can click **Save and close** to save your progress and continue configuring the simulation later. The incomplete simulation has the **Status** value **Draft** on the **Simulations** tab. You can pick up where you left off by selecting the simulation and clicking ![Edit simulation icon.](../../media/m365-cc-sc-edit-icon.png) **Edit** simulation.## Name and describe the simulation.
 
-## Select a social engineering technique
+## Name and describe the simulation automation
 
-On the **Select technique** page, select an available social engineering technique, which was curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
+On the **Automation name** page, configure the following settings:
+
+- **Name**: Enter a unique, descriptive name for the simulation.
+- **Description**: Enter an optional detailed description for the simulation.
+
+When you're finished, click **Next**.
+
+## Select one or more social engineering techniques
+
+On the **Select social engineering techniques** page, select one or more of the available social engineering techniques, which were curated from the [MITRE ATT&CK® framework](https://attack.mitre.org/techniques/enterprise/). Different payloads are available for different techniques. The following social engineering techniques are available:
 
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
@@ -50,26 +57,23 @@ On the **Select technique** page, select an available social engineering techniq
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
-![Details flyout for the credential harvest technique on the Select technique page.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
+![Details flyout for the credential harvest technique on the Select social engineering techniques page.](../../media/attack-sim-training-simulations-select-technique-sim-steps.png)
 
 When you're finished, click **Next**.
 
-## Name and describe the simulation
+## Select payloads
 
-On the **Name simulation** page, configure the following settings:
+On the **Select payloads** page, select one of the following options:
 
-- **Name**: Enter a unique, descriptive name for the simulation.
-- **Description**: Enter an optional detailed description for the simulation.
+- **Manually select**
+- **Randomize**
 
-When you're finished, click **Next**.
+If you select **Randomize**, there's nothing to configure on this page, so click **Next** to continue.
 
-## Select a payload
+If you select **Manually select**, you need to select one ore more payloads from the list. The following details are displayed to help you choose:
 
-On the **Select payload** page, you need to select an existing payload from the list, or create a new payload.
-
-The following details are displayed in the list of payloads to help you choose:
-
-- **Name**
+- **Payload name**
+- **Technique**: You need to select as one payload per technique that you selected on the previous page.
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate**: How many people have clicked on this payload.
 - **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
@@ -97,18 +101,12 @@ If you click **Filter**, the following filters are available:
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
-![Select payload page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload.png)
-
-If you select a payload from the list, details about the payload are shown in a flyout:
+If you select a payload from the list by clicking on the name, details about the payload are shown in a flyout:
 
 - The **Overview** contains an example and other details about the payload.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 ![Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload-details.png)
-
-If you select a payload from the list by clicking on the name, a ![Send a test icon.](../../media/m365-cc-sc-create-icon.png) **Send a test** button appears on the main page where you can send a copy of the payload email to yourself (the currently logged in user) for inspection.
-
-To create your own payload, click ![Create a payload icon.](../../media/m365-cc-sc-create-icon.png) **Create a payload**. For more information, see [Create custom payloads for Attack simulation training](attack-simulation-training-payloads.md).
 
 When you're finished, click **Next**.
 
@@ -224,61 +222,67 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
+On the **Landing page** page, you configure training landing page that the users see. The following settings are available:
 
-- **Select landing page preference**: The available values are:
-  - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
-    - **Select landing page layout**: Select one of the available templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file.
-    - **Add payload indicators to email**: Select this setting to help users learn how to identify phishing messages.
+- **Header**
+- **Body**
 
-    You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
-
-  - **Use a custom URL**: If you select this value, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
-  - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: Select this setting to help users learn how to identify phishing messages.
-    - Page content: Two tabs are available:
-      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
-        - **Dynamic tag**: Select from the following tags:
-          - **Username**
-          - **Email sender name**
-          - **Sender email address**
-          - **Email subject**
-          - **Email content**
-        - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
-    - **Code**: You can view and modify the HTML code directly.
-
-    You can preview the results by clicking the **Open preview panel** button in the middle of the page.
+You can accepted the default values or customize them.
 
 When you're finished, click **Next**.
 
-> [!NOTE]
-> Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
+## Simulation schedule
+
+On the **Simulation schedule** page, select one of the following values:
+
+- **Randomized**: You still need to select the schedule on the next page, but the simulations will launch at random times with the schedule.
+- **Fixed**
+
+When you're finished, click **Next**.
+
+## Schedule details
+
+What you see on the **Schedule details** page depends on whether you selected **Randomized** or **Fixed** on the previous page.
+
+- **Randomized**: The following settings are available:
+  - **Simulation start** section: Configure the following setting:
+    - **Select the date you want the simulations to start from**
+  - **Simulation scoping** section: Configure the following settings:
+    - **Select the days of the week that simulations are allowed to start on**: Select one or more days of the week.
+    - **Enter the maximum number of simulations that can be started between the start and end dates**: Enter a value from 1 to 10.
+    - **Randomize send times**: Select this setting to randomize the send times.
+  - **Simulation end** section: Configure the following setting:
+    - **Select the date you want the simulations to end**
+
+- **Fixed**: The following settings are available:
+  - **Simulation start** section: Configure the following setting:
+    - **Select the date you want the simulations to start from**
+  - **Simulation recurrence** section: Configure the following settings:
+    - **Select if you want simulations to launch weekly or monthly**: Select one of the following values:
+      - **Weekly**: This is the default value.
+      - **Monthly**
+    - **Enter how often in weeks you want the simulations to recur for**: Enter a value from 1 to 99 weeks.
+    - **Select the day of the week you want the simulations to start from**
+  - **Simulation end** section: Selection one of the following values:
+    - **Select the date you want the simulations to end**
+    - **Enter the number of occurrences of the simulations to run before ending**: Enter a value from 1 to 10.
+
+When you're finished, click **Next**.
 
 ## Launch details
 
-On the **Launch details** page, you choose when to launch the simulation and when to end the simulation. We'll stop capturing interaction with this simulation after the end date you specify.
+On the **Launch details** page, configure the following additional settings for the automation:
 
-The following settings are available:
+- **Use unique payloads across simulations within an automation**: By default, this setting is not selected.
+- **Target repeat offenders**: By default, this setting is not selected. If you select it, configure the following setting that appears:
+  - **Enter the maximum number of times a user can be targeted within this automation**: Enter a value from 1 to 10.
+- **Send simulation email based upon the user's current time zone setting from Outlook web app**: By default, this setting is not selected.
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select one or more social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png).
 
-- Choose one of the following values:
-  - **Launch this simulation as soon as I'm done**
-  - **Schedule this simulation to be launched later**: This value has the following associated options to configure:
-    - **Select launch date**
-    - **Select launch time**
-- **Configure number of days to end simulation after**: The default value is 2.
-- **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+## Review simulation automation
 
-When you're finished, click **Next**.
-
-## Review simulation
-
-On the **Review simulation** page, you can review the details of your simulation.
-
-Click the ![Send a test icon.](../../media/m365-cc-sc-send-icon.png) **Send a test** button to send a copy of the payload email to yourself (the currently logged in user) for inspection.
+On the **Review simulation automation** page, you can review the details of your simulation automation.
 
 You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
 When you're finished, click **Submit**.
-
-![Review simulation page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-review-simulation.png)
