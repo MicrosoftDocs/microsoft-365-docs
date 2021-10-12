@@ -108,7 +108,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
 **Endpoint security policy**
-1. Select **Endpoint Security** \> **Attack surface reducation**. Choose an existing Attack surface reducation rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attach surface reducation rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
+1. Select **Endpoint Security** \> **Attack surface reduction**. Choose an existing ASR rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Configuration settings** pane, select select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
 
