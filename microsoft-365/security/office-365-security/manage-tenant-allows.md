@@ -38,7 +38,7 @@ Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defen
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to mark the sender, file, or URL as false positive. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the network message ID or uploading the email file. 
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
