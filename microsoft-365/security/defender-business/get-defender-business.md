@@ -32,20 +32,23 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 
 ## Sign up for the preview program
 
-If 
+If your company has 300 or fewer users, apply to participate in the preview program!
 
+Visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview) today!
 
 ## Work with a Microsoft Solution Provider
 
-Microsoft has a list of solution providers who are authorized to sell offerings, such as Microsoft Defender for Business. 
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft Defender for Business. 
 
 To find a solution provider in your area, take the following steps:
 
-1. Go to the Microsoft Solution Providers page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
-2. In the search box, fill in your location and company size. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+2. In the search box, fill in your location and company size. 
 
-3. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+
+4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 ## Get Microsoft Defender for Business on your own 
 
