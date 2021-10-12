@@ -47,7 +47,7 @@ landingContent:
             url: mdb-email-notifications.md
           - text: Onboard devices
             url: mdb-onboard-devices.md
-          - text: View and edit your security settings
+          - text: Configure your security settings
             url: mdb-view-edit-device-policies.md
 
   # Card
@@ -69,7 +69,6 @@ landingContent:
             url: mdb-respond-mitigate-threats.md
           - text: Review remediation actions
             url: mdb-review-remediation-actions.md
-
 
   # Card
   - title: Manage
