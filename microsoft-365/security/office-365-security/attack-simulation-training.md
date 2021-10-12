@@ -148,7 +148,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
 - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
 
-  After you find an select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-search-icon.png) **Delete** to remove specific users.
+  After you find an select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
 
 When you're finished, click **Next**.
 
@@ -216,7 +216,7 @@ For each training in the list, you need to select who gets the training by selec
 - **Clicked payload**
 - **Compromised**
 
-If you don't want to use a training that's shown, click ![Delete icon.](../../media/m365-cc-sc-search-icon.png) **Delete**.
+If you don't want to use a training that's shown, click ![Delete icon.](../../media/m365-cc-sc-delete-icon.png) **Delete**.
 
 ![Training assignment page in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-training-assignment.png)
 
