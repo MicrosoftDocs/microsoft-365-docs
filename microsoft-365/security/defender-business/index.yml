@@ -27,10 +27,10 @@ landingContent:
         links:
           - text: What is Defender for Business?
             url: mdb-overview.md
-          - text: Compare plans for small and midsized businesses
-            url: compare-mdb-m365bp.md
           - text: Requirements
             url: mdb-requirements.md
+          - text: Compare plans for small and midsized businesses
+            url: compare-mdb-m365bp.md
           - text: How to get Defender for Business
             url: get-defender-business.md
           - text: The simplified configuration process
