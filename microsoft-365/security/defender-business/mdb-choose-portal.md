@@ -24,6 +24,9 @@ When it comes to onboarding devices and configuring security settings for your c
 - The simplified configuration process in Microsoft Defender for Business (recommended); or 
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to try Microsoft Defender for Business, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 The following table describes each experience:
 
 <br/><br/>
