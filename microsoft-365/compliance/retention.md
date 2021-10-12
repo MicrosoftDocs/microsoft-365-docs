@@ -305,7 +305,7 @@ Advantages of using static scopes:
 
 For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
 
-To watch a recorded webinar that requires registration, visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
+To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
 
 > [!IMPORTANT]
 > Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
