@@ -20,22 +20,19 @@ ms.collection:
 
 # Set up and configure Microsoft Defender for Business
 
-As a preview customer, you likely have assistance in setting up Microsoft Defender for Business for your company. However, you can do the setup and configuration process yourself as well. Use this article as a guide.
-
-## Before you begin...
-
-Before you begin your setup and configuration process, make sure to review the following articles:
-
-- [Microsoft Defender for Business requirements](mdb-requirements.md)
-- [How to get Microsoft Defender for Business](get-defender-business.md)
+Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business.
 
 ## The setup and configuration process at a glance
 
 | Step  | Article | Description  |
 |---------|---------|--------|
-| 1 | [Assign roles and permissions](mdb-roles-permissions.md)     | People on your security team need permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through certain roles. See [Assign roles and permissions](mdb-roles-permissions.md).        |
-| 2 | [Set up email notifications](mdb-email-notifications.md) | You can specify who should receive email notifications when alerts are triggered or new vulnerabilities are discovered. See [Set up email notifications](mdb-email-notifications.md).| 
-| 3 | [Onboard devices](mdb-onboard-devices.md)     | Microsoft Defender for Business is set up so that your company's devices are protected as soon as they are onboarded. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).         |
-| 4 | [View and edit your security settings](mdb-view-edit-device-policies.md)     | You can manage your company's security settings through device policies. Default policies are included in Microsoft Defender for Business; however, you can edit those policies or define new policies to suit your company's needs. See [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md).         |
+| 1 | [Review the requirements](mdb-requirements.md) | Review the requirements, including supported operating systems, for Microsoft Defender for Business. |
+| 2 | [Assign roles and permissions](mdb-roles-permissions.md)     | People on your security team need permissions to perform tasks, such as reviewing detected threats & remediation actions, viewing & editing policies, onboarding devices, and using reports. You can grant these permissions through certain roles. See [Assign roles and permissions](mdb-roles-permissions.md).        |
+| 3 | [Set up email notifications](mdb-email-notifications.md) | You can specify who should receive email notifications when alerts are triggered or new vulnerabilities are discovered. See [Set up email notifications](mdb-email-notifications.md).| 
+| 4 | [Onboard devices](mdb-onboard-devices.md)     | Microsoft Defender for Business is set up so that your company's devices are protected as soon as they are onboarded. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).         |
 | 5 | [Get started using Microsoft Defender for Business](mdb-get-started.md)     | After you have completed steps 1-6, you're ready to get started using Microsoft Defender for Business. See [Get started with Microsoft Defender for Business](mdb-get-started.md).        |
  
+## See also
+
+- [How to get Microsoft Defender for Business](get-defender-business.md)
+- [Microsoft Defender for Business documentation](index.yml)
