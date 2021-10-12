@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/11/2021
+ms.date: 10/12/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -20,13 +20,21 @@ ms.collection:
 
 # Get Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 If you don’t already have Microsoft Defender for Business, you can choose from several options:
 
+- Sign up for the preview program
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
 - [Get Microsoft Defender for Business on your own](#get-microsoft-defender-for-business-on-your-own) by signing up for the preview program or by purchasing a subscription
 
 > [!TIP]
 > If you decide to purchase Microsoft Defender for Business through a solution provider, that provider can help you with your setup and configuration process.
+
+## Sign up for the preview program
+
+
 
 ## Work with a Microsoft Solution Provider
 

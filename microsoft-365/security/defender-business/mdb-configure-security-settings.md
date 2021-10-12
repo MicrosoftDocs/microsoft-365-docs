@@ -20,6 +20,9 @@ ms.collection:
 
 # Configure your security settings and policies in Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. You can choose from two main options:
 
 - Use the default security settings and policies in Microsoft Defender for Business (recommended); or 

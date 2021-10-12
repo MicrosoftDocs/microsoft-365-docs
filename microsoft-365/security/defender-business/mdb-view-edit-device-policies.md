@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 10/12/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -19,6 +19,9 @@ ms.collection:
 ---
 
 # View or edit device policies in Microsoft Defender for Business
+
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
 
 Microsoft Defender for Business was designed to simplify setup, configuration, and management. Your Microsoft Defender for Business plan comes with default policies that are based on Microsoft’s recommendations for security and productivity. You can view and edit your default policies, and you can define new policies. You can also change the order of priority for policies that you create. 
 

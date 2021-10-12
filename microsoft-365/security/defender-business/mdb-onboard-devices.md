@@ -20,6 +20,9 @@ ms.collection:
 
 # Onboard devices to Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 Microsoft Defender for Business is designed with the busy small and midsized business in mind. When it comes to onboarding devices, you can choose from several methods.
 
 ## Are you already using Microsoft Endpoint Manager?

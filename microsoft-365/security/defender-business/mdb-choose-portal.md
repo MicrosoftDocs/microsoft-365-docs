@@ -20,12 +20,13 @@ ms.collection:
 
 # The simplified configuration process in Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
 - The simplified configuration process in Microsoft Defender for Business (recommended); or 
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
 
-> [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to try Microsoft Defender for Business, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
 
 The following table describes each experience:
 

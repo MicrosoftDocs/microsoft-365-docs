@@ -20,6 +20,9 @@ ms.collection:
 
 # Understand the configuration settings in Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+
 This article describes configuration settings for Microsoft Defender for Business. 
 
 ## Next-generation protection

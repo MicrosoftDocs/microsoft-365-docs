@@ -23,7 +23,7 @@ ms.collection:
 Microsoft Defender for Business is a security solution designed to help protect the devices and data your business uses. With Microsoft Defender for Business, you can configure your threat protection solution, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
 
 > [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to try Microsoft Defender for Business, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
 
 This guide is intended to:
 
