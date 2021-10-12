@@ -11,6 +11,8 @@
         href: mdb-requirements.md
       - name: How to get Microsoft Defender for Business
         href: get-defender-business.md
+      - name: The simplified configuration process
+        href: mdb-choose-portal.md
     - name: Setup and configuration
       items:
       - name: Process overview
@@ -41,8 +43,6 @@
         href: mdb-manage-devices.md
     - name: Reference information
       items: 
-      - name: Choosing your setup experience
-        href: mdb-choose-portal.md
       - name: Understanding configuration settings
         href: mdb-configuration-settings.md
 

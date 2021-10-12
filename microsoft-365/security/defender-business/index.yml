@@ -33,6 +33,8 @@ landingContent:
             url: mdb-requirements.md
           - text: How to get Defender for Business
             url: get-defender-business.md
+          - text: The simplified configuration process
+            url: mdb-choose-portal.md
 
   # Card
   - title: Set up
@@ -85,7 +87,5 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: The simplified configuration process
-            url: mdb-choose-portal.md
           - text: Configuration settings
             url: mdb-configuration-settings.md
