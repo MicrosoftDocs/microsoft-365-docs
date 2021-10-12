@@ -86,7 +86,9 @@ Before you configure your adaptive scope, use the previous section to identify w
     > [!IMPORTANT]
     > Because the query doesn't run immediately, there's no validation that you typed in the value correctly.
     
-    Select **Add attribute** (for users and groups) or **Add property** (for sites) to use any combination of attributes or properties that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes or properties.
+    Select **Add attribute** (for users and groups) or **Add property** (for sites) to use any combination of attributes or properties that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes or properties. For example:
+    
+    ![Example adaptive scope configuration with groupings](../media/example-adaptive-scope-grouping.png)
     
     Alternatively, you can select **Advanced query builder** to specify your own queries:
     
