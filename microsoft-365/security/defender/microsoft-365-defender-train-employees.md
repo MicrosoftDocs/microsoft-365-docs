@@ -70,11 +70,11 @@ Use these resources for self-study and training to quickly ramp-up and onboard n
 
 | Source | Resource |
 |:-------|:-----|
-| **Microsoft 365 Defender documentation:** | |
-|  | [Responding to your first incident](first-incident-overview.md) |
-|  | [Attack simulation in the eval guide](eval-defender-investigate-respond-simulate-attack.md) |
+| Microsoft 365 Defender documentation | [Responding to your first incident](first-incident-overview.md) <br><br> [Attack simulation in the eval guide](eval-defender-investigate-respond-simulate-attack.md) |
 | Microsoft 365 Defender section of the [Microsoft 365 Defender portal learning hub](https://security.microsoft.com/learning) | [Classifying alerts and incidents video](https://aka.ms/InvestigatingAlertsinDefenderforOffice365) |
-| **Microsoft Learn modules:** |  |
+| Microsoft Learn modules <br><br> ![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg) <br><br> ![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg)  |  [Investigate incidents with Microsoft 365 Defender](/learn/modules/defender-investigate-incidents/) <br><br> 27 min, 6 Units <br><br> [Automate self-healing with Microsoft 365 Defender](/learn/modules/defender-self-healing/) <br><br> 11 min, 5 Units |
+|  |  |
+| Microsoft Learn modules:  |   |
 | ![Investigate incidents with Microsoft 365 Defender training icon.](../../media/incidents-overview/m365-defender-address-security-investigation.svg) | [Investigate incidents with Microsoft 365 Defender](/learn/modules/defender-investigate-incidents/) <br><br> 27 min, 6 Units  |
 | ![Automate self-healing with Microsoft 365 Defender training icon.](../../media/m365d-autoir/m365-defender-auto-self-healing.svg) | [Automate self-healing with Microsoft 365 Defender](/learn/modules/defender-self-healing/) <br><br> 11 min, 5 Units |
 
@@ -83,12 +83,8 @@ Use these resources for self-study and training to quickly ramp-up and onboard n
 | Source | Resource |
 |:-------|:-----|
 |  Microsoft 365 Defender evaluation guide | [Advanced hunting](eval-defender-investigate-respond-additional.md#advanced-hunting) |
-| **Microsoft 365 Defender documentation:** |  |
-|  | [Learn the advanced hunting query language](advanced-hunting-query-language.md) |
-|  | [Get expert training on advanced hunting](advanced-hunting-expert-training.md) |
-|  | [Hunt for ransomware](advanced-hunting-find-ransomware.md) |
-| **Microsoft Learn modules:** |  |
-| ![Locate threats using advanced hunting training icon.](../../media/microsoft-365-defender-train-employees/m365-defender-locate-threats.svg) | [Locate threats using advanced hunting with Microsoft 365 Defender](/learn/modules/defender-advanced-hunting/) <br><br> 30 min, 6 Units |
+| Microsoft 365 Defender documentation | [Learn the advanced hunting query language](advanced-hunting-query-language.md) <br><br> [Get expert training on advanced hunting](advanced-hunting-expert-training.md) <br><br> [Hunt for ransomware](advanced-hunting-find-ransomware.md) |
+| Microsoft Learn module <br><br> ![Locate threats using advanced hunting training icon.](../../media/microsoft-365-defender-train-employees/m365-defender-locate-threats.svg)| [Locate threats using advanced hunting with Microsoft 365 Defender](/learn/modules/defender-advanced-hunting/) <br><br> 30 min, 6 Units |
 
 ### Threat Analytics
 
