@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
+        - name: Detect channel signals with communication compliance
+          href: communication-compliance-channels.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
+        - name: Create and manage communication compliance policies
+          href: communication-compliance-policies.md
+        - name: Learn about communication compliance reports & audits
+          href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
