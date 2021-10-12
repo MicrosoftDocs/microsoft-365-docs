@@ -20,3 +20,4 @@ ms.collection:
 
 # Configure your security settings and policies in Microsoft Defender for Business
 
+After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. 
