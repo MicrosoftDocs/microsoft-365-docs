@@ -150,7 +150,7 @@ When you choose to use static scopes, you must then decide whether to apply the 
 
 With the exception of Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without your having to specify them as included or excluded.
 
-For example, **All recipients **for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
+For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
 #### A policy with specific inclusions or exclusions
 
@@ -199,13 +199,7 @@ For detailed information about what's included and excluded when you configure r
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites. For static scopes, no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist on the final page of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the retention policy can't be created until the validation check passes. If you see this message, go back in the configuration process to change the URL or remove the site from the retention policy.
 
-To specify individual OneDrive accounts, the URL for a user's OneDrive is usually in the following format. For the user principal name (UPN), any special characters such as a period, comma, space, and the at sign ("@") are converted to underscores ("_"): `https://<tenant name>-my.sharepoint.com/personal/<user principal name>`
-
-For example, for a user in the Contoso tenant who has a UPN of "rsimone@contoso.onmicrosoft.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-Or, if you're using a custom domain name so the UPN is "rsimone@contoso.com": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_com`
-
-However, numbers or GUIDs can be appended to the URL when conflicts are detected, so it's always best to confirm a user's URL for their OneDrive account. To confirm the URL, you can use the Microsoft 365 admin center, or PowerShell. For more information, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 > [!NOTE]
 > When you specify individual OneDrive accounts, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
