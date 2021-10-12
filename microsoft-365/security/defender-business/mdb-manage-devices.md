@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 09/30/2021
+ms.date: 10/12/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,9 +26,6 @@ In Microsoft Defender for Business, you can manage devices as follows:
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
 - [Add or remove devices from a policy](#add-or-remove-devices-from-a-group)
 - [Offboard a device from Defender for Business](#offboard-a-device)
-
-> [!NOTE]
-> The procedures in this article assume that you are using the Microsoft 365 Defender portal for Defender for Business. For more information, see [Why we recommend using the simplified configuration experience](mdb-choose-portal.md#why-we-recommend-using-the-simplified-configuration-experience).
 
 ## View the list of onboarded devices
 
