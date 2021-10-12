@@ -31,10 +31,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 | Operating system | Devices must be running Windows 10, version 1709 or later |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
-> [!TIP]
-> To learn more, see [Minimum requirements for Defender for Endpoint](../defender-endpoint/minimum-requirements.md).
-
-## Next step
+## Next steps
 
 - [Get Microsoft Defender for Business](get-defender-business.md)
 
