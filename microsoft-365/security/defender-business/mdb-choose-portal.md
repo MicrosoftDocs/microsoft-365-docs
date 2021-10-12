@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/30/2021
+ms.date: 10/12/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -20,9 +20,15 @@ ms.collection:
 
 # Choose where to manage your policies and settings
 
-When it comes to configuring your security features on your company’s devices, you can choose from one of two portals: the Microsoft 365 Defender Portal and the Microsoft Endpoint Manager admin center. 
+When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two portals experiences: 
+- The simplified configuration process in Microsoft Defender for Business; or 
+- Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
 
-When you begin to use Microsoft Defender for Business, you will be asked which portal you want to use. You'll be asked only once. We recommend using the Microsoft 365 Defender portal. The following table describes each portal:
+We recommend using the simplified configuration process in Microsoft Defender for Business, even if you are already using MEM. The simplified configuration process is streamlined especially for small and midsized businesses and is designed to protect your company's devices from day one.
+
+The following table describes each experience:
+
+<br/><br/>
 
 | Portal  | Description  |
 |---------|---------|
