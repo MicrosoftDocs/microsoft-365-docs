@@ -118,7 +118,6 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **Next** on the three configuration panes. Then select **Create** if you're creating a new policy or **Save** if you're editing an existing one.
 
-
 ## MEM
 
 You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
