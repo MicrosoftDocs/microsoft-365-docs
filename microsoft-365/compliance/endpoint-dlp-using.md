@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: 
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -38,11 +38,30 @@ Or
   > [!div class="mx-imgBorder"]
   > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+
+### Endpoint DLP Windows 10 and macOS settings
+
+
+|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|---------|---------|---------|---------|
+|File path exclusions     |supported         |supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Unallowed Apps     |supported         |supported         |         |
+|Unallowed Bluetooth apps    |supported         |not supported         |         |
+|Browser and domain restrictions to sensitive items      |supported         |not supported         |         |
+|Additional settings for Endpoint DLP     |supported         |supported         |only the default business justifications are supported for macOS devices         |
+|Always audit file activity for devices     |supported         |supported         |         |
+
+
+
 ### File path exclusions
+
+Open [Compliance center](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they are too noisy or don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-You can use this logic to construct your exclusion paths:
+#### Windows 10 devices
+
+You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
 
@@ -58,13 +77,49 @@ You can use this logic to construct your exclusion paths:
 
 - A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
+#### macOS devices (preview)
+
+Similar to Windows 10 devices you can add your own exclusions for macOS devices.
+
+- File path definitions are case insensitive, so `User` is the same as `user`.
+
+- Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+
+#####  Recommended file path exclusions (preview)
+
+For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
+
+- /Applications/*
+- /System/*
+- /usr/*
+- /Library/*
+- /private/*
+- /opt/*
+- /Users/*/Library/Application Support/Microsoft/Teams/*
+
 ### Unallowed apps
 
-Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file.
+Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file. It is available for Windows 10 and macOS devices (preview).
+
 When a policy's **Access by unallowed apps** setting is turned on, and an app that is on the unallowed list attempts to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
+
+#### macOS devices (preview)
+
+Just like on Windows devices, you will now be able to prevent macOS apps from accessing sensitive data by defining them in the **Unallowed apps** list. 
+
+> [!NOTE]
+> Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
+
+To find the full path of Mac apps:
+1. On the macOS device, open **Activity Monitor**. Find and double click the process you want to restrict
+
+2. Choose **Open Files and Ports** tab.
+  
+3. The app name is located at the end of the full path.
+
 
 #### Protect sensitive data from cloud synchronization apps
 
