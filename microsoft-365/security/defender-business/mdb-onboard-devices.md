@@ -46,7 +46,7 @@ If you're not already using MEM to onboard devices, you can choose from several 
 
 | Method | Description |
 |---|---|
-| Microsoft Endpoint Manager (MEM) | The MEM admin center is located at https://endpoint.microsoft.com. |
+| Microsoft Endpoint Manager (MEM) | The MEM admin center is located at [https://endpoint.microsoft.com](https://endpoint.microsoft.com).  |
 | Local script | For up to 10 devices |
 | Group Policy | description |
 | VDI onboarding script | description |

@@ -21,8 +21,16 @@
         href: mdb-roles-permissions.md
       - name: Set up email notifications
         href: mdb-email-notifications.md
-      - name: Onboard devices 
-        href: mdb-onboard-devices.md
+      - name: Onboard devices
+        items:
+        - name: Onboarding overview 
+          href: mdb-onboard-devices.md
+        - name: Microsoft Endpoint Manager
+        - name: Local script
+        - name: Group Policy
+        - name: VDI onboarding script
+        - name: System Center Configuration Manager
+        - name: Mobile Device Management
       - name: Configure your security settings
         href: mdb-configure-security-settings.md
     - name: Get started using the portal
