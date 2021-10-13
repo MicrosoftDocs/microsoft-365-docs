@@ -29,7 +29,40 @@ If you are not familiar with EDM based SITS or there implementation, you should 
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to ten different EDM schemas in a Microsoft 365 tenant. 
+A single EDM schema can be used in multiple sensitive information types that use the same sensitive data table. You can create up to ten different EDM schemas in a Microsoft 365 tenant.
+
+## Working with specific types of data
+
+Because each value in a column in your sensitive information table that's used as a primary element in EDM will have to be compared against any string matching the patterns used in the sensitive information type used as the base for the EDM type, it is critical that you use patterns that will minimize the number of unnecessary matches. For example you might use a sensitive information type based on the regular expression \b\w*\b (which would match every individual word or number in any document or email) and cause the service to be overloaded with matches and be unable to detect true matches. Using more precise patterns that match specifically the types of data that need to be detected can avoid this situation. Below are recommendations for identifying the right configuration for some common types of data.
+
+**Email addresses**: email addresses can be easy to identify, but because they are so common in content (for example, in emails) they may cause significant load in the system if used as a primary field. We recommend that they are only used as secondary evidence. If they must be used as primary evidence, try to define a custom sensitive information type which uses logic to exclude their use as From or To fields in emails, and to exclude those with your company’s email address if appropriate to reduce the number of unnecessary strings that need to be matched against the EDM table.
+
+**Phone numbers**: phone numbers can often be expressed in many different formats, including or excluding country prefixes, area codes, and separators. To reduce the false negatives while keeping load to a minimum it is recommended that you use them only as secondary elements, exclude all likely separators (for example, parenthesis and dashes) and that you only include in your sensitive data table the part that will be always present when expressing the phone number.
+
+**Persons names**: because they will often be expressed in varying order in content, persons names should be separated into first, last, and middle names. Don’t use person’s names as primary elements if using a sensitive information type based on a regular expression as the classification element for this EDM type, because they are difficult to distinguish from common words. Named Entity Recognition as a classification element for an Exact Data Match sensitive information type is currently in preview and can be used as an alternative.
+
+If you must use a column as a primary element that is very hard to identify via a specific pattern (for example, project code names) or could generate lots of matches to be processed (for example, six-digit numbers), you can do so if you also include keywords in the sensitive information type you use as the classification element for your EDM type. For example, if using project code names that may be regular words, you can use the word “project” as additional evidence required in close proximity to the project name regular expression-based pattern in the sensitive type used as the classification element for your EDM type. Or you might consider using a sensitive type based on a regular dictionary as the classification element for your EDM sensitive information type.
+
+When trying to match numeric strings, specify the allowed ranges of numbers such as the number of digits or the starting digits, if known. If you need to match a relatively flexible range of numbers you can use keywords in the base SIT to reduce the number of matches. For example, if trying to match account numbers consisting of 7-11 digits, add the words “account”, “customer”, “acct.”, etc. to the SIT as required additional evidence to reduce the likelihood of unnecessary matches that could cause exceeding the limits of matches to be processed by EDM.
+
+If a field you need to use as a primary element follows a very simple pattern that might cause large numbers of matches (for example, account numbers consisting of five-digit numbers) and you can’t add the presence of keywords as additional evidence in the sensitive information type, you can alternative require a minimum number of presences of that pattern as part of the base sensitive information type. For example, you could use a custom sensitive information type defined in the following way to detect at least 29 other five-digit numbers surrounding a potential five-digit number to match against EDM:
+
+      <Entity id="98703510-18b3-43d4-961f-15317594beb7"
+                  patternsProximity="300"
+                  recommendedConfidence="85"
+                  relaxProximity="false">
+                  <Pattern confidenceLevel="85"
+                              proximity="300">
+                              <IdMatch idRef="MRN"/>
+                              <Match idRef="30 AccountNrs"
+                                    minCount="30"
+                                    proximity="3000"
+                                    uniqueResults="true"/>
+                  </Pattern>
+      </Entity>
+      <Regex id="30 AccountNrs">\d{5}</Regex>
+
+In some cases, you might have to identify certain account or record identification numbers that for historical reasons don’t follow a standardized pattern. For example, “Medical Record Numbers” can be composed of many different permutations of letters and numbers within the same organization. Even though it might be hard at first to identify a pattern, closer inspection often lets you narrow down a pattern that describes all valid values without causing an excessive number of invalid matches. For example, it might be detected that “all MRNs are at least seven characters in length, have at least two numerical digits in them, and if they have any letters in them, they start with one”. Creating a regular expression based on such criteria should allow you to minimize unnecessary matches while capturing all the desired values, and further analysis might allow increased precision by defining separate patterns that describe different formats.
 
 ## Use the Exact Data Match Schema and Sensitive Information Type Wizard
 
