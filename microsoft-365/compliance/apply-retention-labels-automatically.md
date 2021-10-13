@@ -26,7 +26,7 @@ description: Create retention labels and auto-labeling policies so you can autom
 > [!NOTE]
 > This scenario is not supported for [regulatory records](records-management.md#records) or default labels for an organizing structure such as a document set or library in SharePoint, or a folder in Exchange. These scenarios require a [published retention label policy](create-apply-retention-labels.md#step-2-publish-retention-labels).
 
-One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
+One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to unlabeled content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 Auto-applying retention labels are powerful because:
   
@@ -36,7 +36,7 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
