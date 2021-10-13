@@ -132,10 +132,6 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
    ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
 3. After the template downloads, add one row for each label, and save the file. See the [next section](#information-about-the-label-properties-for-import) for information that describes the properties and valid values for each property. 
-    
-   An example of label information added to the template:
-
-   ![File plan template with information filled in.](../media/file-plan-filled-out-template.png)
 
 4. Select **Upload a file** to upload the filled-out template.
     
