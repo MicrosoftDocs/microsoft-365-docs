@@ -28,9 +28,9 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
+> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. Customers need to have a Microsoft Cloud App Security license with the Office 365 app connected and configured to collect activities. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
 
-The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
 
 Use this reference to construct queries that return information from the table. For information on other tables in the advanced hunting schema, see [the advanced hunting
 reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
