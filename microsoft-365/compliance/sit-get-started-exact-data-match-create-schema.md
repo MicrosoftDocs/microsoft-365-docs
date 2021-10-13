@@ -197,7 +197,7 @@ Once you have created the EDM schema file in XML formate, you have to upload it 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
-<!--TODD START HERE THIS BELONGS IN THE SCHEMA ARTICLE-->
+<!--TODD START HERE-->
 Working with specific types of data
 Since each value in a column in your sensitive information table that’s used as a primary element in EDM will have to be compared against any string matching the patterns used in the sensitive information type used as the base for the EDM type, it is critical that you use patterns that will minimize the number of unnecessary matches. For example one could be tempted to use a sensitive information type based on the regular expression \b\w*\b (which would match every individual word or number in any document or email) would easily cause the service to be overloaded with matches and be unable to detect true matches. Using more precise patterns that match specifically the types of data that need to be detected is necessary so such situation is avoided. 
 Below are recommendations for identifying the right configuration for some common types of data. 
@@ -223,7 +223,7 @@ If a field you need to use as a primary element follows a very simple pattern th
                            <Regex id="30 AccountNrs">\d{5}</Regex>
 In some cases you might have to identify certain account or record identification numbers that for historical reasons don’t follow a standardized pattern. For example “Medical Record Numbers” can often be composed of many different permutations of letters and numbers even within the same organization. Even though it might be hard at first to identify a pattern in such cases, closer inspection often allows narrowing down a pattern that describes all the valid values without causing an excessive number of invalid matches. For example, it might be detected that “all MRNs are at least seven characters in length, have at least two numerical digits in them, and if they have any letters in them they start with one”. Creating a regular expression based on such criteria should allow you to minimize unnecessary matches while capturing all the desired values, and further analysis might allow increased precision by defining separate patterns that describe different formats.
 
-<!--TODD STOP HERE, THIS BELONGS IN THE SCHEMA ARTICLE-->
+<!--TODD STOP HERE-->
 
 ## Next step
 
