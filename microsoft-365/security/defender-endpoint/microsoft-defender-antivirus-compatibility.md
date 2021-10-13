@@ -89,6 +89,8 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
  >[!NOTE]
  >For passive mode to work on Windows Server 2016 and Windows Server 2012 R2, they need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
+(<a id="fn2">2</a>) On Windows Server 2012 R2 or Windows Server 2016, if you are using a non-Microsoft antivirus product and it is not onboarded to Microsoft Defender for Endpoint, [disable/uninstall Microsoft Defender Antivirus manually](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2012-r2-or-windows-server-2016) to prevent problems caused by having multiple antivirus products installed on a server.
+
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
