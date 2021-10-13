@@ -130,6 +130,8 @@
             href: ../defender-identity/notifications.md
     - name: Investigate and respond to threats
       items: 
+       - name: Overview
+         href: incident-response-overview.md
        - name: Respond to incidents
          items: 
               - name: Overview
@@ -166,10 +168,6 @@
                    href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
-              - name: Get incident email notifications
-                href: get-incident-notifications.md
-              - name: Use Power Automate to triage threats
-                href: use-power-automate.md
        - name: Manage automated investigation and response
          items: 
               - name: Overview
@@ -327,7 +325,9 @@
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Train your employees
-      href: microsoft-365-defender-train-employees.md
+      items: 
+       - name: Train your employees
+         href: microsoft-365-defender-train-employees.md
     - name: Reference
       items: 
         - name: Permissions & settings

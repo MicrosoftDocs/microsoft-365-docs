@@ -168,6 +168,32 @@ Once you're done analyzing an alert and it can be resolved, go to the **Manage a
 
 Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
 
+## Use Power Automate to triage alerts
+
+Modern security operations (SecOps) teams need automation to work effectively. To focus on hunting and investigating real threats, SecOps teams use Power Automate to triage through the list of alerts and eliminate the ones that aren't threats.  
+
+### Criteria for resolving alerts
+
+- User has Out-of-office message turned on
+
+- User isn't tagged as high risk
+
+If both are true, SecOps marks the alert as legitimate travel and resolves it. A notification is posted in Microsoft Teams after the alert is resolved. 
+
+### Connect Power Automate to Microsoft Cloud App Security
+
+To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Cloud App Security (MCAS). 
+
+1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab. 
+
+2. Provide a name for your token, and then click **Generate**. Save the token as you'll need it later.
+
+### Create an automated flow
+
+For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
+
+This video also describes how to connect power automate to MCAS. 
+
 ## Next steps
 
 As needed for in-process incidents, continue your [investigation](investigate-incidents.md).
