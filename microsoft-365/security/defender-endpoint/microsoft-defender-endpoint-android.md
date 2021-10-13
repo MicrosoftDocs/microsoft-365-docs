@@ -47,8 +47,8 @@ This topic describes how to install, configure, update, and use Defender for End
 - **For Administrators**
    - Access to the Microsoft 365 Defender portal.
    - Access [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to
-    >    - Deploy the app to enrolled user groups in your organization.
-     >   - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
+       - Deploy the app to enrolled user groups in your organization.
+       - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
   
     > [!NOTE]
     > - Microsoft Defender for Endpoint now extends protection to an organization’s data within a managed application (MAM) for devices that are not enrolled using mobile device management (MDM), but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
