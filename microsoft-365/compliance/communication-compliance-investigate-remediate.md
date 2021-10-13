@@ -38,8 +38,6 @@ The next step is to sort the messages so that it's easier for you to investigate
 
 For the date filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for views, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
-
-
 #### Filter details
 
 Communication compliance filters allow you to filter and sort alert messages for quicker investigation and remediation actions. Filtering is available on the **Pending** and **Resolved** tabs for each policy. To save a filter or filter set as a saved filter query, one or more values must be configured as filter selections.
@@ -62,12 +60,6 @@ The following table outlines filter details:
 | **Language** | The detected language of text in the message. The message is classified according to the language of the majority of the message text. For example, for a message containing both German and Italian text, but the majority of text is German, the message is classified as German (DE). The following languages are supported: Chinese (Simplified - ZH), English (EN), French (FR), German (DE), Italian (IT), Japanese (JP), Portuguese (PT), and Spanish (ES). For example, to filter messages classified as German and Italian, enter 'DE,IT' (the 2-digit language codes) in the Language filter search box. To view the detected language classification for a message, select a message, select View message details, and scroll to the EmailDetectedLanguage field. |
 | **Escalated To** | The user name of the person included as part of a message escalation action. |
 | **Classifiers** | The name of built-in and custom classifiers that apply to the message. Some examples include *Offensive Language*, *Targeted Harassment*, *Profanity*, *Threat*, and more.
-
-
-
-
-
-
 
 #### To configure a filter
 
@@ -155,24 +147,7 @@ Now that you've reviewed the details of the message for the alert, you can choos
 
 Message details can be exported or downloaded if you need to archive the messages in a separate storage solution. Selecting the **Download** control automatically adds selected messages to a .ZIP file that can be saved to storage outside of Microsoft 365.
 
-### Unresolve messages (preview)
-
-When messages are resolved, they are removed from the **Pending** tab view and displayed in the **Resolved** tab view. Investigation and remediation actions aren't available for messages in the *Resolved* view. However, there may be instances where you need to take additional action on a message that was mistakenly resolved or that needs further investigation after initial resolution. You can use the unresolve command feature move one or more messages from the *Resolved* view back to the *Pending* view.
-
-To unresolve messages, complete the following steps:
-
-1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Communication compliance**.
-3. Select the **Policies** tab and then select a policy that contains the resolved alert message, double-click to open the **Policy** page.
-4. On the **Policy** page, select the **Resolved** tab.
-5. On the **Resolved** tab, select one or more messages to move back to *Pending*.
-6. On the command bar, select **Unresolve**.
-7. On the **Unresolve item** pane, add any comments applicable to the unresolve action and select **Save** to move the item back to *Pending*.
-8. Select the **Pending** tab to verify the selected items are displayed.
-
 ### Step 5: Consider Power Automate flows
-
-## Power Automate flows
 
 [Microsoft Power Automate](/power-automate/getting-started) is a workflow service that automates actions across applications and services. By using flows from templates or created manually, you can automate common tasks associated with these applications and services. When you enable Power Automate flows for communication compliance, you can automate important tasks for alerts and users. You can configure Power Automate flows to notify managers when users have communication compliance alerts and other applications.
 
@@ -190,7 +165,7 @@ The following Power Automate template is provided to customers to support proces
   - Date/Time of the alert
   - Severity level of the alert
 
-### Create a Power Automate flow
+#### Create a Power Automate flow
 
 To create a Power Automate flow from a recommended default template, you'll use the **Manage Power Automate flows** option from the **Automate** control when working directly in an alert. To create a Power Automate flow with **Manage Power Automate flows**, you must be a member of at least one communication compliance role group.
 
@@ -206,7 +181,7 @@ Complete the following steps to create a Power Automate flow from a default temp
 8. Select **Save draft** to save the flow for further configuration later, or select **Save** to complete the configuration for the flow.
 9. Select **Close** to return to the Power Automate flow page. The new template will be listed as a flow on the **My flows** tab and is automatically available from the Power Automate control for the user that created the flow when working with communication compliance alerts.
 
-### Share a Power Automate flow
+#### Share a Power Automate flow
 
 By default, Power Automate flows created by a user are only available to that user. For other communication compliance users to have access and use a flow, the flow must be shared by the flow creator. To share a flow, you'll use the **Power Automate** control when working directly in an alert.
 
@@ -221,7 +196,7 @@ Complete the following steps to share a Power Automate flow:
 6. On the flow sharing page, enter the name of the user or group you want to add as an owner for the flow.
 7. On the **Connection Used** dialog, select **OK** to acknowledge that the added user or group will have full access to the flow.
 
-### Edit a Power Automate flow
+#### Edit a Power Automate flow
 
 If you need to edit a flow, you'll use the **Power Automate** control when working directly in an alert. To edit a Power Automate flow, you must be a member of at least one communication compliance role group.
 
@@ -234,7 +209,7 @@ Complete the following steps to edit a Power Automate flow:
 5. Select the **ellipsis** > **Settings** to change a flow component setting or **ellipsis** > **Delete** to delete a flow component.
 6. Select **Save** and then **Close** to complete editing the flow.
 
-### Delete a Power Automate flow
+#### Delete a Power Automate flow
 
 If you need to delete a flow, you'll use the **Power Automate** control when working directly in an alert. To delete a Power Automate flow, you must be a member of at least one communication compliance role group.
 
@@ -246,12 +221,7 @@ Complete the following steps to delete a Power Automate flow:
 4. On the **Power Automate flows** page, select flow to delete. Select **Delete** from the flow control menu.
 5. On the deletion confirmation dialog, select **Delete** to remove the flow or select **Cancel** to exit the deletion action.
 
-
-
-
-### Step 6: Notice templates
-
-## Notice templates
+### Step 6: Consider creating notice templates
 
 You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the user email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
@@ -284,3 +254,18 @@ If you'd like to create more than a simple text-based email message for notifica
 
 > [!NOTE]
 > HTML href attribute implementation in the communication compliance notification templates currently support only single quotation marks instead of double quotation marks for URL references.
+
+## Unresolve messages (preview)
+
+When messages are resolved, they are removed from the **Pending** tab view and displayed in the **Resolved** tab view. Investigation and remediation actions aren't available for messages in the *Resolved* view. However, there may be instances where you need to take additional action on a message that was mistakenly resolved or that needs further investigation after initial resolution. You can use the unresolve command feature move one or more messages from the *Resolved* view back to the *Pending* view.
+
+To unresolve messages, complete the following steps:
+
+1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for a user assigned to the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups in your Microsoft 365 organization.
+2. In the Microsoft 365 compliance center, go to **Communication compliance**.
+3. Select the **Policies** tab and then select a policy that contains the resolved alert message, double-click to open the **Policy** page.
+4. On the **Policy** page, select the **Resolved** tab.
+5. On the **Resolved** tab, select one or more messages to move back to *Pending*.
+6. On the command bar, select **Unresolve**.
+7. On the **Unresolve item** pane, add any comments applicable to the unresolve action and select **Save** to move the item back to *Pending*.
+8. Select the **Pending** tab to verify the selected items are displayed.
