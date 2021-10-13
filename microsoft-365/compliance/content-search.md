@@ -42,7 +42,7 @@ After you run a search, the number of content locations and an estimated number 
 
 - To access to the Content search tool in the Microsoft 365 compliance center (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
-- In an Exchange hybrid deployment, you can't use the Content search tool to search on-premises mailboxes. You can only use te tool to search cloud-based mailboxes.
+- In an Exchange hybrid deployment, you can't use the Content search tool to search on-premises mailboxes. You can only use the tool to search cloud-based mailboxes.
 
 ## Create and run a search
   
