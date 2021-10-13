@@ -138,15 +138,9 @@
                 href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
-              - name: Investigate incidents
-                href: investigate-incidents.md
-              - name: Investigate alerts
-                href: investigate-alerts.md    
-              - name: Investigate users 
-                href: investigate-users.md                  
               - name: Respond to your first incident
                 items: 
-                 - name: Introduction
+                 - name: Overview
                    href: first-incident-overview.md
                  - name: Prepare
                    href: first-incident-prepare.md
@@ -162,10 +156,20 @@
                       href: first-incident-path-phishing.md
                     - name: Identity
                       href: first-incident-path-identity.md
+              - name: Investigate incidents
+                items: 
+                 - name: Incidents
+                   href: investigate-incidents.md
+                 - name: Alerts
+                   href: investigate-alerts.md    
+                 - name: Users 
+                   href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
               - name: Get incident email notifications
                 href: get-incident-notifications.md
+              - name: Use Power Automate to triage threats
+                href: use-power-automate.md
        - name: Manage automated investigation and response
          items: 
               - name: Overview
@@ -306,34 +310,22 @@
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
-       - name: SecOps integration for Microsoft 365 Defender
-         items: 
-          - name: Overview
-            href: integrate-microsoft-365-defender-secops.md
-          - name: Step 1. Operations readiness
-            href: integrate-microsoft-365-defender-secops-plan.md
-          - name: Step 2. Readiness assessment using Zero Trust
-            href: integrate-microsoft-365-defender-secops-readiness.md
-          - name: Step 3. Integration with your SOC services
-            href: integrate-microsoft-365-defender-secops-services.md
-          - name: Step 4. Roles, responsibilities, and oversight
-            href: integrate-microsoft-365-defender-secops-roles.md
-          - name: Step 5. Test use cases
-            href: integrate-microsoft-365-defender-secops-use-cases.md
-          - name: Step 6. SOC maintenance tasks
-            href: integrate-microsoft-365-defender-secops-tasks.md
-       - name: Use Power Automate to triage threats
-         href: use-power-automate.md
-    - name: How-to guides
+    - name: SecOps integration
       items: 
-       - name: Create a trial lab or pilot environment
-         href: eval-overview.md
-       - name: Run pilot playbook
-         href: eval-overview.md
-       - name: Turn on FAQ
-         href: m365d-enable-faq.md
-
-
+       - name: Overview
+         href: integrate-microsoft-365-defender-secops.md
+       - name: Step 1. Operations readiness
+         href: integrate-microsoft-365-defender-secops-plan.md
+       - name: Step 2. Readiness assessment using Zero Trust
+         href: integrate-microsoft-365-defender-secops-readiness.md
+       - name: Step 3. Integration with your SOC services
+         href: integrate-microsoft-365-defender-secops-services.md
+       - name: Step 4. Roles, responsibilities, and oversight
+         href: integrate-microsoft-365-defender-secops-roles.md
+       - name: Step 5. Test use cases
+         href: integrate-microsoft-365-defender-secops-use-cases.md
+       - name: Step 6. SOC maintenance tasks
+         href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Reference
       items: 
         - name: Permissions & settings

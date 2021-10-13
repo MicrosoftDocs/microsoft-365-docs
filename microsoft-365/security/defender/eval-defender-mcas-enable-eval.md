@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: bcarter
 author: brendacarter
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

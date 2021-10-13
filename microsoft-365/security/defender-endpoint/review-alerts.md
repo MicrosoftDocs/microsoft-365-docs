@@ -8,7 +8,7 @@ f1.keywords:
   - NOCSH
 ms.author: daniha
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - SPO160
   - MOE150

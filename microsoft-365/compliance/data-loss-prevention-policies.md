@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: null
+ms.localizationpriority:  null
 ms.collection:
 - M365-security-compliance
 - SPO_Content
