@@ -114,14 +114,13 @@ To verify the record in Microsoft 365:
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Add an MX record so email for your domain will come to Microsoft
-<a name="BKMK_add_MX"> </a>
 
 Follow the steps below or [watch the video (start at 3:22)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 2. Select **Manage domains**.
     
@@ -129,9 +128,13 @@ Follow the steps below or [watch the video (start at 3:22)](https://docs.microso
     
 4. In the **Domain Settings** area, select **Edit DNS Settings**.
     
-5. In the **MX Records** section, in the **Mail Exchanger (MX Record)** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. In the **MX Records** section, in the **Mail Exchanger (MX Record)** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>
+
+    ![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
-6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(If there are no MX records already listed, continue to the next step.)<br/>![1&amp;1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
+6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(If there are no MX records already listed, continue to the next step.)<br/>
+
+    ![1&amp;1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
 7. In the boxes for the **MX 1** record, type or copy and paste the values from the following table. 
     
@@ -141,17 +144,20 @@ Follow the steps below or [watch the video (start at 3:22)](https://docs.microso
     
     ![1 and 1 - configure 2 and 3](../../media/3afb04d1-7bbf-4147-89ae-561e14ded26d.png)<br/>
   
-8. Select **Save**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
-  
-9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
-  
-## Add the six CNAME records that are required for Microsoft
-<a name="BKMK_add_CNAME"> </a>
+8. Select **Save**.<br/>(You may have to scroll down.)<br/>
 
-1&1 IONOS requires a workaround so that you can use an MX record together with the CNAME records that are required for Microsoft email services. This workaround requires you to create a set of subdomains at 1&1 IONOS, and to assign them to CNAME records.
+    ![1&amp;1-BP-Configure-2-4](../../media/355b3ba7-4d2b-45ed-aa17-ac4affb54fe3.png)
+  
+9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>
+
+    ![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+  
+## Add the CNAME record required for Microsoft
+
+IONOS by 1&1 requires a workaround so that you can use an MX record together with the CNAME records that are required for Microsoft email services. This workaround requires you to create a set of subdomains at IONOS by 1&1, and to assign them to CNAME records.
   
 > [!IMPORTANT]
-> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at 1&1 IONOS. 
+> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at IONOS by 1&1. 
   
 ### Basic CNAME records
 
@@ -160,7 +166,7 @@ Follow the steps below or [watch the video (start at 3:57)](https://docs.microso
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 2. Select **Manage domains**.
     
@@ -275,7 +281,7 @@ Follow the steps below or [watch the video (start at 5:09)](https://docs.microso
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 2. Select **Manage domains**.
     
@@ -306,7 +312,7 @@ Follow the steps below or [watch the video (start at 5:51)](https://docs.microso
 > [!NOTE]
 > If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
   
-1. To get started, go to your domains page at 1&1 IONOS by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 2. Select **Manage domains**.
     

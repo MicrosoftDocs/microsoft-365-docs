@@ -58,9 +58,9 @@ After you add these records at Cloudflare, your domain will be set up to work wi
 > [!IMPORTANT]
 > You must perform this procedure at the domain registrar where you purchased and registered your domain. 
   
-When you signed up for Cloudflare, you added a domain by using the Cloudflare **Setup** process. 
+When you signed up for Cloudflare, you added a domain by using the Cloudflare Setup process. 
   
-The domain that you added was purchased from Cloudflare or a separate domain registrar. To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use Cloudflare's nameservers.
+The domain that you added was purchased from Cloudflare or a separate domain registrar. To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use the Cloudflare nameservers.
   
 To change your domain's name servers at your domain registrar's website yourself, follow these steps.
   
@@ -160,7 +160,7 @@ To verify the record in Microsoft 365:
   
 6. Select **Save**.
   
-7. Add each of the other five CNAME records.
+7. Add the other CNAME record.
     
 ### Add a TXT record for SPF to help prevent email spam
 
@@ -225,8 +225,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
   
 1. Select the **Save Changes** (check mark) control. 
   
@@ -260,8 +260,8 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     |**Type**|**Host**|**Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
   
 8. Select the **Save Changes** (check mark) control. 
   
