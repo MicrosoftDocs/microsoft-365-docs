@@ -58,23 +58,36 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
-## Antivirus protection with Defender for Endpoint
+## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
-If your organization is using a non-Microsoft antivirus/antimalware solution together with Defender for Endpoint, Microsoft Defender Antivirus can, depending on your operating system, run in passive mode.
+The following table summarizes what happens with Microsoft Defender Antivirus when non-Microsoft antivirus/antimalware solutions are used together or without Microsoft Defender for Endpoint. 
 
-<br/><br/>
+| Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
+|------|------|-------|-------|
+| Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
+| Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
+| Windows 10  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
+| Windows 10  | A non-Microsoft antivirus/antimalware solution | No   | Disabled mode (automatically)    |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[1](#fn1)]<sup>  | 
+| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | No  | Microsoft Defender Antivirus must be disabled (manually) <sup>[[2](#fn2)]<sup></sup>  |
+| Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
+|Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | No | Active mode |
+| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[1](#fn1)]<sup> |
+| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | No | Microsoft Defender Antivirus must be disabled (manually) <sup>[[2](#fn2)]<sup> |
 
-|Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
-|---|---|---|---|
-|Windows 10 or later|Microsoft Defender Antivirus|Active mode|
-|Windows 10 or later|A non-Microsoft antivirus/antimalware solution|Passive mode (happens automatically)|
-|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
-|Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Passive mode (set manually) <sup>[[2](#fn2)]<sup></sup>|
-|Windows Server 2016|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[3](#fn3)]</sup>|
+(<a id="fn1">1</a>)  On Windows Server, version 1803 or newer, Windows Server 2019, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
 
-(<a id="fn2">2</a>)  On Windows Server, version 1803, or newer, or Windows Server 2019, or Windows Server 2022, when you install a non-Microsoft antivirus product, set Microsoft Defender Antivirus to passive mode manually. You can use the **ForceDefenderPassiveMode** registry key to perform this task. To use the registry key, navigate to `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`, and set or create a DWORD entry called `ForceDefenderPassiveMode`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base. For more information, see [Passive mode and Windows Server](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-(<a id="fn3">3</a>)  On Windows Server 2016, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Windows Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
+You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
+- Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+- Name: `ForceDefenderPassiveMode`
+- Type: `REG_DWORD`
+- Value: `1`
+
+ >[!NOTE]
+ >For passive mode to work on Windows Server 2016 and Windows Server 2012 R2, they need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016). 
 
 > [!TIP]
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
