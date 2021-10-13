@@ -26,11 +26,17 @@
         - name: Onboarding overview 
           href: mdb-onboard-devices.md
         - name: Microsoft Endpoint Manager
+          href: mdb-onboarding-mem.md
         - name: Local script
+          href: mdb-onboarding-local-script.md
         - name: Group Policy
+          href: mdb-onboarding-group-policy.md
         - name: VDI onboarding script
+          href: mdb-onboarding-vdi-onboarding-script.md
         - name: System Center Configuration Manager
+          href: mdb-onboarding-sccm.md
         - name: Mobile Device Management
+          href: mdb-onboarding-mdm.md
       - name: Configure your security settings
         href: mdb-configure-security-settings.md
     - name: Get started using the portal
