@@ -102,7 +102,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 - [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md#collection-alerts). New entries were added to describe additional alert insights now available in app governance.
 
 ### Communication compliance
-- [Communication compliance feature reference](communication-compliance-feature-reference.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
+- [Communication compliance channels](communication-compliance-channels.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
 
 ### Compliance & service assurance
 
