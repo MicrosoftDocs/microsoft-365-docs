@@ -30,9 +30,19 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 If Cloudflare is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
->[!IMPORTANT] This registrar is automatically verified and set up for Microsoft 365 through a service called Domain Connect. These steps for automatic verification replace the steps for manual verification and setup later in this article. 
+## Before you begin
 
-To use Domain Connect to verify and set up your Cloudflare hosted domain with Microsoft 365:
+You have two options for setting up DNS records for your domain:
+
+- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365. 
+
+OR
+
+- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience. 
+
+## Use Domain Connect to verify and set up your domain
+
+Follow these steps to automatically verify and set up your Cloudflare domain with Microsoft 365:
 
 1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
@@ -46,7 +56,7 @@ To use Domain Connect to verify and set up your Cloudflare hosted domain with Mi
     
     This completes your domain setup for Microsoft 365. 
 
-## Create DNS records with manual setup (Not recommended)
+## Create DNS records with manual setup
 
 After you add these records at Cloudflare, your domain will be set up to work with Microsoft 365 services.
 
@@ -154,13 +164,10 @@ To verify the record in Microsoft 365:
     | Type | Name | Target | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 minutes  <br/> |> |
-    |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
   
 5. Select the **DNS Traffic** icon (change orange cloud to grey) to bypass the Cloudflare servers.
   
 6. Select **Save**.
-  
-7. Add the other CNAME record.
     
 ### Add a TXT record for SPF to help prevent email spam
 

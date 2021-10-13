@@ -30,25 +30,33 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 
 If IONOS by 1&1 is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
->[!IMPORTANT] This registrar is automatically verified and set up for Microsoft 365 through a service called Domain Connect. These steps for automatic verification replace the steps for manual verification and setup later in this article. 
+## Before you begin
 
-To use Domain Connect to verify and set up your IONOS by 1&1 hosted domain with Microsoft 365:
+You have two options for setting up DNS records for your domain:
+
+- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365. 
+
+OR
+
+- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience. 
+
+## Use Domain Connect to verify and set up your domain
+
+Follow these steps to automatically verify and set up your Cloudflare domain with Microsoft 365:
 
 1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
-1. Select the three dots (more actions) > choose **Start setup**.
+1. Select the three dots (more actions) >  choose **Start setup**.
 
 1. On the **How do you want to connect your domain?** page, select **Continue**.   
 
 1. On the **Add DNS records** page, select **Add DNS records**.
 
-1. On the IONOS by 1&1 login page, sign in to your account.
-
-1. Select **Connect**, and then select **Allow**.
+1. On the Cloudflare login page, sign in to your account, and select **Authorize**.
     
     This completes your domain setup for Microsoft 365. 
 
-## Create DNS records with manual setup (Not recommended)
+## Create DNS records with manual setup
 
 After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
 
@@ -64,7 +72,7 @@ After you add these records at IONOS by 1&1, your domain will be set up to work 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
-## Add a TXT record for verification
+### Add a TXT record for verification
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -113,7 +121,7 @@ To verify the record in Microsoft 365:
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
-## Add an MX record so email for your domain will come to Microsoft
+### Add an MX record so email for your domain will come to Microsoft
 
 Follow the steps below or [watch the video (start at 3:22)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
@@ -152,14 +160,12 @@ Follow the steps below or [watch the video (start at 3:22)](https://docs.microso
 
     ![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
   
-## Add the CNAME record required for Microsoft
+### Add the CNAME record required for Microsoft
 
 IONOS by 1&1 requires a workaround so that you can use an MX record together with the CNAME records that are required for Microsoft email services. This workaround requires you to create a set of subdomains at IONOS by 1&1, and to assign them to CNAME records.
   
 > [!IMPORTANT]
-> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at IONOS by 1&1. 
-  
-### Basic CNAME records
+> Make sure that you have at least two available subdomains before starting this procedure. We recommend this solution only if you already have experience with creating subdomains at IONOS by 1&1.
 
 Follow the steps below or [watch the video (start at 3:57)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
@@ -203,11 +209,46 @@ Follow the steps below or [watch the video (start at 3:57)](https://docs.microso
 11. Select the check box for the **I am aware** disclaimer.<br/>![1&amp;1-BP-Configure-3-8-1](../../media/6c4cac1a-23f2-4ff3-b2d1-3dca908638d2.png)
   
 12. Select **Save**.<br/>![1&amp;1-BP-Configure-3-8-2](../../media/ea1dfc06-c175-4146-ab40-da4d162097e1.png)
-  
-  
-### Additional CNAME records
 
-The additional CNAME records created in the following procedure enable Skype for Business Online services. You will employ the same steps that you used to create the two CNAME records you have already created.
+## Add a TXT record for SPF to help prevent email spam
+
+> [!IMPORTANT]
+> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml). 
+  
+Follow the steps below or [watch the video (start at 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
+  
+> [!NOTE]
+> If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
+  
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+    
+2. Select **Manage domains**.
+    
+3. On the **Domain Center** page, find the domain that you want to update, and then select the **Panel** (**v**) control for that domain.
+    
+4. In the **Domain Settings** area, select **Edit DNS Settings**.
+    
+5. In the **TXT and SRV Records** section, select **Add Record**. <br/>(You may have to scroll down.)
+    
+6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
+    
+    |**Type**|**Prefix**|**Name Value**|
+    |:-----|:-----|:-----|
+    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           | 
+    
+    ![TXT record](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
+  
+7. Select **Save**.<br/>![Add record](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
+  
+8. Select **Save**.<br/>![Save record](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
+  
+9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
+  
+## Advanced option: Skype for Business
+
+Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+
+### Add two additional CNAME records
   
 1. Create the third subdomain (Lyncdiscover).<br/>On the **Subdomain Overview** section, select **Create Subdomain**.
     
@@ -260,52 +301,8 @@ The additional CNAME records created in the following procedure enable Skype for
 17. Select the check box for the **I am aware** disclaimer, and then select **Save**.
     
 18. In the **Edit DNS Settings** dialog box, select **Yes**.
-    
-### CNAME records needed for MDM
 
-> [!IMPORTANT]
-> Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. 
-  
-|**Create Subdomain**|**Alias**|
-|:-----|:-----|
-|enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
-   
-## Add a TXT record for SPF to help prevent email spam
-
-> [!IMPORTANT]
-> You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml). 
-  
-Follow the steps below or [watch the video (start at 5:09)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
-  
-> [!NOTE]
-> If you've registered with 1und1.de, [sign in here](https://go.microsoft.com/fwlink/?linkid=859152). 
-  
-1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
-    
-2. Select **Manage domains**.
-    
-3. On the **Domain Center** page, find the domain that you want to update, and then select the **Panel** (**v**) control for that domain.
-    
-4. In the **Domain Settings** area, select **Edit DNS Settings**.
-    
-5. In the **TXT and SRV Records** section, select **Add Record**. <br/>(You may have to scroll down.)
-    
-6. In the **Add Record** area, in the boxes for the new record, type or copy and paste the values from the following table. <br/>(Choose the **Type** value from the drop-down list.) <br/>
-    
-    |**Type**|**Prefix**|**Name Value**|
-    |:-----|:-----|:-----|
-    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           | 
-    
-    ![TXT record](../../media/0b3ba3b4-64b9-4d68-9ee1-04eb3a17d4c5.png)
-  
-7. Select **Save**.<br/>![Add record](../../media/0f222eb9-3bfd-4908-9a99-516cc6fb1d0e.png)
-  
-8. Select **Save**.<br/>![Save record](../../media/86ed1b59-31b2-4094-9cd4-32b94eb09e35.png)
-  
-9. In the **Edit DNS Settings** dialog box, select **Yes**.<br/>![Selecting Yes in the Edit DNS Settings dialog box](../../media/920cc95f-fedf-4da2-94a4-9cb41ed49bcf.png)
-  
-## Add the two SRV records that are required for Microsoft
+## Add the two SRV records required for Microsoft
 
 Follow the steps below or [watch the video (start at 5:51)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet).
   
@@ -341,4 +338,20 @@ Follow the steps below or [watch the video (start at 5:51)](https://docs.microso
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+    
+## Advanced option: Intune and Mobile Device Management for Microsoft 365
+
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+
+### Add the two required CNAME records
+
+> [!IMPORTANT]
+> Follow the procedure that you used for the other CNAME records, but supply the values from the following table. 
+  
+|**Create Subdomain**|**Alias**|
+|:-----|:-----|
+|enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
+|enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+   
+
   

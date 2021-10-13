@@ -32,13 +32,10 @@ If AWS is your DNS hosting provider, follow the steps in this article to verify 
   
 After you add these records at AWS, your domain will be set up to work with Microsoft services.
   
-
-  
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add a TXT record for verification
-<a name="BKMK_verify"> </a>
 
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
@@ -47,35 +44,38 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
-2. On the **Resources** page, select **Hosted Zones**.
+1. On the landing page, under **Domains**, select **Registered domains**.
     
-3. On the **Hosted Zones** page, in the **Domain Name** column, select the name of the domain that you want to edit. 
+1. Select the domain you want to set up in Microsoft 365.
+
+    **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
+
+1. Select the domain name for the hosted zone version of the domain you want to verify.
+
+1. Select **Create record**.
     
-4. Select **Create Record Set**.
-    
-5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
+1. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
     > [!TIP]
     > The quotation marks required by the onscreen instructions are supplied automatically. You don't need to type them manually. 
   
-    |||||||
-    |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**Name** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
-    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |No  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
+    ||||||
+    |:-----|:-----|:-----|:-----|:-----|
+    |**Record name** <br/> |**Record type** <br/> |**Value** <br/> |**TTL (Seconds)** <br/> |**Routing policy** <br/> |
+    |(Leave this field empty.)  <br/> |TXT - Used to verify email senders  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |300  <br/> |Simple  <br/> |
    
-6. Select **Create**.
+1. Select **Create**.
     
-7. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record.
-  
-When Microsoft finds the correct TXT record, your domain is verified.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is verified.
+
+To verify the record in Microsoft 365:
   
 1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-    
 2. On the **Domains** page, select the domain that you are verifying. 
     
 3. On the **Setup** page, select **Start setup**.
@@ -86,7 +86,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Add an MX record so email for your domain will come to Microsoft 365
-<a name="BKMK_add_MX"> </a>
 
 1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
@@ -100,9 +99,9 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**Name**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
-    |:-----|:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Simple  <br/> |
+    |**Record name**|**Record type**|**Value**|**TTL (Seconds)**|**Routing policy**|
+    |:-----|:-----|:-----|:-----|:-----|
+    |(Leave this field empty.)  <br/> |MX - Mail exchange  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 300  <br/> | Simple routing <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -127,8 +126,7 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
     ![AWS-BP-Configure-2-5](../../media/86f0998d-f5d4-4750-a93d-ac13b318c40b.png)
   
-## Add the five CNAME records that are required for Microsoft 365
-<a name="BKMK_add_CNAME"> </a>
+## Add the CNAME record required for Microsoft 365
 
 1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
@@ -138,34 +136,24 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 4. Select **Create Record Set**.
     
-5. Add the first CNAME record.
+5. Add the CNAME record.
     
     In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the first row in the following table. 
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**Name**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
+    |**Record name**|**Record type**|**Value**| **TTL** |**Routing policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
-    |sip  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
-    |lyncdiscover  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
-    |enterpriseregistration  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
-    |enterpriseenrollment  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
+    |autodiscover  <br/> |CNAME - Routes traffic to another domain name  <br/> | autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> | 300  <br/> |Simple  <br/> |
+   
    
     ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
 6. Select **Create**.
     
     ![AWS-BP-Configure-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
-  
-7. Add the other four CNAME records.
-    
-    In the **Hosted Zones** page, select **Create Record Set**, create a record using the values from the next row in the table, and then again select **Create** to complete that record. 
-    
-    Repeat this process until you have created all five CNAME records.
     
 ## Add a TXT record for SPF to help prevent email spam
-<a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. Need examples? Check out these [External Domain Name System records for Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). To validate your SPF record, you can use one of these[SPF validation tools](../setup/domains-faq.yml). 
@@ -193,7 +181,6 @@ When Microsoft finds the correct TXT record, your domain is verified.
     ![AWS-BP-Configure-4-3](../../media/94b9306c-bdc9-4f84-ad6f-6d12edbfde90.png)
   
 ## Add the two SRV records that are required for Microsoft 365
-<a name="BKMK_add_SRV"> </a>
 
 1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
@@ -226,4 +213,11 @@ When Microsoft finds the correct TXT record, your domain is verified.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+
+    |**Record name**|**Record type**|**Value**| **TTL** |**Routing policy**|
+    |:-----|:-----|:-----|:-----|:-----|:-----|
+    |sip  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
+    |lyncdiscover  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
+    |enterpriseregistration  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
+    |enterpriseenrollment  <br/> |CNAME - Canonical name  <br/> |No  <br/> |300  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |Simple  <br/> |
   

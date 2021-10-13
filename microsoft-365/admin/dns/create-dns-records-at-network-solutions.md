@@ -169,7 +169,7 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.micr
 ## Add the CNAME record required for Microsoft
 
 Follow the steps below or [watch the video (start at 4:43)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
-  
+
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
 1. On the landing page, select **Domain Names**.
@@ -197,16 +197,12 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.micr
 6. In the boxes for the CNAME record, type or copy and paste the values from the following table.
     
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
-    |:-----|:-----|:-----|:-----|
-    | CNAME |Other Host| autodiscover.outlook.com **This value canNOT end with a period (.)** <br/>| autodiscover  <br/> |3600  <br/> |(No setting)  <br/> |autodiscover.outlook.com.  <br/>  |
-    |sip  <br/> |3600  <br/> |(No setting)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(No setting)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseregistration.windows.net  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |:-----|:-----|:-----|:-----|:-----|
+    | CNAME |Other Host| autodiscover  <br/> | autodiscover.outlook.com **This value CANNOT end with a period (.)** <br/> 1 Hour  <br/> |
     
     ![Type or paste values for the new records](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. When you have added all of the CNAME records that you need, select **Continue**.
+7. Select **Continue**.
     
     ![Select Continue](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
@@ -266,7 +262,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add the two required SRV records
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
 2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
     
@@ -278,10 +274,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     (Choose the **Service** and **Protocol** values from the drop-down lists.) 
     
-    |**Service**|**Protocol**|**TTL**|**Priority**|**Weight**|**Port**|**Target**|
-    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
+    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
+    | SRV |_sip  <br/> |_tls  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
+    | SRV |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
        
     ![Type or paste values for the new records](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
@@ -307,9 +303,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     (Choose the **Type** value from the drop-down list.) 
     
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
-    |:-----|:-----|:-----|:-----|
-    |sip  <br/> |3600  <br/> |(No setting)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(No setting)  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |:-----|:-----|:-----|:-----|:-----|
+    | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1 Hour  <br/> |
+    | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
@@ -328,7 +324,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 ### Add the two required CNAME records
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
 2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
     
@@ -343,9 +339,9 @@ This service helps you secure and remotely manage mobile devices that connect to
     (Choose the **Type** value from the drop-down list.) 
     
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
-    |:-----|:-----|:-----|:-----|
-    |enterpriseregistration  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseregistration.windows.net  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(No setting)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |:-----|:-----|:-----|:-----|:-----|
+    | CNAME | Other Host | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
+    | CNAME | Other Host |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
    
     ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
