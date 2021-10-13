@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-ms.date:
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
