@@ -143,7 +143,7 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
     
     - If validation passes: You see **You successfully imported a file plan** and the entries are successfully converted into retention labels. Select **Done** to close the pane and automatically refresh the **File plan** page to display your new labels.
 
-You can now publish your new retention labels, or auto-apply them. You can do both from the **Label policies** tab, and then select **Publish labels**, or **Auto-apply a label**.
+You can now publish your new retention labels, or auto-apply them. You can do both from the **Label policies** tab by selecting **Publish labels**, or **Auto-apply a label**.
 
 ### Information about the label properties for import
 
