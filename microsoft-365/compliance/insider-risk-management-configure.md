@@ -3,7 +3,7 @@ title: Get started with insider risk management
 description: Configure insider risk management in your organization.
 keywords: Microsoft 365, insider risk management, risk management, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
