@@ -191,7 +191,7 @@ additionalContent:
             - text: Microsoft 365 admin center
               url: admin/index.yml
             - text: Microsoft 365 Business Premium
-              url: admin/index.yml
+              url: business/index.yml
             - text: Microsoft 365 for enterprise
               url: enterprise/index.yml
             - text: Microsoft 365 compliance
