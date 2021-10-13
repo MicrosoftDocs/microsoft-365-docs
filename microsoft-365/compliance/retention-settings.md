@@ -43,6 +43,9 @@ When you've decided whether to use an adaptive or static scope, use the followin
 - [Configuration information for adaptive scopes](#configuration-information-for-adaptive-scopes)
 - [Configuration information for static scopes](#configuration-information-for-static-scopes)
 
+> [!TIP]
+> If you have policies that use static scopes and you want to convert them to adaptive scopes, leave your existing policies in place while you create new policies that use adaptive scopes with the same retention settings. Validate these new policies are targeting the correct users, sites, and groups before you disable or delete the old policies with static scopes.
+
 ### Configuration information for adaptive scopes
 
 > [!NOTE]
