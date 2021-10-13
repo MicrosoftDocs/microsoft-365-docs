@@ -27,17 +27,14 @@ Microsoft Defender for Business is designed with the busy small and midsized bus
 
 ## Onboarding methods in the Microsoft 365 Defender portal
 
-If you're not already using MEM to onboard devices, you can choose from several methods in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), as listed in the following table: <br/><br/>
+If you're not already using MEM to onboard devices, you can choose from several methods in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
 
-| Method | Description |
-|---|---|
-| Microsoft Endpoint Manager (MEM) | The MEM admin center is located at [https://endpoint.microsoft.com](https://endpoint.microsoft.com). See [Use Microsoft Endpoint Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-mem.md).  |
-| Local script | For up to 10 devices <br/><br/>See [Use a local script to onboard devices to Microsoft Defender for Business](mdb-onboarding-local-script.md). |
-| Group Policy | description <br/><br/> See [Use Group Policy to onboard devices to Microsoft Defender for Business](mdb-onboarding-group-policy.md). |
-| VDI onboarding script | description <br/><br/>See [Use a script to onboard VDI endpoints to Microsoft Defender for Business](mdb-onboarding-vdi-onboarding-script.md). |
-| System Center Configuration Manager | for on prem <br/><br/>See [Use System Center Configuration Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-sccm.md). |
-| Mobile Device Management | in Microsoft Intune <br/><br/> See [Use Mobile Device Management to onboard devices to Microsoft Defender for Business](mdb-onboarding-mdm.md). |
-
+- **Microsoft Endpoint Manager**. See [Use Microsoft Endpoint Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-mem.md).
+- **Local script** (for up to 10 devices). See [Use a local script to onboard devices to Microsoft Defender for Business](mdb-onboarding-local-script.md).
+- **Group Policy**. See [Use Group Policy to onboard devices to Microsoft Defender for Business](mdb-onboarding-group-policy.md). 
+- **Virtual desktop infrastructure (VDI) onboarding using a script**. See [Use a script to onboard VDI endpoints to Microsoft Defender for Business](mdb-onboarding-vdi-onboarding-script.md).
+- **System Center Configuration Manager** (for on-premises environments). See [Use System Center Configuration Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-sccm.md).
+- **Mobile Device Management** (in Microsoft Intune). See [Use Mobile Device Management to onboard devices to Microsoft Defender for Business](mdb-onboarding-mdm.md).
 
 ## What if I want to offboard a device?
 
