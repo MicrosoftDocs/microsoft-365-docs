@@ -24,3 +24,6 @@ Details to follow
 
 
 
+## Next step
+
+After you have onboarded devices, your next step is to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).

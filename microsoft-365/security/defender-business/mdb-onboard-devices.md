@@ -43,8 +43,6 @@ If you're not already using MEM to onboard devices, you can choose from several 
 
 See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
-## Next steps
+## Next step
 
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
-
-- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md)
+After you have onboarded devices, your next step is to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
