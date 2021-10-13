@@ -114,7 +114,7 @@ To edit an existing auto-apply policy, select it to start the **Edit retention p
 After content is labeled by using an auto-apply label policy, the applied label can't be automatically removed or changed by changing the content or the policy, or by a new auto-apply label policy. For more information, see [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
 
 > [!NOTE]
-> An auto-apply retention label policy will never replace an existing retention label that's applied to content. If you want to relabel content by using the conditions you've configured, you'll need to manually remove the current retention label from existing content.
+> An auto-apply retention label policy will never replace an existing retention label that's applied to content. If you want to relabel content by using the conditions you configure, you'll need to manually remove the current retention label from existing content.
 
 ### Configuring conditions for auto-apply retention labels
 
