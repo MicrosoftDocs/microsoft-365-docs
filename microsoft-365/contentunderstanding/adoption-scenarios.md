@@ -13,7 +13,7 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Find scenarios about how to use SharePoint Syntex in your organization.
 ---
 

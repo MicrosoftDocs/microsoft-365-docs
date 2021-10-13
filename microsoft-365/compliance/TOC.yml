@@ -619,6 +619,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: Get started
           href: app-governance-detect-remediate-get-started.md
+        - name: Monitor and respond to apps with unusual data usage
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: Investigate anomaly detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
@@ -979,8 +981,16 @@
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
-        - name: Working with assessment templates
+        - name: Learn about assessment templates
           href: compliance-manager-templates.md
+        - name: Create assessment templates
+          href: compliance-manager-templates-create.md
+        - name: Extend assessment templates
+          href: compliance-manager-templates-extend.md
+        - name: Modify assessment templates
+          href: compliance-manager-templates-modify.md
+        - name: Format template data in Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions

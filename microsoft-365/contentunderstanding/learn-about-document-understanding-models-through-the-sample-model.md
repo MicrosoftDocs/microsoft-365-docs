@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn about document understanding models through the sample model.
 ---
 
