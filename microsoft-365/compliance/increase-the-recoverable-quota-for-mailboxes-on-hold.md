@@ -26,10 +26,10 @@ To help reduce the chance of exceeding this limit, the storage quota for the Rec
 
  The following table summarizes the storage quota for the Recoverable Items folder.
 
-|**Location of Recoverable Items folder**|**Mailboxes not on hold**|**Mailboxes on hold**|
+| Location of Recoverable Items folder | Mailboxes not on hold | Mailboxes on hold |
 |:-----|:-----|:-----|
-|Primary mailbox  <br/> |30 GB  <br/> |100 GB  <br/> |
-|Archive mailbox, including Recoverable Items folder <sup>\*</sup> <br/> |1.5 TB  <br/> |1.5 TB  <br/> |
+|Primary mailbox |30 GB |100 GB |
+|Archive mailbox, including Recoverable Items folder <sup>\*</sup> |1.5 TB |1.5 TB |
 
 > [!NOTE]
 > <sup>\*</sup> The initial storage quota for the archive mailbox is 100 GB for users with an Exchange Online (Plan 2) license. However, when auto-expanding archiving is turned on for mailboxes on hold, the storage quota for both the archive mailbox and the Recoverable Items folder is increased to 110 GB. Additional archive storage space (which includes the Recoverable Items folder) up to 1.5 TB will be provisioned when necessary. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
@@ -116,7 +116,6 @@ Run the following command to create new retention policy for mailboxes on hold.
 
 ```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
-
 ```
 
 For example, the following command creates the retention policy and linked retention tags that are displayed in the previous illustration.
