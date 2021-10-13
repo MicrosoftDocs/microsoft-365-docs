@@ -81,7 +81,7 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     For example, to configure an adaptive scope that will be used to identify users in Europe, first select **Users** as the scope type, and then select the **Country or region** attribute, and type in **Europe**:
     
-    ![Example adaptive scope configuration](../media/example-adaptive-scope.png)
+    ![Example adaptive scope configuration.](../media/example-adaptive-scope.png)
     
     Once a day, this query will run against Azure AD and identify all users who have the value **Europe** specified for in their account for the **Country or region** attribute.
     
@@ -90,13 +90,13 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     Select **Add attribute** (for users and groups) or **Add property** (for sites) to use any combination of attributes or properties that are supported for their scope type, together with logical operators to build queries. The operators supported are **is equal to**, **is not equal to**, **starts with** and **not starts with**, and you can group selected attributes or properties. For example:
     
-    ![Example adaptive scope configuration with groupings](../media/example-adaptive-scope-grouping.png)
+    ![Example adaptive scope configuration with groupings of attributes.](../media/example-adaptive-scope-grouping.png)
     
     Alternatively, you can select **Advanced query builder** to specify your own queries:
     
     - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
     
-        ![Example adaptive scope with advanced query](../media/example-adaptive-scope-advanced-query.png)
+        ![Example adaptive scope with advanced query.](../media/example-adaptive-scope-advanced-query.png)
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
     
@@ -251,7 +251,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
 
-![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
+![Choose Skype location for retention policies.](../media/skype-location-retention-policies.png)
 
 After you select this **Edit** option, in the **Skype for Business** pane you can quickly include all users by selecting the hidden box before the **Name** column. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting this box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
@@ -287,7 +287,7 @@ Examples:
 
 At the end of the retention period, you choose whether you want the content to be permanently deleted:
 
-![Retention settings page](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
 
 ### Deleting content that's older than a specific age
 
