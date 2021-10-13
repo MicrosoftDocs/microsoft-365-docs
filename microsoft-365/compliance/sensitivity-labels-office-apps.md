@@ -129,9 +129,10 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 ### Office built-in labeling client and the Azure Information Protection client
 
-If users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2), by default, the built-in labeling client is turned off in their Office apps. 
+You may want to use the built-in sensitivity labeling capabilities in Office to benefit from the latest features and enhance user experience while at the same time having the abilit to label and protect non-Office files from the desktop with the Azure Information Protection client. 
+By default, if users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2) the built-in labeling client is turned off in their Office apps and the plugin functionality is used instead. 
 
-To use built-in labeling rather than the Azure Information Protection client for Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
+To maintain the ability to use the Azure Information Protection clientfor labeling non-Office files from the desktop without disabling the built-in labeling functinality within Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
 For Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify the following programmatic identifiers (ProgID) for the Azure Information Protection client, and set the option to **0: The add-in is always disabled (blocked)**
 
@@ -148,6 +149,14 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 > [!NOTE]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the Azure Information Protection client might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
+
+You can also use the following registry value to quickly toggle between using the Azure Information Protection plugin and built-in sensitivity labels in Office apps:
+
+|**Registry key**|**Type**|**Value** |
+|:-------|:------:|--------:|
+|HKCU\Software\Microsoft\Office\16.0\Common\Security\Labels\UseOfficeForLabelling  |REG_DWORD  |1  |
+
+Setting this value to 1 enables the built-in sensitivity labeling options in Office, setting it to 0 enables the AIP plugin if it is installed. 
 
 Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
