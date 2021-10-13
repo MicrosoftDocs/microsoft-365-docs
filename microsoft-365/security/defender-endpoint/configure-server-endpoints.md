@@ -238,23 +238,6 @@ Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are
 
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
 
-## Offboard Windows servers
-
-You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
-
-- [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
-- [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
-
-For other Windows server versions, you have two options to offboard Windows servers from the service:
-
-- Uninstall the MMA agent
-- Remove the Defender for Endpoint workspace configuration
-
->[!NOTE]
->*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
-
 > [!NOTE]
 > Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
 
@@ -281,6 +264,24 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 
 ## Next steps
 After successfully onboarding devices to the service, you'll need to configure the individual components of Microsoft Defender for Endpoint. Follow the [Adoption order](prepare-deployment.md#adoption-order) to be guided on enabling the various components.
+
+
+## Offboard Windows servers
+
+You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+
+- [Offboarding using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
+- [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
+- [Offboard and monitor devices using Mobile Device Management tools](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [Offboard devices using a local script](configure-endpoints-script.md#offboard-devices-using-a-local-script)
+
+For other Windows server versions, you have two options to offboard Windows servers from the service:
+
+- Uninstall the MMA agent
+- Remove the Defender for Endpoint workspace configuration
+
+>[!NOTE]
+>*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 - [Onboard previous versions of Windows](onboard-downlevel.md)
