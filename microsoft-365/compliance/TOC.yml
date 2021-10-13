@@ -343,16 +343,6 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-        - name: Troubleshoot DLP
-          items:
-            - name: Troubleshooting DLP policy tips
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
-            - name: Changes to a DLP policy don't take effect in Outlook 2013 in Office 365
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
-            - name: DLP policy tips in Compliance center don't work in OWA/Outlook
-              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
-            - name: How to troubleshoot DLP policy tips in Exchange Online Protection in Office 365
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: Manage information governance
   items: 
     - name: Govern your data
