@@ -83,7 +83,7 @@ App protection policies (APP) are rules that ensure an organization's data remai
 
 2. Add apps <br>
     a. Choose how you want to apply this policy to apps on different devices. Then add at least one app. <br>
-    Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also chooseto target your policy to apps on devices of any management state.
+    Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also choose to target your policy to apps on devices of any management state.
 Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management. Companies can use app protection policies with or without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
     b. Select Apps<br>
