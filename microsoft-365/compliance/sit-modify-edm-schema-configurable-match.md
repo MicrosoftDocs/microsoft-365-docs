@@ -20,6 +20,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Modify Exact Data Match schema to use configurable match
 
+<!-- RETIRE THIS ARTICLE BEFORE PUBLISHING FROM THIS BRANCH -->
 Exact Data Match (EDM) based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. When you need to allow for variants of a exact string, you can use *configurable match* to tell Microsoft 365 to ignore case and some delimiters. 
 
 > [!IMPORTANT]

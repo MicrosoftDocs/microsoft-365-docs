@@ -57,7 +57,14 @@ You can validate that the table is in a format suitable to use with EDM by using
 ```powershell
 EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
 ```
-If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tool to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value, for example the person’s name Tom O’Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
+
+If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tool to misidentify where an individual column starts or ends. 
+
+**If you find single or double quote characters surrounding full values**: you can leave them as they are.
+
+**If you find single quote characters or commas inside a value**: for example the person’s name Tom O’Neil or the city 's‑Gravenhage which starts with an apostrophe character, you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes.
+
+**If double quote characters are found inside values**, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
 
 ### Prerequisites
 
@@ -220,11 +227,3 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 - [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
 
-
-<!--TODD START work in somehow
-Ensure your sensitive data table doesn’t have formatting issues. 
-Before you hash and upload your sensitive data, do a search to validate the presence of special characters that may cause problems in parsing the content. 
-You can validate that the table is in a format suitable to use with EDM by using the EDM upload agent with the following syntax:
-EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file] 
-If the tool indicates a mismatch in number of columns it might be due to the presence of commas or quote characters within values in the table which are being confused with column delimiters. Unless they are surrounding a whole value, single and double quotes can cause the tools to misidentify where an individual column starts or ends. If you find single or double quote characters surrounding full values, you can leave them as they are. If you find single quote characters or commas inside a value (e.g. the person’s name Tom O’Neil or the city 's‑Gravenhage (which starts with an apostrophe character), you will need to modify the data export process used to generate the sensitive information table to surround such columns with double quotes. If double quote characters are found inside values, it might be preferable to use the Tab-delimited format for the table which is less susceptible to such issues.
-TODD STOP -->

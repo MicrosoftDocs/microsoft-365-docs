@@ -43,15 +43,13 @@ Perform the steps in:
 2. [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
 3. [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types)
 
-- Whether you will be creating an EDM sensitive information type using the Wizard or the rule package XML file via PowerShell, you must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles in Office 365](/office365/admin/add-users/about-admin-roles).
+- Whether you will be creating an EDM sensitive information type using the wizard or the rule package XML file via PowerShell, you must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles in Office 365](/office365/admin/add-users/about-admin-roles).
 - Identify one of the built in SITs to use as the Primary elements sensitive information type.
     - If none of the built-in sensitive info types will match the data in the column you selected you will have to create a custom sensitive info type that does.
     - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters. 
     - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table. 
 See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types). 
      
-
-
 ### Use the exact data match schema and sensitive information type pattern wizard
 
 1. In the Microsoft 365 Compliance center for your tenant go to **Data classification** > **Exact data matches**.

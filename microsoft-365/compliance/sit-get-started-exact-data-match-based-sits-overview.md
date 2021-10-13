@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with exact data match based sensitive information types
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. The can be used in data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
 
 ## Before you begin
 
@@ -33,13 +33,6 @@ Familiarize yourself with the concepts and terminology in these articles:
 ## Required licenses and permissions
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
-
-EDM-based classification is included in these subscriptions
-
-- Office 365 E5
-- Microsoft 365 E5
-- Microsoft 365 E5 Compliance
-- Microsoft E5/A5 Information Protection and Governance
 
 See the [data loss prevention service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business) for complete licensing information
 
