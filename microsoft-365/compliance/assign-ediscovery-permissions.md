@@ -38,7 +38,7 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   
   - Manage any eDiscovery case after they add themselves as a member of the case.
   
-  - Remove members from a case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
+  - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
   
   For reasons why you might want eDiscovery Administrators in your organization, see [More information](#more-information).
 
