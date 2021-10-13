@@ -84,7 +84,8 @@ Navigation instructions depend on whether you're using [records management](reco
     
     - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** to start the Create auto-labeling configuration that takes you directly to step 2 in the following procedure.
+3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** 
+4.  configuration that takes you directly to step 2 in the following procedure.
 
 To edit an existing label, select it, and then select the **Edit label** option to start the **Edit retention label** configuration that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
@@ -108,7 +109,7 @@ When you create an auto-apply policy, you select a retention label to automatica
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
 
-To edit an existing auto-apply policy, select it to start the Edit retention policy configuration that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+To edit an existing auto-apply policy, select it to start the **Edit retention policy** configuration that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 After content is labeled by using an auto-apply label policy, the applied label can't be automatically removed or changed by changing the content or the policy, or by a new auto-apply label policy. For more information, see [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
 
