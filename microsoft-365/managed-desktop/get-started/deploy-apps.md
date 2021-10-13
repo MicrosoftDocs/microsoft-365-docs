@@ -52,7 +52,7 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
 2. Select **Shop for my group**.
-3. Use Search to find that the app that you want, and select the app.
+3. Use Search to find the app that you want, and select the app.
 4. On the product details, select **Get the App**. 
 Microsoft Store adds the app to **Your products** for your organization.
     
