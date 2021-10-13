@@ -150,4 +150,12 @@ ecosystem by enabling the distribution of content.
 > Offboarding will [disable Tamper
 Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
 
+## Known issues and limitations 
 
+### Non-persistent VDI environments
+
+Due to the potential impact on Azure Active Directory environments with respect to device lifecycle and service quota, we advise against testing the current installation files and builds shared in this private preview in a non-persistent VDI environment.
+
+### Server Core installation
+
+Due to the limited scope of Server core installations, these are currently not supported by Microsoft Defender for Endpoint Security Configuration Manager.
