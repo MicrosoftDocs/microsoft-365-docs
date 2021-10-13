@@ -88,6 +88,8 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
   - Manage any case in the organization after they add themselves as a member of the case.
 
   - Access and export case data for any case in the organization.
+  
+  - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
 
@@ -127,7 +129,7 @@ If you create a case in Step 3 and you're the only person who will use the case,
 
 > [!IMPORTANT]
 >- If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
->- Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
+>- As previously explained, only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 
 ## Explore the Core eDiscovery workflow
 
