@@ -130,7 +130,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 ### Office built-in labeling client and the Azure Information Protection client
 
 You might want to use the built-in sensitivity labeling capabilities in Office to make use of the latest features and enhance user experience, while at the same time having the option of labeling and protecting non-Office files from the desktop with the Azure Information Protection client. 
-By default, if users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2) the built-in labeling client is turned off in their Office apps and the plugin functionality is used instead. 
+By default, if users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2), the built-in labeling client is turned off in their Office apps and the plug-in functionality is used instead. 
 
 To maintain the ability to use the Azure Information Protection clientfor labeling non-Office files from the desktop while using the built-in labeling functinality within Office apps, we recommend you use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
