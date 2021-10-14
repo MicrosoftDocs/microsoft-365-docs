@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/07/2021
+ms.date: 10/14/2021
 ms.collection: M365-security-compliance
 ---
 
