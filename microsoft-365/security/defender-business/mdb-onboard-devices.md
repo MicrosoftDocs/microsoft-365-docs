@@ -27,6 +27,8 @@ Microsoft Defender for Business is designed with the busy small and midsized bus
 
 ## Are you already using Microsoft Endpoint Manager?
 
+
+
 The following table summarizes the various onboarding methods for Microsoft Defender for Business:
 
 <br/><br/>
