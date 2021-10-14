@@ -49,13 +49,13 @@ ms.technology: m365d
 
 Open a terminal or SSH into the relevant machine and run the following commands:
 
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer *`
+1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
 
 2. `unzip -q XMDEClientAnalyzer.zip`
 
 3. `cd XMDEClientAnalyzer`
 
-4. `chmod +x mde_support_tool.sh"`
+4. `chmod +x mde_support_tool.sh`
 
 3. Run as non-root use to install required pip and lxml which components: `./mde_support_tool.sh`
 

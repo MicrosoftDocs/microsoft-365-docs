@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 ms.topic: article
@@ -85,7 +85,8 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Endpoint data loss prevention (Endpoint DLP):**
         - Windows 10 1809 with KB 4601383
         - Windows 10 1903 and 1909 with KB 4601380
-        - Windows 10 2004 with KB 4601382
+        - Windows 10 2004 with KB 46013
+        - Windows versions later than Windows 10 2004 are supported without KB updates
     
     - **Apps and services that use the Microsoft Information Protection SDK:** 
         - Minimum version of 1.7 

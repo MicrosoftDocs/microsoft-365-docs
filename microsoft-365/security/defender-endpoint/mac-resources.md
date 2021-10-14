@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -36,7 +36,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
 1. Increase logging level:
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
 
    ```Output

@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

@@ -11,7 +11,7 @@ ms.topic: reference
 f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -29,7 +29,7 @@ An eDiscovery search that you run from the Microsoft 365 compliance center autom
   
 - The file type is unrecognized or unsupported for indexing.
 
-- Messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items.
+- Messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
 
 - The file type is supported for indexing but an indexing error occurred for a specific file.
 

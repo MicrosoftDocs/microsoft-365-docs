@@ -9,7 +9,7 @@ f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:

@@ -1,6 +1,6 @@
 ---
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
-description: Use Group Policy to deploy the configuration package on the Windows devices so that they are onboarded to the service.
+description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -17,10 +17,11 @@ ms.date: 09/16/2021
 ms.technology: mde
 ---
 
-
-# Onboard Windows devices using Group Policy
+# Onboard Windows devices using Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 **Applies to:**
 
@@ -35,15 +36,25 @@ ms.technology: mde
 >
 > For Windows Server 2019 and Windows Server 2022, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
-## Onboard devices using Group Policy
+> [!NOTE]
+> If you're using the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**. 
 
 Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management**  \> **Onboarding**.
-    2. Select Windows 10  or Windows 11 as the operating system.
-    3. In the **Deployment method** field, select **Group policy**.
-    4. Click **Download package** and save the .zip file.
+
+1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.
+zip*) that you downloaded from the service onboarding wizard. You can also get the 
+package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+ 
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
+
+    1. Select the operating system.
+    
+    1. In the **Deployment method** field, select **Group policy**.
+
+    1. Click **Download package** and save the .zip file.
+
+     
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -191,10 +202,14 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
 1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
-    2. Select Windows 10 or Windows 11 as the operating system.
-    3. In the **Deployment method** field, select **Group policy**.
-    4. Click **Download package** and save the .zip file.
+
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
+
+    1. Select the operating system.
+    
+    1. In the **Deployment method** field, select **Group policy**.
+
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -304,7 +319,6 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level.":::
 
 ## Related topics
-
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)

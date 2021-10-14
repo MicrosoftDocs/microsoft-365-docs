@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
+        - name: Detect channel signals with communication compliance
+          href: communication-compliance-channels.md
+        - name: Create and manage communication compliance policies
+          href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
+        - name: Learn about communication compliance reports & audits
+          href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
@@ -619,6 +623,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: Get started
           href: app-governance-detect-remediate-get-started.md
+        - name: Monitor and respond to apps with unusual data usage
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: Investigate anomaly detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
@@ -979,8 +985,16 @@
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
-        - name: Working with assessment templates
+        - name: Learn about assessment templates
           href: compliance-manager-templates.md
+        - name: Create assessment templates
+          href: compliance-manager-templates-create.md
+        - name: Extend assessment templates
+          href: compliance-manager-templates-extend.md
+        - name: Modify assessment templates
+          href: compliance-manager-templates-modify.md
+        - name: Format template data in Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions
