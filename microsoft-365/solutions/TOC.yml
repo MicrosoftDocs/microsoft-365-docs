@@ -296,7 +296,7 @@
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
       - name: Deploy Microsoft Defender for Endpoints
-        href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+        href: /microsoft-365/security/defender-endpoint/deployment-phases.md
       - name: Migrate from Symantec to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
       - name: Migrate from McAfee to Microsoft Defender for Endpoint
