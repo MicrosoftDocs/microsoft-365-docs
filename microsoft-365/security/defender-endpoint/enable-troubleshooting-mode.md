@@ -98,4 +98,4 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 ## Related topic
 
--[Use troubleshooting mode](use-troubleshooting-mode.md)
+- [Use troubleshooting mode](use-troubleshooting-mode.md)
