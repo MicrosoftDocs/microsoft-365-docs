@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender event types supported in Event Streaming API
-description: Learn which hunting event types (tables) are supported by the streaming API
+title: Microsoft 365 Defender streaming event types supported in Event Streaming API
+description: Learn which streaming event types (tables) are supported by the streaming API
 keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Supported Microsoft 365 Defender event types in event streaming API
+# Supported Microsoft 365 Defender streaming event types in event streaming API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
