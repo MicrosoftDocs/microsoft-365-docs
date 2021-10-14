@@ -48,6 +48,8 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 
 ## Monitored files
 
+### File extensions
+
 Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
 
 - Word files
@@ -73,8 +75,21 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!TIP]
 > To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md) along side the default policy.
 
-
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
+
+### File types (preview)
+
+File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. 
+
+
+|File Type |App  |monitored file extensions  |
+|---------|---------|---------|
+|word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
+|spreadsheet    |Excel, CSV, TSV |.xls, .xlsx, .xlt, .xlm, .xlsm, .xltx, .xltm, .xlsb, .xlw, .csv, .tsv         |
+|presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
+|archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
+|email    |Outlook |.pst, .ost, .msg         |
+
 
 ## What's different in Endpoint DLP
 

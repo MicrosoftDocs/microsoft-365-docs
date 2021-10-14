@@ -275,7 +275,15 @@ The available context options change depending on which location you choose. If 
 ##### Conditions Devices supports
 
 - content contains
+- file extension is
+- file type is (preview)
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
+
+> [!IMPORTANT]
+> File Type and File Extension support is only available as a condition when Endpoint is the only location selected. For this policy, ensure that **Devices** is the only location toggled in this list.
+
+> [!CAUTION]
+> While file type is in public preview, DLP policies do not support using file extension is and file type is in the same rule. To make use of both in a single policy, create separate rules for file extension and file type.
 
 ##### Conditions Microsoft Cloud App Security support
 
