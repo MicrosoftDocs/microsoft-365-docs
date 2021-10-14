@@ -44,11 +44,14 @@ Although retention policies for Microsoft Teams and Yammer use mailboxes to stor
 
 ## Maximums for adaptive policy scopes
 
-There is no limit to the number of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) that you can add to a policy for retention, but there are some limits for each adaptive scope:
+There is no limit to the number of [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) that you can add to a policy for retention, but there are some maximum limits for the query that defines each adaptive scope:
 
-- Total query size: 10,000 characters
-- Total attributes or properties: 200
-- Total nested conditions: 3 levels
+- String length for attribute or property values: 200
+- Number of attributes or properties without a group, or within a group: 10
+- Number of groups: 10
+- Number of characters in an advanced query: 10,000
+
+Grouping attributes or properties within a group isn't supported. This means that the maximum number of properties or attributes supported within a single adaptive scope is 100.
 
 ## Maximum number of items per policy
 
