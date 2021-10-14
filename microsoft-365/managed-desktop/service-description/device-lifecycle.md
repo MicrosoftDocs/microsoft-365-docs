@@ -16,7 +16,7 @@ ms.topic: article
 > As of September 18, 2021, this product lifecycle for Microsoft Managed Desktop will no longer apply. None of the requirements listed here will apply to devices in the service. Only the [hardware requirements](device-requirements.md) will be relevant. 
 
 
-Microsoft Managed Desktop benefits users by assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site.
+Microsoft Managed Desktop benefits users by assuring that they always use devices that offer the best performance, reliability, design, and security capabilities (such as support for features like Windows Hello). To accomplish this, Microsoft Managed Desktop maintains a short catalog of continuously updated approved devices. You can view approved devices by filtering for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site.
  
 This article details the lifecycle of devices as they are added and removed from the approved catalog. 
 
