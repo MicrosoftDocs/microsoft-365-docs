@@ -25,6 +25,8 @@ ms.collection:
 
 Microsoft Defender for Business is designed with the busy small and midsized business in mind. For example, if you are already using Microsoft Endpoint Manager, you can choose from automatic or manual onboarding. Or, if you're not already using Endpoint Manager, you can choose from several different onboarding packages and methods to use.
 
+## Are you already using Microsoft Endpoint Manager?
+
 The following table summarizes the various onboarding methods for Microsoft Defender for Business:
 
 <br/><br/>
@@ -38,7 +40,11 @@ The following table summarizes the various onboarding methods for Microsoft Defe
 | **System Center Configuration Manager** | (for on-premises environments). |
 | **Mobile Device Management** | (in Microsoft Intune) |
 
-## How to onboard devices
+## Onboarding devices in the Microsoft 365 Defender portal
+
+If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md).
+
+If you are not already using Microsoft Endpoint Manager, you'll see a list of onboarding options.
 
 
 
