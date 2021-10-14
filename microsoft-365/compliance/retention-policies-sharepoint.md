@@ -56,15 +56,13 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 ## How retention works for SharePoint and OneDrive
 
-To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons.
-
-How the Preservation Hold library works to retain content:
+To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It works in the following way:
 
 When a user changes or delete an item that's subject to retention, a check is made whether the content has been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the user to change or delete the original content.
   
 A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
-This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on.
+This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
   
 Users see an error message if they try to delete a library, list, folder, or site that's subject to retention. They can delete a folder if they first move or delete any files in the folder that are subject to retention.
 
@@ -74,12 +72,11 @@ Users also see an error message if they try to delete a labeled item in any of t
     
     To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Label behavior**.  There are separate settings for SharePoint and OneDrive.
 
-- The label marks items as a record and it's [locked](record-versioning.md).
+- The retention label marks items as a record and it's [locked](record-versioning.md).
     
     Only when the record is unlocked, does a copy of the last version get stored in the Preservation Hold library.
 
-- The label marks items as a [regulatory record](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), which always prevents the item from being edited or deleted.
-
+- The retention label marks items as a [regulatory record](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked), which always prevents the item from being edited or deleted.
 
 After retention settings are assigned to content in a OneDrive account or SharePoint site, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
