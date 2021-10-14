@@ -4629,6 +4629,11 @@
       "source_path": "microsoft-365/compliance/communication-compliance-feature-reference.md",
       "redirect_url": "/microsoft-365/compliance/communication-compliance",
       "redirect_document_id": false
-    }  
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management.md",
+      "redirect_document_id": false
+    }        
   ]
 }
