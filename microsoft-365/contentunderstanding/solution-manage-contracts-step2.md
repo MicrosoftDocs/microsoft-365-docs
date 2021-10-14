@@ -9,7 +9,7 @@ ms.topic: article
 ms.date:
 ms.prod: microsoft-365-enterprise
 search.appverid:
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS:
 description: Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution.
 ---
@@ -203,4 +203,4 @@ This section defines how "Classification" will display on the card, and uses the
 
 ## Next step
 
-[Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+[Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)

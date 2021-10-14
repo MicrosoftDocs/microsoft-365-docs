@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -56,13 +56,12 @@ We recommend going through several steps to quickly get up and running with adva
 |**Learn how to use the query results**|Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries and drill down to get richer information.|[Work with query results](advanced-hunting-query-results.md)|
 |**Understand the schema**|Get a good, high-level understanding of the tables in the schema and their columns. Learn where to look for data when constructing your queries.|[Schema reference](advanced-hunting-schema-reference.md)|
 |**Use predefined queries**|Explore collections of predefined queries covering different threat hunting scenarios.|[Shared queries](advanced-hunting-shared-queries.md)|
-|**Optimize queries and handle errors**|Understand how to create efficient and error-free queries.|- [Query best practices](advanced-hunting-best-practices.md)<br>- [Handle errors](advanced-hunting-errors.md)|
-|**Get the most complete coverage**|Use audit settings to provide better data coverage for your organization.|- [Extend advanced hunting coverage](advanced-hunting-extend-data.md)|
-|**Run a quick investigation**|Quickly run an advanced hunting query to investigate suspicious activity.|- [Quickly hunt for entity or event information with *go hunt*](advanced-hunting-go-hunt.md)|
-|**Contain threats and address compromises**|Respond to attacks by quarantining files, restricting app execution, and other actions|- [Take action on advanced hunting query results](advanced-hunting-take-action.md)|
-|**Create custom detection rules**|Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically.|- [Custom detections overview](overview-custom-detections.md)<br>- [Custom detection rules](custom-detection-rules.md)|
+|**Optimize queries and handle errors**|Understand how to create efficient and error-free queries.|[Query best practices](advanced-hunting-best-practices.md) <p> [Handle errors](advanced-hunting-errors.md)|
+|**Get the most complete coverage**|Use audit settings to provide better data coverage for your organization.|[Extend advanced hunting coverage](advanced-hunting-extend-data.md)|
+|**Run a quick investigation**|Quickly run an advanced hunting query to investigate suspicious activity.|[Quickly hunt for entity or event information with *go hunt*](advanced-hunting-go-hunt.md)|
+|**Contain threats and address compromises**|Respond to attacks by quarantining files, restricting app execution, and other actions|[Take action on advanced hunting query results](advanced-hunting-take-action.md)|
+|**Create custom detection rules**|Understand how you can use advanced hunting queries to trigger alerts and take response actions automatically.|[Custom detections overview](overview-custom-detections.md) <p> [Custom detection rules](custom-detection-rules.md)|
 |
-
 
 ## Data freshness and update frequency
 
@@ -83,3 +82,5 @@ Time information in advanced hunting is currently in the UTC time zone.
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](overview-custom-detections.md)
+- [Storage account overview](/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs — A big data streaming platform and event ingestion service](/azure/event-hubs/event-hubs-about)

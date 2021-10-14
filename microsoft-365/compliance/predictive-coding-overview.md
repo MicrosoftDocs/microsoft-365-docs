@@ -9,7 +9,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
@@ -26,7 +26,7 @@ The predictive coding module is designed to streamline the complexity of managin
 
 Here's an overview and description of each step predictive coding workflow. For a more detailed description of the concepts and terminology of the predictive coding process, see [Predictive coding reference](predictive-coding-reference.md).
 
-![Predictive coding workflow](..\media\PredictiveCodingWorkflow.png)
+![Predictive coding workflow.](..\media\PredictiveCodingWorkflow.png)
 
 1. **Create a new predictive coding model in the review set**. The first step is to create a new predictive coding model in the review set. You must have at least 2,000 items in the review set to create a model. After you create a model, the system will determine the number of items to use as a *control set*. The control set is used during the training process to evaluate the prediction scores that the model assigns to items with the labeling that you perform during training rounds. The size of the control set is based on the number of items in the review set and the confidence level and margin of error values that are set when creating the model. Items in the control set never change and aren't identifiable to users.
 

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -48,7 +48,7 @@ Expand entities to view details at a glance. Selecting an entity will switch the
 > [!NOTE]
 > The alert story section may contain more than one alert, with additional alerts related to the same execution tree appearing before or after the alert you've selected.
 
-![An example of an alert story with an alert in focus and some expanded cards](images/alert-story-tree.png)
+![An example of an alert story with an alert in focus and some expanded cards.](images/alert-story-tree.png)
 
 ## Take action from the details pane
 
@@ -58,11 +58,11 @@ Once you're done investigating, go back to the alert you started with, mark the 
 
 If you classify it as a true alert, you can also select a determination, as shown in the image below.
 
-![A snippet of the details pane with a resolved alert and the determination drop-down expanded](images/alert-details-resolved-true.png)
+![A snippet of the details pane with a resolved alert and the determination drop-down expanded.](images/alert-details-resolved-true.png)
 
 If you are experiencing a false alert with a line-of-business application, create a suppression rule to avoid this type of alert in the future.
 
-![actions and classification in the details pane with the suppression rule highlighted](images/alert-false-suppression-rule.png)
+![actions and classification in the details pane with the suppression rule highlighted.](images/alert-false-suppression-rule.png)
 
 > [!TIP]
 > If you're experiencing any issues not described above, use the 🙂 button to provide feedback or open a support ticket.

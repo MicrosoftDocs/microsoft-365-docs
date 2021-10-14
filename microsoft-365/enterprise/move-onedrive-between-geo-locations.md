@@ -13,7 +13,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Find information about moving a OneDrive site to a different geo location, including how to schedule site moves and communicating expectations to users.
 ---
 
@@ -59,7 +59,7 @@ For example: To move OneDrive of user 'Matt@contosoenergy.onmicrosoft.com', conn
 
 `Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
 
-![Screenshot of PowerShell window showing connect-sposervice cmdlet](../media/move-onedrive-between-geo-locations-image1.png)
+![Screenshot of PowerShell window showing connect-sposervice cmdlet.](../media/move-onedrive-between-geo-locations-image1.png)
 
 ## Validating the environment
 
@@ -93,7 +93,7 @@ For example, to move the OneDrive of matt@contosoenergy.onmicrosoft.com from EUR
 
 `Start-SPOUserAndContentMove -UserPrincipalName matt@contosoenergy.onmicrosoft.com -DestinationDataLocation AUS`
 
-![Screenshot of PowerShell window showing Start-SPOUserAndContentMove cmdlet](../media/move-onedrive-between-geo-locations-image2.png)
+![Screenshot of PowerShell window showing Start-SPOUserAndContentMove cmdlet.](../media/move-onedrive-between-geo-locations-image2.png)
 
 To schedule a geo move for a later time, use one of the following parameters:
 

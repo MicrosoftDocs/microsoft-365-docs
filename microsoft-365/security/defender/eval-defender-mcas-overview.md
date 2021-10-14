@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -34,7 +34,7 @@ This article outlines the process to enable and pilot Microsoft Cloud App Securi
 
 Use the following steps to enable and pilot Microsoft cloud app security.
 
-![Steps for adding Microsoft Defender for Office to the Defender evaluation environment](../../media/defender/m365-defender-office-eval-steps.png)
+![Steps for adding Microsoft Defender for Office to the Defender evaluation environment.](../../media/defender/m365-defender-office-eval-steps.png)
 
 
 

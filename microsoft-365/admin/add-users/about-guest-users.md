@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -30,7 +31,7 @@ Once a user shows up in the **Guest users** list, you can remove their access th
 
 To view guest users, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 admin center</a>, in the left nav, expand **Users**, and then choose **Guest users**.
 
-## Before you begin
+## Before you begin 
 
 You must be a global administrator to perform this task.
 

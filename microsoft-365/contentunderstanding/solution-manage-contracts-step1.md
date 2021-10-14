@@ -9,7 +9,7 @@ ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS: 
 description: Learn how to use SharePoint Syntex to identify contract files and extract data by using a Microsoft 365 solution.
 ---
@@ -32,7 +32,7 @@ Document understanding models use Optical Character Recognition (OCR) technology
 
 4. After you successfully create your model, [apply it to a SharePoint document library](apply-a-model.md). As you upload documents to the document library, your document understanding model will run and will identify and classify all files that match the contracts content type you defined in your model. All files that are classified as contracts will display in a custom library view. The files will also display the values from each contract that you defined in your extractor.
 
-   ![Contracts in document library](../media/content-understanding/doc-lib-solution.png)
+   ![Contracts in document library.](../media/content-understanding/doc-lib-solution.png)
 
 5. If you have retention or security requirements for your contracts, you can also use your model to apply a [retention label](apply-a-retention-label-to-a-model.md) or a [sensitivity label](apply-a-sensitivity-label-to-a-model.md) that will prevent your contracts from being deleted for a specified period of time or to restrict who can access the contracts.
 
@@ -76,7 +76,7 @@ You need to add at least five example files that are contract documents, and one
 
 3. From the **Labeled examples** list on the left, select other files that you want to use as examples, and label them. 
 
-    ![Classifier home page](../media/content-understanding/models-contract-classifier.png) 
+    ![Classifier home page.](../media/content-understanding/models-contract-classifier.png) 
 
 #### Add at least one explanation to train the classifier 
 
@@ -106,7 +106,7 @@ You can test your Contract model on example files it hasn’t seen before. This 
 
 2. In the **Test Files** list, your example files display and shows if the model predicted them to be positive or negative. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Screenshot of the unlabeled files in the Text Files list](../media/content-understanding/test-on-files.png) 
+    ![Screenshot of the unlabeled files in the Text Files list.](../media/content-understanding/test-on-files.png) 
 
 3. When done, select **Exit Training**.
 

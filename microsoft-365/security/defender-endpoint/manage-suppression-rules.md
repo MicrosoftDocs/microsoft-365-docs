@@ -2,15 +2,13 @@
 title: Manage Microsoft Defender for Endpoint suppression rules
 description: You might need to prevent alerts from appearing in the portal by using suppression rules. Learn how to manage your suppression rules in Microsoft Defender for Endpoint.
 keywords: manage suppression, rules, rule name, scope, action, alerts, turn on, turn off
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -35,7 +33,7 @@ There might be scenarios where you need to suppress alerts from appearing in the
 You can view a list of all the suppression rules and manage them in one place. You can also turn an alert suppression rule on or off.
 
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
 2. Select a rule by clicking on the check-box beside the rule name.
 
@@ -44,7 +42,7 @@ You can view a list of all the suppression rules and manage them in one place. Y
 
 ## View details of a suppression rule
 
-1. In the navigation pane, select **Settings** > **Endpoints** > **Rules** > **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Rules** \> **Alert suppression**. The list of suppression rules that users in your organization have created is displayed.
 
 2. Click on a rule name. Details of the rule is displayed. You'll see the rule details such as  status, scope, action, number of matching alerts, created by, and date when the rule was created. You can also view associated alerts and the rule conditions.
 

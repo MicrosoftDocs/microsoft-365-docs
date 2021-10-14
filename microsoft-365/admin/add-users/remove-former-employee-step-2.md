@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -45,7 +45,7 @@ Once you've blocked a user from being able to log into your organization you can
 
     **OR**
 
-2. Add the former employee's email address to your version of Outlook on Desktop, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 6 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-6.md).
+2. Add the former employee's email address to your version of Outlook on Desktop, and then export the data to a .pst file. You can import the data to another email account as needed. Check out [Step 4 - Give another employee access to OneDrive and Outlook data](remove-former-employee-step-4.md).
 
 ## Related content
 

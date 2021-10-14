@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -281,6 +281,6 @@ This event is generated each time a label is removed from a file or document.
   
 - When the recommended label tool tip is shown to an end user, it is not captured. But if the user chooses to apply the recommended label, the label will be shown under the *How applied* field as *Recommended*  
 
-- Justification text is not currently available on sensitivity label downgrade from Sharepoint and OneDrive.  
+- Justification text is not currently available on sensitivity label downgrade from SharePoint and OneDrive.  
 
 - Sensitive information types are currently not available for autolabeling activities from Word, Excel, PowerPoint, and Outlook, as well as SharePoint Online, and OneDrive.

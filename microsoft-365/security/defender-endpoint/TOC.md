@@ -2,14 +2,21 @@
 
 ## [Overview]()
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
+### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
 ### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
+### [Defender for Endpoint Plan 1 (preview)]()
+#### [Overview](defender-endpoint-plan-1.md)
+#### [Setup and configuration](mde-p1-setup-configuration.md)
+#### [Get started](mde-plan1-getting-started.md)
+#### [Maintenance and operations](mde-p1-maintenance-operations.md)
 ### [Microsoft Defender for Endpoint for US Government customers](gov.md)
 ### [Microsoft Defender for Endpoint on non-Windows platforms](non-windows.md)
+
 
 ## [Evaluate capabilities](evaluation-lab.md)
 
@@ -24,41 +31,55 @@
 #### [Deployment rings](deployment-rings.md)
 #### [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
-#### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint]()
-#### [Overview of migration](switch-to-microsoft-defender-migration.md)
+### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-### [Manage Defender for Endpoint after migration]()
-#### [Overview of managing Defender for Endpoint](manage-atp-post-migration.md)
-#### [Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Group Policy Objects](manage-atp-post-migration-group-policy-objects.md)
-#### [PowerShell, WMI, and MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
 
+
+
+### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
+#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
+#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+#### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
+### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
+
+
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
-#### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
-#### [Onboard previous versions of Windows](onboard-downlevel.md)
-#### [Onboard Windows 10 devices]()
-##### [Onboarding tools and methods](configure-endpoints.md)
-##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
-##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-##### [Onboard devices using a local script](configure-endpoints-script.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-#### [Onboard Windows servers](configure-server-endpoints.md)
+#### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
+#### [Onboard Windows devices and Windows Servers]()
+
+##### [Onboard previous versions of Windows](onboard-downlevel.md)
+
+
+##### [Onboard Windows devices and Windows Servers]()
+###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
+###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Integration with Azure Defender](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](run-detection-test.md)
 #### [Run simulated attacks on devices](attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+
+#### [Application license terms](mde-terms-windows.md)
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -99,7 +120,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
+##### [Application license terms](mde-terms-mac.md)
 
 #### [Microsoft Defender for Endpoint on iOS]()
 ##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
@@ -155,12 +176,16 @@
 
 ##### [Configure]()
 ###### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+###### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
 
 ##### [Privacy]()
 ###### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
 
 ##### [Troubleshoot]()
 ###### [Troubleshoot issues](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
+
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
@@ -255,10 +280,11 @@
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md)
-#### [Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
-##### [Turn on cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
-##### [Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
-##### [Cloud-delivered protection Microsoft Defender Antivirus sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
+#### [Cloud protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+##### [Why cloud protection should be on](why-cloud-protection-should-be-on-mdav.md)
+##### [Turn on cloud protection](enable-cloud-protection-microsoft-defender-antivirus.md)
+##### [Specify the cloud protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)
+##### [Cloud protection and sample submission](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 #### [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [Turn on block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
@@ -268,10 +294,11 @@
 #### [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](configure-real-time-protection-microsoft-defender-antivirus.md)
 #### [Configure remediation for Microsoft Defender Antivirus detections](configure-remediation-microsoft-defender-antivirus.md)
 #### [Configure Microsoft Defender Antivirus scans](schedule-antivirus-scans.md)
-##### [Schedule antivirus scans using Group Policy](schedule-antivirus-scans-group-policy.md)
-##### [Schedule antivirus scans using PowerShell](schedule-antivirus-scans-powershell.md)
-##### [Schedule antivirus scans using Windows Management Instrumentation (WMI)](schedule-antivirus-scans-wmi.md)
+##### [Schedule scans using Group Policy](schedule-antivirus-scans-group-policy.md)
+##### [Schedule scans using PowerShell](schedule-antivirus-scans-powershell.md)
+##### [Schedule scans using WMI](schedule-antivirus-scans-wmi.md)
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
+#### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
@@ -308,16 +335,13 @@
 ##### [Exclusions based on file extension and folder location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 ##### [Exclusions for Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
-##### [Common mistakes to avoid when defining exclusions](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+##### [Common mistakes to avoid](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
 #### Troubleshooting Microsoft Defender Antivirus
 ##### [Troubleshoot Microsoft Defender Antivirus reporting in Update Compliance](troubleshoot-reporting.md)
 ##### [Troubleshoot performance issues](troubleshoot-performance-issues.md)
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
-
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
 
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
@@ -347,11 +371,11 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-##### [Device Control reports](device-control-report.md)
-##### [Control USB devices](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
+##### [Device Installation](mde-device-control-device-installation.md)
 ##### [Device Control Printer Protection](printer-protection.md)
+##### [Device Control Reports](device-control-report.md)
 
 #### [Behavioral blocking and containment]()
 ##### [Behavioral blocking and containment](behavioral-blocking-containment.md)
@@ -377,6 +401,7 @@
 ##### [Investigate incidents](investigate-incidents.md)
 
 #### [Alerts queue]()
+##### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
 ##### [View and organize the Alerts queue](alerts-queue.md)
 ##### [Review alerts](review-alerts.md)
 ##### [Manage alerts](manage-alerts.md)
@@ -477,6 +502,7 @@
 ####### [Alert methods and properties](alerts.md)
 ####### [List alerts](get-alerts.md)
 ####### [Create alert](create-alert-by-reference.md)
+####### [Batch update alerts](batch-update-alerts.md)
 ####### [Update Alert](update-alert.md)
 ####### [Get alert information by ID](get-alert-info-by-id.md)
 ####### [Get alert related domains information](get-alert-related-domain-info.md)
@@ -484,7 +510,7 @@
 ####### [Get alert related IPs information](get-alert-related-ip-info.md)
 ####### [Get alert related device information](get-alert-related-machine-info.md)
 ####### [Get alert related user information](get-alert-related-user-info.md)
-####### [Alerts queue in Microsoft 365 Defender](alerts-queue-endpoint-detection-response.md)
+
 
 ###### [Assessments of vulnerabilities and secure configurations]()
 ####### [Export assessment methods and properties](get-assessment-methods-properties.md)
@@ -599,7 +625,7 @@
 ####### [List machines by vulnerability](get-machines-by-vulnerability.md)
 
 ##### [How to use APIs - Samples]()
-###### [Microsoft Flow](api-microsoft-flow.md)
+###### [Power Automate](api-microsoft-flow.md)
 ###### [Power BI](api-power-bi.md)
 ###### [Advanced Hunting using Python](run-advanced-query-sample-python.md)
 ###### [Advanced Hunting using PowerShell](run-advanced-query-sample-powershell.md)
@@ -659,38 +685,38 @@
 
 ### [Helpful resources](helpful-resources.md)
 
-### [Troubleshoot Microsoft Defender for Endpoint]()
-#### [Troubleshoot sensor state]()
-##### [Check sensor state](check-sensor-status.md)
-##### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
-##### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
-##### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
-##### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
+## [Troubleshoot]()
+### [Troubleshoot sensor state]()
+#### [Check sensor state](check-sensor-status.md)
+#### [Fix unhealthy sensors](fix-unhealthy-sensors.md)
+#### [Inactive devices](fix-unhealthy-sensors.md#inactive-devices)
+#### [Misconfigured devices](fix-unhealthy-sensors.md#misconfigured-devices)
+#### [Review sensor events and errors on machines with Event Viewer](event-error-codes.md)
 
-#### [Troubleshoot sensor health issues using Client Analyzer]()
-##### [Client analyzer overview](overview-client-analyzer.md)
-##### [Download and run the client analyzer](download-client-analyzer.md)
-##### [Run the client analyzer on Windows](run-analyzer-windows.md)
-##### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
-##### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
-##### [Understand the analyzer HTML report](analyzer-report.md)
-##### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
+### [Troubleshoot sensor health issues using Client Analyzer]()
+#### [Client analyzer overview](overview-client-analyzer.md)
+#### [Download and run the client analyzer](download-client-analyzer.md)
+#### [Run the client analyzer on Windows](run-analyzer-windows.md)
+#### [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
+#### [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+#### [Understand the analyzer HTML report](analyzer-report.md)
+#### [Provide feedback on the client analyzer tool](analyzer-feedback.md)
 
-  
+ 
 
-#### [Troubleshoot Microsoft Defender for Endpoint service issues]()
-##### [Troubleshoot service issues](troubleshoot-mdatp.md)
-##### [Check service health](service-status.md)
-##### [Contact Microsoft Defender for Endpoint support](contact-support.md)
+### [Troubleshoot Microsoft Defender for Endpoint service issues]()
+#### [Troubleshoot service issues](troubleshoot-mdatp.md)
+#### [Check service health](service-status.md)
+#### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
-#### [Troubleshoot live response issues](troubleshoot-live-response.md)
+### [Troubleshoot live response issues](troubleshoot-live-response.md)
 
-#### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
+### [Collect support logs using LiveAnalyzer](troubleshoot-collect-support-log.md)
 
-#### [Troubleshoot attack surface reduction issues]()
-##### [Network protection](troubleshoot-np.md)
-##### [Attack surface reduction rules](troubleshoot-asr.md)
-##### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
+### [Troubleshoot attack surface reduction issues]()
+#### [Network protection](troubleshoot-np.md)
+#### [Attack surface reduction rules](troubleshoot-asr.md)
+#### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../defender/index.yml)
 # [Defender for Office 365](../office-365-security/index.yml)

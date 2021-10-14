@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - BCS160
@@ -68,7 +68,7 @@ To review and download content, select an option from the navigation pane:
   
 - **Trust documents** to view information about how Microsoft operates Office 365 as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Trust documents provided by Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Shows the Service assurance page: Trust documents provided by Microsoft.](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Audited controls** to view information about how Office 365 controls meet security, compliance, and privacy requirements, as shown in the following screen shot. 
     

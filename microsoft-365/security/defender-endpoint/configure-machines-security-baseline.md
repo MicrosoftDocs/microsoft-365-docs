@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -53,7 +53,7 @@ Ideally, devices onboarded to Defender for Endpoint are deployed both baselines:
 
 The **Security baseline** card on [device configuration management](configure-machines.md) provides an overview of compliance across Windows 10 devices that have been assigned the Defender for Endpoint security baseline.
 
-![Security baseline card](images/secconmgmt_baseline_card.png)
+![Security baseline card.](images/secconmgmt_baseline_card.png)
 
 *Card showing compliance to the Defender for Endpoint security baseline*
 
@@ -80,22 +80,22 @@ Device configuration management monitors baseline compliance only of Windows 10 
 
 2. Create a new profile.
 
-   ![Microsoft Defender for Endpoint security baseline overview on Intune](images/secconmgmt_baseline_intuneprofile1.png)<br>
+   ![Microsoft Defender for Endpoint security baseline overview on Intune.](images/secconmgmt_baseline_intuneprofile1.png)<br>
    *Microsoft Defender for Endpoint security baseline overview on Intune*
 
 3. During profile creation, you can review and adjust specific settings on the baseline.
 
-   ![Security baseline options during profile creation on Intune](images/secconmgmt_baseline_intuneprofile2.png)<br>
+   ![Security baseline options during profile creation on Intune.](images/secconmgmt_baseline_intuneprofile2.png)<br>
    *Security baseline options during profile creation on Intune*
 
 4. Assign the profile to the appropriate device group.
 
-   ![Security baseline profiles on Intune](images/secconmgmt_baseline_intuneprofile3.png)<br>
+   ![Security baseline profiles on Intune.](images/secconmgmt_baseline_intuneprofile3.png)<br>
    *Assigning the security baseline profile on Intune*
 
 5. Create the profile to save it and deploy it to the assigned device group.
 
-   ![Assigning the security baseline on Intune](images/secconmgmt_baseline_intuneprofile4.png)<br>
+   ![Assigning the security baseline on Intune.](images/secconmgmt_baseline_intuneprofile4.png)<br>
    *Creating the security baseline profile on Intune*
 
 > [!TIP]

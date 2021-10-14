@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.date: 
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -41,7 +41,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 - To turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.
+- To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) or [SharePoint Administrator](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) roles in Azure AD.
 
 - Verify that audit logging is enabled for your organization. For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
@@ -55,7 +55,7 @@ This article contains the steps for enabling and configuring Safe Attachments fo
 
 3. In the **Global settings** fly out that appears, go to the **Protect files in SharePoint, OneDrive, and Microsoft Teams** section.
 
-   Move the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle to the right ![Toggle on](../../media/scc-toggle-on.png) to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
+   Move the **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** toggle to the right ![Toggle on.](../../media/scc-toggle-on.png) to turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams.
 
    When you're finished, click **Save**.
 

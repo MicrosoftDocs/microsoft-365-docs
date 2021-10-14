@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
@@ -37,7 +37,7 @@ While the whole simulation creation and scheduling experience has been designed 
 
 A URL reputation service might identify one or more of the URLs that are used by Attack simulation training as unsafe. Google Safe Browsing in Google Chrome blocks some of the simulated phishing URLs with a **Deceptive site ahead** message. While we work with many URL reputation vendors to always allow our simulation URLs, we don't always have full coverage.
 
-![Deceptive site ahead warning in Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
+![Deceptive site ahead warning in Google Chrome.](../../media/attack-sim-chrome-deceptive-site-message.png)
 
 Note that this issue does not affect Microsoft Edge.
 
@@ -94,11 +94,11 @@ Every simulation campaign has a lifecycle. When first created, the simulation is
 
 While a simulation is in the **Scheduled** state, the simulation reports will be mostly empty. During this stage, the simulation engine is resolving the target user email addresses, expanding distribution groups, removing guest users from the list, etc.:
 
-![Reporting in the Scheduled state](../../media/attack-sim-empty-reporting.png)
+![Reporting in the Scheduled state.](../../media/attack-sim-empty-reporting.png)
 
 Once the simulation enters the **In progress** stage, you will notice information starting to trickle into the reporting:
 
-![Reporting in the In progress state](../../media/attack-sim-in-progress.png)
+![Reporting in the In progress state.](../../media/attack-sim-in-progress.png)
 
 It can take up to 30 minutes for the individual simulation reports to update after the transition to the **In progress** state. The report data continues to build until the simulation reaches the **Completed** state. Reporting updates occur at the following intervals:
 
@@ -135,7 +135,7 @@ A: Several options are available to target users:
 
 - Include all users (currently available to organizations with less than 40,000 users).
 - Choose specific users.
-- Select users from a CSV file.
+- Select users from a CSV file (one email address per line).
 - Azure AD group-based targeting.
 
 We've found that campaigns where the targeted users are identified by Azure AD groups are generally easier to manage.
@@ -164,7 +164,7 @@ Note that the configuration change might take up to 30 minutes to synchronize ac
 
 A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option will send a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
-![Send a test button on the Review simulation page](../../media/attack-sim-review-simulation-page.png)
+![Send a test button on the Review simulation page.](../../media/attack-sim-review-simulation-page.png)
 
 ### Q: Can I target users that belong to a different tenant as part of the same simulation campaign?
 

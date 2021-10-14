@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -32,7 +32,7 @@ In Microsoft 365, you can quickly and easily get to your email, calendars, docum
   
 You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
-![App launcher](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
+![App launcher.](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
 ## Add a custom tile to the app launcher
 
@@ -58,7 +58,7 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
   
 8. Select **Save changes** to create the custom tile. 
     
-    Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+    Your custom tile will appear within the next 24 hours in the app launcher on the **All** tab for you and your users. 
 
     > [!NOTE]
     > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 

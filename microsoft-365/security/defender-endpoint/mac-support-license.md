@@ -2,15 +2,13 @@
 title: Troubleshoot license issues for Microsoft Defender for Endpoint on Mac
 description: Troubleshoot license issues in Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -35,7 +33,7 @@ ms.technology: mde
 
 While you are going through [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md) and [Manual deployment](mac-install-manually.md) testing or a Proof Of Concept (PoC), you might get the following error:
 
-![Image of license error](images/no-license-found.png)
+![Image of license error.](images/no-license-found.png)
 
 **Message:** 
 
@@ -47,7 +45,7 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
+You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
 
 **Solution:**
 

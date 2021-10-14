@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -23,18 +23,17 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-
-- See the corresponding [Indicators page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal. 
+- See the corresponding [Indicators page](https://securitycenter.windows.com/preferences2/custom_ti_indicators/files) in the portal.
 
 Method|Return Type|Description
 :---|:---|:---
@@ -49,11 +48,12 @@ Property|Type|Description
 :---|:---|:---
 id|String|Identity of the [Indicator](ti-indicator.md) entity.
 indicatorValue|String|The value of the [Indicator](ti-indicator.md).
-indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "IpAddress", "DomainName" and "Url".
+indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" and "Url".
 application|String|The application associated with the indicator.
-action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed".
+action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" and "Allowed".
+|externalID|String|Id the customer can submit in the request for custom correlation.|
 sourceType|Enum|"User" in case the Indicator created by a user (e.g. from the portal), "AadApp" in case it submitted using automated application via the API.
-source|string|The name of the user/application that submitted the indicator.
+createdBySource|string|The name of the user/application that submitted the indicator.
 createdBy|String|Unique identity of the user/application that submitted the indicator.
 lastUpdatedBy|String|Identity of the user/application that last updated the indicator.
 creationTimeDateTimeUtc|DateTimeOffset|The date and time when the indicator was created.
@@ -64,6 +64,32 @@ title|String|Indicator title.
 description|String|Description of the indicator.
 recommendedActions|String|Recommended actions for the indicator.
 rbacGroupNames|List of strings|RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
+rbacGroupIds|List of strings|RBAC device group ID's where the indicator is exposed and active. Empty list in case it exposed to all devices.
+## Public Preview: Indicator types
+
+> [!IMPORTANT]
+> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The indicator action types supported by the API are:
+
+- Allowed
+- Alert
+- AlertAndBlock
+- Audit
+- Block
+- BlockAndRemediate
+- Warn
+
+The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert). For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
+
+The Allowed, Warn, Block, and BlockAndRemediate IoC response actions are in public preview. For more information on the public preview, see [Public Preview: Custom file IoC enhancements and API schema update - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
+
+
+
+
+> [!Note]
+>
+> The prior response actions (AlertAndBlock, and Alert) will be removed when the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
 
 ## Json representation
 

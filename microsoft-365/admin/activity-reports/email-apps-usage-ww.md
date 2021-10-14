@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -38,7 +38,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 
 You can get a view into email apps activity by looking at the **Users** and **Clients** charts. 
   
-![Email clients used](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
+![Email clients used.](../../media/d78af7db-2b41-4d37-8b6e-bc7e47edd1dd.png)
   
 |Item|Description|
 |:-----|:-----|
@@ -50,7 +50,7 @@ You can get a view into email apps activity by looking at the **Users** and **Cl
 |6.  <br/> | On the **Users** chart, the Y axis is the total count of unique users that connected to an app on any day of the reporting period.  <br/>  On the **Users** chart, the X axis is number of unique users that used the app for that reporting period.  <br/>  On the **Apps** chart, the Y axis is the total count of unique users who used a specific app during the reporting period.  <br/>  On the **Apps** chart, the X axis is the list of apps in your organization.  <br/>  On the **Versions** chart, the Y axis is the total count of unique users using a specific version of Outlook desktop. If the report can't resolve the version number of Outlook, the quantity will show as **Undetermined**.  <br/>  On the **Versions** chart, the X axis is the list of apps in your organization.  <br/> |
 |7.  <br/> |You can filter the series you see on the chart by selecting an item in the legend.  <br/> |
 |8.  <br/> | You might not see all the items in the list below in the columns until you add them.<br/> **Username** is the name of the email app's owner.  <br/> **Last activity date** is the latest date the user read or sent an email message.  <br/> **Mac mail**, **Mac Outlook** and **Outlook**, **Outlook mobile** and **Outlook on the web** are examples of email apps you may have in your organization.  <br/>  If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in the [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  <br/> |
-|9.  <br/> |Select **Choose columns** to add or remove columns from the report.  <br/> ![Email apps usage report - choose columns](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)|
+|9.  <br/> |Select **Choose columns** to add or remove columns from the report.  <br/> ![Email apps usage report - choose columns.](../../media/041bd6ff-27e8-409d-9608-282edcfa2316.png)|
 |10.  <br/> |You can also export the report data into an Excel .csv file, by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data.  <br/> |
 |||
    

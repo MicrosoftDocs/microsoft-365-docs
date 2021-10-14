@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-#  Get live response results
+# Get live response results
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -65,6 +65,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **Windows Server 2019 - Only applicable for Public preview**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
+    
+  - **Windows Server 2022**  
 
 ## Permissions
 
@@ -74,7 +76,8 @@ started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-|Application|Machine.LiveResponse|Run live response on a specific machine|
+Application|Machine.Read.All|''Read all machine profiles''
+Application|"Machine.ReadWrite.All|'Read and write all machine information'
 |Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request

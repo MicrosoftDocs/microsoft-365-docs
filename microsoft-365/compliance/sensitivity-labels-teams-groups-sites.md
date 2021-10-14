@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -30,6 +30,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - External sharing from SharePoint sites
 - Access from unmanaged devices
 - Authentication contexts (in preview)
+- Default sharing link for a SharePoint site (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
@@ -45,11 +46,11 @@ Content in these containers however, do not inherit the labels for the classific
 
 Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
-![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
+![A sensitivity label displayed in the Word desktop app.](../media/sensitivity-label-word.png)
 
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
-![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
+![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
 ## How to enable sensitivity labels for containers and synchronize labels
 
@@ -69,11 +70,11 @@ If you haven't yet enabled sensitivity labels for containers, do the following s
 
 ## How to configure groups and site settings
 
-After sensitivity labels are enabled for containers as described in the previous section, you can then configure protection settings for groups and sites in the sensitivity labeling wizard. Until sensitivity labels are enabled for containers, the settings are visible in the wizard but you can't configure them.
+After sensitivity labels are enabled for containers as described in the previous section, you can then configure protection settings for groups and sites in the sensitivity labeling configuration. Until sensitivity labels are enabled for containers, the settings are visible but you can't configure them.
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups & sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails](../media/groupsandsites-scope-options-sensitivity-label.png)
+    ![Sensitivity label scope options for files and emails.](../media/groupsandsites-scope-options-sensitivity-label.png)
     
     When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
     
@@ -112,7 +113,7 @@ After sensitivity labels are enabled for containers as described in the previous
             
             Examples for this label configuration:
             
-             - You choose an authentication context that is configured to require [multi-factor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
+             - You choose an authentication context that is configured to require [multifactor authentication (MFA)](/azure/active-directory/conditional-access/untrusted-networks). This label is then applied to a SharePoint site that contains highly confidential items. As a result, when users from an untrusted network attempt to access a document in this site, they see the MFA prompt that they must complete before they can access the document.
              
              - You choose an authentication context that is configured for [terms of use (ToU) policies](/azure/active-directory/conditional-access/terms-of-use). This label is then applied to a SharePoint site that contains items that require a terms of use acceptance for legal or compliance reasons. As a result, when users attempt to access a document in this site, they see a terms of use document that they must accept before they can access the original document.
 
@@ -127,7 +128,7 @@ If you don't configure the dependent conditional access policy for SharePoint as
 
 For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
 
-Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
+Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label configuration that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
 
 ##### More information about the dependencies for the authentication context option
 
@@ -165,8 +166,55 @@ Known limitations for this preview:
 
 - The following features and apps might be incompatible with authentication contexts, so we encourage you to check that these continue to work after a user successfully accesses  a site by using an authentication context:
     
-    - Workflows that use PowerApps or Power Automate
+    - Workflows that use Power Apps or Power Automate
     - Third-party apps
+
+### Configure settings for the default sharing link for a site by using PowerShell advanced settings
+
+In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site, and the sharing link permissions.
+
+To learn more about how these settings work, see [Change the default link type for a site](/sharepoint/change-default-sharing-link).
+
+These additional label settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+- **DefaultSharingScope**: The available values are:
+    - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
+    - **Organization**: Sets the default sharing link for the site to the "organization" link or company shareable link
+    - **Anyone**: Sets the default sharing link for the site to an Anonymous Access or Anyone link
+
+- **DefaultShareLinkPermission**:  The available values are:
+    - **View**: Sets the default link permission for the site to "view" permissions
+    - **Edit**: Sets the default link permission for the site to "edit" permissions
+
+These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
+
+PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+- To set the sharing link type to SpecificPeople:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
+    ````
+
+- To set the sharing link permissions to Edit:
+    
+    ````powershell
+    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
+    ````
+
+#### PowerShell tips for specifying the advanced settings
+
+Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. To find the GUID:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+````
 
 ## Sensitivity label management
 
@@ -236,11 +284,11 @@ Users can select sensitivity labels when they create new teams in Microsoft Team
 
 [Learn more about sensitivity labels for Teams](/microsoftteams/sensitivity-labels)
 
-![The privacy setting when creating a new team](../media/privacy-setting-new-team.png)
+![The privacy setting when creating a new team.](../media/privacy-setting-new-team.png)
 
 After you create the team, the sensitivity label appears in the upper-right corner of all channels.
 
-![The sensitivity label appears on the team](../media/privacy-setting-teams.png)
+![The sensitivity label appears on the team.](../media/privacy-setting-teams.png)
 
 The service automatically applies the same sensitivity label to the Microsoft 365 group and the connected SharePoint team site.
 
@@ -248,19 +296,19 @@ The service automatically applies the same sensitivity label to the Microsoft 36
 
 In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:
 
-![Creating a group and selecting an option under Sensitivity](../media/sensitivity-label-new-group.png)
+![Creating a group and selecting an option under Sensitivity.](../media/sensitivity-label-new-group.png)
 
 ### Apply a sensitivity label to a new site
 
 Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection), and expand **Advanced settings**:
 
-![Creating a site and selecting an option under Sensitivity](../media/sensitivity-label-new-communication-site.png)
+![Creating a site and selecting an option under Sensitivity.](../media/sensitivity-label-new-communication-site.png)
 
 The dropdown box displays the label names for the selection, and the help icon displays all the label names with their tooltip, which can help users determine the correct label to apply.
 
 When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
 
-![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
+![A site that has a sensitivity label applied.](../media/sensitivity-label-site.png)
 
 ### Use PowerShell to apply a sensitivity label to multiple sites
 
@@ -300,7 +348,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
-![The Sensitivity column on the Active sites page](../media/manage-site-sensitivity-labels.png)
+![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
 
 For more information about managing sites from the Active sites page, including how to add a column, see [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 
@@ -310,9 +358,11 @@ You can also change and apply a label from this page:
 
 2. Select the **Policies** tab, and then select **Edit** for the **Sensitivity** setting.
 
-3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site, and then select **Save**.
+3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site. Unlike user apps, where sensitivity labels can be assigned to specific users, the admin center displays all sensitivity labels for your tenant. After you've chosen a label, select **Save**.
 
 ## Support for sensitivity labels
+
+When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
@@ -321,7 +371,7 @@ The following apps and services support sensitivity labels configured for sites 
   - SharePoint admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
-  - Microsoft 365 compliance center, Microsoft 365 security center, Security & Compliance Center
+  - Microsoft 365 compliance center
 
 - User apps and services:
 
@@ -348,7 +398,7 @@ The following apps and services don't currently support sensitivity labels confi
 
 ## Classic Azure AD group classification
 
-Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites after you enable sensitivity labels for containers. However, existing groups and sites that support sensitivity labels still display the old classification values until you convert them to use sensitivity labels.
+After you enable sensitivity labels for containers, the group classifications from Azure AD are no longer supported by Microsoft 365 and won't display on sites that support sensitivity labels. However, you can convert your old classifications to sensitivity labels.
 
 As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
@@ -445,6 +495,6 @@ If these containers have Azure AD classification values applied to them, the con
 
 See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
-For more information on managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).
-
 This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
+
+For more information about managing Teams connected sites and channel sites, see [Manage Teams connected sites and channel sites](/SharePoint/teams-connected-sites).

@@ -10,12 +10,15 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App."
 ---
 
 # Integrate Microsoft OneDrive LTI with Canvas
+
+> [!IMPORTANT]
+> Some information relates to a pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first step enables Microsoft OneDrive in Canvas, and the second step makes the Microsoft OneDrive LTI available within Canvas courses.
 

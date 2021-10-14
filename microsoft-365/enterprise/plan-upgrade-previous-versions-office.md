@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -42,7 +42,7 @@ Microsoft 365 is the way to digitally transform your business with constantly im
 |Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Get information about the versions of Microsoft 365.|
-|[Microsoft 365 for Business documentation](../business/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
+|[Microsoft 365 for Business documentation](../admin/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
 |[Microsoft 365 for Education documentation](/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
 |[Microsoft 365 for Enterprise documentation](./index.yml)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
 |||

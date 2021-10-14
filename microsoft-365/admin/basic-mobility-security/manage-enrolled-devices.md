@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
 description: "Basic Mobility and Security can help you secure and manage your organizations mobile devices."
@@ -34,7 +35,7 @@ To get to the device management panel, follow these steps:
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option.":::
 
 3. Select  **Let's get started**.
 

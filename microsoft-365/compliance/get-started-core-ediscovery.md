@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -29,9 +29,9 @@ This article discusses the steps necessary to set up Core eDiscovery. This inclu
 
 Licensing for Core eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher.
+- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher. Microsoft 365 Frontline organizations must have an F5 subscription.
 
-- **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, a user must be assigned one of the following licenses, depending on your organization subscription:
+- **Per-user licensing:** To place an eDiscovery hold on mailboxes and sites, users must be assigned one of the following licenses, depending on your organization subscription:
 
   - A Microsoft 365 E3 or Office 365 E3 license or higher
 
@@ -39,21 +39,25 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
 
   - Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
 
+   OR
+
+  - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on license  
+
   AND
 
-  - Office 365 E1 license with an SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
+  - Office 365 E1 license with a SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
   
   For information about how to assign licenses, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
 For information about licensing:
 
-- Download and see the "Discover & Respond" solution in the [Microsoft 365 Compliance Licensing Comparison](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx).
+- Download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 - See the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
+To access Core eDiscovery or be added as a member of a Core eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. Members of this role group can create and manage Core eDiscovery cases. They can add and remove members, place an eDiscovery hold on users, create and edit searches, and export content from a Core eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
@@ -84,6 +88,8 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
   - Manage any case in the organization after they add themselves as a member of the case.
 
   - Access and export case data for any case in the organization.
+  
+  - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
 
@@ -121,13 +127,20 @@ If you create a case in Step 3 and you're the only person who will use the case,
   
 5. After you select the people or role groups to add as members of the case, click **Save** to save the new members or role groups.
 
+> [!IMPORTANT]
+>
+>- If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md#adding-role-groups-as-members-of-ediscovery-cases). 
+>
+>- As previously explained, only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
+>
+
 ## Explore the Core eDiscovery workflow
 
 To get you started using core eDiscovery, here's a simple workflow of creating eDiscovery holds for people of interest, searching for content that relevant to your investigation, and then exporting that data for further review. In each of these steps, we'll also highlight some extended Core eDiscovery functionality that you can explore.
 
-![Core eDiscovery workflow](../media/CoreEdiscoveryWorkflow.png)
+![Core eDiscovery workflow.](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**. The first step after creating a case is placing a hold (also called an *eDiscovery hold*) on the content locations of the people of interest in your investigation. Content locations include Exchange mailboxes, SharePoint sites, OneDrive accounts, and the mailboxes and sites associated with Microsoft Teams and Office 365 Groups. While this step is optional, creating an eDiscovery hold preserves content that may be relevant to the case during the investigation. When you create an eDiscovery hold you can preserve all content in specific content locations or you can create a query-based hold to preserve only the content that matches a hold query. In addition to preserving content, another good reason to create eDiscovery holds is to quickly search the content locations on hold (instead of having to select each location to search) when you create and run searches in the next step. After you complete your investigation, you can release any hold that you created.
+1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**. The first step after creating a case is placing a hold (also called an *eDiscovery hold*) on the content locations of the people of interest in your investigation. Content locations include Exchange mailboxes, SharePoint sites, OneDrive accounts, and the mailboxes and sites associated with Microsoft Teams and Microsoft 365 Groups. While this step is optional, creating an eDiscovery hold preserves content that may be relevant to the case during the investigation. When you create an eDiscovery hold you can preserve all content in specific content locations or you can create a query-based hold to preserve only the content that matches a hold query. In addition to preserving content, another good reason to create eDiscovery holds is to quickly search the content locations on hold (instead of having to select each location to search) when you create and run searches in the next step. After you complete your investigation, you can release any hold that you created.
 
 2. **[Search for content](search-for-content-in-core-ediscovery.md)**. After you create eDiscovery holds, use the built-in search tool to search the content locations on hold. You can also search other content locations for data that may be relevant to the case. You can create and run different searches that are associated with the case. You use keywords, properties, and conditions to [build search queries](keyword-queries-and-search-conditions.md) that return search results with the data that's most likely relevant to the case. You can also:
 

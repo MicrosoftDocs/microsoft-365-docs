@@ -9,13 +9,14 @@ ms.reviewer: jamitche, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150 
 description: Learn how to activate and manage third-party apps in Microsoft 365 admin center.
 ms.date: 04/15/2021
@@ -23,7 +24,7 @@ ms.date: 04/15/2021
 
 # Manage third-party app subscriptions for your organization
 
-You can manage licenses and billing for third-party apps in the new Microsoft 365 admin center. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
+You can manage licenses and billing for third-party apps in the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft’s updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
 
 ## How to get software-as-a-service apps
 

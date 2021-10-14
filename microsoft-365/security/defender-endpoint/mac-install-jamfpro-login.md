@@ -2,15 +2,13 @@
 title: Log in to Jamf Pro
 description: Log in to Jamf Pro
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,15 +30,15 @@ ms.technology: mde
 
 1. Enter your credentials.
 
-    ![Image of Jamf Pro dashboard1](images/jamf-pro-portal1.png)
+    ![Image of Jamf Pro dashboard1.](images/jamf-pro-portal1.png)
 
 2. Select **Computers**.
 
-    ![Image of Jamf Pro dashboard2](images/jamf-pro-dashboard.png)
+    ![Image of Jamf Pro dashboard2.](images/jamf-pro-dashboard.png)
 
 3. You will see the settings that are available.
 
-     ![Image of Jamf Pro dashboard3](images/jamfpro-settings.png)
+     ![Image of Jamf Pro dashboard3.](images/jamfpro-settings.png)
 
 
 ## Next step

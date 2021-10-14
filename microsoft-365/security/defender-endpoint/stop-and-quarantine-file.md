@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -55,6 +55,8 @@ One of the following permissions is required to call this API. To learn more, in
 Permission type|Permission|Permission display name
 :---|:---|:---
 Application|Machine.StopAndQuarantine|'Stop And Quarantine'
+Application|Machine.Read.All|'Read all machine profiles'
+Application|Machine.ReadWrite.All|'Read and write all machine information'
 Delegated (work or school account)|Machine.StopAndQuarantine|'Stop And Quarantine'
 
 > [!NOTE]

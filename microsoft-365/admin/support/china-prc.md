@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
@@ -37,7 +37,7 @@ English: 24 hours a day, 7 days a week
 Alternative Phone Number: 400 920 0365 (Mobile)
 
 ## Follow us on WeChat
-![WeChat QR code](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![WeChat QR code.](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ## Contact support for Office 365 operated by 21Vianet only
 ## Phone number

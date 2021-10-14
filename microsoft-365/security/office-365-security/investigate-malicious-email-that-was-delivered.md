@@ -10,7 +10,7 @@ ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -76,7 +76,7 @@ We understand previewing and downloading email are sensitive activities, and so 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
 > [!NOTE]
-> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto protection (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
+> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
 1. Open the Microsoft 365 Defender portal <https://security.microsoft.com> and sign in using your work or school account for Office 365.
 
@@ -118,7 +118,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
     - **Junked** (Delivered to junk)– email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-    - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+    - **Blocked** – any email messages that are quarantined, that failed, or were dropped.
     - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
     **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
@@ -173,7 +173,7 @@ Delivery action is the action taken on an email due to existing policies or dete
 
 - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
 - **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+- **Blocked** – any email messages that are quarantined, that failed, or were dropped.
 - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:

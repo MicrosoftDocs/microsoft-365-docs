@@ -9,7 +9,7 @@ ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Provides an introduction to the components, plans, and deployment paths for Microsoft 365 for enterprise.
@@ -63,7 +63,7 @@ The [Microsoft 365 for enterprise poster](../downloads/Microsoft365Enterprise.pd
 - The key components of the Microsoft modern workplace, which Microsoft 365 for enterprise enables.
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments.
 
-[![Image for the Microsoft 365 for enterprise poster](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
+[![Image for the Microsoft 365 for enterprise poster.](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
 You can also [download a copy of the poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
@@ -72,7 +72,7 @@ You can also [download a copy of the poster](https://github.com/MicrosoftDocs/mi
 
 To get a better picture about how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf).
 
-[![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
+[![Image for the Transition to Microsoft 365 poster.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.
 
@@ -89,7 +89,7 @@ These products reached end of support on **October 13, 2020**:
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
 
-[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image for the end of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster is a quick way to understand the various paths you can take to prevent Windows 7 and Office 2010 client and server products from reaching end of support, with preferred paths and support in Microsoft 365 for enterprise highlighted.
 
@@ -115,7 +115,7 @@ For an example of how a fictional but representative multinational organization 
 
 ## Additional Microsoft 365 products
 
-- [Microsoft 365 Business Premium](../business/index.yml)
+- [Microsoft 365 Business Premium](../admin/index.yml)
 
   Bring together the best-in-class productivity and collaboration capabilities with device management and security solutions to safeguard business data for small and midsize businesses.
 
@@ -138,16 +138,16 @@ Optimize your user’s integrated and secure productivity with the best-together
 
 Here is an example for an enterprise organization.
 
-![An enterprise organization with Microsoft 365, Surface devices, and the Edge browser](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+![An enterprise organization with Microsoft 365, Surface devices, and the Edge browser.](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
 
 For more information and configuration examples for a small and medium business and an educational institution, download the [Best together poster](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf).
 
-[![Image for the Best together with Surface and the Edge browser poster](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+[![Image for the Best together with Surface and the Edge browser poster.](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
 
 
 ## Microsoft 365 training
 
-![Microsoft 365 Fundamentals training](../media/microsoft-365-overview/m365-fundamentals.svg)
+![Microsoft 365 Fundamentals training.](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 To learn more about Microsoft 365 and work toward a Microsoft 365 certification, you can start with [Microsoft 365 Certified: Fundamentals](/learn/paths/m365-fundamentals/).
 

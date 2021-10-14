@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -48,14 +48,14 @@ Record versioning is automatically available for any document that has a retenti
 While the document is unlocked, any user with standard edit permissions can edit the file. However, users can't delete the file, because it's still a record. When editing is complete, a  user can then toggle the **Record status** from **Unlocked** to **Locked**, which prevents further edits while in this status.
 <br/><br/>
 
-![Record status property on document tagged as a record](../media/recordversioning8.png)
+![Record status property on document tagged as a record.](../media/recordversioning8.png)
 
 ## Locking and unlocking a record
 
 After a retention label that marks content as a record is applied to a document, any user with Contribute permissions or a narrower permission level can unlock a record or lock an unlocked record.
 <br/><br/>
 
-![Record status shows record document is unlocked](../media/recordversioning9.png)
+![Record status shows record document is unlocked.](../media/recordversioning9.png)
 
 When a user unlocks a record, the following actions occur:
 
@@ -76,7 +76,7 @@ When a user locks a record, the original document again can't be edited. But it 
 Each time a user unlocks a record, the latest version is copied to the Preservation Hold library, and that version contains the value of **Record** in the **Comments** field of the version history.
 <br/><br/>
 
-![Record shown in the Preservation Hold library](../media/recordversioning10.png)
+![Record shown in the Preservation Hold library.](../media/recordversioning10.png)
 
 To view the version history, select a document in the document library and then click **Version history** in the item menu.
 
@@ -85,11 +85,11 @@ To view the version history, select a document in the document library and then 
 Records are stored in the Records folder in the Preservation Hold library in the top-level site in the site collection. In the left navigation on the top-level site, choose **Site contents** \> **Preservation Hold Library**.
 <br/><br/>
 
-![Preservation Hold library](../media/recordversioning11.png)
+![Preservation Hold library.](../media/recordversioning11.png)
 
 <br/><br/>
 
-![The Records folder in the Preservation Hold library](../media/recordversioning12.png)
+![The Records folder in the Preservation Hold library.](../media/recordversioning12.png)
 
 For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
@@ -97,7 +97,7 @@ For more information about how the Preservation Hold library works, see [How ret
 
 The actions of locking and unlocking records are logged in the audit log. From **File and page activities**, select **Changed record status to locked** and **Changed record status to unlocked**.
 
-For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+For more information about searching for these events, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
 

@@ -6,8 +6,9 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.prod: m365-security
+ms.technology: mdo
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid:
@@ -88,7 +89,7 @@ Defender for Office 365 helps organizations secure their enterprise by offering 
 
 You can also learn more about Defender for Office 365 at this [interactive guide](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189).
 
-![Microsoft Defender for Office 365 conceptual diagram](../../media/microsoft-defender-for-office-365.png)
+![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
 
 ### Prevention
 

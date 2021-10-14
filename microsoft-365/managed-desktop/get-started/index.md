@@ -7,7 +7,7 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ---
 
 # Get started with Microsoft Managed Desktop
@@ -19,7 +19,7 @@ Now that you’re ready to enroll, open [Microsoft Endpoint Manager](https://end
 
 Once you’ve finished enrollment, follow the steps below to configure the service. This is the recommended order to follow, but you do have some flexibility in the sequence.
 
-![Suggested sequence of steps to get started, listed in this article](../../media/mmd-getstarted-sequence.png) 
+![Suggested sequence of steps to get started, listed in this article.](../../media/mmd-getstarted-sequence.png) 
 
 1. Access [admin portal](access-admin-portal.md).
 1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -33,7 +34,7 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 ## Before you begin
 
-Looking for the full list of detailed Azure AD role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>? Check out Administrator role permissions in Azure Active Directory. [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Looking for the full list of detailed Azure AD role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>? Check out Administrator role permissions in Azure Active Directory. [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 Looking for the full list of detailed Intune role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>?  Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
@@ -59,7 +60,7 @@ If you get a message in the admin center telling you that you don't have permiss
 
 In the Microsoft 365 admin center, you can go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**Role assignments**</a>, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
-You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).)
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
@@ -77,7 +78,7 @@ You'll probably only need to assign the following roles in your organization. By
 |Reports reader |   Assign the Reports reader role to users who need to do the following: <br> - View usage data and the activity reports in the Microsoft 365 admin center <br> - Get access to the Power BI adoption content pack <br> - Get access to sign-in reports and activity in Azure AD <br> - View data returned by Microsoft Graph reporting API|
 |Service Support admin   |   Assign the Service Support admin role as an additional role to admins or users who need to do the following in addition to their usual admin role: <br> - Open and manage service requests <br> - View and share message center posts <br> - Monitor service health   |
 |SharePoint admin    |   Assign the SharePoint admin role to users who need to access and manage the SharePoint Online admin center. <br><br>SharePoint admins can also: <br> - Create and delete sites <br> - Manage site collections and global SharePoint settings   |
-|Teams service admin    |   Assign the Teams service admin role to users who need to access and manage the Teams admin center. <br><br>Teams service admins can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
+|Teams administrator    |   Assign the Teams administrator role to users who need to access and manage the Teams admin center. <br><br>Teams administrator can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
 
 ## Delegated administration for Microsoft Partners

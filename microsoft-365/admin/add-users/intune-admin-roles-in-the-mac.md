@@ -8,14 +8,15 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkMAC
 description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
 ---
 

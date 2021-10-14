@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -41,7 +41,7 @@ Defender for Identity protects your on-premises Active Directory users and/or us
 
 The following diagram illustrates the baseline architecture for Defender for Identity. 
 
-![Architecture for Microsoft Defender for Identity](../../media/defender/m365-defender-identity-architecture.png)
+![Architecture for Microsoft Defender for Identity.](../../media/defender/m365-defender-identity-architecture.png)
 
 In this illustration:
 - Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.

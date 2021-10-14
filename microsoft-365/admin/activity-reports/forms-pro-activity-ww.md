@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -40,7 +40,7 @@ For example, you can understand the activity of every user licensed to use Micro
 
 You can view the activities in the Dynamics 365 Customer Voice report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft Dynamics 365 Customer Voice activity report.](../../media/a7e57d18-1ac8-4d4b-bd70-83361505dc3e.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Dynamics 365 Customer Voice activity report - choose columns](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Dynamics 365 Customer Voice activity report - choose columns.](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

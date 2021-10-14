@@ -9,7 +9,7 @@ manager: dansimp
 ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
@@ -57,15 +57,15 @@ Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoi
 
 3. On the **Explorer** page, in the upper right corner of the screen, select **MDE Settings**.
 
-3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on](../../media/scc-toggle-on.png)) and then select **Close**.
+3. In the **Microsoft Defender for Endpoint connection** flyout that appears, turn on **Connect to Microsoft Defender for Endpoint** (![Toggle on.](../../media/scc-toggle-on.png)) and then select **Close**.
 
-    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection":::
+    :::image type="content" source="../../media/explorer-mdeconnection-dialognew.png" alt-text="MDE Connection.":::
 
 4. In the navigation pane, choose **Settings**. On the **Settings** page, choose **Endpoints**
 
 5. On the **Endpoints** page that opens, choose **Advanced features**.
 
-6. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on](../../media/scc-toggle-on.png)).
+6. Scroll down to **Office 365 Threat Intelligence connection**, and turn it on (![Toggle on.](../../media/scc-toggle-on.png)).
 
    When you're finished, select **Save preferences**.
 

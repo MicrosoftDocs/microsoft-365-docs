@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -76,7 +76,7 @@ After a retention policy is configured for chat and channel messages, the paths 
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Teams chat and channel messages](../media/teamsretentionlifecycle.png)
+![Diagram of retention flow for Teams chat and channel messages.](../media/teamsretentionlifecycle.png)
 
 For the two paths in the diagram:
 

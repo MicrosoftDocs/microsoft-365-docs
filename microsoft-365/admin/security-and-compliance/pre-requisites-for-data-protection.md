@@ -8,8 +8,10 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: M365-subscription-management 
+ms.localizationpriority: medium
+ms.collection: 
+- M365-subscription-management 
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
@@ -42,4 +44,4 @@ The first step in setting up your organization with Microsoft 365 for business i
     
     Google Android 4.0 and later (including Samsung KNOX Standard 4.0 and higher). For more information, see [Intune supported devices](/mem/intune/fundamentals/supported-devices-browsers).
     
-- If you have existing Office applications on user computers, read [prepare for Office client installation](../../business/prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers.
+- If you have existing Office applications on user computers, read [prepare for Office client installation](../misc/prepare-for-office-client-deployment.md) to understand steps you might need to take before you can set up Microsoft 365 for business to install Office 2016 on user computers.

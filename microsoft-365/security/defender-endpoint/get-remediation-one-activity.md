@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -51,7 +51,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|RemediationTask.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
+Application|RemediationTasks.Read.All|\'Read Threat and Vulnerability Management vulnerability information\'
 Delegated (work or school account)|RemediationTask.Read.Read|\'Read Threat and Vulnerability Management vulnerability information\'
 
 ## Properties
@@ -98,40 +98,40 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 ### Response example
 
 ```json
-{ 
-    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity", 
-    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c", 
-    "title": "Update Microsoft Silverlight", 
-    "createdOn": "2021-02-10T13:20:36.4718166Z", 
-    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4", 
-    "requesterEmail": "user1@contoso.com", 
-    "status": "Active", 
-    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z", 
-    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.  ", 
-    "relatedComponent": "Microsoft Silverlight", 
-    "targetDevices": 18511, 
-    "rbacGroupNames": [ 
-        "UnassignedGroup", 
-        "hhh" 
-    ], 
-    "fixedDevices": 2866, 
-    "requesterNotes": "test", 
-    "dueOn": "2021-02-11T00:00:00Z", 
-    "category": "Software", 
-    "productivityImpactRemediationType": null, 
-    "priority": "Medium", 
-    "completionMethod": null, 
-    "completerId": null, 
-    "completerEmail": null, 
-    "scid": null, 
-    "type": "Update", 
-    "productId": "microsoft-_-silverlight", 
-    "vendorId": "microsoft", 
-    "nameId": "silverlight", 
-    "recommendedVersion": null, 
-    "recommendedVendor": null, 
-    "recommendedProgram": null 
-} 
+{
+    "@odata.context": "https://wpatdadi-luna-stg.cloudapp.net/api/$metadata#RemediationTasks/$entity",
+    "id": "03942ef5-aecb-4c6e-b555-d6a97013844c",
+    "title": "Update Microsoft Silverlight",
+    "createdOn": "2021-02-10T13:20:36.4718166Z",
+    "requesterId": "65548a1d-efo0-4a7a-8d19-1b967b5c36f4",
+    "requesterEmail": "user1@contoso.com",
+    "status": "Active",
+    "statusLastModifiedOn": "2021-02-10T13:20:36.4719698Z",
+    "description": "Update Silverlight to a later version to mitigate 55 known vulnerabilities affecting your devices. Doing so can help lessen the security risk to your organization due to versions which have reached their end-of-support.",
+    "relatedComponent": "Microsoft Silverlight",
+    "targetDevices": 18511,
+    "rbacGroupNames": [
+        "UnassignedGroup",
+        "hhh"
+    ],
+    "fixedDevices": 2866,
+    "requesterNotes": "test",
+    "dueOn": "2021-02-11T00:00:00Z",
+    "category": "Software",
+    "productivityImpactRemediationType": null,
+    "priority": "Medium",
+    "completionMethod": null,
+    "completerId": null,
+    "completerEmail": null,
+    "scid": null,
+    "type": "Update",
+    "productId": "microsoft-_-silverlight",
+    "vendorId": "microsoft",
+    "nameId": "silverlight",
+    "recommendedVersion": null,
+    "recommendedVendor": null,
+    "recommendedProgram": null
+}
 ```
 
 ## See also

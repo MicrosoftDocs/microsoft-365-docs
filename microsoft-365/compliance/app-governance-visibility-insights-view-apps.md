@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -29,7 +29,7 @@ Microsoft app governance allows you to quickly gain deep insights into the Micro
 
 For a summary of apps in your tenant, go to **Microsoft 365 Compliance Center > App governance > Apps**.
 
-![The MAPG app summary page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps.png)
+![The MAPG app summary page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-apps.png)
 
 >[!Note]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
@@ -62,14 +62,14 @@ You can also select **Search** to search for an app by name.
 
 For detailed information on a specific app in your tenant, go to **Microsoft 365 Compliance Center > App governance > Apps page > *app name***.
 
-![The app governance app details pane in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
+![The app governance app details pane in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-apps-app.png)
 
 The app details pane provides additional information on these tabs:
 
 | Tab name | Description |
 |:-------|:-----|
 | Details | See additional data on the app such as the date first consented and the App ID. To see the properties of the app as registered in Azure AD, select **View app in Azure AD**. |
-| Usage |See the data accessed by the app in the tenant and plot the data usage for Sharepoint and Exchange resources. |
+| Usage |See the data accessed by the app in the tenant and plot the data usage for SharePoint and Exchange resources. |
 | Users | See a list of users who are using the app, whether they are a priority account, and the amount of data downloaded and uploaded. |
 | Permissions | See a summary of the permissions granted to and used by the app and the list of specific permissions. See the [Microsoft Graph permissions reference](/graph/permissions-reference) for more information. |
 |||
