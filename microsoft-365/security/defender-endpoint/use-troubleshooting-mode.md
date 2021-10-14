@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Use the troubleshooting mode
+# Use troubleshooting mode
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
