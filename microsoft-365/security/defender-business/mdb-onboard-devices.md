@@ -23,18 +23,21 @@ ms.collection:
 > [!TIP]
 > If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
 
-Microsoft Defender for Business is designed with the busy small and midsized business in mind. When it comes to onboarding devices, you can choose from several methods.
+Microsoft Defender for Business is designed with the busy small and midsized business in mind. You can choose from several methods for onboarding, including automatic onboarding if you're already using Microsoft Endpoint Manager.
 
-## Onboarding methods in the Microsoft 365 Defender portal
-
-If you're not already using MEM to onboard devices, you can choose from several methods in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)):
-
-- **Microsoft Endpoint Manager**. See [Use Microsoft Endpoint Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-mem.md).
+| Method | Description |
+|:---|:---|
+| **Microsoft Endpoint Manager** | . See [Use Microsoft Endpoint Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-mem.md).
 - **Local script** (for up to 10 devices). See [Use a local script to onboard devices to Microsoft Defender for Business](mdb-onboarding-local-script.md).
 - **Group Policy**. See [Use Group Policy to onboard devices to Microsoft Defender for Business](mdb-onboarding-group-policy.md). 
 - **Virtual desktop infrastructure (VDI) onboarding using a script**. See [Use a script to onboard VDI endpoints to Microsoft Defender for Business](mdb-onboarding-vdi-onboarding-script.md).
 - **System Center Configuration Manager** (for on-premises environments). See [Use System Center Configuration Manager to onboard devices to Microsoft Defender for Business](mdb-onboarding-sccm.md).
 - **Mobile Device Management** (in Microsoft Intune). See [Use Mobile Device Management to onboard devices to Microsoft Defender for Business](mdb-onboarding-mdm.md).
+- 
+- 
+
+## How to onboard devices
+
 
 ## What if I want to offboard a device?
 
