@@ -156,7 +156,7 @@ You can also use the following registry value to quickly toggle between using th
 |:-------|:------:|--------:|
 |HKCU\Software\Microsoft\Office\16.0\Common\Security\Labels\UseOfficeForLabelling  |REG_DWORD  |1  |
 
-Setting this value to 1 enables the built-in sensitivity labeling options in Office, setting it to 0 enables the AIP plugin if it is installed. 
+Setting this value to **1** enables the built-in sensitivity labeling options in Office; setting it to **0** enables the AIP plug-in if it is installed. 
 
 Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
