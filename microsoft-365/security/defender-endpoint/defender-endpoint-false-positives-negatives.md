@@ -20,6 +20,7 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
+ms.date: 10/07/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
@@ -74,7 +75,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
    |Alert status|What to do|
    |---|---|
    |The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
-   |The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
+   |The alert is a false positive|1. [Classify the alert](#classify-an-alert) as a false positive.<br/><br/>2. [Suppress the alert](#suppress-an-alert).<br/><br/>3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.<br/><br/>4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).|
    |The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
 
 ### Classify an alert
