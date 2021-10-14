@@ -9,10 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150

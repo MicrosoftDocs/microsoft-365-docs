@@ -8,9 +8,10 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
-- M365-subscription-management 
+- M365-subscription-management
+- Adm_TOC 
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkMAC
@@ -22,7 +23,7 @@ description: "Provide your users with up-to-date news headlines about your indus
 # Manage Industry news
 
 > [!NOTE] 
-> Bing news & Industry updates are available in English-only markets at this time.
+> Bing news & Industry updates are available only for en-US at this time.
 
 To provide your users with up-to-date news headlines about your industry and info from your organization, use the News service to enable a customized news feed for your organization. You can also enable a daily Industry Updates email, and manage settings for the Bing homepage and Microsoft Edge new tab page.
 
@@ -95,7 +96,7 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 3. Select **Allow Office 365 content on the new tab page**. When enabled, users can customize their new tab to show  information from Office 365, including recommended and recent files, along with frequently used SharePoint sites and other information.
 4. Select **Show company information and industry news on the new tab page**. News articles about your organization and industry appear for users that choose to see articles on their new tab.
 
-## Related articles
+## Related content
 
 - [Microsoft Search](/microsoftsearch/)
-- [Manage your data and service](./index.yml)
+- [Manage your data and service](/admin)

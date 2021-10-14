@@ -8,13 +8,14 @@ ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Enable controlled folder access

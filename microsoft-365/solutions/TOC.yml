@@ -151,7 +151,7 @@
           - name: "Step 3: Monitor and report"
             href: /sharepointmigration/mm-reports?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
-    - name: Teamwork and collaboration
+    - name: Meetings and communications
       items:
       - name: Deploy Teams voice in Microsoft 365
         items:
@@ -169,6 +169,34 @@
             href: /MicrosoftTeams/direct-routing-configure?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Case study for multi-national corporation 
           href: /MicrosoftTeams/voice-case-study-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+      - name: Corporate communications
+        items:
+        - name: Corporate communications overview
+          href: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          items:
+          - name: "Step 1: Plan your communications strategy"
+            href: /sharepoint/plan-communication-strategy?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 2: Review communication tools"
+            href: /sharepoint/review-communication-apps?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 3: Scope and define your audience"
+            href: /sharepoint/audience-profile?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+          - name: "Step 4: Choose a communication solution"
+            href: /sharepoint/choose-communication-method?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Set up Viva Connections
+          href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Get a home site for your intranet
+          href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Plan and produce a town hall
+          href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Distribute organizational news
+          href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Leadership connection
+          href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: New employee onboarding
+          href: /sharepoint/onboard-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+
+    - name: Teamwork and collaboration
+      items:
       - name: Manage contracts for your business
         items:
           - name: Overview
@@ -185,17 +213,17 @@
           - name: Overview
             href: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: How to think about your intelligent intranet
-            href: /sharepoint/itrad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/trad-vs-modern-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Intranet roadmap
-            href: /sharepoint/iintranet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/intranet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Plan your intranet
-            href: /sharepoint/iplan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/plan-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Considerations when planning for a global intranet
-            href: /sharepoint/iset-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/set-up-global-intranet?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Intranet governance
-            href: /sharepoint/iintranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/intranet-governance?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
           - name: Workplace communication
-            href: /sharepoint/iworkplace-communications?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+            href: /sharepoint/workplace-communications?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
       - name: Collaboration governance
         items:
@@ -268,7 +296,7 @@
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
       - name: Deploy Microsoft Defender for Endpoints
-        href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
+        href: /microsoft-365/security/defender-endpoint/deployment-phases.md
       - name: Migrate from Symantec to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
       - name: Migrate from McAfee to Microsoft Defender for Endpoint

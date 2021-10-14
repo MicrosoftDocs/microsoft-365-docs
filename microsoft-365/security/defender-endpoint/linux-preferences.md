@@ -3,15 +3,13 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -97,6 +95,55 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+  
+#### Run a scan after definitions are updated
+
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanAfterDefinitionUpdate|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
+|
+
+#### Scan archives (on-demand antivirus scans only)
+
+Specifies whether to scan archives during on-demand antivirus scans.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanArchives|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+
+#### Degree of parallelism for on-demand scans
+
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**Data type**|Integer|
+|**Possible values**|2 (default). Allowed values are integers between 1 and 64.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+  
 
 #### Exclusion merge policy
 
@@ -465,8 +512,11 @@ The following configuration profile contains entries for all settings described 
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

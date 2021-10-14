@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.date: 06/04/2021
+ms.collection: M365-security-compliance
 ---
 
 # Configure the cloud block timeout period

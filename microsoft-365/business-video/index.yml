@@ -14,7 +14,7 @@ metadata:
   author: twerner #Required; your GitHub user alias, with correct capitalization.
   ms.author: twernermsft #Required; microsoft alias of author; optional team alias.
   ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
 
 
 

@@ -8,8 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -38,10 +41,11 @@ Below is the complete list of templates in Compliance Manager. The links in the 
 To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).
 
 ## Included templates
+
 One or more of these templates will be available based on your licensing agreement. The Data Protection Baseline template is included for all users.
 
 - [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
-- [European Union GDPR](/compliance/regulatory/gdpr) (Microsoft 365, Office 365, Intune)
+- [European Union GDPR](/compliance/regulatory/gdpr)
 - [ISO/IEC 27001:2013](/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Revs. 4 and 5
 
@@ -49,9 +53,11 @@ One or more of these templates will be available based on your licensing agreeme
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
 
 ## Premium templates
+
 These templates may be purchased by your organization.
 
 ### Global
+
 - Guidelines and Functional Requirements for Electronic Records Management Systems (ICA Module 2) (Microsoft 365)
 - ISO 15489-1:2016 (Microsoft 365)
 - ISO 16175-1:2020 (Microsoft 365)
@@ -74,6 +80,7 @@ These templates may be purchased by your organization.
 - [System and Organization Controls (SOC) 2](/compliance/regulatory/offering-soc)
 
 ### Industry
+
 - AICPA/CICA Generally Accepted Privacy Principles (GAPP) (Microsoft 365)
 - ARMA - Implementing the Generally Accepted Record Keeping Principles (GARP) (Microsoft 365)
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa) (Microsoft 365)
@@ -96,6 +103,7 @@ These templates may be purchased by your organization.
 - [Trusted Information Security Assessment Exchange](/compliance/regulatory/offering-tisax-germany)
 
 ### US Government
+
 - Appendix III to OMB Circular No. A-130 - Security of Federal Automated Information Resources
 - [CFR - Code of Federal Regulations Title 21, Part 11, Electronic Records, Electronic Signatures](/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365)
 - Children's Online Privacy Protection Rule (COPPA) (Microsoft 365)
@@ -110,13 +118,13 @@ These templates may be purchased by your organization.
 - e-CFR - Identity Theft Rules (Microsoft 365)
 - Electronic Code of Federal Regulations - Part 748.0 and Appendix A (Microsoft 365)
 - FDIC Privacy Rules (Microsoft 365)
-- [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
+- [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](/compliance/regulatory/offering-ffiec-us) (Microsoft 365)
 - [FedRAMP Moderate](/compliance/regulatory/offering-fedramp) (Microsoft 365)
 - FedRAMP SSP High Baseline (Microsoft 365)
 - Freedom of Information Act (FOIA) (Microsoft 365)
 - FTC Privacy of Consumer Financial Information (Microsoft 365)
 - [Gramm-Leach-Bliley Act, Title V, Subtitle A, Financial Privacy](/compliance/regulatory/offering-GLBA) (Microsoft 365)
-- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365, Intune)
+- [HIPAA/HITECH](/compliance/regulatory/offering-hipaa-hitech) (Microsoft 365)
 - [HITRUST](/compliance/regulatory/offering-hitrust) (Microsoft 365)
 - Homeland Security Presidential Directive 7: Critical Infrastructure Identification, Prioritization, and Protection (Microsoft 365)
 - IRS - Revenue Procedure 98-25 Automated Records (Microsoft 365)
@@ -147,6 +155,7 @@ These templates may be purchased by your organization.
 - US - Protecting and Securing Chemical Facilities From Terrorist Attacks Act (Microsoft 365)
 
 ### US States and Territories
+
 - Alabama - Policy 621: Data Breach Notification - DRAFT (Microsoft 365)
 - Alaska - Chapter 48 - Personal Information Protection Act (Microsoft 365)
 - Arizona - Notification of Breaches in Security Systems (Microsoft 365)
@@ -227,6 +236,7 @@ These templates may be purchased by your organization.
 ### Regional
 
 #### Asia-Pacific Countries
+
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8 (Microsoft 365)
 - Australia - National Archives Act
@@ -291,6 +301,7 @@ These templates may be purchased by your organization.
 - Vietnam - Law on Information Technology (Microsoft 365)
 
 #### Europe, Middle East, and Africa (EMEA)
+
 - Albania - The Law on the Protection of Personal Data No. 9887
 - Austrian Telecommunications Act 2003 (Microsoft 365)
 - Armenia - Law of the Republic of Armenia on the Protection of Personal Data (Microsoft 365)
@@ -366,6 +377,7 @@ These templates may be purchased by your organization.
 - Yemen - Yemen Law of the Right of Access to Information (Microsoft 365)
 
 #### Latin America
+
 - Antigua and Barbuda - Data Protection Act /2013 (Microsoft 365)
 - Bahamas -  Data Protection Act (Microsoft 365)
 - Barbados - Data Protection Bill 2019 (Microsoft 365)
@@ -375,6 +387,7 @@ These templates may be purchased by your organization.
 - Trinidad and Tobago Data Protection (Act 13 of 2011) (Microsoft 365)
 
 #### North America
+
 - Canada - Breach of Security Safeguards Regulations (Microsoft 365)
 - Canada - British Columbia - Information Privacy & Security - FOIPPA (Microsoft 365)
 - [Canada - Office of the Superintendent of Financial Institutions Cyber Security Self-Assessment Guide](/compliance/regulatory/offering-osfi-canada) (Microsoft 365)
@@ -387,6 +400,7 @@ These templates may be purchased by your organization.
 - Mexico - Federal Law on Protection of Personal Data Held by Private Parties (Microsoft 365)
 
 #### South America
+
 - [Argentina - Personal Data Protection Act 25.326](/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365)
 - Brazil - Consumer Protection Code Law No. 8078 (Office 365)
 - Brazil - General Data Protection Law (LGPD) (Microsoft 365)

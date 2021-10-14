@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords: 
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5

@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.date: 05/05/2021
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365

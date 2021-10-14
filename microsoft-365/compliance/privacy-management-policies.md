@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - M365-privacy-management
@@ -59,7 +59,7 @@ There are two paths into creating privacy management policies. The first option 
 
 To get started right away with a policy, select one of the three pre-set policy types. To review details about any of them, you can select View settings to see the specific properties that make up the policy, including data types, data locations, and the conditions that trigger policy matches.
 
-When creating a policy directly from a template, many settings will be chosen for you automatically. This includes turning on the policy by default. If you want to preview the policy in action before fully activating it, find it in your list after creation, edit the policy, and toggle it to test mode. For more information, see [Test your policy](#test-your-policy).
+When creating a policy directly from a template, many settings will be chosen for you automatically. It will start in test mode, and then can be toggled on to full active status. For more information, see [Test your policy](#test-your-policy).
 
 ### Create custom policy
 

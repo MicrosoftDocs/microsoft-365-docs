@@ -2,15 +2,13 @@
 title: What's new in Microsoft Defender for Endpoint on Linux
 description: List of major changes for Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, whatsnew, release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,6 +21,15 @@ ms.technology: mde
 # What's new in Microsoft Defender for Endpoint on Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## 101.45.00 (30.121072.14500.0)
+
+- Added new switches to the command-line tool:
+  - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
+  - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
+  - Control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Changing the product log level now requires elevation
+- Bug fixes
 
 ## 101.39.98 (30.121062.13998.0)
 

@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -83,7 +83,7 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
-1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
 2. Use any of these [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell)
     
