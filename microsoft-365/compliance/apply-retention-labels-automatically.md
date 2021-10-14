@@ -111,15 +111,11 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 2. Enter a name and description for this auto-labeling policy, and then select **Next**.
 
-<<<<<<< HEAD
 3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
 
 4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the wizard with this option.
 
 5. Depending on your selected scope:
-=======
-2. Follow the prompts for the Create auto-labeling configuration.
->>>>>>> 522c36674f7fb952f7206423c49f5ab2024ab2b8
     
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
     
