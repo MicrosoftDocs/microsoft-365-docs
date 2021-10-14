@@ -150,7 +150,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 > [!NOTE]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the Azure Information Protection client might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
 
-You can also use the following registry value to quickly toggle between using the Azure Information Protection plugin and built-in sensitivity labels in Office apps:
+You can also use the following registry value to quickly toggle between using the Azure Information Protection plug-in and built-in sensitivity labels in Office apps:
 
 |**Registry key**|**Type**|**Value** |
 |:-------|:------:|--------:|
