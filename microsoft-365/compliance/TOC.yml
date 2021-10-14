@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
+        - name: Detect channel signals with communication compliance
+          href: communication-compliance-channels.md
+        - name: Create and manage communication compliance policies
+          href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
+        - name: Learn about communication compliance reports & audits
+          href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
@@ -343,16 +347,6 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: Data Loss Prevention policy tips reference
               href: dlp-policy-tips-reference.md
-        - name: Troubleshoot DLP
-          items:
-            - name: Troubleshooting DLP policy tips
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-policy-tips.md
-            - name: Changes to a DLP policy don't take effect in Outlook 2013 in Office 365
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-not-work.md
-            - name: DLP policy tips in Compliance center don't work in OWA/Outlook
-              href: /office365/troubleshoot/data-loss-prevention/dlp-tips-not-work.md
-            - name: How to troubleshoot DLP policy tips in Exchange Online Protection in Office 365
-              href: /office365/troubleshoot/data-loss-prevention/data-loss-prevention-tips.md
 - name: Manage information governance
   items: 
     - name: Govern your data
@@ -629,6 +623,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: Get started
           href: app-governance-detect-remediate-get-started.md
+        - name: Monitor and respond to apps with unusual data usage
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: Investigate anomaly detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
