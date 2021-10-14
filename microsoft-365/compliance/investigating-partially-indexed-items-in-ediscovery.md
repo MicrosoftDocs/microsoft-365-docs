@@ -24,7 +24,7 @@ description: "Learn how to manage partially indexed items (also called unindexed
 
 An eDiscovery search that you run from the Microsoft 365 compliance center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
-- Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items.
+- Email messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
 
 - Too many files attached to an email message.
 
