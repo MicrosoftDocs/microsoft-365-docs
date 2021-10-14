@@ -72,21 +72,25 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Log in first.
   
-2. On the home page, select **Domain Names**. 
+1. On the landing page, select **Domain Names**. 
   
-3. Under **All My Domain Names**, select the domain you want to verify.
- 
-1. Select the three dots under **Actions**, and select **Manage** from the drop-down list.
- 
-1. Select Advanced Tools, and next to Advanced DNS Records, select MANAGE.
-
-4. On the **Domain Names** page, under **Text (TXT Records)**, click **Edit TXT Records**, and then select the values from the following table. 
+1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
+  
+1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
     
-    |**Host**|**TTL**|**Text**|
-    |:-----|:-----|:----|
-    |@  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |
+    (You might have to scroll down.)
   
-5. Select **Continue**.
+1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
+
+1. Under **Type**, select **TXT** from the drop-down list.
+
+1. Select, or copy and paste, the values from the following table. 
+    
+    |**Refers**|**TXT value**|**TTL**|
+    |:-----|:-----|:----|
+    |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |1 Hour  <br/> |
+  
+5. Select **ADD**.
   
 6. Wait a few minutes before you verify your new TXT record, so that the record you just created can update across the Internet.
     
@@ -128,8 +132,6 @@ To verify the record in Microsoft 365:
 1. Select **ADD**.
   
 1. If there are any other MX records listed in the **MX Records** section, select the check box next to the record under **Delete**, and select **Save**. 
-  
-1. On the confirmation screen, select **Save changes**. 
 
 ## Add the CNAME record required for Microsoft
 
@@ -204,14 +206,12 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. Select, or copy and paste, the values from the following table. 
     
-    (Choose the **Service** and **Protocol** values from the drop-down lists.) 
-    
     | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    | SRV |_sip  <br/> |_tls  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
-    | SRV |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+    | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
+    | SRV |_sipfederationtls  <br/> |TCP <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
   
-6. Select **Add**.
+6. Select **ADD**.
   
 7. To add the other SRV record:
     
@@ -243,9 +243,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1 Hour  <br/> |
     | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
   
-1. Select **Add**.
+1. Select **ADD**.
   
-1. Using the preceding three steps and the values from the second row in the table, add the other CNAME record.
+1. Using the preceding steps and the values from the second row in the table, add the other CNAME record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -277,7 +277,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     | CNAME | Other Host | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
     | CNAME | Other Host |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
   
-1. Select **Add**.
+1. Select **ADD**.
   
 1. Using the preceding steps and the values from the second row in the table, add the other CNAME record.
     
