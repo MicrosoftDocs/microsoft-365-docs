@@ -153,7 +153,7 @@ Alternatively, the following registry value can be used to quickly toggle betwee
 |:-------|:------:|--------:|
 |HKCU\Software\Microsoft\Office\16.0\Common\Security\Labels\UseOfficeForLabelling  |REG_DWORD  |1  |
 
-Setting this value to 1 enables the built-in sensitivity labeling options in Office, setting it to 0 enables the AIP plugin if it is installed. 
+Setting this value to **1** enables the built-in sensitivity labeling options in Office; setting it to **0** enables the AIP plug-in if it is installed. 
 
 > [!NOTE]
 > If you use the Group Policy setting **Use the Sensitivity feature in Office to apply and view sensitivity labels** and set this to **1**, there are some situations where the Azure Information Protection client might still load in Office apps. Blocking the add-in from loading in each app prevents this happening.
