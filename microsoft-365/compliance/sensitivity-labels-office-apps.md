@@ -147,7 +147,7 @@ For Microsoft Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016, specify 
 
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 
-Alternatively, the following registry value can be used to quickly toggle between using the Azure Information Protection plugin and built-in sensitivity labels in Office apps:
+Alternatively, the following registry value can be used to quickly toggle between using the Azure Information Protection plug-in and built-in sensitivity labels in Office apps:
 
 |**Registry key**|**Type**|**Value** |
 |:-------|:------:|--------:|
