@@ -4634,6 +4634,36 @@
       "source_path": "microsoft-365/compliance/privacy-management.md",
       "redirect_url": "/privacy/solutions/privacymanagement/privacy-management.md",
       "redirect_document_id": false
-    }        
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-setup.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-setup.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-permissions.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-permissions.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-settings.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-settings.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-data-profile.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-data-profile.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-policies.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-policies.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-subject-rights-requests.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-subject-rights-requests.md",
+      "redirect_document_id": false
+    }                                                  
   ]
 }
