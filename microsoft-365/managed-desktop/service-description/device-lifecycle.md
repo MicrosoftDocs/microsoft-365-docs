@@ -60,7 +60,7 @@ This table shows example dates for theoretical *devices*:
 
 The product lifecycle starts when a manufacturer publicly releases the product:
 
-:::image type="content" alt-text="Lifecycle timeline showing release and evaluation period." source="../../media/non-dark3-edits.png" lightbox="../../media/non-dark3-edits.png:::
+:::image type="content" alt-text="Lifecycle timeline showing release and evaluation period." source="../../media/non-dark3-edits.png" lightbox="../../media/non-dark3-edits.png":::
 
 During this stage, the Microsoft Managed Desktop engineering team does their evaluation and certification of a product. The team evaluates things like reliability and performance with Windows, compliance with a hardware baseline, market sentiment, and inventory and channel readiness, among other things. This process typically takes approximately six weeks.
   
