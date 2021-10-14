@@ -87,7 +87,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
+For SharePoint and OneDrive, can be blocked as a tenant setting in the Microsoft 365 compliance center > **Records management settings** > **Label behavior**
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
