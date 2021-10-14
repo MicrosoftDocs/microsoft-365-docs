@@ -26,6 +26,7 @@ ms.collection: M365-security-compliance
 - Microsoft Defender Antivirus
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
 
