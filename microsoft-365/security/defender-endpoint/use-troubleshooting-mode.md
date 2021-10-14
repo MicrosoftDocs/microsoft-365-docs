@@ -1,6 +1,6 @@
 ---
-title: Turn on troubleshooting mode for Microsoft Defender for Endpoint
-description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
+title: Use troubleshooting mode for Microsoft Defender for Endpoint
+description: Use the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
 keywords: antivirus, troubleshoot, troubleshooting mode, tamper protection, compatibility
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Turn on troubleshooting mode
+# Use the troubleshooting mode
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,70 +31,7 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
-## What do you need to know before you begin?
-
-- Requirements:
-
-    - For troubleshooting mode to be applied, Microsoft Defender Endpoint must be tenant-enrolled and active on the device.
-
-    - The device must be actively running Microsoft Defender Antivirus.
-
-- Use troubleshooting mode to disable/change the tamper protection setting to perform:
-
-    - Microsoft Defender Antivirus functional troubleshooting /application compatibility (false positive application blocks).  
-
-    - Microsoft Defender Antivirus performance troubleshooting by using the troubleshooting mode and manipulating tamper protection and other antivirus settings.
-
-- Local admins, with appropriate permissions, can change configurations on individual endpoints that are normally locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
-
-    - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
-
-    - Local admins will be able to configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
-
-- Admins with “Manage Security settings” permissions will have access to turn on troubleshooting mode.
-
-- Microsoft Defender for Endpoint collects logs and investigation data throughout the troubleshooting process.
-
-    - Snapshot of `MpPreference` will be taken before troubleshooting mode begins.
-
-    - Second snapshot will be taken just before troubleshooting mode expires.
-
-    - Operational logs from during troubleshooting mode will also be collected.
-
-    - All the above logs and snapshots will be collected and will be available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them. 
-
-- Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations will become read-only again and will revert back to how it was before setting the troubleshooting mode on.
-
-- It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
-
-- Notification will be sent to the end user when the troubleshooting mode begins and when the troubleshooting mode ends. A warning will also be sent notifying that it will end soon.
-
-- The beginning and ending of troubleshooting mode will be identified in the **Device Timeline** on the device page.
-
-- You can query all troubleshooting mode events in Advanced Hunting.
-
-- Devices will have a troubleshooting mode active tag in Device Inventory.
-
-> [!NOTE]
-> Policy management changes will be applied to the machine when it is actively in Troubleshooting mode. However, the changes will not take effect until the Troubleshooting mode expires. Additionally, Microsoft Defender Antivirus Platform updates will not be applied during Troubleshooting mode. The updates will be applied once Troubleshooting mode ends with a Windows update.
-
-## Enable the troubleshooting mode
-
-1. In Microsoft 365 Defender, go to the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**.
-
-[Need updated screenshot]
-
-2. Confirm you want to turn on troubleshooting mode for the device. 
-
-[Need updated screenshot]
- 
-3. The device page shows the device is now in troubleshooting mode.  
-
-[Need updated screenshot]
-
-## Use the troubleshooting mode
-
-### Scenario 1: Unable to install application
+## Scenario 1: Unable to install application
 
 If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
 
@@ -113,7 +50,7 @@ If you want to install an application but receive an error message that Microsof
 
 7. Try installing the application.
 
-### Scenario 2: High CPU usage due to Windows Defender (MsMpEng.exe)
+## Scenario 2: High CPU usage due to Windows Defender (MsMpEng.exe)
 
 Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
@@ -137,7 +74,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [here](https://docs.microsoft.com/powershell/module/defender/set-mppreference). 
 
-### Scenario 3: Application taking longer to perform an action
+## Scenario 3: Application taking longer to perform an action
 
 When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, follow the steps below. 
 
@@ -153,7 +90,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 5. After disabling RTP, check to see if the application is slow. 
 
-### Scenario 4: Potentially unwanted app (PUA) is blocked by Windows Defender
+## Scenario 4: Potentially unwanted app (PUA) is blocked by Windows Defender
 
 When a legitimate third-party application (for example, FileZilla) is detected as a potentially unwanted app, and blocked from running, turn off PUA blocks so that the application can run properly. 
 
@@ -171,7 +108,7 @@ When a legitimate third-party application (for example, FileZilla) is detected a
 
 For more information, see [Block potentially unwanted applications with Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
 
-### Scenario 5: Microsoft Office plugin blocked by Attack Surface Reduction
+## Scenario 5: Microsoft Office plugin blocked by Attack Surface Reduction
 
 Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
@@ -185,7 +122,7 @@ Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work p
 
 For more information, see [Overview of attack surface reduction](overview-attack-surface-reduction.md). 
 
-### Scenario 6: Domain blocked by Network Protection
+## Scenario 6: Domain blocked by Network Protection
 
 Network Protection is blocking Microsoft domain, preventing users from accessing it. 
 
@@ -199,3 +136,12 @@ Network Protection is blocking Microsoft domain, preventing users from accessing
 
 For more information, see [Use network protection to help prevent connections to bad sites](network-protection.md). 
 
+## Related topics
+
+- [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
+- [Set-MpPreference](https://docs.microsoft.com/powershell/module/defender/set-mppreference)
+- [Protect your network](network-protection.md)
+- [Overview of attack surface reduction](overview-attack-surface-reduction.md)
+- [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [Get an overview of Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/)
+- [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
