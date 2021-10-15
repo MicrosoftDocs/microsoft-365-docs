@@ -75,11 +75,15 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
+
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **TXT** from the drop-down list.
@@ -114,11 +118,15 @@ To verify the record in Microsoft 365:
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
+
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **MX** from the drop-down list.
@@ -140,11 +148,15 @@ To verify the record in Microsoft 365:
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
-  
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+ 
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+ 
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **CNAME** from the drop-down list.
@@ -167,11 +179,15 @@ To verify the record in Microsoft 365:
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
+
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **TXT** from the drop-down list.
@@ -195,11 +211,15 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
+
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **SRV** from the drop-down list.
@@ -227,11 +247,15 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
-  
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+ 
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+ 
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **CNAME** from the drop-down list.
@@ -261,11 +285,15 @@ This service helps you secure and remotely manage mobile devices that connect to
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
-  
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE** > **Continue**.
+ 
+    :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+ 
+1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    (You might have to scroll down.)
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
+    :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
 1. Under **Type**, select **CNAME** from the drop-down list.
