@@ -11,7 +11,7 @@ f1_keywords:
 - 'O365E_DevicesManageLM'
 - 'O365E_DevicesManageKM'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management 
 - M365-identity-device-management

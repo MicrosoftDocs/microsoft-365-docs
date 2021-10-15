@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -38,14 +38,14 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Communication compliance|ComplianceSuperVisionExchange|
 | Content explorer|LabelContentExplorer|
 | Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint|
+| Defender for Endpoint|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
 | Dynamics 365|CRM|
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
 | Exchange Online|ExchangeAdmin, ExchangeItem, ExchangeItemAggregated |
 | Forms|MicrosoftForms|
 | Information barriers|InformationBarrierPolicyApplication|
-| Microsoft 365 Defender|MDATPAudit, AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation|
+| Microsoft 365 Defender|AirInvestigation, AirManualInvestigation, AirAdminActionInvestigation, MS365DCustomDetection|
 | Microsoft Teams|MicrosoftTeams|
 | MyAnalytics|MyAnalyticsSettings|
 | OneDrive for Business|OneDrive|
@@ -122,8 +122,9 @@ Be sure to read the following items before you start searching the audit log.
 
 - If you want to programmatically download data from the audit log, we recommend that you use the Office 365 Management Activity API instead of using a PowerShell script. The Office 365 Management Activity API is a REST web service that you can use to develop operations, security, and compliance monitoring solutions for your organization. For more information, see [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Microsoft 365.
+- Azure Active Directory (Azure AD) is the directory service for Microsoft 365. The unified audit log contains user, group, application, domain, and directory activities performed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
+- It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Microsoft 365.
 
   |Microsoft 365 service or feature|30 minutes|24 hours|
   |---|:---:|:---:|
@@ -146,8 +147,6 @@ Be sure to read the following items before you start searching the audit log.
   |Yammer||![Check mark.](../media/checkmark.png)|
   |Microsoft Forms|![Check mark.](../media/checkmark.png)||
   ||||
-
-- Azure Active Directory (Azure AD) is the directory service for Microsoft 365. The unified audit log contains user, group, application, domain, and directory activities performed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> or in the Azure management portal. For a complete list of Azure AD events, see [Azure Active Directory Audit Report Events](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - Audit logging for Power BI isn't enabled by default. To search for Power BI activities in the audit log, you have to enable auditing in the Power BI admin portal. For instructions, see the "Audit logs" section in [Power BI admin portal](/power-bi/service-admin-portal#audit-logs).
 
@@ -414,13 +413,12 @@ Click one of the following links to go to a specific table.
         [Communication compliance activities](#communication-compliance-activities)
     :::column-end:::
     :::column:::
-        [Exchange admin activities](#exchange-admin-audit-log)
+        [Report activities](#report-activities)
     :::column-end:::
     :::column:::
-        
+        [Exchange admin activities](#exchange-admin-audit-log)
     :::column-end:::
 :::row-end:::
-
 
 ### File and page activities
 
@@ -821,8 +819,13 @@ Workplace Analytics provides insight into how groups collaborate across your org
 |Updated data access setting|UpdatedDataAccessSetting|Admin updated data access settings.|
 |Updated privacy setting|UpdatedPrivacySetting|Admin updated privacy settings; for example,  minimum group size.|
 |Uploaded organization data|UploadedOrgData|Admin uploaded organizational data file.|
+|User logged in<sup>*</sup>| UserLoggedIn |A user signed in to their Microsoft 365 user account.|
+|User logged off<sup>*</sup>| UserLoggedOff |A user signed out of their Microsoft 365 user account.
 |Viewed Explore|ViewedExplore|Analyst viewed visualizations in one or more Explore page tabs.|
 ||||
+
+> [!NOTE]
+> <sup>*</sup>These are Azure Active Directory sign in and sign off activities. These activities are logged even if you don't have Workplace Analytics turned on in your organization. For more information about user sign in activities, see [Sign-in logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-sign-ins).
 
 ### Microsoft Teams activities
 
@@ -1018,7 +1021,7 @@ The following table lists the activities in Briefing email that are logged in th
 - [Configure Briefing email](/Briefing/be-admin)
 
 |**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
+|:----|:-----|:-----|
 |Updated organization privacy settings|UpdatedOrganizationBriefingSettings|Admin updates the organization privacy settings for Briefing email. |
 |Updated user privacy settings|UpdatedUserBriefingSettings|Admin updates the user privacy settings for Briefing email.
 ||||
@@ -1065,6 +1068,15 @@ The following table lists communication compliance activities that are logged in
 |Policy update|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|A communication compliance administrator has performed a policy update.|
 |Policy match|SupervisionRuleMatch|A user has sent a message that matches a policy's condition.|
 |Tag applied to message(s)|SupervisoryReviewTag|Tags are applied to messages or messages are resolved.|
+||||
+
+### Report activities
+
+The following table lists the activities for usage reports that are logged in the Microsoft 365 audit log.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Updated usage report privacy settings|UpdateUsageReportsPrivacySetting|Admin updated privacy settings for usage reports. |
 ||||
 
 ### Exchange admin audit log

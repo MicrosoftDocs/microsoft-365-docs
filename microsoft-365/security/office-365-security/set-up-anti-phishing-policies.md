@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.date: 
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection: 
   - M365-security-compliance
@@ -165,6 +165,9 @@ Impersonation is where the sender or the sender's email domain in a message look
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
 - An example impersonation of the user michelle@contoso.com is michele@contoso.com.
+
+> [!NOTE]
+> Impersonation protection looks for domains that are similar. For example, if your domain is contoso.com, we check for different top-level domains (.com, .biz, etc.) as impersonation attempts, but also domains that are even somewhat similar. For example, contosososo.com or contoabcdef.com might be seen as impersonation attempts of contoso.com.
 
 An impersonated domain might otherwise be considered legitimate (registered domain, configured email authentication records, etc.), except its intent is to deceive recipients.
 
