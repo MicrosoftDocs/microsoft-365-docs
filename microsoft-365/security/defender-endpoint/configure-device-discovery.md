@@ -60,7 +60,7 @@ You can configure where device discovery can be performed by specifying which ne
 A list of networks where device discovery can be performed is shown in the **Monitored networks** page.
 
 > [!NOTE]
-> Only top 50 networks (according to the number of associated devices) will be available in the network list.
+> The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded device. 
 
 The list of monitored networks is sorted based upon the total number of devices seen on the network in the last 7 days.
 
