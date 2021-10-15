@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/15/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,6 +26,8 @@ ms.collection:
 Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business.
 
 ## The setup and configuration process at a glance
+
+:::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
 | Step  | Article | Description  |
 |---------|---------|--------|
