@@ -95,7 +95,7 @@ CloudAppEvents
 ```
 The line chart below clearly highlights time periods with more activity involving `invoice.doc`: 
 
-![Image of advanced hunting query results displayed as a line chart.](../../media/advanced-hunting-line-chart.jpg)
+![Image of advanced hunting query results displayed as a line chart.](../../media/line-chart-a.png)
 *Line chart showing the number of events involving a file over time*
 
 
