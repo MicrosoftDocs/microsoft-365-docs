@@ -31,7 +31,7 @@ summary: |
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
   
-  This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+  This topic provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
   
   For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.yml).
   
@@ -147,7 +147,7 @@ sections:
           
             If a sending domain has no A-record and no MX record in DNS, the service will route the message through its higher risk delivery pool regardless of whether or not the content of the message is spam. For more information about the higher risk delivery pool, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
           
-          - **Outbound mail eserver should have a reverse DNS (PTR) entry.**
+          - **Outbound email server should have a reverse DNS (PTR) entry.**
           
             For example, if the email source IP address is 192.0.43.10, the reverse DNS entry would be `43-10.any.icann.org`.`
           

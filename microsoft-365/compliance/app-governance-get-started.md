@@ -96,7 +96,6 @@ One of the following administrator roles is required to see app governance pages
 - Company Administrator
 - Compliance Administrator
 - Compliance Data Administrator
-- Compliance Reader (read-only)
 - Global Reader
 - Security Administrator
 - Security Operator
