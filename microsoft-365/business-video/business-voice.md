@@ -55,4 +55,4 @@ Business Voice goes everywhere you go because it is part of Microsoft Teams. So 
 
 To make a phone call, open the Teams app on your computer, tablet or phone and choose Calls. You'll see your assigned phone number and the dial pad that you can use to call any number. Or select any of your contacts from Outlook or your phone and call them directly.
 
-You a call comes in, you'll be prompted to accept or ignore the call, similar to the experience on any normal phone. If needed, forward calls or ring multiple devices to ensure you don't miss any important calls from your customers.
+When a call comes in, you'll be prompted to accept or ignore the call, similar to the experience on any normal phone. If needed, forward calls or ring multiple devices to ensure you don't miss any important calls from your customers.
