@@ -120,6 +120,9 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Turn on PUA protection|`mdatp threat policy set --type potentially_unwanted_application --action block`|
 |Configuration|Turn off PUA protection|`mdatp threat policy set --type potentially_unwanted_application --action off`|
 |Configuration|Turn on audit mode for PUA protection|`mdatp threat policy set --type potentially_unwanted_application --action audit`|
+|Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
@@ -137,37 +140,6 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Quarantine management|Restore a file from the quarantine|`mdatp threat quarantine restore --id [threat-id]`|
 |Endpoint Detection and Response|Set early preview (unused)|`mdatp edr early-preview [enable|disable]`|
 |Endpoint Detection and Response|Set group-id|`mdatp edr group-ids --group-id [group-id]`|
-|Endpoint Detection and Response|Set/Remove tag, only `GROUP` supported|`mdatp edr tag set --name GROUP --value [tag]`|
-|Endpoint Detection and Response|list exclusions (root)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|Endpoint Detection and Response|Set / remove tag, only `GROUP` supported|`mdatp edr tag set --name GROUP --value [tag]`|
+|Endpoint Detection and Response|List exclusions (root)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
-
-## Microsoft Defender for Endpoint portal information
-
-In the Defender for Endpoint portal, you'll see two categories of information:
-
-- Antivirus alerts, including:
-  - Severity
-  - Scan type
-  - Device information (hostname, device identifier, tenant identifier, app version, and OS type)
-  - File information (name, path, size, and hash)
-  - Threat information (name, type, and state)
-- Device information, including:
-  - Device identifier
-  - Tenant identifier
-  - App version
-  - Hostname
-  - OS type
-  - OS version
-  - Computer model
-  - Processor architecture
-  - Whether the device is a virtual machine
-
-### Known issues
-
-- You might see "No sensor data, impaired communications" in the machine information page of the Microsoft 365 Defender portal, even though the product is working as expected. We are working on addressing this issue.
-- Logged on users do not appear in the Microsoft 365 Defender portal.
-- In SUSE distributions, if the installation of *libatomic1* fails, you should validate that your OS is registered:
-
-   ```bash
-   sudo SUSEConnect --status-text
-   ```
