@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/15/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -27,26 +27,43 @@ Microsoft Defender for Business is designed with the busy small and midsized bus
 
 ## Are you already using Microsoft Endpoint Manager?
 
-If you are already using Microsoft Endpoint Manager, your onboarding process can be streamlined. And if you are not already using Microsoft Endpoint Manager, you can choose from several options. The following table summarizes the various onboarding methods for Microsoft Defender for Business:
+- If you are already using Microsoft Endpoint Manager, your onboarding process can be streamlined. For example, you can choose between automatic or manual onboarding. 
+- If you are not already using Microsoft Endpoint Manager, you can choose from several options. Your options include using Microsoft Endpoint Manager, a local script, and more. 
+
+## Onboard devices in the Microsoft 365 Defender portal
+
+If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md).
+
+The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
+
+Follow these steps to onboard devices:
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Onboard devices** step of the setup and configuration process, choose an onboarding method.
+
+2. Depending on whether you are already using Microsoft Endpoint Manager, take one of the following steps:
+
+   - If you are using Microsoft Endpoint Manager, choose between automatic onboarding (recommended), or manual onboarding. Then choose **Continue**.
+
+   - Review the list of onboarding options, and then download the package for that option. Follow the prompts for the package.
+
+3. Proceed to configure your security settings.
+
+## Onboarding options
+
+The following table summarizes the onboarding methods for Microsoft Defender for Business:
 
 <br/><br/>
 
 | Method | Description |
 |:---|:---|
-| **Microsoft Endpoint Manager** | Description and link |
-| **Local script** | (for up to 10 devices). |
+| **Microsoft Endpoint Manager** | Microsoft Endpoint Manager is an integrated solution that many organizations use for managing and monitoring devices. [Learn more about Microsoft Endpoint Manager](/mem/endpoint-manager-overview). <br/><br/>You can use Microsoft Endpoint Manager to onboard devices, and then manage your security settings and devices in the Microsoft 365 Defender portal. This option enables you to onboard devices efficiently, and then take advantage of the streamlined configuration process in Microsoft Defender for Business.  |
+| **Local script** | If you have 10 or fewer Windows devices to onboard, you can use a local script. You download the script in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), extract it on a device, and then run the script using Command Prompt. If you copied the script to the Desktop folder, you would type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`. <br/><br/>To learn more about this method, see [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md).|
 | **Group Policy** | description and link | 
 | **Virtual desktop infrastructure (VDI) onboarding using a script** |  |
 | **System Center Configuration Manager** | (for on-premises environments). |
 | **Mobile Device Management** | (in Microsoft Intune) |
-
-## Onboarding devices in the Microsoft 365 Defender portal
-
-If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md).
-
-If you are not already using Microsoft Endpoint Manager, you'll see a list of onboarding options.
-
-
 
 
 ## What if I want to offboard a device?
