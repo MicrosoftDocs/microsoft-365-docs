@@ -94,6 +94,9 @@ See [Sensitive information type entity definitions](sensitive-information-type-e
 This procedure shows you how to create a file in XML format called a rule package (with Unicode encoding), and then upload it into Microsoft 365 using Compliance center PowerShell cmdlets.
 
 > [!NOTE]
+> If the SIT that you map to can detect multi-word corroborative evidence, the secondary elements you define in a manually created rule package can be mapped to the SIT. For example, the name `John Smith` would not match as a secondary element because we'd compare `John` and `Smith` found in the content separately to the term `John Smith` uploaded in one of the fields, if that corroborative evidence field wasn't mapped to a SIT that can detect that pattern.
+
+> [!NOTE]
 > There’s a limit of 10 rule packages in a Microsoft 365 tenant. Since a rule package can contain an arbitrary number of sensitive information types, you can avoid creating a new rule package each time you want to define a new sensitive information type using this method, instead export an existing rule package and add your sensitive information types to the XML before re- uploading it. 
 
 
