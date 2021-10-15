@@ -2,7 +2,6 @@
 title: Evaluate attack surface reduction rules
 description: See how attack surface reduction would block and prevent attacks with the custom demo tool.
 keywords: Attack surface reduction, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, evaluate, test, demo
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library

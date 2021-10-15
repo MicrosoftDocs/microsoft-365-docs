@@ -2,7 +2,6 @@
 title: Test how Microsoft Defender for Endpoint features work in audit mode
 description: Audit mode helps you see how Microsoft Defender for Endpoint would protect your devices if it was enabled.
 keywords: exploit guard, audit, auditing, mode, enabled, disabled, test, demo, evaluate, lab
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.topic: article
 ms.technology: mde
-ms.date: 09/22/2021
+ms.date: 10/14/2021
 ms.collection: M365-security-compliance
 ---
 

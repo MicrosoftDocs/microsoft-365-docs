@@ -3,7 +3,6 @@ metadata:
   title: Attack surface reduction frequently asked questions (FAQ)
   description: Find answers to frequently asked questions about Microsoft Defender for Endpoint's attack surface reduction rules.
   keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-  search.product: eADQiWindows 10XVcnh
   ms.pagetype: security
   ms.prod: m365-security
   ms.mktglfcycl: manage
@@ -40,7 +39,7 @@ sections:
       - question: |
           Do I need to have an enterprise license to run ASR rules?
         answer: |
-          The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
+          The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10 or Windows 11. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
 
           To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
@@ -170,7 +169,7 @@ sections:
       - question: |
           I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
         answer: |
-          Try opening the indexing options directly from Windows 10.
+          Try opening the indexing options directly from Windows 10 or Windows 11.
 
           1. Select the **Search** icon on the Windows taskbar.
 
