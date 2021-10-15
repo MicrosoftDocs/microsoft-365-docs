@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/14/2021
+ms.date: 10/15/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -138,6 +138,12 @@ No known issues
 No known issues
 <br/>
 </details>
+<br/><br/>
+
+> [!TIP]
+> If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, and then select the **Microsoft Defender Processes** worksheet.
+ 
+<br/><br/>
 
 ### Previous version updates: Technical upgrade support only
 
