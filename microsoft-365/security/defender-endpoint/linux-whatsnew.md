@@ -24,7 +24,10 @@ ms.technology: mde
 
 ## 101.45.13 
 
-- Starting with this version, we are bringing Microsoft Defender for Endpoint support to RHEL6-based distros. Support includes RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+- Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros : 
+  -  RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+  - Amazon Linux 2
+  - Fedora 33 or higher
 ## 101.45.00 (30.121072.14500.0)
 
 - Added new switches to the command-line tool:

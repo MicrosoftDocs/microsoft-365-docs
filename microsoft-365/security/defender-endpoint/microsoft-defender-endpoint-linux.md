@@ -76,6 +76,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Amazon Linux 2
+  - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).

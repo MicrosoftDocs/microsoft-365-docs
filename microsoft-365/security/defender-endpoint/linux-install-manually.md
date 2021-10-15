@@ -60,7 +60,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-### RHEL and variants (CentOS and Oracle Linux)
+### RHEL and variants (CentOS, Oracle Linux and Amazon Linux 2)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -78,14 +78,12 @@ In order to preview new features and provide early feedback, it is recommended t
 
     |Distro & version|Package|
     |---|---|
-    |For RHEL 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
-    |For RHEL 7.2-7.9|<https://packages.microsoft.com/config/rhel/7/prod.repo>|
-    | For RHEL 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/prod.repo>
+    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
+    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
+    | For RHEL/Centos/Oracle 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
-    > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with "rhel".
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
