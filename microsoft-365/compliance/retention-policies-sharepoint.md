@@ -70,7 +70,7 @@ Users also see an error message if they try to delete a labeled item in any of t
 
 - The records management setting that allows users to delete labeled items is turned off.
     
-    To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Label behavior**.  There are separate settings for SharePoint and OneDrive.
+    To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Label behavior**. There are separate settings for SharePoint and OneDrive.
 
 - The retention label marks items as a record and it's [locked](record-versioning.md).
     
