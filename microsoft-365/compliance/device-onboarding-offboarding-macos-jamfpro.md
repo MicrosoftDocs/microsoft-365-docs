@@ -57,7 +57,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
-1. Create a JAMF Pro configuration file using the *DeviceComplianceOnboarding.plist* file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP onboarding for macOS`
     - Description: `MDATP EDR onboarding for macOS`
     - Category: `none`
@@ -67,7 +67,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 2. In the JAMF Pro console > **Application & Custom settings**, choose **upload** and then **add**. Use this value:
     - Preference Domain: `com.microsoft.wdav.atp`
 
-3. Choose **upload** and select the onboarding file.
+3. Choose **upload** and select the onboarding file **DeviceComplianceOnboarding.plist**.
 
 4. Choose the **scope** tab.
 
@@ -84,7 +84,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 
 1. Download the schema.json file HENRY TO PROVIDE LINK
 
-1. Create a JAMF Pro configuration file using the *DeviceComplianceOnboarding.plist* file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
     - Description: leave this blank
     - Category: `none`
