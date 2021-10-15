@@ -22,6 +22,10 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+## 101.45.13 (30.121082.14513.0)
+
+- Bug fixes
+
 ## 101.45.00 (30.121072.14500.0)
 
 - Added new switches to the command-line tool:
