@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 09/30/2021
+ms.date: 10/15/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,7 +25,6 @@ ms.collection:
 
 Microsoft Defender for Business is a security solution designed to help protect the devices and data your business uses. You can use Microsoft Defender for Business to configure threat protection capabilities, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
 
-
 This guide is intended to:
 
 - Provide you with an overview of Microsoft Defender for Business so you know what’s included and how it works.
@@ -33,6 +32,8 @@ This guide is intended to:
 - Help you get started using your threat protection solution.
 
 ## What's included in Microsoft Defender for Business?
+
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
 The following table summarizes the features and capabilities available in Microsoft Defender for Business and includes links to learn more.<br/><br/>
 
