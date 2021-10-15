@@ -31,7 +31,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-The link to incident feature lets you select advanced hunting query results to add to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities so you can create a richer timeline or context of events regarding an incident. 
+The link to incident feature lets you add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities so you can create a richer timeline or context of events regarding an incident. 
 
 ## Link results to new or existing incidents
 
@@ -41,7 +41,7 @@ The link to incident feature lets you select advanced hunting query results to a
 2. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
 
     ![Image showing link to incident button](../../media/link-to-incident-1b.png)
-3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group the selected records to a new incident:
+3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group them to a new incident:
 
  
     ![Image showing event details showing create new incident](../../media/link-to-incident-3-create-new.png)	
@@ -56,7 +56,7 @@ The link to incident feature lets you select advanced hunting query results to a
       - Description - Give a helpful description for the grouped alerts.
       - Recommended actions - Provide remediation actions.
 
-5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, the Sender is the impacted entity. There are four different senders, therefore four alerts are created and linked to the chosen incident. 
+5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, we used a query to find events related to a possible email exfiltration incident, therefore the Sender is the impacted entity. If there are four different senders, for instance, four alerts are created and linked to the chosen incident. 
      ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
 6. Select **Next**.
 7. Review the details you have provided in the Summary section.
