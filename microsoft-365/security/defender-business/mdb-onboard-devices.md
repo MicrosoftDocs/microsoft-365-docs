@@ -44,15 +44,15 @@ Follow these steps to onboard devices:
 
 2. Depending on whether you are already using Microsoft Endpoint Manager, take one of the following steps:
 
-   - If you are using Microsoft Endpoint Manager, choose between automatic onboarding (recommended), or manual onboarding. Then choose **Continue**.
+   - If you are using Microsoft Endpoint Manager, choose between automatic onboarding (recommended), or manual onboarding, and follow the prompts. 
 
-   - Review the list of onboarding options, and then download the package for that option. Follow the prompts for the package.
+   - If you are not already using Microsoft Endpoint Manager, review the list of [onboarding options](#onboarding-options). Select an option, download the package for that option, and follow the prompts.
 
-3. Proceed to configure your security settings.
+3. Proceed to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 
 ## Onboarding options
 
-The following table summarizes the onboarding methods for Microsoft Defender for Business:
+Several onboarding options are available in Microsoft Defender for Business. The following table summarizes these options and includes recommendations and links to learn more.
 
 <br/><br/>
 
