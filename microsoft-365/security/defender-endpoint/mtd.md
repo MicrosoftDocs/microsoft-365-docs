@@ -57,13 +57,9 @@ Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsof
 
 For more details, refer to the links below.
 
-**Android:**
+**Android:** [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 
-- [Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
-
-**iOS:**
-
-- [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+**iOS:** [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
 ### Pilot evaluation
 
