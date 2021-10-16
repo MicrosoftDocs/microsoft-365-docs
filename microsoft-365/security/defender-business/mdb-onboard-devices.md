@@ -66,7 +66,7 @@ Several onboarding options are available in Microsoft Defender for Business. The
 | **Mobile Device Management** | You can use Mobile Device Management (MDM) with Microsoft Intune (now part of Microsoft Endpoint Manager) to onboard devices. Devices must be enrolled in MDM in order to onboard those devices with Microsoft Intune. <br/><br/>To learn more about this method, see [Onboard Windows devices using Mobile Device Management tools](../defender-endpoint/configure-endpoints-mdm.md). |
 
 > [!TIP]
-> If you're new to all of the onboarding methods described in this section, consider using either Microsoft Endpoint Manager or the local script method.
+> If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method.
 
 ## What if I want to offboard a device?
 
