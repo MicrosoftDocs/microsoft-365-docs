@@ -43,12 +43,19 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
+|Unified alerting|Alerts from all platforms in the unified M365 security console|
 |Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM)|
-|
+|Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available only on Android currently|
 
 All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 ## Overview and Deploy
+
+Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). Watch this video for a quick overview of MTD capabilities and deployment:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMpiC]
+
+For more details, refer to the links below.
 
 **Android:**
 
@@ -57,8 +64,6 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 **iOS:**
 
 - [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-
-Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). For detailed deployment instructions visit the above pages.
 
 ### Pilot evaluation
 
@@ -71,11 +76,13 @@ This helps reduce potential issues that could arise while rolling out the servic
 - Run a phishing test: Browse to https://smartscreentestratings2.net and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
 - Alerts appear in dashboard: Verify that alerts for above detection tests appear on the [security console](https://security.microsoft.com).
 
-## Onboard
+## Deployment best practices
 
 ### End-user onboarding
 
-- [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android)
+- [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): This can be applied to ensure end-users onboard to the Microsoft Defender for Endpoint app after deploying. Watch this video for a quick demo on configuring conditional access with Defender for Endpoint risk signals. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMwR1]
 
 ### Simplify Onboarding
 
