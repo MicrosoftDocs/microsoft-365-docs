@@ -177,6 +177,7 @@
 
 ##### [Configure]()
 ###### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+###### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
 
 ##### [Privacy]()
 ###### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)

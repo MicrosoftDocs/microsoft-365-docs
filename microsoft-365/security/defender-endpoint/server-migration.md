@@ -58,6 +58,10 @@ EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\Windo
 
 ### You are currently using Microsoft Endpoint Configuration Manager to manage your servers, including System Center Endpoint Protection (SCEP) and are running the Microsoft Monitoring Agent (MMA)-based sensor. You want to upgrade to the Microsoft Defender for Endpoint unified solution **preview**.
 
+>[!NOTE]
+>You'll need Microsoft Endpoint Configuration Manager, version 2107.
+
+
 Migration steps: 
 
 1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016).
