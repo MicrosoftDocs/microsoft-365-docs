@@ -141,7 +141,7 @@
            - name: Step 7. Delete a former employee's user account
              href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json    
       - name: Migrate your content to Microsoft 365
-        href: ../sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Migrate file shares to Microsoft 365
         items:
           - name: Overview
@@ -310,7 +310,7 @@
       - name: Security recommendations for priority accounts in Microsoft 365
         href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
       - name: Remove a former employee and secure data
-        href: ../admin/add-users/remove-former-employee
+        href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
    
     - name: Contoso case studies
       items:
