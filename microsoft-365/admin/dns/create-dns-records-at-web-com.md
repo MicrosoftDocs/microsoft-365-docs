@@ -251,10 +251,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     :::image type="content" source="webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
  
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
-    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+
+    You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
