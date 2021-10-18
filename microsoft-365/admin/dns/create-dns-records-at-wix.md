@@ -36,8 +36,7 @@ These are the main records to add.
     
 - [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
     
-- [Add the CNAME record required for Microsoft](#add-the-cname-record-required-for-microsoft).
-    
+- [Add the CNAME record required for Microsoft](#add-the-cname-record-required-for-microsoft).   
 - [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam).
     
 - [Advanced option: Skype for Business](#advanced-option-skype-for-business).
@@ -135,6 +134,8 @@ To verify the record in Microsoft 365:
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
+
+   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
     
 3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
 
@@ -159,10 +160,12 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
 1. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
-    
+ 
+   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+   
 1. Select **+ Add Record** in the **SRV** row of the DNS editor. 
  
-1. In the boxes for the new record, type or copy and paste the values from the first row in following table:
+1. In the boxes for the new record, type or copy and paste the values from the first row in the table:
     
    | Service | Protocol | Name | Weight | Port | Target | Priority | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -171,9 +174,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
    
 1. Select **Save**. 
   
-1. To add the other SRV record:
-    
-   Select **+ Add another** in the **SRV** row of the DNS editor, and select **Save** to add that record.
+1. Add the other SRV record by choosing the values from the second row of the table.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -189,7 +190,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 1. Select **Save**.
   
-1. Using the preceding two steps and the values from the second row in the table, add the other CNAME record.
+1. Add the other CNAME record by choosing the values from the second row of the table.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -204,6 +205,8 @@ This service helps you secure and remotely manage mobile devices that connect to
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
 
+   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+
 3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor, and enter the values from the first row in the following table. 
     
     |**Type**|**Host**|**Value**|**TTL**|
@@ -213,7 +216,7 @@ This service helps you secure and remotely manage mobile devices that connect to
   
 1. Select **Save**.
   
-1. Using the preceding two steps and the values from the second row in the table, add the other CNAME record.
+1. Add the other CNAME record by choosing the values from the second row of the table.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
