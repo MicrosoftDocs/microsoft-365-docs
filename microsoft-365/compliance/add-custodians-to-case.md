@@ -69,7 +69,7 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
 
 1. Expand a custodian to display the following services to associate data locations with the custodian. Click **Edit** next to a service to add a data location.
 
-   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
+   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or groups. Select the mailboxes to assign to the custodian and then click **Add**.
 
    - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**.
 
