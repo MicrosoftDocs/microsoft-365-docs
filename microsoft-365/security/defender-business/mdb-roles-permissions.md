@@ -21,7 +21,7 @@ ms.collection:
 # Assign roles and permissions
 
 > [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 

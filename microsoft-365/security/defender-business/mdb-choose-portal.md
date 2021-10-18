@@ -21,7 +21,7 @@ ms.collection:
 # The simplified configuration process in Microsoft Defender for Business
 
 > [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
 - The simplified configuration process in Microsoft Defender for Business (recommended); or 
