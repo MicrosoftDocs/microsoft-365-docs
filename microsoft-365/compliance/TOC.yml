@@ -36,10 +36,14 @@
           href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
+        - name: Detect channel signals with communication compliance
+          href: communication-compliance-channels.md
+        - name: Create and manage communication compliance policies
+          href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
+        - name: Learn about communication compliance reports & audits
+          href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
         - name: Case study - Contoso quickly configures an offensive language policy 
@@ -363,6 +367,8 @@
               href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+            - name: Common settings for retention
+              href: retention-settings.md
             - name: Limits for retention
               href: retention-limits.md
         - name: Get started with retention
@@ -619,6 +625,8 @@
           href: app-governance-detect-remediate-overview.md
         - name: Get started
           href: app-governance-detect-remediate-get-started.md
+        - name: Monitor and respond to apps with unusual data usage
+          href: app-governance-monitor-apps-unusual-data-usage.md
         - name: Investigate anomaly detection alerts
           href: app-governance-anomaly-detection-alerts.md
         - name: Remediate app threats
