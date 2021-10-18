@@ -1551,11 +1551,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
-      "redirect_url": "/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/create-a-schedule-for-a-report.md",
       "redirect_url": "/microsoft-365/security/office-365-security/view-reports-for-mdo",
       "redirect_document_id": false
