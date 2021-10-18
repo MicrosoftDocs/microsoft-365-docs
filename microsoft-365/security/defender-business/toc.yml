@@ -43,6 +43,6 @@
         href: mdb-manage-devices.md
     - name: Reference information
       items: 
-      - name: Understanding configuration settings
+      - name: Configuration settings
         href: mdb-configuration-settings.md
 
