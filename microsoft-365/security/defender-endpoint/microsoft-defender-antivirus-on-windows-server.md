@@ -229,7 +229,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 | Procedure | Description |
 |---|---|
-| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Windows Defender**, and then select **Turn off Windows Defender Antivirus**. |
+| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Adiministrative Template**, **Windows Component**, **Endpoint Protectiont**, ** Disable Endpoint Protectiont**, and then select **Enabled** and Click **Ok**. |
 | Disable Microsoft Defender Antivirus using a registry key | To use the the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). |
 | Disable Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |
