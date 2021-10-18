@@ -37,15 +37,14 @@ Find answers to frequently asked questions (FAQs) about device discovery.
 ## What is Basic discovery mode?
 This mode allows every Microsoft Defender for Endpoint onboarded device to collect network data and discover neighboring devices. Onboarded endpoints passively collect events in the network and extract device information from them. No network traffic will be initiated. Onboarded endpoints will simply extract data from every network traffic that is seen by an onboarded device. This data used to list unmanaged devices in your network.
 
- The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded device. 
-
- Standard mode also leverages standard discovery protocols that use multicast queries in the network to find even more devices, to further enrich device identification for observed devices.
 
 ## Can I disable Basic discovery?
 You have the option to turn off device discovery through the [Advanced features](advanced-features.md) page. However, you will lose visibility on unmanaged devices in your network. Note that SenseNDR.exe will still be running on the onboarded devices regardless discovery is turned off. 
 
 ## What is Standard discovery mode?
- In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
+ In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode will be actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
+
+ Standard mode also leverages standard discovery protocols that use multicast queries in the network to find even more devices, to further enrich device identification for observed devices.
 
 ## Can I control which devices perform Standard discovery?
  You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
