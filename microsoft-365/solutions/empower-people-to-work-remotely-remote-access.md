@@ -95,7 +95,7 @@ To support remote workers who can only use their personal and unmanaged devices,
 For more information, see this [overview of Azure Virtual Desktop](/azure/virtual-desktop/overview).
 
 > [!NOTE]
->Azure Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
+> Azure Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
 ## Protect your Remote Desktop Services connections with the Remote Desktop Services Gateway
 
