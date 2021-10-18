@@ -811,12 +811,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-azure-information-protection.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-azure-information-protection.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
@@ -836,12 +836,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
+      "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
+      "source_path": "microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": false
     },
@@ -1466,7 +1466,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
@@ -1548,11 +1548,6 @@
     {
       "source_path": "microsoft-365/business/add-users-m365b.md",
       "redirect_url": "/microsoft-365/admin/add-users/add-users",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
-      "redirect_url": "/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
       "redirect_document_id": false
     },
     {
