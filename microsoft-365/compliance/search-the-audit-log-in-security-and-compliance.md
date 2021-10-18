@@ -681,7 +681,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Advanced Audit events" section in [Advanced Audit](advanced-audit.md#advanced-audit-events).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
 |Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
-|Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|
+|Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox created, modified, or removed an inbox rule by using the Outlook client.|
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
