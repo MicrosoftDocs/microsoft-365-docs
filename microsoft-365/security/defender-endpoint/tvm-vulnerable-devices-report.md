@@ -2,8 +2,6 @@
 title: Vulnerable devices report - threat and vulnerability management
 description: A report showing vulnerable device trends and current statistics. The goal is for you to understand the breath and scope of your device exposure.
 keywords: Microsoft Defender for Endpoint-tvm vulnerable devices, Microsoft Defender for Endpoint, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -41,7 +39,7 @@ There are two columns:
 - Trends (over time). Can show the past 30 days, 3 months, 6 months, or a custom date range.
 - Status (current information)
 
-**Filter**: You can filter the data by vulnerability severity levels, exploit availability, vulnerability age, operating system platform, Windows 10 version, or device group.
+**Filter**: You can filter the data by vulnerability severity levels, exploit availability, vulnerability age, operating system platform, Windows 10 or Windows 11 version, or device group.
 
 **Drill down**: If there is an insight you want to explore further, select the relevant bar chart to view a filtered list of devices in the Device inventory page. From there, you can export the list.
 
@@ -69,9 +67,9 @@ The number of devices on each operating system that are exposed due to software 
 
 :::image type="content" alt-text="One graph of current vulnerable devices by operating system platform, and one graph showing vulnerable devices by OS platforms over time." source="images/tvm-report-os.png" lightbox="images/tvm-report-os.png":::
 
-## Vulnerable devices by Windows 10 version graphs
+## Vulnerable devices by Windows version graphs
 
-The number of devices on each Windows 10 version that are exposed due to vulnerable applications or OS.
+The number of devices on each Windows 10 or Windows 11 version that are exposed due to vulnerable applications or OS.
 
 ![One graph of current vulnerable devices by Windows 10 version, and one graph showing vulnerable devices by Windows 10 version over time.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png":::
 

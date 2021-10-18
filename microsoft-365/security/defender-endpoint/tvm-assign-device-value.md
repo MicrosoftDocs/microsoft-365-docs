@@ -2,8 +2,6 @@
 title: Assign device value - threat and vulnerability management
 description: Learn how to assign a low, normal, or high value to a device to help you differentiate between asset priorities.
 keywords: Microsoft Defender for Endpoint device value, threat and vulnerability management device value, high value devices, device value exposure score
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

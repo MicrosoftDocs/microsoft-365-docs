@@ -2,8 +2,6 @@
 title: Create and view exceptions for security recommendations - threat and vulnerability management
 description: Create and monitor exceptions for security recommendations in threat and vulnerability management.
 keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

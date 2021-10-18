@@ -2,8 +2,6 @@
 title: Microsoft Secure Score for Devices
 description: Your score for devices shows the collective security configuration state of your devices across application, operating system, network, accounts, and security controls.
 keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunities, security configuration score over time, security posture, baseline
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,8 +3,6 @@ title: Overview of attack surface reduction
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -18,7 +16,7 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/02/2021
+ms.date: 10/14/2021
 ---
 
 # Overview of attack surface reduction capabilities

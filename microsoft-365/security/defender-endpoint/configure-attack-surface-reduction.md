@@ -2,8 +2,6 @@
 title: Configure attack surface reduction capabilities
 description: Use Microsoft Intune, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and Group Policy to configure attack surface reduction.
 keywords: asr, attack surface reduction, windows defender, microsoft defender, antivirus, av
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -16,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/11/2021
+ms.date: 10/14/2021
 ---
 
 # Configure attack surface reduction capabilities
