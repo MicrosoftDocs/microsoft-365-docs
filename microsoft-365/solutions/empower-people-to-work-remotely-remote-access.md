@@ -88,7 +88,7 @@ For more information, see this [overview of P2S VPN](/azure/vpn-gateway/point-to
 
 ## Deploy Azure Virtual Desktop to provide remote access for remote workers using personal devices
 
-To support remote workers who can only use their personal and unmanaged devices, use Azure Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization network.
+To support remote workers who can only use their personal and unmanaged devices, use Azure Virtual Desktop to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization's network.
 
 ![Components of Azure Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
