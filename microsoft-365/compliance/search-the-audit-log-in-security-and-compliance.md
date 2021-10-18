@@ -641,6 +641,7 @@ The following table lists events that result from site administration tasks in S
 |Enabled result source for People Searches|PeopleResultsScopeSet|Site administrator creates the result source for People Searches for a site.|
 |Enabled RSS feeds|NewsFeedEnabledSet|Site administrator or owner enables RSS feeds for a site. Global administrators can enable RSS feeds for the entire organization in the SharePoint admin center.|
 |Joined site to hub site|HubSiteJoined|A site owner associates their site with a hub site.|
+|Modified site collection quota|SiteCollectionQuotaModified|Site administrator modifies the quota for a site collection.|
 |Registered hub site|HubSiteRegistered|A SharePoint or global administrator creates a hub site. The results are that the site is registered to be a hub site.|
 |Removed allowed data location|AllowedDataLocationDeleted|A SharePoint or global administrator removed an allowed data location in a multi-geo environment.|
 |Removed geo location admin|GeoAdminDeleted|A SharePoint or global administrator removed a user as a geo admin of a location.|
