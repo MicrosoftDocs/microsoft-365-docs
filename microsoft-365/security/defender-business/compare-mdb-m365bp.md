@@ -31,7 +31,7 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
-| Email protection | Yes (for non-Microsoft 365 email) | Yes (for Microsoft 365 email) |
+| Email protection | Yes (protection includes email that is not hosted in Microsoft 365) | Yes (for Microsoft 365 email) |
 | Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10 and later)  | Yes (Microsoft Defender Antivirus is included in Windows 10 and later) |
