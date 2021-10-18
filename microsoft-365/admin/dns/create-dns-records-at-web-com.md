@@ -235,7 +235,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 7. To add the other SRV record:
     
-    In the **Advanced DNS** section, create a record by using the values from the second row in the table, and then again select **Add** to complete that record. 
+    In the **Advanced DNS** section, create a record by using the values from the second row in the table, and then again select **ADD** to complete that record. 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 

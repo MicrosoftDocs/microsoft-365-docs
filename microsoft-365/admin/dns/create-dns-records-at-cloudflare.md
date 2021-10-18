@@ -103,7 +103,6 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. On the **Home** page, select the domain that you want to update. 
   
 1. On the **Overview** page for your domain, select **DNS**.
-
   
 1. On the **DNS management** page, click **Add record**, and then select the values from the following table. 
     
