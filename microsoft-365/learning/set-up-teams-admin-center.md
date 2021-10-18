@@ -21,7 +21,10 @@ description: Learn how to configure Microsoft Viva Learning (Preview) in the Tea
 # Set up Microsoft Viva Learning (Preview) in the Teams admin center
 
 > [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released.
+
+> [!NOTE]
+> [Preview is currently closed to new participants.]
 
 The Teams administrator needs to perform certain steps to enable Viva Learning (Preview) for their users in the tenant. These steps vary based on how the tenant is enabled:  [*Public Preview*](set-up-teams-admin-center.md#public-preview-tenants) or [*Private Preview* (or Beta)](set-up-teams-admin-center.md#private-preview-tenants).
 
@@ -29,7 +32,7 @@ The Teams administrator needs to perform certain steps to enable Viva Learning (
 
 ### Administrator steps for Public Preview tenants
 
-Because the Viva Learning (Preview) is not yet generally available, certain steps are required to enable the features and set permissions for specific users or groups. 
+Because the Viva Learning (Preview) is not yet generally available, certain steps are required to enable the features and set permissions for specific users or groups.
 
 1. Enable Public Preview features for Viva Learning (Preview) users.
 
