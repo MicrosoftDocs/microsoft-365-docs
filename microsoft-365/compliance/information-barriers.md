@@ -78,8 +78,8 @@ To learn more about the user experience with information barriers, see [informat
 
 Information barriers are rolling out now, and are included in subscriptions, such as:
 
-- Microsoft 365 E5/A5
-- Office 365 E5/A5
+- Microsoft 365 E5/A5/A3/A1
+- Office 365 E5/A5/A3/A1
 - Office 365 Advanced Compliance
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
