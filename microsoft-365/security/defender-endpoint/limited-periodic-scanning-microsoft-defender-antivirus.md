@@ -2,7 +2,6 @@
 title: Enable the limited periodic Microsoft Defender Antivirus scanning feature
 description: Limited periodic scanning lets you use Microsoft Defender Antivirus in addition to your other installed AV providers
 keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date:10/18/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -28,7 +27,7 @@ ms.collection: m365-security-compliance
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 device.
+Limited periodic scanning is a special type of threat detection and remediation that can be enabled when you have installed another antivirus product on a Windows 10 or Windows 11 device.
 
 It can only be enabled in certain situations. For more information about limited periodic scanning and how Microsoft Defender Antivirus works with other antivirus products, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
@@ -36,7 +35,7 @@ It can only be enabled in certain situations. For more information about limited
 
 ## How to enable limited periodic scanning
 
-By default, Microsoft Defender Antivirus will enable itself on a Windows 10 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly.
+By default, Microsoft Defender Antivirus will enable itself on a Windows 10 or a Windows 11 device if there is no other antivirus product installed, or if the other product is out-of-date, expired, or not working correctly.
 
 If Microsoft Defender Antivirus is enabled, the usual options will appear to configure it on that device:
 

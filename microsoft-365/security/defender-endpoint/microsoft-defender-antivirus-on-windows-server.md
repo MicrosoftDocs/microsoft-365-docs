@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus on Windows Server
 description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,7 +13,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/13/2021
+ms.date: 10/14/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -34,7 +33,7 @@ Microsoft Defender Antivirus is available in the following editions/versions of 
 - Windows Server 2016
 - Windows Server 2012 R2 (Requires Microsoft Defender for Endpoint)
 
-In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md), there are a few key differences on Windows Server:
+In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md) and Windows 11, there are a few key differences on Windows Server:
 
 - On Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 

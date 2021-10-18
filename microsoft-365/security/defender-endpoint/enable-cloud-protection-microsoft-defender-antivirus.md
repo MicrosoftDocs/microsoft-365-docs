@@ -2,7 +2,6 @@
 title: Turn on cloud protection in Microsoft Defender Antivirus
 description: Turn on cloud protection to benefit from fast and advanced protection features.
 keywords: Microsoft Defender Antivirus, antimalware, security, cloud, block at first sight
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -10,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -40,7 +39,7 @@ You can also turn cloud protection on or off on individual endpoints using the W
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> In Windows 10, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
+> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
 ## Use Intune to turn on cloud protection
 
