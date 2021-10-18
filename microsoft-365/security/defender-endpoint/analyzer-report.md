@@ -25,7 +25,8 @@ ms.technology: m365d
 # Understand the client analyzer HTML report
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 The client analyzer produces a report in HTML format. Learn how to review the report to identify potential sensor issues so that you can troubleshoot them.
 
@@ -38,14 +39,13 @@ failing to reach one of the required Microsoft Defender for Endpoint URLs:
 
 - On the top the script version and script runtime are listed for reference
 - The **Device Information** section provides basic OS and device identifiers to uniquely identify the device on which the analyzer has run.
-- The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes are not online as expected,  the color will change to red.
+- The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes are not online as expected, the color will change to red.
 
   ![Image of client analyzer detailed result](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor
-    process. If important processes are not online as expected,  the color will change to red.
+-   The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes are not online as expected, the color will change to red.
 
-![Image of client analyzer detailed result.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
+  ![Image of client analyzer detailed result.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
 -   On **Check Results Summary** you will have an aggregated count for error,
     warning, or informational events detected by the analyzer.

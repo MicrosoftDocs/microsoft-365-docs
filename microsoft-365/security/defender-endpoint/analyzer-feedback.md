@@ -25,7 +25,8 @@ ms.technology: m365d
 # Provide feedback on the Microsoft Defender for Endpoint client analyzer tool
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 If you have feedback or suggestions that would help us improve the Microsoft Defender for Endpoint client analyzer, please use either of these options to submit feedback:
 
