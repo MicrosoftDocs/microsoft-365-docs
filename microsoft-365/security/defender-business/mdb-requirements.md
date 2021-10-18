@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/18/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -23,7 +23,7 @@ ms.collection:
 > [!TIP]
 > If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDBPreview](https://aka.ms/MDBPreview).
 
-The following table lists the basic requirements to configure and use Microsoft Defender for Business. <br/><br/>
+You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business. The following table lists the basic requirements to configure and use Microsoft Defender for Business. <br/><br/>
 
 | Requirement | Description |
 |:---|:---|
