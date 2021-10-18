@@ -38,6 +38,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [What's new in Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
+- [(NEW!) Microsoft Defender for Business (preview)](../defender-business/mdb-overview.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
