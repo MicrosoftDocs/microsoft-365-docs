@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/18/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -28,6 +28,8 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 - [Sign up for the preview program](#sign-up-for-the-preview-program)
 - [Get Microsoft Defender for Business](#get-microsoft-defender-for-business)
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
+
+The following sections provide more details about these options.
 
 ## Sign up for the preview program
 
