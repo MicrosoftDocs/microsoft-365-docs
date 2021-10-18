@@ -641,6 +641,7 @@ The following table lists events that result from site administration tasks in S
 |Enabled result source for People Searches|PeopleResultsScopeSet|Site administrator creates the result source for People Searches for a site.|
 |Enabled RSS feeds|NewsFeedEnabledSet|Site administrator or owner enables RSS feeds for a site. Global administrators can enable RSS feeds for the entire organization in the SharePoint admin center.|
 |Joined site to hub site|HubSiteJoined|A site owner associates their site with a hub site.|
+|Modified site collection quota|SiteCollectionQuotaModified|Site administrator modifies the quota for a site collection.|
 |Registered hub site|HubSiteRegistered|A SharePoint or global administrator creates a hub site. The results are that the site is registered to be a hub site.|
 |Removed allowed data location|AllowedDataLocationDeleted|A SharePoint or global administrator removed an allowed data location in a multi-geo environment.|
 |Removed geo location admin|GeoAdminDeleted|A SharePoint or global administrator removed a user as a geo admin of a location.|
@@ -1000,13 +1001,17 @@ The following table describes the configuration activities for [retention polici
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
+| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope’s query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
+| Created adaptive scope |NewAdaptiveScope |Administrator created an adaptive scope.|
 | Created retention label |NewComplianceTag |Administrator created a new retention label.|
 | Created retention policy |NewRetentionCompliancePolicy|Administrator created a new retention policy.|
+| Deleted adaptive scope | RemoveAdaptiveScope| Administrator deleted an adaptive scope.|
 | Deleted settings from a retention policy| RemoveRetentionComplianceRule<br/>| Administrator deleted the configuration settings of a retention policy. Most likely, this activity is logged when an administrator deletes a retention policy or runs the [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule) cmdlet.|
 | Deleted retention label |RemoveComplianceTag | Administrator deleted a retention label.|
 | Deleted retention policy |RemoveRetentionCompliancePolicy<br/> |Administrator deleted a retention policy. |
 | Enabled regulatory record option for retention labels<br/> |SetRestrictiveRetentionUI |Administrator ran the [Set-RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) cmdlet so that an administrator can then select the UI configuration option for a retention label to mark content as a regulatory record.|
+| Updated adaptive scope | SetAdaptiveScope | Administrator changed the description or query for an existing adaptive scope. |
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
