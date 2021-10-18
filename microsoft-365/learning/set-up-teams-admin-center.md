@@ -36,15 +36,15 @@ Because the Viva Learning (Preview) is not yet generally available, certain step
 
 1. Enable Public Preview features for Viva Learning (Preview) users.
 
-    a. Modify Teams update policy to enable Public Preview features. See [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
+   1. Modify Teams update policy to enable Public Preview features. See [Microsoft Teams Public Preview](/microsoftteams/public-preview-doc-updates).
 
-    b. Enable the update policy for users or groups who will perform Viva Learning (Preview) testing. See [Assign policies to users and groups](/microsoftteams/assign-policies-users-and-groups).
+   1. Enable the update policy for users or groups who will perform Viva Learning (Preview) testing. See [Assign policies to users and groups](/microsoftteams/assign-policies-users-and-groups).
 
 2. Modify the app permission policy for Viva Learning (Preview) users.
 
-    a. Unless it's currently part of the global policy, allow all Microsoft apps in the app permission policy. See [Manage app permission policies in Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
+   1. Unless it's currently part of the global policy, allow all Microsoft apps in the app permission policy. See [Manage app permission policies in Microsoft Teams](/microsoftteams/teams-app-permission-policies). 
 
-    b. Enable the app permission policy for users or groups who will perform Viva Learning (Preview) testing. See [Assign policies to users and groups](/microsoftteams/assign-policies-users-and-groups).
+   1. Enable the app permission policy for users or groups who will perform Viva Learning (Preview) testing. See [Assign policies to users and groups](/microsoftteams/assign-policies-users-and-groups).
 
 3. Notify users who will test Viva Learning (Preview) to [switch their build client to Public Preview for Teams](set-up-teams-admin-center.md#user-steps-for-public-preview-tenants).
 
