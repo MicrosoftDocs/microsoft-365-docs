@@ -59,10 +59,10 @@ Verify that the package you are installing matches the host distribution and ver
 
 |package|distribution|
 |---|---|
-|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL and CentOS 8.x|
-|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
-|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
-|mdatp.Linux.x86_64.rpm|Oracle, RHEL and CentOS 7.x|
+|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL, and CentOS 8.x|
+|mdatp-sles12.Linux.x86_64.rpm|SUSE Linux Enterprise Server 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SUSE Linux Enterprise Server 15.x|
+|mdatp.Linux.x86_64.rpm|Oracle, RHEL, and CentOS 7.x|
 |mdatp.Linux.x86_64.deb|Debian and Ubuntu 16.04, 18.04 and 20.04|
 |
 
