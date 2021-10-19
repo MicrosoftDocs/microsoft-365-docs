@@ -24,7 +24,7 @@ description: "Get started with app governance capabilities to govern your apps."
 To begin using the app governance add-on to Microsoft Cloud App Security, you need to take three steps:
 
 1. [Verify licensing and administrator prerequisites](#licensing-and-administrator-role-prerequisites).
-1. [Sign up for app governance](#sign-up-for-free-trial-of-app-governance).
+1. [Sign up for app governance](#sign-up-for-app-governance).
 1. [Add MCAS integration](#add-integration-with-mcas).
 
 
@@ -128,7 +128,7 @@ If you did not participate in private preview and would like to cancel your tria
 1. In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. Navigate to the app governance trial, click the three dots, and select **Cancel subscription**.
 1. In the resulting fly-out pane, provide a reason for cancellation, any additional feedback, and select **Cancel subscription**.
-1. Select **Cancel subscription** in the resulting pop up screen. Your trial is cancelled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
+1. Select **Cancel subscription** in the resulting pop up screen. Your trial is canceled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
 
 ## Known issues for the public preview
 
