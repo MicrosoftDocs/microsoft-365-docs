@@ -66,9 +66,9 @@ Additional machine learning capabilities can further refine and identify relevan
 
 The built-in workflow of Advanced eDiscovery in Microsoft 365 aligns with the eDiscovery process outlined by the Electronic Discovery Reference Model (EDRM).
 
-![The Electronic Discovery Reference Model (EDRM).](../media/EDRMv1.png)
+![The Electronic Discovery Reference Model (EDRM).](../media/EDRMv2.png)
 
-(Image source courtesy of edrm.net. The source image was made available under Creative Commons Attribution 3.0 Unported License.)
+(Image based on the EDRM model on edrm.net)
 
 At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 
