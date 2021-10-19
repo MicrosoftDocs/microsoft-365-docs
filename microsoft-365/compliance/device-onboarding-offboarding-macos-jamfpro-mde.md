@@ -250,6 +250,10 @@ NO PROCEDURES PROVIDED
 
 ## Offboard macOS devices using JAMF Pro
 
+1. Disable DLP via the MDE Settings (if using MDE)
+
+1. Set ‘Use Data Loss Prevention’ = ‘disabled’
+
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 

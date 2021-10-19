@@ -250,6 +250,12 @@ NO PROCEDURES PROVIDED
 
 ## Offboard macOS devices using JAMF Pro
 
+
+1. Uninstall the application (if not using MDE)
+    1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
+
+1. Restart the macOS device - some applications may lose printing functionality until they are restarted
+
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
