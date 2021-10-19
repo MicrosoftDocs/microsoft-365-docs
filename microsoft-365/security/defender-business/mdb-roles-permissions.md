@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Assign roles and permissions
+# Assign roles and permissions in Microsoft Defender for Business
 
 > [!TIP]
 > If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
