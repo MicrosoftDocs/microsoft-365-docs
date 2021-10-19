@@ -539,6 +539,7 @@ The following table describes activities related to when users interact with lis
 |Updated list item|ListItemUpdated|A user updated a SharePoint list item by modifying one or more properties.|
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
+|Viewed list item|ListItemViewed|A user viewed a SharePoint list item.|
 ||||
 
 ### Sharing and access request activities
