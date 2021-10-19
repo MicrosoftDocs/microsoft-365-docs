@@ -70,6 +70,10 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > [!NOTE]
 > If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
+> [!TIP]
+> To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md) along side the default policy.
+
+
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.
 
 ## What's different in Endpoint DLP

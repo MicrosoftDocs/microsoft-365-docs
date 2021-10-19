@@ -138,12 +138,6 @@
                 href: incident-queue.md
               - name: Manage incidents
                 href: manage-incidents.md
-              - name: Investigate incidents
-                href: investigate-incidents.md
-              - name: Investigate alerts
-                href: investigate-alerts.md    
-              - name: Investigate users 
-                href: investigate-users.md                  
               - name: Respond to your first incident
                 items: 
                  - name: Overview
@@ -162,6 +156,14 @@
                       href: first-incident-path-phishing.md
                     - name: Identity
                       href: first-incident-path-identity.md
+              - name: Investigate incidents
+                items: 
+                 - name: Incidents
+                   href: investigate-incidents.md
+                 - name: Alerts
+                   href: investigate-alerts.md    
+                 - name: Users 
+                   href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
               - name: Get incident email notifications
@@ -324,14 +326,6 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: How-to guides
-      items: 
-       - name: Create a trial lab or pilot environment
-         href: eval-overview.md
-       - name: Run pilot playbook
-         href: eval-overview.md
-       - name: Turn on FAQ
-         href: m365d-enable-faq.md
     - name: Reference
       items: 
         - name: Permissions & settings
@@ -387,7 +381,7 @@
                       href: streaming-api-event-hub.md
                     - name: Stream advanced hunting events to your storage account
                       href: streaming-api-storage.md
-                    - name: Supported event types
+                    - name: Supported Streaming event types
                       href: supported-event-types.md  
                     - name: Configure your Event hub
                       href: configure-event-hub.md
