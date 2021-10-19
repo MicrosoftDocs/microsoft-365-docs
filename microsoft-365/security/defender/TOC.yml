@@ -6,22 +6,24 @@
       items:
       - name: What is Microsoft 365 Defender?
         href: microsoft-365-defender.md
-      - name: Microsoft 365 Defender Overview
+      - name: Microsoft 365 Defender Overview (merge)
         href: overview-security-center.md  
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Defender for Endpoint in Microsoft 365 Defender
-        href: microsoft-365-security-center-mde.md
-      - name: Defender for Office 365 in Microsoft 365 Defender
-        href: microsoft-365-security-center-mdo.md  
-      - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
-        href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
-        href: microsoft-365-security-mdo-redirection.md   
-      - name: Microsoft 365 Defender integration with Azure Sentinel
-        href: microsoft-365-defender-integration-with-azure-sentinel.md   
-      - name: Preview features
+      - name: Preview features (merge)
         href: preview.md
+      - name: Nested portal articles
+        items:
+        - name: Defender for Endpoint in Microsoft 365 Defender
+          href: microsoft-365-security-center-mde.md
+        - name: Defender for Office 365 in Microsoft 365 Defender
+          href: microsoft-365-security-center-mdo.md  
+        - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
+          href: microsoft-365-security-mde-redirection.md 
+        - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
+          href: microsoft-365-security-mdo-redirection.md   
+        - name: Microsoft 365 Defender integration with Azure Sentinel
+          href: microsoft-365-defender-integration-with-azure-sentinel.md   
       - name: Troubleshoot issues
         href: ./troubleshoot.md
       - name: Industry tests
@@ -94,9 +96,9 @@
       items:
         - name: Overview
           href: get-started.md
-        - name: Turn on Microsoft 365 Defender
+        - name: 1. Turn on Microsoft 365 Defender
           href: m365d-enable.md
-        - name: Deploy supported services
+        - name: 2. Deploy supported services
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
@@ -324,9 +326,9 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: Train your employees
+    - name: Train your security staff
       items: 
-       - name: Train your employees
+       - name: Train your security staff
          href: microsoft-365-defender-train-employees.md
     - name: Reference
       items: 
