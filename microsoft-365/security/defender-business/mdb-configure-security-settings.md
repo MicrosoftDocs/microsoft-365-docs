@@ -39,4 +39,4 @@ If your company is not already using MEM, your devices are protected by the defa
 
 If your company is using MEM to manage security settings and policies, you can choose to apply security policies and settings to all or some devices.
 
-You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-choose-portal.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business.
+You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business.
