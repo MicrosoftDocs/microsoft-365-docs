@@ -33,15 +33,14 @@ In Microsoft 365 organizations with mailboxes in Exchange Online, organizational
 
 But, there are also specific anti-spam settings that admins can configure on individual mailboxes in Exchange Online:
 
-- **Enable or disable the junk email rule**: The junk email rule is a hidden Inbox rule named Junk E-mail Rule that's enabled by default in every mailbox. The junk email rule controls the following features:
+> [!NOTE]
+> EOP now uses its own mailflow delivery agent to route email to Junk folder instead of using Junk email rule. This means that the junk email rule enabled/disabled setting will have no impact on mailflow. EOP will route the messages based on the actions set in anti-spam policies. Note that the user safe sender, block sender list will continue to work as usual.
 
-  - **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the junk email filter rule moves the message to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the junk email filter rule moves the message to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
+- **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the junk email filter rule moves the message to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the junk email filter rule moves the message to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
-  - **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the junk email rule moves the message to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Admins can configure the safelist collection on any user's mailbox.
+- **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Blocked Senders list on each mailbox. The entries in these lists determine whether the junk email rule moves the message to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Admins can configure the safelist collection on any user's mailbox.
 
-When the junk email rule is enabled on the mailbox, EOP is able to move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the Blocked Senders list on the mailbox, and prevent messages from being delivered to the Junk Email folder (based on the Safe Senders list on the mailbox).
-
- When the junk email rule is disabled on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
+EOP is able to move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the Blocked Senders list on the mailbox, and prevent messages from being delivered to the Junk Email folder (based on the Safe Senders list on the mailbox).
 
 Admins can use Exchange Online PowerShell to disable, enable, and view the status of the junk email rule on mailboxes. Admins can also use Exchange Online PowerShell to configure entries in the safelist collection on mailboxes (the Safe Senders list, the Safe Recipients list, and the Blocked Senders list).
 
@@ -57,47 +56,6 @@ Admins can use Exchange Online PowerShell to disable, enable, and view the statu
 - In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Safe Senders for shared mailboxes are not synchronized to Azure AD and EOP by design.
-
-## Use Exchange Online PowerShell to enable or disable the junk email rule in a mailbox
-
-> [!NOTE]
-> You can only use the **Set-MailboxJunkEmailConfiguration** cmdlet to disable the junk email rule on a mailbox that's been opened in Outlook (in Cached Exchange mode) or Outlook on the web. If the mailbox hasn't been opened, you'll receive the error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` If you want to suppress this error for bulk operations, you can add `-ErrorAction SilentlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
-
-To enable or disable the junk email rule on a mailbox, use the following syntax:
-
-```PowerShell
-Set-MailboxJunkEmailConfiguration -Identity <MailboxIdentity> -Enabled <$true | $false>
-```
-
-This example disables the junk email rule on Ori Epstein's mailbox.
-
-```PowerShell
-Set-MailboxJunkEmailConfiguration -Identity "Ori Epstein" -Enabled $false
-```
-
-This example disables the junk email rule on all user mailboxes in the organization.
-
-```PowerShell
-$All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
-```
-
-For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration).
-
-> [!NOTE]
->
-> - If the user has never opened their mailbox, you might receive an error when you run the previous command. To suppress this error for bulk operations, add `-ErrorAction SilentlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
->
-> - Even if you disable the junk email rule, the Outlook Junk Email Filter (depending on how it's configured) can also determine whether a message is spam, and can move messages to the Inbox or Junk Email folder based on it's own spam verdict and the the safelist collection on the mailbox. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this article.
-
-### How do you know this worked?
-
-To verify that you have successfully enabled or disabled the junk email rule on a mailbox, use any of the following procedures:
-
-- Replace _\<MailboxIdentity\>_ with the name, alias, or email address of the mailbox, and run the following command to verify the **Enabled** property value:
-
-  ```PowerShell
-  Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
-  ```
 
 ## Use Exchange Online PowerShell to configure the safelist collection on a mailbox
 
