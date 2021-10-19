@@ -12,7 +12,7 @@
       - name: How to get Microsoft Defender for Business
         href: get-defender-business.md
       - name: The simplified configuration process
-        href: mdb-choose-portal.md
+        href: mdb-simplified-configuration.md
     - name: Setup and configuration
       items:
       - name: Process overview
