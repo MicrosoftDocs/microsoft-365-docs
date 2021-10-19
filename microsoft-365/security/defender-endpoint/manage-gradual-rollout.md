@@ -2,8 +2,6 @@
 title: Manage the gradual rollout process for Microsoft Defender updates
 description: Learn about the gradual update process and controls
 keywords: update, update process, controls, release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

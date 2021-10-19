@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus compatibility with other security products
 description: Learn about Microsoft Defender Antivirus with other security products and the operating systems.
 keywords: windows defender, defender for endpoint, next-generation, antivirus, compatibility, passive mode
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -15,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -48,8 +47,8 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 
 |Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
 |---|---|---|
-|Windows 10|Microsoft Defender Antivirus|Active mode|
-|Windows 10|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
+|Windows 10 or <p> Windows 11|Microsoft Defender Antivirus|Active mode|
+|Windows 10 or <p> Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
 |Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
 |Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
 
@@ -64,10 +63,10 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 
 | Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
 |------|------|-------|-------|
-| Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
-| Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
-| Windows 10  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
-| Windows 10  | A non-Microsoft antivirus/antimalware solution | No   | Disabled mode (automatically)    |
+| Windows 10 <p> Windows 11| Microsoft Defender Antivirus | Yes  | Active mode | 
+| Windows 10 <p> Windows 11 | Microsoft Defender Antivirus | No   | Active mode |
+| Windows 10 <p> Windows 11  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
+| Windows 10 <p> Windows 11  | A non-Microsoft antivirus/antimalware solution | No   | Disabled mode (automatically)    |
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
 | Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
@@ -94,7 +93,7 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2012 R2, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
+> Microsoft Defender Antivirus is only available on devices running Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
 >
 > In Windows 8.1, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
 >

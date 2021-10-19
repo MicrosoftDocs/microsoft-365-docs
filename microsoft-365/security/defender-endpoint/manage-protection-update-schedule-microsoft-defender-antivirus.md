@@ -2,7 +2,6 @@
 title: Schedule Microsoft Defender Antivirus protection updates
 description: Schedule the day, time, and interval for when protection updates should be downloaded
 keywords: updates, security baselines, schedule updates
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 search.appverid: met150
 ms.mktglfcycl: manage
