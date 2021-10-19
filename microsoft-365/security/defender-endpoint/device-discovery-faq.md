@@ -44,7 +44,7 @@ You have the option to turn off device discovery through the [Advanced features]
 ## What is Standard discovery mode?
  In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode will be actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
 
- Standard mode also leverages standard discovery protocols that use multicast queries in the network to find even more devices, to further enrich device identification for observed devices.
+ Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were ovserved using the passive method.
 
 ## Can I control which devices perform Standard discovery?
  You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
@@ -71,7 +71,7 @@ ARP, FTP, HTTP, HTTPS, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPN
  If there are devices on your network which should not be actively probed, you can also define a list of exclusions to prevent them from being scanned. The configuration is available in the device discovery settings page. 
 
 >[!NOTE]
-> Devices might still be probed using multicast protocols in the network. Those devices will be passively discovered but won't be actively probed. 
+> Devices might still reply to multicast discovery attempts in the network. Those devices will be discovered but won't be actively probed. 
 
 ## Can I exclude devices from being discovered?
  As device discovery uses passive methods to discover devices in the network, any device that communicates with your onboarded devices in the corporate network can be discovered and listed in the inventory. You can exclude devices from active probing only.
