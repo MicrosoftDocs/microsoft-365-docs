@@ -2,7 +2,6 @@
 title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -53,10 +52,10 @@ Event ID|Log name|Description|Source
 
 ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
-On a Windows 10 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
 
 > [!TIP]
-> The scenario just described applies only to Windows 10. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
+> The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
 
 #### Use Services app to check if Microsoft Defender Antivirus is turned off
 

@@ -2,7 +2,6 @@
 title: Troubleshoot performance issues
 description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
 keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -12,7 +11,7 @@ ms.author: maccruz
 author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
