@@ -90,7 +90,17 @@ Enterprise Information Archiving (EIA) for Microsoft Teams is a key scenario 
 
 For the licensing requirements for the use of the Teams Export APIs, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
+### Use the Microsoft Graph subject rights request API 
+
+In accordance with certain privacy regulations around the world, individuals can make requests to review or manage the personal data about themselves that companies have collected. These requests are referred to as subject rights requests within the Microsoft 365 privacy management solution; they are sometimes also referred to as data subject requests (DSRs) or data subject access requests (DSARs). Microsoft 365 privacy management empowers personnel responsible for fulfilling subject rights requests to easily identify data subjects and find their personal information among an organization’s data in Exchange, SharePoint, OneDrive, and Teams. 
+
+The Microsoft Graph APIs for subject rights request provide functionality for organizations to automate repetitive tasks and integrate with existing data subject request tools, to enable building repeatable workflows that can be incorporated to their business processes. You can use the subject rights request APIs to help you automate and scale your organization's ability to perform subject rights requests searches in Microsoft 365 and help meet industry regulations more efficiently.
+
+Learn more about these APIs here [Microsoft Graph APIs for Privacy - Subject Rights Request ](graph/api/resources/subjectrightsrequest-subjectrightsrequestapioverview?view=graph-rest-1.0)
+
+
 ### Microsoft Graph Connector APIs (preview)
 
 With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organizations can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in public or private clouds. Starting with Advanced eDiscovery, we're enabling developer preview of built-in compliance value of Microsoft 365 connected apps. This enables compliance for apps integrating into the Microsoft 365 ecosystem to empower users with seamless compliance experiences. To learn more about to how to incorporate Microsoft Graph Connector APIs in your apps view, see [Create, update, and delete connections in the Microsoft Graph](/graph/search-index-manage-connections).
+
 
