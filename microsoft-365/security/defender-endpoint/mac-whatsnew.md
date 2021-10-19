@@ -30,7 +30,7 @@ ms.technology: mde
 
 ## 101.47.27 (20.121082.14727.0)
 
-- Hot fix: system freeze on shutdown when run in the KEXT mode (Mojave or Catalina)
+- Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina
 
 ## 101.43.84 (20.121082.14384.0)
 
