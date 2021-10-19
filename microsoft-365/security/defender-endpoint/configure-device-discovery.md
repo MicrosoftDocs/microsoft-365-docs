@@ -50,7 +50,7 @@ Take the following configuration steps in Microsoft 365 security center:
 
 ## Exclude devices from being actively probed in standard discovery
 
-If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and might still be probed using multicast protocols in the network. Those devices will be passively discovered but won't be actively probed.   
+If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered once replied to multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.   
 
 ## Select networks to monitor
 
@@ -61,7 +61,7 @@ You can configure where device discovery can be performed by specifying which ne
 A list of networks where device discovery can be performed is shown in the **Monitored networks** page.
 
 > [!NOTE]
-> The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded device. 
+> The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded devices. 
 
 The list of monitored networks is sorted based upon the total number of devices seen on the network in the last 7 days.
 
