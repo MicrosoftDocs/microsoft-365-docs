@@ -50,7 +50,7 @@ Take the following configuration steps in Microsoft 365 security center:
 
 ## Exclude devices from being actively probed in standard discovery
 
-If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered once replied to multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.   
+If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered through multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.   
 
 ## Select networks to monitor
 
