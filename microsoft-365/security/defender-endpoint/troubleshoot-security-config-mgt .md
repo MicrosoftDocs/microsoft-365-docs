@@ -71,7 +71,7 @@ From the information in the message, it’s possible in most cases to understan
 
  
 
-## Troubleshooting 
+Troubleshooting 
 
 If you weren’t able to identify the onboarded device in AAD or MEM, and did not receive an error during the enrollment, checking the registry key “Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus” can provide additional troubleshooting information.  
 
