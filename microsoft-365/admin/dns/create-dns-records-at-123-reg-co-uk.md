@@ -44,15 +44,13 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
     
-5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
-    
-    (Choose the **Type** value from the drop-down list.) 
+5. In the **Type** box for the new record choose **TXT/SPF** from the drop-down list, and then type or copy and paste the other values from the following table. 
     
     ||||
     |:-----|:-----|:-----|
@@ -80,55 +78,41 @@ To verify the record in Microsoft 365:
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
     
-5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
-    
-    (Choose the **Type** value from the drop-down list.) 
+5. In the **Type** box for the new record choose **MX** from the drop-down list, and then type or copy and paste the other values from the following table. 
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<domain-key\> from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
-   
-    ![Copy and paste values from the table](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. Select **Add**.
-    
-    ![Select Add](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
 7. If there are any other MX records, remove each one by choosing the **Delete (trash can)** icon for that record. 
-    
-    ![Select Delete (the trash can icon)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## Add the CNAME record required for Microsoft
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
     
 5. Add the CNAME record.
     
-    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
-    
-    (Choose the **Type** value from the drop-down list.) 
+    In the **Type** box for the new record choose **CNAME** from the drop-down list, and then type or copy and paste the other values from the following table. 
     
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
-   
-    ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
 6. Select **Add**.
-    
-    ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
     
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -137,25 +121,19 @@ To verify the record in Microsoft 365:
   
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
     
-5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
-    
-    (Choose the **Type** value from the drop-down list.) 
+5. In the **Type** box for the new record choose **TXT/SPF** from the drop-down list, and then type or copy and paste the other values from the following table.
     
     |**Hostname**|**Type**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
-   
-    ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
 6. Select **Add**.
-    
-    ![Select Add](../../media/7906dd91-fd23-44c3-bb37-ef185655c6eb.png)
 
 ## Advanced option: Skype for Business
 
@@ -165,7 +143,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
@@ -173,25 +151,17 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 5. Add the first of the two SRV records:
     
-   In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table.
-    
-    (Choose the **Type** value from the drop-down list.) 
+   In the **Type** box for the new record choose **SRV** from the drop-down list, and then type or copy and paste the other values from the following table.
     
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
-    |Hostname|Type|Priority|TTL|Destination SRV|
+    |**Hostname**|**Type**|**Priority**|**TTL**|**Destination SRV**|
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
-   
-    ![Copy and paste the values from the table](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
 6. Select **Add**.
-    
-    ![Select Add](../../media/5fd9d3a2-a8bb-466b-829f-b3a6e54b5104.png)
   
-7. To add the other SRV record:
-    
-    In the **Advanced DNS** section, create a record by using the values from the second row in the table, and then again select **Add** to complete that record. 
+7. To add the other SRV record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -202,58 +172,46 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 1. Add the first CNAME record.
     
-    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+    In the **Type** box for the new record choose **CNAME** from the drop-down list, and then type or copy and paste the other values from the following table.
     
-    (Choose the **Type** value from the drop-down list.) 
-    
-    |**Type**|**Host**|**Value**|
+    | **Hostname** |**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-   
-    ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    |sip  <br/>|CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/>|CNAME  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
   
 1. Select **Add**.
-    
-    ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-1. Using the preceding three steps and the values from the second row in the table, add the other CNAME record.
+1. Add the other CNAME record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
-This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs two CNAME records so that users can enroll devices to the service.
 
 ### Add the two required CNAME records
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
+2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
   
 7. Add the first CNAME record.
     
-    In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+    In the **Type** box for the new record choose **CNAME** from the drop-down list, and then type or copy and paste the other values from the following table.
     
-    (Choose the **Type** value from the drop-down list.) 
-    
-    |**Type**|**Host**|**Value**|
+ | **Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
-    |CNAME  <br/> |enterpriseregistration <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
-   
-    ![Copy and paste the values from the table](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> | CNAME  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
   
 1. Select **Add**.
-    
-    ![Select Add](../../media/825a9854-559d-4a22-90ac-5e7a0a54269a.png)
   
-1. Using the preceding three steps and the values from the second row in the table, add the other CNAME record.
+1. Add the other CNAME record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
