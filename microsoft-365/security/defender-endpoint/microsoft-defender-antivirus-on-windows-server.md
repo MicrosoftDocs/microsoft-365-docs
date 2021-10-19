@@ -57,8 +57,6 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 
 If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
 
-
-
 > [!NOTE]
 > This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
 
@@ -228,7 +226,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 | Procedure | Description |
 |---|---|
-| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Windows Defender**, and then select **Turn off Windows Defender Antivirus**. |
+| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Administrative Template** > **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection**, and then select **Enabled** > **OK**. |
 | Disable Microsoft Defender Antivirus using a registry key | To use the the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). |
 | Disable Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |
