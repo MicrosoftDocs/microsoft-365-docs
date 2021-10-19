@@ -34,7 +34,7 @@ ms.technology: m365d
 
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
-You can join this table with the [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) table. Using the ConfigurationId to join the tables you can, for example, include a text description from `DeviceTvmSecureConfigurationAssessmentKB` in the configuration assessment results.
+You can join this table with the [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) table. Using the ConfigurationId to join the tables you can, for example, include a text description of the configuration from the `DeviceTvmSecureConfigurationAssessmentKB` table, in the configuration assessment results.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
