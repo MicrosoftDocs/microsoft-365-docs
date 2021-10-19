@@ -30,19 +30,6 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
   
 If Wix is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
-These are the main records to add. 
-  
-- [Add a TXT record for verification](#add-a-txt-record-for-verification).
-    
-- [Add an MX record so email for your domain will come to Microsoft](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft).
-    
-- [Add the CNAME record required for Microsoft](#add-the-cname-record-required-for-microsoft).   
-- [Add a TXT record for SPF to help prevent email spam](#add-a-txt-record-for-spf-to-help-prevent-email-spam).
-    
-- [Advanced option: Skype for Business](#advanced-option-skype-for-business).
-
-- [Advanced option: Intune and Mobile Device Management for Microsoft 365](#advanced-option-intune-and-mobile-device-management-for-microsoft-365).
-    
 After you add these records at Wix, your domain will be set up to work with Microsoft services.
   
 > [!NOTE]
