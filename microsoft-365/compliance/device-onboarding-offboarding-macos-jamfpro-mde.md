@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
+title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,18 +14,19 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
+# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
 
 You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention.
 
 > [!IMPORTANT]
-> Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
+> Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
 
 **Applies to:**
 
+- Customers who have MDE deployed to their macOS devices.
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 <!--- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)-->
 
@@ -41,7 +42,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions is a thirteen phase process.
+Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
 
@@ -49,12 +50,10 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 > You can download the individual configuration files from a single folder or download a single archive file that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-### Get the device onboarding package
+<!--### Get the device onboarding package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
@@ -65,6 +64,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 1. Choose **Download onboarding package**
  
 1. Extract the contents of the device onboarding package. In the **JAMF** folder you should see the *DeviceComplainceOnboarding.plist* file.
+
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
@@ -87,7 +87,7 @@ Onboarding a macOS device into Compliance solutions is a thirteen phase process.
 6. Choose **Save**.
 
 7. Choose **Done**.
-
+-->
 ### Configure Preference domain using the JAMF PRO console
 
 > [!IMPORTANT]
@@ -148,7 +148,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 	- Notifications in Notification Center: `display`
     - Badge app icon: `display`
 -->
-### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
+<!--### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
 1. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV MAU settings`
@@ -172,9 +172,9 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1. Choose **Save**.
 
 1. Choose **Done**.
+-->
 
-
-### Create and deploy a configuration profile for Grant full disk access
+### Update your existing configuration profile for Grant full disk access
 
 1. Download the **fulldisk.mobileconfig** file HENRY TO PROVIDE LINK
 
@@ -186,7 +186,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 1. Upload the **kext.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 -->
-### Create and deploy a configuration profile for System extensions
+<!--### Create and deploy a configuration profile for System extensions
 
 1. Create a JAMF Pro configuration file using the procedures in [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV System Extensions`
@@ -208,14 +208,14 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1. Choose **Save**.
 
 1. Choose **Done**.
-
-### Configure Network extension
+-->
+<!--### Configure Network extension
 
 1.	Download **netfilter.mobileconfig** HENRY TO PROVIDE LINK
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-
+-->
 ### Grant accessibility access to DLP
 
 1. Download **accessibility.mobileconfig** HENRY TO PROVIDE LINK
@@ -223,12 +223,12 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 
-### Deploy Microsoft DLP enforcement package
+<!--### Deploy Microsoft DLP enforcement package
 
 Follow the procedures in 
 
 NO PROCEDURES PROVIDED
-
+-->
 
 ### Check the macOS device 
 
