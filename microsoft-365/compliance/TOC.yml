@@ -319,8 +319,12 @@
             href: device-onboarding-macos-overview.md
           - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
             href: device-onboarding-offboarding-macos-intune.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-intune-mde.md
           - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
             href: device-onboarding-offboarding-macos-jamfpro.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
