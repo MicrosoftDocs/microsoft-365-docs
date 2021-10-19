@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,7 +26,6 @@ ms.collection:
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
 - The simplified configuration process in Microsoft Defender for Business (recommended); or 
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
-
 
 The following table describes each experience:
 
