@@ -1,8 +1,7 @@
 ---
 title: Enable controlled folder access
-keywords: Controlled folder access, windows 10, windows defender, ransomware, protect, files, folders, enable, turn on, use
+keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.topic: article
 ms.mktglfcycl: manage
@@ -28,7 +27,7 @@ ms.collection: m365-security-compliance
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10 and Windows Server 2019.
+[Controlled folder access](controlled-folders.md) helps you protect valuable data from malicious apps and threats, such as ransomware. Controlled folder access is included with Windows 10, Windows 11, and Windows Server 2019.
 
 You can enable controlled folder access by using any of these methods:
 

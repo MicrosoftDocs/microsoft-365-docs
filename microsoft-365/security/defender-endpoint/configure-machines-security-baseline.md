@@ -2,8 +2,6 @@
 title: Increase compliance to the Microsoft Defender for Endpoint security baseline
 description: The Microsoft Defender for Endpoint security baseline sets security controls to provide optimal protection.
 keywords: Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Microsoft Defender for Endpoint ASR, security baseline
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -39,7 +37,7 @@ Before you can deploy and track compliance to security baselines:
 
 ## Compare the Microsoft Defender for Endpoint and the Windows Intune security baselines
 
-The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, as well as settings for some security features like Microsoft Defender Antivirus. In contrast, the Defender for Endpoint baseline provides settings that optimize all the security controls in the Defender for Endpoint stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
+The Windows Intune security baseline provides a comprehensive set of recommended settings needed to securely configure devices running Windows, including browser settings, PowerShell settings, and settings for some security features like Microsoft Defender Antivirus. In contrast, the Defender for Endpoint baseline provides settings that optimize all the security controls in the Defender for Endpoint stack, including settings for endpoint detection and response (EDR) as well as settings also found in the Windows Intune security baseline. For more information about each baseline, see:
 
 - [Windows security baseline settings for Intune](/intune/security-baseline-settings-windows)
 - [Microsoft Defender for Endpoint baseline settings for Intune](/intune/security-baseline-settings-defender-atp)
@@ -51,7 +49,7 @@ Ideally, devices onboarded to Defender for Endpoint are deployed both baselines:
 
 ## Monitor compliance to the Defender for Endpoint security baseline
 
-The **Security baseline** card on [device configuration management](configure-machines.md) provides an overview of compliance across Windows 10 devices that have been assigned the Defender for Endpoint security baseline.
+The **Security baseline** card on [device configuration management](configure-machines.md) provides an overview of compliance across Windows 10 and Windows 11 devices that have been assigned the Defender for Endpoint security baseline.
 
 ![Security baseline card.](images/secconmgmt_baseline_card.png)
 
@@ -71,7 +69,7 @@ To review specific devices, select **Configure security baseline** on the card. 
 
 ## Review and assign the Microsoft Defender for Endpoint security baseline
 
-Device configuration management monitors baseline compliance only of Windows 10 devices that have been specifically assigned the Microsoft Defender for Endpoint security baseline. You can conveniently review the baseline and assign it to devices on Intune device management.
+Device configuration management monitors baseline compliance only of Windows 10 and Windows 11 devices that have been specifically assigned the Microsoft Defender for Endpoint security baseline. You can conveniently review the baseline and assign it to devices on Intune device management.
 
 1. Select **Configure security baseline** on the **Security baseline** card to go to Intune device management. A similar overview of baseline compliance is displayed.
 

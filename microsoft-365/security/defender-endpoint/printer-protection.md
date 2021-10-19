@@ -43,7 +43,7 @@ To see device configuration reports, the account must have view reports permissi
 
 ## Prepare your endpoints
 
-Make sure that the Windows 10 devices that you plan on deploying Printer Protection to meet these requirements.
+Make sure that the Windows 10 or Windows 11 devices that you plan on deploying Printer Protection to meet these requirements.
 
 1. The following Windows Updates are installed.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
