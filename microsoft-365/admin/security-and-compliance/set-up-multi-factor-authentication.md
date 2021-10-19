@@ -94,7 +94,6 @@ For most subscriptions modern authentication is automatically turned on, but if 
 2. Under the **Services** tab, choose **Modern authentication**, and in the **Modern authentication** pane, make sure **Enable Modern authentication** is selected. Choose **Save changes**.
 
 
-
 ## Next steps
 
 - [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
