@@ -107,17 +107,18 @@ See the [attack surface reduction](attack-surface-reduction.md) topic for detail
 
 ### Use PowerShell to exclude files and folders
 
-1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**
+1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
+
 2. Enter the following cmdlet:
 
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionOnlyExclusions "<fully qualified path or resource>"
     ```
 
-Continue to use `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` to add more folders to the list.
-
-> [!IMPORTANT]
-> Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
+    Continue to use `Add-MpPreference -AttackSurfaceReductionOnlyExclusions` to add more folders to the list.
+    
+    > [!IMPORTANT]
+    > Use `Add-MpPreference` to append or add apps to the list. Using the `Set-MpPreference` cmdlet will overwrite the existing list.
 
 ### Use MDM CSPs to exclude files and folders
 
