@@ -52,6 +52,8 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 
 Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). Watch this video for a quick overview of MTD capabilities and deployment:
 
+<br/>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMpiC]
 
 For more details, refer to the links below.
@@ -79,6 +81,8 @@ This helps reduce potential issues that could arise while rolling out the servic
 ### End-user onboarding
 
 - [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): This can be applied to ensure end-users onboard to the Microsoft Defender for Endpoint app after deploying. Watch this video for a quick demo on configuring conditional access with Defender for Endpoint risk signals. 
+
+  <br/>
 
   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMwR1]
 
