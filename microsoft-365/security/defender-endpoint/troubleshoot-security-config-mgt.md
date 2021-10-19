@@ -28,9 +28,7 @@ ms.technology: mde
 
  
 
-If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met.  
-
-See [<span class="underline">Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint.</span>](https://review.docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/security-config-management?view=o365-worldwide&branch=security-config#before-you-begin)  
+If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met. For more information, see [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management#before-you-begin).
 
  
 
