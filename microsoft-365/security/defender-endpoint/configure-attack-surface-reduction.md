@@ -53,7 +53,7 @@ Defender for Endpoint includes several attack surface reduction capabilities. To
 
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
-
+>
 > - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
 > - Group Policy
 > - PowerShell cmdlets
