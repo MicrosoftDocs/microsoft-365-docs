@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,7 +25,7 @@ ms.collection:
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
-The following table describes the roles you can assign in Microsoft Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
+The following table describes the three types of roles that can be assigned in Microsoft Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
 
 | Permission level | Description |
 |:---|:---|
