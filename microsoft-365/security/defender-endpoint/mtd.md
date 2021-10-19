@@ -34,9 +34,8 @@ Microsoft Defender for Endpoint on Android and iOS is our **mobile threat defens
 ## Key capabilities
 
 Microsoft Defender for Endpoint on Android and iOS provides the below key capabilities, For information about the latest features and benefits, read our [announcements](https://aka.ms/mdeblog).
-<br>
 
-****
+<br>
 
 |Capability|Description|
 |---|---|
@@ -53,6 +52,8 @@ All these capabilities are available for Microsoft Defender for Endpoint license
 
 Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsoft Endpoint Manager (MEM). Watch this video for a quick overview of MTD capabilities and deployment:
 
+<br/>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMpiC]
 
 For more details, refer to the links below.
@@ -68,8 +69,11 @@ During evaluation of mobile threat defense with Microsoft Defender for Endpoint,
 This helps reduce potential issues that could arise while rolling out the service. Below are few tests and exit criteria that might help:
 
 - Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
+
 - Run a malware detection test on an Android device: Install any test virus app from the Google play store and verify that it gets detected by Microsoft Defender for Endpoint. Here is an example app that can be used for this test: [Test virus](https://play.google.com/store/apps/details?id=com.androidantivirus.testvirus). Note that on Android Enterprise with a work profile, only the work profile is supported.
+
 - Run a phishing test: Browse to https://smartscreentestratings2.net and verify that it gets blocked by Microsoft Defender for Endpoint. Note that on Android Enterprise with a work profile, only the work profile is supported.
+
 - Alerts appear in dashboard: Verify that alerts for above detection tests appear on the [security console](https://security.microsoft.com).
 
 ## Deployment best practices
@@ -78,7 +82,9 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - [Configure Conditional Access to enforce user onboarding](android-configure.md#conditional-access-with-defender-for-endpoint-on-android): This can be applied to ensure end-users onboard to the Microsoft Defender for Endpoint app after deploying. Watch this video for a quick demo on configuring conditional access with Defender for Endpoint risk signals. 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMwR1]
+  <br/>
+
+  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMwR1]
 
 ### Simplify Onboarding
 
