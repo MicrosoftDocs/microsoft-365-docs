@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Microsoft 365 data locations"
 ms.author: deanw
 author: dmwmsft
@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
@@ -14,26 +14,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Determine where your Microsoft 365 customer data is stored worldwide"
 ---
-
-<!--
-Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
--->
 
 # Where your Microsoft 365 customer data is stored
 
 The tables below shows where customer data is stored at-rest for Microsoft 365 services across all of Microsoft's global cloud locations. Expand the location of your billing address country to find out where customer data for each service would be stored.
 
-Customers should view tenant specific data location information in your Microsoft 365 Admin Center in **Settings | Org settings | Organization Profile | Data location**.
+If your business is located in the European Union, see [Data locations for the European Union](EU-data-storage-locations.md) for more information. 
+
+Customers should view tenant specific data location information in your Microsoft 365 admin center in **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a> > **Data location**. If you [requested to move to a new Geo](request-your-data-move.md), the data location information in the Microsoft 365 admin center may show only your new Geo even though some data may be stored temporarily in your prior Geo during the transition. 
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
 Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
-
 
 If Customer’s billing address is outside Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within Europe or North America.  If Customer’s billing address is in Europe and Customer has an Office 365 Education subscription, then notwithstanding the “Location of Customer Data at Rest for Core Online Services” section of the OST, Microsoft may provision Customer’s Office 365 tenant in, transfer Customer Data to, and store Customer Data at rest anywhere within the European Union.
 
@@ -52,11 +50,11 @@ Microsoft does not disclose the exact addresses of its data centers. We establis
 
 ### Does the location of your customer data have a direct impact on your end users' experience?
 
-The performance of Microsoft 365 is not simply proportional to a user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](https://go.microsoft.com/fwlink/p/?linkid=862645).
+The performance of Microsoft 365 is not simply proportional to a user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](./network-planning-and-performance.md).
 
 ### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
 
-To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](https://go.microsoft.com/fwlink/p/?linkid=864391) and more details in the [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
+To help you comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Please review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft 365 Compliance](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help you manage your data, comply with legal and regulatory requirements, and monitor actions taken on your data.
 
 ### Who can access your data and according to what rules?
 
@@ -84,7 +82,7 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 ### What services support Multi-Geo?
 
-[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive and SharePoint Online. Microsoft is investigating Multi-Geo for other Microsoft 365 services.
+[Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
 ### What are the exceptions for Intune data locations?
 
@@ -99,7 +97,7 @@ Microsoft will not store Intune customer data at rest outside the stated Geo. ex
    
   - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
 
-Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. 
+Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service’s own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.  
 
 ## Data Center Locations
 
@@ -122,12 +120,13 @@ For country/region specific data centers, the following defines the cities where
 | Country | City |
 | --- | --- |
 | Australia | Sydney, Melbourne |
+| Brazil | Rio, Campinas |
 | Canada | Quebec City, Toronto |
 | European Union | Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam) |
 | France | Paris, Marseille |
 | Germany | Frankfurt, Berlin |
 | India | Chennai, Mumbai, Pune |
-| Japan | Osaka, Tokyo, Saitama |
+| Japan | Osaka, Tokyo |
 | South Korea | Busan, Seoul |
 | Norway | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
@@ -136,7 +135,7 @@ For country/region specific data centers, the following defines the cities where
 | United Kingdom | Durham, London, Cardiff |
 | United States |  Boydton, Cheyenne, Chicago, Des Moines, Quincy, San Antonio, Santa Clara, San Jose |
 
-New Microsoft 365 tenants are defaulted to Geo based on the country of the billing address associated with that tenant's first subscription. To confirm where customer data is stored for existing Office 365 services, please view tenant specific data location information in your Office 365 Admin Center in Settings | Organization profile | Data location card. Alternatively, expand the country that your business is based in, from the list below, to find out where customer data would be stored if you were to start using a Microsoft 365 Service today.
+New Microsoft 365 tenants are defaulted to Geo based on the country of the billing address associated with that tenant's first subscription. To confirm where customer data is stored for existing Office 365 services, please view tenant specific data location information in your Office 365 Admin Center in Settings | Org settings | Organization profile | Data location card. Alternatively, expand the country that your business is based in, from the list below, to find out where customer data would be stored if you were to start using a Microsoft 365 Service today.
 
 ## Afghanistan
 <details><summary>Click to expand</summary><p>
@@ -243,7 +242,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 2 – Asia Pacific |
 | SharePoint Online | Global Geography 2 – Asia Pacific |
 | Skype for Business | Global Geography 2 – Asia Pacific |
-| Microsoft Teams | United States |
+| Microsoft Teams | Global Geography 2 – Asia Pacific |
 | Office Online &amp; Mobile | Global Geography 2 – Asia Pacific |
 | EOP | Global Geography 2 – Asia Pacific |
 | Intune | Global Geography 2 – Asia Pacific |
@@ -411,7 +410,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -507,7 +506,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -810,7 +809,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Workplace Analytics | United States |
 </p></details>
 
-## Bosnia
+## Bosnia and Herzegovina
 <details><summary>Click to expand</summary><p>
 
 | Service | Location |
@@ -887,19 +886,19 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 | Service | Location |
 | --- | --- |
-| Exchange Online | Global Geography 3 – Americas |
-| OneDrive for Business | Global Geography 3 – Americas |
-| SharePoint Online | Global Geography 3 – Americas |
+| Exchange Online | Brazil |
+| OneDrive for Business | Brazil |
+| SharePoint Online | Brazil |
 | Skype for Business | United States |
-| Microsoft Teams | United States |
-| Office Online &amp; Mobile | Global Geography 3 – Americas |
-| EOP | Global Geography 3 – Americas |
+| Microsoft Teams | Brazil |
+| Office Online &amp; Mobile | Brazil |
+| EOP | Brazil |
 | Intune | United States |
-| MyAnalytics | Global Geography 3 – Americas |
+| MyAnalytics | Brazil |
 | Planner | United States |
 | Sway | United States |
 | Yammer | United States |
-| OneNote Services | Global Geography 3 – Americas |
+| OneNote Services | Brazil |
 | Stream | United States |
 | Whiteboard | United States |
 | Forms | United States |
@@ -2115,7 +2114,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -2907,7 +2906,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -3051,7 +3050,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -4443,7 +4442,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5307,7 +5306,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5547,7 +5546,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |
@@ -5811,7 +5810,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | OneDrive for Business | Global Geography 1 – EMEA |
 | SharePoint Online | Global Geography 1 – EMEA |
 | Skype for Business | Global Geography 1 – EMEA |
-| Microsoft Teams | Global Geography 2 – Asia Pacific |
+| Microsoft Teams | Global Geography 1 – EMEA |
 | Office Online &amp; Mobile | Global Geography 1 – EMEA |
 | EOP | Global Geography 1 – EMEA |
 | Intune | Global Geography 1 – EMEA |

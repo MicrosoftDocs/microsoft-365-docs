@@ -2,13 +2,13 @@
 title: "Microsoft 365 usage analytics data model"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -27,10 +27,10 @@ description: "Learn how usage analytics connects to an API and provides monthly 
 
 ## Data for the Microsoft 365 usage analytics tables
 
-Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs are in preview and can be accessed at `https://reports.office.com/pbi/v1.0/\<tenantid\>` (replace the \<tenant id\> with your tenant GUID). 
+Microsoft 365 usage analytics connects to an API that exposes a multidimensional data model. The APIs that Microsoft 365 usage analytics uses to generate its data are from the various, generally-available, Graph APIs. The function of the Microsoft 365 usage analytics API by itself is not generally available.
   
 > [!NOTE]
-> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](https://go.microsoft.com/fwlink/p/?linkid=864336). 
+> For more information, see [Working with Microsoft 365 usage reports in Microsoft Graph](/graph/api/resources/report). 
   
 This API provides information about the monthly trend of usage of the various Microsoft 365 services. For the exact data returned by the API refer to the table in the following section.
   
@@ -104,14 +104,14 @@ This table contains data about each user who had an activity in any of the servi
 |ODB_FileSynched  <br/> |Number of files this user synchronized on any OneDrive for Business.  <br/> |
 |ODB_FileSharedInternally  <br/> |Number of files this user shared internally from any OneDrive for Business, or with users within groups (that might include external users).  <br/> |
 |ODB_FileSharedExternally  <br/> |Number of files this user shared externally from any OneDrive for Business.  <br/> |
-|ODB_AccessByOwner  <br/> |Number of files the user interacted with that reside on their own OneDrive for Business.  <br/> |
-|ODB_AccessOthers  <br/> |Number of files this user interacted with which reside on another user's OneDrive for Business.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Number of files with this user interacted on any group site.  <br/> |
+|ODB_AccessedByOwner  <br/> |Number of sites the user interacted with that reside on their own OneDrive for Business.  <br/> |
+|ODB_AccessedByOthers  <br/> |Number of sites this user interacted with which reside on another user's OneDrive for Business.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Number of files this user interacted with on any group site.  <br/> |
 |SPO_GroupFileSynched  <br/> |Number of files this user synchronized on any group site.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Number of files this user shared externally from any group site.  <br/> |
-|SPO_GroupAccessByOwner  <br/> |Number of files the user interacted with that reside on a group site that they own.  <br/> |
-|SPO_GroupAccessByOthers  <br/> |Number of files the user interacted with that reside on a group site that another user owns.  <br/> |
+|SPO_GroupAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a group site that they own.  <br/> |
+|SPO_GroupAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a group site that another user owns.  <br/> |
 |SPO_OtherFileViewedModified  <br/> |Number of files with which this user interacted on any other site.  <br/> |
 |SPO_OtherFileSynched  <br/> |Number of files this user synchronized from any other site.  <br/> |
 |SPO_OtherFileSharedInternally  <br/> |Number of files this user shared internally from any other site, or with users within groups (that might include external users). <br/> |
@@ -122,8 +122,8 @@ This table contains data about each user who had an activity in any of the servi
 |SPO_TeamFileSynched  <br/> |Number of files this user synchronized from any team site.  <br/> |
 |SPO_TeamFileSharedInternally  <br/> |Number of files this user shared internally from any team site, or with users within groups (that might include external users).  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |Number of files this user shared externally from any team site.  <br/> |
-|SPO_TeamAccessByOwner  <br/> |Number of files the user interacted with that reside on a team site that they own.  <br/> |
-|SPO_TeamAccessByOthers  <br/> |Number of files the user interacted with that reside on a team site that another user owns.  <br/> |
+|SPO_TeamAccessedByOwner  <br/> |Number of sites the user interacted with that reside on a team site that they own.  <br/> |
+|SPO_TeamAccessedByOthers  <br/> |Number of sites the user interacted with that reside on a team site that another user owns.  <br/> |
 |Teams_ChatMessages  <br/> |Number of chat messages sent.  <br/> |
 |Teams_ChannelMessage  <br/> |Number of messages posted to channels.  <br/> |
 |Teams_CallParticipate  <br/> |Number of calls the user participated in.  <br/> |
@@ -210,8 +210,8 @@ This table consists of month over month summary data about the usage or activity
 |DocumentCount  <br/> |Total number of documents that existed on the site at the end of the timeframe.  <br/> |
 |Diplansed  <br/> |Total storage used summed across all sites at the end of the timeframe.  <br/> |
 |ActivityType  <br/> |Number of sites that recorded the various types of file activity (any/active files/ files shared EXT/INT/files synched).  <br/> Represents any of the file activity that was performed.  <br/> |
-|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites.  <br/> |
-|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites.  <br/> |
+|SitesWithOwnerActivities  <br/> |Number of active sites, where the site owner performed a particular file activity on their own sites. You can get the site owner from the PowerShell command **get-sposite**. This is the person who is responsible for the site.   <br/> |
+|SitesWithNonOwnerActivities  <br/> |Number of active sites summed up for the month, where the users other than the site owner performed a particular file activity on sites. You can get the site owner from the PowerShell command **get-sposite**. This is the person who is responsible for the site. <br/> |
 |ActivityTotalSites  <br/> |Number of sites that recorded any activity during the timeframe. If a site that had activity earlier in the timeframe, and was deleted by the end of the timeframe, it would still be counted in the active site total for that timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
@@ -273,7 +273,17 @@ This table provides data about how Microsoft 365 Groups is used across the organ
 |YAM_LikedActivities  <br/> |Number of Yammer like activities.  <br/> |
 |YAM_PostedActivties  <br/> |Number of Yammer post activities.  <br/> |
 |YAM_ReadActivites  <br/> |Number of Yammer read activities.  <br/> |
-   
+
+### Data table - Tenant Office Licenses
+
+This table provides month-over-month summary data about the license assignment for users. 
+  
+|**Column name**|**Column description**|
+|:-----|:-----|
+|LicenseName  <br/> |Name of the license.  <br/> |
+|AssignedCount  <br/> |Number of assigned licenses.  <br/> |
+|Timeframe  <br/> |Month value.  <br/> |
+
 ### Data table - Tenant Office Activation
 
 The table provides data about the number of Office subscription activations across the service plans, for example, Microsoft 365 Apps for enterprises, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).
@@ -290,5 +300,3 @@ The table provides data about the number of Office subscription activations acro
 |WinRtCount  <br/> |Number of activations per service plan for Windows Mobile device by the end of the timeframe.  <br/> |
 |Timeframe  <br/> |This column has the date value. Used as Many to one relationship for Calendar table.  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
-   
-

@@ -3,13 +3,13 @@ title: "Search statistics in Advance eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: esclee
+author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150

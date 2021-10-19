@@ -2,14 +2,17 @@
 title: "Assign and complete improvement actions in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -51,9 +54,22 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [Comp
 
 2. In the edit status flyout pane, select the **Assigned to** box to show a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
 
-3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
+3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action. 
+> [!NOTE]
+> US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
 
 The assigned user can then perform the recommended actions.
+
+#### Assign multiple improvement actions to a single user
+
+You can assign multiple improvement actions to one user by following these steps:
+
+1. Go to your Improvement actions page.
+2. Select the area to the left of the improvement action's name. A round check icon will appear indicating you've selected that action. Check all the actions you want to assign.
+3. Select the **Assign to user** link at the top of the improvement actions table.
+4. A pop-up window appears. In the **Assign to** field, start typing the name of the person you want to assign the actions to. You can also select from the list of suggested people.
+5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
+6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
 
 ## Perform work and store documentation
 
@@ -144,6 +160,12 @@ Accepting updates helps ensure you have the most updated guidance on using solut
 **Why you might want to defer an update**
 
 If you’re in the middle of completing an assessment that includes the improvement action, you may want to ensure you’ve finished work on it before you accept the update. You can defer the update for a later time by selecting **Cancel** on the review update flyout pane.
+
+#### Accept all updates at once
+
+If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
+
+Note that when you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
 
 ## Export a report
 

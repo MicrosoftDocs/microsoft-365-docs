@@ -2,19 +2,20 @@
 title: "Microsoft 365 Reports in the admin center - OneDrive for Business usage"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MST160
@@ -41,7 +42,7 @@ For example, the OneDrive card on the dashboard gives you a high-level view of t
 
 You can view the usage in the OneDrive report by choosing the **Usage** tab.<br/>![Microsoft 365 reports - Microsoft OneDrive usage report.](../../media/3cdaf2fb-1817-479b-a0e1-2afa228690cf.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![OneDrive usage report - choose columns](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![OneDrive usage report - choose columns.](../../media/9ee80f25-cfe3-411d-8e31-08f1507d18c1.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

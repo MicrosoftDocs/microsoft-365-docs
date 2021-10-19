@@ -1,12 +1,12 @@
 ---
 title: "Plan your upgrade from Office 2007 or 2010 servers and clients"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -20,7 +20,7 @@ description: "This article contains resources for users using Office 2007 or Off
 
 # Plan your upgrade from Office 2007 or Office 2010 servers and clients
 
-*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
+*This article applies to both Microsoft 365 for Enterprise and Office 365 for Enterprise.*
 
 If your organization uses old versions of Office products and servers, now is a great time to start planning your upgrade. Office 2007 products and services have reached their [end of support](upgrade-from-office-2007-servers-and-products.md). For Office 2010 products and services:
 
@@ -35,16 +35,16 @@ Use the resources in this article to get started on your upgrade.
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) is a combination of innovative Office apps, intelligent cloud services, and world-class security that's designed to help you achieve more.
 
-Microsoft 365 includes the licenses and capabilities to help ensure that your organization is working on the latest Windows operating system. It also ensures that your Windows, iOS, and Android devices are enrolled with and secured by policies that require authentication and data protection. Additionally, Windows 10 and your Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) client software is continually updated to include the latest features and security updates.
+Microsoft 365 includes the licenses and capabilities to help ensure that your organization is working on the latest Windows operating system. It also ensures that your Windows, iOS, and Android devices are enrolled with and secured by policies that require authentication and data protection. Additionally, Windows 10 and your Microsoft 365 Apps for Enterprise (previously named Office 365 ProPlus) client software is continually updated to include the latest features and security updates.
   
 Microsoft 365 is the way to digitally transform your business with constantly improving devices and productivity experiences that are enabled and secured by the Microsoft cloud.
  
 |Resource|Description|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|Get information about the versions of Microsoft 365.|
-|[Microsoft 365 Business documentation](https://docs.microsoft.com/microsoft-365/business/)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
-|[Microsoft 365 Education documentation](https://docs.microsoft.com/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
-|[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365/enterprise/)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
+|[Microsoft 365 for Business documentation](../admin/index.yml)|Get detailed information about the version of Microsoft 365 for small and medium businesses.|
+|[Microsoft 365 for Education documentation](/microsoft-365/education/)|Get detailed information about the version of Microsoft 365 for educational organizations.|
+|[Microsoft 365 for Enterprise documentation](./index.yml)|Get detailed information about the version of Microsoft 365 for enterprise organizations.|
 |||
 
 ## What happens if I don't upgrade?
@@ -59,10 +59,10 @@ Organizations should consider several upgrade options:
 
   |Office 2007 products and services|Office 2010 products and services|
   |---|---|
-  |[Office 2007](https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap) (Desktop)|[Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap) (Desktop)|
+  |[Office 2007](/DeployOffice/office-2007-end-support-roadmap) (Desktop)|[Office 2010](/DeployOffice/office-2010-end-support-roadmap) (Desktop)|
   |[Exchange 2007](exchange-2007-end-of-support.md)|[Exchange 2010](exchange-2010-end-of-support.md)|
   |[SharePoint 2007](sharepoint-2007-end-of-support.md)|[SharePoint 2010](upgrade-from-sharepoint-2010.md)|
-  |[Office Communications Server](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade)|
+  |[Office Communications Server](/skypeforbusiness/plan-your-deployment/upgrade)|[Lync Server 2010](/skypeforbusiness/plan-your-deployment/upgrade)|
   |[Project Server 2007](project-server-2007-end-of-support.md)|[Project Server 2010](project-server-2010-end-of-support.md)|
   |[PerformancePoint Server 2007](pps-2007-end-of-support.md)||
  
@@ -78,7 +78,7 @@ If you want help with planning your upgrade, consider one or more of the followi
 
 - If your organization purchases a qualifying number of Microsoft 365 licenses, our FastTrack team can help you through the setup process. For more information, see [FastTrack for Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365).
 
-- If you're part of a small organization, or if you prefer to handle your organization's Office upgrade yourself, see [Upgrade your Microsoft 365 Business users to the latest Office client](https://docs.microsoft.com/office365/admin/setup/upgrade-users-to-latest-office-client). 
+- If you're part of a small organization, or if you prefer to handle your organization's Office upgrade yourself, see [Upgrade your Microsoft 365 Business users to the latest Office client](/office365/admin/setup/upgrade-users-to-latest-office-client). 
   
 ## I'm a home user. What do I do?
 
@@ -109,4 +109,4 @@ If you choose not to upgrade now, your Office apps will continue to run accordin
    
 ## Related topics
   
-[Microsoft Lifecycle Policy](https://go.microsoft.com/fwlink/?linkid=865200)
+[Microsoft Lifecycle Policy](/lifecycle/)

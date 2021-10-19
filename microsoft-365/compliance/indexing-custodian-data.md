@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -20,17 +20,17 @@ description: "When a custodian is added to an Advanced eDiscovery case, any cont
 
 # Advanced indexing of custodian data
 
-When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed is reprocessed to make it fully searchable.  This process is called *Advanced indexing*. Content can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.
+When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed or had indexing errors is reindexed to make it fully searchable.  This reindexing process is called *Advanced indexing*. There are many reasons that content is partially indexed or has indexing errors. This includes image files or the presence of images in a file, unsupported file types, or file sized indexing limits. For SharePoint files, Advanced indexing only runs on items are marked as partially indexed or that have indexing errors. In Exchange, email messages that have image attachments are not marked as partially indexed or with indexing errors. This means that those files will not be reindexed by the Advanced indexing process.
 
 To learn more about processing support and partially indexed items, see:
 
 - [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 
-- [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md)
+- [Partially indexed items in eDiscovery](partially-indexed-items-in-content-search.md)
 
-- [File formats indexed by Exchange Search](https://docs.microsoft.com/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
+- [File formats indexed by Exchange Search](/exchange/file-formats-indexed-by-exchange-search-exchange-2013-help)
 
-- [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
+- [Default crawled file name extensions and parsed file types in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)
 
 ## Viewing Advanced indexing results
 
@@ -38,7 +38,7 @@ After the Advanced indexing process is completed, you can get an understanding o
 
 This view  also includes the number of items that require remediation and another graph of errors by file type. For more information, see:
 
-- [Error remediation when processing data](error-remediation.md)
+- [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [Single item error remediation](single-item-error-remediation.md)
 

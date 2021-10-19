@@ -1,13 +1,13 @@
 ---
 title: "Prepare for directory synchronization to Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -38,11 +38,14 @@ The benefits to hybrid identity and directory synchronization your organization 
 - Optionally enabling single sign-on scenario
 - Automating account changes in Microsoft 365
 
-For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](https://go.microsoft.com/fwlink/p/?LinkId=525398) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
+For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
 
 However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
 Follow these steps in order for the best results.
+
+> [!NOTE]
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
 
 ## 1. Directory cleanup tasks
 
@@ -108,7 +111,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must be unique within the directory.
 
     > [!NOTE]
-    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](/powershell/module/exchange/set-mailbox).
     >
 
 - **proxyAddresses**
@@ -117,12 +120,12 @@ The attributes that you need to prepare are listed here:
   - Maximum number of characters per value: 256
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
-  - Invalid characters: \< \> ( ) ; , [ ] " '
+  - Invalid characters: \< \> ( ) ; , [ ] "
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 
     > [!IMPORTANT]
-    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. If duplicate or unwanted addresses exist, see the Help topic [Removing duplicate and unwanted proxy addresses in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. Remove duplicate or unwanted addresses if they exist.
 
 - **sAMAccountName**
 
@@ -175,7 +178,7 @@ It's best to align these attributes to reduce confusion. To meet the requirement
 
 You may need to add an alternative UPN suffix to associate the user's corporate credentials with the Microsoft 365 environment. A UPN suffix is the part of a UPN to the right of the @ character. UPNs that are used for single sign-on can contain letters, numbers, periods, dashes, and underscores, but no other types of characters.
 
-For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## 5. Match the AD DS UPN with the Microsoft 365 UPN
 
