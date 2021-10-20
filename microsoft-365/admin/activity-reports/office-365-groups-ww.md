@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: "Get an Microsoft 365 groups report to know about the groups and their activities."
+description: "Get a Microsoft 365 groups report to know about the groups and their activities."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 groups
@@ -58,7 +58,7 @@ The **groups** report can be viewed for trends over the last 7 days, 30 days, 90
 |Emails in Exchange (total) |The total number of items in the group's mailbox. |
 |Mailbox storage used for Exchange (MB) |The storage used by the group's mailbox. |
 |SharePoint files (total) |The number of files stored in SharePoint group sites. |
-|SharePoint files (active) |The number of files in the SharePoint group site that were acted on (viewed or modified, synched , shared internally or externally) during the reporting period. |
+|SharePoint files (active) |The number of files in the SharePoint group site that were acted on (viewed or modified, synched, shared internally or externally) during the reporting period. |
 |Total site storage used for SharePoint (MB) |The amount of storage in MB used during the reporting period. |
 |Messages in Yammer (posted) |The number of messages posted in the Yammer group over the reporting period. |
 |Messages in Yammer (read) |The number of conversations read in the Yammer group over the reporting period. |
