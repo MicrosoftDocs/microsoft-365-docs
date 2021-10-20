@@ -2,7 +2,6 @@
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -51,7 +50,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows Server 2019, and Windows Server 2022.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -149,7 +148,7 @@ The Action center will show the scan information and the device timeline will in
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
 >[!IMPORTANT]
-> - This action is available for devices on Windows 10, version  1709 or later and Windows Server 2016. 
+> - This action is available for devices on Windows 10, version  1709 or later, Windows 11, and Windows Server 2016. 
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
@@ -177,8 +176,8 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 >[!IMPORTANT]
 >- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- Full isolation is available for devices on Windows 10, version 1703, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
->- Selective isolation is available for devices on Windows 10, version 1709 or later.
+>- Full isolation is available for devices on Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
+>- Selective isolation is available for devices on Windows 10, version 1709 or later, and Windows 11.
 >- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
