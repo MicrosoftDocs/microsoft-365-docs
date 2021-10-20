@@ -127,7 +127,7 @@ The table in this section summarizes the features and capabilities that are acti
  | Protection | Microsoft Defender Antivirus <br/><br/> Active mode | Microsoft Defender Antivirus <br/><br/> Passive mode | Microsoft Defender Antivirus <br/><br/> Disabled or uninstalled | [EDR in block mode](edr-in-block-mode.md) | 
  |---|---|---|---|---| 
  | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
- | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
+ | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
  | [Network protection](network-protection.md)  | Yes | No | No | No | 
  | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
  | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
