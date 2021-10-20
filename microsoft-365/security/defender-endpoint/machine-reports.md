@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: macapara; v-jweston
+author: mjcaparas; jweston-1
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
