@@ -31,7 +31,7 @@ For small- and medium-sized business (SMB) customers, Microsoft recommends enabl
 
 The following conditions must be met before a tenant will appear in the list:
 
-- The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support MFA, see [Plan an Azure Active Directory Multi-Factor Authentication deployment](/azure/active-directory/authentication/concept-mfa-licensing).
+- The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support MFA, see [Features and licenses for Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 
 - The customer tenant must be active within Microsoft 365 Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
 
