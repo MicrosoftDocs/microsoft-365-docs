@@ -26,7 +26,6 @@
   items: 
     - name: Users page overview
       href: m365-lighthouse-users-page-overview.md
-  items: 
     - name: Manage multifactor authentication
       href: m365-lighthouse-manage-mfa.md
 - name: Manage devices
