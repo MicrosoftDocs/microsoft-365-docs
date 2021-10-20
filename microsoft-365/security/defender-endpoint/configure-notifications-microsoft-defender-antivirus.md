@@ -23,7 +23,7 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 In Windows 10, application notifications about malware detection and remediation are more robust, consistent, and concise. Microsoft Defender Antivirus notifications appear on endpoints when scans are completed and threats are detected. Notifications follow both scheduled and manually triggered scans. These notifications also appear in the **Notification Center**, and a summary of scans and threat detections appear at regular time intervals.
 
@@ -46,7 +46,7 @@ You can configure the display of additional notifications, such as recent threat
 
 4. Select **Administrative templates**.
 
-5. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** > Reporting**.
+5. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** > **Reporting**.
 
 6. Double-click **Turn off enhanced notifications**, and set the option to **Enabled**. Then select **OK**. This will prevent additional notifications from appearing.
 
