@@ -60,17 +60,17 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
     ![OVH select TXT entry.](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-1. In the boxes for the new record, type or copy and paste the values from the following table. To assign a TTL value, choose **Personalized** from the drop-down list, and then type the value in the text box. 
+1. In the boxes for the new record, type or copy and paste the values from the following table. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
     
     |**Record type**|**Sub-domain**|**TTL**|**Value**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |MS=msxxxxxxxx  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |MS=msxxxxxxxx  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
 1. Select **Next**
 
 1. Select **Confirm**. 
     
-    ![OVH confirm TXT for verification](../../media/bde45596-9a55-4634-b5e7-16d7cde6e1b8.png)
+    ![OVH confirm TXT for verification.](../../media/bde45596-9a55-4634-b5e7-16d7cde6e1b8.png)
   
 1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -107,14 +107,14 @@ To verify the domain in Microsoft 365:
     
     ![OVH MX record type.](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-1. In the boxes for the new record, type or copy and paste the values from the following table. To assign a TTL value, choose **Personalized** from the drop-down list, and then type the value in the text box. 
+1. In the boxes for the new record, type or copy and paste the values from the following table. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
     
     > [!NOTE]
     > By default OVH uses relative notation for the target, which adds the domain name to the end of the target record. To use absolute notation instead, add a dot to the target record as shown in the table below. 
   
-    |**Record type**|**Sub-domain**|**TTL**|**Priority**|**Target**|
-    |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(leave blank)  <br/> |3600 (seconds﻿)  <br/> |10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
+    |**Sub-domain**|**TTL**|**Priority**|**Target**|
+    |:-----|:-----|:-----|:-----|
+    |(leave blank)  <br/> |3600 (seconds)  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH MX record for mail.](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -152,11 +152,11 @@ To verify the domain in Microsoft 365:
     
     ![OVH Add CNAME record type.](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
     
-1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Personalized** from the drop-down list, and then type the value in the text box. 
+1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
     
-    |**Record type**|**Sub-domain**|**Target**|**TTL**|
-    |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |3600 seconds  <br/> |
+    |**Sub-domain**|**TTL**|**Target**|
+    |:-----|:-----|:-----|
+    |autodiscover  <br/> |3600 (seconds)  <br/> |autodiscover.outlook.com.  <br/> |
    
     ![OVH CNAME record.](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
@@ -187,11 +187,11 @@ To verify the domain in Microsoft 365:
   
 1. Select **TXT**.
     
-1. In the boxes for the new record, type or copy and paste the following values.
+1. In the boxes for the new record, type or copy and paste the following values. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
     
-    |**Record type**|**Sub-domain**|**TTL**|**TXT Value**|
+    |**Sub-domain**|**TTL**|**Value**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
+    |(leave blank)  <br/> |3600 (seconds)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
     ![OVH Add TXT record for SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
@@ -208,37 +208,31 @@ To verify the domain in Microsoft 365:
 Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
-
-1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
-1. On the landing page, under **Domains**, select **Registered domains**.
+1. To get started, go to your domains page in OVH by using [this link](https://www.ovh.com/manager/). You'll be prompted to log in.
     
-1. Under **Domain Name**, select the domain you want to set up in Microsoft 365.
-
-    **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
-
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
-
-1. Select **Manage DNS**. 
-
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
-
-1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
-
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
-
-1. Select **Create record**.
-    
-1. In the boxes for the new record, type or copy and paste the values from the following table. 
-    
-    (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
-    
-    |**Record name**|**Record type**|**Value**|**TTL (Seconds)**|**Routing policy**|
-    |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls|SRV - Service locator|100 1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**><br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 300 |Simple|
-    |_sipfederationtls._tcp|SRV - Service locator|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.    | 300 |Simple|
+    ![OVH login.](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-7. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then again select **Create records**. 
+1. On the dashboard landing page, under **View all my activity**, select the name of the domain that you want edit.
+  
+1. Select **DNS zone**.
+    
+    ![OVH Select DNS zone.](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
+  
+1. Select **Add an entry**.
+    
+    ![OVH Add an entry.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
+
+1. Select **SRV**.
+    
+1. In the boxes for the new record, type or copy and paste the following values. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
+    
+    |**Sub-domain**|**TTL (Seconds)**| **Priority** | **Weight** | **Port**|**Target**|
+    |:-----|:-----|:-----|:-----|:-----|:-----|
+    |_sip._tls|3600 (s.) |100 |  1  | 443 |sipdir.online.lync.com. **This value MUST end with a period (.)**><br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 
+    |_sipfederationtls._tcp| 3600 (s.)|100 | 1 | 5061 | sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.    | 
+  
+7. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then select **Create records**. 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -258,17 +252,17 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. Select **Add an entry**.
     
     ![OVH Add an entry.](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
-  
+
 1. Select **CNAME**.
     
     ![OVH Add CNAME record type.](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
     
-1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Personalized** from the drop-down list, and then type the value in the text box. 
+1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
 
-    |**Record name**|**Record type**|**Value**| **TTL** |**Routing policy**|
-    |:-----|:-----|:-----|:-----|:-----|
-    |sip  <br/> |CNAME - Canonical name  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |300  <br/> |Simple  <br/> |
-    |lyncdiscover  <br/> |CNAME - Canonical name  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/>  |300  <br/> ||Simple  <br/> |
+    |**Sub-domain**| **TTL** | **Target** | 
+    |:-----|:-----|:-----|
+    |sip  <br/> | 3600 (s.)  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
+    |lyncdiscover  <br/> |3600 (s.) |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/>  |
   
 1. Select **Next**.
     
@@ -305,13 +299,13 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     ![OVH Add CNAME record type.](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
     
-1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Personalized** from the drop-down list, and then type the value in the text box. 
-    
-    |**Record name**|**Record type**|**Value**| **TTL** |**Routing policy**|
-    |:-----|:-----|:-----|:-----|:-----|
-    |enterpriseregistration  <br/> |CNAME - Canonical name  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |300  <br/> |Simple  <br/> |
-    |enterpriseenrollment  <br/> |CNAME - Canonical name  <br/> | enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/>|300  <br/> | |Simple  <br/> |
+1. In the boxes for the new record, type or copy and paste the values from the first row of the following table. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
   
+    |**Sub-domain**| **TTL** | **Target** | 
+    |:-----|:-----|:-----|
+    |enterpriseregistration  <br/>| 3600 (s.)  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/>  |3600 (s.) |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/>|
+
 1. Select **Next**.
     
     ![OVH Add CNAME values and select Next.](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)

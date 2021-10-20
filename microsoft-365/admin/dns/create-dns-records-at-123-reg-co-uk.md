@@ -46,10 +46,16 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 4. On the Manage your DNS page, select the **Advanced DNS** tab. 
-    
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 5. In the **Type** box for the new record choose **TXT/SPF** from the drop-down list, and then type or copy and paste the other values from the following table. 
     
     ||||
@@ -80,9 +86,15 @@ To verify the record in Microsoft 365:
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 5. In the **Type** box for the new record choose **MX** from the drop-down list, and then type or copy and paste the other values from the following table. 
     
@@ -100,9 +112,15 @@ To verify the record in Microsoft 365:
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 5. Add the CNAME record.
     
@@ -123,9 +141,15 @@ To verify the record in Microsoft 365:
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 5. In the **Type** box for the new record choose **TXT/SPF** from the drop-down list, and then type or copy and paste the other values from the following table.
     
@@ -145,9 +169,15 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 2. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
-4. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
+4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 5. Add the first of the two SRV records:
     
@@ -168,7 +198,19 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add the two required CNAME records 
     
-1. On the **Manage your DNS** page, select the **Advanced DNS** tab. 
+1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+
+1. On the Domain name overview page, select the name of the domain that you want to edit. 
+    
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+1. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
+1. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 1. Add the first CNAME record.
     
@@ -193,14 +235,20 @@ This service helps you secure and remotely manage mobile devices that connect to
 ### Add the two required CNAME records
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+
+1. On the Domain name overview page, select the name of the domain that you want to edit. 
     
-2. On the Domain name overview page, select the name of the domain that you want to edit. 
-    
-3. Choose **DNS** from the **Select action** drop-down list. 
-    
-4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+1. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
   
-7. Add the first CNAME record.
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
+1. On the Manage your DNS page, select the **Advanced DNS** tab. 
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+    
+1. Add the first CNAME record.
     
     In the **Type** box for the new record choose **CNAME** from the drop-down list, and then type or copy and paste the other values from the following table.
     
