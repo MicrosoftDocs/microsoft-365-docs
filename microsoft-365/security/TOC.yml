@@ -4,7 +4,7 @@
   items: 
     - name: Get started
       items: 
-        - name: Microsoft 365 zero trust roadmap
+        - name: Microsoft 365 zero trust deployment plan
           href: Microsoft-365-zero-trust.md
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 zero trust roadmap"
+title: "Microsoft 365 zero trust deployment plan"
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -18,9 +18,9 @@ ms.collection:
 description: "Implement zero trust principles, architecture, and capabilities for Microsoft 365."
 ---
 
-# Microsoft 365 Zero Trust roadmap
+# Microsoft 365 Zero Trust deployment plan
 
-This article provides a roadmap for building **Zero Trust** security with Microsoft 365. Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
+This article provides a deployment plan for building **Zero Trust** security with Microsoft 365. Zero Trust is a new security model that assumes breach and verifies each request as though it originated from an uncontrolled network. Regardless of where the request originates or what resource it accesses, the Zero Trust model teaches us to "never trust, always verify."
 
 
 ## Zero Trust security architecture
@@ -35,6 +35,8 @@ In the illustration:
 - Security policy enforcement is at the center of a Zero Trust architecture. This includes multi-factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
 - Identities, devices, data, apps, network, and other infrastructure components are all configured with appropriate security. Policies that are configured for each of these components are coordinated with your overall Zero Trust strategy. For example, device policies determine the criteria for healthy devices and conditional access policies require healthy devices for access to specific apps and data.
 - Threat protection and intelligence monitors the environment, surfaces current risks, and takes automated action to remediate attacks.
+
+For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype). 
 
 For more information about Zero Trust, see Microsoft's [Zero Trust Guidance Center](https://docs.microsoft.com//security/zero-trust/).
 
@@ -90,7 +92,7 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-| Setup the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br>Protect against threats<br> Investigate and respond to threats   |         |         |
+| Setup the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br>Protect against threats<br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
 |    |         |         |
 
 ## Step 4. Protect and govern sensitive data
