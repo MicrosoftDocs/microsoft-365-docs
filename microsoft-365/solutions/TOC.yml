@@ -144,6 +144,8 @@
              href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
            - name: Step 7. Delete a former employee's user account
              href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json    
+      - name: Migrate your content to Microsoft 365
+        href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Migrate file shares to Microsoft 365
         items:
           - name: Overview
@@ -278,6 +280,8 @@
         href: ../compliance/insider-risk-solution-overview.md
       - name: Auditing solutions
         href: ../compliance/auditing-solutions-overview.md
+      - name: eDiscovery solutions in Microsoft 365
+        href: ../compliance/ediscovery.md
       - name: Microsoft 365 Advanced eDiscovery
         href: ../compliance/overview-ediscovery-20.md
       - name: Regulatory compliance action plans
@@ -299,15 +303,19 @@
         href: ../security/microsoft-365-security-for-bdm.md
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
+      - name: Evaluate and pilot Microsoft 365 Defender
+        href: ../security/defender/eval-overview.md
+      - name: Respond to your first incident
+        href: ../security/defender/first-incident-overview.md
       - name: Deploy Microsoft Defender for Endpoints
         href: /microsoft-365/security/defender-endpoint/deployment-phases.md
-      - name: Migrate from Symantec to Microsoft Defender for Endpoint
-        href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-      - name: Migrate from McAfee to Microsoft Defender for Endpoint
-        href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
-
+      - name: Security recommendations for priority accounts in Microsoft 365
+        href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+      - name: Remove a former employee and secure data
+        href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+   
     - name: Contoso case studies
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
