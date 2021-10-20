@@ -44,7 +44,7 @@ The Device health and compliance dashboard is structured in two tabs:
 
   - [Sensor health](#sensor-health)
   - [OS systems and platforms](#os-systems-and-platforms)
-  - [Windows 10 versions](#windows-10-versions)
+  - [Windows versions](#windows-10-versions)
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
 
@@ -91,12 +91,12 @@ _OS systems and platforms_ can give useful insights into whether devices in your
 For example, Secure Boot, introduced in Windows 8, practically eliminated the threat from some of the most harmful types of malware. Improvements in Windows 10 provide PC manufacturers the option to prevent users from disabling the Secure Boot feature, preventing almost any chance of malicious rootkits or other low-level malware from infecting the boot process.
 Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions, or the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
 
-#### Windows 10 versions
+#### Windows versions
 
-The card shows the distribution of Windows 10 devices and their versions in your organization.
-In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows 10 to more current versions improves your posture against possible threats.
+The card shows the distribution of Windows devices and their versions in your organization.
+In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
 
-The Windows 10 version trend graph can help you quickly determine whether your organization is keeping current by updating to the most recent, most secure versions of Windows 10.
+The Windows version trend graph can help you quickly determine whether your organization is keeping current by updating to the most recent, most secure versions of Windows 10.
 
 ### Microsoft Defender Antivirus health tab  
 
