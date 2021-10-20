@@ -155,7 +155,7 @@ Your user list will look like this:
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 

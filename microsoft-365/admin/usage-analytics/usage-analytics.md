@@ -75,7 +75,7 @@ This report contains a separate report for each Microsoft 365 service, including
 
 ## User activity
 
-User activity reports are available for certain individual services. These reports provide user-level detail usage data joined with Active Directory attributes. In addition, the Department Adoption report lets you slice by Active Directory attributes so that you can see active users across all individual services. All metrics are aggregated for the latest complete month. To view the content date, navigate to the table page and select UserActivity table where the value under TimeFrame provides the reporting period. 
+User activity reports are available for certain individual services. These reports provide user-level detail usage data joined with Active Directory attributes. In addition, the Department Adoption report lets you slice by Active Directory attributes so that you can see active users across all individual services. All metrics are aggregated for the latest complete month. To view the content date, navigate to the table page and select UserActivity table where the value under TimeFrame provides the reporting period. **Note:** Global Reader and Usage Summary Reports Reader don't have the permission to view the user activity reports. 
 
 ## FAQ
 
@@ -84,13 +84,10 @@ User activity reports are available for certain individual services. These repor
 It is not free, you will need a Power BI Pro license. For details see [prerequisites](/power-bi/service-template-apps-install-distribute#prerequisites) for installing, customizing, and distributing a template app.
 
 To share the dashboards with others, please see more at [Share dashboards and reports](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
-### Is the Usage Summary Reports Reader role enough to view the usage analytics?
-
-The Usage Summary Reports Reader role only allows access to tenant level aggregates in Microsoft 365 usage analytics.  We recommend the Reports Reader or Usage Summary Reports Reader role to anyone who's responsible for change management and adoption, but is not necessarily an IT administrator.
 
 ### Who can connect to Microsoft 365 usage analytics?
 
-You have to be either a **Global admin**, **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader** or **Report reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information.
+You have to be either a **Global admin**, **Exchange admin**, **Skype for Business admin**, **SharePoint admin**, **Global reader**, **Report reader**, **Usage Summary Reports Reader** in order to establish the connection to the template app. See [About admin roles](../add-users/about-admin-roles.md) for more information. **Note:** **Global Reader** and **Usage Summary Reports Reader** only allow access to tenant level aggregates in Microsoft 365 usage analytics and they don't have the permission to view the user activity reports. 
 
 ### Who can customize the usage analytics reports?
 
