@@ -178,7 +178,7 @@ If ($null -eq $existingOrgRel)
 
 ### How do I know this worked?
 
-You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability.md) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
+You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
    > Test-MigrationServerAvailability -Endpoint “[the name of your cross-tenant migration endpoint]” -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
