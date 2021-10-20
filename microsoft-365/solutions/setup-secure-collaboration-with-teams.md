@@ -65,7 +65,7 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |---|---|---|
 |Microsoft Defender for Office 365|Safe Attachments for SPO, OneDrive and Teams; Safe Documents; Safe Links for Teams|Microsoft 365 E1, E3 and E5|
 |SharePoint|Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings|Microsoft 365 E1, E3 and E5|
-|Microsoft Teams|Guest access, private teams, private channels|Microsoft 365 E1, E3 and E5|
+|Microsoft Teams|Guest access, private teams, private channels, shared channels|Microsoft 365 E1, E3 and E5|
 |Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
 
 ## Collaboration governance
@@ -114,6 +114,7 @@ These resources will help you get started with setting up your environment for c
 - [Collaborate on documents](collaborate-on-documents.md) for sharing individual files of folders.
 - [Collaborate in a site](collaborate-in-site.md) for collaborating with guests in a SharePoint site.
 - [Collaborate as a team](collaborate-as-team.md) for collaborating with guests in a team.
+- [Collaborate with external participants in a channel](/microsoft-365/solutions/collaborate-teams-direct-connect) for collaborating with people outside the organization in a shared channel.
 
 Depending on the sensitivity of the information being shared, you can add safeguards to help prevent oversharing. These resources will help you set up the protections that you need for your organization:
 
@@ -121,7 +122,7 @@ Depending on the sensitivity of the information being shared, you can add safegu
 - [Limit accidental exposure to files when sharing with people outside your organization](share-limit-accidental-exposure.md)
 - [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
-If you have a major project with a partner organization, you can use Azure Entitlement Management to manage the guests from that organization in a team that you set up for the project. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+If you have a major project with a partner organization, you can use either [shared channels](/microsoft-365/solutions/collaborate-teams-direct-connect) or [Azure Entitlement Management](b2b-extranet.md) to manage the people outside your organization who you need to collaborate with.
 
 ## Training for administrators
 
