@@ -52,22 +52,17 @@ Follow these steps to automatically verify and set up your Cloudflare domain wit
 
 1. On the Add DNS records page, select **Add DNS records**.
 
-1. On the Cloudflare login page, sign in to your account, and select **Authorize**.
+1. On the IONOS by 1&1 login page, sign in to your account, and select **Connect**, and **Allow**.
     
     This completes your domain setup for Microsoft 365. 
 
 ## Create DNS records with manual setup
 
 After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
-
-> [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 > [!CAUTION]
 > Note that IONOS by 1&1 doesn't allow a domain to have both an MX record and a top-level Autodiscover CNAME record. This limits the ways in which you can configure Exchange Online for Microsoft. There is a workaround, but we recommend employing it **only** if you already have experience with creating subdomains at IONOS by 1&1. 
 > If despite this [service limitation](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) you choose to manage your own Microsoft DNS records at IONOS by 1&1, follow the steps in this article to verify your domain and to set up DNS records for email, Skype for Business Online, and so on. 
-  
-After you add these records at IONOS by 1&1, your domain will be set up to work with Microsoft services.
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -180,9 +175,13 @@ To verify the record in Microsoft 365:
 1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 1. Select **Menu**, and then select **Domains and SSL**.
-    
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
-    
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+   
 1. Select **Add record**, and then select the **SPF (TXT)** section.
     
 1. In the boxes for the new record, type or copy and paste the values from the following table. <br/>
@@ -199,7 +198,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add two additional CNAME records
   
-1. Create another subdomain (Lyncdiscover) using the instructions for the first CNAME record.
+1. Create another subdomain (Lyncdiscover) using the instructions for the first CNAME record above.
     
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)<br/> 
     
@@ -247,8 +246,12 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 1. Select **Menu**, and then select **Domains and SSL**.
-    
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+  
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
     
 1. Select **Add record**, and then select the **SRV** section.
     
