@@ -57,7 +57,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
    ||||
    |:-----|:-----|:-----|
-   | Host Name <br/> | TXT Value <br/> | TTL <br/> |
+   | **Host Name **<br/> | **TXT Value** <br/> | **TTL** <br/> |
    |Automatically populated (leave blank)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|1 Hour <br/> |          |
    
 5. Select**Save**. 
@@ -83,13 +83,15 @@ To verify the record in Microsoft 365:
     
 1. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
     
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+
 1. Under **MX (Mail exchange)**, select **Edit MX Records**. 
 
 1. Choose **Other** from the drop-down list, and select **+ Add record**.
     
 1. In the boxes for the new record, type or copy and paste the values from the following table:
     
-   | Host Name | Points to | Priority | TTL |
+   | **Host Name** | **Points to** | **Priority** | **TTL** |
    |:-----|:-----|:-----|:-----|
    |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
    
@@ -109,7 +111,7 @@ To verify the record in Microsoft 365:
     
 4. In the boxes for the new record, type or copy and paste the values from the following table:
     
-   | Host Name | Value | TTL |
+   | **Host Name** | **Value** | **TTL** |
    |:-----|:-----|:-----|
    |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 Hour  <br/> |
    
@@ -134,7 +136,7 @@ To verify the record in Microsoft 365:
     
 4. In the boxes for the new record, type or copy and paste the values from the following table:
     
-   | Host Name | Value | TTL |
+   | **Host Name** | **Value** | **TTL** |
    |:-----|:-----|:-----|
    |[leave this blank]  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.<br/> | 1 Hour |
    
@@ -158,7 +160,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
  
 1. In the boxes for the new record, type or copy and paste the values from the first row in the table:
     
-   | Service | Protocol | Name | Weight | Port | Target | Priority | TTL |
+   | **Service** | **Protocol** | **Name** | **Weight** | **Port** | **Target** | **Priority** | **TTL** |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
    |sip  |tls  |Automatically populated |1  |443   |sipdir.online.lync.com |100 |1 Hour |
    |sipfed|tcp |Automatically populated|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
