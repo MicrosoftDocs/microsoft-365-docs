@@ -24,7 +24,7 @@ description: "Get started with app governance capabilities to govern your apps."
 To begin using the app governance add-on to Microsoft Cloud App Security, you need to take three steps:
 
 1. [Verify licensing and administrator prerequisites](#licensing-and-administrator-role-prerequisites).
-1. [Sign up for app governance](#sign-up-for-free-trial-of-app-governance).
+1. [Sign up for app governance](#sign-up-for-app-governance).
 1. [Add MCAS integration](#add-integration-with-mcas).
 
 
