@@ -29,6 +29,24 @@
         href: empower-people-to-work-remotely-teams-productivity-apps.md
       - name: Step 6. Train your workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
+    - name: Manage endpoints with Intune and Microsoft 365
+      items:
+      - name: Overview
+        href: manage-devices-with-intune-overview.md
+      - name: Step 1. Implement Level 2 App Protection policies
+        href: manage-devices-with-intune-app-protection.md
+      - name: Step 2. Register devices with Azure Administration
+        href: manage-devices-with-intune-register-azure-ad.md
+      - name: Step 3. Enroll devices into management with Intune
+        href: manage-devices-with-intune-enroll.md
+      - name: Step 4. Require healthy and compliant devices
+        href: manage-devices-with-intune-require-healthy.md
+      - name: Step 5. Connect Defender for Endpoint to Intune
+        href: manage-devices-with-intune-defender.md
+      - name: Step 6. Monitor device risk as a condition for access
+        href: manage-devices-with-intune-monitor-risk.md 
+      - name: Step 7. Implement data loss prevention with information protection capabilities
+        href: manage-devices-with-intune-dlp-mip.md             
     - name: Set up secure collaboration with Microsoft 365
       items:
       - name: Overview   
