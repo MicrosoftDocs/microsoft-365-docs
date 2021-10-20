@@ -186,11 +186,11 @@ To verify the record in Microsoft 365:
   
 2. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 3. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. On the DNS management page, select **+Add record**, and then select the values from the following table.  
     
@@ -213,11 +213,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
       
 2. On the Home page, select the domain that you want to update. 
 
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
   
 3. On the Overview page for your domain, select **DNS**.
   
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. Add the first of the two SRV records.
 
@@ -241,11 +241,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
       
 2. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 3. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. Add the first CNAME record.
     
@@ -273,11 +273,11 @@ This service helps you secure and remotely manage mobile devices that connect to
       
 2. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 3. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. Add the first CNAME record.
     

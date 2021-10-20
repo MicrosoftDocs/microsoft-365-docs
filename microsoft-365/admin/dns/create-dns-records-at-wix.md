@@ -122,7 +122,7 @@ To verify the record in Microsoft 365:
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
 
-   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
     
 3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
 
@@ -148,7 +148,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 1. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
  
-   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
    
 1. Select **+ Add Record** in the **SRV** row of the DNS editor. 
  
@@ -184,7 +184,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
-This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs two CNAME records so that users can enroll devices to the service.
 
 ### Add the two required CNAME records
 
@@ -192,7 +192,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
 
-   :::image type="content" source="wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
 3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor, and enter the values from the first row in the following table. 
     

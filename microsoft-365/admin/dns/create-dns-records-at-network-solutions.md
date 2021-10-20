@@ -29,8 +29,6 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
 If Network Solutions is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
-  
-Follow the steps below or [watch the video](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099). 
     
 After you add these records at Network Solutions, your domain will be set up to work with Microsoft services.
   
@@ -44,8 +42,6 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Follow the steps below or [watch the video (start at 0:47)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
-  
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
 1. On the landing page, select **Domain Names**.
@@ -54,11 +50,11 @@ Follow the steps below or [watch the video (start at 0:47)](https://support.micr
   
 1. Under **Actions**, select the three dots, and then select **Manage** from the drop-down list.
 
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
 
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
@@ -93,8 +89,6 @@ To verify the record in Microsoft 365:
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Add an MX record so email for your domain will come to Microsoft
-
-Follow the steps below or [watch the video (start at 3:51)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
@@ -104,11 +98,11 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.micr
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
     
@@ -131,8 +125,6 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.micr
   
 ## Add the CNAME record required for Microsoft
 
-Follow the steps below or [watch the video (start at 4:43)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
-
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
 1. On the landing page, select **Domain Names**.
@@ -141,11 +133,11 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.micr
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
@@ -169,8 +161,6 @@ Follow the steps below or [watch the video (start at 4:43)](https://support.micr
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values. 
   
-Follow the steps below or [watch the video (start at 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
-  
 1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
 1. On the landing page, select **Domain Names**.
@@ -179,11 +169,11 @@ Follow the steps below or [watch the video (start at 5:35)](https://support.micr
     
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
  
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
  
 1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
@@ -216,11 +206,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
   
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
 
 1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
@@ -255,11 +245,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
  
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
  
 1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
@@ -292,7 +282,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 ### Add the two required CNAME records
 
-11. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
   
 1. On the landing page, select **Domain Names**.
 
@@ -300,11 +290,11 @@ This service helps you secure and remotely manage mobile devices that connect to
     
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
  
-    :::image type="content" source="networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
  
 1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
-    :::image type="content" source="networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
+    :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
 
