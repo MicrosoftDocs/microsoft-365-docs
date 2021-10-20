@@ -4,12 +4,11 @@
   items: 
     - name: Get started
       items: 
+        - name: Microsoft 365 zero trust roadmap
+          href: Microsoft-365-zero-trust.md
         - name: Top tasks to support working from home
           href: top-security-tasks-for-remote-work.md
-        - name: Microsoft 365 Security for BDMs
-          href: Microsoft-365-security-for-bdm.md
-        - name: Security recommendations for priority accounts
-          href: ./office-365-security/security-recommendations-for-priority-accounts.md
+        
     - name: Identity and device access configurations
       items: 
         - name: Overview
