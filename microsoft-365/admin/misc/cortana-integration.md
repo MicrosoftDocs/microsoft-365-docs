@@ -209,7 +209,7 @@ Turn off Cortana access to your organization's Microsoft hosted data
 For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Related content
-
+ 
 [Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)\
 [Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)
