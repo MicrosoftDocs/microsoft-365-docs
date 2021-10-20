@@ -128,8 +128,8 @@ The table in this section summarizes the features and capabilities that are acti
  |---|---|---|---|---| 
  | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
  | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
- |  [Network protection](network-protection.md)  | Yes | No | No | No | 
- |  [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
+ | [Network protection](network-protection.md)  | Yes | No | No | No | 
+ | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
  | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
  | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
  | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[5](#fn5)]</sup> | No | Yes | 
