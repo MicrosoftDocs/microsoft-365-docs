@@ -50,15 +50,15 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
     
@@ -103,15 +103,15 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
     
@@ -140,15 +140,15 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
     
@@ -175,15 +175,15 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
     
@@ -211,15 +211,15 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
     
@@ -239,6 +239,24 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add the two required CNAME records 
     
+1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
+    
+1. On the landing page, under **Domains**, select **Registered domains**.
+    
+1. Under **Domain Name**, select the domain you want to set up in Microsoft 365.
+
+    **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+1. Select **Manage DNS**. 
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+
+1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+
 1. Select **Create record**. 
     
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
@@ -263,7 +281,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 ### Add the two required CNAME records
 
-1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
+1. To get started, go to your domains page at AWS by using [this link](https://console.aws.amazon.com/route53/home). You'll be prompted to log in first.
     
 1. On the landing page, under **Domains**, select **Registered domains**.
     
@@ -271,15 +289,15 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Manage DNS**. 
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-godaddy/godaddy-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
 
 1. Select **Create record**.
 
