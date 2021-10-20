@@ -46,12 +46,12 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 
 <br/><br/>
 
-|Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
-|---|---|---|
-|Windows 10|Microsoft Defender Antivirus|Active mode|
-|Windows 10|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
-|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
-|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
+ | Windows version | Primary antivirus/antimalware solution | Microsoft Defender Antivirus state | 
+ |---|---|---| 
+ | Windows 10 | Microsoft Defender Antivirus | Active mode | 
+ | Windows 10 | A non-Microsoft antivirus/antimalware solution | Disabled mode (happens automatically) | 
+ | Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022 | Microsoft Defender Antivirus | Active mode | 
+ | Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022 | A non-Microsoft antivirus/antimalware solution | Disabled (set manually) <sup>[[1](#fn1)]</sup> | 
 
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Microsoft Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
 
@@ -62,20 +62,20 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 
 The following table summarizes what happens with Microsoft Defender Antivirus when non-Microsoft antivirus/antimalware solutions are used together or without Microsoft Defender for Endpoint. 
 
-| Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
-|------|------|-------|-------|
-| Windows 10  | Microsoft Defender Antivirus | Yes  | Active mode | 
-| Windows 10  | Microsoft Defender Antivirus | No   | Active mode |
-| Windows 10  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
-| Windows 10  | A non-Microsoft antivirus/antimalware solution | No   | Disabled mode (automatically)    |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | No  | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup></sup>  |
-| Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
-|Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | No | Active mode |
-| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup> |
-| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | No | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
+ |  Windows version    |  Antivirus/antimalware solution   |  Onboarded to <br/> Defender for Endpoint?  |  Microsoft Defender Antivirus state      | 
+ |------|------|-------|-------| 
+ |  Windows 10   |  Microsoft Defender Antivirus  |  Yes   |  Active mode  |  
+ |  Windows 10   |  Microsoft Defender Antivirus  |  No    |  Active mode  | 
+ |  Windows 10   |  A non-Microsoft antivirus/antimalware solution  |  Yes   |  Passive mode (automatically)  | 
+ |  Windows 10   |  A non-Microsoft antivirus/antimalware solution  |  No    |  Disabled mode (automatically)     | 
+ |  Windows Server, version 1803 or newer <p> Windows Server 2019  |  Microsoft Defender Antivirus   |  Yes  |          Active mode   | 
+ |  Windows Server, version 1803 or newer <p> Windows Server 2019  |  Microsoft Defender Antivirus  |  No   |  Active mode  | 
+ |  Windows Server, version 1803 or newer <p> Windows Server 2019  |  A non-Microsoft antivirus/antimalware solution  |  Yes   |  Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>   |  
+ |  Windows Server, version 1803 or newer <p> Windows Server 2019  |  A non-Microsoft antivirus/antimalware solution  |  No   |  Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup></sup>   | 
+ |  Windows Server 2012 R2 <br><br> Windows Server 2016  |  Microsoft Defender Antivirus  |  Yes  |  Active mode  | 
+ | Windows Server 2012 R2 <br><br> Windows Server 2016  |  Microsoft Defender Antivirus  |  No  |  Active mode  | 
+ |  Windows Server 2012 R2 <br><br>Windows Server 2016  |  A non-Microsoft antivirus/antimalware solution  |  Yes  |  Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
+ |  Windows Server 2012 R2 <br><br>Windows Server 2016  |  A non-Microsoft antivirus/antimalware solution  |  No  |  Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup>  | 
 
 (<a id="fn2">2</a>)  On Windows Server, version 1803 or newer, Windows Server 2019, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-on-windows-server.md) to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
 
@@ -124,16 +124,16 @@ The table in this section summarizes the features and capabilities that are acti
 
 <br/><br/>
 
-|Protection|Microsoft Defender Antivirus <br/><br/> Active mode|Microsoft Defender Antivirus <br/><br/> Passive mode|Microsoft Defender Antivirus <br/><br/> Disabled or uninstalled|[EDR in block mode](edr-in-block-mode.md)|
-|---|---|---|---|---|
-|[Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md)|Yes|No <sup>[[4](#fn4)]</sup>|No|No|
-|[Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)|Yes|No <sup>[[4](#fn4)]</sup>|No|No|
-| Network protection | | | | |
-| Attack surface reduction capabilities | | | | |
-|[Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md)|No|No|Yes|No|
-|[File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md)|Yes|Yes|No|Yes|
-|[Threat remediation](configure-remediation-microsoft-defender-antivirus.md)|Yes|See note <sup>[[5](#fn5)]</sup>|No|Yes|
-|[Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md)|Yes|Yes|No|Yes|
+ | Protection | Microsoft Defender Antivirus <br/><br/> Active mode | Microsoft Defender Antivirus <br/><br/> Passive mode | Microsoft Defender Antivirus <br/><br/> Disabled or uninstalled | [EDR in block mode](edr-in-block-mode.md) | 
+ |---|---|---|---|---| 
+ | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
+ | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
+ |  [Network protection](network-protection.md)  | Yes |   |   |   | 
+ |  Attack surface reduction capabilities  |   |   |   |   | 
+ | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
+ | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
+ | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[5](#fn5)]</sup> | No | Yes | 
+ | [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
 
 (<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
 
@@ -154,13 +154,13 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 
 <br/><br/>
 
-|Method|Procedure|
-|---|---|
-|Windows Security app| 1. On a Windows device, open the Windows Security app.<br/>2. Select **Virus & threat protection**.<br/>3. Under **Who's protecting me?** select **Manage providers**.<br/>4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**.|
-|Task Manager| 1. On a Windows device, open the Task Manager app.<br/>2. Select the **Details** tab.<br/>3. Look for **MsMpEng.exe** in the list.|
-|Windows PowerShell <br/><br/> (To confirm that Microsoft Defender Antivirus is running)| 1. On a Windows device, open Windows PowerShell. <br/>2. Run the following PowerShell cmdlet: `Get-Process`.<br/>3. Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled.|
-|Windows PowerShell <br/><br/> (To confirm that antivirus protection is in place)| You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus). <br/><br/>1. On a Windows device, open Windows PowerShell.<br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus|select AMRunningMode`.<br/>3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint. |
-|Command Prompt| 1. On a Windows device, open Command Prompt.<br/>2. Type `sc query windefend`, and then press Enter.<br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode. |
+ | Method | Procedure | 
+ |---|---| 
+ | Windows Security app |  1. On a Windows device, open the Windows Security app.<br/>2. Select **Virus & threat protection**.<br/>3. Under **Who's protecting me?** select **Manage providers**.<br/>4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**. | 
+ | Task Manager |  1. On a Windows device, open the Task Manager app.<br/>2. Select the **Details** tab.<br/>3. Look for **MsMpEng.exe** in the list. | 
+ | Windows PowerShell <br/><br/> (To confirm that Microsoft Defender Antivirus is running) |  1. On a Windows device, open Windows PowerShell. <br/>2. Run the following PowerShell cmdlet: `Get-Process`.<br/>3. Review the results. You should see **MsMpEng.exe** if Microsoft Defender Antivirus is enabled. | 
+ | Windows PowerShell <br/><br/> (To confirm that antivirus protection is in place) |  You can use the [Get-MpComputerStatus PowerShell cmdlet](/powershell/module/defender/get-mpcomputerstatus). <br/><br/>1. On a Windows device, open Windows PowerShell.<br/>2. Run following PowerShell cmdlet: `Get-MpComputerStatus | select AMRunningMode`.<br/>3. Review the results. You should see either **Normal** or **Passive** if Microsoft Defender Antivirus is enabled on the endpoint.  | 
+ | Command Prompt |  1. On a Windows device, open Command Prompt.<br/>2. Type `sc query windefend`, and then press Enter.<br/>3. Review the results to confirm that Microsoft Defender Antivirus is running in passive mode.  | 
 
 ## More details about Microsoft Defender Antivirus states
 
@@ -168,11 +168,11 @@ The table in this section describes various states you might see with Microsoft 
 
 <br/><br/>
 
-| State | What happens |
-|---|---|
-| Active mode | In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself). |
-| Passive mode | In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), however. <br/><br/> Files are scanned, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts in the [security center](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <br/><br/> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <br/><br/> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimwalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **NOTE**: Passive mode is not supported on Windows Server 2016. |
-| Disabled <br/><br/> or <br/><br/> Uninstalled | When disabled or uninstalled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. <br/><br/> Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution. <br/><br/> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <br/><br/> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app. |
+ |  State  |  What happens  | 
+ |---|---| 
+ |  Active mode  |  In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).  | 
+ |  Passive mode  |  In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), however. <br/><br/> Files are scanned, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts in the [security center](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <br/><br/> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <br/><br/> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimwalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **NOTE**: Passive mode is not supported on Windows Server 2016.  | 
+ |  Disabled <br/><br/> or <br/><br/> Uninstalled  |  When disabled or uninstalled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. <br/><br/> Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution. <br/><br/> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <br/><br/> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.  | 
 
 
 ## See also
