@@ -38,7 +38,7 @@ ms.custom: api
 Creates new [Alert](alerts.md) on top of **Event**.
 
 - **Microsoft Defender for Endpoint Event** is required for the alert creation.
-- You will need to supply 3 parameters from the Event in the request: **Event Time**, **Machine ID** and **Report ID**. See example below.
+- You need to supply three parameters from the Event in the request: **Event Time**, **Machine ID**, and **Report ID**. See example below.
 - You can use an event found in Advanced Hunting API or Portal.
 - If there existing an open alert on the same Device with the same Title, the new created alert will be merged with it.
 - An automatic investigation starts automatically on alerts created via the API.
@@ -59,8 +59,8 @@ Delegated (work or school account) | Alert.ReadWrite | 'Read and write alerts'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts investigation' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Alerts investigation' (For more information see [Create and manage roles](user-roles.md) )
+> - The user needs to have access to the device associated with the alert, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 
 ## HTTP request
 
@@ -81,13 +81,13 @@ In the request body, supply the following values (all are required):
 
 Property | Type | Description
 :---|:---|:---
-eventTime | DateTime(UTC) | The precise time of the event as string, as obtained from advanced hunting. e.g. ```2018-08-03T16:45:21.7115183Z``` **Required**.
+eventTime | DateTime(UTC) | The precise time of the event as string, as obtained from advanced hunting. e.g.,  ```2018-08-03T16:45:21.7115183Z``` **Required**.
 reportId | String | The reportId of the event, as obtained from advanced hunting. **Required**.
 machineId | String | Id of the device on which the event was identified. **Required**.
 severity | String | Severity of the alert. The property values are: 'Low', 'Medium' and 'High'. **Required**.
 title | String | Title for the alert. **Required**.
 description | String | Description of the alert. **Required**.
-recommendedAction| String | Action that is recommended to be taken by security officer when analyzing the alert. **Required**.
+recommendedAction| String | Security officer needs to take this action when analyzing the alert. **Required**.
 category| String | Category of the alert. The property values are: "General", "CommandAndControl", "Collection", "CredentialAccess", "DefenseEvasion", "Discovery", "Exfiltration", "Exploit", "Execution", "InitialAccess", "LateralMovement", "Malware", "Persistence", "PrivilegeEscalation", "Ransomware", "SuspiciousActivity" **Required**.
 
 ## Response
@@ -98,7 +98,7 @@ If successful, this method returns 200 OK, and a new [alert](alerts.md) object i
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/alerts/CreateAlertByReference
