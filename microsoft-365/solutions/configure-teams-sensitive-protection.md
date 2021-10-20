@@ -123,13 +123,11 @@ To update the site default sharing link type
 
 If you want to script this as part of your team creation process, you can use [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) with the `-DefaultSharingLinkType Direct` parameter to change the default sharing link to *Specific people*.
 
-#### Private channels
-
-If you add private channels to the team, each private channel creates a new SharePoint site with the default sharing settings. These sites are not visible in the SharePoint admin center, so you must use the Set-SPOSite PowerShell cmdlet to update the guest sharing settings.
+Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated the the team.
 
 ### Site sharing settings
 
-To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners.
+To help ensure that the SharePoint site does not get shared with people who are not members of the team, we limit such sharing to owners. This is only necessary for the SharePoint site that was created with the team. Additional sites created as part of private or shared channels can't be shared outside the team or channel.
 
 To configure owners-only site sharing
 1. In Teams, navigate to the **General** tab of the team you want to update.
@@ -140,6 +138,6 @@ To configure owners-only site sharing
 6. Under **Sharing permissions**, choose **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**, and then click **Save**.
 
 
-## See Also
+## Related topics
 
 [Create and configure sensitivity labels and their policies](../compliance/create-sensitivity-labels.md)
