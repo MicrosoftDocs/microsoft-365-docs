@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 10/20/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -202,14 +202,6 @@ To learn more, see [Setup and configuration](mdb-setup-configuration.md).
 With role-based access control (RBAC), permissions and access are granted through roles and groups. Certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. RBAC gives you fine-grained control over who can access the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and what they can see and do in the portal. 
 
 To learn more, see [Manage portal access using role-based access control](../defender-endpoint/rbac.md).
-
-## Cross-platform support
-
-People often use various devices and operating systems at work. For example, many companies use computers running Windows, macOS, or Linux, and mobile devices running iOS or Android OS. 
-
-Initially, Microsoft Defender for Business supports Windows 10 devices only; however, we are planning to support other operating systems in the future. 
-
-To learn more, see [Defender for Endpoint (Windows)](../defender-endpoint/microsoft-defender-endpoint.md).
 
 ## APIs
 
