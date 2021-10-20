@@ -188,7 +188,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Privacy management
 
-- Microsoft [privacy management](privacy-management.md) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
+- Microsoft [privacy management](/privacy/solutions/privacymanagement/privacy-management) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
 
 ### Retention and records management
 - In preview: [Retention policies for Teams](create-retention-policies.md#retention-policy-for-teams-locations) now supports private channels as a new Teams location when you create or edit a retention policy
