@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 10/13/2021
+ms.date: 10/20/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -126,7 +126,10 @@ The table in this section summarizes the features and capabilities that are acti
 
 |Protection|Microsoft Defender Antivirus <br/><br/> Active mode|Microsoft Defender Antivirus <br/><br/> Passive mode|Microsoft Defender Antivirus <br/><br/> Disabled or uninstalled|[EDR in block mode](edr-in-block-mode.md)|
 |---|---|---|---|---|
-|[Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)|Yes|No <sup>[[4](#fn4)]</sup>|No|No|
+|[Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md)|Yes|No <sup>[[4](#fn4)]</sup>|No|No|
+|[Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)|Yes|No <sup>[[4](#fn4)]</sup>|No|No|
+| Network protection | | | | |
+| Attack surface reduction capabilities | | | | |
 |[Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md)|No|No|Yes|No|
 |[File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md)|Yes|Yes|No|Yes|
 |[Threat remediation](configure-remediation-microsoft-defender-antivirus.md)|Yes|See note <sup>[[5](#fn5)]</sup>|No|Yes|
