@@ -76,6 +76,9 @@ This option is great if you want to have a company email address such as info@co
     
 4. Select **Save**.
 
+> [!NOTE]
+> The changes could take 30 minutes to propogate and let external users email the organization.
+
 ## Permanently delete a Microsoft 365 group
 
 Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
