@@ -38,8 +38,6 @@ landingContent:
             url: whats-new-in-microsoft-defender-atp.md
           - text: Announcing Microsoft Defender for Endpoint Plan 1 (preview)
             url: defender-endpoint-plan-1.md
-          - text: (NEW!) Microsoft Defender for Business
-            url: defender-business/mdb-overview.md
       - linkListType: video
         links:
           - text: Overview video
