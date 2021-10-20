@@ -249,13 +249,11 @@ This shows any significant health issues with Microsoft's global network, which 
 
 Here are answers to some of our frequently asked questions.
 
-### Is this tool released and supported by Microsoft?
-
-It is currently a preview and we plan to provide updates regularly until we reach general availability release status with support from Microsoft. Please provide feedback to help us improve. We are planning to publish a more detailed Office 365 Network Onboarding guide as part of this tool, which is customized for the organization by its test results.
-
 ### What is required to run the advanced test client?
 
 The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime, which are higher up on the page. Administrator permissions on the machine are required to install .NET Core.
+
+The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to connectivity.service.signalr.net is open. This URL is not published in the http://aka.ms/o365ip because that connectivity is not required for an Office 365 client application user.
 
 ### What is Microsoft 365 service front door?
 
