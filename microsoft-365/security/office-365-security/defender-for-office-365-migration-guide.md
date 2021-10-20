@@ -108,11 +108,11 @@ To correctly identify mail that's already been scanned by the existing protectio
 
 Do not rely exclusively on MX records to control whether mail gets filtered. Senders can easily ignore the MX record and send email directly to Microsoft 365.
 
-## Move any rules that modify message contents into Microsoft 365
+## Move features modify message contents into Microsoft 365
 
 You need to transfer any customizations or features that modify messages in any way from your existing protection service into Microsoft 365. For example, your existing protection service adds an **External** tag to the subject or message body of messages from external senders.
 
-If you don't disable this functionality in your existing protection service, you can expect the following negative issues:
+If you don't disable this functionality in your existing protection service, you can expect the following negative issues in Microsoft 365:
 
 - DKIM will break.
 - Spoof intelligence will not work properly.
