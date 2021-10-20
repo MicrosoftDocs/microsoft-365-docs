@@ -391,6 +391,12 @@ For example, the DKIM record would look like this:
 
 Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC. Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
 
+**This test will validate** that the DKIM signing configuration has been configured correctly and that the proper DNS entries have been published.
+
+<div class="nextstepaction">
+<p><a href="https://aka.ms/diagdkim" data-linktype="external">Run Tests: DKIM</a></p>
+</div>
+
 ## More information
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
