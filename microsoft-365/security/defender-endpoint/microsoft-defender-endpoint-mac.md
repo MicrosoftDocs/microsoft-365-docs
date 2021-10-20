@@ -92,7 +92,7 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
-- Windows 11
+- Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint
 
 > [!NOTE]
