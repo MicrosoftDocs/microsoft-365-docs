@@ -133,6 +133,9 @@ New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetena
 
 ```
 
+   > [!NOTE]
+   > Depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](../enterprise/microsoft-365-endpoints.md) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
+
 3. Create new or edit your existing organization relationship object to your source tenant.
 
 ``` powershell
@@ -175,7 +178,7 @@ If ($null -eq $existingOrgRel)
 
 ### How do I know this worked?
 
-You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](powershell/module/exchange/test-migrationserveravailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
+You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability.md) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
    > Test-MigrationServerAvailability -Endpoint “[the name of your cross-tenant migration endpoint]” -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
@@ -308,7 +311,7 @@ Cross-tenant Exchange mailbox migrations are submitted as migration batches init
 Here is an example migration batch cmdlet for kicking off moves.
 
 ```powershell
-New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
+New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com
 
 Identity                   Status  Type               TotalCount
 --------                   ------  ----               ----------
@@ -318,6 +321,8 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 
 > [!NOTE]
 > The email address in the CSV file must be the one specified in the target tenant, not the source tenant.
+> [For more information on the cmdlet click here](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
+> [For and example CSV file click here](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
 Migration batch submission is also supported from the new Exchange Admin Center when selecting the cross-tenant option.
 
@@ -404,7 +409,7 @@ There a matrix of roles based on assumption of delegated duties when executing a
 
 - The first role is for a one-time setup task that establishes the authorization of moving content into or out of your tenant/organizational boundary. As moving data out of your organizational control is a critical concern for all companies, we opted with the highest assigned role of Organization Administrator (OrgAdmin). This role must alter or setup a new OrganizationRelationship that defines the -MailboxMoveCapability with the remote organization. Only the OrgAdmin can alter the MailboxMoveCapability setting, while other attributes on the OrganizationRelationhip can be managed by the Federated Sharing administrator.
 
-- The role of executing the actual move commands can be delegated to a lower-level function. The role of Move Mailboxes is assigned the capability of moving mailboxes in or out of the organization by using the `-RemoteTenant` parameter.
+- The role of executing the actual move commands can be delegated to a lower-level function. The role of Move Mailboxes is assigned the capability of moving mailboxes in or out of the organization.
 
 **How do we target which SMTP address is selected for targetAddress (TargetDeliveryDomain) on the converted mailbox (to MailUser conversion)?**
 
@@ -485,15 +490,15 @@ Do remember that this feature is currently in preview and the SLA and any applic
 
 **Making documents protected in the source tenant consumable by users in the destination tenant.**
 
-There are multiple options which are documented in the following blog post: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455
+Cross-tenant migration only migrates mailbox data and nothing else. There are multiple other options which are documented in the following blog post that may help: <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
 **Can I have the same labels in the destination tenant as you had in the source tenant, either as the only set of labels or an additional set of labels for the migrated users depending on alignment between the organizations.**
 
-This can be achieved by recreating in the destination tenant labels that have the same names, descriptions, and settings in the source tenant. While this can be hard to do manually, there’s a tool, https://microsoft365dsc.com/, that can be used to export the label configuration from the source tenant and then export it into the destination tenant. If task 1 and task 2 are done in this order this should lead to a seamless configuration of labels with protection in the destination tenant that mirrors that in the source tenant.
+Since Cross-tenant migrations do not export labels and there is no way to share labels between tenants you can only achieve this by recreating the labels in the destination tenant. While this can be time consuming it is typically done manually. There is a tool at, <https://microsoft365dsc.com/>, that can be used to export a copy of the label configuration from the source tenant and then import it into the destination tenant. This is a copy of the label and not a migration so content that is labeled in the source would potentially not labeled in the destination.
 
 **Do you support moving Microsoft 365 Groups?**
 
-At this time Cross-Tenant mailbox migrations does not support the migration of Microsoft 365 Groups.
+At this time the Cross-Tenant mailbox migrations feature does not support the migration of Microsoft 365 Groups.
 
 ## Known issues
 
@@ -503,7 +508,7 @@ At this time Cross-Tenant mailbox migrations does not support the migration of M
 
 - **Issue: Cloud MailUsers with non-owned smtp proxyAddress block MRS moves background.** When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that does not belong to the local tenant, the conversion of the MailUser to Mailbox is prevented. This is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant):
 
-   - When you sync users from on-premises using Azure AD Connect, you provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (laran@contoso.onmicrosoft.com) and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwind.com). These values sync down to the tenant and an appropriate mail user is provisioned and ready for migration. An example object is shown here.
+  - When you sync users from on-premises using Azure AD Connect, you provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (laran@contoso.onmicrosoft.com) and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwind.com). These values sync down to the tenant and an appropriate mail user is provisioned and ready for migration. An example object is shown here.
 
     ```powershell
     target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses
