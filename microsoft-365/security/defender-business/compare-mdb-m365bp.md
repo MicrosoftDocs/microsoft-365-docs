@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 10/19/2021
+ms.date: 10/20/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -31,7 +31,7 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
-| Email protection | Yes ([email scanning](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) can be turned on in Microsoft Defender Antivirus) | Yes (for Microsoft 365 email) |
+| Email protection | Yes ([email scanning](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) in Microsoft Defender Antivirus) | Yes (for email hosted in Microsoft 365) |
 | Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10 and later)  | Yes (Microsoft Defender Antivirus is included in Windows 10 and later) |
