@@ -28,6 +28,9 @@ If you need to collaborate with guests across documents, tasks, and conversation
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests. Once you have configured guest access, you can invite guests to teams by following the steps in [Add guests to a team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
+> [!NOTE]
+> If your collaboration scenario can be done in a single channel, consider using [shared channels](microsoft-365/solutions/collaborate-teams-direct-connect) instead.
+
 ## Video demonstration
 
 This video shows the configuration steps described in this document.</br>
