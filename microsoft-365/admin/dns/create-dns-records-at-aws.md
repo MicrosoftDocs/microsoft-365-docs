@@ -50,7 +50,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain you want to verify.":::
 
 1. Select **Manage DNS**. 
 
@@ -58,7 +58,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain you want to verify.":::
 
 1. Select **Create record**.
     
@@ -103,7 +103,7 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -111,7 +111,7 @@ To verify the record in Microsoft 365:
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
     
@@ -140,7 +140,7 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -148,7 +148,7 @@ To verify the record in Microsoft 365:
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
     
@@ -175,7 +175,7 @@ To verify the record in Microsoft 365:
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -183,7 +183,7 @@ To verify the record in Microsoft 365:
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
     
@@ -211,7 +211,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -219,7 +219,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
     
@@ -247,7 +247,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -255,7 +255,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**. 
     
@@ -289,7 +289,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
     **Note**: If you haven't created a hosted zone for your domain, select **Create hosted zone** and complete the steps before moving to the next step. 
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-1.png" alt-text="Select the name of the domain.":::
 
 1. Select **Manage DNS**. 
 
@@ -297,7 +297,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Under **Domain name**, select the domain name for the hosted zone version of the domain you want to verify.
 
-   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
 

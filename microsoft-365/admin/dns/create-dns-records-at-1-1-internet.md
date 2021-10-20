@@ -77,8 +77,12 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
 
 1. Select **Menu**, and then select **Domains and SSL**.
-    
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+  
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
 1. Select **Add record**, and then select the **TXT** section.
     
@@ -114,8 +118,12 @@ To verify the record in Microsoft 365:
 1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 1. Select **Menu**, and then select **Domains and SSL**.
-    
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+  
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
 1. Select **Add record**, and then select the **MX** section.
     
@@ -137,8 +145,12 @@ To verify the record in Microsoft 365:
 1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
     
 1. Select **Menu**, and then select **Domains and SSL**.
-    
-1. Under **Actions** for the domain that you want to update, select the gear control, and then select **Manage subdomains**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+  
+1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
     Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)<br/>First, you'll create the Autodiscover subdomain.
     
@@ -176,11 +188,11 @@ To verify the record in Microsoft 365:
     
 1. Select **Menu**, and then select **Domains and SSL**.
   
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
   
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
  
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
    
 1. Select **Add record**, and then select the **SPF (TXT)** section.
     
@@ -247,11 +259,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
 1. Select **Menu**, and then select **Domains and SSL**.
   
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
   
 1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
  
-   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
 1. Select **Add record**, and then select the **SRV** section.
     

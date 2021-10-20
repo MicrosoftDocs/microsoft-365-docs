@@ -48,7 +48,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
 1. On the landing page, under **Account**, choose **Domain List** from the drop-down list. 
 
-     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Select Domain LList from the drop-down list.":::
+     :::image type="content" source="../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png" alt-text="Select Domain List from the drop-down list.":::
 
 1. On the Domain List page, select the domain you want to edit, and then select **Manage**.
 
@@ -321,7 +321,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
-This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs 2 CNAME records so that users can enroll devices to the service.
+This service helps you secure and remotely manage mobile devices that connect to your domain. ‎Mobile Device Management‎ needs two CNAME records so that users can enroll devices to the service.
 
 ### Add the two required CNAME records
 

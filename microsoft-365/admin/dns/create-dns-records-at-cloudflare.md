@@ -100,9 +100,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
   
-1. On the Home page, select the domain that you want to update.
+1. On the Home page, select the domain that you want to verify.
 
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to verify.":::
   
 1. On the Overview page for your domain, select **DNS**.
 

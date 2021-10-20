@@ -48,6 +48,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
+
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
     
 3. Select **+ Add Record** in the **TXT (Text)** row of the DNS editor. 
     
@@ -100,6 +102,8 @@ To verify the record in Microsoft 365:
 1. To get started, go to your domains page at Wix by using [this link](https://premium.wix.com/wix/api/mpContainerStaticController#/domains?referralAdditionalInfo=account). You'll be prompted to log in first.
     
 2. Select **Domains** > **...**, and then select **Manage DNS Records** from the dropdown list. 
+
+   :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
 3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record. 
     
