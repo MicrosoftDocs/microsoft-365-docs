@@ -1,11 +1,11 @@
 ---
-title: Is Microsoft Managed Desktop right for you? 
+title: What is Microsoft Managed Desktop?
 description:  Orientation for what the service is and shortcuts to articles for different audiences
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 audience: ITpro
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -51,7 +51,7 @@ Your IT admins benefit from these features:
 ## Device management
 Microsoft Managed Desktop takes on the burden of managing registered devices and the Microsoft software they use.
 
-- **Hardware:** Instead of your IT department having to research and figure out if a device is compatible with the service, we've provided specific hardware and software requirements, tools, and processes to streamline selection so you can choose devices with confidence. You can find recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site. You can either obtain devices yourself (or work with a partner) or reuse devices you already have. Registering devices is easy and straightforward, and before they're deployed, you can also [customize](../working-with-managed-desktop/config-setting-overview.md) certain aspects of the device experience for your users.
+- **Hardware:** Instead of your IT department having to research and figure out if a device is compatible with the service, we've provided specific hardware and software requirements, tools, and processes to streamline selection so you can choose devices with confidence. You can find recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices) site. You can either obtain devices yourself (or work with a partner) or reuse devices you already have. Registering devices is easy and straightforward, and before they're deployed, you can also [customize](../working-with-managed-desktop/config-setting-overview.md) certain aspects of the device experience for your users.
 
 - **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Microsoft 365 Apps for enterprise updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
 

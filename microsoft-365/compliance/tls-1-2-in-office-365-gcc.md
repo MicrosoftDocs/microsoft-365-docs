@@ -3,7 +3,7 @@ title: Disabling TLS 1.0 and 1.1 in Microsoft 365 GCC High and DoD
 description: Discusses how Microsoft is disabling support for TLS 1.1 and 1.0 in GCC High and DoD environments in Microsoft 365.
 author: kccross
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -28,32 +28,38 @@ ms.technology: mde
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Ensure that your devices:
 
 - Are onboarded to Microsoft Defender for Endpoint
+
 - Run [supported operating systems and platforms](tvm-supported-os.md)
+
 - Have the following mandatory updates installed and deployed in your network to boost your vulnerability assessment detection rates:
 
-> Release | Security update KB number and link
-> :---|:---
-> Windows 10 Version 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
-> Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
-> Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
-> Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
+  > Release | Security update KB number and link
+  > :---|:---
+  > Windows 10 Version 1709 | [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441) and [KB 4516071](https://support.microsoft.com/help/4516071/windows-10-update-kb4516071)
+  > Windows 10 Version 1803 | [KB4493464](https://support.microsoft.com/help/4493464) and [KB 4516045](https://support.microsoft.com/help/4516045/windows-10-update-kb4516045)
+  > Windows 10 Version 1809 | [KB 4516077](https://support.microsoft.com/help/4516077/windows-10-update-kb4516077)
+  > Windows 10 Version 1903 | [KB 4512941](https://support.microsoft.com/help/4512941/windows-10-update-kb4512941)
 
 - Are onboarded to [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and  [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection-configure) to help remediate threats found by threat and vulnerability management. If you're using Configuration Manager, update your console to the latest version.
-    - **Note**: If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
+
+  > [!NOTE]
+  > If you have the Intune connection enabled, you get an option to create an Intune security task when creating a remediation request. This option does not appear if the connection is not set.
+
 - Have at least one security recommendation that can be viewed in the device page
+
 - Are tagged or marked as co-managed
 
 ## Relevant permission options
 
-1. Log in to Microsoft Defender Security Center using account with a Security administrator or Global administrator role assigned.
-2. In the navigation pane, select **Settings > Roles**.
+1. Log in to Microsoft 365 Defender portal using account with a Security administrator or Global administrator role assigned.
+2. In the navigation pane, select **Settings > Endpoints > Roles**.
 
-For more information, see [Create and manage roles for role-based access control](user-roles.md)
+For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
 ### View data
 

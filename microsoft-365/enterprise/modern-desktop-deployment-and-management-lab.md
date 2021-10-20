@@ -9,7 +9,7 @@ ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -99,7 +99,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 > [!NOTE]
-> Please use a broadband Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The kit expires August 23, 2021. A new version will be published prior to expiration.
+> Please use a broadband Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The lab expires November 6, 2021. A new version will be published prior to expiration.
 
 ## Additional guidance
 

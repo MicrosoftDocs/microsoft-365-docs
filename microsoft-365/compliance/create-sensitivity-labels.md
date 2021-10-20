@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -49,14 +49,14 @@ The global admin for your organization has full permissions to create and manage
 
     For example, from the Microsoft 365 compliance center:
 
-    ![Create a sensitivity label](../media/create-sensitivity-label-full.png)
+    ![Create a sensitivity label.](../media/create-sensitivity-label-full.png)
 
     > [!NOTE]
     > By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](/azure/information-protection/configure-policy-migrate-labels).
 
 3. On the **Define the scope for this label** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
 
-    ![Scopes for sensitivity labels](../media/sensitivity-labels-scopes.png)
+    ![Scopes for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
     - If **Files & emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. If this option isn't selected, the wizard displays the first page of these settings but you can't configure them and the labels won't be available for users to select in these apps.
 
@@ -74,7 +74,7 @@ The global admin for your organization has full permissions to create and manage
 
 To edit an existing label, select it, and then select the **Edit label** button:
 
-![Edit label button to edit a sensitivity label](../media/edit-sensitivity-label-full.png)
+![Edit label button to edit a sensitivity label.](../media/edit-sensitivity-label-full.png)
 
 This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 4.
 
@@ -96,7 +96,7 @@ For example:
 
 - Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. The [following section](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) has an example configuration that specifies the label name and tooltip text for French, Italian, and German.
 
-- For the Azure Information Protection unified labeling client only, specify [advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) that include setting a label color, and applying a custom property when a label is applied. For the full list, see [Available advanced settings for labels](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) from this client's admin guide.
+- The Azure Information Protection unified labeling client supports an extensive list of [advanced settings](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) that include setting a label color, and applying a custom property when a label is applied. For the full list, see [Available advanced settings for labels](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels) from this client's admin guide.
 
 #### Example configuration to configure a sensitivity label for different languages
 
@@ -142,7 +142,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
     For example, from the Microsoft 365 compliance center:
 
-    ![Publish labels](../media/publish-sensitivity-labels-full.png)
+    ![Publish labels.](../media/publish-sensitivity-labels-full.png)
 
     > [!NOTE]
     > By default, tenants don't have any label policies and you must create them. 
@@ -170,14 +170,18 @@ Completing the wizard automatically publishes the label policy. To make changes 
 
 To edit an existing label policy, select it, and then select the **Edit Policy** button: 
 
-![Edit a sensitivity label](../media/edit-sensitivity-label-policy-full.png)
+![Edit a sensitivity label.](../media/edit-sensitivity-label-policy-full.png)
 
 This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
 When you use built-in labeling for Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, allow up to 24 hours for changes to replicate to all apps and services.
 
-> [!NOTE]
-> Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
+Other apps and services that support sensitivity labels might update more frequently than 24 hours with their own update schedules and triggers for policy updates. Check their documentation for details. For example, for the Azure Information Protection unified labeling client, see the **Policy update** row in the [Detailed comparisons for the Azure Information Protection clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients) table.
+
+> [!TIP]
+> Remember to factor in timing dependencies that can sometimes delay sensitivity labels and label policies from working as expected. For example, populating a new group and group membership changes, network replication latency and bandwidth restrictions, and [group membership caching by the Azure Information Protection service](/azure/information-protection/prepare#group-membership-caching-by-azure-information-protection) for labels that apply encryption.
+> 
+> With many external dependencies that each have their own timing cycles, it’s a good idea to wait 24 hours before you spend time troubleshooting labels and label policies for recent changes.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 

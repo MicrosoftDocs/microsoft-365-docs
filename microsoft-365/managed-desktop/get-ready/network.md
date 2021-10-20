@@ -7,7 +7,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -77,14 +77,16 @@ Microsoft Teams | \*.teams.skype.com  <br>\*.teams.microsoft.com  <br>teams.micr
 Power BI | maxcdn.bootstrapcdn.com <br>ajax.aspnetcdn.com <br>netdna.bootstrapcdn.com <br>cdn.optimizely.com <br>google-analytics.com <br>\*.mktoresp.com <br>\*.aadcdn.microsoftonline-p.com <br>\*.msecnd.com <br>\*.localytics.com <br>ajax.aspnetcdn.com <br>\*.localytics.com <br>\*.virtualearth.net <br>platform.bing.com <br>powerbi.microsoft.com <br>c.microsoft.com <br>app.powerbi.com <br>\*.powerbi.com <br>dc.services.visualstudio.com <br>support.powerbi.com <br>powerbi.uservoice.com <br>go.microsoft.com <br>c1.microsoft.com <br>\*.azureedge.net |[Power BI & Express Route](/power-bi/service-admin-power-bi-expressroute) 
 OneNote | apis.live.net <br>www.onedrive.com <br>login.microsoft.com  <br>www.onenote.com <br>\*.onenote.com <br>\*.msecnd.net <br>\*.microsoft.com <br>\*.office.net <br>cdn.onenote.net <br>site-cdn.onenote.net <br>cdn.optimizely.com <br>Ajax.aspnetcdn.com <br>officeapps.live.com <br>\\*.onenote.com <br>\*cdn.onenote.net <br>contentstorage.osi.office.net <br>\*onenote.officeapps.live.com <br>\*.microsoft.com | [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-## Steps to get ready
+## Steps to get ready for Microsoft Managed Desktop
 
-1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
-2. Use [Readiness assessment tools](readiness-assessment-tool.md).
-3. [Prerequisites for guest accounts](guest-accounts.md)
-4. [Network configuration for Microsoft Managed Desktop](network.md) (This article)
-5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
-6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
-7. [Apps in Microsoft Managed Desktop](apps.md)
-8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
-9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Run [readiness assessment tools](readiness-assessment-tool.md).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review [prerequisites for guest accounts](guest-accounts.md).
+1. Check network configuration (this article).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. [Prepare apps](apps.md).
+1. [Prepare mapped drives](mapped-drives.md).
+1. [Prepare printing resources](printing.md).
+1. Address [device names](address-device-names.md).

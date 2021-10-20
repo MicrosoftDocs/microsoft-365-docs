@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -40,7 +40,7 @@ For example, you can understand the activity of every user licensed to use OneDr
 
 You can view the activities in the OneDrive report by choosing the **Activity** tab.<br/>![Microsoft 365 reports - Microsoft OneDrive activity report.](../../media/c89df0b0-2611-4acf-9ef7-17cedf7977be.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![OneDrive activity report - choose columns](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![OneDrive activity report - choose columns.](../../media/252f311f-ffde-4e5a-9158-2b822bf86964.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
   

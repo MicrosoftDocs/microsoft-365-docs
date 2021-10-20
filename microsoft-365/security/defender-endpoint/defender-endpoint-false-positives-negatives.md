@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,6 +20,7 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
+ms.date: 10/07/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
 ---
@@ -34,7 +35,7 @@ ms.custom: FPFN
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
-![Definition of false positive and negatives in Defender for Endpoint](images/false-positives-overview.png)
+![Definition of false positive and negatives in Defender for Endpoint.](images/false-positives-overview.png)
 
 Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center), your security operations can take steps to address them by using the following process:
 
@@ -46,7 +47,7 @@ Fortunately, steps can be taken to address and reduce these kinds of issues. If 
 
 You can get help if you still have issues with false positives/negatives after performing the tasks described in this article. See [Still need help?](#still-need-help)
 
-![Steps to address false positives and negatives](images/false-positives-step-diagram.png)
+![Steps to address false positives and negatives.](images/false-positives-step-diagram.png)
 
 > [!NOTE]
 > This article is intended as guidance for security operators and security administrators who are using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
@@ -69,16 +70,13 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 4. Depending on the alert status, take the steps described in the following table:
 
-<br>
+<br/><br/>
 
-****
-
-|Alert status|What to do|
-|---|---|
-|The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
-|The alert is a false positive|<ol><li>[Classify the alert](#classify-an-alert) as a false positive.</li><li>[Suppress the alert](#suppress-an-alert).</li><li>[Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.</li><li>[Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).</li></ol>|
-|The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
-|||
+   |Alert status|What to do|
+   |---|---|
+   |The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
+   |The alert is a false positive|1. [Classify the alert](#classify-an-alert) as a false positive.<br/><br/>2. [Suppress the alert](#suppress-an-alert).<br/><br/>3. [Create an indicator](#indicators-for-microsoft-defender-for-endpoint) for Microsoft Defender for Endpoint.<br/><br/>4. [Submit a file to Microsoft for analysis](#part-4-submit-a-file-for-analysis).|
+   |The alert is accurate, but benign (unimportant)|[Classify the alert](#classify-an-alert) as a true positive, and then [suppress the alert](#suppress-an-alert).|
 
 ### Classify an alert
 
@@ -88,7 +86,7 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 2. Select **Alerts queue**, and then select an alert.
 
-3. For the selected alert, select **Actions** > **Manage alert**. A flyout pane opens.
+3. For the selected alert, select **Actions** \> **Manage alert**. A flyout pane opens.
 
 4. In the **Manage alert** section, select either **True alert** or **False alert**. (Use **False alert** to classify a false positive.)
 
@@ -129,7 +127,7 @@ After you have reviewed your alerts, your next step is to [review remediation ac
 
 - [Restore a quarantined file from the Action Center](#restore-a-quarantined-file-from-the-action-center)
 - [Undo multiple actions at one time](#undo-multiple-actions-at-one-time)
-- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices).  and
+- [Remove a file from quarantine across multiple devices](#remove-a-file-from-quarantine-across-multiple-devices). and
 - [Restore file from quarantine](#restore-file-from-quarantine)
 
 When you're done reviewing and undoing actions that were taken as a result of false positives, proceed to [review or define exclusions](#part-3-review-or-define-exclusions).
@@ -161,7 +159,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 ### Remove a file from quarantine across multiple devices
 
 > [!div class="mx-imgBorder"]
-> ![Quarantine file](images/autoir-quarantine-file-1.png)
+> ![Quarantine file.](images/autoir-quarantine-file-1.png)
 
 1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
 
@@ -173,14 +171,15 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 You can roll back and remove a file from quarantine if you've determined that it's clean after an investigation. Run the following command on each device where the file was quarantined.
 
-1. Open an elevated command–line prompt on the device:
+1. Open an elevated command-line prompt on the device:
+
    1. Go to **Start** and type _cmd_.
-   2. Right–click **Command prompt** and select **Run as administrator**.
+   2. Right-click **Command prompt** and select **Run as administrator**.
 
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -215,7 +214,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
+2. Choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions)).
 
 3. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
@@ -227,7 +226,7 @@ In general, you should not need to define exclusions for Microsoft Defender Anti
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** > **+ Create Policy**.
+2. Choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
 3. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
 
@@ -255,7 +254,7 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, create "a
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-![Indicator types diagram](images/false-positives-indicators.png)
+![Indicator types diagram.](images/false-positives-indicators.png)
 
 #### Indicators for files
 
@@ -265,7 +264,7 @@ Before you create indicators for files, make sure the following requirements are
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - The [Block or allow feature is turned on](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### Indicators for IP addresses, URLs, or domains
@@ -288,7 +287,7 @@ Before you create indicators for application certificates, make sure the followi
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016; or Windows Server 2019
+- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - Virus and threat protection definitions are up to date
 
 > [!TIP]
@@ -356,7 +355,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
+2. Choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
 
 3. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
 
@@ -368,13 +367,14 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Endpoint security** > **Antivirus** > **+ Create policy**.
+2. Choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
 
 3. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
 
 4. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
 
 5. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
+
    - Set **Turn on cloud-delivered protection** to **Yes**.
    - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
 
@@ -399,7 +399,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Devices** > **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
+2. Choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile).)
 
 3. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
 
@@ -413,7 +413,7 @@ We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 1. Go to the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com>) and sign in.
 
-2. Choose **Devices** > **Configuration profiles** > **+ Create profile**.
+2. Choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
 
 3. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
 

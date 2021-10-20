@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection: 
 - M365-subscription-management
@@ -76,6 +76,12 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 > You need a registered account to access the [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465). If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
+
+> [!NOTE]
+> 
+> Microsoft 365 services do not provide payment receipts.
+> For credit card payments, please use the invoice and credit card billing statement to match your payment.
+
 
 ## Receive a copy of your billing statement in email
 

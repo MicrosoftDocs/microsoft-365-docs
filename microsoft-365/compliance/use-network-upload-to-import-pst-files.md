@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -54,12 +54,12 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
   - You have to be a global administrator in your organization.
 
-  > [!TIP]
+    > [!TIP]
     > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.
   
 - The only supported method for importing PST files to Microsoft 365 is to use the AzCopy tool, as described in this topic. You can't use the Azure Storage Explorer to upload PST files directly to the Azure Storage area.
-
-- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to Microsoft 365.
+ 
+- You need to store the PST files that you want to import to Microsoft 365 on a file server or shared folder in your organization. It's currently not supported to copy PST files from your organization's Azure Storage account to the Azure Storage location used by the Microsoft 365 Import service. In Step 2, you run the AzCopy tool to upload the PST files that are stored on a file server or shared folder to the Microsoft cloud.
 
 - Large PST files may impact the performance of the PST import process. So we recommend that each PST file you upload to the Azure Storage location in Step 2 should be no larger than 20 GB.
 
@@ -98,7 +98,7 @@ The first step is to download and install the AzCopy tool, which is the tool tha
     > [!NOTE]
     > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center. See the **Before you begin** section for more information. 
 
-3. On the **Import** tab, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
     The import job wizard is displayed.
 
@@ -106,11 +106,11 @@ The first step is to download and install the AzCopy tool, which is the tool tha
 
 5. On the **Do you want to upload or ship data?** page, click **Upload your data** and then click **Next**.
 
-    ![Click Upload your data to create a network upload import job](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
+    ![Click Upload your data to create a network upload import job.](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. On the **Import data** page, do the following two things:
 
-    ![Copy the SAS URL and download the AzCopy tool on the Import data page](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
+    ![Copy the SAS URL and download the AzCopy tool on the Import data page.](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
     1. In step 2, click **Show network upload SAS URL**. After the SAS URL is displayed, click **Copy to clipboard** and then paste it and save it to a file so you can access it later.
 
@@ -241,7 +241,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance > Import**.
 
-3. On the **Import** tab, click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **New import job**.
+3. On the **Import** tab, click ![Add Icon.](../media/ITPro-EAC-AddIcon.gif) **New import job**.
 
    > [!NOTE]
    > You have to be assigned the appropriate permissions to access the **Import** page in the Microsoft 365 compliance center to create an import job. See the **Before you begin** section for more information. 
@@ -252,15 +252,15 @@ The next step is to create the PST Import job in the Import service in Microsoft
   
 6. In step 4 on the **Import data** page, click the **I'm done uploading my files** and **I have access to the mapping file** check boxes, and then click **Next**.
 
-    ![Click the two check boxes in step 4](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
+    ![Click the two check boxes in step 4.](../media/9f2427e8-3af2-4e27-95e6-a9f08430d3d8.png)
   
 7. On the **Select the mapping file** page, click **Select mapping file** to submit the CSV mapping file that you created in Step 4.
 
-    ![Click Select mapping file to submit the CSV file you created for the import job](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
+    ![Click Select mapping file to submit the CSV file you created for the import job.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 8. After the name of the CSV file appears under **Mapping file name**, click **Validate** to check your CSV file for errors.
 
-    ![Click Validate to check the CSV file for errors](../media/4680999d-5538-4059-b878-2736a5445037.png)
+    ![Click Validate to check the CSV file for errors.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     The CSV file has to be successfully validated to create a PST Import job. The file name is changed to green after it's successfully validated. If the validation fails, click the **View log** link. A validation error report is opened, with an error message for each row in the file that failed.
 
@@ -273,7 +273,7 @@ The next step is to create the PST Import job in the Import service in Microsoft
 
     A status flyout page is displayed, with a status of **Analysis in progress** and the new import job is displayed in the list on the **Import PST files** page.
 
-11. Click **Refresh** ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) to update the status information that's displayed in the **Status** column. When the analysis is complete and the data is ready to be imported, the status is changed to **Analysis completed**.
+11. Click **Refresh** ![Refresh icon.](../media/O365-MDM-Policy-RefreshIcon.gif) to update the status information that's displayed in the **Status** column. When the analysis is complete and the data is ready to be imported, the status is changed to **Analysis completed**.
 
     You can click the import job to display the status flyout page, which contains more detailed information about the import job such as the status of each PST file listed in the mapping file.
 
@@ -285,7 +285,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
   
    The **Filter your data** page is displayed. It contains the data insights resulting from the analysis performed on the PST files by Office 365, including information about the age of the data. At this point, you have the option to filter the data that will be imported or import all the data as is. 
 
-    ![You can trim the data in the PST files or import all of it](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
+    ![You can trim the data in the PST files or import all of it.](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 2. Do one of the following:
 
@@ -299,7 +299,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
 3. If you chose to import all the data, click **Import data** to start the import job. 
 
-   The status of the import job is display on the **Import PST files** page. Click ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported.
+   The status of the import job is display on the **Import PST files** page. Click ![Refresh icon.](../media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported.
 
 ## More information
 
@@ -311,7 +311,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
 
-  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users additional mailbox storage space to store the data that you imported.
+  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
   - Placing mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data that you imported.
 
@@ -357,7 +357,7 @@ You can use the network upload option and the Office 365 Import service to bulk-
   
 Here's an illustration and description of the network upload process to import PST files to mailboxes in Office 365.
   
-![Workflow of the network upload process to import PST files to Office 365](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
+![Workflow of the network upload process to import PST files to Office 365.](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
 1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the Microsoft 365 compliance center. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription. 
 

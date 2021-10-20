@@ -6,28 +6,28 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: "Change the color theme of your booking page in the Microsoft Bookings app."
 ---
 
 # Customize and publish your booking page
 
-The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you.
+The Booking Page is where you set up what your external facing booking page will look like. Once you customize and publish your booking page, people will use it to book appointments with you.
 
-To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so customers can start booking appointments with you.
+To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-2. In the navigation pane, select **Booking page**.
+2. In the navigation pane, select **Settings** -> **Booking page**.
 
 The section below gives you information about setting up your bookings page and how to publish your page.
 
-- **Booking page status** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
+- **Configure booking page** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
 
     The internal Booking Page looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page.":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
@@ -45,7 +45,7 @@ The section below gives you information about setting up your bookings page and 
 
 Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking page looks like this:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page.":::
 
 ## Publish the booking page
 

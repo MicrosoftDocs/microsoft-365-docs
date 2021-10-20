@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,12 +25,11 @@ ms.custom: api
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## API description
 
@@ -40,17 +39,16 @@ Retrieves a specific incident by its ID
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
-
 ## Permissions
 
-One of the following permissions is required to call this API. 
+One of the following permissions is required to call this API.
 
-Permission type | Permission | Permission display name
-:---|:---|:---
-Application | Incident.Read.All | 'Read all Incidents'
-Application | Incident.ReadWrite.All | 'Read and write all Incidents'
-Delegated (work or school account) | Incident.Read | 'Read Incidents'
-Delegated (work or school account) | Incident.ReadWrite | 'Read and write Incidents'
+Permission type|Permission|Permission display name
+---|---|---
+Application|Incident.Read.All|'Read all Incidents'
+Application|Incident.ReadWrite.All|'Read and write all Incidents'
+Delegated (work or school account)|Incident.Read|'Read Incidents'
+Delegated (work or school account)|Incident.ReadWrite|'Read and write Incidents'
 
 > [!NOTE]
 >
@@ -62,14 +60,14 @@ Delegated (work or school account) | Incident.ReadWrite | 'Read and write Incide
 ## HTTP request
 
 ```console
-GET .../api/incidents/{id} 
+GET .../api/incidents/{id}
 ```
 
 ## Request headers
 
-Name | Type | Description
-:---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+Name|Type|Description
+---|---|---
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
 
@@ -77,12 +75,12 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the incident entity in the response body. 
+If successful, this method returns 200 OK, and the incident entity in the response body.
 If incident with the specified id was not found - 404 Not Found.
 
 ## Example
 
-**Request**
+### Request
 
 Here is an example of the request.
 

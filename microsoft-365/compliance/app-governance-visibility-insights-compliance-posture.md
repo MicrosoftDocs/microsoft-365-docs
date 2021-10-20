@@ -2,14 +2,14 @@
 title: "Determine your app compliance posture"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: v-tophillips
+author: v-tophillips
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -20,9 +20,9 @@ description: "Determine your app compliance posture."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Microsoft app governance allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the app governance Overview page in the [Microsoft 365 Compliance Center](https://aka.ms/appgovernance).
+Microsoft app governance allows you to quickly assess the compliance posture of the third-party apps and their access to data in your Microsoft 365 tenant from the app governance Overview page in the Microsoft 365 Compliance Center.
 
-![The app governance overview page in the Microsoft 365 Compliance Center](..\media\manage-app-protection-governance\mapg-cc-overview.png)
+![The app governance overview page in the Microsoft 365 Compliance Center.](..\media\manage-app-protection-governance\mapg-cc-overview.png)
 
 >[!Note]
 > Your sign-in account must have one of [these roles](app-governance-get-started.md#administrator-roles) to view any app governance data.

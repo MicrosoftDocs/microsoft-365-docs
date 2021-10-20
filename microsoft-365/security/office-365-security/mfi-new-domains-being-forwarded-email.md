@@ -2,12 +2,12 @@
 title: New domains being forwarded email insight
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 description: Admins can learn how to use the New domains being forwarded email insight in the Mail flow dashboard in the Security & Compliance Center to investigate when their users are forwarding messages to external domains that have never been been forwarded to.
 ms.technology: mdo
@@ -31,11 +31,11 @@ The **New domains being forwarded email** insight in the [Security & Compliance 
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
-![New domains being forwarded email insight](../../media/mfi-new-domains-being-forwarded.png)
+![New domains being forwarded email insight.](../../media/mfi-new-domains-being-forwarded.png)
 
 When you click on the widget, a flyout appears where you can find more details about the forwarded messages, including a link back to the [Forwarding report](view-mail-flow-reports.md#forwarding-report).
 
-![Details flyout that appears after clicking on the New domains being forwarded email insight](../../media/mfi-new-domains-being-forwarded-details.png)
+![Details flyout that appears after clicking on the New domains being forwarded email insight.](../../media/mfi-new-domains-being-forwarded-details.png)
 
 You can also get to this details page when you select the insight after you click **View all** in the **Top insights & recommendations** area on (**Reports** \> **Dashboard** or <https://protection.office.com/insightdashboard>).
 

@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---

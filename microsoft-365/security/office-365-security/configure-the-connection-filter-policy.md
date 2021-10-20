@@ -1,21 +1,21 @@
 ---
 title: Configure the default connection filter policy
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
-search.appverid: 
+ms.localizationpriority: medium
+search.appverid:
   - MET150
 ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
-ms.collection: 
+ms.collection:
   - M365-security-compliance
-ms.custom: 
+ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn how to configure connection filtering in Exchange Online Protection (EOP) to allow or block emails from email servers.
 ms.technology: mdo
@@ -70,7 +70,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to modify the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, select **Connection filter policy (Default)** from the list by clicking on the name of the policy.
 
@@ -87,9 +87,9 @@ This article describes how to configure the default connection filter policy in 
        - IP range: For example, 192.168.0.1-192.168.0.254.
        - CIDR IP: For example, 192.168.0.1/25. Valid subnet mask values are /24 through /32. To skip spam filtering for /1 to /23, see the [Skip spam filtering for a CIDR IP outside of the available range](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) section later in this article.
 
-       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
+       Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
-     To add the IP address or address range, click in the box and type itclick **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
+     To add the IP address or address range, click in the box and type itclick **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png). To remove an entry, select the entry in **Allowed IP Address** and then click **Remove** ![Remove](../../media/scc-remove-icon.png). When you're finished, click **Save**.
 
    - **Always block messages from the following IP addresses or address range**: This is the IP Block List. Enter a single IP, IP range, or CIDR IP in the box as previously described in the **Always allow messages from the following IP addresses or address range** setting.
 
@@ -101,7 +101,7 @@ This article describes how to configure the default connection filter policy in 
 
 ## Use the Microsoft 365 Defender portal to view the default connection filter policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, the following properties are displayed in the list of policies:
 
@@ -148,7 +148,7 @@ For detailed syntax and parameter information, see [Set-HostedConnectionFilterPo
 
 To verify that you've successfully modified the default connection filter policy, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam** \> select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section \> select **Connection filter policy (Default)** from the list by clicking on the name of the policy, and verify the settings.
 
 - In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 
@@ -203,4 +203,4 @@ If you encounter either of these scenarios, you can create a mail flow rule with
 
 ****
 
-![The short icon for LinkedIn Learning](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.
+![The short icon for LinkedIn Learning.](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Discover free video courses for **Microsoft 365 admins and IT pros**, brought to you by LinkedIn Learning.

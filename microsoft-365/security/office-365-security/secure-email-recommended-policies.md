@@ -38,7 +38,7 @@ These recommendations require your users to use modern email clients, including 
 
 To protect email, the following diagram illustrates which policies to update from the the common identity and device access policies.
 
-[![Summary of policy updates for protecting access to Teams and its dependent services](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
+[![Summary of policy updates for protecting access to Teams and its dependent services.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png)
 
 Note the addition of a new policy for Exchange Online to block ActiveSync clients. This forces the use of Outlook mobile.
 
@@ -107,7 +107,7 @@ For more information, see [Set up new Office 365 Message Encryption capabilities
 
 ## Next steps
 
-![Step 4: Policies for Microsoft 365 cloud apps](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Step 4: Policies for Microsoft 365 cloud apps.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configure Conditional Access policies for:
 

@@ -1,20 +1,18 @@
 ---
 title: Microsoft Defender for Endpoint on Linux
-ms.reviewer: 
+ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -29,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
@@ -40,16 +38,13 @@ This topic describes how to install, configure, update, and use Microsoft Defend
 
 ### Prerequisites
 
-- Access to the Microsoft Defender Security Center portal
+- Access to the Microsoft 365 Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 - Beginner-level experience in Linux and BASH scripting
 - Administrative privileges on the device (in case of manual deployment)
 
 > [!NOTE]
->  Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
-> 
-> Microsoft Defender for Endpoint on Linux is not yet integrated into Azure Security Center.
-
+> Microsoft Defender for Endpoint on Linux agent is independent from [OMS agent](/azure/azure-monitor/agents/agents-overview#log-analytics-agent). Microsoft Defender for Endpoint relies on its own independent telemetry pipeline.
 
 
 ### Installation instructions
@@ -66,24 +61,61 @@ In general you need to take the following steps:
     - [Deploy using Puppet configuration management tool](linux-install-with-puppet.md)
     - [Deploy using Ansible configuration management tool](linux-install-with-ansible.md)
     - [Deploy using Chef configuration management tool](linux-deploy-defender-for-endpoint-with-chef.md)
-    
+
 If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
-
-
 
 ### System requirements
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
-  - Red Hat Enterprise Linux 7.2 or higher
+  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 7.2 or higher 
+  - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Amazon Linux 2
+  - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
+
+    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
+       - For 6.7: 2.6.32-573.* 
+       - For 6.8: 2.6.32-642.* 
+       - For 6.9: 2.6.32-696.* 
+       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+
+    List of versions:
+
+    - 2.6.32-754.2.1.el6.x86_64 
+    - 2.6.32-754.17.1.el6.x86_64
+    - 2.6.32-754.29.1.el6.x86_64
+    - 2.6.32-754.3.5.el6.x86_64 
+    - 2.6.32-754.18.2.el6.x86_64
+    - 2.6.32-754.29.2.el6.x86_64
+    - 2.6.32-754.6.3.el6.x86_64 
+    - 2.6.32-754.22.1.el6.x86_64
+    - 2.6.32-754.30.2.el6.x86_64
+    - 2.6.32-754.9.1.el6.x86_64 
+    - 2.6.32-754.23.1.el6.x86_64
+    - 2.6.32-754.33.1.el6.x86_64
+    - 2.6.32-754.10.1.el6.x86_64
+    - 2.6.32-754.24.2.el6.x86_64
+    - 2.6.32-754.35.1.el6.x86_64
+    - 2.6.32-754.11.1.el6.x86_64
+    - 2.6.32-754.24.3.el6.x86_64
+    - 2.6.32-754.39.1.el6.x86_64
+    - 2.6.32-754.12.1.el6.x86_64
+    - 2.6.32-754.25.1.el6.x86_64
+    - 2.6.32-754.41.2.el6.x86_64
+    - 2.6.32-754.14.2.el6.x86_64
+    - 2.6.32-754.27.1.el6.x86_64
+    - 2.6.32-754.15.3.el6.x86_64
+    - 2.6.32-754.28.1.el6.x86_64       
 
 
 - Minimum kernel version 3.10.0-327
@@ -126,21 +158,32 @@ If you experience any installation failures, refer to [Troubleshooting installat
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
+
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
+
+### Configuring Exclusions
+
+When adding exclusions to Microsoft Defender Antivirus, you should be mindful of [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
 
 ### Network connections
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
 
-| Spreadsheet of domains list | Description |
-|:-----|:-----|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <br><br>[Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+<br>
+
+****
+
+|Spreadsheet of domains list|Description|
+|---|---|
+|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet [here](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
+|||
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
 
 Defender for Endpoint can discover a proxy server by using the following discovery methods:
+
 - Transparent proxy
 - Manual static proxy configuration
 
@@ -160,6 +203,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 ## How to configure Microsoft Defender for Endpoint on Linux
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+
+## Common Applications to Microsoft Defender for Endpoint can impact
+
+High I/O workloads from certain applications can experience performance issues when Microsoft Defender for Endpoint is installed. These include applications for developer scenarios like Jenkins and Jira, and database workloads like OracleDB and Postgres. If experiencing performance degradation, consider setting exclusions for trusted applications, keeping [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) in mind. For additional guidance, consider consulting documentation regarding antivirus exclusions from third party applications.
 
 ## Resources
 

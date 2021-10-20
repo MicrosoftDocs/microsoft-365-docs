@@ -3,15 +3,13 @@ title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,7 +27,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!IMPORTANT]
 > This topic contains instructions for how to set preferences for Defender for Endpoint on Linux in enterprise environments. If you are interested in configuring the product on a device from the command-line, see [Resources](linux-resources.md#configure-from-the-command-line).
@@ -97,6 +95,55 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+  
+#### Run a scan after definitions are updated
+
+Specifies whether to start a process scan after new security intelligence updates are downloaded on the device. Enabling this setting will trigger an antivirus scan on the running processes of the device.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanAfterDefinitionUpdate|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
+|
+
+#### Scan archives (on-demand antivirus scans only)
+
+Specifies whether to scan archives during on-demand antivirus scans.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanArchives|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+
+#### Degree of parallelism for on-demand scans
+
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**Data type**|Integer|
+|**Possible values**|2 (default). Allowed values are integers between 1 and 64.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+  
 
 #### Exclusion merge policy
 
@@ -465,7 +512,11 @@ The following configuration profile contains entries for all settings described 
 {
    "antivirusEngine":{
       "enableRealTimeProtection":true,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
+      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -493,7 +544,7 @@ The following configuration profile contains entries for all settings described 
          }
       ],
       "allowedThreats":[
-         "EICAR-Test-File (not a virus)"
+         "<EXAMPLE DO NOT USE>EICAR-Test-File (not a virus)"
       ],
       "disallowedThreatActions":[
          "allow",

@@ -1,13 +1,13 @@
 ---
 title: "Manage SharePoint Online site groups with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 12/17/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -65,7 +65,7 @@ C:\Scripts\SiteGroupsAndUsers.ps1
 
 In both cases, you should see something similar to this:
 
-![SharePoint Online site groups](../media/SPO-site-groups.png)
+![SharePoint Online site groups.](../media/SPO-site-groups.png)
 
 These are all the groups that have been created for the site `https://litwareinc.sharepoint.com/sites/finance`, and all the users assigned to those groups. The group names are in yellow to help you separate group names from their members.
 

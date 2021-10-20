@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -41,7 +41,7 @@ You must also connect to Microsoft 365 with PowerShell.
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
 
-3. You can turn of strong password requirements for specific users with this command:
+3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
     Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false

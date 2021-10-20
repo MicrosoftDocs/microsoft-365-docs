@@ -2,15 +2,13 @@
 title: Troubleshoot installation issues for Microsoft Defender for Endpoint on Mac
 description: Troubleshoot installation issues in Microsoft Defender for Endpoint on Mac.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, install
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -31,7 +29,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## Installation failed
 
@@ -56,7 +54,7 @@ The installation failed because a downgrade between these versions is not suppor
 ## MDATP install log missing or not updated
 
 In rare cases, installation leaves no trace in MDATP's /Library/Logs/Microsoft/mdatp/install.log file.
-You can verify that an installation happened and analyze possible errors by querying macOS logs (this is helpful in MDM deployment, when there is no client UI). We recommend that you use a narrow time window to run a query, and that you filter by the logging process name, as there will be a huge amount of information.
+You can verify that an installation happened and analyze possible errors by querying macOS logs (helpful in MDM deployment, when there is no client UI). We recommend that you use a narrow time window to run a query and filter by the logging process name, as there will be a huge amount of information.
 
 ```bash
 grep '^2020-03-11 13:08' /var/log/install.log

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -36,9 +36,13 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-The following Yammer items can be retained and deleted by using retention policies for Yammer: Community messages and user messages.
+Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in the messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
 
-Reactions from others in the form of emoticons are not included in these messages.
+User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
+
+Reactions from others in the form of emoticons are not retained when you use retention policies for Yammer.
+
+Files that you use with Yammer aren't included in retention policies for Yammer. These items have their own retention policies.
 
 ## How retention works with Yammer
 
@@ -69,7 +73,7 @@ After a retention policy is configured for Yammer messages, the paths the conten
 
 When the retention policy is to retain and then delete:
 
-![Diagram of retention flow for Yammer messages](../media/yammerretentionlifecycle.png)
+![Diagram of retention flow for Yammer messages.](../media/yammerretentionlifecycle.png)
 
 For the two paths in the diagram:
 

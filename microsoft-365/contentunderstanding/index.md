@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn how to find resources for Microsoft SharePoint Syntex.
 ---
 
@@ -34,6 +34,9 @@ The resources on this page are designed to get you started with learning about a
 ## Get started
 
 The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
+
+> [!NOTE]
+> You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
@@ -62,6 +65,7 @@ The resources in this section help your admin in your organization to set up and
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
+|Learn about licensing for SharePoint Syntex|[Licensing for SharePoint Syntex](./syntex-licensing.md)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
 
 ## Models
@@ -87,3 +91,10 @@ A SharePoint Syntex license gives your users premium content services that give 
 |Learn how to make content types more consistently available to SharePoint libraries and lists|[Push content types to a hub](./push-content-type-to-hub.md)|
 |Learn about the term store reports that are available to you|[Term store reports](./term-store-analytics.md)|
 
+## Extensibility
+
+Use REST APIs to create a document understanding model, apply or remove the model to one or more libraries, and obtain or update information about the model.
+
+| If you're looking for this information: | Go to this resource: |
+|:-----|:-----|
+|Use REST APIs for document understanding models|[SharePoint Syntex document understanding model REST API](/sharepoint/dev/apis/syntex/syntex-model-rest-api)|

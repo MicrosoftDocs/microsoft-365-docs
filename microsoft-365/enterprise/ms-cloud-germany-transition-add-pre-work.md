@@ -7,7 +7,7 @@ ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -114,7 +114,8 @@ Read and apply the [ADFS Migration steps](ms-cloud-germany-transition-add-adfs.m
 
 |Step(s)|Description|Impact|
 |---|---|---|
-|Limit SharePoint 2013 workflows, use during the SharePoint Online migration.|Reduce SharePoint 2013 workflows and complete in-flight workflows before transitions.|Inaction may result in user confusion and help desk calls.|
+|Limit SharePoint 2013 workflows, use during the SharePoint Online migration.|Reduce SharePoint 2013 workflows and complete in-flight workflows before transitions.|Inaction may result in user confusion and help desk calls.| 
+Export SharePoint search configuration if any modifications have been applied. |The SharePoint search configuration will not be migrated. If any modifications in SharePoint search have been applied, ensure you take note of any changes and export the search configuration. The settings have to be imported again after the SharePoint transition has been completed.|Any custom solutions based on a modified search schema will be unavailable until the search modifications have been re-applied.|
 
 
 ## Exchange Online

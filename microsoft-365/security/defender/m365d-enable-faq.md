@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -58,13 +58,13 @@ Microsoft 365 Defender automatically selects an optimal location for the data ce
 >[!NOTE]
 >Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
 
-The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 security center to contact Microsoft support.
+The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support.
 
 ## Where can I access Microsoft 365 Defender?
 
-Microsoft 365 Defender is available in Microsoft 365 security center. To go to the security center, browse to the URL <https://security.microsoft.com>.
+Microsoft 365 Defender is available at: <https://security.microsoft.com>.
 
-## What permissions do I need to access Microsoft 365 Defender in Microsoft 365 security center?
+## What permissions do I need to access Microsoft 365 Defender?
 
 Accounts assigned the following Azure Active Directory (Azure AD) roles can access Microsoft 365 Defender functionality and data:
 

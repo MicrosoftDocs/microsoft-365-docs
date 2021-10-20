@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -32,7 +32,7 @@ Keyword dictionaries can be used as `Primary elements` or `Supporting elements` 
 2. Find the keyword dictionary you want to update and choose edit. 
 3.  Make your edits, using one keyword per line.
 
-![screenshot edit keywords](../media/edit-keyword-dictionary.png)
+![screenshot edit keywords.](../media/edit-keyword-dictionary.png)
 
 4. Choose `Done`.
 

@@ -4,15 +4,15 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 ms.reviewer: kshi
-ms.date: 
+ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
-search.appverid: 
+ms.localizationpriority: medium
+search.appverid:
   - MET150
-ms.assetid: 
-ms.collection: 
+ms.assetid:
+ms.collection:
   - M365-security-compliance
 description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
 ms.technology: mdo
@@ -26,13 +26,24 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Safe Documents is a feature in Microsoft 365 E5 or Microsoft 365 E5 Security that uses [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan documents and files that are opened in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard for Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+Safe Documents is a premium feature that uses the cloud backend of [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan opened Office documents in [Protected View](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) or [Application Guard for Office](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46).
+
+Users don't need Defender for Endpoint installed on their local devices to get Safe Documents protection. Users get Safe Documents protection if all of the following requirements are met:
+
+- Safe Documents is enabled in the organization as described in this article.
+- Licenses from a required licensing plan are assigned to the users. Safe Documents is controlled by the **Office 365 SafeDocs** (or **SAFEDOCS** or **bf6f5520-59e3-4f82-974b-7dbbc4fd27c7**) service plan (also known as a service). This service plan is available in the following licensing plans (also known as license plans, Microsoft 365 plans, or products):
+  - Microsoft 365 A5 for Faculty
+  - Microsoft 365 A5 for Students
+  - Microsoft 365 E5
+  - Microsoft 365 E5 Security
+
+  Safe Documents is not included in Microsoft Defender for Office 365 licensing plans.
+
+  For more information, see [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference).
+
+- They're using Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
 ## What do you need to know before you begin?
-
-- Safe Documents is available only to users with *Microsoft 365 E5* or *Microsoft 365 E5 Security* licenses. These licenses are not included in Microsoft Defender for Office 365 plans.
-
-- Safe Documents is supported in Microsoft 365 Apps for enterprise (formerly known as Office 365 ProPlus) version 2004 or later.
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
@@ -56,15 +67,15 @@ To keep you protected, Safe Documents sends files to the [Microsoft Defender for
 
 Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
 
-## Use the Microsoft 365 Defender to configure Safe Documents
+## Use the Microsoft 365 Defender portal to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments**.
+1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 
 3. In the **Global settings** fly out that appears, configure the following settings:
-   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on](../../media/scc-toggle-on.png).
-   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off](../../media/scc-toggle-off.png)).
+   - **Turn on Safe Documents for Office clients**: Move the toggle to the right to turn on the feature: ![Toggle on.](../../media/scc-toggle-on.png).
+   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: We recommend that you leave this option turned off (leave the toggle to the left: ![Toggle off.](../../media/scc-toggle-off.png)).
 
    When you're finished, click **Save**.
 
@@ -72,7 +83,7 @@ Files sent by Safe Documents are not retained in Defender beyond the time needed
 
 ### Use Exchange Online PowerShell to configure Safe Documents
 
-Use the following syntax:
+If you'd rather user PowerShell to configure Safe Documents, use the following syntax in Exchange Online PowerShell:
 
 ```powershell
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
@@ -89,9 +100,24 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365).
 
-### Onboard to the Microsoft Defender for Endpoint Service to enable auditing capabilities
+### Configure individual access to Safe Documents
 
-To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Microsoft 365 Defender portal.
+If you want to selectively allow or block access to the Safe Documents feature, follow these steps:
+
+1. Turn on Safe Documents in the Microsoft 365 Defender portal or Exchange Online PowerShell as previously described in this article.
+2. Use Azure AD PowerShell to disable Safe Documents for specific users as described in [Disable specific Microsoft 365 services for specific users for a specific licensing plan](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan).
+
+  The name of the service plan to disable in PowerShell is **SAFEDOCS**.
+
+For more information, see the following topics:
+
+- [View Microsoft 365 licenses and services with PowerShell](/microsoft-365/enterprise/view-licenses-and-services-with-microsoft-365-powershell)
+- [View Microsoft 365 account license and service details with PowerShell](/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell)
+- [Product names and service plan identifiers for licensing](/azure/active-directory/enterprise-users/licensing-service-plan-reference)
+
+### Onboard to the Microsoft Defender for Endpoint service to enable auditing capabilities
+
+To enable auditing capabilities, the local device needs to have Microsoft Defender for Endpoint installed. To deploy Microsoft Defender for Endpoint, you need to go through the various phases of deployment. After onboarding, you can configure auditing capabilities in the Microsoft 365 Defender portal.
 
 To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/onboarding). If you need additional help, refer to [Troubleshoot Microsoft Defender for Endpoint onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-onboarding).
 
@@ -99,7 +125,7 @@ To learn more, see [Onboard to the Microsoft Defender for Endpoint service](/mic
 
 To verify that you've enabled and configured Safe Documents, do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Safe Attachments** \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
+- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section \> **Global settings**, and verify the **Turn on Safe Documents for Office clients** and **Allow people to click through Protected View even if Safe Documents identifies the file as malicious** settings.
 
 - Run the following command in Exchange Online PowerShell and verify the property values:
 
@@ -107,7 +133,7 @@ To verify that you've enabled and configured Safe Documents, do any of the follo
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
 
-- The following files are available to test Safe Documents protection. These documents are similar to the EICAR.TXT file for testing anti-malware and anti-virus solutions. The files are not harmful, but they will trigger Safe Documents protection.
+- The following files are available to test Safe Documents protection. These files are similar to the EICAR.TXT file for testing anti-malware and anti-virus solutions. The files are not harmful, but they will trigger Safe Documents protection.
 
   - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
   - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)

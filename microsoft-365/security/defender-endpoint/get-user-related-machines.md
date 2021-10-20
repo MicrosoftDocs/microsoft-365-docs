@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -26,7 +26,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -44,7 +44,7 @@ Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
 
-Permission type |Permission|Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
 Application |Machine.Read.All|'Read all machine profiles'
 Application |Machine.ReadWrite.All |'Read and write all machine information'
@@ -67,7 +67,7 @@ GET /api/users/{id}/machines
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
 Authorization | String | Bearer {token}. **Required**.
 
@@ -77,7 +77,7 @@ Empty
 
 ## Response
 
-If successful and user exists - 200 OK with list of [machine](machine.md) entities in the body. If user does not exist - 404 Not Found.
+If successful and user exists - 200 OK with list of [machine](machine.md) entities in the body. If user does not exist - 200 OK with an empty set.
 
 ## Example
 

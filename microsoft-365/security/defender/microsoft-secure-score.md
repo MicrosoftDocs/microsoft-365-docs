@@ -1,10 +1,10 @@
 ---
 title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
+description: Describes Microsoft Secure Score in the Microsoft 365 Defender portal, how to improve your security posture, and what security admins can expect.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - Adm_TOC
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -27,9 +28,9 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
 
-Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
+Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
 Secure Score helps organizations:  
 
@@ -39,7 +40,7 @@ Secure Score helps organizations:
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-![Secure Score homepage](../../media/secure-score/secure-score-home-page.png)
+![Secure Score homepage.](../../media/secure-score/secure-score-home-page.png)
 
 ## How it works
 

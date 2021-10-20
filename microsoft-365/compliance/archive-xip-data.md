@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive XIP source data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, content search, and retention policies to manage third-party data."
 ---
@@ -24,7 +24,7 @@ After XIP source data is stored in user mailboxes, you can apply Microsoft 365 c
 
 The following overview explains the process of using a connector to archive the XIP source data in Microsoft 365.
 
-![Archiving workflow for XIP source data](../media/XIPConnectorWorkflow.png)
+![Archiving workflow for XIP source data.](../media/XIPConnectorWorkflow.png)
 
 1. Your organization works with the XIP source to set up and configure an XIP site.
 
@@ -42,7 +42,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the XIP connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft365 compliance center and create a connector for the XIP source data.
+The first step is to access to the **Data Connectors** page in the Microsoft 365 compliance center and create a connector for the XIP source data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **XIP**.
 

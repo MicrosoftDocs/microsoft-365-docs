@@ -2,13 +2,13 @@
 title: Non-accepted domain report in the Mail flow dashboard
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
@@ -30,7 +30,7 @@ The **Non-accepted domain** report in the [Mail flow dashboard](mail-flow-insigh
 
 Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
-![Non-accepted domain widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-non-accepted-domain-report-widget.png)
+![Non-accepted domain widget in the Mail flow dashboard in the Security & Compliance Center.](../../media/mfi-non-accepted-domain-report-widget.png)
 
 ## Report view for the Non-accepted domain report
 
@@ -40,7 +40,7 @@ By default, the activity for all affected connectors is shown. If you click **Sh
 
 If you hover over a data point (day) in the chart, you'll see the total number of messages for the connector.
 
-![Report view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-overview-view.png)
+![Report view in the Non-accepted domain report.](../../media/mfi-non-accepted-domain-report-overview-view.png)
 
 ## Details table view for the Non-accepted domain report
 
@@ -64,7 +64,7 @@ When you select a row in the table, a flyout appears with the following informat
 - **Message count**
 - **Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.
 
-![Details flyout after selecting a row in Details table view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![Details flyout after selecting a row in Details table view in the Non-accepted domain report.](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
 To go back to the reports view, click **View report**.
 

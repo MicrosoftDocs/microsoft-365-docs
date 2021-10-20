@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -179,7 +179,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     If there are failed deployments (devices with **Error**, **Requirements Not Met**, or **Failed statuses**), you may need to  troubleshoot the devices. For more information, see, [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
 
-    ![Configuration Manager showing successful deployment with no errors](../media/sccm-deployment.png)
+    ![Configuration Manager showing successful deployment with no errors.](../media/sccm-deployment.png)
 
 ### Check that the devices are compliant with the Microsoft 365 Endpoint data loss prevention service
 

@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -27,12 +27,11 @@ ms.custom: api
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
 
 ## API description
 
@@ -42,14 +41,18 @@ Collect investigation package from a device.
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
+> [!IMPORTANT]
+>
+> - These response actions are only available for devices on Windows 10, version  1703 or later.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
 
-Permission type | Permission | Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application | Machine.CollectForensics | 'Collect forensics'
-Delegated (work or school account) | Machine.CollectForensics | 'Collect forensics'
+Application|Machine.CollectForensics|'Collect forensics'
+Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 
 > [!NOTE]
 > When obtaining a token using user credentials:
@@ -65,22 +68,22 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/collectInvestiga
 
 ## Request headers
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
-Content-Type | string | application/json. **Required**.
+Authorization|String|Bearer {token}. **Required**.
+Content-Type|string|application/json. **Required**.
 
 ## Request body
 
 In the request body, supply a JSON object with the following parameters:
 
-Parameter | Type | Description
+Parameter|Type|Description
 :---|:---|:---
-Comment | String | Comment to associate with the action. **Required**.
+Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
 
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body.
+If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body. If a collection is already running, this returns 400 Bad Request.
 
 ## Example
 

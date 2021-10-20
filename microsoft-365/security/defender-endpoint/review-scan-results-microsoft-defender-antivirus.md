@@ -1,5 +1,5 @@
 ---
-title: Review the results of Microsoft Defender AV scans
+title: Review the results of Microsoft Defender Antivirus scans
 description: Review the results of scans using Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
 keywords: scan results, remediation, full scan, quick scan
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,6 +16,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Review Microsoft Defender Antivirus scan results
@@ -42,7 +43,7 @@ The following cmdlet will return each detection on the endpoint. If there are mu
 Get-MpThreatDetection
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="screenshot of PowerShell cmdlets and outputs":::
+:::image type="content" source="../../media/wdav-get-mpthreatdetection.png" alt-text="screenshot of PowerShell cmdlets and outputs.":::
 
 You can specify `-ThreatID` to limit the output to only show the detections for a specific threat.
 
@@ -52,7 +53,7 @@ If you want to list threat detections, but combine detections of the same threat
 Get-MpThreat
 ```
 
-:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell code":::
+:::image type="content" source="../../media/wdav-get-mpthreat.png" alt-text="PowerShell code.":::
 
 See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 

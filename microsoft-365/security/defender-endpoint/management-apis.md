@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -28,7 +28,7 @@ ms.custom: api
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-mgt-apis-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
 
 
 Defender for Endpoint supports a wide variety of options to ensure that customers can easily adopt the platform.
@@ -46,11 +46,12 @@ Defender for Endpoint provides fine-grained control over what users with access 
 - Fully segregated divisions with single centralized global security operations teams
 
 ## Available APIs
+
 The Microsoft Defender for Endpoint solution is built on top of an integration-ready platform.
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.
 
-![Image of available API and integration in Microsoft Defender for Endpoint](images/mdatp-apis.png)
+![Image of available API and integration in Microsoft Defender for Endpoint.](images/mdatp-apis.png)
 
 The Defender for Endpoint APIs can be grouped into three:
 
@@ -63,7 +64,8 @@ The Defender for Endpoint APIs can be grouped into three:
 Defender for Endpoint offers a layered API model exposing data and capabilities in a structured, clear, and easy to use model, exposed through a standard Azure  AD-based authentication and authorization model allowing access in context of users or SaaS applications. The API model was designed to expose entities and capabilities in a consistent form.
 
 Watch this video for a quick overview of Defender for Endpoint's APIs.
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4d73M]
 
 The **Investigation API** exposes the richness of Defender for Endpoint - exposing calculated or 'profiled' entities (for example, device, user, and file) and discrete events (for example, process creation and file creation) which typically describes a behavior related to an entity, enabling access to data via investigation interfaces allowing a query-based access to data. For more information, see [Supported APIs](exposed-apis-list.md).
 

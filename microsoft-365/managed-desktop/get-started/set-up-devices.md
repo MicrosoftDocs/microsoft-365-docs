@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -20,7 +20,7 @@ You can use both new and existing devices in Microsoft Managed Desktop.
 
 We recommend working with one of our approved device partners. You can work with your Microsoft account contact for more help setting up a device partnership. In essence, however, the process is like this:
 
-1. Review the list of currently recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+1. Review the list of currently recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices) site.
 2. Order one or a few examples of the devices you want to use with a compliant image. Ordering might require [specific ordering steps](../service-description/device-images.md).
 3. [Validate](validate-device.md) the example devices.
 5. After successful validation, order the devices, working with an approved device partner.
@@ -41,11 +41,14 @@ We recommend working with one of our approved device partners. You can work with
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
-3. [Assign licenses](assign-licenses.md)
-4. [Deploy Intune Company Portal](company-portal.md)
-5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. Set up devices (this article)
-7. [Get your users ready to use devices](get-started-devices.md)
-8. [Deploy apps](deploy-apps.md)
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. [Deploy apps](deploy-apps.md).
+1. Set up devices (this article).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).

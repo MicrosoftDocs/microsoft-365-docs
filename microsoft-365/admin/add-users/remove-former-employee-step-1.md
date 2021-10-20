@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- m365solution-removeemployee
 search.appverid:
 - BCS160
 - MET150
@@ -62,5 +63,11 @@ If you have email as part of your Microsoft 365 subscription, sign in to the Exc
   
 1. Go to the <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange admin center</a>.
 2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Double-click the user and go to **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
+3. Select the user mailbox from the list and then, in the *Details Pane* (on the right-hand side), select **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
 4. Select **Save**.
+
+## Related content
+
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+
+[Restore a user](restore-user.md)
