@@ -33,45 +33,37 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 
 ## Before you begin
 
-- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp) 
-- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home)
-- This supports macOS version Catalina 10.15 and higher
+- Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
+- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
+- This supports macOS version Catalina 10.15 and higher.
 <!--- Edge browser v93 and higher installed.-->
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions is a six phase process.
 
-1. [Get the device onboarding package](#get-the-device-onboarding-package)
 1. [Create system configuration profiles](#create-system-configuration-profiles)
+1. [Get the device onboarding package](#get-the-device-onboarding-package)
 <!--1. [Enable kernel extension](#enable-kernel-extension)-->
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
 1. [Deploy the Microsoft DLP installation package](#deploy-the-microsoft-dlp-installation-package)
 
-### Get the device onboarding package
 
-1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
-1. For **Select operating system to start onboarding process** choose **macOS**
- 
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
-1. Choose **Download onboarding package**
- 
-1. Extract the contents of the device onboarding package. In the **Intune** folder you should see these files:
+<!--1. Extract the contents of the device onboarding package. In the **Intune** folder you should see these files:
     - accessibility.mobileconfig
     - com.microsoft.autoupdate2.xml
     - com.microsoft.wdav.xml
     - fulldisk.mobileconfig
-<!--    - kext.mobileconfig-->
+    - kext.mobileconfig
     - netfilter.mobileconfig
-<!--    - notif.mobileconfig-->
+    - notif.mobileconfig
     - sysext.mobileconfig 
-
+-->
 ### Create system configuration profiles
 
-1. Download all the configuration files from [Github](https://github.com/microsoft/endpointdlp)
+1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
 
 > [!TIP]
 > You can download the individual configuration files from a single folder or download a single archive file that contains:
@@ -112,6 +104,17 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 11. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
 12. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+
+### Get the device onboarding package
+
+1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
+1. For **Select operating system to start onboarding process** choose **macOS**
+ 
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+ 
+1. Choose **Download onboarding package**. This contains the onboarding script that you'll push out via OMA-URI.
+
 
 <!--### Enable kernel extension
 
