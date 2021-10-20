@@ -39,25 +39,15 @@ The following table summarizes the features and capabilities available in Micros
 
 | Capability | Description |
 |---|---|
-| [Threat & vulnerability management](#threat-and-vulnerability-management) (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
-| [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
+| [Threat & vulnerability management](#threat-and-vulnerability-management) (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
+| [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
-| [Threat intelligence](#threat-intelligence) (TI) | TI capabilities include indicators of compromise and threat analytics.  |
 | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Reports](#reporting) <br/>- [Simplified setup experience](#simplified-setup-experience) <br/>- [Role-based access control](#role-based-access-control) |
-| [Cross-platform support](#cross-platform-support) | Most organizations use various devices and operating systems, such as computers running Windows, macOS, or Linux, and mobile devices running iOS or Android. Initially, Microsoft Defender for Business supports Windows 10 devices only, with plans to add support for more operating systems soon. |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. See [APIs](#apis). |
 
 The following sections provide more details about what's included in Microsoft Defender for Business.
-
-## Threat and vulnerability management
-
-Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment. TVM includes a dashboard that highlights potential threats and features to configure. 
-
-Security recommendations are provided to help you set up Microsoft Defender for Business correctly. Potential security issues are called to your attention so you can address them right away. 
-
-To learn more, see [Threat and vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
 
 ## Next-generation protection
 
@@ -68,6 +58,52 @@ Next-generation protection includes antimalware and antivirus protection—on yo
 - Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus. Microsoft works continuously to deliver updates that include antimalware, antivirus, and security intelligence updates. 
 
 To learn more, see [Next-generation protection](../defender-endpoint/next-generation-protection.md).
+
+## Endpoint detection and response
+
+Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for Business includes these EDR capabilities:
+
+- [Behavioral-based detection](#behavioral-based-detection)
+- [Manual response actions](#manual-response-actions)
+- [Live response](#live-response)
+
+### Behavioral-based detection
+
+Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when a threat has started execution. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
+
+To learn more, see [Behavioral blocking and containment](../defender-endpoint/behavioral-blocking-containment.md).
+
+### Manual response actions
+
+Microsoft Defender for Business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
+
+The following table the manual response actions that are available in your plan.
+
+| File/Device | Response action | Description |
+|:---|:---|:---|
+| Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
+| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
+| File | Stop and quarantine | Stops processes from running and quarantines associated files. |
+| File | Add an indicator to block or allow a file | *Block* indicators prevent portable executable files from being read, written, or executed on devices. <p> *Allow* indicators prevent files from being blocked or remediated.  |
+
+To learn more, see the following articles: 
+
+- [Take response actions on a device](../defender-endpoint/respond-machine-alerts.md) 
+- [Take response actions on a file](../defender-endpoint/respond-file-alerts.md)
+
+### Live response
+
+Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
+
+To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
+
+## Threat and vulnerability management
+
+Threat & vulnerability management (TVM) provides you with actionable information that can help mitigate threats and vulnerabilities in your environment. TVM includes a dashboard that highlights potential threats and features to configure. 
+
+Security recommendations are provided to help you set up Microsoft Defender for Business correctly. Potential security issues are called to your attention so you can address them right away. 
+
+To learn more, see [Threat and vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
 
 ## Attack surface reduction
 
@@ -129,79 +165,11 @@ With network firewall protection, you can set rules that determine which network
 
 To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
 
-## Endpoint detection and response
-
-Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for Business includes these EDR capabilities:
-
-- [Behavioral-based detection](#behavioral-based-detection)
-- [Manual response actions](#manual-response-actions)
-- [Live response](#live-response)
-
-### Behavioral-based detection
-
-Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when a threat has started execution. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
-
-To learn more, see [Behavioral blocking and containment](../defender-endpoint/behavioral-blocking-containment.md).
-
-### Manual response actions
-
-Microsoft Defender for Business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
-
-The following table the manual response actions that are available in your plan.
-
-| File/Device | Response action | Description |
-|:---|:---|:---|
-| Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
-| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Defender for Endpoint. This action enables you to monitor the device and take further action if needed. |
-| File | Stop and quarantine | Stops processes from running and quarantines associated files. |
-| File | Add an indicator to block or allow a file | *Block* indicators prevent portable executable files from being read, written, or executed on devices. <p> *Allow* indicators prevent files from being blocked or remediated.  |
-
-To learn more, see the following articles: 
-
-- [Take response actions on a device](../defender-endpoint/respond-machine-alerts.md) 
-- [Take response actions on a file](../defender-endpoint/respond-file-alerts.md)
-
-### Live response
-
-Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
-
-To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
-
 ## Automated investigation and response
 
 Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing you to focus on more sophisticated threats and other high-priority things. All remediation actions are tracked in the Action center, and most remediation actions can be undone if needed. 
 
 To learn more, see [Overview of automated investigations](../defender-endpoint/automated-investigations.md).
-
-## Threat intelligence
-
-Threat intelligence capabilities include [indicators of compromise](#indicators-of-compromise) and [threat analytics](#threat-analytics). Together, these capabilities enable you to block (or allow) certain entities, such as files or processes, and learn about current and relevant threats. 
-
-### Indicators of compromise
-
-Indicators of compromise (also referred as indicators) enable you to define “allow” or “block” lists of entities, such as files, URLs, and certificates. For example, suppose that a certain file that your company uses is detected as a threat, but you know that file is not actually a threat. You can create an indicator for that file so that it’s not blocked by threat protection features in Defender for Endpoint. 
-
-The following table summarizes the entities and actions that are supported for indicators.
-
-| Entity types | Supported actions |
-|:---|:---|
-| Files <br/> IP addresses <br/> URLs/domains <br/> Certificates | Allow <br/> Alert only <br/> Alert and block|
-
-To learn more, see [Manage indicators](../defender-endpoint/manage-indicators.md).
-
-## Threat analytics
-
-Threat analytics include reports from expert Microsoft security researchers covering the most relevant threats. These reports include information about:
-
-- Active threat actors and their campaigns
-- Popular and new attack techniques
-- Critical vulnerabilities
-- Common attack surfaces
-- Prevalent malware
-
-Each report provides a detailed analysis of a threat and extensive guidance on how to defend against that threat. It also incorporates data from your network, indicating whether the threat is active and if you have applicable protections in place. 
-
-To learn more, see [Track and respond to emerging threats with threat analytics](../defender-endpoint/threat-analytics.md).
 
 ## Centralized management and reporting
 
