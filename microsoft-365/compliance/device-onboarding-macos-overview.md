@@ -33,20 +33,21 @@ Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or lat
 - [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 
-If you are not familiar with DLP at all, you should familiarize yourself with these articles:
+If you are not familiar with DLP at all, you should familiarize yourself with these articles as well:
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
-Your macOS devices must already be managed through Intune or JAMF Pro. 
+Your macOS devices must already be managed through Intune or JAMF Pro.
+ 
 - To onboard into Intune, see [Deployment guide: Manage macOS devices in Microsoft Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and [Enroll your Mac with Intune Company Portal](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - To onboard into JAMF Pro see, [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) and [JAMF Pro Installation and Configuration Guide for Mac](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - Install the v93+ Edge browser on your macOS devices 
 
 ## Licensing guidance
 
-see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
+See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
 ## Supported actions 
 
@@ -66,13 +67,13 @@ see [Microsoft 365 licensing guidance for information protection](/office365/ser
 
 Getting devices onboarding into Microsoft 365 compliance solutions is required in order to receive DLP sensor telemetry and to enforce data loss prevention policies. 
 
-For macOS devices that are managed through Intune, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)
+- For macOS devices that are managed through Intune, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)
 
-For macOS devices that are managed throught Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview)
+- For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview)
 
-For macOS devices that are managed through JAMF Pro, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview)
+- For macOS devices that are managed through JAMF Pro, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview)
 
-For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)
+- For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)
 
 
 ## Related topics
