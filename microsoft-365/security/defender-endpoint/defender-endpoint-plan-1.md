@@ -18,6 +18,10 @@ ms.collection: M365-security-compliance
 
 # Overview of Microsoft Defender for Endpoint Plan 1 (preview)
 
+**Applies to**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 > [!TIP]
 > If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 

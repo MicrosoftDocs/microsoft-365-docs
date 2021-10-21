@@ -19,6 +19,11 @@ ms.collection: M365-security-compliance
 
 # Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2
 
+**Applies to**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Soon, two plans will be available:   
  
 - [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), currently in preview; and 

@@ -20,6 +20,11 @@ ms.technology: mde
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Protection
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Device control removable storage protection in Microsoft Defender for Endpoint prevents users, endpoints, or both from using unauthorized removable storage media.
