@@ -50,7 +50,7 @@ Here's how to complete your sign-up for Microsoft 365 for Campaigns.
     2. In **Your company**, enter the name of the campaign you work for. For example, ContosoCampaign. If you already own a domain, use that name here. 
     3. In **Select a domain**, select **.onmicrosoft.com** for now. We can set you up with a domain later, or help you get Microsoft 365 connected to a domain that you already own.
     > [!IMPORTANT]
-    > The name you enter for your onmicrosoft.com domain will be used for all your SharePoint and OneDrive URLs and you might not be able to change it. Make sure you’ve considered the name from a branding perspective and spelled it correctly.
+    > The name you enter for your .onmicrosoft.com domain will be used for all your SharePoint and OneDrive URLs and you might not be able to change it. Make sure you’ve considered the name from a branding perspective and spelled it correctly.
     4. Create a password and select **Create my account**.
     > [!NOTE]
     > If your campaign or party doesn't own a domain, and you have decided what domain you want, you can buy one now by selecting it.
