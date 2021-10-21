@@ -3,7 +3,7 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 05/12/2021
+ms.date: 10/21/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,7 +24,7 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the ten phases of migration to the new German datacenters.
 
-[ ![The ten phases of migration to the new Germany datacenters.](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
+[![The ten phases of migration to the new Germany datacenters.](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
@@ -253,7 +253,7 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 **Applies to:** All customers using Skype for Business Online
 
 Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
-In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the [region based on the signup country of the tenant](https://docs.microsoft.com/en-us/microsoft-365/enterprise/o365-data-locations?ms.officeurl=datamaps&view=o365-worldwide).
+In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the [region based on the signup country of the tenant](o365-data-locations.md).
 
 - Users won't be able to sign in to Skype for Business on the migration date.
 - Policy configuration is migrated.
