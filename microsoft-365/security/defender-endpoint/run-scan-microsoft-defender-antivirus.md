@@ -37,7 +37,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
-3. In the list of tabs, select **Windows 10 unhealthy endpoints** or **Windows 11 unhealthy endpoints**.
+3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
 
 4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 
