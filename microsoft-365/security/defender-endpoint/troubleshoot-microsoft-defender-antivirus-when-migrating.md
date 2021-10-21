@@ -30,13 +30,13 @@ You can find help here if you encounter issues while migrating from a third-part
 
 ## Review event logs
 
-Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
+1. Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
 
-Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
+    Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
-From there, select **Open** underneath **Operational**.
+1. From there, select **Open** underneath **Operational**.
 
-Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
+    Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
 ## Microsoft Defender Antivirus won't start
 
