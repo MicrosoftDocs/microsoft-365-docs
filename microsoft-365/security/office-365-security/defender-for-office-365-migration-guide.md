@@ -23,7 +23,7 @@ ms.prod: m365-security
 
 # Migrate from a third-party protection service to Microsoft Defender for Office 365
 
-The purpose of this article is to give you specific and actionable steps for migrating from a third-party protection service to Microsoft Defender for Office 365. This article assumes the following facts:
+This article provides specific and actionable steps for migrating from a third-party protection service to Microsoft Defender for Office 365. This article assumes the following facts:
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party protection service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization, and Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
@@ -67,7 +67,7 @@ Instead of moving these rules and policies blindly and completely into Microsoft
 
 ## Identify priority accounts
 
-If the features are available to you, using **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports and (for priority accounts) get differentiated protection. For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md) and [Manage and monitor priority accounts](microsoft-365/admin/setup/priority-accounts).
+If the features are available to you, using **priority accounts** and **user tags** can help to identify your important Microsoft 365 users so they stand out in reports and (for priority accounts) get differentiated protection. For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md) and [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 ## Check your existing protection configuration in Microsoft 365
 
@@ -80,7 +80,7 @@ Review your existing protection features in Microsoft 365 and consider removing 
 
 ## Simplify complex routing
 
-If you're using any sort of complex routing (for example [Centralized Mail Transport](exchange/transport-options)), you should consider simplifying and documenting the routing. External hops, especially after Microsoft 365 has already received the message, can complicate the configuration and troubleshooting.
+If you're using any sort of complex routing (for example [Centralized Mail Transport](/exchange/transport-options)), you should consider simplifying and documenting the routing. External hops, especially after Microsoft 365 has already received the message, can complicate the configuration and troubleshooting.
 
 ## Maintain or create the SCL=-1 mail flow rule
 
@@ -120,8 +120,8 @@ If you don't disable this functionality in your existing protection service, you
 
 To recreate this functionality in Microsoft 365, you have the following options:
 
-- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098) coupled with [first contact safety tips](set-up-anti-phishing-policies#first-contact-safety-tip.md).
-- Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+- The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098) coupled with [first contact safety tips](set-up-anti-phishing-policies.md#first-contact-safety-tip).
+- Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
 
 ## Create distribution groups for pilot users in Microsoft 365
 
@@ -163,7 +163,7 @@ You should also confirm that all users in the pilot have a supported message rep
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
 - [The Report Phishing add-in](enable-the-report-phish-add-in.md)
-- Supported third party reporting tools as described [here](user-submission#third-party-reporting-tools.md).
+- Supported third party reporting tools as described [here](user-submission.md#third-party-reporting-tools).
 
 Don't underestimate the importance of this step. Data from user submissions will give you the feedback loop that you need to make sure that there's a good, consistent end-user experience before and after the migration. This feedback helps you to make informed policy configuration decisions, as well as provide data-backed reports to your management that the migration went smoothly.
 
@@ -214,7 +214,7 @@ Outbound and relay mail flow is out of the scope for this article. However, be a
 
 ## Configure Enhanced Filtering for Connectors
 
-The first thing to do is configure [Enhanced Filtering for Connectors](exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) on the connector that's used for mail flow from your existing protection service into Microsoft 365. You can use the [Inbound messages report](exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to help identify the connector.
+The first thing to do is configure [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) on the connector that's used for mail flow from your existing protection service into Microsoft 365. You can use the [Inbound messages report](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports) to help identify the connector.
 
 Enhanced Filtering for Connectors is required by Defender for Office 365 to see where internet messages actually came from. Enhanced Filtering for Connectors greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md)), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md).
 
@@ -237,10 +237,10 @@ If your organization has purchased Microsoft Defender for Office 365 Plan 2, the
 
 For more information about integrating with your SIEM/SOAR, see the following articles:
 
-- [Overview of Microsoft 365 Defender APIs](microsoft-365/security/defender/api-overview)
-- [Streaming API](microsoft-365/security/defender/streaming-api)
-- [Advanced Hunting API](microsoft-365/security/defender/api-advanced-hunting)
-- [Incidents APIs](microsoft-365/security/defender/api-incident)
+- [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview)
+- [Streaming API](/microsoft-365/security/defender/streaming-api)
+- [Advanced Hunting API](/microsoft-365/security/defender/api-advanced-hunting)
+- [Incidents APIs](/microsoft-365/security/defender/api-incident)
 
 If your organization does not have a security response team or existing process flows, you can use this time to familiarize yourself with basic hunting and response features in Defender for Office 365. For more information, see [Threat investigation and response](office-365-ti.md).
 
@@ -265,18 +265,18 @@ By creating production policies, even if they aren't applied to all users, you c
 - Extremely low chance of false positives.
 - Similar behavior to anti-malware protection, which is always on and not affected by the SCL=-1 mail flow rule.
 
-For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365#safe-attachments-policy-settings.md). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](set-up-safe-attachments-policies.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](set-up-safe-attachments-policies.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
 ### Safe Links
 
 > [!NOTE]
 > We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users.
 >
-> Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal.md).
+> Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 Create a Safe Links policy for your pilot users. Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments.
 
-For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365#safe-links-settings.md). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](set-up-safe-links-policies.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
+For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](set-up-safe-links-policies.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
 
 ### Anti-spam
 
@@ -285,7 +285,7 @@ Create two anti-spam policies for pilot users:
 - A policy that uses the Standard settings. Use the group **MDOPilot\_SpamPhish\_Standard** as the condition of the policy (who the policy applies to).
 - A policy that uses the Strict settings. Use the group **MDOPilot\_SpamPhish\_Strict** as the condition of the policy (who the policy applies to). This policy should have a higher priority (lower number) than the policy with the Standard settings.
 
-For the recommended Standard and Strict settings, see [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365#eop-anti-spam-policy-settings.md). To create the policies, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+For the recommended Standard and Strict settings, see [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings). To create the policies, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 ### Anti-phishing
 
@@ -309,7 +309,7 @@ You'll tune spoofing protection (adjust allows and blocks) and turn on each impe
 For more information, see the following topics:
 
 - [Anti-spoofing protection](anti-spoofing-protection.md)
-- [Impersonation settings in anti-phishing policies](set-up-anti-phishing-policies#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365.md)
+- [Impersonation settings in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Configure anti-phishing policies in Defender for Office 365](configure-mdo-anti-phishing-policies.md).
 
 ## (Optional) Exempt the pilot users from filtering by your existing protection service
@@ -403,8 +403,8 @@ Use the following features to monitor and iterate on the protection settings in 
 - [Threat Explorer](email-security-in-microsoft-defender.md)
 - [Email security reports](view-email-security-reports.md)
 - [Defender for Office 365 reports](view-reports-for-mdo.md)
-- [Mail flow insights](exchange/monitoring/mail-flow-insights/mail-flow-insights)
-- [Mail flow reports](exchange/monitoring/mail-flow-reports/mail-flow-reports)
+- [Mail flow insights](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
+- [Mail flow reports](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
 If your organization uses a third-party service for user reports, you can integrate that data into your feedback loop.
 
