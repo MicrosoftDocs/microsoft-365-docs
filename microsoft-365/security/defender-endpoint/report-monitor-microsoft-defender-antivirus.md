@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/11/2021
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -21,9 +21,6 @@ ms.collection: M365-security-compliance
 
 # Report on Microsoft Defender Antivirus
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
@@ -31,8 +28,6 @@ ms.collection: M365-security-compliance
 Microsoft Defender Antivirus is built into Windows 10, Windows Server 2019, Windows Server 2022, and Windows Server 2016. Microsoft Defender Antivirus is of your next-generation protection in Microsoft Defender for Endpoint. Next-generation protection helps protect your devices from software threats like viruses, malware, and spyware across email, apps, the cloud, and the web.
 
 With Microsoft Defender Antivirus, you have several options for reviewing protection status and alerts. You can use Microsoft Endpoint Manager to [monitor Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) or [create email alerts](/configmgr/protect/deploy-use/endpoint-configure-alerts). Or, you can monitor protection using [Microsoft Intune](/intune/introduction-intune).
-
-Microsoft Operations Management Suite has an [Update Compliance add-in](/windows/deployment/update/update-compliance-get-started) that reports on key Microsoft Defender Antivirus issues, including protection updates and real-time protection settings.
 
 If you have a third-party security information and event management (SIEM) server, you can also consume [Windows Defender client events](/windows/win32/events/windows-events).
 
@@ -44,7 +39,7 @@ You can also [monitor malware events using the Malware Assessment solution in Lo
 
 For monitoring or determining status with PowerShell, WMI, or Microsoft Azure, see the [(Deployment, management, and reporting options table)](deploy-manage-report-microsoft-defender-antivirus.md#ref2).
 
-## Related articles
+## See also
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server 2016 and 2019](microsoft-defender-antivirus-on-windows-server.md)

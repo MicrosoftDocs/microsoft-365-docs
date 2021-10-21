@@ -20,6 +20,8 @@ ms.collection: M365-security-compliance
 
 # Next-generation protection overview
 
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+
 Microsoft Defender for Endpoint includes next-generation protection to reinforce the security perimeter of your network. Next-generation protection was designed to catch all types of emerging threats. In addition to Microsoft Defender Antivirus, your next-generation protection services include the following capabilities:
 
 - [Behavior-based, heuristic, and real-time antivirus protection](configure-protection-features-microsoft-defender-antivirus.md), which includes always-on scanning using file and process behavior monitoring and other heuristics (also known as *real-time protection*). It also includes detecting and blocking apps that are deemed unsafe, but might not be detected as malware.
