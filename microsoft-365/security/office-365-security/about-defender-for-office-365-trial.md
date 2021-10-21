@@ -23,6 +23,9 @@ description: "Admins can learn about the trial mode of Microsoft Defender for Of
 
 # About the Microsoft Defender for Office 365 trial
 
+> [!IMPORTANT]
+> Get stared quickly with our easy to use [Microsoft Defender for Office 365 playbook](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
+
 Microsoft Defender for Office 365 safeguards your organization against malicious threats that are posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
 - **Threat protection policies**: Define threat-protection policies to set the appropriate level of protection for your organization.
@@ -30,7 +33,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **Threat investigation and response capabilities**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
 - **Automated investigation and response capabilities**: Save time and effort investigating and mitigating threats.
 
-A Microsoft Defender for Office 365 trial is the easiest way to try the capabilities of Defender for Office 365, and setting it up only takes a couple of clicks. After the trial setup is complete, all Defender for Office 365 Plan 1 and Plan 2 capabilities are available in the organization for up to 90 days. These high level features are described in the following list:
+A Microsoft Defender for Office 365 trial is an easy way to try out the capabilities of Defender for Office 365 Plan 2 for free, after only a few clicks. These high level capabilities are described in the following table:
 
 <br>
 
@@ -47,27 +50,21 @@ A Microsoft Defender for Office 365 trial is the easiest way to try the capabili
 |[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
+|
 
-<sup>\*</sup> Defender for Office 365 Plan 2 features that are available as part of the trial.
-
-> [!NOTE]
-> The automated configuration that's described in this article is currently in Public Preview and might not be available in your organization.
-
-## Terms and conditions
-
-The Defender for Office 365 trial is available for 90 days and can be initiated for all of your users. For more information, see [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
+<sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
 
 ## Set up a Defender for Office 365 trial
 
 A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
-By default, these policies are scoped to all users in the organization, but admins can customize the policies during or after setup so they apply only to specific users.
+By default, these policies are scoped to all users in the organization, but during or after the setup of the trial, you can change the policy assignment to specific users.
 
-During setup, Defender for Office 365 response functionality (found in Defender for Office 365 P2 or equivalent) is also set up for the entire organization. No policy scoping is required.
+During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md)) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
-As part of the trial setup, the Defender for Office 365 licenses are automatically applied to the organization. The licenses are free of charge for the first 90 days.
+As part of the trial setup, the Defender for Office 365 licenses are automatically applied to the organization. The licenses are free of charge for the first 30 days.
 
 ## Permissions
 
@@ -75,13 +72,29 @@ To start or end the trial, you need to be a member of the **Global Administrator
 
 ## Additional information
 
-After you enroll in the trial, it might take up to 2 hours for the changes and updates to be available. And, admins must log out and log back in to see the changes.
-
-Admins can disable the trial at any point by going to the <> card.
+After you start the trial, it might take up to 2 hours for the changes and updates to be available. And, admins must log out and log back in to see the changes.
 
 ## Availability
 
-The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria (including geography) and who don't have existing Defender for Office 365 Plan 1 or Plan 2 licenses (included in their subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan Plan 2 licenses (included in their subscription or as an add-on).
+
+## Terms and conditions
+
+For more information, see [Microsoft Defender for Office 365 Trial Terms & Conditions](defender-for-office-365-trial-terms-and-conditions.md).
+
+## Frequently asked questions
+
+### Q: How do I extend the trial?
+
+A: See [Extend your trial](/microsoft-365/commerce/try-or-buy-microsoft-365#extend-your-trial).
+
+### Q: What happens to my data after the trial expires?
+
+A: After your trial expires, you'll have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial will be deleted.
+
+### Q: How many times can I use the Defender for Office 365 trial in my organization?
+
+A: A maximum of 2 times. If your first trial expires, you need to wait at least 30 days after the expiration date before you can enroll in the Defender for Office 365 trial again.
 
 ## Learn more about Defender for Office 365
 
