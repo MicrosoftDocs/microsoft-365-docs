@@ -217,7 +217,7 @@ The following table describes how the wildcards can be used and provides some ex
 The following table lists and describes the system account environment variables.
 
 <br/>
-    
+
 |This system environment variable...|Redirects to this|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
