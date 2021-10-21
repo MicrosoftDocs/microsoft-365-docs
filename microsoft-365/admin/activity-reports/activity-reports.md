@@ -84,53 +84,32 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
   
 ## Which activity reports are available in the admin center
 
-Depending on your subscription, here are the available reports.
+Depending on your subscription, here are the available reports in all environments.
 
-- [Microsoft browser usage](browser-usage-report.md) 
-  
-- [Email activity](email-activity-ww.md)
-    
-- [Mailbox usage](mailbox-usage.md)
-    
-- [Office activations](microsoft-office-activations-ww.md)
-
-- [Active Users](active-users-ww.md)
-  
-- [Email apps usage](email-apps-usage-ww.md)
-
-- [Forms activity](forms-activity-ww.md)
-
-- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
-
-- [Microsoft 365 groups](office-365-groups-ww.md)
-  
-- [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
-
-- [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
-
-- [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
-  
-- [SharePoint site usage](sharepoint-site-usage-ww.md)
-  
-- [SharePoint activity](sharepoint-activity-ww.md)
-  
-- [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
-  
-- [Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
-  
-- [Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
-  
-- [Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-
-- [Yammer activity](yammer-activity-report-ww.md)
-
-- [Yammer device usage](yammer-device-usage-report-ww.md)
-
-- [Yammer groups activity report](yammer-groups-activity-report-ww.md)
-
-- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
-
-- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+|**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
+|[Microsoft browser usage](browser-usage-report.md)|Yes|No|No|No|No|
+|[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
+|[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No|No|No|
+|[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A|
+|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A|
+|[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
+|[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
+|[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
+|[Forms activity](forms-activity-ww.md)|Yes|Yes|No|No|No|
+|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|No|No|No|
+|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No|No|Yes|
+|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No|No|Yes|
+|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No|No|Yes|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No|No|Yes|
 
 ## How to view licensing information
 
