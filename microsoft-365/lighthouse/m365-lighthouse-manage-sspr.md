@@ -31,7 +31,7 @@ The following conditions must be met before a tenant will appear in the list:
 
 - The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support SSPR, see [Licensing requirements for Azure Active Directory self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing).
 
-- The customer tenant must be active within Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview).
+- The customer tenant must be active within Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
 
 ## View SSPR tenant status
 
@@ -74,4 +74,4 @@ If you want to use a different email account, you can export the list of users t
 [Plan an Azure Active Directory self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
 [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
 [How to enable and configure SSPR in Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (video)\
-[Manage multifactor authentication](m365-lighthouse-manage-mfa) (article)
+[Manage multifactor authentication](m365-lighthouse-manage-mfa.md) (article)

@@ -67,7 +67,7 @@ If you want to use a different email account, you can export the list of users t
 
 ## Next steps
 
-Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset](m365-lighthouse-manage-sspr).
+Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset](m365-lighthouse-manage-sspr.md).
 
 ## Related content
 
