@@ -25,6 +25,10 @@ ms.technology: m365d
 
 # Experience Microsoft Defender for Endpoint (MDE) through simulated attacks
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+
 > [!TIP]
 >
 > - Learn about the latest enhancements in Microsoft Defender for Endpoint: [What's new in Defender for Endpoint?](https://cloudblogs.microsoft.com/microsoftsecure/2018/11/15/whats-new-in-windows-defender-atp/).
