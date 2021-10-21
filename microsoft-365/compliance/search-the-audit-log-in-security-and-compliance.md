@@ -539,6 +539,7 @@ The following table describes activities related to when users interact with lis
 |Updated list item|ListItemUpdated|A user updated a SharePoint list item by modifying one or more properties.|
 |Updated site column|SiteColumnUpdated|A user updated a SharePoint site column by modifying one or more properties.|
 |Updated site content type|SiteContentTypeUpdated|A user updated a site content type by modifying one or more properties.|
+|Viewed list item|ListItemViewed|A user viewed a SharePoint list item.|
 ||||
 
 ### Sharing and access request activities
@@ -584,10 +585,10 @@ The following table lists file synchronization activities in SharePoint Online a
 |:-----|:-----|:-----|
 |Allowed computer to sync files|ManagedSyncClientAllowed|User successfully establishes a sync relationship with a site. The sync relationship is successful because the user's computer is a member of a domain that's been added to the list of domains (called the *safe recipients list*) that can access document libraries in your organization. <br/><br/> For more information about this feature, see [Use Windows PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
 |Blocked computer from syncing files|UnmanagedSyncClientBlocked|User tries to establish a sync relationship with a site from a computer that isn't a member of your organization's domain or is a member of a domain that hasn't been added to the list of domains (called the  *safe recipients list)*  that can access document libraries in your organization. The sync relationship is not allowed, and the user's computer is blocked from syncing, downloading, or uploading files on a document library. <br/><br/> For information about this feature, see [Use Windows PowerShell cmdlets to enable OneDrive sync for domains that are on the safe recipients list](/powershell/module/sharepoint-online/).|
-|Downloaded files to computer|FileSyncDownloadedFull|User establishes a sync relationship and successfully downloads files for the first time to their computer from a document library.|
-|Downloaded file changes to computer|FileSyncDownloadedPartial|User successfully downloads any changes to files from a document library. This activity indicates that any changes that were made to files in the document library were downloaded to the user's computer. Only changes were downloaded because the document library was previously downloaded by the user (as indicated by the **Downloaded files to computer** activity).|
-|Uploaded files to document library|FileSyncUploadedFull|User establishes a sync relationship and successfully uploads files for the first time from their computer to a document library.|
-|Uploaded file changes to document library|FileSyncUploadedPartial|User successfully uploads changes to files on a document library. This event indicates that any changes made to the local version of a file from a document library are successfully uploaded to the document library. Only changes are uploaded because those files were previously uploaded by the user (as indicated by the **Uploaded files to document library** activity).|
+|Downloaded files to computer|FileSyncDownloadedFull|User downloads a file to their computer from a SharePoint document library or OneDrive for Business using OneDrive sync app (OneDrive.exe).|
+|Downloaded file changes to computer|FileSyncDownloadedPartial|This event has been deprecated along with the old OneDrive for Business sync app (Groove.exe).|
+|Uploaded files to document library|FileSyncUploadedFull|User uploads a new file or changes to a file in SharePoint document library or OneDrive for Business using OneDrive sync app (OneDrive.exe).|
+|Uploaded file changes to document library|FileSyncUploadedPartial|This event has been deprecated along with the old OneDrive for Business sync app (Groove.exe).|
 ||||
 
 ### Site permissions activities
@@ -680,7 +681,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Sent message|Send|A message was sent, replied to or forwarded. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. For more information, see the "Advanced Audit events" section in [Advanced Audit](advanced-audit.md#advanced-audit-events).|
 |Sent message using Send As permissions|SendAs|A message was sent using the SendAs permission. This means that another user sent the message as though it came from the mailbox owner.|
 |Sent message using Send On Behalf permissions|SendOnBehalf|A message was sent using the SendOnBehalf permission. This means that another user sent the message on behalf of the mailbox owner. The message indicates to the recipient whom the message was sent on behalf of and who actually sent the message.|
-|Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|
+|Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox created, modified, or removed an inbox rule by using the Outlook client.|
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
@@ -1001,13 +1002,17 @@ The following table describes the configuration activities for [retention polici
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
+| Changed adaptive scope membership |ApplicableAdaptiveScopeChange |Users, sites, or groups were added to or removed from the adaptive scope. These changes are the results of running the scope’s query. Because the changes are system-initiated, the reported user displays as a GUID rather than a user account.|
 | Configured settings for a retention policy |NewRetentionComplianceRule |Administrator configured the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) cmdlet.|
+| Created adaptive scope |NewAdaptiveScope |Administrator created an adaptive scope.|
 | Created retention label |NewComplianceTag |Administrator created a new retention label.|
 | Created retention policy |NewRetentionCompliancePolicy|Administrator created a new retention policy.|
+| Deleted adaptive scope | RemoveAdaptiveScope| Administrator deleted an adaptive scope.|
 | Deleted settings from a retention policy| RemoveRetentionComplianceRule<br/>| Administrator deleted the configuration settings of a retention policy. Most likely, this activity is logged when an administrator deletes a retention policy or runs the [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule) cmdlet.|
 | Deleted retention label |RemoveComplianceTag | Administrator deleted a retention label.|
 | Deleted retention policy |RemoveRetentionCompliancePolicy<br/> |Administrator deleted a retention policy. |
 | Enabled regulatory record option for retention labels<br/> |SetRestrictiveRetentionUI |Administrator ran the [Set-RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) cmdlet so that an administrator can then select the UI configuration option for a retention label to mark content as a regulatory record.|
+| Updated adaptive scope | SetAdaptiveScope | Administrator changed the description or query for an existing adaptive scope. |
 | Updated settings for a retention policy | SetRetentionComplianceRule | Administrator changed the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) cmdlet. |
 | Updated retention label |SetComplianceTag  | Administrator updated an existing retention label.|
 | Updated retention policy |SetRetentionCompliancePolicy |Administrator updated an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
