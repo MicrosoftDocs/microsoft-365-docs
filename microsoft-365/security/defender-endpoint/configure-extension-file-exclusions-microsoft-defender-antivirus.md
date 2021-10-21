@@ -305,7 +305,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
 
-```DOS
+```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
 cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
