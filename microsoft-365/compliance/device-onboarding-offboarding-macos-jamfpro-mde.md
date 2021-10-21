@@ -38,16 +38,24 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 <!--- Edge browser v93 and higher installed.-->
 
-## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Before you begin
+
+- Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+
+
+<!--- Edge browser v93 and higher installed.-->
+
+## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
-
-1. [Get the device onboarding package](#get-the-device-onboarding-package)
 
 > [!TIP]
 > You can download the individual configuration files from a single folder or download a single archive file that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
+> - netfilter.mobileconfig
+> - system extensions
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
@@ -62,7 +70,6 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 1. Choose **Download onboarding package**
  
 1. Extract the contents of the device onboarding package. In the **JAMF** folder you should see the *DeviceComplainceOnboarding.plist* file.
-
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
@@ -80,12 +87,25 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 4. Choose the **scope** tab.
 
-5. Choose the targe computers.
+5. Choose the target computers.
 
 6. Choose **Save**.
 
 7. Choose **Done**.
 -->
+### Download the configuration files
+
+1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
+
+> [!TIP]
+> You can download the individual configuration files from a single folder or download a single archive file that contains:
+> - accessibility.mobileconfig
+> - fulldisk.mobileconfig
+
+
+>combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+
+
 ### Configure Preference domain using the JAMF PRO console
 
 > [!IMPORTANT]
@@ -172,9 +192,9 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1. Choose **Done**.
 -->
 
-### Update your existing configuration profile for Grant full disk access
+### Create and deploy a configuration profile for Grant full disk access
 
-1. USe the **fulldisk.mobileconfig** file.
+1. Use the **fulldisk.mobileconfig** file.
 
 1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
@@ -212,21 +232,72 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1.	Download **netfilter.mobileconfig** HENRY TO PROVIDE LINK
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
-
 -->
+
 ### Grant accessibility access to DLP
 
-1. Use the **accessibility.mobileconfig**.
+1. Download **accessibility.mobileconfig**.
 
-2. Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+
+<!--### Get the installation package
+
+1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
+1. For **Select operating system to start onboarding process** choose **macOS**
+ 
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+ 
+1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
 
 
-<!--### Deploy Microsoft DLP enforcement package
+### Deploy the installation package
 
-Follow the procedures in 
+1. Navigate to where you saved teh `wdav.pkg` file.
 
-NO PROCEDURES PROVIDED
--->
+1. Open the JAMF Pro dashboard.
+
+1. Select your computer and click the gear at the top, then choose **Computer Management**.
+
+1. In **Packages** choose **+New**. Enter these details:
+    - Display Name: leave blank because it will be reset when you choose the .pkg file.
+    - Category: None (default)
+    - Filname: Choose file, in this case the `wdav.pkg` file.
+
+1. Choose **Open**. Set:
+    - **Display Name**: `Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus`
+    - **Manifest File**: not required
+    - **Options tab**: leave default values
+    - **Limitations tab**: leave default values
+
+1. Choose **Save**. This uploads the package to JAMF Pro.
+
+1. Open the **Policies** page.
+
+1. Choose **+New** to create a new policy.
+
+1. Enter these values
+    - **Display name**: `MDATP Onboarding200329 v100.86.92 or later`
+
+1. Choose **Recurring Check-in**.
+
+1. Choose **Save**.
+
+1. Choose **Packages** > **Configure**.
+
+1. Choose **Add**.
+
+1. Choose **Save**. 
+
+1. Choose the **Scope** tab.
+
+1. Select the target computers.
+
+1. Choose **Add**.
+
+1. Choose **Self service**.
+
+1. Choose **Done**.
 
 ### Check the macOS device 
 
@@ -245,12 +316,14 @@ NO PROCEDURES PROVIDED
     - Network filter
     - Notifications
     - System extension profile
-
+-->
 ## Offboard macOS devices using JAMF Pro
 
-1. Disable DLP via the MDE Settings (if using MDE)
 
-1. Set ‘Use Data Loss Prevention’ = ‘disabled’
+1. Uninstall the application (if not using MDE)
+    1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
+
+1. Restart the macOS device - some applications may lose printing functionality until they are restarted
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
