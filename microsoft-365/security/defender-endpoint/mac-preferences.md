@@ -284,7 +284,7 @@ Specify content excluded from being scanned by file extension.
 
 ### Process excluded from the scan
 
-Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (for example, `cat`) or full path (for example, `/bin/cat`).
 
 <br>
 
