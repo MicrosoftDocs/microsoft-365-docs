@@ -33,16 +33,16 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-If you are not familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
+If you aren't familiar with OData queries, see: [OData V4 queries](https://www.odata.org/documentation/)
 
 Not all properties are filterable.
 
 ## Properties that support $filter
 
-- [Alert](alerts.md): `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId`, `status`, `severity` and `category`.
-- [Machine](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `onboardingStatus`, `RiskScore` and `RbacGroupId`.
-- [MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor` and `CreationDateTimeUtc`.
-- [Indicator](ti-indicator.md): `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `severity` and `action`.
+- [Alert](alerts.md): `alertCreationTime`, `lastUpdateTime`, `incidentId`,`InvestigationId`, `status`, `severity`, and `category`.
+- [Machine](machine.md): `ComputerDnsName`, `LastSeen`, `HealthStatus`, `OsPlatform`, `onboardingStatus`, `RiskScore`, and `RbacGroupId`.
+- [MachineAction](machineaction.md): `Status`, `MachineId`, `Type`, `Requestor`, and `CreationDateTimeUtc`.
+- [Indicator](ti-indicator.md): `indicatorValue`, `indicatorType`, `creationTimeDateTimeUtc`, `createdBy`, `severity`, and `action`.
 
 ### Example 1
 
