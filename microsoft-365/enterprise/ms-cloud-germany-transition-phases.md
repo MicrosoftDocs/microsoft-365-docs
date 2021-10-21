@@ -242,11 +242,13 @@ Make sure the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exc
 
 - Between the start of the migration phase 6 and the completion of the migration phase 9 (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services. Failing to complete this task before phase 9 [Migration Complete] may result in NDRs for mail routed between your on-premises Exchange deployment and Office 365.
 - Stop or delete any onboarding or offboarding mailbox moves, namely don't move mailboxes between Exchange on-premises and Exchange Online.  This ensures the mailbox move requests don't fail with an error. Failure to do so may result in failure of the service or Office clients.
-- Additional Send-Connectors that have been created besides the connector created by the HCW and which are targeting to Exchange Online must be updated in this phase immediately after the HCW run has been executed, otherwise they will stop working. The TLS domain must be updated for these Send-Connectors. <br> To update the TLS domain, use the following PowerShell command in your Exchange Server environment:
+- Additional Send-Connectors that have been created besides the connector created by the HCW and which are targeting to Exchange Online must be updated in this phase immediately after the HCW run has been executed, otherwise they will stop working. The TLS domain must be updated for these Send-Connectors.
 
-```powershell
-Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
-```
+  To update the TLS domain, use the following PowerShell command in your Exchange Server environment:
+
+  ```powershell
+  Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
+  ```
 
 ## Phase 7: Skype for Business Online - Transition to Microsoft Teams
 
