@@ -48,9 +48,9 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 2. Go to [https://smartscreentestratings2.net](https://smartscreentestratings2.net).
 
-The network connection will be allowed and a test message will be displayed.
-
-![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
+    The network connection will be allowed and a test message will be displayed.
+    
+    ![Example notification that says Connection blocked: Your IT administrator caused Windows Security to block this network connection. Contact your IT help desk.](images/np-notif.png)
 
 > [!NOTE]
 > Network connections can be successful even though a site is blocked by network protection. To learn more, see [Network protection and the TCP three-way handshake](network-protection.md#network-protection-and-the-tcp-three-way-handshake).
