@@ -61,5 +61,5 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Meetings participated scheduled recurring  <br/> |The number of the recurring meetings a user participated in during the specified time period.  <br/> |
 |Is licensed  <br/> |Selected if the user is licensed to use Teams. <br/>|
 |Other activity  <br/>|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply.  <br/>|
-|unclassified meetings <br/>|The one which can not be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
+|Unclassified meetings <br/>|The one which cannot be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
 |||
