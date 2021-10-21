@@ -36,7 +36,7 @@ Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help b
   
 ## Choose the experience that's best for you:
 
- **Buy a new Domain:**
+ **Buy a new domain:**
   
 Use Microsoft 365 to buy a new domain - we'll set everything up. [Learn more.](buy-a-domain-name.md)
   
@@ -49,7 +49,10 @@ If you already own a domain like  *you@yourcompany.<span>com*  you can add it an
   
  **Use a default domain for now:**
   
-You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log in for now and add a custom domain later. You can't change or rename your default domain - so make sure it's what you want before moving on. 
+You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to sign in for now and add a custom domain later. 
+  
+> [!IMPORTANT]
+> If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly is the name you want to use from a branding perspective. 
   
 ## Feeling stuck?
 
