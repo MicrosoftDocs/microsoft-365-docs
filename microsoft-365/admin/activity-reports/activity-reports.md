@@ -86,13 +86,13 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
-|**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
+|**Report**|**Public**|**GCC**|
 |:-----|:-----|
-|[Microsoft browser usage](browser-usage-report.md)|Yes|No|No|No|No|
+|[Microsoft browser usage](browser-usage-report.md)|Yes|
 
 
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
-|:-----|:-----|
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|No|No|No|No|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
