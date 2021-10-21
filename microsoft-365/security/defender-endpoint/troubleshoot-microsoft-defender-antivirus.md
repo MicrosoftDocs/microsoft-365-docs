@@ -400,7 +400,7 @@ For more information, see the following:
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -833,7 +833,7 @@ Microsoft Defender Antivirus has detected a suspicious behavior.<br/>For more in
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -910,7 +910,7 @@ Microsoft Defender Antivirus has detected malware or other potentially unwanted 
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -991,7 +991,7 @@ Microsoft Defender Antivirus has taken action to protect this machine from malwa
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1118,7 +1118,7 @@ Microsoft Defender Antivirus has encountered a non-critical error when taking ac
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1213,7 +1213,7 @@ Microsoft Defender Antivirus has encountered a critical error when taking action
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
