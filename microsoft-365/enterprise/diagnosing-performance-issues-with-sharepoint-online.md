@@ -33,7 +33,7 @@ There are three different ways that you can identify that a page on a SharePoint
 
 - SharePoint Online response header metrics
 
-This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune.
+This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune. Alternatively, if you are an Administrator, and you want to quickly try to diagnose the issue, [run this diagnostic tool] (https://aka.ms/PillarSiteandPagePerf). 
   
 ## Using the F12 tool bar to diagnose performance in SharePoint Online
 <a name="F12ToolInfo"> </a>
