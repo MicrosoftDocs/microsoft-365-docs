@@ -27,9 +27,6 @@ description: "Get the Yammer device usage report to know about which devices you
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
 The Yammer device usage reports give you information about which devices your users are using Yammer on. You can view the number of daily users by device type, and number of users by device type. You can view both over a selected time period. You can also view details per user.
-  
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
  
 ## How do I get to the Yammer device usage report?
 
@@ -43,6 +40,8 @@ You can view the usage in the OneDrive report by choosing the **Device usage** t
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Yammer device usage report - choose columns.](../../media/fc1fc8db-e197-4878-85c7-7ba0d67b9379.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+
+The **Yammer device usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
 |Item|Description|
 |:-----|:-----|
