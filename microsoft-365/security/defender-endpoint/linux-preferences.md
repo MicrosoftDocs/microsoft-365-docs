@@ -516,7 +516,6 @@ The following configuration profile contains entries for all settings described 
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
       "passiveMode":false,
-      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
