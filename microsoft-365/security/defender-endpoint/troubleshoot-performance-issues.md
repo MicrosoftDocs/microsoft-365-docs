@@ -226,7 +226,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![Fill up details.](images/wpr-12.png)
 
-    1. Select **File Name:** to determine where your trace file will be saved. By default, it 1.is saved to `%user%\Documents\WPR Files\`.
+    1. Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`.
     1. Select **Save**.
 
 14. Wait while the trace is being merged.
