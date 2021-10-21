@@ -40,7 +40,7 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
 5. Enter your name, business phone number, business size, company name, and location. Select **Next**.
 
     > [!IMPORTANT]
-    > The company name you enter will be used in all your SharePoint and OneDrive URLs and you might not be able to change it. Make sure it's spelled correctly and that it's the name you want to use from a branding perspective. Your company name also appears in the admin center, where where you manage Microsoft 365 users, licenses, and other features and services.
+    > The company name you enter will be used in all your SharePoint and OneDrive URLs and you might not be able to change it. Make sure it's spelled correctly and that it's the name you want to use from a branding perspective. Your company name also appears in the admin center, where you manage Microsoft 365 users, licenses, and other features and services.
     > 
     > Your country or region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. 
 
