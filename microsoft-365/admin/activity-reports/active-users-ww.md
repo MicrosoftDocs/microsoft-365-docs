@@ -26,12 +26,9 @@ description: "Learn how to get an Active Users report using the Microsoft 365 Re
 
 # Assess the Microsoft 365 Active Users report
 
-The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
 For example, you can use the **Active Users** report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information. 
-  
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
 
 ## How to get to the Active Users report
 
@@ -42,7 +39,7 @@ For example, you can use the **Active Users** report to find out how many produc
 
 You can view active users in the Office 365 report by choosing the **Active users** tab.<br/>![Microsoft 365 reports - Microsoft Office 365 active users.](../../media/56fe2e54-76ad-49e5-886f-1344c2697258.png)
 
-- The Active Users report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you view a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).
+- The Active Users report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you view a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 
 - The data in each report usually covers up to the last 24 to 48 hours.
 
