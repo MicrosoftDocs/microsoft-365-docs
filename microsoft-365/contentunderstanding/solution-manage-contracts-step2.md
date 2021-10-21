@@ -9,7 +9,7 @@ ms.topic: article
 ms.date:
 ms.prod: microsoft-365-enterprise
 search.appverid:
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS:
 description: Learn how to use Microsoft Teams to create your contract management channel by using a Microsoft 365 solution.
 ---

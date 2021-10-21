@@ -2,17 +2,16 @@
 title: Enable and configure Microsoft Defender Antivirus protection capabilities
 description: Enable and configure Microsoft Defender Antivirus real-time protection features such as behavior monitoring, heuristics, and machine-learning
 keywords: antivirus, real-time protection, rtp, machine-learning, behavior monitoring, heuristics
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
@@ -37,7 +36,7 @@ To enable and configure always-on protection:
 
 1. Open **Local Group Policy Editor**, as follows:
 
-    1. In your Windows 10 taskbar search box, type **gpedit**.
+    1. In your Windows 10 or Windows 11 taskbar search box, type **gpedit**.
 
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
@@ -118,7 +117,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 1. Open **Local Group Policy Editor**.
 
-   1. In your Windows 10 taskbar search box, type **gpedit**.
+   1. In your Windows 10 or Windows 11 taskbar search box, type **gpedit**.
    2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
