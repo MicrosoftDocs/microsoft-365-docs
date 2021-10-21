@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/05/2021
+ms.date: 10/21/2021
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
