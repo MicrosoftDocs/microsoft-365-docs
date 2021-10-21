@@ -166,6 +166,7 @@ These templates may be purchased by your organization.
 - California - Privacy Rights Act (CPRA) (Microsoft 365)
 - California - SB-327 Information Privacy: Connected Devices (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
+- Colorado Privacy Act (CPA) (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - Colorado Protections for Consumer Data Privacy (Microsoft 365)
 - Colorado Revised Statutes, Section 6-1-716, Notice of Security Breach (Microsoft 365)
@@ -229,6 +230,7 @@ These templates may be purchased by your organization.
 - Utah Electronic Information or Data Privacy (Microsoft 365)
 - Vermont - Act on Data Privacy and Consumer Protection (Microsoft 365)
 - Virginia Breach of Personal Information Act (Microsoft 365)
+- Virginia Consumer Data Privacy Act (CDPA) (Microsoft 365)
 - Washington DC - Consumer Security Breach Notification Standard (Microsoft 365)
 - West Virginia - Breach of Security of Consumer Information (Microsoft 365)
 - Wisconsin Security Breach Notification (Microsoft 365)
@@ -239,6 +241,9 @@ These templates may be purchased by your organization.
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8 (Microsoft 365)
+- Australia - ASD Essential 8 Maturity Level 1
+- Australia - ASD Essential 8 Maturity Level 2
+- Australia - ASD Essential 8 Maturity Level 3
 - Australia - National Archives Act
 - Australia - Public Records Office Victoria Recordkeeping Standards (Microsoft 365)
 - Australia - Spam Act 2003 (Microsoft 365)
@@ -321,6 +326,7 @@ These templates may be purchased by your organization.
 - Dubai - Health Data Protection Regulation (Microsoft 365)
 - Dubai Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
 - Dubai ISR (Microsoft 365)
+- Egypt - Data Protection Law (Microsoft 365)
 - Estonia - Personal Data Protection Act (Microsoft 365)
 - Estonia - The system of security measures for information systems (Microsoft 365)
 - EU - Directive 2006/24/EC (Microsoft 365)
