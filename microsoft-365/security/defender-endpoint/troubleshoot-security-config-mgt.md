@@ -26,21 +26,19 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
- 
 
 If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met. For more information, see [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md#before-you-begin).
 
- 
+
 
 ## Run Client Analyzer on Windows 
 The Microsoft Defender for Endpoint Client Analyzer can assist when investigating sensor health issues. Consider running it on endpoints that are failing to complete the Microsoft Defender for Endpoint Security Configuration Management onboarding flow. 
 
- 
 
 For more information about the client analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client
 Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer?view=o365-worldwide).
 
- 
+
 
 ## Registering domain joined computers with Azure Active Directory  
 
@@ -51,7 +49,7 @@ You'll need to ensure the following: 
   - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
 >[!NOTE]
->Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE-Attach workflow, then you'll need to customize Axure AD connect sync rule to include those computer objects in sync scope. See "Instructions for applying Computer Join rule in AAD Connect" section below. 
+>Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in AAD Connect" section below](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect). 
 
  
 
@@ -80,22 +78,21 @@ The table below lists errors and directions on what to try/check in order to 
 
 | **Error Code**  |**Administrator Actions **                                                                                                                                                                                                                                                                                                  |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **13**          |Review the pre-requisites above (Step 2: Preparing the environment) to ensure the endpoints to complete and Hybrid Azure Active Directory Join are available.                                                                                                                                                               |
-| **14**          |Review the pre-requisites above (Step 2: Preparing the environment) to ensure the endpoints to complete and Hybrid Azure Active Directory Join are available.                                                                                                                                                               |
+| **13-14**       |Review the [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint pre-requisites](/microsoft-365/security/defender-endpoint/security-config-management#onboard-devices) to ensure the endpoints to complete and Hybrid Azure Active Directory Join are available.                   |
 | **15**          |Make sure the AAD Tenant ID from your MDE Tenant matches the tenant ID in the SCP Entry of your domain.                                                                                                                                                                                                                     |
-| **16**          |Review the Azure Active Directory documentation found [here](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point). Engage with the organization’s identity team to deploy the configuration method required for HAADJ.                                                          |
+| **16**          |Review the Azure Active Directory documentation [here](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point). Engage with the organization’s identity team to deploy the configuration method required for HAADJ.                                                                |
 | **17**          |Review the Device Registration configuration of your Active Directory environment and determine if it is using Enterprise DRS or Azure DRS.                                                                                                                                                                                 |
 | **18**          |Review the Azure AD Connect Configuration and ensure the devices being configured for management are within the scope of sync.                                                                                                                                                                                              |
 | **25**          |Review network topology and ensure a domain controller is available to complete hybrid join requests.                                                                                                                                                                                                                       |
 | **26-32**       |Review the documentation for required claims to complete federated join. Manually validate the endpoints for your environment are available.                                                                                                                                                                                |
-|                 |For MDE configuration management on Windows Server 2012 R2 domain joined computers, an update to Azure AD Connect sync rule “In from AD-Computer Join” is needed. See “Instructions for applying Computer Join rule in AAD Connect” section below                                                                           |
 | **36**          |Review network topology and ensure LDAP API is available to complete hybrid join requests.                                                                                                                                                                                                                                  |
 | **37**          |For domain joined computer verify that the computer is in scope for synchronization in Azure AD Connect.                                                                                                                                                                                                                    |
 | **38**          |Invalid DNS settings on the workstation's side: Active directory requires you to use domain DNS to work properly (and not router's address).                                                                                                                                                                                |
-| **39**          | Collect verbose traces to determine which exact step of log provider manifest installation fails.                                                                                                                                                                                                                                                                                                                            |
-| **40**          | Make sure clock is correctly set/synced on the device where the errors occurs.                                                                                                                                                                                                                                                                                                                        |
-| **41**          |Retry to confirm this error is consistent. If retries do not help, use [Troubleshoot hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) as guide for troubleshooting OS-level hybrid join failures.  |
-| **42**          |The error indicates that OS failed to perform hybrid join. Use [Troubleshoot hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) as guide for troubleshooting OS-level hybrid join failures.          |
+| **39**          |Collect verbose traces to determine which exact step of log provider manifest installation fails.                                                                                                                                                                                                                           |
+| **40**          |Make sure clock is correctly set/synced on the device where the errors occurs. 																													       |
+| **41**          |Retry to confirm this error is consistent. If retries do not help, use [Troubleshoot hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) as guide for troubleshooting OS-level hybrid join failures.                                                    |
+| **42**          |The error indicates that OS failed to perform hybrid join. Use [Troubleshoot hybrid Azure Active Directory-joined devices](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current) as guide for troubleshooting OS-level hybrid join failures.                                                            |
+
 
    
  
