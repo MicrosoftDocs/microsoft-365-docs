@@ -39,7 +39,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 <!--- Edge browser v93 and higher installed.-->
 
-<!--## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
+## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
 
@@ -85,7 +85,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 6. Choose **Save**.
 
 7. Choose **Done**.
--->
+
 ### Download the configuration files
 
 1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
@@ -94,7 +94,8 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 > You can download the individual configuration files from a single folder or download a single archive file that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
->
+> - netfilter.mobileconfig
+
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
 
@@ -158,7 +159,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 	- Notifications in Notification Center: `display`
     - Badge app icon: `display`
 -->
-<!--### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
+### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
 1. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV MAU settings`
@@ -182,7 +183,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1. Choose **Save**.
 
 1. Choose **Done**.
--->
+
 
 ### Create and deploy a configuration profile for Grant full disk access
 
@@ -232,13 +233,64 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
+### Get the installation package
 
-### Deploy Microsoft DLP enforcement package
+1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
+ 
+1. For **Select operating system to start onboarding process** choose **macOS**
+ 
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+ 
+1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
 
-Follow the procedures in 
 
-NO PROCEDURES PROVIDED
+### Deploy the installation package
 
+1. Navigate to where you saved teh `wdav.pkg` file.
+
+1. Open the JAMF Pro dashboard.
+
+1. Select your computer and click the gear at the top, then choose **Computer Management**.
+
+1. In **Packages** choose **+New**. Enter these details:
+    - Display Name: leave blank because it will be reset when you choose the .pkg file.
+    - Category: None (default)
+    - Filname: Choose file, in this case the `wdav.pkg` file.
+
+1. Choose **Open**. Set:
+    - **Display Name**: `Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus`
+    - **Manifest File**: not required
+    - **Options tab**: leave default values
+    - **Limitations tab**: leave default values
+
+1. Choose **Save**. This uploads the package to JAMF Pro.
+
+1. Open the **Policies** page.
+
+1. Choose **+New** to create a new policy.
+
+1. Enter these values
+    - **Display name**: `MDATP Onboarding200329 v100.86.92 or later`
+
+1. Choose **Recurring Check-in**.
+
+1. Choose **Save**.
+
+1. Choose **Packages** > **Configure**.
+
+1. Choose **Add**.
+
+1. Choose **Save**. 
+
+1. Choose the **Scope** tab.
+
+1. Select the target computers.
+
+1. Choose **Add**.
+
+1. Choose **Self service**.
+
+1. Choose **Done**.
 
 ### Check the macOS device 
 
