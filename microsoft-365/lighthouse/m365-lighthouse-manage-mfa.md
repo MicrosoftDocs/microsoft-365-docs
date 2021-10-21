@@ -61,13 +61,13 @@ To enable MFA through Conditional Access, see [Tutorial: Secure user sign-in eve
 
 5. Select **Create email**.
 
-Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can do this by selecting the email icon next to the username.
+Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
 
 If you want to use a different email account, you can export the list of users to a file. You can also download sample email templates that you can customize with your company branding.
 
 ## Next steps
 
-Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see Manage password reset.
+Once MFA is enabled, you can enable Azure Active Directory (Azure AD) self-service password reset. This feature gives users the ability to change or reset their password with no administrator or help desk involvement. For more information, see [Manage self-service password reset](m365-lighthouse-manage-sspr).
 
 ## Related content
 
