@@ -47,9 +47,9 @@ If you already own a domain like  *you@yourcompany.<span>com*  you can add it an
 > [!TIP]
 > Not sure where your domain is registered? - [Get help finding your domain registrar](find-your-domain-registrar.md)
   
- **Use a default domain for now:**
+ **Use a Microsoft domain for now:**
   
-You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to sign in for now and add a custom domain later. 
+You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sign in for now and add a custom domain later. 
   
 > [!IMPORTANT]
 > If you select this option, the name you enter for your .onmicrosoft.com domain will be used in all your SharePoint and OneDrive URLs. You might not be able to change this name, so make sure it's spelled correctly is the name you want to use from a branding perspective. 
