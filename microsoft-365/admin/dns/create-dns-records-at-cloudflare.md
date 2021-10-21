@@ -100,13 +100,13 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at Cloudflare by using [this link](https://www.cloudflare.com/a/login). You'll be prompted to log in first.
   
-1. On the Home page, select the domain that you want to verify.
-
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to verify.":::
-  
+1. On the Home page, select the domain that you want to update. 
+ 
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+ 
 1. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
   
 1. On the DNS management page, select **+Add record**, and then type or copy and paste the values from the table. 
     
@@ -137,17 +137,17 @@ To verify the record in Microsoft 365:
   
 2. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 3. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. On the DNS management page, select **+Add record**, and then type or copy and paste the values from the table. 
     
     | **Type** | **Name** | **Mail server** |  **TTL** | **Priority** |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |30 minutes  <br/> | 1  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |30 minutes  <br/> | 1  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/>|
    
 5. Select **Save**.
   
@@ -161,11 +161,11 @@ To verify the record in Microsoft 365:
       
 2. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 3. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="cloudflare-domains-2.png" alt-text="Select DNS.":::
+    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 4. Add the CNAME record.
     

@@ -114,7 +114,7 @@ To verify the domain in Microsoft 365:
   
     |**Sub-domain**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |(leave blank)  <br/> |3600 (seconds)  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
+    |(leave blank)  <br/> |3600 (seconds)  <br/> |0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![OVH MX record for mail.](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   

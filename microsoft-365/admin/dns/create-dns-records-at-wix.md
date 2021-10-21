@@ -93,7 +93,7 @@ To verify the record in Microsoft 365:
     
    | **Host Name** | **Points to** | **Priority** | **TTL** |
    |:-----|:-----|:-----|:-----|
-   |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+   |Automatically populated <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) | 1 Hour|
    
 1. If there are any other MX records listed, delete each of them. 
     

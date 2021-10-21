@@ -132,7 +132,7 @@ To verify the record in Microsoft 365:
     
     |**Type**|**Host**|**Value**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX Record  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30 min  <br/> |
+    |MX Record  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> |30 min  <br/> |
 
      :::image type="content" source="../../media/f3b76d62-5022-48c1-901b-8615a8571309.png" alt-text="Copy and paste the values from the table.":::
 
@@ -261,7 +261,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
 
-     :::image type="content" source="8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Select ADD NEW RECORD.":::
+     :::image type="content" source="../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png" alt-text="Select ADD NEW RECORD.":::
 
 1. In the **Type** drop-down, select **SRV Record**.
     

@@ -114,7 +114,7 @@ To verify the record in Microsoft 365:
     
     **Refers to** |**Mail server**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value canNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | 1 Hour  <br/> |  
+    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value canNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
   
 1. Select **ADD**.
   
