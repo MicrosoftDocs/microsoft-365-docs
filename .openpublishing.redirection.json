@@ -436,26 +436,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-aws.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-cloudflare.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-crazy-domains.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
@@ -486,11 +466,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-godaddy.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-google-domains.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
@@ -502,11 +477,6 @@
     }, 
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-mydomain.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-namecheap.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
@@ -526,32 +496,12 @@
       "redirect_document_id": false
     }, 
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-network-solutions.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-ovh.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register365.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register-com.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-web-com.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-wix.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
