@@ -74,26 +74,28 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles** 
+2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
-3. Choose:
+3. Choose: **Create profile** 
+
+4. Choose:
     1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
-4. Choose **Create**
+5. Choose **Create**
 
-5. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+6. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
-6. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+7. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
 
-7. Choose **Next**
+8. Choose **Next**
 
-8. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+9. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-9. Review your settings and choose **Create** to deploy the configuration.
+10. Review your settings and choose **Create** to deploy the configuration.
 
-10. Repeat steps 2-7 for the:
+11. Repeat steps 2-7 to create profiles for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
     1. MDE preferences **com.microsoft.wdav.xml** file
@@ -101,9 +103,9 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
     1. **netfilter.mobileconfig**
     <!--1. **notif.mobileconfig**-->
 
-11. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
+12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-12. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+13. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Get the device onboarding package
 
