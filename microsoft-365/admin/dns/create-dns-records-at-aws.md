@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Amazon Web Services (AWS) for Microsoft"
+title: "Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Amazon Web Services (AWS) for Microsoft."
 ---
 
-# Create DNS records at Amazon Web Services (AWS) for Microsoft
+# Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Namecheap for Microsoft"
+title: "Connect your DNS records at Namecheap to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Namecheap for Microsoft."
 ---
 
-# Create DNS records at Namecheap for Microsoft
+# Connect your DNS records at Namecheap to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

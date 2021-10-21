@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at 123-reg.co.uk for Microsoft"
+title: "Connect your DNS records at 123-reg.co.uk to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 123-reg.co.uk for Microsoft."
 ---
 
-# Create DNS records at 123-reg.co.uk for Microsoft
+# Connect your DNS records at 123-reg.co.uk to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

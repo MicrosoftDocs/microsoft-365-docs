@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Network Solutions for Microsoft"
+title: "Connect your DNS records at Network Solutions to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Network Solutions for Microsoft."
 ---
 
-# Create DNS records at Network Solutions for Microsoft
+# Connect your DNS records at Network Solutions to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at IONOS by 1&1 for Microsoft"
+title: "Connect your DNS records at IONOS by 1&1 to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at 1&1 IONOS for Microsoft."
 ---
 
-# Create DNS records at IONOS by 1&1 for Microsoft
+# Connect your DNS records at IONOS by 1&1 to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 

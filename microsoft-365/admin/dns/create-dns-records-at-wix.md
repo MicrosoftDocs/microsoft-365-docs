@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at Wix for Microsoft"
+title: "Connect your DNS records at Wix to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Wix for Microsoft."
 ---
 
-# Create DNS records at Wix for Microsoft
+# Connect your DNS records at Wix to Microsoft 365
 
 **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   

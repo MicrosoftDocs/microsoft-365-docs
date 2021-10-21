@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at GoDaddy for Microsoft"
+title: "Connect your DNS records at GoDaddy to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -25,7 +25,7 @@ ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at GoDaddy for Microsoft."
 ---
 
-# Create DNS records at GoDaddy for Microsoft
+# Connect your DNS records at GoDaddy to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 

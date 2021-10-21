@@ -1,5 +1,5 @@
 ---
-title: "Create DNS records at OVH for Microsoft"
+title: "Connect your DNS records at OVH to Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,7 +24,7 @@ ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at OVH for Microsoft."
 ---
 
-# Create DNS records at OVH for Microsoft
+# Connect your DNS records at OVH to Microsoft 365
 
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for. 
   
