@@ -67,7 +67,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 |Step(s)|Description|Impact|
 |---|---|---|
-|**Customer Task**: Grant consent for migration|Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways: <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration.</li><li>Customers has renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol>|<ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation.</li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints.</li></ul>
+|**Customer Task**: Grant consent for migration|Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways: <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration.</li><li>Customers have renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notifies these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol>|<ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation.</li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints.</li></ul>
 |**Tenant Admin**: Monitor messages|The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status from this time on.|Customer can execute necessary tasks in time.
 |
 
@@ -75,7 +75,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
-In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
+In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ anytime before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
 
 In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
@@ -89,7 +89,7 @@ If you are using Active Directory Federation Services (AD FS), make sure to [bac
 
 ## Phase 2: Azure AD Migration
 
-In this phase the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
+In this phase, the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
 
 ### Exchange Online Hybrid - Modify AuthServer on-premises
 
@@ -125,7 +125,7 @@ Failing to complete this task may result in hybrid free-busy requests failing to
 |**Admin task**|Revise any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs with the Office 365 services offering|Customer processes continue to work.|
 |
 
-**Applies to**: Microsoft Partners which are using the Office 365 Partner Portal
+**Applies to**: Microsoft Partners who are using the Office 365 Partner Portal
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
@@ -263,7 +263,7 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
 
-When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Please refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration.
+When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration.
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
@@ -274,7 +274,7 @@ Connect-MicrosoftTeams -Credential $userCredential
 ```
 
 ### Known limitations until finalizing Azure AD migration
-Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
+Microsoft Teams is using features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
 
 - Apps cannot be managed in the Microsoft Teams admin center.
 - New teams can be created in the Microsoft Teams client only unless the Teams administrator has limited the permissions for users to create new teams. New teams cannot be created in the Microsoft Teams admin center.
@@ -368,7 +368,7 @@ Microsoft Azure customers must transition their Azure workloads following the st
 **Applies to:** Customers with Azure AD registered or joined devices
 
 After phase 9 has been completed, Azure AD registered and joined devices must be connected to the transitioned Azure AD instance in the new German datacenter region.
-Devices that are not re-joined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, please refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
+Devices that are not rejoined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
 
 ### Azure AD Connect
 
