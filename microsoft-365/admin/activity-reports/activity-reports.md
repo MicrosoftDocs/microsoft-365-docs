@@ -86,9 +86,9 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
-|Item|Description|
+|**Report**|**Public**|
 |:-----|:-----|
-|1. |The **Microsoft browser usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. |
+|[Microsoft browser usage](browser-usage-report.md)|Yes|
 
 
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
