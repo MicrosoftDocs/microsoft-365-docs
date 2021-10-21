@@ -100,3 +100,7 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 ## Data residency
 
 Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
+
+## Roles and permissions
+
+Users within an organization will be able to discover all content available to their organization, but they'll only be able to consume courses that they have access to.

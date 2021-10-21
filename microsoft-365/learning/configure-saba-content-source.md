@@ -46,9 +46,17 @@ Provide the username and password of an administrative account for Microsoft Viv
 
 ## Last steps
 
-Post the required configuration details in the Microsoft 365 admin center under the Saba Cloud learning source option.  
+You'll need to complete the configuration in your Microsoft 365 admin center.
 
-![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)
+1. Log in to your [Microsoft 365 admin center](https://admin.microsoft.com).
+2. Navigate to **Settings**, then **Org settings**. Select Viva Learning and enable Saba Cloud from the panel.
+3. Fill in the details that you got from your Saba portal.
+    >[!NOTE]
+    >Display name is the name of the carousel under which Saba learning content will appear for users in your organization in Viva Learning. If you don't enter a new name, it will display the default name "Saba Cloud".
+
+    ![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)
+
+4. Select **Save** to activate Saba Cloud content in Microsoft Viva Learning. It may take up to 24 hours for the content to display in Viva Learning.
 
 > [!Note]
 > For Saba Cloud integration, you need to have a sabacloud.com domain in your Host URL. If you have a different domain name, you'll need to raise a support ticket to allow your domain name.
