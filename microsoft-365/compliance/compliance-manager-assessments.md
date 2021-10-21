@@ -74,7 +74,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization’s available templates may include one or more templates that were included as part of your licensing agreement, along with any additional premium templates that you have purchased.
 
-Each template, whether included or premium, exists in two versions: one for use with Microsoft 365, and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for your assessment during assessment creation.
+Each template, whether included or premium, exists in two versions: one for use with Microsoft 365, and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for your assessment.
 
 To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
 
@@ -97,7 +97,7 @@ To begin building assessments, follow these steps.
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: If you’re using a universal template, select whether you’re creating this assessment for a new product or an existing custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select Microsoft 365 as the product when using a universal template. If you are using a Microsoft 365 template, this field will be populated for you to indicate Microsoft 365 and cannot be changed.
+    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft 365 template, this field will be populated for you to indicate Microsoft 365 and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select Microsoft 365 as the product when using a universal template.
     - **Name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you’ve already created; or
