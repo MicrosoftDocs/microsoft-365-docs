@@ -20,6 +20,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage multifactor authentication
 
+> [!NOTE]
+> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Azure Active Directory (Azure AD) Multi-Factor Authentication (MFA) helps safeguard access to data and applications, providing another layer of security by using a second form of authentication. The Multifactor Authentication tab provides detailed information on the status of MFA enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users have not yet registered for MFA.
 
 For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
@@ -28,7 +31,7 @@ For small- and medium-sized business (SMB) customers, Microsoft recommends enabl
 
 The following conditions must be met before a tenant will appear in the list:
 
-- The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support MFA, see [Plan an Azure Active Directory Multi-Factor Authentication deployment](/azure/active-directory/authentication/concept-mfa-licensing).
+- The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support MFA, see [Features and licenses for Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-licensing).
 
 - The customer tenant must be active within Microsoft 365 Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](/microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview).
 
