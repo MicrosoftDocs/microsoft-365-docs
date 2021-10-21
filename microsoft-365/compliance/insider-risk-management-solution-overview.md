@@ -2,8 +2,8 @@
 title: Insider risk management in Microsoft 365
 description: Learn how to configure insider risk management in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH

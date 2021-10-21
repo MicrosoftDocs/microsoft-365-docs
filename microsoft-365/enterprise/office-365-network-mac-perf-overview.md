@@ -7,7 +7,7 @@ ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -58,7 +58,11 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 For this option, neither Windows Location Services nor Wi-Fi are required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location.
 
-You also need to add locations in the **Locations page** or to import them from a CSV file. The locations added must include your office LAN subnet information.
+Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. Super nets are not supported so the LAN subnet must match exactly.
+
+Note that usually, LAN subnets are private IP address ranges as defined in RFC1918 such that the use of public IP addresses as the LAN subnets is likely to be incorrect. The dialog will show suggestions of LAN subnets that have been seen in recent network assessment tests for your organization so that you can choose.
+
+If you add public egress IP addresses, these are used as a secondary differentiator and are intended for when you have multiple sites using the same LAN subnet IP address ranges. To make sure your test results show up, you should start by leaving the public egress IP address ranges blank. If they are included then a test result must match both one of the LAN subnet IP address ranges and one of the public egress IP address ranges.
 
 This option allows you to have multiple offices defined within a city.
 

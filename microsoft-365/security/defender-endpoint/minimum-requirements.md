@@ -2,15 +2,13 @@
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
 keywords: minimum requirements, licensing, comparison table
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,9 +39,11 @@ There are some minimum requirements for onboarding devices to the service. Learn
 
 Microsoft Defender for Endpoint requires one of the following Microsoft volume licensing offers:
 
+- Windows 11 Enterprise E5
+- Windows 11 Education A5
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
-- Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5
+- Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5 or Windows 11 Enterprise E5
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
@@ -69,7 +69,7 @@ Microsoft Defender for Endpoint for servers requires one of the following licens
 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
-For more information on the array of features in Windows 10 editions, see [Compare Windows 10 editions](https://www.microsoft.com/windowsforbusiness/compare).
+For more information on the array of features in Windows editions, see [Compare Windows editions](https://www.microsoft.com/windowsforbusiness/compare).
 
 ## Browser requirements
 
@@ -89,6 +89,10 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 7 SP1 Pro ([Requires ESU for support](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).)
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
+- Windows 11 Enterprise
+- Windows 11 Education
+- Windows 11 Pro
+- Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
 - Windows 10 Education
@@ -141,7 +145,7 @@ When you run the onboarding wizard for the first time, you must choose where you
 Make sure that the diagnostic data service is enabled on all the devices in your organization.
 By default, this service is enabled. It's good practice to check to ensure that you'll get sensor data from them.
 
-#### Use the command line to check the Windows 10 diagnostic data service startup type
+#### Use the command line to check the Windows diagnostic data service startup type
 
 1. Open an elevated command-line prompt on the device:
    1. Go to **Start** and type **cmd**.
@@ -159,7 +163,7 @@ By default, this service is enabled. It's good practice to check to ensure that 
 
 You'll need to set the service to automatically start if the **START_TYPE** isn't set to **AUTO_START**.
 
-#### Use the command line to set the Windows 10 diagnostic data service to automatically start
+#### Use the command line to set the Windows diagnostic data service to automatically start
 
 1. Open an elevated command-line prompt on the endpoint:
     1. Go to **Start** and type **cmd**.
@@ -185,7 +189,7 @@ The Defender for Endpoint sensor can use a daily average bandwidth of 5 MB to co
 
 For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
-Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10.
+Before you onboard devices, the diagnostic data service must be enabled. The service is enabled by default in Windows 10 and Windows 11.
 
 ## Microsoft Defender Antivirus configuration requirement
 

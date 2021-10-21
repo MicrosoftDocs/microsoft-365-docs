@@ -3,15 +3,13 @@ title: Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to install and use Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -70,15 +68,55 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
-  - Red Hat Enterprise Linux 7.2 or higher
+  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 7.2 or higher 
+  - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Amazon Linux 2
+  - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
+
+    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
+       - For 6.7: 2.6.32-573.* 
+       - For 6.8: 2.6.32-642.* 
+       - For 6.9: 2.6.32-696.* 
+       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+
+    List of versions:
+
+    - 2.6.32-754.2.1.el6.x86_64 
+    - 2.6.32-754.17.1.el6.x86_64
+    - 2.6.32-754.29.1.el6.x86_64
+    - 2.6.32-754.3.5.el6.x86_64 
+    - 2.6.32-754.18.2.el6.x86_64
+    - 2.6.32-754.29.2.el6.x86_64
+    - 2.6.32-754.6.3.el6.x86_64 
+    - 2.6.32-754.22.1.el6.x86_64
+    - 2.6.32-754.30.2.el6.x86_64
+    - 2.6.32-754.9.1.el6.x86_64 
+    - 2.6.32-754.23.1.el6.x86_64
+    - 2.6.32-754.33.1.el6.x86_64
+    - 2.6.32-754.10.1.el6.x86_64
+    - 2.6.32-754.24.2.el6.x86_64
+    - 2.6.32-754.35.1.el6.x86_64
+    - 2.6.32-754.11.1.el6.x86_64
+    - 2.6.32-754.24.3.el6.x86_64
+    - 2.6.32-754.39.1.el6.x86_64
+    - 2.6.32-754.12.1.el6.x86_64
+    - 2.6.32-754.25.1.el6.x86_64
+    - 2.6.32-754.41.2.el6.x86_64
+    - 2.6.32-754.14.2.el6.x86_64
+    - 2.6.32-754.27.1.el6.x86_64
+    - 2.6.32-754.15.3.el6.x86_64
+    - 2.6.32-754.28.1.el6.x86_64       
+
 
 - Minimum kernel version 3.10.0-327
 
@@ -124,6 +162,10 @@ After you've enabled the service, you may need to configure your network or fire
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
 
+### Configuring Exclusions
+
+When adding exclusions to Microsoft Defender Antivirus, you should be mindful of [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+
 ### Network connections
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
@@ -161,6 +203,10 @@ Microsoft regularly publishes software updates to improve performance, security,
 ## How to configure Microsoft Defender for Endpoint on Linux
 
 Guidance for how to configure the product in enterprise environments is available in [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md).
+
+## Common Applications to Microsoft Defender for Endpoint can impact
+
+High I/O workloads from certain applications can experience performance issues when Microsoft Defender for Endpoint is installed. These include applications for developer scenarios like Jenkins and Jira, and database workloads like OracleDB and Postgres. If experiencing performance degradation, consider setting exclusions for trusted applications, keeping [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus) in mind. For additional guidance, consider consulting documentation regarding antivirus exclusions from third party applications.
 
 ## Resources
 

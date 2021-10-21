@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -175,7 +175,11 @@ When users create an inbox rule for their Exchange Online mailbox, a correspondi
 
 Here's how to configure an audit log search query for this scenario:
 
-**Activities:** Under **Exchange mailbox activities**, select **New-InboxRule Create/modify/enable/disable inbox rule**.
+**Activities:** Under **Exchange mailbox activities**, select one or both of the following activities:
+
+- **New-InboxRule Create new inbox rule from Outlook Web App**. This activity returns audit records when inbox rules are created using Outlook web app or Exchange Online PowerShell.
+
+- **Updated inbox rules from Outlook client**. This activity returns audit records when inbox rules are created, modified, or removed using the Outlook desktop client.
 
 **Start date** and **End date:** Select a date range that's applicable to your investigation.
 

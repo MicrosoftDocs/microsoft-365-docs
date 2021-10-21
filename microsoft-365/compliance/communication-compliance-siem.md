@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -24,11 +24,11 @@ search.appverid:
 
 [Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
-A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for offensive language. These events are tracked in the Microsoft 365 unified audit log by the communication compliance solution and imported in the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in the Microsoft 365 unified audit logs that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate alert in the communication compliance solution.
+A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for offensive language. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
 
-## Communication compliance alerts in the Microsoft 365 unified audit logs
+## Communication compliance alerts in Microsoft 365 Audit
 
-All communication compliance policy matches are captured in the Microsoft 365 unified audit logs. The following examples show the details available for selected communication compliance policy match activities:
+All communication compliance policy matches are captured in Microsoft 365 Audit. The following examples show the details available for selected communication compliance policy match activities:
 
 **Example of audit log entry for an Offensive Language policy template match:**
 
@@ -46,7 +46,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**Example of an audit log entry for a policy with custom keyword match (custom sensitive information type):**
+**Example of a Microsoft 365 Audit log entry for a policy with custom keyword match (custom sensitive information type):**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -62,12 +62,12 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
->[!NOTE]
->Currently, there may be up to a 24h delay between the time a policy match is recorded in the Microsoft 365 unified audit log and the time in which you can investigate policy matches in communication compliance.
+> [!NOTE]
+> Currently, there may be up to a 24-hour delay between the time a policy match is recorded in Microsoft 365 Audit and the time in which you can investigate policy matches in communication compliance.
 
 ## Configure communication compliance and Azure Sentinel integration
 
-When you're using the Azure Sentinel to aggregate communication compliance policy matches, Sentinel uses the Microsoft 365 unified audit log as the data source. To integrate communication compliance alerts with Sentinel, complete the following steps:
+When you're using the Azure Sentinel to aggregate communication compliance policy matches, Sentinel uses Microsoft 365 Audit as the data source. To integrate communication compliance alerts with Sentinel, complete the following steps:
 
 1. [Onboard to Azure Sentinel](/azure/sentinel/quickstart-onboard). As part of the onboarding process, you'll configure your data sources.
 2. Configure the Azure Sentinel [Microsoft Office 365 data connector](/azure/sentinel/data-connectors-reference#microsoft-office-365) and under connector configuration, select *Exchange*.
@@ -83,7 +83,7 @@ When you're using the Azure Sentinel to aggregate communication compliance polic
     | where OfficeWorkload == "Exchange" and Operation == "SupervisionRuleMatch" and UserId == "User1@Contoso.com"
     | sort by TimeGenerated*
 
-For more information about the audit logs for Office 365 collected by Azure Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
+For more information about the Microsoft 365 Audit logs for Office 365 collected by Azure Sentinel, see [Azure Monitor Logs reference](/azure/azure-monitor/reference/tables/OfficeActivity).
 
 ## Configure communication compliance and Splunk integration
 
@@ -110,7 +110,7 @@ The following table shows sample search results for different policy types:
 
 ## Configure communication compliance with other SIEM solutions
 
-To retrieve communication compliance policy matches from the Microsoft 365 unified audit logs, you can either use PowerShell or the [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-reference).
+To retrieve communication compliance policy matches from Microsoft 365 Audit, you can either use PowerShell or the [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-reference).
 
 When using PowerShell, you can use either of these parameters with the **Search-UnifiedAuditLog** cmdlet to filter audit log events for communication compliance activities.
 
@@ -131,6 +131,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## Resources
 
-- [Communication compliance auditing](communication-compliance-feature-reference.md#audit)
+- [Communication compliance auditing](communication-compliance-reports-audits.md#audit)
 - [Advanced Audit in Microsoft 365](advanced-audit.md)
 - [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference)

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -86,16 +86,16 @@ For more information, see this [overview of P2S VPN](/azure/vpn-gateway/point-to
 > [!NOTE]
 > Azure P2S VPN is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
-## Deploy Windows Virtual Desktop to provide remote access for remote workers using personal devices
+## Deploy Azure Virtual Desktop to provide remote access for remote workers using personal devices
 
-To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization network.
+To support remote workers who can only use their personal and unmanaged devices, use Azure Virtual Desktop to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization's network.
 
-![Components of Azure Windows Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
+![Components of Azure Virtual Desktop.](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-For more information, see this [overview of Windows Virtual Desktop](/azure/virtual-desktop/overview).
+For more information, see this [overview of Azure Virtual Desktop](/azure/virtual-desktop/overview).
 
 > [!NOTE]
->Windows Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
+> Azure Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 
 ## Protect your Remote Desktop Services connections with the Remote Desktop Services Gateway
 
@@ -119,7 +119,7 @@ After deployment of a remote access solution for your remote workers:
 | A remote access VPN solution is in place | You have configured your remote access VPN client for split tunneling and for the Optimize category of Microsoft 365 endpoints. |
 | No remote access VPN solution and you need remote access only to on-premises web-based apps | You have configured Azure Application Proxy. |
 | No remote access VPN solution and you need access to on-premises apps, some of which are not web-based | You have configured Azure P2S VPN. |
-| Remote workers are using their personal devices from home | You have configured Windows Virtual Desktop. |
+| Remote workers are using their personal devices from home | You have configured Azure Virtual Desktop. |
 | Remote workers are using RDS connections to on-premises systems | You have deployed a Remote Desktop Services gateway in your edge network. |
 |||
 

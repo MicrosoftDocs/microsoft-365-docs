@@ -12,7 +12,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority: null
 
 ---
 # Restrict access to topics in Microsoft Viva Topics

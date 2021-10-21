@@ -8,8 +8,11 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -58,8 +61,8 @@ When you're comfortable managing assessments in Compliance Manager, you can work
 
 You can also set up automated testing of all or a subset of improvement actions. Visit the links below to understand more advanced functionality in Compliance Manager:
 
-- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [Create your own custom template](compliance-manager-templates.md#create-an-assessment-template)
-- [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
+- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
+- [Create your own custom template](compliance-manager-templates-create.md)
+- [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
 - [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
