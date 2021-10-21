@@ -93,7 +93,7 @@ To begin building assessments, follow these steps.
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; or
     - Find the template you want to use on the **assessment templates** tab, view its details, and select **Create assessment**. This will populate the wizard's template selection field for you.
 
-3. **Select a template**: If you didn't already choose a template in step 2, choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template types](compliance-manager-templates.md#template-availability-and-licensing) for more information). Select the radio button next to your chosen template, then select **Next**.
+3. **Select a template**: If you didn't already choose a template in step 2, choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information). Select the radio button next to your chosen template, then select **Next**.
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
