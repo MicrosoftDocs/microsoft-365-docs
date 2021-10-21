@@ -26,7 +26,7 @@ description: "Get a periodic report of how people in your organization are using
 
 # Microsoft 365 Reports in the admin center
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all. Perpetual license model will not be included in the reports. 
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
@@ -155,7 +155,7 @@ Your user list will look like this:
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
