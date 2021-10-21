@@ -71,7 +71,7 @@ This indicates that Microsoft Defender Antivirus has been automatically turned o
 
 You can generate a detailed report about currently active group policies by opening a command prompt in **Run as admin** mode, then entering the following command:
 
-```powershell
+```console
 GPresult.exe /h gpresult.html
 ```
 
