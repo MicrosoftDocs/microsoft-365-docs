@@ -36,8 +36,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 - Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-- Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home)
-
 <!--- Edge browser v93 and higher installed.-->
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
@@ -176,7 +174,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 ### Update your existing configuration profile for Grant full disk access
 
-1. Download the **fulldisk.mobileconfig** file HENRY TO PROVIDE LINK
+1. USe the **fulldisk.mobileconfig** file.
 
 1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
@@ -218,9 +216,9 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 -->
 ### Grant accessibility access to DLP
 
-1. Download **accessibility.mobileconfig** HENRY TO PROVIDE LINK
+1. Use the **accessibility.mobileconfig**.
 
-2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
+2. Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 
 <!--### Deploy Microsoft DLP enforcement package
