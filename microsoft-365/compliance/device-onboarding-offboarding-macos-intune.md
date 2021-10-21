@@ -36,6 +36,7 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 - Make sure your [macOS devices are onboarded into Intune](/mem/intune/fundamentals/deployment-guide-platform-macos) and are enrolled in the [Company Portal app](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp). 
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
 - This supports macOS version Catalina 10.15 and higher.
+- Create the user groups that you are going to assign the configuration updates to.
 <!--- Edge browser v93 and higher installed.-->
 
 ## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
@@ -101,6 +102,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
     1. MDE preferences **com.microsoft.wdav.xml** file
         1. set Antivirus engine `passive mode` = `true` or `false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
     1. **netfilter.mobileconfig**
+    1. **
     <!--1. **notif.mobileconfig**-->
 
 12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
@@ -115,7 +117,30 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
  
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
  
-1. Choose **Download onboarding package**. This contains the onboarding script that you'll push out via OMA-URI.
+1. Choose **Download onboarding package**. This contains the onboarding code in the **MDEOnboarding.xml** file
+
+### Deploy the onboarding package
+
+1. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+
+3. Choose: **Create profile** 
+
+4. Choose:
+    1. **Platform = macOS**
+    1. **Profile type = Templates**
+    1. **Template name = Custom**
+
+5. Choose **Create**
+
+6. Choose a name for the profile, like *OnboardingPackage* in this example. Choose **Next**.
+
+7. Choose the **MDEOnboarding.xml** file as the configuration profile file.
+
+8. Choose **Next**
+
+9. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+
+10. Review your settings and choose **Create** to deploy the configuration.
 
 
 <!--### Enable kernel extension
@@ -185,7 +210,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 ### Deploy the Microsoft DLP installation package
 
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format.
+1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
 
 ## Offboard macOS devices using Intune
 
