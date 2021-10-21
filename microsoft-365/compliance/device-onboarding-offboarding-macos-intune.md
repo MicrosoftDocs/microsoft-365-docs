@@ -45,11 +45,11 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 1. [Create system configuration profiles](#create-system-configuration-profiles)
 1. [Get the device onboarding package](#get-the-device-onboarding-package)
-<!--1. [Enable kernel extension](#enable-kernel-extension)-->
+1. [Deploy the onboarding package](#deploy-the-onboarding-package)
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
-1. [Deploy the Microsoft DLP installation package](#deploy-the-microsoft-dlp-installation-package)
-
+1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
+<!--1. [Enable kernel extension](#enable-kernel-extension)-->
 
  
 <!--1. Extract the contents of the device onboarding package. In the **Intune** folder you should see these files:
