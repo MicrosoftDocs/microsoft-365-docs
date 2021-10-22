@@ -62,13 +62,6 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 
 1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
 
-> [!TIP]
-> You can download the individual configuration files from a single folder or download a single archive file that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
->
->combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
-
 2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
 3. Choose: **Create profile** 
@@ -90,9 +83,14 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 
 10. Review your settings and choose **Create** to deploy the configuration.
 
-11. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
+11. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-12. Update exisiting MDE preferences profile file with these values
+12. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+### Update configuration profiles
+
+1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
+
+2. Update exisiting MDE preferences profile with these values
    
 ```xml
 <key>features</key>
@@ -104,11 +102,7 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 </dict>
 ```
 
-12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
-
-13. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
-
-### Get the device onboarding package
+<!--### Get the device onboarding package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
@@ -140,7 +134,7 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 9. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
 10. Review your settings and choose **Create** to deploy the configuration.
-
+-->
 
 <!--### Enable kernel extension
 
