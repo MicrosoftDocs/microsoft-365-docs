@@ -24,7 +24,7 @@ description: "Admins can learn about the trial mode of Microsoft Defender for Of
 # About the Microsoft Defender for Office 365 trial
 
 > [!IMPORTANT]
-> Get stared quickly with our easy to use [Microsoft Defender for Office 365 playbook](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
+> Get started quickly with our easy to use [Microsoft Defender for Office 365 playbook](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats that are posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
@@ -50,7 +50,6 @@ A Microsoft Defender for Office 365 trial is an easy way to try out the capabili
 |[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
-|
 
 <sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
 
