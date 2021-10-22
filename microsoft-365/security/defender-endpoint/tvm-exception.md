@@ -81,8 +81,8 @@ If you have global administrator permissions, you will be able to create and can
 
 Some things to keep in mind:
 
-- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired or been cancelled. After that point, the new device group exceptions will go into effect until they expire.
-- If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is cancelled before it expires.
+- If a recommendation is under global exception, then newly created exceptions for device groups will be suspended until the global exception has expired or been canceled. After that point, the new device group exceptions will go into effect until they expire.
+- If a recommendation already has exceptions for specific device groups and a global exception is created, then the device group exception will be suspended until it expires or the global exception is canceled before it expires.
 
 ### Justification
 

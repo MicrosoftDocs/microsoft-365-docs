@@ -43,7 +43,8 @@ Supported OS or platform|OS vulnerabilities|Software product vulnerabilities|OS 
 Windows 7|Yes|Not supported|Not supported|Not supported|Not supported
 Windows 8.1|Yes|Yes|Yes|Yes|Yes
 Windows 10, versions 1607-1703|Yes|Not supported|Not supported|Not supported|Not supported
-Windows 10, version 1709 or later, or Windows 11|Yes|Yes|Yes|Yes|Yes
+Windows 10, version 1709 or later|Yes|Yes|Yes|Yes|Yes
+Windows 11|Yes|Yes|Yes|Yes|Yes
 Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
