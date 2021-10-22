@@ -4,7 +4,6 @@ author: chuckedmonson
 ms.author: chucked
 manager: pamgreen
 ms.reviewer: anfra; cjtan
-ms.date: 10/25/2021
 audience: admin
 ms.date: 10/25/2021
 ms.topic: article
