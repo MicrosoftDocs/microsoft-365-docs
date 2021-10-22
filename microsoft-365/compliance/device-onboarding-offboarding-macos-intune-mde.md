@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)
+title: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -90,9 +90,10 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 
 10. Review your settings and choose **Create** to deploy the configuration.
 
-11. UPDATES NOT REPEATS
-    1. **fulldisk.mobileconfig** file
-    1. update MDE preferences **com.microsoft.wdav.xml** file with these values    
+11. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
+
+12. Update exisiting MDE preferences profile file with these values
+   
 ```xml
 <key>features</key>
 <dict>
