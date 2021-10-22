@@ -29,6 +29,8 @@
           href: topic-experiences-user-permissions.md
         - name: Change the topic center name
           href: topic-experiences-administration.md
+        - name: Use taxonomy terms to create topics 
+          href: sharepoint-taxonomy.md     
     
     
     - name: Work with topics
@@ -49,7 +51,6 @@
           href: search.md             
         - name: Manage topics at scale 
           href: scale-topics.md             
-
 
     - name: Adoption
       items: 
