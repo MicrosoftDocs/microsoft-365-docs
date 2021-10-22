@@ -86,6 +86,10 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
+Here is a simple footnote[^1]. With some additional text after it.
+
+[^1]: My reference.
+
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |[Microsoft browser usage](browser-usage-report.md)|Yes|No|No|No|No|
@@ -106,7 +110,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
 |[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
 |[Forms activity](forms-activity-ww.md)|Yes|Yes|No|No|No|
-|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|No|No|No|
+|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A|N/A|N/A|
 |[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No|No|Yes|
 |[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No|No|Yes|
 |[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No|No|Yes|
