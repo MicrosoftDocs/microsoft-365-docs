@@ -4,11 +4,12 @@ description:  Detailed actions to take for each issue the tool finds
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+audience: Admin
 ---
 
 # Fix issues found by the readiness assessment tool
@@ -21,54 +22,67 @@ For each check, the tool will report one of four possible results:
 |Ready     | No action is required before completing enrollment.        |
 |Advisory    | Follow the steps in the tool or this article for the best experience with enrollment and for users. You *can* complete enrollment, but you must fix these issues before you deploy your first device.        |
 |Not ready | *Enrollment will fail if you don't fix these issues.* Follow the steps in the tool or this article to resolve them.        |
-|Error | The Azure Active Director (AD) role you're using doesn't have sufficient permission to run this check. |
+|Error | The Azure Active Directory (AD) role you're using doesn't have sufficient permission to run this check. |
+
+> [!NOTE]
+> The results reported by this tool reflect the status of your settings only at the specific point in time that you ran it. If you later make any changes to policies in Microsoft Intune, Azure Active Directory, or Microsoft 365, items that were "Ready" can become "Not ready." To avoid problems with Microsoft Managed Desktop operations, check the specific settings described in this article before you change any policies.
 
 ## Microsoft Intune settings
 
+You can access Intune settings at the Microsoft Endpoint Manager [admin center](https://endpoint.microsoft.com).
+
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups used by Microsoft Managed Desktop. Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices. If you have an existing Autopilot deployment profile, the "Convert all targeted devices to Autopilot" setting must be set to "No" for the managed desktop readiness test for Autopilot to succeed.
 
 **Not ready**
 
 You have an Autopilot profile that is assigned to all devices. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
+[Enroll Windows devices in Intune by using Windows Autopilot](/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 **Advisory**
 
-Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include Microsoft Managed Desktop devices that will be created at enrollment. For steps, see 
-[Enroll Windows devices in Intune by using Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot policy to exclude the **Modern Workplace Devices -All** Azure AD group.
+Make sure that your Autopilot profiles target an assigned or dynamic Azure AD group that doesn't include Microsoft Managed Desktop devices. For steps, see 
+[Enroll Windows devices in Intune by using Windows Autopilot](/mem/autopilot/enrollment-autopilot). After Microsoft Managed Desktop enrollment, set your Autopilot profiles to exclude the **Modern Workplace Devices -All** Azure AD group.
 
 
 ### Certificate connectors
 
-If you have any certificate connectors used by the devices you want to enroll in Microsoft Managed Desktop, the connectors cannot have any errors. Only one of the following advisories will apply to your situation, so check them carefully.
+If you have any certificate connectors that will be used by the devices you want to enroll in Microsoft Managed Desktop, the connectors should not have any errors. Only one of the following advisories will apply to your situation, so check them carefully.
 
 **Advisory**
 
-No certificate connectors are present. It's possible you don't need any connectors, but you should evaluate whether you might need some for network connectivity to Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+No certificate connectors are present. It's possible you don't need any connectors, but you should evaluate whether you might need some for network connectivity on your Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 **Advisory**
 
-At least one certificate connector has an error. If you need this connector for connectivity to Microsoft Managed Desktop devices, you must resolve the error. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+At least one certificate connector has an error. If you need this connector for providing certificates to Microsoft Managed Desktop devices, you must resolve the error. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
 
 **Advisory**
 
-You have at least one certificate connector and no errors are reported. However, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+You have at least one certificate connector and no errors are reported. However, in preparation for deployment, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
+
+### Company Portal
+
+Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. 
+
+**Not ready**
+
+You do not have Company Portal installed for your users. Purchase Company Portal and force a sync between Intune and Microsoft Store for Business. For more information, see [Install Intune Company Portal on devices](../get-started/company-portal.md).
 
 
 ### Conditional access policies
 
-Conditional access policies in your Azure AD organization must not target any Microsoft Manage Desktop users.
+Conditional access policies must not prevent Microsoft Managed Desktop from managing your Azure AD organization (tenant) in Intune and Azure AD.
 
 **Not ready**
 
-You have at least one conditional access policy that targets all users. Reset the policy to target a specific Azure AD group that does not include the Azure AD group of Microsoft Managed Desktop service accounts that will be created at enrollment. For steps, see [Conditional Access: Users and groups](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups).
+You have at least one conditional access policy that targets all users. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. After enrollment, you can review the Microsoft Managed Desktop conditional access policy in Microsoft Endpoint Manager. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-Make sure that any conditional access policies you have exclude the **Modern Workplace Service Accounts** Azure AD group. For steps, see [Adjust conditional access](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access). The **Modern Workplace Service Accounts** Azure AD group is a dynamic group that we create for the service when you enroll. You'll have to come back to exclude this group after enrollment. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
+You have conditional access policies that could prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
@@ -83,29 +97,25 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 ### Device Compliance policies
 
-Intune Device Compliance policies in your Azure AD organization must not target any Microsoft Managed Desktop users.
-
-**Not ready**
-
-You have at least one compliance policy that targets all users. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
 **Advisory**
 
-Make sure that any compliance policies you have don't include any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that applies all users. Microsoft Managed Desktop also includes compliance policies that will apply to your Microsoft Managed Desktop devices. Review all of the compliance policies created by your organization that apply to Microsoft Managed Desktop devices to ensure there are no conflicts. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
-### Device Configuration policies
+### Device Configuration profiles
 
-Intune Device Configuration policies in your Azure AD organization must not target any Microsoft Manage Desktop devices or users.
+Intune Device Configuration profiles in your Azure AD organization must not target any Microsoft Manage Desktop devices or users.
 
 **Not ready**
 
-You have at least one configuration policy that targets all users, all devices, or both. Reset the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration profile that applies to all users, all devices, or both. Reset the profile to apply to a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 
-Make sure that any compliance policies you have don't include any Microsoft Managed Desktop devices or users. For steps, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure).
+Make sure that any configuration policies you have don't include any Microsoft Managed Desktop devices or users. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 
 
@@ -115,50 +125,41 @@ Microsoft Managed Desktop devices must be allowed to enroll in Intune.
 
 **Not ready**
 
-Follow the steps in [Set enrollment restrictions](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) to change the setting to **Allow**.
+You currently have at least one enrollment restriction policy configured to prevent Windows devices from enrollment in Intune. Follow the steps in [Set enrollment restrictions](/mem/intune/enrollment/enrollment-restrictions-set) for each enrollment restriction policy that targets Microsoft Managed Desktop users and change the **Windows (MDM)** setting to **Allow**. You can, however, set any **personally owned** **Windows (MDM)** devices to **Block**. 
 
 
 ### Enrollment Status Page
 
-You currently have the Enrollment Status Page (ESP) enabled. If you are participating in the public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
+You currently have the Enrollment Status Page (ESP) enabled. If you intend to participate in the Microsoft Managed Desktop public preview of this feature, you can ignore this item. For more information, see [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 **Not ready**
 
-You have the ESP default profile set to **Show app and profile configuration progress**. Disable this setting by following the steps in [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
+You have the ESP default profile set to **Show app and profile configuration progress**. Disable this setting or make sure that assignments to any Azure AD group do not include Microsoft Managed Desktop devices by following the steps in [Set up the Enrollment Status Page](/mem/intune/enrollment/windows-enrollment-status).
 
 **Advisory**
 
-Make sure that any profiles that have the **Show app and profile configuration progress** setting are not assigned to any Azure AD group that includes Microsoft Managed Desktop devices. For more information, see [Set up the Enrollment Status Page](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status).
-
-### Intune enrollment
-
-Windows 10 devices in your Azure AD organization must be automatically enrolled in Intune.
-
-**Not ready**
-
-Users in your Azure AD organization aren't automatically enrolled in Microsoft Intune. Change the MDM User scope to **Some** or **All**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups**.
-
+Make sure that any profiles that have the **Show app and profile configuration progress** setting are not assigned to any Azure AD group that includes Microsoft Managed Desktop devices. For more information, see [Set up the Enrollment Status Page](/mem/intune/enrollment/windows-enrollment-status).
 
 ### Microsoft Store for Business
 
-We use Microsoft Store for Business so that you can download Company Portal to deploy some apps, such as Microsoft Project and Microsoft Visio.
+We use Microsoft Store for Business and deploy the Company Portal app on Microsoft Managed Desktop to allow users to optionally install some apps, such as Microsoft Project and Microsoft Visio (where permitted).
 
 **Not ready**
 
-Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on on devices](../get-started/company-portal.md).
+Microsoft Store for Business either isn't enabled or isn't synced with Intune. For more information, see [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business) and [Install Intune Company Portal on devices](../get-started/company-portal.md).
 
-### Multi-factor authentication
+### Multifactor authentication
 
-Multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.
+Multifactor authentication must not prevent Microsoft Managed Desktop from managing your Azure AD organization (tenant) in Intune and Azure AD.
 
 
 **Not ready**
 
-You have some multi-factor authentication (MFA) policies set as "required" for conditional access policies that are assigned to all users. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa).
+You have some multifactor authentication policies set as **required** for conditional access policies that are assigned to all users. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Advisory**
 
-Make sure that any conditional access policies that require MFA exclude the **Modern Workplace -All** Azure AD group. For more information, see [Conditional access policies](#conditional-access-policies) and [Conditional Access: Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa). The **Modern Workplace -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+You have multifactor authentication required on conditional access policies that could prevent Microsoft Managed Desktop from managing the Microsoft Managed Desktop service. During enrollment, we will exclude Microsoft Managed Desktop service accounts from relevant conditional access policies and apply new conditional access policies to restrict access to these accounts. For more about these service accounts, see [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
 **Error**
 
@@ -177,7 +178,7 @@ Windows PowerShell scripts can't be assigned in a way that would target Microsof
 
 **Advisory**
 
-Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/apps/intune-management-extension).
+Make sure that Windows PowerShell scripts in your Azure AD organization don't target any Microsoft Manage Desktop devices or users. Do not assign a PowerShell script to target all users, all devices, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices or users. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](/mem/intune/apps/intune-management-extension).
 
 ### Region
 
@@ -198,12 +199,19 @@ Security baseline policies should not target any Microsoft Managed Desktop devic
 
 **Not ready**
 
-You have a security baseline profile that targets all users, all devices or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines).
+You have a security baseline profile that targets all users, all devices, or both. Change the policy to use an assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. After enrollment, you can review the Microsoft Managed Desktop security baseline policy in the **Configuration policy** area of Microsoft Endpoint Manager.
 
 **Advisory**
 
-Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](https://docs.microsoft.com/mem/intune/protect/security-baselines). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment. 
 
+### Unlicensed admins
+
+This setting must be enabled to avoid a "lack of permissions" error when we interact with your Azure AD organization. 
+
+**Not ready**
+
+**Allow access to unlicensed admins** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Windows apps
 
@@ -211,8 +219,7 @@ Review apps you want your Microsoft Managed Desktop users to have.
 
 **Advisory**
 
-You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Make sure these apps can be deployed by Intune. For more information, see 
-[Apps in Microsoft Managed Desktop](apps.md).
+You should prepare an inventory of the apps that you want your Microsoft Managed Desktop users to have. Since these apps must be deployed by Intune, evaluate reusing existing Intune apps. Consider using Company Portal (see [Install Intune Company Portal on devices](../get-started/company-portal.md) and Enrollment Status Page (ESP) to distribute apps to your users. For more information, see [Apps in Microsoft Managed Desktop](apps.md) and [First-run experience with Autopilot and the Enrollment Status Page](../get-started/esp-first-run.md).
 
 You can ask your Microsoft account representative for a query in Microsoft Endpoint Configuration Manager to identify those apps that are ready to migrate to Intune or need adjustment.
 
@@ -221,13 +228,9 @@ You can ask your Microsoft account representative for a query in Microsoft Endpo
 
 Microsoft Managed Desktop requires Windows Hello for Business to be enabled.
 
-**Not ready**
-
-Windows Hello for Business is disabled. Enable it by following the steps in [Create a Windows Hello for Business policy](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advisory**
 
-Windows Hello for Business is not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello for Business is either disabled or not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### Windows 10 update rings
@@ -236,15 +239,24 @@ Your "Windows 10 update ring" policy in Intune must not target any Microsoft Man
 
 **Not ready**
 
-You have an "update ring" policy that targets all devices, all users, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure).
+You have an "update ring" policy that targets all devices, all users, or both. Change the policy to use an Assignment that targets a specific Azure AD group that doesn't include any Microsoft Managed Desktop devices. For steps, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure).
 
 **Advisory**
 
-Make sure that any update ring policies you have exclude the **Modern Workplace -All** Azure AD group. For steps, see [Manage Windows 10 software updates in Intune](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure). The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
+Make sure that any update ring policies you have exclude the **Modern Workplace Devices -All** Azure AD group. If you have assigned Azure AD user groups to these policies, make sure that any update ring policies you have also excluded the **Modern Workplace -All** Azure AD group that you add your Microsoft Managed Desktop users to (or an equivalent group). For steps, see [Manage Windows 10 software updates in Intune](/mem/intune/protect/windows-update-for-business-configure). Both the **Modern Workplace Devices -All** and **Modern Workplace -All** Azure AD groups are groups that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment.
 
 
 ## Azure Active Directory settings
 
+You can access Azure Active Directory settings at the [Azure portal](https://portal.azure.com).
+
+### Intune enrollment
+
+Windows 10 devices in your Azure AD organization must be able to automatically enroll in Intune.
+
+**Advisory**
+
+Make sure the **MDM User scope** is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.  See [Set up enrollment for Windows devices by using Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
 ### Ad hoc subscriptions
 
@@ -252,7 +264,7 @@ Advises how to check a setting that (if set to "false") might prevent Enterprise
 
 **Advisory**
 
-Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 
 ### Enterprise State Roaming
@@ -261,7 +273,23 @@ Enterprise State Roaming should be enabled.
 
 **Advisory**
 
-Make sure that Enterprise State Roaming is enabled for **All** or for **Selected** groups. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable).
+Make sure that Enterprise State Roaming is enabled for **All** or for **Selected** groups. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
+
+### Guest invitation settings
+
+Microsoft Managed Desktop recommends adjusting guest invitation settings, since the default setting allows all users and guests in your directory to invite guests.
+
+**Advisory**
+
+**Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
+
+### Guest user access
+
+Microsoft Managed Desktop recommends adjusting guest user access, since the default setting allows all guest users in your directory to have the same access as members.
+
+**Advisory**
+
+**Guest users have limited access to properties and memberships of directory objects** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Licenses
 
@@ -272,28 +300,27 @@ A number of licenses are required to use Microsoft Managed Desktop.
 You don't have all the licenses you need to use Microsoft Managed Desktop. For more information, see [Microsoft Managed Desktop technologies](../intro/technologies.md) and [More about licenses](prerequisites.md#more-about-licenses).
 
 
-### Security account names
+### Microsoft Managed Desktop service accounts
 
-Certain security account names could conflict with ones created by Microsoft Managed Desktop.
+Certain account names could conflict with account names created by Microsoft Managed Desktop to manage the Microsoft Managed Desktop service.
 
 **Not ready**
 
-You have at least one account name that will conflict with ones created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names.
+You have at least one account name that will conflict with account names created by Microsoft Managed Desktop. Work with your Microsoft account representative to exclude these account names. We don't list the account names publicly to minimize security risk. 
 
 
 ### Security administrator roles
 
-Users with certain security roles must have those assigned in Microsoft Defender for Endpoint.
+Users with certain security roles must have those roles assigned in Microsoft Defender for Endpoint.
 
 **Advisory**
 
-If you have any of these roles assigned in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
+If you have users assigned to any of these roles in your Azure AD organization, make sure they also have these roles assigned in Microsoft Defender for Endpoint. Otherwise, administrators with these roles won't be able to access the Admin portal.
 
-- Security Reader
 - Security Operator
 - Global Reader
 
-For more information, see [Create and manage roles for role-based access control](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles).
+For more information, see [Create and manage roles for role-based access control](/windows/security/threat-protection/microsoft-defender-atp/user-roles).
 
 
 ### Security default
@@ -302,40 +329,31 @@ Security defaults in Azure Active Directory will prevent Microsoft Managed Deskt
 
 **Not ready**
 
-You have Security defaults turned on. Turn off Security defaults and set up conditional access policies. For more information, see [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common).
+You have Security defaults turned on. Turn off Security defaults and set up conditional access policies. For more information, see [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common).
 
 ### Self-service Password Reset
 
-Self-service Password Reset (SSPR) must be enabled.
-
-**Not ready**
-
-SSPR must be enabled for all users. If it isn't, the Microsoft Managed Desktop service accounts can't work. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr).
+Self-service Password Reset (SSPR) can be enabled for all Microsoft Managed Desktop users excluding Microsoft Managed Desktop service accounts. For more information, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 **Advisory**
 
-Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop devices.
-
-**Error**
-
-The Intune Administrator role doesn't have sufficient permissions for this check. You'll also need the Reports Reader Azure AD role assigned to run this check.
+Make sure that the SSPR **Selected** setting includes Microsoft Managed Desktop users but excludes Microsoft Managed Desktop service accounts. Microsoft Managed Desktop service accounts cannot work as expected when SSPR is enabled.  
 
 
 ### Standard user role
 
-Microsoft Managed Desktop users should be standard users without local administrator privileges. They'll be assigned a standard user role when they start their Microsoft Managed Desktop device.
+Other than those users who are assigned Azure AD roles of Global administrator and Device administrator, Microsoft Managed Desktop users will be standard users without local administrator privileges. All other users will be assigned a standard user role when they start their Microsoft Managed Desktop device.
 
 **Advisory**
 
-Microsoft Managed Desktop users shouldn't have local administrator privileges prior to enrolling.
+Microsoft Managed Desktop users will not have local administrator privileges on their Microsoft Managed Desktop devices after enrolling.
 
 ## Microsoft 365 Apps for enterprise
 
-### OneDrive for Business
+### OneDrive
 
-The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop.
+The **Allow syncing only on PCs joined to specific domains** setting will conflict with Microsoft Managed Desktop. You can access OneDrive settings at the OneDrive [admin center](https://admin.onedrive.com).
 
 **Advisory**
 
-You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive for Business to use a conditional access policy. See [Plan a Conditional Access deployment](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) for help.
-
+You're using the **Allow syncing only on PCs joined to specific domains** setting. This setting won't work with Microsoft Managed Desktop. Disable this setting, and instead set up OneDrive to use a conditional access policy. See [Plan a Conditional Access deployment](/azure/active-directory/conditional-access/plan-conditional-access) for help.

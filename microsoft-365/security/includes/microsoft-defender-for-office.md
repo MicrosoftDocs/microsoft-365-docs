@@ -1,12 +1,10 @@
 ---
+manager: dansimp
 ms.author: dansimp
 author: dansimp
-ms.service: microsoft-365-enterprise 
+ms.prod: m365-security
 ms.topic: include
-ms.date: 09/21/2020
-f1.keywords:
-- NOCSH
 ---
 
 > [!IMPORTANT]
-> Welcome to **Microsoft Defender for Office 365**, the new name for **Office 365 Advanced Threat Protection**. Read more about this and other updates in [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813).
+> The improved [Microsoft 365 Defender portal](https://security.microsoft.com) is now available. This new experience brings Defender for Endpoint, Defender for Office 365, Microsoft 365 Defender, and more into the Microsoft 365 security center. [Learn what's new](/microsoft-365/security/defender/overview-security-center).
