@@ -72,7 +72,7 @@ To put it another way: as a security service, we're acting on your behalf to pre
 
 You should only consider using overrides in the following scenarios:
 
-- Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. Find more information on [how to Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/security/office-365-security/configure-advanced-delivery)
+- Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. Find more information on [how to Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](/security/office-365-security/configure-advanced-delivery).
 - Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content.
 - Third-party filters: Secure by default does not apply when the domain's MX record does not point to Office 365.
 - False positives: You might want to temporarily allow certain messages that are still being analyzed by Microsoft [via Admin submissions](admin-submission.md). As with all overrides, it is recommended that they are temporary.
