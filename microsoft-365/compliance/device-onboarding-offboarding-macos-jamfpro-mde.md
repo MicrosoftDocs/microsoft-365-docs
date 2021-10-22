@@ -38,11 +38,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
 <!--- Edge browser v93 and higher installed.-->
 
-## Before you begin
-
-- Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
@@ -53,6 +48,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - system extensions
+> - schema.xml
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
@@ -94,16 +90,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
 
-> [!TIP]
-> You can download the individual configuration files from a single folder or download a single archive file that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-
-
->combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
-
-
-### Configure Preference domain using the JAMF PRO console
+### Configure existing Preference domain profile using the JAMF PRO console
 
 <!--
 > [!IMPORTANT]
@@ -125,12 +112,14 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 1. Choose **Save**.
 -->
+1. Update the schema.xml profile with the **schema.xml** file you jsut downloaded.
+
 1. Under **Preference Domain Properties** choose these settings
     - Features 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
     - EDR preferences > 
-        - Group IDs: `DLP_Enabled`
+        - Group IDs: `DLP_Enable`
 
 1. Choose the **Scope** tab.
 
