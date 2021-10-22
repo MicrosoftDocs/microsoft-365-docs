@@ -155,7 +155,7 @@ Your user list will look like this:
 ![Reports - anonymized user list.](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
 
 
-If you want to unhide user-level information when you're generating your reports, a global administrator can quickly make that change in the admin center.
+If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
@@ -180,9 +180,9 @@ It'll take a few minutes for these changes to take effect on the reports in the 
   
 ## What happens to usage data when a user account is closed?
 
-Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).
+Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
   
-However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).
+However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
   
 ## Related content
 
