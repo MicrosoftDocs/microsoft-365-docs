@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

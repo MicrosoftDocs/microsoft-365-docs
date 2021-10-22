@@ -1,5 +1,5 @@
 ---
-title: Payment information for China (PRC)
+title: Payment information for China
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -10,12 +10,12 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.custom: commerce_billing_payinfo
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---                                
 
-# Payment information for China (PRC)
+# Payment information for China
 
 [Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 

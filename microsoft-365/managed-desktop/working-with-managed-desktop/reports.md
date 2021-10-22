@@ -4,7 +4,7 @@ description:  The various reports available in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -24,7 +24,7 @@ When you select the **Reports** tab, you will see descriptions for the available
 - The [**Device status** report](device-status-report.md) (*in preview*) shows your use of the Microsoft Managed Desktop service based on device activity and usage. 
 - You can use **Device status trend** (*in preview*) to monitor trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. 
 - The [**Windows security updates** report](security-updates-report.md) (*in preview*) shows how Windows security updates are released across your Microsoft Managed Desktop devices.
-- The **Application usage report** provides information about typical app usage across your Microsoft Managed Desktop devices. For devices to provide data to this report, they must be set to the Optional diagnostic data level.
+- The [**Application usage** report](app-usage-report.md) provides information about typical app usage across your Microsoft Managed Desktop devices. For devices to provide data to this report, they must be set to the Optional diagnostic data level.
 
 ## Endpoint analytics
 Microsoft Managed Desktop is now integrated with [Endpoint analytics](/mem/analytics/overview). These reports give you insights for measuring how your organization is working and the quality of the experience delivered to your users. Endpoint analytics is in the **Reports** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/). To pivot a score to only include devices being managed by Microsoft Managed Desktop go to any report, select the **Filter** drop down, and then select **Microsoft Managed Desktop devices**.

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -28,9 +28,6 @@ As an Microsoft 365 admin, the **Reports** dashboard shows you the activity over
   
 For example, you can understand the activity of every user licensed to use SharePoint by looking at their interaction with files. It also helps you to understand the level of collaboration going on by looking at the number of files shared.
   
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports. 
- 
 ## How do I get to the to the SharePoint activity report?
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
@@ -43,6 +40,8 @@ You can view the activities in the SharePoint report by choosing the **Activity*
 Select **Choose columns** to add or remove columns from the report.  <br/> ![SharePoint activity report - choose columns.](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
+
+The **SharePoint activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
   
 |Item|Description|
 |:-----|:-----|

@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
@@ -64,6 +64,8 @@ App governance includes these templates to generate alerts for app permissions.
 |---|---|
 |Overprivileged apps|Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <p> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions.|
 |New app with high-privilege permissions|Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <p> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions.|
+ |New app with non-Graph permissions|Highlights all new apps with permissions to non-Graph APIs to identify and review APIs that might not be getting the latest security updates or may not be supported in future.
+ <p> By default, this policy will flag all apps registered within the last 7 days that have non-Graph permissions.|
 |||
 
 ### M365 certification
@@ -126,6 +128,7 @@ Here are the available conditions for a custom app policy.
 |Delegated Permission|Select one or more API permission from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
 |High privilege|Yes or No|This is an internal designation based on the same logic used by MCAS.|
 |Overprivileged app|Yes or No|Apps with more granted permissions than are being used by those apps.|
+|Non-Graph API permissions|Yes or No|Apps that have non-Graph API permissions.|
 |App data access|Greater than X GB data access per hour||
 |App data access trend|X% increase in data usage in last 7 days||
 |App API Access|Greater than X API calls per hour||

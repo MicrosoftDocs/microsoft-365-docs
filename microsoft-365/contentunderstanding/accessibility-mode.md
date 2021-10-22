@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: medium
+ms.localizationpriority:  medium
 description: Learn how to use accessibility mode when training a model in SharePoint Syntex.
 ---
 

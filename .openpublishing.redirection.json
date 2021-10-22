@@ -1,37 +1,37 @@
 {
   "redirections": [
     {
-      "source_path": "microsoft-365/admin/work-with-customers",
+      "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/devices",
+      "source_path": "microsoft-365/admin/devices/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/manage",
+      "source_path": "microsoft-365/admin/manage/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/get-help-with-domains",
+      "source_path": "microsoft-365/admin/get-help-with-domains/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/email",
+      "source_path": "microsoft-365/admin/email/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup",
+      "source_path": "microsoft-365/admin/setup/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/add-users",
+      "source_path": "microsoft-365/admin/add-users/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false
     },
@@ -436,26 +436,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-1-1-internet.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-aws.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-cloudflare.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-crazy-domains.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
@@ -486,11 +466,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-godaddy.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-google-domains.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
@@ -502,11 +477,6 @@
     }, 
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-mydomain.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-namecheap.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
@@ -526,32 +496,12 @@
       "redirect_document_id": false
     }, 
     {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-network-solutions.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-ovh.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register365.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
     {
       "source_path": "microsoft-365/admin/dns/create-dns-records-at-register-com.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-web-com.md",
-      "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
-      "redirect_document_id": false
-    }, 
-    {
-      "source_path": "microsoft-365/admin/dns/create-dns-records-at-wix.md",
       "redirect_url": "/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
       "redirect_document_id": false
     }, 
@@ -811,12 +761,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-azure-information-protection.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-azure-information-protection.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
@@ -836,12 +786,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
+      "source_path": "microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
+      "source_path": "microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
       "redirect_url": "/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": false
     },
@@ -1466,7 +1416,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
       "redirect_url": "/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
@@ -1548,11 +1498,6 @@
     {
       "source_path": "microsoft-365/business/add-users-m365b.md",
       "redirect_url": "/microsoft-365/admin/add-users/add-users",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
-      "redirect_url": "/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
       "redirect_document_id": false
     },
     {
@@ -4616,7 +4561,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup/troubleshoot-windows-365-business",
+      "source_path": "microsoft-365/admin/setup/troubleshoot-windows-365-business.md",
       "redirect_url": "/windows-365/business/troubleshoot-windows-365-business",
       "redirect_document_id": false
     },
@@ -4624,6 +4569,46 @@
       "source_path": "microsoft-365/admin/setup/windows-365-business-sizing.md",
       "redirect_url": "/windows-365/business/windows-365-business-sizing",
       "redirect_document_id": false
-    } 
+    },
+    {
+      "source_path": "microsoft-365/compliance/communication-compliance-feature-reference.md",
+      "redirect_url": "/microsoft-365/compliance/communication-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-setup.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-permissions.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-permissions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-settings.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-data-profile.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-data-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-policies.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/privacy-management-subject-rights-requests.md",
+      "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-subject-rights-requests",
+      "redirect_document_id": false
+    }                                                  
   ]
 }

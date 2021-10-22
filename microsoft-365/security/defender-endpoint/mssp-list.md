@@ -2,15 +2,13 @@
 title: Supported managed security service providers
 description: See the list of MSSPs that Microsoft Defender for Endpoint integrates with
 keywords: managed security service provider, mssp, configure, integration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

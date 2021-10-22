@@ -9,7 +9,7 @@ ms.date: 06/22/2021
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MED150
@@ -60,7 +60,7 @@ For **read or unread messages** that are identified as phishing after delivery, 
 
 - **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
 
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Quarantine message**: ZAP quarantines the message.
 
@@ -80,7 +80,7 @@ For **unread messages** that are identified as spam after delivery, the ZAP outc
 
 - **Add X-Header**, **Prepend subject line with text**, **Redirect message to email address**, **Delete message**: ZAP takes no action on the message.
 
-- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder, as long as the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Move message to Junk Email**: ZAP moves the message to the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Quarantine message**: ZAP quarantines the message. By default, end-users can view and manage spam quarantined messages where they're a recipient. But, admins can create and use _quarantine policies_ to define what users are allowed to do to messages that were quarantined as spam. For more information, see [Quarantine policies](quarantine-policies.md)
 

@@ -10,7 +10,7 @@ metadata:
   audience: ITPro
   ms.topic: troubleshooting
   
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid: 
     - MET150
   ms.assetid: 

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
@@ -50,9 +50,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - [Create an anti-spam policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) that includes the custom mailbox where ZAP for spam and ZAP for phishing are turned off (**Zero-hour auto purge** section \> **Enabled zero-hour auto purge (ZAP)** is not selected).
 
-- Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. After it's disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
-
-If you have Microsoft Defender for Office 365, you should also configure the below so that our advanced filtering does not impact the users reporting messages:
+If you have Microsoft Defender for Office 365, you should also configure the the following settings so that our advanced filtering does not impact the users reporting messages:
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 

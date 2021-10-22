@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -284,7 +284,7 @@ Specify content excluded from being scanned by file extension.
 
 ### Process excluded from the scan
 
-Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (e.g. `cat`) or full path (e.g. `/bin/cat`).
+Specify a process for which all file activity is excluded from scanning. The process can be specified either by its name (for example, `cat`) or full path (for example, `/bin/cat`).
 
 <br>
 
@@ -792,7 +792,7 @@ The following templates contain entries for all settings described in this docum
         <key>scanArchives</key>
         <true/>
         <key>maximumOnDemandScanThreads</key>
-        <integer>1</integer>
+        <integer>2</integer>
         <key>exclusions</key>
         <array>
             <dict>

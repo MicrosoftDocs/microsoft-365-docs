@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: article
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 ms.collection:
 - M365-security-compliance
@@ -108,10 +108,6 @@ Users will see enriched detonation details for known malicious attachments or UR
 - *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
-
-- *Junk Mailbox Rule*: 'Junk' is hidden Inbox rule that's enabled by default in every mailbox.
-  - When the Junk email rule is enabled on the mailbox, Exchange Online Protection (EOP) is able to move messages to Junk according to some criteria. The move can be based on spam filtering verdict action *Move message to Junk Email folder*, or on the Blocked Senders list on the mailbox. Disabling the Junk email rule prevents the delivery of messages to the Junk email folder based on the *Safe Senders* list on the mailbox.
-  - When the junk email rule is *disabled* on the mailbox, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action *Move message to Junk Email folder*, or the safe list collection on the mailbox.
 
 - *Bulk Complaint Level (BCL)*: The bulk complaint level (BCL) of the message. A higher BCL indicates a bulk mail message is more likely to generate complaints (the natural result if the email is likely to be spam).
 

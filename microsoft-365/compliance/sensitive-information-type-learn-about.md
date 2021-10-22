@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
@@ -36,7 +36,7 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Privacy management (preview)](privacy-management.md)
+- [Privacy management](/privacy/solutions/privacymanagement/privacy-management)
 
 ## Fundamental parts of a sensitive information type
 

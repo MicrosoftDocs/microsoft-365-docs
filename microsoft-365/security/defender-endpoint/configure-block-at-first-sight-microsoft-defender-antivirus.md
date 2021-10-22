@@ -2,17 +2,16 @@
 title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
 keywords: scan, block at first sight, malware, first sight, cloud, defender, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -194,7 +193,7 @@ If you are not an enterprise admin or an IT Pro, but you have questions about bl
 
 If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app to manage block at first sight.
 
-1. On your Windows 10 computer, open the Windows Security app.
+1. On your Windows 10 or Windows 11 computer, open the Windows Security app.
 
 2. Select **Virus & threat protection**.
 

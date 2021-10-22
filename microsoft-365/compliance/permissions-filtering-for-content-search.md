@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -110,9 +110,17 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 
 - **Mailbox or OneDrive filtering:** This type of filter specifies the mailboxes and OneDrive accounts the assigned users (specified by the  _Users_ parameter) can search. This type of filter is called a *content location* filter because it defines the content locations that a user can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes and OneDrive accounts that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to search only the mailboxes and OneDrive accounts that have the value "OttawaUsers" in the CustomAttribute10 property.
 
-  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of searchable properties, see [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties).
+  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property in a mailbox or OneDrive filter. The following table list four commonly used recipient properties used to create a mailbox or OneDrive filter. The table also includes an example of using the property in a filter.
 
-- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. This type of filter is called a *content filter* because it specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName: value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain. For a list of searchable message properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties). 
+  |Property name  |Example  |
+  |---------|---------|
+  |Alias    |`"Mailbox_Alias -like 'v-'"`         |
+  |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
+  |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
+  |Department |`"Mailbox_Department -eq 'Finance'"`        |
+  |||
+
+- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. This type of filter is called a *content filter* because it specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName: value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain. For a list of searchable message properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > A single search filter can't contain a mailbox filter and a mailbox content filter. To combine these in a single filter, you have to use a [filters list](#using-a-filters-list-to-combine-filter-types).  But a filter can contain a more complex query of the same type. For example, `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -165,6 +173,12 @@ Keep the following things in mind about using a filters list:
 ## Examples of creating search permissions filters
 
 Here are examples of using the **New-ComplianceSecurityFilter** cmdlet to create a search permissions filter.
+
+This example allows members of the "US Discovery Managers" role group to search only the mailboxes and OneDrive accounts in the United States.
+  
+```powershell
+New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryOrRegion  -eq 'United States'"
+```
   
 This example allows the user annb@contoso.com to perform search actions only for mailboxes and OneDrive accounts in Canada. This filter contains the three-digit numeric country code for Canada from ISO 3166-1.
 
@@ -176,12 +190,6 @@ This example allows the users donh and suzanf to search only the mailboxes and O
 
 ```powershell
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'"
-```
-
-This example allows members of the "US Discovery Managers" role group to search only the mailboxes and OneDrive accounts in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
-  
-```powershell
-New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'"
 ```
 
 This example allows members of the "Fourth Coffee eDiscovery Managers" role group to search only the mailboxes and OneDrive accounts that have the value 'FourthCoffee' for the Department mailbox property. The filter also allows the role group members to search for documents in the Fourth Coffee SharePoint site.
