@@ -121,9 +121,11 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 1. Choose **Save**.
 
 1. Under **Preference Domain Properties** choose these settings
-    - Features > Use System Extensions: `enabled` - required for network extensions on Catalina
-        - EDR preferences > Use Data Loss Prevention: `enabled`
-    - Group IDs: `enabled`
+    - Features 
+        - Use System Extensions: `enabled` - required for network extensions on Catalina
+        - Use Data Loss Prevention: `enabled`
+    - EDR preferences > 
+        - Group IDs: `DLP_Enabled`
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
@@ -161,22 +163,43 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 -->
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
-1. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+1. Copy this xml code and save it to a file named `MDATP_MDAV_MAU_settings.plist`
+
+```XML
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>ChannelName</key>
+<string>Current</string>
+<key>HowToCheck</key>
+<string>AutomaticDownload</string>
+<key>EnableCheckForUpdatesButton</key>
+<true/>
+<key>DisableInsiderCheckbox</key>
+<false/>
+<key>SendAllTelemetryEnabled</key>
+<true/>
+</dict>
+</plist>
+```
+
+2. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV MAU settings`
     - Description: `Microsoft AutoUPdate settings for MDATP for macOS`
     - Category: `none`
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-1. In **Application & Custom Settings** choose **Upload** and **Add**.
+3. In **Application & Custom Settings** choose **Upload** and **Add**.
 
-1. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
+4. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
 
-1. Choose the *DeviceComplianceOnboarding.plist* file.
+5. Choose the **MDATP_MDAV_MAU_settings.plist* file.
 
-1. Choose **Save**.
+6. Choose **Save**.
 
-1. Choose the **Scope** tab.
+7. Choose the **Scope** tab.
 
 1. Choose the target computers.
 
@@ -246,7 +269,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 ### Deploy the installation package
 
-1. Navigate to where you saved teh `wdav.pkg` file.
+1. Navigate to where you saved the `wdav.pkg` file.
 
 1. Open the JAMF Pro dashboard.
 
@@ -258,7 +281,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
     - Filname: Choose file, in this case the `wdav.pkg` file.
 
 1. Choose **Open**. Set:
-    - **Display Name**: `Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus`
+    - **Display Name**: `Microsoft Endpoint Technology`
     - **Manifest File**: not required
     - **Options tab**: leave default values
     - **Limitations tab**: leave default values
@@ -301,13 +324,11 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 1. You should see:
     - Accessiblity
     - Full Disk Access
-    - Kernel Extension Profile
     - MAU
     - MDATP Onboarding
     - MDE Preferences
     - Management profile
     - Network filter
-    - Notifications
     - System extension profile
 
 ## Offboard macOS devices using JAMF Pro
