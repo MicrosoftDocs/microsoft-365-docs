@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+title: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -17,7 +17,7 @@ search.appverid:
 description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers (preview)
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+# Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
 
 You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention.
 
@@ -42,9 +42,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 - Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
-
-
-<!--- Edge browser v93 and higher installed.-->
 
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
@@ -108,6 +105,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 ### Configure Preference domain using the JAMF PRO console
 
+<!--
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
 
@@ -126,12 +124,13 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 1. Choose **Add Schema** and **Upload** to upload the schema.json file.
 
 1. Choose **Save**.
-
+-->
 1. Under **Preference Domain Properties** choose these settings
-    - Features > Use System Extensions: `enabled` - required for network extensions on Catalina
-        - EDR preferences > Use Data Loss Prevention: `enabled`
-    - Group IDs: `enabled`
-    - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
+    - Features 
+        - Use System Extensions: `enabled` - required for network extensions on Catalina
+        - Use Data Loss Prevention: `enabled`
+    - EDR preferences > 
+        - Group IDs: `DLP_Enabled`
 
 1. Choose the **Scope** tab.
 
@@ -194,7 +193,7 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 ### Create and deploy a configuration profile for Grant full disk access
 
-1. Use the **fulldisk.mobileconfig** file.
+1. Update the existing full disk access profile with the **fulldisk.mobileconfig** file.
 
 1. Upload the **fulldisk.mobileconfig** file to JAMF. Refer to [Deploying Custom Configuration Profiles using JAMF Pro](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html).
 
