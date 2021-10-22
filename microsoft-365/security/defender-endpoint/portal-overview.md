@@ -54,24 +54,24 @@ You can navigate through the portal using the menu options available in all sect
 
 Area|Description
 :---|:---
-**(1) Navigation pane**|Use the navigation pane to move between **Dashboards**, **Incidents**, **Devices list**, **Alerts queue**, **Automated investigations**, **Advanced hunting**, **Reports**, **Partners & APIs**, **Threat & Vulnerability Management**, **Evaluation and tutorials**, **Service health**, **Configuration management**, and **Settings**. Select the horizontal lines at the top of the navigation pane to show or hide it.
-**Dashboards**|Access the active automated investigations, active alerts, automated investigations statistics, devices at risk, users at risk, devices with sensor issues, service health, detection sources, and daily devices reporting dashboards.
-**Incidents**|View alerts that have been aggregated as incidents.
-**Devices list**|Displays the list of devices that are onboarded to Defender for Endpoint, some information about them, and their exposure and risk levels.
-**Alerts queue**|View alerts generated from devices in your organizations.
-**Automated investigations**|Displays automated investigations that have been conducted in the network, triggering alert, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
-**Advanced hunting**|Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
-**Reports**|View graphs detailing threat protection, device health and compliance, web protection, and vulnerability.
-**Partners & APIs**|View supported partner connections, which enhance the detection, investigation, and threat intelligence capabilities of the platform. You can also view connected applications, the API explorer, API usage overview, and data export settings.
-**Threat & Vulnerability management**|View your Microsoft Secure Score for Devices, exposure score, exposed devices, vulnerable software, and take action on top security recommendations.
-**Evaluation and tutorials**|Manage test devices, attack simulations, and reports. Learn and experience the Defender for Endpoint capabilities through a guided walk-through in a trial environment.
-**Service health**|Provides information on the current status of the Defender for Endpoint service. You'll be able to verify that the service health is healthy or if there are current issues.
-**Configuration management**|Displays on-boarded devices, your organizations' security baseline, predictive analysis, web protection coverage, and allows you to perform attack surface management on your devices.
-**Settings**|Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as permissions, APIs, rules, device management, IT service management, and network assessments.
-**(2) Search, Community center, Localization,  Help and support, Feedback**|**Search** - search by device, file, user, URL, IP, vulnerability, software, and recommendation. Search supports using SHA1 and SHA256 cryptographic hash formats.
-<p> **Community center** - Access the Community center to learn, collaborate, and share experiences about the product. <p> **Localization** - Set time zones. <p> **Help and support** - Access the Defender for Endpoint guide, Microsoft and Microsoft Premier support, license information, simulations & tutorials, Defender for Endpoint evaluation lab, consult a threat expert. <p> **Feedback** - Provide comments about what you like or what we can do better.
+**(1) Navigation pane** | Use the navigation pane to move between **Dashboards**, **Incidents**, **Devices list**, **Alerts queue**, **Automated investigations**, **Advanced hunting**, **Reports**, **Partners & APIs**, **Threat & Vulnerability Management**, **Evaluation and tutorials**, **Service health**, **Configuration management**, and **Settings**. Select the horizontal lines at the top of the navigation pane to show or hide it.
+**Dashboards** | Access the active automated investigations, active alerts, automated investigations statistics, devices at risk, users at risk, devices with sensor issues, service health, detection sources, and daily devices reporting dashboards.
+**Incidents** | View alerts that have been aggregated as incidents.
+**Devices list** | Displays the list of devices that are onboarded to Defender for Endpoint, some information about them, and their exposure and risk levels.
+**Alerts queue** | View alerts generated from devices in your organizations.
+**Automated investigations** | Displays automated investigations that have been conducted in the network, triggering alert, the status of each investigation and other details such as when the investigation started and the duration of the investigation.
+**Advanced hunting** | Advanced hunting allows you to proactively hunt and investigate across your organization using a powerful search and query tool.
+**Reports** | View graphs detailing threat protection, device health and compliance, web protection, and vulnerability.
+**Partners & APIs** | View supported partner connections, which enhance the detection, investigation, and threat intelligence capabilities of the platform. You can also view connected applications, the API explorer, API usage overview, and data export settings.
+**Threat & Vulnerability management** | View your Microsoft Secure Score for Devices, exposure score, exposed devices, vulnerable software, and take action on top security recommendations.
+**Evaluation and tutorials** | Manage test devices, attack simulations, and reports. Learn and experience the Defender for Endpoint capabilities through a guided walk-through in a trial environment.
+**Service health** | Provides information on the current status of the Defender for Endpoint service. You'll be able to verify that the service health is healthy or if there are current issues.
+**Configuration management** | Displays on-boarded devices, your organizations' security baseline, predictive analysis, web protection coverage, and allows you to perform attack surface management on your devices.
+**Settings** | Shows the settings you selected during onboarding and lets you update your industry preferences and retention policy period. You can also set other configuration settings such as permissions, APIs, rules, device management, IT service management, and network assessments.
+**(2) Search, Community center, Localization, Help and support, Feedback** |  Search by device, file, user, URL, IP, vulnerability, software, and recommendation. Search supports the use of SHA1 and SHA256 cryptographic hash formats. <p> **Community center** - Access the Community center to learn, collaborate, and share experiences about the product. <p> **Localization** - Set time zones. <p> **Help and support** - Access the Defender for Endpoint guide, Microsoft and Microsoft Premier support, license information, simulations & tutorials, Defender for Endpoint evaluation lab, consult a threat expert. <p> **Feedback** - Provide comments about what you like or what we can do better.
 
 > [!NOTE]
+>
 > For devices with high resolution DPI scaling issues, please see [Windows scaling issues for high-DPI devices](https://support.microsoft.com/help/3025083/windows-scaling-issues-for-high-dpi-devices) for possible solutions.
 
 ## Microsoft Defender for Endpoint icons
