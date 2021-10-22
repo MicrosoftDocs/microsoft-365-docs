@@ -1,6 +1,6 @@
 ---
 title: Get CVE-KB map API
-description: Learn how to use the Get CVE-KB map API to retrieve a map of CVE's to KB's and CVE details in Microsoft Defender for Endpoint.
+description: Learn how to use the Get CVE-KB map API to retrieve a map of CVEs to KB's and CVE details in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, cve, kb
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -30,11 +30,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Retrieves a map of CVE's to KB's and CVE details.
+Retrieves a map of CVEs to KB's and CVE details.
 
 ## Permissions
 
@@ -65,7 +65,7 @@ If successful and map exists - 200 OK.
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {

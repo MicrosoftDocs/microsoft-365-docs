@@ -1,6 +1,6 @@
 ---
 title: Export software vulnerabilities assessment per device
-description: The API response is per device and contains vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
+description: The API response is per device and contains vulnerable software installed on your exposed devices and any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -31,22 +31,22 @@ ms.custom: api
 
 Returns all known software vulnerabilities and their details for all devices, on a per-device basis.
 
-There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
+Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
-1. [Export software vulnerabilities assessment **JSON response**](#1-export-software-vulnerabilities-assessment-json-response)  The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+1. [Export software vulnerabilities assessment **JSON response**](#1-export-software-vulnerabilities-assessment-json-response)  The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-2. [Export software vulnerabilities assessment **via files**](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+2. [Export software vulnerabilities assessment **via files**](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
    - Call the API to get a list of download URLs with all your organization data.
    - Download all the files using the download URLs and process the data as you like.
 
 3. [Delta export software vulnerabilities assessment **JSON response**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp.
 The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
 
-   Unlike the full "software vulnerabilities assessment (JSON response)" - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
+   The full "software vulnerabilities assessment (JSON response)" is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device. However, the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
 
-   Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
+   Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it isn't considered a _full export_.
 
-Data that is collected (using either _Json response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _Json response_ or _via files_) is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
 > [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
@@ -80,7 +80,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 ### 1.4 Parameters
 
 - pageSize (default = 50,000): Number of results in response.
-- $top: Number of results to return (doesn't return @odata.nextLink and therefore doesn't pull all the data).
+- $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
 ### 1.5 Properties
 
@@ -105,8 +105,8 @@ ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExp
 FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
 Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
 LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
-OSPlatform|string|Platform of the operating system running on the device. This property indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
+OSPlatform|string|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
+RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
 RecommendedSecurityUpdate (optional)|string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
 RecommendedSecurityUpdateId (optional)|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
@@ -391,7 +391,7 @@ FirstSeenTimestamp|string|First time the CVE of this product was seen on the dev
 Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!  
 LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10  
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
+RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
 RecommendedSecurityUpdate |string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
 RecommendedSecurityUpdateId |string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
@@ -400,12 +400,12 @@ SoftwareName|string|Name of the software product.|chrome  
 SoftwareVendor|string|Name of the software vendor.|google  
 SoftwareVersion|string|Version number of the software product.|81.0.4044.138  
 Status|String|**New** (for a new vulnerability introduced on a device)  (1) **Fixed** (if this vulnerability doesn't exist anymore on the device, which means it was remediated). (2) **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|string|Severity level that is assigned to the security vulnerability. It is based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |
 
 #### Clarifications
 
-- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you will receive 2 separate events:
+- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you'll receive 2 separate events:
    1. Fixed: CVE-A on version 1.0 was fixed.
    1. New: CVE-A on version 2.0 was added.
 

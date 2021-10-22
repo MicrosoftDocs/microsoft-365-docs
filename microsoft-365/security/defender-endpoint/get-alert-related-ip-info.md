@@ -1,5 +1,5 @@
 ---
-title: Get alert related IPs information
+title: Get alert-related IPs' information
 description: Retrieve all IPs related to a specific alert using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get alert information, alert information, related ip
 search.product: eADQiWindows 10XVcnh
@@ -18,7 +18,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Get alert related IPs information API
+# Get alert-related IPs' information API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,9 +30,9 @@ ms.custom: api
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## API description
 
@@ -55,8 +55,8 @@ Delegated (work or school account)|Ip.Read.All|'Read IP address profiles'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device associated with the alert, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information see [Create and manage roles](user-roles.md))
+> - The user needs to have access to the device associated with the alert, based on device group settings (For more information see [Create and manage device groups](machine-groups.md))
 
 ## HTTP request
 
@@ -82,7 +82,7 @@ If successful and alert and an IP exist - 200 OK. If alert not found - 404 Not F
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_2136280442/ips
@@ -90,7 +90,7 @@ GET https://api.securitycenter.microsoft.com/alerts/636688558380765161_213628044
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {

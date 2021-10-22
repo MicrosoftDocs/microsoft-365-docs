@@ -44,15 +44,15 @@ You can use the export assessment APIs to retrieve (export) different types of i
 
 The APIs that correspond to the export information types are described in sections 1, 2, and 3.
 
-For each method, there are different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
+Each method has different API calls to get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
 - **JSON response**  The API pulls all data in your organization as JSON responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-- **via files** This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+- **via files** This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
   - Call the API to get a list of download URLs with all your organization data.
   - Download all the files using the download URLs and process the data as you like.
 
-Data that is collected (using either _JSON response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected using either _JSON response_ or _via files_ is the current snapshot of the current state. It does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
 
 ## 1. Export secure configurations assessment
 
@@ -63,7 +63,7 @@ Returns all of the configurations and their status, on a per-device basis.
 Method|Data type|Description
 :---|:---|:---
 Export secure configuration assessment **(JSON response)**|Secure configuration by device collection. See: [1.2 Properties (JSON response)](#12-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
-Export secure configuration assessment **(via files)**|Secure configuration by device collection. See: [1.3 Properties (via files)](#13-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
+Export secure configuration assessment **(via files)**|Secure configuration by device collection. See: [1.3 Properties (via files)](#13-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, ConfigurationId. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
 
 ### 1.2 Properties (JSON response)
 
@@ -79,9 +79,9 @@ deviceName|string|Fully qualified domain name (FQDN) of the device.
 isApplicable|bool|Indicates whether the configuration or policy is applicable.
 isCompliant|bool|Indicates whether the configuration or policy is properly configured.
 isExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied.
-osPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
+osPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
 osVersion|string|Specific version of the operating system running on the device.
-rbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
 recommendationReference|string|A reference to the recommendation ID related to this software.
 timestamp|string|Last time the configuration was seen on the device.
@@ -102,7 +102,8 @@ Returns all of the installed software and their details on each device.
 Method|Data type|Description
 :---|:---|:---
 Export software inventory assessment **(JSON response)**|Software inventory by device collection. See: [2.2 Properties (JSON response)](#22-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
-Export software inventory assessment **(via files)**|Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
+Export software inventory assessment **(via files)**|Software inventory by device files. See: [2.3 Properties (via files)](#23-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion. This API solution enables pulling larger amounts of data faster and more reliably. 
+So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with your organization data</li><li>Download the files using the download URLs and process the data as you like.</li></ol>
 
 ### 2.2 Properties (JSON response)
 
@@ -115,7 +116,7 @@ EndOfSupportDate|string|The date in which support for this software has or will 
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device.
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
 SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.
@@ -139,8 +140,8 @@ Returns all the known vulnerabilities on a device and their details, for all dev
 Method|Data type|Description
 :---|:---|:---
 Export software vulnerabilities assessment **(JSON response)**|Investigation collection See: [3.2 Properties (JSON response)](#32-properties-json-response)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls all data in your organization as JSON responses. This method is best for small organizations with less than 100-K devices. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
-Export software vulnerabilities assessment **(via files)**|Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. This API solution enables pulling larger amounts of data faster and more reliably. Therefore, it is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
-**Delta export** software vulnerabilities assessment **(JSON response)**|Investigation collection See: [3.4 Properties Delta export (JSON response)](#34-properties-delta-export-json-response)|Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp. <p> The API pulls data in your organization as JSON responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response)  - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device  - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?" <p> Because the Delta export API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
+Export software vulnerabilities assessment **(via files)**|Investigation entity See: [3.3 Properties (via files)](#33-properties-via-files)|Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. This API solution enables pulling larger amounts of data faster and more reliably. So, it's recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows: <ol><li>Call the API to get a list of download URLs with all your organization data.</li><li>Download all the files using the download URLs and process the data as you like.</li></ol>
+**Delta export** software vulnerabilities assessment **(JSON response)**|Investigation collection See: [3.4 Properties Delta export (JSON response)](#34-properties-delta-export-json-response)|Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp. <p> The API pulls data in your organization as JSON responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. The full software vulnerabilities assessment (JSON response) is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device. However, the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?" <p> Because the Delta export API call for software vulnerabilities returns data for only a targeted date range, it isn't considered a _full export_.
 
 ### 3.2 Properties (JSON response)
 
@@ -156,7 +157,7 @@ FirstSeenTimestamp|string|First time the CVE of this product was seen on the dev
 Id|string|Unique identifier for the record.
 LastSeenTimestamp|string|Last time the CVE was seen on the device.
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
 RecommendationReference|string|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate|string|Name or description of the security update provided by the software vendor to address the vulnerability.
@@ -189,7 +190,7 @@ FirstSeenTimestamp|string|First time the CVE of this product was seen on the dev
 Id|string|Unique identifier for the record.  
 LastSeenTimestamp|string|Last time the CVE was seen on the device.
 OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 RecommendationReference|string|A reference to the recommendation ID related to this software.
 RecommendedSecurityUpdate |string|Name or description of the security update provided by the software vendor to address the vulnerability.
 RecommendedSecurityUpdateId |string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles

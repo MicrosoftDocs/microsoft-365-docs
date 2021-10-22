@@ -1,6 +1,6 @@
 ---
-title: Get domain related machines API
-description: Learn how to use the Get domain related machines API to get machines that communicated to or from a domain in Microsoft Defender for Endpoint.
+title: Get domain-related machines API
+description: Learn how to use the Get domain-related machines API to get machines that communicated to or from a domain in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, related, devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,7 +18,7 @@ MS.technology: mde
 ms.custom: api
 ---
 
-# Get domain related machines API
+# Get domain-related machines API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,9 +29,9 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## API description
 
@@ -56,8 +56,8 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
-> - Response will include only devices that the user can access, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - Response will include only devices that the user can access, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
 
 ## HTTP request
 
@@ -77,13 +77,13 @@ Empty
 
 ## Response
 
-If successful and domain exists - 200 OK with list of [machine](machine.md) entities. If domain do not exist - 200 OK with an empty set.
+If successful and domain exists - 200 OK with list of [machine](machine.md) entities. If domain doesn't exist - 200 OK with an empty set.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/api.securitycenter.microsoft.com/machines
