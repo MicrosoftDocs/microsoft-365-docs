@@ -41,7 +41,7 @@ What happens when another non-Microsoft antivirus/antimalware solution is used? 
 This article describes what happens with Microsoft Defender Antivirus and a non-Microsoft antivirus/antimalware solution, with or without Defender for Endpoint.
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus is only available on devices running Windows 10, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, and Windows Server 2012 R2.
+> Microsoft Defender Antivirus is only available on devices running Windows 10 and 11, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, and Windows Server 2012 R2.
 >
 > In Windows 8.1, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
 >
