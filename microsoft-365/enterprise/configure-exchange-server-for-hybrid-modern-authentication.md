@@ -139,7 +139,7 @@ Return to the on-premises Exchange Management Shell for this last command. Now y
 Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 ```
 
-Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
+Your output should show an AuthServer of the Name EvoSts with a GUID and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
 
 > [!NOTE]
 > In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each tenant in hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
@@ -148,11 +148,16 @@ Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises:
+Run the following command in the Exchange Management Shell, on-premises, replacing <GUID> in the command line with the string in your environment:
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+**Note** In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the command line above to reflect this by removing the GUID portion of the command:
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
-Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
