@@ -4,7 +4,9 @@
     - name: Get started with Viva Learning (Preview)
       items:    
         - name: Overview of Viva Learning (Preview)
-          href: overview-viva-learning.md 
+          href: overview-viva-learning.md
+        - name: Understand terms and conditions
+          href: terms-and-conditions.md
            
 
     - name: Setup and administration
