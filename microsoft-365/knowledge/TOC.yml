@@ -29,10 +29,7 @@
           href: topic-experiences-user-permissions.md
         - name: Change the topic center name
           href: topic-experiences-administration.md
-        - name: Use taxonomy terms to create topics 
-          href: sharepoint-taxonomy.md     
-    
-    
+       
     - name: Work with topics
       items:
         - name: Get started with Viva Topics
@@ -49,6 +46,8 @@
           href: topic-experiences-security-trimming.md 
         - name: Search for topics 
           href: search.md             
+        - name: Use taxonomy terms to create topics 
+          href: sharepoint-taxonomy.md  
         - name: Manage topics at scale 
           href: scale-topics.md             
 
