@@ -25,9 +25,9 @@ ms.custom: seo-marvel-apr2020
 
 Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.
 
-## FYI
+## Definitions
 
-Before we begin, I call:
+Before we begin, you should be familiar with some definitions:
 
 - Hybrid Modern Authentication \> HMA
 
@@ -57,7 +57,6 @@ Requirements about linked mailboxes to be inserted.
 > [!NOTE]
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
 
-
 ## Make sure you meet all the prerequisites
 
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
@@ -77,6 +76,7 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
+Get-OutlookAnywhere | FL server,*hostname*
 ```
 
 Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the AAD of all the tenants in hybrid with EXCH.
@@ -144,7 +144,8 @@ Your output should show an AuthServer of the Name EvoSts with a GUID and the 'En
 > [!NOTE]
 > In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each tenant in hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
 
- **Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
+> [!IMPORTANT]
+> If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
 
 ## Enable HMA
 
@@ -179,10 +180,12 @@ You should also hold down the CTRL key at the same time you right-click the icon
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
+> [!NOTE]
+> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, please make sure you have the following IP ranges on your allowlist so that the [Autodetect service](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) can communicate with your Exchange servers:
+If you are an on-premises customer using Exchange server on TCP 443, please allow network traffic from the following IP ranges:
 
 ```text
 52.125.128.0/20
