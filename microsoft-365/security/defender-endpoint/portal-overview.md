@@ -110,7 +110,7 @@ Icon|Description
 ![Process tree icon.](images/atp-process-tree.png)|Process tree
 ![Memory allocation icon.](images/atp-memory-allocation-icon.png)|Memory allocation
 ![Process injection icon.](images/atp-process-injection.png)|Process injection
-![Powershell command run icon.](images/atp-powershell-command-run-icon.png)|Powershell command run
+![PowerShell command run icon.](images/atp-powershell-command-run-icon.png)|PowerShell command run
 ![Community center icon.](images/atp-community-center.png)|Community center
 ![Notifications icon.](images/atp-notifications.png)|Notifications
 ![No threats found.](images/no-threats-found.png)|Automated investigation - no threats found
