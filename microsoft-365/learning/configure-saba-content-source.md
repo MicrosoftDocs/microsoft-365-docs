@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Saba as a learning content source for Microsoft Viva Learning.
+ROBOTS: NOINDEX
 ---
 
 # Configure Saba as a content source for Microsoft Viva Learning
