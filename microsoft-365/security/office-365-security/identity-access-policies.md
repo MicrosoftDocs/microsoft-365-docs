@@ -382,9 +382,9 @@ For **System security**, see this table.
 ||Antivirus|Require|Select|
 ||Antispyware|Require|Select <p> This setting requires an Anti-Spyware solution registered with Windows Security Center.|
 |Defender|Microsoft Defender Antimalware|Require|Select|
-||Microsoft Defender Antimalware minimum version||Type <p> Only supported for Windows 10 desktop. Microsoft recommends versions no more than five behind from the most recent version.|
+||Microsoft Defender Antimalware minimum version||Type <p> Only supported for Windows 10 and later desktop. Microsoft recommends versions no more than five behind from the most recent version.|
 ||Microsoft Defender Antimalware signature up to date|Require|Select|
-||Real-time protection|Require|Select <p> Only supported for Windows 10 desktop|
+||Real-time protection|Require|Select <p> Only supported for Windows 10 and later desktop|
 |
 
 #### Microsoft Defender for Endpoint
