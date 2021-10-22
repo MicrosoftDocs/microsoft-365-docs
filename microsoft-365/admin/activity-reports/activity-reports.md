@@ -86,35 +86,34 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 
 Depending on your subscription, here are the available reports in all environments.
 
-Here is a simple footnote[^1]. With some additional text after it.
-
-[^1]: My reference.
-
 |**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Gallatin**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|[Microsoft browser usage](browser-usage-report.md)|Yes|No|No|No|No|
+|[Microsoft browser usage](browser-usage-report.md)|Yes|No[^1]|No[^1]|No[^1]|No[^1]|
 |[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
 |[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No|No|No|
+|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No[^1]|No[^1]|No[^1]|
 |[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
 |[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
-|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A|
-|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A|
-|[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
-|[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
-|[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A|N/A|N/A|
-|[Forms activity](forms-activity-ww.md)|Yes|Yes|No|No|No|
-|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A|N/A|N/A|
-|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No|No|Yes|
-|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No|No|Yes|
-|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No|No|Yes|
-|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No|No|Yes|
+|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
+|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
+|[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Forms activity](forms-activity-ww.md)|Yes|Yes|No[^1]|No[^1]|No[^1]|
+|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+
+[^1]: The report is in plan to be released in the future. The Microsoft 365 Roadmap will be updated before the release.
+[^2]: The service is not available in the environment so no plan to release the report.
 
 ## How to view licensing information
 
