@@ -38,6 +38,6 @@ You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for
 
 3. Fill in the configuration details you got from your Skillsoft account team.
 
-    ![Image of Organization ID and Service Account Key entered.](../media/learning/skillsoft-1.png)
+    <!--![Image of Organization ID and Service Account Key.](../media/learning/skillsoft-1.png)-->
 
 4. Select **Save** to save the configuration details and complete the setup process.
