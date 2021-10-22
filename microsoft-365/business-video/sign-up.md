@@ -2,28 +2,31 @@
 title: "Sign up for Microsoft 365 Business Premium subscription"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to sign up for Microsoft 365 Business Premium."
+description: "Learn how to sign up for Microsoft 365 Business Premium (previously called Microsoft 365 Business)."
 ---
 
 # Sign up for Microsoft 365 Business Premium subscription
+
+## Watch: Sign up for Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 
@@ -41,4 +44,4 @@ Follow these steps to sign up for Microsoft 365 Business Premium (previously cal
 8. Enter the number of users, choose a billing plan, and then select  **Next**.
 9.  Enter your company&#39;s address, and then  **Next**.
 10. Enter your credit card information, and then  **Place order**. After a few moments, your account will be created.
-11. At this point you can select  **Continue to set up account** , or you can sign in to the Microsoft 365 admin center and complete setup later.
+11. At this point you can select  **Continue to set up account** , or you can sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and complete setup later.

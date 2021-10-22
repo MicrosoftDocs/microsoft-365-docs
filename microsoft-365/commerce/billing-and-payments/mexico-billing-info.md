@@ -5,21 +5,21 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-search.appverid:
-- MET150
+search.appverid: MET150
 description: "Learn about information specifically for Microsoft 365 for business in Mexico." 
 ms.custom: 
 - AdminSurgePortfolio
-- Commerce
+- commerce_billing
 monikerRange: 'o365-worldwide'
+ms.date: 11/20/2020
 ---
 
 # Billing information for Microsoft 365 for business in Mexico

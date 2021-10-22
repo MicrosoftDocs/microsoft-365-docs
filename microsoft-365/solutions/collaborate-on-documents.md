@@ -14,8 +14,9 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
+recommendations: false
 description: "In this article, you'll learn how to collaborate with guests on a document in SharePoint and OneDrive."
 ---
 
@@ -31,11 +32,11 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
@@ -60,7 +61,7 @@ For SharePoint and OneDrive, if you want to allow unauthenticated file and folde
 
 For SharePoint, choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization-level sharing settings
@@ -82,7 +83,7 @@ Choose a link from any of the following types which is then selected by default 
 - **Only people in your organization** - Choose this option if you expect most file and folder sharing to be with people inside your organization.
 - **Specific people** - Consider this option if you expect to do a lot of file and folder sharing with guests. This type of link works with guests and requires them to authenticate.
  
-![Screenshot of SharePoint organization-level files and folders sharing settings](../media/sharepoint-organization-files-folders-sharing-settings.png)
+![Screenshot of SharePoint organization-level files and folders sharing settings.](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
 To set the SharePoint and OneDrive organization-level default link settings
@@ -112,7 +113,7 @@ To set permissions for links that allow sharing with anyone
 
 If you're sharing files and folders that are in a SharePoint site, you also need to check the site-level sharing settings for that site.
 
-![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 
@@ -134,4 +135,4 @@ Guest-sharing settings are now configured; so users can now share files and fold
 
 [Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)

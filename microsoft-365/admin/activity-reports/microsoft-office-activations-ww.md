@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -27,9 +27,6 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
   
 The Office Activation report gives you a view of which users have activated their Office subscription on at least one device. It provides a breakdown of the Microsoft 365 Apps for enterprise, Project, and Visio Pro for Office 365 subscription activations, as well as the breakdown of activations across desktop and devices. This report could be useful in helping you identify users that might need additional help and support to activate their Office subscription.
   
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
-  
 ## How to get to the Office activations report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
@@ -39,7 +36,7 @@ The Office Activation report gives you a view of which users have activated thei
   
 You can view the activations in the Office 365 report by choosing the **Activations** tab.<br/>![Microsoft 365 reports - Microsoft Office 365 activation.](../../media/e1df82a2-3336-4b38-b66c-b286c44b82ee.png)
 
-Select **Choose columns** to add or remove columns from the report.  <br/> ![Office 365 activations report - choose columns](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
+Select **Choose columns** to add or remove columns from the report.  <br/> ![Office 365 activations report - choose columns.](../../media/d11a0efa-a067-4440-a4f3-71b618a90301.png)
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
 

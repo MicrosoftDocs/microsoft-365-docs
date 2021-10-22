@@ -1,5 +1,5 @@
 ---
-title: "Manage topic permissions in Microsoft 365"
+title: Manage topic permissions in Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,12 +8,11 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Learn how to administer topic permissions in Microsoft 365."
+ms.localizationpriority:  medium
+description: Learn how to administer topic permissions in Microsoft Viva Topics.
 ---
 
-# Manage topic permissions in Microsoft 365
+# Manage topic permissions in Microsoft Viva Topics
 
 You can manage topic permissions settings in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator to perform these tasks.
 
@@ -25,13 +24,13 @@ With topic permissions settings you can choose:
 ## To access topics management settings:
 
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
-2. On the **Services** tab, click **Knowledge network**.
+2. On the **Services** tab, click **Topic experiences**.
 
-    ![Connect people to knowledge](../media/admin-org-knowledge-options-completed.png) 
+    ![Connect people to knowledge.](../media/admin-org-knowledge-options-completed.png) 
 
 3. Select the **Topic permissions** tab. See the following sections for information about each setting.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-permissions.png) 
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-permissions.png) 
 
 ## Change who has permissions to update topic details
 
@@ -43,7 +42,7 @@ To update who has permissions to create and edit topics:
     - **Only selected people or security groups**
     - **No one**
 
-    ![Create and edit topics](../media/k-manage-who-can-create-and-edit.png)  
+    ![Create and edit topics.](../media/k-manage-who-can-create-and-edit.png)  
 
 3. Select **Save**.
 
@@ -54,14 +53,14 @@ To update who has permissions to manage topics:
     - **Everyone in your organization**
     - **Selected people or security groups**
 
-    ![Manage topics](../media/k-manage-who-can-manage-topics.png)  
+    ![Manage topics.](../media/k-manage-who-can-manage-topics.png)  
 
 3. Select **Save**.
 
 ## See also
 
-[Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
 
-[Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
+[Manage topic visibility in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
 
-[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
+[Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)

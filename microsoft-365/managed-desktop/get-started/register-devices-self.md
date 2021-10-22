@@ -1,20 +1,26 @@
 ---
 title: Register new devices yourself
 description: Register devices yourself so they can be managed by Microsoft Managed Desktop
-ms.prod: w10
+ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
+audience: Admin
 ---
 
 # Register new devices yourself
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
+Microsoft Managed Desktop can work with brand-new devices or you can reuse devices you might already have (which will require that you reimage them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 > [!NOTE]
-> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
+> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
+
+
 
 ## Prepare to register brand-new devices
 
@@ -37,13 +43,12 @@ Microsoft Managed Desktop identifies each device uniquely by referencing its har
 
 #### PowerShell script method
 
-You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](https://docs.microsoft.com/mem/autopilot/add-devices#device-identification).
+You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) PowerShell script on the PowerShell Gallery website. For more information about device identification and hardware hash, see [Adding devices to Windows Autopilot](/mem/autopilot/add-devices#device-identification).
 
-1.	Open a PowerShell prompt with administrative rights.
-2.	Run `Install-Script -Name Get-WindowsAutoPilotInfo`
-3.	Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
-4.  Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
-
+1. Open a PowerShell prompt with administrative rights.
+2. Run `Install-Script -Name Get-WindowsAutoPilotInfo`
+3. Run `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4. Run `powershell -ExecutionPolicy restricted` to prevent subsequent unrestricted scripts from running.
 
 #### Flash drive method
 
@@ -57,32 +62,34 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 8. Run `.\Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 
->[!IMPORTANT]
->Do not power on the device you are registering again until you've completed registration for it. 
-
+> [!IMPORTANT]
+> Do not power on the device you are registering again until you've completed registration for it. 
 
 ### Merge hash data
 
-You'll need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make this easy:
+You'll need to have the data in the CSV files combined into a single file to complete registration. Here's a sample PowerShell script to make it easy:
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
+> [!NOTE]
+> Extra columns are not supported. Quotes are not supported. Only ANSI-format text files can be used (not Unicode). Headers are case-sensitive. Editing the file in Excel and saving it as a CSV file will not generate a usable file due to these requirements. Be sure to preserve any leading zeroes in the device serial numbers.
 
-#### Register devices by using the Admin Portal
+### Register devices by using the Admin Portal
 
-In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices** which opens a fly-in to register new devices.
+In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), select **Devices** in the left navigation pane. Look for the Microsoft Managed Desktop section of the menu and select **Devices**. In the Microsoft Managed Desktop Devices workspace, Select **+ Register devices**, which opens a fly-in to register new devices.
 
-<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
-
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age.](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
-
 
 Follow these steps:
 
 1. In **File upload**, provide a path to the CSV file you created previously.
-3. Select **Register devices**. The system will add the devices to your list of devices on the **Devices blade**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
+2. Select a [device profile](../service-description/profiles.md) in the drop-down menu.
+3. Select **Register devices**. The system will add the devices to your list of devices on **Devices**, marked as **Registration Pending**. Registration typically takes less than 10 minutes, and when successful the device will show as **Ready for user** meaning it's ready and waiting for a user to start using.
 
+> [!NOTE]
+> If you manually change the Azure Active Directory (AAD) group membership of a device, it will be automatically reassigned to the group for its device profile and removed from any conflicting groups.
 
 You can monitor the progress of device registration on the main page. Possible states reported there include:
 
@@ -90,8 +97,8 @@ You can monitor the progress of device registration on the main page. Possible s
 |---------------|-------------|
 | Registration Pending | Registration is not done yet. Check back later. |
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
-| Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first time set-up, so there’s no need for you to do any further preparations. |
-| Active | The device has been delivered to the user and they have registered with your tenant. This also indicates that they are regularly using the device. |
+| Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first-time set-up, so there’s no need for you to do any further preparations. |
+| Active | The device has been delivered to the user and they have registered with your tenant. This state also indicates that they are regularly using the device. |
 | Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
 
 #### Troubleshooting device registration
@@ -102,7 +109,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Hardware hash not valid | The hardware hash you provided for this device was not formatted correctly. Double-check the hardware hash and then resubmit. |
 | Device already registered | This device is already registered to your organization. No further action required. |
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
-| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
+| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: \<requestId\> |
 
 ### Check the image
 
@@ -110,14 +117,14 @@ If your device has come from a Microsoft Managed Desktop partner supplier, the i
 
 You’re also welcome to apply the image on your own if you prefer. To get started, contact the Microsoft representative you’re working with and they will provide you the location and steps for applying the image.
 
+### Autopilot group tag
+
+When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md#register-devices-by-using-partner-center).
+The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
+
 ### Deliver the device
 
 > [!IMPORTANT]
 > Before you hand off the device to your user, make sure you have obtained and applied the [appropriate licenses](../get-ready/prerequisites.md) for that user.
 
 If all the licenses are applied, you can [get your users ready to use devices](get-started-devices.md), and then your user can start up the device and proceed through the Windows setup experience.
-
-
-
-
-

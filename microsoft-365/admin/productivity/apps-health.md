@@ -2,13 +2,13 @@
 title: "Microsoft Productivity Score - Microsoft 365 apps health"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Microsoft 365-subscription-management 
 - Adm_O365

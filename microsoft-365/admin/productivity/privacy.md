@@ -2,18 +2,18 @@
 title: "Microsoft Productivity Score - Privacy"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
@@ -70,9 +70,9 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 You can also opt out of the people experiences area of Productivity Score. If you opt out, no one from your organization will be able to view these metrics, and your organization will be removed from any calculations that involve communication, meetings, teamwork, content collaboration, and mobility. You have to be a Global admin to opt your organization out of the people experiences reports.
 
-To opt put:
+To opt out:
 
-1. In the admin center, go to the  **Settings**  >  **Org Settings**, and under  **Services**  tab, select  **Reports**.
+1. In the admin center, go to **Settings**  >  **Org Settings** > **Productivity Score**.
 2. Un-check the box that says  **Allow Microsoft 365 usage data to be used for people experiences insights**. To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, select **Learn more**.
 3. Select  **Save**.
 

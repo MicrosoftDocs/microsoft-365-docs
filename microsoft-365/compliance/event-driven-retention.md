@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -24,7 +24,7 @@ description: Typically part of a records management solution, you can configure 
 
 # Start retention when an event occurs
 
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+>*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you retain content, the retention period is often based on the age of the content. For example, you might retain documents for seven years after they're created and then delete them. But when you configure [retention labels](retention.md#retention-labels), you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   
@@ -51,9 +51,9 @@ A retention label based on an event has the same capabilities as any retention l
 
 To successfully use event-based retention, it's important to understand the relationship between event types, retention labels, events, and asset IDs as illustrated in the diagrams and the explanation that follows: 
   
-![Diagram 1 of 2: Event type, labels, events, and asset IDs](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
+![Diagram 1 of 2: Event type, labels, events, and asset IDs.](../media/a5141a6b-61ca-4a60-9ab0-24e6bb45bbdb.png)
   
-![Diagram 2 of 2: Event type, labels, events, and asset IDs](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
+![Diagram 2 of 2: Event type, labels, events, and asset IDs.](../media/ce89a91f-49aa-4b5a-933c-ac3a13dccd5d.png)
   
 1. You create retention labels for different types of content and then associate them with a type of event. For example, retention labels for different types of product files and records are associated with an event type named Product Lifetime because those records must be retained for 10 years from the time the product reaches its end of life.
     
@@ -77,16 +77,16 @@ Finally, remember that each retention label has its own retention settings. In t
 
 High-level workflow for event-driven retention:
   
-![Diagram of workflow for setting up event-driven retention](../media/event-based-retention-process.png)
+![Diagram of workflow for setting up event-driven retention.](../media/event-based-retention-process.png)
   
 > [!TIP]
 > See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 
-To create and configure your retention label, use the instructions from [Create and configure retention labels](create-retention-labels.md#create-and-configure-retention-labels). But specific to event-based retention, on the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
+To create and configure your retention label, see the instructions for [Create retention labels](./create-apply-retention-labels.md#step-1-create-retention-labels). But specific to event-based retention, on the **Define retention settings** page of the Create retention label wizard, after **Start the retention period based on**, select one of the default event types from the dropdown list, or create your own by selecting **Create new event type**:
 
-![Create a new event type for a retention label](../media/SPRetention6.png)
+![Create a new event type for a retention label.](../media/SPRetention6.png)
 
 An event type is simply a general description of an event that you want to associate with a retention label.
 
@@ -130,13 +130,13 @@ After an event-based label is applied to content, you can enter an asset ID for 
     
 Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event—see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
   
-![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
+![Text box to enter an Asset ID.](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### Step 5: Create an event
 
 When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft 365 compliance center, and select **+ Create** to create an event. You trigger the event by creating it, here.
 
-![Create an event to trigger start of retention for event-based retention labels](../media/create-event-records-management.png)
+![Create an event to trigger start of retention for event-based retention labels.](../media/create-event-records-management.png)
 
 Up to one million events are supported per tenant.
 
@@ -144,23 +144,25 @@ Up to one million events are supported per tenant.
 
 When you create the event, choose the same event type specified in the retention label settings in step 2. For example, if you selected **Product Lifetime** as your event type for the label settings, select **Product Lifetime** when you create the event. Only content with retention labels applied to it of that event type will have its retention period triggered.
 
-![Option in Event settings to choose an event type](../media/choose-event-type-records-management.png)
+![Option in Event settings to choose an event type.](../media/choose-event-type-records-management.png)
 
 Alternatively, if you need to create an event for multiple retention labels that have different event types, select the **Choose Existing Labels** option. Then, select the labels that are configured for the event types you want to associate with this event.
 
-### Step 7: Enter keywords or an asset ID
+### Step 7: Enter keywords or query for Exchange, asset ID for SharePoint and OneDrive
 
-Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content, or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified *property:value* pair. If an asset ID is not entered, all content with labels of that event type get the same retention date applied to them.
+Now you narrow the scope of the content. For Exchange content, you do this by specifying keywords or a query. For SharePoint and OneDrive content, you do this by specifying asset IDs.
 
-For example: If you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown below.
-  
+For Exchange items, use keywords or a query that uses Keyword Query Language (KQL). For more information about the query syntax, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). For more information about the searchable properties that you can use for Exchange, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+
+For asset IDs, retention will be enforced only on content with the specified *property:value* pair. For example, if you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown in the following picture.
+
+If an asset ID is not entered, all content with labels of that event type get the same retention date applied to them.
+
 Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter `ProductID:XYZ` in the box for asset IDs shown in the following picture.
+
+Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords or queries. As with any retention label, this synchronization can take up to seven days.
   
-For Exchange items, use keywords. You can use a query by using search operators such as AND, OR, and NOT. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. As with any retention label, this synchronization can take up to seven days.
-  
-![Event settings page](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
+![Event settings page.](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
 After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
 
@@ -180,24 +182,24 @@ For more information, see [Keyword queries and search conditions for Content Sea
 
 You can use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-based retention:
   
-- [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
+- [Get-ComplianceRetentionEventType](/powershell/module/exchange/get-complianceretentioneventtype)
     
-- [New-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873004)
+- [New-ComplianceRetentionEventType](/powershell/module/exchange/new-complianceretentioneventtype)
     
-- [Remove-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873005)
+- [Remove-ComplianceRetentionEventType](/powershell/module/exchange/remove-complianceretentioneventtype)
     
-- [Set-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873006)
+- [Set-ComplianceRetentionEventType](/powershell/module/exchange/set-complianceretentioneventtype)
     
-- [Get-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873001)
+- [Get-ComplianceRetentionEvent](/powershell/module/exchange/get-complianceretentionevent)
     
-- [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
+- [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
 ## Automate events by using a REST API
 
 You can use a REST API to automatically create the events that trigger the start of the retention time.
 
-A REST API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources. For more information, see [Components of a REST API request/response](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). By using the Microsoft 365 REST API, events can be created and retrieved using the POST and GET methods.
+A REST API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources. For more information, see [Components of a REST API request/response](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). By using the Microsoft 365 REST API, events can be created and retrieved using the POST and GET methods.
 
 There are two options for using the REST API:
 
@@ -207,7 +209,7 @@ There are two options for using the REST API:
 
 Before you use the REST API, as a global administrator, confirm the URL to use for the retention event call. To do this, run a GET retention event call by using the REST API URL:
 
-```console
+```http
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 
@@ -219,9 +221,9 @@ The events that get automatically created can be confirmed by viewing them in th
 
 Create a flow that creates an event using the Microsoft 365 REST API:
 
-![Using Flow to create an event](../media/automate-event-driven-retention-flow-1.png)
+![Using Flow to create an event.](../media/automate-event-driven-retention-flow-1.png)
 
-![Using flow to call the REST API](../media/automate-event-driven-retention-flow-2.png)
+![Using flow to call the REST API.](../media/automate-event-driven-retention-flow-2.png)
 
 #### Create an event
 
@@ -231,7 +233,7 @@ Sample code to call the REST API:
 - **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
-    
+
     ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
@@ -263,10 +265,10 @@ Sample code to call the REST API:
     
     </entry>
     ```
-    
+
 - **Authentication**: Basic
 - **Username**: "Complianceuser"
-- **Password**:	"Compliancepassword"
+- **Password**: "Compliancepassword"
 
 
 ##### Available parameters
@@ -302,7 +304,6 @@ Sample code to call the REST API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### Response codes
 
@@ -351,7 +352,6 @@ Sample code to call the REST API:
 - **Username**: "Complianceuser"
 
 - **Password**: "Compliancepassword"
-
 
 ###### Response codes
 
@@ -443,6 +443,4 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 }
 
 $event | fl *
-
 ```
-

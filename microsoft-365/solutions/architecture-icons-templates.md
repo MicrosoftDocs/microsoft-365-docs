@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -38,8 +38,14 @@ You can use these icons and templates to create diagrams like the following exam
 
 1. Example search architecture diagram for SharePoint:
 
-    ![Example search architecture for SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
+    ![Example search architecture for SharePoint.](../media/configure-search-for-multi-geo-image1-1.png)
 
 2. Teams retention lifecycle architecture diagram:
 
-    ![Teams retention lifecycle](../media/TeamsRetentionLifecycle.png)
+    ![Teams retention lifecycle.](../media/TeamsRetentionLifecycle.png)
+
+## More icon sets from Microsoft
+
+- [Azure architecture icons](/azure/architecture/icons/)
+- [Dynamics 365 architecture icons](/dynamics365/get-started/icons)
+- [Microsoft Power Platform icons](/power-platform/guidance/icons)

@@ -1,14 +1,14 @@
 ---
 title: "Identity for the Contoso Corporation"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -27,7 +27,7 @@ Contoso uses a single Active Directory Domain Services (AD DS) forest for contos
 
 Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
 
-![Contoso's forest and domains worldwide](../media/contoso-identity/contoso-identity-fig1.png)
+![Contoso's forest and domains worldwide.](../media/contoso-identity/contoso-identity-fig1.png)
  
 Contoso decided to use the accounts and groups in the contoso\.com forest for authentication and authorization for its Microsoft 365 workloads and services.
 
@@ -40,11 +40,11 @@ Contoso allows:
 
 Here's the Contoso DMZ containing a public web site, a partner extranet, and a set of Active Directory Federation Services (AD FS) servers. The DMZ is connected to the internet that contains customers, partners, and internet services.
 
-![Contoso support for federated authentication for customers and partners](../media/contoso-identity/contoso-identity-fig2.png)
+![Contoso support for federated authentication for customers and partners.](../media/contoso-identity/contoso-identity-fig2.png)
  
 AD FS servers in the DMZ facilitate authentication of customer credentials by their identity providers for access to the public web site and partner credentials for access to the partner extranet.
 
-Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) and [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) solutions.
+Contoso decided to keep this infrastructure and dedicate it to customer and partner authentication. Contoso identity architects are investigating the conversion of this infrastructure to Azure AD [B2B](/azure/active-directory/b2b/hybrid-organizations) and [B2C](/azure/active-directory-b2c/solution-articles) solutions.
 
 ## Hybrid identity with password hash synchronization for cloud-based authentication
 
@@ -56,11 +56,11 @@ To do directory synchronization, Contoso deployed the Azure AD Connect tool on a
 
 Here's the server running Azure AD Connect polling the Contoso AD DS forest for changes and then synchronizing those changes with the Azure AD tenant.
 
-![The Contoso PHS directory synchronization infrastructure](../media/contoso-identity/contoso-identity-fig4.png)
+![The Contoso PHS directory synchronization infrastructure.](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## Conditional Access policies for identity and device access
 
-Contoso created a set of Azure AD and Intune [Conditional Access policies](identity-access-policies.md) for three protection levels:
+Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/identity-access-policies.md) for three protection levels:
 
 - *Baseline* protections apply to all user accounts.
 - *Sensitive* protections apply to senior leadership and executive staff.
@@ -68,7 +68,7 @@ Contoso created a set of Azure AD and Intune [Conditional Access policies](ident
 
 Here's the resulting set of Contoso identity and device Conditional Access policies.
 
-![Contoso’s identity and device Conditional Access policies](../media/contoso-identity/contoso-identity-fig5.png)
+![Contoso’s identity and device Conditional Access policies.](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## Next step
 

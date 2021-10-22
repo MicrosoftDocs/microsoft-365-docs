@@ -1,5 +1,5 @@
 ---
-title: "Get started with trainable classifiers (preview)"
+title: "Get started with trainable classifiers"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -20,13 +20,20 @@ search.appverid:
 description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This article shows you how to create and train a custom classifier and how to retrain them to increase accuracy."
 ---
 
-# Get started with trainable classifiers (preview)
+# Get started with trainable classifiers
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, Communications compliance policies, and retention label policies.
 
 Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the classifiers ability to predict by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the performance of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
 
-To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
+To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
+
+Watch this video for a quick summary of creating a trainable classifier. You'll still need to read this full article to get the details.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+
 
 ## Prerequisites
 
@@ -39,7 +46,7 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 To access classifiers in the UI: 
 
 - the Global admin needs to opt in for the tenant to create custom classifiers.
-- Compliance Administrator or Data Investigation role is required to train a classifier.
+- Compliance Administrator role is required to train a classifier.
 
 You'll need accounts with these permissions to use classifiers in these scenarios:
 
@@ -58,7 +65,7 @@ It's helpful to understand what's involved in creating a custom trainable classi
 
 This timeline reflects a sample deployment of trainable classifiers.
 
-![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
+![trainable-classifier-timeline.](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content. Contact your global administrator to kick off the opt-in process.
@@ -83,10 +90,7 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## How to create a trainable classifier
 
-1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
-
-   > [!IMPORTANT]
-   > The seed and test sample items must not be encrypted and they must be in English.
+1. Collect between 50-500 seed content items. These must be only samples that strongly represent the type of content you want the trainable classifier to positively identify as being in the classification category. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
    > [!IMPORTANT]
    > Make sure the items in your seed set are **strong** examples of the category. The trainable classifier initially builds its model based on what you seed it with. The classifier assumes all seed samples are strong positives and has no way of knowing if a sample is a weak or negative match to the category.
@@ -113,12 +117,9 @@ Once the trainable classifier has processed enough positive samples to build a p
 10. You can now view the details page by choosing the classifier.
 
     > [!div class="mx-imgBorder"]
-    > ![trainable classifier ready for testing](../media/classifier-trainable-ready-to-test-detail.png)
+    > ![trainable classifier ready for testing.](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
-
-    > [!IMPORTANT]
-    > The sample items must not be encrypted and they must be in English.
+11. Collect at least 200 test content items (10,000 max) for best results. These should be a mix of items that are strong positives, strong negatives and some that are a little less obvious in their nature. See, [Default crawled file name extensions and parsed file types in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for the supported file types.
 
 12. Place the test content in a SharePoint Online folder that is dedicated to holding *the test content only*. Make note of the SharePoint Online site, library, and folder URL.
 
@@ -134,19 +135,19 @@ Once the trainable classifier has processed enough positive samples to build a p
 16. When the trainable classifier is done processing your test files, the status on the details page will change to `Ready to review`. If you need to increase the test sample size, choose `Add items to test` and allow the trainable classifier to process the additional items.
 
     > [!div class="mx-imgBorder"]
-	> ![ready to review screenshot](../media/classifier-trainable-ready-to-review-detail.png)
+    > ![ready to review screenshot.](../media/classifier-trainable-ready-to-review-detail.png)
 
 17. Choose `Tested items to review` tab to review items.
 
 18. Microsoft 365 will present 30 items at a time. Review them and in the `We predict this item is "Relevant". Do you agree?` box choose either `Yes` or `No` or `Not sure, skip to next item`. Model accuracy is automatically updated after every 30 items.
 
     > [!div class="mx-imgBorder"]
-	> ![review items box](../media/classifier-trainable-review-detail.png)
+    > ![review items box.](../media/classifier-trainable-review-detail.png)
 
 19. Review *at least* 200 items. Once the accuracy score has stabilized, the **publish** option will become available and the classifier status will say `Ready to use`.
 
     > [!div class="mx-imgBorder"]
-	> ![accuracy score and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
+    > ![accuracy score and ready to publish.](../media/classifier-trainable-review-ready-to-publish.png)
 
 20. Publish the classifier.
 

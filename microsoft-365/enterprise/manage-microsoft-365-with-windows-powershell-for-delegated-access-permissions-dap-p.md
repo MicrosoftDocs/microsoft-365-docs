@@ -1,12 +1,12 @@
 ---
 title: "Manage Microsoft 365 with Windows PowerShell for DAP partners"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -35,7 +35,6 @@ The following articles show how Syndication and CSP partners use PowerShell to a
     
 - [Add a domain to a client tenancy with Windows PowerShell for Delegated Access Permission (DAP) partners](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     
-- [Connect to Exchange Online PowerShell](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
+- [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
 - [Retrieve customer tenant reporting data with Windows PowerShell for Delegated Access Permissions (DAP) partners](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-   

@@ -2,14 +2,13 @@
 title: "Manage Windows 10 Pro device policies with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -32,7 +31,7 @@ You can use Microsoft 365 Business to ensure that Windows Defender Antivirus is 
 
 ## Try it!
 
-1. Sign in to the Microsoft 365 admin center.
+1. Sign in to the 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 1. Under **Policies**, choose Add policy.
 1. In the **Add policy** pane, enter a name under **Policy name**, and then select **Windows 10 Device Configuration** under **Policy type**.
 1. Choose **Secure Windows 10 devices** to see the sub-settings.

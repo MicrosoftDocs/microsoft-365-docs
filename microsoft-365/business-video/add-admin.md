@@ -2,20 +2,20 @@
 title: "Add an admin"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -35,7 +35,7 @@ When you sign up for Microsoft 365 Business, you automatically become a global a
 ### Add an existing employee as an admin
 
 1. When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well. 
-1. In the Microsoft 365 admin center, select **Users**, and then **Active users**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 1. Choose the user you want to make an admin, and then select **Manage roles**.
 1. On the **Manage roles** pane, clear the user's current role check box, and select the new role that you want to assign to the user.
 1. Select **Save changes**, and then close the **Admin roles updated** confirmation pane.
@@ -44,7 +44,7 @@ When you sign up for Microsoft 365 Business, you automatically become a global a
 
 If there's an external IT person who will help manage your business, you can add them as a global admin.
 
-1. In the Microsoft 365 admin center, select **Users**, **Active users**, and then **Add a user**.
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then **Add a user**.
 1. On the **Set up the basics** page, enter the user's name, display name, and username.
 1. Select the **Send password in email upon completion** check box to have the user's password emailed to them. Type their email address. Separate multiple addresses with semicolons. Select **Next**.
 1. In the **Select location** drop-down list, choose the user's location.

@@ -2,7 +2,7 @@
 title: Communication compliance in Microsoft 365
 description: Learn how to configure communication compliance in Microsoft 365.
 keywords: Microsoft 365, insider risk, compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+- m365solution-scenario
 ---
 
 # Communication compliance in Microsoft 365
@@ -25,13 +26,12 @@ Protecting sensitive information and detecting and acting on workplace harassmen
 
 Use the following steps to configure communication compliance for your organization:
 
-![Insider risk solution communication compliance steps](../media/ir-solution-cc-steps.png)
+![Insider risk solution communication compliance steps.](../media/ir-solution-cc-steps.png)
 
 1. Learn about [communication compliance](communication-compliance.md) in Microsoft 365
 2. Plan for [communication compliance](communication-compliance-plan.md) and [verify licensing](communication-compliance-configure.md#subscriptions-and-licensing)
-3. Review [feature reference and solution capabilities](communication-compliance-feature-reference.md)
-4. Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-5. Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+3. Configure [prerequisites](communication-compliance-configure.md#step-2-required-enable-the-audit-log) and [permissions](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+4. Create and configure [communication compliance policies](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
 ## More information about communication compliance
 

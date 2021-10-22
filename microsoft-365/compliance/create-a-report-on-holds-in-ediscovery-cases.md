@@ -9,7 +9,7 @@ ms.date: 9/11/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -36,9 +36,9 @@ See the [More information](#more-information) section for a detailed description
 
 - The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
-## Step 1: Connect to the Security & Compliance Center PowerShell
+## Step 1: Connect to Security & Compliance Center PowerShell
 
-The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
 
@@ -155,11 +155,11 @@ After you've connected to Security & Compliance Center PowerShell, the next step
 
    Here's an example of running the CaseHoldsReport.ps1 script.
 
-   ![The output after running the CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![The output after running the CaseHoldsReport.ps1 script.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## More information
 
-The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](ediscovery-cases.md).
+The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 

@@ -13,12 +13,13 @@ f1_keywords:
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+recommendations: false
 description: Learn what the data loss prevention (DLP) policy templates in the Office 365 Security & Compliance Center include.
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: "Allow members to send as or send on behalf of a Group"
+title: "Allow members to send as or send on behalf of a group"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -16,12 +16,15 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
-description: "Learn how to allow members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
+recommendations: false
+description: "Learn how to allow group members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
 # Allow members to send as or send on behalf of a group
 
-A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. This article explains how a global or Exchange administrator can set these permissions.
+A member of a Microsoft 365 group who has been granted **Send as** or **Send on behalf** permissions can send email as the group, or on behalf of the group. (Guests in the group cannot be granted these permissions.)
+
+This article explains how a global or Exchange administrator can set these permissions.
   
 For example, if Megan Bowen is part of the **Training** Microsoft 365 group, and has **Send as** permissions on the group, if she sends an email as the group, it will look like the **Training** group sent the email. 
   
@@ -39,17 +42,17 @@ This section explains how to allow users to send email as a group in the [Exchan
   
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
     
-2. Select **Edit**  ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select **Edit**  ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
 3. Select **group delegation**.
     
 4. In the **Send As** section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Screenshot of send as dialog box](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Screenshot of send as dialog box.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Type to search or pick a user from the list.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## Allow members to send email on behalf of a group
 
@@ -57,17 +60,17 @@ This section explains how to allow users to send email on behalf of a group in t
   
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
     
-2. Select **Edit** ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select **Edit** ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
 3. Select **group delegation**.
     
 4. In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Screenshot of send on behalf of dialog](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Screenshot of send on behalf of dialog.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Type to search or pick a user from the list.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## Related articles
 
@@ -77,6 +80,6 @@ This section explains how to allow users to send email on behalf of a group in t
 
 [Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
-[Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
+[Add-RecipientPermission](/powershell/module/exchange/add-recipientpermission)
 
-[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189)
+[Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup)

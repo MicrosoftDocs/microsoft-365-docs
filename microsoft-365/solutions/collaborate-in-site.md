@@ -14,8 +14,9 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn about the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests."
 ---
 
@@ -33,11 +34,11 @@ This video shows the configuration steps described in this document.</br>
 
 ## Azure external collaboration settings
 
-Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). If guest sharing is disabled or restricted in Azure AD, this setting overrides any sharing settings that you configure in Microsoft 365.
 
 Check the B2B external collaboration settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory External collaboration Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory External collaboration Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 To set external collaboration settings
 
@@ -56,7 +57,7 @@ If you work with guests from multiple organizations, you may want to restrict th
 
 Modern SharePoint sites use Microsoft 365 Groups to control site access. The Microsoft 365 Groups guest settings must be turned on in order for guest access in SharePoint sites to work.
 
-![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center.](../media/office-365-groups-guest-settings.png)
 
 To set Microsoft 365 Groups guest settings
 
@@ -74,7 +75,7 @@ The organization-level settings determine the settings that will be available fo
 
 If you want to allow unauthenticated file and folder sharing, choose **Anyone**. If you want to ensure that all people outside your organization have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
-![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
+![Screenshot of SharePoint organization-level sharing settings.](../media/sharepoint-organization-external-sharing-controls.png)
 
 
 To set SharePoint organization-level sharing settings
@@ -105,9 +106,9 @@ Check the site-level sharing settings to make sure that they allow the type of a
 
 Note that the site cannot be shared with unauthenticated people (**Anyone** setting), but individual files and folders can.
 
-You can also use [sensitivity labels to control external sharing settings for SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+You can also use [sensitivity labels to control external sharing settings for SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-![Screenshot of SharePoint site external sharing settings](../media/sharepoint-site-external-sharing-settings.png)
+![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
 1. In the SharePoint admin center, in the left navigation, expand **Sites** and click **Active sites**.
@@ -146,4 +147,4 @@ Note that you need to click **Close** only if you are not the owner of the group
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)

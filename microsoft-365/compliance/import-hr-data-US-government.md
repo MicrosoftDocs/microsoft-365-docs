@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
@@ -23,7 +23,7 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 ## Before you begin
 
-- The user who creates the HR connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the HR connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 - You'll need to determine how to retrieve or export the data from your organization's HR system (on a regular basis) and add it to the CSV file that's described in Step 2. The script that you run in Step 4 will upload the HR data in the CSV file to the Microsoft cloud.
 
@@ -39,7 +39,7 @@ The first step is to create and register a new app in Azure Active Directory (Az
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 2: Prepare a CSV file with your HR data
 
@@ -82,13 +82,13 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 5. On the **File mapping** page, type the names of the three column headers (also called *parameters*) from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
-   ![Column heading names match the ones in the CSV file](../media/HRConnectorWizard3.png)
+   ![Column heading names match the ones in the CSV file.](../media/HRConnectorWizard3.png)
 
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
 
-   ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
+   ![Review page with job ID and link to github for sample script.](../media/HRConnector_Confirmation.png)
 
    1. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
    
@@ -100,7 +100,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector.
 
-   ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
+   ![Flyout page for new HR connector.](../media/HRConnectorWizard7.png)
 
    If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
@@ -148,7 +148,7 @@ The last step in setting up an HR connector is to run a sample script that will 
    If the upload is successful, the script displays the **Upload Successful** message.
 
    > [!NOTE]
-   > If you have problems running the previous command because of execution policies, see [About Execution Policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
+   > If you have problems running the previous command because of execution policies, see [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the HR connector
 
@@ -158,11 +158,11 @@ After you create the HR connector and run the script to upload your HR data, you
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
-   ![HR connector flyout page with properties and status](../media/HRConnectorFlyout1.png)
+   ![HR connector flyout page with properties and status.](../media/HRConnectorFlyout1.png)
 
 3. Under **Progress**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud. 
 
-   ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
+   ![HR connector log file displays number rows from CSV file that were uploaded.](../media/HRConnectorLogFile.png)
 
    The `RecordsSaved` field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the `RecordsSaved` fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
@@ -198,7 +198,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
-   ![Action settings to create a new scheduled task for the HR connector script](../media/HRConnectorScheduleTask1.png)
+   ![Action settings to create a new scheduled task for the HR connector script.](../media/HRConnectorScheduleTask1.png)
 
    1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
@@ -214,7 +214,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    The new task is displayed in the Task Scheduler Library.
 
-   ![The new task is displayed in the Task Scheduler Library](../media/HRConnectorTaskSchedulerLibrary.png)
+   ![The new task is displayed in the Task Scheduler Library.](../media/HRConnectorTaskSchedulerLibrary.png)
 
    The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 

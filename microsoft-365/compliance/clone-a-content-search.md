@@ -9,7 +9,7 @@ ms.date: 4/26/2017
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MED150
@@ -34,7 +34,7 @@ Why clone Content Searches?
   
 ## Script information
 
-- You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the script described in this topic.
+- You have to be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center to run the script described in this topic.
     
 - The script includes minimal error handling. The primary purpose of the script is to quickly clone a content search.
     
@@ -48,7 +48,7 @@ Why clone Content Searches?
 
 The script in this step will create a new Content Search by cloning an existing one. When you run this script, you'll be prompted for the following information:
   
-- **Your user credentials** - The script will use your credentials to connect to the Security & Compliance Center for your organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
+- **Your user credentials** - The script will use your credentials to connect to Security & Compliance Center PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
     
 - **The name of the existing search** - This is the Content Search that you want to clone. 
     
@@ -142,4 +142,4 @@ After you run the script to clone an existing Content Search, the next step is t
     
 - [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
     
-- [eDiscovery cases](ediscovery-cases.md)
+- [eDiscovery cases](./get-started-core-ediscovery.md)
