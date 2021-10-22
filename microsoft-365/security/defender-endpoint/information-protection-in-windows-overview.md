@@ -3,7 +3,6 @@ title: Information protection in Windows overview
 ms.reviewer: 
 description: Learn about how information protection works in Windows to identify and protect sensitive information
 keywords: information, protection, dlp, data, loss, prevention, protect
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -56,7 +55,7 @@ Default sensitive information types include information such as bank account num
 
 Custom types are ones that you define and is designed to protect a different type of sensitive information (for example, employee IDs or project numbers). For more information see, [Create a custom sensitive information type](/office365/securitycompliance/create-a-custom-sensitive-information-type).
 
-When a file is created or edited on a  Windows device, Defender for Endpoint scans the content to evaluate if it contains sensitive information.
+When a file is created or edited on a Windows device, Defender for Endpoint scans the content to evaluate if it contains sensitive information.
 
 Turn on the Azure Information Protection integration so that when a file that contains sensitive information is discovered by Defender for Endpoint though labels or information types, it is automatically forwarded to Azure Information Protection from the device.
 
