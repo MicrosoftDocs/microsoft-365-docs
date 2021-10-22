@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleNotifyUser'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -210,7 +210,7 @@ Currently, Outlook 2013 and later supports showing policy tips only for these co
 - Content contains
 - Content is shared
 
-Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported.
+Note that Exceptions are considered conditions and all of these conditions work in Outlook, where they will match content and enforce protective actions on content. But showing policy tips to users is not yet supported. Also, Outlook does not support showing policy tips for a DLP policy that's applied to a dynamic distribution group.
 
 ### Policy tips in the Exchange admin center vs. the Security &amp; Compliance Center
 

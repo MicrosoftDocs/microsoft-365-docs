@@ -7,7 +7,7 @@ ms.date: 11/05/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -172,8 +172,7 @@ Azure AD Connect adds accounts to your Microsoft 365 subscription from the on-pr
   
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then click **Admin**.
     
-2. In the left navigation, click **Users > Active users**.
-    
+2. In the left navigation, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 3. In the list of user accounts, select the check box next to the user you want to activate.
     
 4. On the page for the user, click **Edit** for **Product licenses**.

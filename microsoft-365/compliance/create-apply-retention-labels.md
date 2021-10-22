@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -44,6 +44,8 @@ Use the following instructions for the two admin steps.
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
+Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+
 ## How to create and publish retention labels
 
 First, create your retention labels. Then create a label policy to make the labels available to apply in apps.
@@ -60,9 +62,13 @@ Where you create and configure your retention labels depend on whether you're us
     - If you are not using records management:
        - **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
-2. Follow the prompts in the wizard. If you are using records management:
+2. Follow the prompts in the wizard.
+    
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    If you are using records management:
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md).
     
@@ -86,14 +92,25 @@ Publish retention labels so that they can be applied by users in apps, such as S
     - If you are not using records management:
         - **Solutions** > **Information governance** > **Label policies** tab > **Publish labels**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
-2. Follow the prompts in the wizard.
+2. Use the link to select the retention labels to publish, and then select **Next**.
+
+3. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the wizard with this option.
+
+4. Depending on your selected scope:
     
-    For information about the locations supported by retention labels, see [Retention labels and locations](retention.md#retention-label-policies-and-locations). 
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
+    
+    - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    
+    For information about the location choices, see [Locations](retention-settings.md#locations).
 
-To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+5.  Follow the prompts in the wizard to name your policy, review, and submit your configuration choices.
+    
+    For information about the location choices, see [Locations](retention-settings.md#locations). 
 
+To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies).
 
 ## When retention labels become available to apply
 
@@ -232,10 +249,6 @@ When you publish retention labels to Microsoft 365 groups ([formerly Office 365 
 To retain content for a Microsoft 365 group, use the **Microsoft 365 Groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
-  
-First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
-
-Then, create one or more label policies that contain the labels and policy settings that you configure. It's the label policy that publishes the labels and settings for your chosen users and locations.
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -16,6 +16,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: "Summary: "
 ---
@@ -28,7 +29,7 @@ description: "Summary: "
 
 ## How to request migration
 
-If you were an eligible customer with your service provisioned in Microsoft Cloud Germany (Microsoft Cloud Deutschland) and you had signed in as a tenant (global) administrator, a page in the Microsoft 365 admin center allowed you to opt-in for migration. The Opt-In page in the Microsoft 365 admin center no longer allows for enrollment, however the process is outlined below for reference purposes.  
+If you were an eligible customer with your service provisioned in Microsoft Cloud Germany (Microsoft Cloud Deutschland) and you had signed in as a tenant (global) administrator, a page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> allowed you to opt-in for migration. The Opt-In page in the Microsoft 365 admin center no longer allows for enrollment, however the process is outlined below for reference purposes.  
 
 To access the page, expand **Settings** in the navigation pane on the left, and then click **Organization Profile**.
 
@@ -56,7 +57,7 @@ The Online Services Terms have changed to include terms that will enable Microso
 
 The customer tenant administrator will receive a notice in e-mail and the Message Center advising that opt-in to migration will happen automatically for a Microsoft-assisted migration. This notice will be sent at least 30 days prior to the automatic opt-in. After migration opt-in, all communications and status updates are sent to customer tenant administrators in the Message Center.
 
-Customer and partner tenant administrators are encouraged to opt-in for migration in the Microsoft 365 admin center so the migration process can begin as soon as possible.
+Customer and partner tenant administrators are encouraged to opt-in for migration in the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Microsoft 365 admin center</a> so the migration process can begin as soon as possible.
 
 ## Next step
 

@@ -2,20 +2,20 @@
 title: Schedule antivirus scans using Group Policy
 description: Use Group Policy to set up antivirus scans
 keywords: quick scan, full scan, schedule, group policy, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/09/2021
+ms.date: 10/18/2021
 ms.reviewer: pauhijbr, ksarens
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Schedule antivirus scans using Group Policy
@@ -28,7 +28,7 @@ This article describes how to configure scheduled scans using Group Policy. To l
 
 ## Configure antivirus scans using Group Policy
 
-1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Scan**.
+1. On your Group Policy management machine, in the Group Policy Editor, go to **Computer configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Right-click the Group Policy Object you want to configure, and then select **Edit**.
 
@@ -38,8 +38,12 @@ This article describes how to configure scheduled scans using Group Policy. To l
 
 5. Deploy your Group Policy Object as you normally do. If you need help with Group Policy Objects, see [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object).
 
-> [!TIP]
-> See the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
+> [!NOTE]
+> When configuring scheduled scans, the setting **Start the scheduled scan only when computer is on but not in use**, which is enabled by default, can impact the expected scheduled time by requiring the machine to be idle first.
+>
+> For weekly scans, default behavior on Windows Server is to scan outside of automatic maintenance when the machine is idle. The default on Windows 10 and later is to scan during automatic maintenance when the machine is idle. To change this behavior, modify the settings by disabling **ScanOnlyIfIdle**, and then define a schedule.
+
+For more information, see the [Manage when protection updates should be downloaded and applied](manage-protection-update-schedule-microsoft-defender-antivirus.md) and [Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md) topics.
 
 ## Group Policy settings for scheduling scans
 

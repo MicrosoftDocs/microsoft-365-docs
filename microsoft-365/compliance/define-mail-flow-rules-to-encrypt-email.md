@@ -8,13 +8,14 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkMAC
 description: "Admins can learn to create mail flow rules (transport rules) to encrypt and decrypt messages using Office 365 Message Encryption."
 ---
 
@@ -41,7 +42,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
@@ -73,7 +74,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
@@ -101,7 +102,7 @@ You can remove encryption that is applied by your organization.
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
@@ -117,7 +118,7 @@ You can remove encryption that is applied by your organization.
 
 If you haven't yet moved your organization to the new OME capabilities, Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](set-up-new-message-encryption-capabilities.md). Otherwise, see [Defining mail flow rules for Office 365 Message Encryption that don't use the new OME capabilities](legacy-information-for-message-encryption.md#defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities).
 
-## Related Topics
+## Related content
 
 [Encryption in Office 365](encryption.md)
 

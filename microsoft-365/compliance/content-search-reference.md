@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: "This article contains reference information about the Content search eDiscovery tool in the Microsoft 365 compliance center to help you learn the many details about Content search."
 ---
 
@@ -91,7 +92,7 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
 - When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or a Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
 
-- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+- To get a list of the members of a team or a Microsoft 365 Group, you can view the properties on the **Home** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

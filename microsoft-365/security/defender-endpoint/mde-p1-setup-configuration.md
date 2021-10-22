@@ -7,18 +7,19 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
-ms.technology: mde
-localization_priority: Normal
+ms.technology: mdep1
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
+ms.collection: M365-security-compliance
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1 (preview)
 
 > [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
 This article describes how to set up and configure Defender for Endpoint Plan 1 (preview). Whether you have assistance or are doing it yourself, you can use this article as a guide throughout your deployment.  
 
@@ -48,7 +49,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 (preview) <br/><br/>*If you have Microsoft 365 E3, you can join the preview program.* |
+| Licensing requirements | Defender for Endpoint Plan 1 (preview) <br/><br/>*If you have Microsoft 365 E3 or A3, you can join the preview program.* |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating systems | Windows 10, version 1709 or later <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
@@ -67,9 +68,9 @@ When you plan your deployment, you can choose from several different architectur
 
 To learn more about your deployment options, see [Plan your Defender for Endpoint deployment](deployment-strategy.md). And, download the following poster: 
 
-[:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)
+[:::image type="content" source="../../media/defender-endpoint/mde-deployment-strategy.png" alt-text="Deployment strategy poster thumbnail":::](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)
 
-**[Get the deployment poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)**
+**[Get the deployment poster](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)**
 
 > [!TIP]
 > For more detailed information about planning your deployment, see [Plan your Microsoft Defender for Endpoint deployment](deployment-strategy.md).

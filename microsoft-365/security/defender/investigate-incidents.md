@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -180,9 +180,9 @@ From the **Graph** tab, you can:
 
 1. Play the alerts and the nodes on the graph as they occurred over time to understand the chronology of the attack.
 
-<!--
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.png" alt-text="Example of playing the alerts and nodes on the Graph page":::
---> 
+
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Example of playing the alerts and nodes on the Graph page":::
+ 
 
 2. Open an entity pane, allowing you to review the entity details and act on remediation actions, such as deleting a file or isolating a device.
  

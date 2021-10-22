@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -24,7 +24,7 @@ description: "Learn how to manage partially indexed items (also called unindexed
 
 An eDiscovery search that you run from the Microsoft 365 compliance center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run an eDiscovery search:
   
-- Email messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items.
+- Email messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
 
 - Too many files attached to an email message.
 
@@ -68,7 +68,7 @@ So in the previous example, 7% of the total size of mailbox items are from parti
 
 ## Working with partially indexed items
 
-In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
+In cases when you need to examine partially indexed items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items.
   
 ![Choose the second or third option to export partially indexed items.](../media/PartiallyIndexedItemsExportOptions.png)
   

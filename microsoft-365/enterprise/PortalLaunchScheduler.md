@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -130,17 +130,17 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 
 **Follow these steps:**
 
-1. Go to <https://admin.microsoft.com>.
-2. Ensure you are using the new admin center preview
-3. On the left navigational pane, select **Support**, and then select **New Service Request**
+1. As an administrator , click the following link which will populate a help query in the admin center. 
 
-   This will activate the **Need Help?** pane on the right-hand side of your screen.
+[Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. For **Briefly describe your issue**, enter "Launch SharePoint Portal with 100k users"</br>
-5. Then, select **Contact Support**
-6. Under **Description**, enter "Launch SharePoint Portal with 100k users"
-7. Fill out the remaining information, and then select **Contact me**
-8. After the ticket has been created, ensure you provide the support agent with the following information:
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**. 
+
+3. Under **Description**, enter "Launch SharePoint Portal with 100k users". 
+
+4. Fill out the remaining info, and select **Contact me**.
+
+5. After the ticket has been created, ensure you provide the support agent with the following information:
    - Portal URL's
    - Number of users expected
    - Estimated launch schedule

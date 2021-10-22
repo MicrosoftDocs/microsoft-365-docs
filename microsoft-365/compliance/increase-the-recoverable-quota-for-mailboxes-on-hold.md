@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - MET150
@@ -22,22 +22,21 @@ description: "Enable the archive mailbox and turn on auto-expanding archiving to
 
 The default Exchange retention policy—named *Default MRM Policy*—that is automatically applied to new mailboxes in Exchange Online contains a retention tag named Recoverable Items 14 days move to archive. This retention tag moves items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in the user's archive mailbox after the 14-day retention period expires for an item. For this to happen, the user's archive mailbox must be enabled. If the archive mailbox isn't enabled, no action is taken, which means that items in the Recoverable Items folder for a mailbox on hold aren't moved to the archive mailbox after the 14-day retention period expires. Because nothing is deleted from a mailbox on hold, it's possible that the storage quota for the Recoverable Items folder might be exceeded, especially if the user's archive mailbox isn't enabled.
 
-To help reduce the chance of exceeding this limit, the storage quota for the Recoverable Items folder is automatically increased from 30 GB to 100 GB when a hold is placed on a mailbox in Exchange Online. If the archive mailbox is enabled, the storage quota for the Recoverable Items folder in the archive mailbox is also increased from 30 GB to 100 GB. If the auto-expanding archiving feature in Exchange Online is enabled, the storage quota for the Recoverable Items folder in the user's archive will be unlimited.
+To help reduce the chance of exceeding this limit, the storage quota for the Recoverable Items folder is automatically increased from 30 GB to 100 GB when a hold is placed on a mailbox in Exchange Online. If the archive mailbox is enabled, the storage quota for the Recoverable Items folder in the archive mailbox is also increased from 30 GB to 100 GB. If the auto-expanding archiving feature in Exchange Online is enabled, the total storage quota for the user's archive mailbox, including the Recoverable Items folder, is 1.5 TB.
 
  The following table summarizes the storage quota for the Recoverable Items folder.
 
-|**Location of Recoverable Items folder**|**Mailboxes not on hold**|**Mailboxes on hold**|
+| Location of Recoverable Items folder | Mailboxes not on hold | Mailboxes on hold |
 |:-----|:-----|:-----|
-|Primary mailbox  <br/> |30 GB  <br/> |100 GB  <br/> |
-|Archive mailbox<sup>\*</sup> <br/> |Unlimited  <br/> |Unlimited  <br/> |
-|**Total storage quota for the Recoverable Items folder** <br/> |Unlimited  <br/> |Unlimited  <br/> |
+|Primary mailbox |30 GB |100 GB |
+|Archive mailbox, including Recoverable Items folder <sup>\*</sup> |1.5 TB |1.5 TB |
 
 > [!NOTE]
-> <sup>\*</sup> The initial storage quota for the archive mailbox is 100 GB for users with an Exchange Online (Plan 2) license. However, when auto-expanding archiving is turned on for mailboxes on hold, the storage quota for both the archive mailbox and the Recoverable Items folder is increased to 110 GB. Additional archive storage space will be provisioned when necessary which results in an unlimited amount of archive storage. For more information about auto-expanding archiving, see [Overview of unlimited archiving in Office 365](unlimited-archiving.md).
+> <sup>\*</sup> The initial storage quota for the archive mailbox is 100 GB for users with an Exchange Online (Plan 2) license. However, when auto-expanding archiving is turned on for mailboxes on hold, the storage quota for both the archive mailbox and the Recoverable Items folder is increased to 110 GB. Additional archive storage space (which includes the Recoverable Items folder) up to 1.5 TB will be provisioned when necessary. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
 
 When the storage quota for the Recoverable Items folder in the primary mailbox of a mailbox on hold is close to reaching its limit, you can do the following things:
 
-- **Enable the archive mailbox and turn on auto-expanding archiving.** You can enable an unlimited storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 110 GB for the Recoverable Items folder in the primary mailbox and an unlimited amount of storage capacity for the Recoverable Items folder in the user's archive. See how: [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable unlimited archiving](enable-unlimited-archiving.md).
+- **Enable the archive mailbox and turn on auto-expanding archiving.** You can enable an additional storage capacity for the Recoverable Items folder simply by enabling the archive mailbox and then turning on the auto-expanding archiving feature in Exchange Online. This results in 110 GB for the Recoverable Items folder in the primary mailbox and up to 1.5 TB of combined storage capacity for the archive and Recoverable Items folder. For more information, see [Enable archive mailboxes](enable-archive-mailboxes.md) and [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
 
     > [!NOTE]
     > After you enable the archive for a mailbox that's close to exceeding the storage quota for the Recoverable Items folder, you might want to run the Managed Folder Assistant to manually trigger the assistant to process the mailbox so that expired items are moved to the Recoverable Items folder in the archive mailbox. See [Step 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) for instructions. Note that other items in the user's mailbox might be moved to the new archive mailbox. Consider telling the user that this may happen after you enable the archive mailbox.
@@ -117,7 +116,6 @@ Run the following command to create new retention policy for mailboxes on hold.
 
 ```powershell
 New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list of retention tags>
-
 ```
 
 For example, the following command creates the retention policy and linked retention tags that are displayed in the previous illustration.

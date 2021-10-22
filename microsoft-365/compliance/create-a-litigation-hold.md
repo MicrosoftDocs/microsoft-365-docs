@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: "Learn how to place a mailbox on Litigation hold, retaining all the mailbox content during an investigation."
@@ -45,7 +45,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
 1. Go to <https://admin.microsoft.com> and sign in.
 
-2. In the navigation pane of the admin center, click **Users > Active users**.
+2. In the navigation pane of the admin center, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 3. Select the user that you want to place on Litigation hold.
 

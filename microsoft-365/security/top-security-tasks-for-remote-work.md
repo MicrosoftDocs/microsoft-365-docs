@@ -7,8 +7,9 @@ author: brendacarter
 manager: johmar
 audience: Admin
 ms.topic: tutorial
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.prod: m365-security
+ms.technology: m365d
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:

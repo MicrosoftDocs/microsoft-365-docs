@@ -7,7 +7,7 @@ ms.date: 06/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: cef3044d-d4cb-4586-8e82-ee97bd3b14ad
@@ -25,9 +25,9 @@ ms.custom: seo-marvel-apr2020
 
 Hybrid Modern Authentication (HMA) is a method of identity management that offers more secure user authentication and authorization, and is available for Exchange server on-premises hybrid deployments.
 
-## FYI
+## Definitions
 
-Before we begin, I call:
+Before we begin, you should be familiar with some definitions:
 
 - Hybrid Modern Authentication \> HMA
 
@@ -44,6 +44,7 @@ Turning on HMA means:
 1. Being sure you meet the prereqs before you begin.
 
 1. Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
+Requirements about linked mailboxes to be inserted.
 
 1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Azure AD of all the tenants which are in hybrid with EXCH.
 
@@ -55,7 +56,6 @@ Turning on HMA means:
 
 > [!NOTE]
 > Does your version of Office support MA? See [How modern authentication works for Office 2013 and Office 2016 client apps](modern-auth-for-office-2013-and-2016.md).
-
 
 ## Make sure you meet all the prerequisites
 
@@ -76,6 +76,7 @@ Get-WebServicesVirtualDirectory | FL server,*url*
 Get-ClientAccessServer | fl Name, AutodiscoverServiceInternalUri
 Get-OABVirtualDirectory | FL server,*url*
 Get-AutodiscoverVirtualDirectory | FL server,*url*
+Get-OutlookAnywhere | FL server,*hostname*
 ```
 
 Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the AAD of all the tenants in hybrid with EXCH.
@@ -135,23 +136,29 @@ If OAuth is missing from any server and any of the four virtual directories, you
 Return to the on-premises Exchange Management Shell for this last command. Now you can validate that your on-premises has an entry for the evoSTS authentication provider:
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "*EvoSts*"}
+Get-AuthServer | where {$_.Name -like "EvoSts*"} | ft name,enabled
 ```
 
-Your output should show an AuthServer of the Name EvoSts and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
+Your output should show an AuthServer of the Name EvoSts with a GUID and the 'Enabled' state should be True. If you don't see this, you should download and run the most recent version of the Hybrid Configuration Wizard.
 
 > [!NOTE]
 > In case EXCH is in hybrid with **multiple tenants**, your output should show one AuthServer of the Name EvoSts - {GUID} for each tenant in hybrid with EXCH and the 'Enabled' state should be True for all of these AuthServer objects.
 
- **Important** If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
+> [!IMPORTANT]
+> If you're running Exchange 2010 in your environment, the EvoSTS authentication provider won't be created.
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises:
+Run the following command in the Exchange Management Shell, on-premises, replacing <GUID> in the command line with the string in your environment:
+
+```powershell
+Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
+Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
+```
+**Note** In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the command line above to reflect this by removing the GUID portion of the command:
 
 ```powershell
 Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
-Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
 
 If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
@@ -173,17 +180,19 @@ You should also hold down the CTRL key at the same time you right-click the icon
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
+> [!NOTE]
+> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
-If you are an on-premises customer using Exchange server on TCP 443, bypass traffic processing for the following IP address ranges:
+If you are an on-premises customer using Exchange server on TCP 443, please allow network traffic from the following IP ranges:
 
 ```text
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-The Outlook app for iOS and Android is designed as the best way to experience Microsoft 365 or Office 365 on your mobile device by using Microsoft services to help find, plan, and prioritize your daily life and work. For more information, please refer to [Using hybrid Modern Authentication with Outlook for iOS and Android](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
+These IP ranges are also documented on the [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls) article.
 
 ## Related topics
 

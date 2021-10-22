@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
 ms.custom: 
@@ -119,7 +119,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
-### What if I want to change my business name in future? How do I do that?
+### What do I do if I want to change my business name?
 
 Contact our small business support experts who can help you change your business name. Learn more at [Get support](../../business-video/get-help-support.md).
 

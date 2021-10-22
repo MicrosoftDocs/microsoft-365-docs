@@ -7,7 +7,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -26,7 +26,7 @@ When you order a new device from an [approved manufacturer](device-requirements.
 Work directly with the Dell sales representative, who will make sure that the image approved by Microsoft Managed Desktop is applied to devices for your order. For more questions on Dell devices, the image, and the ordering process, contact MMD_at_dell@dell.com.
 
 ### HP 
-When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices#view-all-filter) site (filter the view to show Microsoft Managed Desktop devices).
+When you order new devices from HP, be sure to use the specific SKU listed in the Additional requirements section for each model found in the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices#view-all-filter) site (filter the view to show Microsoft Managed Desktop devices).
 
 If you're ordering a device from HP that has been approved as an [exception](customizing.md) but isn't currently listed on the Device List page, be sure to request the SKU to be used for your model. We'll work with HP to get you this information by using your exception request. You can also contact HP directly for any questions about devices and device ordering instructions by using these addresses:
  
@@ -78,7 +78,7 @@ These images use the Windows Recovery Environment (WinRE) and this is a manual p
 
 
 ### Universal image
-Microsoft Managed Desktop has created an image containing Windows 10 Pro and Microsoft 365 Apps for Enterprise that you can use with Microsoft Managed Desktop. However, it's best to use images appropriate to Microsoft Managed Desktop provided by the manufacturer whenever possible, even if that means an older Windows version that then needs to update once the user signs in. Using the Microsoft Managed Desktop Universal image should be a final option.
+Microsoft Managed Desktop has created an image containing Windows Pro and Microsoft 365 Apps for Enterprise that you can use with Microsoft Managed Desktop. However, it's best to use images appropriate to Microsoft Managed Desktop provided by the manufacturer whenever possible, even if that means an older Windows version that then needs to update once the user signs in. Using the Microsoft Managed Desktop Universal image should be a final option.
 
 - We update the image with the latest Windows monthly quality updates every 30-60 days and Microsoft 365 Apps for Enterprise updates at least twice a year.
 - The image contains a recovery provisioning package to ensure Microsoft 365 Apps for Enterprise is restored following Windows recovery scenarios.

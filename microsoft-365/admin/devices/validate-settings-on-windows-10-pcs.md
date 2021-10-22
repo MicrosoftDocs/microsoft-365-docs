@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
 - M365-identity-device-management
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -56,5 +57,5 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
   
 ## Related content
 
-[Microsoft 365 for business documentation and resources](./index.yml)\
+[Microsoft 365 for business documentation and resources](/admin)\
 [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)

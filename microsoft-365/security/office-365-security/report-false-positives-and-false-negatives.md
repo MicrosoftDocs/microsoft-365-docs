@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.

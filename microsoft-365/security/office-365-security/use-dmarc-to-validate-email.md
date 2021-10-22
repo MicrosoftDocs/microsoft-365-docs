@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.date: 05/10/2021
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
@@ -269,6 +269,6 @@ Want more information about DMARC? These resources can help.
 
 [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)
 
-[Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+[**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-[Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md)
+[**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](use-dkim-to-validate-outbound-email.md)

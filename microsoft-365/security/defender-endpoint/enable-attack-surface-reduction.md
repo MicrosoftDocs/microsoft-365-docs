@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.date: 08/17/2021
+ms.collection: m365-security-compliance
 ---
 
 # Enable attack surface reduction rules
@@ -40,6 +41,9 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- Windows Server 2022
 
 To use the entire feature-set of attack surface reduction rules, you need:
 
@@ -135,7 +139,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding.
+  - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this topic for the OMA-URI to use for this example rule. For ASR rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
 

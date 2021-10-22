@@ -2,7 +2,6 @@
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -10,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -52,7 +51,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later and Windows Server 2019.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as Device isolation) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -68,7 +67,7 @@ You can start a new general purpose automated investigation on the device if nee
 
 For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-## Initiate Live Response Session
+## Initiate live response Session
 
 Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
@@ -82,7 +81,7 @@ As part of the investigation or response process, you can collect an investigati
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later.
+>These actions are not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
 To download the package (Zip file) and investigate the events that occurred on a device
 
@@ -107,31 +106,30 @@ The package contains the following folders:
 ****
 
 |Folder|Description|
-|:---|:---------|
+|---|---|
 |Autoruns|Contains a set of files that each represent the content of the registry of a known auto start entry point (ASEP) to help identify attacker's persistency on the device. <p> <div class="alert"><b>NOTE:</b> If the registry key is not found, the file will contain the following message: "ERROR: The system was unable to find the specified registry key or value."<div>|
 |Installed programs|This .CSV file contains the list of installed programs that can help identify what is currently installed on the device. For more information, see [Win32_Product class](https://go.microsoft.com/fwlink/?linkid=841509).|
-|Network connections|This folder contains a set of data points related to the connectivity information which can help in identifying connectivity to suspicious URLs, attacker's command and control (C&C) infrastructure, any lateral movement, or remote connections. <ul><li>ActiveNetConnections.txt: Displays protocol statistics and current TCP/IP network connections. Provides the ability to look for suspicious connectivity made by a process.</li><li>Arp.txt: Displays the current address resolution protocol (ARP) cache tables for all interfaces. ARP cache can reveal additional hosts on a network that have been compromised or suspicious systems on the network that might have been used to run an internal attack.</il><li>DnsCache.txt: Displays the contents of the DNS client resolver cache, which includes both entries preloaded from the local Hosts file and any recently obtained resource records for name queries resolved by the computer. This can help in identifying suspicious connections.</li><li>IpConfig.txt: Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or logical interfaces, such as dial-up connections.</li><li>FirewallExecutionLog.txt and pfirewall.log</li></ul>|
-|Prefetch files|Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list. <ul><li>Prefetch folder: Contains a copy of the prefetch files from `%SystemRoot%\Prefetch`. NOTE: It is suggested to download a prefetch file viewer to view the prefetch files.</li><li>PrefetchFilesList.txt: Contains the list of all the copied files which can be used to track if there were any copy failures to the prefetch folder.</li></ul>|
-|Processes|Contains a .CSV file listing the running processes, which provides the ability to identify current processes running on the device. This can be useful when identifying a suspicious process and its state.|
-|Scheduled tasks|Contains a .CSV file listing the scheduled tasks, which can be used to identify routines performed automatically on a chosen device to look for suspicious code which was set to run automatically.|
+|Network connections|This folder contains a set of data points related to the connectivity information that can help in identifying connectivity to suspicious URLs, attacker's command and control (C&C) infrastructure, any lateral movement, or remote connections. <ul><li>ActiveNetConnections.txt: Displays protocol statistics and current TCP/IP network connections. Provides the ability to look for suspicious connectivity made by a process.</li><li>Arp.txt: Displays the current address resolution protocol (ARP) cache tables for all interfaces. ARP cache can reveal other hosts on a network that have been compromised or suspicious systems on the network that might have been used to run an internal attack.</il><li>DnsCache.txt: Displays the contents of the DNS client resolver cache, which includes both entries preloaded from the local Hosts file and any recently obtained resource records for name queries resolved by the computer. This can help in identifying suspicious connections.</li><li>IpConfig.txt: Displays the full TCP/IP configuration for all adapters. Adapters can represent physical interfaces, such as installed network adapters, or logical interfaces, such as dial-up connections.</li><li>FirewallExecutionLog.txt and pfirewall.log</li></ul><p><div class="alert"><b>NOTE:</b> The pfirewall.log file must exist in %windir%\system32\logfiles\firewall\pfirewall.log, so it will be included in the investigation package. For more information on creating the firewall log file, see [Configure the Windows Defender Firewall with Advanced Security Log](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)<div>|
+|Prefetch files|Windows Prefetch files are designed to speed up the application startup process. It can be used to track all the files recently used in the system and find traces for applications that might have been deleted but can still be found in the prefetch file list. <ul><li>Prefetch folder: Contains a copy of the prefetch files from `%SystemRoot%\Prefetch`. NOTE: It is suggested to download a prefetch file viewer to view the prefetch files.</li><li>PrefetchFilesList.txt: Contains the list of all the copied files that can be used to track if there were any copy failures to the prefetch folder.</li></ul>|
+|Processes|Contains a .CSV file listing the running processes and provides the ability to identify current processes running on the device. This can be useful when identifying a suspicious process and its state.|
+|Scheduled tasks|Contains a .CSV file listing the scheduled tasks, which can be used to identify routines performed automatically on a chosen device to look for suspicious code that was set to run automatically.|
 |Security event log|Contains the security event log, which contains records of login or logout activity, or other security-related events specified by the system's audit policy. <p><div class="alert"><b>NOTE:</b> Open the event log file using Event viewer.</div>|
 |Services|Contains a .CSV file that lists services and their states.|
-|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement. <p> Contains files for SMBInboundSessions and SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> If there are no sessions (inbound or outbound), you'll get a text file which tell you that there are no SMB sessions found.</div>|
-|System Information|Contains a SystemInformation.txt file which lists system information such as OS version and network cards.|
+|Windows Server Message Block (SMB) sessions|Lists shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network. This can help identify data exfiltration or lateral movement. <p> Contains files for SMBInboundSessions and SMBOutboundSession. <p> <div class="alert"><b>NOTE:</b> If there are no sessions (inbound or outbound), you'll get a text file that tell you that there are no SMB sessions found.</div>|
+|System Information|Contains a SystemInformation.txt file that lists system information such as OS version and network cards.|
 |Temp Directories|Contains a set of text files that lists the files located in %Temp% for every user in the system. <p> This can help to track suspicious files that an attacker may have dropped on the system. <p> <div class="alert"><b>NOTE:</b> If the file contains the following message: "The system cannot find the path specified", it means that there is no temp directory for this user, and might be because the user didn't log in to the system.</div>|
 |Users and Groups|Provides a list of files that each represent a group and its members.|
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
-|CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code in case of failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
+|CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 |
 
 ## Run Microsoft Defender Antivirus scan on devices
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
-> [!IMPORTANT]
->
-> - This action is available for devices on Windows 10, version  1709 or later.
-> - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
+>[!IMPORTANT]
+>- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+>- A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender AV is the active antivirus solution or not. Microsoft Defender AV can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
 
@@ -150,11 +148,10 @@ The Action center will show the scan information and the device timeline will in
 
 In addition to containing an attack by stopping malicious processes, you can also lock down a device and prevent subsequent attempts of potentially malicious programs from running.
 
-> [!IMPORTANT]
->
-> - This action is available for devices on Windows 10, version  1709 or later.
+>[!IMPORTANT]
+> - This action is available for devices on Windows 10, version  1709 or later and Windows Server 2016. 
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
-> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
+> - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)).
 
 To restrict an application from running, a code integrity policy is applied that only allows files to run if they are signed by a Microsoft issued certificate. This method of restriction can help prevent an attacker from controlling compromised devices and performing further malicious activities.
 
@@ -171,19 +168,22 @@ When an app is restricted, the following notification is displayed to inform the
 
 ![Image of app restriction.](images/atp-app-restriction.png)
 
+>[!NOTE]
+>The notification is not available on Windows Server 2016 and Windows Server 2012 R2.
+
 ## Isolate devices from the network
 
 Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
 
-> [!IMPORTANT]
->
-> - Full isolation is available for devices on Windows 10, version 1703 and Windows Server 2019.
-> - Selective isolation is available for devices on Windows 10, version 1709 or later and Windows Server 2019.
-> - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+>[!IMPORTANT]
+>- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+>- Full isolation is available for devices on Windows 10, version 1703, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
+>- Selective isolation is available for devices on Windows 10, version 1709 or later.
+>- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
-On Windows 10, version 1709 or later, you'll have additional control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
+On Windows 10, version 1709 or later, you'll have more control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
 
 > [!NOTE]
 > You'll be able to reconnect the device back to the network at any time. The button on the device page will change to say **Release from isolation**, and then you take the same steps as isolating the device.

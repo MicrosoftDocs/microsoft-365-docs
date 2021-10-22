@@ -15,7 +15,8 @@ ms.collection:
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Priority
+- admindeeplinkTEAMS
+ms.localizationpriority: high
 recommendations: false
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---
@@ -56,7 +57,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 ### Sharing
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Org Settings > Security & privacy tab > Sharing
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > **Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a> > **Sharing**.
 
 ![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center.](../media/sharepoint-security-privacy-sharing-setting.png)
 
@@ -66,7 +67,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 ### Microsoft 365 Groups
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Microsoft 365 Groups
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > **Settings** > **Org settings** > Microsoft 365 Groups
 
 ![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center.](../media/office-365-groups-guest-settings.png)
 
@@ -85,7 +86,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 ### Guest access
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle.png)
 
@@ -95,7 +96,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 ### Guest calling
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest calling options.](../media/teams-guest-calling-setting.png)
 
@@ -105,7 +106,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 ### Guest meeting
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest meeting settings.](../media/teams-guest-meeting-settings.png)
 
@@ -117,7 +118,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 ### Guest messaging
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > Org-wide settings > Guest access
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest messaging settings.](../media/teams-guest-messaging-settings.png)
 

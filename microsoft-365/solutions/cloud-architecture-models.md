@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - M365solutions
@@ -21,6 +21,13 @@ These cloud architecture posters give you information about Microsoft cloud serv
 
 IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as networking, identity, and security.
 
+<a name="attacks"></a>
+### Common attacks and Microsoft capabilities that protect your organization
+Learn about the most common cyber attacks and how Microsoft can help your organization at every stage of an attack. 
+
+| Item | Description |
+|:-----|:-----|
+|[![Illustration of the Common attacks poster.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Updated September 2021 | This poster illustrates the path of common attacks and describes which capabilities help stop attackers at each stage of an attack. <br/><br/>**Related solution guides** <br/> <ul><li>[Evaluate and pilot Microsoft 365 Defender](../security/defender/eval-overview.md)</li><li>[Recommended identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Deploy information protection for data privacy regulations with Microsoft 365](information-protection-deploy.md)</li><li>[Deploy ransomware protection for your Microsoft 365 tenant](ransomware-protection-microsoft-365.md)</li><li>[Insider risk solutions in Microsoft 365](../compliance/insider-risk-solution-overview.md)</li></ul>
 
 <a name="identity"></a>
 ### Microsoft cloud identity for IT architects
@@ -38,7 +45,7 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security%20(1).pdf)  \| <br/>Updated April 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
+|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>Updated October 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
    
 <a name="networking"></a>
 ### Microsoft cloud networking for IT architects
@@ -65,11 +72,5 @@ This series of topics illustrates several architecture approaches for mergers, a
 |:-----|:-----|
 |[![Thumb image for Microsoft cloud tenant-to-tenant migrations.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Updated February 2021    |This model contains: <ul><li>A mapping of business scenarios to architecture approaches</li><li>Design considerations</li><li>Single event migration flow example</li><li>Phased migration flow example</li><li>Tenant move or split flow example</li></ul>|
 
-<a name="attacks"></a>
-### Common attacks and Microsoft capabilities that protect your organization
-Learn about the most common cyber attacks and how Microsoft can help your organization at every stage of an attack. 
 
-| Item | Description |
-|:-----|:-----|
-|[![Illustration of the Common attacks poster.](../media/solutions-architecture-center/common-attacks-model-thumb.png) ](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> Updated August 2017 | This poster illustrates the path of common attacks and describes which capabilities help stop attackers at each stage of an attack. <br/>|
 

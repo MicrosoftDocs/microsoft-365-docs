@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -50,7 +50,7 @@ To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Serv
 
 DLP protection are applied differently to Teams entities.
 
-|User Accounts/Groups/List  |Teams Entity |DLP protection available|
+|When policy is scoped by |these Teams Entities |will have DLP protection available|
 |---------|---------|---------|
 |individual user accounts     |1:1/n chats         |yes         |
 |     |general chats         |no         |

@@ -9,13 +9,14 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---
@@ -152,7 +153,7 @@ First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 
   
 1. In an internet browser private window, use your global administrator account credentials to sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com).
     
-2. On the **Microsoft 365 admin center** page, in the left navigation, select **Billing > Purchase services**.
+2. On the **Microsoft 365 admin center** page, in the left navigation, select **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase services**</a>.
     
 3. On the **Purchase services** page, select **Microsoft 365 E5**, and then select **Get free trial**.
 
@@ -162,7 +163,7 @@ First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 
 
 6. On the **Order receipt** page, select **Continue**.
 
-7. In the Microsoft 365 admin center, select **Users > Active users**.
+7. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 8. In **Active users**, select your administrator account.
 

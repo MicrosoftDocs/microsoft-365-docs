@@ -2,20 +2,20 @@
 title: Configure and validate Microsoft Defender Antivirus network connections
 description: Configure and test your connection to the Microsoft Defender Antivirus cloud protection service.
 keywords: antivirus, Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 06/17/2021
+ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure and validate Microsoft Defender Antivirus network connections
@@ -50,9 +50,7 @@ The table in this section lists the services and their associated website addres
 
 Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you might need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
 
-<br>
-
-****
+<br/><br/>
 
 |Service and description|URL|
 |---|---|
@@ -77,7 +75,7 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 ```
 
 > [!NOTE]
-> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher.
+> You need to open an administrator-level version of the command prompt. Right-click the item in the Start menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11.
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
@@ -112,3 +110,8 @@ You'll also see a detection under **Quarantined threats** in the **Scan history*
    > Versions of Windows 10 before version 1703 have a different user interface. See [Microsoft Defender Antivirus in the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
    The Windows event log will also show [Windows Defender client event ID 1116](troubleshoot-microsoft-defender-antivirus.md).
+
+## See also
+
+- [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)

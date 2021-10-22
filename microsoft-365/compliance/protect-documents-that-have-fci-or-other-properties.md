@@ -11,13 +11,14 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContentPropertyContainsWords'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: 
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Learn how to use a data loss prevention (DLP) policy to protect documents that have properties from a third-party system.
 ---
 
@@ -58,7 +59,7 @@ You first need to upload a document with the property that you want to reference
 
 ### Step 2: Create a managed property
 
-1. Sign in to the Microsoft 365 admin center.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 2. In the left navigation, choose **Admin centers** \> **SharePoint**. You're now in the SharePoint admin center.
 

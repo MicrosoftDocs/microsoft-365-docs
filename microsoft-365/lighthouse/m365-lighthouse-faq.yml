@@ -8,7 +8,7 @@ metadata:
   audience: Admin
   ms.topic: article
   ms.prod: microsoft-365-lighthouse
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -33,15 +33,15 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium.  Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers who are using Microsoft 365 Business Premium or Microsoft 365 E3.  Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
           
       - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 Business Premium or Microsoft 365 E3 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
           
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
-          No additional costs are associated with using the Preview version of Lighthouse to manage Microsoft 365 Business Premium services and connected devices. Lighthouse is currently in Preview and available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          No additional costs are associated with using the Preview version of Lighthouse to manage Microsoft 365 Business Premium and Microsoft 365 E3 services and connected devices. Lighthouse is currently in Preview and available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers are not currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: What are the requirements to use Microsoft 365 Lighthouse?
         answer: |
@@ -63,7 +63,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium subscription and fewer than 500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
           
       - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
         answer: |
@@ -77,9 +77,9 @@ sections:
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
 
-      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium?
+      - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium or Microsoft 365 E3?
         answer: |
-          Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium licenses in place for their users. For users in customer tenants who don't have Business Premium licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          Lighthouse helps you manage customer tenants that have Microsoft 365 Business Premium or Microsoft 365 E3 licenses in place for their users. For users in customer tenants who don't have Business Premium or E3 licenses, Lighthouse functionality will be limited. For example, if a user is missing a license that includes Intune, that user's devices, device compliance status, and threats status will be unavailable; and if a user is missing a license that includes Azure AD P1, that user's password and sign-in management will be unavailable. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: How do I qualify to manage customer Cloud PCs in Microsoft 365 Lighthouse?
         answer: |

@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -82,3 +82,5 @@ Time information in advanced hunting is currently in the UTC time zone.
 - [Understand the schema](advanced-hunting-schema-reference.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](overview-custom-detections.md)
+- [Storage account overview](/azure/storage/common/storage-account-overview)
+- [Azure Event Hubs — A big data streaming platform and event ingestion service](/azure/event-hubs/event-hubs-about)

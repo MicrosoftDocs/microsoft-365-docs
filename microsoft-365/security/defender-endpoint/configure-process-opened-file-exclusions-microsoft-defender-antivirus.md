@@ -8,13 +8,14 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure exclusions for files opened by processes
@@ -30,16 +31,13 @@ This article describes how to configure exclusion lists.
 
 ## Examples of exclusions
 
-<br>
-
-****
+<br/><br/>
 
 |Exclusion|Example|
 |---|---|
 |Any file on the machine that is opened by any process with a specific file name|Specifying `test.exe` would exclude files opened by: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
 |Any file on the machine that is opened by any process under a specific folder|Specifying `c:\test\sample\*` would exclude files opened by: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Any file on the machine that is opened by a specific process in a specific folder|Specifying `c:\test\process.exe` would exclude files only opened by `c:\test\process.exe`|
-|
 
 When you add a process to the process exclusion list, Microsoft Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -92,16 +90,13 @@ The format for the cmdlets is:
 
 The following are allowed as the \<cmdlet\>:
 
-<br>
-
-****
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |---|---|
 |Create or overwrite the list|`Set-MpPreference`|
 |Add to the list|`Add-MpPreference`|
 |Remove items from the list|`Remove-MpPreference`|
-|
 
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
@@ -138,15 +133,12 @@ In particular, you cannot use the question mark (`?`) wildcard, and the asterisk
 
 The following table describes how the wildcards can be used in the process exclusion list:
 
-<br>
-
-****
+<br/><br/>
 
 |Wildcard|Example use|Example matches|
 |---|---|---|
 |`*` (asterisk) <p> Replaces any number of characters|`C:\MyData\*`|Any file opened by `C:\MyData\file.exe`|
 |Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Any file opened by `C:\ProgramData\CustomLogFiles\file.exe`|
-|
 
 ## Review the list of exclusions
 

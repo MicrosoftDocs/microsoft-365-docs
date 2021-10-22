@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -18,6 +18,7 @@ ms.custom:
 - Adm_O365
 - MiniMaven
 - MSB365
+- admindeeplinkMAC
 search.appverid:
 - BCS160
 - MET150
@@ -37,9 +38,9 @@ For more information, see [Microsoft Secure Score](../security/defender/microsof
 
 Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email:
 
-1. Go to <https://protection.office.com> and sign in with your admin account credentials.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account credentials.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. In the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
 
 3. Double-click the default policy to edit this company-wide policy.
 
@@ -97,7 +98,7 @@ Hackers who gain access to a user's mailbox can steal your mail by setting the m
 
 To create a mail transport rule, either watch [this short video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
 
-1. In the Microsoft 365 admin center, click **Admin centers** \> **Exchange**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, click **Admin centers** \> **Exchange**.
 
 2. In the **mail flow** category, click **rules**.
 
@@ -125,9 +126,9 @@ We recommend that you get started with this protection by creating a policy to p
 
 To create an anti-phishing policy in Defender for Office 365, watch [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
 
-1. Go to <https://protection.office.com>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. On the **Policy** page, choose **Anti-phishing**.
 
@@ -180,9 +181,9 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 To create an Safe Attachment policy, either watch [this short video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. On the Policy page, choose **Safe Attachments**.
 
@@ -216,9 +217,9 @@ We recommend that you do the following:
 
 To set up Safe Links, watch [this short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a> and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the left navigation pane, under **Threat management**, choose **Policy**.
 
 3. On the Policy page, choose **Safe Links**.
 
@@ -285,8 +286,9 @@ The following figure shows the default policies that are included with Microsoft
 
 You can prevent people in your organization from sharing their calendars, or you can also manage what they can share. For example, you can restrict the sharing to free/busy times only.
 
-1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings**.
-2. On the **Services** page, choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
+1. Go to the admin center at <https://admin.microsoft.com> and choose **Settings** \> **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a>.
+
+1. Choose **Calendar**, and choose whether people in your organization can share their calendars with people outside who have Office 365 or Exchange, or with anyone.
 
    If you choose the share with anyone option, you can decide to also only share free/busy information.
 

@@ -2,8 +2,8 @@
 title: Insider risk management policies
 description: Learn about insider risk management policies in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -122,13 +122,13 @@ The following table lists the triggering events and prerequisites for policies c
 
 | **Policy template** | **Triggering events for policies** | **Prerequisites** |
 | :------------------ | :--------------------------------- | :---------------- |
-| Data theft by departing users | Resignation or termination date indicator from HR connector | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators or Azure Active Directory integration enabled |
-| General data leaks | Data leak policy activity that creates a High severity alert | (optional) DLP policy configured for High severity alerts or built-in data exfiltration triggering event |
+| Data theft by departing users | Resignation or termination date indicator from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators |
+| General data leaks | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | (optional) DLP policy configured for High severity alerts |
 | Data leaks by priority users | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | (optional) DLP policy configured for High severity alerts <br><br> Priority user groups configured in insider risk settings |
 | Data leaks by disgruntled users | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators |
-| General security policy violations | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
+| General security policy violations | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
 | Security policy violations by departing users | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
-| Security policy violations by priority users | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured <br><br> Priority user groups configured in insider risk settings |
+| Security policy violations by priority users | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured <br><br> Priority user groups configured in insider risk settings |
 | Security policy violations by disgruntled user | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
 
 ## Prioritize content in policies
@@ -139,7 +139,7 @@ For example, your organization has a dedicated SharePoint site for a highly conf
 
 When you create an insider risk management policy in the policy wizard, you can choose from the following priorities:
 
-- **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. 
+- **SharePoint sites**: Any activity associated with all file types in defined SharePoint sites is assigned a higher risk score. Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 - **Sensitive information types**: Any activity associated with content that contains [sensitive information types](sensitive-information-type-entity-definitions.md) are assigned a higher risk score.
 - **Sensitivity labels**: Any activity associated with content that has specific [sensitivity labels](sensitivity-labels.md) applied are assigned a higher risk score.
 
@@ -178,13 +178,13 @@ Cumulative exfiltration detection is enabled by default when using the following
 - Data leaks by disgruntled users
 
 > [!NOTE]
-> Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected.
+> Cumulative exfiltration detection uses exfiltration indicators that are enabled in the global settings for insider risk management and exfiltration indicators that are selected in a policy. As such, cumulative exfiltration detection is only evaluated for the necessary exfiltration indicators selected. Cumulative exfiltration activities for [sensitivity labels](sensitivity-labels.md) configured in priority content generate higher risk scores.
 
 When cumulative exfiltration detection is enabled for data theft or data leak policies, insights from cumulative exfiltration activities are displayed on the **User activity** tab within an insider risk management case.
 
 To learn more about the User activity management, see [Insider risk management cases: User activities](insider-risk-management-cases.md#user-activity).
 
-## Policy health (preview)
+## Policy health
 
 The policy health status gives you insights into potential issues with your insider risk management policies. The Status column on the Policies tab can alert you to policies issues that may prevent user activity from being reported or why the number of activity alerts is unusual. The policy health status can also confirm that the policy is healthy and doesn't need attention or configuration changes.
 
@@ -266,7 +266,7 @@ Complete the following steps to create a new policy:
     - **Description (optional)**: Enter a description for the policy.
 
 6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts are not supported.
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
@@ -280,6 +280,9 @@ Complete the following steps to create a new policy:
     - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+
+    >[!NOTE]
+    >Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 
 12. Select **Next** to continue.
 13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.

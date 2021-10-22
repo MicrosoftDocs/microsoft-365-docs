@@ -1,16 +1,14 @@
 ---
-title: Onboard Windows 10 devices using Mobile Device Management tools
-description: Use Mobile Device Management tools to deploy configuration package on devices so that they're onboarded to the service.
+title: Onboard Windows devices using Mobile Device Management tools
+description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the Defender for Endpoint service.
 keywords: onboard devices using mdm, device management, onboard Microsoft Defender for Endpoint devices, mdm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -18,8 +16,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-
-# Onboard the Windows 10 devices using Mobile Device Management tools
+# Onboard Windows devices using Mobile Device Management tools
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,7 +26,8 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsmdm-abovefoldlink)
 
-You can use mobile device management (MDM) solutions to configure devices. Defender for Endpoint supports MDMs by providing OMA-URIs to create policies to manage devices.
+You can use mobile device management (MDM) solutions to configure Windows 10 devices. Defender for Endpoint supports MDMs by providing OMA-URIs to create policies to manage devices.
+
 
 For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) and [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
@@ -41,9 +39,7 @@ For more information on enabling MDM with Microsoft Intune, see [Device enrollme
 
 ## Onboard devices using Microsoft Intune
 
-[![Image of the PDF showing onboarding devices to Defender for Endpoint using Microsoft Intune.](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
-
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) or [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
 Follow the instructions from [Intune](/intune/advanced-threat-protection).
 
@@ -55,7 +51,7 @@ For more information on using Defender for Endpoint CSP see, [WindowsAdvancedThr
 > - Configuration of diagnostic data reporting frequency is only available for devices on Windows 10, version 1703.
 
 
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) or [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) or [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Microsoft Defender for Endpoint.
 
 ## Run a detection test to verify onboarding
 After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md).
@@ -72,7 +68,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
 
-   1. Select Windows 10 as the operating system.
+   1. Select Windows 10 or Windows 11 as the operating system.
 
    1. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
 
@@ -85,7 +81,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
    - Date type: String
    - Value: [Copy and paste the value from the content of the WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding file]
 
-For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+For more information on Microsoft Intune policy settings, see [Windows 10 policy settings in Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
@@ -94,10 +90,9 @@ For more information on Microsoft Intune policy settings see, [Windows 10 policy
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
-
-- [Onboard Windows 10 devices using Group Policy](configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)

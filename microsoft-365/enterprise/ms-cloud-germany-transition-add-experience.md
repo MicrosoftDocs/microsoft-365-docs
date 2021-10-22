@@ -7,7 +7,7 @@ ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 
@@ -70,7 +70,9 @@ The following table provides an overview about which endpoints will replace the 
 |:------|:-------|:-------|
 | Update on-premises DNS services for Office 365 services endpoints. | Customer-managed DNS entries that point to Microsoft Cloud Deutschland need to be updated to point to the Office 365 Global services endpoints. Please refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration. | Failure to do so may result in failure of the service or of software clients. |
 ||||
-
+   > [!NOTE]
+   > The Microsoft 365 admin center will instruct transitioned customers to provision mail exchange (MX) records for new domains under the outlook.de zone. Example: consoto-com.mail.protection.outlook.de. For new domains the expected/correct value to point your custom MX record to is under the outlook.com zone. Using the same example, the correct entry is consoto-com.mail.protection.outlook.com. A fix is underway to correct this behavior for domains of transitioned organizations.
+   
 ## Third-party services
 **Applies to:** Customers using third-party services for Office 365 services endpoints
 

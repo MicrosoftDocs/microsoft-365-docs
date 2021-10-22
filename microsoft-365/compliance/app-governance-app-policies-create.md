@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
@@ -64,6 +64,8 @@ App governance includes these templates to generate alerts for app permissions.
 |---|---|
 |Overprivileged apps|Highlights any apps with more granted permissions than are being used by those apps to identify opportunities for potential permission reduction. <p> By default, this policy will flag all apps that are marked as Overprivileged if not used for 90 days. This time period filter can be customized with more conditions and actions.|
 |New app with high-privilege permissions|Highlights all new apps with high privilege permissions to identify potential high-footprint apps that may need further investigation. <p> By default, this policy will flag all apps registered within the last 7 days that have high-scoped permissions.|
+ |New app with non-Graph permissions|Highlights all new apps with permissions to non-Graph APIs to identify and review APIs that might not be getting the latest security updates or may not be supported in future.
+ <p> By default, this policy will flag all apps registered within the last 7 days that have non-Graph permissions.|
 |||
 
 ### M365 certification
@@ -126,6 +128,7 @@ Here are the available conditions for a custom app policy.
 |Delegated Permission|Select one or more API permission from list|[Microsoft Graph permissions reference](/graph/permissions-reference)|
 |High privilege|Yes or No|This is an internal designation based on the same logic used by MCAS.|
 |Overprivileged app|Yes or No|Apps with more granted permissions than are being used by those apps.|
+|Non-Graph API permissions|Yes or No|Apps that have non-Graph API permissions.|
 |App data access|Greater than X GB data access per hour||
 |App data access trend|X% increase in data usage in last 7 days||
 |App API Access|Greater than X API calls per hour||
@@ -150,15 +153,25 @@ On the **Define Policy Status** page, select one of these options:
 - **Active**: Policies are evaluated and configured actions will occur.
 - **Inactive**: Policies are not evaluated and configured actions will not occur.
 
-<!--
-## Configure a user-based policy
+## Create a custom policy
 
-## Create an app metadata-based policy
+App governance provides some basic templates that make it easy to create useful policies for monitoring apps in your tenant.
 
-Publish metadata-based policies
-
-## Configure access permissions
--->
+1. On the app governance page, select the **Policy** tab.
+1. Select **Create policy**.
+1. Under **Categories** select **Custom**. Under **Templates** select **Custom policy**. Select **Next**.
+1. Enter a name for your policy, type a description, and then in the **Policy severity** drop down list, select a severity. Select **Next**.
+1. Select **No, I want to customize the policy** and then select **Next**.
+1. Choose whether you want this policy to apply to all apps in your tenant or choose specific apps. If you choose specific apps for this policy, select **Add apps** and select the desired apps from the list. In the **Choose apps** pane, you can select multiple apps to which this policy will be applied, and then select **Add**. Select **Next** when you are satisfied with the list.
+1. Select **Set new conditions for the policy** and then select **Edit conditions**. Select **Add condition** and choose a condition from the list and then select the condition to apply. Repeat to add more conditions. Select **Save** to save the rule, and when you are finished adding rules, select **Next**.
+1. By default, this policy will trigger alerts when the conditions are met. You can choose to take action when the policy triggers such as **Disable app**. Use caution when applying actions because a policy may affect users and legitimate app use. Select **Next**.
+1. Choose the policy status:
+    - **Audit** - policy evaluation is active but policy action is disabled.
+    - **Active** - policy evaluation and action are active.
+    - **Inactive** - policy evaluation and action are disabled.
+  
+    You should use Audit mode for testing a new policy. Select **Next**.
+1. Carefully review all parameters of your custom policy. Select **Submit** when you are satisfied. You can also go back and change settings by selecting **Edit** beneath any of the settings.
 
 ## Test and monitor your new app policy
 

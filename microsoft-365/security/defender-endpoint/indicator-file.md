@@ -3,15 +3,13 @@ title: Create indicators for files
 ms.reviewer:
 description: Create indicators for a file hash that define the detection, prevention, and exclusion of entities.
 keywords: file, hash, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -47,7 +45,10 @@ It's important to understand the following prerequisites prior to creating indic
 
 - The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Supported on devices with Windows 10, version 1703 or later, Windows Server 2016 and 2019.
+- Supported on devices with Windows 10, version 1703 or later, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
+    
+   >[!NOTE]
+    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
 
 - To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
@@ -74,7 +75,7 @@ One of the options when taking [response actions on a file](respond-file-alert
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 
-## Private Preview: Alerting on file blocking actions
+## Public Preview: Alerting on file blocking actions
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -102,7 +103,7 @@ Choose if to Generate an alert on the file block event and define the alerts set
 >
 > For more information about the EnableFileHashComputation group policy, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
-## Private Preview: Advanced hunting capabilities
+## Public Preview: Advanced hunting capabilities
 
 > [!IMPORTANT]
 > Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prerelease product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.

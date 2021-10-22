@@ -2,15 +2,13 @@
 title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
 description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -39,7 +37,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-![Image of sign in failed error Unexpected error.](images/f9c3bad127d636c1f150d79814f35d4c.png)
+:::image type="content" alt-text="Image of sign-in failed error Unexpected error." source="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -60,7 +58,7 @@ from Google Play Store and try again
 
 **Sign in failed:** *Invalid license, please contact administrator*
 
-![Image of sign in failed  please contact administrator.](images/920e433f440fa1d3d298e6a2a43d4811.png)
+:::image type="content" alt-text="Image of sign-in failed  please contact administrator." source="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, please contact administrator*
 
@@ -141,3 +139,29 @@ Users can follow these steps to enable the same permissions from the device sett
    ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
 
 Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
+
+## Send in-app feedback
+
+If a user faces an issue which is not already addressed in the above sections or is unable to resolve using the listed steps, the user can provide **in-app feedback** along with **diagnostic data**. Our team can then investigate the logs to provide the right solution. Users can follow these steps to do the same:
+
+1.	Open the **MDE application** on your device and click on the **profile icon** in the top-left corner.
+
+    :::image type="content" alt-text="Click on profile icon." source="images/select-profile-icon-1.jpg":::
+
+2.	Select “Help & feedback”.
+
+    :::image type="content" alt-text="Select help and feedback." source="images/selecthelpandfeedback2.png":::
+
+3.	Select “Send feedback to Microsoft”.
+
+    :::image type="content" alt-text="Select send feedback to Microsoft." source="images/send-feedback-to-microsoft-3.jpg":::
+
+4.	Choose from the given options. To report an issue, select “I want to report an issue”.
+
+    :::image type="content" alt-text="Report an issue." source="images/report-issue-4.jpg":::
+
+5.	Provide details of the issue that you are facing and check “Send diagnostic data”. We recommend checking “Include your email address” so that the team can reach back to you with a solution or a follow-up.
+
+    :::image type="content" alt-text="Add details and attach diagnostic data." source="images/finalsubmit5.png":::
+
+6.	Click on “Submit” to successfully send the feedback.
