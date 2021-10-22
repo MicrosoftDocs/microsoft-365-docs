@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -20,19 +20,19 @@ ms.custom: seo-marvel-mar2020
 
 # Email threading in Advanced eDiscovery
 
-Consider an email conversation that has been going on for a while. In most cases, the last email on the thread will include the contents of all the preceding emails; reviewing the last email will give a complete context of the conversation that happened in the thread. Email threading identifies such emails so that reviewers can review a fraction of collected documents without losing any context.
+Consider an email conversation that has been going on for a while. In most cases, the last message in the email thread will include the contents of all the preceding messages. Therefore, reviewing the last message will give a complete context of the conversation that happened in the thread. Email threading identifies such messages so that reviewers can review a fraction of collected documents without losing any context.
 
 ## What does email threading do?
 
-Email threading parses each email and deconstructs it to individual messages; each email is a chain of individual messages. Then, it analyzes all emails in the review set to determine whether an email has unique content or if the chain is wholly contained in a different email. In the end emails are divided into four categories:
+Email threading parses each email thread and deconstructs it to individual messages. Each email thread is a chain of individual messages. Advanced eDiscovery analyzes all email messaes in the review set to determine whether an email message has unique content or if the chain (parent messages) are wholly contained in the final message in the email thread. Email messages are divided into four inclusive values:
 
-- **Inclusive**: the last message in the email has unique content, and the email has all of the attachments that were included in other emails of which the content is wholly contained in this email.
+- **Inclusive**: An *Inclusive* email is the final email message in an email thread and contains all the previous content of that email thread.
 
-- **Inclusive minus**: the last message in the email has unique content, but the email does not contain some of the attachments that were included in other emails of which the content is wholly contained in this email.
+- **Inclusive minus**: An email message is designated as *Inclusive minus* if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclusive minus value to determine which specific email message within the thread has associated attachments. 
 
-- **Inclusive copy**: an exact copy of an inclusive/inclusive minus email
+- **Inclusive copy**: An email message is considered an *Inclusive copy* if it is an exact copy of an Inclusive or Inclusive minus message. 
 
-- **None**: The content of this email is wholly contained in at least one email that is marked as inclusive/inclusive minus.
+- **None**: The *None* value indicates that the content of the message is wholly contained in at least one other email message that is marked as Inclusive or Inclusive minus.
 
 ## How is it different from conversations in Outlook?
 

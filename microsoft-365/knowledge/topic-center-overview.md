@@ -1,81 +1,84 @@
 ---
-title: 'Topic center overview (Preview) '
-description: 'Learn about the Topic Center.'
-author: efrene
-ms.author: efrene
+title: Topic center overview in Microsoft Viva Topics
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
-ms.date: 8/1/2020
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
-ms.service: o365-administration
-search.appverid: 
-ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-
+ms.prod: microsoft-365-enterprise
+search.appverid:
+ms.collection:
+- enabler-strategic
+- m365initiative-viva-topics
+ms.localizationpriority:  medium
+description: Learn about the topic center in Microsoft Viva Topics.
 ---
-# Topic center overview (Preview)
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+# Topic center overview in Microsoft Viva Topics
 
-The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.
+In Microsoft Viva Topics, the topic center is a modern SharePoint site that serves as a center of knowledge for your organization. It's created during [Viva Topics setup](set-up-topic-experiences.md) in the Microsoft 365 admin center.
 
-Through the topic center, users with the proper permissions can do the following:
+The topic center has a default home page with the **Topics** web part where all licensed users can see the topics to which they have a connection.
 
-- Confirm or reject discovered topics
-- Create a new topic page
-- Edit an existing topic page
+While all licensed users who can view topics will have access to the topic center, knowledge managers can also manage topics through the **Manage topics** page. The **Manage topics** tab will only display to users who have the Manage topics permissions.
 
-> [!Note] 
-> You can learn more about each task in [Work with topics in the topic center](work-with-topics.md).
+## Where is my topic center
 
-## Where is the topic center
+The topic center is created during Viva Topics setup. After setup completes, an admin can find the URL on the [Topic center management page](./topic-experiences-administration.md#to-access-topics-management-settings).
 
-Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).
 
-1. In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
+1. In the Microsoft 365 admin center, select **Settings**, and then select **Org settings**.
+2. On the **Services** tab, select **Topic Experiences**.
 
-   ![Connect people to knowledge](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
+    ![Connect people to knowledge.](../media/admin-org-knowledge-options-completed.png)
 
-2. On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.
+3. Select the **Topic center** tab. Under **Site address** is a link to your topic center.
 
-## Permissions to use the topic center
+    ![knowledge-network-settings.](../media/knowledge-network-settings-topic-center.png)
 
-To work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
+## Home page
 
-Topic center users can be given two sets of permissions:
+</br>
 
-- **Create and edit topics**: Create new topics or update topic content such as the description, documents and associated persons. Assign this permission to subject matter experts who are tasked with reviewing topic pages.
-- **Manage topics**: Use the topic dashboard to review topics across the organization. Users can perform actions such as confirming and rejecting unconfirmed topics.
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LAhZ]
 
-A user can be given both sets of permissions, or only one if needed. 
+</br>
 
-## Reviewing topics in the topic dashboard
+On the topic center home page, you can see the topics in your organization to which you have a connection.
 
-The topic dashboard shows topics that were mined from your specified source locations. Each topic will show the date the topic was discovered and if any feedback has been provided on it. A user who was assigned **Manage topics** permissions can review the unconfirmed topics and choose to:
-- Confirm the topic: Highlights the topic to users who have access and lets them see the associated topic card and topic page.
-- Reject the topic: Makes the topic not available to users. The topic is moved to the **Rejected** tab and can be confirmed later if needed.
+- Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?** These are topics in which your connection to the topic has been suggested through AI. For example, you might be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
+
+   ![Suggested connections.](../media/knowledge-management/my-topics.png)
+
+- Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
+
+   ![Confirmed topics.](../media/knowledge-management/my-topics-confirmed.png)
+
+Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection. For example, they can provide more information about their connection to the topic.
+
+## Manage topics page
+
+To work on the **Manage topics** page of topic center, you need to have the required Manage topics permissions needed for the knowledge manager role. Your admin can assign these permissions to users during [Viva Topics setup](set-up-topic-experiences.md), or new users can be [added afterwards](topic-experiences-knowledge-rules.md) by an admin through the Microsoft 365 admin center.
+
+On the **Manage topics** page, the topic dashboard shows all the topics, you have access to, that were identified from your specified source locations. Each topic will show the date the topic was discovered. A user who was assigned Manage topics permissions can review the unconfirmed topics and choose to:
+
+- Confirm the topic: Indicates to users that an AI-suggested topic has been validated by a human curator.
+
+- Publish the topic: Edit the topic information to improve the quality of the topic that was initially identified, and highlights the topic to all users who have view access to topics.
+
+- Remove the topic: Makes the topic undiscoverable to end users. The topic is moved to the **Removed** tab and can be confirmed later if needed.
+
+For more information about how to manage topics on the **Manage topics** page, see [Manage topics](manage-topics.md).
 
 ## Create or edit a topic
 
-If you have **Create and edit topics** permissions, you can choose to:
+If you have Create and edit topics permissions, you can:
 
-- Edit existing topics: You can make changes to existing topic pages that were created through discovery.
-- Create new topics: You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.
+- [Edit existing topics](edit-a-topic.md): You can make changes to existing topic pages that were created through discovery.
 
-
-
-
-
+- [Create new topics](create-a-topic.md): You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.
 
 ## See also
 
-
-
-  
-
-
-
-
-
-
+[Manage topics in the topic center](manage-topics.md)

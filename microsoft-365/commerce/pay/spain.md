@@ -1,16 +1,16 @@
 ---
 title: Payment information for Spain
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
-localization_priority: Normal
+ms.custom: commerce_billing_payinfo
+ms.localizationpriority: medium
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---                                

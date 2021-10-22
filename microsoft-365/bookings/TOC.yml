@@ -9,6 +9,8 @@
       href: enter-business-information.md
     - name: Define your service offerings
       href: define-service-offerings.md
+    - name: Configure SMS text notifications
+      href: bookings-sms.md
     - name: Add staff to Bookings
       href: add-staff.md
     - name: Schedule business closures and time off
@@ -19,8 +21,6 @@
       href: customize-booking-page.md
     - name: Create a manual booking
       href: create-a-manual-booking.md
-    - name: Schedule business closures and time off
-      href: schedule-closures-time-off-vacation.md
     - name: Employee hours
       href: employee-hours.md
     - name: Add custom and required questions to the booking page
@@ -33,8 +33,10 @@
       href: set-language-time-zones.md
   - name: Get the Bookings app
     href: get-bookings-app.md
-  - name: Bookings app and virtual visits in Microsoft Teams
-    href: https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json
+  - name: Manage the Bookings app in Microsoft Teams
+    href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+  - name: Virtual visits with Microsoft Teams and the Bookings app
+    href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
   - name: Comparison chart - web app versus Teams app
     href: comparison-chart.md
   - name: Delete a booking calendar
@@ -44,4 +46,4 @@
   - name: Reporting information for Microsoft Bookings
     href: reporting-info.md
   - name: Microsoft Bookings frequently asked questions (FAQ)
-    href: bookings-faq.md
+    href: bookings-faq.yml

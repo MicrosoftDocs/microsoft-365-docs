@@ -1,5 +1,5 @@
 ---
-title: "Configure Teams with three tiers of protection"
+title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection:
@@ -18,8 +18,10 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - Ent_Architecture
+- seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Configuration recommendations for protecting files in Microsoft Teams."
+recommendations: false
+description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
 # Configure Teams with three tiers of protection
@@ -36,14 +38,14 @@ The configurations in this article align with Microsoft's recommendations for th
 
 - Highly sensitive protection
 
-For more information about these tiers and capabilities recommended for each tier, see [Microsoft cloud for enterprise architects illustrations](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+For more information about these tiers and capabilities recommended for each tier, see [Microsoft cloud for enterprise architects illustrations](./cloud-architecture-models.md)
 
 
 ## Three tiers at a glance
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
 
-||Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
+|-|Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
 |:-----|:-----|:-----|:-----|:-----|
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|
@@ -62,11 +64,11 @@ Teams for sensitive and highly sensitive protection are private teams in which s
 
 ## Sensitivity labels
 
-The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 While the baseline tier does not require sensitivity labels, consider creating a "general" label and then requiring that all teams be labeled. This will help ensure that users make a conscious choice about sensitivity when they create a team. If you plan to deploy the sensitive or highly sensitive tiers, we do recommend creating a "general" label that you can use for baseline teams and for files that are not sensitive.
 
-If you're new to using sensitivity labels, we recommend reading [Get started with sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) to get started. 
+If you're new to using sensitivity labels, we recommend reading [Get started with sensitivity labels](../compliance/get-started-with-sensitivity-labels.md) to get started. 
 
 If you have already rolled out sensitivity labels in your organization, consider how the labels used in the sensitive and highly sensitive tiers fit with your overall label strategy. 
 
@@ -89,11 +91,9 @@ By default, both owners and members of the team can share files and folders with
 
 ## Guest sharing
 
-If you need to collaborate with people outside your organization, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
+If you need to collaborate with people outside your organization, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
 
-Teams guest sharing is off by default, though sharing for Office 365 groups (where team membership is stored) and SharePoint is on. We turn Teams sharing on in the baseline tier, and you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
-
-The sensitivity label only affects guest sharing for the team. Guest sharing settings for the associated SharePoint site are controlled separately, and we have you align the two settings for both the sensitive and highly sensitive tiers.
+Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label.
 
 In the highly sensitive tier, we configure the sensitivity label to encrypt files to which it is applied. If you need guests to have access to these files, you must give them permissions when you create the label.
 
@@ -107,7 +107,17 @@ See the following references to create a secure and productive guest sharing env
 
 ## Access from unmanaged devices
 
-For the sensitive and highly sensitive tiers, we restrict access to SharePoint content with sensitivity labels. Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
+For the sensitive and highly sensitive tiers, we restrict access to SharePoint content with sensitivity labels. Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
+
+Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.
+
+### Control device access across Microsoft 365
+
+The unmanaged devices setting in sensitivity labels only affect SharePoint access. If you want to expand control of unmanaged devices beyond SharePoint, you can [Create an Azure Active Directory conditional access policy for all apps and services in your organization](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) instead. To configure this policy specifically for [Microsoft 365 services](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), select the **Office 365** cloud app under **Cloud apps or actions**.
+
+![Screenshot of the Office 365 cloud app in an Azure Active Directory conditional access policy.](/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 
 ## Next step
 
@@ -115,6 +125,6 @@ Start by [configuring the baseline level of protection](configure-teams-baseline
 
 ## See also
 
-[Security and compliance in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Security and compliance in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Alert policies in the security and compliance center](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Alert policies in the security and compliance center](../compliance/alert-policies.md)
