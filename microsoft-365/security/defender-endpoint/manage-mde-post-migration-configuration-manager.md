@@ -32,7 +32,7 @@ ms.reviewer: chventou
 We recommend using We recommend using [Microsoft Endpoint Manager](/mem), which includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) to manage your organization's threat protection features for devices (also referred to as endpoints).
 
 - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
-- [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
+- [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-mde-post-migration-intune.md)
 
 ## Configure Microsoft Defender for Endpoint with Configuration Manager
 
@@ -58,4 +58,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-- [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)
+- [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

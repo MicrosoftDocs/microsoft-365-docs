@@ -4,7 +4,7 @@
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -40,11 +40,11 @@
 
 
 
-### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
-#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
-#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
+#### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
+#### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
@@ -138,7 +138,7 @@
 ###### [Static proxy configuration](linux-static-proxy-configuration.md)
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
+###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 

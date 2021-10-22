@@ -35,7 +35,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: What's new in Microsoft Defender for Endpoint
-            url: whats-new-in-microsoft-defender-atp.md
+            url: whats-new-in-microsoft-defender-endpoint.md
           - text: Announcing Microsoft Defender for Endpoint Plan 1 (preview)
             url: defender-endpoint-plan-1.md
       - linkListType: video
