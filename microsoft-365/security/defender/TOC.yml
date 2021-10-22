@@ -4,15 +4,13 @@
   items: 
     - name: Overview
       items:
-      - name: What is Microsoft 365 Defender?
+      - name: Microsoft 365 Defender
         href: microsoft-365-defender.md
-      - name: Microsoft 365 Defender Overview (merge)
-        href: overview-security-center.md  
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Preview features (merge)
+      - name: Preview features
         href: preview.md
-      - name: Nested portal articles
+      - name: Nested portal articles (name)
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
