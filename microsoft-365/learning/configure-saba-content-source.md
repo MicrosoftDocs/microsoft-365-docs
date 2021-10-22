@@ -30,7 +30,7 @@ This article shows you how to configure Saba as a third-party learning content s
 
 2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
 
-![Image of the API dashboard.](../media/learning/saba-1.png)
+<!--![Image of the API dashboard.](../media/learning/saba-1.png)-->
 
 ## Client ID and Client Secret
 
@@ -38,7 +38,7 @@ This article shows you how to configure Saba as a third-party learning content s
 
 2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
 
-    ![Image of the button to generate the Client secret.](../media/learning/saba-2.png)
+    <!--![Image of the button to generate the Client secret.](../media/learning/saba-2.png)-->
 
 ## Username and password
 
@@ -54,7 +54,7 @@ You'll need to complete the configuration in your Microsoft 365 admin center.
     >[!NOTE]
     >Display name is the name of the carousel under which Saba learning content will appear for users in your organization in Viva Learning. If you don't enter a new name, it will display the default name "Saba Cloud".
 
-    ![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)
+    <!--![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)-->
 
 4. Select **Save** to activate Saba Cloud content in Microsoft Viva Learning. It may take up to 24 hours for the content to display in Viva Learning.
 
