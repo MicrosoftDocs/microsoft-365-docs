@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 mscollection: M365-security-compliance
 ms.custom:
@@ -53,7 +53,7 @@ When you sign up for either a free trial, or a subscription, you must enable Azu
 
 The Service Trust Portal features and content are accessible from the main menu.
 
-![Service Trust Portal menu](../media/STPMenus1.png)
+![Service Trust Portal menu.](../media/STPMenus1.png)
 
 The following sections describe each item in the main menu.
 
@@ -63,11 +63,8 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 
 ### Compliance Manager
 
-Compliance Manager is a workflow-based risk assessment tool that helps you track, assign, and verify your organization's regulatory compliance activities related to Microsoft Cloud services, such as Microsoft 365, Dynamics 365, and Azure. Use Compliance Manager to manage regulatory compliance within the shared responsibility model of the cloud. Depending on the version of Compliance Manager you want to use, see the following articles for more information:
-
-- [Microsoft Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft Compliance Manager (Preview)](compliance-manager-overview.md)
+> [!IMPORTANT]
+> Compliance Manager has moved from the Service Trust Portal to its new location in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use Compliance Manager in the Microsoft 365 compliance center.
 
 ### Trust Documents
 
@@ -105,27 +102,21 @@ This new feature lets you save (or *pin*) documents so that you can quickly acce
 
 Go to **More > Admin** to access administrative functions that are only available to the global administrator account. This option is visible only when you are signed in as a global administrator. There are two options in the **Admin** pull-down menu:
 
-- **Settings:** This page lets you assign role-based access (known as *user roles*) to Compliance Manager.  For more information, see:
+- **Settings:** This page lets you assign user roles for Compliance Manager (classic).
 
-  - [Permissions in Compliance Manager (Classic)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [Permissions in Compliance Manager (Preview)](compliance-manager-overview.md#permissions)
-
-  You can also configure whether actions in Compliance Manager are updated based on the status of the same action in Secure Score. This capability is only supported if you're using the latest version of Compliance Manager. For more information, see [Controlling automatic Secure Score updates](working-with-compliance-manager.md#controlling-automatic-secure-score-updates).
-
-- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user. For more information, see [User Privacy settings](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings).
+- **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager (classic) for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user.
 
 ### Search
 
 Click the magnifying glass in the upper right-hand corner of the Service Trust Portal page to expand the box, enter your search terms, and press **Enter**. The **Search** page is displayed, with the search term displayed in the search box and the search results listed below.
 
-![Service Trust Portal - Search on Documents with filter applied](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Service Trust Portal - Search on Documents with filter applied.](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-By default, th search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
+By default, the search returns document results. You can filter the results by using the dropdown lists to refine the list of documents displayed. You can use multiple filters to narrow the list of documents. Filters include the specific cloud services, categories of compliance or security practices, regions, and industries. Click the document name link to download the document.
 
-To list controls from Assessments in Compliance Manager related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager.
+To list controls from Assessments in Compliance Manager (classic) related your search terms, click **Compliance Manager**. The search results show the date the assessment was created, the name of the assessment grouping, the applicable Microsoft Cloud service, and whether the control is Microsoft or Customer Managed. Click the name of the control to view the control in the Assessment in Compliance Manager (classic).
 
-![Service Trust Portal - Search on Compliance Manager Controls](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Service Trust Portal - Search on Compliance Manager Controls.](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 
 > [!NOTE]
 > Service Trust Portal reports and documents are available to download for at least 12 months after publishing or until a new version of document becomes available.
@@ -154,7 +145,7 @@ To access these starter packs, go to **Service Trust Portal > Industries & Regio
 
 The Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice.
 
-![Service Trust Portal - Localized content options](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Service Trust Portal - Localized content options.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
 ## Give feedback
 
@@ -162,4 +153,4 @@ We can help with questions about the Service Trust Portal, or errors you experie
 
 Your feedback is important to us. Click on the Feedback button at the bottom of the page to send us comments about what you did or did not like, or suggestions you may have for improving our products or product features.
 
-![What kind of feedback do you have](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)
+![What kind of feedback do you have.](../media/5a949f4c-cd2d-4258-aa33-394f3f9feb7b.jpg)

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -27,13 +27,13 @@ Managing security and compliance is a partnership. You are responsible for prote
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
   
-[Deploy information protection for data privacy regulations with Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
+[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## Step 2: Check your Secure Score
 
 After setting up your Microsoft 365 subscription, take note of your starting score. Secure Score provides configuration suggestions that you can take to increase your score. The goal is to be aware of opportunities that you can take to protect your environment which won't negatively affect the productivity of your users.
   
-- [Introducing the Office 365 Secure Score](../security/mtp/microsoft-secure-score.md)
+- [Introducing the Office 365 Secure Score](../security/defender/microsoft-secure-score.md)
     
 ## Step 3: Plan access protection for identity and devices
 
@@ -41,7 +41,7 @@ Protecting access to your Microsoft 365 data and services is crucial to defendin
   
 - [Protect access to data and services in Office 365](protect-access-to-data-and-services.md)
     
-- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -55,7 +55,7 @@ Review and plan for file protection capabilities organized by three levels of pr
 
 The Security &amp; Compliance Center gives you a single view into the controls you will use to manage the spectrum of Microsoft 365 security, including threat management, data governance, and search and investigation. 
   
-- [Go to the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md)
+- [Go to the Security &amp; Compliance Center](./microsoft-365-compliance-center.md)
     
 - [Permissions in the Security &amp; Compliance Center](~/security/office-365-security/protect-against-threats.md)
     
@@ -65,9 +65,9 @@ The Security &amp; Compliance Center gives you a single view into the controls y
 
 Use these recommended configurations as a starting point for enterprise scale or sophisticated access security scenarios.
   
-- [Secure email policies and configurations](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [Secure email policies and configurations](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Contoso in the Microsoft Cloud](https://aka.ms/cloudarchcontoso)
+- [Contoso in the Microsoft Cloud](../enterprise/contoso-case-study.md)
     
 ## Microsoft 365 admin centers and dashboards
 

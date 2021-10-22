@@ -1,13 +1,13 @@
 ---
 title: "Microsoft 365 cloud-only identity"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -34,7 +34,7 @@ description: "Describes how to create users and groups when your Microsoft 365 s
 
 With cloud-only identity, all your users, groups, and contacts are stored in the Azure Active Directory (Azure AD) tenant of your Microsoft 365 subscription. Here are the basic components of cloud-only identity.
  
-![The basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![The basic components of cloud-only identity.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 Users and their user accounts in organizations can be categorized in a number of ways. For example, some are employees and have a permanent status. Some are vendors, contractors, or partners that have a temporary status. Some are external users that have no user accounts but must still be granted access to specific services and resources to support interaction and collaboration. For example:
 
@@ -53,17 +53,9 @@ You can use groups in Azure AD for several purposes that simplify management of 
 - Automatically provision users for Software as a Service (SaaS) applications and to protect access to those applications with multi-factor authentication (MFA) and other Conditional Access policies.
 - Provision permissions and levels of access for SharePoint Online team sites.
 
-You create new ***users*** with:
+## Next steps for cloud-only identity
 
-- [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell for Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-You create new ***groups*** with:
-
-- [The Microsoft 365 admin center](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell for Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## Next step for cloud-only identity
-
-[Assign licenses to user accounts](assign-licenses-to-user-accounts.md)
+- [Manage user accounts](manage-microsoft-365-accounts.md)
+- [Assign licenses to user accounts](assign-licenses-to-user-accounts.md)
+- [Manage groups and group membership](manage-microsoft-365-groups.md)
+- [Manage user account passwords](manage-microsoft-365-passwords.md)

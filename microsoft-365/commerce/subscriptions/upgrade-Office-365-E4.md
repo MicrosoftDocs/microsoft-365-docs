@@ -5,18 +5,19 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: customer-email
-search.appverid:
-- MET150
+ms.custom: 
+- customer-email
+- commerce_subscriptions
+- admindeeplinkMAC
+search.appverid: MET150 
 description: "Learn how to upgrade from an Office 365 E4 subscription."
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
@@ -31,7 +32,7 @@ This article steps you through the process of upgrading from an Office 365 E4 to
 
 ## What are my options for how to upgrade?
 
-The easiest way to upgrade your plan is to use the **Upgrade** tab in the Microsoft 365 admin center. However, using the **Upgrade** tab isn’t supported in all situations. If your scenario isn’t supported, you might be able to upgrade plans manually.
+The easiest way to upgrade your plan is to use the **Upgrade** tab in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. However, using the **Upgrade** tab isn’t supported in all situations. If your scenario isn’t supported, you might be able to upgrade plans manually.
 
 ## What is the Upgrade tab?
 
@@ -57,7 +58,7 @@ Upgrading plans manually means completing the following separate procedures inst
 3. Select the **Upgrade** tab. If you see other plans listed, it means you can upgrade plans automatically.
 4. If you can’t upgrade automatically, you see a message that describes the reason why you can’t upgrade.
 
-There are several reasons why you can't upgrade plans automatically. Most of the issues are temporary ones, such as service health issues that you can resolve. For more information, see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) If you need help with your upgrade, [contact support](../../admin/contact-support-for-business-products.md).
+There are several reasons why you can't upgrade plans automatically. Most of the issues are temporary ones, such as service health issues that you can resolve. For more information, see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) If you need help with your upgrade, [contact support](../../business-video/get-help-support.md).
 
 ## Will a credit check be required?
 
@@ -104,7 +105,7 @@ To manually upgrade users to another subscription, complete the following steps 
 
 ### Step 1: Buy a new subscription
 
-If you don’t yet have a new subscription, you can [buy another Microsoft 365 for business subscription](../buy-another-subscription.md).
+If you don’t yet have a new subscription, you can [buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md).
 
 If you already have a subscription, continue to the next step.
 
@@ -122,10 +123,10 @@ Before moving on to the next step, it’s important to make sure that all the se
 
 ### Step 3: Reassign licenses to users
 
-You can use the Microsoft 365 admin center to reassign licenses for up to 20 users at a time. To learn how, see [Move users to a different subscription](move-users-different-subscription.md).
+You can use the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to reassign licenses for up to 20 users at a time. To learn how, see [Move users to a different subscription](move-users-different-subscription.md).
 
 > [!TIP]
-> If you have a lot of users, you can [use Office 365 PowerShell to assign user licenses in bulk](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+> If you have a lot of users, you can [use Office 365 PowerShell to assign user licenses in bulk](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 
 ### Step 4: Cancel the Office 365 E4 subscription
 

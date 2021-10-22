@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: "Set buffer time before or after an appointment in Microsoft Bookings to allow time for cleaning up or resetting equipment."
 ---
@@ -17,16 +17,13 @@ Some of your appointments might require time before or after you meet with your 
 
 You can set buffer time before appointments start, after appointments end, or both to give staff the extra time they need to prepare for their next appointment.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
 ## Set buffer time defaults
 
 Buffer time defaults are set on the **Service details** page in Bookings. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
 
 The buffer time setting can be found just below the **Default duration** pickers on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
-   ![Image of Bookings with buffer time enabled](../media/bookings-buffertime.png)
+   ![Image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
 
 ## Buffer time and appointment timing
 
@@ -34,7 +31,7 @@ To avoid confusion about when customers expect to meet with you, Bookings shows 
 
 Note that the event itself (on the left in the image below) shows lighter shading for the buffer time and darker shading for the actual customer appointment. The appointment call-out (which is opened when you select the event) specifically states that the appointment is from 9:00AM to 10:00AM with Katie Jordan and includes 15 minutes of buffer time before the appointment and 0 minutes after the appointment. Confirmations and reminders to staff similarly reference specific buffer and appointment time while the customer would only get confirmations and reminders that reference a 9:00AM to 10:00AM appointment time.
 
-   ![Image of Bookings appointment call-out with buffer time showing](../media/bookings-buffertime-callout.png)
+   ![Image of Bookings appointment call-out with buffer time showing.](../media/bookings-buffertime-callout.png)
 
 ## Buffer time and availability
 

@@ -13,7 +13,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In this article, learn how to add satellite locations and configure your tenant for Microsoft 365 Multi-Geo.
 ---
 
@@ -35,7 +35,7 @@ You must add a satellite location for each geo location where you want to store 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Screenshot of geo locations page in the SharePoint admin center](../media/sharepoint-multi-geo-admin-center.png)
+![Screenshot of geo locations page in the SharePoint admin center.](../media/sharepoint-multi-geo-admin-center.png)
 
 To add a satellite location
 
@@ -88,7 +88,7 @@ The procedures in this section require the [Microsoft Azure Active Directory Mod
 
 1.  [Connect and sign in](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) with a set of global administrator credentials for your tenant.
 
-2.  Use the [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
+2.  Use the [Set-MsolUser](/powershell/msonline/v1/set-msoluser) cmdlet to set the preferred data location for each of your users. For example:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -96,7 +96,7 @@ The procedures in this section require the [Microsoft Azure Active Directory Mod
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![Screenshot of PowerShell window showing set-msoluser](../media/multi-geo-tenant-configuration-image3.png)
+![Screenshot of PowerShell window showing set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
@@ -105,7 +105,10 @@ We recommend that you include setting the user's Preferred Data Location as a pa
 
 ## OneDrive Provisioning and the effect of PDL
 
-If the user already has a OneDrive site created in the tenant, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md) please follow the instructions in Moving OneDrive between geo locations. (Note that the user's Exchange mailbox does move automatically when you set the user's PDL.)
+If the user already has a OneDrive site created in the tenant, setting their PDL will not automatically move their existing OneDrive. To move a user's OneDrive, see [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
+
+> [!NOTE]
+> Exchange Online automatically relocates the user's mailbox if the PLD changes and the MailboxRegion no longer matches the Mailbox Database Geo Location code. For more information, see [Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
 
 If the user does not have a OneDrive site within the tenant, OneDrive will be provisioned for them in accordance to their PDL value, assuming the PDL for the user matches one of the company's satellite locations.
 

@@ -1,13 +1,12 @@
 ---
-title: "Maintain Microsoft 365 group membership with PowerShell"
-ms.author: josephd
-author: JoeDavies-MSFT
+title: "Maintain security group membership with PowerShell"
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 07/17/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -21,21 +20,22 @@ ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: "Learn how to use PowerShell to maintain membership in Microsoft 365 groups."
 ---
 
-# Maintain Microsoft 365 group membership with PowerShell
+# Maintain security group membership with PowerShell
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain group membership in Microsoft 365. 
+You can use PowerShell for Microsoft 365 as an alternative to the Microsoft 365 admin center to maintain security group membership in Microsoft 365. 
 
-> [!TIP]
-> To generate ready-to-run PowerShell commands by specifying user account and group names, use this [group maintenance Microsoft Excel workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx). 
+>[!Note]
+>[Learn how to maintain Microsoft 365 group membership](../admin/create-groups/add-or-remove-members-from-groups.md) with the Microsoft 365 admin center. For a list of additional resources, see [Manage users and groups](/admin).
+>
 
 ## Use the Azure Active Directory PowerShell for Graph module
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ### Add or remove user accounts as members of a group
 
-**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
+**To add a user account by its UPN**, fill in the user account User Principal Name (UPN) (example: belindan@contoso.com) and the security group display name, removing the “<” and “>” characters, and run these commands in the PowerShell window or the PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 $userUPN="<UPN of the user account to add>"
@@ -153,4 +153,3 @@ Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayN
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

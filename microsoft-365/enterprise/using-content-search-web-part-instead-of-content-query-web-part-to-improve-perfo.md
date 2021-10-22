@@ -7,7 +7,7 @@ ms.date: 4/20/2015
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -47,15 +47,15 @@ This example site has the following characteristics:
     
 Here is a screen shot of the results of the Content Query Web Part.
   
-![Graphic showing content query for web part](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
+![Graphic showing content query for web part.](../media/b3d41f20-dfe5-46ed-9c0a-31057e82de33.png)
   
 In Internet Explorer, use the **Network** tab of the F12 developer tools to look at the details for the response header. In the following screen shot, the value for the **SPRequestDuration** for this page load is 924 milliseconds. 
   
-![Screenshot showing request duration of 924](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
+![Screenshot showing request duration of 924.](../media/343571f2-a249-4de2-bc11-2cee93498aea.png)
   
  **SPRequestDuration** indicates the amount of work that is done on the server to prepare the page. Switching Content by Query Web Parts with Content by Search Web Parts dramatically reduces the time it takes to render the page. By contrast, a page with an equivalent Content Search Web Part, returning the same number of results has an **SPRequestDuration** value of 106 milliseconds as shown in this screen shot: 
   
-![Screen shot showing Request Duration of 106](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
+![Screen shot showing Request Duration of 106.](../media/b46387ac-660d-4e5e-a11c-cc430e912962.png)
   
 ## Adding a Content Search Web Part in SharePoint Online
 

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -25,4 +25,4 @@ Download offers a simple way to download content from a review set in native for
 
 To download content from a review set in an Advanced eDiscovery case, start by selecting the files you want to download then select **Action items** > **Download**.
 
-![Download action in Advanced eDiscovery review set](../media/eDiscoDownload.png)
+![Download action in Advanced eDiscovery review set.](../media/eDiscoDownload.png)

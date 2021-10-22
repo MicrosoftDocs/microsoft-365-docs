@@ -4,20 +4,19 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Contact support for Mali
 
-[Find another country or region](../contact-support-for-business-products.md).
+[Find another country or region](../../business-video/get-help-support.md).
 
 ## Phone number
 +1 312 843 5147

@@ -4,7 +4,10 @@ description: Info on installing Microsoft Project or Microsoft Visio on Microsof
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
 ---

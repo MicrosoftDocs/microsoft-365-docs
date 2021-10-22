@@ -1,5 +1,5 @@
 ---
-title: "Manage load sets"
+title: "Manage load sets in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,16 +9,15 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: ""
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Learn about managing load sets in Advanced eDiscovery."
 ---
 
-# Manage load sets
+# Manage load sets in Advanced eDiscovery
 
 Content coming soon.

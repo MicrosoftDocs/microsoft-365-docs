@@ -7,16 +7,14 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid: 
-
-description: Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case.
+description: "Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -46,11 +44,11 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
    Where abraham.mcmahon@contoso.com, jewell.gordon@contoso.com, and staci.gonzalez@contoso.com are the SMTP addresses of custodians in the case.
 
-   ![Non-Microsoft 365 data upload folder structure](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+   ![Non-Microsoft 365 data upload folder structure.](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
 
 - An account that is assigned to the eDiscovery Manager role group (and added as eDiscovery Administrator).
 
-- The AzCopy v8.1 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v8.1. Other versions of AzCopy may not work when loading non-Microsoft 365 data in Advanced eDiscovery.
+- The AzCopy v8.1 tool installed on a computer that has access to the non-Microsoft 365 content folder structure. To install AzCopy, see [Transfer data with the AzCopy v8.1 on Windows](/previous-versions/azure/storage/storage-use-azcopy). Be sure to install AzCopy in the default location, which is **%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy**. You must use AzCopy v8.1. Other versions of AzCopy may not work when loading non-Microsoft 365 data in Advanced eDiscovery.
 
 
 ## Upload non-Microsoft 365 content into Advanced eDiscovery
@@ -63,17 +61,17 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
 4. Click **Upload files** to start the data import wizard.
 
-   ![Upload files](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
+   ![Upload files.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
    The first step in the wizard prepares a secure Microsoft-provided Azure Storage location to upload the files to.  When the preparation is completed, the **Next: Upload files** button becomes active.
 
-   ![Non-Microsoft 365 Import: Prepare](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
+   ![Non-Microsoft 365 Import: Prepare.](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  
 5. Click **Next: Upload files**.
 
 6. On the **Upload files** page, do the following:
 
-   ![Non-Microsoft 365 Import: Upload files](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
+   ![Non-Microsoft 365 Import: Upload files.](../media/3ea53b5d-7f9b-4dfc-ba63-90a38c14d41a.png)
 
    a. In the **Path to location of files** box, verify or type the location of the root folder where you've stored the non-Microsoft 365 data you want to upload. For example, for the location of the example files shown in the **Before you begin section**, you would type **%USERPROFILE\Downloads\nonO365**. Providing the correct location ensures the AzCopy command displayed in box under the path is properly updated.
 
@@ -81,15 +79,15 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
 7. Start a Windows command prompt, paste the command that you copied in the previous step, and then press **Enter** to start the AzCopy command.  After you start the command, the non-Microsoft 365 files will be uploaded to the Azure Storage location that was prepared in step 4.
 
-   ![Non-Microsoft 365 Import: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
+   ![Non-Microsoft 365 Import: AzCopy.](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
    > As previously stated, you must use AzCopy v8.1 to successfully use the command that's provided on the **Upload files** page. If the supplied AzCopy command fails, please see [Troubleshoot AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
 
-8. Go back to the Security & Compliance Center, and click **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
+8. Go back to the Microsoft 365 compliance center, and click **Next: Process files** in the wizard.  This initiates processing, text extraction, and indexing of the non-Microsoft 365 files that were uploaded to the Azure Storage location.  
 
 9. Track the progress of processing the files on the **Process files** page or on the **Jobs** tab by viewing a job named **Adding non-Microsoft 365 data to a review set**.  After the job is finished, the new files will be available in the review set.
 
-   ![Non-Microsoft 365 Import: Process files](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
+   ![Non-Microsoft 365 Import: Process files.](../media/218b1545-416a-4a9f-9b25-3b70e8508f67.png)
 
 10. After the processing is finished, you can close the wizard.

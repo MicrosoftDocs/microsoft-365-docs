@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 compliance support for double byte character set release notes (preview)"
+title: "Microsoft 365 compliance support for double byte character set release notes"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -7,7 +7,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -16,25 +16,16 @@ search.appverid:
 description: "Release notes for support for double byte character sets."
 ---
 
-# Support for double byte character set release notes (preview)
+# Support for double byte character set release notes
 
- Microsoft 365 Information Protection now supports in preview double byte character set languages for:
+ Microsoft 365 Information Protection now supports double byte character set languages for:
 
 - Chinese (simplified)
 - Chinese (traditional)
 - Korean
 - Japanese
 
-This preview is only in the commercial cloud and the rollout is limited to:
-
-- Japan
-- Korea
-- China
-- Hong Kong
-- Macau
-- Taiwan
-
-This support is available for sensitive information types and keyword dictionaries and will be reflected in data loss prevention, communications compliance, Exchange Online, SharePoint Online, OneDrive for Business, and Teams solutions.
+This support is available for sensitive information types and keyword dictionaries and will be reflected in data loss prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Cloud App Security.
 
 ## Known issues
 
@@ -51,3 +42,5 @@ This support is available for sensitive information types and keyword dictionari
   - “Attachment contains any of these words”
 
 Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition.
+
+

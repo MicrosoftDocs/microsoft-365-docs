@@ -6,35 +6,32 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: "Change the color theme of your booking page in the Microsoft Bookings app."
 ---
 
 # Customize and publish your booking page
 
-The Booking Page is where you set up what your external customer facing booking page will look like. Once you customize and publish your booking page, your customers will use it to book appointments with you.
+The Booking Page is where you set up what your external facing booking page will look like. Once you customize and publish your booking page, people will use it to book appointments with you.
 
-> [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
-
-To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so customers can start booking appointments with you.
+To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so people can start booking appointments with you.
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-2. In the navigation pane, select **Booking page**.
+2. In the navigation pane, select **Settings** -> **Booking page**.
 
 The section below gives you information about setting up your bookings page and how to publish your page.
 
-- **Booking page status** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
+- **Configure booking page** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site.
 
     The internal Booking Page looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page":::
+    :::image type="content" source="media/bookings-Self-Service_2.jpg" alt-text="The Bookings Page.":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
-- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Deselecting this box will ensure access to the page is limited to the generated page link.
+- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Selecting this box will ensure access to the page is limited to the generated page link.
 
 - **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-Service page. The box will have to be checked by the user in order to to complete the booking.
 
@@ -46,9 +43,9 @@ The section below gives you information about setting up your bookings page and 
 
 - **Region and time zone settings** Here you can set your time zone and language preferences for the Self-Service page. We recommend setting your local time zone. For visitors to your Self-Service page, Bookings automatically detects their local time zones and will show availability to them in their own time zones. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available time displayed as 3:00pm CST.
 
-Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking pag looks like this:
+Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking page looks like this:
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page.":::
 
 ## Publish the booking page
 
@@ -68,4 +65,4 @@ Watch this video or follow the steps below to publish or unpublish your booking 
 
 ## Unpublish the booking page
 
-1. To unpublish the booking page, go to the Booking page and select **Unpublish**.
+ - To unpublish the booking page, go to the Booking page and select **Unpublish**.

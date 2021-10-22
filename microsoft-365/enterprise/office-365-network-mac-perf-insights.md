@@ -1,34 +1,41 @@
 ---
-title: "Microsoft 365 Network Insights (preview)"
+title: "Microsoft 365 Network Insights"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: "Microsoft 365 Network Insights (preview)"
+description: "Microsoft 365 Network Insights"
 ---
 
-# Microsoft 365 Network Insights (preview)
+# Microsoft 365 Network Insights
 
-**Network insights** are live performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
+**Network insights** are performance metrics collected from your Microsoft 365 tenant, and available to view only by administrative users in your tenant. Insights are displayed in the Microsoft 365 Admin Center at <https://portal.microsoft.com/adminportal/home#/networkperformance>.
 
 Insights are intended to help in designing network perimeters for your office locations. Each insight provides live details about the performance characteristics for a specific common issue for each geographic location where users are accessing your tenant.
 
-There are five specific network insights that may be shown for each office location:
+There are six specific network insights that may be shown for each office location:
 
 - [Backhauled network egress](#backhauled-network-egress)
+- [Network intermediary device](#network-intermediary-device)
 - [Better performance detected for customers near you](#better-performance-detected-for-customers-near-you)
 - [Use of a non-optimal Exchange Online service front door](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [Use of a non-optimal SharePoint Online service front door](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [Low download speed from SharePoint front door](#low-download-speed-from-sharepoint-front-door)
+- [China user optimal network egress](#china-user-optimal-network-egress)
+
+There are two tenant level network insights that may be shown for the tenant. These also appear in the productivity score pages:
+
+- [Exchange sampled connections impacted by connectivity issues](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [SharePoint sampled connections impacted by connectivity issues](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Network insights, performance recommendations and assessments in the Microsoft 365 Admin Center is currently in preview status, and is only available for Microsoft 365 tenants that have been enrolled in the feature preview program.
@@ -39,7 +46,8 @@ This insight will be displayed if the network insights service detects that the 
 
 This insight is abbreviated as "Egress" in some summary views.
 
-![Backhauled network egress](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
+> [!div class="mx-imgBorder"]
+> ![Backhauled network egress.](../media/m365-mac-perf/m365-mac-perf-insights-detail-backhauled.png)
 
 ### What does this mean?
 
@@ -53,13 +61,28 @@ For this insight, we would recommend network egress closer to the office locatio
 
 For more information about how to resolve this issue, see [Egress network connections locally](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally) in [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
+## Network intermediary device
+
+This insight will be displayed if we detected devices between your users and Microsoft's network which may impact the Office 365 user experience. It is recommended that these be bypassed for specific Microsoft 365 network traffic that is destined for Microsoft datacenters. This recommendation is additionally described in [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md). 
+
+One network intermediary insight we show is SSL break and inspection when critical Office 365 network endpoints for Exchange, SharePoint and Teams are intercepted and decrypted by network intermediary devices.
+
+### What does this mean?
+
+Network intermediary devices such as proxy servers, VPNs, and data loss prevention devices can affect performance and stability of Microsoft 365 clients where traffic is intermediated.
+
+### What should I do?
+
+Configure the network intermediary device that was detected to bypass processing for Microsoft 365 network traffic.
+
 ## Better performance detected for customers near you
 
 This insight will be displayed if the network insights service detects that a significant number of customers in your metro area have better performance than users in your organization at this office location.
 
 This insight is abbreviated as "Peers" in some summary views.
 
-![Relative network performance](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
+> [!div class="mx-imgBorder"]
+> ![Relative network performance.](../media/m365-mac-perf/m365-mac-perf-insights-detail-cust-near-you.png)
 
 ### What does this mean?
 
@@ -67,7 +90,7 @@ This insight examines the aggregate performance of Microsoft 365 customers in th
 
 ### What should I do?
 
-There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+There could be many reasons for this condition, including latency in your corporate network or ISP, bottlenecks, or architecture design issues. Examine the latency between each hop in the route between your office network and the current Microsoft 365 front door. For more information, see [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
 
 ## Use of a non-optimal Exchange Online service front door
 
@@ -75,7 +98,8 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Routing" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+> [!div class="mx-imgBorder"]
+> ![Non-optimal EXO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### What does this mean?
 
@@ -91,7 +115,8 @@ This insight will be displayed if the network insights service detects that user
 
 This insight is abbreviated as "Afd" in some summary views.
 
-![Non-optimal front door](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+> [!div class="mx-imgBorder"]
+> ![Non-optimal SPO front door.](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### What does this mean?
 
@@ -134,14 +159,38 @@ Internet egress further away from users than these locations will reduce perform
 
 ### What should I do?
 
-For more information about how to mitigate performance issues related to this insight, see [Office 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
+For more information about how to mitigate performance issues related to this insight, see [Microsoft 365 global tenant performance optimization for China users](microsoft-365-networking-china.md).
+
+## Exchange sampled connections impacted by connectivity issues
+
+This insight will show when 50% or more of the sampled connections are impacted. The impact is defined by the Exchange assessment being below 60% for each sample.
+
+### What does this mean?
+
+It is an indication that the majority of your users are likely to be experiencing user experience issues with Outlook connecting to Exchange Online. The percentage of samples likely represents the percentage of users who show below 60 points.  
+
+### What should I do?
+
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impacted by poor network connectivity that is impacting Exchange and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
+
+## SharePoint sampled connections impacted by connectivity issues
+
+This insight will show when 50% or more of the sampled connections are impacted. The impact is defined by the SharePoint assessment being below 40% for each sample.
+
+### What does this mean?
+
+It is an indication that the majority of your users are likely to be experiencing user experience issues with SharePoint and OneDrive. The percentage of samples likely represents the percentage of users who show below 40 points.  
+
+### What should I do?
+
+Enable office location network connectivity visibility if you have not already done so. You want to identify which offices are impacted by poor network connectivity that is impacting SharePoint and find ways to improve the network perimeter at each that connects the users to Microsoft's network.
 
 ## Related topics
 
-[Network performance recommendations in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in the M365 Admin Center (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)

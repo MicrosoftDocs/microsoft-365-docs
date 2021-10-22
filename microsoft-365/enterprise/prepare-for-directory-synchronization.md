@@ -1,13 +1,13 @@
 ---
 title: "Prepare for directory synchronization to Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -30,7 +30,7 @@ description: "Describes how to prepare to provision users to Microsoft 365 by us
 
 # Prepare for directory synchronization to Microsoft 365
 
-*This article applies to both Microsoft 365 Enterprise and Microsoft 365 Enterprise.*
+*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
 The benefits to hybrid identity and directory synchronization your organization include:
 
@@ -38,18 +38,21 @@ The benefits to hybrid identity and directory synchronization your organization 
 - Optionally enabling single sign-on scenario
 - Automating account changes in Microsoft 365
 
-For more information about the advantages of using directory synchronization, see [Directory synchronization roadmap]( https://go.microsoft.com/fwlink/p/?LinkId=525398) and [Hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
+For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity) and [hybrid identity for Microsoft 365](plan-for-directory-synchronization.md).
 
-However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure Active Directory (Azure AD) tenant of your Microsoft 365 subscription with a minimum of errors.
+However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
 Follow these steps in order for the best results.
+
+> [!NOTE]
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
 
 ## 1. Directory cleanup tasks
 
 Before you synchronize your AD DS to your Azure AD tenant, you need to clean up your AD DS.
 
 > [!IMPORTANT]
-> If you don't perform AD DS cleanup before you synchronize, there can be a significant negative effect on the deployment process. It might take days, or even weeks, to go through the cycle of directory synchronization, identifying errors, and re-synchronization.
+> If you don't perform AD DS cleanup before you synchronize, it can lead to a significant negative impact on the deployment process. It might take days, or even weeks, to go through the cycle of directory synchronization, identifying errors, and re-synchronization.
 
 In your AD DS, complete the following clean-up tasks for each user account that will be assigned a Microsoft 365 license:
 
@@ -108,7 +111,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must be unique within the directory.
 
     > [!NOTE]
-    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+    > Underscores ("_") in the synchronized name indicates that the original value of this attribute contains invalid characters. For more information on this attribute, see [Exchange alias attribute](/powershell/module/exchange/set-mailbox).
     >
 
 - **proxyAddresses**
@@ -117,12 +120,12 @@ The attributes that you need to prepare are listed here:
   - Maximum number of characters per value: 256
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
-  - Invalid characters: \< \> ( ) ; , [ ] " '
+  - Invalid characters: \< \> ( ) ; , [ ] "
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 
     > [!IMPORTANT]
-    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. If duplicate or unwanted addresses exist, see the Help topic [Removing duplicate and unwanted proxy addresses in Exchange](https://go.microsoft.com/fwlink/?LinkId=293860).
+    > All Simple Mail Transport Protocol (SMTP) addresses should comply with email messaging standards. Remove duplicate or unwanted addresses if they exist.
 
 - **sAMAccountName**
 
@@ -152,8 +155,9 @@ The attributes that you need to prepare are listed here:
   - The maximum number of characters for the **userPrincipalName** attribute is 113. A specific number of characters are permitted before and after the at sign (@), as follows:
   - Maximum number of characters for the username that is in front of the at sign (@): 64
   - Maximum number of characters for the domain name following the at sign (@): 48
-  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] " '
-  - An umlaut is also an invalid character.
+  - Invalid characters: \ % &amp; \* + / = ? { } | \< \> ( ) ; : , [ ] "
+  - Characters allowed: A – Z, a - z, 0 – 9, ' . - _ ! # ^ ~
+  - Letters with diacritical marks, such as umlauts, accents, and tildes, are invalid characters.
   - The @ character is required in each **userPrincipalName** value.
   - The @ character cannot be the first character in each **userPrincipalName** value.
   - The username cannot end with a period (.), an ampersand (&amp;), a space, or an at sign (@).
@@ -174,7 +178,7 @@ It's best to align these attributes to reduce confusion. To meet the requirement
 
 You may need to add an alternative UPN suffix to associate the user's corporate credentials with the Microsoft 365 environment. A UPN suffix is the part of a UPN to the right of the @ character. UPNs that are used for single sign-on can contain letters, numbers, periods, dashes, and underscores, but no other types of characters.
 
-For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## 5. Match the AD DS UPN with the Microsoft 365 UPN
 

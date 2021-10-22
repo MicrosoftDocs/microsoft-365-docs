@@ -1,26 +1,31 @@
 ---
-title: "Sending mail to Microsoft 365"
-f1.keywords:
-- NOCSH
+title: Sending mail to Microsoft 365
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
+ms.date: 
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
-ms.collection:
-- M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Learn as an external sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as an external user."
+ms.collection: 
+  - M365-security-compliance
+ms.custom: 
+  - seo-marvel-apr2020
+description: Learn as an external sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as an external user.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
 # Sending mail to Microsoft 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 These articles help external senders improve their reputation and increase their ability to deliver email to users in Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
 

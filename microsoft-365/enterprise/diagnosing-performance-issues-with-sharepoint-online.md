@@ -7,7 +7,7 @@ ms.date: 7/9/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -40,13 +40,13 @@ This topic describes how to use each of these methods to diagnose performance is
 
 In this article we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
   
-- [What's new in F12 Tools](https://go.microsoft.com/fwlink/p/?LinkId=522545)
+- [What's new in F12 Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 
-- [Using the F12 developer tools](https://go.microsoft.com/fwlink/p/?LinkId=522546)
+- [Using the F12 developer tools](/previous-versions/windows/internet-explorer/ie-developer/samples/bg182326(v=vs.85))
 
 To bring up the developer tools press **F12** and then click the Wi-Fi icon:
   
-![Screenshot of F12 developer tools wifi icon](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
+![Screenshot of F12 developer tools wifi icon.](../media/27acacbb-5688-459a-aa2f-5c8c5f17b76e.png)
   
 On the **Network** tab, press the green play button to load a page. The tool returns all of the files that the browser requests in order to get the page you asked for. The following screen shot shows one such list.
   
@@ -54,7 +54,7 @@ On the **Network** tab, press the green play button to load a page. The tool ret
   
 You can also see the download times of the files on the right side as shown in this screen shot.
   
-![Diagram showing the time it takes to load the requested pages from SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![Diagram showing the time it takes to load the requested pages from SharePoint.](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 This gives you a visual representation of how long the file took to load. The green line represents when the page is ready to be rendered by the browser. This can give you a quick view of the different files that might be causing slow page loads on your site.
   
@@ -70,17 +70,17 @@ In SharePoint Online, you can access the information that is sent back to the br
 
 ### To view SharePoint response header information
   
-1. Ensure that you have the F12 tools installed. For more information on downloading and installing these tools, see [What's new in F12 tools](https://go.microsoft.com/fwlink/p/?LinkId=522545).
+1. Ensure that you have the F12 tools installed. For more information on downloading and installing these tools, see [What's new in F12 tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)).
 
 2. In the F12 tools, on the **Network** tab, press the green play button to load a page.
 
 3. Click one of the .aspx files returned by the tool and then click **DETAILS**.
 
-    ![Shows details of the response header](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
+    ![Shows details of the response header.](../media/1f8a044a-caf8-4613-be2b-7e064141ac8a.png)
   
 4. Click **Response headers**.
 
-    ![Diagram showing the URL of the response header](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
+    ![Diagram showing the URL of the response header.](../media/efc7076e-447e-447e-882a-ae3aa721e2c3.png)
   
 ## What's causing performance issues in SharePoint Online?
 <a name="F12ToolInfo"> </a>
