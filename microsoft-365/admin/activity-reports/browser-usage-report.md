@@ -24,9 +24,6 @@ description: "Learn how to get a Microsoft browser usage report using the Micros
 
 The Microsoft 365 **Reports** dashboard shows you an activity overview across the products in your organization. It enables you to drill into individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft browser usage report, you can gain insights on Internet Explorer, Microsoft Edge Legacy, and new Microsoft Edge usage. Usage reporting is based on Microsoft 365 online services accessed by using a Microsoft browser.
 
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports.
-
 ## How to get to the Microsoft browser usage report
 
 1. In the admin center, go to the **Reports** \> <b><a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a></b> page.
