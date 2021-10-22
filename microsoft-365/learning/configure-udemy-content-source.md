@@ -34,7 +34,7 @@ Follow these steps to enable the APIs in your Udemy Business environment and gen
 
     ![Image of the Start Set Up > Other page.](../media/learning/udemy-2.png)
 
-3. In the following screen, type in the name of your custom LMS/LXP or third-party application. Then, turn ON/OFF auto-enrollment option and select **Save**. The auto enrollment option allows users that launch a course through their LMS/LXP to automatically be enrolled in Udemy.<!--daisy ask if this needs to be on-->
+3. In the following screen, type in the name of your custom LMS/LXP or third-party application. Then, turn on or off the auto-enrollment option and select **Save**. The auto enrollment option allows users that launch a course through their LMS/LXP to automatically be enrolled in Udemy.
 
     ![Image of the LMS/LXP integrations page.](../media/learning/udemy-3.png)
 
