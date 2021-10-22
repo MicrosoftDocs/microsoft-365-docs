@@ -149,7 +149,7 @@ Your output should show an AuthServer of the Name EvoSts with a GUID and the 'En
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises, replacing <GUID> in the command line with the string in your environment:
+Run the following command in the Exchange Management Shell, on-premises, replacing \<GUID\> in the command line with the string in your environment:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
