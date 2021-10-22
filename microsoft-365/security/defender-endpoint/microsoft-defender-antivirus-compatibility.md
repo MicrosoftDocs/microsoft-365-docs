@@ -124,7 +124,7 @@ The table in this section summarizes the features and capabilities that are acti
 
 <br/><br/>
 
- | Protection | Microsoft Defender Antivirus <br/>*Active mode* | Microsoft Defender Antivirus <br/>*Passive mode* | Microsoft Defender Antivirus <br/>*Disabled or uninstalled* | [EDR in block mode](edr-in-block-mode.md) | 
+ | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
  |---|---|---|---|---| 
  | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
  | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
