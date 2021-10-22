@@ -26,9 +26,9 @@ This article shows you how to configure Skillsoft as a third-party learning cont
 
 ## First steps
 
-You'll need to reach out to your Skillsoft account team to enable Viva Learning integration. Your account team will also provide you with the Organization ID and Service Account Key, which you'll need later on.
+You'll need to reach out to your Skillsoft account team to enable Viva Learning integration. Your account team will also provide you with the Organization ID and Service Account Key. You'll need these for the next step.
 
-You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for help getting in touch with your account team.
+You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for help with getting in touch with your account team.
 
 ## Microsoft 365 admin center
 

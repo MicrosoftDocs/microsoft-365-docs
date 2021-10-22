@@ -40,10 +40,6 @@ This article shows you how to configure Saba as a third-party learning content s
 
     ![Image of the button to generate the Client secret.](../media/learning/saba-2.png)
 
-## Username and password
-
-Provide the username and password of an administrative account for Microsoft Viva to use to pull courses, completions, and related information from the Saba Cloud via REST API. This account should ideally be a Super User. If the account isn't a Super User, it must at least have **Learning Admin - Catalog Builder** and **Human Capital Admin** roles (or equivalent custom security roles) in Saba.
-
 ## Last steps
 
 You'll need to complete the configuration in your Microsoft 365 admin center.

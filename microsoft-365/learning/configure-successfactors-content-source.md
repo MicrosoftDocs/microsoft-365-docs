@@ -35,23 +35,21 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
 
 3. Fill in the following parameters in the PARTNER_EXTRACT configuration. To edit the partner extract configuration in SuccessFactors, you'll need **Edit System Configuration** workflow permission in SuccessFactors.
 
-```
-#customer notification email for all job status
-defaultJob.email=
+- customer notification email for all job status
+    - defaultJob.email=
 
-#Partner1
-#PartnerID maximum length is 10 characters. This can be your LMS tenant ID. 
+- Partner1
+    - PartnerID maximum length is 10 characters. This can be your LMS tenant ID.
 partners1.partnerID=
 
-#EncryptionKey is the PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK 
-partners1.encryptionKey=
+- EncryptionKey is the PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK
+    - partners1.encryptionKey=
 
-#KeyOwner maps to the User-ID of public key 
-partners1.keyOwner=
+- KeyOwner maps to the User-ID of public key
+    - partners1.keyOwner=
 
-#enabled can be "false" or "true". Set it to "true" to enable the partner extract. 
-partners1.enabled=
-```
+- enabled can be "false" or "true". Set it to "true" to enable the partner extract.
+    - partners1.enabled=
 
 ![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)
 
