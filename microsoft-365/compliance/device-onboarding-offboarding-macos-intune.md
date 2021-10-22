@@ -102,7 +102,6 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
     1. MDE preferences **com.microsoft.wdav.xml** file
         1. set Antivirus engine `passive mode` = `true` or `false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
     1. **netfilter.mobileconfig**
-    1. **
     <!--1. **notif.mobileconfig**-->
 
 12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
