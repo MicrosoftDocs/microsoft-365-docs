@@ -75,28 +75,90 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml
 
-3. Choose: **Create profile** 
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>B762FF60-6ACB-4A72-9E72-459D00C936F3</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.autoupdate2</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft AutoUpdate settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft AutoUpdate configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+            <key>PayloadUUID</key>
+            <string>5A6F350A-CC2C-440B-A074-68E3F34EBAE9</string>
+            <key>PayloadType</key>
+            <string>com.microsoft.autoupdate2</string>
+            <key>PayloadOrganization</key>
+            <string>Microsoft</string>
+            <key>PayloadIdentifier</key>
+            <string>com.microsoft.autoupdate2</string>
+            <key>PayloadDisplayName</key>
+            <string>Microsoft AutoUpdate configuration settings</string>
+            <key>PayloadDescription</key>
+            <string/>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadEnabled</key>
+            <true/>
+            <key>ChannelName</key>
+            <string>Production</string>
+            <key>HowToCheck</key>
+            <string>AutomaticDownload</string>
+            <key>EnableCheckForUpdatesButton</key>
+            <true/>
+            <key>DisableInsiderCheckbox</key>
+            <false/>
+            <key>SendAllTelemetryEnabled</key>
+            <true/>
+            </dict>
+        </array>
+    </dict>
+</plist>
+```
 
-4. Choose:
+3. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+
+4. Choose: **Create profile** 
+
+5. Choose:
     1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
-5. Choose **Create**
+6. Choose **Create**
 
-6. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+7. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
-7. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+8. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
 
-8. Choose **Next**
+9. Choose **Next**
 
-9. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+10. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-10. Review your settings and choose **Create** to deploy the configuration.
+11. Review your settings and choose **Create** to deploy the configuration.
 
-11. Repeat steps 2-7 to create profiles for the:
+12. Repeat steps 3-11 to create profiles for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
     1. MDE preferences **com.microsoft.wdav.xml** file
@@ -209,6 +271,9 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 ### Deploy the Microsoft DLP installation package
 
+> [!NOTE]
+> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+
 1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
 
 ## Offboard macOS devices using Intune
@@ -222,7 +287,3 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 3. Open **Properties** and **Assignments**
 
 4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
-
-> [!IMPORTANT]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-
