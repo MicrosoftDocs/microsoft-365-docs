@@ -32,9 +32,11 @@ ms.technology: m365d
 - Microsoft Defender for Endpoint
 
 
-The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. Use this reference to construct queries that return information from the table.
+The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations checked by [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics. 
 
-This table can enhance the value of the [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) table by providing text information for the security configurations returned. For example, when you query the `DeviceTvmSecureConfigurationAssessment`table you may want to see a description of the risk associated with a security configuration when reviewing assessment results. By joining this table to `DeviceTvmSecureConfigurationAssessment` using the ConfigurationId, you can construct your query to return the `RiskDescription` described below.
+This table does not return events or records. We recommend joining this table to the [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) table using `ConfigurationId` to view text information about the security configurations in the returned assessments. 
+
+For example, when you query the `DeviceTvmSecureConfigurationAssessment`table you might want to view the `ConfigurationDescription` for the security configurations that come up in the assessment results. You can do this by joining this table to `DeviceTvmSecureConfigurationAssessment` using `ConfigurationId` and project `ConfigurationDescription`.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
