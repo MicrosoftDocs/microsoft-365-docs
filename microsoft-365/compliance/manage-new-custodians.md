@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 The Custodians page on the **Sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
-![Manage Custodians](../media/CustodianDetails.PNG)
+![Manage Custodians.](../media/CustodianDetails.PNG)
 
 ## View custodian details
 
@@ -78,13 +78,13 @@ To update the data sources that are associated with a custodian:
   
 3. On the **Custodians** page, select a custodian from the list and click **Edit** on the flyout page.
 
-    ![Edit Data Sources](../media/EditCustodianDataSource.PNG)
+    ![Edit Data Sources.](../media/EditCustodianDataSource.PNG)
   
 4. Click **Choose data sources** tab to change the settings for the custodian's Exchange mailbox and OneDrive account, click **Choose data sources**.
   
 5. Click the **Select additional data sources** tab to add or remove Teams, SharePoint, or Exchange mailboxes associated with the custodian. 
 
-    For more information about data sources associated with a custodian, see "Step 3: Associate additional data sources to a custodian" in [Add custodians to a case](add-custodians-to-case.md#step-3-associate-additional-data-sources-to-a-custodian). 
+    For more information about data sources associated with a custodian, see [Add custodians to a case](add-custodians-to-case.md). 
   
 6. Click **Place custodial holds** to enable or disable the hold for the custodian.
 
@@ -143,4 +143,4 @@ To release a custodian:
 
 You can use the bulk editor to edit multiple custodians as the same time. To do this, just select two or more custodians on the **Custodians** tab to display the bulk editor and then click one of tasks.
 
-![Flyout page to edit settings of multiple custodians](../media/AeDBulkEditCustodians.png)
+![Flyout page to edit settings of multiple custodians.](../media/AeDBulkEditCustodians.png)

@@ -2,14 +2,17 @@
 title: "Microsoft Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -20,7 +23,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 **In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
-Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. All customers can use the [Data Protection Baseline assessment](compliance-manager-assessments.md#data-protection-baseline-default-assessment) to ensure you're protecting critical data. With Microsoft 365 E5, you can use over 150 pre-built assessments to help you comply with regulations across your industry and region, and use custom assessments to extend Compliance Manager across all of your assets.
+Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 Whether you’re coming to Compliance Manager for the first time, or are ready to use some of the advanced features, this guide can support you along your journey.
 
@@ -38,6 +41,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 - [Filter your dashboard view](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [Learn about improvement actions](compliance-manager-setup.md#improvement-actions-page)
 - [Understand assessments](compliance-manager.md#assessments)
+- [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager](compliance-manager-mcca.md)
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
@@ -52,13 +56,13 @@ Once you're familiar with the basics, it's time to set things up to meet your or
 
 When you're comfortable managing assessments in Compliance Manager, you can work with templates to modify a Compliance Manager assessment with your own actions and controls. You can also create your own custom assessment. Custom assessments are helpful for:
 
-- Managing compliance for non-Microsoft 365 products such as third-party apps and  services, on-premises applications, and other assets.
+- Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets.
 - Managing your own custom or business-specific compliance controls.
 
 You can also set up automated testing of all or a subset of improvement actions. Visit the links below to understand more advanced functionality in Compliance Manager:
 
-- [Extend a Compliance Manager assessment by adding your own controls and improvement actions](compliance-manager-assessments.md#extend-a-pre-built-assessment)
-- [Create your own custom assessment](compliance-manager-assessments.md#create-your-own-custom-assessment)
-- [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
+- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
+- [Create your own custom template](compliance-manager-templates-create.md)
+- [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
 - [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

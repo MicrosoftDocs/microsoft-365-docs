@@ -6,12 +6,12 @@ description: Frequently asked questions about Double Key Encryption for Microsof
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 
@@ -31,7 +31,7 @@ DKE helps you meet regulatory requirements across several regulations and standa
 
 ## Can I use Double Key Encryption with Microsoft Office built-in sensitivity labeling?
 
-You'll need to use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. Currently, you can't use Microsoft Office built-in sensitivity labeling. 
+You'll need to use the Azure Information Protection unified labeling client to protect documents with Double Key Encryption. Currently, you can't use Microsoft Office built-in sensitivity labeling.
 
 ## What Microsoft 365 Apps can I use with DKE?
 
@@ -71,7 +71,7 @@ No. You can’t add DKE to a label after you create it. Instead, you must choose
 
 ## How do I roll my DKE keys?
 
-For instructions on rolling (also called rotating or rekeying) the key you store in Azure, see [Operations for your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/operations-customer-managed-tenant-key).
+For instructions on rolling (also called rotating or rekeying) the key you store in Azure, see [Operations for your Azure Information Protection tenant key](/azure/information-protection/operations-customer-managed-tenant-key).
 
 See [Tenant and key settings](double-key-encryption.md#tenant-and-key-settings) for information on creating a new key for the DKE service.
 
