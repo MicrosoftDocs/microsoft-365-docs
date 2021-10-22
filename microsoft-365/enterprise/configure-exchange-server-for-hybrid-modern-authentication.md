@@ -180,9 +180,6 @@ You should also hold down the CTRL key at the same time you right-click the icon
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
-> [!NOTE]
-> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
-
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
 If you are an on-premises customer using Exchange server on TCP 443, please allow network traffic from the following IP ranges:
