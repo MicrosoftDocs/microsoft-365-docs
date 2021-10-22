@@ -112,7 +112,7 @@ RecommendedSecurityUpdate (optional)|string|Name or description of the security 
 RecommendedSecurityUpdateId (optional)|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
 RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SoftwareName|string|Name of the software product.|chrome
-SoftwareVendor|string|Name of the software vendor.|google
+SoftwareVendor|string|Name of the software vendor.|Google
 SoftwareVersion|string|Version number of the software product.|81.0.4044.138
 VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |

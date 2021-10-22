@@ -52,7 +52,7 @@ Each method has different API calls to get different types of data. Because the 
   - Call the API to get a list of download URLs with all your organization data.
   - Download all the files using the download URLs and process the data as you like.
 
-Data that is collected using either _JSON response_ or _via files_ is the current snapshot of the current state. It does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected using either '_JSON response_ or _via files_' is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
 ## 1. Export secure configurations assessment
 
@@ -71,19 +71,19 @@ Property (ID)|Data type|Description
 :---|:---|:---
 configurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls.
 configurationId|string|Unique identifier for a specific configuration.
-configurationImpact|string|Rated impact of the configuration to the overall configuration score (1-10).
+configurationImpact|string|Rated effect of the configuration to the overall configuration score (1-10).
 configurationName|string|Display name of the configuration.
-configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, this describes specific capabilities or features.
+configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, specific capabilities or features.
 deviceId|string|Unique identifier for the device in the service.
 deviceName|string|Fully qualified domain name (FQDN) of the device.
 isApplicable|bool|Indicates whether the configuration or policy is applicable.
 isCompliant|bool|Indicates whether the configuration or policy is properly configured.
-isExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied.
-osPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
+isExpectedUserImpact|bool|Indicates whether the user gets affected if the configuration will be applied.
+osPlatform|string|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
 osVersion|string|Specific version of the operating system running on the device.
-rbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupName|string|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
-recommendationReference|string|A reference to the recommendation ID related to this software.
+recommendationReference|string|A reference to the recommendation ID related to the software.
 timestamp|string|Last time the configuration was seen on the device.
 
 ### 1.3 Properties (via files)
@@ -115,7 +115,7 @@ DiskPaths|Array[string]|Disk evidence that the product is installed on the devic
 EndOfSupportDate|string|The date in which support for this software has or will end.
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device.
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+OSPlatform|string|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 rbacGroupId|string|The role-based access control (RBAC) group ID.
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
