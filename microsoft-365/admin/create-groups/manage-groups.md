@@ -77,7 +77,7 @@ This option is great if you want to have a company email address such as info@co
 4. Select **Save**.
 
 > [!NOTE]
-> The changes could take 30 minutes to propogate and let external users email the organization.
+> The changes could take up to 30 minutes to propagate and let external users email the organization.
 
 ## Permanently delete a Microsoft 365 group
 
