@@ -30,15 +30,50 @@ This article provides information about attack reduction rules:
   - GUIDs
   - Configuration management system rule names
 
-## Supported operating systems
+## Public preview: Supported operating systems
 
-The following table lists attack surface reduction rules in alphabetical order. A check mark indicates the rule is supported by the operating system listed in that column.
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order.
 
 > [!Note]
 >
 > - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
-> - \* All rules support file and folder exclusions, unless stated otherwise.
+
+| Rule name | Windows&nbsp;Server 2016 <sup>[[1](#fn1)]<sup></sup> | Windows&nbsp;Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
+|---|:---:|:---:|
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y | Y |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y | Y |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | N |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) \* _File and folder exclusions not supported._ | N | N |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y | Y |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | N | N |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y | Y |
+| **Rule name** | **Windows&nbsp;Server 2016** <sup>[[1](#fn1)]<sup></sup> | **Windows&nbsp;Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
+
+(<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
+
+_End Public Preview: Supported operating systems_
+
+## Supported operating systems
+
+The following table lists the supported operating systems for rules that are  currently released to general availability. The rules are listed alphabetical order.
+
+> [!Note]
+>
+> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+>
 
 |Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|Windows&nbsp;Server 2016|Windows&nbsp;Server 2012 R2|
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -106,8 +141,10 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 >
 > To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
-Intune Name: `Block abuse of exploited vulnerable signed drivers`
+Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
 
+Configuration Manager name: Not yet available
+  
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 <!-- Hide this intro with no subsequent list items

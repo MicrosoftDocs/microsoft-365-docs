@@ -2,7 +2,7 @@
 title: Why cloud protection should be enabled for Microsoft Defender Antivirus
 description: See why cloud protection should be turned on for Microsoft Defender Antivirus. It helps many security features in Microsoft Defender for Endpoint work
 keywords: Microsoft Defender Antivirus, cloud protection, security features, sample submission
-search.product: eADQiWindows 10XVcnh
+search.product: 
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +14,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 09/21/2021
+ms.date: 10/18/2021
 ms.collection: m365-security-compliance
 ---
 
