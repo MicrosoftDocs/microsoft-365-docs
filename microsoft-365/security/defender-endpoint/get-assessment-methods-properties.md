@@ -69,29 +69,29 @@ Export secure configuration assessment **(via files)**|Secure configuration by d
 
 Property (ID)|Data type|Description
 :---|:---|:---
-configurationCategory|string|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls.
-configurationId|string|Unique identifier for a specific configuration.
-configurationImpact|string|Rated effect of the configuration to the overall configuration score (1-10).
-configurationName|string|Display name of the configuration.
-configurationSubcategory|string|Subcategory or subgrouping to which the configuration belongs. In many cases, specific capabilities or features.
-deviceId|string|Unique identifier for the device in the service.
-deviceName|string|Fully qualified domain name (FQDN) of the device.
-isApplicable|bool|Indicates whether the configuration or policy is applicable.
-isCompliant|bool|Indicates whether the configuration or policy is properly configured.
-isExpectedUserImpact|bool|Indicates whether the user gets affected if the configuration will be applied.
-osPlatform|string|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
-osVersion|string|Specific version of the operating system running on the device.
-rbacGroupName|string|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-rbacGroupId|string|The role-based access control (RBAC) group ID.
-recommendationReference|string|A reference to the recommendation ID related to the software.
-timestamp|string|Last time the configuration was seen on the device.
+configurationCategory|String|Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls.
+configurationId|String|Unique identifier for a specific configuration.
+configurationImpact|String|Rated effect of the configuration to the overall configuration score (1-10).
+configurationName|String|Display name of the configuration.
+configurationSubcategory|String|Subcategory or subgrouping to which the configuration belongs. In many cases, specific capabilities or features.
+deviceId|String|Unique identifier for the device in the service.
+deviceName|String|Fully qualified domain name (FQDN) of the device.
+isApplicable|Bool|Indicates whether the configuration or policy is applicable.
+isCompliant|Bool|Indicates whether the configuration or policy is properly configured.
+isExpectedUserImpact|Bool|Indicates whether the user gets affected if the configuration will be applied.
+osPlatform|String|Platform of the operating system running on the device. Specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See TVM supported operating systems and platforms for details.
+osVersion|String|Specific version of the operating system running on the device.
+rbacGroupName|String|The role-based access control (RBAC) group. If the device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|String|The role-based access control (RBAC) group ID.
+recommendationReference|String|A reference to the recommendation ID related to the software.
+timestamp|String|Last time the configuration was seen on the device.
 
 ### 1.3 Properties (via files)
 
 Property (ID)|Data type|Description
 :---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.
-GeneratedTime|string|The time that the export was generated.
+GeneratedTime|String|The time that the export was generated.
 
 ## 2. Export software inventory assessment
 
@@ -109,27 +109,27 @@ So, it's recommended for large organizations, with more than 100-K devices. This
 
 Property (ID)|Data type|Description
 :---|:---|:---
-DeviceId|string|Unique identifier for the device in the service.
-DeviceName|string|Fully qualified domain name (FQDN) of the device.
+DeviceId|String|Unique identifier for the device in the service.
+DeviceName|String|Fully qualified domain name (FQDN) of the device.
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
-EndOfSupportDate|string|The date in which support for this software has or will end.
-EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-NumberOfWeaknesses|int|Number of weaknesses on this software on this device.
-OSPlatform|string|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-rbacGroupId|string|The role-based access control (RBAC) group ID.
+EndOfSupportDate|String|The date in which support for this software has or will end.
+EndOfSupportStatus|String|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+NumberOfWeaknesses|Int|Number of weaknesses on this software on this device.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|String|The role-based access control (RBAC) group ID.
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.
-SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.
-SoftwareName|string|Name of the software product.
-SoftwareVendor|string|Name of the software vendor.
-SoftwareVersion|string|Version number of the software product.
+SoftwareFirstSeenTimestamp|String|The first time this software was seen on the device.
+SoftwareName|String|Name of the software product.
+SoftwareVendor|String|Name of the software vendor.
+SoftwareVersion|String|Version number of the software product.
 
 ### 2.3 Properties (via files)
 
 Property (ID)|Data type|Description
 :---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.
-GeneratedTime|string|The time that the export was generated.
+GeneratedTime|String|The time that the export was generated.
 
 ## 3. Export software vulnerabilities assessment
 
@@ -147,59 +147,59 @@ Export software vulnerabilities assessment **(via files)**|Investigation entity 
 
 Property (ID)|Data type|Description
 :---|:---|:---
-CveId|string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
-CvssScore|string|The CVSS score of the CVE.
-DeviceId|string|Unique identifier for the device in the service.
-DeviceName|string|Fully qualified domain name (FQDN) of the device.
+CveId|String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
+CvssScore|String|The CVSS score of the CVE.
+DeviceId|String|Unique identifier for the device in the service.
+DeviceName|String|Fully qualified domain name (FQDN) of the device.
 DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.
-Id|string|Unique identifier for the record.
-LastSeenTimestamp|string|Last time the CVE was seen on the device.
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-rbacGroupId|string|The role-based access control (RBAC) group ID.
-RecommendationReference|string|A reference to the recommendation ID related to this software.
-RecommendedSecurityUpdate|string|Name or description of the security update provided by the software vendor to address the vulnerability.
-RecommendedSecurityUpdateId|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles.
+ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.
+Id|String|Unique identifier for the record.
+LastSeenTimestamp|String|Last time the CVE was seen on the device.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+rbacGroupId|String|The role-based access control (RBAC) group ID.
+RecommendationReference|String|A reference to the recommendation ID related to this software.
+RecommendedSecurityUpdate|String|Name or description of the security update provided by the software vendor to address the vulnerability.
+RecommendedSecurityUpdateId|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles.
 Registry Paths Array\[string\]|Registry evidence that the product is installed in the device.
-SoftwareName|string|Name of the software product.
-SoftwareVendor|string|Name of the software vendor.
-SoftwareVersion|string|Version number of the software product.
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+SoftwareName|String|Name of the software product.
+SoftwareVendor|String|Name of the software vendor.
+SoftwareVersion|String|Version number of the software product.
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
 
 ### 3.3 Properties (via files)
 
 Property (ID)|Data type|Description
 :---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.
-GeneratedTime|string|The time that the export was generated.
+GeneratedTime|String|The time that the export was generated.
 
 ### 3.4 Properties (delta export JSON response)
 
 Property (ID)|Data type|Description
 :---|:---|:---
-CveId |string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
-CvssScore|string|The CVSS score of the CVE.
-DeviceId|string|Unique identifier for the device in the service.
-DeviceName|string|Fully qualified domain name (FQDN) of the device.
+CveId |String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.
+CvssScore|String|The CVSS score of the CVE.
+DeviceId|String|Unique identifier for the device in the service.
+DeviceName|String|Fully qualified domain name (FQDN) of the device.
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.
-EventTimestamp|String|The time this delta event was found.
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.
-Id|string|Unique identifier for the record.  
-LastSeenTimestamp|string|Last time the CVE was seen on the device.
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
-RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
-RecommendationReference|string|A reference to the recommendation ID related to this software.
-RecommendedSecurityUpdate |string|Name or description of the security update provided by the software vendor to address the vulnerability.
-RecommendedSecurityUpdateId |string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
+EventTimestamp|String|The time the delta event was found.
+ExploitabilityLevel|String|The exploitability level of the vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp|String|First time the CVE of the product was seen on the device.
+Id|String|Unique identifier for the record.  
+LastSeenTimestamp|String|Last time the CVE was seen on the device.
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
+RecommendationReference|String|A reference to the recommendation ID related to this software.
+RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.
+RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles
 RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.
-SoftwareName|string|Name of the software product.
-SoftwareVendor|string|Name of the software vendor.
-SoftwareVersion|string|Version number of the software product.
+SoftwareName|String|Name of the software product.
+SoftwareVendor|String|Name of the software vendor.
+SoftwareVersion|String|Version number of the software product.
 Status|String|**New** (for a new vulnerability introduced on a device). **Fixed** (for a vulnerability that doesn't exist anymore on the device, which means it was remediated). **Updated** (for a vulnerability on a device that has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.
 
 ## See also
 

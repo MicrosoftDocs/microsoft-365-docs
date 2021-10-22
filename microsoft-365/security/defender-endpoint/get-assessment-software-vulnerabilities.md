@@ -96,25 +96,25 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
-CveId|string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
-CvssScore|string|The CVSS score of the CVE.|6.2
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
+CveId|String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
+CvssScore|String|The CVSS score of the CVE.|6.2
+DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
 DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
-LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
-OSPlatform|string|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
-RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
-RecommendationReference|string|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (optional)|string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
-RecommendedSecurityUpdateId (optional)|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
+ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
+Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
+LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
+OSPlatform|String|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
+RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
+RecommendedSecurityUpdateId (optional)|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
 RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SoftwareName|string|Name of the software product.|chrome
-SoftwareVendor|string|Name of the software vendor.|Google
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+SoftwareName|String|Name of the software product.|Chrome
+SoftwareVendor|String|Name of the software vendor.|Google
+SoftwareVersion|String|Version number of the software product.|81.0.4044.138
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |
 
 ### 1.6 Examples
@@ -304,7 +304,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00Z
+GeneratedTime|String|The time that the export was generated.|2021-05-20T08:00:00Z
 |
 
 ### 2.6 Examples
@@ -363,11 +363,11 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 - sinceTime (required): The data between a selected time and today.
 - pageSize (default = 50,000): number of results in response.
-- $top: number of results to return (doesn't return @odata.nextLink and therefore doesn't pull all the data).
+- $top: number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
 ### 3.5 Properties
 
-Each returned record contains all the data from the full export software vulnerabilities assessment by device API, plus two additional fields:  _**EventTimestamp**_ and _**Status**_.
+Each returned record contains all the data from the full export software vulnerabilities assessment by device API, plus two more fields:  _**EventTimestamp**_ and _**Status**_.
 
 > [!NOTE]
 >
@@ -380,32 +380,32 @@ Each returned record contains all the data from the full export software vulnera
 
 Property (ID)|Data type|Description|Example of returned value
 :---|:---|:---|:---
-CveId |string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992  
-CvssScore|string|The CVSS score of the CVE.|6.2  
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com  
+CveId |String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992  
+CvssScore|String|The CVSS score of the CVE.|6.2  
+DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|String|The time this delta event was found.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880  
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10  
-RbacGroupName|string|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
+ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880  
+Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10  
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
-RecommendedSecurityUpdateId |string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
+RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
+RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
 RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|string|Name of the software product.|chrome  
-SoftwareVendor|string|Name of the software vendor.|google  
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138  
+SoftwareName|String|Name of the software product.|Chrome  
+SoftwareVendor|String|Name of the software vendor.|Google  
+SoftwareVersion|String|Version number of the software product.|81.0.4044.138  
 Status|String|**New** (for a new vulnerability introduced on a device)  (1) **Fixed** (if this vulnerability doesn't exist anymore on the device, which means it was remediated). (2) **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
-VulnerabilitySeverityLevel|string|Severity level that is assigned to the security vulnerability. It is based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |
 
 #### Clarifications
 
-- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you'll receive 2 separate events:
+- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you'll receive two separate events:
    1. Fixed: CVE-A on version 1.0 was fixed.
    1. New: CVE-A on version 2.0 was added.
 
