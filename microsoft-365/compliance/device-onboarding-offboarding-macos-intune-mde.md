@@ -90,11 +90,18 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 
 10. Review your settings and choose **Create** to deploy the configuration.
 
-11. Repeat steps 2-7 to create profiles for the:
+11. UPDATES NOT REPEATS
     1. **fulldisk.mobileconfig** file
-    1. **com.microsoft.autoupdate2.xml** file
-    1. MDE preferences **com.microsoft.wdav.xml** file
-        1. set Antivirus engine `passive mode` = `true` or `false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
+    1. update MDE preferences **com.microsoft.wdav.xml** file with these values    
+```xml
+<key>features</key>
+<dict>
+    <key>systemExtensions</key>
+    <string>enabled</string>
+    <key>dataLossPrevention</key>
+    <string>enabled</string>
+</dict>
+```
 
 12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
