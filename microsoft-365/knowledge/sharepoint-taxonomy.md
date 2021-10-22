@@ -61,45 +61,45 @@ You can request a single term or multiple terms in a term set. You initiate the 
 
 1. In the SharePoint admin center, in the left navigation, select **Term store**.
 
-    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-01.png) 
+    ![Screenshot showing navigation to the Term store in the SharePoint admin center for a single term.](../media/knowledge-management/taxonomy-single-term-01.png) 
 
 2. On the **Term store** page, search for and select the term you want to use.
 
-    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-02.png)
+    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center for a single term.](../media/knowledge-management/taxonomy-single-term-02.png)
 
 3. On the term page, select the **Usage settings** tab.
 
-    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-03.png)
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center for a single term.](../media/knowledge-management/taxonomy-single-term-03.png)
 
 4. In the **Create topic from this term** section, select **Request topic**.
 
-    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-single-term-04.png)
+    ![Screenshot showing the Create topic from this term page in the SharePoint admin center for a single term.](../media/knowledge-management/taxonomy-single-term-04.png)
 
 ### Request multiple terms in a term set
 
 1. In the SharePoint admin center, in the left navigation, select **Term store**.
 
-    ![Screenshot showing navigation to the Term store in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-01.png) 
+    ![Screenshot showing navigation to the Term store in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-01.png) 
 
 2. On the **Term store** page, search for and select the term set you want to use.
 
-    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-02.png)
+    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-02.png)
 
 3. On the term page, select the **Usage settings** tab.
 
-    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-03.png)
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-03.png)
 
 4. In the **Create topics from terms** section, select **Get started**. If you’ve raised requests in the past, the option that appears is **Create terms for creation**.
 
-    ![Screenshot showing the Request topics from terms section in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-new-set.png)
+    ![Screenshot showing the Request topics from terms section in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-04-new-set.png)
 
     In the **Create topic from terms** section, select **Request topics**.
 
-    ![Screenshot showing the Create topic from this term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04-existing-set.png)
+    ![Screenshot showing the Create topic from this term page in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-04-existing-set.png)
 
     1. On the **Select terms to create topics** page, the hierarchy of terms within this term set is available for selection.
 
-        ![Screenshot showing the Select terms for creating topics panel in the SharePoint admin center.](../media/knowledge-management/taxonomy-multi-term-04a.png)
+        ![Screenshot showing the Select terms for creating topics panel in the SharePoint admin center for a multiple terms.](../media/knowledge-management/taxonomy-multi-term-04a.png)
 
     2. To select specific terms, select each term individually.
 
@@ -128,25 +128,25 @@ In the term store, you can view the status of requests by:
 
 1. On the **Term store** page, search for and select the term for which you want to view the status.
 
-    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-single-term-01.png)
+    ![Screenshot showing list of terms on the Term store page in the SharePoint admin center for viewing the status of a single term.](../media/knowledge-management/taxonomy-status-single-term-01.png)
 
 2. On the term page, select the **Usage settings** tab.
 
-    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-single-term-02.png)
+    ![Screenshot showing the Usage settings tab on the term page in the SharePoint admin center for viewing the status of a single term.](../media/knowledge-management/taxonomy-status-single-term-02.png)
 
 3. In the **Create topic from this term** section, view the status of the request.
 
-    ![Screenshot showing the Create topic from this term page and the request status in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-single-term-03.png)
+    ![Screenshot showing the Create topic from this term page and the request status in the SharePoint admin center for viewing the status of a single term.](../media/knowledge-management/taxonomy-status-single-term-03.png)
 
 ### View the status for multiple terms in a term set
 
 1. On the **Term store** page, search for and select the term set for which you want to view the status.
 
-    ![Screenshot showing a term set on the Term store page in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-01.png)
+    ![Screenshot showing a term set on the Term store page in the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-01.png)
 
 2. On the term page, select the **Usage settings** tab.
 
-    ![Screenshot showing the Usage settings tab and the Create topics from terms sectionin the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-02.png)
+    ![Screenshot showing the Usage settings tab and the Create topics from terms sectionin the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-02.png)
 
     In the **Create topics from terms** section, you can see the total number of requests, how many are linked to topics, and how many were declined.
 
@@ -154,19 +154,19 @@ In the term store, you can view the status of requests by:
 
 4. On the **All requested terms for topic creation** panel, view the status of the term requests.
 
-    ![Screenshot showing the status of the requested topics from terms in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-04.png)
+    ![Screenshot showing the status of the requested topics from terms in the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-04.png)
 
 5. If you have many requests, select **Load more** to keep loading additional items.
 
-    ![Screenshot showing the Load more option in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-05.png)
+    ![Screenshot showing the Load more option in the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-05.png)
 
 6. To review requests that are in a particular state, on the **Status** column, select **Filter by**.
 
-    ![Screenshot showing the Status and Filter by option in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-06a.png)
+    ![Screenshot showing the Status and Filter by option in the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-06a.png)
 
      Select the status you want to filter by: **Declined**, **Success**, or **Requested**.
 
-    ![Screenshot showing the Filter by status options in the SharePoint admin center.](../media/knowledge-management/taxonomy-status-multi-term-06b.png)
+    ![Screenshot showing the Filter by status options in the SharePoint admin center for viewing the status of a multiple terms.](../media/knowledge-management/taxonomy-status-multi-term-06b.png)
 
 
 
