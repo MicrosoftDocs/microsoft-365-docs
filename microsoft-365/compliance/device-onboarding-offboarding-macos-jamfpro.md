@@ -91,7 +91,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
 
 > [!TIP]
-> You can download the individual configuration files from a single folder or download a single archive file that contains:
+> You can download the individual configuration files from a single folder or download a single `.mobileconfig` file that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
@@ -125,7 +125,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
     - EDR preferences > 
-        - Group IDs: `DLP_Enabled`
+        - Group IDs: `DLP_Enable`
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
