@@ -15,6 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Skillsoft as a learning content source for Microsoft Viva Learning.
+ROBOTS: NOINDEX
 ---
 
 # Configure Skillsoft as a content source for Microsoft Viva Learning
