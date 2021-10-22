@@ -29,11 +29,11 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../includes/prerelease.md)]
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 The API response contains [Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md) remediation activities that have been created in your tenant.
 
@@ -43,46 +43,46 @@ Method|Data type|Description
 :---|:---|:---
 [List all remediation activities](get-remediation-all-activities.md)|Investigation collection|Returns information about all remediation activities.
 [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)|Investigation entity|Returns information about exposed devices for the specified remediation activity.
-[Get one remediation activity by Id](get-remediation-one-activity.md)|Investigation entity|Returns information for the specified remediation activity.
+[Get one remediation activity by ID](get-remediation-one-activity.md)|Investigation entity|Returns information for the specified remediation activity.
 
 Learn more about [remediation activities](tvm-remediation.md).
 
 ## Properties
 
-Property id|Data type|Description
+Property ID|Data type|Description
 :---|:---|:---
-category|String|Category of the remediation activity (Software/Security configuration)
+Category|String|Category of the remediation activity (Software/Security configuration)
 completerEmail|String|If the remediation activity was manually completed by someone, this column contains their email
-completerId|String|If the remediation activity was manually completed by someone, this column contains their object id
+completerId|String|If the remediation activity was manually completed by someone, this column contains their object ID
 completionMethod|String|A remediation activity can be completed "automatically" (if all the devices are patched) or "manually" by a person who selects "mark as completed."
 createdOn|DateTime|Time this remediation activity was created
-description|String|Description of this remediation activity
+Description|String|Description of this remediation activity
 dueOn|DateTime|Due date the creator set for this remediation activity
 fixedDevices||The number of devices that have been fixed
-id|String|ID of this remediation activity
+ID|String|ID of this remediation activity
 nameId|String|Related product name
-priority|String|Priority the creator set for this remediation activity (High\Medium\Low)
+Priority|String|Priority the creator set for this remediation activity (High\Medium\Low)
 productId|String|Related product ID
-productivityImpactRemediationType|String|A few configuration changes could be requested only for devices with no user impact. This value indicate the selection between "all exposed devices" or "only devices with no user impact."
+productivityImpactRemediationType|String|A few configuration changes could be requested only for devices that don't affect users. This value indicates the selection between "all exposed devices" or "only devices with no user impact."
 rbacGroupNames|String|Related device group names
 recommendedProgram|String|Recommended program to upgrade to
 recommendedVendor|String|Recommended vendor to upgrade to
 recommendedVersion|String|Recommended version to update/upgrade to
 relatedComponent|String|Related component of this remediation activity (similar to the related component for a security recommendation)
 requesterEmail|String|Creator email address
-requesterId|String|Creator object id
+requesterId|String|Creator object ID
 requesterNotes|String|The notes (free text) the creator added for this remediation activity
-scid|String|SCID of the related security recommendation
-status|String|Remediation activity status (Active/Completed)
+Scid|String|SCID of the related security recommendation
+Status|String|Remediation activity status (Active/Completed)
 statusLastModifiedOn|DateTime|Date when the status field was updated
 targetDevices|Long|Number of exposed devices that this remediation is applicable to
-title|String|Title of this remediation activity
-type|String|Remediation type
+Title|String|Title of this remediation activity
+Type|String|Remediation type
 vendorId|String|Related vendor name
 
 ## See also
 
-- [Get one remediation activity by Id](get-remediation-one-activity.md)
+- [Get one remediation activity by ID](get-remediation-one-activity.md)
 
 - [List all remediation activities](get-remediation-all-activities.md)
 
