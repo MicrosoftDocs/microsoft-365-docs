@@ -31,14 +31,14 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 > [!NOTE]
 >
-> A license is required in the following scenarios:
+> An Exchange Online Plan 2 license is required in the following scenarios:
 >
 > 1. The shared mailbox has more than 50 GB of storage in use.
 > 2. The shared mailbox uses in-place archiving.
 > 3. The shared mailbox is placed in litigation hold.
 > 4. The shared mailbox has a Microsoft Defender license assigned.
 > 
-> In any of these cases add an Exchange Online Plan 2 License according to the steps described <a href="https://docs.microsoft.com/de-de/microsoft-365/admin/manage/assign-licenses-to-users" target="_blank">here</a>. 
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users] (/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 
 ## Remove the license
