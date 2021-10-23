@@ -50,20 +50,42 @@ A Microsoft Defender for Office 365 trial is an easy way to try out the capabili
 |[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
+|[Priority account protection](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Users that you identify as Priority accounts are tagged in alerts, reports, and investigations so they stand out. You can also use the Priority tag in filters.|
+|
 
 <sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
 
 ## Set up a Defender for Office 365 trial
 
-A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
+A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments for email messages](safe-attachments.md), [Safe Links for email messages and Microsoft Teams](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
 By default, these policies are scoped to all users in the organization, but during or after the setup of the trial, you can change the policy assignment to specific users.
+
+Other workloads are also available for protection (for example, [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Safe Links for supported Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
 
 During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md)) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
 As part of the trial setup, the Defender for Office 365 licenses are automatically applied to the organization. The licenses are free of charge for the first 30 days.
+
+The licensing card for the trial shows the following information:
+
+![The Licensing card in the Microsoft Defender for Office 365 trial.](../../media/mdo-trial-licensing-card.png)
+
+- **Usage type** section:
+  - **Trial**: The number of trial Defender for Office 365 licenses that are available for you to use.
+
+    > [!NOTE]
+    > In other locations, you might see the value 300 for your number of available trial licenses. This value is incorrect (unless your organization happens to have exactly 300 users). The number of trial licenses that are available to you corresponds the size of your organization, not the arbitrary value 300.
+
+  - **Paid**: The number of paid Defender for Office 365 licenses (if any).
+
+- **Usage** section: How many of your users are covered by Defender for Office 365 policies.
+  - **Detection & response only**: The total number of users that are included in the following scenarios:
+    - During the trial, you scoped the policies to specific users.
+    - You have custom polices that are scoped to specific users.
+  - **Full protection**: The total number of users that are protected by Defender for Office 365 Plan 2 features (AIR, Threat Explorer, Attack simulation training, etc.).
 
 ## Permissions
 
@@ -99,7 +121,7 @@ A: A maximum of 2 times. If your first trial expires, you need to wait at least 
 
 Defender for Office 365 helps organizations secure their enterprise by offering a comprehensive slate of capabilities.
 
-You can also learn more about Defender for Office 365 at this [interactive guide](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189).
+You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
 ![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
 
