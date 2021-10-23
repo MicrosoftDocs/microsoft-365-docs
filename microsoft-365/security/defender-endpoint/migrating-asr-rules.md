@@ -2,7 +2,6 @@
 title: Migrating from a third-party HIPS to ASR rules
 description: Describes how to approach a migration from a third-party Host Intrusion Prevention System (HIPS) solution into ASR rules.
 keywords: Attack surface reduction rules, asr, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
 ms.topic: article
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -118,7 +117,7 @@ This article helps you to map common rules to Microsoft Defender for Endpoint.
 - **Processes**- *
 - **Operation**- Process Termination
 - **Examples of Files/Folders, Registry Keys/Values, Processes, Services**- MsSense.exe, MsMpEng.exe, NisSrv.exe, svchost.exe*, services.exe, csrss.exe, smss.exe, wininit.exe, and more.
-- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're protected with Windows 10 built-in security protections.
+- **Attack Surface Reduction rules**- ASR rules don't support these scenarios because they're protected with Windows built-in security protections.
 - **Other recommended features**- ELAM (Early Launch AntiMalware), PPL (Protection Process Light), PPL AntiMalware Light, and System Guard.
 
 ### Block specific launch Process Attempt
