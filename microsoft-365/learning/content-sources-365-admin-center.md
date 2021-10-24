@@ -1,5 +1,5 @@
 ---
-title: Manage learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
+title: Manage content sources for Microsoft Viva Learning in the Microsoft 365 admin center
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn how to configure and manage learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center.
 ---
 
-# Manage learning content sources for Microsoft Viva Learning in the Microsoft 365 admin center
+# Manage content sources for Microsoft Viva Learning in the Microsoft 365 admin center
 
 The administrators for the Microsoft 365 admin center—either by themselves or by assigning the knowledge admin role to selected individuals in your organization—can manage settings related to Viva Learning and can configure the learning content sources.
 
