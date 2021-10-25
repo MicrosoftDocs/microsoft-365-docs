@@ -50,3 +50,4 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
    2. On the **Create new rule** flyout, specify a name and description for the rule.
    3. Select a profile (Domain network, Public network, or Private network).
    4. In the **Remote address type** list, select either **IP address** or **Application file path**.
+   5. 
