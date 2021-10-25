@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 10/25/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -57,7 +57,9 @@ Firewall description
 
 | Setting | Description |
 |--|--|
-| <setting> | <description> |
+| **Domain network** | This profile applies to inbound connections that are initiated on devices that are within your organization's network. By default, incoming connections are set to **Allow all**.  |
+| **Public network** | This profile applies to inbound connections that are initiated by devices on a network that you don't trust. By default, incoming connections are set to **Block all**.  |
+| **Private network** | This profile applies to inbound connections that are initiated by devices on a network that you trust. Because the network could include devices that you don't necessarily trust yet, by default, incoming connections are set to **Block all**. |
 
 ## See also
 
