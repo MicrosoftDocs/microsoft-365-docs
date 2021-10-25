@@ -41,8 +41,8 @@ When we review exception requests, we assess these factors in this order:
  
 1. Some applications and policies which Microsoft Managed Desktop deploys to all devices aren't negotiable, so your request must not affect those. See [Device configuration](device-policies.md) for more information.
 2. Restricted productivity software required by a user to do their job will likely be approved. 
-3. If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to twelve months (depending on the scope of the project).
-4. If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the conditions below.  
+3. If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to 12 months (depending on the scope of the project).
+4. If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the [Key conditions](#key-conditions).  
 
 These principles ensure that Microsoft Managed Desktop can always meet your needs while tracking deviations from our standard template. 
 
