@@ -46,8 +46,13 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
 
 6. To define an exception to your firewall settings, follow these steps: 
 
-   1. Under **Custom rules**, choose **+ Add rule**. 
+   1. Under **Custom rules**, choose **+ Add rule**. (You can have up to 150 custom rules.)
    2. On the **Create new rule** flyout, specify a name and description for the rule.
    3. Select a profile (Domain network, Public network, or Private network).
    4. In the **Remote address type** list, select either **IP** or **Application file path**.
    5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
+   6. On the **Create new rule** flyout, select **Create rule**. 
+
+7. On the **Configuration settings** screen, choose **Next**.
+
+8. On the **Review your policy** screen, review your firewall policy settings. Make any needed changes, and then choose **Create policy**.
