@@ -62,7 +62,7 @@ If successful - 200 OK.
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machinesecuritystates
@@ -71,9 +71,9 @@ Content-type: application/json
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
-Field *id* contains device id and equal to the field *id** in devices info.
+Field *id* contains device ID and equal to the field *id** in devices info.
 
 ```json
 HTTP/1.1 200 OK
