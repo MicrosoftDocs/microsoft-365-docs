@@ -10,7 +10,7 @@
         href: whats-new.md
       - name: Preview features
         href: preview.md
-      - name: Nested portal articles (name)
+      - name: Microsoft 365 Defender service suite
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
