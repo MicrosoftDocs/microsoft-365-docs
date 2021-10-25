@@ -142,14 +142,6 @@ If you want to unhide user-level information when you're generating your reports
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
 
-  
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
-
-2. Select **Org Settings** and choose **Services** . 
-  
-3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
-  
-
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
 1. In the admin center, go to the **Settings** \> **Org Settings** \> **Services** page.
