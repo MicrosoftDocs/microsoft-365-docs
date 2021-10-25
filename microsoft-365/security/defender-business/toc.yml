@@ -41,6 +41,8 @@
         href: mdb-view-edit-device-policies.md
       - name: Manage devices
         href: mdb-manage-devices.md
+      - name: Manage your firewall settings
+        href: mdb-manage-firewall.md
     - name: Reference information
       items: 
       - name: Configuration settings
