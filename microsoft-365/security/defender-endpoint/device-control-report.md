@@ -51,7 +51,7 @@ The **View details** button shows more media usage data in the **device control 
 The page provides a dashboard with aggregated number of events per type and a list of events. Administrators can filter on time range, media class name, and device ID.
 
 > [!div class="mx-imgBorder"]
-> ![DeviceControlReportDetails](![image](![image](https://user-images.githubusercontent.com/81826151/138504264-12ec25cc-2ccf-4b34-8230-1baaeaf76376.png)))
+> ![DeviceControlReportDetails](images/Detaileddevicecontrolreport.png)
 
 When you select an event, a flyout appears that shows you more information:
 
@@ -60,7 +60,7 @@ When you select an event, a flyout appears that shows you more information:
 - **Location details:** Device name, User, and MDATP device ID.
 
 > [!div class="mx-imgBorder"]
-> ![FilterOnDeviceControlReport](![image](https://user-images.githubusercontent.com/81826151/138504402-c3fb5233-eadb-4780-bb0c-ec2dd6350632.png))
+> ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)
 
 To see real-time activity for this media across the organization, select the **Open Advanced hunting** button. This includes an embedded, pre-defined query.
 
