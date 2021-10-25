@@ -26,15 +26,15 @@ To make it easier to map the relationship between app governance alerts and the 
 
 This guide provides information about investigating and remediating app governance alerts in the following categories.
 
-- Initial Access
+- [Initial Access](#initial-access-alerts)
 - Execution
-- Persistence
+- [Persistence](#persistence-alerts)
 - Privilege Escalation
 - Defense Evasion
 - Credential Access
-- Discovery
+- [Discovery](#discovery-alerts)
 - Lateral Movement
-- Collection
+- [Collection](#collection-alerts)
 - Exfiltration
 - Impact
 
@@ -339,6 +339,29 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 1. Review all activities performed by this app.
 1. Review the scopes granted by the app.
 1. Review the user activity associated with this app.
+
+### Suspicious enumeration activities performed using AAD PowerShell
+
+**Severity**: Medium
+
+**MITRE ID**: T1087
+
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an AAD PowerShell application.
+
+**TP or FP?**
+
+- **TP**: If you’re able to confirm that suspicious/unusual enumeration activities were performed by the AAD PowerShell application.
+
+  **Recommended action**: Disable and remove the application and reset the password.
+
+- **FP**: If you can confirm that no unusual activities were performed by application.
+
+  **Recommended action**: Dismiss the alert.
+
+**Understand the scope of the breach**
+
+1. Review all activities performed by this application.
+1. Review the user activity associated with this application.
 
 ## Collection alerts
 
