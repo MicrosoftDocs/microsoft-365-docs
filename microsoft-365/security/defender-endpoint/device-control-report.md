@@ -55,7 +55,7 @@ The page provides a dashboard with aggregated number of events per type and a li
 
 When you select an event, a flyout appears that shows you more information:
 
-- **General details:** Date, Action mode, and the policy, and Access of this event.
+- **General details:** Date, Action mode, the policy, and Access of this event.
 - **Media information:** Media information includes Media name, Class name, Class GUID, Device ID, Vendor ID, Serial number, and Bus type.
 - **Location details:** Device name, User and MDATP device ID.
 
