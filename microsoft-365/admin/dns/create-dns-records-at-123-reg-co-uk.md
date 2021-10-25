@@ -44,7 +44,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
     
-2. On the Domain name overview page, select the name of the domain that you want to verify. 
+2. Select **Domains**, and on the Domain name overview page, select the name of the domain that you want to verify. 
     
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select the domain you want to verify.":::
 
@@ -62,10 +62,14 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |:-----|:-----|:-----|
     |**Hostname** <br/> |**Type** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
-   
+  
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
+ 
 6. Select **Add**.
-    
-7. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Select Add.":::
+   
+   Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is verified.
   
@@ -73,9 +77,13 @@ To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -101,10 +109,16 @@ To verify the record in Microsoft 365:
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
     |@  <br/> |MX  <br/> |1  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<domain-key\> from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX.png" alt-text="Select the MX type from the drop-down list, and fill in the values.":::
+ 
 6. Select **Add**.
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-Add.png" alt-text="Select Add.":::
+ 
 7. If there are any other MX records, remove each one by choosing the **Delete (trash can)** icon for that record. 
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-MX-delete.png" alt-text="Select Delete (trash can).":::
   
 ## Add the CNAME record required for Microsoft
 
@@ -129,8 +143,12 @@ To verify the record in Microsoft 365:
     |**Hostname**|**Type**|**Destination CNAME**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Select the CNAME type from the drop-down list, and fill in the values.":::
+ 
 6. Select **Add**.
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
     
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -156,6 +174,8 @@ To verify the record in Microsoft 365:
     |**Hostname**|**Type**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
   
 6. Select **Add**.
 
@@ -189,9 +209,13 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
   
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
+
 6. Select **Add**.
   
-7. To add the other SRV record.
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF-Add.png" alt-text="Select Add.":::
+
+7. Add the other SRV record.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -220,8 +244,12 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |:-----|:-----|:-----|
     |sip  <br/>|CNAME  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
     |lyncdiscover  <br/>|CNAME  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Select the CNAME type from the drop-down list, and fill in the values.":::
+ 
 1. Select **Add**.
+
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
   
 1. Add the other CNAME record.
     
@@ -236,15 +264,15 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. To get started, go to your domains page at 123-reg.co.uk by using [this link](https://www.123-reg.co.uk/secure/cpanel/domain/overview). You'll be prompted to log in first.
 
-2. On the Domain name overview page, select the name of the domain that you want to edit. 
+1. On the Domain name overview page, select the name of the domain that you want to edit. 
     
    :::image type="content" source="../../media/dns-123reg/123reg-domains-1.png" alt-text="Select the name of the domain you want to edit.":::
 
-3. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
+1. On the Manage domain page, under **Advanced domain settings**, choose **Manage DNS**.
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-2.png" alt-text="Select Manage DNS from the drop-down list.":::
   
-4. On the Manage your DNS page, select the **Advanced DNS** tab. 
+1. On the Manage your DNS page, select the **Advanced DNS** tab. 
   
    :::image type="content" source="../../media/dns-123reg/123reg-domains-3.png" alt-text="Select the Advanced DNS tab.":::
     
@@ -252,13 +280,17 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     In the **Type** box for the new record choose **CNAME** from the drop-down list, and then type or copy and paste the other values from the following table.
     
- | **Hostname**|**Type**|**Destination CNAME**|
-    |:-----|:-----|:-----|
-    | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> | CNAME  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
+   | **Hostname**|**Type**|**Destination CNAME**|
+   |:-----|:-----|:-----|
+   | enterpriseregistration <br/> | CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |
+   |enterpriseenrollment  <br/> | CNAME  <br/> |enterpriseenrollment.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |
   
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME.png" alt-text="Select the CNAME type from the drop-down list, and fill in the values.":::
+
 1. Select **Add**.
-  
+ 
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-CNAME-Add.png" alt-text="Select Add.":::
+ 
 1. Add the other CNAME record.
     
 > [!NOTE]
