@@ -57,7 +57,7 @@ When you select an event, a flyout appears that shows you more information:
 
 - **General details:** Date, Action mode, the policy, and Access of this event.
 - **Media information:** Media information includes Media name, Class name, Class GUID, Device ID, Vendor ID, Serial number, and Bus type.
-- **Location details:** Device name, User and MDATP device ID.
+- **Location details:** Device name, User, and MDATP device ID.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](![image](https://user-images.githubusercontent.com/81826151/138504402-c3fb5233-eadb-4780-bb0c-ec2dd6350632.png))
