@@ -34,7 +34,7 @@ When a continuous access evaluation-enabled client such as Outlook tries to acce
 
 Here are some additional benefits:
 
-- For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this tokenthrough Azure AD IP address location policy. With continuous access evaluation, Azure AD synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token. 
+- For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this token through Azure AD IP address location policy. With continuous access evaluation, Azure AD synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token. 
 
 - Continuous access evaluation improves resiliency by requiring fewer token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Azure AD can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don’t have to request a token refresh from Azure AD as often, so the user experience is more resilient.
 
@@ -61,7 +61,7 @@ Continuous access evaluation will be included in all versions of Office 365 and 
 
 Continuous access evaluation supports two types of events: 
 
-- Critical events are essentially events where a user should lose access. 
+- Critical events are those in which a user should lose access. 
 - Conditional Access policy evaluation occurs when a user should lose access to a resource based on an administrator-defined policy.  
 
 Critical events include: 
