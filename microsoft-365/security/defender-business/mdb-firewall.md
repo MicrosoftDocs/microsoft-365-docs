@@ -20,6 +20,14 @@ ms.collection:
 
 # Firewall in Microsoft Defender for Business
 
-Microsoft Defender for Business includes firewall capabilities with Windows Defender Firewall. Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter devices and which network traffic is allowed to be sent from devices.
+Microsoft Defender for Business includes firewall capabilities with Windows Defender Firewall. Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter devices and which network traffic is allowed to be sent from devices. You can use firewall protection to specify whether to allow or block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent those connections when the device is on a network with untrusted devices.
 
-When your company's devices are onboarded to Microsoft Defender for Business, your default firewall policy wil allow all outbound connections from devices. Whether inbound connections are allowed or blocked depends on how your firewall settings are configured and your location.
+## Default firewall policies and settings in Microsoft Defender for Business
+
+Microsoft Defender for Business includes default firewall policies and settings to help protect your company's devices from day one. As soon as your company's devices are onboarded to Microsoft Defender for Business, your default firewall policy works as follows:
+
+- Outbound connections from devices are allowed by default
+- When devices are connected to your company's network
+
+
+allow all outbound connections from devices. Whether inbound connections are allowed or blocked depends on how your firewall settings are configured and your location.
