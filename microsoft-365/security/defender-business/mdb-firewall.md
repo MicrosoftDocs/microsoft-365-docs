@@ -26,14 +26,16 @@ Microsoft Defender for Business includes firewall capabilities with Windows Defe
 
 Microsoft Defender for Business includes default firewall policies and settings to help protect your company's devices from day one. As soon as your company's devices are onboarded to Microsoft Defender for Business, your default firewall policy works as follows:
 
-- Outbound connections from devices are allowed by default.
+- Outbound connections from devices are allowed by default, regardless of location.
 - When devices are connected to your company's network, all inbound connections are allowed by default.
 - When devices are connected to a public network or private network with untrusted devices, all inbound connections are blocked by default.
 
-In Microsoft Defender for Business, you can create custom rules to allow specific connections.
+In Microsoft Defender for Business, you can define exceptions by creating custom rules. These custom rules allow you to block or allow specific connections on devices, regardless of their location or network.
 
 ## Manage firewall settings in Microsoft Defender for Business
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Endpoints** > **Device configuration**, and review the list of device policies. 
+2. Go to **Endpoints** > **Device configuration**, and review the list of device groups.
+
+3. Select an existing device group, or create a new device group.
