@@ -32,66 +32,10 @@ Microsoft Defender for Business includes default firewall policies and settings 
 
 In Microsoft Defender for Business, you can define exceptions by creating custom rules. These custom rules allow you to block or allow specific connections on devices, regardless of their location or network.
 
-## View and edit your firewall policies in Microsoft Defender for Business
+## Next steps
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+- [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
 
-2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
+- [Learn more about firewall settings in Microsoft Defender for Business](mdb-configuration-settings.md#firewall)
 
-3. In the **Firewall** section, select an existing policy, or add a new policy.
-
-4. On the **Configuration settings** step, review the settings. Make any needed changes to **Domain network**, **Public network**, and **Private network**.
-
-5. Set **Allow local policy merge** to **Yes** to honor firewall settings on users' devices. Alternately, you can set it to **No**, which will ignore firewall settings on users' devices and apply only the firewall settings defined in Microsoft Defender for Business.
-
-6. To create a custom rule, follow these steps: 
-
-   1. Under **Custom rules**, choose **+ Add rule**. (You can have up to 150 custom rules.)
-   2. On the **Create new rule** flyout, specify a name and description for the rule.
-   3. Select a profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
-   4. In the **Remote address type** list, select either **IP** or **Application file path**.
-   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
-   6. On the **Create new rule** flyout, select **Create rule**. 
-
-7. On the **Configuration settings** screen, choose **Next**.
-
-8. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
-
-## Edit a custom rule
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
-
-3. In the **Firewall** section, select an existing policy, or add a new policy.
-
-4. Under **Custom rules**, review the list of rules.
-
-5. Select a rule, and then choose **Edit**. Its flyout opens.
-
-6. To edit your custom rule, follow these steps:
-
-   1. On the **Edit rule** flyout, review and edit the rule's name and description.
-   2. Review and if necessary, edit the rule's profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
-   3. In the **Remote address type** list, select either **IP** or **Application file path**.
-   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
-   5. Set **Enable rule** to **On** to make the rule active. Or, to disable the rule, set the switch to **Off**.
-   6. On the **Edit rule** flyout, select **Update rule**. 
-
-7. On the **Configuration settings** screen, choose **Next**.
-
-8. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
-
-## Delete a custom rule
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
-
-3. In the **Firewall** section, select an existing policy, or add a new policy.
-
-4. Under **Custom rules**, review the list of rules.
-
-5. Select a rule, and then choose **Delete**. Its flyout opens.
-
-6. On the confirmation screen, choose **Delete**. 
+- [Learn more about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
