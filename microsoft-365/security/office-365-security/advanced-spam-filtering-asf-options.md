@@ -80,7 +80,7 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 
 ## Mark as spam settings
 
-The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
+The following ASF settings (except Backscatter, Sender ID filtering hard fail which correspond to SCL 6)  set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
 
 <br>
 
