@@ -63,7 +63,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |**Hostname** <br/> |**Type** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
   
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
  
 6. Select **Add**.
  
@@ -175,7 +175,7 @@ To verify the record in Microsoft 365:
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
 
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
   
 6. Select **Add**.
 
@@ -209,7 +209,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)** <br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
   
-   :::image type="content" source="../../media/dns-123reg/123reg-domains-TXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
+   :::image type="content" source="../../media/dns-123reg/123reg-domains-TypeTXTSPF.png" alt-text="Select the TXT/SPF type from the drop-down list, and fill in the values.":::
 
 6. Select **Add**.
   
