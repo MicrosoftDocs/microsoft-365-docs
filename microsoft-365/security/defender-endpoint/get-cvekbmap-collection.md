@@ -17,6 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ROBOTS: NOINDEX
 ms.technology: mde
+ms.custom: api
 ---
 
 # Get CVE-KB map API
