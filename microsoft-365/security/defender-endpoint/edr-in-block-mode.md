@@ -2,7 +2,6 @@
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
 keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, passive mode blocking
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -15,7 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
-ms.date: 08/31/2021
+ms.date: 10/07/2021
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -75,7 +74,7 @@ The following image shows an instance of unwanted software that was detected and
 |Requirement|Details|
 |---|---|
 |Permissions|You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md).|
-|Operating system|Devices must be running one of the following versions of Windows: <ul><li>Windows 10 (all releases)</li><li>Windows Server, version 1803 or newer</li><li>Windows Server 2019</li><li>Windows Server 2022</li><li>Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)</li></ul>|
+|Operating system|Devices must be running one of the following versions of Windows: <br/>- Windows 10 (all releases)<br/>- Windows Server, version 1803 or newer<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)|
 |Microsoft Defender for Endpoint|Devices must be onboarded to Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).|
 |Microsoft Defender Antivirus|Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
 |Cloud-delivered protection|Microsoft Defender Antivirus must be configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).|
@@ -108,7 +107,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 ### What is the difference between active and passive mode?
 
-For endpoints running Windows 10, Windows Server, version 1803 or later, Windows Server 2019, or Windows Server 2022 when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
+For endpoints running Windows 10, Windows 11, Windows Server, version 1803 or later, Windows Server 2019, or Windows Server 2022 when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
 
 > [!NOTE]
 > Microsoft Defender Antivirus can run in passive mode only when the device is onboarded to Microsoft Defender for Endpoint.
@@ -123,8 +122,8 @@ To confirm whether Microsoft Defender Antivirus is running in active or passive 
 
 |Method|Procedure|
 |---|---|
-|PowerShell|<ol><li>Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results.</li><li>Type `Get-MpComputerStatus`.</li><li>In the list of results, in the **AMRunningMode** row, look for one of the following values:<ul><li>`Normal`</li><li>`Passive Mode`</li></ul></li></ol> <p> To learn more, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
-|Command Prompt|<ol><li>Select the Start menu, begin typing `Command Prompt`, and then open Windows Command Prompt in the results.</li><li>Type `sc query windefend`.</li><li>In the list of results, in the **STATE** row, confirm that the service is running.</li></ol>|
+|PowerShell|1. Select the Start menu, begin typing `PowerShell`, and then open Windows PowerShell in the results.<br/><br/>2. Type `Get-MpComputerStatus`.<br/><br/>3. In the list of results, in the **AMRunningMode** row, look for one of the following values:<br/>- `Normal`<br/>- `Passive Mode`<br/><br/>To learn more, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).|
+|Command Prompt|1. Select the Start menu, begin typing `Command Prompt`, and then open Windows Command Prompt in the results.<br/><br/>2. Type `sc query windefend`.<br/><br/>3. In the list of results, in the **STATE** row, confirm that the service is running. |
 
 ### How do I confirm that EDR in block mode is turned on with Microsoft Defender Antivirus in passive mode?
 
@@ -149,6 +148,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server 2019 
 - Windows Server 2016
 - Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
