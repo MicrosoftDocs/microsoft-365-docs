@@ -185,7 +185,7 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Locations
 
-Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites.
+Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites. Use the following section for the locations that have configuration details and possible exceptions that you need to be aware of when you select them for your policy.
 
 ### Configuration information for Exchange email and Exchange public folders
 
