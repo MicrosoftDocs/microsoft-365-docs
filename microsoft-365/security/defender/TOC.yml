@@ -8,8 +8,6 @@
         href: microsoft-365-defender.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Preview features
-        href: preview.md
       - name: Microsoft 365 Defender service suite
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
@@ -308,7 +306,7 @@
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
-    - name: SecOps integration
+    - name: Security operations guide
       items: 
        - name: Overview
          href: integrate-microsoft-365-defender-secops.md
@@ -399,6 +397,8 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
+        - name: Preview features
+          href: preview.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
