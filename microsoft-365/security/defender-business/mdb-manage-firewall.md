@@ -40,7 +40,7 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
    2. On the **Create new rule** flyout, specify a name and description for the rule.
    3. Select a profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
    4. In the **Remote address type** list, select either **IP** or **Application file path**.
-   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
+   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-next-gen-configuration-settings.md#firewall).)
    6. On the **Create new rule** flyout, select **Create rule**. 
 
 7. On the **Configuration settings** screen, choose **Next**.
@@ -64,7 +64,7 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
    1. On the **Edit rule** flyout, review and edit the rule's name and description.
    2. Review and if necessary, edit the rule's profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
    3. In the **Remote address type** list, select either **IP** or **Application file path**.
-   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
+   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-next-gen-configuration-settings.md#firewall).)
    5. Set **Enable rule** to **On** to make the rule active. Or, to disable the rule, set the switch to **Off**.
    6. On the **Edit rule** flyout, select **Update rule**. 
 

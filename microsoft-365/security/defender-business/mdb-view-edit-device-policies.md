@@ -65,7 +65,7 @@ The following sections provide more information about your security policies in 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups—including the default and custom device groups that you define—are stored in Azure Active Directory (Azure AD).
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
@@ -93,7 +93,7 @@ The following sections provide more information about your security policies in 
 
 7. On the **Configuration settings** tab, review and if need be, edit the settings for your policy, and then choose **Next**.
 
-   For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-configuration-settings.md).
+   For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
 
 8. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
