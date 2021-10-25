@@ -53,7 +53,7 @@ The following table lists your settings and options:<br/><br/>
 
 ## Firewall
 
-Firewall description
+Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business. <br/><br/>
 
 | Setting | Description |
 |--|--|
