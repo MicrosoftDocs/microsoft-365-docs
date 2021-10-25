@@ -1,6 +1,6 @@
 ---
 title: Privacy for Microsoft Defender for Endpoint on Linux
-description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Linux.
+description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data that is collected in Microsoft Defender for Endpoint on Linux.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostic
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -26,24 +26,24 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft is committed to providing you with the information and controls you need to make choices about how your data is collected and used when you're using Defender for Endpoint on Linux.
+Microsoft is committed to provide you with the information and controls you need to make choices about how your data is collected and used when you're using Defender for Endpoint on Linux.
 
-This topic describes the privacy controls available within the product, how to manage these controls with policy settings and more details on the data events that are collected.
+This article describes the privacy controls available within the product, how to manage these controls with policy settings, and more details on the data events that are collected.
 
 ## Overview of privacy controls in Microsoft Defender for Endpoint on Linux
 
-This section describes the privacy controls for the different types of data collected by Defender for Endpoint on Linux.
+This section describes the privacy controls for the different types of data that is collected by Defender for Endpoint on Linux.
 
 ### Diagnostic data
 
 Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements.
 
-Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data through the use of privacy controls, such as policy settings for organizations.
+Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data by using privacy controls, such as policy settings for organizations.
 
 There are two levels of diagnostic data for Defender for Endpoint client software that you can choose from:
 
 - **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
-- **Optional**: Additional data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
+- **Optional**: Other data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
 By default, only required diagnostic data is sent to Microsoft.
 
@@ -51,7 +51,7 @@ By default, only required diagnostic data is sent to Microsoft.
 
 Cloud delivered protection is used to provide increased and faster protection with access to the latest protection data in the cloud.
 
-Enabling the cloud-delivered protection service is optional, however it is highly recommended because it provides important protection against malware on your endpoints and across your network.
+Enabling the cloud-delivered protection service is optional, however it's highly recommended because it provides important protection against malware on your endpoints and across your network.
 
 ### Sample data
 
@@ -60,14 +60,14 @@ Sample data is used to improve the protection capabilities of the product, by se
 There are three levels for controlling sample submission:
 
 - **None**: no suspicious samples are submitted to Microsoft.
-- **Safe**: only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.
+- **Safe**: only suspicious samples that don't contain personally identifiable information (PII) are submitted automatically. This is the default value.
 - **All**: all suspicious samples are submitted to Microsoft.
 
 ## Manage privacy controls with policy settings
 
 If you're an IT administrator, you might want to configure these controls at the enterprise level.
 
-The privacy controls for the various types of data described in the preceding section are described in detail in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
+The privacy controls for the various types of data that is described in the preceding section are described in detail in [Set preferences for Defender for Endpoint on Linux](linux-preferences.md).
 
 As with any new policy settings, you should carefully test them out in a limited, controlled environment to ensure the settings that you configure have the desired effect before you implement the policy settings more widely in your organization.
 
