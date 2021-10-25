@@ -104,17 +104,17 @@ User accounts have two sources:
 
 - Azure Active Directory (Azure AD) AD accounts, which are created directly in the cloud.
 
-
-The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. You can use it to find accounts that are synchronizing from on-premise AD.
+You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
 
 ```powershell
 Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
 ```
 
-The following command instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False*. You can use it to find cloud-only accounts.
+You can use the following command to find **cloud-only** accounts. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *False* or not set (*Null*).
+An account that was never synced from on-premise AD has *DirSyncEnabled* set to *Null*. An account that was synced initially from on-premise AD but is no longer being synced has *DirSyncEnabled* set to *False*. 
 
 ```powershell
-Get-AzureADUser | Where {$_.DirSyncEnabled -ne $false}
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
 ```
 
 ### View accounts based on a common property
