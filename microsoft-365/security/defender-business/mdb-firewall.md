@@ -40,4 +40,13 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
 
 3. In the **Firewall** section, select an existing policy, or add a new policy.
 
-4. 
+4. On the **Configuration settings** step, review the settings. Make any needed changes to **Domain network**, **Public network**, and **Private network**.
+
+5. Set **Allow local policy merge** to **Yes** to honor firewall settings on users' devices. Alternately, you can set it to **No**, which will ignore firewall settings on users' devices and apply only the firewall settings defined in Microsoft Defender for Business.
+
+6. To define an exception to your firewall settings, follow these steps: 
+
+   1. Under **Custom rules**, choose **+ Add rule**. 
+   2. On the **Create new rule** flyout, specify a name and description for the rule.
+   3. Select a profile (Domain network, Public network, or Private network).
+   4. In the **Remote address type** list, select either **IP address** or **Application file path**.
