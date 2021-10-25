@@ -32,7 +32,7 @@ Microsoft Defender for Business includes default firewall policies and settings 
 
 In Microsoft Defender for Business, you can define exceptions by creating custom rules. These custom rules allow you to block or allow specific connections on devices, regardless of their location or network.
 
-## Manage firewall settings in Microsoft Defender for Business
+## View and edit your firewall policies in Microsoft Defender for Business
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
