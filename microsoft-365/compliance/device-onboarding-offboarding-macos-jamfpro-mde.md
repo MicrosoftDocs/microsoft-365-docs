@@ -307,9 +307,20 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 -->
 ## Offboard macOS devices using JAMF Pro
 
+To offboard a macOS device, follow these steps
 
-1. Uninstall the application (if not using MDE)
-    1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
+ 1. Under **Preference Domain Properties** clear these settings
+    - Features 
+        - Use System Extensions: `enabled` - required for network extensions on Catalina
+        - Use Data Loss Prevention: `enabled`
+    - EDR preferences > 
+        - Group IDs: `DLP_Enable`
+
+1. Choose the **Scope** tab.
+
+1. Choose the groups to deploy this configuration profile to.
+
+1. Choose **Save**. 
 
 1. Restart the macOS device - some applications may lose printing functionality until they are restarted
 
