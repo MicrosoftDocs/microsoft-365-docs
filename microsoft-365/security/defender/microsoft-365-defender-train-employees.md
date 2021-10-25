@@ -1,5 +1,5 @@
 ---
-title: Train employees for Microsoft 365 Defender
+title: Train your security staff on Microsoft 365 Defender
 description: Get a list of training resources for Microsoft 365 Defender
 keywords: videos, self-help, self-study, ramp-up, instruction, courses, learning path, Microsoft Learn, course, courses
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ search.appverid:
 ms.technology: m365d
 ---
 
-# Train employees for Microsoft 365 Defender
+# Train your security staff on Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
