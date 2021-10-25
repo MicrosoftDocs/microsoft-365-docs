@@ -2,7 +2,6 @@
 title: Investigate alerts in Microsoft 365 Defender
 description: Investigate alerts seen across devices, users, and mailboxes.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,7 +19,6 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-  - MET150
 ms.technology: m365d
 ---
 # Investigate alerts in Microsoft 365 Defender
