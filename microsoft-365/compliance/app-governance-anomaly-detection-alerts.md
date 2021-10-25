@@ -346,7 +346,7 @@ This detection identifies an OAuth app that was detected by Machine Learning mod
 
 **MITRE ID**: T1087
 
-This detection identifies large volume of suspicious enumeration activities performed within a short time span through AAD PowerShell application.
+This detection identifies a large volume of suspicious enumeration activities performed within a short time span through an AAD PowerShell application.
 
 **TP or FP?**
 
