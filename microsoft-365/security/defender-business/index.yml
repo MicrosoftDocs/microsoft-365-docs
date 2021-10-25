@@ -81,6 +81,8 @@ landingContent:
             url: mdb-manage-devices.md
           - text: View and edit security policies and settings
             url: mdb-view-edit-device-policies.md
+          - text: Manage your firewall settings
+            url: mdb-manage-firewall.md
  
   # Card
   - title: Reference
