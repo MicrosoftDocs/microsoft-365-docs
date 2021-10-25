@@ -63,8 +63,6 @@ Firewall description
 | **Allow local policy merge** | When set to **Yes**, this setting applies firewall settings on users' devices when those settings don't conflict with your firewall policy. <br/><br/>When set to **No**, this setting ignores any firewall settings on users' devices, and applies only your firewall policy settings in Microsoft Defender for Business.  |
 | **Custom rules** | Custom rules allow you to block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you would set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <br/><br/>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. |
 
-
-
 ## See also
 
 [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
