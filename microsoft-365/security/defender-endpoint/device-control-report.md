@@ -35,7 +35,7 @@ The audit events include:
 
 - **USB drive mount and unmount:** Audit events that are generated when a USB drive is mounted or unmounted.
 - **PnP:** Plug and Play audit events are generated when removable storage, a printer, or Bluetooth media is connected.
-- **Removable Storage Access Control:** Events are generated when a Removable Storage Access Control policy is triggered, it can be Audit or Block or Allow.
+- **Removable storage access control:** Events are generated when a removable storage access control policy is triggered. It can be Audit, Block, or Allow.
 
 ## Monitor device control security
 
