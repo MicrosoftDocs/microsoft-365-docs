@@ -155,9 +155,9 @@ It'll take a few minutes for these changes to take effect on the reports in the 
   
 ## What happens to usage data when a user account is closed?
 
-Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals (see number 1) for the periods she was active in, but will not appear in the User Details table (see number 2).
+Whenever you close a user's account, Microsoft will delete that user's usage data within 30 days. That user will still be included in the Activity chart totals for the periods she was active in, but will not appear in the User Details table.
   
-However, when you select a particular day (see number 3), up to 28 days from the current date, the report show the user's usage for that day in the User Details table (see number 2).
+However, when you select a particular day, up to 28 days from the current date, the report show the user's usage for that day in the User Details table.
   
 ## Related content
 
