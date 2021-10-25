@@ -114,7 +114,7 @@ You need to transfer any customizations or features that modify messages in any 
 
 If you don't disable this functionality in your existing protection service, you can expect the following negative results in Microsoft 365:
 
-- DKIM will break.
+- Domain Keys Identified Mail (DKIM) will break.
 - [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
 - You'll probably get a high number of false positives (good mail marked as bad).
 
@@ -169,7 +169,7 @@ Don't underestimate the importance of this step. Data from user submissions will
 
 Instead of relying on data that's backed by the experience of the entire organization, more than one migration has resulted in emotional speculation based on a single negative user experience. Furthermore, if you've been running phishing simulations, you can use feedback from your users to inform you when they see something risky that might require investigation.
 
-## Account for active phishing simulations
+## Allow active phishing simulations
 
 If you have any active third-party phishing simulations, you need to prevent the messages, links, and attachments from being identified as phishing. For more information, see [Configure third-party phishing simulations in the advanced delivery policy](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 
@@ -202,13 +202,13 @@ Ultimately, it's your decision if you want to prevent delivery of any email to t
 
 Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
 
-- Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+- Verify that all of the domains that you use to send email have the proper Sender Policy Framework (SPF) records. For more information, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md).
 
 - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](use-dkim-to-validate-outbound-email.md).
 
 - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 
-- Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. A handful of servers or devices that are used mostly internally and not for mass mailing is generally simple. See this guide for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients is not allowed.
+- Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. A handful of servers or devices that are used mostly internally and not for mass mailing is generally simple. See [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients is not allowed.
 
 - Defender for Office 365 does not have a feature for aggregating DMARC reports. Visit the [Microsoft Intelligent Security Association (MISA) catalog](https://www.microsoft.com/misapartnercatalog) to view third-party vendors that offer DMARC reporting for Microsoft 365.
 
@@ -259,6 +259,8 @@ Typically, only a subset of security personnel will need additional rights to do
 
 By creating production policies, even if they aren't applied to all users, you can test post-breach features like [Threat Explorer](threat-explorer.md) and test integrating Defender for Office 365 into your security response team's processes.
 
+### Safe Attachments
+
 [Safe Attachments](safe-attachments.md) is the easiest Defender for Office 365 feature to enable and test before you switch your MX record. Safe Attachments has the following benefits:
 
 - Minimal configuration.
@@ -270,7 +272,7 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 ### Safe Links
 
 > [!NOTE]
-> We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users.
+> We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users. One way to ensure this doesn't happen is to exclude the URL domain of the other service in the Safe Links policy.
 >
 > Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
@@ -416,7 +418,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
 
 It is typical that most filtering systems allow users to customize the bulk email that they receive. These settings do not easily migrate, but you might want to consider working with VIPs and their staff to migrate their existing configurations.
 
-Today, there are some bulk messages (for example, newsletters) that Microsoft 365 believes are safe to unsubscribe to based on the message source. Message from these "safe" sources are currently not marked as bulk email (the bulk complaint level or BCL is 0 or 1) and therefore are not easily blocked for global delivery to user mailboxes. For most users, the solution is to ask them individually to unsubscribe from these bulk message or use Outlook to block the sender. But, some users will not like blocking or unsubscribing from bulk messages themselves. A rule similar to the one documented can be helpful when VIP users do not wish to manage this themselves.
+Today, there are some bulk messages (for example, newsletters) that Microsoft 365 believes are safe to unsubscribe to based on the message source. Message from these "safe" sources are currently not marked as bulk email (the bulk complaint level or BCL is 0 or 1) and therefore are not easily blocked for global delivery to user mailboxes. For most users, the solution is to ask them individually to unsubscribe from these bulk message or use Outlook to block the sender. But, some users will not like blocking or unsubscribing from bulk messages themselves. A rule [similar to the one documented](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md) can be helpful when VIP users do not wish to manage this themselves.
 <!--- What does this last sentence mean? --->
 
 ## Switch your MX records
@@ -431,10 +433,10 @@ You can migrate all of your domains at once. Or, you can migrate less frequently
 > [!IMPORTANT]
 > Before you switch your MX records, verify that the following settings are not enabled on the inbound connector from the protection service to Microsoft 365. Typically the connector will have one or more of the following set:
 >
-> - **and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name** (*RestrictDomainsToCertificate*)
-> - **Reject email messages if they aren't sent from within this IP address range** (*RestrictDomainsToIPAddresses*)
+> - `and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name` (*RestrictDomainsToCertificate*)
+> - `Reject email messages if they aren't sent from within this IP address range` (*RestrictDomainsToIPAddresses*)
 >
-> If either of these settings is turned on, all mail delivery to your domains will fail after you switch the MX records. You need to disable these settings before you continue.
+> If either of these settings is turned on, and the connector type is `Partner`, all mail delivery to your domains will fail after you switch the MX records. You need to disable these settings before you continue. If the connector is an on-premises connector used for Hybrid, you may want to check for a separate partner connector as well - but there is no need to modify the on-premises connector.
 
 When you're ready, do the following steps:
 
@@ -451,4 +453,9 @@ When you're ready, do the following steps:
 
 4. Switch the MX record for your domains that receive the least amount of email first. If you want to pause at any point here to evaluate, you can do so. But, remember that once you turn off the SCL=-1 mail flow rule, users might have two different experiences for checking on false positives. The sooner you can provide a single, consistent experience, the happier your users and help desk teams will be when they have to troubleshoot a missing message.
 
-5. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) are your friend here.
+## Transition to Normal Operations
+
+Congratulations! If you followed this guide, the first few days post-MX switch should be much smoother. Now you begin the normal operation of Microsoft Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but other useful steps can be: 
+  - Regularly reviewing user submissions, especially [user-reported phish](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). 
+  - Reviewing overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+  - [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example.md) queries can be used to look for tuning opportunities as well as look for risky messages.
