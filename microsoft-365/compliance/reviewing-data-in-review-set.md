@@ -9,18 +9,16 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
 ROBOTS: NOINDEX, NOFOLLOW 
-
-description: ""
+description: "Learn about reviewing case data in a review set in Advanced eDiscovery."
 ---
 
 # Review case data in Advanced eDiscovery
 
-
-Coming soon
+Coming soon.

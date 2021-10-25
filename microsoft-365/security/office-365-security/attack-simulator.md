@@ -1,163 +1,381 @@
 ---
-title: "Attack Simulator in Office 365"
-f1.keywords:
-- NOCSH
+title: Attack Simulator in the Security & Compliance Center
+f1.keywords: 
+  - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: overview
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-- MOE150
+ms.topic: how-to
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
+  - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
-ms.collection:
-- M365-security-compliance
-description: "As an Office 365 global administrator, you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack hits your business."
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use Attack Simulator in the Security & Complance Center to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# Attack Simulator in Office 365
+# Attack Simulator in the Security & Compliance Center
 
-**Summary** If you are an Office 365 global administrator or a security administrator and your organization has Office 365 Advanced Threat Protection Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-## The Attacks
+**Applies to**
+ [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
-Three kinds of attack simulations are currently available:
+If your organization has Microsoft Defender for Office 365 Plan 2, which includes [Threat Investigation and Response capabilities](office-365-ti.md), you can use Attack Simulator in the Security & Compliance Center to run realistic attack scenarios in your organization. These simulated attacks can help you identify and find vulnerable users before a real attack impacts your bottom line. Read this article to learn more.
 
-- [Credential harvest spear-phishing attack](#credential-harvest-spear-phishing-attack)
+> [!NOTE]
+>
+> Attack Simulator as described in this article is now read-only and has been replaced by **Attack simulation training** in the **Email & collaboration** node in the Microsoft 365 Defender portal at <https://security.microsoft.com>. For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+>
+> The ability to launch new simulations from this version of Attack Simulator has been disabled. However, you can still access reports until April 24, 2021.
 
-- [Attachment spear-phishing attack](#attachment-spear-phishing-attack)
+## What do you need to know before you begin?
 
-- [Password-spray attack](#password-spray-attack)
+- To open the Security & Compliance Center, go to <https://protection.office.com/>. Attack simulator is available at **Threat management** \> **Attack simulator**. To go directly to attack simulator, open <https://protection.office.com/attacksimulator>.
 
-- [Brute-force password attack](#brute-force-password-attack)
+- For more information about the availability of Attack Simulator across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-For an attack to be successfully launched, make sure that the account you are using to run simulated attacks is using multi-factor authentication. In addition, you must be an Office 365 global administrator or a security administrator. (To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).)
+- You need to be a member of the **Organization Management** or **Security Administrator** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-To access Attack Simulator, in the Security &amp; Compliance Center, choose **Threat management** \> **Attack simulator**.
+- Your account needs to be configured for multi-factor authentication (MFA) to create and manage campaigns in Attack Simulator. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
-## Before you begin...
+- Attack Simulator only works on cloud-based mailboxes.
 
-Make sure that you and your organization meet the following requirements for Attack Simulator:
+- Phishing campaigns will collect and process events for 30 days. Historical campaign data will be available for up to 90 days after you launch the campaign.
 
-- Your organization's email is hosted in Exchange Online. (Attack Simulator is not available for on-premises email servers.)
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md).
 
-- You are an Office 365 global administrator or security administrator
+- There are no corresponding PowerShell cmdlets for Attack Simulator.
 
-- Phishing campaigns will collect and process events for a period of 30 days, historical campaign data will be available for up to 90 days after the campaign is launched.
+## Spear phishing campaigns
 
-- [Multi-factor authentication/Conditional Access](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) is turned on, for at least the Office 365 global administrator account and security administrators who will be using Attack Simulator. (Ideally, multi-factor authentication/conditional access is turned on for all users in your organization.)
+*Phishing* is a generic term for email attacks that try to steal sensitive information in messages that appear to be from legitimate or trusted senders. *Spear phishing* is a targeted phishing attack that uses focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
 
-- Your organization has [Office 365 Advanced Threat Protection Plan 2](office-365-atp.md), with Attack Simulator visible in the Security &amp; Compliance Center (go to **Threat management** \> **Attack simulator**)
+In Attack Simulator, two different types of spear phishing campaigns are available:
 
-    ![Threat management - Attack Simulator](../../media/ThreatMgmt-AttackSimulator.png)
+- **Spear phishing (credentials harvest)**: The attack tries to convince the recipients to click a URL in the message. If they click the link, they're asked to enter their credentials. If they do, they're taken to one of the following locations:
 
-## Credential harvest spear-phishing attack
+  - A default page that explains that this was a just a test, and gives tips for recognizing phishing messages.
 
-Phishing is a generic term for a broad suite of attacks classed as a social engineering style attack. This attack is focused on spear phishing, a more targeted attack that is aimed at a specific group of individuals or an organization. Typically, a customized attack with some reconnaissance performed and using a display name that will generate trust in the recipient, such as an email message that looks like it came from an executive within your organization.
+    ![What users see if they click the phishing link and enter their credentials.](../../media/attack-simulator-phishing-result.png)
 
-This attack focuses on letting you manipulate who the message appears to have originated from by changing the display name and source address. When spear-phishing attacks are successful, cyberattackers gain access to users' credentials.
+  - A custom page (URL) that you specify.
 
-### To simulate a spear-phishing attack
+- **Spear phishing (attachment)**: The attack tries to convince the recipients to open a .docx or .pdf attachment in the message. The attachment contains the same content from the default phishing link, but the first sentence starts with "\<Display Name\>, you are seeing this message as a recent email message you opened...".
 
-![Compose Email Body](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+> [!NOTE]
+> Currently, spear phishing campaigns in Attack Simulator don't expire.
 
-You can craft the rich HTML editor directly in the **Email body** field itself or work with HTML source.
+### Create a spear phishing campaign
 
-1. In the [Security &amp; Compliance Center](https://protection.office.com), choose **Threat management** \> **Attack simulator**.
+An important part of any spear phishing campaign is the look and feel of the email message that's sent to the targeted recipients. To create and configure the email message, you have these options:
 
-2. Specify a meaningful campaign name for the attack or select a template.
+- **Use a built-in email template**: Two built-in templates are available: **Prize Giveaway** and **Payroll Update**. You can further customize some, all, or none of the email properties from the template when you create and launch the campaign.
 
-   ![Phishing Start Page](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+- **Create a reusable email template**: After you create and save the email template, you can use it again in future spear phishing campaigns. You can further customize some, all, or none of the email properties from the template when you create and launch the campaign.
 
-3. Specify the target recipients. This can be individuals or groups in your organization. Each targeted recipient must have an Exchange Online Mailbox in order for the attack to be successful.
+- **Create the email message in the wizard**: You can create the email message directly in the wizard as you create and launch the spear phishing campaign.
 
-   ![Recipient Selection](../../media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
+#### Step 1 (Optional): Create a custom email template
 
-4. Configure the Phishing email details.
+If you're going to use one of the built-in templates or create the email message directly in the wizard, you can skip this step.
 
-   ![Configure email details](../../media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)
+1. In the Security & Compliance Center, go to **Threat management** \> **Attack simulator**.
 
-   The HTML formatting can be as complex or basic as your campaign needs. As the email format is HTML, you can insert images and text to enhance believability. You have control on what the received message will look like in the receiving email client.
+2. On the **Simulate attacks** page, in either the **Spear Phishing (Credentials Harvest)** or **Spear Phishing (Attachment)** sections, click **Attack Details**.
 
-5. Specify text for the **From (Name)** field. This is the field that shows in the **Display Name** in the receiving email client.
+   It doesn't matter where you create the template. The available options in the template are the same for both types of phishing attacks.
 
-6. Specify text or the **From** field. This is the field that shows as the email address of the sender in the receiving email client.
+3. In the **Attack details** page that opens, in the **Phishing Templates** section, in the **Create Templates** area, click **New Template**.
 
-   You can enter an existing email namespace within your organization (doing this will make the email address actually resolve in the receiving client, facilitating a very high trust model), or you can enter an external email address. The email address that you specify does not have to actually exist, but it does need to follow the format of a valid SMTP address, such as `user@domainname.extension`.
+4. The **Configure Phishing Template** wizard starts in a new flyout. In the **Start** step, enter a unique display name for the template, and then click **Next**.
 
-7. Using the drop-down selector, select a Phishing Login server URL that reflects the type of content you will have within your attack. Several themed URLs are provided for you to choose from, such as document delivery, technical, payroll etc. This is effectively the URL that targeted users are asked to click.
+5. In the **Configure email details** step, configure the following settings:
 
-8. Specify a custom landing page URL. Using this will redirect users to a URL you specify at the end of a successful attack. If you have internal awareness training, for example, you can specify that here.
+   - **From (Name)**: The display name that's used for the message sender.
 
-9. Specify text for the **Subject** field. This is the field that shows as the **Subject Name** in the receiving email client.
+   - **From (Email)**: The sender's email address.
 
-10. Compose the **Email body** that the target will receive.
+   - **Phishing Login Server URL**: Click the drop down and select one of the available URLs from the list. This is the URL that users will be tempted to click. The choices are:
 
-    `${username}` inserts the targets name into the Email body.
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
 
-    `${loginserverurl}` inserts the URL we want target users to click
+     > [!NOTE]
+     >
+     > A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
 
-11. Choose **Next,** then **Finish** to launch the attack. The spear phishing email message is delivered to your target recipients' mailboxes.
+   - **Custom Landing Page URL**: Enter an optional landing page where users are taken if they click the phishing link and enter their credentials. This link replaces the default landing page. For example, if you have internal awareness training, you can specify that URL here.
 
-## Attachment spear-phishing attack
+   - **Category**: Currently, this setting isn't used (anything you enter is ignored).
 
-Phishing is a generic term for a broad suite of attacks classed as a social engineering style attack. This attack is focused on attachment spear phishing, a more targeted attack that is aimed at a specific group of individuals or an organization. Typically, a customized attack with some reconnaissance performed and using a display name that will generate trust in the recipient, such as an email message that looks like it came from an executive within your organization.
+   - **Subject**: The **Subject** field of the email message.
 
-This attack focuses on letting you manipulate who the message appears to have originated from by changing the display name and source address, but this time as opposed to offering a URL to try and lure the end user to click, we offer an attachment that we are trying to get the end user to open. 
+   When you're finished, click **Next**.
 
-### To simulate a Attachment spear-phishing attack
+6. In the **Compose email** step, create the message body of the email message. You can use the **Email** tab (a rich HTML editor) or the **Source** tab (raw HTML code).
 
-1. Follow the steps from above, having this time clicked on **Attachment Attack** on the landing page.
+   The HTML formatting can be as simple or complex as you need it to be. You can insert images and text to enhance the believability of the message in the recipient's email client.
 
-2. As you progress through the wizard, you see two options to configure. The **Attachment Type**, we support two attachment types, **.docx** or **.pdf**. The **Attachment Name**, use this field to create a meaningful attachment name for the campaign.
+   - `${username}` inserts the recipient's name.
 
-## Password-spray attack
+   - `${loginserverurl}` inserts the **Phishing Login Server URL** value from the previous step.
 
-A password spray attack against an organization is typically used after a bad actor has successfully acquired a list of valid users from the tenant. The bad actor knows about common passwords that people use. This is a widely used attack, as it is a cheap attack to run, and harder to detect than brute force approaches.
+   When you're finished, click **Next**.
 
-This attack focuses on letting you specify a common password against a large target base of users.
+7. In the **Confirm** step, click **Finish**.
 
-**Important Note** running the password spray attack against end user accounts that already have multi-factor authentication, will result in a unsuccessful attempt for those accounts in the reporting. This is due to multi-factor authentication being one of the primary mechanims to help protect against password spray attacks, so is expected.
+#### Step 2: Create and launch the spear phishing campaign
 
-### To simulate a password-spray attack
+1. In the Security & Compliance Center, go to **Threat management** \> **Attack simulator**.
 
-1. In the [Security &amp; Compliance Center](https://protection.office.com), choose **Threat management** \> **Attack simulator**.
+2. On the **Simulate attacks** page, make one of the following selections based on the type of campaign you want to create:
 
-2. Specify a meaningful campaign name for the attack.
+   - In the **Spear Phishing (Credentials Harvest)** section, click **Launch Attack** or click **Attack Details** \> **Launch Attack**.
 
-3. Specify the target recipients. This can be individuals or groups in your organization. A targeted recipient must have an Exchange Online mailbox in order for the attack to be successful.
+   - In the **Spear Phishing (Attachment)** section, click **Launch Attack** or click **Attack Details** \> **Launch Attack**.
 
-4. Specify a password to use for the attack. For example, one common, relevant password you could try is `Summer2019`. Another might be `Fall2019`, or `Password1`.
+3. The **Configure Phishing Attack** wizard starts in a new flyout. In the **Start** step, do one of the following steps:
 
-5. Choose **Finish** to launch the attack.
+   - In the **Name** box, enter a unique display name for the campaign. Don't click **Use Template**, because you'll create the email message later in the wizard.
 
-## Brute-force password attack
+   - Click **Use Template** and select a built-in or custom email template. After you select the template, the **Name** box is automatically filled based on the template, but you can change the name.
 
-A brute-force password attack against an organization is typically used after a bad actor has successfully acquired a list of key users from the tenant. This attack focuses on trying a set of passwords on a single user's account.
+   > [!div class="mx-imgBorder"]
+   > ![Phishing Start Page.](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
-**Important Note** running the brute-force password attacks against end user accounts that already have multi-factor authentication, will result in a unsuccessful attempt for those accounts in the reporting. This is due to multi-factor authentication being one of the primary mechanims to help protect against brute-force password attacks, so is expected.
+   When you're finished, click **Next**.
 
-### To simulate a brute-force password attack
+4. In the **Target recipients** step, do one of the following steps:
 
-1. In the [Security &amp; Compliance Center](https://protection.office.com), choose **Threat management** \> **Attack simulator**.
+   - Click **Address Book** to select the recipients (users or groups) for the campaign. Each targeted recipient must have an Exchange Online mailbox. If you click **Filter** and **Apply** without entering a search criteria, all recipients are returned and added to the campaign.
 
-2. Specify a meaningful campaign name for the attack.
+   - Click **Import** then **File Import** to import a comma-separated value (CSV) or line-separated file of email addresses. Each line must contain the recipient's email address.
 
-3. Specify the target recipient. A targeted recipient must have an Exchange Online mailbox in order for the attack to be successful.
+   When you're finished, click **Next**.
 
-4. Specify a set of passwords to use for the attack. To do this, you can use a text (.txt) file for your list of passwords. The text file cannot exceed 10 MB in file size. Use one password per line, and make sure to include a hard return after the last password in your list.
+5. In the **Configure email details** step, configure the following settings:
 
-5. Choose **Finish** to launch the attack.
+   If you selected a template in the **Start** step, most of these values are already configured, but you can change them.
 
+   - **From (Name)**: The display name that's used for the message sender.
 
+   - **From (Email)**: The sender's email address. You can enter a real or fake email address from your organization's email domain, or you can enter a real or fake external email address. A valid sender email address from your organization will actually resolve in the recipient's email client.
 
-Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what's in development, what's rolling out, and what's already launched.
+   - **Phishing Login Server URL**: Click the drop down and select one of the available URLs from the list. This is the URL that users will be tempted to click. The choices are:
 
-## See also
+     - <http://portal.docdeliveryapp.com>
+     - <http://portal.docdeliveryapp.net>
+     - <http://portal.docstoreinternal.com>
+     - <http://portal.docstoreinternal.net>
+     - <http://portal.hardwarecheck.net>
+     - <http://portal.hrsupportint.com>
+     - <http://portal.payrolltooling.com>
+     - <http://portal.payrolltooling.net>
+     - <http://portal.prizegiveaway.net>
+     - <http://portal.prizesforall.com>
+     - <http://portal.salarytoolint.com>
+     - <http://portal.salarytoolint.net>
 
-[Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+     > [!NOTE]
+     >
+     > - All of the URLs are intentionally http, not https.
+     >
+     > - A URL reputation service might identify one or more of these URLs as unsafe. Check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign.
+     >
+     > - You are required to select a URL. For **Spear Phishing (Attachment)** campaigns, you can remove the link from the body of the message in the next step (otherwise, the message will contain both a link **and** an attachment).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+   - **Attachment Type**: This setting is only available in **Spear Phishing (Attachment)** campaigns. Click the drop down and select **.DOCX** or **.PDF** from the list.
+
+   - **Attachment Name**: This setting is only available in **Spear Phishing (Attachment)** campaigns. Enter a filename for the .docx or .pdf attachment.
+
+   - **Custom Landing Page URL**: Enter an optional landing page where users are taken if they click the phishing link and enter their credentials. This link replaces the default landing page. For example, if you have internal awareness training, you can specify that URL here.
+
+   - **Subject**: The **Subject** field of the email message.
+
+   When you're finished, click **Next**.
+
+6. In the **Compose email** step, create the message body of the email message. If you selected a template in the **Start** step, the message body is already configured, but you can customize it. You can use the **Email** tab (a rich HTML editor) or the **Source** tab (raw HTML code).
+
+   The HTML formatting can be as simple or complex as you need it to be. You can insert images and text to enhance the believability of the message in the recipient's email client.
+
+   - `${username}` inserts the recipient's name.
+
+   - `${loginserverurl}` inserts the **Phishing Login Server URL** value.
+
+   For **Spear Phishing (Attachment)** campaigns, you should remove the link from the body of the message (otherwise, the message will contain both a link **and** an attachment, and link clicks aren't tracked in an attachment campaign).
+
+   > [!div class="mx-imgBorder"]
+   > ![Compose Email Body.](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+
+   When you're finished, click **Next**.
+
+7. In the **Confirm** step, click **Finish** to launch the campaign. The phishing message is delivered to the targeted recipients.
+
+## Password attack campaigns
+
+A *password attack* tries to guess passwords for user accounts in an organization, typically after the attacker has identified one or more valid user accounts.
+
+In Attack Simulator, two different types of password attack campaigns are available for you to test the complexity of your users' passwords:
+
+- **Brute force password (dictionary attack)**: A *brute force* or *dictionary* attack uses a large dictionary file of passwords on a user account with the hope that one of them will work (many passwords against one account). Incorrect password lock-outs help deter brute force password attacks.
+
+  For the dictionary attack, you can specify one or many passwords to try (manually entered or in an uploaded file), and you can specify one or many users.
+
+- **Password spray attack**: A *password spray* attack uses the same carefully considered password against a list of user accounts (one password against many accounts). Password spray attacks are harder to detect than brute force password attacks (the probability of success increases when an attacker tries one password across dozens or hundreds of accounts without the risk of tripping the user's incorrect password lock-out).
+
+  For the password spray attack, you can only specify one password to try, and you can specify one or many users.
+
+> [!NOTE]
+> The password attacks in Attack Simulator pass username and password Basic auth requests to an endpoint, so they also work with other authentication methods (AD FS, password hash sync, pass-through, PingFederate, etc.). For users that have MFA enabled, even if the password attack tries their actual password, the attempt will always register as a failure (in other words, MFA users will never appear in the **Successful attempts** count of the campaign). This is the expected result. MFA is a primary method to help protect against password attacks.
+
+### Create and launch a password attack campaign
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Attack simulator**.
+
+2. On the **Simulate attacks** page, make one of the following selections based on the type of campaign you want to create:
+
+   - In the **Brute Force Password (Dictionary Attack)** section, click **Launch Attack** or click **Attack Details** \> **Launch Attack**.
+
+   - in the **Password spray attack** section, click **Launch Attack** or click **Attack Details** \> **Launch Attack**.
+
+3. The **Configure Password Attack** wizard starts in a new flyout. In the **Start** step, enter a unique display name for the campaign, and then click **Next**.
+
+4. In the **Target users** step, do one of the following steps:
+
+   - Click **Address Book** to select the recipients (users or groups) for the campaign. Each targeted recipient must have an Exchange Online mailbox. If you click **Filter** and **Apply** without entering a search criteria, all recipients are returned and added to the campaign.
+
+   - Click **Import** then **File Import** to import a comma-separated value (CSV) or line-separated file of email addresses. Each line must contain the recipient's email address.
+
+   When you're finished, click **Next**.
+
+5. In the **Choose attack settings** step, choose what to do based on the campaign type:
+
+   - **Brute Force Password (Dictionary Attack)**: Do either of the following steps:
+
+     - **Enter passwords manually**: In the **Press enter to add a password** box, type a password and then press ENTER. Repeat this step as many times as necessary.
+
+     - **Upload passwords from a dictionary file**: Click **Upload** to import an existing text file that contains one password on each line and a blank last line. The text file must be 10 MB or less in size, and can't contain more than 30000 passwords.
+
+   - **Password spray attack**: In **The password(s) to use in the attack** box, enter one password.
+
+   When you're finished, click **Next**.
+
+6. In the **Confirm** step, click **Finish** to launch the campaign. The passwords you specified are tried on users you specified.
+
+## View campaign results
+
+After you launch a campaign, you can check the progress and results on the main **Simulate attacks** page.
+
+Active campaigns will show a status bar, a completed percentage value and "(completed users) of (total users)" count. Clicking the **Refresh** button will update the progress of any active campaigns. You can also click **Terminate** to stop an active campaign.
+
+When the campaign is finished, the status changes to **Attack completed**. You can view the results of the campaign by doing either of the following actions:
+
+- On the main **Simulate attacks** page, click **View Report** under the name of the campaign.
+
+- On the main **Simulate attacks** page, click **Attack Details** in the section for the type of attack. On the **Attack details** page that opens, select the campaign in the **Attack History** section.
+
+Either of the previous actions will take you to a page named **Attack details**. The information that's available on this page for each type of campaign is described in the following sections.
+
+### Spear Phishing (Credentials Harvest) campaign results
+
+The following information is available on the **Attack details** page for each campaign:
+
+- The duration (start date/time and end date/time) of the campaign.
+
+- **Total users targeted**
+
+- **Successful attempts**: The number of users who clicked the link **and** entered their credentials (*any* username and password value).
+
+- **Overall Success Rate**: A percentage that's calculated by **Successful attempts** / **Total users targeted**.
+
+- **Fastest Click**: How long it took the first user to click the link after you launched the campaign.
+
+- **Average Click**: The sum of how long it took everyone to click the link divided by the number of users who clicked the link.
+
+- **Click Success Rate**: A percentage that's calculated by (number of users who clicked the link) / **Total users targeted**.
+
+- **Fastest Credentials**: How long it took the first user to enter their credentials after you launched the campaign.
+
+- **Average Credentials**: The sum of how long it took everyone to enter their credentials divided by the number of users who entered their credentials.
+
+- **Credential Success Rate**: A percentage that's calculated by (number of users who entered their credentials) / **Total users targeted**.
+
+- A bar graph that shows the **Link clicked** and **Credential supplied** numbers per day.
+
+- A circle graph that shows the **Link clicked**, **Credential supplied**, and **None** percentages for the campaign.
+
+- The **Compromised Users** section lists the details of the users who clicked the link:
+
+  - The user's email address
+
+  - The date/time when they clicked the link.
+
+  - The client IP address.
+
+  - Details about the user's version of Windows and web browser.
+
+  You can click **Export** to export the results to a CSV file.
+
+### Spear Phishing (Attachment) campaign results
+
+The following information is available on the **Attack details** page for each campaign:
+
+- The duration (start date/time and end date/time) of the campaign.
+
+- **Total users targeted**
+
+- **Successful attempts**: The number of users who opened or downloaded and opened the attachment (preview doesn't count).
+
+- **Overall Success Rate**: A percentage that's calculated by **Successful attempts** / **Total users targeted**.
+
+- **Fastest attachment open time**: How long it took the first user to open the attachment after you launched the campaign.
+
+- **Average attachment open time**: The sum of how long it took everyone to open the attachment divided by the number of users who opened the attachment.
+
+- **Attachment open success rate**: A percentage that's calculated by (number of users who opened the attachment) / **Total users targeted**.
+
+### Brute Force Password (Dictionary Attack) campaign results
+
+The following information is available on the **Attack details** page for each campaign:
+
+- The duration (start date/time and end date/time) of the campaign.
+
+- **Total users targeted**
+
+- **Successful attempts**: The number of users who were found to be using one of the specified passwords.
+
+- **Overall Success Rate**: A percentage that's calculated by **Successful attempts** / **Total users targeted**.
+
+- The **Compromised Users** section lists the email addresses of the affected users. You can click **Export** to export the results to a CSV file.
+
+### Password spray attack campaign results
+
+The following information is available on the **Attack details** page for each campaign:
+
+- The duration (start date/time and end date/time) of the campaign.
+
+- **Total users targeted**
+
+- **Successful attempts**: The number of users who were found to be using the specified password.
+
+- **Overall Success Rate**: A percentage that's calculated by **Successful attempts** / **Total users targeted**.

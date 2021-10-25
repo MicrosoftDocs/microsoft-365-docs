@@ -1,41 +1,40 @@
 ---
-title: "Enter your product key for Office 365 Business Premium"
+title: "Enter your product key for Microsoft 365 Business Standard"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
+search.appverid: MET150
 ROBOTS: NOINDEX
-description: "Learn how to redeem an Office 365 Business Premium product key purchased at a retail store." 
-ms.custom: okr_SMB
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
+- commerce_purchase
+- AdminTemplateSet
+description: "If you purchased Microsoft 365 Business Standard from a retail store, learn how to redeem the product key and activate your subscription." 
+ms.date: 11/13/2020
 ---
 
-# Enter your product key for Office 365 Business Premium
+# Enter your product key for Microsoft 365 Business Standard
 
-If you purchased Office 365 Business Premium from a retail store, this article helps you activate your subscription. 
+If you purchased Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
  **Need something else?**
- **For help with Office 365 Home, or Personal**, see [Using product keys with Office](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Volume licensing customer?** If you bought Office 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
+ **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
 ## Activate a new subscription
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">office.com/setupkey</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
 2. Enter your product key, then select **Next**.
 
@@ -52,14 +51,18 @@ If you purchased Office 365 Business Premium from a retail store, this article h
 
 ## Extend the expiration date or add a license to an existing subscription
 
-To use a product key to extend the expiration date or add a license to your existing Office 365 Business Premium subscription, you need a new and unused key for the same Office 365 plan. Entering your original Office 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
+To extend the expiration date or add a license to your existing Microsoft 365 Business Standard subscription, use a new and unused key for the same Microsoft 365 plan. Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again. See [Add licenses to or extend a subscription paid for using a product key](licenses/add-licenses-using-product-key.md).
 
-## What's next?
+## Next steps
 
-If you're new to Office 365 for business, learn how to [set up Office 365](../admin/setup/setup.md).
+If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365](../admin/setup/setup.md).
+
+Check out this list of common errors and solutions: [Problems with your Microsoft 365 for business product key?](product-key-errors-and-solutions.md)
   
-## Still having trouble with product keys?
+Or, [call Microsoft Support](../business-video/get-help-support.md).
 
-Check out this list of common errors and solutions: [Problems with your Office 365 for business product key?](product-key-errors-and-solutions.md)
-  
-Or, [call Microsoft Support](../admin/contact-support-for-business-products.md).
+## Related content
+
+[Upgrade to a different plan](./subscriptions/upgrade-to-different-plan.md) (article)\
+[What happens to my data and access when my Microsoft 365 for business subscription ends?](./subscriptions/what-if-my-subscription-expires.md) (article)\
+[Understand subscriptions and licenses in Microsoft 365 for business](./licenses/subscriptions-and-licenses.md) (article)

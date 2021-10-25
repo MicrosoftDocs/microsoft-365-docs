@@ -1,76 +1,49 @@
 ---
-title: "Report junk email messages to Microsoft"
-f1.keywords:
-- NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+title: Report spam, non-spam, and phishing messages to Microsoft
+f1.keywords: 
+  - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: 
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
+ms.topic: overview
+
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
-ms.collection:
-- M365-security-compliance
-description: "The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers several ways for you to report junk email messages:"
+ms.collection: 
+  - M365-security-compliance
+description: Admins can learn about the different ways to report good and bad messages and files to Microsoft for analysis.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# Report junk email messages to Microsoft
+# Report messages and files to Microsoft
 
-The Microsoft Junk Email Reporting Add-in for Microsoft Office Outlook offers several ways for you to report junk email messages:
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- From the Outlook ribbon
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-- From your Inbox
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, both users and admins have several different methods for reporting email messages and files to Microsoft.
 
-- From within an opened email message
+<br>
 
-The Junk Email Reporting Add-in helps you submit reports to the Microsoft Exchange Online Protection (EOP) service. If your mailbox is not protected by the service, your junk email report submission will not affect your spam filters. Administrators can learn about more spam settings that apply to a whole organization at [How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md) or [How to reduce spam email in Office 365](reduce-spam-email.md). These are helpful if you have administrator-level control and you want to prevent false positives or false negatives.
+****
 
-> [!TIP]
-> You can also submit spam messages directly to Microsoft by using the [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) email address, and false positive (non-spam) messages by using the [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com) email address. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+|Method|Description|
+|---|---|
+|[Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md)|The recommended reporting method for admins in organizations with Exchange Online mailboxes (not available in standalone EOP).|
+|[Enable the Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md)|Works with Outlook and Outlook on the web (formerly known as Outlook Web App). <p> Depending on your subscription, messages that users reported with the add-ins are available in [the Admin Submissions portal](admin-submission.md), [Automated investigation and response (AIR) results](air-view-investigation-results.md), the [User-reported messages report](view-email-security-reports.md#user-reported-messages-report), and [Explorer](threat-explorer-views.md#email--submissions). <p> You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [User submissions policies](user-submission.md).
+|[Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md)|Submit false positives (good email that was blocked or sent to junk folder) and false negatives (unwanted email or phish that was delivered to the inbox) to Exchange Online Protection (EOP) using the Report Message feature.|
+|[Manually submit messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|Manually send attached messages to specific Microsoft email addresses for spam, not spam, and phishing.|
+|[Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|Learn how to create a mail flow rule (also known as a transport rule) that notifies you when users report messages to Microsoft for analysis.|
+|[Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use the Microsoft Security Intelligence site to submit attachments and other files.|
+|
 
-### To report junk email messages from Outlook
-
-[Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
-
-### To report junk email messages from your Inbox
-
-1. Right-click the message or messages that you want to report as junk.
-
-2. Select **Junk** and then click **Report Junk**.
-    ![Report junk messages from your Inbox](../../media/EOP-Outlook-Junk-Reporting-Tool-3.jpg)
-
-3. The **Microsoft Junk E-mail Reporting Add-in** dialog box opens. If you're sure that you want to submit the messages you selected as junk, click **Yes**.
-    ![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.
-
-The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
-
-### To report a junk email message from within an opened message
-
-1. From within an opened message, click the **Report Junk** button on the message ribbon. For example, click **Junk** \> **Report Junk**
-    ![Report a junk email from within a message](../../media/EOP-Outlook-Junk-Reporting-Tool-4.jpg)
-
-2. The **Microsoft Junk E-mail Reporting Add-in** dialog box opens. If you're sure that you want to submit the message you selected as junk, click **Yes**.
-    ![Confirm report as junk](../../media/EOP-Outlook-Junk-Reporting-Tool-2.jpg)
-
-    > [!NOTE]
-    > If you don't want to receive this confirmation message when submitting junk messages, check **Do not show this message again**.
-
-The selected message will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the message has been submitted, open your **Sent Items** folder to view the submitted message.
-
-## For more information
-
-[Enable the Report Message add-in](enable-the-report-message-add-in.md)
-
-[Troubleshooting and support information](troubleshooting-and-support-information.md)
-
-[How to prevent good email from being marked as spam in Office 365](prevent-email-from-being-marked-as-spam.md)
-
-[How to reduce spam email in Office 365](reduce-spam-email.md)
+> [!NOTE]
+> Data from submissions to Microsoft resides in the Office 365 compliance boundary in North American data centers. The data is reviewed by analysts on the engineering team to help improve the effectiveness of the filters. The submission is considered feedback to help improve the filters and is kept for a period of 30 days. After which, it is deleted.

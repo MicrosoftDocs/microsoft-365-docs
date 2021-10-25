@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -45,22 +45,12 @@ With Advanced eDiscovery, legal teams can create and customize their legal hold 
 
    - **Escalations:** In some cases, if a custodian remains unresponsive even after a set of reminders over a period of time, the legal team can set up an escalation workflow to notify unresponsive custodians and their manager.
 
-## Role groups and permissions
+For more information about managing the custodian communication process, see the following: 
 
-Legal teams can control and segregate their case activity using eDiscovery-related role groups and permissions in the Security & Compliance Center. 
+- [Create a legal hold notice](create-hold-notification.md)
 
-To create and manage legal hold notifications, a user must a member of the eDiscovery Manager role group. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case. 
+- [Use the communications editor](using-communications-editor.md)
 
-There are two subgroups the eDiscovery Manager role group. The difference between these subgroups is based on scope.
+- [Manage hold notifications](manage-hold-notification.md)
 
-- **eDiscovery Manager:** Can view and manage the Advanced eDiscovery cases they create or are a member of. If another eDiscovery Manager creates a case but doesn't add a second eDiscovery Manager as a member of that case, the second eDiscovery Manager won't be able to view or open the case on the Advanced eDiscovery page in the Security & Compliance Center.
-
-- **eDiscovery Administrator:** Can perform all case management tasks that an eDiscovery Manager can do. Additionally, an eDiscovery Administrator can:
-
-  - View all cases that are listed on the Advanced eDiscovery page.
-  
-  - Manage any case in the organization after they add themselves as a member of the case.
-
-  - Access and export case data in Advanced eDiscovery for any case in the organization.
-
-For more information, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
+- [Acknowledge a hold notification](acknowledge-hold-notification.md)

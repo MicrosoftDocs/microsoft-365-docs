@@ -8,10 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -38,7 +39,7 @@ Use the mobile email access settings to choose which mobile apps people in your 
 
 2. On the **Mobile email access options** page, select the check box, and then choose how users in your organization use email apps on their devices:
   
-Choose the option to set how users in your organization access their Office 365 work or school account from their mobile devices
+Choose the option to set how users in your organization access their work or school account from their mobile devices
   
 - **Outlook only** - users in your organization will be required to use the Outlook for Android or Outlook for iOS app on their mobile device. 
     

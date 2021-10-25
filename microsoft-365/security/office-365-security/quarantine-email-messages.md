@@ -1,42 +1,55 @@
 ---
-title: "Quarantine email messages in Office 365"
+title: Quarantined email messages
 f1.keywords:
-- NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+  - NOCSH
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
-ms.topic: hub-page
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.topic: overview
+
+ms.localizationpriority: medium
 search.appverid:
-- MOE150
-- MED150
-- MET150
+  - MOE150
+  - MED150
+  - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
 ms.collection:
-- M365-security-compliance
-description: "You can set up a quarantine for incoming email messages in Office 365 where incoming email messages that have been filtered as spam, bulk, phishing mail, and malware can be kept for later review."
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom:
+  - seo-marvel-apr2020
+description: Admins can learn about quarantine in Exchange Online Protection (EOP) that holds potentially dangerous or unwanted messages.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# Quarantine email messages in Office 365
+# Quarantined email messages in EOP
 
-You can set up quarantine for incoming email messages in Office 365 where messages that have been filtered as spam, bulk mail, phishing mail, mail that contains malware, and mail that matched a specified mail flow rule (also known as a trasport rule) can be kept for later review.
-  
-By default, messages that were filtered for phishing, malware, and mail flow rules are sent to quarantine, while messages that were filtered as spam and bulk mail are sent to the recipients' Junk Email folder. As an admin, you can set up spam filter policies (also known as content filter policies) to send spam and bulk mail messages to quarantine instead. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md).
-  
-Both users and admins can work with quarantined messages. Users can work with just their own filtered messages in quarantine. Admins can search for and manage quarantined messages for all users.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-> [!NOTE]
-> Malware, high confidence phish messages and messages quarantined by mail flow rule actions are only available in the admin quarantine. Users can access their own phish, spam, and bulk mail messages. 
-  
-Learn more about working with quarantined messages:
-  
-- [Manage quarantined messages as an administrator](manage-quarantined-messages-and-files.md)
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-- [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md)
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-- [Use user spam notifications to release and report spam-quarantined messages](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-- [Quarantine FAQ](quarantine-faq.md)
+By default, anti-spam polices quarantine phishing and high confidence phishing messages, and deliver spam, high confidence spam, and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam, high confidence spam, and bulk-email messages. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+Both users and admins can work with quarantined messages:
+
+- _Quarantine policies_ define what users are allowed to do or not do to quarantined messages based on why the message was quarantined (for supported features). Default quarantine policies enforce the historical capabilities as described below. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).
+
+- Admins can work with all types of quarantined messages for all users. By default, only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
+
+- By default, users can work with quarantined messages where they are a recipient and the message was quarantined as spam, bulk email, or phishing (not high confidence phishing). For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
+
+  To prevent users from managing their own quarantined phishing messages, admins can configure a different action for the **Phishing email** filtering verdict in anti-spam policies. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+
+- Admins and users can report false positives to Microsoft in quarantine.
+
+For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.yml).

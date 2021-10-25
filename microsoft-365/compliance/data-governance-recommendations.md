@@ -11,38 +11,38 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
-localization_priority: Priority
-search.appverid: 
+ms.localizationpriority: high
+search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: "The Office 365 Security & Compliance Center provides recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they’re classified and retained as needed. This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one."
+description: "The Microsoft 365 security center and Microsoft 365 compliance center provide recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they're classified and retained as needed. This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one."
 ---
 
 # How content is identified for data-governance recommendations
 
-The Office 365 Security & Compliance Center provides recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they’re classified and retained as needed.
+The Microsoft 365 security center and Microsoft 365 compliance center provide recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they're classified and retained as needed.
 
 This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one.
 
 ## Clean up voicemail
 
-This recommendation appears when email messages identified as the message type ‘voicemail’ are detected in users’ mailboxes. Learn more about [message properties in Exchange](https://docs.microsoft.com/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators?view=exchserver-2019#searchable-properties-in-exchange).
+This recommendation appears when email messages identified as the message type 'voicemail' are detected in users' mailboxes. Learn more about [message properties in Exchange](/exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-## Label attorney-client privilege content 
+## Label attorney-client privilege content
 
 This recommendation appears when either of the following criteria are met.
 
 - Any of combination of these keywords is detected in the body of an email message:
-    - ACP
-    - Attorney Client Privilege
-    - Attorney-Client Privilege
-    - Attorney-Client Privileged
+  - ACP
+  - Attorney Client Privilege
+  - Attorney-Client Privilege
+  - Attorney-Client Privileged
 
 - Any combination of these keywords are detected in SharePoint or OneDrive files:
-    - ACP
-    - Attorney Client Privilege*
-    - AC Privilege
+  - ACP
+  - Attorney Client Privilege*
+  - AC Privilege
 
 ## Retain audio files
 
@@ -121,18 +121,18 @@ This recommendation appears when any of the following file types are detected in
 - .PNM
 - .WEBP
 
-## Retain NDA content 
+## Retain NDA content
 
 This recommendation appears when either of the following criteria are met.
 
 - Any of combination of these keywords is detected in the body of an email message:
-    - NDA
-    - “Non-Disclosure Agreement”
-    - “Non Disclosure Agreement”
+  - NDA
+  - "Non-Disclosure Agreement"
+  - "Non Disclosure Agreement"
 
 - Any combination of these keywords are detected in .PDF or .DOC files in SharePoint or OneDrive:
-    - NDA
-    - Non Disclosure Agreement
+  - NDA
+  - Non Disclosure Agreement
 
 ## Retain software development files
 

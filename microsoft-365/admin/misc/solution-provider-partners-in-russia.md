@@ -6,12 +6,13 @@ ms.author: loreenl
 author: LoreenLa
 manager: pamgreen
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

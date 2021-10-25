@@ -9,13 +9,15 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
 ms.assetid: 
-description: "You may be required to inform custodians of their obligation to preserve electronically stored information as part of legal investigation. Advanced eDiscovery lets you easily manage the hold notification process."
+ms.custom: 
+- seo-marvel-apr2020
+description: Learn how to use Advanced eDiscovery to send and follow up on legal hold notifications through email, as well as monitor obligation status.
 ---
 
 # Acknowledge a hold notification
@@ -47,4 +49,4 @@ Based on the configuration of your legal hold notification, your custodians may 
 
 In addition to the email notifications, each custodian will have access to a unique Compliance Portal. Through the portal, each custodian can view, access, and acknowledge their active hold notifications.
 
-![Compliance Portal for a custodian](../media/CustodianPortal.jpg)
+![Compliance Portal for a custodian.](../media/CustodianPortal.jpg)

@@ -1,5 +1,5 @@
 ---
-title: "Use sharing auditing in the Office 365 audit log"
+title: "Use sharing auditing in the audit log"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: "Sharing is a key activity in SharePoint Online and OneDrive for Business. Administrators can now use sharing auditing in the Office 365 audit log to identify resources shared with users outside of their organization. "
+description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
+ms.custom: seo-marvel-apr2020
 ---
 
-# Use sharing auditing in the Office 365 audit log
+# Use sharing auditing in the audit log
 
-Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in Office 365 organizations. Administrators can use sharing auditing in the Office 365 audit log to determine how sharing is used in their organization. 
+Sharing is a key activity in SharePoint Online and OneDrive for Business, and it's widely used in organizations. Administrators can use sharing auditing in the audit log to determine how sharing is used in their organization. 
   
 ## The SharePoint Sharing schema
 
@@ -36,13 +37,13 @@ The Sharing schema provides two additional fields in an audit record related to 
 
 - **TargetUserOrGroupName:** Stores the UPN or name of the target user or group that a resource was shared with (User B in the previous example). 
 
-These two fields, in addition to other properties from the Office 365 audit log schema such as User, Operation, and Date can tell the full story about  *which*  user shared  *what*  resource with  *whom*  and  *when*. 
+These two fields, in addition to other properties from the audit log schema such as User, Operation, and Date can tell the full story about  *which*  user shared  *what*  resource with  *whom*  and  *when*. 
   
 There's another schema property that's important to the sharing story. When you export audit log search results, the **AuditData** column in the exported CSV file stores information about sharing events. For example, when a user shares a site with another user, this is accomplished by adding the target user to a SharePoint group. The **AuditData** column captures this information to provide context for administrators. See [Step 2](#step-2-use-the-powerquery-editor-to-format-the-exported-audit-log) for instructions on how to parse the information in the **AuditData** column.
 
 ## SharePoint sharing events
 
-Sharing is defined by when a user (the *acting* user) wants to share a resource with another user (the *target* user). Audit records related to sharing a resource with an external user (a user who is outside of your organization and doesn't have a guest account in your organization's Azure Active Directory) are identified by the following events, which are logged in the Office 365 audit log:
+Sharing is defined by when a user (the *acting* user) wants to share a resource with another user (the *target* user). Audit records related to sharing a resource with an external user (a user who is outside of your organization and doesn't have a guest account in your organization's Azure Active Directory) are identified by the following events, which are logged in the audit log:
 
 - **SharingInvitationCreated:** A user in your organization tried to share a resource (likely a site) with an external user. This results in an external sharing invitation sent to the target user. No access to the resource is granted at this point.
 
@@ -88,28 +89,28 @@ A common requirement for administrators is creating a list of all resources that
   
 ### Step 1: Search for sharing events and export the results to a CSV file
 
-The first step is to search the Office 365 audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+The first step is to search the audit log for sharing events. For more information (including the required permissions) about searching the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com).
-    
-2. Sign in to Office 365 using your work or school account.
-    
-3. In the left pane of the Security & Compliance Center, click **Search**  > **Audit log search**.
-    
-    The **Audit log search** page is displayed. 
-    
+1. Go to <https://compliance.microsoft.com>.
+
+2. Sign in using your work or school account.
+
+3. In the left pane of the Microsoft 365 compliance center, click **Audit**.
+
+    The **Audit** page is displayed.
+
 4. Under **Activities**, click **Sharing and access request activities** to search for sharing-related events. 
-    
-    ![Under Activities, select Sharing and access request activities](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+
+    ![Under Activities, select Sharing and access request activities.](../media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
-5.  Select a date and time range to find the sharing events that occurred within that period. 
-    
+5. Select a date and time range to find the sharing events that occurred within that period. 
+
 6. Click **Search** to run the search. 
-    
+
 7. When the search is finished running and the results are displayed, click **Export results** \> **Download all results**.
-    
+
     After you select the export option, a message at the bottom of the window prompts you to open or save the CSV file.
-    
+
 8. Click **Save** \> **Save as** and save the CSV file to a folder on your local computer. 
 
 ### Step 2: Use the PowerQuery Editor to format the exported audit log

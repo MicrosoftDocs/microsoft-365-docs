@@ -1,161 +1,161 @@
 ---
-title: "Microsoft Productivity score"
+title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: high
+monikerRange: 'o365-worldwide'
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: 
+- AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Overview of Microsoft productivity score."
+description: "Learn how Microsoft Productivity Score reflects people and technology experience measurements and compare to organizations of similar size."
 ---
 
-# Microsoft Productivity score (Preview)
+# Microsoft Productivity Score 
 
-Microsoft 365 offers productivity solutions that enables your organization to meet its business goals. Productivity Score provides insights to use these solutions that you can transform to how work gets done. It contains: 
+Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
-- **Visibility** by helping them understand how people work in the form of their current score with breakdown across categories of Employee experience and Technology experience (coming soon). 
-- **Insights** to identify opportunities to enable improved experiences. 
-- **Actions** to update skills and systems so everyone can do their best work. 
+It provides:
 
-The score and the insights are present across two categories –  
+- **Metrics** to help you see where you are on your digital transformation journey.
+- **Insights** about the data to help you identify opportunities to improve productivity and satisfaction in your organization.
+- **Recommended actions** you can take to help your organization use Microsoft 365 products efficiently.
 
-- **Employee experience:** shows how Microsoft 365 is helping to create a productive and engaged workforce by quantifying how people collaborate on content, work anywhere, by understanding communication styles (coming soon), and by developing a meeting culture (coming soon) 
+We provide metrics, insights, and recommendations in two areas: 
 
-- **Technology experience** (coming soon): Assists you to optimize your device experiences such as proactively fixing common helpdesk issues,  and improving PC startup times and your network to ensure your apps work well.  
+- **People experiences:** Quantifies how the organization works using Microsoft 365 categories like content collaboration, mobility, communication, meetings, and teamwork.  
 
-## How it works
+    For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, Forrester research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
-### Areas of scoring 
+- **Technology experiences:** Your organization depends on reliable and well-performing technology, as well as the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
-Within each score category, Productivity Score provides insights on your work transformation across areas. The areas covered within Employee experience are:
+## Before you begin
 
-- Collaborating on content  
-- Working anywhere 
-- Understanding communication styles (coming soon) 
-- Developing a meeting culture (coming soon) 
+See [What is Endpoint Analytics](/mem/analytics/overview) for an overview and prerequisite details. To learn more about Microsoft 365 network connectivity insights, read [the network connectivity overview](../../enterprise/microsoft-365-networking-overview.md).
 
-### Scoring user actions 
+For people experiences data, you need a Microsoft 365 for business or Office 365 for enterprise subscription. For endpoint analytics data for your tenant, you need to add Microsoft Intune to your subscription. Intune helps protect your organization's data by managing devices and apps. Once you have Intune, you can turn on endpoint analytics within the Intune experience. To learn more about Microsoft Intune, see the [Microsoft Intune documentation](/mem/intune/). 
 
-Within each area, we measure the research-based key actions which represent the ways of working that enable organizations to transform into highly productive organization. For each area we compute the % of users who perform these actions within the last 28 days. 
+> [!NOTE]
+> A license to Workplace Analytics is not required to get the Productivity Score features.
 
-The Employee experience score is curated as an average score across all areas. Note that we will keep adding more areas to Employee experience and Technology experience over time. 
+Productivity Score is only available in the Microsoft 365 admin center and can only be accessed by IT professionals who have one of the following roles:  
 
-### Products included in the Productivity Score 
+- Global admin
+- Exchange admins
+- SharePoint admin
+- Skype for Business admin
+- Teams admin
+- Global Reader
+- Reports Reader
+- Usage Summary Reports Reader
 
-Productivity Score currently includes signals from the key Microsoft 365 workloads OneDrive, SharePoint, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, Teams, Skype. 
+> [!NOTE]
+> Only an IT professional with the Global Administrator role can sign up or opt in a tenant for Productivity Score.
 
-Your score is updated daily and reflects user actions completed in the last 28 days (including the current day).
+The role-based access control model for Productivity Score helps organizations further digital transformation efforts with Microsoft 365 by providing the flexibility to assign roles to IT professionals within an organization.
 
-## Access and required permissions 
+Microsoft is committed to protecting individual privacy. This [privacy document](privacy.md)  explains the controls we provide you, as your organization's IT administrator, to ensure that the information is actionable while not compromising the trust you place in Microsoft.
 
-For the employee experience, you must have a subscription to an Office 365 for business plan or a Microsoft 365 Business plan with multiple users. 
+You can access the experience from Microsoft 365 Admin home under **Reports** > **Productivity Score**.
+  
+## How the score is calculated
 
-To have permission to access Microsoft Productivity Score, you must have of the following roles: 
+Your Productivity Score is based on the combined scores of your people and technology experiences categories. Each category is weighted equally, with a total of 100 points. The highest possible Productivity Score is 800.
 
-- Global admin 
-- Exchange admins 
-- SharePoint admins 
-- Skype for Business admins 
-- Teams admin 
-- Global Reader 
-- Reports Reader 
+### Score categories 
 
-You can access the experience from Microsoft 365 Admin home by choosing **Reports** > **Productivity Score** in the left navigation.
+- Communication (100 points)
+- Meetings (100 points)
+- Content collaboration (100 points)
+- Teamwork (100 points)
+- Mobility (100 points)
+- Endpoint analytics (100 points)
+- Network connectivity (100 points)
+- Microsoft 365 Apps Health (100 points)
+- **Total possible = 800 points**
+ 
+In each score category, we quantify the key indicators for how your organization is using Microsoft 365 in its journey towards digital transformation. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation, but are important for helping you identify underlying usage statistics and configurations that you can address.
 
-## Interpreting Productivity Score 
+### Products included in Productivity Score 
 
-### Learn how your organization works 
+Productivity Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
 
-he Productivity Score home page provides the current score and history on a percentage basis, primary insights for areas within each score category supplemented by benchmarks. 
+Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 
-![Productivity score home page](../../media/pslanding.png)
+## Interpreting your organization's Productivity Score 
 
-1.**Productivity Score** is listed on a percentage basis as well as in the <numerator>/<denominator> format so you can also see your absolute points (numerator) and maximum possible points  
-1. This pivot allows you to select the score category you want to focus on. In the preview, you can only view **Employee experience**, but the selection will soon expand to include **Technology experience**. 
-1. **Peer benchmark** allows you to compare your current score with organizations like you. The benchmark measure is calculated as the average of measures within a set of similar organizations. The set is composed of organizations who have similar number of enabled users, region, the types of licenses you own, industry, and tenure within Microsoft 365 or Office 365. 
-1. The **Score categories** section provides a breakdown of your Productivity Score with benchmarks per category.
-1. **Score history** displays how your score in each category has moved in the past 6 months.
-1. The primary insight for **Collaborating on content** shows the relevant measures with benchmarks from this area that contribute to the score. Select **View Details** to see the area detail page.
-1. The primary insight for **Working anywhere** shows the relevant measures with benchmarks from this area that contribute to the score. Select **View Details** to see the area detail page.  
+The Productivity Score home page shows your organization's total score and score history and the primary insight for each category.
 
-### Insights to identify opportunities to improve experiences 
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="Productivity Score page in Reports.":::
 
-For each area, select **View Details** in the primary insight to view the area detail page that displays additional insights, related research and actions to improve your score. .
+**Your organization's score** is shown as a percent value and in points. You can see your points in the numerator and the maximum possible points in the denominator.
 
-All area detail pages follow the following structure: 
+**Peer benchmarks** allow you to compare your organization's score with organizations like yours. The peer benchmark for the people experiences categories is calculated as the average of measures within a set of similar organizations. The set of organizations is composed of organizations in your region with a similar number of licensed users, types of licenses, industry, and tenure with Microsoft 365.
 
-- Top left: Primary insight retained from the home page.
-- Bottom left: Supporting insights with contextual actions.  
-- Right: Academic research demonstrating the relationship between the area and productivity.
+> [!NOTE]
+> Microsoft uses internal data to determine the industry that an organization maps to. Tenants under a parent organization get mapped to the same industry as the parent organization. Organizations cannot view or modify industry mappings.
 
-Additionally, all insights contain the following elements: 
+The endpoint analytics peer benchmark includes targets for device startup performance and recommended software configuration based on aggregated median values across all tenants.
 
-- Header: Key takeaway or outcome tracked for each insight;
-- Summary: Further explanation of why the measures in the insight are important for your organization’s productivity. 
-- Data visualization: Visually quantifies your organization’s position with regard to the measures in the insight with benchmarks as applicable.
-- Actions: Contextual action that can help drive more of the desired outcome per the insight and thus improve your score.
+For network connectivity, the recommended benchmark is 80 points.
 
-### Area detail page – Collaborating on content 
+The **Score breakdown** section provides a breakdown of your Productivity Score with benchmarks by people and technology experience areas.
 
-![Collaborationg on content page.](../../media/pscollab.png)
+Score history displays how your score in each category has changed in the past six months.
 
-Collaborating on content page contains the primary insight from the Productivity Score home page. It has the following components:
+The **People experiences** and **Technology experiences** areas contain the primary insights for the categories in those areas. You can select each category to see deeper insights.
 
-1. Header: Quantifies what percentage of users are collaborating on content (key outcome).
-1. Body: More detail on how increased collaboration leads to higher productivity.
-1. Visualization: This visually quantifies each element that contributes to the score for this area with benchmarks:
+## Category details pages
 
-    - **Readers**: Quantifies users accessing or downloading files on the cloud (OneDrive and SharePoint) within a base of OneDrive and SharePoint enabled users.
-    - **Authors**:  Quantifies users modifying, uploading, syncing, checking in, copying or moving files on the cloud (OneDrive and SharePoint) within a base of OneDrive and SharePoint enabled users.
-    - **Collaborators**: Quantifies users collaborating on files on the cloud (OneDrive and SharePoint) within a base of OneDrive and SharePoint enabled users. Two users are Collaborators if one of them read or edited a Word, Excel, PowerPoint, OneNote or PDF cloud document after the other created or modified it within a 28-day window.
+Each category details page shows the primary insight and supporting metrics as well as related research and actions you can take to drive change in your organization. Research supports the importance and rationale behind the primary insights for each category. For more information, [read the Forrester report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
-1. **Why it matters** provides a summary of research linking collaboration on cloud files with productivity. **Read the research from Forrester** goes to a research article that provides more context on how collaboration is conducive to increased productivity.
-1. Supporting insight on **Collaborating on multiple files** quantifies how users in your organization are collaborating across different files. 
-1. Supporting insight on **Sharing cloud files** quantifies if users are sharing content on the cloud while drawing distinction between internal and external sharing.
-1. Supporting insight on **Emailing cloud files** quantifies if users sharing files via email are using attachments versus links to cloud files.
+The details pages are:
+- [Content collaboration – people experiences](content-collaboration.md)
+- [Communication – people experiences](communication.md)
+- [Meetings – people experiences](meetings.md)
+- [Mobility – people experiences](mobility.md)
+- [Teamwork – people experiences](teamwork.md)
+- [Microsoft 365 Apps health – technology experiences](apps-health.md)
+- [Endpoint Analytics](/mem/analytics/productivity-score)
 
-The file types considered for collaboration are Word/Excel/PowerPoint/OneNote/PDF.
+## Business continuity special report
 
-### Area detail page – Working anywhere 
+The Business continuity report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
 
-![Work anywhere page.](../../media/psflexibility.png)
+This report helps organizations understand: 
 
-The Working anywhere page quantifies the users (as a percentage and absolute value) who used at least one productivity app across two or more platforms, which are desktop, mobile and web. Users get scored higher for using more apps and platforms. The apps being considered are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, Skype. The base of the insight are users enabled for Office 365 ProPlus, Exchange, Yammer, Skype or Teams.
+- How collaboration and communication are affected by the shift to remote work. 
 
-1. **Why it matters** provides a summary from research linking usage of multiple platforms to higher productivity. **Read the research from Forrester** goes to a research article that provides more context on how working across is conducive to increased productivity.
-1. Supporting insight on **Email anywhere** quantifies number of users in your organization using Outlook across platforms within base of users active on Outlook.
-1. Supporting insight on **Chat anywhere** quantifies how users in your organization are using Teams across platforms within base of users active on Teams.
-1. Supporting insight on **Accessing Office documents anywhere** quantifies how users in your organization are using Word, Excel, PowerPoint and OneNote across platforms within base of users active on Word, Excel, PowerPoint or OneNote.
+- The impact on work-life balance as people adjust to working from home. 
 
-### Actions for update skills and systems 
+- Whether remote meetings support effective decision-making.
 
-In order to promote actionability, each supporting insight comes with inline actions that can help transform your employee experience some of which can be configuration changes or awareness campaigns. Clicking on these calls-to-action opens in the recommended actions panel options that you might consider. Currently the actions in the **Collaborating on content** are enabled.
+[Learn more about the Business continuity report](/Workplace-Analytics/tutorials/bcrps)
 
-![Collaborate on Office documents page.](../../media/psactions1.png)
+[Learn more about Microsoft Graph](/graph/)
 
-1. The **View Actions** goes to a pane listing all actions related to Collaborating on content.
-1. **Encourage users to collaborate** goes to a list of instructional videos on collaboration with topics such as co-authoring and @mentions. 
-1. **Customize external sharing** settings goes to a page with an overview on external sharing describing what happens when users share, depending on what they're sharing and with whom.  
-1. **Replace attachments with shared links** goes to a page explaining how to share OneDrive links instead of attachments over email for better collaboration.
-
-Selecting any of the action buttons opens the **Recommended actions** pane on the right that has a summary of each action and a link to the documentation pages.
-
-![Recommended actions pane.](../../media/psacttions2.png)
+> [!NOTE]
+> Users also have the option to get productivity insights from the [MyAnalytics dashboard](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
-## We want to hear from you 
+## We want to hear from you
 
-We want to utilize the private preview program to glean feedback and use the learnings to co-create the product with you going forward. You can use the **Feedback** sections within the product and/or reach out to the Productivity Score team at ProductivityScorePreview@service.microsoft.com.
+Share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at prodscorefeedback@microsoft.com.
 
-To request access to the private preview please fill out the form at https://aka.ms/productivityscorepreview.  
+## Related content
+
+[Monitor Microsoft 365 activity by using reports](../../admin/activity-reports/activity-reports.md) (article)\
+[Enable Microsoft 365 usage analytics](../../admin/usage-analytics/enable-usage-analytics.md) (article)\
+[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)

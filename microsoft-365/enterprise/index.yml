@@ -12,10 +12,12 @@ metadata:
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  ms.collection: M365-subscription-management
+  ms.collection: 
+  - M365-subscription-management
+  - Adm_TOC
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/29/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -33,7 +35,7 @@ highlightedContent:
     # Card
     - title: Train your IT pros and admins
       itemType: learn
-      url: https://docs.microsoft.com/learn/m365/
+      url: /learn/m365/
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -42,65 +44,35 @@ conceptualContent:
   summary: Explore Microsoft 365 for enterprise deployment guidance, features, and services. # < 160 chars (optional)
   items:
     # Card
-    - title: Follow the deployment roadmap
-      links:
-        - url: deploy-microsoft-365-enterprise.md
-          itemType: deploy
-          text: Deployment overview
-        - url: deploy-foundation-infrastructure.md
-          itemType: how-to-guide
-          text: Foundation infrastructure
-        - url: deploy-workloads.md
-          itemType: how-to-guide
-          text: Workloads and scenarios
-        - url: desktop-deployment-center-home.md
-          itemType: get-started
-          text: Desktop Deployment Center
-    # Card
     - title: Deploy key elements
       links:
-        - url: identity-infrastructure.md
+        - url: identity-roadmap-microsoft-365.md
           itemType: how-to-guide
           text: Identity infrastructure
-        - url: https://docs.microsoft.com/windows/deployment/
+        - url: /windows/deployment/
           itemType: get-started
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+        - url: /deployoffice/plan-microsoft-365-apps
           itemType: deploy
-          text: Office 365 ProPlus
-        - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
+          text: Microsoft 365 Apps for enterprise
+        - url: /intune/fundamentals/planning-guide
           itemType: deploy
           text: Microsoft Intune
     # Card
-    - title: Deploy key scenarios
-      links:
-        - url: secure-teams-highly-regulated-data-scenario.md
-          itemType: how-to-guide
-          text: Microsoft Teams for highly regulated data
-        - url: teams-sharepoint-online-sites-highly-regulated-data.md
-          itemType: how-to-guide
-          text: SharePoint sites for highly regulated data
-        - url: empower-people-to-work-remotely.md
-          itemType: how-to-guide
-          text: Remote workers
-        - url: migration-microsoft-365-enterprise-workload.md
-          itemType: deploy
-          text: Office client and server and Windows migration
-    # Card
     - title: Manage Microsoft 365 for enterprise
       links:
-        - url: https://docs.microsoft.com/windows/deployment/update/
+        - url: /windows/deployment/update/
           itemType: how-to-guide
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+        - url: /deployoffice/overview-update-channels
           itemType: concept
-          text: Office 365 ProPlus
-        - url: https://docs.microsoft.com/intune/apps/app-management
+          text: Microsoft 365 Apps for enterprise
+        - url: /intune/apps/app-management
           itemType: get-started
           text: Apps with Intune
-        - url: https://docs.microsoft.com/office365/
+        - url: /office365/
           itemType: get-started
-          text: Office 365 services
+          text: Microsoft 365 services
 
 # additionalContent section (optional)
 # Card with summary style
@@ -113,11 +85,11 @@ additionalContent:
         # Card
         - title: Microsoft 365 compliance
           summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
-          url: https://docs.microsoft.com/microsoft-365/compliance/index
+          url: ../compliance/index.yml
         # Card
         - title: Microsoft 365 security
           summary: Protect your organization across attack surfaces with robust security services and solutions.
-          url: https://docs.microsoft.com/microsoft-365/security/index
+          url: ../security/index.yml
         # Card
         - title: Microsoft 365 technical community
           summary: Connect and collaborate with peers and experts in the Microsoft Tech Community and share Microsoft 365 best practices.

@@ -1,71 +1,256 @@
 ---
-title: "Admin submissions in Office 365, O365 submissions, Office 365 spam problem, O365 false negative, submit phish in office 365, submit email for scanning, suspicious email in Office 365, scan a mail, have Microsoft scan for phish, have Microsoft scan for spam, submit e-mail, submit email, dodgy email, bad actor mail, suspicious, untrusted mail, report phish emails to Microsoft, report phish emails to Microsoft, report malicious email to Microsoft, report scam email to Microsoft, report malware in email to Microsoft, spam email in inbox office 365, virus in email office 365"
-f1.keywords:
-- NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+title: Manage submissions
+f1.keywords: 
+  - NOCSH
+ms.author: dansimp
+author: dansimp
 manager: dansimp
-ms.date: 08/06/2019
 audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.collection:
-- M365-security-compliance
-description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your Office 365 tenant to Microsoft for scanning."
+ms.topic: how-to
+ms.localizationpriority: medium
+search.appverid: 
+  - MET150
+ms.collection: 
+  - M365-security-compliance
+  - m365initiative-defender-office365
+ms.custom: 
+  - seo-marvel-apr2020
+description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
+ms.technology: mdo
+ms.prod: m365-security
 ---
 
-# How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning
+# Use the Submissions portal to submit suspected spam, phish, URLs, and files to Microsoft
 
-Admins can send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365.
-The updated submissions section still includes user reported messages and available to all customers using EOP.
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
+**Applies to**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-## How to direct suspicious content to Microsoft for Office 365 scanning
 
-To submit content to Microsoft click the **New submission** button in the top left hand side of the submissions page. A flyout on the right side of the page appears with the option to submit either an email, URL, or file.
+In Microsoft 365 organizations with Exchange Online mailboxes, admins can use the Submissions portal in the Microsoft 365 Defender portal to submit email messages, URLs, and attachments to Microsoft for scanning.
+
+When you submit an email message for analysis, you will get:
+
+- **Email authentication check**: Details on whether email authentication passed or failed when it was delivered.
+- **Policy hits**: Information about any policies that may have allowed or blocked the incoming email into your tenant, overriding our service filter verdicts.
+- **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
+- **Grader analysis**: Review done by human graders in order to confirm whether or not messages are malicious.
+
+> [!IMPORTANT]
+> Payload reputation/detonation and grader analysis are not done in all tenants. Information is blocked from going outside the organization when data is not supposed to leave the tenant boundary for compliance purposes.
+
+For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+## What do you need to know before you begin?
+
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+- To submit messages and files to Microsoft, you need to be a member of one of the following role groups:
+  - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+  
+    Note that membership in this role group is required to [View user submissions to the custom mailbox](#view-user-submissions-to-microsoft) as described later in this article.
+
+- Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
+
+- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+## Report suspicious content to Microsoft
+
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+
+2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
+
+   > [!NOTE]
+   > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
 
 ### Submit a questionable email to Microsoft
 
-![Email submission example](../../media/submission-flyout-email.PNG)
+1. In the **Select the submission type** box, verify that **Email** is selected in the drop down list.
 
-1. To submit an email, select **email** and specify the email **network message ID** or upload the email file.
+2. In the **Add the network message ID or upload the email file** section, use one of the following options:
+   - **Add the email network message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message or in the **X-MS-Office365-Filtering-Correlation-Id** header in quarantined messages.
+   - **Upload the email file (.msg or .eml)**: Click **Browse files**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
-2. Specify the recipient(s) that you would like to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies.
+3. In the **Choose a recipient who had an issue** box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgement.
+4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
+   - **Should not have been blocked (false positive)**
+   - **Should have been blocked**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
+     - **Phish**
+     - **Spam**
+     - **Malware**
 
-   - If the filter was bypassed due to policies upon submission, you'll see information about that policy.
+5. When you're finished, click the **Submit** button.
 
-   - If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
-
-4. Click the **Submit** button.
+> [!div class="mx-imgBorder"]
+> ![New URL submission example.](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
-![Email submission example](../../media/submission-url-flyout.png)
+1. In the **Select the submission type** box, select **URL** from the drop down list.
 
-1. To submit a URL select **URL** from the flyout. Type in the full URL including the protocol (**https://**).
+2. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
-   If you selected **Should have been filtered**, specify if the URL is phishing or malware.
+3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
+   - **Should not have been blocked (false positive)**
+   - **Should have been blocked**: In the **This URL should have been categorized as** section that appears, select **Phish** or **Malware**.
 
-2. Click the **Submit** button.
+4. When you're finished, click the **Submit** button.
 
-### Submit a suspected file to Microsoft
+> [!div class="mx-imgBorder"]
+> ![New Email submission example.](../../media/submission-url-flyout.png)
 
-![Email submission example](../../media/submission-file-flyout.PNG)
+### Submit a suspected email attachment to Microsoft
 
-1. To submit a file select **File** from the flyout and upload the file you would like to scan.
+1. In the **Select the submission type** box, select **File** from the drop down list.
 
-2. Click the **Submit** button.
+2. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
 
-## Related topics
+3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
+   - **Should not have been blocked (false positive)**
+   - **Should have been blocked**: In the **This URL should have been categorized as** section that appears, **Malware** is the only choice, and is automatically selected.
 
-[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)
+4. When you're finished, click the **Submit** button.
 
-[Protect against threats in Office 365](protect-against-threats.md)
+> [!div class="mx-imgBorder"]
+> ![New Attachment submission example.](../../media/submission-file-flyout.png)
 
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
+> [!NOTE]
+> If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+
+## View admin submissions to Microsoft
+
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+
+2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+     - **Submission name**<sup>\*</sup>
+     - **Sender**<sup>\*</sup>
+     - **Date submitted**<sup>\*</sup>
+     - **Submission type**<sup>\*</sup>
+     - **Reason for submitting**<sup>\*</sup>
+     - **Rescan status**<sup>\*</sup>
+     - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
+     - **Filter verdict**
+     - **Delivery/Block reason**
+     - **Submission ID**
+     - **Network Message ID/Object ID**
+     - **Direction**
+     - **Sender IP**
+     - **Bulk compliant level (BCL)**
+     - **Destination**
+     - **Policy action**
+     - **Submitted by**
+
+     When you're finished, click **Apply**.
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date submitted**: **Start date** and **End date**.
+     - **Submission type**: **Email**, **URL**, or **File**.
+     - **Submission ID**: A GUID value that's assigned to every submission.
+     - **Network Message ID**
+     - **Sender**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for admin submissions.](../../media/admin-submission-filters.png)
+
+   - To group the entries, click **Group** and select one of the following values from the drop down list:
+     - **None**
+     - **Type**
+     - **Reason**
+     - **Status**
+     - **Rescan result**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+### Admin submission rescan details
+
+Messages that are submitted in admin submissions are reviewed and results shown in the submissions detail flyout:
+
+- If there was a failure in the sender's email authentication at the time of delivery.
+- Information about any policy hits that could have affected or overridden the verdict of a message.
+- Current detonation results to see if the URLs or files contained in the message were malicious or not.
+- Feedback from graders.
+
+If an override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
+
+## View user submissions to Microsoft
+
+If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
+
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+
+2. On the **Submissions** page, select the **User reported messages** tab.
+
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+
+     - **Email subject**<sup>\*</sup>
+     - **Reported by**<sup>\*</sup>
+     - **Date reported**<sup>\*</sup>
+     - **Sender**<sup>\*</sup>
+     - **Reported reason**<sup>\*</sup>
+     - **Rescan result**<sup>\*</sup>
+     - **Tags**<sup>\*</sup>
+     - **Message reported ID**
+     - **Network Message ID**
+     - **Sender IP**
+     - **Phish simulation**
+
+     When you're finished, click **Apply**.
+
+   - To filter the entries, click **Filter**. The available filters are:
+     - **Date reported**: **Start date** and **End date**.
+     - **Reported by**
+     - **Email subject**
+     - **Message reported ID**
+     - **Network Message ID**
+     - **Sender**
+     - **Reported reason**: **Not junk**, **Phish**, or **Spam**.
+     - **Phish simulation**: **Yes** or **No**
+     - **Tags**
+
+     When you're finished, click **Apply**.
+
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for user submissions.](../../media/admin-submission-reported-messages.png)
+
+   - To group the entries, click **Group** and select one of the following values from the drop down list:
+     - **None**
+     - **Reason**
+     - **Sender**
+     - **Reported by**
+     - **Rescan result**
+     - **Phish simulation**
+
+   - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
+
+> [!NOTE]
+> If organizations are configured to send user reported messages to the custom mailbox only, reported messages will not be sent for rescan and the results in **User reported messages** will always be empty.
+
+### Undo user submissions
+
+Once a user submits a suspicious email to the custom mailbox, the user and admin don't have an option to undo the submission. If the user would like to recover the email, it will be available for recovery in the Deleted Items or Junk Email folders.
+
+### Converting user reported messages from the custom mailbox into an admin submission 
+
+If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
+
+On the **User reported messages** tab, select a message in the list, click **Submit to Microsoft for analysis**, and then select one of the following values from the drop down list:
+
+- **Report clean**
+- **Report phishing**
+- **Report malware**
+- **Report spam**
+- **Trigger investigation**
+
+> [!div class="mx-imgBorder"]
+> ![New Options on the Action button.](../../media/admin-submission-main-action-button.png)

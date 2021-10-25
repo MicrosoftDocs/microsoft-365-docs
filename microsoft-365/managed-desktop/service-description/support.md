@@ -1,14 +1,17 @@
 ---
-title: Support for Microsoft Managed Desktop
-description:  
+title: Admin support
+description:  Describes proactive and reactive incident management for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ---
 
-# Support for Microsoft Managed Desktop
+# Admin support
 
 Microsoft will provide proactive and reactive incident management. Microsoft tracks incidents in the Microsoft Managed Desktop admin portal. They are classified according to [severity definitions](../working-with-managed-desktop/admin-support.md#sev).
 
@@ -22,15 +25,15 @@ Customers can contact Microsoft Managed Desktop operations for:
 Microsoft Managed Desktop support includes:
 
 - A team of engineers dedicated to Microsoft Managed Desktop devices
-- Support options for end users with Microsoft Managed Desktop devices
+- Support options for users with Microsoft Managed Desktop devices
 - Grants limited administrative access to Microsoft Managed Desktop devices for engineers managing Microsoft Managed Desktop devices 
 
 Supported products:
 
-- Windows 10 with Microsoft Defender Advanced Threat Protection 
-- These Office 365 ProPlus apps: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
+- Windows 10 with Microsoft Defender for Endpoint
+- These Microsoft 365 Apps for enterprise apps: Outlook, Word, PowerPoint, Excel, Skype for Business client, Microsoft Teams 
 - Microsoft Store for Business 
-- OneDrive for Business client 
+- OneDrive client 
 
 Support details:
 
@@ -43,4 +46,4 @@ Support details:
 ## Related topics
 
 - [Learn how IT administrators can get support](../working-with-managed-desktop/admin-support.md)
-- [Learn how end users can get support](../working-with-managed-desktop/end-user-support.md)
+- [Learn how users can get support](../working-with-managed-desktop/end-user-support.md)

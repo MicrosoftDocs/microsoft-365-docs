@@ -1,5 +1,5 @@
 ---
-title: "Privacy statement for Office 365 Secure Email Portal"
+title: "Privacy statement for Secure Email Portal"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -9,7 +9,7 @@ ms.date: 10/12/2018
 audience: End User
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
@@ -18,7 +18,7 @@ ms.collection:
 description: "Last Updated: May 2017"
 ---
 
-# Privacy statement for Office 365 Secure Email Portal
+# Privacy statement for Secure Email Portal
 
 Last Updated: May 2017
   

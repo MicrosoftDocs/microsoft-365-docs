@@ -9,73 +9,105 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: "Learn how to select and export content from an Advanced eDiscovery review set for presentations or external reviews."
+ms.custom: seo-marvel-mar2020
 ---
 
-# Export documents from a review set
+# Export documents from a review set in Advanced eDiscovery
 
-You can export content for presentation or external review from a review set by one of the following methods:
+Export allows users to customize the content that is included in the download package when you export document from a review set in Advanced eDiscovery.
 
-- [Download documents](#download-documents-from-a-review-set)
- 
-- [Export documents](#export-documents-from-a-review-set)
+To export documents from a review set:
 
-## Download documents from a review set
+1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
 
-Download offers a simple way to download content from a review set in Native format. It leverages the browser’s data transfer features so a browser prompt will appear once a download is ready. Files downloaded using this method will be zipped into a container file and will be item level files. This means that if you select an attachment, you will automatically receive the email with the attachment included. Similarly, if you select an excel spreadsheet that was embedded in a word document, you will receive the word document with the excel spreadsheet embedded. Downloaded items will preserve the last modified date which can be viewed as a file property.
+2. In the review set, click **Action** > **Export**.
 
-To download content from a review set, start by selecting the files you want to download then select “Download” under the Actions menu.
+   The Export tool displays the flyout page with the settings to configure the export. Some options are selected by default, but you can change these. See the following section for descriptions of the export options that you can configure.
 
-![A screenshot of a computer
-Description automatically generated](../media/eDiscoDownload.png)
+   ![Configuration options for exporting items from a review set.](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## Export documents from a review set
+3. After you configure the export, click **Export** to start the export process. Depending on the option that you selected in **Output options** section, you can access the export files by direct download or in your organization's Azure Storage account.
 
-Export allows users to customize the content that is included in the download package. It provides a configuration page with the following settings:
+> [!NOTE]
+> Export jobs are retained for the life of the case. However, you must download the content from an export job within 30 days after the export job is complete.
 
-### Metadata file
+## Export options
 
-This can be considered your "load file" that contains metadata associated with the files you export. For a list of exported fields available in the metadata file, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md). This file can typically be ingested by third-party tools.
+Use the following options to configure the export. Not all options are allowed for some output options, most notably, export of text files and redacted PDFs are not allowed when exporting to the PST format.
 
-### Tag data
+- **Export name**: Name of the export job. This will be used to name the ZIP files that will be downloaded.
 
-This content would be added as fields in the metadata file. It contains all of the tag information applied in review sets.
+- **Description**: Free-text field for you to add a description.
 
-### Text files
+- **Export these documents**
 
-Text files can be generated for each file exported from a review set. Often times these files are required by service partners as part of ingesting data into third-party tools.
+  - Selected documents only: This option exports only the documents that are currently selected. This option is only available when items are selected in a review set.
+  
+  - All filtered documents: This option exports the documents in an active filter. This option is only available when a filter is applied to the review set.
+  
+  - All documents in the review set: This option exports all documents in the review set.
 
-### Redacted files
+- **Output options**: Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account. The first two options enable direct download.
+  
+  - Reports only: Only the summary and load file are created.
+  
+  - Loose files and PSTs (email is added to PSTs when possible): Files are exported in a format that resembles the original directory structure seen by users in their native applications.  For more information, see the [Loose files and PST export structure](#loose-files-and-pst-export-structure) section.
+  
+  - Condensed directory structure: Files are exported and included in the download.
+  
+  - Condensed directory structure exported to your Azure Storage account: Files are exported to your organization's Azure Storage account. For this option, you have to provide the URL for the container in your Azure Storage account to export the files to. You also have to provide the shared access signature (SAS) token for your Azure Storage account. For more information, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).
 
-If redacted PDF files are generated during review, these files are available during export. You can decide whether to export native files only or to replace the native files that required redaction with the PDF files that contain the actual redactions.
+- **Include**
+  
+  - Tags: When selected, tagging information is included in the load file.
+  
+  - Text files: This option includes the extracted text versions of native files in the export.
+  
+  - Replace redacted natives with converted PDFs: If redacted PDF files are generated during review, these files are available for export. You can choose to export only the native files that were redacted (by not selecting this option) or you can select this option to export the PDF files that contain the actual redactions.
 
-### Export location
+  - Conversation PDFs instead of individual chat messages: Select this checkbox to export chat conversations in a PDF file. All chat messages from the same conversation are exported in the same PDF file. If you leave this checkbox unselected, each unique message in a chat conversation is exported as a standalone item. The file is exported in the same format that it was saved as in the mailbox. For a specific conversation, you receive multiple .msg files.
 
-Exported content is delivered to either a Microsoft provided Azure blob or a customer’s blob can be used if the details are provided at export.
+The following sections describe the folder structure for loose files and condensed directory structure options. Exports are partitioned into ZIP files with a maximum size of uncompressed content of 75 GB. If the export size is less than 75 GB, the export will consist of a summary file and a single ZIP file. For exports larger than 75 GB of uncompressed data, multiple ZIP files will be created. Once downloaded, the ZIP files can be uncompressed into a single location to recreate the full export.
 
-### Export structure
+### Loose files and PST export structure
 
-When content is exported from a review set, the content is organized in the following structure.
+If you select this export option, the exported content is organized in the following structure:
 
-  - Root folder – Download ID
-    
-      - Export\_load\_file.csv = metadata file
-    
-      - Summary.txt = a summary file with export statistics
-    
-      - Input\_or native\_files = contains all native files
-    
-      - Error\_files = contains any error files included in the export
-        
-          - ExtractionError – a csv that contains any available metadata of files that were not properly extracted from parent files
-        
-          - ProcessingError – content with processing errors. This content is item level meaning if an attachment experienced a processing error, the email that contains the attachment will be included in this folder.
-    
-      - Extracted\_text\_files = contains all of the extracted text files generated at processing.
+- Summary.csv: Includes a summary of the content exported from the review set
+
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+  
+  - Export_load_file_x of z.csv: The metadata file.
+  
+  - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
+  
+  - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
+  
+  - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
+
+### Condensed directory structure
+
+- Summary.csv: Includes a summary of the content exported from the review set
+
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+  
+  - Export_load_file_x of z.csv: The metadata file and also includes the location of each file that is stored in the ZIP file.
+  
+  - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
+
+  - NativeFiles: This folder contains all the native files that were exported. Natives files are replaced with redacted PDFs if you selected the *Replace redacted natives with converted PDFs* option.
+  
+  - Error_files: This folder contains files that had either extraction or other processing error. The files will be placed into separate folders, either ExtractionError or ProcessingError. These files are listed in the load file.
+
+  - Extracted_text_files: This folder contains all of the extracted text files that were generated at processing.
+
+### Condensed directory structure exported to your Azure Storage Account
+
+This option uses the same general structure as the *Condensed directory structure*, however the contents is not zipped and the data is saved to your Azure Storage account. This option is generally used when working with a third-party eDiscovery provider. For details about how to use this option, see [Export documents in a review set to an Azure Storage account](download-export-jobs.md).

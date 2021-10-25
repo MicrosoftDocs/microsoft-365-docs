@@ -1,60 +1,72 @@
 ---
-title: Get support for Microsoft Managed Desktop
-description:  
+title: Get user support for Microsoft Managed Desktop
+description:  How users can get help with the service and devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
-# Getting help for end users
+# Getting help for users
 
-There are two ways that users in your organization can get help with their Microsoft Managed Desktop devices: **Get Help** app, or phone support. Both of these support options are available to users 24 hours a day, 7 days a week.
+If you've reached the point in the [workflow](../service-description/user-support.md) where you need to request elevated device access or escalation to Microsoft, follow these steps:
  
 >[!NOTE]
 >These support options are not available for devices in the Test group.
 
-## Get Help app
+## Elevation requests
 
-The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.  
+Before you request elevated access to a device, it's best to review which actions are best suited.
 
-![Get Help app icon](../../media/get-help.png)
+- **Typical actions** are what this process is intended for and would be performed routinely while troubleshooting problems with Microsoft Managed Desktop devices. Examples include:
+    - Elevating built-in system troubleshooters, the command prompt, or Windows PowerShell
+    - Troubleshooting line-of-business applications
+    - Using a workaround to correct something that should function by design (such as BitLocker activation or system time not updating)
+    - Elevating Device Manager to do things like update drivers, uninstall a device, or scan for new changes
 
-This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
+- **Actions that aren't recommended** include the following:
+    - Installing software or browsers
+    - Installing drivers outside of Windows settings, including those for peripherals
+    - Installing .msi or .exe files
+    - Installing Windows features
 
-- End users can request a call back to a provided phone number, or chat online with a service rep.
-- Requests that fall outside of Microsoft Managed Desktop support scope are redirected to the local IT helpdesk via phone call.
+- **Actions that aren't supported** include the following:
+    - Installing software or features that conflict with Microsoft Managed Desktop security or management capabilities or operations
+    - Disabling a Windows feature that is required for Microsoft Managed Desktop, such as BitLocker
+    - Modifying settings managed by your org
 
-### Prerequisites
-For your end users to be able to get help through the app, make sure these prerequisites are met:
+### To request elevation
 
-- The device must be registered with Microsoft Managed Desktop using one of the methods in [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md), such as [Register new devices yourself](../get-started/register-devices-self.md).
-- The display language for the device must be set to any of these English-language locales: en-us, en-gb, en-au, en-nz, or en-ca.
-- The Get Help app should be up to date. To confirm this, check for app updates in the Microsoft Store.
-- Certain [endpoints](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop) must be accessible from the device.
+1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
+2. Select **New elevation request**.
+3. Provide these details:
+    - **Support ticket ID** from your own support ticketing system.
+    - **Device name**: Enter the device serial number and then select the device from the menu.
+    - **Category**: Select the category that best fits your issue. If no option seems close, then select **Other**. It's best to select a category if at all possible.
+    - **Subcategory**: Select the one that best fits the issue. If no option seems close, then select **Other**.
+    - **Title**: Provide a short description of the issue on the device.
+    - **Plan of action**: Provide the troubleshooting steps you plan to take once elevation is granted. 
+4. Select **Submit**.
+
+
+## Escalation requests
+
+
+If you need to [escalate](../service-description/user-support.md#escalation-portal) an issue to Microsoft, follow these steps:
+
+1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
+2. Select **Escalation requests**, and then select **New escalation request**.
+3. Provide these details:
+    - **Category**: Select the category that best fits your issue.
+    - **Title**: Provide a very brief description.
+    - **Description**: Add any additional details that could help our team understand the problem. If you need to attach files, you can do that by coming back to the request after you submit it.
+    - **Primary contact information**: Provide info about how to contact the main person responsible for working with our team.
+4. Select **Submit**.
+5. Revisit the ticket in the same portal to interact with our team.
 
 > [!NOTE]
-> The Get Help app can take up to one hour after a device is deployed to fully function.
-
-If you've checked these prerequisites and the Get Help app still isn't working, you as an IT admin should file a [support request](admin-support.md).
-
-## Phone support
-
-End users with Microsoft Managed Desktop devices also have access to toll-free phone numbers they can call. This is meant to be used when Get Help isn’t available. For example, if they can’t sign in to the device, or the device is broken. Here are the phone numbers for phone support:
-
-- United States: +1 855 425 0216
-- Canada (excluding Quebec): +1 855 425 0216
-- United Kingdom: +44 800 026 0698
-- Belgium: +32 800 58533
-- Luxembourg: +352 800 40119
-- Australia: +61 180 037 0619
-- New Zealand: +64 988 44380
-
->[!NOTE]
->You'll need to have your organizational email address ready when you call to verify your identity. 
-
-## Additional resources
-- [Admin support for Microsoft Managed Desktop](admin-support.md). 
-- [Support for Microsoft Managed Desktop](../service-description/support.md).
-- If you already subscribe to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide in the **Online resources** section of the [Microsoft Managed Desktop Admin Portal](https://aka.ms/mwaasportal).
+> Only Severity C issues can be escalated through this path. For other issues, contact your IT admin to file the request through the Admin portal.

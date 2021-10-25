@@ -9,24 +9,26 @@ ms.date: 10/12/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid: MOE150
+ms.localizationpriority: medium
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
 description: "You can change the default size of PST files that are downloaded to your computer when you export eDiscovery search results."
 ---
 
 # Change the size of PST files when exporting eDiscovery search results
 
-When you use the Office 365 eDiscovery Export tool to export the email results of an eDiscovery search from the different Microsoft eDiscovery tools, the default size of a PST file that can be exported is 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. One reason to do this is so a PST file can fit on removable media, such a DVD, a compact disc, or a USB drive. 
+When you use the eDiscovery Export tool to export the email results of an eDiscovery search from the different Microsoft eDiscovery tools, the default size of a PST file that can be exported is 10 GB. If you want to change this default size, you can edit the Windows Registry on the computer that you use to export the search results. One reason to do this is so a PST file can fit on removable media, such a DVD, a compact disc, or a USB drive. 
   
 > [!NOTE]
-> The Office 365 eDiscovery Export tool is used to export the search results when using the Content Search tool in the security and compliance center, In-Place eDiscovery in Exchange Online, and the eDiscovery Center in SharePoint Online.
+> The eDiscovery Export tool is used to export the search results when using the Content search tool in the Microsoft 365 compliance center.
   
 ## Create a registry setting to change the size of PST files when you export eDiscovery search results
 
 Perform the following procedure on the computer that you'll use to export the results of an eDiscovery search.
   
-1. Close the Office 365 eDiscovery Export tool if it's open. 
+1. Close the eDiscovery Export tool if it's open. 
     
 2. Save the following text to a Window registry file by using a filename suffix of .reg; for example, PstExportSize.reg. 
     
@@ -69,11 +71,11 @@ Customers tend to decrease the size limit so that the search results will fit on
   
  **What computer do I have to do this on?**
   
-You need to change the registry setting on any local computer that you run the Office 365 eDiscovery Export tool on.
+You need to change the registry setting on any local computer that you run the eDiscovery Export tool on.
   
  **After I change this setting, do I have to reboot the computer?**
   
-No, you don't have to reboot the computer. But, if the Office 365 eDiscovery Export tool is running, you'll have to close it and the restart it after you change this setting.
+No, you don't have to reboot the computer. But, if the eDiscovery Export tool is running, you'll have to close it and the restart it after you change this setting.
   
  **Does an existing registry key get edited or does a new key get created?**
   

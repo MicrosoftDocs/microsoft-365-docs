@@ -4,12 +4,15 @@ description: Information for adding and deploying apps to Microsoft Managed Desk
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps, line-of-business apps, LOB apps
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Deploy apps to devices
-Part of onboarding to Microsoft Managed Desktop includes adding and deploying apps to your user’s devices. Once you're using the Microsoft Managed Desktop portal, you can add and deploy your apps. 
+Part of onboarding to Microsoft Managed Desktop includes adding and deploying apps to your user's devices. Once you're using the Microsoft Managed Desktop portal, you can add and deploy your apps. 
 
 The overall process looks like this:
 1. [Add apps to Microsoft Managed Desktop portal](#1) - This can be existing line-of-business (LOB) apps, or apps from Microsoft Store for Business that you've synced with Intune. 
@@ -25,7 +28,7 @@ You can add [Win32, or Windows MSI-based apps](#lob-apps), or [Microsoft Store f
 
 ###  Win32 or Windows MSI-based apps to Microsoft Managed Desktop
 
-You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/mmd-app-requirements).
+You can add your line-of-business (LOB) apps to Microsoft Managed Desktop portal. For information on requirements for apps installed on Microsoft Managed Desktop devices, see [Microsoft Managed Desktop app requirements](../service-description/mmd-app-requirements.md).
 
 In this procedure, you'll select which kind of app you want to add, and then configure and upload the app source. 
 
@@ -33,12 +36,12 @@ In this procedure, you'll select which kind of app you want to add, and then con
 
 You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and then search for Microsoft Managed Desktop. We'll show signing in to Microsoft Managed Desktop portal. 
 
-1.	Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
-2.	Under **Inventory**, select **Apps**.
-3.	In the Apps workload, select **Add**.
-4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
-    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
-    - If you selected **Windows app (Win32)**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
+1.    Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
+2.    Under **Inventory**, select **Apps**.
+3.    In the Apps workload, select **Add**.
+4.    In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
+    - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
+    - If you selected **Windows app (Win32)**, see [Win32 app management](/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
 <span id="msfb-apps">
 
@@ -49,26 +52,21 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
 2. Select **Shop for my group**.
-3. Use Search to find that the app that you want, and select the app.
+3. Use Search to find the app that you want, and select the app.
 4. On the product details, select **Get the App**. 
-Microsoft Store adds the app to **Products & services** for your organization.
-
-**To force a sync between Intune and Microsoft Store for Business**
-1. Sign in to [Azure Portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
-2. Select **All services > Intune**. 
-Intune is in the Monitoring + Management section.
-3. In the Intune pane, select **Client Apps**, and then select **Microsoft Store for Business**.
-4. Select **Enable** to sync your Microsoft Store for Business apps with Intune.
-    - If you haven't already, sign up and associate your Microsoft Store for Business account with Intune
-    - Select the language in which apps from the Microsoft Store for Business will be displayed in your Intune console
-    - Select **Sync** to sync your Microsoft Store for Business apps with Intune.
-    - Verify that the sync between Microsoft Store for Business and Intune is active (next step). 
-
+Microsoft Store adds the app to **Your products** for your organization.
+    
 **To verify that a sync between Intune and Microsoft Store for Business is active**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
 2. Select **Manage**.
 3. Select **Settings** and then select **Distribute**.
 4. Under **Management tools**, verify that Intune is listed and that the status is **Active**.  
+    
+**To force a sync between Intune and Microsoft Store for Business**
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
+3. Select **Enabled** for **Enabling Microsoft Store for Business sync lets you access volume-purchased apps with Intune.** 
+4. Select your preferred language, then select **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 <span id="2" />
 
@@ -76,13 +74,13 @@ Intune is in the Monitoring + Management section.
 
 Create three Azure AD groups for each app. This table outlines the groups you'll need (Available, Required, and Uninstall). 
 
-App assignment type |	Group use	| Example Azure AD name
+App assignment type |    Group use    | Example Azure AD name
 --- | --- | ---
 Available |  The app will be available from Company Portal app or website. | MMD – *app name* – Available
 Required |  The app is installed on devices in the selected groups. | MMD – *app name* – Required
 Uninstall |  The app is uninstalled from devices in the selected groups. | MMD – *app name* – Uninstall
 
-Add your users to these groups to either make the app availabe, install the app, or remove the app from their Microsoft Managed Desktop device. 
+Add your users to these groups to either make the app available, install the app, or remove the app from their Microsoft Managed Desktop device. 
 
 <span id="3" />
 
@@ -99,14 +97,17 @@ Add your users to these groups to either make the app availabe, install the app,
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
-3. [Assign licenses](assign-licenses.md)
-4. [Deploy Intune Company Portal](company-portal.md)
-5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Set up devices](set-up-devices.md)
-7. [Get your users ready to use devices](get-started-devices.md)
-8. Deploy apps (this topic)
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. Deploy apps (this article).
+1. [Set up devices](set-up-devices.md).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).
 
 
 <!--# Preparing apps for Microsoft Managed Desktop

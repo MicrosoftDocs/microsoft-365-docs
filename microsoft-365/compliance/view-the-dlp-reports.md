@@ -11,16 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-description: "With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they're trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph."
+ms.custom: seo-marvel-apr2020
+description: Use the DLP reports in Office 365 to view the number of DLP policy matches, overrides, or false positives and see whether they're trending up or down over time.
 ---
 
 # View the reports for data loss prevention
 
-After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Office 365 Security &amp; Compliance Center, you can quickly view:
+After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Security &amp; Compliance Center, you can quickly view:
   
 - **DLP policy matches** This report shows the count of DLP policy matches over time. You can filter the report by date, location, policy, or action. You can use this report to: 
     
@@ -54,19 +55,19 @@ All DLP reports can show data from the most recent four-month time period. The m
   
 You can find these reports in the Security &amp; Compliance Center \> **Reports** \> **Dashboard**.
   
-![DLP policy matches report](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
+![DLP policy matches report.](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
 ## View the justification submitted by a user for an override
 
 If your DLP policy allows users to override it, you can use the false positive and override report to view the text submitted by users in the policy tip.
   
-![Justification field in details of the DLP false positive and override report](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
+![Justification field in details of the DLP false positive and override report.](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
 ## Take action on insights and recommendations
 
 Reports can show insights and recommendations where you can click the red warning icon to see details about potential issues and take possible remedial action.
   
-![Clicking an insights icon to see details and actions to take](../media/51782036-7299-4960-8175-75c2b1637159.png)
+![Clicking an insights icon to see details and actions to take.](../media/51782036-7299-4960-8175-75c2b1637159.png)
   
 ## Permissions for DLP reports
 
@@ -82,18 +83,16 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connect to the Security &amp; Compliance Center using remote PowerShell](/powershell/exchange/connect-to-scc-powershell)
     
-2. Use any of these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Use any of these [Security &amp; Compliance Center cmdlets](/powershell/exchange/exchange-online-powershell)
     
 However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Security &amp; Compliance Center Powershell. Therefore, to use the cmdlets for the DLP reports, you need to:
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Connect to Exchange Online using remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
     
 2. Use any of these cmdlets for the DLP reports:
     
-      - [Get-DlpDetectionsReport](https://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+      - [Get-DlpDetectionsReport](/powershell/module/exchange/get-dlpdetectionsreport)
     
-      - [Get-DlpDetailReport](https://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
-    
-
+      - [Get-DlpDetailReport](/powershell/module/exchange/get-dlpdetailreport)
