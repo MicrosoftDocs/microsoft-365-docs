@@ -15,7 +15,7 @@ audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
 ---
-# Device Control Report
+# Device control report
 
 **Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
