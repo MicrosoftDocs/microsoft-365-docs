@@ -45,4 +45,6 @@
       items: 
       - name: Configuration settings
         href: mdb-configuration-settings.md
+      - name: Firewall
+        href: mdb-firewall.md
 
