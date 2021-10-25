@@ -32,6 +32,19 @@ Microsoft Defender for Business includes default firewall policies and settings 
 
 In Microsoft Defender for Business, you can define exceptions by creating custom rules. These custom rules allow you to block or allow specific connections on devices, regardless of their location or network.
 
+## Configuration settings for firewall protection in Microsoft Defender for Business
+
+Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business. <br/><br/>
+
+| Setting | Description |
+|--|--|
+| **Domain network** | This profile applies to inbound connections that are initiated on devices that are within your organization's network. By default, incoming connections are set to **Allow all**.  |
+| **Public network** | This profile applies to inbound connections that are initiated by devices on a network that you don't trust. By default, incoming connections are set to **Block all**.  |
+| **Private network** | This profile applies to inbound connections that are initiated by devices on a network that you trust. Because the network could include devices that you don't necessarily trust yet, by default, incoming connections are set to **Block all**. |
+| **Allow local policy merge** | When set to **Yes**, this setting applies firewall settings on users' devices when those settings don't conflict with your firewall policy. <br/><br/>When set to **No**, this setting ignores any firewall settings on users' devices, and applies only your firewall policy settings in Microsoft Defender for Business.  |
+| **Custom rules** | Custom rules allow you to block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you would set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <br/><br/>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. |
+| Values for custom rules | Depending on the type of custom rule you are creating, here are some example values you can use: <br/><br/>Application file path: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP: IPv4/IPv6 address such as `192.168.1.0` or `192.168.1.0/24` <br/><br/>IP: A valid IPv4/IPv6 address, such as `192.168.1.0` or `192.168.1.0/24` ​<br/><br/>IP: A valid IPv4/IPv6 address range, formatted like `192.168.1.0-192.168.1.9` (with no spaces included) |
+
 ## Next steps
 
 - [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
