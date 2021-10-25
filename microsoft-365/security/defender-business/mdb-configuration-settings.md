@@ -67,7 +67,10 @@ Microsoft Defender for Business includes firewall protection through Windows Def
 
 ## See also
 
-[Visit the Microsoft 365 Defender portal](mdb-get-started.md)
+- [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
 
-[Compare plans for small and midsized businesses](compare-mdb-m365bp.md)
+- [Compare plans for small and midsized businesses](compare-mdb-m365bp.md)
 
+- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md) 
+
+- [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
