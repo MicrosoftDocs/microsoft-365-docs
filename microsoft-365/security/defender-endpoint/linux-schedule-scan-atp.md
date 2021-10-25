@@ -18,6 +18,10 @@ ms.technology: mde
 
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
 To run a scan for Linux, see [Supported Commands](/microsoft-365/security/defender-endpoint/linux-resources#supported-commands).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.

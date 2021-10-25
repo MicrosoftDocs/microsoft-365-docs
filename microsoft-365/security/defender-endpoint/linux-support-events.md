@@ -25,6 +25,7 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article provides some general steps to mitigate missing events or alerts in the [Microsoft 365 Defender portal](https://security.microsoft.com/).
 
