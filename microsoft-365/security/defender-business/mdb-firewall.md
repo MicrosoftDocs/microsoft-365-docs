@@ -36,6 +36,8 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Endpoints** > **Device configuration**, and review the list of device groups.
+2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
 
-3. Select an existing device group, or create a new device group.
+3. In the **Firewall** section, select an existing policy, or add a new policy.
+
+4. 
