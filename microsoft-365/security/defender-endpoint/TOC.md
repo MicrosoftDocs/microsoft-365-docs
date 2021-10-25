@@ -492,7 +492,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
-###### [Get partner application access](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
@@ -647,7 +647,6 @@
 ##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
 ##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
-##### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -661,18 +660,20 @@
 ##### [Create and manage device groups]()
 ###### [Using device groups](machine-groups.md)
 ###### [Create and manage device tags](machine-tags.md)
+### [Managed security service provider (MSSP) integration]()
+#### [Configure managed security service provider integration](configure-mssp-support.md)
+#### [Supported managed security service providers](mssp-list.md)
+#### [Grant MSSP access to the portal](grant-mssp-access.md)
+#### [Access the MSSP customer portal](access-mssp-portal.md)
+#### [Configure alert notifications](configure-mssp-notifications.md)
+#### [Get partner application access](exposed-apis-create-app-partners.md)
+#### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
+#### [Managed security service provider opportunity](mssp-support.md)
 
-#### [Managed security service provider (MSSP) integration]()
-##### [Configure managed security service provider integration](configure-mssp-support.md)
-##### [Supported managed security service providers](mssp-list.md)
-##### [Grant MSSP access to the portal](grant-mssp-access.md)
-##### [Access the MSSP customer portal](access-mssp-portal.md)
-##### [Configure alert notifications](configure-mssp-notifications.md)
-##### [Get partner application access](exposed-apis-create-app-partners.md)
+
 
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
-#### [Managed security service provider opportunity](mssp-support.md)
 #### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
 
 ### [Integrations]()
