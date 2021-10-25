@@ -55,4 +55,4 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
 
 7. On the **Configuration settings** screen, choose **Next**.
 
-8. On the **Review your policy** screen, review your firewall policy settings. Make any needed changes, and then choose **Create policy**.
+8. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
