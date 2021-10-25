@@ -85,8 +85,6 @@ Templates will display an activation status as either active or inactive:
 
 If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
 
-You may also try premium templates on a trial basis. Trial licenses are good for up to 25 templates for 30 days. Once your trial begins, the templates should become available in your tenant within 48 hours. Trials can be activated through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-
 #### Activated templates counter
 
 Your assessment page and assessment templates page have an **activated templates** counter near the top. The counter displays the number of templates in use out of the number you're eligible to use according to your licensing agreement. Template use is counted at the certification level.
