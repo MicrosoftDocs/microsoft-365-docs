@@ -60,6 +60,9 @@ Firewall description
 | **Domain network** | This profile applies to inbound connections that are initiated on devices that are within your organization's network. By default, incoming connections are set to **Allow all**.  |
 | **Public network** | This profile applies to inbound connections that are initiated by devices on a network that you don't trust. By default, incoming connections are set to **Block all**.  |
 | **Private network** | This profile applies to inbound connections that are initiated by devices on a network that you trust. Because the network could include devices that you don't necessarily trust yet, by default, incoming connections are set to **Block all**. |
+| **Custom rules** | Custom rules allow you to block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you would set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <br/><br/>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. |
+
+
 
 ## See also
 
