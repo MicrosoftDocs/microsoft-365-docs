@@ -73,6 +73,25 @@ In Microsoft Defender for Business, you can define exceptions by creating custom
 
    1. On the **Edit rule** flyout, review and edit the rule's name and description.
    2. Review and if necessary, edit the rule's profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
-   4. In the **Remote address type** list, select either **IP** or **Application file path**.
-   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
+   3. In the **Remote address type** list, select either **IP** or **Application file path**.
+   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-configuration-settings.md#firewall).)
+   5. Set **Enable rule** to **On** to make the rule active. Or, to disable the rule, set the switch to **Off**.
    6. On the **Edit rule** flyout, select **Update rule**. 
+
+7. On the **Configuration settings** screen, choose **Next**.
+
+8. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
+
+## Delete a custom rule
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. Go to **Endpoints** > **Device configuration**, and review the list of policies.
+
+3. In the **Firewall** section, select an existing policy, or add a new policy.
+
+4. Under **Custom rules**, review the list of rules.
+
+5. Select a rule, and then choose **Delete**. Its flyout opens.
+
+6. On the confirmation screen, choose **Delete**. 
