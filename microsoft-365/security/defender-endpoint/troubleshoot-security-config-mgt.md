@@ -38,7 +38,7 @@ The Microsoft Defender for Endpoint Client Analyzer can assist when investigat
  
 
 For more information about the client analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client
-Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer?view=o365-worldwide).
+Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer).
 
  
 
