@@ -303,12 +303,12 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 ### Validate the exclusion list by using MpCmdRun
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md), use the following command:
 
 ```DOS
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-3.0 (Where 4.18.2110-3.0 is this month's MDAV "Platform Update".)
+cd 4.18.2110-3.0 (Where 4.18.2110-3.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
