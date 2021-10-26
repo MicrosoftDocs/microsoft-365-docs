@@ -575,5 +575,5 @@ We have partnered with various third-party Hardware Security Module (HSM) vendor
 
 - [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption) 
 
-Please reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions. 
+Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions. 
 
