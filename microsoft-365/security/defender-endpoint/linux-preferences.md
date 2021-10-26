@@ -61,7 +61,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Determines whether real-time protection (scan files as they are accessed) is enabled or not.
+Determines whether real-time protection (scan files as they are accessed) is enabled.
 
 <br>
 
@@ -491,7 +491,7 @@ The following configuration profile will:
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission at `safe` level
-- Enable behavior-monitoring threat blocking 
+- Enable behavior-monitoring
 
 ### Sample profile
 
