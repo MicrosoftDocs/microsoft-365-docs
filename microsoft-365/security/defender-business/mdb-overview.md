@@ -178,17 +178,6 @@ To learn more, see [Overview of automated investigations](../defender-endpoint/a
 
 Microsoft Defender for Business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#simplified-setup-experience). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for Business.
 
-### Reporting
-
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides you with easy access to current information. At a glance, you'll learn about any detected threats and actions to address those threats.
-
-- The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
-- The **Incidents** section lists any incidents that were created as a result of triggered alerts. Alerts are generated and incidents are created as threats are detected on the devices your company is using.
-- The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
-- The **Reports** section includes reports that show threats detected and their status. 
-
-To learn more, see [Getting started with Microsoft Defender for Business](mdb-get-started.md).
-
 ### Simplified setup experience
 
 When it comes to setting up and configuring Microsoft Defender for Business, you can choose from several options, as listed in the following table:
@@ -205,6 +194,17 @@ To learn more, see [Setup and configuration](mdb-setup-configuration.md).
 With role-based access control (RBAC), permissions and access are granted through roles and groups. Certain roles, such as security operator, can view and address threats, whereas the security administrator role can configure your company’s threat protection features. RBAC gives you fine-grained control over who can access the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and what they can see and do in the portal. 
 
 To learn more, see [Manage portal access using role-based access control](../defender-endpoint/rbac.md).
+
+### Reporting
+
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) provides you with easy access to current information. At a glance, you'll learn about any detected threats and actions to address those threats.
+
+- The **Home** page includes cards to show at a glance which users or devices are at risk, how many threats were detected, and what alerts/incidents were created.
+- The **Incidents** section lists any incidents that were created as a result of triggered alerts. Alerts are generated and incidents are created as threats are detected on the devices your company is using.
+- The **Action center** lists remediation actions that were taken. For example, if a file is sent to quarantine, or a URL is blocked, each action is listed in the Action center on the History tab.
+- The **Reports** section includes reports that show threats detected and their status. 
+
+To learn more, see [Getting started with Microsoft Defender for Business](mdb-get-started.md).
 
 ## APIs
 
