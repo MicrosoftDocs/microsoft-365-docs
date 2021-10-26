@@ -1,4 +1,4 @@
----
+﻿---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
@@ -61,7 +61,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Determines whether real-time protection (scan files as they are accessed) is enabled or not.
+Determines whether real-time protection (scan files as they are accessed) is enabled.
 
 <br>
 
@@ -95,6 +95,22 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+
+
+#### Enable/disable behavior-monitoring 
+
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|name|
+|**Data type**|String|
+|**Possible values**|disabled <p> enabled (default)|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
 
@@ -475,12 +491,14 @@ The following configuration profile will:
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission at `safe` level
+- Enable behavior-monitoring
 
 ### Sample profile
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -511,6 +529,7 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
