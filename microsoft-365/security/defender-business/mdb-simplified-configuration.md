@@ -39,7 +39,7 @@ The following table describes each experience:
 | The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. <br/><br/>Many organizations use Intune to manage their devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).  |
 | Your non-Microsoft device management solution  | If you are using a non-Microsoft productivity and device management solution like  Jamf for macOS or Ansible for Linux, you can continue to use your solution with Defender for Business. When devices are onboarded to Defender for Endpoint, you'll see their status and alerts in the Microsoft 365 Defender portal. |
 
-**We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business is designed to protect your company's devices on day one.
+**We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business is designed to protect your company's devices on day one, without requiring deep technical expertise or special knowledge.
 
 ## Why we recommend using the simplified configuration process
 
@@ -47,7 +47,7 @@ Defender for Business is designed to provide strong protection while saving you 
 
 ## What if you change your mind?
 
-If you have chosen a portal and change your mind later, contact support. They'll help you make the switch to the other portal.
+If you have chosen a method to manage your devices and you later decide you want to use a different method, contact support. They'll help you make the switch to your preferred method.
 
 ## Next step
 
