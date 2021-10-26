@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/25/2021
+ms.date: 10/26/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -22,9 +22,6 @@ ms.collection:
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
-
-> [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
 You can manage your firewall settings in Microsoft Defender for Business. Your firewall settings are managed through policies that are assigned to devices. Initially, you have a default policy that helps protect your devices from unwanted network traffic. However, you can create our own policies and custom rules to allow specific connections. [Learn more about firewall protection in Microsoft Defender for Business](mdb-firewall.md).
 
