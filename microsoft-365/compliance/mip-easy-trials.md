@@ -59,15 +59,17 @@ When you don't have sensitivity labels that are published, we'll create the foll
 |Highly Confidential \ All Employees | Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content. |
 |Highly Confidential \ Specified People | Highly Confidential data that requires protection and that can only be viewed by specified people, with limited rights. |
 
-If you are interested in guidance for defining a classification taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
+For more information about these configuration settings and what sensitivity labels can do, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do).
+
+If you are interested in guidance for defining your own classification taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
 
 ## Default sensitivity label policy
 
 The default sensitivity label policy makes the default labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
 
 - Publish the default labels to all users in your tenant
-- Default label of General for documents and emails
-- Require a justification for changing a label
+- Default label of **General** for documents and emails
+- Users must provide a justification to remove a label or lower its classification
 
 For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
 
@@ -85,38 +87,38 @@ The default client-side auto-labeling has the following configuration:
 
 ## Service-side auto-labeling 
 
-Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy for documents at rest in simulation mode. In this mode, documents aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what documents would get labeled in our policy to provide you with confidence in our labeling before you deploy to your tenant for actual labeling. 
+Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy for documents at rest in simulation mode. In this mode, documents aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what documents would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
 
-Once turned on from simulation mode our server-side auto-labeling policy will automatically label documents with credit with either Confidential Unrestricted (no protection) or Highly Confidential Unrestricted (no protection) when we detect credit card numbers in the documents. 
+The default service-side auto-labeling has the following configuration: 
 
-Default Server-side auto-labeling has the following conditions: 
+- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Unrestricted (no protection)** 
 
-If there are 1-9 instances of credit card numbers found in a document, the document will get labeled as Confidential Unrestricted (no protection) 
+- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
 
-If there are >= 10 instances of credit card numbers found in a document, the document will get labeled as Highly Confidential Unrestricted (no protection) 
+When the simulation is complete, review the results and if you are happy with them, turn on the policy.
 
- 
 
 ## Teams DLP  
 
-This policy detects the presence of credit card numbers in All Teams chats and channel messages. When this sensitive information is detected, admins will get a low severity Alert notification. Users would not see any policy tip. However, you can edit these actions anytime. 
+The default DLP policy for Teams detects the presence of credit card numbers in all Teams chats and channel messages. When this sensitive information is detected, admins will get a low severity alert notification.
+
+This policy is unobtrusive to users with no policy tip visible and no messages blocked, but admins will have records of the sensitive information shared in these messages. If required, you can edit the settings to change this default configuration.
 
 ## Endpoint DLP 
 
-This policy detects the presence of credit card numbers on all Endpoint devices and audits (does not block) the following: 
+The default DLP policy for Endpoint detects the presence of credit card numbers on all endpoint devices, and then audits (does not block) the following actions: 
+- Upload to cloud service domains or access by unallowed browsers
 
-Upload to cloud service domains or access by unallowed browsers 
+- Copy to clipboard, USB, or network share 
 
-copy to clipboard, USB, or network share 
+- Access by unallowed apps 
 
-Access by unallowed apps 
+- Print 
 
-Print 
+- Copy or move using unallowed Bluetooth app 
 
-Copy or move using unallowed Bluetooth app 
+- Remote desktop services 
 
-Remote desktop services 
+If content contains 10 or more instances of credit cards and one or more of the listed activities is detected, a medium severity alert notification is sent to admins.
 
-If content that contains 10 or more instances of credit cards match an activity above, trigger a medium severity alert to admins. 
-
-This policy is unintrusive to end users, as they would not see any policy tip, but admins will have records of all suspicious activity. You can edit these actions anytime. 
+This policy is unobtrusive to users with no policy tip visible and no actions blocked, but admins will have records of all suspicious activity. If required, you can edit these settings to change this default configuration. 
