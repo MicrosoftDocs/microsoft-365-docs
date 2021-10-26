@@ -37,10 +37,10 @@
         href: mdb-review-remediation-actions.md
     - name: Manage settings and devices
       items: 
-      - name: View and edit device policies
-        href: mdb-view-edit-device-policies.md
       - name: Manage devices
         href: mdb-manage-devices.md
+      - name: View and edit device policies
+        href: mdb-view-edit-device-policies.md
       - name: Manage your firewall settings
         href: mdb-manage-firewall.md
     - name: Reference information
