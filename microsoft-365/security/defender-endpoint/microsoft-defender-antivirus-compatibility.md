@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 10/18/2021
+ms.date: 10/26/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -29,11 +29,11 @@ ms.collection: M365-security-compliance
 
 Microsoft Defender Antivirus is automatically installed on endpoints running the following versions of Windows:
 
-- Windows 10 or later
-- Windows Server 2016
-- Windows Server, version 1803, or later
-- Windows Server 2019
+- Windows 10 or newer
 - Windows Server 2022
+- Windows Server 2019
+- Windows Server, version 1803, or newer
+- Windows Server 2016
 
 What happens when another non-Microsoft antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) together with your antivirus protection.
 
@@ -47,10 +47,10 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 
 |Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
 |---|---|---|
-|Windows 10 or <p> Windows 11|Microsoft Defender Antivirus|Active mode|
-|Windows 10 or <p> Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
-|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|Microsoft Defender Antivirus|Active mode|
-|Windows Server 2016 <p> Windows Server, version 1803, or newer <p> Windows Server 2019 or Windows Server 2022|A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
+|Windows 10 <p> Windows 11|Microsoft Defender Antivirus|Active mode|
+|Windows 10 <p> Windows 11|A non-Microsoft antivirus/antimalware solution|Disabled mode (happens automatically)|
+|Windows Server 2022 <p> Windows Server 2019<p> Windows Server, version 1803, or newer <p> Windows Server 2016 |Microsoft Defender Antivirus|Active mode|
+|Windows Server 2022<p>Windows Server 2019<p>Windows Server, version 1803, or newer <p> Windows Server 2016 <p>  |A non-Microsoft antivirus/antimalware solution|Disabled (set manually) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Microsoft Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
 
@@ -67,14 +67,14 @@ The following table summarizes what happens with Microsoft Defender Antivirus wh
 | Windows 10 <p> Windows 11 | Microsoft Defender Antivirus | No   | Active mode |
 | Windows 10 <p> Windows 11  | A non-Microsoft antivirus/antimalware solution | Yes  | Passive mode (automatically) |
 | Windows 10 <p> Windows 11  | A non-Microsoft antivirus/antimalware solution | No   | Disabled mode (automatically)    |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Yes |         Active mode  |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | Microsoft Defender Antivirus | No  | Active mode |
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
-| Windows Server, version 1803 or newer <p> Windows Server 2019 | A non-Microsoft antivirus/antimalware solution | No  | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup></sup>  |
-| Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | Yes | Active mode |
-|Windows Server 2012 R2 <br><br> Windows Server 2016 | Microsoft Defender Antivirus | No | Active mode |
-| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup> |
-| Windows Server 2012 R2 <br><br>Windows Server 2016 | A non-Microsoft antivirus/antimalware solution | No | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
+| Windows Server 2019 <p>Windows Server, version 1803 or newer  | Microsoft Defender Antivirus  | Yes |         Active mode  |
+| Windows Server 2019 <p> Windows Server, version 1803 or newer   | Microsoft Defender Antivirus | No  | Active mode |
+| Windows Server 2019 <p> Windows Server, version 1803 or newer  | A non-Microsoft antivirus/antimalware solution | Yes  | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup>  | 
+| Windows Server 2019 <p> Windows Server, version 1803 or newer  | A non-Microsoft antivirus/antimalware solution | No  | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup></sup>  |
+| Windows Server 2016 <br><br> Windows Server 2012 R2   | Microsoft Defender Antivirus | Yes | Active mode |
+|Windows Server 2016 <br><br> Windows Server 2012 R2  | Microsoft Defender Antivirus | No | Active mode |
+| Windows Server 2016 <br><br> Windows Server 2012 R2  | A non-Microsoft antivirus/antimalware solution | Yes | Microsoft Defender Antivirus must be set to passive mode (manually) <sup>[[2](#fn2)]<sup> |
+|Windows Server 2016 <br><br> Windows Server 2012 R2  | A non-Microsoft antivirus/antimalware solution | No | Microsoft Defender Antivirus must be disabled (manually) <sup>[[3](#fn3)]<sup> |
 
 (<a id="fn2">2</a>)  On Windows Server, version 1803 or newer, Windows Server 2019, Windows Server 2016, or  Windows Server 2012 R2, Microsoft Defender Antivirus does not enter passive mode automatically when you install a non-Microsoft antivirus product. In those cases, [set Microsoft Defender Antivirus to passive mode](microsoft-defender-antivirus-on-windows-server.md) to prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key. 
 
@@ -93,11 +93,11 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 > See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md) for key differences and management options for Windows Server installations. On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus is only available on devices running Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server, version 1803 or later, and Windows Server 2019.
+> Microsoft Defender Antivirus is only available on devices running Windows 10 and 11, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, and Windows Server 2012 R2.
 >
 > In Windows 8.1, enterprise-level endpoint antivirus protection is offered as [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10)), which is managed through Microsoft Endpoint Configuration Manager.
 >
-> Windows Defender is also offered for [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although it does not provide enterprise-level management.
+> Windows Defender is also offered for [consumer devices on Windows 8.1](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender), although Windows Defender does not provide enterprise-level management.
 
 Defender for Endpoint includes capabilities that further extend the antivirus protection that is installed on your endpoint. You can benefit from running Microsoft Defender Antivirus alongside another antivirus solution.
 
