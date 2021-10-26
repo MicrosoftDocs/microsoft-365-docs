@@ -40,11 +40,14 @@ Or
 
 ### Advanced classification scanning and protection
 
-When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers), and [exact data match](sit-learn-about-exact-data-match.md) classification techniques in your DLP policies.
+When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](sit-learn-about-exact-data-match.md) classification and  techniques in your DLP policies.
 
 To prevent unintended bandwidth utilization, you can either set a limit on bandwidth utilization per rolling 24 hour period or allow unlimited bandwidth utilization.
 
-If you set a bandwidth utilization limit and it is exceeded, data classification will continue by using the local data classification service on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue by using the local data classification service on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+
+> [!NOTE]
+> DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### File path exclusions
 
