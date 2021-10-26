@@ -65,7 +65,7 @@ For more information about these configuration settings and what sensitivity lab
 The default sensitivity label policy makes the labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
 
 - Publish the default labels to all users in your tenant
-- Default label of **General** for unlabeled documents and emails
+- Default label of **General** \ **All Employees (unrestricted)** for unlabeled documents and emails
 - Users must provide a justification to remove a label or lower its classification
 
 For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
@@ -78,9 +78,9 @@ Client-side auto-labeling only works for documents and emails in use by the Offi
 
 The default client-side auto-labeling has the following configuration: 
 
-- If there are 1-9 instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **Unrestricted (no protection)** 
+- If there are 1-9 instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **Anyone (unrestricted)** 
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
+- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential**\ **All Employees** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for auto-labeling and configure it for you.
@@ -91,9 +91,9 @@ Service-side auto-labeling helps label sensitive documents at rest, and emails i
 
 The default service-side auto-labeling has the following configuration: 
 
-- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Unrestricted (no protection)** 
+- If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Anyone (unrestricted)**
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential**\ **Unrestricted (no protection)** 
+- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential**\ **All Employees** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
