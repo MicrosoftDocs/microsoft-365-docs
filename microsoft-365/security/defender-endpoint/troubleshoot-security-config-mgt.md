@@ -37,7 +37,9 @@ Built without user interaction and frictionless, this end-to-end onboarding flow
 
 If you are having issues with the onboarding flow for new devices, and you have validated that pre-requisites are met in your environment, we recommend using the options below in order to troubleshoot the potential cause of enrollment errors.
 
-## Run Client Analyzer on Windows 
+
+
+## Registering domain joined computers with Azure Active Directory  
 To successfully register devices to Azure Active Directory, you'll need to ensure the following: 
 
 - Computers can authenticate with the domain controller 
@@ -89,8 +91,7 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 - Verify that the device has successfully registered to Azure Active Directory in **Device Configuration Management Details**
 
 
-
-![Image of client analyzer results](images/client-analyzer-results.png)
+    ![Image of client analyzer results](images/client-analyzer-results.png)
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 
