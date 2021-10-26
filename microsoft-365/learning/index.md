@@ -18,9 +18,7 @@ description: Learn how to find resources for Microsoft Viva Learning.
 
 # Introduction to Microsoft Viva Learning
 
-Microsoft Viva Learning empowers teams and individuals in your organization to make learning a natural part of their day. The app creates a central hub in Microsoft Teams where employees can share, assign, and learn from content libraries across your organization.
-
-The resources on this page are designed to get you started with learning about and using Viva Learning in your organization.
+Microsoft Viva Learning empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.
 
 ## Get started
 
@@ -29,8 +27,8 @@ The resources in this section help you learn more about what Viva Learning is an
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn more about Viva Learning |[Microsoft Viva Learning overview](overview-viva-learning.md)|
-|Find resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Tech Community](https://resources.techcommunity.microsoft.com/viva-learning/)|
-|Find Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/learning-preview-app-01bfed12-c327-41e0-a68f-7fa527dcc98a)|
+|Find resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Tech Community](https://techcommunity.microsoft.com/t5/viva-learning/bd-p/VivaLearning/)|
+|Find Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
 ## Set up and administration
 
