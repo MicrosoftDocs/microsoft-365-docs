@@ -16,6 +16,7 @@ manager: dansimp
 ms.technology: mde
 ms.date: 10/26/2021
 ms.collection: M365-security-compliance
+---
 
 # Microsoft Defender Antivirus compatibility with other security products
 
