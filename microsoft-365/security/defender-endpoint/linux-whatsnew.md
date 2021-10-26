@@ -22,6 +22,16 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+
+## 101.45.13 (30.121082.14513.0)
+
+- Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros: 
+  - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+  - Amazon Linux 2
+  - Fedora 33 or higher
+- Bug fixes
+
+
 ## 101.45.00 (30.121072.14500.0)
 
 - Added new switches to the command-line tool:
