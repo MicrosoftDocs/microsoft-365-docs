@@ -3,10 +3,11 @@ title: Overview of Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: 10/27/2021
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
+ms.custom: intro-overview
 ms.service: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
@@ -71,19 +72,19 @@ When you’re ready to set up and configure Viva Learning in your Microsoft 365 
 
 ## Supported languages
 
-Viva Learning does not currently support right-to-left languages.
+Viva Learning doesn't currently support right-to-left languages.
 
-## Data and Privacy
+## Data and privacy
 
-Viva Learning data residency is tenant specific and follows the standard Microsoft 365 data storage guidelines by available geography. For more information, see [Where is my Microsoft 365 customer data stored](/microsoft-365/enterprise/o365-data-locations).
+Viva Learning data residency is tenant-specific and follows the standard Microsoft 365 data storage guidelines by available geography. For more information, see [Where is my Microsoft 365 customer data stored](/microsoft-365/enterprise/o365-data-locations).
 
 Integration with SharePoint is currently only supported for sites hosted from the home geography of the tenant. For example, a French tenant can only link SharePoint sites hosted in France to Viva Learning.
 
 Data stored from Viva Learning includes:
 
-- Learning object content metadata such as title, description, author, and language
-- User data (bookmarks, recently viewed, recommended courses, assigned courses, completion records)
-- Required service data (error logs)
+- Learning object content metadata, such as title, description, author, and language
+- User data, such as bookmarks, recently viewed, recommended courses, assigned courses, and completion records
+- Required service data, such as error logs
 - Diagnostic data usage
 
 >[!NOTE]
