@@ -180,7 +180,7 @@ Microsoft Defender for Business enables you to manage your company’s security 
 
 ### Simplified setup experience
 
-When it comes to setting up and configuring Microsoft Defender for Business, you can choose from several options, as listed in the following table:
+When it comes to setting up and configuring Microsoft Defender for Business, you can choose from several options, as listed in the following table: <br/><br/>
 
 | Method | Description |
 |:---|:---|
