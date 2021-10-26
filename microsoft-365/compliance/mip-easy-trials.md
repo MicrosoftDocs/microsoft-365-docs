@@ -22,11 +22,9 @@ The free trial for Microsoft Information Protection from Microsoft 365 Complianc
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
-- Teams DLP
-- Endpoint DLP
+- Data loss prevention (DLP policies for Teams and endpoints
 
-
-These default configurations help you get up and running quickly. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
+These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
 New customers: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
 
@@ -39,6 +37,9 @@ Existing customers: If you've had Microsoft 365 Compliance for more than 30 days
 |Service-side auto-labeling | At least one auto-label policy that's turned on|
 |Teams DLP | At least one DLP policy for Teams|
 |Endpoint DLP | At least one DLP policy for Endpoint|
+
+
+
 
 ## Default sensitivity labels
 
@@ -61,21 +62,19 @@ When you don't have sensitivity labels that are published, we'll create the foll
 
 For more information about these configuration settings and what sensitivity labels can do, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do).
 
-If you are interested in guidance for defining your own classification taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
-
 ## Default sensitivity label policy
 
-The default sensitivity label policy makes the default labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
+The default sensitivity label policy makes the labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
 
 - Publish the default labels to all users in your tenant
-- Default label of **General** for documents and emails
+- Default label of **General** for unlabeled documents and emails
 - Users must provide a justification to remove a label or lower its classification
 
 For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
 
 ## Client-side auto-labeling 
 
-The default client-side auto-labeling configuration automatically recommends users apply the sensitivity label **Confidential** \ **Unrestricted (no protection)** or **Highly Confidential** \ **Unrestricted (no protection)**  when we detect credit card numbers in documents or emails they’re working with. As a recommendation rather than automatically applied, this configuration serves as a good first step for highlighting concerning content and introduces users to the practice of labeling their documents and emails. 
+The default client-side auto-labeling configuration automatically recommends users apply a sensitivity label when we detect credit card numbers in documents or emails they’re working with. As a recommendation rather than automatically applied, this configuration serves as a good first step for highlighting concerning content and introduces users to the practice of labeling their documents and emails.
 
 Client-side auto-labeling only works for documents and emails in use by the Office apps Word, Excel, PowerPoint, and Outlook. 
 
@@ -85,9 +84,12 @@ The default client-side auto-labeling has the following configuration:
 
 - If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
 
+> [!NOTE]
+> If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for auto-labeling and configure it for you.
+
 ## Service-side auto-labeling 
 
-Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy for documents at rest in simulation mode. In this mode, documents aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what documents would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
+Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
 
 The default service-side auto-labeling has the following configuration: 
 
@@ -95,8 +97,12 @@ The default service-side auto-labeling has the following configuration:
 
 - If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
 
+> [!NOTE]
+> If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
+
 When the simulation is complete, review the results and if you are happy with them, turn on the policy.
 
+For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
 ## Teams DLP  
 
