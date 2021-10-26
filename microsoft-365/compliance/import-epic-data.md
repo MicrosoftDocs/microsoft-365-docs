@@ -50,44 +50,24 @@ The first step is to create and register a new app in Azure Active Directory (Az
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](file:///C:\azure\active-directory\develop\quickstart-register-app).
+For step-by-step instructions for creating an app in Azure AD, see [Register an application with the Microsoft identity platform](\azure\active-directory\develop\quickstart-register-app).
 
 ## Step 2: Prepare a text file with Epic EHR audit records
 
-The next step is to create a text file that contains information about employees' access to patient health records in your organization's Epic EHR system. As previously explained, you need to determine how to generate this text file from your Epic EHR system. The Epic connector workflow requires a text file with tab-separated values to map that data in the text file with required connector schema.
+The next step is to create a text file that contains information about employees' access to patient health records in your organization's Epic EHR system. As previously explained, you need to determine how to generate this text file from your Epic EHR system. The Epic connector workflow requires a text file with tab-separated values to map that data in the text file with required connector schema. The file format supported is a pipe- or tab- separated .txt file.
 
-The text file must contain the fields in the following table. These fields are required to enable the Insider risk management scenarios. If any of the fields marked \*is missing in the text file, then imported file will be rejected. Here are descriptions of the required schema properties for the text file.
+The following table lists the fields that are required to enable insider risk management scenarios. A subset of these fields is mandatory. These fields are highlighted with an asterisk (*). If any of the mandatory fields are missing in the text file, the file won't be validated and data in the file won't be imported.
 
-Note: Fields marked \* are required. If they aren't included, the file won't be validated and the data won't be imported.
+|Field|Category|
+|:----|:----------|
+| ACCESS_LOG.ACCESS_TIME*<br/>ACCESS_LOG_METRIC.METRIC_NAME*<br/>ACCESS_LOG.WORKSTATION_ID<br/>ZC\_METRIC\_GROUP.NAME<br/>ZC\_ACCESS\_ACTION.NAME |These fields are used to identify access activity events in your Epic EHR system.|
+| PATIENT.PAT_MRN_ID<br/>PATIENT.PAT_FIRST_NAME* <br/>PATIENT.PAT_MIDDLE_NAME <br/>PATIENT.PAT_LAST_NAME* <br/>PATIENT.ADD_LINE_1* <br/>PATIENT.ADD_LINE_2  <br/>PATIENT.CITY* <br/>PATIENT.ZIP*  <br/>ZC_STATE.NAME <br/>ZC_COUNTRY.NAME <br/>CLARITY_DEP.DEPARTMENT_NAME              | These fields are used to identify patient profile information.|
+| ZC_BTG_REASON.NAME*<br/> PAT_BTG_AUDIT.BTG_EXPLANATION | These fields are used to identify access to restricted records.|
+| EMP.SYSTEM_LOGIN*<br/>CLARITY_EMP.USER_ID <br/> employee_last_name<sup>1</sup> <br/> employee_first_name<sup>1</sup>                | These fields are used to identify employee profile information for address and name matching required to determine access to Family/Neighbor/Employee records. |
+|||
 
-File format supported – pipe separated ("\|") .txt file
-
-| **Fields**                         | **Description**                                                                                                                                          |
-|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ACCESS\_LOG.ACCESS\_TIME\*         | These fields are used to identify access activity events in your Epic EHR system.                                                                        |
-| ACCESS\_LOG\_METRIC.METRIC\_NAME\* |                                                                                                                                                          |
-| ACCESS\_LOG.WORKSTATION\_ID        |                                                                                                                                                          |
-| ZC\_METRIC\_GROUP.NAME             |                                                                                                                                                          |
-| ZC\_ACCESS\_ACTION.NAME            |                                                                                                                                                          |
-| PATIENT.PAT\_MRN\_ID               | These fields are used to identify patient profile information                                                                                            |
-| PATIENT.PAT\_FIRST\_NAME\*         |                                                                                                                                                          |
-| PATIENT.PAT\_MIDDLE\_NAME          |                                                                                                                                                          |
-| PATIENT.PAT\_LAST\_NAME\*          |                                                                                                                                                          |
-| PATIENT.ADD\_LINE\_1\*             |                                                                                                                                                          |
-| PATIENT.ADD\_LINE\_2               |                                                                                                                                                          |
-| PATIENT.CITY\*                     |                                                                                                                                                          |
-| PATIENT.ZIP\*                      |                                                                                                                                                          |
-| ZC\_STATE.NAME                     |                                                                                                                                                          |
-| ZC\_COUNTRY.NAME                   |                                                                                                                                                          |
-| CLARITY\_DEP.DEPARTMENT\_NAME      |                                                                                                                                                          |
-| ZC\_BTG\_REASON.NAME\*             | These fields are used to identify access to restricted records.                                                                                          |
-| PAT\_BTG\_AUDIT.BTG\_EXPLANATION   |                                                                                                                                                          |
-| EMP.SYSTEM\_LOGIN\*                | These fields are used to identify employee profile information for address/name matching required to determine Family/Neighbor/Employee records accesses |
-| CLARITY\_EMP.USER\_ID              |                                                                                                                                                          |
-| employee\_last\_name *(Custom)*    |                                                                                                                                                          |
-| employee\_first\_name *(Custom)*   |                                                                                                                                                          |
-
-Note: Fields marked Custom are not available out-of-box from Epic. You need to configure the export to make sure the text file contains these post-processed fields.
+> [!NOTE]
+> <sup>1</sup>This field isn't available by default in Epic. You need to configure the export to ensure the text file contains this field.
 
 ## Step 3: Create the Epic connector
 
@@ -123,15 +103,13 @@ The next step is to create an Epic connector in the Microsoft 365 compliance cen
 
 7. Click the Epic connector that you just created to display the flyout page, which contains properties and other information about the connector.
 
-Flyout page for new Epic connector
-
 If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
 You can also click **Edit** to change the Azure App ID or the column header names that you defined on the **File mapping** page.
 
 ## Step 4: Run the sample script to upload your Epic EHR audit records
 
-The last step in setting up an Epic connector is to run a sample script that will upload the Epic EHR audit records data in the text file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the Epic connector. After you run the script, the Epic connector that you created in Step 3 imports the Epic EHR audit records data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#Xa3f6474700680a69dc953f8d77a3628f96d3f27).
+The last step in setting up an Epic connector is to run a sample script that will upload the Epic EHR audit records data in the text file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the Epic connector. After you run the script, the Epic connector that you created in Step 3 imports the Epic EHR audit records data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [(Optional) Step 6: Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
@@ -147,83 +125,31 @@ The last step in setting up an Epic connector is to run a sample script that wil
 
 7. Run the following command to upload the Epic audit data in the text file to Microsoft cloud; for example:
 
-- .\EpicConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
+   ```powershell
+   .\EpicConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
+   ```
 
-    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
+The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
 
-<table>
-<thead>
-<tr class="header">
-<th><ul>
-<li>Parameter</li>
-</ul></th>
-<th><ul>
-<li>Description</li>
-</ul></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><code>tenantId</code></li>
-</ul></td>
-<td><ul>
-<li>This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the <strong>Overview</strong> blade in the Azure AD admin center. This is used to identify your organization.</li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li><code>appId</code></li>
-</ul></td>
-<td><ul>
-<li>This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.</li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li><code>appSecret</code></li>
-</ul></td>
-<td><ul>
-<li>This is the Azure AD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.</li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li><code>jobId</code></li>
-</ul></td>
-<td><ul>
-<li>This is the job ID for the Epic connector that you created in Step 3. This is used to associate the Epic EHR audit records that are uploaded to the Microsoft cloud with the Epic connector.</li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li><code>file</code><code>Path</code></li>
-</ul></td>
-<td><ul>
-<li>This is the file path for the text file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.</li>
-</ul></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+|Parameter  |Description|
+|:----------|:----------|
+|tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
+|appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+|appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
+|jobId|This is the job ID for the Epic connector that you created in Step 3. This is used to associate the Epic EHR audit records that are uploaded to the Microsoft cloud with the Epic connector.|
+|filePath|This is the file path for the text file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+|||
 
-- Here's an example of the syntax for the Epic connector script using actual values for each parameter:
+Here's an example of the syntax for the Epic connector script using actual values for each parameter:
 
-         .\EpicConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\epic_audit_records.txt'
+```powershell
+.\EpicConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\epic_audit_records.txt'
+```
 
-    If the upload is successful, the script displays the **Upload Successful** message.
+If the upload is successful, the script displays the **Upload Successful** message.
 
-    > \[!NOTE\] If you have problems running the previous command because of execution policies, see [About Execution Policies](file:///C:\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](file:///C:\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
+> [!NOTE]
+> If you have problems running the previous command because of execution policies, see [About Execution Policies](\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the Epic connector
 
@@ -233,13 +159,7 @@ After you create the Epic connector and push your EHR audit records, you can vie
 
 2. Click the **Connectors** tab and then select the Epic connector to display the flyout page. This page contains the properties and information about the connector.
 
-- Status flyout page for Epic connector
-
-    Status flyout page for Epic connector
-
 3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the text file to the Microsoft cloud.
-
-- <span id="Xa3f6474700680a69dc953f8d77a3628f96d3f27" class="anchor"></span>Epic connector log file displays number rows from text file that were uploaded
 
     Epic connector log file displays number rows from text file that were uploaded
 
@@ -285,15 +205,13 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
     2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:.0.exe.
 
-    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\_Epic\_audit\_records.txt"`
+    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Epic\audit\records.txt"`
 
-    4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:.
+    4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Epic\audit.
 
     5. Click **Ok** to save the settings for the new action.
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
-
-- The new task is displayed in the Task Scheduler Library.
 
 The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
 
