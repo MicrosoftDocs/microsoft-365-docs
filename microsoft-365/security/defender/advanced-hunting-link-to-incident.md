@@ -46,7 +46,7 @@ The link to incident feature lets you add advanced hunting query results to a ne
  
     ![Image showing event details showing create new incident](../../media/link-to-incident-3-create-new.png)	
     
-    Or select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents. 
+    Or select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents or enter the incident name or ID. 
 
     ![Image showing event details showing link to existing](../../media/link-to-incident-3-link-to-existing.png)
 4. For either selection, provide the following details, then select **Next**:
