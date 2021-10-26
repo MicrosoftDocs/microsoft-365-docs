@@ -3,9 +3,9 @@ title: Introduction to Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
+ms.reviewer: shirana
 ms.date: 11/02/2021
-audience: enabler
+audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
