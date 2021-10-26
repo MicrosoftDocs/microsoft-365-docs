@@ -37,7 +37,7 @@ This guide is intended to:
 
 - Provide you with an overview of Microsoft Defender for Business so you know what’s included and how it works.
 - Walk through setting up and configuring your threat protection capabilities.
-- Help you get started using your threat protection solution.
+- Help you get started using your endpoint protection solution.
 
 ## What's included in Microsoft Defender for Business?
 
