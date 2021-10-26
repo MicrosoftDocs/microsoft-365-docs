@@ -1,6 +1,6 @@
 ---
 title: Investigate and respond with Microsoft 365 Defender overview
-description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft 365 Defender portal.
+description: Investigate and respond to incidents with the capabilities of Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
