@@ -43,3 +43,9 @@ You can use these icons and templates to create diagrams like the following exam
 2. Teams retention lifecycle architecture diagram:
 
     ![Teams retention lifecycle.](../media/TeamsRetentionLifecycle.png)
+
+## More icon sets from Microsoft
+
+- [Azure architecture icons](/azure/architecture/icons/)
+- [Dynamics 365 architecture icons](/dynamics365/get-started/icons)
+- [Microsoft Power Platform icons](/power-platform/guidance/icons)
