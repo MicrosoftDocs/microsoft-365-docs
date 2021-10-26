@@ -102,4 +102,4 @@ After you’ve created and assigned tags, you can use them to filter your tenant
 
 [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
 [Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)  
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.md) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
