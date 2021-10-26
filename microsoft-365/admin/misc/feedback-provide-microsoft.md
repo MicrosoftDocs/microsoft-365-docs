@@ -18,7 +18,7 @@ Microsoft values your feedback, and every day we look at feedback from users acr
 
 ## How to give great feedback
 
-Whether you’re providing feedback directly in an application or website, through the Feedback portal, or in the Windows Feedback Hub, there are some simple steps you can take to make your feedback as strong as possible.
+Whether you’re providing feedback directly in an application or website, through the Feedback portal, or in the [Windows Feedback Hub](https://aka.ms/WIPFeedbackHub), there are some simple steps you can take to make your feedback as strong as possible.
 
 - If you are using a community feedback experience, Microsoft will prioritize feedback that high volumes of our users are experiencing or requesting.  You can see if feedback you want to provide already exists by searching to browse existing feedback to see if your feedback has already been mentioned by someone in the community.  It’s possible that you have the same feedback as someone else, and you can add your voice to the existing feedback rather than creating a copy of it.  If you can’t find feedback like yours, it’s time to add new feedback
 - When providing feedback to Microsoft, it’s important that you keep your comments specific to a single topic at a time.  Product teams are continuously reading feedback, and when we see similar feedback from different users, we try to combine it to see the full impact to our userbase.  Providing feedback about a single topic at a time helps us to link similar feedback together.
