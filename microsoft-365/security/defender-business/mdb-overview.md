@@ -23,7 +23,13 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is a new endpoint security solution solution that was designed especially for the small and medium-sized business (up to 300 employees). Microsoft Defender for Business brings the power of enterprise endpoint security in an easy-to-use and cost-effective solution. With Microsoft Defender for Business, you can help protect the devices and data your business uses. You can use Microsoft Defender for Business to configure threat protection capabilities, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
+Microsoft Defender for Business is a new endpoint security solution solution that was designed especially for the small and medium-sized business (up to 300 employees). Defender for Business brings the power of enterprise endpoint security in an easy-to-use and cost-effective solution. With Defender for Business, you can help protect the devices and data your business uses with:
+
+- **Enterprise-grade security**. Defender for Business brings powerful endpoint security capabilities from our industry-leading [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) solution and optimizes those capabilities for IT administrators to support small and medium-sized businesses.
+
+- **An easy-to-use security solution**. Defender for Business offers streamlined experiences that guide you to action with recommendations and insights into the security of your endpoints. No specialized knowledge is required, because Defender for Business offers wizard-driven configuration and default security policies designed to help protect your company's devices from day one.
+
+- **Flexibility for your environment**. Defender for Business can work with your environment, whether you are using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business is built into Windows, and works with Defender for Endpoint apps for macOS, iOS, and Android devices.
 
 This guide is intended to:
 
