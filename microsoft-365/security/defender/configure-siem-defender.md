@@ -54,8 +54,8 @@ There are two primary models to ingest security information: 
 Microsoft 365 Defender currently supports the following SIEM solution
 integrations: 
 
-- [Ingesting incidents from the incidents REST API]()
-- [Ingesting streaming event data via event hub]()
+- [Ingesting incidents from the incidents REST API](#ingesting-incidents-from-the-incidents-rest-api)
+- [Ingesting streaming event data via event hub](#ingesting-streaming-event-data-via-event-hubs)
 
 ## Ingesting incidents from the incidents REST API
 

@@ -479,6 +479,7 @@
 
 
 ## Reference
+### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
@@ -641,9 +642,7 @@
 
 
 #### [SIEM integration]()
-##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
-##### [Learn about different ways to pull detections](configure-siem.md)
-##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
+##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
 ##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
