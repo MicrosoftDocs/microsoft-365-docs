@@ -47,6 +47,6 @@
       items: 
       - name: Configuration settings
         href: mdb-next-gen-configuration-settings.md
-      - name: Firewall
+      - name: Firewall settings
         href: mdb-firewall.md
 
