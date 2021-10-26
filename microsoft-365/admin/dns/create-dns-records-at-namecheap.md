@@ -91,9 +91,13 @@ To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
