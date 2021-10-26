@@ -48,55 +48,22 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 
 ## Monitored files
 
-### File extensions
-
 Endpoint DLP supports monitoring of these file types. DLP audits the activities for these file types, even if there isn't a policy match. 
 
-- .doc
-- .docx
-- .docm
-- .dot
-- .dotx
-- .dotm
-- .docb
-- .pdf
-- .xls
-- .xlsx
-- .xlt
-- .xlm
-- .xlsm
-- .xltx
-- .xltm
-- .xlsb
-- .xlw
-- .csv
-- .tsv
-- .ppt
-- .pptx
-- .pos
-- .pps
-- .pptm
-- .potx
-- .potm
-- .ppam
-- .ppsx
-- .zip
-- .zipx
-- .rar
-- 7z
-- .tar
-- .gz
-- .pst
-- .ost
-- .msg  
-- .txt
-- .rtf
-- .c
-- .class
-- .cpp
-- .cs
-- .h
-- .java
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+- .csv files
+- .tsv files
+- .txt files
+- .rtf files
+- .c files
+- .class files
+- .cpp files
+- .cs files
+- .h files
+- .java files
  
 If you only want monitoring data from policy matches, you can turn off the **Always audit file activity for devices** in the endpoint DLP global settings.
 
