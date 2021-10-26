@@ -20,8 +20,6 @@
           href: microsoft-365-security-mdo-redirection.md   
       - name: Microsoft 365 Defender integration with Azure Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
-      - name: Troubleshoot issues
-        href: ./troubleshoot.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md
     - name: Plan
@@ -322,10 +320,6 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: Train your security staff
-      items: 
-       - name: Training resources
-         href: microsoft-365-defender-train-employees.md
     - name: Reference
       items: 
         - name: Permissions & settings
@@ -399,6 +393,8 @@
                       href: api-get-incident.md
         - name: Preview features
           href: preview.md
+        - name: Troubleshoot issues
+          href: ./troubleshoot.md
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
