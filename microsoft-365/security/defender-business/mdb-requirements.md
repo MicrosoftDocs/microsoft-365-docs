@@ -30,8 +30,8 @@ The following table lists the basic requirements to configure and use Microsoft 
 | Subscription and licensing | - Microsoft Defender for Business (currently in preview!)<br/>- Azure Active Directory (Azure AD) (included with any Microsoft 365 subscription, including Microsoft Defender for Business)  |
 | Permissions  | Permissions are assigned through [roles in Azure AD](mdb-roles-permissions.md) <br/>- To manage your subscription, you must have the Billing Admin or Global Admin role assigned<br/>- To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Admin, or Global Admin role |
 | User accounts | - User accounts created <br/>- Microsoft Defender for Business licenses assigned <br/> (See [Add users and assign licenses](../../admin/add-users/add-users.md)) |
-| Browser requirements | At least one of the following browsers: <br/>- Microsoft Edge <br/>- Internet Explorer version 11 <br/>- Google Chrome |
-| Operating system | To manage devices in Microsoft Defender for Business, those devices must be running Windows 10, version 1709 or later. <br/><br/>If you are already using Microsoft Intune (included in Microsoft Endpoint Manager) to manage devices, those devices must be running any of the following operating systems: <br/>- Windows 10, version 1709 or later<br/>- macOS<br/>- iOS<br/>- Android OS |
+| Browser requirements | At least one of the following browsers: <br/>- Microsoft Edge <br/>- Google Chrome |
+| Operating system | To manage devices in Microsoft Defender for Business, those devices must be running Windows 10, version 1709 or later. <br/><br/>If you are already using Microsoft Intune (included in Microsoft Endpoint Manager) to manage your devices, those devices must be running any of the following operating systems: <br/>- Windows 10, version 1709 or later<br/>- macOS<br/>- iOS<br/>- Android OS |
 
 ## Next steps
 
