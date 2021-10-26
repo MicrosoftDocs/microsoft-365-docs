@@ -2,8 +2,6 @@
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -51,18 +49,27 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   Devices must be running one of the following versions of Windows
 
-  - **Windows 10**
+  - **Windows 10 & 11**
     - [Version 1909](/windows/whats-new/whats-new-windows-10-version-1909) or later
     - [Version 1903](/windows/whats-new/whats-new-windows-10-version-1903) with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)
     - [Version 1809 (RS 5)](/windows/whats-new/whats-new-windows-10-version-1809) with [with KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **Windows Server 2019 - Only applicable for Public preview**
+  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
+  
+  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
+    
+  - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+  
+  - **Windows Server 2016** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
+
+  - **Windows Server 2019**
     - Version 1903 or (with [KB4515384](https://support.microsoft.com/help/4515384/windows-10-update-kb4515384)) later
     - Version 1809 (with [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818))
     
   - **Windows Server 2022**
+
        
 
 - **Enable live response from the advanced settings page**.
@@ -86,6 +93,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   ![Image of error message.](images/live-response-error.png)
 
 - **Enable live response unsigned script execution** (optional).
+
+  >[!IMPORTANT]
+  >Signature verification only applies for PowerShell scripts. 
 
   > [!WARNING]
   > Allowing the use of unsigned scripts may increase your exposure to threats.
@@ -143,28 +153,26 @@ The following commands are available for user roles that are granted the ability
 <br>
 
 ****
-
-|Command|Description|
-|---|---|
-|`cd`|Changes the current directory.|
-|`cls`|Clears the console screen.|
-|`connect`|Initiates a live response session to the device.|
-|`connections`|Shows all the active connections.|
-|`dir`|Shows a list of files and subdirectories in a directory.|
-|`drivers`|Shows all drivers installed on the device.|
-|`fg <command ID>`|Place the specified job in the foreground in the foreground, making it the current job. <p> **NOTE**: fg takes a "command ID" available from jobs, not a PID|
-|`fileinfo`|Get information about a file.|
-|`findfile`|Locates files by a given name on the device.|
-|`getfile <file_path>`|Downloads a file.|
-|`help`|Provides help information for live response commands.|
-|`jobs`|Shows currently running jobs, their ID and status.|
-|`persistence`|Shows all known persistence methods on the device.|
-|`processes`|Shows all processes running on the device.|
-|`registry`|Shows registry values.|
-|`scheduledtasks`|Shows all scheduled tasks on the device.|
-|`services`|Shows all services on the device.|
-|`trace`|Sets the terminal's logging mode to debug.|
-|
+| Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| cd  | Changes the current directory.  | Y  | Y | Y |
+| cls  | Clears the console screen.  | Y  | Y  | Y  |
+| connect  | Initiates a live response session to the device.  | Y  | Y  | Y  |
+| connections  | Shows all the active connections.  | Y  | N | N |
+| dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  |Y  |
+| drivers  | Shows all drivers installed on the device.  | Y |  N | N  |
+| fg `<command ID>`  | Place the specified job in the foreground in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
+| fileinfo  | Get information about a file.  |Y  | Y  | Y  |
+| findfile  | Locates files by a given name on the device.  | Y | Y  | Y  |
+| getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
+| help  | Provides help information for live response commands.  |Y  | Y | Y  |
+| jobs  | Shows currently running jobs, their ID and status.  | Y  | Y | Y |
+| persistence  | Shows all known persistence methods on the device.  | Y  | N | N |
+| processes  | Shows all processes running on the device.  | Y  | Y  | Y  |
+| registry  | Shows registry values.  | Y  | N | N |
+| scheduledtasks  | Shows all scheduled tasks on the device.  | Y | N | N |
+| services  | Shows all services on the device.  | Y  | N | N |
+| trace  | Sets the terminal's logging mode to debug.  | Y  | Y  |Y  |
 
 ### Advanced commands
 
@@ -174,15 +182,19 @@ The following commands are available for user roles that are granted the ability
 
 ****
 
-|Command|Description|
-|---|---|
-|`analyze`|Analyses the entity with various incrimination engines to reach a verdict.|
-|`run`|Runs a PowerShell script from the library on the device.|
-|`library`|Lists files that were uploaded to the live response library.|
-|`putfile`|Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.|
-|`remediate`|Remediates an entity on the device. The remediation action will vary depending on the entity type: <ul><li>File: delete</li><li>Process: stop, delete image file</li><li>Service: stop, delete image file</li><li>Registry entry: delete</li><li>Scheduled task: remove</li><li>Startup folder item: delete file</li></ul> <p> **NOTE**: This command has a prerequisite command. You can use the `-auto` command in conjunction with `remediate` to automatically run the prerequisite command.
-|`undo`|Restores an entity that was remediated.|
-|
+| Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
+|---|---|---|---|---|
+| analyze  | Analyses the entity with various incrimination engines to reach a verdict.  | Y  | N  | N  |
+| collect  | Collects forensics package from machine  | N  | Y  | Y  |
+| isolate  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service  | N  | Y  | N  |
+| release  | Releases a device from network isolation  | N  | Y  | N  |
+| run  | Runs a PowerShell script from the library on the device.  | Y  | Y  | Y  |
+| library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
+| putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
+| remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
+| scan  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service  | N  | Y  | Y  |
+| undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
+
 
 ## Use live response commands
 
@@ -252,13 +264,13 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 > [!WARNING]
 > Using this shortcut will not stop the command in the agent side. It will only cancel the command in the portal. So, changing operations such as "remediate" may continue, while the command is canceled.
 
-## Run a PowerShell script
+## Run a script
 
-Before you can run a PowerShell script, you must first upload it to the library.
+Before you can run a PowerShell/Bash scripts, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
-If you plan to use an unsigned script in the session, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
+If you plan to use an unsigned PowerShell script in the session, you'll need to enable the setting in the [Advanced features settings](advanced-features.md) page.
 
 > [!WARNING]
 > Allowing the use of unsigned scripts may increase your exposure to threats.
