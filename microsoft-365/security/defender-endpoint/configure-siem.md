@@ -37,17 +37,17 @@ Microsoft Defender for Endpoint supports security information and event manageme
 
 For more information, see:
 
-- [Microsoft 365 Defender APIs license and terms of use](../defender/api-terms.md)
-- [Access the Microsoft 365 Defender APIs](../defender/api-access.md)
-- [Hello World example](../defender/api-hello-world.md)
-- [Get access with application context](../defender/api-create-app-web.md)
+- [Microsoft Defender for Endpoint APIs license and terms of use](api-terms-of-use.md) 
+- [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
+- [Hello World example (describes how to register an application in Azure Active Directory)](api-hello-world.md)
+- [Get access with application context](exposed-apis-create-app-webapp.md)
 
 
 Microsoft Defender for Endpoint currently supports the following SIEM solution
 integrations: 
 
-- [Ingesting incidents from the Microsoft Defender for Endpoint alerts REST API]()
-- [Ingesting streaming event data via event hub]()
+- [Ingesting incidents from the Microsoft Defender for Endpoint alerts REST API](#ingesting-incidents-from-the-microsoft-defender-for-endpoint-alerts-rest-api)
+- [Ingesting streaming event data via event hub](#ingesting-microsoft-365-defender-streaming-event-data-via-event-hubs)
 
 ## Ingesting incidents from the Microsoft Defender for Endpoint alerts REST API
 

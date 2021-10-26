@@ -38,10 +38,10 @@ Microsoft 365 Defender supports security information and event management (SIEM)
 
 For more information, see:
 
-- [Microsoft 365 Defender APIs license and terms of use](../defender/api-terms.md)
-- [Access the Microsoft 365 Defender APIs](../defender/api-access.md)
-- [Hello World example](../defender/api-hello-world.md)
-- [Get access with application context](../defender/api-create-app-web.md)
+- [Microsoft 365 Defender APIs license and terms of use](api-terms.md)
+- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Hello World example](api-hello-world.md)
+- [Get access with application context](api-create-app-web.md)
 
 There are two primary models to ingest security information: 
 
