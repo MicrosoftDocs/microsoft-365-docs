@@ -25,6 +25,7 @@ ms.technology: mde
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
 Microsoft Defender for Endpoint's Security Configuration Management flow was built in order to connect security and IT teams with integrated experiences and eliminate the need to use additional tools to manage endpoint security settings. When the setting is enabled in a tenant, a newly onboarded device automatically and seamlessly registers to Azure Active Directory, so that security teams can manage Defender stack settings of all enterprise devices from Microsoft Endpoint Manager.
 
