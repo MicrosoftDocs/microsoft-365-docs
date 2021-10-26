@@ -27,20 +27,13 @@ ms.technology: m365d
 # Investigate and respond with Microsoft 365 Defender overview
 
 
-The point of M365D is to detect
+Here are the main investigate and respond tasks for Microsoft 365 Defender:
 
-
-Working an incident
-
-Using M365D to automatically remediate
-
-Search for known threats in your data
-
-Get out ahead of known threats
-
-Get help
-
-
+- Working an incident
+- Using M365D to automatically remediate
+- Search for known threats in your data
+- Get out ahead of known threats
+- Get help
 
 ## Incident response
 
@@ -94,11 +87,11 @@ You can use the same threat hunting queries to build custom detection rules. The
 
 Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams to be as efficient as possible while facing emerging threats, including:
 
-Active threat actors and their campaigns
-Popular and new attack techniques
-Critical vulnerabilities
-Common attack surfaces
-Prevalent malware
+- Active threat actors and their campaigns
+- Popular and new attack techniques
+- Critical vulnerabilities
+- Common attack surfaces
+- Prevalent malware
 
 ## Collaboration with Microsoft Threat Experts
 
