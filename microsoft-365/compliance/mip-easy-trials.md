@@ -34,7 +34,7 @@ Existing customers: If you've had Microsoft 365 Compliance for more than 30 days
 |:-----|:-----|
 |Sensitivity labels and a sensitivity label policy | Published sensitivity labels |
 |Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
-|Service-side auto-labeling | At least one auto-label policy that's turned on|
+|Service-side auto-labeling | At least one auto-labeling policy that's turned on|
 |Teams DLP | At least one DLP policy for Teams|
 |Endpoint DLP | At least one DLP policy for Endpoint|
 
@@ -93,7 +93,7 @@ The default service-side auto-labeling has the following configuration:
 
 - If there are 1-9 instances of credit card numbers found in a document, apply the sensitivity label **Confidential** \ **Unrestricted (no protection)** 
 
-- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
+- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential**\ **Unrestricted (no protection)** 
 
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for your auto-labeling policy.
