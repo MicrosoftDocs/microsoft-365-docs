@@ -31,6 +31,8 @@ Microsoft Defender for Business is a new endpoint security solution solution tha
 
 - **Flexibility for your environment**. Defender for Business can work with your environment, whether you are using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business is built into Windows, and works with Defender for Endpoint apps for macOS, iOS, and Android devices.
 
+- Integration with Microsoft 365 Lighthouse. If you're using Microsoft 365 Lighthouse, 
+
 This guide is intended to:
 
 - Provide you with an overview of Microsoft Defender for Business so you know what’s included and how it works.
