@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-When it comes to onboarding devices and configuring security settings for your company’s devices, you can use one of two experiences: 
+When it comes to onboarding devices and configuring security settings for your company’s devices, you can choose from several experiences: 
 - The simplified configuration process in Microsoft Defender for Business (recommended); or 
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune. 
 
