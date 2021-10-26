@@ -28,11 +28,11 @@ ms.technology: m365d
 
 Here are the main investigate and respond tasks for Microsoft 365 Defender:
 
-- Responding to incidents
-- Reviewing and approving automatic remediation actions
-- Searching for known threats in your data
-- Understanding the latest cyber-attacks
-- Getting help
+- [Responding to incidents](#incident-response)
+- [Reviewing and approving automatic remediation actions](#automated-investigation-and-remediation)
+- [Searching for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
+- [Understanding the latest cyber-attacks](#get-ahead-of-emerging-threats-with-threat-analytics)
+- [Getting help](#collaborate-with-microsoft-experts)
 
 ## Incident response
 
@@ -104,4 +104,4 @@ For more information, see [Threat analytics in Microsoft 365 Defender](threat-an
 
 Microsoft Threat Experts - Targeted Attack Notifications is a managed threat hunting service. Once you apply and are accepted, you'll receive targeted attack notifications from Microsoft threat experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Threat Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
-For more information, see [Microsoft Threat Experts in Microsoft 365 overview](microsoft-threat-experts.md).
+For more information, see [Microsoft Threat Experts in Microsoft 365 overview](/security/mtp/microsoft-threat-experts.md).
