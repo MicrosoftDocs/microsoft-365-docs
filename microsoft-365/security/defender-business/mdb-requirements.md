@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/19/2021
+ms.date: 10/26/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -32,7 +32,6 @@ The following table lists the basic requirements to configure and use Microsoft 
 | User accounts | - User accounts created <br/>- Microsoft Defender for Business licenses assigned <br/> (See [Add users and assign licenses](../../admin/add-users/add-users.md)) |
 | Browser requirements | At least one of the following browsers: <br/>- Microsoft Edge <br/>- Internet Explorer version 11 <br/>- Google Chrome |
 | Operating system | Devices must be running Windows 10, version 1709 or later |
-| Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 ## Next steps
 
