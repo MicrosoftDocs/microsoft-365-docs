@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 10/19/2021
+ms.date: 10/25/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -303,17 +303,17 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 ### Validate the exclusion list by using MpCmdRun
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md), use the following command:
 
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
+cd 4.18.2110-3.0 (Where 4.18.2110-3.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-3.0 (released in October 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 

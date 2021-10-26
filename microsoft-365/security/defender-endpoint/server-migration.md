@@ -126,7 +126,8 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 6. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 
 > [!TIP]
-> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag which will ensure Defender goes into passive mode before onboarding and does not interfere with a non-Microsoft antimalware solution. Then to ensure Defender Antivirus remains in passive mode after onboarding to support EDR capabilities such as EDR Block make sure to set the "ForceDefenderPassiveMode" registry key. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+> For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
 *This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
 
