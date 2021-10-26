@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
+ms.technology: mde
 ---
 
 # Integrate your SIEM tools with Microsoft Defender for Endpoint

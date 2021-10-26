@@ -30,9 +30,9 @@ ms.technology: mde
 
 > [!NOTE]
 >
-> - [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
-> - [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
-> -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+> - [Microsoft Defender for Endpoint Alert](../defender-endpoint/alerts.md) is composed from one or more detections.
+> - [Microsoft Defender for Endpoint Detection](../defender-endpoint/api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
+> -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](../defender-endpoint/alerts.md) and [List alerts](../defender-endpoint/get-alerts.md).
 
 Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
 
@@ -85,7 +85,7 @@ For more information on the Microsoft 365 Defender Add-on for Splunk, see [splun
 The new SmartConnector for Microsoft 365 Defender ingests incidents into ArcSight and maps these onto its Common Event
 Framework (CEF). 
 
-For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documenation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documention](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
 The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
   

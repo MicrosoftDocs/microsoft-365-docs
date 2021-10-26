@@ -352,7 +352,6 @@
               href: api-overview.md
             - name: Supported Microsoft 365 Defender APIs
               href: api-supported.md
-            
             - name: Get started with Microsoft 365 Defender APIs 
               items: 
                 - name: Microsoft 365 Defender API license and terms of use
@@ -397,9 +396,10 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
-          - name: Integrate your SIEM tools with Microsoft 365 Defender
-            href: configure-siem-defender.md
-
+            - name: Integrate your SIEM tools with Microsoft 365 Defender
+              href: configure-siem-defender.md
+            - name: Understand threat intelligence concepts
+              href: ../defender-endpoint/threat-indicator-concepts.md 
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
