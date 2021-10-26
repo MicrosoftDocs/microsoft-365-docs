@@ -17,9 +17,7 @@ f1.keywords: NOCSH
 
 # Microsoft 365 solutions for the healthcare industry
 
-Microsoft provides a comprehensive platform for the healthcare industry, Microsoft Cloud for Healthcare, which includes components from  Microsoft 365 and Dynamics 365, in addition to Azure.
-
-Modernization and digital transformation of healthcare facilities is all the more important during the current COVID-19 global pandemic.
+Microsoft provides many capabilities to help healthcare organizations serve patients, streamline administration, and facilitate collaboration while meeting regulatory obligations. Microsoft also provides a comprehensive platform for the healthcare industry, Microsoft Cloud for Healthcare, which includes components from  Microsoft 365 and Dynamics 365, in addition to Azure. Modernization and digital transformation of healthcare facilities is all the more important during the current COVID-19 global pandemic.
 
 <br>
 
