@@ -41,14 +41,14 @@ Viva Learning makes it easy to incorporate learning into your day. When you open
 
 ### Managers
 
-Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning you’ve recommended.
+Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning that you’ve recommended.
 
 ## Admin roles
 
-Viva Learning is by default available in Teams with default seeded content. To set up learning content sources in Viva Leaning and manage individual licensing, you'll need these permissions:
+Viva Learning is by default available in Microsoft Teams with some content already available. To set up learning content sources in Viva Learning and manage individual licensing, you'll need these permissions:
 
 - Microsoft Teams admin
-- Microsoft 365 global administrator or SharePoint administrator
+- Microsoft 365 global admin or SharePoint admin
 - Knowledge admin
 
 ### Knowledge admin
@@ -57,9 +57,9 @@ The knowledge admin is a new Azure Active Directory (Azure AD) role in the Micro
 
 The knowledge admin should be moderately technical and have existing SharePoint administrator credentials. The knowledge admin should be well versed in the education, learning, training, or employee experience part of the organization.
 
-#### Learning content sources
+## Learning content sources
 
-Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. Refer to “Manage Learning Content sources” for more details on setup.
+Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. For more information about how to set up content sources, see [Manage content sources for Viva Learning](content-sources-365-admin-center.md).
 
 ## Get started
 
