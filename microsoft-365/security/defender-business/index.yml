@@ -29,7 +29,7 @@ landingContent:
             url: mdb-overview.md
           - text: Requirements for Defender for Business
             url: mdb-requirements.md
-          - text: Compare plans for small and midsized businesses
+          - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365bp.md
           - text: How to get Defender for Business
             url: get-defender-business.md

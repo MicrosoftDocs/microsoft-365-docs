@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is a security solution designed to help protect the devices and data your business uses. You can use Microsoft Defender for Business to configure threat protection capabilities, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
+Microsoft Defender for Business is a new endpoint security solution solution that was designed especially for the small and medium-sized business (up to 300 employees). Microsoft Defender for Business brings the power of enterprise endpoint security in an easy-to-use and cost-effective solution. With Microsoft Defender for Business, you can help protect the devices and data your business uses. You can use Microsoft Defender for Business to configure threat protection capabilities, monitor and respond to security issues, investigate and respond to threats, and view reports to see how your security solution is working.
 
 This guide is intended to:
 
