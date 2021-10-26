@@ -21,29 +21,15 @@ description: "Get started with app governance capabilities to govern your apps."
 
 [![Sign up for the free trial of app governance](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-To begin using the app governance add-on to Microsoft Cloud App Security, you need to take three steps:
+To get started using the app governance add-on to Microsoft Cloud App Security (MCAS), start by verifying the prerequisites for admin role and licensing requirements. Then you're ready to [sign up for the trial version of app governance](#sign-up-for-app-governance). One last step is to [activate the integration with MCAS](#add-integration-with-mcas).
 
-1. [Verify licensing and administrator prerequisites](#licensing-and-administrator-role-prerequisites).
-1. [Sign up for the app governance trial](#sign-up-for-free-trial-of-app-governance).
-1. [Add MCAS integration](#add-integration-with-mcas).
+## Sign up for app governance
 
+For existing Microsoft 365 customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-## Sign up for free trial of app governance
+If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
 
-For existing Microsoft 365 customers:
-
-1. Navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial).
-1. Complete the steps to add app governance. Sign-up is simple, as shown in the following graphic.
-
-<!--
-:::image type="content" source="../media/manage-app-protection-governance/sign-up-page.png" alt-text="Simple steps to add app governance to your account.":::
--->
-
-If you are not already a Microsoft 365 customer, you can sign up for a free trial:
-
-1. At the top of this page, select the **Free Account** button.
-1. Under **Try Microsoft 365 for business** select **Try 1 month free**.
-1. Complete the steps for the sign-up.
+To purchase a subscription of app governance, please reach out to your sales account team.
 
 ## Add integration with MCAS
 
@@ -126,7 +112,7 @@ If you did not participate in private preview and would like to cancel your tria
 1. In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">**Your products**</a>.
 1. Navigate to the app governance trial, click the three dots, and select **Cancel subscription**.
 1. In the resulting fly-out pane, provide a reason for cancellation, any additional feedback, and select **Cancel subscription**.
-1. Select **Cancel subscription** in the resulting pop up screen. Your trial is cancelled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
+1. Select **Cancel subscription** in the resulting pop up screen. Your trial is canceled, you will lose access to app governance, and your app governance data will be deleted (log data that is used to create the app governance insights and detections - no emails or other files will be affected).
 
 ## Known issues for the public preview
 
