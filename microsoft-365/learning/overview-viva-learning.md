@@ -59,7 +59,7 @@ The knowledge admin should be moderately technical and have existing SharePoint 
 
 #### Learning content sources
 
-Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. Refer to “Manage Learning Content sources” for more details on setup. 
+Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. Refer to “Manage Learning Content sources” for more details on setup.
 
 ## Get started
 
