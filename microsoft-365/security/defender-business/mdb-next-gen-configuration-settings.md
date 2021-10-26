@@ -54,7 +54,7 @@ The following table lists your settings and options:<br/><br/>
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
 
-- [Compare plans for small and midsized businesses](compare-mdb-m365bp.md)
+- [Compare plans for small and medium-sized businesses](compare-mdb-m365bp.md)
 
 - [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md) 
 

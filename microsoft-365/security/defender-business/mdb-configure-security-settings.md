@@ -33,7 +33,7 @@ After you have onboarded your company's devices to Microsoft Defender for Busine
 
 ## Use the default security settings and policies in Defender for Business
 
-Defender for Business was designed for the busy small or midsized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one.
+Defender for Business was designed for the busy small or medium-sized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one.
 
 If your company is not already using MEM, your devices are protected by the default policies as soon as they are onboarded. See 
 [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md).
