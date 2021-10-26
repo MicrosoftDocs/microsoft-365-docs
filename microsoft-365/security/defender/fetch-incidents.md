@@ -1,5 +1,5 @@
 ---
-title: Fetch Microsoft 365 Defender incidents from a MSSP customer tenant
+title: Fetch Microsoft 365 Defender incidents 
 description: Learn how to fetch Microsoft 365 Defender incidents from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.technology:  m365d
 ms.custom: api
 ---
 
-# Fetch Microsoft 365 Defender incidents from a MSSP customer tenant
+# Fetch Microsoft 365 Defender incidents 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
