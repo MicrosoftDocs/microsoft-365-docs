@@ -59,33 +59,33 @@ When you don't have sensitivity labels that are published, we'll create the foll
 |Highly Confidential \ All Employees | Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content. |
 |Highly Confidential \ Specified People | Highly Confidential data that requires protection and that can only be viewed by specified people, with limited rights. |
 
+If you are interested in guidance for defining a classification taxonomy, download the white paper, "Data Classification & Sensitivity Label Taxonomy" from the [Service Trust Portal](https://aka.ms/DataClassificationWhitepaper).
+
 ## Default sensitivity label policy
 
-The default label policy ensures that your labels are published for information workers to start labeling their documents and emails with sensitivity labels.
+The default sensitivity label policy makes the default labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
 
-Default label policy has the following conditions: 
+- Publish the default labels to all users in your tenant
+- Default label of General for documents and emails
+- Require a justification for changing a label
 
-Publish Label Schema 
-
-Justification upon down grade 
-
-General Label as Default for Emails and Documents 
+For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
 
 ## Client-side auto-labeling 
 
-Client-side auto-labeling automatically suggest for information workers to label their documents with either Confidential Unrestricted (no protection) or Highly Confidential Unrestricted (no protection) when we detect credit card numbers in the documents they’re working with. This is just a suggestion and not a requirement but serves as a good first step for highlighting concerning documents and introducing information workers to the practice of labeling documents. 
+The default client-side auto-labeling configuration automatically recommends users apply the sensitivity label **Confidential** \ **Unrestricted (no protection)** or **Highly Confidential** \ **Unrestricted (no protection)**  when we detect credit card numbers in documents or emails they’re working with. As a recommendation rather than automatically applied, this configuration serves as a good first step for highlighting concerning content and introduces users to the practice of labeling their documents and emails. 
 
-Client-side auto-labeling only works for files in use. 
+Client-side auto-labeling only works for documents and emails in use by the Office apps Word, Excel, PowerPoint, and Outlook. 
 
-Default Client-side auto-labeling has the following conditions: 
+The default client-side auto-labeling has the following configuration: 
 
-If there are 1-9 instances of credit card numbers found in a document, recommend end user to label the document as Confidential Unrestricted (no protection) 
+- If there are 1-9 instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Confidential** \ **Unrestricted (no protection)** 
 
-If there are >= 10 instances of credit card numbers found in a document, recommend end user to label the document as Highly Confidential Unrestricted (no protection) 
+- If there are 10 or more instances of credit card numbers found in a document or email, recommend the user applies the sensitivity label **Highly Confidential **\ **Unrestricted (no protection)** 
 
 ## Service-side auto-labeling 
 
-Server-side auto-labeling helps label documents at rest, in transit, and in use. Our default server-side auto-labeling policy creates a policy in simulation mode, meaning it will not actually label your documents until you turn on the policy mode from simulation mode. Simulation mode allows you to preview what documents would get labeled in our policy to provide you with confidence in our labeling before you deploy to your tenant for actual labeling. 
+Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy for documents at rest in simulation mode. In this mode, documents aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what documents would get labeled in our policy to provide you with confidence in our labeling before you deploy to your tenant for actual labeling. 
 
 Once turned on from simulation mode our server-side auto-labeling policy will automatically label documents with credit with either Confidential Unrestricted (no protection) or Highly Confidential Unrestricted (no protection) when we detect credit card numbers in the documents. 
 
