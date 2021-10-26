@@ -40,7 +40,7 @@ After you add these records at Wix, your domain will be set up to work with Micr
 Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later if you like. 
 
 > [!NOTE]
 > WIX does not support DNS entries for subdomains.
@@ -62,7 +62,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    
 5. Select**Save**. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+   Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified. 
 
@@ -70,9 +70,13 @@ To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -97,7 +101,7 @@ To verify the record in Microsoft 365:
    
 1. If there are any other MX records listed, delete each of them. 
     
-6. Select **Save**.
+1. Select **Save**.
     
 ## Add the CNAME record required for Microsoft
 
@@ -107,7 +111,7 @@ To verify the record in Microsoft 365:
 
    :::image type="content" source="../../media/dns-wix/wix-domains-1.png" alt-text="Select Manage DNS Records from the drop-down list.":::
 
-3. Select **+ Add another** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record. 
+3. Select **+ Add Record** in the **CNAME (Aliases)** row of the DNS editor for the CNAME record. 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table:
     
@@ -117,7 +121,7 @@ To verify the record in Microsoft 365:
    
 5. Select **Save**. 
     
-6. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+   Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 ## Add a TXT record for SPF to help prevent email spam
 
@@ -160,7 +164,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
  
 1. In the boxes for the new record, type or copy and paste the values from the first row in the table:
     
-   | **Service** | **Protocol** | **Name** | **Weight** | **Port** | **Target** | **Priority** | **TTL** |
+   | **Service** | **Protocol** | **Host name** | **Weight** | **Port** | **Target** | **Priority** | **TTL** |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
    |sip  |tls  |Automatically populated |1  |443   |sipdir.online.lync.com |100 |1 Hour |
    |sipfed|tcp |Automatically populated|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
