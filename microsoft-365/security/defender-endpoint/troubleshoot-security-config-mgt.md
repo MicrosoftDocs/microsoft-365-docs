@@ -201,3 +201,6 @@ IIF(
 ```
 
 7.  Select **Save** to save the new rule.
+
+## Related topic
+- [Onbaord Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
