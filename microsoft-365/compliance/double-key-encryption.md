@@ -566,7 +566,7 @@ If you want, once you're finished setting up DKE, you can migrate content that y
 
 If you don't migrate content, your HYOK protected content will remain unaffected.
 
-## Other Deployment Options
+## Other deployment options
 
 We realize that for some customers in highly regulated industries, this standard reference implementation using software based keys may not be sufficient to meet their enhanced compliance obligations and needs.
 We have partnered with various third-party hardware security module (HSM) vendors to bring support for enhanced key management options to the DKE service, including:
