@@ -660,6 +660,13 @@
 ##### [Create and manage device groups]()
 ###### [Using device groups](machine-groups.md)
 ###### [Create and manage device tags](machine-tags.md)
+
+
+
+
+
+
+
 ### [Managed security service provider (MSSP) integration]()
 #### [Configure managed security service provider integration](configure-mssp-support.md)
 #### [Supported managed security service providers](mssp-list.md)
@@ -669,13 +676,9 @@
 #### [Get partner application access](exposed-apis-create-app-partners.md)
 #### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 #### [Managed security service provider opportunity](mssp-support.md)
-
-
-
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
 #### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
-
 ### [Integrations]()
 #### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)

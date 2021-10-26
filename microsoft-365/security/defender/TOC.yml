@@ -397,6 +397,11 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
+        - name: SIEM tool integration
+          items:
+            - name: Integrate your SIEM tools with Microsoft 365 Defender
+              href: ../defender-endpoint/enable-siem-integration.md
+
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
