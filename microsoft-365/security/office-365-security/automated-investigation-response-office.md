@@ -78,7 +78,7 @@ For example, suppose that you are using the **Malware** view in Explorer. Using 
 
 ![Explorer with selected messages.](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Using the **Actions** menu, you can select **Trigger investigation**.
+Using the **Actions** menu, you can select **Trigger investigation**.  The actions of **Investigate sender** and **Investigate recipient** in Explorer and **Trigger investigations** in the User reported Submissionp page.
 
 ![Actions menu for selected messages.](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
