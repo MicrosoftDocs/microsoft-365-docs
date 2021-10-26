@@ -22,6 +22,8 @@
   items: 
     - name: Tenant list overview
       href: m365-lighthouse-tenant-list-overview.md
+    - name: Manage your tenant list
+      href: m365-lighthouse-manage-tenant-list.md
 - name: Manage users within tenants
   items: 
     - name: Users page overview
