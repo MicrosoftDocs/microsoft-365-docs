@@ -22,7 +22,7 @@ The free trial for Microsoft Information Protection from Microsoft 365 Complianc
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
-- Data loss prevention (DLP policies for Teams and endpoints
+- Data loss prevention (DLP) policies for Teams and endpoints
 
 These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
@@ -37,8 +37,6 @@ Existing customers: If you've had Microsoft 365 Compliance for more than 30 days
 |Service-side auto-labeling | At least one auto-label policy that's turned on|
 |Teams DLP | At least one DLP policy for Teams|
 |Endpoint DLP | At least one DLP policy for Endpoint|
-
-
 
 
 ## Default sensitivity labels
