@@ -20,6 +20,9 @@ ms.collection:
 
 # Firewall in Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+
 Microsoft Defender for Business includes firewall capabilities with Windows Defender Firewall. Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter or flow from devices. You can use firewall protection to specify whether to allow or block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your company's internal network, but prevent those connections when the device is on a network with untrusted devices.
 
 ## Default firewall policies and settings in Microsoft Defender for Business

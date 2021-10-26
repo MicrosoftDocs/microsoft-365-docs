@@ -20,6 +20,9 @@ ms.collection:
 
 # Manage firewall policies in Microsoft Defender for Business
 
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+
 You can manage your firewall settings in Microsoft Defender for Business. Your firewall settings are managed through policies that are assigned to devices. Initially, you have a default policy that helps protect your devices from unwanted network traffic. However, you can create our own policies and custom rules to allow specific connections. [Learn more about firewall protection in Microsoft Defender for Business](mdb-firewall.md).
 
 ## View and edit your firewall policies
