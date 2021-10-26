@@ -52,7 +52,7 @@ The following table summarizes the features and capabilities available in Micros
 | [Threat & vulnerability management](#threat-and-vulnerability-management) (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
-| [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Simplified setup experience](#simplified-setup-experience) <br/>- [Role-based access control](#role-based-access-control)<br/>- [Reports](#reporting)  |
+| [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Several setup and configuration options](#setup-and-configuration-options) <br/>- [Role-based access control](#role-based-access-control)<br/>- [Reports](#reporting)  |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. To learn more, see [APIs](#apis). |
 
 The following sections provide more details about what's included in Microsoft Defender for Business.
@@ -181,9 +181,9 @@ To learn more, see [Overview of automated investigations](../defender-endpoint/a
 
 ## Centralized management and reporting
 
-Microsoft Defender for Business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#simplified-setup-experience). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for Business.
+Microsoft Defender for Business enables you to manage your company’s security settings efficiently and effectively. The Microsoft 365 Defender portal provides you with [up-to-date reports](#reporting) and a [simplified setup experience](#setup-and-configuration-options). You can also control who in your company accesses the Microsoft 365 Defender portal with [role-based access control](#role-based-access-control). The next few sections provide more details about your centralized management and reporting features in Microsoft Defender for Business.
 
-### Simplified setup experience
+### Setup and configuration options
 
 When it comes to setting up and configuring Microsoft Defender for Business, you can choose from several options, as listed in the following table: <br/><br/>
 
