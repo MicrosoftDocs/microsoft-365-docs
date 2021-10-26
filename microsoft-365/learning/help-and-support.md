@@ -1,5 +1,5 @@
 ---
-title: Understand terms and conditions
+title: Help and support
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -14,19 +14,16 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 ms.localizationpriority: medium
-description: Understand which terms and conditions apply when you're using Viva Learning.
+description: Get help with Viva Learning.
 ---
 
-# Understand terms and conditions
+# Help and support
 
-Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms.
+You can get help with Viva Learning by filing a support request.
 
-- Microsoft Learn content is subject to terms available [here](/legal/termsofuse) or at a successor location.
+[Learn how to file a support request.](/microsoft-365/business-video/get-help-support)
 
-- Microsoft 365 Trainings content is subject to terms available [here](https://www.microsoft.com/legal/terms-of-use) or at a successor location.
+You can also get help from the [Viva Learning tech community forum](https://techcommunity.microsoft.com/t5/viva-learning/bd-p/VivaLearning).
 
-- LinkedIn Learning content is subject to LinkedIn’s User Agreement (available [here](https://www.linkedin.com/legal/user-agreement) or at a successor location) and Privacy Policy (available [here](https://www.linkedin.com/legal/privacy-policy) or at a successor location).
-
-- Non-Microsoft third-party content and any associated services are subject to the content provider’s privacy and service terms.
-
-- Any content you add to Viva Learning, such as SharePoint-hosted content, is subject to the privacy and service terms associated with that content.
+>[!NOTE]
+>If you need help related to an external content provider, you'll need to contact that provider directly.
