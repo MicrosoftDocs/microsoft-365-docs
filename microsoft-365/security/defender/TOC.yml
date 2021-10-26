@@ -8,7 +8,7 @@
         href: microsoft-365-defender.md
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Microsoft 365 Defender service suite
+      - name: Microsoft 365 Defender services
         items:
         - name: Defender for Endpoint in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
