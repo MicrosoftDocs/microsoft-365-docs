@@ -168,17 +168,11 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 
 5. Click **Authorize application**.
 
-You can now download the relevant configuration file for your SIEM and connect to the Microsoft 365 Defender API. For more information, see, [Pull alerts to your SIEM tools](configure-siem.md).
+You can now download the relevant configuration file for your SIEM and connect to the Microsoft 365 Defender API. For more information, see, [Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md).
 
 - In the ArcSight configuration file / Splunk Authentication Properties file, write your application key manually by setting the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
 
 ## Fetch alerts from MSSP customer's tenant using APIs
 
-For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api.md).
-
-## See also
-
-- [Grant MSSP access to the portal](grant-mssp-access.md)
-- [Access the MSSP customer portal](access-mssp-portal.md)
-- [Configure alert notifications](configure-mssp-notifications.md)
+For information on how to fetch alerts using REST API, see [Pull alerts using REST API](../defender-endpoint/pull-alerts-using-rest-api.md).
