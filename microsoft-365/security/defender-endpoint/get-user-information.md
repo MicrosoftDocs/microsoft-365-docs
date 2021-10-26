@@ -14,6 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.custom: api
 ---
 
 # Get user information API

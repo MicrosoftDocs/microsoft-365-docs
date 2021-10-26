@@ -32,7 +32,7 @@ Microsoft 365 provides three eDiscovery solutions: Content search, Core eDiscove
 
 ![Key capabilities of Microsoft 365 eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
 
-- **Content search**. Use use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
+- **Content search**. Use the Content search tool to search for content across Microsoft 365 data sources and then export the search results to a local computer.
 
 - **Core eDiscovery**. Core eDiscovery builds on the basic search and export functionality of Content search by enabling you to create eDiscovery cases and assign eDiscovery managers to specific cases. eDiscovery managers can only access the cases of which they are members. Core eDiscovery also lets you associate searches and exports with a case and lets you place an eDiscovery hold on content locations relevant to the case.
 

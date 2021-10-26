@@ -2,8 +2,6 @@
 title: Helpful Microsoft Defender for Endpoint resources
 description: Access helpful resources such as links to blogs and other resources related to  Microsoft Defender for Endpoint
 keywords: Microsoft Defender Security Center, product brief, brief, capabilities, licensing
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
