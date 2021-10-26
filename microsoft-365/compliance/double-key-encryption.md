@@ -568,7 +568,7 @@ If you don't migrate content, your HYOK protected content will remain unaffected
 
 ## Other deployment options
 
-We realize that for some customers in highly regulated industries, this standard reference implementation using software based keys may not be sufficient to meet their enhanced compliance obligations and needs.
+We realize that for some customers in highly regulated industries, this standard reference implementation using software-based keys may not be sufficient to meet their enhanced compliance obligations and needs.
 We have partnered with various third-party hardware security module (HSM) vendors to bring support for enhanced key management options to the DKE service, including:
 
  - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.) 
