@@ -20,12 +20,16 @@ ms.collection:
 
 # Compare Microsoft Defender for Business to Microsoft 365 Business Premium
 
-> [!TIP]
-> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
 Microsoft offers a wide variety cloud solutions and services, including several different plans for small and midsized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes device management and threat protection capabilities, along with several other productivity features, like Office apps. You can use this article to see how Microsoft 365 Business Premium compares to Microsoft Defender for Business.
 
-**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business.** Microsoft Defender for Business is a standalone security solution for small and midsized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic, Standard, or Premium), consider adding Microsoft Defender for Business to get additional threat protection capabilities.  
+**You don't have to have Microsoft 365 Business Premium or any other Microsoft 365 subscription to buy and use Microsoft Defender for Business.** Microsoft Defender for Business is a standalone security solution for small and midsized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic, Standard, or Premium), consider adding Microsoft Defender for Business to get additional threat protection capabilities. 
+
+> [!TIP]
+> If your company is a small or midsized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+ 
 
 ## Comparing Microsoft Defender for Business to Microsoft 365 Business Premium
 
