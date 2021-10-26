@@ -62,14 +62,6 @@ The knowledge admin should be moderately technical and have existing SharePoint 
 
 Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. For more information about how to set up content sources, see [Manage content sources for Viva Learning](content-sources-365-admin-center.md).
 
-## Get started
-
-When you’re ready to set up and configure Viva Learning in your Microsoft 365 environment:
-
-- Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-viva-learning.md).
-- Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).
-- Use the SharePoint admin center to [manage and store your own learning content](configure-sharepoint-content-source.md).
-
 ## Supported languages
 
 Viva Learning doesn't currently support right-to-left languages.
@@ -89,3 +81,11 @@ Data stored from Viva Learning includes:
 
 >[!NOTE]
 >Admins can turn storage of diagnostic data on or off.
+
+## Get started
+
+When you’re ready to set up and configure Viva Learning in your Microsoft 365 environment:
+
+- Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-viva-learning.md).
+- Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).
+- Use the SharePoint admin center to [manage and store your own learning content](configure-sharepoint-content-source.md).
