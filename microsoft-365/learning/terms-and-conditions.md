@@ -3,8 +3,8 @@ title: Understand terms and conditions
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: 10/27/2021
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
 ms.service: 
