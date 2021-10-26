@@ -119,3 +119,7 @@ Due to the limited scope of Server core installations, these are currently not s
 
 ### Azure Active Directory onboarding issues
 To troubleshoot Azure Active Directory onboarding issues, see  [Troubleshoot Security Configuration Management Azure Active Directory onboarding issues](troubleshoot-security-config-mgt.md).
+
+
+## Related topic
+- [Troubleshoot  Security Configuration Management Azure Active Directory onboarding issues](troubleshoot-security-config-mgt.md)
