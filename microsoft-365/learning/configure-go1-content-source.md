@@ -19,6 +19,9 @@ description: Learn how to configure Go1 as a learning content source for Microso
 
 # Configure Go1 as a content source for Microsoft Viva Learning
 
+>[!NOTE]
+>This feature is not supported in preview.
+
 This article shows you how to configure Go1 as a third-party learning content source in Viva Learning.
 
 >[!NOTE]
