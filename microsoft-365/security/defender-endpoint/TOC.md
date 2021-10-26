@@ -643,7 +643,6 @@
 #### [SIEM integration]()
 ##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ##### [Learn about different ways to pull detections](configure-siem.md)
-##### [Enable SIEM integration](enable-siem-integration.md)
 ##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
 ##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
