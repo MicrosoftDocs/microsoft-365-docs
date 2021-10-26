@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -110,12 +110,12 @@ Note your distribution and version and identify the closest entry for it under `
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
 > [!NOTE]
-> In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
+> In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (

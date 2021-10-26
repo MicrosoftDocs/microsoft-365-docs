@@ -24,9 +24,6 @@ description: "Learn how to get the Microsoft Teams user activity report and gain
 # Microsoft 365 admin center reports - Microsoft Teams user activity
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams user activity report, you can gain insights into the Microsoft Teams activity in your organization.
-  
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
  
 ## How to get to the Microsoft Teams user activity report
 
@@ -41,7 +38,7 @@ You can get a view into Microsoft Teams user activity by looking at the **Activi
   
 |Item|Description|
 |:-----|:-----|
-|1.  <br/> |The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
+|1.  <br/> |The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
 |3.  <br/> |To ensure data quality, we perform daily data validation checks for the past five days and will be filling any gaps detected. You may notice differences in historical data during the process.  <br/> |
 |4.  <br/> |The **Activity** view shows you the number of Microsoft Teams activities by activity type. The activity types are number of teams chat messages, private chat messages, calls, or meetings.  <br/> |
