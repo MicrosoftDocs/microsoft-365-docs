@@ -1,6 +1,6 @@
 ---
-title: Fetch Microsoft 365 Defender alerts from a MSSP customer tenant
-description: Learn how to fetch Microsoft 365 Defender alerts from a customer tenant
+title: Fetch Microsoft 365 Defender incidents from a MSSP customer tenant
+description: Learn how to fetch Microsoft 365 Defender incidents from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,7 +19,7 @@ ms.technology:  m365d
 ms.custom: api
 ---
 
-# Fetch Microsoft 365 Defender alerts from a MSSP customer tenant
+# Fetch Microsoft 365 Defender incidents from a MSSP customer tenant
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ There are two ways you can fetch alerts:
 - Using the SIEM method
 - Using APIs
 
-## Fetch alerts into your SIEM
+## Fetch incidents into your SIEM
 
-To fetch alerts into your SIEM system, you'll need to take the following steps:
+To fetch incidents into your SIEM system, you'll need to take the following steps:
 
 - Step 1: Create a third-party application
 - Step 2: Get access and refresh tokens from your customer's tenant

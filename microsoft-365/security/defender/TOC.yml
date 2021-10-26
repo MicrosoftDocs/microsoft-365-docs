@@ -396,6 +396,8 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
+            - name: Fetch Microsoft 365 Defender incidents 
+              href: fetch-incidents.md
             - name: SIEM integration
               items:
                - name: Integrate your SIEM tools with Microsoft 365 Defender
