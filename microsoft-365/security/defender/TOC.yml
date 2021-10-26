@@ -400,7 +400,7 @@
         - name: SIEM tool integration
           items:
             - name: Integrate your SIEM tools with Microsoft 365 Defender
-              href: ../defender-endpoint/enable-siem-integration.md
+              href: ../defender-endpoint/configure-siem.md
 
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
