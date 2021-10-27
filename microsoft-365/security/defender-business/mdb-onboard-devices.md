@@ -72,6 +72,8 @@ Several onboarding options are available in Microsoft Defender for Business. The
 
 See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
-## Next step
+## Next steps
 
-Proceed to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
+Proceed to:
+
+- [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
