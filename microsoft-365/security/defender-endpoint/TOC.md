@@ -56,7 +56,7 @@
 #### [Onboard Windows devices and Windows Servers]()
 
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
-##### [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
+##### [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](https://review.docs.microsoft.com/en-us/mem/intune/protect/mde-security-integration?branch=release-mde-integration)
 
 ##### [Onboard Windows devices and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
