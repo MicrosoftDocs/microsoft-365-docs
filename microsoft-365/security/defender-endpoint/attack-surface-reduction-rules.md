@@ -147,8 +147,10 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 >
 > To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
-Intune Name: `Block abuse of exploited vulnerable signed drivers`
+Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
 
+Configuration Manager name: Not yet available
+  
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 <!-- Hide this intro with no subsequent list items
