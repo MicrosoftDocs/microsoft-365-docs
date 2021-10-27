@@ -20,6 +20,9 @@ ROBOTS: NOINDEX
 
 # Configure SAP SuccessFactors as a content source for Microsoft Viva Learning
 
+>[!NOTE]
+>This feature is not supported in preview.
+
 This article shows you how to configure SAP SuccessFactors as a third-party content source for Microsoft Viva Learning. First, you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in the Microsoft 365 admin center.
 
 >[!NOTE]
