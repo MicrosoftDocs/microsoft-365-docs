@@ -18,11 +18,11 @@ description: Learn how to create an extractor in Microsoft SharePoint Syntex.
 # Create an extractor in Microsoft SharePoint Syntex
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 Before or after you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you might want your model not only to identify all *Contract Renewal* documents added to your document library, but also to display the *Service Start date* for each document as a column value in the document library.
 
@@ -97,11 +97,11 @@ For the *Service Start Date* sample, it is more efficient to use the pre-built e
 
 1. In the **Explanation section**, select **New**, and then select **From explanation library**.
 2. From the explanation library, select **Date**. You can view all variations of date that are recognized.
-3. Select **Add**.</br>
+3. Select **Add**.<br/>
 
     ![Explanation library.](../media/content-understanding/explanation-library.png) 
 
-4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.</br>
+4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.<br/>
 
     ![Date.](../media/content-understanding/date-explanation-library.png) 
 
