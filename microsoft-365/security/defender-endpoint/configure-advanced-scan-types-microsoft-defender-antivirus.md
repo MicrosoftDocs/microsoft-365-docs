@@ -22,6 +22,7 @@ ms.topic: how-to
 # Configure Microsoft Defender Antivirus scanning options
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Use Microsoft Intune to configure scanning options
