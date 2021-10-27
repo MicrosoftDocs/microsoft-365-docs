@@ -25,10 +25,11 @@ ms.collection:
 
 Microsoft Defender for Business is designed with the busy small and medium-sized business in mind. For example, if you are already using Microsoft Endpoint Manager, you can choose from automatic or manual onboarding. Or, if you're not already using Endpoint Manager, you can choose from several different onboarding packages and methods to use.
 
-## Are you already using Microsoft Endpoint Manager?
+## Are you already using Microsoft Endpoint Manager or another device management tool?
 
-- If you are already using Microsoft Endpoint Manager, your onboarding process can be streamlined. For example, you can choose between automatic or manual onboarding. 
-- If you are not already using Microsoft Endpoint Manager, you can choose from several options. Your options include using Microsoft Endpoint Manager, a local script, and more. 
+- If you are already using Microsoft Endpoint Manager, you can either continue using Endpoint Manager, or you can switch to the simplified configuration process in Microsoft Defender for Business. If you choose the simplified configuration process, your onboarding process can be streamlined. For example, you can choose between automatic or manual onboarding with Defender for Business. 
+- If you are already using another productivity and device management tool, you can continue using that tool. Or, you can switch to using the simplified configuration process in Defender for Business.
+- If you are not already using Microsoft Endpoint Manager or another device management tool, you can choose from several onboarding options in Defender for Business. Your options include using Microsoft Endpoint Manager, a local script, and more. 
 
 ## Onboard devices in the Microsoft 365 Defender portal
 
