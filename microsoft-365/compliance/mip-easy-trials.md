@@ -46,7 +46,7 @@ To get these preconfigured labels and policies:
     
     If you don't immediately see this option, first select **Show all** from the navigation pane. 
     
-2. If you are eligible for the Microsoft Information Protection free trial, you'll see the following information, where you can activate the default labels and policies:
+2. If you are eligible for the Microsoft Information Protection free trial, you'll see the following information, where you can activate the default labels and policies. For example:
     
     ![Microsoft Information Protection free trial with preconfigured policies.](../media/mip-preconfigured.png)
 
