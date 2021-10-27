@@ -73,11 +73,11 @@ Getting devices onboarding into Microsoft 365 compliance solutions is required i
 
 - For macOS devices that are managed through Intune, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)
 
-- For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview)
+- For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview)
 
 - For macOS devices that are managed through JAMF Pro, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview)
 
-- For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)
+- For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them, see [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)
 
 
 ## Related topics
