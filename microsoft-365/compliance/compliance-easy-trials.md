@@ -48,7 +48,7 @@ You can extend the trial within the last 15 days of the trial period. You are li
 
 Admins can disable the trial at any point by going to the compliance card.
 
-If you decide not to enroll in a feature that is part of the compliance solutions trial, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
+If you decide not to enroll in a feature that is part of the compliance solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
 
 ## Availability
 
@@ -72,17 +72,29 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
     Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. [Learn more about Compliance Manager](compliance-manager.md)
 
-- **Data Loss Prevention**
-
-    To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365. [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
-
 - **eDiscovery**
 
     Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. [Learn more about eDiscovery](ediscovery.md)
 
 - **Information Protection**
 
-    Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels. [Learn more about Information Protection](information-protection.md)
+    Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+    
+    The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and on endpoints. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
+    
+    When the trial ends, you'll receive an email that informs you:
+    
+    - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
+    
+    - You'll be downgraded to a lower license that doesn't support auto-labeling and data loss prevention. Your existing policies will stay turned on unless you turn them off.
+    
+    - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
+    
+    - If you edit DLP policies for Teams and Endpoint after the trial ends, those locations will be removed from the policy.
+    
+    For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
+    
+    For more information about the full range of features for Microsoft Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 - **Insider Risk Management**
 
