@@ -38,6 +38,14 @@ These default configurations help you get up and running quickly with Microsoft 
 |Teams DLP | At least one DLP policy for Teams|
 |Endpoint DLP | At least one DLP policy for devices|
 
+To get these preconfigured labels and policies: 
+
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all** from the navigation pane. 
+    
+2. If you are eligible for the Microsoft Information Protection free trial, you'll see the following information, where you can accept the default labels and policies:
+    ![Microsoft Information Protection free trial with preconfigured policies.](../media/mip-preconfigured.png)
 
 ## Default sensitivity labels
 
