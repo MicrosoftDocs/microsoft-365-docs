@@ -35,7 +35,7 @@ ms.technology: mde
 
 Security Configuration Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
-For more information on Security Configuration Management, see <Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager> (LINK TO BRENT's TOPIC)
+For more information on Security Configuration Management, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 
 > [!NOTE]
@@ -45,7 +45,7 @@ For more information on Security Configuration Management, see <Manage Microsoft
 ## Onboard devices
     
 > [!IMPORTANT]
-> Make sure all Security Configuration Management for Microsoft Defender for Endpoint prerequisites (LINK TO BRENT'S TOPIC, PREREQUISITE SECTION) are met prior to onboarding devices.
+> Make sure all Security Configuration Management for [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) are met prior to onboarding devices.
 
 ### Onboard Windows Server 2012 R2 and Windows Server 2016  
 
