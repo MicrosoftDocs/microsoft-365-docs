@@ -80,7 +80,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
     Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
     
-    The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and devices. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
+    The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and by devices. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
     
     When the trial ends, you'll receive an email that informs you:
     
@@ -90,7 +90,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
     
     - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
     
-    - If you edit DLP policies for Teams and Endpoint after the trial ends, those locations will be removed from the policy.
+    - If you edit policies for Teams DLP and endpoint DLP after the trial ends, those locations will be removed from the policy.
     
     For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
     
