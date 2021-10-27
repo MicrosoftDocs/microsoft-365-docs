@@ -43,7 +43,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - Create the user groups that you are going to assign the configuration updates to.
 <!--- Edge browser v93 and higher installed.-->
 
-## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions is a six phase process.
 
@@ -68,7 +68,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 -->
 ### Create system configuration profiles
 
-1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp)
+1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp).
 
 > [!TIP]
 > You can download the individual configuration files from a single folder or download a single archive file that contains:

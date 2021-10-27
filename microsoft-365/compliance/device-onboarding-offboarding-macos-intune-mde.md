@@ -22,6 +22,10 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
 
+## Get registered
+
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/Ignite2021DLP).
+
 **Applies to:**
 
 - Customers who have MDE deployed to their macOS devices.
@@ -37,7 +41,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 - This supports macOS version Catalina 10.15 and higher
 <!--- Edge browser v93 and higher installed.-->
 
-## Onboard devices into Microsoft 365 Compliance solutions using Microsoft Intune
+## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
 Onboarding a macOS device into Compliance solutions if it already has MDE deployed to it is a three phase process.
 
@@ -60,11 +64,11 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 -->
 ### Create system configuration profiles
 
-1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
+1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp).
 
 2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
-3. Choose: **Create profile** 
+3. Choose: **Create profile**. 
 
 4. Choose:
     1. **Platform = macOS**
@@ -163,16 +167,15 @@ Onboarding a macOS device into Compliance solutions if it already has MDE deploy
 
 ## Offboard macOS devices using Intune
 
+> [!IMPORTANT]
+> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
+
 1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
 2. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 
-1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
+1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 3. Open **Properties** and **Assignments**
 
 4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
-
-> [!IMPORTANT]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-
