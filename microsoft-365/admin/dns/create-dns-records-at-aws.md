@@ -64,7 +64,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
+    (Choose the **Type** and **Routing policy** values from the drop-down lists.) 
     
     > [!TIP]
     > The quotation marks required by the onscreen instructions are supplied automatically. You don't need to type them manually. 
@@ -76,19 +76,21 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    
 1. Select **Create records**.
     
-1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+   Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request a search for the record. When Microsoft finds the correct TXT record, your domain is verified.
 
 To verify the record in Microsoft 365:
   
-1. In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+    
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
 
-2. On the **Domains** page, select the domain that you are verifying. 
-    
-3. On the **Setup** page, select **Start setup**.
-    
-4. On the **Verify domain** page, select **Verify**.
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
+  
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -124,7 +126,7 @@ To verify the record in Microsoft 365:
     
     |**Record name**|**Record type**|**Value**|**TTL (Seconds)**|**Routing policy**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |MX - Mail exchange  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 300  <br/> | Simple routing <br/> |
+    |(Leave this field empty.)  <br/> |MX - Specifies mail servers  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 300  <br/> | Simple routing <br/> |
   
 1. Select **Create records**.
   
@@ -229,8 +231,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     |**Record name**|**Record type**|**Value**|**TTL (Seconds)**|**Routing policy**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls|SRV - Service locator|100 1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**><br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 300 |Simple|
-    |_sipfederationtls._tcp|SRV - Service locator|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.    | 300 |Simple|
+    |_sip._tls|SRV - Application-specific values that id servers|100 1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**><br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 300 |Simple|
+    |_sipfederationtls._tcp|SRV - Application-specific values that id servers|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.    | 300 |Simple|
   
 7. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then again select **Create records**. 
     

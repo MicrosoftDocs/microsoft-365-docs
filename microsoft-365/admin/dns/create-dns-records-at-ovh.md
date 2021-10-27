@@ -66,7 +66,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(leave blank)  <br/> |3600 (seconds)  <br/> |MS=msxxxxxxxx  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
-1. Select **Next**
+1. Select **Next**.
 
 1. Select **Confirm**. 
     
@@ -76,13 +76,17 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified.
  
-To verify the domain in Microsoft 365:
- 
+To verify the record in Microsoft 365:
+  
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -190,7 +194,7 @@ To verify the domain in Microsoft 365:
 1. In the boxes for the new record, type or copy and paste the following values. To assign a TTL value, choose **Custom** from the drop-down list, and then type the value in the text box. 
     
     |**Sub-domain**|**TTL**|**Value**|
-    |:-----|:-----|:-----|:-----|
+    |:-----|:-----|:-----|
     |(leave blank)  <br/> |3600 (seconds)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.           |
    
     ![OVH Add TXT record for SPF.](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
