@@ -56,3 +56,10 @@ If you skipped the email notification step, or if you want to view or edit email
    - If you don't see any items listed on the **Vulnerabilities** tab, you can create a rule for people to be notified whenever a new vulnerability is discovered. To get help with this task, see [Create rules for vulnerability events](../defender-endpoint/configure-vulnerability-email-notifications.md).
 
    - If you do have rules created, select a rule to edit it. You can also delete a rule. 
+
+## Next steps
+
+Proceed to:
+
+- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
