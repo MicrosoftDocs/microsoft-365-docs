@@ -51,11 +51,11 @@ To verify the integration with MCAS is active, look for the app governance polic
 - Microsoft 365 OAuth Phishing Detection
 - Microsoft 365 OAuth App Governance
 
-## Licensing and administrator role prerequisites
+## Prerequisites
 
 1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
-1. Your organization's billing address must be within one of the [supported areas of North America, Europe, or Africa](app-governance-countries.md) in order to activate the free trial.
+1. Your organization's billing address must be in a WW region or in GBR, CAN, JPN, IND, or AUS go-local region in order to activate the free trial.
 
 ### Licensing for app governance
 
