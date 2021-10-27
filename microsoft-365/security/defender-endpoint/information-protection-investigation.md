@@ -2,7 +2,6 @@
 title: Use sensitivity labels to prioritize incident response
 description: Learn how to use sensitivity labels to prioritize and investigate incidents
 keywords: information, protection, data, loss, prevention,labels, dlp, incident, investigate, investigation
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,7 +35,7 @@ Defender for Endpoint helps to make the prioritization of security incidents muc
 Learn how to use data sensitivity labels to prioritize incident investigation.
 
 > [!NOTE]
-> Labels are detected for Windows 10, version 1809 or later.
+> Labels are detected for Windows 10, version 1809 or later, and Windows 11.
 
 1. In Microsoft 365 Defender portal, select **Incidents & alerts** \> **Incidents**.
 
