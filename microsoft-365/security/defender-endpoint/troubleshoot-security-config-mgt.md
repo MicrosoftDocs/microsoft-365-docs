@@ -53,11 +53,15 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 >Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in Azure Active Directory Connect]().
 
 >[!NOTE]
->To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:
+>To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:<br>
+> 
+>- Azure Active Directory Join (AADJ) 
+>- Hybrid Azure Active Directory Join (HAADJ) 
+>
 >|      Starting Device    State     |      New Device State     |
 >|---|---|
 >|     Already AADJ or HAADJ    |     Remains as is    |
->|     Not AADJ or HAADJ + Domain joined    |     Device is HAADJ'd    |
+>|     Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined    |     Device is HAADJ'd    |
 >|     Not AADJ or HAADJ + Not domain joined    |     Device is AADJ’d    |
 
 
