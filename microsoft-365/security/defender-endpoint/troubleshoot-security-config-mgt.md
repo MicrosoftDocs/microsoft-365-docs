@@ -73,7 +73,7 @@ The widget's bar chart includes a breakdown per OS, and by scrolling over the "M
 
 ![Image of device security management](images/device-security-mgt.png)
 
-To list of all devices that are failing the onboarding process, select "MDE-Error". In the list, by selecting a specific device, you will see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
+To see a list of all devices that have failed the onboarding process, select **MDE-Error**. In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
 
 ![Image of device inventory with machine selected](images/device-inventory-security-config.png)
