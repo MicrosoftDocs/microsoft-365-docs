@@ -21,6 +21,8 @@ description: Learn how to use shared channels with people outside your organizat
 
 # Collaborate with external participants in a channel
 
+**Content coming soon. Waiting for XTAP UI**
+
 ## Enable shared channels
 
 ## Create an organizational relationship
