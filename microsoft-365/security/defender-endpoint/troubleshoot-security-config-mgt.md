@@ -23,18 +23,20 @@ ms.technology: mde
 
 **Applies to:**
 
-- Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager (<ADD LINK TO BRENT'S TOPIC>)
+- [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Security Configuration Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
-For more information on Security Configuration Management, see <Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager> (LINK TO BRENT's TOPIC).
+For more information on Security Configuration Management, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+
 For Security Configuration Management onboarding instructions, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
-Userless and frictionless, this end-to-end onboarding flow can sometimes run into issues. Within the Microsoft Defender for Endpoint platform, security administrators can view and troubleshoot these errors.
+This end-to-end onboarding is designed to be frictionless and doesn't require user input. However, if you encounter issues during onboarding, you can view and troubleshoot errors within the Microsoft Defender for Endpoint platform.
+
 
 >[!NOTE]
-> If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met (<ADD LINK TO BRENT'S TOPIC>) and make sure onboarding instructions are followed, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md).
+> If you are having issues with the onboarding flow for new devices, review the [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) and make sure the onboarding instructions are followed. For more information, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md).
 
 
 ## Registering domain joined computers with Azure Active Directory  
