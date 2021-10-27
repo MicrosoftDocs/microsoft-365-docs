@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business.
+Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
 ## The setup and configuration process at a glance
 
