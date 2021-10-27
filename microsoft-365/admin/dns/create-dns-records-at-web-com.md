@@ -42,7 +42,7 @@ After you add these records at web.com, your domain will be set up to work with 
   
 When you signed up for web.com, you added a domain by using the web.com **Setup** process. 
   
-To verify and create DNS records for your domain in Microsoft, you first need to change the nameservers at your domain registrar so that they use web.com's nameservers.
+To verify and create DNS records for your domain in Microsoft, you first need to change the nameservers at your domain registrar so that they use the web.com nameservers.
   
 To change your domain's name servers at your domain registrar's website yourself, follow these steps.
   
@@ -143,7 +143,7 @@ To verify the record in Microsoft 365:
    
 1. Select **ADD**.
   
-1. If there are any other MX records listed in the **MX Records** section, select the check box next to the record under **Delete**, and select **Save**. 
+1. If there are any other MX records, delete all of them by selecting the edit tool, and then **Delete** for each record. 
 
 ## Add the CNAME record required for Microsoft
 

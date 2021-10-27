@@ -47,33 +47,35 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
   - https://device.login.microsoftonline.com
 - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
->![IMPORTANT]
+>[!IMPORTANT]
 >Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in Azure Active Directory Connect]().
 
 >[!NOTE]
->To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:
-
-
-|      Starting Device    State     |      New Device State     |
-|---|---|
-|     Already AADJ or HAADJ    |     Remains as is    |
-|     Not AADJ or HAADJ + Domain joined    |     Device is HAADJ'd    |
-|     Not AADJ or HAADJ + Not domain joined    |     Device is AADJ’d    |
+>To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:<br>
+> 
+>- Azure Active Directory Join (AADJ) 
+>- Hybrid Azure Active Directory Join (HAADJ) 
+>
+>|      Starting Device    State     |      New Device State     |
+>|---|---|
+>|     Already AADJ or HAADJ    |     Remains as is    |
+>|     Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined    |     Device is HAADJ'd    |
+>|     Not AADJ or HAADJ + Not domain joined    |     Device is AADJ’d    |
 
 
 
 ## Troubleshoot errors from the Microsoft Defender for Endpoint portal
 
-Through the Microsoft Defender for Endpoint portal, security administrators can now troubleshoot Security Configuration Management onboarding issues by going to the Configuration Management Dashboard. 
+Through the Microsoft Defender for Endpoint portal, security administrators can now troubleshoot Security Configuration Management onboarding. 
 
-The Device security management widget includes a snapshot of key onboarding status per management channel, and with a breakdown per OS. 
+In **Endpoints > Configuration & Baselines > Configuration management**, the Device security management widget includes a snapshot of key onboarding status per management channel. 
 
-By scrolling over the bar chart, you'll see the number of machines that failed onboarding.
+The widget's bar chart includes a breakdown per OS, and by scrolling over the "MDE-Error" field you'll see the number of machines that failed onboarding.
 
 
 ![Image of device security management](images/device-security-mgt.png)
 
-To see a list of all devices that are failing the onboarding process, you can select "MDE-Error" to view the list of devices through the Device inventory. By selecting a specific device from the list, security admins will see troubleshooting details pointing to the root cause of the error, and corresponding documentation.
+To see a list of all devices that have failed the onboarding process, select **MDE-Error**. In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
 
 ![Image of device inventory with machine selected](images/device-inventory-security-config.png)
@@ -205,4 +207,3 @@ IIF(
 
 ## Related topic
 - Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager (<ADD LINK TO BRENT'S TOPIC>)
-- [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
