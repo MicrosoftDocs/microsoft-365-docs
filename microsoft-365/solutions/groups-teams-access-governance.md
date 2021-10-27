@@ -48,7 +48,6 @@ The following table provides a quick reference for the access controls available
 |User management|||
 ||Review team and group membership on a regular basis.|[What are Azure AD access reviews?](/azure/active-directory/governance/access-reviews-overview)|
 ||Automate access management to groups and teams.|[What is Azure AD entitlement management?](/azure/active-directory/governance/entitlement-management-overview)|
-||Allow or block people from creating private channels in Teams.|[Manage the life cycle of private channels in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## Membership
 
@@ -151,7 +150,9 @@ Private channels in Teams allow for scoped conversations and file sharing betwee
 
 - [Private channels in Microsoft Teams](/MicrosoftTeams/private-channels)
 
-- [Manage the life cycle of private channels in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management)
+Shared channels allow you to invite people who are outside the team or outside the organization. Depending on your specific business needs and external sharing policies, you may want to allow or block this capability.
+
+- [Shared channels](/MicrosoftTeams/shared-channels)
 
 Additional resources:
 

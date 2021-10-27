@@ -553,7 +553,7 @@ Yes, SharePoint offers a number of non-group-associated services and sites such 
 
 **Can there be multiple sites per group?**
 
-No, there can only be a single site per group. Private channels in Teams use additional sites that are not connected to the group.
+No, there can only be a single site per group. Private and shared channels in Teams use additional sites that are not connected to the group.
 
 **Can sites be associated with multiple groups?**
 

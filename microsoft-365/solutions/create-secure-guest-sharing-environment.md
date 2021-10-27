@@ -277,7 +277,10 @@ To create a DLP rule
 13. Choose your test options and click **Next**.
 14. Click **Submit**, and then click **Done**.
 
-It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider using [private channels in Teams](https://support.microsoft.com/office/de3e20b0-7494-439c-b7e5-75899ebe6a0e) and only allowing members of your organization in the private channels.
+It's important to note that this policy doesn't remove access if the guest is a member of the site or team as a whole. If you plan to have highly sensitive documents in a site or team with guest members, consider these options:
+
+- Use [private channels](/MicrosoftTeams/private-channels) and only allowing members of your organization in the private channels.
+- Use [shared channels](/MicrosoftTeams/shared-channels) to collaborate with people outside your organization while only having people from your organization in the team itself.
 
 ## Additional options
 

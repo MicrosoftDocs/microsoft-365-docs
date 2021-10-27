@@ -216,7 +216,7 @@ Files are generally stored in three primary locations within a SharePoint site:
 - Files in channels – Documents library
 - Wiki pages – Teams Wiki Data library
 
-If the site has one or more subsites, the off-boarding process will need to be repeated for each subsite. If the team contains private channels, there's a separate SharePoint site for each channel.
+If the site has one or more subsites, the off-boarding process will need to be repeated for each subsite. If the team contains private or shared channels, there's a separate SharePoint site for each channel.
 
 It's important when removing files from a group or team to consider that they may be shared with users who aren't members of the group or team. You may want to communicate the impending change to them.
 
