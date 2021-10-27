@@ -93,5 +93,5 @@ landingContent:
             url: mdb-next-gen-configuration-settings.md
           - text: Firewall settings
             url: mdb-firewall.md
-          - text: Gradual device onboarding with Defender for Business
+          - text: Gradual device onboarding
             url: mdb-gradual-device-onboarding.md

@@ -49,4 +49,6 @@
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings
         href: mdb-firewall.md
+      - name: Gradual device onboarding
+        href: mdb-gradual-device-onboarding.md
 
