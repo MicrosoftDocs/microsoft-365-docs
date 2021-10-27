@@ -24,6 +24,10 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
+## Get registered
+
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/Ignite2021DLP).
+
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
@@ -64,7 +68,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 -->
 ### Create system configuration profiles
 
-1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
+1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp)
 
 > [!TIP]
 > You can download the individual configuration files from a single folder or download a single archive file that contains:
@@ -75,7 +79,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 >
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml
+2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -241,7 +245,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 1. In the **Basics** tab, give this new profile a name.
 
-1. In the **Configuration settings** tab expand **System Extensions**
+1. In the **Configuration settings** tab expand **System Extensions**.
 
 1. Under **Bundle identifier** and **Team identifier**, set these values
 
@@ -271,12 +275,12 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 ### Deploy the Microsoft DLP installation package
 
-> [!NOTE]
-> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-
-1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos)] to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
+1. Follow the procedures in [How to add macOS line-of-business (LOB) apps to Microsoft Intune](/mem/intune/apps/lob-apps-macos) to convert the *wdav.pkg* file into the proper format and deploy it through Intune.
 
 ## Offboard macOS devices using Intune
+
+> [!NOTE]
+> Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
 
 1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
