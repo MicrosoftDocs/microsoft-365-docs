@@ -23,7 +23,17 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
+To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. 
+
+Typically, email notifications are set up during the initial setup and configuration process for Microsoft Defender for Business:
+
+1. Assign user permissions (*We are here!*)
+2. Set up email notifications 
+3. Onboard and configure devices   
+
+:::image type="content" source="media/mdb-welcome-setup.png" alt-text="Welcome screen in Microsoft Defender for Business.":::
+
+Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
 :::image type="content" source="media/mdb-grant-access.png" alt-text="Screenshot of granting people access to Defender for Business.":::
 
