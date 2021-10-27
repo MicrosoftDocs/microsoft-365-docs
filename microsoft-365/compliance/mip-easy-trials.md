@@ -17,7 +17,7 @@ description: Learn about the free trial for Microsoft Information Protection (MI
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-The free trial for Microsoft Information Protection from Microsoft 365 Compliance includes the following default configurations:
+The Microsoft Information Protection free trial is one of many available [free trials for Microsoft 365 Compliance](compliance-easy-trials.md) and includes the following default configurations:
 
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
@@ -85,6 +85,8 @@ The default client-side auto-labeling has the following configuration:
 > [!NOTE]
 > If we detected you have your own sensitivity labels published, we'll prompt you to select one of your own labels for auto-labeling and configure it for you.
 
+If you want to edit the client-side auto-labeling configuration, see [How to configure auto-labeling for Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+
 ## Service-side auto-labeling 
 
 Service-side auto-labeling helps label sensitive documents at rest, and emails in transit. The default service-side auto-labeling policy creates a policy in simulation mode for documents stored in all SharePoint or OneDrive sites, and all emails that are sent via Exchange Online. In simulation mode, items aren't actually labeled until you turn on the policy. Simulation mode allows you to preview what items would get labeled when the policy is turned on, so you have confidence in the labeling feature before you deploy the policy to your tenant for actual labeling. 
@@ -102,13 +104,15 @@ When the simulation is complete, review the results and if you are happy with th
 
 For more information about simulation mode, see [Learn about simulation mode](apply-sensitivity-label-automatically.md#learn-about-simulation-mode).
 
-## Teams DLP  
+If you want to edit the service-side auto-labeling policy, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
+
+## Teams DLP
 
 The default DLP policy for Teams detects the presence of credit card numbers in all Teams chats and channel messages. When this sensitive information is detected, admins will get a low severity alert notification.
 
 This policy is unobtrusive to users with no policy tip visible and no messages blocked, but admins will have records of the sensitive information shared in these messages. If required, you can edit the settings to change this default configuration.
 
-## Endpoint DLP 
+## Endpoint DLP
 
 The default DLP policy for Endpoint detects the presence of credit card numbers on all endpoint devices, and then audits (does not block) the following actions: 
 - Upload to cloud service domains or access by unallowed browsers
@@ -126,3 +130,11 @@ The default DLP policy for Endpoint detects the presence of credit card numbers 
 If content contains 10 or more instances of credit cards and one or more of the listed activities is detected, a medium severity alert notification is sent to admins.
 
 This policy is unobtrusive to users with no policy tip visible and no actions blocked, but admins will have records of all suspicious activity. If required, you can edit these settings to change this default configuration. 
+
+## Additional resources
+
+To learn more about sensitivity labels, data loss prevention, and all the capabilities available with Microsoft Information Protection, see the following resources:
+
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Microsoft Information Protection in Microsoft 365](information-protection.md)
