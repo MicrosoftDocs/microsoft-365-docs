@@ -36,7 +36,7 @@ These default configurations help you get up and running quickly with Microsoft 
 |Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
 |Service-side auto-labeling | At least one auto-labeling policy that's turned on|
 |Teams DLP | At least one DLP policy for Teams|
-|Endpoint DLP | At least one DLP policy for Endpoint|
+|Endpoint DLP | At least one DLP policy for devices|
 
 
 ## Default sensitivity labels
