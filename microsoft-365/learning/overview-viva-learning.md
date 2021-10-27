@@ -3,10 +3,11 @@ title: Overview of Microsoft Viva Learning
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: 10/27/2021
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
+ms.custom: intro-overview
 ms.service: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
@@ -41,14 +42,14 @@ Viva Learning makes it easy to incorporate learning into your day. When you open
 
 ### Managers
 
-Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning you’ve recommended.
+Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning that you’ve recommended.
 
 ## Admin roles
 
-Viva Learning is by default available in Teams with default seeded content. To set up learning content sources in Viva Leaning and manage individual licensing, you'll need these permissions:
+Viva Learning is by default available in Microsoft Teams with some content already available. To set up learning content sources in Viva Learning and manage individual licensing, you'll need these permissions:
 
 - Microsoft Teams admin
-- Microsoft 365 global administrator or SharePoint administrator
+- Microsoft 365 global admin or SharePoint admin
 - Knowledge admin
 
 ### Knowledge admin
@@ -57,9 +58,29 @@ The knowledge admin is a new Azure Active Directory (Azure AD) role in the Micro
 
 The knowledge admin should be moderately technical and have existing SharePoint administrator credentials. The knowledge admin should be well versed in the education, learning, training, or employee experience part of the organization.
 
-#### Learning content sources
+## Learning content sources
 
-Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. Refer to “Manage Learning Content sources” for more details on setup.
+Content from Microsoft Learn and Microsoft 365 Training is automatically available in Viva Learning. You'll also have free access to the 125 free courses from LinkedIn Learning. In addition, Viva Learning can integrate with select third-party content providers. For more information about how to set up content sources, see [Manage content sources for Viva Learning](content-sources-365-admin-center.md).
+
+## Supported languages
+
+Viva Learning doesn't currently support right-to-left languages.
+
+## Data and privacy
+
+Viva Learning data residency is tenant-specific and follows the standard Microsoft 365 data storage guidelines by available geography. For more information, see [Where is my Microsoft 365 customer data stored](/microsoft-365/enterprise/o365-data-locations).
+
+Integration with SharePoint is currently only supported for sites hosted from the home geography of the tenant. For example, a French tenant can only link SharePoint sites hosted in France to Viva Learning.
+
+Data stored from Viva Learning includes:
+
+- Learning object content metadata, such as title, description, author, and language
+- User data, such as bookmarks, recently viewed, recommended courses, assigned courses, and completion records
+- Required service data, such as error logs
+- Diagnostic data usage
+
+>[!NOTE]
+>Admins can turn storage of diagnostic data on or off.
 
 ## Get started
 
@@ -68,23 +89,3 @@ When you’re ready to set up and configure Viva Learning in your Microsoft 365 
 - Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-viva-learning.md).
 - Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).
 - Use the SharePoint admin center to [manage and store your own learning content](configure-sharepoint-content-source.md).
-
-## Supported languages
-
-Viva Learning does not currently support right-to-left languages.
-
-## Data and Privacy
-
-Viva Learning data residency is tenant specific and follows the standard Microsoft 365 data storage guidelines by available geography. For more information, see [Where is my Microsoft 365 customer data stored](/microsoft-365/enterprise/o365-data-locations).
-
-Integration with SharePoint is currently only supported for sites hosted from the home geography of the tenant. For example, a French tenant can only link SharePoint sites hosted in France to Viva Learning.
-
-Data stored from Viva Learning includes:
-
-- Learning object content metadata such as title, description, author, and language
-- User data (bookmarks, recently viewed, recommended courses, assigned courses, completion records)
-- Required service data (error logs)
-- Diagnostic data usage
-
->[!NOTE]
->Admins can turn storage of diagnostic data on or off.

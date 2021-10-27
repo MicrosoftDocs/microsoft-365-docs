@@ -5,7 +5,7 @@
       items:    
         - name: Overview of Viva Learning
           href: overview-viva-learning.md 
-        - name: Understand terms and conditions
+        - name: Terms and conditions
           href: terms-and-conditions.md
 
     - name: Setup and administration
