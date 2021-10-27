@@ -1,5 +1,5 @@
 ---
-title: "Support contacts by country - sections view"
+title: "Support contacts by country - regions view"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,9 +17,7 @@ search.appverid:
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
-# Support contacts by country
-
-## United States, Australia, Canada, and United Kingdom
+# Support contacts by country or region
 
 Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
 Technical support is provided in English 24 hours a day, 7 days a week.
@@ -29,10 +27,25 @@ Admins, have your account details ready when you call.
 > [!NOTE]
 > To better protect your organization, we added a PIN-based verification step to our existing phone-based verification process. If you contact us from a number that isn't registered with your organization profile, the Microsoft support representative sends a verification code to the registered email or phone number in your Microsoft 365 admin center profile. You must provide this code to the support representative to grant them access to your organization’s account.
 
-- **In the United States, call 1 800 865 9408.**
-- **In Australia, call 1 800 197 503.**
-- **In Canada, call 1 800 865 9408.**
-- **In the United Kingdom, call 0800 032 6417.**
+:::row:::
+   :::column:::
+[Canada](#canada)\
+[United States](#united-states)\
+[Brazil](#brazil)\
+[United Kingdom](#united-kingdom)\
+[Netherlands](#netherlands)\
+[France](#france)\
+[Germany](#germany)\
+   :::column-end:::
+   :::column:::
+[Spain](#spain)\
+[Italy](#italy)
+[Australia](#australia)\
+[Russia](#russia)
+[China](#china)\
+[Japan](#japan)\
+   :::column-end:::
+:::row-end:::
 
 ## Other countries and regions
 
@@ -57,7 +70,6 @@ Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#
 [Armenia](#armenia)\
 [Aruba](#aruba)\
 [Ascension](#ascension)\
-[Australia](#australia)\
 [Austria](#austria)\
 [Azerbaijan](#azerbaijan)\
 [Bahamas](#bahamas)\
@@ -77,7 +89,6 @@ Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#
 [Bosnia and Herzegovina](#bosnia-and-herzegovina)\
 [Botswana](#botswana)\
 [Bouvet Island](#bouvet-island)\
-[Brazil](#brazil)\
 [British Virgin Islands](#british-virgin-islands)\
 [Brunei](#brunei)\
 [Bulgaria](#bulgaria)\
@@ -85,7 +96,6 @@ Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#
 [Burundi](#burundi)\
 [Cambodia](#cambodia)\
 [Cameroon](#cameroon)\
-[Canada](#canada)\
 [Cape Verde](#cape-verde)\
 [Cayman Islands](#cayman-islands)
    :::column-end:::
@@ -93,7 +103,6 @@ Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#
 [Central African Republic](#central-african-republic)\
 [Chad](#chad)\
 [Chile](#chile)\
-[China PRC](#china-prc)\
 [Christmas Island](#christmas-island)\
 [Cocos Keeling Islands](#cocos-keeling-islands)\
 [Colombia](#colombia)\
@@ -334,14 +343,12 @@ Alternative Phone Number: 1 809 200 8794\
 [Faroe Islands](#faroe-islands)\
 [Fiji](#fiji)\
 [Finland](#finland)\
-[France](#france)\
 [French Guiana](#french-guiana)\
 [French Polynesia](#french-polynesia)\
 [French Southern Territories](#french-southern-territories)\
 [Gabon](#gabon)\
 [Gambia](#gambia)\
 [Georgia](#georgia)\
-[Germany](#germany)\
 [Ghana](#ghana)\
 [Gibraltar](#gibraltar)\
 [Greece](#greece)
@@ -368,12 +375,10 @@ Alternative Phone Number: 1 809 200 8794\
 [Ireland](#ireland)\
 [Isle of Man](#isle-of-man)\
 [Israel](#israel)\
-[Italy](#italy)
    :::column-end:::
    :::column:::
 [Jamaica](#jamaica)\
 [Jan Mayen](#jan-mayen)\
-[Japan](#japan)\
 [Jersey](#jersey)\
 [Jordan](#jordan)\
 [Kazakhstan](#kazakhstan)\
@@ -580,7 +585,6 @@ International call charges apply
 [Namibia](#namibia)\
 [Nauru](#nauru)\
 [Nepal](#nepal)\
-[Netherlands](#netherlands)\
 [New Caledonia](#new-caledonia)\
 [New Zealand](#new-zealand)\
 [Nicaragua](#nicaragua)\
@@ -608,7 +612,6 @@ International call charges apply
 [Qatar](#qatar)\
 [Reunion](#reunion)\
 [Romania](#romania)\
-[Russia](#russia)\
 [Rwanda](#rwanda)
    :::column-end:::
 :::row-end:::
@@ -751,7 +754,6 @@ International call charges apply
    :::column:::
 [South Georgia and South Sandwich Islands](#south-georgia-and-south-sandwich-islands)\
 [South Sudan](#south-sudan)\
-[Spain](#spain)\
 [Sri Lanka](#sri-lanka)\
 [St Helena](#st-helena)\
 [St Kitts Nevis](#st-kitts-nevis)\
@@ -780,8 +782,6 @@ International call charges apply
 [Uganda](#uganda)\
 [Ukraine](#ukraine)\
 [United Arab Emirates](#united-arab-emirates)\
-[United Kingdom](#united-kingdom)\
-[United States](#united-states)\
 [Uruguay](#uruguay)\
 [Uzbekistan](#uzbekistan)\
 [Vanuatu](#vanuatu)\
