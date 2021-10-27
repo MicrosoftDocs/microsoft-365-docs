@@ -25,6 +25,7 @@ ms.technology: mde
 
 **Applies to:**
 
+- <ADD HERE LINK TO BRENT'S TOPIC>
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -32,16 +33,19 @@ ms.technology: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Onboard devices and manage security settings across devices with Microsoft Endpoint Manager through Microsoft Defender for Endpoint. 
+Security Configuration Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
+For more information on Security Configuration Management, see <Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager> (LINK TO BRENT's TOPIC)
 
-Using this method of onboarding, the device is seamlessly registered to Azure Active Directory so that security teams can manage security configuration settings of all enterprise devices from Microsoft Endpoint Manager. 
 
 > [!NOTE]
 > Changes will not apply for devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel
 
 
 ## Onboard devices
+    
+> [!IMPORTANT]
+> Make sure all Security Configuration Management for Microsoft Defender for Endpoint prerequisites (LINK TO BRENT'S TOPIC, PREREQUISITE SECTION) are met prior to onboarding devices.
 
 ### Onboard Windows Server 2012 R2 and Windows Server 2016  
 
