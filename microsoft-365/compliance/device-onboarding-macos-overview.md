@@ -32,7 +32,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 ## Before you begin
 
-Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later) you should familiarize yourself with these articles:
+Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
 
 - [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
