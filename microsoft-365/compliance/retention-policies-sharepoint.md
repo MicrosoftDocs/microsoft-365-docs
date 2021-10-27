@@ -114,7 +114,7 @@ The copy that's stored in the Preservation Hold library is typically created wit
 
 ## How retention works with OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, behind the scenes, the different OneNote sections are individual files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
 ## How retention works with document versions
 
