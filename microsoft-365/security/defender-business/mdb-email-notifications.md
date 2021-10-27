@@ -32,6 +32,8 @@ Typically, email notifications are set up during the initial setup and configura
 
 :::image type="content" source="media/mdb-welcome-setup.png" alt-text="Welcome screen in Microsoft Defender for Business.":::
 
+However, you can view and edit your email notifications at any time.
+
 ## Set up email notifications
 
 To set up email notifications, specify a user's email address and the type of notification they should receive. You can choose from:
@@ -43,7 +45,7 @@ To set up email notifications, specify a user's email address and the type of no
 
 ## View and edit email notifications
 
-If you skipped the email notification step, or if you want to view or edit email notification settings for your company, follow these steps:
+To view or edit email notification settings for your company, follow these steps:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
