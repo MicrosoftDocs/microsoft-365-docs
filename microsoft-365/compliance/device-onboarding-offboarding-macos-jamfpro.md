@@ -24,6 +24,10 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
+## Get registered
+
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/Ignite2021DLP).
+
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
@@ -42,15 +46,6 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
-
-> [!TIP]
-> You can download the individual configuration files from a single folder or download a single archive file that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
-> - system extensions
->
->combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
 ### Get the device onboarding package
 
@@ -88,14 +83,14 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 ### Download the configuration files
 
-1. Download the configuration files from [Github](https://github.com/microsoft/endpointdlp)
+1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp).
 
 > [!TIP]
 > You can download the individual configuration files from a single folder or download a single `.mobileconfig` file that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
-
+>
 >combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
 
@@ -104,7 +99,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
 
-1. Download the schema.json file HENRY TO PROVIDE LINK
+1. Download the *schema.json* file HENRY TO PROVIDE LINK
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
@@ -116,7 +111,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 1. On the **Application & Custom Settings** tab, choose **External Applications**, choose **Add** and choose **Custom Schema** for the preference domain. Use this value:
     - Preference domain: `com.microsoft.wdav`
 
-1. Choose **Add Schema** and **Upload** to upload the schema.json file.
+1. Choose **Add Schema** and **Upload** to upload the *schema.json* file.
 
 1. Choose **Save**.
 
@@ -245,14 +240,14 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 ### Configure Network extension
 
-1.	Download **netfilter.mobileconfig** HENRY TO PROVIDE LINK
+1.	Use the **netfilter.mobileconfig**  file that you downloaded from Github.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 
 ### Grant accessibility access to DLP
 
-1. Download **accessibility.mobileconfig**.
+1. Use the **accessibility.mobileconfig** file that you downloaded from Github.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
