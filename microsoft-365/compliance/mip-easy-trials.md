@@ -26,9 +26,9 @@ The Microsoft Information Protection free trial is one of many available [free t
 
 These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
-New customers: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
+**New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
 
-Existing customers: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
+**Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
 
 | Default configuration| Equivalent |
 |:-----|:-----|
