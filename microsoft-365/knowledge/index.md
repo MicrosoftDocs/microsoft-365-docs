@@ -4,8 +4,10 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-audience: 
-ms.topic: article
+ms.date: 11/02/2021
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 

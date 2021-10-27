@@ -2,8 +2,6 @@
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -58,13 +56,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1803 (RS 4)](/windows/whats-new/whats-new-windows-10-version-1803) with [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
-  - **macOS** - Only applicable for Public Preview, minimal version: 101.45.13 
-    - Red Hat Enterprise Linux 7.2 or higher 
-    - CentOS 7.2 or higher 
-    - Ubuntu 16.04 LTS or higher LTS 
-    - Debian 9 or higher 
-    - SUSE Linux Enterprise Server 12 or higher 
-    - Oracle Linux 7.2 or higher 
+  - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
+  
+  - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
   
