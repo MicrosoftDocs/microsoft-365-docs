@@ -21,6 +21,9 @@ ROBOTS: NOINDEX
 
 # Add other content providers for Microsoft Viva Learning
 
+>[!NOTE]
+>This feature is not supported in preview.
+
 A growing set of learning content providers and learning management systems are available through Viva Learning. This set might change at any time as more providers join or change their status with the program.
 
 Third-party content sources are not enabled by default. To enable these sources, you will need to [add them in the Microsoft 365 admin center](content-sources-365-admin-center.md#configure-settings-for-the-learning-content-sources) and follow the specific instructions shown in the following table.
