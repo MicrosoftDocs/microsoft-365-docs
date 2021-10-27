@@ -41,6 +41,11 @@ Third-party content sources are not enabled by default. To enable these sources,
 |Skillsoft     |[Configure Skillsoft as a content source](configure-skillsoft-content-source.md)         |
 |SAP SuccessFactors   |[Configure SAP SuccessFactors as a content source](configure-successfactors-content-source.md)         |
 |Udemy   |[Configure Udemy as a content source](configure-udemy-content-source.md)         |
+|edX    |Contact your edX account team    |
+|Coursera    |Contact your Coursera account team    |
+|Pluralsight    |Contact your Pluralsight account team    |
+|Infosec    |Contact your Infosec account team    |
+|Josh Bersin Academy    |Contact your Josh Bersin Academy account team    |
 
 ## Content ingestion errors
 
