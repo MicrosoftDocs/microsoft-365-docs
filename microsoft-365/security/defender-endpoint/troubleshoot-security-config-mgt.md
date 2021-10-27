@@ -54,9 +54,6 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 
 >[!NOTE]
 >To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:<br>
-> 
->- Azure Active Directory Join (AADJ) 
->- Hybrid Azure Active Directory Join (HAADJ) 
 >
 >|      Starting Device    State     |      New Device State     |
 >|---|---|
@@ -94,7 +91,7 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 
 
     ![Image of client analyzer results](images/client-analyzer-results.png)
-  <JOEY THERE'S AN ISSUE WITH THIS IMAGE, RIGHT SIDE NEEDS TO BE CROPPED OUT>
+
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 
@@ -114,7 +111,7 @@ If you weren't able to identify the onboarded device in AAD or MEM, and did no
 The following table lists errors and directions on what to try/check in order to address the error. Note that the list of errors is not complete and is based on typical/common errors encountered by customers in the past: 
 
 
-| **Error Code**  |**Administrator Actions **                                                                                                                                                                                                                                                                                                  |
+| **Error Code**  |**Administrator Actions**                                                                                                                                                                                                                                                                                                  |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **13-14**       |Review the [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint pre-requisites](/microsoft-365/security/defender-endpoint/security-config-management#onboard-devices) to ensure the endpoints to complete and Hybrid Azure Active Directory Join are available.                   |
 | **15**          |Make sure the AAD Tenant ID from your MDE Tenant matches the tenant ID in the SCP Entry of your domain.                                                                                                                                                                                                                     |

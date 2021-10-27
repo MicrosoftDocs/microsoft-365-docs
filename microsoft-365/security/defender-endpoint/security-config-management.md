@@ -25,7 +25,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- <ADD HERE LINK TO BRENT'S TOPIC>
+- [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +39,7 @@ For more information on Security Configuration Management, see [Manage Microsoft
 
 
 > [!NOTE]
-> Changes will not apply for devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel
+> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune .will continue to receive policies through their established management channel
 
 
 ## Onboard devices
@@ -47,49 +47,16 @@ For more information on Security Configuration Management, see [Manage Microsoft
 > [!IMPORTANT]
 > Make sure all Security Configuration Management for [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) are met prior to onboarding devices.
 
-### Onboard Windows Server 2012 R2 and Windows Server 2016  
+To onboard devices, follow the steps outlined in [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
 
-**Prerequisities**
-
-1. Machines must be fully up to date with the latest CU (cumulative update)
-    before installing.
-
-2.  The environment must meet connectivity requirements as specified in [Configure device
-    proxy and Internet connectivity settings](configure-proxy-internet.md).
-
-3.  On Windows Server 2016, ensure Defender Antivirus is installed and on the latest (4.18.2106.6 or newer) version.
-
-**Steps**
-
-1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
-
-2.  Select **Windows Server 2012 R2 and 2016 (Preview)** as the operating
-    system. 
-
-3.  In the **Deployment method** field, select **the script suitable for your
-    intended deployment.** 
-
-### Onboard Windows 11 devices
-
-You'll need to register to the 'Microsoft Insider' program to get the latest builds. This program streamlines engineering collaboration within the Microsoft ecosystem by enabling the distribution of content.
-
--   To register, go to <https://aka.ms/wipsettings> and approve registration
-
--   Link your account.
-
--   In 'Insider Settings' select **Dev Channel**.
-
-    -   Windows 11 with insider build version 22454 (10.8040.22454.1000) or newer.
-
--   Confirm your registration.
-
-  >[!NOTE]
-  > This will require you to restart your device.
+If you encountering enrollment issues, see [Troubleshoot Security Configuration Management onboarding issues](troubleshoot-security-config-mgt.md).
 
 
 ## Identify onboarded devices
 
-1.  Verify that the device appears in the Device Inventory section of the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+Use the following steps to validate that your endpoints have successfully completed the Security Management for Microsoft Defender for Endpoint onboarding process.
+
+1.  Verify that the device appears in the Device Inventory section of [Microsoft 365 Defender](https://security.microsoft.com/).
 
 2.  In the [Azure Active Directory portal](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers), verify that the device has successfully been enrolled.
 
@@ -97,32 +64,12 @@ You'll need to register to the 'Microsoft Insider' program to get the latest bui
     the **Devices > All devices** section.
 
 
-
-
 ## Offboard devices
-1.  In the Microsoft Defender Security Center navigation pane, select **Settings > Device management > Offboarding**. Select your Operating System. 
+To offboard devices that have been onboarded via the Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
 
-2.  Download then run the offboarding script. 
+>![NOTE]
+>Offboarding will [disable Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
 
-3.  Uninstall the package. 
-
-
->[!NOTE]
-> Offboarding will [disable Tamper
-Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
-
-## Known issues and limitations 
-
-### Non-persistent VDI environments
-
-Due to the potential impact on Azure Active Directory environments with respect to device lifecycle and service quota, we advise against testing the current installation files and builds shared in this private preview in a non-persistent VDI environment.
-
-### Server Core installation
-
-Due to the limited scope of Server core installations, these are currently not supported by Microsoft Defender for Endpoint Security Configuration Manager.
-
-### Azure Active Directory onboarding issues
-To troubleshoot Azure Active Directory onboarding issues, see  [Troubleshoot Security Configuration Management Azure Active Directory onboarding issues](troubleshoot-security-config-mgt.md).
 
 
 ## Related topic
