@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
@@ -44,20 +44,11 @@ To enable and configure always-on protection:
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
-3. Configure the Microsoft Defender Antivirus antimalware service policy settings, as follows:
+3. Configure the Microsoft Defender Antivirus antimalware service policy setting.
 
-   1. In the **Microsoft Defender Antivirus** details pane on right, double-click the policy setting as specified in the following table:
+   In the **Microsoft Defender Antivirus** details pane on right, double-click **Allow antimalware service to start up with normal priority**, and set it to **Enabled**.
 
-      <br/><br/>
-
-      |Setting|Default setting|
-      |---|---|
-      |Allow antimalware service to start up with normal priority <p> You can lower the priority of the Microsoft Defender Antivirus engine. Lowering the priority might be useful in cases where you want to have as lean a startup process as possible; however, taking this action could affect endpoint protection. Proceed with caution.|Enabled
-      |Allow antimalware service to remain running always <p> If protection updates have been disabled, you can set Microsoft Defender Antivirus to still run. Disabling protection updates reduces endpoint protection.|Disabled|
-
-   2. Configure the setting as appropriate, and select **OK**.
-
-   3. Repeat the previous steps for each setting in the table.
+   Then select **OK**.
 
 4. Configure the Microsoft Defender Antivirus real-time protection policy settings, as follows:
 
@@ -73,19 +64,9 @@ To enable and configure always-on protection:
 
     1. From the **Microsoft Defender Antivirus** tree on left pane, select **Scan**.
     
-       ![Microsoft Defender Antivirus Scan options.](images/gpedit-windows-defender-antivirus-scan.png)
+   2. In the **Scan** details pane on right, double-click **Turn on heuristics**, and set it to **Enabled**. 
 
-      ![Microsoft Defender Antivirus Scan options](images/gpedit-windows-defender-antivirus-scan.png)
-
-   2. In the **Scan** details pane on right, double-click the policy setting as specified in the following table:
-      <br/><br/>
-
-      |Setting|Default setting|
-      |---|---|
-      |Turn on heuristics <p> Heuristic protection will disable or block suspicious activity immediately before the Microsoft Defender Antivirus engine is asked to detect the activity.|Enabled|
-
-
-   3. Configure the setting as appropriate, and select **OK**.
+   3. Select **OK**.
 
 6. Close **Local Group Policy Editor**.
 
@@ -124,11 +105,7 @@ The main real-time protection capability is enabled by default, but you can disa
 
 3. In the **Real-time Protection** details pane on right, double-click **Turn off real-time protection**.
 
-   ![Turn off real-time protection.](images/gpedit-turn-off-real-time-protection.png)
-
 4. In the **Turn off real-time protection** setting window, set the option to **Enabled**.
-
-   ![Turn off real-time protection enabled.](images/gpedit-turn-off-real-time-protection-enabled.png)
    
 5. select **OK**.
 
