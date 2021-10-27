@@ -23,20 +23,18 @@ ms.technology: mde
 
 **Applies to:**
 
+- Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager (<ADD LINK TO BRENT'S TOPIC>)
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
-Microsoft Defender for Endpoint's Security Configuration Management flow was built in order to connect security and IT teams with integrated experiences and eliminate the need to use additional tools to manage endpoint security settings. When the setting is enabled in a tenant, a newly onboarded device automatically and seamlessly registers to Azure Active Directory, so that security teams can manage Defender stack settings of all enterprise devices from Microsoft Endpoint Manager.
+Security Configuration Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
+For more information on Security Configuration Management, see <Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager> (LINK TO BRENT's TOPIC).
+For Security Configuration Management onboarding instructions, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md)
 
-
-Built without user interaction and frictionless, this end-to-end onboarding flow can sometimes run into issues. Within the Microsoft Defender for Endpoint platform, security administrators can view and troubleshoot these errors.
+Userless and frictionless, this end-to-end onboarding flow can sometimes run into issues. Within the Microsoft Defender for Endpoint platform, security administrators can view and troubleshoot these errors.
 
 >[!NOTE]
-> If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met. For more information, see [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md).
-
-If you are having issues with the onboarding flow for new devices, and you have validated that pre-requisites are met in your environment, we recommend using the options below in order to troubleshoot the potential cause of enrollment errors.
-
+> If you are having issues with the onboarding flow for new devices, review that pre-requisites for successful onboarding are met (<ADD LINK TO BRENT'S TOPIC>) and make sure onboarding instructions are followed, see [Microsoft Defender for Endpoint Security Configuration Management](security-config-management.md).
 
 
 ## Registering domain joined computers with Azure Active Directory  
@@ -92,6 +90,7 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 
 
     ![Image of client analyzer results](images/client-analyzer-results.png)
+  <JOEY THERE'S AN ISSUE WITH THIS IMAGE, RIGHT SIDE NEEDS TO BE CROPPED OUT>
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 
@@ -205,4 +204,5 @@ IIF(
 7.  Select **Save** to save the new rule.
 
 ## Related topic
-- [Onbaord Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
+- Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager (<ADD LINK TO BRENT'S TOPIC>)
+- [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
