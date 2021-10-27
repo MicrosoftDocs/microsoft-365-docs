@@ -150,7 +150,7 @@ Microsoft Security team blog posts:
 
   Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
 
-- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-2/)
+- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
 
   Recommendations and best practices.
 
