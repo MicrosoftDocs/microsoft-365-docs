@@ -139,9 +139,13 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-  - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this topic for the OMA-URI to use for this example rule. For ASR rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this topic for the OMA-URI to use for this example rule. For ASR rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
-   - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+   - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
+     - 0 : Disable (Disable the ASR rule)
+     - 1 : Block (Enable the ASR rule)
+     - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
+     - 6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)
 
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI configuration.](images/mem05-add-row-oma-uri.png)
@@ -201,7 +205,7 @@ The values to enable (Block), disable, warn, or enable in audit mode are:
 - 0 : Disable (Disable the ASR rule)
 - 1 : Block (Enable the ASR rule)
 - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
-- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block). Warn mode is now available for most of the ASR rules.
+- 6 : Warn  (Enable the ASR rule but allow the end-user to bypass the block). Warn mode is available for most of the ASR rules.
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) configuration service provider (CSP) to add exclusions.
 
@@ -239,9 +243,7 @@ Example:
 
 3. Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Microsoft Defender Exploit Guard** \> **Attack surface reduction**.
 
-4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section.
-
-   Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
+4. Select **Configure Attack surface reduction rules** and select **Enabled**. You can then set the individual state for each rule in the options section. Select **Show...** and enter the rule ID in the **Value name** column and your chosen state in the **Value** column as follows:
 
    - 0 : Disable (Disable the ASR rule)
    - 1 : Block (Enable the ASR rule)
@@ -259,6 +261,12 @@ Example:
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
+> "User Defined" allows a local admin user to configure the rule.
+> The User Defined option setting is shown in the following figure.
+
+> [!div class="mx-imgBorder"]
+> ![ASR enable "User Defined"](images/asr-user-defined.png)
+
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
