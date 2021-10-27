@@ -43,11 +43,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 ## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
-Onboarding a macOS device into Compliance solutions if it already has MDE deployed to it is a three phase process.
-
-1. [Create system configuration profiles](#create-system-configuration-profiles)
-1. [Get the device onboarding package](#get-the-device-onboarding-package)
-1. [Deploy the onboarding package](#deploy-the-onboarding-package)
+Use these steps to onboard a macOS device into Compliance solutions if it already has MDE deployed to it.
 
 <!--1. [Enable kernel extension](#enable-kernel-extension)-->
 
