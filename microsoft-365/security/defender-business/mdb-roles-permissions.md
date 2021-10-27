@@ -25,7 +25,7 @@ ms.collection:
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. 
 
-Typically, email notifications are set up during the initial setup and configuration process for Microsoft Defender for Business:
+Typically, roles and permissions are assigned during the initial setup and configuration process for Microsoft Defender for Business:
 
 1. Assign user permissions (*We are here!*)
 2. Set up email notifications 
