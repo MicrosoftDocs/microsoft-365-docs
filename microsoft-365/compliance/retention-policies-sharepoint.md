@@ -103,7 +103,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ## How retention works for OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, behind the scenes, the different OneNote sections are individual files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
 ## How retention works with document versions
 
@@ -114,9 +114,6 @@ When a document with versions is subject to retention settings to retain that co
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
 - If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
-
-> [!NOTE]
-> The retained versions of these SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 

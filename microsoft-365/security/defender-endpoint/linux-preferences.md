@@ -1,4 +1,4 @@
----
+﻿---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
@@ -61,7 +61,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Determines whether real-time protection (scan files as they are accessed) is enabled or not.
+Determines whether real-time protection (scan files as they are accessed) is enabled.
 
 <br>
 
@@ -95,6 +95,22 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+
+
+#### Enable/disable behavior-monitoring 
+
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|name|
+|**Data type**|String|
+|**Possible values**|disabled <p> enabled (default)|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
 
@@ -108,9 +124,41 @@ Specifies whether to start a process scan after new security intelligence update
 |---|---|
 |**Key**|scanAfterDefinitionUpdate|
 |**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.41.51 or higher.|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
 |
+
+#### Scan archives (on-demand antivirus scans only)
+
+Specifies whether to scan archives during on-demand antivirus scans.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanArchives|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+
+#### Degree of parallelism for on-demand scans
+
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**Data type**|Integer|
+|**Possible values**|2 (default). Allowed values are integers between 1 and 64.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
   
 
 #### Exclusion merge policy
@@ -443,12 +491,14 @@ The following configuration profile will:
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission at `safe` level
+- Enable behavior-monitoring
 
 ### Sample profile
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -479,10 +529,12 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
-      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {

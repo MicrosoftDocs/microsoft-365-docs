@@ -62,7 +62,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 
   Used to perform actions in the API on behalf of a user.
 
-  Steps to take to access Defender for Endpoint API with application context:
+  Steps to take to access Defender for Endpoint API with user context:
 
   1. Create AAD Native-Application.
   2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.

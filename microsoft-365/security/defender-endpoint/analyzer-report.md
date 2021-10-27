@@ -2,8 +2,6 @@
 title: Understand the client analyzer HTML report
 description: Learn how to analyze the Microsoft Defender for Endpoint Client Analyzer HTML report
 keywords: client analyzer report, html report, client analyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -37,20 +35,20 @@ failing to reach one of the required Microsoft Defender for Endpoint URLs:
 
 ![Image of client analyzer result.](images/147cbcf0f7b6f0ff65d200bf3e4674cb.png)
 
-- On the top the script version and script runtime are listed for reference
+- On top, the script version and script runtime are listed for reference
 - The **Device Information** section provides basic OS and device identifiers to uniquely identify the device on which the analyzer has run.
-- The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes are not online as expected, the color will change to red.
+- The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes aren't online as expected,  the color will change to red.
 
   ![Image of client analyzer detailed result](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes are not online as expected, the color will change to red.
+-   The **Endpoint Security Details** provides general information about Microsoft Defender for Endpoint-related processes including Microsoft Defender Antivirus and the sensor process. If important processes aren't online as expected, the color will change to red.
 
   ![Image of client analyzer detailed result.](images/85f56004dc6bd1679c3d2c063e36cb80.png)
 
--   On **Check Results Summary** you will have an aggregated count for error,
+-   On **Check Results Summary** you'll have an aggregated count for error,
     warning, or informational events detected by the analyzer.
 
--   On the **Detailed Results** you will see a list (sorted by severity) with
+-   On **Detailed Results** you'll see a list (sorted by severity) with
     the results and the guidance based on the observations made by the analyzer.
 
 ## Open a support ticket to Microsoft and include the Analyzer results
