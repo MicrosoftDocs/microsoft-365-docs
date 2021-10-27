@@ -34,12 +34,12 @@ Typically, email notifications are set up during the initial setup and configura
 
 ## Set up email notifications
 
-[SCREENSHOT OF EMAIL NOTIFICATION SETUP SCREEN]
-
 To set up email notifications, specify a user's email address and the type of notification they should receive. You can choose from:
 
 - **Vulnerabilities** - email notifications about new exploit or vulnerability events; or
 - **Alerts & vulnerabilities** - email notifications about alerts on devices and new exploit or vulnerability events
+
+:::image type="content" source="media/mdb-wizard-email-notifications.png" alt-text="Set up email notifications in Microsoft Defender for Business.":::
 
 ## View and edit email notifications
 
