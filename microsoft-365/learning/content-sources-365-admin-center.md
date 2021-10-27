@@ -42,15 +42,17 @@ To add a knowledge admin for Viva Learning, follow these steps:
 
 1. In the left navigation of the Microsoft 365 admin center, go to **Roles** and select **Role assignments**.
 
+    <!--![Image of Role assignments in the left navigation](../media/learning/clcs-orgsettings.png)-->
+
 2. On the **Role Assignments** page, on the **Azure AD** tab, select **Knowledge Administrator**.
+
+    <!--![Image of Knowledge Adminstrator selected on the Azure AD tab.](../media/learning/clcs-knowledgeadmin.png)-->
 
 3. On the **Knowledge Administrator** panel, select **Assigned admins**, and then select **Add**.
 
-     <!--![Roles page in the Microsoft 365 admin center showing the Knowledge Administrator panel to add a user.](../media/learning/learning-add-knowledge-admin-1.png)-->
+     <!--![Roles page in the Microsoft 365 admin center showing the Knowledge Administrator panel to add a user.](../media/learning/clcs-addadmin.png)-->
 
 4. On the **Add admins** panel, select the person you choose for the role, and then select **Add**.
-
-     <!--![Roles page in the Microsoft 365 admin center showing the Add admins panel to add a user.](../media/learning/learning-add-knowledge-admin-2.png)-->
 
 ### Remove a knowledge admin
 
@@ -58,11 +60,15 @@ To remove a knowledge admin for Viva Learning, follow these steps:
 
 1. In the left navigation of the Microsoft 365 admin center, go to **Roles**, and select **Role assignments**.
 
+    <!--![Image of Role assignments in the left navigation](../media/learning/clcs-orgsettings.png)-->
+
 2. On the **Role assignments** page, go to the **Azure AD** tab, and then select **Knowledge Administrator**.
+
+    <!--![Image of Knowledge Adminstrator selected on the Azure AD tab.](../media/learning/clcs-knowledgeadmin.png)-->
 
 3. On the **Knowledge Administrator** panel, on the **Assigned Admins** tab, select **Remove**, and then select the person you want to remove from the role. To confirm, select **Remove**.
 
-     <!--![Roles page in the Microsoft 365 admin center showing the Assigned admins panel to remove a user.](../media/learning/learning-remove-knowledge-admin-1.png)-->
+     <!--![Roles page in the Microsoft 365 admin center showing the Assigned admins panel to remove a user.](../media/learning/clcs-removeadmin.png)-->
 
 ## Configure settings for the learning content sources
 
@@ -74,14 +80,14 @@ To configure settings for learning content sources in Viva Learning, follow thes
 
 2. On the **Org settings** page, on the **Services** tab, select **Viva Learning**.
 
-     <!--![Settings page in the Microsoft 365 admin center showing the Learning app listed.](../media/learning/learning-sharepoint-configure1.png)-->
+     <!--![Settings page in the Microsoft 365 admin center showing the Learning app listed.](../media/learning/clcs-services.png)-->
 
 3. On the **Viva Learning** panel, select the learning content sources you want to configure for the organization, and then select **Save**. You can view the date of the last successful sync with your selected sources from the same panel.
 
     > [!NOTE]
     > You'll need a Premium license to connect external content sources, with the exception of the select free courses from LinkedIn Learning. [Learn more about licensing](https://www.microsoft.com/microsoft-viva/learning).
 
-     <!--![Learning panel in the Microsoft 365 admin center showing content sources options.](../media/learning/learning-sharepoint-configure2.png)-->
+     <!--![Learning panel in the Microsoft 365 admin center showing content sources options.](../media/learning/clcs-panel.png)-->
 
 4. To enable or disable a learning content source, select the check box next to the source. If a source is enabled, a check mark will be visible.
 
