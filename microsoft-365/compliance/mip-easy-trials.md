@@ -60,6 +60,8 @@ When you don't have sensitivity labels that are published, we'll create the foll
 
 For more information about these configuration settings and what sensitivity labels can do, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do).
 
+If you need to edit these default sensitivity labels, see [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
+
 ## Default sensitivity label policy
 
 The default sensitivity label policy makes the labels available for users to start labeling their documents and emails with sensitivity labels. It has the following configuration:
@@ -69,6 +71,10 @@ The default sensitivity label policy makes the labels available for users to sta
 - Users must provide a justification to remove a label or lower its classification
 
 For more information about these policy settings, and other policy settings that are available, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do).
+
+If you need to edit these default policy settings, see [Publish sensitivity labels by creating a label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
+
+When you use these labels in Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, you might need to allow up to 24 hours for changes to replicate to all apps and services.
 
 ## Client-side auto-labeling 
 
