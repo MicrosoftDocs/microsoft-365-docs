@@ -68,8 +68,8 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install yum-utils
     ```
 
-> [!NOTE]
-> Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
+  > [!NOTE]
+  > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
     Use the following table to help guide you in locating the package:
 
@@ -92,7 +92,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
     > [!TIP]
     > Use hostnamectl command to identify system related information including release *[version]*.
-    
+
     For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
@@ -122,20 +122,20 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!NOTE]
 > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/sles/`.
 
-    In the following commands, replace *[distro]* and *[version]* with the information you've identified:
+   In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
-    ```bash
-    sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
-    ```
+   ```bash
+   sudo zypper addrepo -c -f -n microsoft-[channel] https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+   ```
 
-    > [!TIP]
-    > Use SPident command to identify system related information including release *[version]*.
-    
-    For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+   > [!TIP]
+   > Use SPident command to identify system related information including release *[version]*.
 
-    ```bash
-    sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
-    ```
+   For example, if you are running SLES 12 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+
+   ```bash
+   sudo zypper addrepo -c -f -n microsoft-prod https://packages.microsoft.com/config/sles/12/prod.repo
+   ```
 
 - Install the Microsoft GPG public key:
 
@@ -160,20 +160,20 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!NOTE]
 > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
 
-    In the below command, replace *[distro]* and *[version]* with the information you've identified:
+   In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
-    ```bash
+   ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
-    ```
+   ```
 
-    > [!TIP]
-    > Use hostnamectl command to identify system related information including release *[version]*.
-    
-    For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+   > [!TIP]
+   > Use hostnamectl command to identify system related information including release *[version]*.
 
-    ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-    ```
+   For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+
+   ```bash
+   curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+   ```
 
 - Install the repository configuration:
 
@@ -194,7 +194,7 @@ In order to preview new features and provide early feedback, it is recommended t
     ```
 
   If `gpg` is not available, then install `gnupg`.
-  
+
     ```bash
     sudo apt-get install gnupg
     ```
@@ -337,20 +337,20 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
 
     > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version.
+    > To run this command, you must have `python`  or `python3` installed on the device depending on the disto and version. If needed, see [Step-by-step Instruction for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
     
     If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
     ```bash
-    python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
     For the rest of distros and versions, you will need to use `python`.
     
     ```bash
-    python MicrosoftDefenderATPOnboardingLinuxServer.py
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-
+    
 3. Verify that the device is now associated with your organization and reports a valid organization identifier:
 
     ```bash
