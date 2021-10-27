@@ -97,11 +97,11 @@ For the *Service Start Date* sample, it is more efficient to use the pre-built e
 
 1. In the **Explanation section**, select **New**, and then select **From explanation library**.
 2. From the explanation library, select **Date**. You can view all variations of date that are recognized.
-3. Select **Add**.<br/>
+3. Select **Add**.
 
     ![Explanation library.](../media/content-understanding/explanation-library.png) 
 
-4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.<br/>
+4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.
 
     ![Date.](../media/content-understanding/date-explanation-library.png) 
 
