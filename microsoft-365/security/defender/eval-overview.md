@@ -104,7 +104,7 @@ The following table describes this illustration.
 |7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
 | | | |
 
-This is a commonly recommended order designed to gain the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured much quicker than is required to enroll devices for Defender for Endpoint. Of course you can prioritize the components to meet your business needs and enable these in a different order.
+This is a commonly recommended order designed to gain the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you can prioritize the components to meet your business needs and enable these in a different order.
 
 ## Next steps
 
