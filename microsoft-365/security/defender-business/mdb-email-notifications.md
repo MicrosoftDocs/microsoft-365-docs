@@ -26,11 +26,11 @@ Email notifications are not the only way your security team can find out about n
 
 Typically, email notifications are set up during the initial setup and configuration process for Microsoft Defender for Business:
 
-:::image type="content" source="media/mdb-welcome-setup.png" alt-text="Welcome screen in Microsoft Defender for Business.":::
-
 1. Assign user permissions
 2. Set up email notifications (*We are here!*)
 3. Onboard and configure devices   
+
+:::image type="content" source="media/mdb-welcome-setup.png" alt-text="Welcome screen in Microsoft Defender for Business.":::
 
 ## Set up email notifications
 
