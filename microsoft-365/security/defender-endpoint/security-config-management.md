@@ -66,17 +66,12 @@ The following diagram is a conceptual representation of the Microsoft Defender f
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/security-config-mgt-prerequisites.md)]
 
 
-## Onboard devices
-    
-> [!IMPORTANT]
-> Make sure all the prerequisites are met prior to onboarding devices.
-
-To onboard devices, follow the steps outlined in [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
-
 For more information on Security Configuration Management, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 If you encounter enrollment issues, see [Troubleshoot Security Configuration Management onboarding issues](troubleshoot-security-config-mgt.md).
 
+> [!NOTE]
+> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
 
 ## Identify onboarded devices
 
