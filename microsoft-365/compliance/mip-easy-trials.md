@@ -28,9 +28,9 @@ These default configurations help you get up and running quickly with Microsoft 
 
 Eligibility includes customers who have a [free trial for Microsoft 365 Compliance](compliance-easy-trials.md) and customers who already have a Microsoft 365 E5 plan:
 
-- **New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
+- **New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant can activate all the listed default configurations. You can always disable, remove, or edit them.
 
-- **Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
+- **Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you can activate the default configurations if you haven't yet configured an equivalent:
 
     | Default configuration| Equivalent |
     |:-----|:-----|
