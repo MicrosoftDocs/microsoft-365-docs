@@ -79,7 +79,7 @@ You can choose from several deployment methods in Defender for Business, as desc
 > [!NOTE]
 > If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
 
-The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business.
+The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business. <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
