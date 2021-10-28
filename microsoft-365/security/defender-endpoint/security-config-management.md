@@ -1,5 +1,5 @@
 ﻿---
-title: Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint
+title: Onboard devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint
 description: Learn how to enable security settings in Microsoft Endpoint Manager through Microsoft Defender for Endpoint.
 keywords: device management, configure Microsoft Defender for Endpoint devices, Microsoft Endpoint Manager
 search.product: eADQiWindows 10XVcnh
@@ -33,23 +33,23 @@ ms.technology: mde
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Security Configuration Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
+Security Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
-For more information on Security Configuration Management, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+For more information on Security Configuration Management, indluding prerequisites, supported platforms and more, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 
 > [!NOTE]
-> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune .will continue to receive policies through their established management channel
+> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
 
 
 ## Onboard devices
     
 > [!IMPORTANT]
-> Make sure all Security Configuration Management for [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) are met prior to onboarding devices.
+> Make sure all [Security Management for Microsoft Defender for Endpoint for Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) are met prior to onboarding devices.
 
 To onboard devices, follow the steps outlined in [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md).
 
-If you encountering enrollment issues, see [Troubleshoot Security Configuration Management onboarding issues](troubleshoot-security-config-mgt.md).
+If you encounter enrollment issues, see [Troubleshoot Security Configuration Management onboarding issues](troubleshoot-security-config-mgt.md).
 
 
 ## Identify onboarded devices
@@ -60,14 +60,13 @@ Use the following steps to validate that your endpoints have successfully comple
 
 2.  In the [Azure Active Directory portal](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/MsGraphUsers), verify that the device has successfully been enrolled.
 
-3.  In the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview),  verify that the device has successfully been enrolled by looking it up in
-    the **Devices > All devices** section.
+3.  In the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview),  verify that the device has successfully been enrolled by looking it up in the **Devices > All devices** section.
 
 
 ## Offboard devices
-To offboard devices that have been onboarded via the Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
+To offboard devices that have been onboarded via Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
 
->![NOTE]
+>[!NOTE]
 >Offboarding will [disable Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) if it is enabled.
 
 
