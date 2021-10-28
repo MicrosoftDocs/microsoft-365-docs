@@ -24,7 +24,7 @@ You can set up email notifications for your security team. Then, as alerts are g
 
 :::image type="content" source="media/mdb-wizard-email-notifications.png" alt-text="Set up email notifications in Microsoft Defender for Business.":::
 
-You can choose from two types of notifications, as described in the following table:
+You can choose from two types of notifications, as described in the following table: <br/><br/>
 
 
 | Notification type  | Description  |
