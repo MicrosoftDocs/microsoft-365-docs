@@ -20,17 +20,21 @@ description: "Learn how named entities help you detect sensitive items containin
 
 # Learn about named entities (preview)
 
- *Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
+
+
+*Named entities* are [sensitive information types](sensitive-information-type-learn-about.md) (SIT). They're complex dictionary and pattern-based classifiers that you can use to detect person names, physical addresses, and medical terms and conditions. You can see them in the **Compliance Center > Data classification > Sensitive info types**. Here is a partial list of where you can use SITs:
 
 - [Data loss prevention policies (DLP)](data-loss-prevention-policies.md) 
 - [Sensitivity labels](sensitivity-labels.md)
-- [Inside risk management](insider-risk-management-solution-overview.md)
+- [Insider risk management](insider-risk-management-solution-overview.md)
 - [Microsoft Cloud App Security](https://cloud-app-security/what-is-cloud-app-security)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
  and use a named entity SIT as a condition.
 
 <!-- There are many other SITs that detect strings like social security, credit card, or bank account numbers to identify sensitive items. For more information, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).-->
+
+
 
 ## Examples of named entity SITs
 

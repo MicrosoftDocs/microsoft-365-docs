@@ -20,6 +20,9 @@ description: "Use these procedures to take advantage of named entities in your d
 
 # Use named entities in your data loss prevention policies (preview)
 
+> [!IMPORTANT]
+> The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
+
 Read through [Learn about named entities (preview)](named-entities-learn.md) before you start to use them.
 
 ## Before you begin
@@ -33,6 +36,8 @@ You have to have one of these subscriptions
 - Office 365 E5
 - Microsoft 365 E5
 
+For full licensing details see, [the service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
+
 ### Permissions
 
 The account you use to create and edit data loss prevention (DLP) policies, must have the **DLP Compliance Management** role permissions. For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
@@ -42,7 +47,6 @@ The account you use to create and edit data loss prevention (DLP) policies, must
 
 You can use named entity SITs and enhanced policies to detect and protect sensitive items in these locations:
 
-- Exchange email
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
@@ -54,16 +58,16 @@ Named entity SITs and enhanced policies are not supported for:
 
 ## Create and edit enhanced policies
 
-To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) or [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+To create or edit a DLP policy, use the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
 
 ## Workloads and services that support named entities
 
-- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
-- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Cloud App Security (MCAS)** supports the use of named entities in MCAS policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-
+<!-- - **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
+<!-- - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
 ### Unified DLP
 
 |Workload/Services  |Public Preview Support for Named Entities  |
