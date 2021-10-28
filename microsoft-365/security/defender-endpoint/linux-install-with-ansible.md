@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux with Ansible
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Ansible.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -136,7 +136,7 @@ Create a subtask or role files that contribute to a playbook or task.
     In the following commands, replace *[distro]* and *[version]* with the information you've identified.
 
     > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with "rhel".
+    > In case of Oracle Linux and Amazon Linux 2, replace *[distro]* with "rhel".
 
   ```bash
   - name: Add Microsoft APT key

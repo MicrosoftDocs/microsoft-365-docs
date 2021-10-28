@@ -23,11 +23,8 @@ description: "Learn how to get Email apps usage report to know about email apps 
 
 # Microsoft 365 Reports in the admin center - Email apps usage
 
-The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the email apps usage report, you can see how many email apps are connecting to Exchange Online. You can also see the version information of Outlook apps that users are using, which will allow you to follow up with those who are using unsupported versions to install supported versions of Outlook.
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the email apps usage report, you can see how many email apps are connecting to Exchange Online. You can also see the version information of Outlook apps that users are using, which will allow you to follow up with those who are using unsupported versions to install supported versions of Outlook.
   
-> [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
- 
 ## How to get to the email apps report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
@@ -42,7 +39,7 @@ You can get a view into email apps activity by looking at the **Users** and **Cl
   
 |Item|Description|
 |:-----|:-----|
-|1.  <br/> |The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table (7) will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
+|1.  <br/> |The **Email apps usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).  <br/> |
 |2.  <br/> |The data in each report usually covers up to the last 24 to 48 hours.  <br/> |
 |3.  <br/> |The **Users** view shows you the number of unique users that connected to Exchange Online using any email app.  <br/> |
 |4.  <br/> |The **Apps** view shows you the number of unique users by app over the selected time period.  <br/> |
