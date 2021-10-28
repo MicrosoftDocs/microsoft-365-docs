@@ -94,7 +94,7 @@ For more information, see:
 
 Hackers who gain access to a user's mailbox can steal mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. To prevent this from happening, configure a mail flow rule.
 
-To create a mail transport rule, either watch [this short video](../../business-video/stop-email-auto-forward.md) or follow these steps:
+To create a mail transport rule, follow these steps:
 
 1. In the Microsoft 365 admin center, select **Admin centers** \> **Exchange**.
 
