@@ -19,9 +19,7 @@ ms.collection:
 
 # Cross-tenant mailbox migration (preview)
 
-Cross-tenant mailbox migration
-
-Commonly, during mergers or divestitures, you need the ability to move your user’s Exchange Online mailbox into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well known interfaces like Remote PowerShell and MRS to transition users to their new organization.
+Commonly, during mergers or divestitures, you need the ability to move your user's Exchange Online mailbox into a new tenant. Cross-tenant mailbox migration allows tenant administrators to use well known interfaces like Remote PowerShell and MRS to transition users to their new organization.
 
 Administrators can use the New-MigrationBatch cmdlet, available through the Move Mailboxes management role, to execute cross-tenant moves.
 
@@ -34,7 +32,7 @@ Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or 
 This article describes the process for cross-tenant mailbox moves and provides guidance on how to prepare source and target tenants for the Exchange Online mailbox content moves.
 
    > [!NOTE]
-   > We’ve recently updated our setup steps to enable cross-tenant mailbox migration to no longer require Azure Key Vault! If this is the first time you are onboarding to this preview, no action is required, and you can go ahead and follow the steps detailed in this document. If you have started configuring your tenants using the previous AKV method, we highly recommend you stop or remove that configuration to begin using this new method. If you have mailbox migrations in progress with the previous AKV method, then please wait until your existing migrations are complete and follow the steps below to enable the new simplified method. Azure Key Vault required setup steps are archived but can be found **[here](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**, for reference.
+   > We've recently updated our setup steps to enable cross-tenant mailbox migration to no longer require Azure Key Vault! If this is the first time you are onboarding to this preview, no action is required, and you can go ahead and follow the steps detailed in this document. If you have started configuring your tenants using the previous AKV method, we highly recommend you stop or remove that configuration to begin using this new method. If you have mailbox migrations in progress with the previous AKV method, then please wait until your existing migrations are complete and follow the steps below to enable the new simplified method. Azure Key Vault required setup steps are archived but can be found **[here](https://github.com/microsoft/cross-tenant/wiki/V1-Content#cross-tenant-mailbox-migration-preview)**, for reference.
 
 ## Preparing source and target tenants
 
@@ -55,24 +53,29 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Log into your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials  
-![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
+1. Log into your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials
+
+   ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
 2. Under Azure's services, click on Azure Active Directory.
 
 3. On the left navigation bar, select App registrations.
 
-4. Select New application  
-![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
+4. Select New application
 
-5. Select Create your own application  
-![AAD Gallery](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
+   ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-6. Enter a name for your application (can be specific to your organization’s naming conventions) and select the Register an application to integrate with Azure AD, then Create.  
-![Application Creation](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
+5. Select Create your own application
 
-7. On the Register an application page, under Supported account types, Select Accounts in any organizational directly (Any Azure AD directory – Multitenant). Then under Redirect URI (optional) select Web and enter <https://office.com>. Last, select Register.  
-![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
+   ![AAD Gallery](../media/tenant-to-tenant-mailbox-move/520912f9ff0b3d61b0b6296788513c89.png)
+
+6. Enter a name for your application (can be specific to your organization's naming conventions) and select the Register an application to integrate with Azure AD, then Create.
+
+   ![Application Creation](../media/tenant-to-tenant-mailbox-move/11dfb852b188be5a7e57f9df5836d20e.png)
+
+7. On the Register an application page, under Supported account types, Select Accounts in any organizational directly (Any Azure AD directory - Multitenant). Then under Redirect URI (optional) select Web and enter <https://office.com>. Last, select Register.
+
+   ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
 8. On the top right corner of the page, you will see a notification pop up that states the app was successfully created.
 
@@ -84,25 +87,29 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 12. Now, on the left navigation bar, click on API permissions to view permissions assigned to your app.
 
-13. By default, User.Read permissions are assigned to the app you just created, but we do not require them for mailbox migrations, you can remove that permission.  
-![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
+13. By default, User.Read permissions are assigned to the app you just created, but we do not require them for mailbox migrations, you can remove that permission.
+
+    ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
 14. Now we need to add permission for mailbox migration, select Add a permission
 
-15. In the Request API permissions windows, select APIs my organization users, and search for office 365 exchange online, select it.  
-![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
+15. In the Request API permissions windows, select APIs my organization users, and search for office 365 exchange online, select it.
+
+    ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
 16. Next, select Application permissions
 
-17. Then, under Select permissions, expand Mailbox, and check Mailbox.Migration, and Add permissions at the bottom on the screen.  
-![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
+17. Then, under Select permissions, expand Mailbox, and check Mailbox.Migration, and Add permissions at the bottom on the screen.
+
+    ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
 18. Now select Certificates & secrets on the left navigation bar for your application.
 
-19. Under Client secrets, select new client secret.  
-![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
+19. Under Client secrets, select new client secret.
 
-20. In the Add a client secret window, enter a description, and configure your desired expiration settings.  
+    ![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
+
+20. In the Add a client secret window, enter a description, and configure your desired expiration settings.
 
       > [!NOTE]
       > This is the password that will be used when creating your migration endpoint. It is extremely important that you copy this password to your clipboard and or copy this password to secure/secret password safe location. This is the only time you will be able to see this password! If you do somehow lose it or need to reset it, you can log back into our Azure portal, go to App registrations, find your migration app, select Secrets & certificates, and create a new secret for your app.
@@ -117,14 +124,16 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 25. Formulate the URL to send to your trusted partner (source tenant admin) so they can also accept the application to enable mailbox migration. Here is an example of the URL to provide to them you will need the application ID of the app you just created:
 
-      ```powershell
-      https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
-      ```
+    ```powershell
+    https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
+    ```
 
-      > [!NOTE]
-      > You will need the application ID of the mailbox migration app you just created.  
-      > You will need to replace sourcetenant.onmicrosoft.com in the above example with your source tenants correct onmicrosoft.com name.  
-      > You will also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.  
+    > [!NOTE]
+    > You will need the application ID of the mailbox migration app you just created.
+    >
+    > You will need to replace sourcetenant.onmicrosoft.com in the above example with your source tenants correct onmicrosoft.com name.
+    >
+    > You will also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
 ### Prepare the target tenant by creating the Exchange Online migration endpoint and organization relationship
 
@@ -136,27 +145,27 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    > You will need the application ID of the mailbox migration app you just created and the password (the secret) you configured during this process. Also depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-endpoints) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
 
    ```powershell
-   $AppId = "[guid copied from the migrations app]"  
+   $AppId = "[guid copied from the migrations app]"
 
-   $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)  
+   $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
 
-   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name “[the name of your migration endpoint]” -ApplicationId $AppId  
+   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
 3. Create new or edit your existing organization relationship object to your source tenant.
 
    ```powershell
-   $sourceTenantId="[tenant id of your trusted partner, where the source mailboxes are]"  
-   $orgrels=Get-OrganizationRelationship  
-   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $sourceTenantId}  
-   If ($null -ne $existingOrgRel)  
-   {  
-       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound  
-   }  
-   If ($null -eq $existingOrgRel)  
-   {  
-       New-OrganizationRelationship “[name of the new organization relationship]” -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound -DomainNames $sourceTenantId  
-   }  
+   $sourceTenantId="[tenant id of your trusted partner, where the source mailboxes are]"
+   $orgrels=Get-OrganizationRelationship
+   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $sourceTenantId}
+   If ($null -ne $existingOrgRel)
+   {
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound
+   }
+   If ($null -eq $existingOrgRel)
+   {
+       New-OrganizationRelationship "[name of the new organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability Inbound -DomainNames $sourceTenantId
+   }
    ```
 
 ### Prepare the source (current mailbox location) tenant by accepting the migration application and configuring the organization relationship
@@ -168,27 +177,27 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    ```
 
    > [!NOTE]
-   > You will need the application ID of the mailbox migration app you just created.  
-   > You will need to replace sourcetenant.onmicrosoft.com in the above example with your source tenants correct onmicrosoft.com name.  
-   > You will also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.  
+   > You will need the application ID of the mailbox migration app you just created.
+   > You will need to replace sourcetenant.onmicrosoft.com in the above example with your source tenants correct onmicrosoft.com name.
+   > You will also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
 2. Accept the application when the pop up appears. You can also log into your Azure Active Directory portal and find the application under Enterprise applications.
 
 3. Create new or edit your existing organization relationship object to your target (destination) tenant from an Exchange Online Remote PowerShell window.
 
    ```powershell
-   $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"  
-   $appId="[application id of the mailbox migration app you consented to]"  
-   $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"  
-   $orgrels=Get-OrganizationRelationship  
-   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}  
-   If ($null -ne $existingOrgRel)  
-   { 
-       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope 
-   } 
-   If ($null -eq $existingOrgRel) 
-   { 
-       New-OrganizationRelationship “[name of your organization relationship]” -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
+   $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
+   $appId="[application id of the mailbox migration app you consented to]"
+   $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
+   $orgrels=Get-OrganizationRelationship
+   $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
+   If ($null -ne $existingOrgRel)
+   {
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
+   }
+   If ($null -eq $existingOrgRel)
+   {
+       New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
 
@@ -197,7 +206,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
-   > Test-MigrationServerAvailability -Endpoint “[the name of your cross-tenant migration endpoint]” -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
+   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]" -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
 
 ### Move mailboxes back to the original source
 
@@ -214,12 +223,12 @@ You must ensure the following objects and attributes are set in the target organ
 1. For any mailbox moving from a source organization, you must provision a MailUser object in the Target organization:
 
    - The Target MailUser must have these attributes from the source mailbox or assigned with the new User object:
-      - ExchangeGUID (direct flow from source to target) – The mailbox GUID must match. The move process will not proceed if this is not present on target object.
-      - ArchiveGUID (direct flow from source to target) – The archive GUID must match. The move process will not proceed if this is not present on the target object. (This is only required if the source mailbox is Archive enabled).
-      - LegacyExchangeDN (flow as proxyAddress, “x500:\<LegacyExchangeDN>”) – The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes will not proceed if these are not present on the target object.
-      - UserPrincipalName – UPN will align to the user’s NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
-      - Primary SMTPAddress – Primary SMTP address will align to the user’s NEW company (for example, user@northwind.com).
-      - TargetAddress/ExternalEmailAddress – MailUser will reference the user’s current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures.
+      - ExchangeGUID (direct flow from source to target): The mailbox GUID must match. The move process will not proceed if this is not present on target object.
+      - ArchiveGUID (direct flow from source to target): The archive GUID must match. The move process will not proceed if this is not present on the target object. (This is only required if the source mailbox is Archive enabled).
+      - LegacyExchangeDN (flow as proxyAddress, "x500:\<LegacyExchangeDN>"): The LegacyExchangeDN must be present on target MailUser as x500: proxyAddress. In addition, you also need to copy all x500 addresses from the source mailbox to the target mail user. The move processes will not proceed if these are not present on the target object.
+      - UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
+      - Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwind.com).
+      - TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When assigning this value, verify that you have/are also assigning PrimarySMTPAddress or this value will set the PrimarySMTPAddress which will cause move failures.
       - You cannot add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you cannot maintain contoso.com on the MEU in fabrikam.onmicrosoft.com tenant objects). Domains are associated with one Azure AD or Exchange Online tenant only.
 
      Example **target** MailUser object:
@@ -270,8 +279,8 @@ You must ensure the following objects and attributes are set in the target organ
     > This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
 
     ```powershell
-    $ELCValue = 0  
-    if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}  
+    $ELCValue = 0
+    if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}}
     ```
 
 3. Non-hybrid target tenants can modify the quota on the Recoverable Items folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the MailUser object and increasing the quota to 100 GB: `Set-MailUser -EnableLitigationHoldForMigration`. Note this will not work for tenants in hybrid.
@@ -289,13 +298,13 @@ You must ensure the following objects and attributes are set in the target organ
     Find objects that were previously mailboxes using this command.
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -AutoSize  
+    Get-User <identity> | select Name, *recipient* | Format-Table -AutoSize
     ```
 
     Here is an example.
 
     ```powershell
-    Get-User John@northwindtraders.com |select name, *recipient*| ft -AutoSize  
+    Get-User John@northwindtraders.com |select name, *recipient*| Format-Table -AutoSize
 
     Name       PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails
     ----       ---------------------------- ------------- --------------------
@@ -305,17 +314,18 @@ You must ensure the following objects and attributes are set in the target organ
     Clear the soft-deleted mailbox using this command.
 
     ```powershell
-    Set-User <identity> -PermanentlyClearPreviousMailboxInfo  
+    Set-User <identity> -PermanentlyClearPreviousMailboxInfo
     ```
 
     Here is an example.
 
     ```powershell
-    Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm  
-    Are you sure you want to perform this action?  
-    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.  
-    Do you want to continue?  
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y  
+    Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo -Confirm
+    
+    Are you sure you want to perform this action?
+    Delete all existing information about user "John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.
+    Do you want to continue?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y
     ```
 
 ### Perform mailbox migrations
@@ -327,7 +337,7 @@ Cross-tenant Exchange mailbox migrations are initiated from the target tenant as
 Here is an example migration batch cmdlet for kicking off moves.
 
 ```powershell
-New-MigrationBatch -Name T2Tbatch -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain target.onmicrosoft.com  
+New-MigrationBatch -Name T2Tbatch -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain target.onmicrosoft.com
 
 Identity                   Status  Type               TotalCount
 --------                   ------  ----               ----------
@@ -336,7 +346,9 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 > [!NOTE]
 > The email address in the CSV file must be the one specified in the target tenant, not the source tenant.
+>
 > [For more information on the cmdlet click here](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
+>
 > [For an example CSV file click here](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
 Migration batch submission is also supported from the new Exchange Admin Center when selecting the cross-tenant option.
@@ -361,50 +373,50 @@ No, the Teams chat folder content does not migrate cross-tenant.
 
 **How can I see just moves that are cross-tenant moves, not my onboarding and off-boarding moves?**
 
-Use the `-flags` parameter. Here is an example.
+Use the _Flags_ parameter. Here is an example.
 
 ```powershell
-Get-MoveRequest -Flags "CrossTenant"  
+Get-MoveRequest -Flags "CrossTenant"
 ```
 
 **Can you provide example scripts for copying attributes used in testing?**
 
 > [!NOTE]
-> SAMPLE – AS IS, NO WARRANTY  
+> SAMPLE – AS IS, NO WARRANTY
 > This script assumes a connection to both source mailbox (to get source values) and the target on-premises Active Directory Domain Services (to stamp the ADUser object). If source has litigation or single item recovery enabled, set this on the destination account.  This will increase the dumpster size of destination account to 100 GB.
 
-   
+
 
    ```powershell
-   # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"  
-   # These are the ‘target’ users to be moved to the Northwind org tenant  
-   $outFileUsers = "$home\desktop\UsersToMigrate.txt"  
-   $outFileUsersXML = "$home\desktop\UsersToMigrate.xml"  
+   # This will export users from the source tenant with the CustomAttribute1 = "Cross-Tenant-Project"
+   # These are the 'target' users to be moved to the Northwind org tenant
+   $outFileUsers = "$home\desktop\UsersToMigrate.txt"
+   $outFileUsersXML = "$home\desktop\UsersToMigrate.xml"
    Get-Mailbox -Filter "CustomAttribute1 -like 'Cross-Tenant-Project'" -ResultSize Unlimited | Select-Object -ExpandProperty  Alias | Out-File $outFileUsers
-   $mailboxes = Get-Content $outFileUsers  
-   $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML  
+   $mailboxes = Get-Content $outFileUsers
+   $mailboxes | ForEach-Object {Get-Mailbox $_} | Select-Object PrimarySMTPAddress,Alias,SamAccountName,FirstName,LastName,DisplayName,Name,ExchangeGuid,ArchiveGuid,LegacyExchangeDn,EmailAddresses | Export-Clixml $outFileUsersXML
    ```
 
    ```powershell
-   # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target  
-   $mailboxes = Import-Clixml $home\desktop\UsersToMigrate.xml  
-   add-type -AssemblyName System.Web  
-   foreach ($m in $mailboxes) {  
-       $organization = "@contoso.onmicrosoft.com"  
-       $mosi = $m.Alias+$organization  
-       $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force  
-       $x500 = "x500:" +$m.LegacyExchangeDn  
-       $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password  
-       $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "Cross-Tenant-Project"  
-       $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}  
-       $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}  
-       }  
+   # Copy the file $outfile to the desktop of the target on-premises then run the below to create MEU in Target
+   $mailboxes = Import-Clixml $home\desktop\UsersToMigrate.xml
+   add-type -AssemblyName System.Web
+   foreach ($m in $mailboxes) {
+       $organization = "@contoso.onmicrosoft.com"
+       $mosi = $m.Alias+$organization
+       $Password = [System.Web.Security.Membership]::GeneratePassword(16,4) | ConvertTo-SecureString -AsPlainText -Force
+       $x500 = "x500:" +$m.LegacyExchangeDn
+       $tmpUser = New-MailUser -MicrosoftOnlineServicesID $mosi -PrimarySmtpAddress $mosi -ExternalEmailAddress $m.PrimarySmtpAddress -FirstName $m.FirstName -LastName $m.LastName -Name $m.Name -DisplayName $m.DisplayName -Alias $m.Alias -Password $Password
+       $tmpUser | Set-MailUser -EmailAddresses @{add=$x500} -ExchangeGuid $m.ExchangeGuid -ArchiveGuid $m.ArchiveGuid -CustomAttribute1 "Cross-Tenant-Project"
+       $tmpx500 = $m.EmailAddresses | ?{$_ -match "x500"}
+       $tmpx500 | %{Set-MailUser $m.Alias -EmailAddresses @{add="$_"}}
+       }
    ```
 
    ```powershell
-   # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant  
-   # This action should create the target mail enabled users (MEUs) in the Target tenant  
-   Start-ADSyncSyncCycle  
+   # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
+   # This action should create the target mail enabled users (MEUs) in the Target tenant
+   Start-ADSyncSyncCycle
    ```
 
 **How do we access Outlook on Day 1 after the use mailbox is moved?**
@@ -439,23 +451,23 @@ Mailbox permissions include Send on Behalf of and Mailbox Access:
 Here is an example of the output of the mailbox permission before a move.
 
 ```powershell
-Get-SourceMailboxPermission TestUser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny  
+Get-SourceMailboxPermission TestUser_7 | Format-Table -AutoSize User, AccessRights, IsInherited, Deny
 
-User                                             AccessRights                         IsInherited Deny  
-----                                             ------------                         ----------- ----  
-NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False  
-TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                         False       False  
+User                                             AccessRights                         IsInherited Deny
+----                                             ------------                         ----------- ----
+NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False
+TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                         False       False
 ```
 
 Here's an example of the output of the mailbox permission after the move.
 
 ```powershell
-Get-TargetMailboxPermission TestUser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny  
+Get-TargetMailboxPermission TestUser_7 | Format-Table -AutoSize User, AccessRights, IsInherited, Deny
 
-User                                             AccessRights                         IsInherited Deny  
-----                                             ------------                         ----------- ----  
-NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False  
-TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                         False       False  
+User                                             AccessRights                         IsInherited Deny
+----                                             ------------                         ----------- ----
+NT AUTHORITY\SELF                                {FullAccess, ReadPermission}         False       False
+TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                         False       False
 ```
 
 > [!NOTE]
@@ -468,11 +480,11 @@ The cross-tenant mailbox migration requires that the LegacyExchangeDN value of t
 Example:
 
 ```powershell
-LegacyExchangeDN value on source mailbox is:  
-/o=First Organization/ou=Exchange Administrative Group(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  
+LegacyExchangeDN value on source mailbox is:
+/o=First Organization/ou=Exchange Administrative Group(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara
 
-so, the x500 email address to be added to target MailUser object would be:  
-x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara  
+so, the x500 email address to be added to target MailUser object would be:
+x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara
 ```
 
 > [!NOTE]
@@ -531,7 +543,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
   - When you synchronize users from on-premises using Azure AD Connect, you provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (LaraN@contoso.onmicrosoft.com) and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwind.com). These values synchronize down to the tenant and an appropriate mail user is provisioned and ready for migration. An example object is shown here.
 
     ```powershell
-    Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses  
+    Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
 
     ExternalEmailAddress               EmailAddresses
     --------------------               --------------
@@ -541,22 +553,22 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
    > [!NOTE]
    > The *contoso.onmicrosoft.com* address is *not* present in the EmailAddresses / proxyAddresses array.
 
-- **Issue: MailUser objects with “external” primary SMTP addresses are modified / reset to “internal” company claimed domains**
+- **Issue: MailUser objects with "external" primary SMTP addresses are modified / reset to "internal" company claimed domains**
 
-  MailUser objects are pointers to non-local mailboxes. In the case for cross-tenant mailbox migrations, we use MailUser objects to represent either the source mailbox (from the target organization’s perspective) or target mailbox (from the source organization’s perspective). The MailUsers will have an ExternalEmailAddress (targetAddress) that points to the smtp address of the actual mailbox (ProxyTest@fabrikam.onmicrosoft.com) and primarySMTP address that represents the displayed SMTP address of the mailbox user in the directory. Some organizations choose to display the primary SMTP address as an external SMTP address, not as an address owned/verified by the local tenant (such as fabrikam.com rather than as contoso.com).  However, once an Exchange service plan object is applied to the MailUser via licensing operations, the primary SMTP address is modified to show as a domain verified by the local organization (contoso.com). There are two potential reasons:
+  MailUser objects are pointers to non-local mailboxes. In the case for cross-tenant mailbox migrations, we use MailUser objects to represent either the source mailbox (from the target organization's perspective) or target mailbox (from the source organization's perspective). The MailUsers will have an ExternalEmailAddress (targetAddress) that points to the smtp address of the actual mailbox (ProxyTest@fabrikam.onmicrosoft.com) and primarySMTP address that represents the displayed SMTP address of the mailbox user in the directory. Some organizations choose to display the primary SMTP address as an external SMTP address, not as an address owned/verified by the local tenant (such as fabrikam.com rather than as contoso.com).  However, once an Exchange service plan object is applied to the MailUser via licensing operations, the primary SMTP address is modified to show as a domain verified by the local organization (contoso.com). There are two potential reasons:
 
-  - When any Exchange service plan is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization is not able to send mail out, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address is not verified by the local organization. As is the case in the example, the Fabikam.com domain is NOT verified by the contoso.onmicrosoft.com tenant, so the scrubbing removes that fabrikam.com domain. If you wish to persist these external domains on MailUser, either before the migration or after migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You will need to ensure that the mailbox object is properly licensed to not affect mail service.  
+  - When any Exchange service plan is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization is not able to send mail out, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address is not verified by the local organization. As is the case in the example, the Fabikam.com domain is NOT verified by the contoso.onmicrosoft.com tenant, so the scrubbing removes that fabrikam.com domain. If you wish to persist these external domains on MailUser, either before the migration or after migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You will need to ensure that the mailbox object is properly licensed to not affect mail service.
   - An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
 
     ```powershell
-    $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"  
-    Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo  
+    $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
+    Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
     ```
 
        Results in the set of ServicePlans assigned are shown here.
 
     ```powershell
-    (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending  
+    (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus | Sort ProvisioningStatus -Descending
 
     ServicePlan           ProvisioningStatus
     -----------           ------------------
@@ -597,14 +609,14 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
     SWAY                  Success
     ```
 
-    The user’s PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
+    The user's PrimarySMTPAddress is no longer scrubbed. The fabrikam.com domain is not owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
 
     Here is an example.
 
     ```powershell
-    Get-Recipient ProxyTest | Format-Table -AutoSize UserPrincipalName, PrimarySmtpAddress, ExternalEmailAddress, ExternalDirectoryObjectId  
-    UserPrincipalName               PrimarySmtpAddress              ExternalEmailAddress                 ExternalDirectoryObjectId           
-    -----------------               ------------------              --------------------                 -------------------------           
+    Get-Recipient ProxyTest | Format-Table -AutoSize UserPrincipalName, PrimarySmtpAddress, ExternalEmailAddress, ExternalDirectoryObjectId
+    UserPrincipalName               PrimarySmtpAddress              ExternalEmailAddress                 ExternalDirectoryObjectId
+    -----------------               ------------------              --------------------                 -------------------------
     ProxyTest@fabrikam.com          ProxyTest@fabrikam.com          SMTP:ProxyTest@fabrikam.com          e2513482-1d5b-4066-936a-cbc7f8f6f817
     ```
 
