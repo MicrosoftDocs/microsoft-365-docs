@@ -36,7 +36,7 @@ You can choose from two types of notifications, as described in the following ta
 
 Whenever your security team signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Defender for Business is designed to highlight important information that your security team cares about as soon as they sign in.
 
-Your security team can also choose **Incidents** in the navigation pane to view information. Email notifications are another way to help keep your security team informed, in real time.
+Your security team can also choose **Incidents** in the navigation pane to view information. Email notifications are another way to help keep your security team informed, in real time. To learn more, see [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md).
 
 ## View and edit email notifications
 
