@@ -42,7 +42,18 @@ For detailed licensing information, [read the licensing requirements](prerequisi
 
 ### Check your role
 
-You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. [View your roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+You must be one of the following roles to turn on Microsoft 365 Defender:
+	•  Global administrator
+	•  Security administrator
+	•  Security Operator
+	•  Global Reader
+	•  Security Reader
+	• Compliance Admin
+	• Compliance Data Admin
+	• Application Admin
+* Cloud Application Admin
+
+[View your roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## Supported services
 
