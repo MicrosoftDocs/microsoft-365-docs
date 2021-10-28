@@ -28,4 +28,17 @@ If you're using Microsoft Endpoint Manager to manage your devices, you'll have a
 
 :::image type="content" source="media/mdb-intune-onboarded.png" alt-text="Card showing number of devices onboarded":::
 
-To onboard more devices, select the **Onboard more devices** link in the card. This action takes you to Microsoft Endpoint Manager, where you can create a device configuration profile.
+To onboard more devices, select the **Onboard more devices** link in the card. This action takes you to Microsoft Endpoint Manager, where you can create a device configuration profile. Alternately, you can use the following procedure.
+
+## Create a device configuration profile to onboard more devices
+
+1. Go to Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
+
+2. In the navigation pane, choose **Endpoint security**, and then under **Setup**, choose **Microsoft Defender for Endpoint**.
+
+3. Scroll down to where you see the card that lists devices with and without the Defender for Endpoint sensor. Select **Create a device configuration profile to configure Microsoft Defender for Endpoint sensor**.
+
+4. Set up your policy. If you need help, see [Create the device configuration profile to onboard Windows devices](/mem/intune/protect/advanced-threat-protection-configure).
+
+## Next steps
+
