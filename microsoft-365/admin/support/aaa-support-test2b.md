@@ -32,18 +32,20 @@ Admins, have your account details ready when you call.
 [Canada](#canada)\
 [United States](#united-states)\
 [Brazil](#brazil)\
-[United Kingdom](#united-kingdom)\
+[United Kingdom](#united-kingdom)
+   :::column-end:::
+   :::column:::
 [Netherlands](#netherlands)\
 [France](#france)\
 [Germany](#germany)\
+[Spain](#spain)
    :::column-end:::
    :::column:::
-[Spain](#spain)\
-[Italy](#italy)
+[Italy](#italy)\
 [Australia](#australia)\
 [Russia](#russia)
 [China](#china)\
-[Japan](#japan)\
+[Japan](#japan)
    :::column-end:::
 :::row-end:::
 
@@ -51,7 +53,30 @@ Admins, have your account details ready when you call.
 
 If your support phone number isn't listed above, use the sections below to find the number for your country or region.
 
-Jump to section: [A - D](#a---d) | [E - L](#e---l) | [M - R](#m---r) | [S - Z](#s---z)
+Jump to section:
+
+[Northern America](#northern-america) | [Central America](#central-america) | [Caribbean](#caribbean) | [South America](#south-america) | [Europe](#europe) | [Africa](#africa) | [Middle East](#middle-east) | [Asia](#asia) | [Pacific](#pacific) | [Antarctica](#antarctica)
+
+## Northern America
+
+
+## Central America
+
+## Caribbean
+
+## South America
+
+## Europe
+
+## Africa
+
+## Middle East
+
+## Asia
+
+## Pacific
+
+## Antarctica
 
 ## A - D
 
@@ -274,7 +299,7 @@ International call charges apply
 
 ### Chile  
 
-### China PRC  
+### China
 
 ### Christmas Island  
 
