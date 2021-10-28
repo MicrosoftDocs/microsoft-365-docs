@@ -30,6 +30,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
   
 If Wix is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
+
 After you add these records at Wix, your domain will be set up to work with Microsoft services.
   
 > [!NOTE]
