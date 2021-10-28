@@ -30,6 +30,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
   
 If Wix is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
 
+
 After you add these records at Wix, your domain will be set up to work with Microsoft services.
   
 > [!NOTE]
@@ -37,7 +38,7 @@ After you add these records at Wix, your domain will be set up to work with Micr
  
 ## Add a TXT record for verification
 
-Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
+Before you use your domain with Microsoft, we have to make sure you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later if you like. 
@@ -62,7 +63,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    
 5. Select**Save**. 
     
-   Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+   Wait a few minutes before you continue, so that the record you created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified. 
 
@@ -150,7 +151,7 @@ To verify the record in Microsoft 365:
 
 ## Advanced option: Skype for Business
 
-Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs four records: two SRV records for user-to-user communication, and two CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
 
