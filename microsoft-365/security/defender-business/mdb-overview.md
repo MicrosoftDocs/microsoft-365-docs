@@ -51,63 +51,15 @@ The following table summarizes the features and capabilities available in Micros
 
 | Capability | Description |
 |---|---|
-| [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
-| [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
 | [Threat & vulnerability management](#threat-and-vulnerability-management) (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
+| [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
+| [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
 | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Several setup and configuration options](#setup-and-configuration-options) <br/>- [Role-based access control](#role-based-access-control)<br/>- [Reports](#reporting)  |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. To learn more, see [APIs](#apis). |
 
 The following sections provide more details about what's included in Microsoft Defender for Business.
-
-## Next-generation protection
-
-Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for Business includes:
-
-- Behavior-based, heuristic, and real-time antivirus protection. Files or processes that have suspicious attributes or exhibit malicious behaviors are stopped in their tracks, and are analyzed immediately.
-- Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
-- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus. Microsoft works continuously to deliver updates that include antimalware, antivirus, and security intelligence updates. 
-
-To learn more, see [Next-generation protection](../defender-endpoint/next-generation-protection.md).
-
-## Endpoint detection and response
-
-Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for Business includes these EDR capabilities:
-
-- [Behavioral-based detection](#behavioral-based-detection)
-- [Manual response actions](#manual-response-actions)
-- [Live response](#live-response)
-
-### Behavioral-based detection
-
-Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when a threat has started execution. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
-
-To learn more, see [Behavioral blocking and containment](../defender-endpoint/behavioral-blocking-containment.md).
-
-### Manual response actions
-
-Microsoft Defender for Business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
-
-The following table the manual response actions that are available in your plan.
-
-| File/Device | Response action | Description |
-|:---|:---|:---|
-| Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
-| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Microsoft Defender for Business. This action enables you to monitor the device and take further action if needed. |
-| File | Stop and quarantine | Stops processes from running and quarantines associated files. |
-| File | Add an indicator to block or allow a file | *Block* indicators prevent portable executable files from being read, written, or executed on devices. <p> *Allow* indicators prevent files from being blocked or remediated.  |
-
-To learn more, see the following articles: 
-
-- [Take response actions on a device](../defender-endpoint/respond-machine-alerts.md) 
-- [Take response actions on a file](../defender-endpoint/respond-file-alerts.md)
-
-### Live response
-
-Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
-
-To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
 
 ## Threat and vulnerability management
 
@@ -176,6 +128,54 @@ With network firewall protection, you can set rules that determine which network
 - Extend your security investment
 
 To learn more, see [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+
+## Next-generation protection
+
+Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. Next-generation protection in Microsoft Defender for Business includes:
+
+- Behavior-based, heuristic, and real-time antivirus protection. Files or processes that have suspicious attributes or exhibit malicious behaviors are stopped in their tracks, and are analyzed immediately.
+- Cloud-delivered protection, which includes near-instant detection and blocking of new and emerging threats. As threats are detected, they’re sent to the cloud for immediate analysis. If they’re determined to be malicious, they’re logged as such, and are blocked immediately. Detection, blocking, analysis, and determination happens almost instantly. Other users/customers (in addition to your organization) benefit from these capabilities, too, as the newly identified threats are now blocked on their devices.
+- Dedicated protection and product updates, including updates related to Microsoft Defender Antivirus. Microsoft works continuously to deliver updates that include antimalware, antivirus, and security intelligence updates. 
+
+To learn more, see [Next-generation protection](../defender-endpoint/next-generation-protection.md).
+
+## Endpoint detection and response
+
+Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond. Microsoft Defender for Business includes these EDR capabilities:
+
+- [Behavioral-based detection](#behavioral-based-detection)
+- [Manual response actions](#manual-response-actions)
+- [Live response](#live-response)
+
+### Behavioral-based detection
+
+Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when a threat has started execution. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks. 
+
+To learn more, see [Behavioral blocking and containment](../defender-endpoint/behavioral-blocking-containment.md).
+
+### Manual response actions
+
+Microsoft Defender for Business includes certain [response actions](../defender-endpoint/respond-machine-alerts.md) that can be taken when a device is detected as potentially compromised or having suspicious content. You can also run [response actions on files](../defender-endpoint/respond-file-alerts.md) that are detected as threats.
+
+The following table the manual response actions that are available in your plan.
+
+| File/Device | Response action | Description |
+|:---|:---|:---|
+| Device | Run antivirus scan | Starts an antivirus scan. If any threats are detected on the device, they’re often addressed during the scan. |
+| Device | Isolate device | Disconnects a device from your organization’s network while retaining connectivity to Microsoft Defender for Business. This action enables you to monitor the device and take further action if needed. |
+| File | Stop and quarantine | Stops processes from running and quarantines associated files. |
+| File | Add an indicator to block or allow a file | *Block* indicators prevent portable executable files from being read, written, or executed on devices. <p> *Allow* indicators prevent files from being blocked or remediated.  |
+
+To learn more, see the following articles: 
+
+- [Take response actions on a device](../defender-endpoint/respond-machine-alerts.md) 
+- [Take response actions on a file](../defender-endpoint/respond-file-alerts.md)
+
+### Live response
+
+Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
+
+To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
 
 ## Automated investigation and response
 
