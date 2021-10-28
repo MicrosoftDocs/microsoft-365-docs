@@ -21,6 +21,9 @@ ms.prod: m365-security
 
 # Quarantine policies
 
+> [!NOTE]
+> The features that are described in this article are in the process of being rolled out, and might not be available to you yet. The target date for world wide rollout is October 31, 2021.
+
 Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Protection (EOP) and Microsoft Defender for Office 365 allow admins to control what users are able to do to quarantined messages based on why the message was quarantined.
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.

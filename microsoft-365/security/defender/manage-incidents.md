@@ -2,7 +2,6 @@
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
 keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,7 +19,6 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-  - MET150
 ms.technology: m365d
 ---
 

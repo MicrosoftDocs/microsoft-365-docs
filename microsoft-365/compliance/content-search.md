@@ -24,7 +24,7 @@ description: "Use the Content search eDiscovery tool in the compliance center to
 
 # Create a content search
 
-You can use the Content search eDiscovery tool in the Microsoft 365 compliance center to search for in-place content such as email, documents, and instant messaging conversations in your organization. Use this tool to search for content in these Microsoft 365 data sources:
+You can use the Content search eDiscovery tool in the Microsoft 365 compliance center to search for in-place content such as email, documents, and instant messaging conversations in your organization. Use this tool to search for content in these cloud-based Microsoft 365 data sources:
   
 - Exchange Online mailboxes
 
@@ -38,13 +38,17 @@ You can use the Content search eDiscovery tool in the Microsoft 365 compliance c
 
 After you run a search, the number of content locations and an estimated number of search results are displayed on the search flyout page. You can quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
-## Create and run a search
+## Before you run a search
 
-To access to the **Content search** page in the Microsoft 365 compliance center (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+- To access to the Content search tool in the Microsoft 365 compliance center (to run searches and preview results and export results), an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Microsoft 365 compliance center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+
+- In an Exchange hybrid deployment, you can't use the Content search tool to search on-premises mailboxes. You can only use the tool to search cloud-based mailboxes.
+
+## Create and run a search
   
 1. Go to <https://compliance.microsoft.com> and sign in using the credentials of an account that's been assigned the appropriate permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Content search**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Content search**.
 
 3. On the **Content search** page, click **New search**.
 
@@ -57,7 +61,7 @@ To access to the **Content search** page in the Microsoft 365 compliance center 
 
     ![Choose the content locations to place on hold.](../media/ContentSearchLocations.png)
   
-   1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also search the mailbox associated with a Microsoft Team (for channel messages), Office 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
+   1. **Exchange mailboxes**: Set the toggle to **On** and then click **Choose users, groups, or teams** to specify the mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups. You can also search the mailbox associated with a Microsoft Team (for channel messages), Office 365 Group, and Yammer Group. For more information about the application data stored in mailboxes, see [Content stored in mailboxes for eDiscovery](what-is-stored-in-exo-mailbox.md).
 
    2. **SharePoint sites**: Set the toggle to **On** and then click **Choose sites** to specify SharePoint sites and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group, or Yammer Group.
   

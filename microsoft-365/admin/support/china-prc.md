@@ -1,5 +1,5 @@
 ---                                
-title: Support information for China (PRC)
+title: Support information for China
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -14,7 +14,7 @@ description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Contact support for China (PRC)
+# Contact support for China
 
 [Find another country or region](../../business-video/get-help-support.md).
 
