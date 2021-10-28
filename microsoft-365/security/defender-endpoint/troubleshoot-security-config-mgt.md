@@ -46,7 +46,7 @@ You'll need to ensure the following: 
   - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
 >[!NOTE]
->Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in AAD Connect" section below](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect). 
+>Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. For more info, see [Instructions for applying Computer Join rule in AAD Connect](#instructions-for-applying-computer-join-rule-in-aad-connect), later in this article.
 
  
 
@@ -68,12 +68,12 @@ From the information in the message, it's possible in most cases to understand 
 
 If you weren't able to identify the onboarded device in AAD or MEM, and did not receive an error during the enrollment, checking the registry key `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` can provide additional troubleshooting information.  
 
-![Image of enrollment status](images/enrollment-status.png)
+:::image type="content" alt-text="Image of enrollment status." source="images/enrollment-status.png":::
 
 The table below lists errors and directions on what to try/check in order to address the error. Note that the list of errors is not complete and is based on typical/common errors encountered by customers in the past: 
 
 
-| **Error Code**  |**Administrator Actions **                                                                                                                                                                                                                                                                                                  |
+| Error Code  |Administrator Actions                                                                                                                                                                                                                                                                                                  |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **13-14**       |Review the [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint pre-requisites](/microsoft-365/security/defender-endpoint/security-config-management#onboard-devices) to ensure the endpoints to complete and Hybrid Azure Active Directory Join are available.                   |
 | **15**          |Make sure the AAD Tenant ID from your MDE Tenant matches the tenant ID in the SCP Entry of your domain.                                                                                                                                                                                                                     |
@@ -99,7 +99,7 @@ The table below lists errors and directions on what to try/check in order to 
 For Microsoft Defender for Endpoint configuration management on Windows Server 2012 R2 domain joined computers, an update to Azure AD Connect sync rule "In from AD-Computer Join" is needed. This can be achieved by cloning and modifying the rule, which will disable the original "In from AD - Computer Join" rule. Azure AD Connect by default offers this experience for making changes to built-in rules.
 
 >[!NOTE]
->These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances.* 
+>These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances. 
 
 1. Open the Synchronization Rules Editor application from the start menu. In the rule list, locate the rule named 'In from AD – Computer Join'. **Take note of the value in the 'Precedence' column for this rule.** 
 
@@ -122,35 +122,35 @@ For Microsoft Defender for Endpoint configuration management on Windows Server 2
 6. Paste the content for the new rule into the textbox. 
 
 
-```command
-IIF(
-  IsNullOrEmpty([userCertificate])
-  || 
-  (
-    (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
-    && 
-    (Left([operatingSystemVersion],2) = "6.")
-    &&
-    (Left([operatingSystemVersion],3) <> "6.3")
-  )
-  ||
-  (
-    (Left([operatingSystemVersion],3) = "6.3") 
-    &&
-    (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
-    &&
-    With(
-      $validCerts,
-      Where(
-        $c, 
-        [userCertificate], 
-        IsCert($c) && CertNotAfter($c) > Now() && RegexIsMatch(CertSubject($c), "CN=[{]*" & StringFromGuid([objectGUID]) & "[}]*", "IgnoreCase")),
-      Count($validCerts) = 0)
-  ),
-  True,
-  NULL
-)
+    ```command
+    IIF(
+      IsNullOrEmpty([userCertificate])
+      || 
+      (
+        (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
+        && 
+        (Left([operatingSystemVersion],2) = "6.")
+        &&
+        (Left([operatingSystemVersion],3) <> "6.3")
+      )
+      ||
+      (
+        (Left([operatingSystemVersion],3) = "6.3") 
+        &&
+        (InStr(UCase([operatingSystem]),"WINDOWS") > 0)
+        &&
+        With(
+          $validCerts,
+          Where(
+            $c, 
+            [userCertificate], 
+            IsCert($c) && CertNotAfter($c) > Now() && RegexIsMatch(CertSubject($c), "CN=[{]*" & StringFromGuid([objectGUID]) & "[}]*", "IgnoreCase")),
+          Count($validCerts) = 0)
+      ),
+      True,
+      NULL
+    )
 
-```
+    ```
 
 7.  Select **Save** to save the new rule.
