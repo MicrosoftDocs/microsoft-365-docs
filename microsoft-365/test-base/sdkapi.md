@@ -44,7 +44,7 @@ Azure Command-Line Interface (CLI)
 
 - Install library packages by using pip install from console 
 
-```azurecli-interactive
+```
 pip install azure-identity 
 pip install azure-mgmt-testbase	 
 ```
@@ -55,7 +55,7 @@ When debugging and executing code locally it is typical for developers to use th
 
 Check [How to authenticate Python applications with Azure services](https://docs.microsoft.com/en-us/azure/developer/python/azure-sdk-authenticate) | Microsoft Docs and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
 
-```azurecli-interactive
+```
 az login 
 ```
 
