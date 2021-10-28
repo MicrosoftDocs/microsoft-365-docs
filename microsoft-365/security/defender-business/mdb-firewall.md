@@ -55,3 +55,9 @@ Microsoft Defender for Business includes firewall protection through Windows Def
 - [Learn more about firewall settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md#firewall)
 
 - [Learn more about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

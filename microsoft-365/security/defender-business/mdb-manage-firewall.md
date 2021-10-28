@@ -88,3 +88,9 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
 5. Select a rule, and then choose **Delete**. Its flyout opens.
 
 6. On the confirmation screen, choose **Delete**. 
+
+## Next steps
+
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)

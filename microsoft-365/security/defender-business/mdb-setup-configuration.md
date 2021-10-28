@@ -42,9 +42,11 @@ Whether you have assistance or are doing it yourself, use this article as a guid
 Proceed to:
 
 - [Review the requirements for Microsoft Defender for Business](mdb-requirements.md)
+
 - [Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md) 
  
 ## See also
 
 - [How to get Microsoft Defender for Business](get-defender-business.md)
+
 - [Microsoft Defender for Business documentation](index.yml)

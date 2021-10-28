@@ -50,6 +50,15 @@ The following table lists your settings and options:<br/><br/>
 | File and folder exclusions | Exclude files that are in specific folders from Microsoft Defender Antivirus scans. [Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md). |
 
 
+## Next steps
+
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+
+
 ## See also
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
@@ -59,3 +68,4 @@ The following table lists your settings and options:<br/><br/>
 - [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md) 
 
 - [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
+
