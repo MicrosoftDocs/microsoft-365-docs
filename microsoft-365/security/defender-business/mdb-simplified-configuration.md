@@ -50,3 +50,5 @@ Defender for Business is designed to provide strong protection while saving you 
 ## Next step
 
 - [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
+
+- [Get started using Microsoft Defender for Business](mdb-get-started.md)

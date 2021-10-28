@@ -36,5 +36,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 ## Next steps
 
 - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365bp.md)
+
 - [Learn more about Microsoft Defender for Business](mdb-overview.md)
+
 - [See the setup and configuration process for Microsoft Defender for Business](mdb-setup-configuration.md)
