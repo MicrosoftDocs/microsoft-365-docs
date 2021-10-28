@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -27,7 +27,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft Defender for Business (currently in preview!). To apply for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).*<br/><br/>**TIP**: You don't have to another Microsoft 365 subscription to try, buy, and use Microsoft Defender for Business. |
+| Subscription | Microsoft Defender for Business (currently in preview!). *To apply for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).*<br/><br/>**TIP**: You don't have to another Microsoft 365 subscription to try, buy, and use Microsoft Defender for Business. |
 | User accounts | User accounts are created with Microsoft Defender for Business licenses assigned (See [Add users and assign licenses](../../admin/add-users/add-users.md).) |
 | Permissions  | To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Admin, or Global Admin role assigned. Permissions are assigned through [roles in Azure AD](mdb-roles-permissions.md). To learn more, see [Roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md). |
 | Browser requirements | Microsoft Edge or Google Chrome |
