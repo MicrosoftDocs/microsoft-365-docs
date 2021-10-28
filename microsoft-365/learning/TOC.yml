@@ -14,8 +14,6 @@
       items:
         - name: Set up Viva Learning
           href: set-up-viva-learning.md
-        - name: Set up in the Teams admin center (Preview)
-          href: set-up-teams-admin-center-preview.md
         - name: Manage learning content sources
           items:
             - name: Overview
