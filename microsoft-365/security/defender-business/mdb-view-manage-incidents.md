@@ -43,7 +43,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 ## Alert severity
 
 When Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (malware) and the potential risk to an individual endpoint (if infected).
-Microsoft Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. The following table lists a few examples:
+Microsoft Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. The following table lists a few examples: <br/><br/>
 
 | Scenario | Alert severity | Reason |
 |:---|:---|:---|
