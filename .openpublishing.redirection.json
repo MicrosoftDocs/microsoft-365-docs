@@ -4609,6 +4609,16 @@
       "source_path": "microsoft-365/compliance/privacy-management-subject-rights-requests.md",
       "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-subject-rights-requests",
       "redirect_document_id": false
-    }                                                  
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/business-assist.md",
+      "redirect_url": "https://support.microsoft.com/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/stop-email-auto-forward.md",
+      "redirect_url": "https://docs.microsoft.com",
+      "redirect_document_id": false
+    }
   ]
 }
