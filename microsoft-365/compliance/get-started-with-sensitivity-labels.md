@@ -39,12 +39,12 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
+> [!TIP]
+> You might be eligible for default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
+
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
-
-> [!TIP]
-> You might be eligible for default labels and a default label policy that's published for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
 
 ## Subscription and licensing requirements for sensitivity labels
 
