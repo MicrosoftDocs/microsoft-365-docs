@@ -30,7 +30,6 @@ When it comes to onboarding devices and configuring security settings for your c
 - Your non-Microsoft solution for managing devices 
 
 The following table describes each experience:
-
 <br/><br/>
 
 | Portal experience  | Description  |
