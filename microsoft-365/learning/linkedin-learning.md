@@ -23,7 +23,7 @@ description: Learn how to manage and use LinkedIn Learning in Viva Learning
 Select free content from LinkedIn Learning is available for everyone in Viva Learning. You can enable or disable LinkedIn Learning as a content source from the Microsoft 365 admin center.
 
 >[!NOTE]
->Note: Everyone has access free access to the select 125 free courses. For more courses, you'll need an enterprise subscription to Viva Learning.
+>Note: Everyone has access free access to the select 125 free courses. For more courses, you'll need an enterprise subscription to LinkedIn Learning.
 
 Only the LinkedIn Learning global catalog is available for integration. This means that you can’t integrate custom content, curated assets, or aggregations from Learning Hub. LinkedIn Learning also doesn’t sync recommendations, in-progress, or saved courses between LinkedIn Learning and Viva Learning.
 

@@ -41,15 +41,18 @@ Third-party content sources are not enabled by default. To enable these sources,
 |Skillsoft     |[Configure Skillsoft as a content source](configure-skillsoft-content-source.md)         |
 |SAP SuccessFactors   |[Configure SAP SuccessFactors as a content source](configure-successfactors-content-source.md)         |
 |Udemy   |[Configure Udemy as a content source](configure-udemy-content-source.md)         |
-
-For other content providers and learning management systems, you'll need to enable them from your Microsoft 365 admin center.
-
->[!NOTE]
->Available content providers and learning management systems are subject to change.
+|edX    |Follow the steps below to add edX in your Microsoft 365 admin center.    |
+|Coursera    |Follow the steps below to add Coursera in your Microsoft 365 admin center.    |
+|Pluralsight    |Follow the steps below to add Pluralsight in your Microsoft 365 admin center.    |
+|Infosec    |Follow the steps below to add Infosec in your Microsoft 365 admin center.    |
+|Josh Bersin Academy    |Follow the steps below to add Josh Bersin Academy in your Microsoft 365 admin center.    |
 
 1. Log in to your [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Navigate to **Settings**, then **Org settings**. Select Viva Learning, and enable your chosen content provider or learning management system in the panel.
 3. Fill in your details.
+
+>[!NOTE]
+>Available content providers and learning management systems are subject to change.
 
 ## Content ingestion errors
 
