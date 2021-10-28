@@ -35,10 +35,6 @@ Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
-## Use the cards
-
-
-
 ## Use the navigation bar
 
 Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies and settings. The following table describes items you’ll see in your navigation bar.
