@@ -20,7 +20,13 @@ ms.collection:
 
 # Gradual device onboarding with Microsoft Defender for Business
 
-If you are using Microsoft Intune (part of Microsoft Endpoint Manager) to onboard devices to Microsoft Defender for Business, you can choose to onboard selected devices. We call this process gradual device onboarding.
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+
+If you are using Microsoft Intune (part of Microsoft Endpoint Manager) to onboard devices to Microsoft Defender for Business, you can choose to onboard some, but not all, devices, and then onboard more devices later. We call this process gradual device onboarding.
+
+> [!NOTE]
+> The instructions in this article reference Microsoft Defender for Endpoint; however, the steps apply to Microsoft Defender for Business as well.
 
 ## See how many devices are not onboarded yet
 
