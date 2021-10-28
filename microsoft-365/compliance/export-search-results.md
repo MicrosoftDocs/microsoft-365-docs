@@ -135,7 +135,7 @@ See the next section for instructions to download the exported search results.
 The next step is to download the search results from the Azure Storage location to your local computer.
 
 > [!NOTE]
-> The exported search results must be downloaded within 14 days from when you created the export job in Step 1.
+> The exported search results must be downloaded within 14 days after you created the export job in Step 1.
   
 1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
   

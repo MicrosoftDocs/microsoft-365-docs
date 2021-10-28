@@ -96,7 +96,7 @@ See the next section for instructions to download the exported search reports.
 The next step is to download the report from the Azure Storage area to your local computer.
 
 > [!NOTE]
-> The exported search report must be downloaded within 14 days from when you generated the report in Step 1.
+> The exported search report must be downloaded within 14 days after you generated the report in Step 1.
 
 1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
   
