@@ -84,8 +84,8 @@ If you click **Filter**, the following filters are available:
   - **Medium**
   - **High**
 - **Source**: Indicates whether the payload was created in your organization or is a part of Microsoft's pre-existing payload catalog. Valid values are:
-  - **Global**
-  - **Tenant**
+  - **Global** (built-in)
+  - **Tenant** (custom)
   - **All**
 - **Language**: The available values are: **English**, **Spanish**, **German**, **Japanese**, **French**, **Portuguese**, **Dutch**, **Italian**, **Swedish**, **Chinese (Simplified)**, **Norwegian Bokmål**, **Polish**, **Russian**, **Finnish**, **Korean**, **Turkish**, **Hungarian**, **Hebrew**, **Thai**, **Arabic**, **Vietnamese**, **Slovak**, **Greek**, **Indonesian**, **Romanian**, **Slovenian**, **Croatian**, **Catalan**, and **Other**.
 - **Add tag(s)**
@@ -101,7 +101,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 If you select a payload from the list, details about the payload are shown in a flyout:
 
-- The **Overview** contains an example and other details about the payload.
+- The **Overview** tab contains an example and other details about the payload.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 ![Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload-details.png)

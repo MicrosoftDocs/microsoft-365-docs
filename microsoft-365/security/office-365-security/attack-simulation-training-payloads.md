@@ -64,8 +64,6 @@ When you're finished, click **Next**.
 
 ## Configure the payload
 
-Many of the available setting
-
 On the **Configure payload** page, it's time to build your payload. Many of the available settings are determined by the selection you made on the **Select technique** page (for example, links vs. attachments).
 
 - **Sender details** section: Configure the following settings:

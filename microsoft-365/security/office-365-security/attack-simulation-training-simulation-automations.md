@@ -103,7 +103,7 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 If you select a payload from the list by clicking on the name, details about the payload are shown in a flyout:
 
-- The **Overview** contains an example and other details about the payload.
+- The **Overview** tab contains an example and other details about the payload.
 - The **Simulations launched** tab contains the **Simulation name**, **Click rate**, **Compromised rate**, and **Action**.
 
 ![Payload details flyout in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-simulations-select-payload-details.png)
@@ -277,7 +277,7 @@ On the **Launch details** page, configure the following additional settings for 
 - **Target repeat offenders**: By default, this setting is not selected. If you select it, configure the following setting that appears:
   - **Enter the maximum number of times a user can be targeted within this automation**: Enter a value from 1 to 10.
 - **Send simulation email based upon the user's current time zone setting from Outlook web app**: By default, this setting is not selected.
-- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select one or more social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png).
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select one or more social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png)).
 
 ## Review simulation automation
 
