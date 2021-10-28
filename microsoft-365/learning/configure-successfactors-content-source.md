@@ -55,8 +55,6 @@ partners1.partnerID=
 - enabled can be "false" or "true". Set it to "true" to enable the partner extract.
     - partners1.enabled=
 
-![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)
-
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
 ## Configure the Microsoft 365 admin center
@@ -68,8 +66,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 3. Fill in the configuration details.
 
 ### Configuration details
-
-![Image of the configuration details filled in in the Microsoft 365 admin center.](../media/learning/sap-2.png)
 
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
@@ -90,8 +86,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 **PGP Private Key Passphrase**: You'll need to get this value from your IT admin or the team that provides your PGP key.
 
 **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
-
-![Image of the steps to find your company ID.](../media/learning/sap-3.png)
 
 >[!Note]
 > SuccessFactors courses will start appearing in Viva Learning within 7 days of successful setup.
