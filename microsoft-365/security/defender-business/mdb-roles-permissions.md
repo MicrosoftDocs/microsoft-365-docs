@@ -42,4 +42,5 @@ The following table describes the three types of roles that can be assigned in M
 Proceed to:
 
 - [Set up email notifications](mdb-email-notifications.md)
+
 - [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)

@@ -40,7 +40,6 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 3. Select a device to open its flyout panel, where you can learn more about its status and take action. 
 
-
 ## Take action on a device that has threat detections
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::

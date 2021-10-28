@@ -24,13 +24,15 @@ If you are using Microsoft Intune (part of Microsoft Endpoint Manager) to onboar
 
 ## See how many devices are not onboarded yet
 
-If you're using Microsoft Endpoint Manager to manage your devices, you'll have an Onboarding card in the Microsoft 365 Defender portal. The card shows the number of devices that are in use at your company, and how many of those devices are not onboarded yet.
+If you're using Microsoft Endpoint Manager to manage your devices, you'll have an **Onboarding** card in the Microsoft 365 Defender portal. The card shows the number of devices that are in use at your company, and how many of those devices are not onboarded yet.
 
 :::image type="content" source="media/mdb-intune-onboarded.png" alt-text="Card showing number of devices onboarded":::
 
 To onboard more devices, select the **Onboard more devices** link in the card. This action takes you to Microsoft Endpoint Manager, where you can create a device configuration profile. Alternately, you can use the following procedure.
 
 ## Create a device configuration profile to onboard more devices
+
+:::image type="content" source="media/mdb-mem-device-config-mde-sensor.png" alt-text="Screenshot of device onboarding in Microsoft Endpoint Manager.":::
 
 1. Go to Microsoft Endpoint Manager ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
 
@@ -40,5 +42,18 @@ To onboard more devices, select the **Onboard more devices** link in the card. T
 
 4. Set up your policy. If you need help, see [Create the device configuration profile to onboard Windows devices](/mem/intune/protect/advanced-threat-protection-configure).
 
+After the policy is configured, users will be prompted to onboard their devices to Defender for Business.
+
 ## Next steps
 
+Proceed to one or more of the following tasks:
+
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+
+- [Get started using Microsoft Defender for Business](mdb-get-started.md)
+
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
