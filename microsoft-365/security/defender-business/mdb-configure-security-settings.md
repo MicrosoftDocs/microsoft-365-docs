@@ -23,26 +23,16 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. You can choose from two main options:
+After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. You can choose from several options, as described in the following table:
 
-- Use the default security settings and policies in Microsoft Defender for Business (recommended); or 
-- Use Microsoft Endpoint Manager (MEM)
+| Option | Description |
+|:---|:---|
+| Use the default security settings and policies in Microsoft Defender for Business (recommended) | Defender for Business was designed for the busy small or medium-sized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one. <br/><br/>To learn more, see 
+[View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md). |
+| Use Microsoft Endpoint Manager (MEM) | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. <br/><br/>You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business. |
 
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
-
-## Use the default security settings and policies in Defender for Business
-
-Defender for Business was designed for the busy small or medium-sized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one.
-
-To learn more, see 
-[View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md).
-
-## Use Microsoft Endpoint Manager to configure security settings and policies
-
-If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices.
-
-You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business.
 
 ## Next steps
 
