@@ -125,8 +125,6 @@ The **Support** section includes instructions on how to view past invoices in th
 
 ### Page two
 
-:::image type="content" source="../../media/understand-your-invoice2/invoice-product-name.png" alt-text="Alt text that describes the content of the image.":::
-
 The product name for your subscription is at the top of page two. Below it is the formula that explains how the charges are calculated.
 
 #### New charges
