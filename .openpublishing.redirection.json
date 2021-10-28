@@ -4623,7 +4623,7 @@
     {
       "source_path": "microsoft-365/commerce/pay/afghanistan.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/commerce/pay/albania.md",
