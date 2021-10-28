@@ -139,6 +139,8 @@ This policy is unobtrusive to users with no policy tip visible and no messages b
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
+If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
+
 ## DLP for devices
 
 The default DLP policy for devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
@@ -157,8 +159,11 @@ The default DLP policy for devices detects the presence of credit card numbers o
 
 If content contains 10 or more instances of credit cards and one or more of the listed activities is detected, a medium severity alert notification is sent to admins.
 
-This policy is unobtrusive to users with no policy tip visible and no actions blocked, but admins will have records of all suspicious activity. If required, you can edit these settings to change this default configuration. 
+This policy is unobtrusive to users with no policy tip visible and no actions blocked, but admins will have records of all suspicious activity. If required, you can edit these settings to change this default configuration.
+
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+
+If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md).
 
 ## Additional resources
 
