@@ -37,7 +37,7 @@ After you have onboarded your company's devices to Microsoft Defender for Busine
 
 ## Next steps
 
-Proceed to:
+Proceed to one or more of the following tasks:
 
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 - [Get started using Microsoft Defender for Business](mdb-get-started.md)
