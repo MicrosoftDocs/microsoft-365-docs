@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: "Interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice, and how to change a purchase order number."
+description: "Learn how to interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice."
 ms.date: 
 ---
 
@@ -62,9 +62,8 @@ If the amount billed is different than expected, there are a few reasons this ca
 
 ## Invoice sections
 
+This section explains the individual sections in your invoice.
 ### Header
-
-:::image type="content" source="../../media/understand-your-invoice2/invoice-header.png" alt-text="Alt text that describes the content of the image.":::
 
 The header appears at the top of every invoice page, and includes the month of service, and the Invoice Date, which is the date Microsoft created the invoice. The invoice is created the day after the end of your billing period. For example, if your billing period is Jan 15 - Feb 14, your invoice date is Feb 15.
 
@@ -74,13 +73,11 @@ Finally, the header includes the *Due Date* for payment of the invoice, and show
 
 ### Footer
 
-:::image type="content" source="../../media/understand-your-invoice2/invoice-footer.png" alt-text="Alt text that describes the content of the image.":::
-
 The footer appears at the bottom of every invoice page. It includes the phone number to call for billing or technical support, a link to online self-help articles, and the address and tax ID for Microsoft in your country or region.
 
 ### Page one
 
-Page one of your invoice contains address information for your organization, high-level details about your order, a summary of invoice totals, and instructions about how to pay your invoice.
+Page one of your invoice contains address information for your organization, high-level details about your order, a summary of invoice totals, and instructions about how to pay your invoice. If you have more than one product in your order, you see a separate section for each product and the associated charges.
 
 #### Addresses
 
@@ -89,8 +86,6 @@ Three addresses appear at the top of the first page. Sold-To is the name and add
 To update the **Sold-To** address, see [Change your organization's address, technical contact, and more](../../admin/manage/change-address-contact-and-more.md)**. To update your Bill-To** or **Service Usage Address**, see [Change your billing addresses](change-your-billing-addresses.md).
 
 #### Order Details
-
-:::image type="content" source="../../media/understand-your-invoice2/invoice-order-details.png" alt-text="Alt text that describes the content of the image.":::
 
 On page one of your invoice, the *Product* is "Online Services.” This is the generic term we use to describe your subscription. Page two lists the individual products in your order.
 
@@ -120,7 +115,7 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 #### Electronic Fund Transfer (EFT) and check
 
-If you chose “invoice” as your subscription payment method, page one contains the Electronic Funds Transfer section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, etc.). Usually, your bank has a reference field you complete when you send a payment. Please reference the invoice number in that field. 
+If you chose “invoice” as your subscription payment method, page one contains the Electronic Funds Transfer section that shows the Microsoft bank account information for electronic payments (wire, ACH, SEPA, etc.). Usually, your bank has a reference field you complete when you send a payment. Please reference the invoice number in that field.
 
 If we accept payments by check for your country or region, you also see a **Check** section that contains the payee name and mailing address. Make sure you reference your invoice number on the check.
 
@@ -132,7 +127,7 @@ The **Support** section includes instructions on how to view past invoices in th
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-product-name.png" alt-text="Alt text that describes the content of the image.":::
 
-The product name for your subscription is at the top of page two. Below it is an explanation for how the charges are calculated.
+The product name for your subscription is at the top of page two. Below it is the formula that explains how the charges are calculated.
 
 #### New charges
 
