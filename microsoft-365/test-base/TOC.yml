@@ -36,5 +36,7 @@
   items:
   - name: Frequently Asked Questions
     href: faq.md
+  - name: SDK & API
+    href: sdkapi.md
 
 
