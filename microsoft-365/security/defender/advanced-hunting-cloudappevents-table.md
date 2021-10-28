@@ -66,8 +66,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RawEventData` | string | Raw event information from the source application or service in JSON format |
 | `AdditionalFields` | string | Additional information about the entity or event |
 | `AccountType` | string | Type of user account, indicating its general role and access levels, such as Regular, System, Admin, DcAdmin, System, Application | 
-| `IsExternalUser` | boolean | 
-Indicates whether a user inside the network does not belong to the organization’s domain | 
+| `IsExternalUser` | boolean | Indicates whether a user inside the network does not belong to the organization’s domain | 
 | `IsImpersonated` | boolean | Indicates whether the activity was performed by one user on behalf of another (impersonated) user | 
 | `IPTags` | string | Customer-defined information applied to specific IP addresses and IP address ranges | 
 | `IPCategory` | string | Additional information about the IP address | 
