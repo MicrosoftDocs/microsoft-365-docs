@@ -86,7 +86,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
     
     - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
     
-    - You'll be downgraded to a lower license that doesn't support auto-labeling and data loss prevention. Your existing policies will stay turned on unless you turn them off.
+    - You'll be downgraded to your previous Microsoft E3 license package that doesn't support auto-labeling and data loss prevention. Your existing policies will stay turned on unless you turn them off.
     
     - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
     

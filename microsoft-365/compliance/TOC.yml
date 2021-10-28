@@ -112,7 +112,7 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
-    - name: Free trial for Microsoft Information Protection
+    - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
