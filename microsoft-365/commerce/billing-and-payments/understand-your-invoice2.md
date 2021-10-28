@@ -44,11 +44,11 @@ At the end of each billing period, you receive an email that says your new invoi
 
 Your invoice is a .PDF that contains at least two pages. [Page one](#page-one) is the billing summary, and contains general information about the invoice, order, amount due, and payment instructions, if applicable.
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-page-1.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Alt text that describes the content of the image.":::
 
 [Page two](#page-two) contains details about the billing activity for each subscription during the service period.
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-page-2.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Alt text that describes the content of the image.":::
 
 ## Why is my total due different from last month?
 
@@ -64,7 +64,7 @@ If the amount billed is different than expected, there are a few reasons this ca
 
 ### Header
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-header.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-header.png" alt-text="Alt text that describes the content of the image.":::
 
 The header appears at the top of every invoice page, and includes the month of service, and the Invoice Date, which is the date Microsoft created the invoice. The invoice is created the day after the end of your billing period. For example, if your billing period is Jan 15 - Feb 14, your invoice date is Feb 15.
 
@@ -74,7 +74,7 @@ Finally, the header includes the *Due Date* for payment of the invoice, and show
 
 ### Footer
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-footer.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-footer.png" alt-text="Alt text that describes the content of the image.":::
 
 The footer appears at the bottom of every invoice page. It includes the phone number to call for billing or technical support, a link to online self-help articles, and the address and tax ID for Microsoft in your country or region.
 
@@ -90,7 +90,7 @@ To update the **Sold-To** address, see [Change your organization's address, tech
 
 #### Order Details
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-order-details.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-order-details.png" alt-text="Alt text that describes the content of the image.":::
 
 On page one of your invoice, the *Product* is "Online Services.” This is the generic term we use to describe your subscription. Page two lists the individual products in your order.
 
@@ -130,25 +130,25 @@ The **Support** section includes instructions on how to view past invoices in th
 
 ### Page two
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-product-name.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-product-name.png" alt-text="Alt text that describes the content of the image.":::
 
 The product name for your subscription is at the top of page two. Below it is an explanation for how the charges are calculated.
 
 #### New charges
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-new-charges.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-new-charges.png" alt-text="Alt text that describes the content of the image.":::
 
 The **New charges** section shows the service period during which charges, discounts, credits, and taxes were added. It shows the number of licenses included during the service period, the price per license, and the number of days in the service period.
 
 #### Previous charges
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-previous-charges.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-previous-charges.png" alt-text="Alt text that describes the content of the image.":::
 
 The **Previous charges** section shows a credit for charges you paid for the previous invoice. If you made a change during the previous billing period, your invoice includes the Previous charges section. For example, if you added or remove licenses mid-term, the Previous charges section shows the number of licenses for that service period, together with the monthly price per license, the number of days in the service period, the charges, and other amounts that apply.
 
 #### Charges during this billing period
 
-:::image type="content" source="/media/understand-your-invoice2/invoice-charges-this-period.png" alt-text="Alt text that describes the content of the image.":::
+:::image type="content" source="../../media/understand-your-invoice2/invoice-charges-this-period.png" alt-text="Alt text that describes the content of the image.":::
 
 The **Charges during this billing period** section shows changes to your subscription made during this billing period. If you made a change during the previous billing period, your invoice also includes the Changes during this billing period section. For example, if you added or removed licenses mid-term, the Charges during this billing period section lists the changes to the subscription and when they occurred. The charges or refunds owed to you because of those changes are prorated for the number of days affected during the billing period.
 
