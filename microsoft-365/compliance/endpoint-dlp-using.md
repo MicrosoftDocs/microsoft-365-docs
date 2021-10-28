@@ -40,11 +40,11 @@ Or
 
 ### Advanced classification scanning and protection
 
-When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](sit-learn-about-exact-data-match.md) classification and  techniques in your DLP policies.
+When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](sit-learn-about-exact-data-match.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
-To prevent unintended bandwidth utilization, you can either set a limit on bandwidth utilization per rolling 24 hour period or allow unlimited bandwidth utilization.
+In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
-If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue by using the local data classification service on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
 
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
