@@ -66,8 +66,9 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Cloud App Security (MCAS)** supports the use of named entities in MCAS policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
-<!-- - **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
-<!-- - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.-->
+- **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+- **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
+ 
 ### Unified DLP
 
 |Workload/Services  |Public Preview Support for Named Entities  |
@@ -75,7 +76,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |Office Win32 clients policy tip    |not supported  |
 |Office WAC clients policy tip    |supported         |
 |OWA policy tip     |not supported         |
-|Outlook policy tip     |no supported |
+|Outlook policy tip     |not supported |
 |Endpoints (Windows 10 devices)     |not supported  |
 |Exchange Transport rules     |not supported |
 |OneDrive for Business data-at-rest     |supported         |
