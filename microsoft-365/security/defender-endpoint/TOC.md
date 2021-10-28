@@ -56,7 +56,7 @@
 #### [Onboard Windows devices and Windows Servers]()
 
 ##### [Onboard previous versions of Windows](onboard-downlevel.md)
-##### [Onboard Windows devices in Microsoft Endpoint Manager through Microsoft Defender for Endpoint](security-config-management.md)
+
 
 ##### [Onboard Windows devices and Windows Servers]()
 ###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
@@ -188,6 +188,7 @@
 
 ##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)

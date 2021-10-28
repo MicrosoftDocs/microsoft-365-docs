@@ -49,9 +49,9 @@ When devices are managed through this capability:
 > [!NOTE]
 > This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
 
-The following diagram is a conceptual representation of the MDE security configuration management solution.
+The following diagram is a conceptual representation of the Microsoft Defender for Endpoint security configuration management solution.
 
-<<Add here the architecture diagram (second image) from Brent's post>>
+:::image type="content" alt-text="Conceptual representation of the MDE security configuration management solution" source="images/mde-architecture.png":::
 
 
 1. Devices onboard to MDE.
@@ -63,8 +63,6 @@ The following diagram is a conceptual representation of the MDE security configu
 
 4. Defender for Endpoint reports the status of the policy back to Endpoint Manager.
 
-
-[!INCLUDE [Security configuration manager prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
 
 ## Onboard devices
