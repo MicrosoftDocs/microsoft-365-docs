@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/27/2021
+ms.date: 10/28/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -35,9 +35,9 @@ The following table describes each experience:
 
 | Portal experience  | Description  |
 |---------|---------|
-| The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*This is the recommended option for most customers*)  | The simplified configuration experience includes default security settings and policies that help you protect your company's devices from day one. With this experience, your security team uses the Microsoft 365 Defender portal to: <br/>- Set up and configure Defender for Business <br/>- View and manage incidents<br/>- Respond to and mitigate threats<br/>- View reports<br/>- Review pending or completed actions <br/><br/> This portal is your one-stop shop for your company's security settings and threat protection capabilities. You get a simplified experience to help you get started quickly and efficiently.  And, you can edit your settings or define new policies to suit your company's needs.<br/><br/>To learn more, see [Get started using Microsoft Defender for Business](mdb-get-started.md). |
+| The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*This is the recommended option for most customers*)  | The simplified configuration experience includes default security settings and policies that help you protect your company's devices from day one. With this experience, your security team uses the Microsoft 365 Defender portal to: <br/>- Set up and configure Defender for Business <br/>- View and manage incidents<br/>- Respond to and mitigate threats<br/>- View reports<br/>- Review pending or completed actions <br/><br/> This portal is your one-stop shop for your company's security settings and threat protection capabilities. You get a simplified experience to help you get started quickly and efficiently.  And, you can edit your settings or define new policies to suit your company's needs.<br/><br/>To learn more, see [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md). |
 | The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. <br/><br/>Many organizations use Intune to manage their devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).  |
-| Your non-Microsoft device management solution  | If you are using a non-Microsoft productivity and device management solution like  Jamf for macOS or Ansible for Linux, you can continue to use your solution with Defender for Business. When devices are onboarded to Defender for Business, you'll see their status and alerts in the Microsoft 365 Defender portal. |
+| Your non-Microsoft device management solution  | If you are using a non-Microsoft productivity and device management solution like  Jamf for macOS or Ansible for Linux, you can continue to use that solution with Defender for Business. When devices are onboarded to Defender for Business, you'll see their status and alerts in the Microsoft 365 Defender portal. To learn more, see [Onboarding and configuration tool options for Defender for Endpoint](../defender-endpoint/onboard-configure.md). |
 
 
 ## Why we recommend using the simplified configuration process
