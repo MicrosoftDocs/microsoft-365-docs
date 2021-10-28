@@ -1,7 +1,7 @@
 ---
 title: Investigate and respond with Microsoft 365 Defender overview
 description: Investigate and respond to incidents with the capabilities of Microsoft 365 Defender.
-keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyberattack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -31,7 +31,7 @@ Here are the primary investigate and respond tasks for Microsoft 365 Defender:
 - [Respond to incidents](#incident-response)
 - [Review and approve automatic remediation actions](#automated-investigation-and-remediation)
 - [Search for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
-- [Understand the latest cyber-attacks](#get-ahead-of-emerging-threats-with-threat-analytics)
+- [Understand the latest cyberattacks](#get-ahead-of-emerging-threats-with-threat-analytics)
 - [Get help](#collaborate-with-microsoft-experts)
 
 ## Incident response
