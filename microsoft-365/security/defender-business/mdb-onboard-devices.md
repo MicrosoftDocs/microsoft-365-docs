@@ -27,13 +27,10 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## What to do
 
-[Step 1: Choose your security and device management path](#step-1-choose-your-security-and-device-management-path).
-
-[Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).
-
-[Step 3: Choose a deployment method](#step-3-choose-a-deployment-method). 
-
-[Step 4: Onboard devices in the Microsoft 365 Defender portal](#step-4-onboard-devices-in-the-microsoft-365-defender-portal). 
+- [Step 1: Choose your security and device management path](#step-1-choose-your-security-and-device-management-path).
+- [Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).
+- [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method). 
+- [Step 4: Onboard devices in the Microsoft 365 Defender portal](#step-4-onboard-devices-in-the-microsoft-365-defender-portal). 
 
 ## Step 1: Choose your security and device management path
 
