@@ -4480,7 +4480,12 @@
       "redirect_url": "/microsoft-365/security/office-365-security/quarantine-policies",
       "redirect_document_id": false
      },
-    {
+     {
+      "source_path": "microsoft-365/security/office-365-security/attack-simulator.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/attack-simulation-training-get-started",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
@@ -4609,6 +4614,771 @@
       "source_path": "microsoft-365/compliance/privacy-management-subject-rights-requests.md",
       "redirect_url": "/privacy/solutions/privacymanagement/privacy-management-subject-rights-requests",
       "redirect_document_id": false
-    }                                                  
+    },
+    {
+      "source_path": "microsoft-365/admin/misc/business-assist.md",
+      "redirect_url": "https://support.microsoft.com/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/stop-email-auto-forward.md",
+      "redirect_url": "https://docs.microsoft.com",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/afghanistan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/albania.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/algeria.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/angola.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/argentina.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/armenia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/australia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/austria.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/azerbaijan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bahamas.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bahrain.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bangladesh.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/barbados.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/belarus.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/belgium.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/belize.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bermuda.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bolivia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bosnia-and-herzegovina.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/botswana.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/brazil.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/brunei.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/bulgaria.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/cameroon.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/canada.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/cape-verde.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/cayman-islands.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/chile.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/china-prc.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/colombia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/costa-rica.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/cote-divoire.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/croatia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/curacao.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/cyprus.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/czech-republic.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/democratic-republic-of-congo.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/denmark.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/dominican-republic.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/ecuador.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/egypt.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/el-salvador.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/estonia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/ethiopia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/faroe-islands.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/fiji.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/finland.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/france.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/french-guiana.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/georgia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/germany.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/ghana.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/greece.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/grenada.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/guadeloupe.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/guam.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/guatemala.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/guyana.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/haiti.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/honduras.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/hong-kong.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/hungary.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/iceland.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/india.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/indonesia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/iraq.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/ireland.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/israel.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/italy.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/jamaica.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/japan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/jordan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/kazakhstan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/kenya.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/korea.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/kuwait.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/kyrgyzstan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/latvia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/lebanon.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/libya.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/liechtenstein.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/lithuania.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/luxembourg.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/macao.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/macedonia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/malaysia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/malta.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/mauritius.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/mexico.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/moldova.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/monaco.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/mongolia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/montenegro.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/morocco.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/namibia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/nepal.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/netherlands.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/new-zealand.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/nicaragua.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/nigeria.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/norway.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/oman.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/pakistan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/palestinian-authority.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/panama.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/paraguay.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/peru.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/philippines.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/poland.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/portugal.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/puerto-rico.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/qatar.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/romania.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/russia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/rwanda.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/saint-kitts-and-nevis.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/saint-lucia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/saint-vincent-and-the-grenadines.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/saudi-arabia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/senegal.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/serbia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/singapore.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/slovakia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/slovenia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/south-africa.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/spain.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/sri-lanka.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/suriname.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/sweden.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/switzerland.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/taiwan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/tajikistan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/tanzania.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/thailand.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/trinidad-and-tobago.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/turkmenistan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/tunisia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/turkey.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/uganda.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/ukraine.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/united-arab-emirates.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/united-kingdom.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/united-states.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/uruguay.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/uzbekistan.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/venezuela.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/vietnam.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/virgin-islands.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/yemen.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/zambia.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
+      "redirect_document_id": false
+    }    
   ]
 }
