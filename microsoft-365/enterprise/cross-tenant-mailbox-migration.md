@@ -142,7 +142,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 2. Create a new migration endpoint for cross-tenant mailbox moves
 
    > [!NOTE]
-   > You will need the application ID of the mailbox migration app you just created and the password (the secret) you configured during this process. Also depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-endpoints) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
+   > You will need the application ID of the mailbox migration app you just created and the password (the secret) you configured during this process. Also depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
 
    ```powershell
    $AppId = "[guid copied from the migrations app]"
@@ -203,7 +203,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 ### How do I know this worked?
 
-You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](https://docs.microsoft.com/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
+You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
    > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]" -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
@@ -347,9 +347,9 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 > [!NOTE]
 > The email address in the CSV file must be the one specified in the target tenant, not the source tenant.
 >
-> [For more information on the cmdlet click here](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch)
+> [For more information on the cmdlet click here](/powershell/module/exchange/new-migrationbatch)
 >
-> [For an example CSV file click here](https://docs.microsoft.com/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
+> [For an example CSV file click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
 Migration batch submission is also supported from the new Exchange Admin Center when selecting the cross-tenant option.
 
@@ -508,7 +508,7 @@ Do not exceed 2000 mailboxes per batch. We strongly recommend submitting batches
 
 **What if I use Service encryption with Customer Key?**
 
-The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) for more information.
+The mailbox will be decrypted prior to moving. Ensure Customer Key is configured in the target tenant if it is still required. See [here](/microsoft-365/compliance/customer-key-overview) for more information.
 
 **What is the estimated migration time?**
 
@@ -568,7 +568,7 @@ No, after a cross tenant mailbox migration, eDiscovery against the migrated user
        Results in the set of ServicePlans assigned are shown here.
 
     ```powershell
-    (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus | Sort ProvisioningStatus -Descending
+    (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
 
     ServicePlan           ProvisioningStatus
     -----------           ------------------
