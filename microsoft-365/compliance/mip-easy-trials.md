@@ -138,9 +138,10 @@ This policy is unobtrusive to users with no policy tip visible and no messages b
 
 To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
-## DLP for Devices
+## DLP for devices
 
-The default DLP policy for Devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
+The default DLP policy for devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
+
 - Upload to cloud service domains or access by unallowed browsers
 
 - Copy to clipboard, USB, or network share 
