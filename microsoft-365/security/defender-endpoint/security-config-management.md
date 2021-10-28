@@ -41,6 +41,7 @@ For more information on Security Configuration Management, see [Manage Microsoft
 > [!NOTE]
 > This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune .will continue to receive policies through their established management channel
 
+[!INCLUDE [Security configuration manager prerequisites](../includes/security-config-mgt-prerequisites.md)]
 
 ## Onboard devices
     
