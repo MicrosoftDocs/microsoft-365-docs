@@ -39,7 +39,7 @@ Full access to Compliance Manager features may depend on your licensing agreemen
 
 Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments as you wish using these 25 templates.
 
-After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Licensed templates** counter to see how many templates are available and are in use. This counter will show your 25 licensed templates. As you create assessments using these templates, your activated number will update. Template use is counted based on the underlying certification, meaning that multiple assessments based on the same template will count as one template use.
+After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Licensed templates** counter to see how many templates are available and are in use. This counter will show your 25 licensed templates. As you create assessments using these templates, your activated number will update. Template use is counted based on the underlying certification, meaning that multiple assessments based on the same template, or different versions of the same template that support different products, will count as one template use.
 
 For more details about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
 

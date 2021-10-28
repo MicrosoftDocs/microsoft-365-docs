@@ -31,9 +31,9 @@ description: "Understand how to use and manage templates for building assessment
 
 A template is a framework of controls for creating an assessment in Compliance Manager. Our comprehensive set of templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
-We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to Microsoft 365, and a universal version that can be tailored to suit your chosen product.
+We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template. Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to a pre-defined product such as Microsoft 365, and a universal version that can be tailored to suit your chosen product.
 
-Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers can currently use the Microsoft 365 template versions, but not universal.
+Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 
 ## Template availability and licensing
 
@@ -94,7 +94,7 @@ For example, if your counter shows 2/5, this means your organization has activat
 
 If your counter shows 5/2, this indicates that your organization exceeds its limits and needs to purchase 3 of the premium templates in use.
 
-Microsoft 365 and universal versions of templates have joint licensing, so that you can use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
+Templates for a pre-defined product, such as Microsoft 365, have joint licensing with the universal versions of the same template. This enables you to use the same underlying certification across more than one product. Using either or both versions of the same template will only count as one activated template.
 
 For further details, see [Compliance Manager licensing guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager).
 
@@ -114,7 +114,7 @@ When working with assessments in Compliance Manager, you may want to modify an a
 
 ## Extend an assessment template
 
-Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template. To extend a template, you will use special instructions for adding to template data, depending on whether you’re extending Microsoft 365 assessment templates or universal assessment templates. To learn more, see [Extend an assessment template](compliance-manager-templates-extend.md).
+Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template. To extend a template, you will use special instructions for adding to template data, depending on whether you’re extending Microsoft assessment templates or universal assessment templates. To learn more, see [Extend an assessment template](compliance-manager-templates-extend.md).
 
 ## Format assessment template data in Excel
 

@@ -36,6 +36,19 @@ We published new assessment templates, including:
 - Australia - ASD Essential 8 Maturity Level 2
 - Australia - ASD Essential 8 Maturity Level 3
 
+The following templates are also available in preview:
+
+- ISO 27001:2013 for Azure (Preview)
+- ISO 27001:2013 for Dynamics 365 (Preview)
+- FedRAMP Moderate for Dynamics 365 (Preview)
+- FedRAMP Moderate for Azure (Preview)
+- FedRAMP High for Azure (Preview)
+- FedRAMP High for Dynamics 365 (Preview)
+- SOC 2 for Azure (Preview)
+- SOC 2 for Dynamics (Preview)
+- ISO 27018:2019 for Azure (Preview)
+- ISO 27018:2019 for Dynamics 365 (Preview)
+
 ### Integration with privacy management
 
 Compliance Manager can now work hand in hand with privacy management, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Privacy management offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in privacy management to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how privacy management and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about privacy management at [Learn about privacy management](/privacy/solutions/privacymanagement/privacy-management).
