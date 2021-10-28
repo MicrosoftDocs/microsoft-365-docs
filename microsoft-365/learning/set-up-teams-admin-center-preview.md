@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft Viva Learning in the Teams admin center
+title: Set up Microsoft Viva Learning (Preview) in the Teams admin center
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
