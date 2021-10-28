@@ -29,8 +29,7 @@
           href: topic-experiences-user-permissions.md
         - name: Change the topic center name
           href: topic-experiences-administration.md
-    
-    
+       
     - name: Work with topics
       items:
         - name: Get started with Viva Topics
@@ -49,7 +48,6 @@
           href: search.md             
         - name: Manage topics at scale 
           href: scale-topics.md             
-
 
     - name: Adoption
       items: 

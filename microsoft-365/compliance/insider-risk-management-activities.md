@@ -3,7 +3,7 @@ title: Investigate insider risk management activities
 description: Learn about investigating insider risk management activities in Microsoft 365
 keywords: Microsoft 365, insider risk, risk management, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH

@@ -3,7 +3,7 @@ title: Insider risk management policies
 description: Learn about insider risk management policies in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -122,13 +122,13 @@ The following table lists the triggering events and prerequisites for policies c
 
 | **Policy template** | **Triggering events for policies** | **Prerequisites** |
 | :------------------ | :--------------------------------- | :---------------- |
-| Data theft by departing users | Resignation or termination date indicator from HR connector | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators or Azure Active Directory integration enabled |
-| General data leaks | Data leak policy activity that creates a High severity alert | (optional) DLP policy configured for High severity alerts or built-in data exfiltration triggering event |
+| Data theft by departing users | Resignation or termination date indicator from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators |
+| General data leaks | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | (optional) DLP policy configured for High severity alerts |
 | Data leaks by priority users | Data leak policy activity that creates a *High severity* alert or built-in exfiltration event triggers | (optional) DLP policy configured for High severity alerts <br><br> Priority user groups configured in insider risk settings |
 | Data leaks by disgruntled users | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators |
-| General security policy violations | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
+| General security policy violations | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
 | Security policy violations by departing users | Resignation or termination date indicators from HR connector or Azure Active Directory account deletion | (optional) Microsoft 365 HR connector configured for termination and resignation date indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
-| Security policy violations by priority users | Defensive evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured <br><br> Priority user groups configured in insider risk settings |
+| Security policy violations by priority users | Defense evasion of security controls or unwanted software detected by Microsoft Defender for Endpoint | Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured <br><br> Priority user groups configured in insider risk settings |
 | Security policy violations by disgruntled user | Performance improvement, poor performance, or job level change indicators from HR connector | Microsoft 365 HR connector configured for disgruntlement indicators <br><br> Active Microsoft Defender for Endpoint subscription <br><br> Microsoft Defender for Endpoint integration with Microsoft 365 compliance center configured |
 
 ## Prioritize content in policies
@@ -266,7 +266,7 @@ Complete the following steps to create a new policy:
     - **Description (optional)**: Enter a description for the policy.
 
 6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts are not supported.
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 

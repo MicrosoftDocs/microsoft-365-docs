@@ -131,6 +131,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## Resources
 
-- [Communication compliance auditing](communication-compliance-feature-reference.md#audit)
+- [Communication compliance auditing](communication-compliance-reports-audits.md#audit)
 - [Advanced Audit in Microsoft 365](advanced-audit.md)
 - [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference)

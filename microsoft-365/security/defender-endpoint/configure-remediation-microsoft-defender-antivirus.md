@@ -2,7 +2,6 @@
 title: Configure remediation for Microsoft Defender Antivirus detections
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
 keywords: remediation, fix, remove, threats, quarantine, scan, restore
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -13,7 +12,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 03/16/2021
+ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
 ms.collection: M365-security-compliance

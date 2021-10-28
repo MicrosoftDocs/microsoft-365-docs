@@ -38,6 +38,8 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   
   - Manage any eDiscovery case after they add themselves as a member of the case.
   
+  - Remove members from an eDiscovery case. Only an eDiscovery Administrator can remove members from a case. Users who are members of the eDiscovery Manager subgroup can't remove members from a case, even if the user created the case.
+  
   For reasons why you might want eDiscovery Administrators in your organization, see [More information](#more-information).
 
 > [!NOTE]
@@ -47,7 +49,7 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Microsoft 365 compliance center.
 
-- You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information). 
+- You can use the [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see [More information](#more-information).
   
 ## Assign eDiscovery permissions
 
@@ -166,13 +168,13 @@ With this in mind, it's important to know that if a role is added or removed fro
 
 Before you add or remove roles to a role group that may be a member of an eDiscovery case, you can run the following commands in [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) to get a list of cases the role group is a member of. After you update the role group, you add the role group back as a member of those cases.
 
-### Get a list of role groups assigned to Core eDiscovery cases
+### Get a list of Core eDiscovery cases a role group is assigned to
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group"
 ```
 
-### Get a list of role groups assigned to Advanced eDiscovery cases
+### Get a list of Advanced eDiscovery cases a role group is assigned to
 
 ```powershell
 Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
