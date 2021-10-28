@@ -43,6 +43,9 @@ The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
 
+> [!TIP]
+> You might be eligible for default labels and a default label policy that's published for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
+
 ## Subscription and licensing requirements for sensitivity labels
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
