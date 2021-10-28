@@ -45,7 +45,7 @@ Or
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |supported         |supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Unallowed Apps     |supported         |not supported         |         |
+|Unallowed Apps     |supported         |supported         |         |
 |Unallowed Bluetooth apps    |supported         |not supported         |         |
 |Browser and domain restrictions to sensitive items      |supported         |supported         |         |
 |Additional settings for Endpoint DLP     |supported         |supported         |only the default business justifications are supported for macOS devices         |
