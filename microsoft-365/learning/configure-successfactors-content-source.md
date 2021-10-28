@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Configure SAP SuccessFactors as a content source for Microsoft Viva Learning
@@ -69,8 +69,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 ### Configuration details
 
-<!--![Image of the configuration details filled in in the Microsoft 365 admin center.](../media/learning/sap-2.png)-->
-
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
 **SFTP Host URL**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **CONNECTORS**. Get the value of the `connector.ftp.server` property.
@@ -90,8 +88,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 **PGP Private Key Passphrase**: You'll need to get this value from your IT admin or the team that provides your PGP key.
 
 **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
-
-<!--![Image of the steps to find your company ID.](../media/learning/sap-3.png)-->
 
 >[!Note]
 > SuccessFactors courses will start appearing in Viva Learning within 7 days of successful setup.
