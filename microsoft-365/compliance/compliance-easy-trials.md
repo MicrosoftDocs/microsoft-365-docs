@@ -90,7 +90,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
     
     - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
     
-    - If you edit policies for Teams DLP and endpoint DLP after the trial ends, those locations will be removed from the policy.
+    - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
     
     For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
     

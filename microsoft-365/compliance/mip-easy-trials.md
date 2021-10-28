@@ -22,7 +22,7 @@ The Microsoft Information Protection free trial is one of many available [free t
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
-- Data loss prevention (DLP) policies for Teams and endpoints
+- Data loss prevention (DLP) policies applied to either the Teams or Devices locations
 
 These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
@@ -35,8 +35,8 @@ These default configurations help you get up and running quickly with Microsoft 
 |Sensitivity labels and a sensitivity label policy | Published sensitivity labels |
 |Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
 |Service-side auto-labeling | At least one auto-labeling policy that's turned on|
-|Teams DLP | At least one DLP policy for Teams|
-|Endpoint DLP | At least one DLP policy for devices|
+|Teams | At least one DLP policy for Teams|
+|Devices | At least one DLP policy for devices|
 
 ## Activate the default labels and policies
 
@@ -62,7 +62,7 @@ When you don't have sensitivity labels that are published, we'll create the foll
 |General \ Anyone (unrestricted)  | Organization data that isn’t intended for public consumption but can be shared with external partners if appropriate. Examples include customer conversations that don’t include sensitive info or released marketing materials |
 |General \ All Employees (unrestricted) | Non-business data, for personal use only |
 |Confidential  | Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data |
-|Confidential \ Anyone (unrestricted | Confidential data that doesn’t need to be encrypted. Use this option with care and with appropriate business justification. Make sure to protect the data through other means like DLP |
+|Confidential \ Anyone (unrestricted) | Confidential data that doesn’t need to be encrypted. Use this option with care and with appropriate business justification. Make sure to protect the data through other means like DLP |
 |Confidential \ All Employees | Confidential data that requires protection, which allows all employees full permission. Data owners can track and revoke content.  |
 |Confidential \ Trusted People | Confidential data for internal/external sharing that can be reshared by trusted recipients.  |
 |Highly Confidential | Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.  |
@@ -126,15 +126,15 @@ For more information about simulation mode, see [Learn about simulation mode](ap
 
 If you want to edit the service-side auto-labeling policy, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
-## Teams DLP
+## DLP for Teams location
 
 The default DLP policy for Teams detects the presence of credit card numbers in all Teams chats and channel messages. When this sensitive information is detected, admins will get a low severity alert notification.
 
 This policy is unobtrusive to users with no policy tip visible and no messages blocked, but admins will have records of the sensitive information shared in these messages. If required, you can edit the settings to change this default configuration.
 
-## Endpoint DLP
+## DLP for Devices location
 
-The default DLP policy for Endpoint detects the presence of credit card numbers on all endpoint devices, and then audits (does not block) the following actions: 
+The default DLP policy for Devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
 - Upload to cloud service domains or access by unallowed browsers
 
 - Copy to clipboard, USB, or network share 
