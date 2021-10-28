@@ -45,9 +45,9 @@ Review the scenarios listed in the following table, and choose the path that bes
 
 ## Step 2: Choose an onboarding process
 
-- If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
+If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
 
-- If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose from several onboarding processes in Defender for Business. The following table summarizes these processes.
+If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose from several onboarding processes in Defender for Business. The following table summarizes these processes.
 
 <br/><br/>
 
@@ -78,6 +78,8 @@ You can choose from several deployment methods in Defender for Business, as desc
 
 If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md).
 
+
+
 The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
@@ -86,7 +88,7 @@ Follow these steps to onboard devices:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and then sign in.
 
-2. In the navigation pane,  on the **Onboard devices** step of the setup and configuration process, choose an onboarding method.
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
 2. Depending on whether you are already using Microsoft Endpoint Manager, take one of the following steps:
 
@@ -98,7 +100,9 @@ After you have onboarded your devices, proceed to [Configure your security setti
 
 ## What if I want to offboard a device?
 
-1. Go to the 
+1. Go to the  Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and then sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Offboarding**.
 
 See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
