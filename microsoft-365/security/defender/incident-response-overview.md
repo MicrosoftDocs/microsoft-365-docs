@@ -26,13 +26,13 @@ ms.technology: m365d
 
 # Investigate and respond with Microsoft 365 Defender overview
 
-Here are the main investigate and respond tasks for Microsoft 365 Defender:
+Here are the primary investigate and respond tasks for Microsoft 365 Defender:
 
-- [Responding to incidents](#incident-response)
-- [Reviewing and approving automatic remediation actions](#automated-investigation-and-remediation)
-- [Searching for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
-- [Understanding the latest cyber-attacks](#get-ahead-of-emerging-threats-with-threat-analytics)
-- [Getting help](#collaborate-with-microsoft-experts)
+- [Respond to incidents](#incident-response)
+- [Review and approve automatic remediation actions](#automated-investigation-and-remediation)
+- [Search for known threats in your data](#proactive-search-for-threats-with-advanced-hunting)
+- [Understand the latest cyber-attacks](#get-ahead-of-emerging-threats-with-threat-analytics)
+- [Get help](#collaborate-with-microsoft-experts)
 
 ## Incident response
 
@@ -43,28 +43,7 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
-1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
- 
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
-
-   1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
-
-   1. As needed, gather information on impacted devices, users, and mailboxes with the **Devices**, **Users**, and **Mailboxes** tabs.
-
-   1. See how Microsoft 365 Defender has [automatically resolved some alerts](m365d-autoir.md) with the **Investigations** tab.
-   
-   1. As needed, use information in the data set for the incident for more information with the **Evidence and Response** tab.
-
-2. After or during your analysis, perform containment to reduce any additional impact of the attack and eradication of the security threat.
-
-3. As much as possible, recover from the attack by restoring your tenant resources to the state they were in before the incident.
-
-4. [Resolve](manage-incidents.md#resolve-an-incident) the incident and take time for post-incident learning to:
-
-   - Understand the type of the attack and its impact.
-   - Research the attack in [Threat Analytics](threat-analytics.md) and the security community for a security attack trend.
-   - Recall the workflow you used to resolve the incident and update your standard workflows, processes, policies, and playbooks as needed.
-   - Determine whether changes in your security configuration are needed and implement them.
+For each incident, use your incident response workflow to analyze the incident and its alerts and data to contain the attack, eradicate the threat, recover from the attack, and learn from it. See [this example](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender) for Microsoft 365 Defender.
 
 ## Automated investigation and remediation
 
