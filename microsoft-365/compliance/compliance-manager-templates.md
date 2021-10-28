@@ -69,7 +69,7 @@ GCC High and DOD accounts must purchase template licenses through [volume licens
 
 To try out premium templates before you make a purchase, you may also acquire trial versions of the licenses. Trial licenses are good for up to 25 templates for 90 days. Once you obtain your trial license, the templates should become available in your tenant within 48 hours.
 
-If your organization has a commercial license for Compliance Manager, learn more about how to start your trial at [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+If your organization has a commercial license for Compliance Manager, you can learn how to start your trial at [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 If your organization is under a GCC or DOD license, choose the appropriate trial link for your organization:
 
