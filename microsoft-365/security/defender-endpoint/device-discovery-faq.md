@@ -93,7 +93,7 @@ You may notice differences between the number of listed devices under "can be on
  The security recommendation and the dashboard widget are for devices that are stable in the network; excluding ephemeral devices, guest devices and others. The idea is to recommend on persistent devices, that also imply on the overall security score of the organization.
 
 ## Can I onboard unmanaged devices that were found?
- Yes. Unmanaged endpoints in your network introduce vulnerabilities and risks to your network. Onboarding them to the service can increase the security visibility on them. 
+ Yes. You can onboard unmanaged devices manually. Unmanaged endpoints in your network introduce vulnerabilities and risks to your network. Onboarding them to the service can increase the security visibility on them. 
 
 ## I've noticed that unmanaged device health state is always "Active", why is that?
 Temporarily, unmanaged device health state will be "Active" during the standard retention period of the device inventory, regardless of their actual state.
