@@ -119,14 +119,17 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
   However, many enterprise users are used to little (if any) mail in their Junk Email folder. Instead, these enterprise users are used to checking a quarantine for their missing messages. Quarantine introduces issues of quarantine notifications, notification frequency, and the permissions that are required to view and release messages.
 
+  - Domain Keys Identified Mail (DKIM) will break.
+  - [Spoof intelligence](anti-spoofing-protection.md) will not work properly.
+  - You'll probably get a high number of false positives (good mail marked as bad).
+
   Ultimately, it's your decision if you want to prevent delivery of email to the Junk Email folder in favor of delivery to quarantine. But, one thing is certain: if the experience in Defender for Office 365 is different than what your users are used to, you need to notify them and provide basic training. Incorporate learnings from the pilot and make sure that users are prepared for any new behavior for email delivery.
 
 - **Wanted bulk mail vs. unwanted bulk mail**: Many protection systems allow users to allow or block bulk email for themselves. These settings do not easily migrate to Microsoft 365, so you should consider working with VIPs and their staff to recreate their existing configurations in Microsoft 365.
 
   Today, Microsoft 365 considers some bulk mail (for example, newsletters) as safe based on the message source. Mail from these "safe" sources is currently not marked as bulk (the bulk complaint level or BCL is 0 or 1), so it's difficult to globally block mail from these sources. For most users, the solution is to ask them to individually unsubscribe from these bulk messages or use Outlook to block the sender. But, some users will not like blocking or unsubscribing from bulk messages themselves.
 
-  <!--- What does this sentence mean? --->
-  A rule similar to the one documented can be helpful when VIP users do not wish to manage this themselves.
+  Mail flow rules that filter bulk email can be helpful when VIP users do not wish to manage this themselves. For more information, see [Use mail flow rules to filter bulk email](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md).
 
 ### Identify and designate priority accounts
 
@@ -273,7 +276,7 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 ### Create pilot Safe Links policies
 
 > [!NOTE]
-> We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users.
+> We do not support wrapping or rewriting already wrapped or rewritten links. If your current protection service already wraps or rewrites links in email messages, you need to turn off this feature for your pilot users. One way to ensure this doesn't happen is to exclude the URL domain of the other service in the Safe Links policy.
 >
 > Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
@@ -400,12 +403,8 @@ If your organization uses a third-party service for user reports, you can integr
 
 As you find and fix issues, you can add more users to the pilot groups (and correspondingly exempt those new pilot users from scanning by your existing protection service as appropriate). The more testing that you do now, the fewer user issues that you'll need to deal with later. This "waterfall" approach allows tuning against larger portions of the organization and gives your security teams time to adjust to the new tools and processes.
 
-**Notes**:
-
 - Microsoft 365 generates alerts when high confidence phishing messages are allowed by organizational policies. To identify these messages, you have the following options:
-
-  <!--- What is the Override report? I've never heard of it--->
-  - The Override report.
+  - Overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
   - Filter in Threat Explorer to identify the messages.
   - Filter in Advanced Hunting to identify the messages.
 
@@ -445,12 +444,16 @@ You can pause at this stage for more large-scale data recording and tuning.
 >   - **and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name** (*RestrictDomainsToCertificate*)
 >   - **Reject email messages if they aren't sent from within this IP address range** (*RestrictDomainsToIPAddresses*)
 >
->   **If either of these settings is turned on, all mail delivery to your domains will fail after you switch the MX records. You need to disable these settings on the connector before you continue**.
+>   If the connectory type is **Partner** and either of these settings is turned on, all mail delivery to your domains will fail after you switch your MX records. You need to disable these settings before you continue.
+>
+>   If the connector is an on-premises connector that's used for hybrid, you don't need to modify the on-premises connector. But, you can still check for the presence of a **Partner** connector.
 
-When you're ready, do the following steps:
+When you're ready, switch the MX record for your domains. You can migrate all of your domains at once. Or, you can migrate less frequently used domains first, and then migrate the rest later.
 
-1. Switch the MX record for your domains. You can migrate all of your domains at once. Or, you can migrate less frequently used domains first, and then migrate the rest later.
+Feel free to pause and evaluate here at any point. But, remember: once you turn off the SCL=-1 mail flow rule, users might have two different experiences for checking false positives. The sooner you can provide a single, consistent experience, the happier your users and help desk teams will be when they have to troubleshoot a missing message.
 
-   Feel free to pause and evaluate here at any point. But, remember: once you turn off the SCL=-1 mail flow rule, users might have two different experiences for checking false positives. The sooner you can provide a single, consistent experience, the happier your users and help desk teams will be when they have to troubleshoot a missing message.
+If you followed this guide, the first few days post-MX switch should be much smoother. Now you begin the normal operation of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but consider these additional steps: 
 
-2. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) are your friend here.
+- Regularly review user submissions, especially [user-reported phishining messages](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook). 
+- Reviewing overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example.md) queries can be used to look for tuning opportunities as well as look for risky messages.
