@@ -53,7 +53,7 @@ To remove unintentionally surfaced content, follow these steps:
 
 1. To restrict access to the document library, select the **Show actions** option, and then select **Manage access**.
 
-     ![Document library page in SharePoint showing Show actions option with Manage access highlighted.](../media/learning/learning-sharepoint-permissions2.png) <!--keep this screenshot-->
+     ![Document library page in SharePoint showing Show actions option with Manage access highlighted.](../media/learning/learning-sharepoint-permissions2.png)
 
 2. Delete the original document within the document library.
 
@@ -73,38 +73,38 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
 2. On the **Org settings** page, on the **Services** tab, select **Viva Learning**.
 
-     <!--![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/clcs-services.png) this is new link -->
+     ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/clcs-services.png)
 
 3. On the **Viva Learning** panel, under SharePoint, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository. If your SharePoint site is new, you'll need to wait 1 hour after site creation to add it here.
 
-     <!--![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/sharepoint-1.png) new link -->
+     ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/sharepoint-1.png)
 
      If your organization uses [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-geo), you can find your region or country at [Microsoft 365 Multi-geo availability](/microsoft-365/enterprise/microsoft-365-multi-geo#microsoft-365-multi-geo-availability). The **Viva Learning** panel also shows this information.
 
-     <!--![Learning panel in the Microsoft 365 admin center showing a message that the SharePoint URL must be in the central location.](../media/learning/learning-sharepoint-2.png) new link -->
+     ![Learning panel in the Microsoft 365 admin center showing a message that the SharePoint URL must be in the central location.](../media/learning/learning-sharepoint-2.png)
 
 4. A SharePoint list is created automatically within the provided SharePoint site.
 
      In the left navigation of the SharePoint site, select **Site contents** > **Learning App Content Repository**.
 
-     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](../media/learning/learning-sharepoint-configure4.png) <!-- keep screenshot-->
+     ![SharePoint list showing the Site contents navigation and the Learning App Content Repository section.](../media/learning/learning-sharepoint-configure4.png)
 
 5. On the **Learning App Content Repository** page, populate the SharePoint list with URLs to the learning content folders.
 
    1. Select **New** to view the **New item** panel.
 
-       ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png) <!-- keep screenshot-->
+       ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
 
    2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
 
-       ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)<!-- keep screenshot-->
+       ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
 
    3. The **Learning App Content Repository** page is updated with the new learning content.
 
-       ![Learning Content Repository page in SharePoint showing the updated information.](../media/learning/learning-sharepoint-configure7.png)<!-- keep screenshot-->
+       ![Learning Content Repository page in SharePoint showing the updated information.](../media/learning/learning-sharepoint-configure7.png)
 
    4. If your organization uses [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-365-multi-geo) and you try to add a link to a folder that doesn't belong to the central location, you'll get an error message. All folders need to belong to the central location.
-       ![Error message in the New item panel saying that all uploaded folders need to be in the central location.](../media/learning/learning-sharepoint-configure-geo2.png)<!-- keep screenshot-->
+       ![Error message in the New item panel saying that all uploaded folders need to be in the central location.](../media/learning/learning-sharepoint-configure-geo2.png)
 
   > [!NOTE]
   > To allow for broader access to the Learning App Content Repository, a link to the list soon will be available in the Viva Learning interface where users can request access and ultimately help populate the list. Site owners and global administrators will be required to grant access to the list. Access is specific to the list only and does not apply to the site where the list is stored. For more information, see [Provide your own organization's content](#provide-your-own-organizations-content) later in this article.
@@ -121,15 +121,15 @@ To add a **Description** column to the document library page, follow these steps
 
 2. Select the **Show actions** option, and then select **Single line of text**.
 
-     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)<!-- keep screenshot-->
+     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
 
 3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
 
-     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)<!-- keep screenshot-->
+     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
 
 4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning will provide a default message that highlights the content as being from your own SharePoint library.
 
-     ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)<!-- keep screenshot-->
+     ![Documents page in SharePoint showing the descriptions in the Description column.](../media/learning/learning-sharepoint-curation3.png)
 
 ### Provide your own organization's content
 
@@ -137,11 +137,11 @@ Knowledge admins can access their organization’s Learning App Content Reposito
 
 1. In Viva Learning, select the ellipses (**...**), and then select **Settings**.
 
-     <!--![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png) new link -->
+     ![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png)
   
 2. Under **Settings**, select **Permissions**.
 
-     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png) <!-- keep screenshot-->
+     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
 3. Select **Check access** to connect to your organization’s centralized library.
 
