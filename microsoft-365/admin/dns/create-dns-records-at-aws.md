@@ -61,6 +61,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain you want to verify.":::
 
 1. Select **Create record**.
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
     
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -75,6 +77,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |(Leave this field empty.)  <br/> |TXT - Used to verify email senders  <br/> |MS=ms *XXXXXXXX*  <br/>**Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |300  <br/> |Simple  <br/> |
    
 1. Select **Create records**.
+    
+   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Select Create records.":::    
     
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
@@ -116,7 +120,9 @@ To verify the record in Microsoft 365:
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
-    
+ 
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record."::: 
+ 
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing policy** values from the drop-down lists.) 
@@ -129,7 +135,9 @@ To verify the record in Microsoft 365:
     |(Leave this field empty.)  <br/> |MX - Specifies mail servers  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> The 0 is the MX priority value. Add it to the beginning of the MX value, separated from the remainder of the value by a space.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your \<*domain-key*\> from your Microsoft 365 account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 300  <br/> | Simple routing <br/> |
   
 1. Select **Create records**.
-  
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-mx-create-records.png" alt-text="Select Create records.":::
+
 1. If there are any other MX records, remove them by selecting the record, and then selecting **Delete**.
   
 ## Add the CNAME record required for Microsoft 365
@@ -153,7 +161,9 @@ To verify the record in Microsoft 365:
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
-    
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing policy** values from the drop-down lists.) 
@@ -162,8 +172,10 @@ To verify the record in Microsoft 365:
     |:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - Routes traffic to another domain name  <br/> | autodiscover.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> | 300  <br/> |Simple  <br/> |
   
-6. Select **Create records**.
-    
+1. Select **Create records**.
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+
 ## Add a TXT record for SPF to help prevent email spam
 
 > [!IMPORTANT]
@@ -188,7 +200,9 @@ To verify the record in Microsoft 365:
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
-    
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down lists.) 
@@ -197,7 +211,9 @@ To verify the record in Microsoft 365:
     |:-----|:-----|
     |TXT- Used to verify email senders and for application-specific values |v=spf1 include:spf.protection.outlook.com -all  <br/> (The quotation marks required by the onscreen instructions are supplied automatically. You don't need to type them manually.)  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.   |
   
-6. Select **Create records**.
+1. Select **Create records**.
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-txt-create-records.png" alt-text="Select Create records.":::
 
 ## Advanced option: Skype for Business
 
@@ -224,7 +240,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**.
-    
+ 
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record."::: 
+ 
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
@@ -234,8 +252,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |_sip._tls|SRV - Application-specific values that id servers|100 1 443 sipdir.online.lync.com. **This value MUST end with a period (.)**><br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 300 |Simple|
     |_sipfederationtls._tcp|SRV - Application-specific values that id servers|100 1 5061 sipfed.online.lync.com. **This value MUST end with a period (.)**<br> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.    | 300 |Simple|
   
-7. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then again select **Create records**. 
-    
+1. To add the other SRV record, select **Add another record**, create a record using the values from the next row in the table, and then again select **Create records**. 
+ 
+   :::image type="content" source="../../media/dns-aws/aws-domians-srv-create-records.png" alt-text="Select Create records.":::
+ 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
 
@@ -260,7 +280,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
    :::image type="content" source="../../media/dns-aws/aws-domains-3.png" alt-text="Select the name of the domain.":::
 
 1. Select **Create record**. 
-    
+ 
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+ 
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing policy** values from the drop-down lists.) 
@@ -273,7 +295,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. To add the other CNAME record, select **Add another record**, create a record using the values from the next row in the table. 
 
 1. Select **Create records**.
-    
+ 
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+ 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -303,6 +327,8 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. Select **Create record**.
 
+   :::image type="content" source="../../media/dns-aws/aws-domains-create-record.png" alt-text="Select Create record.":::
+
 1. In the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** and **Routing policy** values from the drop-down lists.) 
@@ -315,6 +341,8 @@ This service helps you secure and remotely manage mobile devices that connect to
 1. To add the other CNAME record, select **Add another record**, create a record using the values from the next row in the table. 
 
 1. Select **Create records**.
-    
+
+   :::image type="content" source="../../media/dns-aws/aws-domains-cname-create-records.png" alt-text="Select Create records.":::
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
