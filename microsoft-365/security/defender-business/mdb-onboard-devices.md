@@ -34,7 +34,7 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## Step 1: Choose your security and device management path
 
-Depending on whether you are already using a security and device management tool, such as Microsoft Endpoint Manager, you can choose the path that best meets your company's needs.
+Review the scenarios listed in the following table, and choose the path that best meets your company's needs.
 <br/><br/>
 
 |Scenario  |Options  |
