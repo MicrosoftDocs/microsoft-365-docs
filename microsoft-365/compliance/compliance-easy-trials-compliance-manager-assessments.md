@@ -32,6 +32,9 @@ You can sign up for a trial in the Microsoft 365 compliance center using the **T
 
 Full access to Compliance Manager features may depend on your licensing agreement for Compliance Manager. To learn more about the free compliance trial that includes Compliance Manager, see [About the free trial for Microsoft 365 compliance](compliance-easy-trials.md).
 
+> [!NOTE]
+> This trial is available to organizations using Compliance Manager under a commercial license. GCC and DOD licenses are not currently supported.
+
 ## Licensing
 
 Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments as you wish using these 25 templates.
