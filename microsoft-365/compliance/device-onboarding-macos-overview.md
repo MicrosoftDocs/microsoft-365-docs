@@ -53,7 +53,9 @@ Your macOS devices must already be managed through Intune or JAMF Pro.
 
 See, [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)
 
-## Supported actions 
+## Activities that can be restricted on macOS 
+
+Once a macOS device is onboarded into Microsoft 365 Compliance solutions, you can monitor and restrict these actions with data loss prevention (DLP) policies.
 
 **Copy to a USB removable media** – when enforced, this action blocks, warns or audits the copying or moving of protected files from an endpoint device to USB removable media 
 
