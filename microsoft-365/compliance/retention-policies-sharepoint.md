@@ -111,11 +111,13 @@ Versioning is a feature of all document lists and libraries in SharePoint and On
   
 When a document with versions is subject to retention settings to retain that content, how the versions are stored in the Preservation Hold library changed in November 2021 to improve performance. Currently rolling out to tenants, all versions of the file are retained in a single file in the Preservation Hold library. Before the change, versions were copied to the Preservation Hold library as separate files, and after the change, remain as separate files.
 
-Irrespective of how the versions are stored, if the retention settings are configured to delete at the end of the retention period:
+If the retention settings are configured to delete at the end of the retention period:
 
 - If the retention period is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
 
-- If the retention period is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
+- If the retention period is based on when the content was last modified:
+    - **After the change where all versions of the file are retained in a single file in the Preservation Hold library**: Each version has the same expiration date as the last version of the document. The last version of the document and its versions all expire at the same time.
+    - **Before the change where versions were copied to the Preservation Hold library as separate files**: Each version has its own expiration date based on when the original document was modified to create that version. The original document and its versions expire independently of each other.
 
 When the retention action is to delete the document, all versions not in the Preservation Hold library are deleted at the same time according to the current version.
 
