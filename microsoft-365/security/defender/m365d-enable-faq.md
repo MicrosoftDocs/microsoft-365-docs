@@ -73,6 +73,11 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Security Operator
 - Global Reader
 - Security Reader
+- Compliance Admin
+- Compliance Data Admin
+- Application Admin
+- Cloud Application Admin
+
 
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
