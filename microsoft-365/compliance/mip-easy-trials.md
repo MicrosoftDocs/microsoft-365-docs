@@ -22,7 +22,7 @@ The Microsoft Information Protection free trial is one of many available [free t
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
-- Data loss prevention (DLP) policies applied to either the Teams or Devices locations
+- Data loss prevention (DLP) policies for Teams and devices
 
 These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
@@ -69,6 +69,24 @@ When you don't have sensitivity labels that are published, we'll create the foll
 |Highly Confidential \ All Employees | Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content. |
 |Highly Confidential \ Specified People | Highly Confidential data that requires protection and that can only be viewed by specified people, with limited rights. |
 
+
+|Label name|Label description for users|Settings|
+|-------------------------------|---------------------------|-----------------|
+|Personal|Non-business data, for personal use only.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: None<br /><br />**Site settings**: None <br /><br />**Auto-labeling for database columns**: None|
+
+|Public|Business data that is specifically prepared and approved for public consumption.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General|Business data that is not intended for public consumption. However, this can be shared with external partners, as required. Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General \ Anyone (unrestricted)|Organization data that isn’t intended for public consumption but can be shared with external partners if appropriate. Examples include customer conversations that don’t include sensitive info or released marketing materials.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|General \ All Employees (unrestricted)|Organization data that isn’t intended for public consumption. If you need to share this content with external partners, confirm with other data owners that it's OK to share and then change the label to General \ Anyone (unrestricted) . Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential|Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data.|**Scope**: File, Email <br /><br />**Content marking**: No<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential \ Anyone (unrestricted)|Confidential data that doesn’t need to be encrypted. Use this option with care and appropriate business justification.|**Scope**: File, Email <br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential \ All Employees)|Confidential data that requires protection, which allows all employees full permissions. Data owners can track and revoke content.|**Scope**: File, Email <br /><br />**Encryption**: Encryption<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: Recommend that users apply the label <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Confidential \ Trusted People|Confidential data that can be shared with trusted people inside and outside your organization. These people can also reshare the data as needed.|**Scope**: File, Email <br /><br />**Encryption**: Encryption<br /><br />**Content marking**: Footer: Classified as Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential|Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.|**Scope**: File, Email <br /><br />**Encryption**: Encryption<br /><br />**Content marking**: Watermark: HIGHLY CONFIDENTIAL<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential \ All Employees|Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content.|**Scope**: File, Email <br /><br />**Encryption**: Encryption<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+|Highly Confidential \ Specific People |Highly confidential data that requires protection and can be viewed only by people you specify and with the permission level you choose.|**Scope**: File, Email <br /><br />**Encryption**: Encryption<br /><br />**Content marking**: Footer: Classified as Highly Confidential<br /><br />**Auto-labeling**: No <br /><br />**Group settings**: No<br /><br />**Site settings**: No <br /><br />**Auto-labeling for database columns**: None|
+
+
 > [!NOTE]
 > These label names and descriptions are automatically available for the following locales: US English, Chinese Simplified and Traditional, French, German, Italian, Japanese, Korean, Portuguese Brazilian, Russian, and Spanish. If you need additional languages, you can specify your translations [by using PowerShell](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages).
 
@@ -90,7 +108,7 @@ If you need to edit these default policy settings, see [Publish sensitivity labe
 
 When you use these labels in Office apps on Windows, macOS, iOS, and Android, users see new labels within four hours, and within one hour for Word, Excel, and PowerPoint on the web when you refresh the browser. However, you might need to allow up to 24 hours for changes to replicate to all apps and services.
 
-## Client-side auto-labeling 
+## Client-side auto-labeling
 
 The default client-side auto-labeling configuration automatically recommends users apply a sensitivity label when we detect credit card numbers in documents or emails they’re working with. As a recommendation rather than automatically applied, this configuration serves as a good first step for highlighting concerning content and introduces users to the practice of labeling their documents and emails.
 
@@ -126,13 +144,15 @@ For more information about simulation mode, see [Learn about simulation mode](ap
 
 If you want to edit the service-side auto-labeling policy, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
-## DLP for Teams location
+## DLP for Teams
 
 The default DLP policy for Teams detects the presence of credit card numbers in all Teams chats and channel messages. When this sensitive information is detected, admins will get a low severity alert notification.
 
 This policy is unobtrusive to users with no policy tip visible and no messages blocked, but admins will have records of the sensitive information shared in these messages. If required, you can edit the settings to change this default configuration.
 
-## DLP for Devices location
+To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
+
+## DLP for Devices
 
 The default DLP policy for Devices detects the presence of credit card numbers on Windows 10 devices that have been onboarded into Microsoft 365 compliance. It then audits (does not block) the following actions: 
 - Upload to cloud service domains or access by unallowed browsers
@@ -150,6 +170,7 @@ The default DLP policy for Devices detects the presence of credit card numbers o
 If content contains 10 or more instances of credit cards and one or more of the listed activities is detected, a medium severity alert notification is sent to admins.
 
 This policy is unobtrusive to users with no policy tip visible and no actions blocked, but admins will have records of all suspicious activity. If required, you can edit these settings to change this default configuration. 
+To see the results of this policy, use [DLP Activity Explorer](dlp-learn-about-dlp.md#dlp-activity-explorer).
 
 ## Additional resources
 
