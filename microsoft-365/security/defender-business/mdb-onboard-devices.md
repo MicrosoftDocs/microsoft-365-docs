@@ -28,8 +28,11 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 ## What to do
 
 [Step 1: Choose your security and device management path](#step-1-choose-your-security-and-device-management-path).
+
 [Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).
+
 [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method). 
+
 [Step 4: Onboard devices in the Microsoft 365 Defender portal](#step-4-onboard-devices-in-the-microsoft-365-defender-portal). 
 
 ## Step 1: Choose your security and device management path
@@ -82,7 +85,9 @@ The following video outlines the onboarding process for Microsoft Defender for E
 
 Follow these steps to onboard devices:
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Onboard devices** step of the setup and configuration process, choose an onboarding method.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and then sign in.
+
+2. In the navigation pane,  on the **Onboard devices** step of the setup and configuration process, choose an onboarding method.
 
 2. Depending on whether you are already using Microsoft Endpoint Manager, take one of the following steps:
 
@@ -93,6 +98,8 @@ Follow these steps to onboard devices:
 After you have onboarded your devices, proceed to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
 
 ## What if I want to offboard a device?
+
+1. Go to the 
 
 See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
