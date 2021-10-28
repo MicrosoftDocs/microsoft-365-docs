@@ -179,7 +179,7 @@ To learn more, including a list of basic commands, see [Investigate entities on 
 
 ## Automated investigation and response
 
-Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing you to focus on more sophisticated threats and other high-priority things. All remediation actions are tracked in the Action center, and most remediation actions can be undone if needed. 
+Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR capabilities significantly reduce alert volume, allowing you to focus on more sophisticated threats and other high-priority things. All remediation actions are tracked in the [Action center](../defender/m365d-action-center.md), and most remediation actions can be undone if needed. 
 
 To learn more, see [Overview of automated investigations](../defender-endpoint/automated-investigations.md).
 
