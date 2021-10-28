@@ -20,7 +20,7 @@ description: Learn how to manage and use LinkedIn Learning in Viva Learning
 
 # How to use LinkedIn Learning in Viva Learning
 
-LinkedIn Learning is available for everyone in Viva Learning. You can enable or disable LinkedIn Learning as a content source from the Microsoft 365 admin center.
+Select free content from LinkedIn Learning is available for everyone in Viva Learning. You can enable or disable LinkedIn Learning as a content source from the Microsoft 365 admin center.
 
 >[!NOTE]
 >Note: Everyone has access free access to the select 125 free courses. For more courses, you'll need an enterprise subscription to Viva Learning.
