@@ -10,7 +10,10 @@ ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -81,8 +84,6 @@ Templates will display an activation status as either active or inactive:
 - A template is considered **inactive** if your organization isn’t using it for an assessment.
 
 If you link any assessments to a purchased premium template, that template will be active for one year. Your purchase will automatically renew unless you cancel.
-
-You may also try premium templates on a trial basis. Trial licenses are good for up to 25 templates for 30 days. Once your trial begins, the templates should become available in your tenant within 48 hours. Trials can be activated through the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 #### Activated templates counter
 

@@ -21,20 +21,23 @@
           href: service-description/regions-languages.md
         - name: Product lifecycle
           href: service-description/device-lifecycle.md
-        - name: Device requirements
-          href: service-description/device-requirements.md
-        - name: Device images
-          href: service-description/device-images.md
-        - name: Device names
-          href: service-description/device-names.md
-        - name: Device services
-          href: service-description/device-services.md
-        - name: Device profiles
-          href: service-description/profiles.md
-        - name: Device deployment groups
-          href: service-description/deployment-groups.md
-        - name: Device configuration
-          href: service-description/device-policies.md
+        - name: Devices
+          href: 
+          items:
+            - name: Device requirements
+              href: service-description/device-requirements.md
+            - name: Device images
+              href: service-description/device-images.md
+            - name: Device names
+              href: service-description/device-names.md
+            - name: Device services
+              href: service-description/device-services.md
+            - name: Device profiles
+              href: service-description/profiles.md
+            - name: Device deployment groups
+              href: service-description/deployment-groups.md
+            - name: Device configuration
+              href: service-description/device-policies.md
         - name: Security technologies
           href: service-description/security.md
         - name: Security operations
@@ -59,6 +62,8 @@
           href: service-description/servicechanges.md
         - name: Exceptions to the service plan
           href: service-description/customizing.md
+        - name: Shared devices
+          href: service-description/shared-devices.md
     - name: Get ready for enrollment in Microsoft Managed Desktop
       href: get-ready/index.md
       items: 
@@ -154,6 +159,8 @@
               href: working-with-managed-desktop/device-status-report.md
             - name: Windows security updates report
               href: working-with-managed-desktop/security-updates-report.md
+            - name: App usage report
+              href: working-with-managed-desktop/app-usage-report.md
         - name: Admin support
           href: working-with-managed-desktop/admin-support.md
         - name: User support

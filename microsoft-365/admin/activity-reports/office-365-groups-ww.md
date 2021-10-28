@@ -20,15 +20,12 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: "Get an Microsoft 365 groups report to know about the groups and their activities."
+description: "Get a Microsoft 365 groups report to know about the groups and their activities."
 ---
 
 # Microsoft 365 Reports in the admin center - Microsoft 365 groups
 
-The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft 365 groups report, you can gain insights into the activity of groups in your organization and see how many groups are being created and used.
-  
-> [!NOTE]
-> To view reports, you must be a global administrator and global reader in Microsoft 365, a reports reader in Azure, or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator.  
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft 365 groups report, you can gain insights into the activity of groups in your organization and see how many groups are being created and used.
   
 ## How to get to the groups report
 
@@ -48,6 +45,8 @@ Select **Choose columns** to add or remove columns from the report.
 
 You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. 
 
+The **groups** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
+
 |Metric|Definition|
 |:-----|:-----|
 |Group name |The name of the group. |
@@ -59,7 +58,7 @@ You can also export the report data into an Excel .csv file by selecting the **E
 |Emails in Exchange (total) |The total number of items in the group's mailbox. |
 |Mailbox storage used for Exchange (MB) |The storage used by the group's mailbox. |
 |SharePoint files (total) |The number of files stored in SharePoint group sites. |
-|SharePoint files (active) |The number of files in the SharePoint group site that were acted on (viewed or modified, synched , shared internally or externally) during the reporting period. |
+|SharePoint files (active) |The number of files in the SharePoint group site that were acted on (viewed or modified, synched, shared internally or externally) during the reporting period. |
 |Total site storage used for SharePoint (MB) |The amount of storage in MB used during the reporting period. |
 |Messages in Yammer (posted) |The number of messages posted in the Yammer group over the reporting period. |
 |Messages in Yammer (read) |The number of conversations read in the Yammer group over the reporting period. |
