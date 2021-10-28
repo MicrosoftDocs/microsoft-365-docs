@@ -20,6 +20,9 @@ ROBOTS: NOINDEX
 
 # Configure Saba as a content source for Microsoft Viva Learning
 
+>[!NOTE]
+>This feature is not supported in preview.
+
 This article shows you how to configure Saba as a third-party learning content source for Microsoft Viva Learning. You must be a Saba System Admin or Super User to perform these steps.
 
 >[!NOTE]

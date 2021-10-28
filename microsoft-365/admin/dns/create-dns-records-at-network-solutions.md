@@ -58,7 +58,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
-1. Select **Continue**, and on the Manage Advanced DNS Records page, select **+ADD RECORD**.
+1. On the Manage Advanced DNS Records page, select **+ADD RECORD**.
 
 1. Under **Type**, select **TXT** from the drop-down list.
   
@@ -66,8 +66,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
     |**Refers to**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    |
-  
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    | 
+
 1. Select **ADD**.
   
     > [!NOTE]
@@ -118,7 +118,7 @@ To verify the record in Microsoft 365:
     
     **Refers to** |**Mail server**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value canNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
+    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value CANNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
   
 1. Select **ADD**.
   
@@ -226,8 +226,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    | SRV |_sip  <br/> |_tls  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
-    | SRV |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+    | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
+    | SRV |_sipfederationtls  <br/> |TCP  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
   
 1. Select **ADD**.
  

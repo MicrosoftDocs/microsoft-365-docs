@@ -13,9 +13,13 @@
       items:
         - name: Set up in the Teams admin center
           href: set-up-teams-admin-center.md
-        - name: Configure learning content sources
-          href: content-sources-365-admin-center.md
-        - name: Configure SharePoint as a content source
-          href: configure-sharepoint-content-source.md
+        - name: Manage learning content sources
+          items:
+            - name: Overview
+              href: content-sources-365-admin-center.md
+            - name: Configure SharePoint as a content source
+              href: configure-sharepoint-content-source.md
+            - name: Add other providers
+              href: configure-other-content-sources.md
 
 

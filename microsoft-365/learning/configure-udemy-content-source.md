@@ -20,6 +20,9 @@ ROBOTS: NOINDEX
 
 # Configure Udemy as a content source for Microsoft Viva Learning
 
+>[!NOTE]
+>This feature is not supported in preview.
+
 This article shows you how to configure Udemy as a third-party learning content source for Microsoft Viva Learning.
 
 >[!NOTE]
