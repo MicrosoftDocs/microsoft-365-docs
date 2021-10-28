@@ -64,7 +64,7 @@ The following diagram is a conceptual representation of the MDE security configu
 4. Defender for Endpoint reports the status of the policy back to Endpoint Manager.
 
 
-[!INCLUDE [Security configuration manager prerequisites](../includes/security-config-mgt-prerequisites.md)]
+[!INCLUDE [Security configuration manager prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
 
 ## Onboard devices
