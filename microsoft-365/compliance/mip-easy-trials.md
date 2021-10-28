@@ -1,5 +1,5 @@
 ---
-title: "Learn about the free trial for Microsoft Information Protection"
+title: "Learn about the default labels and policies for Microsoft Information Protection"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -10,33 +10,35 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: Learn about the free trial for Microsoft Information Protection (MIP) to classify and protect sensitive content.
+description: Learn about the default labels and policies for Microsoft Information Protection (MIP) to classify and protect sensitive content.
 ---
 
-# Learn about the free trial for Microsoft Information Protection
+# Learn about the default labels and policies for Microsoft Information Protection
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-The Microsoft Information Protection free trial is one of many available [free trials for Microsoft 365 Compliance](compliance-easy-trials.md) and includes the following default configurations:
+Eligible customers can activate default labels and policies for Microsoft Information Protection (MIP): 
 
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
 - Data loss prevention (DLP) policies for Teams and devices
 
-These default configurations help you get up and running quickly with Microsoft Information Protection. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
+These default configurations help you get up and running quickly with Microsoft Information Protection from Microsoft 365 Compliance. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
-**New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
+Eligibility includes customers who have a [free trial for Microsoft 365 Compliance](compliance-easy-trials.md) and customers who already have a Microsoft 365 E5 plan:
 
-**Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
+- **New customers**: If you've had Microsoft 365 Compliance for less than 30 days, your tenant will come with all the listed default configurations. You can always disable, remove, or edit them.
+
+- **Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
 
 | Default configuration| Equivalent |
 |:-----|:-----|
 |Sensitivity labels and a sensitivity label policy | Published sensitivity labels |
 |Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
 |Service-side auto-labeling | At least one auto-labeling policy that's turned on|
-|Teams | At least one DLP policy for Teams|
-|Devices | At least one DLP policy for devices|
+|DLP for Teams | At least one DLP policy for Teams|
+|DLP for devices | At least one DLP policy for devices|
 
 ## Activate the default labels and policies
 
@@ -46,28 +48,13 @@ To get these preconfigured labels and policies:
     
     If you don't immediately see this option, first select **Show all** from the navigation pane. 
     
-2. If you are eligible for the Microsoft Information Protection free trial, you'll see the following information, where you can activate the default labels and policies. For example:
+2. If you are eligible for the Microsoft Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
     
     ![Microsoft Information Protection free trial with preconfigured policies.](../media/mip-preconfigured.png)
 
 ## Default sensitivity labels
 
 When you don't have sensitivity labels that are published, we'll create the following labels for you:
-
-| Label name| Label description for users |
-|:-----|:-----|
-|Personal | Non-business data, for personal use only |
-|Public | Organization data that’s specifically prepared and approved for public consumption |
-|General   | Organization data that is not intended for public consumption. However, this can be shared with external partners, as required. Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication. |
-|General \ Anyone (unrestricted)  | Organization data that isn’t intended for public consumption but can be shared with external partners if appropriate. Examples include customer conversations that don’t include sensitive info or released marketing materials |
-|General \ All Employees (unrestricted) | Non-business data, for personal use only |
-|Confidential  | Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data |
-|Confidential \ Anyone (unrestricted) | Confidential data that doesn’t need to be encrypted. Use this option with care and with appropriate business justification. Make sure to protect the data through other means like DLP |
-|Confidential \ All Employees | Confidential data that requires protection, which allows all employees full permission. Data owners can track and revoke content.  |
-|Confidential \ Trusted People | Confidential data for internal/external sharing that can be reshared by trusted recipients.  |
-|Highly Confidential | Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.  |
-|Highly Confidential \ All Employees | Highly confidential data that allows all employees view, edit, and reply permissions to this content. Data owners can track and revoke content. |
-|Highly Confidential \ Specified People | Highly Confidential data that requires protection and that can only be viewed by specified people, with limited rights. |
 
 
 |Label name|Label description for users|Settings|
