@@ -163,11 +163,11 @@ For more information about how retention policies work for Yammer, see [Learn ab
 
 Yammer is more than just community messages and private messages. To retain and delete email messages for your Yammer network, configure an additional retention policy that includes any Microsoft 365 groups that are used for Yammer, by using the **Microsoft 365 Groups** location. 
 
-To retain and delete files that are stored in Yammer, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations:
+To retain and delete files that are stored in Yammer, you need a retention policy that includes the **Microsoft 365 Groups** location or **OneDrive accounts** locations:
 
 - Files that are shared in private messages are stored in the OneDrive account of the user who shared the file. 
 
-- Files that are uploaded to communities are stored in the SharePoint site for the Yammer community.
+- Files that are uploaded to communities are stored in the group-connected SharePoint site for the Yammer community.
 
 It's possible that a retention policy that's applied to SharePoint sites or OneDrive accounts could delete a file that's referenced in a Yammer message before those messages get deleted. In this scenario, the file still displays in the Yammer message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
 
