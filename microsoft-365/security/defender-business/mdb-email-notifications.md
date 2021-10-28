@@ -32,10 +32,6 @@ You can choose from two types of notifications, as described in the following ta
 | Vulnerabilities  | Whenever any new exploits or vulnerability events are detected, recipients receive an email. |
 | Alerts & vulnerabilities  | When alerts are generated because threats are detected on devices, or when any new exploits or vulnerability events are detected, recipients receive an email. |
 
-
-- **Vulnerabilities** - email notifications about new exploits or vulnerability events
-- **Alerts & vulnerabilities** - email notifications about alerts on devices, new exploits, or vulnerability events
-
 **Email notifications are not the only way your security team can find out about new alerts or vulnerabilities**. Whenever your security team signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Your security team can also choose **Incidents** in the navigation pane to view information. Email notifications are another way to help keep your security team informed, in real time.
 
 ## View and edit email notifications
