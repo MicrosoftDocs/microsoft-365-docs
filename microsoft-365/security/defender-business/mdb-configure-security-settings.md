@@ -23,6 +23,8 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
+## Choose where to manage your security settings and policies
+
 After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to configure your security settings and policies. You can choose from several options, as described in the following table:
 
 | Option | Description |
