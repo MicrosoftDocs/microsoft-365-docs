@@ -43,3 +43,13 @@ To learn more, see
 If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices.
 
 You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business.
+
+## Next steps
+
+Proceed to:
+
+- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+- [Get started using Microsoft Defender for Business](mdb-get-started.md)
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
