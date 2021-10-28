@@ -824,6 +824,8 @@
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
+            - name: Collect cloud attachments
+              href: advanced-ediscovery-cloud-attachments.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
