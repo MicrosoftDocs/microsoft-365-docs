@@ -13,7 +13,7 @@ ms.localizationpriority: high
 description: Learn about the default labels and policies for Microsoft Information Protection (MIP) to classify and protect sensitive content.
 ---
 
-# Learn about the default labels and policies for Microsoft Information Protection
+# Default labels and policies for Microsoft Information Protection
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -32,13 +32,13 @@ Eligibility includes customers who have a [free trial for Microsoft 365 Complian
 
 - **Existing customers**: If you've had Microsoft 365 Compliance for more than 30 days, you'll get the default configurations if you haven't yet configured an equivalent:
 
-| Default configuration| Equivalent |
-|:-----|:-----|
-|Sensitivity labels and a sensitivity label policy | Published sensitivity labels |
-|Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
-|Service-side auto-labeling | At least one auto-labeling policy that's turned on|
-|DLP for Teams | At least one DLP policy for Teams|
-|DLP for devices | At least one DLP policy for devices|
+    | Default configuration| Equivalent |
+    |:-----|:-----|
+    |Sensitivity labels and a sensitivity label policy | Published sensitivity labels |
+    |Client-side auto-labeling | One or more sensitivity labels configured to automatically apply (or recommend to users) in Office apps|
+    |Service-side auto-labeling | At least one auto-labeling policy that's turned on|
+    |DLP for Teams | At least one DLP policy for Teams|
+    |DLP for devices | At least one DLP policy for devices|
 
 ## Activate the default labels and policies
 
