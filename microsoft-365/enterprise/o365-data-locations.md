@@ -84,6 +84,10 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
+### Why do I see my Microsoft 365 service requests for my data at rest connecting to servers in countries outside of my region?
+
+On occasion, a customer request may be handled by servers in a different region than the location where your data is stored at rest. This may happen where network routing decisions choose a different server for the request processing, but in these cases your data is not moved to a new at rest location.
+
 ### What are the exceptions for Intune data locations?
 
 Microsoft will not store Intune customer data at rest outside the stated Geo. except if:

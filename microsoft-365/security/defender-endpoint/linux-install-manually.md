@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -34,7 +34,7 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 - [Deploy Microsoft Defender for Endpoint on Linux manually](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
   - [Configure the Linux software repository](#configure-the-linux-software-repository)
-    - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-oracle-linux-and-amazon-linux-2)
+    - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES and variants](#sles-and-variants)
     - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
   - [Application installation](#application-installation)
@@ -60,7 +60,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-### RHEL and variants (CentOS, Oracle Linux and Amazon Linux 2)
+### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -80,7 +80,9 @@ In order to preview new features and provide early feedback, it is recommended t
     |---|---|
     |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
     |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    | For RHEL/Centos/Oracle 6.7-6.10 | <https://packages.microsoft.com/config/rhel/6/[channel].repo>
+    |For RHEL/Centos/Oracle 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
     In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 

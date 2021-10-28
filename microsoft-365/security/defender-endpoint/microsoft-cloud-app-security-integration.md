@@ -3,8 +3,6 @@ title: Microsoft Cloud App Security integration overview
 ms.reviewer:
 description: Microsoft Defender for Endpoint integrates with Cloud App Security by forwarding all cloud app networking activities.
 keywords: cloud, app, networking, visibility, usage
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -36,7 +34,7 @@ ms.technology: mde
 Microsoft Cloud App Security (Cloud App Security) is a comprehensive solution that gives visibility into cloud apps and services by allowing you to control and limit access to cloud apps, while enforcing compliance requirements on data stored in the cloud. For more information, see [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 > [!NOTE]
-> This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10 version 1809 or later.
+> This feature is available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10 version 1809 or later, or Windows 11.
 
 ## Microsoft Defender for Endpoint and Cloud App Security integration
 

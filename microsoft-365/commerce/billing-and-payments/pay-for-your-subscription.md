@@ -115,7 +115,7 @@ If you didn’t add the payment method used to pay for the subscription, you mus
 > - [Cape Verde](../pay/cape-verde.md)
 > - [Cayman Islands](../pay/cayman-islands.md)
 > - [Chile](../pay/chile.md)
-> - [China (PRC)](../pay/china-prc.md)
+> - [China](../pay/china-prc.md)
 > - [Colombia](../pay/colombia.md)
 > - [Costa Rica](../pay/costa-rica.md)
 > - [Côte d'Ivoire](../pay/cote-divoire.md)
