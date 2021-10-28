@@ -516,6 +516,10 @@ Since Cross-tenant migrations does not export labels and there is no way to shar
 
 Currently the Cross-Tenant mailbox migrations feature does not support the migration of Microsoft 365 Groups.
 
+**Can a source tenant admin perform an eDiscovery search against a mailbox after the mailbox has been migrated to the new/target tenant?**
+
+No, after a cross tenant mailbox migration, eDiscovery against the migrated user's mailbox in the source does not work. This is because there is no longer a mailbox in the source to search against as the mailbox has been migrated to the target tenant and now belongs to the target tenant. eDiscovery, post mailbox migration can only be done in the target tenant (where the mailbox now exists). If a copy of the source mailbox needs to persist in the source tenant after migration, the admin in the source can copy the contents to an alternate mailbox pre migration for future eDiscovery operations against the data.
+
 ## Known issues
 
 - **Issue: Post migration Teams functionality in the source tenant will be limited.** After the mailbox is migrated to the target tenant, Teams in the source tenant will no longer have access to the user's mailbox. So, if a user logs into Teams with the source tenant credential, then there will be a loss of functionality such as the inability to update your profile picture, no calendar application, and an inability to search and join public teams.
