@@ -31,7 +31,7 @@ Also, to optimize performance to Microsoft Managed Desktop cloud-based services,
 
 The proxy or firewall must support TLS 1.2. Otherwise, you might have to disable protocol detection.
 
-### Endpoints allowed that are necessary for Microsoft Managed Desktop
+### Allowed endpoints that are necessary for Microsoft Managed Desktop
 
 Microsoft Managed Desktop uses the Azure Portal to host its web console. The following URLs must be on the allowed list of your proxy and firewall so that Microsoft Managed Desktop devices can communicate with Microsoft Services.  
 
@@ -39,13 +39,12 @@ The Microsoft Managed Desktop URL is used for anything our service runs on the c
 
 Microsoft service  | URLs required on allow list 
 --- | ---
-Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
+Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net <br>mmd-support-prod-nam.trafficmanager.net <br>mmdls.microsoft.com
 Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 Quick Assist | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft Support and Recovery Assistant | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
-
-### Endpoints allowed used by other Microsoft products
+### Allowed endpoints used by other Microsoft products
 
 There are URLs from several Microsoft products that need to be in the allowed list so that Microsoft Managed Desktop devices can communicate with those Microsoft Services. Use the links to see the complete list for each product. 
 
