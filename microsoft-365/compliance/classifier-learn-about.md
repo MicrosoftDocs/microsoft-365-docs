@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -99,9 +99,6 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 - **Discrimination**: detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
-
-> [!IMPORTANT]
-> The Discrimination trainable classifier is only available as public preview to customers whose Microsoft 365 tenants are homed in North America data centers. To see where your Microsoft 365 tenant is homed open the Microsoft 365 admin center and navigate to **Settings** > **Org settings** > [**Organization profile** tab](https://go.microsoft.com/fwlink/p/?linkid=2067339) > **Data location**. 
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 

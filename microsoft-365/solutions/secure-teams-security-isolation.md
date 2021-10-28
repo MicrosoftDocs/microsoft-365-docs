@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise

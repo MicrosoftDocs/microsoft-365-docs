@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.NewPolicyFromTemplate'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -35,7 +35,7 @@ You can also choose the Custom template, which has no default rules, and configu
 
 1. Sign in at <https://compliance.microsoft.com>.
 
-2. In the Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
+2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 
     ![Create a policy button.](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           

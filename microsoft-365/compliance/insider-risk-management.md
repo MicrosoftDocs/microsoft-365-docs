@@ -2,8 +2,8 @@
 title: Learn about insider risk management
 description: Learn how to help minimize risk in your organization with insider risk management in Microsoft 365.
 keywords: Microsoft 365, insider risk, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH

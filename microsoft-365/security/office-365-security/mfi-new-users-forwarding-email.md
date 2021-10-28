@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 description: Admins can learn how to use the New users forwarding email insight in the Security & Compliance Center to investigate when users in their organization are forwarding messages to new domains.
 ms.technology: mdo

@@ -7,7 +7,7 @@ ms.date: 8/6/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise

@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha

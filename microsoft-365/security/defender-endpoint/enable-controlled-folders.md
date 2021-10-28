@@ -8,7 +8,7 @@ ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp

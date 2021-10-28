@@ -2,8 +2,8 @@
 title: Get started with insider risk management
 description: Configure insider risk management in your organization.
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -243,7 +243,7 @@ Insider risk management policies include assigned users and define which types o
     - **Description (optional)**: Enter a description for the policy.
 
 6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts are not supported.
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
@@ -257,6 +257,9 @@ Insider risk management policies include assigned users and define which types o
     - **SharePoint sites**: Select **Add SharePoint site** and select the SharePoint sites you have access to and want to prioritize. For example, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Sensitive info type**: Select **Add sensitive info type** and select the sensitivity types you want to prioritize. For example, *"U.S. Bank Account Number"* and *"Credit Card Number"*.
     - **Sensitivity labels**: Select **Add sensitivity label** and select the labels you want to prioritize. For example, *"Confidential"* and *"Secret"*.
+
+    >[!NOTE]
+    >Users configuring the policy and selecting priority Share Point sites can select SharePoint sites that they have permission to access. If SharePoint sites aren't available for selection in the policy by the current user, another user with the required permissions can select the sites for the policy later or the current user should be given access to the required sites.
 
 12. Select **Next** to continue.
 13. On the **Indicators and triggering events** page, you'll see the [indicators](insider-risk-management-settings.md#indicators) that you've defined as available on the **Insider risk settings** > **Indicators** page. If you selected a *Data leaks* template at the beginning of the wizard, you must select a DLP policy from the **DLP policy** dropdown list to enable triggering indicators for the policy or select the built-in triggering event.

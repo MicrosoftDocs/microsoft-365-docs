@@ -10,7 +10,7 @@ ms.service: o365-administration
 ms.collection: SPO_Content
 search.appverid:
 - MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH

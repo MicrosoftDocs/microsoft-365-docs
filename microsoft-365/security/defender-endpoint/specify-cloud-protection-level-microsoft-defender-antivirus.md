@@ -2,12 +2,11 @@
 title: Specify the cloud protection level for Microsoft Defender Antivirus
 description: Set your level of cloud protection for Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, antimalware, security, defender, cloud, aggressiveness, protection level
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb

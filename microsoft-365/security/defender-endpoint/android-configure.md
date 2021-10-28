@@ -2,15 +2,13 @@
 title: Configure Microsoft Defender for Endpoint on Android features
 description: Describes how to configure Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:

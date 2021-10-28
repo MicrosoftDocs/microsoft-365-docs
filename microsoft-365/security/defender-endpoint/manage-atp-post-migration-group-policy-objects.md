@@ -2,8 +2,6 @@
 title: Manage Microsoft Defender for Endpoint using Group Policy Objects
 description: Learn how to manage Microsoft Defender for Endpoint with Group Policy Objects
 keywords: post-migration, manage, operations, maintenance, utilization, PowerShell, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -26,6 +24,8 @@ ms.reviewer: chventou
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -38,6 +38,9 @@ ms.reviewer: chventou
 You can use Group Policy Objects in Azure Active Directory Domain Services to manage some settings in Microsoft Defender for Endpoint.
 
 ## Configure Microsoft Defender for Endpoint with Group Policy Objects
+
+> [!NOTE]
+> If you're using [the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview), please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**. 
 
 The following table lists various tasks you can perform to configure Microsoft Defender for Endpoint with Group Policy Objects.
 

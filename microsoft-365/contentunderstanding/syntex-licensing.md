@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: "Learn about licensing for SharePoint Syntex"
 ---
 

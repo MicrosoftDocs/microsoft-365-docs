@@ -15,7 +15,7 @@ ms.custom:
   - TopSMBIssues
   - seo-marvel-apr2020
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.

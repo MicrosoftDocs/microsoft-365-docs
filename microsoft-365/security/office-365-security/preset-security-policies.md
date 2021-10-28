@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: how-to
 ms.date:
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - M365-security-compliance

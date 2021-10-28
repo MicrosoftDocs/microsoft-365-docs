@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management
@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: "View device policies and actions by signing in to Microsoft 365 for business with global admin credentials."
+description: "View device policies and actions by signing in to Microsoft 365 for business."
 ---
 
 # View and manage policies and devices

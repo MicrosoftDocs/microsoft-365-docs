@@ -4,7 +4,7 @@ description: Advantages in Microsoft 365 Defender, combining Microsoft Defender 
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.date: 04/21/2021

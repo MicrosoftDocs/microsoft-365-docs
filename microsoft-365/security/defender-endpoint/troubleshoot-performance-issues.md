@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 ms.date: 04/14/2021
 audience: ITPro

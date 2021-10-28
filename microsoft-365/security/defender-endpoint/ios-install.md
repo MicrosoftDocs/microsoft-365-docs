@@ -3,15 +3,13 @@ title: App-based deployment for Microsoft Defender for Endpoint on iOS
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:

@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: null
 description: "Learn how to configure SharePoint as a learning content source for Microsoft Viva Learning (Preview)."
 
 ---

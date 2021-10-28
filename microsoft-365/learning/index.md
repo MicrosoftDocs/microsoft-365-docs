@@ -12,14 +12,14 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
-localization_priority: None
+ms.localizationpriority: null
 description: Learn how to find resources for Microsoft Viva Learning (Preview).
 ---
 
 # Introduction to Microsoft Viva Learning (Preview)
 
 > [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. 
+> The information in this article relates to a preview product that may be substantially modified before it's commercially released. Preview is not currently open to new participants.
 
 Microsoft Viva Learning (Preview) empowers teams and individuals in your organization to make learning a natural part of their day. The app creates a central hub in Microsoft Teams where employees can share, assign, and learn from content libraries across your organization.
 

@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use REST API to apply a document understanding model to one or more libraries.
 ---
 

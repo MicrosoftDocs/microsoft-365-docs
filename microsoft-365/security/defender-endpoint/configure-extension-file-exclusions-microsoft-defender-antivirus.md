@@ -7,14 +7,14 @@ ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 09/14/2021
+ms.date: 10/25/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -131,7 +131,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -141,7 +141,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -215,7 +215,8 @@ The following table describes how the wildcards can be used and provides some ex
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables.<br/><br/>
+The following table lists and describes the system account environment variables.
+    <br/><br/>
     
 |This system environment variable...|Redirects to this|
 |---|---|
@@ -275,10 +276,10 @@ The following table lists and describes the system account environment variables
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
-|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Users\UserName`|
+|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
 
 ## Review the list of exclusions
 
@@ -302,17 +303,17 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 ### Validate the exclusion list by using MpCmdRun
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md), use the following command:
 
 ```DOS
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
+cd 4.18.2110-3.0 (Where 4.18.2110-3.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-3.0 (released in October 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 

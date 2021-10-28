@@ -2,15 +2,13 @@
 title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confirming the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -22,8 +20,8 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - Azure Active Directory
 - Office 365
 
@@ -97,7 +95,6 @@ Device group definitions can also include multiple values for each condition. Yo
 
 > [!TIP]
 > Use the 'OR' operator between rows of the same condition type, which allows multiple values per property.
->
 > You can add up to 10 rows (values) for each property type - tag, device name, domain.
 
 For more information on linking to device groups definitions, see [Device groups - Microsoft 365 security](https://sip.security.microsoft.com/homepage).

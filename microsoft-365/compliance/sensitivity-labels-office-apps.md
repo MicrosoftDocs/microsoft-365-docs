@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -98,7 +98,7 @@ The numbers listed are the minimum Office application versions required for each
 |[Let users assign permissions: <br /> - Do Not Forward](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | Current Channel: 1910+ <br /><br> Monthly Enterprise Channel: 1910+ <br /><br> Semi-Annual Enterprise Channel: 2002+ | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[Let users assign permissions: <br /> - Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions)  | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.48+ <sup>\*</sup> | 4.2112.0+  | 4.2112.0+ | Yes |
 |[Require users to apply a label to their email and documents](#require-users-to-apply-a-label-to-their-email-and-documents)   | Current Channel: 2101+ <br /><br> Monthly Enterprise Channel: 2101+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Yes                |
-|[Audit label-related user activity](data-classification-activity-explorer.md) | Current Channel: 2111+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: Under review | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Yes |
+|[Audit label-related user activity](data-classification-activity-explorer.md) | Current Channel: 2011+ <br /><br> Monthly Enterprise Channel: 2011+ <br /><br> Semi-Annual Enterprise Channel: Under review | 16.51+ <sup>\*</sup> | 4.2126+ | 4.2126+ | Yes |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using sensitive info types                    | Current Channel: 2009+ <br /><br> Monthly Enterprise Channel: 2009+ <br /><br> Semi-Annual Enterprise Channel: 2102+ | 16.44+ <sup>\*</sup>                    | Under review           | Under review               | Yes |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) <br /> - Using trainable classifiers                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | Under review                    | Under review           | Under review               | Yes |
 |[Different settings for default label and mandatory labeling](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Current Channel: 2105+ <br /><br> Monthly Enterprise Channel: 2105+ <br /><br> Semi-Annual Enterprise Channel: 2108+ | 16.43+ <sup>\*</sup>                   | 4.2111+           | 4.2111+               | Yes |
@@ -258,7 +258,7 @@ If external users do not have an account in Azure Active Directory, they can aut
     
     The advantage of this option is that you can restrict access and rights to specific users by specifying their email address in the encryption settings. The downside is the administration overhead for the account creation and coordination with the label configuration.
 
-- Another option is to use [SharePoint and OneDrive integration with Azure AD B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) so that guest accounts are automatically created when your users share links.
+- Another option is to use [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration) so that guest accounts are automatically created when your users share links.
     
     The advantage of this option is minimum administrative overhead because the accounts are created automatically, and simpler label configuration. For this scenario, you must select the encryption option [Add any authenticated user](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) because you won't know the email addresses in advance. The downside is that this setting doesn't let you restrict access and usage rights to specific users.
 

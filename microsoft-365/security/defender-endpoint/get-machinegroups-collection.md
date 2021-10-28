@@ -10,12 +10,13 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: leonidzh
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
+ms.custom: api
 ---
 
 # Get KB collection API

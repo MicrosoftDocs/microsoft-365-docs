@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 05/25/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

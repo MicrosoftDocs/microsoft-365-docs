@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
@@ -154,9 +154,9 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      |**No action**|||||![Check mark](../../media/checkmark.png)|
      |
 
-     > <sup>1</sup> In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
+     > <sup>1</sup> EOP now uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
      >
-     > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+     > In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
      >
      > <sup>2</sup> You can this use value as a condition in mail flow rules to filter or route the message.
      >

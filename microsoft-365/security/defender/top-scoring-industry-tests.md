@@ -6,7 +6,7 @@ keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, 
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 ms.author: dansimp
 author: dansimp
 manager: dansimp

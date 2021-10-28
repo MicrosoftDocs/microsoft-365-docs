@@ -7,7 +7,7 @@ ms.date: 08/13/2020
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150

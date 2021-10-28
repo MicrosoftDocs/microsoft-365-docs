@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -36,10 +36,10 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
 
 > [!TIP]
-> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings).
+> Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
 
 The processes to automatically apply a retention label based on these conditions:
 
@@ -60,6 +60,8 @@ Use the following instructions for the two admin steps.
 
 The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
+Decide before you create your retention label policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention label policy, and then select them during the create retention label policy process. For instructions, see [Configuration information for adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+
 ## How to auto-apply a retention label
 
 First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](#step-2-create-an-auto-apply-policy).
@@ -76,17 +78,22 @@ Navigation instructions depend on whether you're using [records management](reco
     - If you are not using records management:
        - **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
-2. Follow the prompts in the wizard. If you are using records management:
+2. Follow the prompts in the configuration.
+    
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    If you are using records management:
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
     - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
-3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** to start the Create auto-labeling wizard that takes you directly to step 2 in the following procedure.
+3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** 
+4.  configuration that takes you directly to step 2 in the following procedure.
 
-To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+To edit an existing label, select it, and then select the **Edit label** option to start the **Edit retention label** configuration that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 ### Step 2: Create an auto-apply policy
 
@@ -100,17 +107,30 @@ When you create an auto-apply policy, you select a retention label to automatica
     - If you are not using records management:
         - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply a label**
     
-    Don't immediately see your option? First select **Show all**. 
+    Don't immediately see your solution in the navigation pane? First select **Show all**. 
 
-2. Follow the prompts in the Create auto-labeling wizard.
-    
-    For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
-    
-    For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
+2. Enter a name and description for this auto-labeling policy, and then select **Next**.
 
-To edit an existing auto-apply policy, select it to start the Edit retention policy wizard that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+3. For **Choose the type of content you want to apply this label to**, select one of the available conditions. For more information about the choices, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
+
+4. For the **Choose the type of retention policy to create** page, select **Adaptive** or **Static**, depending on the choice you made from the [Before you begin](#before-you-begin) instructions. If you haven't already created adaptive scopes, you can select **Adaptive** but because there won't be any adaptive scopes to select, you won't be able to finish the wizard with this option.
+
+5. Depending on your selected scope:
+    
+    - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Exchange email** but not **SharePoint sites**. 
+    
+    - If you chose **Static**: On the **Choose locations** page, toggle on or off any of the locations. For each location, you can leave it at the default to [apply the policy to the entire location](retention-settings.md#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)
+    
+    For information about the location choices, see [Locations](retention-settings.md#locations).
+
+6. Follow the prompts in the wizard to select a retention label, and then review and submit your configuration choices.
+
+To edit an existing auto-apply policy, select it to start the **Edit retention policy** configuration that lets you change the selected retention label and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 After content is labeled by using an auto-apply label policy, the applied label can't be automatically removed or changed by changing the content or the policy, or by a new auto-apply label policy. For more information, see [Only one retention label at a time](retention.md#only-one-retention-label-at-a-time).
+
+> [!NOTE]
+> An auto-apply retention label policy will never replace an existing retention label that's applied to content. If you want to relabel content by using the conditions you configure, you'll need to manually remove the current retention label from existing content.
 
 ### Configuring conditions for auto-apply retention labels
 
@@ -253,6 +273,19 @@ ProgID:Media AND ProgID:Meeting
 
 Most of the time, meeting recordings are saved to OneDrive. But for channel meetings, they are saved in SharePoint.
 
+##### Identify files and emails that have a sensitivity label
+
+To identify files in SharePoint or OneDrive and Exchange emails that have a specific [sensitivity label](sensitivity-labels.md) applied, specify the following for the **Keyword query editor**:
+
+```
+InformationProtectionLabelId:<GUID>
+```
+
+To find the GUID, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
 
 #### Auto-apply labels to content by using trainable classifiers
 
@@ -286,9 +319,9 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 2. Run the following command:
     
-    ``` PowerShell
+    ```PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-   ```
+    ```
 
 ## Updating retention labels and their policies
 

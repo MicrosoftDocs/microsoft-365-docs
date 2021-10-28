@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -190,4 +190,4 @@ After the nameserver records are updated to point to Microsoft, your domain setu
 
 [Add DNS records to connect your domain](create-dns-records-at-any-dns-hosting-provider.md) (article)\
 [Find and fix issues after adding your domain or DNS records](find-and-fix-issues.md) (article)\
-[Manage domains](index.yml) (link page)
+[Manage domains](/admin) (link page)

@@ -14,7 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn about the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests."

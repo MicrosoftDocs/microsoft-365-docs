@@ -8,7 +8,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
   - MOE150

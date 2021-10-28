@@ -7,7 +7,7 @@ ms.date: 09/28/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise

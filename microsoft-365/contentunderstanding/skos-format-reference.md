@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid:
 ms.collection: enabler-strategic
-localization_priority: Priority
+ms.localizationpriority: high
 description: 'SKOS format reference for SharePoint taxonomy'
 ---
 # SKOS format reference for SharePoint taxonomy

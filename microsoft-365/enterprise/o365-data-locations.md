@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
@@ -84,6 +84,10 @@ Please review the [Products available by region](https://go.microsoft.com/fwlink
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) is available for Exchange Online, OneDrive for Business, SharePoint Online, and Teams.
 
+### Why do I see my Microsoft 365 service requests for my data at rest connecting to servers in countries outside of my region?
+
+On occasion, a customer request may be handled by servers in a different region than the location where your data is stored at rest. This may happen where network routing decisions choose a different server for the request processing, but in these cases your data is not moved to a new at rest location.
+
 ### What are the exceptions for Intune data locations?
 
 Microsoft will not store Intune customer data at rest outside the stated Geo. except if:
@@ -97,7 +101,7 @@ Microsoft will not store Intune customer data at rest outside the stated Geo. ex
    
   - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally.
 
-Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. 
+Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service’s own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.  
 
 ## Data Center Locations
 

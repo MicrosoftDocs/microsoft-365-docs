@@ -7,7 +7,7 @@ ms.date: 09/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise

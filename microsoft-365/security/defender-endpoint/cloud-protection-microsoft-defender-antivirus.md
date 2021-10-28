@@ -2,11 +2,10 @@
 title: Cloud protection and Microsoft Defender Antivirus
 description: Learn about cloud protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, next-generation av, machine learning, antimalware, security, defender, cloud, cloud protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -14,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
 ---
 

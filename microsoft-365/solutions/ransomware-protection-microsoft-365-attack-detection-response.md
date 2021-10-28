@@ -8,14 +8,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use Microsoft 365 Defender and its security signal sources to protect your Microsoft 365 resources from ransomware attacks.
 ---
 
