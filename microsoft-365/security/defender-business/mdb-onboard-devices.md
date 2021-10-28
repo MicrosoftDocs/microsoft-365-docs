@@ -37,11 +37,11 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 Review the scenarios listed in the following table, and identify the path that best meets your company's needs.
 <br/><br/>
 
-|Scenario  |What to expect  |
-|---------|---------|
-| You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings | Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager, or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md). If you choose the simplified configuration process, your onboarding process will be streamlined, and you can [choose between the automatic, gradual, or manual onboarding process](#step-2-choose-an-onboarding-process) with Defender for Business.   |
-| You are not currently using Microsoft Endpoint Manager | Defender for Business will prompt you to [choose a deployment method](#step-3-choose-a-deployment-method). You have several options available, including using a local script or using a tool like Microsoft Endpoint Manager.  |
-| You are already using a non-Microsoft productivity and device management tool    | If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. Or, you can [choose a deployment method](#step-3-choose-a-deployment-method) in Defender for Business.        |
+|Scenario  |What to expect  | What to do next |
+|---------|---------|---------|
+| You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings | Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager, or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md). If you choose the simplified configuration process, your onboarding process will be streamlined, and you can [choose between the automatic, gradual, or manual onboarding process](#step-2-choose-an-onboarding-process) with Defender for Business.   | Proceed to [Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).  |
+| You are not currently using Microsoft Endpoint Manager | Defender for Business will prompt you to [choose a deployment method](#step-3-choose-a-deployment-method). You have several options available, including using a local script or using a tool like Microsoft Endpoint Manager.  | Proceed to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method). |
+| You are already using a non-Microsoft productivity and device management tool    | If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. Or, you can [choose a deployment method](#step-3-choose-a-deployment-method) in Defender for Business.        | Either connect to Defender for Endpoint continue using your existing productivity and device management tool, or proceed to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).  |
 
 ## Step 2: Choose an onboarding process
 
@@ -74,11 +74,10 @@ You can choose from several deployment methods in Defender for Business, as desc
 > [!TIP]
 > If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method.
 
-## Step 4: Onboard devices in the Microsoft 365 Defender portal manually
+## How to onboard devices in the Microsoft 365 Defender portal manually
 
-If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
-
-
+> [!TIP]
+> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
 
 The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business.
 
@@ -90,13 +89,7 @@ Follow these steps to onboard devices:
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-2. Depending on whether you are already using Microsoft Endpoint Manager, take one of the following steps:
-
-   - If you are using Microsoft Endpoint Manager, choose between automatic onboarding (recommended), or manual onboarding, and follow the prompts. 
-
-   - If you are not already using Microsoft Endpoint Manager, review the list of [onboarding options](#onboarding-options). Select an option, download the package for that option, and follow the prompts.
-
-After you have onboarded your devices, proceed to [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).
+3. Select an operating system (such as Windows 10 and 11), and then choose a deployment method. Follow the guidance provided for the method you selected.
 
 ## What if I want to offboard a device?
 
@@ -104,7 +97,7 @@ After you have onboarded your devices, proceed to [Configure your security setti
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Offboarding**.
 
-See [Offboard a device](mdb-manage-devices.md#offboard-a-device).
+3. Select an operating system (such as Windows 10 and 11), and then choose a deployment method. Follow the guidance provided for the method you selected. To learn more, see [Offboard a device](mdb-manage-devices.md#offboard-a-device).
 
 ## Next steps
 
