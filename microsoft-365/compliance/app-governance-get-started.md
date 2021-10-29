@@ -61,14 +61,13 @@ To verify the integration with MCAS is active, look for the app governance polic
 
 Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft Defender for Cloud Apps
+- Microsoft Cloud App Security
 - Microsoft 365 E5/A5
 - Microsoft 365 E5/A5 Compliance
 - Microsoft 365 E5/A5 Information Protection and Governance
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 F5 Compliance add-on
 - Microsoft 365 F5 Security + Compliance add-on
-
 
 ### Administrator roles
 
