@@ -31,15 +31,15 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 - Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 
-<img src="C:\Git\microsoft-365-docs-pr\microsoft-365\admin\manage\media\image1.png" style="width:6.5in;height:3.27222in" alt="A screenshot of a computer Description automatically generated" />
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Service Health Incidents description field.":::
 
 - Recommended solutions: Descriptions of tasks and incidents are used to recommend precise targeted solutions and relevant articles from Microsoft powered by machine learning. You can also use Search to find other solutions, if needed.
 
-<img src="C:\Git\microsoft-365-docs-pr\microsoft-365\admin\manage\media\image2.png" style="width:6.5in;height:3.23056in" alt="Graphical user interface, text, application, email Description automatically generated" />
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
 
 - Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
 
-<img src="C:\Git\microsoft-365-docs-pr\microsoft-365\admin\manage\media\image3.png" style="width:6.5in;height:3.65694in" alt="Graphical user interface, text, application, email Description automatically generated" />
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Service request form.":::
 
 ## Prerequisites
 
@@ -63,6 +63,8 @@ To set up **Microsoft 365 support integration**:
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-integration-diagram.png" alt-text="ServiceNow integration diagram.":::
+
 ### Application dependencies in your ServiceNow environments
 
 Permissions required:
@@ -72,8 +74,6 @@ Permissions required:
 - oauth\_entity\_profile
 
 After the Microsoft 365 Support Integration app has been installed, two Application Cross-Scope accesses are created. If they're not created successfully, create them manually.
-
-:::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image1.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 ## What features will work for your organization based on your configuration?
 
