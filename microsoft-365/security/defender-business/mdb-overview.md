@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). Defender for Business brings the power of enterprise endpoint security in an easy-to-use and cost-effective solution. 
+Microsoft Defender for Business is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). Defender for Business brings the power of enterprise endpoint security in an easy-to-use and cost-effective solution. This article describes what's included in Defender for Business and includes links to learn more about these features and capabilities.
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
