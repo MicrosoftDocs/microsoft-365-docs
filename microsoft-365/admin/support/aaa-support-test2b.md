@@ -38,12 +38,12 @@ Admins, have your account details ready when you call.
    :::column:::
 [France](#france)\
 [Germany](#germany)\
-[Spain](#spain)
+[Spain](#spain)\
 [Italy](#italy)
    :::column-end:::
    :::column:::
 [Australia](#australia)\
-[Russia](#russia)
+[Russia](#russia)\
 [China](#china)\
 [Japan](#japan)
    :::column-end:::
