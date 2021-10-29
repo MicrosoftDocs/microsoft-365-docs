@@ -49,7 +49,7 @@ If you want to learn more about each module and how you will set them up first, 
 
 Accelerate skilling and growth – Your employees can easily discover and share everything from training courses to micro-learning content.
 
-[Overview]("ttps://docs.microsoft.com/en-us/microsoft-365/learning/?view=o365-worldwide)
+[Overview](https://docs.microsoft.com/en-us/microsoft-365/learning/?view=o365-worldwide)
 
 [Learn how to set it up](https://docs.microsoft.com/en-us/microsoft-365/learning/set-up-teams-admin-center?view=o365-worldwide)
 
