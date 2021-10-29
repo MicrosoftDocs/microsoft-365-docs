@@ -32,9 +32,6 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
-<!--- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)-->
-
-<!-- DON'T KNOW IF THIS IS NEEDED You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.-->
 
 ## Before you begin
 
@@ -42,7 +39,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
 - This supports macOS version Catalina 10.15 and higher.
 - Create the user groups that you are going to assign the configuration updates to.
-<!--- Edge browser v93 and higher installed.-->
+
 
 ## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
 
@@ -54,33 +51,32 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 1. [Enable system extension](#enable-system-extension)
 1. [Get the installation package](#get-the-installation-package)
 1. [Deploy the installation package](#deploy-the-microsoft-dlp-installation-package)
-<!--1. [Enable kernel extension](#enable-kernel-extension)-->
 
- 
-<!--1. Extract the contents of the device onboarding package. In the **Intune** folder you should see these files:
-    - accessibility.mobileconfig
-    - com.microsoft.autoupdate2.xml
-    - com.microsoft.wdav.xml
-    - fulldisk.mobileconfig
-    - kext.mobileconfig
-    - netfilter.mobileconfig
-    - notif.mobileconfig
-    - sysext.mobileconfig 
--->
 ### Create system configuration profiles
 
-1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp).
+1. For this procedure, you'll need these files
+
+|file needed for |source |
+|---------|---------|
+|Onboarding package    |downloaded from the compliance portal **Onboarding package**, file name *DeviceComplianceOnboarding.xml* |
+|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
+|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|MDE preference     |[com.microsoft.wdav.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)|
+|MAU preference|[com.microsoft.autoupdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig)|
+|Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
 
 > [!TIP]
-> You can download the individual configuration files from a single folder or download a single archive file that contains:
+> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
 > - accessibility.mobileconfig
 > - fulldisk.mobileconfig
 > - netfilter.mobileconfig
 > - system extensions
 >
->combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+>If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml`.
+<!--2. Copy this code and save it in a file named `com.microsoft.autoupdate2.xml`.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -141,98 +137,73 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
     </dict>
 </plist>
 ```
+-->
 
-3. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
+2. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
-4. Choose: **Create profile** 
+1. Choose: **Create profile** 
 
-5. Choose:
+1. Choose:
     1. **Platform = macOS**
     1. **Profile type = Templates**
     1. **Template name = Custom**
 
-6. Choose **Create**
+1. Choose **Create**
 
-7. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
+1. Choose a name for the profile, like *AccessibilityformacOS* in this example. Choose **Next**.
 
-8. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
+1. Choose the **accessibility.mobileconfig** file that you downloaded in step 1 as the configuration profile file.
 
-9. Choose **Next**
+1. Choose **Next**
 
-10. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
+1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-11. Review your settings and choose **Create** to deploy the configuration.
+1. Review your settings and choose **Create** to deploy the configuration.
 
-12. Repeat steps 3-11 to create profiles for the:
+1. Repeat steps 3-11 to create profiles for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
     1. MDE preferences **com.microsoft.wdav.xml** file
         1. set Antivirus engine `passive mode` = `true` or `false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
     1. **netfilter.mobileconfig**
-    <!--1. **notif.mobileconfig**-->
+ 
+1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-12. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
-
-13. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
+1. In the **Configuration profiles** page, choose the profile that you just created, in this example *AccessibilityformacOS* and choose **Device status** to see a list of devices and the deployment status of the configuration profile.
 
 ### Get the device onboarding package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
  
-1. For **Select operating system to start onboarding process** choose **macOS**
+1. For **Select operating system to start onboarding process** choose **macOS**.
  
-1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
+1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**.
  
-1. Choose **Download onboarding package**. This contains the onboarding code in the **MDEOnboarding.xml** file
+1. Choose **Download onboarding package**. This contains the onboarding code in the *DeviceComplianceOnboarding.xml* file.
 
 ### Deploy the onboarding package
 
 1. Open the **Microsoft Endpoint Manager center** > **Devices** > **Configuration profiles**.
 
-3. Choose: **Create profile** 
-
-4. Choose:
-    1. **Platform = macOS**
-    1. **Profile type = Templates**
-    1. **Template name = Custom**
-
-5. Choose **Create**
-
-6. Choose a name for the profile, like *OnboardingPackage* in this example. Choose **Next**.
-
-7. Choose the **MDEOnboarding.xml** file as the configuration profile file.
-
-8. Choose **Next**
-
-9. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
-
-10. Review your settings and choose **Create** to deploy the configuration.
-
-
-<!--### Enable kernel extension
-
-1.  In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
+1. Choose: **Create profile**. 
 
 1. Choose:
     1. **Platform = macOS**
     1. **Profile type = Templates**
-    1. **Template name = Extensions**
+    1. **Template name = Custom**
 
 1. Choose **Create**
 
-1. In the **Basics** tab, give this new profile a name.
+1. Choose a name for the profile, like *OnboardingPackage* in this example. Choose **Next**.
 
-1. In the **Configuration settings** tab expand **Kernel Extensions**
+1. Choose the *DeviceComplianceOnboarding.xml* file as the configuration profile file.
 
-1. Set the **Team identifier** to **UBF8T346G9**
-
-> [!IMPORTANT]
-> Leave **Allow user overrides** set to **Not configured**. 
+1. Choose **Next**
 
 1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
 
-1. Choose **Next** to deploy the configuration.
--->
+1. Review your settings and choose **Create** to deploy the configuration.
+
 ### Enable system extension
 
 1. In the **Microsoft Endpoint Manager center** select **Create Profile** under **Configuration Profiles**
@@ -283,12 +254,12 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 > [!NOTE]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to six months.
 
-1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
+2. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-2. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
+1. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
 
 1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile
 
-3. Open **Properties** and **Assignments**
+1. Open **Properties** and **Assignments**
 
-4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+1. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
