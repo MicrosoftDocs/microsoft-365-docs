@@ -138,7 +138,7 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!div class="mx-imgBorder"]
   > ![Deployment complete](../../media/microsoft-365-admin-center-deployment-complete.png)
 
-## Edit users for the Report Message add-in
+## Edit settings for the Report Message add-in
 
 1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Message** add-in.
 
@@ -177,44 +177,26 @@ After the add-in is installed and enabled, you'll see the following icons:
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
+In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
 
-2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
+  > [!div class="mx-imgBorder"]
+  > ![Microsoft 365 admin center Integrated apps](../../media/microsoft-365-admin-center-integrated-apps.png)
 
-   ![Services and add-ins page in the Microsoft 365 admin center.](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Phishing**. 
+ 
+3. The app details page opens. Select **Get It Now**.
 
-3. In the **Deploy a new add-in** flyout that appears, review the information, and then click **Next**.
+4. Complete the basic profile information, and then click **Continue**.
 
-4. On the next page, click **Choose from the Store**.
+5. The **Deploy New App** flyout opens. Follow the steps [described above](enable-the-report-message-add-in.md#get-the-report-message-add-in-for-your-organization) to complete setup. 
 
-   ![Deploy a new add-in page.](../../media/NewAddInScreen2.png)
+## Edit settings for the Report Phishing add-in
 
-5. In the **Select add-in** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find **Report Phishing** and then click **Add**.
+1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Phishing** add-in.
 
-6. In the dialog that appears, review the licensing and privacy information, and then click **Continue**.
+2. In the flyout that appears, select **Edit users** to edit user settings.
+ 
+  > [!div class="mx-imgBorder"]
+  > ![Report Phishing flyout](../../media/microsoft-365-admin-center-report-phishing-edit.png)
 
-7. In the **Configure add-in** page that appears, configure the following settings:
-
-   - **Assigned users**: Select one of the following values:
-     - **Everyone** (default)
-     - **Specific users / groups**
-     - **Just me**
-
-   - **Deployment method**: Select one of the following values:
-     - **Fixed (Default)**: The add-in is automatically deployed to the specified users and they can't remove it.
-     - **Available**: Users can install the add-in at **Home** \> **Get add-ins** \> **Admin-managed**.
-     - **Optional**: The add-in is automatically deployed to the specified users, but they can choose to remove it.
-
-   When you're finished, click **Deploy**.
-
-8. In the **Deploy Report Phishing** page that appears, you'll see a progress report followed by a confirmation that the add-in was deployed. After you read the information, click **Next**.
-
-9. On the **Announce add-in** page that appears, review the information, and then click **Close**.
-
-## Review or edit settings for the Report Phishing add-in
-
-1. In the Microsoft 365 admin center, go to the go to the **Settings** \> **Add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns>. If you don't see the **Add-in** Page, go to the **Settings** \> **Integrated apps** \> **Add-ins** link on the top of the **Integrated apps** page.
-
-2. Find and select the **Report Phishing** add-in.
-
-3. In the **Edit Report Phishing** flyout that appears, review, and edit settings as appropriate for your organization. When you're finished, click **Save**.
+To remove the add-in, select **Remove app** in the same flyout.
