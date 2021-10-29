@@ -19,7 +19,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 
 # Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)
 
-You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
+You can use Intune to onboard macOS devices into Microsoft 365 compliance solutions.
 
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
