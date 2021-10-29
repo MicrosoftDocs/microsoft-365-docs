@@ -150,13 +150,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 Alternatively, you can interactively disable or remove the **Microsoft Azure Information Protection** Office add-in from Word, Excel, PowerPoint, and Outlook. This method is suitable for a single computer, and ad-hoc testing. For instructions, see [View, manage, and install add-ins in Office programs](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d). 
 
-Whichever method you choose, the changes take effect when Office apps restart and results in the following: 
-
-- Labeling in Office apps: Yes, with built-in labeling
-- Scanner for on-premises data repositories: Yes, with the Azure Information Protection client
-- Right-click options in File Explorer to apply labels to all file types: Yes, with the Azure Information Protection client
-- Viewer to display encrypted files for text, images, or PDF documents: Yes, with the Azure Information Protection client
-- Labeling and discovery with PowerShell: Yes, with the Azure Information Protection client
+Whichever method you choose, the changes take effect when Office apps restart.
 
 For detailed information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
