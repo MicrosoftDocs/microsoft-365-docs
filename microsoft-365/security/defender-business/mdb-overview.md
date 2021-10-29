@@ -40,11 +40,12 @@ With Defender for Business, you can help protect the devices and data your busin
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-This guide is intended to:
+**This guide is intended to**:
 
-- Provide you with an overview of Microsoft Defender for Business so you know what’s included and how it works.
-- Walk through setting up and configuring your threat protection capabilities.
-- Help you get started using your endpoint protection solution.
+- Provide you with an overview of Defender for Business so you know what’s included and how it works. This article describes the features and capabilities that are included.
+- Walk through setting up and configuring your threat protection capabilities. See [Set up and configure Defender for Business](mdb-setup-configuration.md)
+- Help you get started using Defender for Business. See [Get started using Microsoft Defender for Business](mdb-get-started.md).
+- Provide guidance on managing [devices](mdb-manage-devices.md) and [security policies and settings](mdb-view-edit-device-policies.md).  
 
 ## What's included in Microsoft Defender for Business?
 
