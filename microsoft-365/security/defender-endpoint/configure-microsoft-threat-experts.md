@@ -139,7 +139,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 
 ### Threat intelligence details
 
-- We detected a phishing email that delivered a malicious Word document to a user. The malicious Word document caused a series of suspicious events, which triggered multiple Microsoft Defender alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
+- We detected a phishing email that delivered a malicious Word document to a user. The malicious Word document caused a series of suspicious events, which triggered multiple Defender for Endpoint alerts for [malware name] malware. Do you have any information on this malware? If yes, can you send me a link?
 - I recently saw a [social media reference, for example, Twitter or blog] post about a threat that is targeting my industry. Can you help me understand what protection Defender for Endpoint provides against this threat actor?
 
 ### Microsoft Threat Experts' alert communications
@@ -149,7 +149,7 @@ Watch this video for a quick overview of the Microsoft Services Hub.
 - I received a targeted attack notification from Microsoft Threat Experts. What data can you provide to us that we can pass on to our incident response team?
 
   > [!NOTE]
-  > Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don’t have your own incident response team and would like Microsoft’s help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
+  > Microsoft Threat Experts is a managed cybersecurity hunting service and not an incident response service. However, you can engage with your own incident response team to address issues that require an incident response. If you don't have your own incident response team and would like Microsoft's help, you can engage with the CSS Cybersecurity Incident Response Team (CIRT). They can open a ticket to help address your inquiry.
 
 ## Scenario
 
