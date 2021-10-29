@@ -129,7 +129,7 @@ InternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ExternalAuthenticationMethods : {Ntlm, OAuth, Negotiate}
 ```
 
-If OAuth is missing from any server and any of the four virtual directories, you need to add it using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
+If OAuth is missing from any server and any of the four virtual directories, you need to add it by using the relevant commands before proceeding ([Set-MapiVirtualDirectory](/powershell/module/exchange/set-mapivirtualdirectory), [Set-WebServicesVirtualDirectory](/powershell/module/exchange/set-webservicesvirtualdirectory), [Set-OABVirtualDirectory](/powershell/module/exchange/set-oabvirtualdirectory), and [Set-AutodiscoverVirtualDirectory](/powershell/module/exchange/set-autodiscovervirtualdirectory)).
 
 ## Confirm the EvoSTS Auth Server Object is Present
 
@@ -149,17 +149,19 @@ Your output should show an AuthServer of the Name EvoSts with a GUID and the 'En
 
 ## Enable HMA
 
-Run the following command in the Exchange Management Shell, on-premises, replacing <GUID> in the command line with the string in your environment:
+Run the following command in the Exchange Management Shell, on-premises, replacing \<GUID\> in the command line with the string in your environment:
 
 ```powershell
 Set-AuthServer -Identity "EvoSTS - <GUID>" -IsDefaultAuthorizationEndpoint $true
 Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 ```
-**Note** In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the command line above to reflect this by removing the GUID portion of the command:
 
-```powershell
-Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
-```
+> [!NOTE]
+> In older versions of the Hybrid Configuration Wizard the EvoSts AuthServer was simply named EvoSTS without a GUID attached. There is no action you need to take, just modify the command line above to reflect this by removing the GUID portion of the command:
+>
+> ```powershell
+> Set-AuthServer -Identity EvoSTS -IsDefaultAuthorizationEndpoint $true
+> ```
 
 If the EXCH version is Exchange 2016 (CU18 or higher) or Exchange 2019 (CU7 or higher) and hybrid was configured with HCW downloaded after September 2020, run the following command in the Exchange Management Shell, on-premises:
 
@@ -180,19 +182,16 @@ You should also hold down the CTRL key at the same time you right-click the icon
 > [!NOTE]
 > Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
 
-> [!NOTE]
-> Need to configure Skype for Business with HMA? You'll need two articles: One that lists [supported topologies](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported), and one that shows you [how to do the configuration](configure-skype-for-business-for-hybrid-modern-authentication.md).
-
 ## Using hybrid Modern Authentication with Outlook for iOS and Android
 
 If you are an on-premises customer using Exchange server on TCP 443, please allow network traffic from the following IP ranges:
 
-```text
+```console
 52.125.128.0/20
 52.127.96.0/23
 ```
 
-These IP ranges are also documented on the [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls) article.
+These IP address ranges are also documented in [Additional endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls).
 
 ## Related topics
 

@@ -2,7 +2,6 @@
 title: Investigate incidents in Microsoft 365 Defender
 description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +22,6 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-  - MET150
 ms.technology: m365d
 ---
 
