@@ -54,7 +54,7 @@ One or more of these templates will be available based on your licensing agreeme
 
 ## Preview templates
 
-These templates are currently available for preview. Preview templates are considered as included, so creating assessments using these templates will not count toward your total of licensed templates used.
+These templates are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
 
 - ISO 27001:2013 for Azure (Preview)
 - ISO 27001:2013 for Dynamics 365 (Preview)
