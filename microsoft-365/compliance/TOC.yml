@@ -124,6 +124,8 @@
             href: sensitive-information-type-learn-about.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
+          - name: Learn about named entities (preview)
+            href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
           - name: Get started with custom sensitive information types - Compliance Center
@@ -150,6 +152,8 @@
             href: create-a-keyword-dictionary.md
           - name: Modify a keyword dictionary
             href: sit-modify-keyword-dictionary.md
+          - name: Use named entities in your data loss prevention policies (preview)
+            href: named-entities-use.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
