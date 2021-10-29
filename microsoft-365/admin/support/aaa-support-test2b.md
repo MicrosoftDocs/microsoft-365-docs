@@ -32,16 +32,16 @@ Admins, have your account details ready when you call.
 [Canada](#canada)\
 [United States](#united-states)\
 [Brazil](#brazil)\
-[United Kingdom](#united-kingdom)
+[United Kingdom](#united-kingdom)\
+[Netherlands](#netherlands)
    :::column-end:::
    :::column:::
-[Netherlands](#netherlands)\
 [France](#france)\
 [Germany](#germany)\
 [Spain](#spain)
+[Italy](#italy)
    :::column-end:::
    :::column:::
-[Italy](#italy)\
 [Australia](#australia)\
 [Russia](#russia)
 [China](#china)\
