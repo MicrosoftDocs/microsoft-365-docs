@@ -31,7 +31,7 @@ To jump right in and starting setting up, you'll have to be a Microsoft admin an
 At the bottom of the page, select the module you want to set up.
 On the module page, select the Go to Setup Guide button, or in the case of Viva Topics, select the Setup button to go to the Setup wizard that guides you through the process.
 
-![Viva admin page](media/viva-setup-page.png)
+![Viva admin page](../media/viva-setup-page.png)
 
 
 
