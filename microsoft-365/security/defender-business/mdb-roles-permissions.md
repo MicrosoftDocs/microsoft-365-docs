@@ -25,6 +25,9 @@ ms.collection:
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
+> [!NOTE]
+> If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
+
 ## Roles in Defender for Business
 
 The following table describes the three roles that can be assigned in Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
@@ -35,9 +38,28 @@ The following table describes the three roles that can be assigned in Defender f
 | Security administrators (also referred to as security admins) | Security admins can perform the following tasks: <br/>- View and manage security policies and settings <br/>- View and manage security threats and alerts (these activities include taking response actions on endpoints) <br/>- View security information and reports |
 | Security reader | Security readers can perform the following tasks: <br/>- View security policies and settings <br/>- View security threats and alerts <br/>- View security information and reports  |
 
+
+## How to view or edit role assignments
+
 > [!IMPORTANT]
 > Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
+
+3. Select one of the following roles to open its side pane:
+
+   - Global administrator
+   - Security administrator
+   - Security reader
+
+4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD) where you can view and manage your role assignments.
+
+5. Select a user to open their profile, and then choose **Assigned roles**.
+
+   - To add a role, choose **+ Add assignments**.
+   - To remove a role, choose **X Remove assignments**. 
 
 ## Next steps
 
