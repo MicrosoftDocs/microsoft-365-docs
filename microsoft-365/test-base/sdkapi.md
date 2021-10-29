@@ -51,15 +51,11 @@ pip install azure-mgmt-testbase
 
 - Authenticating in dev environment 
 
-When debugging and executing code locally it is typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run az login. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user. 
+When debugging and executing code locally it is typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run ```az login ```. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user. 
 
 Check [How to authenticate Python applications with Azure services| Microsoft Docs](https://docs.microsoft.com/en-us/azure/developer/python/azure-sdk-authenticate)  and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
 
-```
-az login 
-```
-
-- Create a Resource Group with your desired name which will be used in following steps. 
+ - Create a Resource Group with your desired name which will be used in following steps. 
 
 2. Below code snippet covers flow to create a Test Base Account including 
 
