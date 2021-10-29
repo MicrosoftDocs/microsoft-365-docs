@@ -112,6 +112,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. On the DNS management page, select **+Add record**.
 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
 1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table. 
     
     | **Type** | **Name** | **TTL** | **Content** |
@@ -119,7 +121,9 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |
     
 1. Select **Save**.
-  
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Add record.":::
+
    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and search for the record. When Microsoft finds the correct TXT record, your domain is verified.
@@ -145,25 +149,31 @@ To verify the record in Microsoft 365:
   
 1. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 1. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the DNS management page, select **+Add record**.
  
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+ 
 1. Select the MX type from the drop-down list, and type or copy and paste the values from this table. 
     
-    | **Type** | **Name** | **Mail server** |  **TTL** | **Priority** |
-    |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |30 minutes  <br/> | 1  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/>|
+   | **Type** | **Name** | **Mail server** |  **TTL** | **Priority** |
+   |:-----|:-----|:-----|:-----|:-----|
+   |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft 365 account.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |30 minutes  <br/> | 1  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/>|
    
-5. Select **Save**.
-  
-6. If there are any other MX records listed in the **MX Records** section, delete them by selecting **Edit**, and then select **Delete**. 
-  
-7. In the confirmation dialog box, select **Delete** to confirm your changes. 
+1. Select **Save**.
+ 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-save.png" alt-text="Select Add record."::: 
+ 
+1. If there are any other MX records listed in the **MX Records** section, delete them by selecting **Edit**, and then select **Delete**. 
+ 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-mx-delete.png" alt-text="Select Delete.":::  
+ 
+1. In the confirmation dialog box, select **Delete** to confirm your changes. 
 
 ### Add the CNAME record required for Microsoft
 
@@ -171,13 +181,15 @@ To verify the record in Microsoft 365:
       
 1. On the Home page, select the domain that you want to update. 
  
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-1.png" alt-text="Select the domain you want to update.":::
  
 1. On the Overview page for your domain, select **DNS**.
 
-    :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-2.png" alt-text="Select DNS.":::
 
 1. On the **DNS management** page, select **+Add record**
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
 
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table. 
 
@@ -186,7 +198,9 @@ To verify the record in Microsoft 365:
     | CNAME  <br/> | autodiscover  <br/> | autodiscover.outlook.com  <br/> | Auto <br/> |
   
 1. Select **Save**.
-    
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save."::: 
+ 
 ### Add a TXT record for SPF to help prevent email spam
 
 > [!IMPORTANT]
@@ -204,6 +218,8 @@ To verify the record in Microsoft 365:
 
 1. On the DNS management page, select **+Add record**.
 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
 1. Select the TXT type from the drop-down list, and type or copy and paste the values from this table. 
     
     | Type | Name | TTL | Content |
@@ -211,7 +227,9 @@ To verify the record in Microsoft 365:
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.   |
  
 1. Select **Save**.
-  
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-TXT-save.png" alt-text="Select Save."::: 
+
 ## Advanced option: Skype for Business
 
 Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
@@ -233,6 +251,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. On the DNS management page, select **+Add record**
 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
 1. Select the SRV type from the drop-down list, and type or copy and paste the values from this table.
         
     | **Type** | **Name** | **Service** | **Protocol** |  **TTL** | **Priority** | **Weight** | **Port** | **Target** |
@@ -241,6 +261,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |SRV|_sipfederationtls | TCP|Use your *domain_name*; for example, contoso.com   |30 minutes |100 |1 |5061 | sipfed.online.lync.com |
   
 1. Select **Save**.
+
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-srv-save.png" alt-text="Select Save."::: 
 
 1. Add the other SRV record by copying the values from the second row of the table. 
  
@@ -261,6 +283,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. On the DNS management page, select **+Add record**
 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
     
     |**Type**|**Name**|**Target**|**TTL**|
@@ -269,7 +293,9 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
   
 1. Select the **Save**. 
-  
+ 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save.":::  
+ 
 1. Add the other CNAME record by copying the values from the second row of the table.
     
 > [!NOTE]
@@ -293,6 +319,8 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. On the DNS management page, select **+Add record**
 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-add-record.png" alt-text="Select Add record.":::
+
 1. Select the CNAME type from the drop-down list, and type or copy and paste the values from this table.
     
     |**Type**|**Name**|**Target**|**TTL**|
@@ -301,7 +329,9 @@ This service helps you secure and remotely manage mobile devices that connect to
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
   
 1. Select **Save**. 
-  
+ 
+   :::image type="content" source="../../media/dns-cloudflare/cloudflare-domains-cname-save.png" alt-text="Select Save."::: 
+ 
 1. Add the other CNAME record by copying the values from the second row of the table.
     
 > [!NOTE]
