@@ -21,7 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
-ms.date: 05/04/2021
+ms.date: 10/28/2021
 ---
 
 # How to pay for your subscription

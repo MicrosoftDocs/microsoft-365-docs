@@ -65,7 +65,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
 To keep you protected, Safe Documents sends files to the [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
+Files sent by Safe Documents are not retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
 
 ## Use the Microsoft 365 Defender portal to configure Safe Documents
 
