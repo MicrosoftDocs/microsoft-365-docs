@@ -237,7 +237,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
 4. **Assignment**
 
-   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Choose **Select groups** to include and selecting the applicable group and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
    ![Image of devices configuration profile Assignment.](images/4autosetupofvpn.png)
 

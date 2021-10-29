@@ -27,7 +27,7 @@ To get started using the app governance add-on to Microsoft Cloud App Security (
 
 For existing Microsoft 365 customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
+If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
 
 To purchase a subscription of app governance, please reach out to your sales account team.
 

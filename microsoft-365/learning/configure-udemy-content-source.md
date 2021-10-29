@@ -26,7 +26,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 This article shows you how to configure Udemy as a third-party learning content source for Microsoft Viva Learning.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Udemy content and any associated services are subject to Udemy’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Udemy content and any associated services are subject to Udemy's privacy and service terms.
 
 Follow these steps to enable the APIs in your Udemy Business environment and generate client credentials for your LMS/LXP application to access them.
 
@@ -38,7 +38,7 @@ Follow these steps to enable the APIs in your Udemy Business environment and gen
 
 4. Once you've saved, your Client ID and Client Secret will be generated and you can copy them from the screen. You can now access the APIs using the provided client credentials.
 
-5. To access the API endpoints, you need to have your ACCOUNT_ID and endpoint URL. You can access this information and also try out the APIs by navigating to **Manage**, then **Settings**, then **API**. Once you’ve enabled the APIs, you should see the status of the APIs as "Enabled". Select the API documentation link.
+5. To access the API endpoints, you need to have your ACCOUNT_ID and endpoint URL. You can access this information and also try out the APIs by navigating to **Manage**, then **Settings**, then **API**. Once you've enabled the APIs, you should see the status of the APIs as "Enabled". Select the API documentation link.
 
 6. Get the API endpoint URL and ACCOUNT_ID from the overview page. Navigate to the supported methods to try out an API call. You're now all set to make calls to the Udemy Business APIs.
 
@@ -52,7 +52,7 @@ After you've received the required configuration details from Udemy portal by us
 
 3. Fill in the following required configuration details:
 
-    - **Client’s Host URL**: This is API endpoint URL gathered from Udemy portal in step 6.
+    - **Client's Host URL**: This is API endpoint URL gathered from Udemy portal in step 6.
     - **Organization ID**: This is the ACCOUNT_ID gathered from Udemy portal in step 6.
     - **Client ID**: This is the Client ID gathered from Udemy portal in step 4.
     - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.

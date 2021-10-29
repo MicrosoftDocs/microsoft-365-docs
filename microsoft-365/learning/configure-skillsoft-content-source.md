@@ -26,7 +26,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 This article shows you how to configure Skillsoft as a third-party learning content source in Viva Learning.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Skillsoft content and any associated services are subject to Skillsoft’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Skillsoft content and any associated services are subject to Skillsoft's privacy and service terms.
 
 ## First steps
 

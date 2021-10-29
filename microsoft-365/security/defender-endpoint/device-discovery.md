@@ -1,4 +1,4 @@
-﻿---
+---
 title: Device discovery overview
 description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
@@ -109,14 +109,14 @@ Find details about discovered Endpoints in the DeviceInfo table, or network-rela
 
 ![Image of advanced hunting use.](images/f48ba1779eddee9872f167453c24e5c9.png)
 
-Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 
-New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled. 
+New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
 
 The following action types have also been added:
 
-- ConnectionAttempt - An attempt to establish a TCP connection (syn) 
-- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack) 
+- ConnectionAttempt - An attempt to establish a TCP connection (syn)
+- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
 
 You can try this example query:
 

@@ -29,7 +29,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Defender for Endpoint
 
-In alignment with Microsoft’s cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we’ve rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal - Microsoft 365 Defender.
+In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: Microsoft 365 Defender.
 
 This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to Microsoft 365 Defender portal (security.microsoft.com).
 
@@ -37,9 +37,10 @@ This guide explains how to route accounts to Microsoft 365 Defender by enabling 
 > Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
 
 ## What to expect
+
 Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to Microsoft 365 Defender portal at security.microsoft.com.
- 
-Learn more about what’s changed: [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md).
+
+Learn more about what's changed: [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md).
 
 This includes redirection for direct access to the former portal via browser, including links pointing towards the former securitycenter.windows.com portal - such as links in email notifications, and links returned by SIEM API calls.  
 
@@ -48,28 +49,31 @@ This includes redirection for direct access to the former portal via browser, in
 Refer to the table below for more on links and routing.
 ## SIEM API routing
 
-|**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** | 
+| Property | Destination when redirection is OFF | Destination when redirection is ON |
 |---------|---------|---------|
-| LinkToWDATP | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com  |
-| IncidentLinkToWDATP | Incident page in securitycenter.windows.com  | Incident page in security.microsoft.com  |
-| LinkToMTP | Alert page in security.microsoft.com | Alert page in security.microsoft.com  |
-| IncidentLinkToMTP | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  
+| LinkToWDATP | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com |
+| IncidentLinkToWDATP | Incident page in securitycenter.windows.com | Incident page in security.microsoft.com |
+| LinkToMTP | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
+| IncidentLinkToMTP | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
 
 ## Email alert notifications
 
-|**Property**  |**Destination when redirection is OFF**  |**Destination when redirection is ON** |
+| Property | Destination when redirection is OFF** | Destination when redirection is ON |
 |---------|---------|---------|
-| Alert page  | Alert page in securitycenter.windows.com  | Alert page in security.microsoft.com  |
-| Incident page  |Incident page in securitycenter.windows.com  | Incident page in security.microsoft.com  
-| Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com | 
-| Incident page in security center portal | Incident page in security.microsoft.com  | Incident page in security.microsoft.com  |
+| Alert page | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com |
+| Incident page |Incident page in securitycenter.windows.com | Incident page in security.microsoft.com |
+| Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
+| Incident page in security center portal | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
 
-## When does this take effect? 
+## When does this take effect?
+
 Once enabled, this update might take effect almost immediately for some accounts. But the redirection might take longer to propagate to every account in your organization. Accounts in active sessions while this setting is applied will not be ejected from their session and will only be routed to Microsoft 365 Defender after ending their current session and signing back in again.  
 
 ### Set up portal redirection
+
 To start routing accounts to Microsoft 365 Defender:
-1. Make sure you’re a global administrator or have security administrator permissions in Azure Active directory 
+
+1. Make sure you're a global administrator or have security administrator permissions in Azure Active Directory.
 
 2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
 
@@ -86,7 +90,8 @@ To start routing accounts to Microsoft 365 Defender:
 >You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.  
 
 ## Can I go back to using the former portal?
-If something isn’t working for you or if there’s anything you’re unable to complete through Microsoft 365 Defender, we want to hear about it. If you’ve encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
+
+If something isn't working for you or if there's anything you're unable to complete through Microsoft 365 Defender, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
 
 To revert to the former Microsoft Defender for Endpoint portal:
 
