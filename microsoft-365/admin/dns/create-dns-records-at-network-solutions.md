@@ -102,7 +102,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -145,7 +145,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -187,7 +187,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -230,7 +230,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
   
@@ -277,7 +277,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -326,7 +326,7 @@ This service helps you secure and remotely manage mobile devices that connect to
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
