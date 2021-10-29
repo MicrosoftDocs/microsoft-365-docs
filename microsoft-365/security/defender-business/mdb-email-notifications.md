@@ -27,8 +27,9 @@ You can set up email notifications for your security team. Then, as alerts are g
 > [!NOTE]
 > If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to set up email notifications for your security team after you have granted people access to the Microsoft 365 Defender portal. 
 
-You can choose from two types of notifications, as described in the following table: <br/><br/>
+## Types of email notifications
 
+When you set up email notifications, you can choose from two types, as described in the following table: <br/><br/>
 
 | Notification type  | Description  |
 |---------|---------|
