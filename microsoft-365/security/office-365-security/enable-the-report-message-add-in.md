@@ -89,13 +89,13 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook, the icon looks like this:
 
-  > [!div class="mx-imgBorder"]
-  > ![Report Message add-in icon for Outlook.](../../media/OutlookReportMessageIcon.png)
+    > [!div class="mx-imgBorder"]
+    > ![Report Message add-in icon for Outlook.](../../media/OutlookReportMessageIcon.png)
 
 - In Outlook on the web, the icon looks like this:
 
-  > [!div class="mx-imgBorder"]
-  > ![Outlook on the web Report Message add-in icon.](../../media/owa-report-message-icon.png)
+    > [!div class="mx-imgBorder"]
+    > ![Outlook on the web Report Message add-in icon.](../../media/owa-report-message-icon.png)
 
 ### Get the Report Message add-in for your organization
 
@@ -104,20 +104,20 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
 
-  > [!div class="mx-imgBorder"]
-  > ![Microsoft 365 admin center Integrated apps](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 admin center Integrated apps](../../media/microsoft-365-admin-center-integrated-apps.png)
 
 2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Message**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Message**. 
- 
+
 3. The app details page opens. Select **Get It Now**. 
- 
-  > [!div class="mx-imgBorder"]
-  > ![Report Message add-in](../../media/microsoft-365-admin-center-report-message.png)  
+
+    > [!div class="mx-imgBorder"]
+    > ![Report Message add-in](../../media/microsoft-365-admin-center-report-message.png)  
 
 4. Complete the basic profile information, and then click **Continue**. 
 
-  > [!div class="mx-imgBorder"]
-  > ![Report Message add-in profile setup](../../media/microsoft-365-admin-center-profile-info.png)
+    > [!div class="mx-imgBorder"]
+    > ![Report Message add-in profile setup](../../media/microsoft-365-admin-center-profile-info.png)
 
 5. The **Deploy New App** flyout opens. Configure the following settings. Click **Next** to go to the next page to complete setup. 
 
@@ -126,26 +126,26 @@ After the add-in is installed and enabled, you'll see the following icons:
      - **Entire organization**
      - **Specific users / groups**
 
-   - **Deployment**: 
+   - **Deployment**:
      - **Accept Permissions requests**: Read the app permissions and capabilities carefully before going to the next page.
-     
-     > [!div class="mx-imgBorder"]
-     > ![App permissions](../../media/microsoft-365-admin-center-deploy-new-app.png)
+
+        > [!div class="mx-imgBorder"]
+        > ![App permissions](../../media/microsoft-365-admin-center-deploy-new-app.png)
 
      - **Finish deployment**: Review and finish deploying the add-in. 
      - **Deployment completed**: Select **Done** to complete the setup. 
 
-> [!div class="mx-imgBorder"]
-  > ![Deployment complete](../../media/microsoft-365-admin-center-deployment-complete.png)
+        > [!div class="mx-imgBorder"]
+        > ![Deployment complete](../../media/microsoft-365-admin-center-deployment-complete.png)
 
 ## Edit settings for the Report Message add-in
 
 1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Message** add-in.
 
 2. In the flyout that appears, select **Edit users** to edit user settings.
- 
-  > [!div class="mx-imgBorder"]
-  > ![Report Message flyout](../../media/microsoft-365-admin-center-report-message-edit.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![Report Message flyout](../../media/microsoft-365-admin-center-report-message-edit.png)
 
 To remove the add-in, select **Remove app** in the same flyout. 
 
@@ -169,18 +169,18 @@ After the add-in is installed and enabled, you'll see the following icons:
 
 - In Outlook on the web, the icon looks like this:
 
-  > [!div class="mx-imgBorder"]
-  > ![Outlook on the web Report Phishing add-in icon.](../../media/OWA-ReportPhishing.png)
+    > [!div class="mx-imgBorder"]
+    > ![Outlook on the web Report Phishing add-in icon.](../../media/OWA-ReportPhishing.png)
 
 ### Get the Report Phishing add-in for your organization
 
 > [!NOTE]
 > It could take up to 12 hours for the add-in to appear in your organization.
 
-In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
+1. In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home?#/homepage), go to **Settings** \> **Integrated apps**. Click **Get apps**.
 
-  > [!div class="mx-imgBorder"]
-  > ![Microsoft 365 admin center Integrated apps](../../media/microsoft-365-admin-center-integrated-apps.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 admin center Integrated apps](../../media/microsoft-365-admin-center-integrated-apps.png)
 
 2. In the **Microsoft 365 Apps** page that appears, click in the **Search** box, enter **Report Phishing**, and then click **Search** ![Search icon.](../../media/search-icon.png). In the list of results, find and select **Report Phishing**. 
  
@@ -195,8 +195,8 @@ In the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/Home
 1. In the Microsoft 365 admin center, go to **Settings** \> **Integrated apps** \. Then find and select **Report Phishing** add-in.
 
 2. In the flyout that appears, select **Edit users** to edit user settings.
- 
-  > [!div class="mx-imgBorder"]
-  > ![Report Phishing flyout](../../media/microsoft-365-admin-center-report-phishing-edit.png)
+
+    > [!div class="mx-imgBorder"]
+    > ![Report Phishing flyout](../../media/microsoft-365-admin-center-report-phishing-edit.png)
 
 To remove the add-in, select **Remove app** in the same flyout.
