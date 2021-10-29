@@ -33,14 +33,14 @@ ms.prod: m365-security
 |---|---|---|
 |*You are here!*|||
 
-Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps. You should inventory the settings at your existing protection service first. Otherwise, you can do the remaining steps in any order:
+Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps. You should inventory the settings at your existing protection service first, before you make any changes. Otherwise, you can do the remaining steps in any order:
 
-- [Inventory the settings at your existing protection service](#inventory-the-settings-at-your-existing-protection-service)
-- [Check your existing protection configuration in Microsoft 365](#check-your-existing-protection-configuration-in-microsoft-365)
-- [Check your mail routing configuration](#check-your-mail-routing-configuration)
-- [Move features that modify messages into Microsoft 365](#move-features-that-modify-messages-into-microsoft-365)
-- [Define spam and bulk user experiences](#define-spam-and-bulk-user-experiences)
-- [Identify and designate priority accounts](#identify-and-designate-priority-accounts)
+1. [Inventory the settings at your existing protection service](#inventory-the-settings-at-your-existing-protection-service)
+2. [Check your existing protection configuration in Microsoft 365](#check-your-existing-protection-configuration-in-microsoft-365)
+3. [Check your mail routing configuration](#check-your-mail-routing-configuration)
+4. [Move features that modify messages into Microsoft 365](#move-features-that-modify-messages-into-microsoft-365)
+5. [Define spam and bulk user experiences](#define-spam-and-bulk-user-experiences)
+6. [Identify and designate priority accounts](#identify-and-designate-priority-accounts)
 
 ## Inventory the settings at your existing protection service
 
