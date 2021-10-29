@@ -75,7 +75,7 @@ Inform, engage, and empower -- Microsoft Viva Connections is your gateway to a m
 
 [Overview](https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview)
 
-[Learn how to set it up](https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview)
+[Learn how to set it up](https://docs.microsoft.com/en-us/sharepoint/guide-to-setting-up-viva-connections)
 
 **More information**
 
