@@ -232,7 +232,7 @@ If you're not seeing the label or label policy setting behavior that you expect 
 
 ## Sensitivity labels and Azure Information Protection
 
-When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the [Azure Information Protection client](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
+When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the [Azure Information Protection client](/azure/information-protection/rms-client/aip-clientv2).
 
 Because built-in labels don't use an Office add-in, as used by the Azure Information Protection client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
