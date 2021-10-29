@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
   - M365-security-compliance
-description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users or for your entire organization.
+description: Learn how to enable the Report Message or the Report Phishing add-ins for Outlook and Outlook on the web, for individual users, or for your entire organization.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -32,11 +32,11 @@ ms.prod: m365-security
 > [!NOTE]
 > If you're an admin in a Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the **Submissions** page in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) enable people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
+The Report Message and Report Phishing add-ins for Outlook and Outlook on the web (formerly known as Outlook Web App) makes it easy to report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis.
 
 Microsoft uses these submissions to improve the effectiveness of email protection technologies. For example, suppose that people are reporting many messages using the Report Phishing add-in. This information surfaces in the Security Dashboard and other reports. Your organization's security team can use this information as an indication that anti-phishing policies might need to be updated.
 
-You can install either the Report Message or Report Phishing add-in. If you want your users to report both spam and phishing messages, deploy the Report Message add-in in your organization. For more information, see Enable the Report Message add-in.
+You can install either the Report Message or the Report Phishing add-in. If you want your users to report both spam and phishing messages, deploy the Report Message add-in in your organization.
 
 The Report Message add-in provides the option to report both spam and phishing messages. Admins can enable the Report Message add-in for the organization, and individual users can install it for themselves.
 
@@ -48,16 +48,16 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 ## What do you need to know before you begin?
 
-- Both the Report Message add-in and the Report Phishing add-in works with most Microsoft 365 subscriptions and the following products:
+- Both the Report Message add-in and the Report Phishing add-in work with most Microsoft 365 subscriptions and the following products:
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins are not available for shared mailboxes or mailboxes in on-premises Exchange organizations.
+- Both add-ins are'nt available for shared mailboxes or mailboxes in on-premises Exchange organizations.
 
-- Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in is not available or not working as expected, try a different browser.
+- Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in is'nt available or not working as expected, try a different browser.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
@@ -65,7 +65,7 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
 
 - For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](report-false-positives-and-false-negatives.md).
 
-- Organizations that have a URL filtering or security solution (such as a proxy and/or firewall)  in place will need to have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
+- Organizations that have a URL filtering or security solution (such as a proxy and/or firewall) in place, must have ipagave.azurewebsites.net and outlook.office.com endpoints allowed to be reached on HTTPS protocol.
 
 
 > [!IMPORTANT]
@@ -147,7 +147,7 @@ After the add-in is installed and enabled, you'll see the following icons:
     > [!div class="mx-imgBorder"]
     > ![Report Message flyout](../../media/microsoft-365-admin-center-report-message-edit.png)
 
-To remove the add-in, select **Remove app** in the same flyout. 
+3. To remove the add-in, select **Remove app** under **Actions** in the same flyout. 
 
 ## Get the Report Phishing add-in
 
@@ -199,4 +199,4 @@ After the add-in is installed and enabled, you'll see the following icons:
     > [!div class="mx-imgBorder"]
     > ![Report Phishing flyout](../../media/microsoft-365-admin-center-report-phishing-edit.png)
 
-To remove the add-in, select **Remove app** in the same flyout.
+3. To remove the add-in, select **Remove app** under **Actions** in the same flyout. 
