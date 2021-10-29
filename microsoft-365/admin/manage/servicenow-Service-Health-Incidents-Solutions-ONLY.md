@@ -21,7 +21,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 # Microsoft 365 support integration for service health incidents and recommended solutions ONLY
 
-This configuration does not allow you to create a case with Microsoft support through your ServiceNow instance. This option provides you only with the Service Health Incident information and Recommend Solutions through your ServiceNow instance.
+This configuration doesn't allow you to create a case with Microsoft support through your ServiceNow instance. This option provides you only with the Service Health Incident information and Recommend Solutions available through your ServiceNow instance.
 
 ## Prerequisites (Service Health Incidents and Recommended Solutions ONLY)
 
@@ -29,9 +29,9 @@ These prerequisites are necessary to set up the **Microsoft 365 support integrat
 
 1. \[AAD Admin\] Create AAD Application for Outbound under your Microsoft 365 tenant.
 
-    1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and navigate to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
+    1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and create a new application on the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 
-    2. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)** and select **Register**.
+    2. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)**, and then select **Register**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -43,13 +43,13 @@ These prerequisites are necessary to set up the **Microsoft 365 support integrat
 
 1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider in ServiceNow.
 
-    If the scope is not set to **Global**, do so by going to **Settings &gt; Developer &gt; Applications** and switching to **Global**.
+    If the scope is not set to **Global**, go to **Settings &gt; Developer &gt; Applications** and switch to **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
 1. Go to **System OAuth &gt; Application Registry**.
 
-1. Create a new application using the **Connect to a third party OAuth Provider** option and entering the following values below.
+1. Create a new application by using the **Connect to a third party OAuth Provider** option and entering these values:
 
     - Client ID: This is the Client ID of the application created in Prerequisites (Insights ONLY) step \#1.
 
@@ -79,7 +79,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. \[ServiceNow Admin\] Select **Agree** to the consent prompt to continue.
+1. \[ServiceNow Admin\] Select **Agree** to continue.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -105,7 +105,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
-1.  \[ServiceNow Admin\] Set up Application Settings.
+1. \[ServiceNow Admin\] Set up Application Settings.
 
     Select these settings, and then select **Next**:
 
@@ -127,11 +127,11 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in Prerequisite (Insights ONLY) step \#1.
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Insights ONLY) step \#1](#prerequisites-service-health-incidents-and-recommended-solutions-only).
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. In the **Repositories** tab, select **Add a repository** to create a new repository with the following settings:
+1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following settings:
 
     - Repository: The **Repository ID** value from Step 6 – Complete the Integration.
 

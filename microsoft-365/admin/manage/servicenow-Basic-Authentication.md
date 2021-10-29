@@ -27,9 +27,9 @@ These prerequisites are necessary to set up the **Microsoft 365 support integrat
 
 1. \[AAD Admin\] Create AAD Application under your Microsoft 365 tenant.
 
-    1.  Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
+    1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
-    2.  Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)** and select **Register**.
+    1. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)** and select **Register**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -41,7 +41,7 @@ These prerequisites are necessary to set up the **Microsoft 365 support integrat
 
 1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider in ServiceNow.
 
-    If the scope is not set to **Global**, do so by going to **Settings &gt; Developer &gt; Applications** and switching to **Global**.
+    If the scope is not set to **Global**, go to **Settings &gt; Developer &gt; Applications** and switch to **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
@@ -77,7 +77,7 @@ These prerequisites are necessary to set up the **Microsoft 365 support integrat
 
     You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user.
 
-    If you are creating a new integration user, check the **Web service access only** option. You must also grant this user with the **incident\_manager** role.
+    If you're creating a new integration user, check the **Web service access only** option. You must also grant this user with the **incident\_manager** role.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image8.png" alt-text="Graphical user interface, application Description automatically generated":::
 
@@ -109,19 +109,19 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
 
-1. \[ServiceNow Admin\] Navigate to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
+1. \[ServiceNow Admin\] Go to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
 
     >[!NOTE] If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table’s cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes &gt; Can read** is checked for the table oauth\_entity.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image10.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. \[ServiceNow Admin\] Select **Agree** to the consent prompt in order to continue.
+1. \[ServiceNow Admin\] Select **Agree** to continue.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider.
 
-    Select the OAuth profile for Outbound OAuth Provider created in Prerequisites (Basic Authentication) step \#2 and select **Next**.
+    Select the OAuth profile for Outbound OAuth Provider created in [Prerequisites (Basic Authentication) step \#2](#prerequisites-basic-authentication) and select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -129,9 +129,9 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Uncheck **Skip current step**.
 
-    2. Uncheck **External OIDC Auth Token**.
+    1. Uncheck **External OIDC Auth Token**.
 
-    3. Select OAuth Client created in Prerequisite (Basic Authenticaiton) step \#3, and then select **Next**.
+    1. Select OAuth Client created in [Prerequisite (Basic Authentication) step \#3](#prerequisites-basic-authentication), and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image13.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -139,7 +139,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Uncheck **Skip current step**.
 
-    2. Select the integration user created in Prerequisites (Basic Authentication) step \#4, and then select **Next**.
+    1. Select the integration user created in [Prerequisites (Basic Authentication) step \#4](#prerequisites-basic-authentication), and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image14.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
@@ -171,7 +171,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in Prerequisite (Basic Authentication) step \#1.
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Basic Authentication) step \#1](#prerequisites-basic-authentication).
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -191,7 +191,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     - Rest username: The **User Name** value from Step 6 – Complete the Integration.
 
-    - Rest user password: The password of the integration user that was created in Prerequisites (Basic Authentication) step \#4.
+    - Rest user password: The password of the integration user that was created in [Prerequisites (Basic Authentication) step \#4](#prerequisites-basic-authentication).
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image19.png" alt-text="Graphical user interface, application Description automatically generate":::
 

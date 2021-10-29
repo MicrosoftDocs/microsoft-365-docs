@@ -31,9 +31,9 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     2. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)** and select **Register**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. Navigate to **Authentication** and select **Add a platform**. Select the **Web** option and enter the redirect URL: `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
+1. Go to **Authentication** and select **Add a platform**. Select the **Web** option and enter the redirect URL: `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -43,25 +43,25 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials and go to the App registrations page to create a new application.
 
-    2. Select **Accounts in this organizational directory only {(Microsoft-365-tenant-name} only – Single tenant)**.
+    1. Select **Accounts in this organizational directory only {(Microsoft-365-tenant-name} only – Single tenant)**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image22.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. Get the Application Client ID and create a Client secret and get that value.
 
 1. \[AAD Admin\] Create an AAD Application for Rest User under your Microsoft 365 tenant.
 
-    1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials and navigate to the App registrations page to create a new application.
+    1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials and go to the App registrations page to create a new application.
 
-    2. Select **Accounts in this organizational directory only {(Microsoft-365-tenant-name} only – Single tenant)**.
+    1. Select **Accounts in this organizational directory only {(Microsoft-365-tenant-name} only – Single tenant)**.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image23.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. Get the Application Client ID and create a Client secret and get that value.
 
 1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider in ServiceNow.
 
-    1. If the scope is not set to **Global**, do so by navigating to **Settings &gt; Developer &gt; Applications** and switching to **Global**.
+    If the scope is not set to **Global**, do so by navigating to **Settings &gt; Developer &gt; Applications** and switching to **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
@@ -83,7 +83,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. \[ServiceNow Admin\] To configure the OIDC provider in ServiceNow, see the [online documentation](https://docs.servicenow.com/bundle/quebec-platform-administration/page/administer/security/task/add-OIDC-entity.html).
 
-    If the scope is not set to **Global**, do so by navigating to **Settings &gt; Developer &gt; Applications** and switching to **Global**.
+    If the scope is not set to **Global**, go to **Settings &gt; Developer &gt; Applications** and switch to **Global**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image5.png" alt-text="Graphical user interface, text, application, chat or text message Description automatically generated":::
 
@@ -113,13 +113,13 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the previous step
 
-    - Redirect URL: https://{service-now-instance-name}.service-now.com/oauth\_redirect.do
+    - Redirect URL: `https://{service-now-instance-name}.service-now.com/oauth\_redirect.do`
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image25.png" alt-text="Graphical user interface, application Description automatically generated":::
 
 1. \[ServiceNow Admin\] Create Integration Users.
 
-    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, navigate to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in Prerequisites (AAD OAuth Token) step \#3.
+    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in [Prerequisites (AAD OAuth Token) step \#3](#prerequisites-aad-oauth-token).
 
     If you are creating a new integration user, check the **Web service access only** option. You must also grant this user with the **incident\_manager** role.
 
@@ -129,17 +129,17 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 If your company is limiting internet access with your own policies, enable network access for the service of Microsoft 365 support integration by allowing the IP addresses below for both inbound and outbound API access.
 
--  52.149.152.32
+- 52.149.152.32
 
--  40.83.232.243
+- 40.83.232.243
 
--  40.83.114.39
+- 40.83.114.39
 
--  13.76.138.31
+- 13.76.138.31
 
--  13.79.229.170
+- 13.79.229.170
 
--  20.105.151.142
+- 20.105.151.142
 
 > [!NOTE] This terminal command lists all active IPs of the service for Microsoft 365 support integration: `nslookup`` connector.rave.microsoft.com`
 
@@ -165,7 +165,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider.
 
-    Select the OAuth profile for Outbound OAuth Provider created in Prerequisites (AAD OAuth Token) step \#4, and then select **Next**.
+    Select the OAuth profile for Outbound OAuth Provider created in [Prerequisites (AAD OAuth Token) step \#4](#prerequisites-aad-oauth-token), and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -173,9 +173,9 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Uncheck **Skip current step**.
 
-    2. Check **External OIDC Auth Token**.
+    1. Check **External OIDC Auth Token**.
 
-    3. Select the OAuth Client created in Prerequisites (AAD OAuth Token) step \#5, and then select **Next**.
+    1. Select the OAuth Client created in [Prerequisites (AAD OAuth Token) step \#5](#prerequisites-aad-oauth-token), and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image28.png" alt-text="Graphical user interface, text, application Description automatically generated":::
 
@@ -183,7 +183,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Uncheck **Skip current step**.
 
-    2. Enter the **Client ID** of the application that was created in "Prerequisites (AAD OAuth Token) step \#3, and then select **Next**.
+    1. Enter the **Client ID** of the application that was created in [Prerequisites (AAD OAuth Token) step \#3](#prerequisites-aad-oauth-token), and then select **Next**.
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image39.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -215,7 +215,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in Prerequisite (AAD OAuth Token) step \#1.
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (AAD OAuth Token) step \#1](#prerequisites-aad-oauth-token).
 
     :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
