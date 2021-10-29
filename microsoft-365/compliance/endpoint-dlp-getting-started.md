@@ -119,7 +119,7 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 
-2. Choose **settings**  and choose **Device Onboarding**.
+2. Choose **Settings** > **Device onboarding**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
