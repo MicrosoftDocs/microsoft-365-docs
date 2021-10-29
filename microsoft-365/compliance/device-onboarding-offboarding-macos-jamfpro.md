@@ -42,10 +42,29 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
 - Install the v95+ Edge browser on your macOS devices 
 
-
-<!--- Edge browser v93 and higher installed.-->
-
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
+
+1. You'll need these files for this procedure.
+
+|file needed for |source |
+|---------|---------|
+|Onboarding package    |downloaded from the compliance portal **Onboarding package**, file name *DeviceComplianceOnboarding.plist* |
+|accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
+full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
+|Network filer| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)]
+|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|MDE preference     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
+|MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
+|Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
+
+> [!TIP]
+> You can download the *.mobileconfig* files individually or in [single combined file](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/combined/mdatp-nokext.mobileconfig) that contains:
+> - accessibility.mobileconfig
+> - fulldisk.mobileconfig
+> - netfilter.mobileconfig
+> - system extensions
+>
+>If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
 Onboarding a macOS device into Compliance solutions is a multi phase process.
 
@@ -83,25 +102,10 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 7. Choose **Done**.
 
-### Download the configuration files
-
-1. Download the configuration files from [Github > macOS folder](https://github.com/microsoft/endpointdlp).
-
-> [!TIP]
-> You can download the individual configuration files from a single folder or download a single `.mobileconfig` file that contains:
-> - accessibility.mobileconfig
-> - fulldisk.mobileconfig
-> - netfilter.mobileconfig
->
->combined into a single file. If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
-
-
 ### Configure Preference domain using the JAMF PRO console
 
 > [!IMPORTANT]
 > You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
-
-1. Download the *schema.json* file HENRY TO PROVIDE LINK
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
@@ -131,33 +135,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 1. Choose **Save**. 
 
-<!--### Create and deploy a configuration profile for notification settings
 
-Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
-    - Name: `MDATP MDAV notification settings`
-    - Description: `macOS 10.15 (Catalina) or newer
-    - Category: `none`
-    - Distribution method: `install automatically`
-    - Level: `computer level`
-
-1. Choose the **Notifications** tab, and choose **Add** to configure these settings
-    - Bundle ID: `com.microsoft.wdav.tray`
-    - Critical Alerts: `disable`
-    - Notifications: `enable`
-    - Banner alert type: `include` and `temporary`
-    - Notifications on lock screen: `hide`
-    - Notifications in Notification center: `display`
-    - Badge app icon: `display`
-
-1. Choose **Add**, scroll down to **New Notification Settings**
-    - Bundle ID: `com.microsoft.autoupdate2`
-    - Critical Alerts: `disable`
-    - Notifications: `enable`
-    - Banner alert type: `include` and `temporary`
-    - Notifications on lock screen: `hide`
-	- Notifications in Notification Center: `display`
-    - Badge app icon: `display`
--->
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
 1. Copy this xml code and save it to a file named `MDATP_MDAV_MAU_settings.plist`
@@ -246,7 +224,6 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-
 ### Grant accessibility access to DLP
 
 1. Use the **accessibility.mobileconfig** file that you downloaded from Github.
@@ -329,7 +306,6 @@ Create a JAMF Pro configuration file using the NOTIFICATION SETTINGS file. Refer
     - System extension profile
 
 ## Offboard macOS devices using JAMF Pro
-
 
 1. Uninstall the application (if not using MDE)
     1. See JAMF Pro Docs - Package Deployment - [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro Administrator's Guide
