@@ -20,6 +20,10 @@ ms.technology: mde
 
 # Performance analyzer for Microsoft Defender Antivirus
 
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 **What is Microsoft Defender Antivirus performance analyzer?**
 
 In some cases, you might need to tune the performance of Microsoft Defender Antivirus as it scans specific files and folders. Performance analyzer is a PowerShell command-line tool that helps determine which files, file extensions, and processes might be causing performance issues on individual endpoints. This information can be used to better assess performance issues and apply remediation actions.
