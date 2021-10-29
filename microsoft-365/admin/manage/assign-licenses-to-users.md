@@ -188,7 +188,7 @@ You can invite guest users to collaborate with your organization in the Azure Ac
 
 5. In the next menu, select **Guest**.
 
-6. In the list of results, Double Click on the user who needs a license.
+6. In the list of results, double click on the user who needs a license.
 
 7. Under **Manage**, select **Licenses**.
 
