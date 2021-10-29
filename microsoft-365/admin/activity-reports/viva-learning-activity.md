@@ -35,7 +35,7 @@ For example, you can understand the activity of every user licensed to use Viva 
 
 You can get a view into your user's Viva Learning activity by looking at the **Active users** and **User activities** charts.
 
-> ![Microsoft 365 Apps usage report.](../../media/viva-learning-charts.png)
+![Microsoft 365 Apps usage report.](../../media/viva-learning-charts.png)
 
 - Active users – Shows you the number of active users over time. For example, you can use it to find the number of active users in your organization on a specific day over the past 30 days.
 - User activities – Shows you the number of user activities over all platforms. For example, you can use it to find how many users in your organization bookmarked a course in the last 30 days.
