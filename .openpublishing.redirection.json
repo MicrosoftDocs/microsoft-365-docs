@@ -4396,6 +4396,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/migrate-to-defender-for-office-365",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/managed-desktop/service-description/device-list.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
       "redirect_document_id": true
