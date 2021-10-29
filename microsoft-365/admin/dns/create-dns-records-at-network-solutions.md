@@ -64,7 +64,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. In the boxes for the new record, type or copy and paste the values in the following table.
     
-    |**Refers to**|**TXT Value**|**TTL**|
+    | Refers to | TXT Value | TTL |
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    | 
 
@@ -116,7 +116,7 @@ To verify the record in Microsoft 365:
   
 1. In the boxes for the new record, type or copy and paste the values from the following table.
     
-    **Refers to** |**Mail server**|**Priority**|**TTL**|
+    | Refers to | Mail server | Priority | TTL |
     |:-----|:-----|:-----|:-----|
     | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value CANNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
   
@@ -151,7 +151,7 @@ To verify the record in Microsoft 365:
   
 1. In the boxes for the CNAME record, type or copy and paste the values from the following table.
     
-    |**Refers to | Host Name**|**Alias to**| **TTL** |
+    | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|
     |Other Host| autodiscover  <br/> | autodiscover.outlook.com **This value CANNOT end with a period (.)** <br/> 1 Hour  <br/> |
   
@@ -187,7 +187,7 @@ To verify the record in Microsoft 365:
 
 1. In the boxes for the new record, type or copy and paste the following values.
     
-    |**Refers to**|**TXT Value**| **TTL**
+    | Refers to | TXT Value | TTL**
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 1 Hour  <br/> |
        
@@ -224,7 +224,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     (Choose the **Service** and **Protocol** values from the drop-down lists.) 
     
-    | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
+    | Type | Service | Protocol | Weight | Port | Target | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
     | SRV |_sipfederationtls  <br/> |TCP  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
@@ -265,7 +265,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     (Choose the **Type** value from the drop-down list.) 
     
-    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
+    | Type | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1 Hour  <br/> |
     | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
@@ -310,7 +310,7 @@ This service helps you secure and remotely manage mobile devices that connect to
     
     (Choose the **Type** value from the drop-down list.) 
     
-    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
+    | Type | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Other Host | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
     | CNAME | Other Host |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
