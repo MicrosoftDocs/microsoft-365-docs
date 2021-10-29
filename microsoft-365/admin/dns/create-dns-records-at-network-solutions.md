@@ -58,7 +58,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
-1. Select **Continue**, and on the Manage Advanced DNS Records page, select **+ADD RECORD**.
+1. On the Manage Advanced DNS Records page, select **+ADD RECORD**.
 
 1. Under **Type**, select **TXT** from the drop-down list.
   
@@ -66,8 +66,8 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
     |**Refers to**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    |
-  
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    | 
+
 1. Select **ADD**.
   
     > [!NOTE]
@@ -81,9 +81,13 @@ To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -114,7 +118,7 @@ To verify the record in Microsoft 365:
     
     **Refers to** |**Mail server**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value canNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
+    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value CANNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
   
 1. Select **ADD**.
   
@@ -135,7 +139,7 @@ To verify the record in Microsoft 365:
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
-1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**
+1. Select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
     
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
@@ -222,8 +226,8 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     
     | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    | SRV |_sip  <br/> |_tls  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
-    | SRV |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+    | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
+    | SRV |_sipfederationtls  <br/> |TCP  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
   
 1. Select **ADD**.
  

@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,7 +15,6 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Cornerstone OnDemand as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
 
 ---
 
@@ -34,7 +33,7 @@ This article shows you how to configure Cornerstone OnDemand as a third-party le
 4. Select the Viva Learning tile.
 5. Choose **Install**.
 6. Check the box to confirm you agree to the Terms and Conditions, and choose **Install**.
-7. Select **Configure now**.
+7. Select **Configure Now**.
 8. Copy the Client ID, Secret, Portal name, and base URL. Then go back and search for Viva.
 9. Slide the toggle to enable Viva Learning integration.
 

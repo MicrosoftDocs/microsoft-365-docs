@@ -62,6 +62,8 @@
           href: service-description/servicechanges.md
         - name: Exceptions to the service plan
           href: service-description/customizing.md
+        - name: Shared devices
+          href: service-description/shared-devices.md
     - name: Get ready for enrollment in Microsoft Managed Desktop
       href: get-ready/index.md
       items: 

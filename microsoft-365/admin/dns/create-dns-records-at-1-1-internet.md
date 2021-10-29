@@ -36,24 +36,30 @@ You have two options for setting up DNS records for your domain:
 
 - [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365. 
 
-OR
+    OR
 
 - [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience. 
 
 ## Use Domain Connect to verify and set up your domain
 
-Follow these steps to automatically verify and set up your Cloudflare domain with Microsoft 365:
+Follow these steps to automatically verify and set up your IONOS by 1&1 domain with Microsoft 365:
 
 1. In the Microsoft 365 admin center, select **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>, and select the domain you want to set up.
 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-1.png" alt-text="Select your domain in Microsoft 365.":::
+
 1. Select the three dots (more actions) >  choose **Start setup**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
 
 1. On the How do you want to connect your domain? page, select **Continue**.   
 
 1. On the Add DNS records page, select **Add DNS records**.
 
 1. On the IONOS by 1&1 login page, sign in to your account, and select **Connect**, and **Allow**.
-    
+ 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-3.png" alt-text="Select Connect, and then Allow.":::
+   
     This completes your domain setup for Microsoft 365. 
 
 ## Create DNS records with manual setup
@@ -84,18 +90,25 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
  
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
-1. Select **Add record**, and then select the **TXT** section.
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **TXT** section.
     
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-4.png" alt-text="Select the TXT section.":::
+
 1. On the Add a DNS record page, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    ||||
+    |**Host name** <br/> |**Value** <br/> | **TTL**
     |:-----|:-----|:-----|
-  |**Host name** <br/> |**Value** <br/> |
-|(Leave this field blank)  <br/> |MS=ms *XXXXXXXX*  <br/> NOTE: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
-   
-1. Select **Save**.
+    |(Leave this field blank)  <br/> |MS=ms *XXXXXXXX*  <br/> NOTE: This is an example. Use your specific **Destination or Points to Address** value here, from the table. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          | 1 hour |
     
-1. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
+1. Select **Save**.
+  
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-5.png" alt-text="Select Save.":::
+  
+    Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record. When Microsoft finds the correct TXT record, your domain is verified.
 
@@ -103,9 +116,13 @@ To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
     
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
+1. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
@@ -125,18 +142,28 @@ To verify the record in Microsoft 365:
  
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
-1. Select **Add record**, and then select the **MX** section.
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **MX** section.
     
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX.png" alt-text="Select the MX section.":::
+  
 1. On the Add a DNS record page, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     | **Host name**| **Points to** |**Priority**| **TTL** |
     |:-----|:-----|:-----| :-----|
     |  @  | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  NOTE: Get your \<domain-key\> from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) | 1 hour |
   
-8. Select **Save**.<br/>(You may have to scroll down.)<br/>
+1. Select **Save**.
 
-6. If there are any MX records already listed, delete each of them by selecting **Delete record**.
-  
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-MX-Save.png" alt-text="Select Save.":::
+
+1. If there are any MX records already listed, delete each of them by selecting the **Delete record** trash can on the **Add record** page.
+ 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Delete.png" alt-text="Select Delete record.":::
+ 
 ### Add the CNAME record required for Microsoft
 
 > [!NOTE]
@@ -153,26 +180,30 @@ To verify the record in Microsoft 365:
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
     Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)<br/>First, you'll create the Autodiscover subdomain.
-    
+
+1. Select **Subdomains**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+  
 1. Select **Add subdomain**.
+
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
   
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)
 
-    |**Add subdomain**|**Alias**|
+    |**Add subdomain**| **Alias** |
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com   | 
-  
-1. Under **Actions** for the **autodiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
+    |autodiscover  <br/> | autodiscover.outlook.com |
 
-1. Select **Add record**, and then select the **CNAME** section.
-  
-1. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table.<br/> 
+1. Under **Actions** for the **autodiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
     
-    |**Add subdomain**|**Alias**|
+1. Select **Add record**, and then select the **CNAME** section.
+
+1. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. <br/>
+    
+    |**Add subdomain**| **Alias** |
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com   |
-  
-1. Select the check box for the **I am aware** disclaimer.<br/>
+    |autodiscover  <br/> | autodiscover.outlook.com |
   
 1. Select **Save**.
 
@@ -194,23 +225,49 @@ To verify the record in Microsoft 365:
  
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
    
-1. Select **Add record**, and then select the **SPF (TXT)** section.
-    
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **SPF (TXT)** section.
+   
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT.png" alt-text="Select the SPF (TXT) section.":::
+ 
 1. In the boxes for the new record, type or copy and paste the values from the following table. <br/>
     
     |**Type**|**Host name**|**Value**| **TTL** |
     |:-----|:-----|:-----|:-----|
     |SPF (TXT)  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 1 hour |
   
-1. Select **Save**.<br/>!
-  
+1. Select **Save**.
+ 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SPFTXT-Save.png" alt-text="Select Save.":::
+ 
 ## Advanced option: Skype for Business
 
 Only select this option if your organization uses ‎Skype for Business‎ for online communication services like chat, conference calls, and video calls, in addition to ‎Microsoft Teams‎. ‎Skype‎ needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add two additional CNAME records
   
-1. Create another subdomain (Lyncdiscover) using the instructions for the first CNAME record above.
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+    
+1. Select **Menu**, and then select **Domains and SSL**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+  
+1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+    
+    Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)<br/>First, you'll create the lyncdiscover subdomain.
+
+1. Select **Subdomains**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+  
+1. Select **Add subdomain**.
+
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
     
 1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)<br/> 
     
@@ -218,7 +275,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |:-----|:-----|
     |lyncdiscover   |webdir.online.lync.com  |
    
-1. Under **Actions** for the **autodiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
+1. Under **Actions** for the **lyncdiscover** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
     
 1. Select **Add record**, and then select the **CNAME** section.
 
@@ -227,8 +284,6 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     |**Create Subdomain**|**Alias**|
     |:-----|:-----|
     |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |
-   
-1. Select the check box for the **I am aware** disclaimer, and then select **Save**.
     
 1. Create another subdomain (SIP): <br/>Select **Add subdomain**.
     
@@ -240,7 +295,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. Under **Actions** for the subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
     
-1. Select **Add record**, and then select the **CNAME** section.
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **CNAME** section.
 
 1. in the **Alias:** box, type or copy and paste only the **Alias** value from the following table. 
     
@@ -265,17 +324,25 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
  
    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
     
-1. Select **Add record**, and then select the **SRV** section.
-    
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **SRV** section.
+ 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV.png" alt-text="Select the SRV section.":::
+   
 1. In the boxes for the new record, type or copy and paste the values from the following table. <br/>
     
     |**Type**|**Service**|**Protocol**|**Host name**|**Points to**|**Priority**|**Weight**|**Port**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV  <br/> |sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (1 h)  <br/> |
-    |SRV  <br/> |sipfederationtls  <br/> |tcp  <br/> |(Leave this field empty.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (1 h)  <br/> |  
+    |SRV  <br/> |_sip  <br/> |tls  <br/> |(Leave this field empty.)  <br/> |sipdir.online.lync.com  <br/> |100  <br/> |1  <br/> |443  <br/> |1 hour  <br/> |
+    |SRV  <br/> |_sipfederationtls  <br/> |tcp  <br/> |(Leave this field empty.)  <br/> |sipfed.online.lync.com  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 hour <br/> |  
   
-1. Select **Save**. <br/>
-  
+1. Select **Save**.
+ 
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-SRV-Save.png" alt-text="Select Save.":::
+ 
 1. Add the other SRV record. 
     
 > [!NOTE]
@@ -288,12 +355,66 @@ This service helps you secure and remotely manage mobile devices that connect to
 ### Add the two required CNAME records
 
 > [!IMPORTANT]
-> Follow the procedure that you used for the other CNAME records, and supply the values from the following table. 
+> Follow the subdomain procedure that you used for the other CNAME records, and supply the values from the following table. 
   
-|**Add subdomain**|**Alias**|
-|:-----|:-----|
-|enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
-|enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+1. To get started, go to your domains page at IONOS by 1&1 by using [this link](https://my.1and1.com/). You'll be prompted to log in.
+    
+1. Select **Menu**, and then select **Domains and SSL**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-1.png" alt-text="Select Domains and SSL.":::
+  
+1. Under **Actions** for the domain that you want to update, select the gear control, and then select **DNS**.
+ 
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-2.png" alt-text="Select DNS from the drop-down list.":::
+    
+    Now you'll create two subdomains and set an **Alias** value for each.<br/>(This is required because 1&1 IONOS supports only one top-level CNAME record, but Microsoft requires several CNAME records.)<br/>First, you'll create the lyncdiscover subdomain.
+
+1. Select **Subdomains**.
+  
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-Subdomains.png" alt-text="Select Subdomain.":::
+  
+1. Select **Add subdomain**.
+
+   :::image type="content" source="../../media/dns-IONOS/IONOS-domains-add-subdomains.png" alt-text="Select Add subdomains.":::
+    
+1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.)<br/> 
+    
+    |**Add subdomain**|**Alias**|
+    |:-----|:-----|
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
    
+1. Under **Actions** for the **enterpriseregistration** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
+    
+1. Select **Add record**, and then select the **CNAME** section.
+
+1. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. <br/>
+    
+    |**Add subdomain**|**Alias**|
+    |:-----|:-----|
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
+    
+1. Create another subdomain: <br/>Select **Add subdomain**.
+    
+1. In the **Add subdomain** box for the new subdomain, type or copy and paste only the **Add subdomain** value from the following table. (You'll add the **Alias** value in a later step.) <br/>
+    
+    |**Add subdomain**|**Alias**|
+    |:-----|:-----|
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+
+1. Under **Actions** for the **enterpriseenrollment** subdomain that you just created, select the gear control, and then select **DNS** from the drop-down list. <br/>
+    
+1. Select **Add record**.
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-domains-3.png" alt-text="Select Add record.":::
+
+1. Select the **CNAME** section.
+
+1. in the **Alias:** box, type or copy and paste only the **Alias** value from the following table. 
+    
+    |**Create Subdomain**|**Alias**|
+    |:-----|:-----|
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+   
+1. Select the check box for the **I am aware** disclaimer, and then select **Save**.
 
   
