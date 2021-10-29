@@ -33,7 +33,7 @@ ms.prod: m365-security
 |---|---|---|
 |*You are here!*|||
 
-Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps. You should inventory the settings at your existing protection service first, before you make any changes. Otherwise, you can do the remaining steps in any order:
+Welcome to **Phase 1: Prepare** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! This migration phase includes the following steps. You should inventory the settings at your existing protection service first, before you make any changes. Otherwise, you can do the remaining steps in any order:
 
 1. [Inventory the settings at your existing protection service](#inventory-the-settings-at-your-existing-protection-service)
 2. [Check your existing protection configuration in Microsoft 365](#check-your-existing-protection-configuration-in-microsoft-365)
@@ -122,6 +122,6 @@ If the feature is available to you, **priority accounts** and **user tags** can 
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)!
+**Congratulations**! You have completed the **Prepare** phase of your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)!
 
 - Proceed to [Phase 2: Setup](migrate-to-defender-for-office-365-setup.md).

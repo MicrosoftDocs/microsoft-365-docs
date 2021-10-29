@@ -32,7 +32,7 @@ ms.prod: m365-security
 |---|---|---|
 |||*You are here!*|
 
-Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps:
+Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! This migration phase includes the following steps:
 
 1. [Begin onboarding Security Teams](#step-1-begin-onboarding-security-teams)
 2. [(Optional) Exempt pilot users from filtering by your existing protection service](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
@@ -216,7 +216,7 @@ Feel free to pause and evaluate here at any point. But, remember: once you turn 
 
 ## Next steps
 
-Congratulations! You have completed your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)! Because you followed the steps in this migration guide, the first few days where mail is delivered directly into Microsoft 365 should be much smoother.
+Congratulations! You have completed your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)! Because you followed the steps in this migration guide, the first few days where mail is delivered directly into Microsoft 365 should be much smoother.
 
 Now you begin the normal operation and maintenance of Defender for Office 365. Monitor and watch for issues that are similar to what you experienced during the pilot, but on a larger scale. The [spoof intelligence insight](learn-about-spoof-intelligence.md) and the [impersonation insight](impersonation-insight.md) will be most helpful, but consider making the following activities a regular occurrence:
 

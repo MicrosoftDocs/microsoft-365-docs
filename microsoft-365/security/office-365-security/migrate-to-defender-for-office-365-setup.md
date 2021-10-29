@@ -32,7 +32,7 @@ ms.prod: m365-security
 |---|---|---|
 ||*You are here!*||
 
-Welcome to **Phase 2: Setup** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps:
+Welcome to **Phase 2: Setup** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)**! This migration phase includes the following steps:
 
 1. [Create distribution groups for pilot users](#step-1-create-distribution-groups-for-pilot-users)
 2. [Configure user submission for user message reporting](#step-2-configure-user-submission-for-user-message-reporting)
@@ -188,6 +188,6 @@ For more information, see the following topics:
 
 ## Next step
 
-**Congratulations**! You have completed the **Setup** phase of your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)!
+**Congratulations**! You have completed the **Setup** phase of your [migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md#the-migration-process)!
 
 - Proceed to [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md).
