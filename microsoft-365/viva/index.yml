@@ -58,7 +58,7 @@ additionalContent:
           links:
             - text: Get started
               url: /insights/viva-teams-app
-            -text: Setup
+            - text: Setup
               url: /insights/setup/setup-intro
             - text: Learning path - Discover Microsoft Viva Insights
               url: /learn/modules/workplace-analytics-discover/
