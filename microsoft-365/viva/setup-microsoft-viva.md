@@ -31,7 +31,7 @@ To jump right in and starting setting up, you'll have to be a Microsoft admin an
 [Go directly to the the Microsoft Viva admin page](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/collections/VivaExperiences)
 
 At the bottom of the page, select the module you want to set up.
-On the module page, select the Go to Setup Guide button, or in the case of Viva Topics, select the Setup button to go to the Setup wizard that guides you through the process.
+On the module page, select the **Go to setup guide** button, or in the case of Viva Topics, select the **Get started** button to go to the Setup wizard that guides you through the process.
 
 ![Viva admin page](../media/viva-setup-page.png)
 
@@ -42,7 +42,7 @@ Or, if you want to set up later, you can follow these steps:
 2.	Select **Setup** on the left navigation
 3.	Select the **Microsoft Viva** tile
 4.	At the bottom of the page, select the module you want to set up.
-5.	Select the **Go to Setup Guide** button, or in the case of Viva Topics, select the Setup button to go to the Setup wizard that guides you through the process.
+5.	Select the **Go to setup guide** button, or in the case of Viva Topics, select the **Get started** button to go to the Setup wizard that guides you through the process.
 
 ### More information
 If you want to learn more about each module and how you will set them up first, here are some resources:
