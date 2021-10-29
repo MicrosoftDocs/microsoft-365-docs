@@ -128,7 +128,7 @@ Deploy this setting by using Group Policy, or by using the [Office cloud policy 
 
 If users have the [Azure Information Protection client installed](/azure/information-protection/rms-client/aip-clientv2), by default, built-in labels are turned off in [Office apps that support them](#labeling-client-for-desktop-apps). Because built-in labels don't use an Office add-in, as used by the Azure Information Protection client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
-Rather than uninstalling the Azure Information Protection client, we recommend you prevent the Azure Information Protection add-in from loading in Office apps. Then, you get the benefits of built-in labeling in Office apps, and the benefits of the Azure Information Protection client labeling files outside Office apps. For example, by using File Explorer, or PowerShell. For more information about the labeling features supported outside Office apps, see [Sensitivity labels and Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
+Rather than uninstalling the Azure Information Protection client, we recommend you prevent the Azure Information Protection add-in from loading in Office apps. Then, you get the benefits of built-in labeling in Office apps, and the benefits of the Azure Information Protection client labeling files outside Office apps. For example, the Azure Information Protection client can label all file types by using File Explorer and PowerShell. For more information about the labeling features supported outside Office apps, see [Sensitivity labels and Azure Information Protection](sensitivity-labels.md#sensitivity-labels-and-azure-information-protection).
 
 To prevent the Azure Information Protection client add-in loading in Office apps, use the Group Policy setting **List of managed add-ins** as documented in [No Add-ins loaded due to group policy settings for Office 2013 and Office 2016 programs](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
@@ -142,7 +142,6 @@ For your Office apps that support built-in labeling, use the configuration for M
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
 
-
 Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service).
 
 > [!NOTE]
@@ -152,7 +151,7 @@ Alternatively, you can interactively disable or remove the **Microsoft Azure Inf
 
 Whichever method you choose, the changes take effect when Office apps restart.
 
-For detailed information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
+For detailed information about which features are supported by the Azure Information Protection client and the Office built-in labeling client, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ## Office file types supported
 
