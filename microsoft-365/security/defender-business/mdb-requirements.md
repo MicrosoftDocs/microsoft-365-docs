@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -35,8 +35,6 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 ## Next steps
 
-- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365bp.md)
+Proceed to:
 
-- [Learn more about Microsoft Defender for Business](mdb-overview.md)
-
-- [See the setup and configuration process for Microsoft Defender for Business](mdb-setup-configuration.md)
+- [Setup and configuration for Microsoft Defender for Business](mdb-setup-configuration.md)
