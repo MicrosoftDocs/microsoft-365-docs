@@ -53,7 +53,7 @@ pip install azure-mgmt-testbase
 
 When debugging and executing code locally it is typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run az login. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user. 
 
-Check [How to authenticate Python applications with Azure services](https://docs.microsoft.com/en-us/azure/developer/python/azure-sdk-authenticate) | Microsoft Docs and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
+Check [How to authenticate Python applications with Azure services| Microsoft Docs](https://docs.microsoft.com/en-us/azure/developer/python/azure-sdk-authenticate)  and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
 
 ```
 az login 
@@ -124,4 +124,4 @@ We are continuously gathering and collaborating on feedback to prioritize and im
 
 ## Join the Test Base community 
 
-We are actively engaging with application developers and enterprise customers now to add more value and help solve additional use cases. We would also like to invite you to come join us at the new Test Base for M365 community on Tech Community so you can share your experiences and connect with others using the service. 
+We are actively engaging with application developers and enterprise customers now to add more value and help solve additional use cases. We would also like to invite you to come join us at the new [Test Base for M365 community](https://techcommunity.microsoft.com/t5/update-staging-lab/ct-p/UpdateStagingLab) on Tech Community so you can share your experiences and connect with others using the service. 
