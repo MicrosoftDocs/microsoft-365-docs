@@ -67,7 +67,7 @@ az login
 - Initialize Test Base SDK client with the credential and subscription ID for later operations 
 - Invoke begin_create from test_base_accounts model to create Test Base Account 
 
-Copy the code to your Python development environment, and replace "subscription-id" with your Azure subscription ID and "resource-group-name" with your Resource Group you created above. 
+Copy the code to your Python development environment, and replace "subscription-id" with your Azure subscription ID and "<<resource-group-name>>" with your Resource Group you created above. 
 
  
 ```python
