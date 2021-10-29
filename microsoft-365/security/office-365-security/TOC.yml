@@ -129,7 +129,7 @@
      - name: Migrate from a third-party protection service or device to Defender for Office 365
        items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
-       - href: migrate-to-defender-for-office-365.md
+         href: migrate-to-defender-for-office-365.md
        - name: "Migrate Phase 1: Prepare"
          href: migrate-to-defender-for-office-365-prepare.md
        - name: "Migrate Phase 2: Onboard"
