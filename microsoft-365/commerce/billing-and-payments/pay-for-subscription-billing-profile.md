@@ -19,7 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
-ms.date: 04/02/2021
+ms.date: 10/29/2021
 ---
 
 # How to pay for your subscription with a billing profile
