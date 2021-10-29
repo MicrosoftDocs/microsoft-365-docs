@@ -36,7 +36,7 @@ ms.technology: mde
 Security Management for Microsoft Defender for Endpoint is a capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
 
-For more information on Security Configuration Management, indluding prerequisites, supported platforms and more, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+For more information on Security Configuration Management, including prerequisites, supported platforms and more, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 When devices are managed through this capability:
 
@@ -95,6 +95,23 @@ To offboard devices that have been onboarded via Security Management for Microso
 
 ## Troubleshooting Security Management 
 To troubleshoot Security Management for Microsoft Defender for Endpoint enrollment issues, see [Troubleshoot  Security Configuration Management Azure Active Directory onboarding issues](troubleshoot-security-config-mgt.md)
+
+
+## Known issues and limitations 
+
+### Non-persistent VDI environments
+
+Due to the potential impact on Azure Active Directory environments with respect to device lifecycle and service quota, we advise against testing the current installation files and builds shared in this public preview in a non-persistent VDI environment.
+
+### Server Core installation
+
+Due to the limited scope of Server core installations, these are not supported by Security Management for Microsoft Defender for Endpoint.
+
+### Azure Active Directory onboarding issues
+To troubleshoot Azure Active Directory onboarding issues, see  [Troubleshoot Security Configuration Management Azure Active Directory onboarding issues](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt).
+
+
+
 
 ## Related topic
 - [Troubleshoot  Security Configuration Management Azure Active Directory onboarding issues](troubleshoot-security-config-mgt.md)
