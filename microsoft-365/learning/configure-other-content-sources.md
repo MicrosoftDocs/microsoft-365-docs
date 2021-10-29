@@ -15,7 +15,6 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure other providers as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Add other content providers for Microsoft Viva Learning
@@ -52,7 +51,7 @@ Third-party content sources are not enabled by default. To enable these sources,
 3. Fill in your details.
 
 >[!NOTE]
->Available content providers and learning management systems are subject to change.
+>Available content providers and learning management systems are subject to change. Depending on your organization, you may have access to more content providers and learning management systems than are listed here.
 
 ## Content ingestion errors
 

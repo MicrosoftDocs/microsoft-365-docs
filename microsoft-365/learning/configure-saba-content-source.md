@@ -15,20 +15,19 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Saba as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Configure Saba as a content source for Microsoft Viva Learning
-
->[!NOTE]
->This feature is not supported in preview.
 
 This article shows you how to configure Saba as a third-party learning content source for Microsoft Viva Learning. You must be a Saba System Admin or Super User to perform these steps.
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba's privacy and service terms.
 
-## Client's Host URL
+>[!NOTE]
+>Viva Learning integration with Saba will use APIs from your bucket of API calls per month and count towards your throttle limit.
+
+## Client’s Host URL
 
 1. Identify your primary Saba Cloud URL (for example "org".sabacloud.com). If your API dashboard URL is org-api.sabacloud.com, your Host URL will be org.sabacloud.com.
 2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
@@ -38,6 +37,7 @@ This article shows you how to configure Saba as a third-party learning content s
 1. On the same screen where you got the host URL, copy the Client ID and Client Secret if they've already been generated.
 
 2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
+
 ## Last steps
 
 You'll need to complete the configuration in your Microsoft 365 admin center.

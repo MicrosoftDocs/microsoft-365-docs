@@ -27,7 +27,7 @@ Select free content from LinkedIn Learning is available for everyone in Viva Lea
 
 Only the LinkedIn Learning global catalog is available for integration. This means that you can't integrate custom content, curated assets, or aggregations from Learning Hub. LinkedIn Learning also doesn't sync recommendations, in-progress, or saved courses between LinkedIn Learning and Viva Learning.
 
-LinkedIn Learning reporting includes engagement from Viva Learning when learners are signed in to their LinkedIn accounts. For learner activity to appear on LinkedIn Learning reports, users need to log in with LinkedIn Learning enterprise credentials.
+LinkedIn Learning reporting includes engagement from Viva Learning when learners are signed in to their LinkedIn accounts. For learner activity to appear on LinkedIn Learning reports, users need to log in with LinkedIn Learning enterprise credentials. You can find your LinkedIn Learning enterprise credentials by going to settings in the Viva Learning app.
 
 Advanced features including Instructor Q&A, Exercise Files, Certificates, and Transcripts won't show in Viva Learning. Users can access these by choosing the **Open in LinkedIn Learning** option in the toolbar.
 
