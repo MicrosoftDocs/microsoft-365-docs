@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Go1 as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Configure Go1 as a content source for Microsoft Viva Learning
@@ -39,23 +39,11 @@ First, you'll need to follow these steps to create an app in your Go1 Portal. Th
 2. Select **Integrations** from the menu options.
 
 3. Select **Developers**.
-
-    <!--![Image of the Developers option in the Integrations menu.](../media/learning/go1-1.png)-->
-
 4. Select the **Create App** button.
-
-    <!--![Image of the Create App button.](../media/learning/go1-2.png)-->
-
 5. Enter a name for the app, for example, "My-go1-viva-integration".
-
 6. Enter a call back URL, for example, "Mycompany.mygo1.com".
-
-    <!--![Image of the field where you enter the name and callback URL.](../media/learning/go1-3.png)-->
-
 7. Save the information you entered.
-
 8. Your information will display with the Secret hidden. Select the ellipses (**...**), then select **View Secret** to display the Secret.
-
 9. Copy the following values:
 
     - **Client's Host URL:** This is your Go1 Portal URL. It will look like "https://mycompany.mygo1.com".
