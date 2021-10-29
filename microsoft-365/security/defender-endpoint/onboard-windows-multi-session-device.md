@@ -155,4 +155,4 @@ Licensing requirements for Microsoft Defender for endpoint can be found at: [Lic
 
 #### Related Links
 
-[Add exclusions for Microsoft Defender by using PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
+[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)

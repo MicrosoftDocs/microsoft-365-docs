@@ -130,7 +130,7 @@ DeviceNetworkEvents
 
 The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled.
 
-1. Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
+1. Devices that are not onboarded to Microsoft Defender for Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
     1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using "OnboardingStatus" attribute.
     2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by using the `OnboardingStatus` filter in your query.
 2. Unmanaged devices will be assigned to existing device groups based on the defined criteria.

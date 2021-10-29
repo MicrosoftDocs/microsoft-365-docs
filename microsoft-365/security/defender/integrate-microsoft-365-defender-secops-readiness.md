@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Once the core functions of the Security Operations Center (SOC) team are defined, the next step for your organization is to prepare for the adoption of Microsoft Defender through a [Zero Trust approach](/security/zero-trust/). Adoption can help you determine the requirements needed for deploying Microsoft 365 Defender using modern industry-leading practices, while evaluating Defender’s capabilities against your environment. 
+Once the core functions of the Security Operations Center (SOC) team are defined, the next step for your organization is to prepare for the adoption of Microsoft 365 Defender through a [Zero Trust approach](/security/zero-trust/). Adoption can help you determine the requirements needed for deploying Microsoft 365 Defender using modern industry-leading practices, while evaluating Microsoft 365 Defender’s capabilities against your environment. 
 
 This approach is based on a strong foundation of protections and includes key areas such as identity, endpoints (devices), data, apps, infrastructure, and networking. The Readiness Assessment team will determine the areas where a foundational requirement for enabling Microsoft 365 Defender has not yet been met and will need remediation. 
 

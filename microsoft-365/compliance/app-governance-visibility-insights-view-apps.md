@@ -41,7 +41,7 @@ You will see a list of apps and this information:
 - Publisher
 - M365 certification
 
-  Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
+  Indicates whether the app is compatible with Microsoft technologies, compliant with security best practices, and supported by Microsoft.
 
 - Last modified
 

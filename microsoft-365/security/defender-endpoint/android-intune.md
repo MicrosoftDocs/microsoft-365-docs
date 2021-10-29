@@ -109,7 +109,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" alt-text="Image of Microsoft Endpoint Manager admin center managed google play." source="images/579ff59f31f599414cedf63051628b2e.png" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
 
-2. On your managed Google Play page that loads subsequently, go to the search box and lookup **Microsoft Defender.** Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
+2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
     ![Image of Microsoft Endpoint Manager admin center Apps search.](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 

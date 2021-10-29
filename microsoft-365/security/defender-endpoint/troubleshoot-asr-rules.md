@@ -103,7 +103,7 @@ To access it, open Windows Event Viewer, and browse to **Applications and Servic
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr.":::
 
-## Microsoft Defender Malware Protection Logs
+## Microsoft Defender Antimalware Protection Logs
 
 You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, and automate tasks if needed.
 

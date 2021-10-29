@@ -61,7 +61,7 @@ To verify the integration with MCAS is active, look for the app governance polic
 
 Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft 365 E5/A5
 - Microsoft 365 E5/A5 Compliance
 - Microsoft 365 E5/A5 Information Protection and Governance
@@ -118,4 +118,4 @@ If you did not participate in private preview and would like to cancel your tria
 
 The app governance team has identified the following known issues for the preview: 
 
-- 2-way sync between Microsoft Defender and app governance alerts – currently alerts resolved in Defender will have to be manually resolved in app governance as well.
+- 2-way sync between Microsoft 365 Defender and app governance alerts – currently alerts resolved in Microsoft 365 Defender must be manually resolved in app governance as well.
