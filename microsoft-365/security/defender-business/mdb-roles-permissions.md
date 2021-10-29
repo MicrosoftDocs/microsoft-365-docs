@@ -28,6 +28,8 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 > [!NOTE]
 > If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
 
+:::image type="content" source="media/mdb-grant-access.png" alt-text="Screenshot of granting people access to Defender for Business.":::
+
 ## Roles in Defender for Business
 
 The following table describes the three roles that can be assigned in Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
