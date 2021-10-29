@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -91,7 +91,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 <!--
 - **privacy management**
 
-    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](privacy-management.md)
+    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](/privacy/solutions/privacymanagement/privacy-management)
 -->
 
 - **Records Management**

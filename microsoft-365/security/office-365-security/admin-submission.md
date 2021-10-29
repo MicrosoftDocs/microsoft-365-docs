@@ -2,12 +2,12 @@
 title: Manage submissions
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -54,6 +54,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
 
+- Admin submissions are throttled at the following rates:
+  - Maximum submissions in any 15 minutes period: 150 submissions
+  - Same submissions in a 24 hour period: 3 submissions
+  - Same submissions in a 15 minute period: 1 submissions
+  
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft

@@ -8,7 +8,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - SPO160
 - MET150
@@ -316,7 +316,7 @@ For example, keeping with the HIPPA policy, we could modify the rule to exclude 
 
 ![HIPPA policy with exclusions](../media/dlp-rule-exceptions.png)
 
-The exceptions conditions that are supported by location are identical to all the inclusion conditions with the only difference being the prepending of "Except if" to each supported condition.
+The exceptions conditions that are supported by location are identical to all the inclusion conditions with the only difference being the prepending of "Except if" to each supported condition. If a rule contains only exceptions, it will apply to all emails or files that do not meet the exclusion criteria.
 
 Just as all locations support the inclusive condition:
 

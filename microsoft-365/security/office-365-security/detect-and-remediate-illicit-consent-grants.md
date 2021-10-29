@@ -12,7 +12,7 @@ ms.collection:
   - o365_security_incident_response
   - M365-security-compliance
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.

@@ -4,7 +4,7 @@ description: Learn about changes from the Microsoft Defender Security Center to 
 keywords: Getting started with the Microsoft 365 Defender portal, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, single pane of glass, converged portal, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: macapara

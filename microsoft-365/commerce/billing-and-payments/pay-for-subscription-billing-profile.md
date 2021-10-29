@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -88,7 +88,7 @@ If your billing profile is backed by an invoice, you get an email when your bill
 > - [Cape Verde](../pay/cape-verde.md)
 > - [Cayman Islands](../pay/cayman-islands.md)
 > - [Chile](../pay/chile.md)
-> - [China (PRC)](../pay/china-prc.md)
+> - [China](../pay/china-prc.md)
 > - [Colombia](../pay/colombia.md)
 > - [Costa Rica](../pay/costa-rica.md)
 > - [Côte d'Ivoire](../pay/cote-divoire.md)

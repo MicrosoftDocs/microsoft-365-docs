@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: "Follow these instructions to create your About Us page, including business name, address, phone number, website URL, logo, and business hours in Microsoft Bookings."
 ---

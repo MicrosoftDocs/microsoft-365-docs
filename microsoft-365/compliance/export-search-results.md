@@ -10,7 +10,7 @@ ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.CustomizeExport'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -38,20 +38,15 @@ Exporting the results of a Content search involves preparing the results, and th
   
   - Latest version of Windows (32-bit or 64-bit)
   
-  - Microsoft .NET Framework 4.7
+  - Microsoft .NET Framework 4.7 or higher
   
-- You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
-
-  - Microsoft Edge <sup>2</sup>
-  
-    OR
-
-  - Microsoft Internet Explorer 10 and later versions
+- You have to use Microsoft Edge<sup>1</sup> to run the eDiscovery Export Tool. Using Internet Explorer 11 to export search results is no longer supported<sup>2</sup>.
   
   > [!NOTE]
-  > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
-  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
-  
+  > <sup>1</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md). Also, Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.
+  >
+  > <sup>2</sup> Beginning August 2021, Microsoft 365 apps and services will no longer support Internet Explorer 11 (IE11) and users may have a degraded experience or be unable to connect to those apps and services. These apps and services will phase out over the upcoming weeks and months to ensure a smooth end of support. Each app and service are being phased out on independent schedules. For more information, see this [blog post](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666).
+
 - The eDiscovery Export Tool that you use in Step 2 to download search results doesn't support automation (by using a script or running cmdlets). We highly recommended that you don't automate the preparation process in Step 1 or the download process in Step 2. If you automate either of these processes, Microsoft Support will not provide assistance if you run into issues.
 
 - We recommend downloading search results to a local computer. To eliminate your company's firewall or proxy infrastructure from causing issues when downloading search results, you might consider downloading search results to a virtual desktop outside of your network. This may decrease timeouts that occur in Azure data connections when exporting a large number of files. For more information about virtual desktops, see [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).

@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.IngestionHelp'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -87,7 +87,7 @@ Here's an illustration and description of the complete PST import process. The i
 
 - Importing email data to Microsoft 365 helps address compliance needs of your organization by letting you:
 
-  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [unlimited archiving](unlimited-archiving.md) to give users additional mailbox storage space.
+  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](autoexpanding-archiving.md) to give users additional mailbox storage space.
 
   - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain content.
 

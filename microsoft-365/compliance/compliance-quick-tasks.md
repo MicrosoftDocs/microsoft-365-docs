@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
 
@@ -83,7 +83,7 @@ For step-by-step guidance to configure a retention policy, see [Create and confi
 
 ## Task 7: Configure sensitive information and offensive language policies
 
-Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](communication-compliance-feature-reference.md) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
+Protecting sensitive information and detecting and acting on workplace harassment incidents is an important part of compliance with internal policies and standards. [Communication compliance](communication-compliance.md) in Microsoft 365 helps minimize these risks by helping you quickly detect, capture, and take remediation actions for email and Microsoft Teams communications. These include inappropriate communications containing profanity, threats, and harassment and communications that share sensitive information inside and outside of your organization.
 
 A pre-defined *Offensive language and anti-harassment* policy template allows you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's standards.
 

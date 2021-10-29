@@ -10,6 +10,7 @@ ms.topic: conceptual
 author: "samanro"
 ms.author: "samanro"
 manager: pamgreen
+ms.collection: Adm_TOC
 ---
 # Microsoft 365 docs navigation guide
 

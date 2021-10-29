@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn about best practices to manage the many topics in your organization using Viva Topics.
 ---
 

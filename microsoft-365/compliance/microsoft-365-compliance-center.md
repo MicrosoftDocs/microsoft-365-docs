@@ -8,7 +8,7 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the Microsoft 365 compliance center, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
 ---

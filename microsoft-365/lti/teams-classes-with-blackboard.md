@@ -10,7 +10,7 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Use Microsoft Teams classes with Blackboard Learn Ultra"
 ---

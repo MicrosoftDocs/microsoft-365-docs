@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
@@ -57,12 +57,14 @@ One of the primary value points for app governance is the ability to quickly vie
     - Unverified Publisher
     - App only
     - New apps
-1. Select the name of an app to view details. You can select multiple apps to save them as a saved query by placing a check mark to the left of the app name. Selecting an app name opens a detail pane on the right as show in the following graphic.
+1. Select the name of an app to view details. Selecting an app name opens a detail pane on the right as show in the following graphic.
 
 :::image type="content" source="../media/manage-app-protection-governance/app-governance-app-insight.png" alt-text="Image showing the details pane for a selected app.":::
 
 > [!NOTE]
 > The apps listed will depend on the apps present in your tenant.
+
+Saving the query lets you save the defined list of filters in the current view. This could save time when selecting a subset of data in the future.
 
 The details pane also lets you view the usage of the app over the past 30 days, the users who have consented to the app, and the permissions assigned to the app. An administrator could review the activity and permissions of an app that is generating alerts and make a decision to disable the app using the **Disable App** button in the Details pane.
 

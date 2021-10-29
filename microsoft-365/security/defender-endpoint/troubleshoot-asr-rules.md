@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
 ms.author: v-lsaldanha
@@ -16,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Report and troubleshoot Microsoft Defender for ATP ASR Rules

@@ -2,14 +2,14 @@
 title: User reported message settings
 f1.keywords:
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
@@ -50,9 +50,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - [Create an anti-spam policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) that includes the custom mailbox where ZAP for spam and ZAP for phishing are turned off (**Zero-hour auto purge** section \> **Enabled zero-hour auto purge (ZAP)** is not selected).
 
-- Disable the junk email rule in the custom mailbox. Use [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md) to disable the junk email rule. After it's disabled, EOP can't move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the safelist collection on the mailbox.
-
-If you have Microsoft Defender for Office 365, you should also configure the below so that our advanced filtering does not impact the users reporting messages:
+If you have Microsoft Defender for Office 365, you should also configure the the following settings so that our advanced filtering does not impact the users reporting messages:
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
@@ -110,6 +108,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
      - **User reporting experience section**
        - **Before reporting** tab: In the **Title** and **Message body** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
        - **After reporting** tab: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in or the Report Phishing add-in. You can use the variable %type% to include the submission type.
+       -  **Only display when user reports phishing**: Check this option if you want to display the message only when an email is reported as phish. If not, checked messages will be shown for any kind of report.
 
        As shown on the page, if you select an option that sends the reported messages to Microsoft, the following text is also added to the notification:
 
@@ -117,6 +116,8 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
    - **Microsoft Outlook Report Message button** \> **Off** ![Toggle off.](../../media/scc-toggle-off.png): Select this option if you use third-party reporting tools instead of the Report Message add-in, the Report Phishing add-in, or the built-in reporting in Outlook on the web, and then configure the following settings:
      - Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing Exchange Online mailbox that can receive email.
+
+   - **Microsoft Outlook Report Message button**: Enable this feature if you want to let end users report messages from quarantine.
 
    When you're finished, click **Confirm**. To clear these values, click **Restore**
 

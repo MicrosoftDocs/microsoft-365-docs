@@ -3,15 +3,13 @@ title: Microsoft Defender for Endpoint on iOS
 ms.reviewer: 
 description: Describes how to install and use Microsoft Defender for Endpoint on iOS
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, overview, installation, deploy, uninstallation, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -42,11 +40,16 @@ ms.technology: mde
 
 - Microsoft Defender for Endpoint license assigned to the end user(s) of the app. See [Microsoft Defender for Endpoint licensing requirements](/microsoft-365/security/defender-endpoint/minimum-requirements#licensing-requirements).
 
-- **For enrolled devices**: Device(s) are [enrolled](/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies. This requires the end user to be assigned a Microsoft Intune license.
+- **For enrolled devices**:
+    - Device(s) are [enrolled](/mem/intune/user-help/enroll-your-device-in-intune-ios) via the Intune Company Portal app to enforce Intune device compliance policies. This requires the end user to be assigned a Microsoft Intune license.
     - Intune Company Portal app can be downloaded from the [Apple App Store](https://apps.apple.com/us/app/intune-company-portal/id719171358).
-    - Note that Apple does not allow redirecting users to download other apps from the app store and hence this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.
+    
+    >[!NOTE]
+    >Apple does not allow redirecting users to download other apps from the app store so this step needs to be done by the user before onboarding to Microsoft Defender for Endpoint app.)
+    
+    - Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
-- **For unenrolled devices**: Device(s) are registered with Azure Active Directory. This requires end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
+- **For unenrolled devices**: Device(s) are registered with Azure Active Directory. This requires the end user to be signed in through [Microsoft Authenticator app](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 
 - For more information on how to assign licenses, see [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
@@ -65,7 +68,7 @@ ms.technology: mde
 
 **System Requirements**
 
-- iOS device running iOS 11.0 and above. iPads are also supported.
+- iOS device running iOS 11.0 and above. iPads are also supported. *Support for iOS 11.0 will be deprecated. The minimum supported version will be iOS 12.0 starting October 25, 2021*
 
 - Device is either enrolled with the [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358) or registered with Azure Active Directory through [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458).
 

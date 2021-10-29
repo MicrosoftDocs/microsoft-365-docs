@@ -7,7 +7,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +15,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.date: 09/14/2021
+ms.collection: M365-security-compliance
 ms.topic: how-to
 ---
 

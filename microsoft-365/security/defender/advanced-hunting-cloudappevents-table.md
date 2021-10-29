@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -50,7 +50,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `IsAdminOperation` | string | Indicates whether the activity was performed by an administrator |
 | `DeviceType` | string | Type of device based on purpose and functionality, such as "Network device", "Workstation", "Server", "Mobile", "Gaming console", or "Printer" | 
-| `OSPlatform` | string | Platform of the operating system running on the device. This column indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
+| `OSPlatform` | string | Platform of the operating system running on the device. This column indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
 | `IsAnonymousProxy` | string | Indicates whether the IP address belongs to a known anonymous proxy |
 | `CountryCode` | string | Two-letter code indicating the country where the client IP address is geolocated |
@@ -58,13 +58,19 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Isp` | string | Internet service provider (ISP) associated with the IP address |
 | `UserAgent` | string | User agent information from the web browser or other client application |
 | `ActivityType` | string | Type of activity that triggered the event |
-| `ActivityObjects` | string | List of objects, such as files or folders, that were involved in the recorded activity |
+| `ActivityObjects` | dynamic | List of objects, such as files or folders, that were involved in the recorded activity |
 | `ObjectName` | string | Name of the object that the recorded action was applied to |
 | `ObjectType` | string | Type of object, such as a file or a folder, that the recorded action was applied to |
 | `ObjectId` | string | Unique identifier of the object that the recorded action was applied to |
 | `ReportId` | string | Unique identifier for the event |
 | `RawEventData` | string | Raw event information from the source application or service in JSON format |
-| `AdditionalFields` | string | Additional information about the entity or event |
+| `AdditionalFields` | dynamic | Additional information about the entity or event |
+| `AccountType` | string | Type of user account, indicating its general role and access levels, such as Regular, System, Admin, DcAdmin, System, Application | 
+| `IsExternalUser` | boolean | Indicates whether a user inside the network does not belong to the organization’s domain | 
+| `IsImpersonated` | boolean | Indicates whether the activity was performed by one user on behalf of another (impersonated) user | 
+| `IPTags` | dynamic | Customer-defined information applied to specific IP addresses and IP address ranges | 
+| `IPCategory` | string | Additional information about the IP address | 
+| `UserAgentTags` | dynamic | More information provided by Microsoft Cloud App Security in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot | 
 
 ## Apps and services covered
 

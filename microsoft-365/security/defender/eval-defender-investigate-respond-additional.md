@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021

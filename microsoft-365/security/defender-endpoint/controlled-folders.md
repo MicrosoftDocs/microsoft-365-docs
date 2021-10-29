@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
@@ -17,6 +17,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Protect important folders with controlled folder access
@@ -31,7 +32,7 @@ ms.topic: how-to
 
 ## What is controlled folder access?
 
-Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019 and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
+Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019, Windows Server 2022, and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
 
 > [!NOTE]
 > Scripting engines are not trusted and you cannot allow them access to controlled protected folders. For example, PowerShell is not trusted by controlled folder access, even if you allow with [certificate and file indicators](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -49,7 +50,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Security Center Console. 
 
 ## Why controlled folder access is important
 
@@ -63,6 +64,7 @@ Controlled folder access is supported on the following versions of Windows:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) and later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 ## Windows system folders are protected by default
 

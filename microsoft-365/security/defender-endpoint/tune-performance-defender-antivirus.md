@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-smandalika
 author: v-smandalika
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

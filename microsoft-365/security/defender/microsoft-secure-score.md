@@ -4,7 +4,7 @@ description: Describes Microsoft Secure Score in the Microsoft 365 Defender port
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -13,6 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
+  - Adm_TOC
 ms.topic: article
 search.appverid: 
   - MOE150

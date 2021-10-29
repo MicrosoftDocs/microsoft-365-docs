@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -103,7 +103,7 @@ Use the pie chart view to effectively show distribution across the top domains:
 Using the `summarize` operator with the `bin()` function, you can check for events involving a particular indicator over time. The query below counts events involving the file `invoice.doc` at 30 minute intervals to show spikes in activity related to that file:
 
 ```kusto
-AppFileEvents
+CloudAppEvents
 | union DeviceFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)

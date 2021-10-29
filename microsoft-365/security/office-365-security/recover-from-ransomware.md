@@ -7,7 +7,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -27,7 +27,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are very sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and in today's threat landscape Microsoft 365 is an ever-increasing [target for sophisticated attacks](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf).
 
 The steps in this article will give you the best chance to recover data and stop the internal spread of infection. Before you get started, consider the following items:
 
@@ -41,7 +41,7 @@ The steps in this article will give you the best chance to recover data and stop
 
 ## Step 1: Verify your backups
 
-If you have offline backups, you can probably restore the encrypted data **after** you've removed the ransomware payload (malware) from your environment.
+If you have offline backups, you can probably restore the encrypted data **after** you've removed the ransomware payload (malware) from your environment and **after** you've verified that there's no unauthorized access in your Microsoft 365 environments.
 
 If you don't have backups, or if your backups were also affected by the ransomware, you can skip this step.
 
@@ -75,7 +75,7 @@ If these options don't work, you can try [Windows Defender Offline](https://supp
 
 ## Step 4: Recover files on a cleaned computer or device
 
-After you've completed the previous step to remove the ransomware payload from your environment (which will prevent the ransomware from encrypting or removing your files), you can use [File History](https://support.microsoft.com/help/17128) in Windows 10 and Windows 8.1 or System Protection in Windows 7 to attempt to recover your local files and folders.
+After you've completed the previous step to remove the ransomware payload from your environment (which will prevent the ransomware from encrypting or removing your files), you can use [File History](https://support.microsoft.com/help/17128) in Windows 11, Windows 10, Windows 8.1, and by using System Protection in Windows 7 to attempt to recover your local files and folders.
 
 **Notes**:
 
@@ -144,15 +144,17 @@ Key information from Microsoft:
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
-- [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
 
 Microsoft 365:
 
 - [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [Protect your Windows PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
 
 Microsoft 365 Defender:
 
@@ -161,6 +163,7 @@ Microsoft 365 Defender:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
@@ -174,6 +177,14 @@ Microsoft Cloud App Security:
 Microsoft Security team blog posts:
 
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+
+- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommendations and best practices.
+
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.

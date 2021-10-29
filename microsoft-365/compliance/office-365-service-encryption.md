@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 10/3/2019
-localization_priority: None
+ms.localizationpriority: null
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise

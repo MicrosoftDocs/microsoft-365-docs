@@ -2,15 +2,13 @@
 title: Ensure your devices are configured properly
 description: Properly configure devices to boost overall resilience against threats and enhance your capability to detect and respond to attacks.
 keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: lomayor
 author: lomayor
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -51,9 +49,9 @@ In doing so, you benefit from:
 
 ## Enroll devices to Intune management
 
-Device configuration management works closely with Intune device management to establish the inventory of the devices in your organization and the baseline security configuration. You will be able to track and manage configuration issues on Intune-managed Windows 10 devices.
+Device configuration management works closely with Intune device management to establish the inventory of the devices in your organization and the baseline security configuration. You will be able to track and manage configuration issues on Intune-managed Windows devices.
 
-Before you can ensure your devices are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows 10 devices. For more information about Intune enrollment options, read about [setting up enrollment for Windows devices](/intune/windows-enroll).
+Before you can ensure your devices are configured properly, enroll them to Intune management. Intune enrollment is robust and has several enrollment options for Windows devices. For more information about Intune enrollment options, read about [setting up enrollment for Windows devices](/intune/windows-enroll).
 
 > [!NOTE]
 > To enroll Windows devices to Intune, administrators must have already been assigned licenses. [Read about assigning licenses for device enrollment](/intune/licenses-assign).

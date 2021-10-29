@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdo
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid:

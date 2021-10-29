@@ -2,14 +2,14 @@
 title: Manually submit messages to Microsoft for analysis
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1

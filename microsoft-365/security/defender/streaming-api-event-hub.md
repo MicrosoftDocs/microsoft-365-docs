@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -66,7 +66,9 @@ Once the Event Hub namespace is created you will need to:
 
    ![Image of Event Hub resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
-8. Choose the events you want to stream and click **Save**.
+8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
+
+9. Choose the events you want to stream and click **Save**.
 
 ## The schema of the events in Azure Event Hub
 
@@ -114,6 +116,7 @@ To get the data types for event properties do the following:
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
+- [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hub documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)

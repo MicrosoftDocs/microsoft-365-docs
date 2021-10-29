@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -90,5 +90,5 @@ You must be a global admin to perform these steps.
 ## Related content
 
 [Buy a custom domain using Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Manage domains](../get-help-with-domains/index.yml) (link page)\
+[Manage domains](/admin) (link page)\
 [Domains FAQ](../setup/domains-faq.yml) (article)

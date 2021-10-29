@@ -11,7 +11,7 @@ ms.topic: reference
 f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -29,7 +29,7 @@ An eDiscovery search that you run from the Microsoft 365 compliance center autom
   
 - The file type is unrecognized or unsupported for indexing.
 
-- Messages have an attached file without a valid handler, such as image files; this is the most common cause of partially indexed email items.
+- Messages have an attached file that can't be opened, such as image files; this is the most common cause of partially indexed email items.
 
 - The file type is supported for indexing but an indexing error occurred for a specific file.
 
@@ -104,7 +104,7 @@ As a workaround for this limitation, we recommend the following procedure.
 
 1. Create and run a search using a search query that meets your requirements and returns the desired results.
 
-2. Export the results of the search from step 1, but don't include partially indexed items in the export. To do this, you would select the **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.
+2. Export the results of the search from step 1, but don't include partially indexed items in the export. To do this, you would select the **All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.<sup>1</sup>
 
    ![Export output options.](../media/ExportOutputOptions.png)
 
@@ -114,14 +114,18 @@ As a workaround for this limitation, we recommend the following procedure.
    ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
    ```
   
-   Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.
+   Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
 
 4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.
 
-> [!NOTE]
-> In the previous procedure, you can export the actual search results or only export a report.
+   > [!NOTE]
+   > <sup>1</sup> The output of step 2 results in exporting indexed items only.<br/>
+   > <sup>2</sup> The condition used in step 3 identifies only items with indexing errors that fall within the specified date range. It doesn't return any items that are fully indexed. This means the items exported in step 4 only include unindexed items that fall within the date range. The export doesn't include indexed items. As a result, the combined output of step 2 and step 4 contains all indexed and unindexed items that fall within the specified date range.
 
 Use the second search that you created in step 3 and the corresponding export to view and gain understanding about the partially indexed items that match your original search query. The export from the second search also includes all partially indexed items that were exported so that you can review them if necessary.
+
+> [!TIP]
+> In the previous procedure, you can export the actual search results or only export a report.
 
 ## Indexing limits for messages
 

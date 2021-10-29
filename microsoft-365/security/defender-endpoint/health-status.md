@@ -2,15 +2,13 @@
 title: Investigate agent health issues
 description: Learn about the values returned when running the mdatp health command
 keywords: mdatp health, command, health, status, command, onboarding status
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -36,7 +34,7 @@ The following table provides information on the values returned when you run the
 |---|---|
 |automatic_definition_update_enabled|True if automatic antivirus definition updates are enabled, false otherwise.|
 |cloud_automatic_sample_submission_consent|Current sample submission level. Can be one of the following values: <ul><li>**None**: No suspicious samples are submitted to Microsoft.</li><li>**Safe**: Only suspicious samples that do not contain personally identifiable information (PII) are submitted automatically. This is the default value for this setting.</li><li>**All**: All suspicious samples are submitted to Microsoft.</li></ul>|
-|cloud_diagnostic_enabled|True if optional diagnostic data collection is enabled, false otherwise. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows 10, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
+|cloud_diagnostic_enabled|True if optional diagnostic data collection is enabled, false otherwise. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576).|
 |cloud_enabled|True if cloud-delivered protection is enabled, false otherwise.|
 |conflicting_applications|List of applications that are possibly conflicting with Microsoft Defender for Endpoint. This list includes, but is not limited to, other security products and other applications known to cause compatibility issues.|
 |definitions_status|Status of antivirus definitions.|

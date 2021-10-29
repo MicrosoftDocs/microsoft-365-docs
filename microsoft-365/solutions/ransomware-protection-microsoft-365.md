@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
@@ -77,7 +77,7 @@ Files in SharePoint and OneDrive for Business are protected by:
 
    A complete self-service recovery solution for SharePoint and OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
 
-   To minimize the burden on your security and IT helpdesk staff, train your users on [retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint).
+   To minimize the burden on your security and IT helpdesk staff, train your users on [Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436).
 
 
 For OneDrive and SharePoint files, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
@@ -134,6 +134,13 @@ Here are the five steps of the solution deployed for your Microsoft 365 tenant.
 
 ![Ransomware protection for a Microsoft 365 tenant](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+This solution uses the principles of [Zero Trust](/security/zero-trust/): 
+
+- **Verify explicitly:** Always authenticate and authorize based on all available data points.
+- **Use least privilege access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+- **Assume breach:** Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+
+Unlike conventional intranet access, which trusts everything behind an organization's firewall, Zero Trust treats each sign-in and access as though it originated from an uncontrolled network, whether it's behind the organization firewall or on the Internet. Zero Trust requires protection for the network, infrastructure, identities, endpoints, apps, and data.
 
 ## Microsoft 365 capabilities and features
 
@@ -226,15 +233,17 @@ Key information from Microsoft:
 - [The growing threat of ransomware](https://blogs.microsoft.com/on-the-issues/2021/07/20/the-growing-threat-of-ransomware/), Microsoft On the Issues blog post on July 20, 2021
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
-- [The latest Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/) (see pages 22-24)
-- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+- [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
 
 Microsoft 365:
 
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
 
 Microsoft 365 Defender:
 
@@ -243,6 +252,7 @@ Microsoft 365 Defender:
 Microsoft Azure:
 
 - [Azure Defenses for Ransomware Attack](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
+- [Maximize Ransomware Resiliency with Azure and Microsoft 365](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
@@ -256,6 +266,14 @@ Microsoft Cloud App Security:
 Microsoft Security team blog posts:
 
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+
+- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommendations and best practices.
+
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.

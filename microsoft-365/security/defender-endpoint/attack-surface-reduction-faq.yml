@@ -8,7 +8,7 @@ metadata:
   ms.prod: m365-security
   ms.mktglfcycl: manage
   ms.sitesec: library
-  localization_priority: Normal
+  ms.localizationpriority: medium
   audience: ITPro
   author: martyav
   ms.author: v-maave
@@ -17,6 +17,7 @@ metadata:
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
+  ms.collection: M365-security-compliance
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
