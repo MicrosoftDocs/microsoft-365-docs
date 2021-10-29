@@ -73,10 +73,10 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Security Operator
 - Global Reader
 - Security Reader
-- Compliance Admin
-- Compliance Data Admin
-- Application Admin
-- Cloud Application Admin
+- Compliance Administrator
+- Compliance Data Administrator
+- Application Administrator
+- Cloud Application Administrator
 
 
 > [!NOTE]
