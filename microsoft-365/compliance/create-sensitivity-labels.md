@@ -35,15 +35,9 @@ The global admin for your organization has full permissions to create and manage
 
 ## Create and configure sensitivity labels
 
-1. In your labeling admin center, navigate to sensitivity labels:
-
-    - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection**
-
-        If you don't immediately see this option, first select **Show all**. 
-
-    - Security & Compliance Center:
-        - **Classification** > **Sensitivity labels**
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**.
 
 2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label wizard. 
 
@@ -128,15 +122,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## Publish sensitivity labels by creating a label policy
 
-1. In your labeling admin center, navigate to sensitivity labels:
-
-    - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection**
-
-        If you don't immediately see this option, first select **Show all**. 
-
-    - Security & Compliance Center:
-        - **Classification** > **Sensitivity labels**
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**.
 
 2. Select the **Label policies** tab, and then **Publish labels** to start the Create policy wizard:
 
