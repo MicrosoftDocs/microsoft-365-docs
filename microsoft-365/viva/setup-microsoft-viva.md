@@ -59,9 +59,9 @@ Accelerate skilling and growth – Your employees can easily discover and share 
 
 Balance productivity and well-being – Provides data-driven, privacy-protected insights and actionable recommendations that help everyone in the organization work smarter and achieve balance.
 
-[Overview](https://docs.microsoft.com/viva/insights/personal/teams/viva-teams-app)
+[Overview](https://docs.microsoft.com/viva/insights/introduction)
 
-[Learn how to set it up](https://docs.microsoft.com/viva/insights/personal/setup/deployment-guide)
+[Learn how to set it up](https://docs.microsoft.com/viva/insights/setup/setup-intro)
 
 **Viva Topics**
 
