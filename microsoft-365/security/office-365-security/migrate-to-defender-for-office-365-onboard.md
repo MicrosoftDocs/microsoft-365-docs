@@ -34,7 +34,16 @@ ms.prod: m365-security
 
 Welcome to **Phase 3: Onboard** of your **[migration to Microsoft Defender for Office 365](migrate-to-defender-for-office-365.md)**! This migration phase includes the following steps:
 
-## Step 6: Begin onboarding Security Teams
+1. [Begin onboarding Security Teams](#step-1-begin-onboarding-security-teams)
+2. [(Optional) Exempt pilot users from filtering by your existing protection service](#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)
+3. [Tune spoof intelligence](#step-3-tune-spoof-intelligence)
+4. [Tune impersonation protection and mailbox intelligence](#step-4-tune-impersonation-protection-and-mailbox-intelligence)
+5. [Use data from user submissions to measure and adjust](#step-5-use-data-from-user-submissions-to-measure-and-adjust)
+6. [(Optional) Add more users to your pilot and iterate](#step-6-optional-add-more-users-to-your-pilot-and-iterate)
+7. [Extend Microsoft 365 protection to all users and turn off the SCL=-1 mail flow rule](#step-7-extend-microsoft-365-protection-to-all-users-and-turn-off-the-scl-1-mail-flow-rule)
+8. [Switch your MX records](#step-8-switch-your-mx-records)
+
+## Step 1: Begin onboarding Security Teams
 
 If your organization has a security response team, now is the time to begin integrating Microsoft Defender for Office 365 into your response processes, including ticketing systems. This is an entire topic unto itself, but it's sometimes overlooked. Getting the security response team involved early will ensure that your organization is ready to deal with threats when you switch your MX records. Incident response needs to be well equipped to handle the following tasks:
 
@@ -71,16 +80,16 @@ Permissions in Defender for Office 365 is based on role-based access control (RB
 
 Typically, only a subset of security personnel will need additional rights to download messages directly from user mailboxes. This requires an additional permission that Security Reader does not have by default.
 
-## Step 7: (Optional) Exempt pilot users from filtering by your existing protection service
+## Step 2: (Optional) Exempt pilot users from filtering by your existing protection service
 
 Although this step isn't required, you should consider configuring your pilot users to bypass filtering by your existing protection service. This action allows Defender for Office 365 to handle **all** filtering and protection duties for the pilot users. If you don't exempt your pilot users from your existing protection service, Defender for Office 365 effectively operates only on misses from the other service (filtering messages that have already been filtered).
 
 > [!NOTE]
 > This step is explicitly required if your current protection service provides link wrapping, but you want to pilot Safe Links functionality. Double wrapping of links is not supported.
 
-## Step 8: Tune spoof intelligence
+## Step 3: Tune spoof intelligence
 
-Check the [Spoof intelligence insight](learn-about-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email/domain authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask the issue.
+Check the [Spoof intelligence insight](learn-about-spoof-intelligence.md) to see what's being allowed or blocked as spoofing, and to determine if you need to override the system verdict for spoofing. Some sources of your business-critical email might have incorrectly configured email authentication records in DNS (SPF, DKIM, and DMARC) and you might be using overrides in your existing protection service to mask their domain issues.
 
 Spoof intelligence can rescue email from domains without proper email authentication records in DNS, but the feature sometimes needs assistance in distinguishing good spoofing from bad spoofing. Focus on the following types of message sources:
 
@@ -90,7 +99,7 @@ Spoof intelligence can rescue email from domains without proper email authentica
 
 Spoof intelligence will eventually tune itself after you configure user submissions, so there is no need for perfection.
 
-## Step 9: Tune impersonation protection and mailbox intelligence
+## Step 4: Tune impersonation protection and mailbox intelligence
 
 After you've had enough time to observe the results of impersonation protection in **Don't apply any action** mode, you can individually turn on each impersonation protection action in the anti-phishing policies:
 
@@ -117,7 +126,7 @@ To modify the policies, see [Configure anti-phishing policies in Defender for Of
 
 After you've observed the results and made any adjustments, proceed to the next section to quarantine messages detected by user impersonation.
 
-### Tune user impersonation
+### Tune user impersonation protection
 
 In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated user** to **Quarantine the message**.
 
@@ -127,7 +136,7 @@ To modify the policies, see [Configure anti-phishing policies in Defender for Of
 
 After you've observed the results and made any adjustments, proceed to the next section to quarantine messages detected by domain impersonation.
 
-### Tune domain impersonation
+### Tune domain impersonation protection
 
 In both of your anti-phishing policies based on Standard and Strict settings, change the value of **If message is detected as an impersonated domain** to **Quarantine the message**.
 
@@ -137,7 +146,7 @@ To modify the policies, see [Configure anti-phishing policies in Defender for Of
 
 Observe the results and make any adjustments as necessary.
 
-## Step 10: Use data from user submissions to measure and adjust
+## Step 5: Use data from user submissions to measure and adjust
 
 As your pilot users report false positives and false negatives, the messages will appear on the [Submissions page in the Microsoft 365 Defender portal](admin-submission.md). You can report the misidentified messages to Microsoft for analysis and use the information to adjust the settings and exceptions in your pilot polices as necessary.
 
@@ -152,7 +161,7 @@ Use the following features to monitor and iterate on the protection settings in 
 
 If your organization uses a third-party service for user reports, you can integrate that data into your feedback loop.
 
-## Step 11: (Optional) Add more users to your pilot and iterate
+## Step 6: (Optional) Add more users to your pilot and iterate
 
 As you find and fix issues, you can add more users to the pilot groups (and correspondingly exempt those new pilot users from scanning by your existing protection service as appropriate). The more testing that you do now, the fewer user issues that you'll need to deal with later. This "waterfall" approach allows tuning against larger portions of the organization and gives your security teams time to adjust to the new tools and processes.
 
@@ -165,7 +174,7 @@ As you find and fix issues, you can add more users to the pilot groups (and corr
 
 - It's also a good idea to examine unnecessary overrides. In other words, look at the verdicts that Microsoft 365 would have provided on the messages. If Microsoft365  rendered the correct verdict, then the need for override is greatly diminished or eliminated.
 
-## Step 12: Extend Microsoft 365 protection to all users and turn off the SCL=-1 mail flow rule
+## Step 7: Extend Microsoft 365 protection to all users and turn off the SCL=-1 mail flow rule
 
 Do the steps in this section when you're ready to switch your MX records to point to Microsoft 365.
 
@@ -182,7 +191,7 @@ Do the steps in this section when you're ready to switch your MX records to poin
 
 You can pause at this stage for more large-scale data recording and tuning.
 
-## Step 13: Switch your MX records
+## Step 8: Switch your MX records
 
 > [!NOTE]
 >
@@ -197,7 +206,7 @@ You can pause at this stage for more large-scale data recording and tuning.
 >   - **and require that the subject name on the certificate that the partner uses to authenticate with Office 365 matches this domain name** (*RestrictDomainsToCertificate*)
 >   - **Reject email messages if they aren't sent from within this IP address range** (*RestrictDomainsToIPAddresses*)
 >
->   If the connectory type is **Partner** and either of these settings is turned on, all mail delivery to your domains will fail after you switch your MX records. You need to disable these settings before you continue.
+>   If the connector type is **Partner** and either of these settings are turned on, all mail delivery to your domains will fail after you switch your MX records. You need to disable these settings before you continue.
 >
 >   If the connector is an on-premises connector that's used for hybrid, you don't need to modify the on-premises connector. But, you can still check for the presence of a **Partner** connector.
 
