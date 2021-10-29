@@ -15,7 +15,6 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure other providers as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Add other content providers for Microsoft Viva Learning
@@ -52,7 +51,7 @@ Third-party content sources are not enabled by default. To enable these sources,
 3. Fill in your details.
 
 >[!NOTE]
->Available content providers and learning management systems are subject to change.
+>Available content providers and learning management systems are subject to change. Depending on your organization, you may have access to more content providers and learning management systems than are listed here.
 
 ## Content ingestion errors
 
@@ -61,13 +60,13 @@ If you experience any errors in your Microsoft 365 admin center during content i
 |Content provider |Error code |Error code description |
 |:----------------|:----------|:----------------------|
 |All providers |USR_ERROR_INVALID_RESOURCE_CREDENTIALS |The authentication credentials you provided are Invalid. Make sure you enter the correct credentials. You can contact Microsoft customer support for more details. |
-|All providers |USR_ERROR_ACCESS_DENIED |Access denied by partner. Confirm that the credentials you entered are correct or contact the content provider’s support team. |
+|All providers |USR_ERROR_ACCESS_DENIED |Access denied by partner. Confirm that the credentials you entered are correct or contact the content provider's support team. |
 |SuccessFactors |USR_ERROR_SFTP_NO_FILES_FOUND |No new content ingested because there were no files present in the SuccessFactors SFTP server. |
 |SuccessFactors |USR_ERROR_SF_PACKAGE_NOT_FOUND |No new content ingested as the required package was not found in the SuccessFactors SFTP server. |
 |Cornerstone OnDemand |USR_ERROR_INVALID_RESOURCE_CREDENTIALS |The authentication credentials you provided are Invalid. Make sure the credentials are being copied from Microsoft Viva Learning in Cornerstone OnDemand portal. |
 
 ## Content consumption for end users
 
-Once you’ve added a content provider as a content source from the Microsoft 365 admin center, content from the provider will flow to the Viva Learning app and will be visible to end users.
+Once you've added a content provider as a content source from the Microsoft 365 admin center, content from the provider will flow to the Viva Learning app and will be visible to end users.
 
-Once a user chooses to play a course in Viva Learning, they will be directed to the content provider’s webpage and will need to enter the login credentials on the provider’s sign in page. [Learn more about how to consume content with Viva Learning](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a).
+Once a user chooses to play a course in Viva Learning, they will be directed to the content provider's webpage and will need to enter the login credentials on the provider's sign in page. [Learn more about how to consume content with Viva Learning](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a).
