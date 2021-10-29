@@ -63,7 +63,7 @@ These templates are currently available for preview. Preview templates are consi
 - FedRAMP High for Azure (Preview)
 - FedRAMP High for Dynamics 365 (Preview)
 - SOC 2 for Azure (Preview)
-- SOC 2 for Dynamics (Preview)
+- SOC 2 for Dynamics 365 (Preview)
 - ISO 27018:2019 for Azure (Preview)
 - ISO 27018:2019 for Dynamics 365 (Preview)
 
