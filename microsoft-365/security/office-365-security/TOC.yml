@@ -132,9 +132,9 @@
          href: migrate-to-defender-for-office-365.md
        - name: "Migrate Phase 1: Prepare"
          href: migrate-to-defender-for-office-365-prepare.md
-       - name: "Migrate Phase 2: Onboard"
+       - name: "Migrate Phase 2: Setup"
          href: migrate-to-defender-for-office-365-setup.md
-       - name: "Migrate Phase 3: Deploy"
+       - name: "Migrate Phase 3: Onboard"
          href: migrate-to-defender-for-office-365-onboard.md
    - name: Prevent
      items: 
