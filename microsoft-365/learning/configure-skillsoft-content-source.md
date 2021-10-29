@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,13 +15,9 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Skillsoft as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
 ---
 
 # Configure Skillsoft as a content source for Microsoft Viva Learning
-
->[!NOTE]
->This feature is not supported in preview.
 
 This article shows you how to configure Skillsoft as a third-party learning content source in Viva Learning.
 
@@ -41,7 +37,5 @@ You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for
 2. Navigate to **Settings** > **Org settings**. Search for Viva Learning and enable Skillsoft from the options.
 
 3. Fill in the configuration details you got from your Skillsoft account team.
-
-    <!--![Image of Organization ID and Service Account Key.](../media/learning/skillsoft-1.png)-->
 
 4. Select **Save** to save the configuration details and complete the setup process.
