@@ -39,4 +39,4 @@ Microsoft 365 Defender can display date and time information using either your l
 To set the time zone for these features, go to **Settings** > **Microsoft 365 Defender** > **Time zone**.
 
 > [!NOTE]
-> Aadvanced hunting query results keeps date and time information in UTC regardless of the Time zone setting. 
+> Advanced hunting keeps the date and time information of query results in UTC regardless of the time zone setting. 
