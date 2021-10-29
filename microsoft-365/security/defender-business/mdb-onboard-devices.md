@@ -45,7 +45,8 @@ Review the scenarios listed in the following table and what to expect. Then proc
 
 ## Step 2: Choose an onboarding process
 
-If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
+> [!NOTE]
+> If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
 
 If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose from several onboarding processes in Defender for Business. The following table summarizes these processes.
 
