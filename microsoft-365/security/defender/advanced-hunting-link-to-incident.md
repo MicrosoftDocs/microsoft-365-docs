@@ -50,23 +50,23 @@ The link to incident feature lets you add advanced hunting query results to a ne
 
     ![Image showing event details showing link to existing](../../media/link-to-incident-3-link-to-existing.png)
 4. For either selection, provide the following details, then select **Next**:
-      - Alert title - provide a descriptive title for the results that your incident responders can understand. This becomes the alert title.
-      - Severity - Choose the severity applicable to the group of alerts.
-      - Category - Choose the appropriate threat category for the alerts.
-      - Description - Give a helpful description for the grouped alerts.
-      - Recommended actions - Provide remediation actions.
+      - **Alert title** - provide a descriptive title for the results that your incident responders can understand. This becomes the alert title.
+      - **Severity** - Choose the severity applicable to the group of alerts.
+      - **Category** - Choose the appropriate threat category for the alerts.
+      - **Description** - Give a helpful description for the grouped alerts.
+      - **Recommended actions** - Provide remediation actions.
 
-5. In the Impacted entities section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, we used a query to find events related to a possible email exfiltration incident, therefore the Sender is the impacted entity. If there are four different senders, for instance, four alerts are created and linked to the chosen incident. 
+5. In the **Impacted entities** section, select the main affected or impacted entity. Only the applicable entities based on the query results appear in this section. In our example, we used a query to find events related to a possible email exfiltration incident, therefore the Sender is the impacted entity. If there are four different senders, for instance, four alerts are created and linked to the chosen incident. 
      ![Image showing impacted entities](../../media/link-to-incident-4-impacted-entities.png)   
 6. Select **Next**.
-7. Review the details you have provided in the Summary section.
+7. Review the details you have provided in the **Summary** section.
      ![Image showing summary](../../media/link-to-incident-5-summary.png) 
 8. Select **Done**.
 
 ## View linked records in the incident
 
 You can select the incident name to view the incident that the events are linked to.
-     ![Image showing incident page with linked alerts](../../media/link-to-incident-6-incident-page.png) 
+     ![Image showing incident page with linked alerts](../../media/link-to-incident-6-incident-pg.png) 
 
 In our example, the four alerts, representing the four selected events, were linked successfully to a new incident. 
 
