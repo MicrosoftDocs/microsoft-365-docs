@@ -84,53 +84,36 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
   
 ## Which activity reports are available in the admin center
 
-Depending on your subscription, here are the available reports.
+Depending on your subscription, here are the available reports in all environments.
 
-- [Microsoft browser usage](browser-usage-report.md) 
-  
-- [Email activity](email-activity-ww.md)
-    
-- [Mailbox usage](mailbox-usage.md)
-    
-- [Office activations](microsoft-office-activations-ww.md)
+|**Report**|**Public**|**GCC**|**GCC-High**|**DoD**|**Office 365 operated by 21Vianet**|
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|[Microsoft browser usage](browser-usage-report.md)|Yes|No[^1]|No[^1]|No[^1]|No[^1]|
+|[Email activity](email-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Email apps usage](email-apps-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Mailbox usage](mailbox-usage.md)|Yes|Yes|Yes|Yes|Yes|
+|[Office activations](microsoft-office-activations-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Active Users](active-users-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft 365 groups](office-365-groups-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)|Yes|Yes|No[^1]|No[^1]|No[^1]|
+|[OneDrive for Business user activity](onedrive-for-business-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[OneDrive for Business usage](onedrive-for-business-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[SharePoint site usage](sharepoint-site-usage-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[SharePoint activity](sharepoint-activity-ww.md)|Yes|Yes|Yes|Yes|Yes|
+|[Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
+|[Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)|Yes|Yes|Yes|Yes|N/A[^2]|
+|[Yammer activity](yammer-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Yammer device usage](yammer-device-usage-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Yammer groups activity report](yammer-groups-activity-report-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Forms activity](forms-activity-ww.md)|Yes|Yes|No[^1]|No[^1]|No[^1]|
+|[Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)|Yes|Yes|N/A[^2]|N/A[^2]|N/A[^2]|
+|[Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
+|[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
 
-- [Active Users](active-users-ww.md)
-  
-- [Email apps usage](email-apps-usage-ww.md)
-
-- [Forms activity](forms-activity-ww.md)
-
-- [Dynamics 365 Customer Voice activity](forms-pro-activity-ww.md)
-
-- [Microsoft 365 groups](office-365-groups-ww.md)
-  
-- [OneDrive for Business user activity](onedrive-for-business-activity-ww.md)
-
-- [OneDrive for Business usage](onedrive-for-business-usage-ww.md)
-
-- [Microsoft 365 Apps usage](microsoft365-apps-usage-ww.md)
-  
-- [SharePoint site usage](sharepoint-site-usage-ww.md)
-  
-- [SharePoint activity](sharepoint-activity-ww.md)
-  
-- [Skype for Business Online activity](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
-  
-- [Skype for Business Online conference organized activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-organizer-activity-report)
-  
-- [Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)
-  
-- [Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)
-
-- [Yammer activity](yammer-activity-report-ww.md)
-
-- [Yammer device usage](yammer-device-usage-report-ww.md)
-
-- [Yammer groups activity report](yammer-groups-activity-report-ww.md)
-
-- [Microsoft Teams user activity](microsoft-teams-user-activity-preview.md)
-
-- [Microsoft Teams device usage](microsoft-teams-device-usage-preview.md)
+[^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
+[^2]: The service is not available in the environment so no plan to release the report.
 
 ## How to view licensing information
 
@@ -158,14 +141,6 @@ Your user list will look like this:
 If you want to unhide user-level information when you're generating your reports, a **global administrator** can quickly make that change in the admin center.
 
 Reports provide information about your organization’s usage data. By default, reports display information with identifiable names for users, groups, and sites. Starting September 1, 2021, we are hiding user information by default for all reports as part of our ongoing commitment to help companies support their local privacy laws.
-
-  
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services &amp; add-ins</a> page.
-
-2. Select **Org Settings** and choose **Services** . 
-  
-3. In the **Reports** pane, select **Choose how to show user information** and  choose **Show identifiable user information in reports**.
-  
 
 Global administrators can revert this change for their tenant and show identifiable user information if their organization's privacy practices allow it. It can be achieved in the Microsoft 365 admin center by following these steps:
   
