@@ -41,7 +41,7 @@ Security operators and admins can go to the following portals to manage security
 | Azure Defender portal | Use [Azure Defender](/azure/security-center/security-center-intro) to strengthen the security posture of your data centers and your hybrid workloads in the cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity portal | Identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions using Active Directory signals with [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security portal | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to get rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats on cloud services | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Microsoft Defender Security Intelligence portal | Get security intelligence updates for Microsoft Defender for Endpoint, submit samples, and explore the threat encyclopedia | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Microsoft Security Intelligence portal | Get security intelligence updates for Microsoft Defender for Endpoint, submit samples, and explore the threat encyclopedia | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## Portals for other workloads
 
