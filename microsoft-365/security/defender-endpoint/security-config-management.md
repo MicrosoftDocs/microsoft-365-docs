@@ -38,30 +38,7 @@ Security Management for Microsoft Defender for Endpoint is a capability for devi
 
 For more information on Security Configuration Management, including prerequisites, supported platforms and more, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
-When devices are managed through this capability:
 
-
-- You use the Microsoft Endpoint Manager admin center to configure endpoint security policies for MDE and assign those policies to Azure AD groups
-- Devices get the policies based on their Azure Active Directory device object. A device that isn’t already present in Azure Active Directory is joined as part of this solution
-- When a device receives a policy, the Defender for Endpoint components on the device enforce the policy and report on the devices status. The device's status is available in the Microsoft Endpoint Manager admin center
-
-
-> [!NOTE]
-> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
-
-The following diagram is a conceptual representation of the Microsoft Defender for Endpoint security configuration management solution.
-
-:::image type="content" alt-text="Conceptual representation of the MDE security configuration management solution" source="images/mde-architecture.png":::
-
-
-1. Devices onboard to MDE.
-
-2. A trust is established between each device and Azure AD. When a device has an existing trust, that is used. When devices haven't registered, a new trust is created.
-
-
-3. Devices use their Azure AD Identity to communicate with Endpoint Manager. This identity enables Microsoft Endpoint Manager to distribute policies that are targeted to the devices when they check in.
-
-4. Defender for Endpoint reports the status of the policy back to Endpoint Manager.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/security-config-mgt-prerequisites.md)]
 

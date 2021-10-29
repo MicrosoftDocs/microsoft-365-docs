@@ -57,7 +57,33 @@ To use security management for Microsoft Defender for Endpoint, you need:
 
   *Any subscription* that grants Microsoft Defender for Endpoint licenses also grants your tenant access to the Endpoint security node of the Microsoft Endpoint Manager admin center. The Endpoint security node is where you'll configure and deploy policies to manage Microsoft Defender for Endpoint for your devices and monitor device status.
 
+## Architecture
 
+When devices are managed through this capability:
+
+
+- You use the Microsoft Endpoint Manager admin center to configure endpoint security policies for Microsoft Defender for Endpoint and assign those policies to Azure AD groups
+- Devices get the policies based on their Azure Active Directory device object. A device that isn't already present in Azure Active Directory is joined as part of this solution
+- When a device receives a policy, the Defender for Endpoint components on the device enforce the policy and report on the devices status. The device's status is available in the Microsoft Endpoint Manager admin center
+
+
+> [!NOTE]
+> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
+
+The following diagram is a conceptual representation of the Microsoft Defender for Endpoint security configuration management solution.
+
+
+:::image type="content" alt-text="Conceptual representation of the Microsoft Defender for Endpoint security configuration management solution" source="../security/defender-endpoint/images/mde-architecture.png":::
+
+
+1. Devices onboard to Microsoft Defender for Endpoint.
+
+2. A trust is established between each device and Azure AD. When a device has an existing trust, that is used. When devices haven't registered, a new trust is created.
+
+
+3. Devices use their Azure AD Identity to communicate with Endpoint Manager. This identity enables Microsoft Endpoint Manager to distribute policies that are targeted to the devices when they check in.
+
+4. Defender for Endpoint reports the status of the policy back to Endpoint Manager.
 
 ## Configure your tenant to support Microsoft Defender for Endpoint Security Configuration Management
 
