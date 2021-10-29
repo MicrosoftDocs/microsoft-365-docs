@@ -102,7 +102,7 @@ User accounts have two sources:
 
 - Windows Server Active Directory (AD), which are accounts that sync from on-premises AD to the cloud.
 
-- Azure Active Directory (Azure AD) AD accounts, which are created directly in the cloud.
+- Azure Active Directory (Azure AD) accounts, which are created directly in the cloud.
 
 You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
 
