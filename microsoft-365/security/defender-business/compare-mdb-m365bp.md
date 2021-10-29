@@ -56,4 +56,5 @@ The following table compares security features and capabilities in Defender for 
 ## Next steps
 
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
+
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) 
