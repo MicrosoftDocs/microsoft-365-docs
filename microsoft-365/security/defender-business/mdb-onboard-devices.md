@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -34,7 +34,7 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## Step 1: Identify your security and device management path
 
-Review the scenarios listed in the following table, and identify the path that best meets your company's needs.
+Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
 <br/><br/>
 
 |Scenario  |What to expect  | What to do next |
