@@ -3,8 +3,6 @@ title: Understand the analyst report section in threat analytics.
 ms.reviewer:
 description: How the report section of threat analytics reports provides information about threats, mitigation, detections, advanced hunting queries, and more.
 keywords: analyst report, threat analytics, detections, advanced hunting queries, mitigations,
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

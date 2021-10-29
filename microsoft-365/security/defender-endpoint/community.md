@@ -2,8 +2,6 @@
 title: Access the Microsoft Defender for Endpoint Community Center
 description: Access the Microsoft Defender for Endpoint Community Center to share experiences, engage, and learn about the product.
 keywords: community, community center, tech community, conversation, announcements
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
