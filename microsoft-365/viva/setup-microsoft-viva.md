@@ -26,7 +26,7 @@ Microsoft Viva consists of four modules: Viva Topics, Viva Insights, Viva Learni
 
 To jump right in and starting setting up, you'll have to be a Microsoft admin and be signed in to your account. 
 
-[Go directly to the the Microsoft Viva admin page]("https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/collections/VivaExperiences")
+[Go directly to the the Microsoft Viva admin page](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/collections/VivaExperiences)
 
 At the bottom of the page, select the module you want to set up.
 On the module page, select the Go to Setup Guide button, or in the case of Viva Topics, select the Setup button to go to the Setup wizard that guides you through the process.
@@ -49,34 +49,34 @@ If you want to learn more about each module and how you will set them up first, 
 
 Accelerate skilling and growth – Your employees can easily discover and share everything from training courses to micro-learning content.
 
-[Overview]("https://docs.microsoft.com/en-us/microsoft-365/learning/?view=o365-worldwide")
+[Overview]("ttps://docs.microsoft.com/en-us/microsoft-365/learning/?view=o365-worldwide)
 
-[Learn how to set it up]("https://docs.microsoft.com/en-us/microsoft-365/learning/set-up-teams-admin-center?view=o365-worldwide)
+[Learn how to set it up](https://docs.microsoft.com/en-us/microsoft-365/learning/set-up-teams-admin-center?view=o365-worldwide)
 
 **Viva Insights**
 
 Balance productivity and well-being – Provides data-driven, privacy-protected insights and actionable recommendations that help everyone in the organization work smarter and achieve balance.
 
-[Overview]("https://docs.microsoft.com/en-us/viva/insights/personal/teams/viva-teams-app")
+[Overview](https://docs.microsoft.com/en-us/viva/insights/personal/teams/viva-teams-app)
 
-[Learn how to set it up]("https://docs.microsoft.com/en-us/viva/insights/personal/setup/deployment-guide")
+[Learn how to set it up](https://docs.microsoft.com/en-us/viva/insights/personal/setup/deployment-guide)
 
 **Viva Topics**
 
 Connect people to knowledge – People can easily discover topics of interest within Office apps, SharePoint, and search results.
 
-[Overview]("https://docs.microsoft.com/en-us/microsoft-365/knowledge/)
+[Overview](https://docs.microsoft.com/en-us/microsoft-365/knowledge/)
 
-[Learn how to set it up]("https://docs.microsoft.com/en-us/microsoft-365/knowledge/set-up-topic-experiences")
+[Learn how to set it up](https://docs.microsoft.com/en-us/microsoft-365/knowledge/set-up-topic-experiences)
 
 **Viva Connections**
 
 Inform, engage, and empower -- Microsoft Viva Connections is your gateway to a modern engagement experience designed to keep everyone engaged and informed.
 
-[Overview]("https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview")
+[Overview](https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview)
 
-[Learn how to set it up]("https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview)
+[Learn how to set it up](https://docs.microsoft.com/en-us/sharepoint/viva-connections-overview)
 
 **More information**
 
-[Get additional documentation and ways to learn about Microsoft Viva]("https://docs.microsoft.com/en-us/microsoft-365/viva/?view=o365-worldwide")
+[Get additional documentation and ways to learn about Microsoft Viva](https://docs.microsoft.com/en-us/microsoft-365/viva/?view=o365-worldwide)
