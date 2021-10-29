@@ -232,13 +232,13 @@ If you're not seeing the label or label policy setting behavior that you expect 
 
 ## Sensitivity labels and Azure Information Protection
 
-When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the Azure Information Protection client.
+When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the [Azure Information Protection client](https://www.microsoft.com/en-us/download/details.aspx?id=53018).
 
 Because built-in labels don't use an Office add-in, as used by the Azure Information Protection client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
 By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. To change this default behavior and use built-in labels for your Office apps, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
 
-When you keep the Azure Information Protection unified labeling client installed but disabled in Office apps, you get the benefit of using the Azure Information Protection unified labeling client with sensitivity labels for the following:
+When you keep the Azure Information Protection client installed but disabled in Office apps, you get the benefit of using the Azure Information Protection client with sensitivity labels for the following:
 
 - A scanner to discover sensitive information that's stored on-premises, and then optionally, label that content
 
@@ -248,7 +248,7 @@ When you keep the Azure Information Protection unified labeling client installed
 
 - A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
 
-If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer who has recently migrated your labels, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
+If you are new to Azure Information Protection, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ### Azure Information Protection labels
 
