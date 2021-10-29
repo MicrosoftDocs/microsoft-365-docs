@@ -59,17 +59,6 @@ To use security management for Microsoft Defender for Endpoint, you need:
 
 ## Architecture
 
-When devices are managed through this capability:
-
-
-- You use the Microsoft Endpoint Manager admin center to configure endpoint security policies for Microsoft Defender for Endpoint and assign those policies to Azure AD groups
-- Devices get the policies based on their Azure Active Directory device object. A device that isn't already present in Azure Active Directory is joined as part of this solution
-- When a device receives a policy, the Defender for Endpoint components on the device enforce the policy and report on the devices status. The device's status is available in the Microsoft Endpoint Manager admin center
-
-
-> [!NOTE]
-> This capability does not apply to devices that are already enrolled to Microsoft Endpoint Manager (either Intune or Configuration Manager). Devices enrolled into Intune will continue to receive policies through their established management channel.
-
 The following diagram is a conceptual representation of the Microsoft Defender for Endpoint security configuration management solution.
 
 

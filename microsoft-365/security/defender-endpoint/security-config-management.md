@@ -61,9 +61,6 @@ Use the following steps to validate that your endpoints have successfully comple
 3.  In the [Microsoft Endpoint Manager Admin Center](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview),  verify that the device has successfully been enrolled by looking it up in the **Devices > All devices** section.
 
 
-## Configure security settings
-To configure security settings on devices through Microsoft Endpoint Manager, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-mde-security-configuration-management).
-
 ## Offboard devices
 To offboard devices that have been onboarded via Security Management for Microsoft Defender for Endpoint, see [Offboard devices from the Microsoft Defender for Endpoint service](offboard-machines.md).
 
