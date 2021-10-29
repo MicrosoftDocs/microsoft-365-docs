@@ -28,7 +28,7 @@ For example, you can understand the activity of every user licensed to use Viva 
 
 ## How do I get to the to the Viva Learning activity report?  
 
-1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
+1. In the admin center, go to the **Reports** > **Usage** page. 
 2. From the dashboard homepage, select the **View more** button on the Viva Learning card. 
 
 ## Interpret the Microsoft 365 Apps usage report
