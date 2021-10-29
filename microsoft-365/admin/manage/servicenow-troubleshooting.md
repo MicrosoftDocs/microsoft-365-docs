@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Microsoft 365 support integration wtih ServiceNow"
+title: "Troubleshooting Microsoft 365 support integration with ServiceNow"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Troubleshooting Microsoft 365 support integration wtih ServiceNow
+# Troubleshooting Microsoft 365 support integration with ServiceNow
 
 | \#  | Problem  | Diagnostics action     |
 |-----|--------------------------------|----------------------|
