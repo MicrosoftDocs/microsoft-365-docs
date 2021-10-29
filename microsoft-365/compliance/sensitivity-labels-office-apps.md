@@ -154,7 +154,8 @@ Whichever method you choose, the changes take effect when Office apps restart an
 
 - Labeling in Office apps: Yes, with built-in labeling
 - Scanner for on-premises data repositories: Yes, with the Azure Information Protection client
-- Scanner for on-premises data repositories: Yes, with the Azure Information Protection client
+- Right-click options in File Explorer to apply labels to all file types: Yes, with the Azure Information Protection client
+- Viewer to display encrypted files for text, images, or PDF documents: Yes, with the Azure Information Protection client
 - Labeling and discovery with PowerShell: Yes, with the Azure Information Protection client
 
 For detailed information about which features are supported by the Azure Information Protection clients and the Office built-in labeling client, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
