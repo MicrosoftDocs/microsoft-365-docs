@@ -338,6 +338,9 @@ When you configure the locations for this option, you can select:
 
 You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
 
+> [!NOTE]
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete settings as your retention policies for Exchange and Teams. In addition, configure the label retention setting **Start the retention period based on** to be **When items were labeled**.
+
 To consider when auto-applying retention labels to cloud attachments:
 
 - Only newly shared cloud attachments will be auto-labeled for retention.
@@ -347,12 +350,10 @@ To consider when auto-applying retention labels to cloud attachments:
 - The following items aren't supported as cloud attachments that can be retained:
     - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
     - Files shared by users who don't have access to those files.
-    - Files that are deleted before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available.
+    - Files that are deleted before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
     - Files that are shared by guests or users outside your organization.
+    - Files in draft emails and messages that aren't sent.
     - Empty files.
-
-> [!TIP]
-> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete settings as your retention policies for Exchange and Teams. In addition, configure the label retention setting **Start the retention period based on** to be **When items were labeled**.
 
 ## How long it takes for retention labels to take effect
 
