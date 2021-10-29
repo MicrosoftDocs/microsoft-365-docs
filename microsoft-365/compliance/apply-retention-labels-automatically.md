@@ -314,7 +314,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 #### Auto-apply labels to cloud attachments
 
 > [!NOTE]
-> This option is gradually rolling out in preview and subject to change.
+> This option is gradually rolling out in preview.
 > 
 > During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts and configure this retention policy to retains items for one day, starting the retention period when the content was last modified.
 
@@ -322,7 +322,7 @@ You might need to use this option if you're required to capture and retain all c
 
 Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. Use the [visual checklist](article) to help you identify what are and aren't cloud attachments.
 
-When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Holds library. The retention label is not applied to the message itself, or to the original file.
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
