@@ -129,6 +129,9 @@ To confirm that Enhanced Filtering for Connectors is working, verify that incomi
 
 By creating production policies, even if they aren't applied to all users, you can test post-breach features like [Threat Explorer](threat-explorer.md) and test integrating Defender for Office 365 into your security response team's processes.
 
+> [!IMPORTANT]
+> Policies can be scoped to users, groups, or domains. We do not recommend mixing the three, as only users that match the conditions from all three will fall inside the scope of the policy. For pilot policies, we recommend using groups or users. For production policies, we recommend using domains. It is extremely important to note that only the user's primary domain will determine if that user falls inside the scope of the policy. So if you switch the MX for a user's secondary domain, make sure that their primary domain is also covered by a policy. 
+
 ### Create pilot Safe Attachments policies
 
 [Safe Attachments](safe-attachments.md) is the easiest Defender for Office 365 feature to enable and test before you switch your MX record. Safe Attachments has the following benefits:
@@ -141,6 +144,9 @@ Create a Safe Attachments policy for your pilot users.
 
 For the recommended settings, see [Recommended Safe Attachments policy settings](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Attachments policies](set-up-safe-attachments-policies.md). Be sure to use the group **MDOPilot\_SafeAttachments** as the condition of the policy (who the policy applies to).
 
+> [!IMPORTANT]
+> Today, there is no default Safe Attachments policy. Prior to switching any MX records, we recommend that you have a policy that protects the entire organization.
+
 ### Create pilot Safe Links policies
 
 > [!NOTE]
@@ -148,9 +154,12 @@ For the recommended settings, see [Recommended Safe Attachments policy settings]
 >
 > Safe Links protection for supported Office apps is a global setting that applies to all licensed users. You can turn it on or turn it off globally, not for specific users. For more information, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
-Create a Safe Links policy for your pilot users. Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments.
+Create a Safe Links policy for your pilot users. Chances for false positives in Safe Links are also pretty low, but you should consider testing the feature on a smaller number of pilot users than Safe Attachments. Because the feature impacts user experience, you may want to plan to educate users.
 
 For the recommended settings, see [Recommended Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-settings). Note that the Standard and Strict recommendations are the same. To create the policy, see [Set up Safe Links policies](set-up-safe-links-policies.md). Be sure to use the group **MDOPilot\_SafeLinks** as the condition of the policy (who the policy applies to).
+
+> [!IMPORTANT]
+> Today, there is no default Safe Links policy. Prior to switching any MX records, we recommend that you have a policy that protects the entire organization.
 
 ### Create pilot anti-spam policies
 
@@ -170,7 +179,7 @@ Create two anti-phishing policies for pilot users:
 
 For spoof detections, the recommended Standard action is **Move message to the recipients' Junk Email folders**, and the recommended Strict action is **Quarantine the message**. Use the spoof intelligence insight to observe the results. Overrides are explained in the next section. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-For impersonation detections, ignore the recommended Standard and Strict actions. Instead, use the value **Don't apply any action** for the following settings:
+For impersonation detections, ignore the recommended Standard and Strict actions for the pilot. Instead, use the value **Don't apply any action** for the following settings:
 
 - **If message is detected as an impersonated user**
 - **If message is detected as impersonated domain**
