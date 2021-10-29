@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
@@ -134,6 +134,13 @@ Here are the five steps of the solution deployed for your Microsoft 365 tenant.
 
 ![Ransomware protection for a Microsoft 365 tenant](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+This solution uses the principles of [Zero Trust](/security/zero-trust/): 
+
+- **Verify explicitly:** Always authenticate and authorize based on all available data points.
+- **Use least privilege access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+- **Assume breach:** Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+
+Unlike conventional intranet access, which trusts everything behind an organization's firewall, Zero Trust treats each sign-in and access as though it originated from an uncontrolled network, whether it's behind the organization firewall or on the Internet. Zero Trust requires protection for the network, infrastructure, identities, endpoints, apps, and data.
 
 ## Microsoft 365 capabilities and features
 
