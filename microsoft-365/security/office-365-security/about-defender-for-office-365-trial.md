@@ -67,7 +67,7 @@ During the setup of the trial, response functionality that's exclusive to Defend
 
 ## Licensing
 
-As part of the trial setup, the Defender for Office 365 licenses are automatically applied to the organization. The licenses are free of charge for the first 30 days.
+As part of the trial setup, the Defender for Office 365 licenses are automatically applied to the organization. The licenses are free of charge for the first 90 days.
 
 The licensing card for the trial shows the following information:
 
@@ -115,7 +115,7 @@ A: After your trial expires, you'll have access to your trial data (data from fe
 
 ### Q: How many times can I use the Defender for Office 365 trial in my organization?
 
-A: A maximum of 2 times. If your first trial expires, you need to wait at least 30 days after the expiration date before you can enroll in the Defender for Office 365 trial again.
+A: A maximum of 2 times. If your first trial expires, you need to wait at least 30 days after the expiration date before you can enroll in the Defender for Office 365 trial again. After your second trial, you can't enroll in another trial.
 
 ## Learn more about Defender for Office 365
 

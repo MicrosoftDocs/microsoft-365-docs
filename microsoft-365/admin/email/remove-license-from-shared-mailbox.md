@@ -38,7 +38,7 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 > - The shared mailbox is placed in litigation hold.
 > - The shared mailbox has a Microsoft Defender license assigned.
 > 
-> For step-by-step instructions on how to assign licenses, see [Assign licenses to users] (/microsoft-365/admin/manage/assign-licenses-to-users). 
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
 
 
 ## Remove the license
