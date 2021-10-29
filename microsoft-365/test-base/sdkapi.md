@@ -38,9 +38,9 @@ Below is an example of Test Base account creation by using Python SDK.
 
 - Install below required components: 
 
-Azure account with an active subscription if you don’t have a subscription 
-Python 2.7+ or 3.6+ 
-Azure Command-Line Interface (CLI) 
+    Azure account with an active subscription if you don’t have a subscription 
+    Python 2.7+ or 3.6+ 
+    Azure Command-Line Interface (CLI) 
 
 - Install library packages by using pip install from console 
 
