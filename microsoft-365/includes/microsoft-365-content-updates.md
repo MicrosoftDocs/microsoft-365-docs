@@ -189,7 +189,7 @@
 | 10/22/2021 | [Integrate Microsoft Defender for Endpoint with other Microsoft solutions](/microsoft-365/security/defender-endpoint/threat-protection-integration?view=o365-21vianet) | modified |
 | 10/22/2021 | [Threat protection report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/threat-protection-reports?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot problems with attack surface reduction rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr?view=o365-21vianet) | modified |
-| 10/22/2021 | [Collect support logs in Microsoft Defender for Endpoint using live response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-21vianet) | modified |
+| 10/22/2021 | [Collect support logs in Microsoft Defender for Endpoints using live response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot Microsoft Defender for Endpoint live response issues](/microsoft-365/security/defender-endpoint/troubleshoot-live-response?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot Microsoft Defender for Endpoint service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot problems with Network protection](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-21vianet) | modified |
@@ -1161,7 +1161,7 @@
 | 9/23/2021 | [Test how Microsoft Defender for Endpoint features work in audit mode](/microsoft-365/security/defender-endpoint/audit-windows-defender?view=o365-21vianet) | modified |
 | 9/23/2021 | [Cloud protection and sample submission in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission?view=o365-21vianet) | modified |
 | 9/23/2021 | [Cloud protection and Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 9/23/2021 | [Collect diagnostic data for Update Compliance and Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/collect-diagnostic-data-update-compliance?view=o365-21vianet) | modified |
+| 9/23/2021 | [Collect diagnostic data for Update Compliance and Windows Defender Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/collect-diagnostic-data-update-compliance?view=o365-21vianet) | modified |
 | 9/23/2021 | [Collect diagnostic data of Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/collect-diagnostic-data?view=o365-21vianet) | modified |
 | 9/23/2021 | [Use the command line to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-21vianet) | modified |
 | 9/23/2021 | [Common mistakes to avoid when defining exclusions](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus?view=o365-21vianet) | modified |
