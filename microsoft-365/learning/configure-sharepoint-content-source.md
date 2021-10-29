@@ -15,7 +15,6 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to add SharePoint as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -48,7 +47,7 @@ If you're using [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-36
 
 Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning. Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
-Content deletion from your organization’s repository is not currently supported.
+Content deletion from your organization's repository is not currently supported.
 
 To remove unintentionally surfaced content, follow these steps:
 
@@ -62,7 +61,7 @@ For more information, see [Sharing and permissions in the SharePoint modern expe
 
 ## Learning Service
 
-The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization’s content within Viva Learning. All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
+The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization's content within Viva Learning. All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
 
 ## Configure SharePoint as a source
 
@@ -134,7 +133,7 @@ To add a **Description** column to the document library page, follow these steps
 
 ### Provide your own organization's content
 
-Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning.
+Knowledge admins can access their organization's Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning.
 
 1. In Viva Learning, select the ellipses (**...**), and then select **Settings**.
 
@@ -144,7 +143,7 @@ Knowledge admins can access their organization’s Learning App Content Reposito
 
      ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
-3. Select **Check access** to connect to your organization’s centralized library.
+3. Select **Check access** to connect to your organization's centralized library.
 
 ## Next step
 
