@@ -39,7 +39,8 @@ To get access to this feature, you must register your tenant with Microsoft. See
 ## Before you begin
 
 - Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
-- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) 
+- Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
+- Install the v95+ Edge browser on your macOS devices 
 
 
 <!--- Edge browser v93 and higher installed.-->

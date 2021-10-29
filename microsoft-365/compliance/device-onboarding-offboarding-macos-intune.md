@@ -39,6 +39,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 - Make sure you have access to the [Microsoft Endpoint Manager center](https://endpoint.microsoft.com/#home).
 - This supports macOS version Catalina 10.15 and higher.
 - Create the user groups that you are going to assign the configuration updates to.
+- Install the v95+ Edge browser on your macOS devices 
 
 
 ## Onboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune
@@ -54,7 +55,7 @@ Onboarding a macOS device into Compliance solutions is a six phase process.
 
 ### Create system configuration profiles
 
-1. For this procedure, you'll need these files
+1. You'll need these files for this procedure.
 
 |file needed for |source |
 |---------|---------|
