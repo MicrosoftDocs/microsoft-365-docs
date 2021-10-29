@@ -315,8 +315,6 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 > [!NOTE]
 > This option is gradually rolling out in preview.
-> 
-> During the preview, we recommend you also configure a retention policy for all SharePoint sites and all OneDrive accounts and configure this retention policy to retains items for one day, starting the retention period when the content was last modified.
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 
