@@ -1,6 +1,6 @@
 ---
 title: Prerequisite work for implementing identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
-description: This article describes the prerequisites you need to meet to use identity and device access policies and configurations.
+description: This article describes the prerequisites you need to meet to use Zero Trust identity and device access policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -21,18 +21,18 @@ ms.collection:
 ms.technology: mdo
 ---
 
-# Prerequisite work for implementing identity and device access policies
+# Prerequisite work for implementing Zero Trust identity and device access policies
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - Azure
 
-This article describes the prerequisites admins must meet to use recommended identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
+This article describes the prerequisites admins must meet to use recommended Zero Trust identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
 
 ## Prerequisites
 
-Before using the identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
+Before using the Zero Trust identity and device access policies that are recommended, your organization needs to meet prerequisites. The requirements are different for the various identity and authentication models listed:
 
 - Cloud-only
 - Hybrid with password hash sync (PHS) authentication
@@ -95,7 +95,7 @@ The following clients are recommended when a secure documents policy has been ap
 |Platform|Word/Excel/PowerPoint|OneNote|OneDrive App|SharePoint App|[OneDrive sync client](/onedrive/enable-conditional-access)|
 |---|---|---|---|---|---|
 |Windows 8.1|Supported|Supported|N/A|N/A|Supported|
-|Windows 10|Supported|Supported|N/A|N/A|Supported|
+|Windows 11 or Windows 10|Supported|Supported|N/A|N/A|Supported|
 |Android|Supported|Supported|Supported|Supported|N/A|
 |iOS|Supported|Supported|Supported|Supported|N/A|
 |macOS|Supported|Supported|N/A|N/A|Not supported|
@@ -126,4 +126,4 @@ Here are some additional recommendations:
 
 [![Step 2: Configure the common identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 
-[Configure the common identity and device access policies](identity-access-policies.md)
+[Configure the common Zero Trust identity and device access policies](identity-access-policies.md)

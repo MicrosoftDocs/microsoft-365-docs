@@ -26,7 +26,7 @@ ms.technology: mdo
 
 This article describes how to implement the recommended identity and device-access policies to protect Microsoft Teams chats, groups, and content such as files and calendars. This guidance builds on the [common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
-These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: baseline, sensitive, and highly regulated. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: starting point, recommended, and highest security. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
 
 More recommendations specific to Teams deployment are included in this article to cover specific authentication circumstances, including for users outside your organization. You will need to follow this guidance for a complete security experience.
 

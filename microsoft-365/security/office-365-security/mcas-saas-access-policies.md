@@ -38,7 +38,7 @@ You can begin to manage these by doing the following:
 1. First, in Azure AD, create a new conditional access policy and configure it to "Use Conditional Access App Control." This redirects the request to Cloud App Security. You can create one policy and add all SaaS apps to this policy.
 1. Next, in Cloud App Security, create session policies. Create one policy for each control you want to apply.
 
-Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Cloud App Security policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection.
+Permissions to SaaS apps are typically based on business need for access to the app. These permissions can be highly dynamic. Using Cloud App Security policies ensures protection to app data, regardless of whether users are assigned to an Azure AD group associated with starting point, recommended, or highest security protection.
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Cloud App Security. In this example, the policies created in Cloud App Security apply to all SaaS apps you are managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 

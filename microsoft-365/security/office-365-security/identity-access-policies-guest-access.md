@@ -25,7 +25,7 @@ ms.technology: mdo
 
 This article discusses adjusting the recommended device and identity access policies to allow access for guests and external users that have an Azure Active Directory (Azure AD) Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
-These recommendations are designed to apply to the **baseline** tier of protection. But you can also adjust the recommendations based on your specific needs for **sensitive** and **highly regulated** protection.
+These recommendations are designed to apply to the **starting point** tier of protection. But you can also adjust the recommendations based on your specific needs for **recommended** and **highest security** protection.
 
 Providing a path for B2B accounts to authenticate with your Azure AD tenant doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources, like files, shared with them by Conditional Access policy.
 

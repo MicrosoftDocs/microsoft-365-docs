@@ -18,6 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-identitydevice
   - m365solution-overview
+  - m365solution-zero-trust
 ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations
@@ -114,15 +115,15 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 - **Starting point**: We recommend all customers establish and use a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these recommendations to provide strong default protection as a starting point for all organizations.
 - **Recommended**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
-- **Highest security**: A few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
+- **Highest security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
 
 ![Security cone - All customers > Some customers > A few customers](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
-This guidance shows you how to implement protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
+This guidance shows you how to implement Zero Trust protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
 
 It's important to use consistent levels of protection across your identities, devices, and data. For example, protection for users with priority accounts&mdash;such as executives, leaders, managers, and others&mdash;should include the same level of protection for their identities, their devices, and the data they access. The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
-[![Thumb image for Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+[![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
 
 Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
@@ -178,7 +179,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 - [Configure your tenant for increased security](tenant-wide-setup-for-increased-security.md)
 
-  Recommendations that apply to baseline security for your tenant.
+  Recommendations that apply to starting point security for your tenant.
 
 - [Security roadmap: Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md)
 
@@ -219,7 +220,7 @@ Prior to configuring and rolling out Zero Trust identity and device access confi
 
 Once you have determined the set of policies for the apps you want to secure, roll the policies out to your users incrementally, addressing issues along the way.
 
-For example, configure the policies that will be used for all your Microsoft 365 apps for just Exchange with the additional changes for Exchange. Roll these policies out to your users and work through any issues. Then, add Teams with its additional changes and roll this out to your users. Then, add SharePoint with its additional changes. Continue adding the rest of your apps until you can confidently configure these baseline policies to include all Microsoft 365 apps.
+For example, configure the policies that will be used for all your Microsoft 365 apps for just Exchange with the additional changes for Exchange. Roll these policies out to your users and work through any issues. Then, add Teams with its additional changes and roll this out to your users. Then, add SharePoint with its additional changes. Continue adding the rest of your apps until you can confidently configure these starting point policies to include all Microsoft 365 apps.
 
 Similarly, for your sensitive apps, create the set of policies and add one app at a time and work through any issues until they are all included in the sensitive app policy set.
 

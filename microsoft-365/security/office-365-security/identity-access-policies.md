@@ -1,6 +1,6 @@
 ---
-title: Common identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
-description: Describes the recommended common identity and device access policies and configurations.
+title: Common Zero Trust identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
+description: Describes the recommended common Zero Trust identity and device access policies and configurations.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -22,7 +22,7 @@ ms.collection:
 ms.technology: mdo
 ---
 
-# Common identity and device access policies
+# Common Zero Trust identity and device access policies
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -37,7 +37,7 @@ This guidance discusses how to deploy the recommended policies in a newly-provis
 
 The following diagram illustrates the recommended set of policies. It shows which tier of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices. It also indicates where you configure these policies.
 
-[![Common policies for configuring identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
+[![Common policies for configuring Zero Trust identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Here's a one-page PDF summary with links to the individual policies:
 
@@ -48,25 +48,25 @@ The rest of this article describes how to configure these policies.
 > [!NOTE]
 > Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
 
-To give you time to accomplish these tasks, we recommend implementing the baseline policies in the order listed in this table. However, the MFA policies for sensitive and highly regulated levels of protection can be implemented at any time.
+To give you time to accomplish these tasks, we recommend implementing the starting point policies in the order listed in this table. However, the MFA policies for recommended and highest security levels of protection can be implemented at any time.
 
 |Protection level|Policies|More information|Licensing|
 |---|---|---|---|
-|**Baseline**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 ||[Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor)|Clients that do not use modern authentication can bypass Conditional Access policies, so it's important to block these.|Microsoft 365 E3 or E5|
 ||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 ||[Apply Application Protection Policies (APP) data protection](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
 ||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
 ||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|Microsoft 365 E3 or E5|
 ||[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or macOS.|Microsoft 365 E3 or E5|
-|**Sensitive**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
+|**Recommended**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 ||[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or macOS) and phones or tablets (iOS, iPadOS, or Android).|Microsoft 365 E3 or E5|
-|**Highly regulated**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
+|**Highest security**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
 |
 
 ## Assigning policies to groups and users
 
-Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, baseline protection applies to everybody in the organization. A user who is included for both baseline and sensitive protection will have all the baseline policies applied plus the sensitive policies. Protection is cumulative and the most restrictive policy is enforced.
+Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, starting point protection applies to everybody in the organization. A user who is included for both starting point and recommended protection will have all the starting point policies applied plus the recommended policies. Protection is cumulative and the most restrictive policy is enforced.
 
 A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access policies in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended.
 
@@ -80,11 +80,11 @@ Here are the results:
 
 - Members of the Executive Staff group are required to use MFA when the sign-in risk is low, medium, or high.
 
-  In this case, members of the Executive Staff group match both the baseline and sensitive Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the sensitive Conditional Access policy.
+  In this case, members of the Executive Staff group match both the starting point and recommended Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the recommended Conditional Access policy.
 
 - Members of the Top Secret Project X group are always required to use MFA
 
-  In this case, members of the Top Secret Project X group match both the baseline and highly-regulated Conditional Access policies. The access controls for both policies are combined. Because the access control for the highly-regulated Conditional Access policy is more restrictive, it is used.
+  In this case, members of the Top Secret Project X group match both the starting point and highly-regulated Conditional Access policies. The access controls for both policies are combined. Because the access control for the highly-regulated Conditional Access policy is more restrictive, it is used.
 
 Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.
 
@@ -122,9 +122,9 @@ Apply the risk level settings based on the protection level you are targeting.
 
 |Level of protection|Risk level values needed|Action|
 |---|---|---|
-|Baseline|High, medium|Check both.|
-|Sensitive|High, medium, low|Check all three.|
-|Highly regulated||Leave all options unchecked to always enforce MFA.|
+|Starting point|High, medium|Check both.|
+|Recommended|High, medium, low|Check all three.|
+|Highest security||Leave all options unchecked to always enforce MFA.|
 |
 
 In the **Access controls** section:
@@ -216,12 +216,12 @@ The APP data protection framework is organized into three distinct configuration
 
 To see the specific recommendations for each configuration level and the minimum apps that must be protected, review [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework).
 
-Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 2 enterprise enhanced data protection settings. The Highly regulated protection tier maps closely to the Level 3 enterprise high data protection settings.
+Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Recommended protection tiers map closely with the Level 2 enterprise enhanced data protection settings. The Highest security protection tier maps closely to the Level 3 enterprise high data protection settings.
 
 |Protection level|App Protection Policy|More information|
 |---|---|---|
-|Baseline|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
-|Sensitive|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
+|Starting point|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
+|Recommended|[Level 2 enhanced data protection](/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.|
 |Highly Regulated|[Level 3 enterprise high data protection](/mem/intune/apps/app-protection-framework#level-3-enterprise-high-data-protection)|The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.|
 |
 
@@ -304,12 +304,12 @@ For supervised devices:
 - Enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts data sharing controls and blocks access to USB devices. This configuration is applicable to most mobile users accessing work or school data on a device.
 - High security (Level 3) – Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration enacts stronger password policies, disables certain device functions, enforces additional data transfer restrictions, and requires apps to be installed through Apple’s volume purchase program.
 
-Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 2 enhanced security settings. The Highly regulated protection tier maps closely to the Level 3 high security settings.
+Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Recommended protection tiers map closely with the Level 2 enhanced security settings. The Highest security protection tier maps closely to the Level 3 high security settings.
 
 |Protection level  |Device policy |More information  |
 |---------|---------|---------|
-|Baseline     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Sensitive     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Starting point     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Recommended     |Enhanced security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
 |Highly Regulated     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
 
 To see the specific device compliance and device restriction recommendations for each configuration level, review the [iOS/iPadOS Security Configuration Framework](/mem/intune/enrollment/ios-ipados-configuration-framework).
@@ -334,16 +334,16 @@ For Android Enterprise fully managed devices:
 - Fully managed enhanced security (Level 2) – Microsoft recommends this configuration for devices where users access sensitive or confidential information. This configuration enacts stronger password policies and disables user/account capabilities.
 - Fully managed high security (Level 3) - Microsoft recommends this configuration for devices used by specific users or groups who are uniquely high risk (users who handle highly sensitive data where unauthorized disclosure causes considerable material loss to the organization). This configuration increases the minimum Android version, introduces mobile threat defense or Microsoft Defender for Endpoint, and enforces additional device restrictions.
 
-Using the principles outlined in [Identity and device access configurations](microsoft-365-policies-configurations.md), the Baseline and Sensitive protection tiers map closely with the Level 1 basic security for personally owned devices and Level 2 enhanced security settings for fully managed devices. The Highly regulated protection tier maps closely to the Level 3 high security settings.
+Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md), the Starting point and Recommended protection tiers map closely with the Level 1 basic security for personally owned devices and Level 2 enhanced security settings for fully managed devices. The Highest security protection tier maps closely to the Level 3 high security settings.
 
 For Android Enterprise work profile devices:
 
 |Protection level  |Device policy |More information  |
 |---------|---------|---------|
-|Baseline     |Work Profile: Basic security (Level 1)      |N/A         |
-|Sensitive     |Work Profile: Basic security (Level 1)         |N/A         |
-|Baseline     |Fully Managed: Enhanced Security (Level 2)       |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
-|Sensitive     |Fully Managed: Enhanced Security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Starting point     |Work Profile: Basic security (Level 1)      |N/A         |
+|Recommended     |Work Profile: Basic security (Level 1)         |N/A         |
+|Starting point     |Fully Managed: Enhanced Security (Level 2)       |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
+|Recommended     |Fully Managed: Enhanced Security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
 |Highly Regulated     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
 
 To see the specific device compliance and device restriction recommendations for each configuration level, review the [Android Enterprise Security Configuration Framework](/mem/intune/enrollment/android-configuration-framework).

@@ -31,7 +31,7 @@ ms.technology: mdo
 
 This article describes how to implement the recommended identity and device-access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
-These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **baseline**, **sensitive**, and **highly regulated**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **starting point**, **recommended**, and **highest security**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
 
 In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for sensitive and highly-regulated content.
 
@@ -78,7 +78,7 @@ See "Block or limit access to specific SharePoint site collections or OneDrive a
 
 ## How these policies work together
 
-It's important to understand that SharePoint site permissions are typically based on business need for access to sites. These permissions are managed by site owners and can be highly dynamic. Using SharePoint device access policies ensures protection to these sites, regardless of whether users are assigned to an Azure AD group associated with baseline, sensitive, or highly regulated protection.
+It's important to understand that SharePoint site permissions are typically based on business need for access to sites. These permissions are managed by site owners and can be highly dynamic. Using SharePoint device access policies ensures protection to these sites, regardless of whether users are assigned to an Azure AD group associated with starting point, recommended, or highest security protection.
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
@@ -86,10 +86,10 @@ The following illustration provides an example of how SharePoint device access p
 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
 
-James has baseline Conditional Access policies assigned, but he can be given access to SharePoint sites with sensitive or highly-regulated protection.
+James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with sensitive or highly-regulated protection.
 
 - If James accesses a sensitive or highly-regulated site he is a member of using his PC, his access is granted as long as his PC is compliant.
-- If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for baseline users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
+- If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for starting point users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
 - If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
 
 ## Next step
