@@ -157,6 +157,8 @@ After you have started applying information barrier policies, if you want to sto
     |:---------|:----------|
     | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> In this example, we are stopping information barrier policies from being applied. |
 
+    
+    ##Can we please have a section here that clearly states how to fully disable InfoBarrier for a tenant?
 ## Resources
 
 - [Get an overview of information barriers](information-barriers.md)
