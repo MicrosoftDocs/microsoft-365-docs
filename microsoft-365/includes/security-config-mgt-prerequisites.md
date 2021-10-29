@@ -65,24 +65,24 @@ To support MDE security configuration management through the Microsoft Endpoint 
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="./media/mde-security-integration/enable-mde-settings-management-defender.png" alt-text="Enable MDE settings management in the Defender console.":::
+   :::image type="content" source="../media/mde-security-integration/enable-mde-settings-management-defender.png" alt-text="Enable MDE settings management in the Defender console.":::
 
 2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
-   :::image type="content" source="./security/defender-endpoint/images/add-role-in-mde.png" alt-text="Create a new role in the Defender portal.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Defender portal.":::
 
    > [!TIP]
    > You can modify existing roles and add the necessary permissions versus creating additional roles in Microsoft Defender for Endpoint
 
 3. When configuring the role, add users and be sure to select **Manage endpoint security settings in Microsoft Endpoint Manager**:
 
-   :::image type="content" source="./media/mde-security-integration/add-role.png" alt-text="Grant users permissions to manage settings.":::
+   :::image type="content" source="../media/mde-security-integration/add-role.png" alt-text="Grant users permissions to manage settings.":::
 
 4. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Select **Endpoint security** > **Microsoft Defender for Endpoint**, and set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
-   :::image type="content" source="./media/mde-security-integration/enable-mde-settings-management-mem.png" alt-text="Enable MDE settings management in the Microsoft Endpoint Manager admin center.":::
+   :::image type="content" source="../media/mde-security-integration/enable-mde-settings-management-mem.png" alt-text="Enable MDE settings management in the Microsoft Endpoint Manager admin center.":::
 
    When you set this option to *On*, all devices in the platform scope in Microsoft Defender for Endpoint that aren't managed by Microsoft Endpoint Manager will qualify to onboard to Microsoft Defender for Endpoint.
 
