@@ -271,7 +271,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity.":::
 
-### Configure Windows Defender Smart Screen settings
+### Configure Windows Defender SmartScreen settings
 
 1. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Explorer**.
 

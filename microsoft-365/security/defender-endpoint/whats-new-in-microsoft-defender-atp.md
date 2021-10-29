@@ -33,7 +33,6 @@ The following features are in preview or generally available (GA) in the latest 
 
 For more information on preview features, see [Preview features](preview.md).
 
-
 > [!TIP]
 > RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 >
@@ -41,8 +40,7 @@ For more information on preview features, see [Preview features](preview.md).
 > https://docs.microsoft.com/api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
 
-
-For more information on what's new with other Microsoft Defender security products see:
+For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Office 365](../office-365-security/whats-new-in-defender-for-office-365.md)
@@ -50,10 +48,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 For more information on Microsoft Defender for Endpoint on other operating systems:
+
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
-
 
 ## October 2021
 

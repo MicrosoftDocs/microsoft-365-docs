@@ -19,7 +19,7 @@ ms.technology: mde
 ms.collection: M365-security-compliance
 ---
 
-# Report and troubleshoot Microsoft Defender for ATP ASR Rules
+# Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
