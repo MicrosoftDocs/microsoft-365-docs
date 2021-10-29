@@ -59,13 +59,13 @@ To use security management for Microsoft Defender for Endpoint, you need:
 
 
 
-## Configure your Tenant to support MDE Security Configuration Management
+## Configure your tenant to support Microsoft Defender for Endpoint Security Configuration Management
 
-To support MDE security configuration management through the Microsoft Endpoint Manager admin center, you must enable communication between them from within each console.
+To support Microsoft Defender for Endpoint security configuration management through the Microsoft Endpoint Manager admin center, you must enable communication between them from within each console.
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="../media/mde-security-integration/enable-mde-settings-management-defender.png" alt-text="Enable MDE settings management in the Defender console.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
 
 2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
@@ -76,13 +76,13 @@ To support MDE security configuration management through the Microsoft Endpoint 
 
 3. When configuring the role, add users and be sure to select **Manage endpoint security settings in Microsoft Endpoint Manager**:
 
-   :::image type="content" source="../media/mde-security-integration/add-role.png" alt-text="Grant users permissions to manage settings.":::
+   :::image type="content" source="../media/add-role.png" alt-text="Grant users permissions to manage settings.":::
 
 4. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 5. Select **Endpoint security** > **Microsoft Defender for Endpoint**, and set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
-   :::image type="content" source="../media/mde-security-integration/enable-mde-settings-management-mem.png" alt-text="Enable MDE settings management in the Microsoft Endpoint Manager admin center.":::
+   :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Microsoft Endpoint Manager admin center.":::
 
    When you set this option to *On*, all devices in the platform scope in Microsoft Defender for Endpoint that aren't managed by Microsoft Endpoint Manager will qualify to onboard to Microsoft Defender for Endpoint.
 
@@ -94,21 +94,21 @@ Devices that you manage with Intune or Configuration Manager are not supported f
 
 ## Create Azure AD Groups
 
-After devices onboard to Defender for Endpoint, you'll need to create device groups to support deployment of policy for MDE.
+After devices onboard to Defender for Endpoint, you'll need to create device groups to support deployment of policy for Microsoft Defender for Endpoint.
 
-To identify devices that have enrolled with MDE but aren't managed by Intune or Configuration Manager:
+To identify devices that have enrolled with Microsoft Defender for Endpoint but aren't managed by Intune or Configuration Manager:
 
 1. Sign in to [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Go to **Devices** > **All devices**, and then select the column **Managed by** to sort the view of devices.
 
-   Devices that onboard to MDE and have registered but aren't managed by Intune or Configuration Manager display **MDE** in the *Managed by* column. These are the devices that can receive policy for security management for Microsoft Defender for Endpoint.
+   Devices that onboard to Microsoft Defender for Endpoint and have registered but aren't managed by Intune or Configuration Manager display **Microsoft Defender for Endpoint** in the *Managed by* column. These are the devices that can receive policy for security management for Microsoft Defender for Endpoint.
 
 You can create groups for these devices [in Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) or [from within the Microsoft Endpoint Manager admin center](/mem/intune/fundamentals/groups-add).
 
 ## Deploy policy
 
-After creating one or more Azure AD groups that contain devices managed by MDE, you can create and deploy the following policies for Security Management for Microsoft Defender for Endpoint to those groups:
+After creating one or more Azure AD groups that contain devices managed by Microsoft Defender for Endpoint, you can create and deploy the following policies for Security Management for Microsoft Defender for Endpoint to those groups:
 
 - Antivirus
 - Firewall
