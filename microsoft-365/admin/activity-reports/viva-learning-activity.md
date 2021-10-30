@@ -24,7 +24,7 @@ description: "Learn how to get a Microsoft 365 Viva Learning activity report usi
 
 As an Microsoft 365 admin, the Reports dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. Check out the activity reports in the Microsoft 365 admin center. 
 
-For example, you can understand the activity of every user licensed to use Viva Learning by looking at their interaction. It also helps you to understand the type of features being used within the Learning App.
+For example, you can understand the activity of your licensed Viva Learning users by looking at their interactions. It also helps you to understand the type of features being used within the Learning App.
 
 ## How do I get to the to the Viva Learning activity report?  
 
