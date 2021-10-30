@@ -87,7 +87,7 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: Configuration settings
+          - text: Next-generation protection settings
             url: mdb-next-gen-configuration-settings.md
           - text: Firewall settings
             url: mdb-firewall.md
