@@ -5,23 +5,23 @@
       items:
       - name: What is Microsoft Defender for Business?
         href: mdb-overview.md
-      - name: Requirements for Defender for Business
-        href: mdb-requirements.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365bp.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
     - name: Setup and configuration
       items:
-      - name: Process overview
+      - name: Setup overview
         href: mdb-setup-configuration.md
-      - name: Assign roles and permissions
+      - name: Step 1 - Review the requirements
+        href: mdb-requirements.md
+      - name: Step 2 - Assign roles and permissions
         href: mdb-roles-permissions.md
-      - name: Set up email notifications
+      - name: Step 3 - Set up email notifications
         href: mdb-email-notifications.md
-      - name: Onboard devices
+      - name: Step 4 - Onboard devices
         href: mdb-onboard-devices.md
-      - name: Configure your security settings
+      - name: Step 5 - Configure your security settings
         href: mdb-configure-security-settings.md
     - name: Get started using the portal
       href: mdb-get-started.md
