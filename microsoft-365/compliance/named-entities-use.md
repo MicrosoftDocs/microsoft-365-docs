@@ -99,11 +99,11 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |SharePoint Online data-at-rest|supported|
 |Azure Information Protection (AIP) scanner|not supported|
 
-## Known issues 
+## Known issues
 
 |Issue  |Impact  |
 |---------|---------|
-|DLP Policy tips (OWA, Outlook, Office Win32 clients)     |   Policy tips with entity condition will result in “no match”      |
+|DLP Policy tips (OWA, Outlook, Office Win32 clients)     |   Policy tips with entity condition will result in "no match"      |
 | Asian language support for person name (Chinese, Japanese, Korean)    | Named entities supported for Latin-based character set only (that is, kanji is not supported) for person name        |
 |Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |
 |On-premises repositories    | Not supported as a workload|

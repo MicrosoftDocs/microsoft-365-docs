@@ -22,7 +22,7 @@ description: Learn how to configure Go1 as a learning content source for Microso
 This article shows you how to configure Go1 as a third-party learning content source in Viva Learning.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Go1 content and any associated services are subject to Go1’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Go1 content and any associated services are subject to Go1's privacy and service terms.
 
 Go1 provides access to thousands of courses from top content providers. [Learn more about Go1](https://www.go1.com/go1-microsoft-viva). Follow these steps to add Go1 as a learning source in Viva Learning.
 
