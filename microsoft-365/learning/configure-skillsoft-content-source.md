@@ -15,18 +15,14 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Skillsoft as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Configure Skillsoft as a content source for Microsoft Viva Learning
 
->[!NOTE]
->This feature is not supported in preview.
-
 This article shows you how to configure Skillsoft as a third-party learning content source in Viva Learning.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Skillsoft content and any associated services are subject to Skillsoft’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Skillsoft content and any associated services are subject to Skillsoft's privacy and service terms.
 
 ## First steps
 
