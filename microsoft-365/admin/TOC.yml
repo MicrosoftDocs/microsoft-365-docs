@@ -239,8 +239,6 @@
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
-            - name: Viva Learning activity
-              href: activity-reports/viva-learning-activity.md
          - name: Microsoft Productivity Score - overview
            href: productivity/productivity-score.md
            items:
