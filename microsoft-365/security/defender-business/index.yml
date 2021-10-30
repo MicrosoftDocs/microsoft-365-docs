@@ -39,15 +39,15 @@ landingContent:
         links:
           - text: Setup overview
             url: mdb-setup-configuration.md
-          - text: 1. Review the requirements
+          - text: Step 1. Review the requirements
             url: mdb-requirements.md
-          - text: 2. Assign roles and permissions
+          - text: Step 2. Assign roles and permissions
             url: mdb-roles-permissions.md
-          - text: 3. Set up email notifications
+          - text: Step 3. Set up email notifications
             url: mdb-email-notifications.md
-          - text: 4. Onboard devices
+          - text: Step 4. Onboard devices
             url: mdb-onboard-devices.md
-          - text: 5. Configure your security settings
+          - text: Step 5. Configure your security settings
             url: mdb-view-edit-device-policies.md
 
   # Card
