@@ -182,6 +182,7 @@ The [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator) agg
 ## Query scenarios
 
 ### Identify unique processes with process IDs
+
 Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes.
 
 To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
@@ -189,11 +190,11 @@ To get a unique identifier for a process on a specific machine, use the process 
 The following example query finds processes that access more than 10 IP addresses over port 445 (SMB), possibly scanning for file shares.
 
 Example query:
+
 ```kusto
 DeviceNetworkEvents
 | where RemotePort == 445 and Timestamp > ago(12h) and InitiatingProcessId !in (0, 4)
-| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId
-InitiatingProcessCreationTime, InitiatingProcessFileName
+| summarize RemoteIPCount=dcount(RemoteIP) by DeviceName, InitiatingProcessId, InitiatingProcessCreationTime, InitiatingProcessFileName
 | where RemoteIPCount > 10
 ```
 

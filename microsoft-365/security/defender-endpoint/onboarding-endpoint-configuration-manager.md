@@ -115,8 +115,7 @@ This section guides you in configuring the following capabilities using Microsof
 
 #### Windows 10 and Windows 11
 
-From within the Microsoft 365 Defender portal it is possible to download the '.onboarding' policy that can be used to create the policy in System Center Configuration
-Manager and deploy that policy to Windows 10 and Windows 11 devices.
+From within the Microsoft 365 Defender portal it is possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
 1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
@@ -214,8 +213,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 
     ![Image of next generation protection pane1.](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
 
-    In certain industries or some select enterprise customers might have specific
-needs on how Antivirus is configured.
+    In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.
 
     [Quick scan versus full scan and custom scan](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
@@ -245,13 +243,11 @@ needs on how Antivirus is configured.
 
      ![Image of next generation protection pane11.](images/configmgr-select-collection.png)
 
-After completing this task, you now have successfully configured Windows
-Defender Antivirus.
+After completing this task, you now have successfully configured Windows Defender Antivirus.
 
 ### Attack surface reduction
 
-The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
-Protection.
+The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection, and Exploit Protection.
 
 All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 
@@ -329,7 +325,6 @@ See [Optimize ASR rule deployment and detections](/microsoft-365/security/defend
 
     ![A screenshot Microsoft Endpoint Configuration Manager1.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
     ![A screenshot Microsoft Endpoint Configuration Manager2.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
@@ -338,7 +333,7 @@ After completing this task, you now have successfully configured Network Protect
 
 #### To set Controlled Folder Access rules in Audit mode
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then schoose **Create Exploit Guard Policy**.
 
     ![A screenshot of Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

@@ -145,9 +145,9 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
- 
+
  You can use the PnP event to find the USB printer used in the organization:
- 
+
 ```kusto
 //find the USB Printer VID/PID
 DeviceEvents

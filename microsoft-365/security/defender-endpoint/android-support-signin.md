@@ -45,13 +45,11 @@ Unexpected error, try later
 
 **Cause:**
 
-You have an older version of "Microsoft Authenticator" app installed on your
-device.
+You have an older version of "Microsoft Authenticator" app installed on your device.
 
 **Solution:**
 
-Install latest version and of [Microsoft
-Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)
+Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)
 from Google Play Store and try again
 
 ## Sign in failed - invalid license
@@ -87,8 +85,7 @@ for Android are not blocked on some Xiaomi devices. The following functionality 
 
 **Cause:**
 
-Xiaomi devices include a new permission model. This prevents Defender for Endpoint
-for Android from displaying pop-up windows while it runs in the background.
+Xiaomi devices include a new permission model. This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
