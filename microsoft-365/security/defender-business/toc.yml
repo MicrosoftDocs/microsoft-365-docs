@@ -43,7 +43,7 @@
         href: mdb-manage-firewall.md
     - name: Reference information
       items: 
-      - name: Configuration settings
+      - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings
         href: mdb-firewall.md
