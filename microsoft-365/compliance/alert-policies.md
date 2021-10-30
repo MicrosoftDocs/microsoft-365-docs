@@ -194,7 +194,7 @@ You can use the following filters to view a subset of all the alerts on the **Al
 
 - **Tags.** Use this filter to show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Office 356 ATP](../security/office-365-security/user-tags.md) to learn more.
 
-- **Source.** Use this filter to show alerts triggered by alert policies in the compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
+- **Source.** Use this filter to show alerts triggered by alert policies in the compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Defender for Cloud Apps alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview.
@@ -315,19 +315,19 @@ Here are some tasks you can perform to manage alerts.
 
 - **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **Alerts** page.
 
-## Viewing Cloud App Security alerts
+## Viewing Defender for Cloud Apps alerts
 
-Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
-Organizations that have Microsoft Cloud App Security as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Cloud App Security alerts that are related to Microsoft 365 apps and services in the Microsoft 365 compliance center or the Microsoft 365 Defender portal.
+Organizations that have Microsoft Defender for Cloud Apps as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Defender for Cloud Apps alerts that are related to Microsoft 365 apps and services in the Microsoft 365 compliance center or the Microsoft 365 Defender portal.
 
-To display only Cloud App Security alerts in the compliance center or the Defender portal, use the **Source** filter and select **Cloud App Security**.
+To display only Defender for Cloud Apps alerts in the compliance center or the Defender portal, use the **Source** filter and select **Defender for Cloud Apps**.
 
-![Use the Source filter to display only Cloud App Security alerts.](../media/FilterCASAlerts.png)
+![Use the Source filter to display only Defender for Cloud Apps alerts.](../media/FilterCASAlerts.png)
 
-Similar to an alert triggered by an alert policy in the compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](/cloud-app-security/monitor-alerts).
+Similar to an alert triggered by an alert policy in the compliance center, you can select a Defender for Cloud Apps alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Defender for Cloud Apps portal and a link to the corresponding Defender for Cloud Apps policy that triggered the alert. See [Monitor alerts in Defender for Cloud Apps](/cloud-app-security/monitor-alerts).
 
-![Alert details contain links to the Cloud App Security portal.](../media/CASAlertDetail.png)
+![Alert details contain links to the Defender for Cloud Apps portal.](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Changing the status of a Cloud App Security alert in the compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.
+> Changing the status of a Defender for Cloud Apps alert in the compliance center won't update the resolution status for the same alert in the Defender for Cloud Apps portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Defender for Cloud Apps portal is unchanged. To resolve or dismiss a Defender for Cloud Apps alert, manage the alert in the Defender for Cloud Apps portal.

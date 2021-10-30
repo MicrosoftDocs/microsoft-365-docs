@@ -108,7 +108,7 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 
 **Cause:**
 
-Xiaomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
+Xiaomi changed the battery optimization permissions in Android 11. Defender for Cloud is not allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
 
@@ -131,11 +131,11 @@ Users can follow these steps to enable the same permissions from the device sett
 
    ![Step two to change dropdown to show "All Apps".](images/show-all-apps-1.png)
 
-5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
+5. Locate “Microsoft Defender for Cloud for Endpoint” and select **Don’t Optimize**.
 
-   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
+   ![Locate "Microsoft Defender for Cloud for Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
 
-Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
+Return to the Microsoft Defender for Cloud for Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
 
 ## Send in-app feedback
 

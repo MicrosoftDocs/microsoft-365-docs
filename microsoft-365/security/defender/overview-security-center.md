@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender overview, combining MDO, MDE, MDI, and MCAS
-description: Advantages in Microsoft 365 Defender, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with Microsoft Defender for Identity (MDI) and Microsoft Cloud App Security (MCAS). This article outlines Microsoft 365 Defender advances for administrators.
+title: Microsoft 365 Defender overview, combining MDO, MDE, MDI, and Defender for Cloud Apps
+description: Advantages in Microsoft 365 Defender, combining Microsoft Defender for Office 365 (MDO) and Microsoft Defender for Endpoint (MDE), with Microsoft Defender for Identity (MDI) and Microsoft Defender for Cloud Apps. This article outlines Microsoft 365 Defender advances for administrators.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -35,7 +35,7 @@ ms.technology: m365d
 
 **Microsoft 365 Defender** ([https://security.microsoft.com](https://security.microsoft.com)) combines protection, detection, investigation, and response to *email*, *collaboration*, *identity*, and *device* threats, in a central portal.
 
-Microsoft 365 Defender brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The security center emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
+Microsoft 365 Defender brings together functionality from existing Microsoft security portals, like Microsoft Defender Security Center and the Office 365 Security & Compliance center. The Defender for Cloud emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. This center includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
@@ -47,11 +47,11 @@ If you need information about what's changed from the Office 365 Security & Comp
 - [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> The Microsoft 365 security portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 security portal, automatically. However, roles and permissions for MCAS will still handled over in MCAS.
+> The Microsoft 365 security portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 security portal, automatically. However, roles and permissions for Defender for Cloud Apps will still handled over in Defender for Cloud Apps.
 
 ## What to expect
 
-All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender security center (securitycenter.microsoft.com) can now be found in the *Microsoft 365 Defender*.
+All the security content that you use in the Office 365 Security and Compliance Center (protection.office.com) and the Microsoft Defender Security Center (securitycenter.microsoft.com) can now be found in the *Microsoft 365 Defender*.
 
 Microsoft 365 Defender helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
 
@@ -84,7 +84,7 @@ Selecting an incident name displays a page that demonstrates the value of conver
 ![Example of the Summary page for an incident in Microsoft 365 Defender.](../../media/converged-incident-info-3.png)
 --> 
 
-Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and third-party identity providers. For more information, see [investigate users](investigate-users.md).
+Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, and **Evidence** tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD), and third-party identity providers. For more information, see [investigate users](investigate-users.md).
 
 Take the time to review the incidents in your environment, drill down into these tabs, and practice building an understanding of how to access the information provided for incidents for different kinds of threats.
 
@@ -108,7 +108,7 @@ Common controls and content either appear in the same place, or are condensed in
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 Defender
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
+> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
 
 ### Integrated reports
 
@@ -125,7 +125,7 @@ The cards fall into these categories:
 - **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](/azure/active-directory/identity-protection/overview-identity-protection).
 - **Data** - Help track user activity that could lead to unauthorized data disclosure.
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
-- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](/cloud-app-security/discovered-apps).
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Defender for Cloud Apps discovered apps](/cloud-app-security/discovered-apps).
 
 ## Threat analytics with better data coverage
 Track and respond to emerging threats with the following Microsoft 365 Defender threat analytics integrated experience:
@@ -171,7 +171,7 @@ Use the **This product** button for *product* feedback:
 
 Use *This page* for feedback on the article itself. Thanks for your feedback. Your voice helps us improve products.
 
-### Explore what the security center has to offer
+### Explore what the Defender for Cloud has to offer
 
 Keep exploring the features and capabilities in Microsoft 365 Defender:
 

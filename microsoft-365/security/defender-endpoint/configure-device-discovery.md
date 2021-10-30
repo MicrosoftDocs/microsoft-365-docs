@@ -39,9 +39,9 @@ You can customize the list of devices that are used to perform standard discover
 
 > [!IMPORTANT]
 > For preview, you'll first need to turn on the Preview features in Microsoft 365 Defender.
-> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center.
+> You can then access the device discovery configuration in Microsoft 365 Defender portal. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 Defender portal, while the dashboard tiles will only be available in Microsoft 365 Defender portal.
 
-Take the following configuration steps in Microsoft 365 security center:
+Take the following configuration steps in Microsoft 365 Defender portal:
 
 1. Navigate to **Settings > Device discovery**.
 2. Select the discovery mode to use on your onboarded devices.

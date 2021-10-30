@@ -107,7 +107,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |SharePoint online sites   |sites       | data-at-rest </br> data-in-use | no|
 |OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|no|
 |Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  no       |
-|Microsoft Cloud App Security (MCAS)   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
@@ -131,7 +131,7 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |OneDrive for Business accounts|	yes|	yes|	yes|
 |Teams Chat and Channel messages |	yes|	no|	no|
 |Devices	|yes |	yes| 	no|
-|Microsoft Cloud App Security|	yes|	yes|	yes|
+|Microsoft Defender for Cloud Apps|	yes|	yes|	yes|
 |On-Premises repositories|	yes|	yes|	no|
 
 > [!NOTE]
@@ -277,7 +277,7 @@ The available context options change depending on which location you choose. If 
 - content contains
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### Conditions Microsoft Cloud App Security support
+##### Conditions Microsoft Defender for Cloud Apps support
 
 - Content contains
 - Content is shared from Microsoft 365
@@ -377,7 +377,7 @@ The actions that are available in a rule are dependent on the locations that hav
 
 The devices location provide a number of sub-activities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### Microsoft Cloud App Security:
+#### Microsoft Defender for Cloud Apps:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Restrict Third Party Apps
@@ -413,7 +413,7 @@ For example, if you select Exchange and Devices as locations, these actions will
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Audit or restrict activities on Windows devices
 
-If you select Devices and Microsoft Cloud App Security, these actions will be available:
+If you select Devices and Microsoft Defender for Cloud Apps, these actions will be available:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Audit or restrict activities on Windows devices
@@ -453,7 +453,7 @@ The user notifications and policy tips configuration options vary depending on t
 - SharePoint
 - OneDrive
 - Teams Chat and Channel
-- MCAS
+- Defender for Cloud Apps
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -465,9 +465,9 @@ You can enable/disable user notifications for various Microsoft apps, see [Data 
 
 as well as choosing to customize the email text, subject and the policy tip text.
 
-![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and MCAS](../media/dlp-user-notification-non-devices.png)
+![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and MCAS plus the option to customize the notification title and content that appears on the Windows 10 device.
+If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
 

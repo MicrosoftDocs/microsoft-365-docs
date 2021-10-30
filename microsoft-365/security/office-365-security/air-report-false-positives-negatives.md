@@ -48,7 +48,7 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 ## Adjust an alert to prevent false positives from recurring
 
-If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts).
+If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Defender for Cloud Apps portal](/cloud-app-security/managing-alerts).
 
 If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 

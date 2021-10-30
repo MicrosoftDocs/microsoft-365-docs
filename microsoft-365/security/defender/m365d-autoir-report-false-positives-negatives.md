@@ -49,7 +49,7 @@ The following sections describe how to perform these tasks.
 
 |Scenario |Service |What to do |
 |--------|--------|--------|
-|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Cloud App Security](/cloud-app-security)<br/> or <br/>[Azure threat protection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts)         |
+|- An alert is triggered by legitimate use <br/>- An alert is inaccurate    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> or <br/>[Azure threat protection](/azure/security/fundamentals/threat-detection)         |[Manage alerts in the Defender for Cloud Apps portal](/cloud-app-security/managing-alerts)         |
 |A file, IP address, URL, or domain is treated as malware on a device, even though it's safe|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |[Create a custom indicator with an "Allow" action](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## Undo a remediation action that was taken on a device

@@ -63,7 +63,7 @@ If you are looking for compliance-related items, visit the [Microsoft 365 compli
 
 ## New and improved capabilities
 
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this Defender for Cloud.
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 

@@ -127,7 +127,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
 ### GUI method
 
-1. Download schema.json file from [Defender's GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) and save it to a local file:
+1. Download schema.json file from [Defender for Cloud's GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema) and save it to a local file:
 
     ```bash
     curl -o ~/Documents/schema.json https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/schema/schema.json

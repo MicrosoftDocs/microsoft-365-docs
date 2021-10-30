@@ -1,6 +1,6 @@
 ---
 title: Host firewall reporting in Microsoft Defender for Endpoint
-description: Host and view firewall reporting in Microsoft 365 security center.
+description: Host and view firewall reporting in Microsoft 365 Defender portal.
 keywords: windows defender, firewall
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -25,13 +25,13 @@ ms.collection: m365-security-compliance
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are an admin, you can now host firewall reporting to [Microsoft 365 security center](https://security.microsoft.com). This feature enables you to view Windows 10, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
+If you are an admin, you can now host firewall reporting to [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows 10, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
 - You must be running Windows 10 or Windows Server 2019, or Windows Server 2022.
 - To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md).
-- For Microsoft 365 security center to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
+- For Microsoft 365 Defender portal to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging).
@@ -44,7 +44,7 @@ If you are an admin, you can now host firewall reporting to [Microsoft 365 secur
 > [!NOTE]
 > Make sure to follow the instructions from the section above and properly configure your devices for the early preview participation.
 
-- After enabling the events, Microsoft 365 security center will start to monitor the data.
+- After enabling the events, Microsoft 365 Defender for Cloud will start to monitor the data.
   - Remote IP, Remote Port, Local Port, Local IP, Computer Name, Process across inbound and outbound connections.
 - Admins can now see Windows host firewall activity [here](https://security.microsoft.com/firewall).
   - Additional reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
@@ -54,7 +54,7 @@ If you are an admin, you can now host firewall reporting to [Microsoft 365 secur
 
 The following scenarios are supported during Ring0 Preview.
 
-### Firewall reporting in security center
+### Firewall reporting in Defender for Cloud
 
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to https://security.microsoft.com/firewall.
 

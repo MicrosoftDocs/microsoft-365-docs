@@ -16,7 +16,7 @@ search.appverid:
 description: "Implement Microsoft app governance capabilities to govern your apps."
 ---
 
-# App governance add-on to Microsoft Cloud App Security (in preview)
+# App governance add-on to Microsoft Defender for Cloud Apps (in preview)
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -25,7 +25,7 @@ description: "Implement Microsoft app governance capabilities to govern your app
 
 Cyberattacks have become increasingly sophisticated in the ways they exploit the apps you have deployed in your on-premises and cloud infrastructures, establishing a starting point for privilege escalation, lateral movement, and exfiltration of your data. To understand the potential risks and stop these types of attacks, you need to gain clear visibility into your organization’s app compliance posture to quickly identify when an app exhibits anomalous behaviors and to respond when these behaviors present risks to your environment, data, and users.
 
-The app governance add-on feature to Microsoft Cloud App Security is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
+The app governance add-on feature to Microsoft Defender for Cloud Apps is a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions.
 
 <!--
 The scale of ongoing cybersecurity incidents affecting large enterprises and smaller businesses highlights the dangers of supply chain attacks and the need to strengthen the security and compliance posture of every organization. Accelerated cloud adoption with Microsoft 365 and its rich application ecosystem are constantly growing. Attackers are gaining organizational footholds through applications because:
@@ -47,15 +47,15 @@ App governance is a platform-based solution that is an integral part of the Micr
 
 To see the app governance dashboard, go to [https://compliance.microsoft.com/appgovernance](https://compliance.microsoft.com/appgovernance). Note that your sign-in account must have one of the [administrator roles](app-governance-get-started.md#administrator-roles) to view any app governance data.
 
-## App governance integration with Azure AD and Microsoft Cloud App Security
+## App governance integration with Azure AD and Microsoft Defender for Cloud Apps
 
-App governance, Azure AD, and Microsoft Cloud App Security collect and provide different data sets:
+App governance, Azure AD, and Microsoft Defender for Cloud Apps collect and provide different data sets:
 
 - App governance provides detailed information about an app’s activity at the API level.
 - Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
-- Microsoft Cloud App Security provides app risk information.
+- Microsoft Defender for Cloud Apps provides app risk information.
 
-By sharing information across app governance, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
+By sharing information across app governance, Azure AD, and Microsoft Defender for Cloud Apps, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
 
 - App sign-in information in app governance:
 
@@ -66,21 +66,21 @@ By sharing information across app governance, Azure AD, and Microsoft Cloud App 
 
   From the Azure Active Directory admin center, you can see the aggregated app usage information and link to the app governance portal for the details of app usage.
 -->
-- API usage information in the Microsoft Cloud App Security portal:
+- API usage information in the Microsoft Defender for Cloud Apps portal:
 
-  From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
+  From the Microsoft Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
 
 Here's a summary of the integration.
 
-![The integration of app governance with Azure AD and Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
+![The integration of app governance with Azure AD and Microsoft Defender for Cloud Apps.](..\media\manage-app-protection-governance\mapg-integration.png)
 
-App governance sends its alerts to Microsoft Cloud App Security and Microsoft 365 Defender, and receives alerts from Microsoft Cloud App Security, to enable more detailed analysis of app-based security incidents.
+App governance sends its alerts to Microsoft Defender for Cloud Apps and Microsoft 365 Defender, and receives alerts from Microsoft Defender for Cloud Apps, to enable more detailed analysis of app-based security incidents.
 - App governance alerts show up in Microsoft 365 Defender alerts list as alerts with the Detection source field set to "App Governance"
-- App governance alerts show up in the MCAS alerts list as alerts with the Policy field set to one of the following:
+- App governance alerts show up in the Defender for Cloud Apps alerts list as alerts with the Policy field set to one of the following:
   - Microsoft 365 OAuth App Governance
   - Microsoft 365 OAuth Phishing Detection
   - Microsoft 365 OAuth App Reputation
-- MCAS alerts appear in the app governance alerts list as alerts with Source set to MCAS
+- Defender for Cloud Apps alerts appear in the app governance alerts list as alerts with Source set to Defender for Cloud Apps
 
 > [!NOTE]
-> Alert status is currently not being synced between app governance and Microsoft Cloud App Security.
+> Alert status is currently not being synced between app governance and Microsoft Defender for Cloud Apps.

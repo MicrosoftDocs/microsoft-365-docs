@@ -96,4 +96,4 @@ Example:
 
 Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform updates to arrive from the Beta Channel.
 
-For more information on the parameters and how to configure them, see [Set-MpPreference (Defender)|Microsoft Docs](/powershell/module/defender/set-mppreference).
+For more information on the parameters and how to configure them, see [Set-MpPreference (Defender for Cloud)|Microsoft Docs](/powershell/module/defender/set-mppreference).

@@ -47,7 +47,7 @@ This issue can manifest in the form of  several different event IDs, all of whic
 
 Event ID|Log name|Description|Source
 ---|---|---|---
-15|Application|Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.|Security Center
+15|Application|Updated Windows Defender status successfully to SECURITY_PRODUCT_STATE_OFF.|Defender for Cloud
 5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender Antivirus Configuration has changed. If this is an unexpected event you should review the settings as this may be the result of malware. <p> **Old value:** Default\IsServiceRunning = 0x0 <p> **New value:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
 5010|Microsoft-Windows-Windows Defender/Operational|Windows Defender Antivirus scanning for spyware and other potentially unwanted software is disabled.|Windows Defender
 

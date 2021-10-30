@@ -1,6 +1,6 @@
 ---
 title: Get started with Microsoft Defender for Endpoint Plan 1 (preview)
-description: Get started using Defender for Endpoint Plan 1. Learn how to use the security center, manage alerts and devices, and view reports. 
+description: Get started using Defender for Endpoint Plan 1. Learn how to use the Defender for Cloud, manage alerts and devices, and view reports. 
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
@@ -34,7 +34,7 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defender portal":::
 
-The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The security center is set up so that your security operations team can find the information they are looking for quickly and easily.
+The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The Defender for Cloud is set up so that your security operations team can find the information they are looking for quickly and easily.
 
 > [!NOTE]
 > Our examples shown in this article might differ from what you see in your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your organization's portal by adding, removing, and rearranging cards.
@@ -72,7 +72,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
 | **Permissions & roles** | Enables you to grant permissions to use the Microsoft 365 Defender portal. Permissions are granted through roles in Azure Active Directory (Azure AD). Select a role, and a flyout pane appears. The flyout contains a link to Azure AD where you can add or remove members in a role group. <br/><br/> To learn more, see [Manage portal access using role-based access control](rbac.md).  |
-| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/overview-security-center.md). |
+| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Defender for Cloud**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/overview-security-center.md). |
 | **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]

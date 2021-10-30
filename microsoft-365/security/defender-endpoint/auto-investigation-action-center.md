@@ -42,7 +42,7 @@ The following table compares the new, unified Action center to the previous Acti
 |---------|---------|
 |Lists pending and completed actions for devices and email in one location <br/>([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) plus [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/office-365-atp))|Lists pending and completed actions for devices <br/> ([Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) only)   |
 |Is located at:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Is located at:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
-| In the Microsoft 365 security center, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center."::: | In the Microsoft Defender Security Center, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center.":::  |
+| In the Microsoft 365 Defender portal, choose **Action center**. <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Navigating to the Action Center in the Microsoft 365 security center."::: | In the Microsoft Defender Security Center, choose **Automated investigations** > **Action center**. <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Navigating to the Action center from the Microsoft Defender Security Center.":::  |
 
 The unified Action center brings together remediation actions across Defender for Endpoint and Defender for Office 365. It defines a common language for all remediation actions, and provides a unified investigation experience.
 
@@ -57,9 +57,9 @@ You can use the unified Action center if you have appropriate permissions and on
 
 ## Using the Action center
 
-To get to the unified Action center in the improved Microsoft 365 security center:
+To get to the unified Action center in the improved Microsoft 365 Defender portal:
 
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, select **Action center**.
 
 When you visit the Action center, you see two tabs: **Pending actions** and **History**. The following table summarizes what you'll see on each tab:

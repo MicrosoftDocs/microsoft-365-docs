@@ -30,7 +30,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 Defender portal.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 Defender portal.
 
 Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 Defender portal. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender will store and process data in the [same location used by
 Select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 > [!NOTE]
-> In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
+> In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
 
 ### Confirm that the service is on
 
@@ -76,7 +76,7 @@ Once the service is provisioned, it adds:
 *Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
-To enable the integration with Microsoft Cloud App Security, you'll need to login to the Microsoft Cloud App Security at least once.
+To enable the integration with Microsoft Defender for Cloud Apps, you'll need to login to the Microsoft Defender for Cloud Apps at least once.
 
 ## Get assistance
 
@@ -92,6 +92,6 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint data storage](../defender-endpoint/data-storage-privacy.md)

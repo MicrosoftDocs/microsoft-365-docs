@@ -21,7 +21,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Get started with Microsoft 365 for Defender
+# Get started with Microsoft 365 Defender for Cloud
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -54,9 +54,4 @@ Turning on Microsoft 365 Defender and deploying services will give you access to
 | Microsoft Defender for Endpoint | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
 |Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
 | Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-| Microsoft Cloud App Security | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
-
-
-
-
-
+| Microsoft Defender for Cloud Apps | Identify and combat cyberthreats across your Microsoft and third-party cloud services |

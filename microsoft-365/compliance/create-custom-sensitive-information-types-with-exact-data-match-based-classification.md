@@ -41,7 +41,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 
 ![EDM-based classification.](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Defender for Cloud Apps file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports double byte character set languages for:
@@ -69,7 +69,7 @@ EDM-based classification is included in these subscriptions:
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
 |Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
-|Microsoft 365 Security center|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 Defender portal|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 Compliance center|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## The work flow at a glance
@@ -619,7 +619,7 @@ These locations are support EDM sensitive information types:
 - OneDrive for Business (files)
 - Microsoft Teams (conversations)
 - DLP for SharePoint (files)
-- Microsoft Cloud App Security DLP policies
+- Microsoft Defender for Cloud Apps DLP policies
 - Server-side auto-labeling policies - available for commercial cloud customers and government cloud customers
 - Client side auto-labeling policies - available for government cloud customers  
 
@@ -666,6 +666,6 @@ These locations are support EDM sensitive information types:
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Microsoft Cloud App Security](/cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)
 - [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md)

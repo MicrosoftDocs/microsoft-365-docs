@@ -38,7 +38,7 @@ You also manage these features on the data classification page:
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 
-You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
+You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 Defender portal** > **Classification** > **Data Classification**.
 
 Take a video tour of our data classification features.
 

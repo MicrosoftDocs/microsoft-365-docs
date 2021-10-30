@@ -79,7 +79,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 
 ## Malicious site detected
 
-Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Security Center portal. The alert includes the domain name of the connection, remote IP address and the device details.
+Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Defender for Cloud portal. The alert includes the domain name of the connection, remote IP address and the device details.
 
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
@@ -115,6 +115,3 @@ If a user faces an issue which is not already addressed in the above sections or
   - Choose from the given options. To report an issue, select **I don't like something**.
   - Provide details of the issue that you are facing and check **Send diagnostic data**. We recommend that you include your email address so that the team can contact you for a solution or a follow-up.
   - Tap **Submit** to successfully send the feedback.
-
-
-

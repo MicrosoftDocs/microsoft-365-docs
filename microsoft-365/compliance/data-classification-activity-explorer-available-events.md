@@ -41,7 +41,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Microsoft information protection (MIP) SDK         |yes|the AIP *new label* action is mapped to *label applied* in activity explorer|
 |Rights Management Service (RMS)         |not applicable         | |
 |Power BI desktop and web        | no| accessible in the Microsoft 365 audit logs         |
-|Microsoft Cloud App Security (MCAS)         |no|         |
+|Microsoft Defender for Cloud Apps         |no|         |
 
 ## Sensitivity label changed
 
@@ -66,7 +66,7 @@ This event is generated each time a sensitivity label is updated on the document
 |MIP SDK         |yes         |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
-|MCAS     |no         |         |
+|Defender for Cloud Apps     |no         |         |
 
 ## Sensitivity label removed
 
@@ -87,7 +87,7 @@ This event is generated each time a sensitivity label is removed from a file or 
 |MIP SDK         |yes         |the AIP *remove label* action is mapped to the *label removed* action in activity explorer |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
-|MCAS     |no         |         |
+|Defender for Cloud Apps     |no         |         |
  
 
 ## Sensitivity label file read
@@ -105,7 +105,7 @@ This event is generated each time a sensitivity labeled or protected document is
 |MIP SDK         |yes         |the AIP *access* action is mapped to the *file read* action in activity explorer|
 |RMS service         |yes         |the *access* action is mapped to the *file read* action in activity explorer |
 |Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
-|MCAS     |no         |         |
+|Defender for Cloud Apps     |no         |         |
 
 
 ## Files discovered
@@ -123,7 +123,7 @@ This event is generated each time files are discovered when AIP Scanner is used 
 |MIP SDK         |yes         |the AIP *discover* action is mapped to the *file discovered* action in activity explorer|
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |not applicable         |
-|MCAS     |not applicable         |         |
+|Defender for Cloud Apps     |not applicable         |         |
 
 
 ## Sensitivity label file renamed
@@ -141,7 +141,7 @@ This event is generated each time a document with a sensitivity label is renamed
 |MIP SDK         |no         |
 |RMS service         |no      |
 |Power BI desktop and Web         |no         |
-|MCAS     |no         |         |
+|Defender for Cloud Apps     |no         |         |
 
 
 ## File removed
@@ -159,7 +159,7 @@ This event is generated each time the AIP scanner detects that a previously scan
 |MIP SDK         |not applicable            |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |not applicable  |
-|MCAS     |not applicable        |         |
+|Defender for Cloud Apps     |not applicable        |         |
 
 ### Protection applied
 
@@ -176,7 +176,7 @@ This event is generated the first-time protection is added manually to an item t
 |MIP SDK         |yes            |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |not applicable            |
-|MCAS     |not applicable        |         |
+|Defender for Cloud Apps     |not applicable        |         |
 
 ## Protection changed
 
@@ -193,7 +193,7 @@ This event is generated each time the protection on an unlabeled document is cha
 |MIP SDK         |yes            |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |not applicable            |
-|MCAS     |not applicable        |
+|Defender for Cloud Apps     |not applicable        |
 
 ## Protection removed
 
@@ -210,7 +210,7 @@ This event is generated each time the protection on an unlabeled document is cha
 |MIP SDK         |yes            |
 |RMS service         |not applicable         |
 |Power BI desktop and Web         |not applicable            |
-|MCAS     |not applicable        |
+|Defender for Cloud Apps     |not applicable        |
 
 ## DLP policy matched
 
@@ -225,7 +225,7 @@ This event is generated each time a DLP policy is matched on a document or an em
 |Windows 10 devices         |yes |
 |MAC         |no     |
 |on-premises         |no|
-|MCAS     |no        | 
+|Defender for Cloud Apps     |no        | 
 
 The events for Windows 10 Devices (Endpoint DLP) are:
 

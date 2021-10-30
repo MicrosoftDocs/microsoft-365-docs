@@ -21,7 +21,7 @@ description: "Get started with app governance capabilities to govern your apps."
 
 [![Sign up for the free trial of app governance](../media/manage-app-protection-governance/large-app-governance-banner.png)](https://aka.ms/appgovernancetrial)
 
-To get started using the app governance add-on to Microsoft Cloud App Security (MCAS), start by verifying the prerequisites for admin role and licensing requirements. Then you're ready to [sign up for the trial version of app governance](#sign-up-for-app-governance). One last step is to [activate the integration with MCAS](#add-integration-with-mcas).
+To get started using the app governance add-on to Microsoft Defender for Cloud Apps, start by verifying the prerequisites for admin role and licensing requirements. Then you're ready to [sign up for the trial version of app governance](#sign-up-for-app-governance). One last step is to [activate the integration with Defender for Cloud Apps](#add-integration-with-mcas).
 
 ## Sign up for app governance
 
@@ -31,21 +31,21 @@ If you are not already a Microsoft 365 customer, you can sign up for a free tria
 
 To purchase a subscription of app governance, please reach out to your sales account team.
 
-## Add integration with MCAS
+## Add integration with Defender for Cloud Apps
 
 Prerequisites:
 
-- Office 365 is connected in Cloud App Security
+- Office 365 is connected in Defender for Cloud Apps
 - Office 365 Azure AD apps are enabled
 
-To enable app governance sync with Cloud App Security, follow these steps:
+To enable app governance sync with Defender for Cloud Apps, follow these steps:
 
-1. Go to your Microsoft Cloud App Security portal – [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+1. Go to your Microsoft Defender for Cloud Apps portal – [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
 1. Select the gear icon (top right corner) and select **Settings**.
 1. Under **Threat Protection**, select **App Governance**.
 1. Select **Enable App Governance integration**, and then select **Save**.
 
-To verify the integration with MCAS is active, look for the app governance policies listed below to appear in MCAS. The new policies might take few minutes to appear once integration is enabled.
+To verify the integration with Defender for Cloud Apps is active, look for the app governance policies listed below to appear in Defender for Cloud Apps. The new policies might take few minutes to appear once integration is enabled.
 
 - Microsoft 365 OAuth app Reputation
 - Microsoft 365 OAuth Phishing Detection
@@ -53,7 +53,7 @@ To verify the integration with MCAS is active, look for the app governance polic
 
 ## Prerequisites
 
-1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Cloud App Security (MCAS), and thus MCAS must be present in your account as either a standalone product or as part of the various license packages.
+1. Verify your account has the [appropriate level of licensing](#licensing-for-app-governance). App governance is an add-on feature for Microsoft Defender for Cloud Apps, and thus Defender for Cloud Apps must be present in your account as either a standalone product or as part of the various license packages.
 1. You must have one of the [administrator roles](#administrator-roles) listed below to access the app governance pages in the portal.
 1. Your organization's billing address must be in a WW region or in GBR, CAN, JPN, IND, or AUS go-local region in order to activate the free trial.
 
@@ -61,7 +61,7 @@ To verify the integration with MCAS is active, look for the app governance polic
 
 Before you get started with app governance, you should confirm your [Microsoft 365 admin center - subscriptions](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/subscriptions) and any add-ons. To access and use app governance, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft 365 E5/A5
 - Microsoft 365 E5/A5 Compliance
 - Microsoft 365 E5/A5 Information Protection and Governance

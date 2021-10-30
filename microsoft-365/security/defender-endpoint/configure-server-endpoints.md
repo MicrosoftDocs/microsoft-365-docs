@@ -99,13 +99,13 @@ The following specifics apply to the new unified solution package for Windows Se
  - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
  - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 
-## Integration with Azure Defender
-Microsoft Defender for Endpoint integrates seamlessly with Azure Defender. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as an Azure Defender customer. 
+## Integration with Microsoft Defender for Cloud
+Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender for Cloud. You can onboard servers automatically, have servers monitored by Azure Defender appear in Defender for Endpoint, and conduct detailed investigations as a Microsoft Defender for Cloud customer. 
 
-For more information, see [Integration with Azure Defender](azure-server-integration.md).
+For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Azure Security Center / Azure Defender for Servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Azure Security Center.
+> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
 
 ## Windows Server 2012 R2 and Windows Server 2016
 
@@ -151,7 +151,7 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 ### Options to install Microsoft Defender for Endpoint
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components.
 
-### Install Microsoft Defender For Endpoint using command line
+### Install Microsoft Defender for Endpoint using command line
 Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
 Run the following command to install Microsoft Defender for Endpoint:
@@ -180,7 +180,7 @@ The `/quiet` switch suppresses all notifications.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
-### Install Microsoft Defender For Endpoint using a script
+### Install Microsoft Defender for Endpoint using a script
 
 You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
 
@@ -220,7 +220,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         
     > [!NOTE]
     >
-    > - The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+    > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
     > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
       
@@ -231,9 +231,9 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 > [!IMPORTANT]
 >
-> - When you use Azure Defender to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
+> - When you use Microsoft Defender for Cloud to monitor servers, a Defender for Endpoint tenant is automatically created (in the US for US users, in the EU for European users, and in the UK for UK users).
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
-> - If you use Defender for Endpoint before using Azure Defender, your data will be stored in the location you specified when you created your tenant even if you integrate with Azure Defender at a later time.
+> - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 
 

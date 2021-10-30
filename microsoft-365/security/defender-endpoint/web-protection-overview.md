@@ -77,7 +77,7 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes.
 
-- Custom indicators (IP/URL, Microsoft Cloud App Security (MCAS) policies)
+- Custom indicators (IP/URL, Microsoft Defender for Cloud Apps policies)
   - Allow
   - Warn
   - Block
@@ -89,7 +89,7 @@ Web protection is made up of the following components, listed in order of preced
 - Web Content Filtering (WCF)
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) currently generates indicators only for blocked URLs.
+> Microsoft Defender for Cloud Apps currently generates indicators only for blocked URLs.
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks.
 
@@ -101,7 +101,7 @@ The table below summarizes some common configurations that would present conflic
 
 ****
 
-|Custom Indicator policy|Web threat policy|WCF policy|MCAS policy|Result|
+|Custom Indicator policy|Web threat policy|WCF policy|Defender for Cloud Apps policy|Result|
 |---|---|---|---|---|
 |Allow|Block|Block|Block|Allow (Web protection override)|
 |Allow|Allow|Block|Block|Allow (WCF exception)|
@@ -132,7 +132,7 @@ The table below shows the responses and their correlated features.
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|Custom indicators|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |Malicious|Web threats|
 |Phishing|Web threats|
 |||

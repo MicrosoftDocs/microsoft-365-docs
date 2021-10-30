@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender important guidance
-description: A note in regard to important Microsoft Defender guidance.
+title: Microsoft Defender for Cloud important guidance
+description: A note in regard to important Microsoft Defender for Cloud guidance.
 ms.date: 09/21/2020
 ms.reviewer: 
 manager: dansimp

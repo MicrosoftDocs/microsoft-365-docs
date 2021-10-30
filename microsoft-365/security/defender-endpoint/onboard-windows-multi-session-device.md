@@ -37,7 +37,7 @@ Familiarize yourself with the [considerations for non-persistent VDI](/microsoft
 > - Single entry for each virtual desktop
 > - Multiple entries for each virtual desktop
 
-Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently.
+Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virtual desktop. This ensures that the investigation experience in the Microsoft Defender for Cloud for Endpoint portal is in the context of one device based on the machine name. Organizations that frequently delete and redeploy WVD hosts should strongly consider using this method as it prevents multiple objects for the same machine from being created in the Microsoft Defender for Endpoint portal. This can lead to confusion when investigating incidents. For test or non-volatile environments, you may opt to choose differently.
 
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy.
 
@@ -50,7 +50,7 @@ There are several ways to onboard a WVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
-- Through [Integration with Azure Defender](azure-server-integration.md)
+- Through [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### *Scenario 1: Using local group policy*
 
@@ -150,8 +150,8 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 #### Licensing requirements
 
-Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Azure Defender.
-Licensing requirements for Microsoft Defender for endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
+Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
+Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
 
 #### Related Links
 

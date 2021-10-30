@@ -19,7 +19,7 @@ description: "How to send feedback for app governance."
 
 # How to submit feedback on app governance 
 
-In order to submit feedback on the app governance add-on to Microsoft Cloud App Security:
+In order to submit feedback on the app governance add-on to Microsoft Defender for Cloud Apps:
 
 - In the lower right corner of any portal page you’d like to submit feedback on, click the black feedback button.
 

@@ -18,7 +18,7 @@ description: "List of countries where app governance is available."
 
 # App governance supported countries
 
-The Microsoft app governance add-on for Microsoft Cloud App Security is available in the following countries and regions:
+The Microsoft app governance add-on for Microsoft Defender for Cloud Apps is available in the following countries and regions:
 
 
 |Country  |Region  |

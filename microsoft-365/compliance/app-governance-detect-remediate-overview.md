@@ -33,29 +33,29 @@ With Microsoft app governance, you can:
 See the [administrator roles](app-governance-get-started.md#administrator-roles) for which roles can access app governance pages.
 
 
-## App governance integration with Azure Active Directory and Microsoft Cloud App Security
+## App governance integration with Azure Active Directory and Microsoft Defender for Cloud Apps
 
-App governance, Azure Active Directory (Azure AD), and Microsoft Cloud App Security collect and provide different data sets:
+App governance, Azure Active Directory (Azure AD), and Microsoft Defender for Cloud Apps collect and provide different data sets:
 
 - App governance provides detailed information about an app’s activity at the API level.
 - Azure AD provides foundational app metadata and detailed information on sign-ins to apps.
-- Microsoft Cloud App Security provides app risk information.
+- Microsoft Defender for Cloud Apps provides app risk information.
 
-By sharing information across app governance, Azure AD, and Microsoft Cloud App Security, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
+By sharing information across app governance, Azure AD, and Microsoft Defender for Cloud Apps, you can display aggregate information in one portal and easily link to another portal for more information. Here are some examples:
 
 - App sign-in information in app governance:
 
   From the app governance portal, you can see the aggregated sign-in activity for each app and link back to the Azure Active Directory admin center for the details of sign-in events.
 
-- API usage information in the Microsoft Cloud App Security portal: 
+- API usage information in the Microsoft Defender for Cloud Apps portal: 
 
-  From the Microsoft Cloud App Security portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
+  From the Microsoft Defender for Cloud Apps portal, you can see API usage level and aggregate data transfer and link to the app governance portal for the details.
 
 Here's a summary of the integration.
 
-![The integration of app governance with Azure AD and Microsoft Cloud App Security.](..\media\manage-app-protection-governance\mapg-integration.png)
+![The integration of app governance with Azure AD and Microsoft Defender for Cloud Apps.](..\media\manage-app-protection-governance\mapg-integration.png)
 
-Additionally, app governance sends its alerts as signals to Microsoft Cloud App Security and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
+Additionally, app governance sends its alerts as signals to Microsoft Defender for Cloud Apps and Microsoft 365 Defender for more detailed analysis of app-based security incidents.
 
 <!--
 
