@@ -30,26 +30,26 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## What to do
 
-- [Step 1: Identify your security and device management path](#step-1-identify-your-security-and-device-management-path).
-- [Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).
-- [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
+- [Part 1: Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
+- [Part 2: Choose an onboarding process](#part-2-choose-an-onboarding-process).
+- [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method).
 - [Learn how to onboard devices in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-the-microsoft-365-defender-portal) 
 
-## Step 1: Identify your security and device management path
+## Part 1: Identify your security and device management path
 
 Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
 <br/><br/>
 
 |Scenario  |What to expect  | What to do next |
 |---------|---------|---------|
-| You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings | Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager, or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md).<br/><br/>If you choose the simplified configuration process, your onboarding process will be streamlined, and you can choose between the automatic, gradual, or manual onboarding process with Defender for Business.   | Proceed to [Step 2: Choose an onboarding process](#step-2-choose-an-onboarding-process).  |
-| You are not currently using Microsoft Endpoint Manager | Defender for Business will prompt you to choose a deployment method. You have several options available, including using a local script or using a tool like Microsoft Endpoint Manager.  | Proceed to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method). |
-| You are already using a non-Microsoft productivity and device management tool    | If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. <br/><br/>Or, you can choose a deployment method in Defender for Business.        | Connect to Defender for Endpoint continue using your existing productivity and device management tool. <br/><br/>--- or ---<br/><br/> Proceed to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).  |
+| You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings | Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager, or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md).<br/><br/>If you choose the simplified configuration process, your onboarding process will be streamlined, and you can choose between the automatic, gradual, or manual onboarding process with Defender for Business.   | Proceed to [Part 2: Choose an onboarding process](#part-2-choose-an-onboarding-process).  |
+| You are not currently using Microsoft Endpoint Manager | Defender for Business will prompt you to choose a deployment method. You have several options available, including using a local script or using a tool like Microsoft Endpoint Manager.  | Proceed to [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method). |
+| You are already using a non-Microsoft productivity and device management tool    | If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. <br/><br/>Or, you can choose a deployment method in Defender for Business.        | Connect to Defender for Endpoint continue using your existing productivity and device management tool. <br/><br/>--- or ---<br/><br/> Proceed to [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method).  |
 
-## Step 2: Choose an onboarding process
+## Part 2: Choose an onboarding process
 
 > [!NOTE]
-> If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Step 3: Choose a deployment method](#step-3-choose-a-deployment-method).
+> If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method).
 
 If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose from several onboarding processes in Defender for Business. The following table summarizes these processes.
 
@@ -59,9 +59,9 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 |:---|:---|
 | Automatic onboarding process <br/>(*Recommended*) | The automatic onboarding process sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards devices to Defender for Business. <br/><br/>We recommend this option because it enables you to onboard devices in Endpoint Manager to Defender for Business efficiently. |
 | Gradual device onboarding | The gradual device onboarding process applies security settings and policies in Defender for Business to the devices that you select. This option enables you to start with a few devices and then add more later.<br/><br/>[Learn more about gradual device onboarding with Microsoft Defender for Business](mdb-gradual-device-onboarding.md).  |
-| Manual onboarding with Microsoft Endpoint Manager | The manual onboarding process enables you to choose from several [deployment methods](#step-3-choose-a-deployment-method).  |
+| Manual onboarding with Microsoft Endpoint Manager | The manual onboarding process enables you to choose from several [deployment methods](#part-3-choose-a-deployment-method).  |
 
-## Step 3: Choose a deployment method
+## Part 3: Choose a deployment method
 
 You can choose from several deployment methods in Defender for Business, as described in the following table:
 <br/><br/>
