@@ -34,7 +34,7 @@ Depending on the applications that you are running and your device characteristi
 > [!WARNING]
 > Before starting, **please make sure that other security products are not currently running on the device**. Multiple security products may conflict and impact the host performance.
 
-# Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
+## Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
 
 **Applies to:**
 - Performance issues of all available MDE components such as AV and EDR  
@@ -44,13 +44,13 @@ The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, 
 > [!NOTICE]
 > The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-## Requirements
+### Requirements
 
 - The client analyzer can run on supported distros of [Linux](microsoft-defender-endpoint-linux.md#system-requirements) either before of after onboarding to Microsoft Defender for Endpoint.
 - Download client analyzer for Linux from the latest preview edition available for download here: <https://aka.ms/XMDEClientAnalyzer>
 - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
-## Run the client analyzer on Linux
+### Run the client analyzer on Linux
 
 Open a terminal or SSH into the relevant machine and run the following commands:
 
@@ -71,7 +71,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 >
 > - If you are running on a machine that cannot use Python 3 or fetch the lxml component, then you can download a binary based version of the analyzer that does not have any of the requirements: [XMDE Client Analyzer Binary](https://aka.ms/XMDEClientAnalyzerBinary)
 
-## Additional syntax help:
+### Additional syntax help:
 
 **-h** \# Help<br>
 \# Show help message
@@ -88,7 +88,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 **-f** \# Force<br>
 \# Overwrite if output already exists in destination path
 
-## Result package contents
+### Result package contents
 
 - report.html
 
@@ -126,7 +126,7 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
   Description: The performance test reports. You will see this only if you are using the performance parameter.
 
-# Troubleshoot performance issues using Microsoft Defender for Endpoint Real-time Protection
+## Troubleshoot performance issues using Microsoft Defender for Endpoint Real-time Protection
 
 **Applies to:**
 - Only performance issues related to AV
