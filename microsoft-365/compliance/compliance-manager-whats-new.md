@@ -25,6 +25,8 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## November 2021
 
+### New assessment templates
+
 The following assessment templates are now available in preview:
 
 - ISO 27001:2013 for Azure (Preview)
