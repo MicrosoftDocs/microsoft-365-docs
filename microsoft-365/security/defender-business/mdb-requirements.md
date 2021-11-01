@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/29/2021
+ms.date: 11/01/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -32,6 +32,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 | Permissions  | To access the Microsoft 365 Defender portal, you must have the Security Reader, Security Admin, or Global Admin role assigned. <br/><br/>Permissions are assigned through [roles in Azure AD](mdb-roles-permissions.md).<br/><br/>To learn more, see [Roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md). |
 | Browser requirements | Microsoft Edge or Google Chrome |
 | Operating system | To manage devices using the simplified configuration process in Microsoft Defender for Business, your devices must be running Windows 10, version 1709 or later. <br/><br/>If you are already managing devices in Microsoft Intune (or Microsoft Endpoint Manager), or if you are using a non-Microsoft device management solution, your devices must be running one of the [operating systems that are supported in Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md). |
+| Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 ## Next steps
 
