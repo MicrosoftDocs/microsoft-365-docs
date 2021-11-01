@@ -26,7 +26,7 @@ This article walks you through four scenarios where you create and modify a DLP 
 
 ## DLP settings
 
-Before you get started you should set up your DLP settings which are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
+Before you get started, you should set up your DLP settings. Settings are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
 
 - cloud egress restrictions
 - unallowed apps restrictions
@@ -44,12 +44,12 @@ Or
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
-|File path exclusions     |supported         |supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Unallowed Apps     |supported         |supported         |         |
-|Unallowed Bluetooth apps    |supported         |not supported         |         |
-|Browser and domain restrictions to sensitive items      |supported         |supported         |         |
-|Additional settings for Endpoint DLP     |supported         |supported         |only the default business justifications are supported for macOS devices         |
-|Always audit file activity for devices     |supported         |supported         |         |
+|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Unallowed Apps     |Supported         |Supported         |         |
+|Unallowed Bluetooth apps    |Supported         |not supported         |         |
+|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
+|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
+|Always audit file activity for devices     |Supported         |Supported         |         |
 
 
 
@@ -65,9 +65,9 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
 
-- Valid file path that ends with ‘\*’, which means only files under sub-folders, besides the files directly under the folder. <br/>For example: C:\Temp\*
+- Valid file path that ends with ‘\*’, which means only files under subfolders, besides the files directly under the folder. <br/>For example: C:\Temp\*
 
-- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all sub-folders. <br/>For example: C:\Temp
+- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all subfolders. <br/>For example: C:\Temp
 
 - A path with wildcard between ‘\’ from each side. <br/>For example: C:\Users\*\Desktop\
 
@@ -114,7 +114,7 @@ Just like on Windows devices, you will now be able to prevent macOS apps from ac
 > Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
 
 To find the full path of Mac apps:
-1. On the macOS device, open **Activity Monitor**. Find and double click the process you want to restrict
+1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
 
 2. Choose **Open Files and Ports** tab.
   
@@ -123,7 +123,7 @@ To find the full path of Mac apps:
 
 #### Protect sensitive data from cloud synchronization apps
 
-To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to accesses an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
+To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
 
 ##### Auto-quarantine (preview)
 
@@ -165,14 +165,14 @@ You can control how users interact with the business justification option in DLP
 
 - **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
 - **Only show default options**: Users can only select a built-in justification.
-- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end user policy tip notification. 
+- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end-user policy tip notification. 
 
 ##### Customizing the options in the drop-down menu
 
 You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
 
 
-|Option |default text  |
+|Option |Default text  |
 |---------|---------|
 |option 1    | **This is part of an established business workflow**  or you can enter customized text        |
 |option 2  |**My manager has approved this action** or you can enter customized text         |
@@ -195,7 +195,7 @@ With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional 
 When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge
 Chromium and Edge Chromium, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
-To use this restriction you’ll need to configure three important pieces:
+To use this restriction, you’ll need to configure three important pieces:
 
 1. Specify the places – services, domains, IP addresses – that you want to prevent sensitive items from being shared to.
 
