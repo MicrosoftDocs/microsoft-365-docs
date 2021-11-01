@@ -86,7 +86,7 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
     **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
 
-4. select **Save** to activate SuccessFactors content in Microsoft Viva Learning. There may be a delay before the content is available in Viva Learning.
+4. Select **Save** to activate SuccessFactors content in Microsoft Viva Learning. There may be a delay before the content is available in Viva Learning.
 
 >[!Note]
 > SuccessFactors courses will start appearing in Viva Learning within 7 days of successful setup.
