@@ -25,7 +25,7 @@ ms.collection:
 
 Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-## The setup and configuration process at a glance
+## The setup and configuration process
 
 :::image type="content" source="media/mdb-setup-process.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
