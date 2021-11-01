@@ -108,7 +108,7 @@ Cloud attachments are embedded links to files that users share, and these can be
 
 In this scenario, because the retention label is not applied to the original file, the labeled file is never modified or deleted by a user. The labeled file remains in the Preservation Hold library until the timer job identifies that its retention period has expired. If the retention settings are configured to delete items, the file is then moved to the second-stage Recycle Bin, where it's permanently deleted at the end of 93 days:
 
-![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention_diagram_of_retention_flow_cloud-attachments.png)
+![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
 
