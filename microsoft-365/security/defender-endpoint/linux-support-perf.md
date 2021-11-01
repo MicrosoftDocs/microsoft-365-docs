@@ -41,7 +41,7 @@ Depending on the applications that you are running and your device characteristi
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information for troubleshootingbe performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on Linux.
 
-> [!NOTICE]
+> [!NOTE]
 > The Microsoft Defender for Endpoint Client Analyzer tool is regularly used by Microsoft Customer Support Services (CSS) to collect information such as (but not limited to) IP addresses, PC names that will help troubleshoot issues you may be experiencing with Microsoft Defender for Endpoint. For more information about our privacy statement, see [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ### Requirements
