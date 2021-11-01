@@ -35,9 +35,7 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
 
 4. On the **Configuration settings** step, review the settings. Make any needed changes to **Domain network**, **Public network**, and **Private network**.
 
-5. Set **Allow local policy merge** to **Yes** to honor firewall settings on users' devices. Alternately, you can set it to **No**, which will ignore firewall settings on users' devices and apply only the firewall settings defined in Microsoft Defender for Business.
-
-6. To create a custom rule, follow these steps: 
+5. To create a custom rule, follow these steps: 
 
    1. Under **Custom rules**, choose **+ Add rule**. (You can have up to 150 custom rules.)
    2. On the **Create new rule** flyout, specify a name and description for the rule.
@@ -46,9 +44,9 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
    5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-firewall.md#configuration-settings-for-firewall-protection-in-microsoft-defender-for-business).)
    6. On the **Create new rule** flyout, select **Create rule**. 
 
-7. On the **Configuration settings** screen, choose **Next**.
+6. On the **Configuration settings** screen, choose **Next**.
 
-8. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
+7. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
 
 ## Edit a custom rule
 
