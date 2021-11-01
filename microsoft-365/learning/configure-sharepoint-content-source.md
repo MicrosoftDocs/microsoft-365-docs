@@ -140,11 +140,11 @@ To add a **Description** column to the document library page, follow these steps
 
 2. Select the **Show actions** option, and then select **Single line of text**.
 
-     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
+    :::image type="content" alt-text="Documents page in SharePoint showing the Show actions options with Single line of text highlighted." source="../media/learning/learning-sharepoint-curation1.png":::
 
 3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
 
-     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
+    ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
 
 4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning will provide a default message that highlights the content as being from your own SharePoint library.
 
@@ -156,11 +156,11 @@ Knowledge admins can access their organization's Learning App Content Repository
 
 1. In Viva Learning, select the ellipses (**...**), and then select **Settings**.
 
-     ![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png)
+    ![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png)
   
 2. Under **Settings**, select **Permissions**.
 
-     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
+    ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
 3. Select **Check access** to connect to your organization's centralized library.
 
