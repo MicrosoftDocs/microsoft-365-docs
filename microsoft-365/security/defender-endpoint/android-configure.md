@@ -27,7 +27,7 @@ ms.technology: mde
 
 ## Conditional Access with Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
+Microsoft Defender for Endpoint on Android along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability through Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -46,7 +46,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Configure Microsoft Defender for Endpoint 
-IT Admins have the option to turn on or turn off Defender for endpoint security features as required by their organization. This capability is available within the Microsoft Endpoint Manager. For more information, see [Configure Defender for Endpoint on devices that run android](/mem/intune/protect/advanced-threat-protection-manage-android).
+IT Admins have the option to turn on or turn off Defender for endpoint security features. This capability is available within Microsoft Endpoint Manager. For more information, see [Configure Defender for Endpoint on devices that run android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
 ## Configure privacy for malware threat report
 
@@ -55,7 +55,7 @@ IT Admins have the option to turn on or turn off Defender for endpoint security 
 
 Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected. *This feature is currently only available for devices enrolled in **Android Device Administrator** mode.*
 
-Use the following steps to enable it for targeted users:
+Use the following steps to turn it on for targeted users:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
@@ -72,7 +72,7 @@ Use the following steps to enable it for targeted users:
 
 4. Click **Next** and assign this profile to targeted devices/users.
 
-Enabling the above privacy control, will not impact the device compliance check or conditional access, for example, devices with a malicious app will always have a risk level of "Medium".
+Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
 ## Related topics
 
