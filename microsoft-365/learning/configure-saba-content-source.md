@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,38 +15,28 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure Saba as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
 ---
 
 # Configure Saba as a content source for Microsoft Viva Learning
 
->[!NOTE]
->This feature is not supported in preview.
-
 This article shows you how to configure Saba as a third-party learning content source for Microsoft Viva Learning. You must be a Saba System Admin or Super User to perform these steps.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba's privacy and service terms.
+
+>[!NOTE]
+>Viva Learning integration with Saba will use APIs from your bucket of API calls per month and count towards your throttle limit.
 
 ## Client’s Host URL
 
 1. Identify your primary Saba Cloud URL (for example "org".sabacloud.com). If your API dashboard URL is org-api.sabacloud.com, your Host URL will be org.sabacloud.com.
-
 2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
-
-<!--![Image of the API dashboard.](../media/learning/saba-1.png)-->
 
 ## Client ID and Client Secret
 
 1. On the same screen where you got the host URL, copy the Client ID and Client Secret if they've already been generated.
 
 2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
-
-    <!--![Image of the button to generate the Client secret.](../media/learning/saba-2.png)-->
-
-## Username and password
-
-Provide the username and password of an administrative account for Microsoft Viva to use to pull courses, completions, and related information from the Saba Cloud via REST API. This account should ideally be a Super User. If the account isn't a Super User, it must at least have **Learning Admin - Catalog Builder** and **Human Capital Admin** roles (or equivalent custom security roles) in Saba.
 
 ## Last steps
 
@@ -57,9 +47,6 @@ You'll need to complete the configuration in your Microsoft 365 admin center.
 3. Fill in the details that you got from your Saba portal.
     >[!NOTE]
     >Display name is the name of the carousel under which Saba learning content will appear for users in your organization in Viva Learning. If you don't enter a new name, it will display the default name "Saba Cloud".
-
-    <!--![Image of where you post configuration details in the admin center.](../media/learning/saba-3.png)-->
-
 4. Select **Save** to activate Saba Cloud content in Microsoft Viva Learning. It may take up to 24 hours for the content to display in Viva Learning.
 
 > [!Note]
