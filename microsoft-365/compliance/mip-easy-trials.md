@@ -50,7 +50,7 @@ To get these preconfigured labels and policies:
     
 2. If you are eligible for the Microsoft Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
     
-    ![Microsoft Information Protection free trial with preconfigured policies.](../media/mip-preconfigured.png)
+    :::image type="content" alt-text="Microsoft Information Protection free trial with preconfigured policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
 
 ## Default sensitivity labels
 
