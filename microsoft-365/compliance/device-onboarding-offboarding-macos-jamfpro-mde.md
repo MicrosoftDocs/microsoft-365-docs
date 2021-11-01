@@ -61,16 +61,14 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 >
 >If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-### Update the existing Preference domain profile using the JAMF PRO console
+### Update the existing MDE Preference domain profile using the JAMF PRO console
 
 1. Update the schema.xml profile with the **schema.json** file you just downloaded.
 
-1. Under **Preference Domain Properties** choose these settings
+1. Under **MDE Preference Domain Properties** choose these settings
     - Features 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
-    - EDR preferences  
-        - Group IDs: `DLP_Enable`
 
 1. Choose the **Scope** tab.
 
@@ -110,23 +108,14 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 ## Offboard macOS devices using JAMF Pro
 
-To offboard a macOS device, follow these steps
-
- 1. Under **Preference Domain Properties** clear these settings
-    - Features 
-        - Use System Extensions: `enabled` - required for network extensions on Catalina
-        - Use Data Loss Prevention: `enabled`
-    - EDR preferences > 
-        - Group IDs: `DLP_Enable`
-
-1. Choose the **Scope** tab.
-
-1. Choose the groups to deploy this configuration profile to.
-
-1. Choose **Save**. 
-
-1. Restart the macOS device - some applications may lose printing functionality until they are restarted
-
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
+To offboard a macOS device, follow these steps
+
+ 1. Under **MDE Preference Domain Properties** remove the values for these settings
+    - Features 
+        - Use System Extensions
+        - Use Data Loss Prevention
+
+1. Choose **Save**.

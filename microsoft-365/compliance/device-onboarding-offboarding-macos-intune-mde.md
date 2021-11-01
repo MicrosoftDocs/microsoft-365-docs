@@ -109,10 +109,17 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 
 1. In **Microsoft Endpoint Manager center**, open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
-2. In the **Configuration profiles** page, choose the *wdav.pkg.intunemac* profile.
+2. In the **Configuration profiles** page, choose the MDE preferences profile.
 
-1. Choose **Device status** to see a list of devices and the deployment status of the configuration profile.
-
-3. Open **Properties** and **Assignments**.
-
-4. Remove the group from the assignment. This will uninstall the *wdav.pkg.intunemac* package and offboard the macOS device from Compliance solutions.
+1. Remove these settings:
+   
+```xml
+<key>features</key>
+<dict>
+    <key>systemExtensions</key>
+    <string>enabled</string>
+    <key>dataLossPrevention</key>
+    <string>enabled</string>
+</dict>
+```
+3. **Save**.

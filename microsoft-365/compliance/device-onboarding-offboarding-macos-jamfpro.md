@@ -122,8 +122,6 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
     - Features 
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
-    - EDR preferences > 
-        - Group IDs: `DLP_Enable`
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
 
 1. Choose the **Scope** tab.
@@ -135,43 +133,22 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
 
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
 
-1. Copy this xml code and save it to a file named `MDATP_MDAV_MAU_settings.plist`
-
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-<key>ChannelName</key>
-<string>Current</string>
-<key>HowToCheck</key>
-<string>AutomaticDownload</string>
-<key>EnableCheckForUpdatesButton</key>
-<true/>
-<key>DisableInsiderCheckbox</key>
-<false/>
-<key>SendAllTelemetryEnabled</key>
-<true/>
-</dict>
-</plist>
-```
-
-2. Create a JAMF Pro configuration file using the **MDATP_MDAV_MAU_settings.plist** file. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
+1. Create a JAMF Pro configuration file using the **com.microsoft.autoupdate2.plist**. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV MAU settings`
     - Description: `Microsoft AutoUPdate settings for MDATP for macOS`
     - Category: `none`
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-3. In **Application & Custom Settings** choose **Upload** and **Add**.
+1. In **Application & Custom Settings** choose **Upload** and **Add**.
 
-4. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
+1. In **Preferences Domain** enter `com.microsoft.autoupdate2` and then choose **Upload**.
 
-5. Choose the **MDATP_MDAV_MAU_settings.plist* file.
+1. Choose the **com.microsoft.autoupdate2.plist** file.
 
-6. Choose **Save**.
+1. Choose **Save**.
 
-7. Choose the **Scope** tab.
+1. Choose the **Scope** tab.
 
 1. Choose the target computers.
 
