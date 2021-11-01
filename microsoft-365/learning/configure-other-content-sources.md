@@ -49,6 +49,7 @@ Third-party content sources are not enabled by default. To enable these sources,
 1. Log in to your [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Navigate to **Settings**, then **Org settings**. Select Viva Learning, and enable your chosen content provider or learning management system in the panel.
 3. Fill in your details.
+4. Select **Save**.
 
 >[!NOTE]
 >Available content providers are subject to change. Depending on your organization, you may have access to more content providers than are listed here.
