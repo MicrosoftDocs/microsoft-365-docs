@@ -75,7 +75,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
     In a few moments, the Defender for Endpoint app would be created successfully, and a notification would show up at the top-right corner of the page.
 
-    :::image type="content" alt-text="Image of Microsoft Endpoint Manager Admin Center notification of Defender Endpoint app." source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
+    :::image type="content" alt-text="Image of Microsoft Endpoint Manager Admin Center notification of Defender for Endpoint app." source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
@@ -109,7 +109,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" alt-text="Image of Microsoft Endpoint Manager admin center managed google play." source="images/579ff59f31f599414cedf63051628b2e.png" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
 
-2. On your managed Google Play page that loads subsequently, go to the search box and lookup **Microsoft Defender.** Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
+2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
     ![Image of Microsoft Endpoint Manager admin center Apps search.](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
@@ -237,7 +237,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
 4. **Assignment**
 
-   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Choose **Select groups** to include and selecting the applicable group and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
    ![Image of devices configuration profile Assignment.](images/4autosetupofvpn.png)
 
