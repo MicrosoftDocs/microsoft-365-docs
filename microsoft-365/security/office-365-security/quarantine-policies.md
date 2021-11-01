@@ -71,12 +71,12 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 <sup>\*</sup> The quarantine policy named NotificationEnabledPolicy is not present in all environments. You'll have the NotificationEnabledPolicy quarantine policy if your organization meets both of the following requirements:
 
-- Your organization existed before the quarantine policy feature was turned on (late September/early October 2021).
-- You had one or more [anti-spam policies](configure-your-spam-filter-policies.md) (the default anti-spam policy or custom anti-spam policies) where the **Enable end-user spam notifications** setting was turned on (it was off by default).
+- Your organization existed before the quarantine policy feature was turned on (late July/early August 2021).
+- You had one or more [anti-spam policies](configure-your-spam-filter-policies.md) (the default anti-spam policy or custom anti-spam policies) where the **Enable end-user spam notifications** setting was turned on.
 
 As described earlier, quarantine notifications in quarantine policies replace end-user spam notifications that you used to turn on or turn off in anti-spam policies. The built-in quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for quarantined messages, but _quarantine notifications_ are not turned on in the quarantine policy. And, because you can't modify the built-in policy, you can't turn on quarantine notifications in DefaultFullAccessPolicy.
 
-To provide the permissions of DefaultAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned).
+To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned).
 
 For new organizations or older organizations that never had end-user spam notifications enabled in anti-spam policies, you won't have the quarantine policy named NotificationEnabledPolicy. The way for you to turn on quarantine notifications is to create and use custom quarantine policies where quarantine notifications are turned on.
 
