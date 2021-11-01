@@ -54,7 +54,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 
 Recommended actions can help your organization get the most out of communication compliance capabilities and your existing policies. Included on the **Overview** page, recommended actions provide insights and summarize sensitive information types and inappropriate content activities in communications in your organization.
 
-<<SCREENSHOT OF RECOMMENDED ACTIONS>>
+![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
 
 Activity in messages containing inappropriate content is enumerated by classifier type from existing polices that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
 
