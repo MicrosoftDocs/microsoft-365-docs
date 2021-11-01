@@ -4,7 +4,7 @@ ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 10/07/2021
+ms.date: 10/27/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,13 +15,9 @@ ms.collection:
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to configure SAP SuccessFactors as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX
 ---
 
 # Configure SAP SuccessFactors as a content source for Microsoft Viva Learning
-
->[!NOTE]
->This feature is not supported in preview.
 
 This article shows you how to configure SAP SuccessFactors as a third-party content source for Microsoft Viva Learning. First, you'll need to edit the system configuration in the SuccessFactors Portal, then you'll need to complete the configuration in the Microsoft 365 admin center.
 
@@ -39,23 +35,23 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
 
 3. Fill in the following parameters in the PARTNER_EXTRACT configuration. To edit the partner extract configuration in SuccessFactors, you'll need **Edit System Configuration** workflow permission in SuccessFactors.
 
-- customer notification email for all job status
-    - defaultJob.email=
-
-- Partner1
-    - PartnerID maximum length is 10 characters. This can be your LMS tenant ID.
-partners1.partnerID=
-
-- EncryptionKey is the PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK
-    - partners1.encryptionKey=
-
-- KeyOwner maps to the User-ID of public key
-    - partners1.keyOwner=
-
-- enabled can be "false" or "true". Set it to "true" to enable the partner extract.
-    - partners1.enabled=
-
-<!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    - customer notification email for all job status
+        - defaultJob.email=
+    
+    - Partner1
+        - PartnerID maximum length is 10 characters. This can be your LMS tenant ID.
+    partners1.partnerID=
+    
+    - EncryptionKey is the PGP public encryption key, which is the entire section between BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK
+        - partners1.encryptionKey=
+    
+    - KeyOwner maps to the User-ID of public key
+        - partners1.keyOwner=
+    
+    - enabled can be "false" or "true". Set it to "true" to enable the partner extract.
+        - partners1.enabled=
+    
+    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
 
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
@@ -69,8 +65,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 ### Configuration details
 
-<!--![Image of the configuration details filled in in the Microsoft 365 admin center.](../media/learning/sap-2.png)-->
-
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
 **SFTP Host URL**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **CONNECTORS**. Get the value of the `connector.ftp.server` property.
@@ -81,17 +75,15 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 **Folder Path**: Navigate to **LMS Admin Application** > **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**. Get the value of the `defaultFtp.path` property.
 
-**Client’s Host URL**: This is the BizX domain URL. You can get this from your BizX login URL. For example, if your BizX login URL is “organization.successfactors.com/sf/start/#/login” then the host URL is “organization.successfactors.com”.
+**Client's Host URL**: This is the BizX domain URL. You can get this from your BizX login URL. For example, if your BizX login URL is `organization.successfactors.com/sf/start/#/login` then the host URL is `organization.successfactors.com`.
 
-**Client’s Learning Destination URL**: You can get this from the learning domain module URL. For example, if the learning domain URL is “organization.scdemo.successfactors.com/learning/...” then the Learning Destination URL is “organization.scdemo.successfactors.com”.
+**Client's Learning Destination URL**: You can get this from the learning domain module URL. For example, if the learning domain URL is `organization.scdemo.successfactors.com/learning/...` then the Learning Destination URL is `organization.scdemo.successfactors.com`.
 
 **PGP Private Key**: PGP private key for decryption, which is the entire section between BEGIN PGP PRIVATE KEY BLOCK and END PGP PRIVATE KEY BLOCK. You'll need to copy the key exactly as it's been generated; don't remove new line characters.
 
 **PGP Private Key Passphrase**: You'll need to get this value from your IT admin or the team that provides your PGP key.
 
 **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
-
-<!--![Image of the steps to find your company ID.](../media/learning/sap-3.png)-->
 
 >[!Note]
 > SuccessFactors courses will start appearing in Viva Learning within 7 days of successful setup.
