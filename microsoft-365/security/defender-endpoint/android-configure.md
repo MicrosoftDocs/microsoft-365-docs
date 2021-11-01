@@ -45,6 +45,53 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+## Configure vulnerability assessment of apps for BYOD devices
+
+From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, we have the capability to run vulnerability assessment of OS and apps installed on the onboarded mobile devices.
+
+> [!NOTE]
+> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. On Android, this feature is currently in preview and may be substantially modified before it's commercially released.
+
+**Notes about privacy related to apps from personal devices (BYOD):**
+
+- For Android Enterprise with a work profile, only apps installed on the work profile will be supported.
+- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. Visit the documentation to learn more.
+
+### Configure privacy for device administrator mode
+
+Use the following steps to **enable vulnerability assessment of apps** from devices in **device administrator** mode for targeted users. 
+> [!NOTE]
+> By default, this is turned off for devices enrolled with device admin mode.
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
+
+   - **Platform**: Select Android device administrator
+   - **Profile**: Select “Custom” and click Create
+
+2. In the **Basics** section, specify a name and description of the profile.
+3. In the **Configuration settings**, select Add **OMA-URI** setting:
+
+   - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
+   - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderTVMPrivacyMode**
+   - Data type: Select Integer in the drop-down list.
+   - Value: Enter 0 to disable privacy setting (By default, the value is 1)
+
+4. Click **Next** and assign this profile to targeted devices/users.
+
+### Configure privacy for Android Enterprise work profile
+
+Defender for Endpoint supports vulnerability assessment of apps in the work profile. However, in case you want to turn this feature off for targeted users, you can use the following steps:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
+   - To disable vulnerability of apps in the work profile, enter value as 1 and assign this policy to users. By default, this value is set 0.
+   - For users with key set as ‘0’, Defender will send the list of apps from the work profile to the backend service for vulnerability assessment.
+5. Click **Next** and assign this profile to targeted devices/users.
+
+Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+
 ## Configure privacy for malware threat report
 
 > [!NOTE]
@@ -59,8 +106,8 @@ Use the following steps to enable it for targeted users:
    - **Platform**: Select Android device administrator
    - **Profile**: Select “Custom” and click Create
 
-2. In the Basics section, specify a name and description of the profile.
-3. In the Configuration settings, select Add **OMA-URI** setting:
+2. In the **Basics** section, specify a name and description of the profile.
+3. In the **Configuration settings**, select Add **OMA-URI** setting:
 
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
