@@ -192,6 +192,9 @@ For more information about configuring Yammer in Native Mode, see:
 
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out this 15-minute video to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
+></br>
+></br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWNchy]
 
 1. Sign into <https://compliance.microsoft.com> using credentials for an admin account in your Microsoft 365 organization.
 
