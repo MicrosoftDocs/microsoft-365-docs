@@ -1,7 +1,7 @@
 ---
 title: Add SharePoint as a learning content source for Microsoft Viva Learning
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 10/27/2021
@@ -9,7 +9,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
@@ -27,7 +27,7 @@ You can configure SharePoint as a learning content source to make your organizat
 
 ## Overview
 
-The knowledge admin (or global administrator) provides a site URL to where the [Learning Service](configure-sharepoint-content-source.md#learning-service) can create an empty centralized location—the Learning App Content Repository—in the form of a structured SharePoint list. This list can be used by your organization to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning.
+The knowledge admin (or global administrator) provides a site URL to where the [Learning Service](configure-sharepoint-content-source.md#learning-service) can create an empty centralized location in the form of a structured SharePoint list. This list is called the Learning App Content Repository. Your organization can use this list to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning.
 
 Viva Learning supports the following document types:
 
@@ -166,4 +166,4 @@ Knowledge admins can access their organization's Learning App Content Repository
 
 ## Next step
 
-[Add other content providers for Microsoft Viva Learning](configure-other-content-sources.md)
+[Add learning management systems for Viva Learning](configure-lms.md) or [Add other content providers for Microsoft Viva Learning](configure-other-content-sources.md).
