@@ -16,23 +16,18 @@ ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
 
-# SDK & APIs are available NOW!
-
-Automation is a key aspect of DevOps and agile development. Are you looking to manage Test Base for Microsoft 365 resources, get test results programmatically, and integrate them with our CI tools? Test Base has now released both the REST APIs, and Python SDK!  
- 
+# Manage your resource with SDK & APIs
+Automation is a key aspect of DevOps and agile development. Are you looking to manage Test Base for Microsoft 365 resources, get test results programmatically, and integrate them with our CI tools? Test Base APIs/SDK can help you achieve all these and more! 
 
 These APIs/SDK enable IT professionals and app developers to: 
-
 - Manage Test Base accounts, including create, update, and offboard. 
 - Manage application packages, including create, update, delete, and download package. 
 - Get the test summary, detailed test results, and analysis results. The analysis result includes CPU regression analysis, CPU utilization analysis, memory regression analysis, and memory utilization analysis. 
 - Download test results and test execution video recording.  
 
- 
+Check out the step-by-step outline below to find out how to access this new capability in Test Base for Microsoft 365 service.
 
-## A step-by-step example 
-
-Below is an example of Test Base account creation by using Python SDK. 
+## A step-by-step example of Test Base account creation by using Python SDK
 
 1. Pre-requisites: 
 
@@ -115,9 +110,3 @@ Check below links to learn more details about the SDK & API.
 **REST API**  
 
 - [REST API Documentation](https://aka.ms/testbase-api)  
-
-We are continuously gathering and collaborating on feedback to prioritize and improve the future for Test Base. Email us at  tbcomms@microsoft.com, we look forward to hearing your feedback and comments! 
-
-## Join the Test Base community 
-
-We are actively engaging with application developers and enterprise customers now to add more value and help solve additional use cases. We would also like to invite you to come join us at the new [Test Base for M365 community](https://techcommunity.microsoft.com/t5/update-staging-lab/ct-p/UpdateStagingLab) on Tech Community so you can share your experiences and connect with others using the service. 
