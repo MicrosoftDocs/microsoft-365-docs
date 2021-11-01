@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/27/2021
+ms.date: 11/01/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -51,8 +51,6 @@ Microsoft Defender for Business includes firewall protection through Windows Def
 ## Next steps
 
 - [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
-
-- [Learn more about firewall settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md#firewall)
 
 - [Learn more about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 
