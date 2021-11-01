@@ -14,12 +14,12 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
-description: Learn how to configure other providers as a learning content source for Microsoft Viva Learning.
+description: Learn how to configure other content providers as a learning content source for Microsoft Viva Learning.
 ---
 
 # Add other content providers for Microsoft Viva Learning
 
-A growing set of learning content providers and learning management systems are available through Viva Learning. This set may change at any time as more providers join or change their status with the program.
+A growing set of learning content providers are available through Viva Learning. This set may change at any time as more providers join or change their status with the program.
 
 Some learning sources will be enabled by default and will be available without a premium Viva Learning license. These learning sources include:
 
@@ -32,13 +32,13 @@ Third-party content sources are not enabled by default. To enable these sources,
 >[!NOTE]
 >You'll need a Premium license to connect external content sources, with the exception of the select LinkedIn Learning free courses. [Learn more about licensing](https://www.microsoft.com/microsoft-viva/learning).
 
-|Content provider or learning management system  |Configuration instructions  |
+>[!NOTE]
+>It can take 24 to 48 hours for Viva Learning users to see content for the sources you enabled in the admin portal. It can also take 24 to 48 hours to hide content from LinkedIn Learning, Microsoft Learn and Microsoft 365 trainings from Viva Learning after you have disabled them in the admin portal.
+
+|Content provider  |Configuration instructions  |
 |---------|---------|
-|Cornerstone OnDemand |[Configure Cornerstone OnDemand as a content source](configure-cornerstone-content-source.md)         |
 |Go1     |[Configure Go1 as a content source](configure-go1-content-source.md)         |
-|Saba    |[Configure Saba as a content source](configure-saba-content-source.md)         |
 |Skillsoft     |[Configure Skillsoft as a content source](configure-skillsoft-content-source.md)         |
-|SAP SuccessFactors   |[Configure SAP SuccessFactors as a content source](configure-successfactors-content-source.md)         |
 |Udemy   |[Configure Udemy as a content source](configure-udemy-content-source.md)         |
 |edX    |Follow the steps below to add edX in your Microsoft 365 admin center.    |
 |Coursera    |Follow the steps below to add Coursera in your Microsoft 365 admin center.    |
@@ -49,9 +49,10 @@ Third-party content sources are not enabled by default. To enable these sources,
 1. Log in to your [Microsoft 365 admin center](https://admin.microsoft.com).
 2. Navigate to **Settings**, then **Org settings**. Select Viva Learning, and enable your chosen content provider or learning management system in the panel.
 3. Fill in your details.
+4. Select **Save**.
 
 >[!NOTE]
->Available content providers and learning management systems are subject to change. Depending on your organization, you may have access to more content providers and learning management systems than are listed here.
+>Available content providers are subject to change. Depending on your organization, you may have access to more content providers than are listed here.
 
 ## Content ingestion errors
 
@@ -61,9 +62,6 @@ If you experience any errors in your Microsoft 365 admin center during content i
 |:----------------|:----------|:----------------------|
 |All providers |USR_ERROR_INVALID_RESOURCE_CREDENTIALS |The authentication credentials you provided are Invalid. Make sure you enter the correct credentials. You can contact Microsoft customer support for more details. |
 |All providers |USR_ERROR_ACCESS_DENIED |Access denied by partner. Confirm that the credentials you entered are correct or contact the content provider's support team. |
-|SuccessFactors |USR_ERROR_SFTP_NO_FILES_FOUND |No new content ingested because there were no files present in the SuccessFactors SFTP server. |
-|SuccessFactors |USR_ERROR_SF_PACKAGE_NOT_FOUND |No new content ingested as the required package was not found in the SuccessFactors SFTP server. |
-|Cornerstone OnDemand |USR_ERROR_INVALID_RESOURCE_CREDENTIALS |The authentication credentials you provided are Invalid. Make sure the credentials are being copied from Microsoft Viva Learning in Cornerstone OnDemand portal. |
 
 ## Content consumption for end users
 
