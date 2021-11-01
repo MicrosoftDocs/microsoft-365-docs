@@ -91,7 +91,6 @@ Navigation instructions depend on whether you're using [records management](reco
     - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** 
-4.  configuration that takes you directly to step 2 in the following procedure.
 
 To edit an existing label, select it, and then select the **Edit label** option to start the **Edit retention label** configuration that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
