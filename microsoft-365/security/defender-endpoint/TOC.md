@@ -158,6 +158,7 @@
 
 ##### [Microsoft Defender for Endpoint on Android]()
 ###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+###### [What's new](android-whatsnew.md)
 
 ###### [Deploy]()
 ####### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
