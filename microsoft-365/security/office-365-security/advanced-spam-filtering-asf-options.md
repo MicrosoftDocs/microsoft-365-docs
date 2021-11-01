@@ -64,7 +64,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 ## Increase spam score settings
 
-The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
+The following **Increase spam score** ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
 
 <br>
 
@@ -80,7 +80,7 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 
 ## Mark as spam settings
 
-The following ASF settings (except Backscatter, Sender ID filtering hard fail which correspond to SCL 6)  set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
+The following **Mark as spam** ASF settings set the SCL of detected messages to 9, which corresponds to a **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
 
 <br>
 
@@ -97,6 +97,16 @@ The following ASF settings (except Backscatter, Sender ID filtering hard fail wh
 |**Object tags in HTML** <p> *MarkAsSpamObjectTagsInHtml*|Messages that contain `<object>` HTML tags are marked as high confidence spam. <p> This tag allows plug-ins or applications to run in an HTML window.|`X-CustomSpam: Object tag in html`|
 |**Sensitive words** <p> *MarkAsSpamSensitiveWordList*|Microsoft maintains a dynamic but non-editable list of words that are associated with potentially offensive messages. <p> Messages that contain words from the sensitive word list in the subject or message body are marked as high confidence spam.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF record: hard fail** <p> *MarkAsSpamSpfRecordHardFail*|Messages sent from an IP address that isn't specified in the SPF Sender Policy Framework (SPF) record in DNS for the source email domain are marked as high confidence spam. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF Record Fail`|
+|
+
+The following **Mark as spam** ASF settings set the SCL of detected messages to 6, which corresponds to a **Spam** filter verdict and the corresponding action in anti-spam policies.
+
+<br>
+
+****
+
+|Anti-spam policy setting|Description|X-header added|
+|---|---|---|
 |**Sender ID filtering hard fail** <p> *MarkAsSpamFromAddressAuthFail*|Messages that hard fail a conditional Sender ID check are marked as spam. <p> This setting combines an SPF check with a Sender ID check to help protect against message headers that contain forged senders. <p> Test mode is not available for this setting.|`X-CustomSpam: SPF From Record Fail`|
-|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <p> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul> <p> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter are marked as high confidence spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul> <p> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|
+|**Backscatter** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <p> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul> <p> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter is marked as spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul> <p> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|
 |
