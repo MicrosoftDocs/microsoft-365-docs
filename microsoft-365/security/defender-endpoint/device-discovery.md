@@ -1,4 +1,4 @@
-﻿---
+---
 title: Device discovery overview
 description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
@@ -107,14 +107,14 @@ Find details about discovered Endpoints in the DeviceInfo table, or network-rela
 
 ![Image of advanced hunting use.](images/f48ba1779eddee9872f167453c24e5c9.png)
 
-Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
+Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 
-New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled. 
+New events are Transmission Control Protocol (TCP) connections-based and will fit to the current DeviceNetworkEvents scheme. TCP ingress to the Microsoft Defender for Endpoint enabled device from a non-Microsoft Defender for Endpoint enabled.
 
 The following action types have also been added:
 
-- ConnectionAttempt - An attempt to establish a TCP connection (syn) 
-- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack) 
+- ConnectionAttempt - An attempt to establish a TCP connection (syn)
+- ConnectionAcknowledged - An acknowledgment that a TCP connection was accepted (syn\ack)
 
 You can try this example query:
 
@@ -128,7 +128,7 @@ DeviceNetworkEvents
 
 The following section lists the changes you'll observe in Microsoft Defender for Endpoint and/or Microsoft 365 Security Center when this capability is enabled.
 
-1. Devices that are not onboarded to Microsoft Defender to Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
+1. Devices that are not onboarded to Microsoft Defender for Endpoint are expected to appear in the device inventory, advanced hunting, and API queries. This may significantly increase the size of query results.
     1. "DeviceInfo" and "DeviceNetworkInfo" tables in Advanced Hunting will now hold discovered device. You can filter out those devices by using "OnboardingStatus" attribute.
     2. Discovered devices are expected to appear in Streaming API query results. You can filter out those devices by using the `OnboardingStatus` filter in your query.
 2. Unmanaged devices will be assigned to existing device groups based on the defined criteria.
