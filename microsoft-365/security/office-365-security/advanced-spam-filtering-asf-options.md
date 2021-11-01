@@ -34,7 +34,7 @@ In all Microsoft 365 organizations, the Advanced Spam Filter (ASF) settings in a
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by:
 >
-> - Periodic end-user spam quarantine notifications.
+> - Periodic quarantine notifications from spam and high confidence spam filter verdicts.
 > - The presence of filtered messages in quarantine.
 > - The specific `X-CustomSpam:` X-header fields that are added to messages as described in this article.
 
