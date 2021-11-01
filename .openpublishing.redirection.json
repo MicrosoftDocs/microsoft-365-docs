@@ -5385,6 +5385,11 @@
       "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/service-description/device-lifecycle.md",
+      "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
+      "redirect_document_id": true
+    }
   ]
 }
