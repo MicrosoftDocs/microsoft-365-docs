@@ -31,4 +31,4 @@ Follow these steps to test the configuration of Microsoft 365 support integratio
 
 3. Focus on the **Microsoft 365 Support** tab and select **Microsoft 365 Insights** to determine if the recommended solutions were returned successfully.
 
-    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image38.png" alt-text="Graphical user interface, application, website Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image38.png" alt-text="Graphical user interface, application, website Description automatically generated":::
