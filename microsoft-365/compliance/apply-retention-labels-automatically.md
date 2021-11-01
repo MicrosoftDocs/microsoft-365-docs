@@ -318,7 +318,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 
-Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. Use the [visual checklist](article) to help you identify what are and aren't cloud attachments.
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file.
 
 When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
 
