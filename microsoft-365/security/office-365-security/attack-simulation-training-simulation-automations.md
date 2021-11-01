@@ -70,7 +70,7 @@ On the **Select payloads** page, select one of the following options:
 
 If you select **Randomize**, there's nothing to configure on this page, so click **Next** to continue.
 
-If you select **Manually select**, you need to select one ore more payloads from the list. The following details are displayed to help you choose:
+If you select **Manually select**, you need to select one or more payloads from the list. The following details are displayed to help you choose:
 
 - **Payload name**
 - **Technique**: You need to select as one payload per technique that you selected on the previous page.

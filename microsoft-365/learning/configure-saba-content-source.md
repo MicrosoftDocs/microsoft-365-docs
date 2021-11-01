@@ -22,7 +22,7 @@ description: Learn how to configure Saba as a learning content source for Micros
 This article shows you how to configure Saba as a third-party learning content source for Microsoft Viva Learning. You must be a Saba System Admin or Super User to perform these steps.
 
 >[!NOTE]
->Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba’s privacy and service terms.
+>Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Saba content and any associated services are subject to Saba's privacy and service terms.
 
 >[!NOTE]
 >Viva Learning integration with Saba will use APIs from your bucket of API calls per month and count towards your throttle limit.
