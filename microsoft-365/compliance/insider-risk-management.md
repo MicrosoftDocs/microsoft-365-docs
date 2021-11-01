@@ -83,6 +83,7 @@ You can select from the following policy templates to quickly get started with i
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
+- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview))
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
@@ -169,9 +170,15 @@ Users in your organization may have different levels of risk depending on their 
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 
+## Healthcare (preview)
+
+For organizations in the healthcare industry, recent studies have found a very high rate of insider-related data breaches. Detecting misuse of patient data and health record information is a critical component of safeguarding patient privacy and complying with compliance regulation such as the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Patient data misuse can range from accessing privileged patient records to accessing records of patients from family or neighbors with malicious intent. To help identity these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and a healthcare-specific data connector to start scoring risk indicators relating to behaviors that may occur within your electronic heath record (EHR) systems:
+
+- [General patient data misuse (preview)](insider-risk-management-policies.md#health-record-access-preview)
+
 ## Actions and behaviors by disgruntled users (preview)
 
-Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users do not respond maliciously to these events, the stress of these actions may result in some users to take actions they may not normally consider during normal circumstances. To help identity these types risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
+Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users do not respond maliciously to these events, the stress of these actions may result in some users to take actions they may not normally consider during normal circumstances. To help identity these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
