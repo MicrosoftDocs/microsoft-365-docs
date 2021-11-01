@@ -3,8 +3,8 @@ title: Understand terms and conditions
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
-ms.reviewer: chrisarnoldmsft
-ms.date: 
+ms.reviewer: shirana
+ms.date: 11/02/2021
 audience: admin
 ms.topic: article
 ms.service: 
@@ -25,8 +25,8 @@ Content accessible through Viva Learning is subject to terms other than the Micr
 
 - Microsoft 365 Trainings content is subject to terms available [here](https://www.microsoft.com/legal/terms-of-use) or at a successor location.
 
-- LinkedIn Learning content is subject to LinkedIn’s User Agreement (available [here](https://www.linkedin.com/legal/user-agreement) or at a successor location) and Privacy Policy (available [here](https://www.linkedin.com/legal/privacy-policy) or at a successor location).
+- LinkedIn Learning content is subject to LinkedIn's User Agreement (available [here](https://www.linkedin.com/legal/user-agreement) or at a successor location) and Privacy Policy (available [here](https://www.linkedin.com/legal/privacy-policy) or at a successor location).
 
-- Non-Microsoft third-party content and any associated services are subject to the content provider’s privacy and service terms.
+- Non-Microsoft third-party content and any associated services are subject to the content provider's privacy and service terms.
 
 - Any content you add to Viva Learning, such as SharePoint-hosted content, is subject to the privacy and service terms associated with that content.

@@ -26,7 +26,7 @@ This article walks you through four scenarios where you create and modify a DLP 
 
 ## DLP settings
 
-Before you get started you should set up your DLP settings which are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
+Before you get started, you should set up your DLP settings. Settings are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
 
 - cloud egress restrictions
 - unallowed apps restrictions
@@ -49,17 +49,35 @@ If bandwidth utilization is not a concern, you can not set a limit and allow unl
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
+### Endpoint DLP Windows 10 and macOS settings
+
+
+|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|---------|---------|---------|---------|
+|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Unallowed Apps     |Supported         |Supported         |         |
+|Unallowed Bluetooth apps    |Supported         |not supported         |         |
+|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
+|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
+|Always audit file activity for devices     |Supported         |Supported         |         |
+
+
+
 ### File path exclusions
+
+Open [Compliance center](https://compliance.microsoft.com) > **Data loss prevention** > **Endpoint DLP settings** > **File path exclusions**.
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they are too noisy or don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-You can use this logic to construct your exclusion paths:
+#### Windows 10 devices
+
+You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
 
-- Valid file path that ends with ‘\*’, which means only files under sub-folders, besides the files directly under the folder. <br/>For example: C:\Temp\*
+- Valid file path that ends with ‘\*’, which means only files under subfolders, besides the files directly under the folder. <br/>For example: C:\Temp\*
 
-- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all sub-folders. <br/>For example: C:\Temp
+- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all subfolders. <br/>For example: C:\Temp
 
 - A path with wildcard between ‘\’ from each side. <br/>For example: C:\Users\*\Desktop\
 
@@ -69,19 +87,58 @@ You can use this logic to construct your exclusion paths:
 
 - A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
+#### macOS devices (preview)
+
+Similar to Windows 10 devices you can add your own exclusions for macOS devices.
+
+- File path definitions are case insensitive, so `User` is the same as `user`.
+
+- Wildcard values are supported. So a path definition can contain a `*` in the middle of the path or at the end of the path. For example: `/Users/*/Library/Application Support/Microsoft/Teams/*`
+
+#####  Recommended file path exclusions (preview)
+
+For performance reasons, Endpoint DLP includes a list of recommended file path exclusions for macOS devices. These exclusions are turned on by default. You can disable them if you want by toggling the **Include recommended file path exclusions for Mac** toggle. The list includes:
+
+- /Applications/*
+- /System/*
+- /usr/*
+- /Library/*
+- /private/*
+- /opt/*
+- /Users/*/Library/Application Support/Microsoft/Teams/*
+
 ### Unallowed apps
 
-Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file.
+Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file. It is available for Windows 10 and macOS devices (preview).
+
 When a policy's **Access by unallowed apps** setting is turned on, and an app that is on the unallowed list attempts to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
+#### macOS devices (preview)
+
+Just like on Windows devices, you will now be able to prevent macOS apps from accessing sensitive data by defining them in the **Unallowed apps** list. 
+
+> [!NOTE]
+> Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
+
+To find the full path of Mac apps:
+1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
+
+2. Choose **Open Files and Ports** tab.
+  
+3. The app name is located at the end of the full path.
+
+
 #### Protect sensitive data from cloud synchronization apps
 
-To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to accesses an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
+To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
 
 ##### Auto-quarantine (preview)
+
+> [!NOTE]
+> Auto-quarantine is supported in Windows 10 only
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
@@ -118,14 +175,14 @@ You can control how users interact with the business justification option in DLP
 
 - **Show default options and custom text box**: By default, users can select either a built-in justification, or enter their own text.
 - **Only show default options**: Users can only select a built-in justification.
-- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end user policy tip notification. 
+- **Only show custom text box**: Users can only enter their own justification. Only the text box will appear in the end-user policy tip notification. 
 
 ##### Customizing the options in the drop-down menu
 
 You can create up to five customized options that will appear when users interact with the policy notification tip by selecting the **Customize the options drop-down menu**. 
 
 
-|Option |default text  |
+|Option |Default text  |
 |---------|---------|
 |option 1    | **This is part of an established business workflow**  or you can enter customized text        |
 |option 2  |**My manager has approved this action** or you can enter customized text         |
@@ -148,7 +205,7 @@ With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional 
 When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge
 Chromium and Edge Chromium, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
-To use this restriction you’ll need to configure three important pieces:
+To use this restriction, you’ll need to configure three important pieces:
 
 1. Specify the places – services, domains, IP addresses – that you want to prevent sensitive items from being shared to.
 
