@@ -41,6 +41,6 @@ The following folders are used by the Test Base infrastructure:
 
 ## Test Base registry keys
 
-The applications/tests should not delete/modify any registry keys related to:
+The applications/tests should not delete or modify any registry keys related to:
 * Windows telemetry level
 * Removing TLS 1.2
