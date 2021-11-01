@@ -19,8 +19,6 @@
       items: 
         - name: Supported regions
           href: service-description/regions-languages.md
-        - name: Product lifecycle
-          href: service-description/device-lifecycle.md
         - name: Devices
           href: 
           items:
