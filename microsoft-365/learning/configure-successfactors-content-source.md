@@ -24,10 +24,10 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. SAP SuccessFactors content and any associated services are subject to the SAP SuccessFactors privacy and service terms.
 
-## Configure the SuccessFactors portal
+## Configure in your SuccessFactors portal
 
->[!Note]
-> The admin who enables this feature must have access to the SuccessFactors Learning administrator application.
+>[!NOTE]
+>You'll need to have admin permissions in SuccessFactors to complete these steps.
 
 1. Obtain the required workflows to edit the PARTNER_EXTRACT configuration, which you can get to by going to **System Administration** > **Configuration** > **System Configuration** > **PARTNER_EXTRACT**.
 
@@ -55,15 +55,16 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
 
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
-## Configure the Microsoft 365 admin center
+## Configure in your Microsoft 365 admin center
+
+>[!NOTE]
+>You'll need to have admin permissions in Microsoft 365 to complete these steps.
 
 1. Navigate to your [Microsoft 365 admin center](https://admin.microsoft.com).
 
 2. Navigate to **Settings** > **Org settings**. Search for *Viva Learning* and enable SAP SuccessFactors from the options.
 
-3. Fill in the configuration details.
-
-### Configuration details
+3. Fill in the configuration details:
 
 **Display Name**: Enter your desired display name for the SAP SuccessFactors carousel.
 
@@ -91,10 +92,8 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 >[!Note]
 > All users within an organization will be able to discover all the tenant-specific courses, but they'll only be able to access and consume courses that they have access to. User specific content discovery is planned for future releases.
 
-## Data residency
+>[!NOTE]
+>Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
 
-Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
-
-## Roles and permissions
-
-Users within an organization will be able to discover all content available to their organization, but they'll only be able to consume courses that they have access to.
+>[!NOTE]
+>Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to use the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
