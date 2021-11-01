@@ -54,6 +54,9 @@ After a search associated with a Core eDiscovery case is successfully run, you c
 
 8. After all items have been transferred, click **Download results** to download the search results to your local computer. For more information downloading search results, see Step 2 in [Export content search results](export-search-results.md#step-2-download-the-search-results)
 
+> [!NOTE]
+> The exported search results must be downloaded within 14 days after you created the export job.
+
 ### More information about exporting searches from a case
 
 - For more information about the export files that are included when you export search results, see [Export a Content search report](export-a-content-search-report.md#whats-included-in-the-report).
