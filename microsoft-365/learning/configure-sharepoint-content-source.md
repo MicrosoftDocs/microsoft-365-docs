@@ -95,7 +95,7 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
        ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
 
-   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
+   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**. [Learn how to to create the folder URL](#folder-url-document-library-curation).
 
        ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
 
@@ -111,9 +111,28 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
 ### Folder URL document library curation
 
+Create a folder to store learning content for your organization.
+
+1. Go to your Documents library and select **+ New**.
+
+    ![Image of an empty documents library with the cursor selecting New and Folder.](../media/learning/spfolder-3.png)
+
+2. Choose **Folder** and enter a folder name.
+
+    ![Image of the Create a folder pane with the name Training Materials entered.](../media/learning/spfolder-5.png)
+
+3. Select **Create**. The folder will now show up in your document library.
+
+    ![Image of a folder called Training Materials in the document library.](../media/learning/spfolder-6.png)
+
+4. Upload files that you want to publish as learning content in this folder.
+5. To get the folder url, choose this folder and select **Copy link**.
+
+    ![Image of the Link copied popup.](../media/learning/spfolder-8.png)
+
 Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning by the Microsoft Graph API.
 
-To improve overall discovery and search relevance of the content, we recommend adding a **Description** column.
+To improve overall discovery and search relevance of the content, we recommend adding a **Description** column. If there's already a description column present, you can delete it and add a new one by following the steps below.
 
 To add a **Description** column to the document library page, follow these steps:
 
