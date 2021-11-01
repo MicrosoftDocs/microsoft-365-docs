@@ -1,5 +1,5 @@
 ---
-title: 'Application/test rules'
+title: 'Application/Test rules'
 description: Rules to be followed when uploading an application/test
 search.appverid: MET150
 author: andreicsibi-msft
@@ -15,11 +15,11 @@ ms.custom:                 # This is an optional, free-form field you can use to
 ms.reviewer: mapatel
 f1.keywords: NOCSH
 ---
-# Application / Test rules
+# Application/Test rules
 
-All application or tests in Test Base need to follow the following rules:
+All applications or tests in Test Base need to comply with the following rules:
 
-## Test Base Folders 
+## Test Base folders 
 
 The following folders are used by the Test Base infrastructure:
 * %SYSTEMDRIVE%\USL
@@ -35,12 +35,12 @@ The following folders are used by the Test Base infrastructure:
 * %SYSTEMDRIVE%\WULogs
 
 > [!IMPORTANT]
-> **Avoid the following:**
-> * Blocking the execution of any process from these folders. If your application is an anti-malware software, configure your app installation to allow unimpeded execution of all processes from these folders.
-> * Tampering with of these folders.
+> **Avoid the following**:
+> * Blocking the execution of any process from these folders. If your application is anti-malware software, configure your app installation to allow unimpeded execution of all processes from these folders.
+> * Tampering with any of these folders.
 
-## Test Base Registry Keys
+## Test Base registry keys
 
 The applications/tests should not delete/modify any registry keys related to:
-* Windows Telemetry level
+* Windows telemetry level
 * Removing TLS 1.2
