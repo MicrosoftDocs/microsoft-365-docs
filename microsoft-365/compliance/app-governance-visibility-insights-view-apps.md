@@ -41,7 +41,7 @@ You will see a list of apps and this information:
 - Publisher
 - M365 certification
 
-  Indicates whether the app is compatible with Microsoft technologies, compliant with cloud app security best practices, and supported by Microsoft.
+  Indicates whether the app is compatible with Microsoft technologies, compliant with security best practices, and supported by Microsoft.
 
 - Last modified
 
@@ -52,7 +52,7 @@ You will see a list of apps and this information:
 - Number of users
 - Data access
 
-  The sum of the app’s data upload and download in the tenant over the last day, along with the change over the prior day.
+  The sum of the app's data upload and download in the tenant over the last day, along with the change over the prior day.
 
 App governance sorts the app list by **App name** by default. To sort the list by another app attribute, select the attribute name.
 
