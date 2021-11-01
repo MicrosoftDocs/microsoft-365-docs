@@ -5381,6 +5381,11 @@
       "redirect_url": "/microsoft-365/learning/set-up-viva-learning",
       "redirect_document_id": true
    },
+   {
+     "source_path": "microsoft-365/learning/linkedin-learning.md",
+     "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
+     "redirect_document_id": true
+   },
     {
       "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
