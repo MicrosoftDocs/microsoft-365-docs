@@ -191,10 +191,7 @@ For more information about configuring Yammer in Native Mode, see:
 >Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
 >[!TIP]  
->Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out this 15-minute video to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
-></br>
-></br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWNchy]
+>Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
 1. Sign into <https://compliance.microsoft.com> using credentials for an admin account in your Microsoft 365 organization.
 
