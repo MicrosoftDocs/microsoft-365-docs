@@ -4398,7 +4398,7 @@
     {
       "source_path": "microsoft-365/managed-desktop/service-description/device-list.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/service-description/archived-device-list.md",
