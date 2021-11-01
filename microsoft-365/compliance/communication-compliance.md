@@ -139,7 +139,7 @@ You can choose from the following policy templates in the Microsoft 365 complian
 - **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to monitor and review in your organization.
 
 >[!TIP]
->Use recommended actions  to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
+>Use [recommended actions](communication-compliance-configure.md#recommended-actions-preview) to help you determine if you need a sensitive information type policy or if you need to update existing inappropriate content policies.
 
 ### Investigate
 
