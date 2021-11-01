@@ -82,7 +82,7 @@ Navigation instructions depend on whether you're using [records management](reco
 
 2. Follow the prompts in the configuration.
     
-    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content). However, if the label will be used for [cloud attachments](#auto-apply-labels-to-cloud-attachments), make sure you configure the start of the retention period to be **When items were labeled**.
     
     If you are using records management:
     
@@ -319,7 +319,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 
 > [!IMPORTANT]
-> When you select a label to use for auto-applying retention labels for cloud attachments, configure the label retention setting **Start the retention period based on** to be **When items were labeled**.
+> When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
 
 Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file.
 
