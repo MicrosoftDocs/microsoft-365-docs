@@ -18,7 +18,7 @@ search.appverid:
 description: "Use collections in Advanced eDiscovery to collect cloud attachments for review in an investigation or case." 
 ---
 
-# Collect cloud attachments in Advanced eDiscovery
+# Collect cloud attachments in Advanced eDiscovery (preview)
 
 Cloud attachments are links to documents that are typically stored in SharePoint site and OneDrive. So instead of attaching an actual copy of a document in an email message or a Teams chat conversation, you have the option of sharing a link to the file. Cloud attachments are an effective way to share documents and collaborate with other people in your organization. But cloud attachments present challenges during the eDiscovery workflow because only the cloud attachment link and not the actual content in the shared document are returned in an eDiscovery search. To address this challenge, Advanced eDiscovery provides two solutions for collecting cloud attachments:  
 
@@ -34,13 +34,16 @@ The following screenshot shows the option to include the targets of cloud attach
 
 ![The option to include cloud attachments when committing a collection to a review set](../media/CollectCloudAttachments1.png)
 
+> [!NOTE]
+>- If you use the [large case format](advanced-ediscovery-large-cases.md) in Advanced eDiscovery, the option to include cloud attachments in the review set is selected by default and can't be unselected.<br/>
+>- You also have the option to include all versions (in addition to the version that was shared) of cloud attachments in the review set.  
 For instructions committing a collection to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
 ## Collecting the version shared in a cloud attachment
 
 The Advanced eDiscovery workflow for collecting cloud attachments only includes adding the most current version of a cloud attachment to a review set. This means the version that's collected and added to a review set could be different than the version that was originally shared in the cloud attachment. So it's possible that content that was present in the cloud attachment at the time it was shared might have been removed and doesn't exist in the current version that's added to the review set.
 
-To work around this limitation, organizations now have the option to use Microsoft 365 retention labels to preserve the version of a document at the time when it was shared as a cloud attachment. To do this, your organization can create a retention label, choose the option apply the label to cloud attachments, and then automatically apply the label to documents stored in SharePoint and OneDrive. After you set up this configuration, a copy of a document is created at the time when the file is shared. In other words, the version of the cloud attachment at the time when it was shared is preserved. Also, if the document is modified and shared again as a cloud attachment, the modified version is also preserved. If the file is modified and shared again, a new copy of the file as a new version is preserved.
+Organizations now have the option to use Microsoft 365 retention labels to preserve the version of a document at the time when it was shared as a cloud attachment. To do this, your organization can create a retention label, choose the option apply the label to cloud attachments, and then automatically apply the label to documents stored in SharePoint and OneDrive. After you set up this configuration, a copy of a document is created at the time when the file is shared. Also, if the document is modified and shared again as a cloud attachment, the modified version is also preserved. If the file is modified and shared again, a new copy of the file as a new version is preserved.
 
 Preserving the shared versions of cloud attachments can help your organization scope the preservation and collection of potentially relevant content to the specific version of the document that was shared rather than the current live version. After you implement this retention solution, both the current live version of a cloud attachment and the version that was shared in the cloud attachment are collected and added to a review set.
 
