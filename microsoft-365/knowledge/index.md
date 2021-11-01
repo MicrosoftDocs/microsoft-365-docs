@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-ms.date: 11/02/2021
+ms.date: 10/10/2021
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
