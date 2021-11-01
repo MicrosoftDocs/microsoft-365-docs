@@ -13,8 +13,10 @@ ms.collection:
     - enabler-strategic 
     - m365initiative-viva-topics
 localization_priority: medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about how to find topics in Viva Topics by using SharePoint taxonomy.
 ---
+
 # Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics
 
 > [!Note] 
