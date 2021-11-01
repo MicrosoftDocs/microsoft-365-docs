@@ -49,7 +49,7 @@ An established Security Operations Center (SOC) should have a catalog of service
 - Data loss prevention
 - Brand monitoring
 
-Because Microsoft 365 Defender technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Defender and align to service function.
+Because Microsoft 365 Defender technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
 
 The components of Microsoft 365 Defender are:
 

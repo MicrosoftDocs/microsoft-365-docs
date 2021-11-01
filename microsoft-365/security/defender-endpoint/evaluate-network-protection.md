@@ -29,7 +29,7 @@ ms.collection: m365-security-compliance
 This article helps you evaluate network protection by enabling the feature and guiding you to a testing site. The sites in this evaluation article aren't malicious. They're specially created websites that pretend to be malicious. The site will replicate the behavior that would happen if a user visited a malicious site or domain.
 
 > [!TIP]
-> You can also visit the Microsoft Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
+> You can also visit the Microsoft Defender demo scenarios website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
 
 ## Enable network protection in audit mode
 
