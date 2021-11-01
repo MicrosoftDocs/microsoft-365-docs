@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Microsoft Intune for MDE customers (preview)
 ---
 
 # Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)

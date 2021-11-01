@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: 
+description: Learn about onboarding macOS devices into Compliance solutions
 ---
 
 # Onboard macOS devices into Microsoft 365 overview (preview)
