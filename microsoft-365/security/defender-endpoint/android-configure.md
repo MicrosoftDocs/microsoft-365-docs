@@ -45,6 +45,9 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+## Configure Microsoft Defender for Endpoint (Enable/Disable)cd
+IT Admins have the option to enable/disable Defender for endpoint security features as per organization’s specific requirements. This capability is available within the Microsoft endpoint manager endpoint center. For more information, see [Configure Defender for Endpoint on devices that run android](/mem/intune/protect/advanced-threat-protection-manage-android).
+
 ## Configure privacy for malware threat report
 
 > [!NOTE]
