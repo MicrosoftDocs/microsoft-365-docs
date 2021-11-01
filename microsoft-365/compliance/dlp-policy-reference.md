@@ -22,20 +22,20 @@ ms.custom: seo-marvel-apr2021
 ---
 # Data Loss Prevention policy reference
 
-Data loss prevention (DLP) policies have many components that can be configured. In order to create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
+Data loss prevention (DLP) policies have many components to configure. To create an effective policy, you need to understand what the purpose of each component is and how its configuration alters the behavior of the policy. This article provides a detailed anatomy of a DLP policy.
 
 ## Policy templates 
 
 DLP policy templates are pre-sorted into four categories:
 
-- ones that can detect and protect types of **Financial** information
-- ones that can detect and protect types of **Medical and health** information
-- ones that can detect and protect types of **Privacy** information
-- a **Custom** template that you can use to build your own policy if one of the others doesn't meet your organizations needs.
+- Ones that can detect and protect types of **Financial** information.
+- Ones that can detect and protect types of **Medical and health** information.
+- Ones that can detect and protect types of **Privacy** information.
+- A **Custom** template that you can use to build your own policy if one of the others doesn't meet your organizations needs.
 
 This table lists all policy templates and the sensitive information types (SIT) that they cover. 
 
-Current as of 6/23/2021
+updated: 06/23/2021
 
 |Category| Template | SIT |
 |---------|---------|---------|
@@ -91,22 +91,17 @@ Current as of 6/23/2021
 |Privacy| U.S. State Breach Notification Laws|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [U.S. bank account number](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> -[U.S. driver's license number](sensitive-information-type-entity-definitions.md#us-drivers-license-number) </br> - [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |Privacy| U.S. State Social Security Number Confidentiality Laws|- [U.S. social security number (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)| 
 
-
-
 ## Locations
-
-<!--This section covers a mapping of data-at-rest, data-in-use, and data-in-motion to the locations/workloads. It introduces the idea that the options that are selected here have a direct impact on the UI that they will encounter further along in the policy creation/edit flow. It will also cover the dependencies between locations (eg. Teams chat and channel requires SharePoint and ODB). It will also include the impact of the different scope settings. eg. If you want the policy to be applied to DEF, but not HIJ, you should configure your include/exclude scopes like this......--> 
-
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
 
-|Location  |Include/Exclude scope  |data state  |additional pre-requisites |
+|Location  |Include/Exclude scope  |Data state  |Additional pre-requisites |
 |---------|---------|---------|---------|
-|Exchange email online |distribution group | data-in-motion| no |
-|SharePoint online sites   |sites       | data-at-rest </br> data-in-use | no|
-|OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|no|
-|Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  no       |
+|Exchange email online |distribution group | data-in-motion| No |
+|SharePoint online sites   |sites       | data-at-rest </br> data-in-use | No|
+|OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|No|
+|Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  No       |
 |Microsoft Cloud App Security (MCAS)   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp)        |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
@@ -119,23 +114,23 @@ If you choose to include or exclude specific OneDrive accounts or groups, a DLP 
 
 ### Location support for how content can be defined
 
-DLP policies detect sensitive items by matching them to a sensitive information type (SIT), to a sensitivity label, or a retention label. Each location supports different methods of defining sensitive content. Additionally, when you combine locations in a policy, how the content can be defined can change from how it can be defined by a single location. 
+DLP policies detect sensitive items by matching them to a sensitive information type (SIT), or to a sensitivity label, or a retention label. Each location supports different methods of defining sensitive content. When you combine locations in a policy, how the content can be defined can change from how it can be defined by a single location. 
 
 > [!IMPORTANT]
 > When you select multiple locations for a policy, a "no" value for a content definition category takes precedence over "yes" value. For example, when you select SharePoint sites only, the policy will support detecting sensitive items by one or more of SIT, by sensitivity label, or by retention label. But, when you select SharePoint sites ***and*** Teams chat and channel messages locations, the policy will only support detecting sensitive items by SIT. 
 
-|location|	content can be defined by SIT|	content can be defined sensitivity label|	content can be defined by retention label|
+|Location|	Content can be defined by SIT|	Content can be defined sensitivity label|	Content can be defined by retention label|
 |---------|---------|---------|---------|
-|Exchange email online|yes|	yes|	no|
-|SharePoint online sites|	yes|	yes|	yes|
-|OneDrive for Business accounts|	yes|	yes|	yes|
-|Teams Chat and Channel messages |	yes|	no|	no|
-|Devices	|yes |	yes| 	no|
-|Microsoft Cloud App Security|	yes|	yes|	yes|
-|On-Premises repositories|	yes|	yes|	no|
+|Exchange email online|Yes|	Yes|	No|
+|SharePoint online sites|	Yes|	Yes|	Yes|
+|OneDrive for Business accounts|	Yes|	Yes|	Yes|
+|Teams Chat and Channel messages |	Yes|	No|	No|
+|Devices	|Yes |	Yes| 	No|
+|Microsoft Cloud App Security|	Yes|	Yes|	Yes|
+|On-Premises repositories|	Yes|	Yes|	No|
 
 > [!NOTE]
-> DLP supports detecting sensitivity labels on emails and attachemnets See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)
+> DLP supports detecting sensitivity labels on emails and attachemnets See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
 
@@ -161,7 +156,7 @@ Rules are the business logic of DLP policies. They consist of:
 
 ### The priority by which rules are processed
 
-Each rule is assigned a priority in the order in which it's created — meaning, the rule created first has first priority, the rule created second has second priority, and so on. 
+Each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
   
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
@@ -272,7 +267,7 @@ The available context options change depending on which location you choose. If 
 
 ##### Conditions Devices supports
 
-- content contains
+- Content contains
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
 ##### Conditions Microsoft Cloud App Security support
@@ -296,7 +291,7 @@ For example, to identify content subject to the U.S. Health Insurance Act (HIPAA
     
     AND
     
-- Content that's more difficult to identify, such as communications about a patient's care or descriptions of medical services provided. Identifying this content requires matching keywords from very large keyword lists, such as the International Classification of Diseases (ICD-9-CM or ICD-10-CM).
+- Content that's more difficult to identify, such as communications about a patient's care or descriptions of medical services provided. Identifying this content requires matching keywords from large keyword lists, such as the International Classification of Diseases (ICD-9-CM or ICD-10-CM).
     
 You can identify this type of data by grouping conditions and using logical operators (AND, OR) between the groups.
     
@@ -308,7 +303,7 @@ The first group contains the SITs that identify and individual and the second gr
 
 ### Exceptions
 
-In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions that are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* its a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212; 
+In rules, exceptions define conditions that are used to exclude an item from the policy. Logically, exclusive conditions that are evaluated after the inclusive conditions and context. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* it's a match and the rest of the actions in the policy should be taken on it ***except if***... &#8212; 
 
 For example, keeping with the HIPPA policy, we could modify the rule to exclude any item that contains a Belgium drivers license number, like this:
 
@@ -373,7 +368,7 @@ The actions that are available in a rule are dependent on the locations that hav
 > [!NOTE]
 > Devices gives the option to **Audit** an activity, **Block** an activity, or **Block with override** an activity.
 
-The devices location provide a number of sub-activities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
+The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
 #### Microsoft Cloud App Security:
 
@@ -417,7 +412,7 @@ If you select Devices and Microsoft Cloud App Security, these actions will be av
 - Audit or restrict activities on Windows devices
 - Restrict Third Party Apps
 
-Whether actions take effect or not depends on how you configure the mode of the policy. You can choose to run the policy in test mode with or without showing policy tip by selecting the **Test it out first** option. You choose to run the policy as soon as an hour after it is created by selecting the **Turn it on right away** option, or you can choose to just save it and come back to it later by selecting the **Keep it off** option. 
+Whether an action takes effect or not depends on how you configure the mode of the policy. You can choose to run the policy in test mode with or without showing policy tip by selecting the **Test it out first** option. You choose to run the policy as soon as an hour after it is created by selecting the **Turn it on right away** option, or you can choose to just save it and come back to it later by selecting the **Keep it off** option. 
 
 
 <!-- This section needs to explain that the actions available depend on the locations selected AND that the observed behavior of a policy is produced through an interaction of the configured actions AND the configured status (off, test, apply) of a policy. It will detail the purpose of each of the available actions and the location/desired outcome interaction and provide examples eg. how to use the Restrict Third Party apps in the context of a policy that is applied to endpoints so that users can't use a upload content to a third party site or the interaction of on-premises scanner with restrict access or remove on-premises files.  Also what happens when I select multiple locations? provide abundant examples for most common scenarios-->
@@ -436,7 +431,7 @@ for where they are used/expected behavior-->
 
 When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
 
-For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an external user.
+For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an guest.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -461,7 +456,7 @@ You can enable/disable user notifications for various Microsoft apps, see [Data 
     OR
     - notify specific people
 
-as well as choosing to customize the email text, subject and the policy tip text.
+and customize the email text, subject, and the policy tip text.
 
 ![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and MCAS](../media/dlp-user-notification-non-devices.png)
 
@@ -471,7 +466,7 @@ If you selected Devices only, you will get all the same options that are availab
 
 You can customize the title and body of text with using these parameters. The body text supports these:
 
-|common name  |parameter  |example
+|Common name  |Parameter  |Example
 |---------|---------|---------|
 |file name     |%%FileName%% | Contoso doc 1 |
 |process name     |%%ProcessName%% | Word |
@@ -537,7 +532,7 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 
 ### User overrides
 
-The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive or Teams so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. 
+The intent of **User overrides** is to give users a way to bypass, with justification, DLP policy blocking actions on sensitive items in Exchange, SharePoint, OneDrive, or Teams so that they can continue their work. User overrides are enabled only when **Notify users in Office 365 services with a policy tip** is enabled, so user overrides go hand-in-hand with Notifications and Policy tips. 
 
 ![User override options for a DLP policy](../media/dlp-user-overrides.png)
 
@@ -564,17 +559,17 @@ To learn more about user overrides, see:
 https://docs.microsoft.com/en-us/microsoft-365/compliance/view-the-dlp-reports?view=o365-worldwide
 https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-alerts-policies?view=o365-worldwide-->
 
-When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. This report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
+When a rule is matched, you can send an incident report to your compliance officer (or any people you choose) with details of the event. The report includes information about the item that was matched, the actual content that matched the rule, and the name of the person who last modified the content. For email messages, the report also includes as an attachment the original message that matches a DLP policy.
 
-DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). In order to get incident information to insider risk managment, you must set the **Incident reports** severity level to **High**.
+DLP feeds incident information to other Microsoft 365 information protection services, like [Insider Risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365). In order to get incident information to insider risk management, you must set the **Incident reports** severity level to **High**.
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 
-You can choose between having an alert sent every time an activity matches a rule, which can be very noisy or you can aggregate incidents into fewer alerts based on number of matches or volume of items over a set period of time.
+Alerts can be sent every time an activity matches a rule, which can be noisy or they can be aggregated into fewer alerts based on number of matches or volume of items over a set period of time.
 
 ![send an alert every time a rule matches or aggregate over time into fewer reports](../media/dlp-incident-reports-aggregation.png)
 
-DLP scans email differently from items in SharePoint Online or OneDrive for Business. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
+DLP scans email differently than it does SharePoint Online or OneDrive for Business items. In SharePoint Online and OneDrive for Business, DLP scans existing items as well as new ones and generates an incident report whenever a match is found. In Exchange Online, DLP only scans new email messages and generates a report if there is a policy match. DLP ***does not*** scan or match previously existing email items that are stored in a mailbox or archive.
 
 ### Additional options
 
