@@ -189,7 +189,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the checkbox.
 
    > [!NOTE]
-   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies that contain information about quarantined messages for all supported protection features (not just anti-spam policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
 
    When you're finished, click **Next**.
 
@@ -267,7 +267,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
    For the default anti-spam policy, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
-To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
+To enable or disable a policy or set the policy priority order, see the following sections.
 
 ### Enable or disable anti-spam policies
 
