@@ -152,7 +152,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
-3. Create new or edit your existing organization relationship object to your source tenant.
+3. Create new or edit your existing organization relationship object to your target (destination) tenant from an Exchange Online Remote PowerShell window.
 
    ```powershell
    $sourceTenantId="[tenant id of your trusted partner, where the source mailboxes are]"
@@ -183,7 +183,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 2. Accept the application when the pop up appears. You can also log into your Azure Active Directory portal and find the application under Enterprise applications.
 
-3. Create new or edit your existing organization relationship object to your target (destination) tenant from an Exchange Online Remote PowerShell window.
+3. Create new or edit your existing organization relationship object to your source tenant.
 
    ```powershell
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
