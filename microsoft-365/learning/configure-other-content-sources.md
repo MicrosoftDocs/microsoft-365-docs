@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
-description: Learn how to configure other providers as a learning content source for Microsoft Viva Learning.
+description: Learn how to configure other content providers as a learning content source for Microsoft Viva Learning.
 ---
 
 # Add other content providers for Microsoft Viva Learning
@@ -31,6 +31,25 @@ Third-party content sources are not enabled by default. To enable these sources,
 
 >[!NOTE]
 >You'll need a Premium license to connect external content sources, with the exception of the select LinkedIn Learning free courses. [Learn more about licensing](https://www.microsoft.com/microsoft-viva/learning).
+
+>[!NOTE]
+>It can take 24 to 48 hours for Viva Learning users to see content for the sources you enabled in the admin portal. It can also take 24 to 48 hours to hide content from LinkedIn Learning, Microsoft Learn and Microsoft 365 trainings from Viva Learning after you have disabled them in the admin portal.
+
+## Learning management systems
+
+|Learning management system  |Configuration instructions  |
+|---------|---------|
+|Cornerstone OnDemand |[Configure Cornerstone OnDemand as a content source](configure-cornerstone-content-source.md)         |
+|Saba    |[Configure Saba as a content source](configure-saba-content-source.md)         |
+|Skillsoft     |[Configure Skillsoft as a content source](configure-skillsoft-content-source.md)         |
+|SAP SuccessFactors   |[Configure SAP SuccessFactors as a content source](configure-successfactors-content-source.md)         |
+|edX    |Follow the steps below to add edX in your Microsoft 365 admin center.    |
+|Coursera    |Follow the steps below to add Coursera in your Microsoft 365 admin center.    |
+|Pluralsight    |Follow the steps below to add Pluralsight in your Microsoft 365 admin center.    |
+|Infosec    |Follow the steps below to add Infosec in your Microsoft 365 admin center.    |
+|Josh Bersin Academy    |Follow the steps below to add Josh Bersin Academy in your Microsoft 365 admin center.    |
+
+## Content providers
 
 |Content provider or learning management system  |Configuration instructions  |
 |---------|---------|
