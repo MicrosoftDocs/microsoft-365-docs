@@ -1,6 +1,6 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
-description: Describes how conditional access evaluation for Microsoft 365 and Azure AD proactively terminates active user sessions and enforces tenant policy changes in near real-time.
+description: Describes how conditional access evaluation for Microsoft 365 and Azure AD proactively terminates active user sessions and enforces tenant policy changes in near real time.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: dansimp
@@ -28,19 +28,19 @@ ms.technology: mdo
 
 Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account’s access. In practice, this means even if an administrator revokes a user account’s access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.  
 
-Conditional access evaluation for Microsoft 365 and Azure Active Directory (Azure AD) proactively terminates active user sessions and enforces tenant policy changes in near real-time instead of relying on access token expiration. Azure AD notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account’s authentication state. 
+Conditional access evaluation for Microsoft 365 and Azure Active Directory (Azure AD) proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Azure AD notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account’s authentication state. 
 
-When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Azure AD authentication. The result is near real-time enforcement of user account and policy changes.  
+When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Azure AD authentication. The result is near real time enforcement of user account and policy changes.  
 
 Here are some additional benefits:
 
 - For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this token through Azure AD IP address location policy. With continuous access evaluation, Azure AD synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token. 
 
-- Continuous access evaluation improves resiliency by requiring fewer token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Azure AD can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don’t have to request a token refresh from Azure AD as often, so the user experience is more resilient.
+- Continuous access evaluation improves resiliency by requiring less token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Azure AD can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don’t have to request a token refresh from Azure AD as often, so the user experience is more resilient.
 
 Here are some examples of situations where continuous access evaluation improves user access control security: 
 
-- A user account’s password has been compromised so an administrator invalidates all existing sessions and resets their password from the Microsoft 365 admin center. In near real-time, all existing user sessions with Microsoft 365 services are invalidated. 
+- A user account’s password has been compromised so an administrator invalidates all existing sessions and resets their password from the Microsoft 365 admin center. In near real time, all existing user sessions with Microsoft 365 services are invalidated. 
 
 - A user working on a document in Word takes their tablet to a public coffee shop that is not in an administrator-defined and approved IP address range. At the coffee shop, the user’s access to the document is blocked immediately. 
 
@@ -69,7 +69,7 @@ Critical events include:
 - User account is disabled 
 - Password is changed 
 - User sessions are revoked 
-- Multi-factor authentication is enabled for the user 
+- Multifactor authentication is enabled for the user 
 - Account risk increased based on the evaluation of the access from [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
 Conditional Access policy evaluation occurs when the user account is no longer connecting from a trusted network. 
