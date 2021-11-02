@@ -230,7 +230,7 @@ Before configuring a policy, define the following insider risk settings:
     - [Thresholds for unusual file activity](insider-risk-management-settings.md#threshold-for-unusual-file-activity)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
-    - [Domain settings](insider-risk-management-settings.md#domains-preview)
+    - [Domain settings](insider-risk-management-settings.md#domains)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
 8. On the **Power Automate flows** page, configure a flow from insider risk flow templates or create a new flow. See the [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview) article for step-by-step guidance.
