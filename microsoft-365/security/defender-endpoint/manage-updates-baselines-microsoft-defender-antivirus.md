@@ -94,8 +94,11 @@ Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
 
 ### What's new
+
 - Improvements to FTP network traffic coverage
-- Fix to reduce Microsoft Defender CPU usage in exchange server with Windows Server 2016
+- Fix to reduce Microsoft Defender CPU usage in exchange server with Windows Server 2016 OS
+- Fix for scan interruptions
+- Fix for alerts on blocked tampering attempts not appearing in Security Center
 - Defender service tamper resilience improvements
 
 ### Known Issues
