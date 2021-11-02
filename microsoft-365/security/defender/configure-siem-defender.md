@@ -48,14 +48,14 @@ There are two primary models to ingest security information: 
 1.  Ingesting Microsoft 365 Defender incidents and their contained alerts from a
     REST API in Azure. 
 
-2.  Ingesting streaming event data either through Azure event hubs or Azure
-    storage accounts. 
+2.  Ingesting streaming event data either through Azure Event Hubs or Azure
+    Storage Accounts. 
 
 Microsoft 365 Defender currently supports the following SIEM solution
 integrations: 
 
 - [Ingesting incidents from the incidents REST API](#ingesting-incidents-from-the-incidents-rest-api)
-- [Ingesting streaming event data via event hub](#ingesting-streaming-event-data-via-event-hubs)
+- [Ingesting streaming event data via Event Hub](#ingesting-streaming-event-data-via-event-hubs)
 
 ## Ingesting incidents from the incidents REST API
 
@@ -66,7 +66,7 @@ For more information on Microsoft 365 Defender incident properties including co
 
 Using the Microsoft 365 Defender Add-on for Splunk that supports: 
 
-- Ingesting incidents that contain alerts from the following products which are mapped onto Splunk's Common Information Model (CIM):  
+- Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):  
   - Microsoft 365 Defender 
   - Microsoft Defender for Endpoint 
   - Microsoft Defender for Identity & Azure Active Directory Identity Protection 
@@ -85,7 +85,7 @@ For more information on the Microsoft 365 Defender Add-on for Splunk, see [splun
 The new SmartConnector for Microsoft 365 Defender ingests incidents into ArcSight and maps these onto its Common Event
 Framework (CEF). 
 
-For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documention](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
 The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
   
@@ -95,23 +95,23 @@ The SmartConnector replaces the previous FlexConnector for Microsoft Defender fo
 >[!NOTE]
 >QRadar support for Microsoft 365 Defender is currently based on ingesting  event streaming data. The previous QRadar Microsoft Defender ATP Device Support Module (DSM) is no longer onboarding new customers, and existing customer are encourage to adopt the event streaming API DSM that supports data from all the Microsoft 365 Defender products.   
 
-## Ingesting streaming event data via event hubs
+## Ingesting streaming event data via Event Hubs
 
-First you need to stream events from your AAD tenant to your event hubs or Azure storage account. For more information, see [Streaming API](../defender/streaming-api.md).
+First you need to stream events from your AAD tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
 
 For more information on the event types supported by the Streaming API, see [Supported streaming event types](../defender/supported-event-types.md).
 
 ### Splunk
-Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure event hubs.  
+Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure Event Hubs.  
 
 
 For more information on the Splunk Add-on for Microsoft Cloud Services, see [splunkbase](https://splunkbase.splunk.com/app/3110/).
 
-For more information on the step-by-step walkthrough of configuring event streaming via Azure event hubs to Splunk, see
+For more information on the step-by-step walkthrough of configuring event streaming via Azure Event Hubs to Splunk, see
   
 
 ### IBM QRadar
-Use the Splunk Microsoft 365 Defender DSM to ingest events from your Azure event hubs. The QRadar DSM and additional information can be
+Use the Splunk Microsoft 365 Defender DSM to ingest events from your Azure Event Hubs. The QRadar DSM and additional information can be
 found here: [*link to IBM Knowledge Center*]. 
 
 
