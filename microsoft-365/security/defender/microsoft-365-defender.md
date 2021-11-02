@@ -72,7 +72,7 @@ Microsoft 365 Defender's unique cross-product layer augments the individual serv
 
 Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="Example of an incident overview page" lightbox="../../media/overview-incident.png":::<br>
+:::image type="content" source="../../media/overview-incident.png" alt-text="Example of an incident overview page" lightbox="../../media/overview-incident.png":::
 
 Here's an example of the list of related alerts for an incident.
 
