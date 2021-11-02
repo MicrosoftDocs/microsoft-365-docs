@@ -85,9 +85,11 @@ Review the following details to verify minimum system requirements:
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
     > [!NOTE]
-    > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
+    > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise, and Windows 7 SP1 Pro.
+    >
     > Don't install .NET Framework 4.0.x, since it will negate the above installation.
-    > Attention, installation of .NET 4.5 might require a reboot after installation
+    >
+    > Installation of .NET 4.5 might require you to restart your computer after installation.
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
 
