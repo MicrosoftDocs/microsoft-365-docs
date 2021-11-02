@@ -23,6 +23,23 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## November 2021
+
+### New assessment templates
+
+The following assessment templates are now available in preview:
+
+- ISO 27001:2013 for Azure (Preview)
+- ISO 27001:2013 for Dynamics 365 (Preview)
+- FedRAMP Moderate for Dynamics 365 (Preview)
+- FedRAMP Moderate for Azure (Preview)
+- FedRAMP High for Azure (Preview)
+- FedRAMP High for Dynamics 365 (Preview)
+- SOC 2 for Azure (Preview)
+- SOC 2 for Dynamics 365 (Preview)
+- ISO 27018:2019 for Azure (Preview)
+- ISO 27018:2019 for Dynamics 365 (Preview)
+
 ## October 2021
 
 ### New assessment templates
