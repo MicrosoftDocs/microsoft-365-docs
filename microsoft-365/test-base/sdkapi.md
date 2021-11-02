@@ -35,7 +35,7 @@ Check out the step-by-step outline below to find out how to access this new capa
 
     [Azure account with an active subscription](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) if you don’t have a subscription<br>
     [Python 2.7+ or 3.6+](https://www.python.org/downloads)<br>
-    [Azure Command-Line Interface (CLI)](https://docs.microsoft.com/cli/azure/install-azure-cli) <br>
+    [Azure Command-Line Interface (CLI)](/cli/azure/install-azure-cli) <br>
 
 - Install library packages by using pip install from console 
 
@@ -48,7 +48,7 @@ pip install azure-mgmt-testbase
 
 When debugging and executing code locally it is typical for developers to use their own accounts for authenticating calls to Azure services. The azure-identity package supports authenticating through Azure CLI to simplify local development. To sign in to Azure CLI, run ```az login ```. On a system with a default web browser, the Azure CLI will launch the browser to authenticate a user. 
 
-Check [How to authenticate Python applications with Azure services| Microsoft Docs](https://docs.microsoft.com/azure/developer/python/azure-sdk-authenticate)  and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
+Check [How to authenticate Python applications with Azure services| Microsoft Docs](/azure/developer/python/azure-sdk-authenticate)  and [https://pypi.org/project/azure-identity/](https://pypi.org/project/azure-identity/) for other supported authentication methods. 
 
  - Create a Resource Group with your desired name which will be used in following steps. 
 
@@ -103,9 +103,9 @@ Check below links to learn more details about the SDK & API.
 
 **Python SDK** 
 
-- [Test Base Python SDK Documentation](https://docs.microsoft.com/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
+- [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
 - [Test Base Python SDK Sample](https://aka.ms/testbase-sample-py) 
-- [Azure General Usage Pattern of Python SDK](https://docs.microsoft.com/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
+- [Azure General Usage Pattern of Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
 
 **REST API**  
 
