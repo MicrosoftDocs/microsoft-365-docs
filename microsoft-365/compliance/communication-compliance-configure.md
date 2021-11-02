@@ -50,7 +50,7 @@ Users included in communication compliance policies must be assigned one of the 
 
 If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
 
-## Recommended  actions (preview)
+## Recommended actions (preview)
 
 Recommended actions can help your organization get the most out of communication compliance capabilities and your existing policies. Included on the **Overview** page, recommended actions provide insights and summarize sensitive information types and inappropriate content activities in communications in your organization.
 
