@@ -75,7 +75,8 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[ServiceNow Admin\] Go to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
 
-    >[!NOTE] If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table’s cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes &gt; Can read** is checked for the table oauth\_entity.
+    > [!NOTE]
+    > If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table’s cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes &gt; Can read** is checked for the table oauth\_entity.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image27.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -161,4 +162,5 @@ These steps are required to set up the integration between your ServiceNow insta
 
     - x\_mioms\_m365\_assis.administrator
 
-    > [!NOTE] The user with the role x\_mioms\_m365\_assis.insights\_user can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator also can open a case with Microsoft 365 support. With Insights ONLY, no one should be assigned the role x\_mioms\_m365\_assis.administrator.
+    > [!NOTE]
+    > The user with the role x\_mioms\_m365\_assis.insights\_user can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator also can open a case with Microsoft 365 support. With Insights ONLY, no one should be assigned the role x\_mioms\_m365\_assis.administrator.
