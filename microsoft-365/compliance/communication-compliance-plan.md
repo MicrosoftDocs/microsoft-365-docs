@@ -103,7 +103,7 @@ For users with a communication compliance match, you can choose one of the follo
 
 ## Plan for policies
 
-Creating communication compliance policies is quick and easy with the [pre-defined templates](communication-compliance-policies.md#policy-templates) for offensive language, sensitive information, and regulatory compliance. Custom communication compliance policies allow the flexibility for detecting and investigation issues specific to your organization and requirements.
+Creating communication compliance policies is quick and easy with the [pre-defined templates](communication-compliance-policies.md#policy-templates) for inappropriate content, sensitive information, and regulatory compliance. Custom communication compliance policies allow the flexibility for detecting and investigation issues specific to your organization and requirements.
 
 When planning for communication compliance policies, consider the following areas:
 
@@ -113,6 +113,15 @@ When planning for communication compliance policies, consider the following area
 - Policies can support monitoring languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](communication-compliance-policies.md#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine-learning model using [trainable classifiers](classifier-get-started-with.md) in Microsoft 365.
 - All organizations have different communication standards and policy needs. Monitor for specific keywords using communication compliance [policy conditions](communication-compliance-policies.md#conditional-settings) or monitor for specific types of information with [custom sensitive information types](create-a-custom-sensitive-information-type.md).
 
+## Creating a communication compliance policy walkthrough
+
+Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out the following 15-minute video to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
+<br>
+<br>
+
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RWNchy]
+<br>
+
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications.
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications.
