@@ -160,7 +160,7 @@ After a new package version is released, support for the previous two versions i
 - Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
 - Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
 - Improvements to the behavior monitoring engine
-<details>
+</details><details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
 &ensp;Security intelligence update version: **1.343.17.0**<br/>
