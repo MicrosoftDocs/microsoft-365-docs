@@ -70,7 +70,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <p> _PhishSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
+|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|30 days|30 days|30 days|This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
 |**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <p> _PhishZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable ZAP for spam messages <p> _SpamZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
