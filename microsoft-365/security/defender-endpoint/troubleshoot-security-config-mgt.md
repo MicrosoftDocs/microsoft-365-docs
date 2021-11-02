@@ -66,10 +66,6 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 >Where AADJ represents Azure Active Directory Joined and HAADJ represents Hybrid Azure Active Directory Joined.
 
 
-
->[!NOTE]
->Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for MDE Security Configuration Management workflow, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. For more info, see [Instructions for applying Computer Join rule in AAD Connect](#instructions-for-applying-computer-join-rule-in-aad-connect), later in this article.
-
 ## Troubleshoot errors from the Microsoft Defender for Endpoint portal
 
 
