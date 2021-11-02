@@ -24,7 +24,7 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
 
 ## Subscriptions and licensing
 
@@ -49,6 +49,16 @@ Users included in communication compliance policies must be assigned one of the 
 > Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
+
+## Recommended actions (preview)
+
+Recommended actions can help your organization get the most out of communication compliance capabilities and your existing policies. Included on the **Overview** page, recommended actions provide insights and summarize sensitive information types and inappropriate content activities in communications in your organization.
+
+![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
+
+Activity in messages containing inappropriate content is enumerated by classifier type from existing polices that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+
+Activity involving sensitive information types is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are provided for all sensitive information types, including ones that your organization have not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -113,6 +123,8 @@ For more information about role groups and permissions, see [Permissions in the 
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
 
+Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
+
 For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## Step 3 (optional): Set up groups for communication compliance
@@ -175,8 +187,11 @@ For more information about configuring Yammer in Native Mode, see:
 
 ## Step 5 (required): Create a communication compliance policy
 
-> [!IMPORTANT]
-> Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+>[!IMPORTANT]
+>Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+
+>[!TIP]  
+>Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
 1. Sign into <https://compliance.microsoft.com> using credentials for an admin account in your Microsoft 365 organization.
 

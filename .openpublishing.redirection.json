@@ -5395,6 +5395,91 @@
       "source_path": "microsoft-365/managed-desktop/service-description/device-lifecycle.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-anomaly-detection-alerts.md",
+      "redirect_url": "/cloud-app-security/app-governance-anomaly-detection-alerts.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-app-policies-create.md",
+      "redirect_url": "/cloud-app-security/app-governance-app-policies-create.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-app-policies-get-started.md",
+      "redirect_url": "/cloud-app-security/app-governance-app-policies-get-started.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-app-policies-manage.md",
+      "redirect_url": "/cloud-app-security/app-governance-app-policies-manage.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-app-policies-overview.md",
+      "redirect_url": "/cloud-app-security/app-governance-app-policies-overview.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-countries.md",
+      "redirect_url": "/cloud-app-security/app-governance-countries.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-detect-remediate-detect-threats.md",
+      "redirect_url": "/cloud-app-security/app-governance-detect-remediate-detect-threats.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-detect-remediate-get-started.md",
+      "redirect_url": "/cloud-app-security/app-governance-detect-remediate-get-started.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-detect-remediate-overview.md",
+      "redirect_url": "/cloud-app-security/app-governance-detect-remediate-overview.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-feedback.md",
+      "redirect_url": "/cloud-app-security/app-governance-feedback.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-get-started.md",
+      "redirect_url": "/cloud-app-security/app-governance-get-started.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-manage-app-governance.md",
+      "redirect_url": "/cloud-app-security/app-governance-manage-app-governance.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-monitor-apps-unusual-data-usage.md",
+      "redirect_url": "/cloud-app-security/app-governance-monitor-apps-unusual-data-usage.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-visibility-insights-compliance-posture.md",
+      "redirect_url": "/cloud-app-security/app-governance-visibility-insights-compliance-posture.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-visibility-insights-get-started.md",
+      "redirect_url": "/cloud-app-security/app-governance-visibility-insights-get-started.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-visibility-insights-overview.md",
+      "redirect_url": "/cloud-app-security/app-governance-visibility-insights-overview.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/app-governance-visibility-insights-view-apps.md",
+      "redirect_url": "/cloud-app-security/app-governance-visibility-insights-view-apps.md",
+      "redirect_document_id": false
     }
   ]
 }
