@@ -24,13 +24,13 @@ search.appverid:
 
 [Communication compliance](communication-compliance.md) is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Security information and event management (SIEM) solutions such as [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel) or [Splunk](https://www.splunk.com/) are commonly used to aggregate and track threats within an organization.
 
-A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for offensive language. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
+A common need for organizations is to integrate communication compliance alerts and these SIEM solutions. With this integration, organizations can view communication compliance alerts in their SIEM solution and then remediate alerts within the communication compliance workflow and user experience. For example, an employee sends an offensive message to another employee and that message is detected by a communication compliance policy monitoring for inappropriate content. These events are tracked in Microsoft 365 Audit (also known as "unified audit log") by the communication compliance solution and imported into the SIEM solution. An alert is then triggered in the SIEM solution for the organization from events monitored in Microsoft 365 Audit that are associated with communication compliance alerts. Investigators are notified of the alert in the SIEM solutions and then they investigate and remediate the alert in the communication compliance solution.
 
 ## Communication compliance alerts in Microsoft 365 Audit
 
 All communication compliance policy matches are captured in Microsoft 365 Audit. The following examples show the details available for selected communication compliance policy match activities:
 
-**Example of audit log entry for an Offensive Language policy template match:**
+**Example of audit log entry for an Inappropriate Content policy template match:**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -97,9 +97,9 @@ To integrate communication compliance alerts with Splunk, complete the following
 
 To filter results for a specific communication compliance policy, you can use the *SRPolicyMatchDetails.SRPolicyName* parameter.
 
-For example, the following search example would return alerts for matches to a communication compliance policy named *Offensive language*:
+For example, the following search example would return alerts for matches to a communication compliance policy named *Inappropriate content*:
 
-  *index=\* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Offensive language\>*
+  *index=\* sourcetype='o365:management:activity' Workload=Exchange Operation=SupervisionRuleMatch SRPolicyMatchDetails.SRPolicyName=\<Inappropriate content\>*
 
 The following table shows sample search results for different policy types:
 

@@ -3,7 +3,11 @@
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
 - name: Compliance trials
-  href: compliance-easy-trials.md
+  items:
+    - name: About the free trial for Microsoft 365 compliance
+      href: compliance-easy-trials.md
+    - name: About the free trial for Microsoft Compliance Manager premium assessments
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -46,7 +50,7 @@
           href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an offensive language policy 
+        - name: Case study - Contoso quickly configures an inappropriate content policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
