@@ -40,7 +40,7 @@ For more information on Security Configuration Management, including prerequisit
 
 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/security-config-mgt-prerequisites.md)]
+[!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
 
 
 For more information on Security Configuration Management, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
