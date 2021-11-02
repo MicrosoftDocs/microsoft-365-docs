@@ -4398,7 +4398,7 @@
     {
       "source_path": "microsoft-365/managed-desktop/service-description/device-list.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/managed-desktop/service-description/archived-device-list.md",
@@ -5381,10 +5381,20 @@
       "redirect_url": "/microsoft-365/learning/set-up-viva-learning",
       "redirect_document_id": true
    },
+   {
+     "source_path": "microsoft-365/learning/linkedin-learning.md",
+     "redirect_url": "/microsoft-365/learning/content-sources-365-admin-center",
+     "redirect_document_id": true
+   },
     {
       "source_path": "microsoft-365/commerce/pay/zimbabwe.md",
       "redirect_url": "/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/service-description/device-lifecycle.md",
+      "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
+      "redirect_document_id": true
+    }
   ]
 }
