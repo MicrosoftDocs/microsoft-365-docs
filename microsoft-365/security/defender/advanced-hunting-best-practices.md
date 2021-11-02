@@ -31,9 +31,9 @@ ms.technology: m365d
 Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](/azure/kusto/query/best-practices).
 
 ## Understand CPU resource quotas
-Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various service limits, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
+Depending on its size, each tenant has access to a set amount of CPU resources allocated for running advanced hunting queries. For detailed information about various usage parameters, [read about advanced hunting quotas and usage parameters](advanced-hunting-limits.md).
 
-After running your query, you can see the execution time and its resource usage (Low, Medium, High). High indicates that the query took more resources to run and could be improved to execute more efficiently.
+After running your query, you can see the execution time and its resource usage (Low, Medium, High). High indicates that the query took more resources to run and could be improved to return results more efficiently.
 
 ![Image showing low resource indicator](../../media/resource-usage.png)
 
