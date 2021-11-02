@@ -27,7 +27,7 @@ To get started using the app governance add-on to Microsoft Cloud App Security (
 
 For existing Microsoft 365 customers, you can navigate to the [sign up page for the free trial](https://aka.ms/appgovernancetrial) and complete the steps to add app governance to your tenant.
 
-If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
+If you are not already a Microsoft 365 customer, you can sign up for a free trial by selecting the **Free Account** button at the top of this page. Under **Try Microsoft 365 for business** select **Try 1 month free**, and complete the steps for the sign-up.
 
 To purchase a subscription of app governance, please reach out to your sales account team.
 
@@ -68,7 +68,6 @@ Before you get started with app governance, you should confirm your [Microsoft 3
 - Microsoft 365 E5/A5 Security
 - Microsoft 365 F5 Compliance add-on
 - Microsoft 365 F5 Security + Compliance add-on
-
 
 ### Administrator roles
 
@@ -118,4 +117,4 @@ If you did not participate in private preview and would like to cancel your tria
 
 The app governance team has identified the following known issues for the preview: 
 
-- 2-way sync between Microsoft Defender and app governance alerts – currently alerts resolved in Defender will have to be manually resolved in app governance as well.
+- 2-way sync between Microsoft 365 Defender and app governance alerts – currently alerts resolved in Microsoft 365 Defender must be manually resolved in app governance as well.
