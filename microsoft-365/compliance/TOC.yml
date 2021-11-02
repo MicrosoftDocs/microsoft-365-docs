@@ -431,8 +431,12 @@
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
             - name: Facebook Business 
               href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
             - name: HR data 
               href: import-hr-data.md
             - name: ICE Chat
