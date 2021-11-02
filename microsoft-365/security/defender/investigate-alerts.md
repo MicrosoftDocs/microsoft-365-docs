@@ -180,7 +180,7 @@ If both are true, SecOps marks the alert as legitimate travel and resolves it. A
 
 ### Connect Power Automate to Microsoft Cloud App Security
 
-To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Cloud App Security (MCAS). 
+To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Cloud App Security. 
 
 1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab. 
 
@@ -190,7 +190,7 @@ To create the automation, you'll need an API token before you can connect Power 
 
 For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
 
-This video also describes how to connect power automate to MCAS. 
+This video also describes how to connect power automate to Cloud App Security. 
 
 ## Next steps
 

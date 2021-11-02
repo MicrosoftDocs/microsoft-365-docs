@@ -54,7 +54,7 @@ In this interactive guide, you'll learn how to protect your organization with Mi
 
 ## Microsoft 365 Defender protection
 
-The Microsoft 365 Defender suite protects: 
+Microsoft 365 Defender services protect: 
 
 - **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
 - **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. 
@@ -63,14 +63,14 @@ The Microsoft 365 Defender suite protects:
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Microsoft 365 Defender's unique cross-product layer augments the individual suite components to:
+Microsoft 365 Defender's unique cross-product layer augments the individual service components to:
 
-- Help protect against attacks and coordinate defensive responses across the suite through signal sharing and automated actions.
+- Help protect against attacks and coordinate defensive responses across the services through signal sharing and automated actions.
 - Narrate the full story of the attack across product alerts, behaviors, and context for security teams by joining data on alerts, suspicious events and impacted assets to 'incidents'.
 - Automate response to compromise by triggering self-healing for impacted assets through automated remediation.
 - Enable security teams to perform detailed and effective threat hunting across endpoint and Office data.
 
-Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across the suite of products into a single incident.
+Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
 
 ![Example of an incident overview page.](../../media/overview-incident.png) <br>
 
