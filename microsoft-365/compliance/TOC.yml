@@ -3,7 +3,11 @@
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
 - name: Compliance trials
-  href: compliance-easy-trials.md
+  items:
+    - name: About the free trial for Microsoft 365 compliance
+      href: compliance-easy-trials.md
+    - name: About the free trial for Microsoft Compliance Manager premium assessments
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -46,7 +50,7 @@
           href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an offensive language policy 
+        - name: Case study - Contoso quickly configures an inappropriate content policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
@@ -112,6 +116,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Default labels and policies for Microsoft Information Protection
+      href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
         - name: Learn about sensitive information types
@@ -120,6 +126,8 @@
             href: sensitive-information-type-learn-about.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
+          - name: Learn about named entities (preview)
+            href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
           - name: Get started with custom sensitive information types - Compliance Center
@@ -146,6 +154,8 @@
             href: create-a-keyword-dictionary.md
           - name: Modify a keyword dictionary
             href: sit-modify-keyword-dictionary.md
+          - name: Use named entities in your data loss prevention policies (preview)
+            href: named-entities-use.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
@@ -301,7 +311,7 @@
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+          - name: Endpoint DLP Device Onboarding tools and methods
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
                 href: dlp-configure-endpoints.md
@@ -315,6 +325,16 @@
                 href: dlp-configure-endpoints-script.md
               - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
                 href: dlp-configure-endpoints-vdi.md
+          - name: Onboard macOS devices into Microsoft 365 overview (preview)
+            href: device-onboarding-macos-overview.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+            href: device-onboarding-offboarding-macos-intune.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-intune-mde.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+            href: device-onboarding-offboarding-macos-jamfpro.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -411,8 +431,12 @@
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
             - name: Facebook Business 
               href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
             - name: HR data 
               href: import-hr-data.md
             - name: ICE Chat
@@ -824,6 +848,8 @@
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
+            - name: Collect cloud attachments
+              href: advanced-ediscovery-cloud-attachments.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
@@ -1015,22 +1041,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
-- name: Manage privacy risks
+- name: Privacy management
   items:
     - name: Learn about privacy management
-      href: privacy-management.md
-    - name: Get started with privacy management
-      href: privacy-management-setup.md
-    - name: Set user permissions in privacy management
-      href: privacy-management-permissions.md
-    - name: Manage privacy management settings
-      href: privacy-management-settings.md
-    - name: Find and visualize personal data in privacy management
-      href: privacy-management-data-profile.md
-    - name: Create and manage policies in privacy management
-      href: privacy-management-policies.md
-    - name: Manage subject rights requests in privacy management
-      href: privacy-management-subject-rights-requests.md
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
