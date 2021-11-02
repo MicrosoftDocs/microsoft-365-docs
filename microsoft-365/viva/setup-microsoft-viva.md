@@ -12,8 +12,8 @@ ms.service: sharepoint-online
 localization_priority: Priority
 ms.collection:  
 - M365-collaboration
+- M365initiative-viva
 search.appverid:
-- SPO160
 - MET150
 
 description: "Learn how to set up the Microsoft Viva suite"
