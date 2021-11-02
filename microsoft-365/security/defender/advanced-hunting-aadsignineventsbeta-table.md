@@ -42,10 +42,10 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 |`Timestamp`|datetime|Date and time when the record was generated|
 |`Application`|string|Application that performed the recorded action|
 |`ApplicationId`|string|Unique identifier for the application|
-|`LogonType`|string|Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service|
+|`LogonType`|string|Type of logon session, interactive, remote interactive (RDP), network, batch, and service|
 |`ErrorCode`|int|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
 |`CorrelationId`|string|Unique identifier of the sign-in event|
-|`SessionId`|string|Unique number assigned to a user by a website's server for the duration of the visit or session|
+|`SessionId`|string|Unique number assigned to a user by a website's server during the visit or session|
 |`AccountDisplayName`|string|Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.|
 |`AccountObjectId`|string|Unique identifier for the account in Azure AD|
 |`AccountUpn`|string|User principal name (UPN) of the account|
