@@ -162,10 +162,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
-     - [Quarantined messages in EOP](quarantine-email-messages.md)
-     - [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
-     - [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md)
+   - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and is not recoverable. The default value is 30 days. A valid value is from 1 to 30 days.
+
+     > [!NOTE]
+     > This setting also controls how long messages that were quarantined by anti-phishing policies are retained. For more information, see [Quarantined messages in EOP and Defender for Office 365](quarantine-email-messages.md).
 
    - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 

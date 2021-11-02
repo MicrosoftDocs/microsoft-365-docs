@@ -58,6 +58,8 @@ CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
+Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
+iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.
