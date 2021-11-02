@@ -97,7 +97,8 @@ If your company is limiting internet access with your own policies, enable netwo
 
 - 20.105.151.142
 
-> [!NOTE] This terminal command lists all active IPs of the service for Microsoft 365 support integration: `nslookup`` connector.rave.microsoft.com`
+> [!NOTE]
+> This terminal command lists all active IPs of the service for Microsoft 365 support integration: `nslookup`` connector.rave.microsoft.com`
 
 ## Configure the Microsoft 365 support Integration Application
 
@@ -111,7 +112,8 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[ServiceNow Admin\] Go to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
 
-    >[!NOTE] If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table’s cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes &gt; Can read** is checked for the table oauth\_entity.
+    > [!NOTE]
+    > If you see the error "Read operation against 'oauth\_entity' from scope 'x\_mioms\_m365\_assis' has been refused due to the table’s cross-scope access policy," it was caused by your table access policy. You must make sure **All application scopes &gt; Can read** is checked for the table oauth\_entity.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image10.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -209,7 +211,8 @@ These steps are required to set up the integration between your ServiceNow insta
 
     - x\_mioms\_m365\_assis.administrator
 
-    >[!NOTE] The user with the role x\_mioms\_m365\_assis.insights\_user role can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator can also open a case with Microsoft 365 support.
+    > [!NOTE]
+    > The user with the role x\_mioms\_m365\_assis.insights\_user role can see Service Health Incidents, Recommended Solutions. The user with the role x\_mioms\_m365\_assis.administrator can also open a case with Microsoft 365 support.
 
 1. \[OPTIONAL\] \[The user with role x\_mioms\_m365\_assis.administrator link\] Link Microsoft 365 Admin account.
 
