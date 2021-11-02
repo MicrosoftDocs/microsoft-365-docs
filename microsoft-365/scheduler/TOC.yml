@@ -9,6 +9,6 @@
     - name: How to use Scheduler for Microsoft 365
       href: scheduler-using.md
     - name: Scheduling recurring meetings
-      href: scheduling-recurring-meetings.md
+      href: scheduler-recurring-meetings.md
     - name: Scheduler for Microsoft 365 FAQ's
       href: scheduler-faqs.md
