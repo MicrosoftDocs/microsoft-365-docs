@@ -87,6 +87,6 @@ Depending on your answers to the questions above, this table tells you what feat
 
 | Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration steps |
 |---------------------|---------------------|-----------|----------------|
-| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#Xc56ef742879f24b4f205ff3b7bcda3f752d28e8) |
-| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](#Xfbb451f47bae5de35ad12405dab71231a7828d6)                 |
-| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](#Xc2a75b0640c41b98dccdcd5f17996cca3da8357)                    |
+| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md) |
+| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token.md)                 |
+| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](servicenow-service-health-incidents-solutions-only.md)                    |
