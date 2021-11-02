@@ -78,7 +78,7 @@ Review the following details to verify minimum system requirements:
 - Install the [February 2018 monthly update rollup](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)
 
   > [!NOTE]
-  > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise and Windows 7 SP1 Pro.
+  > Only applicable for Windows Server 2008 R2, Windows 7 SP1 Enterprise, and Windows 7 SP1 Pro.
 
 - Install the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
