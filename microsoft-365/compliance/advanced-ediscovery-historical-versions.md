@@ -20,21 +20,13 @@ description: "Use historical versions in Advanced eDiscovery to collect content 
 
 # Set up historical versions in Advanced eDiscovery (preview)
 
-The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents that are stored in SharePoint Online and then add that content to a review for analysis and review. This helps find and review content from a single version of a document that may be relevant to a case or investigation.
+The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents that are stored in SharePoint Online and add that content to a review for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
 
-## How does it work?
+To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in there organization. Then, when users modify documents in SharePoint, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking the activity of performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
 
-When historical versions is enabled and configured in Advanced eDiscovery, all version of documents stored on a SharePoint site are indexed and searchable when you collect content in a case.
+However, SharePoint indexes only the latest major version of a document, even when versioning is enabled. This means when an eDiscovery user searches for a keyword that is not in the latest document, the document isn't returned in the search results even if older versions (that are preserved when versioning is enabled for a site) contain the keyword the user is searching for. This lack of ability to search historical versions of SharePoint documents may result in missed content in a legal investigation.
 
-To support the historical versions capability, SharePoint administrators must enable versioning for sites  
-
-If a SharePoint administrator has versioning enabled on the site, when customers modify documents in SharePoint, implicit regular versions are created as the document is saved (or auto saved). SharePoint versioning allows for tracking the activity of any item (document, event, task, etc.) that helps in audit trail and as evidence in legal investigations. These older versions of a document are available to the customer, and the customer may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter. 
-
-Typically, eDiscovery users would collect all content that meets the search query criteria for a legal case through the Advanced eDiscovery interface. SharePoint Online indexes only the latest major version. This means that  when an eDiscovery user searches for a keyword that is not in the latest document, the user would not get any results back, even if historical versions include the keyword the eDiscovery user is looking for. The lack of ability to return historical versions of SharePoint Online documents during advance compliance search may result in missed content in a legal investigation.
-
-With the release of Historical Version (historical versions) feature into Advanced eDiscovery, once eDiscovery administrator enables the feature on a specific SharePoint site and that site has versioning enabled, the SharePoint’s content push service will crawl all the versions (major and minor) and send these versions for indexing. Once the crawling and indexing process is complete, the documents and their versions would be available for eDiscovery search. As long as the customer can access a specific version (via Version History), then that version should be discoverable by eDiscovery search once historical versions is enabled. 
-
-
+Historical version helps mitigate missed content. After an eDiscovery administrator turns on historical versions for the organization and then activates it for specific SharePoint sites, the SharePoint content push service crawls all major and minor versions of documents on the activated sites and then sends those versions for indexing. After the crawling and indexing process is complete, documents and their versions are available for eDiscovery search. As long as a specific version can be accessed (by version history), then that version will be discoverable in an Advanced eDiscovery collection search.
 
 ## Set up historical versions
 
@@ -65,7 +57,7 @@ The next step is to turn on historical versions in Advanced eDiscovery. To turn 
 
 ### Step 3: Activate SharePoint sites
 
-After you turn on historical versions for your organization, the last step is to activate SharePoint sites to support historical versions. When you activate a site (by adding it to a list of sites on the **Historical versions** tab), the site is re-crawled and all versions of documents stored on that site are indexed for search.
+After you turn on historical versions for your organization, the last step is to activate SharePoint sites to support historical versions. When you activate a site (by adding it to a list of sites on the **Historical versions** tab), the site is recrawled and all versions of documents stored on that site are indexed for search.
 
 > [!NOTE]
 > There is a limit of 100 site activations per organization during the public preview of historical versions. An activation is counted against this limit whenever you enable or disable a site for historical versions. If you enable multiple sites, each site is counted as a single activation. The total number of activations is displayed on the **Historical versions** tab.
@@ -92,7 +84,7 @@ After you turn on historical versions for your organization, the last step is to
 
 **How are historical versions different that the option to "collect all versions" when you commit a draft collection to a review set?**
 
-Currently, only the latest version of documents are indexed for search. That means when you run a draft collection, only the latest version of documents are searched. If a document matches the keyword query for the collection, it is returned in the collection results. However, if the latest version of a document doesn't match a search query, the document won't be returned event if older versions of the document contain the keyword. To help mitigate this situation, Advanced eDiscovery gives you the ability to collect all versions of the document when you [commit a collection to a review set]((commit-draft-collection.md#commit-a-draft-collection-to-a-review-set). That means any older version that may contain the keyword will be added to the review set.
+Currently, only the latest version of documents is indexed for search. That means when you run a draft collection, only the latest versions of documents are searched. If a document matches the keyword query for the collection, it is returned in the collection results. However, if the latest version of a document doesn't match a search query, the document won't be returned event if older versions of the document contain the keyword. To help mitigate this situation, Advanced eDiscovery gives you the ability to collect all versions of the document when you [commit a collection to a review set]((commit-draft-collection.md#commit-a-draft-collection-to-a-review-set). That means any older version that may contain the keyword will be added to the review set.
 
 Historical versions are different and more efficient than "collecting all versions" because when you activate a site, all versions of a document (and not just the last version) are indexed for search. The result is that if an older version of a document contains a keyword that matches the search query, it will be returned by the collection.
 
