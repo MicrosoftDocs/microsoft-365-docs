@@ -63,6 +63,3 @@ Learn more about [how to create a private developer's app for Go1](https://help.
 
 >[!NOTE]
 >Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
-
->[!NOTE]
->Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to use the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
