@@ -1,7 +1,9 @@
 - name: Scheduler for Microsoft 365
-  href: scheduler-overview.md
+  href: index.yml
   expanded: true
-  items: 
+  items:
+    - name: Welcome to Scheduler for Microsoft 365
+      href: scheduler-overview.md
     - name: Trust and privacy
       href: scheduler-trust-privacy.md
     - name: Setting up Scheduler for Microsoft 365
@@ -10,5 +12,5 @@
       href: scheduler-using.md
     - name: Scheduling recurring meetings
       href: scheduler-recurring-meetings.md
-    - name: Scheduler for Microsoft 365 FAQ's
+    - name: Scheduler for Microsoft 365 FAQ
       href: scheduler-faqs.md
