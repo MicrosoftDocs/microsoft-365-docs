@@ -99,7 +99,7 @@ Security intelligence update version: 1.353.3.0
 - Fix to reduce Microsoft Defender CPU usage in Exchange Server running on Windows Server 2016
 - Fix for scan interruptions
 - Fix for alerts on blocked tampering attempts not appearing in Security Center
-- Defender service tamper resilience improvements
+- Improvements to tamper resilience in Microsoft Defender service
 
 ### Known Issues
 No known issues
