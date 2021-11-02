@@ -141,7 +141,8 @@ If your company is limiting internet access with your own policies, enable netwo
 
 - 20.105.151.142
 
-> [!NOTE] This terminal command lists all active IPs of the service for Microsoft 365 support integration: `nslookup`` connector.rave.microsoft.com`
+> [!NOTE]
+> This terminal command lists all active IPs of the service for Microsoft 365 support integration: `nslookup`` connector.rave.microsoft.com`
 
 ## Configure the Microsoft 365 support integration Application
 
