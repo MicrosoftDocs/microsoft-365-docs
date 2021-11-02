@@ -9,7 +9,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
