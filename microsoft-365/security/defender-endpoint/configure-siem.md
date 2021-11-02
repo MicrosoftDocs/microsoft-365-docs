@@ -44,8 +44,8 @@ For more information, see:
 Microsoft Defender for Endpoint currently supports the following SIEM solution
 integrations: 
 
-- [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-and-alerts-from-the-Microsoft-365-Defender-and-Microsoft-Defender-for-Endpoint-incidents-and-alerts-REST-APIs)
-- [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-Microsoft-Defender-for-Endpoint-events-from-the-Microsoft-365-Defender-event-streaming-API)
+- [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
+- [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
 
 ## Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs
 
