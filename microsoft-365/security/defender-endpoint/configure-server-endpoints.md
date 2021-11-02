@@ -215,20 +215,18 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
     2. Run the following PowerShell command to verify that the passive mode was configured:
     
-    ```PowerShell
-    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-    ```
+        ```PowerShell
+        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+        ```
         
-    > [!NOTE]
-    >
-    > - The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
-    > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
-
-      
+        > [!NOTE]
+        >
+        > - The integration between Azure Defender for Servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
+        > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
     3. Confirm  that a recent event containing the passive mode event is found:
     
-     ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >
