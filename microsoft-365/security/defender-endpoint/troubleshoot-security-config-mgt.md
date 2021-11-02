@@ -82,7 +82,7 @@ To see a list of all devices that have failed the Security Management for Micros
 In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
 
-:::image type="content" alt-text="Image of device inventory page" source="./images/secconfig-mde-error.png":::
+:::image type="content" alt-text="Image of device inventory page filtered" source="./images/secconfig-mde-error.png":::
 
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows 
