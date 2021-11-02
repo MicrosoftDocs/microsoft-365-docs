@@ -70,7 +70,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <p> _PhishSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days|30 days|30 days||
+|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|30 days|30 days|30 days|This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
 |**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <p> _PhishZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable ZAP for spam messages <p> _SpamZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
@@ -83,9 +83,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 
 #### ASF settings in anti-spam policies
 
-There are many Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this article.
-
-We recommend that you leave the following ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+The table in this section describes the Advanced Spam Filter (ASF) settings that are available in anti-spam policies. All of these settings are **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
 
 <br>
 
