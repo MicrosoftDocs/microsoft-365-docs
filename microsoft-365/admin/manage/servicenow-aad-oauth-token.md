@@ -31,7 +31,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     2. Select **Accounts in this organizational directory only ({Microsoft-365-tenant-name} only – Single tenant)** and select **Register**.
 
-        :::image type="content" source="../../media/ServiceNow-guide/serviceow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+        :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. Go to **Authentication** and select **Add a platform**. Select the **Web** option and enter the redirect URL: `https://{your-servicenow-instance``}.service-now.com/auth_redirect.do`
 
