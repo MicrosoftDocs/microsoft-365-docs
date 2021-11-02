@@ -82,6 +82,26 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
+<summary> October-2021 (Platform: 4.18.xxxx.x| Engine: 1.1.18700.4)</summary>
+
+&ensp;Security intelligence update version: **1.353.3.0**<br/>
+&ensp;Released: **October 28th, 2021**<br/>
+&ensp;Platform: **4.18.xxxx.x**<br/>
+&ensp;Engine: **1.1.18700.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18700.4
+Security intelligence update version: 1.353.3.0
+
+### What's new
+- Improvements to FTP network traffic coverage
+- Fix to reduce Microsoft Defender CPU usage in exchange server with Windows Server 2016
+- Defender service tamper resilience improvements
+
+### Known Issues
+No known issues
+<br/>
+</details><details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
 &ensp;Security intelligence update version: **1.351.7.0**<br/>
@@ -91,7 +111,7 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.18600.4
-Security intelligence update version: update
+Security intelligence update version: 1.351.7.0
 
 ### What's new
 - New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
