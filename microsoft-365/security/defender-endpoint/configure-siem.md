@@ -25,13 +25,11 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
-## Pull detections using security information and events management (SIEM) tools
+## Ingest alerts using security information and events management (SIEM) tools
 
 > [!NOTE]
 >
-> - [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
-> - [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
-> -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
+> [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more suspicious or malicious events that occurred on the device and their related details. The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 Microsoft Defender for Endpoint supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
 
@@ -46,82 +44,46 @@ For more information, see:
 Microsoft Defender for Endpoint currently supports the following SIEM solution
 integrations: 
 
-- [Ingesting incidents from the Microsoft Defender for Endpoint alerts REST API](#ingesting-incidents-from-the-microsoft-defender-for-endpoint-alerts-rest-api)
-- [Ingesting streaming event data via event hub](#ingesting-microsoft-365-defender-streaming-event-data-via-event-hubs)
+- [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-from-the-microsoft-defender-for-endpoint-alerts-rest-api)
+- [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-365-defender-streaming-event-data-via-event-hubs)
 
-## Ingesting incidents from the Microsoft Defender for Endpoint alerts REST API
+## Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs
 
-### Incident schema
-For more information on Microsoft 365 Defender alert resource type, see [Schema mapping](alerts.md).
+### Ingesting incidents from the Microsoft 365 Defender incidents REST API
+
+For more information on the Microsoft 365 Defender incidents API, see [incidents methods and properties](../../defender/api-incident.md).
+
+### Ingesting alerts from the Microsoft Defender for Endpoint alerts REST API
+
+For more information on the Microsoft Defender for Endpoint alerts API, see [alerts methods and properties](alerts.md).
+
+## SIEM tool integration with Microsoft Defender for Endpoint
 
 ### Splunk
 
-Using the Microsoft Defender for Endpoint Add-on for Splunk that supports: 
+Using the Microsoft 365 Defender Add-on for Splunk that supports: 
 
 - Ingesting Microsoft Defender for Endpoint alerts 
 - Updating alerts in Microsoft Defender for Endpoint from within Splunk 
 
 For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
 
-  
-
 ### Micro Focus ArcSight
 
-The new SmartConnector for Microsoft Defender for Endpoint ingests incidents into ArcSight and maps these onto its Common Event
+The new SmartConnector for Microsoft 365 Defender ingests incidents that contain Microsoft Defender for Endpoint alerts into ArcSight and maps these onto its Common Event
 Framework (CEF). 
 
-For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documenation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
+For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
-The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
+The SmartConnector replaces the previous FlexConnector for Microsoft 365 Defender.
   
-
 ### IBM QRadar
 
 >[!NOTE]
 >QRadar support for Microsoft Defender for Endpoint is currently based on ingesting  event streaming data. The previous QRadar Microsoft Defender ATP Device Support Module (DSM) is no longer onboarding new customers, and existing customer are encourage to adopt the event streaming API DSM that supports data from all the Microsoft 365 Defender products.   
 
-## Ingesting Microsoft 365 Defender streaming event data via event hubs
-This includes alert metadata from Microsoft Defender for Endpoint via event hubs. This integration model is currently supported by Splunk and IBM QRadar.
+## Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API
 
+Microsoft 365 Defender streaming event data includes alerts and other events from Microsoft Defender for Endpoints. The events may be streamed to an Azure Storage Account or to Azure Event Hubs. The integration model via event hubs is currently supported by Splunk and IBM QRadar.
 
-For more information, see [ Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Defender for Endpoint currently supports the following specific SIEM solution tools through a dedicated SIEM integration model:
-
-- IBM QRadar
-- Micro Focus ArcSight
-
-Other SIEM solutions (such as Splunk, RSA NetWitness) are supported through a different integration model based on the new Alert API. For more information, view the [Partner application](https://securitycenter.microsoft.com/interoperability/partners) page and select the Security Information and Analytics section for full details.
-
-To use either of these supported SIEM tools, you'll need to:
-
-- [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)
-- Configure the supported SIEM tool:
-  - [Configure Micro Focus ArcSight to pull Defender for Endpoint detections](configure-arcsight.md)
-  - Configure IBM QRadar to pull Defender for Endpoint detections For more information, see [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
-
-For more information on the list of fields exposed in the Detection API, see [Defender for Endpoint Detection fields](api-portal-mapping.md).
+For more information, see [Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md).
