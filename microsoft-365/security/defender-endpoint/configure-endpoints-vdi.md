@@ -31,6 +31,9 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
+ > [!NOTE]
+  > **Persistent VDI's** - [Onboarding a persistent VDI machine](configure-endpoints.md) into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Endpoint Manager, and other methods can be used to onboard a persistent machine. In the Security Center, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. 
+
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
 Defender for Endpoint supports non-persistent VDI session onboarding.

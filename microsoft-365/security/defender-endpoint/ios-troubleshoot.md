@@ -51,10 +51,6 @@ While enabled by default, there might be some cases that require you to disable 
 > [!NOTE]
 > Web Protection will not be available when VPN is disabled. To re-enable Web Protection, open the Microsoft Defender for Endpoint app on the device and Enable Web Protection.
 
-## Issues with Device Health card
-
-There is a known issue with Device Health card that might cause incorrect notification to update the iOS version even though user is on the latest version. We recommend users to ignore the notification from Defender for Endpoint. There is no impact on device compliance because of this. We are working to resolve this issue and will update this place once we have a resolution.
-
 ## Coexistence with multiple VPN profiles
 
 Apple iOS does not support multiple **device-wide** VPNs to be active simultaneously. While multiple VPN profiles can exist on the device, only one VPN can be active at a time. If you need to use another VPN on the device, you can disable Defender for Endpoint VPN while you are using the other VPN.

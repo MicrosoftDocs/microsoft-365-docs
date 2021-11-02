@@ -147,8 +147,6 @@
           href: anti-malware.md 
         - name: Create email rules for ransomware
           href: prevent-ransom-in-email.md
-        - name: Stop auto-forwarding emails
-          href: stop-email-auto-forward.md
         - name: Set up anti-phishing
           href: setup-anti-phishing.md  
         - name: Manage safe attachments
