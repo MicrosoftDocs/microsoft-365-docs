@@ -28,14 +28,40 @@ This article shows you how to configure Cornerstone OnDemand as a third-party le
 ## Configure in your Cornerstone Portal
 
 1. Log in to your Cornerstone Portal as an admin.
+
+    ![Image of the Cornerstone Portal.](../media/learning/csod-1.png)
+
 2. Choose **Edge**.
+
+    ![Image of the Edge pane.](../media/learning/csod-2.png)
+
 3. Go to **Marketplace** and search for Viva.
+
+    ![Image of the Marketplace.](../media/learning/csod-3.png)
+
 4. Select the Viva Learning tile.
+
+    ![Image of the cursor hovering over the Viva Learning tile in the Marketplace.](../media/learning/csod-4.png)
+
 5. Choose **Install**.
+
+    ![Image of the cursor hovering over the Install button after selecting the Viva Learning tile.](../media/learning/csod-5.png)
+
 6. Check the box to confirm you agree to the Terms and Conditions, and choose **Install**.
+
+    ![Image of the Install screen with the Terms and Conditions box checked.](../media/learning/csod-6.png)
+
 7. Select **Configure Now**.
+
+    ![Image of the installation popup with a button that says Configure Now on the right and one that says Later on the left.](../media/learning/csod-7.png)
+
 8. Copy the Client ID, Secret, Portal name, and base URL. Then go back and search for Viva.
+
+    ![Image of the configuration screen where you can find your Client ID, Client Secret, Portal name, and Base URL.](../media/learning/csod-8.png)
+
 9. Slide the toggle to enable Viva Learning integration.
+
+    ![Image of the Viva Learning integration toggle in the on position.](../media/learning/csod-10.png)
 
 ## Configure in your Microsoft 365 admin center
 
