@@ -64,4 +64,4 @@ You'll need to complete the configuration in your Microsoft 365 admin center.
 >Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
 
 >[!NOTE]
->Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to use the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
+>Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to consume the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
