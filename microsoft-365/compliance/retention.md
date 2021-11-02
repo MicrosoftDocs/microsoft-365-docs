@@ -137,7 +137,7 @@ With retention labels, you can:
   
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied. 
     
-- **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
+- **Apply retention labels to content automatically** if it matches specific conditions, that include cloud attachments that are shared in email or Teams, or when the content contains: 
     - Specific types of sensitive information.
     - Specific keywords that match a query you create.
     - Pattern matches for a trainable classifier.
@@ -180,14 +180,14 @@ You can also create one or more **auto-apply retention label policies**, each wi
 
 #### Retention label policies and locations
 
-Different types of retention labels can be published to different locations, depending on what the retention label does.
+Retention labels can be published to different locations, depending on what the retention label does.
   
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 |Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange, SharePoint, OneDrive  <br/> |
 |Auto-applied based on keywords or a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-   
+|Auto-applied to cloud attachments  <br/> |SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
@@ -241,7 +241,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
-|Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers| No | Yes |
+|Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers, cloud attachments| No | Yes |
 |Retention applied manually | No | Yes |
 |End user interaction | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |

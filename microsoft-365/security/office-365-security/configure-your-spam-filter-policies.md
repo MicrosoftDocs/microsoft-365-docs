@@ -113,11 +113,11 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk** filtering verdict is taken on the message.
      - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk** filtering verdict. In effect, the BCL threshold and **Bulk** filtering verdict action are irrelevant.
 
-   - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Contains the Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated, and their functionality is being incorporated into other parts of the filtering stack. We recommend that you leave all of these ASF settings turned off in your anti-spam policies.
+   - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Advanced Spam Filter (ASF) settings that are turned off by default.
 
      For details about these settings, see [Advanced Spam Filter settings in EOP](advanced-spam-filtering-asf-options.md).
 
-      <sup>\*</sup> **Contains specific languages** and **from these countries** are not part of ASF settings.
+      <sup>\*</sup> The **Contains specific languages** and **from these countries** settings are not part of ASF.
 
    - **Contains specific languages**: Click the box and select **On** or **Off** from the drop down list. If you turn it on, a box appears. Start typing the name of a language in the box. A filtered list of supported languages will appear. When you find the language that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, click remove ![Remove icon.](../../media/m365-cc-sc-remove-selection-icon.png) next to the value.
 
@@ -162,10 +162,10 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      >
      > <sup>3</sup> A blank **Select a policy** value means the default quarantine policy for that particular verdict is used. When you later edit the anti-spam policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for the spam filter verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 
-   - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following articles:
-     - [Quarantined messages in EOP](quarantine-email-messages.md)
-     - [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
-     - [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md)
+   - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and is not recoverable. The default value is 30 days. A valid value is from 1 to 30 days.
+
+     > [!NOTE]
+     > This setting also controls how long messages that were quarantined by anti-phishing policies are retained. For more information, see [Quarantined messages in EOP and Defender for Office 365](quarantine-email-messages.md).
 
    - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 
@@ -189,7 +189,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
      - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the checkbox.
 
    > [!NOTE]
-   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies that contain information about quarantined messages for all supported protection features (not just anti-spam policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
+   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Quarantine policies](quarantine-policies.md).
 
    When you're finished, click **Next**.
 
@@ -267,7 +267,7 @@ Creating a custom anti-spam policy in the Microsoft 365 Defender portal creates 
 
    For the default anti-spam policy, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
-To enable or disable a policy, set the policy priority order, or configure the end-user quarantine notifications, see the following sections.
+To enable or disable a policy or set the policy priority order, see the following sections.
 
 ### Enable or disable anti-spam policies
 
