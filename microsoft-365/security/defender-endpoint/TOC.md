@@ -158,6 +158,7 @@
 
 ##### [Microsoft Defender for Endpoint on Android]()
 ###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+###### [What's new](android-whatsnew.md)
 
 ###### [Deploy]()
 ####### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
@@ -188,10 +189,13 @@
 
 ##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
+#### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
+
 
 
 
