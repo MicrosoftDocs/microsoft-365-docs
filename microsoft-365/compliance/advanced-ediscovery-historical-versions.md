@@ -20,9 +20,9 @@ description: "Use historical versions in Advanced eDiscovery to collect content 
 
 # Set up historical versions in Advanced eDiscovery (preview)
 
-The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents that are stored in SharePoint Online and add that content to a review for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
+The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents that are stored in SharePoint Online and add that content to a review set for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
 
-To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in there organization. Then, when users modify documents in SharePoint, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking the activity of performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
+To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in there organization. Then, when users modify documents in SharePoint, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking of the activity performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
 
 However, SharePoint indexes only the latest major version of a document, even when versioning is enabled. This means when an eDiscovery user searches for a keyword that is not in the latest document, the document isn't returned in the search results even if older versions (that are preserved when versioning is enabled for a site) contain the keyword the user is searching for. This lack of ability to search historical versions of SharePoint documents may result in missed content in a legal investigation.
 
@@ -70,7 +70,7 @@ After you turn on historical versions for your organization, the last step is to
 
 2. Select a site to activate, and then click **Enable** to activate it for historical versions. You can use the search box to search for a  specific site.
 
-   A warning is displayed that says the site will be reindexed and will take away before it's ready to be search. The warning also states that you won't be able to disable historical versions for the selected site for 30 days.
+   A warning is displayed that says document versions on the site will be indexed and this indexing process will take some time before the versions will be ready to be searched. The warning also states that you won't be able to disable historical versions for the selected site for 30 days.
 
 3. Click **Yes** to activate the site for historical versions.
 
@@ -88,19 +88,7 @@ Currently, only the latest version of documents is indexed for search. That mean
 
 Historical versions are different and more efficient than "collecting all versions" because when you activate a site, all versions of a document (and not just the last version) are indexed for search. The result is that if an older version of a document contains a keyword that matches the search query, it will be returned by the collection.
 
-**How long do I have to wait after a site is activated until all historical versions of documents on that site are all indexed and available for eDiscovery search?**
-
-Based on the number of documents for a site and the average number of versions per document, we try to estimate the total number of files per site. Based on this, an estimate of how long it will take to index is as follows:
-
-`Number of versions / (Processing rate of 100,000 files per day ) + .5 days = Total number of days to process a site`
-
-Notice in the previous equation that we add .5 days as a buffer to make the estimate more conservative.
-
-For example, if the total number of documents and all versions for a site is 150,000, then it will approximately two days to process the site for historical versions:
-
-`150,000 files/100,000 files per day + .5 days = 2 days`
-
-**When historical versions enabled for a site, does it impact the performance of the site?**
+**When historical versions is enabled for a site, does it impact the performance of the site?**
 
 No. Once historical versions is enabled for a site, the performance for the site will the the same as it was before the site was enabled. The crawling and indexing processes that are performed on the site after it's enable will occur at a slower rate and be performed during off-peak hours. Enabling historical versions for a site will kick off a backfill process, which finds all the versions of documents on the site and then sends those versions to the index. Depending on the number of document versions for site, this backfill process might impact service health. We have mitigated this potential impact in the following ways:
 
@@ -108,6 +96,18 @@ No. Once historical versions is enabled for a site, the performance for the site
 
 - We process document versions in our lowest priority queues, which allows a majority of the service resources to be delegated to user changes.
 
+**How long do I have to wait after a site is activated until all historical versions of documents on that site are all indexed and available for eDiscovery search?**
+
+Based on the number of documents for a site and the average number of versions per document, we try to estimate the total number of files per site. Based on this, an estimate of how long it will take to index is as follows:
+
+`Number of versions / (Processing rate of 100,000 files per day ) + .5 days = Total number of days to process a site`
+
+The .5 days is added as a buffer since indexing of versions on site is optimized to run during off-peak hours.
+
+For example, if the total number of documents and all versions for a site is 150,000, then it will approximately two days to process the site for historical versions:
+
+`150,000 files/100,000 files per day + .5 days = 2 days`
+
 **Why is it not recommended to frequently activate or deactivate sites for historical versions?**
 
-When you deactivate a previously activated site, a clean-up process is triggered. This process will take time to complete. If that same site is then activated again, the backfill process of re-indexing the site hat to be rerun. Both the clean-up and backfill process are time and resource intensive. Therefore we recommended that you carefully consider and plan which sites you want to activate for historical version so you can avoid repeatedly activating and deactivating historical versions for a site.
+When you deactivate a previously activated site, a clean-up process is triggered. This process will take time to complete. If that same site is then activated again, the backfill process of re-indexing the site has to be rerun. Both the clean-up and backfill process are time and resource intensive. Therefore we recommended that you carefully consider and plan which sites you want to activate for historical version so you can avoid repeatedly activating and deactivating historical versions for a site.
