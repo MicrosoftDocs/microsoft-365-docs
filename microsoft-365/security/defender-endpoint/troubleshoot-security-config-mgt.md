@@ -76,17 +76,17 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
 Through the Microsoft Defender for Endpoint portal, security administrators can now troubleshoot Security Management for Microsoft Defender for Endpoint onboarding. 
 
 
-In **Endpoints > Configuration & Baselines > Configuration management**, the Device security management widget includes a snapshot of key onboarding status per management channel. 
-
-The widget's bar chart includes a breakdown per OS, and by scrolling over the "MDE-Error" field you'll see the number of machines that failed onboarding.
+In **Endpoints > Device inventory**, the **Managed By** column has been added to filter by management channel (for example, MEM).
 
 
-![Image of device security management](images/device-security-mgt.png)
+:::image type="content" alt-text="Image of device inventory page" source="./images/device-inventory-mde-error.png":::
 
-To see a list of all devices that have failed the onboarding process, select **MDE-Error**. In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
+To see a list of all devices that have failed the Security Management for Microsoft Defender for Endpoint onboarding process, filter the table by **MDE-Error**.
+
+In the list, select a specific device to see troubleshooting details in the side panel, pointing to the root cause of the error, and corresponding documentation.
 
 
-![Image of device inventory with machine selected](images/device-inventory-security-config.png)
+:::image type="content" alt-text="Image of device inventory page" source="./images/secconfig-mde-error.png":::
 
 
 ## Run Microsoft Defender for Endpoint Client Analyzer on Windows 
