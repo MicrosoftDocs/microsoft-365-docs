@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 11/01/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -120,21 +120,7 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details><details>
-<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
-
-&ensp;Security intelligence update version: **1.345.13.0**<br/>
-&ensp;Released: **August 5, 2021**<br/>
-&ensp;Platform: **4.18.2107.4**<br/>
-&ensp;Engine: **1.1.18400.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
-
-### What's new
-- Device control support added for Windows Portable Devices
-- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
-- Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
-- Improvements to the behavior monitoring engine
-
+</details>
 ### Known Issues
 No known issues
 <br/>
@@ -143,6 +129,20 @@ No known issues
 ### Previous version updates: Technical upgrade support only
 
 After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
+<details>
+<summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
+
+&ensp;Security intelligence update version: **1.345.13.0**<br/>
+&ensp;Released: **August 5, 2021**<br/>
+&ensp;Platform: **4.18.2107.4**<br/>
+&ensp;Engine: **1.1.18400.4**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
+
+### What's new
+- Device control support added for Windows Portable Devices
+- Potentially unwanted applications (PUA) protection is turned on by default for consumers (See [Potentially unwanted apps will be blocked by default](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e))
+- Scheduled scans for Group Policy Object managed systems will adhere to user configured scan time
+- Improvements to the behavior monitoring engine
 <details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
