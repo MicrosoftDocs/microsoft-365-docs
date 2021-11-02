@@ -1,6 +1,6 @@
 ﻿---
 title: Integrate your SIEM tools with Microsoft Defender for Endpoint
-description: Learn how to use REST API and configure supported security information and events management tools to receive and pull detections.
+description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
 search.appverid: met150
 ms.prod: m365-security
@@ -44,14 +44,14 @@ For more information, see:
 Microsoft Defender for Endpoint currently supports the following SIEM solution
 integrations: 
 
-- [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-from-the-microsoft-defender-for-endpoint-alerts-rest-api)
-- [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-365-defender-streaming-event-data-via-event-hubs)
+- [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-and-alerts-from-the-Microsoft-365-Defender-and-Microsoft-Defender-for-Endpoint-incidents-and-alerts-REST-APIs)
+- [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-Microsoft-Defender-for-Endpoint-events-from-the-Microsoft-365-Defender-event-streaming-API)
 
 ## Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs
 
 ### Ingesting incidents from the Microsoft 365 Defender incidents REST API
 
-For more information on the Microsoft 365 Defender incidents API, see [incidents methods and properties](../../defender/api-incident.md).
+For more information on the Microsoft 365 Defender incidents API, see [incidents methods and properties](../defender/api-incident.md).
 
 ### Ingesting alerts from the Microsoft Defender for Endpoint alerts REST API
 
