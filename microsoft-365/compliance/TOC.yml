@@ -3,7 +3,11 @@
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
 - name: Compliance trials
-  href: compliance-easy-trials.md
+  items:
+    - name: About the free trial for Microsoft 365 compliance
+      href: compliance-easy-trials.md
+    - name: About the free trial for Microsoft Compliance Manager premium assessments
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -112,6 +116,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Default labels and policies for Microsoft Information Protection
+      href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
         - name: Learn about sensitive information types
@@ -305,7 +311,7 @@
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+          - name: Endpoint DLP Device Onboarding tools and methods
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
                 href: dlp-configure-endpoints.md
@@ -319,6 +325,16 @@
                 href: dlp-configure-endpoints-script.md
               - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
                 href: dlp-configure-endpoints-vdi.md
+          - name: Onboard macOS devices into Microsoft 365 overview (preview)
+            href: device-onboarding-macos-overview.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+            href: device-onboarding-offboarding-macos-intune.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-intune-mde.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+            href: device-onboarding-offboarding-macos-jamfpro.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -415,8 +431,12 @@
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
             - name: Facebook Business 
               href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
             - name: HR data 
               href: import-hr-data.md
             - name: ICE Chat
@@ -828,6 +848,8 @@
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
+            - name: Collect cloud attachments
+              href: advanced-ediscovery-cloud-attachments.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
