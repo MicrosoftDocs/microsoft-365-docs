@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -82,11 +82,11 @@ All our updates contain
 - integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
 <br/><br/>
 <details>
-<summary> October-2021 (Platform: 4.18.xxxx.x| Engine: 1.1.18700.4)</summary>
+<summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
-&ensp;Platform: **4.18.xxxx.x**<br/>
+&ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
