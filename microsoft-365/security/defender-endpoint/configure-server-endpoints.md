@@ -226,7 +226,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
     3. Confirm  that a recent event containing the passive mode event is found:
     
-        ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >
