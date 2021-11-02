@@ -72,15 +72,15 @@ Microsoft 365 Defender's unique cross-product layer augments the individual serv
 
 Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
 
-![Example of an incident overview page.](../../media/overview-incident.png) <br>
+:::image type="content" source="../../media/overview-incident.png" alt-text="Example of an incident overview page" lightbox="../../media/overview-incident.png":::<br>
 
 Here's an example of the list of related alerts for an incident.
 
-![Example of the list of alerts for an incident](../../media/incident-list.png)<br>
+:::image type="content" source="../../media/incident-list.png" alt-text="Example of the list of alerts for an incident" lightbox="../../media/incident-list.png":::
 
 Here's an example of query-based hunting on top of email and endpoint raw data.
 
-![Example of advanced hunting and a query](../../media/advanced-hunting.png)<br>
+:::image type="content" source="../../media/advanced-hunting.png" alt-text="Example of advanced hunting and a query" lightbox="../../media/advanced-hunting.png":::
 
 Microsoft 365 Defender cross-product features include: 
 
