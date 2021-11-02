@@ -174,7 +174,7 @@ Users in your organization may have different levels of risk depending on their 
 
 For organizations in the healthcare industry, recent studies have found a very high rate of insider-related data breaches. Detecting misuse of patient data and health record information is a critical component of safeguarding patient privacy and complying with compliance regulation such as the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Patient data misuse can range from accessing privileged patient records to accessing records of patients from family or neighbors with malicious intent. To help identity these types of risky activities, the following insider risk management policy templates use the Microsoft 365 HR connector and a healthcare-specific data connector to start scoring risk indicators relating to behaviors that may occur within your electronic heath record (EHR) systems:
 
-- [General patient data misuse (preview)](insider-risk-management-policies.md#healthcare-preview)
+- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 
 ## Actions and behaviors by disgruntled users (preview)
 
