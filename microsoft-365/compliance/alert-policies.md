@@ -254,6 +254,8 @@ To see which category a default alert policy is assigned to, see the table in [D
 |DLP Compliance Management||![Check mark.](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
+|Information Protection Analyst||![Check mark.](../media/checkmark.png)|||||
+|Information Protection Investigator||![Check mark.](../media/checkmark.png)|||||
 |Manage Alerts||||||![Check mark.](../media/checkmark.png)|
 |Organization Configuration||||||![Check mark.](../media/checkmark.png)|
 |Preview|||||||
