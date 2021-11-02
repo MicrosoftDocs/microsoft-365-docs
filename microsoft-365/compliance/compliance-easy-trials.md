@@ -13,14 +13,14 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft 365 compliance free trials."
+description: "About the compliance solutions trials."
 ---
 
-# About the free trial for Microsoft 365 compliance
+# About the compliance solutions trial
 
 Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
 
-The Microsoft 365 compliance solutions trial is the easiest way to try the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft 365 compliance solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
@@ -54,19 +54,17 @@ If you decide not to enroll in a feature that is part of the compliance solution
 
 The Microsoft 365 compliance solutions trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft E5 license package.
 
-## Learn more about compliance
+## Learn more about compliance solutions
 
 Wondering what you can experience in your free trial? The compliance solutions trial includes the following solutions:
-
-<!--
-- **application governance**
-
-    Application governance is an add-on for Microsoft Cloud App Security that monitors OAuth apps running in your Microsoft 365 tenant for excessive permissions and inappropriate access to files and email. [Learn more](app-governance-manage-app-governance.md)
--->
 
 - **Audit**
 
     Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. [Learn more about Audit](advanced-audit.md)
+
+- **Communication Compliance**
+
+    Communication Compliance helps you overcome modern compliance challenges associated with internal and external communications by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate. Learn more about [Communication Compliance](communication-compliance.md)
 
 - **Compliance Manager**
 

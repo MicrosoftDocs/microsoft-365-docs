@@ -58,7 +58,7 @@ Insider risk management is centered around the following principles:
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
 
-To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics-preview).
+To learn more about insider risk analytics, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
 
 ## Get started with recommended actions (preview)
 
@@ -112,7 +112,7 @@ Alerts are resolved by opening a new case, assigning the alert to an existing ca
 
 ### Investigate
 
-Quickly investigate all activities for a selected user with [User activity reports (preview)](insider-risk-management-activities.md#user-activity-reports). These reports allow investigators in your organization to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy.
+Quickly investigate all activities for a selected user with [User activity reports (preview)](insider-risk-management-activities.md#user-activity-reports-preview). These reports allow investigators in your organization to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy.
 
 [Cases](insider-risk-management-cases.md) are created for alerts that require deeper review and investigation of the activity details and circumstances around the policy match. The **Case dashboard** provides an all-up view of all active cases, open cases over time, and case statistics for your organization. Reviewers can quickly filter cases by status, the date the case was opened, and the date the case was last updated.
 
