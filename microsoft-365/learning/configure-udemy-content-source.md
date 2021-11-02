@@ -9,7 +9,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
@@ -23,6 +23,11 @@ This article shows you how to configure Udemy as a third-party learning content 
 
 >[!NOTE]
 >Content accessible through Viva Learning is subject to terms other than the Microsoft Product Terms. Udemy content and any associated services are subject to Udemy's privacy and service terms.
+
+## Configure in your Udemy portal
+
+>[!NOTE]
+>You'll need to have admin permissions in Udemy to complete these steps.
 
 Follow these steps to enable the APIs in your Udemy Business environment and generate client credentials for your LMS/LXP application to access them.
 
@@ -38,7 +43,10 @@ Follow these steps to enable the APIs in your Udemy Business environment and gen
 
 6. Get the API endpoint URL and ACCOUNT_ID from the overview page. Navigate to the supported methods to try out an API call. You're now all set to make calls to the Udemy Business APIs.
 
-## Configure the Microsoft 365 admin center
+## Configure in your Microsoft 365 admin center
+
+>[!NOTE]
+>You'll need to have admin permissions in Microsoft 365 to complete these steps.
 
 After you've received the required configuration details from Udemy portal by using the previous steps, the tenant admin needs to configure Udemy as a learning source in the Microsoft 365 admin center by using the following steps.
 
@@ -54,3 +62,9 @@ After you've received the required configuration details from Udemy portal by us
     - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.
 
 4. Select **Save** to activate Udemy content in Microsoft Viva Learning. It may take up to 24 hours for the content to be available in Viva Learning.
+
+>[!NOTE]
+>Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
+
+>[!NOTE]
+>Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to use the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
