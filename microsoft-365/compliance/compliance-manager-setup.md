@@ -319,20 +319,20 @@ The assessments page summarizes key information about each assessment:
 
 - **Assessment**: name of the assessment
 - **Status**:
-    - **Complete** -  all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
-    - **Incomplete** – at least one control has a status of “failed"
-    - **None** - all controls have have not been tested
-    - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
+  - **Complete** - all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
+  - **Incomplete** – at least one control has a status of “failed"
+  - **None** - all controls have have not been tested
+  - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
 - **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
 - **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
 - **Microsoft actions**: the number of completed actions to satisfy implementation of Microsoft controls
 - **Group**: name of the group the assessment belongs to
-- **Product**: associated Microsoft 365 service
+- **Product**: associated product, such as Microsoft 365 or another product defined for assessment
 - **Regulation**: the regulatory standard, policy, or law that applies to the assessment
 
 ### Filtering your assessments view
 
-To filter you view of assessments:
+To filter your view of assessments:
 
 1. Select **Filter** at the top-left corner of your assessments list.
 2. On the **Filters** flyout pane, check your desired criteria.
@@ -355,4 +355,5 @@ Select a template from its row to bring up its details page, which contains a de
 **Learn more:** [Read how to work with assessment templates](compliance-manager-templates.md).
 
 ## Next step
+
 Customize Compliance Manager by [setting up assessments](compliance-manager-assessments.md).
