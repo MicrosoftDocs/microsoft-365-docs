@@ -77,9 +77,9 @@ For information how to update or install the platform update, see [Update for Wi
 
 All our updates contain
 
-- performance improvements;
-- serviceability improvements; and
-- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- Performance improvements
+- Serviceability improvements
+- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
 <summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
