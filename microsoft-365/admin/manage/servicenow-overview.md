@@ -85,7 +85,7 @@ Before setting up any configuration for Microsoft 365 support integration, revie
 
 Depending on your answers to the questions above, this table tells you what features are available and how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
-| Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration |Steps                                                                                                        
+| Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration steps |
 |---------------------|---------------------|-----------|----------------|
 | Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#Xc56ef742879f24b4f205ff3b7bcda3f752d28e8) |
 | No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](#Xfbb451f47bae5de35ad12405dab71231a7828d6)                 |
