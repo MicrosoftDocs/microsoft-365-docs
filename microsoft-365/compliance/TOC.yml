@@ -759,6 +759,10 @@
             href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Partially indexed items
+            href: partially-indexed-items-in-content-search.md
+          - name: Investigating partially indexed items
+            href: investigating-partially-indexed-items-in-ediscovery.md
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: Export a search report
