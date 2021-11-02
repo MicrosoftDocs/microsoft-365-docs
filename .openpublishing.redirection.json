@@ -5392,6 +5392,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/overview-security-center.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-defender",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/get-incident-notifications.md",
+      "redirect_url": "/microsoft-365/security/defender/incidents-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/use-power-automate.md",
+      "redirect_url": "/microsoft-365/security/defender/investigate-alerts",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/managed-desktop/service-description/device-lifecycle.md",
       "redirect_url": "/microsoft-365/managed-desktop/service-description/device-requirements",
       "redirect_document_id": true
