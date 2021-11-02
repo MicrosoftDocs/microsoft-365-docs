@@ -141,10 +141,7 @@ No known issues
 No known issues
 <br/>
 </details>
-### Known Issues
-No known issues
-<br/>
-</details>
+
 
 ### Previous version updates: Technical upgrade support only
 
