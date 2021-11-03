@@ -30,7 +30,7 @@ Insider risk management settings apply to all insider risk management policies, 
 - Priority physical assets (preview)
 - Power Automate flows (preview)
 - Microsoft Teams (preview)
-- Analytics (preview)
+- Analytics
 
 Before you get started and create insider risk management policies, it's important to understand these settings and choose setting levels best for the compliance needs for your organization.
 
@@ -508,7 +508,7 @@ To create a team for a case, you'll use the Create Microsoft Team control when w
 
 Depending on the number of users assigned to insider risk management role groups, it may take 15 minutes for all investigators and analysts to be added to the Microsoft Teams team for a case.
 
-## Analytics (preview)
+## Analytics
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. Analytics scans offer the following advantages for your organization:
 
