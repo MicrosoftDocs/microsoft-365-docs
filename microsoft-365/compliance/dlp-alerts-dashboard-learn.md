@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Learn about data loss prevention alerts and the alerts dashboard. 
 ---
 
@@ -30,7 +31,7 @@ When the criteria in a Data loss prevention (DLP) policy is matched by the actio
 
 ## Workloads
 
-The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), shows alerts for DLP policies on these workloads:
+The [DLP alert management dashboard](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts), in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, shows alerts for DLP policies on these workloads:
 
 - Exchange
 - SharePoint

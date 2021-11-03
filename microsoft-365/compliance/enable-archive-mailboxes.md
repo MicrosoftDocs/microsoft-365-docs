@@ -37,7 +37,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
 
 ## Enable an archive mailbox
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
@@ -69,7 +69,7 @@ The default archive policy assigned to users' mailboxes moves items to the archi
 
 To disable an archive mailbox:
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
