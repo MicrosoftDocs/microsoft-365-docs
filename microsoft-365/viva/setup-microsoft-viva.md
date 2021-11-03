@@ -12,8 +12,8 @@ ms.service: sharepoint-online
 localization_priority: Priority
 ms.collection:  
 - M365-collaboration
+- M365initiative-viva
 search.appverid:
-- SPO160
 - MET150
 
 description: "Learn how to set up the Microsoft Viva suite"
@@ -50,34 +50,34 @@ If you want to learn more about each module and how you will set them up first, 
 
 Accelerate skilling and growth – Your employees can easily discover and share everything from training courses to micro-learning content.
 
-[Overview](https://docs.microsoft.com/microsoft-365/learning)
+[Overview](/microsoft-365/learning)
 
-[Learn how to set it up](https://docs.microsoft.com/microsoft-365/learning/set-up-teams-admin-center)
+[Learn how to set it up](/microsoft-365/learning/set-up-teams-admin-center)
 
 **Viva Insights**
 
 Balance productivity and well-being – Provides data-driven, privacy-protected insights and actionable recommendations that help everyone in the organization work smarter and achieve balance.
 
-[Overview](https://docs.microsoft.com/viva/insights/introduction)
+[Overview](/viva/insights/introduction)
 
-[Learn how to set it up](https://docs.microsoft.com/viva/insights/setup/setup-intro)
+[Learn how to set it up](/viva/insights/setup/setup-intro)
 
 **Viva Topics**
 
 Connect people to knowledge – People can easily discover topics of interest within Office apps, SharePoint, and search results.
 
-[Overview](https://docs.microsoft.com/microsoft-365/knowledge/)
+[Overview](/microsoft-365/knowledge/)
 
-[Learn how to set it up](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences)
+[Learn how to set it up](/microsoft-365/knowledge/set-up-topic-experiences)
 
 **Viva Connections**
 
 Inform, engage, and empower -- Microsoft Viva Connections is your gateway to a modern engagement experience designed to keep everyone engaged and informed.
 
-[Overview](https://docs.microsoft.com/sharepoint/viva-connections-overview)
+[Overview](/sharepoint/viva-connections-overview)
 
-[Learn how to set it up](https://docs.microsoft.com/sharepoint/guide-to-setting-up-viva-connections)
+[Learn how to set it up](/sharepoint/guide-to-setting-up-viva-connections)
 
 **More information**
 
-[Get additional documentation and ways to learn about Microsoft Viva](https://docs.microsoft.com/microsoft-365/viva)
+[Get additional documentation and ways to learn about Microsoft Viva](/microsoft-365/viva)

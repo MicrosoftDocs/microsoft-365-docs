@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/01/2021
+ms.date: 11/02/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -76,16 +76,16 @@ For information how to update or install the platform update, see [Update for Wi
 
 All our updates contain
 
-- performance improvements;
-- serviceability improvements; and
-- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- Performance improvements
+- Serviceability improvements
+- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> October-2021 (Platform: 4.18.xxxx.x| Engine: 1.1.18700.4)</summary>
+<summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
-&ensp;Platform: **4.18.xxxx.x**<br/>
+&ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
@@ -93,9 +93,12 @@ Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
 
 ### What's new
-- Improvements to FTP network traffic coverage
-- Fix to reduce Microsoft Defender CPU usage in exchange server with Windows Server 2016
-- Defender service tamper resilience improvements
+
+- Improvements to file transfer protocol (FTP) network traffic coverage
+- Fix to reduce Microsoft Defender CPU usage in Exchange Server running on Windows Server 2016
+- Fix for scan interruptions
+- Fix for alerts on blocked tampering attempts not appearing in Security Center
+- Improvements to tamper resilience in Microsoft Defender service
 
 ### Known Issues
 No known issues
