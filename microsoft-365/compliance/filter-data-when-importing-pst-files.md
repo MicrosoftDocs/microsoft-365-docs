@@ -59,7 +59,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
 
 After you've created a PST import job, follow these steps to filter the data before you import it to Office 365.
   
-1. Go to <https://compliance.microsoft.com> and sign in using the credentials for an administrator account in your organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for an administrator account in your organization.
     
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance** \> **Import**.
     
