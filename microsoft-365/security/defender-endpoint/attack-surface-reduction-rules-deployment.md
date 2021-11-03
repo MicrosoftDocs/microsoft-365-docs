@@ -177,13 +177,13 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
     > ![Configure ASR rules profile](images/asr-mem-create-profile.png)
 
 5. Click **Create**.
-6. On the **Basics** tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy.
+6. In the **Basics** tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy.
 7. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, set all rules to **Audit mode**.
 
     > [!div class="mx-imgBorder"]
     > ![Set ASR rules to Audit mode](images/asr-mem-configuration-settings.png)
 
-8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md).
+8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md).
 9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
@@ -245,7 +245,7 @@ The **GroupBy** returns results set to the following groups:
 
 >[!Note]
 >
->If you have a Microsoft Microsoft 365 Security E5 or A5, Windows E5 or A5 license, the following link will open the Microsoft Defender 365  Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections tab.
+>If you have a Microsoft Microsoft 365 Security E5 or A5, Windows E5 or A5 license, the following link opens the Microsoft Defender 365  Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections tab.
 
 #### Configuration tab
 
