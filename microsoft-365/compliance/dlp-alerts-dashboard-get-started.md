@@ -49,7 +49,7 @@ The **content preview** feature is available only for these licenses:
 - Office 365 (E5)
 - Advanced Compliance (E5) add on
 - Microsoft 365 E5/A5 Information Protection and Governance
-- Microsft 365 E5/A5 Compliance
+- Microsoft 365 E5/A5 Compliance
 
 ### Licensing for alert configuration options
 
