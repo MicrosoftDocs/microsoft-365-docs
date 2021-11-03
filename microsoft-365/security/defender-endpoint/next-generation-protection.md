@@ -2,7 +2,6 @@
 title: Overview of next-generation protection in Microsoft Defender for Endpoint
 description: Get an overview of next-generation protection in Microsoft Defender for Endpoint. Reinforce the security perimeter of your network by using next-generation protection designed to catch all types of emerging threats.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, virus, malware, threat, detection, protection, security
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library

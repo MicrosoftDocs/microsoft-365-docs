@@ -307,7 +307,7 @@
         href: ../security/defender/eval-overview.md
       - name: Respond to your first incident
         href: ../security/defender/first-incident-overview.md
-      - name: Deploy Microsoft Defender for Endpoints
+      - name: Deploy Microsoft Defender for Endpoint
         href: /microsoft-365/security/defender-endpoint/deployment-phases.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
