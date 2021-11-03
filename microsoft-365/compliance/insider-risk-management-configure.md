@@ -99,7 +99,7 @@ Depending on the structure of your compliance management team, you have options 
 
 Complete the following steps to add users to an insider risk management role group:
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
 
@@ -129,7 +129,7 @@ To enable insider risk Analytics, you must be a member of the *Insider Risk Mana
 
 Complete the following steps to enable insider risk analytics:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This action turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics (preview)** and enabling **Scan your tenant's user activity to identify potential insider risks**.
 3. On the **Analytics details** pane, select **Run scan to start the scan for your organization**. Analytics scan results may take up to 24 hours before insights are available as reports for review.
 
@@ -217,7 +217,7 @@ See the [Configure advanced features in Defender for Endpoint](/windows/security
 
 Before configuring a policy, define the following insider risk settings:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select **Insider risk settings** from the top-right corner of any page.
 2. On the **Privacy** page, select a privacy setting for displaying usernames for policy alerts.
 3. On the **Indicators** page, select the alert indicators you want to apply to all insider risk policies.
 
@@ -242,7 +242,7 @@ Before configuring a policy, define the following insider risk settings:
 
 Insider risk management policies include assigned users and define which types of risk indicators are configured for alerts. Before activities can trigger alerts, a policy must be configured. Use the policy wizard to create new insider risk management policies.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
