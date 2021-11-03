@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
+ms.author: dansimp
 author: levinec
 ms.localizationpriority: medium
 manager: dansimp
