@@ -113,6 +113,15 @@ Use this procedure to create a new sensitive information type that is based on a
 13. Choose the **recommended confidence level** for this sensitive information type.
 14. Check your setting and choose **Submit**.
 
+> [!NOTE]
+> Following sensitive information types can not be copied.
+> - EU driver's license number
+> - EU national identification number
+> - EU passport number
+> - EU social security number or equivalent identification
+> - EU Tax identification number
+> - U.S. driver's license number
+
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
