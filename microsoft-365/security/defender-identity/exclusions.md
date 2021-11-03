@@ -23,7 +23,7 @@ This article explains how to configure [Microsoft Defender for Identity](/defend
 
 [!INCLUDE [Product long](includes/product-long.md)] enables the exclusion of specific IP addresses, computers, domains, or users from a number of detections.
 
-For example, a **DNS Reconnaissance exclusion** could be a security scanner that uses DNS as a scanning mechanism. The exclusion helps [!INCLUDE [Product short](includes/product-short.md)] ignore such scanners.
+For example, a **DNS Reconnaissance** alert could be triggered by a security scanner that uses DNS as a scanning mechanism. Creating an exclusion helps Defender for Identity ignore such scanners and reduce false positives.
 
 ## How to add detection exclusions
 
