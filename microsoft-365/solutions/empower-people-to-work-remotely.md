@@ -86,7 +86,7 @@ To enable the capabilities of Microsoft 365 for your hybrid workers, use these M
 |Azure AD Application Proxy|Provide secure remote access for web-based applications hosted on intranet servers.|Requires separate paid Azure subscription|
 |Azure Point-to-Site VPN|Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.|Requires separate paid Azure subscription|
 |Windows Virtual Desktop|Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure.|Requires separate paid Azure subscription|
-|Remote Desktop Services (RDS)|Allow employees to connect into Windows-based computers on your intranet.|Microsoft 365 E3 or E5|
+|Remote Desktop |Allow employees to connect into Windows-based computers on your intranet.|Microsoft 365 E3 or E5|
 |Remote Desktop Services Gateway|Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.|Requires separate Windows Server licenses|
 |Microsoft Intune|Manage devices and applications.|Microsoft 365 E3 or E5|
 |Configuration Manager|Manage software installations, updates, and settings on your devices|Requires separate Configuration Manager licenses|
@@ -110,7 +110,7 @@ You can enable all of your workers to stay productive from anywhere with these d
 
 - A modern device, such as a Surface laptop and Windows 10, which has the features, security, and performance to access Microsoft 365 cloud apps and services directly over the web.
 
-- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a quickly deployed [Windows 10-based virtual desktop](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
+- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a quickly deployed [Windows 10-based virtual desktop](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
 
 ## Next steps
 

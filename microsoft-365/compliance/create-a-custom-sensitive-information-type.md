@@ -51,7 +51,7 @@ There are two ways to create a new sensitive information type:
 
 Use this procedure to create a new sensitive information type that you fully define. 
 
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create sensitive info type**.
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
@@ -112,6 +112,18 @@ Use this procedure to create a new sensitive information type that is based on a
 12. Choose **Next**.
 13. Choose the **recommended confidence level** for this sensitive information type.
 14. Check your setting and choose **Submit**.
+
+> [!NOTE]
+> These SITs can't be copied:
+> - Canada driver's license number
+> - EU driver's license number
+> - EU national identification number
+> - EU passport number
+> - EU social security number or equivalent identification
+> - EU tax identification number
+> - International classification of diseases (ICD-10-CM)
+> - International classification of diseases (ICD-9-CM)
+> - U.S. driver's license number
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)

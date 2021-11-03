@@ -31,10 +31,9 @@ ms.technology: m365d
 
 Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities. It leverages extensive AI and automation to automatically stop attacks and remediate affected assets to a safe state. The following articles step you through the process of setting up a trial environment so you can evaluate the features and capabilities of Microsoft 365 Defender. 
 
-As you walk through these articles, the steps will illustrate how to enable each component, configure settings, and begin monitoring with a pilot group. When you’re ready, you can finish by promotion your evaluation environment directly into production. 
+As you walk through these articles, the steps will illustrate how to enable each component, configure settings, and begin monitoring with a pilot group. When you're ready, you can finish by promotion your evaluation environment directly into production.
 
-Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you’ve gained experience and are comfortable with the platform, simply promote each component, one at a time, to production. 
-
+Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you've gained experience and are comfortable with the platform, simply promote each component, one at a time, to production.
 
 ## The anatomy of an attack
 
@@ -54,7 +53,7 @@ In the illustration:
 
 ### Microsoft 365 Defender components
 
-Microsoft 365 Defender is made up of these security technologies, operating in tandem. You don’t need all of these components to benefit from the capabilities of XDR and Microsoft 365 Defender. You will realize gains and efficiencies through using one or two as well. 
+Microsoft 365 Defender is made up of these security technologies, operating in tandem. You don't need all of these components to benefit from the capabilities of XDR and Microsoft 365 Defender. You will realize gains and efficiencies through using one or two as well. 
 
 |Component  |Description  |Reference material  |
 |---------|---------|---------|
@@ -75,7 +74,7 @@ The diagram below illustrates high-level architecture for key Microsoft 365 Defe
 In this illustration:
 
 - Microsoft 365 Defender combines the signals from all of the Defender components to provide extended detection and response (XDR) across domains. This includes a unified incident queue, automated response to stop attacks, self-healing (for compromised devices, user identities, and mailboxes), cross-threat hunting, and threat analytics.
-- Microsoft Defender safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It shares signals resulting from these activities with Microsoft 365 Defender. Exchange Online Protection (EOP) is integrated to provide end-to-end protection for incoming emails and attachments.
+- Microsoft 365 Defender safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It shares signals resulting from these activities with Microsoft 365 Defender. Exchange Online Protection (EOP) is integrated to provide end-to-end protection for incoming emails and attachments.
 - Microsoft Defender for Identity gathers signals from servers running Active Directory Federated Services (AD FS) and on-premises Active Directory Domain Services (AD DS). It uses these signals to protect your hybrid identity environment, including protecting against hackers that use compromised accounts to move laterally across workstations in the on-premises environment.
 - Microsoft Defender for Endpoint gathers signals from and protects devices used by your organization.
 - Microsoft Cloud App Security gathers signals from your organization's use of cloud apps and protects data flowing between your environment and these apps, including both sanctioned and unsanctioned cloud apps.
@@ -83,7 +82,7 @@ In this illustration:
 
 Additional optional architecture components not included in this illustration:
 
-- Detailed signal data from all Microsoft Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
+- Detailed signal data from all Microsoft 365 Defender components can be integrated into Azure Sentinel and combined with other logging sources to offer full SIEM and SOAR capabilities and insights.
 
 ## The evaluation process
 
@@ -104,7 +103,7 @@ The following table describes this illustration.
 |7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
 | | | |
 
-This is a commonly recommended order designed to gain the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured much quicker than is required to enroll devices for Defender for Endpoint. Of course you can prioritize the components to meet your business needs and enable these in a different order.
+This is a commonly recommended order designed to gain the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you can prioritize the components to meet your business needs and enable these in a different order.
 
 ## Next steps
 

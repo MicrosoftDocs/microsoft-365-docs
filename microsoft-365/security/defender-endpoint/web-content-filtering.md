@@ -244,6 +244,8 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
 
+Network Protection does not currently support SSL inspection, which may result in some sites being allowed by Web Content Filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this may block their access to other services associated with the same website. 
+
 ## See also
 
 - [Web protection overview](web-protection-overview.md)

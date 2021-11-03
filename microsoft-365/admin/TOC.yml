@@ -311,7 +311,19 @@
            - name: Troubleshoot usage analytics errors
              href: usage-analytics/usage-analytics-errors.md
          - name: Microsoft 365 support integration with ServiceNow configuration guide
-           href: manage/microsoft-365-servicenow-support-integration.md
+           items:
+           - name: Microsoft 365 support integration with ServiceNow configuration overview
+             href: manage/servicenow-overview.md
+           - name: Configure support integration with ServiceNow Basic Authentication
+             href: manage/servicenow-basic-authentication.md
+           - name: Configure Microsoft 365 support integration with AAD OAuth Token
+             href: manage/servicenow-aad-oauth-token.md
+           - name: Microsoft 365 support integration for service health incidents and recommended solutions ONLY
+             href: manage/servicenow-service-health-incidents-solutions-only.md
+           - name: Testing the ServiceNow configuration
+             href: manage/servicenow-testing-the-configuration.md
+           - name: Troubleshooting Microsoft 365 support integration with ServiceNow
+             href: manage/servicenow-troubleshooting.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
