@@ -141,7 +141,7 @@ Expand the root and intermediate sections below to see additional details about 
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### **ISRG Root X1*
+### **ISRG Root X1**
 
 | **Subject** | C = US, O = Internet Security Research Group, CN = ISRG Root X1 |
 | --- | --- |

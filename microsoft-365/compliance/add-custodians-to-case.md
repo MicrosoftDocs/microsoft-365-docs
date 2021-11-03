@@ -43,7 +43,7 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, seelect **Show all** > **eDiscovery** > **Advanced eDiscovery**, and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
+2. In the left navigation pane of the Microsoft 365 compliance center, select **Show all** > **eDiscovery** > **Advanced eDiscovery**, and select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
 
 3. Select the case that you want to add custodians to.
 
