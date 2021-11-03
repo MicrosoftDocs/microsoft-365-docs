@@ -1,0 +1,30 @@
+    - name: Microsoft Whiteboard
+      href: index.md   
+
+    - name: Whiteboard for business
+      items:    
+        - name: Overview of Viva Learning
+          href: overview-viva-learning.md 
+        - name: Terms and conditions
+          href: terms-and-conditions.md
+        - name: Get help
+          href: help-support.md
+
+    - name: Whiteboard for Government
+      items:
+        - name: Set up Viva Learning
+          href: set-up-viva-learning.md
+        - name: Manage learning content sources
+          items:
+            - name: Overview
+              href: content-sources-365-admin-center.md
+            - name: Add SharePoint
+              href: configure-sharepoint-content-source.md
+            - name: Add learning management systems
+              href: configure-lms.md
+            - name: Add other providers
+              href: configure-other-content-sources.md
+
+            
+
+
