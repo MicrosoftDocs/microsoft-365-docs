@@ -114,7 +114,7 @@ Use this procedure to create a new sensitive information type that is based on a
 14. Check your setting and choose **Submit**.
 
 > [!NOTE]
-> The following sensitive information types can not be copied:
+> These SITs can't be copied:
 > - Canada driver's license number
 > - EU driver's license number
 > - EU national identification number
