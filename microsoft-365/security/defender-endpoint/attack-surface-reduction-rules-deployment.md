@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules deployment
+title: Deploy attack surface reduction rules
 description: Provides details about deploying attack surface reduction rules.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -19,34 +19,34 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-# Deploying attack surface reduction rules
+# Attack surface reduction rules deployment guide
 
 ## Before you begin
 
-Attack surfaces are all the places where your organization is vulnerable to cyber threats and attacks.
-Your organization's attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks. Configuring attack surface reduction (ASR) rules – one of numerous security features found in Microsoft Defender for Endpoint – can help!
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks.
+Your organization's attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks. Configuring attack surface reduction (ASR) rules – one of numerous security features found in Microsoft Defender for Endpoint – can help.
 
 Attack surface reduction rules target certain software behaviors, such as:
 
 - Launching executable files and scripts that attempt to download or run files
 - Running obfuscated or otherwise suspicious scripts
-- Performing behaviors that apps don't usually initiate during normal day-to-day work
+- Behaviors that apps don't usually initiate during normal day-to-day work
 
 By reducing the different attack surfaces, you can help prevent attacks from happening in the first place.
 
-As part of your initial preparation, it is vital that you understand the capabilities of the systems that you will put in place to mitigate potential threats. This will help you determine which ASR rules   are most important in the role of protecting your organization.
+During your initial preparation, it is vital that you understand the capabilities of the systems that you will put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization.
 
-Before you start, you should review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information about attack surface reduction with Microsoft Defender for Endpoint (MDE). You should also familiarize yourself with the current set of ASR rules by reviewing [Attack surface reduction rules](attack-surface-reduction-rules.md) to understand the areas of coverage and potential impact.
+Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules](attack-surface-reduction-rules.md).
 
-It is important to note that ASR rules are only one capability of attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on ASR rules and deploying them effectively to stop advanced threats like human-operated ransomware and other threats.  
+Note that ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
 
 ### Rules by category
 
-As outlined in [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md), there are multiple attack surface reduction rules within MDE that you can enable in various states to better protect your organization. Following are the rules broken out by category:
+As outlined in [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md), there are multiple attack surface reduction rules within MDE that you can enable to better protect your organization. Following are the rules broken out by category:
 
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules | Misc rules | Email rules | Script rules |
 |:---|:---|:---|:---|:---|:---|
-| Block executable files from running unless they meet a prevalence (1000 machines), age (24hrs), or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block abuse of exploited vulnerable signed drivers | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code |
+| Block executable files from running unless they meet a prevalence (1000 machines), age (24 hrs), or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block abuse of exploited vulnerable signed drivers | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code |
 | Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Block Office apps from creating child processes | | Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content |
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | | Block Office communication apps from creating child processes | |
 | | | Block Adobe Reader from creating child processes | | | |
@@ -68,9 +68,11 @@ If you have different configurations than those listed above, you can see more i
 
 Microsoft Defender Antivirus must be enabled and configured as primary anti-virus solution. Microsoft Defender Antivirus must be in the following mode:
 
-- Primary antivirus/antimalware solution;  
+- Primary antivirus/antimalware solution  
 - State: Active mode
+
 Microsoft Defender Antivirus must not be in any of the following modes:
+
 - Passive
 - EDR in block mode
 - Limited periodic scanning (LPS)
@@ -91,12 +93,12 @@ The following Microsoft Defender Antivirus component versions must be no more th
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
 - **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (definition and signature) to address the latest threats, and to refine detection logic.
 
-Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components please visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
+Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## ASR rules deployment phases
 
-As with any new, wide-scale implementation that can potentially impact your line of business operations, it is important to plan and be methodical in your implementation.
-Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is required to ensure that they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
+As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to plan and be methodical in your implementation.
+Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is required to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
 _Deployment phases diagram 1_.
 
@@ -111,25 +113,26 @@ _Deployment phase 1 diagram_.
 How you select the business unit to roll out your ASR rules  deployment will depend on factors such as:
 
 - Size of business unit
-- availability of ASR rules champions  
-- distribution and usage of:
+- Availability of ASR rules champions  
+- Distribution and usage of:
   - Software
   - Shared folders
   - Use of scripts
   - Office macros
   - Other entities impacted by ASR rules
 
-Depending on your business needs you might decide to include multiple business units to get a broad sampling of software, shared folders, scripts, macros, etc. Conversely, you might decide to limit the scope of your first ASR   rules rollout to a single business unit, and then repeat the entire ASR rules rollout process to your other business units, one-at-a-time.
+Depending on your business needs you might decide to include multiple business units to get a broad sampling of software, shared folders, scripts, macros, etc. Conversely, you might decide to limit the scope of your first ASR rules rollout to a single business unit, then repeat the entire ASR rules rollout process to your other business units, one-at-a-time.
 
 ### Identify ASR  rules champions
 
 ASR  rules champions are members in your organization that will help with your initial ASR  rules rollout during the preliminary testing and implementation phases. Your champions are typically employees who are more technically adept, and who are not derailed by intermittent work-flow outages. In the context of this deployment, the champions involvement will continue throughout the broader expansion of ASR  rules deployment to your organization. Your ASR rules champions will be first to experience each level of the ASR  rules rollout.
-Consideration should be given to providing a feedback and response channel so that your ASR  rules champions can alert you to ASR  rules-related work disruptions and receive ASR  rules-rollout related communications.
 
-### Get inventory of line of business apps and understand the business unit processes
+It is important to provide a feedback and response channel so that your ASR rules champions can alert you to ASR  rules-related work disruptions and receive ASR  rules-rollout related communications.
+
+### Get inventory of line-of-business apps and understand the business unit processes
 
 Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR  rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
-To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory.md).
+To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory.md).
 
 ### Define reporting and response team  roles and responsibilities
 
@@ -147,7 +150,7 @@ Typical roles and responsibilities include:
 
 ### Ring deployment
 
-For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps and processes is imperative to defining your rings.
+For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
 See: [Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan.md)
 
@@ -159,9 +162,38 @@ _Deployment phase 2 diagram_.
 
 ### Step 1: Test ASR rules using Audit
 
-Begin the testing phase by turning on the ASR rules with the rules set to Audit, starting with your champion users or devices in ring 1. Typically, the recommendation is that you enable all the rules (in Audit) so that you can determine which rules are triggered during the testing phase. Note that rules that are set to Audit do not impact functionality of the entity or entities to which the rule is applied but do generate logged events for the purpose of evaluation; there is no effect on end users.
+Begin the testing phase by turning on the ASR rules with the rules set to Audit, starting with your champion users or devices in ring 1. Typically, the recommendation is that you enable all the rules (in Audit) so that you can determine which rules are triggered during the testing phase. Note that rules that are set to Audit do not impact functionality of the entity or entities to which the rule is applied but do generate logged events for the evaluation; there is no effect on end users.
 
-!!! Note !!! Skipping configure ASR rules using MEM until determination.
+#### Configure ASR Rules using MEM
+
+You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure custom ASR rules.
+
+1. Open [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home)
+2. Go to **Endpoint Security** > **Attack surface reduction**.
+3. Select **Create Policy**.
+4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
+  
+    > [!div class="mx-imgBorder"]
+    > ![Configure ASR rules profile](images/asr-mem-create-profile.png)
+
+5. Click **Create**.
+6. On the **Basics** tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy.
+7. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, set all rules to **Audit mode**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Set ASR rules to Audit mode](images/asr-mem-configuration-settings.png)
+
+8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md).
+9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
+
+   > [!div class="mx-imgBorder"]
+   > ![Activate ASR rules policy](images/asr-mem-create-profile.png)
+
+Your new attack surface reduction policy for ASR rules is listed in **Endpoint security | Attack surface reduction**.
+
+> [!div class="mx-imgBorder"]
+> ![Listed ASR rule policy](images/asr-mem-my-asr-rules.png)
 
 ### Step 2: Understand the Attack surface reduction rules reporting page in the Microsoft 365 Defender portal
 
@@ -206,7 +238,7 @@ The **GroupBy** returns results set to the following groups:
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules detections GroupBy filter](images/asr-defender365-reports-detections.png)
 
-**Filter** opens the **Filter on rules** page which enables you to scope the results to only the selected ASR rules:
+**Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected ASR rules:
 
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules detections filter on rules](images/asr-defender365-filter.png)
@@ -222,7 +254,7 @@ Lists – on a per-computer basis – the aggregate state of ASR rules: Off, Aud
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules Configuration tab](images/asr-defender365-configurations.png)
 
-On the Configurations tab you can check – on a per-device basis – which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
+On the Configurations tab, you can check – on a per-device basis – which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
 
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules enabled and mode](images/asr-defender365-configurations.settings.png)
@@ -232,7 +264,7 @@ The **Get started** link opens the Microsoft Endpoint Manager admin center, wher
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules in MEM](images/asr-defender365-05b-mem1.png)
 
-In Endpoint security | Overview, click Attack surface reduction:
+In Endpoint security | Overview, select **Attack surface reduction**:
 
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction in MEM](images/asr-defender365-05b-mem2.png)
@@ -265,9 +297,9 @@ This tab provides a method to select detected entities (for example, false posit
 
 #### Review
 
-Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from you ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
+Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from your ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
 
-Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see **How long should I test an ASR rule in audit mode before enabling it** in [Attack surface reduction frequently asked questions (FAQ)](attack-surface-reduction-faq.md).
+Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see [How long should I test an ASR rule in audit mode before enabling it?](attack-surface-reduction-faq.yml#how-long-should-i-test-an-asr-rule-in-audit-mode-before-enabling-it-) in **Attack surface reduction frequently asked questions (FAQ)**.
 
 #### Create exclusions
 
@@ -287,7 +319,7 @@ Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **At
 
 #### Review impact
 
-Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from you ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
+Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from your ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
 
 Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see How long should I test an ASR rule in audit mode before enabling it?
 
