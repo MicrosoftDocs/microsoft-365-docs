@@ -115,11 +115,14 @@ Use this procedure to create a new sensitive information type that is based on a
 
 > [!NOTE]
 > Following sensitive information types can not be copied.
+> - Canada Driver's License Number
 > - EU driver's license number
 > - EU national identification number
 > - EU passport number
 > - EU social security number or equivalent identification
 > - EU Tax identification number
+> - International classification of diseases (ICD-10-CM)
+> - International classification of diseases (ICD-9-CM)
 > - U.S. driver's license number
 
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
