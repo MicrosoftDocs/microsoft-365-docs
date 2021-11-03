@@ -53,11 +53,11 @@ The table below lists the changes in navigation between the Security & Complianc
 |eDiscovery||See [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage)||
 |||||
 
-[Microsoft 365 Defender](./overview-security-center.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
+[Microsoft 365 Defender](./microsoft-365-defender.md) at <https://security.microsoft.com> combines security capabilities from existing Microsoft security portals, including the Security & Compliance Center. This improved center helps security teams protect their organization from threats more effectively and efficiently.
 
 If you are familiar with the Security & Compliance Center (protection.office.com), this article describes some of the changes and improvements in Microsoft 365 Defender.
 
-Learn more about the benefits: [Overview of Microsoft 365 Defender](overview-security-center.md)
+Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
 If you are looking for compliance-related items, visit the [Microsoft 365 compliance center](https://compliance.microsoft.com/homepage).
 
