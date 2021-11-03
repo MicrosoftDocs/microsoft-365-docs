@@ -56,7 +56,7 @@ After you download the CSV custodian template, you can add custodians and their 
 > [!NOTE]
 > <sup>1</sup> You can place a maximum of 1,000 mailboxes and 100 sites on hold by using the custodian import process and CSV file. You can use this process to add more than 1,000 custodians to a case, but the hold limits still apply. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 <br>
-> <sup>2,</sup><sup>3</sup> Group site (TeamSite and YammerSite) are added by default with TeamsMailbox and YammerMailbox workloads. You don't need to specify TeamsSite and YammerSite separately in the CSV file.
+> <sup>2</sup> When you include TeamsMailbox and YammerMailbox workloads in the CSV file, the group site (TeamSite and YammerSite) are automatically added by default. You don't need to specify TeamsSite and YammerSite separately in the CSV file.
 
 Here's an example of a CSV file with custodian information:<br/><br/>
 
@@ -64,13 +64,12 @@ Here's an example of a CSV file with custodian information:<br/><br/>
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
-|.john@onmicrosoft.contoso.com|TRUE|TRUE|TRUE||
-|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.john@onmicrosoft.contoso.com
+|.johnj@contoso.onmicrosoft.com|TRUE|TRUE|TRUE||
+|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@onmicrosoft.contoso.com
 ||||||
 
 > [!NOTE]
-> To add inactive custodian email or additional inactive mailbox use "." prefix with email mailbox address.
-
+> To import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian, add a "." prefix to the UPN address of the inactive mailbox.
 
 ## Custodian and data source validation
 
