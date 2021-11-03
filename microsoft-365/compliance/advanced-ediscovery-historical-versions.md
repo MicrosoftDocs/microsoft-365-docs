@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Use historical versions in Advanced eDiscovery to collect content from all versions of documents stored in SharePoint."
+description: "Use historical versions in Advanced eDiscovery to collect content from all versions of documents stored in SharePoint and OneDrive."
 ---
 
 # Set up historical versions in Advanced eDiscovery (preview)
 
-The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents that are stored in SharePoint Online and add that content to a review set for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
+The historical versions feature in Advanced eDiscovery lets eDiscovery managers in your organization search for and collect content from all versions of documents stored in SharePoint Online and OneDrive for Business. Then you can add that content to a review set for analysis and review. This helps you find and review content from a specific version of a document that may be relevant to a case or investigation, even if the latest version of the same document doesn't contain the relevant information.
 
-To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in their organization. Then, when users modify documents in SharePoint, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking of the activity performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
+To support the historical versions capability in Advanced eDiscovery, SharePoint administrators must enable versioning for sites in their organization. Then, when users modify documents in SharePoint or OneDrive, implicit regular versions are created when document is saved (or autosaved). SharePoint versioning allows for tracking of the activity performed on SharePoint items (including documents, events, and tasks). This versioning capability leaves an audit trail that can provide evidence in legal investigations. These older versions of a document are available to the organization, who may be required to share such versions that have sensitive or relevant content during court discovery in a legal matter.
 
 After an eDiscovery administrator turns on historical versions for the organization and then activates it for specific SharePoint sites, the SharePoint content push service crawls all major and minor versions of documents on the activated sites and then sends those versions for indexing. After the crawling and indexing process is complete, documents and their versions are available for eDiscovery search. As long as a specific version can be accessed (by version history), then that version will be discoverable in an Advanced eDiscovery collection search.
 
@@ -36,7 +36,7 @@ The first step is to turn on versioning in SharePoint Online so that all version
 
 ### Step 2: Turn on historical versions
 
-The next step is to turn on historical versions in Advanced eDiscovery. To turn on historical versions, a person must be an eDiscovery Administrator in your organization (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group). After historical versions is turned on, it will apply to your entire organization.
+The next step is to turn on historical versions in Advanced eDiscovery. To turn on historical versions for your organization, a person must be a global administrator or an eDiscovery Administrator  (a member of the eDiscovery Administrator subgroup in the eDiscovery Manager role group). After historical versions is turned on, it will apply to your entire organization.
 
 > [!IMPORTANT]
 > After you turn on historical versions, you won't be able to turn it off during the public preview. You will be able to turn it off after historical versions is released for general availability.
@@ -96,13 +96,13 @@ No. Once historical versions is enabled for a site, the performance for the site
 
 **How long do I have to wait after a site is activated until all historical versions of documents on that site are all indexed and available for eDiscovery search?**
 
-Based on the number of documents for a site and the average number of versions per document, we try to estimate the total number of files per site. Based on this, an estimate of how long it will take to index is as follows:
+Based on the number of documents for a site and the average number of versions per document, we try to estimate the total number of files per site. Based on this, an estimate of how long it may take to index is as follows:
 
 `Number of versions / (Processing rate of 100,000 files per day ) + .5 days = Total number of days to process a site`
 
 The half-day is added as a buffer since indexing of versions on site is optimized to run during off-peak hours.
 
-For example, if the total number of documents and all versions for a site is 150,000, then it will approximately two days to process the site for historical versions:
+For example, if the total number of documents and all versions for a site is 150,000 then it will take at least two days to process the site for historical versions:
 
 `150,000 files/100,000 files per day + .5 days = 2 days`
 
