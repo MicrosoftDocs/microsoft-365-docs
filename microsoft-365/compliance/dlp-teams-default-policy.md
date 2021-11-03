@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
 description: "Learn about the default data loss prevention policy in Microsoft Teams"

@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
 description: "Microsoft Teams chats and channels supports Data Loss Prevention (DLP) policies."
