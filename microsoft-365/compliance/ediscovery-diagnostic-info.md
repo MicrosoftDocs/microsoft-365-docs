@@ -72,7 +72,7 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{$_|fl;"`t==Searches==";Get-C
 
 The **Settings** tab in an Advanced eDiscovery case lets you quickly copy the diagnostic information for the case. The diagnostic information is saved to the clipboard so you can paste it to a text file and send to Microsoft Support.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **eDiscovery > Advanced**.
+1. Go to the Microsoft 365 compliance center, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**Advanced**</a>.
 
 2. Select a case and then click the **Settings** tab.
 

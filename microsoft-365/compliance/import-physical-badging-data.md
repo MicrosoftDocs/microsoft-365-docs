@@ -131,7 +131,7 @@ You can also download the following schema definition for the JSON file from the
 
 The next step is to create a physical badging connector in the Microsoft 365 compliance center. After you run the script in Step 4, the JSON file that you created in Step 3 will be processed and pushed to the API endpoint you configured in Step 1. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. On the **Data connectors** page under **Physical badging**, click **View**.
 
@@ -212,7 +212,7 @@ After you run the script, the JSON file containing the physical badging data is 
 
 After you create the physical badging connector and push your physical badging data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
