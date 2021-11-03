@@ -27,7 +27,7 @@
        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 Defender portal overview
-         href: ../defender/overview-security-center.md
+         href: ../defender/microsoft-365-defender.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
