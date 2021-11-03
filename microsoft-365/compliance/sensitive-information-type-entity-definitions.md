@@ -5355,13 +5355,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_estonia_eu_driver's_license_number
 
--- permis de conduire
+- permis de conduire
 - juhilubade numbrid
 - juhiloa number
 - juhiluba
 
-
 ## Estonia Personal Identification Code
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -10318,6 +10318,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Corporate
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -10379,6 +10380,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Personal
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -15196,6 +15198,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - številke vozniških dovoljenj
 
 ## Slovenia Unique Master Citizen Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -15716,6 +15719,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - licencia manejo
 
 ## Spain DNI
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -17292,6 +17296,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## U.K. Unique Taxpayer Reference Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
