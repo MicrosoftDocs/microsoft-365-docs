@@ -65,31 +65,23 @@ description|String|Description of the indicator.
 recommendedActions|String|Recommended actions for the indicator.
 rbacGroupNames|List of strings|RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
 rbacGroupIds|List of strings|RBAC device group ID's where the indicator is exposed and active. Empty list in case it exposed to all devices.
-## Public Preview: Indicator types
+generateAlert|Enum|"True" if alert generation is required, "False" if this indicator should not generate an alert.
 
-> [!IMPORTANT]
-> Information in this section (**Public Preview for Automated investigation and remediation engine**) relates to prereleased product which might be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+## Indicator Types
 
 The indicator action types supported by the API are:
 
 - Allowed
-- Alert
-- AlertAndBlock
 - Audit
 - Block
 - BlockAndRemediate
-- Warn
+- Warn (MCAS Only)
 
-The API list of action types contains the new response actions along with the prior response actions (AlertAndBlock, and Alert). For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
-
-The Allowed, Warn, Block, and BlockAndRemediate IoC response actions are in public preview. For more information on the public preview, see [Public Preview: Custom file IoC enhancements and API schema update - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/public-preview-custom-file-ioc-enhancements-and-api-schema/ba-p/2676997).
-
-
-
+For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
 
 > [!Note]
 >
-> The prior response actions (AlertAndBlock, and Alert) will be removed when the feature has reached GAed. The estimated GA date with grace period is end of October 2021.  We advise updating any existing templates or scripts as soon as possible.
+> The prior response actions (AlertAndBlock, and Alert) will be supported until January 2022 at which point all customers must be leveraging one of the action types listed above.
 
 ## Json representation
 
