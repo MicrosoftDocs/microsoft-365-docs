@@ -50,7 +50,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## October 2021
 
 - [Advanced Delivery DKIM enhancement](configure-advanced-delivery.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
-- [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules or ETRs).
+- [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
 
 ## September 2021
 
