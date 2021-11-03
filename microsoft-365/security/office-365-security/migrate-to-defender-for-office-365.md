@@ -1,21 +1,21 @@
 ---
 title: Migrate from a third-party protection service to Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 
+ms.date:
 ms.topic: conceptual
 ms.localizationpriority: medium
-search.appverid: 
+search.appverid:
   - MET150
   - MOE150
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: 
+ms.custom:
 description: Learn the right way to migrate from third-party protection services or devices like Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort to Microsoft Defender for Office 365 protection.
 ms.technology: mdo
 ms.prod: m365-security
@@ -30,15 +30,21 @@ This article provides specific and actionable steps for migrating from a third-p
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization, and Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
+  ![Mail flows from the internet through the third-party protection service or device before delivery into Microsoft 365.](../../media/mdo-migration-before.png)
+
 - You're beyond the investigation and consideration phase for protection by Defender for Office 365. If you need to evaluate Defender for Office 365 to decide whether it's right for your organization, we recommend that you consider [Evaluation Mode](office-365-evaluation.md).
 
 - You've already purchased Defender for Office 365 licenses.
 
 - You need to retire your existing third-party protection service, which means you'll ultimately need to point the MX records for your email domains to Microsoft 365. When you're done, mail from the internet will flow directly into Microsoft 365 and will be protected exclusively by Exchange Online Protection (EOP) and Defender for Office 365.
 
+  ![Your existing protection service or devices is eliminated, so mail flows from the internet into Microsoft 365, with full protection from Microsoft Defender for Office 365.](../../media/mdo-migration-after.png)
+
 Eliminating your existing protection service in favor of Defender for Office 365 is a big step that you shouldn't take lightly, nor should you rush to make the change. The guidance in this migration guide will help you transition your protection in an orderly manner with minimal disruption to your users.
 
-![Migrate from a third-party protection solution or device to Defender for Office 365](../defender-endpoint/images/nonms-mde-migration.png)
+The very high-level migration steps are illustrated in the following diagram. The actual steps are listed in the section named [The migration process](#the-migration-process) later in this article.
+
+![Migrate from a third-party protection solution or device to Defender for Office 365.](../../media/mdo-migration-overview.png)
 
 ## Why use the steps in this guide?
 
