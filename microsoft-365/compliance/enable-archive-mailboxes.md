@@ -18,7 +18,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: "Learn how to use the compliance center to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 

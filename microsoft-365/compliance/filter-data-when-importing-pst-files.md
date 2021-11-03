@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: "Learn how to filter data using the intelligent import feature in the Microsoft 365 import service when you import PST files to Microsoft 365."
 ---
 

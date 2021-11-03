@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Describes how to export and download content from a Core eDiscovery case in Microsoft 365."
 ---
 
