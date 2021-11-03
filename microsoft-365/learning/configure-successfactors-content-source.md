@@ -51,7 +51,7 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
     - enabled can be "false" or "true". Set it to "true" to enable the partner extract.
         - partners1.enabled=
     
-    ![Image of the PARTNER_EXTRACT configuration settings.](../media/learning/sf-2.png)
+    [ ![Image of the PARTNER_EXTRACT configuration settings.](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
