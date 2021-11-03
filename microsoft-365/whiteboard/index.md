@@ -17,7 +17,7 @@ description: Learn how to find resources for Microsoft Whiteboard.
 
 # Introduction to Microsoft Whiteboard
 
-Microsoft Viva Learning empowers employees to make learning a natural part of the day by bringing learning into the flow of work within the tools and platforms they already use. Discover, share, and track learning across a variety of sources from a center of learning in Microsoft Teams.
+Microsoft Whiteboard in Microsoft 365 is a free-form, digital canvas where people, content, and ideas come together. Whiteboard lets teams collaborate in real time, wherever you are, and gives your ideas room to grow with an infinite canvas designed for pen, touch, and keyboard.
 
 ## Get started
 

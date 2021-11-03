@@ -1,9 +1,9 @@
     - name: Microsoft Whiteboard
       href: index.md   
 
-    - name: Whiteboard for business
+    - name: Whiteboard for organizations
       items:    
-        - name: Overview of Viva Learning
+        - name: Set up Whiteboard
           href: overview-viva-learning.md 
         - name: Terms and conditions
           href: terms-and-conditions.md
@@ -12,7 +12,7 @@
 
     - name: Whiteboard for Government
       items:
-        - name: Set up Viva Learning
+        - name: Set up Whiteboard
           href: set-up-viva-learning.md
         - name: Manage learning content sources
           items:
