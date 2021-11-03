@@ -52,7 +52,7 @@ indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "File
 application|String|The application associated with the indicator.
 action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" and "Allowed".
 |externalID|String|Id the customer can submit in the request for custom correlation.|
-sourceType|Enum|"User" in case the Indicator created by a user (e.g. from the portal), "AadApp" in case it submitted using automated application via the API.
+sourceType|Enum|"User" in case the Indicator created by a user (for example, from the portal), "AadApp" in case it submitted using automated application via the API.
 createdBySource|string|The name of the user/application that submitted the indicator.
 createdBy|String|Unique identity of the user/application that submitted the indicator.
 lastUpdatedBy|String|Identity of the user/application that last updated the indicator.
