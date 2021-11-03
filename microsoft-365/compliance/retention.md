@@ -433,7 +433,7 @@ You apply Preservation Lock after the retention policy or retention label policy
 
 ## Releasing a policy for retention
 
-Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy, but change the location status to off, or disable the policy. You can also reconfigure the policy so it no longer includes specific users, sites, groups, and so on.
+Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the retention settings for a retention policy, and retention labels can no longer be applied from retention label policies. You can also keep the policy, but change the location status to off, or disable the policy. Another option is to reconfigure the policy so it no longer includes specific users, sites, groups, and so on. All these actions release a previously applied policy for retention.
 
 Additional information for specific locations:
 
