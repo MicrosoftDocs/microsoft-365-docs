@@ -212,7 +212,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 After you complete this step, be sure to copy the job ID that's generated when you create the connector. You'll use the job ID when you run the script.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. On the **Data connectors** page under **HR**, click **View**.
 
@@ -310,7 +310,7 @@ The last step in setting up an HR connector is to run a sample script that will 
 
 After you create the HR connector and run the script to upload your HR data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
