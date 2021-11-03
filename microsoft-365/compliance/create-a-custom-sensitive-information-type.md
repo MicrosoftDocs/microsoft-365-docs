@@ -120,7 +120,7 @@ Use this procedure to create a new sensitive information type that is based on a
 > - EU national identification number
 > - EU passport number
 > - EU social security number or equivalent identification
-> - EU Tax identification number
+> - EU tax identification number
 > - International classification of diseases (ICD-10-CM)
 > - International classification of diseases (ICD-9-CM)
 > - U.S. driver's license number
