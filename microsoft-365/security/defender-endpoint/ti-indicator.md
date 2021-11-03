@@ -65,7 +65,7 @@ description|String|Description of the indicator.
 recommendedActions|String|Recommended actions for the indicator.
 rbacGroupNames|List of strings|RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices.
 rbacGroupIds|List of strings|RBAC device group ID's where the indicator is exposed and active. Empty list in case it exposed to all devices.
-generateAlert|Enum|"True" if alert generation is required, "False" if this indicator should not generate an alert.
+generateAlert|Enum|**True** if alert generation is required, **False** if this indicator should not generate an alert.
 
 ## Indicator Types
 
@@ -81,7 +81,7 @@ For more information on the description of the response action types, see [Creat
 
 > [!Note]
 >
-> The prior response actions (AlertAndBlock, and Alert) will be supported until January 2022 at which point all customers must be leveraging one of the action types listed above.
+> The prior response actions (AlertAndBlock, and Alert) will be supported until January 2022. After this date, all customers must be use one of the action types listed above.
 
 ## Json representation
 
