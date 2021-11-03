@@ -46,6 +46,14 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+
+## October 2021
+
+- [Advanced Delivery DKIM enhancement](configure-advanced-delivery.md): Added support for DKIM domain entry as part of 3rd party phishing simulation configuration.
+- [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules or ETRs)
+
+
+
 ## September 2021
 
 - [Improved reporting experience in Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
