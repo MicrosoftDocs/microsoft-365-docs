@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
@@ -45,7 +46,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Offboarding**.
 
