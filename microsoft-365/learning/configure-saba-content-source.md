@@ -37,7 +37,7 @@ This article shows you how to configure Saba as a third-party learning content s
 1. Identify your primary Saba Cloud URL (for example "org".sabacloud.com). If your API dashboard URL is org-api.sabacloud.com, your Host URL will be org.sabacloud.com.
 2. Identify your API Dashboard URL by going to **Saba Cloud** > **Admin** > **System Admin** > **Manage Integrations** > **API Dashboard**. Find the API Dashboard URL, then remove "https://" and "-api" to get your Host URL.
 
-    ![Image of your API dashboard.](../media/learning/saba-1.png)
+    ![Image of your API dashboard.](../media/learning/saba-a.png)
 
 ### Client ID and Client Secret
 
@@ -45,7 +45,7 @@ This article shows you how to configure Saba as a third-party learning content s
 
 2. If the Client Secret isn't there yet, select the **GENERATE** button to generate it.
 
-    ![Image of the API dashboard with the cursor hovering over the Generate button.](../media/learning/saba-2.png)
+    ![Image of the API dashboard with the cursor hovering over the Generate button.](../media/learning/saba-b.png)
 
 ## Configure in your Microsoft 365 admin center
 
