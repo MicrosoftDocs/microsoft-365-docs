@@ -20,9 +20,10 @@
               href: content-sources-365-admin-center.md
             - name: Add SharePoint
               href: configure-sharepoint-content-source.md
+            - name: Add learning management systems
+              href: configure-lms.md
             - name: Add other providers
               href: configure-other-content-sources.md
-
 
             
 
