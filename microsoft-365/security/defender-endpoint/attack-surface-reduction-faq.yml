@@ -118,7 +118,7 @@ sections:
           * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
           * [Block Win32 API calls from Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
           * [Use advanced protection against ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
-          * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+          * [Block credential stealing from the Windows local security authority subsystem (lsass.exe)](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
           * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
           * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
           * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)

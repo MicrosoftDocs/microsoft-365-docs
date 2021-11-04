@@ -47,7 +47,7 @@ The following table lists the supported operating systems for attack surface red
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y | Y |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y | Y |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe) | Y | Y |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
@@ -80,7 +80,7 @@ The following table lists the supported operating systems for rules that are  cu
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later |  |  |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |  |  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |  |  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |  |  |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
@@ -104,7 +104,7 @@ Links to information about configuration management system versions referenced i
 |[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [supported](images/checkmark.png) <br><br> |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y |  |Y <br><br> CB 1710 | Y | Y  |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y |   | Y <br><br> CB 1802 |  Y |  Y |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y |   |  Y  <br><br> CB 1710 | Y  | Y  |
@@ -193,7 +193,7 @@ Advanced hunting action type:
 
 Dependencies: MDAV
 
-### Block credential stealing from the Windows local security authority subsystem
+### Block credential stealing from the Windows local security authority subsystem (lsass.exe)
 
 This rule helps prevent credential stealing by locking down Local Security Authority Subsystem Service (LSASS).
 
