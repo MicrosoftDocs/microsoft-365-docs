@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: Learn how to define and manage alerts for data loss prevention policies. 
 ---
 
