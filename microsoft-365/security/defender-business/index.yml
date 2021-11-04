@@ -30,7 +30,7 @@ landingContent:
           - text: Get Defender for Business
             url: get-defender-business.md
           - text: Compare plans for small and medium-sized businesses
-            url: compare-mdb-m365bp.md
+            url: compare-mdb-m365-plans.md
           - text: The simplified configuration process
             url: mdb-simplified-configuration.md
 

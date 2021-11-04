@@ -8,7 +8,7 @@
       - name: How to get Defender for Business
         href: get-defender-business.md
       - name: Compare plans for small and medium-sized businesses
-        href: compare-mdb-m365bp.md
+        href: compare-mdb-m365-plans.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
     - name: Setup and configuration
