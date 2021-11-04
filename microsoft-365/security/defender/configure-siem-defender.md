@@ -30,8 +30,8 @@ ms.technology: mde
 
 > [!NOTE]
 >
-> - [Microsoft 365 Defender Incidents](../defender/incident-api.md) consists of collections of correlated alerts and their evidence.
-> - [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
+> - [Microsoft 365 Defender Incidents](incident-api.md) consists of collections of correlated alerts and their evidence.
+> - [Microsoft 365 Defender Streaming API](streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
 
 Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
 
