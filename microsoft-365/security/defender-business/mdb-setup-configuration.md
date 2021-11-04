@@ -1,6 +1,6 @@
 ---
 title: Set up and configure Microsoft Defender for Business
-description: See how to set up and configure Microsoft Defender for Business
+description: Get an overview of the setup and configuration process for Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
