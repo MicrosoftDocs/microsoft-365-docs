@@ -41,12 +41,14 @@ Your company should be one of the following:
 
 You do not already have to have another Microsoft 365 subscription.
 
+See [Microsoft Defender for Business requirements](mdb-requirements.md).
+
 
 ## What will be the licensing model at GA?
 
 When Microsoft Defender for Business reaches general availability (GA), it will be included in Microsoft 365 Business Premium.
 
-Defender for Business will also be available as a standalone plan for customers who do not have Microsoft 365 Business Premium.
+For customers who do not have Microsoft 365 Business Premium, Defender for Business will be available as a standalone plan. 
 
 ## See also
 
