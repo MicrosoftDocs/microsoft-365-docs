@@ -46,7 +46,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 On certain versions of Windows, Microsoft Defender Antivirus was likely uninstalled or disabled when your non-Microsoft antivirus/antimalware solution was installed. When endpoints running Windows are onboarded to Defender for Endpoint, Microsoft Defender Antivirus can run in passive mode alongside a non-Microsoft antivirus solution. To learn more, see [Antivirus protection with Defender for Endpoint](microsoft-defender-antivirus-compatibility.md#antivirus-protection-without-defender-for-endpoint).
 
 As you're making the switch to Defender for Endpoint, you might need to take certain steps to reinstall or enable Microsoft Defender Antivirus. The following table describes what to do on your Windows clients and servers.
-</br> </br>
+<br/> <br/>
 
 |Endpoint type|What to do|
 |---|---|
@@ -131,7 +131,6 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 ## Configure Defender for Endpoint
 
 This step of the migration process involves configuring Microsoft Defender Antivirus for your endpoints. We recommend using Intune; however, you can any of the methods that are listed in the following table:
-
 <br/><br/>
 
 |Method|What to do|
@@ -151,7 +150,8 @@ This step of the setup process involves adding Defender for Endpoint to the excl
 > [!TIP]
 > To get help configuring exclusions, refer to your solution provider's documentation.
 
-The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table:
+The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
+<br/><br/>
 
 |OS |Exclusions |
 |--|--|
@@ -162,8 +162,7 @@ The specific exclusions to configure will depend on which version of Windows you
 ## Add your existing solution to the exclusion list for Microsoft Defender Antivirus
 
 During this step of the setup process, you add your existing solution to the Microsoft Defender Antivirus exclusion list. You can choose from several methods to add your exclusions to Microsoft Defender Antivirus, as listed in the following table:
-
-<br><br/>
+<br/><br/>
 
 |Method|What to do|
 |---|---|
@@ -187,7 +186,6 @@ Keep the following points in mind:
 ## Set up your device groups, device collections, and organizational units
 
 Device groups, device collections, and organizational units enable your security team to manage and assign security policies efficiently and effectively. The following table describes each of these groups and how to configure them. Your organization might not use all three collection types.
-
 <br/><br/>
 
 |Collection type|What to do|
