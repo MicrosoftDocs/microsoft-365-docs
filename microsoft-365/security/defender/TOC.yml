@@ -122,6 +122,8 @@
             href: ../defender-identity/entity-tags.md
           - name: Manage security alerts
             href: ../defender-identity/manage-security-alerts.md
+          - name: Configure detection exclusions
+            href: ../defender-identity/exclusions.md
           - name: Email and syslog notifications
             href: ../defender-identity/notifications.md
     - name: Investigate and respond to threats

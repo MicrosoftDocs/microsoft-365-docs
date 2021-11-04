@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities

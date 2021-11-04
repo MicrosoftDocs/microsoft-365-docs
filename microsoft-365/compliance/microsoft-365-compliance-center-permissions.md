@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Learn about managing permissions in the Microsoft 365 compliance center.
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Permissions in the Microsoft 365 compliance center

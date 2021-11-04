@@ -49,8 +49,7 @@ Cancel an already launched machine action that are not yet in final state (compl
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](apis-intro.md).
+including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
@@ -78,9 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a Machine Action
-entity. If machine action entity with the specified id was not found - 404 Not
-Found.
+If successful, this method returns 200, OK response code with a Machine Action entity. If machine action entity with the specified id was not found - 404 Not Found.
 
 ## Example
 
