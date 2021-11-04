@@ -42,10 +42,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 ## November 2021
-- (Preview) The application governance add-on feature to Defender for Cloud Apps is now available in Microsoft 365 Defender. App governance provides a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. [Learn more about application governance](/cloud-app-security/app-governance-manage-app-governance).
 
+- (Preview) The application governance add-on feature to Defender for Cloud Apps is now available in Microsoft 365 Defender. App governance provides a security and policy management capability designed for OAuth-enabled apps that access Microsoft 365 data through Microsoft Graph APIs. App governance delivers full visibility, remediation, and governance into how these apps and their users access, use, and share your sensitive data stored in Microsoft 365 through actionable insights and automated policy alerts and actions. [Learn more about application governance](/cloud-app-security/app-governance-manage-app-governance).
+- (Preview) The [advanced hunting](advanced-hunting-overview.md) page now has multitab support, smart scrolling, streamlined schema tabs, quick edit options for queries, a query resource usage indicator, and other improvements to make querying smoother and easier to fine-tune.
+- (Preview) You can now use the [link to incident](advanced-hunting-link-to-incident.md) feature to include events or records from the advanced hunting query results right into a new or existing incident that you are investigating. 
 ## October 2021
-- (GA) In advanced hunting, more columns were added in the [CloudAppEvents](advanced-hunting-cloudappevents-table.md) table. You can now add `AccountType`, `IsExternalUser`, `IsImpersonated`, `IPTags`, `IPCategory`, and `UserAgentTags` to your queries. 
+- (GA) In advanced hunting, more columns were added in the [CloudAppEvents](advanced-hunting-cloudappevents-table.md) table. You can now include `AccountType`, `IsExternalUser`, `IsImpersonated`, `IPTags`, `IPCategory`, and `UserAgentTags` to your queries. 
 
 ## September 2021
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. You can see the availability and status of event types in the [Supported Microsoft 365 Defender event types in streaming API](supported-event-types.md).
