@@ -96,15 +96,16 @@ To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 licens
 
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
 
-****
+<br/>
 
 |To...|Do this...|Result|
 |---|---|---|
 |Retain mailbox content indefinitely after an employee leaves the organization|Place the mailbox on Litigation Hold or apply a Microsoft 365 retention policy (that's configured to retain content) to the mailbox. <br/> Don't specify a hold duration for the Litigation Hold or don't configure the retention policy to delete items. Alternatively you can use a retention policy that retains items forever. <br/> Remove the user's Microsoft 365 account.|All content in the inactive mailbox, including items in the Recoverable Items folder, is retained indefinitely.|
 |Retain mailbox content for a specific period after an employee leaves the organization and then delete it|Apply a Microsoft 365 retention policy to the mailbox. <br/> Configure the retention policy to retain and then delete items when the retention period expires. <br/> Remove the user's Microsoft 365 account.|When the retention period for a mailbox item expires, the item is moved to the Recoverable Items folder and then it's permanently deleted (purged) from the inactive mailbox when the deleted item retention period (for Exchange mailboxes) expires. The retention period of the Microsoft 365 retention policy can be configured based on the original date a mailbox item was received or created, or when it was last modified.|
-|
 
-**NOTE:** If a Litigation Hold is already placed on a mailbox, or if a Microsoft 365 retention policy (that's configured to retain or retain and then delete content) is already applied to the mailbox, then all you have to do is delete the corresponding user account to create an inactive mailbox.
+
+> [!NOTE]
+> If a Litigation Hold is already placed on a mailbox, or if a Microsoft 365 retention policy (that's configured to retain or retain and then delete content) is already applied to the mailbox, then all you have to do is delete the corresponding user account to create an inactive mailbox.
 
 ## Managing inactive mailboxes
 
