@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
 description: "Microsoft Teams chats and channels supports Data Loss Prevention (DLP) policies."
@@ -111,7 +112,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Compliance Center ([https://compliance.microsoft.com](https://compliance.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -142,7 +143,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Compliance Center ([https://compliance.microsoft.com](https://compliance.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. Choose **Data loss prevention** > **Policy** > **+ Create a policy**.
 
