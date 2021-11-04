@@ -1,4 +1,4 @@
-﻿---
+---
 title: Integrate your SIEM tools with Microsoft Defender for Endpoint
 description: Learn how to ingest incidents and alerts, and integrate SIEM tools.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
@@ -70,8 +70,7 @@ For more information on the Microsoft 365 Defender Add-on for Splunk, see [splun
 
 ### Micro Focus ArcSight
 
-The new SmartConnector for Microsoft 365 Defender ingests incidents that contain Microsoft Defender for Endpoint alerts into ArcSight and maps these onto its Common Event
-Framework (CEF). 
+The new SmartConnector for Microsoft 365 Defender ingests incidents that contain alerts from all Microsoft 365 Defender products - including from Microsoft Defender for Endpoint - into ArcSight and maps these onto its Common Event Framework (CEF). 
 
 For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
