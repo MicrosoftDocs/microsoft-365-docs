@@ -24,28 +24,32 @@ ms.collection:
 
 Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. For example, if a customer has Microsoft Defender for Endpoint Plan 2 and Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, the customer will not see the Defender for Business experience.
 
-## What’s the difference between MDE P1 vs P2 vs MDB?
+## What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
 
- (similar to licensing comparison page for BP which is highly trafficked)
+See [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
 
-## How do I sign up for preview ?
+## How do I sign up for the preview of Defender for Business?
 
-answer
+Visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) to apply for the preview program.
 
-## Are there any pre-requisites for preview?
+## Are there any prerequisites for Defender for Business preview?
 
-answer
+Your company should be one of the following:
 
-## Who can sign up for preview? Is Intune/AAD required?
+- A partner who offers IT services to small and medium-sized businesses
+- A small or medium-sized business with up to 300 employees
+
+You do not already have to have another Microsoft 365 subscription.
+
 
 ## What will be the licensing model at GA?
 
-answer
+When Microsoft Defender for Business reaches general availability (GA), it will be included in Microsoft 365 Business Premium.
 
-## Will MDB work for servers?
+Defender for Business will also be available as a standalone plan for customers who do not have Microsoft 365 Business Premium.
 
-answer
+## See also
 
-## When MDB goes into general availability, what happens to organizations who are signed up to the preview?
+- [Overview of Microsoft Defender for Business](mdb-overview.md)
 
-answer
+- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
