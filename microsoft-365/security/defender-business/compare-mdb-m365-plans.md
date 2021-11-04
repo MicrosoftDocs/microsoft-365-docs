@@ -1,6 +1,6 @@
 ---
-title: Compare Microsoft Defender for Business to Microsoft 365 Business Premium
-description: Understand the differences between Defender for Business and Microsoft 365 Business Premium. Knowing what's included in each plan can help you make an informed decision for your company.
+title: Compare Microsoft Defender for Business to other Microsoft 365 plans
+description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your company.
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
