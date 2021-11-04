@@ -58,11 +58,11 @@ You can then set exclusions by two methods: **Exclusions by detection rule** and
 
     1. After choosing the exclusion type, you can add the exclusion. In the pane that opens, select the **+** button to add the exclusion.
 
-        ![Add an exclusion.](../../media/defender-identity/add-an-exclusion.png)
+        ![Add an exclusion.](../../media/defender-identity/add-exclusion.png)
 
     1. Then add the entity to be excluded. Select **+ Add** to add the entity to the list.
 
-        ![Add an entity to be excluded.](../../media/defender-identity/add-an-entity-to-be-excluded.png)
+        ![Add an entity to be excluded.](../../media/defender-identity/add-excluded-entity.png)
 
     1. Then select **Exclude IP addresses** (in this example) to complete the exclusion.
 
@@ -74,7 +74,7 @@ You can then set exclusions by two methods: **Exclusions by detection rule** and
 
     1. To delete an exclusion, select the exclusion and select the trash icon.
 
-        ![Delete an exclusion.](../../media/defender-identity/delete-an-exclusion.png)
+        ![Delete an exclusion.](../../media/defender-identity/delete-exclusion.png)
 
 ## Global excluded entities
 
@@ -90,7 +90,7 @@ You can now also configure exclusions by **Global excluded entities**. Global ex
 
 1. A pane will open where you can add a domain to be excluded. Add the domain you want to exclude.
 
-    ![Add a domain to be excluded.](../../media/defender-identity/add-a-domain-to-be-excluded.png)
+    ![Add a domain to be excluded.](../../media/defender-identity/add-excluded-domain.png)
 
 1. The domain will be added to the list. Select **Exclude domains** to complete the exclusion.
 
@@ -98,7 +98,7 @@ You can now also configure exclusions by **Global excluded entities**. Global ex
 
 1. You'll then see the domain in the list of entities to be excluded from all detection rules. You can export the list, or remove the entities by selecting them and clicking the **Remove** button.
 
-    ![List of global excluded entries.](../../media/defender-identity/list-of-global-excluded-entries.png)
+    ![List of global excluded entries.](../../media/defender-identity/global-excluded-entries-list.png)
 
 ## See also
 
