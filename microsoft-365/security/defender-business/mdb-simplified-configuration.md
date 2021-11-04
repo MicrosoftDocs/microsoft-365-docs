@@ -1,13 +1,13 @@
 ---
 title: The simplified configuration process in Microsoft Defender for Business
-description: See how to set up and configure Microsoft Defender for Business
+description: Learn about the simplified configuration process in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
