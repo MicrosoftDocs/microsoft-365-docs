@@ -17,6 +17,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
@@ -56,7 +57,7 @@ Recommended actions can help your organization get the most out of communication
 
 ![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
 
-Activity in messages containing inappropriate content is enumerated by classifier type from existing polices that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+Activity in messages containing inappropriate content is enumerated by classifier type from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
 
 Activity involving sensitive information types is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are provided for all sensitive information types, including ones that your organization have not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
 
@@ -99,9 +100,9 @@ Choose from these role group options when configuring communication compliance:
 
 Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and then go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. Select the link to view and manage roles in Office 365.
 
 3. Select one of the communication compliance role groups, then select **Edit role group**.
 
@@ -193,7 +194,7 @@ For more information about configuring Yammer in Native Mode, see:
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
-1. Sign into <https://compliance.microsoft.com> using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, select **Communication compliance**.
 
@@ -248,7 +249,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
