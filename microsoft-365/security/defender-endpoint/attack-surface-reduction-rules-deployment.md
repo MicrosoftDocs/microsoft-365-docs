@@ -100,13 +100,15 @@ Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules fal
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to plan and be methodical in your implementation.
 Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is required to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
-_Deployment phases diagram 1_.
+> [!div class="mx-imgBorder"]
+> ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
 
 ## Phase 1: Plan
 
 Starting to test ASR rules involves starting with the right business unit. You’ll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact to the ASR rules and help you tune your implementation.
 
-_Deployment phase 1 diagram_.
+> [!div class="mx-imgBorder"]
+> ![ASR rules planning steps](images/asr-rules-planning-phase.png)
 
 ### Start with the right business unit
 
@@ -158,7 +160,8 @@ See: [Create a deployment plan for Windows](https://docs.microsoft.com/windows/d
 
 Begin your ASR  rules deployment with ring 1.
 
-_Deployment phase 2 diagram_.
+> [!div class="mx-imgBorder"]
+> ![ASR rules testing steps](images/asr-rules-testing-steps.png)
 
 ### Step 1: Test ASR rules using Audit
 
@@ -310,14 +313,6 @@ Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **At
 > [!div class="mx-imgBorder"]
 > ![ASR Create Exclusions](images/asr-defender365-06d.png)
 
-### Step 4: Assess impact
-
-#### Review impact
-
-Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from your ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
-
-Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see How long should I test an ASR rule in audit mode before enabling it?
-
 #### Create exclusions after review
 
 In many cases, an organization has files, or folders of files, for example that are known to be safe, and which might contain aspects that would trigger an ASR rule; audit mode will reveal such files and folders. For example, your organization might have a collection of Word or Excel documents that have macros enabled for specific purposes; such macros can trigger an ASR rule. In such cases, if audit mode identifies such files, you want to exclude these files or folders to prevent them from being captured by ASR rules. See [Exclude files and folders](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules).
@@ -332,7 +327,8 @@ Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **At
 
 The implementation phase moves the ring from testing into functional state.
 
-_Deployment phase 3 diagram_.
+> [!div class="mx-imgBorder"]
+> ![ASR rules implementation steps](images/asr-rules-implementation-steps.png)
 
 ### Step 1: Transition ASR Rules from Audit to Block
 
