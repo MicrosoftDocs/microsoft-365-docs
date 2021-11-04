@@ -55,7 +55,7 @@ If bandwidth utilization is not a concern, you can not set a limit and allow unl
 
 ### Endpoint DLP Windows 10 and macOS settings
 
-To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/Ignite2021DLP).
+To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
