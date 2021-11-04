@@ -14,6 +14,7 @@ mscollection: M365-security-compliance
 ms.custom:
 - Adm_O365
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 ---

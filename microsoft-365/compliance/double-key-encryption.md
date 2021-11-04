@@ -14,7 +14,7 @@ ms.reviewer: esaggese
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Double Key Encryption for Microsoft 365

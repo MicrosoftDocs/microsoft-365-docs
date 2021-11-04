@@ -18,6 +18,7 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those files to endpoints."
 ---
 
