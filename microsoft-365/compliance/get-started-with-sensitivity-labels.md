@@ -39,6 +39,9 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
+> [!TIP]
+> You might be eligible for default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
+
 The basic flow for deploying and applying sensitivity labels:
 
 ![Diagram showing workflow for sensitivity labels.](../media/Sensitivity-label-flow.png)
@@ -81,6 +84,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Use co-authoring and AutoSave in Office desktop apps when documents are encrypted | [Enable co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md)
 |Automatically apply sensitivity labels to documents and emails | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md)|
+|Let admins apply a sensitivity label to a document understanding model, so that identified documents in a SharePoint library are automatically classified and protected |[Apply a sensitivity label to a model in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)|
 |Prevent or warn users about sharing files or emails with a specific sensitivity label |[Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md) |
 |Apply a retention label to retain or delete files or emails that have a specific sensitivity label|[Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md) |
 |Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](/azure/information-protection/deploy-aip-scanner)|

@@ -86,7 +86,7 @@ In order to get the data types for our events properties do the following:
 
 2. Run the following query to get the data types mapping for each event:
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -94,7 +94,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3.](images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3.](images/data-types-mapping-query.png)
 
 ## Related topics
 

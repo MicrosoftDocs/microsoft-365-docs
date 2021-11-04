@@ -42,7 +42,7 @@ Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virt
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy.
 
 > [!NOTE]
-> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's NOT recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
+> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's **not** recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 and 2 take this into account.
 
 ### Scenarios
 
@@ -155,4 +155,4 @@ Licensing requirements for Microsoft Defender for endpoint can be found at: [Lic
 
 #### Related Links
 
-[Add exclusions for Microsoft Defender by using PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
+[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)
