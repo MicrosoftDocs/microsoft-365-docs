@@ -81,7 +81,7 @@ Microsoft Defender Antivirus must be enabled and configured as primary anti-viru
 Microsoft Defender Antivirus must not be in any of the following modes:
 
 - Passive
-- EDR in block mode
+- Passive Mode with EDR in Block Mode
 - Limited periodic scanning (LPS)
 - Off
 
@@ -112,7 +112,7 @@ Because of the powerful capabilities of ASR rules in preventing malware, careful
 
 >[!Note]
 >For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules:
->Microsoft recommends that you leave your existing, non-Microsoft HIPS solution enabled until you have fully implemented Defender for Endpoint ASR rules to your entire organization. After ASR rules are fully deployed, you can disable or uninstall your non-Microsoft HIPS solution.  
+>Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.  
 
 ## Phase 1: Plan
 
@@ -314,6 +314,8 @@ This tab provides a method to select detected entities (for example, false posit
 Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from your ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
 
 Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see "How long should I test an ASR rule in audit mode before enabling it?" in [Attack surface reduction FAQ](attack-surface-reduction-faq.yml).
+
+[Attack surface reduction FAQ](attack-surface-reduction-faq.yml#how-long-should-i-test-an-asr-rule-in-audit-mode-before-enabling-it-).
 
 #### Create exclusions
 
