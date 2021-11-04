@@ -25,6 +25,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 For the **Microsoft 365 support integration** app from the ServiceNow store, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
+
 ## Key features
 
 These are the key features you'll get with the Microsoft 365 support integration app in your ServiceNow instance:
