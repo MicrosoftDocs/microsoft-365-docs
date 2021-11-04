@@ -33,6 +33,8 @@ landingContent:
             url: compare-mdb-m365-plans.md
           - text: The simplified configuration process
             url: mdb-simplified-configuration.md
+          - text: Frequently asked questions
+            url: mdb-faq.md
 
   # Card
   - title: Set up
@@ -95,5 +97,5 @@ landingContent:
             url: mdb-firewall.md
           - text: Gradual device onboarding
             url: mdb-gradual-device-onboarding.md
-          - text: Frequently asked questions
-            url: mdb-faq.md
+          - text: Troubleshooting
+            url: mdb-troubleshooting.md

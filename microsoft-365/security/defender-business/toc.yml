@@ -11,6 +11,8 @@
         href: compare-mdb-m365-plans.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
+      - name: Frequently asked questions
+        href: mdb-faq.md
     - name: Setup and configuration
       items:
       - name: Setup overview
@@ -51,6 +53,6 @@
         href: mdb-firewall.md
       - name: Gradual device onboarding
         href: mdb-gradual-device-onboarding.md
-      - name: Frequently asked questions
-        href: mdb-faq.md
+      - name: Troubleshooting
+        href: mdb-troubleshooting.md
 
