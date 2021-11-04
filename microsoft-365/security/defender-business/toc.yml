@@ -51,4 +51,6 @@
         href: mdb-firewall.md
       - name: Gradual device onboarding
         href: mdb-gradual-device-onboarding.md
+      - name: Frequently asked questions
+        href: mdb-faq.md
 
