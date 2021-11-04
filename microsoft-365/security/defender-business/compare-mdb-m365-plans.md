@@ -52,30 +52,31 @@ The following table compares security features and capabilities in Defender for 
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint
+## Compare Defender for Business to Defender for Endpoint
 
 The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
 | Feature/Capability | [Defender for Business](mdb-overview.md) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
-| [Centralized management](../defender-endpoint/manage-atp-post-migration.md) <br/> Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).| Yes | Yes | Yes |
+| [Centralized management](../defender-endpoint/manage-atp-post-migration.md) <sup>[[1](#fn1)]</sup> | Yes | Yes | Yes |
 | [Simplified client configuration](mdb-simplified-configuration.md) | Yes | No | No |
 | [Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Yes | No | Yes |
 | [Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md) | Yes | Yes | Yes |
 | [Next-generation protection](../defender-endpoint/next-generation-protection.md) | Yes | Yes | Yes |
-| [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <sup>[[1](#fn1)]</sup> | No | Yes |
-| [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes <sup>[[1](#fn1)]</sup> | No | Yes |
+| [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
+| [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
 | [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and 6 months of data retention | No | No | Yes |
-| [Threat analytics](../defender-endpoint/threat-analytics.md) | Yes <sup>[[1](#fn1)]</sup> | No | Yes |
-| [Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS) | Yes <sup>[[2](#fn1)]</sup> | Yes | Yes |
+| [Threat analytics](../defender-endpoint/threat-analytics.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
+| [Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS) | Yes <sup>[[3](#fn3)]</sup> | Yes | Yes |
 | [Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md) | No | No | Yes |
 | Partner APIs | Yes | Yes | Yes |
 | [Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) | Yes | No | No |
 
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
 
-(<a id="fn1">1</a>) Optimized for small and medium-sized businesses
+(<a id="fn1">2</a>) Optimized for small and medium-sized businesses
 
-(<a id="fn2">2</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+(<a id="fn2">3</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
 ## Next steps
 
