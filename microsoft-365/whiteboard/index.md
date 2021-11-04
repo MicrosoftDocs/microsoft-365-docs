@@ -26,7 +26,7 @@ The resources in this section help you learn more about what Viva Learning is an
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn more about Viva Learning |[Microsoft Viva Learning overview](overview-viva-learning.md)|
-|Learn how to get Viva Learning|[Viva Learning product page](https://www.microsoft.com/en-us/microsoft-viva/learning?activetab=pivot:overviewtab&rtc=1)|
+|Learn how to get Microsoft Whiteboard|[Microsoft Whiteboard product page](https://www.microsoft.com/microsoft-365/microsoft-whiteboard/digital-whiteboard-app?rtc=1)|
 |Find resources in the Microsoft Tech Community Resource Center|[Microsoft Viva Learning Tech Community](https://techcommunity.microsoft.com/t5/viva-learning/bd-p/VivaLearning/)|
 |Find Viva Learning guidance for end users|[Microsoft Viva Learning help](https://support.microsoft.com/office/01bfed12-c327-41e0-a68f-7fa527dcc98a)|
 
