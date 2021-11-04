@@ -4,15 +4,14 @@ ms.author: faithall
 author: faithall
 manager: faithall
 ms.reviewer: 
-ms.date: 
 audience: admin
 ms.topic: landing-page
-ms.custom: intro-hub-or-landing
+ms.custom: 
 ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
-description: Learn how to find resources for Microsoft Whiteboard.
+description: Find resources about how to set up and manage Microsoft Whiteboard.
 ---
 
 # Introduction to Microsoft Whiteboard
@@ -25,7 +24,6 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
-|Learn more about Viva Learning |[Microsoft Viva Learning overview](overview-viva-learning.md)|
 |Learn how to get Microsoft Whiteboard|[Microsoft Whiteboard product page](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
 |Find resources in the Microsoft Tech Community Resource Center|[Microsoft 365 Whiteboard blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
 |Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help](https://support.microsoft.com/en-us/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
