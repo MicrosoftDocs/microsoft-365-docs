@@ -56,7 +56,7 @@ The following table compares security features and capabilities in Defender for 
 
 The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
-| Feature/Capability | [Defender for Business](mdb-overview.md) | Defender for Endpoint Plan 1 | Defender for Endpoint Plan 2 |
+| Feature/Capability | [Defender for Business](mdb-overview.md) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
 | Centralized management <br/> Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).| Yes | Yes | Yes |
 | Simplified client configuration | Yes | No | No |
