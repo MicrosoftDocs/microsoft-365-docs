@@ -60,7 +60,7 @@ The following table compares security features and capabilities in Defender for 
 |:---|:---|:---|
 | Centralized management <br/> Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).| Yes | Yes | Yes |
 | [Simplified client configuration](mdb-simplified-configuration.md) | Yes | No | No |
-| Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Yes | No | Yes |
+| [Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Yes | No | Yes |
 | [Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md) | Yes | Yes | Yes |
 | [Next-generation protection](../defender-endpoint/next-generation-protection.md) | Yes | Yes | Yes |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
