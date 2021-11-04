@@ -52,14 +52,25 @@ The following table compares security features and capabilities in Defender for 
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-
 ## Comparing Microsoft Defender for Business to Microsoft Defender for Endpoint
 
 The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
 | Feature/Capability | [Defender for Business](mdb-overview.md) | Defender for Endpoint Plan 1 | Defender for Endpoint Plan 2 |
 |:---|:---|:---|
-| item | yes/no | yes/no | yes/no |
+| Centralized management | Yes | Yes | Yes |
+| Simplified client configuration | Yes | No | No |
+| Threat & vulnerability management | Yes | No | Yes |
+| Attack surface reduction capabilities | Yes | Yes | Yes |
+| Next-generation protection | Yes | Yes | Yes |
+| Endpoint detection and response | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
+| Automated investigation and response | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
+| Threat hunting and 6 months of data retention | No | No | Yes |
+| Threat Analytics | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
+| Cross-platform support <br/>(Windows, macOS, iOS, and Android OS) | Yes | Yes | Yes |
+| Microsoft Threat Experts | No | No | Yes |
+| Partner APIs | Yes | Yes | Yes |
+| Microsoft 365 Lighthouse integration <br/>(For viewing security incidents across customer tenants) | Yes | No | No |
 
 
 ## Next steps
