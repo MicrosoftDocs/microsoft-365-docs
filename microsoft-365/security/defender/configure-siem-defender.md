@@ -1,4 +1,4 @@
-﻿---
+---
 title: Integrate your SIEM tools with Microsoft 365 Defender
 description: Learn how to use REST API and configure supported security information and events management tools to receive and pull detections.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
