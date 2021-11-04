@@ -1,13 +1,13 @@
 ---
-title: Understand the configuration settings in Microsoft Defender for Business
-description: Understand your configuration settings in Microsoft Defender for Business
+title: Understand next-generation protection configuration settings in Microsoft Defender for Business
+description: Understand configuration settings for next-generation protection in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/01/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
