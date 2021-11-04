@@ -132,7 +132,7 @@ It is important to provide a feedback and response channel so that your ASR rule
 ### Get inventory of line-of-business apps and understand the business unit processes
 
 Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR  rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
-To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory.md).
+To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory).
 
 ### Define reporting and response team  roles and responsibilities
 
@@ -152,7 +152,7 @@ Typical roles and responsibilities include:
 
 For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
-See: [Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan.md)
+See: [Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
 
 ## Phase 2: Test
 
@@ -183,7 +183,7 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
     > [!div class="mx-imgBorder"]
     > ![Set ASR rules to Audit mode](images/asr-mem-configuration-settings.png)
 
-8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md).
+8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).
 9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
@@ -295,7 +295,7 @@ This tab provides a method to select detected entities (for example, false posit
 
 Use the reporting page in the Microsoft 365 Defender portal to see which – if any – ASR rules have impacted the business unit process. Include feedback from your ASR champions as part of this process. Review the audit report to determine which rules have the most fired/triggered events, and which have the fewest.
 
-Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see [How long should I test an ASR rule in audit mode before enabling it?](attack-surface-reduction-faq.yml#how-long-should-i-test-an-asr-rule-in-audit-mode-before-enabling-it-) in **Attack surface reduction frequently asked questions (FAQ)**.
+Because ASR rules target a broad array of components, and those components will be called at varying intervals, it is difficult to predict how long it will take to obtain a useful sampling of ASR rules-triggered events in your organizations rings; however, Microsoft suggests a minimum of four weeks. For example, some ASR rules for Microsoft Office applications might trigger sooner and more frequently than the ASR rule to “Use advanced protection against ransomware.” Likewise, each ring will likely use applications and other components that are subject to ASR rules differently and with dissimilar frequency. You must make the determination of when testing is complete based on the results in your organization. For a better understanding, see "How long should I test an ASR rule in audit mode before enabling it?" in [Attack surface reduction FAQ](attack-surface-reduction-faq.yml).
 
 #### Create exclusions
 
@@ -320,7 +320,7 @@ Because ASR rules target a broad array of components, and those components will 
 
 #### Create exclusions after review
 
-In many cases, an organization has files, or folders of files, for example that are known to be safe, and which might contain aspects that would trigger an ASR rule; audit mode will reveal such files and folders. For example, your organization might have a collection of Word or Excel documents that have macros enabled for specific purposes; such macros can trigger an ASR rule. In such cases, if audit mode identifies such files, you want to exclude these files or folders to prevent them from being captured by ASR rules. See [Exclude files and folders](enable-attack-surface-reduction.md).
+In many cases, an organization has files, or folders of files, for example that are known to be safe, and which might contain aspects that would trigger an ASR rule; audit mode will reveal such files and folders. For example, your organization might have a collection of Word or Excel documents that have macros enabled for specific purposes; such macros can trigger an ASR rule. In such cases, if audit mode identifies such files, you want to exclude these files or folders to prevent them from being captured by ASR rules. See [Exclude files and folders](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules).
 
 >[!Note]
 >Keep in mind that Microsoft Defender Antivirus AV exclusions are honored by ASR rules.  See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
@@ -337,7 +337,7 @@ _Deployment phase 3 diagram_.
 ### Step 1: Transition ASR Rules from Audit to Block
 
 1. After all exclusions are determined while in audit mode, start setting some ASR rules to "block" mode, starting with the rule that has the fewest triggered events. See” [Enable attack surface reduction rules](enable-attack-surface-reduction.md).
-2. Review the reporting page in the Microsoft 365 Defender portal  ; see Threat protection report in Microsoft Defender for Endpoint | Microsoft Docs. Also review feedback from your ASR champions.
+2. Review the reporting page in the Microsoft 365 Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your ASR champions.
 3. Refine exclusions or create new exclusions as determined necessary.
 4. Switch problematic rules back to Audit.
 
