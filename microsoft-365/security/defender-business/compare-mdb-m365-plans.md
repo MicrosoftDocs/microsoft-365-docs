@@ -42,7 +42,7 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 
 ## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
-The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium. <br/><br/>
+The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium while Defender for Business is in preview. <br/><br/>
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
