@@ -26,8 +26,8 @@ ms.collection:
 
 Microsoft offers a wide variety cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. You can use this article to:
 
-- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](#compare-microsoft-defender-for-business-to-microsoft-365-business-premium) (during the preview program)
-- [Compare Defender for Business to Defender for Endpoint](#compare-defender-for-business-to-defender-for-endpoint)
+- [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium) (during the preview program)
+- [Compare Defender for Business to Defender for Endpoint](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
 **You don't have to have a Microsoft 365 subscription to buy and use Microsoft Defender for Business.** Microsoft Defender for Business is a standalone security solution for small and medium-sized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic or Standard), consider adding Microsoft Defender for Business to get additional threat protection capabilities. 
