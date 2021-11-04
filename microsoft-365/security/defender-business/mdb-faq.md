@@ -27,7 +27,28 @@ e.g.: P2 + SMB license -> higher SKU take precedence.
 
 This means that if you are a customer that even has a P2 trial offering enabled on 1 device, we recognize this as P2 and you won’t see the SMB page.
 
-## Question
+## What’s the difference between MDE P1 vs P2 vs MDB?
 
+ (similar to licensing comparison page for BP which is highly trafficked)
 
+## How do I sign up for preview ?
 
+answer
+
+## Are there any pre-requisites for preview?
+
+answer
+
+## Who can sign up for preview? Is Intune/AAD required?
+
+## What will be the licensing model at GA?
+
+answer
+
+## Will MDB work for servers?
+
+answer
+
+## When MDB goes into general availability, what happens to organizations who are signed up to the preview?
+
+answer
