@@ -14,13 +14,16 @@
         - name: Compliance standards
           href: compliance.md
         - name: FAQ
-          href: faq.md.md
+          href: faq.md
 
     - name: Whiteboard for Government
       items:
         - name: Set up Whiteboard
           href: set-up-government.md
-
-            
-
+        - name: Manage clients
+          href: manage-clients.md
+        - name: Manage sharing
+          href: manage-sharing.md           
+        - name: Data retention
+          href: date-retention-odb.md
 
