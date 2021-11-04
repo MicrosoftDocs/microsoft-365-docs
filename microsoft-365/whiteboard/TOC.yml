@@ -10,7 +10,7 @@
         - name: Licensing
           href: licensing.md
         - name: Data retention
-          href: data-retention.md
+          href: data-retention-azure.md
         - name: Compliance standards
           href: compliance.md
         - name: FAQ
