@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
@@ -45,21 +46,23 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. In the navigation pane, select **Settings** > **Device onboarding** > **Offboarding**.
 
 3. In the **Deployment method** field, select **Mobile Device Management / Microsoft Intune**.
-    
+
 4. Click **Download package**, and save the .zip file.
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
 6. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
-      OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
-      Date type: String      
-      Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
+    ```text
+    OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding
+    Date type: String
+    Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
+    ```
 
 For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 

@@ -37,16 +37,16 @@ The *go hunt* action is available in various sections of the security center whe
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
-    ![Image showing mailbox details with the go hunt option.](../../media/mtp-ah/go-hunt-email.png)
+    ![Image showing mailbox details with the go hunt option.](../../media/go-hunt-1-incident.png)
 
 - In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
 
-    ![Image showing selected file with the go hunt option in the Evidence tab.](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![Image showing selected file with the go hunt option in the Evidence tab.](../../media/go-hunt-2-entity.png)
 
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
-    ![Image showing event details with the go hunt option.](../../media/mtp-ah/go-hunt-event.png)
+    ![Image showing event details with the go hunt option.](../../media/go-hunt-3-event.png)
 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 

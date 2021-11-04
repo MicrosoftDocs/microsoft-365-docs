@@ -11,6 +11,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Learn about the Microsoft 365 solution catalog, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Microsoft 365 solution catalog
