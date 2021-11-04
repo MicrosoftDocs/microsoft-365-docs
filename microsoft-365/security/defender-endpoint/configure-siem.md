@@ -41,8 +41,7 @@ For more information, see:
 - [Get access with application context](exposed-apis-create-app-webapp.md)
 
 
-Microsoft Defender for Endpoint currently supports the following SIEM solution
-integrations: 
+Microsoft Defender for Endpoint currently supports the following SIEM solution integrations: 
 
 - [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
 - [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
@@ -79,10 +78,13 @@ The SmartConnector replaces the previous FlexConnector for Microsoft 365 Defende
 ### IBM QRadar
 
 >[!NOTE]
->QRadar support for Microsoft Defender for Endpoint is currently based on ingesting  event streaming data. The previous QRadar Microsoft Defender ATP Device Support Module (DSM) is no longer onboarding new customers, and existing customer are encourage to adopt the event streaming API DSM that supports data from all the Microsoft 365 Defender products.   
+>
+>IBM QRadar integration with Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on supported event types, see [Supported event types](../defender/supported-event-types.md).
+New customers are no longer being onboarded using the previous QRadar Microsoft Defender ATP Device Support Module (DSM), and existing customers are encouraged to adopt the new Microsoft 365 Defender DSM as their single point of integration with all Microsoft 365 Defender products.
+For more information about the Microsoft 365 Defender DSM see the announcement on the [IBM QRadar blog](https://community.ibm.com/community/user/security/blogs/wendy-willner/2021/11/04/beyondthedsmguide-new-microsoft-365-defender-integ?CommunityKey=f9ea5420-0984-4345-ba7a-d93b4e2d4864).
 
 ## Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API
 
-Microsoft 365 Defender streaming event data includes alerts and other events from Microsoft Defender for Endpoints. The events may be streamed to an Azure Storage Account or to Azure Event Hubs. The integration model via event hubs is currently supported by Splunk and IBM QRadar.
+Microsoft 365 Defender streaming event data includes alerts and other events from Microsoft Defender for Endpoint and other Microsoft Defender products. Theese events may be streamed to an Azure Storage Account or to Azure Event Hubs. The integration model via event hubs is currently supported by Splunk and IBM QRadar.
 
 For more information, see [Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md).
