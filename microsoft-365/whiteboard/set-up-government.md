@@ -39,7 +39,7 @@ You will need the [SharePoint Online PowerShell module](https://docs.microsoft.c
 
 1. Connect to [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps).
 
-2. Enable Fluid using the 'Set-SPOTenant' cmdlet:
+2. Enable Fluid using the <code>Set-SPOTenant/</code> cmdlet:
     **Set-SPOTenant -IsWBFluidEnabled $true**
 
 The change should take approximately 60 minutes to apply across your tenancy. If you do not see this option, you will need to update the module.
