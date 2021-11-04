@@ -81,9 +81,9 @@ Defender for Business brings enterprise-grade capabilities of Defender for Endpo
 
 (<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with another tool, such as Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))
 
-(<a id="fn1">2</a>) Optimized for small and medium-sized businesses
+(<a id="fn2">2</a>) Optimized for small and medium-sized businesses
 
-(<a id="fn2">3</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+(<a id="fn3">3</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
 ## Next steps
 
