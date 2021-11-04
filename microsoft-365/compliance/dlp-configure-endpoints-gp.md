@@ -57,8 +57,8 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 12. Click **OK** and close any open GPMC windows.
 
-
 ## Offboard devices using Group Policy
+
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]

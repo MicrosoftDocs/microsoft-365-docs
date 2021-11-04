@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Learn about automatic redirection of users from the Office 365 Security and Compliance center users to the Microsoft 365 compliance center.
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Redirection of users from the Office 365 Security and Compliance center to the Microsoft 365 compliance center

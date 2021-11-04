@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use a local script to deploy the configuration package on devices so that they are onboarded to the service.
