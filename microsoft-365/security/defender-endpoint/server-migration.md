@@ -100,8 +100,7 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 
 *These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
-
-To move a machine out of passive mode, set the following key to 0: 
+To move a machine out of passive mode, set the following key to 0:
 
 Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection 
 Name: ForceDefenderPassiveMode
@@ -110,8 +109,7 @@ Value: 0
 
 For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-
-## Other migration scenarios 
+## Other migration scenarios
 
 ### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Azure Defender, Microsoft Endpoint Manager, or Microsoft Endpoint Configuration Manager.
 
@@ -140,12 +138,11 @@ For more information, see [Need to set Microsoft Defender Antivirus to passive m
 > You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag which will ensure that Defender Antivirus goes into passive mode before onboarding and does not interfere with a non-Microsoft antimalware solution. Then to ensure Defender Antivirus remains in passive mode after onboarding to support EDR capabilities such as EDR Block make sure to set the "ForceDefenderPassiveMode" registry key. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 > For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 
-*This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
+*This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
+To move a machine out of passive mode, set the following key to 0:
 
-To move a machine out of passive mode, set the following key to 0: 
-
-Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection 
+Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 Name: ForceDefenderPassiveMode
 Type: REG_DWORD
 Value: 0

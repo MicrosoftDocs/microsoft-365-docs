@@ -97,8 +97,9 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
    # For Windows Server 2019 and Windows Server 2022
    Dism /online /Enable-Feature /FeatureName:Windows-Defender
    ```
-   Then restart the device. 
-   
+
+   Then restart the device.
+
    When using the DISM command within a task sequence running PowerShell, the following path to cmd.exe is required.
    Example:
 
