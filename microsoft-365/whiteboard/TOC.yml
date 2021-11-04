@@ -9,10 +9,10 @@
           href: install-on-windows-10.md
         - name: Licensing
           href: licensing.md
-        - name: Data retention
-          href: data-retention-azure.md
         - name: Compliance standards
           href: compliance.md
+        - name: Data retention
+          href: data-retention-azure.md
         - name: FAQ
           href: faq.md
 
