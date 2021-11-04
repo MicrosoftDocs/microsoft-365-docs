@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 support integration for service health incidents and recommended solutions ONLY"
+title: "Microsoft 365 support integration for service health incidents and recommended solutions only"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Microsoft 365 support integration for service health incidents and recommended solutions ONLY
+# Microsoft 365 support integration for service health incidents and recommended solutions only
 
 This configuration doesn't allow you to create a case with Microsoft support through your ServiceNow instance. This option provides you only with the Service Health Incident information and Recommend Solutions available through your ServiceNow instance.
 
