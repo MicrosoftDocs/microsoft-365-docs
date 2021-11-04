@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure the security and infrastructure that allows your employees to work remotely from anywhere and at any time.
 ---
 
