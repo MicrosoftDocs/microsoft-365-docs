@@ -59,16 +59,16 @@ The following table compares security features and capabilities in Defender for 
 | Feature/Capability | [Defender for Business](mdb-overview.md) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
 | Centralized management <br/> Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).| Yes | Yes | Yes |
-| Simplified client configuration | Yes | No | No |
-| Threat & vulnerability management | Yes | No | Yes |
-| Attack surface reduction capabilities | Yes | Yes | Yes |
-| Next-generation protection | Yes | Yes | Yes |
-| Endpoint detection and response | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
-| Automated investigation and response | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
-| Threat hunting and 6 months of data retention | No | No | Yes |
+| [Simplified client configuration](mdb-simplified-configuration.md) | Yes | No | No |
+| Threat & vulnerability management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) | Yes | No | Yes |
+| [Attack surface reduction capabilities](../defender-endpoint/overview-attack-surface-reduction.md) | Yes | Yes | Yes |
+| [Next-generation protection](../defender-endpoint/next-generation-protection.md) | Yes | Yes | Yes |
+| [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
+| [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
+| [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and 6 months of data retention | No | No | Yes |
 | Threat Analytics | Yes <br/>(Optimized for small and medium-sized businesses) | No | Yes |
 | Cross-platform support <br/>(Windows, macOS, iOS, and Android OS) | Yes | Yes | Yes |
-| Microsoft Threat Experts | No | No | Yes |
+| [Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md) | No | No | Yes |
 | Partner APIs | Yes | Yes | Yes |
 | Microsoft 365 Lighthouse integration <br/>(For viewing security incidents across customer tenants) | Yes | No | No |
 
