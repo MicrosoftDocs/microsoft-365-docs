@@ -2777,8 +2777,7 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input
-data that does not allow the engine to function properly.
+This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
