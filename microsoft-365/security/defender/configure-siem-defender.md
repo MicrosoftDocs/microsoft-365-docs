@@ -1,4 +1,4 @@
-﻿---
+---
 title: Integrate your SIEM tools with Microsoft 365 Defender
 description: Learn how to use REST API and configure supported security information and events management tools to receive and pull detections.
 keywords: configure siem, security information and events management tools, splunk, arcsight, custom indicators, rest api, alert definitions, indicators of compromise
@@ -26,13 +26,12 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-## Pull detections using security information and events management (SIEM) tools
+## Pull Microsoft 365 Defender incidents and streaming event data using security information and events management (SIEM) tools
 
 > [!NOTE]
 >
-> - [Microsoft Defender for Endpoint Alert](../defender-endpoint/alerts.md) is composed from one or more detections.
-> - [Microsoft Defender for Endpoint Detection](../defender-endpoint/api-portal-mapping.md) is composed from the suspicious event occurred on the Device and its related Alert details.
-> -The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](../defender-endpoint/alerts.md) and [List alerts](../defender-endpoint/get-alerts.md).
+> - [Microsoft 365 Defender Incidents](incident-queue.md) consists of collections of correlated alerts and their evidence.
+> - [Microsoft 365 Defender Streaming API](streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
 
 Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment. 
 
@@ -45,14 +44,11 @@ For more information, see:
 
 There are two primary models to ingest security information: 
 
-1.  Ingesting Microsoft 365 Defender incidents and their contained alerts from a
-    REST API in Azure. 
+1.  Ingesting Microsoft 365 Defender incidents and their contained alerts from a REST API in Azure. 
 
-2.  Ingesting streaming event data either through Azure Event Hubs or Azure
-    Storage Accounts. 
+2.  Ingesting streaming event data either through Azure Event Hubs or Azure Storage Accounts. 
 
-Microsoft 365 Defender currently supports the following SIEM solution
-integrations: 
+Microsoft 365 Defender currently supports the following SIEM solution integrations: 
 
 - [Ingesting incidents from the incidents REST API](#ingesting-incidents-from-the-incidents-rest-api)
 - [Ingesting streaming event data via Event Hub](#ingesting-streaming-event-data-via-event-hubs)
@@ -90,11 +86,6 @@ For more information on the new ArcSight SmartConnector for Microsoft 365 Defend
 The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
   
 
-### IBM QRadar
-
->[!NOTE]
->QRadar support for Microsoft 365 Defender is currently based on ingesting  event streaming data. The previous QRadar Microsoft Defender ATP Device Support Module (DSM) is no longer onboarding new customers, and existing customer are encourage to adopt the event streaming API DSM that supports data from all the Microsoft 365 Defender products.   
-
 ## Ingesting streaming event data via Event Hubs
 
 First you need to stream events from your AAD tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
@@ -111,8 +102,8 @@ For more information on the step-by-step walkthrough of configuring event stream
   
 
 ### IBM QRadar
-Use the Splunk Microsoft 365 Defender DSM to ingest events from your Azure Event Hubs. The QRadar DSM and additional information can be
-found here: [*link to IBM Knowledge Center*]. 
+>Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).
+For more information about the Microsoft 365 Defender DSM see the announcement on the [IBM QRadar Blog](https://community.ibm.com/community/user/security/blogs/wendy-willner/2021/11/04/beyondthedsmguide-new-microsoft-365-defender-integ?CommunityKey=f9ea5420-0984-4345-ba7a-d93b4e2d4864).
 
 
 
