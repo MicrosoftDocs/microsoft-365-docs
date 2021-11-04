@@ -30,7 +30,7 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 > [!TIP]
 > If your company is a small or medium-sized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-## Comparing security features in Microsoft Defender for Business to Microsoft 365 Business Premium
+## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
 The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium. <br/><br/>
 
@@ -52,7 +52,7 @@ The following table compares security features and capabilities in Defender for 
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-## Comparing Microsoft Defender for Business to Microsoft Defender for Endpoint
+## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint
 
 The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
