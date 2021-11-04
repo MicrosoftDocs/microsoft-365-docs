@@ -184,10 +184,10 @@ Retention labels can be published to different locations, depending on what the 
   
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
-|Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange, SharePoint, OneDrive  <br/> |
-|Auto-applied based on keywords or a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied to cloud attachments  <br/> |SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+|Published to admins and end users  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied based on sensitive information types or trainable classifiers  |Exchange, SharePoint, OneDrive  |
+|Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
 
 Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
