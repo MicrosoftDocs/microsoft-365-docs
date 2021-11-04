@@ -58,7 +58,7 @@ The following table compares security features and capabilities in Defender for 
 
 | Feature/Capability | [Defender for Business](mdb-overview.md) | Defender for Endpoint Plan 1 | Defender for Endpoint Plan 2 |
 |:---|:---|:---|
-| Centralized management | Yes | Yes | Yes |
+| Centralized management <br/> Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).| Yes | Yes | Yes |
 | Simplified client configuration | Yes | No | No |
 | Threat & vulnerability management | Yes | No | Yes |
 | Attack surface reduction capabilities | Yes | Yes | Yes |
