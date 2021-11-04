@@ -41,8 +41,7 @@ For more information, see:
 - [Get access with application context](exposed-apis-create-app-webapp.md)
 
 
-Microsoft Defender for Endpoint currently supports the following SIEM solution
-integrations: 
+Microsoft Defender for Endpoint currently supports the following SIEM solution integrations: 
 
 - [Ingesting incidents and alerts from the Microsoft 365 Defender and Microsoft Defender for Endpoint incidents and alerts REST APIs](#ingesting-incidents-and-alerts-from-the-microsoft-365-defender-and-microsoft-defender-for-endpoint-incidents-and-alerts-rest-apis)
 - [Ingesting Microsoft Defender for Endpoint events from the Microsoft 365 Defender event streaming API](#ingesting-microsoft-defender-for-endpoint-events-from-the-microsoft-365-defender-event-streaming-api)
@@ -80,7 +79,7 @@ The SmartConnector replaces the previous FlexConnector for Microsoft 365 Defende
 
 >[!NOTE]
 >
->IBM QRadar integration with Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](https://docs.microsoft.com/en-us/microsoft-365/security/defender/streaming-api?view=o365-worldwide) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on supported event types, see [Supported event types](https://docs.microsoft.com/en-us/microsoft-365/security/defender/supported-event-types?view=o365-worldwide).
+>IBM QRadar integration with Microsoft Defender for Endpoint is now supported by the new Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](../defender/streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products, including Microsoft Defender for Endpoint. For more information on supported event types, see [Supported event types](../defender/supported-event-types.md).
 New customers are no longer being onboarded using the previous QRadar Microsoft Defender ATP Device Support Module (DSM), and existing customers are encouraged to adopt the new Microsoft 365 Defender DSM as their single point of integration with all Microsoft 365 Defender products.
 For more information about the Microsoft 365 Defender DSM see the announcement on the [IBM QRadar blog](https://community.ibm.com/community/user/security/blogs/wendy-willner/2021/11/04/beyondthedsmguide-new-microsoft-365-defender-integ?CommunityKey=f9ea5420-0984-4345-ba7a-d93b4e2d4864).
 
