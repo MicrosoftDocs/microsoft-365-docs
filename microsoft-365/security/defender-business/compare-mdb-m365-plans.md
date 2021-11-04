@@ -72,7 +72,7 @@ The following table compares security features and capabilities in Defender for 
 | Partner APIs | Yes | Yes | Yes |
 | [Microsoft 365 Lighthouse integration](../../lighthouse/m365-lighthouse-overview.md) <br/>(For viewing security incidents across customer tenants) | Yes | No | No |
 
-(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or in Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))
+(<a id="fn1">1</a>) Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or with another tool, such as Microsoft Endpoint Manager ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))
 
 (<a id="fn1">2</a>) Optimized for small and medium-sized businesses
 
