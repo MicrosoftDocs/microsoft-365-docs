@@ -27,7 +27,7 @@ ms.technology: mde
 
 ## Conditional Access with Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
+Microsoft Defender for Endpoint on Android along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability through Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -45,6 +45,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 > Defender for Endpoint on Android would use a VPN in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 > For more information, see [Configure web protection on devices that run Android](/mem/intune/protect/advanced-threat-protection-manage-android).
 
+
 ## Configure vulnerability assessment of apps for BYOD devices
 
 From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, we have the capability to run vulnerability assessment of OS and apps installed on the onboarded mobile devices.
@@ -60,6 +61,7 @@ From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, we hav
 ### Configure privacy for device administrator mode
 
 Use the following steps to **enable vulnerability assessment of apps** from devices in **device administrator** mode for targeted users. 
+
 > [!NOTE]
 > By default, this is turned off for devices enrolled with device admin mode.
 
@@ -69,6 +71,7 @@ Use the following steps to **enable vulnerability assessment of apps** from devi
    - **Profile**: Select “Custom” and click Create
 
 2. In the **Basics** section, specify a name and description of the profile.
+
 3. In the **Configuration settings**, select Add **OMA-URI** setting:
 
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
@@ -92,6 +95,7 @@ Defender for Endpoint supports vulnerability assessment of apps in the work prof
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
 
+
 ## Configure privacy for malware threat report
 
 > [!NOTE]
@@ -99,7 +103,7 @@ Turning the above privacy controls on or off will not impact the device complian
 
 Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected. *This feature is currently only available for devices enrolled in **Android Device Administrator** mode.*
 
-Use the following steps to enable it for targeted users:
+Use the following steps to turn it on for targeted users:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
@@ -107,6 +111,7 @@ Use the following steps to enable it for targeted users:
    - **Profile**: Select “Custom” and click Create
 
 2. In the **Basics** section, specify a name and description of the profile.
+
 3. In the **Configuration settings**, select Add **OMA-URI** setting:
 
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
@@ -116,7 +121,7 @@ Use the following steps to enable it for targeted users:
 
 4. Click **Next** and assign this profile to targeted devices/users.
 
-Enabling the above privacy control, will not impact the device compliance check or conditional access, for example, devices with a malicious app will always have a risk level of "Medium".
+Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
 ## Related topics
 

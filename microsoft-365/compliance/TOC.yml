@@ -3,7 +3,11 @@
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
 - name: Compliance trials
-  href: compliance-easy-trials.md
+  items:
+    - name: About the free trial for Microsoft 365 compliance
+      href: compliance-easy-trials.md
+    - name: About the free trial for Microsoft Compliance Manager premium assessments
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -46,7 +50,7 @@
           href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an offensive language policy 
+        - name: Case study - Contoso quickly configures an inappropriate content policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
@@ -427,8 +431,12 @@
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
             - name: Facebook Business 
               href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
             - name: HR data 
               href: import-hr-data.md
             - name: ICE Chat
@@ -607,47 +615,6 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
-- name: Manage app governance
-  items: 
-    - name: Protect and govern your apps
-      href: app-governance-manage-app-governance.md
-    - name: Get Started with app governance
-      href: app-governance-get-started.md
-    - name: Submit feedback on app governance
-      href: app-governance-feedback.md
-    - name: Get visibility and insights
-      items:
-        - name: Learn about visibility and insights
-          href: app-governance-visibility-insights-overview.md
-        - name: Get started
-          href: app-governance-visibility-insights-get-started.md
-        - name: View your apps
-          href: app-governance-visibility-insights-view-apps.md
-        - name: Determine compliance posture
-          href: app-governance-visibility-insights-compliance-posture.md
-    - name: Implement app policies
-      items:
-        - name: Learn about app policies
-          href: app-governance-app-policies-overview.md
-        - name: Get started
-          href: app-governance-app-policies-get-started.md
-        - name: Create app policies
-          href: app-governance-app-policies-create.md
-        - name: Manage app policies
-          href: app-governance-app-policies-manage.md
-    - name: Detect and remediate app threats
-      items:
-        - name: Learn about detection and remediation
-          href: app-governance-detect-remediate-overview.md
-        - name: Get started
-          href: app-governance-detect-remediate-get-started.md
-        - name: Monitor and respond to apps with unusual data usage
-          href: app-governance-monitor-apps-unusual-data-usage.md
-        - name: Investigate anomaly detection alerts
-          href: app-governance-anomaly-detection-alerts.md
-        - name: Remediate app threats
-          href: app-governance-detect-remediate-detect-threats.md
-
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
@@ -751,6 +718,10 @@
             href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Partially indexed items
+            href: partially-indexed-items-in-content-search.md
+          - name: Investigating partially indexed items
+            href: investigating-partially-indexed-items-in-ediscovery.md
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: Export a search report
@@ -909,6 +880,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Set up historical versions
+              href: advanced-ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
             - name: Assign eDiscovery permissions

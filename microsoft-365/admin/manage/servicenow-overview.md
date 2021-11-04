@@ -23,7 +23,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 **Microsoft 365 support integration** enables you to integrate Microsoft 365 help, support, and service health with your ServiceNow instances. You can research Microsoft known and reported issues, resolve incidents, complete tasks by using Microsoft recommended solutions, and, if necessary, escalate to Microsoft human-assisted support.
 
-For the **Microsoft 365 support integration** app from the ServiceNow store, go to the [servicenow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+For the **Microsoft 365 support integration** app from the ServiceNow store, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
 ## Key features
 
@@ -31,15 +31,15 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 - Service Health Incidents: Information about known Microsoft service health incidents, including user impact, scope, current status, and next expected update. Using machine learning, ServiceNow incidents are matched to Microsoft service health incidents based on the short description field.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Service Health Incidents description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-1.png" alt-text="Service Health Incidents description field.":::
 
 - Recommended solutions: Descriptions of tasks and incidents are used to recommend precise targeted solutions and relevant articles from Microsoft powered by machine learning. You can also use Search to find other solutions, if needed.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-description-field-2.png" alt-text="Recommended solutions description field.":::
 
 - Microsoft service request: Escalate issues to Microsoft support agents and receive status updates for your case.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Service request form.":::
+    :::image type="content" source="../../media/ServiceNow-guide/servicenow-overview-service-request.png" lightbox="../../media/ServiceNow-guide/servicenow-overview-service-request.png" alt-text="Service request form.":::
 
 ## Prerequisites
 
@@ -85,8 +85,8 @@ Before setting up any configuration for Microsoft 365 support integration, revie
 
 Depending on your answers to the questions above, this table tells you what features are available and how to set up Microsoft 365 support integration. For a description of each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
-| **Question \#1 Answer** | **Question \#2 Answer** | **What features are available?** | **Configuration** |Steps                                                                                                        
+| Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration steps |
 |---------------------|---------------------|-----------|----------------|
-| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](#Xc56ef742879f24b4f205ff3b7bcda3f752d28e8) |
-| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](#Xfbb451f47bae5de35ad12405dab71231a7828d6)                 |
-| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](#Xc2a75b0640c41b98dccdcd5f17996cca3da8357)                    |
+| Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md) |
+| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token.md)                 |
+| No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](servicenow-service-health-incidents-solutions-only.md)                    |

@@ -9,7 +9,7 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
@@ -65,6 +65,3 @@ After you've received the required configuration details from Udemy portal by us
 
 >[!NOTE]
 >Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
-
->[!NOTE]
->Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to use the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.
