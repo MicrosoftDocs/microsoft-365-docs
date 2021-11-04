@@ -86,7 +86,7 @@ In order to get the data types for our events properties do the following:
 
 2. Run the following query to get the data types mapping for each event:
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
