@@ -210,14 +210,14 @@ Provides a 30-day timeline of detected audit and blocked events.
 Intro.
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules detections](images/asr-defender365-01.png)
+> ![Attack surface reduction rules detections tab](images/asr-defender365-01.png)
 
-Text.
+The Attack Surface reduction rules pane provides an overview of detected events on a per-rule basis.
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules detections](images/asr-defender365-01b.png)
+> ![Attack surface reduction rules rule detections](images/asr-defender365-01b.png)
 
-Text.
+Click **View detections** to open the **Detections** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction rules detections](images/asr-defender365-reports-detections.png)
@@ -268,10 +268,10 @@ In Endpoint security | Overview, select **Attack surface reduction**:
 > [!div class="mx-imgBorder"]
 > ![Attack surface reduction in MEM](images/asr-defender365-05b-mem2.png)
 
-The Endpoint Security | Attack surface reduction tool opens:
+The Endpoint Security | Attack surface reduction pane opens:
 
 > [!div class="mx-imgBorder"]
-> ![Endpoint security Asr tool](images/asr-defender365-05b-mem3.png)
+> ![Endpoint security Asr pane](images/asr-defender365-05b-mem3.png)
 
 >[!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Configurations](https://security.microsoft.com/asr?viewid=configuration) tab.
@@ -342,7 +342,6 @@ _Deployment phase 3 diagram_.
 4. Switch problematic rules back to Audit.
 
   >[!Tip]
-  >
   >When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access.
 
 #### How does Warn mode work?
@@ -388,13 +387,13 @@ Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool tha
 
 Through advanced hunting, it is possible to extract ASR rules information, create reports, and get in-depth information on the context of a given ASR rule audit or block event.
 
-ASR rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
+ You can query ASR rules events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting query](images/asr-defender365-advanced-hunting3.png)
+> ![Microsoft 365 Defender Advanced hunting query command line](images/asr-defender365-advanced-hunting3.png)
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting query registered](images/asr-defender365-advanced-hunting4.png)
+> ![Microsoft 365 Defender Advanced hunting query results](images/asr-defender365-advanced-hunting4.png)
 
 The above shows that 187 events were registered for AsrLsassCredentialTheft (102 for Blocked and 85 for Audited), 2 events for AsrOfficeChildProcess (1 for Audited and 1 for Block) and 8 events for AsrPsexecWmiChildProcessAudited.
 
@@ -404,7 +403,7 @@ If you want to focus on the AsrOfficeChildProcess rule, and get details on the a
 > ![Microsoft 365 Defender Advanced hunting query focused](images/asr-defender365-advanced-hunting4b.png)
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting query focused](images/asr-defender365-advanced-hunting5b.png)
+> ![Microsoft 365 Defender Advanced hunting query focused results](images/asr-defender365-advanced-hunting5b.png)
 
 The true benefit of advanced hunting is that you can shape the queries to your liking, so that you can see the exact story of what was happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
