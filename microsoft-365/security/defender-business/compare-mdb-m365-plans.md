@@ -53,6 +53,15 @@ The following table compares security features and capabilities in Defender for 
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 
+## Comparing Microsoft Defender for Business to Microsoft Defender for Endpoint
+
+The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
+
+| Feature/Capability | [Defender for Business](mdb-overview.md) | Defender for Endpoint Plan 1 | Defender for Endpoint Plan 2 |
+|:---|:---|:---|
+| item | yes/no | yes/no | yes/no |
+
+
 ## Next steps
 
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
