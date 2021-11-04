@@ -54,7 +54,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | | Block Office communication apps from creating child processes | |
 | | | Block Adobe Reader from creating child processes | | | |
 
-(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is not currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction#mem).
+(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is not currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
 
 ### Infrastructure requirements
 
@@ -214,7 +214,7 @@ Your new attack surface reduction policy for ASR rules is listed in **Endpoint s
 
 ### Step 2: Understand the Attack surface reduction rules reporting page in the Microsoft 365 Defender portal
 
-The ASR  rules reporting page is found in Microsoft 365 Defender portal > Reports > Attack surface reduction rules. This page has three tabs:
+The ASR  rules reporting page is found in **Microsoft 365 Defender portal** > **Reports** > **Attack surface reduction rules**. This page has three tabs:
 
 - Detections
 - Configuration
@@ -353,7 +353,7 @@ The implementation phase moves the ring from testing into functional state.
 4. Switch problematic rules back to Audit.
 
   >[!Tip]
-  >When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction#warn-mode-for-users).
+  >When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction.md#warn-mode-for-users).
 
 #### How does Warn mode work?
 
