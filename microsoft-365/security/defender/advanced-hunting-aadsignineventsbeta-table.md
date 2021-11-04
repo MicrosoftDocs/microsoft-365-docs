@@ -1,6 +1,6 @@
 ---
 title: AADSignInEventsBeta table in the advanced hunting schema
-description: Learn about information associated with Azure Active Directory sign-in events table of the advanced hunting schema
+description: Learn about the Azure Active Directory sign-in events table of the advanced hunting schema
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -26,12 +26,11 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
+> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. Customers need to have an Azure Active Directory Premium P2 license to collect and view activities for this table. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
 
-The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
 
-Use this reference to construct queries that return information from the table. For information on other tables in the advanced hunting schema, see [the advanced hunting
-reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+Use this reference to construct queries that return information from the table. For information on other tables in the advanced hunting schema, see the [advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
 <br>
 
@@ -42,10 +41,10 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 |`Timestamp`|datetime|Date and time when the record was generated|
 |`Application`|string|Application that performed the recorded action|
 |`ApplicationId`|string|Unique identifier for the application|
-|`LogonType`|string|Type of logon session, specifically interactive, remote interactive (RDP), network, batch, and service|
+|`LogonType`|string|Type of logon session, interactive, remote interactive (RDP), network, batch, and service|
 |`ErrorCode`|int|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
 |`CorrelationId`|string|Unique identifier of the sign-in event|
-|`SessionId`|string|Unique number assigned to a user by a website's server for the duration of the visit or session|
+|`SessionId`|string|Unique number assigned to a user by a website's server during the visit or session|
 |`AccountDisplayName`|string|Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.|
 |`AccountObjectId`|string|Unique identifier for the account in Azure AD|
 |`AccountUpn`|string|User principal name (UPN) of the account|
@@ -58,7 +57,7 @@ reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-h
 |`ResourceTenantId`|string|Unique identifier of the tenant of the resource accessed|
 |`DeviceName`|string|Fully qualified domain name (FQDN) of the machine|
 |`AadDeviceId`|string|Unique identifier for the device in Azure AD|
-|`OSPlatform`|string|Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7.|
+|`OSPlatform`|string|Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
 |`DeviceTrustType`|string|Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.|
 |`IsManaged`|int|Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0)|
 |`IsCompliant`|int|Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)|
