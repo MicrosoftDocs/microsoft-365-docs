@@ -185,7 +185,7 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Locations
 
-Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites.
+Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites. Use the following section for the locations that have configuration details and possible exceptions that you need to be aware of when you select them for your policy.
 
 ### Configuration information for Exchange email and Exchange public folders
 
@@ -211,7 +211,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
-When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
+When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Unless you are using [adaptive policy scopes](#exceptions-for-adaptive-policy-scopes), Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
 For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
@@ -225,6 +225,12 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
 > 
 > Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with the **User** scope type are better suited for this purpose.
+
+#### Exceptions for adaptive policy scopes
+
+When you configure a policy for retention that uses adaptive policy scopes and select the **SharePoint sites** location:
+
+- OneDrive sites and Microsoft 365 group-connected sites are included in addition to SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
 
 ### Configuration information for Microsoft 365 Groups
 
@@ -249,6 +255,16 @@ To return to the default value of both the mailbox and SharePoint site for the s
 When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Groups** location:
 
 - Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
+
+#### What happens if a Microsoft 365 group is deleted after a policy is applied
+
+After you've applied a policy for retention to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
+
+- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
+    
+    At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, open a [service request in the Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/support).
+
+- The mailbox for the deleted group becomes inactive and like the SharePoint site, remains subject to retention settings. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### Configuration information for Skype for Business
 
@@ -278,9 +294,9 @@ By choosing the settings for retaining and deleting content, your policy for ret
 
 ### Retaining content for a specific period of time
 
-When you configure a policy to retain content, you choose to retain items for a specific number of days, months, or years. Or alternatively, retain the items forever. The retention period is calculated from the age of the content, not from when the retention policy is applied.
+When you configure a retention label or policy to retain content, you choose to retain items for a specific number of days, months, or years. Or alternatively, retain the items forever. The retention period is not calculated from the time the policy was assigned, but according to the start of the retention period specified.
 
-For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
+For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified. For retention labels, you can start the retention period from the content was labeled, and when an event occurs.
 
 Examples:
 
@@ -296,7 +312,7 @@ At the end of the retention period, you choose whether you want the content to b
 
 A policy for retention can retain and then delete items, or delete old items without retaining them.
 
-In both cases, if your policy deletes items, it's important to understand that the time period you specify is calculated from the time when the item was created or modified, and not from the time the policy was assigned.
+In both cases, if your policy deletes items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
 For this reason, first consider the age of the existing content and how the policy may impact that content. You might also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact.
 

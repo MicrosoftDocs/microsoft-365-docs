@@ -15,9 +15,7 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -27,7 +25,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> The `AADSpnSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) service principal and managed identity sign-in events. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
+> The `AADSpnSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. Customers need to have an Azure Active Directory Premium P2 license to collect and view activities for this table. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
 
 The `AADSpnSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory service principal and managed identity sign-ins. You can learn more about the different kinds of sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
