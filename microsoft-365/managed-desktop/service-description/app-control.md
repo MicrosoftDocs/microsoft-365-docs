@@ -71,7 +71,21 @@ This policy blocks untrusted apps and scripts from running and creates logs when
 
 Devices in the Test group have an Audit policy applied so that you can use them to validate whether any applications will cause issues. All other groups (First, Fast, and Broad) use an Enforced policy, so users in those groups won't be able to run untrusted apps or scripts.
 
+## Understanding AppLocker rule condition types
 
+Rule conditions are criteria that the AppLocker rule is based on. Primary conditions are required to create an AppLocker rule. The three primary rule conditions are publisher, path, and file hash.
+
+**Publisher**
+
+To use a publisher condition, the files must be digitally signed by the software publisher, or you must do so by using an internal certificate. Rules that are specified to the version level might have to be updated when a new version of the file is released. For more info about this rule condition, see [Understanding the publisher rule condition in AppLocker](understanding-the-publisher-rule-condition-in-applocker.md).
+
+**Path**
+
+Any file can be assigned this rule condition; however, because path rules specify locations within the file system, any subdirectory will also be affected by the rule (unless explicitly exempted). For more info about this rule condition, see [Understanding the path rule condition in AppLocker](understanding-the-path-rule-condition-in-applocker.md).
+
+**File hash**
+
+Any file can be assigned this rule condition; however, the rule must be updated each time a new version of the file is released because the hash value is unique to that the version of the file. For more info about this rule condition, see [Understanding the file hash rule condition in AppLocker](understanding-the-file-hash-rule-condition-in-applocker.md).
 
 
 
