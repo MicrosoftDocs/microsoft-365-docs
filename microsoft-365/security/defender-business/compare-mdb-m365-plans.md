@@ -75,7 +75,7 @@ The following table compares security features and capabilities in Defender for 
 
 (<a id="fn1">1</a>) Optimized for small and medium-sized businesses
 
-(<a id="fn2">2</a>) During 
+(<a id="fn2">2</a>) During the preview program, Windows client devices are supported in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
 ## Next steps
 
