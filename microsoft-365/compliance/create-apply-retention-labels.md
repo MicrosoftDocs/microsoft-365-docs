@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -54,7 +55,7 @@ Where you create and configure your retention labels depend on whether you're us
 
 ### Step 1: Create retention labels
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to one of the following locations:
     
     - If you are using records management:
         - **Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**
@@ -84,7 +85,7 @@ To edit an existing label, select it, and then select the **Edit label** option 
 
 Publish retention labels so that they can be applied by users in apps, such as SharePoint and Outlook.
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to one of the following locations:
     
     - If you are using records management:
         - **Solutions** > **Records management** > > **Label policies** tab > **Publish labels**
