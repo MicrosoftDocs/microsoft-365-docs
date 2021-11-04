@@ -243,7 +243,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention applied automatically | Yes | Yes |
 |Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers, cloud attachments| No | Yes |
 |Retention applied manually | No | Yes |
-|End user interaction | No | Yes |
+|End-user interaction | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
@@ -413,7 +413,7 @@ The following examples are more complex to illustrate the principles of retentio
     
     **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period for the item. At the end of this retention period, the item is permanently deleted because of the delete action from the retention policies.
     
-    Although the two retention policies have different dates for the delete actions, the earliest the item can be permanently deleted is at the end of the longest retention period, which is longer than both deletion dates. 
+    Although the two retention policies have different dates for the delete actions, the earliest that the item can be permanently deleted is at the end of the longest retention period, which is longer than both deletion dates. 
 
 2.  An item has the following retention settings applied to it:
     
