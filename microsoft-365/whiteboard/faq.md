@@ -42,7 +42,7 @@ The behavior is as follows:
 
 For Azure-based content, global tenant administrators and anyone in the SharePoint administrators group can transfer boards. Administrators can use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to list whiteboards for a user and transfer one or all whiteboards to another user.
 
-This can be used to satisfy data subject requests (DSRs) for GDPR or in the case of accounts being removed. We recommend that during your account removal process, you use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to transfer a departing user’s boards to their manager or to another user.
+This can be used to satisfy data subject requests (DSRs) for General Data Protection Regulation (GDPR) or in the case of accounts being removed. We recommend that during your account removal process, you use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to transfer a departing user’s boards to their manager or to another user.
 
 For OneDrive for Business content, files can be moved in the same way as other content in OneDrive for Business. However, share links and permissions may not move.
 
