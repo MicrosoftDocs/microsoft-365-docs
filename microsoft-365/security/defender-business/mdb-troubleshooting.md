@@ -33,7 +33,7 @@ Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and
 To resolve policy conflicts, take one or more of the following actions:
 
 - Delete your existing policies in Microsoft Endpoint Manager
-- [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
+- See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
 ### Learn more about policy settings
 
