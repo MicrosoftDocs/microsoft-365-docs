@@ -86,8 +86,9 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 Supports table and JSON format output types. For each command, there's a default output behavior. You can modify the output in your preferred output format using the following commands:
 
--output json
--output table
+`-output json`
+
+`-output table`
 
 ### From the command line
 
