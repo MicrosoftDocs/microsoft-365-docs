@@ -30,17 +30,17 @@ An opt-in will be offered in late 2021. Starting in January 2022, new whiteboard
 
 The behavior is as follows: 
 
-New whiteboards will be created in the OneDrive for Business of the person who starts the whiteboard. This includes whiteboards created in the stand-alone Whiteboard applications as well as Microsoft Teams meetings, chats and channels.  
+- New whiteboards will be created in the OneDrive for Business of the person who starts the whiteboard. This includes whiteboards created in the stand-alone Whiteboard applications as well as Microsoft Teams meetings, chats and channels.  
 
-Previously created boards are fully functional and will remain in Azure until we offer migration options.  
+- Previously created boards are fully functional and will remain in Azure until we offer migration options.  
 
-Users without OneDrive for Business will no longer be able to create new whiteboards, though they can still edit their previously created boards. They can collaborate on any whiteboards that are shared with them by others. 
+- Users without OneDrive for Business will no longer be able to create new whiteboards, though they can still edit their previously created boards. They can collaborate on any whiteboards that are shared with them by others. 
 
-In future, we will provide storage for whiteboards in channels. 
+- In the future, we will provide storage for whiteboards in channels. 
 
 ## Does Whiteboard support transferring ownership of whiteboards?
 
-For Azure-based content, global tenant administrators and anyone in the SharePoint administrators group can transfer boards Administrators can use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to list whiteboards for a user and transfer one or all whiteboards to another user.
+For Azure-based content, global tenant administrators and anyone in the SharePoint administrators group can transfer boards. Administrators can use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to list whiteboards for a user and transfer one or all whiteboards to another user.
 
 This can be used to satisfy data subject requests (DSRs) for GDPR or in the case of accounts being removed. We recommend that during your account removal process, you use the [PowerShell cmdlets](https://docs.microsoft.com/powershell/whiteboard/?view=whiteboard-ps) to transfer a departing user’s boards to their manager or to another user.
 
