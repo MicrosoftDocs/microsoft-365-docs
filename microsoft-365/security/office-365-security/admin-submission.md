@@ -83,8 +83,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
    > [!div class="mx-imgBorder"]
    > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
 
-The reported message will be marked as either false positive or false negative, and an email will be automatically sent from within the portal notifying the user who reported the message.
-
+The reported message will be marked as either false positive or false negative and an email will be sent automatically from within the portal to notify the user who reported the message.
 
 ### Submit a questionable email to Microsoft
 
