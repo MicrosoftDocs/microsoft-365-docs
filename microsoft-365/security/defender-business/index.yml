@@ -33,6 +33,8 @@ landingContent:
             url: compare-mdb-m365-plans.md
           - text: The simplified configuration process
             url: mdb-simplified-configuration.md
+          - text: How to get help or contact support
+            url: mdb-get-help.md
           - text: Frequently asked questions
             url: mdb-faq.md
 
