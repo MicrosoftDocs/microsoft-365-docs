@@ -34,9 +34,6 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## Part 1: Identify your security and device management path
 
-> [!NOTE]
-> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
-
 Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
 <br/><br/>
 
