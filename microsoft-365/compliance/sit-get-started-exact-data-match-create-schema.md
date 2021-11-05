@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 You can create the schema and EDM SIT by using the [Use the exact data match schema and sensitive information type pattern wizard](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) or [manually](#create-exact-data-match-schema-manually-and-upload). You can also combine both by using one method to create the schema and later edit it using the other method.
 
-If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
+If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
 
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
@@ -43,9 +43,9 @@ which would match every individual word or number in any document or email. This
 
 **Phone numbers**: Phone numbers can come in many different formats, including or excluding country prefixes, area codes, and separators. To reduce the false negatives while keeping load to a minimum, use them only as secondary elements, exclude all likely separators, like parenthesis and dashes and only include in your sensitive data table the part that will be always present in the phone number.
 
-**Persons names**: Don’t use person’s names as primary elements if using a sensitive information type based on a regular expression as the classification element for this EDM type, because they are difficult to distinguish from common words. If you use them as primary elements, persons names should be separated into first, last, and middle names.
+**Person's names**: Don’t use person’s names as primary elements if using a sensitive information type based on a regular expression as the classification element for this EDM type, because they are difficult to distinguish from common words. 
 
-If you must use a primary element that is hard to identify with a specific pattern, like a project code name or could generate lots of matches to be processed, make sure you include keywords in the sensitive information type you use as the classification element for your EDM type. For example, if using project code names that may be regular words, you can use the word `project` as required additional evidence in close proximity to the project name regular expression-based pattern in the sensitive type used as the classification element for your EDM type. Or you might consider using a sensitive type based on a regular dictionary as the classification element for your EDM SIT.
+If you must use a primary element that is hard to identify with a specific pattern, like a project code name that could generate lots of matches to be processed, make sure you include keywords in the sensitive information type you use as the classification element for your EDM type. For example, if using project code names that may be regular words, you can use the word `project` as required additional evidence in close proximity to the project name regular expression-based pattern in the sensitive type used as the classification element for your EDM type. Or you might consider using a sensitive type based on a regular dictionary as the classification element for your EDM SIT.
 
 When trying to match numeric strings, specify the allowed ranges of numbers such as the number of digits or the starting digits, if known. If you need to match a relatively flexible range of numbers you can use keywords in the base SIT to reduce the number of matches. For example, if trying to match account numbers consisting of 7-11 digits, add the words `account`, `customer`, `acct.` to the SIT as required additional evidence. This reduces the likelihood of unnecessary matches that could cause exceeding the limits of matches to be processed by EDM.
 
@@ -105,7 +105,7 @@ You can use this wizard to help simplify the schema file creation process.
 6. Choose **Save**. Your schema will now be listed and available for use.
 
 > [!IMPORTANT]
-> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema.
+> If you want to remove a schema, and it is already associated with an EDM sensitive info type, you must first delete the EDM sensitive info type, then you can delete the schema. Deleting a schema that has a data store associated with it also deletes the data store within 24 hours. 
 
 ## Export of the EDM schema file in XML format
 
@@ -119,13 +119,6 @@ If you created the EDM schema in the EDM schema wizard, you must export the EDM 
 $Schema = Get-DlpEdmSchema -Identity "[your EDM Schema name]"
 Set-Content -Path ".\Schemafile.xml" -Value $Schema.EdmSchemaXML
 ```
-
-<!--3. If you used the Exact Data Match schema wizard to create your schema and didn’t export the schema as a file in XML format, use the EDM Upload Agent to download the schema use this cmdlet:
-
-```powershell
-EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>
-``` -->
-
 3. Save this file for later use.
 
 ## Create exact data match schema manually and upload
@@ -210,7 +203,7 @@ The `ignoredDelimiters` flag doesn't support:
       </EdmSchema>
       ```
 
-Once you have created the EDM schema file in XML formate, you have to upload it to the cloud service. 
+Once you have created the EDM schema file in XML format, you have to upload it to the cloud service. 
 
 2. Connect to the Security & Compliance Center PowerShell using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

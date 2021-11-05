@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 You can create the exact data match (EDM) sensitive information type (SIT) by using the [the EDM schema and SIT wizard](#use-the-edm-schema-and-sit-wizard) in the Compliance center or create the rule package XML file [manually](#create-a-rule-package-manually). You can also combine both by using one method to create the schema and later edit it using the other method.
 
-If you are not familiar with EDM based SITS or there implementation, you should familiarize yourself with:
+If you are not familiar with EDM based SITS or their implementation, you should familiarize yourself with:
 
 - [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
@@ -37,7 +37,7 @@ An EDM Sensitive Information type is composed of one or more patterns. Each patt
 
 ## Pre-requisites
 
-Perform the steps in:
+Perform the steps in these articles:
 
 1. [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type)
 2. [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
