@@ -26,6 +26,7 @@ The resources in this section help you learn more about what Microsoft Whiteboar
 |:-----|:-----|
 |Learn how to get Microsoft Whiteboard|[Microsoft Whiteboard product page](https://www.microsoft.com/en-us/microsoft-365/microsoft-whiteboard/digital-whiteboard-app)|
 |Find resources in the Microsoft Tech Community Resource Center|[Microsoft 365 Whiteboard blog](https://techcommunity.microsoft.com/t5/microsoft-365-blog/bg-p/microsoft_365blog/label-name/Microsoft%20Whiteboard)|
+|Watch videos to explore helpful tips|[Microsoft 365 Whiteboard blog](https://www.youtube.com/c/MicrosoftWhiteboard/videos/Microsoft%20Whiteboard)|
 |Find Microsoft Whiteboard guidance for end users|[Microsoft Whiteboard help](https://support.microsoft.com/en-us/office/microsoft-whiteboard-help-d236aef8-fcdf-4b5e-b5d7-7f157461e920)|
 
 ## Setup and management
