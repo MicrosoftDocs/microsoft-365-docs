@@ -79,7 +79,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 As described earlier, quarantine notifications in quarantine policies replace end-user spam notifications that you used to turn on or turn off in anti-spam policies. The built-in quarantine policy named DefaultFullAccessPolicy duplicates the historical _permissions_ for quarantined messages, but _quarantine notifications_ are not turned on in the quarantine policy. And, because you can't modify the built-in policy, you can't turn on quarantine notifications in DefaultFullAccessPolicy.
 
-To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned).
+To provide the permissions of DefaultFullAccessPolicy but with quarantine notifications turned on, we created the policy named NotificationEnabledPolicy to use in place of DefaultFullAccessPolicy for those organizations that needed it (organizations where end-user spam notifications were turned on).
 
 For new organizations or older organizations that never had end-user spam notifications enabled in anti-spam policies, you won't have the quarantine policy named NotificationEnabledPolicy. The way for you to turn on quarantine notifications is to create and use custom quarantine policies where quarantine notifications are turned on.
 
