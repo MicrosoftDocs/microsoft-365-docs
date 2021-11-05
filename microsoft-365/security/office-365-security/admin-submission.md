@@ -78,7 +78,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 2. Select **User reported messages**, and then select the message you want to mark and notify.
 
-3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.
+3. Select the **Mark as and notify** drop-down, and then select **No threats found** > **Phishing** or **Junk**.
 
    > [!div class="mx-imgBorder"]
    > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
