@@ -27,11 +27,12 @@ After you have onboarded your company's devices to Microsoft Defender for Busine
 
 ## What to do
 
-1. 
+1. [Choose where to manage your security settings and policies](#choose-where-to-manage-your-security-settings-and-policies).
+2. [View your security settings and policies](#view-your-security-settings-and-policies). 
 
 ## Choose where to manage your security settings and policies
 
-You can choose from several options, as described in the following table: <br/><br/>
+When it comes to managing your security settings and policies, you can choose from several options, as described in the following table: <br/><br/>
 
 | Option | Description |
 |:---|:---|
@@ -43,7 +44,13 @@ You can choose from several options, as described in the following table: <br/><
 
 ## View your security settings and policies
 
+To view your security settings and policies, use one of the procedures in the following table:
+<br/><br/>
 
+| Portal | Procedure |
+|:---|:---|
+| Microsoft 365 Defender portal |  |
+| Microsoft Endpoint Manager |  |
 
 ## Next steps
 
