@@ -2,8 +2,6 @@
 title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -51,7 +49,7 @@ ms.technology: m365d
 In addition to the above, there is also an option to [collect the analyzer support logs using live response.](troubleshoot-collect-support-log.md).
 
 > [!NOTE]
-> On windows 10, Windows Server 2019 or later OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
+> On Windows 10, Windows Server 2019 or later OS editions, or Windows 11, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
 >
 > On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 

@@ -85,7 +85,7 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 1. Run the Update-SPODataEncryptionPolicy cmdlet as follows:
   
    ```powershell
-   Update-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
+   Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
 
    While this cmdlet starts the key roll operation for SharePoint Online and OneDrive for Business, the action doesn't complete immediately.
@@ -93,7 +93,7 @@ SharePoint Online only allows you to roll one key at a time. If you want to roll
 2. To see the progress of the key roll operation, run the Get-SPODataEncryptionPolicy cmdlet as follows:
 
    ```powershell
-   Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
+   Get-SPODataEncryptionPolicy  <SPOAdminSiteUrl>
    ```
 
 ## Related articles
