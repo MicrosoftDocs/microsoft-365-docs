@@ -29,7 +29,7 @@ Whether you have assistance or are doing it yourself, use this article as a guid
 
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
-<br/><br/>
+<br/>
 
 | Step  | Article | Description  |
 |---------|---------|--------|
