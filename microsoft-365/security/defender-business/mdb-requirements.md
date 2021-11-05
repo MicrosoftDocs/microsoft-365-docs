@@ -27,7 +27,7 @@ This article describes the requirements for Microsoft Defender for Business.
 
 ## What to do
 
-1. [Review the requirements](#review-the-requirements) and make sure you meet them.
+1. [Review the requirements and make sure you meet them](#review-the-requirements).
 2. [Proceed to your next steps](#next-steps).
 
 ## Review the requirements
