@@ -25,9 +25,6 @@ ms.collection:
 
 Microsoft Defender for Business is designed with the busy small and medium-sized business in mind. For example, Defender for Business can detect whether you are already using Microsoft Endpoint Manager, and will prompt you to choose between automatic or manual onboarding. You can also opt to onboard devices gradually.
 
-> [!NOTE]
-> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
-
 ## What to do
 
 - [Part 1: Identify your security and device management path](#part-1-identify-your-security-and-device-management-path)
@@ -36,6 +33,9 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 - [Learn how to onboard devices in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-the-microsoft-365-defender-portal) 
 
 ## Part 1: Identify your security and device management path
+
+> [!NOTE]
+> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to onboard devices after you have [set up email notifications for your security team](mdb-email-notifications.md). 
 
 Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
 <br/><br/>
