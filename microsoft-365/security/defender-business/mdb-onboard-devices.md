@@ -30,7 +30,7 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 1. [Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
 2. [Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).
 3. [Choose a deployment method](#part-3-choose-a-deployment-method).
-4. [See how onboarding works in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-the-microsoft-365-defender-portal).
+4. [See how onboarding works in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
 5. [Proceed to your next steps](#next-steps). 
 
 ## Part 1: Identify your security and device management path
@@ -75,7 +75,7 @@ You can choose from several deployment methods in Defender for Business, as desc
 > [!TIP]
 > If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method.
 
-## How to onboard devices in the Microsoft 365 Defender portal
+## Onboarding devices in the Microsoft 365 Defender portal
 
 The following video outlines the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business. <br/><br/>
 
