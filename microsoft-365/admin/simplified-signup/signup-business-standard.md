@@ -18,9 +18,14 @@ description: "Purchase Microsoft 365 Business Standard and set up your organizat
 
 # Sign up for a Microsoft 365 Business Standard subscription
 
+Want to sign up for a Microsoft 365 Business Standard or Microsoft 365 Apps for Business subscription?
+
 There are a couple of ways to get Microsoft 365 Business Standard:
 - **[Buy](https://go.microsoft.com/fwlink/?linkid=2109397) Microsoft 365 Business Standard and complete your own setup**: To purchase Microsoft 365 Business Standard, [follow the steps below](#sign-up-steps).
 - **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](../../business/get-microsoft-365-business.md).
+
+> [!IMPORTANT]
+> Microsoft 365 Business Standard and Microsoft 365 Apps for Business subscriptions are for commercial use and are intended for business and enterprise customers.
 
 **Need something different?** You can:
 
@@ -42,13 +47,31 @@ To sign up and purchase Microsoft 365 Business Standard (or Microsoft 365 Apps) 
     > [!IMPORTANT]
     > If you add a custom domain as part of signing up, the company name you enter here will be used in all your SharePoint and OneDrive URLs. You might not be able to change it, so make sure it's spelled correctly and that it's the name you want to use from a branding perspective. Your company name also appears in the admin center, where you manage Microsoft 365 users, licenses, and other features and services.
     > 
-    > Your country or region determines the exact services you receive from Microsoft, and can't be changed after you complete this step. 
+    > Your country or region determines the exact services you receive from Microsoft, and can't be changed after you complete this step.
 
 6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**.
 
    You'll receive a text. Enter your code and select **Verify**.
 
 7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
+
+## Choose how to sign up
+
+When signing up for Microsoft 365 Business Standard or Microsoft 365 Apps for Business, you have 2 options for how to get started. Evaluate three key factors to choose which best meets your needs:
+
+- Which apps and services do you want to use straight away?
+
+- How much technical skill do you have?
+
+- Do you need Microsoft to act as a processor for your data?
+
+The table below outlines each choice.
+
+||**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account|**Option 2** – Add a business domain and create a new business email account |
+|:-----|:-----|:-----|
+|Available apps and services  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.  You’ll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Microsoft 365 Business Standard with Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings Shared document storage and SharePoint sites Microsoft Planner and Microsoft Lists Microsoft 365 Business Standard and Apps for Business offer additional services with Option 2: Easier document sharing within your business Support for the compliance needs for your industry Access and control over your employees’ use of services The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
+|Required knowledge  <br/> |Let’s you get started without technical know-how.  <br/> |Requires you to buy a domain, or to own a domain.  You may need technical knowledge to prove ownership of the domain. <br/> |
+|Data handling  <br/> |Available under the Supplement to the Microsoft Services Agreement https://ssu.office.com/terms/en-US/smb_eula.txt and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the Microsoft Privacy Statement https://go.microsoft.com/fwlink/?LinkId=521839. Subscribers to services using this option will not have access to an individual’s user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly.  Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later  <br/> |Available under the Microsoft Online Subscription Agreement https://portal.office.com/Commerce/Mosa.aspx and is best for businesses that need Microsoft to act as a processor for their data under our Data Protection Addendum  https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement. <br/> |
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
