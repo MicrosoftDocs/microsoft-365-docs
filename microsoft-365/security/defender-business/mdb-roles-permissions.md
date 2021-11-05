@@ -31,11 +31,6 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 2. [View or edit role assignments](#view-or-edit-role-assignments)
 3. [Proceed to your next steps](#next-steps) 
 
-> [!NOTE]
-> If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
-
-:::image type="content" source="media/mdb-grant-access.png" alt-text="Screenshot of granting people access to Defender for Business.":::
-
 ## Roles in Defender for Business
 
 The following table describes the three roles that can be assigned in Defender for Business. [Learn more about admin roles](../../admin/add-users/about-admin-roles.md). <br/><br/>
@@ -49,8 +44,10 @@ The following table describes the three roles that can be assigned in Defender f
 
 ## View or edit role assignments
 
-> [!IMPORTANT]
-> Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
+> [!NOTE]
+> If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
+
+:::image type="content" source="media/mdb-grant-access.png" alt-text="Screenshot of granting people access to Defender for Business.":::
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -61,6 +58,9 @@ The following table describes the three roles that can be assigned in Defender f
    - Global administrator
    - Security administrator
    - Security reader
+
+   > [!IMPORTANT]
+   > Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
 
 4. In the side pane, select the **Manage members in Azure AD** link. This action takes you to Azure Active Directory (Azure AD) where you can view and manage your role assignments.
 
