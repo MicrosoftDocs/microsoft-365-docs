@@ -18,7 +18,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
-description: "Admins can learn about the terms of use for the Microsoft Defender for Office 365 trial"
+description: "Admins can learn about the terms of use for the Microsoft Defender for Office 365 trial."
 ---
 
 # Microsoft Defender for Office 365 Trial Terms & Conditions
