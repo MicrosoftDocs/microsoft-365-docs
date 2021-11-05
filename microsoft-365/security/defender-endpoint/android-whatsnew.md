@@ -36,7 +36,9 @@ Microsoft Defender for Endpoint is mandated by [Google](https://developer.androi
 
 **How will this affect your organization:**
 
-These changes will take affect, if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender to release build 1.0.3501.0301 or later. This setting is not configurable by admin through Microsoft Endpoint Manager; users will need to take action due to the above mentioned Google API changes.
+These changes will take affect, if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender to release build 1.0.3501.0301 or later.
+>[!NOTE]
+> The new storage permissions cannot be configured by admin to 'Auto Approve' through Microsoft Endpoint Manager. User will need to take action to provide access to this permission.
 
 - **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the ‘App security’ functionality will be turned off on the device. If user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app, until it has been approved.
 
