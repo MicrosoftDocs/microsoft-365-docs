@@ -93,6 +93,8 @@ The procedure to remove an inactive mailbox from a Microsoft 365 retention polic
 
 - Specific location retention policies assigned to specific mailboxes. These are policies that are assigned to the content locations of specific users. Use the **Get-Mailbox -IncludeInactiveMailbox** cmdlet in Exchange Online PowerShell to get information about retention policies assigned to specific inactive mailboxes.
 
+For more information about releasing a retention policy that's applied to an inactive mailbox, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
+
 #### Remove an inactive mailbox from an organization-wide retention policy
 
 Run the following command in Exchange Online PowerShell to exclude an inactive mailbox from an organization-wide retention policy.
@@ -121,7 +123,7 @@ For more information identifying specific location retention policies applied to
 
 ### Remove In-Place Holds
 
- There are two ways to remove an In-Place Hold from an inactive mailbox: 
+ There are two ways to remove an In-Place Hold from an inactive mailbox:
   
 - **Delete the In-Place Hold object**. If the inactive mailbox that you want to permanently delete is the only source mailbox for an In-Place Hold, you can just delete the In-Place Hold object. 
 
