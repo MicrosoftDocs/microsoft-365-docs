@@ -22,7 +22,7 @@ f1.keywords: NOCSH
 
 You can set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
 
-**What to do**:
+## What to do
 
 1. [Learn about types of email notifications](#types-of-email-notifications)
 2. [View and edit email notification settings](#view-and-edit-email-notifications)
