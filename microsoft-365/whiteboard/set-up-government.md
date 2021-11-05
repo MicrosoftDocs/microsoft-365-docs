@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
-description: Learn how to set up Microsoft Whiteboard for US Goverment - GCC.
+description: Learn how to set up Microsoft Whiteboard for US Government - GCC.
 
 ---
 
