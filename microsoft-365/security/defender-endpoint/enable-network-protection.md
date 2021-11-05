@@ -82,7 +82,7 @@ Enable network protection by using any of these methods:
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-### Microsoft Endpoint Manager (formerly Intune)
+### Microsoft Endpoint Manager
 
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
