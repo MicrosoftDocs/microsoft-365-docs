@@ -25,5 +25,5 @@
         - name: Manage sharing
           href: manage-sharing.md           
         - name: Data retention
-          href: date-retention-odb.md
+          href: data-retention-odb.md
 
