@@ -50,11 +50,13 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules | Misc rules | Email rules | Script rules |
 |:---|:---|:---|:---|:---|:---|
 | Block executable files from running unless they meet a prevalence (1000 machines), age (24 hrs), or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>   | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code |
-| Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe) | Block Office apps from creating child processes | | Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content |
+| Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Block Office apps from creating child processes | | Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content |
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | | Block Office communication apps from creating child processes | |
 | | | Block Adobe Reader from creating child processes | | | |
 
 (<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is not currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
+
+(<a id="fn1">2</a>) Some ASR rules generate a lot of noise, but will not block functionality. For example, for example, if you are updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass. If you enable the rule to block access to lsass it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating. This is also true of other applications that make unnecessary calls to lsass.exe. This rule will block unnecessary calls to lsass, but will not block the application from running.
 
 ### Infrastructure requirements
 
@@ -205,7 +207,7 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
    > [!div class="mx-imgBorder"]
-   > ![Activate ASR rules policy](images/asr-mem-create-profile.png)
+   > ![Activate ASR rules policy](images/asr-mem-review-create.png)
 
 Your new attack surface reduction policy for ASR rules is listed in **Endpoint security | Attack surface reduction**.
 
@@ -322,7 +324,7 @@ Because ASR rules target a broad array of components, and those components will 
 In many cases, an organization has files, or folders of files, for example that are known to be safe, and which might contain aspects that would trigger an ASR rule; audit mode will reveal such files and folders. For example, your organization might have a collection of Word or Excel documents that have macros enabled for specific purposes; such macros can trigger an ASR rule. In such cases, if audit mode identifies such files, you want to exclude these files or folders to prevent them from being captured by ASR rules. See [Exclude files and folders](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules)
 
 >[!Note]
->Keep in mind that Microsoft Defender Antivirus AV exclusions are honored by ASR rules.  See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+>Keep in mind that Microsoft Defender Antivirus AV exclusions are honored by ASR rules. See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 If you determine a rule will broadly impact line-of-business operations in a detrimental way, you can disable the rule entirely, or you can leave the rule in audit so that you can continue to capture and evaluate those ASR rule-triggered events.
 Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **Attack surface reduction rules**. Simply select the entity or entities for which you want to create an exclusion.
@@ -353,6 +355,9 @@ The implementation phase moves the ring from testing into functional state.
 2. Review the reporting page in the Microsoft 365 Defender portal; see [Threat protection report in Microsoft Defender for Endpoint](threat-protection-reports.md). Also review feedback from your ASR champions.
 3. Refine exclusions or create new exclusions as determined necessary.
 4. Switch problematic rules back to Audit.
+
+  >[!Note]
+  >For problematic rules (rules creating too much noise), it is better to create exclusions than to turn rules off or switching back to Adit. You will have to determine what is best for your environment.
 
   >[!Tip]
   >When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction.md#warn-mode-for-users).
@@ -421,3 +426,57 @@ If you want to focus on the AsrOfficeChildProcess rule, and get details on the a
 The true benefit of advanced hunting is that you can shape the queries to your liking, so that you can see the exact story of what was happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
 For additional information about additional hunting options, see: [Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
+
+## Refrence
+
+### Blogs
+
+[Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420)
+
+[Demystifying attack surface reduction rules - Part 2](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-2/ba-p/1326565)
+
+[Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968)
+
+[Demystifying attack surface reduction rules - Part 4](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-4/ba-p/1384425)
+
+### ASR collection
+
+[Overview of attack surface reduction](overview-attack-surface-reduction.md)
+
+[Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
+
+[Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+
+[Attack surface reduction rules](attack-surface-reduction-rules.md)
+
+[Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
+
+### Microsoft Defender
+
+[Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+
+[Cloud-delivered protection and Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
+
+[Turn on cloud-delivered protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md)
+
+[Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+
+[Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
+
+[Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory)
+
+[Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
+
+[Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags)
+
+[Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+
+### Management sites
+
+[Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/#home)
+
+[Attack surface reduction](https://security.microsoft.com/asr?viewid=detections)
+
+[ASR rules Configurations](https://security.microsoft.com/asr?viewid=configuration)
+
+[ASR rules Exclusions](https://security.microsoft.com/asr?viewid=exclusions)
