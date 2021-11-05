@@ -27,9 +27,9 @@ To perform tasks in the Microsoft 365 Defender portal, such as configuring Micro
 
 ## What to do
 
-1. [Learn about roles in Defender for Business](#roles-in-defender-for-business)
-2. [View or edit role assignments](#view-or-edit-role-assignments)
-3. [Proceed to your next steps](#next-steps) 
+1. [Learn about roles in Defender for Business](#roles-in-defender-for-business).
+2. [View or edit role assignments](#view-or-edit-role-assignments).
+3. [Proceed to your next steps](#next-steps).
 
 ## Roles in Defender for Business
 
