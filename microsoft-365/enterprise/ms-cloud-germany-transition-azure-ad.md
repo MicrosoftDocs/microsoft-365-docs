@@ -22,7 +22,15 @@ description: "Summary: Additional Azure Active Directory information when moving
 
 # Additional Azure Active Directory information for the migration from Microsoft Cloud Deutschland
 
-To complete the move from the Azure German cloud to the Azure public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/<TenantIdOrDomain>/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
+> [!WARNING]
+> **Azure Active Directory (Azure AD) Graph is deprecated**. To avoid loss of functionality, migrate your applications in Azure public cloud to Microsoft Graph before June 30, 2022 when Azure AD Graph API endpoints will stop responding to requests.
+>
+> Microsoft will continue technical support and apply security fixes for Azure AD Graph until June 30, 2022 when all functionality and support will end. If you fail to migrate your applications to Microsoft Graph before June 30, 2022, you put their functionality and stability at risk.
+> 
+>**Update your Azure AD Graph apps to use Microsoft Graph now.**
+
+
+To complete the move from the Azure German cloud to the Azure public cloud we recommend that the authentication endpoint, Azure Active Directory (Azure AD) Graph, and MS Graph endpoints for your applications be updated to those of the commercial cloud when the OpenID Connect (OIDC) endpoint, `https://login.microsoftonline.com/\<TenantIdOrDomain\>/.well-known/openid-configuration`, starts reporting commercial cloud endpoints. 
  
 **When should I make this change?**
 
@@ -75,10 +83,6 @@ An application could be any of the following:
 **What about applications that I publish?**
 
 If you publish an application that is available to users who are outside of your tenant, you may need to change your application registration to ensure continuity. Other tenants that use your application may be moved at a different time than your tenant. To ensure that they never lose access to your application, you'll need to consent to your app being synchronized from Azure Germany to Azure public.
-
-**What about adding new multi-tenant applications during migration?**
-
-If you want to consume a new application that is published by another organization (multi-tenant application) you will be restricted from adding that application during the migration process (phases 2 through phase 9).  You may execute this task when your organization completes phase 9 and is fully transitioned to the Azure public instance.
 
 ## Additional considerations
 
@@ -138,3 +142,4 @@ Cloud apps:
 - [Dynamics 365 migration program information](/dynamics365/get-started/migrate-data-german-region)
 - [Power BI migration program information](/power-bi/admin/service-admin-migrate-data-germany)
 - [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here)
+- 

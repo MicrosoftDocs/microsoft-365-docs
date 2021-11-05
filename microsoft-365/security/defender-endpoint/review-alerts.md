@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: daniha
+ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
