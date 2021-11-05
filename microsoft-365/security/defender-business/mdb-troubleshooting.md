@@ -35,6 +35,13 @@ To resolve policy conflicts, take one or more of the following actions:
 - Delete your existing policies in Microsoft Endpoint Manager
 - [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
+### Learn more about policy settings
+
+See the following articles to learn more about your security policies and settings in Defender for Business:
+
+- [Understand next-generation configuration settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md)
+- [Firewall settings in Microsoft Defender for Business](mdb-firewall.md)
+
 ## My setup and configuration process failed
 
 If you were using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
