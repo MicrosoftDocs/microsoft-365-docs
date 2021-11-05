@@ -20,12 +20,13 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
+
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows 8.1 Pro
@@ -36,22 +37,15 @@ ms.technology: mde
 
 Defender for Endpoint extends support to include down-level operating systems, providing advanced attack detection and investigation capabilities on supported Windows versions.
 
-
-
 To onboard down-level Windows client endpoints to Defender for Endpoint, you'll need to:
-
 
 - [Configure and update System Center Endpoint Protection clients](#configure-and-update-system-center-endpoint-protection-clients)
 - [Install and configure Microsoft Monitoring Agent (MMA) to report sensor data](#install-and-configure-microsoft-monitoring-agent-mma)
 
-
-For Windows Server 2008 R2 SP1, you have the option of [onboarding through Microsoft Defender for Cloud](#onboard-windows-servers-through-azure-defender).
-
+For Windows Server 2008 R2 SP1, you have the option of [onboarding through Microsoft Defender for Cloud](#onboard-windows-servers-through-microsoft-defender-for-cloud).
 
 > [!NOTE]
 > Defender for Endpoint standalone server license is required, per node, in order to onboard a Windows server through Microsoft Monitoring Agent (Option 1). Alternatively, a Microsoft Defender for servers license is required, per node, in order to onboard a Windows server through Microsoft Defender for Cloud (Option 2), see [Supported features available in Microsoft Defender for Cloud](/azure/security-center/security-center-services).
-
-
 
 > [!TIP]
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
@@ -69,7 +63,7 @@ The following steps are required to enable this integration:
 - Configure the SCEP client Cloud Protection Service membership to the **Advanced** setting
 - Configure your network to allow connections to the Microsoft Defender Antivirus cloud. For more information, see [Configure and validate Microsoft Defender Antivirus network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)
 
-## Install and configure Microsoft Monitoring Agent (MMA) 
+## Install and configure Microsoft Monitoring Agent (MMA)
 
 ### Before you begin
 
@@ -89,7 +83,6 @@ Review the following details to verify minimum system requirements:
     > Don't install .NET Framework 4.0.x, since it will negate the above installation.
 
 - Meet the Azure Log Analytics agent minimum system requirements. For more information, see [Collect data from computers in you environment with Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
-
 
 ### Installation steps
 
@@ -125,7 +118,6 @@ If your servers need to use a proxy to communicate with Defender for Endpoint, u
 If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
-
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 

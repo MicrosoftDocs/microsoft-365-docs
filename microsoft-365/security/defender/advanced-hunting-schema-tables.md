@@ -26,15 +26,18 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
+
 - Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about devices, alerts, identities, and other entity types. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
-## Get schema information in the Defender for Cloud
+<a name="get-schema-information-in-the-security-center"></a>
+
+## Get schema information
+
 While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
 
 - **Tables description**—type of data contained in the table and the source of that data.

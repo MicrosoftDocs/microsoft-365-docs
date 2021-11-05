@@ -31,6 +31,8 @@ If you are not already a Microsoft 365 customer, you can sign up for a free tria
 
 To purchase a subscription of app governance, please reach out to your sales account team.
 
+<a name="add-integration-with-mcas"></a>
+
 ## Add integration with Defender for Cloud Apps
 
 Prerequisites:
@@ -115,6 +117,6 @@ If you did not participate in private preview and would like to cancel your tria
 
 ## Known issues for the public preview
 
-The app governance team has identified the following known issues for the preview: 
+The app governance team has identified the following known issues for the preview:
 
 - 2-way sync between Microsoft 365 Defender and app governance alerts – currently alerts resolved in Microsoft 365 Defender must be manually resolved in app governance as well.
