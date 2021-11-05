@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/01/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -38,4 +38,4 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 Proceed to:
 
-- [Setup and configuration for Microsoft Defender for Business](mdb-setup-configuration.md)
+- [Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md)
