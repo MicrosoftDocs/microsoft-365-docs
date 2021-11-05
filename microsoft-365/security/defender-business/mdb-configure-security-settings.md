@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/28/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -29,8 +29,8 @@ After you have onboarded your company's devices to Microsoft Defender for Busine
 
 | Option | Description |
 |:---|:---|
-| Use the default security settings and policies in Microsoft Defender for Business (recommended) | Defender for Business was designed for the busy small or medium-sized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one. <br/><br/>To learn more, see [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md). |
-| Use Microsoft Endpoint Manager (MEM) | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business. |
+| **Use the default security settings and policies in Microsoft Defender for Business** (recommended) | Defender for Business was designed for the busy small or medium-sized business in mind. You can use the default security settings and policies that are preconfigured to protect your company's devices from day one. <br/><br/>To learn more, see [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md). |
+| **Use Microsoft Endpoint Manager** | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>You can also opt to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). In this case, you'll be prompted to delete existing security policies in MEM before using the simplified configuration process in Defender for Business. |
 
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
