@@ -24,6 +24,6 @@
           href: manage-clients.md
         - name: Manage sharing
           href: manage-sharing.md           
-        - name: Data retention
-          href: data-retention-odb.md
+        - name: Manage data
+          href: manage-data-odb.md
 
