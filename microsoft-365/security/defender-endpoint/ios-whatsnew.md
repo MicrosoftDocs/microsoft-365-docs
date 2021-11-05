@@ -30,11 +30,12 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Threat and Vulnerability Management
 
-On 2-Nov-2021, we announced public preview of Threat and Vulnerability management on Android and iOS. For more details, please read the announcement [here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+On November 2, 2021, we announced the public preview of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
 
 ## 1.1.23010101
 
-- Bug fixes and performance improvements - We have made few performance optimizations in this release. Please test battery performance with this version and let us know your feedback.
+- Bug fixes and performance improvements 
+  - Performance optimizations were made in this release. Test battery performance with this version and let us know your feedback.
 
 ## 1.1.20240103
 - Device Health card - Device Health card notifies end-users about any pending software updates.
