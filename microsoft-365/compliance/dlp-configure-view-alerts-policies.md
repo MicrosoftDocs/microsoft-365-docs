@@ -109,12 +109,12 @@ experience.
 
 :::image type="content" source="../media/incident-reports-options-aggregated-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for aggregated alert configuration options." border="false":::
 
-You can use these alert configuration options to configure a setting
-that defines how often a DLP rule match can occur before an alert is
-triggered. This configuration allows you to set up a policy to generate
-an alert every time an activity matches the policy conditions or when a
-certain threshold is exceeded, based on the number of activities or
-based on the volume of exfiltrated data.
+This configuration allows you to set up a policy to generate an alert:
+
+- every time an activity matches the policy conditions
+- when the defined threshold is met or exceeded
+- based on the number of activities
+- based on the volume of exfiltrated data
 
 If you're eligible for [single-event alert configuration options](#licensing-for-alert-configuration-options), then you see the following
 alert configuration option in the DLP policy authoring experience. Use
@@ -123,7 +123,8 @@ happens because of a user activity.
 
 :::image type="content" source="../media/incident-reports-options-single-event-alerts.png" alt-text="Screenshot showing options for incident reports for users who are eligible for single-event alert configuration options." border="false":::
 
-We employ methods to prevent a flood of emails to our customers. To this effect, all user activities which violate the same DLP rule on the same workload within a one-minute time window will be clubbed under the same alert. The one minute aggregation time window is applicable for the following configurations: 
+To prevent a flood of notification emails, all matches that occur within a one-minute time window and are for the same DLP rule and on the same location are grouped together in the same alert. The one minute aggregation time window feature is available in: 
+
 - An E5 or G5 subscription
 - An E1, F1, or G1 subscription or an E3 or G3 subscription that includes one of the following features:
     - Office 365 Advanced Threat Protection Plan 2
