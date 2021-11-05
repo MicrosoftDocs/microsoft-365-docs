@@ -74,7 +74,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
+1. In the Microsoft 365 Defender portal, go directly to the [**Submissions**](https://security.microsoft.com/reportsubmission) page.
 
 2. Select **User reported messages**, and then select the message you want to mark and notify.
 
