@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/29/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,6 +25,12 @@ ms.collection:
 
 To perform tasks in the Microsoft 365 Defender portal, such as configuring Microsoft Defender for Business, viewing reports, or taking response actions on detected threats, appropriate permissions must be assigned to your security team. Permissions are granted through roles that are assigned in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). 
 
+**What to do**:
+
+1. [Learn about roles in Defender for Business](#roles-in-defender-for-business)
+2. [View or edit role assignments](#view-or-edit-role-assignments)
+3. [Proceed to your next steps](#next-steps) 
+
 > [!NOTE]
 > If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
 
@@ -41,7 +47,7 @@ The following table describes the three roles that can be assigned in Defender f
 | Security reader | Security readers can perform the following tasks: <br/>- View security policies and settings <br/>- View security threats and alerts <br/>- View security information and reports  |
 
 
-## How to view or edit role assignments
+## View or edit role assignments
 
 > [!IMPORTANT]
 > Microsoft recommends granting people access to only what they need to perform their tasks. We call this concept *least privilege* for permissions. To learn more, see [Best practices for least-privileged access for applications](/azure/active-directory/develop/secure-least-privileged-access). 
