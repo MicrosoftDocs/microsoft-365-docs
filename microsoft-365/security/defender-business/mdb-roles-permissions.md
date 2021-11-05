@@ -67,6 +67,6 @@ The following table describes the three roles that can be assigned in Defender f
 
 Proceed to:
 
-- [Set up email notifications](mdb-email-notifications.md)
+- [Step 3: Set up email notifications](mdb-email-notifications.md)
 
-- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
