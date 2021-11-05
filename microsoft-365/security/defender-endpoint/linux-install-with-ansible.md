@@ -215,7 +215,7 @@ Create a subtask or role files that contribute to a playbook or task.
               dnf:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+                enablerepo: packages-microsoft-[channel]
         ```
 
         ```bash
