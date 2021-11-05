@@ -24,7 +24,9 @@ description: Find out how to get help or contact support in Microsoft Defender f
 
 ## Get help and support
 
+If you need help with Microsoft Defender for Business, select the Help icon (?) in the upper right corner of the screen. Type your question or issue. Several options, such as quick answers or help articles, will be listed.
 
+If you don't see the answer to your question, you can open a support ticket.
 
 ## See also
 
