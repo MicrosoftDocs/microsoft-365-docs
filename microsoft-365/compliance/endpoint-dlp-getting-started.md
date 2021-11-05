@@ -18,6 +18,7 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those files to endpoints."
 ---
 
@@ -121,17 +122,14 @@ If you already have devices onboarded into [Microsoft Defender for Endpoint](/wi
 
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-2. Open the Compliance Center settings page and choose **Onboard devices**.
-
-   > [!div class="mx-imgBorder"]
-   > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Choose **Settings** > **Device onboarding**.
 
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+3. Choose **Devices** to open the **Devices** list. The list will be empty until you onboard devices.
 
 4. Choose **Onboarding** to begin the onboarding process.
 
@@ -157,7 +155,7 @@ Once done and endpoint is onboarded, it should be visible in the devices list an
 
 In this scenario, Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
 
@@ -184,7 +182,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 
 ### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-1. Open the Data loss prevention page in the Microsoft 365 Compliance center and choose Alerts.
+1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 

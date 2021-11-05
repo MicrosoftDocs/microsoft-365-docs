@@ -27,7 +27,7 @@
        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
          href: turn-on-mdo-for-spo-odb-and-teams.md
        - name: Microsoft 365 Defender portal overview
-         href: ../defender/overview-security-center.md
+         href: ../defender/microsoft-365-defender.md
        - name: The Email entity page
          href: mdo-email-entity-page.md
        - name: AIR overview
@@ -126,8 +126,16 @@
        href: install-app-guard.md
    - name: Migrate
      items: 
-     - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
-       href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+     - name: Migrate from a third-party protection service or device to Defender for Office 365
+       items:
+       - name: Migrate from a third-party protection service or device to Defender for Office 365
+         href: migrate-to-defender-for-office-365.md
+       - name: "Migrate Phase 1: Prepare"
+         href: migrate-to-defender-for-office-365-prepare.md
+       - name: "Migrate Phase 2: Setup"
+         href: migrate-to-defender-for-office-365-setup.md
+       - name: "Migrate Phase 3: Onboard"
+         href: migrate-to-defender-for-office-365-onboard.md
    - name: Prevent
      items: 
      - name: Configure your tenant for increased security

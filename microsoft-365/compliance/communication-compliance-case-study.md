@@ -8,7 +8,9 @@ author: robmazz
 manager: laurawi
 audience: Admin
 ms.topic: article
-ms.custom: admindeeplinkMAC
+ms.custom: 
+- admindeeplinkMAC
+- admindeeplinkCOMPLIANCE
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
@@ -88,7 +90,7 @@ Contoso decides to use the *Communication Compliance* role group assign all the 
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
 1. Contoso IT administrators sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com/permissions) permissions page using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
-2. In the **Microsoft 365 compliance center**, they go to **Permissions** and select the link to view and manage roles in Office 365.
+2. In the Microsoft 365 compliance center, they go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> and select the link to view and manage roles in Office 365.
 3. The administrators select the *Communication Compliance* role group, then select **Edit role group**.
 4. The administrators select **Choose members** from the left navigation pane, then select **Edit**.
 5. They select **Add** and then select the checkbox for all Contoso users that will manage communication compliance, investigate, and review alerts.

@@ -40,7 +40,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Azure Information Protection (AIP) unified client and AIP unified scanner |yes |the AIP *new label* action is mapped to *label applied* in activity explorer   |
 |Microsoft information protection (MIP) SDK         |yes|the AIP *new label* action is mapped to *label applied* in activity explorer|
 |Rights Management Service (RMS)         |not applicable         | |
-|Power BI desktop and web        | no| accessible in the Microsoft 365 audit logs         |
+|Power BI desktop and web        | yes|          |
 |Microsoft Cloud App Security (MCAS)         |no|         |
 
 ## Sensitivity label changed
@@ -65,7 +65,7 @@ This event is generated each time a sensitivity label is updated on the document
 |AIP unified scanner         |yes         |
 |MIP SDK         |yes         |
 |RMS service         |not applicable         |
-|Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
+|Power BI desktop and Web         |yes         | |
 |MCAS     |no         |         |
 
 ## Sensitivity label removed
@@ -86,7 +86,7 @@ This event is generated each time a sensitivity label is removed from a file or 
 |AIP unified scanner         |yes         |the AIP *remove label* action is mapped to the *label removed* action in activity explorer |
 |MIP SDK         |yes         |the AIP *remove label* action is mapped to the *label removed* action in activity explorer |
 |RMS service         |not applicable         |
-|Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
+|Power BI desktop and Web         |yes         | |
 |MCAS     |no         |         |
  
 
@@ -104,7 +104,7 @@ This event is generated each time a sensitivity labeled or protected document is
 |AIP unified scanner         |yes         |the AIP *access* action is mapped to the *file read* action in activity explorer|
 |MIP SDK         |yes         |the AIP *access* action is mapped to the *file read* action in activity explorer|
 |RMS service         |yes         |the *access* action is mapped to the *file read* action in activity explorer |
-|Power BI desktop and Web         |no         |accessible in the Microsoft 365 audit logs |
+|Power BI desktop and Web         |yes         | |
 |MCAS     |no         |         |
 
 
