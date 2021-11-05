@@ -38,4 +38,4 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 Proceed to:
 
-- [Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md)
+- [Step 2: Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md)
