@@ -94,7 +94,7 @@ An alert page is composed of these sections:
 Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
 
 ### Alert sources
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, and Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and the app governance add-on for Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
 > - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.<br>
@@ -165,6 +165,32 @@ The list of additional actions depends on the type of alert.
 Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the it status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
 
 Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
+
+## Use Power Automate to triage alerts
+
+Modern security operations (SecOps) teams need automation to work effectively. To focus on hunting and investigating real threats, SecOps teams use Power Automate to triage through the list of alerts and eliminate the ones that aren't threats.  
+
+### Criteria for resolving alerts
+
+- User has Out-of-office message turned on
+
+- User isn't tagged as high risk
+
+If both are true, SecOps marks the alert as legitimate travel and resolves it. A notification is posted in Microsoft Teams after the alert is resolved. 
+
+### Connect Power Automate to Microsoft Cloud App Security
+
+To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Cloud App Security. 
+
+1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab. 
+
+2. Provide a name for your token, and then click **Generate**. Save the token as you'll need it later.
+
+### Create an automated flow
+
+For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
+
+This video also describes how to connect power automate to Cloud App Security. 
 
 ## Next steps
 

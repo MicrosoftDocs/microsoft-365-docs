@@ -55,7 +55,7 @@ If bandwidth utilization is not a concern, you can not set a limit and allow unl
 
 ### Endpoint DLP Windows 10 and macOS settings
 
-To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/Ignite2021DLP).
+To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
@@ -207,8 +207,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge Chromium understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
-When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge
-Chromium and Edge Chromium, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
+When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge Chromium which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
 To use this restriction, you’ll need to configure three important pieces:
 
