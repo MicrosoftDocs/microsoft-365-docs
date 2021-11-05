@@ -32,6 +32,8 @@ description: "Microsoft Compliance Manager provides templates for building asses
 
 Templates are added to Compliance Manager as new laws and regulations are enacted. Compliance Manager also updates its templates when the underlying laws or regulations change. Learn more about how to [review and accept updates](compliance-manager-assessments.md#accept-updates-to-assessments).
 
+Templates are available in two versions: one designed for a specific Microsoft product, such as Microsoft 365, and a universal version that you can apply to other products of your choice. To learn more about template options and licensing, see [Learn about assessment templates](compliance-manager-templates.md).
+
 ## List of templates and where to find them
 
 Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
