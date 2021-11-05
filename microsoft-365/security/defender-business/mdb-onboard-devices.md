@@ -51,7 +51,7 @@ Review the scenarios listed in the following table and what to expect. Then proc
 > [!NOTE]
 > If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip to [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method).
 
-If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices automatically or manually. The following table summarizes these options.
+If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices to Defender for Business automatically or manually. The following table summarizes these options.
 
 <br/><br/>
 
