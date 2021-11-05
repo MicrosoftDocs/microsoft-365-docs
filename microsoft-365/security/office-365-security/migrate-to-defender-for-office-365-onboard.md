@@ -224,4 +224,4 @@ Now you begin the normal operation and maintenance of Defender for Office 365. M
 
 - Review user submissions, especially [user-reported phishing messages](/microsoft-365/security/office-365-security/automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook).
 - Review overrides in the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
-- Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example.md) queries to look for tuning opportunities and risky messages.
+- Use [Advanced Hunting](/microsoft-365/security/defender/advanced-hunting-example) queries to look for tuning opportunities and risky messages.
