@@ -32,4 +32,4 @@ To enable or disable Whiteboard for your tenant, do the following:
 5. Click or tap **Save**.
 
 >[!NOTE]
-> Per user licensing is not currently available.
+> Per user [licensing](licensing.md) is currently not available.
