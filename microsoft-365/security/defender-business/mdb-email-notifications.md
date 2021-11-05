@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/29/2021
+ms.date: 11/04/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -22,10 +22,12 @@ f1.keywords: NOCSH
 
 You can set up email notifications for your security team. Then, as alerts are generated, or new vulnerabilities are discovered, people on your security team will be notified automatically. 
 
-> [!NOTE]
-> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to set up email notifications for your security team after you have granted people access to the Microsoft 365 Defender portal. 
+**What to do**:
 
-:::image type="content" source="media/mdb-wizard-email-notifications.png" alt-text="Set up email notifications in Microsoft Defender for Business.":::
+1. [Learn about types of email notifications](#types-of-email-notifications)
+2. [View and edit email notification settings](#view-and-edit-email-notifications)
+3. [Proceed to your next steps](#next-steps) 
+
 
 ## Types of email notifications
 
@@ -36,11 +38,16 @@ When you set up email notifications, you can choose from two types, as described
 | Vulnerabilities  | Whenever any new exploits or vulnerability events are detected, recipients receive an email. |
 | Alerts & vulnerabilities  | When alerts are generated because threats are detected on devices, or when any new exploits or vulnerability events are detected, recipients receive an email. |
 
-## Email notifications are not the only way your security team can find out about new alerts or vulnerabilities
+### Email notifications are not the only way your security team can find out about new alerts or vulnerabilities
 
 Whenever your security team signs into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), they'll see cards highlighting new threats, alerts, and vulnerabilities. Defender for Business is designed to highlight important information that your security team cares about as soon as they sign in.
 
 Your security team can also choose **Incidents** in the navigation pane to view information. Email notifications are another way to help keep your security team informed, in real time. To learn more, see [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md).
+
+> [!NOTE]
+> If you are working through the initial setup and configuration process for Microsoft Defender for Business, you'll be prompted to set up email notifications for your security team after you have granted people access to the Microsoft 365 Defender portal. 
+
+:::image type="content" source="media/mdb-wizard-email-notifications.png" alt-text="Set up email notifications in Microsoft Defender for Business.":::
 
 ## View and edit email notifications
 
