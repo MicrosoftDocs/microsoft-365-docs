@@ -31,6 +31,8 @@ When it comes to onboarding devices and configuring security settings for your c
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune
 - Your non-Microsoft solution for managing devices 
 
+## Review your setup and configuration options
+
 The following table describes each experience:
 <br/><br/>
 
