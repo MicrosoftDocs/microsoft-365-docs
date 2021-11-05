@@ -97,13 +97,8 @@ Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure E
 
 
 For more information on the Splunk Add-on for Microsoft Cloud Services, see [splunkbase](https://splunkbase.splunk.com/app/3110/).
-
-For more information on the step-by-step walkthrough of configuring event streaming via Azure Event Hubs to Splunk, see
   
 
 ### IBM QRadar
 >Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).
-For more information about the Microsoft 365 Defender DSM see the announcement on the [IBM QRadar Blog](https://community.ibm.com/community/user/security/blogs/wendy-willner/2021/11/04/beyondthedsmguide-new-microsoft-365-defender-integ?CommunityKey=f9ea5420-0984-4345-ba7a-d93b4e2d4864).
-
-
 
