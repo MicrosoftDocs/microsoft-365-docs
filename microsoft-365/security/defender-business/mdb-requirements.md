@@ -23,6 +23,13 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
+**What to do**:
+
+1. [Review the requirements](#review-the-requirements) 
+2. [Proceed to your next steps](#next-steps) 
+
+## Review the requirements
+
 The following table lists the basic requirements to configure and use Microsoft Defender for Business. <br/><br/>
 
 | Requirement | Description |
