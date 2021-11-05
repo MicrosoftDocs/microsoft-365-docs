@@ -43,7 +43,7 @@ Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]�
 ```
 
 > [!NOTE]
- When you create a or edit an EDM sensitive information type, or the base SIT on which an EDM type is based, all new content and content that’s modified after the changes to the SITs will be crawled for text that matches the new definitions, but preexisting content won’t be crawled until modified or reindexed. 
+ When you create a or edit an EDM sensitive information type, or the primary SIT on which an EDM type is based, all new content and content that’s modified after the changes to the SITs will be crawled for text that matches the new definitions, but preexisting content won’t be crawled until modified or reindexed. 
 
 To force re-crawling of existing content in a SharePoint site or library or in OneDrive, follow the instructions in [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
@@ -67,7 +67,7 @@ If you don't find any matches, try the following:
 
 - If detection of an EDM type is inconsistent or erratic, check that the sensitive information type you used as the base for the primary element in your EDM type is not detecting unnecessary content. Using a SIT that matches too much unrelated content, like any word, any number, all email addresses might cause the service to saturate and ignore relevant matches. Check the number of content pieces that match the sensitive type you used for your primary elements in content explorer. To estimate if the SIT is matching too much content:
     1. Dividing the number of content items in Content Explorer by the number of days since the sensitive type was created.
-    2. If the number of matches per day is in the range of hundreds of thousands or millions, it is possible that the base SIT is too broad. See [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for recommendations and best practices on selecting the right sensitive information type for an EDM type. 
+    2. If the number of matches per day is in the range of hundreds of thousands or millions, it is possible that the primary SIT is too broad. See [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for recommendations and best practices on selecting the right sensitive information type for an EDM type. 
 
 - Confirm that your sensitive data was uploaded correctly using the commands explained in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types).
 
@@ -75,6 +75,6 @@ If you don't find any matches, try the following:
 
 ## Next step
 
-You EDM based custom SIT are ready for use in data loss prevention policies.
+You EDM based custom SIT is ready for use in data loss prevention policies.
 
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
