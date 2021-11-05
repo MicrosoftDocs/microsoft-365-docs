@@ -76,7 +76,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
 
-2. Click **User reported messages**, and then select the message you want to mark and notify.
+2. Select **User reported messages**, and then select the message you want to mark and notify.
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found**, **Phishing**, or **Junk**.
 
