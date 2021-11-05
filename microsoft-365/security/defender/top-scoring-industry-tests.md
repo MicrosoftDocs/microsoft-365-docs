@@ -6,7 +6,7 @@ keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, 
 ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -34,7 +34,7 @@ Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endp
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 
-Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded defenders' visibility beyond the endpoint with Microsoft 365 Defender.
+Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft 365 Defender.
 
 - ATT&CK-based evaluation of Microsoft 365 Defender - May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 

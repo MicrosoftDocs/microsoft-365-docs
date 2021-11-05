@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -33,9 +33,9 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
 |Maximum number of load sets per case.  <br/> |200 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
-|Maximum number of tag groups per case.  <br/> |1000 <br/> |
-|Maximum number of tags per case.  <br/> |1000 <br/> |
-|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10 <sup>4</sup> |
+|Maximum number of tag groups per case.  <br/> |1,000 |
+|Maximum number of unique tags per case. <br/> |1,000<sup>6</sup> |
+|Maximum concurrent jobs in your organization to add content to a review set. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case.| 10<sup>4</sup> |
 |Maximum concurrent jobs to add content to a review set per user. These jobs are named **Adding data to a review set** and are displayed on the **Jobs** tab in a case. | 3 |
 |||
 
@@ -70,13 +70,13 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of mailboxes or sites that can be searched in a single search. |No limit|
 |Maximum number of searches that can run at the same time. |No limit |
 |Maximum number of searches that a single user can start at the same time. |10 | 
-|Maximum number of characters for a search query (including operators and conditions). |10,000 &nbsp;<sup>2</sup>|
-|Maximum number of characters for a search query for SharePoint and OneDrive for Business sites (including operators and conditions). |10,000<br>4,000 with Wildcards&nbsp;<sup>2</sup>|
+|Maximum number of characters for a search query (including operators and conditions). |10,000<sup>2</sup>|
+|Maximum number of characters for a search query for SharePoint and OneDrive for Business sites (including operators and conditions). |10,000<br>4,000 with Wildcards<sup>2</sup>|
 |Minimum number of alpha characters for prefix wildcards; for example, **one\*** or **set\***.|3 |  
-|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000&nbsp;<sup>3</sup>|
+|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator. |10,000<sup>3</sup>|
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed. |100|
 |Maximum number of items from all mailboxes displayed on preview page for searches.|1,000|
-|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.|1,000|
+|Maximum number of mailboxes that can be previewed for search results.  If there are more than 1,000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.|1,000|
 |Maximum number of items from SharePoint and OneDrive for Business sites displayed on preview page for searches. The newest items are displayed. |200|
 |Maximum number of SharePoint and OneDrive for Business sites that can be previewed for search results. If there are more than 200 sites that contain items that match the search query, only the top 200 sites with the most results are available for preview.|200|
 |Maximum number of items per public folder mailbox displayed on preview page for searches. |100|
@@ -119,7 +119,7 @@ The limits described in this section are related to exporting documents out of a
 
 | Description of limit | Limit |
 |:-----|:-----|
-|Total file size or maximum number of documents downloaded from a review set.  <br/> |3 MB or 50 documents <sup>5</sup>|
+|Total file size or maximum number of documents downloaded from a review set.  <br/> |3 MB or 50 documents<sup>5</sup>|
 |||
 
 <br/>
@@ -139,4 +139,6 @@ The limits described in this section are related to exporting documents out of a
 > <sup>4</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
 >
 > <sup>5</sup> This limit applies to downloading selected documents from a review set. It doesn't apply to exporting documents from a review set. For more information about downloading and exporting documents, see [Export case data in Advanced eDiscovery](exporting-data-ediscover20.md).
+>
+> <sup>6</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
 >

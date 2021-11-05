@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
-localization_priority: None
+ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ---

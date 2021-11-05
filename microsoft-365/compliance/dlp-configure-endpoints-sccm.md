@@ -9,9 +9,10 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
@@ -26,9 +27,9 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 ### Onboard devices using System Center Configuration Manager
 
-1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
-2. In the navigation pane, select **Settings** > **Device Onboarding** > **Onboarding**.
+2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device Onboarding** > **Onboarding**.
 
 3. In the **Deployment method** field, select **Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602**.
 
@@ -137,9 +138,9 @@ If you use Microsoft Endpoint Configuration Manager current branch, see [Create 
 
 ### Offboard devices using System Center 2012 R2 Configuration Manager
 
-1. Get the offboarding package from [Microsoft Compliance center](https://compliance.microsoft.com/):
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>:
 
-2. In the navigation pane, select **Settings** >  **Device onboarding**> **Offboarding**.
+2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> >  **Device onboarding**> **Offboarding**.
 
 3. Select Windows 10 as the operating system.
 

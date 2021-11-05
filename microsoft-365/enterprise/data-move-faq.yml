@@ -7,7 +7,7 @@ metadata:
   audience: ITPro
   ms.topic: article
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: 1f01bc6f-5d37-4d14-bdd3-9d94a1e23e14

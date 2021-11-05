@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_TOC 
@@ -96,7 +96,7 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 3. Select **Allow Office 365 content on the new tab page**. When enabled, users can customize their new tab to show  information from Office 365, including recommended and recent files, along with frequently used SharePoint sites and other information.
 4. Select **Show company information and industry news on the new tab page**. News articles about your organization and industry appear for users that choose to see articles on their new tab.
 
-## Related articles
+## Related content
 
 - [Microsoft Search](/microsoftsearch/)
-- [Manage your data and service](./index.yml)
+- [Manage your data and service](/admin)

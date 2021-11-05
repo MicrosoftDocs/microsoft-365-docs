@@ -9,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -73,6 +73,11 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Security Operator
 - Global Reader
 - Security Reader
+- Compliance Administrator
+- Compliance Data Administrator
+- Application Administrator
+- Cloud Application Administrator
+
 
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).

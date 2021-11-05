@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -239,8 +239,7 @@ Get started with Cloud App Security now. Later you can set up more sophisticated
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 security center](./defender/overview-security-center.md)
-- [Monitor and view reports](./defender/overview-security-center.md)
+- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps

@@ -10,9 +10,10 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
 description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
@@ -56,8 +57,8 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 12. Click **OK** and close any open GPMC windows.
 
-
 ## Offboard devices using Group Policy
+
 For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
@@ -95,7 +96,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 With Group Policy there isn’t an option to monitor deployment of policies on the devices. Monitoring can be done directly on the portal, or by using the different deployment tools.
 
 ## Monitor devices using the portal
-1. Go to [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 2. Click **Devices** list.
 3. Verify that devices are appearing.
 

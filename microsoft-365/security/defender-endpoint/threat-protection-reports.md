@@ -2,15 +2,13 @@
 title: Threat protection report in Microsoft Defender for Endpoint
 description: Track alert detections, categories, and severity using the threat protection report
 keywords: alert detection, source, alert by category, alert severity, alert classification, determination
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

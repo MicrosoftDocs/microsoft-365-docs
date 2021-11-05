@@ -6,7 +6,7 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
@@ -2777,8 +2777,7 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input
-data that does not allow the engine to function properly.
+This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>

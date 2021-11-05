@@ -3,7 +3,11 @@
 - name: What's new in Microsoft 365 compliance
   href: whats-new.md
 - name: Compliance trials
-  href: compliance-easy-trials.md
+  items:
+    - name: About the free trial for Microsoft 365 compliance
+      href: compliance-easy-trials.md
+    - name: About the free trial for Microsoft Compliance Manager premium assessments
+      href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 
     - name: Quick tasks to get started with compliance
@@ -36,13 +40,17 @@
           href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
+        - name: Detect channel signals with communication compliance
+          href: communication-compliance-channels.md
+        - name: Create and manage communication compliance policies
+          href: communication-compliance-policies.md
         - name: Investigate and remediate communication compliance alerts
           href: communication-compliance-investigate-remediate.md
-        - name: Feature reference for communication compliance
-          href: communication-compliance-feature-reference.md
+        - name: Learn about communication compliance reports & audits
+          href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an offensive language policy 
+        - name: Case study - Contoso quickly configures an inappropriate content policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
@@ -108,6 +116,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Default labels and policies for Microsoft Information Protection
+      href: mip-easy-trials.md
     - name: Sensitive information types
       items: 
         - name: Learn about sensitive information types
@@ -116,6 +126,8 @@
             href: sensitive-information-type-learn-about.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
+          - name: Learn about named entities (preview)
+            href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
           - name: Get started with custom sensitive information types - Compliance Center
@@ -142,6 +154,8 @@
             href: create-a-keyword-dictionary.md
           - name: Modify a keyword dictionary
             href: sit-modify-keyword-dictionary.md
+          - name: Use named entities in your data loss prevention policies (preview)
+            href: named-entities-use.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
@@ -297,7 +311,7 @@
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Endpoint DLP Onboarding tools and methods for Windows 10 devices
+          - name: Endpoint DLP Device Onboarding tools and methods
             items:
               - name: Onboarding tools and methods for Windows 10 devices   
                 href: dlp-configure-endpoints.md
@@ -311,6 +325,16 @@
                 href: dlp-configure-endpoints-script.md
               - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
                 href: dlp-configure-endpoints-vdi.md
+          - name: Onboard macOS devices into Microsoft 365 overview (preview)
+            href: device-onboarding-macos-overview.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+            href: device-onboarding-offboarding-macos-intune.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-intune-mde.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+            href: device-onboarding-offboarding-macos-jamfpro.md
+          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+            href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -363,6 +387,8 @@
               href: retention-policies-yammer.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+            - name: Common settings for retention
+              href: retention-settings.md
             - name: Limits for retention
               href: retention-limits.md
         - name: Get started with retention
@@ -405,8 +431,12 @@
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
             - name: Facebook Business 
               href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
             - name: HR data 
               href: import-hr-data.md
             - name: ICE Chat
@@ -473,7 +503,7 @@
               href: archive-xslt-xml-data.md
             - name: Yieldbroker
               href: archive-yieldbroker-data.md
-            - name: YouTube (preview)
+            - name: YouTube
               href: archive-youtube-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
@@ -585,45 +615,6 @@
           href: record-versioning.md
         - name: Resources for regulatory requirements
           href: retention-regulatory-requirements.md
-- name: Manage app governance
-  items: 
-    - name: Protect and govern your apps
-      href: app-governance-manage-app-governance.md
-    - name: Get Started with app governance
-      href: app-governance-get-started.md
-    - name: Submit feedback on app governance
-      href: app-governance-feedback.md
-    - name: Get visibility and insights
-      items:
-        - name: Learn about visibility and insights
-          href: app-governance-visibility-insights-overview.md
-        - name: Get started
-          href: app-governance-visibility-insights-get-started.md
-        - name: View your apps
-          href: app-governance-visibility-insights-view-apps.md
-        - name: Determine compliance posture
-          href: app-governance-visibility-insights-compliance-posture.md
-    - name: Implement app policies
-      items:
-        - name: Learn about app policies
-          href: app-governance-app-policies-overview.md
-        - name: Get started
-          href: app-governance-app-policies-get-started.md
-        - name: Create app policies
-          href: app-governance-app-policies-create.md
-        - name: Manage app policies
-          href: app-governance-app-policies-manage.md
-    - name: Detect and remediate app threats
-      items:
-        - name: Learn about detection and remediation
-          href: app-governance-detect-remediate-overview.md
-        - name: Get started
-          href: app-governance-detect-remediate-get-started.md
-        - name: Investigate anomaly detection alerts
-          href: app-governance-anomaly-detection-alerts.md
-        - name: Remediate app threats
-          href: app-governance-detect-remediate-detect-threats.md
-
 - name: Manage eDiscovery
   items:
     - name: Microsoft 365 eDiscovery solutions
@@ -639,7 +630,7 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries
+          - name: Use the KQL editor to build search queries (preview)
             href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
@@ -717,7 +708,7 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries
+          - name: Use the KQL editor to build search queries (preview)
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
@@ -727,6 +718,10 @@
             href: what-is-stored-in-exo-mailbox.md
           - name: Differences between estimated and actual search results
             href: differences-between-estimated-and-actual-ediscovery-search-results.md
+          - name: Partially indexed items
+            href: partially-indexed-items-in-content-search.md
+          - name: Investigating partially indexed items
+            href: investigating-partially-indexed-items-in-ediscovery.md
           - name: Preview eDiscovery search results
             href: preview-ediscovery-search-results.md
           - name: Export a search report
@@ -812,10 +807,12 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
-            - name: Use the KQL editor to build search queries
+            - name: Use the KQL editor to build search queries (preview)
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
+            - name: Collect cloud attachments
+              href: advanced-ediscovery-cloud-attachments.md
         - name: Manage review sets
           href: managing-review-sets.md
           items: 
@@ -883,6 +880,8 @@
               href: supported-filetypes-ediscovery20.md
             - name: Document metadata fields
               href: document-metadata-fields-in-advanced-ediscovery.md
+            - name: Set up historical versions
+              href: advanced-ediscovery-historical-versions.md
             - name: Set up attorney-client privilege detection
               href: attorney-privilege-detection.md
             - name: Assign eDiscovery permissions
@@ -979,8 +978,16 @@
           href: compliance-manager-setup.md
         - name: Build and manage assessments
           href: compliance-manager-assessments.md
-        - name: Working with assessment templates
+        - name: Learn about assessment templates
           href: compliance-manager-templates.md
+        - name: Create assessment templates
+          href: compliance-manager-templates-create.md
+        - name: Extend assessment templates
+          href: compliance-manager-templates-extend.md
+        - name: Modify assessment templates
+          href: compliance-manager-templates-modify.md
+        - name: Format template data in Excel
+          href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
         - name: Assign and complete improvement actions
@@ -999,22 +1006,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
-- name: Manage privacy risks
+- name: Privacy management
   items:
     - name: Learn about privacy management
-      href: privacy-management.md
-    - name: Get started with privacy management
-      href: privacy-management-setup.md
-    - name: Set user permissions in privacy management
-      href: privacy-management-permissions.md
-    - name: Manage privacy management settings
-      href: privacy-management-settings.md
-    - name: Find and visualize personal data in privacy management
-      href: privacy-management-data-profile.md
-    - name: Create and manage policies in privacy management
-      href: privacy-management-policies.md
-    - name: Manage subject rights requests in privacy management
-      href: privacy-management-subject-rights-requests.md
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS

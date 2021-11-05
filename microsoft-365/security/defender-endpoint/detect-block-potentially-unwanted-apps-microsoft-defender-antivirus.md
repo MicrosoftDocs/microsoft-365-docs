@@ -2,11 +2,10 @@
 title: Block potentially unwanted applications with Microsoft Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
 keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: detect
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,7 +14,7 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/02/2021
+ms.date: 10/18/2021
 ms.collection: m365-security-compliance
 ---
 
@@ -37,7 +36,7 @@ Here are some examples:
 > [!TIP]
 > For more examples and a discussion of the criteria we use to label applications for special attention from security features, see [How Microsoft identifies malware and potentially unwanted applications](/windows/security/threat-protection/intelligence/criteria).
 
-Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up. PUA protection is supported on Windows 10, Windows Server 2019, Windows Server 2022, and Windows Server 2016. In Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA for Enterprise (E5) devices by default.
+Potentially unwanted applications can increase the risk of your network being infected with actual malware, make malware infections harder to identify, or waste IT resources in cleaning them up. PUA protection is supported on Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, and Windows Server 2016. In Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA for Enterprise (E5) devices by default.
 
 ## Microsoft Edge
 
@@ -69,7 +68,7 @@ Although Microsoft Defender for Endpoint has its own blocklist based upon a data
 The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can detect and block PUA on endpoints in your network.
 
 > [!NOTE]
-> This feature is available in Windows 10, Windows Server 2019, Windows Server 2022, and Windows Server 2016.
+> This feature is available in Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, and Windows Server 2016.
 
 Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine. When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
 

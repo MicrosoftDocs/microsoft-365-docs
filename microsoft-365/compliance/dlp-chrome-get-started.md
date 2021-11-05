@@ -11,11 +11,12 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Compliance Extension."
@@ -110,7 +111,7 @@ This is the recommended method.
 
 Use this setup method for organization-wide deployments.
 
-##### Enabling Required Registry Key via Microsoft Endpoint Manager
+##### Enabling Required Registry Value via Microsoft Endpoint Manager
 
 1. Create a PowerShell script with the following contents:
 
@@ -238,13 +239,13 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
-1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
+1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 ### Viewing Chrome DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose **Activity explorer**.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose **Activity explorer**.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 

@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "This article gives an overview of sensitive information types and how they detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items"
@@ -35,8 +35,9 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
+- [Inside risk management](insider-risk-management-solution-overview.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Privacy management (preview)](privacy-management.md)
+- [Privacy management](/privacy/solutions/privacymanagement/privacy-management)
 
 ## Fundamental parts of a sensitive information type
 
@@ -46,7 +47,7 @@ Every sensitive information type entity is defined by these fields:
 - description: describes what the sensitive information type is looking for
 - pattern: A pattern defines what a sensitive information type detects. It consists of the following components
     - Primary element – the main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
-    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword "SSN" in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
     - Proximity – Number of characters between primary and supporting element
 

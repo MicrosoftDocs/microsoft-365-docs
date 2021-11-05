@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -34,6 +34,7 @@ ms.technology: m365d
 
 Discovery can be configured to be on standard or basic mode. Use the standard option to actively find devices in your network, which will better guarantee the discovery of endpoints and provide richer device classification.
 
+
 You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags.
 
 > [!IMPORTANT]
@@ -49,7 +50,7 @@ Take the following configuration steps in Microsoft 365 security center:
 
 ## Exclude devices from being actively probed in standard discovery
 
-If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode. Those devices will be passively discovered but won't be actively probed.
+If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered through multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.   
 
 ## Select networks to monitor
 
@@ -60,7 +61,7 @@ You can configure where device discovery can be performed by specifying which ne
 A list of networks where device discovery can be performed is shown in the **Monitored networks** page.
 
 > [!NOTE]
-> Only top 50 networks (according to the number of associated devices) will be available in the network list.
+> The list shows networks that were identified as corporate networks. If less than 50 networks are identified as corporate networks, then list will show up to 50 networks with the most onboarded devices. 
 
 The list of monitored networks is sorted based upon the total number of devices seen on the network in the last 7 days.
 

@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
 description: Learn how to review messages that are reported and give feedback to your users.
@@ -18,9 +18,6 @@ ms.prod: m365-security
 # Admin review for reported messages
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. This document is provided for evaluation and exploration purposes only.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -46,7 +43,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission).
+1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
 
 2. Click **User reported messages**, and then select the message you want to mark and notify.
 

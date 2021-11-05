@@ -1,16 +1,16 @@
 ---
-title: "Scheduler for Microsoft 365 FAQs"
+title: "Scheduler for Microsoft 365 FAQ"
 ms.author: v-aiyengar
 author: AshaIyengar21
 manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
-description: "Scheduler for Microsoft 365 FAQs"
+ms.localizationpriority: medium
+description: "Scheduler for Microsoft 365 FAQ"
 ---
 
-# Scheduler for Microsoft 365 FAQs
+# Scheduler for Microsoft 365 FAQ
 
 **Question:** How does Scheduler integrate with other Cortana features, such as *Cortana for Windows*, *Daily Briefing Email*, and *Play My Emails*?</br>
 Scheduler is an independent service from other Cortana features. Other Cortana features can be disabled at the tenant level, and Scheduler can still be enabled by using the cortana@yourdomain.com email address. Currently, users can only interact with Scheduler via email.

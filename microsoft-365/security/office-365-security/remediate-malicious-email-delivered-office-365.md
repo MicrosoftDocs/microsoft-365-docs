@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 f1.keywords: 
   - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation

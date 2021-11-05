@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom:
 search.appverid:
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to plan and run a trial pilot program for Microsoft Viva Topics in your organization.
 ---
 

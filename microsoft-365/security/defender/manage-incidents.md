@@ -2,7 +2,6 @@
 title: Manage incidents in Microsoft 365 Defender
 description: Learn how to assign, update the status,
 keywords: incident, incidents, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,7 +10,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -20,7 +19,6 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: 
   - MOE150
-  - MET150
 ms.technology: m365d
 ---
 
@@ -42,7 +40,7 @@ Here are the ways you can manage your incidents:
 
 - [Edit the incident name](#edit-the-incident-name)
 - [Add incident tags](#add-incident-tags)
-- [Assign the incident to yourself](#assign-incidents)
+- [Assign the incident to a user account](#assign-an-incident)
 - [Resolve them](#resolve-an-incident)
 - [Set its classification and determination](#set-the-classification-and-determination)
 - [Add comments](#add-comments)
@@ -73,9 +71,9 @@ You can add custom tags to an incident, for example to flag a group of incidents
 
 When you start typing, you have the option to select from a list of selected tags.
 
-## Assign incidents
+## Assign an incident
 
-To assign an incident, select **Assign to me**. Doing so assigns ownership of the incident and all the alerts associated with it to your user account.
+If an incident has not yet been assigned, you can select the **Assign to** box and specify the user account (Preview). Te re-assign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
 
 You can get a list of incidents assigned to you by filtering the incident queue. 
 

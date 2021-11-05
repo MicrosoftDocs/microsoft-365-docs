@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
@@ -40,8 +40,7 @@ After you have [set up](business-set-up.md) Microsoft 365 Business Premium, it i
 
     On the top of the page, choose **Get started**.
 
-4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article)\
-). 
+4. On the **Secure your Windows 10 computers** pane, select the options you want to turn on. For more information about the settings, see [Secure Windows 10 devices](../misc/secure-windows-10-devices.md) (article). 
     
     For most organizations, the options here offer a good level of security, however, if your organization has more complex security needs, you can also use pre-defined security baselines to secure  your Windows 10 devices. For more information, see [security baselines for Windows 10 devices](/mem/intune/protect/security-baselines).   
 

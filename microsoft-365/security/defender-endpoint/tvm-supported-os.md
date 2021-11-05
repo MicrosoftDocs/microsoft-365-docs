@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -46,6 +46,7 @@ Windows 7|Yes|Not supported|Not supported|Not supported|Not supported
 Windows 8.1|Yes|Yes|Yes|Yes|Yes
 Windows 10, versions 1607-1703|Yes|Not supported|Not supported|Not supported|Not supported
 Windows 10, version 1709 or later|Yes|Yes|Yes|Yes|Yes
+Windows 11|Yes|Yes|Yes|Yes|Yes
 Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
@@ -57,6 +58,8 @@ CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
+Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
+iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.
