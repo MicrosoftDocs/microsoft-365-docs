@@ -44,11 +44,6 @@ The following table describes the three roles that can be assigned in Defender f
 
 ## View or edit role assignments
 
-> [!NOTE]
-> If you are working through the initial setup and configuration process for Defender for Business, you'll be prompted to grant people access when you sign in. 
-
-:::image type="content" source="media/mdb-grant-access.png" alt-text="Screenshot of granting people access to Defender for Business.":::
-
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Permissions & roles**, and then under **Azure AD**, select **Roles**.
