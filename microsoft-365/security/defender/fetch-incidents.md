@@ -1,6 +1,6 @@
 ---
-title: Fetch alerts from MSSP customer tenant
-description: Learn how to fetch alerts from a customer tenant
+title: Fetch Microsoft 365 Defender incidents 
+description: Learn how to fetch Microsoft 365 Defender incidents from a customer tenant
 keywords: managed security service provider, mssp, configure, integration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -15,11 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
+ms.technology:  m365d
 ms.custom: api
 ---
 
-# Fetch alerts from MSSP customer tenant
+# Fetch Microsoft 365 Defender incidents 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ There are two ways you can fetch alerts:
 - Using the SIEM method
 - Using APIs
 
-## Fetch alerts into your SIEM
+## Fetch incidents into your SIEM
 
-To fetch alerts into your SIEM system, you'll need to take the following steps:
+To fetch incidents into your SIEM system, you'll need to take the following steps:
 
 - Step 1: Create a third-party application
 - Step 2: Get access and refresh tokens from your customer's tenant
@@ -168,17 +168,11 @@ You'll need to have **Manage portal system settings** permission to allow the ap
 
 5. Click **Authorize application**.
 
-You can now download the relevant configuration file for your SIEM and connect to the Microsoft 365 Defender API. For more information, see, [Pull alerts to your SIEM tools](configure-siem.md).
+You can now download the relevant configuration file for your SIEM and connect to the Microsoft 365 Defender API. For more information, see, [Pull alerts to your SIEM tools](../defender-endpoint/configure-siem.md).
 
 - In the ArcSight configuration file / Splunk Authentication Properties file, write your application key manually by setting the secret value.
 - Instead of acquiring a refresh token in the portal, use the script from the previous step to acquire a refresh token (or acquire it by other means).
 
 ## Fetch alerts from MSSP customer's tenant using APIs
 
-For information on how to fetch alerts using REST API, see [Pull alerts using REST API](pull-alerts-using-rest-api.md).
-
-## See also
-
-- [Grant MSSP access to the portal](grant-mssp-access.md)
-- [Access the MSSP customer portal](access-mssp-portal.md)
-- [Configure alert notifications](configure-mssp-notifications.md)
+For information on how to fetch alerts using REST API, see [Pull alerts using REST API](../defender-endpoint/pull-alerts-using-rest-api.md).
