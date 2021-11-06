@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Whether you have assistance or are doing it yourself, use this article as a guide for setting up and configuring Microsoft Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+When you're ready to set up and configure Microsoft Defender for Business (preview), use this article as a guide.
 
 ## The setup and configuration process
 
@@ -43,9 +43,9 @@ Whether you have assistance or are doing it yourself, use this article as a guid
 
 Proceed to:
 
-- [Review the requirements for Microsoft Defender for Business](mdb-requirements.md)
+- [Step 1: Review the requirements for Microsoft Defender for Business](mdb-requirements.md)
 
-- [Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md) 
+- [Step 2: Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md) 
  
 ## See also
 
