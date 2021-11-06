@@ -23,12 +23,18 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is available in preview! Participating in the preview program enables you to try out Defender for Business for 90 days.
+Microsoft Defender for Business is available in preview! Participating in the preview program enables you to try out Defender for Business for 90 days. The preview program is available to:
+
+- Partners who provide IT services to small and medium-sized businesses
+- Small and medium-sized businesses (up to 300 employees)
 
 ## Sign up for the preview program
 
 If you are an IT partner or a small or medium-sized business (300 or fewer employees), visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) to apply for the preview program.
 
+## What to expect
+
+After you have applied for the preview program, we'll review your application. You'll receive an email with additional information, such as our license agreement and how to activate your trial. 
 
 ## Next steps
 
