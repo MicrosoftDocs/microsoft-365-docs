@@ -23,10 +23,6 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-When you're ready to set up and configure Microsoft Defender for Business (preview), use this article as a guide.
-
-## The setup and configuration process
-
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
 <br/>
