@@ -31,7 +31,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 ## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later (Nov 2021)
 Release Build: 1.0.3501.0301
 Release month: Nov 2021
-Microsoft Defender for Endpoint has release this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. 
+Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. 
 This change will prompt users seeking access to [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), for devices running Android 11 or later. Users will need to accept this new storage permission once they update Defender app with the release build 1.0.3501.0301 or later. This will ensure Defender’s ‘App security’ feature to function without any disruption. For more information, see the details in following sections.
 
 **How will this affect your organization:**
