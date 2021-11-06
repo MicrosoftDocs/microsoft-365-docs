@@ -25,8 +25,6 @@ ms.collection:
 
 :::image type="content" source="media/mdb-setup-process-2.png" alt-text="Setup and configuration process for Microsoft Defender for Business.":::
 
-<br/>
-
 | Step  | Article | Description  |
 |---------|---------|--------|
 | 1 | [Review the requirements](mdb-requirements.md) | Review the requirements, including supported operating systems, for Microsoft Defender for Business. |
