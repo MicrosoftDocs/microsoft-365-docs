@@ -59,7 +59,9 @@ You also need to ensure that you Lync Server 2013 deployment fully up to date. W
 
 - [September 2021 cumulative update 5.0.8308.1149 for Lync Server 2013, Core Components](https://support.microsoft.com/topic/september-2021-cumulative-update-5-0-8308-1149-for-lync-server-2013-core-components-6755903a-fc9a-44d2-b835-2a6d01f14043): This update replaces the Live ID authentication with OAuth authentication protocol for the `Move-CSUser` cmdlet, which is used for moving on-premises users to Microsoft Teams.
 
-Even though the user experience in Microsoft Teams is far richer and superior to Lync, it is also dramatically different. Therefore, you will also need to prepare your organization and your users to ensure a rapid adoption of Microsoft Teams. We have a wealth of information available on how to prepare your organization, plan your upgrade to Teams, and ensure a successful rollout. We recommend that you start at our [Teams upgrade portal](/MicrosoftTeams/upgrade-skype-teams) where you can find technical information, training resources, links to Ignite sessions, available help resources, case studies and more.
+Even though the user experience in Microsoft Teams is far richer and superior to Lync, it is also dramatically different. Therefore, you will also need to prepare your organization and your users to ensure a rapid adoption of Microsoft Teams. We have a wealth of information available on how to prepare your organization, plan your upgrade to Teams, and ensure a successful rollout. 
+
+**We recommend that you start at our [Teams upgrade portal](/MicrosoftTeams/upgrade-skype-teams)** where you can find technical information, training resources, links to Ignite sessions, available help resources, case studies and more.
 
 :::image type="content" source="../media/teams-upgrade-portal.png" alt-text="Screenshot of the Teams upgrade portal":::
 
