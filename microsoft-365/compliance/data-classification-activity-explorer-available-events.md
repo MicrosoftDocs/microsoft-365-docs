@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "A listing of labeling activities that are available in Activity explorer."
+description: "A list of labeling activities that are available in Activity explorer."
 ---
 
 # Labeling activities that are available in Activity explorer
