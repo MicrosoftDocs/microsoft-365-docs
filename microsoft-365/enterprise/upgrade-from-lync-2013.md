@@ -61,7 +61,7 @@ You also need to ensure that you Lync Server 2013 deployment fully up to date. W
 
 Even though the user experience in Microsoft Teams is far richer and superior to Lync, it is also dramatically different. Therefore, you will also need to prepare your organization and your users to ensure a rapid adoption of Microsoft Teams. We have a wealth of information available on how to prepare your organization, plan your upgrade to Teams, and ensure a successful rollout. We recommend that you start at our [Teams upgrade portal](/MicrosoftTeams/upgrade-skype-teams) where you can find technical information, training resources, links to Ignite sessions, available help resources, case studies and more.
 
-:::image type="content" source="/media/teams-upgrade-portal.png" alt-text="Screenshot of the Teams upgrade portal":::
+:::image type="content" source="../media/teams-upgrade-portal.png" alt-text="Screenshot of the Teams upgrade portal":::
 
 ### Upgrade to Skype for Business Server
  
