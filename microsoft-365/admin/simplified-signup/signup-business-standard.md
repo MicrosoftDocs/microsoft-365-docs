@@ -75,6 +75,9 @@ The table below outlines each choice.
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
+> [!NOTE]
+> This applies to M365 Business Standard and M365 Apps for Business
+
 You'll sign into Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
