@@ -43,6 +43,7 @@ This event is generated each time an unlabeled document is labeled or an email i
 |Power BI desktop and web        | No| Accessible in the Microsoft 365 audit logs         |
 |Microsoft Cloud App Security (MCAS)         |No|         |
 
+
 ## Sensitivity label changed
 
 This event is generated each time a sensitivity label is updated on the document or email.
@@ -68,6 +69,7 @@ This event is generated each time a sensitivity label is updated on the document
 |Power BI desktop and Web         |No         |Accessible in the Microsoft 365 audit logs |
 |MCAS     |No         |         |
 
+
 ## Sensitivity label removed
 
 This event is generated each time a sensitivity label is removed from a file or document.
@@ -88,6 +90,7 @@ This event is generated each time a sensitivity label is removed from a file or 
 |RMS service         |Not applicable         |
 |Power BI desktop and Web         |No         |Accessible in the Microsoft 365 audit logs |
 |MCAS     |No         |         |
+
  
 
 ## Sensitivity label file read
@@ -106,6 +109,7 @@ This event is generated each time a sensitivity labeled or protected document is
 |RMS service         |Yes         |The *access* action is mapped to the *file read* action in Activity explorer |
 |Power BI desktop and Web         |No         |Accessible in the Microsoft 365 audit logs |
 |MCAS     |No         |         |
+
 
 
 ## Files discovered
