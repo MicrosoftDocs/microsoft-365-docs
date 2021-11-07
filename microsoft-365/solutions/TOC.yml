@@ -307,6 +307,8 @@
         href: /microsoft-365/security/defender-endpoint/deployment-phases.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
+      - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
+        href: ../security/office-365-security/migrate-to-defender-for-office-365.md        
       - name: Security recommendations for priority accounts in Microsoft 365
         href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
       - name: Remove a former employee and secure data
@@ -334,7 +336,7 @@
     
 - name: Industry-specific guidance
   items: 
-    - name: Finance
+    - name: Financial services
       items:
       - name: Security and compliance for financial services
         href: financial-services-secure-collaboration.md
