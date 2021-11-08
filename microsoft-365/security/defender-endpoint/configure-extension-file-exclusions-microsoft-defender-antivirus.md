@@ -106,14 +106,16 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
-    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. Enter **0** in the **Value** column.
+    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. 
+    5. Enter **0** in the **Value** column.
 
 5. Choose **OK**.
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
-    3. Enter each file extension on its own line under the **Value name** columnEnter **0** in the **Value** column.
+    3. Enter each file extension on its own line under the **Value name** column.
+    4. Enter **0** in the **Value** column.
 
 7. Choose **OK**.
 
