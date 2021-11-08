@@ -98,7 +98,7 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 ##### Windows "temp.edb" files
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
-- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
+- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
 ##### Windows Update files or Automatic Update files
 
