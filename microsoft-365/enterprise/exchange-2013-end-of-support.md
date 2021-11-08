@@ -1,8 +1,8 @@
 ---
 title: "Exchange 2013 end of support roadmap"
-ms.author: dstrome
-author: dstrome
-manager: laurawi
+ms.author: jhendr
+author: jhendr
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
