@@ -180,9 +180,6 @@ Exchange 2019 includes all the features of previous releases of Exchange. It mos
 
 |Exchange release|Features|
 |---|---|
-|**Exchange 2013**|Simplified architecture reduces the number of server roles to three (Mailbox, Client Access, Edge Transport)|
-||Data loss prevention policies (DLP) that help keep sensitive information from leaking|
-||Improved Outlook Web App experience|
 |**Exchange 2016**|*Features from Exchange 2013 and …*|
 ||Further simplified server roles to just Mailbox and Edge Transport|
 ||Improved DLP along with integration with SharePoint|
@@ -212,15 +209,6 @@ Use the following resources to help with your migration:
 - System requirements for Exchange [2016](/exchange/plan-and-deploy/system-requirements?view=exchserver-2016&preserve-view=true), [2013](/Exchange/exchange-2013-system-requirements-exchange-2013-help)
 
 
-## Summary of options for Office 2010 client and servers and Windows 7
-
-For a visual summary of the upgrade, migrate, and move-to-the-cloud options for Office 2010 clients and servers and Windows 7, see the [end of support poster](../downloads/Office2010Windows7EndOfSupport.pdf).
-
-[![End of support for Office 2010 clients and servers and Windows 7 poster.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
-
-This one-page poster illustrates the various paths you can take to respond to Office 2010 client and server products and Windows 7 reaching end of support, with preferred paths and option support in Microsoft 365 Enterprise highlighted.
-
-You can also [download](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) this poster and print it in letter, legal, or tabloid (11 x 17) format.
 
 ## What if I need help?
 
