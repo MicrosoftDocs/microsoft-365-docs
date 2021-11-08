@@ -239,8 +239,7 @@ Get started with Defender for Cloud Apps now. Later you can set up more sophisti
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 Defender portal](./defender/overview-security-center.md)
-- [Monitor and view reports](./defender/overview-security-center.md)
+- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps

@@ -50,13 +50,13 @@ You can read more about this metadata change from the following resources:
 
 Because of these changes, do not enable this setting if you have any apps, services, scripts, or tools in your organization that reads or writes labeling metadata to the old location. If you do, some example consequences:
 
-- A document that is labeled appears to users to be unlabeled
+- A document that is labeled appears to users to be unlabeled.
 
-- A document displays an out-of-date label to users
+- A document displays an out-of-date label to users.
 
-- Co-authoring and AutoSave won't work for a labeled and encrypted document if another user has it open in an Office desktop app that doesn't support the new labeling metadata
+- Co-authoring and AutoSave won't work for a labeled and encrypted document if another user has it open in an Office desktop app that doesn't support the new labeling metadata. Be aware that this scenario can also occur for users outside your organization if external users and invited guests have the file open.
 
-- An Exchange Online mail flow rule that [identifies labels as custom properties in Office attachments](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) fails to encrypt the email and attachment, or incorrectly encrypts them
+- An Exchange Online mail flow rule that [identifies labels as custom properties in Office attachments](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) fails to encrypt the email and attachment, or incorrectly encrypts them.
 
 Check the following section for a list of apps and services that support this setting and the changes to the labeling metadata.
 
@@ -85,7 +85,7 @@ Make sure you understand the following prerequisites before you turn on this fea
     - **Endpoint data loss prevention (Endpoint DLP):**
         - Windows 10 1809 with KB 4601383
         - Windows 10 1903 and 1909 with KB 4601380
-        - Windows 10 2004 with KB 46013
+        - Windows 10 2004 with KB 4601382
         - Windows versions later than Windows 10 2004 are supported without KB updates
     
     - **Apps and services that use the Microsoft Information Protection SDK:** 

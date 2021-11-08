@@ -108,7 +108,7 @@ This setting can be enabled again at any time.
 Once disabled, accounts will no longer be routed to security.microsoft.com, and you will once again have access to the former portal - securitycenter.windows.com or securitycenter.microsoft.com. 
 
 ## Related information
-- [Microsoft 365 Defender overview](overview-security-center.md)
+- [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813) 
 - [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/) 

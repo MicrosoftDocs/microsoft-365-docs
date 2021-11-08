@@ -333,7 +333,7 @@ After completing this task, you now have successfully configured Network Protect
 
 #### To set Controlled Folder Access rules in Audit mode
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then schoose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then choose **Create Exploit Guard Policy**.
 
     ![A screenshot of Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 

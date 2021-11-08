@@ -49,8 +49,8 @@ You have an older version of "Microsoft Authenticator" app installed on your dev
 
 **Solution:**
 
-Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)
-from Google Play Store and try again
+Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)
+from Google Play Store and try again.
 
 ## Sign in failed - invalid license
 

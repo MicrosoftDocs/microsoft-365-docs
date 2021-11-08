@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
+ms.author: dansimp
 ms.reviewer:
 manager: dansimp
 ms.custom: asr

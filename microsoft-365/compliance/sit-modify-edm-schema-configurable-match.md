@@ -93,8 +93,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - A-Z
     - a-z
     - \"
-    - \,
-    - |
+    - \,    
 
 6. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 

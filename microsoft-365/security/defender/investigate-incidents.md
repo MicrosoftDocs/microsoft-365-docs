@@ -77,7 +77,7 @@ On the **Alerts** tab, you can view the alert queue for alerts related to the in
 
 - Severity.
 - The entities that were involved in the alert.
-- The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365).
+- The source of the alerts (Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Defender for Cloud Apps, and App Governance).
 - The reason they were linked together.
 
 Here's an example.
