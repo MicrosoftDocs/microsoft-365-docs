@@ -88,7 +88,9 @@ Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
+3. In the **Create a profile** flyout, select **Platform** and choose the **Profile Type** as **Templates**.
+
+4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
 4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
