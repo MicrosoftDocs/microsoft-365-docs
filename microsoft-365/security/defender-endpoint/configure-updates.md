@@ -33,8 +33,7 @@ ms.technology: m365d
 
 To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Endpoint Manager, and PowerShell.
 
-The following table lists the available group policy settings for configuring
-update channels:
+The following table lists the available group policy settings for configuring update channels:
 
 <br>
 
