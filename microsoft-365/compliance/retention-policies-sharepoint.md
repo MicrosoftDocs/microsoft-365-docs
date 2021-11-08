@@ -58,7 +58,17 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It works in the following way:
 
+<<<<<<< HEAD
 When a user changes or delete an item that's subject to retention, a check is made whether the content has been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the user to change or delete the original content.
+=======
+Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because these items remain in their original location. SharePoint prevents users from deleting items when the applied retention label is configured to retain the content, and SharePoint versioning preserves older versions when items are edited. But for other scenarios, the Preservation Hold library is used when items must be retained:
+- Items in OneDrive that have standard retention labels
+- Items in SharePoint or OneDrive that have retention labels that declares them a record, and the item is unlocked for editing
+- Files that were shared as cloud attachments that have a retention label applied automatically
+- Items that are subject to retention policies
+
+To retain this content when a user attempts to change or delete it, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content.
+>>>>>>> 7e4bfd93cc5a7b2bb313424e850df04b9694fee0
   
 A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
@@ -108,9 +118,25 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 2. **If the content is not deleted** during the configured period: At the end of the configured period in the retention policy, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.
 
-## How retention works for OneNote content
+## How retention works with cloud attachments
 
-When you apply a retention policy to a location that includes OneNote content, behind the scenes, the different OneNote sections are individual files. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+Cloud attachments are embedded links to files that users share, and these can be retained and deleted when your users share them in Outlook emails and Teams messages. When you [automatically apply a retention label to cloud attachments](apply-retention-labels-automatically.md#auto-apply-labels-to-cloud-attachments), the retention label is applied to a copy of the shared file, which is stored in the Preservation Hold library.
+
+For this scenario, we recommend you configure the label setting to start the retention period based on when the item is labeled. If you do configure the retention period based on when the item is created or last modified, this date is taken from the original file at the time of sharing. If you configure the start of retention to be when last modified, this setting has no effect for this copy in the Preservation Hold library.
+
+However, if the original file is modified and then shared again, a new copy of the file as a new version is saved and labeled in the Preservation Hold library.
+
+If the original file is shared again but not modified, the labeled date of the copy in the Preservation Hold library is updated. This action resets the start of the retention period and is why we recommend you configure the start of the retention period to be based on when the item is labeled.
+
+Because the retention label is not applied to the original file, the labeled file is never modified or deleted by a user. The labeled file remains in the Preservation Hold library until the timer job identifies that its retention period has expired. If the retention settings are configured to delete items, the file is then moved to the second-stage Recycle Bin, where it's permanently deleted at the end of 93 days:
+
+![How retention works for cloud attachments stored in SharePoint and OneDrive](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
+
+The copy that's stored in the Preservation Hold library is typically created within an hour from the cloud attachment being shared.
+
+## How retention works with OneNote content
+
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
 
 ## How retention works with document versions
 
@@ -136,7 +162,9 @@ When a user leaves your organization, any content created by that user is not af
 
 **OneDrive**:
 
-If a user leaves your organization, any files that are subject to a retention policy or has a retention label will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention label as a record, the document will not be deleted until the retention period is over, after which time the content is permanently deleted.
+If a user leaves your organization, any files that are subject to a retention policy or has a retention label will remain subject to the retention settings for the duration of the retention period specified in the policy or label. During that time, all sharing access continues to work and the content continues to be discoverable by Content Search and eDiscovery. 
+
+When the retention period expires and the retention settings included a delete action, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin.
 
 ## Configuration guidance
 

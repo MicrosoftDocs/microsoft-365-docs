@@ -122,22 +122,6 @@
 ##### [Resources](mac-resources.md)
 ##### [Application license terms](mde-terms-mac.md)
 
-#### [Microsoft Defender for Endpoint on iOS]()
-##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-##### [What's New](ios-whatsnew.md)
-
-##### [Deploy]()
-###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
-###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
-
-##### [Configure]()
-###### [Configure iOS features](ios-configure-features.md)
-
-##### [FAQs and Troubleshooting](ios-troubleshoot.md)
-
-##### [Privacy](ios-privacy.md)
-
-
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 ##### [What's New](linux-whatsnew.md)
@@ -162,34 +146,56 @@
 ###### [Troubleshoot installation issues](linux-support-install.md)
 ###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
+###### [Troubleshoot RHEL 6 installation issues](linux-support-rhel.md)
 ###### [Troubleshoot performance issues](linux-support-perf.md)
 ###### [Troubleshoot missing events issues](linux-support-events.md)
 
 ##### [Privacy](linux-privacy.md)
 ##### [Resources](linux-resources.md)
 
-#### [Microsoft Defender for Endpoint on Android]()
-##### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+#### [Mobile Threat Defense]()
+##### [Mobile Threat Defense Overview](mtd.md)
 
-##### [Deploy]()
-###### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
+##### [Microsoft Defender for Endpoint on Android]()
+###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+###### [What's new](android-whatsnew.md)
 
-##### [Configure]()
-###### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
-###### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
+###### [Deploy]()
+####### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 
-##### [Privacy]()
-###### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
+###### [Configure]()
+####### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+####### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
 
-##### [Troubleshoot]()
-###### [Troubleshoot issues](android-support-signin.md)
+###### [Privacy]()
+####### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
+
+###### [Troubleshoot]()
+####### [Troubleshoot issues](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint on iOS]()
+###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+###### [What's New](ios-whatsnew.md)
+
+###### [Deploy]()
+####### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+####### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
+
+###### [Configure iOS features](ios-configure-features.md)
+
+###### [FAQs and Troubleshooting](ios-troubleshoot.md)
+
+###### [Privacy](ios-privacy.md)
 
 ##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
+#### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
+
 
 
 
@@ -477,6 +483,7 @@
 
 
 ## Reference
+### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
@@ -490,7 +497,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
-###### [Get partner application access](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
@@ -639,13 +646,9 @@
 
 
 #### [SIEM integration]()
-##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
-##### [Learn about different ways to pull detections](configure-siem.md)
-##### [Enable SIEM integration](enable-siem-integration.md)
-##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
+##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
 ##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
-##### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -660,19 +663,24 @@
 ###### [Using device groups](machine-groups.md)
 ###### [Create and manage device tags](machine-tags.md)
 
-#### [Managed security service provider (MSSP) integration]()
-##### [Configure managed security service provider integration](configure-mssp-support.md)
-##### [Supported managed security service providers](mssp-list.md)
-##### [Grant MSSP access to the portal](grant-mssp-access.md)
-##### [Access the MSSP customer portal](access-mssp-portal.md)
-##### [Configure alert notifications](configure-mssp-notifications.md)
-##### [Get partner application access](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [Managed security service provider (MSSP) integration]()
+#### [Configure managed security service provider integration](configure-mssp-support.md)
+#### [Supported managed security service providers](mssp-list.md)
+#### [Grant MSSP access to the portal](grant-mssp-access.md)
+#### [Access the MSSP customer portal](access-mssp-portal.md)
+#### [Configure alert notifications](configure-mssp-notifications.md)
+#### [Get partner application access](exposed-apis-create-app-partners.md)
+#### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
+#### [Managed security service provider opportunity](mssp-support.md)
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
-#### [Managed security service provider opportunity](mssp-support.md)
 #### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
-
 ### [Integrations]()
 #### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)

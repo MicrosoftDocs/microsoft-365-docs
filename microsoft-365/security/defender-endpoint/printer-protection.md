@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
@@ -145,9 +145,9 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
- 
+
  You can use the PnP event to find the USB printer used in the organization:
- 
+
 ```kusto
 //find the USB Printer VID/PID
 DeviceEvents

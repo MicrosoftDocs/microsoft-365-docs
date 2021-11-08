@@ -25,6 +25,12 @@ description: "There are 200 sensitive information types that are ready for you t
 
 This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
+> [!NOTE]
+> Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
+> - Low confidence: 65 or below
+> - Medium confidence: 75
+> - High confidence: 85
+
 ## ABA routing number
 
 ### Format
@@ -5349,13 +5355,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_estonia_eu_driver's_license_number
 
--- permis de conduire
+- permis de conduire
 - juhilubade numbrid
 - juhiloa number
 - juhiluba
 
-
 ## Estonia Personal Identification Code
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -10312,6 +10318,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Corporate
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -10373,6 +10380,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Personal
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -15190,6 +15198,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - številke vozniških dovoljenj
 
 ## Slovenia Unique Master Citizen Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -15710,6 +15719,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - licencia manejo
 
 ## Spain DNI
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -17286,6 +17296,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## U.K. Unique Taxpayer Reference Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -17661,20 +17672,16 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function `Func_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_unformatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function  Func_unformatted_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_randomized_formatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
-
-A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_randomized_unformatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function `Func_randomized_formatted_ssn` or `Func_randomized_unformatted_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 
 ```xml
