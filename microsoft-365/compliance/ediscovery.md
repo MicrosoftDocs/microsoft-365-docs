@@ -126,7 +126,7 @@ The following sections show the minimum subscription requirements for Content se
 - Microsoft 365 E1 subscription
 - Microsoft 365 G1 subscription
 - Microsoft 365 F1 or F3 subscription, or F5 Security add-on
-- Microsoft 365 Business Premium
+- Microsoft 365 Business Premium subscription
 - Office 365 Education A1 subscription
 - Office 365 E1 subscription
 
