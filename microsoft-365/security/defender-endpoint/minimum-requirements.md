@@ -56,7 +56,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 
 Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
-- [Microsoft Defender for Cloud with Microsoft Defender for Cloud enabled](/azure/security-center/security-center-pricing)
+- [Microsoft Defender for Cloud with enhanced security features enabled](/azure/security-center/enable-enhanced-security)
 - Microsoft Defender for Endpoint for Server (one per covered server)
 
 > [!NOTE]
