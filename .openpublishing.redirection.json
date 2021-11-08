@@ -5540,6 +5540,11 @@
       "source_path": "microsoft-365/compliance/app-governance-visibility-insights-view-apps.md",
       "redirect_url": "/cloud-app-security/app-governance-visibility-insights-view-apps",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/endpoint-dlp-configure-proxy.md",
+      "redirect_url": "/compliance/device-onboarding-configure-proxy",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,5 +1,5 @@
 ---
-title: "Configure device proxy and internet connection settings for Endpoint DLP"
+title: "Configure device proxy and internet connection settings for Information Protection"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Learn how to Configure device proxy and internet connection settings for Endpoint DLP."
+description: "Configure device proxy and internet connection settings for Information Protection"
 ---
 
-# Configure device proxy and internet connection settings for Endpoint DLP
+# Configure device proxy and internet connection settings for Information Protection
 
 Microsoft Endpoint DLP uses Microsoft Windows HTTP (WinHTTP) to report data and communicate with the Microsoft endpoint cloud service. The embedded Endpoint DLP runs in system context using the LocalSystem account.
 

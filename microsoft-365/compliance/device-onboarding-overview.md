@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Set up Windows 10 devices for Microsoft 365 information protection solutions."
+description: "Set up Windows 10 or Windows 11 or macOS devices for Microsoft 365 information protection solutions."
 ---
 
 # Get started with device onboarding
@@ -28,9 +28,9 @@ description: "Set up Windows 10 devices for Microsoft 365 information protection
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 devices be onboarded into the service so that they can send monitoring data to the services.
+Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows 11, and macOS (Catalina 10.15 and higher) devices be onboarded into the service so that they can send monitoring data to the services.
  
-Microsoft 365 Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
+Microsoft 365 Endpoint DLP allows you to monitor Windows 10/11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
 
 Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
@@ -69,23 +69,22 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 
 ### Prepare your endpoints
 
-Make sure that the Windows 10 devices that you need to onboard meet these requirements.
+Make sure that the Windows devices that you need to onboard meet these requirements.
 
-1. Must be running Windows 10 x64 build 1809 or later.
+1. Must be running Windows 10 x64 build 1809 or later or Windows 11.
 
 2. Antimalware Client Version is 4.18.2009.7 or newer. Check your current version by opening Windows Security app, select the Settings icon, and then select About. The version number is listed under Antimalware Client Version. Update to the latest Antimalware Client Version by installing Windows Update KB4052623.
 
    > [!NOTE]
    > None of Windows Security components need to be active, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
 
-3. The following Windows Updates are installed for devices that will be monitored.
+3. The following Windows Updates (for Windows 10) are installed for devices that will be monitored.
 
    > [!NOTE]
    > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
     > - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
     > - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
     > - For Windows 10 2004 - KB4568831, KB4577063
-    > - 
 
 4. All devices must be one of these:
 
@@ -97,7 +96,7 @@ Make sure that the Windows 10 devices that you need to onboard meet these requir
 
 6. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
 
-7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for devices](endpoint-dlp-configure-proxy.md).
+7. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
 ## Onboarding devices into device management
 
