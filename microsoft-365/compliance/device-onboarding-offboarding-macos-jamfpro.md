@@ -26,7 +26,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 ## Get registered
 
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/Ignite2021DLP).
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Applies to:**
 
