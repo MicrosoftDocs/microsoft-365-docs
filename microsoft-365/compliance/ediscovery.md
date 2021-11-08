@@ -135,7 +135,7 @@ The following sections show the minimum subscription requirements for Content se
 
 - Microsoft 365 E3 subscription
 - Microsoft 365 G3 subscription
-- Microsoft 365 Business Premium
+- Microsoft 365 Business Premium subscription
 - Microsoft 365 F5 Compliance add-on or F5 Security & Compliance add-on
 - Microsoft 365 Education A3 or Office 365 Education A3 subscription
 - Office 365 E3 subscription
