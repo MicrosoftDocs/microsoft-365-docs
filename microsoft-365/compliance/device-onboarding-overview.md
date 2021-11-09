@@ -69,7 +69,7 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 
 ### Prepare your macOS devices
 
-See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+<!-- See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview) -->
 
 ### Prepare your Windows devices
 
