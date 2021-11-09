@@ -65,7 +65,7 @@ The following table lists your settings and options:<br/><br/>
 
 - [Compare plans for small and medium-sized businesses](compare-mdb-m365-plans.md)
 
-- [View or edit device policies in Microsoft Defender for Business](mdb-view-edit-device-policies.md) 
+- [View or edit device policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md) 
 
 - [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
 

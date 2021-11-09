@@ -45,7 +45,7 @@ With Defender for Business, you can help protect the devices and data your busin
 - **Provide you with an overview of Defender for Business** so you know what’s included and how it works. (This article describes the features and capabilities that are included.)
 - **Walk through setting up and configuring your threat protection capabilities**. (See [Set up and configure Defender for Business](mdb-setup-configuration.md).)
 - **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. (See [Get started using Microsoft Defender for Business](mdb-get-started.md).)
-- **Provide guidance on managing [devices](mdb-manage-devices.md) and [security policies and settings](mdb-view-edit-device-policies.md), and configuring [firewall](mdb-firewall.md)**.  
+- **Provide guidance on managing [devices](mdb-manage-devices.md) and [security policies and settings](mdb-manage-next-generation-protection.md), and configuring [firewall](mdb-firewall.md)**.  
 
 ## What's included in Microsoft Defender for Business?
 

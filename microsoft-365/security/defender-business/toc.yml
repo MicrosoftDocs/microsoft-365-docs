@@ -44,7 +44,7 @@
       - name: Manage devices
         href: mdb-manage-devices.md
       - name: View and edit device policies
-        href: mdb-view-edit-device-policies.md
+        href: mdb-manage-next-generation-protection.md
       - name: Manage your firewall policies
         href: mdb-manage-firewall.md
     - name: Reference information

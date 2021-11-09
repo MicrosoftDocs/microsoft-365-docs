@@ -54,7 +54,7 @@ landingContent:
           - text: Step 4. Onboard devices
             url: mdb-onboard-devices.md
           - text: Step 5. Configure your security settings
-            url: mdb-view-edit-device-policies.md
+            url: mdb-manage-next-generation-protection.md
 
   # Card
   - title: Get started
@@ -84,7 +84,7 @@ landingContent:
           - text: Manage devices
             url: mdb-manage-devices.md
           - text: View and edit security policies and settings
-            url: mdb-view-edit-device-policies.md
+            url: mdb-manage-next-generation-protection.md
           - text: Manage your firewall policies
             url: mdb-manage-firewall.md
  
