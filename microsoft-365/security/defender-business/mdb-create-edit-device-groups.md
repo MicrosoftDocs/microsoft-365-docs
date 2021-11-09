@@ -23,14 +23,13 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
+## What is a device group?
+
 In Microsoft Defender for Business, policies are applied to devices by using device groups. A device group is a collection of devices that is grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
 
 Defender for Business includes default device groups that you can use. However, you can create new device groups. All device groups, including your default device groups and any custom device groups that you define, are stored in Azure Active Directory (Azure AD).
- 
 
-Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email.
-Create a new device group to apply a policy with specific settings that are different from the default policy.
-When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
+Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email. Create a new device group to apply a policy with specific settings that are different from the default policy.
 
 ## Create a new device group
 
@@ -59,9 +58,8 @@ Currently, in Defender for Business, you can create a new device group while you
 
 10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
-
 ## Next steps
 
-- [View or edit device policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md).
+- [View or edit next-generation protection policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md).
 
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
