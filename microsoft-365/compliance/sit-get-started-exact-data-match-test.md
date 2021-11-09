@@ -71,10 +71,12 @@ If you don't find any matches, try the following:
 
 - Confirm that your sensitive data was uploaded correctly using the commands explained in [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md#hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types).
 
--  If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
+- If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
 
-## Next step
+## Use your EDM SIT in DLP and MIP policies
 
-You EDM based custom SIT is ready for use in data loss prevention policies.
+Your EDM based custom SIT is ready for use in Information Protection policies, like:
 
-- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies)
