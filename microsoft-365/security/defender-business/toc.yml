@@ -39,14 +39,16 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
+      - name: View and manage devices
+        href: mdb-manage-devices.md
     - name: Manage settings and devices
       items: 
-      - name: Manage devices
-        href: mdb-manage-devices.md
       - name: Manage next-generation protection policies
         href: mdb-manage-next-generation-protection.md
       - name: Manage your firewall policies
         href: mdb-manage-firewall.md
+      - name: Create and edit device groups
+        href: mdb-create-edit-device-groups.md
     - name: Reference information
       items: 
       - name: Next-generation protection settings
