@@ -67,7 +67,7 @@ To ensure investigation actions are up to date, any investigation that has pendi
 
 ## The display of incident evidence for email and email clusters
 
-Email-based evidence in the Evidence and Response tab for an incident now displays the following information.
+Email-based evidence in the **Evidence and Response** tab for an incident now displays the following information.
 
 :::image type="content" source="../../media/email-analysis-investigations/email-analysis-evidence-example.png" alt-text="Example of email analysis information in Evidence and Response." lightbox="../../media/email-analysis-investigations/email-analysis-evidence-example.png":::
 

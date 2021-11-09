@@ -51,7 +51,7 @@ The following table describes this illustration.
 |6     | When integrating an on-premises environment, it is strongly encouraged to use an Exchange server for supported management and administration of mail related attributes, settings, and configurations |
 |7     | Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).|
 
-On-premises integration is common but optional. If your environment is cloud-only this guidance will also work for you.
+On-premises integration is common but optional. If your environment is cloud-only, this guidance will also work for you.
 
 ## Understand key concepts
 

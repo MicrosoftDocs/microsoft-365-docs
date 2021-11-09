@@ -34,7 +34,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 If you comply with these license terms, you have the rights below. By using the software, you accept these terms.
 
-1. **INSTALLATION AND USE RIGHTS**
+1. **INSTALLATION AND USE RIGHTS.**
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** The software may include third-party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third-party applications are for your information only.

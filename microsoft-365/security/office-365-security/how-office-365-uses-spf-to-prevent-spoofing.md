@@ -247,7 +247,7 @@ When you include third-party domains in your SPF TXT record, you need to confirm
 ## How to view your current SPF TXT record and determine the number of lookups that it requires
 <a name="SPFTroubleshoot"> </a>
 
-You can use nslookup to view your DNS records, including your SPF TXT record. Or, if you prefer, there are a number of free, online tools available that you can use to view the contents of your SPF TXT record. By looking at your SPF TXT record and following the chain of include statements and redirects, you can determine how many DNS lookups the record requires. Some online tools will even count and display these lookups for you. Keeping track of this number will help prevent messages sent from your organization from triggering a permanent error, called a permerror, from the receiving server.
+You can use nslookup to view your DNS records, including your SPF TXT record. There are a number of free, online tools available that you can use to view the contents of your SPF TXT record. By looking at your SPF TXT record and following the chain of include statements and redirects, you can determine how many DNS lookups the record requires. Some online tools will even count and display these lookups for you. Keeping track of this number will help prevent messages sent from your organization from triggering a permanent error, called a permerror, from the receiving server.
 
 ## For more information
 <a name="SPFTroubleshoot"> </a>

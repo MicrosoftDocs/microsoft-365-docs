@@ -36,7 +36,7 @@ Retrieves specific [Machine Action](machineaction.md) by its ID.
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 

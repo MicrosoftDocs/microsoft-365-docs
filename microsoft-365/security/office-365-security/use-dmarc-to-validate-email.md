@@ -56,7 +56,7 @@ S:
 S: Greetings User,
 S:
 S: We need to verify your banking details.
-S: Please click the following link to verify that we have the right information for your account.
+S: Please click the following link to verify that Microsoft has the right information for your account.
 S:
 S: https://short.url/woodgrovebank/updateaccount/12-121.aspx
 S:
@@ -89,7 +89,7 @@ Microsoft sends its DMARC reports to [Agari](https://agari.com), a third party. 
 
 ## Set up DMARC for inbound mail
 
-You don't have to do a thing to set up DMARC for mail that you receive in Microsoft 365. We've taken care of everything for you. If you want to learn what happens to mail that fails to pass our DMARC checks, see [How Microsoft 365 handles inbound email that fails DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
+You don't have to do a thing to set up DMARC for mail that you receive in Microsoft 365. It is all taken care of. If you want to learn what happens to mail that fails to pass our DMARC checks, see [How Microsoft 365 handles inbound email that fails DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
 
 ## Set up DMARC for outbound mail from Microsoft 365
 
@@ -249,7 +249,7 @@ contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```
 
-All, or most, email will first be routed to mail.contoso.com since it's the primary MX, and then mail will get routed to EOP. In some cases, you might not even list EOP as an MX record at all and simply hook up connectors to route your email. EOP does not have to be the first entry for DMARC validation to be done. It just ensures the validation, as we cannot be certain that all on-premise/non-O365 servers will do DMARC checks.  DMARC is eligible to be enforced for a customer's domain (not server) when you set up the DMARC TXT record, but it is up to the receiving server to actually do the enforcement.  If you set up EOP as the receiving server, then EOP does the DMARC enforcement.
+All, or most, email will first be routed to mail.contoso.com since it's the primary MX, and then mail will get routed to EOP. In some cases, you might not even list EOP as an MX record at all and simply hook up connectors to route your email. EOP does not have to be the first entry for DMARC validation to be done. It just ensures the validation, to be certain that all on-premise/non-O365 servers will do DMARC checks.  DMARC is eligible to be enforced for a customer's domain (not server) when you set up the DMARC TXT record, but it is up to the receiving server to actually do the enforcement.  If you set up EOP as the receiving server, then EOP does the DMARC enforcement.
 
 :::image type="content" source="../../media/Tp_DMARCTroublehoot.png" alt-text="A troubleshooting graphic for DMARC, courtesy of Daniel Mande" lightbox="../../media/Tp_DMARCTroublehoot.png":::
 

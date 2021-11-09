@@ -35,7 +35,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
     a) **General.** You may install and use one copy of the software on an iOS-based device you own or control as permitted by Apple’s app store usage rules.
 
-    b) **Third Party Terms of Agreement.**  You must comply with applicable third party terms of agreement when using the software.
+    b) **Third Party Terms of Agreement.** You must comply with applicable third party terms of agreement when using the software.
 
     c) **Work or School Accounts.** You can sign into the software with a work or school email address. If you do, you agree that the owner of the domain associated with your email address may control and administer your account, and access and process your data, including the contents of your communications and files. You further agree that your use of the software may be subject to: i) your organization’s guidelines and policies regarding the use of the software; and ii) the agreements Microsoft has with you or your organization, and in such case these terms may not apply.  If you already have a Microsoft account and you use a separate work or school email address to access the software, you may be prompted to update the email address associated with your Microsoft account to continue accessing the software.
 

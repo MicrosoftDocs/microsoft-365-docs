@@ -39,8 +39,8 @@ Retrieves the User related to a specific alert.
 
 ## Limitations
 
-1. You can query on alerts last updated according to your configured retention period.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- You can query on alerts last updated according to your configured retention period.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 

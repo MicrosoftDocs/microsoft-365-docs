@@ -37,8 +37,8 @@ Retrieves specific [Alert](alerts.md) by its ID.
 
 ## Limitations
 
-1. You can get alerts last updated according to your configured retention period.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- You can get alerts last updated according to your configured retention period.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
