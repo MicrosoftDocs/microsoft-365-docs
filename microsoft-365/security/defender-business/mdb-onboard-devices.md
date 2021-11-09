@@ -94,7 +94,7 @@ Follow these steps to onboard devices:
 If you want to onboard your company's devices in phases (as in gradual device onboarding), choose the manual onboarding process. Follow the steps in [Onboarding devices in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
 
 > [!TIP]
-> You don't have to choose the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
+> You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
 ## What if I want to offboard a device?
 
