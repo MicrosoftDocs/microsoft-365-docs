@@ -1,5 +1,5 @@
 ---
-title: Create or edit device groups in Microsoft Defender for Business
+title: Device groups in Microsoft Defender for Business
 description: Learn how to manage devices in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Create or edit device groups in Microsoft Defender for Business
+# Device groups in Microsoft Defender for Business
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).

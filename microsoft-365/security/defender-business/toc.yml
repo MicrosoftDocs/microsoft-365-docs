@@ -47,7 +47,7 @@
         href: mdb-manage-next-generation-protection.md
       - name: Manage your firewall policies
         href: mdb-manage-firewall.md
-      - name: Create and edit device groups
+      - name: Create device groups
         href: mdb-create-edit-device-groups.md
     - name: Reference information
       items: 
