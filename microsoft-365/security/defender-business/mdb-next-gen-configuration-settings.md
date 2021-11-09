@@ -73,10 +73,6 @@ The following additional settings are preconfigured for next-generation protecti
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
 
-- [Compare plans for small and medium-sized businesses](compare-mdb-m365-plans.md)
-
-- [View or edit device policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md) 
-
 - [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
 
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)
