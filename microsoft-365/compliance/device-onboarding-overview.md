@@ -134,7 +134,7 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows devices](/microsoft-365/compliance/device-onboarding.md). This link takes you to a landing page where you can access Microsoft 365 information protection procedures that match the deployment package you selected in step 5:
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 or Windows 11 devices](device-onboarding.md#onboarding-tools-and-methods-for-windows-10-or-windows-11-devices). This link takes you to a landing page where you can access Microsoft 365 information protection procedures that match the deployment package you selected in step 5:
 
 Topic | Description
 :---|:---
