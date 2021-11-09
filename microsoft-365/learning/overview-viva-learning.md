@@ -64,7 +64,75 @@ Content from Microsoft Learn and Microsoft 365 Training is automatically availab
 
 ## Supported languages
 
-Viva Learning adapts to your organization's Microsoft 365 language preferences. However, Viva Learning doesn't currently support right-to-left languages.
+Viva Learning adapts to your organization's Microsoft 365 language preferences. However, Viva Learning doesn't currently support right-to-left languages. Currently, Viva Learning is supported in the following locales:
+
+:::row:::
+   :::column span="":::
+      - az-Latn-AZ
+      - bg-BG
+      - bn-IN
+      - ca-ES
+      - ca-Es-VALENCIA
+      - cs-CZ
+      - cy-GB
+      - da-DK
+      - de-DE
+      - el-GR
+      - en-GB
+      - en-US
+      - es-ES
+      - es-MX
+   :::column-end:::
+   :::column span="":::
+      - et-EE
+      - eu-ES
+      - fi-FI
+      - fil-PH
+      - fr-CA
+      - fr-FR
+      - gl-ES
+      - gu-IN
+      - hi-IN
+      - hr-HR
+      - hu-HU
+      - id-ID
+      - is-IS
+      - it-IT
+   :::column-end:::
+   :::column span="":::
+      - ja-JP
+      - ka-GE
+      - kk-KZ
+      - kn-IN
+      - ko-KR
+      - lt-LT
+      - lv-LV
+      - mk-MK
+      - ml-IN
+      - mr-IN
+      - nb-NO
+      - nl-NL
+      - nn-NO
+      - pl-PL
+   :::column-end:::
+   :::column span="":::
+      - pt-BR
+      - pt-PT
+      - ro-RO
+      - ru-RU
+      - sk-SK
+      - sl-SI
+      - sq-AL
+      - sr-Latn-RS
+      - sv-SE,ta-IN
+      - te-IN,th-TH
+      - tr-TR
+      - uk-UA
+      - vi-VN
+      - zh-CN
+      - zh-TW
+   :::column-end:::
+:::row-end:::
 
 ## Data and privacy
 
