@@ -297,7 +297,7 @@ When you choose the option for a trainable classifier, you can select one of the
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
+> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend instead, you use the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers.
 
 To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
