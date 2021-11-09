@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/04/2021
+ms.date: 11/08/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -29,7 +29,7 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 1. [Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
 2. [Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).
-3. [Choose a deployment method](#part-3-choose-a-deployment-method).
+3. [Choose a deployment method](#part-3-choose-an-onboarding-method).
 4. [See how onboarding works in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
 5. [Proceed to your next steps](#next-steps). 
 
@@ -56,9 +56,9 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 | Option | What to do next |
 |:---|:---|
 | **Automatic onboarding** (*Recommended*)<br/><br/>The automatic onboarding process sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards devices to Defender for Business. <br/><br/>We recommend this option because it enables you to onboard devices in Endpoint Manager to Defender for Business efficiently.<br/><br/>**IMPORTANT**: If you choose the automatic onboarding process, *all* devices that are enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Endpoint. | Choose how you'll manage your security policies and settings. You can choose to: <br/><br/>- Switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) <br/><br/>--- or --- <br/><br/>- Continue using Microsoft Endpoint Manager to manage your security settings and policies |
-| **Manual onboarding** <br/><br/>The manual onboarding process enables you to choose from several [deployment methods](#part-3-choose-a-deployment-method), including Microsoft Endpoint Manager. <br/><br/>You can onboard all devices at one point, or onboard devices gradually. | Proceed to [Part 3: Choose a deployment method](#part-3-choose-a-deployment-method).  |
+| **Manual onboarding** <br/><br/>The manual onboarding process enables you to choose from several [deployment methods](#part-3-choose-a-deployment-method), including Microsoft Endpoint Manager. <br/><br/>You can onboard all devices at one point, or onboard devices gradually. | Proceed to [Part 3: Choose a deployment method](#part-3-choose-an-onboarding-method).  |
 
-## Part 3: Choose a deployment method
+## Part 3: Choose an onboarding method
 
 You can choose from several deployment methods in Defender for Business, as described in the following table:
 <br/><br/>
