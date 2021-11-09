@@ -2,7 +2,6 @@
 title: View attack surface reduction events
 description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
