@@ -51,16 +51,13 @@ The following table lists your settings and options:<br/><br/>
 | **File extension exclusions** | File extension exclusions prevent files with specific extensions from being scanned by Microsoft Defender Antivirus.<br/><br/>[Learn more about file extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 | **File and folder exclusions** | File and folder exclusions prevent files that are in specific folders from being scanned by Microsoft Defender Antivirus. <br/><br/>[Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 
-## Additional next-generation protection settings
+## Preconfigured next-generation protection settings
 
-The following settings are preconfigured for next-generation protection in Defender for Business:
+The following additional settings are preconfigured for next-generation protection in Defender for Business:
 
 - Scanning of removable drives is turned on ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender))
-
 - Daily quick scans do not have a preset time ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender))
-
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender))
-
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender))
 
 ## Next steps
