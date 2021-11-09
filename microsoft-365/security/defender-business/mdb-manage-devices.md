@@ -27,6 +27,7 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
+- [Onboard a device to Defender for Business](#onboard-a-device)  
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
 ## View the list of onboarded devices
@@ -63,6 +64,10 @@ See [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-devi
 
 ## Next steps
 
-- [View or edit device policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md).
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 
 - [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+
+- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
+
+- [Create or edit device groups](mdb-create-edit-device-groups.md)
