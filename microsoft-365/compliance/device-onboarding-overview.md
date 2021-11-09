@@ -30,7 +30,7 @@ description: "Set up Windows 10 or Windows 11 or macOS devices for Microsoft 365
 
 Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows 11, and macOS (Catalina 10.15 and higher) devices be onboarded into the service so that they can send monitoring data to the services.
  
-Microsoft 365 Endpoint DLP allows you to monitor Windows 10/11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
+Microsoft 365 Endpoint DLP allows you to monitor Windows 10 or Windows 11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
 
 Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
@@ -67,7 +67,11 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 - Global admin
 - Compliance admin
 
-### Prepare your endpoints
+### Prepare your macOS devices
+
+See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+
+### Prepare your Windows devices
 
 Make sure that the Windows devices that you need to onboard meet these requirements.
 
@@ -78,10 +82,11 @@ Make sure that the Windows devices that you need to onboard meet these requireme
    > [!NOTE]
    > None of Windows Security components need to be active, but the [Real-time protection and Behavior monitor](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)) must be enabled.
 
-3. The following Windows Updates (for Windows 10) are installed for devices that will be monitored.
+3. The following Windows Updates for Windows 10 are installed for devices that will be monitored.
 
    > [!NOTE]
-   > These updates are not a pre-requisite to onboard a device to Endpoint DLP, but contain fixes for important issues thus must be installed before using the product.
+   > These updates are not a pre-requisite to onboard a device, but contain fixes for important issues thus must be installed before using the product.
+   >
     > - For Windows 10 1809 - KB4559003, KB4577069, KB4580390
     > - For Windows 10 1903 or 1909 - KB4559004, KB4577062, KB4580386
     > - For Windows 10 2004 - KB4568831, KB4577063
@@ -106,9 +111,9 @@ When you want to onboard devices that haven't been onboarded yet, you'll downloa
 
 If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. <!--Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).-->
 
-### Onboarding devices
+### Onboarding Windows 10 or Windows 11 devices
 
-In this deployment scenario, you'll onboard devices that have not been onboarded yet.
+In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices that have not been onboarded yet.
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com) **Settings** page and choose **Enable device monitoring**.
 
@@ -129,13 +134,15 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
 
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints). This link takes you to a landing page where you can access Microsoft 365 information protection procedures that match the deployment package you selected in step 5:
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows devices](/microsoft-365/compliance/device-onboarding.md). This link takes you to a landing page where you can access Microsoft 365 information protection procedures that match the deployment package you selected in step 5:
 
-    - Onboard Windows 10 machines using Group Policy
-    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines in single-session scenarios
+Topic | Description
+:---|:---
+[Onboard Windows 10 or 11 devices using Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
+[Onboard Windows 10 or 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
+[Onboard Windows 10 or 11 devices using Mobile Device Management tools](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
+[Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
 
 Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
 
