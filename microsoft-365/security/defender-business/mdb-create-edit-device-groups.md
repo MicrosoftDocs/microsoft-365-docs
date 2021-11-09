@@ -41,8 +41,8 @@ Currently, in Defender for Business, you can create a new device group while you
 
 3. Take one of the following actions:
 
-   1. Select an existing policy, and then choose **Edit**.
-   2. Choose **+ Add** to create a new policy.
+    1. Select an existing policy, and then choose **Edit**.
+    2. Choose **+ Add** to create a new policy.
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
