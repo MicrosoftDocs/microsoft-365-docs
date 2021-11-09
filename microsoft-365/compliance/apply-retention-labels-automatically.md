@@ -292,7 +292,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### Auto-apply labels to content by using trainable classifiers
 
-When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
+When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **SourceCode**, **Threat**, **Resume**, **Profanity**, and **Targeted Harassment**:
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
