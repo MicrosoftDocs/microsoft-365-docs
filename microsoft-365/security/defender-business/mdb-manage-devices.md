@@ -27,7 +27,6 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
-- [Add or remove devices from a policy](#add-or-remove-devices-from-a-group)
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
 ## View the list of onboarded devices
@@ -40,6 +39,8 @@ In Microsoft Defender for Business, you can manage devices as follows:
 
 3. Select a device to open its flyout panel, where you can learn more about its status and take action. 
 
+   If you don't have any devices listed yet, [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+
 ## Take action on a device that has threat detections
 
 :::image type="content" source="../../media/defender-business/mdb-selected-device.png" alt-text="Screenshot of a selected device with details and actions available":::
@@ -51,33 +52,6 @@ In Microsoft Defender for Business, you can manage devices as follows:
 3. Select the ellipsis (**...**) to open the actions menu. 
 
 4. Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**. 
-
-## Add or remove devices from a group
-
-Policies are applied to devices through device groups. You can edit a policy to include or exclude specific devices.
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
-
-2. In the navigation pane, choose **Device configuration**. 
-
-3. Take one of the following actions:
-
-   1. Select an existing policy, and then choose **Edit**.
-   2. Choose **+ Add** to create a new policy.
-
-4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
-
-5. Choose **+ Create new group**. 
-
-6. Specify a name and description for the device group, and then choose **Next**.
-
-7. Select the devices to include in the group, and then choose **Create group**.
-
-8. On the **Device groups** step, review the list of device groups for the policy. If needed, remove a group from the list. Then choose **Next**.
-
-9. On the **Configuration settings** page, review and edit settings as needed, and then choose **Next**. For more information about these settings, see [Configuration settings](mdb-next-gen-configuration-settings.md).
-
-10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 
 ## Offboard a device
 
