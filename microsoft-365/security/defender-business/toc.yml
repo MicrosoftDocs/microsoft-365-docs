@@ -43,7 +43,7 @@
       items: 
       - name: Manage devices
         href: mdb-manage-devices.md
-      - name: View and edit device policies
+      - name: Manage next-generation protection policies
         href: mdb-manage-next-generation-protection.md
       - name: Manage your firewall policies
         href: mdb-manage-firewall.md
