@@ -87,7 +87,7 @@ Follow these steps to onboard devices:
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-3. Select an operating system (such as Windows 10 and 11), and then choose a deployment method. Follow the guidance provided for the method you selected.
+3. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Microsoft Endpoint Manager**, **Local script**, and so on). Follow the guidance provided for the method you selected.
 
 ## What if I want to onboard devices gradually?
 
@@ -106,7 +106,7 @@ If you want to onboard your company's devices in phases (as in gradual device on
 
 4. Select the Windows 10 operating system.
 
-5. In the **Offboard a device** section, in the **Deployment method** list, select **Local Script**, and then choose **Download package**.
+5. In the **Offboard a device** section, in the **Deployment method** list, select a method, such as **Local Script**, and then choose **Download package**.
 
 6. Save the zipped folder to a location, such as a removable drive.
 
