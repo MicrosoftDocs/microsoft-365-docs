@@ -66,8 +66,10 @@ Even though the user experience in Microsoft Teams is far richer and superior to
 :::image type="content" source="../media/teams-upgrade-portal.png" alt-text="Screenshot of the Teams upgrade portal":::
 
 ### Upgrade to Skype for Business Server
- 
-The path to Skype for Business Server is going to be different depending on the version you choose to upgrade to. Skype for Business Server 2015 supports an in-place upgrade from Lync Server 2013. On the other hand, in order to upgrade to Skype for Business Server 2019, you first will need to introduce Skype for Business Server 2019 to your Lync Server 2013 organization, and then transfer operations to the new server.
+
+The path to Skype for Business Server is going to be different depending on the version you choose to upgrade to. Skype for Business Server 2015 supports an in-place upgrade from Lync Server 2013. On the other hand, in order to upgrade to Skype for Business Server 2019, you first will need to introduce Skype for Business Server 2019 to your Lync Server 2013 organization, and then transfer operations to the new server. 
+
+One important point to consider is that the current support phase for each product: Skype for Business 2019 is in mainstream support and Skype for Business 2015 is currently in extended support.  Therefore, we recommend upgrading to Skype for Business Server 2019. To learn more about the difference between mainstream and extended support, see [Fixed Lifecycle Policy](/lifecycle/policies/fixed).
 
 See the following resources for detailed information about each upgrade scenario.
 
