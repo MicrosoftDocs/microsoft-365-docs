@@ -31,7 +31,6 @@ Most Microsoft products have a support lifecycle during which they get new featu
 
 Your installation of Exchange 2013 will continue to run after this date. But because of the changes listed above, we strongly recommend that you migrate from Exchange 2019 as soon as possible.
 
-For more information about nearing the end of support, see [Resources to help you upgrade from Office 2013 servers and clients](upgrade-from-office-2013-servers-and-products.md).
 
 ## What are my options?
 
