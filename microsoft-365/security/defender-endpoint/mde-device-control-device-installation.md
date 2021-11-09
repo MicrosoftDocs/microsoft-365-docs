@@ -1,8 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -38,7 +36,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 ## Prepare your endpoints
 
-Deploy Device Installation on Windows 10 devices, Windows Server 2022.
+Deploy Device Installation on Windows 10, Windows 11 devices, Windows Server 2022.
 
 ## Device properties
 
@@ -65,7 +63,7 @@ When this policy setting is enabled together with the **Apply layered order of e
 If the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence. 
 
 > [!NOTE]
-> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions. It is recommended that you use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
+> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions and Windows 11. It is recommended that you use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
 
 ### Allow installation of devices that match any of these device instance IDs 
 
