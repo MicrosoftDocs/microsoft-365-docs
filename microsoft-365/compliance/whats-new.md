@@ -42,13 +42,34 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 - [App governance add-on for Defender for Cloud Apps has released to general availability](/cloud-app-security/app-governance-manage-app-governance). App governance documentation has moved to join the Defender for Cloud Apps documentation.
 
-## Retention and records management
+### Compliance & service assurance
+
+- [Service assurance](/compliance) - quarterly review content updates for certifications and statements of applicability)
+Datacenter asset management
+  - Datacenter architecture and infrastructure
+  - Datacenter business continuity and disaster recovery
+  - Datacenter environmental safeguards
+  - Datacenter physical access security
+  - Microsoft 365 SDL compliance program
+  - Microsoft 365 service engineer access control
+  - Risk assessment guide for MS Cloud
+
+### Encryption
+
+- [Use end-to-end encryption for one-to-one Microsoft Teams calls](/microsoftteams/teams-end-to-end-encryption) (Public preview) New content for the public preview.
+
+### Information governance
+
+- [Set up a connector to import Epic EHR audit data](import-epic-data.md) (new; new connector lets you import data from Epic electronic healthcare records system to support new general patient data misuse scenario for insider risk management)
+- Set up a connector to import healthcare EHR audit data (new; new connector lets you import data from an electronic healthcare records system to support new general patient data misuse scenario for insider risk management)
+
+### Retention and records management
 - [Adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) are released in preview for retention policies and retention label policies.
 - You can now [automatically apply a retention label based on a sensitivity label](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label).
 - File Plan has a new [import process](file-plan-manager.md#import-retention-labels-into-your-file-plan).
 - [Common settings for retention policies and retention label policies](retention-settings.md): New article for detailed information about configuring adaptive scopes and other settings in both retention policies and retention label policies.
 
-## Sensitivity labels
+### Sensitivity labels
 - [Default labels and default policies](mip-easy-trials.md) are rolling out to eligible customers.
 
 ## September 2021
