@@ -83,7 +83,11 @@
      - name: Configure anti-malware policies
        href: configure-anti-malware-policies.md
      - name: Configure anti-spam policies
-       href: configure-your-spam-filter-policies.md
+       items:
+       - name: Configure anti-spam policies  
+         href: configure-your-spam-filter-policies.md
+       - name: Advanced Spam Filter (ASF) settings
+         href: advanced-spam-filtering-asf-options.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Configure junk email settings on Exchange Online mailboxes
@@ -166,8 +170,6 @@
        href: recommended-settings-for-eop-and-office365.md
      - name: Integrate AIR with a custom solution or third-party solution
        href: air-custom-reporting.md
-     - name: Advanced Spam Filter (ASF) settings
-       href: advanced-spam-filtering-asf-options.md
      - name: Tenant Allow/Block List
        items:
        - name: Manage the Tenant Allow/Block List
