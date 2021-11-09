@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 11/09/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -29,7 +29,7 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 1. [Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
 2. [Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).
-3. [Choose a deployment method](#part-3-choose-an-onboarding-method).
+3. [Choose an onboarding option](#part-3-choose-an-onboarding-method).
 4. [See how onboarding works in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
 5. [Proceed to your next steps](#next-steps). 
 
@@ -88,6 +88,13 @@ Follow these steps to onboard devices:
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
 3. Select an operating system (such as Windows 10 and 11), and then choose a deployment method. Follow the guidance provided for the method you selected.
+
+## What if I want to onboard devices gradually?
+
+To onboard devices gradually, use the manual onboarding process. Follow the steps in [Onboarding devices in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
+
+> [!TIP]
+> You don't have to choose the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
 ## What if I want to offboard a device?
 
