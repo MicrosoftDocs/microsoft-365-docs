@@ -170,24 +170,11 @@ For the best experience, we recommend that you upgrade your remaining on-premise
 
 Exchange 2019 includes all the features of previous releases of Exchange. It most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
 
-<br>
+
 
 ****
 
-|Exchange release|Features|
-|---|---|
-|**Exchange 2016**|*Features from Exchange 2013 and …*|
-||Further simplified server roles to just Mailbox and Edge Transport|
-||Improved DLP along with integration with SharePoint|
-||Improved database resilience|
-||Online document collaboration|
-|
-
-<br>
-
-****
-
-|Consideration|More information|
+|Item|More information|
 |---|---|
 |End of support dates|Like Exchange 2013, each version of Exchange has its own end-of-support date: <p> Exchange 2013 - April 2023 <p> Exchange 2016 - October 2025 <p> The earlier the end-of-support date, the sooner you'll need to perform another migration. April 2023 is a lot closer than you think!|
 |Migration path to Exchange 2016 or 2019|The migration path from Exchange 2013 to a newer version is the same whether you choose Exchange 2016 or Exchange 2019: <p> Install Exchange 2016 or 2019 into your existing Exchange 2013 organization. <p> Move services and other infrastructure to Exchange 2016 or 2019. <p> Move mailboxes and public folders to Exchange 2013 or 2016 Decommission remaining Exchange 2013 servers.|
@@ -215,6 +202,4 @@ If you run into problems during your migration to Microsoft 365 and you aren't u
 - [Technical community](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Customer support](https://support.microsoft.com/gp/support-options-for-business)
 
-## Related articles
 
-[Resources to help you upgrade from Office 2010 servers and clients](upgrade-from-office-2010-servers-and-products.md)
