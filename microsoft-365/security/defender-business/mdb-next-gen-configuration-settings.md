@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 11/09/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,6 +26,8 @@ ms.collection:
 This article describes next-generation protection configuration settings for Microsoft Defender for Business. 
 
 Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
+
+## Next-generation protection settings in Defender for Business
 
 The following table lists your settings and options:<br/><br/>
 
