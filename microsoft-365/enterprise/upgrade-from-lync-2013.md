@@ -40,7 +40,7 @@ Check the dates that support ends on the [Product Lifecycle site](/lifecycle/pro
 
 |End of support product|Supported|Recommended|
 |---|---|---|
-|Lync Server 2013|Upgrade to SharePoint Server 2015 or 2019|Upgrade to Microsoft Teams
+|Lync Server 2013|Upgrade to Skype for Business Server 2015 or 2019|Upgrade to Microsoft Teams
 
 ## What's next?
 

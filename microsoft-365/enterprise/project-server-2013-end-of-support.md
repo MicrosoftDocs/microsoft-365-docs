@@ -80,7 +80,7 @@ We strongly believe that you get the best value and user experience by migrating
 
 If you can't migrate to Project Online, we recommend that you migrate to Project Server Subscription Edition which includes most of the key features in previous releases of Project Server. And it most closely matches the experience available with Project Online, although some features are available only in Project Online. Additional factors to consider are:
 
-- There are no major on-premises server versions planned after Project Server Subscription Edition. We will continue to update the Subscription Edition, but you won't have to deal with another major version-to-version upgrade in the future.
+- Project Server Subscription Edition introduces a continuous update model that eliminates the need to release new major versions of Project Server going forward.
 - Both Project Server 2016 and 2019 will reach end of support on July 14, 2026. If you migrate to either version, you will need to plan for another upgrade within three years. For more information, see the support lifecycle pages for both [2016](/lifecycle/products/project-server-2016) and [2019](/lifecycle/products/project-server-2019).
 
 After you complete each migration, make sure that your data migrated successfully.
