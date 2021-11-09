@@ -58,18 +58,8 @@ For retention policies and auto-apply label policies: SharePoint sites must be i
 
 To store content that needs to be retained, SharePoint and OneDrive create a Preservation Hold library if one doesn't exist for the site. The Preservation Hold library isn't designed to be used interactively but instead, automatically stores files when this is needed for compliance reasons. It works in the following way:
 
-<<<<<<< HEAD
-When a user changes or delete an item that's subject to retention, a check is made whether the content has been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the user to change or delete the original content.
-=======
-Items in SharePoint that have a standard retention label (doesn't declare the item to be a record) don't need the Preservation Hold library because these items remain in their original location. SharePoint prevents users from deleting items when the applied retention label is configured to retain the content, and SharePoint versioning preserves older versions when items are edited. But for other scenarios, the Preservation Hold library is used when items must be retained:
-- Items in OneDrive that have standard retention labels
-- Items in SharePoint or OneDrive that have retention labels that declares them a record, and the item is unlocked for editing
-- Files that were shared as cloud attachments that have a retention label applied automatically
-- Items that are subject to retention policies
+When a user changes or deletes an item that's subject to retention, a check is made whether the content has been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the user to change or delete the original content.
 
-To retain this content when a user attempts to change or delete it, a check is made whether the content's been changed since the retention settings were applied. If this is the first change since the retention settings were applied, the content is copied to the Preservation Hold library, which allows the person to change or delete the original content.
->>>>>>> 7e4bfd93cc5a7b2bb313424e850df04b9694fee0
-  
 A timer job periodically runs on the Preservation Hold library. For content that has been in the Preservation Hold library for more than 30 days, this job compares the content to all queries used by the retention settings for that content. Content that is older than their configured retention period is then deleted from the Preservation Hold library, and from the original location if it is still there. This timer job runs every seven days, which means that together with the minimal 30 days, it can take up to 37 days for content to be deleted from the Preservation Hold library.
 
 This behavior for copying files into the Preservation Hold library applies to content that exists when the retention settings were applied. In addition, for retention policies, any new content that's created or added to the site after it was included in the policy will be retained in the Preservation Hold library. However, new content isn't copied to the Preservation Hold library the first time it's edited, only when it's deleted. To retain all versions of a file, [versioning](#how-retention-works-with-document-versions) must be turned on for the original site.
@@ -80,7 +70,7 @@ Users also see an error message if they try to delete a labeled item in any of t
 
 - The records management setting that allows users to delete labeled items is turned off.
     
-    To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Label behavior**. There are separate settings for SharePoint and OneDrive.
+    To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deleting content labeled for retention**. There are separate settings for SharePoint and OneDrive.
 
 - The retention label marks items as a record and it's [locked](record-versioning.md).
     
