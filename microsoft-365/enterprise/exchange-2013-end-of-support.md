@@ -47,13 +47,9 @@ It's a great time to explore your options and prepare a migration plan. You can:
 >- If you don't complete the mailbox migration and on-premises server upgrade by April 11, 2023, upgrade your on-premises Exchange 2013 servers to Exchange 2019 first. Then use Exchange 2019 to connect to Microsoft 365 and migrate mailboxes.
 
 > [!NOTE]
-> It's little more complicated, but you can also migrate mailboxes to Microsoft 365 while migrating your on-premises Exchange 2013 servers to Exchange 2016.
+> It's a little more complicated, but you can also migrate mailboxes to Microsoft 365 while migrating your on-premises Exchange 2013 servers to Exchange 2016.
 
 Here are the three paths you can take to avoid the end of support for Exchange Server 2010.
-
-![Exchange Server 2013 upgrade paths.](../media/exchange-2013-end-of-support/exchange-2013-end-of-support-options.png)
-
-The following sections explore each option in more detail.
 
 ## Migrate to Microsoft 365
 
