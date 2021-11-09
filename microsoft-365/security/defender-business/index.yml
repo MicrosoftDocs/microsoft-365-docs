@@ -75,18 +75,20 @@ landingContent:
             url: mdb-respond-mitigate-threats.md
           - text: Review remediation actions
             url: mdb-review-remediation-actions.md
+          - text: View and manage devices
+            url: mdb-manage-devices.md
 
   # Card
   - title: Manage
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage devices
-            url: mdb-manage-devices.md
           - text: Manage your next-generation protection policies
             url: mdb-manage-next-generation-protection.md
           - text: Manage your firewall policies
             url: mdb-manage-firewall.md
+          - text: Create and edit device groups
+            url: mdb-create-edit-device-groups.md
  
   # Card
   - title: Reference
