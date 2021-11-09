@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 11/15/2021
+ms.date: 11/09/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -43,6 +43,9 @@ Currently, in Defender for Business, you can create a new device group while you
 
     1. Select an existing policy, and then choose **Edit**.
     2. Choose **+ Add** to create a new policy.
+
+    > [!TIP]
+    > To get help creating or editing a policy, see [View or edit next-generation protection policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md) or [Manage firewall policies in Microsoft Defender for Business](mdb-manage-firewall.md).
 
 4. On the **General information** step, review the information, edit if necessary, and then choose **Next**.
 
