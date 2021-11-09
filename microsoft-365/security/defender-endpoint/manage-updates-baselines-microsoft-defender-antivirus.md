@@ -16,7 +16,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/02/2021
+ms.date: 11/08/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -585,6 +585,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2111.02</summary>
+
+&ensp;Package version: **1.1.2111.02**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.613.0**<br/>
+
+### Fixes
+- Fixed an issue pertaining to localization files
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Package version: **1.1.2110.01**<br/>
