@@ -2,8 +2,6 @@
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
 keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -51,7 +49,7 @@ Before trying out this feature, make sure you meet the following requirements:
 
 - You have access to Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
+- Your organization's devices are running Windows 10 Anniversary Update (version 1607) or later, or Windows 11 with the [latest antivirus/antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 - Windows Defender SmartScreen and Network Protection are enabled on your organization's devices.
 

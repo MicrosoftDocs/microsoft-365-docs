@@ -2,7 +2,6 @@
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -131,7 +130,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br/><br/>
+<br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -141,7 +140,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br/><br/>
+<br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -196,7 +195,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
     
 The following table describes how the wildcards can be used and provides some examples.
 
-<br/><br/>
+<br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -216,8 +215,9 @@ The following table describes how the wildcards can be used and provides some ex
 ### System environment variables
 
 The following table lists and describes the system account environment variables.
-    <br/><br/>
-    
+
+<br/>
+
 |This system environment variable...|Redirects to this|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -305,7 +305,7 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md), use the following command:
 
-```DOS
+```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
 cd 4.18.2110-5.0 (Where 4.18.2110-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
