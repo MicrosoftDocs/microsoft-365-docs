@@ -29,7 +29,7 @@ description: A reference list of external Domain Name System records to use when
 
 ![Domain.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
-**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](../admin/Gather-the-information-you-need-to-create-Office-365-DNS-records.md) for your domain in Office 365.
+**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](../admin/get-help-with-domains/information-for-dns-records.md) for your domain in Office 365.
 
 **Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
