@@ -51,7 +51,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `Context` | string | Additional contextual information about the configuration or policy |
 | `IsExpectedUserImpact` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
-You can try this example query to return information on devices with non compliant antivirus configurations along with the relevant configuration metadata from the `DeviceTvmSecureConfigurationAssessmentKB` table:
+You can try this example query to return information on devices with non compliant antivirus configurations along with the relevant configuration metadata from the  `DeviceTvmSecureConfigurationAssessmentKB` table:
 
 ```kusto
 // Get information on devices with antivirus configurations issues
