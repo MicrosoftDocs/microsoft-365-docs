@@ -84,19 +84,19 @@ You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP
 
 You can use this logic to construct your exclusion paths for Windows 10 devices:
 
-- Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
+- Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with ‘\*’, which means only files under subfolders, besides the files directly under the folder. <br/>For example: C:\Temp\*
+- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
 
-- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all subfolders. <br/>For example: C:\Temp
+- Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
-- A path with wildcard between ‘\’ from each side. <br/>For example: C:\Users\*\Desktop\
+- A path with wildcard between `\` from each side. <br/>For example: `C:\Users\*\Desktop\`
 
-- A path with wildcard between ‘\’ from each side and with ‘(number)’ to give exact number of subfolders. <br/>For example: C:\Users\*(1)\Downloads\
+- A path with wildcard between `\` from each side and with `(number)` to give exact number of subfolders. <br/>For example: `C:\Users\*(1)\Downloads\`
 
-- A path with SYSTEM environment variables. <br/>For example: %SystemDrive%\Test\*
+- A path with SYSTEM environment variables. <br/>For example: `%SystemDrive%\Test\*`
 
-- A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### macOS devices (preview)
 
