@@ -420,6 +420,8 @@
               href: project-server-2010-end-of-support.md
         - name: Office 2013
           items:
+            - name: Office 2013 desktop
+              href: DeployOffice/endofsupport/plan-upgrade-older-versions-office
             - name: SharePoint 2013
               href: upgrade-from-sharepoint-2013.md
             - name: Lync Server 2013
