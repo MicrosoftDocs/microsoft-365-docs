@@ -45,11 +45,17 @@ If your users are using one of Microsoft's apps and wish to provide feedback, th
 
 ### In-product surveys
 
-Users can also rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
+Users can rate their experience and provide additional information about their experience via system-initiated survey prompts. These prompts occur within the Microsoft 365 products from time to time. When prompted, users can choose if they want to provide feedback. The survey prompts typically appears at the bottom right of the app. If the user decides to provide feedback, dismisses the prompt, or lets the prompt disappear on its own, that user will not see the survey again for some time. Microsoft also leverages a governance process to limit the number of these system-initiated surveys.  The intent of governance is to ensure users aren't overwhelmed by the number of survey prompts.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
 :::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
+
+### Community feedback
+
+Users can leverage the new [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback/) to participate in public community forums for all the Microsoft 365 products. The new Feedback portal will allow users to browse and upvote publicly submitted feedback as well as submit new public community feedback for any of the supported products. Top known feedback items remain available in the new portal. This portal is also a new response canvas for users to track official Microsoft responses and engage with Microsoft on feedback they submit.
+
+
 
 ## What kind of feedback is best?
 
