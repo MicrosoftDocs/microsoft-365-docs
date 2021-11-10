@@ -2,7 +2,6 @@
 title: Configure Microsoft Defender Antivirus with WMI
 description: Learn how to configure and manage Microsoft Defender Antivirus by using WMI scripts to retrieve, modify, and update settings in Microsoft Defender for Endpoint.
 keywords: wmi, scripts, windows management instrumentation, configuration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 10/18/2018
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde

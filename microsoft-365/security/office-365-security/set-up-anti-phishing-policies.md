@@ -115,7 +115,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
     - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+    If you select **Quarantine the message**, you can also select the quarantine policy that applies to messages that were quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
 ### Unauthenticated sender
 
@@ -224,7 +224,7 @@ The following impersonation settings are only available in anti-phishing policie
   - **Don't apply any action**: Note that this value has the same result as turning on **Mailbox intelligence** but turning off **Enable intelligence impersonation protection**.
   - **Redirect message to other email addresses**
   - **Move message to the recipients' Junk Email folders**
-  - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+  - **Quarantine the message**: If you select this action, you can also select the quarantine policy that applies to messages that are quarantined by mailbox intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 

@@ -57,13 +57,11 @@ Apple iOS does not support multiple **device-wide** VPNs to be active simultaneo
 
 ## Battery consumption
 
-In order to provide you all-time protection from web-based threats, Microsoft Defender for Endpoint needs to run in the background at all times. This might lead to a minor increase in overall battery consumption of your device.
+In order to provide you all-time protection from web-based threats, Microsoft Defender for Endpoint needs to run in the background at all times. This might lead to a minor increase in overall battery consumption of your device. In case you are seeing significant battery drain, please [send us feedback](ios-troubleshoot.md#send-in-app-feedback) and we will investigate.
 
 Also, in the Settings app, iOS only shows battery usage of apps that are visible to the user for a specific duration of time. The battery usage by apps shown on the screen is only for that time duration and is computed by iOS based on a multitude of factors including CPU and Network usage. Microsoft Defender for Endpoint uses a local/loop-back VPN in the background to check web traffic for any malicious websites or connections. Network packets from any app go through this check and that causes the battery usage of Microsoft Defender for Endpoint to be computed inaccurately. The actual battery consumption of Microsoft Defender for Endpoint is lesser than what is shown on the Battery Settings page on the device.
 
-On an average, per-day battery usage by Microsoft Defender for Endpoint running on the background is **approximately 8.81% of overall battery consumed in that day**. This metric is reported by Apple based on actual usage of Microsoft Defender for Endpoint on end-user devices and due to reasons mentioned above can also be accounted to other apps that have network activity.
-
-Also, the VPN used is a local VPN and unlike a traditional VPN, network traffic is not sent outside the device.
+Note that the VPN used is a local VPN and unlike a traditional VPN, network traffic is not sent outside the device.
 
 ## Data usage
 
@@ -71,7 +69,7 @@ Microsoft Defender for Endpoint uses a local/loopback VPN to check web traffic f
 
 We have similar observations with other VPN services as well and have reported this to Apple.
 
-In addition, it is critical for Microsoft Defender for Endpoint to be up to date with our backend services to provide better protection. However, we are working on optimizing the data usage by Microsoft Defender for Endpoint.
+In addition, it is critical for Microsoft Defender for Endpoint to be up to date with our backend services to provide better protection.
 
 ## Report unsafe site
 
