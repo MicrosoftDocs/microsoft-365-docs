@@ -51,7 +51,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `Tags` | string | Labels representing various attributes used to identify or categorize a security configuration |
 | `RemediationOptions` | string | Recommended actions to reduce or address any associated risks |
 
-You can try this example query to return configuration metadata along with information from the `DeviceTvmSecureConfigurationAssessment` table for devices with non compliant antivirus configurations:
+You can try this example query to return relevant configuration metadata along with the information for devices with non compliant antivirus configurations from the `DeviceTvmSecureConfigurationAssessment` table:
 
 ```kusto
 // Get information on devices with antivirus configurations issues
