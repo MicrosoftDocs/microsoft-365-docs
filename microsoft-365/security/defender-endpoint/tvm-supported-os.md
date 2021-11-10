@@ -56,6 +56,7 @@ CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
+Linux Debian 9 or higher (in preview)|Yes|Yes|Yes|Yes|Yes
 Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
 iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
 
