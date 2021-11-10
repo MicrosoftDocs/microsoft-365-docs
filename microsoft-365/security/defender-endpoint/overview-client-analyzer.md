@@ -2,8 +2,6 @@
 title:  Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer
 description: Troubleshoot sensor health on devices to identify potential configuration, environment, connectivity, or telemetry issue affecting sensor data or capability.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

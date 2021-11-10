@@ -31,7 +31,7 @@
 |SWAY|N/A|N/A|N/A|N/A|Planned|
 |TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|Planned|Planned|Planned|N/A|Planned|
-|VISIO|N/A|✔|N/A|Planned|N/A|
+|VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|Planned|N/A|N/A|Planned|
 |WORD|✔|✔|✔|✔|N/A|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|

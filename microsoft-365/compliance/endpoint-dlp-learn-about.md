@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date:
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -18,21 +18,21 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
+description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Compliance solutions "
 ---
 
 # Learn about Microsoft 365 Endpoint data loss prevention
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10 devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+**Endpoint data loss prevention** (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices. Once devices are onboarded into the Microsoft 365 compliance solutions, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
 > [!TIP]
 > If you are looking for device control for removable storage, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](../security/defender-endpoint/device-control-removable-storage-access-control.md#microsoft-defender-for-endpoint-device-control-removable-storage-access-control).
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10 devices.
+Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices.
 
 |Activity |Description  | Auditable/restrictable|
 |---------|---------|---------|
@@ -71,7 +71,7 @@ If you only want monitoring data from policy matches, you can turn off the **Alw
 > If the **Always audit file activity for devices** setting is on, activities on any Word, PowerPoint, Excel, PDF, and .csv file are always audited even if the device is not targeted by any policy.
 
 > [!TIP]
-> To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md) along side the default policy.
+> To ensure activities are audited for all supported file types, create a [custom DLP policy](create-test-tune-dlp-policy.md).
 
 
 Endpoint DLP monitors activity-based on MIME type, so activities will be captured even if the file extension is changed.

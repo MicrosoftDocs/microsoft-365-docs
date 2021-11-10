@@ -159,9 +159,9 @@ Perform the following steps in Exchange Online PowerShell.
     ```
 
     > [!NOTE]
-    > It might take up to 60 minutes to disable single item recovery. Don't delete items in the Recoverable Items folder until this period has elapsed. 
+    > It might take up to 240 minutes to disable single item recovery. Don't delete items in the Recoverable Items folder until this period has elapsed.
   
-4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock is not applied to the mailbox. 
+4. Run the following command to prevent the Managed Folder Assistant from processing the mailbox. As previously explained, you can disable the Managed Folder Assistant only if a retention policy with a Preservation Lock is not applied to the mailbox.
 
     ```powershell
     Set-Mailbox <username> -ElcProcessingDisabled $true
@@ -183,7 +183,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $false
 ```
 
 > [!NOTE]
-> Similar to disabling the client access methods and single item recovery, it might take up to 60 minutes to remove the Litigation Hold. Don't delete items from the Recoverable Items folder until this period has elapsed. 
+> Similar to disabling single item recovery, it might take up to 240 minutes to remove the Litigation Hold. Don't delete items from the Recoverable Items folder until this period has elapsed.
   
 ### In-Place Hold
   
@@ -197,7 +197,7 @@ After you identify the In-Place Hold, you can use the Exchange admin center (EAC
   
 ### Retention policies applied to specific mailboxes
   
-Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
+Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name

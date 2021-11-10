@@ -17,6 +17,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
@@ -24,7 +25,7 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
 
 ## Subscriptions and licensing
 
@@ -50,6 +51,16 @@ Users included in communication compliance policies must be assigned one of the 
 
 If you don't have an existing Office 365 Enterprise E5 plan and want to try communication compliance, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Office 365 Enterprise E5.
 
+## Recommended actions (preview)
+
+Recommended actions can help your organization get the most out of communication compliance capabilities and your existing policies. Included on the **Overview** page, recommended actions provide insights and summarize sensitive information types and inappropriate content activities in communications in your organization.
+
+![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
+
+Activity in messages containing inappropriate content is enumerated by classifier type from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+
+Activity involving sensitive information types is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are provided for all sensitive information types, including ones that your organization have not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
+
 ## Step 1 (required): Enable permissions for communication compliance
 
 > [!IMPORTANT]
@@ -63,8 +74,8 @@ Choose from these role group options when configuring communication compliance:
 
 | Role | Role permissions |
 |:-----|:-----|
-| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. |
-| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. |
+| **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
+| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
 | **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
 | **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
@@ -89,9 +100,9 @@ Choose from these role group options when configuring communication compliance:
 
 Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and then go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
-2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+2. Select the link to view and manage roles in Office 365.
 
 3. Select one of the communication compliance role groups, then select **Edit role group**.
 
@@ -112,6 +123,8 @@ For more information about role groups and permissions, see [Permissions in the 
 ## Step 2 (required): Enable the audit log
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes.
+
+Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.
 
 For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
@@ -175,10 +188,13 @@ For more information about configuring Yammer in Native Mode, see:
 
 ## Step 5 (required): Create a communication compliance policy
 
-> [!IMPORTANT]
-> Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+>[!IMPORTANT]
+>Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
-1. Sign into <https://compliance.microsoft.com> using credentials for an admin account in your Microsoft 365 organization.
+>[!TIP]  
+>Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
+
+1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, select **Communication compliance**.
 
@@ -233,7 +249,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
-1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
