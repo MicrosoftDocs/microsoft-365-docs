@@ -113,7 +113,7 @@ Done! You have successfully registered an application!
    $appId = '' ### Paste your Application ID here
    $appSecret = '' ### Paste your Application secret here
 
-   $resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+   $resourceAppIdUri = 'https://api.securitycenter.windows.com'
    $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
    $authBody = [Ordered] @{
        resource = "$resourceAppIdUri"
@@ -152,7 +152,7 @@ Done! You have successfully registered an application!
 
   # The URL contains the type of query and the time filter we create above
   # Read more about other query options and filters at   Https://TBD- add the documentation link
-  $url = "https://api.securitycenter.microsoft.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
+  $url = "https://api.securitycenter.windows.com/api/alerts?`$filter=alertCreationTime ge $dateTime"
 
   # Set the WebRequest headers
   $headers = @{
