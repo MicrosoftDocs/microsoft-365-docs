@@ -51,6 +51,19 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `Context` | string | Additional contextual information about the configuration or policy |
 | `IsExpectedUserImpact` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
+You can try this example query to return information on devices with antivirus configurations issues along with the specific configuration metadata from the KB table:
+
+```kusto
+// Get information on devices with antivirus configurations issues
+DeviceTvmSecureConfigurationAssessment
+| where ConfigurationSubcategory == 'Antivirus' and IsApplicable == 1 and IsCompliant == 0
+| join kind=leftouter (
+    DeviceTvmSecureConfigurationAssessmentKB
+    | project ConfigurationId, ConfigurationName, ConfigurationDescription, RiskDescription, Tags, ConfigurationImpact
+) on ConfigurationId
+| project DeviceName, OSPlatform, ConfigurationId, ConfigurationName, ConfigurationCategory, ConfigurationSubcategory, ConfigurationDescription, RiskDescription, ConfigurationImpact, Tags
+```
+
 ## Related topics
 
 - [Proactively hunt for threats](advanced-hunting-overview.md)
