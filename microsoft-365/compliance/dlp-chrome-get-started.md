@@ -90,7 +90,7 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 1. Use the procedures in these topics to onboard your devices:
     1. [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-    1. [Onboarding Windows 10 and Windows 11 devices](device-onboarding.md)
+    1. [Onboarding Windows 10 and Windows 11 devices](device-onboarding-overview.md)
     1. [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### Basic Setup Single Machine Selfhost
