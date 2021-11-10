@@ -136,6 +136,23 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 
     Description: Export of the Microsoft Monitoring Agent event log
 
+
+All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
+If files have been modified in any way, then the analyzer is expected to exit with the following error:
+
+![Image of client analyzer error](images/sigerror.png)
+
+
+If this error is shown, then the issuerInfo.txt output will contain detailed information about why that happened and what file was affected:
+
+![Image of issuer info](images/issuerinfo.png)
+
+
+Example contents after MDEClientAnalyzer.ps1 is modified:
+
+![Image of modified ps1 file](images/modified-ps1.png)
+
+
 ## See also
 
 - [Client analyzer overview](overview-client-analyzer.md)
