@@ -154,7 +154,7 @@ On the **Configure payload** page, it's time to build your payload. Many of the 
 
   - On the **Code** tab, you can view and modify the HTML code directly. Formatting and other controls like **Dynamic tag** and **Phishing link** or **Malware attachment link** aren't available.
 
-  - The **Replace all links in the email message with the phishing link** toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
+  - The **Replace all links in the email message with the phishing link** toggle is available only if you selected **Credential harvest**, **Link to malware**, or **Drive-by URL** on the **Select technique** page. This toggle can save time by replacing all links in the message with the previously selected **Phishing link** or **Link for attachment** URL. To do this, toggle the setting to on ![Toggle on icon.](../../media/scc-toggle-on.png).
 
 When you're finished, click **Next**.
 
