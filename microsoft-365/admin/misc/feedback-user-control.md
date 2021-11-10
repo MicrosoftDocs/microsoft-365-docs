@@ -55,7 +55,7 @@ Users can rate their experience and provide additional information about their e
 
 Users can leverage the new [Microsoft feedback portal](https://feedbackportal.microsoft.com/feedback/) to participate in public community forums for all the Microsoft 365 products. The new Feedback portal will allow users to browse and upvote publicly submitted feedback as well as submit new public community feedback for any of the supported products. Top known feedback items remain available in the new portal. This portal is also a new response canvas for users to track official Microsoft responses and engage with Microsoft on feedback they submit.
 
-
+:::image type="content" source="../../media/community-feedback1.png" alt-text="Screenshot: Microsoft Teams feedback portal page":::
 
 ## What kind of feedback is best?
 
