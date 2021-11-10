@@ -59,6 +59,8 @@ You might consider creating a Microsoft 365 retention policy specifically for in
 
 - If you create a Microsoft 365 retention policy specifically for inactive mailboxes, you can add a maximum of 1,000 mailboxes to the policy. If you're a large organization, you might have to create more than one Microsoft 365 retention policy to use for inactive mailboxes.
 
+- If you want to release a retention policy that's applied to an inactive mailbox, see [Releasing a policy for retention](retention.md#releasing-a-policy-for-retention).
+
 > [!CAUTION]
 > If you use a retention policy to make a mailbox inactive, do not change or remove the user principal name (UPN) for the mailbox before you delete the corresponding user account. Additionally, do not change the primary SMTP address (that's derived from the UPN) or remove this email address from the list of secondary SMTP addresses associated with the mailbox before making the mailbox inactive. If you change the UPN or email addresses (that were assigned to the mailbox at the time the retention policy was applied to it) and then delete the user account to make the mailbox inactive, you won't be able to delete the inactive mailbox when you no longer need to retain it. That's because you can't remove the inactive mailbox from the retention policy using a UPN or email address (to identify the inactive mailbox) that's different than the ones that existed when the retention policy was initially applied to the mailbox. For more information about deleting inactive mailboxes, see [Delete an inactive mailbox in Office 365](delete-an-inactive-mailbox.md).
 
@@ -94,15 +96,16 @@ To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 licens
 
 The following table summarizes the process of making an inactive mailbox for different retention scenarios. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
 
-****
+<br/>
 
 |To...|Do this...|Result|
 |---|---|---|
 |Retain mailbox content indefinitely after an employee leaves the organization|Place the mailbox on Litigation Hold or apply a Microsoft 365 retention policy (that's configured to retain content) to the mailbox. <br/> Don't specify a hold duration for the Litigation Hold or don't configure the retention policy to delete items. Alternatively you can use a retention policy that retains items forever. <br/> Remove the user's Microsoft 365 account.|All content in the inactive mailbox, including items in the Recoverable Items folder, is retained indefinitely.|
 |Retain mailbox content for a specific period after an employee leaves the organization and then delete it|Apply a Microsoft 365 retention policy to the mailbox. <br/> Configure the retention policy to retain and then delete items when the retention period expires. <br/> Remove the user's Microsoft 365 account.|When the retention period for a mailbox item expires, the item is moved to the Recoverable Items folder and then it's permanently deleted (purged) from the inactive mailbox when the deleted item retention period (for Exchange mailboxes) expires. The retention period of the Microsoft 365 retention policy can be configured based on the original date a mailbox item was received or created, or when it was last modified.|
-|
 
-**NOTE:** If a Litigation Hold is already placed on a mailbox, or if a Microsoft 365 retention policy (that's configured to retain or retain and then delete content) is already applied to the mailbox, then all you have to do is delete the corresponding user account to create an inactive mailbox.
+
+> [!NOTE]
+> If a Litigation Hold is already placed on a mailbox, or if a Microsoft 365 retention policy (that's configured to retain or retain and then delete content) is already applied to the mailbox, then all you have to do is delete the corresponding user account to create an inactive mailbox.
 
 ## Managing inactive mailboxes
 

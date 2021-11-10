@@ -40,9 +40,10 @@ Before you start using DLP policies to non-Microsoft cloud apps, confirm your [M
 
 ### Permissions
 The user who creates the DLP policy should be a:
+
 - Global administrator
-- Compliance administrator
-- Compliance data administrator
+- Compliance administrator: assign in Azure AD
+- Compliance data administrator: assign in Azure AD
 
 ### Prepare your Cloud App Security environment
 
