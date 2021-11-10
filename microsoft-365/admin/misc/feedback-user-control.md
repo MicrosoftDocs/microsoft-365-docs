@@ -49,7 +49,7 @@ Users can rate their experience and provide additional information about their e
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
 
-:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product Excel feedback request":::
 
 ### Community feedback
 
