@@ -50,6 +50,11 @@ In advanced classification, content is sent from the local device to the cloud s
 
 If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
 
+Support for advanced classification scanning and protection is currently available in the following Windows versions : 
+- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 versions 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
+
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
