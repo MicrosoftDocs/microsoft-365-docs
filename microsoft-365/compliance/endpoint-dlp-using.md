@@ -50,7 +50,7 @@ In advanced classification, content is sent from the local device to the cloud s
 
 If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
 
-These Windows versions support for advanced classification scanning and protection:
+These Windows versions support advanced classification scanning and protection:
 
 - Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
 - Windows 10 versions 19H1/19H2 (KB 5007189)
