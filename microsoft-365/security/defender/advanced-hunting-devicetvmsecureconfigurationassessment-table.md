@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Each row in the `DeviceTvmSecureConfigurationAssessment` table contains an assessment event for a specific security configuration from [Threat & Vulnerability Management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt). Use this reference to check the latest assessment results and determine whether devices are compliant.
 
-You can join this table with the [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) table using `ConfigurationId` so you can, for example, view the text description of the configuration from the `ConfigurationDescription` column of the  `DeviceTvmSecureConfigurationAssessmentKB` table, in the configuration assessment results.
+You can join this table with the [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) table using `ConfigurationId` so you can, for example, view the text description of the configuration from the `ConfigurationDescription` column of the `DeviceTvmSecureConfigurationAssessmentKB` table, in the configuration assessment results.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -51,7 +51,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 | `Context` | string | Additional contextual information about the configuration or policy |
 | `IsExpectedUserImpact` | boolean | Indicates whether there will be user impact if the configuration or policy is applied |
 
-You can try this example query to return information on devices with antivirus configurations issues along with the configuration metadata from the KB table:
+You can try this example query to return information on devices with antivirus configurations issues along with the relevant configuration metadata from the `DeviceTvmSecureConfigurationAssessmentKB` table:
 
 ```kusto
 // Get information on devices with antivirus configurations issues
