@@ -646,7 +646,7 @@
 
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
+##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
@@ -679,7 +679,7 @@
 #### [Managed security service provider opportunity](mssp-support.md)
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
-#### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
+#### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
 ### [Integrations]()
 #### [Microsoft Defender for Cloud for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)

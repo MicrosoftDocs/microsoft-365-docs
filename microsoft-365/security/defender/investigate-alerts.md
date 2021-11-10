@@ -95,7 +95,7 @@ Throughout an alert page, you can select the ellipses (**...**) beside any entit
 
 ### Alert sources
 
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and the app governance add-on for Microsoft Cloud App Security. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and the app governance add-on for Microsoft Defender for Cloud Apps. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
 > - The prepended GUIDs are specific only to unified experiences such as unified alerts queue, unified alerts page, unified investigation, and unified incident.
@@ -176,21 +176,21 @@ Modern security operations (SecOps) teams need automation to work effectively. T
 
 - User isn't tagged as high risk
 
-If both are true, SecOps marks the alert as legitimate travel and resolves it. A notification is posted in Microsoft Teams after the alert is resolved. 
+If both are true, SecOps marks the alert as legitimate travel and resolves it. A notification is posted in Microsoft Teams after the alert is resolved.
 
-### Connect Power Automate to Microsoft Cloud App Security
+### Connect Power Automate to Microsoft Defender for Cloud Apps
 
-To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Cloud App Security. 
+To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Defender for Cloud Apps.
 
-1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab. 
+1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab.
 
 2. Provide a name for your token, and then click **Generate**. Save the token as you'll need it later.
 
 ### Create an automated flow
 
-For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn). 
+For the detailed step-by-step process, see the video [here](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn).
 
-This video also describes how to connect power automate to Cloud App Security. 
+This video also describes how to connect power automate to Defender for Cloud Apps.
 
 ## Next steps
 

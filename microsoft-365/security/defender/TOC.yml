@@ -18,7 +18,7 @@
           href: microsoft-365-security-mde-redirection.md
         - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
-      - name: Microsoft 365 Defender integration with Azure Sentinel
+      - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md

@@ -33,7 +33,7 @@ ms.technology: m365d
 Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Licensing requirements
-Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 Defender portal without additional cost:
+Any of these licenses gives you access to Microsoft 365 Defender features via the Microsoft 365 Defender portal without additional cost:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on

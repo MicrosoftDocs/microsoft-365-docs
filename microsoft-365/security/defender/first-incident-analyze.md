@@ -105,7 +105,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Example of selecting an alert of an incident.":::
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Example of a corresponding page in Microsoft Cloud App Security.":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-link-to-mcas.png" alt-text="Example of a corresponding page in Microsoft Defender for Cloud Apps.":::
 
 3. To investigate our example further, scrolling to the bottom of the page to view the **Users affected**. To see the activity and context surrounding the malware detection, select Annette Hill’s user page .
 
@@ -117,7 +117,7 @@ Here's an example:
 
 5. Each alert can be selected to obtain more information on the activity. For example, selecting **Activity from a Tor IP Address** alert leads you to that alert’s own page. Annette is an Administrator of Office 365, which means she has elevated privileges and the source incident might have led to access to confidential information.
 
-    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Cloud App Security .":::
+    :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Defender for Cloud Apps .":::
 
 6. By selecting other alerts, an analyst can get a complete picture of the attack.
 

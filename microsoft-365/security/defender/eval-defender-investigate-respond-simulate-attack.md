@@ -316,7 +316,7 @@ From the **Incident** page, select **Manage incident**. Set the status to **Reso
 
 ![Example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident.](../../media/mtp/fig16.png)
 
-When the incident is resolved, it resolves all of the associated alerts in Microsoft 365 Defender portal and in the related portals.
+When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
 
 This wraps up the attack simulation for incident analysis, automated investigation, and incident resolution.
 

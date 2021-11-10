@@ -1179,7 +1179,7 @@ This sensitive information type is only available for use in:
 
 11-character alphanumeric pattern:
 
-- A or a
+- Or a
 - T or t
 - Optional space
 - U or u

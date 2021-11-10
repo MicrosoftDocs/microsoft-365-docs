@@ -80,7 +80,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 ## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
 
-All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
+All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).

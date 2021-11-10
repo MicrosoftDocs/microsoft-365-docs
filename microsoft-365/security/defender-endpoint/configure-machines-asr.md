@@ -33,7 +33,7 @@ ms.technology: mde
 <br>
 *Attack surface management card*
 
-The *Attack surface management card* is an entry point to tools in Microsoft 365 Defender portal that you can use to:
+The *Attack surface management card* is an entry point to tools in the Microsoft 365 Defender portal that you can use to:
 
 * Understand how ASR rules are currently deployed in your organization.
 * Review ASR detections and identify possible incorrect detections.

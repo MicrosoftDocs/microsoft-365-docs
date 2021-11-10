@@ -60,26 +60,25 @@ For more information on Microsoft 365 Defender incident properties including co
 
 ### Splunk
 
-Using the Microsoft 365 Defender Add-on for Splunk that supports: 
+Using the Microsoft 365 Defender Add-on for Splunk that supports:
 
-- Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):  
-  - Microsoft 365 Defender 
-  - Microsoft Defender for Endpoint 
-  - Microsoft Defender for Identity & Azure Active Directory Identity Protection 
-  - Microsoft Cloud App Security 
+- Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):
 
-- Updating incidents in Microsoft 365 Defender from within Splunk 
+  - Microsoft 365 Defender
+  - Microsoft Defender for Endpoint
+  - Microsoft Defender for Identity and Azure Active Directory Identity Protection
+  - Microsoft Defender for Cloud Apps
 
-- Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts 
+- Updating incidents in Microsoft 365 Defender from within Splunk
+
+- Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts
 
 For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
-
-  
 
 ### Micro Focus ArcSight
 
 The new SmartConnector for Microsoft 365 Defender ingests incidents into ArcSight and maps these onto its Common Event
-Framework (CEF). 
+Framework (CEF).
 
 For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
@@ -101,4 +100,3 @@ For more information on the Splunk Add-on for Microsoft Cloud Services, see [spl
 
 ### IBM QRadar
 >Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).
-

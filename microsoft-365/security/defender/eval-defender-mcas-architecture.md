@@ -36,7 +36,7 @@ Before enabling Microsoft Defender for Cloud Apps, be sure you understand the ar
 
 ## Understand the architecture
 
-Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB). CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Microsoft Defender for Cloud Apps natively integrates with Microsoft security capabilities, including Microsoft 365 Defender. 
+Microsoft Defender for Cloud Apps is a cloud access security broker (CASB). CASBs act a gatekeeper to broker access in real time between your enterprise users and cloud resources they use, wherever your users are located and regardless of the device they are using. Microsoft Defender for Cloud Apps natively integrates with Microsoft security capabilities, including Microsoft 365 Defender.
 
 Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected, as illustrated.
 

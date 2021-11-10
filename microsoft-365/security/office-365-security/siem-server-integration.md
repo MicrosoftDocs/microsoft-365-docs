@@ -34,7 +34,7 @@ ms.prod: m365-security
 Is your organization using or planning to get a Security Information and Event Management (SIEM) server? You might be wondering how it integrates with Microsoft 365 or Office 365. This article provides a list of resources you can use to integrate your SIEM server with Microsoft 365 services and applications.
 
 > [!TIP]
-> If you don't have a SIEM server yet and are exploring your options, consider **[Microsoft Microsoft Sentinel](/azure/sentinel/overview)**.
+> If you don't have a SIEM server yet and are exploring your options, consider **[Microsoft Sentinel](/azure/sentinel/overview)**.
 
 ## Do I need a SIEM server?
 

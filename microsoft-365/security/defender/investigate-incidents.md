@@ -116,7 +116,7 @@ The **Devices** tab lists all the devices related to the incident. Here's an exa
 
 You can select the check mark for a device to see details of the device, directory data, active alerts, and logged on users. Select the name of the device to see device details in the Microsoft Defender for Endpoint device inventory. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page for Microsoft Defender for Endpoints.":::
+:::image type="content" source="../../media/investigate-incidents/incident-devices-details.png" alt-text="Example of a devices page in Microsoft Defender for Endpoint.":::
 
 From the device page, you can gather additional information about the device, such as all of its alerts, a timeline, and security recommendations. For example, from the **Timeline** tab, you can scroll through the machine timeline and view all events and behaviors observed on the machine in chronological order, interspersed with the alerts raised.
 

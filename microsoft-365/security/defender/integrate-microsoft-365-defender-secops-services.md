@@ -59,7 +59,7 @@ The components of Microsoft 365 Defender are:
 
  - **Microsoft Defender for Office 365** is a cloud-based email filtering service that helps protect organizations against unknown malware and viruses by providing robust zero-day protection and includes features to safeguard organizations from harmful links in real time. It also offers a comprehensive slate of investigation and hunting, response and remediation, awareness and training, and secure posture features.
 
-- **Microsoft Defender for Cloud Apps** is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all Microsoft and third-party cloud services.
+- **Microsoft Defender for Cloud Apps** is a cloud access security broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all Microsoft and third-party cloud services.
 
 Because Microsoft 365 Defender components and technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
 
