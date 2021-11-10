@@ -158,8 +158,9 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 
 Now that you've learned about Endpoint DLP, your next steps are:
 
-1. [Get started with device onboarding](device-onboarding-overview.md#get-started-with-device-onboarding)
-2. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
+1. [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-or-windows-11-devices-into-microsoft-365-overview)
+1. [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also
 
