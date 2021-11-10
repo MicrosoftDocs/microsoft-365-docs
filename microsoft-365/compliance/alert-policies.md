@@ -292,9 +292,9 @@ To see which category a default alert policy is assigned to, see the table in [D
 >
 > You can also view the roles assigned to a role group in the Microsoft 365 compliance center or the Microsoft 365 Defender portal. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
 
-## Manage alerts
-
 <a name="manage-alerts"></a>
+
+## Manage alerts
 
 After alerts have been generated and displayed on the **Alerts** page in the compliance center, you can triage, investigate, and resolve them. The same [RBAC permissions](#rbac-permissions-required-to-view-alerts) that give users access to alerts also give them the ability to manage alerts.
 

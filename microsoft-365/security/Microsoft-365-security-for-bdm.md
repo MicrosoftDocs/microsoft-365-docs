@@ -1,5 +1,6 @@
 ---
 title: "Microsoft 365 Security for Business Decision Makers (BDMs)"
+description: The most common threat and attack scenarios currently faced by organizations for their Microsoft 365 environments, and recommended actions for mitigating these risks.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -14,7 +15,6 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "the most common threat and attack scenarios currently faced by organizations for their Microsoft 365 environments, and recommended actions for mitigating these risks."
 ---
 
 # Microsoft 365 Security for Business Decision Makers (BDMs)
@@ -126,8 +126,7 @@ The following diagram illustrates these capabilities.
 
 ## Continuous monitoring and auditing
 
-Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 environment along with the Windows and Devices is critical to making sure you are able to quickly detect and remediate any intrusions. Tools such as Secure Score, Defender for Cloud, and Microsoft Intelligent Graph's advanced analytics provide invaluable information into your tenant and link massive amounts of threat intelligence and security data to provide you unparalleled threat protection and detection.
-
+Last but not least, Continuous Monitoring and Auditing of the Microsoft 365 environment along with the Windows and Devices is critical to making sure you are able to quickly detect and remediate any intrusions. Tools such as Secure Score, Microsoft 365 Defender portal, and Microsoft Intelligent Graph's advanced analytics provide invaluable information into your tenant and link massive amounts of threat intelligence and security data to provide you unparalleled threat protection and detection.
 
 |Recommendation |E3 |E5 |
 |---------|---------|---------|
@@ -144,6 +143,7 @@ The following diagram illustrates these capabilities.
 ![Recommended capabilities for continuous monitoring and auditing.](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 Top recommended monitoring actions:
-- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Defender for Cloud Apps, and Microsoft Defender for Endpoint, as well as Office 365. 
+
+- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Defender for Cloud Apps, and Microsoft Defender for Endpoint, as well as Office 365.
 - **Review risky logins weekly** — Use the Azure AD admin center to review risky sign-ins weekly. The recommended identity and device access ruleset includes a policy to enforce password change on risky sign-ins.  
 - **Review top malware and phished users weekly** — Use Microsoft Defender for Office 365 Threat Explorer to review top users targeted with malware and phish and to find out the root cause of why these users are affected.

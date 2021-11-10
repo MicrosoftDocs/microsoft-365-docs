@@ -102,7 +102,7 @@ Automatic testing is turned on by default for organizations new to Compliance Ma
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
 
-#### To manage your automated testing settings:
+**To manage your automated testing settings:**
 
 1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 

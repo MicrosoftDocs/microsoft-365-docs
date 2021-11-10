@@ -34,7 +34,7 @@ A domain is a unique name that appears after the **@** sign in email addresses, 
   
 Using a custom domain like *rob@contoso.<span>com* with Microsoft 365 can help build credibility and recognition for your brand. 
   
-## Choose the experience that's best for you:
+## Choose the experience that's best for you
 
  **Buy a new domain:**
   
