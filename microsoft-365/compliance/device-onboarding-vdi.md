@@ -141,8 +141,8 @@ If offline servicing is not a viable option for your non-persistent VDI environm
 
 ## Related topics
 
-- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](device-onboarding-mdm.md)
-- [Onboard Windows 10 devices using a local script](device-onboarding-script.md)
+- [Onboard Windows 10 and Windows 11 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 and Windows 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 and Windows 11 devices using a local script](device-onboarding-script.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

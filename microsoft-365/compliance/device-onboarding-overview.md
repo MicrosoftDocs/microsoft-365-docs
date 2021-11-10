@@ -1,5 +1,5 @@
 ---
-title: "Device onboarding for information protection solutions"
+title: "Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Set up Windows 10 or Windows 11 or macOS devices for Microsoft 365 information protection solutions."
+description: "Onboard Windows 10 or Windows 11 devices into Microsoft 365"
 ---
 
-# Get started with device onboarding
+# Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview
 
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows 11, and macOS (Catalina 10.15 and higher) devices be onboarded into the service so that they can send monitoring data to the services.
+Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows and Windows 11 devices be onboarded into the service so that they can send monitoring data to the services.
  
 Microsoft 365 Endpoint DLP allows you to monitor Windows 10 or Windows 11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
 
@@ -66,10 +66,6 @@ If you want to use a custom account to turn on/off device monitoring, it must be
 
 - Global admin
 - Compliance admin
-
-### Prepare your macOS devices
-
-<!-- See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview) -->
 
 ### Prepare your Windows devices
 
@@ -109,7 +105,7 @@ You must enable device monitoring and onboard your endpoints before you can moni
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list. <!--Follow the [With devices onboarded into Microsoft Defender for Endpoint procedure](?source=docs&view=o365-worldwide#with-devices-onboarded-into-microsoft-defender-for-endpoint).-->
+If you already have devices onboarded into [Microsoft Defender for Endpoint](/windows/security/threat-protection/), they will already appear in the managed devices list.
 
 ### Onboarding Windows 10 or Windows 11 devices
 
@@ -143,41 +139,8 @@ Topic | Description
 [Onboard Windows 10 or 11 devices using Mobile Device Management tools](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
 [Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
 [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
-|[Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview) | Learn how to onboard macOS devices into Compliance solutions using Intune
-|[Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) | Use this procedure for onboarding macOS devices using Intune if you already have Microsoft Defender for Endpoint (MDE) deployed to them.
-|[Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | Use this procedure if you manage your macOS devices with JAMF Pro.
-|[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)| Use this procedure for onboarding macOS devices using JAMF Pro if you already have Microsoft Defender for Endpoint (MDE) deployed to them.
 
 Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
-
-<!--> [!NOTE]
-> This experience is under license enforcement. Without the required license, data will not be visible or accessible.-->
-
-<!--### With devices onboarded into Microsoft Defender for Endpoint
-
-In this scenario, Microsoft Defender for Endpoint is already deployed and there are devices reporting in. All these devices will appear in the managed devices list. You can continue to onboard new devices into Microsoft 365 information protection solution to expand coverage.
-
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
-
-2. Open the Compliance Center settings page and choose **Enable device monitoring**.
-
-3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to Microsoft Defender for Endpoint.
-
-4. Choose **Onboarding** if you need to onboard additional devices.
-
-5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
-
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/device-onboarding.md). This link takes you to a landing page where you can access Microsoft 365 information protection device onboarding procedures that match the deployment package you selected in step 5:
-    - Onboard Windows 10 machines using Group Policy
-    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
-
-Once a device is onboarded, it should be visible under the **Devices** table and also start reporting audit logs to the **Activity Explorer**.
-
-> [!NOTE]
->This experience is under license enforcement. Without the required license, data will not be visible or accessible.-->
 
 ## See also
 

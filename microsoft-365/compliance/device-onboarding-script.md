@@ -31,7 +31,7 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 > [!IMPORTANT]
 > This script has been optimized for use on up to 10 devices.
 >
-> To deploy at scale, use [other deployment options](device-onboarding.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
+> To deploy at scale, use [other deployment options](device-onboarding-overview.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md).
 
 ## Onboard devices
  
@@ -108,9 +108,9 @@ Monitoring can also be done directly on the portal, or by using the different de
 1. Verify that devices are appearing.
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 and Windows 11 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 and Windows 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools](device-onboarding-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

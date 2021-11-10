@@ -5540,6 +5540,11 @@
       "source_path": "microsoft-365/compliance/endpoint-dlp-configure-proxy.md",
       "redirect_url": "/compliance/device-onboarding-configure-proxy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compiance/device-onboarding.md",
+      "redirect_url": "/compliance/device-onboarding-overview",
+      "redirect_document_id": false
     }
   ]
 }
