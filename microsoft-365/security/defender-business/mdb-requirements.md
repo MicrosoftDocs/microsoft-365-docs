@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 11/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -40,7 +40,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 | User accounts | User accounts created<br/><br/>Microsoft Defender for Business licenses are assigned. (To get help with this, see [Add users and assign licenses](../../admin/add-users/add-users.md).) |
 | Permissions  | To access the Microsoft 365 Defender portal, users must have the Security Reader, Security Admin, or Global Admin role assigned. These permissions are assigned through [roles in Azure AD](mdb-roles-permissions.md), either by going to the Azure portal or as part of your initial setup process for Defender for Business.<br/><br/>To learn more, see [Roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md). |
 | Browser requirements | Microsoft Edge or Google Chrome |
-| Operating system | To manage devices using the simplified configuration process in Microsoft Defender for Business, your devices must be running Windows 10, version 1709 or later. <br/><br/>If you are already managing devices in Microsoft Intune (or Microsoft Endpoint Manager), or if you are using a non-Microsoft device management solution, your devices must be running one of the [operating systems that are supported in Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md). |
+| Operating system | To manage devices using the simplified configuration process in Microsoft Defender for Business, your devices must be running Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541)). <br/><br/>If you are already managing devices in Microsoft Intune (or Microsoft Endpoint Manager), or if you are using a non-Microsoft device management solution, your devices must be running one of the [operating systems that are supported in Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md). |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 ## Next steps
