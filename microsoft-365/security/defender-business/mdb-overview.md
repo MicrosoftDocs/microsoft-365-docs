@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/09/2021
+ms.date: 11/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -42,10 +42,16 @@ With Defender for Business, you can help protect the devices and data your busin
 
 **This guide is intended to**:
 
-- **Provide you with an overview of Defender for Business** so you know what’s included and how it works. (This article describes the features and capabilities that are included.)
-- **Walk through setting up and configuring your threat protection capabilities**. (See [Set up and configure Defender for Business](mdb-setup-configuration.md).)
+- **Provide you with an overview of Defender for Business** so you know what’s included and how it works. This article describes the features and capabilities that are included. And these articles provide more information:
+   - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md) 
+   - [How to get Microsoft Defender for Business](get-defender-business.md)
+
+- **Walk through setting up and configuring your threat protection capabilities**. 
+   - See [Set up and configure Defender for Business](mdb-setup-configuration.md).
+
 - **Help you get started using Defender for Business**, starting with the Microsoft 365 Defender portal. (See [Get started using Microsoft Defender for Business](mdb-get-started.md).)
-- **Provide guidance on managing [devices](mdb-manage-devices.md) and [security policies and settings](mdb-manage-next-generation-protection.md), and configuring [firewall](mdb-firewall.md)**.  
+
+- **Provide guidance on managing [devices](mdb-manage-devices.md) and [security policies and settings](mdb-manage-next-generation-protection.md), and configuring [firewall](mdb-firewall.md)**. (See [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md), [View or edit next-generation protection policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md))  
 
 ## What's included in Microsoft Defender for Business?
 
