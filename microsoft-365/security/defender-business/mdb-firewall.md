@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 11/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -45,7 +45,7 @@ Microsoft Defender for Business includes firewall protection through Windows Def
 | **Public network** | The public network profile applies to a network that you can use in a public location, such as a coffee shop or an airport. Firewall settings for public networks apply to inbound connections that are initiated on other devices that are on the same network. Because a public network can include devices that you don't know or don't trust, incoming connections are set to **Block all** by default.  |
 | **Private network** | The private network profile applies to a network in a private location, such as your home. Firewall settings for private networks apply to inbound connections that are initiated on other devices that are on the same network. In general, on a private network, it is assumed that all other devices on the same network are trusted devices. However, by default, incoming connections are set to **Block all**. |
 | **Custom rules** | Custom rules allow you to block or allow specific connections. For example, suppose that you want to block all incoming connections on devices that are connected to a private network, except for connections through a specific app on a device. In this case, you would set **Private network** to block all incoming connections, and then add a custom rule to define the exception. <br/><br/>You can use custom rules to define exceptions for specific files or apps, an Internet protocol (IP) address, or a range of IP addresses. |
-| Values for custom rules | Depending on the type of custom rule you are creating, here are some example values you can use: <br/><br/>Application file path: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP: IPv4/IPv6 address such as `192.168.1.0` or `192.168.1.0/24` <br/><br/>IP: A valid IPv4/IPv6 address, such as `192.168.1.0` or `192.168.1.0/24` ​<br/><br/>IP: A valid IPv4/IPv6 address range, formatted like `192.168.1.0-192.168.1.9` (with no spaces included) |
+| Values for custom rules | Depending on the type of custom rule you are creating, here are some example values you can use: <br/><br/>Application file path: `C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe` <br/><br/>IP: A valid IPv4/IPv6 address, such as `192.168.1.0` or `192.168.1.0/24` ​<br/><br/>IP: A valid IPv4/IPv6 address range, formatted like `192.168.1.0-192.168.1.9` (with no spaces included) |
 
 ## Next steps
 
