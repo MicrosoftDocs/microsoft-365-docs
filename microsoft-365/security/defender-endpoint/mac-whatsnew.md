@@ -1,4 +1,3 @@
-
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
