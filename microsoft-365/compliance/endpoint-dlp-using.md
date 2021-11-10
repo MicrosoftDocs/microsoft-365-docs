@@ -423,9 +423,9 @@ There are three procedures.
     
     "Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'"
 
-5. Choose **Dismiss**
+5. Choose **Dismiss**.
 
-6. Open the place holder .txt file. It will be named **auto-quarantine doc 1.docx_*date_time*.txt**. 
+6. Open the place holder text file. It will be named **auto-quarantine doc 1.docx_*date_time*.txt**. 
 
 7. Open the quarantine folder and confirm that the original file is there.
  
