@@ -35,7 +35,7 @@ A template is a framework of controls for creating an assessment in Compliance M
 
 We refer to templates by the same name as their underlying certification or regulation, such as the EU GDPR template and the ISO/IEC 27701:2019 template.
 
-Since Compliance Manger can be used to assess different types of products, each template comes in two versions: one that applies to a pre-defined product such as Microsoft 365, and a universal version that can be tailored to suit your chosen product. Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
+Compliance Manger can be used to assess different types of products. All templates apart from the baseline come in at least one version that applies to a pre-defined product, such as Microsoft 365, and a universal version that can be tailored to suit other products. Assessments from universal templates are more generalized but offer expanded versatility, since they can help you easily track your organization's compliance across multiple products.
 
 Note that US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers cannot currently use universal templates.
 

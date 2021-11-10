@@ -54,7 +54,8 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [Comp
 
 2. In the edit status flyout pane, select the **Assigned to** box to show a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
 
-3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action. 
+3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
+
 > [!NOTE]
 > US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
 
@@ -81,10 +82,10 @@ The **Notes and documentation** section contains fields for uploaded documents, 
 
 - Select **Manage documents** to upload any relevant files.
 - When the manage documents flyout pane opens, select **Add document**, then select your file from your system. Accepted file types:
-    - Documents (.doc, .xls, .ppt, .txt, .pdf)
-    - Images (.jpg, .png)
-    - Video (.mkv)
-    - Compressed files (.zip, .rar)
+  - Documents (.doc, .xls, .ppt, .txt, .pdf)
+  - Images (.jpg, .png)
+  - Video (.mkv)
+  - Compressed files (.zip, .rar)
 - Once your file resolves in the pane select **Close**, which automatically saves the file attachment. You'll then see the file listed underneath **Uploaded documents**.
 - To download or delete the document, select **Manage documents** from underneath the list of documents. On the flyout pane, select the document row to highlight it, then select **Download** or **Delete**.
 
@@ -103,19 +104,19 @@ You can record the implementation status and date, and the test status and date,
 To edit an improvement action’s status, select **Edit status** on the upper-left section of the details page. Below are the available fields and status options:
 
 - **Implementation status**
-    - **Not implemented** - action not yet implemented
-    - **Implemented** - action implemented
-    - **Alternative implementation** - select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
-    - **Planned** - action is planned for implementation
-    - **Out of scope** – action isn’t relevant to your organization and doesn’t contribute to your score
+  - **Not implemented** - action not yet implemented
+  - **Implemented** - action implemented
+  - **Alternative implementation** - select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
+  - **Planned** - action is planned for implementation
+  - **Out of scope** – action isn’t relevant to your organization and doesn’t contribute to your score
 - **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
 - **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
-    - **Not assessed** – action hasn't been tested
-    - **Passed** - implementation has been verified by an assessor
-    - **Failed low risk** - testing failed, low risk
-    - **Failed medium risk** - testing failed, medium risk
-    - **Failed high risk** – testing failed, high risk
-    - **Out of scope** – the action is out of scope for the assessment and doesn’t contribute to your score
+  - **Not assessed** – action hasn't been tested
+  - **Passed** - implementation has been verified by an assessor
+  - **Failed low risk** - testing failed, low risk
+  - **Failed medium risk** - testing failed, medium risk
+  - **Failed high risk** – testing failed, high risk
+  - **Out of scope** – the action is out of scope for the assessment and doesn’t contribute to your score
 - **Test date**: toggle through the calendar pop-up to select the date
 
 Common actions synch across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.

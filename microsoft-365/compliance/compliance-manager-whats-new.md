@@ -25,7 +25,11 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## November 2021
 
-### New assessment templates
+### Continuous compliance assessment (CCA)
+
+We're adding automated testing and evidence generation for over 40 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment (CCA), you can see updates about which of these actions you've completed if they're relevant for your compliance assessments. CCA also gives your admins visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
+
+### New preview templates
 
 The following assessment templates are now available in preview:
 
