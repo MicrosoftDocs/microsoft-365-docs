@@ -18,10 +18,10 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Onboard Windows 10 or Windows 11 devices into Microsoft 365"
+description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
 ---
 
-# Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview
+# Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
 
 **Applies to:**
 

@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using Configuration Manager
+title: Onboard Windows 10 and Windows 11 devices using Configuration Manager
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ search.appverid:
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Configuration Manager
+# Onboard Windows 10 and Windows 11 devices using Configuration Manager
 
 **Applies to:**
 

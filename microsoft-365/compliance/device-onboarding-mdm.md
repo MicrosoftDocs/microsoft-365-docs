@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using Mobile Device Management tools
+title: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ search.appverid:
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Mobile Device Management tools
+# Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 
 **Applies to:**
 

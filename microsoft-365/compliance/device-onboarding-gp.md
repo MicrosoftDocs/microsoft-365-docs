@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices via Group Policy
+title: Onboard Windows 10 and Windows 11 devices via Group Policy
 
 f1.keywords:
     NOCSH
@@ -16,10 +16,10 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
-description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+description: Use Group Policy to deploy the configuration package on Windows 10 and Windows 11 devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+# Onboard Windows 10 devices and Windows 11 using Group Policy 
 
 **Applies to:**
 

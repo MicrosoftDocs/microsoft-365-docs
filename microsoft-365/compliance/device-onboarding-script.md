@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using a local script
+title: Onboard Windows 10 and Windows 11 devices using a local script
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Use a local script to deploy the configuration package on devices s
 
 ---
 
-# Onboard Windows 10 devices using a local script
+# Onboard Windows 10 and Windows 11 devices using a local script
 
 **Applies to:**
 
