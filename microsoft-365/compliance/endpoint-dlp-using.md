@@ -42,7 +42,7 @@ Or
 
 #### Get registered
 
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/Ignite2021DLP).
+To get access to this feature, you must register your tenant with Microsoft—see [get registered](https://aka.ms/Ignite2021DLP).
 
 When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
@@ -61,7 +61,7 @@ These Windows versions support advanced classification scanning and protection:
 
 ### Endpoint DLP Windows 10 and macOS settings
 
-To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
+To get access to macOS support, you must register your tenant with Microsoft—see [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
@@ -153,7 +153,7 @@ To prevent sensitive items from being synced to the cloud by cloud sync apps, li
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
-You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins. See, [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
+You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
 
 ### Unallowed Bluetooth apps
 
@@ -201,7 +201,7 @@ You can create up to five customized options that will appear when users interac
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### Always audit file activity for devices
 
@@ -263,7 +263,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 10. The new DLP policy will appear in the policy list.
 
-11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 12. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
@@ -332,7 +332,7 @@ In this scenario, synchronizing files with the **Highly Confidential** sensitivi
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
 - Microsoft Word installed on the target Windows 10 computer
-- Sensitivity labels configured and published. See, [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
 
@@ -413,7 +413,7 @@ will leave a .txt file that contains this message
 
     *C:\auto-quarantine source folder*
 
-3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label. See, [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label; see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
 
@@ -429,7 +429,7 @@ The message reads:
 
 7. Open the quarantine folder and confirm that the original file is there.
  
-8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 9. Check Activity explorer for the event.
 
