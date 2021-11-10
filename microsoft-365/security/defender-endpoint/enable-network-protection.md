@@ -55,7 +55,7 @@ Enable network protection by using any of these methods:
 
 - [PowerShell](#powershell)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Manager / Intune](#microsoft-endpoint-manager-formerly-intune)
+- [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
 - [Group Policy](#group-policy)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 
@@ -81,13 +81,15 @@ Enable network protection by using any of these methods:
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to enable or disable network protection or enable audit mode.
 
-### Microsoft Endpoint Manager (formerly Intune)
+### Microsoft Endpoint Manager
 
 1. Sign into the Microsoft Endpoint Manager admin center (https://endpoint.microsoft.com).
 
 2. Go to **Devices** > **Configuration profiles** > **Create profile**.
 
-3. In the **Create a profile** flyout, select **Endpoint protection** from the list of templates, and then select **Create**.
+3. In the **Create a profile** flyout, select **Platform** and choose the **Profile Type** as **Templates**.
+
+4. In the **Template name**, Choose **Endpoint protection** from the list of templates, and then select **Create**.
 
 4. Go to **Endpoint protection** > **Basics**, provide a name for your profile, and then select **Next**.
 
