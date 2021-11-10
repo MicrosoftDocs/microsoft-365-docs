@@ -63,7 +63,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Report suspicious content to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
@@ -129,7 +129,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## View admin submissions to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected.
 
@@ -192,7 +192,7 @@ If an override was found, the rescan should complete in several minutes. If ther
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 

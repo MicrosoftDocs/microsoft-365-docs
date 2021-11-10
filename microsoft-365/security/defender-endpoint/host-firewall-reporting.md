@@ -25,13 +25,13 @@ ms.collection: m365-security-compliance
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you are an admin, you can now host firewall reporting to [Microsoft 365 security center](https://security.microsoft.com). This feature enables you to view Windows 10, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
+If you are an admin, you can now host firewall reporting to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>. This feature enables you to view Windows 10, Windows Server 2019, and Windows Server 2022 firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
 - You must be running Windows 10 or Windows Server 2019, or Windows Server 2022.
 - To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md).
-- For Microsoft 365 security center to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
+- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging).
