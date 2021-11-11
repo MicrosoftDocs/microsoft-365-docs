@@ -12,7 +12,9 @@ author: jweston-1
 ms.author: v-jweston
 ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
-ms.custom: asr
+ms.custom: 
+- asr
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance

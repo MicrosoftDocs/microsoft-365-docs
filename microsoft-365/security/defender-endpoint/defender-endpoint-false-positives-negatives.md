@@ -20,7 +20,9 @@ ms.collection:
 ms.topic: how-to
 ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
+ms.custom: 
+- FPFN
+- admindeeplinkDEFENDER
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint

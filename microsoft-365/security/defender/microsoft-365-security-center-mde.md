@@ -19,6 +19,7 @@ search.appverid:
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender 
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Microsoft Defender for Endpoint in Microsoft 365 Defender
