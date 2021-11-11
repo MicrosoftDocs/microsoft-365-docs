@@ -83,9 +83,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Manage your next-generation protection policies
-            url: mdb-manage-next-generation-protection.md
-          - text: Manage your firewall policies
+          - text: View and edit your policies
+            url: mdb-view-edit-policies.md
+          - text: Create a new policy
+            url: mdb-create-new-policy.md
+          - text: Add, edit, or delete custom rules for firewall policies
             url: mdb-custom-rules-firewall.md
           - text: Create device groups
             url: mdb-create-edit-device-groups.md
