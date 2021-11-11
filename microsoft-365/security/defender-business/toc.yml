@@ -41,7 +41,7 @@
         href: mdb-review-remediation-actions.md
       - name: View and manage devices
         href: mdb-manage-devices.md
-    - name: Manage settings and devices
+    - name: Manage your settings, policies, and devices
       items: 
       - name: Manage next-generation protection policies
         href: mdb-manage-next-generation-protection.md

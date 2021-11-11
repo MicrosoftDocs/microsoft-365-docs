@@ -25,7 +25,7 @@ ms.collection:
 
 You can manage your firewall settings in Microsoft Defender for Business. Your firewall settings are managed through policies that are assigned to devices. Initially, you have a default policy that helps protect your devices from unwanted network traffic. However, you can create our own policies and custom rules to allow specific connections. [Learn more about firewall protection in Microsoft Defender for Business](mdb-firewall.md).
 
-## View and edit your firewall policies
+## Create a custom rule for a firewall policy
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -48,7 +48,7 @@ You can manage your firewall settings in Microsoft Defender for Business. Your f
 
 7. On the **Review your policy** screen, review the changes that were made to firewall policy settings. Make any needed changes, and then choose **Create policy**.
 
-## Edit a custom rule
+## Edit a custom rule for a firewall policy
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
