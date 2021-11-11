@@ -36,7 +36,7 @@ By reducing the different attack surfaces, you can help prevent attacks from hap
 During your initial preparation, it's vital that you understand the capabilities of the systems that you'll put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization.
 
 >[!IMPORTANT]
->This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configurations for your environment.
+>This guide provides images and examples to help you decide how to configure ASR rules; these images and examples might not reflect the best configuration options for your environment.
 
 Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules](attack-surface-reduction-rules.md).
 
