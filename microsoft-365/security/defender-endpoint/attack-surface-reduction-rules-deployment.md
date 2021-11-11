@@ -105,8 +105,7 @@ Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules fal
 
 ## ASR rules deployment phases
 
-As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully
-.  
+As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
 > [!div class="mx-imgBorder"]
 > ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
@@ -422,7 +421,7 @@ The true benefit of advanced hunting is that you can shape the queries to your l
 
 For additional information about additional hunting options, see: [Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
 
-## Refrence
+## Reference
 
 ### Blogs
 
