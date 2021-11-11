@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is designed with the busy small and medium-sized business in mind. For example, Defender for Business can detect whether you are already using Microsoft Endpoint Manager, and will prompt you to choose between automatic or manual onboarding. You can also opt to [onboard devices gradually](#what-if-i-want-to-onboard-devices-gradually).
+Microsoft Defender for Business is designed with the busy small and medium-sized business in mind. For example, Defender for Business can detect whether you are already using Microsoft Endpoint Manager, and will prompt you to choose between automatic or manual onboarding. You can also opt to onboard devices a few at a time (see [What if I want to onboard devices gradually?](#what-if-i-want-to-onboard-devices-gradually)).
 
 ## What to do
 
