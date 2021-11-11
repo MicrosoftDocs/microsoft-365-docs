@@ -29,7 +29,6 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
-<!--- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)-->
 
 ## Before you begin
 
@@ -43,6 +42,11 @@ If you are not familiar with DLP at all, you should familiarize yourself with th
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
 - [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+
+If you are not familiar with Insider Risk, you should familiarize yourself with these articles:
+
+ - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+ - [Plan for insider risk management](insider-risk-management-plan.md#plan-for-insider-risk-management)
 
 Your macOS devices must already be managed through Intune or JAMF Pro.
  
