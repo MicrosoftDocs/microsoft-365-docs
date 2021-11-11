@@ -25,12 +25,12 @@ ms.collection:
 
 Next-generation protection in Microsoft Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
 
-This article describes:
+**This article describes**:
 
-- [Next-generation protection settings that you can configure in Defender for Business](#next-generation-protection-settings-that-you-can-configure-in-defender-for-business)
-- [Next-generation protection settings that are preconfigured in Defender for Business](#next-generation-protection-settings-that-are-preconfigured-in-defender-for-business) 
+- [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
+- [Additional preconfigured settings](#additional-preconfigured-settings) 
 
-## Next-generation protection settings that you can configure in Defender for Business
+## Next-generation protection settings and options
 
 The following table lists your settings and options:<br/><br/>
 
@@ -54,7 +54,7 @@ The following table lists your settings and options:<br/><br/>
 | **File extension exclusions** | File extension exclusions prevent files with specific extensions from being scanned by Microsoft Defender Antivirus.<br/><br/>[Learn more about file extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 | **File and folder exclusions** | File and folder exclusions prevent files that are in specific folders from being scanned by Microsoft Defender Antivirus. <br/><br/>[Learn more about file and folder exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
 
-## Next-generation protection settings that are preconfigured in Defender for Business
+## Additional preconfigured settings
 
 The following additional settings are preconfigured for next-generation protection in Defender for Business:
 
