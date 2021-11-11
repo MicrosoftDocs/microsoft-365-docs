@@ -48,7 +48,7 @@ You can check the progress of analysis on the **Jobs** tab of the case.
 
 ## Using the For Review filter query
 
-After running analytics for the review set, you can use an automatically generated filter query (called *For Review*) that filters your review to only those items that are inclusive representatives of review set items. That means that only unique and representative items are displayed in the review set after you apply the **For Review** filter. This means that duplicate items are filtered out, leaving your with a representative set of items that you can review, tag, and export.
+After running analytics for the review set, you can use an automatically generated filter query (called *For Review*) that filters your review to exclude immaterial, duplicate, or non-inclusive items, leaving users with strictly the items that are representative, unique, and inclusive in the review set.
 
 To apply the **For Review** filter query to a review set, select the **Saved filter queries** dropdown list, and then select **\[AutoGen] For Review**.
 
@@ -60,13 +60,13 @@ Here's the syntax for the **For Review** filter query:
 
 The following list describes the result of the filter query in terms of what content is displayed after you apply it to the review set.
 
-- **Email messages**. Displays items that are marked as **Inclusive** or **InclusiveMinus**. An inclusive item is the final message in an email thread. It contains all previous content in the email thread. An inclusive minus it contains one or more attachments associated with the specific message in the email thread. A reviewer can use the inclusive minus value to determine which specific messages in the email thread have associated attachments.
+- **Email**. Displays items that are marked as **Inclusive** or **InclusiveMinus**. An inclusive item is the final message in an email thread. It contains all previous content in the email thread. An inclusive minus it contains one or more attachments associated with the specific message in the email thread. A reviewer can use the inclusive minus value to determine which specific messages in the email thread have associated attachments.
 
-- **Attachments**. Filters out duplicate attachments. Only attachments that are unique in an email thread are displayed.
+- **Attachments**. Filters out duplicate attachments in the same Email Set. Only attachments that are unique in an email thread are displayed.
 
-- **Site documents**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
+- **Documents and other**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
 
-- **Teams conversations**. All Teams conversations in the review set are displayed.
+- **Teams conversations**. All Teams and Yammer conversations in the review set are displayed.
 
 For more information about inclusive types and document uniqueness, see [Email threading in Advanced eDiscovery](email-threading-in-advanced-ediscovery.md).
 
