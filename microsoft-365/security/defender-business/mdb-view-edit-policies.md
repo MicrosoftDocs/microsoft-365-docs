@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/10/2021
+ms.date: 11/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -22,6 +22,16 @@ ms.collection:
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+
+In Microsoft Defender for Business, security settings are configured through policies. There are two main types of policies in Defender for Business:
+
+- Next-generation protection policies, which determine how Microsoft Defender Antivirus and other threat protection features are configured
+- Firewall policies, which determine what network traffic is permitted to flow to and from your company's devices.
+
+This article describes how to:
+
+- [View your existing policies](#view-your-existing-policies)
+- [Edit an existing policy](#edit-an-existing-policy)
 
 ## View your existing policies
 
