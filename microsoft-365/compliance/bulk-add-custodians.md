@@ -62,10 +62,10 @@ Here's an example of a CSV file with custodian information:<br/><br/>
 
 |Custodian contactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
-|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
+|robinc@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|pillarp@contoso.onmicrosoft.com | TRUE             | TRUE             | TRUE      | |  |
 |.johnj@contoso.onmicrosoft.com|TRUE|TRUE|TRUE||
-|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@onmicrosoft.contoso.com
+|sarad@contoso.onmicrosoft.com|TRUE|TRUE|TRUE|ExchangeMailbox|.saradavis@contoso.onmicrosoft.com
 ||||||
 
 > [!NOTE]

@@ -2,8 +2,6 @@
 title: Device discovery overview
 description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,6 +42,12 @@ The device discovery capability allows you to:
 - **Onboard discovered endpoints**
 
   Unmanaged endpoints in your network introduce vulnerabilities and risks to your network. Onboarding them to the service can increase the security visibility on them.
+
+
+Watch this video for a quick overview of how device discovery:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
 
 In conjunction with this capability, a new security recommendation to onboard devices to Microsoft Defender for Endpoint will be available as part of the existing Threat and Vulnerability Management experience.
 

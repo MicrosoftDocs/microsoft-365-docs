@@ -50,12 +50,18 @@ In advanced classification, content is sent from the local device to the cloud s
 
 If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
 
+These Windows versions support advanced classification scanning and protection:
+
+- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 versions 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
+
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### Endpoint DLP Windows 10 and macOS settings
 
-To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/Ignite2021DLP).
+To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|

@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
