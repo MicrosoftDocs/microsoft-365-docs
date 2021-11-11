@@ -23,7 +23,15 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-[Firewall policies](mdb-firewall.md) help to protect your devices from unwanted network traffic. Microsoft Defender for Business includes default firewall policies for your company's devices. However, you can create our own policies and define custom rules to block or allow specific connections.
+Microsoft Defender for Business includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
+
+To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
+
+This article describes how to:
+
+- [Create a custom rule for a firewall policy](#create-a-custom-rule-for-a-firewall-policy)
+- [Edit a custom rule for a firewall policy](#edit-a-custom-rule-for-a-firewall-policy)
+- [Delete a custom rule](#delete-a-custom-rule)
 
 ## Create a custom rule for a firewall policy
 
