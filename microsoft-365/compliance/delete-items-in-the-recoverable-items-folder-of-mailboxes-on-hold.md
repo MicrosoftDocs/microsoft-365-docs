@@ -197,7 +197,7 @@ After you identify the In-Place Hold, you can use the Exchange admin center (EAC
   
 ### Retention policies applied to specific mailboxes
   
-Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
+Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name

@@ -4340,6 +4340,11 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities",
       "redirect_document_id": true
     },
+	{
+      "source_path": "microsoft-365/security/defender-endpoint/configure-arcsight.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
@@ -4393,6 +4398,11 @@
     {
       "source_path": "microsoft-365/security/office-365-security/safety-tips-in-office-365.md",
       "redirect_url": "/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/migrate-to-defender-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -4561,7 +4571,16 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup/get-started-windows-365-business.md",
+      "source_path": "microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+      "redirect_url": "/compliance/sit-learn-about-exact-data-match",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/sit-edm-wizard.md",
+      "redirect_url": "/compliance/sit-get-started-exact-data-match-create-schema",
+      "redirect_document_id": false
+    },
+    { "source_path": "microsoft-365/admin/setup/get-started-windows-365-business.md",
       "redirect_url": "/windows-365/business/get-started-windows-365-business",
       "redirect_document_id": false
     },
