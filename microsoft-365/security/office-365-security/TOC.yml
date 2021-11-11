@@ -83,7 +83,11 @@
      - name: Configure anti-malware policies
        href: configure-anti-malware-policies.md
      - name: Configure anti-spam policies
-       href: configure-your-spam-filter-policies.md
+       items:
+       - name: Configure anti-spam policies  
+         href: configure-your-spam-filter-policies.md
+       - name: Advanced Spam Filter (ASF) settings
+         href: advanced-spam-filtering-asf-options.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Configure junk email settings on Exchange Online mailboxes
@@ -126,8 +130,16 @@
        href: install-app-guard.md
    - name: Migrate
      items: 
-     - name: Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
-       href: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+     - name: Migrate from a third-party protection service or device to Defender for Office 365
+       items:
+       - name: Migrate from a third-party protection service or device to Defender for Office 365
+         href: migrate-to-defender-for-office-365.md
+       - name: "Migrate Phase 1: Prepare"
+         href: migrate-to-defender-for-office-365-prepare.md
+       - name: "Migrate Phase 2: Setup"
+         href: migrate-to-defender-for-office-365-setup.md
+       - name: "Migrate Phase 3: Onboard"
+         href: migrate-to-defender-for-office-365-onboard.md
    - name: Prevent
      items: 
      - name: Configure your tenant for increased security
@@ -158,8 +170,6 @@
        href: recommended-settings-for-eop-and-office365.md
      - name: Integrate AIR with a custom solution or third-party solution
        href: air-custom-reporting.md
-     - name: Advanced Spam Filter (ASF) settings
-       href: advanced-spam-filtering-asf-options.md
      - name: Tenant Allow/Block List
        items:
        - name: Manage the Tenant Allow/Block List

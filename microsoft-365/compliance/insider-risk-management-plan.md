@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Plan for insider risk management
@@ -43,7 +44,7 @@ If you have requirements for specific stakeholders to be involved in case invest
 
 ## Plan for the review and investigation workflow
 
-Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Make sure understand how you will assign different stakeholders to the different role groups available in insider risk management.
+Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. Make sure understand how you will assign different stakeholders to the different role groups available in insider risk management.
 
 >[!IMPORTANT]
 >Make sure you always have at least one user in the **Insider Risk Management** or **Insider Risk Management Admin** role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.

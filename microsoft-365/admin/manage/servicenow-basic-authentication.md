@@ -1,5 +1,5 @@
 ---
-title: "Configure support integration with ServiceNow Basic Authentication"
+title: "Configure support integration with ServiceNow - Basic Authentication"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Configure support integration with ServiceNow Basic Authentication
+# Configure support integration with ServiceNow - Basic Authentication
 
 ## Prerequisites (Basic Authentication)
 
