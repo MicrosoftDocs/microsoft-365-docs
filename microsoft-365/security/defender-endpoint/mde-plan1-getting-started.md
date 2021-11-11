@@ -9,7 +9,7 @@ audience: ITPro
 ms.topic: overview
 ms.date: 10/01/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
