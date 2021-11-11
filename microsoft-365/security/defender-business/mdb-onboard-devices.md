@@ -60,7 +60,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 ## Part 3: Choose a manual onboarding method
 
-You can choose from several onboarding methods in Defender for Business, as described in this section. It's important to make sure certain prerequisites are in place before you onboard your devices.
+You can choose from several onboarding methods in Defender for Business, as described in this section.
 
 > [!IMPORTANT]
 > If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, make sure that all of the following requirements are met. [Learn more about the requirements for Defender for Business](mdb-requirements.md).
