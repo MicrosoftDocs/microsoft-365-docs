@@ -70,10 +70,12 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 |Customer type|Portal URL|
 |---|---|
-|GCC|<https://gcc.securitycenter.microsoft.us>|
+|GCC|<https://security.microsoft.com>|
 |GCC High|<https://securitycenter.microsoft.us>|
 |DoD|<https://securitycenter.microsoft.us>|
 |
+> [!NOTE]
+> If you are a GCC customer and in the process of moving from MDE commercial to GCC, use https://transition.security.microsoft.com to access your MDE commercial data.
 
 ## Endpoint versions
 
