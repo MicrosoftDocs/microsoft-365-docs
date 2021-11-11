@@ -96,7 +96,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - For encrypted documents, printing is not supported in Office for the web.
 
-- For encrypted documents in Office for the web, copying to the clipboard and screen captures are not prevented. For more information, see [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures).
+- For encrypted documents in Office for the web, copying to the clipboard and screen captures are not prevented. For more information, see [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - By default, Office desktop apps and mobile apps don't support co-authoring for files that are labeled with encryption. These apps continue to open labeled and encrypted files in exclusive editing mode.
     
