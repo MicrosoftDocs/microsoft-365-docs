@@ -74,7 +74,7 @@ Topic | Description
 |[Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | For macOS devices that are managed through JAMF Pro
 |[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
 
-Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
+Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
 
 <!--### Permissions
 
