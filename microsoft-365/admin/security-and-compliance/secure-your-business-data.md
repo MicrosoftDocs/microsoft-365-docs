@@ -34,7 +34,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multi-factor authentication](secure-your-business-data.md#setup)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Set up multifactor authentication](secure-your-business-data.md#setup)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Train your users](secure-your-business-data.md#train)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Use dedicated admin accounts](secure-your-business-data.md#admin)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Raise the level of protection against malware in mail](secure-your-business-data.md#malware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -51,15 +51,16 @@ Before you begin, check your [Microsoft 365 Secure Score](../../security/defende
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## 1: Set up multi-factor authentication
 <a name="setup"> </a>
 
-Using multi-factor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multi-factor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+## 1: Set up multifactor authentication
 
-For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
+Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+
+For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](../../business-video/turn-on-mfa.md) and [user set up](../../business-video/set-up-mfa.md).
 
-To set up multi-factor authentication, you turn on Security defaults:
+To set up multifactor authentication, you turn on Security defaults:
 
 For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
@@ -73,9 +74,9 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 4. At the bottom of the page, choose **Manage Security defaults**.
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+After you set up multifactor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+For full details and complete recommendations, see [Set up multifactor authentication for users](set-up-multi-factor-authentication.md).
 
 ## 2: Train your users
 <a name="train"> </a>
@@ -101,7 +102,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber criminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
-- Be sure admin accounts are also set up for multi-factor authentication.
+- Be sure admin accounts are also set up for multifactor authentication.
 
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
 
@@ -345,6 +346,6 @@ For more information, see [Safe Links in Microsoft Defender for Office 365](../.
 
 ## Related content
 
-[Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
+[Multifactor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
 [Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)

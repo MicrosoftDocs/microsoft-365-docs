@@ -33,13 +33,13 @@ This recommendation appears when email messages identified as the message type '
 
 This recommendation appears when either of the following criteria are met.
 
-- Any of combination of these keywords is detected in the body of an email message:
+- Any combination of these keywords is detected in the body of an email message:
   - ACP
   - Attorney Client Privilege
   - Attorney-Client Privilege
   - Attorney-Client Privileged
 
-- Any combination of these keywords are detected in SharePoint or OneDrive files:
+- Any combination of these keywords is detected in SharePoint or OneDrive files:
   - ACP
   - Attorney Client Privilege*
   - AC Privilege
@@ -130,7 +130,7 @@ This recommendation appears when either of the following criteria are met.
   - "Non-Disclosure Agreement"
   - "Non Disclosure Agreement"
 
-- Any combination of these keywords are detected in .PDF or .DOC files in SharePoint or OneDrive:
+- Any combination of these keywords is detected in .PDF or .DOC files in SharePoint or OneDrive:
   - NDA
   - Non Disclosure Agreement
 
