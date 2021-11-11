@@ -43,6 +43,11 @@ You do not already have to have another Microsoft 365 subscription.
 
 See [Microsoft Defender for Business requirements](mdb-requirements.md).
 
+## When Microsoft Defender for Business goes into general availability, what happens to organizations who signed up for the preview program? 
+
+Customers and partners who sign up for the preview program will be able to try out Microsoft Defender for Business for 90 days for free. After the trial period, customers and partners must purchase Defender for Business, either as a standalone subscription or as part of Microsoft 365 Business Premium. 
+
+
 
 ## What will be the licensing model at GA?
 
