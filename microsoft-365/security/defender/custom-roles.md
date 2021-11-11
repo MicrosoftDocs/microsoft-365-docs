@@ -94,5 +94,6 @@ Similarly, to view hunting data from Microsoft Defender for Office 365, users wo
 - View-only recipients
 
 ## Related topics
+- [RBAC roles](../../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Manage access to Microsoft 365 Defender](m365d-permissions.md)
 - [Manage admin access for MCAS](/cloud-app-security/manage-admins)
