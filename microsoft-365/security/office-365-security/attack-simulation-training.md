@@ -25,7 +25,7 @@ For getting started information about Attack simulation training, see [Get start
 
 To launch a simulated phishing attack, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
+1. In the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
 
    To go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 

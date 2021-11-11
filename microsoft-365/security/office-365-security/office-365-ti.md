@@ -43,7 +43,7 @@ Threat investigation and response capabilities provide insights into threats and
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the Microsoft 365 Defender portal, as a set of tools and response workflows, including the following:
+Threat investigation and response capabilities surface in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, as a set of tools and response workflows, including the following:
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
