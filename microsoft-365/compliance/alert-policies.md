@@ -18,6 +18,7 @@ search.appverid:
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: "Create alert policies in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 

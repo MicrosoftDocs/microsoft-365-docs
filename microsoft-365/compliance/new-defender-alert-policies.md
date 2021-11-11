@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: "We're releasing new alert policies for Microsoft Defender for Office 365. We're also retiring two existing alert policies that have been replaced by the new ones."
 ---

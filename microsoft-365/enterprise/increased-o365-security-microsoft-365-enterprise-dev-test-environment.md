@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 for enterprise test environment.
 ---

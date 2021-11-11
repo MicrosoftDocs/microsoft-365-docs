@@ -13,7 +13,9 @@ author: lovina-saldanha
 ms.author: dansimp
 ms.reviewer:
 manager: dansimp
-ms.custom: asr
+ms.custom: 
+- asr
+- admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ms.collection: M365-security-compliance

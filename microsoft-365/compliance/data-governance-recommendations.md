@@ -11,6 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
+ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: high
 search.appverid:
 - MOE150
