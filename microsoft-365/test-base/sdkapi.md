@@ -41,7 +41,7 @@ Check out the step-by-step outline below to find out how to access this new capa
 
 ```
 pip install azure-identity 
-pip install azure-mgmt-testbase	 
+pip install azure-mgmt-testbase
 ```
 
 - Authenticating in dev environment 

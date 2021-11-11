@@ -102,7 +102,7 @@ The following clients support continuous access evaluation on web, Win32, iOS, A
 
 * Claim challenge is not supported on Office for web.
 
-For clients that don’t support continuous access evaluation, the access token lifetime  to Microsoft 365 remains as one hour by default.  	
+For clients that don’t support continuous access evaluation, the access token lifetime  to Microsoft 365 remains as one hour by default.
 
 ## See also
 
