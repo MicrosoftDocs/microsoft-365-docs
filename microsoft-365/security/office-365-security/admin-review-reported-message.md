@@ -31,7 +31,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
   - Organization Management or Security Administrator in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -43,7 +43,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
 
 2. Click **User reported messages**, and then select the message you want to mark and notify.
 
@@ -56,7 +56,7 @@ The reported message will be marked as either false positive or false negative, 
 
 ## Customize the messages used to notify users
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **User reported message settings** in the **Others** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **User reported message settings** in the **Others** section.
 
 2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. The email address that will be visible in Outlook and all the replies will go there.
 

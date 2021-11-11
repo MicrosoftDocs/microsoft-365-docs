@@ -56,7 +56,7 @@ The following sections describe how to perform these tasks.
 
 If a remediation action was taken on an entity (such as a device or an email message) and the affected entity is not actually a threat, your security operations team can undo the remediation action in the [Action center](m365d-action-center.md).
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in. 
 2. In the navigation pane, choose **Action center**. 
 3. On the **History** tab, select an action that you want to undo. Its flyout pane opens.
 4. In the flyout pane, select **Undo**.

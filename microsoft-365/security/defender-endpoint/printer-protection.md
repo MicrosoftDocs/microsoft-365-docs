@@ -130,7 +130,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
-The [Microsoft 365 security center](https://security.microsoft.com) shows printing blocked by the Device Control Printer Protection policy above.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> shows printing blocked by the Device Control Printer Protection policy above.
 
 ```kusto
 DeviceEvents

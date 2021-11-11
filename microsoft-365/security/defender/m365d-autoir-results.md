@@ -38,9 +38,9 @@ With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) 
 
 The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
 
-- Any investigation page in the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com))
+- Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Office 365 Security & Compliance Center</a>
 - Any investigation page in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com))
-- Any incident or Action center experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 
 ## Open the investigation details view
 
@@ -56,7 +56,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > [!TIP]
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
@@ -72,7 +72,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
-1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in. 
 
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
 

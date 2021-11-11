@@ -24,7 +24,7 @@ ms.technology: m365d
 
 Microsoft 365 Defender includes powerful [automated investigation and response capabilities](m365d-autoir.md) that can save your security operations team much time and effort. With [self-healing](m365d-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale.
 
-This article describes how to configure automated investigation and response in Microsoft 365 Defender with these steps:
+This article describes how to configure automated investigation and response in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with these steps:
 
 1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
@@ -68,7 +68,7 @@ Although certain alerts and security policies can trigger automated investigatio
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](../office-365-security/protect-against-threats.md).
 
-1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Policies & Rules** \> **Threat policies**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & Rules** \> **Threat policies**.
 
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
    - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -87,7 +87,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on.":::
 
-1. Sign in to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 
 2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
    - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
