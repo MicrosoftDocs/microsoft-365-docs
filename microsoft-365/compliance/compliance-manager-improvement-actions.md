@@ -50,11 +50,11 @@ To begin implementation work on an improvement action, you can do the work yours
 
 Once you identify the appropriate assignee, be sure they hold a sufficient [Compliance Manager role](compliance-manager-setup.md#set-user-permissions-and-assign-roles) to perform the work. Then follow the steps below to assign the improvement action:
 
-1. From the improvement actions details page, select **Edit status** near the upper-left section of the screen.
+1. From the improvement actions details page, select **Assign action** on the left of the screen.
 
-2. In the edit status flyout pane, select the **Assigned to** box to show a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
+2. The **Assign to user** flyout pane shows a **Suggested people** list of users. You can select the user from the list, or type the email address of the person you want to assign it to.
 
-3. Select **Save and close**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
+3. Select **Assign**. The assigned user will receive an email explaining that the improvement action has been assigned to them, with a direct link to the improvement action.
 
 > [!NOTE]
 > US Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
@@ -97,7 +97,7 @@ The **Notes and documentation** section contains fields for uploaded documents, 
 
 There's no character limit in the notes fields. We recommend keeping notes brief so that you can easily view and edit them from the improvement actions details page.
 
-## Change improvement action status
+## Change implementation details
 
 You can record the implementation status and date, and the test status and date, for each improvement action. The **implementation** and **test status** fields can be edited by any user with editing permissions, not just by the assigned person.
 
