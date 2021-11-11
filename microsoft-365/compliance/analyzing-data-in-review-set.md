@@ -67,9 +67,7 @@ The generated query is the following:
 ```
 
 > [!NOTE]
-> For review sets created in Large cases during Public Preview (before Nov 8th), ... 
-- 
-
+> For review sets created in Large cases during Public Preview (before Nov 8th), 
 
 ## Analytics report
 
