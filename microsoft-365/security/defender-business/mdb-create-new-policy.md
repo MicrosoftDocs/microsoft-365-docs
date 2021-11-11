@@ -1,13 +1,13 @@
 ---
 title: Create a new policy in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+description: Learn how to create a new security policy in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 11/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -22,6 +22,8 @@ ms.collection:
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+
+Microsoft Defender for Business includes default policies that use recommended settings to protect your company's devices from day one. However, you can create new policies as well. If you want to edit
 
 ## Create a new policy
 
