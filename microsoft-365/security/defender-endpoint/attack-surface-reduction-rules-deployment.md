@@ -422,7 +422,7 @@ The true benefit of advanced hunting is that you can shape the queries to your l
 
 For additional information about additional hunting options, see: [Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
 
-## Refrence
+## Reference
 
 ### Blogs
 
