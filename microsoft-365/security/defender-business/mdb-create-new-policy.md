@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business includes default policies that use recommended settings to protect your company's devices from day one. However, you can create new policies as well. If you want to edit
+Microsoft Defender for Business includes default policies that use recommended settings to protect your company's devices from day one. However, you can create new policies as well. If you want to edit an existing policy, see [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md).
 
 ## Create a new policy
 
