@@ -240,7 +240,7 @@ The Attack Surface reduction rules pane provides an overview of detected events 
 Click **View detections** to open the **Detections** tab.
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules detections](images/asr-defender365-reports-detections.png)
+> [ ![Attack surface reduction rules detections](images/asr-defender365-reports-detections.png) ](images/asr-defender365-reports-detections.png#lightbox)
 
 The **GroupBy** and **Filter** pane provide the following options:
 
@@ -256,12 +256,12 @@ The **GroupBy** returns results set to the following groups:
 - Publisher
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules detections GroupBy filter](images/asr-defender365-reports-detections.png)
+> [ ![Attack surface reduction rules detections GroupBy filter](images/asr-defender365-reports-detections.png) ](images/asr-defender365-reports-detections.png#lightbox)
 
 **Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected ASR rules:
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules detections filter on rules](images/asr-defender365-filter.png)
+> [ ![Attack surface reduction rules detections filter on rules](images/asr-defender365-filter.png) ](images/asr-defender365-filter.png#lightbox)
 
 >[!Note]
 >If you have a Microsoft Microsoft 365 Security E5 or A5, Windows E5 or A5 license, the following link opens the Microsoft Defender 365  Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections tab.
@@ -271,27 +271,27 @@ The **GroupBy** returns results set to the following groups:
 Lists – on a per-computer basis – the aggregate state of ASR rules: Off, Audit, Block.
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules Configuration tab](images/asr-defender365-configurations.png)
+> [ ![Attack surface reduction rules Configuration tab](images/asr-defender365-configurations.png) ](images/asr-defender365-configurations.png#lightbox)
 
 On the Configurations tab, you can check – on a per-device basis – which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules enabled and mode](images/asr-defender365-configurations.settings.png)
+> [ ![Attack surface reduction rules enabled and mode](images/asr-defender365-configurations.settings.png) ](images/asr-defender365-configurations.settings.png#lightbox)
 
 The **Get started** link opens the Microsoft Endpoint Manager admin center, where you can create or modify an endpoint protection policy for ASR:
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction rules in MEM](images/asr-defender365-05b-mem1.png)
+> [ ![Attack surface reduction rules in MEM](images/asr-defender365-05b-mem1.png) ](images/asr-defender365-05b-mem1.png#lightbox)
 
 In Endpoint security | Overview, select **Attack surface reduction**:
 
 > [!div class="mx-imgBorder"]
-> ![Attack surface reduction in MEM](images/asr-defender365-05b-mem2.png)
+> [ ![Attack surface reduction in MEM](images/asr-defender365-05b-mem2.png) ](images/asr-defender365-05b-mem2.png#lightbox)
 
 The Endpoint Security | Attack surface reduction pane opens:
 
 > [!div class="mx-imgBorder"]
-> ![Endpoint security Asr pane](images/asr-defender365-05b-mem3.png)
+> [ ![Endpoint security Asr pane](images/asr-defender365-05b-mem3.png) ](images/asr-defender365-05b-mem3.png#lightbox)
 
 >[!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Configurations](https://security.microsoft.com/asr?viewid=configuration) tab.
@@ -304,7 +304,7 @@ This tab provides a method to select detected entities (for example, false posit
 > Microsoft Defender Antivirus AV exclusions are honored by ASR rules.  See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
 > [!div class="mx-imgBorder"]
-> ![Endpoint security Asr tool](Images/asr-defender365-06d.png)
+> [ ![Endpoint security Asr tool](Images/asr-defender365-06d.png) ](Images/asr-defender365-06d.png#lightbox)
 
 > [!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Exclusions](https://security.microsoft.com/asr?viewid=exclusions) tab.
@@ -329,7 +329,7 @@ If you determine a rule will broadly impact line-of-business operations in a det
 Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **Attack surface reduction rules**. Simply select the entity or entities for which you want to create an exclusion.
 
 > [!div class="mx-imgBorder"]
-> ![ASR Create Exclusions](images/asr-defender365-06d.png)
+> [ ![ASR Create Exclusions](images/asr-defender365-06d.png) ](images/asr-defender365-06d.png#lightbox)
 
 #### Create exclusions after review
 
@@ -395,19 +395,19 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 One of the most powerful and coolest features of [Microsoft 365 Defender](https://securitycenter.microsoft.com) is advanced hunting. If you are not familiar with advanced hunting, please refer to the documentation: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting](images/asr-defender365-advanced-hunting2.png)
+> [ ![Microsoft 365 Defender Advanced hunting](images/asr-defender365-advanced-hunting2.png) ](images/asr-defender365-advanced-hunting2.png#lightbox)
 
 Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool that lets you explore up to 30 days of the captured (raw) data, that Microsoft Defender ATP Endpoint Detection and Response (EDR) collects from all your machines. Through advanced hunting you can proactively inspect events in order to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
 Through advanced hunting, it is possible to extract ASR rules information, create reports, and get in-depth information on the context of a given ASR rule audit or block event.
 
- You can query ASR rules events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
+You can query ASR rules events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender Advanced hunting query command line](images/asr-defender365-advanced-hunting3.png)
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting query results](images/asr-defender365-advanced-hunting4.png)
+> [ ![Microsoft 365 Defender Advanced hunting query results](images/asr-defender365-advanced-hunting4.png) ](images/asr-defender365-advanced-hunting4.png#lightbox)
 
 The above shows that 187 events were registered for AsrLsassCredentialTheft (102 for Blocked and 85 for Audited), 2 events for AsrOfficeChildProcess (1 for Audited and 1 for Block) and 8 events for AsrPsexecWmiChildProcessAudited.
 
@@ -417,11 +417,11 @@ If you want to focus on the AsrOfficeChildProcess rule, and get details on the a
 > ![Microsoft 365 Defender Advanced hunting query focused](images/asr-defender365-advanced-hunting4b.png)
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 Defender Advanced hunting query focused results](images/asr-defender365-advanced-hunting5b.png)
+> [ ![Microsoft 365 Defender Advanced hunting query focused results](images/asr-defender365-advanced-hunting5b.png) ](images/asr-defender365-advanced-hunting5b.png#lightbox)
 
 The true benefit of advanced hunting is that you can shape the queries to your liking, so that you can see the exact story of what was happening, regardless of whether you want to pinpoint something on an individual machine, or you want to extract insights from your entire environment.
 
-For additional information about additional hunting options, see: [Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
+For additional information about additional hunting options, see [Demystifying attack surface reduction rules - Part 3](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-3/ba-p/1360968).
 
 ## Reference
 
