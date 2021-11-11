@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
+  - admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.collection:
   - m365-security-compliance

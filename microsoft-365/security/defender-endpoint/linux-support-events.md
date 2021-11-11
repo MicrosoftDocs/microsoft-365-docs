@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---

@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde

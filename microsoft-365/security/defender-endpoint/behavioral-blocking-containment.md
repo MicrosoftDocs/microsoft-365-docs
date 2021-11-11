@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
+  - admindeeplinkDEFENDER
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint

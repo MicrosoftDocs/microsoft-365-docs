@@ -12,7 +12,9 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
