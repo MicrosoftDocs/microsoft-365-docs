@@ -68,7 +68,7 @@ You can choose from several onboarding methods in Defender for Business, as desc
 > - Devices must be running Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
 >
 > - Prerequisites for [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). The following configurations must be in place:
->    - Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
+>    - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) must be configured such that trust is created between devices and Azure AD.
 >    - Defender for Business must have [security management enabled in Microsoft Endpoint Manager](#to-enable-security-management-in-microsoft-endpoint-manager) (instructions are included in this article).
 >
 > - Devices must be able to connect to the following URLs: 
