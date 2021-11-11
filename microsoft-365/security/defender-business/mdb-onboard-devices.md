@@ -25,9 +25,6 @@ ms.collection:
 
 With Microsoft Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through your options.
 
-> [!TIP]
-> If you are already using Microsoft Endpoint Manager, Defender for Business will detect that, and will prompt you to choose between automatic or manual onboarding. And, you can also opt to onboard devices a few at a time if you don't want to onboard them all at once. To learn more, see [What if I want to onboard devices gradually?](#what-if-i-want-to-onboard-devices-gradually)
-
 ## What to do
 
 1. [Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
@@ -46,6 +43,9 @@ Review the scenarios listed in the following table and what to expect. Then proc
 | **You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings** <br/><br/>Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md) (*recommended for most customers*).<br/><br/>If you choose the simplified configuration process, your onboarding process will be streamlined, and you can use the automatic onboarding process with Defender for Business.   | Proceed to [Part 2: Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).  |
 | **You are not currently using Microsoft Endpoint Manager**<br/><br/>Defender for Business will prompt you to choose an onboarding method. You have several options available, including using a local script or Microsoft Endpoint Manager.  | Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method). |
 | **You are using a non-Microsoft productivity and device management tool**<br/><br/>If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. <br/><br/>Or, you can choose an onboarding method in Defender for Business.        | Connect your existing productivity and device management tool to Defender for Business. <br/><br/>--- or ---<br/><br/> Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).  |
+
+> [!TIP]
+> If you are already using Microsoft Endpoint Manager, Defender for Business will detect that, and will prompt you to choose between automatic or manual onboarding. And, you can also opt to onboard devices a few at a time if you don't want to onboard them all at once. To learn more, see [What if I want to onboard devices gradually?](#what-if-i-want-to-onboard-devices-gradually)
 
 ## Part 2: Choose between automatic or manual device onboarding
 
