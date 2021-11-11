@@ -65,7 +65,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 You can choose from several onboarding methods in Defender for Business, as described in this section.
 
 > [!IMPORTANT]
-> If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, make sure that all of the following requirements are met.
+> If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, make sure that all of the following requirements are met: 
 > 
 > - Devices must be running Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) applied)
 >
