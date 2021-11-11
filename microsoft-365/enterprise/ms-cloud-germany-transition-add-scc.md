@@ -17,6 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: "Summary: eDiscovery migration steps for the migration from Microsoft Cloud Deutschland."
 ---
 # Information about the eDiscovery experience during the migration from Microsoft Cloud Deutschland
