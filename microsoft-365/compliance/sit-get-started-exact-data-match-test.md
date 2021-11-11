@@ -21,10 +21,12 @@ ms.custom: seo-marvel-apr2020
 
 # Test an exact data match sensitive information type
 
-After your EDM SIT has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
+After your exact data match (EDM) sensitive information type (SIT) has been created and an hour after verifying that your sensitive information table has finished uploading and indexing, you can test that it detects the information you want to detect by using the test function in the sensitive information types section in the Compliance center.
  
 >[!NOTE:]
 >Changes in an already created EDM SIT can take some time to propagate across the system. If you are making changes in an EDM sensitive information type for troubleshooting detection issues, make sure to wait at least one hour after making those changes before using the test function to validate their impact.
+
+## Test your EDM SIT in the Compliance Center
 
 1. Open **Compliance center** > **Data classification** > **Sensitive Information Types**.
 
@@ -46,6 +48,24 @@ Test-DataClassification  -ClassificationNames “[Your EDM sensitive info type]�
  When you create a or edit an EDM sensitive information type, or the primary SIT on which an EDM type is based, all new content and content that’s modified after the changes to the SITs will be crawled for text that matches the new definitions, but preexisting content won’t be crawled until modified or reindexed. 
 
 To force re-crawling of existing content in a SharePoint site or library or in OneDrive, follow the instructions in [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
+
+## Test your EDM SIT in DLP and MIP policies
+
+You can see where your EDM SIT is being used and how accurate it is in production by using them in policies:
+
+1. [Create an auto-labeling policy](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) or a [DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)to use the EDM SIT you want to test.
+
+1. Add some content that will trigger the EDM SIT and some content that will not trigger the EDM SIT to a location that your policy is monitoring.
+
+1. Review the results in [activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer).
+
+1. Tune your policies as appropriate. 
+
+Once you're satisfied with the results of your testing and tuning, your EDM based custom SIT is ready for use in Information Protection policies, like:
+
+- [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
+- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies)
 
 ## Troubleshooting tips
 
@@ -73,10 +93,3 @@ If you don't find any matches, try the following:
 
 - If the SIT you selected for a primary element in the EDM type doesn't find a match in the item or finds fewer matches than you expected, check that it supports separators and delimiters that exist in the content. Be sure to include the ignored delimiters defined in your schema. 
 
-## Use your EDM SIT in DLP and MIP policies
-
-Your EDM based custom SIT is ready for use in Information Protection policies, like:
-
-- [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
-- [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies)
