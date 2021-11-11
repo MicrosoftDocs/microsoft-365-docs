@@ -49,15 +49,15 @@ Test-DataClassification  -ClassificationNames â€œ[Your EDM sensitive info type]â
 
 To force re-crawling of existing content in a SharePoint site or library or in OneDrive, follow the instructions in [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
-## Test your EDM SIT in DLP and MIP policies
+## Test your EDM SIT in MIP policies
 
 You can see where your EDM SIT is being used and how accurate it is in production by using them in policies:
 
-1. [Create an auto-labeling policy](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) or a [DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)to use the EDM SIT you want to test.
+1. Create an [auto-labeling policy](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) and run it in **Simulation overview**.
 
 1. Add some content that will trigger the EDM SIT and some content that will not trigger the EDM SIT to a location that your policy is monitoring.
 
-1. Review the results in [activity explorer](data-classification-activity-explorer.md#get-started-with-activity-explorer).
+1. Open the **Items to review** tab to check the matches.
 
 1. Tune your policies as appropriate. 
 
