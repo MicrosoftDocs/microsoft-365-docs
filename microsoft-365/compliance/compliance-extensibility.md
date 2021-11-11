@@ -44,7 +44,7 @@ Many of the data connectors available in the Microsoft 365 compliance center to 
 
 For data connectors in the Microsoft 365 compliance center provided by one of Microsoft's partners, your organization will need a business relationship with the partner before you can deploy a connector.
 
-You can find licensing requirements for third-party data connectors in the [Microsoft 365 Compliance Licensing Comparison](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) document.
+You can find licensing requirements for third-party data connectors in the [Microsoft 365 Enterprise subscription comparison table](https://aka.ms/M365EnterprisePlans).
 
 ## APIs
 
