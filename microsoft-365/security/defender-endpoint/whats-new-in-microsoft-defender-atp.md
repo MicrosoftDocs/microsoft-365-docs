@@ -53,9 +53,14 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## November 2021
+- [Security configuration management](security-config-management.md) <br/> A capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
+
+- Enhancements to cross-platform support.
+
 ## October 2021
 
-- [Updated onboarding and feature parity for Windows Server 2012 R2 and Windows Server 2016 (preview)](configure-server-endpoints.md)<br> The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with many new feature improvements.
+- [Updated onboarding and feature parity for Windows Server 2012 R2 and Windows Server 2016 (preview)](configure-server-endpoints.md)<br/> The new unified solution package makes it easier to onboard servers by removing dependencies and installation steps. In addition, this unified solution package comes with many new feature improvements.
 
 - Windows 11 support added to Microsoft Defender for Endpoint and Microsoft 365 Defender.
 

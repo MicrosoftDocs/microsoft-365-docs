@@ -28,22 +28,25 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later
-
-In November, Microsoft Defender for Endpoint will be required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to move to Android API 30. This move will prompt for a [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play) for devices running Android 11 or later. Users will need to accept this new storage permission once they update to the November version of Microsoft Defender for Endpoint. This will continue Defender’s ‘App security’ functionality on their devices. For more information, see the details in the following sections.
+## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later (Nov 2021)
+Release Build: 1.0.3501.0301
+Release month: Nov 2021
+Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. 
+This change will prompt users seeking access to [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), for devices running Android 11 or later. Users will need to accept this new storage permission once they update Defender app with the release build 1.0.3501.0301 or later. This will ensure Defender’s ‘App security’ feature to function without any disruption. For more information, see the details in following sections.
 
 **How will this affect your organization:**
+These changes will take affect, if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender to release build 1.0.3501.0301 or later.
+>[!NOTE]
+> The new storage permissions cannot be configured by admin to 'Auto Approve' through Microsoft Endpoint Manager. User will need to take action to provide access to this permission.
 
-These changes will only affect you if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated to the November app. This setting is not configurable through Microsoft Endpoint Manager; users will need to take action due to the aforementioned Google API changes.
-
-- **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the ‘App security’ functionality will be turned off on the device. If your user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app until it has been approved.
+- **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the ‘App security’ functionality will be turned off on the device. If user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app, until it has been approved.
 
 >[!NOTE] 
 > If your organization is previewing ‘Tamper protection’ feature and if the new storage permissions are not granted by the user within 7 days of updating to the latest version, the user might lose access to corporate resources.
 
 **What you need to do to prepare:**
 
-Notify your users and helpdesk (as applicable) that users will need to accept the new permissions when prompted after they have updated to the November version of the Microsoft Defender for Endpoint app. To accept the permissions, users should:
+Notify your users and helpdesk (as applicable) that users will need to accept the new permissions when prompted after they have updated Defender to build 1.0.3501.0301 or later version. To accept the permissions, users should:
 
 1. Tap on the Defender in-app notification or open the Microsoft Defender for Endpoint app. Users will see a screen that lists the permissions needed. A green check mark will be missing next to the Storage permission.
 
@@ -51,10 +54,12 @@ Notify your users and helpdesk (as applicable) that users will need to accept th
 
 3. Tap the toggle for **Allow access to manage all files.** 
 
-  >[!NOTE] 
-  >This permission allows Microsoft Defender for Endpoint to access storage on user’s device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint only accesses / scans Android app package file (.apk), and on devices with a Work Profile, only scans work-related files.
-
 4. The device is now protected.
+
+  >[!NOTE] 
+  >This permission allows Microsoft Defender for Endpoint to access storage on user’s device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Denender only scans work-related files.
+
+
 
 
 

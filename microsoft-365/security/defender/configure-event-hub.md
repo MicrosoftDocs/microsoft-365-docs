@@ -34,8 +34,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 ## Set up the required Resource Provider in the Event Hub subscription
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. Select **Subscriptions** \> {***Select the subscription the event hub will be deployed
-to***} \> **Resource providers**.
+1. Select **Subscriptions** > **{ Select the subscription the event hub will be deployed to }** > **Resource providers**.
 1. Verify that the **Microsoft.Insights** Provider is registered. Otherwise, register it.
 
 ![Image of resource providers in Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)

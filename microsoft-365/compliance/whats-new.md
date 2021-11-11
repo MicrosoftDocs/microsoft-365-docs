@@ -135,7 +135,7 @@ Datacenter asset management
 
 ### Information barriers
 
-- [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes-preview) new preview feature for information barriers modes
+- [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes) new preview feature for information barriers modes
 - [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams) new preview feature for information barriers modes
 - [Information barriers with OneDrive](/onedrive/information-barriers) new preview feature for information barriers modes
 - [Information barriers with SharePoint Online](/sharepoint/information-barriers) new preview feature for information barriers modes
