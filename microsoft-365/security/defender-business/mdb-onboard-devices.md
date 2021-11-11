@@ -25,7 +25,8 @@ ms.collection:
 
 With Microsoft Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through your options.
 
-If you are already using Microsoft Endpoint Manager, Defender for Business will detect that, and will prompt you to choose between automatic or manual onboarding. And, you can also opt to onboard devices a few at a time if you don't want to onboard them all at once (see [What if I want to onboard devices gradually?](#what-if-i-want-to-onboard-devices-gradually)).
+> [!TIP]
+> If you are already using Microsoft Endpoint Manager, Defender for Business will detect that, and will prompt you to choose between automatic or manual onboarding. And, you can also opt to onboard devices a few at a time if you don't want to onboard them all at once (see [What if I want to onboard devices gradually?](#what-if-i-want-to-onboard-devices-gradually)).
 
 ## What to do
 
