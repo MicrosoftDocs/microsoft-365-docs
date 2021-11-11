@@ -63,11 +63,19 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 You can choose from several onboarding methods in Defender for Business, as described in this section. It's important to make sure certain prerequisites are in place before you onboard your devices.
 
 > [!IMPORTANT]
-> - Make sure that all of the requirements are met before you begin onboarding devices. See [requirements for Defender for Business](mdb-requirements.md).
+> If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, make sure that all of the following requirements are met. [Learn more about the requirements for Defender for Business](mdb-requirements.md).
 > 
-> - Microsoft Defender for Business uses a capability known as [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). For this to work correctly, the following configurations must be in place:
+> - Devices must be running Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541))
+>
+> - Prerequisites for [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). The following configurations must be in place:
 >    - Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
->    - Defender for Business must have [security management enabled in Microsoft Endpoint Manager](#to-enable-security-management-in-microsoft-endpoint-manager).
+>    - Defender for Business must have [security management enabled in Microsoft Endpoint Manager](#to-enable-security-management-in-microsoft-endpoint-manager) (instructions are included in this article).
+>
+> - Devices must be able to connect to the following URLs: 
+>   - `enterpriseregistration.windows.net` (for registration in Azure Active Directory)
+>   - `login.microsoftonline.com` (for registration in Azure Active Directory)
+>   - `*.dm.microsoft.com` (The wildcard (*) supports the cloud-service endpoints that are used for enrollment, check-in, and reporting, and can change as the service scales.)
+
 
 ### Select an onboarding method
 
