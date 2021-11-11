@@ -87,7 +87,7 @@ landingContent:
             url: mdb-view-edit-policies.md
           - text: Create a new policy
             url: mdb-create-new-policy.md
-          - text: Add, edit, or delete custom rules for firewall policies
+          - text: Manage rules for firewall policies
             url: mdb-custom-rules-firewall.md
           - text: Create device groups
             url: mdb-create-edit-device-groups.md

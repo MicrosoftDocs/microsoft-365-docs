@@ -47,7 +47,7 @@
         href: mdb-view-edit-policies.md
       - name: Create a new policy
         href: mdb-create-new-policy.md
-      - name: Manage your firewall policies
+      - name: Manage rules for firewall policies
         href: mdb-custom-rules-firewall.md
       - name: Create device groups
         href: mdb-create-edit-device-groups.md
