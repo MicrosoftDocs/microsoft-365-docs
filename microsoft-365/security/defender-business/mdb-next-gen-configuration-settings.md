@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/09/2021
+ms.date: 11/11/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -23,9 +23,10 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
+Next-generation protection in Microsoft Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
+
 This article describes next-generation protection configuration settings for Microsoft Defender for Business. 
 
-Your next-generation protection includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
 
 ## Next-generation protection settings in Defender for Business
 
