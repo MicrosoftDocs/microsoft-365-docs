@@ -33,7 +33,8 @@ In Microsoft Defender for Business, security settings are configured through pol
 - [View your existing policies](#view-your-existing-policies)
 - [Edit an existing policy](#edit-an-existing-policy)
 
-You can also [Create a new policy](mdb-create-new-policy.md).
+> [!TIP]
+> If you want to add a new policy, see [Create a new policy](mdb-create-new-policy.md).
 
 ## View your existing policies
 
