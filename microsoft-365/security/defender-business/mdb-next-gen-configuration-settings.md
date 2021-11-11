@@ -27,7 +27,6 @@ Next-generation protection in Microsoft Defender for Business includes robust an
 
 This article describes next-generation protection configuration settings for Microsoft Defender for Business. 
 
-
 ## Next-generation protection settings in Defender for Business
 
 The following table lists your settings and options:<br/><br/>
