@@ -120,7 +120,7 @@ Creating a custom anti-phishing policy in the Microsoft 365 Defender portal crea
 6. On the **Actions** page that appears, configure the following settings:
    - **If message is detected as spoof**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
      - **Move message to the recipients' Junk Email folders**
-     - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
 
        A blank **Apply quarantine policy** value means the default quarantine policy is used (DefaultFullAccessPolicy for spoof intelligence detections). When you later edit the anti-phishing policy or view the settings, the default quarantine policy name is shown. For more information about default quarantine policies that are used for supported protection filtering verdicts, see [this table](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features).
 

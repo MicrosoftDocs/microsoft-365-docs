@@ -4,7 +4,6 @@ ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server includes automatic exclusions, based on server role. You can also add custom exclusions.
 keywords: exclusions, server, auto-exclusions, automatic, custom, scans, Microsoft Defender Antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
@@ -15,7 +14,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 09/17/2021
+ms.date: 11/10/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -98,7 +97,7 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 ##### Windows "temp.edb" files
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
-- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
+- `%ProgramData%\Microsoft\Search\Data\Applications\Windows\windows.edb`
 
 ##### Windows Update files or Automatic Update files
 
