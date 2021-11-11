@@ -25,10 +25,10 @@ ms.collection:
 
 In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. 
 
-This article describes:  
+**This article describes**:  
 
-- What device groups are   
-- How to create device groups in Defender for Business
+- [What device groups are](#what-is-a-device-group)   
+- [How to create device groups in Defender for Business](#create-a-new-device-group)
 
 ## What is a device group?
 
