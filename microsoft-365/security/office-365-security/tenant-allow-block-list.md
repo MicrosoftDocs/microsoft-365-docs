@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -75,7 +74,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions in Exchange Online before you can do the procedures in this article:
+- You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - **Senders, URLs and files**:
     - To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups or you are assigned the **Tenant AllowBlockList Manager** role.
     - For read-only access to the Tenant Allow/Block List, you need to be a member of the **Global Reader** or **Security Reader** role groups.
