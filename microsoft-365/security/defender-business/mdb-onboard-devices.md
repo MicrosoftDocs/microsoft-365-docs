@@ -60,28 +60,16 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 ## Part 3: Choose a manual onboarding method
 
-You can choose from several onboarding methods in Defender for Business, as described in this section.
+You can choose from several onboarding methods in Defender for Business, as described in this section. It's important to make sure certain prerequisites are in place before you onboard your devices.
 
-### Before you begin...
-
-- Make sure that all of the requirements are met before you begin onboarding devices. See [requirements for Defender for Business](mdb-requirements.md).
-
-- Microsoft Defender for Business uses a capability known as [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). For this to work correctly, the following configurations must be in place:
-
-   - Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
-   - Defender for Business must have security setting management enabled in Microsoft Endpoint Manager.
-
-#### To enable security setting management in Microsoft Endpoint Manager
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
-
-3. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
-
-4. Under **OS platform**, turn on **Windows Client devices**.
-
-5. Select **Save**.
+> [!IMPORTANT]
+> - Make sure that all of the requirements are met before you begin onboarding devices. See [requirements for Defender for Business](mdb-requirements.md).
+> 
+> - Microsoft Defender for Business uses a capability known as [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). For this to work correctly, the following configurations must be in place:
+> 
+>    - Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
+>    - Defender for Business must have [security setting management enabled in Microsoft Endpoint Manager](#to-enable-security-setting-management-in-microsoft-endpoint-manager).
+> 
 
 ### Select an onboarding method
 
@@ -96,6 +84,19 @@ You can choose from several onboarding methods in Defender for Business, as desc
 
 > [!TIP]
 > If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method.
+
+### To enable security setting management in Microsoft Endpoint Manager
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+
+3. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
+
+4. Under **OS platform**, turn on **Windows Client devices**.
+
+5. Select **Save**.
+
 
 ## Onboarding devices in the Microsoft 365 Defender portal
 
