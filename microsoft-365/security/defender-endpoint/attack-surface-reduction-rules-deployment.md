@@ -23,7 +23,7 @@ ms.collection: M365-security-compliance
 
 ## Before you begin
 
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Your organization's attack surfaces includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring attack surface reduction (ASR) rules – one of many security features found in Microsoft Defender for Endpoint – can help.
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Your organization's attack surfaces includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring attack surface reduction (ASR) rules—one of many security features found in Microsoft Defender for Endpoint—can help.
 
 ASR rules target certain software behaviors, such as:
 
