@@ -69,7 +69,6 @@ You can choose from several onboarding methods in Defender for Business, as desc
 > 
 >    - Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
 >    - Defender for Business must have [security management enabled in Microsoft Endpoint Manager](#to-enable-security-management-in-microsoft-endpoint-manager).
-> 
 
 ### Select an onboarding method
 
