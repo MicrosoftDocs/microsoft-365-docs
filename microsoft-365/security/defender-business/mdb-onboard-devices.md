@@ -35,7 +35,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## Part 1: Identify your security and device management path
 
-Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
+Review the scenarios listed in the following table and select a path. Then proceed to your next step.
 <br/><br/>
 
 |Scenario   | What to do next |
