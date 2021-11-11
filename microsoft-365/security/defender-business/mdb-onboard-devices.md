@@ -29,8 +29,8 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 1. [Identify your security and device management path](#part-1-identify-your-security-and-device-management-path).
 2. [Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).
-3. [Choose an onboarding option](#part-3-choose-an-onboarding-method).
-4. [See how onboarding works in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal).
+3. [Choose a manual onboarding option](#part-3-choose-a-manual-onboarding-method).
+4. [See how onboarding works in the Microsoft 365 Defender portal (with video!)](#onboarding-devices-in-the-microsoft-365-defender-portal).
 5. [Proceed to your next steps](#next-steps). 
 
 ## Part 1: Identify your security and device management path
@@ -41,13 +41,13 @@ Review the scenarios listed in the following table and what to expect. Then proc
 |Scenario   | What to do next |
 |---------|---------|
 | **You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings** <br/><br/>Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to continue using Endpoint Manager or switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md) (*recommended for most customers*).<br/><br/>If you choose the simplified configuration process, your onboarding process will be streamlined, and you can use the automatic onboarding process with Defender for Business.   | Proceed to [Part 2: Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).  |
-| **You are not currently using Microsoft Endpoint Manager**<br/><br/>Defender for Business will prompt you to choose an onboarding method. You have several options available, including using a local script or Microsoft Endpoint Manager.  | Proceed to [Part 3: Choose an onboarding method](#part-3-choose-a-deployment-method). |
-| **You are using a non-Microsoft productivity and device management tool**<br/><br/>If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. <br/><br/>Or, you can choose an onboarding method in Defender for Business.        | Connect your existing productivity and device management tool to Defender for Business. <br/><br/>--- or ---<br/><br/> Proceed to [Part 3: Choose an onboarding method](#part-3-choose-a-deployment-method).  |
+| **You are not currently using Microsoft Endpoint Manager**<br/><br/>Defender for Business will prompt you to choose an onboarding method. You have several options available, including using a local script or Microsoft Endpoint Manager.  | Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method). |
+| **You are using a non-Microsoft productivity and device management tool**<br/><br/>If you're using a non-Microsoft productivity and device management tool, you can continue using that tool to manage devices and security settings. <br/><br/>Or, you can choose an onboarding method in Defender for Business.        | Connect your existing productivity and device management tool to Defender for Business. <br/><br/>--- or ---<br/><br/> Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).  |
 
 ## Part 2: Choose between automatic or manual device onboarding
 
 > [!NOTE]
-> If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip this section and proceed to [Part 3: Choose an onboarding method](#part-3-choose-a-deployment-method).
+> If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip this section and proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).
 
 If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices to Defender for Business automatically or manually. The following table summarizes these options.
 
@@ -56,9 +56,9 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 | Option | What to do next |
 |:---|:---|
 | **Automatic onboarding** (*Recommended*)<br/><br/>The automatic onboarding process sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards devices to Defender for Business. <br/><br/>We recommend this option because it enables you to onboard devices in Endpoint Manager to Defender for Business efficiently.<br/><br/>**IMPORTANT**: If you choose the automatic onboarding process, *all* devices that are enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Endpoint. | Choose how you'll manage your security policies and settings. You can choose to: <br/><br/>- Switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) <br/><br/>--- or --- <br/><br/>- Continue using Microsoft Endpoint Manager to manage your security settings and policies |
-| **Manual onboarding** <br/><br/>The manual onboarding process enables you to choose from several [onboarding methods](#part-3-choose-a-deployment-method), including Microsoft Endpoint Manager. <br/><br/>You can onboard all devices at one point, or onboard devices gradually. | Proceed to [Part 3: Choose an onboarding method](#part-3-choose-an-onboarding-method).  |
+| **Manual onboarding** <br/><br/>The manual onboarding process enables you to choose from several [onboarding methods](#part-3-choose-a-deployment-method), including Microsoft Endpoint Manager. <br/><br/>You can onboard all devices at one point, or onboard devices gradually. | Proceed to [Part 3: Choose an onboarding method](#part-3-choose-a-manual-onboarding-method).  |
 
-## Part 3: Choose an onboarding method
+## Part 3: Choose a manual onboarding method
 
 You can choose from several onboarding methods in Defender for Business, as described in the following table:
 <br/><br/>
