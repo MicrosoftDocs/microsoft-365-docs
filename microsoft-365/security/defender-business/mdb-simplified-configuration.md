@@ -31,6 +31,12 @@ When it comes to onboarding devices and configuring security settings for your c
 - Microsoft Endpoint Manager (MEM), which includes Microsoft Intune
 - Your non-Microsoft solution for managing devices 
 
+## What to do
+
+1. [Review your setup and configuration options](#review-your-setup-and-configuration-options)
+2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-using-the-simplified-configuration-process)
+3. [Proceed to your next steps](#next-steps)
+
 ## Review your setup and configuration options
 
 The following table describes each experience:
