@@ -23,29 +23,28 @@ ms.collection: M365-security-compliance
 
 ## Before you begin
 
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks.
-Your organization's attack surface includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to perform attacks. Configuring attack surface reduction (ASR) rules – one of numerous security features found in Microsoft Defender for Endpoint – can help.
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Your organization's attack surfaces includes all the places where an attacker could compromise your organization's devices or networks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring attack surface reduction (ASR) rules – one of many security features found in Microsoft Defender for Endpoint – can help.
 
-Attack surface reduction rules target certain software behaviors, such as:
+ASR rules target certain software behaviors, such as:
 
 - Launching executable files and scripts that attempt to download or run files
 - Running obfuscated or otherwise suspicious scripts
-- Behaviors that apps don't usually initiate during normal day-to-day work
+- Behaviors that apps don't usually occur during normal day-to-day work
 
 By reducing the different attack surfaces, you can help prevent attacks from happening in the first place.
 
-During your initial preparation, it is vital that you understand the capabilities of the systems that you will put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization.
+During your initial preparation, it's vital that you understand the capabilities of the systems that you'll put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization.
 
 >[!IMPORTANT]
 >The examples provided in this guide are included for illustrative purposes, and might not reflect the best configurations for your environment. You are responsible for thoroughly testing your ASR rules deployment to ensure compatibility and functionality. You are responsible for your environment.
 
 Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules](attack-surface-reduction-rules.md).
 
-Note that ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
+ASR rules are only one capability of the attack surface reduction capabilities within Microsoft Defender for Endpoint. This document will go into more detail on deploying ASR rules effectively to stop advanced threats like human-operated ransomware and other threats.  
 
 ### Rules by category
 
-As outlined in [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md), there are multiple attack surface reduction rules within MDE that you can enable to better protect your organization. Following are the rules broken out by category:
+As outlined in [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md), there are multiple attack surface reduction rules within MDE that you can enable to protect your organization. Following are the rules broken out by category:
 
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules |  Email rules | Script rules | Misc rules |
 |:---|:---|:---|:---|:---|:---|
@@ -54,9 +53,9 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |
 
-(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is not currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
+(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ isn't currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
 
-(<a id="fn1">2</a>) Some ASR rules generate a lot of noise, but will not block functionality. For example, if you are updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating. This is also true of other applications that make unnecessary calls to lsass.exe. This rule will block unnecessary calls to lsass, but will not block the application from running.
+(<a id="fn1">2</a>) Some ASR rules generate considerable noise, but won't block functionality. For example, if you're updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass, it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating; this is also true of other applications that make unnecessary calls to lsass.exe. The _block access to lsass_ rule will block unnecessary calls to lsass, but won't block the application from running.
 
 ### Infrastructure requirements
 
@@ -75,7 +74,7 @@ To take full advantage of ASR rules and reporting, we recommend using a Microsof
 
 ### ASR rules dependencies
 
-Microsoft Defender Antivirus must be enabled and configured as primary anti-virus solution. Microsoft Defender Antivirus must be in the following mode:
+Microsoft Defender Antivirus must be enabled and configured as primary anti-virus solution, and must be in the following mode:
 
 - Primary antivirus/antimalware solution  
 - State: Active mode
@@ -83,7 +82,7 @@ Microsoft Defender Antivirus must be enabled and configured as primary anti-viru
 Microsoft Defender Antivirus must not be in any of the following modes:
 
 - Passive
-- Passive Mode with EDR in Block Mode
+- Passive Mode with Endpoint detection and response (EDR) in Block Mode
 - Limited periodic scanning (LPS)
 - Off
 
@@ -100,14 +99,13 @@ The following Microsoft Defender Antivirus component versions must be no more th
 
 - **Microsoft Defender Antivirus Platform update version**  - Microsoft Defender Antivirus platform is updated monthly.
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
-- **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (AKA, definition and signature) to address the latest threats, and to refine detection logic.
+- **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (also known as, definition and signature) to address the latest threats, and to refine detection logic.
 
 Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## ASR rules deployment phases
-
-As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to plan and be methodical in your implementation.
-Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is required to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
+As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully
+.  
 
 > [!div class="mx-imgBorder"]
 > ![ASR rules deployment phases](images/asr-rules-deployment-phases.png)
@@ -134,19 +132,19 @@ How you select the business unit to roll out your ASR rules  deployment will dep
   - Shared folders
   - Use of scripts
   - Office macros
-  - Other entities impacted by ASR rules
+  - Other entities affected by ASR rules
 
-Depending on your business needs you might decide to include multiple business units to get a broad sampling of software, shared folders, scripts, macros, etc. Conversely, you might decide to limit the scope of your first ASR rules rollout to a single business unit, then repeat the entire ASR rules rollout process to your other business units, one-at-a-time.
+Depending on your business needs, you might decide to include multiple business units to get a broad sampling of software, shared folders, scripts, macros, etc. Conversely, you might decide to limit the scope of your first ASR rules rollout to a single business unit, then repeat the entire ASR rules rollout process to your other business units, one-at-a-time.
 
 ### Identify ASR  rules champions
 
-ASR  rules champions are members in your organization that will help with your initial ASR  rules rollout during the preliminary testing and implementation phases. Your champions are typically employees who are more technically adept, and who are not derailed by intermittent work-flow outages. In the context of this deployment, the champions involvement will continue throughout the broader expansion of ASR  rules deployment to your organization. Your ASR rules champions will be first to experience each level of the ASR  rules rollout.
+ASR  rules champions are members in your organization that will help with your initial ASR  rules rollout during the preliminary testing and implementation phases. Your champions are typically employees who are more technically adept, and who are not derailed by intermittent work-flow outages. The champions' involvement will continue throughout the broader expansion of ASR rules deployment to your organization. Your ASR rules champions will be first to experience each level of the ASR  rules rollout.
 
-It is important to provide a feedback and response channel so that your ASR rules champions can alert you to ASR  rules-related work disruptions and receive ASR  rules-rollout related communications.
+It is important to provide a feedback and response channel for your ASR rules champions to alert you to ASR rules-related work disruptions and receive ASR  rules-rollout related communications.
 
 ### Get inventory of line-of-business apps and understand the business unit processes
 
-Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR  rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
+Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
 To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory).
 
 ### Define reporting and response team  roles and responsibilities
