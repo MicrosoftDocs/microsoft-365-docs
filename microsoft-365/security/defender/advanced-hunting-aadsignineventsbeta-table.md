@@ -30,8 +30,7 @@ ms.technology: m365d
 
 The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
 
-Use this reference to construct queries that return information from the table. For information on other tables in the advanced hunting schema, see [the advanced hunting
-reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
+Use this reference to construct queries that return information from the table. For information on other tables in the advanced hunting schema, see the [advanced hunting reference](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
 
 <br>
 

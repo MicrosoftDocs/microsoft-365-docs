@@ -2,8 +2,6 @@
 title: Software inventory in threat and vulnerability management
 description: The software inventory page for Microsoft Defender for Endpoint's threat and vulnerability management shows how many weaknesses and vulnerabilities have been detected in software.
 keywords: threat and vulnerability management, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint software inventory, Microsoft Defender for Endpoint threat & vulnerability management, Microsoft Defender for Endpoint threat & vulnerability management software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +43,7 @@ Access the Software inventory page by selecting **Software inventory** from the 
 View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
 > [!NOTE]
-> If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
+> If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" or "windows_11" instead of "Windows 10" or "Windows 11".
 
 ## Software inventory overview
 

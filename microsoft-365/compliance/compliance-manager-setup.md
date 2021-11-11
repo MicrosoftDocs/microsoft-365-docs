@@ -13,6 +13,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -33,7 +34,7 @@ The Microsoft 365 global administrator for your organization will likely be the 
 
 ## Sign in
 
-1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and **sign in** with your Microsoft 365 global administrator account.
 2. Select **Compliance Manager** on the left navigation pane. You'll arrive at your [Compliance Manager dashboard](#understand-the-compliance-manager-dashboard).
 
 The direct link to access Compliance Manager is [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager).
@@ -51,7 +52,7 @@ The person holding the global admin role for your organization can set user perm
 
 To set permissions and assign roles in the Microsoft 365 compliance center, follow the steps below:
 
-1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/compliancemanager) and select **Permissions** on the left navigation.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
 
 2. Under the **Compliance center** dropdown, select **Roles**.
 
@@ -103,7 +104,7 @@ The global administrator for your organization can change the settings for autom
 
 #### To manage your automated testing settings:
 
-1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -125,7 +126,7 @@ The user history settings also allow you to reassign all improvement actions fro
 
 **To find the user history settings:**
 
-1. Select Settings on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -143,7 +144,7 @@ The report reflects the improvement action’s status as of its creation date. I
 
 **Follow the steps below to export a report by user:**
 
-1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -161,7 +162,7 @@ You can reassign improvement actions from one user to another. When you reassign
 
 **Follow the steps below to reassign improvement actions to another user:**
 
-1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
 2. On the settings page, select **Compliance Manager**.
 
@@ -188,7 +189,7 @@ Deleting a user’s history will remove them as an owner of improvement actions,
 
 To delete a user’s history, follow the steps below:
 
-1. Select **Settings** on the left navigation from anywhere in the [Microsoft 365 compliance center](https://compliance.microsoft.com/).
+1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
 2. On the settings page, select **Compliance Manager**.
 
