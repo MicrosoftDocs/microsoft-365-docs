@@ -25,6 +25,12 @@ ms.collection:
 
 As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal.
 
+**This article includes**:
+
+- [How to monitor your incidents and alerts](#monitor-your-incidents--alerts)
+- [Alert severity](#alert-severity)
+- [Next steps](#next-steps)
+
 ## Monitor your incidents & alerts
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Incidents**. Any incidents that were created are listed on the page.
