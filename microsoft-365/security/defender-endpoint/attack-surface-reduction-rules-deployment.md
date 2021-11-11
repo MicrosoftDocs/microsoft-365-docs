@@ -37,7 +37,7 @@ By reducing the different attack surfaces, you can help prevent attacks from hap
 During your initial preparation, it is vital that you understand the capabilities of the systems that you will put in place. Understanding the capabilities will help you determine which ASR rules are most important for protecting your organization.
 
 >[!IMPORTANT]
->The examples provided in this guide are included for for illustrative purposes, and might not reflect the best configurations for your environment. You are responsible for thoroughly testing your ASR rules deployment to ensure compatibility and functionality. You are responsible for your environment.
+>The examples provided in this guide are included for illustrative purposes, and might not reflect the best configurations for your environment. You are responsible for thoroughly testing your ASR rules deployment to ensure compatibility and functionality. You are responsible for your environment.
 
 Before you start, review [Overview of attack surface reduction](overview-attack-surface-reduction.md), and [Demystifying attack surface reduction rules - Part 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) for foundational information. To understand the areas of coverage and potential impact, familiarize yourself with the current set of ASR rules; see [Attack surface reduction rules](attack-surface-reduction-rules.md).
 
@@ -56,7 +56,7 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 
 (<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is not currently available in MEM Endpoint security. You can configure this rule using [MEM OMA-URI](enable-attack-surface-reduction.md#mem).
 
-(<a id="fn1">2</a>) Some ASR rules generate a lot of noise, but will not block functionality. For example, for example, if you are updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating. This is also true of other applications that make unnecessary calls to lsass.exe. This rule will block unnecessary calls to lsass, but will not block the application from running.
+(<a id="fn1">2</a>) Some ASR rules generate a lot of noise, but will not block functionality. For example, if you are updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating. This is also true of other applications that make unnecessary calls to lsass.exe. This rule will block unnecessary calls to lsass, but will not block the application from running.
 
 ### Infrastructure requirements
 
@@ -70,7 +70,7 @@ Although multiple methods of implementing ASR rules are possible, this guide is 
 To take full advantage of ASR rules and reporting, we recommend using a Microsoft 365 Defender E5 or Windows E5 license, and A5. Learn more: [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 >[!Note]
->There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), Intune, PowerShell, Group Policy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
+>There are multiple methods to configure ASR rules. ASR rules can be configured using: Microsoft Endpoint Manager (MEM), PowerShell, Group Policy, Microsoft System Center Configuration Manager (SCCM), MEM OMA-URI.
 >If you are using a different infrastructure configuration than what is listed for _Infrastructure requirements_ (above), you can learn more about deploying attack surface reduction rules using other configurations here: [Enable attack surface reduction rules](enable-attack-surface-reduction.md).  
 
 ### ASR rules dependencies
@@ -100,7 +100,7 @@ The following Microsoft Defender Antivirus component versions must be no more th
 
 - **Microsoft Defender Antivirus Platform update version**  - Microsoft Defender Antivirus platform is updated monthly.
 - **Microsoft Defender Antivirus engine version** - Microsoft Defender Antivirus engine is updated monthly.
-- **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (definition and signature) to address the latest threats, and to refine detection logic.
+- **Microsoft Defender Antivirus security intelligence** - Microsoft continually updates Microsoft Defender security intelligence (AKA, definition and signature) to address the latest threats, and to refine detection logic.
 
 Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
@@ -324,7 +324,8 @@ In many cases, an organization has files, or folders of files, for example that 
 >[!Note]
 >Keep in mind that Microsoft Defender Antivirus AV exclusions are honored by ASR rules. See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
-If you determine a rule will broadly impact line-of-business operations in a detrimental way, you can disable the rule entirely, or you can leave the rule in audit so that you can continue to capture and evaluate those ASR rule-triggered events.
+If you determine a rule will broadly impact line-of-business operations in a detrimental way, you can leave the rule in audit so that you can continue to capture, or you can disable the rule entirely. Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **Attack surface reduction rules**. Simply select the entity or entities for which you want to create an exclusion.
+
 Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **Attack surface reduction rules**. Simply select the entity or entities for which you want to create an exclusion.
 
 > [!div class="mx-imgBorder"]
@@ -336,9 +337,6 @@ In many cases, an organization has files, or folders of files, for example that 
 
 >[!Note]
 >Keep in mind that Microsoft Defender Antivirus AV exclusions are honored by ASR rules. See [Configure and validate exclusions based on extension, name, or location](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
-
-If you determine a rule will broadly impact line-of-business operations in a detrimental way, you can disable the rule entirely, or you can leave the rule in audit so that you can continue to capture and evaluate those ASR rule-triggered events.
-Exclusions are easily enabled in **Microsoft 365 Defender** > **Reports** > **Attack surface reduction rules**. Simply select the entity or entities for which you want to create an exclusion.
 
 ## Phase 3: Implement
 
@@ -355,7 +353,7 @@ The implementation phase moves the ring from testing into functional state.
 4. Switch problematic rules back to Audit.
 
   >[!Note]
-  >For problematic rules (rules creating too much noise), it is better to create exclusions than to turn rules off or switching back to Adit. You will have to determine what is best for your environment.
+  >For problematic rules (rules creating too much noise), it is better to create exclusions than to turn rules off or switching back to Audit. You will have to determine what is best for your environment.
 
   >[!Tip]
   >When available, take advantage of the Warn mode setting in rules to limit disruptions. Enabling ASR rules in Warn mode enables you to capture triggered events and view their potential disruptions, without actually blocking end-user access. Learn more: [Warn mode for users](attack-surface-reduction.md#warn-mode-for-users).
