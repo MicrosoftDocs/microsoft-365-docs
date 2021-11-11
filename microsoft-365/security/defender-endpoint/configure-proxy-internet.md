@@ -100,9 +100,9 @@ Configure the static proxy using the Group Policy found here:
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft Defender Antivirus.":::
 
-3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
+3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
-   The registry value `ProxyServer` takes the following string format:
+   The registry value `ProxyServer` takes the following string format:
 
     ```text
     <server name or ip>:<port>

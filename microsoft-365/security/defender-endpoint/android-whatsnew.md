@@ -11,7 +11,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: reference
@@ -32,7 +32,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 Release Build: 1.0.3501.0301
 Release month: Nov 2021
-Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. This change will prompt users seeking access to [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), for devices running Android 11 or later. Users will need to accept this new storage permission once they update Defender app with the release build 1.0.3501.0301 or later. This will ensure that Defender for Endpoint's app security feature to function without any disruption. For more information, review the following sections.
+Microsoft Defender for Endpoint has released this update required by [Google](https://developer.android.com/distribute/play-policies#APILevel30) to upgrade to Android API 30. This change will prompt users seeking access to [new storage permission](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play), for devices running Android 11 or later. Users will need to accept this new storage permission once they update Defender app with the release build 1.0.3501.0301 or later. This will ensure that Defender for Endpoint's app security feature to function without any disruption. For more information, review the following sections.
 
 **How will this affect your organization:**
 These changes will take affect, if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
@@ -42,7 +42,7 @@ These changes will take affect, if you are using Microsoft Defender for Endpoint
 
 - **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the ‘App security’ functionality will be turned off on the device. If user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app, until it has been approved.
 
->[!NOTE] 
+>[!NOTE]
 > If your organization is previewing ‘Tamper protection’ feature and if the new storage permissions are not granted by the user within 7 days of updating to the latest version, the user might lose access to corporate resources.
 
 **What you need to do to prepare:**

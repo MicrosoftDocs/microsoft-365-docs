@@ -22,7 +22,7 @@ Microsoft Defender for Endpoint Device Control Printer Protection blocks people 
 
 ## Licensing
 
-Before you get started with Printer Protection, you should [confirm your Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). To access and use Printer Protection, you must have the following:
+Before you get started with Printer Protection, you should [confirm your Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). To access and use Printer Protection, you must have the following:
 
 - Microsoft 365 E3 for functionality/policy deployment
 - Microsoft 365 E5 for reporting
@@ -134,14 +134,14 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com) shows printi
 
 ```kusto
 DeviceEvents
-| where ActionType == 'PrintJobBlocked'
-| extend parsed=parse_json(AdditionalFields)
-| extend PrintedFile=tostring(parsed.JobOrDocumentName)
-| extend PrintPortName=tostring(parsed.PortName)
-| extend PrinterName=tostring(parsed.PrinterName)
-| extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-| order by Timestamp desc
+| where ActionType == 'PrintJobBlocked'
+| extend parsed=parse_json(AdditionalFields)
+| extend PrintedFile=tostring(parsed.JobOrDocumentName)
+| extend PrintPortName=tostring(parsed.PortName)
+| extend PrinterName=tostring(parsed.PrinterName)
+| extend Policy=tostring(parsed.RestrictionReason) 
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| order by Timestamp desc
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::

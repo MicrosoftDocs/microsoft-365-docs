@@ -376,7 +376,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
     > [!NOTE]
     > In the following image **Turn on cloud-delivered protection** and
-    > **Turn on real-time protection** are being shown as managed.
+    > **Turn on real-time protection** are being shown as managed.
 
     > [!div class="mx-imgBorder"]
     > ![Image of setting page2.](images/9341428b2d3164ca63d7d4eaa5cff642.png)

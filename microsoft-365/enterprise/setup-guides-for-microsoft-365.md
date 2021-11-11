@@ -28,7 +28,7 @@ description: "Get step-by-step tools to plan, migrate, and implement the feature
 Microsoft 365 and Office 365 setup guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions, and they're available to all admins within the Microsoft 365 admin center. They give information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
 > [!NOTE]
-> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant. 
+> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
@@ -116,7 +116,7 @@ Upgrade to an alternative sign-in approach that allows users to access their dev
 - The Microsoft Authenticator app
 - Security keys
 
-Use the [Plan your passwordless deployment](https://aka.ms/passwordlesssetup) guide to discover the best passwordless authentication methods to use and receive guidance on how to deploy them.
+Use the [Plan your passwordless deployment](https://aka.ms/passwordlesssetup) guide to discover the best passwordless authentication methods to use and receive guidance on how to deploy them.
 
 ### Plan your self-service password reset (SSPR) deployment
 
@@ -155,7 +155,7 @@ The [Microsoft Defender for Office 365 setup guide](https://aka.ms/oatpsetup) sa
 
 ### Microsoft Defender for Identity setup guide
 
-The [Microsoft Defender for Identity setup guide](https://aka.ms/DefenderforIdentitysetup) provides security solution set-up guidance to identify, detect, and investigate advanced threats that might compromise user identities. These include detecting suspicious user activities and malicious insider actions directed at your organization. You’ll create a Defender for Identity instance, connect to your organization's Active Directory, and then set up sensors, alerts, notifications, and configure your unique portal preferences. 
+The [Microsoft Defender for Identity setup guide](https://aka.ms/DefenderforIdentitysetup) provides security solution set-up guidance to identify, detect, and investigate advanced threats that might compromise user identities. These include detecting suspicious user activities and malicious insider actions directed at your organization. You’ll create a Defender for Identity instance, connect to your organization's Active Directory, and then set up sensors, alerts, notifications, and configure your unique portal preferences.
 
 ### Microsoft information protection setup guide
 

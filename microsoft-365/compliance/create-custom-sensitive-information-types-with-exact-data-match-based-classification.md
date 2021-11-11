@@ -21,10 +21,10 @@ ms.custom: seo-marvel-apr2020
 
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type (SIT)based on:
+[Custom sensitive information types](sensitive-information-type-learn-about.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type (SIT)based on:
 
 - patterns
-- keyword evidence such as *employee*, *badge*, or *ID*
+- keyword evidence such as *employee*, *badge*, or *ID*
 - character proximity to evidence in a particular pattern
 - confidence levels
 
@@ -41,7 +41,7 @@ But what if you wanted a custom sensitive information type (SIT) that uses exact
 
 ![EDM-based classification.](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Defender for Cloud Apps file policies](/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](dlp-learn-about-dlp.md) or [Microsoft Defender for Cloud Apps file policies](/cloud-app-security/data-protection-policies).
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports double byte character set languages for:
@@ -55,7 +55,7 @@ EDM-based classification enables you to create custom sensitive information type
 
 ## Required licenses and permissions
 
-You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
+You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
 EDM-based classification is included in these subscriptions:
 
@@ -96,7 +96,7 @@ The data file can include a maximum of:
    - Up to 32 columns (fields) per data source
    - Up to 5 columns (fields) marked as searchable
 
-2. Structure the sensitive data in the .csv or .tsv file such that the first row includes the names of the fields used for EDM-based classification. In your file you might have field names such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
+2. Structure the sensitive data in the .csv or .tsv file such that the first row includes the names of the fields used for EDM-based classification. In your file you might have field names such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
 3. Pay attention to the format of the sensitive data fields. In particular, fields that may contain commas in their content, for example, a street address that contains the value "Seattle,WA" would be parsed as two separate fields when parsed if the .csv format is selected. To avoid this, use the .tsv format or surrounded the comma containing values by double quotes in the sensitive data table. If comma containing values also contain spaces, you need to create a custom SIT that matches the corresponding format. For example, a SIT that detects multi-word string with commas and spaces in it.
 
@@ -104,14 +104,14 @@ The data file can include a maximum of:
 
 If for business or technical reasons, you prefer not to use PowerShell or command line to create your schema and EDM sensitive info type pattern (rule package), you can use the [Exact Data Match Schema and Sensitive Information Type Wizard](sit-edm-wizard.md) to create them. When you are done creating the schema and EDM sensitive info type pattern, return to complete all the steps necessary to make your EDM based sensitive information type available for use.
 
-1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
+1. Define the schema for the database of sensitive information in XML format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:
 
       `\<Field name="" searchable=""/\>`.
 
-      - Use column names for *Field name* values.
-      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. At least one field must be searchable.
+      - Use column names for *Field name* values.
+      - Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields. At least one field must be searchable.
 
-      As an example, the following XML file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
+      As an example, the following XML file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.
 
       (You can copy, modify, and use our example.)
 
@@ -186,7 +186,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
 > [!TIP]
-> If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml
+> If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
@@ -197,7 +197,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
       When you set up your rule package, make sure to correctly reference your .csv or .tsv file and **edm.xml** file. You can copy, modify, and use our example. In this sample xml the following fields needs to be customized to create your EDM sensitive type:
 
-      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
+      - **RulePack id & ExactMatch id**: Use [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid) to generate a GUID.
 
       - **Datastore**: This field specifies EDM lookup data store to be used. You provide a data source name of a configured EDM Schema.
 
@@ -260,7 +260,7 @@ In this example, where both `caseInsensitive` and `ignoredDelimiters` are used, 
 
 At this point, you have set up EDM-based classification. The next step is to hash the sensitive data, and then upload the hashes for indexing.
 
-Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field. Consider the following ExactMatch item:
+Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field. Consider the following ExactMatch item:
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -283,11 +283,11 @@ Recall from the previous procedure that our PatientRecords schema defines five f
 
 In this example, note that:
 
-- The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
+- The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
 
-- The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
+- The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
 
-- The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
+- The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
 
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
@@ -301,7 +301,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 > [!TIP]
 > You can change your EDM schema and data file to take advantage of **configurable match**. When configured, EDM will ignore case differences and some delimiters when it evaluates an item. This makes defining your xml schema and your sensitive data files easier. To learn more see, [Modify Exact Data Match schema to use configurable match](sit-modify-edm-schema-configurable-match.md).
 
-1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
+1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
 2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -323,7 +323,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
       > [!TIP]
-      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
+      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
 
       > [!NOTE]
       > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
@@ -351,7 +351,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
 
       > [!TIP]
-      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
 ### Part 2: Hash and upload the sensitive data
 
@@ -382,9 +382,9 @@ If you do not want to expose your clear text sensitive data file, you can hash i
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](/office365/admin/email/create-edit-or-delete-a-security-group) called **EDM\_DataUploaders**.
 
-2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
+2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
 #### Hash and upload from one computer
 
@@ -392,7 +392,7 @@ This computer must have direct access to your Microsoft 365 tenant.
 
 > [!NOTE]
 >
-> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
+> Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.
 >
 > Optionally, you can run a validation against your .csv or .tsv file before uploading by running:
 >
@@ -509,9 +509,9 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>
    ```
 
-   Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
+   Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
 
-At this point, you are ready to use EDM-based classification with your Microsoft cloud services. For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).
+At this point, you are ready to use EDM-based classification with your Microsoft cloud services. For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).
 
 #### Refreshing your sensitive information database
 
@@ -519,18 +519,18 @@ You can refresh your sensitive information database daily, and the EDM Upload To
 
 1. Determine your process and frequency (daily or weekly) for refreshing the database of sensitive information.
 
-2. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv or .tsv format. Keep the same file name and location you used when you followed the steps described in [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data).
+2. Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv or .tsv format. Keep the same file name and location you used when you followed the steps described in [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data).
 
     > [!NOTE]
     > If there are no changes to the structure (field names) of the .csv or .tsv file, you won't need to make any changes to your database schema file when you refresh the data. But if you must make changes, make sure to edit the database schema and your rule package accordingly.
 
-3. Use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
+3. Use [Task Scheduler](/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure. You can schedule tasks using several methods:
 
    |Method|What to do|
    |---|---|
-   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
-   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
-   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
+   |Windows PowerShell|See the [ScheduledTasks](/powershell/module/scheduledtasks/) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article|
+   |Task Scheduler API|See the [Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) documentation|
+   |Windows user interface|In Windows, click **Start**, and type Task Scheduler. Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.|
 
 #### Example PowerShell script for Task Scheduler
 
@@ -627,36 +627,36 @@ These locations are support EDM sensitive information types:
 
 1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).
 
-2. Choose **Data loss prevention** \> **Policy**.
+2. Choose **Data loss prevention** \> **Policy**.
 
-3. Choose **Create a policy** \> **Custom** \> **Next**.
+3. Choose **Create a policy** \> **Custom** \> **Next**.
 
-4. On the **Name your policy** tab, specify a name and description, and then choose **Next**.
+4. On the **Name your policy** tab, specify a name and description, and then choose **Next**.
 
-5. On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.
+5. On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.
 
-6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message**, and then choose **Next**.
+6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message**, and then choose **Next**.
 
-7. On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.
+7. On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.
 
-8. Choose **+ New rule**.
+8. Choose **+ New rule**.
 
-9. In the **Name** section, specify a name and description for the rule.
+9. In the **Name** section, specify a name and description for the rule.
 
-10. In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.
+10. In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.
 
     ![Content contains sensitive info types.](../media/edm-dlp-newrule-conditions.png)
 
-11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.
-    Then choose **Done**.
+11. Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.
+    Then choose **Done**.
 
-12. Finish selecting options for your rule, such as **User notifications**, **User overrides**, **Incident reports**, and so on, and then choose **Save**.
+12. Finish selecting options for your rule, such as **User notifications**, **User overrides**, **Incident reports**, and so on, and then choose **Save**.
 
-13. On the **Policy settings** tab, review your rules, and then choose **Next**.
+13. On the **Policy settings** tab, review your rules, and then choose **Next**.
 
-14. Specify whether to turn on the policy right away, test it out, or keep it turned off. Then choose **Next**.
+14. Specify whether to turn on the policy right away, test it out, or keep it turned off. Then choose **Next**.
 
-15. On the **Review your settings** tab, review your policy. Make any needed changes. When you're ready, choose **Create**.
+15. On the **Review your settings** tab, review your policy. Make any needed changes. When you're ready, choose **Create**.
 
 > [!NOTE]
 > Allow approximately one hour for your new DLP policy to work its way through your data center.

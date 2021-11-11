@@ -116,13 +116,13 @@ To learn more, see the following resources:
 - [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## Review threat detection history in the Windows Defender for Cloud Security Center app
+## Review threat detection history in the Windows Defender for Cloud app
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Select **Protection history**. Any recent items are listed.
+3. Select **Protection history**. Any recent items are listed.
 
 ## Set ransomware protection and recovery options
 

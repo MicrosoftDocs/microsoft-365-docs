@@ -57,7 +57,7 @@ You can also open the main page for an incident by selecting the incident name f
 
 The **Summary** page gives you a snapshot glance at the top things to notice about the incident.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal":::
 
 Information is organized in these sections.
 

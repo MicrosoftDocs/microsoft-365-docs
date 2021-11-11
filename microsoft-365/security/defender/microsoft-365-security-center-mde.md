@@ -100,7 +100,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Configuration management   |  No changes.  |
 
 > [!NOTE]
-> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
+> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
 
 > [!TIP]
 > Device search is done from Endpoints > Search.
