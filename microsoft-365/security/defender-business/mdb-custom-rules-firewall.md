@@ -27,7 +27,7 @@ Microsoft Defender for Business includes firewall policies that help protect you
 
 To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
 
-This article describes how to:
+**This article describes how to**:
 
 - [Create a custom rule for a firewall policy](#create-a-custom-rule-for-a-firewall-policy)
 - [Edit a custom rule for a firewall policy](#edit-a-custom-rule-for-a-firewall-policy)
