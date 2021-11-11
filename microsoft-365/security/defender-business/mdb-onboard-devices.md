@@ -53,7 +53,6 @@ Review the scenarios listed in the following table and select a path. Then proce
 > If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip this section and proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).
 
 If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices to Defender for Business automatically or manually. The following table summarizes these options.
-
 <br/><br/>
 
 | Option | What to do next |
