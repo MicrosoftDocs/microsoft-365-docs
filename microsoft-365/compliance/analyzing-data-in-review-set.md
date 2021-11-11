@@ -30,6 +30,8 @@ When the number of collected documents is large, it can be difficult to review t
 
 - [Themes](themes-in-advanced-ediscovery.md)
 
+## Run analytics for a review set
+
 To analyze data in a review set:
 
 1. Configure analytics settings for your case. For more information, see [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md).
@@ -46,50 +48,50 @@ You can check the progress of analysis on the **Jobs** tab of the case.
 
 ## Using the For Review filter query
 
-After running analytics for the review set, you can use an automatically generated filter query, named *For Review*, that filters the review to only those items that are inclusive representatives of review set items. That means that only unique and representative items are displayed in the review set after you apply the For Review filter. This means that duplicate items are filtered out, leaving your with a representative set of items that you can review, tag, and export.
+After running analytics for the review set, you can use an automatically generated filter query (called *For Review*) that filters your review to only those items that are inclusive representatives of review set items. That means that only unique and representative items are displayed in the review set after you apply the **For Review** filter. This means that duplicate items are filtered out, leaving your with a representative set of items that you can review, tag, and export.
 
-To apply the For Review filter query to a review set, select the **Saved filter queries** dropdown list, and then select **\[AutoGen] For Review**.
+To apply the **For Review** filter query to a review set, select the **Saved filter queries** dropdown list, and then select **\[AutoGen] For Review**.
 
 ![Select For Review from the Saved filter queries dropdown list](..\media\ForReviewFilterQuery1.png)
 
-Emails - only include emails that are InclusiveMinus and Inclusive. Link to the definitions. 
-Inclusive: An Inclusive email is the final email message in an email thread and contains all the previous content of that email thread.
+Here's the syntax for the **For Review** filter query:
 
-Inclusive minus: An email message is designated as Inclusive minus if there are one or more attachments associated with the specific message within the email thread. A reviewer can use the Inclusive minus value to determine which specific email message within the thread has associated attachments.
-Attachments - filter out duplicate attachments and include only unique attachments in the the email set
-Documents - filter out duplicate attachments and include only unique documents in this review set
-Conversations - Include all Teams conversations in the review set. 
+`(((FileClass="Email") AND (InclusiveType="InclusiveMinus" OR InclusiveType="Inclusive")) OR ((FileClass="Attachment") AND (UniqueInEmailSet="true")) OR ((FileClass="Document") AND (MarkAsRepresentative="Unique")) OR (FileClass="Conversations"))`
 
-The generated query is the following: 
+The following list describes the result of the filter query in terms of what content is displayed after you apply it to the review set.
 
-```text
-(((FileClass="Email") AND (InclusiveType="InclusiveMinus" OR InclusiveType="Inclusive")) OR ((FileClass="Attachment") AND (UniqueInEmailSet="true")) OR ((FileClass="Document") AND (MarkAsRepresentative="Unique")) OR (FileClass="Conversations")) 
-```
+- **Email messages**. Displays items that are marked as **Inclusive** or **InclusiveMinus**. An inclusive item is the final message in an email thread. It contains all previous content in the email thread. An inclusive minus it contains one or more attachments associated with the specific message in the email thread. A reviewer can use the inclusive minus value to determine which specific messages in the email thread have associated attachments.
+
+- **Attachments**. Filters out duplicate attachments. Only attachments that are unique in an email thread are displayed.
+
+- **Site documents**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
+
+- **Teams conversations**. All Teams conversations in the review set are displayed.
+
+For more information about inclusive types and document uniqueness, see [Email threading in Advanced eDiscovery](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> For review sets created in Large cases during Public Preview (before Nov 8th), 
+> During the [public preview of the large case format in Advanced eDiscovery](advanced-ediscovery-large-cases.md), the **For Review** filter query for did not return Teams conversations for review sets created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set, more items that match the filter query might be displayed because all Teams conversations are included.
 
 ## Analytics report
 
-To view an analytics report for a review set:
+To view the analytics report for a review set:
 
 1. Open the review set.
 
-2. Click **Manage review set**.
+2. Click **Analytics** > **Show reports**.
 
-3. Click **View report**.
-
-The report has seven components from analysis:
+The **Analytics** report has seven components from the analysis:
 
 - **Target population:** The number of email messages, attachments, and loose documents found in the review set.
 
 - **Documents (excluding attachments):** The number of loose documents that are pivots, unique near duplicates of a pivot, or an exact duplicate of another document.
 
-- **Emails:** The number of email messages that are inclusives, inclusive copies, inclusive minuses, or none of the above.
+- **Emails:** The number of email messages that are marked as inclusive, inclusive copy, inclusive minus, or none of the above.
 
 - **Attachments:** The number of email attachments that are unique or duplicates of another email attachment in the review set.
 
-- **Number of files by type:** The number of files, identified by file extension.
+- **Number documents by file type:** The number of files, identified by file extension.
 
 - **Documents by source:** A summary of content by its original data source.
 
