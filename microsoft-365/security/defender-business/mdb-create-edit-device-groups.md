@@ -23,7 +23,12 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. This article describes what device groups are and how to create them in Defender for Business.
+In Microsoft Defender for Business, policies are applied to devices through certain collections that are called device groups. 
+
+This article describes:  
+
+- What device groups are   
+- How to create device groups in Defender for Business
 
 ## What is a device group?
 
