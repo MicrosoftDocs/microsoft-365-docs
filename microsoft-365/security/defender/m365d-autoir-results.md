@@ -82,7 +82,7 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="An example of an investiation page." lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="An example of an investigation page." lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## Investigation details
 
