@@ -405,4 +405,4 @@ Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [An
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Use DMARC to validate email](./use-dmarc-to-validate-email.md)
