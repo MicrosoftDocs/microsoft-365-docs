@@ -16,6 +16,7 @@ ms.technology: mde
 ms.topic: how-to
 ms.date: 10/14/2021
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Enable attack surface reduction rules

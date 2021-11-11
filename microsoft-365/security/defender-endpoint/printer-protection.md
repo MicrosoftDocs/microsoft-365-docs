@@ -14,6 +14,7 @@ audience: ITPro
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Device Control Printer Protection
