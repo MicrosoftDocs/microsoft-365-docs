@@ -69,6 +69,8 @@ ms.collection:
 
 ## Next steps
 
+Choose one or more of the following tasks:
+
 - [Manage devices](mdb-manage-devices.md)
 
 - [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
