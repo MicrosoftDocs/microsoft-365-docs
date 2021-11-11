@@ -43,6 +43,12 @@ The device discovery capability allows you to:
 
   Unmanaged endpoints in your network introduce vulnerabilities and risks to your network. Onboarding them to the service can increase the security visibility on them.
 
+
+Watch this video for a quick overview of how device discovery:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+
+
 In conjunction with this capability, a new security recommendation to onboard devices to Microsoft Defender for Endpoint will be available as part of the existing Threat and Vulnerability Management experience.
 
 ## Discovery methods
