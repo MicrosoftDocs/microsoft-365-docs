@@ -44,7 +44,15 @@ Microsoft Defender for Business uses a capability known as [Security Management 
 
 ### To enable security setting management
 
-1. Go to the Microsoft 
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+
+3. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
+
+4. Under **OS platform**, turn on **Windows Client devices**.
+
+5. Select **Save**.
 
 ## Part 1: Identify your security and device management path
 
