@@ -40,7 +40,7 @@ Device onboarding is shared across Microsoft 365 and Microsoft Defender for Endp
 
 ### SKU/subscriptions licensing
 
-Check the licensing requirements for your solution.
+Check the licensing requirements [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### Permissions
 
