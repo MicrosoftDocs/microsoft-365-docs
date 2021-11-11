@@ -57,12 +57,16 @@ ms.collection:
 
 ## Next steps
 
+Choose one or more of the following tasks:
+
 - [Get started using Defender for Business](mdb-get-started.md)
+
+- [View or edit policies](mdb-view-edit-policies.md)
 
 - [Manage devices](mdb-manage-devices.md)
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
