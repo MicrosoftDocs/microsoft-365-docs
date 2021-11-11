@@ -33,13 +33,13 @@ ms.collection:
 
 4. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
 
-## Edit an existing next-generation protection policy
+## Edit an existing policy
 
 1. Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in. You’re now in the Microsoft 365 Defender portal.
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
-3. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies. 
+3. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories. 
 
 4. To edit a policy, select its name, and then choose **Edit**.
 
@@ -54,7 +54,10 @@ ms.collection:
 
    After you have specified which device groups should receive the policy, choose **Next**.
 
-7. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. (To get help with this task, see [Understand next-generation configuration settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).)
+7. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
+
+   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)   
+   - [Firewall settings](mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
 
@@ -66,9 +69,9 @@ ms.collection:
 
 ## Next steps
 
-- [Get started using Defender for Business](mdb-get-started.md)
-
 - [Manage devices](mdb-manage-devices.md)
+
+- [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 
