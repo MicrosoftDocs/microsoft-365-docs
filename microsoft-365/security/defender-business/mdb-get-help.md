@@ -7,7 +7,7 @@ manager: dansimp
 audience: Admin
 ms.topic: article
 ms.prod: m365-security
-ms.technology: mdb
+ms.technology: mde
 ms.localizationpriority: medium
 ms.collection: 
 - SMB
