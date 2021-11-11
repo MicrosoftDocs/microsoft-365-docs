@@ -104,6 +104,7 @@ The following Microsoft Defender Antivirus component versions must be no more th
 Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 ## ASR rules deployment phases
+
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully
 .  
 
@@ -145,7 +146,7 @@ It is important to provide a feedback and response channel for your ASR rules ch
 ### Get inventory of line-of-business apps and understand the business unit processes
 
 Having a full understanding of the applications and per-business-unit processes that are used across your organization is critical to a successful ASR rules deployment. Additionally, it is imperative that you understand how those apps are used within the various business units in your organization.
-To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory).
+To start, you should get an inventory of the apps that are approved for use across the breadth of the organization. You can use tools such as the Microsoft 365 Apps admin center to help you inventory software applications. See: [Overview of inventory in the Microsoft 365 Apps admin center](/deployoffice/admincenter/inventory).
 
 ### Define reporting and response team  roles and responsibilities
 
@@ -165,7 +166,7 @@ Typical roles and responsibilities include:
 
 For large enterprises, Microsoft recommends deploying ASR  rules in “rings.” Rings are groups of devices that are visually represented as concentric circles that radiate outward like non-overlapping tree rings. When the innermost ring is successfully deployed, you can transition the next ring into the testing phase. Thorough assessment of your business units, ASR  rules champions, apps, and processes is imperative to defining your rings.
 In most cases, your organization will have designed deployment rings for phased rollouts of Windows updates. You can use your existing ring design to implement ASR  rules.
-See: [Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
+See: [Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 
 ## Phase 2: Test
 
@@ -200,8 +201,8 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
     >[!Note]
     >There are variations in some ASR rules mode listings; _Blocked_ and _Enabled_ provide the same functionality.
 
-8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags).
-9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+8. [Optional] In the **Scope tags** pane, you can add tag information to specific devices. You can also use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Learn more: [Use role-based access control (RBAC) and scope tags for distributed IT in Intune](/mem/intune/fundamentals/scope-tags).
+9. In the **Assignments** pane, you can deploy or "assign" the profile to your user or device groups. Learn more: [Assign device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
    > [!div class="mx-imgBorder"]
@@ -390,7 +391,7 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 ### Hunting
 
-One of the most powerful and coolest features of [Microsoft 365 Defender](https://securitycenter.microsoft.com) is advanced hunting. If you are not familiar with advanced hunting, please refer to the documentation: [Proactively hunt for threats with advanced hunting](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
+One of the most powerful and coolest features of [Microsoft 365 Defender](https://securitycenter.microsoft.com) is advanced hunting. If you are not familiar with advanced hunting, please refer to the documentation: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender Advanced hunting](images/asr-defender365-advanced-hunting2.png)
@@ -457,13 +458,13 @@ For additional information about additional hunting options, see: [Demystifying 
 
 [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
-[Overview of inventory in the Microsoft 365 Apps admin center](https://docs.microsoft.com/deployoffice/admincenter/inventory)
+[Overview of inventory in the Microsoft 365 Apps admin center](/deployoffice/admincenter/inventory)
 
-[Create a deployment plan for Windows](https://docs.microsoft.com/windows/deployment/update/create-deployment-plan)
+[Create a deployment plan for Windows](/windows/deployment/update/create-deployment-plan)
 
-[Use role-based access control (RBAC) and scope tags for distributed IT in Intune](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags)
+[Use role-based access control (RBAC) and scope tags for distributed IT in Intune](/mem/intune/fundamentals/scope-tags)
 
-[Assign device profiles in Microsoft Intune](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
+[Assign device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-profile-assignment)
 
 ### Management sites
 
