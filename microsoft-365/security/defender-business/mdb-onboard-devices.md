@@ -33,6 +33,10 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 4. [See how onboarding works in the Microsoft 365 Defender portal (with video!)](#onboarding-devices-in-the-microsoft-365-defender-portal).
 5. [Proceed to your next steps](#next-steps). 
 
+## Before you begin...
+
+Make sure that the [requirements](mdb-requirements.md) are met before you begin onboarding devices. Microsoft Defender for Business uses [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration).
+
 ## Part 1: Identify your security and device management path
 
 Review the scenarios listed in the following table and what to expect. Then proceed to your next step.
