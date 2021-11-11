@@ -43,7 +43,7 @@
         href: mdb-manage-devices.md
     - name: Manage your settings, policies, and devices
       items: 
-      - name: View or edit your policies
+      - name: View and edit policies
         href: mdb-view-edit-policies.md
       - name: Create a new policy
         href: mdb-create-new-policy.md
