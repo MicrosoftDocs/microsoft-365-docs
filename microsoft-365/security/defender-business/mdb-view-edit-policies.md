@@ -25,8 +25,8 @@ ms.collection:
 
 In Microsoft Defender for Business, security settings are configured through policies. There are two main types of policies in Defender for Business:
 
-- Next-generation protection policies, which determine how Microsoft Defender Antivirus and other threat protection features are configured
-- Firewall policies, which determine what network traffic is permitted to flow to and from your company's devices.
+- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
+- **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices.
 
 This article describes how to:
 
