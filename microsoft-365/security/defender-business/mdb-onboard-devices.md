@@ -35,7 +35,16 @@ Microsoft Defender for Business is designed with the busy small and medium-sized
 
 ## Before you begin...
 
-Make sure that the [requirements](mdb-requirements.md) are met before you begin onboarding devices. Microsoft Defender for Business uses [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration).
+Make sure that the [requirements for Defender for Business](mdb-requirements.md) are met before you begin onboarding devices. 
+
+Microsoft Defender for Business uses a capability known as [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). With this capability, devices that aren’t managed by Microsoft Endpoint Manager can receive security configurations for Defender for Business directly from Microsoft Endpoint Manager. For this to work correctly, the following configurations must be in place:
+
+- Azure Active Directory (Azure AD) must be configured such that trust is created between devices and Azure AD.
+- Defender for Business must have security setting management enabled in Microsoft Endpoint Manager.
+
+### To enable security setting management
+
+1. Go to the Microsoft 
 
 ## Part 1: Identify your security and device management path
 
