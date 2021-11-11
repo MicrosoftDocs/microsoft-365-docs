@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-## MICROSOFT APPLICATION LICENSE TERMS: Microsoft Defender for Endpoint
+## MICROSOFT APPLICATION LICENSE TERMS: MICROSOFT DEFENDER FOR ENDPOINT
 
 These license terms ("Terms") are an agreement between Microsoft Corporation (or based on where you live, one of its affiliates) and you. Please read them. They apply to the application named above. These Terms also apply to any Microsoft
 
