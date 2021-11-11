@@ -56,7 +56,7 @@ With Defender for Business, you can help protect the devices and data your busin
 - **Provide guidance on managing devices and security policies and settings**
    - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
    - [View or edit next-generation protection policies in Microsoft Defender for Business](mdb-manage-next-generation-protection.md)
-   - [Manage firewall policies in Microsoft Defender for Business](mdb-manage-firewall.md)  
+   - [Manage firewall policies in Microsoft Defender for Business](mdb-custom-rules-firewall.md)  
 
 ## What's included in Microsoft Defender for Business?
 

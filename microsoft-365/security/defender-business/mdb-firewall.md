@@ -33,7 +33,7 @@ Microsoft Defender for Business includes default firewall policies and settings 
 - When devices are connected to your company's network, all inbound connections are allowed by default.
 - When devices are connected to a public network or a private network, all inbound connections are blocked by default.
 
-In Microsoft Defender for Business, you can define exceptions to block or allow incoming connections. You define these exceptions by creating custom rules. See [Manage firewall policies in Microsoft Defender for Business](mdb-manage-firewall.md).
+In Microsoft Defender for Business, you can define exceptions to block or allow incoming connections. You define these exceptions by creating custom rules. See [Manage firewall policies in Microsoft Defender for Business](mdb-custom-rules-firewall.md).
 
 ## Configuration settings for firewall protection in Microsoft Defender for Business
 
@@ -49,7 +49,7 @@ Microsoft Defender for Business includes firewall protection through Windows Def
 
 ## Next steps
 
-- [Manage firewall settings in Microsoft Defender for Business](mdb-manage-firewall.md)
+- [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
 
 - [Learn more about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 

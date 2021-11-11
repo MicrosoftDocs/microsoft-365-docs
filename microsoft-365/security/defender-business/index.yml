@@ -86,7 +86,7 @@ landingContent:
           - text: Manage your next-generation protection policies
             url: mdb-manage-next-generation-protection.md
           - text: Manage your firewall policies
-            url: mdb-manage-firewall.md
+            url: mdb-custom-rules-firewall.md
           - text: Create device groups
             url: mdb-create-edit-device-groups.md
  

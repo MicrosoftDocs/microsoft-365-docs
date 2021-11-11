@@ -43,10 +43,12 @@
         href: mdb-manage-devices.md
     - name: Manage your settings, policies, and devices
       items: 
-      - name: Manage next-generation protection policies
-        href: mdb-manage-next-generation-protection.md
+      - name: View or edit your policies
+        href: mdb-view-edit-policies.md
+      - name: Create a new policy
+        href: mdb-create-new-policy.md
       - name: Manage your firewall policies
-        href: mdb-manage-firewall.md
+        href: mdb-custom-rules-firewall.md
       - name: Create device groups
         href: mdb-create-edit-device-groups.md
     - name: Reference information

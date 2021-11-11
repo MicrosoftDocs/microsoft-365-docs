@@ -31,7 +31,7 @@ ms.collection:
 
 3. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies. 
 
-4. Under **Next-generation protection**, select **+ Add**.
+4. Under **Next-generation protection** or **Firewall**, select **+ Add**.
 
 5. On the **General information** tab, take the following steps:
 
