@@ -140,8 +140,8 @@ With the [Microsoft Intune setup guide](https://aka.ms/intunesetupguide), you'll
 
 The [Microsoft Defender for Endpoint setup guide](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best.
 
->[!NOTE]
->A Microsoft Volume License is required for Microsoft Defender for Endpoint.
+> [!NOTE]
+> A Microsoft Volume License is required for Microsoft Defender for Endpoint.
 
 ### Exchange Online Protection setup guide
 

@@ -34,15 +34,13 @@ For Security Management for Microsoft Defender for Endpoint onboarding instructi
 
 This end-to-end onboarding is designed to be frictionless and doesn't require user input. However, if you encounter issues during onboarding, you can view and troubleshoot errors within the Microsoft Defender for Endpoint platform.
 
-
->[!NOTE]
+> [!NOTE]
 > If you are having issues with the onboarding flow for new devices, review the [Microsoft Defender for Endpoint prerequisites](/mem/intune/protect/mde-security-integration#prerequisites) and make sure the onboarding instructions are followed.
-
 
 For more information about the client analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](/microsoft-365/security/defender-endpoint/overview-client-analyzer).
 
-## Registering domain joined computers with Azure Active Directory  
-To successfully register devices to Azure Active Directory, you'll need to ensure the following: 
+## Registering domain joined computers with Azure Active Directory
+To successfully register devices to Azure Active Directory, you'll need to ensure the following:
 
 - Computers can authenticate with the domain controller 
 - Computers have access to the following Microsoft resources from inside your organization's network:
@@ -51,20 +49,19 @@ To successfully register devices to Azure Active Directory, you'll need to ensur
   - https://device.login.microsoftonline.com
 - Azure AD connect is configured to sync the computer objects. By default, computer OUs are in Azure AD connect sync scope. If the computer objects belong to specific organizational units (OUs), configure the OUs to sync in Azure AD Connect. To learn more about how to sync computer objects by using Azure AD Connect, see [Organizational unit–based filtering](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering).
 
->[!IMPORTANT]
->Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for Security Management for Microsoft Defender for Endpoint, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in Azure Active Directory Connect]().
+> [!IMPORTANT]
+> Azure AD connect does not sync Windows Server 2012 R2 computer objects. If you need to register them with Azure AD for Security Management for Microsoft Defender for Endpoint, then you'll need to customize Azure AD connect sync rule to include those computer objects in sync scope. See [Instructions for applying Computer Join rule in Azure Active Directory Connect]().
 
->[!NOTE]
->To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:<br>
+> [!NOTE]
+> To successfully complete the onboarding flow, and independent of a device's Operating System, the Azure Active Directory state of a device can change, based on the devices' initial state:<br>
 >
->|      Starting Device    State     |      New Device State     |
->|---|---|
->|     Already AADJ or HAADJ    |     Remains as is    |
->|     Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined    |     Device is HAADJ'd    |
->|     Not AADJ or HAADJ + Not domain joined    |     Device is AADJ’d    |
+> |      Starting Device    State     |      New Device State     |
+> |---|---|
+> |     Already AADJ or HAADJ    |     Remains as is    |
+> |     Not AADJ or Hybrid Azure Active Directory Join (HAADJ) + Domain joined    |     Device is HAADJ'd    |
+> |     Not AADJ or HAADJ + Not domain joined    |     Device is AADJ’d    |
 >
->Where AADJ represents Azure Active Directory Joined and HAADJ represents Hybrid Azure Active Directory Joined.
-
+> Where AADJ represents Azure Active Directory Joined and HAADJ represents Hybrid Azure Active Directory Joined.
 
 ## Troubleshoot errors from the Microsoft Defender for Endpoint portal
 
@@ -94,21 +91,18 @@ The Client Analyzer output file (MDE Client Analyzer Results.htm) can provide ke
 - Verify that the device OS is in scope for Security Management for Microsoft Defender for Endpoint onboarding flow in **General Device Details** section
 - Verify that the device has successfully registered to Azure Active Directory in **Device Configuration Management Details**
 
-
     ![Image of client analyzer results](images/client-analyzer-results.png)
-
 
 In the **Detailed Results** section of the report, the Client Analyzer also provides actionable guidance.
 
->[!TIP]
->Make sure the Detailed Results section of the report does not include any "Errors", and make sure to review all "Warning" messages.
+> [!TIP]
+> Make sure the Detailed Results section of the report does not include any "Errors", and make sure to review all "Warning" messages.
 
 For example, as part of the Security Management onboarding flow, it is required for the Azure Active Directory Tenant ID in your Microsoft Defender for Endpoint Tenant to match the SCP Tenant ID that appears in the reports' **Device Configuration Management Details** section. If relevant, the report output will recommend to perform this verification.
 
 ![Image of detailed results](images/detailed-results.png)
 
-
-## General troubleshooting 
+## General troubleshooting
 
 If you weren't able to identify the onboarded device in AAD or MEM, and did not receive an error during the enrollment, checking the registry key `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` can provide additional troubleshooting information.  
 
@@ -154,8 +148,8 @@ From the information in the message, it's possible in most cases to understand w
 
 For Security Management for Microsoft Defender for Endpoint on Windows Server 2012 R2 domain joined computers, an update to Azure AD Connect sync rule "In from AD-Computer Join" is needed. This can be achieved by cloning and modifying the rule, which will disable the original "In from AD - Computer Join" rule. Azure AD Connect by default offers this experience for making changes to built-in rules.
 
->[!NOTE]
->These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances. 
+> [!NOTE]
+>These changes need to be applied on the server where AAD Connect is running. If you have multiple instances of AAD Connect deployed, these changes must be applied to all instances.
 
 1. Open the Synchronization Rules Editor application from the start menu. In the rule list, locate the rule named **In from AD – Computer Join**. **Take note of the value in the 'Precedence' column for this rule.** 
 
@@ -169,7 +163,7 @@ For Security Management for Microsoft Defender for Endpoint on Windows Server 20
 
    ![Image of confirmation](images/ee0f29162bc3f2fbe666c22f14614c45.png)
 
-4.  Select **Next** three times. This will navigate to the 'Transformations' section of the rule. Do not make any changes to the 'Scoping filter' and 'Join rules' sections of the rule. The 'Transformations' section should now be shown. 
+4. Select **Next** three times. This will navigate to the 'Transformations' section of the rule. Do not make any changes to the 'Scoping filter' and 'Join rules' sections of the rule. The 'Transformations' section should now be shown.
 
     ![Image of inbound synchornization rule](images/296f2c2a705e41233631c3784373bc23.png)
 

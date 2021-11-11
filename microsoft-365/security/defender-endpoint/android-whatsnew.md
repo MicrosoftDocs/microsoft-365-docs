@@ -37,12 +37,12 @@ Microsoft Defender for Endpoint has released this update required by [Google](ht
 **How will this affect your organization:**
 These changes will take affect, if you are using Microsoft Defender for Endpoint on devices running Android 11 or later and updated Defender for Endpoint to release build 1.0.3501.0301 or later.
 
->[!NOTE]
+> [!NOTE]
 > The new storage permissions cannot be configured by admin to 'Auto Approve' through Microsoft Endpoint Manager. User will need to take action to provide access to this permission.
 
 - **User experience:** Users will receive a notification indicating a missing permission for app security. If the user denies this permission, the ‘App security’ functionality will be turned off on the device. If user doesn't accept or deny permission, they will continue to receive the prompt when unlocking their device or opening the app, until it has been approved.
 
->[!NOTE]
+> [!NOTE]
 > If your organization is previewing ‘Tamper protection’ feature and if the new storage permissions are not granted by the user within 7 days of updating to the latest version, the user might lose access to corporate resources.
 
 **What you need to do to prepare:**
@@ -51,12 +51,11 @@ Notify your users and helpdesk (as applicable) that users will need to accept th
 
 1. Tap on the Defender for Endpoint in-app notification or open the Defender for Endpoint app. Users will see a screen that lists the permissions needed. A green check mark will be missing next to the Storage permission.
 
-
 2. Tap **Begin**.
 
 3. Tap the toggle for **Allow access to manage all files.**
 
 4. The device is now protected.
 
-  >[!NOTE]
-  >This permission allows Microsoft Defender for Endpoint to access storage on user’s device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Defender for Endpoint only scans work-related files.
+  > [!NOTE]
+  > This permission allows Microsoft Defender for Endpoint to access storage on user’s device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Defender for Endpoint only scans work-related files.
