@@ -93,6 +93,8 @@ You can choose from several onboarding methods in Defender for Business, as desc
 
 ### To enable security management in Microsoft Endpoint Manager
 
+If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, use the following procedure to enable security management in Microsoft Endpoint Manager.
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
