@@ -1,13 +1,13 @@
 ---
 title: Device groups in Microsoft Defender for Business
-description: Learn how to manage devices in Microsoft Defender for Business
+description: Learn about device groups in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 11/09/2021
+ms.date: 11/11/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,7 +25,7 @@ ms.collection:
 
 ## What is a device group?
 
-A device group is a collection of devices that is grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft Defender for Business, policies are applied to devices by using device groups. 
+A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft Defender for Business, policies are applied to devices by using device groups. 
 
 Defender for Business includes default device groups that you can use. However, you can create new device groups. All device groups, including your default device groups and any custom device groups that you define, are stored in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
 
