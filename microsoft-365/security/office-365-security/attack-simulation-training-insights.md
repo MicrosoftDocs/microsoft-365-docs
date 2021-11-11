@@ -32,7 +32,7 @@ For getting started information about Attack simulation training, see [Get start
 
 ## Insights and reports on the Overview tab of Attack simulation training
 
-To go to the **Overview** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training**, and verify that the **Overview** tab is selected (it's the default). To go directly to the **Overview** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
+To go to the **Overview** tab, open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training**, and verify that the **Overview** tab is selected (it's the default). To go directly to the **Overview** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 The rest of this section describes the information that's available on the **Overview** tab of Attack simulation training.
 
@@ -244,7 +244,7 @@ If you click the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Exp
 
 ## Insights and reports in the simulation details of Attack simulation training
 
-To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training**, and then click the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
+To go to the **Simulations** tab, open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training**, and then click the **Simulations** tab. To go directly to the **Simulations** tab on the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 When you select a simulation from the list, a details page opens. This page contains the configuration settings of the simulation that you would expect to see (status, launch date, payload used, etc.).
 
