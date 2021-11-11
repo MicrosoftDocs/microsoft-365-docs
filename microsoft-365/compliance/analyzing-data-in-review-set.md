@@ -48,7 +48,7 @@ You can check the progress of analysis on the **Jobs** tab of the case.
 
 ## Using the For Review filter query
 
-After running analytics for the review set, you can use an automatically generated filter query (called *For Review*) that filters your review to exclude immaterial, duplicate, or non-inclusive items, leaving users with strictly the items that are representative, unique, and inclusive in the review set.
+After running analytics for the review set, you can use an automatically generated filter query (called *For Review*) that filters your review to exclude immaterial, duplicate, or non-inclusive items. This leaves you with only the items that are representative, unique, and inclusive in the review set.
 
 To apply the **For Review** filter query to a review set, select the **Saved filter queries** dropdown list, and then select **\[AutoGen] For Review**.
 
