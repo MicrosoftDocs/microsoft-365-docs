@@ -23,7 +23,7 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business features a simplified configuration process, designed especially for small and medium-sized businesses. This experience takes the guesswork out of onboarding and managing devices, with a wizard-like experience and default policies that are designed to protect your company's devices from day one. We recommend using the simplified configuration process; however, you're not limited to this option.
+Microsoft Defender for Business features a simplified configuration process, designed especially for small and medium-sized businesses. This experience takes the guesswork out of onboarding and managing devices, with a wizard-like experience and default policies that are designed to protect your company's devices from day one. **We recommend using the simplified configuration process; however, you're not limited to this option**.
 
 When it comes to onboarding devices and configuring security settings for your company’s devices, you can choose from several experiences: 
 
