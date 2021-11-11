@@ -54,14 +54,32 @@ Datacenter asset management
   - Microsoft 365 service engineer access control
   - Risk assessment guide for MS Cloud
 
+### Data Loss Prevention
+
+- [Learn about Data Loss Prevention](endpoint-dlp-learn-about.md) was updated for macOS support and advanced classification; updated for creating a custom DLP policy to audit activity for all supported file types.
+- [Get started with Microsoft 365 Endpoint data loss prevention](endpoint-dlp-getting-started.md) was updated for macOS support and advanced classification.
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md) was updated for macOS support and advanced classification.
+- [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md) was updated for macOS support and advanced classification.
+- [Onboard macOS devices into Microsoft 365 (preview)](device-onboarding-macos-overview.md) was updated for macOS support and advanced classification.
+- Added the following new pages for onboarding devices:
+  - [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### eDiscovery
+
+- [Collect cloud attachments in Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) in addition to collecting the latest version of a cloud attachment, you can collect the version that was shared in an email message or Teams chat conversation; collecting the shared version is made possible by the new capability of automatically applying a retention label to cloud attachments.
+- [Set up historical versions in Advanced eDiscovery](advanced-ediscovery-historical-versions.md) new functionality that indexes all versions of documents stored on a SharePoint site for search; this means that document versions that contain content that match a collection query are returned in the search results.
+
 ### Encryption
 
-- [Use end-to-end encryption for one-to-one Microsoft Teams calls](/microsoftteams/teams-end-to-end-encryption) (Public preview) New content for the public preview.
+- [Use end-to-end encryption for one-to-one Microsoft Teams calls (Public preview)](/microsoftteams/teams-end-to-end-encryption) New content for the public preview.
 
 ### Information governance
 
-- [Set up a connector to import Epic EHR audit data](import-epic-data.md) (new; new connector lets you import data from Epic electronic healthcare records system to support new general patient data misuse scenario for insider risk management)
-- Set up a connector to import healthcare EHR audit data (new; new connector lets you import data from an electronic healthcare records system to support new general patient data misuse scenario for insider risk management)
+- [Set up a connector to import Epic EHR audit data](import-epic-data.md) new connector lets you import data from Epic electronic healthcare records system to support new general patient data misuse scenario for insider risk management.
+- [Set up a connector to import healthcare EHR audit data](import-healthcare-data.md) new connector lets you import data from an electronic healthcare records system to support new general patient data misuse scenario for insider risk management.
 
 ### Retention and records management
 - [Adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) are released in preview for retention policies and retention label policies.
@@ -69,7 +87,13 @@ Datacenter asset management
 - File Plan has a new [import process](file-plan-manager.md#import-retention-labels-into-your-file-plan).
 - [Common settings for retention policies and retention label policies](retention-settings.md): New article for detailed information about configuring adaptive scopes and other settings in both retention policies and retention label policies.
 
+### Sensitive Information Types
+
+- [Learn about named entities (preview)](named-entities-learn.md) new content for named entities.
+- [Use named entities in your data loss prevention policies (preview)](named-entities-use.md) new content on using named entities.
+
 ### Sensitivity labels
+
 - [Default labels and default policies](mip-easy-trials.md) are rolling out to eligible customers.
 
 ## September 2021
