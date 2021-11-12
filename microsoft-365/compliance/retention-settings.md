@@ -210,7 +210,7 @@ Depending on your policy configuration, [inactive mailboxes](create-and-manage-i
 
 - Adaptive policy scopes include inactive mailboxes by default. You can control this behavior by using the advanced query builder and the OPATH property *IsInactiveMailboxmailboxes*. For example, to exclude inactive mailboxes:
     
-    '''console
+    ```console
     (IsInactiveMailbox -eq "False")
     ```
 
