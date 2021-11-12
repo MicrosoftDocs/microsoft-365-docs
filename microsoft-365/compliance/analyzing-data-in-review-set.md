@@ -66,12 +66,12 @@ The following list describes the result of the filter query in terms of what con
 
 - **Documents and other**. Filters out duplicate documents. Only documents that are unique in the review set are displayed.
 
-- **Teams conversations**. All Teams and Yammer conversations in the review set are displayed.
+- **Teams conversations**. All Teams (and Yammer) conversations in the review set are displayed.
 
 For more information about inclusive types and document uniqueness, see [Email threading in Advanced eDiscovery](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> During the [public preview of the large case format in Advanced eDiscovery](advanced-ediscovery-large-cases.md), the **For Review** filter query for did not return Teams conversations for review sets created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set, more items that match the filter query might be displayed because all Teams conversations are included.
+> During the [public preview of the large case format in Advanced eDiscovery](advanced-ediscovery-large-cases.md), the **For Review** filter query did not return Teams conversations for review sets created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set, more items that match the filter query might be displayed because all Teams conversations are included.
 
 ## Analytics report
 
