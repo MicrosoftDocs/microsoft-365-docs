@@ -120,6 +120,12 @@ Before you configure your adaptive scope, use the previous section to identify w
     - **notlike** (string comparison
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
+    
+    > [!TIP]
+    > You must use the advanced query builder if you want to exclude inactive mailboxes. Or conversely, target just inactive mailboxes. For this configuration, use the OPATH property *IsInactiveMailbox*:
+    > 
+    > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
+    > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
 
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
@@ -198,9 +204,17 @@ The **Exchange email** location supports retention for users' email, calendar, a
 
 Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead.
 
-When you use a static policy scope and apply the retention settings to **All recipients**, any [inactive mailboxes](create-and-manage-inactive-mailboxes.md) are included. However, if you change this default and configure [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions), inactive mailboxes aren't supported and retention settings can't be applied or excluded for those mailboxes.
+Depending on your policy configuration, [inactive mailboxes](create-and-manage-inactive-mailboxes.md) might be included or not:
 
-If you do choose recipients to include or exclude with a static policy scope, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated.
+- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
+
+- Adaptive policy scopes include inactive mailboxes by default. You can control this behavior by using the advanced query builder and the OPATH property *IsInactiveMailbox*:
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+If you use a static policy scope and choose recipients to include or exclude, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated, unlike adaptive policy scopes.
 
 For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
