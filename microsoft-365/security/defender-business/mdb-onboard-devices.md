@@ -78,8 +78,7 @@ You can choose from several onboarding methods in Defender for Business, as desc
 >   - `login.microsoftonline.com` (for registration in Azure Active Directory)
 >   - `*.dm.microsoft.com` (The wildcard (*) supports the cloud-service endpoints that are used for enrollment, check-in, and reporting, and can change as the service scales.)
 
-
-### Select an onboarding method
+The following table describes manual onboarding methods in Defender for Business:
 
 | Method | Description |
 |:---|:---|
@@ -106,7 +105,6 @@ If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Confi
 4. Under **OS platform**, turn on **Windows Client devices**.
 
 5. Select **Save**.
-
 
 ## Onboarding devices in the Microsoft 365 Defender portal
 
