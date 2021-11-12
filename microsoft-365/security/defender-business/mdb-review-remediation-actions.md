@@ -27,7 +27,12 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 :::image type="content" source="../../media/defender-business/mdb-actioncenter.png" alt-text="Screenshot of the Action center":::
 
-## Visit the Action center
+**This article describes**:
+
+- [How to use the Action center](#how-to-use-the-action-center)
+- [Remediation actions](#remediation-actions)
+
+## How to use the Action center
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
