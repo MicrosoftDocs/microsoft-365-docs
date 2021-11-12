@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices via Group Policy
+title: Onboard Windows 10 and Windows 11 devices via Group Policy
 
 f1.keywords:
     NOCSH
@@ -8,7 +8,7 @@ author: chrfox
 manager: laurawi
 ms.date:
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
@@ -16,14 +16,15 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150 
-description: Use Group Policy to deploy the configuration package on Windows 10 devices so that they are onboarded to the service.
+description: Use Group Policy to deploy the configuration package on Windows 10 and Windows 11 devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Group Policy 
+# Onboard Windows 10 devices and Windows 11 using Group Policy 
 
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 - Group Policy
 
 > [!NOTE]
@@ -33,7 +34,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 
 ## Onboard devices using Group Policy
 
-1. Open the GP configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft Compliance center](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Open the [Compliance center](https://compliance.microsoft.com).
 
 2. In the navigation pane, select **Settings** > **Device Onboarding**.
 
@@ -58,8 +59,7 @@ description: Use Group Policy to deploy the configuration package on Windows 10 
 12. Click **OK** and close any open GPMC windows.
 
 ## Offboard devices using Group Policy
-
-For security reasons, the package used to Offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
+For security reasons, the package used to offboard devices will expire 30 days after the date it was downloaded. Expired offboarding packages sent to a device will be rejected. When downloading an offboarding package you will be notified of the packages expiry date and it will also be included in the package name.
 
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
@@ -105,9 +105,9 @@ With Group Policy there isn’t an option to monitor deployment of policies on t
 
 
 ## Related topics
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
+- [Onboard Windows 10 and Windows 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 and Windows 11 devices using a local script](device-onboarding-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
