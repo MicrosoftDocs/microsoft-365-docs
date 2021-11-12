@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using Mobile Device Management tools
+title: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -18,13 +18,14 @@ search.appverid:
 description: Use Mobile Device Management tools to deploy the configuration package on devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Mobile Device Management tools
+# Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
 
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 Endpoint data loss prevention supports MDMs by providing OMA-URIs to create policies to manage devices.
+You can use mobile device management (MDM) solutions to configure devices. Microsoft 365 information protection supports MDMs by providing OMA-URIs to create policies to manage devices.
 
 
 ## Before you begin
@@ -73,8 +74,8 @@ For more information on Microsoft Intune policy settings see, [Windows 10 policy
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
+- [Onboard Windows 10 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md)
+- [Onboard Windows 10 devices using a local script](device-onboarding-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
