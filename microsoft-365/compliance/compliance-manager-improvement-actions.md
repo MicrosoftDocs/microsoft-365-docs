@@ -72,15 +72,52 @@ You can assign multiple improvement actions to one user by following these steps
 5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
 6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
 
-## Update testing source
+## Change implementation details
 
-By default, Compliance Manager will automate as much testing as possible for improvement actions. If needed, you can update the testing source for an improvement action with the **Testing source** dropdown. Options include **Manual**, **Automatic**, and **Parent**.
+You can record the implementation status and date for each improvement action and add notes for internal reference. These fields can be edited by any user with editing permissions, not just by the assigned person.
+
+To edit an improvement action’s status, select **Edit implementation details** on the details page. Below are the available fields and status options:
+
+- **Implementation status**
+  - **Not implemented**: action not yet implemented
+  - **Implemented**: action implemented
+  - **Alternative implementation**: select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
+  - **Planned**: action is planned for implementation
+  - **Out of scope**: action isn’t relevant to your organization and doesn’t contribute to your score
+- **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
+- **Implementation notes**: text field for notes about your implementation.
+
+There's no character limit in the notes fields. We recommend keeping notes brief so that you can easily view and edit them from the improvement actions details page.
+
+Common actions synch across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
+
+## Review testing and test status
+
+In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. The content of these fields can be changed under **Edit testing details** by any user with editing permissions.
+
+The available fields are as follows:
+
+- **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
+  - **Not assessed**: action hasn't been tested
+  - **Passed**: implementation has been verified by an assessor
+  - **Failed low risk**: testing failed, low risk
+  - **Failed medium risk**: testing failed, medium risk
+  - **Failed high risk**: testing failed, high risk
+  - **Out of scope**: the action is out of scope for the assessment and doesn’t contribute to your score
+- **Test date**: toggle through the calendar pop-up to select the date
+- **Testing notes** and **Additional notes**: text fields for notes for internal reference
+
+### Update testing source
+
+By default, Compliance Manager will automate as much testing as possible for improvement actions. If needed, you can update the testing source for an improvement action with the **Testing source** dropdown on the left side of the screen. Options include **Manual**, **Automatic**, and **Parent**.
+
+## Review standards and regulations
+
+The **standards and regulations** section provides a searchable and filterable list of standards and regulations associated with your improvement action. These can be viewed by the relevant **control**, the **control ID**, the **control family**, and the **regulation** involved.
 
 ## Perform work and store documentation
 
-You can upload files and notes related to implementation and testing work directly to the **Notes and documentation** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files and enter or edit notes.
-
-The **Notes and documentation** section contains fields for uploaded documents, implementation notes, test notes, and additional notes.
+You can upload files and notes related to implementation and testing work directly to the **Documents** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files.
 
 #### Uploaded documents
 
@@ -92,38 +129,6 @@ The **Notes and documentation** section contains fields for uploaded documents, 
   - Compressed files (.zip, .rar)
 - Once your file resolves in the pane select **Close**, which automatically saves the file attachment. You'll then see the file listed underneath **Uploaded documents**.
 - To download or delete the document, select **Manage documents** from underneath the list of documents. On the flyout pane, select the document row to highlight it, then select **Download** or **Delete**.
-
-#### Implementation notes, test notes, and additional notes
-
-- To add notes in any of these three fields, select **Edit implementation notes** underneath any of these fields.
-- When the flyout pane opens, enter notes in the text field, then select **Save and close**.
-- To edit notes, select **Edit implementation notes**, make your edits, then select **Save and close**.
-
-There's no character limit in the notes fields. We recommend keeping notes brief so that you can easily view and edit them from the improvement actions details page.
-
-## Change implementation details
-
-You can record the implementation status and date, and the test status and date, for each improvement action. The **implementation** and **test status** fields can be edited by any user with editing permissions, not just by the assigned person.
-
-To edit an improvement action’s status, select **Edit status** on the upper-left section of the details page. Below are the available fields and status options:
-
-- **Implementation status**
-  - **Not implemented** - action not yet implemented
-  - **Implemented** - action implemented
-  - **Alternative implementation** - select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
-  - **Planned** - action is planned for implementation
-  - **Out of scope** – action isn’t relevant to your organization and doesn’t contribute to your score
-- **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
-- **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
-  - **Not assessed** – action hasn't been tested
-  - **Passed** - implementation has been verified by an assessor
-  - **Failed low risk** - testing failed, low risk
-  - **Failed medium risk** - testing failed, medium risk
-  - **Failed high risk** – testing failed, high risk
-  - **Out of scope** – the action is out of scope for the assessment and doesn’t contribute to your score
-- **Test date**: toggle through the calendar pop-up to select the date
-
-Common actions synch across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
 ## Assign improvement action to assessor for completion
 
