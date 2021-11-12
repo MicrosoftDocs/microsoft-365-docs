@@ -53,7 +53,7 @@ When you've decided whether to use an adaptive or static scope, use the followin
 
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
-| Adaptive scope type | Attributes or properties supported |
+| Adaptive scope type | Attributes or properties supported include |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
@@ -63,6 +63,8 @@ The property names for sites are based on SharePoint site managed properties, an
 
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
+
+The attributes and properties listed in the table can be easily specified by selecting them when you configure an adaptive scope. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
 A single policy for retention can have one or many adaptive scopes.
 
