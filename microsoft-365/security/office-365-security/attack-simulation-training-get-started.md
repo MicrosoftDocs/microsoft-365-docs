@@ -18,6 +18,7 @@ ms.collection:
   - m365initiative-m365-defender
 ms.custom: 
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to use Attack simulation training to run simulated phishing and password attacks in their Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.technology: mdo
 ms.prod: m365-security
