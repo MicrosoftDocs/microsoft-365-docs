@@ -57,7 +57,9 @@ additionalContent:
         - title: Microsoft Viva Insights
           links:
             - text: Get started
-              url: /insights/viva-teams-app
+              url: /viva/insights/introduction
+            - text: Setup
+              url: /viva/insights/setup/setup-intro
             - text: Learning path - Discover Microsoft Viva Insights
               url: /learn/modules/workplace-analytics-discover/
         # Card
@@ -67,6 +69,8 @@ additionalContent:
               url: /sharepoint/viva-connections-overview
             - text: Setup
               url: /sharepoint/guide-to-setting-up-viva-connections
+            - text: Learning path - Extend Microsoft Viva Connections
+              url: /learn/paths/m365-extend-viva-connections
             - text: Extensibility 
               url: /sharepoint/dev/spfx/viva/overview-viva-connections
             - text: End user help & training

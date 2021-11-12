@@ -99,7 +99,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 3. On the **Edit third-party phishing simulation** flyout that opens, configure the following settings:
 
-   - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries.
+   - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 20 entries.
 
      > [!NOTE]
      > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor. 
@@ -134,7 +134,7 @@ The third-party phishing simulation entries that you configured are displayed on
 
 In addition to the two scenarios that the advanced delivery policy can help you with, there are other scenarios that might require you bypass filtering:
 
-- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as *skip listing*). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
+- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as *skip listing*). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
 

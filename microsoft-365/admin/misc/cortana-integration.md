@@ -78,7 +78,7 @@ Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform
 
 [Learn more about Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview)
 
-### Cortana voice assistance in Teams
+### Cortana voice assistance in Teams mobile and Teams display
 
 > [!NOTE]
 > Cortana voice assistance is supported in Microsoft Teams mobile apps for iOS and Android and [Microsoft Teams displays](/microsoftteams/devices/teams-displays) in the English language for users in the United States, United Kingdom, Canada, India, and Australia.  Microsoft Teams Rooms on Windows is only supported for users in the United States. Cortana voice assistance isn't currently available for GCC, GCC-High, DoD, EDU tenants. Expansion to additional languages and regions will happen as part of future releases and admin customers will be notified through Message Center and the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=65346).
@@ -94,9 +94,41 @@ Cortana voice assistance will be enabled by default for tenants. Admins can cont
 Individual users can try out Cortana voice assistance in the Teams mobile app by clicking on the mic button. They can try out Cortana voice assistance on Microsoft Teams display devices by simply saying &#8220;Cortana.&#8221; They can also control whether Cortana responds to the wake word invocation. 
 
 1. Open Teams mobile
-2. Go to Settings
-3. Select Cortana
-4. Switch the Voice activation toggle
+2. Go to **Settings**
+3. Select **Cortana**
+4. Switch the **Voice activation** toggle
+
+[Learn more about using voice assistance in Teams](https://support.microsoft.com/office/274bb2f0-d962-4182-b45d-307435cea256)
+
+### Cortana voice assistance in Teams Meeting Room
+
+Cortana voice assistance in Teams Meeting Rooms goes beyond what can be done with Teams on personal devices by providing unique in-room capabilities, like one-touch join, content cameras to share physical whiteboards into the meeting in an intelligent way, and proximity features like seamlessly transferring the room into a Teams meeting from your own personal device. Users can use push to talk (PTT) by pressing the microphone to initiate Cortana then saying, “Start my meeting.” With Keyword Spotting (KWS) enabled Cortana will start listening when users say "Cortana." 
+
+#### Admin control
+
+Cortana voice assistance in Teams is delivered using services that fully comply with the Office 365 enterprise-level privacy, security, and compliance promises. For more information on data processing in Cortana enterprise services see, Cortana in Microsoft 365. Cortana is enabled by default in Teams Meetings Rooms for tenants. IT admins can opt out of voice assistance for Teams Meeting Room in the Microsoft 365 admin center. 
+ 
+How to opt out of all Cortana features in Teams Meeting Rooms:
+1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?ref=Domains)
+2. 	Select **Devices**
+3.	Select **Teams Rooms**
+4.	Choose one or multiple devices you want to make changes to
+5.	Select **Edit Settings**
+6.	Go to **Cortana** and select Replace existing value with **Off**
+7.	Select Apply
+
+How to opt out of voice activation in Teams Meeting Rooms:
+1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?ref=Domains)
+2.	Select **Devices**
+3.	Select **Teams Rooms**
+4.	Choose one or multiple devices you want to make changes to
+5.	Select **Edit Settings**
+6.	Uncheck the **Wake word detection** box
+7.	Select **Apply**
+
+#### Configure Cortana remotely using an XML configuration file
+For information on how to Manage a Microsoft Teams Rooms console settings remotely with an XML configuration file see, [Remotely manage Microsoft Teams Rooms device settings](/microsoftteams/rooms/xml-config-file).
+
 
 [Learn more about Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams)
 
@@ -179,7 +211,8 @@ Turn off Cortana access to your organization's Microsoft hosted data
 For services governed by the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement), Microsoft is the data controller. As the data controller, Microsoft uses data to improve products and services in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
 ## Related content
-
+ 
 [Cortana voice assistance in Teams](/microsoftteams/cortana-in-teams) (article)\
 [Configure Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (article)\
 [What can you do with Play My Emails from Cortana?](https://support.microsoft.com/help/4558256)
+
