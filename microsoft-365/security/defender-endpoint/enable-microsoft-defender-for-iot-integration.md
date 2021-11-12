@@ -30,6 +30,11 @@ ms.technology: mde
 
 Enable the Microsoft Defender for IoT integration to extend Microsoft Defender for Endpoint device discovery capabilities. With Defender for IoT enabled, you're adding agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks [like Voice over Internet Protocol (VoIP), printers, and smart TVs]. This allows you take advantage of a single integrated solution that can secure your IoT and OT infrastructure.
 
+View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view. 
+
+A unified security solution for IoT and OT
+
+1. Network sensor details! V azure description?? 
 
 The ability to connect the MDIOT network sensor (aka. CyberX sensor) as and additional data source 
 
