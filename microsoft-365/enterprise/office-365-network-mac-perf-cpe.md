@@ -3,7 +3,7 @@ title: "Microsoft 365 informed network routing"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 10/20/2021
+ms.date: 11/12/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
