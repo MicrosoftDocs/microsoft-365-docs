@@ -72,6 +72,10 @@ You can assign multiple improvement actions to one user by following these steps
 5. After you populate the **Assign to** field with the assignee's name, select **Assign**.
 6. You'll then see your Improvement actions page with the new assignee listed for the actions you just assigned.
 
+## Update testing source
+
+If needed, you can update the testing source for an improvement action with the **Testing source** dropdown. Options include **manual**, **Automatic**, and **Parent**. 
+
 ## Perform work and store documentation
 
 You can upload files and notes related to implementation and testing work directly to the **Notes and documentation** section. This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files and enter or edit notes.
