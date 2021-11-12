@@ -294,6 +294,8 @@ Advantages of using adaptive scopes:
 - Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
 - A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
+    
+- You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
 Advantages of using static scopes:
 
