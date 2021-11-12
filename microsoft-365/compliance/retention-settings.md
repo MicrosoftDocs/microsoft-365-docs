@@ -210,9 +210,9 @@ Depending on your policy configuration, [inactive mailboxes](create-and-manage-i
 
 - Adaptive policy scopes include inactive mailboxes by default. You can control this behavior by using the advanced query builder and the OPATH property *IsInactiveMailboxmailboxes*. For example, to exclude inactive mailboxes:
     
-    ''''console
+    '''console
     (IsInactiveMailbox -eq "False")
-    ````
+    ```
 
 If you use a static policy scope and choose recipients to include or exclude, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated, unlike adaptive policy scopes.
 
