@@ -356,20 +356,22 @@ There are three procedures.
 
 7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
-    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a 
-    
-    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* folder and append a date and time stamp to the original file name.
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a folder named:  
+
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
+
+    and append a date and time stamp to the original file name.
     
     > [!NOTE]
     > DLP Auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
 
 8. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*:
     
-    **%%FileName%% contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy %%PolicyName%% and was moved to the quarantine folder: %%QuarantinePath%%.** 
+    > %%FileName%% contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy %%PolicyName%% and was moved to the quarantine folder: %%QuarantinePath%%
     
-    will leave a .txt file that contains this message
+    will leave a text file that contains this message:
     
-    *auto quar 1.docx contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy and was moved to the quarantine folder: C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.*
+    > auto quar 1.docx contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy and was moved to the quarantine folder: C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.
 
 9. Choose **Save**
 
@@ -388,10 +390,10 @@ There are three procedures.
 6. Accept the default **Create or customize advanced DLP rules** selection and choose **Next**.
 
 7. Create a rule with these values:
-    1. **Name** > *Scenario 4 Auto-quarantine*
-    1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**
+    1. **Name** > *Scenario 4 Auto-quarantine*.
+    1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**.
     1.  **Actions** > **Audit or restrict activities on Windows devices** > **Access by unallowed apps** > **Block**. For the purposes of this scenario, clear all the other activities.
-    1. **User notifications** > **On**
+    1. **User notifications** > **On**.
     1. **Endpoint devices** > Choose **Show users a policy tip notification when an activity** if not already enabled.
     
 8. Choose **Save** and **Next**.
@@ -421,7 +423,7 @@ There are three procedures.
     
     The message reads:
     
-    "Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'"
+    > Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'
 
 5. Choose **Dismiss**.
 
