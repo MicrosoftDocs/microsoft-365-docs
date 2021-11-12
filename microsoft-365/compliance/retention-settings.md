@@ -208,7 +208,7 @@ Depending on your policy configuration, [inactive mailboxes](create-and-manage-i
 
 - Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
 
-- Adaptive policy scopes include inactive mailboxes by default. You can control this behavior by using the advanced query builder and the OPATH property *IsInactiveMailboxmailboxes*. For example, to exclude inactive mailboxes:
+- Adaptive policy scopes include inactive mailboxes by default. You can control this behavior by using the advanced query builder and the OPATH property *IsInactiveMailboxmailbox*. For example, to exclude inactive mailboxes:
     
     ```console
     (IsInactiveMailbox -eq "False")
