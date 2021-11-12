@@ -31,7 +31,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 2. [Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).
 3. [Choose a manual onboarding option](#part-3-choose-a-manual-onboarding-method).
 
-This article also includes:
+**This article also includes**:
 
 - [How onboarding works in the Microsoft 365 Defender portal (video included!)](#onboarding-devices-in-the-microsoft-365-defender-portal)
 - [How to onboard devices gradually](#what-if-i-want-to-onboard-devices-gradually)
