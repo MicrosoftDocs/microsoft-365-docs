@@ -17,6 +17,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security

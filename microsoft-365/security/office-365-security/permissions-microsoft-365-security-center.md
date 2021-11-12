@@ -16,7 +16,9 @@ search.appverid:
   - MOE150
   - MET150
 description: Admins can learn how to manage permissions in the Microsoft 365 Defender portal for all tasks related to security.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---

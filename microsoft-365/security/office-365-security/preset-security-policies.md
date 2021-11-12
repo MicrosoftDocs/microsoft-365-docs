@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.technology: mdo
 ms.prod: m365-security
