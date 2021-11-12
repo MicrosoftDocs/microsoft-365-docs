@@ -64,7 +64,7 @@ The property names for sites are based on SharePoint site managed properties, an
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
 
-The attributes and properties listed in the table can be easily specified by selecting them when you configure an adaptive scope. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
+The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
 A single policy for retention can have one or many adaptive scopes.
 
