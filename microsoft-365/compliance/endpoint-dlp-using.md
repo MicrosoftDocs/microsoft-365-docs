@@ -169,6 +169,9 @@ You add browsers, identified by their executable names, that will be blocked fro
 
 #### Service domains
 
+> [!NOTE]
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [the Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installed.
+
 You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
 If the list mode is set to **Block**, then user will not be able to upload sensitive items to those domains. When an upload action is blocked because an item matches a DLP policy, DLP will either generate a warning or block the upload of the sensitive item.
