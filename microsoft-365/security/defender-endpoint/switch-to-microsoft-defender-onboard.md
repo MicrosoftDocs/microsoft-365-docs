@@ -44,7 +44,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. Choose **Settings** \> **Endpoints** \> **Onboarding** (under **Device management**).
 

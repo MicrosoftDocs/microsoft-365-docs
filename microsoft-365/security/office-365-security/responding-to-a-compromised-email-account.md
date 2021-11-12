@@ -14,7 +14,8 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-
+  - admindeeplinkMAC
+  - admindeeplinkDEFENDER
 ms.localizationpriority: high
 search.appverid: 
   - MET150
@@ -54,7 +55,7 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 - Mail forwarding was recently added.
 - An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
-If a user reports any of the above symptoms, you should perform further investigation. The [Microsoft 365 Defender](https://security.microsoft.com) and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
+If a user reports any of the above symptoms, you should perform further investigation. The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
 - **Unified audit logs in the Microsoft 365 Defender portal**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
@@ -94,7 +95,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 ### Step 2 Remove suspicious email forwarding addresses
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 2. Go to **Users** \> **Active users**. Find the user account in question, and select the user (row) without selecting the checkbox.
 
@@ -123,7 +124,7 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!IMPORTANT]
 > You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> and go to **Users** \> **Active users**.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and go to **Users** \> **Active users**.
 
 2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
@@ -147,12 +148,12 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!NOTE]
 > Administrative role group membership can be restored after the account has been secured.
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> with a global administrator account and do the following steps:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> with a global administrator account and do the following steps:
    1. Go to **Users** \> **Active users**.
    2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-2. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and do the following steps:
+2. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and do the following steps:
    1. Go to **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
    2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
       1. In the **Members** section, click **Edit**.
