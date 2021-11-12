@@ -52,7 +52,7 @@ To get these preconfigured labels and policies:
     
     :::image type="content" alt-text="Microsoft Information Protection activation for preconfigured labels and policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
-    If you don't see this option, you're not eligible for the automatic creation of sensitivity labels and policies. However, you can use the settings information that follows to manually create the same labels and policies.
+    If you don't see this information displayed, you're not eligible for the automatic creation of sensitivity labels and policies. However, you can use the settings details that follows to manually create the same labels and policies.
 
 ## Default sensitivity labels
 
