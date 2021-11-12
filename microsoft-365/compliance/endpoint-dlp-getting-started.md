@@ -43,6 +43,10 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 
 for full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
 
+### Configure proxy on the Windows 10 or Windows 11 device
+
+If you are onboarding Windows 10 or Windows 11 devices, check to make sure that the device can communicate with the cloud DLP service. For more information see, [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+
 ## Windows 10 and Windows 11 Onboarding procedures
 
 For a general introduction to onboarding Windows devices, see:
