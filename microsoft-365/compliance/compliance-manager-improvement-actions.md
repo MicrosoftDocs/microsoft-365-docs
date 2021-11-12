@@ -74,7 +74,7 @@ You can assign multiple improvement actions to one user by following these steps
 
 ## Update testing source
 
-If needed, you can update the testing source for an improvement action with the **Testing source** dropdown. Options include **manual**, **Automatic**, and **Parent**. 
+If needed, you can update the testing source for an improvement action with the **Testing source** dropdown. Options include **Manual**, **Automatic**, and **Parent**. 
 
 ## Perform work and store documentation
 
