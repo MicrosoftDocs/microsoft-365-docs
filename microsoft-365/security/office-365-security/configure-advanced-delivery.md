@@ -14,7 +14,7 @@ search.appverid:
   - MET150
 ms.collection:
   - M365-security-compliance
-ms.custom:
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to use the advanced delivery policy in Exchange Online Protection (EOP) to identify messages that should not be filtered in specific supported scenarios (third-party phishing simulations and messages delivered to security operations (SecOps) mailboxes.
 ms.technology: mdo
 ms.prod: m365-security

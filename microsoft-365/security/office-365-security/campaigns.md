@@ -17,6 +17,7 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Learn about Campaign Views in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security

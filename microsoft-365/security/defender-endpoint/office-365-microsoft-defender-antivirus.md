@@ -11,7 +11,9 @@ audience: ITPro
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
+ms.custom: 
+- nextgen
+- admindeeplinkDEFENDER
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde

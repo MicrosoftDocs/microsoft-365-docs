@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to create custom payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
