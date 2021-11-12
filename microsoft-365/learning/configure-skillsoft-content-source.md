@@ -42,6 +42,3 @@ You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for
 3. Fill in the configuration details you got from your Skillsoft account team.
 
 4. Select **Save** to save the configuration details and complete the setup process.
-
->[!NOTE]
->Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
