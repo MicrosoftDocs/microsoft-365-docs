@@ -41,8 +41,6 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 > [!TIP]
 > You might be eligible for the automatic creation of default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
-> 
-> Even if you're not eligible for this automatic creation, you can use the configuration information from the article to manually create the same labels and label policy.
 
 The basic flow for deploying and applying sensitivity labels:
 
