@@ -27,7 +27,20 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ### Continuous compliance assessment (CCA)
 
-We're adding automated testing and evidence generation for over 40 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment (CCA), you can see updates about which of these actions you've completed if they're relevant for your compliance assessments. CCA also gives your admins visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment (CCA), you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. CCA also gives your admins visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
+
+### Zero Trust integration for the Data Protection Baseline template
+
+Zero Trust is a proactive, integrated approach to security across all layers of the digital estate that explicitly and continuously verifies every transaction, asserts least privilege, and relies on intelligence, advanced detection, and real-time response to threats. Compliance Manager's Data Protection Baseline template, included for all users, now integrates 57 new controls and 36 new actions for Zero Trust aligned across the following control families:
+
+- Zero Trust Application
+- Zero Trust App development guidance
+- Zero Trust Endpoint
+- Zero Trust Data
+- Zero Trust Identity
+- Zero Trust Infrastructure
+- Zero Trust Network
+- Zero Trust Visibility, automation, and orchestration
 
 ### New preview templates
 
