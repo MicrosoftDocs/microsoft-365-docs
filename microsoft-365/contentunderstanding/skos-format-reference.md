@@ -249,7 +249,7 @@ If the custom property for a [Term](/dotnet/api/microsoft.sharepoint.taxonomy.te
 
 The syntax to define this is:
 
-``` SKOS
+```SKOS
 ex:CustomProp2    rdf:type sharepoint-taxonomy:SharedCustomPropertyForTerm;
     sharepoint-taxonomy:propertyName “Length”.
 

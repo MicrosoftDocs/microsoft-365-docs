@@ -53,7 +53,7 @@ When you've decided whether to use an adaptive or static scope, use the followin
 
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
-| Adaptive scope type | Attributes or properties supported |
+| Adaptive scope type | Attributes or properties supported include |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
@@ -63,6 +63,11 @@ The property names for sites are based on SharePoint site managed properties, an
 
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
+
+The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
+
+> [!TIP]
+> For additional information about using the advanced query builder, see the following webinar: [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 
 A single policy for retention can have one or many adaptive scopes.
 
@@ -115,6 +120,12 @@ Before you configure your adaptive scope, use the previous section to identify w
     - **notlike** (string comparison
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
+    
+    > [!TIP]
+    > You must use the advanced query builder if you want to exclude inactive mailboxes. Or conversely, target just inactive mailboxes. For this configuration, use the OPATH property *IsInactiveMailbox*:
+    > 
+    > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
+    > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
 
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
@@ -185,7 +196,7 @@ To use the optional configuration to scope your retention settings, make sure th
 
 ## Locations
 
-Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites.
+Locations in policies for retention identify specific Microsoft 365 services that support retention settings, such as Exchange email and SharePoint sites. Use the following section for the locations that have configuration details and possible exceptions that you need to be aware of when you select them for your policy.
 
 ### Configuration information for Exchange email and Exchange public folders
 
@@ -193,9 +204,17 @@ The **Exchange email** location supports retention for users' email, calendar, a
 
 Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead.
 
-When you use a static policy scope and apply the retention settings to **All recipients**, any [inactive mailboxes](create-and-manage-inactive-mailboxes.md) are included. However, if you change this default and configure [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions), inactive mailboxes aren't supported and retention settings can't be applied or excluded for those mailboxes.
+Depending on your policy configuration, [inactive mailboxes](create-and-manage-inactive-mailboxes.md) might be included or not:
 
-If you do choose recipients to include or exclude with a static policy scope, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated.
+- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
+
+- Adaptive policy scopes, by default, include inactive mailboxes when they meet the scope's query. You can exclude them by using the advanced query builder and the OPATH property *IsInactiveMailbox*:
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+If you use a static policy scope and choose recipients to include or exclude, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated, unlike adaptive policy scopes.
 
 For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
@@ -211,7 +230,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 ### Configuration information for SharePoint sites and OneDrive accounts
 
-When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
+When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Unless you are using [adaptive policy scopes](#exceptions-for-adaptive-policy-scopes), Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
 For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
 
@@ -225,6 +244,12 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 > Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
 > 
 > Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with the **User** scope type are better suited for this purpose.
+
+#### Exceptions for adaptive policy scopes
+
+When you configure a policy for retention that uses adaptive policy scopes and select the **SharePoint sites** location:
+
+- OneDrive sites and Microsoft 365 group-connected sites are included in addition to SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites.
 
 ### Configuration information for Microsoft 365 Groups
 
@@ -249,6 +274,16 @@ To return to the default value of both the mailbox and SharePoint site for the s
 When you configure an auto-apply policy that uses sensitive information types and select the **Microsoft 365 Groups** location:
 
 - Microsoft 365 group mailboxes aren't included. To include these mailboxes in your policy, select the **Exchange email** location instead.
+
+#### What happens if a Microsoft 365 group is deleted after a policy is applied
+
+After you've applied a policy for retention to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
+
+- The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
+    
+    At this point, you can't exclude the site from the Microsoft 365 Groups location, because you can't specify the deleted group. If you need to release the retention policy from this site, contact Microsoft Support. For example, open a [service request in the Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/support).
+
+- The mailbox for the deleted group becomes inactive and like the SharePoint site, remains subject to retention settings. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### Configuration information for Skype for Business
 
@@ -278,9 +313,9 @@ By choosing the settings for retaining and deleting content, your policy for ret
 
 ### Retaining content for a specific period of time
 
-When you configure a policy to retain content, you choose to retain items for a specific number of days, months, or years. Or alternatively, retain the items forever. The retention period is calculated from the age of the content, not from when the retention policy is applied.
+When you configure a retention label or policy to retain content, you choose to retain items for a specific number of days, months, or years. Or alternatively, retain the items forever. The retention period is not calculated from the time the policy was assigned, but according to the start of the retention period specified.
 
-For the start of the retention period, you can also choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified.
+For the start of the retention period, you can choose when the content was created or, supported only for files and the SharePoint, OneDrive, and Microsoft 365 Groups, when the content was last modified. For retention labels, you can start the retention period from the content was labeled, and when an event occurs.
 
 Examples:
 
@@ -296,7 +331,7 @@ At the end of the retention period, you choose whether you want the content to b
 
 A policy for retention can retain and then delete items, or delete old items without retaining them.
 
-In both cases, if your policy deletes items, it's important to understand that the time period you specify is calculated from the time when the item was created or modified, and not from the time the policy was assigned.
+In both cases, if your policy deletes items, it's important to understand that the time period you specify is not calculated from the time the policy was assigned, but according to the start of the retention period specified. For example, from the time when the item was created or modified, or labeled.
 
 For this reason, first consider the age of the existing content and how the policy may impact that content. You might also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact.
 

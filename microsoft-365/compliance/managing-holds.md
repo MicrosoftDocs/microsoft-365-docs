@@ -60,7 +60,7 @@ To create a non-custodial hold for an Advanced eDiscovery case:
 4. On the **Holds** tab, click **Create**.
   
 5. On the **Name your hold** page, give the hold a name. The name of the hold must be unique in your organization.
- 
+
 6. (Optional) In the **Description** box, add a description of the hold.
   
 7. Click **Next**.
@@ -68,7 +68,7 @@ To create a non-custodial hold for an Advanced eDiscovery case:
 8. Choose the content locations that you want to place on hold. You can place mailboxes, sites, and public folders on hold.
 
    1. **Exchange email** - Click **Choose users, groups, or teams** and then click **Choose users, groups, or teams** again to specify mailboxes to place on hold. Use the search box to find user mailboxes and distribution groups (to place a hold on the mailboxes of group members) to place on hold. You can also place a hold on the associated mailbox for an Microsoft 365 Group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
- 
+
       > [!NOTE]
       > When you click **Choose users, groups, or teams** to specify mailboxes to place on hold, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
 
@@ -82,7 +82,7 @@ To create a non-custodial hold for an Advanced eDiscovery case:
 9. When you're done adding content locations to the hold, click **Next**.
   
 10. To create a query-based hold with conditions, complete the following. Otherwise, just click **Next**.
-    
+
     - In the box under **Keywords**, type a search query in the box so that only the content that meets the search criteria is placed on hold. You can specify keywords, message properties, or document properties, such as file names. You can also use more complex queries that use a Boolean operator, such as AND, OR, or NOT. If you leave the keyword box empty, then all content located in the specified content locations will be placed on hold.
 
     - Click  **Add** conditions to add one or more conditions to narrow the search query for the hold. Each condition adds a clause to the KQL search query that is created and run when you create the hold. For example you can specify a date range so that email or site documents that were created within the date ranged are placed on hold. A condition is logically connected to the keyword query (specified in the keyword box) by the AND operator. That means that items have to satisfy both the keyword query and the condition to be placed on hold.
@@ -101,7 +101,7 @@ Keep the following things in mind about hold statistics:
 
 - The total number of items on hold indicates the number of items from all content sources that are placed on hold. If you've created a query-based hold, this statistic indicates the number of items that match the query.
   
-- The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md). 
+- The number of items on hold also includes unindexed items found in the content locations. Note that if you create a query-based hold, all unindexed items in the content locations are placed on hold. This includes unindexed items that don't match the search criteria of a query-based hold and unindexed items that might fall outside of a date range condition. This is different than what happens when you run a Content Search, in which unindexed items that don't match the search query or are excluded by a date range condition aren't included in the search results. For more information about unindexed items, see [Partially indexed items in Content Search in Office 365](partially-indexed-items-in-content-search.md).
 
 - You can get the latest hold statistics by clicking Update statistics to re-run a search estimate that calculates the current number of items on hold.
 
@@ -116,10 +116,10 @@ Keep the following things in mind about hold statistics:
 Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold in Advanced eDiscovery is very similar.
 
 - **How do I map an additional Microsoft 365 Groups or Microsoft Teams site to a custodian? And what about placing a non-Custodial hold on Microsoft 365 Groups and Microsoft Teams?** Microsoft Teams are built on Microsoft 365 Groups. Therefore, placing them on hold in an eDiscovery case is very similar. Keep the following things in mind when placing Microsoft 365 Groups and Microsoft Teams on hold.
+
   - To place content located in Microsoft 365 Groups and Microsoft Teams on hold, you have to specify the mailbox and SharePoint site that associated with a group or team.
   
   - Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for an Microsoft 365 Group or Microsoft Team. This is a good way to get the URL for the site that's associated with an Microsoft 365 Group or a Microsoft Team. For example, the following command displays selected properties for an Microsoft 365 Group named Senior Leadership Team:
-
 
     ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -132,22 +132,21 @@ Microsoft Teams are built on Office 365 Groups. Therefore, placing them on hold 
     > [!NOTE]
     > To run the Get-UnifiedGroup cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role.
 
- - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place an Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you the need to place an Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in Advanced eDiscovery). If the Microsoft 365 Group or Microsoft Team is not attributable to a single custodian, consider adding the source to a non-custodial hold. 
- 
- - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+  - When a user's mailbox is searched, any Microsoft 365 Group or Microsoft Team that the user is a member of won't be searched. Similarly, when you place an Microsoft 365 Group or Microsoft Team hold, only the group mailbox and group site are placed on hold; the mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them as custodians or place their data sources hold. Therefore, if you the need to place an Microsoft 365 Group or Microsoft Team on hold for a specific custodian, consider mapping the group site and group mailbox to the custodian (See Managing Custodians in Advanced eDiscovery). If the Microsoft 365 Group or Microsoft Team is not attributable to a single custodian, consider adding the source to a non-custodial hold.
+  - To get a list of the members of a Microsoft 365 Group or Microsoft Team, you can view the properties on the **Home** > [**Groups**](https://go.microsoft.com/fwlink/p/?linkid=2052855) page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
 
-   ```powershell
-   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
-   ```
+    ```powershell
+    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
+    ```
 
     > [!NOTE]
     > To run the **Get-UnifiedGroupLinks** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role.
 
-- Channel conversations that are part of a Microsoft Teams channel are stored in the mailbox that's associated with the Team. Similarly, files that team members share in a channel are stored on the team's SharePoint site. Therefore, you have to place the Microsoft Team mailbox and SharePoint site on hold to retain conversations and files in a channel.
+  - Channel conversations that are part of a Microsoft Teams channel are stored in the mailbox that's associated with the Team. Similarly, files that team members share in a channel are stored on the team's SharePoint site. Therefore, you have to place the Microsoft Team mailbox and SharePoint site on hold to retain conversations and files in a channel.
   
-- Alternatively, conversations that are part of the Chat list in Microsoft Teams are stored in the mailbox of the user's who participate in the chat.  Files that a user shares in Chat conversations are stored in the OneDrive for Business site of the user who shares the file. Therefore, you have to place the individual user mailboxes and OneDrive for Business sites on hold to retain conversations and files in the Chat list. 
+  - Alternatively, conversations that are part of the Chat list in Microsoft Teams are stored in the mailbox of the user's who participate in the chat.  Files that a user shares in Chat conversations are stored in the OneDrive for Business site of the user who shares the file. Therefore, you have to place the individual user mailboxes and OneDrive for Business sites on hold to retain conversations and files in the Chat list.
   
-- Every Microsoft Team or team channel contains a Wiki for note-taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can place the content in the Wiki on hold by placing the team's SharePoint site on hold.
+  - Every Microsoft Team or team channel contains a Wiki for note-taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can place the content in the Wiki on hold by placing the team's SharePoint site on hold.
 
-  > [!NOTE]
-  > The capability to retain Wiki content for a Microsoft Team or team channel (when you place the team's SharePoint site on hold) was released on June 22, 2017. If a team site is on hold, the Wiki content will be retained starting on that date. However, if a team site is on hold and the Wiki content was deleted before June 22, 2017, the Wiki content was not retained.
+    > [!NOTE]
+    > The capability to retain Wiki content for a Microsoft Team or team channel (when you place the team's SharePoint site on hold) was released on June 22, 2017. If a team site is on hold, the Wiki content will be retained starting on that date. However, if a team site is on hold and the Wiki content was deleted before June 22, 2017, the Wiki content was not retained.

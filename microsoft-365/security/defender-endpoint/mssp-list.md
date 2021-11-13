@@ -2,8 +2,6 @@
 title: Supported managed security service providers
 description: See the list of MSSPs that Microsoft Defender for Endpoint integrates with
 keywords: managed security service provider, mssp, configure, integration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +43,7 @@ Logo |Partner name   | Description
 ![Image of expel logo.](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel helps your security keep up by detecting security risks in Microsoft Defender Endpoint.
 ![Image of Mandiant logo.](images/mandiant-logo.png) | [Mandiant Managed Defense (MDR) for Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2164352) | Fortify your Defender for Endpoint with 24/7 frontline MDR intelligence and expertise from Mandiant.
 ![Image of NTT Security logo.](images/ntt-logo.png)| [NTT Security](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT's EDR Service provides 24/7 security monitoring & response across your endpoint and network
-![Image of OneVinn logo.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Managed Detection and Response built on Microsoft Defender and Azure Sentinel, enriched with Onevinn's threat intelligence.
+![Image of OneVinn logo.](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Managed Detection and Response built on Microsoft 365 Defender and Azure Sentinel, enriched with Onevinn's threat intelligence.
 ![Image of Quorum Cyber logo.](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| A cutting-edge Threat Hunting & Security Engineering service.
 ![Image of Red Canary logo.](images/redcanary-logo.png)| [Red Canary](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary is a security operations partner for modern teams, MDR deployed in minutes
 ![Image of SecureWorks Managed Detection and Response Powered by Red Cloak logo.](images/secureworks-logo.png)| [SecureWorks Managed Detection and Response Powered by Red Cloak](https://go.microsoft.com/fwlink/?linkid=2133634) | Secureworks combines threat intelligence and 20+ years of experience into SaaS and managed security solutions
