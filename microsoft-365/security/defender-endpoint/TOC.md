@@ -31,38 +31,55 @@
 #### [Deployment rings](deployment-rings.md)
 #### [Onboarding using Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
-#### [Onboard supported devices](onboard-configure.md)
 
 ## [Migration guides](migration-guides.md)
 ### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
 #### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
+
+
+
 ### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
 #### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
 #### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
 #### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+#### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
+### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
+
+
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
-#### [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md)
-#### [Onboard previous versions of Windows](onboard-downlevel.md)
-#### [Onboard Windows 10 devices]()
-##### [Onboarding tools and methods](configure-endpoints.md)
-##### [Onboard devices using Group Policy](configure-endpoints-gp.md)
-##### [Onboard devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-##### [Onboard devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-##### [Onboard devices using a local script](configure-endpoints-script.md)
-##### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
-##### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](Onboard-Windows-10-multi-session-device.md)
-#### [Onboard Windows servers](configure-server-endpoints.md)
+#### [Onboarding tools and methods for Windows endpoints](configure-endpoints.md)
+#### [Onboard Windows devices and Windows Servers]()
+
+##### [Onboard previous versions of Windows](onboard-downlevel.md)
+
+
+##### [Onboard Windows devices and Windows Servers]()
+###### [Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022](configure-server-endpoints.md)
+###### [Onboard Windows devices using a local script](configure-endpoints-script.md)
+###### [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
+###### [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+###### [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+###### [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+###### [Onboard Windows 10 multi-session devices in Windows Virtual Desktop](onboard-windows-multi-session-device.md)
+
+
+
+
+#### [Integration with Azure Defender](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](run-detection-test.md)
 #### [Run simulated attacks on devices](attack-simulations.md)
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
+
+#### [Application license terms](mde-terms-windows.md)
+
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
@@ -103,23 +120,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-
-
-#### [Microsoft Defender for Endpoint on iOS]()
-##### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-##### [What's New](ios-whatsnew.md)
-
-##### [Deploy]()
-###### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
-###### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
-
-##### [Configure]()
-###### [Configure iOS features](ios-configure-features.md)
-
-##### [FAQs and Troubleshooting](ios-troubleshoot.md)
-
-##### [Privacy](ios-privacy.md)
-
+##### [Application license terms](mde-terms-mac.md)
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -145,30 +146,56 @@
 ###### [Troubleshoot installation issues](linux-support-install.md)
 ###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
+###### [Troubleshoot RHEL 6 installation issues](linux-support-rhel.md)
 ###### [Troubleshoot performance issues](linux-support-perf.md)
 ###### [Troubleshoot missing events issues](linux-support-events.md)
 
 ##### [Privacy](linux-privacy.md)
 ##### [Resources](linux-resources.md)
 
-#### [Microsoft Defender for Endpoint on Android]()
-##### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+#### [Mobile Threat Defense]()
+##### [Mobile Threat Defense Overview](mtd.md)
 
-##### [Deploy]()
-###### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
+##### [Microsoft Defender for Endpoint on Android]()
+###### [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
+###### [What's new](android-whatsnew.md)
 
-##### [Configure]()
-###### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+###### [Deploy]()
+####### [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 
-##### [Privacy]()
-###### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
+###### [Configure]()
+####### [Configure Microsoft Defender for Endpoint on Android features](android-configure.md)
+####### [Configure Microsoft Defender for Endpoint risk signals using app protection policy](android-configure-mam.md)
 
-##### [Troubleshoot]()
-###### [Troubleshoot issues](android-support-signin.md)
+###### [Privacy]()
+####### [Microsoft Defender for Endpoint on Android - Privacy information](android-privacy.md)
+
+###### [Troubleshoot]()
+####### [Troubleshoot issues](android-support-signin.md)
+
+##### [Microsoft Defender for Endpoint on iOS]()
+###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
+###### [What's New](ios-whatsnew.md)
+
+###### [Deploy]()
+####### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
+####### [Deploy Microsoft Defender for Endpoint on iOS for unenrolled devices](ios-install-unmanaged.md)
+
+###### [Configure iOS features](ios-configure-features.md)
+
+###### [FAQs and Troubleshooting](ios-troubleshoot.md)
+
+###### [Privacy](ios-privacy.md)
+
+##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
+
+### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
 ### [Troubleshoot onboarding issues]()
 #### [Troubleshoot issues during onboarding](troubleshoot-onboarding.md)
 #### [Troubleshoot subscription and portal access issues](troubleshoot-onboarding-error-messages.md)
+#### [Troubleshoot security configuration management onboarding issues](troubleshoot-security-config-mgt.md)
+
 
 
 
@@ -244,6 +271,7 @@
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Attack surface reduction rules](attack-surface-reduction-rules.md)
+#### [Deploy attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -322,9 +350,6 @@
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Hardware-based isolation]()
-##### [Hardware-based isolation in Windows 10](overview-hardware-based-isolation.md)
-
 #### [Exploit protection]()
 ##### [Protect devices from exploits](exploit-protection.md)
 ##### [Exploit protection evaluation](evaluate-exploit-protection.md)
@@ -353,8 +378,6 @@
 ##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
-
-##### [Control USB devices and other removable media](control-usb-devices-using-intune.md)
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
 ##### [Removable Storage Access Control](device-control-removable-storage-access-control.md)
 ##### [Device Installation](mde-device-control-device-installation.md)
@@ -461,6 +484,7 @@
 
 
 ## Reference
+### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
 #### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
@@ -474,7 +498,7 @@
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
-###### [Get partner application access](exposed-apis-create-app-partners.md)
+
 
 
 ##### [Microsoft Defender for Endpoint APIs Schema]()
@@ -623,13 +647,9 @@
 
 
 #### [SIEM integration]()
-##### [Understand threat intelligence concepts](threat-indicator-concepts.md)
-##### [Learn about different ways to pull detections](configure-siem.md)
-##### [Enable SIEM integration](enable-siem-integration.md)
-##### [Configure Micro Focus ArcSight to pull detections](configure-arcsight.md)
+##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
 ##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
-##### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -644,19 +664,24 @@
 ###### [Using device groups](machine-groups.md)
 ###### [Create and manage device tags](machine-tags.md)
 
-#### [Managed security service provider (MSSP) integration]()
-##### [Configure managed security service provider integration](configure-mssp-support.md)
-##### [Supported managed security service providers](mssp-list.md)
-##### [Grant MSSP access to the portal](grant-mssp-access.md)
-##### [Access the MSSP customer portal](access-mssp-portal.md)
-##### [Configure alert notifications](configure-mssp-notifications.md)
-##### [Get partner application access](exposed-apis-create-app-partners.md)
 
+
+
+
+
+
+### [Managed security service provider (MSSP) integration]()
+#### [Configure managed security service provider integration](configure-mssp-support.md)
+#### [Supported managed security service providers](mssp-list.md)
+#### [Grant MSSP access to the portal](grant-mssp-access.md)
+#### [Access the MSSP customer portal](access-mssp-portal.md)
+#### [Configure alert notifications](configure-mssp-notifications.md)
+#### [Get partner application access](exposed-apis-create-app-partners.md)
+#### [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
+#### [Managed security service provider opportunity](mssp-support.md)
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
-#### [Managed security service provider opportunity](mssp-support.md)
 #### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
-
 ### [Integrations]()
 #### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)

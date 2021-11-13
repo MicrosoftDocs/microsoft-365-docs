@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: v-maave
 author: martyav
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article

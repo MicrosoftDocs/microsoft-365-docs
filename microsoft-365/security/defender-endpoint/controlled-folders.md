@@ -2,12 +2,11 @@
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
@@ -17,6 +16,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Protect important folders with controlled folder access
@@ -31,7 +31,7 @@ ms.topic: how-to
 
 ## What is controlled folder access?
 
-Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019 and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
+Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
 
 > [!NOTE]
 > Scripting engines are not trusted and you cannot allow them access to controlled protected folders. For example, PowerShell is not trusted by controlled folder access, even if you allow with [certificate and file indicators](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -49,7 +49,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Security Center Console. 
 
 ## Why controlled folder access is important
 
@@ -62,7 +62,9 @@ You can use [audit mode](audit-windows-defender.md) to evaluate how controlled f
 Controlled folder access is supported on the following versions of Windows:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) and later
+- Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- Windows Server 2022
 
 ## Windows system folders are protected by default
 
@@ -110,22 +112,19 @@ You can review the Windows event log to see events that are created when control
 
 The following table shows events related to controlled folder access:
 
-<br>
-
-****
+<br/><br/>
 
 |Event ID|Description|
 |---|---|
 |5007|Event when settings are changed|
 |1124|Audited controlled folder access event|
 |1123|Blocked controlled folder access event|
-|
 
 ## View or change the list of protected folders
 
 You can use the Windows Security app to view the list of folders that are protected by controlled folder access.
 
-1. On your Windows 10 device, open the Windows Security app.
+1. On your Windows 10 or Windows 11 device, open the Windows Security app.
 2. Select **Virus & threat protection**.
 3. Under **Ransomware protection**, select **Manage ransomware protection**.
 4. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.

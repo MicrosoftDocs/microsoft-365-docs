@@ -1,13 +1,12 @@
 ---
-title: Microsoft Defender Offline in Windows 10
+title: Microsoft Defender Offline in Windows
 description: You can use Microsoft Defender Offline straight from the Windows Defender Antivirus app. You can also manage how it is deployed in your network.
 keywords: scan, defender, offline
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Run and review the results of a Microsoft Defender Offline scan
@@ -30,13 +30,13 @@ Microsoft Defender Offline is an antimalware scanning tool that lets you boot an
 
 You can use Microsoft Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
 
-In Windows 10, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
+In Windows 10 and Windows 11, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 ## prerequisites and requirements
 
-Microsoft Defender Offline in Windows 10 has the same hardware requirements as Windows 10.
+Microsoft Defender Offline in Windows 10 and Windows 11 has the same hardware requirements as Windows 10.
 
-For more information about Windows 10 requirements, see the following topics:
+For more information about Windows 10 and Windows 11 requirements, see the following topics:
 
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 

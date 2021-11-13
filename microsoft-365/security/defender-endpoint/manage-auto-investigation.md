@@ -2,20 +2,19 @@
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
 keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: JoeDavies-MSFT
 ms.author: josephd
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
@@ -57,7 +56,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review pending actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **Pending** tab.
 4. Select an action to open its flyout pane.
@@ -69,7 +68,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review completed actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **History** tab.
 4. Select an item to view more details about that remediation action.

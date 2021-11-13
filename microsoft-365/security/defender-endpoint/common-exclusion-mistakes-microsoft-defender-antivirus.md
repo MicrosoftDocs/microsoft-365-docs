@@ -2,12 +2,11 @@
 title: Common mistakes to avoid when defining exclusions
 description: Avoid common mistakes when defining exclusions for Microsoft Defender Antivirus scans.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,7 +14,8 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 10/19/2021
+ms.collection: M365-security-compliance
 ---
 
 # Common mistakes to avoid when defining exclusions

@@ -2,13 +2,12 @@
 title: Manage submissions
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
-ms.date: 
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.collection: 
@@ -16,6 +15,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
 ms.technology: mdo
 ms.prod: m365-security
@@ -55,11 +55,16 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - Admins can submit messages as old as 30 days if it is still available in the mailbox and not purged by the user or another admin.
 
+- Admin submissions are throttled at the following rates:
+  - Maximum submissions in any 15 minutes period: 150 submissions
+  - Same submissions in a 24 hour period: 3 submissions
+  - Same submissions in a 15 minute period: 1 submissions
+  
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
@@ -120,9 +125,12 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 > [!div class="mx-imgBorder"]
 > ![New Attachment submission example.](../../media/submission-file-flyout.png)
 
+> [!NOTE]
+> If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
+
 ## View admin submissions to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected.
 
@@ -185,7 +193,7 @@ If an override was found, the rescan should complete in several minutes. If ther
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 

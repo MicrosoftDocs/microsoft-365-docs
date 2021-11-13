@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -32,7 +32,10 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> The majority of the reports that are described in this topic are available in the Exchange admin center (EAC). For more information, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports). The [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report) is available in the Microsoft 365 Defender portal.
+> Most of the reports in this article are available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
+>
+> - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
+> - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
 
 In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
 
@@ -42,57 +45,8 @@ If you have the [necessary permissions](#what-permissions-are-needed-to-view-the
 
 ## Connector report
 
-The **Connector report** shows mail flow activity on the [inbound and outbound connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) that are configured for your organization.
-
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Connector report**. To go directly to the report, open <https://protection.office.com/reportv2?id=ConnectorReport>.
-
-![Connector report widget in the Reports dashboard.](../../media/connector-report-widget.png)
-
-### Report view for the Connector report
-
-The following charts are available in report view:
-
-- **View data by: Mail flow**: This chart shows the number of inbound and outbound messages organized by:
-
-  - **Total**
-  - **From the internet without a connector**
-  - **To the internet without a connector**
-  - A specific connector that you've configured.
-
-  To isolate the data in the chart, use the **Show data for** control to select one of these options or **All mail flow**.
-
-  ![View data by mail flow in the Connector report.](../../media/connector-report-view-data-by-mail-flow.png)
-
-- **View data by: TLS usage**: This chart shows the percentage of Transport Layer Security (TLS) version usage for mail flow.
-
-  To isolate the data in the chart, use the **Show data for** control to select one of the following options:
-
-  - **All mail flow**
-  - **From the internet without a connector**
-  - **To the internet without a connector**
-  - A specific connector that you've configured.
-
-  ![View data by TLS usage in the Connector report.](../../media/connector-report-view-data-by-tls-usage.png)
-
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
-
-### Details table view for the Connector report
-
-If you click **View details table** in a report view, the following information is shown:
-
-- **Date**
-- **Connector direction and name**
-- **Connector type**
-- **Forced TLS?**: The value **True** or **False**.
-- **No TLS** (percentage)
-- **TLS 1.0** (percentage)
-- **TLS 1.1** (percentage)
-- **TLS 1.2** (percentage)
-- **Volume**: The number of messages.
-
-If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> This report has been replaced by the **Inbound messages report** and the **Outbound messages report** in the EAC. For more information, see [Inbound messages and Outbound messages reports in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-inbound-messages-and-outbound-messages-reports).
 
 ## Exchange transport rule report
 
@@ -165,51 +119,8 @@ To go back to the report view, click **View report**.
 
 ## Forwarding report
 
-The **Forwarding report** shows your organization's automatically forwarded messages to external domains from Exchange Online mailboxes. Forwarded messages can pose a security or compliance risk, and might indicate a compromised account.
-
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Forwarding report**. To go directly to the report, open <https://protection.office.com/reportv2?id=MailFlowForwarding>.
-
-![Forwarding report widget in the Reports dashboard.](../../media/forwarding-report-widget.png)
-
-### Report view for the Forwarding report
-
-The following charts are available in the report view:
-
-- **Show data for: Forwarding methods**: The following methods are shown:
-
-  - **Transport rule**: Also known as [mail flow rules](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
-  - **Mailbox rule**: Also known as [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
-
-  ![Forwarding methods view in the Forwarding report.](../../media/forwarding-report-forwarding-methods.png)
-
-- **Show data for: Forwarding domains**: This view shows the recipient domains that are the destinations for forwarding.
-
-  ![Forwarding domains view in the Forwarding report.](../../media/forwarding-report-forwarding-domains.png)
-
-- **Show data for: Forwarders**: The following forwarders are shown:
-
-  - **Transport rule**
-  - The mailbox that contains the forwarding Inbox rule.
-
-  ![Forwarders view in the Forwarding report.](../../media/forwarding-report-forwarders.png)
-
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
-
-### Details table view for the Forwarding report
-
-If you click **View details table** in a report view, the following information is shown:
-
-- **Forwarders**: The value **Transport rule** or the mailbox that contains the forwarding Inbox rule.
-- **Forwarding type**: The value **Mailbox rule** or **Transport rule**.
-- **Recipient name**
-- **Recipient domain**
-- **Details**: This is the GUID value of the mail flow rule, or the RuleIdentity value of the Inbox rule.
-- **Count**
-- **First forward date**
-
-If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
-
-To go back to the reports view, click **View report**.
+> [!NOTE]
+> The **Forwarding report** is now available in the EAC. For more information, see [Auto forwarded messages report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report).
 
 ## Mailflow status report
 
@@ -420,65 +331,8 @@ Each exported .csv file is limited to 150,000 rows. If the data contains more th
 
 ## Sent and received email report
 
-The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report) is: this report doesn't include data about messages blocked by edge protection.
-
-**Note**: It's important to understand that if a message is sent to five recipients we count it as one message.
-
-The aggregate view and the detail view of the report allow for 90 days of filtering.
-
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Sent and received email**. To go directly to the report, open <https://protection.office.com/reportv2?id=SentAndReceivedMailATP>.
-
-![Sent and received email widget in the Reports dashboard.](../../media/sent-and-received-email-report-widget.png)
-
-### Report view for the Sent and received email report
-
-The following charts are available in the report view:
-
-- **Break down by: Type**: The chart shows all available categories:
-
-  - **Total**
-  - **Good mail**
-  - **Malware (anti-malware)** (EOP)
-  - **Spam detections**
-  - **Rule messages**
-  - **Advanced malware** (Microsoft Defender for Office 365)
-
-  When you hover over a day (data point) in the chart, you can see details for that day.
-
-  ![Type view in the Sent and received email report.](../../media/sent-and-received-email-report-type-view.png)
-
-- **Break down by: Direction**: The chart shows **Total**, **Inbound**, and **Outbound** data. When you hover over a day (data point) in the chart, you can see details for that day.
-
-  ![Direction view in the Sent and received email report.](../../media/sent-and-received-email-report-direction-view.png)
-
-- **Drill down by** \> **Malware (anti-malware)**: This selection takes you to the [Malware detections report](view-email-security-reports.md#malware-detections-report).
-
-- **Drill down by** \> **Spam detections)**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
-
-If you click **Filters** in a report view, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Direction values
-- Type values
-
-To go back to the report view, click **View report**.
-
-### Details table view for the Sent and received email report
-
-If you click **View details table** in the **Break down by: Direction** or **Break down by: Direction** view, the following information is shown:
-
-- **Date (UTC)**
-- **Type**
-- **Direction**
-- **Message count**
-
-If you click **Filters** in a details table view, you can modify the results with the following filters:
-
-- **Start date** and **End date**
-- Direction values
-- Type values
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> This report has been replaced by the [Mailflow status report](#mailflow-status-report).
 
 ## Top senders and recipients report
 

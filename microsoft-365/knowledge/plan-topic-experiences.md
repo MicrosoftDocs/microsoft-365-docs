@@ -1,15 +1,15 @@
 ---
-title: "Plan for Microsoft Viva Topics"
+title: Plan for Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to plan for Plan for Microsoft Viva Topics"
+ms.localizationpriority:  medium
+description: Learn how to plan for Microsoft Viva Topics.
 ---
 
 # Plan for Microsoft Viva Topics
@@ -36,6 +36,9 @@ Keep in mind that Viva Topics needs access to the sites and files that your user
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
 All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
+
+> [!Important] 
+> Topics will only crawl English content.
 
 ## Topic discovery
 
@@ -66,9 +69,7 @@ We recommend you create a process for users or knowledge managers to request ind
 
 ### Multi-geo
 
-If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
-
-All processing and storage of content is done in the central location.
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), Viva Topics respects data sovereignty by ensuring topics data is always stored in the correct geo location. The topic center is provisioned in the central location and content from all geo locations is processed there. The resulting discovered topics are stored in the same geo location as the source content. If the topic source data moves between geo locations, the corresponding topic properties, such as the description, moves as well.
 
 ## User permissions
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
@@ -81,7 +81,7 @@ The individual fields and values are described in the following table.
 |`SFV:SKQ`|The message was released from the quarantine and was sent to the intended recipients.|
 |`SFV:SKS`|The message was marked as spam prior to being processed by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
 |`SFV:SPM`|The message was marked as spam by spam filtering.|
-|`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as high confidence spam (SCL 9). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
+|`SRV:BULK`|The message was identified as bulk email by spam filtering and the bulk complaint level (BCL) threshold. When the _MarkAsSpamBulkMail_ parameter is `On` (it's on by default), a bulk email message is marked as spam (SCL 6). For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).|
 |`X-CustomSpam: [ASFOption]`|The message matched an Advanced Spam Filter (ASF) setting. To see the X-header value for each ASF setting, see [Advanced Spam Filter (ASF) settings](advanced-spam-filtering-asf-options.md).|
 |
 

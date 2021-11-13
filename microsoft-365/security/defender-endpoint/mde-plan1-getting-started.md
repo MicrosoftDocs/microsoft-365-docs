@@ -7,18 +7,19 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 08/30/2021
+ms.date: 10/01/2021
 ms.prod: m365-security
 ms.technology: mde
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
+ms.collection: M365-security-compliance
 ---
 
 # Get started with Microsoft Defender for Endpoint Plan 1 (preview)
 
 > [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1 (preview). The following sections describe how to get started:
 
@@ -50,7 +51,7 @@ The card provides you with information at a glance, along with a link or button 
 
 ### Navigation bar makes it easy to find alerts, the Action center, and more
 
-The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.
+The navigation bar on the left side of the screen enables you to move easily between incidents, alerts, the Action center, reports, and settings. The following table describes the navigation bar.<br/><br/>
 
 | Navigation bar item | Description |
 |:---|:---|
@@ -71,7 +72,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
 | **Permissions & roles** | Enables you to grant permissions to use the Microsoft 365 Defender portal. Permissions are granted through roles in Azure Active Directory (Azure AD). Select a role, and a flyout pane appears. The flyout contains a link to Azure AD where you can add or remove members in a role group. <br/><br/> To learn more, see [Manage portal access using role-based access control](rbac.md).  |
-| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/overview-security-center.md). |
+| **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal). |
 | **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft 365 compliance center. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]

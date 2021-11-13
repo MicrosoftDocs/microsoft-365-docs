@@ -9,7 +9,7 @@ f1.keywords:
   - NOCSH
 ms.author: tracyp
 author: msfttracyp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -27,7 +27,8 @@ ms.prod: m365-security
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Applies to**
+**Applies to:**
+
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -38,9 +39,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 > [!TIP]
 > Don't have Microsoft Defender for Office 365 yet? [Contact sales to start a trial](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html).
 
-
-
-For more information on what's new with other Microsoft Defender security products see:
+For more information on what's new with other Microsoft Defender security products, see:
 
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-atp.md)
@@ -48,12 +47,19 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 
+## October 2021
+
+- [Advanced Delivery DKIM enhancement](configure-advanced-delivery.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
+- [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
+
 ## September 2021
 
+- [Improved reporting experience in Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/improving-the-reporting-experience-in-microsoft-defender-for/ba-p/2760898)
 - [Quarantine policies](quarantine-policies.md): Admins can configure granular control for recipient access to quarantined messages and customize end-user spam notifications.
   - [Video of admin experience](https://youtu.be/vnar4HowfpY)
   - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
   - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
+- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security and Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## August 2021
 
@@ -72,8 +78,8 @@ For more information on what's new with other Microsoft Defender security produc
   - Form flagged and confirmed as phishing
   - [New alert policies for ZAP](../../compliance/new-defender-alert-policies.md)
 - Microsoft Defender for Office 365 alerts are now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
-- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies. 
-  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender center (Microsoft Defender for Office 365 Plan 2)
+- [User Tags](user-tags.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies.
+  - Tags are also available in the unified alerts queue in the Microsoft 365 Defender portal (Microsoft Defender for Office 365 Plan 2)
 
 ## June 2021
 

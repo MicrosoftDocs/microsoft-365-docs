@@ -2,11 +2,10 @@
 title: View attack surface reduction events
 description: Import custom views to see attack surface reduction events.
 keywords: event view, exploit guard, audit, review, events
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
@@ -14,6 +13,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: m365-security-compliance
 ---
 
 # View attack surface reduction events
@@ -186,4 +186,8 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|5007|Event when settings are changed|
 |Attack surface reduction|Windows Defender (Operational)|1122|Event when rule fires in Audit-mode|
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
-|
+
+>[!NOTE]
+> From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
+>
+> In ASR, Network Protection provides only Audit and Block modes.

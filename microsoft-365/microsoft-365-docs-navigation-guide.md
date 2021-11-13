@@ -10,6 +10,7 @@ ms.topic: conceptual
 author: "samanro"
 ms.author: "samanro"
 manager: pamgreen
+ms.collection: Adm_TOC
 ---
 # Microsoft 365 docs navigation guide
 
@@ -22,14 +23,6 @@ The Microsoft 365 hub page can be found at [https://aka.ms/microsoft365docs](./i
 You can always navigate back to this page by selecting **Microsoft 365** from the header at the top of every page within the Microsoft 365 technical documentation set:
 
 ![Microsoft 365 in header.](media/m365-header-cursor.png)
-
-## Offline documentation
-
-If you would like to view the Microsoft 365 documentation on an offline system, you can create a PDF wherever you are in the Microsoft 365 technical documentation.
-
-If you'd like to create a PDF, select the **Download PDF** link found at the bottom of every table of contents.
-
-![Download PDF.](media/m365-download-pdf-cursor.png)
 
 ## TOC search 
 On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:

@@ -12,12 +12,10 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -41,7 +39,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 |-------------|-----------|-------------|
 | `DeviceId` | string | Unique identifier for the device in the service |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
-| `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.|
+| `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7.|
 | `Timestamp` | datetime | Date and time when the record was generated |
 | `ConfigurationId` | string | Unique identifier for a specific configuration |
 | `ConfigurationCategory` | string | Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls |

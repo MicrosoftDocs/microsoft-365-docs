@@ -1,5 +1,5 @@
 ---
-title: "Migrate Exchange Online data loss prevention policies to Compliance center (preview)"
+title: "Migrate Exchange Online data loss prevention policies to Compliance center"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into Microsoft 365 DLP."
 ---
 
-# Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+# Migrate Exchange Online data loss prevention policies to Compliance center
 
 [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 

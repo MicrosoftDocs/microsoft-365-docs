@@ -7,18 +7,21 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: lovina-saldanha
-ms.author: v-lsaldanha
-ms.reviewer: 
+ms.author: dansimp
+ms.reviewer:
 manager: dansimp
-ms.custom: asr
+ms.custom: 
+- asr
+- admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
-# Report and troubleshoot Microsoft Defender for ATP ASR Rules
+# Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -27,9 +30,9 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-The Microsoft 365 security center is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at <https://security.microsoft.com>.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> is the new interface for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is intended for security admins and security operations teams to better manage and protect their organization. Visit the Microsoft 365 security center at<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
-In Microsoft 365 security center, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
+In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, we offer you a complete look at the current ASR rules configuration and events in your estate. Note that your devices must be onboarded into the Microsoft Defender for Endpoint service for these reports to be populated.
 Here's a screenshot from the Microsoft 365 security center (under **Reports** \> **Devices** \> **Attack surface reduction**). At the device level, select **Configuration** from the **Attack surface reduction rules** pane. The following screen is displayed, where you can select a specific device and check its individual ASR rule configuration.
 
 :::image type="content" source="images/asrrulesnew.png" lightbox="images/asrrulesnew.png" alt-text="ASR rules screen.":::
@@ -54,7 +57,7 @@ With advanced hunting you can shape the queries to your liking, so that you can 
 
 An alternative to advanced hunting, but with a narrower scope, is the Microsoft Defender for Endpoint machine timeline. You can view all the collected events of a device, for the past six months, in the Microsoft 365 Defender, by going to the Machines list, select a given machine, and then click on the Timeline tab.
 
-Pictured below is a screenshot of the Timeline view of these events on a given endpoint.  From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
+Pictured below is a screenshot of the Timeline view of these events on a given endpoint. From this view, you can filter the events list based on any of the Event Groups along the right-side pane. You can also enable or disable Flagged and Verbose events while viewing alerts and scrolling through the historical timeline.
 
 :::image type="content" source="images/mic-sec-def-timelinenew.png" lightbox="images/mic-sec-def-timelinenew.png" alt-text="Microsoft 365 Defender timeline.":::
 
@@ -98,11 +101,11 @@ Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ac
 
 ASR rule events can be viewed within the Windows Defender log.
 
-To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** > **Microsoft** > **Windows** > **Windows Defender** > **Operational**.
+To access it, open Windows Event Viewer, and browse to **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
 :::image type="content" source="images/eventviewerscrnew.png" lightbox="images/eventviewerscrnew.png" alt-text="event viewer scr.":::
 
-## Microsoft Defender Malware Protection Logs
+## Microsoft Defender Antimalware Protection Logs
 
 You can also view rule events through the Microsoft Defender Antivirus dedicated command-line tool, called `*mpcmdrun.exe*`, that can be used to manage and configure, and automate tasks if needed.
 

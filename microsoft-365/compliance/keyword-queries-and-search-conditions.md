@@ -10,7 +10,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.SearchQueryLearnMore'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance

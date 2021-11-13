@@ -1,5 +1,5 @@
 ---
-title: "Set up Microsoft Viva Topics"
+title: Set up Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -8,8 +8,8 @@ audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to set up Microsoft Viva Topics"
+ms.localizationpriority:  medium
+description: Learn how to set up Microsoft Viva Topics.
 ---
 
 # Set up Microsoft Viva Topics
@@ -18,7 +18,7 @@ You can use the Microsoft 365 admin center to set up and configure [Topics](topi
 
 It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Microsoft Viva Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be either a global administrator, or both SharePoint and Groups administrator to access the Microsoft 365 admin center and set up Topics.
 
 > [!IMPORTANT]
 > If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.

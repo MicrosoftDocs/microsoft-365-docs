@@ -12,13 +12,14 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-pilotmtpproject
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -48,7 +49,7 @@ The Microsoft 365 Defender portal has built-in capabilities to create simulated 
 
 - Attack tutorials & simulations for Microsoft 365 Defender for Endpoints at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  In the Microsoft 365 Defender portal, select **Endpoints > Tutorials & simulations**.
+  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Endpoints > Tutorials & simulations**.
 
 ### Defender for Office 365 Attack simulation training
 
@@ -89,13 +90,13 @@ For each simulation or tutorial:
 
 ## Simulate an attack with an isolated domain controller and client device (optional)
 
-In this optional incident response exercise, you'll simulate an attack on an isolated Active Directory Domain Services (AD DS) domain controller and Windows 10 device using a PowerShell script and then investigate, remediate, and resolve the incident.
+In this optional incident response exercise, you'll simulate an attack on an isolated Active Directory Domain Services (AD DS) domain controller and Windows device using a PowerShell script and then investigate, remediate, and resolve the incident.
 
 First, you need to add endpoints to your pilot environment.
 
 ### Add pilot environment endpoints
 
-First, you need to add an isolated AD DS domain controller and a Windows 10 device to your pilot environment.
+First, you need to add an isolated AD DS domain controller and a Windows device to your pilot environment.
 
 1. Verify your pilot environment tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
 
@@ -136,7 +137,7 @@ During the simulation, the attack injects shellcode into a seemingly innocent pr
 
 To run the attack scenario simulation:
 
-1. Ensure that your pilot environment includes the isolated AD DS domain controller and Windows 10 device.
+1. Ensure that your pilot environment includes the isolated AD DS domain controller and Windows device.
 
 2. Sign in to the test device with the test user account.
 
@@ -181,7 +182,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Defender portal.
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
@@ -197,7 +198,7 @@ The alerts generated during this simulation are associated with the same threat,
 
 To view the incident:
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 

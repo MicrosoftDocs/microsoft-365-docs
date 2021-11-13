@@ -10,7 +10,7 @@ ms.service: o365-administration
 f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability App."
 ---

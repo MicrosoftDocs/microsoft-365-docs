@@ -9,7 +9,7 @@ ms.date: 7/2/2018
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150

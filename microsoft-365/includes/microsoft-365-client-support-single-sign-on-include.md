@@ -11,7 +11,7 @@
 |OFFICE MOBILE|✔|✔|N/A|N/A|N/A|
 |OFFICE.COM|N/A|N/A|N/A|N/A|✔|
 |ONEDRIVE|✔|✔|Planned|✔|✔|
-|ONENOTE|✔|✔|✔|Planned|✔|
+|ONENOTE|✔|✔|✔|✔|✔|
 |OUTLOOK|✔|✔|✔|✔|✔|
 |PLANNER|✔|✔|N/A|N/A|N/A|
 |POWER APPS|✔|✔|N/A|N/A|Planned|
@@ -20,7 +20,7 @@
 |POWERPOINT|✔|✔|✔|✔|✔|
 |PROJECT|N/A|N/A|N/A|✔|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
-|SHAREPOINT|✔|✔|N/A|N/A|N/A|
+|SHAREPOINT|✔|N/A|N/A|N/A|N/A|
 |SKYPE FOR BUSINESS|Planned|Planned|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planned|Planned|N/A|N/A|N/A|

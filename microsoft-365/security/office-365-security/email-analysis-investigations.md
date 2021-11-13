@@ -1,22 +1,22 @@
 ---
 title: Email analysis in investigations for Microsoft Defender for Office 365
-f1.keywords: 
+f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
-search.appverid: 
+ms.localizationpriority: medium
+search.appverid:
 - MET150
 - MOE150
-ms.collection: 
+ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: automated incident response, investigation, remediation, threat protection
 description: See how email analysis in investigations work in Microsoft Defender for Office 365.
-ms.custom: 
+ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
@@ -49,7 +49,7 @@ Here are additional enhancements to email analysis in investigations.
 
 ## AIR investigation ignores advanced delivery items (SecOps mailbox and PhishEDU messages)
 
-During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simpler and easier to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation. 
+During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simpler and easier to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation.
 
 >[!Note]
 >When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
@@ -57,11 +57,11 @@ During the email clustering analysis, all clustering queries will ignore securit
 
 ## AIR updates pending email action status
 
-The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions. This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation. For example, security operations manual hunting and remediation may clean up emails included in an investigation. Likewise, deletion actions approved in parallel investigations or zero-hour auto protection (ZAP) automatic quarantine actions may have removed emails. In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters. 
+The investigation email analysis calculates email threats and locations at the time of the investigation to create the investigation evidence and actions. This data can get stale and outdated when actions outside of the investigation affect the emails involved in the investigation. For example, security operations manual hunting and remediation may clean up emails included in an investigation. Likewise, deletion actions approved in parallel investigations or Zero-hour auto purge (ZAP) automatic quarantine actions may have removed emails. In addition, delayed detections of threats after email delivery may change the number of threats included in the investigation’s email queries/clusters.
 
-To ensure investigation actions are up to date, any investigation that has pending actions will periodically re-run the email analysis queries to update the email locations and threats. 
+To ensure investigation actions are up to date, any investigation that has pending actions will periodically re-run the email analysis queries to update the email locations and threats.
 
-- When the email cluster data changes, it will update the threat and latest delivery location counts. 
+- When the email cluster data changes, it will update the threat and latest delivery location counts.
 - If emails or email cluster with pending actions no longer are in the mailbox, then the pending action will be canceled, and the malicious email/cluster considered remediated.
 - Once all the investigation’s threats have been remediated or canceled as noted above, then the investigation will transition to a remediated state and the original alert resolved.
 

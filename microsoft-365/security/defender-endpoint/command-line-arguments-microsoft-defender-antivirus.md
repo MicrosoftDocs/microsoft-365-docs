@@ -2,11 +2,10 @@
 title: Use the command line to manage Microsoft Defender Antivirus
 description: Run Microsoft Defender Antivirus scans and configure next-generation protection with a dedicated command-line utility.
 keywords: run windows defender scan, run antivirus scan from command line, run windows defender scan from command line, mpcmdrun, defender
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,6 +14,7 @@ manager: dansimp
 ms.date: 05/24/2021
 ms.technology: mde
 ms.topic: how-to
+ms.collection: M365-security-compliance
 ---
 
 # Configure and manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool
@@ -26,7 +26,7 @@ ms.topic: how-to
 You can perform various functions in Microsoft Defender Antivirus using the dedicated command-line tool **mpcmdrun.exe**. This utility is useful when you want to automate Microsoft Defender Antivirus tasks. You can find the utility in `%ProgramFiles%\Windows Defender\MpCmdRun.exe`. Run it from a command prompt.
 
 > [!TIP]
-> You might need to open an administrator-level version of the command prompt. When you search for **Command Prompt** on the Start menu, choose **Run as administrator**. If you're running an updated Microsoft Defender Platform version, run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. For more information about the antimalware platform, see [Microsoft Defender Antivirus updates and baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
+> You might need to open an administrator-level version of the command prompt. When you search for **Command Prompt** on the Start menu, choose **Run as administrator**. If you're running an updated Microsoft Defender antimalware platform version, run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<antimalware platform version>`. For more information about the antimalware platform, see [Microsoft Defender Antivirus updates and baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
 The MpCmdRun utility uses the following syntax:
 

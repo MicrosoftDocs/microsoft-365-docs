@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to apply a retention label to a model in SharePoint Syntex.
 ---
 

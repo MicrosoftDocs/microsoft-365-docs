@@ -10,7 +10,7 @@ metadata:
   audience: ITPro
   ms.topic: troubleshooting
   
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom: 
     - seo-marvel-apr2020

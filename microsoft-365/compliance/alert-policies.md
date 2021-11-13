@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,6 +17,8 @@ search.appverid:
 - MOE150
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: "Create alert policies in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 
@@ -56,13 +58,13 @@ To view and create alert policies:
 
 ### Microsoft 365 compliance center
 
-Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternatively, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
+Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, and then select **Policies** > **Alert** > **Alert policies**.
 
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies.](../media/LaunchAlertPoliciesMCC.png)
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
 
 ![In the Defender portal, select Policies & rules under Email & collaboration, and then select Alert policy to view and create alert policies.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -141,9 +143,9 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**Malware campaign detected and blocked**|Generates an alert when someone has attempted to send an unusually large number of email messages containing a certain type of malware to users in your organization. If this event occurs, the infected messages are blocked by Microsoft and not delivered to mailboxes. This policy has a **Low** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Malware campaign detected in SharePoint and OneDrive**|Generates an alert when an unusually high volume of malware or viruses is detected in files located in SharePoint sites or OneDrive accounts in your organization. This policy has a **High** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Malware not zapped because ZAP is disabled**| Generates an alert when Microsoft detects delivery of a malware message to a mailbox because Zero-Hour Auto Purge for Phish messages is disabled. This policy has an **Informational** severity setting. |Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
-|**Phish delivered because a user's Junk Mail folder is disabled**|Generates an alert when Microsoft detects a user’s Junk Mail folder is disabled, allowing delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting.|Threat management|E5/G5 or Defender for Office 365 P1 or P2 add-on subscription|
-|**Phish delivered due to an ETR override**|Generates an alert when Microsoft detects an Exchange Transport Rule (ETR) that allowed delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting. For more information about Exchange Transport Rules (Mail flow rules), see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Threat management|E5/G5 or Defender for Office 365 P1 or P2 add-on subscription|
-|**Phish delivered due to an IP allow policy**|Generates an alert when Microsoft detects an IP allow policy that allowed delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting. For more information about the IP allow policy (connection filtering), see [Configure the default connection filter policy - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Threat management|E5/G5 or Defender for Office 365 P1 or P2 add-on subscription|
+|**Phish delivered because a user's Junk Mail folder is disabled**|Generates an alert when Microsoft detects a user’s Junk Mail folder is disabled, allowing delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting.|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**Phish delivered due to an ETR override**|Generates an alert when Microsoft detects an Exchange Transport Rule (ETR) that allowed delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting. For more information about Exchange Transport Rules (Mail flow rules), see [Mail flow rules (transport rules) in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**Phish delivered due to an IP allow policy**|Generates an alert when Microsoft detects an IP allow policy that allowed delivery of a high confidence phishing message to a mailbox. This policy has an **Informational** severity setting. For more information about the IP allow policy (connection filtering), see [Configure the default connection filter policy - Office 365](../security/office-365-security/configure-the-connection-filter-policy.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Phish not zapped because ZAP is disabled**| Generates an alert when Microsoft detects delivery of a high confidence phishing message to a mailbox because Zero-Hour Auto Purge for Phish messages is disabled. This policy has an **Informational** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Phish delivered due to tenant or user override**<sup>1</sup>|Generates an alert when Microsoft  detects an admin or user override allowed the delivery of a phishing message to a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **High** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Suspicious email forwarding activity**|Generates an alert when someone in your organization has autoforwarded email to a suspicious external account. This is an early warning for behavior that may indicate the account is compromised, but not severe enough to restrict the user. This policy has a **High** severity setting. Although it's rare, an alert generated by this policy may be an anomaly. It's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
@@ -176,7 +178,7 @@ To view alerts:
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
 
 ![In the Microsoft 365 Defender portal, select Incidents & alerts and then select Alerts.](../media/ViewAlertsDefenderPortal.png)
 
@@ -254,6 +256,8 @@ To see which category a default alert policy is assigned to, see the table in [D
 |DLP Compliance Management||![Check mark.](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
+|Information Protection Analyst||![Check mark.](../media/checkmark.png)|||||
+|Information Protection Investigator||![Check mark.](../media/checkmark.png)|||||
 |Manage Alerts||||||![Check mark.](../media/checkmark.png)|
 |Organization Configuration||||||![Check mark.](../media/checkmark.png)|
 |Preview|||||||

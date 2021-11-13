@@ -8,13 +8,14 @@ ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
@@ -43,7 +44,7 @@ There are four different ways to find and take auto investigation actions:
 
 ## Incident queue
 
-1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, select **Incidents & alerts > Incidents**.
 3. Select an incident name to open its summary page.
 4. Select the **Evidence and Response** tab.
@@ -52,7 +53,7 @@ There are four different ways to find and take auto investigation actions:
 
 ## Investigation queue
 
-1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. Navigate from the alerts/incident page.
 3. On the Investigation page, go to the **pending actions** tab.
 4. Select an item in the list. Its side pane opens.
@@ -60,7 +61,7 @@ There are four different ways to find and take auto investigation actions:
 
 ## Action center
 
-1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, select **Action center**.
 3. On the **Pending** tab, review the list of actions that are awaiting approval.
    - Select **Open investigation page** to view more details about the investigation.
@@ -69,7 +70,7 @@ There are four different ways to find and take auto investigation actions:
 
 ## Investigation and remediation investigations queue
 
-1. Open the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. Open pending investigations.
 3. On the Investigation page, go to the **pending actions** tab.
 4. Select an item in the list. Its side pane opens.

@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -46,7 +46,7 @@ Using the simplified set-up experience, you can focus on running your own test s
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
 
-You can add Windows 10 or Windows Server 2019 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10, or Windows Server 2019, or Windows Server 2022 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 

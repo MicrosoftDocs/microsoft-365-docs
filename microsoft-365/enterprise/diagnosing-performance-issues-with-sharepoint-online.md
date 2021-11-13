@@ -7,7 +7,7 @@ ms.date: 7/9/2019
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -33,12 +33,12 @@ There are three different ways that you can identify that a page on a SharePoint
 
 - SharePoint Online response header metrics
 
-This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune.
+This topic describes how to use each of these methods to diagnose performance issues. Once you've figured out the cause of the problem, you can work toward a solution using the articles about improving SharePoint performance that you can find on https://aka.ms/tune. Alternatively, if you are an administrator and you want to diagnose the issue quickly, [run this diagnostic tool](https://aka.ms/PillarSiteandPagePerf). 
   
 ## Using the F12 tool bar to diagnose performance in SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-In this article we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
+In this article, we use Internet Explorer 11. Versions of the F12 developer tools on other browsers have similar features though they may look slightly different. For information on the F12 developer tools, see:
   
 - [What's new in F12 Tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85))
 

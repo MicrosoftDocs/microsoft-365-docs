@@ -4,7 +4,7 @@ description: Describes what new changes are coming to Microsoft Secure Score in 
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -24,7 +24,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 ## Proposed changes
 
