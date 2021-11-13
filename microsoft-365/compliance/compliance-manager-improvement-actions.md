@@ -91,7 +91,7 @@ There's no character limit in the notes fields. We recommend keeping notes brief
 
 Common actions synchronize across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
-## Review testing and test status
+## Change test status
 
 In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. The content of these fields can be changed under **Edit testing details** by any user with editing permissions.
 
