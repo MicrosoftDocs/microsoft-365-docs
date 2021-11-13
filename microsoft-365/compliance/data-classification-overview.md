@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
@@ -38,7 +39,7 @@ You also manage these features on the data classification page:
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 
-You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
+You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> > **Classification** > **Data Classification**.
 
 Take a video tour of our data classification features.
 
