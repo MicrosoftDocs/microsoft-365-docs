@@ -97,7 +97,7 @@ In the **Testing** section, you can view the testing status of your improvement 
 
 The available fields are as follows:
 
-- **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
+- **Test status**: available to select when implementation status is "implemented" or "alternative implementation". Options include:
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
   - **Failed low risk**: testing failed, low risk
