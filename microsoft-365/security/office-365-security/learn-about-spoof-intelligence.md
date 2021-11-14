@@ -18,6 +18,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn about the spoof intelligence insight in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security

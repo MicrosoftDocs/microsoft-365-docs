@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
