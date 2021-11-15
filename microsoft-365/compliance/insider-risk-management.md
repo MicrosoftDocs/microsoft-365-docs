@@ -83,7 +83,7 @@ You can select from the following policy templates to quickly get started with i
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview))
+- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
