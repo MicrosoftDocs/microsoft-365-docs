@@ -19,6 +19,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security

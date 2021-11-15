@@ -21,6 +21,7 @@ ms.collection:
 ms.topic: how-to
 ms.custom: 
 - autoir
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ---
 

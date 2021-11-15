@@ -14,6 +14,7 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.technology: mdo
 ms.prod: m365-security

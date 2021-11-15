@@ -20,6 +20,7 @@ description: Get started using automated investigation and response capabilities
 ms.custom:
 - air
 - seo-marvel-mar2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
