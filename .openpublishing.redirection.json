@@ -4496,6 +4496,11 @@
       "redirect_document_id": false
      },
      {
+      "source_path": "submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft",
+      "redirect_document_id": false
+     },
+     {
       "source_path": "microsoft-365/enterprise/microsoft-365-tenant-isolation-overview.md",
       "redirect_url": "/compliance/assurance/assurance-microsoft-365-isolation-controls",
       "redirect_document_id": false
