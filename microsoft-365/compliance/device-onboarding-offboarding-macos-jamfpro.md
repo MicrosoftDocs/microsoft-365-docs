@@ -39,9 +39,9 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 1. You'll need these files for this procedure.
 
-|file needed for |source |
+|File needed for |Source |
 |---------|---------|
-|Onboarding package    |downloaded from the compliance portal **Onboarding package**, file name *DeviceComplianceOnboarding.plist* |
+|Onboarding package    |Downloaded from the compliance portal **Onboarding package**, file name *DeviceComplianceOnboarding.plist* |
 |accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Network filter| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
@@ -59,7 +59,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 >
 >If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
 
-Onboarding a macOS device into Compliance solutions is a multi phase process.
+Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Get the device onboarding package
 
@@ -71,7 +71,7 @@ Onboarding a macOS device into Compliance solutions is a multi phase process.
  
 1. Choose **Download onboarding package**
  
-1. Extract the contents of the device onboarding package. In the **JAMF** folder you should see the *DeviceComplainceOnboarding.plist* file.
+1. Extract the contents of the device onboarding package. In the JAMF folder, you should see the *DeviceComplainceOnboarding.plist* file.
 
 ### Create a JAMF Pro configuration profile for the onboarding package
 
