@@ -58,9 +58,6 @@ This article includes the following sections:
 
 ## Automatic exclusions on Windows Server 2016 or later
 
-> [!NOTE]
-> Automatic exclusions only apply to real-time protection (RTP) scanning. Automatic exclusions are not honored during a full scan, quick scan, or on-demand scan.
-
 On Windows Server 2016 or later, you should not need to define the following exclusions:
 
 - Operating system files
@@ -70,7 +67,8 @@ Because Microsoft Defender Antivirus is built in, it does not require exclusions
 
 Operating system exclusions and server role exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
 
-Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012. Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. (See [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
+> [!NOTE]
+> Automatic exclusions for server roles and operating system files do not apply to Windows Server 2012. Automatic exclusions can apply if your servers running Windows Server 2012 R2 are onboarded to Defender for Endpoint. (See [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).)
 
 
 ### The list of automatic exclusions
