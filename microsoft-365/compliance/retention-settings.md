@@ -53,7 +53,7 @@ When you've decided whether to use an adaptive or static scope, use the followin
 
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
-| Adaptive scope type | Attributes or properties supported |
+| Adaptive scope type | Attributes or properties supported include |
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
@@ -63,6 +63,11 @@ The property names for sites are based on SharePoint site managed properties, an
 
 - **Alias** maps to the LDAP name **mailNickname**, that displays as **Email** in the Azure AD admin center.
 - **Email addresses** maps to the LDAP name **proxyAddresses**, that displays as **Proxy address** in the Azure AD admin center.
+
+The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
+
+> [!TIP]
+> For additional information about using the advanced query builder, see the following webinar: [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
 
 A single policy for retention can have one or many adaptive scopes.
 
@@ -115,6 +120,12 @@ Before you configure your adaptive scope, use the previous section to identify w
     - **notlike** (string comparison
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
+    
+    > [!TIP]
+    > You must use the advanced query builder if you want to exclude inactive mailboxes. Or conversely, target just inactive mailboxes. For this configuration, use the OPATH property *IsInactiveMailbox*:
+    > 
+    > - To exclude inactive mailboxes, make sure the query includes: `(IsInactiveMailbox -eq "False")`
+    > - To target just inactive mailboxes, specify: `(IsInactiveMailbox -eq "True")`
 
 3. Create as many adaptive scopes as you need. You can select one or more adaptive scopes when you create your policy for retention.
 
@@ -193,9 +204,17 @@ The **Exchange email** location supports retention for users' email, calendar, a
 
 Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead.
 
-When you use a static policy scope and apply the retention settings to **All recipients**, any [inactive mailboxes](create-and-manage-inactive-mailboxes.md) are included. However, if you change this default and configure [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions), inactive mailboxes aren't supported and retention settings can't be applied or excluded for those mailboxes.
+Depending on your policy configuration, [inactive mailboxes](create-and-manage-inactive-mailboxes.md) might be included or not:
 
-If you do choose recipients to include or exclude with a static policy scope, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated.
+- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
+
+- Adaptive policy scopes, by default, include inactive mailboxes when they meet the scope's query. You can exclude them by using the advanced query builder and the OPATH property *IsInactiveMailbox*:
+    
+    ```console
+    (IsInactiveMailbox -eq "False")
+    ```
+
+If you use a static policy scope and choose recipients to include or exclude, you can select distribution groups and email-enabled security groups as an efficient way to select multiple recipients instead of selecting them one-by-one. When you use this option, behind the scenes, these groups are automatically expanded at the time of configuration to select the mailboxes of the users in the group. If the membership of those groups later change, your existing retention policy isn't automatically updated, unlike adaptive policy scopes.
 
 For detailed information about which mailbox items are included and excluded when you configure retention settings for Exchange, see [What's included for retention and deletion](retention-policies-exchange.md#whats-included-for-retention-and-deletion).
 
