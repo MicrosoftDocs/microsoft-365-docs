@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -23,7 +24,7 @@ description: "A requirement for all Microsoft Information Protection solutions: 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the older portal, Office 365 Security & Compliance Center.
+All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. You can also use the older portal, Office 365 Security & Compliance Center.
 
 First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
 
@@ -35,15 +36,9 @@ The global admin for your organization has full permissions to create and manage
 
 ## Create and configure sensitivity labels
 
-1. In your labeling admin center, navigate to sensitivity labels:
-
-    - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection**
-
-        If you don't immediately see this option, first select **Show all**. 
-
-    - Security & Compliance Center:
-        - **Classification** > **Sensitivity labels**
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**.
 
 2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label configuration. 
 
@@ -128,15 +123,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## Publish sensitivity labels by creating a label policy
 
-1. In your labeling admin center, navigate to sensitivity labels:
-
-    - Microsoft 365 compliance center: 
-        - **Solutions** > **Information protection**
-
-        If you don't immediately see this option, first select **Show all**. 
-
-    - Security & Compliance Center:
-        - **Classification** > **Sensitivity labels**
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**.
 
 2. Select the **Label policies** tab, and then **Publish label** to start the **Create policy** configuration:
 
