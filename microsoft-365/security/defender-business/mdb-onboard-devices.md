@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/11/2021
+ms.date: 11/15/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -62,7 +62,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 | Option | What to do next |
 |:---|:---|
-| **Automatic onboarding** (*Recommended*)<br/><br/>The automatic onboarding process sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboard devices to Defender for Business. <br/><br/>We recommend this option because it enables you to onboard devices in Endpoint Manager to Defender for Business efficiently.<br/><br/>**IMPORTANT**: If you choose the automatic onboarding process, *all* devices that are enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Endpoint. | Switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). <br/><br/>--- or --- <br/><br/>Continue using Microsoft Endpoint Manager to manage your security settings and policies. |
+| **Automatic onboarding** (*Recommended*)<br/><br/>The automatic onboarding process sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards devices to Defender for Business. <br/><br/>We recommend this option because it enables you to onboard devices to Defender for Business efficiently.<br/><br/>**IMPORTANT**: If you choose the automatic onboarding process, *all* devices that are enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Endpoint. | Switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). <br/><br/>--- or --- <br/><br/>Continue using Microsoft Endpoint Manager to manage your security settings and policies. |
 | **Manual onboarding** <br/><br/>The manual onboarding process enables you to choose from several [onboarding methods](#part-3-choose-a-deployment-method), including Microsoft Endpoint Manager. <br/><br/>You can onboard all devices at one point, or onboard devices gradually. | Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).  |
 
 ## Part 3: Choose a manual onboarding method
