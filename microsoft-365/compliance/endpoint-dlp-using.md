@@ -42,7 +42,7 @@ Or
 
 #### Get registered
 
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/Ignite2021DLP).
+To get access to this feature, you must register your tenant with Microsoft—see [get registered](https://aka.ms/Ignite2021DLP).
 
 When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
@@ -50,12 +50,18 @@ In advanced classification, content is sent from the local device to the cloud s
 
 If bandwidth utilization is not a concern, you can not set a limit and allow unlimited utilization.
 
+These Windows versions support advanced classification scanning and protection:
+
+- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+- Windows 10 versions 19H1/19H2 (KB 5007189)
+- Windows 10 RS5 (KB 5006744)
+
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### Endpoint DLP Windows 10 and macOS settings
 
-To get access to macOS support, you must register your tenant with Microsoft. See, [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
+To get access to macOS support, you must register your tenant with Microsoft—see [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
@@ -78,19 +84,19 @@ You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP
 
 You can use this logic to construct your exclusion paths for Windows 10 devices:
 
-- Valid file path that ends with ‘\’, which means only files directly under folder. <br/>For example: C:\Temp\
+- Valid file path that ends with `\`, which means only files directly under folder. <br/>For example: `C:\Temp\`
 
-- Valid file path that ends with ‘\*’, which means only files under subfolders, besides the files directly under the folder. <br/>For example: C:\Temp\*
+- Valid file path that ends with `\*`, which means only files under subfolders, besides the files directly under the folder. <br/>For example: `C:\Temp\*`
 
-- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all subfolders. <br/>For example: C:\Temp
+- Valid file path that ends without `\` or `\*`, which means all files directly under folder and all subfolders. <br/>For example: `C:\Temp`
 
-- A path with wildcard between ‘\’ from each side. <br/>For example: C:\Users\*\Desktop\
+- A path with wildcard between `\` from each side. <br/>For example: `C:\Users\*\Desktop\`
 
-- A path with wildcard between ‘\’ from each side and with ‘(number)’ to give exact number of subfolders. <br/>For example: C:\Users\*(1)\Downloads\
+- A path with wildcard between `\` from each side and with `(number)` to give exact number of subfolders. <br/>For example: `C:\Users\*(1)\Downloads\`
 
-- A path with SYSTEM environment variables. <br/>For example: %SystemDrive%\Test\*
+- A path with SYSTEM environment variables. <br/>For example: `%SystemDrive%\Test\*`
 
-- A mix of all the above. <br/>For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
+- A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
 #### macOS devices (preview)
 
@@ -147,7 +153,7 @@ To prevent sensitive items from being synced to the cloud by cloud sync apps, li
 
 When enabled, Auto-quarantine kicks in when an unallowed app attempts to access a DLP protected sensitive item. Auto-quarantine moves the sensitive item to an admin configured folder and can leave a placeholder **.txt** file in the place of the original. You can configure the text in the placeholder file to tell users where the item was moved to and other pertinent information.  
 
-You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins. See, [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
+You can use auto-quarantine to prevent an endless chain of DLP notifications for the user and admins—see [Scenario 4: Avoid looping DLP notifications from cloud synchronization apps with auto-quarantine (preview)](#scenario-4-avoid-looping-dlp-notifications-from-cloud-synchronization-apps-with-auto-quarantine-preview).
 
 ### Unallowed Bluetooth apps
 
@@ -162,6 +168,9 @@ Restrict sensitive files that match your policies from being shared with unrestr
 You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
 
 #### Service domains
+
+> [!NOTE]
+> The **Service domains** setting only applies to files uploaded using Microsoft Edge or Google Chrome with the [the Microsoft Compliance Extension](dlp-chrome-learn-about.md#learn-about-the-microsoft-compliance-extension) installed.
 
 You can control whether sensitive files protected by your policies can be uploaded to specific service domains from Microsoft Edge.
 
@@ -195,7 +204,7 @@ You can create up to five customized options that will appear when users interac
 |Show false positive option     |**The information in these files is not sensitive** or you can enter customized text          |
 |option 5    |**Other** or you can enter customized text         |
 
-<!--See, [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
+<!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
 ### Always audit file activity for devices
 
@@ -227,7 +236,7 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
-
+>
 >- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
@@ -257,7 +266,7 @@ These scenarios require that you already have devices onboarded and reporting in
 
 10. The new DLP policy will appear in the policy list.
 
-11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 12. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 
@@ -326,7 +335,7 @@ In this scenario, synchronizing files with the **Highly Confidential** sensitivi
 
 - An AAD user account to target and an onboarded Windows 10 computer that is already synchronizing a local OneDrive folder with OneDrive cloud storage.
 - Microsoft Word installed on the target Windows 10 computer
-- Sensitivity labels configured and published. See, [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)
+- Sensitivity labels configured and published—see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels) and [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies).
 
 There are three procedures.
 
@@ -350,20 +359,22 @@ There are three procedures.
 
 7. Enter the path to the folder on local machines where you want the original sensitive files to be moved to. For example:
    
-**'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a 
+    **'%homedrive%%homepath%\Microsoft DLP\Quarantine'** for the username *Isaiah langer* will place the moved items in a folder named:  
 
-*C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive* folder and append a date and time stamp to the original file name.
+    *C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive*
 
-> [!NOTE]
-> DLP Auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
+    and append a date and time stamp to the original file name.
+    
+    > [!NOTE]
+    > DLP Auto-quarantine will create sub-folders for the files for each unallowed app. So if you have both *Notepad* and *OneDrive* in your unallowed apps list, a sub-folder will be created for **\OneDrive** and another sub-folder for **\Notepad**.
 
 8. Choose **Replace the files with a .txt file that contains the following text** and enter the text you want in the placeholder file. For example for a file named *auto quar 1.docx*:
     
-**%%FileName%% contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy %%PolicyName%% and was moved to the quarantine folder: %%QuarantinePath%%.** 
-
-will leave a .txt file that contains this message
-
-*auto quar 1.docx contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy and was moved to the quarantine folder: C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.*
+    > %%FileName%% contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy %%PolicyName%% and was moved to the quarantine folder: %%QuarantinePath%%
+    
+    will leave a text file that contains this message:
+    
+    > auto quar 1.docx contains sensitive info that your organization is protecting with the data loss prevention (DLP) policy and was moved to the quarantine folder: C:\Users\IsaiahLanger\Microsoft DLP\Quarantine\OneDrive\auto quar 1_20210728_151541.docx.
 
 9. Choose **Save**
 
@@ -382,10 +393,10 @@ will leave a .txt file that contains this message
 6. Accept the default **Create or customize advanced DLP rules** selection and choose **Next**.
 
 7. Create a rule with these values:
-    1. **Name** > *Scenario 4 Auto-quarantine*
-    1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**
+    1. **Name** > *Scenario 4 Auto-quarantine*.
+    1. **Conditions** > **Content contains** > **Sensitivity labels** > **Highly Confidential**.
     1.  **Actions** > **Audit or restrict activities on Windows devices** > **Access by unallowed apps** > **Block**. For the purposes of this scenario, clear all the other activities.
-    1. **User notifications** > **On**
+    1. **User notifications** > **On**.
     1. **Endpoint devices** > Choose **Show users a policy tip notification when an activity** if not already enabled.
     
 8. Choose **Save** and **Next**.
@@ -394,8 +405,8 @@ will leave a .txt file that contains this message
 
 10. Review your settings and choose **Submit**.
 
-> [!NOTE]
-> Allow at least an hour for the new policy to be replicated and applied to the target Windows 10 computer.
+    > [!NOTE]
+    > Allow at least an hour for the new policy to be replicated and applied to the target Windows 10 computer.
 
 11. The new DLP policy will appear in the policy list.
 
@@ -407,23 +418,23 @@ will leave a .txt file that contains this message
 
     *C:\auto-quarantine source folder*
 
-3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label. See, [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+3. Open Microsoft Word and create a file in the auto-quarantine source folder. Apply the **Highly confidential** sensitivity label; see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 4. Copy the file you just created to your OneDrive synchronization folder. A user notification toast should appear telling you that the action is not allowed and that the file will be quarantined. For example, for user name *Isaiah Langer*, and a document titled *auto-quarantine doc 1.docx* you would see this message:
 
-![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined.](../media/auto-quarantine-user-notification-toast.png)
+    ![Data loss prevention user notification popup stating that the OneDrive synchronization action is not allowed for the specified file and that the file will be quarantined.](../media/auto-quarantine-user-notification-toast.png)
+    
+    The message reads:
+    
+    > Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'
 
-The message reads:
+5. Choose **Dismiss**.
 
-"Opening autoquarantine doc 1.docx with this app is not allowed. The file will be quarantined to 'C:\Users\IsaiahLanger\Microsoft DLP\OneDrive'"
-
-5. Choose **Dismiss**
-
-6. Open the place holder .txt file. It will be named **auto-quarantine doc 1.docx_*date_time*.txt**. 
+6. Open the place holder text file. It will be named **auto-quarantine doc 1.docx_*date_time*.txt**. 
 
 7. Open the quarantine folder and confirm that the original file is there.
  
-8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 9. Check Activity explorer for the event.
 

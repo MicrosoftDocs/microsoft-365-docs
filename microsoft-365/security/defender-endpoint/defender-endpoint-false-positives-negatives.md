@@ -2,8 +2,6 @@
 title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
 keywords: antivirus, exception, exclusion, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -20,9 +18,11 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/07/2021
+ms.date: 10/19/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
+ms.custom: 
+- FPFN
+- admindeeplinkDEFENDER
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint
@@ -62,7 +62,7 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. In the navigation pane, choose **Alerts queue**.
 
@@ -82,7 +82,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 Alerts can be classified as false positives or true positives in Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -97,7 +97,7 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -134,7 +134,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -150,7 +150,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -161,7 +161,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file.](images/autoir-quarantine-file-1.png)
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -264,7 +264,7 @@ Before you create indicators for files, make sure the following requirements are
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
+- Devices are running Windows 10, version 1703 or later, or Windows 11; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - The [Block or allow feature is turned on](/microsoft-365/security/defender-endpoint/advanced-features)
 
 #### Indicators for IP addresses, URLs, or domains
@@ -275,7 +275,7 @@ Before you create indicators for IP addresses, URLs, or domains, make sure the f
 
 - Network protection in Defender for Endpoint is enabled in block mode (see [Enable network protection](/microsoft-365/security/defender-endpoint/enable-network-protection))
 - Antimalware client version is 4.18.1906.x or later
-- Devices are running Windows 10, version 1709, or later
+- Devices are running Windows 10, version 1709, or later, or Windows 11
 
 Custom network indicators are turned on in the [Microsoft 365 Defender](microsoft-defender-security-center.md). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
@@ -287,7 +287,7 @@ Before you create indicators for application certificates, make sure the followi
 
 - Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
 - Antimalware client version is 4.18.1901.x or later
-- Devices are running Windows 10, version 1703 or later; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
+- Devices are running Windows 10, version 1703 or later, or Windows 11; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - Virus and threat protection definitions are up to date
 
 > [!TIP]
@@ -307,7 +307,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 ### Submit a fileless detection for analysis
 
-If something was detected as malware based on behavior, and you don't have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10.
+If something was detected as malware based on behavior, and you don't have a file, you can submit your `Mpsupport.cab` file for analysis. You can get the *.cab* file by using the Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe) tool on Windows 10 or Windows 11.
 
 1. Go to ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`, and then run `MpCmdRun.exe` as an administrator.
 
@@ -445,7 +445,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to Microsoft 365 Defender (<https://security.microsoft.com>) and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
