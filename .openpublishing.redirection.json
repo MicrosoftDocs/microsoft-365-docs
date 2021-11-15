@@ -4526,6 +4526,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints-gp.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding-gp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints-mdm.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding-mdm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints-sccm.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding-sccm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints-script.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/dlp-configure-endpoints-vdi.md",
+      "redirect_url": "microsoft-365/compliance/device-onboarding-vdi",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
+      "redirect_document_id": false
+    },
+    {  
       "source_path": "microsoft-365/compliance/information-barriers-troubleshooting.md",
       "redirect_url": "/office365/troubleshoot/information-barriers/information-barriers-troubleshooting",
       "redirect_document_id": false
@@ -4551,11 +4586,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender-endpoint/control-usb-devices-using-intune.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/mde-device-control-device-installation",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/security/defender-endpoint/overview-hardware-based-isolation.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
@@ -4571,7 +4601,16 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/admin/setup/get-started-windows-365-business.md",
+      "source_path": "microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
+      "redirect_url": "/compliance/sit-learn-about-exact-data-match",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/sit-edm-wizard.md",
+      "redirect_url": "/compliance/sit-get-started-exact-data-match-create-schema",
+      "redirect_document_id": false
+    },
+    { "source_path": "microsoft-365/admin/setup/get-started-windows-365-business.md",
       "redirect_url": "/windows-365/business/get-started-windows-365-business",
       "redirect_document_id": false
     },
@@ -5504,6 +5543,16 @@
     {
       "source_path": "microsoft-365/compliance/app-governance-visibility-insights-view-apps.md",
       "redirect_url": "/cloud-app-security/app-governance-visibility-insights-view-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/endpoint-dlp-configure-proxy.md",
+      "redirect_url": "/compliance/device-onboarding-configure-proxy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compiance/device-onboarding.md",
+      "redirect_url": "/compliance/device-onboarding-overview",
       "redirect_document_id": false
     }
   ]
