@@ -48,6 +48,44 @@ If you were using the simplified configuration process in Defender for Business 
 
 See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
 
+## There's an issue between Defender for Business and Microsoft Endpoint Manager
+
+If you're seeing an error message that says:
+
+   *Something went wrong, and we couldn't complete your setup process. There's a problem with Defender for Business and Microsoft Endpoint Manager*
+
+It means that you must establish communication between Defender for Business and Microsoft Endpoint Manager. To do that, follow these steps:
+
+1. [Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal](#turn-on-the-microsoft-intune-connection-in-the-microsoft-365-defender-portal)
+2. [Specify the enforcement scope for Defender for Business](#specify-the-enforcement-scope-for-defender-for-business)
+3.  
+
+### Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. Choose **Settings** > **Endpoints**. Then, under **General**, select **Advanced features**.
+
+3. Scroll down to **Microsoft Intune connection**, and make sure it is turned on.
+
+### Specify the enforcement scope for Defender for Business
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+2. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
+
+3. Under **OS platform**, turn on **Windows Client devices**.
+
+4. Select **Save**.
+
+### Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager
+
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com]https://endpoint.microsoft.com)) and sign in.
+
+2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
+
+3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
+
 ## See also
 
 - [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.md)
