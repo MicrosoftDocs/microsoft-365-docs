@@ -103,13 +103,11 @@ If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Confi
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
-2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+2. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
 
-3. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
+3. Under **OS platform**, turn on **Windows Client devices**.
 
-4. Under **OS platform**, turn on **Windows Client devices**.
-
-5. Select **Save**.
+4. Select **Save**.
 
 ## Onboarding devices in the Microsoft 365 Defender portal
 

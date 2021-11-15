@@ -54,11 +54,11 @@ If you're seeing an error message that says:
 
    *Something went wrong, and we couldn't complete your setup process. There's a problem with Defender for Business and Microsoft Endpoint Manager*
 
-It means that you must establish communication between Defender for Business and Microsoft Endpoint Manager. To do that, follow these steps:
+It means that you must establish communication between Defender for Business and Microsoft Endpoint Manager. To do that, follow the steps in the following sections:
 
 1. [Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal](#turn-on-the-microsoft-intune-connection-in-the-microsoft-365-defender-portal)
 2. [Specify the enforcement scope for Defender for Business](#specify-the-enforcement-scope-for-defender-for-business)
-3.  
+3. [Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager](#turn-on-endpoint-security-profile-settings-in-microsoft-endpoint-manager) 
 
 ### Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal
 
