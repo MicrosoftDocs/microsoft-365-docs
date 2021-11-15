@@ -410,4 +410,5 @@
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
       href: /defender-for-identity
-
+    - name: Microsoft Defender for Cloud Apps
+      href: /cloud-app-security
