@@ -2,7 +2,6 @@
 title: Cloud protection and sample submission in Microsoft Defender Antivirus
 description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/05/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -98,7 +97,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Examples of metadata sent to the cloud protection service
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to cloud protection in Microsoft Defender Antivirus":::
 
 The following table lists examples of metadata sent for analysis by cloud protection:
 

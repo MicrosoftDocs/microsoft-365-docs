@@ -4,26 +4,22 @@
   items: 
     - name: Overview
       items:
-      - name: What is Microsoft 365 Defender?
+      - name: Microsoft 365 Defender
         href: microsoft-365-defender.md
-      - name: Microsoft 365 Defender Overview
-        href: overview-security-center.md  
       - name: What's new in Microsoft 365 Defender
         href: whats-new.md
-      - name: Defender for Endpoint in Microsoft 365 Defender
-        href: microsoft-365-security-center-mde.md
-      - name: Defender for Office 365 in Microsoft 365 Defender
-        href: microsoft-365-security-center-mdo.md  
-      - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
-        href: microsoft-365-security-mde-redirection.md 
-      - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
-        href: microsoft-365-security-mdo-redirection.md   
+      - name: Microsoft 365 Defender services
+        items:
+        - name: Defender for Endpoint in Microsoft 365 Defender
+          href: microsoft-365-security-center-mde.md
+        - name: Defender for Office 365 in Microsoft 365 Defender
+          href: microsoft-365-security-center-mdo.md  
+        - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
+          href: microsoft-365-security-mde-redirection.md 
+        - name: Redirecting Office 365 Security and Compliance Center to Microsoft 365 Defender
+          href: microsoft-365-security-mdo-redirection.md   
       - name: Microsoft 365 Defender integration with Azure Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md   
-      - name: Preview features
-        href: preview.md
-      - name: Troubleshoot issues
-        href: ./troubleshoot.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md
     - name: Plan
@@ -94,9 +90,9 @@
       items:
         - name: Overview
           href: get-started.md
-        - name: Turn on Microsoft 365 Defender
+        - name: 1. Turn on Microsoft 365 Defender
           href: m365d-enable.md
-        - name: Deploy supported services
+        - name: 2. Deploy supported services
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
@@ -126,10 +122,14 @@
             href: ../defender-identity/entity-tags.md
           - name: Manage security alerts
             href: ../defender-identity/manage-security-alerts.md
+          - name: Configure detection exclusions
+            href: ../defender-identity/exclusions.md
           - name: Email and syslog notifications
             href: ../defender-identity/notifications.md
     - name: Investigate and respond to threats
       items: 
+       - name: Overview
+         href: incident-response-overview.md
        - name: Respond to incidents
          items: 
               - name: Overview
@@ -166,10 +166,6 @@
                    href: investigate-users.md                  
               - name: Incident response playbooks
                 href: /security/compass/incident-response-playbooks
-              - name: Get incident email notifications
-                href: get-incident-notifications.md
-              - name: Use Power Automate to triage threats
-                href: use-power-automate.md
        - name: Manage automated investigation and response
          items: 
               - name: Overview
@@ -310,7 +306,7 @@
                 href: ../mtp/microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
                 href: ../mtp/configure-microsoft-threat-experts.md
-    - name: SecOps integration
+    - name: Security operations guide
       items: 
        - name: Overview
          href: integrate-microsoft-365-defender-secops.md
@@ -352,7 +348,6 @@
               href: api-overview.md
             - name: Supported Microsoft 365 Defender APIs
               href: api-supported.md
-            
             - name: Get started with Microsoft 365 Defender APIs 
               items: 
                 - name: Microsoft 365 Defender API license and terms of use
@@ -397,10 +392,23 @@
                       href: api-update-incidents.md
                     - name: Get Incident
                       href: api-get-incident.md
+
+            - name: Fetch Microsoft 365 Defender incidents 
+              href: fetch-incidents.md
+            - name: SIEM integration
+              items:
+               - name: Integrate your SIEM tools with Microsoft 365 Defender
+                 href: configure-siem-defender.md
+               - name: Troubleshoot issues with integrating SIEM tools
+                 href: ../defender-endpoint/troubleshoot-siem.md
+            - name: Understand threat intelligence concepts
+              href: ../defender-endpoint/threat-indicator-concepts.md 
+
     - name: Microsoft Defender for Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender for Endpoint
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
       href: /defender-for-identity
-
+    - name: Microsoft Defender for Cloud Apps
+      href: /cloud-app-security
