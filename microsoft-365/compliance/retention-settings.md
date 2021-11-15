@@ -151,15 +151,26 @@ You can manually validate advanced queries by using PowerShell and SharePoint se
 
 To run a query using PowerShell:
 
-1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with [appropriate Exchange Online Administrator permissions](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. Specify your [OPATH query](/powershell/exchange/filter-properties) using [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
-    
-    For example:
+2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (```{```,```}```). If your attribute values include spaces, enclose these values in double or single quotes. 
+
+    If  you are validating a **User** scope, include ```-RecipientTypeDetails UserMailbox``` in the command, otherwise for **Microsoft 365 Group** scopes, include ```-RecipientTypeDetails GroupMailbox```.
+
+    > [!TIP]
+    > You can determine whether to validate using ```Get-Mailbox``` or ```Get-Recipient``` depending on which cmdlets the [OPATH properties](/powershell/exchange/filter-properties) you choose to use in your query support.
+
+    For example, to validate a **User** scope, you could use:
     
     ````PowerShell
-    Get-Recipient -Filter "Department -eq 'Sales and Marketing'" -ResultSize unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox -Filter {Department -eq "Sales and Marketing"} -ResultSize Unlimited
     ````
+    
+    To validate a **Microsoft 365 Group** scope, you could use:
+    
+    ```PowerShell
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Sales and Marketing"} -ResultSize Unlimited
+    ```
 
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
