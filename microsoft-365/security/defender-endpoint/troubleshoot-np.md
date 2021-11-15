@@ -82,7 +82,7 @@ See [Address false positives/negatives in Microsoft Defender for Endpoint](defen
 The current exclusion options are:
 
 1.	Setting up a custom allow indicator.
-2.	Using IP exclusions: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+2.	Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
 3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
 
 

@@ -121,7 +121,7 @@ For more information identifying specific location retention policies applied to
 
 ### Remove In-Place Holds
 
- There are two ways to remove an In-Place Hold from an inactive mailbox: 
+ There are two ways to remove an In-Place Hold from an inactive mailbox:
   
 - **Delete the In-Place Hold object**. If the inactive mailbox that you want to permanently delete is the only source mailbox for an In-Place Hold, you can just delete the In-Place Hold object. 
 
