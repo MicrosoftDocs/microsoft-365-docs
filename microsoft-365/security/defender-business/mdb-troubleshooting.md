@@ -48,16 +48,16 @@ If you were using the simplified configuration process in Defender for Business 
 
 See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
 
-## There's an issue between Defender for Business and Microsoft Endpoint Manager
+## There's an integration issue between Defender for Business and Microsoft Endpoint Manager
 
-If you're seeing an error message that says:
+During your setup and configuration process, you might see an error message that says:
 
-   *Something went wrong, and we couldn't complete your setup process. There's a problem with Defender for Business and Microsoft Endpoint Manager*
+   *Something went wrong, and we couldn't complete your setup process. There's an integration issue between Defender for Business and Microsoft Endpoint Manager.*
 
-It means that you must establish communication between Defender for Business and Microsoft Endpoint Manager. To do that, follow the steps in the following sections:
+The error message means that a configuration channel must be established between Defender for Business and Microsoft Endpoint Manager. To resolve the issue, follow the steps in the following sections:
 
 1. [Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal](#turn-on-the-microsoft-intune-connection-in-the-microsoft-365-defender-portal)
-2. [Specify the enforcement scope for Defender for Business](#specify-the-enforcement-scope-for-defender-for-business)
+2. [Set the enforcement scope for Defender for Business](#set-the-enforcement-scope-for-defender-for-business)
 3. [Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager](#turn-on-endpoint-security-profile-settings-in-microsoft-endpoint-manager) 
 
 ### Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal
@@ -68,7 +68,7 @@ It means that you must establish communication between Defender for Business and
 
 3. Scroll down to **Microsoft Intune connection**, and make sure it is turned on.
 
-### Specify the enforcement scope for Defender for Business
+### Set the enforcement scope for Defender for Business
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
