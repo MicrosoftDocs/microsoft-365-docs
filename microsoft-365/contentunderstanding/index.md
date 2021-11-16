@@ -50,7 +50,7 @@ The resources in this section help you learn more about the two methods of data 
 
 ## Adoption
 
-Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems: 
+Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
