@@ -114,8 +114,8 @@ Most organizations have specific requirements regarding security and data protec
 Each industry also has their own set of specialized regulations. Rather than providing a list of all possible security options or a recommendation per industry segment or job function, recommendations have been provided for three different levels of security and protection that can be applied based on the granularity of your needs.
 
 - **Starting point**: We recommend all customers establish and use a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these recommendations to provide strong default protection as a starting point for all organizations.
-- **Recommended**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
-- **Highest security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
+- **Enterprise**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
+- **Specialized security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
 
 ![Security cone - All customers > Some customers > A few customers](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
@@ -161,7 +161,7 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 
 Here are the components of Zero Trust identity and device access, including Intune and Azure AD objects, settings, and subservices.
 
-![Components of Zero Trust identity and device access.](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="Components of Zero Trust identity and device access." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### Microsoft Intune
 
@@ -193,7 +193,7 @@ Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommend
 
 The following table summarizes our recommendations for using these capabilities across the three tiers of protection.
 
-|Protection mechanism|Starting point|Recommended|Highest security|
+|Protection mechanism|Starting point|Enterprise|Specialized security|
 |---|---|---|---|
 |**Enforce MFA**|On medium or above sign-in risk|On low or above sign-in risk|On all new sessions|
 |**Enforce password change**|For high-risk users|For high-risk users|For high-risk users|
