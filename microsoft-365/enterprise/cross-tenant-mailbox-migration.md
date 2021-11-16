@@ -59,7 +59,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 2. Under Azure's services, click on Azure Active Directory.
 
-3. On the left navigation bar, select App registrations.
+3. On the left navigation bar, select Enterprise Applications.
 
 4. Select New application
 

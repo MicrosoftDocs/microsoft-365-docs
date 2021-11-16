@@ -146,7 +146,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 #### Custom sensitive information types with Exact Data Match
 
-You can configure a sensitivity label to use [Exact Data Match (EDM)-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
+You can configure a sensitivity label to use [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
 
 If you configure a sensitivity label with only EDM for your sensitive information type conditions, the auto-labeling setting is automatically turned off for the label.
 
@@ -154,9 +154,12 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
-When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
+When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
