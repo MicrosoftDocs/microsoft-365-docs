@@ -39,3 +39,5 @@ After you have applied for the preview program, we'll review your application. Y
 ## Next steps
 
 - [See the setup and configuration process for Microsoft Defender for Business](mdb-setup-configuration.md)
+
+- [Find out how to get help and support for Microsoft Defender for Business](mdb-get-help.md)
