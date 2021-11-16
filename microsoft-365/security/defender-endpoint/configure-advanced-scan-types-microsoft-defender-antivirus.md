@@ -70,7 +70,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see
 
 - [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender for Cloud cmdlets](/powershell/module/defender/)
+- [Microsoft Defender Antivirus cmdlets](/powershell/module/defender/)
 
 ## Use WMI to configure scanning options
 
