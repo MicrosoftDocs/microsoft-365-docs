@@ -115,7 +115,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 ## Microsoft 365 security navigation and capabilities
 
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this Defender for Cloud.
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in Microsoft 365 Defender portal. 
 
 ### Incidents and alerts
 
