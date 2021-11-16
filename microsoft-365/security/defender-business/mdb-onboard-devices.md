@@ -82,7 +82,7 @@ Review the options that are described in the following table, and then proceed t
 | **Mobile Device Management** | You can use Mobile Device Management (MDM) with Microsoft Intune (now part of Microsoft Endpoint Manager) to onboard devices. Devices must be enrolled in MDM in order to onboard those devices with Microsoft Intune. <br/><br/>To learn more about this method, see [Onboard Windows devices using Mobile Device Management tools](../defender-endpoint/configure-endpoints-mdm.md). |
 
 > [!TIP]
-> If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method. Also, make sure to review [Onboarding devices in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal) (in this article).
+> If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method. 
 
 ## Part 4: Onboard devices in the Microsoft 365 Defender portal
 
