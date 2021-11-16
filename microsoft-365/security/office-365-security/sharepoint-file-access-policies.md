@@ -39,7 +39,7 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the the common identity and device access policies.
 
-[![Summary of policy updates for protecting access to Teams and its dependent services.](../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="Summary of policy updates for protecting access to SharePoint." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 If you included SharePoint when you created the common policies, you only need to create the new policies. For Conditional Access policies, SharePoint includes OneDrive.
 
@@ -82,15 +82,13 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
-[![Example of how SharePoint device access policies protect sites.](../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="Example of how SharePoint device access policies protect sites." lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png)
+James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 
-James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with sensitive or highly-regulated protection.
-
-- If James accesses a sensitive or highly-regulated site he is a member of using his PC, his access is granted as long as his PC is compliant.
-- If James accesses a sensitive site he is a member of using his unmanaged phone, which is allowed for starting point users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
-- If James accesses a highly regulated site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed and compliant PC.
+- If James accesses a site he is a member of with enterprise or specialized security protection using his PC, his access is granted.
+- If James accesses a enterprise protection site he is a member of using his unmanaged phone, which is allowed for starting point users, he will receive browser-only access to the sensitive site due to the device access policy configured for this site.
+- If James accesses a specialized security site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed PC.
 
 ## Next step
 
