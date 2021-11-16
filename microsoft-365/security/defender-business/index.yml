@@ -88,6 +88,8 @@ landingContent:
             url: mdb-create-new-policy.md
           - text: Manage rules for firewall policies
             url: mdb-custom-rules-firewall.md
+      - linkListType: reference
+        links:
           - text: Next-generation protection settings
             url: mdb-next-gen-configuration-settings.md
           - text: Firewall settings
@@ -95,7 +97,7 @@ landingContent:
 
  
   # Card
-  - title: Reference
+  - title: Help and support
     linkLists:
       - linkListType: reference
         links:
