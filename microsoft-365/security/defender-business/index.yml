@@ -80,24 +80,25 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Create device groups
+            url: mdb-create-edit-device-groups.md
           - text: View and edit your policies
             url: mdb-view-edit-policies.md
           - text: Create a new policy
             url: mdb-create-new-policy.md
           - text: Manage rules for firewall policies
             url: mdb-custom-rules-firewall.md
-          - text: Create device groups
-            url: mdb-create-edit-device-groups.md
+          - text: Next-generation protection settings
+            url: mdb-next-gen-configuration-settings.md
+          - text: Firewall settings
+            url: mdb-firewall.md
+
  
   # Card
   - title: Reference
     linkLists:
       - linkListType: reference
         links:
-          - text: Next-generation protection settings
-            url: mdb-next-gen-configuration-settings.md
-          - text: Firewall settings
-            url: mdb-firewall.md
           - text: Frequently asked questions
             url: mdb-faq.md
           - text: Troubleshooting
