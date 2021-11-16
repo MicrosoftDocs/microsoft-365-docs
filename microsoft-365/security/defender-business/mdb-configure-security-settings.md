@@ -57,10 +57,11 @@ To view your security settings and policies, use one of the procedures in the fo
 
 Proceed to one or more of the following tasks:
 
+- [Get started using Microsoft Defender for Business](mdb-get-started.md)
+
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 
 - [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 
 - [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md)
