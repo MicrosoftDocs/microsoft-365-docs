@@ -48,7 +48,7 @@ To start recording system events, open PowerShell in administrative mode and per
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender for Cloud](/powershell/module/defender).
+    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 
