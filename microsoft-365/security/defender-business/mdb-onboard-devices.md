@@ -46,7 +46,7 @@ Review the scenarios listed in the following table and select a path. Then proce
 
 |Scenario   | What to do next |
 |---------|---------|
-| **You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings** <br/><br/>Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md) (*recommended for most customers*), or continue using Endpoint Manager.  | If you're switching to the simplified configuration process, proceed to [Part 2: Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).<br/><br/>--- or ---<br/><br/>If you plan to [continue using Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-policy), proceed to [Get started using Microsoft Defender for Business](mdb-get-started.md).  |
+| **You are already using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings** <br/><br/>Defender for Business will detect that you're already using Microsoft Endpoint Manager. You'll be asked whether you want to switch to the [simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md) (*recommended for most customers*), or continue using Endpoint Manager.  | If you're switching to the simplified configuration process, proceed to [Part 2: Choose between automatic or manual device onboarding](#part-2-choose-between-automatic-or-manual-device-onboarding).<br/><br/>--- or ---<br/><br/>If you plan to continue using Microsoft Endpoint Manager, proceed to [View and manage devices in Microsoft Defender for Business](mdb-manage-devices.md).  |
 | **You are not currently using Microsoft Endpoint Manager**<br/><br/>Defender for Business will prompt you to choose an onboarding method. You have several options available, including using a local script or Microsoft Endpoint Manager.  | Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method). |
 | **You are using a non-Microsoft productivity and device management tool**<br/><br/>If you're using a non-Microsoft productivity and device management tool, you can onboard devices manually in Defender for Business (*recommended*), or you can continue using your existing tool to manage your devices and security settings. | Proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).<br/><br/>--- or ---<br/><br/>Connect your existing productivity and device management tool to Defender for Business.  |
 
@@ -58,7 +58,7 @@ Review the scenarios listed in the following table and select a path. Then proce
 > [!NOTE]
 > If you are not already using Microsoft Endpoint Manager (or Microsoft Intune), skip this section and proceed to [Part 3: Choose a manual onboarding method](#part-3-choose-a-manual-onboarding-method).
 
-If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices to Defender for Business automatically or manually. The following table summarizes these options.
+If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you can choose to onboard devices to Defender for Business automatically or manually. The following table summarizes these options and what to do next.
 <br/><br/>
 
 | Option | What to do next |
@@ -70,7 +70,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 Several onboarding methods are available in Defender for Business. 
 
-Review the options that are described in the following table, and then proceed to [Part 4: Onboard devices in the Microsoft 365 Defender portal](#part-4-onboard-devices-in-the-microsoft-365-defender-portal):<br/><br/>
+Learn about onboarding methods in the following table, and then proceed to [Part 4: Onboard devices in the Microsoft 365 Defender portal](#part-4-onboard-devices-in-the-microsoft-365-defender-portal):<br/><br/>
 
 | Method | Description |
 |:---|:---|
