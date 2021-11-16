@@ -92,7 +92,7 @@ Your first step is to select a device that will perform the authenticated networ
 
 ## Permissions
 
-To configure assessment jobs, the following user permission option is required: **Manage security settings in Defender for Cloud**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
+To configure assessment jobs, the following user permission option is required: **Manage security settings in Defender**. You can find the permission by going to **Settings** \> **Roles**. For more information, see [Create and manage roles for role-based access control](user-roles.md).
 
 ## Install the network scanner
 
@@ -115,7 +115,7 @@ To complete the network scanner registration process:
     > [!NOTE]
     > You may need to change Command Prompt settings to be able to copy the URL.
 
-2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Defender for Cloud."
+2. Enter the code and sign in using a Microsoft account that has the Defender for Endpoint permission called "Manage security settings in Defender."
 
 3. When finished, you should see a message confirming you have signed in.
 
@@ -182,7 +182,7 @@ Validate that the scanner is running properly. Then go to the scan definition an
 
 ### Required threat and vulnerability management user permission
 
-Registration finished with an error: "It looks like you don't have sufficient permissions for adding a new agent. The required permission is 'Manage security settings in Defender for Cloud'."
+Registration finished with an error: "It looks like you don't have sufficient permissions for adding a new agent. The required permission is 'Manage security settings in Defender'."
 
 Press any key to exit.
 
