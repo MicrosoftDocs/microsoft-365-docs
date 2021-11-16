@@ -33,15 +33,15 @@
       href: mdb-get-started.md
     - name: Use Microsoft Defender for Business
       items: 
+      - name: View and manage devices
+        href: mdb-manage-devices.md
       - name: View and manage incidents
         href: mdb-view-manage-incidents.md
       - name: Respond to and mitigate threats
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
-      - name: View and manage devices
-        href: mdb-manage-devices.md
-    - name: Manage your settings, policies, and devices
+    - name: Manage settings and policies
       items: 
       - name: View and edit policies
         href: mdb-view-edit-policies.md
