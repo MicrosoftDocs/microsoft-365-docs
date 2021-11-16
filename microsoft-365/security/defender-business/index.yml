@@ -35,8 +35,6 @@ landingContent:
             url: mdb-simplified-configuration.md
           - text: How to get help or contact support
             url: mdb-get-help.md
-          - text: Frequently asked questions
-            url: mdb-faq.md
 
   # Card
   - title: Set up
@@ -101,5 +99,7 @@ landingContent:
             url: mdb-next-gen-configuration-settings.md
           - text: Firewall settings
             url: mdb-firewall.md
+          - text: Frequently asked questions
+            url: mdb-faq.md
           - text: Troubleshooting
             url: mdb-troubleshooting.md
