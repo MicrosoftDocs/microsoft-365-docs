@@ -11,10 +11,6 @@
         href: compare-mdb-m365-plans.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
-      - name: How to get help or contact support
-        href: mdb-get-help.md
-      - name: Frequently asked questions
-        href: mdb-faq.md
     - name: Setup and configuration
       items:
       - name: Setup overview
@@ -57,6 +53,10 @@
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings
         href: mdb-firewall.md
+      - name: Frequently asked questions
+        href: mdb-faq.md
       - name: Troubleshooting
         href: mdb-troubleshooting.md
+      - name: How to get help or contact support
+        href: mdb-get-help.md
 
