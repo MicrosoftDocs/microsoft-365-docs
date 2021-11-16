@@ -42,6 +42,7 @@ Watch the Microsoft 365 Message Center for confirmation when moves for each of E
 |Norway  <br/> |November 1, 2022  <br/> |
 |Germany  <br/> |May 1, 2023  <br/> |
 |Brazil  <br/> |June 1, 2023  <br/> |
+|Sweden  <br/> |June 1, 2024  <br/> |
 
 ## Exchange Online
 
