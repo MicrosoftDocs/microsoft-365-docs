@@ -21,7 +21,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Get started with Microsoft 365 Defender for Cloud
+# Get started with Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
