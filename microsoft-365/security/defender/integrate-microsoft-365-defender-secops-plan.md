@@ -48,7 +48,7 @@ Usually, the SOC team’s core function is to make sure all security devices suc
 
 ## Establish Red, Blue, and Purple team operational readiness
 
-Every SOC team should test its preparedness in responding to a cyber incident. Testing can be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual training exercise teams are created based on representative roles and are either playing the role of a Defender for Cloud (Blue Team), an attacker (Red Team), or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that is uncovered during the exercise (Purple Team).
+Every SOC team should test its preparedness in responding to a cyber incident. Testing can be done via training exercises, such as table-tops and practice runs with various individuals in IT, security, and at the business level. Individual training exercise teams are created based on representative roles and are either playing the role of a defender (Blue Team), an attacker (Red Team), or as observers seeking to improve methods and techniques of both the Blue and Red teams through strengths and weakness that is uncovered during the exercise (Purple Team).
 
 ## Next step
 
