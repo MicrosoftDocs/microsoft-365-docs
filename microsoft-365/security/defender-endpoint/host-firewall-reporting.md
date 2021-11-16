@@ -44,7 +44,7 @@ If you are an admin, you can now host firewall reporting to the [Microsoft 365 D
 > [!NOTE]
 > Make sure to follow the instructions from the section above and properly configure your devices for the early preview participation.
 
-- After enabling the events, Microsoft 365 Defender for Cloud will start to monitor the data.
+- After enabling the events, Microsoft 365 Defender will start to monitor the data.
   - Remote IP, Remote Port, Local Port, Local IP, Computer Name, Process across inbound and outbound connections.
 - Admins can now see Windows host firewall activity [here](https://security.microsoft.com/firewall).
   - Additional reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
@@ -54,7 +54,7 @@ If you are an admin, you can now host firewall reporting to the [Microsoft 365 D
 
 The following scenarios are supported during Ring0 Preview.
 
-### Firewall reporting in Defender for Cloud
+### Firewall reporting
 
 Here is a couple of examples of the firewall report pages. Here you will find a summary of inbound, outbound, and application activity. You can access this page directly by going to <https://security.microsoft.com/firewall>.
 
