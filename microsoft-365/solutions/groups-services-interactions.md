@@ -68,7 +68,7 @@ The admin center also provides several guest invitation control measures that go
 
 **SharePoint**
 
-SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 Group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 Group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
+SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
 
 ### User experiences
 
@@ -170,7 +170,7 @@ Deleting the group in Azure AD will delete relevant group-associated services an
 
 Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with a variety of Microsoft and third-party services.
 
-By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook. This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 Group.
+By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook. This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 group.
 
 **Key features provided to Groups**
 
@@ -440,7 +440,7 @@ Yes, deleting the workspace in Power BI will delete group and  group-associated 
 
 Power BI provides interactive data-driven dashboards and reports.
 
-While creating a new workspace in Power BI does not create a Microsoft 365 Group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
+While creating a new workspace in Power BI does not create a Microsoft 365 group, creating a group by any other means creates a  new (not classic) workspace in Power BI.
 
 **Key features provided to groups**
 
