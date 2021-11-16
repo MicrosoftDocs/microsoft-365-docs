@@ -98,9 +98,12 @@ Follow these steps to onboard devices:
 
 3. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Microsoft Endpoint Manager**, **Local script**, and so on). Follow the guidance provided for the method you selected.
 
+> [!IMPORTANT]
+> If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.md).
+
 ## What if I want to onboard devices gradually?
 
-If you want to onboard your company's devices in phases (as in gradual device onboarding), follow these steps:
+If you want to onboard your company's devices in phases (gradual device onboarding), follow these steps:
 
 1. Identify a set of devices to onboard.
 
@@ -114,10 +117,6 @@ If you want to onboard your company's devices in phases (as in gradual device on
 
 > [!TIP]
 > You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
-
-## What if onboarding fails?
-
-See [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.md).
 
 ## What if I want to offboard a device?
 
