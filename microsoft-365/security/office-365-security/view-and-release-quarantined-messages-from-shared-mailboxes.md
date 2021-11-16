@@ -32,13 +32,7 @@ Previously, the ability for users to manage quarantined messages sent to a share
 Now, automapping is no longer required for users to manage quarantined messages that were sent to shared mailboxes. It just works. There are two different methods to access quarantined messages that were sent to a shared mailbox:
 
 - If the admin has configured [quarantine policies](quarantine-policies.md) to allow quarantine notifications (formerly known as end-user spam notifications), any user that has access to the quarantine notifications in the shared mailbox can click the **Review** button in the notification to go to quarantine in the Microsoft 365 Defender portal. Note that this method only allows users to manage quarantined messages that were sent to the shared mailbox. Users can't manage their own quarantine messages in this context.
-- The user can [go to the quarantine in the Microsoft 365 Defender portal](find-and-release-quarantined-messages-as-a-user.md). By default, only messages that were sent to the user are shown. However, the user can change the **Sort results** (the **Message ID button** by default) to **Recipient email address**, enter the shared mailbox email address, and then click **Refresh** to see the quarantined messages that were sent to the shared mailbox.
-
-  ![Sorting quarantined messages by recipient email address.](../../media/quarantine-sort-results-by-recipient-email-address.png)
-
-Regardless of the method, users can avoid confusion by including the **Recipient** column for quarantined messages. The maximum number of columns to display is 7, so the user will need to click **Modify columns**, remove an existing column (for example, **Policy type**), select **Recipient**, and then click **Save** or **Save as default**.
-
-  ![Remove the Policy type column and add the Recipient column to quarantine.](../../media/quarantine-add-recipient-column.png)
+- The user can [go to quarantine in the Microsoft 365 Defender portal](find-and-release-quarantined-messages-as-a-user.md) and click **Filter** to filter the results by **Recipient address** (the email address of the shared mailbox). On the main **Quarantine** page, you can click on the **Recipient** column to sort by messages that were sent to the shared mailbox.
 
 ## Things to keep in mind
 

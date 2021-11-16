@@ -44,9 +44,13 @@ You can do this through the settings page or by machine groups if you deem certa
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
-- The Antimalware client version must be 4.18.1906.x or later.
-- Supported on machines on Windows 10, version 1709 or later, or Windows 11.
-- Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender > Settings > Endpoints > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+- The Antimalware client version must be 4.18.1906.x or later. 
+- Supported on machines on Windows 10, version 1709 or later, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, and Windows Server 2022.
+   
+    >[!NOTE]
+    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
+
+- Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]

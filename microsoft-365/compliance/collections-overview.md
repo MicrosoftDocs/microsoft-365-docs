@@ -20,9 +20,6 @@ description: "Use collections in Advanced eDiscovery to search for and collect c
 
 # Learn about collections in Advanced eDiscovery
 
-> [!NOTE]
-> We're rolling out a new collections experience in Advanced eDiscovery, which is described in this article. This rollout will take a number of weeks before it's available to all organizations. If the new collections experience isn't available in your organization, you can still collect case content with the [Advanced eDiscovery search tool](create-search-to-collect-data.md).
-
 When organizations are faced with gathering the communications and content that may be relevant to an investigation or potential litigation, they face a significant challenge under the best of circumstances. In today’s modern workplace, the volume, variety, and velocity of content is enabling innovation and remote work, while also expanding the requirements and process for managing collections for eDiscovery investigations.
 
 The collection workflow poses significant technical challenges around extracting content from native locations and sources. It's also a critical point in the assessment and strategy for common litigation or investigations scenarios. As organizations begin to assess an investigation, the first questions asked are who was involved? After identifying who was involved, these custodians can quickly be placed on hold to preserve relevant content. The next question is what took place? To answer this second fundamental question of any investigation, managers must turn to the data. To quickly assess the most relevant content to the question of what took place, managers start to refine the target of the question to ensure that the collection results are comprehensive without being too broad.

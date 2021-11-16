@@ -2,8 +2,6 @@
 title: Contact Microsoft Defender for Endpoint support
 description: Learn how to contact Microsoft Defender for Endpoint support
 keywords: support, contact, premier support, solutions, problems, case
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -42,7 +40,7 @@ It's important to know the specific roles that have permission to open support c
 
 At a minimum, you must have a Service Support Administrator **OR** Helpdesk Administrator role.
 
-For more information on which roles have permission see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
+For more information on which roles have permission, see, [Security Administrator permissions](/azure/active-directory/roles/permissions-reference#security-administrator). Roles that include the action `microsoft.office365.supportTickets/allEntities/allTasks` can submit a case.
 
 For general information on admin roles, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true).
 
@@ -58,7 +56,7 @@ Accessing the new support widget can be done in one of two ways:
 
     ![Image of the need help button.](images/need-help-option.png)
 
-In the widget you will be offered two options:
+In the widget you'll be offered two options:
 
 - Find solutions to common problems
 - Open a service request
@@ -69,14 +67,14 @@ This option includes articles that might be related to the question you may ask.
 
 :::image type="content" source="../../media/contactsupport1.png" alt-text="How can we help?":::
 
-In case the suggested articles are not sufficient, you can open a service request.
+In case the suggested articles aren't sufficient, you can open a service request.
 
 ## Open a service request
 
 Learn how to open support tickets by contacting Defender for Endpoint support.
 
 > [!NOTE]
-> If you have a premier support contract with Microsoft, you will see the premier tag on the widget. If not, contact your Microsoft account manager.
+> If you have a premier support contract with Microsoft, you'll see the premier tag on the widget. If not, contact your Microsoft account manager.
 
 ### Contact support
 
@@ -84,8 +82,8 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 
 :::image type="content" source="../../media/contactsupport2.png" alt-text="contact support 2":::
 
-1. Fill in a title and description for the issue you are facing, as well as a phone number and email address where we may reach you.
-2. (Optional) Include up to five attachments that are relevant to the issue in order to provide additional context for the support case.
+1. Fill in a title and description for the issue you are facing, the phone number and email address where we may reach you.
+2. (Optional) Include up to five attachments that are relevant to the issue to provide additional context for the support case.
 3. Select your time zone and an alternative language, if applicable. The request will be sent to Microsoft Support Team. The team will respond to your service request shortly.
 
 ## Related topics

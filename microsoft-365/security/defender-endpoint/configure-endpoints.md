@@ -32,8 +32,22 @@ ms.technology: mde
 
 Devices in your organization must be configured so that the Defender for Endpoint service can get sensor data from them. There are various methods and deployment tools that you can use to configure the devices in your organization.
 
-The following deployment tools and methods are supported:
+In general, you'll identify the Windows device you're onboarding, then follow the corresponding tool appropriate to the device or your environment.
 
+![Image of onboarding tools and methods](images/onboarding-config-tools.png)
+
+## Endpoint onboarding tools
+Depending on the Windows endpoint you want to onboard, use the corresponding tool or method described in the following table.
+
+Windows device | Onboarding tool or method
+:---|:---
+|<ul><li> Windows 10</li> <li>Windows Server 1803 and 2019, and 2022</li> <li>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup></li></ul>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br>   [Group Policy](configure-endpoints-gp.md)<br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br>    [VDI scripts](configure-endpoints-vdi.md) <br><br> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.
+|<ul><li> Windows Server 2008 R2 SP1 </li></ul>| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br>[Onboard previous versions of Windows](onboard-downlevel.md) or [Azure Defender](/azure/security-center/security-center-wdatp) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
+|<ul><li> Windows 7 SP1 </li> <li>  Windows 7 SP1 Pro </li> <li>  Windows 8.1 Pro </li> <li> Windows 8.1 Enterprise</li></ul>  | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).
+
+
+
+(<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
 Topic|Description
 :---|:---

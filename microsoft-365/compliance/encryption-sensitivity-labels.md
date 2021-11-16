@@ -48,6 +48,29 @@ Encryption uses the Azure Rights Management service (Azure RMS) from Azure Infor
 
 When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](/azure/information-protection/configure-super-users).
 
+## Important prerequisites
+
+Before you can use encryption, you might need to do some configuration tasks. When you configure encryption settings, there's no check to validate that these prerequisites are met.
+
+- Activate protection from Azure Information Protection
+    
+    For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](/azure/information-protection/activate-service).
+
+- Check for network requirements
+    
+    You might need to make some changes on your network devices such as firewalls. For details, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure) from the Azure Information Protection documentation.
+
+- Configure Exchange for Azure Information Protection
+    
+    Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
+    
+    For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
+    
+    To ensure that Exchange can support these additional scenarios, see the following:
+    
+    - For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](/azure/information-protection/deploy-rms-connector). 
+
 ## How to configure a label for encryption
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure **Files & emails** is selected for the label's scope: 
@@ -418,28 +441,6 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 For the best collaboration experience for files that are encrypted by a sensitivity label, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web.
 
 
-## Important prerequisites
-
-Before you can use encryption, you might need to do some configuration tasks.
-
-- Activate protection from Azure Information Protection
-    
-    For sensitivity labels to apply encryption, the protection service (Azure Rights Management) from Azure Information Protection must be activated for your tenant. In newer tenants, this is the default setting, but you might need to manually activate the service. For more information, see [Activating the protection service from Azure Information Protection](/azure/information-protection/activate-service).
-
-- Check for network requirements
-    
-    You might need to make some changes on your network devices such as firewalls. For details, see [Firewalls and network infrastructure](/azure/information-protection/requirements#firewalls-and-network-infrastructure) from the Azure Information Protection documentation.
-
-- Configure Exchange for Azure Information Protection
-    
-    Exchange does not have to be configured for Azure Information Protection before users can apply labels in Outlook to encrypt their emails. However, until Exchange is configured for Azure Information Protection, you do not get the full functionality of using Azure Rights Management protection with Exchange.
-    
-    For example, users cannot view encrypted emails on mobile phones or with Outlook on the web, encrypted emails cannot be indexed for search, and you cannot configure Exchange Online DLP for Rights Management protection. 
-    
-    To ensure that Exchange can support these additional scenarios, see the following:
-    
-    - For Exchange Online, see the instructions for [Exchange Online: IRM Configuration](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - For Exchange on-premises, you must deploy the [RMS connector and configure your Exchange servers](/azure/information-protection/deploy-rms-connector). 
 
 ## Next steps
 

@@ -25,6 +25,12 @@ description: "There are 200 sensitive information types that are ready for you t
 
 This article lists all sensitive information type entity definitions. Each definition shows what a DLP policy looks for to detect each type. To learn more about sensitive information types, see [Sensitive information types](sensitive-information-type-learn-about.md)
 
+> [!NOTE]
+> Mapping of confidence level (high/medium/low) with accuracy number (numeric value of 1 to 100)
+> - Low confidence: 65 or below
+> - Medium confidence: 75
+> - High confidence: 85
+
 ## ABA routing number
 
 ### Format
@@ -3315,6 +3321,8 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Chile identity no.
 - Chile identity number
 - Chile identity #
+- R.U.T
+- R.U.N
 
 
 ## China resident identity card (PRC) number
@@ -3379,7 +3387,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-14 to 16 digits that can be formatted or unformatted (dddddddddddddddd) and that must pass the Luhn test.
+14 to 19 digits that can be formatted or unformatted (dddddddddddddddd) and that must pass the Luhn test.
 
 ### Pattern
 
@@ -3387,7 +3395,7 @@ Detects cards from all major brands worldwide, including Visa, MasterCard, Disco
 
 ### Checksum
 
-Yes, the Luhn checksum
+Yes, the Luhn check
 
 ### Definition
 
@@ -5021,7 +5029,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 10 digits:
 - six digits in the format DDMMYY, which are the date of birth
-- a hyphen
+- an optional space or hyphen
 - four digits where the final digit is a check digit
 
 ### Checksum
@@ -5347,13 +5355,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 #### Keywords_estonia_eu_driver's_license_number
 
--- permis de conduire
+- permis de conduire
 - juhilubade numbrid
 - juhiloa number
 - juhiluba
 
-
 ## Estonia Personal Identification Code
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -7196,37 +7204,58 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-since 1 November 2010: Nine letters and digits
+since 1 November 2010: Nine to eleven letters and digits
 
 from 1 April 1987 until 31 October 2010: 10 digits
 
 ### Pattern
 
-since 1 November 2010:
-- one letter (not case-sensitive)
-- eight digits
+since 1 November 2010: 9 to 11 characters alphanumeric pattern
+- one L, M, N, P, R, T, V, W, X, Y (case insensitive)
+- eight digits or letters in C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y and Z (case insensitive)
+- optional check digit
+- Optional d/D
 
 from 1 April 1987 until 31 October 2010:
 - 10 digits
 
 ### Checksum
 
-No
+Yes
 
 ### Definition
 
-A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_germany_id_card finds content that matches the pattern.
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_german_id_card_with_check` finds content that matches the pattern.
+- A keyword from `Keyword_germany_id_card` is found.
+- The checksum passes.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression `Regex_germany_id_card` finds content that matches the pattern (9 characters without check digit issued pre-2010 or 10 digits pattern issued posy 2010).
 - A keyword from Keyword_germany_id_card is found.
 
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_german_id_card_with_check` finds content that matches the pattern.
+- The checksum passes.
+
+
 ```xml
-<!-- Germany Identity Card Number -->
-<Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" recommendedConfidence="65" patternsProximity="300">
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Regex_germany_id_card"/>
-     <Match idRef="Keyword_germany_id_card"/>
-  </Pattern>
-</Entity>
+      <!-- Germany Identity Card Number -->
+      <Entity id="e577372f-c42e-47a0-9d85-bebed1c237d4" patternsProximity="300" recommendedConfidence="75"> 
+        <Pattern confidenceLevel="75">
+         <IdMatch idRef="Regex_germany_id_card" /> 
+         <Match idRef="Keyword_germany_id_card" /> 
+        </Pattern>
+        <Version minEngineVersion="15.20.4545.000"> 
+          <Pattern confidenceLevel="85">
+           <IdMatch idRef="Func_german_id_card_with_check" />
+            <Match idRef="Keyword_germany_id_card" /> 
+          </Pattern> 
+          <Pattern confidenceLevel="65">
+           <IdMatch idRef="Func_german_id_card_with_check" /> 
+          </Pattern> 
+        </Version>
+      </Entity>
 ```
 
 ### Keywords
@@ -7250,19 +7279,16 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Germany passport number
 
-This entity is included in the EU Passport Number sensitive information type and is available as a stand-alone sensitive information type entity.
-
 ### Format
 
-10 digits or letters
+9 to 11 characters
 
 ### Pattern
 
-Pattern must include all of the following:
-- first character is a digit or a letter from this set (C, F, G, H, J, K)
-- three digits
-- five digits or letters from this set (C, -H, J-N, P, R, T, V-Z)
-- a digit
+- one letter in C, F, G, H, J, K (case insensitive)
+- eight digits or letters in C, F, G, H, J, K, L, M, N, P, R, T, V, W, X, Y and Z (case insensitive)
+- optional check digit
+- Optional d/D
 
 ### Checksum
 
@@ -7271,32 +7297,40 @@ Yes
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_german_passport finds content that matches the pattern.
+- The function `Func_german_passport_checksum` finds content that matches the pattern.
 - A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
 - The checksum passes.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_german_passport_data finds content that matches the pattern.
+- The function `Func_german_passport` finds content that matches the nine characters pattern (without check digit and optional d/D).
 - A keyword from `Keyword_german_passport` or `Keywords_eu_passport_number_common` is found.
+
+A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function `Func_german_passport_checksum` finds content that matches the pattern.
 - The checksum passes.
 
 ```xml
     <!-- German Passport Number -->
     <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-      <Pattern confidenceLevel="85">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport" />
         <Any minMatches="1">
           <Match idRef="Keyword_german_passport" />
           <Match idRef="Keywords_eu_passport_number_common" />
         </Any>
       </Pattern>
-      <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keywords_eu_passport_number_common" />
-        </Any>
-      </Pattern>
+      <Version minEngineVersion="15.20.4570.0">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_german_passport_checksum" />
+          <Any minMatches="1">
+            <Match idRef="Keyword_german_passport" />
+            <Match idRef="Keywords_eu_passport_number_common" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_german_passport_checksum" />
+        </Pattern>
+      </Version>
     </Entity>
 ```
 
@@ -10284,6 +10318,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Corporate
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -10345,6 +10380,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Japan My Number - Personal
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13008,12 +13044,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### Format
 
-three letters, a space (optional), and four digits
+three letters and four digits
 
 ### Pattern
 
 - three letters (not case-sensitive) except 'I' and 'O'
-- a space (optional)
 - four digits
 
 ### Checksum
@@ -13050,15 +13085,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - NHI
 - New Zealand
-- Health
-- treatment
-- National Health Index Number
-- nhi number
-- nhi no.
+- National Health Index
 - NHI#
-- National Health Index No.
-- National Health Index Id
-- National Health Index #
+- National Health Index#
 
 ## New Zealand social welfare number
 
@@ -15169,6 +15198,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - številke vozniških dovoljenj
 
 ## Slovenia Unique Master Citizen Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -15689,6 +15719,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - licencia manejo
 
 ## Spain DNI
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -17265,6 +17296,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## U.K. Unique Taxpayer Reference Number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -17640,20 +17672,16 @@ No
 ### Definition
 
 A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function `Func_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_unformatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function  Func_unformatted_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_randomized_formatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
-
-A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_randomized_unformatted_ssn finds content that matches the pattern.
-- A keyword from Keyword_ssn is found.
+- The function `Func_randomized_formatted_ssn` or `Func_randomized_unformatted_ssn` finds content that matches the pattern.
+- A keyword from `Keyword_ssn` is found.
 
 
 ```xml
@@ -17703,7 +17731,8 @@ nine digits
 
 ### Pattern
 
-nine consecutive digits
+- one letter or digit
+- eight digits
 
 ### Checksum
 

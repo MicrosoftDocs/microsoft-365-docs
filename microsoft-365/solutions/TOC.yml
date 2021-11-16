@@ -33,7 +33,7 @@
       items:
       - name: Overview   
         href: setup-secure-collaboration-with-teams.md
-      - name: Step 1. Configure three tiers of protection with Microsoft Teams
+      - name: Configure three tiers of protection with Microsoft Teams
         items:
         - name: Three tiers of protection overview
           href: configure-teams-three-tiers-protection.md
@@ -45,7 +45,7 @@
           href: configure-teams-highly-sensitive-protection.md
         - name: Configure a team with security isolation
           href: secure-teams-security-isolation.md
-      - name: Step 2. Configure external sharing
+      - name: Configure external sharing
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
@@ -140,6 +140,8 @@
              href: ../admin/add-users/remove-former-employee-step-6.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
            - name: Step 7. Delete a former employee's user account
              href: ../admin/add-users/remove-former-employee-step-7.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json    
+      - name: Migrate your content to Microsoft 365
+        href: /sharepointmigration/migrate-to-sharepoint-online?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
       - name: Migrate file shares to Microsoft 365
         items:
           - name: Overview
@@ -186,14 +188,14 @@
           href: /sharepoint/guide-to-setting-up-viva-connections?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Get a home site for your intranet
           href: /sharepoint/home-site-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Plan and produce a town hall
-          href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
         - name: Distribute organizational news
           href: /sharepoint/distribute-corporate-news-to-your-organization?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: Leadership connection
+        - name: Connect leaders and your organization
           href: /sharepoint/leadership-connection?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-        - name: New employee onboarding
-          href: /sharepoint/onboard-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Hold a town hall using Yammer
+          href: /sharepoint/hold-town-hall-using-yammer?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+        - name: Build learning and training experiences
+          href: /sharepoint/build-learning-and-training-experiences-for-employees?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
     - name: Teamwork and collaboration
       items:
@@ -274,6 +276,8 @@
         href: ../compliance/insider-risk-solution-overview.md
       - name: Auditing solutions
         href: ../compliance/auditing-solutions-overview.md
+      - name: eDiscovery solutions in Microsoft 365
+        href: ../compliance/ediscovery.md
       - name: Microsoft 365 Advanced eDiscovery
         href: ../compliance/overview-ediscovery-20.md
       - name: Regulatory compliance action plans
@@ -295,15 +299,21 @@
         href: ../security/microsoft-365-security-for-bdm.md
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
-      - name: Deploy Microsoft Defender for Endpoints
-        href: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases.md
-      - name: Migrate from Symantec to Microsoft Defender for Endpoint
-        href: ../security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration.md
-      - name: Migrate from McAfee to Microsoft Defender for Endpoint
-        href: ../security/defender-endpoint/mcafee-to-microsoft-defender-migration.md
+      - name: Evaluate and pilot Microsoft 365 Defender
+        href: ../security/defender/eval-overview.md
+      - name: Respond to your first incident
+        href: ../security/defender/first-incident-overview.md
+      - name: Deploy Microsoft Defender for Endpoint
+        href: /microsoft-365/security/defender-endpoint/deployment-phases.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-microsoft-defender-migration.md
-
+      - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
+        href: ../security/office-365-security/migrate-to-defender-for-office-365.md        
+      - name: Security recommendations for priority accounts in Microsoft 365
+        href: ../security/office-365-security/security-recommendations-for-priority-accounts.md
+      - name: Remove a former employee and secure data
+        href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
+   
     - name: Contoso case studies
       items:
       - name: Microsoft 365 solutions for the Contoso Corporation
@@ -326,7 +336,7 @@
     
 - name: Industry-specific guidance
   items: 
-    - name: Finance
+    - name: Financial services
       items:
       - name: Security and compliance for financial services
         href: financial-services-secure-collaboration.md
