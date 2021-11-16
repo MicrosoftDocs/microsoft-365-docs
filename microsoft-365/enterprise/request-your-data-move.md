@@ -28,19 +28,20 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 
 | Customers with signup country in | Request period begins | Request deadline |
 |:-----|:-----|:-----|
-|Japan  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Australia, New Zealand, Fiji  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|India  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|Canada  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Kingdom  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|South Korea  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|France  <br/> |January 1, 2020  <br/> |June 30, 2020  <br/> |
-|United Arab Emirates  <br/> |July 15, 2019  <br/> |June 30, 2020  <br/> |
-|South Africa  <br/> |July 25, 2019  <br/> |June 30, 2020  <br/> |
-|Switzerland, Liechtenstein  <br/> |December 10, 2019  <br/> |June 30, 2020  <br/> |
-|Norway  <br/> |April 15, 2020  <br/> |October 31, 2020  <br/> |
-|Germany  <br/> |November 1, 2020  <br/> |April 30, 2021  <br/> |
-|Brazil  <br/> |November 18, 2020  <br/> |May 31, 2021  <br/> |
+|Japan  <br/> | <br/> |Request period closed  <br/> |
+|Australia, New Zealand, Fiji  <br/> | <br/> |Request period closed  <br/> |
+|India  <br/> | <br/> |Request period closed  <br/> |
+|Canada  <br/> | <br/> |Request period closed  <br/> |
+|United Kingdom  <br/> | <br/> |Request period closed  <br/> |
+|South Korea  <br/> | <br/> |Request period closed  <br/> |
+|France  <br/> | <br/> |Request period closed  <br/> |
+|United Arab Emirates  <br/> | <br/> |Request period closed  <br/> |
+|South Africa  <br/> | <br/> |Request period closed  <br/> |
+|Switzerland, Liechtenstein  <br/> | <br/> |Request period closed  <br/> |
+|Norway  <br/> | <br/> |Request period closed  <br/> |
+|Germany  <br/> | <br/> |Request period closed  <br/> |
+|Brazil  <br/> | <br/> |Request period closed  <br/> |
+|Sweden  <br/> |November 16, 2021  <br/> |May 31, 2022  <br/> |
 
 ## How to request a move
 
