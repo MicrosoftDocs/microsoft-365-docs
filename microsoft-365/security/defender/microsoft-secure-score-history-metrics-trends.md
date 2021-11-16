@@ -55,7 +55,7 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 ### Compare your score to organizations like yours
 
-There are two places to see how your score compares to organizations that are similar to you.
+There are two places to see how your score compares to organizations that are similar to yours.
 
 #### Comparison bar chart
 
