@@ -67,7 +67,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 ## Part 3: Choose a manual onboarding method
 
-You can choose from several onboarding methods in Defender for Business, as described in the following table:<br/><br/>
+Several onboarding methods are available in Defender for Business, as described in the following table:<br/><br/>
 
 | Method | Description |
 |:---|:---|
