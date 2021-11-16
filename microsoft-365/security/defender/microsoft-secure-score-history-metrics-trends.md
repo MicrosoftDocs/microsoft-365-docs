@@ -55,7 +55,7 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 ### Compare your score to organizations like yours
 
-There are two places to see how your score compares to organizations that are similar to you. In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions.
+There are two places to see how your score compares to organizations that are similar to you.
 
 #### Comparison bar chart
 
@@ -70,15 +70,6 @@ The comparison bar chart is the **Overview** tab. Hover over the chart to view t
     4. Microsoft products used are 80% similar
     5. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
 
-- **Custom Comparison**: needs to be set up by selecting **Manage Comparison** based on the following criteria:
-    1. Selected industry(s)
-    2. Selected organization size(s)
-    3. Selected region(s)
-    4. Selected license(s)
-    5. Microsoft products used are 80% similar
-    6. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
-
-If you've made a custom selection but the results have less than five other tenants that we can compare against, you'll see “Not available due to limited data”.
 
 #### Comparison trend
 
