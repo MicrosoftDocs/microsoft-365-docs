@@ -27,7 +27,7 @@ landingContent:
         links:
           - text: What is Defender for Business?
             url: mdb-overview.md
-          - text: Get Defender for Business
+          - text: How to get Defender for Business
             url: get-defender-business.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
