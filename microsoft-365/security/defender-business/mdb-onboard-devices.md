@@ -112,6 +112,10 @@ If you want to onboard your company's devices in phases (as in gradual device on
 > [!TIP]
 > You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
+## What if onboarding failed?
+
+See [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.md).
+
 ## What if I want to offboard a device?
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
