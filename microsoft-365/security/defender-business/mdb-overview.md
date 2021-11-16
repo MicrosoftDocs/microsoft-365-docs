@@ -241,6 +241,8 @@ To learn more, see [Defender for Endpoint APIs](../defender-endpoint/management-
 
 Now that you have an overview of Microsoft Defender for Business, your next steps include:
 
+- [Get Microsoft Defender for Business](get-defender-business.md)
+
 - [Setting up and configuring Microsoft Defender for Business](mdb-setup-configuration.md)
 
 - [Getting started with Microsoft Defender for Business](mdb-get-started.md)
