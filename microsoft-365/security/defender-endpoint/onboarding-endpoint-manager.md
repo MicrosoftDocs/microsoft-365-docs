@@ -39,7 +39,9 @@ In the [Planning](deployment-strategy.md) topic, there were several methods prov
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+
+-based device management.
 
 This topic guides users in:
 
@@ -58,7 +60,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 Here are the links you'll need for the rest of the process:
 
 - [MEM portal](https://aka.ms/memac)
-- [Defender for Cloud](https://securitycenter.windows.com/)
+- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
 - [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Endpoint Manager, check out these resources:
