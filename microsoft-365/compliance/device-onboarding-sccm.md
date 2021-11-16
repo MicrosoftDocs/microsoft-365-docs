@@ -1,5 +1,5 @@
 ---
-title: Onboard Windows 10 devices using Configuration Manager
+title: Onboard Windows 10 and Windows 11 devices using Configuration Manager
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -18,16 +18,16 @@ search.appverid:
 description: Use Configuration Manager to deploy the configuration package on devices so that they are onboarded to the service.
 ---
 
-# Onboard Windows 10 devices using Configuration Manager
+# Onboard Windows 10 and Windows 11 devices using Configuration Manager
 
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- System Center 2012 R2 Configuration Manager
+- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ### Onboard devices using System Center Configuration Manager
 
-1. Open the Configuration Manager configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) from [Microsoft Compliance center](https://compliance.microsoft.com/).
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device Onboarding** > **Onboarding**.
 
@@ -42,10 +42,10 @@ description: Use Configuration Manager to deploy the configuration package on de
 7. Choose a predefined device collection to deploy the package to.
 
 > [!NOTE]
-> Microsoft 365 Endpoint data loss prevention doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
+> Microsoft 365 information protection doesn't support onboarding during the [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) phase. Make sure users complete OOBE after running Windows installation or upgrading.
 
 > [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that an device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
+> After onboarding the device, you can choose to run a detection test to verify that a device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test).
 >
 > Note that it is possible to create a detection rule on a Configuration Manager application to continuously check if a device has been onboarded. An application is a different type of object than a package and program.
 > If a device is not yet onboarded (due to pending OOBE completion or any other reason), Configuration Manager will retry to onboard the device until the rule detects the status change.
@@ -166,7 +166,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
 1. Confirming the configuration package has been correctly deployed and is running (or has successfully run) on the devices in your network.
 
-2. Checking that the devices are compliant with the Microsoft 365 Endpoint data loss prevention service (this ensures the device can complete the onboarding process and can continue to report data to the service).
+2. Checking that the devices are compliant with the Microsoft 365 device onboarding service (this ensures the device can complete the onboarding process and can continue to report data to the service).
 
 ### Confirm the configuration package has been correctly deployed
 
@@ -187,7 +187,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 
 > [!NOTE]
-> This procedure and registry entry applies to Endpoint DLP as well as Advanced Threat Protection.
+> This procedure and registry entry applies to Endpoint DLP as well as Defender for Endpoint.
 
 This rule should be a *non-remediating* compliance rule configuration item that monitors the value of a registry key on targeted devices.
 
@@ -200,9 +200,9 @@ Value: “1”
 For more information, see [Introduction to compliance settings in System Center 2012 R2 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10)).
 
 ## Related topics
-- [Onboard Windows 10 devices using Group Policy](dlp-configure-endpoints-gp.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](dlp-configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](dlp-configure-endpoints-script.md)
-- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](dlp-configure-endpoints-vdi.md)
+- [Onboard Windows 10 and Windows 11 devices using Group Policy](device-onboarding-gp.md)
+- [Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools](device-onboarding-mdm.md)
+- [Onboard Windows 10 and Windows 11 devices using a local script](device-onboarding-script.md)
+- [Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Troubleshoot Microsoft Defender Advanced Threat Protection onboarding issues](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

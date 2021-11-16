@@ -164,7 +164,7 @@ This section describes the policy settings that are only available in anti-phish
 Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
-- An example impersonation of the user michelle@contoso.com is michele@contoso.com.
+- User impersonation is the combination of the user's display name and email address. For example, Valeria Barrios (vbarrios@contoso.com) might be impersonated as Valeria Barrios, but with a completely different email address.
 
 > [!NOTE]
 > Impersonation protection looks for domains that are similar. For example, if your domain is contoso.com, we check for different top-level domains (.com, .biz, etc.) as impersonation attempts, but also domains that are even somewhat similar. For example, contosososo.com or contoabcdef.com might be seen as impersonation attempts of contoso.com.
