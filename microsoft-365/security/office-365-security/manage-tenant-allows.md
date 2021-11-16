@@ -27,7 +27,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that were blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are kept for as long as needed to give the system time to allow it naturally.
+Admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that were blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the entity (file, URL, or sender) did not happen, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are kept for as long as needed to give the system time to allow it naturally.
 
 > [!IMPORTANT]
 >
