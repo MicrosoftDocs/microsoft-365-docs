@@ -160,7 +160,7 @@ Confirm network protection is enabled on a local computer by using Registry edit
 > The following PowerShell script can be run under SYSTEM context to remove these settings:<!--CMADO9907132-->
 >
 > ```powershell
-> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender for Cloud' and ParentID='./Vendor/MSFT/Policy/Config'"
+> $defenderObject = Get-WmiObject -Namespace "root/cimv2/mdm/dmmap" -Class "MDM_Policy_Config01_Defender02" -Filter "InstanceID='Defender' and ParentID='./Vendor/MSFT/Policy/Config'"
 > $defenderObject.AttackSurfaceReductionRules = $null
 > $defenderObject.AttackSurfaceReductionOnlyExclusions = $null
 > $defenderObject.EnableControlledFolderAccess = $null
