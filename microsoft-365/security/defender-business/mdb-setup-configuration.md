@@ -43,10 +43,3 @@ Proceed to:
 
 - [Step 1: Review the requirements for Microsoft Defender for Business](mdb-requirements.md)
 
-- [Step 2: Assign roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md) 
- 
-- [Step 3: Set up email notifications](mdb-email-notifications.md)
-
-- [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
-
-- [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)

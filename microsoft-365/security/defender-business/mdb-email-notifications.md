@@ -65,6 +65,5 @@ To view or edit email notification settings for your company, follow these steps
 
 Proceed to:
 
-- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Step 4: Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
 
-- [Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md)
