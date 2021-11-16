@@ -42,7 +42,7 @@ You can specify the cloud block timeout period with an [endpoint security policy
 
 3. Select (or create) an antivirus policy.
 
-4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Defender for Cloud Cloud Extended Timeout In Seconds** box, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
+4. In the **Configuration settings** section, expand **Cloud protection**. Then, in the **Microsoft Defender Antivirus Extended Timeout In Seconds** box, specify the more time, in seconds, from 1 second to 50 seconds. Whatever you specify is added to the default 10 seconds.
 
 5. (This step is optional) Make any other changes to your antivirus policy. (Need help? See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
