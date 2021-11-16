@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 11/02/2021
+ms.date: 11/15/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -105,14 +105,16 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
-    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. Enter **0** in the **Value** column.
+    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. 
+    5. Enter **0** in the **Value** column.
 
 5. Choose **OK**.
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
-    3. Enter each file extension on its own line under the **Value name** columnEnter **0** in the **Value** column.
+    3. Enter each file extension on its own line under the **Value name** column.
+    4. Enter **0** in the **Value** column.
 
 7. Choose **OK**.
 
@@ -308,12 +310,12 @@ To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./comman
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-5.0 (Where 4.18.2110-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-5.0 (released in October 2021) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-6.0 (released in November 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
