@@ -37,6 +37,9 @@ You can not only look through analyze the sample model to get a better understan
 - Add a another extractor. For example, add one that extracts the *discount fee*.
 - Apply the model to a document library, and upload some of the training files to it to see how the model classifies files and extracts data from them.
 
+## Get sample models
+
+You can access the [SharePoint Syntex Sample repository](https://github.com/pnp/syntex-samples), which contains community samples that demonstrate different usage patterns of document understanding models. The samples in this repository contain both the document understanding model files and the files used to train the model. Once imported, you can use these models to process files and to view and edit the classifier and extractors.
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
