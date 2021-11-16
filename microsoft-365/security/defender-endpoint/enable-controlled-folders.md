@@ -49,7 +49,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 ## Windows Security app
 
-1. Open the Windows Security app by selecting the shield icon in the task bar. You can also search the start menu for **Defender for Cloud**.
+1. Open the Windows Security app by selecting the shield icon in the task bar. You can also search the start menu for **Windows Security**.
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then select **Ransomware protection**.
 
