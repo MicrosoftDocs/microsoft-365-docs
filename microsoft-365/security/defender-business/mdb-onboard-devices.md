@@ -67,23 +67,7 @@ If you are already using Microsoft Endpoint Manager (or Microsoft Intune), you c
 
 ## Part 3: Choose a manual onboarding method
 
-You can choose from several onboarding methods in Defender for Business, as described in this section.
-
-> [!IMPORTANT]
-> If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, make sure that all of the following requirements are met: 
-> 
-> - Devices must be running Windows 10 Professional/Enterprise (with [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) applied)
->
-> - Prerequisites must be met for [Security Management for Microsoft Defender for Endpoint](/mem/intune/protect/mde-security-integration). The following configurations must be in place:
->    - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) must be configured such that trust is created between devices and Azure AD.
->    - Defender for Business must have [security management enabled in Microsoft Endpoint Manager](#to-enable-security-management-in-microsoft-endpoint-manager) (instructions are included in this article).
->
-> - Devices must be able to connect to the following URLs: 
->   - `enterpriseregistration.windows.net` (for registration in Azure Active Directory)
->   - `login.microsoftonline.com` (for registration in Azure Active Directory)
->   - `*.dm.microsoft.com` (The wildcard (*) supports the cloud-service endpoints that are used for enrollment, check-in, and reporting, and can change as the service scales.)
-
-The following table describes manual onboarding methods in Defender for Business:
+You can choose from several onboarding methods in Defender for Business, as described in the following table:
 
 | Method | Description |
 |:---|:---|
@@ -96,18 +80,6 @@ The following table describes manual onboarding methods in Defender for Business
 
 > [!TIP]
 > If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method. Also, make sure to review [Onboarding devices in the Microsoft 365 Defender portal](#onboarding-devices-in-the-microsoft-365-defender-portal) (in this article).
-
-### To enable security management in Microsoft Endpoint Manager
-
-If you plan to use Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management to onboard devices, use the following procedure to enable security management in Microsoft Endpoint Manager.
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-2. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
-
-3. Under **OS platform**, turn on **Windows Client devices**.
-
-4. Select **Save**.
 
 ## Onboarding devices in the Microsoft 365 Defender portal
 
