@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/10/2021
+ms.date: 11/16/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -47,7 +47,7 @@ With Defender for Business, you can help protect the devices and data your busin
 - **Provide you with an overview of Defender for Business** so you know what’s included and how it works
    - Use this article as a starting point
    - [Compare security features in Microsoft Defender for Business to other plans](compare-mdb-m365-plans.md) 
-   - [How to get Microsoft Defender for Business](get-defender-business.md)
+   - [Find out how to get Microsoft Defender for Business](get-defender-business.md)
 
 - **Walk through setting up and configuring your threat protection capabilities** 
    - [See how to set up and configure Defender for Business](mdb-setup-configuration.md)
