@@ -13,7 +13,7 @@ metadata:
   - M365-security-compliance
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 11/15/2021
+  ms.date: 11/16/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -69,14 +69,14 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: View and manage devices
+            url: mdb-manage-devices.md
           - text: View and manage incidents
             url: mdb-view-manage-incidents.md
           - text: Respond to and mitigate threats
             url: mdb-respond-mitigate-threats.md
           - text: Review remediation actions
             url: mdb-review-remediation-actions.md
-          - text: View and manage devices
-            url: mdb-manage-devices.md
 
   # Card
   - title: Manage
