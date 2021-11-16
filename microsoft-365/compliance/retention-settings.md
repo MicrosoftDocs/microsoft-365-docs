@@ -298,6 +298,9 @@ After you've applied a policy for retention to a Microsoft 365 group, and that g
 
 ### Configuration information for Skype for Business
 
+> [!NOTE]
+> Skype for Business was [retired July 31, 2021](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833) and we encourage customers to migrate to Microsoft Teams. However, retention policies for Skype for Business continues to be supported for existing customers.
+
 Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
 
 ![Choose Skype location for retention policies.](../media/skype-location-retention-policies.png)
