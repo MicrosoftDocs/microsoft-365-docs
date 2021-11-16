@@ -303,9 +303,9 @@
        - name: Collaborate with Microsoft Threat Experts
          items:
               - name: Overview
-                href: ../mtp/microsoft-threat-experts.md
+                href: microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
-                href: ../mtp/configure-microsoft-threat-experts.md
+                href: configure-microsoft-threat-experts.md
     - name: Security operations guide
       items: 
        - name: Overview
