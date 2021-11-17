@@ -34,27 +34,7 @@ See the table below for sign-up options and the services that will apply to your
 
 ||**Option 1 - Microsoft Teams Essentials** |**Option 2 - Microsoft 365 Business Basic** |
 |:-----|:-----|:-----|
-|Available apps and services  <br/> |Sign in with your existing email account using Simplified Sign-Up. Microsoft Teams and OneDrive.  Free web versions of Word, Excel, PowerPoint on Office.com. <br/> **This set of apps is best for very small businesses who need to collaborate effectively over video meetings and chat**. |Microsoft Teams and OneDrive.  Microsoft Exchange, SharePoint, Bookings, Planner and Lists.  Premium Office web versions of Word, Excel, PowerPoint on Office.com. **Microsoft 365 Business Basic also lets you access a wide range of web-based services**: <br/>
-
-- New, branded business email accounts with Outlook, shared calendars within your business. <br/>
-
-- Bookings, appointment scheduling and Meeting recordings. <br/>
-
-- Shared document storage and SharePoint sites. <br/>
-
-- Microsoft Planner and Microsoft Lists. <br/>
-
-Microsoft 365 Business Basic offer additional services within Teams with Domain Account Sign-up:
-
-- Meeting recordings and anonymous call access in Microsoft Teams. <br/>
-
-- Easier document sharing within your business. <br/>
-
-- Support for the compliance needs for your industry. <br/>
-
-- Access and control over your employees’ use of services. <br/>
-
-- The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
+|Available apps and services  <br/> |Sign in with your existing email account using Simplified Sign-Up. Microsoft Teams and OneDrive.  Free web versions of Word, Excel, PowerPoint on Office.com. <br/> **This set of apps is best for very small businesses who need to collaborate effectively over video meetings and chat**. |Microsoft Teams and OneDrive.  Microsoft Exchange, SharePoint, Bookings, Planner and Lists.  Premium Office web versions of Word, Excel, PowerPoint on Office.com. **Microsoft 365 Business Basic also lets you access a wide range of web-based services**: <br/> - New, branded business email accounts with Outlook, shared calendars within your business. <br/> - Bookings, appointment scheduling and Meeting recordings. <br/> - Shared document storage and SharePoint sites. <br/> - Microsoft Planner and Microsoft Lists. <br/> Microsoft 365 Business Basic offer additional services within Teams with Domain Account Sign-up: <br/> - Meeting recordings and anonymous call access in Microsoft Teams. <br/> - Easier document sharing within your business. <br/> - Support for the compliance needs for your industry. <br/> - Access and control over your employees’ use of services. <br/> - The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
 |Required knowledge  <br/> |Let’s you get started without technical know-how required to run a domain.  <br/> |Requires you to buy a domain, or to own a domain. If you want to use an existing domain, you will need access credentials for the domain and you may need technical knowledge to prove ownership. <br/> |
 |Governing Agreement and data handling  <br/> |Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and **is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller** for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual’s user content or data.  until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. <br/> For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later As such, you should evaluate data ownership and intellectual property rights considerations accordingly. <br/> |Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. **Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Domain Account sign up with Microsoft Business Business Basic and sign up under the Domain Account enterprise-level agreement. <br/> |
 
