@@ -25,10 +25,10 @@
         href: mdb-onboard-devices.md
       - name: Step 5 - Configure your security settings
         href: mdb-configure-security-settings.md
-    - name: Get started using the portal
-      href: mdb-get-started.md
     - name: Use Microsoft Defender for Business
       items: 
+      - name: Get started using the portal
+        href: mdb-get-started.md
       - name: View and manage devices
         href: mdb-manage-devices.md
       - name: View and manage incidents

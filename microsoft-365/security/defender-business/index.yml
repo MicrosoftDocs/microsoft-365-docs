@@ -55,16 +55,12 @@ landingContent:
             url: mdb-view-edit-policies.md
 
   # Card
-  - title: Get started
+  - title: Use
     linkLists:
       - linkListType: get-started
         links:
           - text: Navigate the portal
             url: mdb-get-started.md
-
-  # Card
-  - title: Use
-    linkLists:
       - linkListType: how-to-guide
         links:
           - text: View and manage devices
