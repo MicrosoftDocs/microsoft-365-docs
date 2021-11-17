@@ -32,6 +32,6 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Name     |Description  |
 |---------|---------|
-|[Viva Topics FAQ](create-a-topic.md) |Read answers to frequently questions to help you understand more about Viva Topics.    |
+|[Viva Topics FAQ](create-a-topic.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
 |Row2     |         |
 |Row3     |         |
