@@ -126,7 +126,7 @@ For secure environments, be sure to disable authentication for apps that do not 
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 
-- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](/mem/intune/protect/app-modern-authentication-block).
+- Use PowerShell, see [Block apps that do not use modern authentication](/mem/intune/protect/app-modern-authentication-block).
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block.
 
 ## Get started with Cloud App Security or Office 365 Cloud App Security
