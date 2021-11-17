@@ -85,6 +85,12 @@ You can change and customize your discovery settings, for more information see [
 > [!NOTE]
 > The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.
 
+## Network device discovery
+
+## Device discovery integration
+
+Microsoft Defender for IoT is a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats.
+
 ## Device Inventory
 
 Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab.

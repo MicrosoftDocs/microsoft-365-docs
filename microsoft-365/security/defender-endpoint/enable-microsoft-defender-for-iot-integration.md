@@ -30,7 +30,7 @@ ms.technology: mde
 
 Enable the Microsoft Defender for IoT integration to extend Microsoft Defender for Endpoint device discovery capabilities. With Defender for IoT enabled, you're adding agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks [like Voice over Internet Protocol (VoIP), printers, and smart TVs]. This allows you take advantage of a single integrated solution that can secure your IoT and OT infrastructure.
 
-View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view. 
+View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view.
 
 A unified security solution for IoT and OT
 
@@ -48,37 +48,25 @@ The Sensor provides visibility to IoT-IoT communication or IoT-Internet communic
 
 Any discovered device from MDE\MDIOT sensors will be synced across both portals 
 
- 
 
 ## Prerequisites
 
-- The user who activates the setting must have permissions to create an app in Azure Active Directory (AAD). This is someone with the following roles:
+To enable Microsoft Defender for IoT the user must have the following roles:
 
-  - Security Administrator and either Global Administrator
-  - Cloud Application Administrator
-  - Application Administrator
-  - Owner of the service principal
+- Tenant global administrator in Azure Active Directory
+- Security administration for the Azure subscription that will be used for the Defender for IoT integration
 
-- During the initial activation, a pop-up screen is displayed for credentials to be entered. Make sure that you allow pop-ups for this site.
+## Enabling Microsoft Defender for IoT integration
 
-## Enabling SIEM integration
+1. In the navigation pane, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **APIs** \> **SIEM**.
+   :::image type="content" source="../../media/enable-defender-for-iot.png" alt-text="Image of Defender for IoT integration from Settings menu1.":::
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1.":::
+2. **Select subscription** displays a list of the available subscriptions under your Azure Active Directory (Azure AD) tenant.
 
-   > [!TIP]
-   > If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
+3. Choose the Azure subscription and select **Save**
 
-2. Select **Enable SIEM integration**. This activates the **SIEM connector access details** section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant.
-
-    > [!WARNING]
-    > The client secret is only displayed once. Make sure you keep a copy of it in a safe place.
-
-    ![Image of SIEM integration from Settings menu2.](images/siem_details.png)
-
-3. Choose the SIEM type you use in your organization.
-
+<!-->
    > [!NOTE]
    > If you select HP ArcSight, you'll need to save these two configuration files:
    >
