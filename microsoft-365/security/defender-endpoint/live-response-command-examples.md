@@ -31,7 +31,7 @@ Learn about common commands used in live response and see examples on how they'r
 
 Depending on the role you have, you can run basic or advanced live response commands. For more information on basic and advanced commands, see [Investigate entities on devices using live response](live-response.md).
 
-## analyze
+## `analyze`
 
 ```console
 # Analyze the file malware.txt
@@ -43,7 +43,7 @@ analyze file c:\Users\user\Desktop\malware.txt
 analyze process 1234
 ```
 
-## connections
+## `connections`
 
 ```console
 # List active connections in json format using parameter name
@@ -55,7 +55,7 @@ connections -output json
 connections json
 ```
 
-## dir
+## `dir`
 
 ```console
 # List files and sub-folders in the current folder
@@ -72,21 +72,21 @@ dir C:\Users\user\Desktop\
 dir -output json
 ```
 
-## fileinfo
+## `fileinfo`
 
 ```console
 # Display information about a file
 fileinfo C:\Windows\notepad.exe
 ```
 
-## findfile
+## `findfile`
 
 ```console
 # Find file by name
 findfile test.txt
 ```
 
-## getfile
+## `getfile`
 
 ```console
 # Download a file from a machine
@@ -111,7 +111,7 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > Use PowerShell as an alternative, if you have problems using this command from within Live Response.
 
-## library
+## `library`
 
 ```console
 # List files in the library
@@ -123,7 +123,7 @@ library
 library delete script.ps1
 ```
 
-## processes
+## `processes`
 
 ```console
 # Show all processes
@@ -145,7 +145,7 @@ processes -pid 123
 processes -name notepad.exe
 ```
 
-## putfile
+## `putfile`
 
 ```console
 # Upload file from library
@@ -162,7 +162,7 @@ putfile get-process-by-name.ps1 -overwrite
 putfile get-process-by-name.ps1 -keep
 ```
 
-## registry
+## `registry`
 
 ```console
 # Show information about the values in a registry key
@@ -175,7 +175,7 @@ registry HKEY_CURRENT_USER\Console\\ScreenBufferSize
 ```
 
 
-## remediate
+## `remediate`
 
 ```console
 # Remediate file in specific path
@@ -192,7 +192,7 @@ remediate process 7960
 remediate list
 ```
 
-## run
+## `run`
 
 ```console
 # Run PowerShell script from the library without arguments
@@ -209,7 +209,7 @@ run get-process-by-name.ps1 -parameters "-processName Registry"
 > For long running commands such as '**run**' or '**getfile**', you may want to use the '**&**' symbol at the end of the command to perform that action in the background.
 > This will allow you to continue investigating the machine and return to the background command when done using '**fg**' [basic command](live-response.md#basic-commands).
 
-## scheduledtask
+## `scheduledtask`
 
 ```console
 # Get all scheduled tasks
@@ -226,7 +226,7 @@ scheduledtasks Microsoft\Windows\Subscription\LicenseAcquisition
 scheduledtasks "Microsoft\Configuration Manager\Configuration Manager Health Evaluation"
 ```
 
-## undo
+## `undo`
 
 ```console
 # Restore remediated registry
