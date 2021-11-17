@@ -40,8 +40,9 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 
 ## Videos you can share with your team
 
-St. Luke’s Hospital uses Microsoft 365 to reimagine care for patients
+**St. Luke’s Hospital uses Microsoft 365 to reimagine care for patients**
 > [!VIDEO https://www.youtube.com/watch?v=-jcBjy88n4s]
 
-Microsoft Viva empowers Humana to achieve productivity & wellbeing in a hybrid workplace
+**Microsoft Viva empowers Humana to achieve productivity & wellbeing in a hybrid workplace**
 > [!VIDEO https://www.youtube.com/watch?v=vu1oqbuVOns]
+
