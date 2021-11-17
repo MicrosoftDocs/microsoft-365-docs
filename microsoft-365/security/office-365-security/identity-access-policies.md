@@ -48,7 +48,7 @@ The rest of this article describes how to configure these policies.
 > [!NOTE]
 > Requiring the use of multi-factor authentication (MFA) is recommended before enrolling devices in Intune to assure that the device is in the possession of the intended user. You must enroll devices in Intune before you can enforce device compliance policies.
 
-To give you time to accomplish these tasks, we recommend implementing the starting point policies in the order listed in this table. However, the MFA policies for recommended and highest security levels of protection can be implemented at any time.
+To give you time to accomplish these tasks, we recommend implementing the starting point policies in the order listed in this table. However, the MFA policies for enterprise and specialized security levels of protection can be implemented at any time.
 
 |Protection level|Policies|More information|Licensing|
 |---|---|---|---|
@@ -57,16 +57,15 @@ To give you time to accomplish these tasks, we recommend implementing the starti
 ||[High risk users must change password](#high-risk-users-must-change-password)|Forces users to change their password when signing in if high-risk activity is detected for their account.|Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 ||[Apply Application Protection Policies (APP) data protection](#apply-app-data-protection-policies)|One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).|Microsoft 365 E3 or E5|
 ||[Require approved apps and app protection](#require-approved-apps-and-app-protection)|Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.|Microsoft 365 E3 or E5|
-||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|Microsoft 365 E3 or E5|
-||[Require compliant PCs](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Enforces Intune management of PCs using Windows or macOS.|Microsoft 365 E3 or E5|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium*, or *high*](#require-mfa-based-on-sign-in-risk)||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
-||[Require compliant PCs *and* mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or macOS) and phones or tablets (iOS, iPadOS, or Android).|Microsoft 365 E3 or E5|
-|**Specialize security**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
+||[Define device compliance policies](#define-device-compliance-policies)|One policy for each platform.|Microsoft 365 E3 or E5|
+||[Require compliant PCs and mobile devices](#require-compliant-pcs-and-mobile-devices)|Enforces Intune management for both PCs (Windows or macOS) and phones or tablets (iOS, iPadOS, or Android).|Microsoft 365 E3 or E5|
+|**Specialized security**|[*Always* require MFA](#assigning-policies-to-groups-and-users)||Microsoft 365 E3 or E5|
 |
 
 ## Assigning policies to groups and users
 
-Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, starting point protection applies to everybody in the organization. A user who is included for both starting point and recommended protection will have all the starting point policies applied plus the recommended policies. Protection is cumulative and the most restrictive policy is enforced.
+Before configuring policies, identify the Azure AD groups you are using for each tier of protection. Typically, starting point protection applies to everybody in the organization. A user who is included for both starting point and enterprise protection will have all the starting point policies applied plus the enterprise policies. Protection is cumulative and the most restrictive policy is enforced.
 
 A recommended practice is to create an Azure AD group for Conditional Access exclusion. Add this group to all of your Conditional Access policies in the **Exclude** value of the **Users and groups** setting in the **Assignments** section. This gives you a method to provide access to a user while you troubleshoot access issues. This is recommended as a temporary solution only. Monitor this group for changes and be sure the exclusion group is being used only as intended.
 
@@ -80,13 +79,13 @@ Here are the results:
 
 - Members of the Executive Staff group are required to use MFA when the sign-in risk is low, medium, or high.
 
-  In this case, members of the Executive Staff group match both the starting point and recommended Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the recommended Conditional Access policy.
+  In this case, members of the Executive Staff group match both the starting point and enterprise Conditional Access policies. The access controls for both policies are combined, which in this case is equivalent to the enterprise Conditional Access policy.
 
 - Members of the Top Secret Project X group are always required to use MFA
 
-  In this case, members of the Top Secret Project X group match both the starting point and highly-regulated Conditional Access policies. The access controls for both policies are combined. Because the access control for the highly-regulated Conditional Access policy is more restrictive, it is used.
+  In this case, members of the Top Secret Project X group match both the starting point and specialized security Conditional Access policies. The access controls for both policies are combined. Because the access control for the specialized security Conditional Access policy is more restrictive, it is used.
 
-Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the highly-regulated content for Project X.
+Be careful when applying higher levels of protection to groups and users. For example, members of the Top Secret Project X group will be required to use MFA every time they sign in, even if they are not working on the specialized security content for Project X.
 
 All Azure AD groups created as part of these recommendations must be created as Microsoft 365 groups. This is important for the deployment of sensitivity labels when securing documents in Microsoft Teams and SharePoint.
 
@@ -394,6 +393,7 @@ For **System security**, see this table.
 |Microsoft Defender for Endpoint rules in the Microsoft Endpoint Manager admin center|[Require the device to be at or under the machine-risk score](/mem/intune/protect/advanced-threat-protection-configure#create-and-assign-compliance-policy-to-set-device-risk-level)|Medium|Select|
 |
 
+<!--
 ## Require compliant PCs (but not compliant phones and tablets)
 
 Before adding a policy to require compliant PCs, be sure to enroll your devices for management in Intune. Using multi-factor authentication is recommended before enrolling devices into Intune for assurance that the device is in the possession of the intended user.
@@ -422,7 +422,9 @@ To require compliant PCs:
 > [!NOTE]
 > Make sure that your device is compliant before enabling this policy. Otherwise, you could get locked out and will be unable to change this policy until your user account has been added to the Conditional Access exclusion group.
 
-## Require compliant PCs *and* mobile devices
+--> 
+
+## Require compliant PCs and mobile devices
 
 To require compliance for all devices:
 
