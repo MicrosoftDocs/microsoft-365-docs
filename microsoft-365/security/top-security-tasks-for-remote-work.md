@@ -173,7 +173,7 @@ You can also take advantage of these tutorials:
 After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
 
 - [Define device-compliance policies](./office-365-security/identity-access-policies.md#define-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
-- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
+- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
 
 Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
 
