@@ -15,7 +15,7 @@ audience: Admin
 
 # Validate new devices
 
-Whether you're completely new to Microsoft Managed Desktop or a long-time subscriber, it's best to test an example of any device model you're enrolling in the service for the first time. This is true whether you're ordering brand-new devices or reusing existing ones, including devices recommended for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site. At that site, view the devices recommended for use with the service by expanding **Features** in the **Filter by** area, and then selecting **Microsoft Managed Desktop**. Validating devices ensures that they'll deliver the user experience you expect.
+Whether you're completely new to Microsoft Managed Desktop or a long-time subscriber, it's best to test an example of any device model you're enrolling in the service for the first time. This is true whether you're ordering brand-new devices or reusing existing ones, including devices recommended for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site. At that site, view the devices recommended for use with the service by expanding **Features** in the **Filter by** area, and then selecting **Microsoft Managed Desktop**. Validating devices ensures that they'll deliver the user experience you expect.
 
 ## Validate devices
 

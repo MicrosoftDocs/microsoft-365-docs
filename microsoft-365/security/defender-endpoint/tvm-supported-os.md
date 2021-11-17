@@ -2,8 +2,6 @@
 title: Supported operating systems platforms and capabilities
 description: Ensure that you meet the operating system or platform requisites for threat and vulnerability management, so the activities in your all devices are properly accounted for.
 keywords: threat & vulnerability management, threat and vulnerability management, operating system, platform requirements, prerequisites, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm, supported operating systems, supported platforms, linux support, mac support
-search.appverid: met150
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -46,6 +44,7 @@ Windows 7|Yes|Not supported|Not supported|Not supported|Not supported
 Windows 8.1|Yes|Yes|Yes|Yes|Yes
 Windows 10, versions 1607-1703|Yes|Not supported|Not supported|Not supported|Not supported
 Windows 10, version 1709 or later|Yes|Yes|Yes|Yes|Yes
+Windows 11|Yes|Yes|Yes|Yes|Yes
 Windows Server 2008 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2012 R2|Yes|Yes|Yes|Yes|Yes
 Windows Server 2016|Yes|Yes|Yes|Yes|Yes
@@ -57,6 +56,9 @@ CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
+Linux Debian 9 or higher (in preview)|Yes|Yes|Yes|Yes|Yes
+Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
+iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
 
 > [!NOTE]
 > Some features are not available for down-level Operating System, check the Microsoft 365 Defender Portal for more details on supported OS.

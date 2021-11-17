@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 MS.technology: mde
 ---
@@ -34,8 +35,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 ## Set up the required Resource Provider in the Event Hub subscription
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. Select **Subscriptions** \> {***Select the subscription the event hub will be deployed
-to***} \> **Resource providers**.
+1. Select **Subscriptions** > **{ Select the subscription the event hub will be deployed to }** > **Resource providers**.
 1. Verify that the **Microsoft.Insights** Provider is registered. Otherwise, register it.
 
 ![Image of resource providers in Microsoft Azure.](../../media/f893db7a7b1f7aa520e8b9257cc72562.png)
@@ -117,7 +117,7 @@ For this Event Hub (not namespace) you will need to configure a Shared Access Po
 
 ### Set up Microsoft 365 Defender send Email tables to Splunk via Event Hub
 
-1. Log in to Microsoft 365 Defender at <https://security.microsoft.com> with an account that meets all the following role requirements:
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with an account that meets all the following role requirements:
 
     - Contributor role at the Event Hub *Namespace* Resource level or higher for the Event Hub that you will be exporting to. Without this permission, you will get an export error when you try to save the settings.
 
