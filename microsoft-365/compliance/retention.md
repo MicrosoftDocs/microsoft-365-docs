@@ -579,6 +579,10 @@ If you currently use these older features, they will continue to work side by si
     
     - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
 
+- [Litigation hold](create-a-litigation-hold.md) (retention only)
+    
+   Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
+
 **Older features from SharePoint and OneDrive:**
 
 - [Document deletion policies](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (deletion only)
