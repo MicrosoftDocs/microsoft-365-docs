@@ -82,10 +82,10 @@ Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record th
 Microsoft's DMARC TXT record looks something like this:
 
 ```console
-_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
+_dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.contoso.com; ruf=mailto:d@ruf.contoso.com; fo=1"
 ```
 
-Microsoft sends its DMARC reports to [Agari](https://agari.com), a third party. Agari collects and analyzes DMARC reports. Please visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365.
+For more third-party vendors who offer DMARC reporting for Microsoft 365, visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365).
 
 ## Set up DMARC for inbound mail
 
@@ -176,13 +176,14 @@ Examples:
 Once you have formed your record, you need to update the record at your domain registrar.
 
 ## DMARC Mail (Public Preview feature)
+
 > [!CAUTION]
-> Mails may not be sent out daily, and the report itself may change during public preview.  The DMARC aggregate report emails can be expected from the Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts).
+> Mails may not be sent out daily, and the report itself may change during public preview. The DMARC aggregate report emails can be expected from the Consumer accounts (such as hotmail.com, outlook.com, or live.com accounts).
 
 In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`, you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
 
 > [!TIP]
-> Visit the MISA catalog at <https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365> to view more third-party vendors who offer DMARC reporting for Microsoft 365. See RFC 7489 at <https://datatracker.ietf.org/doc/html/rfc7489> for more information on DMARC 'rua' addresses.
+> For more third-party vendors who offer DMARC reporting for Microsoft 365, visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog?IntegratedProducts=DMARCReportingforOffice365). For more information about DMARC 'rua' adresses, see [RFC 74890](https://datatracker.ietf.org/doc/html/rfc7489).
 
 ## Best practices for implementing DMARC in Microsoft 365
 
