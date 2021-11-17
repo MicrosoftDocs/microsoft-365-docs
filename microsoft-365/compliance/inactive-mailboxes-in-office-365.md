@@ -68,7 +68,7 @@ If Microsoft 365 retention is used to create an inactive mailbox, the retention 
 
 With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), you can apply retention settings specifically to inactive mailboxes. You might consider doing this for any of the following reasons:
 
-- Your organization has have regulations or policies that differ for active employees and former employees.
+- Your organization has regulations or policies that differ for active employees and former employees.
 
 - You can configure the retention settings to retain mailbox content for only as long as necessary to meet your organization's requirement for former employees.
 
