@@ -2,8 +2,6 @@
 title: Manage Microsoft Defender for Endpoint using Configuration Manager
 description: Learn how to manage Microsoft Defender for Endpoint with Configuration Manager
 keywords: post-migration, manage, operations, maintenance, utilization, Configuration Manager, Microsoft Defender for Endpoint, edr
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -34,7 +32,7 @@ ms.reviewer: chventou
 We recommend using We recommend using [Microsoft Endpoint Manager](/mem), which includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (Intune) and [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction) (Configuration Manager) to manage your organization's threat protection features for devices (also referred to as endpoints).
 
 - [Learn more about Endpoint Manager](/mem/endpoint-manager-overview)
-- [Co-manage Microsoft Defender for Endpoint on Windows 10 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
+- [Co-manage Microsoft Defender for Endpoint on Windows 10 and Windows 11 devices with Configuration Manager and Intune](manage-atp-post-migration-intune.md)
 
 ## Configure Microsoft Defender for Endpoint with Configuration Manager
 

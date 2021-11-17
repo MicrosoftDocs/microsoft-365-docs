@@ -2,17 +2,16 @@
 title: Run and customize on-demand scans in Microsoft Defender Antivirus
 description: Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 keywords: scan, on-demand, dos, intune, instant scan
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/10/2021
+ms.date: 10/22/2021
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -38,7 +37,7 @@ Combined with always-on, real-time protection, which reviews files when they are
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
-3. In the list of tabs, select **Windows 10 unhealthy endpoints**.
+3. In the list of tabs, select **Windows 10 unhealthy endpoints** or **Windows 11 unhealthy endpoints**.
 
 4. From the list of actions provided, select **Quick Scan** (recommended) or **Full Scan**.
 

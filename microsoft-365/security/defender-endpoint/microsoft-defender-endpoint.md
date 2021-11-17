@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Priority
+ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

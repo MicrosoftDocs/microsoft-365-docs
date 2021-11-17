@@ -10,7 +10,7 @@ metadata:
   audience: ITPro
   ms.topic: overview
   ms.service: O365-seccomp
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
@@ -149,9 +149,9 @@ sections:
           > Outlook desktop client does not support PDF encryption.
           
       - question: |
-          Are OneDrive for Business attachments supported?
+          Are SharePoint Online or OneDrive for Business attachments supported?
         answer: |
-          Not yet. OneDrive for Business attachments are not supported and end-users can't encrypt a mail that contains a cloud OneDrive for Business attachment.
+          Not yet. SharePoint Online or OneDrive for Business attachments are not supported and end-users can encrypt a mail but not the cloud attachments.
 
       - question: |
           What email clients support preview of encrypted attachments in protected emails?
@@ -191,7 +191,7 @@ sections:
       - question: |
           Can I use message encryption with compliance features such as eDiscovery?
         answer: |
-          Yes. Microsoft 365 compliance features can discover all encrypted email messages. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
+          Yes, most messages protected by OME are discoverable. OME protected mail that you receive from another Microsoft 365 organization that has custom branding applied through a mail flow rule is undiscoverable by your eDiscovery service. In other words, if the mail isn't accessible through the user's mailbox, but rather, surfaced only through a link to the OME portal, the mail isn't searchable. See [eDiscovery activities that support encrypted items](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items) for details.
 
       - question: |
           Can I remove encryption from email?
@@ -243,7 +243,12 @@ sections:
           Is delegated access supported with opening encrypted messages? Even if a delegate has full access to another user's mailbox?
         answer: |
           Delegated access of encrypted mail is supported in Outlook on the web, Outlook for Mac, Outlook for iOS, and Outlook for Android.  Outlook for Windows does not support delegated access.
-          
+
+      - question: |
+          How long do I have access to the mail in the OME portal?
+        answer: |
+          You can login to the OME portal to retrieve mail as long as the sender's organization is active and the mail has not been configured to expire.
+
       - question: |
           What do I do if I don’t receive the one-time pass code after I requested it?
         answer: |

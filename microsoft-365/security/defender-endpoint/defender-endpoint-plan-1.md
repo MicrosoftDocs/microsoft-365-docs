@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
-ms.technology: mdep1
-localization_priority: Normal
+ms.technology: mde
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
@@ -26,7 +26,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 - **Defender for Endpoint Plan 1**, currently in preview, and described in this article; and 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, generally available, and formerly known as [Defender for Endpoint](microsoft-defender-endpoint.md).
 
-The following image depicts what's included in Defender for Endpoint Plan 1 (preview):
+The green boxes in the following image depict what's included in Defender for Endpoint Plan 1 (preview):
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 diagram":::
 

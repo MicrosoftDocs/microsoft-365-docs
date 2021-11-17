@@ -1,6 +1,6 @@
 ---
-title: "Get started driving adoption of Microsoft Viva Topics"
-description: "Learn how to drive adoption of Microsoft Viva Topics in your organization."
+title: Get started driving adoption of Microsoft Viva Topics
+description: Learn how to drive adoption of Microsoft Viva Topics in your organization.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,7 +10,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 ---
 
 # Get started driving adoption of Microsoft Viva Topics

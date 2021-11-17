@@ -6,7 +6,7 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: dansimp
@@ -42,7 +42,7 @@ Microsoft recommends onboarding Azure Virtual Desktop as a single entry per virt
 Microsoft recommends adding the Microsoft Defender for Endpoint onboarding script to the WVD golden image. This way, you can be sure that this onboarding script runs immediately at first boot. It's executed as a startup script at first boot on all the WVD machines that are provisioned from the WVD golden image. However, if you're using one of the gallery images without modification, place the script in a shared location and call it from either local or domain group policy.
 
 > [!NOTE]
-> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's NOT recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 & 2 take this into account.
+> The placement and configuration of the VDI onboarding startup script on the WVD golden image configures it as a startup script that runs when the WVD starts. It's **not** recommended to onboard the actual WVD golden image. Another consideration is the method used to run the script. It should run as early in the startup/provisioning process as possible to reduce the time between the machine being available to receive sessions and the device onboarding to the service. Below scenarios 1 and 2 take this into account.
 
 ### Scenarios
 
@@ -50,14 +50,13 @@ There are several ways to onboard a WVD host machine:
 
 - Run the script in the golden image (or from a shared location) during startup.
 - Use a management tool to run the script.
-- Through [Integration with Azure Defender](configure-server-endpoints.md#integration-with-azure-defender)
+- Through [Integration with Azure Defender](azure-server-integration.md)
 
 #### *Scenario 1: Using local group policy*
 
 This scenario requires placing the script in a golden image and uses local group policy to run early in the boot process.
 
-Use the instructions in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices).
-
+Use the instructions in [Onboard the non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md).
 
 Follow the instructions for a single entry for each device.
 
@@ -156,4 +155,4 @@ Licensing requirements for Microsoft Defender for endpoint can be found at: [Lic
 
 #### Related Links
 
-[Add exclusions for Microsoft Defender by using PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)
+[Add exclusions for Defender for Endpoint via PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-microsoft-defender-by-using-powershell)

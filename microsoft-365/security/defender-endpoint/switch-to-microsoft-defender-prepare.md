@@ -2,8 +2,6 @@
 title: Switch to Microsoft Defender for Endpoint - Prepare
 description: Get ready to make the switch to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
 keywords: migration, Microsoft Defender for Endpoint, best practice
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -11,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,8 +18,10 @@ ms.collection:
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
 ms.topic: article
-ms.custom: migrationguides
-ms.date: 09/23/2021
+ms.custom: 
+- migrationguides
+- admindeeplinkDEFENDER
+ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -80,14 +80,14 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
-At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+At this point, you are ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 > [!NOTE]
-> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://security.microsoft.com](https://security.microsoft.com). The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
+> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ## Grant access to the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
 Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
@@ -111,12 +111,12 @@ To enable communication between your devices and Defender for Endpoint, configur
 
 |Capabilities|Operating System|Resources|
 |---|---|---|
-|[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <p>Windows Server 2022 <p> <p> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
-|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p> [Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) <p> [Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2) <p> [Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <p> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p> Windows Server 2022 <p> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <p> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS: 11.3.1 (Big Sur); 10.15 (Catalina); 10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|Antivirus|Linux: RHEL 7.2+; CentOS Linux 7.2+; Ubuntu 16 LTS, or higher LTS; SLES 12+; Debian 9+; Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
+|[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
+|EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
+|Antivirus|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|Linux:<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS, or higher LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
 
 ## Next step

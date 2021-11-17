@@ -12,7 +12,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-localization_priority: None
+ms.localizationpriority: null
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
@@ -78,8 +78,8 @@ To learn more about the user experience with information barriers, see [informat
 
 Information barriers are rolling out now, and are included in subscriptions, such as:
 
-- Microsoft 365 E5/A5
-- Office 365 E5/A5
+- Microsoft 365 E5/A5/A3/A1
+- Office 365 E5/A5/A3/A1
 - Office 365 Advanced Compliance
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management

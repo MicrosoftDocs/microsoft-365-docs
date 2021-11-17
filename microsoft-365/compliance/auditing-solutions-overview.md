@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - m365-security-compliance
 - m365solution-audit
@@ -113,8 +113,8 @@ The following sections identify the licensing requirements for Basic Audit and A
 - Microsoft 365 Education A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 Education A3 subscription + the Microsoft 365 A5 eDiscovery and Audit add-on
 - Microsoft 365 Government G5 subscription
-- Microsoft 365 Government G5 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 Government G5 subscription + the Microsoft 365 G5 eDiscovery and Audit add-on
+- Microsoft 365 Government G3 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 Government G3 subscription + the Microsoft 365 G5 eDiscovery and Audit add-on
 - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on
 - Office 365 Enterprise E5 subscription
 - Office 365 Education A5 subscription

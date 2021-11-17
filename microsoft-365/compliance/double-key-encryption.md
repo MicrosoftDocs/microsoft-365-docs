@@ -11,10 +11,10 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Double Key Encryption for Microsoft 365
@@ -77,7 +77,7 @@ You'll follow these general steps to set up DKE. Once you've completed these ste
 
 1. Deploy the DKE service as described in this article.
 
-2. Create a label with Double Key Encryption. Navigate to Information protection under the [Microsoft 365 compliance center](https://compliance.microsoft.com) and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
+2. Create a label with Double Key Encryption. Navigate to Information protection under the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
 
 3. Use Double Key Encryption labels. Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
 

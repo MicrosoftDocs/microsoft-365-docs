@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -46,7 +46,7 @@ If you're a user, you don't have the permissions to set your password to never e
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 
 1. In the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy** tab</a>.
- 
+
     If you aren't a global admin, you won't see the Security and privacy option.
   
 1. Select **Password expiration policy**.
@@ -57,8 +57,8 @@ Follow the steps below if you want to set user passwords to expire after a speci
   
 6. In the second box type when users are notified that their password will expire, and then select **Save**. Choose a number of days from 1 to 30.
 
-> [!NOTE]
-> Password expiration notifications are no longer supported in the Office 365 portal or any Office apps except Outlook when using Basic Authentication. Outlook with Modern Authentication does not support Password Expiry Notifications.
+> [!IMPORTANT]
+> Password expiration notifications are no longer supported in the Microsoft 365 admin center or any Office apps.
   
 ## Important things you need to know about the password expiration feature
   

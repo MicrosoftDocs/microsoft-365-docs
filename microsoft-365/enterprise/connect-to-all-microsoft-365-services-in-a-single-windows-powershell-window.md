@@ -7,7 +7,7 @@ ms.date: 02/02/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH

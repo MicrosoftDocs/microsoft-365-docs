@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - M365-security-compliance
@@ -36,9 +36,7 @@ This illustration includes information for IT architects about Microsoft 365 Gro
 
 ## Migrate to Microsoft 365
 
-Microsoft provides tools to migrate your on-premises network file shares and SharePoint Server sites to Microsoft 365 with an emphasis
-on protecting and ensuring your content's security during migration. This set of illustrations demonstrates the various methods available
-to move your content to SharePoint, Teams, and OneDrive and how your data flows through the process.
+Microsoft provides tools to migrate your on-premises network file shares and SharePoint Server sites to Microsoft 365 with an emphasis on protecting and ensuring your content's security during migration. This set of illustrations demonstrates the various methods available to move your content to SharePoint, Teams, and OneDrive and how your data flows through the process.
 
 | Item | Description |
 |:-----|:-----|

@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -67,7 +67,7 @@ Distribution groups are best for situations where you need to broadcast informat
 
 Distribution groups can be [upgraded to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md).
 
-Distribution groups can be added to a team in Microsoft Teams.
+Distribution groups can be added to a team in Microsoft Teams, though only the members are added and not the group itself.
 
 Microsoft 365 Groups can't be members of distribution groups.
 

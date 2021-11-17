@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -65,7 +65,6 @@ Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microso
 
 ## Availability to US GCC, GCC High, and other US government institutions
 Currently, Microsoft 365 Defender is *not* available to:
-- US Government Community Cloud (GCC)
 - US Government Community Cloud High (GCC High)
 - US Department of Defense
 - All US government institutions with commercial licenses

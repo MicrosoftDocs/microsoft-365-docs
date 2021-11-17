@@ -9,8 +9,8 @@ audience: ITPro
 ms.topic: overview
 ms.date: 09/13/2021
 ms.prod: m365-security
-ms.technology: mdep1
-localization_priority: Normal
+ms.technology: mde
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance

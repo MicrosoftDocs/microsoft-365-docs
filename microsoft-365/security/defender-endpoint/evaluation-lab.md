@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.prod: m365-security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -184,8 +184,6 @@ You can simulate attack scenarios using:
 You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
-
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 

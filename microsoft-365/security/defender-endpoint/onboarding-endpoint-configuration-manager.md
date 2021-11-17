@@ -8,13 +8,14 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -103,7 +104,6 @@ Follow the steps below to onboard endpoints using Microsoft Endpoint Configurati
 
 After completing this task, you now have a device collection with all the Windows endpoints in the environment.
 
-
 ## Step 2: Configure Microsoft Defender for Endpoint capabilities
 
 This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
@@ -116,10 +116,9 @@ This section guides you in configuring the following capabilities using Microsof
 
 #### Windows 10 and Windows 11
 
-From within the Microsoft 365 Defender portal it is possible to download the '.onboarding' policy that can be used to create the policy in System Center Configuration
-Manager and deploy that policy to Windows 10 and Windows 11 devices.
+From within the Microsoft 365 Defender portal it is possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
-1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
@@ -171,7 +170,7 @@ Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
 Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
 
-1. From a Microsoft 365 Defender portal, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
 
 2. Under operating system choose **Windows 7 SP1 and 8.1**.
 
@@ -215,8 +214,7 @@ Microsoft Defender Antivirus is a built-in antimalware solution that provides ne
 
     ![Image of next generation protection pane1.](images/1566ad81bae3d714cc9e0d47575a8cbd.png)
 
-    In certain industries or some select enterprise customers might have specific
-needs on how Antivirus is configured.
+    In certain industries or some select enterprise customers might have specific needs on how Antivirus is configured.
 
     [Quick scan versus full scan and custom scan](/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
@@ -246,13 +244,11 @@ needs on how Antivirus is configured.
 
      ![Image of next generation protection pane11.](images/configmgr-select-collection.png)
 
-After completing this task, you now have successfully configured Windows
-Defender Antivirus.
+After completing this task, you now have successfully configured Windows Defender Antivirus.
 
 ### Attack surface reduction
 
-The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection and Exploit
-Protection.
+The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection, and Exploit Protection.
 
 All these features provide an audit mode and a block mode. In audit mode there is no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 
@@ -288,7 +284,7 @@ After completing this task, you now have successfully configured ASR rules in au
 
 Below are additional steps to verify whether ASR rules are correctly applied to endpoints. (This may take few minutes)
 
-1. From a web browser, navigate to <https://security.microsoft.com>.
+1. From a web browser, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 2. Select **Configuration management** from left side menu.
 
@@ -338,7 +334,7 @@ After completing this task, you now have successfully configured Network Protect
 
 #### To set Controlled Folder Access rules in Audit mode
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then choose **Create Exploit Guard Policy**.
 
     ![A screenshot of Microsoft Endpoint Configuration Manager3.](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
@@ -360,7 +356,9 @@ After completing this task, you now have successfully configured Network Protect
 
     ![A screenshot of Microsoft Endpoint Configuration Manager7.](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
+
 7. Target the policy to the newly created Windows collection and click **OK**.
+
 
     ![A screenshot of Microsoft Endpoint Configuration Manager8.](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

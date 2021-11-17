@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -71,8 +71,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](apis-intro.md).
+including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
@@ -99,11 +98,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with object that holds
-the link to the command result in the *value* property. This link is valid for
-30 minutes and should be used immediately for downloading the package to a local
-storage. An expired link can be re-created by another call, and there is no
-need to run live response again.
+If successful, this method returns 200, Ok response code with object that holds the link to the command result in the *value* property. This link is valid for 30 minutes and should be used immediately for downloading the package to a local storage. An expired link can be re-created by another call, and there is no need to run live response again.
 
 *Runscript transcript properties:*
 

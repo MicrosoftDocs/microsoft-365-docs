@@ -2,15 +2,13 @@
 title: Investigate Microsoft Defender for Endpoint alerts
 description: Use the investigation options to get details on alerts are affecting your network, what they mean, and how to resolve them.
 keywords: investigate, investigation, devices, device, alerts queue, dashboard, IP address, file, submit, submissions, deep analysis, timeline, search, domain, URL, IP
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 

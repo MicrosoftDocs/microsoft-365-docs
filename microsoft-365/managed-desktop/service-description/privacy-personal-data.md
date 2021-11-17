@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 audience: Admin, ITPro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ---
 
 # Overview

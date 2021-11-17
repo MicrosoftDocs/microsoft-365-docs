@@ -2,16 +2,15 @@
 title: Configure Microsoft Defender Antivirus using Microsoft Endpoint Manager
 description: Use Microsoft Endpoint Manager and Microsoft Intune to configure Microsoft Defender Antivirus and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/24/2021
+ms.date: 10/18/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde

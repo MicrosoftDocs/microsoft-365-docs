@@ -9,11 +9,12 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 for enterprise test environment.
 ---
@@ -61,7 +62,7 @@ Apps that do not support modern authentication cannot have [identity and device 
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **Safe Attachments**. 
 
@@ -91,7 +92,7 @@ Threat management in Microsoft 365 can help you control and manage mobile device
 
 To see the security dashboard:
 
-1. If needed, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. If needed, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Dashboard**.
 

@@ -3,15 +3,13 @@ title: View and organize the Incidents queue
 ms.reviewer: 
 description: See the list of incidents and learn how to apply filters to limit the list and get a more focused view.
 keywords: view, organize, incidents, aggregate, investigations, queue, ttp
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

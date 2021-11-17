@@ -9,12 +9,13 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: lomayor
-author: lomayor
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -62,7 +63,7 @@ The data center location is shown before and after the service is provisioned in
 
 ## Where can I access Microsoft 365 Defender?
 
-Microsoft 365 Defender is available at: <https://security.microsoft.com>.
+Microsoft 365 Defender is available at: <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
 ## What permissions do I need to access Microsoft 365 Defender?
 
@@ -73,6 +74,11 @@ Accounts assigned the following Azure Active Directory (Azure AD) roles can acce
 - Security Operator
 - Global Reader
 - Security Reader
+- Compliance Administrator
+- Compliance Data Administrator
+- Application Administrator
+- Cloud Application Administrator
+
 
 > [!NOTE]
 > Role-based access control settings in Microsoft Defender for Endpoint influence access to data. For more information, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
