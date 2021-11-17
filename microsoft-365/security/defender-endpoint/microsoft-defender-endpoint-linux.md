@@ -64,6 +64,9 @@ In general you need to take the following steps:
 
 If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
+> [!NOTE]
+> It is not supported to install MDE in any other location other than the default install path. 
+
 ### System requirements
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
