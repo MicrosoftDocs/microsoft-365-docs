@@ -17,12 +17,22 @@ description: Find resources to help your organization learn about and get the mo
 
 # Adoption resources for Microsoft Viva Topics
 
-You can use these downloads and other information to spark ideas about how to help your organization use Viva Topics.
+Use these downloadable resources and other information to spark ideas about how to help your organization use and understand Viva Topics.
 
+## Downloadable resources
 
-|         |Name     |Description |
+|Resource         |Name     |Description |
 |---------|---------|---------|
-|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/k-new-topic-page.png)](../media/knowledge-management/k-new-topic-page.png) |[Viva Topics Scenario Catalogue](create-a-topic.md) |This simple getting started guide will show you four easy – yet powerful – things you can do to get the most out of Kaizala for your organization. Bring everyone together, get conversations going about Kaizala, connect with employees, and digitize everyday tasks with Kaizala.         |
+|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/k-new-topic-page.png)](../media/knowledge-management/k-new-topic-page.png) |[Viva Topics Scenario Catalogue](create-a-topic.md) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
 |Row2     |         |         |
 |Row3     |         |         |
 |Row4     |         |         |
+
+## Other resources
+
+
+|Name     |Description  |
+|---------|---------|
+|[Viva Topics FAQ](create-a-topic.md) |Read questions and answers to help you understand more about Viva Topics         |
+|Row2     |         |
+|Row3     |         |
