@@ -95,6 +95,12 @@ After onboarding, it takes few hours for device to show up in the Device invento
 
 For details about data collected and privacy, see [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
 
+## Connectivity issue on cellular network
+
+If you are facing internet connectivity issues on cellular network, check if Microsoft Defender for Endpoint has cellular data enabled: Open Settings app > MS Defender > ensure that "Cellular data" is enabled for MS Defender.
+
+Check if turning on/off Airplane mode helps resolve the issue. If the issue still persists, [send us logs](ios-troubleshoot.md#send-in-app-feedback).
+
 ## Issues on supervised devices with content filter profile installed
 
 There is an issue on supervised devices with Defender for Endpoint content filter installed. If you observe slowness or latency in internet connectivity on such devices, uninstall or delete the content filter profile from the device. We are working to resolve this issue and will update this place once we have a resolution. 
