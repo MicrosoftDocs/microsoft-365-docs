@@ -229,11 +229,47 @@ When you create a sensitivity label, you can automatically assign that label to 
    - Select label to apply​
    - [Run policy in simulation mode​](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
 
+### Step 3: Review and turn on auto-labeling policy
+
+Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** section. ​
+
+Select your policy to see the details of the configuration and status. When the simulation is complete, select the Items to review tab to see which emails or documents matched the rules that are specified.
+
+When you're ready to run the policy without simulation, select the **Turn on policy** option.
+
 ## Insider Risk Management
 
 **Detect and remediate insider risks**
 
 Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for insider risk signals, then take remediation actions such as promoting user education or initiating an investigation.
+
+### Step 1: Enable permissions for insider risk management​
+
+There are four role groups used to configure permissions to manage insider risk management features. ​
+
+[Add users to an insider risk management role group.​](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
+
+If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
+
+### Step 2: Start with user quick start guide
+
+Quickly get started and get the most out of insider risk management capabilities with recommended actions. Included on the Overview page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
+
+[Select a recommendation from the list](insider-risk-management-configure.md#recommended-actions-preview) to get started with configuring insider risk management. ​
+
+Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.
+
+### Step 3 (required): Enable the Microsoft 365 audit log
+
+Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.​
+
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+
+### Step 4 (required): Enable and view insider risk analytics insights
+
+Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics-preview) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.​
+
+To enable insider risk Analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin. [Complete these steps to enable insider risk analytics](insider-risk-management-configure.md#step-3-enable-and-view-insider-risk-analytics-insights-optional).
 
 ## Records Management
 
