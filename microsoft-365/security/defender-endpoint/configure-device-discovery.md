@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -37,11 +38,11 @@ You can customize the list of devices that are used to perform standard discover
 
 > [!IMPORTANT]
 > For preview, you'll first need to turn on the Preview features in Microsoft 365 Defender.
-> You can then access the device discovery configuration in Microsoft 365 security center. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security center.
+> You can then access the device discovery configuration in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 security center, while the dashboard tiles will only be available in Microsoft 365 security Center.
 
-Take the following configuration steps in Microsoft 365 security center:
+Take the following configuration steps in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>:
 
-1. Navigate to **Settings > Device discovery**.
+1. Navigate to **Settings** > **Device discovery**.
 2. Select the discovery mode to use on your onboarded devices.
 3. If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags.
 4. Click **Save**.
