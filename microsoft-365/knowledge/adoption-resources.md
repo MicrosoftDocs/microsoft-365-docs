@@ -17,14 +17,14 @@ description: Find resources to help your organization learn about and get the mo
 
 # Adoption resources for Microsoft Viva Topics
 
-Use these downloadable resources and other information to spark ideas about how to help get the most our of Viva Topics in your organization.
+Use these downloadable resources and other information to spark ideas about how to help get the most out of Viva Topics in your organization.
 
 ## Downloadable resources
 
 |Resource         |Name     |Description |
 |---------|---------|---------|
 |[![Thumbnail image of scenario catalog front page](../media/knowledge-management/scenario-catalog-thumbnail.png)](create-a-topic.md) |[Viva Topics Scenario Catalog](create-a-topic.md) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
-|Row2     |[Viva Topics Adoption Guide](create-a-topic.md)          |         |
+|[![Thumbnail image of adoption guide front page](../media/knowledge-management/adoption-guide-thumbnail.png)](create-a-topic.md)     |[Viva Topics Adoption Guide](create-a-topic.md)          |         |
 |Row3     |[Viva Topics Communication Asset Samples](create-a-topic.md)          |         |
 |Row4     |         |         |
 
