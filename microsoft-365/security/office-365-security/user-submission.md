@@ -8,13 +8,13 @@ manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users.
 ms.technology: mdo
 ms.prod: m365-security
@@ -60,7 +60,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
 
@@ -77,7 +77,7 @@ After you've verified that your mailbox meets all applicable prerequisites, you 
 
 ## Use the Microsoft 365 Defender portal to configure the user submissions mailbox
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** \> **User submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & rules** \> **Threat policies** \> **User reported message settings** in the **Others** \> **User submissions**.
 
 2. On the **User submissions** page, what you see is determined by whether the **Microsoft Outlook Report Message button** setting is **Off** or **On**:
 

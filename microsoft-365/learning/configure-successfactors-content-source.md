@@ -51,7 +51,7 @@ This article shows you how to configure SAP SuccessFactors as a third-party cont
     - enabled can be "false" or "true". Set it to "true" to enable the partner extract.
         - partners1.enabled=
     
-    <!--![Image of the PARTNER_EXTRACT configuration settings filled in.](../media/learning/sap-1.png)-->
+    [ ![Image of the PARTNER_EXTRACT configuration settings.](../media/learning/sf-focus.png) ](../media/learning/sf-2.png#lightbox)
 
 Once you've completed these steps in the SuccessFactors portal, you'll need to complete the setup in the Microsoft 365 admin center.
 
@@ -86,6 +86,10 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
     **Company ID**: Sign in to your SuccessFactors portal. Select your profile icon, then select **Show Version Settings**. You can view your company ID here.
 
+    ![Image of the profile icon with Show Version Settings selected.](../media/learning/sf-3.png)
+
+    ![Image of the version settings pane.](../media/learning/sf-1.png)
+
 4. Select **Save** to activate SuccessFactors content in Microsoft Viva Learning. There may be a delay before the content is available in Viva Learning.
 
 >[!Note]
@@ -93,9 +97,6 @@ Once you've completed these steps in the SuccessFactors portal, you'll need to c
 
 >[!Note]
 > All users within an organization will be able to discover all the tenant-specific courses, but they'll only be able to access and consume courses that they have access to. User specific content discovery is planned for future releases.
-
->[!NOTE]
->Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
 
 >[!NOTE]
 >Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to consume the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.

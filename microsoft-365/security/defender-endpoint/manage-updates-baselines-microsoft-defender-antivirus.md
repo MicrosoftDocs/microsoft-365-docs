@@ -2,7 +2,6 @@
 title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/01/2021
+ms.date: 11/08/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -77,16 +76,16 @@ For information how to update or install the platform update, see [Update for Wi
 
 All our updates contain
 
-- performance improvements;
-- serviceability improvements; and
-- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- Performance improvements
+- Serviceability improvements
+- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> October-2021 (Platform: 4.18.xxxx.x| Engine: 1.1.18700.4)</summary>
+<summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
-&ensp;Platform: **4.18.xxxx.x**<br/>
+&ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
@@ -94,9 +93,12 @@ Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
 
 ### What's new
-- Improvements to FTP network traffic coverage
-- Fix to reduce Microsoft Defender CPU usage in exchange server with Windows Server 2016
-- Defender service tamper resilience improvements
+
+- Improvements to file transfer protocol (FTP) network traffic coverage
+- Fix to reduce Microsoft Defender CPU usage in Exchange Server running on Windows Server 2016
+- Fix for scan interruptions
+- Fix for alerts on blocked tampering attempts not appearing in Security Center
+- Improvements to tamper resilience in Microsoft Defender service
 
 ### Known Issues
 No known issues
@@ -582,6 +584,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2111.02</summary>
+
+&ensp;Package version: **1.1.2111.02**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.613.0**<br/>
+
+### Fixes
+- Fixed an issue pertaining to localization files
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Package version: **1.1.2110.01**<br/>
