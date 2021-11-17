@@ -38,7 +38,7 @@ Inactive mailboxes are useful when your organization needs to retain mailbox con
 > As we mentioned above, we recommend you use Microsoft 365 retention to create an inactive mailbox:
 > - We previously announced the retirement of In-Place Holds in the Exchange admin center. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
 > 
-> [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](retention.md#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds).
+> - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 ## Inactive mailboxes and Microsoft 365 retention
 
