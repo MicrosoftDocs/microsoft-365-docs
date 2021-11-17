@@ -141,11 +141,11 @@ The table below shows the responses and their correlated features.
 Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the query below lists all WCF blocks originating from Microsoft Edge.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.

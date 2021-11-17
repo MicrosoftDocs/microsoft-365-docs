@@ -18,6 +18,7 @@ search.appverid:
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: "Create alert policies in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 
@@ -63,7 +64,7 @@ Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_b
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
 
 ![In the Defender portal, select Policies & rules under Email & collaboration, and then select Alert policy to view and create alert policies.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -179,7 +180,7 @@ To view alerts:
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
 
 ![In the Microsoft 365 Defender portal, select Incidents & alerts and then select Alerts.](../media/ViewAlertsDefenderPortal.png)
 

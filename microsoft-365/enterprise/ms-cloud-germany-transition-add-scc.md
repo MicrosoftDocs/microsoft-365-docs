@@ -17,6 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: "Summary: eDiscovery migration steps for the migration from Microsoft Cloud Deutschland."
 ---
 # Information about the eDiscovery experience during the migration from Microsoft Cloud Deutschland
@@ -44,7 +45,7 @@ In the event that a search returns zero results or an error during migration, pl
 **Applies to:** All customers using eDiscovery
 
 In phase 9, the final steps for moving to the new German datacenter region will be completed. In this phase, all remaining service components will be migrated.
-After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Please use the new [Defender for Cloud](https://security.microsoft.com/) or [Compliance Center](https://compliance.microsoft.com/) instead. All data have been migrated to the new admin portals.
+After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Use the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> instead. All data have been migrated to the new admin portals.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|

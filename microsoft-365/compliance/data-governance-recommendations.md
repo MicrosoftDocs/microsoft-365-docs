@@ -11,6 +11,7 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
+ms.custom: admindeeplinkDEFENDER
 ms.localizationpriority: high
 search.appverid:
 - MOE150
@@ -21,7 +22,7 @@ description: "The Microsoft 365 Defender portal and Microsoft 365 compliance cen
 
 # How content is identified for data-governance recommendations
 
-The Microsoft 365 Defender portal and Microsoft 365 compliance center provide recommendations for data governance based on your org's current setup and lets you set up things with a few clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they're classified and retained as needed.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> provide recommendations for data governance based on your org's current setup and lets you set things up in a couple clicks. Some of these recommendations detect specific content in your organization and then provide recommended steps for managing that content. For example, a recommendation might detect items that contain business-critical content (such as attorney-client privilege or NDA info), and then let you automatically apply a retention label to those items to ensure that they're classified and retained as needed.
 
 This topic lists the data-governance recommendations you might see and describes what content is detected to trigger each one.
 

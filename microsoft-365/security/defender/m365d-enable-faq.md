@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -62,7 +63,7 @@ The data center location is shown before and after the service is provisioned in
 
 ## Where can I access Microsoft 365 Defender?
 
-Microsoft 365 Defender is available at: <https://security.microsoft.com>.
+Microsoft 365 Defender is available at: <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
 ## What permissions do I need to access Microsoft 365 Defender?
 

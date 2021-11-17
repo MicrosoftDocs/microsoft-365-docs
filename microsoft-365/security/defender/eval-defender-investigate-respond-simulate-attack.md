@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-pilotmtpproject
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -48,7 +49,7 @@ The Microsoft 365 Defender portal has built-in capabilities to create simulated 
 
 - Attack tutorials & simulations for Microsoft 365 Defender for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  In the Microsoft 365 Defender portal, select **Endpoints > Tutorials & simulations**.
+  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Endpoints > Tutorials & simulations**.
 
 ### Defender for Office 365 Attack simulation training
 
@@ -181,7 +182,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Defender portal.
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
@@ -197,7 +198,7 @@ The alerts generated during this simulation are associated with the same threat,
 
 To view the incident:
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 

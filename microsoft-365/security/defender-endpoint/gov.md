@@ -70,10 +70,12 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 |Customer type|Portal URL|
 |---|---|
-|GCC|<https://gcc.securitycenter.microsoft.us>|
+|GCC|<https://security.microsoft.com>|
 |GCC High|<https://securitycenter.microsoft.us>|
 |DoD|<https://securitycenter.microsoft.us>|
 |
+> [!NOTE]
+> If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
 
 ## Endpoint versions
 
@@ -104,10 +106,10 @@ Windows Server 2012 R2 (Modern) <sup>2</sup>|![Yes.](images/svg/check-yes.svg) <
 Windows Server 2016 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2012 R2 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 8.1 Enterprise|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 8 Pro|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
-Windows 7 SP1 Pro|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows 8.1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows 8 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
+Windows 7 SP1 Pro (Legacy) <sup>3</sup>|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Linux|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 macOS|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)
 Android|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development
@@ -119,7 +121,7 @@ iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg
 >
 > <sup>2</sup> Learn about the [unified modern solution for Windows 2016 and 2012 R2](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview). If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 >
-> <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1.
+> <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. <br /> The minimum MMA supported version is 10.20.18029 (March 2020).
 
 ### OS versions when using Microsoft Defender for servers
 
@@ -182,6 +184,7 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
+|Network assessments|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Network discovery|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Integrations: Microsoft Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|

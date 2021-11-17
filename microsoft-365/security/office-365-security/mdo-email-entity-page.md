@@ -15,6 +15,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
@@ -29,7 +30,7 @@ Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P
 
 ## Reach the email entity page
 
-The email entity page is available in the Microsoft 365 Defender portal (<https://security.microsoft.com>) at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+The email entity page is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 

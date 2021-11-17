@@ -18,7 +18,9 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn about how to use the alerts features in the Microsoft 365 Defender portal to view and manage alerts, including managing advanced alerts.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -35,13 +37,13 @@ Use the alerts features in the Microsoft 365 Defender portal to view and manage 
 
 ## How to get to the alerts features
 
-Alerts are in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Here's how to get to the page:
+Alerts are in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's how to get to the page:
 
-In the **Microsoft 365 Defender portal**, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 ## Alerts features
 
-The following table describes the tools that are available under **Alerts** in the Microsoft 365 Defender portal.
+The following table describes the tools that are available under **Alerts** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 <br>
 
