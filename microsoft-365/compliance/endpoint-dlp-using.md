@@ -40,9 +40,9 @@ Or
 
 ### Advanced classification scanning and protection
 
-#### Get registered
+## Get registered
 
-To get access to this feature, you must register your tenant with Microsoft—see [get registered](https://aka.ms/Ignite2021DLP).
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
@@ -60,8 +60,6 @@ These Windows versions support advanced classification scanning and protection:
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### Endpoint DLP Windows 10 and macOS settings
-
-To get access to macOS support, you must register your tenant with Microsoft—see [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
