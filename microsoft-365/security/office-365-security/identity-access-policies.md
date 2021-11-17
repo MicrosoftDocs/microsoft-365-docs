@@ -340,8 +340,8 @@ For Android Enterprise work profile devices:
 
 |Protection level  |Device policy |More information  |
 |---------|---------|---------|
-|Baseline     |Work Profile: Basic security (Level 1)      |N/A         |
-|Sensitive     |Work Profile: Basic security (Level 1)         |N/A         |
+|Baseline     |Work Profile: Enhanced security (Level 2)      |N/A         |
+|Sensitive     |Work Profile: Enhanced security (Level 2)         |N/A         |
 |Baseline     |Fully Managed: Enhanced Security (Level 2)       |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
 |Sensitive     |Fully Managed: Enhanced Security (Level 2)         |The policy settings enforced in level 2 include all the policy settings recommended for level 1 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 1.         |
 |Highly Regulated     |High security (Level 3)         |The policy settings enforced in level 3 include all the policy settings recommended for level 1 and 2 and only adds to or updates the below policy settings to implement more controls and a more sophisticated configuration than level 2.         |
