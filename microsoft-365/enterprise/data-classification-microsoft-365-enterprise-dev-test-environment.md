@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to create and use retention labels on documents in your Microsoft 365 for enterprise test environment.
 ---
@@ -75,7 +76,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a private instance of your browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global admin account.
+1. Using a private instance of your browser, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> using your global admin account.
 1. In the list of tiles, select **SharePoint**.
 1. On the new **SharePoint** tab in your browser, select **Create site**.
 1. On the **Create a site** page, select **Team site**.
