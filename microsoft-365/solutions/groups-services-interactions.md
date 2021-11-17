@@ -46,7 +46,7 @@ Examples of this include:
 
 ## User interactions with groups
 
-Microsoft 365 Groups can be created and managed from a variety of interfaces, both by administrators and end users. 
+Microsoft 365 Groups can be created and managed from various interfaces, both by administrators and end users. 
 
 ### Administrative experiences
 
@@ -54,7 +54,7 @@ Administrators can create and manage Microsoft 365 groups from several of the wo
 
 **Related settings**
 
-Across the various administrative interfaces that can manage group settings exists several overlaps which you should be aware of.
+Across the various administrative interfaces that can manage group settings exists several overlaps that you should be aware of.
 
 **Microsoft 365 admin center**
 
@@ -68,7 +68,7 @@ The admin center also provides several guest invitation control measures that go
 
 **SharePoint**
 
-SharePoint sites are created with Owner, Member and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
+SharePoint sites are created with Owner, Member, and Visitor security groups, with the first two matching up to their Microsoft 365 group counterparts. While membership for SharePoint Online sites is generally managed by the associated Microsoft 365 group, it is not a bidirectional relationship. Any changes to membership at the Microsoft 365 group level are reflected in SharePoint, however if membership is changed in the SharePoint group, this is not reflected in the Microsoft 365 group.
 
 ### User experiences
 
@@ -168,7 +168,7 @@ Deleting the group in Azure AD will delete relevant group-associated services an
 
 ## Teams
 
-Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with a variety of Microsoft and third-party services.
+Teams is a chat-centered workspace aimed at enhancing collaboration by providing a singular interface to interact with various Microsoft and third-party services.
 
 By default, when a team is created, the mailbox and calendar associated with the Microsoft 365 group are hidden from both the Global Address List in Exchange, as well as Outlook. This can be manually overridden by an administrator if the user would like to use both Outlook and Teams on the same Microsoft 365 group.
 
