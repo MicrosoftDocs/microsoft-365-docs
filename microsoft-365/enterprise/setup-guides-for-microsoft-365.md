@@ -191,6 +191,12 @@ The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your or
 
 The [Microsoft Teams for Education setup guide](https://aka.ms/teamsedusetup) provides your school with guidance that brings collaborative classrooms, conversations, meetings, files, and apps together in one place. The guide also provides instructions to prepare, plan, and configure Teams for your school. After your deployment is complete, use built-in tools to configure who can create teams, and optionally create teams yourself while populating members with a .csv file.
 
+### Integrate Microsoft LTI apps with your LMS
+
+For teachers to work effectively and students to stay organized, they need a single sign-on to one place to collaborate with all their learning materials, assignments, and applications at their fingertips. Microsoft Learning Tools Interoperability (LTI) apps bring the best of Microsoft tools directly into your learning management system (LMS), so that students and teacher can focus on study, not finding files or building tools.
+
+If you are an admin of a LMS and want to access Microsoft tools directly from within your LMS, use our [Integrate Microsoft LTI apps with your LMS](https://aka.ms/lmsintegrationguide) Integrate Microsoft LTI apps with your LMS guide to get started. These tools currently include Microsoft Teams classes and Microsoft Teams meetings.
+
 ### SharePoint setup guide
 
 The [SharePoint setup guide](https://aka.ms/spoguidance) helps you set up your SharePoint document storage and content management, create sites, configure external sharing, migrate data and configure advanced settings, and drive user engagement and communication within your organization. You'll follow steps for configuring your content-sharing permission policies, choose your migration sync tools, and enable the security settings for your SharePoint environment.
