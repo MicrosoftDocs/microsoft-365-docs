@@ -32,9 +32,9 @@ This article lets you know about upcoming changes for Secure Score.
 
 - Turn on Safe Attachments in block mode
 - Prevent sharing Exchange Online calendar details with external users
-- Turn on Safe Documents for Office Clients
+- Turn on Safe Documents for office clients
 - Turn on the common attachments filter setting for anti-malware policies
-- Ensure that there are no sender domains allowed for Anti-spam policies
+- Ensure that there are no sender domains allowed for anti-spam policies
 - Create Safe Links policies for email messages
 - Create zero-hour auto purge policies for malware
 - Turn on Microsoft Defender for Office 365 in SharePoint, OneDrive, and Microsoft Teams
