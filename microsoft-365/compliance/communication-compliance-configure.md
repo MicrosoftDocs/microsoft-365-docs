@@ -53,13 +53,13 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try comm
 
 ## Recommended actions (preview)
 
-Recommended actions can help your organization get the most out of communication compliance capabilities and your existing policies. Included on the **Overview** page, recommended actions provide insights and summarize sensitive information types and inappropriate content activities in communications in your organization.
+Recommended actions can help your organization get started with communication compliance capabilities and get the most out of your existing policies. Included on the **Policies** page, recommended actions provide insights and summarizes sensitive information types and inappropriate content activities in communications in your organization. These insights do not include any personally identifiable information (PII) for users in your organization.
 
 ![Communication compliance recommended actions.](../media/communication-compliance-recommended-actions.png)
 
-Activity in messages containing inappropriate content is enumerated by classifier type from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
+Activity in messages containing inappropriate content is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
 
-Activity involving sensitive information types is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are provided for all sensitive information types, including ones that your organization have not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
+Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are aggregated for all sensitive information types, including ones that your organization have not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
