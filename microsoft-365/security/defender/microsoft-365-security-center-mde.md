@@ -4,7 +4,7 @@ description: Learn about changes from the Microsoft Defender Security Center to 
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -19,6 +19,7 @@ search.appverid:
 ms.collection: 
 - M365-security-compliance 
 - m365initiative-m365-defender 
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Microsoft Defender for Endpoint in Microsoft 365 Defender
@@ -52,7 +53,7 @@ The image and the table below lists the changes in navigation between the Micros
 | Configuration management | Configuration management |
 | Settings | Settings | 
 
-The improved [Microsoft 365 Defender](overview-security-center.md) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This  brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
+The improved [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
 
 If you're familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in Microsoft 365 Defender. However there are some new and updated elements to be aware of.
 
@@ -70,9 +71,9 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Department of Defense
 >- All US government institutions with commercial licenses
 
-Take a look at Microsoft 365 Defender: [https://security.microsoft.com](https://security.microsoft.com).
+Take a look at Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
-Learn more about the benefits: [Overview of Microsoft 365 Defender](overview-security-center.md)
+Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
 ## What's changed
 
@@ -177,6 +178,6 @@ Logging in to multiple tenants simultaneously in the same browsing session is cu
 
 ## Related information
 
-- [Microsoft 365 Defender](overview-security-center.md)
+- [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Redirecting accounts from Microsoft Defender for Endpoint to Microsoft 365 Defender](microsoft-365-security-mde-redirection.md)

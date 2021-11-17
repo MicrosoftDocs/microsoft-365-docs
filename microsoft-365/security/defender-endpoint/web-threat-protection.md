@@ -2,7 +2,6 @@
 title: Protect your organization against web threats
 description: Learn about web protection in Microsoft Defender for Endpoint and how it can protect your organization.
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -10,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -51,7 +50,7 @@ The following procedure describes how to configure web threat protection using t
 
 1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), and sign in.
  
-2. Choose **Endpoint security** > **Attack surface reduction**, and then choose **+ Create policy**.
+2. Choose **Endpoint security** \> **Attack surface reduction**, and then choose **+ Create policy**.
 
 3. Select a platform, such as **Windows 10 and later**, select the **Web protection** profile, and then choose **Create**. 
 

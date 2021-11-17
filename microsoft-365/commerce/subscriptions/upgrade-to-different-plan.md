@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -71,13 +71,11 @@ If you don't see any plans on the **Upgrade** tab, it means your plan can't be u
 
 #### You can't upgrade subscriptions now because you have more users than licenses
 
-To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have
-purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../business-video/get-help-support.md).
+To upgrade plans automatically, all of your users need to be assigned valid licenses. If you have assigned more licenses than you have purchased, you'll see an alert on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page that says you have a licensing conflict that needs to be resolved. [Learn how to resolve license conflicts](../../commerce/licenses/buy-licenses.md). After you have resolved any licensing conflicts, you should see plans listed on the **Upgrade** tab. If not, you can [change plans manually](change-plans-manually.md), or [call support](../../business-video/get-help-support.md).
 
 #### You can't upgrade subscriptions right now because this subscription isn't fully set up or the service isn't available
 
-For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are
-provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
+For example, if one of the services has an incident, you won't be able to upgrade until all services are healthy. To see if there are provisioning or service health issues, in the admin center, go to the **Health** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health</a> page.
 
 If you find that a service is not fully provisioned, or you have a service health issue, please wait a few hours for your service to become available, and try again. If you still have a problem, please [call support](../../business-video/get-help-support.md).
 
@@ -111,15 +109,13 @@ If you have a government or non-profit plan, you can [change plans manually](cha
 
 #### The subscription that you want to upgrade from has a temporary issue
 
-You might not see any plans on the **Upgrade** tab because the service is in the process of upgrading a high volume of plans. Try again in
-about an hour after your first attempt.
+You might not see any plans on the **Upgrade** tab because the service is in the process of upgrading a high volume of plans. Try again in about an hour after your first attempt.
 
 #### The plan that you want to upgrade to isn't a supported option
 
 When you upgrade plans, the plans that are available for you to upgrade to are displayed based on the services in your current plan. You can only upgrade to a plan that has the same data-related services, such as Exchange Online or SharePoint Online, or to a higher version of them. This ensures that users don\'t lose data related to those services during the upgrade.
 
-If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md),
-instead. You can also [call support](../../business-video/get-help-support.md) for help.
+If your plan isn't eligible to upgrade plans automatically, you might be able to [change plans manually](change-plans-manually.md) instead. You can also [call support](../../business-video/get-help-support.md) for help.
 
 #### Your subscription has an add-on
 
@@ -142,11 +138,10 @@ When you upgrade plans automatically by using the **Switch plans** button (or th
 ### Users and licenses
 
 Users on the old subscription will automatically be moved to the new subscription.
-  
+
 If your old subscription includes multiple services, and if you have changed which of these services your users are assigned to, you may want to make note of this before you upgrade plans so that you can recreate these changes afterwards. All users will be given access to all services in the new subscription. For example, if you previously purchased Microsoft 365 Business Premium for all 100 of your users, but unassigned the SharePoint Online service from 50 of them, this change would not be kept after you upgrade plans.
-  
+
 If you have more than one subscription before you upgrade plans, and have users assigned licenses to more than one subscription, this assignment pattern will be kept as much as possible in the new subscription.
-  
 All user data will be retained during the upgrade, including Exchange mailboxes and SharePoint Online documents, lists, and other information.
   
 ### Billing

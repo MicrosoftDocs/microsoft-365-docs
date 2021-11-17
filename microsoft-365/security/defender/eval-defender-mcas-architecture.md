@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: bcarter
 author: brendacarter
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -53,7 +53,7 @@ The first step to managing the use of cloud apps is to discover which cloud apps
 ![Architecture for Microsoft Cloud App Security - Cloud discovery.](../../media/defender/m365-defender-mcas-architecture-b.png)
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
-- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 devices. 
+- A. Cloud App Discovery integrates with Microsoft Defender for Endpoint natively. Defender for Endpoint reports cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices. 
 - B. For coverage on all devices connected to a network, the Cloud App Security log collector is installed on firewalls and other proxies to collect data from endpoints. This data is sent to Cloud App Security for analysis.
 
 #### Managing cloud apps
@@ -123,7 +123,7 @@ The following table identified key concepts that are important to understand whe
 
 To discover cloud apps used in your environment, you can do one or both of the following:
 
-- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 devices, on and off your network.
+- Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 11 and Windows 10 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Cloud App Security log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Cloud App Security for analysis. Cloud App Security natively integrates with some third-party proxies for even more capabilities.
 
 These options are included in [Step 2. Enable the evaluation environment](eval-defender-mcas-enable-eval.md). 

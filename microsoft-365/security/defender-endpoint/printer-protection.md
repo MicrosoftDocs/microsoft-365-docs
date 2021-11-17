@@ -6,13 +6,15 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Device Control Printer Protection
@@ -42,7 +44,7 @@ To see device configuration reports, the account must have view reports permissi
 
 ## Prepare your endpoints
 
-Make sure that the Windows 10 devices that you plan on deploying Printer Protection to meet these requirements.
+Make sure that the Windows 10 or Windows 11 devices that you plan on deploying Printer Protection to meet these requirements.
 
 1. The following Windows Updates are installed.
     - For Windows 1809: install Windows Update [KB5003217](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46)
@@ -129,7 +131,7 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
-The [Microsoft 365 security center](https://security.microsoft.com) shows printing blocked by the Device Control Printer Protection policy above.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> shows printing blocked by the Device Control Printer Protection policy above.
 
 ```kusto
 DeviceEvents
@@ -144,9 +146,9 @@ DeviceEvents
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
- 
+
  You can use the PnP event to find the USB printer used in the organization:
- 
+
 ```kusto
 //find the USB Printer VID/PID
 DeviceEvents

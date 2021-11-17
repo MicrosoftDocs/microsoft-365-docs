@@ -2,15 +2,13 @@
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
 keywords: tune, performance, microsoft defender for endpoint, defender antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -93,7 +91,7 @@ For examples that describe the process of "export" and "convert" through sample 
 Microsoft Defender Antivirus performance analyzer has the following prerequisites:
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
-- Platform Version: 4.18.2108.X+
+- Platform Version: 4.18.2108.7+
 - PowerShell Version: PowerShell Version 5.1
 
 ## PowerShell reference

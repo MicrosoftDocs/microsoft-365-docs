@@ -12,10 +12,11 @@ f1_keywords:
 - 'O365E_Win10AppPolicy'
 - 'BCS365_Win10AppPolicy'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
-- M365-identity-device-management 
+- M365-identity-device-management
+- Adm_TOC 
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

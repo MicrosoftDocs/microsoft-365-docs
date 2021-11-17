@@ -6,8 +6,9 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
-localization_priority: Normal
+ms.prod: m365-security
+ms.technology: mdo
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid:

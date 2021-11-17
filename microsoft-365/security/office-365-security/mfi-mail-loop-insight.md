@@ -2,13 +2,13 @@
 title: Fix possible mail loop insight
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom: 
   - seo-marvel-apr2020

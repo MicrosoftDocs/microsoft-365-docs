@@ -3,11 +3,12 @@ title: Get started with Microsoft Viva Topics
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-audience: admin
+audience: enabler, admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.service: o365-administration
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn about new ways to discover and explore information in Microsoft Viva Topics.
 ---
 

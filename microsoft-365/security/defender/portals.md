@@ -4,11 +4,11 @@ description: Find the right Microsoft admin center or portal for managing variou
 keywords: security, portals, Microsoft 365, M365, security center, admin center, URL, link, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender for Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security , Azure AD, security & compliance center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-While [Microsoft 365 Defender portal](overview-security-center.md) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
+While [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal) is the new home for monitoring and managing security across your identities, data, devices, and apps, you will need to access various portals for certain specialized tasks.
 
 > [!TIP] 
 > To access various relevant portals from Microsoft 365 Defender portal, select **More resources** in the navigation pane.
@@ -41,7 +41,7 @@ Security operators and admins can go to the following portals to manage security
 | Azure Defender portal | Use [Azure Defender](/azure/security-center/security-center-intro) to strengthen the security posture of your data centers and your hybrid workloads in the cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity portal | Identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions using Active Directory signals with [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | Cloud App Security portal | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to get rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats on cloud services | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Microsoft Defender Security Intelligence portal | Get security intelligence updates for Microsoft Defender for Endpoint, submit samples, and explore the threat encyclopedia | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Microsoft Security Intelligence portal | Get security intelligence updates for Microsoft Defender for Endpoint, submit samples, and explore the threat encyclopedia | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## Portals for other workloads
 

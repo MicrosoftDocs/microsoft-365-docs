@@ -2,15 +2,13 @@
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender for Endpoint.
 keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -37,10 +35,11 @@ If you receive an error message, Microsoft 365 Defender will provide a detailed 
 If while accessing Microsoft 365 Defender you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
 
 Potential reasons:
+
 - The Windows E5 and Office E5 licenses are separate licenses.
 - The license was purchased but not provisioned to this Azure AD instance.
-    - It could be a license provisioning issue.
-    - It could be you inadvertently provisioned the license to a different Microsoft Azure AD than the one used for authentication into the service.
+  - It could be a license provisioning issue.
+  - It could be you inadvertently provisioned the license to a different Microsoft Azure AD than the one used for authentication into the service.
 
 For both cases, you should contact Microsoft support at [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).
@@ -49,7 +48,7 @@ For both cases, you should contact Microsoft support at [General Microsoft Defen
 
 ## Your subscription has expired
 
-If while accessing Microsoft 365 Defender you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date. 
+If while accessing Microsoft 365 Defender you get a **Your subscription has expired** message, your online service subscription has expired. Microsoft Defender for Endpoint subscription, like any other online service subscription, has an expiration date.
 
 You can choose to renew or extend the license at any point in time. When accessing the portal after the expiration date a **Your subscription has expired** message will be presented with an option to download the device offboarding package, should you choose to not renew the license.
 
@@ -66,27 +65,25 @@ For more information, see, [**Assign user access to the portal**](/windows/threa
 ![Image of not authorized to access portal.](images/atp-not-authorized-to-access-portal.png)
 
 ## Data currently isn't available on some sections of the portal
+
 If the portal dashboard and other sections show an error message such as "Data currently isn't available":
 
 ![Image of data currently isn't available.](images/atp-data-not-available.png)
 
-You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
-
+You'll need to allow the `security.windows.com` and all subdomains under it on your web browser. For example, `*.security.windows.com`.
 
 ## Portal communication issues
+
 If you encounter issues with accessing the portal, missing data, or restricted access to portions of the portal, you'll need to verify that the following URLs are allowed and open for communication.
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com` 
+- `https://*.securitycenter.windows.com`
 - `https://automatediracs-eus-prd.securitycenter.windows.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
-- `https://secure.aadcdn.microsoftonline-p.com` 
-- `https://securitycenter.windows.com` 
-- `https://static2.sharepointonline.com` 
-
-
-
+- `https://secure.aadcdn.microsoftonline-p.com`
+- `https://securitycenter.windows.com`
+- `https://static2.sharepointonline.com`

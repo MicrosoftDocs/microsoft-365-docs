@@ -2,15 +2,13 @@
 title: Use role-based access control to grant fine-grained access to Microsoft 365 Defender portal
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -34,11 +32,14 @@ Using role-based access control (RBAC), you can create roles and groups within y
 
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-Tier|Description
-:---|:---
-Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
-Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.
-Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
+Tier|Description|
+:---|:---|
+Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
+Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
+Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
+
+> [!NOTE]
+> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.  
 
 Defender for Endpoint RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
@@ -71,4 +72,5 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 
 ## Related topic
 
+- [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)

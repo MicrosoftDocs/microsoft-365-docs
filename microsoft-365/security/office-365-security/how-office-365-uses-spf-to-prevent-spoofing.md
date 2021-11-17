@@ -9,7 +9,7 @@ ms.date: 12/15/2016
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: 3aff33c5-1416-4867-a23b-e0c0c5b4d2be

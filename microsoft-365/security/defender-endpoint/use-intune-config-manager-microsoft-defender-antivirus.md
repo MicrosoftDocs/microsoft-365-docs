@@ -2,21 +2,21 @@
 title: Configure Microsoft Defender Antivirus using Microsoft Endpoint Manager
 description: Use Microsoft Endpoint Manager and Microsoft Intune to configure Microsoft Defender Antivirus and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/24/2021
+ms.date: 10/18/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
+ms.collection: m365-security-compliance
 ---
 
 # Use Microsoft Endpoint Manager to configure and manage Microsoft Defender Antivirus
@@ -28,7 +28,7 @@ ms.topic: how-to
 
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 
-You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to configure Microsoft Defender Antivirus scans. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) are now part of Endpoint Manager.  
+You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to configure Microsoft Defender Antivirus scans. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) are now part of Endpoint Manager.
 
 ## Configure Microsoft Defender Antivirus scans in Endpoint Manager
 
@@ -38,7 +38,7 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 3. Under **Manage**, choose **Antivirus**.
 
-4. Select your Microsoft Defender Antivirus policy. 
+4. Select your Microsoft Defender Antivirus policy.
 
 5. Under **Manage**, choose **Properties**.
 
@@ -48,10 +48,8 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 8. Choose **Review + save**
 
-
 > [!TIP]
 > Need help? See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
-
 
 ## Related articles
 

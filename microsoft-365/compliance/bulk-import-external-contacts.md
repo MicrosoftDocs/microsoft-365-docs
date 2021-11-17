@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150

@@ -3,15 +3,13 @@ title: Troubleshoot installation issues for Microsoft Defender for Endpoint on L
 ms.reviewer:
 description: Troubleshoot installation issues for Microsoft Defender for Endpoint on Linux
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -31,7 +29,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-## Verify if installation succeeded
+## Verify that the installation succeeded
 
 An error in installation may or may not result in a meaningful error message by the package manager. To verify if the installation succeeded, obtain and check the installation logs using:
 
@@ -53,7 +51,7 @@ Also check the [Client configuration](linux-install-manually.md#client-configura
 
 ## Make sure you have the correct package
 
-Please mind that the package you are installing is matching the host distribution and version.
+Verify that the package you are installing matches the host distribution and version.
 
 <br>
 
@@ -61,10 +59,10 @@ Please mind that the package you are installing is matching the host distributio
 
 |package|distribution|
 |---|---|
-|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL and CentOS 8.x|
-|mdatp-sles12.Linux.x86_64.rpm|SuSE Linux Enterprise Server 12.x|
-|mdatp-sles15.Linux.x86_64.rpm|SuSE Linux Enterprise Server 15.x|
-|mdatp.Linux.x86_64.rpm|Oracle, RHEL and CentOS 7.x|
+|mdatp-rhel8.Linux.x86_64.rpm|Oracle, RHEL, and CentOS 8.x|
+|mdatp-sles12.Linux.x86_64.rpm|SUSE Linux Enterprise Server 12.x|
+|mdatp-sles15.Linux.x86_64.rpm|SUSE Linux Enterprise Server 15.x|
+|mdatp.Linux.x86_64.rpm|Oracle, RHEL, and CentOS 7.x|
 |mdatp.Linux.x86_64.deb|Debian and Ubuntu 16.04, 18.04 and 20.04|
 |
 
@@ -72,10 +70,10 @@ For [manual deployment](linux-install-manually.md), make sure the correct distro
 
 ## Installation failed
 
-Check if the mdatp service is running:
+Check if the Defender for Endpoint service is running:
 
 ```bash
-systemctl status mdatp
+service mdatp status
 ```
 
 ```Output
@@ -90,7 +88,7 @@ systemctl status mdatp
            └─1968 /opt/microsoft/mdatp/sbin/wdavdaemon
  ```
 
-## Steps to troubleshoot if mdatp service isn't running
+## Steps to troubleshoot if the mdatp service isn't running
 
 1. Check if "mdatp" user exists:
 
@@ -107,22 +105,20 @@ systemctl status mdatp
 2. Try enabling and restarting the service using:
 
     ```bash
-    sudo systemctl enable mdatp
+    sudo service mdatp start
     ```
 
     ```bash
-    sudo systemctl restart mdatp
+    sudo service mdatp restart
     ```
 
 3. If mdatp.service isn't found upon running the previous command, run:
 
     ```bash
-    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
+    sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path> 
     ```
 
-    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian
-    distributions and `/usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES.
-Then rerun step 2.
+    where `<systemd_path>` is `/lib/systemd/system` for Ubuntu and Debian distributions and /usr/lib/systemd/system` for Rhel, CentOS, Oracle and SLES. Then rerun step 2.
 
 4. If the above steps don't work, check if SELinux is installed and in enforcing mode. If so, try setting it to permissive (preferably) or disabled mode. It can be done by setting the parameter `SELINUX` to "permissive" or "disabled" in `/etc/selinux/config` file, followed by reboot. Check the man-page of selinux for more details.
 Now try restarting the mdatp service using step 2. Revert the configuration change immediately though for security reasons after trying it and reboot.
@@ -149,7 +145,7 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
 
 7. Ensure that the file system containing wdavdaemon isn't mounted with "noexec".
 
-## If mdatp service is running, but EICAR text file detection doesn't work
+## If the Defender for Endpoint service is running, but the EICAR text file detection doesn't work
 
 1. Check the file system type using:
 

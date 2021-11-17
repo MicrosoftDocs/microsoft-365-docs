@@ -2,15 +2,13 @@
 title: Troubleshoot Microsoft Defender for Endpoint live response issues
 description: Troubleshoot issues that might arise when using live response in Microsoft Defender for Endpoint
 keywords: troubleshoot live response, live, response, locked, file
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -37,17 +35,17 @@ If while trying to take an action during a live response session, you encounter 
 1. Copy the following script code snippet and save it as a PS1 file:
 
     ```powershell
-    $copied_file_path=$args[0] 
+    $copied_file_path=$args[0]
     $action=Copy-Item $copied_file_path -Destination $env:TEMP -PassThru -ErrorAction silentlyContinue
-        
+
     if ($action){
          Write-Host "You copied the file specified in $copied_file_path to $env:TEMP Succesfully"
     }
-    
+
     else{
         Write-Output "Error occoured while trying to copy a file, details:"
         Write-Output  $error[0].exception.message
- 
+
     }
     ```
 

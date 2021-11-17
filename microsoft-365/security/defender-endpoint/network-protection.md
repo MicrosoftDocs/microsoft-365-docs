@@ -2,12 +2,11 @@
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 keywords: Network protection, exploits, malicious website, ip, domain, domains
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -16,6 +15,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
+ms.collection: M365-security-compliance
 ---
 
 # Protect your network
@@ -47,7 +47,7 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 |Windows version|Microsoft Defender Antivirus|
 |---|---|
-|Windows 10 version 1709 or later <p> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled|
+|Windows 10 version 1709 or later <p> Windows 11 <p> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled|
 |
 
 After you have enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
@@ -74,8 +74,8 @@ Microsoft Defender for Endpoint provides detailed reporting into events and bloc
 Here is an example query for advanced hunting:
 
 ```kusto
-DeviceEvents
-|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+DeviceNetworkEvents
+|where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked', 'ConnectionSuccess')
 ```
 
 ## Review network protection events in Windows Event Viewer
@@ -135,7 +135,7 @@ For Windows 10 Enterprise Multi-Session 1909 and up, used in Windows Virtual Des
 
 ## Network protection troubleshooting
 
-Due to the environment where network protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following Defender registry keys:
+Due to the environment where network protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach Cloud Service. To resolve the connectivity problem, customers with E5 licenses should configure one of the following registry keys:
 
 ```console
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f

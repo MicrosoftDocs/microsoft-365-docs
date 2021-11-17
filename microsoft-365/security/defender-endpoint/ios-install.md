@@ -3,15 +3,13 @@ title: App-based deployment for Microsoft Defender for Endpoint on iOS
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -52,11 +50,11 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center1.](images/ios-deploy-1.png)
 
-1. On the Add app page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
+1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
 
 1. Select **iOS 11.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
-1. In the *Assignments* section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
+1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
     > [!NOTE]
     > The selected user group should consist of Intune enrolled users.
@@ -148,17 +146,6 @@ Intune allows you to configure the Defender for iOS app through an App Configura
    Click **Next**.
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
-
-1. Next, for enhanced Anti-phishing capabilities, you can deploy a custom profile on the supervised iOS devices. Follow the steps below:
-    - Download the config profile from [https://aka.ms/mdatpiossupervisedprofile](https://aka.ms/mdatpiossupervisedprofile)
-    - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
-
-    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
-    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.
-    - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 ## Next Steps
 

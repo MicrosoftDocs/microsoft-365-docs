@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -59,12 +59,12 @@ Choosing the right Microsoft 365 subscription is key to getting the most out of 
 | **Information protection** | Office 365 data loss prevention | No | Yes | Yes |
  | Azure Information Protection Plan 1, BitLocker enforcement | | No | Yes | No |
 | **On-premises CAL rights** | ECAL Suite (Exchange, SharePoint, Skype) | No | No | Yes |
-| **Compliance** | Unlimited email archiving\*\*\* | No | Yes | Yes |
+| **Compliance** | Additional email archiving\*\*\* | No | Yes | Yes |
 
 \* Indicates Microsoft 365 Business Standard has Plan 1 of the functionality and Office 365 Enterprise E3 has Plan 2.
 
 \*\* Available in US, UK, Canada.
 
-\*\*\* Unlimited archiving when auto-expansion is turned on.
+\*\*\* Additional archive storage space when auto-expanding archiving is turned on.
 
 To compare Microsoft 365 Business Premium with other products, including other Microsoft 365 plans, see [Licensing Microsoft 365 for small and medium-sized businesses](/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).

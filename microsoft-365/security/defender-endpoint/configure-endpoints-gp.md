@@ -1,28 +1,28 @@
 ---
-title: Onboard Windows 10 devices to Microsoft Defender for Endpoint via Group Policy
-description: Use Group Policy to deploy the configuration package on the Windows 10 devices so that they are onboarded to the service.
+title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
+description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
 keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 04/24/2018
+ms.date: 09/16/2021
 ms.technology: mde
 ---
 
-
-# Onboard the Windows 10 devices using Group Policy
+# Onboard Windows devices using Group Policy 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 **Applies to:**
 
@@ -35,19 +35,22 @@ ms.technology: mde
 > [!NOTE]
 > To use Group Policy (GP) updates to deploy the package, you must be on Windows Server 2008 R2 or later.
 >
-> For Windows Server 2019, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
+> For Windows Server 2019 and Windows Server 2022, you may need to replace NT AUTHORITY\Well-Known-System-Account with NT AUTHORITY\SYSTEM of the XML file that the Group Policy preference creates.
 
-## Onboard devices using Group Policy
+> [!NOTE]
+> If you're using the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.
 
-[![Image of the PDF showing the various deployment paths.](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
+Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
+1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management**  \> **Onboarding**.
-    2. Select Windows 10 as the operating system.
-    3. In the **Deployment method** field, select **Group policy**.
-    4. Click **Download package** and save the .zip file.
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
+
+    1. Select the operating system.
+
+    1. In the **Deployment method** field, select **Group policy**.
+
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
 
@@ -113,7 +116,7 @@ You can use Group Policy (GP) to configure settings, such as settings for the sa
 
 ### Update endpoint protection configuration
 
-After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
+After configuring the onboarding script, continue editing the same group policy to add endpoint protection configurations. Perform group policy edits from a system running Windows 10 or Server 2019, Windows 11, or Windows Server 2022 to ensure you have all of the required Microsoft Defender Antivirus capabilities. You may need to close and reopen the group policy object to register the Defender ATP configuration settings.
 
 All policies are located under `Computer Configuration\Policies\Administrative Templates`.
 
@@ -194,11 +197,15 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
-    1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Offboarding**.
-    2. Select Windows 10 as the operating system.
-    3. In the **Deployment method** field, select **Group policy**.
-    4. Click **Download package** and save the .zip file.
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+
+    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
+
+    1. Select the operating system.
+    
+    1. In the **Deployment method** field, select **Group policy**.
+
+    1. Click **Download package** and save the .zip file.
 
 2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a file named *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd*.
 
@@ -227,7 +234,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Monitor devices using the portal
 
-1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 
@@ -236,11 +243,14 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Setup Defender AV policies
 
-Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different OU’s (Organizational Units).
+Create a new Group Policy or group these settings in with the other policies. This is dependent upon the customers environment and how they would like to roll out the service by targeting different organizational units (OUs).
 
 1. After you choose the GP, or create a new one, edit the GP.
+
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
-:::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
+    :::image type="content" source="images/realtime-protect.png" alt-text="real time protection.":::
+
 1. In the Quarantine folder, configure removal of items from Quarantine folder.
 
     :::image type="content" source="images/removal-items-quarantine1.png" alt-text="removal items quarantine folder.":::
@@ -257,7 +267,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity.":::
 
-### Configure Windows Defender Smart Screen settings
+### Configure Windows Defender SmartScreen settings
 
 1. Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Windows Defender SmartScreen** \> **Explorer**.
 
@@ -305,10 +315,9 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 :::image type="content" source="images/cloud-protection-level.png" alt-text="config cloud protection level.":::
 
 ## Related topics
-
-- [Onboard Windows 10 devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
-- [Onboard Windows 10 devices using Mobile Device Management tools](configure-endpoints-mdm.md)
-- [Onboard Windows 10 devices using a local script](configure-endpoints-script.md)
+- [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
+- [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
