@@ -83,7 +83,7 @@ With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-
 
 If you don't use [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with Microsoft 365 retention, and instead use a [static scope](retention.md#adaptive-or-static-policy-scopes-for-retention), consider the following:
 
-- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.m#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
+- Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded. In this scenario, [specific inclusion and exclusion limits](retention-limits.md) still apply.
     
     > [!NOTE]
     > This also means that any new Microsoft 365 retention settings using a static scope that is applied to the default selection of **All recipients** will automatically include all existing inactive mailboxes.
