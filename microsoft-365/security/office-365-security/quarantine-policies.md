@@ -130,15 +130,10 @@ Now you're ready to assign the quarantine policy to a quarantine feature as desc
 
 ### Create quarantine policies in PowerShell
 
-If you'd rather use PowerShell to create quarantine policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantinePolicy** cmdlet. You have two different methods to choose from:
-
-- [Use the _EndUserQuarantinePermissionsValue_ parameter](#use-the-enduserquarantinepermissionsvalue-parameter).
-- [Use the _EndUserQuarantinePermissions_ parameter](#use-the-enduserquarantinepermissions-parameter).
-
-These methods are described in the following sections.
+If you'd rather use PowerShell to create quarantine policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantinePolicy** cmdlet.
 
 > [!NOTE]
-> The use of the _ESNEnabled_ parameter and the value `$true` to turn on quarantine notifications in the policy is the same for both methods. If you don't use this parameter, then quarantine notifications are turned off.
+> If you don't use the _ESNEnabled_ parameter and the value `$true`, then quarantine notifications are turned off.
 
 #### Use the EndUserQuarantinePermissionsValue parameter
 
@@ -180,56 +175,6 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 
 ```
 
 For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
-
-For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
-
-#### Use the EndUserQuarantinePermissions parameter
-
-To create a quarantine policy using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
-
-A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-
-<p>
-
-B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantinePolicy** command.
-
-##### Step A: Store a quarantine permissions object in a variable
-
-Use the following syntax:
-
-```powershell
-$<VariableName> = New-QuarantinePermissions [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
-```
-
-The default value for unused parameters is `$false`, so you only need to use the parameters where you want to set value to `$true`.
-
-The following example shows how to create permission objects that correspond to the **Limited access** preset permissions group:
-
-```powershell
-$LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
-```
-
-To see the values that you've set, run the variable name as a command (for example, run the command `$LimitedAccess`).
-
-For custom permissions, don't set both the _PermissionToRelease_ and _PermissionToRequestRelease_ parameters to `$true`. Set one to `$true` and leave the other as `$false`, or leave both as `$false`.
-
-You can also modify an existing permissions object variable after you create but before you use it by using the **Set-QuarantinePermissions** cmdlet.
-
-For detailed syntax and parameter information, see [New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions).
-
-##### Step B: Use the variable in the New-QuarantinePolicy command
-
-After you've created and stored the permissions object in a variable, use the variable for the _EndUserQuarantinePermission_ parameter value in the following **New-QuarantinePolicy** command:
-
-```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName> [-EsnEnabled $true]
-```
-
-This example creates a new quarantine policy with quarantine notifications turned on named LimitedAccess using the `$LimitedAccess` permissions object that was described and created in the previous step.
-
-```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess -EsnEnabled $true
-```
 
 For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
