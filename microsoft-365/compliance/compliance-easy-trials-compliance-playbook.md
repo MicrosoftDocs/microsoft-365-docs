@@ -35,6 +35,10 @@ Sections:
 - [Compliance Manager Premium Assessment](#compliance-manager-premium-assessment)
 - [Privacy Management](#privacy-management)
 
+## Compliance Actions with Microsoft 365
+
+Easily and quickly start trying Microsoft’s compliance solutions without changing your organizations meta data. ​Depending on your priorities, you can start with any of these solution areas to see immediate value; however, we have highlighted some of the top concerns communicated by our customers and solutions to start addressing those.
+
 ## Advanced Audit
 
 **Conduct investigations**
