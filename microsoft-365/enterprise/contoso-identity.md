@@ -62,9 +62,9 @@ Here's the server running Azure AD Connect polling the Contoso AD DS forest for 
 
 Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/identity-access-policies.md) for three protection levels:
 
-- *Baseline* protections apply to all user accounts.
-- *Sensitive* protections apply to senior leadership and executive staff.
-- *Highly Regulated* protections apply to specific users in the finance, legal, and research departments who have access to highly regulated data.
+- *Starting point* protections apply to all user accounts.
+- *Enterprise* protections apply to senior leadership and executive staff.
+- *Specialized security* protections apply to specific users in the finance, legal, and research departments who have access to highly regulated data.
 
 Here's the resulting set of Contoso identity and device Conditional Access policies.
 
