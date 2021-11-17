@@ -75,7 +75,7 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
      ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/clcs-services.png)
 
-3. On the **Viva Learning** panel, under SharePoint, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository. If your SharePoint site is new, you'll need to wait 1 hour after site creation to add it here.
+3. On the **Viva Learning** panel, under SharePoint, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository. If your SharePoint site is new, you'll need to wait 1 hour after site creation to add it here. You must also be the owner of the SharePoint site.
 
      ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/sharepoint-1.png)
 
