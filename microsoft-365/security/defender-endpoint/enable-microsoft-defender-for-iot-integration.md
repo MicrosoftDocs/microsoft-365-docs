@@ -30,6 +30,8 @@ ms.technology: mde
 
 Enable the Microsoft Defender for IoT integration to extend Microsoft Defender for Endpoint device discovery capabilities. With Defender for IoT enabled, you're adding agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks [like Voice over Internet Protocol (VoIP), printers, and smart TVs]. This allows you take advantage of a single integrated solution that can secure your IoT and OT infrastructure.
 
+Microsoft Defender for IoT is a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats.
+
 View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view.
 
 A unified security solution for IoT and OT
@@ -64,7 +66,8 @@ To enable Microsoft Defender for IoT the user must have the following roles:
 
 2. **Select subscription** displays a list of the available subscriptions under your Azure Active Directory (Azure AD) tenant.
 
-3. Choose the Azure subscription and select **Save**
+3. Choose the Azure subscription and select **Save**.
+
 
 <!-->
    > [!NOTE]
