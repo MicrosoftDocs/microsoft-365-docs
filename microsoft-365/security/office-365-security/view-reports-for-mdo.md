@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -18,7 +17,9 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -43,7 +44,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ### Download reports
 
-1. In the Microsoft 365 Defender portal, go to **Reports** > **Email & collaboration**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** > **Email & collaboration**.
 
 2. Select **Reports for download**.
 
@@ -71,7 +72,7 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 
 Client side and network latency are not included.
 
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
+To view the report, open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
 
 ![Mail latency report widget on the Email & collaboration reports page.](../../media/mail-latency-report-widget.png)
 

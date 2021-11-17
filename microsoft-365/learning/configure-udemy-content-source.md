@@ -75,6 +75,3 @@ After you've received the required configuration details from Udemy portal by us
     - **Client Secret**: This is the Client Secret gathered from Udemy portal in step 4.
 
 4. Select **Save** to activate Udemy content in Microsoft Viva Learning. It may take up to 24 hours for the content to be available in Viva Learning.
-
->[!NOTE]
->Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
