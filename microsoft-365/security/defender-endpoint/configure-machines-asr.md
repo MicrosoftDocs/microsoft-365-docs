@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -33,7 +34,7 @@ ms.technology: mde
 <br>
 *Attack surface management card*
 
-The *Attack surface management card* is an entry point to tools in Microsoft 365 security center that you can use to:
+The *Attack surface management card* is an entry point to tools in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> that you can use to:
 
 * Understand how ASR rules are currently deployed in your organization.
 * Review ASR detections and identify possible incorrect detections.
@@ -47,7 +48,7 @@ The ***Add exclusions** tab in the Attack surface reduction rules page in Micros
 > [!NOTE]
 > To access Microsoft 365 security center, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read about required licenses and permissions](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-For more information about ASR rule deployment in Microsoft 365 security center, see [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
+For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, see [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Related topics**
 

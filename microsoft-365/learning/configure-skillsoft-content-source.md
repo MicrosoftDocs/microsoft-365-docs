@@ -26,9 +26,9 @@ This article shows you how to configure Skillsoft as a third-party learning cont
 
 ## Configure in your Skillsoft portal
 
-You'll need to reach out to your Skillsoft account team to enable Viva Learning integration. Your account team will also provide you with the Organization ID and Service Account Key. You'll need these for the next step.
+You'll need to reach out to your Skillsoft account team to enable Viva Learning integration. Your account team will also provide you with the Organization ID and Service Account Key. You'll need these details for the next step.
 
-You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for help with getting in touch with your account team. If you are not yet a customer, you can discuss your options by [contacting Skillsoft directly](https://www.skillsoft.com/about/contact-us).
+You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for help with getting in touch with your account team. If you aren't yet a customer, you can [contact Skillsoft directly](https://www.skillsoft.com/about/contact-us) to discuss your options.
 
 ## Configure in your Microsoft 365 admin center
 
@@ -42,6 +42,3 @@ You can contact [Skillsoft Support](https://support.skillsoft.com/percipio/) for
 3. Fill in the configuration details you got from your Skillsoft account team.
 
 4. Select **Save** to save the configuration details and complete the setup process.
-
->[!NOTE]
->Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
