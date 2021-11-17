@@ -26,7 +26,7 @@
           href: ./office-365-security/secure-email-recommended-policies.md
         - name: Recommended SharePoint access policies
           href: ./office-365-security/sharepoint-file-access-policies.md
-        - name: Recommended Cloud App Security policies for SaaS apps
+        - name: Recommended Defender for Cloud Apps policies for SaaS apps
           href: ./office-365-security/mcas-saas-access-policies.md
         - name: Continuous access evaluation
           href: ./office-365-security/microsoft-365-continuous-access-evaluation.md
