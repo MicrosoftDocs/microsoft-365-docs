@@ -1,6 +1,6 @@
 ---
 title: Get alert related user information
-description: Learn how to use the Get alert related user information API to retrieve the user related to a specific alert in Microsoft Defender for Endpoint.
+description: Learn how to use the Get alert-related user information API to retrieve the user related to a specific alert in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -81,7 +81,7 @@ If successful and alert and a user exists - 200 OK with user in the body. If ale
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/636688558380765161_2136280442/user

@@ -17,7 +17,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom: 
   - seo-marvel-apr2020
-description: Learn as an external sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as an external user.
+description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest user.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -29,7 +29,7 @@ ms.prod: m365-security
 
 These articles help external senders improve their reputation and increase their ability to deliver email to users in Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
 
-If you are not a customer, but are trying to send mail to someone in who is, you are in the right place. If you are an administrator and you need help fighting spam, this is not the right section for you. Instead, go to [Anti-spam and anti-malware protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
+If you're not a customer, but are trying to send mail to someone in who is, you're in the right place. If you're an administrator and you need help in fighting spam, this is not the right section for you. Instead, go to [Anti-spam and anti-malware protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 
 ****
 

@@ -86,7 +86,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
 |aadTenantId|String|The Azure Active Directory ID.|
 |detectorId|String|The ID of the detector that triggered the alert.|
-|comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string and createTime date time.|
+|comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string, and createTime date time.|
 |Evidence|List of Alert evidence|Evidence related to the alert. See example below.|
 |
 

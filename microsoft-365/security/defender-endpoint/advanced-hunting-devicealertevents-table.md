@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 |`RemoteUrl`|string|URL or fully qualified domain name (FQDN) that was being connected to|
 |`RemoteIP`|string|IP address that was being connected to|
 |`AttackTechniques`|string|MITRE ATT&CK techniques associated with the activity that triggered the alert|
-|`ReportId`|long|Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the `DeviceName` and `Timestamp` columns|
+|`ReportId`|long|Event identifier based on a repeating counter. To identify unique events, this column must be used with the `DeviceName` and `Timestamp` columns|
 |`Table`|string|Table that contains the details of the event|
 
 ## Related topics

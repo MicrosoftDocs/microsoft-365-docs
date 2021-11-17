@@ -1,6 +1,6 @@
 ---
 title: AADSpnSignInEventsBeta table in the advanced hunting schema
-description: Learn about information associated with Azure Active Directory service principal and managed identity sign-in events table of the advanced hunting schema
+description: Learn about information associated with Azure Active Directory's service principal and managed identity sign-in events table.
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -42,11 +42,11 @@ For information on other tables in the advanced hunting schema, see [the advanc
 |`Timestamp`|datetime|Date and time when the record was generated|
 |`Application`|string|Application that performed the recorded action|
 |`ApplicationId`|string|Unique identifier for the application|
-|`IsManagedIdentity`|boolean|Indicates whether the sign-in was initiated by a managed identity|
+|`IsManagedIdentity`|boolean|Indicates whether the sign-in was started by a managed identity|
 |`ErrorCode`|int|Contains the error code if a sign-in error occurs. To find a description of a specific error code, visit <https://aka.ms/AADsigninsErrorCodes>.|
 |`CorrelationId`|string|Unique identifier of the sign-in event|
-|`ServicePrincipalName`|string|Name of the service principal that initiated the sign-in|
-|`ServicePrincipalId`|string|Unique identifier of the service principal that initiated the sign-in|
+|`ServicePrincipalName`|string|Name of the service principal that started the sign-in|
+|`ServicePrincipalId`|string|Unique identifier of the service principal that started the sign-in|
 |`ResourceDisplayName`|string|Display name of the resource accessed|
 |`ResourceId`|string|Unique identifier of the resource accessed|
 |`ResourceTenantId`|string|Unique identifier of the tenant of the resource accessed|

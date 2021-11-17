@@ -42,7 +42,7 @@ Retrieves specific [Alert](alerts.md) by its ID.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
 Permission type|Permission|Permission display name
 :---|:---|:---
@@ -75,4 +75,4 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified id was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified ID was not found - 404 Not Found.
