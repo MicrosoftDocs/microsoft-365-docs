@@ -26,7 +26,7 @@ ms.technology: m365d
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-This article lets you know about the upcoming improvements for Secure Score.
+This article lets you know about upcoming changes for Secure Score.
 
 ## Proposed changes
 
