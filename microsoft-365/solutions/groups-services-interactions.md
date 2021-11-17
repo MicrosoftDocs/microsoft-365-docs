@@ -110,7 +110,7 @@ See the Groups in Microsoft 365 poster for information about different types of 
 
 The following table provides an overview of Microsoft 365 Groups interactions with various services:
 
-|Product|Features|Does the service<br>exist without a group?|Can the service<br>create a group?|Does deleting the<br>instance delete the group?|
+|Product|Features|Does the service exist without a group?|Can the service create a group?|Does deleting the instance delete the group?|
 |---|---|---|---|---|
 |Azure AD|Membership, Group controls, Guests|Yes|Yes|Yes|
 |Exchange|Calendar, mailbox|Yes|Yes|Yes|
