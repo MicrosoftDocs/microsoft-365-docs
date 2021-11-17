@@ -144,7 +144,7 @@ The **installation package** contains an MSI file that installs the Microsoft De
 
 The **onboarding package** contains the following files:
 
-- `OptionalParamsPolicy` - the setting that enables sample collection
+- `OptionalParamsPolicy` - contains the setting that enables sample collection
 - `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
 
 The following steps provides guidance on downloading the packages.
