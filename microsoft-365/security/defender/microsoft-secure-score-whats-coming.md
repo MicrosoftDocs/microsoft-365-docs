@@ -31,7 +31,7 @@ This article lets you know about upcoming changes for Secure Score.
 ## Proposed changes
 
 - Turn on Safe Attachments in block mode
-- Do not allow Exchange Online calendar details to be shared with external users
+- Prevent sharing Exchange Online calendar details with external users
 - Turn on Safe Documents for Office Clients
 - Turn on the common attachments filter setting for anti-malware policies
 - Ensure that there are no sender domains allowed for Anti-spam policies
