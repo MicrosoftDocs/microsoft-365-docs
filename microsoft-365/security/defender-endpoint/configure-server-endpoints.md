@@ -134,6 +134,22 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 
 ### Download installation and onboarding packages 
 
+You will need to download both the **installation** and **onboarding** packages from the portal.
+
+> [!div class="mx-imgBorder"]
+> ![Image of onboarding dashboard](images/install-agent-onboard.png)
+ 
+
+The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
+
+The **onboarding package** contains the following files:
+
+- `OptionalParamsPolicy` - the setting that enables sample collection
+- `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
+
+The following steps provides guidance on downloading the packages.
+
+
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
@@ -145,12 +161,17 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
  
 4. Select **Download onboarding package** and save the .zip file.
 
-5. Install the installation package using any of the options to install Microsoft Defender Antivirus. (See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).)
+5. Install the installation package using any of the [options to install Microsoft Defender for Endpoint](#options-to-install-microsoft-defender-for-endpoint). 
 
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 ### Options to install Microsoft Defender for Endpoint
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components.
+
+You can use any of the following options to install the agent:
+- [Install using a command line](#install-microsoft-defender-for-endpoint-using-command-line)
+- [Install using a script](#install-microsoft-defender-for-endpoint-using-a-script)
+- [Install using Group Policy](#install-microsoft-defender-for-endpoint-using-group-policy)
 
 ### Install Microsoft Defender For Endpoint using command line
 Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
@@ -185,6 +206,72 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
 
+
+### Install Microsoft Defender for Endpoint using Group policy
+
+1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. 
+
+2. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the device. You should have a folder called *OptionalParamsPolicy* and the file *WindowsDefenderATPOnboardingScript.cmd*.
+
+3. To create a new GPO, open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and click **New**. Enter the name of the new GPO in the dialogue box that is displayed and click **OK**.
+
+4. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
+
+5. In the **Group Policy Management Editor**, go to **Computer configuration**, then **Preferences**, and then **Control panel settings**.
+
+6. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate Task (At least Windows 7)**.
+
+7. In the **Task** window that opens, go to the **General** tab. Under **Security options** click **Change User or Group** and type SYSTEM and then click **Check Names** then **OK**. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
+
+8. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check box.
+
+9. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
+
+10. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *WindowsDefenderATPOnboardingScript.cmd* file.
+
+11. Select **OK** and close any open GPMC windows.
+
+12. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
+
+> [!TIP]
+> After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
+
+#### Additional Defender for Endpoint configuration settings
+
+For each device, you can state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+
+You can use Group Policy (GP) to configure settings, such as settings for the sample sharing used in the deep analysis feature.
+
+##### Configure sample collection settings
+
+1. On your GP management device, copy the following files from the
+    configuration package:
+
+    - Copy _AtpConfiguration.admx_ into _C:\\Windows\\PolicyDefinitions_
+
+    - Copy _AtpConfiguration.adml_ into _C:\\Windows\\PolicyDefinitions\\en-US_
+
+    If you're using a [Central Store for Group Policy Administrative Templates](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra), copy the following files from the
+    configuration package:
+
+    - Copy _AtpConfiguration.admx_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions_
+
+    - Copy _AtpConfiguration.adml_ into _\\\\\<forest.root\>\\SysVol\\\<forest.root\>\\Policies\\PolicyDefinitions\\en-US_
+
+2. Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11), right-click the GPO you want to configure and click **Edit**.
+
+3. In the **Group Policy Management Editor**, go to **Computer configuration**.
+
+4. Click **Policies**, then **Administrative templates**.
+
+5. Click **Windows components** and then **Windows Defender ATP**.
+
+6. Choose to enable or disable sample sharing from your devices.
+
+> [!NOTE]
+> If you don't set a value, the default value is to enable sample collection.
+
+
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 
 The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
@@ -199,6 +286,8 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
 4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section. 
+
+
 
 
 ## Onboarding steps
