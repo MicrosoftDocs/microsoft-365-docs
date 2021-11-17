@@ -26,9 +26,22 @@ ms.technology: m365d
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
+This article lets you know about the upcoming improvements for Secure Score.
+
 ## Proposed changes
 
-No upcoming changes are scheduled at this time. Please check back later.
+- Turn on Safe Attachments in block mode
+- Do not allow Exchange Online calendar details to be shared with external users
+- Turn on Safe Documents for Office Clients
+- Turn on the common attachments filter setting for anti-malware policies
+- Ensure that there are no sender domains allowed for Anti-spam policies
+- Create Safe Links policies for email messages
+- Create zero-hour auto purge policies for malware
+- Turn on Microsoft Defender for Office 365 in SharePoint, OneDrive, and Microsoft Teams
+- Create zero-hour auto purge policies for phishing messages
+- Create zero-hour auto purge policies for spam messages
+- Block abuse of exploited vulnerable signed drivers
+- Turn on scanning of removable drives during a full scan
 
 
 ## Related resources
