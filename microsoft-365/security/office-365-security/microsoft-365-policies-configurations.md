@@ -1,5 +1,5 @@
 ---
-title: Zero Trust tdentity and device access configurations - Microsoft 365 for enterprise
+title: Zero Trust identity and device access configurations - Microsoft 365 for enterprise
 description: Describes Microsoft recommendations and core concepts for deploying secure email, docs, and apps policies and configurations for Zero Trust.
 ms.author: josephd
 author: JoeDavies-MSFT
