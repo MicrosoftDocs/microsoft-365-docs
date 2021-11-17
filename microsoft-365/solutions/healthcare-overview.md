@@ -31,9 +31,17 @@ Learn how you can use Microsoft 365, Dynamics 365, and Azure to digitize, modern
 
 |Resource |Description  |
 |---------|---------|
-|[Microsoft Cloud for Healthcare](https://docs.microsoft.com/industry/healthcare/overview)  | Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhances patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.        |
-|[Teams for Healthcare ](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronig Healthcare Record (EHR) integration<br>- Teams policy packates<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
 |  [Virtual visits with Microsoft Teams and the Bookings app](https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/bookings-virtual-visits)  |      The Bookings app in Microsoft Teams gives organizations a simple way to schedule and manage virtual appointments for staff and attendees. Use it to schedule virtual appointments such as healthcare visits, financial consultations, interviews, customer support, virtual shopping experiences, education office hours, and more.   |
+|[Teams for Healthcare ](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc)    |  Microsoft Teams offers a number of telemedicine features useful for hospitals and other Healthcare organizations. <br>- Virtual visits and Electronig Healthcare Record (EHR) integration<br>- Teams policy packates<br>- Secure messaging<br>- Teams templates<br>- Care coordination and collaboration      |
+|[Microsoft Vaccination Management](/dynamics365/industry/vaccination-management/overview)| This solution connects eligible people with vaccination facilities through online registration and appointment scheduling, provides vaccine inventory management, includes an app to check in residents and record vaccinations, and provides insights about the vaccination program through a centralized dashboard.|
+|[Microsoft Cloud for Healthcare](https://docs.microsoft.com/industry/healthcare/overview)  | Learn about Microsoft Cloud for Healthcare and how it brings together trusted capabilities to customers and partners that enhances patient engagement, empowers health team collaboration, and improves clinical and operational data insights to improve decision-making and operational efficiencies.     |
 | [Azure architecture and solutions for healthcare](https://docs.microsoft.com/azure/architecture/industries/healthcare)| Learn how you can use Microsoft Azure services to digitize, modernize, and enhance your healthcare solution at Azure for healthcare|
 | | |
 
+## Videos you can share with your team
+
+St. Luke’s Hospital uses Microsoft 365 to reimagine care for patients
+> [!VIDEO https://www.youtube.com/watch?v=-jcBjy88n4s]
+
+Microsoft Viva empowers Humana to achieve productivity & wellbeing in a hybrid workplace
+> [!VIDEO https://www.youtube.com/watch?v=vu1oqbuVOns]
