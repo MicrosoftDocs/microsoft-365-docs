@@ -22,10 +22,18 @@ Welcome to the Microsoft 365 compliance solutions trial playbook. ​This playbo
 ​
 Trying each solution will help you make informed decisions to meet your organization’s compliance needs.​
 
-||||||
-|:--------------:|:--------------:|:--------------:|:--------------:|:--------------:|
-|[:::image type="content" source="../media/compliance-trial/advanced-audit.jpg" alt-text="Advanced Audit":::](#advanced-audit)|[:::image type="content" source="../media/compliance-trial/communication-compliance.jpg" alt-text="Communication Compliance":::](#communication-compliance)|[:::image type="content" source="../media/compliance-trial/compliance-manager.jpg" alt-text="Compliance Manager":::](#compliance-manager)|[:::image type="content" source="../media/compliance-trial/data-loss-prevention.jpg" alt-text="Data Loss Prevention":::](#data-loss-prevention)|[:::image type="content" source="../media/compliance-trial/ediscovery.jpg" alt-text="eDiscovery":::](#ediscovery)|
-|[:::image type="content" source="../media/compliance-trial/information-protection.jpg" alt-text="Information Protection":::](#information-protection)|[:::image type="content" source="../media/compliance-trial/insider-risk-management.jpg" alt-text="Insider Risk Management":::](#insider-risk-management)|[:::image type="content" source="../media/compliance-trial/records-management.jpg" alt-text="Records Management":::](#records-management)|[:::image type="content" source="../media/compliance-trial/compliance-manager-premium-assessment.jpg" alt-text="Compliance Manager Premium Assessment":::](#compliance-manager-premium-assessment)|[:::image type="content" source="../media/compliance-trial/privacy-management.jpg" alt-text="Privacy Management":::](#privacy-management)|
+Sections:
+
+- [Advanced Audit](#advanced-audit)
+- [Communication Compliance](#communication-compliance)
+- [Compliance Manager](#compliance-manager)
+- [Data Loss Prevention](#data-loss-prevention)
+- [eDiscovery](#ediscovery)
+- [Information Protection](#information-protection)
+- [Insider Risk Management](#insider-risk-management)
+- [Records Management](#records-management)
+- [Compliance Manager Premium Assessment](#compliance-manager-premium-assessment)
+- [Privacy Management](#privacy-management)
 
 ## Advanced Audit
 
@@ -277,6 +285,51 @@ To enable insider risk Analytics, you must be a member of the Insider Risk Manag
 
 Use integrated Records Management features to automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition.
 
+### Step 1: Dynamically target retention policies with Adaptive Policy Scopes
+
+Adaptive policy scopes allow you to dynamically target a policy to certain users, groups, or sites based on their AD attributes. ​
+
+Attributes for scopes can be selected from a list or customized using an advanced query builder.​
+
+Policies using adaptive policy scopes stay current as the organization changes with new employees joining or leaving. Additionally, they are not subject to the previous limits of 100/1,000 locations included in a policy.
+
+- Create an [Adaptive Policy Scope](retention.md#adaptive-or-static-policy-scopes-for-retention), and use it with a retention policy
+
+### Step 2: Automate labeling of sensitive information with the ability to review before disposal​
+
+Retention labels can be set up to apply automatically to content when it detects sensitive information, such as a credit card number. This removes the need for users to manually perform the labeling activity.​
+
+At the end of the retention period, users you specify ("reviewers") will be notified to review the content and approve the permanent disposal action. That way if something needs to be retained for longer, it can be.​
+
+Both label application activity and disposition review activity can be viewed on your Records Management Overview screen.
+
+1. [Auto-apply retention labels to content containing sensitive information](retention.md#retention-labels) ​
+1. Create and apply a retention label with [disposition review](disposition.md#disposition-reviews) at the end of the retention period
+
+### Step 3: Label content as records automatically using trainable classifiers​
+
+When content is declared a record, restrictions are placed on the item in terms of what actions are allowed or blocked, additional activities about the items are logged, and you have proof of disposition if the items are deleted at the end of their retention period. ​
+
+Trainable classifiers are tools that recognize various types of content, based off samples it has been given. Choose from a variety of built-in options or set up a custom classifier to meet your specific needs.
+
+1. Create a retention label that declares content as a record or a regulatory record​
+1. Auto-apply retention labels to content using trainable classifiers
+
+### More information: Auto-apply retention labels + disposition review​
+
+**Apply labels automatically to retain what you need…​**
+Retention labels can be automatically applied to content when it contains:​
+
+- [Specific types of sensitive information​](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [Specific keywords or searchable properties that match a query you create​](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [A match for trainable classifiers​](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+
+**…then dispose of it safely at the end.​**
+
+When a disposition review is triggered at the end of the retention period, the reviewers you choose receive an email notification that they have content to review. ​
+
+Content pending a disposition review is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
+
 ## Compliance Manager Premium Assessment
 
 **Assess risks and efficiently respond**
@@ -288,3 +341,11 @@ Help your organization assess risks and efficiently respond to nations, regional
 **Identify & prevent​ privacy risks**
 
 Proactively identify and protect against privacy risks such as data hoarding, data transfers, and data oversharing and help your organization automate and manage subject requests at scale.​
+
+## Additional resources
+
+**What’s included**: For a full list of Microsoft 365 compliance solutions and features listed by product tier, view the [Feature Matrix​](https://go.microsoft.com/fwlink/?linkid=2139145).
+​
+**Microsoft Security Technical Content Library**: Explore this library to find interactive guides and other learning content relevant to your needs. [Visit Library​](/security/content-library).
+
+**Microsoft Security Resources**: From antimalware to Zero Trust, get all the relevant resources for your organization’s security needs. [Visit Resources](/security/business/resources).
