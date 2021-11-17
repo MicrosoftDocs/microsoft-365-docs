@@ -26,9 +26,11 @@ ms.technology: m365d
 
 Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
-This article lets you know about upcoming improvement actions related to Microsoft Secure Score
+This article lets you know about upcoming improvements to Microsoft Secure Score
 
 ## Proposed changes
+
+### Upcoming improvement actions
 
 - Turn on Safe Attachments in block mode
 - Prevent sharing Exchange Online calendar details with external users
