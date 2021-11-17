@@ -23,9 +23,9 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Resource         |Name     |Description |
 |---------|---------|---------|
-|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/k-new-topic-page.png)](../media/knowledge-management/k-new-topic-page.png) |[Viva Topics Scenario Catalogue](create-a-topic.md) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
-|Row2     |         |         |
-|Row3     |         |         |
+|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/k-new-topic-page.png)](../media/knowledge-management/k-new-topic-page.png) |[Viva Topics Scenario Catalog](create-a-topic.md) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
+|Row2     |[Viva Topics Adoption Guide](create-a-topic.md)          |         |
+|Row3     |[Viva Topics Communication Asset Samples](create-a-topic.md)          |         |
 |Row4     |         |         |
 
 ## Other resources
