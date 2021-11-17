@@ -17,7 +17,7 @@ description: Find resources to help your organization learn about and get the mo
 
 # Adoption resources for Microsoft Viva Topics
 
-Use these downloadable resources and other information to spark ideas about how to help your organization use and understand Viva Topics.
+Use these downloadable resources and other information to spark ideas about how to help get the most our of Viva Topics in your organization.
 
 ## Downloadable resources
 
@@ -33,6 +33,6 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Name     |Description  |
 |---------|---------|
-|[Viva Topics FAQ](create-a-topic.md) |Read questions and answers to help you understand more about Viva Topics         |
+|[Viva Topics FAQ](create-a-topic.md) |Read common questions and answers to help you understand more about Viva Topics.    |
 |Row2     |         |
 |Row3     |         |
