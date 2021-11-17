@@ -75,7 +75,7 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 |DoD|<https://securitycenter.microsoft.us>|
 |
 > [!NOTE]
-> If you are a GCC customer and in the process of moving from MDE commercial to GCC, use https://transition.security.microsoft.com to access your MDE commercial data.
+> If you are a GCC customer and in the process of moving from Microsoft Defender for Endpoint commercial to GCC, use https://transition.security.microsoft.com to access your Microsoft Defender for Endpoint commercial data.
 
 ## Endpoint versions
 
