@@ -147,8 +147,7 @@ The **onboarding package** contains the following files:
 - `OptionalParamsPolicy` - contains the setting that enables sample collection
 - `WindowsDefenderATPOnboardingScript.cmd` - contains the onboarding script
 
-The following steps provides guidance on downloading the packages.
-
+Use the following steps to download the packages: 
 
 1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
 
