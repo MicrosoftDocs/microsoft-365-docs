@@ -91,11 +91,66 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 - [Understand assessments​](compliance-manager.md#assessments)
 - [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager​](compliance-manager-mcca.md)
 
+### Step 2: Configure Compliance Manager to manage your compliance activities
+
+Start working with assessments and taking improvement actions to implement controls and improve your compliance score.
+
+1. [Choose a pre-built template to create and manage your first assessment](compliance-manager-assessments.md).​
+1. [Understand how to use templates for building assessments](compliance-manager-templates.md).​
+1. [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md).​
+1. [Better understand how different actions impact your compliance score](compliance-score-calculation.md).​
+
+### Step 3: Scaling up: use advanced functionality to meet your custom needs​
+
+Custom assessments are helpful for:​
+
+- Managing compliance for non-Microsoft 365 products such as third-party apps and services, on-premises applications, and other assets​
+- Managing your own custom or business-specific compliance controls
+
+1. [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)​
+1. [Create your own custom template​](compliance-manager-templates-create.md)
+1. [Modify an existing template to add or remove controls and actions​](compliance-manager-templates-modify.md)
+1. [Set up automated testing of improvement actions​](compliance-manager-setup.md#set-up-automated-testing)
+1. [Reassign improvement actions to another user​](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)
+
 ## Data Loss Prevention
 
 **Protect sensitive data**
 
 To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
+
+### Step 1: Protect data loss on Teams locations
+
+If your organization has data loss prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session.
+
+1. Learn about [DLP Licensing for Microsoft Teams and the scope of DLP protection​](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
+1. [Add Microsoft Teams as a location to existing DLP policies​](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
+1. [Configure our default DLP policy for Teams](mip-easy-trials.md) or [Define a new DLP policy for Microsoft Teams​](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
+
+### Step 2: Protect data loss on device locations​
+
+Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
+
+1. Prepare your endpoints  - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP to [meet these requirements​](endpoint-dlp-getting-started.md#prepare-your-endpoints)
+1. [Onboard devices into device management](endpoint-dlp-getting-started.md#onboarding-devices-into-device-management)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.​
+   - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md#onboarding-devices) that have not been onboarded yet.​
+   - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for-endpoint). All these endpoints will appear in the managed devices list. ​
+1. [Configure our default DLP policy for devices](mip-easy-trials.md#dlp-for-devices) or [Define a new DLP policy for devices​](endpoint-dlp-learn-about.md)
+1. [View Endpoint DLP alerts](endpoint-dlp-getting-started.md#viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard) in DLP Alerts Management dashboard​
+1. [View Endpoint DLP data](endpoint-dlp-getting-started.md#viewing-endpoint-dlp-data-in-activity-explorer) in activity explorer​
+
+### Step 3: Expand policies in scope or protection​
+
+You have flexibility in how you configure your DLP policies. You can start with our default DLP policy for Teams and devices and expand those policies to protect additional locations, sensitive information types, or labels. In addition, you can expand upon the policy actions and customize alerting.
+
+1. Add locations​
+1. Add sensitive information types or labels to protect​
+1. Add actions​
+   - Teams: ​
+      - Prevent external access to sensitive documents​
+      - Get policy tips to help educate users and instructions for customizing policy tips​
+   - Devices: switch from audit only to block​
+1. Configure and view alerts for data loss prevention policies - Microsoft 365 Compliance | Microsoft Docs
 
 ## eDiscovery
 
