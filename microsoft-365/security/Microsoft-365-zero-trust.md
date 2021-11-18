@@ -100,11 +100,21 @@ Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overv
 |Enroll devices with Intune<br>- Corporate-owned devices<br>- Autopilot/automated<br>- enrollment<br><br>Configure policies<br>- App Protection policies<br>- Compiance policies<br>- Device profile policies | Register endpoints with Azure AD     | Configuring information protection capabilities, including:<br>- Sensitive information types<br>- Labels<br>- DLP policies<br>For information on configuring these, see . . .        |
 |    |         |         |
 
-## Step 3. Evaluate, pilot, and deploy Microsoft 365 Defender
+## Step 3. Add Zero Trust identity and device access protection — Enterprise policies
+
+With devices enrolled into management you can now implement the full set of recommended Zero Trust identity and device access policies. 
+
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
+
+Return to [Common identity and device access policies](office-365-security/identity-access-policies.md) and add the policies in the Enterprise tier.  
+
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Zero Trust identity and device access policies" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+
+## Step 4. Evaluate, pilot, and deploy Microsoft 365 Defender
 
 Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities.
 
-![Deploy Microsoft 365 Defender](../media/zero-trust/m365-zero-trust-architecture-step-3-threat.png)
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
 Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
@@ -113,6 +123,6 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 | Setup the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br>Protect against threats<br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
 |    |         |         |
 
-## Step 4. Protect and govern sensitive data
+## Step 5. Protect and govern sensitive data
 
 more information . . .
