@@ -61,7 +61,7 @@ In this illustration:
 - Threat protection capabilities are built on top of this foundation to provide real-time monitoring and remediation of security threats. 
 - Information protection and governance provides sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
 
-## Step 1. Configure Zero Trust identity and device access protection — starting-point tier
+## Step 1. Configure Zero Trust identity and device access protection — starting-point policies
 
 The first step is to build your Zero Trust foundation by configuring identity and device access protection. 
 
@@ -79,7 +79,7 @@ Go to [Zero Trust identity and device access protection](office-365-security/mic
 |Recommended identity and device access policies for three tiers of protection:<br>- Starting point<br>- Enterprise (recommended)<br>- Specialized<br><br>Additional recommendations for:<br>- External and guest users<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 or E5<br><br>Azure Active Directory in either of these modes:<br>- Cloud-only<br>- Hybrid with password hash sync (PHS) authentication<br>- Hybrid with pass-through authentication (PTA)<br>- Federated     |Device enrollment for policies that require managed devices. see “Manage endpoints with Intune” to enroll devices |
 | | | |
 
-Start by implementing the starting-point tier. This tier does not require enrolling devices into management. 
+Start by implementing the starting-point tier. These policies do not require enrolling devices into management. 
 
 [![Zero Trust identity and device access policies](../media/zero-trust/identity-access-starting-point-tier.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/identity-access-starting-point-tier.png)
 
