@@ -1,5 +1,5 @@
 ---
-title: "Overview of inactive mailboxes"
+title: "Learn about inactive mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,7 +22,7 @@ ms.custom:
 description: Learn how to retain mailbox content for former employees by turning the mailbox into an inactive mailbox.
 ---
 
-# Overview of inactive mailboxes
+# Learn about inactive mailboxes
 
 Your organization might need to retain former employees' email after they leave the organization. Depending on your organization's retention requirements, you might need to retain mailbox content for a few months or years after employment ends, or you might need to retain mailbox content indefinitely. Regardless of how long you need to retain email, you can create inactive mailboxes to retain the mailbox of former employees.
 
