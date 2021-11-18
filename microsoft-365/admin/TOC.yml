@@ -29,6 +29,12 @@
              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
            - name: Migrate data to my Microsoft 365 Business Standard subscription
              href: ../admin/simplified-signup/migrate-data-business-standard.md
+        - name: Sign up Microsoft Apps for business
+          items:
+           - name: Sign up for Microsoft 365 Apps for business
+             href: setup/setup-business-basic.md
+           - name: Set up for Microsoft 365 Apps for business
+             href: setup/setup-apps-for-business.md
         - name: Set up your Microsoft 365 for business organization
           items:
            - name: Microsoft 365 Business Basic

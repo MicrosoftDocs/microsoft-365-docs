@@ -1,5 +1,5 @@
 ---
-title: "Sign up for a Microsoft 365 Business Standard"
+title: "Sign up for Microsoft 365 Apps for business"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -11,17 +11,17 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
 - Adm_TOC
-ms.custom: 
+ms.custom:
 - AdminSurgePortfolio
-description: "Purchase Microsoft 365 Business Standard and set up your organization."
+description: "Sign up for Microsoft 365 Apps for business."
 ---
 
-# Sign up for a Microsoft 365 Business Standard subscription
+# Sign up for a Microsoft 365 Apps for business subscription
 
-Want to sign up for a Microsoft 365 Business Standard subscription?
+Want to sign up for a Microsoft 365 Apps for business subscription?
 
 There are a couple of ways to get started:
-- **[Buy](https://go.microsoft.com/fwlink/?linkid=2109654) Microsoft 365 Business Standard and complete your own setup**. To purchase Microsoft 365 Business Standard, [follow the steps below](#sign-up-steps).
+- **[Buy](https://go.microsoft.com/fwlink/?linkid=2181424) Microsoft 365 Apps for business and complete your own setup**. To purchase Microsoft 365 Apps for business, [follow the steps below](#sign-up-steps).
 - **For Microsoft partners**: If you're a partner, see [Get Microsoft 365 Business](../../business/get-microsoft-365-business.md).
 
 **Need something different?** You can:
@@ -29,31 +29,29 @@ There are a couple of ways to get started:
 - [Sign up for a home or family plan](https://go.microsoft.com/fwlink/?linkid=2109398) if you're not buying for a business.
 
 > [!IMPORTANT]
-> Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.
+> Microsoft 365 Apps for Business subscription is for commercial use and is intended for business and enterprise customers.
 
 ## Sign up steps
 
-To sign up and purchase Microsoft 365 Business Standard, complete the following steps.
+To sign up and purchase Microsoft 365 Apps for business, complete the following steps.
 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Add an admin](../../business-video/add-admin.md) for more info.
 
-1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**.
-2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365. Under Microsoft 365 Business Standard, select **Buy now**.
-3. On the **Thank you for choosing Microsoft 365 Business Standard** page, enter your information to get started. Select **Next**.
-4. Enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
-5. Enter your name, business phone number, business size, company name, and location. Select **Next**.
+1. On the [For business page](https://go.microsoft.com/fwlink/?linkid=2181424), see what's included in Microsoft 365. Under Microsoft 365 Apps for business, select **Buy now**.
+2. On the **You've selected Microsoft 365 Apps for business** page, enter an email address that you already use. This can be any address you want Microsoft to use to communicate with you during setup. It is also the address where we'll send you information about your bill and renewals. Then select, **Set up account**.
+3. Enter your name, business phone number, business size, company name, and location. Select **Next**.
 
 > [!NOTE]
 > We display your company name in the admin center. This is where you manage Microsoft 365 users, licenses and other features and services. We also include it in any internal SharePoint site URLs.
 
-6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
+4. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
 
-7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
+5. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
 
 ## Choosing the right business subscription
 
-When signing up for Microsoft 365 Business Standard, you have 2 options for how to get started. Evaluate three key factors to choose which best meets your needs:
+When signing up for Microsoft 365 Apps for Business, you have 2 options for how to get started. Evaluate three key factors to choose which best meets your needs:
 
 - Which apps and services do you want to use straight away?
 
@@ -65,7 +63,7 @@ The table below outlines each choice.
 
 ||**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account|**Option 2** – Add a business domain and create a new business email account |
 |:-----|:-----|:-----|
-|Available apps and services  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.  You’ll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Microsoft 365 Business Standard with Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings. Shared document storage and SharePoint sites, Microsoft Planner and Microsoft Lists, Microsoft 365 Business Standard and Microsoft 365 Apps for business offer additional services with Option 2. Easier document sharing within your business, support for the compliance needs for your industry, Access and control over your employees’ use of services and the widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
+|Available apps and services  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.  You’ll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings Shared document storage and SharePoint sites Microsoft Planner and Microsoft Lists Microsoft 365 Business Standard and Apps for Business offer additional services with Option 2: Easier document sharing within your business Support for the compliance needs for your industry Access and control over your employees’ use of services The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
 |Required knowledge  <br/> |Let’s you get started without technical know-how.  <br/> |Requires you to buy a domain, or to own a domain.  You may need technical knowledge to prove ownership of the domain. <br/> |
 |Data handling  <br/> |Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual’s user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly.  Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later  <br/> |Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement. <br/> |
 
@@ -73,13 +71,13 @@ Use these three factors to determine which of the two options is best for your b
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
-You'll sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
+This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Business. You'll sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
 
 1. Create a password on the next page, and select **Create account** to continue. On the next page, read about how we handle your data and select whether you want Microsoft Partners to contact you. Select **Next**.
 
-2. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
+2. Select how many Microsoft 365 Apps for business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
 3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
 
@@ -96,25 +94,11 @@ You can add a business domain at any point to access the rest of the functionali
 
 #### Next steps
 
-If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
-
-- [Add a domain to Microsoft 365](../setup/add-domain.md)
-- [Finish setting up](../setup/setup-business-standard.md#finish-setting-up)
-
-### Option 2: Create a new business email account
-
-> [!Note]
-> This guidance is specifically for signing up for Microsoft 365 Business Standard during purchase.
-
-With this option, you’ll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
-
-:::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Screenshot: Sign in with new business email.":::
-
-This option provides immediate access to the full suite of features in your Microsoft 365 Business subscription but may require technical steps to be completed up front.
+Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft 365 Apps for business subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
 
 ## Terms of service update for Simplified Sign-Up mode
 
-**Applies to: Existing subscribers of Microsoft 365 Business Standard who previously purchased using Simplified Sign-up mode**.
+**Applies to: Existing subscribers of Microsoft 365 Apps for business who previously purchased using Simplified Sign-up mode**.
 
 If you previously used Simplified Sign-up mode to purchase a business subscription October 2021 without a business domain you may need to accept new terms of service for uninterrupted service and usage of the Microsoft Office apps. You may be sent emails or you'll see in-app prompts when you sign in to Microsoft 365 admin Center.
 
@@ -124,27 +108,11 @@ Should you choose not to accept terms, your subscription will not automatically 
 
 ## Frequently asked questions
 
-### What is a business email and what are the advantages to setting one up?
-
-A business email is an email that uses your own domain name. For example, if you own the domain name `contoso.com`, you can build a website using the url `www.contoso.com`, but you can also have a custom email address such as yourname@contoso.com. This is referred to as a branded business email as it gives your email a professional look.
-
-### How do I get a new business email address?
-
-There are three options for getting a business email.
-
-- You can use a suggested onmicrosoft.com domain for free (someone@mybusiness.onmicrosoft.com).
-- You can buy a new domain to have a more compact email address (mybusinessname@contoso.com).
-- You use a domain name that you already own.
-
-### Why might I need to verify my domain to create a business email?
-
-If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign up process, we ask you to verify the domain so you can send emails via Microsoft 365.  This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
-
 ### Is there a benefit to paying monthly vs annually?
 
 To provide customers with the greatest amount of flexibility, different payment options are available.
 
-- Microsoft 365 Business Basic, Apps for business, Business Standard, and Business Premium plans are available for monthly commitment payment or annual commitment payment.
+- Microsoft 365 Business Basic, Microsoft 365 Apps for business, Microsoft 365 Business Standard, and Microsoft 365 Business Premium plans are available for monthly commitment payment or annual commitment payment.
 - Monthly commitment payment: You pay month by month, and you can cancel at any time.
 - Annual commitment payment: You sign up for a one-year subscription, but you can choose to pay month to month or pay for the entire year at the time you sign up. There is a discount for using this payment option.
 
@@ -158,6 +126,4 @@ Contact our small business support experts who can help you change your business
 
 ## Related articles
 
-[Set up Microsoft 365 Business Standard with a new or existing domain](../setup/setup-business-standard.md)
-
-[Invite users to Microsoft 365 Business Standard](user-invite-business-standard.md)
+[Set up Microsoft 365 Apps for business](setup-apps-for-business.md)
