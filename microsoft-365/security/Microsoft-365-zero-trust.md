@@ -81,9 +81,8 @@ Go to [Zero Trust identity and device access protection](office-365-security/mic
 
 Start by implementing the starting-point tier. These policies do not require enrolling devices into management. 
 
-[![Zero Trust identity and device access policies](../media/zero-trust/identity-access-starting-point-tier.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/identity-access-starting-point-tier.png)
 
-
+:::image type="content" source="../media/zero-trust/identity-access-starting-point-tier.png" alt-text="Zero Trust identity and device access policies" lightbox="../media/zero-trust/identity-access-starting-point-tier.png":::
 
 
 ## Step 2. Manage endpoints with Intune
