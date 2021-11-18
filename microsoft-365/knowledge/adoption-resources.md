@@ -23,15 +23,20 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Resource         |Download     |Description |
 |---------|---------|---------|
-|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/scenario-catalog-thumbnail.png)](create-a-topic.md) |[Viva Topics Scenario Catalog](create-a-topic.md) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
-|[![Thumbnail image of adoption guide front page](../media/knowledge-management/adoption-guide-thumbnail.png)](create-a-topic.md)     |[Viva Topics Adoption Guide](create-a-topic.md)          |         |
-|[![Thumbnail image of communication asset samples front page](../media/knowledge-management/communication-asset-samples.png)](create-a-topic.md)    |[Viva Topics Communication Asset Samples](create-a-topic.md)          |         |
+|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/scenario-catalog-thumbnail.png)](//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva Topics Scenario Catalogue.pdf) |[Viva Topics Scenario Catalog](//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva
+Topics Scenario Catalogue.pdf) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
+|[![Thumbnail image of adoption guide front page](../media/knowledge-management/adoption-guide-thumbnail.png)]//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva Topics Adoption Guide.pdf)     |[Viva Topics Adoption Guide](//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva
+Topics Adoption
+Guide.pdf)          |         |
+|[![Thumbnail image of communication asset samples front page](../media/knowledge-management/communication-asset-samples.png)](//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva
+Topics Communication Asset Samples.pptx)    |[Viva Topics Communication Asset Samples](//download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva
+Topics Communication Asset Samples.pptx)          |         |
 
 ## Other resources
 
 
 |Name     |Description  |
 |---------|---------|
-|[Viva Topics FAQ](create-a-topic.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
+|[Viva Topics FAQ](faq.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
 |Row2     |         |
 |Row3     |         |
