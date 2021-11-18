@@ -66,7 +66,7 @@ In this illustration:
 The first step is to build your Zero Trust foundation by configuring identity and device access protection. 
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection" lightbox="../media/folder/m365-zero-trust-architecture-step-1b.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
 
 
@@ -90,9 +90,7 @@ Start by implementing the starting-point tier. These policies do not require enr
 
 Next, enroll your devices into management and begin managing these. 
 
-![Manage endpoints wtih Intune](../media/zero-trust/m365-zero-trust-architecture-step-2-devices.png)
-
-Go to Manage devices with Intune. This series of articles . . . 
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
 
