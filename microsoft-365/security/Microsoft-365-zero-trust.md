@@ -33,7 +33,7 @@ This illustration provides a representation of the primary elements that contrib
 [![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
 -->
 
-:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Zero Trust security architecture" lightbox="../media/folder/.png":::
+:::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Zero Trust security architecture" lightbox="../media/zero-trust/zero-trust-architecture.png":::
 
 
 
@@ -66,7 +66,7 @@ In this illustration:
 The first step is to build your Zero Trust foundation by configuring identity and device access protection. 
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection" lightbox="../media/folder/.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection" lightbox="../media/folder/m365-zero-trust-architecture-step-1b.png":::
 
 
 
