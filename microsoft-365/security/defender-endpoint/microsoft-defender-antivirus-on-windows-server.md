@@ -76,7 +76,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
 The following PowerShell cmdlet will enable the interface:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
