@@ -32,7 +32,7 @@ When an employee leaves your organization (or goes on an extended leave of absen
 
 But if any type of hold is applied to the mailbox prior to deleting the Microsoft 365 account, the mailbox will be converted into an inactive mailbox.
 
-Inactive mailboxes are useful when your organization needs to retain mailbox content of former employees for regulatory or other reasons. While any type of hold listed in this document will force a mailbox to be made inactive when a user object is deleted, we recommend doing this by applying a Microsoft 365 retention policy or retention labels, confirm the retention settings are applied, and then remove the corresponding Microsoft 365 account. At that point, the contents of the inactive mailbox are retained for the duration of the retention period specified before the user account was deleted. You can still recover the corresponding user account for a 30-day period, however after 30 days, the mailbox is retained in Microsoft 365 as an inactive mailbox until the retention policy or retention labels are removed.
+Inactive mailboxes are useful when your organization needs to retain mailbox content of former employees for regulatory or other reasons. While any type of hold listed in this document will force a mailbox to be made inactive when a user object is deleted, we recommend doing this by applying a Microsoft 365 retention policy or retention labels, [confirm the retention settings are applied](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox), and then remove the corresponding Microsoft 365 account. At that point, the contents of the inactive mailbox are retained for the duration of the retention period specified before the user account was deleted. You can still recover the corresponding user account for a 30-day period, however after 30 days, the mailbox is retained in Microsoft 365 as an inactive mailbox until the retention policy or retention labels are removed.
 
 > [!IMPORTANT]
 > As we mentioned above, we recommend you use Microsoft 365 retention to create an inactive mailbox:
@@ -44,7 +44,7 @@ Inactive mailboxes are useful when your organization needs to retain mailbox con
 
 If a Microsoft 365 retention policy is applied to a mailbox, or one or more email items in a mailbox have a retention label applied, and then the Microsoft 365 user account is deleted, the mailbox will be converted into an inactive mailbox. For the inactive mailbox to be created:
 
-- The retention settings must be configured to [retain content, or retain and then delete content](retention-settings.md#settings-for-retaining-and-deleting-content). If the retention action is configured to only delete content, the mailbox won't become inactive when the user account is deleted. When you want to use inactive mailboxes, we recommend using the retain and then delete option.
+- The retention settings must be configured to [retain content, or retain and then delete content](retention-settings.md#settings-for-retaining-and-deleting-content). If the retention action is configured to only delete content, the mailbox won't become inactive when the user account is deleted. For inactive mailboxes, we recommend using the retain and then delete option.
 
 - The retention settings must be applied to a [retention location](retention-settings.md#locations) that is associated with an Exchange mailbox:
     - Exchange email
@@ -66,15 +66,15 @@ If Microsoft 365 retention is used to create an inactive mailbox, the retention 
 
 ### Using adaptive policy scopes to manage retention of inactive mailboxes
 
-With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), you can apply retention settings specifically to inactive mailboxes. You might consider doing this for any of the following reasons:
+With [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), you can apply retention settings specifically to inactive mailboxes. Benefits of this configuration include:
 
-- Your organization has regulations or policies that differ for active employees and former employees.
+- You can meet your organization's regulations or policies that require different retention periods for active employees and former employees.
 
 - You can configure the retention settings to retain mailbox content for only as long as necessary to meet your organization's requirement for former employees.
 
-- You are able to quickly identify the policy for retention that's assigned to inactive mailboxes in your organization. This makes it easier to change the retention settings if necessary. 
+- You can quickly identify the policy for retention that's assigned to inactive mailboxes in your organization, which makes it easier to change the retention settings if necessary. 
 
-- It will also make it easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
+- It's easier to permanently delete an inactive mailbox because you can remove it from the policy by [configuring the adaptive scope](retention-settings.md#to-configure-an-adaptive-scope) to exclude it, based on attributes or properties of the inactive mailbox. Otherwise, you must use [Exchange Online PowerShell](delete-an-inactive-mailbox.md#remove-an-inactive-mailbox-from-a-retention-policy) before [deleting the mailbox](delete-an-inactive-mailbox.md#before-you-delete-an-inactive-mailbox).
 
 > [!NOTE]
 > Depending on the configuration of your adaptive policy scope, inactive mailboxes might or might not be included.  To specifically target or to exclude inactive mailboxes from an adaptive policy scope, see [configuration information for Exchange email and Exchange public folders](retention-settings.md#locations).
@@ -113,7 +113,7 @@ An inactive mailbox that's configured with an auto-expanding archive can't be re
 
 ## Inactive mailboxes and Exchange MRM retention policies
 
-If an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) was applied to mailbox when it was made inactive, any deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy will be moved to the Recoverable Items folder when the retention period expires. Those items are purged from the inactive mailbox when the hold duration expires. If a hold duration isn't specified for the inactive mailbox, items in the Recover Items folder will be retained indefinitely.
+If an Exchange retention policy (the Messaging Records Management, or MRM, feature in Exchange Online) was applied to mailbox when it was made inactive, any deletion policies (which are retention tags configured with a **Delete** retention action) will continue to be processed on the inactive mailbox. That means items that are tagged with a deletion policy will be moved to the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder.md) when the retention period expires. Those items are purged from the inactive mailbox when the hold duration expires. If a hold duration isn't specified for the inactive mailbox, items in the Recover Items folder will be retained indefinitely.
 
 Conversely, any archive policies (which are retention tags configured with a **MoveToArchive** retention action) that are included in the retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. They will be retained indefinitely.
 
