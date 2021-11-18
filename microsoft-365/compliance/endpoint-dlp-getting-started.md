@@ -26,7 +26,7 @@ description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file
 
 Microsoft Endpoint data loss prevention (Endpoint DLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 
-Microsoft Endpoint DLP allows you to monitor Windows 10, Windows 11, and macOS devices *(preview)* running Catalina 10.15 and higher. Once a device is onboarded DLP will detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
+Microsoft Endpoint DLP allows you to monitor [onboarded Windows 10, and Windows 11](device-onboarding-overview.md) and [onboarded macOS devices *(preview)*](device-onboarding-macos-overview.md) running Catalina 10.15 and higher. Once a device is onboarded, DLP will detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them.
 
 ## Before you begin
 
@@ -41,7 +41,46 @@ Before you get started with Endpoint DLP, you should confirm your [Microsoft 365
 - Microsoft 365 E5 information protection and governance
 - Microsoft 365 A5 information protection and governance
 
-### Permissions
+for full licensing details, see [Microsoft 365 licensing guidance for information protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)
+
+### Configure proxy on the Windows 10 or Windows 11 device
+
+If you are onboarding Windows 10 or Windows 11 devices, check to make sure that the device can communicate with the cloud DLP service. For more information see, [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
+
+## Windows 10 and Windows 11 Onboarding procedures
+
+For a general introduction to onboarding Windows devices, see:
+
+- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md#onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview)
+
+For specific guidance to onboarding Windows devices, see:
+
+Topic | Description
+:---|:---
+[Onboard Windows 10 or 11 devices using Group Policy](device-onboarding-gp.md) | Use Group Policy to deploy the configuration package on devices.
+[Onboard Windows 10 or 11 devices using Microsoft Endpoint Configuration Manager](device-onboarding-sccm.md) | You can use either use Microsoft Endpoint Configuration Manager (current branch) version 1606 or Microsoft Endpoint Configuration Manager (current branch) version 1602 or earlier to deploy the configuration package on devices.
+[Onboard Windows 10 or 11 devices using Mobile Device Management tools](device-onboarding-mdm.md) | Use Mobile Device Management tools or Microsoft Intune to deploy the configuration package on device.
+[Onboard Windows 10 or 11 devices using a local script](device-onboarding-script.md) | Learn how to use the local script to deploy the configuration package on endpoints.
+[Onboard non-persistent virtual desktop infrastructure (VDI) devices](device-onboarding-vdi.md) | Learn how to use the configuration package to configure VDI devices.
+
+## macOS onboarding procedures
+
+For a general introduction to onboarding macOS devices, see:
+ 
+- [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+
+For specific guidance to onboarding macOS devices, see:
+
+Topic | Description
+:---|:---
+|[Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-intune-preview)|For macOS devices that are managed through Intune
+|[Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers-preview) |For macOS devices that are managed through Intune and that have Microsoft Defender for Endpoint (MDE) deployed to them
+|[Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md#onboard-and-offboard-macos-devices-into-microsoft-365-compliance-solutions-using-jamf-pro-preview) | For macOS devices that are managed through JAMF Pro
+|[Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md#onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers-preview)|For macOS devices that are managed through JAMF Pro and that have Microsoft Defender for Endpoint (MDE) deployed to them
+
+Once an device is onboarded, it should be visible in the devices list and also start reporting audit activity to Activity explorer.
+
+<!--### Permissions
 
 To enable device management, the account you use must be a member of any one of these roles:
 
@@ -71,9 +110,9 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Global admin
 - Compliance admin
 - Security admin
-- Compliance data admin
+- Compliance data admin -->
 
-### Prepare your Windows 10/11 endpoints
+<!-- ### Prepare your Windows 10/11 endpoints
 
 Make sure that the Windows devices that you plan on deploying Endpoint DLP to meet these requirements.
 
@@ -104,13 +143,13 @@ Make sure that the Windows devices that you plan on deploying Endpoint DLP to me
 
 1. If you are on Monthly Enterprise Channel of Microsoft 365 Apps versions 2004-2008, there is a known issue with Endpoint DLP classifying Office content and you need to update to version 2009 or later. See [Update history for Microsoft 365 Apps (listed by date)](/officeupdates/update-history-microsoft365-apps-by-date) for current versions. To learn more about this issue, see the Office Suite section of [Release notes for Current Channel releases in 2020](/officeupdates/current-channel#version-2010-october-27).
 
-1. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md).
+1. If you have endpoints that use a device proxy to connect to the internet, follow the procedures in [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection).
 
 ## Prepare your macOS devices (preview)
 
-See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+See, [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)-->
 
-## Onboarding Windows 10 devices into device management
+<!--## Onboarding Windows 10 and Windows 11 devices into device management
 
 You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
 
@@ -180,6 +219,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
+
 ### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
 1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
@@ -213,3 +253,4 @@ Now that you have onboarded devices and can view the activity data in Activity e
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
+-->

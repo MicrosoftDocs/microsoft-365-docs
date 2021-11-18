@@ -303,9 +303,9 @@
        - name: Collaborate with Microsoft Threat Experts
          items:
               - name: Overview
-                href: ../mtp/microsoft-threat-experts.md
+                href: microsoft-threat-experts.md
               - name: Configure and manage Microsoft Threat Experts capabilities
-                href: ../mtp/configure-microsoft-threat-experts.md
+                href: configure-microsoft-threat-experts.md
     - name: Security operations guide
       items: 
        - name: Overview
@@ -403,11 +403,13 @@
                  href: ../defender-endpoint/troubleshoot-siem.md
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
-
-    - name: Microsoft Defender for Office 365
-      href: ../office-365-security/index.yml
-    - name: Microsoft Defender for Endpoint
-      href: ../defender-endpoint/index.yml
-    - name: Microsoft Defender for Identity
-      href: /defender-for-identity
-
+    - name: Microsoft 365 Defender docs
+      items: 
+       - name: Defender for Office 365
+         href: ../office-365-security/index.yml
+       - name: Defender for Endpoint
+         href: ../defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
