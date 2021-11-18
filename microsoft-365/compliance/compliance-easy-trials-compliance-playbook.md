@@ -170,13 +170,13 @@ If your organization has data loss prevention (DLP), you can define policies tha
 
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
 
-1. Prepare your endpoints  - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP to [meet these requirements​](endpoint-dlp-getting-started.md#prepare-your-endpoints)
-1. [Onboard devices into device management](endpoint-dlp-getting-started.md#onboarding-devices-into-device-management)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.​
-   - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md#onboarding-devices) that have not been onboarded yet.​
-   - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for-endpoint). All these endpoints will appear in the managed devices list. ​
+1. Prepare your endpoints  - make sure that the Windows 10 and macOS devices that you plan on deploying Endpoint DLP to [meet these requirements​](endpoint-dlp-getting-started.md)
+1. [Onboard devices into device management](endpoint-dlp-getting-started.md)  - You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.​
+   - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md) that have not been onboarded yet.​
+   - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md). All these endpoints will appear in the managed devices list. ​
 1. [Configure our default DLP policy for devices](mip-easy-trials.md#dlp-for-devices) or [Define a new DLP policy for devices​](endpoint-dlp-learn-about.md)
-1. [View Endpoint DLP alerts](endpoint-dlp-getting-started.md#viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard) in DLP Alerts Management dashboard​
-1. [View Endpoint DLP data](endpoint-dlp-getting-started.md#viewing-endpoint-dlp-data-in-activity-explorer) in activity explorer​
+1. [View Endpoint DLP alerts](endpoint-dlp-getting-started.md) in DLP Alerts Management dashboard​
+1. [View Endpoint DLP data](endpoint-dlp-getting-started.md) in activity explorer​
 
 ### Step 3: Expand policies in scope or protection​
 
@@ -241,7 +241,7 @@ Set up compliance boundaries for eDiscovery investigations: ​
 
 Use the Content search tool in the Microsoft 365 compliance center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
 
-- [Learn more about Advanced eDiscovery search](search-for-content#search-for-content.md)
+- [Learn more about Advanced eDiscovery search](search-for-content.md#search-for-content)
 
 ## Information Protection
 
@@ -324,9 +324,9 @@ For step-by-step instructions to turn on auditing, see [Turn audit log search on
 
 ### Step 4 (required): Enable and view insider risk analytics insights
 
-Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics-preview) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.​
+Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.​
 
-To enable insider risk Analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin. [Complete these steps to enable insider risk analytics](insider-risk-management-configure.md#step-3-enable-and-view-insider-risk-analytics-insights-optional).
+To enable insider risk Analytics, you must be a member of the Insider Risk Management or Insider Risk Management Admin. [Complete these steps to enable insider risk analytics](insider-risk-management-configure.md).
 
 ## Records Management
 
