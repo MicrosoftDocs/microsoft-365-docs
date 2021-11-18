@@ -150,14 +150,16 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
 ### Options to install Microsoft Defender for Endpoint
+
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components.
 
 ### Install Microsoft Defender For Endpoint using command line
+
 Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
 Run the following command to install Microsoft Defender for Endpoint:
 
-```
+```console
 Msiexec /i md4ws.msi /quiet
 ```
 
@@ -165,9 +167,10 @@ To uninstall, ensure the machine is offboarded first using the appropriate offbo
 
 Alternatively, run the following uninstall command to uninstall Microsoft Defender for Endpoint:
 
-```
+```console
 Msiexec /x md4ws.msi /quiet
 ```
+
 You must use the same package you used for installation for the above command to succeed.
 
 The `/quiet` switch suppresses all notifications.

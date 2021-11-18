@@ -31,7 +31,8 @@ The devices status report provides high-level information about the devices in y
 
 The dashboard is structured into two sections:
 
-![Image of the device report.](images/device-reports.png)
+:::image type="content" alt-text="Image of the device report." source="images/device-reports.png" lightbox="images/device-reports.png":::
+
 
 <br>
 
