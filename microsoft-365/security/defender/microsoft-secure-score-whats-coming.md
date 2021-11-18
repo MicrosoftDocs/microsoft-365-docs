@@ -30,7 +30,7 @@ This article lets you know about upcoming improvements to Microsoft Secure Score
 
 ## Proposed changes
 
-### Upcoming improvement actions
+### Upcoming improvement action additions - December 2021
 
 - Turn on Safe Attachments in block mode
 - Prevent sharing Exchange Online calendar details with external users
