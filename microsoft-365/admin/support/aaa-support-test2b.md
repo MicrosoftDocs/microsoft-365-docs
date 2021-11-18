@@ -114,10 +114,10 @@ International call charges apply
 [British Virgin Islands](#british-virgin-islands)\
 [Cayman Islands](#cayman-islands)
 [Curaçao](#curacao)\
-[Dominica](#dominica)
+[Dominica](#dominica)\
+[Dominican Republic](#dominican-republic)
    :::column-end:::
    :::column:::
-[Dominican Republic](#dominican-republic)\
 [Grenada](#grenada)\
 [Guadeloupe](#guadeloupe)\
 [Haiti](#haiti)\
@@ -301,10 +301,10 @@ Local call charges apply
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
-[Eritrea](#eritrea)
+[Eritrea](#eritrea)\
+[Ethiopia](#ethiopia)
    :::column-end:::
    :::column:::
-[Ethiopia](#ethiopia)\
 [French Southern Territories](#french-southern-territories)\
 [Gabon](#gabon)\
 [Gambia](#gambia)\
@@ -322,10 +322,10 @@ Local call charges apply
 [Mauritius](#mauritius)\
 [Mayotte](#mayotte)\
 [Morocco](#morocco)\
-[Mozambique](#mozambique)
+[Mozambique](#mozambique)\
+[Namibia](#namibia)
    :::column-end:::
    :::column:::
-[Namibia](#namibia)\
 [Niger](#niger)\
 [Nigeria](#nigeria)\
 [Réunion](#reunion)\
@@ -338,9 +338,7 @@ Local call charges apply
 [South Africa](#south-africa)
 [South Sudan](#south-sudan)\
 [St Helena, Ascension, Tristan da Cunha](#st-helena)\
-
-[Swaziland](#swaziland)\
-
+<!--[Swaziland](#swaziland)\-->
 [Tanzania](#tanzania)\
 [Togo](#togo)\
 [Tunisia](#tunisia)\
@@ -405,17 +403,17 @@ International call charges apply
 [Bahrain](#bahrain)\
 [Egypt](#egypt)\
 [Iraq](#iraq)\
-[Israel](#israel)
+[Israel](#israel)\
+[Jordan](#jordan)
    :::column-end:::
    :::column:::
-[Jordan](#jordan)\
 [Kuwait](#kuwait)\
 [Lebanon](#lebanon)\
 [Oman](#oman)\
 [Pakistan](#pakistan)
+[Palestinian Authority](#palestinian-authority)
    :::column-end:::
    :::column:::
-[Palestinian Authority](#palestinian-authority)\
 [Qatar](#qatar)\
 [Saudi Arabia](#saudi-arabia)\
 [Turkey](#turkey)\
@@ -461,12 +459,12 @@ International call charges apply
 [Cocos (Keeling) Islands](#cocos-keeling-islands)\
 [Cyprus](#cyprus)\
 [Georgia](#georgia)\
-[Hong Kong SAR](#hong-kong-sar)\
-[India](#india)\
-[Indonesia](#indonesia)\
-[Japan](#japan)
+[Hong Kong SAR](#hong-kong-sar)
    :::column-end:::
    :::column:::
+[India](#india)\
+[Indonesia](#indonesia)\
+[Japan](#japan)\
 [Kazakhstan](#kazakhstan)\
 [Korea](#korea)\
 [Kyrgyzstan](#kyrgyzstan)\
@@ -476,11 +474,11 @@ International call charges apply
 [Maldives](#maldives)\
 [Mongolia](#mongolia)\
 [Myanmar](#myanmar)\
-[Nepal](#nepal)\
-[Pakistan](#pakistan)\
-[Philippines](#philippines)
+[Nepal](#nepal)
    :::column-end:::
    :::column:::
+[Pakistan](#pakistan)\
+[Philippines](#philippines)\
 [Russia](#russia)\
 [Singapore](#singapore)\
 [Sri Lanka](#sri-lanka)\
@@ -516,10 +514,10 @@ International call charges apply
 [Niue](#niue)\
 [Norfolk Island](#norfolk-island)\
 [Northern Mariana Islands](#northern-mariana-islands)\
-[Palau](#palau)
+[Palau](#palau)\
+[Papua New Guinea](#papua-new-guinea)
    :::column-end:::
    :::column:::
-[Papua New Guinea](#papua-new-guinea)\
 [Pitcairn Islands](#pitcairn-islands)\
 [Samoa](#samoa)\
 [Solomon Islands](#solomon-islands)\
