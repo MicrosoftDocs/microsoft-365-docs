@@ -196,6 +196,27 @@ The cards fall into these categories:
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
 - **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about discovered apps in Defender for Cloud Apps](/cloud-app-security/discovered-apps).
 
+
+#### Search across entities
+The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
+
+You can search across the following entities in Defender for Endpoint and Defender for Identity: 
+
+- **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators. For example, you can use "contains" to search for part of a host name. 
+- **Users** - supported for both Defender for Endpoint and Defender for Identity. 
+- **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
+
+    >[!NOTE]
+    >IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page. 
+
+- **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
+
+ 
+
+
+
+
+
 ### Threat analytics with better data coverage
 
 Track and respond to emerging threats with the following Microsoft 365 Defender threat analytics integrated experience:
