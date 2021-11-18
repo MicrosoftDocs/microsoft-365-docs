@@ -410,7 +410,7 @@ International call charges apply
 [Kuwait](#kuwait)\
 [Lebanon](#lebanon)\
 [Oman](#oman)\
-[Pakistan](#pakistan)
+[Pakistan](#pakistan)\
 [Palestinian Authority](#palestinian-authority)
    :::column-end:::
    :::column:::
