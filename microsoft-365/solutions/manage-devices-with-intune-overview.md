@@ -65,6 +65,8 @@ This guidance is tightly coordinated with the recommended [Zero Trust identity a
 
 Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune/MEM and the related Conditional Access policies you will help coordinate in Azure AD. 
 
+[![Zero Trust identity and device access policies](../media/devices/identity-device-overview-steps.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-overview-steps.png)
+
 
 In this illustration:
 - In Step 1, [Implement Level 2 App Protection Policies (APP)](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
