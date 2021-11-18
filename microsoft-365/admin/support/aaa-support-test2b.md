@@ -60,7 +60,6 @@ Jump to section:
 :::row:::
    :::column:::
 [Belize](#belize)\
-[Bermuda](#bermuda)\
 [Canada](#canada)\
 [Costa Rica](#costa-rica)\
 [El Salvador](#el-salvador)
@@ -78,6 +77,28 @@ Jump to section:
 [United States](#united-states)
    :::column-end:::
 :::row-end:::
+
+### Belize
+
+### Bermuda
+
+### Canada
+
+### Costa Rica
+
+### El Salvador
+
+### Greenland
+
+### Guatemala
+
+### Honduras
+
+### Mexico
+
+### Nicaragua
+
+### Panama
 
 ### Saint Pierre and Miquelon  
 
@@ -101,6 +122,8 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
+### United States
+
 ## Caribbean
 
 :::row:::
@@ -110,14 +133,15 @@ International call charges apply
 [Aruba](#aruba)\
 [Bahamas](#bahamas)\
 [Barbados](#barbados)\
+[Bermuda](#bermuda)\
 [Bonaire](#bonaire)\
 [British Virgin Islands](#british-virgin-islands)\
 [Cayman Islands](#cayman-islands)
 [Curaçao](#curacao)\
-[Dominica](#dominica)\
-[Dominican Republic](#dominican-republic)
+[Dominica](#dominica)
    :::column-end:::
    :::column:::
+[Dominican Republic](#dominican-republic)\
 [Grenada](#grenada)\
 [Guadeloupe](#guadeloupe)\
 [Haiti](#haiti)\
@@ -126,10 +150,10 @@ International call charges apply
 [Montserrat](#montserrat)\
 [Puerto Rico](#puerto-rico)\
 [Saba](#saba)\
-[Saint Barthélemy](#saint-barthelemy)
+[Saint Barthélemy](#saint-barthlemy)
    :::column-end:::
    :::column:::
-[Saint Kitts and Nevis](#st-kitts-nevis)\
+[Saint Kitts and Nevis](#saint-kitts-and-nevis)\
 [Saint Lucia](#saint-lucia)\
 [Saint Martin](#saint-martin)\
 [Saint Vincent and the Grenadines](#saint-vincent-and-the-grenadines)\
@@ -140,6 +164,26 @@ International call charges apply
 [U.S. Virgin Islands](#virgin-islands)
    :::column-end:::
 :::row-end:::
+
+### Anguilla
+
+### Antigua and Barbuda
+
+### Aruba
+
+### Bahamas
+
+### Barbados
+
+### Bonaire
+
+### British Virgin Islands
+
+### Cayman Islands
+
+### Curaçao
+
+### Dominica
 
 ### Dominican Republic  
 
@@ -160,6 +204,42 @@ Alternative Phone Number: 1 809 200 8794\
 (Cellular toll-free)
    :::column-end:::
 :::row-end:::
+
+### Grenada
+
+### Guadeloupe
+
+### Haiti
+
+### Jamaica
+
+### Martinique
+
+### Montserrat
+
+### Puerto Rico
+
+### Saba
+
+### Saint Barthélemy
+
+### Saint Kitts and Nevis
+
+### Saint Lucia
+
+### Saint Martin
+
+### Saint Vincent and the Grenadines
+
+### Sint Eustatius
+
+### Sint Maarten
+
+### Trinidad and Tobago
+
+### Turks and Caicos Islands
+
+### U.S. Virgin Islands
 
 ## South America
 
@@ -187,76 +267,167 @@ Alternative Phone Number: 1 809 200 8794\
    :::column-end:::
 :::row-end:::
 
+### Argentina
+
+### Bolivia
+
+### Brazil
+
+### Chile
+
+### Colombia
+
+### Ecuador
+
+### Falkland Islands
+
+### French Guiana
+
+### Guyana
+
+### Paraguay
+
+### Peru
+
+### South Georgia and South Sandwich Islands
+
+### Suriname
+
+### Uruguay
+
+### Venezuela
+
 ## Europe
 
-:::row:::
-   :::column:::
-[Åland Islands](#aland-islands)\
-[Albania](#albania)\
-[Andorra](#andorra)\
-[Armenia](#armenia)\
-[Austria](#austria)\
-[Azerbaijan](#azerbaijan)\
-[Belarus](#belarus)\
-[Belgium](#belgium)\
-[Bosnia and Herzegovina](#bosnia-and-herzegovina)\
-[Bulgaria](#bulgaria)\
-[Croatia](#croatia)\
-[Cyprus](#cyprus)\
-[Czechia](#czechia)\
-[Denmark](#denmark)\
-[Estonia](#estonia)\
-[Faroe Islands](#faroe-islands)\
-[Finland](#finland)\
-[France](#france)\
-[Georgia](#georgia)\
-[Germany](#germany)
-   :::column-end:::
-   :::column:::
-[Gibraltar](#gibraltar)\
-[Greece](#greece)\
-[Guernsey](#guernsey)\
-[Hungary](#hungary)\
-[Iceland](#iceland)\
-[Ireland](#ireland)\
-[Isle of Man](#isle-of-man)\
-[Italy](#italy)\
-[Jan Mayen](#jan-mayen)\
-[Jersey](#jersey)\
-[Kosovo](#kosovo)\
-[Latvia](#latvia)\
-[Liechtenstein](#liechtenstein)\
-[Lithuania](#lithuania)\
-[Luxembourg](#luxembourg)\
-[Malta](#malta)\
-[Moldova](#moldova)\
-[Monaco](#monaco)\
-[Montenegro](#montenegro)
-   :::column-end:::
-   :::column:::
-[Netherlands](#netherlands)\
-[North Macedonia](#north-macedonia)\
-[Norway](#norway)\
-[Poland](#poland)\
-[Portugal](#portugal)\
-[Romania](#romania)\
-[Russia](#russia)\
-[San Marino](#san-marino)\
-[Serbia](#serbia)\
-[Slovakia](#slovakia)\
-[Slovenia](#slovenia)\
-[Spain](#spain)\
-[Svalbard](#svalbard)\
-[Sweden](#sweden)\
-[Switzerland](#switzerland)\
-[Turkey](#turkey)\
-[Ukraine](#ukraine)\
-[United Kingdom](#united-kingdom)\
-[Vatican City](#vatican-city)
-   :::column-end:::
-:::row-end:::
+### Åland Islands
 
-### Belgium  
+### Albania
+
+### Andorra
+
+### Armenia
+
+### Austria
+
+### Azerbaijan
+
+### Belarus
+
+### Belgium
+
+### Bosnia and Herzegovina
+
+### Bulgaria
+
+### Croatia
+
+### Cyprus
+
+### Czechia
+
+### Denmark
+
+### Estonia
+
+### Faroe Islands
+
+### Finland
+
+### France
+
+### Georgia
+
+### Germany
+
+### Gibraltar
+
+### Greece
+
+### Guernsey
+
+### Hungary
+
+### Iceland
+
+### Ireland
+
+### Isle of Man
+
+### Italy
+
+### Jan Mayen
+
+### Jersey
+
+### Kosovo
+
+### Latvia
+
+### Liechtenstein
+
+### Lithuania
+
+### Luxembourg
+
+### Malta
+
+### Moldova
+
+### Monaco
+
+### Montenegro
+
+### Netherlands
+
+### North Macedonia
+
+### Norway
+
+### Poland
+
+### Portugal
+
+### Romania
+
+### Russia
+
+### San Marino
+
+### Serbia
+
+### Slovakia
+
+### Slovenia
+
+### Spain
+
+### Svalbard
+
+### Sweden
+
+### Switzerland
+
+### Turkey
+
+### Ukraine
+
+### United Kingdom
+
+### Vatican City
+
+### Åland Islands
+
+### Albania
+
+### Andorra
+
+### Armenia
+
+### Austria
+
+### Azerbaijan
+
+### Belgium
 
 :::row:::
    :::column:::
@@ -279,6 +450,107 @@ Alternative Phone Number: 02 200 88 84\
 Local call charges apply
    :::column-end:::
 :::row-end:::
+
+### Bosnia and Herzegovina
+
+### Bulgaria
+
+### Croatia
+
+### Cyprus
+
+### Czechia
+
+### Denmark
+
+### Estonia
+
+### Faroe Islands
+
+### Finland
+
+### France
+
+### Georgia
+
+### Germany
+
+### Gibraltar
+
+### Greece
+
+### Guernsey
+
+### Hungary
+
+### Iceland
+
+### Ireland
+
+### Isle of Man
+
+### Italy
+
+### Jan Mayen
+
+### Jersey
+
+### Kosovo
+
+### Latvia
+
+### Liechtenstein
+
+### Lithuania
+
+### Luxembourg
+
+### Malta
+
+### Moldova
+
+### Monaco
+
+### Montenegro
+
+### Netherlands
+
+### North Macedonia
+
+### Norway
+
+### Poland
+
+### Portugal
+
+### Romania
+
+### Russia
+
+### San Marino
+
+### Serbia
+
+### Slovakia
+
+### Slovenia
+
+### Spain
+
+### Svalbard
+
+### Sweden
+
+### Switzerland
+
+### Turkey
+
+### Ukraine
+
+### United Kingdom
+
+### Vatican City
+
 ## Africa
 
 :::row:::
@@ -297,7 +569,7 @@ Local call charges apply
 [Comoros](#comoros)\
 [Congo](#congo)\
 [Congo DRC](#congo-drc)\
-[Côte d’Ivoire](#cote-divoire)\
+[Côte d’Ivoire](#cte-divoire)\
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
@@ -328,16 +600,16 @@ Local call charges apply
    :::column:::
 [Niger](#niger)\
 [Nigeria](#nigeria)\
-[Réunion](#reunion)\
-[Rwanda](#rwanda)
-[São Tomé and Príncipe](#sao-tome-and-principe)\
+[Réunion](#runion)\
+[Rwanda](#rwanda)\
+[São Tomé and Príncipe](#so-tom-and-prncipe)\
 [Senegal](#senegal)\
 [Seychelles](#seychelles)\
 [Sierra Leone](#sierra-leone)\
 [Somalia](#somalia)\
 [South Africa](#south-africa)
 [South Sudan](#south-sudan)\
-[St Helena, Ascension, Tristan da Cunha](#st-helena)\
+[St Helena, Ascension, Tristan da Cunha](#st-helena-ascension-tristan-da-cunha)\
 <!--[Swaziland](#swaziland)\-->
 [Tanzania](#tanzania)\
 [Togo](#togo)\
@@ -347,6 +619,24 @@ Local call charges apply
 [Zimbabwe](#zimbabwe)
    :::column-end:::
 :::row-end:::
+
+### Algeria
+
+### Angola
+
+### Benin
+
+### Botswana
+
+### Bouvet Island
+
+### Burkina Faso
+
+### Burundi
+
+### Cabo Verde
+
+### Cameroon
 
 ### Central African Republic  
 
@@ -369,6 +659,44 @@ English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::
+
+### Chad
+
+### Comoros
+
+### Congo
+
+### Congo DRC
+
+### Côte d’Ivoire
+
+### Djibouti
+
+### Egypt
+
+### Equatorial Guinea
+
+### Eritrea
+
+### Ethiopia
+
+### French Southern Territories
+
+### Gabon
+
+### Gambia
+
+### Ghana
+
+### Guinea
+
+### Guinea-Bissau
+
+### Kenya
+
+### Lesotho
+
+### Liberia
 
 ### Libya  
 
@@ -394,6 +722,61 @@ English: 24 hours a day, 7 days a week\
 International call charges apply
    :::column-end:::
 :::row-end:::
+
+### Madagascar
+
+### Malawi
+
+### Mali
+
+### Mauritania
+
+### Mauritius
+
+### Mayotte
+
+### Morocco
+
+### Mozambique
+
+### Namibia
+
+### Niger
+
+### Nigeria
+
+### Réunion
+
+### Rwanda
+
+### São Tomé and Príncipe
+
+### Senegal
+
+### Seychelles
+
+### Sierra Leone
+
+### Somalia
+
+### South Africa
+
+### South Sudan
+
+### St Helena, Ascension, Tristan da Cunha
+
+<!--[Swaziland](#swaziland)\-->
+### Tanzania
+
+### Togo
+
+### Tunisia
+
+### Uganda
+
+### Zambia
+
+### Zimbabwe
 
 ## Middle East
 
@@ -492,6 +875,82 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
+### Afghanistan
+
+### Armenia
+
+### Azerbaijan
+
+### Bangladesh
+
+### Bhutan
+
+### Brunei
+
+### Cambodia
+
+### China
+
+### Christmas Island
+
+### Cocos (Keeling) Islands
+
+### Cyprus
+
+### Georgia
+
+### Hong Kong SAR
+
+### India
+
+### Indonesia
+
+### Japan
+
+### Kazakhstan
+
+### Korea
+
+### Kyrgyzstan
+
+### Laos
+
+### Macao SAR
+
+### Malaysia
+
+### Maldives
+
+### Mongolia
+
+### Myanmar
+
+### Nepal
+
+### Pakistan
+
+### Philippines
+
+### Russia
+
+### Singapore
+
+### Sri Lanka
+
+### Taiwan
+
+### Tajikistan
+
+### Thailand
+
+### Timor-Leste
+
+### Turkmenistan
+
+### Uzbekistan
+
+### Vietnam
+
 ## Australia / Pacific
 
 :::row:::
@@ -529,3 +988,54 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
+### Australia
+
+### American Samoa
+
+### Cook Islands
+
+### Fiji
+
+### French Polynesia
+
+### Guam
+
+### Heard Island and Mcdonald Islands
+
+### Kiribati
+
+### Marshall Islands
+
+### Micronesia
+
+### Nauru
+
+### New Caledonia
+
+### New Zealand
+
+### Niue
+
+### Norfolk Island
+
+### Northern Mariana Islands
+
+### Palau
+
+### Papua New Guinea
+
+### Pitcairn Islands
+
+### Samoa
+
+### Solomon Islands
+
+### Tokelau
+
+### Tonga
+
+### Tuvalu
+
+### Vanuatu
+
+### Wallis and Futuna
