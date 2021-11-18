@@ -87,7 +87,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Allowed by default but can be blocked by a tenant setting: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Editing record properties**.
+Allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Editing record properties** > **Editing record properties**.
 
 <sup>2</sup>
 Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
