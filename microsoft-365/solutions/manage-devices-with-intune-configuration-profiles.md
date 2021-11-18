@@ -1,5 +1,5 @@
 ---
-title: "Step 5. Connect Defender for Endpoint with Intune"
+title: "Step 5. Deploy device profiles in Microsoft Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,6 +16,6 @@ keywords:
 description: 
 ---
 
-# Step 5. Connect Defender for Endpoint to Intune
+# Step 5. Deploy device profiles in Microsoft Intune
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)

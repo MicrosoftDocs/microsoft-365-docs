@@ -47,3 +47,7 @@ To configure these policies, use the recommended guidance and settings prescribe
 |1   |  [Apply Application Protection Policies (APP) data protection](../security/office-365-security/identity-access-policies.md#apply-app-data-protection-policies)       | One Intune App Protection policy per platform (Windows, iOS/iPadOS, Android).        | Microsoft 365 E3 or E5        |
 |2     | [Require approved apps and app protection ](../security/office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)       |  Enforces mobile app protection for phones and tablets using iOS, iPadOS, or Android.   |  Microsoft 365 E3 or E5       |
 | | | | |
+
+## Next steps
+
+Go to [Step 2. Enroll devices into management with Intune](manage-devices-with-intune-enroll.md). 
