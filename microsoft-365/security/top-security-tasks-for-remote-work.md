@@ -49,11 +49,11 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |8|[Enroll PCs into device management and require compliant PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9|[Optimize your network for cloud connectivity](#9-optimize-your-network-for-cloud-connectivity)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Train users](#10-train-users)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11|[Get started with Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11|[Get started with Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 ![Screenshot of Microsoft Secure Score.](../media/secure-score.png)
 
@@ -117,7 +117,7 @@ You'll need to work with your Exchange Online administrator and SharePoint Onlin
 
 ## 5: Turn on Microsoft 365 Defender
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>.
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Cloud App Security) into a single pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ![MTP dashboard illustration.](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
@@ -224,21 +224,21 @@ Microsoft also recommends that users protect their personal email accounts by ta
 
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## 11: Get started with Microsoft Cloud App Security
+## 11: Get started with Microsoft Defender for Cloud Apps
 
-[Microsoft Cloud App Security](/cloud-app-security) provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. Once you get started with Cloud App Security, anomaly detection policies are automatically enabled, but Cloud App Security has an initial learning period of seven days during which not all anomaly detection alerts are raised.
+[Microsoft Defender for Cloud Apps](/cloud-app-security) provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. Once you get started with Defender for Cloud Apps, anomaly detection policies are automatically enabled, but Defender for Cloud Apps has an initial learning period of seven days during which not all anomaly detection alerts are raised.
 
-Get started with Cloud App Security now. Later you can set up more sophisticated monitoring and controls.
+Get started with Defender for Cloud Apps now. Later you can set up more sophisticated monitoring and controls.
 
-- [Quickstart: Get started with Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
+- [Quickstart: Get started with Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
 - [Get instantaneous behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy)
-- [Learn more about Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Learn more about Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 - [Review new features and capabilities](/cloud-app-security/release-notes)
 - [See basic setup instructions](/cloud-app-security/general-setup)
 
 ## 12: Monitor for threats and take action
 
-Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
+Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
 - [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 - [See the security portals in Microsoft 365](./defender/portals.md)
@@ -247,4 +247,4 @@ Microsoft 365 includes several ways to monitor status and take appropriate actio
 
 Congratulations! You have quickly implemented some of the most important security protections and your organization is much more secure. Now you're ready to go even further with threat protection capabilities (including Microsoft Defender for Endpoint), data classification and protection capabilities, and securing administrative accounts. For a deeper, methodical set of security recommendations for Microsoft 365, see [Microsoft 365 Security for Business Decision Makers (BDMs)](Microsoft-365-security-for-bdm.md).
 
-Also visit Microsoft's new security center on [docs.microsoft.com/security](/security).
+Also visit Microsoft's new Defender for Cloud on [docs.microsoft.com/security](/security).
