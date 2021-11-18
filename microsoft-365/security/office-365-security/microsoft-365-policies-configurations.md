@@ -121,9 +121,14 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 This guidance shows you how to implement Zero Trust protection for identities and devices for each of these levels of protection. Use this guidance as a minimum for your organization and adjust the policies to meet your organization's specific requirements.
 
-It's important to use consistent levels of protection across your identities, devices, and data. For example, protection for users with priority accounts&mdash;such as executives, leaders, managers, and others&mdash;should include the same level of protection for their identities, their devices, and the data they access. The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
+It's important to use consistent levels of protection across your identities, devices, and data. For example, protection for users with priority accounts&mdash;such as executives, leaders, managers, and others&mdash;should include the same level of protection for their identities, their devices, and the data they access. 
+<!--
+
+The **Zero Trust identity and device protection for Microsoft 365** architecture model shows you which capabilities are comparable.
 
 [![Thumb image for Zero Trust Identity and device protection for Microsoft 365 poster.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [View as a PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)
+
+--> 
 
 Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
 
