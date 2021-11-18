@@ -296,7 +296,10 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft 365 Defender portal:
+Download the onboarding package from Microsoft 365 Defender portal.
+
+> [!IMPORTANT]
+> If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
 
 1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
