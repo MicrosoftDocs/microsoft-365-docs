@@ -32,7 +32,7 @@ When an employee leaves your organization (or goes on an extended leave of absen
 
 But if a hold is applied to the mailbox prior to deleting the Microsoft 365 account, the mailbox will be converted into an inactive mailbox. The following sections contain information about holds that can be applied with Microsoft 365 retention and eDiscovery holds.
 
-Inactive mailboxes are useful when your organization needs to retain mailbox content of former employees for regulatory or other reasons. While any type of hold listed in this document will force a mailbox to be made inactive when a user object is deleted, we recommend doing this by applying a Microsoft 365 retention policy or retention labels, [confirm the retention settings are applied](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox), and then remove the corresponding Microsoft 365 account. At that point, the contents of the inactive mailbox are retained for the duration of the retention period specified before the user account was deleted. You can still recover the corresponding user account for a 30-day period, however after 30 days, the mailbox is retained in Microsoft 365 as an inactive mailbox until the retention policy or retention labels are removed.
+Inactive mailboxes are useful when your organization needs to retain mailbox content of former employees for regulatory or other reasons. While any type of hold listed in this document will force a mailbox to be made inactive when a user object is deleted, we recommend doing this by applying a Microsoft 365 retention policy or retention labels, [confirm the hold is applied](identify-a-hold-on-an-exchange-online-mailbox.md#how-to-confirm-that-an-organization-wide-retention-policy-is-applied-to-a-mailbox), and then remove the corresponding Microsoft 365 account. At that point, the contents of the inactive mailbox are retained for the duration of the retention period specified before the user account was deleted. You can still recover the corresponding user account for a 30-day period, however after 30 days, the mailbox is retained in Microsoft 365 as an inactive mailbox until the retention policy or retention labels are removed.
 
 > [!IMPORTANT]
 > As we mentioned above, we recommend you use Microsoft 365 retention to create an inactive mailbox:
@@ -41,6 +41,12 @@ Inactive mailboxes are useful when your organization needs to retain mailbox con
 > - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
 When there are multiple holds on the same content, the [principle of retention apply](retention.md#the-principles-of-retention-or-what-takes-precedence) and the content is retained for the longest period.
+
+### Confirming a hold is applied to a mailbox
+
+Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery hold, Litigation hold, or In-Place Hold, you can confirm the result is a hold on a mailbox by using PowerShell.
+
+For instructions, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
 ## Inactive mailboxes and Microsoft 365 retention
 
