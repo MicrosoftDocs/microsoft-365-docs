@@ -92,6 +92,8 @@ Next, enroll your devices into management and begin managing these.
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
+Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
+
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
