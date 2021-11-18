@@ -53,20 +53,27 @@ If your support phone number isn't listed above, use the sections below to find 
 
 Jump to section:
 
-[Northern America](#northern-america) | [Central America](#central-america) | [Caribbean](#caribbean) | [South America](#south-america) | [Europe](#europe) | [Africa](#africa) | [Middle East](#middle-east) | [Asia](#asia) | [Pacific](#pacific) | [Antarctica](#antarctica)
+[North America / Central America](#north-america--central-america) | [Caribbean](#caribbean) | [South America](#south-america) | [Europe](#europe) | [Africa](#africa) | [Middle East](#middle-east) | [Asia](#asia) | [Australia / Pacific](#australia--pacific)
 
-## Northern America
+## North America / Central America
 
 :::row:::
    :::column:::
+[Belize](#belize)\
 [Bermuda](#bermuda)\
-[Canada](#canada)
+[Canada](#canada)\
+[Costa Rica](#costa-rica)\
+[El Salvador](#el-salvador)
    :::column-end:::
    :::column:::
 [Greenland](#greenland)\
+[Guatemala](#guatemala)\
+[Honduras](#honduras)\
 [Mexico](#mexico)
    :::column-end:::
    :::column:::
+[Nicaragua](#nicaragua)\
+[Panama](#panama)\
 [Saint Pierre and Miquelon](#saint-pierre-and-miquelon)\
 [United States](#united-states)
    :::column-end:::
@@ -91,24 +98,6 @@ English: Mon-Fri 6 AM-2 PM
 French: Mon-Fri 5 AM-6 PM\
 English: 24 hours a day, 7 days a week\
 International call charges apply
-   :::column-end:::
-:::row-end:::
-
-## Central America
-
-:::row:::
-   :::column:::
-[Belize](#belize)\
-[Costa Rica](#costa-rica)\
-[El Salvador](#el-salvador)
-   :::column-end:::
-   :::column:::
-[Guatemala](#guatemala)\
-[Honduras](#honduras)
-   :::column-end:::
-   :::column:::
-[Nicaragua](#nicaragua)\
-[Panama](#panama)
    :::column-end:::
 :::row-end:::
 
@@ -202,7 +191,7 @@ Alternative Phone Number: 1 809 200 8794\
 
 :::row:::
    :::column:::
-[Aland Islands](#aland-islands)\
+[Åland Islands](#aland-islands)\
 [Albania](#albania)\
 [Andorra](#andorra)\
 [Armenia](#armenia)\
@@ -246,7 +235,7 @@ Alternative Phone Number: 1 809 200 8794\
    :::column-end:::
    :::column:::
 [Netherlands](#netherlands)\
-[Macedonia](#macedonia)\
+[North Macedonia](#north-macedonia)\
 [Norway](#norway)\
 [Poland](#poland)\
 [Portugal](#portugal)\
@@ -296,7 +285,6 @@ Local call charges apply
    :::column:::
 [Algeria](#algeria)\
 [Angola](#angola)\
-[Ascension](#ascension)\
 [Benin](#benin)\
 [Botswana](#botswana)\
 [Bouvet Island](#bouvet-island)\
@@ -309,7 +297,7 @@ Local call charges apply
 [Comoros](#comoros)\
 [Congo](#congo)\
 [Congo DRC](#congo-drc)\
-[Cote Divoire](#cote-divoire)\
+[Côte d’Ivoire](#cote-divoire)\
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
@@ -322,7 +310,7 @@ Local call charges apply
 [Gambia](#gambia)\
 [Ghana](#ghana)\
 [Guinea](#guinea)\
-[Guinea Bissau](#guinea-bissau)\
+[Guinea-Bissau](#guinea-bissau)\
 [Kenya](#kenya)\
 [Lesotho](#lesotho)\
 [Liberia](#liberia)\
@@ -340,18 +328,19 @@ Local call charges apply
 [Namibia](#namibia)\
 [Niger](#niger)\
 [Nigeria](#nigeria)\
-[Reunion](#reunion)\
+[Réunion](#reunion)\
 [Rwanda](#rwanda)
-[Sao Tome and Principe](#sao-tome-and-principe)\
+[São Tomé and Príncipe](#sao-tome-and-principe)\
 [Senegal](#senegal)\
 [Seychelles](#seychelles)\
 [Sierra Leone](#sierra-leone)\
 [Somalia](#somalia)\
 [South Africa](#south-africa)
 [South Sudan](#south-sudan)\
-[St Helena](#st-helena)\
+[St Helena, Ascension, Tristan da Cunha](#st-helena)\
+
 [Swaziland](#swaziland)\
-[Tristan Da Cunha](#tristan-da-cunha)\
+
 [Tanzania](#tanzania)\
 [Togo](#togo)\
 [Tunisia](#tunisia)\
@@ -414,20 +403,22 @@ International call charges apply
    :::column:::
 [Afghanistan](#afghanistan)\
 [Bahrain](#bahrain)\
+[Egypt](#egypt)\
 [Iraq](#iraq)\
-[Israel](#israel)\
-[Jordan](#jordan)\
+[Israel](#israel)
    :::column-end:::
    :::column:::
+[Jordan](#jordan)\
 [Kuwait](#kuwait)\
 [Lebanon](#lebanon)\
 [Oman](#oman)\
-[Pakistan](#pakistan)\
-[Palestinian Authority](#palestinian-authority)
+[Pakistan](#pakistan)
    :::column-end:::
    :::column:::
+[Palestinian Authority](#palestinian-authority)\
 [Qatar](#qatar)\
 [Saudi Arabia](#saudi-arabia)\
+[Turkey](#turkey)\
 [United Arab Emirates](#united-arab-emirates)\
 [Yemen](#yemen)
    :::column-end:::
@@ -458,46 +449,52 @@ International call charges apply
 
 :::row:::
    :::column:::
+[Afghanistan](#afghanistan)\
+[Armenia](#armenia)\
+[Azerbaijan](#azerbaijan)\
 [Bangladesh](#bangladesh)\
 [Bhutan](#bhutan)\
 [Brunei](#brunei)\
 [Cambodia](#cambodia)\
 [China](#china)\
 [Christmas Island](#christmas-island)\
-[Cocos Keeling Islands](#cocos-keeling-islands)\
+[Cocos (Keeling) Islands](#cocos-keeling-islands)\
+[Cyprus](#cyprus)\
+[Georgia](#georgia)\
 [Hong Kong SAR](#hong-kong-sar)\
 [India](#india)\
 [Indonesia](#indonesia)\
-[Kazakhstan](#kazakhstan)
+[Japan](#japan)
    :::column-end:::
    :::column:::
-[Japan](#japan)\
+[Kazakhstan](#kazakhstan)\
 [Korea](#korea)\
 [Kyrgyzstan](#kyrgyzstan)\
 [Laos](#laos)\
-[Macau SAR](#macau-sar)\
+[Macao SAR](#macao-sar)\
 [Malaysia](#malaysia)\
 [Maldives](#maldives)\
 [Mongolia](#mongolia)\
 [Myanmar](#myanmar)\
 [Nepal](#nepal)\
+[Pakistan](#pakistan)\
 [Philippines](#philippines)
    :::column-end:::
    :::column:::
-[Vanuatu](#vanuatu)\
+[Russia](#russia)\
 [Singapore](#singapore)\
 [Sri Lanka](#sri-lanka)\
 [Taiwan](#taiwan)\
 [Tajikistan](#tajikistan)\
 [Thailand](#thailand)\
-[Timor Leste](#timor-leste)\
+[Timor-Leste](#timor-leste)\
 [Turkmenistan](#turkmenistan)\
 [Uzbekistan](#uzbekistan)\
 [Vietnam](#vietnam)
    :::column-end:::
 :::row-end:::
 
-## Pacific
+## Australia / Pacific
 
 :::row:::
    :::column:::
@@ -529,486 +526,8 @@ International call charges apply
 [Tokelau](#tokelau)\
 [Tonga](#tonga)\
 [Tuvalu](#tuvalu)\
+[Vanuatu](#vanuatu)\
 [Wallis and Futuna](#wallis-and-futuna)
    :::column-end:::
 :::row-end:::
 
-### Aland Islands  
-
-### Albania  
-
-### Algeria  
-
-### American Samoa  
-
-### Andorra  
-
-### Angola  
-
-### Anguilla  
-
-### Antigua and Barbuda  
-
-### Argentina  
-
-### Armenia  
-
-### Aruba  
-
-### Ascension  
-
-### Australia  
-
-### Austria  
-
-### Azerbaijan  
-
-### Bahamas  
-
-### Bahrain  
-
-### Bangladesh  
-
-### Barbados  
-
-### Belarus  
-
-### Belize
-
-### Benin  
-
-### Bermuda  
-
-### Bhutan  
-
-### Bolivia  
-
-### Bonaire  
-
-### Bosnia and Herzegovina  
-
-### Botswana  
-
-### Bouvet Island  
-
-### Brazil  
-
-### British Virgin Islands  
-
-### Brunei  
-
-### Bulgaria  
-
-### Burkina Faso  
-
-### Burundi  
-
-### Cambodia  
-
-### Cameroon  
-
-### Canada  
-
-### Cabo Verde  
-
-### Cayman Islands  
-
-### Chad  
-
-### Chile  
-
-### China
-
-### Christmas Island  
-
-### Cocos Keeling Islands  
-
-### Colombia  
-
-### Comoros  
-
-### Congo  
-
-### Congo DRC  
-
-### Cook Islands  
-
-### Costa Rica  
-
-### Cote Divoire  
-
-### Croatia  
-
-### Curacao  
-
-### Cyprus  
-
-### Czechia  
-
-### Denmark  
-
-### Djibouti  
-
-### Dominica  
-
-### Ecuador  
-
-### Egypt  
-
-### El Salvador  
-
-### Equatorial Guinea  
-
-### Eritrea  
-
-### Estonia  
-
-### Ethiopia  
-
-### Falkland Islands  
-
-### Faroe Islands  
-
-### Fiji  
-
-### Finland  
-
-### France  
-
-### French Guiana  
-
-### French Polynesia  
-
-### French Southern Territories  
-
-### Gabon  
-
-### Gambia  
-
-### Georgia  
-
-### Germany  
-
-### Ghana  
-
-### Gibraltar  
-
-### Greece  
-
-### Greenland  
-
-### Grenada  
-
-### Guadeloupe  
-
-### Guam  
-
-### Guatemala  
-
-### Guernsey  
-
-### Guinea  
-
-### Guinea Bissau  
-
-### Guyana  
-
-### Haiti  
-
-### Heard Island and Mcdonald Islands  
-
-### Honduras  
-
-### Hong Kong SAR  
-
-### Hungary  
-
-### Iceland  
-
-### India  
-
-### Indonesia  
-
-### Iraq  
-
-### Ireland  
-
-### Isle Of Man  
-
-### Israel  
-
-### Italy  
-
-### Jamaica  
-
-### Jan Mayen  
-
-### Japan  
-
-### Jersey  
-
-### Jordan  
-
-### Kazakhstan  
-
-### Kenya  
-
-### Kiribati  
-
-### Korea  
-
-### Kosovo  
-
-### Kuwait  
-
-### Kyrgyzstan  
-
-### Laos  
-
-### Latvia  
-
-### Lebanon  
-
-### Lesotho  
-
-### Liberia  
-
-### Liechtenstein  
-
-### Lithuania  
-
-### Luxembourg  
-
-### Macau SAR  
-
-### Macedonia  
-
-### Madagascar  
-
-### Malawi  
-
-### Malaysia  
-
-### Maldives  
-
-### Mali  
-
-### Malta  
-
-### Marshall Islands  
-
-### Martinique  
-
-### Mauritania  
-
-### Mauritius  
-
-### Mayotte  
-
-### Mexico  
-
-### Micronesia  
-
-### Moldova  
-
-### Monaco  
-
-### Mongolia  
-
-### Montenegro  
-
-### Montserrat  
-
-### Morocco  
-
-### Mozambique  
-
-### Myanmar  
-
-### Namibia  
-
-### Nauru  
-
-### Nepal  
-
-### Netherlands  
-
-### New Caledonia  
-
-### New Zealand  
-
-### Nicaragua  
-
-### Niger  
-
-### Nigeria  
-
-### Niue  
-
-### Norfolk Island  
-
-### Northern Mariana Islands  
-
-### Norway  
-
-### Oman  
-
-### Pakistan  
-
-### Palau  
-
-### Palestinian Authority  
-
-### Panama  
-
-### Papua New Guinea  
-
-### Paraguay  
-
-### Peru  
-
-### Philippines  
-
-### Pitcairn Islands  
-
-### Poland  
-
-### Portugal  
-
-### Puerto Rico  
-
-### Qatar  
-
-### Reunion  
-
-### Romania  
-
-### Russia  
-
-### Rwanda  
-
-### Saba  
-
-### Saint Barthelemy  
-
-### Saint Lucia  
-
-### Saint Martin  
-
-### Saint Vincent and the Grenadines  
-
-### Samoa  
-
-### San Marino  
-
-### Sao Tome and Principe  
-
-### Saudi Arabia  
-
-### Senegal  
-
-### Serbia  
-
-### Seychelles  
-
-### Sierra Leone  
-
-### Singapore  
-
-### Sint Eustatius  
-
-### Sint Maarten  
-
-### Slovakia  
-
-### Slovenia  
-
-### Solomon Islands  
-
-### Somalia  
-
-### South Africa  
-
-### South Georgia and South Sandwich Islands  
-
-### South Sudan  
-
-### Spain  
-
-### Sri Lanka  
-
-### St Helena  
-
-### Saint Kitts and Nevis  
-
-### Suriname  
-
-### Svalbard  
-
-### Swaziland  
-
-### Sweden  
-
-### Switzerland  
-
-### Taiwan  
-
-### Tajikistan  
-
-### Tanzania  
-
-### Thailand  
-
-### Timor Leste  
-
-### Togo  
-
-### Tokelau  
-
-### Tonga  
-
-### Trinidad and Tobago  
-
-### Tristan Da Cunha  
-
-### Tunisia  
-
-### Turkey  
-
-### Turkmenistan  
-
-### Turks and Caicos Islands  
-
-### Tuvalu  
-
-### Uganda  
-
-### Ukraine  
-
-### United Arab Emirates  
-
-### United Kingdom  
-
-### United States  
-
-### Uruguay  
-
-### Uzbekistan  
-
-### Vanuatu  
-
-### Vatican City  
-
-### Venezuela  
-
-### Vietnam  
-
-### U.S. Virgin Islands  
-
-### Wallis and Futuna  
-
-### Yemen  
-
-### Zambia  
-
-### Zimbabwe
