@@ -35,6 +35,7 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
+- [Inside risk management](insider-risk-management-solution-overview.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Privacy management](/privacy/solutions/privacymanagement/privacy-management)
 
@@ -46,7 +47,7 @@ Every sensitive information type entity is defined by these fields:
 - description: describes what the sensitive information type is looking for
 - pattern: A pattern defines what a sensitive information type detects. It consists of the following components
     - Primary element – the main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
-    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword "SSN" in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
     - Proximity – Number of characters between primary and supporting element
 
@@ -133,7 +134,7 @@ To create custom sensitive information types in the Security & Compliance Center
 
 - **Use the UI** You can set up a custom sensitive information type using the Security & Compliance Center UI. With this method, you can use regular expressions, keywords, and keyword dictionaries. To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
-- **Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- **Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
 - **Use PowerShell** You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 

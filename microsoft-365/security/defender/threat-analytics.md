@@ -3,8 +3,6 @@ title: Threat analytics in Microsoft 365 Defender
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.sitesec: library

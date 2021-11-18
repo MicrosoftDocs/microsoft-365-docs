@@ -2,8 +2,6 @@
 title:  Download the Microsoft Defender for Endpoint client analyzer
 description: Learn how to download the Microsoft Defender for Endpoint Client Analyzer on Windows, macOS, or Linux.
 keywords: download, client analyzer, troubleshoot sensor, analyzer, mdeanalyzer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

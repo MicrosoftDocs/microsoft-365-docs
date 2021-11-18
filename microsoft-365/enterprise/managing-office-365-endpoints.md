@@ -94,7 +94,7 @@ In addition to selecting appropriate configuration for your network perimeter, i
 
 Changes to the Office 365 IP addresses and URLs are usually published near the last day of each month. Sometimes a change will be published outside of that schedule due to operational, support, or security requirements.
 
-When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there is an Office 365 service on that endpoint. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that do not require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, do not include advance notification. Regardless of what notification is provided, we list the expected service active date for each change.
+When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there is an Office 365 service on that endpoint. This is reflected as the Effective Date. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that do not require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, do not include advance notification. In these instances, no Effective Date will be provided. Regardless of what notification is provided, we list the expected service active date for each change.
 
 ### Change notification using the Web Service
 
@@ -202,9 +202,7 @@ If you're trying to use Office 365 and are finding third-party services aren't a
 <a name="bkmk_consumer"> </a>
 ### How do I block access to Microsoft's consumer services?
 
-Restricting access to our consumer services should be done at your own risk. The only reliable way to block consumer services is to restrict access to the  *login.live.com*  FQDN. This FQDN is used by a broad set of services including non-consumer services such as MSDN, TechNet, and others. This FQDN is also used by Microsoft Support's Secure File Exchange program and is necessary to transfer files to facilitate troubleshooting for Microsoft products.  Restricting access to this FQDN may result in the need to also include exceptions to the rule for network requests associated with these services.
-  
-Keep in mind that blocking access to the Microsoft consumer services alone won't prevent the ability for someone on your network to exfiltrate information using an Office 365 tenant or other service.
+The tenant restrictions feature now supports blocking the use of all Microsoft consumer applications (MSA apps) such as OneDrive, Hotmail, and Xbox.com. This uses a separate header to the login.live.com endpoint. For more details, see [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions#blocking-consumer-applications).
 
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### My firewall requires IP Addresses and cannot process URLs. How do I configure it for Office 365?

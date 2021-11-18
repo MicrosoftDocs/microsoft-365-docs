@@ -42,7 +42,7 @@ There are two different methods for automatically applying a sensitivity label t
 
 - **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for files and emails (includes Word, Excel, PowerPoint, and Outlook).
 
-    This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+    This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by built in labeling with [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), and also the Azure Information Protection unified labeling client.
 
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
@@ -146,7 +146,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 #### Custom sensitive information types with Exact Data Match
 
-You can configure a sensitivity label to use [Exact Data Match (EDM)-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
+You can configure a sensitivity label to use [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
 
 If you configure a sensitivity label with only EDM for your sensitive information type conditions, the auto-labeling setting is automatically turned off for the label.
 
@@ -154,9 +154,12 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
-When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
+When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -413,6 +416,8 @@ When your tenant has the new enhancements, you'll see the following notification
 ## Tips to increase labeling reach
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the additional methods to increase your labeling reach:
+
+- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint library are automatically labeled.
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 

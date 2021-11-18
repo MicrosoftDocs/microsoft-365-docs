@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -35,9 +36,9 @@ Microsoft 365 Defender applies correlation analytics and aggregates related aler
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision. This is also known as incident triage.
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
 The **Most recent incidents and alerts** section shows a graph of the number of alerts received and incidents created in the last 24 hours.
 
@@ -58,7 +59,7 @@ The incident queue also exposes multiple filtering options, that when applied, e
 
 From the default incident queue, you can select **Filters** to see a Filters pane, from which you can view a filtered set of incidents. Here is an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue.":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
 This table lists the filter names that are available.
 
