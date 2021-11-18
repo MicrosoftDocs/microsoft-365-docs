@@ -57,6 +57,8 @@ To benefit from the latest data on risks and threats and to minimize conflicts a
 
 Using Defender for Endpoint, you can monitor compliance to these baselines. 
 
+![The card for monitoring compliance to security baselines](../media/devices/secconmgmt-baseline-card.png#lightbox)
+
 To deploy security baselines and monitor compliance to these settings, use the steps in this table.
 
 
