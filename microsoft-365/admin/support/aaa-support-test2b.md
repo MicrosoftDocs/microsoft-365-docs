@@ -35,8 +35,8 @@ Admins, have your account details ready when you call.
    :::column-end:::
    :::column:::
 [Germany](#germany)\
-[Italy](#italy)
-[Japan](#japan)
+[Italy](#italy)\
+[Japan](#japan)\
 [Netherlands](#netherlands)
    :::column-end:::
    :::column:::
@@ -225,7 +225,7 @@ Alternative Phone Number: 1 809 200 8794\
    :::column-end:::
    :::column:::
 [Gibraltar](#gibraltar)\
-[Greece](#greece)
+[Greece](#greece)\
 [Guernsey](#guernsey)\
 [Hungary](#hungary)\
 [Iceland](#iceland)\
@@ -238,7 +238,7 @@ Alternative Phone Number: 1 809 200 8794\
 [Latvia](#latvia)\
 [Liechtenstein](#liechtenstein)\
 [Lithuania](#lithuania)\
-[Luxembourg](#luxembourg)
+[Luxembourg](#luxembourg)\
 [Malta](#malta)\
 [Moldova](#moldova)\
 [Monaco](#monaco)\
@@ -247,7 +247,7 @@ Alternative Phone Number: 1 809 200 8794\
    :::column:::
 [Netherlands](#netherlands)\
 [Macedonia](#macedonia)\
-[Norway](#norway)
+[Norway](#norway)\
 [Poland](#poland)\
 [Portugal](#portugal)\
 [Romania](#romania)\
