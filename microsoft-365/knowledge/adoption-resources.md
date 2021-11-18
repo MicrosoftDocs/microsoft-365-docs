@@ -23,8 +23,8 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Resource         |Download     |Description |
 |---------|---------|---------|
-|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/scenario-catalog-thumbnail.png)](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Scenario-Catalogue.pdf) |[Viva Topics Scenario Catalog](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Scenario-Catalogue.pdf) |This simple scenario catalog will show you things you can do to get the most out of Viva Topics for your organization. |
-|[![Thumbnail image of adoption guide front page](../media/knowledge-management/adoption-guide-thumbnail.png)](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Adoption-Guide.pdf)     |[Viva Topics Adoption Guide](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Adoption-Guide.pdf)          |This adoption guide will show you things you can do to get the most out of Viva Topics for your organization.         |
+|[![Thumbnail image of scenario catalog front page](../media/knowledge-management/scenario-catalog-thumbnail.png)](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Scenario-Catalogue.pdf) |[Viva Topics Scenario Catalog](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Scenario-Catalogue.pdf) |This scenario catalog will show you how you can use Viva Topics to get the most value for your organization. |
+|[![Thumbnail image of adoption guide front page](../media/knowledge-management/adoption-guide-thumbnail.png)](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Adoption-Guide.pdf)     |[Viva Topics Adoption Guide](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Adoption-Guide.pdf)          |This adoption guide will show you recommendations for how to roll out Viva Topics in your organization.         |
 |[![Thumbnail image of communication asset samples front page](../media/knowledge-management/communication-asset-samples.png)](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Communication-Asset-Samples.pptx)    |[Viva Topics Communication Asset Samples](https://download.microsoft.com/download/d/2/e/d2e894dd-c360-4edd-9c83-8e41787afda1/Viva-Topics-Communication-Asset-Samples.pptx)          |Customize these communication asset samples to show things you can do to get the most out of Viva Topics for your organization.         |
 
 ## Other resources
@@ -32,5 +32,5 @@ Use these downloadable resources and other information to spark ideas about how 
 
 |Name     |Description  |
 |---------|---------|
-|[Viva Topics FAQ](faq.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
+|[Viva Topics FAQ](faq-topics.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
 
