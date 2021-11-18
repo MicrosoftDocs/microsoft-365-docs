@@ -74,11 +74,10 @@ Information barriers allow you to restrict communication and collaboration betwe
 Information barriers are available in the following subscriptions:
 
 - Microsoft 365 E5/A5 subscription (paid or trial version)
-- Office 365 Enterprise E5 subscription (paid or trial version)
-- Office 365 A5 subscription (paid or trial version)
+- Office 365 E5/A5/A3/A1 subscription (paid or trial version)
 - Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
-- Microsoft 365 E3/A3 subscription + the Microsoft 365 E5/A5 Compliance add-on
-- Microsoft 365 E3/A3 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
+- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Compliance add-on
+- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
 
 ### Privileged access management
 
