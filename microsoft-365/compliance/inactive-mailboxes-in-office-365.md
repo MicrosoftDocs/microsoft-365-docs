@@ -44,7 +44,7 @@ When there are multiple holds on the same content, the [principle of retention a
 
 ### Confirming a hold is applied to a mailbox
 
-Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery hold, Litigation hold, or In-Place Hold, you can confirm the result is a hold on a mailbox by using PowerShell.
+Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery hold, Litigation hold, or In-Place Hold, you can confirm the result is a hold on a mailbox by using PowerShell. Do not delete the user account until you have done this confirmation, to ensure that the mailbox will be made inactive.
 
 For instructions, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
