@@ -2,8 +2,8 @@
 title: Insider risk management Users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management Users dashboard
@@ -93,7 +94,7 @@ There may be scenarios where you need to stop assigning risk scores to a user's 
 
 To manually remove users from in-scope status in all insider risk management policies, complete the following steps:
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Users** tab.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Users** tab.
 2. On the **Users dashboard**, select the user or users you want to remove from being in-scope in insider risk management policies.
 3. Select **Remove users**.
 4. On the **Remove user** pane, Select **Remove** or **Cancel** to discard the changes and close the dialog.

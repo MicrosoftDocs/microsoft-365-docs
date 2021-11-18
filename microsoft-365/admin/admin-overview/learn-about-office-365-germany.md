@@ -8,7 +8,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 monikerRange: 'o365-germany'
 ms.collection: 
 - M365-subscription-management 

@@ -11,7 +11,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic 
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how to manage topics in the topic center in Microsoft Viva Topics.
 
 ---

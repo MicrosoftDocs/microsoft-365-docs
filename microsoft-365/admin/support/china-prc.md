@@ -1,5 +1,5 @@
 ---                                
-title: Support information for China (PRC)
+title: Support information for China
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,12 +9,12 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to contact support for your country or region.
 ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# Contact support for China (PRC)
+# Contact support for China
 
 [Find another country or region](../../business-video/get-help-support.md).
 

@@ -3,15 +3,13 @@ title: App-based deployment for Microsoft Defender for Endpoint on iOS
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on iOS using an app
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -52,11 +50,11 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center1.](images/ios-deploy-1.png)
 
-1. On the Add app page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
+1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
 
 1. Select **iOS 11.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
-1. In the *Assignments* section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
+1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
     > [!NOTE]
     > The selected user group should consist of Intune enrolled users.

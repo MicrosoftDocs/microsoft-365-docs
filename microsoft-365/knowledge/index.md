@@ -4,14 +4,16 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-audience: 
-ms.topic: article
+ms.date: 10/10/2021
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how to find resources for Microsoft Viva Topics.
 ---
 

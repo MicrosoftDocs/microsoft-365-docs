@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - Strat_O365_IP
 ms.custom: TopSMBIssues
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
 ms.technology: mdo
 ms.prod: m365-security

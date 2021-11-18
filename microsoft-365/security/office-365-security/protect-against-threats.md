@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/22/2021
 search.appverid: 
   - MOE150
@@ -92,7 +92,7 @@ For more information about the recommended settings for anti-malware, see [EOP a
    - **Protection settings** section:
      - **Enable the common attachments filter**: Select (turn on). Click **Customize file types** to add more file types.
      - **Enable zero-hour auto purge for malware**: Verify this setting is selected. For more information about ZAP for malware, see [Zero-hour auto purge (ZAP) for malware](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-malware).
-   - **Quarantine policy**: Leave the default value AdminOnlyAccessPolicy selected. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+   - **Quarantine policy**: Leave the default value AdminOnlyAccessPolicy selected. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
    - **Notification** section: Verify that none of the notification settings are selected.
 
    When you're finished, click **Save**.
@@ -220,7 +220,7 @@ For more information about the recommended settings for Safe Attachments, see .[
    - **Users and domains** page: Because this is your first policy and you likely want to maximize coverage, consider entering your [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the **Domains** box. Otherwise, you can use the **Users** and **Groups** boxes for more granular control. You can specify exceptions by selecting **Exclude these users, groups, and domains** and entering values.
    - **Settings** page:
      - **Safe Attachments unknown malware response**: Select **Block**.
-     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages. For more information, see [Quarantine policies](quarantine-policies.md).
+     - **Quarantine policy**: The default value is blank, which means the AdminOnlyAccessPolicy policy is used. Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Quarantine policies](quarantine-policies.md).
      - **Redirect attachment with detected attachments** : **Enable redirect**: Turn this setting on (select) and enter an email address to receive detected messages.
      - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: Verify this setting is selected.
 

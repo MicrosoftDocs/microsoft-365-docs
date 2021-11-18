@@ -1,15 +1,13 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Device Installation
 description: This topic provides a walk through about Microsoft Defender for Endpoint Device Control Device Installation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -35,11 +33,10 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |GPO Support|Yes|
 |User-based Support|No|
 |Machine-based Support|Yes|
-|||
 
 ## Prepare your endpoints
 
-Deploy Device Installation on Windows 10 devices, Windows Server 2022.
+Deploy Device Installation on Windows 10, Windows 11 devices, Windows Server 2022.
 
 ## Device properties
 
@@ -66,7 +63,7 @@ When this policy setting is enabled together with the **Apply layered order of e
 If the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting is not enabled with this policy setting, then any other policy settings specifically preventing installation will take precedence. 
 
 > [!NOTE]
-> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions. It is recommended that you use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
+> The **Prevent installation of devices not described by other policy settings** policy setting has been replaced by the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting for supported target Windows 10 versions and Windows 11. It is recommended that you use the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy setting when possible.
 
 ### Allow installation of devices that match any of these device instance IDs 
 
@@ -92,7 +89,7 @@ If the **Apply layered order of evaluation for Allow and Prevent device installa
 
 ### Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria 
 
-This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supercedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
+This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
 **Device instance IDs > Device IDs > Device setup class > Removable devices**
 
@@ -222,7 +219,7 @@ In Microsoft Endpoint Manager [https://endpoint.microsoft.com/](https://endpoint
     :::image type="content" source="../../media/devicepolicy-devicemgr.png" alt-text="device control":::
 
     > [!NOTE]
-    > Some device in the system have several layers of connectivity to define their installation on the system. USB thumb-drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic Device IDs that are commonly used in systems and could provide a good start to build an ‘Allow list’ in such cases. See below for the list:
+    > Some devices in the system have several layers of connectivity to define their installation on the system. USB thumb drives are such devices. Thus, when looking to either block or allow them on a system, it's important to understand the path of connectivity for each device. There are several generic device IDs that are commonly used in systems and could provide a good start to build an "Allow list" in such cases. The following is one example (it is not always the same for all USBs; you need to understand the PnP tree of the device you want to manage through the Device Manager):
     >
     > PCI\CC_0C03; PCI\CC_0C0330; PCI\VEN_8086; PNP0CA1; PNP0CA1&HOST (for Host Controllers)/ USB\ROOT_HUB30; USB\ROOT_HUB20 (for USB Root Hubs)/ USB\USB20_HUB (for Generic USB Hubs)/ 
     >

@@ -7,8 +7,7 @@ ms.reviewer: kshi
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid:
@@ -45,7 +44,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
+- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -65,7 +64,7 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
 To keep you protected, Safe Documents sends files to the [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
+Files sent by Safe Documents are not retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
 
 ## Use the Microsoft 365 Defender portal to configure Safe Documents
 

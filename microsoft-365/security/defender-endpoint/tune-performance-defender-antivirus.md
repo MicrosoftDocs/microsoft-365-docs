@@ -2,15 +2,13 @@
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
 keywords: tune, performance, microsoft defender for endpoint, defender antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
-localization_priority: Normal
+ms.author: dansimp
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance

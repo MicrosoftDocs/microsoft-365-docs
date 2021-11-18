@@ -16,7 +16,7 @@ metadata:
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   manager: scotv
   ms.date: 02/27/2020 #Required; mm/dd/yyyy format.
-  localization_priority: Normal
+  ms.localizationpriority: medium
   search.appverid: MET150
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new

@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
@@ -17,6 +17,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
@@ -46,7 +47,7 @@ The basic elements of an outbound spam policy in EOP are:
 - **The outbound spam filter policy**: Specifies the actions for outbound spam filtering verdicts and the notification options.
 - **The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.
 
-The difference between these two elements isn't obvious when you manage outbound spam polices in the Microsoft 365 Defender portal:
+The difference between these two elements isn't obvious when you manage outbound spam polices in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
 - When you create a policy, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
 - When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the outbound spam filter rule. All other settings modify the associated outbound spam filter policy.
@@ -64,7 +65,7 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-spam settings** page, use <https://security.microsoft.com/antispam>.
+- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To go directly to the **Anti-spam settings** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -87,7 +88,7 @@ To increase the effectiveness of outbound spam filtering, you can create custom 
 
 Creating a custom outbound spam policy in the Microsoft 365 Defender portal creates the spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create policy** and then select **Outbound** from the drop down list.
 
@@ -173,7 +174,7 @@ Creating a custom outbound spam policy in the Microsoft 365 Defender portal crea
 
 ## Use the Microsoft 365 Defender portal to view outbound spam policies
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, look for one of the following values:
    - The **Type** value is **Custom outbound spam policy**
@@ -248,7 +249,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
 When you use the Microsoft 365 Defender portal to remove a custom outbound spam policy, the spam filter rule and the corresponding spam filter policy are both deleted. You can't remove the default outbound spam policy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, select a policy with the **Type value** of **Custom outbound spam policy** from the list by clicking on the name. At the top of the policy details flyout that appears, click ![More actions icon.](../../media/m365-cc-sc-more-actions-icon.png) **More actions** \> ![Delete policy icon](../../media/m365-cc-sc-delete-icon.png) **Delete policy**.
 

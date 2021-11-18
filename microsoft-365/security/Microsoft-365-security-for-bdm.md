@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:

@@ -2,14 +2,13 @@
 title: Onboarding using Microsoft Endpoint Manager
 description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Manager
 keywords: onboarding, configuration, deploy, deployment, endpoint manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint manager
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -75,9 +74,7 @@ For more information about Microsoft Endpoint Manager, check out these resources
 In this section, we will create a test group to assign your configurations on.
 
 > [!NOTE]
-> Intune uses Azure Active Directory (Azure AD) groups to manage devices and
-users. As an Intune admin, you can set up groups to suit your organizational
-needs.
+> Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
 >
 > For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
@@ -125,8 +122,7 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the MEM portal.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click
-    on **Create Profile**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Profile**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal4.](images/58dcd48811147feb4ddc17212b7fe840.png)
@@ -180,17 +176,14 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft
-    Defender Antivirus > Create**.
+3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft Defender Antivirus > Create**.
 
 4. Enter name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal13.](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. In the **Configuration settings page**: Set the configurations you require for
-    Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time
-    Protection, and Remediation).
+5. In the **Configuration settings page**: Set the configurations you require for Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time Protection, and Remediation).
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal14.](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
@@ -360,14 +353,12 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. After the configuration has been applied, the Defender for Endpoint
-    Protection Service should be started.
+2. After the configuration has been applied, the Defender for Endpoint Protection Service should be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. After the services are running on the device, the device appears in Microsoft
-    Defender Security Center.
+3. After the services are running on the device, the device appears in Microsoft Defender Security Center.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Microsoft Defender Security Center.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)

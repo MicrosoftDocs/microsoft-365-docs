@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Learn how to set up and use a connector in the Microsoft 365 compliance center to import and archive data from Skype for Business to Microsoft 365."
 ---

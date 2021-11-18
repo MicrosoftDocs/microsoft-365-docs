@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -60,7 +60,7 @@ You can use sensitivity labels to:
 
 - **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
-- **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, currently in preview, you can apply your sensitivity labels to assets such as SQL columns, files in Azure Blob Storage, and more. 
+- **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, you can apply your sensitivity labels to files and schematized data assets in Azure Purview. The schematized data assets include SQL, Azure SQL, Azure Synapse, Azure Cosoms, and AWS RDS.
 
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
@@ -113,7 +113,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     ![Prompt to assign a required label.](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) for Office apps, and [Automatically label your data in Azure Purview](/azure/purview/create-sensitivity-label).
+    For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) for Office apps, and [Labeling in Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### Label scopes
 
@@ -121,7 +121,7 @@ When you create a sensitivity label, you're asked to configure the label's scope
 - Which label settings you can configure for that label
 - Where the label will be visible to users
 
-This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. New, and currently in preview, you can also select the scope for Azure Purview assets:
+This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. You can also select the scope for Azure Purview assets:
 
 ![Scope options for sensitivity labels.](../media/sensitivity-labels-scopes.png)
 
@@ -129,7 +129,7 @@ By default, the **Files & emails** scope is always selected. The other scopes ar
 
 - **Groups & sites**: [Enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Azure Purview assets (preview)**: [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label)
+- **Schematized data assets**: [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label)
 
 If you change the defaults so not all scopes are selected, you see the first page of the configuration settings for scopes you haven't selected, but you can't configure the settings. For example, if the scope for files and emails is not selected, you can't select the options on the next page:
 
@@ -232,11 +232,13 @@ If you're not seeing the label or label policy setting behavior that you expect 
 
 ## Sensitivity labels and Azure Information Protection
 
-When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the Azure Information Protection client.
+When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the [Azure Information Protection client](/azure/information-protection/rms-client/aip-clientv2).
 
-By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. For more information, including how to change this default behavior, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+Because built-in labels don't use an Office add-in, as used by the Azure Information Protection client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
 
-Even when you use built-in labeling in Office apps, you can also use the Azure Information Protection unified labeling client with sensitivity labels for the following:
+By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. To change this default behavior and use built-in labels for your Office apps, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
+
+When you keep the Azure Information Protection client installed but disabled in Office apps, you get the benefit of using the Azure Information Protection client with sensitivity labels for the following:
 
 - A scanner to discover sensitive information that's stored on-premises, and then optionally, label that content
 
@@ -246,7 +248,7 @@ Even when you use built-in labeling in Office apps, you can also use the Azure I
 
 - A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
 
-If you are new to Azure Information Protection, or if you are an existing Azure Information Protection customer who has recently migrated your labels, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
+If you are new to Azure Information Protection, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
 
 ### Azure Information Protection labels
 

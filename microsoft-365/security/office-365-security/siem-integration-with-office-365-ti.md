@@ -7,7 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-localization_priority: None
+ms.localizationpriority: null
 search.appverid: 
   - MET150
   - MOE150

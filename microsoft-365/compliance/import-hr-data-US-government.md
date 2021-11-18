@@ -9,10 +9,11 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Administrators in the US Government cloud can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
@@ -68,7 +69,7 @@ After you create the CSV file with the required HR data, store it on the same sy
 
 The next step is to create an HR connector in the Microsoft 365 compliance center. After you run the script in Step 4, the HR connector that you create will ingest the HR data from the CSV file to your Microsoft 365 organization. In this step, be sure to copy the job ID that's generated when you create the connector. You'll use the job ID when you run the script.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors** page</a>.
 
 2. On the **Data connectors** page under **HR**, click **View**.
 
@@ -154,7 +155,7 @@ The last step in setting up an HR connector is to run a sample script that will 
 
 After you create the HR connector and run the script to upload your HR data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. Click the **Connectors** tab and then select the HR connector to display the flyout page. This page contains the properties and information about the connector.
 
