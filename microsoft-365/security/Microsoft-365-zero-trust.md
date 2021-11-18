@@ -35,6 +35,8 @@ This illustration provides a representation of the primary elements that contrib
 
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="Zero Trust security architecture" lightbox="../media/folder/.png":::
 
+
+
 In the illustration:
 - Security policy enforcement is at the center of a Zero Trust architecture. This includes multi-factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
 - Identities, devices, data, apps, network, and other infrastructure components are all configured with appropriate security. Policies that are configured for each of these components are coordinated with your overall Zero Trust strategy. For example, device policies determine the criteria for healthy devices and conditional access policies require healthy devices for access to specific apps and data.
@@ -64,7 +66,8 @@ In this illustration:
 The first step is to build your Zero Trust foundation by configuring identity and device access protection. 
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection]" lightbox="../media/folder/.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="Configure Zero Trust identity and device access protection" lightbox="../media/folder/.png":::
+
 
 
 Go to [Zero Trust identity and device access protection](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
