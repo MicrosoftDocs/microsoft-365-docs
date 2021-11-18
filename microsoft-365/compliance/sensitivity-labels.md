@@ -60,7 +60,7 @@ You can use sensitivity labels to:
 
 - **Extend sensitivity labels to Power BI**: When you turn on this capability, you can apply and view labels in Power BI, and protect data when it's saved outside the service.
 
-- **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, you can apply your sensitivity labels to files and schematized data assets in Azure Purview. The schematized data assets includes SQL, Azure SQL, Azure Synapse, Azure Cosoms, and AWS RDS.
+- **Extend sensitivity labels to assets in Azure Purview**: When you turn on this capability, you can apply your sensitivity labels to files and schematized data assets in Azure Purview. The schematized data assets include SQL, Azure SQL, Azure Synapse, Azure Cosoms, and AWS RDS.
 
 - **Extend sensitivity labels to third-party apps and services.** Using the Microsoft Information Protection SDK, third-party apps can read sensitivity labels and apply protection settings.
 
