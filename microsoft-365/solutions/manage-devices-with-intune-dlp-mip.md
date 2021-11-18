@@ -1,5 +1,5 @@
 ---
-title: "Step 7. Implement data loss protection with information protection capabilities"
+title: "Step 7. Implement data loss prevention (DLP) with information protection capabilities"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,5 +16,5 @@ keywords:
 description: 
 ---
 
-# Step 7. Implement data loss protection with information protection capabilities
+# Step 7. Implement data loss prevention (DLP) with information protection capabilities
 

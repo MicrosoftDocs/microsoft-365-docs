@@ -43,7 +43,7 @@ Protecting the data and apps on devices and the devices themselves is a multi-la
 
 The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device administers will coordinate with other administrators to accomplish. 
 
-![What is information protection for data privacy regulations.](../media/devices/m365-zero-trust-deployment-stack-devices.png#lightbox)
+![Microsoft 365 Zero Trust deployment stack](../media/devices/m365-zero-trust-deployment-stack-devices.png#lightbox)
 
 In this illustration: 
 
