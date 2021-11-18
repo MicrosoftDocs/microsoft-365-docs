@@ -10,6 +10,7 @@ ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
+ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
@@ -39,6 +40,8 @@ Sections:
 
 Easily and quickly start trying Microsoft’s compliance solutions without changing your organizations meta data. ​Depending on your priorities, you can start with any of these solution areas to see immediate value; however, we have highlighted some of the top concerns communicated by our customers and solutions to start addressing those.
 
+:::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Compliance actions with Microsoft 365":::
+
 ## Advanced Audit
 
 **Conduct investigations**
@@ -46,6 +49,9 @@ Easily and quickly start trying Microsoft’s compliance solutions without chang
 Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
 ### Step 1: Apply the E5 license to each user for which you’d like to generate E5 events​
+
+> [!TIP]
+> Trial best practice: Day 1
 
 Advanced Audit features such as the ability to log crucial events such as MailItemsAccessed and Send require an appropriate E5 license assigned to users. Additionally, the Advanced Auditing app/service plan must be enabled for those users.
 
@@ -56,6 +62,9 @@ Set up Advanced Audit for users - to verify that the Advanced Auditing app is as
 1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) and other activities when conducting forensic investigations​
 
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.​
 
@@ -72,8 +81,14 @@ Communication compliance helps you intelligently identify communication violatio
 
 ### Step 1: Enable permissions for communication compliance​
 
+> [!TIP]
+> Trial best practice: Day 1
+
 [Assign all compliance users to the Communication Compliance role group](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).​
 ### Step 2: Enable the audit log​
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 To use this feature, turn on auditing so we can start recording user and admin activity in your org. When you turn this on, activity will be recorded to the audit log and available to view in a report. ​To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
@@ -93,6 +108,9 @@ Compliance Manager can help you throughout your compliance journey, from taking 
 
 ### Step 1: Get to know Compliance Manager
 
+> [!TIP]
+> Trial best practice: Day 1
+
 Our Compliance Manager overview page is the best first stop for a comprehensive review of what Compliance Manager is and how it works. You may also want to jump right to key sections of our documentation using the links below:​
 
 - [Understand your compliance score​](compliance-manager.md#understanding-your-compliance-score)
@@ -104,6 +122,9 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 - [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager​](compliance-manager-mcca.md)
 
 ### Step 2: Configure Compliance Manager to manage your compliance activities
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 Start working with assessments and taking improvement actions to implement controls and improve your compliance score.
 
@@ -133,6 +154,9 @@ To comply with business standards and industry regulations, organizations need t
 
 ### Step 1: Protect data loss on Teams locations
 
+> [!TIP]
+> Trial best practice: Day 1
+
 If your organization has data loss prevention (DLP), you can define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session.
 
 1. Learn about [DLP Licensing for Microsoft Teams and the scope of DLP protection​](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
@@ -140,6 +164,9 @@ If your organization has data loss prevention (DLP), you can define policies tha
 1. [Configure our default DLP policy for Teams](mip-easy-trials.md) or [Define a new DLP policy for Microsoft Teams​](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
 
 ### Step 2: Protect data loss on device locations​
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
 
@@ -172,12 +199,18 @@ Take advantage of an end-to-end workflow for preserving, collecting, analyzing, 
 
 ### Step 1 (required): Permissions​
 
+> [!TIP]
+> Trial best practice: Day 1
+
 To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions.
 
 1. [Set up Advanced eDiscovery – Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions)
 1. [Add or remove members from a case](add-or-remove-members-from-a-case-in-advanced-ediscovery.md)
 
 ### Step 2 (required): Create a Case
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 More organizations use the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
@@ -218,6 +251,9 @@ Implement Microsoft Information Protection and sensitivity labels, to help you d
 
 ### Step 1: Start your information protection trial
 
+> [!TIP]
+> Trial best practice: Day 1
+
 Eligible customers can activate default labels and policies for Microsoft Information Protection. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
 
 Choosing the default configuration, with 1-click, the following is automatically configured: ​
@@ -230,6 +266,9 @@ Choosing the default configuration, with 1-click, the following is automatically
 [Activate the default labels and policies](mip-easy-trials.md#activate-the-default-labels-and-policies). ​If necessary, you can edit manually after the configuration is complete.
 
 ### Step 2: Automatically apply sensitivity labels to documents
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
@@ -257,6 +296,9 @@ Leverage artificial intelligence to help you quickly identify, triage, and remed
 
 ### Step 1: Enable permissions for insider risk management​
 
+> [!TIP]
+> Trial best practice: Day 1
+
 There are four role groups used to configure permissions to manage insider risk management features. ​
 
 [Add users to an insider risk management role group.​](insider-risk-management-configure.md#add-users-to-an-insider-risk-management-role-group)
@@ -264,6 +306,9 @@ There are four role groups used to configure permissions to manage insider risk 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
 ### Step 2: Start with user quick start guide
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 Quickly get started and get the most out of insider risk management capabilities with recommended actions. Included on the Overview page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
 
@@ -291,6 +336,9 @@ Use integrated Records Management features to automate the retention schedule fo
 
 ### Step 1: Dynamically target retention policies with Adaptive Policy Scopes
 
+> [!TIP]
+> Trial best practice: Day 1
+
 Adaptive policy scopes allow you to dynamically target a policy to certain users, groups, or sites based on their AD attributes. ​
 
 Attributes for scopes can be selected from a list or customized using an advanced query builder.​
@@ -300,6 +348,9 @@ Policies using adaptive policy scopes stay current as the organization changes w
 - Create an [Adaptive Policy Scope](retention.md#adaptive-or-static-policy-scopes-for-retention), and use it with a retention policy
 
 ### Step 2: Automate labeling of sensitive information with the ability to review before disposal​
+
+> [!TIP]
+> Trial best practice: Inspect within the first 30 days
 
 Retention labels can be set up to apply automatically to content when it detects sensitive information, such as a credit card number. This removes the need for users to manually perform the labeling activity.​
 
