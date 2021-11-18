@@ -148,6 +148,8 @@
        href: preset-security-policies.md
      - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
+     - name: Security recommendations for priority accounts
+       href: security-recommendations-for-priority-accounts.md
      - name: Attack simulation training in Defender for Office 365
        items:
        - name: Get started using Attack simulation training
