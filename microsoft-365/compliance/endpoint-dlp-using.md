@@ -57,6 +57,9 @@ These Windows versions support advanced classification scanning and protection:
 - Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
+> Support for advanced classification is available for Office (Word, Excel, PowerPoint) and PDF file types.
+
+> [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### Endpoint DLP Windows 10 and macOS settings
