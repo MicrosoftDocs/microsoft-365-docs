@@ -35,8 +35,8 @@ But if a hold is applied to the mailbox prior to deleting the Microsoft 365 acco
 Inactive mailboxes are useful when your organization needs to retain mailbox content of former employees for regulatory or other reasons. While any type of hold listed in this document will force a mailbox to be made inactive when a user object is deleted, we recommend doing this by applying a Microsoft 365 retention policy or retention labels, [confirm the hold is applied](#confirming-a-hold-is-applied-to-a-mailbox), and then remove the corresponding Microsoft 365 account. At that point, the contents of the inactive mailbox are retained for the duration of the retention period specified before the user account was deleted. You can still recover the corresponding user account for a 30-day period, however after 30 days, the mailbox is retained in Microsoft 365 as an inactive mailbox until the retention policy or retention labels are removed.
 
 > [!IMPORTANT]
-> As we mentioned above, we recommend you use Microsoft 365 retention to create an inactive mailbox:
-> - We previously announced the retirement of In-Place Holds in the Exchange admin center. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> As we mentioned previously, we recommend you use Microsoft 365 retention to create an inactive mailbox:
+> - In-Place Holds in the Exchange admin center are now retired. As of July 1, 2020, new In-Place Holds were unable to be created in Exchange Online. As of October 1, 2020, the hold duration of in-place holds could no longer be changed. Any inactive mailbox that has an In-Place Hold applied can only be deleted by removing the In-Place Hold. Existing inactive mailboxes that are on In-Place Hold will continue to be preserved until the hold is removed. For more information about In-Place Holds retirement, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
 > 
 > - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
@@ -44,7 +44,9 @@ When there are multiple holds on the same content, the [principle of retention a
 
 ### Confirming a hold is applied to a mailbox
 
-Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery hold, Litigation hold, or In-Place Hold, you can confirm the result is a hold on a mailbox by using PowerShell. Do not delete the user account until you have done this confirmation, to ensure that the mailbox will be made inactive.
+Whether you apply a Microsoft 365 retention policy, retention labels, eDiscovery hold, Litigation hold, or have an existing In-Place Hold, you can confirm the hold is successfully applied to the mailbox by using PowerShell. 
+
+To prevent accidental or unintentional deletion, we recommend you confirm the hold before you delete the user account. If the hold isn't yet applied, the mailbox won't be converted into an inactive mailbox.
 
 For instructions, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
 
