@@ -18,3 +18,4 @@ description:
 
 # Step 4. Require healthy and compliant devices with Intune
 
+![Steps for managing devices](../media/devices/intune-mdm-step-3.png#lightbox)

@@ -18,3 +18,5 @@ description:
 
 # Step 2. Enroll devices into management with Intune
 
+
+![Steps for managing devices](../media/devices/intune-mdm-step-2.png#lightbox)

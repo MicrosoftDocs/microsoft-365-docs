@@ -18,3 +18,4 @@ description:
 
 # Step 5. Connect Defender for Endpoint to Intune
 
+![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)
