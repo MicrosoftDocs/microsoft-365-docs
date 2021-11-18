@@ -1,7 +1,5 @@
 ---
 title: "Support contacts by country - regions view"
-f1.keywords:
-- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -29,23 +27,23 @@ Admins, have your account details ready when you call.
 
 :::row:::
    :::column:::
-[Canada](#canada)\
-[United States](#united-states)\
+[Australia](#australia)\
 [Brazil](#brazil)\
-[United Kingdom](#united-kingdom)\
+[Canada](#canada)\
+[China](#china)\
+[France](#france)
+   :::column-end:::
+   :::column:::
+[Germany](#germany)\
+[Italy](#italy)
+[Japan](#japan)
 [Netherlands](#netherlands)
    :::column-end:::
    :::column:::
-[France](#france)\
-[Germany](#germany)\
-[Spain](#spain)\
-[Italy](#italy)
-   :::column-end:::
-   :::column:::
-[Australia](#australia)\
 [Russia](#russia)\
-[China](#china)\
-[Japan](#japan)
+[Spain](#spain)\
+[United Kingdom](#united-kingdom)\
+[United States](#united-states)
    :::column-end:::
 :::row-end:::
 
@@ -59,92 +57,379 @@ Jump to section:
 
 ## Northern America
 
+:::row:::
+   :::column:::
+[Bermuda](#bermuda)\
+[Canada](#canada)
+   :::column-end:::
+   :::column:::
+[Greenland](#greenland)\
+[Mexico](#mexico)
+   :::column-end:::
+   :::column:::
+[Saint Pierre and Miquelon](#saint-pierre-and-miquelon)\
+[United States](#united-states)
+   :::column-end:::
+:::row-end:::
+
+### Saint Pierre and Miquelon  
+
+:::row:::
+   :::column:::
+**Phone number:**
+
++1 312 843 5147
+
+**Billing support hours:**
+
+French: Mon-Fri 6 AM-2 PM\
+English: Mon-Fri 6 AM-2 PM
+   :::column-end:::
+   :::column:::
+**Technical support hours:**
+
+French: Mon-Fri 5 AM-6 PM\
+English: 24 hours a day, 7 days a week\
+International call charges apply
+   :::column-end:::
+:::row-end:::
 
 ## Central America
 
+:::row:::
+   :::column:::
+[Belize](#belize)\
+[Costa Rica](#costa-rica)\
+[El Salvador](#el-salvador)
+   :::column-end:::
+   :::column:::
+[Guatemala](#guatemala)\
+[Honduras](#honduras)
+   :::column-end:::
+   :::column:::
+[Nicaragua](#nicaragua)\
+[Panama](#panama)
+   :::column-end:::
+:::row-end:::
+
 ## Caribbean
+
+:::row:::
+   :::column:::
+[Anguilla](#anguilla)\
+[Antigua and Barbuda](#antigua-and-barbuda)\
+[Aruba](#aruba)\
+[Bahamas](#bahamas)\
+[Barbados](#barbados)\
+[Bonaire](#bonaire)\
+[British Virgin Islands](#british-virgin-islands)\
+[Cayman Islands](#cayman-islands)
+[Curaçao](#curacao)\
+[Dominica](#dominica)
+   :::column-end:::
+   :::column:::
+[Dominican Republic](#dominican-republic)\
+[Grenada](#grenada)\
+[Guadeloupe](#guadeloupe)\
+[Haiti](#haiti)\
+[Jamaica](#jamaica)\
+[Martinique](#martinique)\
+[Montserrat](#montserrat)\
+[Puerto Rico](#puerto-rico)\
+[Saba](#saba)\
+[Saint Barthélemy](#saint-barthelemy)
+   :::column-end:::
+   :::column:::
+[Saint Kitts and Nevis](#st-kitts-nevis)\
+[Saint Lucia](#saint-lucia)\
+[Saint Martin](#saint-martin)\
+[Saint Vincent and the Grenadines](#saint-vincent-and-the-grenadines)\
+[Sint Eustatius](#sint-eustatius)\
+[Sint Maarten](#sint-maarten)\
+[Trinidad and Tobago](#trinidad-and-tobago)\
+[Turks and Caicos Islands](#turks-and-caicos-islands)\
+[U.S. Virgin Islands](#virgin-islands)
+   :::column-end:::
+:::row-end:::
+
+### Dominican Republic  
+
+:::row:::
+   :::column:::
+**Phone number:**
+
+1 800 751 3455\
+Select option 4\
+Enter code 7007
+   :::column-end:::
+   :::column:::
+**Billing support hours:**
+
+Spanish: Mon-Fri 9 AM-5 PM\
+Spanish: 24 hours a day, 7 days a week\
+Alternative Phone Number: 1 809 200 8794\
+(Cellular toll-free)
+   :::column-end:::
+:::row-end:::
 
 ## South America
 
+:::row:::
+   :::column:::
+[Argentina](#argentina)\
+[Bolivia](#bolivia)\
+[Brazil](#brazil)\
+[Chile](#chile)\
+[Colombia](#colombia)
+   :::column-end:::
+   :::column:::
+[Ecuador](#ecuador)\
+[Falkland Islands](#falkland-islands)\
+[French Guiana](#french-guiana)\
+[Guyana](#guyana)\
+[Paraguay](#paraguay)
+   :::column-end:::
+   :::column:::
+[Peru](#peru)\
+[South Georgia and South Sandwich Islands](#south-georgia-and-south-sandwich-islands)\
+[Suriname](#suriname)\
+[Uruguay](#uruguay)\
+[Venezuela](#venezuela)
+   :::column-end:::
+:::row-end:::
+
 ## Europe
 
+:::row:::
+   :::column:::
+[Aland Islands](#aland-islands)\
+[Albania](#albania)\
+[Andorra](#andorra)\
+[Armenia](#armenia)\
+[Austria](#austria)\
+[Azerbaijan](#azerbaijan)\
+[Belarus](#belarus)\
+[Belgium](#belgium)\
+[Bosnia and Herzegovina](#bosnia-and-herzegovina)\
+[Bulgaria](#bulgaria)\
+[Croatia](#croatia)\
+[Cyprus](#cyprus)\
+[Czechia](#czechia)\
+[Denmark](#denmark)\
+[Estonia](#estonia)\
+[Faroe Islands](#faroe-islands)\
+[Finland](#finland)\
+[France](#france)\
+[Georgia](#georgia)\
+[Germany](#germany)
+   :::column-end:::
+   :::column:::
+[Gibraltar](#gibraltar)\
+[Greece](#greece)
+[Guernsey](#guernsey)\
+[Hungary](#hungary)\
+[Iceland](#iceland)\
+[Ireland](#ireland)\
+[Isle of Man](#isle-of-man)\
+[Italy](#italy)\
+[Jan Mayen](#jan-mayen)\
+[Jersey](#jersey)\
+[Kosovo](#kosovo)\
+[Latvia](#latvia)\
+[Liechtenstein](#liechtenstein)\
+[Lithuania](#lithuania)\
+[Luxembourg](#luxembourg)
+[Malta](#malta)\
+[Moldova](#moldova)\
+[Monaco](#monaco)\
+[Montenegro](#montenegro)
+   :::column-end:::
+   :::column:::
+[Netherlands](#netherlands)\
+[Macedonia](#macedonia)\
+[Norway](#norway)
+[Poland](#poland)\
+[Portugal](#portugal)\
+[Romania](#romania)\
+[Russia](#russia)\
+[San Marino](#san-marino)\
+[Serbia](#serbia)\
+[Slovakia](#slovakia)\
+[Slovenia](#slovenia)\
+[Spain](#spain)\
+[Svalbard](#svalbard)\
+[Sweden](#sweden)\
+[Switzerland](#switzerland)\
+[Turkey](#turkey)\
+[Ukraine](#ukraine)\
+[United Kingdom](#united-kingdom)\
+[Vatican City](#vatican-city)
+   :::column-end:::
+:::row-end:::
+
+### Belgium  
+
+:::row:::
+   :::column:::
+**Phone number:**
+
+0800 81174
+
+**Billing support hours:**
+
+Dutch: Mon-Fri 9 AM-5 PM\
+French: Mon-Fri 9 AM-5 PM\
+English: Mon-Fri 9 AM-5 PM
+   :::column-end:::
+   :::column:::
+**Technical support hours:**
+
+French: Mon-Fri 8 AM-9 PM\
+English: 24 hours a day, 7 days a week\
+Alternative Phone Number: 02 200 88 84\
+Local call charges apply
+   :::column-end:::
+:::row-end:::
 ## Africa
 
+:::row:::
+   :::column:::
+[Algeria](#algeria)\
+[Angola](#angola)\
+[Ascension](#ascension)\
+[Benin](#benin)\
+[Botswana](#botswana)\
+[Bouvet Island](#bouvet-island)\
+[Burkina Faso](#burkina-faso)\
+[Burundi](#burundi)\
+[Cabo Verde](#cabo-verde)\
+[Cameroon](#cameroon)\
+[Central African Republic](#central-african-republic)\
+[Chad](#chad)\
+[Comoros](#comoros)\
+[Congo](#congo)\
+[Congo DRC](#congo-drc)\
+[Cote Divoire](#cote-divoire)\
+[Djibouti](#djibouti)\
+[Egypt](#egypt)\
+[Equatorial Guinea](#equatorial-guinea)\
+[Eritrea](#eritrea)
+   :::column-end:::
+   :::column:::
+[Ethiopia](#ethiopia)\
+[French Southern Territories](#french-southern-territories)\
+[Gabon](#gabon)\
+[Gambia](#gambia)\
+[Ghana](#ghana)\
+[Guinea](#guinea)\
+[Guinea Bissau](#guinea-bissau)\
+[Kenya](#kenya)\
+[Lesotho](#lesotho)\
+[Liberia](#liberia)\
+[Libya](#libya)\
+[Madagascar](#madagascar)\
+[Malawi](#malawi)\
+[Mali](#mali)\
+[Mauritania](#mauritania)\
+[Mauritius](#mauritius)\
+[Mayotte](#mayotte)\
+[Morocco](#morocco)\
+[Mozambique](#mozambique)
+   :::column-end:::
+   :::column:::
+[Namibia](#namibia)\
+[Niger](#niger)\
+[Nigeria](#nigeria)\
+[Reunion](#reunion)\
+[Rwanda](#rwanda)
+[Sao Tome and Principe](#sao-tome-and-principe)\
+[Senegal](#senegal)\
+[Seychelles](#seychelles)\
+[Sierra Leone](#sierra-leone)\
+[Somalia](#somalia)\
+[South Africa](#south-africa)
+[South Sudan](#south-sudan)\
+[St Helena](#st-helena)\
+[Swaziland](#swaziland)\
+[Tristan Da Cunha](#tristan-da-cunha)\
+[Tanzania](#tanzania)\
+[Togo](#togo)\
+[Tunisia](#tunisia)\
+[Uganda](#uganda)\
+[Zambia](#zambia)\
+[Zimbabwe](#zimbabwe)
+   :::column-end:::
+:::row-end:::
+
+### Central African Republic  
+
+:::row:::
+   :::column:::
+**Phone number:**
+
++1 312 843 5147
+
+**Billing support hours:**
+
+French: Mon-Fri 9 AM-5 PM\
+English: Mon-Fri 9 AM-5 PM
+   :::column-end:::
+   :::column:::
+**Technical support hours:**
+
+French: Mon-Fri 8 AM-9 PM\
+English: 24 hours a day, 7 days a week\
+International call charges apply
+   :::column-end:::
+:::row-end:::
+
+### Libya  
+
+:::row:::
+   :::column:::
+**Phone number:**
+
++965 2243 1071\
+Select option 2\
+Select option 9\
+Enter code 7701
+
+**Billing support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM\
+English: Mon-Fri 9 AM-5 PM
+   :::column-end:::
+   :::column:::
+**Technical support hours:**
+
+Arabic: Sun-Thu 9 AM-5 PM\
+English: 24 hours a day, 7 days a week\
+International call charges apply
+   :::column-end:::
+:::row-end:::
+
 ## Middle East
-
-## Asia
-
-## Pacific
-
-## Antarctica
-
-## A - D
 
 :::row:::
    :::column:::
 [Afghanistan](#afghanistan)\
-[Aland Islands](#aland-islands)\
-[Albania](#albania)\
-[Algeria](#algeria)\
-[American Samoa](#american-samoa)\
-[Andorra](#andorra)\
-[Angola](#angola)\
-[Anguilla](#anguilla)\
-[Antigua and Barbuda](#antigua-and-barbuda)\
-[Argentina](#argentina)\
-[Armenia](#armenia)\
-[Aruba](#aruba)\
-[Ascension](#ascension)\
-[Austria](#austria)\
-[Azerbaijan](#azerbaijan)\
-[Bahamas](#bahamas)\
 [Bahrain](#bahrain)\
-[Bangladesh](#bangladesh)\
-[Barbados](#barbados)\
-[Belarus](#belarus)
+[Iraq](#iraq)\
+[Israel](#israel)\
+[Jordan](#jordan)\
    :::column-end:::
    :::column:::
-[Belgium](#belgium)\
-[Belize](#belize)\
-[Benin](#benin)\
-[Bermuda](#bermuda)\
-[Bhutan](#bhutan)\
-[Bolivia](#bolivia)\
-[Bonaire](#bonaire)\
-[Bosnia and Herzegovina](#bosnia-and-herzegovina)\
-[Botswana](#botswana)\
-[Bouvet Island](#bouvet-island)\
-[British Virgin Islands](#british-virgin-islands)\
-[Brunei](#brunei)\
-[Bulgaria](#bulgaria)\
-[Burkina Faso](#burkina-faso)\
-[Burundi](#burundi)\
-[Cambodia](#cambodia)\
-[Cameroon](#cameroon)\
-[Cape Verde](#cape-verde)\
-[Cayman Islands](#cayman-islands)
+[Kuwait](#kuwait)\
+[Lebanon](#lebanon)\
+[Oman](#oman)\
+[Pakistan](#pakistan)\
+[Palestinian Authority](#palestinian-authority)
    :::column-end:::
    :::column:::
-[Central African Republic](#central-african-republic)\
-[Chad](#chad)\
-[Chile](#chile)\
-[Christmas Island](#christmas-island)\
-[Cocos Keeling Islands](#cocos-keeling-islands)\
-[Colombia](#colombia)\
-[Comoros](#comoros)\
-[Congo](#congo)\
-[Congo DRC](#congo-drc)\
-[Cook Islands](#cook-islands)\
-[Costa Rica](#costa-rica)\
-[Cote Divoire](#cote-divoire)\
-[Croatia](#croatia)\
-[Curacao](#curacao)\
-[Cyprus](#cyprus)\
-[Czech Republic](#czech-republic)\
-[Denmark](#denmark)\
-[Djibouti](#djibouti)\
-[Dominica](#dominica)\
-[Dominican Republic](#dominican-republic)
+[Qatar](#qatar)\
+[Saudi Arabia](#saudi-arabia)\
+[United Arab Emirates](#united-arab-emirates)\
+[Yemen](#yemen)
    :::column-end:::
 :::row-end:::
 
@@ -166,6 +451,85 @@ English: Mon-Fri 10 AM-6 PM
 
 English: 24 hours a day, 7 days a week\
 International call charges apply
+   :::column-end:::
+:::row-end:::
+
+## Asia
+
+:::row:::
+   :::column:::
+[Bangladesh](#bangladesh)\
+[Bhutan](#bhutan)\
+[Brunei](#brunei)\
+[Cambodia](#cambodia)\
+[China](#china)\
+[Christmas Island](#christmas-island)\
+[Cocos Keeling Islands](#cocos-keeling-islands)\
+[Hong Kong SAR](#hong-kong-sar)\
+[India](#india)\
+[Indonesia](#indonesia)\
+[Kazakhstan](#kazakhstan)
+   :::column-end:::
+   :::column:::
+[Japan](#japan)\
+[Korea](#korea)\
+[Kyrgyzstan](#kyrgyzstan)\
+[Laos](#laos)\
+[Macau SAR](#macau-sar)\
+[Malaysia](#malaysia)\
+[Maldives](#maldives)\
+[Mongolia](#mongolia)\
+[Myanmar](#myanmar)\
+[Nepal](#nepal)\
+[Philippines](#philippines)
+   :::column-end:::
+   :::column:::
+[Vanuatu](#vanuatu)\
+[Singapore](#singapore)\
+[Sri Lanka](#sri-lanka)\
+[Taiwan](#taiwan)\
+[Tajikistan](#tajikistan)\
+[Thailand](#thailand)\
+[Timor Leste](#timor-leste)\
+[Turkmenistan](#turkmenistan)\
+[Uzbekistan](#uzbekistan)\
+[Vietnam](#vietnam)
+   :::column-end:::
+:::row-end:::
+
+## Pacific
+
+:::row:::
+   :::column:::
+[Australia](#australia)\
+[American Samoa](#american-samoa)\
+[Cook Islands](#cook-islands)\
+[Fiji](#fiji)\
+[French Polynesia](#french-polynesia)\
+[Guam](#guam)\
+[Heard Island and Mcdonald Islands](#heard-island-and-mcdonald-islands)\
+[Kiribati](#kiribati)\
+[Marshall Islands](#marshall-islands)
+   :::column-end:::
+   :::column:::
+[Micronesia](#micronesia)\
+[Nauru](#nauru)\
+[New Caledonia](#new-caledonia)\
+[New Zealand](#new-zealand)\
+[Niue](#niue)\
+[Norfolk Island](#norfolk-island)\
+[Northern Mariana Islands](#northern-mariana-islands)\
+[Palau](#palau)
+   :::column-end:::
+   :::column:::
+[Papua New Guinea](#papua-new-guinea)\
+[Pitcairn Islands](#pitcairn-islands)\
+[Samoa](#samoa)\
+[Solomon Islands](#solomon-islands)\
+[Tokelau](#tokelau)\
+[Tonga](#tonga)\
+[Tuvalu](#tuvalu)\
+[Wallis and Futuna](#wallis-and-futuna)
    :::column-end:::
 :::row-end:::
 
@@ -209,30 +573,6 @@ International call charges apply
 
 ### Belarus  
 
-### Belgium  
-
-:::row:::
-   :::column:::
-**Phone number:**
-
-0800 81174
-
-**Billing support hours:**
-
-Dutch: Mon-Fri 9 AM-5 PM\
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
-   :::column-end:::
-   :::column:::
-**Technical support hours:**
-
-French: Mon-Fri 8 AM-9 PM\
-English: 24 hours a day, 7 days a week\
-Alternative Phone Number: 02 200 88 84\
-Local call charges apply
-   :::column-end:::
-:::row-end:::
-
 ### Belize
 
 ### Benin  
@@ -269,31 +609,9 @@ Local call charges apply
 
 ### Canada  
 
-### Cape Verde  
+### Cabo Verde  
 
 ### Cayman Islands  
-
-### Central African Republic  
-
-:::row:::
-   :::column:::
-**Phone number:**
-
-+1 312 843 5147
-
-**Billing support hours:**
-
-French: Mon-Fri 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
-   :::column-end:::
-   :::column:::
-**Technical support hours:**
-
-French: Mon-Fri 8 AM-9 PM\
-English: 24 hours a day, 7 days a week\
-International call charges apply
-   :::column-end:::
-:::row-end:::
 
 ### Chad  
 
@@ -325,105 +643,13 @@ International call charges apply
 
 ### Cyprus  
 
-### Czech Republic  
+### Czechia  
 
 ### Denmark  
 
 ### Djibouti  
 
 ### Dominica  
-
-### Dominican Republic  
-
-:::row:::
-   :::column:::
-**Phone number:**
-
-1 800 751 3455\
-Select option 4\
-Enter code 7007
-   :::column-end:::
-   :::column:::
-**Billing support hours:**
-
-Spanish: Mon-Fri 9 AM-5 PM\
-Spanish: 24 hours a day, 7 days a week\
-Alternative Phone Number: 1 809 200 8794\
-(Cellular toll-free)
-   :::column-end:::
-:::row-end:::
-
-## E - L
-
-:::row:::
-   :::column:::
-[Ecuador](#ecuador)\
-[Egypt](#egypt)\
-[El Salvador](#el-salvador)\
-[Equatorial Guinea](#equatorial-guinea)\
-[Eritrea](#eritrea)\
-[Estonia](#estonia)\
-[Ethiopia](#ethiopia)\
-[Falkland Islands](#falkland-islands)\
-[Faroe Islands](#faroe-islands)\
-[Fiji](#fiji)\
-[Finland](#finland)\
-[French Guiana](#french-guiana)\
-[French Polynesia](#french-polynesia)\
-[French Southern Territories](#french-southern-territories)\
-[Gabon](#gabon)\
-[Gambia](#gambia)\
-[Georgia](#georgia)\
-[Ghana](#ghana)\
-[Gibraltar](#gibraltar)\
-[Greece](#greece)
-   :::column-end:::
-   :::column:::
-[Greenland](#greenland)\
-[Grenada](#grenada)\
-[Guadeloupe](#guadeloupe)\
-[Guam](#guam)\
-[Guatemala](#guatemala)\
-[Guernsey](#guernsey)\
-[Guinea](#guinea)\
-[Guinea Bissau](#guinea-bissau)\
-[Guyana](#guyana)\
-[Haiti](#haiti)\
-[Heard Island and Mcdonald Islands](#heard-island-and-mcdonald-islands)\
-[Honduras](#honduras)\
-[Hong Kong SAR](#hong-kong-sar)\
-[Hungary](#hungary)\
-[Iceland](#iceland)\
-[India](#india)\
-[Indonesia](#indonesia)\
-[Iraq](#iraq)\
-[Ireland](#ireland)\
-[Isle of Man](#isle-of-man)\
-[Israel](#israel)\
-   :::column-end:::
-   :::column:::
-[Jamaica](#jamaica)\
-[Jan Mayen](#jan-mayen)\
-[Jersey](#jersey)\
-[Jordan](#jordan)\
-[Kazakhstan](#kazakhstan)\
-[Kenya](#kenya)\
-[Kiribati](#kiribati)\
-[Korea](#korea)\
-[Kosovo](#kosovo)\
-[Kuwait](#kuwait)\
-[Kyrgyzstan](#kyrgyzstan)\
-[Laos](#laos)\
-[Latvia](#latvia)\
-[Lebanon](#lebanon)\
-[Lesotho](#lesotho)\
-[Liberia](#liberia)\
-[Libya](#libya)\
-[Liechtenstein](#liechtenstein)\
-[Lithuania](#lithuania)\
-[Luxembourg](#luxembourg)
-   :::column-end:::
-:::row-end:::
 
 ### Ecuador  
 
@@ -547,99 +773,11 @@ Alternative Phone Number: 1 809 200 8794\
 
 ### Liberia  
 
-### Libya  
-
-:::row:::
-   :::column:::
-**Phone number:**
-
-+965 2243 1071\
-Select option 2\
-Select option 9\
-Enter code 7701
-
-**Billing support hours:**
-
-Arabic: Sun-Thu 9 AM-5 PM\
-English: Mon-Fri 9 AM-5 PM
-   :::column-end:::
-   :::column:::
-**Technical support hours:**
-
-Arabic: Sun-Thu 9 AM-5 PM\
-English: 24 hours a day, 7 days a week\
-International call charges apply
-   :::column-end:::
-:::row-end:::
-
 ### Liechtenstein  
 
 ### Lithuania  
 
 ### Luxembourg  
-
-## M - R
-
-:::row:::
-   :::column:::
-[Macau SAR](#macau-sar)\
-[Macedonia](#macedonia)\
-[Madagascar](#madagascar)\
-[Malawi](#malawi)\
-[Malaysia](#malaysia)\
-[Maldives](#maldives)\
-[Mali](#mali)\
-[Malta](#malta)\
-[Marshall Islands](#marshall-islands)\
-[Martinique](#martinique)\
-[Mauritania](#mauritania)\
-[Mauritius](#mauritius)\
-[Mayotte](#mayotte)\
-[Mexico](#mexico)\
-[Micronesia](#micronesia)\
-[Moldova](#moldova)\
-[Monaco](#monaco)\
-[Mongolia](#mongolia)
-   :::column-end:::
-   :::column:::
-[Montenegro](#montenegro)\
-[Montserrat](#montserrat)\
-[Morocco](#morocco)\
-[Mozambique](#mozambique)\
-[Myanmar](#myanmar)\
-[Namibia](#namibia)\
-[Nauru](#nauru)\
-[Nepal](#nepal)\
-[New Caledonia](#new-caledonia)\
-[New Zealand](#new-zealand)\
-[Nicaragua](#nicaragua)\
-[Niger](#niger)\
-[Nigeria](#nigeria)\
-[Niue](#niue)\
-[Norfolk Island](#norfolk-island)\
-[Northern Mariana Islands](#northern-mariana-islands)\
-[Norway](#norway)
-   :::column-end:::
-   :::column:::
-[Oman](#oman)\
-[Pakistan](#pakistan)\
-[Palau](#palau)\
-[Palestinian Authority](#palestinian-authority)\
-[Panama](#panama)\
-[Papua New Guinea](#papua-new-guinea)\
-[Paraguay](#paraguay)\
-[Peru](#peru)\
-[Philippines](#philippines)\
-[Pitcairn Islands](#pitcairn-islands)\
-[Poland](#poland)\
-[Portugal](#portugal)\
-[Puerto Rico](#puerto-rico)\
-[Qatar](#qatar)\
-[Reunion](#reunion)\
-[Romania](#romania)\
-[Rwanda](#rwanda)
-   :::column-end:::
-:::row-end:::
 
 ### Macau SAR  
 
@@ -749,78 +887,6 @@ International call charges apply
 
 ### Rwanda  
 
-## S - Z
-
-:::row:::
-   :::column:::
-[Saba](#saba)\
-[Saint Barthelemy](#saint-barthelemy)\
-[Saint Lucia](#saint-lucia)\
-[Saint Martin](#saint-martin)\
-[Saint Pierre and Miquelon](#saint-pierre-and-miquelon)\
-[Saint Vincent and the Grenadines](#saint-vincent-and-the-grenadines)\
-[Samoa](#samoa)\
-[San Marino](#san-marino)\
-[Sao Tome and Principe](#sao-tome-and-principe)\
-[Saudi Arabia](#saudi-arabia)\
-[Senegal](#senegal)\
-[Serbia](#serbia)\
-[Seychelles](#seychelles)\
-[Sierra Leone](#sierra-leone)\
-[Singapore](#singapore)\
-[Sint Eustatius](#sint-eustatius)\
-[Sint Maarten](#sint-maarten)\
-[Slovakia](#slovakia)\
-[Slovenia](#slovenia)\
-[Solomon Islands](#solomon-islands)\
-[Somalia](#somalia)\
-[South Africa](#south-africa)
-   :::column-end:::
-   :::column:::
-[South Georgia and South Sandwich Islands](#south-georgia-and-south-sandwich-islands)\
-[South Sudan](#south-sudan)\
-[Sri Lanka](#sri-lanka)\
-[St Helena](#st-helena)\
-[St Kitts Nevis](#st-kitts-nevis)\
-[Suriname](#suriname)\
-[Svalbard](#svalbard)\
-[Swaziland](#swaziland)\
-[Sweden](#sweden)\
-[Switzerland](#switzerland)\
-[Taiwan](#taiwan)\
-[Tajikistan](#tajikistan)\
-[Tanzania](#tanzania)\
-[Thailand](#thailand)\
-[Timor Leste](#timor-leste)\
-[Togo](#togo)\
-[Tokelau](#tokelau)\
-[Tonga](#tonga)\
-[Trinidad and Tobago](#trinidad-and-tobago)\
-[Tristan Da Cunha](#tristan-da-cunha)
-   :::column-end:::
-   :::column:::
-[Tunisia](#tunisia)\
-[Turkey](#turkey)\
-[Turkmenistan](#turkmenistan)\
-[Turks and Caicos Islands](#turks-and-caicos-islands)\
-[Tuvalu](#tuvalu)\
-[Uganda](#uganda)\
-[Ukraine](#ukraine)\
-[United Arab Emirates](#united-arab-emirates)\
-[Uruguay](#uruguay)\
-[Uzbekistan](#uzbekistan)\
-[Vanuatu](#vanuatu)\
-[Vatican City](#vatican-city)\
-[Venezuela](#venezuela)\
-[Vietnam](#vietnam)\
-[Virgin Islands](#virgin-islands)\
-[Wallis and Futuna](#wallis-and-futuna)\
-[Yemen](#yemen)\
-[Zambia](#zambia)\
-[Zimbabwe](#zimbabwe)
-   :::column-end:::
-:::row-end:::
-
 ### Saba  
 
 ### Saint Barthelemy  
@@ -828,28 +894,6 @@ International call charges apply
 ### Saint Lucia  
 
 ### Saint Martin  
-
-### Saint Pierre and Miquelon  
-
-:::row:::
-   :::column:::
-**Phone number:**
-
-+1 312 843 5147
-
-**Billing support hours:**
-
-French: Mon-Fri 6 AM-2 PM\
-English: Mon-Fri 6 AM-2 PM
-   :::column-end:::
-   :::column:::
-**Technical support hours:**
-
-French: Mon-Fri 5 AM-6 PM\
-English: 24 hours a day, 7 days a week\
-International call charges apply
-   :::column-end:::
-:::row-end:::
 
 ### Saint Vincent and the Grenadines  
 
@@ -895,7 +939,7 @@ International call charges apply
 
 ### St Helena  
 
-### St Kitts Nevis  
+### Saint Kitts and Nevis  
 
 ### Suriname  
 
@@ -959,7 +1003,7 @@ International call charges apply
 
 ### Vietnam  
 
-### Virgin Islands  
+### U.S. Virgin Islands  
 
 ### Wallis and Futuna  
 
@@ -967,5 +1011,4 @@ International call charges apply
 
 ### Zambia  
 
-### Zimbabwe  
----
+### Zimbabwe
