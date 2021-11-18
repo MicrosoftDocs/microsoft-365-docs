@@ -25,11 +25,12 @@ The Contract Management site includes pre-populated pages, web parts, and site n
 
 ## Provision the Contracts Management site
 
-The Contracts Management site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/). You must be a global administrator or SharePoint administrator to provision the site.
+The Contracts Management site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
 
-![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
+> [!NOTE]
+> You must be a global administrator or SharePoint administrator to provision the site.
 
-1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex**, and then select **Contracts Management site**.
+1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **Contracts Management site**.
 
 2. On the **Contracts Management site** page, select **Add to your tenant**.
 
