@@ -1,5 +1,5 @@
 ---
-title: "Step 2. Register devices with Azure AD"
+title: "Step 4. Require healthy and compliant devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,5 +16,5 @@ keywords:
 description: 
 ---
 
-# Step 2. Register devices with Azure AD
+# Step 4. Require healthy and compliant devices with Intune
 
