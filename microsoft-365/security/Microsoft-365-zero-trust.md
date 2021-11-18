@@ -61,6 +61,8 @@ The first step is to build your Zero Trust foundation by configuring identity an
 
 ![Configure Zero Trust identity and device access protection](../media/zero-trust/m365-zero-trust-architecture-step-1.png)
 
+![Configure Zero Trust identity and device access protection](../media/zero-trust/m365-zero-trust-architecture-step-1b.png)
+
 Go to [Zero Trust identity and device access protection](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
 
