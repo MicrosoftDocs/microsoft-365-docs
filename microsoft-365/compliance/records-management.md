@@ -75,7 +75,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Action| Retention label |Record - locked| Record - unlocked| Regulatory record |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
-|Edit properties, including rename|Allowed |Allowed | Allowed  <sup>2</sup>| **Blocked**|
+|Edit properties, including rename|Allowed |Allowed <sup>1</sup> | Allowed | **Blocked**|
 |Delete|Allowed <sup>2</sup> |**Blocked** |**Blocked**| **Blocked**|
 |Copy|Allowed |Allowed | Allowed| Allowed|
 |Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
