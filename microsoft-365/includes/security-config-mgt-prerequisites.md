@@ -26,10 +26,10 @@ When a device onboards to Microsoft Defender for Endpoint:
 
 When a device that is domain joined creates a trust with Azure Active Directory, this scenario is referred to as a *Hybrid Azure Active Directory Join* scenario. The Security Management for Microsoft Defender for Endpoint fully supports this scenario with the following requirements:
 
-- Azure Active Directory Connect (AAD Connect) must be synchronized to the tenant that is used from Microsoft Defender for Endpoint.
-- Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync).
-- AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join).
-- AAD Connect rules for sync must be modified for Server 2012 R2 (when support for Server 2012 R2 is needed). For more information see [Instructions for applying Computer Join rule in AAD Connect](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect).
+- Azure Active Directory Connect (AAD Connect) must be synchronized to the tenant that is used from Microsoft Defender for Endpoint
+- Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync)
+- AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join)
+- AAD Connect rules for sync must be modified for Server 2012 R2 (when support for Server 2012 R2 is needed)
 
 ### Connectivity Requirements
 
