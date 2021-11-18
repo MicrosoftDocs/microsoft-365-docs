@@ -63,7 +63,7 @@ This next table lists the example policies illustrated above that you can create
 
 For end-to-end instructions for setting up Conditional Access App Control, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). This article walks you through the process of creating the necessary conditional access policy in Azure AD and testing your SaaS apps.
 
-For more information, see [Protect apps with Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad).
+For more information, see [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad).
 
 ## Tune protection for specific SaaS apps
 
