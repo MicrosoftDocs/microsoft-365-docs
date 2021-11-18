@@ -183,7 +183,6 @@ Once you have formed your record, you need to update the record at your domain r
 In this example DMARC TXT record: `dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"`, you can see the *rua* address, in this case, processed by third-party company Agari. This address is used to send 'aggregate feedback' for analysis, and which is used to generate a report.
 
 > [!TIP]
-
 > Visit the [MISA catalog](https://www.microsoft.com/misapartnercatalog) to view more third-party vendors offering DMARC reporting for Microsoft 365. See [IETF.org's 'Domain-based Message Authentication, Reporting, and Conformance (DMARC)'](https://datatracker.ietf.org/doc/html/rfc7489) for more information on DMARC 'rua' addresses.
 
 
