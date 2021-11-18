@@ -45,13 +45,13 @@ The user who creates the DLP policy should be a:
 - Compliance administrator: assign in Azure AD
 - Compliance data administrator: assign in Azure AD
 
-### Prepare your Cloud App Security environment
+### Prepare your Defender for Cloud Apps environment
 
-DLP policies to non-Microsoft cloud apps use Cloud App Security DLP capabilities. To use it, you should prepare your Cloud App Security environment. For instructions, see [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+DLP policies to non-Microsoft cloud apps use Defender for Cloud Apps DLP capabilities. To use it, you should prepare your Defender for Cloud Apps environment. For instructions, see [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### Connect a non-Microsoft cloud app
 
-To use DLP policy to a specific non-Microsoft cloud app, the app must be connected to Cloud App Security. For information, see:
+To use DLP policy to a specific non-Microsoft cloud app, the app must be connected to Defender for Cloud Apps. For information, see:
 
 - [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
 - [Connect Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
@@ -59,17 +59,17 @@ To use DLP policy to a specific non-Microsoft cloud app, the app must be connect
 - [Connect Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
 - [Connect Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-After you connect your cloud apps to Cloud App Security, you can create Microsoft 365 DLP policies for them.
+After you connect your cloud apps to Defender for Cloud Apps, you can create Microsoft 365 DLP policies for them.
 
 > [!NOTE]
-> It's also possible to use Microsoft Cloud App Security to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft 365 to create and manage DLP policies to Microsoft cloud apps.
+> It's also possible to use Microsoft Defender for Cloud Apps to create DLP policies to Microsoft cloud apps. However, it's recommended to use Microsoft 365 to create and manage DLP policies to Microsoft cloud apps.
 
 ## Create a DLP policy to a non-Microsoft cloud app
 
-When you select a location for the DLP policy, turn on the **Microsoft Cloud App Security** location.
+When you select a location for the DLP policy, turn on the **Microsoft Defender for Cloud Apps** location.
 
 - To select a specific app or instance, select **Choose instance**.
-- If you don't select an instance, the policy uses all connected apps in your Microsoft Cloud App Security tenant.
+- If you don't select an instance, the policy uses all connected apps in your Microsoft Defender for Cloud Apps tenant.
 
    ![Locations to apply the policy.](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 
@@ -84,7 +84,7 @@ When you create a rule in the DLP policy, you can select an action for non-Micro
 ![Restrict third-party apps.](../media/4-dlp-non-microsoft-cloud-app-restrict-third-party-apps.png)
 
 > [!NOTE]
-> DLP policies applied to non-Microsoft apps use Microsoft Cloud App Security. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Cloud App Security.
+> DLP policies applied to non-Microsoft apps use Microsoft Defender for Cloud Apps. When the DLP policy for a non-Microsoft app is created, the same policy will be automatically created in Microsoft Defender for Cloud Apps.
 
 For information about creating and configuring DLP policies, see [Create test and tune a DLP policy](./create-test-tune-dlp-policy.md).
 

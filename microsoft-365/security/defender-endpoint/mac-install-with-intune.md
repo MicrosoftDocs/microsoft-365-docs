@@ -99,7 +99,7 @@ This profile contains a license information for Microsoft Defender for Endpoint,
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile creation.](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Choose a name for the profile, e.g., "Defender or Endpoint onboarding for macOS". Click **Next**.
+1. Choose a name for the profile, e.g., "Defender for Cloud or Endpoint onboarding for macOS". Click **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile - name.](images/mdatp-6-systemconfigurationprofiles-2.png)
