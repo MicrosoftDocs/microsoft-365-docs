@@ -2,7 +2,6 @@
 title: Endpoint detection and response in block mode
 description: Learn about endpoint detection and response in block mode
 keywords: Microsoft Defender for Endpoint, mde, EDR in block mode, passive mode blocking
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
 ms.author: deniseb
@@ -15,6 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
+  - admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.collection:
   - m365-security-compliance
@@ -68,7 +68,7 @@ The following image shows an instance of unwanted software that was detected and
 3. Scroll down, and then turn on **Enable EDR in block mode**.
 
 > [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
+> EDR in block mode can be turned on only in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
 
@@ -108,7 +108,7 @@ Cloud protection is needed to turn on the feature on the device. Cloud protectio
 
 ### What is the difference between active and passive mode?
 
-For endpoints running Windows 10, Windows Server, version 1803 or later, Windows Server 2019, or Windows Server 2022 when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
+For endpoints running Windows 10, Windows 11, Windows Server, version 1803 or later, Windows Server 2019, or Windows Server 2022 when Microsoft Defender Antivirus is in active mode, it is used as the primary antivirus on the device. When running in passive mode, Microsoft Defender Antivirus is not the primary antivirus product. In this case, threats are not remediated by Microsoft Defender Antivirus in real time.
 
 > [!NOTE]
 > Microsoft Defender Antivirus can run in passive mode only when the device is onboarded to Microsoft Defender for Endpoint.
@@ -149,6 +149,7 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 - Windows Server 2019 
 - Windows Server 2016
 - Windows Server 2012 R2
+- Windows 11
 
 >[!NOTE]
 >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
