@@ -110,5 +110,5 @@ When consecutive actions are applied to a device, you’ll receive an action pen
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Threat management page overview](m365-lighthouse-threat-management-page-overview.md) (article)\
-[Create a compliance policy in Microsoft Intune](mem/intune/protect/create-compliance-policy) (article)\
+[Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
 [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)
