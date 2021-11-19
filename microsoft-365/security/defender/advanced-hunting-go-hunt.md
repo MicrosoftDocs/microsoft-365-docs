@@ -33,7 +33,7 @@ ms.technology: m365d
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
+The *go hunt* action is available in various sections of the Defender for Cloud whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 

@@ -78,7 +78,7 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 
 ## Microsoft Defender for Endpoint tenant was automatically created in Europe
 
-When you use Azure Defender to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
+When you use Microsoft Defender for Cloud to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
 
 ## Related topics
 
