@@ -36,7 +36,7 @@ What IT architects need to know about designing identity for organizations using
   
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [View as a PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf)  <br/>Updated September 2020 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Azure AD IDaaS capabilities </li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Azure AD </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
+|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](../downloads/MSFT_cloud_architecture_identity.pdf) <br/> [View as a PDF](../downloads/MSFT_cloud_architecture_identity.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity.pdf)  <br/>Updated September 2020 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Azure AD IDaaS capabilities </li><li>Zero Trust identity and device access policies</li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Azure AD </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### Microsoft cloud security for IT architects
@@ -45,7 +45,7 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>Updated October 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
+|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf)  \| <br/>Updated November 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
    
 <a name="networking"></a>
 ### Microsoft cloud networking for IT architects

@@ -15,6 +15,7 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Get started with insider risk management
@@ -30,15 +31,9 @@ For more information about how insider risk policies can help you manage risk in
 
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use insider risk management, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft 365 E5 subscription (paid or trial version)
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
-- Microsoft 365 A5 subscription (paid or trial version)
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
-- Microsoft 365 G5 subscription (paid or trial version)
-- Microsoft 365 G3 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 G3 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Microsoft 365 E5/A5/G5 subscription (paid or trial version)
+- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
+- Microsoft 365 E3/A3/G3 subscription + the Microsoft 365 E5/A5/G5 Insider Risk Management add-on
 - Office 365 E3 subscription + Enterprise Mobility and Security E3 + the Microsoft 365 E5 Compliance add-on
 
 Users included in insider risk management policies must be assigned one of the licenses above.
@@ -207,7 +202,7 @@ See the [Set up a connector to import physical badging data](import-physical-bad
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. To have better visibility of security violations in your organization, you can import and filter Defender for Endpoint alerts for activities used in policies created from insider risk management security violation policy templates.
 
-If you create security violation policies, you'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information about requirements, see the [Minimum requirements for Microsoft Defender for Endpoints](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) article.
+If you create security violation policies, you'll need to have Microsoft Defender for Endpoint configured in your organization and enable Defender for Endpoint for insider risk management integration in the Defender Security Center to import security violation alerts. For more information about requirements, see the [Minimum requirements for Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements) article.
 
 See the [Configure advanced features in Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center) article for step-by-step guidance to configure Defender for Endpoint for insider risk management integration. After you've configured the Microsoft Defender for Endpoint, return to these configuration steps.
 

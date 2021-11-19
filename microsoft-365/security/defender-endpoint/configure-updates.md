@@ -2,8 +2,6 @@
 title: Create a custom gradual rollout process for Microsoft Defender updates
 description: Learn how to use supported tools to create a custom gradual rollout process for updates
 keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -96,4 +94,4 @@ Example:
 
 Use `Set-MpPreference -PlatformUpdatesChannel Beta` to configure platform updates to arrive from the Beta Channel.
 
-For more information on the parameters and how to configure them, see [Set-MpPreference (Defender)|Microsoft Docs](/powershell/module/defender/set-mppreference).
+For more information on the parameters and how to configure them, see [Set-MpPreference (Microsoft Defender Antivirus)|Microsoft Docs](/powershell/module/defender/set-mppreference).
