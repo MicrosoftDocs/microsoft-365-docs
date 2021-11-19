@@ -60,7 +60,7 @@ Advanced Audit features such as the ability to log crucial events such as MailIt
 
 Set up Advanced Audit for users - to verify that the Advanced Auditing app is assigned to users, [perform the following steps for each user](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users).​
 
-1. Enable Advanced Audit events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell.md).​
+1. Enable Advanced Audit events - [enable SearchQueryInitiatedExchange and SearchQueryInitiatedSharePoint](set-up-advanced-audit.md#step-2-enable-advanced-audit-events) to be audited for each user in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).​
 1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization's security operations, IT, and compliance teams. ​
 1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) and other activities when conducting forensic investigations​
 
