@@ -178,7 +178,7 @@ If your organization has data loss prevention (DLP), you can define policies tha
 1. [Add Microsoft Teams as a location to existing DLP policies​](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
 1. [Configure our default DLP policy for Teams](mip-easy-trials.md) or [Define a new DLP policy for Microsoft Teams​](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
 
-### Step 2: [Protect data loss on device locations​](endpoint-dlp-getting-started.md#prepare-your-endpoints)
+### Step 2: [Protect data loss on device locations​](endpoint-dlp-getting-started.md)
 
 > [!TIP]
 > Trial best practice: Setup within the first 30 days
@@ -266,7 +266,7 @@ Use the Content search tool in the Microsoft 365 compliance center to quickly fi
 
 Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
 
-### Step 1: [Start your information protection trial](compliance/mip-easy-trials.md)
+### Step 1: [Start your information protection trial](mip-easy-trials.md)
 
 > [!TIP]
 > Trial best practice: Day 1
