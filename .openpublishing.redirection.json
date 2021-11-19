@@ -5568,7 +5568,7 @@
     {
       "source_path": "microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview.md",
       "redirect_url": "microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/security/mtp/configure-microsoft-threat-experts.md",
