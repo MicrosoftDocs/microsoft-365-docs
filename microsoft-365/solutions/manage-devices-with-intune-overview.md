@@ -72,7 +72,9 @@ In this illustration:
 - In Step 1, [Implement Level 2 App Protection Policies (APP)](manage-devices-with-intune-app-protection.md) you configure the recommended level of data protection with APP policies. Then you work with your identity team to configure the related Conditional Access rule to require use of this protection.
 - In Steps 2, 3 and 4, you enroll devices into management with Intune/MEM, define device compliance policies, and then coordinate with your identity team to configure the related Conditional Access rule to only allow access to compliant devices. 
 
+<!---
 ## Managing change with users
+--->
 
 ## Learning for administrators
 The following resources help administrators learn concepts about using MEM and Intune.
