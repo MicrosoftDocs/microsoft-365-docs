@@ -372,11 +372,13 @@ Alternative Phone Number: 1 809 200 8794\
 
 ### Andorra
 
-### Armenia
+> [!NOTE]
+> See [Armenia](#armenia) entry below.
 
 ### Austria
 
-### Azerbaijan
+> [!NOTE]
+> See [Azerbaijan](#azerbaijan) entry above.
 
 ### Belgium
 
@@ -408,7 +410,9 @@ Local call charges apply
 
 ### Croatia
 
-### Cyprus
+
+> [!NOTE]
+> See [Cyprus](#cyprus) entry below.
 
 ### Czechia
 
@@ -422,7 +426,9 @@ Local call charges apply
 
 ### France
 
-### Georgia
+
+> [!NOTE]
+> See [Georgia](#georgia) entry below.
 
 ### Germany
 
@@ -476,7 +482,8 @@ Local call charges apply
 
 ### Romania
 
-### Russia
+> [!NOTE]
+> See [Russia](#russia) entry below.
 
 ### San Marino
 
@@ -735,7 +742,7 @@ International call charges apply
    :::column:::
 [Afghanistan](#afghanistan)\
 [Bahrain](#bahrain)\
-[Egypt](#egypt)\
+[Egypt](#egypt)
 [Iraq](#iraq)\
 [Israel](#israel)\
 [Jordan](#jordan)
@@ -756,26 +763,41 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
-### Afghanistan  
+> [!NOTE]
+> See [Afghanistan](#afghanistan) entry below.
 
-:::row:::
-   :::column:::
-**Phone number:**
+### Bahrain
 
-+92 21 111 674 357\
-Select option 3
+> [!NOTE]
+> See [Egypt](#egypt) entry above.
 
-**Billing support hours:**
+### Iraq
 
-English: Mon-Fri 10 AM-6 PM
-   :::column-end:::
-   :::column:::
-**Technical support hours:**
+### Israel
 
-English: 24 hours a day, 7 days a week\
-International call charges apply
-   :::column-end:::
-:::row-end:::
+### Jordan
+
+### Kuwait
+
+### Lebanon
+
+### Oman
+
+> [!NOTE]
+> See [Pakistan](#pakistan) entry below.
+
+### Palestinian Authority
+
+### Qatar
+
+### Saudi Arabia
+
+> [!NOTE]
+> See [Turkey](#turkey) entry below.
+
+### United Arab Emirates
+
+### Yemen
 
 ## Asia
 
@@ -827,6 +849,25 @@ International call charges apply
 :::row-end:::
 
 ### Afghanistan
+
+:::row:::
+   :::column:::
+**Phone number:**
+
++92 21 111 674 357\
+Select option 3
+
+**Billing support hours:**
+
+English: Mon-Fri 10 AM-6 PM
+   :::column-end:::
+   :::column:::
+**Technical support hours:**
+
+English: 24 hours a day, 7 days a week\
+International call charges apply
+   :::column-end:::
+:::row-end:::
 
 ### Armenia
 
