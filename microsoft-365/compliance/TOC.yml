@@ -609,7 +609,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
       items: 
-        - name: Overview of inactive mailboxes
+        - name: Learn about inactive mailboxes
           href: inactive-mailboxes-in-office-365.md
         - name: Create and manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
