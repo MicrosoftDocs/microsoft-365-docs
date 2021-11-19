@@ -33,7 +33,7 @@ The Tenants page also includes the following options:
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
 
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page.png" alt-text="Screenshot of the Tenant page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenant page.":::
 
 ## Tenant list
 
@@ -80,7 +80,7 @@ To help organize your tenants and easily filter the existing views, you can crea
 To view detailed tenant information, select a tenant from the tenant list. The tenant details page contains contact information and deployment plan status.
 
 
-:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-detail-page.png" alt-text="Screenshot of the Tenant detail page.":::
+:::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page.":::
 
 ### Overview tab
 
