@@ -39,7 +39,7 @@ In an illicit consent grant attack, the attacker creates an Azure-registered app
 These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
 
 > [!IMPORTANT]
-> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Cloud App Security (MCAS) has tools to detect, investigate, and remediate your OAuth apps. This MCAS article has a tutorial that outlines how to go about [investigating risky OAuth apps](/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
+> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Defender for Cloud Apps has tools to detect, investigate, and remediate your OAuth apps. This Defender for Cloud Apps article has a tutorial that outlines how to go about [investigating risky OAuth apps](/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
 
 ## What does an illicit consent grant attack look like in Microsoft 365?
 
