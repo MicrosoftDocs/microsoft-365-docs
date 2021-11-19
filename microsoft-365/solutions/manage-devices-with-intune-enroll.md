@@ -24,7 +24,7 @@ Whether a device is a personally-owned BYOD device or a corporate-owned and full
 
 The device enrollment process establishes a relationship between the user, the device, and the Microsoft Intune service. Using Microsoft Intune as a standalone service enables you to use a single web-based administration console to manage Windows PCs, MacOS, and the most popular mobile device platforms.
 
-This article recommends methods for enrolling devices into management using Intune.
+This article recommends methods for enrolling devices into management using Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview?view=o365-worldwide).
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
 
@@ -60,9 +60,9 @@ However, if your organization is proving Android devices, you might choose to us
 
 To learn more about Android enrollment as well as automated Android enrollment, see [Enroll Android devices](/mem/intune/enrollment/android-enroll).
 
-## MacOS enrollment
+## macOS enrollment
 
-MacOS enrollment can be a tricky subject for lots of IT organizations. Unless a majority of your users are Mac users than you may not be managing these types of devices to a great extent. If you have a small number of MacOS users, we recommend Intune Only Enrollment. If you have a large number of MacOS users, we recommend Intune + Jamf enrollment.  
+Enrollment for macOS can be a tricky subject for lots of IT organizations. Unless a majority of your users are Mac users than you may not be managing these types of devices to a great extent. If you have a small number of MacOS users, we recommend Intune Only Enrollment. If you have a large number of MacOS users, we recommend Intune + Jamf enrollment.  
 - Intune Only Enrollment — This is for basic management of MacOS devices. It will require a manual process much like most of the other user-based enrollment options. But if you have a small number of Mac devices this may be easier than setting up an entire automated infrastructure just for those few users. With Intune only enrollment you have the ability to deploy things such as certificates, password configurations, and applications. You can also configure compliance policies and enlighten Conditional Access as well as the ability to enforce encryption and device wipe. 
 - Intune and Jamf Enrollment — For those looking for the deepest support for Mac management, with Jamf + Intune for Conditional Access, we have a great solution that combines the extensive Mac management capabilities of Jamf with Intune compliance to enable Conditional Access. In this scenario you are still fully managing the device with Jamf while being able to take those signals from Jamf for increased security.
 
