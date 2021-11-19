@@ -81,11 +81,11 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Microsoft 365 Defender portal.":::
 
-2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
+2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Microsoft 365 Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Defender portal.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Microsoft 365 Defender portal.":::
 
    > [!TIP]
    > You can modify existing roles and add the necessary permissions versus creating additional roles in Microsoft Defender for Endpoint
@@ -181,4 +181,3 @@ After creating one or more Azure AD groups that contain devices managed by Micro
 9. Wait for the policy to be assigned and view a success indication that policy was applied.
 
 10. You can validate that settings are applied locally on the client by using the [Get-MpPreference](/powershell/module/defender/get-mppreference#examples) command utility.
-
