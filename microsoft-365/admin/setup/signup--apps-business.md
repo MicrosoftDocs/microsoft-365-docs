@@ -61,9 +61,9 @@ When signing up for Microsoft 365 Apps for Business, you have 2 options for how 
 
 The table below outlines each choice.
 
-||**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account|**Option 2** – Add a business domain and create a new business email account |
+||**Option 1** – Sign in with Outlook, Hotmail, Yahoo, Gmail or other email account|**Option 2** – Add a business domain |
 |:-----|:-----|:-----|
-|Available apps and services  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.  You’ll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: New, branded business email accounts with Outlook, shared calendars within your business, Bookings appointment scheduling and Meeting recordings Shared document storage and SharePoint sites Microsoft Planner and Microsoft Lists Microsoft 365 Business Standard and Apps for Business offer additional services with Option 2: Easier document sharing within your business Support for the compliance needs for your industry Access and control over your employees’ use of services The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office. <br/> |
+|Available apps and services  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. This set of apps is best for very small businesses who don't need branded email immediately, or who already use branded email from a different provider and do not intend to switch to use Microsoft Exchange.  You’ll use Outlook with your existing email account (be it outlook.com, Hotmail, Yahoo, Gmail or other).  <br/> |Use Word, Excel, PowerPoint, OneDrive, Teams, Access. Option 2 also lets you access a wide range of additional services: Bookings appointment scheduling and Meeting recordings. <br/> |
 |Required knowledge  <br/> |Let’s you get started without technical know-how.  <br/> |Requires you to buy a domain, or to own a domain.  You may need technical knowledge to prove ownership of the domain. <br/> |
 |Data handling  <br/> |Available under the Supplement to the [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180702) and is best for businesses that want some remote work and collaboration tools and are comfortable with Microsoft acting as controller for your data under the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839). Subscribers to services using this option will not have access to an individual’s user content or data until a domain is attached. Subscribers should evaluate data ownership and intellectual property rights considerations based on their needs. For example, if you are working collaboratively with other users on a document stored in their account, they may choose to make those documents inaccessible to you. As such, you should evaluate data ownership and intellectual property rights considerations accordingly.  Separately, users may choose not to transfer documents in their Simplified Sign-Up account to your Domain Account subscription, even after you invite them to do so. This means their documents may also not be accessible to you even if you add a domain account later  <br/> |Available under the [Microsoft Online Subscription Agreement](https://go.microsoft.com/fwlink/p/?linkid=2180430) and is best for businesses that need Microsoft to act as a processor for their data under Microsoft's [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) and need our full suite of remote work and collaboration tools. Subscribers who are in regulated industries or seek more control, both over the use of the services by your employees and over processing of related data by Microsoft, should choose Option 2 and attach a domain and sign up under the Domain Account enterprise-level agreement. <br/> |
 
@@ -81,20 +81,22 @@ This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Busin
 
 3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
 
-Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support.  Subscribers don't have any access or control over other users’ (employees) usage or documents under this option Users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
+Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support.  Subscribers don't have any access or control over other users’ (employees) usage or documents under this option. Users may choose not to transfer data created in storage such as OneDrive to your upgraded, enterprise-level domain account should you not choose **Option 2**.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
-You can add a business domain at any point to access the rest of the functionality of your Business Standard subscription, including:
+You can add a business domain at any point to access the rest of the functionality of your Apps for business subscription, including:
 
-- Branded email, shared calendars within your business, Bookings appointment scheduling and Meeting recordings
-- Shared document storage and SharePoint sites
-- Microsoft Planner and Microsoft Lists
-- The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office.
+- Bookings appointment scheduling and Meeting recordings
+- Shared document storage with OneDrive
 
 #### Next steps
 
 Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft 365 Apps for business subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
+
+### Option 2: Add a domain
+
+For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
 ## Terms of service update for Simplified Sign-Up mode
 

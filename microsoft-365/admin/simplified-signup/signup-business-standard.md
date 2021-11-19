@@ -87,30 +87,18 @@ Remember this option doesn't provide branded email, admin control for use of the
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
-You can add a business domain at any point to access the rest of the functionality of your Business Standard subscription, including:
-
-- Branded email, shared calendars within your business, Bookings appointment scheduling and Meeting recordings
-- Shared document storage and SharePoint sites
-- Microsoft Planner and Microsoft Lists
-- The widest range of integrations of non-Microsoft apps (e.g. Salesforce, Adobe) that work within Teams and Office.
-
-#### Next steps
-
-If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
-
-- [Add a domain to Microsoft 365](../setup/add-domain.md)
-- [Finish setting up](../setup/setup-business-standard.md#finish-setting-up)
-
-### Option 2: Create a new business email account
-
-> [!Note]
-> This guidance is specifically for signing up for Microsoft 365 Business Standard during purchase.
+### Option 2: Create a new business email account and attach a domain
 
 With this option, you’ll be able to use Microsoft 365 Exchange as your professional, branded email provider. All your users will have a shared domain email address. For example, their username, followed by @contoso.com. You and your users sign into Microsoft 365 with this new email address. When you follow this process (add a domain and create new business email accounts), you’ll get access to all the features provided in Microsoft 365 Business Standard. For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
 
 :::image type="content" source="../../media/ssu-create-biz-email.png" alt-text="Screenshot: Sign in with new business email.":::
 
 This option provides immediate access to the full suite of features in your Microsoft 365 Business subscription but may require technical steps to be completed up front.
+
+If you would like to add a domain and create a business email account, you can follow the steps in the articles below:
+
+- [Add a domain to Microsoft 365](../setup/add-domain.md)
+- [Finish setting up](../setup/setup-business-standard.md#finish-setting-up)
 
 ## Terms of service update for Simplified Sign-Up mode
 
