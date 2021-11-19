@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 f1.keywords:
 - NOCSH
-manager: 
+manager: dougeby
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
