@@ -36,7 +36,7 @@ Features:
 
 Premium add-ons:
 
-- [Compliance Manager Premium Assessment](#compliance-manager-premium-assessment)
+- [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
 - [Privacy Management](#privacy-management)
 
 ## Compliance Actions with Microsoft 365
@@ -397,17 +397,21 @@ Content pending a disposition review is permanently deleted only after a reviewe
 
 ## Additional trials and add-ons
 
-### Compliance Manager Premium Assessment
+### Compliance Manager premium assessments
 
 **Assess risks and efficiently respond**
 
 Help your organization assess risks and efficiently respond to nations, regional and industry requirements governing the collection and use of data.
+
+[More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
 ### Privacy Management
 
 **Identify & prevent​ privacy risks**
 
 Proactively identify and protect against privacy risks such as data hoarding, data transfers, and data oversharing and help your organization automate and manage subject requests at scale.​
+
+[Learn more about privacy management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
 
 ## Additional resources
 
