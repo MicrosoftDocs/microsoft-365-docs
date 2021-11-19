@@ -350,7 +350,7 @@ There are three procedures.
 
 2. Expand **Unallowed apps**.
 
-3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the the **Highly Confidential** label.
+3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the **Highly Confidential** label.
 
 4. Select **Auto-quarantine** and **Save**.
 
