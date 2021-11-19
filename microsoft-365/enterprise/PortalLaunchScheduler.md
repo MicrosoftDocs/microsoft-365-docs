@@ -143,7 +143,7 @@ If you are planning to launch a portal with over 100,000 users, submit a support
    - Portal URL
    - Number of users expected
    - Estimated launch schedule (detailing the wave sizes)
-   - Use the Page Diagnotics tool to "Export the HAR file" of the launch page and share the file with support
+   - Use the Page Diagnostics tool to "Export the HAR file" of the launch page and share the file with support
 
 ## Make changes to a scheduled portal launch
 
