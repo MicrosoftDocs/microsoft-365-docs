@@ -53,9 +53,6 @@ Defender for Endpoint Plan 1 includes the following capabilities:
 
 The following sections provide more details about these capabilities. 
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This guide includes links to online content that might describe or depict some features that are not included in Defender for Endpoint Plan 1.
-
 ## Next-generation protection
 
 Next-generation protection includes robust antivirus and antimalware protection. With next-generation protection, you get: 
