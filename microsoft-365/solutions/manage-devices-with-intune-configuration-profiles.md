@@ -67,6 +67,19 @@ When customizing configuration profiles for your organization, use the following
 - Utilize Group Policy Analytics to compare and map your current GPO settings to capabilities within Microsoft Endpoint Manager. See [Analyze your on-premises group policy objects (GPO) using Group Policy analytics](/mem/intune/configuration/group-policy-analytics) in Microsoft Endpoint Manager.
 - When utilizing custom configuration profiles, be sure to use the guidance here: [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
 
+## Additional resources
+
+If you're not sure where to start with device profiles, the following can help:
+
+- [Guided scenarios](/mem/intune/fundamentals/guided-scenarios-overview) 
+- [Security baselines](/mem/intune/protect/security-baselines)
+
+If your environment includes on-prem GPOs, the following features are a good transition to the cloud:
+
+- [Group Policy analytics](/mem/intune/configuration/group-policy-analytics)
+- [Admin templates (ADMX)](/mem/intune/configuration/administrative-templates-windows)
+- [Settings Catalog](/mem/intune/configuration/settings-catalog)
+
 
 ## Next steps
 Go to [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
