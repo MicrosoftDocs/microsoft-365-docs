@@ -73,7 +73,7 @@ This table lists the filter names that are available.
 | Multiple service sources  | Specify whether the filter is for more than one service source. |
 | Service sources  | Filter to only see incidents that contain alerts from: App Governance, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Tags | Select one or multiple tag names from the list. |
-| Multiple catgories  | Specify whether the filter is for more than one category. |
+| Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
 | OS platform | Limit the incident queue view by operating system. |
 | Classification | Filter incidents based on the set classifications of the related alerts. Select **True alert**, **False alerts**, or **Not set**. |
