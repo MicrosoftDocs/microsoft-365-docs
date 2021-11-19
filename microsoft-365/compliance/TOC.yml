@@ -26,6 +26,34 @@
       href: plan-for-security-and-compliance.md
     - name: Compliance extensibility
       href: compliance-extensibility.md
+- name: Cross-solution features
+  items:
+    - name: Onboard Windows 10 and Windows 11 devices
+      items:
+        - name: Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview
+          href: device-onboarding-overview.md
+        - name: Onboard Windows 10 and Windows 11 devices via Group Policy
+          href: device-onboarding-gp.md
+        - name: Onboard Windows 10 and Windows 11 devices using Mobile Device Management tools
+          href: device-onboarding-mdm.md
+        - name: Onboard Windows 10 Windows 11 devices using Configuration Manager
+          href: device-onboarding-sccm.md
+        - name: Onboard Windows 10 and Windows 11 devices using a local script
+          href: device-onboarding-script.md
+        - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+          href: device-onboarding-vdi.md
+    - name: Onboard macOS devices (preview)
+      items:
+        - name: Onboard macOS devices into Microsoft 365 overview (preview) 
+          href: device-onboarding-macos-overview.md
+        - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
+          href: device-onboarding-offboarding-macos-intune.md
+        - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
+          href: device-onboarding-offboarding-macos-intune-mde.md
+        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
+          href: device-onboarding-offboarding-macos-jamfpro.md
+        - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
+          href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: Manage insider risks
   items:
     - name: Microsoft 365 insider risk solutions
@@ -319,36 +347,12 @@
             href: dlp-on-premises-scanner-get-started.md
           - name: Get started with Endpoint data loss prevention
             href: endpoint-dlp-getting-started.md
-          - name: Configure device proxy and internet connection settings for Endpoint DLP
-            href: endpoint-dlp-configure-proxy.md
+          - name: Configure device proxy and internet connection settings for Information Protection
+            href: device-onboarding-configure-proxy.md
           - name: Get started with the Microsoft Compliance Extension
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
-          - name: Endpoint DLP Device Onboarding tools and methods
-            items:
-              - name: Onboarding tools and methods for Windows 10 devices   
-                href: dlp-configure-endpoints.md
-              - name: Onboard Windows 10 devices via Group Policy
-                href: dlp-configure-endpoints-gp.md
-              - name: Onboard Windows 10 devices using Mobile Device Management tools
-                href: dlp-configure-endpoints-mdm.md
-              - name: Onboard Windows 10 devices using Configuration Manager
-                href: dlp-configure-endpoints-sccm.md
-              - name: Onboard Windows 10 devices using a local script
-                href: dlp-configure-endpoints-script.md
-              - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-                href: dlp-configure-endpoints-vdi.md
-          - name: Onboard macOS devices into Microsoft 365 overview (preview)
-            href: device-onboarding-macos-overview.md
-          - name: Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune (preview)
-            href: device-onboarding-offboarding-macos-intune.md
-          - name: Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)
-            href: device-onboarding-offboarding-macos-intune-mde.md
-          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro (preview)
-            href: device-onboarding-offboarding-macos-jamfpro.md
-          - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
-            href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
@@ -605,7 +609,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
       items: 
-        - name: Overview of inactive mailboxes
+        - name: Learn about inactive mailboxes
           href: inactive-mailboxes-in-office-365.md
         - name: Create and manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
