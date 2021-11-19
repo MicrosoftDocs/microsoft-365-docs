@@ -260,6 +260,7 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
+#### [Microsoft Defender for IoT Integration](enable-microsoft-defender-for-iot-integration)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Network devices](network-devices.md)
