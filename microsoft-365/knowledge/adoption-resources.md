@@ -32,5 +32,5 @@ Use these downloadable resources and other information to spark ideas about how 
 |Name     |Description  |
 |---------|---------|
 |[Adoption blog](https://microsoft.sharepoint-df.com/teams/ODSPWeb/SitePages/Adoption-Guide-launch-and-Blog-Post--The-journey-to-Viva-Topics-adoption-success.aspx?from=SendByEmail&e=ih89ueos1UOLaPC40LqrRg&at=9) |Read about how organizations are using Viva Topics to drive a knowledge-centric culture, including learnings, insights, and best practices. |
-|[Viva Topics FAQ](faq-topics.md) |Read answers to frequently asked questions to help you understand more about Viva Topics.    |
+|[Viva Topics FAQ](faq-topics.md) |Find answers to frequently asked questions to help you understand more about Viva Topics.    |
 
