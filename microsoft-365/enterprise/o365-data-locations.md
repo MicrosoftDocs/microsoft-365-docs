@@ -134,6 +134,7 @@ For country/region specific data centers, the following defines the cities where
 | South Korea | Busan, Seoul |
 | Norway | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
+| Sweden | Gävle, Sandviken, Staffanstorp |
 | Switzerland | Geneva, Zurich |
 | United Arab Emirates | Dubai, Abu Dhabi |
 | United Kingdom | Durham, London, Cardiff |
@@ -5234,19 +5235,19 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 
 | Service | Location |
 | --- | --- |
-| Exchange Online | European Union |
-| OneDrive for Business | European Union |
-| SharePoint Online | European Union |
+| Exchange Online | Sweden |
+| OneDrive for Business | Sweden |
+| SharePoint Online | Sweden |
 | Skype for Business | European Union |
-| Microsoft Teams | European Union |
-| Office Online &amp; Mobile | European Union |
-| EOP | European Union |
+| Microsoft Teams | Sweden |
+| Office Online &amp; Mobile | Sweden |
+| EOP | Sweden |
 | Intune | European Union |
-| MyAnalytics | European Union |
+| MyAnalytics | Sweden |
 | Planner | European Union |
 | Sway | United States |
 | Yammer | European Union  |
-| OneNote Services | European Union |
+| OneNote Services | Sweden |
 | Stream | European Union |
 | Whiteboard | European Union |
 | Forms | European Union |

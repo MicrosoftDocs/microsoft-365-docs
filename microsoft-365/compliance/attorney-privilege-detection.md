@@ -74,7 +74,7 @@ To upload an attorney list for use by the attorney-client privilege detection mo
 
    The **Attorney-client privilege** page is displayed, and the **Attorney-client privilege detection** toggle is turned on.
 
-   ![Attorney-client privilege flyout page.](../media/AeDUploadAttorneyList.png)
+   ![Attorney-client privilege flyout page](..\media\AeDUploadAttorneyList1.png)
 
 3. Select **Choose file** and then find and select the .csv file that you created in step 1.
 
