@@ -75,7 +75,7 @@ The indicator action types supported by the API are:
 - Audit
 - Block
 - BlockAndRemediate
-- Warn (MCAS Only)
+- Warn (Defender for Cloud Apps only)
 
 For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
 

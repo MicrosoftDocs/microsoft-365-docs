@@ -58,7 +58,7 @@ Conditional Access policies are if-then statements for granting access to resour
 - Device information
 - Application information
 - Real-time and calculated risk detection
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 When making these access decisions, the policies can take different actions:
 
