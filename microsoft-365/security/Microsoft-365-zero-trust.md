@@ -131,7 +131,7 @@ Implement Microsoft Information Protection (MIP) to help you discover, classify,
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to know your data, protect your data, and prevent data loss.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Information protection capabilities protect data through policy enforcement" lightbox="../media/zero-trust/m365-zero-trust-info-protect.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Information protection capabilities protect data through policy enforcement" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime. 
 
