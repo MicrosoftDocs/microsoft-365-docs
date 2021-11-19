@@ -137,7 +137,7 @@ International call charges apply
 [Bonaire](#bonaire)\
 [British Virgin Islands](#british-virgin-islands)\
 [Cayman Islands](#cayman-islands)
-[Curaçao](#curacao)\
+[Curaçao](#curaçao)\
 [Dominica](#dominica)
    :::column-end:::
    :::column:::
@@ -150,7 +150,7 @@ International call charges apply
 [Montserrat](#montserrat)\
 [Puerto Rico](#puerto-rico)\
 [Saba](#saba)\
-[Saint Barthélemy](#saint-barthlemy)
+[Saint Barthélemy](#saint-barthélemy)
    :::column-end:::
    :::column:::
 [Saint Kitts and Nevis](#saint-kitts-and-nevis)\
@@ -161,7 +161,7 @@ International call charges apply
 [Sint Maarten](#sint-maarten)\
 [Trinidad and Tobago](#trinidad-and-tobago)\
 [Turks and Caicos Islands](#turks-and-caicos-islands)\
-[U.S. Virgin Islands](#virgin-islands)
+[U.S. Virgin Islands](#us-virgin-islands)
    :::column-end:::
 :::row-end:::
 
@@ -299,121 +299,72 @@ Alternative Phone Number: 1 809 200 8794\
 
 ## Europe
 
-### Åland Islands
-
-### Albania
-
-### Andorra
-
-### Armenia
-
-### Austria
-
-### Azerbaijan
-
-### Belarus
-
-### Belgium
-
-### Bosnia and Herzegovina
-
-### Bulgaria
-
-### Croatia
-
-### Cyprus
-
-### Czechia
-
-### Denmark
-
-### Estonia
-
-### Faroe Islands
-
-### Finland
-
-### France
-
-### Georgia
-
-### Germany
-
-### Gibraltar
-
-### Greece
-
-### Guernsey
-
-### Hungary
-
-### Iceland
-
-### Ireland
-
-### Isle of Man
-
-### Italy
-
-### Jan Mayen
-
-### Jersey
-
-### Kosovo
-
-### Latvia
-
-### Liechtenstein
-
-### Lithuania
-
-### Luxembourg
-
-### Malta
-
-### Moldova
-
-### Monaco
-
-### Montenegro
-
-### Netherlands
-
-### North Macedonia
-
-### Norway
-
-### Poland
-
-### Portugal
-
-### Romania
-
-### Russia
-
-### San Marino
-
-### Serbia
-
-### Slovakia
-
-### Slovenia
-
-### Spain
-
-### Svalbard
-
-### Sweden
-
-### Switzerland
-
-### Turkey
-
-### Ukraine
-
-### United Kingdom
-
-### Vatican City
+:::row:::
+   :::column:::
+[Åland Islands](#åland-islands)\
+[Albania](#albania)\
+[Andorra](#andorra)\
+[Armenia](#armenia)\
+[Austria](#austria)\
+[Azerbaijan](#azerbaijan)\
+[Belarus](#belarus)\
+[Belgium](#belgium)\
+[Bosnia and Herzegovina](#bosnia-and-herzegovina)\
+[Bulgaria](#bulgaria)\
+[Croatia](#croatia)\
+[Cyprus](#cyprus)\
+[Czechia](#czechia)\
+[Denmark](#denmark)\
+[Estonia](#estonia)\
+[Faroe Islands](#faroe-islands)\
+[Finland](#finland)\
+[France](#france)\
+[Georgia](#georgia)\
+[Germany](#germany)
+   :::column-end:::
+   :::column:::
+[Gibraltar](#gibraltar)\
+[Greece](#greece)\
+[Guernsey](#guernsey)\
+[Hungary](hungary)\
+[Iceland](#iceland)\
+[Ireland](#ireland)\
+[Isle of Man](#isle-of-man)\
+[Italy](#italy)\
+[Jan Mayen](#jan-mayen)\
+[Jersey](#jersey)\
+[Kosovo](#kosovo)\
+[Latvia](#latvia)\
+[Liechtenstein](#liechtenstein)\
+[Lithuania](#lithuania)\
+[Luxembourg](#luxembourg)\
+[Malta](#malta)\
+[Moldova](#moldova)\
+[Monaco](#monaco)\
+[Montenegro](#montenegro)\
+[Netherlands](#netherlands)
+   :::column-end:::
+   :::column:::
+[North Macedonia](#north-macedonia)\
+[Norway](#norway)\
+[Poland](#poland)\
+[Portugal](#portugal)\
+[Romania](#romania)\
+[Russia](#russia)\
+[San Marino](#san-marino)\
+[Serbia](#serbia)\
+[Slovakia](#slovakia)\
+[Slovenia](#slovenia)\
+[Spain](#spain)\
+[Svalbard](#svalbard)\
+[Sweden](#sweden)\
+[Switzerland](#switzerland)\
+[Turkey](#turkey)\
+[Ukraine](#ukraine)\
+[United Kingdom](#united-kingdom)\
+[Vatican City](#vatican-city)
+   :::column-end:::
+:::row-end:::
 
 ### Åland Islands
 
@@ -569,7 +520,7 @@ Local call charges apply
 [Comoros](#comoros)\
 [Congo](#congo)\
 [Congo DRC](#congo-drc)\
-[Côte d’Ivoire](#cte-divoire)\
+[Côte d’Ivoire](#côte-divoire)\
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
@@ -600,9 +551,9 @@ Local call charges apply
    :::column:::
 [Niger](#niger)\
 [Nigeria](#nigeria)\
-[Réunion](#runion)\
+[Réunion](#réunion)\
 [Rwanda](#rwanda)\
-[São Tomé and Príncipe](#so-tom-and-prncipe)\
+[São Tomé and Príncipe](#são-tomé-and-príncipe)\
 [Senegal](#senegal)\
 [Seychelles](#seychelles)\
 [Sierra Leone](#sierra-leone)\
