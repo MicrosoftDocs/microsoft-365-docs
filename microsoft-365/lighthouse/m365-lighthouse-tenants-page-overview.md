@@ -37,20 +37,16 @@ The Tenants page also includes the following options:
 
 ## Tenant list
 
-The tenant list provides insights into the different tenants you have a contract with, including tenant onboarding status relative to Lighthouse. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
+The tenant list provides insights into the different tenants you have a contract with, including their tenant Lighthouse onboarding status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
 
-After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), their status will show as **Active** in the tenant list.
+After your tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), its status will show as **Active** in the tenant list.
 
 The tenant list lets you:
 
 - Automatically sort tenants by active, inactive, and ineligible.
-
 - Export the tenant list
-
 - Assign and manage tags
-
 - Search for tenants by name
-
 - Filter tenants by status, delegated administrative privilege (DAP), and tags.
 
 You may also select Choose columns on this page to customize your view. To inactivate the tenant or view and manage tags, select the three dots next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
@@ -119,14 +115,17 @@ To edit details or delete an existing contact, select the contact name from the 
 
 #### Microsoft 365 usage card
 
+Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed into the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
+
 The Microsoft 365 Usage card contains two sections:
 
 - Microsoft 365 Lighthouse-enabled services – Services that can be managed within the Lighthouse portal.
-- Additional Microsoft 365 services – Services that are included in the Microsoft 365 suite but that can’t be managed within the Microsoft 365 Lighthouse portal at this time.
+- Additional Microsoft 365 services – Services that are included in the Microsoft 365 suite but can’t be managed within the Microsoft 365 Lighthouse portal at this time.
+
 
 ### Deployment Plans tab
 
-The Deployment Plans tab provides status on a tenant’s deployment plan. The deployment steps you see in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list. For more information on baselines, see [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
+The Deployment Plans tab provides status on a tenant’s deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
 
 The Deployment Plans tab also includes the following options:
 
