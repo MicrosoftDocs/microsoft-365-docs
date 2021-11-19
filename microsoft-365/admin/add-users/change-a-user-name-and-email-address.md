@@ -18,6 +18,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +35,14 @@ You may need to change someone's email address and display name if, for example,
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc]
 
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
+1. Select the user from the list of active users.
+1. Select **Manage contact information**.
+1. Change the display name, and select **Save changes**.
+
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+
+## Before you begin
 
 You must be a [global admin](about-admin-roles.md) to complete these steps.
 
