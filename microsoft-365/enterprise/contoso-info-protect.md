@@ -78,7 +78,7 @@ As part of their rollout of Exchange Online and SharePoint, Contoso configured t
 
 Here's resulting set of Contoso policies for information protection.
 
-![Device, Exchange Online, and SharePoint Conditional Access policies.](../media/contoso-info-protect/contoso-info-protect-fig1.png)
+:::image type="content" alt-text="Device, Exchange Online, and SharePoint Conditional Access policies." source="../media/contoso-info-protect/contoso-info-protect-fig1.png" lightbox="../media/contoso-info-protect/contoso-info-protect-fig1.png":::
 
 >[!Note]
 >Contoso also configured additional Conditional Access policies for identity and sign-in. See [Identity for the Contoso Corporation](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
