@@ -136,7 +136,7 @@ International call charges apply
 [Bermuda](#bermuda)\
 [Bonaire](#bonaire)\
 [British Virgin Islands](#british-virgin-islands)\
-[Cayman Islands](#cayman-islands)
+[Cayman Islands](#cayman-islands)\
 [Curaçao](#curaçao)\
 [Dominica](#dominica)
    :::column-end:::
