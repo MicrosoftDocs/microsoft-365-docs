@@ -38,7 +38,7 @@ This illustration provides a representation of the primary elements that contrib
 
 
 In the illustration:
-- Security policy enforcement is at the center of a Zero Trust architecture. This includes multi-factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
+- Security policy enforcement is at the center of a Zero Trust architecture. This includes Multi Factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
 - Identities, devices, data, apps, network, and other infrastructure components are all configured with appropriate security. Policies that are configured for each of these components are coordinated with your overall Zero Trust strategy. For example, device policies determine the criteria for healthy devices and conditional access policies require healthy devices for access to specific apps and data.
 - Threat protection and intelligence monitors the environment, surfaces current risks, and takes automated action to remediate attacks.
 
@@ -60,7 +60,7 @@ This illustration represents the work of deploying Zero Trust capabilities. This
 In this illustration:
 - Zero Trust begins with a foundation of identity and device protection. 
 - Threat protection capabilities are built on top of this foundation to provide real-time monitoring and remediation of security threats. 
-- Information protection and governance provides sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
+- Information protection and governance provide sophisticated controls targeted at specific types of data to protect your most valuable information and to help you comply with compliance standards, including protecting personal information.
 
 ## Step 1. Configure Zero Trust identity and device access protection — starting-point policies
 
@@ -77,7 +77,7 @@ Go to [Zero Trust identity and device access protection](office-365-security/mic
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-|Recommended identity and device access policies for three tiers of protection:<br>- Starting point<br>- Enterprise (recommended)<br>- Specialized<br><br>Additional recommendations for:<br>- External and guest users<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 or E5<br><br>Azure Active Directory in either of these modes:<br>- Cloud-only<br>- Hybrid with password hash sync (PHS) authentication<br>- Hybrid with pass-through authentication (PTA)<br>- Federated     |Device enrollment for policies that require managed devices. see “Manage endpoints with Intune” to enroll devices |
+|Recommended identity and device access policies for three tiers of protection:<br>- Starting point<br>- Enterprise (recommended)<br>- Specialized<br><br>Additional recommendations for:<br>- External users (guests<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 or E5<br><br>Azure Active Directory in either of these modes:<br>- Cloud-only<br>- Hybrid with password hash sync (PHS) authentication<br>- Hybrid with pass-through authentication (PTA)<br>- Federated     |Device enrollment for policies that require managed devices. See “Manage endpoints with Intune” to enroll devices |
 | | | |
 
 Start by implementing the starting-point tier. These policies do not require enrolling devices into management. 
@@ -98,12 +98,12 @@ Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overv
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-|Enroll devices with Intune<br>- Corporate-owned devices<br>- Autopilot/automated<br>- enrollment<br><br>Configure policies<br>- App Protection policies<br>- Compiance policies<br>- Device profile policies | Register endpoints with Azure AD     | Configuring information protection capabilities, including:<br>- Sensitive information types<br>- Labels<br>- DLP policies<br>For these capabilities, see Step 5. Protect and govern data (later in this article).       |
+|Enroll devices with Intune<br>- Corporate-owned devices<br>- Autopilot/automated<br>- enrollment<br><br>Configure policies<br>- App Protection policies<br>- Compliance policies<br>- Device profile policies | Register endpoints with Azure AD     | Configuring information protection capabilities, including:<br>- Sensitive information types<br>- Labels<br>- DLP policies<br>For these capabilities, see Step 5. Protect and govern data (later in this article).       |
 |    |         |         |
 
 ## Step 3. Add Zero Trust identity and device access protection — Enterprise policies
 
-With devices enrolled into management you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
+With devices enrolled into management, you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
@@ -113,7 +113,7 @@ Return to [Common identity and device access policies](office-365-security/ident
 
 ## Step 4. Evaluate, pilot, and deploy Microsoft 365 Defender
 
-Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities.
+Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates, and analyzes signal, threat, and alert data from across your Microsoft 365 environment, including endpoint, email, applications, and identities.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Adding Microsoft 365 Defender to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
@@ -121,7 +121,7 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-| Setup the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br><br>Protect against threats<br><br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
+| Set up the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br><br>Protect against threats<br><br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
 |    |         |         |
 
 ## Step 5. Protect and govern sensitive data
