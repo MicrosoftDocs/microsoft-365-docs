@@ -2,8 +2,6 @@
 title: Use automated investigations to investigate and remediate threats
 description: Understand the automated investigation flow in Microsoft Defender for Endpoint.
 keywords: automated, investigation, detection, Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -77,7 +75,7 @@ Depending on the [level of automation](automation-levels.md) set for your organi
 All remediation actions, whether pending or completed, are tracked in the [Action center](auto-investigation-action-center.md). If necessary, your security operations team can undo a remediation action. To learn more, see [Review and approve remediation actions following an automated investigation](/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Check out the new, unified investigation page in the Microsoft 365 security center. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Check out the new, unified investigation page in the Microsoft 365 Defender portal. To learn more, see [(NEW!) Unified investigation page](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 ## Requirements for AIR
 
@@ -90,6 +88,7 @@ Currently, AIR only supports the following OS versions:
 - Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) or later
 - Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) or later
 - Windows 10, version [1803](/windows/release-information/status-windows-10-1809-and-windows-server-2019) or later
+- Windows 11
 
 ## Next steps
 

@@ -1,9 +1,7 @@
 ---
-title: Collect support logs in Microsoft Defender for Endpoints using live response
-description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoints issues
+title: Collect support logs in Microsoft Defender for Endpoint using live response
+description: Learn how to collect logs using live response to troubleshoot Microsoft Defender for Endpoint issues
 keywords: support, log, collect, troubleshoot, live response, liveanalyzer, analyzer, live, response
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -90,4 +88,3 @@ This topic provides instructions on how to run the tool via Live Response.
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
-

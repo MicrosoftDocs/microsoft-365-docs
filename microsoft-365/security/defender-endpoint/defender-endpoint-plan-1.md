@@ -7,9 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 10/29/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -26,7 +26,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 - **Defender for Endpoint Plan 1**, currently in preview, and described in this article; and 
 - **[Defender for Endpoint Plan 2](microsoft-defender-endpoint.md)**, generally available, and formerly known as [Defender for Endpoint](microsoft-defender-endpoint.md).
 
-The following image depicts what's included in Defender for Endpoint Plan 1 (preview):
+The green boxes in the following image depict what's included in Defender for Endpoint Plan 1 (preview):
 
 :::image type="content" source="../../media/mde-p1/mde-p1-overview-diagram.png" alt-text="Defender for Endpoint Plan 1 diagram":::
 
@@ -159,7 +159,7 @@ To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ### Role-based access control
 
-Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
+Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the Defender for Cloud, and what they can see and do. 
 
 To learn more, see [Manage portal access using role-based access control](rbac.md).
 

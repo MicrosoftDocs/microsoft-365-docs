@@ -2,8 +2,6 @@
 title: Troubleshoot Microsoft Defender for Endpoint service issues
 description: Find solutions and workarounds to known issues such as server errors when trying to access the service.
 keywords: troubleshoot Microsoft Defender for Endpoint, server error, access denied, invalid credentials, no data, dashboard portal, allow, event viewer
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -80,7 +78,7 @@ Support of use of comma as a separator in numbers are not supported. Regions whe
 
 ## Microsoft Defender for Endpoint tenant was automatically created in Europe
 
-When you use Azure Defender to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
+When you use Microsoft Defender for Cloud to monitor servers, a Microsoft Defender for Endpoint tenant is automatically created. The Microsoft Defender for Endpoint data is stored in Europe by default.
 
 ## Related topics
 
