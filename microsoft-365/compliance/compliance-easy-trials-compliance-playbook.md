@@ -34,7 +34,7 @@ Features:
 - [Insider Risk Management](#insider-risk-management)
 - [Records Management](#records-management)
 
-Premium add-ons:
+Optional add-ons:
 
 - [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
 - [Privacy Management](#privacy-management)
@@ -190,8 +190,8 @@ Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when 
    - Scenario 1 – [Onboarding devices](endpoint-dlp-getting-started.md) that have not been onboarded yet.​
    - Scenario 2 - [Microsoft Defender for Endpoint is already deployed and there are endpoints reporting in](endpoint-dlp-getting-started.md). All these endpoints will appear in the managed devices list. ​
 1. [Configure our default DLP policy for devices](mip-easy-trials.md#dlp-for-devices) or [Define a new DLP policy for devices​](endpoint-dlp-learn-about.md)
-1. [View Endpoint DLP alerts](endpoint-dlp-getting-started.md) in DLP Alerts Management dashboard​
-1. [View Endpoint DLP data](endpoint-dlp-getting-started.md) in activity explorer​
+1. [View Endpoint DLP alerts](dlp-configure-view-alerts-policies.md) in DLP Alerts Management dashboard​
+1. [View Endpoint DLP data](data-classification-activity-explorer.md) in activity explorer​
 
 ### Step 3: [Expand policies in scope or protection​](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
