@@ -90,13 +90,15 @@ You can add a business domain at any point to access the rest of the functionali
 - Bookings appointment scheduling and Meeting recordings
 - Shared document storage with OneDrive
 
-#### Next steps
-
 Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft 365 Apps for business subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
 
 ### Option 2: Add a domain
 
 For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Standard](../setup/setup-business-standard.md).
+
+### Next steps
+
+
 
 ## Terms of service update for Simplified Sign-Up mode
 
