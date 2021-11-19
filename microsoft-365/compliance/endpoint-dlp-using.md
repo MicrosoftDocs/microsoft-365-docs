@@ -40,9 +40,9 @@ Or
 
 ### Advanced classification scanning and protection
 
-#### Get registered
+## Get registered
 
-To get access to this feature, you must register your tenant with Microsoft—see [get registered](https://aka.ms/Ignite2021DLP).
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
@@ -57,11 +57,12 @@ These Windows versions support advanced classification scanning and protection:
 - Windows 10 RS5 (KB 5006744)
 
 > [!NOTE]
+> Support for advanced classification is available for Office (Word, Excel, PowerPoint) and PDF file types.
+
+> [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
 
 ### Endpoint DLP Windows 10 and macOS settings
-
-To get access to macOS support, you must register your tenant with Microsoft—see [get registered](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 |Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
@@ -349,7 +350,7 @@ There are three procedures.
 
 2. Expand **Unallowed apps**.
 
-3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the the **Highly Confidential** label.
+3. Choose **Add or edit unallowed apps** and add *OneDrive* as a display name and the executable name *onedrive.exe*  to disallow onedrive.exe from accessing items the **Highly Confidential** label.
 
 4. Select **Auto-quarantine** and **Save**.
 

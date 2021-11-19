@@ -159,7 +159,7 @@ To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ### Role-based access control
 
-Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the security center, and what they can see and do. 
+Using role-based access control (RBAC), your security administrator can create roles and groups to grant appropriate access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). With RBAC, you have fine-grained control over who can access the Defender for Cloud, and what they can see and do. 
 
 To learn more, see [Manage portal access using role-based access control](rbac.md).
 

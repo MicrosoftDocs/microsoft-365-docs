@@ -135,7 +135,7 @@ See the following articles for more information:
 - [Set-MpPreference -SignatureFallbackOrder](/powershell/module/defender/set-mppreference)
 - [Set-MpPreference -SignatureDefinitionUpdateFileSharesSource](/powershell/module/defender/set-mppreference#-signaturedefinitionupdatefilesharessources)
 - [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender cmdlets](/powershell/module/defender/index)
+- [Defender for Cloud cmdlets](/powershell/module/defender/index)
 
 ## Use Windows Management Instruction (WMI) to manage the update location
 
