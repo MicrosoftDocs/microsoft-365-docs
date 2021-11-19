@@ -54,7 +54,7 @@ The following table describes the illustration.
 
 |Category |Description |Examples  |
 |---------|---------|---------|
-|Device features     | Controls features on the device        | Airprint, notifications, lock screen messages        |
+|Device features     | Controls features on the device. This category only applies to iOS/iPadOS and macOS devices.        | Airprint, notifications, lock screen messages        |
 |Device restrictions     | Controls security, hardware, data sharing, and more settings on the devices        | Require a PIN, data encryption        |
 |Access configuration     |  Configures a device to access your organization’s resources        | Email profiles, VPN profiles, Wi-Fi settings, certificates        |
 |Custom     | Set custom configuration or execute custom configuration actions       | Set OEM settings, execute PowerShell scripts        |
