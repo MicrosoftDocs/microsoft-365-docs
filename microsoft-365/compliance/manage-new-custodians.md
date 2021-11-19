@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage custodians in an Advanced eDiscovery case
 
-The Custodians page on the **Sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
+The Custodians page on the **Data sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
 ![Manage Custodians.](../media/CustodianDetails.PNG)
 
@@ -30,40 +30,21 @@ The Custodians page on the **Sources** tab in an Advanced eDiscovery case contai
 To view the details about a custodian, click the custodian from the list on the **Custodians** tab. A flyout page is displayed and contains the following information about the custodian:
 
 - Contact information
-
-  - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian's first name, middle initial, and last name.
-  
-   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. The custodian's user principal name (UPN) is also listed.
-
-  - **Title** - The custodian's job title.
-
-  - **Department** - The name for the department in which the custodian works.
-
-  - **Manager** - The custodian's manager. The designated manager will receive any escalation communications for this custodian.
-  
-- Location information
-
-  - **City** - The city in which the custodian is located.
-
-  - **State** - The state or province in the custodian's address.
-
-  - **Country/Region** - The country/region where the custodian is located.
-
-  - **Office** - The office location in the custodian's place of business.
+   - **Title** - The custodian's job title.
+   - **User principal name** - The user principal name(UPN) for the custodian, for example, AdeleV@contoso.onmicrosoft.com. 
+   - **Location** - The office location in the custodian's place of business.
+   - **Manager** - The custodian's manager. The designated manager will receive any escalation communications for this custodian.
+   - **Department** - The name for the department in which the custodian works.
 
 - Case information
-
-  - **Hold status** - Indicates if the custodian has been placed on hold. 
-
-  - **Communication status**: Indicates if the custodian has been issued a hold notice. If the custodian has been issued a notice, this value of this property is **Published**. If the custodian has not been issued a notice, the status is **Un-published**. 
-
   - **Status** - The status of the custodian within the case. A status of **Active** indicates that the custodian is part of the case. If a custodian is released from a case, the status is changed to **Released**. 
+  - **Hold** - Indicates if the custodian has been placed on hold. 
 
-- Data sources and indexing information
-
-    - **Data sources** - Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
-
-    - **Index updated time** - Indicates the time and date for when the advanced indexing job was last triggered. This property will also indicate when the advanced indexing process is currently in progress.
+- Data locations and hold information
+![Manage Custodians.](../media/CustodianHoldDetails.PNG)
+    - **Data locations** - Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
+        - Each data location shows its hold status. Status is one of : On hold, Not on hold, In progress.
+        - If you don't see a hold status for a data location, please check the status of the CustodianHold listed under **Hold** tab that contains the specific location.
 
 
 ## Edit a custodian
@@ -74,20 +55,35 @@ To update the data sources that are associated with a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Sources** tab.
+2. Click the **Data Sources** tab.
   
-3. On the **Custodians** page, select a custodian from the list and click **Edit** on the flyout page.
+3. Select a custodian from the list and click **Edit** on the flyout page.
 
     ![Edit Data Sources.](../media/EditCustodianDataSource.PNG)
   
-4. Click **Choose data sources** tab to change the settings for the custodian's Exchange mailbox and OneDrive account, click **Choose data sources**.
-  
-5. Click the **Select additional data sources** tab to add or remove Teams, SharePoint, or Exchange mailboxes associated with the custodian. 
+4. To add or remove the primary mailbox and OneDrive account for the custodian:
 
-    For more information about data sources associated with a custodian, see [Add custodians to a case](add-custodians-to-case.md). 
-  
-6. Click **Place custodial holds** to enable or disable the hold for the custodian.
+    - Expand the custodian to view the primary data locations that have been previously associated with the custodian.
+    - Click **Edit** next to **Mailbox** or **OneDrive** to add the custodian's mailbox or OneDrive location.
+    - Select **Clear** next to **Mailbox** or **OneDrive** to remove the custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
+To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
+- Click **Edit** next to a service to add a data location.
+
+   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
+
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**.
+
+   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
+
+   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
+
+   > [!NOTE]
+   > You can use the **Exchange** and **SharePoint** location pickers to associate any mailboxes or sites in your organization, including teams or Yammer groups (that a custodian is not a member of) to a custodian. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
+
+5. After editing the data locations for the custodian, click **Next** to go to the **Hold settings** page.  
+
+6. On the **Hold settings** page, update the hold settings for the custodian.
 ## Re-index custodian data
 
 In most eDiscovery workflows for legal investigations, a subset of a custodian's data is searched after the custodian is added to a legal case. Because of very large file sizes or possible data corruption, some items in the data sources associated with a custodian may be partially indexed. Using the [advanced indexing](indexing-custodian-data.md) capability in the Advanced eDiscovery, most partially indexed items can be automatically remediated by re-indexing these items on demand.
@@ -138,9 +134,3 @@ To release a custodian:
 
 > [!NOTE]
 > A custodian might be simultaneously involved in several legal cases. When a custodian is released from a case, the holds and notifications across other matters won't be impacted.
-
-## Bulk-edit custodians
-
-You can use the bulk editor to edit multiple custodians as the same time. To do this, just select two or more custodians on the **Custodians** tab to display the bulk editor and then click one of tasks.
-
-![Flyout page to edit settings of multiple custodians.](../media/AeDBulkEditCustodians.png)
