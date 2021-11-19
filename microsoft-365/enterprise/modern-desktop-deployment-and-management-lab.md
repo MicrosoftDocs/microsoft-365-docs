@@ -4,8 +4,8 @@ f1.keywords:
 - NOCSH
 ms.author: greglin
 author: greg-lindsay
-manager: laurawi
-ms.date: 04/26/2021
+manager: dougeby
+ms.date: 11/18/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,7 +14,7 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-description: Learn about and where to access the Windows and Office Deployment Lab Kit.
+description: Learn about where to access the Windows and Office Deployment Lab Kit.
 ---
 
 # Windows and Office 365 deployment lab kit
@@ -26,11 +26,11 @@ This kit is highly recommended for organizations preparing for Windows 8.1 upgra
 ## Windows 10 and Windows 11 versions of the lab kit are now available for free download in the Microsoft Evaluation Center. 
 
 [Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
-[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## A complete lab environment
 
-The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an Internet gateway, and a fully configured Configuration Manager instance. The labs run evaluation versions of the following products:
+The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance. The labs run evaluation versions of the following products:
 
 - Windows 10 Enterprise, Version 21H1 or Windows 11 Enterprise
 - Windows 7 Enterprise
@@ -99,10 +99,10 @@ Note: The Windows 11 version of the lab include the Windows 10, version 21H1 lab
 - Prepare, deploy, optimize
 
 [Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
-[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-office-365-lab-kit)
+[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Please use a broadband Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires February 16, 2022. The Windows 11 lab expires February 10, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires February 16, 2022. The Windows 11 lab expires February 10, 2022. New versions will be published prior to expiration.
 
 ## Additional guidance
 
@@ -117,5 +117,5 @@ Note: The Windows 11 version of the lab include the Windows 10, version 21H1 lab
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Office 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows for business](https://www.microsoft.com/en-us/windows/business)
+- [Windows for business](https://www.microsoft.com/windows/business)
 
