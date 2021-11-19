@@ -49,7 +49,7 @@ To sign up and purchase Microsoft 365 Business Standard, complete the following 
 
 6. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
 
-7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
+7. Decide how you'll sign in to Microsoft 365. You can [create a new business email account by adding a domain](#option-2-create-a-new-business-email-account-and-attach-a-domain) or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
 
 ## Choosing the right business subscription
 

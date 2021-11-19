@@ -47,7 +47,7 @@ To sign up and purchase Microsoft 365 Apps for business, complete the following 
 
 4. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
 
-5. Decide how you'll sign in to Microsoft 365. You can [create a new business email account](#option-2-create-a-new-business-email-account) by adding a domain or [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account).
+5. Decide how you'll sign in to Microsoft 365. You can [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account) or [create a new account](#option-2-add-a-domain) by adding a domain.
 
 ## Choosing the right business subscription
 
