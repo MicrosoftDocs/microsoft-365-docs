@@ -370,13 +370,11 @@ Alternative Phone Number: 1 809 200 8794\
 
 ### Andorra
 
-> [!NOTE]
-> For [Armenia](#armenia), see entry below.
+### Armenia
 
 ### Austria
 
-> [!NOTE]
-> For [Azerbaijan](#azerbaijan), see entry above.
+### Azerbaijan
 
 ### Belarus
 
@@ -410,9 +408,7 @@ Local call charges apply
 
 ### Croatia
 
-
-> [!NOTE]
-> For [Cyprus](#cyprus), see entry below.
+### Cyprus
 
 ### Czechia
 
@@ -426,9 +422,7 @@ Local call charges apply
 
 ### France
 
-
-> [!NOTE]
-> For [Georgia](#georgia), see entry below.
+### Georgia
 
 ### Germany
 
@@ -482,8 +476,7 @@ Local call charges apply
 
 ### Romania
 
-> [!NOTE]
-> For [Russia](#russia), see entry below.
+### Russia
 
 ### San Marino
 
@@ -742,7 +735,6 @@ International call charges apply
    :::column:::
 [Afghanistan](#afghanistan)\
 [Bahrain](#bahrain)\
-[Egypt](#egypt)\
 [Iraq](#iraq)\
 [Israel](#israel)\
 [Jordan](#jordan)
@@ -751,100 +743,13 @@ International call charges apply
 [Kuwait](#kuwait)\
 [Lebanon](#lebanon)\
 [Oman](#oman)\
-[Pakistan](#pakistan)\
 [Palestinian Authority](#palestinian-authority)
    :::column-end:::
    :::column:::
 [Qatar](#qatar)\
 [Saudi Arabia](#saudi-arabia)\
-[Turkey](#turkey)\
 [United Arab Emirates](#united-arab-emirates)\
 [Yemen](#yemen)
-   :::column-end:::
-:::row-end:::
-
-> [!NOTE]
-> For [Afghanistan](#afghanistan), see entry below.
-
-### Bahrain
-
-> [!NOTE]
-> For [Egypt](#egypt), see entry above.
-
-### Iraq
-
-### Israel
-
-### Jordan
-
-### Kuwait
-
-### Lebanon
-
-### Oman
-
-> [!NOTE]
-> For [Pakistan](#pakistan), see entry below.
-
-### Palestinian Authority
-
-### Qatar
-
-### Saudi Arabia
-
-> [!NOTE]
-> For [Turkey](#turkey), see entry below.
-
-### United Arab Emirates
-
-### Yemen
-
-## Asia
-
-:::row:::
-   :::column:::
-[Afghanistan](#afghanistan)\
-[Armenia](#armenia)\
-[Azerbaijan](#azerbaijan)\
-[Bangladesh](#bangladesh)\
-[Bhutan](#bhutan)\
-[Brunei](#brunei)\
-[Cambodia](#cambodia)\
-[China](#china)\
-[Christmas Island](#christmas-island)\
-[Cocos (Keeling) Islands](#cocos-keeling-islands)\
-[Cyprus](#cyprus)\
-[Georgia](#georgia)\
-[Hong Kong SAR](#hong-kong-sar)
-   :::column-end:::
-   :::column:::
-[India](#india)\
-[Indonesia](#indonesia)\
-[Japan](#japan)\
-[Kazakhstan](#kazakhstan)\
-[Korea](#korea)\
-[Kyrgyzstan](#kyrgyzstan)\
-[Laos](#laos)\
-[Macao SAR](#macao-sar)\
-[Malaysia](#malaysia)\
-[Maldives](#maldives)\
-[Mongolia](#mongolia)\
-[Myanmar](#myanmar)\
-[Nepal](#nepal)
-   :::column-end:::
-   :::column:::
-[Pakistan](#pakistan)\
-[Philippines](#philippines)\
-[Russia](#russia)\
-[Singapore](#singapore)\
-[Sri Lanka](#sri-lanka)\
-[Taiwan](#taiwan)\
-[Tajikistan](#tajikistan)\
-[Thailand](#thailand)\
-[Timor-Leste](#timor-leste)\
-[Turkmenistan](#turkmenistan)\
-[Uzbekistan](#uzbekistan)\
-[Vietnam](#vietnam)
    :::column-end:::
 :::row-end:::
 
@@ -869,9 +774,72 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
-### Armenia
+### Bahrain
 
-### Azerbaijan
+### Iraq
+
+### Israel
+
+### Jordan
+
+### Kuwait
+
+### Lebanon
+
+### Oman
+
+### Palestinian Authority
+
+### Qatar
+
+### Saudi Arabia
+
+### United Arab Emirates
+
+### Yemen
+
+## Asia
+
+:::row:::
+   :::column:::
+[Bangladesh](#bangladesh)\
+[Bhutan](#bhutan)\
+[Brunei](#brunei)\
+[Cambodia](#cambodia)\
+[China](#china)\
+[Christmas Island](#christmas-island)\
+[Cocos (Keeling) Islands](#cocos-keeling-islands)\
+[Hong Kong SAR](#hong-kong-sar)
+   :::column-end:::
+   :::column:::
+[India](#india)\
+[Indonesia](#indonesia)\
+[Japan](#japan)\
+[Kazakhstan](#kazakhstan)\
+[Korea](#korea)\
+[Kyrgyzstan](#kyrgyzstan)\
+[Laos](#laos)\
+[Macao SAR](#macao-sar)\
+[Malaysia](#malaysia)\
+[Maldives](#maldives)\
+[Mongolia](#mongolia)\
+[Myanmar](#myanmar)\
+[Nepal](#nepal)
+   :::column-end:::
+   :::column:::
+[Pakistan](#pakistan)\
+[Philippines](#philippines)\
+[Singapore](#singapore)\
+[Sri Lanka](#sri-lanka)\
+[Taiwan](#taiwan)\
+[Tajikistan](#tajikistan)\
+[Thailand](#thailand)\
+[Timor-Leste](#timor-leste)\
+[Turkmenistan](#turkmenistan)\
+[Uzbekistan](#uzbekistan)\
+[Vietnam](#vietnam)
+   :::column-end:::
+:::row-end:::
 
 ### Bangladesh
 
@@ -886,10 +854,6 @@ International call charges apply
 ### Christmas Island
 
 ### Cocos (Keeling) Islands
-
-### Cyprus
-
-### Georgia
 
 ### Hong Kong SAR
 
@@ -922,8 +886,6 @@ International call charges apply
 ### Pakistan
 
 ### Philippines
-
-### Russia
 
 ### Singapore
 
