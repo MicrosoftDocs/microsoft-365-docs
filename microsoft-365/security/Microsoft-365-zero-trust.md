@@ -105,11 +105,11 @@ Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overv
 
 With devices enrolled into management you can now implement the full set of recommended Zero Trust identity and device access policies. 
 
-:::image type="content" source="../media/zero-trust/anam365-zero-trust-architecture-enterprise-policies.png" alt-text="Zero Trust identity and access policies — Enterprise (recommended) tier" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
 Return to [Common identity and device access policies](office-365-security/identity-access-policies.md) and add the policies in the Enterprise tier.  
 
-:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Zero Trust identity and device access policies" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
+:::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Zero Trust identity and access policies — Enterprise (recommended) tier" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
 ## Step 4. Evaluate, pilot, and deploy Microsoft 365 Defender
 
