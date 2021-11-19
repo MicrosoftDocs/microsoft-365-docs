@@ -51,7 +51,7 @@ Easily and quickly start trying Microsoft’s compliance solutions without chang
 
 Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and providing faster access to the Office 365 Management Activity API.
 
-### Step 1: Apply the E5 license to each user for which you’d like to generate E5 events​
+### Step 1: [Apply the E5 license to each user for which you’d like to generate E5 events​](set-up-advanced-audit.md#step-1-set-up-advanced-audit-for-users)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -64,7 +64,7 @@ Set up Advanced Audit for users - to verify that the Advanced Auditing app is as
 1. Set up audit retention policies - [create additional audit log retention policies](set-up-advanced-audit.md#step-3-set-up-audit-retention-policies) to meet the requirements of your organization's security operations, IT, and compliance teams. ​
 1. Search for Advanced Audit events - [search for crucial Advanced Audit events](set-up-advanced-audit.md#step-4-search-for-advanced-audit-events) and other activities when conducting forensic investigations​
 
-### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​
+### Step 2: [Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)
 
 > [!TIP]
 > Trial best practice: Create within the first 30 days
@@ -82,24 +82,24 @@ Audit log retention policies are part of the new Advanced Audit capabilities in 
 
 Communication compliance helps you intelligently identify communication violations to support a compliant and healthy work environment by helping you detect inappropriate messages, investigate possible policy violations, and take steps to remediate.
 
-### Step 1: Enable permissions for communication compliance​
+### Step 1: [Enable permissions for communication compliance​](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
 
 > [!TIP]
 > Trial best practice: Day 1
 
 [Assign all compliance users to the Communication Compliance role group](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).​
-### Step 2: Enable the audit log​
+### Step 2: [Enable the audit log​](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
 
 > [!TIP]
 > Trial best practice: Setup within the first 30 days
 
 To use this feature, turn on auditing so your organization can start recording user and admin activity in your org. When you turn this on, activity will be recorded to the audit log and available to view in a report. ​To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
-### Step 3: Create a communication compliance policy
+### Step 3: [Create a communication compliance policy](communication-compliance-policies.md)
 
 [Create communication compliance policy using the existing templates](communication-compliance-policies.md): 1- Inappropriate content; 2- Sensitive information; 3- Regulatory compliance; 4- Conflict of interest.​
 
-### Step 4: Investigate and remediate alerts​
+### Step 4: [Investigate and remediate alerts​](communication-compliance-investigate-remediate.md)
 
 [Investigate and remediate](communication-compliance-investigate-remediate.md) communication compliance alerts.​
 
@@ -109,7 +109,7 @@ To use this feature, turn on auditing so your organization can start recording u
 
 Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
-### Step 1: Get to know Compliance Manager
+### Step 1: [Get to know Compliance Manager](compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -124,7 +124,9 @@ Our Compliance Manager overview page is the best first stop for a comprehensive 
 - [Understand assessments​](compliance-manager.md#assessments)
 - [Do a quick scan of your environment using the Microsoft Compliance Configuration Manager​](compliance-manager-mcca.md)
 
-### Step 2: Configure Compliance Manager to manage your compliance activities
+![Compliance Manager - dashboard.](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+
+### Step 2: [Configure Compliance Manager to manage your compliance activities](compliance-manager-assessments.md)
 
 > [!TIP]
 > Trial best practice: Inspect within the first 30 days
@@ -146,7 +148,7 @@ Start working with assessments and taking improvement actions to implement contr
 >
 > Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on. See the list here. With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
 
-### Step 3: Scaling up: use advanced functionality to meet your custom needs​
+### Step 3: [Scaling up: use advanced functionality to meet your custom needs​](compliance-manager-templates-create.md)
 
 Custom assessments are helpful for:​
 
@@ -165,7 +167,7 @@ Custom assessments are helpful for:​
 
 To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365.
 
-### Step 1: Protect data loss on Teams locations
+### Step 1: [Protect data loss on Teams locations](dlp-microsoft-teams.md#dlp-licensing-for-microsoft-teams)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -176,7 +178,7 @@ If your organization has data loss prevention (DLP), you can define policies tha
 1. [Add Microsoft Teams as a location to existing DLP policies​](dlp-microsoft-teams.md#add-microsoft-teams-as-a-location-to-existing-dlp-policies)
 1. [Configure our default DLP policy for Teams](mip-easy-trials.md) or [Define a new DLP policy for Microsoft Teams​](dlp-microsoft-teams.md#define-a-new-dlp-policy-for-microsoft-teams)
 
-### Step 2: Protect data loss on device locations​
+### Step 2: [Protect data loss on device locations​](endpoint-dlp-getting-started.md#prepare-your-endpoints)
 
 > [!TIP]
 > Trial best practice: Setup within the first 30 days
@@ -191,7 +193,7 @@ Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when 
 1. [View Endpoint DLP alerts](endpoint-dlp-getting-started.md) in DLP Alerts Management dashboard​
 1. [View Endpoint DLP data](endpoint-dlp-getting-started.md) in activity explorer​
 
-### Step 3: Expand policies in scope or protection​
+### Step 3: [Expand policies in scope or protection​](dlp-learn-about-dlp.md#dlp-policy-configuration-overview)
 
 You have flexibility in how you configure your DLP policies. You can start with our default DLP policy for Teams and devices and expand those policies to protect additional locations, sensitive information types, or labels. In addition, you can expand upon the policy actions and customize alerting.
 
@@ -210,7 +212,7 @@ You have flexibility in how you configure your DLP policies. You can start with 
 
 Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that’s responsive to your organization’s internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case.
 
-### Step 1 (required): Permissions​
+### Step 1 (required): [Permissions​](https://aka.ms/ediscoveryninja)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -239,9 +241,11 @@ To allow people in your organization start to create and use cases, you must con
 1. [Configure search and analytics settings​](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
 1. [Manage jobs in Advanced eDiscovery​](managing-jobs-ediscovery20.md)
 
-### Step 4 (optional): Compliance Boundaries​
+### Step 4 (optional): [Compliance Boundaries​](set-up-compliance-boundaries.md)
 
 Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search. They also control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization.
+
+![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases.](../media/M365_ComplianceBoundary_OrgChart_v2.png)
 
 Set up compliance boundaries for eDiscovery investigations: ​
 
@@ -250,7 +254,7 @@ Set up compliance boundaries for eDiscovery investigations: ​
 1. [Create a search permissions filter to enforce the compliance boundary​](set-up-compliance-boundaries.md#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 1. [Create an eDiscovery case for an intra-agency investigations](set-up-compliance-boundaries.md#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
-### Step 5 (optional): Learn about Content search tool​
+### Step 5 (optional): [Learn about Content search tool​](search-for-content.md)
 
 Use the Content search tool in the Microsoft 365 compliance center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
 
@@ -262,7 +266,7 @@ Use the Content search tool in the Microsoft 365 compliance center to quickly fi
 
 Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
 
-### Step 1: Start your information protection trial
+### Step 1: [Start your information protection trial](compliance/mip-easy-trials.md)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -278,7 +282,7 @@ Choosing the default configuration, with 1-click, the following is automatically
 
 [Activate the default labels and policies](mip-easy-trials.md#activate-the-default-labels-and-policies). ​If necessary, you can edit manually after the configuration is complete.
 
-### Step 2: Automatically apply sensitivity labels to documents
+### Step 2: [Automatically apply sensitivity labels to documents](apply-sensitivity-label-automatically.md)
 
 > [!TIP]
 > Trial best practice: Setup within the first 30 days
@@ -293,7 +297,9 @@ When you create a sensitivity label, you can automatically assign that label to 
    - Select label to apply​
    - [Run policy in simulation mode​](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)
 
-### Step 3: Review and turn on auto-labeling policy
+![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
+
+### Step 3: [Review and turn on auto-labeling policy](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** section. ​
 
@@ -307,7 +313,7 @@ When you're ready to run the policy without simulation, select the **Turn on pol
 
 Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for insider risk signals, then take remediation actions such as promoting user education or initiating an investigation.
 
-### Step 1 (required): Enable permissions for insider risk management​
+### Step 1 (required): [Enable permissions for insider risk management​](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -318,21 +324,23 @@ There are four role groups used to configure permissions to manage insider risk 
 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
-### Step 2: Start with user quick start guide
+### Step 2: [Start with user quick start guide](insider-risk-management-configure.md#recommended-actions-preview)
 
 Quickly get started and get the most out of insider risk management capabilities with recommended actions. Included on the Overview page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
 
 [Select a recommendation from the list](insider-risk-management-configure.md#recommended-actions-preview) to get started with configuring insider risk management. ​
 
+![Insider risk management recommended actions.](../media/insider-risk-recommended-actions.png)
+
 Each recommended action guides you through the required activities for the recommendation, including any requirements, what to expect, and the impact of configuring the feature in your organization.
 
-### Step 3 (required): Enable the Microsoft 365 audit log
+### Step 3 (required): [Enable the Microsoft 365 audit log](insider-risk-management-configure.md#step-2-required-enable-the-microsoft-365-audit-log)
 
 Auditing is enabled for Microsoft 365 organizations by default. Some organizations may have disabled auditing for specific reasons. If auditing is disabled for your organization, it might be because another administrator has turned it off. We recommend confirming that it's OK to turn auditing back on when completing this step.​
 
 For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md). After you turn on auditing, a message is displayed that says the audit log is being prepared and that you can run a search in a couple of hours after the preparation is complete. You only have to do this action once. For more information about the using the Microsoft 365 audit log, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
-### Step 4 (required): Enable and view insider risk analytics insights
+### Step 4 (required): [Enable and view insider risk analytics insights](insider-risk-management-configure.md#step-3-optional-enable-and-view-insider-risk-analytics-insights)
 
 Insider risk management analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. Analytics scan results may take up to 48 hours before insights are available as reports for review. To learn more about analytics insights, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md) and check out the [Insider Risk Management Analytics video](https://www.youtube.com/watch?v=5c0P5MCXNXk) to help you understand your insider risk posture and help you take action by setting up appropriate policies to identify risky users.​
 
