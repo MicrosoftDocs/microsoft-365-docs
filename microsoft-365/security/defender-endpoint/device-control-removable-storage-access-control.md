@@ -1,8 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media
 description: A walk-through about Microsoft Defender for Endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,9 +11,10 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/25/2021
+ms.date: 11/02/2021
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -41,7 +40,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 ## Prepare your endpoints
 
-Deploy Removable Storage Access Control on Windows 10 devices that have antimalware client version **4.18.2103.3 or later**.
+Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices that have antimalware client version **4.18.2103.3 or later**.
 
 - **4.18.2104 or later**: Add SerialNumberId, VID_PID, filepath-based GPO support, ComputerSid
 - **4.18.2105 or later**: Add Wildcard support for HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, the combination of specific user on specific machine, removeable SSD (a SanDisk Extreme SSD)/USB Attached SCSI (UAS) support
@@ -66,7 +65,7 @@ You can use the following properties to create a removable storage group:
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |<ul><li>**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices</li><li>**DeviceId**</li><li>**HardwareId**</li><li>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.</li><li>**FriendlyNameId​**</li><li>**SerialNumberId​**</li><li>**VID**</li><li>**PID**</li><li>**VID_PID**<ul><li>0751_55E0: match this exact VID/PID pair</li><li>55E0: match any media with PID=55E0 </li><li>0751: match any media with VID=0751</li></ul></li></ul>|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: RemovableMediaDevices, CdRomDevices, WpdDevices<p>**BusId**: For example, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: match this exact VID/PID pair<p>55E0: match any media with PID=55E0 <p>0751: match any media with VID=0751|
 |**MatchType**|When there are multiple device properties being used in the DescriptorIDList, MatchType defines the relationship.|**MatchAll**: Any attributes under the DescriptorIdList will be **And** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts DeviceID and InstancePathID, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
 
 ### Access Control Policy
@@ -79,11 +78,11 @@ You can use the following properties to create a removable storage group:
 | **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | The group(s) that the policy will not be applied to. | The Group ID/GUID must be used at this instance. |
 | **Entry Id** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| |
-| **Type** | Defines the action for the removable storage groups in IncludedIDList. <ul><li>Enforcement: Allow or Deny </li><li>Audit: AuditAllowed or AuditDenied</ul></li> | <ul><li>Allow</li><li>Deny </li><li>AuditAllowed: Defines notification and event when access is allowed​</li><li>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.</li></ul> <p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
+| **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
 | **Sid** | Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. |  |
 | **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. |  |
-| **Options** | Defines whether to display notification or not |**0 or 4**: When Type Allow or Deny is selected. <ul><li>0: nothing</li><li>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. </li></ul> <p> When Type **AuditAllowed** is selected: <ul><li>0: nothing​</li><li>1: nothing​</li><li>2: send event</li><li>3: send event </li></ul><p> When Type **AuditDenied** is selected: <ul><li>0: nothing​</li><li>1: show notification​</li><li>2: send event</li><li>3: show notification and send event </li></ul>|
-|AccessMask|Defines the access. | **1-7**: <ol><li>Read​</li><li>Write​</li><li>Read and Write​</li><li>Execute​</li><li>Read and Execute</li><li>Write and Execute </li><li>Read and Write and Execute</li></ol> |
+| **Options** | Defines whether to display notification or not |**0 or 4**: When Type Allow or Deny is selected. <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. <p> When Type **AuditAllowed** is selected: <p>0: nothing <p>1: nothing <p>2: send event<p>3: send event <p> When Type **AuditDenied** is selected: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
+|AccessMask|Defines the access. | **1-7**: <p>1: Read <p>2: Write <p>3: Read and Write <p>4: Execute <p>5: Read and Execute<p>6: Write and Execute <p>7: Read and Write and Execute |
 
 ## Common Removable Storage Access Control scenarios
 
