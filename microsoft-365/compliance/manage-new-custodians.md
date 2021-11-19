@@ -55,20 +55,35 @@ To update the data sources that are associated with a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Sources** tab.
+2. Click the **Data Sources** tab.
   
-3. On the **Custodians** page, select a custodian from the list and click **Edit** on the flyout page.
+3. Select a custodian from the list and click **Edit** on the flyout page.
 
     ![Edit Data Sources.](../media/EditCustodianDataSource.PNG)
   
-4. Click **Choose data sources** tab to change the settings for the custodian's Exchange mailbox and OneDrive account, click **Choose data sources**.
-  
-5. Click the **Select additional data sources** tab to add or remove Teams, SharePoint, or Exchange mailboxes associated with the custodian. 
+4. To add or remove the primary mailbox and OneDrive account for the custodian:
 
-    For more information about data sources associated with a custodian, see [Add custodians to a case](add-custodians-to-case.md). 
-  
-6. Click **Place custodial holds** to enable or disable the hold for the custodian.
+    - Expand the custodian to view the primary data locations that have been previously associated with the custodian.
+    - Click **Edit** next to **Mailbox** or **OneDrive** to add the custodian's mailbox or OneDrive location.
+    - Select **Clear** next to **Mailbox** or **OneDrive** to remove the custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
+To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
+- Click **Edit** next to a service to add a data location.
+
+   - **Exchange**: Use to associate other mailboxes to the custodian. Type into the search box the name or alias (a minimum of three characters) of user mailboxes or distribution groups. Select the mailboxes to assign to the custodian and then click **Add**.
+
+   - **SharePoint**: Use to associate SharePoint sites to the custodian. Select a site in the list or search for a site by typing a URL in the search box. Select the sites to assign to the custodian and then click **Add**.
+
+   - **Teams**: Use to assign the Microsoft Teams the custodian is currently a member of. Select the teams to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that team and assigns them to the custodian.
+
+   - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
+
+   > [!NOTE]
+   > You can use the **Exchange** and **SharePoint** location pickers to associate any mailboxes or sites in your organization, including teams or Yammer groups (that a custodian is not a member of) to a custodian. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
+
+3. After adding custodians and configuring their data locations, click **Next** to go to the **Hold settings** page.  
+
+6. On the **Hold settings** page, update the hold settings for the custodian.
 ## Re-index custodian data
 
 In most eDiscovery workflows for legal investigations, a subset of a custodian's data is searched after the custodian is added to a legal case. Because of very large file sizes or possible data corruption, some items in the data sources associated with a custodian may be partially indexed. Using the [advanced indexing](indexing-custodian-data.md) capability in the Advanced eDiscovery, most partially indexed items can be automatically remediated by re-indexing these items on demand.
