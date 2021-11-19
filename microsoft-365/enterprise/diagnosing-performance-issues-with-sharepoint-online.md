@@ -3,7 +3,7 @@ title: "Diagnosing performance issues with SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 7/9/2019
+ms.date: 11/19/2021
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
