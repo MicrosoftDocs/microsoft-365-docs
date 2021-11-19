@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage custodians in an Advanced eDiscovery case
 
-The Custodians page on the **Sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
+The Custodians page on the **Data sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
 ![Manage Custodians.](../media/CustodianDetails.PNG)
 
@@ -30,40 +30,21 @@ The Custodians page on the **Sources** tab in an Advanced eDiscovery case contai
 To view the details about a custodian, click the custodian from the list on the **Custodians** tab. A flyout page is displayed and contains the following information about the custodian:
 
 - Contact information
-
-  - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian's first name, middle initial, and last name.
-  
-   - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. The custodian's user principal name (UPN) is also listed.
-
-  - **Title** - The custodian's job title.
-
-  - **Department** - The name for the department in which the custodian works.
-
-  - **Manager** - The custodian's manager. The designated manager will receive any escalation communications for this custodian.
-  
-- Location information
-
-  - **City** - The city in which the custodian is located.
-
-  - **State** - The state or province in the custodian's address.
-
-  - **Country/Region** - The country/region where the custodian is located.
-
-  - **Office** - The office location in the custodian's place of business.
+   - **Title** - The custodian's job title.
+   - **User principal name** - The user principal name(UPN) for the custodian, for example, AdeleV@contoso.onmicrosoft.com. 
+   - **Location** - The office location in the custodian's place of business.
+   - **Manager** - The custodian's manager. The designated manager will receive any escalation communications for this custodian.
+   - **Department** - The name for the department in which the custodian works.
 
 - Case information
-
-  - **Hold status** - Indicates if the custodian has been placed on hold. 
-
-  - **Communication status**: Indicates if the custodian has been issued a hold notice. If the custodian has been issued a notice, this value of this property is **Published**. If the custodian has not been issued a notice, the status is **Un-published**. 
-
   - **Status** - The status of the custodian within the case. A status of **Active** indicates that the custodian is part of the case. If a custodian is released from a case, the status is changed to **Released**. 
+  - **Hold** - Indicates if the custodian has been placed on hold. 
 
-- Data sources and indexing information
-
-    - **Data sources** - Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
-
-    - **Index updated time** - Indicates the time and date for when the advanced indexing job was last triggered. This property will also indicate when the advanced indexing process is currently in progress.
+- Data locations and hold information
+![Manage Custodians.](../media/CustodianHoldDetails.PNG)
+    - **Data locations** - Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
+        - Each data location shows its hold status. Status is one of : On hold, Not on hold, In progress.
+        - If you don't see a hold status for a data location, please check the status of the CustodianHold listed under **Hold** tab that contains the specific location.
 
 
 ## Edit a custodian
@@ -138,9 +119,3 @@ To release a custodian:
 
 > [!NOTE]
 > A custodian might be simultaneously involved in several legal cases. When a custodian is released from a case, the holds and notifications across other matters won't be impacted.
-
-## Bulk-edit custodians
-
-You can use the bulk editor to edit multiple custodians as the same time. To do this, just select two or more custodians on the **Custodians** tab to display the bulk editor and then click one of tasks.
-
-![Flyout page to edit settings of multiple custodians.](../media/AeDBulkEditCustodians.png)
