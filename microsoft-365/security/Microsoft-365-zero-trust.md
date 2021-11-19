@@ -87,7 +87,7 @@ Start by implementing the starting-point tier. These policies do not require enr
 
 ## Step 2. Manage endpoints with Intune
 
-Next, enroll your devices into management and begin managing these. 
+Next, enroll your devices into management and begin protecting these with more sophisticated controls. 
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
