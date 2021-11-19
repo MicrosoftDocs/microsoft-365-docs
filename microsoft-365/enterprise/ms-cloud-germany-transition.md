@@ -280,7 +280,7 @@ If you have questions, you can contact us or your partner:
 - For Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/).
 - If you are Dynamics 365 Customer Engagement and Power BI customer and also have Office 365, you may submit questions using the &quot;Need Help?&quot; link of the [Microsoft 365 admin center](https://portal.office.de/). Dynamics 365 Customer Engagement support options are located [here](/dynamics365/get-started/support/). Power BI support options are located [here](https://powerbi.microsoft.com/support/).
 
-### My customer already has a M365 tenant in the global Microsoft cloud in addition to a Microsoft Cloud Deutschland tenant. Can these two tenants be merged into one as part of the migration?
+### My customer already has a Microsoft 365 tenant in the global Microsoft cloud in addition to a Microsoft Cloud Deutschland tenant. Can these two tenants be merged into one as part of the migration?
 
 No, there is no tenant merge capability. Tenants will remain separate and unique as every tenant has its own namespace and unique ID. Microsoft will migrate a Microsoft Cloud Deutschland tenant to the global cloud if desired or else the customer can cancel and abandon it.
 

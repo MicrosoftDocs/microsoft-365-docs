@@ -463,7 +463,7 @@ Additional information for specific locations:
         
         An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
     
-    For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention policies](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
+    For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## Auditing retention configuration and actions
 

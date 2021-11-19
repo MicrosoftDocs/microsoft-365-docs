@@ -81,7 +81,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 ## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
 
-All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
+All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
@@ -332,7 +332,7 @@ Disabling the signing policy does not completely disable DKIM. After a period of
 ## Default behavior for DKIM and Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
+If you do not enable DKIM, Microsoft 365 automatically creates a 2048-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
 
 Also, if you disable DKIM signing on your custom domain after enabling it, after a period of time, Microsoft 365 will automatically apply the MOERA/initial domain policy for your custom domain.
 
@@ -399,7 +399,7 @@ Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [An
 **This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
 
 <div class="nextstepaction">
-<p><a href="https://aka.ms/diagdkim" data-linktype="external">Run Tests: DKIM</a></p>
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>
 </div>
 
 ## More information
