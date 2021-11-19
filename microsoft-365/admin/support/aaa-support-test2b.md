@@ -519,7 +519,7 @@ Local call charges apply
 [Chad](#chad)\
 [Comoros](#comoros)\
 [Congo](#congo)\
-[Congo DRC](#congo-drc)\
+[Congo (DRC)](#congo-drc)\
 [Côte d’Ivoire](#côte-divoire)\
 [Djibouti](#djibouti)\
 [Egypt](#egypt)\
@@ -617,7 +617,7 @@ International call charges apply
 
 ### Congo
 
-### Congo DRC
+### Congo (DRC)
 
 ### Côte d’Ivoire
 
@@ -809,12 +809,12 @@ International call charges apply
 [China](#china)\
 [Christmas Island](#christmas-island)\
 [Cocos (Keeling) Islands](#cocos-keeling-islands)\
-[Hong Kong SAR](#hong-kong-sar)
-   :::column-end:::
-   :::column:::
+[Hong Kong SAR](#hong-kong-sar)\
 [India](#india)\
 [Indonesia](#indonesia)\
-[Japan](#japan)\
+[Japan](#japan)
+   :::column-end:::
+   :::column:::
 [Kazakhstan](#kazakhstan)\
 [Korea](#korea)\
 [Kyrgyzstan](#kyrgyzstan)\
@@ -824,10 +824,10 @@ International call charges apply
 [Maldives](#maldives)\
 [Mongolia](#mongolia)\
 [Myanmar](#myanmar)\
-[Nepal](#nepal)
+[Nepal](#nepal)\
+[Pakistan](#pakistan)
    :::column-end:::
    :::column:::
-[Pakistan](#pakistan)\
 [Philippines](#philippines)\
 [Singapore](#singapore)\
 [Sri Lanka](#sri-lanka)\
@@ -909,13 +909,13 @@ International call charges apply
 
 :::row:::
    :::column:::
-[Australia](#australia)\
 [American Samoa](#american-samoa)\
+[Australia](#australia)\
 [Cook Islands](#cook-islands)\
 [Fiji](#fiji)\
 [French Polynesia](#french-polynesia)\
 [Guam](#guam)\
-[Heard Island and Mcdonald Islands](#heard-island-and-mcdonald-islands)\
+[Heard Island and McDonald Islands](#heard-island-and-mcdonald-islands)\
 [Kiribati](#kiribati)\
 [Marshall Islands](#marshall-islands)
    :::column-end:::
@@ -942,9 +942,9 @@ International call charges apply
    :::column-end:::
 :::row-end:::
 
-### Australia
-
 ### American Samoa
+
+### Australia
 
 ### Cook Islands
 
