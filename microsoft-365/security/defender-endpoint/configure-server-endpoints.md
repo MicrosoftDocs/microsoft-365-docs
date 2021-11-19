@@ -150,11 +150,12 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
 
    > [!NOTE]
-   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
+ 
 
 4. Select **Download onboarding package** and save the .zip file.
 
-5. Install the installation package using any of the options to install Microsoft Defender Antivirus. (See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).)
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. 
 
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
@@ -168,13 +169,17 @@ Use the installation package from the previous step to install Microsoft Defende
 
 Run the following command to install Microsoft Defender for Endpoint:
 
-`msiexec /i md4ws.msi /quiet`
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 To uninstall, ensure the machine is offboarded first using the appropriate offboarding script. Then, use Control Panel \> Programs \> Programs and Features to perform the uninstall.
 
 Alternatively, run the following uninstall command to uninstall Microsoft Defender for Endpoint:
 
-`msiexec /x md4ws.msi /quiet`
+```console
+Msiexec /x md4ws.msi /quiet
+```
 
 You must use the same package you used for installation for the above command to succeed.
 
@@ -182,8 +187,6 @@ The `/quiet` switch suppresses all notifications.
 
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode to avoid interference. Then, to ensure Defender Antivirus remains in passive mode after onboarding to support capabilities like EDR Block, set the "ForceDefenderPassiveMode" registry key.
->
-> For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
 >
 > - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
@@ -227,7 +230,6 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         ```
 
         > [!NOTE]
-        >
         > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
         > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
@@ -260,7 +262,9 @@ After onboarding the device, you can choose to run a detection test to verify th
 
     `sc.exe query Windefend`
 
-    If the result is `The specified service doesn't exist as an installed service`, then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. 
+
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
