@@ -49,7 +49,7 @@ The tenant list lets you:
 - Search for tenants by name
 - Filter tenants by status, delegated administrative privilege (DAP), and tags.
 
-You may also select Choose columns on this page to customize your view. To inactivate the tenant or view and manage tags, select the three dots next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+To inactivate the tenant or view and manage tags, select the three dots next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
 ## Tenant status
 
@@ -69,7 +69,7 @@ Once you inactivate a tenant, you can't take action on the tenant until the inac
 
 ## Tenant tags
 
-To help organize your tenants and easily filter the existing views, you can create and assign tags to your tenants. You can also manage tags and which tenants they're assigned to from the Tenants page. To learn more, see [Manage your tenant list](m365-lighthouse-manage-tenant-list.md).
+To help organize your tenants and easily filter the existing views, you can create and assign tags to your tenants. To learn more, see [Manage your tenant list](m365-lighthouse-manage-tenant-list.md).
 
 > [!NOTE]
 > You can create up to 30 tags across all tenant.
@@ -129,7 +129,7 @@ The Deployment Plans tab provides status on a tenant’s deployment plan. The de
 
 The Deployment Plans tab also includes the following options:
 
-- **Export:** Select to export non-compliant settings data to an Excel comma-separated values (.csv) file.
+- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
 - **Refresh:** Select to retrieve the most current deployment step data.
 - **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 
