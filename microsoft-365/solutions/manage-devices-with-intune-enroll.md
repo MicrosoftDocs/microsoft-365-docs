@@ -26,7 +26,7 @@ The device enrollment process establishes a relationship between the user, the d
 
 This article recommends methods for enrolling devices into management using Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview?view=o365-worldwide).
 
-![Steps for managing devices](../media/devices/intune-mdm-step-2.png#lightbox)
+![Steps for managing devices](../media/devices/intune-mdm-steps-1.png#lightbox)
 
 ## Windows enrollment
 There are several options for enrolling Windows 10 and Windows 11 devices. The most common methods include these two:
