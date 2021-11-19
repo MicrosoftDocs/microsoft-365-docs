@@ -1,5 +1,5 @@
 ---
-title: "Step 4. Require healthy and compliant devices with Intune"
+title: "Step 3. Set up compliance policies for devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
@@ -16,7 +16,7 @@ keywords:
 description: 
 ---
 
-# Step 4. Require healthy and compliant devices with Intune
+# Step 3. Set up compliance policies for devices with Intune
 
 Enrolling devices into management gives you the ability to achieve even greater security and control of data in your environment. [Step 2. Enroll devices into management](manage-devices-with-intune-enroll.md) details how to accomplish this using Intune and Autopilot. This article covers the next step, which is to configure device compliance policies. 
 
