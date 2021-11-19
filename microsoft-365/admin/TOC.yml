@@ -32,7 +32,7 @@
         - name: Sign up Microsoft Apps for business
           items:
            - name: Sign up for Microsoft 365 Apps for business
-             href: setup/setup-business-basic.md
+             href: setup/signup--apps-business.md
            - name: Set up for Microsoft 365 Apps for business
              href: setup/setup-apps-for-business.md
         - name: Set up your Microsoft 365 for business organization
