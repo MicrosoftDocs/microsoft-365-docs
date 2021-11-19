@@ -50,6 +50,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of the conversation as well as the related items.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
 |Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, first 40 characters of the first message.<br>**Teams Channel Post:** Post Title or Announcement subhead; if not available, first 40 characters of the first message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
