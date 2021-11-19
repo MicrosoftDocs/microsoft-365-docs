@@ -34,7 +34,7 @@ To create an Advanced eDiscovery case using the new case format:
 
    The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new format.
 
-   ![New case format option on the New eDiscovery case page.](..\media\AeDLargeCases1.png)
+   ![New case format option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
 
 4. After naming the case, select the **New** option, and then click **Save** to create the case using the new format.
 
@@ -52,9 +52,9 @@ Here's a list of other benefits of large cases in Advanced eDiscovery workflow.
 
 - **Export**: You can export large sets of content in a single export job. The new case format lets you can export 5 million documents or 500 GB, whichever is smaller in an export job.
 
-Additionally, the new case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab and on a flyout page that persists on every tab in the case.
+Additionally, the new case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab.
 
-![Large case statistics in Advanced eDiscovery user interface.](..\media\LargeCaseUI.png)
+![New review set statistics in Advanced eDiscovery user interface.](..\media\LargeCaseUI.png)
 
 ## Frequently asked questions
 
