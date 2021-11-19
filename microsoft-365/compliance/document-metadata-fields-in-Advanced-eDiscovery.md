@@ -51,12 +51,14 @@ The following table lists the metadata fields for documents in a review set in a
 |Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
 |Conversation Index||Conversation_index|Conversation index from the message.|
-|Conversation Name||ConversationName|Name of the channel in Teams. The format of the name depends on the type of channel: <br>Teams channel chats and private channel chats: \<Name of team, name of channel\> <br>Teams 1:1 and group chats: Display name and email address of all chat participants<br>Yammer community: Community name + first 120 chars of a post<br>Yammer private: Sender name and email address + first 120 chars of a message|
+|Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, first 40 characters of the first message.<br>**Teams Channel Post:** Post Title or Announcement subhead; if not available, first 40 characters of the first message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
 |Conversation Topic|ConversationTopic||Conversation topic of the item.|
-|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br> Teams 1:1 and group chats and all Yammer conversations: **Group** for<br>Teams channels and private channels: **Channel**|
-|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the Teams chat transcript includes an edited message
+|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br>**Teams 1:1 and group chats and all Yammer conversations:** Group<br>**Teams channels and private channels:** Channel|
+|Contains Deleted Message|ContainsDeletedMessage|ContainsDeletedMessage|Indicates if the chat transcript includes a deleted message|
+|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the chat transcript includes an edited message|
+|Teams Announcement Title|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Title from a [teams announcement](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
 |Date|Date|Date|Date is a computed field that depends on the file type.<p>Email: Sent date<br>Email attachments: Last modified date of the document;if not available, the parent's Sent date<br>Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br>SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br>Non-Office 365 documents: Last modified date<br>Meetings: Meeting start date<br>VoiceMail: Sent date<br>IM: Sent date<br>Teams: Sent date|
@@ -166,7 +168,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle||Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
-|Teams Channel Name|TeamsChannel|Channel_Name|Name of the channel in Microsoft Teams.|
+|Channel Name|Channel|ChannelName|This is the Teams channel name. (only applies to Microsoft Teams content).|
+|Team Name|TeamName|TeamName|**Teams:** Name of Team<br>**Yammer:** Community Name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
 |Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
