@@ -519,7 +519,7 @@
 | 10/22/2021 | [Information protection in Windows overview](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview?view=o365-21vianet) | modified |
 | 10/22/2021 | [Create and manage device groups in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-groups?view=o365-21vianet) | modified |
 | 10/22/2021 | [Device health and compliance report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/machine-reports?view=o365-21vianet) | modified |
-| 10/22/2021 | [Microsoft Cloud App Security integration overview](/microsoft-365/security/defender-endpoint/microsoft-cloud-app-security-integration?view=o365-21vianet) | modified |
+| 10/22/2021 | [Microsoft Defender for Cloud Apps integration overview](/microsoft-365/security/defender-endpoint/microsoft-cloud-app-security-integration?view=o365-21vianet) | modified |
 | 10/22/2021 | [Microsoft Threat Experts](/microsoft-365/security/defender-endpoint/microsoft-threat-experts?view=o365-21vianet) | modified |
 | 10/22/2021 | [Migrating from a third-party HIPS to ASR rules](/microsoft-365/security/defender-endpoint/migrating-asr-rules?view=o365-21vianet) | modified |
 | 10/22/2021 | [Supported managed security service providers](/microsoft-365/security/defender-endpoint/mssp-list?view=o365-21vianet) | modified |
@@ -533,7 +533,7 @@
 | 10/22/2021 | [Integrate Microsoft Defender for Endpoint with other Microsoft solutions](/microsoft-365/security/defender-endpoint/threat-protection-integration?view=o365-21vianet) | modified |
 | 10/22/2021 | [Threat protection report in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/threat-protection-reports?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot problems with attack surface reduction rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr?view=o365-21vianet) | modified |
-| 10/22/2021 | [Collect support logs in Microsoft Defender for Endpoints using live response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-21vianet) | modified |
+| 10/22/2021 | [Collect support logs in Microsoft Defender for Endpoint using live response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot Microsoft Defender for Endpoint live response issues](/microsoft-365/security/defender-endpoint/troubleshoot-live-response?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot Microsoft Defender for Endpoint service issues](/microsoft-365/security/defender-endpoint/troubleshoot-mdatp?view=o365-21vianet) | modified |
 | 10/22/2021 | [Troubleshoot problems with Network protection](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-21vianet) | modified |
@@ -983,7 +983,7 @@
 | 10/7/2021 | [Microsoft Compliance Manager templates list](/microsoft-365/compliance/compliance-manager-templates-list?view=o365-21vianet) | modified |
 | 10/7/2021 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-21vianet) | modified |
 | 10/7/2021 | [Manage indicators](/microsoft-365/security/defender-endpoint/indicator-manage?view=o365-21vianet) | modified |
-| 10/7/2021 | [Integration with Azure Defender](/microsoft-365/security/defender-endpoint/azure-server-integration?view=o365-21vianet) | added |
+| 10/7/2021 | [Integration with Microsoft Defender for Cloud](/microsoft-365/security/defender-endpoint/azure-server-integration?view=o365-21vianet) | added |
 | 10/7/2021 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | added |
 | 10/7/2021 | [What's new in Microsoft 365 compliance](/microsoft-365/compliance/whats-new?view=o365-21vianet) | modified |
 | 10/7/2021 | [Attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules?view=o365-21vianet) | modified |
@@ -1323,8 +1323,8 @@
 | 9/30/2021 | [Review Microsoft Defender for Endpoint architecture requirements and key concepts](/microsoft-365/security/defender/eval-defender-endpoint-architecture?view=o365-21vianet) | modified |
 | 9/30/2021 | [Enable Microsoft Defender for Endpoint evaluation](/microsoft-365/security/defender/eval-defender-endpoint-enable-eval?view=o365-21vianet) | modified |
 | 9/30/2021 | [Run an attack simulation in a Microsoft 365 Defender pilot environment](/microsoft-365/security/defender/eval-defender-investigate-respond-simulate-attack?view=o365-21vianet) | modified |
-| 9/30/2021 | [Review architecture requirements and the structure for Microsoft Cloud App Security](/microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-21vianet) | modified |
-| 9/30/2021 | [Enable the evaluation environment for Microsoft Cloud App Security](/microsoft-365/security/defender/eval-defender-mcas-enable-eval?view=o365-21vianet) | modified |
+| 9/30/2021 | [Review architecture requirements and the structure for Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-architecture?view=o365-21vianet) | modified |
+| 9/30/2021 | [Enable the evaluation environment for Microsoft Defender for Cloud Apps](/microsoft-365/security/defender/eval-defender-mcas-enable-eval?view=o365-21vianet) | modified |
 | 9/30/2021 | [Step 2. Remediate your first incident](/microsoft-365/security/defender/first-incident-remediate?view=o365-21vianet) | modified |
 | 9/30/2021 | [Configure automated investigation and response capabilities in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-configure-auto-investigation-response?view=o365-21vianet) | modified |
 | 9/30/2021 | [Microsoft 365 Defender prerequisites](/microsoft-365/security/defender/prerequisites?view=o365-21vianet) | modified |
