@@ -48,7 +48,7 @@ To enable Microsoft Defender for IoT the user must have the following roles:
 
 1. In the navigation pane, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
 
-   :::image type="content" source="../../media/enable-defender-for-iot.png" alt-text="Image of Defender for IoT integration from Settings menu1.":::
+![Image of IoT integration setup.](images/enable-defender-for-iot.png)
 
 2. **Select subscription** displays a list of the available subscriptions under your Azure Active Directory (Azure AD) tenant.
 
