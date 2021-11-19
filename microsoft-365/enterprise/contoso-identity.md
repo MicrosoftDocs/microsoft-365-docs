@@ -27,7 +27,7 @@ Contoso uses a single Active Directory Domain Services (AD DS) forest for contos
 
 Here's the Contoso forest with regional domains for the different parts of the world that contain regional hubs.
 
-![Contoso's forest and domains worldwide.](../media/contoso-identity/contoso-identity-fig1.png)
+:::image type="content" alt-text="Contoso's forest and domains worldwide." source="../media/contoso-identity/contoso-identity-fig1.png" lightbox="../media/contoso-identity/contoso-identity-fig1.png":::
  
 Contoso decided to use the accounts and groups in the contoso\.com forest for authentication and authorization for its Microsoft 365 workloads and services.
 
@@ -68,7 +68,7 @@ Contoso created a set of Azure AD and Intune [Conditional Access policies](../se
 
 Here's the resulting set of Contoso identity and device Conditional Access policies.
 
-![Contoso’s identity and device Conditional Access policies.](../media/contoso-identity/contoso-identity-fig5.png)
+:::image type="content" alt-text="Contoso’s identity and device Conditional Access policies." source="../media/contoso-identity/contoso-identity-fig5.png" lightbox="../media/contoso-identity/contoso-identity-fig5.png":::
  
 ## Next step
 
