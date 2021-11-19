@@ -23,7 +23,7 @@ Welcome to the Microsoft 365 compliance solutions trial playbook. ​This playbo
 ​
 Trying each solution will help you make informed decisions to meet your organization’s compliance needs.​
 
-Sections:
+Features:
 
 - [Advanced Audit](#advanced-audit)
 - [Communication Compliance](#communication-compliance)
@@ -33,12 +33,15 @@ Sections:
 - [Information Protection](#information-protection)
 - [Insider Risk Management](#insider-risk-management)
 - [Records Management](#records-management)
+
+Premium add-ons:
+
 - [Compliance Manager Premium Assessment](#compliance-manager-premium-assessment)
 - [Privacy Management](#privacy-management)
 
 ## Compliance Actions with Microsoft 365
 
-Easily and quickly start trying Microsoft’s compliance solutions without changing your organizations meta data. ​Depending on your priorities, you can start with any of these solution areas to see immediate value; however, we have highlighted some of the top concerns communicated by our customers and solutions to start addressing those.
+Easily and quickly start trying Microsoft’s compliance solutions without changing your organization’s meta data. Depending on your priorities, you can start with any of these solution areas to see immediate value. Below are five top organizational concerns as communicated by our customers and recommended solutions to start with.
 
 :::image type="content" source="../media/compliance-trial/workflow.png" alt-text="Compliance actions with Microsoft 365":::
 
@@ -64,7 +67,7 @@ Set up Advanced Audit for users - to verify that the Advanced Auditing app is as
 ### Step 2: Create new Audit Log policies to specify how long to retain audit logs in your org for activities performed by users and define priority levels for your policies​
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Create within the first 30 days
 
 Audit log retention policies are part of the new Advanced Audit capabilities in Microsoft 365. An audit log retention policy lets you specify how long to retain audit logs in your organization.​
 
@@ -88,9 +91,9 @@ Communication compliance helps you intelligently identify communication violatio
 ### Step 2: Enable the audit log​
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Setup within the first 30 days
 
-To use this feature, turn on auditing so we can start recording user and admin activity in your org. When you turn this on, activity will be recorded to the audit log and available to view in a report. ​To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+To use this feature, turn on auditing so your organization can start recording user and admin activity in your org. When you turn this on, activity will be recorded to the audit log and available to view in a report. ​To learn more, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 ### Step 3: Create a communication compliance policy
 
@@ -133,6 +136,16 @@ Start working with assessments and taking improvement actions to implement contr
 1. [Perform implementation and testing work on improvement actions to complete controls in your assessments](compliance-manager-improvement-actions.md).​
 1. [Better understand how different actions impact your compliance score](compliance-score-calculation.md).​
 
+> [!NOTE]
+> Microsoft 365 or Office 365 E1/E3 subscription includes Microsoft Data Protection Baseline template. Microsoft 365 or Office 365 E5, E5 Compliance includes templates for:
+>
+> - Microsoft Data Protection Baseline
+> - European Union GDPR  
+> - ISO/IEC 27001,
+> - NIST 800-53
+>
+> Compliance Manager includes 300+ regulatory or premium templates that can be purchased as an add-on. See the list here. With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service
+
 ### Step 3: Scaling up: use advanced functionality to meet your custom needs​
 
 Custom assessments are helpful for:​
@@ -166,7 +179,7 @@ If your organization has data loss prevention (DLP), you can define policies tha
 ### Step 2: Protect data loss on device locations​
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Setup within the first 30 days
 
 Microsoft Endpoint DLP allows you to monitor Windows 10 devices and detect when sensitive items are used and shared.
 
@@ -210,7 +223,7 @@ To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery 
 ### Step 2 (required): Create a Case
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Create within the first 30 days
 
 More organizations use the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
@@ -220,7 +233,7 @@ More organizations use the Advanced eDiscovery solution in Microsoft 365 for cri
 
 ### Step 3 (optional): Settings​
 
-To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. At this time, the only global setting is attorney-client privilege detection (more global settings will be available in the future).
+To allow people in your organization start to create and use cases, you must configure global settings that apply to all cases in your organization. At this time, the only global setting is **attorney-client privilege detection** (more global settings will be available in the future).
 
 1. [Set up Advanced eDiscovery – Global Settings](get-started-with-advanced-ediscovery.md#step-3-configure-global-settings-for-advanced-ediscovery)
 1. [Configure search and analytics settings​](configure-search-and-analytics-settings-in-advanced-ediscovery.md)
@@ -268,7 +281,7 @@ Choosing the default configuration, with 1-click, the following is automatically
 ### Step 2: Automatically apply sensitivity labels to documents
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Setup within the first 30 days
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
@@ -294,7 +307,7 @@ When you're ready to run the policy without simulation, select the **Turn on pol
 
 Leverage artificial intelligence to help you quickly identify, triage, and remediate internal risks. Using logs from Microsoft 365 and Azure services, you can define policies that monitor for insider risk signals, then take remediation actions such as promoting user education or initiating an investigation.
 
-### Step 1: Enable permissions for insider risk management​
+### Step 1 (required): Enable permissions for insider risk management​
 
 > [!TIP]
 > Trial best practice: Day 1
@@ -306,9 +319,6 @@ There are four role groups used to configure permissions to manage insider risk 
 If you are not able to see permissions, please talk to your tenant admin to assign the correct roles.
 
 ### Step 2: Start with user quick start guide
-
-> [!TIP]
-> Trial best practice: Inspect within the first 30 days
 
 Quickly get started and get the most out of insider risk management capabilities with recommended actions. Included on the Overview page, recommended actions help guide you through the steps to configure and deploy policies and to take investigation actions for user actions that generate alerts from policy matches.
 
@@ -350,7 +360,7 @@ Policies using adaptive policy scopes stay current as the organization changes w
 ### Step 2: Automate labeling of sensitive information with the ability to review before disposal​
 
 > [!TIP]
-> Trial best practice: Inspect within the first 30 days
+> Trial best practice: Setup within the first 30 days
 
 Retention labels can be set up to apply automatically to content when it detects sensitive information, such as a credit card number. This removes the need for users to manually perform the labeling activity.​
 
@@ -367,8 +377,8 @@ When content is declared a record, restrictions are placed on the item in terms 
 
 Trainable classifiers are tools that recognize various types of content, based off samples it has been given. Choose from a variety of built-in options or set up a custom classifier to meet your specific needs.
 
-1. Create a retention label that declares content as a record or a regulatory record​
-1. Auto-apply retention labels to content using trainable classifiers
+1. Create a retention label that [declares content as a record or a regulatory record​](records-management.md#records)
+1. [Auto-apply retention labels to content using trainable classifiers](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 ### More information: Auto-apply retention labels + disposition review​
 
@@ -385,13 +395,15 @@ When a disposition review is triggered at the end of the retention period, the r
 
 Content pending a disposition review is permanently deleted only after a reviewer for the final stage of disposition chooses to permanently delete the content.
 
-## Compliance Manager Premium Assessment
+## Additional trials and add-ons
+
+### Compliance Manager Premium Assessment
 
 **Assess risks and efficiently respond**
 
 Help your organization assess risks and efficiently respond to nations, regional and industry requirements governing the collection and use of data.
 
-## Privacy Management
+### Privacy Management
 
 **Identify & prevent​ privacy risks**
 
