@@ -22,9 +22,9 @@ description: "Use the new case format in Advanced eDiscovery so you can add more
 
 More organizations are using the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation. As usage of Advanced eDiscovery increases, a common customer requirement is to expand the total amount of content that can be managed in a single Advanced eDiscovery case. To help accommodate significant increases in case size, both for total data volume and the total number of items, you can now choose the new case format when you create an Advanced eDiscovery case.  
 
-## Create a large case
-ca
-To create a large case:
+## Create a case
+
+To create an Advanced eDiscovery case using the new case format:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
@@ -55,7 +55,6 @@ Here's a list of other benefits of large cases in Advanced eDiscovery workflow.
 Additionally, the new case format includes an updated user interface that displays the total size of each review set in the case. Review set sizes are displayed in a column on the **Review sets** tab and on a flyout page that persists on every tab in the case.
 
 ![Large case statistics in Advanced eDiscovery user interface.](..\media\LargeCaseUI.png)
-
 
 ## Frequently asked questions
 
