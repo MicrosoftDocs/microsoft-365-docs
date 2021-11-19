@@ -373,12 +373,12 @@ Alternative Phone Number: 1 809 200 8794\
 ### Andorra
 
 > [!NOTE]
-> See [Armenia](#armenia) entry below.
+> For [Armenia](#armenia), see entry below.
 
 ### Austria
 
 > [!NOTE]
-> See [Azerbaijan](#azerbaijan) entry above.
+> For [Azerbaijan](#azerbaijan), see entry above.
 
 ### Belgium
 
@@ -412,7 +412,7 @@ Local call charges apply
 
 
 > [!NOTE]
-> See [Cyprus](#cyprus) entry below.
+> For [Cyprus](#cyprus), see entry below.
 
 ### Czechia
 
@@ -428,7 +428,7 @@ Local call charges apply
 
 
 > [!NOTE]
-> See [Georgia](#georgia) entry below.
+> For [Georgia](#georgia), see entry below.
 
 ### Germany
 
@@ -483,7 +483,7 @@ Local call charges apply
 ### Romania
 
 > [!NOTE]
-> See [Russia](#russia) entry below.
+> For [Russia](#russia), see entry below.
 
 ### San Marino
 
@@ -742,7 +742,7 @@ International call charges apply
    :::column:::
 [Afghanistan](#afghanistan)\
 [Bahrain](#bahrain)\
-[Egypt](#egypt)
+[Egypt](#egypt)\
 [Iraq](#iraq)\
 [Israel](#israel)\
 [Jordan](#jordan)
@@ -764,12 +764,12 @@ International call charges apply
 :::row-end:::
 
 > [!NOTE]
-> See [Afghanistan](#afghanistan) entry below.
+> For [Afghanistan](#afghanistan), see entry below.
 
 ### Bahrain
 
 > [!NOTE]
-> See [Egypt](#egypt) entry above.
+> For [Egypt](#egypt), see entry above.
 
 ### Iraq
 
@@ -784,7 +784,7 @@ International call charges apply
 ### Oman
 
 > [!NOTE]
-> See [Pakistan](#pakistan) entry below.
+> For [Pakistan](#pakistan), see entry below.
 
 ### Palestinian Authority
 
@@ -793,7 +793,7 @@ International call charges apply
 ### Saudi Arabia
 
 > [!NOTE]
-> See [Turkey](#turkey) entry below.
+> For [Turkey](#turkey), see entry below.
 
 ### United Arab Emirates
 
