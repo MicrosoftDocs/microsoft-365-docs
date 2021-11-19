@@ -64,7 +64,7 @@ To create a case:
 
    The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format.
 
-   ![Large case option on the New eDiscovery case page.](..\media\AeDLargeCases1.png)
+   ![Large case option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
 
 4. After naming the case, select the **New** option, and then click **Save** to create the case.
 
