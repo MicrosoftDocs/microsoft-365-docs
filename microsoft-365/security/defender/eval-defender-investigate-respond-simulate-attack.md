@@ -67,6 +67,8 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
    For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
+   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
+
 For more information, see [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
 
 ### Defender for Endpoint attack tutorials & simulations
