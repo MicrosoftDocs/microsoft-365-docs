@@ -1,5 +1,5 @@
 ---
-title: "Support contacts by country - regions view"
+title: "Support contacts by country or regions"
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -12,7 +12,7 @@ ms.collection:
 ms.custom: 
 search.appverid:
 - MET150
-description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
+description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
 ---
 
 # Support contacts by country or region
@@ -525,9 +525,10 @@ Local call charges apply
 [Egypt](#egypt)\
 [Equatorial Guinea](#equatorial-guinea)\
 [Eritrea](#eritrea)\
-[Ethiopia](#ethiopia)
+[Eswatini](#eswatini)
    :::column-end:::
    :::column:::
+[Ethiopia](#ethiopia)\
 [French Southern Territories](#french-southern-territories)\
 [Gabon](#gabon)\
 [Gambia](#gambia)\
@@ -545,10 +546,10 @@ Local call charges apply
 [Mauritius](#mauritius)\
 [Mayotte](#mayotte)\
 [Morocco](#morocco)\
-[Mozambique](#mozambique)\
-[Namibia](#namibia)
+[Mozambique](#mozambique)
    :::column-end:::
    :::column:::
+[Namibia](#namibia)\
 [Niger](#niger)\
 [Nigeria](#nigeria)\
 [Réunion](#réunion)\
@@ -561,7 +562,6 @@ Local call charges apply
 [South Africa](#south-africa)
 [South Sudan](#south-sudan)\
 [St Helena, Ascension, Tristan da Cunha](#st-helena-ascension-tristan-da-cunha)\
-<!--[Swaziland](#swaziland)\-->
 [Tanzania](#tanzania)\
 [Togo](#togo)\
 [Tunisia](#tunisia)\
@@ -628,6 +628,8 @@ International call charges apply
 ### Equatorial Guinea
 
 ### Eritrea
+
+### Eswatini
 
 ### Ethiopia
 
@@ -716,7 +718,6 @@ International call charges apply
 
 ### St Helena, Ascension, Tristan da Cunha
 
-<!--[Swaziland](#swaziland)\-->
 ### Tanzania
 
 ### Togo
