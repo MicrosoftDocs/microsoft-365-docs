@@ -51,8 +51,6 @@ Admins, have your account details ready when you call.
 
 If your support phone number isn't listed above, use the sections below to find the number for your country or region.
 
-Jump to section:
-
 [North America / Central America](#north-america--central-america) | [Caribbean](#caribbean) | [South America](#south-america) | [Europe](#europe) | [Africa](#africa) | [Middle East](#middle-east) | [Asia](#asia) | [Australia / Pacific](#australia--pacific)
 
 ## North America / Central America
@@ -137,10 +135,10 @@ International call charges apply
 [Bonaire](#bonaire)\
 [British Virgin Islands](#british-virgin-islands)\
 [Cayman Islands](#cayman-islands)\
-[Curaçao](#curaçao)\
-[Dominica](#dominica)
+[Curaçao](#curaçao)
    :::column-end:::
    :::column:::
+[Dominica](#dominica)\
 [Dominican Republic](#dominican-republic)\
 [Grenada](#grenada)\
 [Guadeloupe](#guadeloupe)\
@@ -149,10 +147,10 @@ International call charges apply
 [Martinique](#martinique)\
 [Montserrat](#montserrat)\
 [Puerto Rico](#puerto-rico)\
-[Saba](#saba)\
-[Saint Barthélemy](#saint-barthélemy)
+[Saba](#saba)
    :::column-end:::
    :::column:::
+[Saint Barthélemy](#saint-barthélemy)\
 [Saint Kitts and Nevis](#saint-kitts-and-nevis)\
 [Saint Lucia](#saint-lucia)\
 [Saint Martin](#saint-martin)\
