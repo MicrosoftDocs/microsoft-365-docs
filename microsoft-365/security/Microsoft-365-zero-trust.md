@@ -125,4 +125,17 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 
 ## Step 5. Protect and govern sensitive data
 
-more information . . .
+Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+
+MIP capabilities are included with Microsoft 365 Compliance and give you the tools to know your data, protect your data, and prevent data loss.
+
+
+:::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="Managed endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-info-protect.png":::
+
+While this work is represented at the top of the deployment stack illustrated earlier in this article, you can begin this work anytime. 
+
+Microsoft Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
+
+![Microsoft Information Protection (MIP) framework](../media/zero-trust/mip-solution-overview.png)
+
+For more information, see [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md). 
