@@ -324,7 +324,7 @@ Alternative Phone Number: 1 809 200 8794\
 [Gibraltar](#gibraltar)\
 [Greece](#greece)\
 [Guernsey](#guernsey)\
-[Hungary](hungary)\
+[Hungary](#hungary)\
 [Iceland](#iceland)\
 [Ireland](#ireland)\
 [Isle of Man](#isle-of-man)\
@@ -377,6 +377,8 @@ Alternative Phone Number: 1 809 200 8794\
 
 > [!NOTE]
 > For [Azerbaijan](#azerbaijan), see entry above.
+
+### Belarus
 
 ### Belgium
 
