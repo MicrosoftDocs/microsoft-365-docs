@@ -61,7 +61,7 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 
 3.	Anyone with edit permissions (or site owners) will be taken directly to the saved draft when they open the topic page that is in a draft state. A statement will be shown to tell you that this is a draft page and when the last draft was saved.
   
-   ![Screenshot showing the draft saved date.](../media/knowledge-management/draft-page-with-date.png)
+    ![Screenshot showing the draft saved date.](../media/knowledge-management/draft-page-with-date.png)
 
 4.	After closing edit mode, you can get back to the drafts by getting back to the topic page:
     - For users:
