@@ -23,33 +23,19 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Enable the Microsoft Defender for IoT integration to extend Microsoft Defender for Endpoint device discovery capabilities. With Defender for IoT enabled, you're adding agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks [like Voice over Internet Protocol (VoIP), printers, and smart TVs]. This allows you take advantage of a single integrated solution that can secure your IoT and OT infrastructure.
+One of our customers biggest challenges is gaining enough visibility to locate, identify, and secure enterprise IoT devices. Integrating with Microsoft Defender for IoT will help you extend you Microsoft Defender for Endpoint device discovery capabilities and increase your visibility and reduce an attackers attempt to compromise and take advantage of enterprise IoT devices in your organization.
 
-Microsoft Defender for IoT is a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats.
+Microsoft Defender for IoT provides a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats, and provides agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks, for example, Voice over Internet Protocol (VoIP) devices, printers, and cameras.
 
-View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view.
+Enabling the Microsoft Defender for IoT integration means that IoT devices discovered by Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched to the device inventory in the Microsoft 365 Defender portal and the Defender for IoT device inventory in the Azure portal. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).  
 
-A unified security solution for IoT and OT
-
-1. Network sensor details! V azure description?? 
-
-The ability to connect the MDIOT network sensor (aka. CyberX sensor) as and additional data source 
-
-The sensor can provide visibility to areas of the network 
-
-Where MDE is not deployed 
-
-When employees are not in the office (covid) 
-
-The Sensor provides visibility to IoT-IoT communication or IoT-Internet communication (coming TBD) 
-
-Any discovered device from MDE\MDIOT sensors will be synced across both portals 
-
+Defender for IoT also includes a deployable network sensor that provides an additional data source to further enhance the integration with Microsoft Defender for IoT. This gives you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and in situations where employees are not in the secure office network (more than ever now). For more information, see Get started with Enterprise IoT.
 
 ## Prerequisites
 
@@ -69,33 +55,11 @@ To enable Microsoft Defender for IoT the user must have the following roles:
 3. Choose the Azure subscription and select **Save**.
 
 
-<!-->
-   > [!NOTE]
-   > If you select HP ArcSight, you'll need to save these two configuration files:
-   >
-   > - WDATP-connector.jsonparser.properties
-   > - WDATP-connector.properties
+## Setup a network sensor
 
-   If you want to connect directly to the detections REST API through programmatic access, choose **Generic API**.
-
-4. Copy the individual values or select **Save details to file** to download a file that contains all the values.
-
-5. Select **Generate tokens** to get an access and refresh token.
-
-   > [!NOTE]
-   > You'll need to generate a new Refresh token every 90 days.
-
-6. Follow the instructions for [creating an Azure AD app registration for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) and assign the correct permissions to it to read alerts.
-
-You can now proceed with configuring your SIEM solution or connecting to the detections REST API through programmatic access. You'll need to use the tokens when configuring your SIEM solution to allow it to receive detections from Microsoft 365 Defender.
-
-## Integrate Microsoft Defender for Endpoint with IBM QRadar
-
-You can configure IBM QRadar to collect detections from Microsoft Defender for Endpoint. For more information, see [IBM Knowledge Center](https://www.ibm.com/docs/en/qsip/7.3.2?topic=quick-start-guide).
+You can configure a network sensor. For more information, see [Set up a network sensor](Add link).
 
 ## See also
 
-- [Configure HP ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
-- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
-- [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
+- [Device discovery overview](configure-device-discover.md)
+- [Device discovery FAQ](device-discovery-faq.md)
