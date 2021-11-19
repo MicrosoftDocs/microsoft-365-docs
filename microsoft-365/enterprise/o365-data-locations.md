@@ -134,6 +134,7 @@ For country/region specific data centers, the following defines the cities where
 | South Korea | Busan, Seoul |
 | Norway | Oslo, Stavanger |
 | South Africa | Cape Town, Johannesburg |
+| Sweden | Gävle, Sandviken, Staffanstorp |
 | Switzerland | Geneva, Zurich |
 | United Arab Emirates | Dubai, Abu Dhabi |
 | United Kingdom | Durham, London, Cardiff |
