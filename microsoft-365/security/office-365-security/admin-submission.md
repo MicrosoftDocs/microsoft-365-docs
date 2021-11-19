@@ -15,6 +15,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to use the Submissions portal in the Microsoft 365 Defender portal to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and email attachments to Microsoft for rescanning.
 ms.technology: mdo
 ms.prod: m365-security
@@ -63,7 +64,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Report suspicious content to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
@@ -71,6 +72,19 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
    > [!NOTE]
    > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
+
+### Notify users from within the portal
+
+1. In the Microsoft 365 Defender portal, go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+
+2. Select **User reported messages**, and then select the message you want to mark and notify.
+
+3. Select the **Mark as and notify** drop-down, and then select **No threats found** \> **Phishing** or **Junk**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
+
+The reported message will be marked as a false positive or a false negative. An email notification be sent automatically from within the portal to the user who reported the message.
 
 ### Submit a questionable email to Microsoft
 
@@ -129,7 +143,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## View admin submissions to Microsoft
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected.
 
@@ -192,7 +206,7 @@ If an override was found, the rescan should complete in several minutes. If ther
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 

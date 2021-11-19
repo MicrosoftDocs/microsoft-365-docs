@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
@@ -25,7 +26,7 @@ For getting started information about Attack simulation training, see [Get start
 
 To launch a simulated phishing attack, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com/>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
+1. In the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
 
    To go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
@@ -148,7 +149,7 @@ On the **Target users** page, select who will receive the simulation. Configure 
 
 - ![Import icon.](../../media/m365-cc-sc-create-icon.png) **Import**: In the dialog that opens, specify a CSV file that contains one email address per line.
 
-  After you find an select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete targeted users icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
+  After you find a select the CSV file, the list of users are imported and shown on the **Targeted users** page. You can use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to find affected users. You can also click ![Delete targeted users icon.](../../media/m365-cc-sc-delete-icon.png) **Delete** to remove specific users.
 
 When you're finished, click **Next**.
 
