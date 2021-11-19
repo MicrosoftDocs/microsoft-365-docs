@@ -105,7 +105,7 @@ The following table maps Contoso data levels to information protection features 
 
 Here's the resulting Contoso information-protection configuration.
 
-:::image type="content" alt-text="Contoso's resulting information protection configuration." source="../media/contoso-info-protect/contoso-info-protect-fig2.png" lightbox="../media/contoso-info-protect/contoso-info-protect-fig2.png":::
+:::image type="content" alt-text="Contoso's resulting information protection configuration." source="../media/contoso-info-protect/contoso-info-protect-fig2.png":::
 
 ## Next step
 
