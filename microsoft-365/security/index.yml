@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft 365 security documentation # < 60 chars
-summary: Microsoft 365 security center unites multiple security technologies in one comprehensive administration console, with enhancements to protect your enterprise.  # < 160 chars
+summary: Microsoft 365 Defender portal unites multiple security technologies in one comprehensive administration console, with enhancements to protect your enterprise.  # < 160 chars
 
 metadata:
   title: Microsoft 365 security documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -77,22 +77,22 @@ landingContent:
             url: defender-endpoint/portal-overview.md
              
   # Card (optional)
-  - title: Azure Defender
+  - title: Microsoft Defender for Cloud
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Defender?
+          - text: What is Microsoft Defender for Cloud?
             url: /azure/security-center/security-center-intro
           - text: Supported features
             url: /azure/security-center/security-center-services
   # Card
-  - title: Microsoft Cloud App Security
+  - title: Microsoft Defender for Cloud Apps
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Microsoft Cloud App Security?
+          - text: What is Microsoft Defender for Cloud Apps?
             url: /cloud-app-security/what-is-cloud-app-security
-          - text: Get started with Microsoft Cloud App Security
+          - text: Get started with Microsoft Defender for Cloud Apps
             url: /cloud-app-security/getting-started-with-cloud-app-security
   # Card
   - title: Security management 
@@ -103,11 +103,11 @@ landingContent:
             url: defender/microsoft-secure-score.md
 
   # Card
-  - title: Azure Sentinel 
+  - title: Microsoft Sentinel 
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Sentinel? 
+          - text: What is Microsoft Sentinel? 
             url: /azure/sentinel/overview
 
 
