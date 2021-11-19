@@ -103,7 +103,7 @@ Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overv
 
 ## Step 3. Add Zero Trust identity and device access protection — Enterprise policies
 
-With devices enrolled into management you can now implement the full set of recommended Zero Trust identity and device access policies. 
+With devices enrolled into management you can now implement the full set of recommended Zero Trust identity and device access policies, requiring compliant devices.
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
