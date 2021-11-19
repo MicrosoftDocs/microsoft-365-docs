@@ -230,7 +230,6 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         ```
 
         > [!NOTE]
-
         > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
         > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
