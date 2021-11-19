@@ -81,7 +81,7 @@ To add or remove other mailboxes, sites, Teams, or Yammer groups to a specific c
    > [!NOTE]
    > You can use the **Exchange** and **SharePoint** location pickers to associate any mailboxes or sites in your organization, including teams or Yammer groups (that a custodian is not a member of) to a custodian. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
 
-3. After adding custodians and configuring their data locations, click **Next** to go to the **Hold settings** page.  
+5. After editing the data locations for the custodian, click **Next** to go to the **Hold settings** page.  
 
 6. On the **Hold settings** page, update the hold settings for the custodian.
 ## Re-index custodian data
