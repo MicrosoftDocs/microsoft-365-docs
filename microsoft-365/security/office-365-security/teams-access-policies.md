@@ -42,7 +42,7 @@ You don't need to enable dependent services to get started with Microsoft Teams.
 
 ## Updating common policies to include Teams
 
-To protect chat, groups and content in Teams, the following diagram illustrates which policies to update from the the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
+To protect chat, groups and content in Teams, the following diagram illustrates which policies to update from the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="Summary of policy updates for protecting access to Teams and its dependent services." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
 

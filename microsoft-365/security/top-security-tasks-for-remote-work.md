@@ -91,7 +91,7 @@ Microsoft Defender for Office 365, included with Microsoft 365 E5 and Office 365
 
 Microsoft Defender for Office 365:
 
-- Protects your organization from unknown email threats in real-time by using intelligent systems that inspect attachments and links for malicious content. These automated systems include a robust detonation platform, heuristics, and machine learning models.
+- Protects your organization from unknown email threats in real time by using intelligent systems that inspect attachments and links for malicious content. These automated systems include a robust detonation platform, heuristics, and machine learning models.
 - Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries.
 - Applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks.
 
@@ -179,7 +179,7 @@ Only one organization can manage a device, so be sure to exclude guest accounts 
 
 ## 9: Optimize your network for cloud connectivity
 
-If you are rapidly enabling the bulk of your employees to work from from home, this sudden switch of connectivity patterns can have a significant impact on the corporate network infrastructure. Many networks were scaled and designed before cloud services were adopted. In many cases, networks are tolerant of remote workers, but were not designed to be used remotely by all users simultaneously.
+If you are rapidly enabling the bulk of your employees to work from home, this sudden switch of connectivity patterns can have a significant impact on the corporate network infrastructure. Many networks were scaled and designed before cloud services were adopted. In many cases, networks are tolerant of remote workers, but were not designed to be used remotely by all users simultaneously.
 
 Network elements such as VPN concentrators, central network egress equipment (such as proxies and data loss prevention devices), central internet bandwidth, backhaul MPLS circuits, NAT capability and so on are suddenly put under enormous strain due to the load of the entire business using them. The end result is poor performance and productivity coupled with a poor user experience for users who are adapting to working from home.
 

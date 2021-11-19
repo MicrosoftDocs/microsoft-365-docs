@@ -37,7 +37,7 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 ## Updating common policies to include SharePoint and OneDrive for Business
 
-To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the the common identity and device access policies.
+To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the common identity and device access policies.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="Summary of policy updates for protecting access to SharePoint." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
@@ -55,7 +55,7 @@ The following table lists the policies you either need to review and update or c
 ||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Azure Active Directory (Azure AD) to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|
-||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents edit and download of files. Use PowerShell to specify sites.|
+||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents editing and downloading of files. Use PowerShell to specify sites.|
 |**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint): Block access to specific SharePoint sites from unmanaged devices.|Use PowerShell to specify sites.|
 |
@@ -86,7 +86,7 @@ The following illustration provides an example of how SharePoint device access p
 James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 
 - If James accesses a site he is a member of with enterprise or specialized security protection using his PC, his access is granted.
-- If James accesses a enterprise protection site he is a member of using his unmanaged phone, which is allowed for starting point users, he will receive browser-only access to the enterprise site due to the device access policy configured for this site.
+- If James accesses an enterprise protection site he is a member of using his unmanaged phone, which is allowed for starting point users, he will receive browser-only access to the enterprise site due to the device access policy configured for this site.
 - If James accesses a specialized security site he is a member of using his unmanaged phone, he will be blocked due to the access policy configured for this site. He can only access this site using his managed PC.
 
 ## Next step
