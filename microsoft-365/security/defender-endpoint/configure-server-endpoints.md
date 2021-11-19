@@ -150,7 +150,6 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
 
    > [!NOTE]
-
    > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
  
 
@@ -164,37 +163,23 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components.
 
-<<<<<<< HEAD
-### Install Microsoft Defender For Endpoint using command line
-
-Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
-
-Run the following command to install Microsoft Defender for Endpoint:
-
-```console
-Msiexec /i md4ws.msi /quiet
-```
-=======
 ### Install Microsoft Defender for Endpoint using command line
 
 Use the installation package from the previous step to install Microsoft Defender for Endpoint.
 
 Run the following command to install Microsoft Defender for Endpoint:
 
-`msiexec /i md4ws.msi /quiet`
->>>>>>> b9ce9424e40961fa1184245ee446a61c5fd9629f
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 To uninstall, ensure the machine is offboarded first using the appropriate offboarding script. Then, use Control Panel \> Programs \> Programs and Features to perform the uninstall.
 
 Alternatively, run the following uninstall command to uninstall Microsoft Defender for Endpoint:
 
-<<<<<<< HEAD
 ```console
 Msiexec /x md4ws.msi /quiet
 ```
-=======
-`msiexec /x md4ws.msi /quiet`
->>>>>>> b9ce9424e40961fa1184245ee446a61c5fd9629f
 
 You must use the same package you used for installation for the above command to succeed.
 
@@ -245,7 +230,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         ```
 
         > [!NOTE]
-        >
+
         > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
         > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
