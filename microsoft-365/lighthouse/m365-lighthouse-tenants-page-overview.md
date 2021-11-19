@@ -137,7 +137,7 @@ The Deployment Plans tab also includes the following options:
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list](m365-lighthouse-manage-tenant-list.md) (article)\
 [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)
