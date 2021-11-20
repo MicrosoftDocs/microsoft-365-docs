@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -48,6 +49,11 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 Watch a short video about resetting user passwords.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
+
+1. When a user requests a new password, you'll receive a password reset request in email. To reset the password, open the app launcher and select **Admin**.
+1. In the Microsoft 365 admin center, select **Users**,  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>, and then select the key icon next to the user who requested the reset.
+1. Select **Auto-generate password** to have a random password automatically created.
+1. Select **Reset**.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
   
