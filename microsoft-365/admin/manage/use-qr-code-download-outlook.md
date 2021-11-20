@@ -48,6 +48,9 @@ This feature is on by default. To disable this feature, follow the steps below.
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
+> [!NOTE]
+> When using the Exchange PowerShell command, changes may take up to 8 hours to propagate.
+
 ## Related content
 
 [Set up the Standard or Targeted release options](release-options-in-office-365.md) (article)\
