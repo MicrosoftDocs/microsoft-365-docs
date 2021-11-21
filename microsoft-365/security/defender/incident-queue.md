@@ -72,7 +72,7 @@ This table lists the filter names that are available.
 | Device group | Filter by defined device groups. |
 | Investigation state | Filter incidents by the status of automated investigation.  |
 | Multiple categories | You can choose to see only incidents that have mapped to multiple categories  and can thus potentially cause more damage. |
-| Multiple service sources  | Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365). |
+| Multiple service sources  | Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Office 365). |
 | OS platform | Limit the incident queue view by operating system. |
 | Service sources | By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source. |
 | Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. |
