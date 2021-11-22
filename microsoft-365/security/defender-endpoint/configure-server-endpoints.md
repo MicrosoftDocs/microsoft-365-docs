@@ -117,7 +117,8 @@ For more information, see [Integration with Azure Defender](azure-server-integra
 ### Prerequisites
 
 **Prerequisites for Windows Server 2012 R2** 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites. Make sure that System Center Endpoint Protection is not installed.
+
+If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites. However, make sure that System Center Endpoint Protection is not installed.
 
 The installer package will check if the following components have already been installed via an update:
 
