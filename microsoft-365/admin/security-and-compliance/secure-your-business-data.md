@@ -19,6 +19,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -30,6 +31,14 @@ description: "How to protect your business email and data from cyberthreats, inc
 # Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+
+## Watch: Overview of security
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
+
+Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
+
+## Complete top security tasks
 
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan.
 
