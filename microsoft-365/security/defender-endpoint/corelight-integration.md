@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Enable Microsoft Defender for IoT integration
+# Enable Corelight data integration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,49 +29,23 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
+A new partnership between Microsoft and Corelight means Corelight can be enabled as a data source in Microsoft 365 Defender. This integration means Microsoft 365 Defender can increase visibility into the network activities of unmanaged devices, including situations where they communicate with other unmanaged devices or external networks.
 
-Microsoft have partnered with Corelight to enable sending of events from the Corelight network appliances to Microsoft 365 Defender.  
-This will allow Microsoft 365 Defender to extend its security value with visibility to network activities of unmanaged devices in cases they communicate with other unmanaged devices or external networks. These activities are added to the device timeline of unmanaged devices which exist in M365D using the device discovery capability (see [here](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide)).
-
-To enable the Corelight to M365D integration a customer should follow the following
-
-<u>Step 1 – enable the integration in Microsoft 365 Defender</u>  
-Go to MDE-&gt;Settings-&gt;Device discovery-&gt;check the Corelight consent enablement checkbox and click on “Save”
-
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image1.png" style="width:6.5in;height:2.97153in" alt="Graphical user interface, text, application Description automatically generated" />
-
-<u>Step 2 – Provide corelight with permission to send events to M365D on behalf of your tenant</u>
-
-<u>Step 3 – configure your Corelight appliance to send data to M365D</u>
+With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide).
 
 
-## Prerequisites
+## Steps to enable the Corelight integration
 
-To enable Microsoft Defender for IoT the user must have the following roles:
+1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
-- Tenant Global Administrator in Azure Active Directory
-- Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
+    ![Image of data sources](images/enable-corelight.png)
 
-## Enabling the Microsoft Defender for IoT integration
+2. Select **Send Corelight data to M365D** and select **Save**.
 
-1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Microsoft Defender for IoT**.
+Step 2 – Provide corelight with permission to send events to M365D on behalf of your tenant - Waiting for details
 
-    ![Image of IoT integration setup.](images/enable-defender-for-iot.png)
-
-2. **Select an Azure subscription** from the dropdown list of available subscriptions in your Azure Active Directory (Azure AD) tenant.
-3. Choose the Azure subscription and select **Save**.
-
-## Setup a network sensor
-
-After you have selected your Azure subscription, you'll have the option to add a network sensor.
-
-In the Settings page for Microsoft Defender for IoT, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal.
-
-For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
-
-You’ll be able to turn off the Azure subscription integration from the Settings page for Microsoft Defender for IoT. Once you turn off the subscription, you'll no longer see IoT devices discovered by Microsoft Defender for IoT in the Microsoft Defender for Endpoint device inventory.
+Step 3 – configure your Corelight appliance to send data to M365D - Waiting for details
 
 ## See also
 
-- [Device discovery overview](configure-device-discover.md)
 - [Device discovery FAQ](device-discovery-faq.md)

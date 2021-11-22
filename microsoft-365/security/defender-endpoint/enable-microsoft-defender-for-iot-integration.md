@@ -29,15 +29,15 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities to include Microsoft Defender for IoT agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks, for example, Voice over Internet Protocol (VoIP) devices, printers, and cameras. The integration allows organizations to take advantage of a single integrated solution that secures all of their IoT, and OT infrastructure.  For more information see [Enterprise IoT network protection -Add link].
+Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities to include Microsoft Defender for IoT agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks, for example, Voice over Internet Protocol (VoIP) devices, printers, and cameras. The integration allows organizations to take advantage of a single integrated solution that secures all of their IoT, and OT infrastructure.  For more information, see [Enterprise IoT network protection -Add link].
 
-With this integration enabled, Microsoft Defender for Endpoint gains increased visibility to help locate, identify, and secure the IoT devices in your network. IoT devices discovered by either Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched automatically to the device inventory in both portals. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).
+With this integration enabled, Microsoft Defender for Endpoint gains increased visibility to help locate, identify, and secure the IoT devices in your network. IoT devices discovered by Microsoft Defender for IoT or Microsoft Defender for Endpoint will synch automatically to the portal device inventories. This will give you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
-Microsoft Defender for IoT also includes a deployable network sensor that provides an additional data source. Setting up a network sensor as part of you integration will give you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and when employees are accessing information remotely.
+Microsoft Defender for IoT also includes a deployable network sensor that provides an extra data source. Setting up a network sensor as part of your integration gives you the most complete view of your IoT and OT devices, specifically for network segments where Microsoft Defender for Endpoint sensors are not present and when employees are accessing information remotely.
 
 ## Prerequisites
 
-To enable Microsoft Defender for IoT the user must have the following roles:
+To enable Microsoft Defender for IoT, the user must have the following roles:
 
 - Tenant Global Administrator in Azure Active Directory
 - Security Administrator for the Azure subscription that will be used for the Microsoft Defender for IoT integration
@@ -51,15 +51,15 @@ To enable Microsoft Defender for IoT the user must have the following roles:
 2. **Select an Azure subscription** from the dropdown list of available subscriptions in your Azure Active Directory (Azure AD) tenant.
 3. Choose the Azure subscription and select **Save**.
 
-## Setup a network sensor
+## Set up a network sensor
 
-After you have selected your Azure subscription, you'll have the option to add a network sensor.
+When an Azure subscription is selected, you'll have the option to add a network sensor.
 
 In the Settings page for Microsoft Defender for IoT, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal.
 
 For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
-You’ll be able to turn off the Azure subscription integration from the Settings page for Microsoft Defender for IoT. Once you turn off the subscription, you'll no longer see IoT devices discovered by Microsoft Defender for IoT in the Microsoft Defender for Endpoint device inventory.
+You’ll can turn off the Azure subscription integration from the Settings page for Microsoft Defender for IoT. Once you turn off the subscription, you'll no longer see IoT devices discovered by Microsoft Defender for IoT in the Microsoft Defender for Endpoint device inventory.
 
 ## See also
 
