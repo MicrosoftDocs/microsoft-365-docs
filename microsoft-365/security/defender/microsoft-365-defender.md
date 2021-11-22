@@ -197,7 +197,10 @@ The cards fall into these categories:
 - **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about discovered apps in Defender for Cloud Apps](/cloud-app-security/discovered-apps).
 
 
-#### Search across entities
+#### Search across entities (Preview)
+
+>[!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
 
 You can search across the following entities in Defender for Endpoint and Defender for Identity: 
