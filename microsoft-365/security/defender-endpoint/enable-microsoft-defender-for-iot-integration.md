@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Enable Microsoft Defender for IoT integration in Microsoft Defender for Endpoint
+# Enable Microsoft Defender for IoT integration
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,11 +29,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-One of our customers biggest challenges is gaining enough visibility to locate, identify, and secure enterprise IoT devices. Integrating with Microsoft Defender for IoT will help you extend you Microsoft Defender for Endpoint device discovery capabilities and increase your visibility and reduce an attackers attempt to compromise and take advantage of enterprise IoT devices in your organization.
-
 Microsoft Defender for IoT provides a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats, and provides agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks, for example, Voice over Internet Protocol (VoIP) devices, printers, and cameras.
 
-Enabling the Microsoft Defender for IoT integration means that IoT devices discovered by Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched to the device inventory in the Microsoft 365 Defender portal and the Defender for IoT device inventory in the Azure portal. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).  
+By enabling the Microsoft Defender for IoT integration in Microsoft Defender for Endpoint you're extending device discovery capabilities and increasing your visibility into include IoT devices. This can help to reduce an attackers attempt to compromise and take advantage of enterprise IoT devices in your organization.
+
+With these integration enabled IoT devices discovered by Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched to the device inventory in the Microsoft 365 Defender portal and the Defender for IoT device inventory in the Azure portal. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).  
 
 Defender for IoT also includes a deployable network sensor that provides an additional data source to further enhance the integration with Microsoft Defender for IoT. This gives you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and in situations where employees are not in the secure office network (more than ever now). For more information, see Get started with Enterprise IoT.
 
