@@ -18,7 +18,9 @@ ms.collection:
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
 ms.topic: article
-ms.custom: migrationguides
+ms.custom: 
+- migrationguides
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---

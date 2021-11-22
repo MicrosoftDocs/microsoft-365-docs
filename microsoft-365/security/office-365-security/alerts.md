@@ -18,7 +18,9 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn about how to use the alerts features in the Microsoft 365 Defender portal to view and manage alerts, including managing advanced alerts.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -31,7 +33,7 @@ ms.prod: m365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security).
+Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security).
 
 ## How to get to the alerts features
 

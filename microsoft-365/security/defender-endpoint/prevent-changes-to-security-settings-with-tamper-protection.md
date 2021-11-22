@@ -13,7 +13,9 @@ audience: ITPro
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
+ms.custom: 
+- nextgen
+- admindeeplinkDEFENDER
 ms.technology: mde
 ms.date: 10/18/2021
 ms.collection: M365-security-compliance

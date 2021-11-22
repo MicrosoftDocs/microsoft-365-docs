@@ -39,6 +39,8 @@ _Quarantine policies_ define what users are allowed to do to quarantined message
 
 Quarantine notifications are not turned on in the built-in quarantine notifications named AdminOnlyAccessPolicy or DefaultFullAccessPolicy. Quarantine notifications are turned on in the built-in quarantine policy named NotificationEnabledPolicy [if your organization has it](quarantine-policies.md#full-access-permissions-and-quarantine-notifications). Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
+In addition, to allow the 'Block sender' option in quarantine notifications to work correctly, users need to be enabled for remote Powershell. For instructions, see [Enable or disable access to Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell).
+
 Admins can also use the global settings in quarantine policies to customize the sender's display name, disclaimer text in different languages, and the company logo that's used in quarantine notifications. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 For shared mailboxes, quarantine notifications are supported only for users who are granted FullAccess permission to the shared mailbox. For more information, see [Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
@@ -46,7 +48,7 @@ For shared mailboxes, quarantine notifications are supported only for users who 
 > [!NOTE]
 > By default, messages that are quarantined as high confidence phishing, malware, by mail flow rules (also known as transport rules), or Safe Attachments policies in Defender for Office 365 are only available to admins (by default, the AdminOnlyAccessPolicy quarantine policy is used). For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 >
-> Quarantine notifications are not supported for groups.
+> Currently, quarantine notifications are not supported for groups or high confidence phishing messages. 
 
 When you receive a quarantine notification, the following information is always available for each quarantined message:
 

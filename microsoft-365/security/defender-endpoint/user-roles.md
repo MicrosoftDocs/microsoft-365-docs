@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -70,7 +71,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
     > [!NOTE]
     > This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
 
-- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+- **Manage security settings in Defender for Cloud** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
 - **Live response capabilities**
   - **Basic** commands:
