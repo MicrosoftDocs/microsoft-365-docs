@@ -1,6 +1,6 @@
 ---
-title: Enable Microsoft Defender for IoT integration in Microsoft Defender for Endpoint
-description: Enable Microsoft Defender for IoT integration to gain visibility focused on IoT/OT devices in areas of the network where MDE is not deployed
+title: Enable Corelight integration in Microsoft Defender for Endpoint
+description: Enable Corelight integration to gain visibility focused on IoT/OT devices in areas of the network where MDE is not deployed
 keywords: enable siem connector, siem, connector, security information and events
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -29,11 +29,21 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft Defender for Endpoint can integrate with Microsoft Defender for IoT to extend your device discovery capabilities. Microsoft Defender for IoT provides a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats, and provides agentless monitoring capabilities to secure enterprise IoT devices connected to IT networks, for example, Voice over Internet Protocol (VoIP) devices, printers, and cameras. For more information see [Enterprise IoT network protection -Add link]
 
-With this integration enabled, Microsoft Defender for Endpoint gains increased visibility to help locate, identify, and secure the IoT devices in your network. IoT devices discovered by either Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched automatically to the device inventory in both portals. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).
+Microsoft have partnered with Corelight to enable sending of events from the Corelight network appliances to Microsoft 365 Defender.  
+This will allow Microsoft 365 Defender to extend its security value with visibility to network activities of unmanaged devices in cases they communicate with other unmanaged devices or external networks. These activities are added to the device timeline of unmanaged devices which exist in M365D using the device discovery capability (see [here](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide)).
 
-Microsoft Defender for IoT also includes a deployable network sensor that provides an additional data source. Setting up a network sensor as part of you integration will give you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and when employees are accessing information remotely.
+To enable the Corelight to M365D integration a customer should follow the following
+
+<u>Step 1 – enable the integration in Microsoft 365 Defender</u>  
+Go to MDE-&gt;Settings-&gt;Device discovery-&gt;check the Corelight consent enablement checkbox and click on “Save”
+
+> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image1.png" style="width:6.5in;height:2.97153in" alt="Graphical user interface, text, application Description automatically generated" />
+
+<u>Step 2 – Provide corelight with permission to send events to M365D on behalf of your tenant</u>
+
+<u>Step 3 – configure your Corelight appliance to send data to M365D</u>
+
 
 ## Prerequisites
 
