@@ -11,7 +11,6 @@ ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: 
 - Adm_O365
-
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
