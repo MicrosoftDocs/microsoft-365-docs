@@ -29,14 +29,12 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service.
-
-The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
+The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
 
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](https://docs.microsoft.com/windows/win32/wininet/wininet-vs-winhttp)) and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
 
@@ -53,6 +51,9 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   
   - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
+> [!NOTE]
+> Defender antivirus and EDR proxies can be set independently.  In the sections that follow, be aware of those distinctions.
+
 ## Configure the proxy server manually using a registry-based static proxy
 
 Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
@@ -68,7 +69,7 @@ Configure a registry-based static proxy for Defender for Endpoint detection and 
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
-The static proxy is also configurable through Group Policy (GP). The group policy can be found under:
+The static proxy is also configurable through Group Policy (GP), both the settings under group policy values need to be set to configure the proxy server to be used for EDR. The group policy can be found under:
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
@@ -124,6 +125,12 @@ Configure the static proxy using the Group Policy found here:
 > - ProxyPacUrl 
 > - ProxyServer 
 
+> [!NOTE]
+> To use proxy correctly, three different proxy settings have to be made for:
+>  - Microsoft Defender for Endpoint (MDE)
+>  - AV (Antivirus)
+>  - Endpoint Detection and Response (EDR)
+
 ## Configure the proxy server manually using netsh command
 
 Use netsh to configure a system-wide static proxy.
@@ -175,9 +182,12 @@ In your firewall, open all the URLs where the geography column is WW. For rows w
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
-> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> The above spreadsheet relates to MDE EDR, if you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+
+> [!NOTE]
+> Microsoft does not provide a proxy server. These URLs are accessible via the proxy server that you configure.
 
 ### Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
