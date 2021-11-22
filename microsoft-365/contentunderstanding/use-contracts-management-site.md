@@ -17,9 +17,9 @@ description: Learn how to provision, use, and customize the Contracts Management
 
 # Use the Contracts Management site template for Microsoft SharePoint Syntex
 
-The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts for your organization.
+The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
 
-The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, contacts, and resources.
+The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
 ![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
@@ -78,5 +78,6 @@ Key success factors to managing the Contracts Management site:
 - Celebrate the launch of your Contracts Management site.
 - Create and post news announcing the new resource.
 - Ensure users have an outlet for questions and feedback.
+- Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
 - Review the Contracts Management site as needed to ensure content is fresh and still relevant.
 
