@@ -13,6 +13,7 @@ ms.collection:
 ms.service: 
 search.appverid: 
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to save a new or revised topic as a draft in Microsoft Viva Topics.
 
 ---
