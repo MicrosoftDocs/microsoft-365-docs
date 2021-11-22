@@ -129,9 +129,9 @@ Integrate Microsoft Defender for Endpoint into your existing workflows.
 - Intune
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
-- Azure Defender
+- Microsoft Defender for Cloud
 - Skype for Business
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>
