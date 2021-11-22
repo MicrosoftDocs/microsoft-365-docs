@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -38,6 +39,14 @@ If you need help with interpreting the charges you see on your bill, see [Unders
 
 You must be a Global or Billing admin to do the steps described in this article.
   
+## Watch: View, download, or print your bill
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+
+1. In the Microsoft 365 admin center, select **Billing** in the left navigation pane, and then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Invoices** tab</a>.
+1. Select an invoice to view it. If you don't see an invoice, select **Filter by: Last 6 months** from the drop-down list.
+1. To view the invoice details, select **Download PDF** in the top-right corner of the invoice.
+
 ## View a bill or invoice
 
 ::: moniker range="o365-worldwide"
